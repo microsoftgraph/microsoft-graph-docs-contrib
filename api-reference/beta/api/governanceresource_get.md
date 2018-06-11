@@ -22,7 +22,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```
 
 ## Optional query parameters
-This method **only** supports  `$select` and `$expand` [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method **only** supports  `$select` and `$expand` [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Name      |Description|

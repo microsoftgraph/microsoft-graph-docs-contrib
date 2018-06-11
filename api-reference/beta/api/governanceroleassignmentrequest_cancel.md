@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## Optional query parameters
-This method does **not** support [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters).
+This method does **not** support [OData Query Parameters](../../../concepts/query_parameters.md).
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,11 +1,11 @@
-# governanceSubject
+# governanceSubject resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents users, groups, and service principals being managed in Privileged Identity Management (PIM).
 
 
-### Properties
+## Properties
 | Key | Property	| Type	     |Description|
 |:----|:----------|:----------|:----------|
 |✓    |id         |String     | The id of the subject.|
@@ -14,11 +14,11 @@ Represents users, groups, and service principals being managed in Privileged Ide
 |     |email      |String     |The email address of the user subject. If the subject is in other types, it is empty.|
 |     |principalName|String   |The principal name of the user subject. If the subject is in other types, it is empty.|
 
-### Relationships
+## Relationships
 None
 
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

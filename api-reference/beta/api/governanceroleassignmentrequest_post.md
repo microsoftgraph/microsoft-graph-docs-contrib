@@ -33,7 +33,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ```
 
 ## Optional query parameters
-This method does **not** support [OData query parameters](http://graph.microsoft.io/docs/overview/query_parameters).
+This method does **not** support [OData query parameters](../../../concepts/query_parameters.md).
 
 ### Request headers
 | Name       | Description|

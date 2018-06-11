@@ -1,18 +1,18 @@
-# governanceRoleSetting
+# governanceRoleSetting resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents a set of configurations on each role definition that needs to be evaluated against when role assignments are created or modified. For example, role settings might include "maximum assignment duration", "MFA required on activation", and so on.
 
-### Methods
+## Methods
 
 | Method		  | Return Type	|Description|
-|:---------------|:--------|:--------|:----------|
+|:---------------|:--------|:--------|
 |[List](../api/governancerolesetting_list.md) | [governanceRoleSetting](../resources/governancerolesetting.md) collection|List a collection of role settings on a resource.|
 |[Get](../api/governancerolesetting_get.md) |  [governanceRoleSetting](../resources/governancerolesetting.md) |Read properties and relationships of a role setting.|
 |[Update](../api/governancerolesetting_update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)	|Update a role setting object. |
 
-### Properties
+## Properties
 | Key |Property	            |Type	                                   |Required |Description|
 |:----|:--------------------|:---------------------------------------|:------- |:----------|
 |✓    |id                   |String                                  |✓       |The id of the roleSetting.|
@@ -26,13 +26,13 @@ Represents a set of configurations on each role definition that needs to be eval
 |     |userEligibleSettings |[governanceRuleSetting](../resources/governancerulesetting.md) collection|         |The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now in the `pimforazurerbac` scenario.|
 |     |userMemberSettings   |[governanceRuleSetting](../resources/governancerulesetting.md) collection|         |The rule settings that are evaluated when a user tries to activate his role assignment.|
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceResource.md)|Read-only. The associated resource for this role setting.|
 |roleDefinition|[governanceRoleDefinition](../resources/governanceRoleDefinition.md)|Read-only. The role definition that is enforced with this role setting. |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

@@ -1,4 +1,4 @@
-# governanceRoleAssignment
+# governanceRoleAssignment resource type
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents the assignment of a user or group to a role.
@@ -8,7 +8,7 @@ Privileged Identity Management (PIM) supports two types of assignments:
 1. Active assignment - Represents the direct access that users and groups have to resources.
 2. Eligible assignment - Represents an intermediate stage of privileged access to resources, between no access and direct access. Administrators can temporarily set users/groups to `eligible assignment` in advance. Whenever the access is needed for users/group members, `activation` on the `eligible assignment` is needed to gain the instant access to the resource for several hours. After `activation`, an `active assignment` will be created for the users/group members to indicate the activated status.
 
-### Methods
+## Methods
 
 | Method		  | Return Type	|Description|
 |:------------|:--------|:--------|
@@ -18,7 +18,7 @@ Privileged Identity Management (PIM) supports two types of assignments:
 
 No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssignments` entity set. Any create, update, and delete operations on `governanceRoleAssignment` are done by `governanceRoleAssignmentRequest`.
 
-### Properties
+## Properties
 | Key | Property	| Type	    |Description|
 |:----|:----------|:----------|:----------|
 |✓    |id         |String     |The ID of the role assignment. It is in GUID format.|
@@ -34,7 +34,7 @@ No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssi
 |     |memberType|String      |The type of member. The value can be: <ul><li>`Inherited` - the role assignment is inherited from a parent resource scope</li><li>`Group`- the role assignment is not inherited, but comes from the membership of a group assignment</li><li>`User` - the role assignment is neither inherited nor from a group assignment.</li></ul>|
 
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Read-only. The resource associated with the role assignment. |
@@ -42,7 +42,7 @@ No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssi
 |subject|[governanceSubject](../resources/governancesubject.md)|Read-only. The subject associated with the role assignment. |
 |linkedEligibleRoleAssignment|[governanceRoleAssignment](../resources/governanceroleassignment.md)|Read-only. If this is an `active assignment` and created due to activation on an `eligible assignment`, it represents the object of that `eligible assignment`; Otherwise, the value is `null`. |
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

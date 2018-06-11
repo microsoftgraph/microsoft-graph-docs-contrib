@@ -23,7 +23,7 @@ Besides the permission scope, it requires the requestor
 GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Name      |Description|

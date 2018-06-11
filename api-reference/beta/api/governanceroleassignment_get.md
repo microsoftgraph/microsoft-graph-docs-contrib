@@ -28,7 +28,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 ```
 
 ## Optional query parameters
-This method does **not** supports [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) other than `$filter` to help customize the response.
+This method does **not** supports [OData Query Parameters](../../../concepts/query_parameters.md) other than `$filter` to help customize the response.
 
 ## Request headers
 | Name      |Description|

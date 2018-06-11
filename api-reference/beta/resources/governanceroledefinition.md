@@ -1,19 +1,19 @@
-# governanceRoleDefinition 
-Represents the role definitions. 
+# governanceRoleDefinition resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-* For scope of Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc.
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported. 
 
 
-### Methods
+Represents the role definitions. For Azure resources, it can represent Azure RBAC roles, such as Owner, Reader, Contributor, etc.
+
+
+## Methods
 
 | Method		  | Return Type	|Description|
 |:---------------|:--------|:--------|:----------|
 |[List](../api/governanceroledefinition_list.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) collection |List a collection of role definitions on a resource. Note: `$filter=resourceId+eq+'<resourceId>'` is required in the query.|
 |[Get](../api/governanceroledefinition_get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Read properties and relationships of a role definition entity specified by id.|
 No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set for now.
-### Properties
+## Properties
 | Key | Property	| Type	    |Description|
 |:----|:----------|:----------|:----------|
 |✓    |id         |String     |The id of the role definition. |
@@ -25,13 +25,13 @@ No `POST`, `PUT`, `PATCH`, `DELETE` is supported on `roleDefinitions` entity set
 |     |assignedCount|Int32    |Optional. The number of active role assignments associated with the role definition.  To get the property, please explictly use `$select=assignedCount` in the query.|
 
 
-### Relationships
+## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Read-only. The associated resource for the role definition.|
 |roleSetting|[governanceRoleSetting](../resources/governancerolesetting.md)|The associated role setting for the role definition.|
 
-### JSON representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 

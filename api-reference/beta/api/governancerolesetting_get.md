@@ -21,7 +21,7 @@ Besides the permission scope, this API requires the requestor to have at least o
 GET /privilegedAccess/azureResources/roleSettings/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Name      |Description|

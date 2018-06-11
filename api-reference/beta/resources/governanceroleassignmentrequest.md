@@ -1,4 +1,4 @@
-# governanceRoleAssignmentRequest
+# governanceRoleAssignmentRequest resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 
 `governanceRoleAssignmentRequest` is a request-modeled entity used to manage the lifecycle of role assignments. It represents the intention or decision of the users and administrators, and also provides the flexibility to enable implementation of recurrent schduling, approval gates, and so on, as compared to directly exposing `POST`, `PUT`, and `DELETE` operations on `governanceRoleAssignment`.
 
-### Methods
+## Methods
 
 | Method		  |Return Type	|Description|
 |:------------|:--------|:--------|
@@ -16,7 +16,7 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |[Cancel](../api/governanceroleassignmentrequest_cancel.md)|  |Cancel a pending role assignment request.|
 |[UpdateRequest](../api/governanceroleassignmentrequest_updaterequest.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Administrators update the decisions on requests if the requests are in status of `PendingAdminDecision`.|
 
-### Properties
+## Properties
 | Key | Property	                | Type	        |Required|Description|
 |:----|:--------------------------|:--------------|:-------|:----------|
 |✓    |id                         |String         |✓      |The id of the role assignment request.|
@@ -35,7 +35,7 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 
 
 
-### Relationships
+## Relationships
 | Relationship | Type	                             |Description|
 |:-------------|:----------------------------------|:----------|
 |resource      |[governanceResource](../resources/governanceresource.md)            |Read-only. The resource that the request aims to. |
