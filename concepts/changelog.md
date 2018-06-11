@@ -19,12 +19,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added the [governanceRoleSetting](../api-reference/beta/resources/governancerolesetting.md) entity, and methods and actions below:<br> [List](../api-reference/beta/api/governancerolesetting_list.md) <br> [Get](../api-reference/beta/api/governancerolesetting_get.md) <br> [Update](../api-reference/beta/api/governancerolesetting_update.md) |
 | Addition | beta | Added the complex types below: <br> [governancePermission](../api-reference/beta/resources/governancepermission.md) <br> [governanceRoleAssignmentRequestStatus](../api-reference/beta/resources/governanceroleassignmentrequeststatus.md) <br> [governanceRuleSetting](../api-reference/beta/resources/governancerulesetting.md) <br> [governanceSchedule](../api-reference/beta/resources/governanceschedule.md)|
 
-### Directory APIs
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) function to the [directory](../api-reference/beta/resources/directory.md) resource to list the deleted groups owned by a given user. |
-
 ## May 2018
 
 ### Directory APIs
