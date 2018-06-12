@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor **has access to**.
+Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /privilegedAccess/azureResources/resources
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -32,7 +32,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [governanceResource](../resources/governanceresource.md) objects in the response body.
 ## Examples
 
-List all resources I can currently access to
+This example lists all resources I can currently access.
 ##### Request
 <!-- {
   "blockType": "request",
@@ -42,7 +42,9 @@ List all resources I can currently access to
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
