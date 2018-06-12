@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) on a resource.
 
->**Note:** Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource. 
+>**Note:** Besides the permission scope, this request requires the requestor to have at least one role assignment on the resource. 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
