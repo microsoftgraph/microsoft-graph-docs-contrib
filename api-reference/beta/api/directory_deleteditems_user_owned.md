@@ -39,7 +39,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 }
 ```
 
-The request body supports the following optional parameters:
+The request body requires the following parameters:
 
 | Parameter    | Type |Description|
 |:---------------|:--------|:----------|
@@ -82,7 +82,7 @@ Content-length: 1249
 "value": [
           {
               "@odata.type": "#microsoft.graph.group",
-              "id": "55ac777c-109e-4022-b58c-470c8fcb6892",
+              "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
               "deletedDateTime": "2018-04-01T12:34:56Z",
               "classification": null,
               "createdDateTime": "2017-03-22T12:39:16Z",
