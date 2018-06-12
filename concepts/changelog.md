@@ -1,4 +1,4 @@
-.# Changelog for Microsoft Graph
+# Changelog for Microsoft Graph
 
 This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.
 
@@ -10,7 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [privilegedAccess](../api-reference/beta/resources/privilegedaccess.md) entity|
+| Addition | beta | Added the [privilegedAccess](../api-reference/beta/resources/privilegedaccess.md) entity.|
 | Addition | beta | Added the [governanceResource](../api-reference/beta/resources/governanceresource.md) entity, and the following methods and actions: <br> [List](../api-reference/beta/api/governanceresource_list.md) <br> [Get](../api-reference/beta/api/governanceresource_get.md)<br>|
 | Addition | beta | Added the [governanceSubject](../api-reference/beta/resources/governancesubject.md) entity.|
 | Addition | beta | Added the [governanceRoleDefinition](../api-reference/beta/resources/governanceroledefinition.md) entity, and tollowing methods and actions:<br> [List](../api-reference/beta/api/governanceroledefinition_list.md) <br> [Get](../api-reference/beta/api/governanceroledefinition_get.md) |
