@@ -46,8 +46,8 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 | 400 BadRequest | RoleSettingNotFound | The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.
 | 400 BadRequest | InvalidRoleSetting    | The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.
 
-## Example : 
-Update role setting for "Custom Role 3" in subscription "Wingtip Toys - Prod"
+## Example 
+This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.
 ##### Request
 <!-- {
   "blockType": "request",
