@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md).
+Retrieve a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,14 +16,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-1. List a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) on a resource
 
-    *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
+List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) on a resource.
+
+>**Note:** Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource. 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-2. List a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) of mine
+List a collection of [governanceRoleAssignments](../resources/governanceroleassignment.md) of mine.
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
@@ -39,9 +40,10 @@ This method supports the [OData Query Parameters](../../../concepts/query_parame
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [governanceRoleAssignment](../resources/governanceroleassignment.md) objects in the response body.
 ## Example
-Get my role assignments on subscription "Wingtip Toys - Prod"
+
+This example shows how to get my role assignments on the subscription Wingtip Toys - Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignments"
