@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a collection of [governanceRoleSetting](../resources/governancerolesetting.md) on a resource.
+Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -21,7 +21,7 @@ GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -35,7 +35,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.
 
 ## Example
-An administrator lists role settings for resource "Wingtip Toys - Prod" 
+This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod. 
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"
