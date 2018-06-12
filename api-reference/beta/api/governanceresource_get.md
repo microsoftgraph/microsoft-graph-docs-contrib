@@ -35,7 +35,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [governanceResource](../resources/governanceresource.md) object in the response body.
 
 ## Example
-Get details of subscription "Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5)"
+This example shows how to get the details of the subscription Wingtip Toys - Prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5).
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"
