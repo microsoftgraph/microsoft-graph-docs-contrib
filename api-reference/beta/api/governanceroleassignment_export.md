@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) in format of `application/octet-stream`, which can be parsed as `.csv` file in browser.
+Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) in the format `application/octet-stream`, which can be parsed as a .csv file in the browser.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,20 +16,20 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-1. Export a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) on a resource
+Export a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) on a resource
     
-    *Note: Besides the permission scope, it requires the requestor to have at least one role assignment on the resource.* 
+>**Note:** Besides the permission scope, this request requires the requestor to have at least one role assignment on the resource. 
     
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
 ```
 
-2. Export a collection of [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) of mine
+Export a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) of mine
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and content of type `application/octet-stream`.
 
 ## Example
-Save all role assignments as `.csv` file in subscription "Wingtip Toys - Prod" 
+This example saves all role assignments as a .csv file in the subscription Wingtip Toys - Prod. 
 
 ##### Request
 ```http
