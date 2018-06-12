@@ -35,7 +35,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [governanceRoleDefinition](../resources/governanceroledefinition.md) object in the response body.
 ## Example
-Get details of role definition DNS Zone Contributor in subscription "Wingtip Toys - Prod"
+This example shows how to get details of role definition DNS Zone Contributor in the subscription Wingtip Toys - Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinition"
