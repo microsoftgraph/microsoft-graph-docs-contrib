@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The name and email address of a [contact](contact.md).
+Represents the name, email addresses, and their corresponding email address type of a [contact](contact.md).
 
 ## Properties
 | Property	   | Type	|Description|

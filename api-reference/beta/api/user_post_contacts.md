@@ -25,7 +25,6 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
-| Prefer | exchange.behavior=ContactTypedEmailAddressProperty |
 
 ## Request body
 In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
@@ -44,7 +43,6 @@ Here is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/me/contacts
 Content-type: application/json
-Prefer: exchange.behavior=ContactTypedEmailAddressProperty
 
 {
   "givenName": "Pavel",

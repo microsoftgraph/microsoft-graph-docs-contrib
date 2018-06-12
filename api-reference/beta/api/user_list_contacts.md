@@ -79,7 +79,6 @@ For example, you can use the `$filter` query parameter to filter contacts based 
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Prefer | exchange.behavior=ContactTypedEmailAddressProperty |
 
 ## Request body
 Do not supply a request body for this method.
@@ -96,8 +95,6 @@ The following example gets the **displayName** and **emailAddresses** properties
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddresses
-
-Prefer: exchange.behavior=ContactTypedEmailAddressProperty
 ```
 
 
