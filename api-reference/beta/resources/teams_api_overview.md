@@ -32,11 +32,11 @@ Here are the beta APIs to use:
 
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Add member](../api/group_post_members.md)	| POST	    | https://graph.microsoft.com/**beta**/groups/{id}/members/$ref  |
-| [Remove member](../api/group_delete_members.md)	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/members/{userId}/$ref |
-| [Add owner](../api/group_post_owners.md)     | POST	    | https://graph.microsoft.com/**beta**/groups/{id}/owners/$ref |
-| [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/**beta**/groups/{id}/owners/{userId}/$ref |
-| [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/**beta**/teams/{id} |
+| [Add member](../api/group_post_members.md)	| POST	    | https://graph.microsoft.com/beta/groups/{id}/members/$ref  |
+| [Remove member](../api/group_delete_members.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/members/{userId}/$ref |
+| [Add owner](../api/group_post_owners.md)     | POST	    | https://graph.microsoft.com/beta/groups/{id}/owners/$ref |
+| [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/owners/{userId}/$ref |
+| [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/beta/teams/{id} |
 
 When adding owners, regardless of which endpoint use, you will generally want to add that user as a member as well. 
 If you have an owner that's not also a member, different apps and APIs will handle that differently. 
