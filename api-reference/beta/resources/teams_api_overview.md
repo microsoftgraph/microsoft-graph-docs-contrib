@@ -19,12 +19,12 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 ## Membership changes in Microsoft Teams
 
-When adding or removing members to a team using the Graph v1.0 endpoint, 
-there is a delay before the membership changes are reflected in the Teams application/web site.
-If a current team member or owner is logged into the Teams application/web site,
+When adding members to or removing members from a team using the Microsoft Graph v1.0 endpoint,
+there is a delay before the membership changes are reflected in the Microsoft Teams application/website.
+If a current team member or owner is signed in to the Microsoft Teams application/website,
 the change will be reflected within an hour.
-If none of those users are logged into the Teams application/web site,
-the change will not be reflected until an hour after one of them logs in.
+If none of those users are signed in to the Microsoft Teams application/website
+the change will not be reflected until an hour after one of them signs in.
 
 The beta endpoint is faster -- under a minute in most cases,
 regardless of whether the user is logged in or not.
@@ -40,7 +40,7 @@ Here are the beta APIs to use:
 
 When adding owners, regardless of which endpoint use, you will generally want to add that user as a member as well. 
 If you have an owner that's not also a member, different apps and APIs will handle that differently. 
-For instance, Teams Client will show teams that the user is either a member or an owner of, 
+For instance, Microsoft Teams will show teams that the user is either a member or an owner of, 
 while the Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of. 
 To avoid confusion, consider having all owners also be on the members list.
 

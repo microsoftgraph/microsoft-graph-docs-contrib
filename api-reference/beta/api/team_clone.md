@@ -2,20 +2,20 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Cloning a [team](../resources/team.md) clones the corresponding [group](../resources/group.md) as well as the team. 
-You get to specify which parts of the team you want to clone:
-- **apps** - Teams apps that are installed in the team. 
-- **channels** – copies the channel structure (but not the messages in the channel).
-- **members** – copies the members and owners of the group.
-- **settings** – copies all settings within the team, along with key group settings.
-- **tabs** – copies the tabs within channels.
+Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
+You can specify which parts of the team to clone:
+- **apps** - Copies Microsoft Teams apps that are installed in the team. 
+- **channels** – Copies the channel structure (but not the messages in the channel).
+- **members** – Copies the members and owners of the group.
+- **settings** – Copies all settings within the team, along with key group settings.
+- **tabs** – Copies the tabs within channels.
 
 When tabs are cloned, they are put into an unconfigured state 
 -- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen. 
-(Assuming the person opening it has permission to configure apps -- otherwise they get some text explaining the tab hasn't been configured.)
+(If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
 
 Cloning is a long-running operation.
-After the POST clone returns you need to GET the operation to see if it's "running" or "succeeded" or "failed". 
+After the POST clone returns, you need to GET the operation to see if it's "running" or "succeeded" or "failed". 
 You should continue to GET until the status is not "running". 
 The recommended delay between GETs is 5 seconds.
 
