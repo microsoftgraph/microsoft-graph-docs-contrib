@@ -22,9 +22,9 @@ No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `roleAssi
 | Property	| Type	    |Description|
 |:----------|:----------|:----------|
 |id         |String     |The ID of the role assignment. It is in GUID format.|
-|resourceId |String     |The ID of the resource which the role assignment is associated with. |
-|roleDefinitionId|String|The ID of the role definition which the role assignment is associated with. |
-|subjectId|String       |The ID of the subject which the role assignment is associated with. |
+|resourceId |String     |Required. The ID of the resource which the role assignment is associated with. |
+|roleDefinitionId|String|Required. The ID of the role definition which the role assignment is associated with. |
+|subjectId|String       |Required. The ID of the subject which the role assignment is associated with. |
 |linkedEligibleRoleAssignmentId|String|If this is an `active assignment` and created due to activation on an `eligible assignment`, it represents the ID of that `eligible assignment`; Otherwise, the value is `null`. |
 |externalId   |String     |The external ID the resource that is used to identify the role assignment in the provider.|
 |isPermanent|Boolean    |Indicates whether the role assignment is a permanent assignment.|

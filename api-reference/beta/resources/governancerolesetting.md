@@ -16,8 +16,8 @@ Represents a set of configurations on each role definition that needs to be eval
 |Property	            |Type	                                   |Description|
 |:--------------------|:---------------------------------------|:----------|
 |id                   |String                                  |The id of the roleSetting.|
-|resourceId           |String                                  |The id of the resource that the role setting is associated with.|
-|roleDefinitionId     |String                                  |The id of the role definition that the role setting is associated with.|
+|resourceId           |String                                  |Required. The id of the resource that the role setting is associated with.|
+|roleDefinitionId     |String                                  |Required. The id of the role definition that the role setting is associated with.|
 |isDefault            |Boolean                                 |Read-only. Indicate if the roleSetting is a default roleSetting|
 |lastUpdatedDateTime  |DateTimeOffset                          |Read-only. The time when the role setting was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |lastUpdatedBy        |String                                  |Read-only. The display name of the administrator who last updated the roleSetting.|
