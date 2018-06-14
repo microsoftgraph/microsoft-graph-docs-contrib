@@ -106,8 +106,8 @@ Prefer: return=representation
   "assignedTo": "assignedTo-value",
   "closedDateTime": "datetime-value",
   "comments": "String",
-  "feedback": "string",
-  "status": "string",
+  "feedback": "@odata.type: microsoft.graph.alertFeedback",
+  "status": "@odata.type: microsoft.graph.alertStatus",
   "tags": ["String"]
 }
 ```
