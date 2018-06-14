@@ -8,10 +8,10 @@ Represents a group of functionalities provided by the Privileged Identity Manage
 `privilegedAccess` is read-only for now. No `POST`, `PUT`, `PATCH`, or `DELETE` operations are supported on the `privilegedAccess` entity set.
 
 ## Properties
-| Key | Property	| Type	    |Description|
-|:----|:----------|:----------|:----------|
-|✓    |id         |String     |The id of the provider managed by PIM.|
-|     |displayName|String     |The display name of the provider managed by PIM.|
+| Property	| Type	    |Description|
+|:----------|:----------|:----------|
+|id         |String     |The id of the provider managed by PIM.|
+|displayName|String     |The display name of the provider managed by PIM.|
 
 
 ## Relationships

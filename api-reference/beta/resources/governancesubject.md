@@ -6,13 +6,13 @@ Represents users, groups, and service principals being managed in Privileged Ide
 
 
 ## Properties
-| Key | Property	| Type	     |Description|
-|:----|:----------|:----------|:----------|
-|✓    |id         |String     | The id of the subject.|
-|     |type       |String     |The type of the subject. The value can be ``User``, ``Group``, and ``ServicePrincipal``.|
-|     |displayName|String     |The display name of the subject.|
-|     |email      |String     |The email address of the user subject. If the subject is in other types, it is empty.|
-|     |principalName|String   |The principal name of the user subject. If the subject is in other types, it is empty.|
+| Property	| Type	     |Description|
+|:----------|:----------|:----------|
+|id         |String     | The id of the subject.|
+|type       |String     |The type of the subject. The value can be ``User``, ``Group``, and ``ServicePrincipal``.|
+|displayName|String     |The display name of the subject.|
+|email      |String     |The email address of the user subject. If the subject is in other types, it is empty.|
+|principalName|String   |The principal name of the user subject. If the subject is in other types, it is empty.|
 
 ## Relationships
 None

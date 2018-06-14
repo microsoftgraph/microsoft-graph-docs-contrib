@@ -17,21 +17,21 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |[Update](../api/governanceroleassignmentrequest_update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Administrators update the decisions on requests if the requests are in status of `PendingAdminDecision`.|
 
 ## Properties
-| Key | Property	                | Type	        |Required|Description|
-|:----|:--------------------------|:--------------|:-------|:----------|
-|✓    |id                         |String         |✓      |The id of the role assignment request.|
-|     |resourceId                 |String         |✓       |The id of the resource which the role assignment request is associated with.|
-|     |roleDefinitionId           |String         |✓       |The id of the role definition which the role assignment request is associated with.|
-|     |subjectId                  |String         |✓       |The id of the subject which the role assignment request is associated with.|
-|     |type                       |String         |✓       |Representing the the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Adminstrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Adminstrators change existing role assignments</li><li>`AdminRemove`: Adminstrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
-|     |assignmentState|String  |✓       |The state of the assignment. The value can be <ul><li> `Eligible` for eligible assignment</li><li> `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.</li></ul>|
-|     |requestedDateTime          |DateTimeOffset |        |Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|     |roleAssignmentStartDateTime|DateTimeOffset |        |The start time for the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|     |roleAssignmentEndDateTime|DateTimeOffset   |        |The end time for the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|     |schedule                   |[governanceSchedule](governanceschedule.md)||The schedule object of the role assignment request.|
-|     |reason                     |String         |        |A message provided by users and administrators when create the request about why it is needed.|
-|     |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |        |The status of the role assignment request.|
-|     |linkedEligibleRoleAssignmentId|String        |        |If this is a request for role activation, it represents the id of the `eligible assignment` being referred; Otherwise, the value is `null`. |
+| Property	                | Type	        |Description|
+|:--------------------------|:--------------|:----------|
+|id                         |String         |The id of the role assignment request.|
+|resourceId                 |String         |The id of the resource which the role assignment request is associated with.|
+|roleDefinitionId           |String         |The id of the role definition which the role assignment request is associated with.|
+|subjectId                  |String         |The id of the subject which the role assignment request is associated with.|
+|type                       |String         |Representing the the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Adminstrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Adminstrators change existing role assignments</li><li>`AdminRemove`: Adminstrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
+|assignmentState|String  |The state of the assignment. The value can be <ul><li> `Eligible` for eligible assignment</li><li> `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.</li></ul>|
+|requestedDateTime          |DateTimeOffset |Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|roleAssignmentStartDateTime|DateTimeOffset |The start time for the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|roleAssignmentEndDateTime|DateTimeOffset   |The end time for the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|schedule                   |[governanceSchedule](governanceschedule.md)|The schedule object of the role assignment request.|
+|reason                     |String         |A message provided by users and administrators when create the request about why it is needed.|
+|status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |The status of the role assignment request.|
+|linkedEligibleRoleAssignmentId|String        |If this is a request for role activation, it represents the id of the `eligible assignment` being referred; Otherwise, the value is `null`. |
 
 
 
