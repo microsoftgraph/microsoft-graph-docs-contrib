@@ -10,6 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0        | Added [List deleted items owned by a user](../api-reference/v1.0/api/directory_deleteditems_user_owned.md) action to [directory (deleted items)](../api-reference/v1.0/resources/directory.md) resource | 
 | Addition | beta | Added the [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) function to the [directory](../api-reference/beta/resources/directory.md) resource to list the deleted groups owned by a given user. |
 
 ### Education API
@@ -17,6 +18,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Change          | v1.0 and beta | The scope **Members.Read.Hidden** is required to read or update the **Members** collection on an [educationClass](../api-reference/v1.0/resources/educationclass.md) entity using app-only tokens. |
+|Change           |Beta           |Updated the possible values of **educationSubmissionStatus** type in the status property of  [educationsubmission](../api-reference/beta/resources/educationsubmission.md).|
+|Change           |Beta           |Added the **educationAssignmentIndividualRecipient** complex type to the assignTo property of [educationAssignment](../api-reference/beta/resources/educationassignment.md).|
+|Change           |Beta           |Added the **unsubmittedBy**, **unsubmittedDate**, **returnedBy**, **returnedDate** property of [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
+|Addition         |Beta           |Added the [return](../api-reference/beta/api/educationSubmission_return.md) and  [unsubmit](../api-reference/beta/api/educationSubmission_unsubmit.md) action to [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
+|Change           |Beta           |Removed the release and  recall action on [educationSubmission](../api-reference/beta/resources/educationsubmission.md).|
 
 ### Groups
 
@@ -2248,6 +2254,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | beta          | Added the [getUserOwnedObjects](../api-reference/beta/api/directory_deleteditems_user_owned.md) function to the [directory](../api-reference/beta/resources/directory.md) resource to list the deleted groups owned by a given user. |
+| Deletion        | beta          | Removed the **renew** action from the [group](../api-reference/beta/resources/group.md) resource. |
 
 
 ### Drive API
