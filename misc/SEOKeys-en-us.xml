@@ -5130,7 +5130,6 @@
         <Item text="Restore deleted item" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
 		<Item text="List deleted items owner by user" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
-
       <Item text="Device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
         <Item text="List devices" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
         <Item text="Create device" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
@@ -5258,6 +5257,31 @@
       <Item text="Audit event" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Audit event from Privileged Identity Management">
         <Item text="List audit events" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Retrieve a list of audit events." />
       </Item>
+	  <Item text="Managed resources" url="/en-us/api-reference/beta/resources/governanceresource" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceresource_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceresource_get" />
+	  </Item>
+	  <Item text="Role definitions" url="/en-us/api-reference/beta/resources/governanceroledefinition" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceroledefinition_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroledefinition_get" />
+	  </Item>
+	  <Item text="Role settings" url="/en-us/api-reference/beta/resources/governancerolesetting" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governancerolesetting_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governancerolesetting_get" />
+		<Item text="Update" url="/en-us/api-reference/beta/api/governancerolesetting_update" />
+	  </Item>
+	  <Item text="Role assignments" url="/en-us/api-reference/beta/resources/governanceroleassignment" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceroleassignment_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroleassignment_get" />
+		<Item text="Export" url="/en-us/api-reference/beta/api/governanceroleassignment_export" />
+	  </Item>
+	  <Item text="Role assignment requests" url="/en-us/api-reference/beta/resources/governanceroleassignmentrequest" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_list" />
+		<Item text="Create" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_create" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_get" />
+		<Item text="Update" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_update" />
+		<Item text="Cancel" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_cancel" />
+	  </Item>
     </Item>
       <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" >
         <Item text="List service principal" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
