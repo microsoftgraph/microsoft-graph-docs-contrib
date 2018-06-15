@@ -80,6 +80,16 @@ By default, unknown members are not returned by Microsoft Graph. If, however, yo
 
 >**Note:** If your application is prepared to handle unknown enum members, it should opt-in by using an HTTP *prefer* request header: `Prefer: include-unknown-enum-members`.
 
+### Logging for investigation
+
+Generate and send a unique guid as "client-request-id" header so that the entire request can be tracked in Microsoft Graph logs using that id. This is useful for Microsoft Graph team to investigate any errors that you might see and reach out to the support team through various channels.
+
+At a minimum, we recommend you do the following for each request:
+1. Log an accurate time stamp of the request submission.
+2. Send and log the client-request-id.
+3. Log the HTTP response code, request-id header value and x-ms-ags-diagnostic header value.
+Providing information in such logs will help Microsoft troubleshoot issues when you ask for help or support.
+
 ## Storing data locally
 
 Your application should ideally make calls to Microsoft Graph to retrieve data in real time as necessary. You should only cache or store data locally if required for a specific scenario, and if that use case is covered by your terms of use and privacy policy, and does not violate the [Microsoft Graph terms of use](https://developer.microsoft.com/en-us/graph/docs/misc/terms-of-use). Your application should also implement proper retention and deletion policies.
