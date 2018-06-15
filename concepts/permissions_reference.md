@@ -57,6 +57,7 @@ None.
 ### Remarks
 
 The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Application.ReadWrite.All_ except that the former allows these operations only on applications and service principals that the calling app is an owner of. Ownership is indicated by the `owners` navigation property on the target [application](../api-reference/beta/api/application_list_owners.md) or [service principal](../api-reference/beta/api/serviceprincipal_list_owners.md) resource.
+> NOTE: Using the _Application.ReadWrite.OwnedBy_ permission to call `GET /applications` to list applications will fail with a 403.  Instead use `GET servicePrincipals/{id}/ownedObjects` to list the applications owned by the calling application.
 
 ### Example usage
 
@@ -69,6 +70,7 @@ None.
 * _Application.ReadWrite.All_: List all applications (`GET /beta/applications`)
 * _Application.ReadWrite.All_: Delete a service principal (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_: Create an application (`POST /beta/applications`)
+* _Application.ReadWrite.OwnedBy_: List all applications owned by the the calling application (`GET servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /applications/{id}/owners/$ref`).  NOTE: This may require additional permissions.
 
 ---
