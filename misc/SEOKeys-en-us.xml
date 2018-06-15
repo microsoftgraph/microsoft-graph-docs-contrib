@@ -5277,7 +5277,7 @@
 	  </Item>
 	  <Item text="Role assignment requests" url="/en-us/api-reference/beta/resources/governanceroleassignmentrequest" >
 		<Item text="List" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_list" />
-		<Item text="Create" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_create" />
+		<Item text="Create" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_post" />
 		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_get" />
 		<Item text="Update" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_update" />
 		<Item text="Cancel" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_cancel" />
