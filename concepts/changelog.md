@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## June 2018
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy that allow a client app to create, read, update and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
+
 ## May 2018
 
 ### Directory APIs
