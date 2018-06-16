@@ -1688,6 +1688,7 @@
       <Item text="List deleted items" url="/en-us/api-reference/v1.0/api/directory_deleteditems_list" />
       <Item text="Permanently delete item" url="/en-us/api-reference/v1.0/api/directory_deleteditems_delete" />
       <Item text="Restore deleted item" url="/en-us/api-reference/v1.0/api/directory_deleteditems_restore" />
+      <Item text="List deleted items owned by user" url="/en-us/api-reference/v1.0/api/directory_deleteditems_user_owned" />
     </Item>
     <Item text="Device" url="/en-us/api-reference/v1.0/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="List devices" url="/en-us/api-reference/v1.0/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
@@ -2197,8 +2198,8 @@
         <Item text="List calendar view" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Reminder view" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
         <Item text="Find meeting times" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="user: meeting times, Microsoft Graph API, user API" SEODescription="" />
-		<Item text="Find room lists" url="/en-us/api-reference/beta/api/user_findroomlists" />
-		<Item text="Find rooms" url="/en-us/api-reference/beta/api/user_findrooms" />
+        <Item text="Find room lists" url="/en-us/api-reference/beta/api/user_findroomlists" />
+        <Item text="Find rooms" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>
       <Item text="Contacts" url="/en-us/api-reference/beta/resources/contact" SEOKeyword="user contact, Microsoft Graph API, user API" SEODescription="">
         <Item text="List contacts" url="/en-us/api-reference/beta/api/user_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, Users API" SEODescription="Retrieve a list of contact objects." />
@@ -2240,8 +2241,8 @@
         <Item text="Create mail folder" url="/en-us/api-reference/beta/api/user_post_mailfolders" SEOKeyword="Create MailFolder, Microsoft Graph API, Users API" SEODescription="Use this API to create a new MailFolder." />
         <Item text="Send mail" url="/en-us/api-reference/beta/api/user_sendmail" SEOKeyword="user: sendMail, Microsoft Graph API, user API" SEODescription="" />
         <Item text="List rules" url="/en-us/api-reference/beta/api/mailfolder_list_messagerules" />
-		<Item text="Create rules" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
-		<Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
+        <Item text="Create rules" url="/en-us/api-reference/beta/api/mailfolder_post_messagerules" />
+        <Item text="Get MailTips" url="/en-us/api-reference/beta/api/user_getmailtips" SEODescription="" />
       </Item>
       <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
@@ -2548,8 +2549,8 @@
 			<Item text="Delete" url="/en-us/api-reference/beta/api/bookingstaffmember_delete" />
 		</Item>
 	</Item>
-	<Item text="Devices and apps" ProdTag="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
-      <Item text="App management" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
+  <Item text="Devices and apps" ProdTag="Intune" url="/en-us/api-reference/beta/resources/intune_graph_overview">
+    <Item text="App management" url="/en-us/api-reference/beta/resources/intune_apps_app_conceptual">
         <Item text="Android device owner enrollment profile" url="/en-us/api-reference/beta/resources/intune_androidforwork_androiddeviceownerenrollmentprofile">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_androidforwork_androiddeviceownerenrollmentprofile_get"/>
@@ -2839,7 +2840,10 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinessapp_update"/>
         </Item>
         <Item text="Microsoft store for business app assignment settings" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinessappassignmentsettings"/>
+        <Item text="Microsoft store for business contained app" url="/en-us/api-reference/beta/resources/intune_apps_microsoftstoreforbusinesscontainedapp">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_microsoftstoreforbusinesscontainedapp_update"/>
         </Item>
@@ -4560,7 +4564,11 @@
       <Item text="Mobile app protection" url="/en-us/api-reference/beta/resources/intune_app_protection_conceptual">
         <Item text="Android managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappprotection">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappprotection_update"/>
+        </Item>
         <Item text="Android managed app registration" url="/en-us/api-reference/beta/resources/intune_mam_androidmanagedappregistration">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappregistration_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_androidmanagedappregistration_get"/>
@@ -4952,7 +4960,7 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_tem_telecomexpensemanagementpartner_update"/>
         </Item>
       </Item>
-    </Item>
+  </Item>
 	<Item text="Education" url="/en-us/api-reference/beta/resources/education-overview" >
 		<Item text="Schools" url="/en-us/api-reference/beta/resources/educationschool" >
 			<Item text="List schools" url="/en-us/api-reference/beta/api/educationroot_list_schools" />
@@ -5010,11 +5018,11 @@
 			<Item text="Delete submission resource" url="/en-us/api-reference/beta/api/educationsubmissionresource_delete" />
 			<Item text="Get submission" url="/en-us/api-reference/beta/api/educationsubmission_get" />
 			<Item text="Submit submission" url="/en-us/api-reference/beta/api/educationsubmission_submit" />
-			<Item text="Recall submission" url="/en-us/api-reference/beta/api/educationsubmission_recall" />
+			<Item text="Unsubmit submission" url="/en-us/api-reference/beta/api/educationsubmission_unsubmit" />
 			<Item text="List submitted resources" url="/en-us/api-reference/beta/api/educationsubmission_list_submittedresources" />
 			<Item text="Get submitted resource" url="/en-us/api-reference/beta/api/educationsubmittedsubmissionresource_get" />
 			<Item text="Grade submission" url="/en-us/api-reference/beta/api/educationsubmission_update" />
-			<Item text="Release submission" url="/en-us/api-reference/beta/api/educationsubmission_release" />
+			<Item text="Return submission" url="/en-us/api-reference/beta/api/educationsubmission_return" />
 		</Item>
 		<Item text="Synchronization profile" url="/en-us/api-reference/beta/resources/educationsynchronizationprofile" >
 			<Item text="List profile" url="/en-us/api-reference/beta/api/educationsynchronizationprofile_list" />
@@ -5102,7 +5110,7 @@
           <Item text="Assign owner" url="/en-us/api-reference/beta/api/application_post_owners" SEOKeyword="Create owner, Microsoft Graph API, application API" SEODescription="Use this API to create a new owner." />
           <Item text="List extension properties" url="/en-us/api-reference/beta/api/application_list_extensionproperties" SEOKeyword="List extensionProperties, Microsoft Graph API, application API" SEODescription="Retrieve a list of extensionproperty objects." />
         </Item>
-	  <Item text="Audit logs"  url="/en-us/api-reference/beta/resources/directoryaudit">
+	  <Item text="Audit logs"  url="/en-us/api-reference/beta/resources/azure_ad_auditlog_overview">
 			<Item text="Directory audit" url="/en-us/api-reference/beta/resources/directoryaudit" SEOKeyword="directoryAudit object, Microsoft Graph API, Azure AD, audit logs" SEODescription="">
 			<Item text="List directory audits" url="/en-us/api-reference/beta/api/directoryaudit_list" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a list of directoryAudit objects."/>
 			<Item text="Get directory audit" url="/en-us/api-reference/beta/api/directoryaudit_get" SEOKeyword="Audit log API, Microsoft Graph API, Azure AD, audit logs" SEODescription="API to return a directoryAudit object."/>
@@ -5121,9 +5129,8 @@
         <Item text="List deleted items" url="/en-us/api-reference/beta/api/directory_deleteditems_list" />
         <Item text="Permanently delete item" url="/en-us/api-reference/beta/api/directory_deleteditems_delete" />
         <Item text="Restore deleted item" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
-		<Item text="List deleted items owner by user" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
+        <Item text="List deleted items owned by user" url="/en-us/api-reference/beta/api/directory_deleteditems_user_owned" />
        </Item>
-
       <Item text="Device" url="/en-us/api-reference/beta/resources/device" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
         <Item text="List devices" url="/en-us/api-reference/beta/api/device_list" SEOKeyword="List devices, Microsoft Graph API, Device API" SEODescription="Retrieve a list of device objects." />
         <Item text="Create device" url="/en-us/api-reference/beta/api/device_post_devices" SEOKeyword="Create Device, Microsoft Graph API, Device API" SEODescription="Use this API to create a new Device." />
@@ -5226,7 +5233,7 @@
         <Item text="Upate policy" url="/en-us/api-reference/beta/api/policy_update" SEODescription="Update the properties of a policy." />
         <Item text="Delete policy" url="/en-us/api-reference/beta/api/policy_delete" SEODescription="Delete an existing policy." />
         <Item text="Assign policy" url="/en-us/api-reference/beta/api/policy_assign" SEODescription="Assign policies to an organization entities like applications and service principals." />
-        <Item text="List assigned policies" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="List an entity’s assigned policies." />
+        <Item text="List assigned policies" url="/en-us/api-reference/beta/api/policy_list_assigned" SEODescription="List an entity's assigned policies." />
         <Item text="List applied to applications" url="/en-us/api-reference/beta/api/policy_list_appliesto" SEODescription="List the applications and service principals with the given policy applied." />
       </Item>
     <Item text="Privileged Identity Management" url="/en-us/api-reference/beta/resources/privilegedIdentityManagement_root" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API" SEODescription="Azure Active Directory Privileged Identity Management">
@@ -5251,6 +5258,31 @@
       <Item text="Audit event" url="/en-us/api-reference/beta/resources/privilegedoperationevent" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Audit event from Privileged Identity Management">
         <Item text="List audit events" url="/en-us/api-reference/beta/api/privilegedoperationevent_list" SEOKeyword="Privileged Identity Management API, Azure AD, AADPIM, PIM, Microsoft Graph API, Audit" SEODescription="Retrieve a list of audit events." />
       </Item>
+	  <Item text="Managed resources" url="/en-us/api-reference/beta/resources/governanceresource" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceresource_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceresource_get" />
+	  </Item>
+	  <Item text="Role definitions" url="/en-us/api-reference/beta/resources/governanceroledefinition" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceroledefinition_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroledefinition_get" />
+	  </Item>
+	  <Item text="Role settings" url="/en-us/api-reference/beta/resources/governancerolesetting" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governancerolesetting_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governancerolesetting_get" />
+		<Item text="Update" url="/en-us/api-reference/beta/api/governancerolesetting_update" />
+	  </Item>
+	  <Item text="Role assignments" url="/en-us/api-reference/beta/resources/governanceroleassignment" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceroleassignment_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroleassignment_get" />
+		<Item text="Export" url="/en-us/api-reference/beta/api/governanceroleassignment_export" />
+	  </Item>
+	  <Item text="Role assignment requests" url="/en-us/api-reference/beta/resources/governanceroleassignmentrequest" >
+		<Item text="List" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_list" />
+		<Item text="Create" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_post" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_get" />
+		<Item text="Update" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_update" />
+		<Item text="Cancel" url="/en-us/api-reference/beta/api/governanceroleassignmentrequest_cancel" />
+	  </Item>
     </Item>
       <Item text="Service principal" url="/en-us/api-reference/beta/resources/serviceprincipal" >
         <Item text="List service principal" url="/en-us/api-reference/beta/api/serviceprincipal_list" />
