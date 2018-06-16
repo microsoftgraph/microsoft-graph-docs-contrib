@@ -80,15 +80,6 @@ By default, unknown members are not returned by Microsoft Graph. If, however, yo
 
 >**Note:** If your application is prepared to handle unknown enum members, it should opt-in by using an HTTP *prefer* request header: `Prefer: include-unknown-enum-members`.
 
-### Logging for investigation
-
-Generate and send a unique guid as "client-request-id" header so that the entire request can be tracked in Microsoft Graph logs using that id. This is useful for Microsoft Graph team to investigate any errors that you might see and reach out to the support team through various channels.
-
-At a minimum, we recommend you do the following for each request:
-1. Log an accurate time stamp of the request submission.
-2. Send and log the client-request-id.
-3. Log the HTTP response code, request-id header value and x-ms-ags-diagnostic header value.
-Providing information in such logs will help Microsoft troubleshoot issues when you ask for help or support.
 
 ## Storing data locally
 
@@ -143,4 +134,6 @@ To ensure reliability and facilitate support for your application:
 
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
 - Open connections to all advertised DNS answers.
-- Always log the *request-id* and *timestamp* from the HTTP response header. This is required when escalating issues or reporting issues in Stack Overflow or to Microsoft Customer Support.
+- Your application should generate a unique GUID and send it on each Microsoft Graph REST request in a client-request-id HTTP header. This allows Microsoft Graph to track the entire request in trace logs, using the ID supplied by your application. Providing the client-request-id will help Microsoft investigate any errors more easily when raising issues to Stack Overflow or Microsoft Customer Support.
+- Send the above *client-request-id* in the HTTP request header, and log it in your application's logs.
+- Always log the *request-id*, *timestamp* and *x-ms-ags-diagnostic* from the HTTP response headers. This is required when escalating issues or reporting issues in Stack Overflow or to Microsoft Customer Support.
