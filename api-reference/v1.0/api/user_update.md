@@ -78,14 +78,6 @@ Content-length: 491
 
 {
   "accountEnabled": true,
-  "assignedPlans": [
-    {
-      "assignedDateTime": "datetime-value",
-      "capabilityStatus": "capabilityStatus-value",
-      "service": "service-value",
-      "servicePlanId": "bea13e0c-3828-4daa-a392-28af7ff61a0f"
-    }
-  ],
   "businessPhones": [
     "businessPhones-value"
   ],
