@@ -40,6 +40,7 @@ This resource supports:
 |[List endpoints](../api/group_list_endpoints.md) |[endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint_get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
+|[validateProperties](../api/group_validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. | 
 |**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.|
