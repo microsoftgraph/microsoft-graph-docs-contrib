@@ -5757,7 +5757,7 @@
       <Item text="Chat thread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="chatthread API, Microsoft Graph API, chatthread API" SEODescription="">
         <Item text="Create chat thread" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Create chat thread, Microsoft Graph API, Microsoft Teams chat API" SEODescription="Use this API to create a new chat thread." />
       </Item>
-      <Item text="Team apps" url="/en-us/api-reference/beta/resources/teamsapp" >
+      <Item text="Apps" url="/en-us/api-reference/beta/resources/teamsapp" >
 		<Item text="List apps" url="/en-us/api-reference/beta/api/teams_apps_list" />
 		<Item text="Add app" url="/en-us/api-reference/beta/api/teams_apps_add" />
 		<Item text="Delete app" url="/en-us/api-reference/beta/api/teams_apps_delete" />
