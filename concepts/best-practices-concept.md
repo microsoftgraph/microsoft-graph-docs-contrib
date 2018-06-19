@@ -134,6 +134,6 @@ To ensure reliability and facilitate support for your application:
 
 - Honor DNS TTL and set connection TTL to match it. This ensures availability in case of failovers.
 - Open connections to all advertised DNS answers.
-- Your application should generate a unique GUID and send it on each Microsoft Graph REST request in a client-request-id HTTP header. This allows Microsoft Graph to track the entire request in trace logs, using the ID supplied by your application. Providing the client-request-id will help Microsoft investigate any errors more easily when raising issues to Stack Overflow or Microsoft Customer Support.
-- Send the above *client-request-id* in the HTTP request header, and log it in your application's logs.
-- Always log the *request-id*, *timestamp* and *x-ms-ags-diagnostic* from the HTTP response headers. This is required when escalating issues or reporting issues in Stack Overflow or to Microsoft Customer Support.
+- Generate a unique GUID and send it on each Microsoft Graph REST request. This will help Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
+  - On every request to Microsoft Graph, send a unique GUID in a client-request-id HTTP request header, and log it in your application's logs.
+  - Always log the request-id, timestamp and x-ms-ags-diagnostic from the HTTP response headers. These, together with the client-request-id, are required when reporting issues in Stack Overflow or to Microsoft Customer Support.
