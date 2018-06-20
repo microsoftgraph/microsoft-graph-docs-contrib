@@ -24,6 +24,15 @@ GET /bookingBusinesses
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
+This method also supports the following parameters:
+- **query**: a string that limits the results to businesses that match the given value.
+
+For example:
+
+```
+GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
+```
+
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
