@@ -4,7 +4,7 @@
  
 Get a collection of [bookingbusiness](../resources/bookingbusiness.md) objects that has been created for the tenant. 
 
-This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, other properties are _returned_ as null even if they have been set. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness_get.md) operation.
+This operation returns only the **id** and **displayName** of each Bookings business in the collection. For performance considerations, other properties are _not returned_ even if they have been set. You can get the other properties of a Bookings business by specifying its **id** in a [GET](bookingbusiness_get.md) operation.
 
 
 ## Permissions
@@ -62,34 +62,10 @@ Content-length: 526
         {
             "id":"Contosolunchdelivery@M365B489948.onmicrosoft.com",
             "displayName":"Contoso lunch delivery",
-            "businessType":null,
-            "phone":null,
-            "email":null,
-            "webSiteUrl":null,
-            "defaultCurrencyIso":null,
-            "isPublished":null,
-            "publicUrl":null,
-            "address":null,
-            "schedulingPolicy":null,
-            "businessHours":[
-
-            ]
         },
         {
             "id":"Fabrikam@M365B489948.onmicrosoft.com",
             "displayName":"Fabrikam",
-            "businessType":null,
-            "phone":null,
-            "email":null,
-            "webSiteUrl":null,
-            "defaultCurrencyIso":null,
-            "isPublished":null,
-            "publicUrl":null,
-            "address":null,
-            "schedulingPolicy":null,
-            "businessHours":[
-
-            ]
         }
     ]
 }
