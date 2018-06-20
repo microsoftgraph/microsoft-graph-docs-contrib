@@ -45,7 +45,6 @@ POST /teams/{id}/clone
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of [team](../resources/team.md) object.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
