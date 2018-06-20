@@ -6,14 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2018
 
-### ActivityFeedService APIs
+### Project Rome APIs
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Change      | v1.0     | Added back in examples for nested filter to [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_recent_activities) |
-| Change       | v1.0   | Added back in examples for nested filter to [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_activities) |
-| Change      | beta     | Added back in examples for nested filter to [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_recent_activities) |
-| Change       | beta    | Added back in examples for nested filter to [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_get_activities) |
+| Change      | beta and v1.0     | Added examples for nested filter to [Get recent activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_recent_activities). |
+| Change       | beta and v1.0   | Added examples for nested filter to [Get activities API](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/projectrome_get_activities). |
 
 ### Directory APIs
 
