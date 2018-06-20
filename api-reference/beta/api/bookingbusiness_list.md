@@ -44,10 +44,10 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/bookingBusinesses
 ```
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
+  "truncated": false,
   "@odata.type": "microsoft.graph.bookingBusiness",
   "isCollection": true
 } -->
