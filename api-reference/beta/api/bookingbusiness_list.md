@@ -57,7 +57,7 @@ Content-type: application/json
 Content-length: 526
 
 {
-    "@odata.context":"https://graph.microsoft.com/testbookings/$metadata#bookingBusinesses",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#bookingBusinesses",
     "value":[
         {
             "id":"Contosolunchdelivery@M365B489948.onmicrosoft.com",
