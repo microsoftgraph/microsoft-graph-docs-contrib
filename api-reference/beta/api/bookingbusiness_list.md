@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.bookingBusiness",
   "isCollection": true
 } -->
