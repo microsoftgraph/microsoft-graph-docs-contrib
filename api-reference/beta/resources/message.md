@@ -89,7 +89,7 @@ Here is a JSON representation of the resource
 |id|String|Unique identifier for the message (note that this value may change if a message is moved or altered)|
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused`, `other`.|
-|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only.|
+|internetMessageHeaders | [internetMessageHeader](internetmessageheader.md) collection | The collection of message headers, defined by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), that provide details of the network path taken by a message from the sender to the recipient. Read-only. internetMessageHeaders is not returned by default but can be retrieved for a given message by use of the ?$select=internetMessageHeaders query.|
 |internetMessageId | String | The message ID in the format specified by [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Updatable only if **isDraft** is true.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|
