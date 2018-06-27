@@ -20,6 +20,7 @@ For more on working with groups and members in teams, see [Microsoft Teams API O
 |[Clone team](../api/team_clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
 |[Archive team](../api/team_archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Put the team in a read-only state. |
 |[Unarchive team](../api/team_unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Restore the team to a read-write state. |
+|[List your teams](../api/user_list_joinedteams.md) | [team](team.md) collection | List the teams you are a member of. |
 
 
 ## Properties
