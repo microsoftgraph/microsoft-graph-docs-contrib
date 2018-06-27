@@ -6,8 +6,8 @@ A team in Microsoft Teams is a collection of [channels](channel.md).
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
 Every team is associated with a [group](../resources/group.md).
-The group has the same id as the team -- ie, /groups/{id}/team is the same as /teams/{id}.
-For more on working with groups and members in teams, see [Microsoft Teams API Overview](teams_api_overview.md).
+The group has the same ID as the team - for example, /groups/{id}/team is the same as /teams/{id}.
+For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams_api_overview.md).
 
 ## Methods
 
