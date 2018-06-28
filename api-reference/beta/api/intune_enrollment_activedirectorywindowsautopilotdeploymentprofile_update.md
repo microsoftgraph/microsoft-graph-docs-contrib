@@ -40,9 +40,12 @@ The following table shows the properties that are required when you create the [
 |id|String|Profile Key Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |displayName|String|Name of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |description|String|Description of the profile Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
+|language|String|Language configured on the device Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |createdDateTime|DateTimeOffset|Profile creation time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |lastModifiedDateTime|DateTimeOffset|Profile last modified time Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune_enrollment_outofboxexperiencesettings.md)|Out of box experience setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
+|enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune_enrollment_windowsenrollmentstatusscreensettings.md)|Enrollment status screen setting Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
+|enrollmentSettings|[windowsAutoPilotEnrollmentSettings](../resources/intune_enrollment_windowsautopilotenrollmentsettings.md)|Enrollment settings delivered to auto pilot devices Inherited from [windowsAutopilotDeploymentProfile](../resources/intune_enrollment_windowsautopilotdeploymentprofile.md)|
 
 
 
@@ -55,17 +58,34 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles/{windowsAutopilotDeploymentProfileId}
 Content-type: application/json
-Content-length: 338
+Content-length: 1054
 
 {
   "displayName": "Display Name value",
   "description": "Description value",
+  "language": "Language value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "outOfBoxExperienceSettings": {
     "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
     "hidePrivacySettings": true,
     "hideEULA": true,
-    "userType": "standard"
+    "userType": "standard",
+    "deviceUsageType": "shared",
+    "skipKeyboardSelectionPage": true
+  },
+  "enrollmentStatusScreenSettings": {
+    "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
+    "hideInstallationProgress": true,
+    "allowDeviceUseBeforeProfileAndAppInstallComplete": true,
+    "blockDeviceSetupRetryByUser": true,
+    "allowLogCollectionOnInstallFailure": true,
+    "customErrorMessage": "Custom Error Message value",
+    "installProgressTimeoutInMinutes": 15,
+    "allowDeviceUseOnInstallFailure": true
+  },
+  "enrollmentSettings": {
+    "@odata.type": "microsoft.graph.windowsAutoPilotEnrollmentSettings",
+    "blockWindowsConsumerFeatures": true
   }
 }
 ```
@@ -75,20 +95,37 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 533
+Content-Length: 1249
 
 {
   "@odata.type": "#microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile",
   "id": "49fe234a-234a-49fe-4a23-fe494a23fe49",
   "displayName": "Display Name value",
   "description": "Description value",
+  "language": "Language value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "outOfBoxExperienceSettings": {
     "@odata.type": "microsoft.graph.outOfBoxExperienceSettings",
     "hidePrivacySettings": true,
     "hideEULA": true,
-    "userType": "standard"
+    "userType": "standard",
+    "deviceUsageType": "shared",
+    "skipKeyboardSelectionPage": true
+  },
+  "enrollmentStatusScreenSettings": {
+    "@odata.type": "microsoft.graph.windowsEnrollmentStatusScreenSettings",
+    "hideInstallationProgress": true,
+    "allowDeviceUseBeforeProfileAndAppInstallComplete": true,
+    "blockDeviceSetupRetryByUser": true,
+    "allowLogCollectionOnInstallFailure": true,
+    "customErrorMessage": "Custom Error Message value",
+    "installProgressTimeoutInMinutes": 15,
+    "allowDeviceUseOnInstallFailure": true
+  },
+  "enrollmentSettings": {
+    "@odata.type": "microsoft.graph.windowsAutoPilotEnrollmentSettings",
+    "blockWindowsConsumerFeatures": true
   }
 }
 ```

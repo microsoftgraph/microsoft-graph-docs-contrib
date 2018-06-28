@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -50,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11735
+Content-Length: 12068
 
 {
   "value": {
@@ -83,6 +84,11 @@ Content-Length: 11735
     "messagingBlockSync": true,
     "messagingBlockMMS": true,
     "messagingBlockRichCommunicationServices": true,
+    "printerNames": [
+      "Printer Names value"
+    ],
+    "printerDefaultName": "Printer Default Name value",
+    "printerBlockAddition": true,
     "searchBlockDiacritics": true,
     "searchDisableAutoLanguageDetection": true,
     "searchDisableIndexingEncryptedItems": true,
@@ -91,6 +97,7 @@ Content-Length: 11735
     "searchDisableIndexerBackoff": true,
     "searchDisableIndexingRemovableDrive": true,
     "searchEnableAutomaticIndexSizeManangement": true,
+    "searchBlockWebResults": true,
     "securityBlockAzureADJoinedDevicesAutoEncryption": true,
     "diagnosticsDataSubmissionMode": "none",
     "oneDriveDisableFileSync": true,
@@ -168,6 +175,9 @@ Content-Length: 11735
     "defenderScheduledQuickScanTime": "11:58:49.3840000",
     "defenderCloudBlockLevel": "high",
     "defenderCloudExtendedTimeout": 12,
+    "defenderBlockOnAccessProtection": true,
+    "defenderScheduleScanDay": "monday",
+    "defenderSubmitSamplesConsentType": "alwaysPrompt",
     "lockScreenAllowTimeoutConfiguration": true,
     "lockScreenBlockActionCenterNotifications": true,
     "lockScreenBlockCortana": true,

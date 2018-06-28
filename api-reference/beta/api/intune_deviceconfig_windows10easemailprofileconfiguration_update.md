@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Request headers
@@ -43,16 +44,19 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|usernameSource|[userEmailSource](../resources/intune_deviceconfig_useremailsource.md)|Username attribute that is picked from AAD and injected into this profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune_deviceconfig_easemailprofileconfigurationbase.md). Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
+|usernameAADSource|[usernameSource](../resources/intune_deviceconfig_usernamesource.md)|Name of the AAD field, that will be used to retrieve UserName for email profile. Inherited from [easEmailProfileConfigurationBase](../resources/intune_deviceconfig_easemailprofileconfigurationbase.md). Possible values are: `userPrincipalName`, `primarySmtpAddress`, `samAccountName`.|
+|userDomainNameSource|[domainNameSource](../resources/intune_deviceconfig_domainnamesource.md)|UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune_deviceconfig_easemailprofileconfigurationbase.md). Possible values are: `fullDomainName`, `netBiosDomainName`.|
+|customDomainName|String|Custom domain name value used while generating an email profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune_deviceconfig_easemailprofileconfigurationbase.md)|
 |accountName|String|Account name.|
 |syncCalendar|Boolean|Whether or not to sync the calendar.|
 |syncContacts|Boolean|Whether or not to sync contacts.|
 |syncTasks|Boolean|Whether or not to sync tasks.|
-|durationOfEmailToSync|String|Duration of email to sync. Possible values are: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
-|emailAddressSource|String|Email attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
-|emailSyncSchedule|String|Email sync schedule. Possible values are: `userDefined`, `asMessagesArrive`, `manual`, `fifteenMinutes`, `thirtyMinutes`, `sixtyMinutes`, `basedOnMyUsage`.|
+|durationOfEmailToSync|[emailSyncDuration](../resources/intune_deviceconfig_emailsyncduration.md)|Duration of email to sync. Possible values are: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
+|emailAddressSource|[userEmailSource](../resources/intune_deviceconfig_useremailsource.md)|Email attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
+|emailSyncSchedule|[emailSyncSchedule](../resources/intune_deviceconfig_emailsyncschedule.md)|Email sync schedule. Possible values are: `userDefined`, `asMessagesArrive`, `manual`, `fifteenMinutes`, `thirtyMinutes`, `sixtyMinutes`, `basedOnMyUsage`.|
 |hostName|String|Exchange location that (URL) that the native mail app connects to.|
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
-|usernameSource|String|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 
 
 
@@ -65,13 +69,17 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 504
+Content-length: 649
 
 {
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "usernameSource": "primarySmtpAddress",
+  "usernameAADSource": "primarySmtpAddress",
+  "userDomainNameSource": "netBiosDomainName",
+  "customDomainName": "Custom Domain Name value",
   "accountName": "Account Name value",
   "syncCalendar": true,
   "syncContacts": true,
@@ -80,8 +88,7 @@ Content-length: 504
   "emailAddressSource": "primarySmtpAddress",
   "emailSyncSchedule": "asMessagesArrive",
   "hostName": "Host Name value",
-  "requireSsl": true,
-  "usernameSource": "primarySmtpAddress"
+  "requireSsl": true
 }
 ```
 
@@ -90,7 +97,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 688
+Content-Length: 833
 
 {
   "@odata.type": "#microsoft.graph.windows10EasEmailProfileConfiguration",
@@ -100,6 +107,10 @@ Content-Length: 688
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "usernameSource": "primarySmtpAddress",
+  "usernameAADSource": "primarySmtpAddress",
+  "userDomainNameSource": "netBiosDomainName",
+  "customDomainName": "Custom Domain Name value",
   "accountName": "Account Name value",
   "syncCalendar": true,
   "syncContacts": true,
@@ -108,8 +119,7 @@ Content-Length: 688
   "emailAddressSource": "primarySmtpAddress",
   "emailSyncSchedule": "asMessagesArrive",
   "hostName": "Host Name value",
-  "requireSsl": true,
-  "usernameSource": "primarySmtpAddress"
+  "requireSsl": true
 }
 ```
 

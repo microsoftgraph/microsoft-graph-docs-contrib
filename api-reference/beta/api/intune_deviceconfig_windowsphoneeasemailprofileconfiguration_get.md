@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -50,7 +51,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 784
+Content-Length: 935
 
 {
   "value": {
@@ -61,6 +62,10 @@ Content-Length: 784
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "usernameSource": "primarySmtpAddress",
+    "usernameAADSource": "primarySmtpAddress",
+    "userDomainNameSource": "netBiosDomainName",
+    "customDomainName": "Custom Domain Name value",
     "accountName": "Account Name value",
     "applyOnlyToWindowsPhone81": true,
     "syncCalendar": true,
@@ -70,8 +75,7 @@ Content-Length: 784
     "emailAddressSource": "primarySmtpAddress",
     "emailSyncSchedule": "asMessagesArrive",
     "hostName": "Host Name value",
-    "requireSsl": true,
-    "usernameSource": "primarySmtpAddress"
+    "requireSsl": true
   }
 }
 ```

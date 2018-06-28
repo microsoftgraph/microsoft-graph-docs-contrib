@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1677
+Content-Length: 1874
 
 {
   "value": [
@@ -71,6 +72,10 @@ Content-Length: 1677
       "workProfileBlockNotificationsWhileDeviceLocked": true,
       "workProfileBlockAddingAccounts": true,
       "workProfileBluetoothEnableContactSharing": true,
+      "workProfileBlockScreenCapture": true,
+      "workProfileBlockCrossProfileCallerId": true,
+      "workProfileBlockCamera": true,
+      "workProfileBlockCrossProfileContactsSearch": true,
       "workProfileBlockCrossProfileCopyPaste": true,
       "workProfileDefaultAppPermissionPolicy": "prompt",
       "workProfilePasswordBlockFingerprintUnlock": true,

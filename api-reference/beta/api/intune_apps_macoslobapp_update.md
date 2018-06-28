@@ -42,7 +42,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|The admin provided or imported title of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |description|String|The description of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |publisher|String|The publisher of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|largeIcon|[mimeContent](../resources/intune_apps_mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
+|largeIcon|[mimeContent](../resources/intune_shared_mimecontent.md)|The large icon, to be displayed in the app details and used for upload of the icon. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |createdDateTime|DateTimeOffset|The date and time the app was created. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the app was last modified. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |isFeatured|Boolean|The value indicating whether the app is marked as featured by the admin. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
@@ -52,11 +52,11 @@ The following table shows the properties that are required when you create the [
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md)|
-|publishingState|String|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md) Possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune_apps_mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune_apps_mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune_apps_mobilelobapp.md)|
-|bundleId|String|The Identity Name.|
+|bundleId|String|The bundle id.|
 |minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune_apps_macosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |buildNumber|String|The build number of MacOS Line of Business (LoB) app.|
 |versionNumber|String|The version number of MacOS Line of Business (LoB) app.|
@@ -64,6 +64,7 @@ The following table shows the properties that are required when you create the [
 |identityVersion|String|The identity version.|
 |md5HashChunkSize|Int32|The chunk size for MD5 hash|
 |md5Hash|String collection|The MD5 hash codes|
+|ignoreVersionDetection|Boolean|A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set this to true for macOS Line of Business (LoB) apps that use a self update feature.|
 
 
 
@@ -76,7 +77,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1441
+Content-length: 1476
 
 {
   "displayName": "Display Name value",
@@ -124,7 +125,8 @@ Content-length: 1441
   "md5HashChunkSize": 0,
   "md5Hash": [
     "Md5Hash value"
-  ]
+  ],
+  "ignoreVersionDetection": true
 }
 ```
 
@@ -133,7 +135,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1599
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -184,7 +186,8 @@ Content-Length: 1599
   "md5HashChunkSize": 0,
   "md5Hash": [
     "Md5Hash value"
-  ]
+  ],
+  "ignoreVersionDetection": true
 }
 ```
 
