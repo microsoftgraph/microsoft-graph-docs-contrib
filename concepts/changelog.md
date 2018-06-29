@@ -18,7 +18,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [access reviews](../api-reference/beta/resources/accessreviews_root.md) feature to [Azure AD](../api-reference/beta/resources/azuread_ad_overview.md). |
+| Addition | beta | Added the [access reviews](../api-reference/beta/resources/accessreviews_root.md) feature to [Azure AD](../api-reference/beta/resources/azure_ad_overview.md). |
 
 ### Directory APIs
 
