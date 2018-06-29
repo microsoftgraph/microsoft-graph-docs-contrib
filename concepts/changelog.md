@@ -14,11 +14,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2018
 
+### Identity and access APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [access reviews](../api-reference/beta/resources/accessreviews_root.md) feature to [Azure AD](../api-reference/beta/resources/azuread_ad_overview.md). |
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy that allow a client app to create, read, update and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
+| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allow a client app to create, read, update and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
 
 ### Microsoft Intune APIs
 

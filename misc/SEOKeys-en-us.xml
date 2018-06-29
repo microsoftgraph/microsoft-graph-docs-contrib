@@ -1747,7 +1747,7 @@
       <Item text="Get org details" url="/en-us/api-reference/v1.0/api/organization_get" SEOKeyword="Get tenantDetail, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of tenantdetail object." />
       <Item text="Update org details" url="/en-us/api-reference/v1.0/api/organization_update" SEOKeyword="Update tenantdetail, Microsoft Graph API, Directory API" SEODescription="Update the properties of tenantdetail object." />
     </Item>
-    <Item text="Subscribed sku" url="/en-us/api-reference/v1.0/resources/subscribedsku" SEOKeyword="subscribedsku API, Microsoft Graph API, subscribedsku API" SEODescription="Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from DirectoryObject.">
+    <Item text="Subscribed SKU" url="/en-us/api-reference/v1.0/resources/subscribedsku" SEOKeyword="subscribedsku API, Microsoft Graph API, subscribedsku API" SEODescription="Only the read operation is supported on subscribed SKUs; create, update, and delete are not supported. Query filter expressions are not supported. Inherits from DirectoryObject.">
       <Item text="List subscribedSkus" url="/en-us/api-reference/v1.0/api/subscribedsku_list" SEOKeyword="List subscribedSkus, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve a list of subscribedsku objects." />
       <Item text="Get subscribedSku" url="/en-us/api-reference/v1.0/api/subscribedsku_get" SEOKeyword="Get subscribedSku, Microsoft Graph API, subscribedsku API" SEODescription="Retrieve the properties and relationships of subscribedsku object." />
     </Item>
@@ -5149,6 +5149,42 @@
       </Item>
     </Item>
 	<Item text="Identity and access" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
+
+      <Item text="Access reviews" url="/en-us/api-reference/beta/resources/accessreviews_root" SEOKeyword="Access review API, Microsoft Graph API, accessReview API" SEODescription="The Access review API lets you validate group and app access and membership.">
+        <Item text="Access review" url="/en-us/api-reference/beta/resources/accessreview" SEOKeyword="Access review API, Microsoft Graph API, accessReview resource">
+           <Item text="Create access review" url="/en-us/api-reference/beta/api/accessreview_create" SEOKeyword="Access review API, Microsoft Graph API, accessReview API, create accessReview" />
+           <Item text="Delete access review" url="/en-us/api-reference/beta/api/accessreview_delete"  />
+           <Item text="Get access review" url="/en-us/api-reference/beta/api/accessreview_get"  />
+           <Item text="List access reviews" url="/en-us/api-reference/beta/api/accessreview_list"  />
+           <Item text="Update access review" url="/en-us/api-reference/beta/api/accessreview_update"  />
+           <Item text="Add reviewer" url="/en-us/api-reference/beta/api/accessreview_addreviewer"  />
+           <Item text="List decisions" url="/en-us/api-reference/beta/api/accessreview_listdecisions"  />
+           <Item text="List my decisions" url="/en-us/api-reference/beta/api/accessreview_mydecisions"  />
+           <Item text="List reviewers" url="/en-us/api-reference/beta/api/accessreview_listreviewers"  />
+           <Item text="Remove reviers" url="/en-us/api-reference/beta/api/accessreview_removereviewers"  />
+           <Item text="Reset" url="/en-us/api-reference/beta/api/accessreview_reset"  />
+           <Item text="Send reminder" url="/en-us/api-reference/beta/api/accessreview_sendreminder"  />
+           <Item text="Stop" url="/en-us/api-reference/beta/api/accessreview_stop"  />
+        </Item>
+        <Item text="Business flow template" url="/en-us/api-reference/beta/resources/businessflowtemplate">
+           <Item text="List" url="/en-us/api-reference/beta/api/businessflowtemplate_list"  />
+        </Item>
+        <Item text="Program" url="/en-us/api-reference/beta/resources/program">
+           <Item text="Create" url="/en-us/api-reference/beta/api/program_list"  />
+           <Item text="Delete" url="/en-us/api-reference/beta/api/program_list"  />
+           <Item text="List" url="/en-us/api-reference/beta/api/program_list"  />
+           <Item text="Update" url="/en-us/api-reference/beta/api/program_list"  />
+           <Item text="List controls" url="/en-us/api-reference/beta/api/program_listcontrols"  />
+        </Item>
+        <Item text="Program control" url="/en-us/api-reference/beta/resources/programcontrol">
+           <Item text="Create" url="/en-us/api-reference/beta/api/programcontrol_create"  />
+           <Item text="Delete" url="/en-us/api-reference/beta/api/programcontrol_delete"  />
+           <Item text="List" url="/en-us/api-reference/beta/api/programcontrol_list"  />
+        </Item>
+        <Item text="Program control type" url="/en-us/api-reference/beta/resources/programcontroltype">
+           <Item text="List" url="/en-us/api-reference/beta/api/programcontroltype_list"  />
+        </Item>
+      </Item>
       <Item text="Administrative unit" url="/en-us/api-reference/beta/resources/administrativeunit" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="An administrative unit provides a conceptual container for User and Group directory objects. Using administrative units, a company administrator can now delegate administrative responsibilities to manage the users and groups contained within or scoped to an administrative unit to a regional or departmental administrator.">
         <Item text="Create administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_post_administrativeunits" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to create a new administrativeUnit." />
         <Item text="List administrative unit" url="/en-us/api-reference/beta/api/administrativeunit_list" SEOKeyword="Administrative Unit API, Microsoft Graph API" SEODescription="API to list administrativeUnit objects." />
