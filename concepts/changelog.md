@@ -29,6 +29,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
 
+### Outlook contacts
+| **Change type** | **Version**   | **Description**                          |
+|:--------------- |:------------- |:---------------------------------------- |
+|Addition |Beta | Added the complex type [typedEmailAddress](../api-reference/beta/resources/typedemailaddress.md). |
+|Change | Beta | Changed the type of the **emailAddresses** property of [contact](../api-reference/beta/resources/contact.md) to be a collection of **typedEmailAddress** instances.|
 
 ## June 2018
 
