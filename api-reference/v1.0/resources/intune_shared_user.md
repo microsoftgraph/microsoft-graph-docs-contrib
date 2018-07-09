@@ -7,11 +7,11 @@ Represents an Azure Active Directory user object.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List users](../api/intune_shared_user.md) objects.|
-|[Get user](../api/intune_shared_user.md) object.|
-|[Create user](../api/intune_shared_user.md) object.|
+|[List users](../api/intune_shared_user_list.md) objects.|
+|[Get user](../api/intune_shared_user_get.md) object.|
+|[Create user](../api/intune_shared_user_create.md) object.|
 |[Delete user](../api/intune_shared_user_delete.md).|
-|[Update user](../api/intune_shared_user.md) object.|
+|[Update user](../api/intune_shared_user_update.md) object.|
 |**Device management**|
 |[removeAllDevicesFromManagement action](../api/intune_shared_user_removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
 |**Mobile app management (MAM)**|

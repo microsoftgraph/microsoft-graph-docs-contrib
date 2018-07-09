@@ -8,8 +8,8 @@ Singleton entity that acts as a container for all device app management function
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceAppManagement](../api/intune_shared_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) object.|
-|[Update deviceAppManagement](../api/intune_shared_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) object.|
+|[Get deviceAppManagement](../api/intune_shared_deviceappmanagement_get.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) object.|
+|[Update deviceAppManagement](../api/intune_shared_deviceappmanagement_update.md)|Update the properties of a [deviceAppManagement](../resources/intune_shared_deviceappmanagement.md) object.|
 |**On-boarding**|
 |[syncMicrosoftStoreForBusinessApps action](../api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps.md)|None|Syncs Intune account with Microsoft Store For Business|
 
