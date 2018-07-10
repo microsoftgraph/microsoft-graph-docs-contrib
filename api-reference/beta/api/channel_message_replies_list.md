@@ -35,7 +35,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_channel"
+  "name": "get_channel_message_replies"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
@@ -45,15 +45,14 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "@odata.type": "microsoft.graph.chatmessage",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
 
-HTTP/1.1 200 OK
-Content-type: application/json
 {
   "value": [
     {
@@ -64,7 +63,7 @@ Content-type: application/json
             "id":  "id-value",
             "displayName": "John Doe"
             }  
-        }
+        },
         "etag": "id-value",
         "messageType": "message",
         "createdDateTime": "2018-07-09T07:40:20.152Z",
@@ -87,7 +86,7 @@ Content-type: application/json
             {
                 "type": "user",
                 "id": "id-value ",
-                "mentionText": "Test User",
+                "mentionText": "Test User"
             }
         ],
         "importance": "normal",
@@ -95,14 +94,14 @@ Content-type: application/json
             {
                 "type": "like",
                 "user": [
-                { 
-                    "id":  "id-value",
-                    "displayName": "John Doe"
-                }
+                    { 
+                        "id":  "id-value",
+                        "displayName": "John Doe"
+                    }
                 ],
                 "createdDateTime": "2018-07-09T07:40:20.152Z"
             }
-        ]
+        ],
         "locale": "en-us"
     }
   ]
@@ -113,7 +112,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get channel",
+  "description": "Get channel message replies",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
