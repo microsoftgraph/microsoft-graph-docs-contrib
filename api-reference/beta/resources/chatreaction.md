@@ -21,13 +21,13 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "content"
   ],
-  "@odata.type": "microsoft.graph.chatreaction"
+  "@odata.type": "microsoft.graph.chatReaction"
 }-->
 
 ```json
 {
   "type": "string ",
-  "user": {"@odata.type": "microsoft.graph.IdentitySet"},
+  "user": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "content": "string"
 }

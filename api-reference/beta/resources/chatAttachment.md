@@ -27,7 +27,7 @@ An entity of type `chatAttachment` is returned as part of the GET channel messag
     "contentUrl"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.chatattachment"
+  "@odata.type": "microsoft.graph.chatAttachment"
 }-->
 
 ```json

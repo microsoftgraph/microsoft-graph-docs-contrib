@@ -51,14 +51,14 @@ Here is a JSON representation of the resource
     "summary"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.chatmessage"
+  "@odata.type": "microsoft.graph.chatMessage"
 }-->
 
 ```json
 {
   "id": "string (identifier)",
   "replyToId": "string (identifier)",
-  "from" : {"@odata.type": "microsoft.graph.IdentitySet"},
+  "from" : {"@odata.type": "microsoft.graph.identitySet"},
   "etag": "string",
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
@@ -68,10 +68,10 @@ Here is a JSON representation of the resource
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "summary": "string",
-  "attachments": [{"@odata.type": "microsoft.graph.chatattachment"}],
-  "mentions": [{"@odata.type": "microsoft.graph.chatmention"}],
+  "attachments": [{"@odata.type": "microsoft.graph.chatAttachment"}],
+  "mentions": [{"@odata.type": "microsoft.graph.chatMention"}],
   "importance": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatreaction"}],
+  "reactions": [{"@odata.type": "microsoft.graph.chatReaction"}],
   "locale": "string"
 }
 
