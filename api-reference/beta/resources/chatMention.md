@@ -17,14 +17,8 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "extensions",
-    "inReplyTo",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
-  ],
-  "@odata.type": "microsoft.graph.post"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.chatmention"
 }-->
 
 ```json
@@ -40,7 +34,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "post resource",
+  "description": "chat mention resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

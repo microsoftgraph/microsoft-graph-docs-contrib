@@ -41,13 +41,17 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "isDeleted",
+    "deletedDateTime",
     "attachments",
-    "extensions",
-    "inReplyTo",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "importance",
+    "reactions",
+    "mentions",
+    "subject",
+    "summary"
   ],
-  "@odata.type": "microsoft.graph.post"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.chatmessage"
 }-->
 
 ```json
@@ -64,10 +68,10 @@ Here is a JSON representation of the resource
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "summary": "string",
-  "attachments": [{"@odata.type": "microsoft.graph.chatAttachement"}],
-  "mentions": [{"@odata.type": "microsoft.graph.chatMention"}],
+  "attachments": [{"@odata.type": "microsoft.graph.chatattachment"}],
+  "mentions": [{"@odata.type": "microsoft.graph.chatmention"}],
   "importance": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatReaction"}],
+  "reactions": [{"@odata.type": "microsoft.graph.chatreaction"}],
   "locale": "string"
 }
 
@@ -77,7 +81,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "post resource",
+  "description": "chat message resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

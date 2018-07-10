@@ -19,10 +19,9 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "posts"
+    "content"
   ],
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.message"
+  "@odata.type": "microsoft.graph.chatreaction"
 }-->
 
 ```json
@@ -39,7 +38,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "message resource",
+  "description": "chat message reaction resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

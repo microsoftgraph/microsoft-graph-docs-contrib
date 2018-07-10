@@ -22,10 +22,12 @@ An entity of type `chatAttachment` is returned as part of the GET channel messag
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "posts"
+    "thumbnailUrl",
+    "content",
+    "contentUrl"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.message"
+  "@odata.type": "microsoft.graph.chatattachment"
 }-->
 
 ```json
@@ -44,7 +46,7 @@ An entity of type `chatAttachment` is returned as part of the GET channel messag
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "message resource",
+  "description": "chat attachment resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
