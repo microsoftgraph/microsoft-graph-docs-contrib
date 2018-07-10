@@ -18,7 +18,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique id of the message.|
 |replyToId| string | Id of the parent message/root message of the thread |
-|from|IdentitySet| Details of the sender of the message|
+|from|identitySet| Details of the sender of the message|
 |etag| string | Version number of the message |
 |messageType|String|The type of message, current supported values are: message, chatEvent, Typing|
 |createDateTime|dateTimeOffset|Read only. Timestamp of when the message was created|
@@ -58,7 +58,7 @@ Here is a JSON representation of the resource
 {
   "id": "string (identifier)",
   "replyToId": "string (identifier)",
-  "from" : {"@odata.type": "microsoft.graph.identitySet"},
+  "from": {"@odata.type": "microsoft.graph.identitySet"},
   "etag": "string",
   "messageType": "string",
   "createdDateTime": "string (timestamp)",

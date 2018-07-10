@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a single root [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.
+Retrieve a single [message](../resources/chatmessage.md) (without it's replies) in a [channel](../resources/channel.md) of a team.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -56,9 +56,9 @@ Content-length: 201
 {
   "id": "id-value",
   "replyToId": "id-value",
-  "from" : {
+  "from": {
       "user": { 
-        "id":  "id-value",
+        "id": "id-value",
         "displayName": "John Doe"
       }  
   },
