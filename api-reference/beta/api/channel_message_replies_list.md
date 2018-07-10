@@ -67,97 +67,22 @@ Content-type: application/json
         }
         "etag": "id-value",
         "messageType": "message",
-        "createdDateTime": "datetime-value",
-        "lastModifiedDateTime": "datetime-value",
+        "createdDateTime": "2018-07-09T07:40:20.152Z",
+        "lastModifiedDateTime": "2018-07-09T07:40:20.152Z",
         "body": {
             "content": "This is a response to a message.",
             "contentType": "Text"
         },
         "attachments": [
-        {
-          "id": "string (identifier)",
-          "contentType": "string",
-          "contentUrl": "string",
-          "content": {
-            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-            "type": "AdaptiveCard",
-            "version": "1.0",
-            "speak": "The forecast for Seattle January 20 is mostly clear with a High of 51 degrees and Low of 40 degrees",
-            "body": [
-              {
-                "type": "TextBlock",
-                "text": "Seattle, WA",
-                "size": "large",
-                "isSubtle": true
-              },
-              {
-                "type": "TextBlock",
-                "text": "September 18, 7:30 AM",
-                "spacing": "none"
-              },
-              {
-                "type": "ColumnSet",
-                "columns": [
-                  {
-                    "type": "Column",
-                    "width": "auto",
-                    "items": [
-                      {
-                        "type": "Image",
-                        "url": "http://messagecardplayground.azurewebsites.net/assets/Mostly%20Cloudy-Square.png",
-                        "size": "small"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "Column",
-                    "width": "auto",
-                    "items": [
-                      {
-                        "type": "TextBlock",
-                        "text": "42",
-                        "size": "extraLarge",
-                        "spacing": "none"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                      {
-                        "type": "TextBlock",
-                        "text": "°F",
-                        "weight": "bolder",
-                        "spacing": "small"
-                      }
-                    ]
-                  },
-                  {
-                    "type": "Column",
-                    "width": "stretch",
-                    "items": [
-                      {
-                        "type": "TextBlock",
-                        "text": "Hi 51",
-                        "horizontalAlignment": "left"
-                      },
-                      {
-                        "type": "TextBlock",
-                        "text": "Lo 40",
-                        "horizontalAlignment": "left",
-                        "spacing": "none"
-                      }
-                    ]
-                  }
-                ]
-            }
-          ]
-        },
-        "name": "string",
-        "thumbnailUrl": "string"
-      }
-    ],
+          {
+              "id": "5e32f195-168a-474f-a273-123123123",
+              "contentType": "reference",
+              "contentUrl": "https://test.sharepoint.com/sites/TestSite/Shared%20Documents/General/Test.txt",
+              "content": null,
+              "name": "Test.txt",
+              "thumbnailUrl": null
+          }
+        ],
         "mentions": [
             {
                 "type": "user",
@@ -175,7 +100,7 @@ Content-type: application/json
                     "displayName": "John Doe"
                 }
                 ],
-                "createdDateTime": "date-value"
+                "createdDateTime": "2018-07-09T07:40:20.152Z"
             }
         ]
         "locale": "en-us"
