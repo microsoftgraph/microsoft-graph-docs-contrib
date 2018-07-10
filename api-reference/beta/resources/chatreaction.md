@@ -27,7 +27,7 @@ Here is a JSON representation of the resource
 ```json
 {
   "type": "string ",
-  "user": {"@odata.type": "microsoft.graph.identitySet"},
+  "reactedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "string (timestamp)",
   "content": "string"
 }

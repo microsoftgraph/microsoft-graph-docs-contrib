@@ -93,12 +93,12 @@ Content-length: 201
         "reactions": [
             {
                 "type": "like",
-                "user": [
-                    { 
-                        "id":  "id-value",
+                "reactedBy": {
+                    "user": { 
+                        "id": "id-value",
                         "displayName": "John Doe"
                     }
-                ],
+                },
                 "createdDateTime": "2018-07-09T07:40:20.152Z"
             }
         ],
