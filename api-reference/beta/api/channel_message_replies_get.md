@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-This API allows you to get a single reply to a [message](../resouces/chatmessage.md) in a [channel](../resources/channel.md) of a team.
+This API allows you to get a single reply to a [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
