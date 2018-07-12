@@ -1,9 +1,9 @@
 # Get incremental changes for groups
 
-[Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](../api-reference/v1.0/api/group_delta.md) function calls. Delta query enables you discover changes to groups 
+[Delta query](./delta_query_overview.md) lets you query for additions, deletions, or updates to groups, by way of a series of [delta](../api-reference/v1.0/api/group_delta.md) function calls. Delta query enables you discover changes to groups
 without having to fetch the entire set of groups from Microsoft Graph and compare changes.
 
-Clients using synchronizing groups with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the groups in a tenant, and subsequently, get incremental changes to groups periodically. 
+Clients using synchronizing groups with a local profile store can use Delta Query for both their initial full synchronization along with incremental synchronizations in the future. Typically, a client would do an initial full synchronization of all the groups in a tenant, and subsequently, get incremental changes to groups periodically.
 
 ## Tracking group changes
 
@@ -11,7 +11,7 @@ Tracking group changes is a round of one or more GET requests with the **delta**
 request much like the way you [list groups](../api-reference/v1.0/api/group_list.md), except that you include the following:
 
 - The **delta** function.
-- A [state token](./delta_query_overview.md) (_deltaToken_ or _skipToken_) from the previous GET **delta** function call.
+- A [state token](./delta_query_overview.md) (*deltaToken* or *skipToken*) from the previous GET **delta** function call.
 
 ## Example
 
@@ -24,7 +24,7 @@ The following example shows a series  requests to track changes to groups:
 
 ## Initial request
 
-To begin tracking changes in the group resource, you make a request including the delta function on the group resource. 
+To begin tracking changes in the group resource, you make a request including the delta function on the group resource.
 
 Note the following:
 
@@ -99,7 +99,7 @@ Content-type: application/json
 
 ## Final nextLink request
 
-The third request continues to use the latest `skipToken` returned from the last sync request. 
+The third request continues to use the latest `skipToken` returned from the last sync request.
 
 ``` http
 GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVA
 
 ## Final nextLink response
 
-When the deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource. Save the `deltaToken` and use it in the request URL to discover changes to groups. 
+When the deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource. Save the `deltaToken` and use it in the request URL to discover changes to groups.
 
 ```http
 HTTP/1.1 200 OK
