@@ -26,7 +26,7 @@ the change will be reflected within an hour.
 If none of those users are signed in to the Microsoft Teams application/website
 the change will not be reflected until an hour after one of them signs in.
 
-The beta endpoint is faster -- under a minute in most cases,
+The beta endpoint is faster if you use the right syntax -- under a minute in most cases,
 regardless of whether the user is logged in or not.
 Here are the beta APIs to use:
 
@@ -38,12 +38,26 @@ Here are the beta APIs to use:
 | [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/owners/{userId}/$ref |
 | [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/beta/teams/{id} |
 
+The add/remove APIs take a payload of the form:
+
+```json
+{
+  "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
+}
+```
+
+There are multiple ways to format that user {id}, some are fast and some are not:
+| Syntax | Speed |
+| ------ | ----- |
+| 48d31887-5fad-4d73-a9f5-3c356e68a038 | Fast |
+| {48d31887-5fad-4d73-a9f5-3c356e68a038} | Slow |
+| john@example.com | Slow |
+
 When adding owners, regardless of which endpoint use, you will generally want to add that user as a member as well. 
 If you have an owner that's not also a member, different apps and APIs will handle that differently. 
 For instance, Microsoft Teams will show teams that the user is either a member or an owner of, 
 while the Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of. 
 To avoid confusion, consider having all owners also be on the members list.
-
 
 ## Teams and groups
 
