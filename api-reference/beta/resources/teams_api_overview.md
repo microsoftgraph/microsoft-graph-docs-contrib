@@ -47,6 +47,7 @@ The add/remove APIs take a payload of the form:
 ```
 
 There are multiple ways to format that user {id}, some are fast and some are not:
+
 | Syntax | Speed |
 | ------ | ----- |
 | 48d31887-5fad-4d73-a9f5-3c356e68a038 | Fast |
