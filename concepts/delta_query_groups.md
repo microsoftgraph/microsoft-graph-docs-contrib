@@ -187,7 +187,7 @@ Content-type: application/json
 }
 ```
 
-If changes have occurred, a collection of change groups is included. The response also contains either a `nextLink` - in case there are multiple pages of changes to retrieve - or a `deltaLink`. You should implement the same pattern of following *nextLinks* as before and persist the final `deltaLink` for future calls.
+If changes have occurred, a collection of changed groups is included. The response also contains either a `nextLink` - in case there are multiple pages of changes to retrieve - or a `deltaLink`. You should implement the same pattern of following *nextLinks* as before and persist the final `deltaLink` for future calls.
 
 ```http
 HTTP/1.1 200 OK
