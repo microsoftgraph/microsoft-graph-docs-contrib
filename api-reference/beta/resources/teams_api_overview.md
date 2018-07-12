@@ -38,21 +38,19 @@ Here are the beta APIs to use:
 | [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/owners/{userId}/$ref |
 | [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/beta/teams/{id} |
 
-The add/remove APIs take a payload of the form:
+When creating the request, don't put braces { } around the ID:
 
-```json
-{
-  "@odata.id": "https://graph.microsoft.com/beta/users/{id}"
-}
-```
-
-There are multiple ways to format that user {id}, some are fast and some are not:
-
-| Syntax | Speed |
+| Speed | Syntax | 
 | ------ | ----- |
-| 48d31887-5fad-4d73-a9f5-3c356e68a038 | Fast |
-| {48d31887-5fad-4d73-a9f5-3c356e68a038} | Slow |
-| john@example.com | Slow |
+| Fast | https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref | 
+| Slow | https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref | 
+
+Similarly, if the {userId} in the URL or payload is expressed as a UPN rather than as a GUID, the performance will be slow:
+
+| Speed | Syntax | 
+| ------ | ----- |
+| Fast | 48d31887-5fad-4d73-a9f5-3c356e68a038 | 
+| Slow | john@example.com | 
 
 When adding owners, regardless of which endpoint use, you will generally want to add that user as a member as well. 
 If you have an owner that's not also a member, different apps and APIs will handle that differently. 
