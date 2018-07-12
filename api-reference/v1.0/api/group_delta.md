@@ -114,6 +114,10 @@ Content-type: application/json
 }
 ```
 
+## See also
+- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.
+- [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

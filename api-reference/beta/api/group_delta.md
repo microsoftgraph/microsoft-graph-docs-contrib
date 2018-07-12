@@ -59,10 +59,6 @@ If successful, this method returns `200 OK` response code and [group](../resourc
 
 - If a deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource.
 
-See:</br>
-- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.</br>
-- [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.</br>
-
 ## Example
 #### Request
 The following is an example of the request.
@@ -116,6 +112,10 @@ Content-type: application/json
   ]
 }
 ```
+
+## See also
+- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.
+- [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
