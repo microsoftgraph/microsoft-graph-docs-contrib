@@ -224,5 +224,95 @@ Some things to note about the example response above:
 - `members@delta` contains any changes to membership.
   - The first user in the list has been removed from the group - either by removing the membership or by deleting the user object itself. The `@removed` property describes that.
   - The second user has been added to the group.
+
+## Paging through members in a large group
+The `members@delta` property is included in group objects by default, when the `$select` query parameter has not been specified, or when the `$expand=members` parameter is explicitly specified. For groups with many members it is possible that all members cannot fit into a single response; in this section we describe the pattern you should implement to handle such cases.
+
+>**Note:** This pattern applies to both the initial retrieval of group state as well as to subsequent calls to get delta changes.
+
+Let's assume you are executing the following delta query - either to capture the initial full state of groups, or later on to get delta changes:
+
+``` http
+GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description&$expand=members
+```
+
+1. Microsoft Graph may return a response that contains just one group object, with a large list of members in the `members@delta` property:
+
+**1st page**
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=<...>",
+  "value": [
+    {
+      "displayName":"LargeGroup",
+      "description":"A group containing thousands of users",
+      "id":"2e5807ce-58f3-4a94-9b37-ffff2e085957",
+      "members@delta": [
+          {
+              "@odata.type": "#microsoft.graph.user",
+              "id": "632f6bb2-3ec8-4c1f-9073-0027a8c6859",
+              "@removed": {
+                  "reason": "deleted"
+              }
+          },
+          {
+              "@odata.type": "#microsoft.graph.user",
+              "id": "37de1ae3-408f-4702-8636-20824abda004"
+          },
+          <...more users here...>
+      ]
+    }
+    <...no more groups included - this group filled out the entire response...>
+  ]
+}
+```
+
+2. When you follow the `nextLink` you may receive a response again containing the same group object. The same property values will be returned but the expanded `members@delta` property now contains a different list of users.
+
+**2nd page**
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=<...>",
+  "value": [
+    {
+      "displayName":"LargeGroup",
+      "description":"A group containing thousands of users",
+      "id":"2e5807ce-58f3-4a94-9b37-ffff2e085957",
+      "members@delta": [
+          {
+              "@odata.type": "#microsoft.graph.user",
+              "id": "c08a463b-7b8a-40a4-aa31-f9bf690b9551",
+              "@removed": {
+                  "reason": "deleted"
+              }
+          },
+          {
+              "@odata.type": "#microsoft.graph.user",
+              "id": "23423fa6-821e-44b2-aae4-d039d33884c2"
+          },
+          <...more users here...>
+      ]
+    }
+    <...no more groups included - this group filled out the entire response...>
+  ]
+}
+```
+
+3. Eventually, the entire member list will be returned in this fashion, and other groups will start showing up in the response.
+
+We recommend the following best practices to correctly handle this pattern:
+- Always follow `nextLink` and locally merge each group's state: as you receive responses related to the same group, use them build the full membership list in your application.
+- It is best not to assume a specific sequence of the responses. Assume that the same group could show up anywhere in the nextLink sequence and handle that in your merge logic.
+
+
 ## See also
 [Microsoft Graph delta query](../concepts/delta_query_overview.md) overview.
