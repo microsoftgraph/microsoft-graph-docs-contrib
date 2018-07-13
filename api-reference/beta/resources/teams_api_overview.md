@@ -11,13 +11,14 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 | Add members and owners                | [group](../resources/group.md) | [Add member](../api/group_post_members.md), [Remove member](../api/group_delete_members.md) |
 | Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/group_post_channels.md) |
 | Add apps to team                      | [teamsApp](../resources/teamsApp.md) | [Add apps](../api/teams_apps_add.md) |
+| Copy a team                           | [team](team.md) | [Clone team](../api/team_clone.md) |
 | Post a message                        | [chatMessage](../resources/chatmessage.md) | [Post a message](../api/channel_post_chatthreads.md) |
 | Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamFunSettings.md) |                                                              |
-| Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) | 
-| Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
+| Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) |
+| Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |  |
 | List notebooks for a Team             | [Notebook](../../v1.0/resources/notebook.md) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks.md) |
 
-## Membership changes in Microsoft Teams
+## Updating team membership
 
 When adding members to or removing members from a team using the Microsoft Graph v1.0 endpoint,
 there is a delay before the membership changes are reflected in the Microsoft Teams application/website.
@@ -78,5 +79,3 @@ the [conversation](../resources/conversation.md), [conversationThread](../resour
 >**Note:** If you use the groups API in a [Microsoft Teams app](https://msdn.microsoft.com/en-us/microsoft-teams/index#apps-in-microsoft-teams) 
 rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article 
 [Using Microsoft Graph in your Microsoft Teams pages](https://msdn.microsoft.com/en-us/microsoft-teams/graph).
-
-
