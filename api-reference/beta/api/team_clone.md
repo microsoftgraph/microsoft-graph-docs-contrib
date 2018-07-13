@@ -72,7 +72,6 @@ POST /teams/{id}/clone
 Content-Type: application/json
 
 {  
-     "classification": "MBI",
      "displayName": "Library Assist",
      "description": "Self help community for library",
      "mailNickname": "libassist",
