@@ -89,3 +89,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+## See Also
+[Teams API Overview](teams_api_overview.md)
