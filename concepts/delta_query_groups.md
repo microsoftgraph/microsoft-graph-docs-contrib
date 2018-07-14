@@ -165,7 +165,7 @@ Content-type: application/json
 Using the `deltaLink` from the [last response](#final-nextlink-response), you will be able to get net new changes to groups since the last request. Changes include:
 - Newly created group objects.
 - Deleted group objects.
-- Group objects for which a property has changed (e.g. displayName has been modified).
+- Group objects for which a property has changed (e.g. **displayName** has been modified).
 - Group objects for which member objects have been added or removed.
 
 ``` http
@@ -174,7 +174,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$deltatoken=sZwAFZibx-LQOdZIo1
 
 ## deltaLink response
 
-If no changes have occurred, a `dataLink` is returned with no results - the `value` property is empty. Make sure to replace the previous link in the application with the new one for use in future calls.
+If no changes have occurred, a `deltaLink` is returned with no results - the `value` property is empty. Make sure to replace the previous link in the application with the new one for use in future calls.
 
 ```http
 HTTP/1.1 200 OK
@@ -187,7 +187,7 @@ Content-type: application/json
 }
 ```
 
-If changes have occurred, a collection of changed groups is included. The response also contains either a `nextLink` - in case there are multiple pages of changes to retrieve - or a `deltaLink`. You should implement the same pattern of following *nextLinks* as before and persist the final `deltaLink` for future calls.
+If changes have occurred, a collection of changed groups is included. The response also contains either a `nextLink` - in case there are multiple pages of changes to retrieve - or a `deltaLink`. You should implement the same pattern of following the `nextLinks` as before and persist the final `deltaLink` for future calls.
 
 ```http
 HTTP/1.1 200 OK
@@ -238,7 +238,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 1. Microsoft Graph may return a response that contains just one group object, with a large list of members in the `members@delta` property:
 
-**1st page**
+**First page**
 
 ```http
 HTTP/1.1 200 OK
@@ -274,7 +274,7 @@ Content-type: application/json
 
 2. When you follow the `nextLink` you may receive a response again containing the same group object. The same property values will be returned but the expanded `members@delta` property now contains a different list of users.
 
-**2nd page**
+**Second page**
 
 ```http
 HTTP/1.1 200 OK
@@ -310,8 +310,8 @@ Content-type: application/json
 3. Eventually, the entire member list will be returned in this fashion, and other groups will start showing up in the response.
 
 We recommend the following best practices to correctly handle this pattern:
-- Always follow `nextLink` and locally merge each group's state: as you receive responses related to the same group, use them build the full membership list in your application.
-- It is best not to assume a specific sequence of the responses. Assume that the same group could show up anywhere in the nextLink sequence and handle that in your merge logic.
+- Always follow `nextLink` and locally merge each group's state: as you receive responses related to the same group, use them to build the full membership list in your application.
+- It is best not to assume a specific sequence of the responses. Assume that the same group could show up anywhere in the `nextLink` sequence and handle that in your merge logic.
 
 
 ## See also
