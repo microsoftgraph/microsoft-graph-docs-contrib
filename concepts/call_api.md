@@ -42,7 +42,7 @@ Microsoft Graph API `beta` metadata.
 	https://graph.microsoft.com/beta/$metadata
 ```
 
-The metadata allows you to see and understand the data model of the Microsoft Graph, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from Microsoft Graph.
+The metadata allows you to see and understand the data model of Microsoft Graph, including the entity types and sets, complex types, and enums that make up the request and response packets sent to and from Microsoft Graph.
 You can use the metadata to understand the realtionships between entities in Microsoft Graph and establish URLs that navigate between entities.
 This navigation-based interconnectedness gives Microsoft Graph its unique character.
 

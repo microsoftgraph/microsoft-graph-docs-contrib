@@ -609,7 +609,7 @@ This is the output HTML that Microsoft Graph returns when you [get page content]
 
 ## See also
 
-- [Get OneNote content and structure](../api-reference/v1.0/api/page_get.md)
-- [Create OneNote pages](../api-reference/v1.0/api/section_post_pages.md)
-- [Update OneNote page content](../api-reference/v1.0/api/page_update.md)
-- [Add images and files](https://msdn.microsoft.com/en-us/office/office365/howto/onenote-note-tags)
+- [Get OneNote content and structure](onenote-get-content.md)
+- [Create OneNote pages](onenote-create-page.md)
+- [Update OneNote page content](onenote_update_page.md)
+- [Add images, videos, and files](onenote_images_files.md)
