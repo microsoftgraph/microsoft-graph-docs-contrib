@@ -460,7 +460,7 @@ For more information about permission scopes and how they work, see [OneNote per
 
 <a name="see-also"></a>
 
-## Additional resources
+## See also
 
 - [Add images and files](onenote_images_files.md)
 - [Integrate with OneNote](integrate_with_onenote.md)

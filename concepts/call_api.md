@@ -47,7 +47,7 @@ You can use the metadata to understand the realtionships between entities in Mic
 This navigation-based interconnectedness gives Microsoft Graph its unique character.
 
 Path URL resource names, query parameters, and action parameters and values are case insensitive. 
-However, values you assign, entity IDs, and other base64-encoded values are case sensitive.
+However, values you assign, entity IDs, and other base64-encoded values are case-sensitive.
 
 The following sections show a few basic programming pattern calls to the Microsoft Graph API.
 

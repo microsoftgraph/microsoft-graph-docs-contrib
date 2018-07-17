@@ -265,7 +265,8 @@ For more information about permission scopes and how they work, see [Microsoft G
 
 
 <a name="see-also"></a>
-## Additional resources
+
+## See also
 
 - [Create OneNote pages](onenote-create-page.md)
 - [Update OneNote page content](onenote_update_page.md)
