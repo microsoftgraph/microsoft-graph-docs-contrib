@@ -331,20 +331,11 @@ You can query for OneNote entities and search page content to get just the infor
 
 **Remember:**
 
-- All GET requests start with the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
+- All GET requests start with the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url). <br/><br/>**Examples**: `https://www.onenote.com/api/v1.0/me/notes` and `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
 
-  **Examples**:
+- Spaces in the URL query string must use %20 encoding.<br/><br/>**Example**: `filter=title%20eq%20'biology'`
 
-  - `https://www.onenote.com/api/v1.0/me/notes`
-  - `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
-
-- Spaces in the URL query string must use %20 encoding.
-
-  **Example**: `filter=title%20eq%20'biology'`
-
-- Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.
-
-  **Example**: `filter=tolower(name) eq 'spring'`
+- Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br/><br/>**Example**: `filter=tolower(name) eq 'spring'`
  
 
 ### search & filter  
@@ -581,13 +572,9 @@ Microsoft Graph also provides the `pagelevel` query string option you can use to
 
 Microsoft Graph supports the following OData operators and functions in **filter** expressions. When using OData expressions, remember:
 
-- Spaces in the URL query string must be replaced with the `%20` encoding.
+- Spaces in the URL query string must be replaced with the `%20` encoding.<br/><br/>**Example:** `filter=isDefault%20eq%20true`
 
-   **Example:** `filter=isDefault%20eq%20true`
-
-- Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.
-   
-   **Example:** `filter=tolower(name) eq 'spring'`
+- Property names and OData string comparisons are case-sensitive. We recommend using the OData **tolower** function for string comparisons.<br/><br/>**Example:** `filter=tolower(name) eq 'spring'`
 
 
 | Comparison operator | Example |  
