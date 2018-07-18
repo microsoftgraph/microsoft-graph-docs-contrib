@@ -42,7 +42,7 @@ Use `object` with `data="name:file-block-name" data-attachment="file-name.file-e
 
 
 > **Note:**
-> To get images on a OneNote page, first send a [GET request for the page content](onenote-get-content.md#page-html-content). This returns the URLs to the image resources on the page. Then you separate [GET requests to the image resources](onenote-get-content.md#image-or-other-file-resource).
+> To get images on a OneNote page, first send a [GET request for the page content](onenote-get-content.md#page-html-content). This returns the URLs to the image resources on the page. You then separate [GET requests to the image resources](onenote-get-content.md#image-or-other-file-resource).
 
 
 #### Image attributes 
