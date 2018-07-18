@@ -38,7 +38,7 @@ The current user's account has exceeded the maximum number of active requests. Y
 The service can't create a page in the requested section because that section is protected by a password.
 
 ### 10005
-The request contains more than the maximum number of image tags in which the **data-render-src** attribute contains a PDF. See [Add images and files](onenote-images-files.md).
+The request contains more than the maximum number of image tags in which the **data-render-src** attribute contains a PDF. See [Add images and files](onenote_images_files.md).
 
 ### 10006
 The OneNote API was unable to create a page in the specified section because that section is corrupt.
@@ -323,7 +323,7 @@ The application has issued too many requests on behalf of a user in a short peri
 For more information, see [OneNote API throttling and how to avoid it](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
 
 ### 20168
-The video source specified in the request is not supported. See [Supported video sites](onenote-images-files.md#videos) for the current list.
+The video source specified in the request is not supported. See [Supported video sites](onenote_images_files.md#videos) for the current list.
 
 
 ## Codes from 30001 to 39999

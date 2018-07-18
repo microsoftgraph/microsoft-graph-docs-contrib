@@ -327,7 +327,7 @@ For more information about GET requests, see the following resources in the Micr
 
 ## Example GET requests
 
-You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#supported-odata-query-string-options) in GET requests to Microsoft Graph. 
+You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#query-options) in GET requests to Microsoft Graph. 
 
 **Remember:**
 
