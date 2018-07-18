@@ -154,6 +154,7 @@ The following example uses the **id** value for the target. Don't use the # pref
 <a name="support-matrix"></a>
 
 ## Supported elements and actions
+
 Many elements on the page can be updated, but each element type supports specific actions. The following table shows supported target elements and the update actions that they support.
 
 | Element | Replace | Append child | Insert sibling |  
