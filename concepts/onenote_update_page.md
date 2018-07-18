@@ -7,8 +7,6 @@ To update the content of a OneNote page, you send a PATCH request to the page's 
 
 `PATCH ../notes/pages/{id}/content`</p>
 
-<br/>
-
 Send a JSON change object in the message body. If the request is successful, Microsoft Graph returns a 204 HTTP status code.
 
 
@@ -24,20 +22,14 @@ To construct the request URI, start with the service root URL:
 
 Then append the page's *content* endpoint:
 
-- **Get the page HTML and all defined *data-id* values**
+- **Get the page HTML and all defined *data-id* values**<br/><br/>`../pages/{id}/content`   
 
-  `../pages/{id}/content`   
-
-- **Get the page HTML, all defined *data-id* values, and all generated *id* values**  
-
-  `../pages/{page-id}/content?includeIDs=true` 
+- **Get the page HTML, all defined *data-id* values, and all generated *id* values**<br/><br/>`../pages/{page-id}/content?includeIDs=true` 
 
 The **data-id** and **id** values are used as **target** identifiers for the elements you want to update.
 
  
-Your full request URI will look like this:
-
-`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
+Your full request URI will look like this:<br/><br/>`https://graph.microsoft.com/v1.0/me/onenote/pages/{id}/content`
 
 
 Learn more about the [service root URL](../api-reference/v1.0/resources/onenote-api-overview.md#root-url).
@@ -104,8 +96,8 @@ The location to add the supplied content, relative to the target element. Defaul
 
 | Position | Description |  
 |------|------|  
-| after (default) | <p> With **append**: The last child of the target element.</p><p> With **insert**: The subsequent sibling of the target element.</p> |
-| before | <p> With **append**: The first child of the target element.</p><p> With **insert**: The preceding sibling of the target element.</p> |
+| after (default) |<p>With **append**: The last child of the target element.</p><p>With **insert**: The subsequent sibling of the target element.</p> |
+| before | <p>With **append**: The first child of the target element.</p><p>With **insert**: The preceding sibling of the target element.</p> |
 
 #### content
 
@@ -161,11 +153,11 @@ Many elements on the page can be updated, but each element type supports specifi
 |------|:------:|:------:|:------:|  
 | body<br /> (targets first div on the page) | no | **yes** | no |  
 | div<br /> ([absolute positioned](onenote-abs-pos.md)) | no | **yes** | no |  
-| div<br /> (within a div) | **yes** (id only) | **yes** | **yes** |   
+| div<br /> (within a div) | **yes**<br/>(id only) | **yes** | **yes** |   
 | img, object<br /> (within a div) | **yes** | no | **yes** |   
-| ol, ul | **yes** (id only) | **yes** | **yes** |   
-| table | **yes** (id only) | no | **yes** |   
-| p, li, h1-h6 | **yes** (id only) | no | **yes** |   
+| ol, ul | **yes**<br/>(id only) | **yes** | **yes** |   
+| table | **yes**<br/>(id only) | no | **yes** |   
+| p, li, h1-h6 | **yes**<br/>(id only) | no | **yes** |   
 | title | **yes** | no | no |  
  
 <br/>

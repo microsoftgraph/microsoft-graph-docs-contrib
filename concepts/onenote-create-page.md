@@ -27,19 +27,13 @@ To construct the POST request URI, start with the service root URL:
 
 Then append the *pages* endpoint:
 
-- **Create a page in any section (specified by section name)**
+- **Create a page in any section (specified by section name)**<br/><br/>`.../pages?sectionName=DefaultSection`
 
-  `.../pages?sectionName=DefaultSection`
-
-- **Create a page in any section (specified by ID)** 
-
-  `.../sections/{section-id}/pages` 
+- **Create a page in any section (specified by ID)**<br/><br/>`.../sections/{section-id}/pages` 
 
 If you're creating pages in the user's personal notebook, Microsoft Graph also provides endpoints you can use to create pages in the default notebook:
 
-- **Create a page in the default section of the default notebook** 
-
-  `../pages` 
+- **Create a page in the default section of the default notebook**<br/><br/>`../pages` 
 
 
 
@@ -58,7 +52,7 @@ The following rules apply when using the *sectionName* parameter to create a pag
 
 - Only top-level sections can be referenced (not sections within section groups).
 
-- If a section with the specified name doesn't exist in the default notebook, the API creates it. These characters are not allowed for section names: ? * \ / : &lt; &gt; | &amp; # " % ~
+- If a section with the specified name doesn't exist in the default notebook, the API creates it. These characters are not allowed for section names: `? * \ / : < > | & # " % ~`
 
 - Section names are case-insensitive for matching, but case is preserved when sections are created. So "My New Section" will display like that, but "my new section" would also match on subsequent posts.
 
