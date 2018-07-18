@@ -64,7 +64,8 @@ The OneNote API tries to find and render the following contact information based
 - Websites
 
 
-![An example business card extraction](images/biz-card-extraction.png)  
+
+<img alt="An example business card extraction" src="images/biz-card-extraction.png" width="200">
 
 A vCard (.VCF file) with the extracted contact information is also embedded in the page. The vCard is a convenient way to get the contact information when retrieving page HTML content.
 
@@ -112,7 +113,7 @@ The OneNote API tries to find and render the following information based on a re
 - Servings
 
 
-![An example recipe extraction](images/recipe-extraction.png)
+<img alt="An example recipe extraction" src="images/recipe-extraction.png" width="200">
 
 The API is optimized for recipes from many popular sites such as *Allrecipes.com*, *FoodNetwork.com*, and *SeriousEats.com*.
 
@@ -172,7 +173,8 @@ Specify the `extract.recipe` method and the `none` fallback. Also send an `a` el
 - Specifications
 
 
-![An example product listing extraction](images/product-extraction.png)
+
+<img alt="An example product listing extraction" src="images/product-extraction.png" width="200">
 
 The API is optimized for products from many popular sites such as *Amazon.com* and *HomeDepot.com*.
 
