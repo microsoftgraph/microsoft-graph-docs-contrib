@@ -186,24 +186,26 @@ Use the `$search` query parameter to restrict the results of a request to match 
 
 Office 365 applications, such as Outlook and SharePoint, support the Keyword Query Language (KQL) syntax to do searches. This provides the convenience of a common discovery domain for their data stores. 
 
-When you search message collections, the results are sorted by the date and time that the message was sent. 
+You can specify the following property names that KQL recognizes in a $search query string. These property names are not properties defined in the **message** entity, but are internally mapped to properties in the **message** entity. See [searchable properties in Exchange](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange) for more information and examples.
 
-You can specify the following properties on a **message** in a `$search` criterion:
-
-- **attachments**
-- **bccRecipients**
+- **attachment**
+- **bcc**
 - **body**
-- **categories**
-- **ccRecipients**
+- **category**
+- **cc**
 - **content**
 - **from**
-- **hasAttachments**
-- **receivedDateTime**
+- **has**
+- **importance**
+- **participants**
+- **received**
 - **sender**
 - **subject**
-- **toRecipients**
+- **to**
 
 If you do a search on messages and specify only a value, the search is carried out on the default search properties of **from**, **subject**, and **body**.
+
+The results of a search on a message collection are sorted by the date and time that the message was sent.
 
 The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
 
