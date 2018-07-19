@@ -243,13 +243,13 @@ Because users can move the images on the page, the returned indexes might be out
 OneNote pages can contain embedded videos represented by **iframe** elements. 
 
 > **Note:** 
-> You can also [attach a video file using an **object** element](onenote_images_files.md#files).
+> You can also [attach a video file using an **object** element](onenote_images_files.md#adding-files).
 
 #### Input attributes
 
 |Input attribute|Description|
 |:------|:------|
-| data-original-src | Required. The URL of the video source. See the [list of supported video sources](onenote_images_files.md#videos). <br/><br/>Example: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
+| data-original-src | Required. The URL of the video source. See the [list of supported video sources](onenote_images_files.md#adding-videos). <br/><br/>Example: `data-original-src="https://www.youtube.com/watch?v=3Ztr44aKmQ8"` |
 | width, height | The width or height of the iframe, in pixels. Example: `width=300` |
 
 #### Output attributes

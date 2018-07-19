@@ -241,7 +241,7 @@ Learn more about [file media types](#file-media-types).
 
 
 
-<a name="videos"></a>
+<a name="adding-videos"></a>
 
 ## Adding videos
 
@@ -304,7 +304,7 @@ Content-Type: text/html
 ```
 
 
-<a name="files"></a>
+<a name="adding-files"></a>
 
 ## Adding files
 

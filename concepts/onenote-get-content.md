@@ -327,7 +327,7 @@ For more information about GET requests, see the following resources in the Micr
 
 ## Example GET requests
 
-You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#query-options) in GET requests to Microsoft Graph. 
+You can query for OneNote entities and search page content to get just the information you need. The following examples show some ways you can use [supported query string options](#supported-odata-query-string-options) in GET requests to Microsoft Graph. 
 
 **Remember:**
 
@@ -541,7 +541,7 @@ Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100
 > GET requests for pages that retrieve the default number of entries (that is, they don't specify a **top** expression) return an **@odata.nextLink** link in the response that you can use to get the next 20 entries.
  
 
-<a name="query-options"></a>
+<a name="supported-odata-query-string-options"></a>
 
 ## Supported OData query string options
 
