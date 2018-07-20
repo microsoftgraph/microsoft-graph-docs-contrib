@@ -4,7 +4,7 @@
 
 A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders.
 
-This resource supports using [delta query](/concepts/delta_query_overview.md) to track incremental additions, deletions, and updates,
+This resource supports using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/mailfolder_delta.md) function.
 
 ## Methods

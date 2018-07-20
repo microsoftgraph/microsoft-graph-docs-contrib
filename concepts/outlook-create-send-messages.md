@@ -13,7 +13,7 @@ Similarly, when responding to an email, you can create and send the response in 
 
 To distinguish between a draft and a sent message programmatically, check the **isDraft** property.
 
-By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](/api-reference/v1.0/resources/mailfolder.md#well-known-folder-names). For example, you can do the following to [get the messages](../api-reference/v1.0/api/user_list_messages.md) in the Drafts folder:
+By default, draft messages are saved in the `Drafts` folder, sent messages are saved in the `Sent Items` folder. For convenience, you can identify the Drafts folder and SentItems folder by their corresponding [well-known folder names](../api-reference/v1.0/resources/mailfolder.md#well-known-folder-names). For example, you can do the following to [get the messages](../api-reference/v1.0/api/user_list_messages.md) in the Drafts folder:
 
 ```http
 GET /me/mailfolders('Drafts')
