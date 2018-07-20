@@ -2,9 +2,9 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A `chatAttachment` represents an attachment to a chat message entity.
+Represents an attachment to a chat message entity.
 
-An entity of type `chatAttachment` is returned as part of the GET channel messages API, as a part of [chatMessage](chatMessage.md) entity.
+An entity of type `chatAttachment` is returned as part of the [Get channel messages](../api/channel_message_list.md) API, as a part of [chatMessage](chatMessage.md) entity.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -17,7 +17,7 @@ An entity of type `chatAttachment` is returned as part of the GET channel messag
 |thumbnailUrl| string |URL to a a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.|
 
 ## JSON representation
- Here is a JSON representation of the resource
+ The following is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
