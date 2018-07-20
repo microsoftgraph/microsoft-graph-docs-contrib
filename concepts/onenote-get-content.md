@@ -541,7 +541,7 @@ Get pages 51 to 100. The API returns 20 entries by default with a maximum of 100
 > GET requests for pages that retrieve the default number of entries (that is, they don't specify a **top** expression) return an **@odata.nextLink** link in the response that you can use to get the next 20 entries.
  
 
-<a name="query-options"></a>
+<a name="supported-odata-query-string-options"></a>
 
 ## Supported OData query string options
 
