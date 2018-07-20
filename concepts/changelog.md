@@ -29,6 +29,10 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
 
+### Webhooks
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Breaking change | Beta and v1.0 | Reduced [webhooks](../api-reference/v1.0/resources/webhooks.md) [maximum length of subscription expiration time](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. | 
 
 ## June 2018
 
