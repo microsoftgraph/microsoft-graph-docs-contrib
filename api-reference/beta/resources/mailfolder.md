@@ -58,19 +58,15 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 | conversationhistory | The folder where Skype saves IM conversations (if Skype is configured to do so). |
 | deleteditems | The folder items are moved to when they are deleted. |
 | drafts | The folder that contains unsent messages. |
-| fromfavoritesenders | ??? |
-| important | ??? |
 | inbox | The inbox folder. |
 | junkemail | The junk email folder. |
 | localfailures | The folder that contains items that exist on the local client but could not be uploaded to the server. |
 | msgfolderroot | The "Top of Information Store" folder. This folder is the parent folder for folders that are displayed in normal mail clients, such as the inbox. |
 | outbox | The outbox folder. |
-| root | The top-most folder in a user's mailbox. Folders that are direct children of this folder are not displayed by normal mail clients such as Outlook, and are typically used for application-specific data. |
 | scheduled | The folder that contains messages that are scheduled to reappear in the inbox using the Schedule feature in Outlook for iOS. |
 | searchfolders | The parent folder for all search folders defined in the user's mailbox. |
 | sentitems | The sent items folder. |
 | serverfailures | The folder that contains items that exist on the server but could not be synchronized to the local client. |
-| starred | ??? |
 | syncissues | The folder that contains synchronization logs created by Outlook. |
 
 ### Access item counts efficiently

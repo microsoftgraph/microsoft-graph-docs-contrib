@@ -36,29 +36,6 @@ The **childFolderCount** property represents the number of immediate child folde
 
 Be aware that Outlook mail folders can contain messages and non-message items such as events and contacts. In general, Outlook folders can contain heterogeneous items.
 
-### Default folder tree
-
-Mail folders are by default organized with the following hierarchy. (**Note:** the values in parentheses are the well-known folder names for each folder.)
-
-```text
-+-- Root ("root")
-    ...
-    +-- Top of Information Store ("msgfolderroot")
-        +-- Archive ("archive")
-        +-- Conversation History ("conversationhistory")
-        +-- Deleted Items ("deleteditems")
-        +-- Drafts ("drafts")
-        +-- Inbox ("inbox")
-        +-- Junk Email ("junkemail")
-        +-- Outbox ("outbox")
-        +-- Sent Items ("sentitems")
-    ...
-```
-
-The root folder is the upper-most container for all folders in a user's mailbox. Folders that are direct children of this folder are not displayed by normal mail clients such as Outlook, and are typically used for application-specific data.
-
-The "Top of Information Store" folder is the parent folder for folders that are displayed in normal mail clients, such as the inbox.
-
 ## Using rules to automate copying or moving messages
 
 Outlook lets customers set up rules to automate specific actions on incoming messages when some pre-determined conditions are met. You can [create a rule](../api-reference/v1.0/api/mailfolder_post_messagerules.md) for the
