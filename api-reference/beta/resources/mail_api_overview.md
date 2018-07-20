@@ -3,9 +3,9 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
-With the [appropriate delegated or application permissions](/concepts/permissions_reference.md), your app can access the mail data of
+With the [appropriate delegated or application permissions](../../../concepts/permissions_reference.md), your app can access the mail data of
 the signed-in user or any user in a tenant. The mail data can be in the cloud on Exchange Online as part of Office 365, or on
-Exchange on-premises in a [hybrid deployment](/concepts/hybrid_rest_support.md).
+Exchange on-premises in a [hybrid deployment](../../../concepts/hybrid_rest_support.md).
 
 ## Using the mail REST API
 
@@ -63,7 +63,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 
 The mail API can open up new ways for you to engage with users:
 
-- [Outlook mail API overview](/concepts/outlook-mail-concept-overview.md)
+- [Outlook mail API overview](../../../concepts/outlook-mail-concept-overview.md)
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
