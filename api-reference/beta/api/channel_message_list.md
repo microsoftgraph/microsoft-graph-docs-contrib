@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a team. To get the replies for a message call the [list message replies](channel_message_replies_get.md) api or the [get message reply](channel_message_replies_list.md) api. 
+Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a team. To get the replies for a message, call the [list message replies](channel_message_replies_get.md) or the [get message reply](channel_message_replies_list.md) API. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -42,7 +42,9 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
