@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A `chatMention` represents a mention in a [chatMessage](chatMessage.md) entity. The mention can be to a user, team, bot or channel. 
+Represents a mention in a [chatMessage](chatMessage.md) entity. The mention can be to a user, team, bot or channel. 
 
 ## Properties
 | Property	   | Type	|Description|
@@ -13,7 +13,7 @@ A `chatMention` represents a mention in a [chatMessage](chatMessage.md) entity. 
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
