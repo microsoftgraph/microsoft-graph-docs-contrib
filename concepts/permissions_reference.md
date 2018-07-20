@@ -29,7 +29,7 @@ The _constraint_ element of the name determines the potential extent of access y
 
 ### Microsoft accounts and work or school accounts
 
-Not all permissions are valid for both Microsoft accounts and work or school accounts. You can check **Remarks** for each permission group to determine whether a specific permission is valid for Microsoft accounts, work or school accounts, or both. 
+Not all permissions are valid for both Microsoft accounts and work or school accounts. You can check the **Microsoft Account Supported** column for each permission group to determine whether a specific permission is valid for Microsoft accounts, work or school accounts, or both. 
 
 ### User and group search limitations for guest users in organizations
 
@@ -71,7 +71,8 @@ None.
 * _Application.ReadWrite.All_: Delete a service principal (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_: Create an application (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_: List all applications owned by the the calling application (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /applications/{id}/owners/$ref`).  NOTE: This may require additional permissions.
+* _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /applications/{id}/owners/$ref`).  
+> NOTE: This may require additional permissions.
 
 ---
 
@@ -106,9 +107,9 @@ None.
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Calendars.Read_ |Read user calendars |Allows the app to read events in user calendars. |No | Yes |
-| _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No | No |
+| _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No | Yes |
 | _Calendars.ReadWrite_ |Have full access to user calendars |Allows the app to create, read, update, and delete events in user calendars. |No | Yes |
-| _Calendars.ReadWrite.Shared_ |Read and write user and shared calendars |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|No | No |
+| _Calendars.ReadWrite.Shared_ |Read and write user and shared calendars |Allows the app to create, read, update and delete events in all calendars the user has permissions to access. This includes delegate and shared calendars.|No | Yes |
 
 <br/>
 
@@ -121,9 +122,7 @@ None.
 
 <br/>
 
-### Remarks
-
-_Calendars.Read.Shared_ and _Calendars.ReadWrite.Shared_ are only valid for work or school accounts. All other permissions are valid for both Microsoft accounts and work or school accounts.
+> **Note:** _Calendars.Read.Shared_ and _Calendars.ReadWrite.Shared_ are only valid for work or school accounts. All other permissions are valid for both Microsoft accounts and work or school accounts.
 
 ### Example usage
 
@@ -150,10 +149,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_Contacts.Read_ |Read user contacts  |Allows the app to read user contacts. |No |
-|_Contacts.Read.Shared_ |Read user and shared contacts |Allows the app to read contacts that the user has permissions to access, including the user's own and shared contacts. |No |
-|_Contacts.ReadWrite_ |Have full access to user contacts |Allows the app to create, read, update, and delete user contacts. |No |
-|_Contacts.ReadWrite.Shared_ |Read and write user and shared contacts |Allows the app to create, read, update and delete contacts that the user has permissions to, including the user's own and shared contacts. |No |
+|_Contacts.Read_ |Read user contacts  |Allows the app to read user contacts. |No | Yes |
+|_Contacts.Read.Shared_ |Read user and shared contacts |Allows the app to read contacts that the user has permissions to access, including the user's own and shared contacts. |No |No|
+|_Contacts.ReadWrite_ |Have full access to user contacts |Allows the app to create, read, update, and delete user contacts. |No |Yes|
+|_Contacts.ReadWrite.Shared_ |Read and write user and shared contacts |Allows the app to create, read, update and delete contacts that the user has permissions to, including the user's own and shared contacts. |No |No|
 
 #### Application permissions
 
@@ -161,9 +160,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Contacts.Read_ |Read contacts in all mailboxes |Allows the app to read all contacts in all mailboxes without a signed-in user. |Yes |
 |_Contacts.ReadWrite_ |Read and write contacts in all mailboxes |Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user. |Yes |
-
-### Remarks
-Only the _Contacts.Read_ and _Contacts.ReadWrite_ delegated permissions are valid for Microsoft accounts. 
 
 ### Example usage
 #### Delegated
@@ -187,7 +183,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_Device.Read_ |Read user devices |Allows the app to read a user's list of devices on behalf of the signed-in user. |No | No |
+|_Device.Read_ |Read user devices |Allows the app to read a user's list of devices on behalf of the signed-in user. |No | Yes |
 |_Device.Command_ |Communicate with user devices |Allows the app to launch another app or communicate with another app on a user's device on behalf of the signed-in user. |No | Yes |
 
 
@@ -196,10 +192,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Device.ReadWrite.All_ |Read and write devices |Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion, or update of device alternative security identifiers. |Yes |
-
-### Remarks
-
-The _Device.Read_ and _Device.Command_ delegated permissions are valid only for personal Microsoft accounts.
 
 ### Example usage
 
@@ -231,7 +223,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Directory.ReadWrite.All_ | Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups, without a signed-in user. Does not allow user or group deletion. | Yes |
 
 ### Remarks
-Directory permissions are not supported on Microsoft accounts. 
 
 Directory permissions provide the highest level of privilege for accessing directory resources such as [User](../api-reference/v1.0/resources/user.md), [Group](../api-reference/v1.0/resources/group.md), and [Device](../api-reference/v1.0/resources/device.md) in an organization. 
 
@@ -248,9 +239,10 @@ The _Directory.ReadWrite.All_ permission grants the following privileges:
 - Update group owner
 - Manage license assignments
 - Define schema extensions on applications
-- **Note**: No rights to reset user passwords
-- **Note**: No rights to delete resources (including users or groups)
-- **Note**: Specifically excludes create or update for resources not listed above. This includes: application, oAauth2Permissiongrant, appRoleAssignment, device, servicePrincipal, organization, domains, and so on.
+> **Note**:
+> - No rights to reset user passwords
+> - No rights to delete resources (including users or groups)
+> - Specifically excludes create or update for resources not listed above. This includes: application, oAauth2Permissiongrant, appRoleAssignment, device, servicePrincipal, organization, domains, and so on.
  
 
 ### Example usage
@@ -331,8 +323,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ### Remarks
 
-The Files.Read, Files.ReadWrite, Files.Read.All, and Files.ReadWrite.All delegated permissions are valid on both personal Microsoft accounts and work or school accounts.
-Note that for personal accounts, Files.Read and Files.ReadWrite also grant access to files shared with the signed-in user. 
+> **Note**: For personal accounts, Files.Read and Files.ReadWrite also grant access to files shared with the signed-in user. 
 
 The Files.Read.Selected and Files.ReadWrite.Selected delegated permissions are only valid on work or school accounts and are only exposed for working with [Office 365 file handlers (v1.0)](https://msdn.microsoft.com/office/office365/howto/using-cross-suite-apps).
 They should not be used for directly calling Microsoft Graph APIs. 
@@ -367,8 +358,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Note that not all group API supports access using app-only permissions. See [known issues](../concepts/known_issues.md) for examples. | Yes |
-| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. Note that not all group API supports access using app-only permissions. See [known issues](../concepts/known_issues.md) for examples.| Yes |
+| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](../concepts/known_issues.md) for examples. | Yes |
+| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](../concepts/known_issues.md) for examples.| Yes |
 
 
 ### Remarks
@@ -390,7 +381,8 @@ Group permissions are also used to control access to [Microsoft Planner](../api-
 * _Group.Read.All_: Read all Office 365 groups that the signed-in user is a member of (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
 * _Group.Read.All_: Read all Office 365 group content like conversations (`GET /groups/{id}/conversations`).
 * _Group.ReadWrite.All_: Update group properties, like photo (`PUT /groups/{id}/photo/$value`).
-* _Group.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`). NOTE: This also requires _User.ReadBasic.All_ to read the user to add as a member.
+* _Group.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`). 
+> **Note:**: This also requires _User.ReadBasic.All_ to read the user to add as a member.
 
 #### Application
 
