@@ -79,7 +79,7 @@ None.
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Bookings.Read.All_ |  Allows an app to read Bookings appointments, businesses, customers, services, and staff on behalf of the signed-in user. | Intended for read-only applications. Typical target user is the customer of a booking business. | No | No |
 | _Bookings.ReadWrite.Appointments_ | Allows an app to read and write Bookings appointments and customers, and additionally allows reading businesses, services, and staff on behalf of the signed-in user. | Intended for scheduling applications which need to manipulate appointments and customers. Cannot change fundamental information about the booking business, nor its services and staff members. Typical target user is the customer of a booking business.| No | No |
@@ -103,7 +103,7 @@ None.
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Calendars.Read_ |Read user calendars |Allows the app to read events in user calendars. |No | Yes |
 | _Calendars.Read.Shared_ |Read user and shared calendars |Allows the app to read events in all calendars that the user can access, including delegate and shared calendars. |No | No |
@@ -148,7 +148,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Contacts.Read_ |Read user contacts  |Allows the app to read user contacts. |No |
 |_Contacts.Read.Shared_ |Read user and shared contacts |Allows the app to read contacts that the user has permissions to access, including the user's own and shared contacts. |No |
@@ -185,7 +185,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Device.Read_ |Read user devices |Allows the app to read a user's list of devices on behalf of the signed-in user. |No | No |
 |_Device.Command_ |Communicate with user devices |Allows the app to launch another app or communicate with another app on a user's device on behalf of the signed-in user. |No | Yes |
@@ -215,7 +215,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Directory.Read.All_ |Read directory data | Allows the app to read data in your organization's directory, such as users, groups and apps. **Note**: Users may consent to applications that require this permission if the application is registered in their own organization’s tenant.| Yes | No |
 | _Directory.ReadWrite.All_ |Read and write directory data | Allows the app to read and write data in your organization's directory, such as users, and groups. It does not allow the app to delete users or groups, or reset user passwords. | Yes | No |
@@ -273,7 +273,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |EduAdministration.Read | Read education app settings |  Allows the app to read education app settings on behalf of the user. | Yes | No |
 |EduAdministration.ReadWrite | Manage education app settings | Allows the app to manage education app settings on behalf of the user. | Yes | No |
@@ -312,7 +312,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Files.Read_ | Read user files | Allows the app to read the signed-in user's files. | No | Yes |
 | _Files.Read.All_ | Read all files that user can access | Allows the app to read all files the signed-in user can access. | No | Yes |
@@ -358,7 +358,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Group.Read.All_ |    Read all groups | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. | Yes | No |
 | _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
@@ -405,7 +405,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _IdentityRiskEvent.Read.All_ |   Read identity risk event information  | Allows the app to read identity risk event information for all users in your organization on behalf of the signed-in user. | Yes | No |
 
@@ -438,7 +438,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _IdentityProvider.Read.All_ |   Read identity provider information  | Allows the app to read identity providers configured in your Azure AD or Azure AD B2C tenant on behalf of the signed-in user. | Yes | No |
 | _IdentityProvider.ReadWrite.All_ |   Read and write identity provider information  |  Allows the app to read or write identity providers configured in your Azure AD or Azure AD B2C tenant on behalf of the signed-in user. | Yes | No |
@@ -466,7 +466,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_DeviceManagementApps.Read.All_ | Read Microsoft Intune apps | Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes | No |
 |_DeviceManagementApps.ReadWrite.All_ | Read and write Microsoft Intune apps | Allows the app to read and write the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune. | Yes | No |
@@ -514,7 +514,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Read user mail | Allows the app to read email in user mailboxes. | No | Yes
 | _Mail.ReadWrite_ |    Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.| No | Yes
@@ -567,7 +567,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Member.Read.Hidden_ | Read hidden memberships | Allows the app to read the memberships of hidden groups and administrative units on behalf of the signed-in user, for those hidden groups and administrative units that the signed-in user has access to. | Yes | No |
 
@@ -601,7 +601,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Notes.Read_ |    Read user OneNote notebooks | Allows the app to read the titles of OneNote notebooks and sections and to create new pages, notebooks, and sections on behalf of the signed-in user. | No | Yes
 | _Notes.Create_ |    Create user OneNote notebooks | Allows the app to read the titles of OneNote notebooks and sections and to create new pages, notebooks, and sections on behalf of the signed-in user.| No | Yes
@@ -648,7 +648,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _email_ |    View users' email address | Allows the app to read your users' primary email address. | No | No |
 | _offline_access_ |    Access user's data anytime | Allows the app to read and update user data, even when they are not currently using the app.| No | No |
@@ -674,7 +674,7 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _People.Read_ |    Read users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). | No | No |
 | _People.Read.All_ | Read all users' relevant people lists | Allows the app to read a scored list of people relevant to the signed-in user or other users in the signed-in user's organization. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype). Also allows the app to search the entire directory of the signed-in user's organization. | Yes | No |
@@ -703,7 +703,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Reports.Read.All_ | Read all usage reports | Allows an app to read all service usage reports without a signed-in user. Services that provide usage reports include Office 365 and Azure Active Directory. | Yes | No |
 
@@ -732,7 +732,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _SecurityEvents.Read.All_        |  Read your organization’s security events | Allows the app to read your organization’s security events on behalf of the signed-in user. | Yes  | No |
 | _SecurityEvents.ReadWrite.All_   | Read and update your organization’s security events | Allows the app to read your organization’s security events on behalf of the signed-in user. Also allows the app to update editable properties in security events on behalf of the signed-in user. | Yes  | No |
@@ -761,7 +761,7 @@ Security permissions are valid only on work or school accounts.
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Sites.Read.All_        | Read items in all site collections | Allows the app to read documents and list items in all site collections on behalf of the signed-in user. | No  | No |
 | _Sites.ReadWrite.All_   | Read and write items in all site collections | Allows the app to edit or delete documents and list items in all site collections on behalf of the signed-in user. | No  | No |
@@ -797,7 +797,7 @@ Sites permissions are valid only on work or school accounts.
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Tasks.Read_ | Read user tasks | Allows the app to read user tasks. | No | Yes |
 | _Tasks.Read.Shared_ | Read user and shared tasks | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No | No |
@@ -831,7 +831,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Agreement.Read.All_ | Read all terms of use agreements | Allows the app to read terms of use agreements on behalf of the signed-in user. | Yes | No |
 | _Agreement.ReadWrite.All_ | Read and write all terms of use agreements | Allows the app to read and write terms of use agreements on behalf of the signed-in user. | Yes | No |
@@ -861,7 +861,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 #### Delegated permissions
 
-|   Permission    |  Display String   |  Description | Admin Consent Required | MSA supported |
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _User.Read_       |    Sign-in and read user profile | Allows users to sign-in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information of signed-in users.| No | Yes |
 | _User.ReadWrite_ |    Read and write access to user profile | Allows the app to read the signed-in user's full profile. It also allows the app to update the signed-in user's profile information on their behalf. | No | Yes |
@@ -981,7 +981,7 @@ This section shows some common scenarios that target [user](../api-reference/v1.
 
 #### Delegated permissions
 
-|Permission    |Display String   |Description |Admin Consent Required | MSA supported |
+|Permission    |Display String   |Description |Admin Consent Required | Microsoft Account supported |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|:-----------------|
 | _UserActivity.ReadWrite.CreatedByApp_ |Read and write app activity to users' activity feed |Allows the app to read and report the signed-in user's activity in the app. |No | Yes |
 
