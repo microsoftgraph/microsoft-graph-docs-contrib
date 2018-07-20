@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be an root message or part of a thread which is defined by the replyToId property in the message.
+Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message.
 
 ## Methods
 
@@ -16,7 +16,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Unique id of the message.|
+|id|String| Read-only. Unique ID of the message.|
 |replyToId| string | Id of the parent message/root message of the thread |
 |from|identitySet| Details of the sender of the message|
 |etag| string | Version number of the message |
@@ -31,12 +31,12 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |attachment|chatAttachment collection| Array of attachments that are part of the message|
 |mentions|chatMention collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
 |importance| string | The importance of the message: Normal, High|
-|reactions| chatReactions collection | Reactions for this message (ex: Like)|
+|reactions| chatReactions collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
