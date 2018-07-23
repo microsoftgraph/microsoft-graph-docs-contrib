@@ -41,19 +41,17 @@ includes the encoded, desired parameters.
 
 This method supports OData Query Parameters to help customize the response.
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
-_id_ property is always returned. 
-- Delta query support `$select`, `$top`, and `$expand` for messages. 
-- There is limited support for `$filter` and `$orderby`:
-  * The only supported `$filter` expression is for tracking changes on one or two specific users:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}` 
-  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include  an `$orderby` expression, the return order is not guaranteed. 
-- There is no support for `$search`.
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The *id* property is always returned.
+
+- There is limited support for `$filter`:
+  * The only supported `$filter` expression is for tracking changes on one or two specific users:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`
 
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
+| Prefer | return=minimal </br></br>When specified, only the object properties whose values have changed are included in the response. See [this section](#properties-included-in-the-response) for more details. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -62,9 +60,83 @@ Do not supply a request body for this method.
 
 If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
 
-- If a nextLink URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the nextLink URL until a deltaLink URL is included in the response.
+- If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the nextLink URL until a deltaLink URL is included in the response.
 
-- If a deltaLink URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource.
+- If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource.
+
+### Properties included in the response
+
+Responses for `nextLink` always include all the properties of the object - the default set, or the set specified in the optional `$select` query parameter. This allows you to capture the full current state of the objects when initiating the delta cycle.
+
+Responses for `deltaLink` include values for only the properties that have changed since the time the `deltaLink` was issued. There are two behaviors you can choose from:
+
+#### Default: all properties included
+By default, all properties selected in the initial delta query are always returned in the Json response, with the following behavior:
+
+- If the property has changed, the value of the property is included.
+  - Note that if the property has changed and has been set to an empty value, the *null* value is returned.
+
+- If the property has not changed, the value is returned as *null*.
+
+> **Note:** With this behavior it is not possible to differentiate between a property that has not changed and one that has changed to a *null* value. If this is important, we recommend using the alternative behavior described in the next section.
+
+
+For example, an initial request selected 3 properties for change tracking:
+```http
+GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
+```
+
+A response to a subsequent delta query may look like this:
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "jobTitle": null,
+      "mobilePhone": null
+    }
+  ]
+}
+```
+Note that *jobTitle* and *mobilePhone* have the value of *null* which means that they may have not changed or have been set to an empty value.
+
+#### Alternative: only changed properties included
+Adding an optional request header - `prefer:return=minimal` - changes the default behavior to the following:
+
+- If the property has changed, the property is included in the Json response. If the property has been set to an empty value, the value returned is *null*.
+
+- If the property has not changed, it will be omitted from the Json response.
+
+> **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed.
+
+
+For example, an initial request selected 3 properties for change tracking:
+```http
+GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mobilePhone
+```
+
+A response to a subsequent delta query, which specified the `prefer:return=minimal` request header, may look like this:
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "mobilePhone": null
+    }
+  ]
+}
+```
+Note that the *jobTitle* property is not included, which means it has not changed since the last delta query. The *mobilePhone* property is included with a *null* value, which means it has changed and set to an empty value.
 
 See:</br>
 - [Using Delta Query](../../../concepts/delta_query_overview.md) for more details</br>
