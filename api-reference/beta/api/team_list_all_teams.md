@@ -10,6 +10,10 @@ See [list of all groups](group_list.md) for information on permissions and respo
 
 Note: Teams that were deleted then restored may not be included, Microsoft is working to address this limitation.
 
+Note: The Group.resourceProvisioningOptions can be changed.
+Do not add or remove "Team" from that collection, 
+otherwise list all teams will return incorrect results.
+
 ## Example
 #### Request
 The following is an example of the request.
