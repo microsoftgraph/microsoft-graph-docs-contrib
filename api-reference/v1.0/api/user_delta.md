@@ -50,14 +50,14 @@ This method supports optional OData query parameters to help customize the respo
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
-| Prefer | return=minimal </br></br>When specified, only the object properties whose values have changed are included in the response. See [this section](#properties-included-in-the-response) for more details. |
+| Prefer | return=minimal <br><br>When specified, only the object properties whose values have changed are included in the response. See [this section](#properties-included-in-the-response) for more details. |
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
+If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL.
 
 - If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the nextLink URL until a deltaLink URL is included in the response.
 
@@ -137,9 +137,9 @@ Content-type: application/json
 ```
 Note that the *jobTitle* property is not included, which means it has not changed since the last delta query. The *mobilePhone* property is included with a *null* value, which means it has changed and set to an empty value.
 
-See:</br>
-- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details</br>
-- [Get incremental changes for users](../../../concepts/delta_query_users.md) for an example requests.</br>
+See:<br>
+- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details<br>
+- [Get incremental changes for users](../../../concepts/delta_query_users.md) for an example requests.<br>
 
 ## Example
 #### Request

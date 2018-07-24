@@ -47,7 +47,7 @@ This method supports optional OData query parameters to help customize the respo
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
-| Prefer | return=minimal </br></br>When specified, only the object properties whose values have changed are included in the response. See [this section](#properties-included-in-the-response) for more details. |
+| Prefer | return=minimal <br><br>When specified, only the object properties whose values have changed are included in the response. See [this section](#properties-included-in-the-response) for more details. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -133,9 +133,9 @@ Content-type: application/json
 ```
 Note that the *mailNickname* property is not included, which means it has not changed since the last delta query. The *description* property is included with a *null* value, which means it has changed and set to an empty value.
 
-See:</br>
-- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.</br>
-- [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.</br>
+See:<br>
+- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.<br>
+- [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.<br>
 
 ## Example
 #### Request
