@@ -22,7 +22,7 @@ To begin tracking changes, you make a request including the delta function on th
 GET /users/delta
 ```
 
-### Query parameters
+## Query parameters
 
 Tracking changes in users incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
@@ -37,9 +37,8 @@ includes the encoded, desired parameters.
 | $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same user collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same user collection. |
 
-## Optional query parameters
-
-This method supports OData Query Parameters to help customize the response.
+### OData query parameters
+This method supports optional OData query parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The *id* property is always returned.
 
@@ -143,7 +142,7 @@ See:</br>
 - [Get incremental changes for users](../../../concepts/delta_query_users.md) for an example requests.</br>
 
 ## Example
-##### Request
+#### Request
 <!-- {
   "blockType": "request",
   "name": "user_delta"
@@ -152,7 +151,7 @@ See:</br>
 GET https://graph.microsoft.com/v1.0/users/delta
 ```
 
-##### Response
+#### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- { 
   "blockType": "response",
