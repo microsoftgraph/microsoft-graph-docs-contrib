@@ -15,5 +15,5 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 See [list of all groups](group_list.md) for information on permissions and responses.
 
 ## See also
-[List joinedTeams](user_list_joinedteams.md)
-[List groups](group_list.md)
+- [List joinedTeams](user_list_joinedteams.md)
+- [List groups](group_list.md)
