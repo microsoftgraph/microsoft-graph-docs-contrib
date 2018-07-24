@@ -8,6 +8,8 @@ so the approach is to get a [list of all groups](group_list.md) where resourcePr
 
 See [list of all groups](group_list.md) for information on permissions and responses.
 
+Note: Teams that were deleted then restored may not be included, Microsoft is working to address this limitation.
+
 ## Example
 #### Request
 The following is an example of the request.
