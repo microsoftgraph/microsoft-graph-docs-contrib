@@ -45,39 +45,36 @@ Content-length: xxx
     "value": [
         {
             "id": "02bd9fd6-8f93-4758-87c3-1fb73740a315",
-            "deletedDateTime": null,
-            "classification": null,
-            "createdDateTime": "2017-07-31T18:56:16Z",
             "description": "Welcome to the HR Taskforce team.",
             "displayName": "HR Taskforce",
             "groupTypes": [
                 "Unified"
             ],
-            "mail": "HRTaskforce@M365x214355.onmicrosoft.com",
             "mailEnabled": true,
             "mailNickname": "HRTaskforce",
-            "membershipRule": null,
-            "membershipRuleProcessingState": null,
-            "onPremisesLastSyncDateTime": null,
-            "onPremisesSecurityIdentifier": null,
-            "onPremisesSyncEnabled": null,
-            "preferredDataLocation": null,
-            "preferredLanguage": null,
-            "proxyAddresses": [
-                "SMTP:HRTaskforce@M365x214355.onmicrosoft.com"
-            ],
-            "renewedDateTime": "2017-07-31T18:56:16Z",
             "resourceBehaviorOptions": [],
             "resourceProvisioningOptions": [
                 "Team"
             ],
             "securityEnabled": false,
-            "theme": null,
             "visibility": "Private",
-            "onPremisesProvisioningErrors": []
         },
-        ... second group ...,
-        ... third group ...
+        {
+            "id": "8090c93e-ba7c-433e-9f39-08c7ba07c0b3",
+            "description": "Welcome to the team that we've assembled to launch our product.",
+            "displayName": "X1050 Launch Team",
+            "groupTypes": [
+                "Unified"
+            ],
+            "mailEnabled": true,
+            "mailNickname": "X1050LaunchTeam",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [
+                "Team"
+            ],
+            "securityEnabled": false,
+            "visibility": "Private",
+        }
     ]
 }
 
