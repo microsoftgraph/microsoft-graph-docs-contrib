@@ -13,7 +13,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
 |Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
 |Addition|beta|Added [Chat reaction](../api-reference/beta/resources/chatattachment.md) resource type|
-|Addition|beta|Added [Get all channel messages API](../api-reference/beta/api/channel_message_list.md) |
+|Addition|beta|Added [Get all channel messages API](../api-reference/beta/api/channel_messages_list.md) |
 |Addition|beta|Added [Get channel message API](../api-reference/beta/api/channel_message_get.md) |
 |Addition|beta|Added [Get all message replies API](../api-reference/beta/api/channel_message_replies_list.md) |
 |Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_message_replies_get.md) |
