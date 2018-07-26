@@ -35,8 +35,7 @@ If none of those users are signed in to the Microsoft Teams application/website,
 the change will not be reflected until an hour after one of them signs in.
 
 The beta endpoint is faster -- under a minute in most cases,
-regardless of whether the user is signed in or not.
-The following are the beta APIs to use:
+regardless of whether the user is signed in or not. The following are the beta APIs to use.
 
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -52,6 +51,20 @@ For example, Microsoft Teams will show teams that the user is either a member or
 while the Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of. 
 To avoid confusion, consider having all owners also be on the members list.
 
+When creating the request, don't put braces { } around the ID.
+
+| Speed | Syntax | 
+| ------ | ----- |
+| Fast | https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref | 
+| Slow | https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref | 
+
+Similarly, if the {userId} in the URL or payload is expressed as a UPN rather than as a GUID, the performance will be slow.
+
+| Speed | Syntax | 
+| ------ | ----- |
+| Fast | 48d31887-5fad-4d73-a9f5-3c356e68a038 | 
+| Slow | john@example.com | 
+
 ## Common use cases  
 | Use cases                             | REST resources                                               | See also                                                     |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -66,4 +79,7 @@ To avoid confusion, consider having all owners also be on the members list.
 | Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) | 
 | Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
 | List notebooks for a team             | [Notebook](../../v1.0/resources/notebook.md) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks.md) |
+
+
+
 
