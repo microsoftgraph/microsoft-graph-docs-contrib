@@ -15,6 +15,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Microsoft Teams APIs
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta| Added application permissions support to [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
 |Deletion|beta|Removed DELETE /groups/{id}/team/channels/{id}, use DELETE /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed GET /groups/{id}/team/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
