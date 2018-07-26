@@ -77,6 +77,7 @@ Content-length: xxx
         }
     ]
 }
+```
 
 ## See also
 - [List joinedTeams](user_list_joinedteams.md)
