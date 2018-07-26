@@ -74,7 +74,7 @@ Similarly, if the {userId} in the URL or payload is expressed as a UPN rather th
 | Add apps to team                      | [teamsApp](../resources/teamsApp.md) | [Add apps](../api/teams_apps_add.md) |
 | Post a message                        | [chatMessage](../resources/chatmessage.md) | [Create chat thread](../api/channel_post_chatthreads.md) |
 | Get a channel message                 | [chatMessage](../resources/chatmessage.md) | [Get channel message](../api/channel_get_message.md) |
-| Get all the replies of a message      | [chatMessage](../resources/chatmessage.md) | [Get all replies to a channel message](../api/channel_message_replies_list.md) |
+| Get all the replies of a message      | [chatMessage](../resources/chatmessage.md) | [Get all replies to a channel message](../api/channel_list_messagereplies.md) |
 | Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamFunSettings.md) |                                                              |
 | Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) | 
 | Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
