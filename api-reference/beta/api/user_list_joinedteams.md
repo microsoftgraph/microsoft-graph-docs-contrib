@@ -11,14 +11,16 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.Read.All, User.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | User.Read.All, User.ReadWrite.All |
 
-> Currently, this operation only works for the 'me' user. For details, see [Known issues](../../../concepts/known_issues.md#microsoft-teams-users-list-of-joined-teams-preview).
+> Currently, with user delegated permissions this operation only works for the 'me' user. With application permissions, it works for all users (but /me/joinedTeams isn't supported because there is no /me). For details, see [Known issues](../../../concepts/known_issues.md#microsoft-teams-users-list-of-joined-teams-preview).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/joinedTeams
+or
+GET /users/{id}/joinedTeams
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
