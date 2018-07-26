@@ -73,7 +73,7 @@ Similarly, if the {userId} in the URL or payload is expressed as a UPN rather th
 | Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/group_post_channels.md) |
 | Add apps to team                      | [teamsApp](../resources/teamsApp.md) | [Add apps](../api/teams_apps_add.md) |
 | Post a message                        | [chatMessage](../resources/chatmessage.md) | [Create chat thread](../api/channel_post_chatthreads.md) |
-| Get a channel message                 | [chatMessage](../resources/chatmessage.md) | [Get channel message](../api/channel_message_get.md) |
+| Get a channel message                 | [chatMessage](../resources/chatmessage.md) | [Get channel message](../api/channel_get_message.md) |
 | Get all the replies of a message      | [chatMessage](../resources/chatmessage.md) | [Get all replies to a channel message](../api/channel_message_replies_list.md) |
 | Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamFunSettings.md) |                                                              |
 | Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) | 
