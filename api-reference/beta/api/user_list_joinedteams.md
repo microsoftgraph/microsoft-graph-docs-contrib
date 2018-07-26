@@ -13,7 +13,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, User.ReadWrite.All |
 
-> Currently, with user delegated permissions this operation only works for the 'me' user. With application permissions, it works for all users (but /me/joinedTeams isn't supported because there is no /me). For details, see [Known issues](../../../concepts/known_issues.md#microsoft-teams-users-list-of-joined-teams-preview).
+> Currently, with user delegated permissions this operation only works for the 'me' user. 
+> With application permissions, it works for all users by specifying  the specific user  id. 
+> ('me' alias is not supported with application permissions)
+> For details, see [Known issues](../../../concepts/known_issues.md#microsoft-teams-users-list-of-joined-teams-preview).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
