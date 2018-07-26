@@ -9,6 +9,8 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Create and delete teams               | [team](team.md) | [Create team](../api/team_put_teams.md) |
 | Add members and owners                | [group](../resources/group.md) | [Add member](../api/group_post_members.md), [Remove member](../api/group_delete_members.md) |
+| Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) |
+| List teams | [team](team.md) collection | [List your teams](../api/user_list_joinedteams.md) |
 | Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/group_post_channels.md) |
 | Add apps to team                      | [teamsApp](../resources/teamsApp.md) | [Add apps](../api/teams_apps_add.md) |
 | Copy a team                           | [team](team.md) | [Clone team](../api/team_clone.md) |
