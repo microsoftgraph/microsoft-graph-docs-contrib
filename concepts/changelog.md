@@ -16,7 +16,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added [Get all channel messages API](../api-reference/beta/api/channel_list_messages.md) |
 |Addition|beta|Added [Get channel message API](../api-reference/beta/api/channel_get_message.md) |
 |Addition|beta|Added [Get all message replies API](../api-reference/beta/api/channel_list_messagereplies.md) |
-|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_get_messagereplies.md) |
+|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
 
 
 ### Application and servicePrincipal API changes
