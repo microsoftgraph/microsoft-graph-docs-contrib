@@ -19,7 +19,7 @@ otherwise list all teams will return incorrect results.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_groups"
+  "name": "get_teams"
 }-->
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
