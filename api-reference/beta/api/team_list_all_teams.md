@@ -15,12 +15,10 @@ Do not add or remove "Team" from that collection,
 otherwise list all teams will return incorrect results.
 
 ## Example
+
 #### Request
+
 The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_teams"
-}-->
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
@@ -29,12 +27,6 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group",
-  "isCollection": true
-} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
