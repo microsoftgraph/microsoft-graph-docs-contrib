@@ -2,7 +2,7 @@
 
 Represents a reaction to a [chatMessage](chatMessage.md) entity. 
 
-An entity of type `chatReaction` is returned as part of the [Get channel messages](../api/channel_message_get.md) API, as a part of [chatMessage](chatMessage.md) entity.
+An entity of type `chatReaction` is returned as part of the [Get channel messages](../api/channel_get_message.md) API, as a part of [chatMessage](chatMessage.md) entity.
 
 ## Properties
 | Property	   | Type	|Description|
