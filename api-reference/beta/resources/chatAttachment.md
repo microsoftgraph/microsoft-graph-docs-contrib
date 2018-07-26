@@ -4,7 +4,7 @@
 
 Represents an attachment to a chat message entity.
 
-An entity of type `chatAttachment` is returned as part of the [Get channel messages](../api/channel_messages_list.md) API, as a part of [chatMessage](chatMessage.md) entity.
+An entity of type `chatAttachment` is returned as part of the [Get channel messages](../api/channel_list_messages.md) API, as a part of [chatMessage](chatMessage.md) entity.
 
 ## Properties
 | Property	   | Type	|Description|
