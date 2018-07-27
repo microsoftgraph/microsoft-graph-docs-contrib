@@ -91,7 +91,7 @@ Mail folders in Outlook can contain more than one type of items, for example, th
 
 Here is a JSON representation of the resource
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "childFolders",
@@ -101,7 +101,33 @@ Here is a JSON representation of the resource
     "singleValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.mailFolder"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.mailFolder",
+  "@odata.annotations": [
+    {
+      "property": "childFolders",
+      "capabilities": {
+        "changeTracking": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    },
+    {
+      "property": "messageRules",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "searchable": false
+      }
+    },
+    {
+      "property": "messages",
+      "capabilities": {
+        "changeTracking": true,
+        "navigability": "single"
+      }
+    }
+  ]
 }-->
 
 ```json
