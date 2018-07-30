@@ -6,6 +6,25 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2018
 
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added  isMultipleDataLocationsForServicesEnabled property to [Organization](../api-reference/beta/resources/organization.md) resource that allows apps to verify that tenant is enabled for Multi-Geo capabilities. Added preferredDataLocation property to [user](../api-reference/beta/resources/user.md) and [group](../api-reference/beta/resources/group.md) resources that allow setting preferred data location for a user and group.|
+
+### Microsoft Teams APIs
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md)) resource|
+|Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat reaction](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Get all channel messages API](../api-reference/beta/api/channel_list_messages.md) |
+|Addition|beta|Added [Get channel message API](../api-reference/beta/api/channel_get_message.md) |
+|Addition|beta|Added [Get all message replies API](../api-reference/beta/api/channel_list_messagereplies.md) |
+|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
+
+
 ### Application and servicePrincipal API changes
 
 | **Change type** | **Version** | **Description**                          |
@@ -15,6 +34,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Microsoft Teams APIs
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition|beta| Added application permissions support to [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
 |Deletion|beta|Removed DELETE /groups/{id}/team/channels/{id}, use DELETE /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed GET /groups/{id}/team/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
@@ -28,7 +48,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed POST /groups/{id}/team/channels, use POST /teams/{id}/channels instead. |
 |Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
+|Addition|beta|Added API to [list all teams in organization](../api-reference/beta/api/team_list_all_teams.md). |
 
+### Webhooks
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Breaking change | Beta and v1.0 | Reduced [webhooks](../api-reference/v1.0/resources/webhooks.md) [maximum length of subscription expiration time](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. | 
 
 ## June 2018
 
@@ -36,7 +61,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy that allow a client app to create, read, update and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
+| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allows a client app to create, read, update, and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
 
 ### Microsoft Intune APIs
 
@@ -81,7 +106,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **notConfigured** member to the [editionUpgradeLicenseType](../api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype.md) enum type|
 |Addition|beta|Added the **unknown** member to the [iosUpdatesInstallStatus](../api-reference/beta/resources/intune_deviceconfig_iosupdatesinstallstatus.md) enum type|
 |Addition|beta|Added the **userRequestedInstall** member to the [mobileAppActionType](../api-reference/beta/resources/intune_troubleshooting_mobileappactiontype.md) enum type|
-|Addition|beta|Added the **notConfigured** member to the [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) enum type|
+|Addition|beta|Added the **notConfigured** member to the [windows10EditionType](../api-reference/beta/resources/intune_deviceconfig_windows10editiontype.md) enum type
 
 ### Microsoft Teams APIs
 | **Change type** | **Version**   | **Description**                          |
