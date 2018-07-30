@@ -50,10 +50,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
 |Addition|beta|Added API to [list all teams in organization](../api-reference/beta/api/team_list_all_teams.md). |
 
+### Outlook contacts
+| **Change type** | **Version**   | **Description**                          |
+|:--------------- |:------------- |:---------------------------------------- |
+|Addition |Beta | Added the complex type [typedEmailAddress](../api-reference/beta/resources/typedemailaddress.md). |
+|Change | Beta | Changed the type of the **emailAddresses** property of [contact](../api-reference/beta/resources/contact.md) to be a collection of **typedEmailAddress** instances.|
+
 ### Webhooks
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
 | Breaking change | Beta and v1.0 | Reduced [webhooks](../api-reference/v1.0/resources/webhooks.md) [maximum length of subscription expiration time](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. | 
+
 
 ## June 2018
 
