@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/delta
-GET /users/<id>/mailFolders/delta
+GET /users/{id}/mailFolders/delta
 ```
 
 ## Optional query parameters
@@ -126,5 +126,9 @@ Content-length: 254
   "description": "mailFolder: delta",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+    "Warning: mailfolder_delta/container/wellKnownName:
+      Undocumented property 'wellKnownName' [String] was not expected on resource microsoft.graph.mailFolder."
+  ],
   "tocPath": ""
 }-->

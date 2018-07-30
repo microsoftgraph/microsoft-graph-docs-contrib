@@ -33,10 +33,9 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 
 
 ## Parameters
-| Function parameter       | Type | Description|
+| Parameter       | Type | Description|
 |:---------------|:--------|:----------|
-| TimeZoneStandard  | String  | A time zone format. Supported values are: `Windows`, and `Iana`. Optional. |
-
+| TimeZoneStandard  | timeZoneStandard  | A time zone format. Supported values are: `Windows`, and `Iana`. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
