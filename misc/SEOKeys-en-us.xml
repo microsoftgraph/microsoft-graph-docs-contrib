@@ -5151,13 +5151,12 @@
            <Item text="Create access review" url="/en-us/api-reference/beta/api/accessreview_create" SEOKeyword="Access review API, Microsoft Graph API, accessReview API, create accessReview" />
            <Item text="Delete access review" url="/en-us/api-reference/beta/api/accessreview_delete"  />
            <Item text="Get access review" url="/en-us/api-reference/beta/api/accessreview_get"  />
-           <Item text="List access reviews" url="/en-us/api-reference/beta/api/accessreview_list"  />
            <Item text="Update access review" url="/en-us/api-reference/beta/api/accessreview_update"  />
            <Item text="Add reviewer" url="/en-us/api-reference/beta/api/accessreview_addreviewer"  />
            <Item text="List decisions" url="/en-us/api-reference/beta/api/accessreview_listdecisions"  />
-           <Item text="List my decisions" url="/en-us/api-reference/beta/api/accessreview_mydecisions"  />
+           <Item text="List my decisions" url="/en-us/api-reference/beta/api/accessreview_listmydecisions"  />
            <Item text="List reviewers" url="/en-us/api-reference/beta/api/accessreview_listreviewers"  />
-           <Item text="Remove reviers" url="/en-us/api-reference/beta/api/accessreview_removereviewers"  />
+           <Item text="Remove reviewer" url="/en-us/api-reference/beta/api/accessreview_removereviewer"  />
            <Item text="Reset" url="/en-us/api-reference/beta/api/accessreview_reset"  />
            <Item text="Send reminder" url="/en-us/api-reference/beta/api/accessreview_sendreminder"  />
            <Item text="Stop" url="/en-us/api-reference/beta/api/accessreview_stop"  />
