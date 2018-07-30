@@ -208,6 +208,10 @@ The **comment** parameter for creating a reply or forward draft ([createReply](.
 [createReplyAll](../api-reference/v1.0/api/message_createreplyall.md), [createForward](../api-reference/v1.0/api/message_createforward.md))
 does not become part of the body of the resultant message draft.
 
+### GET messages returns chats in Microsoft Teams
+
+In both the v1 and beta endpoints, the response of `GET /users/id/messages` includes the user's Microsoft Teams chats that occurred outside the scope of a team or channel. These chat messages have "IM" as their subject.
+
 
 ## Drives, files and content streaming
 
