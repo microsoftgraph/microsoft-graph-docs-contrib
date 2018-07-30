@@ -47,6 +47,18 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
+## HTTP request to get the metadata for a specific photo size
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/photos/{size}
+GET /users/{id | userPrincipalName}/photos/{size}
+GET /groups/{id}/photos/{size}
+GET /me/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
+GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
+```
+
 ## Parameters
 
 |**Parameter**|**Type**|**Description**|
