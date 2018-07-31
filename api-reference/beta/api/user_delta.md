@@ -67,7 +67,7 @@ If successful, this method returns `200 OK` response code and [user](../resource
 
 ### Properties included in the response
 
-Responses for `nextLink` always include all the properties of the object - the default set, or the set specified in the optional `$select` query parameter. This allows you to capture the full current state of the objects when initiating the delta cycle.
+Responses for `nextLink` always include the same set of properties as in the initial delta query request. This allows you to capture the full current state of the objects when initiating the delta cycle.
 
 By default, responses for `deltaLink` include all originally selected properties, whether they have changed or not, and their current values. Optionally, you can request that only the changed properties be included.
 

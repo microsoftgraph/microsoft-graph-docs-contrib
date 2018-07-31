@@ -40,7 +40,7 @@ This method supports optional OData query parameters to help customize the respo
 *id* property is always returned.
 - You can use `$expand=members` to get membership changes.
 - There is limited support for `$filter`:
-  * The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff`. There is a limit of 50 filtered objects.
+  * The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
 
 ## Request headers
 | Name       | Description|
@@ -61,9 +61,9 @@ If successful, this method returns `200 OK` response code and [group](../resourc
 
 ### Properties included in the response
 
-Responses for `nextLink` always include all the properties of the object - the default set, or the set specified in the optional `$select` query parameter. This allows you to capture the full current state of the objects when initiating the delta cycle.
+Responses for `nextLink` always include the same set of properties as in the initial delta query request. This allows you to capture the full current state of the objects when initiating the delta cycle.
 
-Responses for `deltaLink` include values for only the properties that have changed since the time the `deltaLink` was issued. There are two behaviors you can choose from:
+By default, responses for `deltaLink` include all originally selected properties, whether they have changed or not, and their current values. Optionally, you can request that only the changed properties be included.
 
 #### Default: all properties included
 All properties selected in the initial delta query are always returned in the Json response, even if their values have not changed.
