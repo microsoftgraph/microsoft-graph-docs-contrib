@@ -184,11 +184,9 @@ Use the `$search` query parameter to restrict the results of a request to match 
 
 ### Using $search on message collections
 
-Office 365 applications, such as Outlook and SharePoint, support the Keyword Query Language (KQL) syntax to do searches. This provides the convenience of a common discovery domain for their data stores. 
+You can search messages based on a value in specific message properties. The results of the search are sorted by the date and time that the message was sent.
 
-If you do a search on messages and specify only a value but no specific message properties, the search is carried out on the default search properties of **from**, **subject**, and **body**.
-
-The results of a search on a message collection are sorted by the date and time that the message was sent.
+If you do a search on messages and specify only a value without specific message properties, the search is carried out on the default search properties of **from**, **subject**, and **body**.
 
 The following example returns all messages in the signed-in user's Inbox that contains "pizza" in any of the three default search properties:
 
@@ -198,7 +196,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 [Try in Graph Explorer][search-example]
 
-You can specify the following message property names that KQL recognizes in a $search query string. These property names correspond to properties defined in the **message** entity of Microsoft Graph. 
+Alternatively, you can search messages by specifying message property names in the following table, that are recognized by the Keyword Query Language (KQL) syntax. These property names correspond to properties defined in the **message** entity of Microsoft Graph. Outlook and other Office 365 applications such as SharePoint support KQL syntax, providing the convenience of a common discovery domain for their data stores.
 
 
 | Searchable email property                | Description | Example 
@@ -206,10 +204,11 @@ You can specify the following message property names that KQL recognizes in a $s
 | **attachment**           | The names of files attached to an email message.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
 | **bcc**           | The **bcc** field of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
 | **body**           | The body of an email message.|[`me/messages?$search="body:excitement"`][search-body-example]
-| **cc**           | The **cc** field of an email message, specified as an SMTP address, display name, or alias.|[`search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
-| **from**           | The sender of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="from:randiw"&$select=subject,from"`][search-from-example]
+| **cc**           | The **cc** field of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
+| **from**           | The sender of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
+| **hasAttachment** | True if an email message contains an attachment that is not an inline attachment, false otherwise. |[`me/messages?$search="hasAttachments=true"`][search-from-example]
 | **importance**           | The importance of an email message, which a sender can specify when sending a message. The possible values are `low`, `medium`, or `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **kind**           | The type of message The possible values are `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks`, or `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
+| **kind**           | The type of message. The possible values are `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks`, or `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
 | **participants**           | The **from**, **to**, **cc**, and **bcc** fields of an email message, specified as an SMTP address, display name, or alias.|[`me/messages?$search="participants:danas"`][search-part-example]
 | **received**           | The date that an email message was received by a recipient.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
 | **recipients**           | The **to**, **cc**, and **bcc** fields of an email meesage, specified as an SMTP address, display name, or alias.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
@@ -377,6 +376,7 @@ However, it is important to note that query parameters specified in a request mi
 [search-body-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22body%3Aexcitement%22&method=GET&version=v1.0
 [search-cc-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22cc%3Adanas%22%26$select=subject,ccRecipients&method=GET&version=v1.0
 [search-from-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22from%3Arandiw%22%26$select=subject,from&method=GET&version=v1.0
+[search-hasatt-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22hasAttachments=true%22&method=GET&version=v1.0
 [search-imp-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22importance%3Ahigh%22%26$select=subject,importance&method=GET&version=v1.0
 [search-kind-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22kind%3Avoicemail%22&method=GET&version=v1.0
 [search-part-example]: https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$search=%22participants%3Adanas%22&method=GET&version=v1.0
