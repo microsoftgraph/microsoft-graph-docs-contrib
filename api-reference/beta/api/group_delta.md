@@ -66,15 +66,7 @@ Responses for `nextLink` always include all the properties of the object - the d
 Responses for `deltaLink` include values for only the properties that have changed since the time the `deltaLink` was issued. There are two behaviors you can choose from:
 
 #### Default: all properties included
-By default, all properties selected in the initial delta query are always returned in the Json response, with the following behavior:
-
-- If the property has changed, the value of the property is included.
-  - Note that if the property has changed and has been set to an empty value, the *null* value is returned.
-
-- If the property has not changed, the value is returned as *null*.
-
-> **Note:** With this behavior it is not possible to differentiate between a property that has not changed and one that has changed to a *null* value. If this is important, we recommend using the alternative behavior described in the next section.
-
+All properties selected in the initial delta query are always returned in the Json response, even if their values have not changed.
 
 For example, an initial request selected 3 properties for change tracking:
 ```http
@@ -93,19 +85,14 @@ Content-type: application/json
     {
       "displayName": "displayName-value",
       "description": null,
-      "mailNickname": null
+      "mailNickname": "mailNickname-value"
     }
   ]
 }
 ```
-Note that *description* and *mailNickname* have the value of *null* which means that they may have not changed or have been set to an empty value.
 
 #### Alternative: only changed properties included
-Adding an optional request header - `prefer:return=minimal` - changes the default behavior to the following:
-
-- If the property has changed, the property is included in the Json response. If the property has been set to an empty value, the value returned is *null*.
-
-- If the property has not changed, it will be omitted from the Json response.
+Adding an optional request header - `prefer:return=minimal` - ensures that only the properties whose values have changed since the last delta sync are included in the Json respnose.
 
 > **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed.
 
@@ -131,7 +118,7 @@ Content-type: application/json
   ]
 }
 ```
-Note that the *mailNickname* property is not included, which means it has not changed since the last delta query. The *description* property is included with a *null* value, which means it has changed and set to an empty value.
+Note that the *mailNickname* property is not included, which means it has not changed since the last delta query. *displayName* and *description* are included which means their values have changed.
 
 See:<br>
 - [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.<br>
