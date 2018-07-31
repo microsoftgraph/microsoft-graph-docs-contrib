@@ -1,6 +1,6 @@
 # user: delta
 
-[Delta query](../../../concepts/delta_query_overview.md) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to users, perform a request using the *delta* function. See [Using Delta Query](../../../concepts/delta_query_overview.md) for details.
+Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See [Track changes](../../../concepts/delta_query_overview.md) for details.
 
 ## Permissions
 

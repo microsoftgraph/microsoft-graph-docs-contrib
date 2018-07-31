@@ -1,5 +1,5 @@
 # group: delta
-[Delta query](../../../concepts/delta_query_overview.md) enables applications to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request. To discover changes to groups, perform a request using the *delta* function. See [Using Delta Query](../../../concepts/delta_query_overview.md) for details.
+Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection. See [Using Delta Query](../../../concepts/delta_query_overview.md) for details.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
