@@ -52,18 +52,18 @@ This method supports optional OData query parameters to help customize the respo
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
-| Prefer | return=minimal <br><br>When specified, only the object properties whose values have changed are included in the response. See [this section](#properties-included-in-the-response) for more details. |
+| Prefer | return=minimal <br><br>Specifying this header with a request that uses a deltaLink would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
 Do not supply a request body for this method.
 
-## Response
+### Response
 
 If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL.
 
-- If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the nextLink URL until a deltaLink URL is included in the response.
+- If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
 
-- If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the deltaLink URL to learn about changes to the resource.
+- If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `deltaLink` URL to learn about changes to the resource in the future.
 
 ### Properties included in the response
 
@@ -74,12 +74,12 @@ By default, responses for `deltaLink` include all originally selected properties
 #### Default: all properties included
 All properties selected in the initial delta query are always returned in the Json response, even if their values have not changed.
 
-For example, an initial request selected 3 properties for change tracking:
+For example, an initial request initiating the delta query selected 3 properties for change tracking:
 ```http
 GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mobilePhone
 ```
 
-A response to a subsequent delta query may look like this:
+A `deltaLink` was returned and a response to a subsequent delta query may look like this:
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -98,17 +98,11 @@ Content-type: application/json
 ```
 
 #### Alternative: only changed properties included
-Adding an optional request header - `prefer:return=minimal` - ensures that only the properties whose values have changed since the last delta sync are included in the Json respnose.
+Adding an optional request header - `prefer:return=minimal` - ensures that only the properties whose values have changed since the last delta sync are included in the Json response.
 
 > **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed.
 
-
-For example, an initial request selected 3 properties for change tracking:
-```http
-GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mobilePhone
-```
-
-A response to a subsequent delta query, which specified the `prefer:return=minimal` request header, may look like this:
+Using the same example as before, a response to the delta query would look like this:
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -130,7 +124,7 @@ See:<br>
 - [Using Delta Query](../../../concepts/delta_query_overview.md) for more details<br>
 - [Get incremental changes for users](../../../concepts/delta_query_users.md) for an example requests.<br>
 
-## Example
+### Example
 #### Request
 <!-- {
   "blockType": "request",
