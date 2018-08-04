@@ -105,7 +105,7 @@ Content-type: application/json
     "isInline":false,
     "contentId":null,
     "contentLocation":null,
-    "contentBytes":"base64-bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
