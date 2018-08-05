@@ -45,7 +45,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example gets the availability information for two users for the specified date, time, and time zone.
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "calendar_getSchedule"
 }-->
 ```http
