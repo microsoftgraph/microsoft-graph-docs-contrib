@@ -33,9 +33,9 @@ In the request body, provide a JSON object with the following parameters.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |availabilityViewInterval|String|Represents the duration of a time slot in an **availabilityView** in the response. The default is 30 minutes, minimum is 6, maximum is 1440. Optional.|
-|endTime|[dateTimeTimeZone](../resources/datatimetimezone.md)|The date, time, and time zone that the period ends.|
+|endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the period ends.|
 |schedules|String collection|A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.|
-|startTime|[dateTimeTimeZone](../resources/datatimetimezone.md)|The date, time, and time zone that the period starts.|
+|startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date, time, and time zone that the period starts.|
 
 ## Response
 
@@ -126,7 +126,7 @@ Content-type: application/json
                 "startTime":"08:00:00.0000000",
                 "endTime":"17:00:00.0000000",
                 "timeZone":{
-                    "@odata.type":"#microsoft.graph.CustomTimeZone",
+                    "@odata.type":"#microsoft.graph.customTimeZone",
                     "bias":480,
                     "name":"Customized Time Zone",
                     "standardOffset":{
