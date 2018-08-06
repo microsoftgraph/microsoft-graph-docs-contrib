@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-In the Azure AD [access reviews](accessreviews_root.md) feature, the program control object represents an control, linking an access review to a program.
+In the Azure AD [access reviews](accessreviews_root.md) feature, the program control object represents a control, linking an access review to a program.
 
 
 ## Methods
