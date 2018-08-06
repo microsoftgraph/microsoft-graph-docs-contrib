@@ -4,8 +4,6 @@
 
 In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, create a new [accessReview](../resources/accessreview.md) object.
 
-
-
 Prior to making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate_list.md), to have the value of `businessFlowTemplateId` to include in the request.
 
 After making this request, the caller should [create a programControl](programcontrol_create.md), to link the access review to a program.  

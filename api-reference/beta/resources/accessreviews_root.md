@@ -4,20 +4,17 @@
 
 You can use [Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
-
 Typical customer scenarios for access reviews of group memberships and application access are:
    
-- Customers can recertify guest user access by using access reviews of their access to applications and memberships of groups. Reviewers can use the insights that are provided to efficiently decide whether guests should have continued access.
+- Customers can review and certify guest user access by using access reviews of their access to applications and memberships of groups. Reviewers can use the insights that are provided to efficiently decide whether guests should have continued access.
       
-- Customers can recertify employee access to applications and group memberships with access reviews.
+- Customers can review and certify employee access to applications and group memberships with access reviews.
    
 - Customers can collect access review controls into programs that are relevant for your organization to track reviews for compliance or risk-sensitive applications.
 
-There is also a related capability for customers to recertify the role assignments of administrative users who are assigned to Azure AD roles such as Global Administrator, or Azure subscription roles.  This capability is included in [Azure AD Privileged Identity Management](privilegedidentitymanagement_root.md).
+There is also a related capability for customers to review and certify the role assignments of administrative users who are assigned to Azure AD roles such as Global Administrator or Azure subscription roles.  This capability is included in [Azure AD Privileged Identity Management](privilegedidentitymanagement_root.md).
 
-Note that the access reviews feature is included in Azure AD Premium P2.  Before an application is allowed to use the API in a particular tenant, a global administrator in the tenant must first go to the [access reviews page in the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade/) in order for the feature to validate that the tenant has an appropriate license.  
-
-
+Note that the access reviews feature, including the API, is included in Azure AD Premium P2. 
 
 ## Methods
 
