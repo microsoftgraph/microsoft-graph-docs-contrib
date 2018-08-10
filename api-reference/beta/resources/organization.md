@@ -33,7 +33,6 @@ Only the read and update operations are supported on tenants; create and delete 
 |displayName|String|The display name for the tenant.|
 |id|String|The unique identifier for the tenant. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isMultipleDataLocationsForServicesEnabled|Boolean|**true** if organization is Multi-Geo enabled; **false** if organization is not Multi-Geo enabled; **null** (default). Read-only. For more information see: [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
 |marketingNotificationEmails|String collection| Not nullable.            |
 |objectType|String|A string that identifies the object type. For tenants the value is always “Company”. |
 |postalCode|String| Postal code of the address for the organization |
