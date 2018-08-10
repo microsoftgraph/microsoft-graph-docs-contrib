@@ -21,9 +21,7 @@ to 25 different colors to categories in a user's master list.
 |color|categoryColor|A pre-set color constant that characterizes a category, and that is mapped to one of 25 predefined colors. See the note below. |
 
 > **Note** The possible values for **color** are pre-set constants such as `None`, `preset0` and `preset1`. Each pre-set constant is further mapped to a color; the actual
-color is dependent on the Outlook client that the categories are being displayed in. The following table shows the colors mapped to each pre-set constant for Outlook (desktop client). 
-
-### categoryColor values
+color is dependent on the Outlook client that the categories are being displayed in. The following table shows the **categoryColor** members mapped to each pre-set constant for Outlook (desktop client). 
 
 | Member   |Value    | Description
 |:---------|:--------|:-------------------
