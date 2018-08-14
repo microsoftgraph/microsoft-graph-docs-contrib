@@ -140,7 +140,7 @@ It is appropriate for scenarios that depend on [streamlining appointment booking
 
 ### App-only support
 
-**findmeetingtimes** supports only delegated scenarios which require a user to have signed in to the app. The app can read events in only the calendars that the signed-in user can access. This can include calendars that others users have delegated or shared with the signed-in user.
+**findmeetingtimes** supports only delegated scenarios which require a user to have signed in to the app. The app can read events in only the calendars that the signed-in user can access. This can include calendars that other users have delegated or shared with the signed-in user.
 
 **getSchedule** supports both delegated and app-only scenarios. In the latter, an administrator consents the app to access all calendars without a signed-in user.
 
