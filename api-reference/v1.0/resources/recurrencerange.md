@@ -53,5 +53,9 @@ Here is a JSON representation of the resource
   "description": "recurrenceRange resource",
   "keywords": "",
   "section": "documentation",
+  "suppressions": [
+      "Warning: /api-reference/v1.0/resources/recurrencerange.md:
+      Failed to parse any rows out of table with headers: |type property|Type of recurrence range|Description|Example|Required properties| |"
+  ],
   "tocPath": ""
 }-->
