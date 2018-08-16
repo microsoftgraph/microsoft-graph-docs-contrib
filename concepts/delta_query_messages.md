@@ -106,11 +106,12 @@ The first request specifies the following:
 
 <!-- {
   "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_1"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders/{folder-id}/messages/delta?$select=subject,sender,isRead HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$select=subject,sender,isRead HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -168,11 +169,12 @@ the same `$select` parameter as in the initial request, as the `skipToken` in th
 
 <!-- {
   "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_2"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders/{folder-id}/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$skiptoken=GwcBoTmPuoTQWfcsAbkYM HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -229,10 +231,11 @@ The third request continues to use the latest `nextLink` URL returned from the l
 
 <!-- {
   "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_3"
 }-->
 ```
-GET https://graph.microsoft.com/v1.0/me/mailFolders/{folder-id}/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AQMkADNkNAAAgEMAAAA/messages/delta?$skiptoken=GwcBoTmPKILK4jLH7mAd1lLU HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 
@@ -279,11 +282,12 @@ Your first request in the next round will look like the following, assuming you 
 
 <!-- {
   "blockType": "ignored",
+  "sampleKeys": ["AQMkADNkNAAAgEMAAAA"],
   "name": "get_messages_delta_next"
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailfolders/{folder-id}/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages/delta?$deltatoken=GwcBoTmPuoGNlgXgF1nyUNMXY HTTP/1.1
 Prefer: odata.maxpagesize=2
 ```
 

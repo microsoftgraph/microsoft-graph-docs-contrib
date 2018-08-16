@@ -107,8 +107,7 @@ Content-length: 254
       "parentFolderId": "parentFolderId-value",
       "childFolderCount": 99,
       "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "wellKnownName": "wellKnownName-value"
+      "totalItemCount": 99
     }
   ]
 }
@@ -126,9 +125,5 @@ Content-length: 254
   "description": "mailFolder: delta",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Warning: mailfolder_delta/container/wellKnownName:
-      Undocumented property 'wellKnownName' [String] was not expected on resource microsoft.graph.mailFolder."
-  ],
   "tocPath": ""
 }-->

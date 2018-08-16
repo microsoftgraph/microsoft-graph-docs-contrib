@@ -219,8 +219,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-
-## Path parameters
+## Parameters
 |Parameter|Type|Description|
 |:-----|:-----|:-----|
 |id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
@@ -253,10 +252,11 @@ extended property that has its **id** matching the string `String {66f5a359-4659
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGE1M2_bs88AACHsLqWAAA="],
   "name": "get_singlevaluelegacyextendedproperty_1"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages/{message-id}?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
 #### Response 1
 The response body includes all the properties of the specified message and extended property returned from the filter.
