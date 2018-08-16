@@ -14,6 +14,7 @@ Represents the current status of the [synchronizationJob](synchronization_synchr
 |lastExecution|[synchronizationTaskExecution](synchronization_synchronizationtaskexecution.md)|Details of the last execution of the job.|
 |lastSuccessfulExecution|[synchronizationTaskExecution](synchronization_synchronizationtaskexecution.md)|Details of the last execution of this job, which didn't have any errors.|
 |lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization_synchronizationtaskexecution.md)|Details of the last execution of the job, which exported objects into the target directory.|
+|progress|[synchronizationProgress](synchronization_progress.md) collection|Details of the progress of a job toward completion.|
 |quarantine|[synchronizationQuarantine](synchronization_quarantine.md)|If job is in quarantine, quarantine details.|
 |steadyStateFirstAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was first achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |steadyStateLastAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was last achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
@@ -52,6 +53,7 @@ The following is a JSON representation of the resource.
   "lastExecution": {"@odata.type": "microsoft.graph.synchronizationTaskExecution"},
   "lastSuccessfulExecution": {"@odata.type": "microsoft.graph.synchronizationTaskExecution"},
   "lastSuccessfulExecutionWithExports": {"@odata.type": "microsoft.graph.synchronizationTaskExecution"},
+  "progress": [{"@odata.type": "microsoft.graph.synchronizationProgress"}],
   "quarantine": {"@odata.type": "microsoft.graph.synchronizationQuarantine"},
   "steadyStateFirstAchievedTime": "String (timestamp)",
   "steadyStateLastAchievedTime": "String (timestamp)",
