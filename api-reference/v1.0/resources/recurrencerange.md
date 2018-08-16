@@ -17,10 +17,10 @@ You can specify the date range for a recurring event in one of 3 ways depending 
 Use the **type** property to specify the different types of **recurrenceRange**. Note the required properties for each type, as described in the following table.
 
 | type property  | Type of recurrence range | Description | Example | Required properties |
-|:-------|:---------------|:--------|:--------|:--------|:----------|
-|endDate |Range with end date | Event repeats on all the days that fit the corresponding recurrence pattern between the **startDate** and **endDate** inclusive. | Repeat event in the date range between June 1, 2017 and June 15, 2017. | **type**, **startDate**, **endDate** | 
-|noEnd   |Range without an end date | Event repeats on all the days that fit the corresponding recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017 indefinitely. | **type**, **startDate** |
-|numbered|Range with specific number of occurrences | Event repeats for the **numberOfOccurrences** based on the recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017, for 10 occurrences.  | **type**, **startDate**, **numberOfOccurrences** |
+|:-------|:---------------|:--------|:--------|:--------|
+|`endDate` |Range with end date | Event repeats on all the days that fit the corresponding recurrence pattern between the **startDate** and **endDate** inclusive. | Repeat event in the date range between June 1, 2017 and June 15, 2017. | **type**, **startDate**, **endDate** | 
+|`noEnd`  |Range without an end date | Event repeats on all the days that fit the corresponding recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017 indefinitely. | **type**, **startDate** |
+|`numbered`|Range with specific number of occurrences | Event repeats for the **numberOfOccurrences** based on the recurrence pattern beginning on the **startDate**. | Repeat event in the date range starting on June 1, 2017, for 10 occurrences.  | **type**, **startDate**, **numberOfOccurrences** |
 
 
 ## JSON representation
@@ -55,7 +55,7 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "suppressions": [
       "Warning: /api-reference/v1.0/resources/recurrencerange.md:
-      Failed to parse any rows out of table with headers: |type property|Type of recurrence range|Description|Example|Required properties| |"
+      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |"
   ],
   "tocPath": ""
 }-->
