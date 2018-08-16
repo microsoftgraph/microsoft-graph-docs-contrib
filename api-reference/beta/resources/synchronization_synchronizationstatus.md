@@ -14,14 +14,12 @@ Represents the current status of the [synchronizationJob](synchronization_synchr
 |lastExecution|[synchronizationTaskExecution](synchronization_synchronizationtaskexecution.md)|Details of the last execution of the job.|
 |lastSuccessfulExecution|[synchronizationTaskExecution](synchronization_synchronizationtaskexecution.md)|Details of the last execution of this job, which didn't have any errors.|
 |lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization_synchronizationtaskexecution.md)|Details of the last execution of the job, which exported objects into the target directory.|
-|progress|[synchronizationProgress](synchronization_progress.md) collection|Details of the progress of a job toward completion.|
+|progress|[synchronizationProgress](synchronization_synchronizationprogress.md) collection|Details of the progress of a job toward completion.|
 |quarantine|[synchronizationQuarantine](synchronization_quarantine.md)|If job is in quarantine, quarantine details.|
 |steadyStateFirstAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was first achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |steadyStateLastAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was last achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |synchronizedEntryCountByType|[stringKeyLongValuePair](synchronization_stringkeylongvaluepair.md) collection|Count of synchronized objects, listed by object type.|
 |troubleshootingUrl|String|In the event of an error, the URL with the troubleshooting steps for the issue.|
-
-<!-- The troubleshootingUrl property is missing a description -->
 
 ### Synchronization status code details
 
