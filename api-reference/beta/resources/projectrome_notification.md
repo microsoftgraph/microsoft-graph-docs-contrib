@@ -32,28 +32,28 @@ None.
 ## JSON representation
 Here is a JSON representation of the resource.
 ```json
-{
-    "targetHostName": "String",
+{	
+	"targetHostName": "String",
     "appNotificationId": "String",
-"expirationDateTime": "DateTimeOffset",
-"payload":  [
+	"expirationDateTime": "DateTimeOffset",
+	"payload":  [
 	{
 		"rawContent": "String",
 		"visual": [
 			{
 				"title": "String",
 				"body": "String"
-}
-],
-}
+			}
+		],
+	}
 ],
     "displayTimeToLive": "Int",
     "priority": "Enum",
-"groupName": "String",
-"targetPolicy":  [
+	"groupName": "String",
+	"targetPolicy":  [
 	{
 		"platformTypes": [{ "@odata.type": "Enum" }]
-}
+	}
 ],
 }
 ```
