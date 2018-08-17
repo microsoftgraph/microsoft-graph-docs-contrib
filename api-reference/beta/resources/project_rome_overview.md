@@ -2,9 +2,9 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is a Microsoft initiative to build a cross-device experiences platform. Project Rome enables an app on a local client or service to interact with apps and services on a remote host when the user signs in with the same Microsoft account that they use to sign in on the client device. This allows you to program cross-device and cross-platform experiences that are centered around user tasks rather than devices. 
+[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is a Microsoft initiative to build a platform that enables app developers to build great cross-device experiences. Project Rome enables different capabilities that connects different services and client endpoints when the user signs in with the same Microsoft account (MSA account or AAD school/work account). This allows you to implement cross-device and cross-platform experiences that are centered around user tasks rather than devices. 
 
-Two key components are exposed via Microsoft Graph to enable these experiences: devices and activities. 
+Three key capabilities are exposed via Microsoft Graph from Project Rome to help you enable great cross-device experiences – activities, devices, and notifications. 
 
 ## Activities
 
@@ -42,3 +42,12 @@ You can use the following Microsoft Graph APIs to communicate with other Windows
 - [List the user's devices](../api/user_list_devices.md)
 - [Send a command to a device](../api/send_device_command.md)
 - [Get command status](../api/get_device_command_status.md)
+
+## Notifications
+
+MS Graph notifications let you deliver and manage notifications across multiple endpoints owned by the same logged in user, in a human-centric, rather than a device-centric way. 
+
+You can use the notifications API in Microsoft Graph to publish a raw data notification or a direct visual notification. When a raw data notification is delivered to a device endpoint, you can then use the client-side SDK (Graph notifications SDK for Windows, Project Rome SDK for iOS and Android) to receive and manage notifications. When a direct visual notification is delivered to a device endpoint, it directly shows the platform-specific native notification to the user. 
+
+- [Create and publish a user-centric notification](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_post_notification)
+

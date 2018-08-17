@@ -2,9 +2,9 @@
 
 [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is a Microsoft initiative to build a cross-device experiences platform. Project Rome enables an app on a local client or service to interact with apps and services on a remote host when the user signs in with the same Microsoft account that they use to sign in on the client device. This allows you to program cross-device and cross-platform experiences that are centered around user tasks rather than devices.
 
-A key component is exposed via Microsoft Graph to enable these experiences: activities.
-
 ## Activities
+
+A key component is exposed via Microsoft Graph to enable these experiences: activities.
 
 Activities in Microsoft Graph enable you to drive user engagement with your apps across devices and platforms. An activity is the unit of user engagement, and consists of three components:
 
@@ -24,3 +24,7 @@ You can use the following Microsoft Graph APIs to create and retrieve user activ
 - [Delete an activity](../api/projectrome_delete_activity.md)
 - [Create or replace a history item](../api/projectrome_put_historyitem.md)
 - [Delete a history item](../api/projectrome_delete_historyitem.md)
+
+## Graph notifications 
+
+Graph notifications aim to enable your app to build a human-centric notification story improve your exisitng notification story allow you to target users. Graph notifications will take care of the heavy lifting, including mapping between users and endpoints, syncing notification state across users' different endpoints, and more. 
