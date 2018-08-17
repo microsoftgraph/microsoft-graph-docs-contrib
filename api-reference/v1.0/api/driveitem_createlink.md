@@ -195,7 +195,7 @@ Content-Type: application/json
   "link": {
     "type": "embed",
     "webHtml": "<IFRAME src=\"https://onedrive.live.com/...\"></IFRAME>",
-    "webUrl": "https://onedive.live.com/...",
+    "webUrl": "https://onedrive.live.com/...",
     "application": {
       "id": "1234",
       "displayName": "Sample Application"
