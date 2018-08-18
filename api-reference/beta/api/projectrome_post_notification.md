@@ -1,6 +1,6 @@
 # Create and publish a user-centric notification to Microsoft Graph
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-Create and publish a user-centric notification to Microsoft Graph. The notification gets stored inside notification feed store in the Graph, and then gets fanned-out to all app clients on different device endpoints the user is logged in on.  
+Create and publish a user-centric notification to Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -21,7 +21,7 @@ POST /me/notifications/}
 In the request body, supply a JSON representation of an [notification](../resources/projectrome_notification.md) object.
 
 ## Response
-If successful, this method returns the `201 Created` response code if the notification was successfully created and stored. 
+If successful, this method returns the `201 Created` response code that indicates that the notification was successfully created and stored. 
 ## Example
 #### Request
 The following is an example of the request.
