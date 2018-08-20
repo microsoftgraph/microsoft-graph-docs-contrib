@@ -45,7 +45,7 @@ You can use the following Microsoft Graph APIs to communicate with other Windows
 
 ## Notifications
 
-You can use the notifications APIs in Microsoft Graph to you deliver and manage notifications across multiple endpoints owned by the signed in user, in a human-centric, rather than a device-centric way. 
+You can use the notifications APIs in Microsoft Graph to deliver and manage notifications across multiple endpoints owned by the signed in user, in a human-centric, rather than a device-centric way. 
 
 You can publish a raw data notification or a direct visual notification. When a raw data notification is delivered to a device endpoint, you can then use the client SDK (Graph notifications SDK for Windows, Project Rome SDK for iOS and Android) to receive and manage notifications. When a direct visual notification is delivered to a device endpoint, it shows the platform-specific native notification to the user. 
 
