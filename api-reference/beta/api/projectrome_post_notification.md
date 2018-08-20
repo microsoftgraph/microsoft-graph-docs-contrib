@@ -18,7 +18,7 @@ POST /me/notifications/}
 |:----|:-----|:-----------|
 |Authorization | string |The authorization header is used to pass the credentials of the calling party. OAuth: Authorization: bearer <access_token> |
 ## Request body
-In the request body, supply a JSON representation of an [notification](../resources/projectrome_notification.md) object.
+In the request body, supply a JSON representation of a [notification](../resources/projectrome_notification.md) object.
 
 ## Response
 If successful, this method returns the `201 Created` response code that indicates that the notification was successfully created and stored. 
