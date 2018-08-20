@@ -5120,10 +5120,10 @@
           <Item text="syncMicrosoftStoreForBusinessApps action" url="/en-us/api-reference/beta/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps"/>
         </Item>
         <Item text="Device category" url="/en-us/api-reference/beta/resources/intune_shared_devicecategory">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicecategory"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_devicecategory"/>
-          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_shared_devicecategory"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicecategory"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicecategory_update"/>
         </Item>
         <Item text="Device enrollment type" url="/en-us/api-reference/beta/resources/intune_shared_deviceenrollmenttype"/>
         <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
@@ -5165,10 +5165,10 @@
         <Item text="VPP token account type" url="/en-us/api-reference/beta/resources/intune_shared_vpptokenaccounttype"/>
         <Item text="VPP token action failure reason" url="/en-us/api-reference/beta/resources/intune_shared_vpptokenactionfailurereason"/>
         <Item text="Windows domain join configuration" url="/en-us/api-reference/beta/resources/intune_shared_windowsdomainjoinconfiguration">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration"/>
-          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_delete"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_windowsdomainjoinconfiguration_update"/>
         </Item>
       </Item>
       <Item text="Telecom expenses" url="/en-us/api-reference/beta/resources/intune_tem_conceptual">

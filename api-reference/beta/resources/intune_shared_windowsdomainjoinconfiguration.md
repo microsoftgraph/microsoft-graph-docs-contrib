@@ -11,11 +11,11 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[List windowsDomainJoinConfigurations](../api/intune_shared_windowsdomainjoinconfiguration.md) objects.|
-|[Get windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration.md) object.|
-|[Create windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration.md) object.|
-|[Delete windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_delete.md).|
-|[Update windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration.md) object.|
+|[List windowsDomainJoinConfigurations](../api/intune_shared_windowsdomainjoinconfiguration_list.md)|
+|[Get windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_get.md)|
+|[Create windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_create.md)|
+|[Delete windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_delete.md)|
+|[Update windowsDomainJoinConfiguration](../api/intune_shared_windowsdomainjoinconfiguration_update.md)|
 
 ## Properties
 |Property|Type|Description|
