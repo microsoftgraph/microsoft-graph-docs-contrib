@@ -122,7 +122,7 @@ This resource supports:
 
 ### Legal age group property definitions
 
-This section explains how the three age group properties (`legalAgeGroup`, `ageGroup` and `consentProvidedForMinor`) are used by Azure AD administrators and enterprise application developers to meet age-related regulations.
+This section explains how the three age group properties (`legalAgeGroupClassification`, `ageGroup` and `consentProvidedForMinor`) are used by Azure AD administrators and enterprise application developers to meet age-related regulations.
 
 For example: Cameron is administrator of a directory for an elementary school in Holyport in the United Kingdom. At the beginning of the school year he uses the admissions paperwork to obtain consent from the minor's parents based on the age-related regulations of the United Kingdom. The consent obtained from the parent allows the minor's account to be used by Holyport school and Microsoft apps. Cameron then creates all the accounts and sets ageGroup to "minor" and consentProvidedForMinor to "granted". Applications used by his students are then able to suppress features that are not suitable for minors.
 
@@ -238,12 +238,14 @@ Here is a JSON representation of the resource
 {
   "aboutMe": "string",
   "accountEnabled": true,
+  "ageGroup": "string",
   "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "birthday": "String (timestamp)",
   "businessPhones": ["string"],
   "city": "string",
   "companyName": "string",
+  "consentProvidedForMinor": "string",
   "country": "string",
   "deletedDateTime": "String (timestamp)",
   "department": "string",
@@ -253,6 +255,7 @@ Here is a JSON representation of the resource
   "id": "string (identifier)",
   "interests": ["string"],
   "jobTitle": "string",
+  "legalAgeGroupClassification": "string",
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",
