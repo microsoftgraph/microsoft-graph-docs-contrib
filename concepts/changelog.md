@@ -10,7 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added **progress** property to [sychronizationStatus](../api-reference/beta/resources/synchronization_status.md) to permit clients to monitor the progress of a synchronization job.|
+| Addition | Beta | Added **progress** property to [sychronizationStatus](../api-reference/beta/resources/synchronization_synchronizationstatus.md) to permit clients to monitor the progress of a synchronization job.|
 
 ## July 2018
 
