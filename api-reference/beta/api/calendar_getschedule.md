@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the availability information for a collection of users, distributions lists, or resources, for a specified time period.
+Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -54,12 +54,12 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
 {        
-    "Schedules": ["AdeleV@contoso.onmicrosoft.com", "AlexW@contoso.OnMicrosoft.com"],
-    "StartTime": {
+    "schedules": ["AdeleV@contoso.onmicrosoft.com", "AlexW@contoso.OnMicrosoft.com"],
+    "startTime": {
         "dateTime": "2018-08-06T09:00:00",
         "timeZone": "Pacific Standard Time"
     },
-    "EndTime": {
+    "endTime": {
         "dateTime": "2018-08-06T18:00:00",
         "timeZone": "Pacific Standard Time"
     },
