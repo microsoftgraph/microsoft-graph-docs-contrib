@@ -4,11 +4,9 @@
 
 In the Azure AD [access reviews](../resources/accessreviews_root.md) feature, retrieve an [accessReview](../resources/accessreview.md) object.  
 
-To then retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview_listreviewers.md) API. To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview_listdecisions.md) API, or the [list my accessReview decisions](accessreview_listmydecisions.md) API.
+To retrieve the reviewers of the access review, use the [list accessReview reviewers](accessreview_listreviewers.md) API. To retrieve the decisions of the access review, use the [list accessReview decisions](accessreview_listdecisions.md) API, or the [list my accessReview decisions](accessreview_listmydecisions.md) API.
 
 If this is a recurring access review, then use the `instances` relationship to retrieve an [accessReview](../resources/accessreview.md) collection of the past, current and future instances of the access review.
-
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -22,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews('{reviewId}')$select=settings
+GET /accessReviews('{reviewId}')
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -43,7 +41,7 @@ If successful, this method returns a `200, OK` response code and an [accessRevie
   "name": "get_accessReview"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/accessReviews({'2b83cc42-09db-46f6-8c6e-16fec466a82d'})
+GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')
 ```
 
 ##### Response
