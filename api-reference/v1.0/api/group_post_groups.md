@@ -60,10 +60,6 @@ The following table shows the properties for owners and members of an Office 365
 
 When specifying the owners and / or members for an Office 365 group use the following syntax to perform an OData bind:
 
-<!-- {
-  "blockType": "owners",
-  "name": "specify_owners_or_members"
-}-->
 ```
 {
   "owners@odata.bind":  [
