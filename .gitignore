@@ -1,7 +1,5 @@
 # Visual Studio Code Settings
 .vscode/
-# Visual Studio Code Settings
-.vscode/
 
 # Test-Docs.ps1 related files
 nuget.exe
