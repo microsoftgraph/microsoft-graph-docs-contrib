@@ -31,7 +31,6 @@ If a Microsoft Teams tab or bot app is not the ideal way to complete your scenar
 |Messaging extensions|Allow users to query and share enhanced cards in conversations.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
 
-
 ### Create multiple teams and channels
 
 Allow your customers to create new [teams](../api-reference/beta/resources/team.md) and [channels](../api-reference/beta/resources/channel.md) linked to your app. Make creating large numbers of teams and populating them with users and channels easy by using the Microsoft Teams API.
@@ -49,5 +48,3 @@ When the business issue is resolved and you no longer need the virtual team, use
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 - Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
 - Get a jump-start with [sample code](https://github.com/OfficeDev/microsoft-teams-sample-graph).
-
-
