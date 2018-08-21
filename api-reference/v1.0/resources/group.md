@@ -267,6 +267,7 @@ The following is a JSON representation of the resource.
   "mailEnabled": true,
   "mailNickname": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "proxyAddresses": ["string"],
