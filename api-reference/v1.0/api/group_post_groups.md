@@ -47,6 +47,39 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 | Dynamic | "DynamicMembership" |
 | Security | Do not set. |
 
+Optionally specify the **owners** and **members** properties if you're creating an Office 365 group.
+
+### owners and members options
+
+The following table shows the properties for owners and members of an Office 365 Group at creation time.
+
+| Property | Type | Description|
+|:---------------|:--------|:----------|
+| owners | string collection | The owners for the group. |
+| members | string collection | The members for the group. |
+
+When specifying the owners and / or members for an Office 365 group use the following syntax to perform an OData bind:
+
+<!-- {
+  "blockType": "owners",
+  "name": "specify_owners_or_members"
+}-->
+```
+{
+  "owners@odata.bind":  [
+    "https://graph.microsoft.com/v1.0/users/{id1}",
+    "https://graph.microsoft.com/v1.0/users/{id2}",
+  ],
+  "members@odata.bind":  [
+    "https://graph.microsoft.com/v1.0/users/{id1}",
+    "https://graph.microsoft.com/v1.0/users/{id2}",
+  ]
+}
+
+```
+
+>**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
+
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
 ## Response
