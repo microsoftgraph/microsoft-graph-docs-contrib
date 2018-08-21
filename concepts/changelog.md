@@ -7,6 +7,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ## August 2018
 
 ### Microsoft Intune APIs
+
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added new entities:<br/>[advancedThreatProtectionOnboardingDeviceSettingState](../api-reference/beta/resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md)<br/>[advancedThreatProtectionOnboardingStateSummary](../api-reference/beta/resources/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary.md)<br/>[depEnrollmentBaseProfile](../api-reference/beta/resources/intune_enrollment_depenrollmentbaseprofile.md)<br/>[depEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depenrollmentprofile.md)<br/>[depIOSEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depiosenrollmentprofile.md)<br/>[depMacOSEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depmacosenrollmentprofile.md)<br/>[enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md)<br/>[importedAppleDeviceIdentity](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentity.md)<br/>[importedAppleDeviceIdentityResult](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentityresult.md)<br/>[importedWindowsAutopilotDeviceIdentityUpload](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)<br/>[roleScopeTag](../api-reference/beta/resources/intune_rbac_rolescopetag.md)<br/>[windowsIdentityProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsidentityprotectionconfiguration.md)<br/>|
@@ -80,11 +81,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added  isMultipleDataLocationsForServicesEnabled property to [Organization](../api-reference/beta/resources/organization.md) resource that allows apps to verify that tenant is enabled for Multi-Geo capabilities. Added preferredDataLocation property to [user](../api-reference/beta/resources/user.md) and [group](../api-reference/beta/resources/group.md) resources that allow setting preferred data location for a user and group.|
 
-### Microsoft Teams APIs
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
 |Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md) resource|
 |Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
 |Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
@@ -93,6 +90,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added [Get channel message API](../api-reference/beta/api/channel_get_message.md) |
 |Addition|beta|Added [Get all message replies API](../api-reference/beta/api/channel_list_messagereplies.md) |
 |Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
+
+### Synchronization APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added **progress** property to [sychronizationStatus](../api-reference/beta/resources/synchronization_synchronizationstatus.md) to permit clients to monitor the progress of a synchronization job.|
 
 
 ### Application and servicePrincipal API changes
@@ -104,7 +107,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Microsoft Teams APIs
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition|beta| Added application permissions support to [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
+|Addition|beta|Added application permissions support to [/users/{id}/joinedTeams](../api-reference/beta/api/user_list_joinedteams.md) |
+|Addition|beta|Added [Get all channel messages API](../api-reference/beta/api/channel_list_messages.md) |
+|Addition|beta|Added [Get channel message API](../api-reference/beta/api/channel_get_message.md) |
+|Addition|beta|Added [Get all message replies API](../api-reference/beta/api/channel_list_messagereplies.md) |
+|Addition|beta|Added [Get reply to a message API](../api-reference/beta/api/channel_get_messagereply.md) |
+|Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
+|Addition|beta|Added [Chat reaction](../api-reference/beta/resources/chatattachment.md) resource type|
+|Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md)) resource|
 |Deletion|beta|Removed DELETE /groups/{id}/team/channels/{id}, use DELETE /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed GET /groups/{id}/team/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team/channels/{id}, use  PATCH /teams/{id}/channels/{id} instead. |
@@ -144,7 +155,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allow a client app to create, read, update and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
+| Addition | All | New application permissions _Application.ReadWrite.All_ and _Application.ReadWrite.OwnedBy_ that allows a client app to create, read, update, and delete applications and service principals as described in the [permissions topic](permissions_reference.md#application-resource-permissions). |
+| Addition | v1.0 | Added **ageGroup**, **legalAgeGroupClassification**, and **ConsentRequiredForMinor** properties to [user](../api-reference/v1.0/resources/user.md) resource
 
 ### Microsoft Intune APIs
 
