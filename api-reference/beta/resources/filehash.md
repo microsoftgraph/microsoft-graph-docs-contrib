@@ -2,11 +2,11 @@
 
 Contains stateful information about file hashes (cryptographic and location-sensitive).
 
-
 ## Properties
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hashType|String|File hash type. Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
+|hashType|[fileHashType](filehashtypeenumtype.md) enum|File hash type. Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
 |hashValue|String|Value of the file hash.|
 
 ## JSON representation
@@ -23,7 +23,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "hashType": "String",
+  "hashType": "@odata.type: microsoft.graph.fileHashType",
   "hashValue": "String"
 }
 

@@ -15,5 +15,5 @@ Enum for file hash types.
 |authenticodeHash256|4| AuthenticodeHash256 hash type.|
 |lsHash|5| LsHash hash type.|
 |ctph|6| CTPH hash type.|
-|peSha1|7| peSha1 hash type.|
-|peSha256|8| peSha256 hash type.|
+|peSha1|7| PESHA1 hash type.|
+|peSha256|8| PESHA256 hash type.|
