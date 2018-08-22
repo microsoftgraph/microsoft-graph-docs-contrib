@@ -25,6 +25,6 @@ You can use the following Microsoft Graph APIs to create and retrieve user activ
 - [Create or replace a history item](../api/projectrome_put_historyitem.md)
 - [Delete a history item](../api/projectrome_delete_historyitem.md)
 
-## Graph notifications 
+## Notifications 
 
-Graph notifications aim to enable your app to build a human-centric notification story improve your exisitng notification story allow you to target users. Graph notifications will take care of the heavy lifting, including mapping between users and endpoints, syncing notification state across users' different endpoints, and more. 
+You can use the notifications API in Microsoft Graph to enable your app to send human-centric notifications, or to improve your exisitng notification strategy to target users. The notifications API handles the mapping between users and endpoints, syncs notification state across users' devices, and more. 
