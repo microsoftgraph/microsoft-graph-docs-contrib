@@ -75,6 +75,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **wpa2Personal** and **wpa2Enterprise** members to the [wiFiSecurityType](../api-reference/beta/resources/intune_deviceconfig_wifisecuritytype.md) enum type|
 |Addition|beta|Added the **enterpriseUnwantedSoftware**, **ransom** and **hipsRule** members to the [windowsMalwareCategory](../api-reference/beta/resources/intune_devices_windowsmalwarecategory.md) enum type|
 
+### Security APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta       | Added **registryKeyStates** property to [alert](../api-reference/beta/resources/alert.md ). |
+|Deletion|beta| Removed **riskScore** and **type** properties from [alert](../api-reference/beta/resources/alert.md ). |
+| Addition        | beta       | Added the following resource types:<br/> [fileHash](../api-reference/beta/resources/filehash.md) <br/> [registryKeyStates](../api-reference/beta/resources/registrykeystate.md) |
+| Addition        | beta       | Added the following enums: <br/> [fileHashType](../api-reference/beta/resources/filehashtypeenumtype.md) <br/> [emailRole](../api-reference/beta/resources/emailroleenumtype.md) |
+|Deletion|beta| Removed the following enum types: <br/>**alertType** |
+| Addition        | beta       | Added **fileHash** property to [process](../api-reference/beta/resources/process.md ).|
+|Deletion|beta| Removed **authenticodeHash256** and **sha256** properties from [process](../api-reference/beta/resources/process.md ). |
+
+
 ## July 2018
 
 ### Directory APIs
