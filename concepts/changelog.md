@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2018
 
+### Delta query
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview) capability for the following entities in Azure AD:<br/>[application](../api-reference/beta/api/application_delta.md)<br/>[directoryRole](../api-reference/beta/api/directoryRole_delta.md)<br/>[servicePrincipal](../api-reference/beta/api/serviceprincipal_delta.md) |
+
 ### Microsoft Intune APIs
 
 |Change type|Version|Description|
