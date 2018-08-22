@@ -81,11 +81,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | beta       | Added **registryKeyStates** property to [alert](../api-reference/beta/resources/alert.md ). |
 |Deletion|beta| Removed **riskScore** and **type** properties from [alert](../api-reference/beta/resources/alert.md ). |
-| Addition        | beta       | Added the following resource types:<br/> [fileHash](../api-reference/beta/resources/filehash.md) <br/> [registryKeyStates](../api-reference/beta/resources/registrykeystate.md) |
-| Addition        | beta       | Added the following enums: <br/> [fileHashType](../api-reference/beta/resources/filehashtypeenumtype.md) <br/> [emailRole](../api-reference/beta/resources/emailroleenumtype.md) |
+| Addition        | beta       | Added the following resource types:<br/> [fileHash](../api-reference/beta/resources/filehash.md) <br/> [registryKeyState](../api-reference/beta/resources/registrykeystate.md) |
+| Addition        | beta       | Added the following enums:<br/> [emailRole](../api-reference/beta/resources/emailroleenumtype.md) <br/> [fileHashType](../api-reference/beta/resources/filehashtypeenumtype.md) <br/> [registryHive](../api-reference/beta/resources/registryhiveenumtype.md)  <br/> [registryOperation](../api-reference/beta/resources/registryoperationenumtype.md) <br/> [registryValueType](../api-reference/beta/resources/registryvaluetypeenumtype.md)|
 |Deletion|beta| Removed the following enum types: <br/>**alertType** |
 | Addition        | beta       | Added **fileHash** property to [process](../api-reference/beta/resources/process.md ).|
 |Deletion|beta| Removed **authenticodeHash256** and **sha256** properties from [process](../api-reference/beta/resources/process.md ). |
+| Addition        | beta       | Added **emailRole**, **isVpn**, and **logonIp** properties to [userSecurityState](../api-reference/beta/resources/usersecuritystate.md).|
+|Change|beta| Changed **logonIpAddress** property to **logonIp** in [userSecurityState](../api-reference/beta/resources/usersecuritystate.md). |
+| Addition        | beta       | Added **wasRunning** property to [vulnerabilityState](../api-reference/beta/resources/vulnerabilitystate.md).|
+|Deletion|beta| Removed **name** property from [vulnerabilityState](../api-reference/beta/resources/vulnerabilitystate.md). |
 
 
 ## July 2018
