@@ -8,6 +8,7 @@ Contains stateful information about the user account.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
+|aadUserId|String|AAD User object identifier (GUID) - represents the physical/multi-account user entity.|
 |accountName|String|Account name of user account (without Active Directory domain or DNS domain) - (also called `mailNickName`).|
 |domainName|String|NetBIOS/Active Directory domain of user account (that is, domain\account format).|
 |emailRole|[emailRole](emailroleenumtype.md) enum|For email-related alerts - user account's email 'role'. Possible values are: `unknown`, `sender`, `recipient`.|
