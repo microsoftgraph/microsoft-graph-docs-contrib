@@ -93,7 +93,7 @@ The following is a JSON representation of the resource.
   "processes": [{"@odata.type": "microsoft.graph.process"}],
   "recommendedActions": ["String"],
   "registryKeyStates": [{"@odata.type": "microsoft.graph.registryKeyState"}],
-  "severity": "String",
+  "severity": "@odata.type: microsoft.graph.alertSeverity",
   "sourceMaterials": ["String"],
   "status": "@odata.type: microsoft.graph.alertStatus",
   "tags": ["String"],
