@@ -5,12 +5,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
 ## August 2018
-### Microsoft Graph Notifications API
+### Project Rome notifications API
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition          | Beta        | Add [notification](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/projectrome_notification) resource type |
-| Addition          | Beta        | Enabled creating and publishing a user-centric notifications using [Post notification API] (https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_post_notification) |
+| Addition          | Beta        | Added the [notification](https://graph.microsoft.io/en-us/docs/api-reference/beta/resources/projectrome_notification) resource type. |
+| Addition          | Beta        | Added the [Create and publish notification] (https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/projectrome_post_notification).|
 
 
 ## July 2018
