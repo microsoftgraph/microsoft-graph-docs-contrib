@@ -110,7 +110,7 @@ Security alerts are highly privileged data typically viewable only by security r
 
 1. Download **Splunk Enterprise** or use an existing Splunk Enterprise installation. **Note**: This integration is not tested with cloud base Splunk. Cloud base Splunk may require different instructions.
 2. Download and install the [Azure Monitor Add-on for Splunk](https://github.com/Microsoft/AzureMonitorAddonForSplunk). For detailed installation instructions, see [Installation](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation). Be sure to use the plugin **version 1.2.9 or higher**.
-3. After the Azure Monitor Addon has successfully installed, Follow the steps in the [configuration wiki](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration) to configure Splunk. 
+3. After the Azure Monitor Addon has successfully installed, follow the steps in the [configuration wiki](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration) to configure Splunk. 
 4. 
 5. One additional step is necessary because the Azure Monitor Add-on for Splunk was created before security API alerts were available in Azure Monitor integration. Two Splunk configuration files need to be changed to allow Splunk to understand the new log category used by the security API for Azure Monitor, and the name of the event hub that you configured for your organization’s security alerts.
 
