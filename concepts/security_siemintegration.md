@@ -184,9 +184,9 @@ Once you setup Azure Monitor Splunk plugin, your Splunk instance will start retr
  
 You can navigate to apps -> Search & Reporting app in Splunk to search for alerts, to create dashboards, or to set Splunk alerts on your search. 
  
-**Examples**: <br/>
+**Examples**:<br/>
 Try searching Security Graph alerts: 
-Type in sourcetype="amdl:securitygraph:alert" to search bar to get all alerts coming through security graph. On the right hand side you will see top level properties of Azure Monitor log where Security Graph alert is under properties field. <br/>
+Type in sourcetype="amdl:securitygraph:alert" to search bar to get all alerts coming through security graph. On the right hand side you will see top level properties of Azure Monitor log where Security Graph alert is under properties field.<br/>
 On the left pane you will see selected fields and interesting fields. You can use selected fields to create dashboards or Splunk alerts on them. You can add or remove selected fields by right clicking on a field as needed.  
 As an example we choose `eventDatetime`, `severity`, `status`, and `provider` fields as selected. <br/>
 You can restrict your search as needed. Here we select to see only high severity alerts from Azure Security Center. For more advance search terms, please see [splunk search tutorials](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).  
