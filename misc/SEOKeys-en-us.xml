@@ -30,6 +30,7 @@
   <Item text="Groups" url="/en-us/concepts/office365-groups-concept-overview" />
   <Item text="Calendar" ProdTag="Outlook" url="/en-us/concepts/outlook-calendar-concept-overview" >
 	  <Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
+	  <Item text="Get free/busy schedule" url="/en-us/concepts/outlook-get-free-busy-schedule" />
 	  <Item text="Schedule recurring events" url="/en-us/concepts/outlook-schedule-recurring-events" />
   </Item>
   <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview" >
@@ -172,6 +173,7 @@
       <Item text="Update mailbox settings" url="/en-us/api-reference/v1.0/api/user_update_mailboxsettings" SEODescription="" />
 	  <Item text="List rules" url="/en-us/api-reference/v1.0/api/mailfolder_list_messagerules" />
 	  <Item text="Create rule" url="/en-us/api-reference/v1.0/api/mailfolder_post_messagerules" />
+	  <Item text="Get MailTips" url="/en-us/api-reference/v1.0/api/user_getmailtips" />
     </Item>
     <Item text="Notes" url="/en-us/api-reference/v1.0/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
       <Item text="List notebooks" url="/en-us/api-reference/v1.0/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
@@ -2203,7 +2205,7 @@
         <Item text="Create calendar group" url="/en-us/api-reference/beta/api/user_post_calendargroups" SEOKeyword="Create CalendarGroup, Microsoft Graph API, Users API" SEODescription="Use this API to create a new CalendarGroup." />
         <Item text="List calendar view" url="/en-us/api-reference/beta/api/calendar_list_calendarview" SEOKeyword="List calendarView, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
         <Item text="Reminder view" url="/en-us/api-reference/beta/api/user_reminderview" SEOKeyword="user: reminderView, Microsoft Graph API, user API" SEODescription="" />
-        <Item text="Find meeting times" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="user: meeting times, Microsoft Graph API, user API" SEODescription="" />
+		<Item text="Get free/busy schedule" url="/en-us/api-reference/beta/api/calendar_getschedule" />
         <Item text="Find room lists" url="/en-us/api-reference/beta/api/user_findroomlists" />
         <Item text="Find rooms" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>
@@ -2461,6 +2463,7 @@
 		<Item text="List events" url="/en-us/api-reference/beta/api/calendar_list_events" SEOKeyword="List events, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
          <Item text="Create Event" url="/en-us/api-reference/beta/api/calendar_post_events" SEOKeyword="Create Event, Microsoft Graph API, calendar API" SEODescription="Use this API to create a new Event." />
 		<Item text="Find meeting times" url="/en-us/api-reference/beta/api/user_findmeetingtimes" SEOKeyword="Meeting times, Microsoft Graph API, Outlook Calendar API" SEODescription="Retrieve a list of event objects." />
+		<Item text="Get free/busy schedule" url="/en-us/api-reference/beta/api/calendar_getschedule" />
 		<Item text="Find room lists" url="/en-us/api-reference/beta/api/user_findroomlists" />
 		<Item text="Find rooms" url="/en-us/api-reference/beta/api/user_findrooms" />
       </Item>
