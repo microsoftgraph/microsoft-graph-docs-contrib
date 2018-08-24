@@ -108,7 +108,7 @@ Security alerts are highly privileged data typically viewable only by security r
 
 ## Step 3: Download and install the Azure Monitor Add-on for Splunk which will allow Splunk to consume security alerts
 
-1. Download **Splunk Enterprise** or use an existing Splunk Enterprise installation. **Note**: This integration is not tested with cloud base Splunk. Cloud base Splunk may require different instructions.
+1. Download **Splunk Enterprise** or use an existing Splunk Enterprise installation. **Note**: This integration was not tested with cloud based Splunk. For a Splunk cloud instance, please refer to [Azure function for splunk](https://github.com/Microsoft/AzureFunctionforSplunkVS).
 2. Download and install the [Azure Monitor Add-on for Splunk](https://github.com/Microsoft/AzureMonitorAddonForSplunk). For detailed installation instructions, see [Installation](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation). Be sure to use the plugin **version 1.2.9 or higher**.
 3. After the Azure Monitor Addon has successfully installed, follow the steps in the [configuration wiki](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration-of-Splunk ) to configure Splunk.
 4. As indicated in the Add-on installation instructions, the add-on will work by doing a disable/enable cycle on the Manage Apps page in Splunk Web. Or, you can restart Splunk.
@@ -177,3 +177,34 @@ The last step to complete the setup process is to configure Splunk data inputs t
     ![azure monitor fields](../concepts/images/azure-monitor-fields.png)
 
 3. Select **Next** and begin searching your organization’s security alerts ingested from Azure Monitor.
+
+## (Optional) Use Splunk Search to explore data
+
+Once you setup Azure Monitor Splunk plugin, your Splunk instance will start retrieving events from the event hub you configured. By default, it will index each and every property of the Security Graph Alert Schema.
+ 
+You can navigate to apps -> Search & Reporting app in Splunk to search for alerts, to create dashboards, or to set Splunk alerts on your search. 
+ 
+Examples: 
+Try searching Security Graph alerts: 
+Type in sourcetype="amdl:securitygraph:alert" to search bar to get all alerts coming through security graph. On the right hand side you will see top level properties of Azure Monitor log where Security Graph alert is under properties field. 
+On the left pane you will see selected fields and interesting fields. You can use selected fields to create dashboards or Splunk alerts on them. You can add or remove selected fields by right clicking on a field as needed.  
+As an example we choose `eventDatetime`, `severity`, `status`, and `provider` fields as selected. 
+You can restrict your search as needed. Here we select to see only high severity alerts from Azure Security Center. For more advance search terms, please see splunk search tutorials.  
+
+ ![splunk_search_query](../concepts/images/splunk_search_query.png)
+> Search query: `sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
+
+Multiple actions available on search results on "Save As" menu option on top right: You can create Report, Dashboard Panel, or Alert based on your search filter.
+  
+< Missing screen shot >  
+
+As an example you can create a dashboard with event stream based on the query:
+You can add drilldown link to each event to further access the details on Microsoft Graph site. Please see [Splunk drilldown documentation](http://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro).
+
+ ![splunk_search_results](../concepts/images/splunk_search_results.png)
+
+Or you can create a dashboard as a timeline chart: 
+
+< Redo screen shot >
+
+You can follow [Splunk Search & Report tutorial](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
