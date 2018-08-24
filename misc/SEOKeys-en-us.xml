@@ -5981,7 +5981,7 @@
         <Item text="List user's recent plans" url="/en-us/api-reference/beta/api/planneruser_list_recentplans" SEOKeyword="List recent plans, Microsoft Graph API, user API" SEODescription="Retrieve Planner plans recently viewed by the user." />
         <Item text="List user's assigned tasks" url="/en-us/api-reference/beta/api/planneruser_list_tasks" SEOKeyword="List plans, Microsoft Graph API, user API" SEODescription="Retrieve Planner tasks assigned to the user." />
 	  </Item>
-	  <Item text="Get delta" url="/en-us/api-reference/beta/resources/planneruser_list_delta" />
+	  <Item text="Get delta" url="/en-us/api-reference/beta/api/planneruser_list_delta" />
 	  <Item text="Assigned-to task board format" url="/en-us/api-reference/beta/resources/plannerassignedtotaskboardtaskformat" >
         <Item text="Get assigned to task board format" url="/en-us/api-reference/beta/api/plannerassignedtotaskboardtaskformat_get" />
         <Item text="Update assigned to task board format" url="/en-us/api-reference/beta/api/plannerassignedtotaskboardtaskformat_update" />
