@@ -110,20 +110,7 @@ Security alerts are highly privileged data typically viewable only by security r
 
 1. Download **Splunk Enterprise** or use an existing Splunk Enterprise installation. **Note**: This integration is not tested with cloud base Splunk. Cloud base Splunk may require different instructions.
 2. Download and install the [Azure Monitor Add-on for Splunk](https://github.com/Microsoft/AzureMonitorAddonForSplunk). For detailed installation instructions, see [Installation](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Installation). Be sure to use the plugin **version 1.2.9 or higher**.
-3. After the Azure Monitor Addon has successfully installed, follow the steps in the [configuration wiki](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration) to configure Splunk. 
-4. 
-5. One additional step is necessary because the Azure Monitor Add-on for Splunk was created before security API alerts were available in Azure Monitor integration. Two Splunk configuration files need to be changed to allow Splunk to understand the new log category used by the security API for Azure Monitor, and the name of the event hub that you configured for your organization’s security alerts.
-
-    a.  Open the file **logCategories.json** from the path                 **\etc\apps\TA-Azure_Monitor\bin\app** within your Splunk installation directory.
-    Append the following line to the list of standard log categories:  
-    `“MICROSOFT.SECURITYGRAPH/ALERT”: “_json”`  
-    This tells the Azure Monitor Addon for Splunk the log type is to be treated as JSON.
-
-    b. Open the file **hubs.json** from the path **\etc\apps\TA-Azure_Monitor\bin\app** within your Splunk installation directory.  
-    Append the following line to the list of standard event hubs:  
-    `“insights-logs-alert”: “tenantId”`  
-    This tells the Azure Monitor Add-on for Splunk the name of the event hub and indicates that the resource ID is the Azure AD tenant ID because these security alerts are a tenant-level resource. Be sure to change the event hub name (insights-logs-alert) here if you chose a custom name for your event hub during provisioning earlier.
-
+3. After the Azure Monitor Addon has successfully installed, follow the steps in the [configuration wiki](https://github.com/Microsoft/AzureMonitorAddonForSplunk/wiki/Configuration-of-Splunk ) to configure Splunk.
 4. As indicated in the Add-on installation instructions, the add-on will work by doing a disable/enable cycle on the Manage Apps page in Splunk Web. Or, you can restart Splunk.
 
 ## Step 4: Register an application with your tenant Azure Active Directory which Splunk will use to read from the event hub
