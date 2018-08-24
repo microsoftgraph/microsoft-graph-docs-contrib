@@ -123,7 +123,7 @@
 	  <Item text="Create user" url="/en-us/api-reference/v1.0/api/user_post_users" SEOKeyword="Create User, Microsoft Graph API, user API" SEODescription="Use this API to create a new User." />
 	  <Item text="Update user" url="/en-us/api-reference/v1.0/api/user_update" SEOKeyword="Update user, Microsoft Graph API, user API" SEODescription="Update the properties of user object." />
 	  <Item text="Delete user" url="/en-us/api-reference/v1.0/api/user_delete" SEOKeyword="Delete user, Microsoft Graph API, user API" SEODescription="Delete user." /> 
-      <Item text="Get delta" url="/en-us/api-reference/beta/api/user_delta" />
+      <Item text="Get delta" url="/en-us/api-reference/v1.0/api/user_delta" />
     </Item>
     <Item text="Calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar API">
       <Item text="List events" url="/en-us/api-reference/v1.0/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
