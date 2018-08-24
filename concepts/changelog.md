@@ -108,7 +108,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-
 |Change|beta|Updated [chatmessage](../api-reference/beta/resources/chatmessage.md) resource|
 |Addition|beta|Added [Chat attachment](../api-reference/beta/resources/chatattachment.md) resource type|
 |Addition|beta|Added [Chat mention](../api-reference/beta/resources/chatattachment.md) resource type|
