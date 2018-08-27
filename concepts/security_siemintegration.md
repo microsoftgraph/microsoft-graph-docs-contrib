@@ -1,6 +1,6 @@
 # Integrate security API alerts with your SIEM using Azure Monitor
 
-The security API in Microsoft Graph provides the ability to manage security alerts from many different security products, known as providers, through a single REST endpoint. Some organizations might already ingest Azure specific log data through Azure Monitor into SIEM solutions. To facilitate ease of integration, the security alerts available through the REST API are also made available through Azure Monitor. If your organization has already configured Azure Monitor integration with your SIEM solution, you can now easily add your organization’s security alerts to the data available through Azure Monitor. This article will guide you through the steps to enable this integration.
+The security API in Microsoft Graph provides the ability to manage security alerts from many different security products, known as providers, through a single REST endpoint. Some organizations might already ingest Azure-specific log data through Azure Monitor into SIEM solutions. To facilitate ease of integration, the security alerts available through the REST API are also made available through Azure Monitor. If your organization has already configured Azure Monitor integration with your SIEM solution, you can now easily add your organization’s security alerts to the data available through Azure Monitor. This article will guide you through the steps to enable this integration.
 
 Azure Monitor supports several different SIEM connectors from various vendors. For a non-exhaustive list of SIEM tools with connectors for Azure Monitor data, see the article [Send monitoring data to an event hub](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitor-stream-monitoring-data-event-hubs#what-can-i-do-with-the-monitoring-data-being-sent-to-my-event-hub). The instructions in Step 1 and Step 2 of this article are relevant for all Azure Monitor connectors supporting consumption via event hub. This article describes the end-to-end configuration for the Splunk SIEM connector.
 
@@ -180,31 +180,30 @@ The last step to complete the setup process is to configure Splunk data inputs t
 
 ## (Optional) Use Splunk Search to explore data
 
-Once you setup Azure Monitor Splunk plugin, your Splunk instance will start retrieving events from the event hub you configured. By default, it will index each and every property of the Security Graph Alert Schema.
- 
-You can navigate to apps -> Search & Reporting app in Splunk to search for alerts, to create dashboards, or to set Splunk alerts on your search. 
- 
+Once you have setup the Azure Monitor Splunk plugin, your Splunk instance will start retrieving events from the configured event hub. By default, splunk will index each property of the Security Graph Alert Schema to allow searching.
+
+To search for secuirty API alerts, to create dashboards, or to set Splunk alerts on your search query, navigate to apps -> Search & Reporting app in Splunk.
+
 **Examples**:<br/>
-Try searching Security Graph alerts: 
-Type in sourcetype="amdl:securitygraph:alert" to search bar to get all alerts coming through security graph. On the right hand side you will see top level properties of Azure Monitor log where Security Graph alert is under properties field.<br/>
-On the left pane you will see selected fields and interesting fields. You can use selected fields to create dashboards or Splunk alerts on them. You can add or remove selected fields by right clicking on a field as needed.  
-As an example we choose `eventDatetime`, `severity`, `status`, and `provider` fields as selected. <br/>
-You can restrict your search as needed. Here we select to see only high severity alerts from Azure Security Center. For more advance search terms, please see [splunk search tutorials](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).  
+Try searching Graph Security alerts:
+
+- Type sourcetype="amdl:securitygraph:alert" in the search bar to get all alerts surfaced through the graph security API. On the right-hand side, you will see top-level properties of Azure Monitor log where Security Graph alert is under properties field.<br/>
+- On the left pane, you will see selected fields and interesting fields. You can use selected fields to create dashboards or Splunk alerts, you can also add or remove selected fields by right-clicking on the fields.  
+- In the image below, `eventDatetime`, `severity`, `status`, and `provider` fields as selected. <br/>
+- You can restrict your search as needed. Here we select to see only high severity alerts from Azure Security Center. For more advance search terms, see [splunk search tutorials](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).  
 
  ![splunk_search_query](../concepts/images/splunk_search_query.png)
 > Search query: `sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
 
-Multiple actions available on search results on "Save As" menu option on top right: You can create Report, Dashboard Panel, or Alert based on your search filter.
-  
-< Missing screen shot >  
+Multiple actions are available on search results using the "Save As" menu option in top right of the screen. You can create Reports, Dashboard Panels, or Alerts based on your search filter.
 
 As an example you can create a dashboard with event stream based on the query:
-You can add drilldown link to each event to further access the details on Microsoft Graph site. Please see [Splunk drilldown documentation](http://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro).
+You can add drilldown link to each event to further access the details on Microsoft Graph site. See [Splunk drilldown documentation](http://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro).
 
  ![splunk_search_results](../concepts/images/splunk_search_results.png)
 
 Or you can create a dashboard as a timeline chart:
 
-< Redo screen shot >
+ ![splunk_search_timeline](../concepts/images/splunk_search_timeline.png)
 
 You can follow [Splunk Search & Report tutorial](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
