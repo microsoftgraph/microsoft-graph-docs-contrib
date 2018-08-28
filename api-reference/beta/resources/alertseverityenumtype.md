@@ -8,7 +8,7 @@ Enum for severity of alerts.
 
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Unknown.|
+|unknown|0|Severity is unknown.|
 |informational|1|Severity is only for information.|
 |low|2| Severity is low.|
 |medium|3| Severity is medium.|

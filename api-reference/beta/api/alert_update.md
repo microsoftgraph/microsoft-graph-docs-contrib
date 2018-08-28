@@ -62,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
+PATCH https://graph.microsoft.com/beta/security/alerts/{alert_id}
 Content-type: application/json
 
 {
@@ -95,7 +95,7 @@ HTTP/1.1 204 No Content
 
 ## Example 2
 
-### Request 
+### Request
 
 The following example shows a request that includes the `Prefer` request header.
 
@@ -105,7 +105,7 @@ The following example shows a request that includes the `Prefer` request header.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
+PATCH https://graph.microsoft.com/beta/security/alerts/{alert_id}
 Content-type: application/json
 Prefer: return=representation
 

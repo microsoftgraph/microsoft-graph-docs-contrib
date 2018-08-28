@@ -8,7 +8,7 @@ Enum for the status of connections.
 
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Unknown status.|
+|unknown|0|Unknown connection status.|
 |attempted|1|Connection is attempted.|
 |succeeded|2| Connection succeeded.|
 |blocked|3| Connection is blocked.|

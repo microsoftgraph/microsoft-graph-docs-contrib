@@ -6,8 +6,8 @@ Contains stateful information about the cloud application (destinationServiceNam
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|destinationServiceIp|String|Destination IP Address of the connection to the cloud appliction/service.|
-|destinationServiceName|String|Cloud application/service name (e.g. "Salesforce", "DropBox", et.).|
+|destinationServiceIp|String|Destination IP Address of the connection to the cloud application/service.|
+|destinationServiceName|String|Cloud application/service name (for example "Salesforce", "DropBox", etc.).|
 |riskScore|String|Provider-generated/calculated risk score of the Cloud Application/Service.|
 
 ## JSON representation

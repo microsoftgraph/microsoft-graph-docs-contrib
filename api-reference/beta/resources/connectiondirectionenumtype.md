@@ -8,6 +8,6 @@ Enum for direction of the network connection.
 
 |Member|Value|Description|
 |:---|:---|:---|
-|unknown|0|Unknown direction.|
+|unknown|0|Unknown direction of network connection.|
 |inbound|1|Inbound connection.|
 |outbound|2| Outbound connection.|
