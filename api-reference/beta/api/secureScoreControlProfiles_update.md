@@ -2,7 +2,7 @@ secureScoreControlProfiles_update.md# Update secureScoreControlProfiles
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update an editable **secureScoreControlProfiles** property within any integrated solution to keep change various secureScoreControlProfiles properties such as assignedTo.
+Update an editable **secureScoreControlProfiles** property within any integrated solution to change various secureScoreControlProfiles properties such as assignedTo, tenantNote.
 
 ## Permissions
 
@@ -16,7 +16,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-> **Note:** You must include the **secureScoreControlProfiles** ID as a parameter.
 <!-- { "blockType": "ignored" } -->
 
 ```http
