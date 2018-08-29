@@ -37,6 +37,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "aadUserId": "String",
   "accountName": "String",
   "domainName": "String",
   "emailRole": "@odata.type: microsoft.graph.emailRole",
