@@ -31,7 +31,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the values for relevant fields that should be updated. The following table lists the fields that can be updated for an secureScoreControlProfile. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
+In the request body, supply a JSON representation of the values for relevant fields that should be updated. The following table lists the fields that can be updated for a secureScoreControlProfile. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
