@@ -75,6 +75,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **wpa2Personal** and **wpa2Enterprise** members to the [wiFiSecurityType](../api-reference/beta/resources/intune_deviceconfig_wifisecuritytype.md) enum type|
 |Addition|beta|Added the **enterpriseUnwantedSoftware**, **ransom** and **hipsRule** members to the [windowsMalwareCategory](../api-reference/beta/resources/intune_devices_windowsmalwarecategory.md) enum type|
 
+### Outlook calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the [getSchedule](../api-reference/beta/api/calendar_getschedule.md) action, and the [freeBusyError](../api-reference/beta/resources/freebusyerror.md), [scheduleInformation](../api-reference/beta/resources/scheduleinformation.md), and [scheduleItem](../api-reference/beta/resources/scheduleitem.md) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md). |
+
+### Outlook mail
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0        | Added support for the [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_getmailtips.md) action to get any MailTips for specific recipients. Added the following resources: [automaticRepliesMailTips](../api-reference/v1.0/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/v1.0/resources/mailtips.md), [mailTipsError](../api-reference/v1.0/resources/mailtipserror.md). |
+
+
 ## July 2018
 
 ### Directory APIs
@@ -2123,7 +2136,7 @@ Added support for dynamic group membership through the public preview API, inclu
 | Addition        | v1.0        | Added the [mailboxSettings](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailboxsettings) complex type, which includes the **automaticRepliesSetting**, **timeZone**, and **language** properties. |
 | Addition        | v1.0        | Added the **mailboxSettings** property to the [user](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) resource. |
 | Addition        | Beta        | Added support for creating, listing, getting, and deleting one or more instances of [mention](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mention) in a message. Mentions support calling out to get the attention of other users in a message. |
-| Addition        | Beta        | Added support for the [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) action to get any MailTips for specific recipients. Added the following resources: automaticRepliesMailTips, mailTips, mailTipsError. |
+| Addition        | Beta        | Added support for the [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) action to get any MailTips for specific recipients. Added the following resources: [automaticRepliesMailTips](../api-reference/beta/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/beta/resources/mailtips.md), [mailTipsError](../api-reference/beta/resources/mailtipserror.md). |
 
 ### Query parameters
 
