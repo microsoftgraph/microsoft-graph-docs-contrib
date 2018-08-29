@@ -189,6 +189,7 @@ Content-type: application/json
   ],
   "userStates": [
     {
+      "aadUserId": "String",
       "accountName": "String",
       "domainName": "String",
       "emailRole": "@odata.type: microsoft.graph.emailRole",
