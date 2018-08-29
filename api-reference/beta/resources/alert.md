@@ -18,7 +18,7 @@ Alerts can be retrieved from the following Providers: Azure Security Center, and
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|activityGroupName|String|Name or alias of the activity group attributed to this alert.|
+|activityGroupName|String|Name or alias of the activity group (attacker) this alert is attributed to.|
 |assignedTo|String|Name of the analyst the alert is assigned to for triage, investigation, or remediation (supports [update](../api/alert_update.md)).|
 |azureSubscriptionId|String|Azure subscription ID, present if this alert is related to an Azure resource.|
 |azureTenantId *|String|Azure Active Directory tenant ID.|
