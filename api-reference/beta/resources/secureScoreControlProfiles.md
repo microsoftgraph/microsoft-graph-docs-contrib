@@ -2,14 +2,14 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a tenants Secure Score per control data, by default returns all controls for a tenant, can explicitly pull individual controls. [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+Represents a tenant's Secure Score per control data. By default it returns all controls for a tenant and can explicitly pull individual controls.
 
 
 ## Methods
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[Get secureScores](../api/get_secureScoreControlProfiles.md) | [secureScoreControlProfiles](secureScoreControlProfiles.md) |Read properties and metadata of a secureScoreControlProfiles object.|
+|[List secureScores](../api/get_secureScoreControlProfiles.md) | [secureScoreControlProfiles](secureScoreControlProfiles.md) |Read properties and metadata of a secureScoreControlProfiles object.|
 
 
 ## Properties - secureScoreControlProfiles
@@ -18,7 +18,7 @@ Entity type containing properties of the Microsoft security control data (invent
 |Name |Type |Description |
 |:--|:--|:--|
 |	azureTenantId	|	String	|	GUID string for tenant ID	|
-|	controlName	|	String	|	Name of the control
+|	controlName	|	String	|	Name of the control |
 |	title	|	String	|	Title of the control	|
 |	controlCategory	|	String	|	Control action category (Account, Data, Device, Apps, Infrastructure)	|
 |	actionType	|	String	|	control action type (Config, Review, Behavior)	|
@@ -33,7 +33,7 @@ Entity type containing properties of the Microsoft security control data (invent
 |	remediation |	String	|	Description of that the control will help remediate |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation |
 |	actionUrl |	String	|	URL to where the control can be actioned |
-|	controlStateUpdates |	String	|	Flag to indicated where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/secureScoreControlProfiles_update.md)) |
+|	controlStateUpdates |	String	|	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/secureScoreControlProfiles_update.md)) |
 |	tenantNote |	String	|	Tenant can set per control comments (supports [update](../api/secureScoreControlProfiles_update.md)) |
 |	assignedTo |	String	|	Tenant can assign the control to a individual (supports [update](../api/secureScoreControlProfiles_update.md)) |
 |	updatedBy |	String	|	UPN of user who made changes to a Controls state |
@@ -57,23 +57,23 @@ The following is a JSON representation of the resource.
 ```json
 {
 "title": "String", 
-"tenantId": "Guid", 
+"azureTenantId": "Guid", 
 "referenceId": "String", 
 "controlName": "String", 
 "maxScore": "Int32",
-"actionCategory": "Collection(Microsoft.Office.SecureScore.actionCategory)",
-"actionType": "Collection(Microsoft.Office.SecureScore.actionType)",
+"actionCategory": "Collection(microsoft.graph.SecureScore.actionCategory)",
+"actionType": "Collection(microsoft.graph.SecureScore.actionType)",
 "service": "String",
-"tier": "Collection(Microsoft.Office.SecureScore.tier)",
-"userImpact": "Collection(Microsoft.Office.SecureScore.ranking)",
-"implementationCost ": "Collection(Microsoft.Office.SecureScore.ranking)",
+"tier": "Collection(microsoft.graph.SecureScore.tier)",
+"userImpact": "Collection(microsoft.graph.SecureScore.ranking)",
+"implementationCost ": "Collection(microsoft.graph.SecureScore.ranking)",
 "rank ": "Int32",
-"threats": "Collection(Microsoft.Office.SecureScore.threat)",
+"threats": "Collection(microsoft.graph.SecureScore.threat)",
 "deprecated ": "Boolean",
 "remediation": "String",
 "remediationImpact ": "String",
 "actionUrl": "String",
-"controlStateUpdates": "Collection(Microsoft.Office.SecureScore.controlStateUpdates)",
+"controlStateUpdates": "Collection(microsoft.graph.SecureScore.controlStateUpdates)",
 "tenantNotes": "String",
 "upn": "String",
 "comments": "String",
