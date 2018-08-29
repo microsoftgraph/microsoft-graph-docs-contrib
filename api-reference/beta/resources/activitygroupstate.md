@@ -1,16 +1,15 @@
-# alertTrigger resource type
+# activityGroupState resource type
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Contains information about the properties that triggered a detection (properties exist in the alert entity).
+Contains stateful information about the activity group.
 
 ## Properties
 
-| Property   | Type|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
-|name|String|Name of the property serving as a detection trigger.|
-|type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean, and so on.|
-|value|String|Value of the property serving as a detection trigger.|
+|aliases|String collection|[STIX 2.0 standard](https://oasis-open.github.io/cti-documentation/stix/intro) list of aliases for the activity group.|
+|name|String|[STIX 2.0 standard](https://oasis-open.github.io/cti-documentation/stix/intro) display name for the activity group.|
 
 ## JSON representation
 
@@ -21,14 +20,13 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.alertTrigger"
+  "@odata.type": "microsoft.graph.activityGroupState"
 }-->
 
 ```json
 {
-  "name": "String",
-  "type": "String",
-  "value": "String"
+  "aliases": ["String"],
+  "name": "String"
 }
 
 ```
@@ -37,7 +35,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "alertTrigger resource",
+  "description": "activityGroupState resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
