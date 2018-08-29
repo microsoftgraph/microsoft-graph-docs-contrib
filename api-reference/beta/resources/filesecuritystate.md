@@ -11,7 +11,7 @@ Contains information about the file (not process) related to the alert.
 |fileHash|[fileHash](filehash.md)|Complex type containing file hashes (cryptographic and location-sensitive).|
 |name|String|File name (without path).|
 |path|String|Full file path of the file/imageFile.|
-|riskScore|String|Provider generated/calculated risk score of the alert file.|
+|riskScore|String|Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.|
 
 ## JSON representation
 
