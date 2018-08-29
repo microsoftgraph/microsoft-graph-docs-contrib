@@ -15,7 +15,7 @@ then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 
 |:---------------|:--------|:----------|
 |[List apps](../api/teams_apps_list.md) | [teamsApp](teamsApp.md) | Lists apps installed in a team.|
 |[Add app](../api/teams_apps_add.md) | [teamsApp](teamsApp.md) | Adds (installs) an app to a team.|
-|[Remove app](../api/teams_apps_delete.md) | [teamsApp](teamsApp.md) | Removes (uninstalls) an app from a team.|
+|[Remove app](../api/teams_apps_delete.md) | None | Removes (uninstalls) an app from a team.|
 
 
 ## Properties
@@ -40,7 +40,13 @@ The following is a JSON representation of the resource.
 }-->
 
 ```json
-{  
+{
+  "id": "string (identifier)",
+  "name": "string",
+  "version": "string",
+  "isBlocked": false,
+  "installedState": "string",
+  "context": "string"
 }
 
 ```
