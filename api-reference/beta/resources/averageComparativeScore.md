@@ -1,0 +1,43 @@
+#  averageComparativeScore resource type
+
+Complex type containing properties for average score by different scopes(ex: average by industry, average by seating etc) and control category (Identity, Data, Device, Apps, Infrastructure) within the basis. Also contains other extended properties.
+
+|Property |Type |Description |
+|:--|:--|:--|
+|	basis	|	String	|	Scope type (By AllTenants, TotalSeats, IndustryTypes)	|
+|	averageScore	|	Double	| Average score with in specified basis |
+|	deviceScore	|	Double	| Average score with in specified basis |
+|	dataScore	|	Double	| Average score with in specified basis |
+|	identityScore	|	Double	| Average score with in specified basis |
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.averageComparativeScore"
+}-->
+
+```json
+{
+  "basis": "String",
+  "averageScore": "Double",
+  "deviceScore": "Double",
+  "dataScore": "Double",
+  "identityScore": "Double"
+}
+
+```
+
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "averageComparativeScore resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
