@@ -2,7 +2,7 @@
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. 
 
-Microsoft 365 Secure Score is a new security analytics tool that applies a score to Microsoft 365 customers’ current Microsoft 365 security configuration. It helps organizations better understand their security posture and how to improve and reduce their risk in Microsoft 365. Secure Score helps customers balance their security and productivity needs with guidance to help them enable the right mix of the available security features and to model what their score would look like after adopting some of these features. Organizations can also compare their score with other organizations and see how their score has been trending over time.
+Microsoft Secure Score is a security analytics solution that gives you visibility into your security posture and how to improve it.  With the single score, you can better understand what you have done to reduce your risk in Microsoft solutions.  You can also compare your score with other organizations and see how your score has been trending over time.  Helping you balance your organization’s security and productivity needs there is guidance to help you enable the right mix of security features and to model what you score would look like after adopting some of these features.
 
 
 ## Why connect to Secure Score in the Intelligent Security Graph?
@@ -25,17 +25,11 @@ Manage your risk in a proactive way not reactive.
 
 Easily see your progress improve over time, with clarity on what caused the improvements.
 
-<!-- LG: Add this content when this functionality is available. 
-### Automate SecOps for greater efficiency (coming soon)
--->
-<!-- 
-Build and run investigation and remediation runbooks, automate security policy checks and rule enforcement, and orchestrate actions across security solutions.
--->
 
 
 ## Authorization
 
-The Secure Score API provides access to some of your organization’s most sensitive information. To better understand the types of authorization and how to manage them, we provide additional details in our Microsoft TechCommuity forums at the link below. 
+The Secure Score API provides access to some of your organization’s most sensitive information. To better understand the types of authorization and how to manage them, we provide additional details in our Microsoft TechCommunity forums at the link below. 
 
 [Understanding authorization when calling the Microsoft Graph Security API](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376)
 
@@ -47,8 +41,8 @@ The following are some of the most popular requests for working with the Secure 
 
 | **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
-| Get secureScores | [Get secureScores](../api/get_secureScores.md) | [https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Get secureScoreControlProfiles | [Get secureScoreControlProfiles](../api/get_secureScoresControlProfile.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
+| List secureScores | [Get secureScores](../api/get_secureScores.md) | [https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| List secureScoreControlProfiles | [Get secureScoreControlProfiles](../api/get_secureScoresControlProfile.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
 | Update secureScoreControlProfiles | [Update secureScoreControlProfiles](../api/secureScoreControlProfiles_update.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
 
 
