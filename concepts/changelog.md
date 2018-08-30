@@ -10,7 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added the Secure Score to the [security API](../api-reference/beta/resources/securescore-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/secureScores.md) (and related entities)<br/>[Get secureScores](../api-reference/beta/api/get_secureScores.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/secureScoreControlProfiles.md)<br/>[Get secureScoreControlProfiles](../api-reference/beta/api/get_secureScoreControlProfiles.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/secureScoreControlProfiles_update.md)
+| Addition        | Beta       | Added the Secure Score APIs to the [security API](../api-reference/beta/resources/securescore-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/secureScores.md) (and related entities)<br/>[Get secureScores](../api-reference/beta/api/get_secureScores.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/secureScoreControlProfiles.md)<br/>[Get secureScoreControlProfiles](../api-reference/beta/api/get_secureScoreControlProfiles.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/secureScoreControlProfiles_update.md)
 
 ### Microsoft Intune APIs
 
