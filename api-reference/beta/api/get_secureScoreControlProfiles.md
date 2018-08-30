@@ -101,6 +101,8 @@ Content-type: application/json
                 "subProvider": null,
                 "vendor": "Microsoft"
             }
+         }
+     ]
 }
 ```
 
