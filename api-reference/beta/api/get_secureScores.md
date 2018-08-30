@@ -112,6 +112,8 @@ Content-type: application/json
                     "count": "count.value"
                 }
             ]
+        }
+    ]            
 }
 
 ```
