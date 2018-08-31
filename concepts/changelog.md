@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## September 2018
+
+### Security APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | v1.0       | Added the [security API](../api-reference/v1.0/resources/security-api-overview.md), including the following resources and operations:<br/>[alert](../api-reference/v1.0/resources/alert.md) (and related entities)<br/>[Get alert](../api-reference/v1.0/api/alert_get.md)<br/>[List alerts](../api-reference/v1.0/api/alert_list.md)<br/>[Update alert](../api-reference/v1.0/api/alert_update.md)<br/><br/>Added the following supporting documentation:<br/>[Errors](../api-reference/v1.0/resources/security-error-codes.md)
+
 ## August 2018
 
 ### Microsoft Intune APIs
