@@ -114,7 +114,7 @@ The second example request creates an Office 365 Group with owners specified.
   "blockType": "request"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups HTTP/1.1
+POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
 {
