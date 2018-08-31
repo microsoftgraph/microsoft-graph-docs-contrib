@@ -28,14 +28,17 @@ POST /groups
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-The following table shows the properties of the [group](../resources/group.md) resource that you must specify at a minimum when you create a group. 
+The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group. 
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
-| displayName | string | The name to display in the address book for the group. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 Group. Set this to **false** if creating dynamic or security group.|
-| mailNickname | string | The mail alias for the group. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups. Set this to **true** if creating a dynamic or security group. Set this to **false** if creating an Office 365 group. |
+| displayName | string | The name to display in the address book for the group. Required. |
+| mailEnabled | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 Group. Set this to **false** if creating dynamic or security group. Required. |
+| mailNickname | string | The mail alias for the group. Required. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups. Set this to **true** if creating a dynamic or security group. Set this to **false** if creating an Office 365 group. Required. |
+| owners | string collection | This property represents the owners for the group at creation time. Optional. |
+| members | string collection | This property represents the members for the group at creation time. Optional. |
+
 
 Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.
 
@@ -47,32 +50,6 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 | Dynamic | "DynamicMembership" |
 | Security | Do not set. |
 
-Optionally specify the **owners** and **members** properties if you're creating an Office 365 group.
-
-### owners and members options
-
-The following table shows the properties for owners and members of an Office 365 Group at creation time.
-
-| Property | Type | Description|
-|:---------------|:--------|:----------|
-| owners | string collection | The owners for the group. |
-| members | string collection | The members for the group. |
-
-When specifying the owners and / or members for an Office 365 group use the following syntax to perform an OData bind:
-
-```
-{
-  "owners@odata.bind":  [
-    "https://graph.microsoft.com/v1.0/users/{id1}",
-    "https://graph.microsoft.com/v1.0/users/{id2}",
-  ],
-  "members@odata.bind":  [
-    "https://graph.microsoft.com/v1.0/users/{id1}",
-    "https://graph.microsoft.com/v1.0/users/{id2}",
-  ]
-}
-
-```
 
 >**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
 
@@ -82,8 +59,8 @@ Specify other writable properties as necessary for your group. For more informat
 If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.
 
 ## Example
-#### Request
-The following is an example of a request that creates an Office 365 Group.
+#### Request 1
+The first example request creates an Office 365 Group.
 <!-- {
   "blockType": "request",
   "name": "create_group"
@@ -105,7 +82,7 @@ Content-length: 244
 }
 ```
 
-#### Response
+#### Response 1
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
@@ -128,6 +105,55 @@ Content-length: 244
   "mailEnabled": true,
   "mailNickname": "library",
   "securityEnabled": false
+}
+```
+
+#### Request 2
+The second example request creates an Office 365 Group with owners specified.
+<!-- {
+  "blockType": "request"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/groups HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "Group with owners",
+  "displayName": "Group1",
+  "groupTypes": [
+    "Unified"
+  ],
+  "mailEnabled": true,
+  "mailNickname": "group1",
+  "securityEnabled": false,
+  "owners@odata.bind": [
+    "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+  ]
+}
+```
+
+#### Response 2
+The following is an example of the successful response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "description": "Group with owners",
+    "displayName": "Group1",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "group1@contoso.onmicrosoft.com",
+    "mailEnabled": true,
+    "mailNickname": "group1",
+    "securityEnabled": false
 }
 ```
 
