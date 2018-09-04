@@ -59,7 +59,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy"
+  "@odata.type": "microsoft.graph.windowsInformationProtectionPolicy"
 }
 -->
 ``` json
@@ -192,7 +192,19 @@ Here is a JSON representation of the resource.
 }
 ```
 
-
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "recurrenceRange resource",
+  "keywords": "",
+  "section": "documentation",
+  "suppressions": [
+      "Error: microsoft.graph.deviceAppManagement/mdmWindowsInformationProtectionPolicies:4420
+      Referenced type microsoft.graph.mdmWindowsInformationProtectionPolicy is not defined in the doc set! Potential suggestion: microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy"
+  ],
+  "tocPath": ""
+}-->
 
 
 
