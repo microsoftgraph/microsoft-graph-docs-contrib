@@ -5,9 +5,9 @@ Complex type contains tenant score for individual control and control descriptio
 |Name |Type |Description |
 |:--|:--|:--|
 |	controlName	|	String	|	Control unique name	|
-|	score	|	Double	|  Tenant achieved score for the control (its varies day by day depends on tenant action on the control) |
-|	controlCategory	|	String	|  Control action category(Identity, Data, Device, Apps, Infrastructure) |
-|	description	|	String	|  Description of the control |
+|	score	|	Double	|  Tenant achieved score for the control (it varies day by day depending on tenant action on the control). |
+|	controlCategory	|	String	|  Control action category (Identity, Data, Device, Apps, Infrastructure). |
+|	description	|	String	|  Description of the control. |
 
 ## JSON representation
 
