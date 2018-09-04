@@ -1,4 +1,4 @@
-# deviceEnrollmentConfiguration resource type
+﻿# deviceEnrollmentConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -29,13 +29,12 @@ Not yet documented
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "abstract": true,
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceEnrollmentConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentConfiguration",
@@ -48,6 +47,11 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
+
+
+
+
+
 
 
 

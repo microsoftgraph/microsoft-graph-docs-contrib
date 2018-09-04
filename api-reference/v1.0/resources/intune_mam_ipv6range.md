@@ -18,7 +18,7 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.ipRange",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iPv6Range"
 }
 -->
@@ -29,6 +29,11 @@ Here is a JSON representation of the resource.
   "upperAddress": "String"
 }
 ```
+
+
+
+
+
 
 
 

@@ -1,14 +1,14 @@
-﻿# deviceConfigurationDeviceActivity function
+﻿# autopilotDeviceStream function
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Metadata for the device configuration device activity report
+Create a upload request with autopilot device stream in it.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reports/deviceConfigurationDeviceActivity
+GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/autopilotDeviceStream
 ```
 
 ## Request headers
@@ -31,13 +31,13 @@ GET /reports/deviceConfigurationDeviceActivity
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune_deviceconfig_report.md) in the response body.
+If successful, this function returns a `200 OK` response code and a String in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1.0/reports/deviceConfigurationDeviceActivity
+GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/autopilotDeviceStream
 ```
 
 ### Response
@@ -45,15 +45,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 123
+Content-Length: 48
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.report",
-    "content": {"@odata.type": "Edm.Stream"}
-  }
+  "value": "Autopilot Device Stream value"
 }
 ```
+
+
+
+
+
 
 
 

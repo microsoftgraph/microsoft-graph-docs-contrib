@@ -17,7 +17,7 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.mobileAppIdentifier",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidMobileAppIdentifier"
 }
 -->
@@ -27,6 +27,11 @@ Here is a JSON representation of the resource.
   "packageId": "String"
 }
 ```
+
+
+
+
+
 
 
 
