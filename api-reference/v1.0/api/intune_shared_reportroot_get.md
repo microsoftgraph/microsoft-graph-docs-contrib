@@ -36,7 +36,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [reportRoot](../resources/intune_deviceconfig_reportroot.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [reportRoot](../resources/intune_shared_reportroot.md) object in the response body.
 
 ## Example
 ### Request

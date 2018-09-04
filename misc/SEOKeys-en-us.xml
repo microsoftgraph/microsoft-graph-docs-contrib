@@ -1603,8 +1603,8 @@
         <Item text="MIME content" url="/en-us/api-reference/v1.0/resources/intune_shared_mimecontent"/>
         <Item text="Report" url="/en-us/api-reference/v1.0/resources/intune_shared_report"/>
         <Item text="Report root" url="/en-us/api-reference/v1.0/resources/intune_shared_reportroot">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_update"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_reportroot_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_reportroot_update"/>
         </Item>
         <Item text="Saved UI state generation options" url="/en-us/api-reference/v1.0/resources/intune_shared_saveduistategenerationoptions"/>
         <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_shared_uri"/>
