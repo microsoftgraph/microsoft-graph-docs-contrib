@@ -4,6 +4,7 @@
 
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
+
 - **apps** - Copies Microsoft Teams apps that are installed in the team. 
 - **channels** – Copies the channel structure (but not the messages in the channel).
 - **members** – Copies the members and owners of the group.
@@ -51,7 +52,6 @@ POST /teams/{id}/clone
 |classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](../resources/directorySetting.md) value, based on the [template definition](../resources/directorySettingTemplate.md). If classification is not specified, the classification will be copied from the original team/group.|
 |description|String (optional)|An optional description for the group. If this property is not specified, it will be left blank.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|mailNickname|String (optional)|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-seperated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
 |visibility|[teamVisibilityType](../resources/teamVisibilityType.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
 
@@ -72,7 +72,6 @@ POST /teams/{id}/clone
 Content-Type: application/json
 
 {  
-     "classification": "MBI",
      "displayName": "Library Assist",
      "description": "Self help community for library",
      "mailNickname": "libassist",
@@ -90,11 +89,9 @@ The following is an example of the response. Note: The response object shown her
 } -->
 ```http
 HTTP/1.1 202 Accepted
-Content-type: application/json
-Location: /groups/06805b9e-77e3-4b93-ac81-525eb87513b8/team/operations/c5d5908e-7c3c-43ff-9079-160a647b54e4
-
-{  
-}
+Location: /teams({id})/operations({opId})
+Content-Type: text/plain
+Content-Length: 0
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

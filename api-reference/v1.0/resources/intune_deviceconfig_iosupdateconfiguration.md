@@ -1,4 +1,4 @@
-﻿# iosUpdateConfiguration resource type
+# iosUpdateConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -26,7 +26,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |activeHoursStart|TimeOfDay|Active Hours Start (active hours mean the time window when updates install should not happen)|
 |activeHoursEnd|TimeOfDay|Active Hours End (active hours mean the time window when updates install should not happen)|
-|scheduledInstallDays|[dayOfWeek](../resources/intune_deviceconfig_dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
+|scheduledInstallDays|[dayOfWeek enum](../resources/intune_deviceconfig_dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
 |utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 
 ## Relationships
@@ -34,19 +34,19 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |:---|:---|:---|
 |assignments|[deviceConfigurationAssignment](../resources/intune_deviceconfig_deviceconfigurationassignment.md) collection|The list of assignments for the device configuration profile. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatuses|[deviceConfigurationDeviceStatus](../resources/intune_deviceconfig_deviceconfigurationdevicestatus.md) collection|Device configuration installation status by device. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
-|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation stauts by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
+|userStatuses|[deviceConfigurationUserStatus](../resources/intune_deviceconfig_deviceconfigurationuserstatus.md) collection|Device configuration installation status by user. Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune_deviceconfig_deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune_deviceconfig_deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune_deviceconfig_settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "@odata.type": "microsoft.graph.iosUpdateConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
