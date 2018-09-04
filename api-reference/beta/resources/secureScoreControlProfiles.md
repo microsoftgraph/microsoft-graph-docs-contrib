@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a tenant's Secure Score per control data. By default it returns all controls for a tenant and can explicitly pull individual controls.
+Represents a tenant's Secure Score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls.
 
 
 ## Methods
@@ -12,7 +12,7 @@ Represents a tenant's Secure Score per control data. By default it returns all c
 |[List secureScores](../api/get_secureScoreControlProfiles.md) | [secureScoreControlProfiles](secureScoreControlProfiles.md) |Read properties and metadata of a secureScoreControlProfiles object.|
 
 
-## Properties - secureScoreControlProfiles
+## Properties
 Entity type containing properties of the Microsoft security control data (inventory data)
 
 |Name |Type |Description |
@@ -22,7 +22,7 @@ Entity type containing properties of the Microsoft security control data (invent
 |	title	|	String	|	Title of the control	|
 |	controlCategory	|	String	|	Control action category (Account, Data, Device, Apps, Infrastructure)	|
 |	actionType	|	String	|	control action type (Config, Review, Behavior)	|
-|	service	|	String	|	Service which owns the control (Exchange, Sharepoint, Azure AAD etc)	|
+|	service	|	String	|	Service that owns the control (Exchange, Sharepoint, Azure AD)	|
 |	maxScore |	String	|	Current obtained max score on specified date	|
 |	tier |	String	|	Control tier (Core, Defense in Depth, Advanced)	|
 |	userImpact |	String	| User impact of implementing control (low, moderate, high)	|
@@ -30,7 +30,7 @@ Entity type containing properties of the Microsoft security control data (invent
 |	rank |	Int32	|	Microsoft's stack ranking of control	|
 |	threats |	collection(String)	|	List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing)	|
 |	deprecated |	Boolean	|	Flag to indicate if a control is depreciated	|
-|	remediation |	String	|	Description of that the control will help remediate |
+|	remediation |	String	|	Description of what the control will help remediate |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation |
 |	actionUrl |	String	|	URL to where the control can be actioned |
 |	controlStateUpdates |	String	|	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/secureScoreControlProfiles_update.md)) |
