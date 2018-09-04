@@ -200,7 +200,7 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-      "Error: microsoft.graph.deviceAppManagement/mdmWindowsInformationProtectionPolicies:4420
+      "Error: microsoft.graph.deviceAppManagement/mdmWindowsInformationProtectionPolicies:
       Referenced type microsoft.graph.mdmWindowsInformationProtectionPolicy is not defined in the doc set! Potential suggestion: microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy"
   ],
   "tocPath": ""
