@@ -1,11 +1,11 @@
 #  controlScore resource type
 
-Complex type contains tenant score for individual control and control description
+This resource contains a tenant score and description for an individual control.
 
 |Name |Type |Description |
 |:--|:--|:--|
 |	controlName	|	String	|	Control unique name	|
-|	score	|	Double	|  Tenant achieved score for the control (it varies day by day depending on tenant action on the control). |
+|	score	|	Double	|  Tenant achieved score for the control (it varies day by day depending on tenant operations on the control). |
 |	controlCategory	|	String	|  Control action category (Identity, Data, Device, Apps, Infrastructure). |
 |	description	|	String	|  Description of the control. |
 
