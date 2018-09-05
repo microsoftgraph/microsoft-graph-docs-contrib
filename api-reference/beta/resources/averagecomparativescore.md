@@ -1,14 +1,14 @@
 #  averageComparativeScore resource type
 
-Complex type containing properties for average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the basis. Also contains other extended properties.
+This resource contains various different scores based by different scopes (for example: average by industry vertical, average by company seat size etc) and control category (Identity, Data, Device, Apps, Infrastructure).
 
 |Property |Type |Description |
 |:--|:--|:--|
-|	basis	|	String	|	Scope type (By AllTenants, TotalSeats, IndustryTypes)	|
-|	averageScore	|	Double	| Average score within specified basis |
-|	deviceScore	|	Double	| Average score within specified basis |
-|	dataScore	|	Double	| Average score within specified basis |
-|	identityScore	|	Double	| Average score within specified basis |
+|	basis	|	String	|	Scope type (By AllTenants, TotalSeats, IndustryTypes).	|
+|	averageScore	|	Double	| Average score within specified basis. |
+|	deviceScore	|	Double	| Average score within specified basis. |
+|	dataScore	|	Double	| Average score within specified basis. |
+|	identityScore	|	Double	| Average score within specified basis. |
 
 ## JSON representation
 
