@@ -10,9 +10,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |   SecurityEvents.ReadWrite.All  |
+|Delegated (work or school account) |   SecurityEvents.ReadWrite.All.  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.ReadWrite.All |
+|Application | SecurityEvents.ReadWrite.All. |
 
 ## HTTP request
 
@@ -27,7 +27,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}. Required.|
-|Prefer | return=representation |
+|Prefer | return=representation. |
 
 ## Request body
 
@@ -44,7 +44,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 
 If successful, this method returns a `204 No Content` response code.
 
-If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/secureScoreControlProfiles.md) object in the response body.
+If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) object in the response body.
 
 ## Example
 
@@ -53,7 +53,7 @@ If the optional request header is used, the method returns a `200 OK` response c
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_secureScoreControlProfiles"
+  "name": "securescorecontrolprofiles_update"
 }-->
 
 ```http
