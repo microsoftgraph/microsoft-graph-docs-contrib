@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a tenant's Secure Score per day scoring data, at the tenant and control level. By default 90 days of data is held, this data is sorted by createdDateTime, latest to last. This will allow you to page responses back by using $top=n, where n = the number of days data that you wish to retrieve. 
+Represents a tenant's Secure Score per day of scoring data, at the tenant and control level. By default, 90 days of data is held. This data is sorted by **createdDateTime**, from latest to earliest. This will allow you to page responses by using $top=n, where n = the number of days of data that you want to retrieve. 
 
 
 ## Methods
@@ -12,20 +12,20 @@ Represents a tenant's Secure Score per day scoring data, at the tenant and contr
 |[List secureScores](../api/get_secureScores.md) | [secureScores](secureScores.md) |Read properties and metadata of a secureScores object.|
 
 
-## Properties - secureScore
+## Properties
 Entity type containing properties of the tenent security score (daily snapshot data).
 
 |Property |Type |Description |
 |:--|:--|:--|
 |	azureTenantId	|	String	|	GUID string for tenant ID	|
-|	createdDateTime	|	DateTimeOffset	|	The date  when the entity is created  |
+|	createdDateTime	|	DateTimeOffset	|	The date when the entity is created  |
 |	id	|	String	|	Combination of azureTenantId_createdDateTime	|
-|	licensedUserCount	|	Int32	|	Licensed user count of the provided tenant	|
+|	licensedUserCount	|	Int32	|	Licensed user count of the given tenant	|
 |	activeUserCount	|	Int32	|	Active user count of the given tenant	|
 |	currentScore	|	Double	|	Tenant current attained score on specified date	|
 |	maxScore |	Double	|	Tenant maximum possible score on specified date	|
-|	enabledServices |	collection(String)	|	Microsoft provided services for the tenant (Ex: Excahnge online, Skype, Sharepoint etc)	|
-|	averageComparativeScores |	[averageComparativeScore](averageComparativeScore.md) collection	|Average score by different scopes(ex: average by industry, average by seating etc) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope	|
+|	enabledServices |	collection(String)	|	Microsoft-provided services for the tenant (for example, Excahnge online, Skype, Sharepoint)	|
+|	averageComparativeScores |	[averageComparativeScore](averageComparativeScore.md) collection	|Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope	|
 |	controlScores |	[controlScore](controlScore.md) collection	|	Contains tenant score for individual control and control description	|
 
 
