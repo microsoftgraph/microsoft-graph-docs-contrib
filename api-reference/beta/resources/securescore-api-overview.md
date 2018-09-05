@@ -40,7 +40,7 @@ The following are some of the most popular requests for working with the Secure 
 | **Use case**   | **REST resource** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
 | List secureScores | [List secureScores](../api/securescores_list.md) | [https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| List secureScoreControlProfiles | [List secureScoreControlProfiles](../api/securescorescontrolprofile_list.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
+| List secureScoreControlProfiles | [List secureScoreControlProfiles](../api/securescorecontrolprofile_list.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
 | Update secureScoreControlProfiles | [Update secureScoreControlProfiles](../api/securescorecontrolprofiles_update.md) | https://graph.microsoft.com/beta/security/secureScoreControlProfiles |
 
 
