@@ -33,6 +33,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |importance| string | The importance of the message: Normal, High|
 |reactions| chatReactions collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
+|policyViolation|chatMessagePolicyViolation|Properties for the Data Loss prevention (DLP) violation|
 
 ## JSON representation
 
@@ -72,7 +73,8 @@ The following is a JSON representation of the resource.
   "mentions": [{"@odata.type": "microsoft.graph.chatMention"}],
   "importance": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatReaction"}],
-  "locale": "string"
+  "locale": "string",
+  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"}
 }
 
 ```
