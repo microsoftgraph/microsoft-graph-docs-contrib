@@ -29,7 +29,7 @@ Easily see your progress improve over time, and get insights on what changes led
 
 ## Authorization
 
-The Secure Score API provides access to some of your organization’s most sensitive information. To better understand the types of authorization and how to manage them. See [Understanding authorization when calling the Microsoft Graph Security API](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376)
+The Secure Score API provides access to some of your organization’s most sensitive information. To better understand the types of authorization and how to manage them, see [Understanding authorization when calling the Microsoft Graph Security API](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376)
 
 For more information about permissions, including delegated and application permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
