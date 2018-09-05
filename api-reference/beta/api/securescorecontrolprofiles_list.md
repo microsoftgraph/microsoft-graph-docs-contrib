@@ -2,7 +2,7 @@
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/secureScoreControlProfiles.md) object.
+Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) object.
 
 ## Permissions
 
@@ -10,9 +10,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
+|Delegated (work or school account) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.   |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+|Application | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All. |
 
 ## HTTP request
 
@@ -43,7 +43,7 @@ If successful, this method returns a `200 OK` response code and a **secureScoreC
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_secureScoreControlProfiles"
+  "name": "securescorecontrolprofiles_list"
 }-->
 
 ```http
@@ -109,7 +109,7 @@ Content-type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Get secureScoreControlProfiles",
+  "description": "List secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
