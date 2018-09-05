@@ -115,7 +115,7 @@ Security alerts are highly privileged data typically viewable only by security r
 
 ## Step 4: Register an application with your tenant Azure Active Directory which Splunk will use to read from the event hub
 
-Splunk needs an application registration in your organization’s Azure Active Directory to be granted the required permissions and App credentials required to authenticate to the Azure Monitor event hub.
+Splunk needs an application registration in your organization’s Azure Active Directory to be granted the required permissions and app credentials required to authenticate to the Azure Monitor event hub.
 
 1. In the Azure portal, go to **App Registrations** and select **New application registration**.
 
@@ -180,9 +180,9 @@ The last step to complete the setup process is to configure Splunk data inputs t
 
 ## (Optional) Use Splunk Search to explore data
 
-Once you have setup the Azure Monitor Splunk plugin, your Splunk instance will start retrieving events from the configured event hub. By default, splunk will index each property of the Graph Security Alert Schema to allow searching.
+After you have set up the Azure Monitor Splunk plugin, your Splunk instance will start retrieving events from the configured event hub. By default, splunk will index each property of the Microsoft Graph security alert schema to allow searching.
 
-To search for Graph Security alerts, to create dashboards, or to set Splunk alerts with your search query, navigate to apps -> Search & Reporting app in Splunk.
+To search for Microsoft Graph security alerts, to create dashboards, or to set Splunk alerts with your search query, navigate to apps -> Search & Reporting app in Splunk.
 
 **Examples**:<br/>
 Try searching Graph Security alerts:
@@ -190,7 +190,7 @@ Try searching Graph Security alerts:
 - Type `sourcetype="amdl:securitygraph:alert"` in the search bar to get all alerts surfaced through the graph security API. On the right-hand side, you will see the top-level properties of Azure Monitor log where Graph Security alert is under properties field.<br/>
 - On the left pane, you will see selected fields and interesting fields. You can use selected fields to create dashboards or Splunk alerts, you can also add or remove selected fields by right-clicking on the fields.  
 > **Note:**
-As shown in the search query below, you can restrict your search as needed. In the example, we filter the Graph Security Alerts by high severity alerts from Azure Security Center. We also used `eventDatetime`, `severity`, `status`, and `provider` as selected fields to be displayed. For more advance search terms, see [splunk search tutorials](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
+As shown in the following search query, you can restrict your search as needed. In the example, we filter the Graph Security Alerts by high severity alerts from Azure Security Center. We also used `eventDatetime`, `severity`, `status`, and `provider` as selected fields to be displayed. For more advance search terms, see [splunk search tutorials](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
 
  ![splunk_search_query](../concepts/images/splunk_search_query.png)
 > Search query: `sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
