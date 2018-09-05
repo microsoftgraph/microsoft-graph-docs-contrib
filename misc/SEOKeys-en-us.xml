@@ -5904,11 +5904,11 @@
 		</Item>
 		<Item text="Errors" url="/en-us/api-reference/beta/resources/security-error-codes" />
 		<Item text="Secure Score" url="/en-us/api-reference/beta/resources/securescore-api-overview" >
-			<Item text="secureScores" url="/en-us/api-reference/beta/resources/secureScores" />
-			<Item text="List secureScores" url="/en-us/api-reference/beta/api/get_secureScores" />
-			<Item text="secureScoreControlProfiles" url="/en-us/api-reference/beta/resources/secureScoreControlProfiles" />
-			<Item text="List secureScoreControlProfiles" url="/en-us/api-reference/beta/api/get_secureScoreControlProfiles" />
-			<Item text="Update secureScoreControlProfiles" url="/en-us/api-reference/beta/api/secureScoreControlProfiles_update" />
+			<Item text="Secure scores" url="/en-us/api-reference/beta/resources/securescores" />
+			<Item text="List secure scores" url="/en-us/api-reference/beta/api/secureScores_list" />
+			<Item text="Secure score control profiles" url="/en-us/api-reference/beta/resources/securescorecontrolprofiles" />
+			<Item text="List secure score control profiles" url="/en-us/api-reference/beta/api/securescorecontrolprofiles_list" />
+			<Item text="Update secure score control profiles" url="/en-us/api-reference/beta/api/securescorecontrolprofiles_update" />
 		</Item>
 	</Item>
 	<Item text="Sites and lists" ProdTag="SharePoint" url="/en-us/api-reference/beta/resources/sharepoint" SEOKeyword="sharepoint, sites, lists, drives, microsoft graph api, sharepoint api">
