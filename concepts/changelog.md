@@ -95,6 +95,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0        | Added support for the [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_getmailtips.md) action to get any MailTips for specific recipients. Added the following resources: [automaticRepliesMailTips](../api-reference/v1.0/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/v1.0/resources/mailtips.md), [mailTipsError](../api-reference/v1.0/resources/mailtipserror.md). |
 
+### Reports APIs
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Addition    | v1.0    | Added [Activated On Shared Computer] to (../api-reference/v1.0/api/reportroot_getoffice365activationsuserdetail.md). |
+| Addition    | v1.0    | Added [Shared Computer Activation] to (../api-reference/v1.0/api/reportroot_getoffice365activationsusercounts.md). |
+
 ### Security APIs
 
 | **Change type** | **Version** | **Description**              |
