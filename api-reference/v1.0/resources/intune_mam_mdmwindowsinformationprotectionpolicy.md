@@ -1,4 +1,4 @@
-﻿# mdmWindowsInformationProtectionPolicy resource type
+﻿dmWindowsInformationProtectionPolicy resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -50,21 +50,21 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input protected apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
-|exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input exempt apps through xml files Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|protectedAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input protected apps through XML files. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
+|exemptAppLockerFiles|[windowsInformationProtectionAppLockerFile](../resources/intune_mam_windowsinformationprotectionapplockerfile.md) collection|Another way to input exempt apps through XML files. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |assignments|[targetedManagedAppPolicyAssignment](../resources/intune_mam_targetedmanagedapppolicyassignment.md) collection|Navigation property to list of security groups targeted for policy. Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.windowsInformationProtection",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsInformationProtectionPolicy"
-}
--->
+}-->
 ``` json
 {
-  "@odata.type": "#microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy",
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
@@ -191,21 +191,6 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "recurrenceRange resource",
-  "keywords": "",
-  "section": "documentation",
-  "suppressions": [
-      "Error: microsoft.graph.deviceAppManagement/mdmWindowsInformationProtectionPolicies:
-      Referenced type microsoft.graph.mdmWindowsInformationProtectionPolicy is not defined in the doc set! Potential suggestion: microsoft.intune_mam_graph.mdmWindowsInformationProtectionPolicy"
-  ],
-  "tocPath": ""
-}-->
-
 
 
 
