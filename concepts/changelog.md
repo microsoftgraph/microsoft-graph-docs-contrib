@@ -98,8 +98,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Reports APIs
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Addition    | v1.0    | Added [Activated On Shared Computer] to (../api-reference/v1.0/api/reportroot_getoffice365activationsuserdetail.md). |
-| Addition    | v1.0    | Added [Shared Computer Activation] to (../api-reference/v1.0/api/reportroot_getoffice365activationsusercounts.md). |
+| Addition    | v1.0    | Added the **Activated On Shared Computer** property to [getoffice365activationsuserdetail](../api-reference/v1.0/api/reportroot_getoffice365activationsuserdetail.md). |
+| Addition    | v1.0    | Added the **Shared Computer Activation** property to [getoffice365activationsusercounts](../api-reference/v1.0/api/reportroot_getoffice365activationsusercounts.md). |
 
 ### Security APIs
 
