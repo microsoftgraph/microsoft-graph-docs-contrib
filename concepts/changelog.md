@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## September 2018
+
+### Security APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta       | Added the Secure Score APIs to the [security API](../api-reference/beta/resources/securescore-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (and related entities)<br/>[List secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[List secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
+
 ## August 2018
 
 ### Microsoft Intune APIs
