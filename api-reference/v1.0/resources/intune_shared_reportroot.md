@@ -39,10 +39,18 @@ Here is a JSON representation of the resource.
 }
 ```
 
+## Example
 
+<!--{"blockType": "request"}-->
+```http
+GET https://graph.microsoft.com/v1.0/reports
+```
 
+<!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.reportRoot"}-->
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-
-
-
-
+{
+}
+```

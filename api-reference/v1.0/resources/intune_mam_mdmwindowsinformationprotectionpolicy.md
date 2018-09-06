@@ -60,11 +60,11 @@ Here is a JSON representation of the resource.
   "blockType": "resource",
   "baseType": "microsoft.graph.windowsInformationProtection",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.windowsInformationProtectionPolicy"
+  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
 }-->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
+  "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy",
   "displayName": "String",
   "description": "String",
   "createdDateTime": "String (timestamp)",
@@ -91,7 +91,7 @@ Here is a JSON representation of the resource.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "<Unknown Primitive Type Edm.Guid>",
+  "rightsManagementServicesTemplateId": "guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
