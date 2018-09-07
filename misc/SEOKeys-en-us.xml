@@ -1319,7 +1319,6 @@
         <Item text="IP range" url="/en-us/api-reference/v1.0/resources/intune_mam_iprange"/>
         <Item text="IPv4 range" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv4range"/>
         <Item text="IPv6 range" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range"/>
-        <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json"/>
         <Item text="Key/value pair" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair"/>
         <Item text="Managed app clipboard sharing level" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel"/>
         <Item text="Managed app configuration" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
@@ -4854,7 +4853,6 @@
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_get"/>
         </Item>
         <Item text="iOS mobile app identifier" url="/en-us/api-reference/beta/resources/intune_mam_iosmobileappidentifier"/>
-        <Item text="JSON" url="/en-us/api-reference/beta/resources/intune_mam_json"/>
         <Item text="Managed app clipboard sharing level" url="/en-us/api-reference/beta/resources/intune_mam_managedappclipboardsharinglevel"/>
         <Item text="Managed app configuration" url="/en-us/api-reference/beta/resources/intune_mam_managedappconfiguration">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_managedappconfiguration_list"/>

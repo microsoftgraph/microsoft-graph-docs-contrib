@@ -15,7 +15,6 @@ The following Graph resources are available to manage mobile apps in Intune:
 - [IP range](intune_mam_iprange.md)
 - [IPv4 range](intune_mam_ipv4range.md)
 - [IPv6 range](intune_mam_ipv6range.md)
-- [JSON](intune_mam_json.md)
 - [Key/value pair](intune_mam_keyvaluepair.md)
 - [Managed app clipboard sharing level](intune_mam_managedappclipboardsharinglevel.md)
 - [Managed app configuration](intune_mam_managedappconfiguration.md)
