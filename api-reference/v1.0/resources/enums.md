@@ -418,6 +418,7 @@
 | preset23 | 23      
 | preset24 | 24      
 
+# Security API enums
 
 # alertFeedback enum type
 
@@ -431,3 +432,211 @@ Possible feedback values on the alert provided by an analyst.
 |truePositive|1|Alert is true-positive.|
 |falsePositive|2| Alert is false-positive.|
 |benignPositive|3| Alert is benign-positive.|
+
+# fileHashType enum type
+
+Enum for file hash types.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Unknown type.|
+|sha1|1|SHA1 hash type.|
+|sha256|2| SHA256 hash type.|
+|md5|3| MD5 hash type.|
+|authenticodeHash256|4| AuthenticodeHash256 hash type.|
+|lsHash|5| LsHash hash type.|
+|ctph|6| CTPH hash type.|
+|peSha1|7| PESHA1 hash type.|
+|peSha256|8| PESHA256 hash type.|
+
+# connectionDirection enum type
+
+Enum for the direction of the network connection (inbound/outbound).
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Unknown connection.|
+|inbound|1|Inbound connection.|
+|outbound|2| Outbound connection.|
+
+# securityNetworkProtocol enum type
+
+Possible values for the network protocol.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|-1|Unknown protocol.|
+|ip|0|Internet Protocol.|
+|icmp|1| Internet Control Message Protocol.|
+|igmp|2| Internet Group Management Protocol.|
+|ggp|3| Gateway To Gateway Protocol.|
+|ipv4|4| Internet Protocol version 4.|
+|tcp|6| Transmission Control Protocol.|
+|pup|12| PARC Universal Packet Protocol.|
+|udp|17| User Datagram Protocol.|
+|idp|22| Internet Datagram Protocol.|
+|ipv6|41| Internet Protocol version 6 (ipv6).|
+|ipv6RoutingHeader|43| ipv6 Routing header.|
+|ipv6FragmentHeader|44| ipv6 Fragment header.|
+|ipSecEncapsulatingSecurityPayload|50| ipv6 Encapsulating Security Payload header.|
+|ipSecAuthenticationHeader|51| ipv6 Authentication header.|
+|icmpV6|58| Internet Control Message Protocol for ipv6.|
+|ipv6NoNextHeader|59| ipv6 No next header.|
+|ipv6DestinationOptions|60| ipv6 Destination Options header.|
+|nd|77| Net Disk Protocol (unofficial).|
+|raw|255| Raw IP packet protocol.|
+|ipx|1000| Internet Packet Exchange Protocol.|
+|spx|1256| Sequenced Packet Exchange protocol.|
+|spxII|1257| Sequenced Packet Exchange version 2 protocol.|
+
+# connectionStatus enum type
+
+Enum for the status of connections.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Unknown connection status.|
+|attempted|1|Connection attempted.|
+|succeeded|2| Connection succeeded.|
+|blocked|3| Connection blocked.|
+|failed|4| Connection failed.|
+
+# processIntegrityLevel enum type
+
+Possible integrity level values of the process.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Unknown.|
+|untrusted|10|Integrity level is Untrusted.|
+|low|20| Integrity level is Low.|
+|medium|30| Integrity level is Medium.|
+|high|40| Integrity level is High.|
+|system|50| Integrity level is System.|
+
+# registryHive enum type
+
+Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Unknown hive.|
+|currentConfig|1|HKEY_CURRENT_CONFIG hive.|
+|currentUser|2| HKEY_CURRENT_USER hive.|
+|localMachineSam|3| HKEY_LOCAL_MACHINE\SAM hive.|
+|localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software hive.|
+|localMachineSystem|5| HKEY_LOCAL_MACHINE\System hive.|
+|usersDefault|6| HKEY_USERS\\.DEFAULT hive.|
+
+# registryOperation enum type
+
+Operation that changed the registry key name and/or value.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Unknown registry value type.|
+|create|1|Create registry.|
+|modify|2|Modify registry.|
+|delete|3|Delete registry.|
+
+# registryValueType enum type
+
+Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Unknown registry value type.|
+|binary|1|REG_BINARY registry value type.|
+|dword|2| REG_DWORD registry value type.|
+|dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN registry value type.|
+|dwordBigEndian|4| REG_DWORD_BIG_ENDIAN registry value type.|
+|expandSz|5| REG_EXPAND_SZ registry value type.|
+|link|6| REG_LINK registry value type.|
+|multiSz|7| REG_MULTI_SZ registry value type.|
+|none|8| REG_NONE registry value type.|
+|qword|9| REG_QWORD registry value type.|
+|qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN registry value type.|
+|sz|11| REG_SZ registry value type.|
+
+# alertSeverity enum type
+
+Enum for severity of alerts.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Severity is unknown.|
+|informational|1|Severity is only for information.|
+|low|2| Severity is low.|
+|medium|3| Severity is medium.|
+|high|4| Severity is high.|
+
+# alertStatus enum type
+
+Possible values of an Alert lifecycle status (stage).
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Unknown status.|
+|newAlert|10| Alert is new.|
+|inProgress|20|Alert is in progress.|
+|resolved|30|Alert is resolved.|
+
+# emailRole enum type
+
+Possible values for email roles.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|0|Unknown Role.|
+|sender|1|Sender of the email.|
+|recipient|2|Recipient of the email.|
+
+# logonType enum type
+
+Possible values for the method of user signin.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|-1|Unknown.|
+|interactive|0|Logon is interactive.|
+|remoteInteractive|1| Logon is remote interactive.|
+|network|2| Logon is network.|
+|batch|3| Logon is batch.|
+|service|4| Logon is service.|
+
+# userAccountSecurityType enum type
+
+Possible values for user account types (group membership), per Windows definition.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|-1|Unknown.|
+|standard|0|Member of Standard Users group.|
+|power|1| Member of Power Users group.|
+|administrator|2| Member of Administrators group.|
