@@ -4,6 +4,15 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## September 2018
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Deletion|beta| Removed isBlocks and installedState properties from [teamsApp](teamsApp.md)|
+|Change | beta | Announced that the context property on [teamsApp](teamsApp.md) Will be renamed|
+
 ## August 2018
 
 ### Directory APIs
