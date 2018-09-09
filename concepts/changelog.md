@@ -10,8 +10,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Deletion|beta| Removed isBlocks and installedState properties from [teamsApp](teamsApp.md)|
-|Change | beta | Announced that the context property on [teamsApp](teamsApp.md) Will be renamed|
+|Deletion|beta| Removed isBlocks and installedState properties from [teamsApp](../api-reference/beta/resources/teamsApp.md)|
+|Change | beta | Announced that the context property on [teamsApp](../api-reference/beta/resources/teamsApp.md) will be renamed|
 
 ## August 2018
 
