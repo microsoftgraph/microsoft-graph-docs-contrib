@@ -55,6 +55,7 @@ POST /teams/{id}/clone
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-seperated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
 |visibility|[teamVisibilityType](../resources/teamVisibilityType.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
 
+
 ## Response
 
 If successful, this method will return a `202 Accepted` response code with a Location: header pointing to the operation resource.
