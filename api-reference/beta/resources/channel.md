@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A channel is a collection of [chatMessage](chatmessage.md) within a [team](../resources/team.md). 
+A channel is a collection of [chatMessages](chatmessage.md) within a [team](../resources/team.md). 
 A channel represents a topic, and therefore a logical isolation of discussion, within a team. 
 Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" channel.
 
