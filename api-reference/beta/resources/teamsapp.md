@@ -13,9 +13,9 @@ then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps](../api/teams_apps_list.md) | [teamsApp](teamsApp.md) | Lists apps installed in a team.|
-|[Add app](../api/teams_apps_add.md) | [teamsApp](teamsApp.md) | Adds (installs) an app to a team.|
-|[Remove app](../api/teams_apps_delete.md) | [teamsApp](teamsApp.md) | Removes (uninstalls) an app from a team.|
+|[List apps](../api/teams_apps_list.md) | [teamsApp](teamsapp.md) | Lists apps installed in a team.|
+|[Add app](../api/teams_apps_add.md) | [teamsApp](teamsapp.md) | Adds (installs) an app to a team.|
+|[Remove app](../api/teams_apps_delete.md) | [teamsApp](teamsapp.md) | Removes (uninstalls) an app from a team.|
 
 
 ## Properties
