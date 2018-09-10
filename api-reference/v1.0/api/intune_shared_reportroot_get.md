@@ -1,14 +1,17 @@
-﻿# deviceConfigurationDeviceActivity function
+﻿# Get reportRoot
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Metadata for the device configuration device activity report
+Read properties and relationships of the [reportRoot](../resources/intune_shared_reportroot.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)||
+| &nbsp; &nbsp; Device configuration | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp; &nbsp; Troubleshooting | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -18,9 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reports/deviceConfigurationDeviceActivity
+GET /reports
 ```
 
+## Optional query parameters
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -31,13 +36,13 @@ GET /reports/deviceConfigurationDeviceActivity
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune_deviceconfig_report.md) in the response body.
+If successful, this method returns a `200 OK` response code and [reportRoot](../resources/intune_shared_reportroot.md) object in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1.0/reports/deviceConfigurationDeviceActivity
+GET https://graph.microsoft.com/v1.0/reports
 ```
 
 ### Response
@@ -45,15 +50,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 123
+Content-Length: 124
 
 {
   "value": {
-    "@odata.type": "microsoft.graph.report",
-    "content": {"@odata.type": "Edm.Stream"}
+    "@odata.type": "#microsoft.graph.reportRoot",
+    "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
   }
 }
 ```
+
+
+
+
+
 
 
 
