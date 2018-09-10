@@ -1,8 +1,8 @@
-# Notification resource type
+# notification resource type
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Represents a notification that is published by an app server that targets a specified user. The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user. A notification can be a visual notification payload that can be interpreted by the operating system, including Windows, Android, and iOS platforms. It can also be a data payload that's delivered to and handled by app clients, which then determine the corresponding user experience on each device – usually, a visual notification UI that corresponds to the content in the original data payload that's generated locally. 
-When a user acts on a visual notification, the app client can then use client-side Rome SDK to update the state of the corresponding notification feed in Microsoft Graph - for example, by marking a notification as dismissed. The update will then be fanned out to all other app client endpoints, and the clients handle the change accordingly, for example by dismissing the notification to prevent the user from seeing redundant information. App clients can access the same notification resource at a later time before it expires (even after it is marked as dismissed), as notification history, via the [Project Rome SDK](https://github.com/Microsoft/project-rome). 
+When a user acts on a visual notification, the app client can then use client-side Project Rome SDK to update the state of the corresponding notification feed in Microsoft Graph - for example, by marking a notification as dismissed. The update will then be fanned out to all other app client endpoints, and the clients handle the change accordingly, for example by dismissing the notification to prevent the user from seeing redundant information. App clients can access the same notification resource at a later time before it expires (even after it is marked as dismissed), as notification history, via the [Project Rome SDK](https://github.com/Microsoft/project-rome). 
 
 ## Methods
 |Method | Return Type | Description|
@@ -30,7 +30,8 @@ When a user acts on a visual notification, the app client can then use client-si
 None.
 
 ## JSON representation
-Here is a JSON representation of the resource when a developer publishes a direct visual notification that delivers to destination OS.
+The following is a JSON representation of the resource when you publish a direct visual notification that is delivered to the destination operating system.
+
 ```json
 {	
   "targetHostName": "String",
@@ -56,7 +57,7 @@ Here is a JSON representation of the resource when a developer publishes a direc
 }
 ```
 
-Here is a JSON representation of the resource when a developer publishes a raw data notification that delivers to app clients.
+The following is a JSON representation of the resource when you publish a raw data notification that is delivered to app clients.
 ```json
 {	
   "targetHostName": "String",
