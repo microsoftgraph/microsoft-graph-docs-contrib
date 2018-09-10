@@ -1,8 +1,8 @@
-# notification resource type
+# Notification resource type
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a user-targeting notification that is published by an app server. The notification is stored in Microsoft Graph and is fanned out to different device endpoints owned by the user. A notification can be a visual notification payload that can be interpreted by the operating system, including Windows, Android, and iOS platforms. It can also be a data payload that's delivered to and handled by app clients, which then determine the corresponding user experience on each device – usually, a visual notification UI that corresponds to the content in the original data payload that's generated locally. 
-When a user acts on a visual notification, the app client can then use client-side Rome SDK to update the state of the corresponding notification feed in Microsoft Graph - for example, by marking a notification as dismissed. The update will then be fanned out to all other app client endpoints, and the clients handle the change accordingly, for example by dismissing the notification to prevent the user from seeing redundant information. App clients can access the same notification resource at a later time before it expires (even after it is marked as dismissed), as notification history, via the Project Rome SDK. 
+Represents a notification that is published by an app server that targets a specified user. The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user. A notification can be a visual notification payload that can be interpreted by the operating system, including Windows, Android, and iOS platforms. It can also be a data payload that's delivered to and handled by app clients, which then determine the corresponding user experience on each device – usually, a visual notification UI that corresponds to the content in the original data payload that's generated locally. 
+When a user acts on a visual notification, the app client can then use client-side Rome SDK to update the state of the corresponding notification feed in Microsoft Graph - for example, by marking a notification as dismissed. The update will then be fanned out to all other app client endpoints, and the clients handle the change accordingly, for example by dismissing the notification to prevent the user from seeing redundant information. App clients can access the same notification resource at a later time before it expires (even after it is marked as dismissed), as notification history, via the [Project Rome SDK](https://github.com/Microsoft/project-rome). 
 
 ## Methods
 |Method | Return Type | Description|
@@ -24,37 +24,56 @@ When a user acts on a visual notification, the app client can then use client-si
 | priority | EnumType | Indicates the priority of a raw user notification. Visual notifications are sent with high priority by default. Valid values are High and Low. |
 | groupName | String | The name of the group that this notification belongs to. It is set by the developer for the purpose of grouping notifications together. |
 | targetPolicy | Edm.ComplexType, JSON object | Target policy object handles notification delivery policy at two different levels - endpoint types (Windows, iOS and Android) that should be targeted, and specific endpoints (identified by subscription ids) that should be targeted. |
-| targetPolicy.platformTypes | Edm.ComplexType, Collection (EnumType) | Use to filter the notification fanout to a specific platform or platforms. By default, all push endpoint types (iOS, Windows, and Android) are enabled. |
+| targetPolicy.platformTypes | Edm.ComplexType, Collection (EnumType) | Use to filter the notification distribution to a specific platform or platforms. By default, all push endpoint types (iOS, Windows, and Android) are enabled. |
 
 ## Relationships
 None.
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here is a JSON representation of the resource when a developer publishes a direct visual notification that delivers to destination OS.
 ```json
 {	
-	"targetHostName": "String",
-    "appNotificationId": "String",
-	"expirationDateTime": "DateTimeOffset",
-	"payload":  [
-	{
-		"rawContent": "String",
-		"visual": [
-			{
-				"title": "String",
-				"body": "String"
-			}
-		],
-	}
-],
-    "displayTimeToLive": "Int",
-    "priority": "Enum",
-	"groupName": "String",
-	"targetPolicy":  [
-	{
-		"platformTypes": [{ "@odata.type": "Enum" }]
-	}
-],
+  "targetHostName": "String",
+  "appNotificationId": "String",
+  "expirationDateTime": "DateTimeOffset",
+  "payload":  
+  {
+    "visualContent": 
+    {
+      "title": "String",
+      "body": "String"
+    },
+  },
+  "displayTimeToLive": "Int",
+  "priority": "Enum",
+  "groupName": "String",
+  "targetPolicy":
+  {
+    "platformTypes": [ 
+      "Enum"
+    ]
+  }
 }
 ```
 
+Here is a JSON representation of the resource when a developer publishes a raw data notification that delivers to app clients.
+```json
+{	
+  "targetHostName": "String",
+  "appNotificationId": "String",
+  "expirationDateTime": "DateTimeOffset",
+  "payload":  
+  {
+    "rawContent": "String"
+  },
+  "displayTimeToLive": "Int",
+  "priority": "Enum",
+  "groupName": "String",
+  "targetPolicy":
+  {
+    "platformTypes": [ 
+      "Enum"
+    ]
+  }
+}
+```
