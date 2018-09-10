@@ -45,9 +45,9 @@ You can use the following Microsoft Graph APIs to communicate with other Windows
 
 ## Notifications
 
-You can use the notifications APIs in Microsoft Graph to deliver notifications across multiple endpoints signed in by the same user. You can target a user directly when posting notifications instead of worrying about device addresses/channels. In this way, you can focus on designing the right notification scenarios in a human-centric, rather than a device-centric way. 
+You can use the notifications APIs in Microsoft Graph to deliver notifications across multiple endpoints that the same user is signed in on. You can target a user directly when posting notifications instead of worrying about device addresses/channels. This way, you can focus on designing the right notification scenarios in a human-centric, rather than a device-centric way. 
 
 You can publish a raw data notification or a direct visual notification. When a raw data notification is delivered to a device endpoint, you can then use the [client SDK](https://github.com/Microsoft/project-rome) (Graph notifications SDK for Windows, Project Rome SDK for iOS and Android) to receive and manage notifications. When a direct visual notification is delivered to a device endpoint, it shows the platform-specific native notification to the user. 
 
-For details, see [Create and publish a user-centric notification](../api/projectrome_post_notification.md)
+For details, see [Create and publish a user-centric notification](../api/projectrome_post_notification.md).
 
