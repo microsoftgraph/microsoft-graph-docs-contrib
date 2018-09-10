@@ -1,14 +1,14 @@
-﻿# deviceConfigurationUserActivity function
+﻿# List importedWindowsAutopilotDeviceIdentityUploads
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Metadata for the device configuration user activity report
+List properties and relationships of the [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) objects.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reports/deviceConfigurationUserActivity
+GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ```
 
 ## Request headers
@@ -31,13 +31,13 @@ GET /reports/deviceConfigurationUserActivity
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune_deviceconfig_report.md) in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) objects in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/v1.0/reports/deviceConfigurationUserActivity
+GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 ```
 
 ### Response
@@ -45,15 +45,24 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 123
+Content-Length: 270
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.report",
-    "content": {"@odata.type": "Edm.Stream"}
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityUpload",
+      "id": "8d639524-9524-8d63-2495-638d2495638d",
+      "createdDateTimeUtc": "2016-12-31T23:59:45.8788427-08:00",
+      "status": "pending"
+    }
+  ]
 }
 ```
+
+
+
+
+
 
 
 
