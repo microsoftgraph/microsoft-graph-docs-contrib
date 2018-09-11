@@ -122,8 +122,6 @@ None.
 
 <br/>
 
-> **Note:** _Calendars.Read.Shared_ and _Calendars.ReadWrite.Shared_ are only valid for work or school accounts. All other permissions are valid for both Microsoft accounts and work or school accounts.
-
 ### Example usage
 
 #### Delegated

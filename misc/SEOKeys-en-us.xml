@@ -692,6 +692,14 @@
         </Item>
         <Item text="Imported windows autopilot device identity import status" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityimportstatus"/>
         <Item text="Imported windows autopilot device identity state" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentitystate"/>
+        <Item text="Imported windows autopilot device identity upload" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentityupload_update"/>
+        </Item>
+        <Item text="Imported windows autopilot device identity upload status" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityuploadstatus"/>
       </Item>
       <Item text="Device configuration" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
         <Item text="Android compliance policy" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
@@ -716,6 +724,30 @@
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidgeneraldeviceconfiguration_update"/>
         </Item>
         <Item text="Android required password type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidrequiredpasswordtype"/>
+        <Item text="Android work profile compliance policy" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecompliancepolicy">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecompliancepolicy_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecompliancepolicy_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecompliancepolicy_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecompliancepolicy_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecompliancepolicy_update"/>
+        </Item>
+        <Item text="Android work profile cross profile data sharing type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype"/>
+        <Item text="Android work profile custom configuration" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecustomconfiguration">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecustomconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecustomconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecustomconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecustomconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilecustomconfiguration_update"/>
+        </Item>
+        <Item text="Android work profile default app permission policy type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidworkprofiledefaultapppermissionpolicytype"/>
+        <Item text="Android work profile general device configuration" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration_update"/>
+        </Item>
+        <Item text="Android work profile required password type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilerequiredpasswordtype"/>
         <Item text="App list item" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applistitem"/>
         <Item text="App list type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applisttype"/>
         <Item text="App locker application control type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_applockerapplicationcontroltype"/>
@@ -985,11 +1017,6 @@
         <Item text="Rating United Kingdom television type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype"/>
         <Item text="Rating United States movies type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatesmoviestype"/>
         <Item text="Rating United States television type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatestelevisiontype"/>
-        <Item text="Report" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report"/>
-        <Item text="Report root" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_reportroot">
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_get"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_reportroot_update"/>
-        </Item>
         <Item text="Required password type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_requiredpasswordtype"/>
         <Item text="Safe search filter type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_safesearchfiltertype"/>
         <Item text="Setting source" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingsource"/>
@@ -1228,15 +1255,6 @@
         <Item text="Managed device owner type" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddeviceownertype"/>
         <Item text="Managed device partner reported health state" url="/en-us/api-reference/v1.0/resources/intune_devices_manageddevicepartnerreportedhealthstate"/>
         <Item text="Management agent type" url="/en-us/api-reference/v1.0/resources/intune_devices_managementagenttype"/>
-        <Item text="Mobile app action type" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappactiontype"/>
-        <Item text="Mobile app intent" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintent"/>
-        <Item text="Mobile app intent and state detail" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileappintentandstatedetail"/>
-        <Item text="Mobile app troubleshooting app policy creation history" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapppolicycreationhistory"/>
-        <Item text="Mobile app troubleshooting app state history" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappstatehistory"/>
-        <Item text="Mobile app troubleshooting app target history" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingapptargethistory"/>
-        <Item text="Mobile app troubleshooting app update history" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingappupdatehistory"/>
-        <Item text="Mobile app troubleshooting device checkin history" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootingdevicecheckinhistory"/>
-        <Item text="Mobile app troubleshooting history item" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_mobileapptroubleshootinghistoryitem"/>
         <Item text="Notification message template" url="/en-us/api-reference/v1.0/resources/intune_notification_notificationmessagetemplate">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_notification_notificationmessagetemplate_get"/>
@@ -1258,8 +1276,6 @@
         </Item>
         <Item text="Remote lock action result" url="/en-us/api-reference/v1.0/resources/intune_devices_remotelockactionresult"/>
         <Item text="Reset passcode action result" url="/en-us/api-reference/v1.0/resources/intune_devices_resetpasscodeactionresult"/>
-        <Item text="Resultant app state" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_resultantappstate"/>
-        <Item text="Run state" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_runstate"/>
         <Item text="Update windows device account action parameter" url="/en-us/api-reference/v1.0/resources/intune_devices_updatewindowsdeviceaccountactionparameter"/>
         <Item text="Windows defender scan action result" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdefenderscanactionresult"/>
         <Item text="Windows device account" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceaccount"/>
@@ -1303,7 +1319,6 @@
         <Item text="IP range" url="/en-us/api-reference/v1.0/resources/intune_mam_iprange"/>
         <Item text="IPv4 range" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv4range"/>
         <Item text="IPv6 range" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range"/>
-        <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json"/>
         <Item text="Key/value pair" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair"/>
         <Item text="Managed app clipboard sharing level" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel"/>
         <Item text="Managed app configuration" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
@@ -1585,9 +1600,15 @@
         <Item text="Group assignment target" url="/en-us/api-reference/v1.0/resources/intune_shared_groupassignmenttarget"/>
         <Item text="Install intent" url="/en-us/api-reference/v1.0/resources/intune_shared_installintent"/>
         <Item text="MIME content" url="/en-us/api-reference/v1.0/resources/intune_shared_mimecontent"/>
+        <Item text="Report" url="/en-us/api-reference/v1.0/resources/intune_shared_report"/>
+        <Item text="Report root" url="/en-us/api-reference/v1.0/resources/intune_shared_reportroot">
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_reportroot_get"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_reportroot_update"/>
+        </Item>
         <Item text="Saved UI state generation options" url="/en-us/api-reference/v1.0/resources/intune_shared_saveduistategenerationoptions"/>
         <Item text="URI" url="/en-us/api-reference/v1.0/resources/intune_shared_uri"/>
         <Item text="User" url="/en-us/api-reference/v1.0/resources/intune_shared_user">
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_user_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_user_get"/>
           <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_user_create"/>
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_user_delete"/>
@@ -4832,7 +4853,6 @@
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappregistration_get"/>
         </Item>
         <Item text="iOS mobile app identifier" url="/en-us/api-reference/beta/resources/intune_mam_iosmobileappidentifier"/>
-        <Item text="JSON" url="/en-us/api-reference/beta/resources/intune_mam_json"/>
         <Item text="Managed app clipboard sharing level" url="/en-us/api-reference/beta/resources/intune_mam_managedappclipboardsharinglevel"/>
         <Item text="Managed app configuration" url="/en-us/api-reference/beta/resources/intune_mam_managedappconfiguration">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_managedappconfiguration_list"/>
@@ -5901,6 +5921,13 @@
 			<Item text="List alerts" url="/en-us/api-reference/beta/api/alert_list" />
 			<Item text="Get alert" url="/en-us/api-reference/beta/api/alert_get" />
 			<Item text="Update alert" url="/en-us/api-reference/beta/api/alert_update" />
+		</Item>
+		<Item text="Secure scores" url="/en-us/api-reference/beta/resources/securescores" >
+			<Item text="List secure scores" url="/en-us/api-reference/beta/api/securescores_list" />
+		</Item>
+		<Item text="Secure score control profiles" url="/en-us/api-reference/beta/resources/securescorecontrolprofiles" >
+			<Item text="List secure score control profiles" url="/en-us/api-reference/beta/api/securescorecontrolprofiles_list" />
+			<Item text="Update secure score control profiles" url="/en-us/api-reference/beta/api/securescorecontrolprofiles_update" />
 		</Item>
 		<Item text="Errors" url="/en-us/api-reference/beta/resources/security-error-codes" />
 	</Item>
