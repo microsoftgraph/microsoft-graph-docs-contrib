@@ -1,4 +1,4 @@
-﻿# iosGeneralDeviceConfiguration resource type
+# iosGeneralDeviceConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -100,6 +100,7 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 |kioskModeAllowVolumeButtons|Boolean|Indicates whether or not to allow use of the volume buttons while in kiosk mode.|
 |kioskModeAllowZoomSettings|Boolean|Indicates whether or not to allow access to the zoom settings while in kiosk mode.|
 |kioskModeAppStoreUrl|String|URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.|
+|kioskModeBuiltInAppId|String|ID for built-in apps to use for kiosk mode. Used when KioskModeManagedAppId and KioskModeAppStoreUrl are not set.|
 |kioskModeRequireAssistiveTouch|Boolean|Indicates whether or not to require assistive touch while in kiosk mode.|
 |kioskModeRequireColorInversion|Boolean|Indicates whether or not to require color inversion while in kiosk mode.|
 |kioskModeRequireMonoAudio|Boolean|Indicates whether or not to require mono audio while in kiosk mode.|
@@ -167,12 +168,12 @@ Inherits from [deviceConfiguration](../resources/intune_deviceconfig_deviceconfi
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!-- {
+<!--{
   "blockType": "resource",
+  "baseType": "microsoft.graph.deviceConfiguration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.iosGeneralDeviceConfiguration"
-}
--->
+}-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -284,6 +285,7 @@ Here is a JSON representation of the resource.
   "kioskModeAllowVolumeButtons": true,
   "kioskModeAllowZoomSettings": true,
   "kioskModeAppStoreUrl": "String",
+  "kioskModeBuiltInAppId": "String",
   "kioskModeRequireAssistiveTouch": true,
   "kioskModeRequireColorInversion": true,
   "kioskModeRequireMonoAudio": true,
@@ -395,6 +397,11 @@ Here is a JSON representation of the resource.
   "wiFiConnectOnlyToConfiguredNetworks": true
 }
 ```
+
+
+
+
+
 
 
 

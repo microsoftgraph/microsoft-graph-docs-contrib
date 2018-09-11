@@ -38,7 +38,7 @@ The current user's account has exceeded the maximum number of active requests. Y
 The service can't create a page in the requested section because that section is protected by a password.
 
 ### 10005
-The request contains more than the maximum number of image tags in which the **data-render-src** attribute contains a PDF. See [Add images and files](onenote-images-files.md).
+The request contains more than the maximum number of image tags in which the **data-render-src** attribute contains a PDF. See [Add images and files](onenote_images_files.md).
 
 ### 10006
 The OneNote API was unable to create a page in the specified section because that section is corrupt.
@@ -147,7 +147,7 @@ The property that you requested doesn't exist.
 You requested a resource that doesn't exist.
 
 ### 20103
-The **expand** query is not supported for this request. See [Supported OData query string options](onenote-get-content.md#query-options).
+The **expand** query is not supported for this request. See [Supported OData query string options](onenote-get-content.md#supported-odata-query-string-options).
 
 ### 20104
 The **pagelevel** query option is supported only when querying for the pages collection in a section or for a specific page. For example:  
@@ -261,7 +261,7 @@ See [Use note tags](onenote-note-tags.md).
 The target in your PATCH request doesn't support the specified action. See [Update page content](onenote_update_page.md).
 
 ### 20142
-Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which is not supported. See [Supported OData query string options](onenote-get-content.md#query-options).
+Your request contains an **expand** expression for a parent of child entities or a child of parent entities, which is not supported. See [Supported OData query string options](onenote-get-content.md#supported-odata-query-string-options).
 
 ### 20143
 The OData query is invalid.
@@ -323,7 +323,7 @@ The application has issued too many requests on behalf of a user in a short peri
 For more information, see [OneNote API throttling and how to avoid it](http://blogs.msdn.com/b/onenotedev/archive/2016/01/13/onenote-api-throttling-and-best-practices.aspx).
 
 ### 20168
-The video source specified in the request is not supported. See [Supported video sites](onenote-images-files.md#videos) for the current list.
+The video source specified in the request is not supported. See [Supported video sites](onenote_images_files.md#adding-videos) for the current list.
 
 
 ## Codes from 30001 to 39999
