@@ -34,19 +34,29 @@ Microsoft Graph Security-integrated solutions will receive alerts from the follo
 
 ## Common use cases
 
-The following are some of the most popular requests for working with the Microsoft Graph Security API:
+The following are some of the most popular requests for working with the Microsoft Graph Security API.
 
 | **Use cases**   | **REST resources** | **Try it in Graph Explorer** |
 |:---------------|:--------|:----------|
 | List alerts | [List alerts](../api/alert_list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | Update alerts | [Update alert](../api/alert_update.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
-|List secure scores|[List secureScores](../api/securescores_list.md) (Preview)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|List secure score control profiles|[List secureScoreControlProfiles](../api/securescorecontrolprofiles_list.md) (Preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Update secure score control profiles|[Update secureScoreControlProfiles](../api/securescorecontrolprofiles_update.md) (Preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+|List secure scores|[List secureScores](../api/securescores_list.md) (preview)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|List secure score control profiles|[List secureScoreControlProfiles](../api/securescorecontrolprofiles_list.md) (preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Update secure score control profiles|[Update secureScoreControlProfiles](../api/securescorecontrolprofiles_update.md) (preview)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/en-us/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
 
 You can use Microsoft Graph [webhooks](../../../concepts/webhooks.md) to subscribe to and receive notifications about updates to Microsoft Graph Security entities.
 
-## Resources
+## Next steps
+
+The Microsoft Graph Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
+
+- Drill down into [alerts](alert.md), [secureScore](securescores.md) (Preview), and [secureScoreControlProfiles](securescorecontrolprofiles.md) (Preview).
+- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
+- Try [subscribing to and receiving notifications](../../../concepts/webhooks.md) on entity changes.
+
+Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+
+## See also
 
 Code and contribute to these Microsoft Graph Security API samples:
 
@@ -58,13 +68,3 @@ Engage with the community:
 
 - [Join the tech community](https://aka.ms/graphsecuritycommunity)
 - [Discuss on StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
-
-## Next steps
-
-The Microsoft Graph Security API can open up new ways for you to engage with different security solutions from Microsoft and partners. Follow these steps to get started:
-
-- Drill down into [alerts](alert.md), [secureScore](securescores.md) (Preview), and [secureScoreControlProfiles](securescorecontrolprofiles.md) (Preview).
-- Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
-- Try [subscribing to and receiving notifications](../../../concepts/webhooks.md) on entity changes.
-
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
