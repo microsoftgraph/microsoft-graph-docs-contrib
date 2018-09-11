@@ -13,6 +13,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta| Removed isBlocks and installedState properties from [teamsApp](../api-reference/beta/resources/teamsapp.md)|
 |Change | beta | Announced that the context property on [teamsApp](../api-reference/beta/resources/teamsapp.md) will be renamed|
 
+### Project Rome notifications API
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition          | Beta        | Added the [notification](../api-reference/beta/resources/projectrome_notification.md) resource type. |
+| Addition          | Beta        | Added the [Create and publish notification] (../api-reference/beta/api/projectrome_notification_post.md) API.|
+
 ### Security APIs
 
 | **Change type** | **Version** | **Description**              |
