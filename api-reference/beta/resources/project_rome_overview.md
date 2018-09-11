@@ -49,5 +49,5 @@ You can use the notifications APIs in Microsoft Graph to deliver notifications a
 
 You can publish a raw data notification or a direct visual notification. When a raw data notification is delivered to a device endpoint, you can then use the [client SDK](https://github.com/Microsoft/project-rome) (Microsoft Graph notifications SDK for Windows, Project Rome SDK for iOS and Android) to receive and manage notifications. When a direct visual notification is delivered to a device endpoint, it shows the platform-specific native notification to the user. 
 
-For details, see [Create and publish a user-centric notification](../api/projectrome_post_notification.md).
+For details, see [Create and publish a user-centric notification](../api/projectrome_notification_post.md).
 
