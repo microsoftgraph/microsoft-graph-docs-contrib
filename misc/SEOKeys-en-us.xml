@@ -36,6 +36,7 @@
   <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview" >
     <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
     <Item text="Device relay (preview)" url="/en-us/concepts/device-relay-concept-overview" />
+	<Item text="Notifications (preview)" url="/en-us/concepts/notifications-concept-overview" />
 	<Item text="Build cross-device apps" url="/en-us/concepts/cross-device-app-configuration" />
   </Item>
   <Item text="Customer booking (preview)" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
@@ -124,7 +125,7 @@
 	  <Item text="Create user" url="/en-us/api-reference/v1.0/api/user_post_users" SEOKeyword="Create User, Microsoft Graph API, user API" SEODescription="Use this API to create a new User." />
 	  <Item text="Update user" url="/en-us/api-reference/v1.0/api/user_update" SEOKeyword="Update user, Microsoft Graph API, user API" SEODescription="Update the properties of user object." />
 	  <Item text="Delete user" url="/en-us/api-reference/v1.0/api/user_delete" SEOKeyword="Delete user, Microsoft Graph API, user API" SEODescription="Delete user." /> 
-      <Item text="Get delta" url="/en-us/api-reference/beta/api/user_delta" />
+      <Item text="Get delta" url="/en-us/api-reference/v1.0/api/user_delta" />
     </Item>
     <Item text="Calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="Calendar API">
       <Item text="List events" url="/en-us/api-reference/v1.0/api/user_list_events" SEOKeyword="List events, Microsoft Graph API, Users API" SEODescription="Retrieve a list of event objects." />
@@ -2514,6 +2515,11 @@
 			<Item text="History item" url="/en-us/api-reference/beta/resources/projectrome_historyitem" >
 				<Item text="Create or replace a history item" url="/en-us/api-reference/beta/api/projectrome_put_historyitem" />
 				<Item text="Delete a history item" url="/en-us/api-reference/beta/api/projectrome_delete_historyitem" />
+			</Item>
+		</Item>
+		<Item text="Notifications" url="/en-us/api-reference/beta/resources/notifications-api-overview" >
+			<Item text="Notification" url="/en-us/api-reference/resources/api/projectrome_notification" >
+				<Item text="Create" url="/en-us/api-reference/beta/api/projectrome_notification_post" />
 			</Item>
 		</Item>
 	</Item>
