@@ -20,7 +20,7 @@ Retrieve the properties and relationships of an IRS 1099 codes object for Dynami
 ## HTTP request
 
 ```
-GET /financials/companies({id})/irs1099Codes({id})
+GET /financials/companies{id}/irs1099Codes{id}
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and an **irs1099
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/irs1099Codes({id})
+GET https://graph.microsoft.com/beta/financials/companies{id}/irs1099Codes{id}
 ```
 
 **Response**

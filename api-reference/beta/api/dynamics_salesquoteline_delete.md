@@ -19,7 +19,7 @@ Delete a sales quote line object from Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-DELETE /financials/companies({id})/salesQuotes({id})/salesQuoteLines
+DELETE /financials/companies{id}/salesQuotes{id}/salesQuoteLines
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies({id})/salesQuotes({id})/salesQuoteLines
+DELETE https://graph.microsoft.com/beta/financials/companies{id}/salesQuotes{id}/salesQuoteLines
 ```
 
 **Response** 

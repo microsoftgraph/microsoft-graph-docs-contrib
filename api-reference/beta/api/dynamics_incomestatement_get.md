@@ -19,7 +19,7 @@ Retrieve the properties and relationships of an income statement report object f
 
 ## HTTP request
 ```
-GET /financials/companies({id})/incomeStatement
+GET /financials/companies{id}/incomeStatement
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and an **incomeS
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/incomeStatement?$orderby=lineNumber&$filter=dateFilter ge 2019-01-01 and dateFilter le 2020-12-31
+GET https://graph.microsoft.com/beta/financials/companies{id}/incomeStatement?$orderby=lineNumber&$filter=dateFilter ge 2019-01-01 and dateFilter le 2020-12-31
 ```
 
 **Response**

@@ -19,7 +19,7 @@ Create an employee object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/employees
+POST /financials/companies{id}/employees
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and an **empl
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/employees
+POST https://graph.microsoft.com/beta/financials/companies{id}/employees
 Content-type: application/json
 
 {
@@ -99,7 +99,7 @@ Content-type: application/json
   "terminationDate": "0001-01-01",
   "status": "Active",
   "birthDate": "1973-12-12",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/employees({id})/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies{id}/employees{id}/picture",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z" 
 }
 

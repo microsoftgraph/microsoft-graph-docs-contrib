@@ -20,7 +20,7 @@ Create a purchase invoice report object in Dynamics 365 Business Central.
 ## HTTP request
 
 ```
-POST /financials/companies({id})/purchaseInvoices
+POST /financials/companies{id}/purchaseInvoices
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns ```201 Created``` response code and a **purch
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/purchaseInvoices
+POST https://graph.microsoft.com/beta/financials/companies{id}/purchaseInvoices
 Content-type: application/json
 
 {

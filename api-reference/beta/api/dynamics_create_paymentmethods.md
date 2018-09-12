@@ -19,7 +19,7 @@ Create a payment method object in DDynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/paymentMethods
+POST /financials/companies{id}/paymentMethods
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **payme
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/paymentMethods
+POST https://graph.microsoft.com/beta/financials/companies{id}/paymentMethods
 Content-type: application/json
 
 {

@@ -20,7 +20,7 @@ Create a sales quote line object in Dynamics 365 Business Central.
 ## HTTP request
 
 ```
-POST /financials/companies({id})/salesQuotes({id})/salesQuoteLines
+POST /financials/companies{id}/salesQuotes{id}/salesQuoteLines
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns ```201 Created``` response code and a **sales
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/salesQuotes({id})/salesQuoteLines
+POST https://graph.microsoft.com/beta/financials/companies{id}/salesQuotes{id}/salesQuoteLines
 Content-type: application/json
 
 {

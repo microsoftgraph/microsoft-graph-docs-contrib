@@ -20,7 +20,7 @@ Update the properties of a sales quote line object for Dynamics 365 Business Cen
 ## HTTP request
 
 ```
-PATCH /financials/companies({id})/salesQuotes({id})/salesQuoteLines
+PATCH /financials/companies{id}/salesQuotes{id}/salesQuoteLines
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies({id})/salesQuotes({id})/salesQuoteLines
+PATCH https://graph.microsoft.com/beta/financials/companies{id}/salesQuotes{id}/salesQuoteLines
 Content-type: application/json
 
 {

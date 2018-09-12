@@ -117,7 +117,7 @@ The sales invoice resource type offers bound actions, which perform actions asso
 |cancelAndSend          |Cancels the corresponding invoice and sends the canceled record to the customer. |
 
 Performing an action against the sales invoice is illustrated in the following example:  
-`POST https://graph.microsoft.com/beta/financials/companies({id})/salesInvoices({id})/post`.
+`POST https://graph.microsoft.com/beta/financials/companies{id}/salesInvoices{id}/post`.
 
 The response has no content; the response code is 204.
 

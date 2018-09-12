@@ -19,7 +19,7 @@ Create a tax groups object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/taxGroups
+POST /financials/companies{id}/taxGroups
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns ```201 Created``` response code and a **taxGr
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/taxGroups
+POST https://graph.microsoft.com/beta/financials/companies{id}/taxGroups
 Content-type: application/json
 
 {

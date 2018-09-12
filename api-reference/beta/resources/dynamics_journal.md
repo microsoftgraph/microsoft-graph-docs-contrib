@@ -38,7 +38,7 @@ Represents a journal in Dynamics 365 Business Central.
 The journal resource type offers a bound action called `post` which posts the corresponding general journal batch.
 
 Posting the general journal batch is illustrated in the following example:  
-`POST https://graph.microsoft.com/beta/financials/companies({id})/journals({id})/post`.
+`POST https://graph.microsoft.com/beta/financials/companies{id}/journals{id}/post`.
 
 The response has no content; the response code is 204.
 

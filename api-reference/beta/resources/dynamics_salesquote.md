@@ -109,10 +109,10 @@ The sales quote resource type offers bound actions, which perform actions associ
 |send                   |Sends the corresponding quote document to the customer.|
 
 Performing an action against the sales invoice is illustrated in the following example:  
-`POST https://graph.microsoft.com/beta/financials/companies({id})/salesQuotes({id})/makeInvoice`.
+`POST https://graph.microsoft.com/beta/financials/companies{id}/salesQuotes{id}/makeInvoice`.
 
 The response has no content; the response code is 204. For the `makeInvoice` action, the Location response header contains the URL of the invoice created by the action for the quote. For example:
-`https://graph.microsoft.com/beta/financials/companies({id})/salesInvoices({id})`
+`https://graph.microsoft.com/beta/financials/companies{id}/salesInvoices{id}`
 
 ## See also
 [Graph Reference](../api/dynamics_graph_reference.md)  

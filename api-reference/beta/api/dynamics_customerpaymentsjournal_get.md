@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a customer payment journal object f
 ## HTTP request
 
 ```
-GET /financials/companies({id})/customerPaymentJournals({id})
+GET /financials/companies{id}/customerPaymentJournals{id}
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and a **customer
 Here is an example of the request.
 
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/customerPaymentJournals({id})
+GET https://graph.microsoft.com/beta/financials/companies{id}/customerPaymentJournals{id}
 ```
 
 **Response**

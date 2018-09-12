@@ -19,7 +19,7 @@ Update the properties of a currency object for Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-PATCH /financials/companies({id})/currencies({id})
+PATCH /financials/companies{id}/currencies{id}
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies({id})/currencies({id})
+PATCH https://graph.microsoft.com/beta/financials/companies{id}/currencies{id}
 Content-type: application/json
 
 {

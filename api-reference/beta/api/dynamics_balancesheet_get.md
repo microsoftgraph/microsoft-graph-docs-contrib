@@ -19,7 +19,7 @@ Retrieve the properties and relationships of a balance sheet report object for D
 
 ## HTTP request
 ```
-GET /financials/companies({id})/balanceSheet
+GET /financials/companies{id}/balanceSheet
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and a **balanceS
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/balanceSheet?$orderby=lineNumber&$filter=dateFilter eq 2020-12-30
+GET https://graph.microsoft.com/beta/financials/companies{id}/balanceSheet?$orderby=lineNumber&$filter=dateFilter eq 2020-12-30
 ```
 
 **Response**

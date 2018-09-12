@@ -19,7 +19,7 @@ Retrieve the properties and relationships of a company information object for Dy
 
 ## HTTP request
 ```
-GET /financials/companies({id})/companyInformation({id})
+GET /financials/companies{id}/companyInformation{id}
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and a **companyI
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/companyInformation({id})
+GET https://graph.microsoft.com/beta/financials/companies{id}/companyInformation{id}
 ```
 
 **Response**
@@ -67,7 +67,7 @@ Here is an example of the response.
   "currencyCode": "USD",
   "currentFiscalYearStartDate": "2018-01-01",
   "industry": "",
-  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies({id})/companyInformation({id})/picture",
+  "picture@odata.mediaReadLink": "https://api.financials.dynamics.com/v1.0/api/beta/companies{id}/companyInformation{id}/picture",
   "businessProfileId": "",
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
 }

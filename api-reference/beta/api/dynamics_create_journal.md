@@ -20,7 +20,7 @@ Creates a journal in Dynamics 365 Business Central.
 ## HTTP request
 
 ```
-POST /financials/companies({id})/journals({id})
+POST /financials/companies{id}/journals{id}
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns ```201 Created``` response code and a **journ
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/journals
+POST https://graph.microsoft.com/beta/financials/companies{id}/journals
 Content-type: application/json
 
 ```json

@@ -20,7 +20,7 @@ Create a dimension line object in Dynamics 365 Business Central.
 ## HTTP request
 
 ```
-POST /financials/companies({id})/dimensionLines
+POST /financials/companies{id}/dimensionLines
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns ```201 Created``` response code and a **dimen
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/dimensionLines
+POST https://graph.microsoft.com/beta/financials/companies{id}/dimensionLines
 Content-type: application/json
 
 {

@@ -20,7 +20,7 @@ Update the properties of a sales credit memo object for Dynamics 365 Business Ce
 ## HTTP request
 
 ```
-PATCH /financials/companies({id})/salesCreditMemos({id})
+PATCH /financials/companies{id}/salesCreditMemos{id}
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies({id})/salesCreditMemos({id})
+PATCH https://graph.microsoft.com/beta/financials/companies{id}/salesCreditMemos{id}
 Content-type: application/json
 
 {

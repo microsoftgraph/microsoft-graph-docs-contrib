@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a tax area object for Dynamics 365 
 ## HTTP request
 
 ```
-GET /financials/companies({id})/taxAreas({id})
+GET /financials/companies{id}/taxAreas{id}
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and a **taxAreas
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/taxAreas({id})
+GET https://graph.microsoft.com/beta/financials/companies{id}/taxAreas{id}
 ```
 
 **Response**

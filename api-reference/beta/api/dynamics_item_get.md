@@ -21,7 +21,7 @@ Retrieve the properties and relationships of an item object for Dynamics 365 Bus
 ## HTTP request
 
 ```
-GET /financials/companies({id})/items({id})
+GET /financials/companies{id}/items{id}
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and an **items**
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/items({id})
+GET https://graph.microsoft.com/beta/financials/companies{id}/items{id}
 ```
 
 **Response**

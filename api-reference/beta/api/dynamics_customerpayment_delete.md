@@ -19,7 +19,7 @@ Delete a customerPayment from Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-DELETE /financials/companies({id})/customerPaymentJournals({id})/customerPayments({id})
+DELETE /financials/companies{id}/customerPaymentJournals{id}/customerPayments{id}
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies({id})/customerPaymentJournals({id})/customerPayments({id})
+DELETE https://graph.microsoft.com/beta/financials/companies{id}/customerPaymentJournals{id}/customerPayments{id}
 ```
 
 **Response** 

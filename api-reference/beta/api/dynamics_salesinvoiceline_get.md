@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a sales invoice line object for Dyn
 ## HTTP request
 
 ```
-GET /financials/companies({id})/salesInvoices({id})/salesInvoiceLines
+GET /financials/companies{id}/salesInvoices{id}/salesInvoiceLines
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and a **salesInv
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/salesInvoices({id})/salesInvoiceLines
+GET https://graph.microsoft.com/beta/financials/companies{id}/salesInvoices{id}/salesInvoiceLines
 ```
 
 **Response**

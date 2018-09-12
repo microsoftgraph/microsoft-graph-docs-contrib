@@ -19,7 +19,7 @@ Create an IRS 1099 code object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/irs1099Codes
+POST /financials/companies{id}/irs1099Codes
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and an **irs1
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/irs1099Codes
+POST https://graph.microsoft.com/beta/financials/companies{id}/irs1099Codes
 Content-type: application/json
 
 {

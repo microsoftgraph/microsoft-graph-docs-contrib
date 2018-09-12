@@ -19,7 +19,7 @@ Create a currency object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/currencies
+POST /financials/companies{id}/currencies
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```201 Created``` response code and a **curre
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/currencies
+POST https://graph.microsoft.com/beta/financials/companies{id}/currencies
 Content-type: application/json
 
 {

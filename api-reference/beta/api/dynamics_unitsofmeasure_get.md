@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a units of measure object for Dynam
 ## HTTP request
 
 ```
-GET /financials/companies({id})/unitsOfMeasure({id})
+GET /financials/companies{id}/unitsOfMeasure{id}
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and a **unitsOfM
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/unitsOfMeasure({id})
+GET https://graph.microsoft.com/beta/financials/companies{id}/unitsOfMeasure{id}
 ```
 
 **Response**

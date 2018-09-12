@@ -20,7 +20,7 @@ Update the properties of a purchase invoice line object for Dynamics 365 Busines
 ## HTTP request
 
 ```
-PATCH /financials/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines(documentId=({id}),sequence=({number}))
+PATCH /financials/companies{id}/purchaseInvoices{id}/purchaseInvoiceLines(documentId={id},sequence=({number}))
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 
 Here is an example of the request.
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies({id})/purchaseInvoices({id})/purchaseInvoiceLines(documentId=({id}),sequence=({number}))
+PATCH https://graph.microsoft.com/beta/financials/companies{id}/purchaseInvoices{id}/purchaseInvoiceLines(documentId={id},sequence=({number}))
 Content-type: application/json
 
 {

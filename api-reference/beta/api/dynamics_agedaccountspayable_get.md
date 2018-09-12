@@ -19,7 +19,7 @@ Retrieve the properties and relationships of an aged accounts payable report obj
 
 ## HTTP request
 ```
-GET /financials/companies({id})/agedAccountsPayable
+GET /financials/companies{id}/agedAccountsPayable
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns a ```200 OK``` response code and an **agedAcc
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
+GET https://graph.microsoft.com/beta/financials/companies{id}/agedAccountsPayable?$filter=periodLengthFilter eq '3M'
 ```
 
 **Response**

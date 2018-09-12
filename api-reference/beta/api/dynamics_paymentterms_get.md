@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a payment terms object for Dynamics
 ## HTTP request
 
 ```
-GET /financials/companies({id})/paymentTerms({id})
+GET /financials/companies{id}/paymentTerms{id}
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and a **paymentT
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/paymentTerms({id})
+GET https://graph.microsoft.com/beta/financials/companies{id}/paymentTerms{id}
 ```
 
 **Response**

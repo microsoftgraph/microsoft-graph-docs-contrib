@@ -20,7 +20,7 @@ Retrieve the properties and relationships of a sales quote line object for Dynam
 ## HTTP request
 
 ```
-GET /financials/companies({id})/salesQuotes({id})/salesQuoteLines
+GET /financials/companies{id}/salesQuotes{id}/salesQuoteLines
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns a ```200 OK``` response code and a **salesQuo
 
 Here is an example of the request.
 ```json
-GET https://graph.microsoft.com/beta/financials/companies({id})/salesQuotes({id})/salesQuoteLines
+GET https://graph.microsoft.com/beta/financials/companies{id}/salesQuotes{id}/salesQuoteLines
 ```
 
 **Response**

@@ -19,7 +19,7 @@ Delete a sales credit memo line object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-DELETE /financials/companies({id})/salesCreditMemos({id})/salesCreditMemoLines
+DELETE /financials/companies{id}/salesCreditMemos{id}/salesCreditMemoLines
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 Here is an example of the request.
 
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies({id})/salesCreditMemos({id})/salesCreditMemoLines
+DELETE https://graph.microsoft.com/beta/financials/companies{id}/salesCreditMemos{id}/salesCreditMemoLines
 ```
 
 **Response** 

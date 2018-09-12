@@ -20,7 +20,7 @@ Update the properties of a customer payments journal object for Dynamics 365 Bus
 ## HTTP request
 
 ```
-PATCH /financials/companies({id})/customerPaymentJournals({id})
+PATCH /financials/companies{id}/customerPaymentJournals{id}
 ```
 
 ## Request headers
@@ -43,7 +43,7 @@ If successful, this method returns a ```200 OK``` response code and an updated *
 Here is an example of the request.
 
 ```json
-PATCH https://graph.microsoft.com/beta/financials/companies({id})/customerPaymentJournals({id})
+PATCH https://graph.microsoft.com/beta/financials/companies{id}/customerPaymentJournals{id}
 Content-type: application/json
 
 {

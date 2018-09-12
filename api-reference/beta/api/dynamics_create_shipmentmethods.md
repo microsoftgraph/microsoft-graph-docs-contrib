@@ -19,7 +19,7 @@ Create a shipment method object in Dynamics 365 Business Central.
 
 ## HTTP request
 ```
-POST /financials/companies({id})/shipmentMethods
+POST /financials/companies{id}/shipmentMethods
 ```
 ## Optional query parameters
 
@@ -43,7 +43,7 @@ If successful, this method returns ```201 Created``` response code and a **shipm
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/shipmentMethods
+POST https://graph.microsoft.com/beta/financials/companies{id}/shipmentMethods
 Content-type: application/json
 
 {

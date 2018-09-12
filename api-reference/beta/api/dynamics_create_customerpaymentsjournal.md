@@ -20,7 +20,7 @@ Creates a customer payment journal object in Dynamics 365 Business Central.
 ## HTTP request
 
 ```
-POST /financials/companies({id})/customerPaymentJournals({id})
+POST /financials/companies{id}/customerPaymentJournals{id}
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ If successful, this method returns ```201 Created``` response code and a **custo
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/customerPaymentJournals
+POST https://graph.microsoft.com/beta/financials/companies{id}/customerPaymentJournals
 Content-type: application/json
 
 ```json

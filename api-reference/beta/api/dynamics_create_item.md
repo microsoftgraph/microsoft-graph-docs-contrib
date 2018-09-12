@@ -19,7 +19,7 @@ Create an item in Dynamics 365 Business Central for use on invoices, quotes, etc
 
 ## HTTP request
 ```
-POST /financials/companies({id})/items
+POST /financials/companies{id}/items
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ If successful, this method returns ```201 Created``` response code and an **item
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies({id})/items
+POST https://graph.microsoft.com/beta/financials/companies{id}/items
 Content-type: application/json
 
 {
