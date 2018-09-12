@@ -1,7 +1,3 @@
-# Microsoft Teams API - Tenant Application Management
-A Global Administrator will use cmdlets to create/update/remove tenant apps for the Teams tenant app catalog. Each cmdlet will talk to an MSGraph endpoint which will proxy the calls to MiddleTier. The MSGraph endpoints will be responsible for authentication and passing along the tokens to MiddleTier along with the user supplied app payload.
-
-#### Description
 Update a previously published app in the organization's catalog(aka Tenant app catalog).
 
 #### Permissions
@@ -20,7 +16,7 @@ One of the following permissions is required to call this API. Only Global Admin
 | Content-Type  | application/zip |
 
 #### Request Body
-- Teams Zip Manifest Payload: teams application zip file [see below](#json-representation)
+- Teams Zip Manifest Payload: teams application zip file [see Create app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
 #### Response
 ```
@@ -36,7 +32,8 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
-For Teams application zip file [see below](#json-representation)
+For Teams application zip file [see Create app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
+
 
 ##### Response
 ```
