@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. Only Global Admin
 | Content-Type  | application/zip |
 
 #### Request Body
-- Teams Zip Manifest Payload: Teams application zip file [see below](#json-representation)
+- Teams Zip Manifest Payload: Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
 #### Response
 ```
@@ -31,7 +31,7 @@ Content-Type: application/json
   "distributionMethod": "Tenant"
 }
 ```
-The response is a [TeamsCatalogApp](#teamscatalogapp).
+The response is a [TeamsCatalogApp](../resources/teamscatalogapp.md).
 
 #### Example
 ##### Request
@@ -42,7 +42,7 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
-For Teams application zip file [see below](#json-representation)
+For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
 
 ##### Response
 ```
@@ -63,4 +63,4 @@ The response is a [TeamsCatalogApp](#teamscatalogapp).
 Information for creating a Teams app manifest package can be found [here](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
 
 #### Known Limitations
-One cannot create a tenant app with the same manifest ID as an already existing tenant app.
+One cannot create a tenant app with the same manifest ID as an already existing organization app.
