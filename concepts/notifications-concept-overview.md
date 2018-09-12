@@ -4,7 +4,7 @@ Notifications are the most effective way to re-engage your users. They can catch
 
 Your notification scenarios should be designed in a "human-centric" way, in which the primary goal is to notify the user, wherever he or she is. Existing notification solutions provided by major platforms are excellent at targeting devices. Microsoft Graph notifications  improve on this by allowing you to target users. Microsoft Graph notifications will take care of the heavy lifting, including mapping between users and endpoints, syncing notification state across users' different endpoints, and more. 
 
-## Why integrate with Graph notifications?
+## Why integrate with Microsoft Graph notifications?
 ### Deliver notifications to a user across different endpoints
 As part of Microsoft Graph, the notifications API allows you to target a Microsoft account or a work or school (Azure AD) account to deliver a notification. The platform distributes this notification to all the users' endpoints, including Windows UWP, Android, and iOS. 
 
@@ -16,7 +16,7 @@ You can use the notifications API to retrieve notification history based on an e
 
 ## Integrating with the notifications API in Microsoft Graph
 
-You can integrate your apps with Graph notifications with a few simple steps - onboard your app via Windows Dev Center, use the Microsoft Graph POST API to publish notifications, and use the Project Rome SDK to receive and manage notifications on your app clients.  
+You can integrate your apps with Microsoft Graph notifications with a few simple steps - onboard your app via Windows Dev Center, use the [Create notification](../api-reference/beta/api/projectrome_notification_post.md) method to publish notifications, and use the Project Rome SDK to receive and manage notifications on your app clients.  
 
 To learn more about how to publish user notifications via Microsoft Graph, see the [notifications API reference](../api-reference/beta/resources/notifications-api-overview.md).
  

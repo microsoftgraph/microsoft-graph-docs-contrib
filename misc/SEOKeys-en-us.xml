@@ -1922,6 +1922,7 @@
       <Item text="Create child folder" url="/en-us/api-reference/v1.0/api/contactfolder_post_childfolders" SEOKeyword="Create ContactFolder, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new ContactFolder." />
       <Item text="List contacts in folder" url="/en-us/api-reference/v1.0/api/contactfolder_list_contacts" SEOKeyword="List contacts, Microsoft Graph API, contactfolder API" SEODescription="Retrieve a list of contact objects." />
       <Item text="Create contact in folder" url="/en-us/api-reference/v1.0/api/contactfolder_post_contacts" SEOKeyword="Create Contact, Microsoft Graph API, contactfolder API" SEODescription="Use this API to create a new Contact." />
+	  <Item text="Get contact delta" url="/en-us/api-reference/v1.0/api/contact_delta" />
     </Item>
     <Item text="Categories" url="/en-us/api-reference/v1.0/resources/outlookcategory" >
 		<Item text="List categories" url="/en-us/api-reference/v1.0/api/outlookuser_list_mastercategories" />
@@ -2328,6 +2329,7 @@
         <Item text="Delete group" url="/en-us/api-reference/beta/api/group_delete" SEOKeyword="Delete group, Microsoft Graph API, Groups API" SEODescription="Delete group." />
 		<Item text="Get delta" url="/en-us/api-reference/beta/api/group_delta" />
         <Item text="Get deleted group" url="/en-us/api-reference/beta/api/directory_deleteditems_get" />
+		<Item text="Get delta" url="/en-us/api-reference/beta/api/group_delta" />
         <Item text="Get group" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
         <Item text="Get member groups" url="/en-us/api-reference/beta/api/group_getmembergroups" SEOKeyword="group: getMemberGroups, Microsoft Graph API, group API" SEODescription="" />
         <Item text="Get member objects" url="/en-us/api-reference/beta/api/group_getmemberobjects" SEOKeyword="group: getMemberObjects, Microsoft Graph API, group API" SEODescription="" />
@@ -2548,7 +2550,7 @@
 		</Item>
 		<Item text="Notifications" url="/en-us/api-reference/beta/resources/notifications-api-overview" >
 			<Item text="Notification" url="/en-us/api-reference/beta/resources/projectrome_notification" >
-				<Item text="Create" url="/en-us/api-reference/beta/api/projectrome_notification_post" />
+				<Item text="Create and send a notification" url="/en-us/api-reference/beta/api/projectrome_notification_post" />
 			</Item>
 		</Item>
 	</Item>
@@ -5678,7 +5680,7 @@
         <Item text="Get mail folder" url="/en-us/api-reference/beta/api/mailfolder_get" SEOKeyword="Get mailFolder, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve the properties and relationships of mailfolder object." />
         <Item text="Update mail folder" url="/en-us/api-reference/beta/api/mailfolder_update" SEOKeyword="Update mailfolder, Microsoft Graph API, Outlook Mail API" SEODescription="Update the properties of mailfolder object." />
         <Item text="Delete mail folder" url="/en-us/api-reference/beta/api/mailfolder_delete" SEOKeyword="Delete mailFolder, Microsoft Graph API, Outlook Mail API" SEODescription="Delete mailFolder." />
-		<Item text="Get mail folder delta" url="/en-us/api-reference/beta/api/mailfolder_delta" />
+		<Item text="Get folder delta" url="/en-us/api-reference/beta/api/mailfolder_delta" />
         <Item text="Copy mail folder" url="/en-us/api-reference/beta/api/mailfolder_copy" SEOKeyword="mailFolder: copy, Microsoft Graph API, mailfolder API" SEODescription="" />
         <Item text="Move mail folder" url="/en-us/api-reference/beta/api/mailfolder_move" SEOKeyword="mailFolder: move, Microsoft Graph API, mailfolder API" SEODescription="" />
         <Item text="List messages in folder" url="/en-us/api-reference/beta/api/mailfolder_list_messages" SEOKeyword="List messages, Microsoft Graph API, Outlook Mail API" SEODescription="Retrieve a list of message objects." />
@@ -6047,6 +6049,8 @@
 		<Item text="Archive team" url="/en-us/api-reference/beta/api/team_archive" />
 		<Item text="Unarchive team" url="/en-us/api-reference/beta/api/team_unarchive" />
 		<Item text="Clone team" url="/en-us/api-reference/beta/api/team_clone" />
+		<Item text="List your teams" url="/en-us/api-reference/beta/api/user_list_joinedteams" />
+		<Item text="List all teams" url="/en-us/api-reference/beta/api/team_list_all_teams" />
 	  </Item>
 	  <Item text="Group (team)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
         <Item text="Create group" url="/en-us/api-reference/beta/api/group_post_groups" />

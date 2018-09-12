@@ -1,4 +1,4 @@
-# Microsoft Graph Security API Overview
+# Microsoft Graph Security API overview
 
 You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple [Microsoft Graph Security providers](../api-reference/v1.0/resources/securityvendorinformation.md) (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see [Microsoft Graph Security data flow](security-dataflow.md).
 
@@ -26,9 +26,9 @@ Tag alerts with additional context or threat intelligence to inform response and
 
 Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Office 365) to bring business and security contexts together and improve threat response.
 
-### Proactively manage security risks
+### Proactively manage security risks (preview)
 
-Use the Microsoft Secure Score to provide visibility into your organization’s security needs and get suggestions for how to improve it, and project an improved score after those suggestions are incorporated. Easily measure your progress over time and get insights on specific changes that led to improvement in your score.
+Use the Microsoft Secure Score (preview) to provide visibility into your organization’s security needs and get suggestions for how to improve it, and project an improved score after those suggestions are incorporated. Easily measure your progress over time and get insights on specific changes that led to improvement in your score.
 
 ## Benefits of using the Microsoft Graph Security API
 

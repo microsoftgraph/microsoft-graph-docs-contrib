@@ -1,4 +1,4 @@
-# Create and send a notification targeting a user
+# Create and send a notification
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
@@ -11,6 +11,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Notifications.ReadWrite.CreatedByApp    |
 
 ## HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/notifications/
 ```
