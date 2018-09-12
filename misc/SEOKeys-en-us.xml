@@ -6049,6 +6049,8 @@
 		<Item text="Archive team" url="/en-us/api-reference/beta/api/team_archive" />
 		<Item text="Unarchive team" url="/en-us/api-reference/beta/api/team_unarchive" />
 		<Item text="Clone team" url="/en-us/api-reference/beta/api/team_clone" />
+		<Item text="List your teams" url="/en-us/api-reference/beta/api/user_list_joinedteams" />
+		<Item text="List all teams" url="/en-us/api-reference/beta/api/team_list_all_teams" />
 	  </Item>
 	  <Item text="Group (team)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
         <Item text="Create group" url="/en-us/api-reference/beta/api/group_post_groups" />
