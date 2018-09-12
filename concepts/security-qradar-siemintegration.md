@@ -1,12 +1,12 @@
 # Integrate Microsoft Graph Security API alerts with IBM QRadar SIEM using Azure Monitor
 
-The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/) which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem) SIEM connector.
+The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/), which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem) SIEM connector.
 
 The integration process involves the following steps:
 
-1. [Set up Azure event hub to receive security alerts for your tenant](#step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant)
-2. [Configure Azure Monitor to send security alerts from your tenant to the event hub](#step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub)
-3. [Download and install the QRadar to consume security alerts](#step-3-download-and-install-the-qradar-to-consume-security-alerts)
+1. [Set up Azure event hub to receive security alerts for your tenant](#step-1-set-up-an-event-hubs-namespace-in-azure-to-receive-security-alerts-for-your-tenant).
+2. [Configure Azure Monitor to send security alerts from your tenant to the event hub](#step-2-configure-azure-monitor-to-send-security-alerts-from-your-tenant-to-the-event-hub).
+3. [Download and install the QRadar to consume security alerts](#step-3-download-and-install-the-qradar-to-consume-security-alerts).
 
 After you complete these steps, your IBM QRadar will consume security alerts from all the Microsoft Graph integrated security products for which your tenant is licensed. Any new security products that you license will also send alerts through this connection, in the same schema with no further integration work needed.
 
