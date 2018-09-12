@@ -38,7 +38,7 @@ The following table lists the benefits that different security solutions can acc
 |:---------------|:---------|
 |**Managed Security Service Providers (MSSPs)**|<ul><li>Streamlined integration with security operations tools and services.</li> <li>Reduced deployment and maintenance time and efforts.</li> <li>Ability to deliver more value to MSSP customers.</li></ul>|
 |**SIEM and IT Risk management solutions**|<ul><li>Smooth integration with Microsoft security solutions and ecosystem partners.</li> <li>Rich alert metadata.</li> <li>Better alert correlation.</li></ul>|
-|**Applications** <br> (Threat Intelligence, Mobile, Cloud, IOT, Fraud detection, Identity & Access, Risk & Compliance, Firewall, and so on)|<ul><li>Unified threat management, prevention, and risk management across various security solutions.</li> <li>Alerts, inventory, config, and actions exposed through Microsoft Graph.</li> <li>Instant integration with Microsoft Graph-enabled solutions.</li></ul>|
+|**Applications** <br>(Threat Intelligence, Mobile, Cloud, IOT, Fraud detection, Identity & Access, Risk & Compliance, Firewall, and so on)|<ul><li>Unified threat management, prevention, and risk management across various security solutions.</li> <li>Alerts, inventory, config, and actions exposed through Microsoft Graph.</li> <li>Instant integration with Microsoft Graph-enabled solutions.</li></ul>|
 
 ## Next steps
 
