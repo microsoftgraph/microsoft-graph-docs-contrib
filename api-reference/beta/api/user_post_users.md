@@ -47,6 +47,10 @@ If successful, this method returns `201 Created` response code and [user](../res
 ## Example
 ##### Request
 Here is an example of the request.
+<!-- {	
+  "blockType": "request",	
+  "name": "create_user_from_users_2"	
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/users
