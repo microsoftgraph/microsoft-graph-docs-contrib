@@ -30,11 +30,6 @@ If successful, this method returns the `201 Created` response code that indicate
 #### Request
 The following is an example of the request.
 
-<!-- {
-  "blockType": "request",
-  "name": ""
-}-->
-
 ```http
 POST https://graph.microsoft.com/beta/me/notifications/
 Content-type: application/json
