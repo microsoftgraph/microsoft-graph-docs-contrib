@@ -1,7 +1,3 @@
-# Microsoft Teams API - Tenant Application Management
-A Global Administrator will use cmdlets to create/update/remove tenant apps for the Teams tenant app catalog. Each cmdlet will talk to an MSGraph endpoint which will proxy the calls to MiddleTier. The MSGraph endpoints will be responsible for authentication and passing along the tokens to MiddleTier along with the user supplied app payload.
-
-#### Description
 Update a previously published app in the organization's catalog(aka Tenant app catalog).
 
 #### Permissions
@@ -20,7 +16,7 @@ One of the following permissions is required to call this API. Only Global Admin
 | Content-Type  | application/zip |
 
 #### Request Body
-- Teams Zip Manifest Payload: teams application zip file [see below](#json-representation)
+- Teams Zip Manifest Payload: teams application zip file [see Create app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
 #### Response
 ```
@@ -36,7 +32,8 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
-For Teams application zip file [see below](#json-representation)
+For Teams application zip file [see Create app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
+
 
 ##### Response
 ```
@@ -44,16 +41,7 @@ HTTP/1.1 204 No Content
 ```
 
 #### Usage Tips
-The ID to include in this call is the ID returned by making the [Create (POST) call](#post-/appCatalogs/teamsApps). This ID is not the ID in the manifest of the zip app package.
-
-#### Error Codes & Messages
-| Operation | Status Code | Error Code           | Error Message
-| --------- |------------ | -------------------- | -------------
-| `PUT`     | 400         | invalidRequest       | Unable to parse request and/or app package
-| `PUT`     | 401         | unauthenticated      | Unable to authenticate user
-| `PUT`     | 403         | accessDenied         | User does not have access to the tenant
-| `PUT`     | 404         | itemNotFound         | No app found with ID
-| `PUT`     | 415         | unsupportedMediaType | Invalid app package type
+The ID to include in this call is the ID returned by making the [List organizations app catalog (POST) call](#post-/appCatalogs/teamsApps). This ID is not the ID in the manifest of the zip app package.
 
 #### Known Limitations
 The user must use the generated app ID returned by the [Create (POST) call](#post-/appCatalogs/teamsApps) and not the DeveloperProvidedId.

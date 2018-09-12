@@ -1,7 +1,3 @@
-# Microsoft Teams API - Tenant Application Management
-A Global Administrator will use cmdlets to create/update/remove tenant apps for the Teams tenant app catalog. Each cmdlet will talk to an MSGraph endpoint which will proxy the calls to MiddleTier. The MSGraph endpoints will be responsible for authentication and passing along the tokens to MiddleTier along with the user supplied app payload.
-
-#### Description
 Publish an app to the organization's catalog(aka Tenant app catalog).
 
 #### Permissions
@@ -20,7 +16,7 @@ One of the following permissions is required to call this API. Only Global Admin
 | Content-Type  | application/zip |
 
 #### Request Body
-- Teams Zip Manifest Payload: Teams application zip file [see below](#json-representation)
+- Teams Zip Manifest Payload: Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
 #### Response
 ```
@@ -35,7 +31,7 @@ Content-Type: application/json
   "distributionMethod": "Tenant"
 }
 ```
-The response is a [TeamsCatalogApp](#teamscatalogapp).
+The response is a [TeamsCatalogApp](../resources/teamscatalogapp.md).
 
 #### Example
 ##### Request
@@ -46,7 +42,7 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
-For Teams application zip file [see below](#json-representation)
+For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
 
 ##### Response
 ```
@@ -66,18 +62,5 @@ The response is a [TeamsCatalogApp](#teamscatalogapp).
 #### Usage Tips
 Information for creating a Teams app manifest package can be found [here](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
 
-#### Error Codes & Messages
-| Operation | Status Code | Error Code           | Error Message
-| --------- | ----------- | -------------------- | --------------
-| `POST`    | 400         | invalidRequest       | Unable to parse request and/or app package
-| `POST`    | 401         | unauthenticated      | Unable to authenticate user
-| `POST`    | 403         | accessDenied         | User does not have access to the tenant
-| `POST`    | 404         | itemNotFound         | No app found with Id
-| `POST`    | 415         | unsupportedMediaType | Invalid app package type
-
 #### Known Limitations
-One cannot create a tenant app with the same manifest ID as an already existing tenant app.
-
-#### Future Extension
-None.
-
+One cannot create a tenant app with the same manifest ID as an already existing organization app.
