@@ -18,7 +18,7 @@ This resource is the representation of an app in our Teams app catalog.
   "developerProvidedId": "bcb707d5-94e0-48f8-bbe7-6137a0565a4c",
   "name": "Test App",
   "version": "1.0.0",
-  "distributionMethod": "Tenant"
+  "distributionMethod": "Organization"
 }
 ```
 
