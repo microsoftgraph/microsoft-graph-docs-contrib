@@ -2,7 +2,7 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: Item Analytics
+title: Get analytics
 ---
 # Get analytics (preview)
 

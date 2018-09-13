@@ -2,7 +2,7 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: Get Item Activity by Interval
+title: Get item activity stats by interval
 ---
 # Get item activity stats by interval (preview)
 

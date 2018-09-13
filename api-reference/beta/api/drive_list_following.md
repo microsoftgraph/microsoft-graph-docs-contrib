@@ -1,9 +1,9 @@
 ---
 author: chackman
 ms.author: chackman
-title: List Followed Items
+title: List followed items
 ---
-# List Followed Items
+# List followed items
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 

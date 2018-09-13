@@ -1,13 +1,13 @@
 ---
 author: chackman
 ms.author: chackman
-title: Unfollow Item
+title: Unfollow drive item
 ---
-# Unfollow Item
+# Unfollow drive item
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Unfollow an [item](../resources/driveitem.md).
+Unfollow a [driveItem](../resources/driveitem.md).
 
 ## Permissions
 
