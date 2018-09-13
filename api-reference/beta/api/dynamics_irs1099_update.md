@@ -1,5 +1,5 @@
 ---
-title: Update irs1099Codes | Microsoft Docs
+title: Update irs1099Codes 
 description: Updates a IRS 1099 Code in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

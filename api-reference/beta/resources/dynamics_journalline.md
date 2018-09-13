@@ -1,5 +1,5 @@
 ---
-title: journalLines resource type | Microsoft Docs
+title: journalLines resource type 
 description: A journal line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

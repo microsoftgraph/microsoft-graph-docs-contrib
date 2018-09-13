@@ -1,5 +1,5 @@
 ---
-title: Get paymentTerms | Microsoft Docs
+title: Get paymentTerms 
 description: Gets a payment term object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

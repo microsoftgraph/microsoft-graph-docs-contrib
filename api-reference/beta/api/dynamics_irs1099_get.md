@@ -1,5 +1,5 @@
 ---
-title: Get irs1099Codes | Microsoft Docs
+title: Get irs1099Codes 
 description: Gets an IRS 1099 code object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

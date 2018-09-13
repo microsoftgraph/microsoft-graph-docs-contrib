@@ -1,5 +1,5 @@
 ---
-title: Delete customerPayments | Microsoft Docs
+title: Delete customerPayments 
 description: Deletes a customer payment object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

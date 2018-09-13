@@ -1,5 +1,5 @@
 ---
-title: Get journalLines | Microsoft Docs
+title: Get journalLines 
 description: Gets a journal line object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

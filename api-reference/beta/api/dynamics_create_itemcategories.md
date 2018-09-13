@@ -1,5 +1,5 @@
 ---
-title: Create itemCategories | Microsoft Docs
+title: Create itemCategories 
 description: Creates an item category object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

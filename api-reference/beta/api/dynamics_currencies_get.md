@@ -1,5 +1,5 @@
 ---
-title: Get currencies | Microsoft Docs
+title: Get currencies 
 description: Gets a currency object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

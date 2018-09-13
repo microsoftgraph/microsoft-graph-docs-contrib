@@ -1,5 +1,5 @@
 ---
-title: Get itemCategories | Microsoft Docs
+title: Get itemCategories 
 description: Gets an item category in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

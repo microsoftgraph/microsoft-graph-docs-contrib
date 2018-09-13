@@ -1,5 +1,5 @@
 ---
-title: Get shipmentMethods | Microsoft Docs
+title: Get shipmentMethods 
 description: Gets a shipment method object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''

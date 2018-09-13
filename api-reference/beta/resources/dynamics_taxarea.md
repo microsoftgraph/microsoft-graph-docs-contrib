@@ -1,5 +1,5 @@
 ---
-title: taxAreas resource type | Microsoft Docs
+title: taxAreas resource type 
 description: A tax area.
 services: project-madeira
 documentationcenter: ''

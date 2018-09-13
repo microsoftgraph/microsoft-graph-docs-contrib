@@ -1,5 +1,5 @@
 --- 
-title: Get agedAccountsReceivable | Microsoft Docs
+title: Get agedAccountsReceivable 
 description: Gets an aged accounts receivable object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

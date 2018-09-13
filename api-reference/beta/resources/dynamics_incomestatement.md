@@ -1,5 +1,5 @@
 ---
-title: incomeStatement resource type | Microsoft Docs
+title: incomeStatement resource type 
 description: An incomeStatement in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

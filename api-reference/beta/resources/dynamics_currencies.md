@@ -1,5 +1,5 @@
 ---
-title: currencies resource type | Microsoft Docs
+title: currencies resource type 
 description: A currency object in Dynamics 365 Business Central 
 services: project-madeira
 documentationcenter: ''

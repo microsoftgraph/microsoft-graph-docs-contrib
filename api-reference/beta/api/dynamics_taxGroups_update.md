@@ -1,5 +1,5 @@
 ---
-title: Update taxGroups | Microsoft Docs
+title: Update taxGroups 
 description: Updates a tax group object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''

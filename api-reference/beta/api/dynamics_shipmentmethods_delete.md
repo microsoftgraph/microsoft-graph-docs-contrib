@@ -1,5 +1,5 @@
 ---
-title: Delete shipmentMethods | Microsoft Docs
+title: Delete shipmentMethods 
 description: Deletes a shipment method object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

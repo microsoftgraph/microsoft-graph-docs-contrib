@@ -1,5 +1,5 @@
 ---
-title: Update companyInformation | Microsoft Docs
+title: Update companyInformation 
 description: Updates a company information object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

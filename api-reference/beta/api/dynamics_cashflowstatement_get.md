@@ -1,5 +1,5 @@
 ---
-title: Get cashFlowStatement | Microsoft Docs
+title: Get cashFlowStatement 
 description: Gets a cash flow statement object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

@@ -1,5 +1,5 @@
 ---
-title: Delete paymentMethods | Microsoft Docs
+title: Delete paymentMethods 
 description: Deletes a payment method object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

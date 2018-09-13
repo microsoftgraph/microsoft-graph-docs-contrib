@@ -1,5 +1,5 @@
 ---
-title: customers resource type | Microsoft Docs
+title: customers resource type 
 description: Represents a customer in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 

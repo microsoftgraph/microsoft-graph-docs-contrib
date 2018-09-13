@@ -1,5 +1,5 @@
 ---
-title: Get customerPayments | Microsoft Docs
+title: Get customerPayments 
 description: Gets a customer payment object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

@@ -1,5 +1,5 @@
 ---
-title: customerPaymentJournals resource type | Microsoft Docs
+title: customerPaymentJournals resource type 
 description: A customer payments journal in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

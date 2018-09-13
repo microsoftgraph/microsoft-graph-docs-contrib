@@ -1,5 +1,5 @@
 ---
-title: items resource type | Microsoft Docs
+title: items resource type 
 description: An item object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

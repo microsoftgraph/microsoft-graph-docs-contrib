@@ -1,5 +1,5 @@
 ---
-title: Get balanceSheet | Microsoft Docs
+title: Get balanceSheet 
 description: Gets a balance sheet object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

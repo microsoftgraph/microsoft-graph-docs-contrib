@@ -1,5 +1,5 @@
 ---
-title: Delete journalLines | Microsoft Docs
+title: Delete journalLines 
 description: Deletes a journal line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

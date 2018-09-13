@@ -1,5 +1,5 @@
 ---
-title: Get agedAccountsPayable | Microsoft Docs
+title: Get agedAccountsPayable 
 description: Gets an aged accounts payable object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

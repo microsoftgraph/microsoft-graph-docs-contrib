@@ -1,5 +1,5 @@
 ---
-title: employees resource type | Microsoft Docs
+title: employees resource type 
 description: An employee object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

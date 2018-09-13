@@ -1,5 +1,5 @@
 ---
-title: unitsOfMeasure resource type | Microsoft Docs
+title: unitsOfMeasure resource type 
 description: A unit of measure object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

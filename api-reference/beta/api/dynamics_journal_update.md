@@ -1,5 +1,5 @@
 ---
-title: Update journals | Microsoft Docs
+title: Update journals 
 description: Updates a journal object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

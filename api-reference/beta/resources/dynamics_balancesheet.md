@@ -1,5 +1,5 @@
 ---
-title: balanceSheet resource type | Microsoft Docs
+title: balanceSheet resource type 
 description: A balance sheet in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

@@ -1,5 +1,5 @@
 ---
-title: Create customerPaymentJournals | Microsoft Docs
+title: Create customerPaymentJournals 
 description: Creates a customer payments journal object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

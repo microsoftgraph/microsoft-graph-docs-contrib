@@ -1,5 +1,5 @@
 ---
-title: Working with Dynamics 365 Business Central resources in Microsoft Graph | Microsoft Docs
+title: Working with Dynamics 365 Business Central resources in Microsoft Graph 
 description: API documentation for integration with Microsoft Graph
 services: project-madeira
 documentationcenter: ''

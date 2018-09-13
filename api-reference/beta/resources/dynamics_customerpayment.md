@@ -1,5 +1,5 @@
 ---
-title: customerPayments resource type | Microsoft Docs
+title: customerPayments resource type 
 description: A customer payments object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

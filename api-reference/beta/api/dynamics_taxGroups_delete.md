@@ -1,5 +1,5 @@
 ---
-title: Delete taxGroups | Microsoft Docs
+title: Delete taxGroups 
 description: Deletes a tax group object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''

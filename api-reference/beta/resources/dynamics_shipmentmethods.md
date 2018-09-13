@@ -1,5 +1,5 @@
 ---
-title: shipmentMethods resource type | Microsoft Docs
+title: shipmentMethods resource type 
 description: A shipment method in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''

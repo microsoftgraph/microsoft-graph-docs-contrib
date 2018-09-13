@@ -1,5 +1,5 @@
 ---
-title: Update currencies | Microsoft Docs
+title: Update currencies 
 description: Updates a currency object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

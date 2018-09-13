@@ -1,5 +1,5 @@
 ---
-title: Update countriesRegions | Microsoft Docs
+title: Update countriesRegions 
 description: Updates a countries/regions object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

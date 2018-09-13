@@ -1,5 +1,5 @@
 ---
-title: Delete paymentTerms | Microsoft Docs
+title: Delete paymentTerms 
 description: Deletes a payment term object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

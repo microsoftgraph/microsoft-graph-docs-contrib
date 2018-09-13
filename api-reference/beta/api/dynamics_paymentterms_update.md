@@ -1,5 +1,5 @@
 ---
-title: Update paymentTerms | Microsoft Docs
+title: Update paymentTerms 
 description: Updates a payment term object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

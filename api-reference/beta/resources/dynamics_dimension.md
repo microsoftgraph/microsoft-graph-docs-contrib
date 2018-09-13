@@ -1,5 +1,5 @@
 ---
-title: dimensions resource type | Microsoft Docs
+title: dimensions resource type 
 description: A dimension in Dynamics 365 Business Central.
 author: SusanneWindfeldPedersen
 

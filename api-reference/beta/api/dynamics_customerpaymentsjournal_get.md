@@ -1,5 +1,5 @@
 ---
-title: Get customerPaymentJournals | Microsoft Docs
+title: Get customerPaymentJournals 
 description: Gets a customer payment journal in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

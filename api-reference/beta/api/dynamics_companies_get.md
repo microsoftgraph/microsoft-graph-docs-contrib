@@ -1,5 +1,5 @@
 ---
-title: Get companies | Microsoft Docs
+title: Get companies 
 description: Gets a company object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

@@ -1,5 +1,5 @@
 ---
-title: Delete itemCategories | Microsoft Docs
+title: Delete itemCategories 
 description: Deletes an item category in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

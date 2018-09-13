@@ -1,5 +1,5 @@
 ---
-title: Update journalLines | Microsoft Docs
+title: Update journalLines 
 description: Updates a journal line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

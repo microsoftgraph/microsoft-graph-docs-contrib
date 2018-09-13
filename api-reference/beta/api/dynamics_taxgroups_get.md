@@ -1,5 +1,5 @@
 ---
-title: Get taxGroups | Microsoft Docs
+title: Get taxGroups 
 description: Gets a tax groups method in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''

@@ -1,5 +1,5 @@
 ---
-title: Get vendors | Microsoft Docs
+title: Get vendors 
 description: Gets a vendor object in Dynamics 365 Business Central. 
 services: project-madeira
 documentationcenter: ''

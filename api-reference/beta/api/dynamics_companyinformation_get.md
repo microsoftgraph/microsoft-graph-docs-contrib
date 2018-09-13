@@ -1,5 +1,5 @@
 ---
-title: Get companyInformation | Microsoft Docs
+title: Get companyInformation 
 description: Gets a company information object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''

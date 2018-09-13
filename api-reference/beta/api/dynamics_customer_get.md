@@ -1,5 +1,5 @@
 ---
-title: Get customers | Microsoft Docs
+title: Get customers 
 description: Gets a customer object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
