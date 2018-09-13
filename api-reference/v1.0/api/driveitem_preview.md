@@ -1,7 +1,5 @@
 # Embeddable file previews
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 This action allows you to obtain short-lived embeddable URLs for an item.
 
 If you wish to obtain long-lived embeddable links, use the [createLink][] API instead.

@@ -51,6 +51,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta        | Added the [incompleteData](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/incompleteData) complex type |
 | Addition        | Beta        | Added the **access** property to the [itemActivity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivity) complex type |
 | Addition        | Beta        | Added the **location** property to the [itemActivity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivity) complex type |
+| Addition        | v1.0        | Added the **preview** action on the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItem) entity |
+| Addition        | v1.0        | Added the [itemPreviewInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/itemPreviewInfo) complex type |
 
 ## August 2018
 
