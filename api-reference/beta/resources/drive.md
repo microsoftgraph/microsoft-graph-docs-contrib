@@ -115,7 +115,7 @@ In the previous table, the examples use `/drive`, but other paths are valid too.
 [quota-facet]: quota.md
 [drive-resource]: drive.md
 [drive-activities]: ../api/activities_list.md
-[drive-following]: ../api/drive_following.md
+[drive-following]: ../api/drive_list_following.md
 [drive-get]: ../api/drive_get.md
 [item-get]: ../api/driveitem_get.md
 [item-changes]: ../api/driveitem_delta.md
