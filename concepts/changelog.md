@@ -38,6 +38,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta        | Added the **permission** navigation property to the [sharedDriveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sharedDriveItem) entity |
 | Addition        | Beta        | Added the **geolocation** property to the [columnDefinition](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/columnDefinition) entity |
 | Addition        | Beta        | Added the [geolocationColumn](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/geolocationColumn) complex type |
+| Addition        | Beta        | Added the **analytics** property to the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/driveItem) entity |
+| Addition        | Beta        | Added the **analytics** property to the [site](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/site) entity |
+| Addition        | Beta        | Added the **analytics** property to the [listItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/listItem) entity |
+| Addition        | Beta        | Added the **getActivitiesByInterval** function on the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/driveItem) entity |
+| Addition        | Beta        | Added the **getActivitiesByInterval** function on the [site](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/site) entity |
+| Addition        | Beta        | Added the **getActivitiesByInterval** function on the [listItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/listItem) entity |
+| Addition        | Beta        | Added the [itemAnalytics](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemAnalytics) entity |
+| Addition        | Beta        | Added the [itemActivityStat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivity) entity |
+| Addition        | Beta        | Added the [itemActionStat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActionStat) complex type |
+| Addition        | Beta        | Added the [accessAction](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/accessAction) complex type |
+| Addition        | Beta        | Added the [incompleteData](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/incompleteData) complex type |
+| Addition        | Beta        | Added the **access** property to the [itemActivity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivity) complex type |
+| Addition        | Beta        | Added the **location** property to the [itemActivity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivity) complex type |
 
 ## August 2018
 
