@@ -90,7 +90,7 @@ Otherwise, there may be additional toolbars/buttons displayed for interacting wi
 
 ### View/Edit
 
-If 'edit' is true, the document can be modified by user interaction with the embedded preview.
+If 'allowEdit' is true, the document can be modified by user interaction with the embedded preview.
 This capability may not be available for all preview apps or file types.
 
 ### Page/Zoom
