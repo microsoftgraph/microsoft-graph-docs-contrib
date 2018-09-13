@@ -62,10 +62,3 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Journal](../resources/dynamics_journal.md)  
-[Get Journal](../api/dynamics_journal_get.md)  
-[Create Journal](../api/dynamics_create_journal.md)  
-[Update Journal](../api/dynamics_journal_update.md)  

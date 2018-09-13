@@ -85,12 +85,3 @@ Content-type: application/json
 }
 
 ```
-
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Payment Terms](../resources/dynamics_paymentterms.md)  
-[Get Payment Terms](../api/dynamics_paymentterms_get.md)  
-[Update Payment Terms](../api/dynamics_paymentterms_update.md)  
-[Delete Payment Terms](../api/dynamics_paymentterms_delete.md)  

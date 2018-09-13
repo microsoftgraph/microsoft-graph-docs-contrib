@@ -87,9 +87,3 @@ Here is an example of the response.
 ```
 
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Vendor](../resources/dynamics_vendor.md)  
-[Create Vendor](../api/dynamics_create_vendor.md)  
-[Update Vendor](../api/dynamics_vendor_update.md)  
-[Delete Vendor](../api/dynamics_vendor_delete.md)  

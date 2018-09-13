@@ -73,7 +73,3 @@ Here is an example of the response.
 }
 ```
 
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[General Ledger Entries](../resources/dynamics_generalledgerentries.md)  

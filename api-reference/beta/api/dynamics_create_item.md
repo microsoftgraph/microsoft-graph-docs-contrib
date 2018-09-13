@@ -87,9 +87,3 @@ Content-type: application/json
 }
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Item](../resources/dynamics_item.md)  
-[Get Item](../api/dynamics_item_get.md)  
-[Patch item](../api/dynamics_item_update.md)  
-[Delete Item](../api/dynamics_item_delete.md)  

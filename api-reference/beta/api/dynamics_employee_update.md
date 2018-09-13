@@ -98,11 +98,4 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z" 
 }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Employee](../resources/dynamics_employee.md)  
-[Get Employee](../api/dynamics_employee_get.md)  
-[Post Employee](../api/dynamics_create_employee.md)  
-[Delete Employee](../api/dynamics_employee_delete.md)  
+  

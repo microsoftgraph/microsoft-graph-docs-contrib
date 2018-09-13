@@ -60,10 +60,3 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-
-## See Also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Tax Groups](../resources/dynamics_taxgroups.md)  
-[Get Tax Groups](../api/dynamics_taxgroups_get.md)  
-[Create Tax Groups](../api/dynamics_create_taxgroups.md)  
-[Update Tax Groups](../api/dynamics_taxgroups_update.md)  

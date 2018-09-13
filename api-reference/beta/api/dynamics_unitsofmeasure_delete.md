@@ -60,10 +60,3 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Units of Measure](../resources/dynamics_unitsofmeasure.md)  
-[Get Units of Measure](../api/dynamics_unitsofmeasure_get.md)  
-[Create Units of Measure](../api/dynamics_create_unitsofmeasure.md)  
-[Update Units of Measure](../api/dynamics_unitsofmeasure_update.md)  

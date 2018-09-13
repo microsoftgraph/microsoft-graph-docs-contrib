@@ -91,9 +91,3 @@ Content-type: application/json
 }
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Customer Payments](../resources/dynamics_customerpayment.md)  
-[Get Customer Payments](dynamics_customerpayment_get.md)  
-[Patch Customer Payments](dynamics_customerpayment_update.md)  
-[Delete Customer Payments](dynamics_customerpayment_delete.md)  

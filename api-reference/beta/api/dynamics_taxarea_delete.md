@@ -62,10 +62,3 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Tax Area](../resources/dynamics_taxarea.md)  
-[Get Tax Area](../api/dynamics_taxarea_get.md)  
-[Create Tax Area](../api/dynamics_create_taxarea.md)  
-[Update Tax Area](../api/dynamics_taxarea_update.md)  

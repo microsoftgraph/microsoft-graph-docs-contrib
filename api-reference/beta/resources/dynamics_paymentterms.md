@@ -60,12 +60,3 @@ Here is a JSON representation of the paymentTerms.
 }
 
 ```
-
-## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Get Payment Terms](../api/dynamics_paymentterms_get.md)  
-[Create Payment Terms](../api/dynamics_create_paymentterms.md)  
-[Update Payment Terms](../api/dynamics_paymentterms_update.md)  
-[Delete Payment Terms](../api/dynamics_paymentterms_delete.md)  

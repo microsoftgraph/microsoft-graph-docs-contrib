@@ -59,8 +59,4 @@ Here is a JSON representation of the resource.
 }
 
 ```
-## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 
-[Get Trial Balance](../api/dynamics_trialbalance_get.md)  

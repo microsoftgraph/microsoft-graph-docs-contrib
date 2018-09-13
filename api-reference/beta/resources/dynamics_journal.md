@@ -56,11 +56,3 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Get Journal](../api/dynamics_journal_get.md)  
-[Create Journal](../api/dynamics_create_journal.md)  
-[Update Journal](../api/dynamics_journal_update.md)  
-[Delete Journal](../api/dynamics_journal_delete.md)  

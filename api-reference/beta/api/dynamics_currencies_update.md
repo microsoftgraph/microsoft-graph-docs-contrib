@@ -78,11 +78,3 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-22T21:12:18.793Z"
 }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Currencies](../resources/dynamics_currencies.md)  
-[Post Currencies](dynamics_create_currencies.md)  
-[Get Currencies](dynamics_currencies_get.md)  
-[Delete Currencies](dynamics_currencies_delete.md)  

@@ -61,11 +61,3 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Customer](../resources/dynamics_customer.md)  
-[Get Customers](dynamics_customer_get.md)  
-[Post Customers](dynamics_create_customer.md)  
-[Patch Customers](dynamics_customer_update.md)  

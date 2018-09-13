@@ -80,9 +80,4 @@ Content-type: application/json
 
 
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Item Categories](../resources/dynamics_itemcategories.md)  
-[Get Item Categories](../api/dynamics_itemcategories_get.md)  
-[Update Item Categories](../api/dynamics_itemcategories_update.md)  
-[Delete Item Categories](../api/dynamics_itemcategories_delete.md)  
+

@@ -71,13 +71,3 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "datetime"
 }
 ```
-
-## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Journal Line](../resources/dynamics_journalline.md)  
-[Get Journal Line](../api/dynamics_journalline_get.md)  
-[Create Journal Line](../api/dynamics_create_journalline.md)  
-[Update Journal Line](../api/dynamics_journalline_update.md)  
-[Delete Journal Line](../api/dynamics_journalline_delete.md)  

@@ -63,10 +63,5 @@ Here is a JSON representation of the resource.
 }
 
 ```
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 
-[Get Aged Accounts Receivable](../api/dynamics_agedaccountsreceivable_get.md)  
-[Aged Accounts Payable](dynamics_agedaccountspayable.md)  
-[Account](dynamics_account.md)  
 

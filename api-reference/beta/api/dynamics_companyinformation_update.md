@@ -91,10 +91,3 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
   }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Companies](../resources/dynamics_companies.md)  
-[Company Information](../resources/dynamics_companyinformation.md)  
-[Get Company Information](dynamics_companyinformation_get.md)  

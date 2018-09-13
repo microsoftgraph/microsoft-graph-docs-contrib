@@ -60,10 +60,3 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Vendor](../resources/dynamics_vendor.md)  
-[Get Vendor](../api/dynamics_vendor_get.md)  
-[Create Vendor](../api/dynamics_create_vendor.md)  
-[Update Vendor](../api/dynamics_vendor_update.md)  

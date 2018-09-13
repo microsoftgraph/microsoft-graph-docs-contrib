@@ -70,11 +70,3 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-22T21:05:09.003Z"
 }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Currencies](../resources/dynamics_currencies.md)  
-[Post Currencies](dynamics_create_currencies.md)  
-[Patch Currencies](dynamics_currencies_update.md)  
-[Delete Currencies](dynamics_currencies_delete.md)  

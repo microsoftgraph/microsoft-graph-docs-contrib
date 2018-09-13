@@ -67,11 +67,3 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-15T01:21:09.563Z"
 }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Units of Measure](../resources/dynamics_unitsofmeasure.md)  
-[Create Units of Measure](../api/dynamics_create_unitsofmeasure.md)  
-[Update Units of Measure](../api/dynamics_unitsofmeasure_update.md)  
-[Delete Units of Measure](../api/dynamics_unitsofmeasure_delete.md)  

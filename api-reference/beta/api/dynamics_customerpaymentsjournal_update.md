@@ -79,9 +79,3 @@ Content-type: application/json
 }
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Customer Payment Journal](../resources/dynamics_customerpaymentsjournal.md)  
-[Get Customer Payment Journal](dynamics_customerpaymentsjournal_get.md)  
-[Post Customer Payment Journal](dynamics_create_customerpaymentsjournal.md)  
-[Delete Customer Payment Journal](dynamics_customerpaymentsjournal_delete.md)  

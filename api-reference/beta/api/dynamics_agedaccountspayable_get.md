@@ -72,10 +72,3 @@ Here is an example of the response.
   "periodLengthFilter": "3M"  
 }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Aged Accounts Payable](../resources/dynamics_agedaccountspayable.md)  
-[Get Aged Accounts Receivable](../api/dynamics_agedaccountsreceivable_get.md)  
-[Account](../resources/dynamics_account.md)  

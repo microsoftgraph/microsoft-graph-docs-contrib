@@ -67,7 +67,4 @@ Here is an example of the response.
   "dateFilter": "2016-12-31"   
 }
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Retained Earnings Statement](../resources/dynamics_retainedearningsstatement.md)  
+  

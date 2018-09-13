@@ -80,10 +80,3 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Get Customer Payments](../api/dynamics_customerpayment_get.md)  
-[Post Customer Payments](../api/dynamics_create_customerpayment.md)  
-[Patch Customer Payments](../api/dynamics_customerpayment_update.md)  
-[Delete Customer Payments](../api/dynamics_customerpayment_delete.md)  

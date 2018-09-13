@@ -67,9 +67,3 @@ Here is an example of the response.
 }
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Journal](../resources/dynamics_journal.md)  
-[Create Journal](../api/dynamics_create_journal.md)  
-[Update Journal](../api/dynamics_journal_update.md)  
-[Delete Journal](../api/dynamics_journal_delete.md)  

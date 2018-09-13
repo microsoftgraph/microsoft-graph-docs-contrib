@@ -61,8 +61,4 @@ Here is a JSON representation of the resource.
 }
 
 ```
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 
-[General Ledger Entries](../resources/dynamics_generalledgerentries.md)  
-[Get General Ledger Entries](../api/dynamics_generalledgerentries_get.md)  

@@ -80,11 +80,3 @@ Content-type: application/json
 
 ```
 
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Units of Measure](../resources/dynamics_unitsofmeasure.md)  
-[Get Units of Measure](../api/dynamics_unitsofmeasure_get.md)  
-[Update Units of Measure](../api/dynamics_unitsofmeasure_update.md)  
-[Delete Units of Measure](../api/dynamics_unitsofmeasure_delete.md)  

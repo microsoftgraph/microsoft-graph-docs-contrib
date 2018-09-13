@@ -70,5 +70,3 @@ Here is a JSON representation of the companyInformation
 
 ```
 
-## See also
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md) 

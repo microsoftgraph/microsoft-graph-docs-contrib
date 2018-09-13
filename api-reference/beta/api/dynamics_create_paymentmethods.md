@@ -78,11 +78,3 @@ Content-type: application/json
 
 ```
 
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Payment Methods](../resources/dynamics_paymentmethods.md)  
-[Get Payment Methods](../api/dynamics_paymentmethods_get.md)  
-[Update Payment Methods](../api/dynamics_paymentmethods_update.md)  
-[Delete Payment Methods](../api/dynamics_paymentmethods_delete.md)  

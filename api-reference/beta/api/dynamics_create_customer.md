@@ -122,10 +122,3 @@ Content-type: application/json
 
 ```
 
-## See Also  
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Customer](../resources/dynamics_customer.md)  
-[Get Customers](dynamics_customer_get.md)  
-[Patch Customers](dynamics_customer_update.md)  
-[Delete Customers](dynamics_customer_delete.md)  
- 

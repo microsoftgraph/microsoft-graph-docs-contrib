@@ -78,9 +78,3 @@ Here is an example of the response.
 }
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Customer Payments](../resources/dynamics_customerpayment.md)  
-[Post Customer Payments](dynamics_create_customerpayment.md)  
-[Patch Customer Payments](dynamics_customerpayment_update.md)  
-[Delete Customer Payments](dynamics_customerpayment_delete.md)  

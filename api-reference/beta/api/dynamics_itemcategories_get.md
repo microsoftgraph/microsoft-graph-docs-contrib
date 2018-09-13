@@ -67,10 +67,3 @@ Here is an example of the response.
 }
 ```
 
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Item Categories](../resources/dynamics_itemcategories.md)  
-[Create Item Categories](../api/dynamics_create_itemcategories.md)  
-[Update Item Categories](../api/dynamics_itemcategories_update.md)  
-[Delete Item Categories](../api/dynamics_itemcategories_delete.md)  

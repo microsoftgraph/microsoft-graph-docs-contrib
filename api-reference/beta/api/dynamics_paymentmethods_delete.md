@@ -62,9 +62,3 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Payment Methods](../resources/dynamics_paymentmethods.md)  
-[Get Payment Methods](../api/dynamics_paymentmethods_get.md)  
-[Create Payment Methods](../api/dynamics_create_paymentmethods.md)      
-[Update Payment Methods](../api/dynamics_paymentmethods_update.md)  

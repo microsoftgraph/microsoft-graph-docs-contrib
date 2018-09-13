@@ -67,11 +67,3 @@ Here is an example of the response.
   "dateFilter": "2020-12-30"
 }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)    
-[Balance Sheet](../resources/dynamics_balancesheet.md)  
-[Get Cash Flow Statement](dynamics_cashflowstatement_get.md)  
-[Get Account](dynamics_account_get.md)  
-[Working with Dynamics 365 Business Central in Microsoft Graph](../resources/dynamics_overview.md) 

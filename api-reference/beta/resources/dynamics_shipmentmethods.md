@@ -52,11 +52,4 @@ Here is a JSON representation of the shipmentMethod.
 
 ```
 
-## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 
-[Get Shipment Methods](../api/dynamics_shipmentmethods_get.md)  
-[Create Shipment Methods](../api/dynamics_create_shipmentmethods.md)  
-[Update Shipment Methods](../api/dynamics_shipmentmethods_update.md)  
-[Delete Shipment Methods](../api/dynamics_shipmentmethods_delete.md)  

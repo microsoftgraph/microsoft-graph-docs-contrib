@@ -61,10 +61,3 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Payment Terms](../resources/dynamics_paymentterms.md)  
-[Get Payment Terms](../api/dynamics_paymentterms_get.md)  
-[Create Payment Terms](../api/dynamics_create_paymentterms.md)  
-[Update Payment Terms](../api/dynamics_paymentterms_update.md)  

@@ -77,11 +77,4 @@ Here is a JSON representation of the resource.
 
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 
-[Item](../resources/dynamics_item.md)  
-[Get Item](../api/dynamics_item_get.md)  
-[Post Item](../api/dynamics_create_item.md)  
-[Patch Item](../api/dynamics_item_update.md)  
-[Delete Item](../api/dynamics_item_delete.md)  

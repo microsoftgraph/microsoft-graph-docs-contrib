@@ -69,10 +69,3 @@ Here is an example of the response.
     "lastModifiedDateTime": "2017-03-15T02:20:58.747Z"
 }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Account](../resources/dynamics_account.md)  
-[Get Aged Accounts Payable](dynamics_agedaccountspayable_get.md)  
-[Get Aged Accounts Receivable](dynamics_agedaccountsreceivable_get.md)  

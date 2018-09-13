@@ -79,9 +79,3 @@ Content-type: application/json
 
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Countries Regions](../resources/dynamics_countriesregions.md)  
-[Get Countries Regions](dynamics_countriesregions_get.md)  
-[Patch Countries Regions](dynamics_countriesregions_update.md)  
-[Delete Countries Regions](dynamics_countriesregions_delete.md)  

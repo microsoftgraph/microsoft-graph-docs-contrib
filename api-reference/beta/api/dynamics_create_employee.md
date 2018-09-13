@@ -114,9 +114,3 @@ Content-type: application/json
 
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Employee](../resources/dynamics_employee.md)  
-[Get Employee](../api/dynamics_employee_get.md)  
-[Patch Employee](../api/dynamics_employee_update.md)  
-[Delete Employee](../api/dynamics_employee_delete.md)  

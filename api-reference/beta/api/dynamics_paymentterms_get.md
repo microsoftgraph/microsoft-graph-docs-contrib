@@ -70,11 +70,3 @@ Here is an example of the response.
   "lastModifiedDateTime": "2017-03-15T02:20:55.203Z"
 }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Payment Terms](../resources/dynamics_paymentterms.md)  
-[Create Payment Terms](../api/dynamics_create_paymentterms.md)  
-[Update Payment Terms](../api/dynamics_paymentterms_update.md)  
-[Delete Payment Terms](../api/dynamics_paymentterms_delete.md)  

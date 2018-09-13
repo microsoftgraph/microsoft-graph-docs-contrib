@@ -60,10 +60,3 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Shipment Methods](../resources/dynamics_shipmentmethods.md)  
-[Get Shipment Methods](../api/dynamics_shipmentmethods_get.md)  
-[Create Shipment Methods](../api/dynamics_create_shipmentmethods.md)  
-[Update Shipment Methods](../api/dynamics_shipmentmethods_update.md)  

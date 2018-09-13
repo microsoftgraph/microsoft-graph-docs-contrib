@@ -74,10 +74,3 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Tax Area](../resources/dynamics_taxarea.md)  
-[Get Tax Area](../api/dynamics_taxarea_get.md)  
-[Update Tax Area](../api/dynamics_taxarea_update.md)  
-[Delete Tax Area](../api/dynamics_taxarea_delete.md)  

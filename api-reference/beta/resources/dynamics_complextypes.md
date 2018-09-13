@@ -41,6 +41,3 @@ Represents a Postal Address complex type in Dynamics 365 Business Central.
 } 
  ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-

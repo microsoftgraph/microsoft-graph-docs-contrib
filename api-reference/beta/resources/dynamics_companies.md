@@ -51,10 +51,4 @@ Here is a JSON representation of the company.
 
 ```
 
-## See Also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 
-[Get Companies](../api/dynamics_companies_get.md)  
-[Company Information](dynamics_companyinformation.md)  
-[Get Company Information](../api/dynamics_companyinformation_get.md)  
-[Update Company Information](../api/dynamics_companyinformation_update.md)  

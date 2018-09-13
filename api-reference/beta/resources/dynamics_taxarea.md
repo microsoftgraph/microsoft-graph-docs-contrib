@@ -51,11 +51,4 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 
-[Get Tax Area](../api/dynamics_taxarea_get.md)  
-[Create Tax Area](../api/dynamics_create_taxarea.md)  
-[Update Tax Area](../api/dynamics_taxarea_update.md)  
-[Delete Tax Area](../api/dynamics_taxarea_delete.md)  

@@ -83,10 +83,3 @@ Content-type: application/json
 }
 
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Currencies](../resources/dynamics_currencies.md)  
-[Get Currencies](dynamics_currencies_get.md)  
-[Patch Currencies](dynamics_currencies_update.md)  
-[Delete Currencies](dynamics_currencies_delete.md)  

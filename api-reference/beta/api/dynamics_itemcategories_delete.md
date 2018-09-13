@@ -61,9 +61,3 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Item Categories](../resources/dynamics_itemcategories.md)  
-[Get Item Categories](../api/dynamics_itemcategories_get.md)  
-[Create Item Categories](../api/dynamics_create_itemcategories.md)  
-[Update Item Categories](../api/dynamics_itemcategories_update.md)  

@@ -76,11 +76,3 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-15T02:21:24.047Z"
 }
 ```
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Item Categories](../resources/dynamics_itemcategories.md)  
-[Get Item Categories](../api/dynamics_itemcategories_get.md)  
-[Create Item Categories](../api/dynamics_create_itemcategories.md)  
-[Delete Item Categories](../api/dynamics_itemcategories_delete.md)  

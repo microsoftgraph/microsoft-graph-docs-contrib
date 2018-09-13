@@ -77,10 +77,3 @@ Content-type: application/json
 }
 ```
 
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[IRS 1099](../resources/dynamics_irs1099.md)  
-[Get IRS 1099](../api/dynamics_irs1099_get.md)  
-[Post IRS 1099](../api/dynamics_create_irs1099.md)  
-[Delete IRS 1099](../api/dynamics_irs1099_delete.md)  

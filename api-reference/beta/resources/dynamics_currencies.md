@@ -58,10 +58,3 @@ Here is a JSON representation of the currencies.
 
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Get Currencies](../api/dynamics_currencies_get.md)  
-[Post Currencies](../api/dynamics_create_currencies.md)  
-[Patch Currencies](../api/dynamics_currencies_update.md)  
-[Delete Currencies](../api/dynamics_currencies_delete.md)  

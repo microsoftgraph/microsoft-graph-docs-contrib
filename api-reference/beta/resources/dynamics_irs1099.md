@@ -55,10 +55,3 @@ Here is a JSON representation of the irs1099Codes.
 
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Get IRS 1099](../api/dynamics_irs1099_get.md)  
-[Post IRS 1099](../api/dynamics_create_irs1099.md)  
-[Patch IRS 1099](../api/dynamics_irs1099_update.md)  
-[Delete IRS 1099](../api/dynamics_irs1099_delete.md)  

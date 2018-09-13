@@ -94,10 +94,4 @@ Here is a JSON representation of the resource.
 
 
 ```
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 
-[Get Customers](../api/dynamics_customer_get.md)  
-[Post Customers](../api/dynamics_create_customer.md)  
-[Patch Customers](../api/dynamics_customer_update.md)  
-[Delete Customers](../api/dynamics_customer_delete.md)  

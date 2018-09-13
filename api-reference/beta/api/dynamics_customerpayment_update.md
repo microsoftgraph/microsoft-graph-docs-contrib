@@ -87,9 +87,4 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Customer Payments](../resources/dynamics_customerpayment.md)  
-[Get Customer Payments](dynamics_customerpayment_get.md)  
-[Post Customer Payments](dynamics_create_customerpayment.md)  
-[Delete Customer Payments](dynamics_customerpayment_delete.md)  
+

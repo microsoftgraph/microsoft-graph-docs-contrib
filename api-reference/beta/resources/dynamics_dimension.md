@@ -45,8 +45,3 @@ Here is a JSON representation of the resource.
 }
 ```
 
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Get Dimensions](../api/dynamics_dimension_get.md)  

@@ -60,10 +60,3 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Countries Regions](../resources/dynamics_countriesregions.md)  
-[Get Countries Regions](dynamics_countriesregions_get.md)  
-[Post Countries Regions](dynamics_create_countriesregions.md)  
-[Patch Countries Regions](dynamics_countriesregions_update.md)  

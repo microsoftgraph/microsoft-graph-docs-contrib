@@ -50,11 +50,3 @@ Here is a JSON representation of the resource.
 }
 ```
 
-## See also
-[Microsoft Graph Reference](../api/dynamics_graph_reference.md)  
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Customer Payment Journal](../api/dynamics_customerpaymentsjournal_get.md)  
-[Post Customer Payment Journal](../api/dynamics_create_customerpaymentsjournal.md)  
-[Patch Customer Payment Journal](../api/dynamics_customerpaymentsjournal_update.md)  
-[Delete Customer Payment Journal](../api/dynamics_customerpaymentsjournal_delete.md)  

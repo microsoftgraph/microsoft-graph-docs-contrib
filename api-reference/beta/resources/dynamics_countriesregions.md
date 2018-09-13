@@ -55,10 +55,4 @@ Here is a JSON representation of the countriesRegions.
 
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
 
-[Get Countries Regions](../api/dynamics_countriesregions_get.md)  
-[Post Countries Regions](../api/dynamics_create_countriesregions.md)  
-[Patch Countries Regions](../api/dynamics_countriesregions_update.md)  
-[Delete Countries Regions](../api/dynamics_countriesregions_delete.md)  

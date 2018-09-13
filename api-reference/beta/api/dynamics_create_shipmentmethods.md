@@ -79,10 +79,3 @@ Content-type: application/json
 }
 
 ```
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Shipment Methods](../resources/dynamics_shipmentmethods.md)  
-[Get Shipment Methods](../api/dynamics_shipmentmethods_get.md)  
-[Update Shipment Methods](../api/dynamics_shipmentmethods_update.md)  
-[Delete Shipment Methods](../api/dynamics_shipmentmethods_delete.md)  

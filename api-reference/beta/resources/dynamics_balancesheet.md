@@ -53,8 +53,3 @@ Here is a JSON representation of the resource.
 }
 
 ```
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Get Balance Sheet](../api/dynamics_balancesheet_get.md)  
-[Cash Flow Statement](dynamics_cashflowstatement.md)  

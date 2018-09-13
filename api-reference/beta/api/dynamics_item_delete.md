@@ -59,9 +59,4 @@ Here is an example of the response.
 ```json
 HTTP/1.1 204 No Content
 ```
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Item](../resources/dynamics_item.md)  
-[Get Item](../api/dynamics_item_get.md)  
-[Post Item](../api/dynamics_create_item.md)  
-[Patch Item](../api/dynamics_item_update.md)  
+

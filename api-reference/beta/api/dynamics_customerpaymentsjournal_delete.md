@@ -63,9 +63,3 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Customer Payment Journal](../resources/dynamics_customerpaymentsjournal.md)  
-[Get Customer Payment Journal](dynamics_customerpaymentsjournal_get.md)  
-[Post Customer Payment Journal](dynamics_create_customerpaymentsjournal.md)  
-[Patch Customer Payment Journal](dynamics_customerpaymentsjournal_update.md)  

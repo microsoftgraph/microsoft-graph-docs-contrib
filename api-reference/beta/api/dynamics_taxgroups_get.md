@@ -69,9 +69,3 @@ Here is an example of the response.
 ```
 
 
-## See Also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Tax Groups](../resources/dynamics_taxgroups.md)  
-[Create Tax groups](../api/dynamics_create_taxgroups.md)  
-[Update Tax Groups](../api/dynamics_taxgroups_update.md)  
-[Delete Tax Groups](../api/dynamics_taxgroups_delete.md)  

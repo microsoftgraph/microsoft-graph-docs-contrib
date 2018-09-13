@@ -94,9 +94,3 @@ Content-type: application/json
 ```
 
 
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Vendor](../resources/dynamics_vendor.md)  
-[Get Vendor](../api/dynamics_vendor_get.md)  
-[Create Vendor](../api/dynamics_create_vendor.md)  
-[Delete Vendor](../api/dynamics_vendor_delete.md)  

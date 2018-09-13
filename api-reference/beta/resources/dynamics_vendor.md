@@ -78,11 +78,3 @@ Here is a JSON representation of the vendor.
 
 ```
 
-## See also
-[Graph Reference](../api/dynamics_graph_reference.md)  
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-
-[Get Vendor](../api/dynamics_vendor_get.md)  
-[Create Vendor](../api/dynamics_create_vendor.md)  
-[Update Vendor](../api/dynamics_vendor_update.md)  
-[Delete Vendor](../api/dynamics_vendor_delete.md)  

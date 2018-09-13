@@ -61,11 +61,3 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-
-
-## See also
-[Business Central API Overview](../dynamics-business-central-concept-overview.md)  
-[Employee](../resources/dynamics_employee.md)  
-[Get Employee](../api/dynamics_employee_get.md)  
-[Post Employee](../api/dynamics_create_employee.md)  
-[Patch Employee](../api/dynamics_employee_update.md)  
