@@ -32,6 +32,9 @@ Application|User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.Rea
 PATCH /financials/companies{id}/employees{id}
 ```
 
+## Optional query parameters
+This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+
 ## Request headers
 |Header         |Value                     |
 |---------------|--------------------------|
