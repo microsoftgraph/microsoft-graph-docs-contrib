@@ -5357,36 +5357,36 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-  <Item text="Financials" url="/en-us/api-reference/beta/api/dynamics_graph_reference" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Dynamics 365 Business Central APIs">
-    <Item text="Account" url="/en-us/api-reference/beta/resources/dynamics_account" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Account APIs">
+  <Item text="Financials" url="/en-us/api-reference/beta/api/dynamics_graph_reference" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Dynamics 365 Business Central APIs" />
+    <Item text="Account" url="/en-us/api-reference/beta/resources/dynamics_account" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Account APIs" />
         <Item text="Get account" url="/en-us/api-reference/beta/api/dynamics_account_get" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the account object." />
       </Item>
-    <Item text="Aged accounts payable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountspayable" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Aged accounts payable APIs.">
+    <Item text="Aged accounts payable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountspayable" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Aged accounts payable APIs." />
         <Item text="Get aged accounts payable" url="/en-us/api-reference/beta/api/dynamics_agedaccountspayable_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list aged accounts payables objects." />
       </Item>
-    <Item text="Aged accounts receivable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountsreceivable" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Aged accounts receivable APIs.">
+    <Item text="Aged accounts receivable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountsreceivable" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Aged accounts receivable APIs." />
         <Item text="Get aged accounts payable" url="/en-us/api-reference/beta/api/dynamics_agedaccountsreceivable_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of aged accounts receivable objects." />
       </Item>
-    <Item text="Balance sheet" url="/en-us/api-reference/beta/resources/dynamics_balancesheet" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Balance sheet APIs.">
+    <Item text="Balance sheet" url="/en-us/api-reference/beta/resources/dynamics_balancesheet" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Balance sheet APIs." />
         <Item text="Get balance sheet" url="/en-us/api-reference/beta/api/dynamics_balancesheet_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of balance sheet objects." />
       </Item>
-    <Item text="Cash flow statement" url="/en-us/api-reference/beta/resources/dynamics_cashflowstatement" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Cashflow statement APIs.">
+    <Item text="Cash flow statement" url="/en-us/api-reference/beta/resources/dynamics_cashflowstatement" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Cashflow statement APIs." />
         <Item text="Get cashflow statement" url="/en-us/api-reference/beta/api/dynamics_cashflowstatement_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of cash flow statement objects." />
       </Item>
-    <Item text="Companies" url="/en-us/api-reference/beta/resources/dynamics_companies" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Company APIs.">
+    <Item text="Companies" url="/en-us/api-reference/beta/resources/dynamics_companies" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Company APIs." />
         <Item text="Get companies" url="/en-us/api-reference/beta/api/dynamics_companies_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of company objects." />
       </Item>
-    <Item text="Companyinformation" url="/en-us/api-reference/beta/resources/dynamics_company_information" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Companyinformation APIs" >
+    <Item text="Companyinformation" url="/en-us/api-reference/beta/resources/dynamics_companyinformation" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Companyinformation APIs"  />
         <Item text="Get company information" url="/en-us/api-reference/beta/api/dynamics_companyinformation_get" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of company information objects." />
         <Item text="Update company information" url="/en-us/api-reference/beta/api/dynamics_companyinformation_update" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the company information object." />
       </Item>
-    <Item text="Countriesregions" url="/en-us/api-reference/beta/resources/dynamics_countriesregions" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Countries regions APIs" >
+    <Item text="Countriesregions" url="/en-us/api-reference/beta/resources/dynamics_countriesregions" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Countries regions APIs" />
         <Item text="Get countries/regions" url="/en-us/api-reference/beta/api/dynamics_countriesregions_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the countries regions object." />
         <Item text="Create countries/regions" url="/en-us/api-reference/beta/api/dynamics_create_countriesregions" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a countries regions object." />
         <Item text="Update countries/regions" url="/en-us/api-reference/beta/api/dynamics_countriesregions_create" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the countries regions object." />
         <Item text="Delete countries/regions" url="/en-us/api-reference/beta/api/dynamics_countriesregions_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the countries regions object." />
       </Item>
-    <Item text="Currencies" url="/en-us/api-reference/beta/resources/dynamics_currencies" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Currencies APIs" >
+    <Item text="Currencies" url="/en-us/api-reference/beta/resources/dynamics_currencies" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Currencies APIs"  />
         <Item text="Get currencies" url="/en-us/api-reference/beta/api/dynamics_currencies_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the currencies object." />
         <Item text="Create currencies" url="/en-us/api-reference/beta/api/dynamics_create_currencies" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a currencies object." />
         <Item text="Update currencies" url="/en-us/api-reference/beta/api/dynamics_currencies_create" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the currencies object." />
@@ -5398,76 +5398,76 @@
         <Item text="Update customer" url="/en-us/api-reference/beta/api/dynamics_customer_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the customer object." />
         <Item text="Delete customer" url="/en-us/api-reference/beta/api/dynamics_customer_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the customer object." />
       </Item>
-    <Item text="Customer payment" url="/en-us/api-reference/beta/resources/dynamics_customerpayment" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Customer payment APIs.">
+    <Item text="Customer payment" url="/en-us/api-reference/beta/resources/dynamics_customerpayment" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Customer payment APIs." />
         <Item text="Get customer payment" url="/en-us/api-reference/beta/api/dynamics_customerpayment_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the customer payment object." />
         <Item text="Create customer payment" url="/en-us/api-reference/beta/api/dynamics_create_customerpayment" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a customer payment object." />
         <Item text="Update customer payment" url="/en-us/api-reference/beta/api/dynamics_customerpayment_update" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update a customer payment object." />
         <Item text="Delete customer payment" url="/en-us/api-reference/beta/api/dynamics_customerpayment_delete" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete a customer payment object." />
       </Item>
-      <Item text="Customer payments journal" url="/en-us/api-reference/beta/resources/dynamics_customerpaymentsjournal" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Customer payment journal APIs.">
+      <Item text="Customer payments journal" url="/en-us/api-reference/beta/resources/dynamics_customerpaymentsjournal" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Customer payment journal APIs."  />
         <Item text="Get customer payments journal" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the customer payment journal object." />
         <Item text="Create customer payments journal" url="/en-us/api-reference/beta/api/dynamics_create_customerpaymentsjournal" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a customer payment journal object." />
         <Item text="Update customer payments journal" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_update" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update a customer payment journal object." />
         <Item text="Delete customer payments journal" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_delete" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete a customer payment journal object." />
       </Item>  
-    <Item text="Customer sales" url="/en-us/api-reference/beta/resources/dynamics_customersales" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Customersales APIs" >
+    <Item text="Customer sales" url="/en-us/api-reference/beta/resources/dynamics_customersales" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Customersales APIs"  />
         <Item text="Get customer sales" url="/en-us/api-reference/beta/api/dynamics_customersales_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the customer sales object." />
       </Item>
-    <Item text="Dimension" url="/en-us/api-reference/beta/resources/dynamics_dimension" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Dimension APIs.">
+    <Item text="Dimension" url="/en-us/api-reference/beta/resources/dynamics_dimension" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Dimension APIs."  />
         <Item text="Get dimension" url="/en-us/api-reference/beta/api/dynamics_dimension_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of dimension objects." />
       </Item>
-    <Item text="Dimension value" url="/en-us/api-reference/beta/resources/dynamics_dimensionvalue" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Dimension value APIs.">
+    <Item text="Dimension value" url="/en-us/api-reference/beta/resources/dynamics_dimensionvalue" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Dimension value APIs." />
         <Item text="Get dimension" url="/en-us/api-reference/beta/api/dynamics_dimensionvalue_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of dimension value objects." />
       </Item>  
-    <Item text="Employee" url="/en-us/api-reference/beta/resources/dynamics_employee" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Employee.">
+    <Item text="Employee" url="/en-us/api-reference/beta/resources/dynamics_employee" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Employee." />
         <Item text="Get employee" url="/en-us/api-reference/beta/api/dynamics_employee_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of employee objects." />
         <Item text="Create employee" url="/en-us/api-reference/beta/api/dynamics_create_employee" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create an employee object." />
         <Item text="Update employee" url="/en-us/api-reference/beta/api/dynamics_employee_update" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update an employee object." />
         <Item text="Delete employee" url="/en-us/api-reference/beta/api/dynamics_employee_delete" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete an employee object." />
       </Item>  
-     <Item text="General ledger entries" url="/en-us/api-reference/beta/resources/dynamics_generalledgerentries" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="General ledger entries APIs.">
+     <Item text="General ledger entries" url="/en-us/api-reference/beta/resources/dynamics_generalledgerentries" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="General ledger entries APIs." />
         <Item text="Get general ledger entries" url="/en-us/api-reference/beta/api/dynamics_generalledgerentries_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of general ledger entries objects." />     
       </Item>
-      <Item text="Income statement" url="/en-us/api-reference/beta/resources/dynamics_incomestatement" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Income statement APIs.">
+    <Item text="Income statement" url="/en-us/api-reference/beta/resources/dynamics_incomestatement" SEOKeyword="Microsoft Graph API, Business Central API"  SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Income statement APIs." />
         <Item text="Get income statement" url="/en-us/api-reference/beta/api/dynamics_incomestatement_get" SEOKeyword="List items, Microsoft Graph API, drive API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve a list of income statement objects." />     
-    </Item>  
-    <Item text="IRS 1099" url="/en-us/api-reference/beta/resources/dynamics_irs1099" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="IRS1099 APIs" >
+      </Item>  
+    <Item text="IRS 1099" url="/en-us/api-reference/beta/resources/dynamics_irs1099" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="IRS1099 APIs"  />
         <Item text="Get IRS 1099" url="/en-us/api-reference/beta/api/dynamics_irs1099_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the irs1099 object." />
         <Item text="Create IRS 1099" url="/en-us/api-reference/beta/api/dynamics_create_irs1099" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create an irs1099 object." />
         <Item text="Update IRS 1099" url="/en-us/api-reference/beta/api/dynamics_irs1099_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the irs1099 object." />
         <Item text="Delete IRS 1099" url="/en-us/api-reference/beta/api/dynamics_irs1099_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the irs1099 object." />
       </Item>
-    <Item text="Item" url="/en-us/api-reference/beta/resources/dynamics_item" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Item APIs" >
+    <Item text="Item" url="/en-us/api-reference/beta/resources/dynamics_item" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Item APIs"  />
         <Item text="Get item" url="/en-us/api-reference/beta/api/dynamics_item_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the item object." />
         <Item text="Create item" url="/en-us/api-reference/beta/api/dynamics_create_item" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create an item object." />
         <Item text="Update item" url="/en-us/api-reference/beta/api/dynamics_item_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the item object." />
         <Item text="Delete item" url="/en-us/api-reference/beta/api/dynamics_item_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the item object." />
       </Item>
-    <Item text="Item categories" url="/en-us/api-reference/beta/resources/dynamics_itemcategories" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Item categories APIs" >
+    <Item text="Item categories" url="/en-us/api-reference/beta/resources/dynamics_itemcategories" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Item categories APIs"  />
         <Item text="Get item categories" url="/en-us/api-reference/beta/api/dynamics_itemcategories_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the itemc ategories object." />
         <Item text="Create item categories" url="/en-us/api-reference/beta/api/dynamics_create_itemcategories" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create an itemcategories object." />
         <Item text="Update item categories" url="/en-us/api-reference/beta/api/dynamics_itemcategories_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the itemcategories object." />
         <Item text="Delete item categories" url="/en-us/api-reference/beta/api/dynamics_itemcategories_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the itemcategories object." />
       </Item>
-    <Item text="Journal" url="/en-us/api-reference/beta/resources/dynamics_journal" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Journal APIs" >
+    <Item text="Journal" url="/en-us/api-reference/beta/resources/dynamics_journal" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Journal APIs"  />
         <Item text="Get journal" url="/en-us/api-reference/beta/api/dynamics_journal_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the journal object." />
         <Item text="Create journal" url="/en-us/api-reference/beta/api/dynamics_create_journal" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a journal object." />
         <Item text="Update journal" url="/en-us/api-reference/beta/api/dynamics_journal_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the journal object." />
         <Item text="Delete journal" url="/en-us/api-reference/beta/api/dynamics_journal_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the journal object." />
       </Item>  
-    <Item text="Journal line" url="/en-us/api-reference/beta/resources/dynamics_journalline" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Journal line APIs" >
+    <Item text="Journal line" url="/en-us/api-reference/beta/resources/dynamics_journalline" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Journal line APIs"  />
         <Item text="Get journal line" url="/en-us/api-reference/beta/api/dynamics_journalline_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the journal line object." />
         <Item text="Create journal line" url="/en-us/api-reference/beta/api/dynamics_create_journalline" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a journal line object." />
         <Item text="Update journal line" url="/en-us/api-reference/beta/api/dynamics_journalline_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the journal line object." />
         <Item text="Delete journal line" url="/en-us/api-reference/beta/api/dynamics_journalline_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the journal line object." />
       </Item>
-    <Item text="Payment methods" url="/en-us/api-reference/beta/resources/dynamics_paymentmethods" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Payment methods APIs" >
+    <Item text="Payment methods" url="/en-us/api-reference/beta/resources/dynamics_paymentmethods" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Payment methods APIs"  />
         <Item text="Get payment methods" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the payment methods object." />
         <Item text="Create payment methods" url="/en-us/api-reference/beta/api/dynamics_create_paymentmethods" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a payment methods object." />
         <Item text="Update payment methods" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the payment methods object. " />
         <Item text="Delete payment methods" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the payment methods object." />
       </Item>
-    <Item text="Payment terms" url="/en-us/api-reference/beta/resources/dynamics_paymentterms" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Payment terms APIs" >
+    <Item text="Payment terms" url="/en-us/api-reference/beta/resources/dynamics_paymentterms" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Payment terms APIs"  />
         <Item text="Get payment terms" url="/en-us/api-reference/beta/api/dynamics_paymentterms_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the payment terms object." />
         <Item text="Create payment terms" url="/en-us/api-reference/beta/api/dynamics_create_paymentterms" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a payment terms object." />
         <Item text="Update payment terms" url="/en-us/api-reference/beta/api/dynamics_paymentterms_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the payment terms object." />
@@ -5476,34 +5476,34 @@
     <Item text="Retained earnings statement" url="/en-us/api-reference/beta/resources/dynamics_retainedearningsstatement" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retained earnings statement APIs" >
         <Item text="Get retained earnings statement" url="/en-us/api-reference/beta/api/dynamics_retainedearningsstatement_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the retained earnings statement object." />  
       </Item>  
-    <Item text="Shipment methods" url="/en-us/api-reference/beta/resources/dynamics_shipmentmethods" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Shipment methods APIs" >
+    <Item text="Shipment methods" url="/en-us/api-reference/beta/resources/dynamics_shipmentmethods" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Shipment methods APIs"  />
         <Item text="Get shipment methods" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the shipment methods object." />
         <Item text="Create shipment methods" url="/en-us/api-reference/beta/api/dynamics_create_shipmentmethods" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a shipment methods object." />
         <Item text="Update shipment methods" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the shipment methods object." />
         <Item text="Delete shipment methods" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the shipment methods object." />
       </Item>
-    <Item text="Tax area" url="/en-us/api-reference/beta/resources/dynamics_taxarea" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Tax area APIs" >
+    <Item text="Tax area" url="/en-us/api-reference/beta/resources/dynamics_taxarea" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Tax area APIs"  />
         <Item text="Get tax area" url="/en-us/api-reference/beta/api/dynamics_taxarea_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the tax area object." />    
         <Item text="Create tax area" url="/en-us/api-reference/beta/api/dynamics_create_taxarea" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a tax area object." />    
         <Item text="Update tax area" url="/en-us/api-reference/beta/api/dynamics_taxarea_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update a tax area object." />    
         <Item text="Delete tax area" url="/en-us/api-reference/beta/api/dynamics_taxarea_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete a tax area object." />    
       </Item>  
-    <Item text="Tax groups" url="/en-us/api-reference/beta/resources/dynamics_taxgroups" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Tax groups APIs" >
+    <Item text="Tax groups" url="/en-us/api-reference/beta/resources/dynamics_taxgroups" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Tax groups APIs"  />
         <Item text="Get tax groups" url="/en-us/api-reference/beta/api/dynamics_taxgroups_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the tax groups object." />    
         <Item text="Create tax groups" url="/en-us/api-reference/beta/api/dynamics_create_taxgroups" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a tax groups object." />    
         <Item text="Update tax groups" url="/en-us/api-reference/beta/api/dynamics_taxgroups_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update a tax groups object." />    
         <Item text="Delete tax groups" url="/en-us/api-reference/beta/api/dynamics_taxgroups_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete a tax groups object." />    
       </Item>    
-    <Item text="Trial balance" url="/en-us/api-reference/beta/resources/dynamics_trialbalance" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Trial balance APIs" >
+    <Item text="Trial balance" url="/en-us/api-reference/beta/resources/dynamics_trialbalance" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Trial balance APIs"  />
         <Item text="Get trial balance" url="/en-us/api-reference/beta/api/dynamics_trialbalance_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the trial balance object." />
       </Item>          
-    <Item text="Unitsofmeasure" url="/en-us/api-reference/beta/resources/dynamics_unitsofmeasure" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Units of measure APIs" >
+    <Item text="Unitsofmeasure" url="/en-us/api-reference/beta/resources/dynamics_unitsofmeasure" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Units of measure APIs"  />
         <Item text="Get units of measure" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the units of measure object." />
         <Item text="Create units of measure" url="/en-us/api-reference/beta/api/dynamics_create_unitsofmeasure" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a units of measure object." />
         <Item text="Update units of measure" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the units of measure object." />
         <Item text="Delete units of measure" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the units of measure object." />
       </Item>
-    <Item text="Vendor" url="/en-us/api-reference/beta/resources/dynamics_vendor" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Vendor APIs" >
+    <Item text="Vendor" url="/en-us/api-reference/beta/resources/dynamics_vendor" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Vendor APIs"  />
         <Item text="Get vendor" url="/en-us/api-reference/beta/api/dynamics_vendor_get" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the vendor object." />
         <Item text="Create vendor" url="/en-us/api-reference/beta/api/dynamics_create_vendor" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Create a vendor object." />
         <Item text="Update vendor" url="/en-us/api-reference/beta/api/dynamics_vendor_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the vendor object." />
