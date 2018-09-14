@@ -15,7 +15,7 @@ ms.author: solsen
 ---
 
 # Get countriesRegions
-Retrieve the properties and relationships of a countries regions object for Dynamics 365 Business Central.
+Retrieve the properties and relationships of a countriesRegions object for Dynamics 365 Business Central.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
