@@ -5509,7 +5509,6 @@
         <Item text="Update vendor" url="/en-us/api-reference/beta/api/dynamics_vendor_update" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Update the vendor object." />
         <Item text="Delete vendor" url="/en-us/api-reference/beta/api/dynamics_vendor_delete" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Delete the vendor object." />
       </Item>
-    </Item>
   </Item>
 	<Item text="Identity and access" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       <Item text="Access reviews" url="/en-us/api-reference/beta/resources/accessreviews_root" SEOKeyword="Access review API, Microsoft Graph API, accessReview API" SEODescription="The Access review API lets you validate group and app access and membership.">
