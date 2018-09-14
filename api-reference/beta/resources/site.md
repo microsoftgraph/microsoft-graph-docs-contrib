@@ -22,6 +22,7 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 | [Get site for a group][]       | GET /groups/{group-id}/sites/root
 | [Get analytics][]              | GET /sites/{site-id}/analytics
 | [Get activities by interval][] | GET /sites/{site-id}/getActivitiesByInterval
+| [List pages][]                 | GET /sites/{site-id}/pages
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
 
@@ -31,6 +32,7 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 [Get site for a group]: ../api/site_get.md
 [Get analytics]: ../api/itemAnalytics_get.md
 [Get activities by interval]: ../api/itemActivity_getByInterval.md
+[List pages]: ../api/sitepage_list.md
 [List root sites]: ../api/site_list.md
 [Search for sites]: ../api/site_search.md
 
@@ -110,6 +112,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 | **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.
 | **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
 | **lists**         | Collection([list][])             | The collection of lists under this site.
+| **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 
 [columnDefinition]: columndefinition.md
@@ -119,6 +122,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 [identitySet]: identityset.md
 [itemAnalytics]: itemAnalytics.md
 [list]: list.md
+[sitePage]: sitePage.md
 [root]: root.md
 [site]: site.md
 [sharepointIds]: sharepointIds.md
