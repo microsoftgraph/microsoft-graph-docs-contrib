@@ -19,10 +19,10 @@ Represents a customer in Dynamics 365 Business Central.
 
 | Method                                              |Return Type| Description      |
 |:----------------------------------------------------|:----------|:-----------------|
-|[GET customers](../api/dynamics_customer_get.md)      |customers   |Gets a customer.   |
-|[CREATE customers](../api/dynamics_create_customer.md)|customers   |Creates a customer.|
-|[UPDATE customers](../api/dynamics_customer_update.md)|customers   |Updates a customer.|
-|[DELETE customers](../api/dynamics_customer_delete.md)|none        |Deletes a customer.|
+|[Get customers](../api/dynamics_customer_get.md)      |customers   |Gets a customer.   |
+|[Create customers](../api/dynamics_create_customer.md)|customers   |Creates a customer.|
+|[Update customers](../api/dynamics_customer_update.md)|customers   |Updates a customer.|
+|[Delete customers](../api/dynamics_customer_delete.md)|none        |Deletes a customer.|
 
 ## Properties
 | Property	  | Type	 |Description|

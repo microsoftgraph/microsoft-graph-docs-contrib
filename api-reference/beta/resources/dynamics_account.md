@@ -21,7 +21,7 @@ Represents an account object in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET accounts](../api/dynamics_account_get.md)|accounts|Get accounts object.|
+|[Get accounts](../api/dynamics_account_get.md)|accounts|Get accounts object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -21,10 +21,10 @@ Represents a customer payment in Dynamics 365 Business Central. A customer payme
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[GET customerPayments](../api/dynamics_customerpayment_get.md)|customerPayments|Gets a customer payment.|
-|[POST customerPayments](../api/dynamics_create_customerpayment.md)|customerPayments|Creates a customer payment.|
-|[PATCH customerPayments](../api/dynamics_customerpayment_update.md)|customerPayments|Updates a customer payment.|
-|[DELETE customerPayments](../api/dynamics_customerpayment_delete.md)|none|Deletes a customer payment.|
+|[Get customerPayments](../api/dynamics_customerpayment_get.md)|customerPayments|Gets a customer payment.|
+|[Post customerPayments](../api/dynamics_create_customerpayment.md)|customerPayments|Creates a customer payment.|
+|[Patch customerPayments](../api/dynamics_customerpayment_update.md)|customerPayments|Updates a customer payment.|
+|[Delete customerPayments](../api/dynamics_customerpayment_delete.md)|none|Deletes a customer payment.|
 
 ## Properties
 | Property	   | Type	 |Description|

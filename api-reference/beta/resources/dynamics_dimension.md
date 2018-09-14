@@ -18,7 +18,7 @@ Represents a dimension in Dynamics 365 Business Central.
 ## Methods
 | Method       | Return Type  |Description|
 |:-------------|:-------------|:----------|
-|[GET dimensions](../api/dynamics_dimension_get.md)|dimension|Gets a dimension.|
+|[Get dimensions](../api/dynamics_dimension_get.md)|dimension|Gets a dimension.|
 
 
 ## Properties

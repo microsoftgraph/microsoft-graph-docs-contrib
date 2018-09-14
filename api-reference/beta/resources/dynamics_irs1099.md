@@ -21,10 +21,10 @@ Represents an irs1099Codes object in Dynamics 365 Business Central. IRS 1099 cod
 
 | Method                                                 | Return Type|Description            |
 |:-------------------------------------------------------|:-----------|:----------------------|
-|[GET irs1099Codes](../api/dynamics_irs1099_get.md)      |irs1099Codes|Gets an IRS 1099 code. |
-|[POST irs1099Codes](../api/dynamics_create_irs1099.md)  |irs1099Codes|Creates an IRS 1099 code.|
-|[PATCH irs1099Codes](../api/dynamics_irs1099_update.md) |irs1099Codes|Update an IRS 1099 code.|
-|[DELETE irs1099Codes](../api/dynamics_irs1099_delete.md)|none        |Delete an IRS 1099 code.|
+|[Get irs1099Codes](../api/dynamics_irs1099_get.md)      |irs1099Codes|Gets an IRS 1099 code. |
+|[Post irs1099Codes](../api/dynamics_create_irs1099.md)  |irs1099Codes|Creates an IRS 1099 code.|
+|[Patch irs1099Codes](../api/dynamics_irs1099_update.md) |irs1099Codes|Update an IRS 1099 code.|
+|[Delete irs1099Codes](../api/dynamics_irs1099_delete.md)|none        |Delete an IRS 1099 code.|
 
 ## Properties
 | Property	         | Type 	|Description                                      |

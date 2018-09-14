@@ -20,10 +20,10 @@ Represents a tax area resource type in Dynamics 365 Business Central.
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET taxAreas](../api/dynamics_taxarea_get.md)|taxAreas|Gets a tax area object.|
-|[POST taxAreas](../api/dynamics_create_taxarea.md)|taxAreas|Creates a tax area object.|
-|[PATCH taxAreas](../api/dynamics_taxarea_update.md)|taxAreas|Updates a tax area object.|
-|[DELETE taxAreas](../api/dynamics_taxarea_delete.md)|none|Deletes a tax area object.|
+|[Get taxAreas](../api/dynamics_taxarea_get.md)|taxAreas|Gets a tax area object.|
+|[Post taxAreas](../api/dynamics_create_taxarea.md)|taxAreas|Creates a tax area object.|
+|[Patch taxAreas](../api/dynamics_taxarea_update.md)|taxAreas|Updates a tax area object.|
+|[Delete taxAreas](../api/dynamics_taxarea_delete.md)|none|Deletes a tax area object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -21,10 +21,10 @@ Represents a countriesRegions object in Dynamics 365 Business Central, which is 
 
 | Method                                                              | Return Type    |Description                |
 |:--------------------------------------------------------------------|:---------------|:--------------------------|
-|[GET countriesRegions](../api/dynamics_countriesregions_get.md)      |countriesRegions|Get a Countries/Regions.   |
-|[POST countriesRegions](../api/dynamics_create_countriesregions.md)  |countriesRegions|Create a Countries/Regions.|
-|[PATCH countriesRegions](../api/dynamics_countriesregions_update.md) |countriesRegions|Update a Countries/Regions.|
-|[DELETE countriesRegions](../api/dynamics_countriesregions_delete.md)|none            |Delete a Countries/Regions.|
+|[Get countriesRegions](../api/dynamics_countriesregions_get.md)      |countriesRegions|Get a Countries/Regions.   |
+|[Post countriesRegions](../api/dynamics_create_countriesregions.md)  |countriesRegions|Create a Countries/Regions.|
+|[Patch countriesRegions](../api/dynamics_countriesregions_update.md) |countriesRegions|Update a Countries/Regions.|
+|[Delete countriesRegions](../api/dynamics_countriesregions_delete.md)|none            |Delete a Countries/Regions.|
 
 ## Properties
 | Property	     | Type	      |Description                                                  |

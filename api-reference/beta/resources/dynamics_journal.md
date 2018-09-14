@@ -21,10 +21,10 @@ Represents a journal in Dynamics 365 Business Central.
 
 | Method                                            |Return Type|Description    |
 |:--------------------------------------------------|:----------|:--------------|
-|[GET journal](../api/dynamics_journal_get.md)      |journal    |Gets a journal.   |
-|[POST journal](../api/dynamics_create_journal.md)  |journal    |Creates a journal.|
-|[PATCH journal](../api/dynamics_journal_update.md) |journal    |Updates a journal.|
-|[DELETE journal](../api/dynamics_journal_delete.md)|none       |Deletes a journal.|
+|[Get journal](../api/dynamics_journal_get.md)      |journal    |Gets a journal.   |
+|[Post journal](../api/dynamics_create_journal.md)  |journal    |Creates a journal.|
+|[Patch journal](../api/dynamics_journal_update.md) |journal    |Updates a journal.|
+|[Delete journal](../api/dynamics_journal_delete.md)|none       |Deletes a journal.|
 
 ## Properties
 | Property	         | Type	                 |Description                                           |

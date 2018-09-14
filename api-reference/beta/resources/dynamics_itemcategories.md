@@ -21,10 +21,10 @@ Represents a category for a number of items in Dynamics 365 Business Central.
 
 | Method                                                          | Return Type  |Description             |
 |:----------------------------------------------------------------|:-------------|:-----------------------|
-|[GET itemCategories](../api/dynamics_itemcategories_get.md)      |itemCategories|Get an item category.   |
-|[POST itemCategories](../api/dynamics_create_itemcategories.md)  |itemCategories|Create an item category.|
-|[PATCH itemCategories](../api/dynamics_itemcategories_update.md) |itemCategories|Update an item category.|
-|[DELETE itemCategories](../api/dynamics_itemcategories_delete.md)|none          |Delete an item category.|
+|[Get itemCategories](../api/dynamics_itemcategories_get.md)      |itemCategories|Get an item category.   |
+|[Post itemCategories](../api/dynamics_create_itemcategories.md)  |itemCategories|Create an item category.|
+|[Patch itemCategories](../api/dynamics_itemcategories_update.md) |itemCategories|Update an item category.|
+|[Delete itemCategories](../api/dynamics_itemcategories_delete.md)|none          |Delete an item category.|
 
 ## Properties
 | Property	         | Type	  |Description                                     |

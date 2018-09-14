@@ -21,7 +21,7 @@ Represents an retained earnings statement in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description          |
 |:-------------|:-------------|:--------------------|
-|[GET retainedEarningsStatement](../api/dynamics_retainedearningsstatement_get.md)|retainedEarningsStatement|Get a retained earnings statement object.|
+|[Get retainedEarningsStatement](../api/dynamics_retainedearningsstatement_get.md)|retainedEarningsStatement|Get a retained earnings statement object.|
 
 ## Properties
 | Property	| Type	|Description                                                           |

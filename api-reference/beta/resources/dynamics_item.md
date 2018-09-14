@@ -21,10 +21,10 @@ Represents an item in Dynamics 365 Business Central.
 
 | Method                                      |Return Type|Description |
 |:--------------------------------------------|:----------|:-----------|
-|[GET items](../api/dynamics_item_get.md)      |items     |Gets an item object.   |
-|[POST items](../api/dynamics_create_item.md)  |items     |Creates an item object.|
-|[PATCH item](../api/dynamics_item_update.md)  |items     |Updates an item object.|
-|[DELETE items](../api/dynamics_item_delete.md)|none      |Deletes an item object.|
+|[Get items](../api/dynamics_item_get.md)      |items     |Gets an item object.   |
+|[Post items](../api/dynamics_create_item.md)  |items     |Creates an item object.|
+|[Patch item](../api/dynamics_item_update.md)  |items     |Updates an item object.|
+|[Delete items](../api/dynamics_item_delete.md)|none      |Deletes an item object.|
 
 ## Properties
 | Property	         | Type	|Description                                          |

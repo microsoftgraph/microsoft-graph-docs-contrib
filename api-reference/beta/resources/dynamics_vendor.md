@@ -21,10 +21,10 @@ Represents a vendor in Dynamics 365 Business Central.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[GET vendors](../api/dynamics_vendor_get.md)|vendors|Gets a vendor object.|
-|[POST vendors](../api/dynamics_create_vendor.md)|vendors|Creates a vendor object.|
-|[PATCH vendors](../api/dynamics_vendor_update.md)|vendors|Updates a vendor object.|
-|[DELETE vendor](../api/dynamics_vendor_delete.md)|none|Deletes a vendor object.|
+|[Get vendors](../api/dynamics_vendor_get.md)|vendors|Gets a vendor object.|
+|[Post vendors](../api/dynamics_create_vendor.md)|vendors|Creates a vendor object.|
+|[Patch vendors](../api/dynamics_vendor_update.md)|vendors|Updates a vendor object.|
+|[Delete vendor](../api/dynamics_vendor_delete.md)|none|Deletes a vendor object.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -21,7 +21,7 @@ Represents a balanceSheet object in Dynamics 365 Business Central. A balance she
 
 | Method       | Return Type  |Description|
 |:-------------|:-------------|:----------|
-|[GET balanceSheet](../api/dynamics_balancesheet_get.md)|balanceSheet|Get a balanceSheet object.|
+|[Get balanceSheet](../api/dynamics_balancesheet_get.md)|balanceSheet|Get a balanceSheet object.|
 
 ## Properties
 | Property	   | Type	|Description|

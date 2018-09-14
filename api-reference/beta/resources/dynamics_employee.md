@@ -21,10 +21,10 @@ Represents an employee in Dynamics 365 Business Central.
 
 | Method                                              | Return Type|Description               |
 |:----------------------------------------------------|:-----------|:-------------------------|
-|[GET employees](../api/dynamics_employee_get.md)      |employees  |Get an employee object.   |
-|[POST employees](../api/dynamics_create_employee.md)  |employees  |Create an employee object.|
-|[PATCH employees](../api/dynamics_employee_update.md) |employees  |Update an employee object.|
-|[DELETE employees](../api/dynamics_employee_delete.md)|none       |Delete an employee object.|
+|[Get employees](../api/dynamics_employee_get.md)      |employees  |Get an employee object.   |
+|[Post employees](../api/dynamics_create_employee.md)  |employees  |Create an employee object.|
+|[Patch employees](../api/dynamics_employee_update.md) |employees  |Update an employee object.|
+|[Delete employees](../api/dynamics_employee_delete.md)|none       |Delete an employee object.|
 
 ## Properties
 | Property	         | Type	  |Description                                            |

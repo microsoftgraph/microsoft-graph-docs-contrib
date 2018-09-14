@@ -21,8 +21,8 @@ Represents the information specified for the current company in Dynamics 365 Bus
 
 | Method         | Return Type  |Description|
 |:---------------|:-------------|:----------|
-|[GET companyInformation](../api/dynamics_companyinformation_get.md)|companyInformation|Gets a company information.|
-|[PATCH companyInformation](../api/dynamics_companyinformation_update.md)|companyInformation|Updates a company information.|
+|[Get companyInformation](../api/dynamics_companyinformation_get.md)|companyInformation|Gets a company information.|
+|[Patch companyInformation](../api/dynamics_companyinformation_update.md)|companyInformation|Updates a company information.|
 
 
 ## Properties
