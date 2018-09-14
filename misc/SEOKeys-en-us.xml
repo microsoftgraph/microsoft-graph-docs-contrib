@@ -5357,7 +5357,7 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-  <Item text="Financials" url="/en-us/api-reference/beta/api/dynamics_graph_reference" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Dynamics 365 Business Central APIs" />
+  <Item text="Financials" url="/en-us/api-reference/beta/api/dynamics_graph_reference" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Dynamics 365 Business Central APIs" />
     <Item text="Account" url="/en-us/api-reference/beta/resources/dynamics_account" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Account APIs" />
         <Item text="Get account" url="/en-us/api-reference/beta/api/dynamics_account_get" SEOKeyword="Microsoft Graph API, Business Central API" SEOKeyword="Microsoft Graph API, Business Central API" SEODescription="Retrieve the properties and relationships of the account object." />
       </Item>
