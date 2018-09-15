@@ -52,7 +52,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "Delete tab from channel",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
