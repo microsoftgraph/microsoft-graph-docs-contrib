@@ -25,7 +25,7 @@ A teamsTab is a [tab](../resources/teamsTab.md) that's pinned (attached) to a [c
 |  `name`            |   `string`                  |✓| |  Name of the tab     |
 |  `teamsAppId`           |   `string`                  |✓|✓|  App definition identifier of the tab. This value cannot be changed after tab creation.     |
 |  `sortOrderIndex`  |   `int`                     |✓| |  Index of the order used for sorting tabs     |
-|  `chatMessage`   |   [`chatMessage`](chatMessage.md)                  |✓|✓|  The chat message associated with the tab. This is a navigation property.     |
+|  `chatMessage`   |   [`chatMessage`](chatmessage.md)                  |✓|✓|  The chat message associated with the tab. This is a navigation property.     |
 |  `webUrl`          |   `string`                  |✓|✓|  Deep link url of the tab instance     |
 |  `configuration`        |   [`teamsTabConfiguration`](teamsTabConfiguration.md) ||  |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
 
