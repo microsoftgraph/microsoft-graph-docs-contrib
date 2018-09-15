@@ -34,7 +34,7 @@ A [teamsTab](../resources/teamstab.md).
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `201 OK` response code.
 
 ## Example
 #### Request
