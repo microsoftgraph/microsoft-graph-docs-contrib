@@ -4,12 +4,62 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## September 2018
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Deletion|beta| Removed isBlocks and installedState properties from [teamsApp](../api-reference/beta/resources/teamsapp.md).|
+|Change | beta | Announced that the context property on [teamsApp](../api-reference/beta/resources/teamsapp.md) will be renamed.|
+|Addition|beta|Added application permissions support to [GET /teams/{id}](../api-reference/beta/api/team_get.md). |
+|Addition|beta|Added application permissions support to [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md). |
+|Addition|beta|Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |
+
+### Outlook mail
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0 and beta | The **internetMessageHeaders** property of the [message](../api-reference/v1.0/resources/message.md) entity is now writeable on message creation. |
+
+### Project Rome notifications API
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition          | Beta        | Added the [notification](../api-reference/beta/resources/projectrome_notification.md) resource type. |
+| Addition          | Beta        | Added the [Create and publish notification] (../api-reference/beta/api/projectrome_notification_post.md) API.|
+
+### Security APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta       | Added the Secure Score APIs to the [security API](../api-reference/beta/resources/security-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (and related entities)<br/>[List secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[List secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
+
 ## August 2018
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added  [onPremisesProvisioningErrors](../api-reference/v1.0/resources/onpremisesprovisioningerror.md) property to the [User](../api-reference/v1.0/resources/user.md) and [Group](../api-reference/v1.0/resources/group.md) entities that represents directory synchronization errors when synchronizing on-premises directories to Azure Active Directory when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector).|
+| Addition | v1.0 | Added  [onPremisesExtensionAttributes](../api-reference/v1.0/resources/onpremisesextensionattributes.md) property to the [User](../api-reference/v1.0/resources/user.md) entity that contains fifteen custom extension attribute properties. For an onPremisesSyncEnabled user, this set of properties is mastered in on-premises Active Directory and synchronized to Azure AD, and is read-only. For a cloud-only user (where onPremisesSyncEnabled is false), these properties may be set during creation or update.|
+|Addition|v1.0|Added the **onPremisesDomainName**, **onPremisesSamAccountName**, and **onPremisesUserPrincipalName** properties to the [User](../api-reference/v1.0/resources/user.md) entity|
 
 ### Microsoft Intune APIs
 
 |Change type|Version|Description|
 |:---|:---|:---|
+|Addition|v1.0|Added new entities:<br/>[androidWorkProfileCompliancePolicy](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecompliancepolicy.md)<br/>[androidWorkProfileCustomConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecustomconfiguration.md)<br/>[androidWorkProfileGeneralDeviceConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilegeneraldeviceconfiguration.md)<br/>|
+|Addition|v1.0|Added new enum types:<br/>[androidWorkProfileCrossProfileDataSharingType](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilecrossprofiledatasharingtype.md)<br/>[androidWorkProfileDefaultAppPermissionPolicyType](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofiledefaultapppermissionpolicytype.md)<br/>[androidWorkProfileRequiredPasswordType](../api-reference/v1.0/resources/intune_deviceconfig_androidworkprofilerequiredpasswordtype.md)<br/>|
+|Addition|v1.0|Added the [managedDeviceEnrollmentFailureDetails](../api-reference/v1.0/api/intune_shared_reportroot_manageddeviceenrollmentfailuredetails.md) function on [reportRoot](../api-reference/v1.0/resources/intune_shared_reportroot.md) |
+|Addition|v1.0|Added the [managedDeviceEnrollmentTopFailures](../api-reference/v1.0/api/intune_shared_reportroot_manageddeviceenrollmenttopfailures.md) function on [reportRoot](../api-reference/v1.0/resources/intune_shared_reportroot.md) |
+|Addition|v1.0|Added the **kioskModeBuiltInAppId** property to the [iosGeneralDeviceConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_iosgeneraldeviceconfiguration.md) entity|
+|Addition|v1.0|Added the **notAssigned** member to the [complianceStatus](../api-reference/v1.0/resources/intune_shared_compliancestatus.md) enum type|
+|Addition|v1.0|Added the **pushNotification** member to the [deviceComplianceActionType](../api-reference/v1.0/resources/intune_deviceconfig_devicecomplianceactiontype.md) enum type|
+|Addition|v1.0|Added the **userAbandonment** member to the [deviceEnrollmentFailureReason](../api-reference/v1.0/resources/intune_troubleshooting_deviceenrollmentfailurereason.md) enum type|
+|Addition|v1.0|Added the **compromised** and **misconfigured** members to the [managedDevicePartnerReportedHealthState](../api-reference/v1.0/resources/intune_devices_manageddevicepartnerreportedhealthstate.md) enum type|
+|Addition|v1.0|Added the **assignedToExternalMDM** member to the [vppTokenState](../api-reference/v1.0/resources/intune_onboarding_vpptokenstate.md) enum type|
+||
 |Addition|beta|Added new entities:<br/>[advancedThreatProtectionOnboardingDeviceSettingState](../api-reference/beta/resources/intune_deviceconfig_advancedthreatprotectiononboardingdevicesettingstate.md)<br/>[advancedThreatProtectionOnboardingStateSummary](../api-reference/beta/resources/intune_deviceconfig_advancedthreatprotectiononboardingstatesummary.md)<br/>[depEnrollmentBaseProfile](../api-reference/beta/resources/intune_enrollment_depenrollmentbaseprofile.md)<br/>[depEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depenrollmentprofile.md)<br/>[depIOSEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depiosenrollmentprofile.md)<br/>[depMacOSEnrollmentProfile](../api-reference/beta/resources/intune_enrollment_depmacosenrollmentprofile.md)<br/>[enrollmentProfile](../api-reference/beta/resources/intune_enrollment_enrollmentprofile.md)<br/>[importedAppleDeviceIdentity](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentity.md)<br/>[importedAppleDeviceIdentityResult](../api-reference/beta/resources/intune_enrollment_importedappledeviceidentityresult.md)<br/>[importedWindowsAutopilotDeviceIdentityUpload](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md)<br/>[roleScopeTag](../api-reference/beta/resources/intune_rbac_rolescopetag.md)<br/>[windowsIdentityProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsidentityprotectionconfiguration.md)<br/>|
 |Addition|beta|Added new complex types:<br/>[configurationManagerClientHealthState](../api-reference/beta/resources/intune_devices_configurationmanagerclienthealthstate.md)<br/>[customSubjectAlternativeName](../api-reference/beta/resources/intune_deviceconfig_customsubjectalternativename.md)<br/>[deviceManagementUserRightsLocalUserOrGroup](../api-reference/beta/resources/intune_deviceconfig_devicemanagementuserrightslocaluserorgroup.md)<br/>[deviceManagementUserRightsSetting](../api-reference/beta/resources/intune_deviceconfig_devicemanagementuserrightssetting.md)<br/>[managementCertificateWithThumbprint](../api-reference/beta/resources/intune_enrollment_managementcertificatewiththumbprint.md)<br/>[mobileAppSupportedDeviceType](../api-reference/beta/resources/intune_troubleshooting_mobileappsupporteddevicetype.md)<br/>[osVersionCount](../api-reference/beta/resources/intune_devices_osversioncount.md)<br/>[windowsMalwareCategoryCount](../api-reference/beta/resources/intune_devices_windowsmalwarecategorycount.md)<br/>[windowsMalwareExecutionStateCount](../api-reference/beta/resources/intune_devices_windowsmalwareexecutionstatecount.md)<br/>[windowsMalwareNameCount](../api-reference/beta/resources/intune_devices_windowsmalwarenamecount.md)<br/>[windowsMalwareOverview](../api-reference/beta/resources/intune_devices_windowsmalwareoverview.md)<br/>[windowsMalwareStateCount](../api-reference/beta/resources/intune_devices_windowsmalwarestatecount.md)<br/>|
 |Addition|beta|Added new enum types:<br/>[configurationManagerClientState](../api-reference/beta/resources/intune_devices_configurationmanagerclientstate.md)<br/>[depTokenType](../api-reference/beta/resources/intune_enrollment_deptokentype.md)<br/>[discoverySource](../api-reference/beta/resources/intune_enrollment_discoverysource.md)<br/>[importedWindowsAutopilotDeviceIdentityUploadStatus](../api-reference/beta/resources/intune_enrollment_importedwindowsautopilotdeviceidentityuploadstatus.md)<br/>[iTunesPairingMode](../api-reference/beta/resources/intune_enrollment_itunespairingmode.md)<br/>[lanManagerAuthenticationLevel](../api-reference/beta/resources/intune_deviceconfig_lanmanagerauthenticationlevel.md)<br/>[localSecurityOptionsMinimumSessionSecurity](../api-reference/beta/resources/intune_deviceconfig_localsecurityoptionsminimumsessionsecurity.md)<br/>[resultantAppStateDetail](../api-reference/beta/resources/intune_apps_resultantappstatedetail.md)<br/>[vpnProviderType](../api-reference/beta/resources/intune_deviceconfig_vpnprovidertype.md)<br/>[windowsMalwareThreatState](../api-reference/beta/resources/intune_devices_windowsmalwarethreatstate.md)<br/>|
@@ -74,6 +124,50 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **domainNameService** member to the [subjectAlternativeNameType](../api-reference/beta/resources/intune_deviceconfig_subjectalternativenametype.md) enum type|
 |Addition|beta|Added the **wpa2Personal** and **wpa2Enterprise** members to the [wiFiSecurityType](../api-reference/beta/resources/intune_deviceconfig_wifisecuritytype.md) enum type|
 |Addition|beta|Added the **enterpriseUnwantedSoftware**, **ransom** and **hipsRule** members to the [windowsMalwareCategory](../api-reference/beta/resources/intune_devices_windowsmalwarecategory.md) enum type|
+
+### Outlook calendar
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the [getSchedule](../api-reference/beta/api/calendar_getschedule.md) action, and the [freeBusyError](../api-reference/beta/resources/freebusyerror.md), [scheduleInformation](../api-reference/beta/resources/scheduleinformation.md), and [scheduleItem](../api-reference/beta/resources/scheduleitem.md) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md). |
+
+### Outlook mail
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | v1.0        | Added support for the [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_getmailtips.md) action to get any MailTips for specific recipients. Added the following resources: [automaticRepliesMailTips](../api-reference/v1.0/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/v1.0/resources/mailtips.md), [mailTipsError](../api-reference/v1.0/resources/mailtipserror.md). |
+
+### Reports APIs
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Addition    | v1.0    | Added the **Activated On Shared Computer** property to [getoffice365activationsuserdetail](../api-reference/v1.0/api/reportroot_getoffice365activationsuserdetail.md). |
+| Addition    | v1.0    | Added the **Shared Computer Activation** property to [getoffice365activationsusercounts](../api-reference/v1.0/api/reportroot_getoffice365activationsusercounts.md). |
+
+### Security APIs
+
+| **Change type** | **Version** | **Description**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta       | Added **activityGroupName**, **cloudAppStates**, **confidence**, and **registryKeyStates** properties to [alert](../api-reference/beta/resources/alert.md ). |
+|Deletion|beta| Removed **activityGroupStates**, **applicationStates**, **malwareWasRunning**, **riskScore** and **type** properties from [alert](../api-reference/beta/resources/alert.md ). |
+|Change|beta| Changed **comments** type from a `String` to a `String collection`, and changed **severity** type from a `String` to a [alertSeverity](../api-reference/beta/resources/alertseverityenumtype.md) enum in [alert](../api-reference/beta/resources/alert.md). |
+| Addition        | beta       | Added the following resource types: <br/> [cloudAppSecurityState](../api-reference/beta/resources/cloudappsecuritystate.md) <br/> [fileHash](../api-reference/beta/resources/filehash.md) <br/> [registryKeyState](../api-reference/beta/resources/registrykeystate.md) |
+|Deletion|beta| Removed the following resource types: <br/> **activityGroupState**  <br/> **applicationSecurityState** |
+| Addition        | beta       | Added the following enums: <br/> [alertSeverity](../api-reference/beta/resources/alertseverityenumtype.md) <br/> [connectionDirection](../api-reference/beta/resources/connectiondirectionenumtype.md) <br/> [connectionStatus](../api-reference/beta/resources/connectionstatusenumtype.md) <br/> [emailRole](../api-reference/beta/resources/emailroleenumtype.md) <br/> [fileHashType](../api-reference/beta/resources/filehashtypeenumtype.md) <br/> [registryHive](../api-reference/beta/resources/registryhiveenumtype.md)  <br/> [registryOperation](../api-reference/beta/resources/registryoperationenumtype.md) <br/> [registryValueType](../api-reference/beta/resources/registryvaluetypeenumtype.md)|
+|Deletion|beta| Removed the following enum types: <br/> **alertType** <br/> **applicationPermissionsRequired** |
+| Addition        | beta       | Added **fileHash** property to [fileSecurityState](../api-reference/beta/resources/filesecuritystate.md ).|
+|Deletion|beta| Removed **authenticodeHash256** and **sha256** properties from [fileSecurityState](../api-reference/beta/resources/filesecuritystate.md). |
+| Addition | beta | Added **os** property to [hostSecurityState](../api-reference/beta/resources/hostsecuritystate.md).|
+| Addition | beta | Added **category**, **family**, and **wasRunning** properties to [malwareState](../api-reference/beta/resources/malwarestate.md).|
+|Deletion|beta| Removed **aliases** property from [malwareState](../api-reference/beta/resources/malwarestate.md). |
+|Change|beta| Moved **malwareWasRunning** property from  [alert](../api-reference/beta/resources/alert.md ) to [malwareState](../api-reference/beta/resources/malwarestate.md) and renamed to **wasRunning**. |
+| Addition        | beta       | Added **applicationName**, **destinationDomain**, **direction**, **domainRegisteredDateTime**, **localDnsName**, **natDestinationAddress**, **natDestinationPort**, **natSourceAddress**, **natSourcePort**, **riskScore**, **status**, and **urlParameters** properties to [networkConnection](../api-reference/beta/resources/networkconnection.md ).|
+|Change|beta| Changed **uri** property to **destinationUrl** in [networkConnection](../api-reference/beta/resources/networkconnection.md ). |
+| Addition        | beta       | Added **fileHash** property to [process](../api-reference/beta/resources/process.md ).|
+|Deletion|beta| Removed **authenticodeHash256** and **sha256** properties from [process](../api-reference/beta/resources/process.md ). |
+| Addition        | beta       | Added **aadUserId**, **emailRole**, **isVpn**, and **logonIp** properties to [userSecurityState](../api-reference/beta/resources/usersecuritystate.md).|
+|Change|beta| Changed **logonIpAddress** property to **logonIp** in [userSecurityState](../api-reference/beta/resources/usersecuritystate.md). |
+| Addition        | beta       | Added **wasRunning** property to [vulnerabilityState](../api-reference/beta/resources/vulnerabilitystate.md).|
+|Deletion|beta| Removed **name** property from [vulnerabilityState](../api-reference/beta/resources/vulnerabilitystate.md). |
 
 ## July 2018
 
@@ -207,7 +301,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition         | Beta          | Added team [archive](../api-reference/beta/api/team_archive.md) and [unarchive](../api-reference/beta/api/team_unarchive.md) APIs.|
 |Addition         | Beta          | Added team [clone](../api-reference/beta/api/team_clone.md) operation. |
-|Addition         | Beta          | Added APIs to add and remove [apps](../api-reference/beta/resources/teamsApp.md) to teams. |
+|Addition         | Beta          | Added APIs to add and remove [apps](../api-reference/beta/resources/teamsapp.md) to teams. |
 |Change|Beta|Updated the path to the [team](../api-reference/beta/resources/team.md) entity.|
 |Change|Beta|Updated the path to the [channel](../api-reference/beta/resources/channel.md) entity.|
 
@@ -2123,7 +2217,7 @@ Added support for dynamic group membership through the public preview API, inclu
 | Addition        | v1.0        | Added the [mailboxSettings](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailboxsettings) complex type, which includes the **automaticRepliesSetting**, **timeZone**, and **language** properties. |
 | Addition        | v1.0        | Added the **mailboxSettings** property to the [user](http://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user) resource. |
 | Addition        | Beta        | Added support for creating, listing, getting, and deleting one or more instances of [mention](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/mention) in a message. Mentions support calling out to get the attention of other users in a message. |
-| Addition        | Beta        | Added support for the [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) action to get any MailTips for specific recipients. Added the following resources: automaticRepliesMailTips, mailTips, mailTipsError. |
+| Addition        | Beta        | Added support for the [getMailTips](http://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/user_getmailtips) action to get any MailTips for specific recipients. Added the following resources: [automaticRepliesMailTips](../api-reference/beta/resources/automaticrepliesmailtips.md), [mailTips](../api-reference/beta/resources/mailtips.md), [mailTipsError](../api-reference/beta/resources/mailtipserror.md). |
 
 ### Query parameters
 
