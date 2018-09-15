@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the properties and relationships of the specified [tab](../resources/teamstab.md). 
+Retrieve the properties and relationships of the specified [tab](../resources/teamsTab.md). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -31,7 +31,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [tab](../resources/teamstab.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [tab](../resources/teamsTab.md) object in the response body.
 ## Example
 #### Request
 The following is an example of the request.
@@ -59,3 +59,12 @@ Content-length: 401
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab
 }
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get a channel tab",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
