@@ -18,6 +18,10 @@ In addition to the properties below, some tab provider applications specify addi
 ## JSON representation
 
 The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.teamsTabConfiguration"
+}-->
 
 ```json
 {
@@ -28,3 +32,12 @@ The following is a JSON representation of the resource.
 }
 
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "teamsTabConfiguration complex type (Open Type)",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
