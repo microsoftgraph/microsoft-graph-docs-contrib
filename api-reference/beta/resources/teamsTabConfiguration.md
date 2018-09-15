@@ -21,10 +21,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-   "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
-   "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
-   "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
-   "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"  
+   "entityId": "string",
+   "contentUrl": "string (HTTPS Url)",
+   "websiteUrl": "string (HTTPS Url)",
+   "removeUrl": "string (HTTPS Url)"  
 }
 
 ```
