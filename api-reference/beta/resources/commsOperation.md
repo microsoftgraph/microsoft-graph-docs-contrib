@@ -1,12 +1,11 @@
-# commsOperation resource type
+# Comms operation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 The status of certain long-running operations.
 
 ## Methods
-| Method                                             | Return Type                         | Description                                               |
-|:---------------------------------------------------|:------------------------------------|:----------------------------------------------------------|
+None
 
 ## Properties
 
@@ -14,15 +13,15 @@ The status of certain long-running operations.
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | clientContext      | String                      | The client context.                                                             |
 | createdDateTime    | DateTimeOffset              | The start time of the operation.                                                |
-| id                 | String                      | The operation id. Read Only.                                                    |
+| id                 | String                      | The operation id. Read-only. Server generated.                                  |
 | lastActionDateTime | DateTimeOffset              | The time of the last action of the operation.                                   |
-| resultInfo         | [resultInfo](resultInfo.md) | The result information. Read Only.                                              |
-| status             | String                      | Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`. Read Only. |
+| resultInfo         | [resultInfo](resultInfo.md) | The result information. Read-only. Server generated.                            |
+| status             | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
 ## Relationships
 None
 
-## Json Representation
+## JSON representation
 
 Here is a JSON representation of the resource.
 
@@ -31,28 +30,36 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.commsOperation",
-  "openType": true
+  "@odata.type": "microsoft.graph.commsOperation"
 }-->
-
 ```json
 {
-  "@odata.type": "String",
   "clientContext": "String",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
-  "status": "String"
+  "resultInfo": { "@odata.type": "#microsoft.graph.resultInfo" },
+  "status": "notStarted | running | completed | failed"
 }
 ```
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsOperation"
+}-->
+```json
 {
-    "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-    "status": "completed"
+  "clientContext": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "resultInfo": {
+    "@odata.type": "#microsoft.graph.resultInfo",
+    "code": "200"
+  },
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "status": "completed"
 }
 ```
 

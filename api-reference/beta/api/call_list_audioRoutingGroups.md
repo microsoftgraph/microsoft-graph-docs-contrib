@@ -1,6 +1,7 @@
-# List audioRoutingGroups
+# List audio routing groups
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Retrieve a list of audioRoutingGroup objects.
 
 ## Permissions
@@ -20,7 +21,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Name          | Description               |
@@ -37,6 +38,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
 
 ##### Request
 Here is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_audioRoutingGroups"
@@ -46,7 +48,9 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -56,18 +60,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 260
+Content-Length: 302
 
 {
   "value": [
     {
-      "id": "id-value",
-      "receivers": [
-        ""
-      ],
+      "id": "oneToOne",
       "routingMode": "oneToOne",
       "sources": [
-        ""
+        "632899f8-2ea1-4604-8413-27bd2892079f"
+      ],
+      "receivers": [
+        "550fae72-d251-43ec-868c-373732c2704f",
+        "72f988bf-86f1-41af-91ab-2d7cd011db47"
       ]
     }
   ]

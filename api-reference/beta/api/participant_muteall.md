@@ -1,6 +1,7 @@
-# participant: muteAll
+# Participant: muteAll
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -14,11 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/muteAll
-POST /app/chats/{id}/participants/muteAll
-POST /app/onlineMeetings/{id}/participants/muteAll
 POST /applications/{id}/calls/{id}/participants/muteAll
-POST /applications/{id}/chats/{id}/participants/muteAll
-POST /applications/{id}/onlineMeetings/{id}/participants/muteAll
 ```
 
 ## Request headers
@@ -48,7 +45,6 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll
-
 Content-Type: application/json
 Content-Length: 81
 
@@ -61,7 +57,9 @@ Content-Length: 81
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -70,14 +68,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 306
+Content-Length: 259
 
 {
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "Completed"
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "completed",
+  "createdDateTime": "2018-09-06T15:58:41Z",
+  "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 

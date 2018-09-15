@@ -1,4 +1,4 @@
-# TokenMeetingInfo resource type
+# Token meeting info resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -22,7 +22,6 @@ Here is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
-
 ```json
 {
   "allowConversationWithoutHost": true,
@@ -32,7 +31,11 @@ Here is a JSON representation of the resource.
 
 ## Example
 
-``` json
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.tokenMeetingInfo"
+}-->
+```json
 {
   "allowConversationWithoutHost": true,
   "token": "ABCD123"
