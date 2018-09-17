@@ -6,6 +6,54 @@ Represents an application. Any application that outsources authentication to Azu
 
 > **Note:** Changes to application resource type is currently in development for preview. Please see [known issues with Microsoft Graph](../../../concepts/known_issues.md#application-and-serviceprincipal-api-changes) for more information.
 
+## Methods
+
+| Method | Return Type | Description |
+|:---------------|:--------|:----------|
+|[Get application](../api/application_get.md) | application |Read properties and relationships of application object.|
+|[Create application](../api/application_post_applications.md) | application | Creates (registers) a new application.|
+|[List applications](../api/application_list.md) | application | Retrieve the list of applications in the organization. |
+|[Update application](../api/application_update.md) | application |Update application object. |
+|[Delete application](../api/application_delete.md) | None |Delete application object. |
+|[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
+|[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
+|[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
+
+## Properties
+
+| Property | Type | Description |
+|:---------------|:--------|:----------|
+|api|[api](api.md)| Specifies settings for an API application. |
+|appId| String | The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only. |
+|appRoles|[appRole](approle.md) collection|The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable.|
+|createdDateTime|DateTimeOffset| The date and time the application was registered. |
+|deletedDateTime|DateTimeOffset| The date and time the application was deleted. |
+|displayName|String|The display name for the application. |
+|id|String|The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
+|identifierUris|String collection| The URIs that identify the application. For more information see, [Application Objects and Service Principal Objects](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). The *any* operator is required for filter expressions on multi-valued properties. Not nullable. |
+|info|[informationalUrl](informationalurl.md)| Basic profile information of the application. |
+|isFallbackPublicClient|Boolean| Specifies the fallback app type as public client, such as an installed app running on a mobile device. The default value is *false* which means the fallback app type is confidential client such as web app. There are certain scenarios where Azure AD cannot determine the client app type (e.g. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI). In those cases Azure AD will interpret the app type based on the value of this property.|
+|keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the application Not nullable. |
+|logo|Stream|The main logo for the application. Not nullable. |
+|optionalClaims|optionalClaims| Reserved for future use. |
+|orgRestrictions|String collection| Reserved for future use. |
+|parentalControlSettings|[parentalControlSettings](parentalControlSettings.md) |Specifies parental control settings for an application.|
+|passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
+|publicClient|[publicClient](installedclient.md)| Specifies settings for installed clients such as desktop or mobile devices. |
+|publisherDomain| String | The verified publisher domain for the application. Read-only.|
+|requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
+| signInAudience | String | Specifies what microsoft accounts are supported for the current application. Supported values are:<ul><li>**AzureADMyOrg**: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>**AzureADMultipleOrgs**: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>**AzureADandPersonalMicrosoftAccount**: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+|tags|String collection| Custom strings that can be used to categorize and identify the application. |
+|web|[web](web.md)| Specifies settings for a web application. |
+
+## Relationships
+
+| Relationship | Type | Description |
+|:---------------|:--------|:----------|
+|createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
+|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
+|policy|[policy](policy.md) collection|The policies assigned to this application.|
+
 ## JSON representation
 Here is a JSON representation of the resource
 
@@ -45,55 +93,6 @@ Here is a JSON representation of the resource
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```
-
-## Properties
-
-| Property | Type | Description |
-|:---------------|:--------|:----------|
-|api|[api](api.md)| Specifies settings for an API application. |
-|appId| String | The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only. |
-|appRoles|[appRole](approle.md) collection|The collection of application roles that an application may declare. These roles can be assigned to users, groups, or service principals. Not nullable.|
-|createdDateTime|DateTimeOffset| The date and time the application was registered. |
-|deletedDateTime|DateTimeOffset| The date and time the application was deleted. |
-|displayName|String|The display name for the application. |
-|id|String|The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
-|identifierUris|String collection| The URIs that identify the application. For more information see, [Application Objects and Service Principal Objects](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). The *any* operator is required for filter expressions on multi-valued properties. Not nullable. |
-|info|[informationalUrl](informationalurl.md)| Basic profile information of the application. |
-|isFallbackPublicClient|Boolean| Specifies the fallback app type as public client, such as an installed app running on a mobile device. The default value is *false* which means the fallback app type is confidential client such as web app. There are certain scenarios where Azure AD cannot determine the client app type (e.g. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI). In those cases Azure AD will interpret the app type based on the value of this property.|
-|keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the application Not nullable. |
-|logo|Stream|The main logo for the application. Not nullable. |
-|optionalClaims|optionalClaims| Not currently supported. |
-|orgRestrictions|String collection| Not currently supported. |
-|parentalControlSettings|[parentalControlSettings](parentalControlSettings.md) |Specifies parental control settings for an application.|
-|passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
-|publicClient|[publicClient](installedclient.md)| Specifies settings for installed clients such as desktop or mobile devices. |
-|publisherDomain| String | The verified publisher domain for the application. Read-only.|
-|requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
-| signInAudience | String | Specifies what microsoft accounts are supported for the current application. Supported values are:<ul><li>**AzureADMyOrg**: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>**AzureADMultipleOrgs**: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>**AzureADandPersonalMicrosoftAccount**: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul> | `AzureADandPersonalMicrosoftAccount` |
-|tags|String collection| Custom strings that can be used to categorize and identify the application. |
-|web|[web](web.md)| Specifies settings for a web application. |
-
-## Relationships
-
-| Relationship | Type | Description |
-|:---------------|:--------|:----------|
-|connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the application is using with Azure AD Application Proxy. Nullable.|
-|createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
-|owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
-|policy|[policy](policy.md) collection|The policies assigned to this application.|
-
-## Methods
-
-| Method | Return Type | Description |
-|:---------------|:--------|:----------|
-|[Get application](../api/application_get.md) | application |Read properties and relationships of application object.|
-|[Create application](../api/application_post_applications.md) | application | Creates (registers) a new application.|
-|[List applications](../api/application_list.md) | application | Retrieve the list of applications in the organization. |
-|[Update application](../api/application_update.md) | application |Update application object. |
-|[Delete application](../api/application_delete.md) | None |Delete application object. |
-|[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
-|[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
-|[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
