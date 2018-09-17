@@ -2481,45 +2481,6 @@
         <Item text="Create open extension" url="/en-us/api-reference/beta/api/opentypeextension_post_opentypeextension" SEOKeyword="Create open extension, Microsoft Graph API, message API" SEODescription="Use this API to create open extension." />
         <Item text="Get open extension" url="/en-us/api-reference/beta/api/opentypeextension_get" SEOKeyword="Get open extension, Microsoft Graph API, message API" SEODescription="Use this API to Get open extension." />
       </Item>
-  <Item text="Calling and Meeting" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls_overview">
-	  <Item text="Call" url="/en-us/api-reference/beta/resources/call">
-		  <Item text="Get call" url="/en-us/api-reference/beta/api/call_get" />
-		  <Item text="Delete/hang up" url="/en-us/api-reference/beta/api/call_delete" />
-		  <Item text="Answer" url="/en-us/api-reference/beta/api/call_answer" />
-		  <Item text="Reject" url="/en-us/api-reference/beta/api/call_reject" />
-		  <Item text="Redirect" url="/en-us/api-reference/beta/api/call_redirect" />
-		  <Item text="Transfer" url="/en-us/api-reference/beta/api/call_transfer" />
-		  <Item text="List participants" url="/en-us/api-reference/beta/api/call_list_participants" />
-		  <Item text="Invite participants" url="/en-us/api-reference/beta/api/participant_invite" />
-		  <Item text="Mute all particpants" url="/en-us/api-reference/beta/api/participants_mute" />
-		  <Item text="Unmute" url="/en-us/api-reference/beta/api/call_unmute" />
-		  <Item text="Play prompt" url="/en-us/api-reference/beta/api/call_playPrompt" />
-		  <Item text="Record" url="/en-us/api-reference/beta/api/call_record" />
-		  <Item text="Cancel media processing" url="/en-us/api-reference/beta/api/call_cancelMediaProcessing" />
-		  <Item text="Subscribe to tone" url="/en-us/api-reference/beta/api/call_subscribeToTone" />
-		  <Item text="Configure audio mixer" url="/en-us/api-reference/beta/api/participant_configureMixer" />
-		  <Item text="Create audio routing group" url="/en-us/api-reference/beta/api/call_post_audioRoutingGroups" />
-		  <Item text="List audio routing groups" url="/en-us/api-reference/beta/api/call_list_audioRoutingGroups" />
-		  <Item text="Update metadata" url="/en-us/api-reference/beta/api/call_updateMetadata" />
-		  <Item text="Change screen sharing role" url="/en-us/api-reference/beta/api/call_changeScreenSharingRole" />
-    </Item>    
-	  <Item text="Online meeting" url="/en-us/api-reference/beta/resources/onlineMeeting">
-		  <Item text="Get online meeting" url="/en-us/api-reference/beta/api/onlineMeeting_get" />
-    </Item>    
-	  <Item text="Audio routing group" url="/en-us/api-reference/beta/resources/audioRoutingGroup">
-		  <Item text="Get audio routing group" url="/en-us/api-reference/beta/api/audioRoutingGroup_get" />
-		  <Item text="Update audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_update" />
-		  <Item text="Delete audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_delete" />
-    </Item>    
-	  <Item text="Participant" url="/en-us/api-reference/beta/resources/participant">
-		  <Item text="Invite" url="/en-us/api-reference/beta/api/participant_invite" />
-		  <Item text="Get participant" url="/en-us/api-reference/beta/api/participant_get" />
-		  <Item text="Configure mixer" url="/en-us/api-reference/beta/api/participant_configureMixer" />
-		  <Item text="Mute participant" url="/en-us/api-reference/beta/api/participant_mute" />
-		  <Item text="Mute all participants" url="/en-us/api-reference/beta/api/participant_muteAll" />
-		  <Item text="Subscribe video" url="/en-us/api-reference/beta/api/participant_subscribeVideo" />
-    </Item>    
-  </Item>
 	  <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
 		  <Item text="File attachment resource" url="/en-us/api-reference/beta/resources/fileattachment" />
 		  <Item text="Item attachment resource" url="/en-us/api-reference/beta/resources/itemattachment" />
@@ -2574,6 +2535,45 @@
         </Item>
       </Item>
     </Item>
+	<Item text="Calling and Meeting" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls_overview">
+		<Item text="Call" url="/en-us/api-reference/beta/resources/call">
+			<Item text="Get call" url="/en-us/api-reference/beta/api/call_get" />
+			<Item text="Delete/hang up" url="/en-us/api-reference/beta/api/call_delete" />
+			<Item text="Answer" url="/en-us/api-reference/beta/api/call_answer" />
+			<Item text="Reject" url="/en-us/api-reference/beta/api/call_reject" />
+			<Item text="Redirect" url="/en-us/api-reference/beta/api/call_redirect" />
+			<Item text="Transfer" url="/en-us/api-reference/beta/api/call_transfer" />
+			<Item text="List participants" url="/en-us/api-reference/beta/api/call_list_participants" />
+			<Item text="Invite participants" url="/en-us/api-reference/beta/api/participant_invite" />
+			<Item text="Mute all particpants" url="/en-us/api-reference/beta/api/participants_mute" />
+			<Item text="Unmute" url="/en-us/api-reference/beta/api/call_unmute" />
+			<Item text="Play prompt" url="/en-us/api-reference/beta/api/call_playPrompt" />
+			<Item text="Record" url="/en-us/api-reference/beta/api/call_record" />
+			<Item text="Cancel media processing" url="/en-us/api-reference/beta/api/call_cancelMediaProcessing" />
+			<Item text="Subscribe to tone" url="/en-us/api-reference/beta/api/call_subscribeToTone" />
+			<Item text="Configure audio mixer" url="/en-us/api-reference/beta/api/participant_configureMixer" />
+			<Item text="Create audio routing group" url="/en-us/api-reference/beta/api/call_post_audioRoutingGroups" />
+			<Item text="List audio routing groups" url="/en-us/api-reference/beta/api/call_list_audioRoutingGroups" />
+			<Item text="Update metadata" url="/en-us/api-reference/beta/api/call_updateMetadata" />
+			<Item text="Change screen sharing role" url="/en-us/api-reference/beta/api/call_changeScreenSharingRole" />
+		</Item>    
+		<Item text="Online meeting" url="/en-us/api-reference/beta/resources/onlineMeeting">
+			<Item text="Get online meeting" url="/en-us/api-reference/beta/api/onlineMeeting_get" />
+		</Item>    
+		<Item text="Audio routing group" url="/en-us/api-reference/beta/resources/audioRoutingGroup">
+			<Item text="Get audio routing group" url="/en-us/api-reference/beta/api/audioRoutingGroup_get" />
+			<Item text="Update audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_update" />
+			<Item text="Delete audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_delete" />
+		</Item>    
+		<Item text="Participant" url="/en-us/api-reference/beta/resources/participant">
+			<Item text="Invite" url="/en-us/api-reference/beta/api/participant_invite" />
+			<Item text="Get participant" url="/en-us/api-reference/beta/api/participant_get" />
+			<Item text="Configure mixer" url="/en-us/api-reference/beta/api/participant_configureMixer" />
+			<Item text="Mute participant" url="/en-us/api-reference/beta/api/participant_mute" />
+			<Item text="Mute all participants" url="/en-us/api-reference/beta/api/participant_muteAll" />
+			<Item text="Subscribe video" url="/en-us/api-reference/beta/api/participant_subscribeVideo" />
+		</Item>    
+	</Item>
 	<Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/api-reference/beta/resources/project_rome_overview" >
 		<Item text="List user devices" url="/en-us/api-reference/beta/api/user_list_devices" />
 		<Item text="Send device command" url="/en-us/api-reference/beta/api/send_device_command" />
