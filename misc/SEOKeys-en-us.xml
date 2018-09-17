@@ -2441,6 +2441,7 @@
 		  <Item text="List participants" url="/en-us/api-reference/beta/api/call_list_participants" />
 		  <Item text="Invite participants" url="/en-us/api-reference/beta/api/participant_invite" />
 		  <Item text="Mute all particpants" url="/en-us/api-reference/beta/api/participants_mute" />
+		  <Item text="Unmute" url="/en-us/api-reference/beta/api/call_unmute" />
 		  <Item text="Play prompt" url="/en-us/api-reference/beta/api/call_playPrompt" />
 		  <Item text="Record" url="/en-us/api-reference/beta/api/call_record" />
 		  <Item text="Cancel media processing" url="/en-us/api-reference/beta/api/call_cancelMediaProcessing" />
@@ -2448,12 +2449,16 @@
 		  <Item text="Configure audio mixer" url="/en-us/api-reference/beta/api/participant_configureMixer" />
 		  <Item text="Create audio routing group" url="/en-us/api-reference/beta/api/call_post_audioRoutingGroups" />
 		  <Item text="List audio routing groups" url="/en-us/api-reference/beta/api/call_list_audioRoutingGroups" />
-		  <Item text="Unmute" url="/en-us/api-reference/beta/api/call_unmute" />
 		  <Item text="Update metadata" url="/en-us/api-reference/beta/api/call_updateMetadata" />
 		  <Item text="Change screen sharing role" url="/en-us/api-reference/beta/api/call_changeScreenSharingRole" />
     </Item>    
 	  <Item text="Online meeting" url="/en-us/api-reference/beta/resources/onlineMeeting">
 		  <Item text="Get online meeting" url="/en-us/api-reference/beta/api/onlineMeeting_get" />
+    </Item>    
+	  <Item text="Audio routing group" url="/en-us/api-reference/beta/resources/audioRoutingGroup">
+		  <Item text="Get audio routing group" url="/en-us/api-reference/beta/api/audioRoutingGroup_get" />
+		  <Item text="Update audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_update" />
+		  <Item text="Delete audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_delete" />
     </Item>    
 	  <Item text="Participant" url="/en-us/api-reference/beta/resources/participant">
 		  <Item text="Invite" url="/en-us/api-reference/beta/api/participant_invite" />
@@ -2462,11 +2467,6 @@
 		  <Item text="Mute participant" url="/en-us/api-reference/beta/api/participant_mute" />
 		  <Item text="Mute all participants" url="/en-us/api-reference/beta/api/participant_muteAll" />
 		  <Item text="Subscribe video" url="/en-us/api-reference/beta/api/participant_subscribeVideo" />
-    </Item>    
-	  <Item text="Audio routing group" url="/en-us/api-reference/beta/resources/audioRoutingGroup">
-		  <Item text="Get audio routing group" url="/en-us/api-reference/beta/api/audioRoutingGroup_get" />
-		  <Item text="Update audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_update" />
-		  <Item text="Delete audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_delete" />
     </Item>    
   </Item>
 	  <Item text="Attachment" url="/en-us/api-reference/beta/resources/attachment">
