@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Modify sources and receivers of an audio routing group.
+Modify sources and receivers of an [audioRoutingGroup](../resources/audioRoutingGroup.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -26,7 +26,7 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
@@ -35,7 +35,7 @@ In the request body, supply the values for relevant fields that should be update
 | sources | String collection |  |
 
 ## Response
-If successful, this method returns a `200 OK` response code and updated [audioRoutingGroup](../resources/audioRoutingGroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioRoutingGroup.md) object in the response body.
 
 ## Example
 
@@ -68,7 +68,7 @@ In the request body, supply a JSON representation of [audioRoutingGroup](../reso
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
