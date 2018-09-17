@@ -61,28 +61,30 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 
 ## Access Microsoft Graph at scale
 
-Managed Access to Microsoft Graph enables developers to access Office 365 data in bulk (rather than in the traditional transactional nature) for intelligent feature development using Azure tools. Imagine an app that…
-- Finds you the closest expert to you at your organization on a topic 
-- Automates knowledge base creation
-- Analyzes meeting requests to provide insights into conference room utilization
-- Detects fraud with productivity and communication data
+Managed Access to Microsoft Graph enables bulk - rather than the traditional transactional - access to Office 365 data. This enables intelligent feature development using Azure tools. You can use Managed Access to build apps that:
+
+- Find you the closest expert to you at your organization on a topic 
+- Automate knowledge base creation
+- Analyze meeting requests to provide insights into conference room utilization
+- Detect fraud with productivity and communication data
 
 ## When should I use Managed Access to Microsoft Graph?
 
-Managed Access provides a new way for developers to interact with the same data available through Microsoft Graph APIs. On top of providing scalable data access to Office 365 data, Managed Access also provides a unique set of capabilities that provide a streamlined experience developing intelligent applications, all within the Microsoft cloud.
+Managed Access provides a new way for you to interact with the data that's available through Microsoft Graph APIs. In addition to providing scalable access to Office 365 data, Managed Access also provides a unique set of capabilities that streamline the building of intelligent applications, all within the Microsoft cloud.
 
-| | **Microsoft Graph API** | **Managed Access to Microsoft Graph** |
-| **Data Access** | Single/few instances of a resource type accessed at a time from a single user or group | Multiple instance of a resource type accessed at a time across users or groups |
-| **Access Pattern** | Real time synchronous access to the data and the consumer only defines "what" data they want |  Scheduled access to data (scheduled granularity could be hours, days, …) and the consumer defines "what" data they want, "when" do they want that data & "where" do they want that data |
-| **Data Operations** | Read + Write access to the master data | Read only access to copy of the data |
-| **Data Governance** | No control over data once it’s extracted | Data can only be extracted into customers own Azure storage, and can have policies monitored like encryption at rest. |
-| **Access Permissions** | Access permissions are scoped to each resource type (mail, file, events, etc.) and can be scoped for a single user, group or the entire tenant. | Access permissions can be granularly scoped to individual properties/field within a resource type and to a list of users, groups or the entire tenant. |
+|**Feature**| **Microsoft Graph API** | **Managed Access to Microsoft Graph** |
+|:----------|:------------------------|:--------------------------------------|
+| **Data access** | Single/few instances of a resource accessed at a time from a single user or group. | Multiple instances of a resource  accessed at a time across users or groups. |
+| **Access pattern** | Real-time synchronous access to the data and the consumer only defines what data they want. |  Scheduled access to data (scheduled granularity can be hours, days, and so on) and the consumer defines what data they want, when they want that data, and where they want that data. |
+| **Data operations** | Read/write access to the master data. | Read-only access to a copy of the data. |
+| **Data governance** | No control over data after it’s extracted. | Data can only be extracted into the customer's own Azure storage, and can have policies monitored like encryption at rest. |
+| **Access permissions** | Access permissions are scoped to each resource (mail, file, events, and so on) and can be scoped for a single user, a group, or the entire tenant. | Access permissions can be granularly scoped to individual properties/fields within a resource type and to a list of users, groups, or the entire tenant. |
 
-For more information on Managed Access, visit our more (detailed topic)(link to be added in separate PR) on the platform and the Learn section for more information on (how to get developing)(link to come in separate PR). 
+For more information about Managed Access, see (link to be added in separate PR) on the platform and the Learn section for more information on (how to get developing)(link to come in separate PR). 
 
 ## Next steps
 
-- Check out some [featured scenarios](../concepts/featured_scenarios.md).
+- Check out some [featured scenarios](https://developer.microsoft.com/en-us/graph/examples).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
