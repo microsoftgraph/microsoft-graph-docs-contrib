@@ -58,16 +58,17 @@ Here is a JSON representation of the resource
 |id|String|The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
 |identifierUris|String collection| The URIs that identify the application. For more information see, [Application Objects and Service Principal Objects](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). The *any* operator is required for filter expressions on multi-valued properties. Not nullable. |
 |info|[informationalUrl](informationalurl.md)| Basic profile information of the application. |
-|isFallbackPublicClient|Boolean| Specifies the fallback app type as public client, such as an installed app running on a mobile device. The default value is *false* which means the fallback app type is confidential client such as web app. There are certain scenarios where Azure AD cannot determine the client app type (e.g. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where HTTP request happens without a URL redirection). In those cases Azure AD will interpret the app type based on the value of this property.|
+|isFallbackPublicClient|Boolean| Specifies the fallback app type as public client, such as an installed app running on a mobile device. The default value is *false* which means the fallback app type is confidential client such as web app. There are certain scenarios where Azure AD cannot determine the client app type (e.g. [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI). In those cases Azure AD will interpret the app type based on the value of this property.|
 |keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the application Not nullable. |
 |logo|Stream|The main logo for the application. Not nullable. |
-|orgRestrictions|String collection| Specifies the organizational tenantIds to which the application is restricted to work. This property is effective only when `signInAudience` is set to *AzureADMultipleOrgs*. If the collection is empty, the application is multi-tenant (not restricted). If the collection contains tenantIds, the application is restricted to the organizational tenantIds in the collection. When using this property application's own tenantId must be explicitly included to make the application work in it's own tenant. The total number of tenantIds are capped at 20.<i> |
+|optionalClaims|optionalClaims| Not currently supported. |
+|orgRestrictions|String collection| Not currently supported. |
 |parentalControlSettings|[parentalControlSettings](parentalControlSettings.md) |Specifies parental control settings for an application.|
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
 |publicClient|[publicClient](installedclient.md)| Specifies settings for installed clients such as desktop or mobile devices. |
 |publisherDomain| String | The verified publisher domain for the application. Read-only.|
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
-| signInAudience | String | Specifies what microsoft accounts are supported for the current application. <table class="table table-striped table-bordered"> <thead> <tr> <th>Supported Values</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>AzureADMyOrg</td> <td>Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</td> </tr> <tr> <td>AzureADMultipleOrgs</td> <td>Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</td> </tr> <tr> <td>AzureADandPersonalMicrosoftAccount</td> <td>Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</td> </tbody> </table> |
+| signInAudience | String | Specifies what microsoft accounts are supported for the current application. Supported values are:<ul><li>**AzureADMyOrg**: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>**AzureADMultipleOrgs**: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>**AzureADandPersonalMicrosoftAccount**: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |tags|String collection| Custom strings that can be used to categorize and identify the application. |
 |web|[web](web.md)| Specifies settings for a web application. |
 
@@ -92,7 +93,6 @@ Here is a JSON representation of the resource
 |[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
-|[Add Password](../api/application_add_password.md) |password| Adds a strong password to an application.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
