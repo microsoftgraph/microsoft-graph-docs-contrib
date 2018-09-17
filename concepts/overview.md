@@ -63,7 +63,7 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 
 Managed Access to Microsoft Graph enables bulk - rather than the traditional transactional - access to Office 365 data. This enables intelligent feature development using Azure tools. You can use Managed Access to build apps that:
 
-- Find you the closest expert to you at your organization on a topic 
+- Find you the closest expert on a topic to you in your organization 
 - Automate knowledge base creation
 - Analyze meeting requests to provide insights into conference room utilization
 - Detect fraud with productivity and communication data
