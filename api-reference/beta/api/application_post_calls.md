@@ -7,11 +7,13 @@ Use this API to create a new call.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |                                             |
-| Delegated (personal Microsoft account) |                                             |
-| Application                            |                                             |
+| Permission type                        | Permissions (from least to most privileged)                                             |
+|:---------------------------------------|:----------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | Not Supported                                                                           |
+| Delegated (personal Microsoft account) | Not Supported                                                                           |
+| Application                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+
+> Note: Need Calls.AccessMedia.All permission with one of the above permissions for call with app hosted media
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,6 +36,8 @@ In the request body, supply a JSON representation of [call](../resources/call.md
 If successful, this method returns `201, Created` response code and [call](../resources/call.md) object in the response body.
 
 ## Example - Create peer to peer VOIP call with service hosted media
+
+> Note: Needs Calls.Initiate.All permission.
 
 ##### Request
 Here is an example of the request.
@@ -239,6 +243,8 @@ Content-Type: application/json
 
 ## Example - Create peer to peer VOIP call with application hosted media
 
+> Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.
+
 ##### Request
 Here is an example of the request.
 
@@ -286,53 +292,9 @@ Content-Type: application/json
 }
 ```
 
-## Example - Create peer to peer PSTN call with service hosted media
-
-##### Request
-Here is an example of the request.
-
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
-{
-  "callbackUri": "https://bot.contoso.com/api/calls",
-  "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-    "removeFromDefaultAudioGroup": false
-  },
-  "source": {
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "subject": "Test Call",
-  "requestedModalities": [ "audio" ],
-  "targets": [
-    {
-      "identity": {
-        "phone": {
-          "id": "+14258828080",
-          "displayName": "Test User"
-        }
-      }
-    }
-  ],
-  "tenantId": "tenantId-value"
-}
-```
-
 ## Example - Create peer to peer simultaneous ring call with service hosted media
+
+> Note: Needs Calls.Initiate.All permission.
 
 ##### Request
 Here is an example of the request.
@@ -387,6 +349,8 @@ Content-Type: application/json
 ```
 
 ## Example - Create group call with service hosted media
+
+> Note: Needs Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permission.
 
 #### Request
 
@@ -461,6 +425,8 @@ Content-Type: application/json
 
 ## Example - Meet Now with service hosted media
 
+> Note: Needs Calls.JoinGroupCalls.All permission.
+
 #### Request
 
 ```http
@@ -516,6 +482,8 @@ Content-Type: application/json
 
 ## Example - Join Private Meeting with service hosted media
 
+> Note: Needs Calls.JoinGroupCalls.All permission.
+
 #### Request
 
 ```http
@@ -570,6 +538,8 @@ Content-Type: application/json
 
 ## Example - Join Channel Meeting with service hosted media
 
+> Note: Needs Calls.JoinGroupCalls.All permission.
+
 #### Request
 
 ```http
@@ -623,6 +593,63 @@ Content-Type: application/json
 }
 ```
 
+## Example - Join Channel Meeting as a guest with service hosted media
+
+> Note: Needs Calls.JoinGroupCallsAsGuest.All permission.
+
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/app/calls
+Content-Type: application/json
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "subject": "Test Call",
+  "callbackUri": "https://bot.contoso.com/api/calls",
+  "source": {
+    "identity": {
+      "user": {
+        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698",
+        "displayName": "App_Guest_DisplayName",
+        "identityProvider": "None"
+      }
+    },
+  },
+  "requestedModalities": [ "audio", "video" ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
+      }
+    ]
+  },
+  "chatInfo": {
+    "threadId": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
+    "messageId": "1507228578052",
+    "replyChainMessageId": null
+  },
+  "meetingInfo": {
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "organizer": {
+      "user": {
+        "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
+        "tenantId": "49BFC225-8482-4AB8-94E7-76B48FDB9849"
+      }
+    }
+  }
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

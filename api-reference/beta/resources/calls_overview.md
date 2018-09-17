@@ -39,8 +39,8 @@ Please contact [Graph Platform Champs](mailto:sbsplatchamps@microsoft.com) with 
 
 # Testing
 
-Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.com) and following some setup. See the [testing](../../../concepts/testing.md) $TODO - UPDATE PATH to learn more.
+Bots can be tested locally using tunneling services like [Ngrok](https://ngrok.com) and following some setup. See the [testing](../../../concepts/testing.md) to learn more.
 
-# Samples $TODO - UPDATE PATHS
+# Samples
 
 Samples are hosted in [VSTS](https://sampleapps-microsoftteams.visualstudio.com/_git/CVIBot) and you can get started by reading the [README](https://sampleapps-microsoftteams.visualstudio.com/_git/CVIBot?path=%2FLocalMediaSampleBot%2FREADME.md&version=GBmaster) file.

@@ -7,11 +7,11 @@ Retrieve the properties and relationships of call object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |                                             |
-| Delegated (personal Microsoft account) |                                             |
-| Application                            |                                             |
+| Permission type | Permissions (from least to most privileged)                  |
+| :-------------- | :----------------------------------------------------------- |
+| Delegated (work or school account)     | Not Supported                         |
+| Delegated (personal Microsoft account) | Not Supported                         |
+| Application                            | None                                  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

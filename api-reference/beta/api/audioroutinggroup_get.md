@@ -9,11 +9,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |                                             |
-| Delegated (personal Microsoft account) |                                             |
-| Application                            | Calls.AudioVideo (for `meetingInfo=null`)   |
-| Application                            | Calls.PSTN (for `meetingInfo=null` and outgoing PSTN call) |
-| Application                            | Calls.MeetingJoin (for `meetingInfo!=null` )|
+| Delegated (work or school account)     | Not Supported                               |
+| Delegated (personal Microsoft account) | Not Supported                               |
+| Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +48,8 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

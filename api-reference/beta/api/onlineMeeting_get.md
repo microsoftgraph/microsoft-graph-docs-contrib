@@ -7,10 +7,10 @@ Retrieve the properties and relationships of onlineMeeting object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |                                             |
-| Delegated (personal Microsoft account) |                                             |
+| Permission type                        | Permissions (from least to most privileged)           |
+|:---------------------------------------|:------------------------------------------------------|
+| Delegated (work or school account)     | Not Supported                                         |
+| Delegated (personal Microsoft account) | Not Supported                                         |
 | Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
 
 ## HTTP request
@@ -48,7 +48,8 @@ GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

@@ -15,10 +15,6 @@
 |[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 |[Create call](../api/application_post_calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
-|[Create chat](../api/application_post_chats.md)|[chat](chat.md)|Create a new chat by posting to the chats collection.|
-|[List chats](../api/application_list_chats.md)|[chat](chat.md) collection|Get a chat object collection.|
-|[Create onlineMeeting](../api/application_post_onlineMeetings.md)|[onlineMeeting](onlineMeeting.md)|Create a new onlineMeeting by posting to the onlineMeetings collection.|
-|[List onlineMeetings](../api/application_list_onlineMeetings.md)|[onlineMeeting](onlineMeeting.md) collection|Get a onlineMeeting object collection.|
 
 ## Properties
 
@@ -48,7 +44,6 @@
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |calls           |[call](call.md) collection                  |Read-only. Nullable.|
-|chats           |[chat](chat.md) collection                  |Read-only. Nullable.|
 |connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the application is using with Azure AD Application Proxy. Nullable.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
 |onlineMeetings  |[onlineMeeting](onlineMeeting.md) collection|Read-only. Nullable.|
