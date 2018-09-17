@@ -61,6 +61,7 @@ This resource supports:
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
 |**Schema extensions**| | |
 |[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
+|[Translate Outlook identifiers](../api/user_translateexchangeids.md) |[convertIdResult resource type](convertidresult.md) collection| Translate identifiers of Outlook-related resources between formats.|
 
 ## Properties
 | Property       | Type    | Description |
@@ -161,7 +162,7 @@ The age group and minor consent properties are optional properties used by Azure
 |granted|1|Consent has been obtained for the user to have an account.|
 |denied|2|Consent has not been obtained for the user to have an account.|
 |notRequired|3|The user is from a location that does not require consent.|
- 
+
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
