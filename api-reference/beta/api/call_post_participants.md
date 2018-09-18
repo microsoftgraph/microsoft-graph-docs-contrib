@@ -1,7 +1,8 @@
 # Create participant
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-Use this API to create a new participant.
+
+Create a new participant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -25,10 +26,10 @@ POST /applications/{id}/calls/{id}/participants
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [participant](../resources/participant.md) object.
+In the request body, supply a JSON representation of a [participant](../resources/participant.md) object.
 
 ## Response
-If successful, this method returns `201, Created` response code and [participant](../resources/participant.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [participant](../resources/participant.md) object in the response body.
 
 ## Example
 
@@ -73,7 +74,7 @@ In the request body, supply a JSON representation of [participant](../resources/
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
