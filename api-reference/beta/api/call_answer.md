@@ -37,7 +37,7 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 Here is an example of the request.
