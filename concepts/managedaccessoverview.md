@@ -1,10 +1,11 @@
 # Managed Access to Microsoft Graph 
 
-Managed Access to Microsoft Graph brings Office 365 data and Azure resources to developers through a core data pipeline. This enables them to easily build intelligent applications with Microsoft's most valuable data and best development tools, all within the Microsoft secure cloud. Productivity is the one topic that all businesses are interested in improving, thus there is tremendous opportunity building and selling products to make knowledge workers more productive.
+Managed Access to Microsoft Graph brings Office 365 data and Microsoft Azure resources to you through a core data pipeline. You can use Managed Access to build intelligent applications that access valuable data using the best development tools offered by Microsoft, all within the Microsoft secure cloud. All businesses are interested in improving productivity, which means that building products that make knowledge workers more productive presents tremendous opportunities. 
 
-Managed Access caters to two primary personas:
-- ISVs building intelligent applications for all Office 365 customers
-- Enterprise developers building intelligent applications on top of their own Office 365 data for everyone inside of their organization.
+You can take advantage of Managed Access if you are:
+
+- An ISV building intelligent applications for all Office 365 customers
+- An enterprise developer building intelligent applications for everyone inside of your organization that access Office 365 data.
 
 ## Develop a pipeline with Office 365 data
 This system enables developers to create new types of applications based on Office 365 data using the best tooling inside Microsoft Azure. You can use Azure Data Factory to move Office 365 data into popular Azure data stores: Azure Data Lake Generation 1, Generation 2 or Azure Blob Storage. Once the data resides there, developers can then process the data (using Azure Data Lake Analytics for example) or move it into an additional store, like Azure SQL Database. This data can then be utilized to service your application's end user scenario.
