@@ -2,7 +2,16 @@
 
 Represents potential security issues within a customer's tenant that Microsoft or partner security solutions have identified. Use alerts to unify and streamline security issue management across all integrated solutions. To learn more, see the sample queries in [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
-Alerts can be retrieved from the following Providers: Azure Security Center, and Azure Active Directory Identity Protection. Additional Alert Providers will integrate in the following months.
+Alerts can be retrieved from the following Providers:
+
+- Azure Security Center
+- Azure Active Directory Identity Protection
+- Azure Information Protection
+- Microsoft Cloud Application Security
+- Windows Defender Advanced Threat Protection
+- Partner solutions, such as Palo Alto Networks App Framework. 
+
+Additional Alert Providers will integrate in the following months.
 
 ## Methods
 
