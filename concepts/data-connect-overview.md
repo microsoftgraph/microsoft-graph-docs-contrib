@@ -1,4 +1,4 @@
-# Managed Access to Microsoft Graph 
+# Microsoft Graph Data Connect
 
 Managed Access to Microsoft Graph brings Office 365 data and Microsoft Azure resources to you through a core data pipeline. You can use Managed Access to build intelligent applications that access valuable data using the best development tools offered by Microsoft, all within the Microsoft secure cloud. All businesses are interested in improving productivity, which means that building products that make knowledge workers more productive presents tremendous opportunities. 
 
