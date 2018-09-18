@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Delete or Hang-up an active call.
+Delete or hang up an active call.
 
 ## Permissions
 
@@ -10,9 +10,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type | Permissions (from least to most privileged)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Not Supported                         |
-| Delegated (personal Microsoft account) | Not Supported                         |
-| Application                            | None                                  |
+| Delegated (work or school account)     | Not Supported.                         |
+| Delegated (personal Microsoft account) | Not Supported.                         |
+| Application                            | None.                                  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -30,7 +30,7 @@ DELETE /applications/{id}/calls/{id}
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -47,7 +47,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
