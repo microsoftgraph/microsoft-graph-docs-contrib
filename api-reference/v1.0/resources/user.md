@@ -437,7 +437,7 @@ Here is a JSON representation of the resource
   "type": "#page.annotation",
   "description": "user resource",
   "keywords": "",
-  "supressions" : [
+  "suppressions" : [
      "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
       Property 'createdDateTime' found in markdown table but not in resource definition."
   ],
