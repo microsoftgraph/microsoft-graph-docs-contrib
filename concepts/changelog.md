@@ -15,6 +15,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added application permissions support to [GET /teams/{id}](../api-reference/beta/api/team_get.md). |
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md). |
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |
+|Addition|beta|Added application permissions support to [PUT /groups/{id}/team](../api-reference/beta/api/team_put_teams.md). |
+|Addition|beta|Added application permissions support to [PATCH /teams/{id}](../api-reference/beta/api/team_update.md). |
 
 ### Outlook mail
 
