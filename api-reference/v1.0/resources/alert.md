@@ -9,7 +9,7 @@ Alerts can be retrieved from the following Providers:
 - Azure Information Protection
 - Microsoft Cloud Application Security
 - Windows Defender Advanced Threat Protection
-- Partner solutions, such as Palo Alto Networks App Framework. 
+- Partner solutions, such as Palo Alto Networks App Framework.
 
 Additional Alert Providers will integrate in the following months.
 
