@@ -2,15 +2,15 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a list of audioRoutingGroup objects.
+Retrieve a list of **audioRoutingGroup** objects.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported                               |
-| Delegated (personal Microsoft account) | Not Supported                               |
+| Delegated (work or school account)     | Not Supported.                               |
+| Delegated (personal Microsoft account) | Not Supported.                               |
 | Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
@@ -32,7 +32,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [audioRoutingGroup](../resources/audioRoutingGroup.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [audioRoutingGroup](../resources/audioRoutingGroup.md) objects in the response body.
 
 ## Example
 
@@ -49,7 +49,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
