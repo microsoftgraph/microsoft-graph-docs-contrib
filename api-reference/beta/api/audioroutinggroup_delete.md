@@ -29,7 +29,7 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -46,7 +46,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
