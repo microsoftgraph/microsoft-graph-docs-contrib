@@ -1,5 +1,5 @@
 #### Description
-Get apps from the Teams app catalog. This includes apps from the Teams store as well as apps from your Organization's app catalog(aka. tenant app catalog). To get apps from your Organization's app catalog only, specify 'Organization' as the distributionMethod in the resource  [TeamsCatalogApp](../resources/teamscatalogapp.md)
+List apps from the Teams app catalog. This includes apps from the Teams store as well as apps from your Organization's app catalog(aka. tenant app catalog). To get apps from your Organization's app catalog only, specify 'Organization' as the distributionMethod in the resource  [TeamsCatalogApp](../resources/teamscatalogapp.md)
 
 #### Permissions
 One of the following permissions is required to call this API. Only Global Administrators can call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
