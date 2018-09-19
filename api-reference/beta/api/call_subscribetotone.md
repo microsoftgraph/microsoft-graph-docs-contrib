@@ -1,4 +1,4 @@
-﻿# Call: Subscribe to Tone
+﻿# Call: subscribe to tone
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -78,7 +78,7 @@ Content-Length: 259
 }
 ```
 
-##### Notification - Operation Completed
+##### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls
