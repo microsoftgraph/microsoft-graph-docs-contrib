@@ -1,6 +1,6 @@
 
 ### TeamsCatalogApp
-This resource is the representation of an app in our Teams app catalog.
+This resource is the representation of an app in the Teams app catalog.
 
 #### Properties
 | Property            | Type     | Description
@@ -9,7 +9,7 @@ This resource is the representation of an app in our Teams app catalog.
 | developerProvidedId | string   | The ID of the catalog provided by the app developer in the [Teams zip app package](#teams-application-manifest)
 | name                | string   | The name of the catalog app provided by the app developer in the [Teams zip app package](#teams-application-manifest)
 | version             | string   | The version of the catalog app provided by the app developer in the [Teams zip app package](#teams-application-manifest)
-| distributionMethod  | enum     | The method of distribution for the catalog app: 'Store', 'Tenant', 'Sideloaded' 
+| distributionMethod  | enum     | The method of distribution for the catalog app: 'Organization', 'Store' 
 
 #### JSON representation
 ```json
@@ -21,4 +21,10 @@ This resource is the representation of an app in our Teams app catalog.
   "distributionMethod": "Organization"
 }
 ```
+
+#### Useful Links
+[Publish an app to your organization's app catalog](../api/add_lob_apps.md)
+[List apps from the app catalog](../api/list_lob_apps.md)
+[Update an app in your organization's app catalog](../api/update_lob_apps.md)
+[Remove an app from your organization's app catalog](../api/remove_lob_apps.md)
 
