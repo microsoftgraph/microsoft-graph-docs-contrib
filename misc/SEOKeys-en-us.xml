@@ -5365,20 +5365,18 @@
 		<Item text="Companies" url="/en-us/api-reference/beta/resources/dynamics_companies">
 			<Item text="Get companies" url="/en-us/api-reference/beta/api/dynamics_companies_get"/>
 		  </Item>
-		<Item text="Companyinformation" url="/en-us/api-reference/beta/resources/dynamics_company_information">
+		<Item text="Companyinformation" url="/en-us/api-reference/beta/resources/dynamics_companyinformation">
 			<Item text="Get company information" url="/en-us/api-reference/beta/api/dynamics_companyinformation_get"/>
 			<Item text="Update company information" url="/en-us/api-reference/beta/api/dynamics_companyinformation_update"/>
 		  </Item>
 		<Item text="Countriesregions" url="/en-us/api-reference/beta/resources/dynamics_countriesregions">
 			<Item text="Get countries/regions" url="/en-us/api-reference/beta/api/dynamics_countriesregions_get"/>
 			<Item text="Create countries/regions" url="/en-us/api-reference/beta/api/dynamics_create_countriesregions"/>
-			<Item text="Update countries/regions" url="/en-us/api-reference/beta/api/dynamics_countriesregions_create"/>
 			<Item text="Delete countries/regions" url="/en-us/api-reference/beta/api/dynamics_countriesregions_delete"/>
 		  </Item>
 		<Item text="Currencies" url="/en-us/api-reference/beta/resources/dynamics_currencies">
 			<Item text="Get currencies" url="/en-us/api-reference/beta/api/dynamics_currencies_get"/>
 			<Item text="Create currencies" url="/en-us/api-reference/beta/api/dynamics_create_currencies"/>
-			<Item text="Update currencies" url="/en-us/api-reference/beta/api/dynamics_currencies_create"/>
 			<Item text="Delete currencies" url="/en-us/api-reference/beta/api/dynamics_currencies_delete"/>
 		  </Item>
 		<Item text="Customer" url="/en-us/api-reference/beta/resources/dynamics_customer">
@@ -5399,9 +5397,6 @@
 			<Item text="Update customer payments journal" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_update"/>
 			<Item text="Delete customer payments journal" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_delete"/>
 		  </Item>  
-		<Item text="Customer sales" url="/en-us/api-reference/beta/resources/dynamics_customersales">
-			<Item text="Get customer sales" url="/en-us/api-reference/beta/api/dynamics_customersales_get"/>
-		  </Item>
 		<Item text="Dimension" url="/en-us/api-reference/beta/resources/dynamics_dimension">
 			<Item text="Get dimension" url="/en-us/api-reference/beta/api/dynamics_dimension_get"/>
 		  </Item>
