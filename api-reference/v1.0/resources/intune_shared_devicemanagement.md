@@ -1,8 +1,8 @@
-﻿# deviceManagement resource type
+# deviceManagement resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-The deviceManagement resource represents a container whose contents vary according to workflow, including:
+The deviceManagement resource represents a container whose contents vary according to workflow, including:  
 
 - Auditing events
 - Corporate terms and conditions 
@@ -36,12 +36,12 @@ The deviceManagement resource represents a container whose contents vary accordi
 |**Device configuration**|
 |settings|[deviceManagementSettings](../resources/intune_deviceconfig_devicemanagementsettings.md)|Account level settings.|
 |**Device management**|
-|subscriptionState|String|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|subscriptionState|String|Tenant mobile device management subscription state. The possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |**On-boarding**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 ## Relationships
-|Relationship|Type|Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|Relationship|Type|Description|
 |:---|:---|:---|
 |**Auditing**|
 |auditEvents|[auditEvent](../resources/intune_auditing_auditevent.md) collection|The Audit Events|
@@ -62,6 +62,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |managedDevices|[managedDevice](../resources/intune_devices_manageddevice.md) collection|The list of managed devices.|
 |**Enrollment**|
 |importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune_enrollment_importedwindowsautopilotdeviceidentity.md) collection|Collection of imported Windows autopilot devices.|
+|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune_enrollment_importedwindowsautopilotdeviceidentityupload.md) collection|Collection of Windows autopilot devices upload.|
 |**Notifications**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|The Notification Message Templates.|
 |**On-boarding**|
@@ -91,6 +92,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceManagement"
 }
 -->
@@ -98,7 +100,9 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceManagement",
   "id": "String (identifier)",
-  "subscriptionState": "String"
+  "intuneBrand": {"@odata.type": "microsoft.graph.intuneBrand"},
+  "subscriptionState": "String",
+  "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }
 ```
 
