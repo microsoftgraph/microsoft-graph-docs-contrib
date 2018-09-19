@@ -35,7 +35,7 @@ In the request body, supply a JSON representation of a [call](../resources/call.
 ## Response
 If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.
 
-## Example - Create peer to peer VOIP call with service hosted media
+### Create peer to peer VOIP call with service hosted media
 
 >**Note:** This call needs the Calls.Initiate.All permission.
 
@@ -241,7 +241,7 @@ Content-Type: application/json
 }
 ```
 
-## Example - Create peer to peer VOIP call with application hosted media
+### Create peer to peer VOIP call with application hosted media
 
 > Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.
 
@@ -292,7 +292,7 @@ Content-Type: application/json
 }
 ```
 
-## Example - Create peer to peer simultaneous ring call with service hosted media
+### Create peer to peer simultaneous ring call with service hosted media
 
 >**Note:** This example needs the Calls.Initiate.All permission.
 
@@ -348,7 +348,9 @@ Content-Type: application/json
 }
 ```
 
-## Example - Create group call with service hosted media
+## Examples
+
+### Create group call with service hosted media
 
 >**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.
 
@@ -423,7 +425,7 @@ Content-Type: application/json
 }
 ```
 
-## Example - Meet Now with service hosted media
+### Meet Now with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCalls.All permission.
 
@@ -480,7 +482,7 @@ Content-Type: application/json
 }
 ```
 
-## Example - Join Private Meeting with service hosted media
+### Join Private Meeting with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCalls.All permission.
 
@@ -536,7 +538,7 @@ Content-Type: application/json
 }
 ```
 
-## Example - Join Channel Meeting with service hosted media
+### Join Channel Meeting with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCalls.All permission.
 
@@ -593,7 +595,7 @@ Content-Type: application/json
 }
 ```
 
-## Example - Join Channel Meeting as a guest with service hosted media
+### Join Channel Meeting as a guest with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.
 

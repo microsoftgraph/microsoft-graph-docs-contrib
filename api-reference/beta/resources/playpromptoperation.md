@@ -16,8 +16,8 @@ None
 | createdDateTime    | DateTimeOffset              | The start time of the operation.                                                      |
 | id                 | String                      | The operation id. Read Only.                                                          |
 | lastActionDateTime | DateTimeOffset              | The time of the last action of the operation.                                         |
-| prompts            | [dtmfPrompt](dtmfPrompt.md), [mediaPrompt](mediaPrompt.md), [silencePrompt](silencePrompt.md) or [textPrompt](textPrompt.md) collection | The collection of prompts. |
-| resultInfo         | [resultInfo](resultInfo.md) | The result information. Read Only.                                                    |
+| prompts            | [dtmfPrompt](dtmfprompt.md), [mediaPrompt](mediaprompt.md), [silencePrompt](silenceprompt.md) or [textPrompt](textprompt.md) collection | The collection of prompts. |
+| resultInfo         | [resultInfo](resultinfo.md) | The result information. Read Only.                                                    |
 | status             | String                      | Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`. Read Only.       |
 
 ## Relationships

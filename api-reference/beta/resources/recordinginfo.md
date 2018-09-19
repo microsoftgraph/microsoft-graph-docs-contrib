@@ -6,7 +6,7 @@
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| initiatedBy | [participantInfo](participantInfo.md) |  |
+| initiatedBy | [participantInfo](participantinfo.md) |  |
 | status | String | Possible values are: `recordingCapable`, `notRecording`, `startedRecording`. |
 
 ## JSON representation

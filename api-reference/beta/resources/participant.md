@@ -9,23 +9,23 @@ The participant type.
 | Method                                                          | Return Type                              | Description                                       |
 |:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
 | [Get participant](../api/participant_get.md)                    | [participant](participant.md)            | Read properties of the **participant** object.    |
-| [ConfigureMixer](../api/participant_configureMixer.md)          | [commsOperation](commsOperation.md)      | Configure the participant audio mixer.            |
-| [Invite](../api/participant_invite.md)                          | [commsOperation](commsOperation.md)      | Invite a participant to the call.                 |
-| [Mute participant](../api/participant_mute.md)                  | [commsOperation](commsOperation.md)      | Mute a participant in a call.                     |
-| [Mute all participants](../api/participant_muteAll.md)          | [commsOperation](commsOperation.md)      | Mute all the participants in the meeting.         |
-| [Subscribe video](../api/participant_subscribeVideo.md)         | [commsOperation](commsOperation.md)      | Subscribe to video of a participant in a call.    |
+| [ConfigureMixer](../api/participant_configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure the participant audio mixer.            |
+| [Invite](../api/participant_invite.md)                          | [commsOperation](commsoperation.md)      | Invite a participant to the call.                 |
+| [Mute participant](../api/participant_mute.md)                  | [commsOperation](commsoperation.md)      | Mute a participant in a call.                     |
+| [Mute all participants](../api/participant_muteall.md)          | [commsOperation](commsoperation.md)      | Mute all the participants in the meeting.         |
+| [Subscribe video](../api/participant_subscribevideo.md)         | [commsOperation](commsoperation.md)      | Subscribe to video of a participant in a call.    |
 
 ## Properties
 
 | Property             | Type                                     | Description                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | The participant id.                                          |
-| info                 | [participantInfo](participantInfo.md)    | The participant of the participant.                          |
+| info                 | [participantInfo](participantinfo.md)    | The participant of the participant.                          |
 | isInLobby            | boolean                                  | true if the participant is in lobby                          |
 | isMuted              | boolean                                  | true if the participant is muted (client or server muted)    |
-| mediaStreams         | [mediaStream](mediaStream.md) collection | The list of media streams.                                   |
+| mediaStreams         | [mediaStream](mediastream.md) collection | The list of media streams.                                   |
 | metadata             | String                                   | A blob of data provided by the participant in the roster     |
-| recordingInfo        | [recordingInfo](recordingInfo.md)        | Information on whether the participant has recording capability. |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | Information on whether the participant has recording capability. |
 
 ## Relationships
 None

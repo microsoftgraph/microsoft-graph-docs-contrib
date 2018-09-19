@@ -31,10 +31,10 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |prompts|[prompt](../resources/prompt.md) collection||
-|clientContext|String||
+|clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200 OK` response code and a [commsOperation](../resources/commsOperation.md) object in the response body.
+If successful, this method returns `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.
 ## Example
 The following example shows how to call this API.
 

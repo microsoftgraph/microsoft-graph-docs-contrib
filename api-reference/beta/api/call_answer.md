@@ -1,4 +1,4 @@
-# call: answer
+# Call: answer
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -36,7 +36,9 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
-## Example
+
+## Examples
+
 The following example shows how to call this API.
 
 ##### Request
@@ -75,7 +77,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 
-## Example - Answer VOIP call with service hosted media
+### Answer VOIP call with service hosted media
 
 ##### Notification - Incoming
 
@@ -271,7 +273,7 @@ Content-Type: application/json
 }
 ```
 
-## Example - Answer VOIP call with application hosted media
+### Answer VOIP call with application hosted media
 
 ##### Notification - Incoming
 

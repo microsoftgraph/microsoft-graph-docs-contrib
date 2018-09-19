@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Modify sources and receivers of an [audioRoutingGroup](../resources/audioRoutingGroup.md).
+Modify sources and receivers of an [audioRoutingGroup](../resources/audioroutinggroup.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -35,7 +35,7 @@ In the request body, supply the values for relevant fields that should be update
 | sources | String collection |  |
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioRoutingGroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.
 
 ## Example
 
@@ -64,7 +64,7 @@ Content-Length: 233
 }
 ```
 
-In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioRoutingGroup.md) object.
+In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.
 
 ##### Response
 

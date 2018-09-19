@@ -30,12 +30,16 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|transferTarget|[invitationParticipantInfo](../resources/invitationParticipantInfo.md)||
-|clientContext|String||
+|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)||
+|clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsOperation.md) object in the response body.
-## Example
+If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+
+## Examples
+
+### Transfer call directly, with no user involvement
+
 Here is an example of how to call this API.
 
 ##### Request
@@ -189,7 +193,7 @@ Content-Type: application/json
 }
 ```
 
-## Example - Consultative transfer
+### Consultative transfer
 
 ##### Request
 

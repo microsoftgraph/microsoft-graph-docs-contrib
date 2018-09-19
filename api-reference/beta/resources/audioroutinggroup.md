@@ -4,14 +4,14 @@
 
 The audio routing group stores information about a private (participant-owned) Audio Routing Group.  Audio Routing Groups are valid in a multiparty conversation and are used to establish routes (incoming and outgoing audio from the participant.)  Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation. 
 
-> **Note:** [ConfigureMixer](../api/participant_configureMixer.md) does not involve any routes, it is for the entire call for setting the volume levels for source-receiver combinations.
+> **Note:** [ConfigureMixer](../api/participant_configuremixer.md) does not involve any routes, it is for the entire call for setting the volume levels for source-receiver combinations.
 
 ## Methods
 
 | Method                                                  | Return Type                               | Description                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
-| [Get audioRoutingGroup](../api/audioRoutingGroup_get.md)| [audioRoutingGroup](audioRoutingGroup.md) | Read properties and relationships of audioRoutingGroup object.|
-| [Update](../api/audioroutinggroup_update.md)            | [audioRoutingGroup](audioRoutingGroup.md) | Update receivers list.                       |
+| [Get audioRoutingGroup](../api/audioroutinggroup_get.md)| [audioRoutingGroup](audioroutinggroup.md) | Read properties and relationships of audioRoutingGroup object.|
+| [Update](../api/audioroutinggroup_update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Update receivers list.                       |
 | [Delete](../api/audioRoutingGroup_delete.md)            | None                                      | Delete the audio routing group.              |
 
 ## Properties

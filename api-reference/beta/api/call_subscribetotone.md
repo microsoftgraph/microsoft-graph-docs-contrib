@@ -1,8 +1,8 @@
-﻿# Call: subscribeToTone
+﻿# Call: Subscribe to Tone
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Subscribe to tone
+Subscribe to the specified touch-tone. This allows you to be notified when the user presses a specific button on a telephone keypad.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -33,7 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 | clientContext  | String  |             |
 
 ## Response
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsOperation.md) object in the response body.
+If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

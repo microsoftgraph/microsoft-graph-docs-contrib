@@ -8,7 +8,7 @@ The serviceHostedMediaConfig type.
 
 | Property                    | Type                                                        | Description                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| preFetchMedia               | [mediaInfo](mediaInfo.md) collection                        | The list of media to pre-fetch.                   |
+| preFetchMedia               | [mediaInfo](mediainfo.md) collection                        | The list of media to pre-fetch.                   |
 | removeFromDefaultAudioGroup | Boolean                                                     | Remove self participant from default audio group. |
 
 ## JSON representation
