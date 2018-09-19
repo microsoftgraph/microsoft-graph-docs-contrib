@@ -23,8 +23,7 @@ This resource is the representation of an app in the Teams app catalog.
 ```
 
 #### Useful Links
-[Publish an app to your organization's app catalog](../api/add_lob_apps.md)
-[List apps from the app catalog](../api/list_lob_apps.md)
-[Update an app in your organization's app catalog](../api/update_lob_apps.md)
-[Remove an app from your organization's app catalog](../api/remove_lob_apps.md)
-
+- [Publish an app to your organization's app catalog](../api/add_lob_apps.md)
+- [List apps from the app catalog](../api/list_lob_apps.md)
+- [Update an app in your organization's app catalog](../api/update_lob_apps.md)
+- [Remove an app from your organization's app catalog](../api/remove_lob_apps.md)
