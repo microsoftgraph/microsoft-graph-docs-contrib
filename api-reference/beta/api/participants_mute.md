@@ -1,8 +1,8 @@
-# Mute Participants
+# Mute participants
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Mute the selected group of participants in the call. If selected group is empty, it mutes all participants in a call.
+Mute the selected group of participants in the call. If the selected group is empty, this method mutes all participants in a call.
 
 ## Permissions
 

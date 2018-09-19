@@ -2,6 +2,8 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
+Un-mutes a call.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -28,7 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|clientContext|String||
+|clientContext|String|The client context.|
 
 ## Response
 If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.

@@ -39,8 +39,9 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
-## Example
-Here is an example of how to call this API.
+## Examples
+
+### Redirect a call
 
 ##### Request
 Here is an example of the request.
@@ -89,7 +90,7 @@ Content-Length: 515
 HTTP/1.1 200 OK
 ```
 
-## Example - Forward a call
+### Forward a call
 
 ##### Notification - Incoming
 
