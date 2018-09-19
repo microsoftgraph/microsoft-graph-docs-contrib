@@ -30,7 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    | Description |
 |:---------------|:--------|:------------|
-| clientContext  | String  |             |
+| clientContext  | String  | The client context |
 
 ## Response
 If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
