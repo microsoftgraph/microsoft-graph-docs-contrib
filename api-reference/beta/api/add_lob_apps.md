@@ -1,5 +1,5 @@
 ### Description
-Publish an app to the Teams apps catalog. With this API you will be specifically publichsing to your organization's catalog (aka Tenant app catalog)
+Publish an app to the Teams apps catalog. With this API you will be specifically publishing the app to your organization's catalog (aka Tenant app catalog). To publish to your organization's app catalog, specify 'Organization' as the distributionMethod in the resource  [TeamsCatalogApp](../resources/teamscatalogapp.md)
 
 #### Permissions
 One of the following permissions is required to call this API. Only Global Administrators can call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
