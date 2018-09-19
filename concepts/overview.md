@@ -61,18 +61,18 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 
 ## Access Microsoft Graph at scale
 
-Managed Access to Microsoft Graph enables bulk - rather than the traditional transactional - access to Office 365 data. This enables intelligent feature development using Azure tools. You can use Managed Access to build apps that:
+Microsoft Graph Data Connect enables bulk - rather than the traditional transactional - access to Office 365 data. This enables intelligent feature development using Azure tools. You can use Microsoft Graph Data Connect to build apps that:
 
 - Find you the closest expert on a topic to you in your organization 
 - Automate knowledge base creation
 - Analyze meeting requests to provide insights into conference room utilization
 - Detect fraud with productivity and communication data
 
-## When should I use Managed Access to Microsoft Graph?
+## When should I use Microsoft Graph Data Connect?
 
-Managed Access provides a new way for you to interact with the data that's available through Microsoft Graph APIs. In addition to providing scalable access to Office 365 data, Managed Access also provides a unique set of capabilities that streamline the building of intelligent applications, all within the Microsoft cloud.
+Microsoft Graph Data Connect provides a new way for you to interact with the data that's available through Microsoft Graph APIs. In addition to providing scalable access to Office 365 data, Microsoft Graph Data Connect also provides a unique set of capabilities that streamline the building of intelligent applications, all within the Microsoft cloud.
 
-|**Feature**| **Microsoft Graph API** | **Managed Access to Microsoft Graph** |
+|**Feature**| **Microsoft Graph API** | **Microsoft Graph Data Connect** |
 |:----------|:------------------------|:--------------------------------------|
 | **Data access** | Single/few instances of a resource accessed at a time from a single user or group. | Multiple instances of a resource  accessed at a time across users or groups. |
 | **Access pattern** | Real-time synchronous access to the data and the consumer only defines what data they want. |  Scheduled access to data (scheduled granularity can be hours, days, and so on) and the consumer defines what data they want, when they want that data, and where they want that data. |
@@ -80,7 +80,7 @@ Managed Access provides a new way for you to interact with the data that's avail
 | **Data governance** | No control over data after it’s extracted. | Data can only be extracted into the customer's own Azure storage, and can have policies monitored like encryption at rest. |
 | **Access permissions** | Access permissions are scoped to each resource (mail, file, events, and so on) and can be scoped for a single user, a group, or the entire tenant. | Access permissions can be granularly scoped to individual properties/fields within a resource type and to a list of users, groups, or the entire tenant. |
 
-For more information about Managed Access, see (link to be added in separate PR) on the platform and the Learn section for more information on (how to get developing)(link to come in separate PR). 
+For more information about Microsoft Graph Data Connect, see (link to be added in separate PR) on the platform and the Learn section for more information on (how to get developing)(link to come in separate PR). 
 
 ## Next steps
 
