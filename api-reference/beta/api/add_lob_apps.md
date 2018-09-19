@@ -1,3 +1,4 @@
+### Description
 Publish an app to the organization's catalog (aka Tenant app catalog)
 
 #### Permissions
