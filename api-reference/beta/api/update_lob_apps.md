@@ -1,4 +1,5 @@
-Update a previously published app in the organization's catalog(aka Tenant app catalog).
+### Description
+Update a previously published app in the Teams apps catalog. With this API you will be specifically updating an app published to your organization's app catalog (aka Tenant app catalog). To publish to your organization's app catalog, specify 'Organization' as the distributionMethod in the resource  [TeamsCatalogApp](../resources/teamscatalogapp.md)
 
 #### Permissions
 One of the following permissions is required to call this API. Only Global Administrators can call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
@@ -16,7 +17,7 @@ One of the following permissions is required to call this API. Only Global Admin
 | Content-Type  | application/zip |
 
 #### Request Body
-- Teams Zip Manifest Payload: teams application zip file [see Create app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
+Teams Zip Manifest Payload: For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
 #### Response
 ```
@@ -41,10 +42,4 @@ HTTP/1.1 204 No Content
 ```
 
 #### Usage Tips
-The ID to include in this call is the ID returned by making the [List organizations app catalog (POST) call](#post-/appCatalogs/teamsApps). This ID is not the ID in the manifest of the zip app package.
-
-#### Known Limitations
-The user must use the generated app ID returned by the [Create (POST) call](#post-/appCatalogs/teamsApps) and not the DeveloperProvidedId.
-
-#### Future Extension
-None.
+Use the ID returned from the [List app catalog](./list_lob_apps.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
