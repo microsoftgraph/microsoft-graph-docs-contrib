@@ -1,4 +1,4 @@
-# Organizer meeting info resource type
+# organizerMeetingInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,8 +6,8 @@
 
 | Property                     | Type                          | Description                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Boolean                       |                                                 |
-| organizer                    | [identitySet](identitySet.md) | The organizer Azure Active Directory identity.  |
+| allowConversationWithoutHost | Boolean                       | Indicates if a conversation can continue once the host of the conversation leaves. |
+| organizer                    | [identitySet](identityset.md) | The organizer Azure Active Directory identity.  |
 
 ## JSON representation
 

@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The audio routing group stores information about a private (participant-owned) Audio Routing Group.  Audio Routing Groups are valid in a multiparty conversation and are used to establish routes (incoming and outgoing audio from the participant.)  Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation. 
+The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation.
 
 > **Note:** [ConfigureMixer](../api/participant_configuremixer.md) does not involve any routes, it is for the entire call for setting the volume levels for source-receiver combinations.
 
@@ -51,48 +51,6 @@ Here is a JSON representation of the resource.
   "sources": [ "String" ]
 }
 ```
-
-## Example - oneToOne
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.audioRoutingGroup"
-}-->
-```json
-{
-  "@odata.id": "app/calls/57DAB8B1894C409AB240BD8BEAE78896/audioRoutingGroups/oneToOne",
-  "id": "oneToOne",
-  "routingMode": "oneToOne",
-  "sources": [
-    "0698446E77E24E4D85F80597083CB830"
-  ],
-  "receivers": [
-    "123456W7-7E24-E4D8-5F80-597083CB8302"
-  ]
-}
-```
-
-## Example - multicast
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.audioRoutingGroup"
-}-->
-```json
-{
-  "@odata.id": "app/calls/57DAB8B1894C409AB240BD8BEAE78896/audioRoutingGroups/multicast",
-  "id": "multicast",
-  "routingMode": "multicast",
-  "sources": [
-    "0698446E77E24E4D85F80597083CB830"
-  ],
-  "receivers": [
-    "123456W7-7E24-E4D8-5F80-597083CB8302",
-    "A239BDED-3A52-4D66-80DF-213EB3BA6695"
-  ]
-}
-```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

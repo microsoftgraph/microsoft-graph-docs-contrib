@@ -4,7 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: IdentitySet
 ---
-# IdentitySet resource type
+# identitySet resource type
 
 The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources.
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.

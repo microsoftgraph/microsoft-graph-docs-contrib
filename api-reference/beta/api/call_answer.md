@@ -32,13 +32,12 @@ In the request body, provide a JSON object with the following parameters.
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |The callback or subscription ID on which callbacks will be delivered. (Required)                                                               |
 |acceptedModalities|String collection                         |The list of accept modalities. Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Required) |
-|mediaConfig       |[mediaConfig](../resources/mediaConfig.md)|The media configuration. (Required)                                                                                                            |
+|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|The media configuration. (Required)                                                                                                            |
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+This method returns `202 Accepted` response code.
 
 ## Examples
-
 The following example shows how to call this API.
 
 ##### Request
@@ -74,7 +73,7 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 ### Answer VOIP call with service hosted media
@@ -182,10 +181,10 @@ Content-Type: application/json
 ##### Response
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
-##### Notification - Establishing
+##### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -207,29 +206,14 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "state": "establishing",
-        "callbackUri": "https://bot.contoso.com/api/calls",
-        "activeModalities": [ "audio" ],
-        "mediaConfig": {
-          "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-          "preFetchMedia": [
-            {
-              "uri": "https://cdn.contoso.com/beep.wav",
-              "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-            },
-            {
-              "uri": "https://cdn.contoso.com/cool.wav",
-              "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
-            }
-          ]
-        }
+        "state": "establishing"
       }
     }
   ]
 }
 ```
 
-##### Notification - Established
+##### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -251,22 +235,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "state": "established",
-        "callbackUri": "https://bot.contoso.com/api/calls",
-        "activeModalities": [ "audio" ],
-        "mediaConfig": {
-          "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-          "preFetchMedia": [
-            {
-              "uri": "https://cdn.contoso.com/beep.wav",
-              "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-            },
-            {
-              "uri": "https://cdn.contoso.com/cool.wav",
-              "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
-            }
-          ]
-        }
+        "state": "established"
       }
     }
   ]
@@ -356,7 +325,7 @@ Content-Type: application/json
 ##### Response
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 ##### Notification - Establishing
@@ -410,9 +379,7 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "state": "established",
-        "activeModalities": [ "audio" ],
-        "requestedModalities": []
+        "state": "established"
       }
     }
   ]

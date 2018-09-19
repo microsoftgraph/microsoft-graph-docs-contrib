@@ -2,15 +2,15 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Cancels media processing for all in-progress operations or just the current one.
+Cancels media processing for all in-progress any PlayPrompt or Record operations.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported.                               |
-| Delegated (personal Microsoft account) | Not Supported.                               |
+| Delegated (work or school account)     | Not Supported.                              |
+| Delegated (personal Microsoft account) | Not Supported.                              |
 | Application                            | None.                                       |
 
 ## HTTP request
@@ -34,7 +34,7 @@ In the request body, provide a JSON object with the following parameters.
 | clientContext  | String  | The client context.                                            |
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [commsOperation](../resources/commsOperation.md) object in the response body.
+Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
@@ -67,17 +67,8 @@ Content-Length: 62
   "@odata.type": "microsoft.graph.commsOperation"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-
-{
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "running"
-}
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
 ##### Notification - operation completed

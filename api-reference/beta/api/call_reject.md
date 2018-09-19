@@ -30,17 +30,17 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|reason|String||
+|reason|String|The rejection reason.|
 
 ## Response
 If successful, this method returns `200, OK` response code. It does not return anything in the response body.
 
 ```http
-HTTP/1.1 200 OK
+Returns `202 Accepted` response code
 ```
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Notification - Incoming
 
@@ -121,7 +121,7 @@ Here is an example of the response.
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 ##### Notification - Deleted

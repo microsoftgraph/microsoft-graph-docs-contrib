@@ -1,4 +1,4 @@
-# Invitation participant info resource type
+# invitationParticipantInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -9,8 +9,8 @@ The **InvitationParticipant** is used to represent a set of identities associate
 | Property                           | Type                          | Description                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
 | endpointType                       | String                        | Possible values are: `default`, `voicemail`. |
-| identity                           | [identitySet](identitySet.md) | The [identitySet](identitySet.md) associated with this invitation.                   |
-| languageId                         | String                        |                                                                                      |
+| identity                           | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this invitation.                   |
+| languageId                         | String                        | The language culture string.                                                                                     |
 | region                             | String                        | Region of the participant.                                                           |
 | replacesCallId                     | String                        | Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added. |
 

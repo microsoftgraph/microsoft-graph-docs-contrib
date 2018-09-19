@@ -1,4 +1,4 @@
-# Tone info resource type
+# toneInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| sequenceId | Int64 |  |
+| sequenceId | Int64 | An incremental identifier used for ordering DTMF events. |
 | tone | String | Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`. |
 
 ## JSON representation

@@ -1,4 +1,4 @@
-# Participant resource type
+# participant resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -13,7 +13,6 @@ The participant type.
 | [Invite](../api/participant_invite.md)                          | [commsOperation](commsoperation.md)      | Invite a participant to the call.                 |
 | [Mute participant](../api/participant_mute.md)                  | [commsOperation](commsoperation.md)      | Mute a participant in a call.                     |
 | [Mute all participants](../api/participant_muteall.md)          | [commsOperation](commsoperation.md)      | Mute all the participants in the meeting.         |
-| [Subscribe video](../api/participant_subscribevideo.md)         | [commsOperation](commsoperation.md)      | Subscribe to video of a participant in a call.    |
 
 ## Properties
 

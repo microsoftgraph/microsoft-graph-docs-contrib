@@ -204,7 +204,7 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 201 Created
-Location: /app/calls/90ED37DCD8E34E119DE330A955DDA06F
+Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
 ```
 
 ### Notification - Establishing
@@ -267,7 +267,7 @@ Content-Type: application/json
 }
 ```
 
-## Invite Participant from Intial Incoming Call
+## Invite Participant from Initial Incoming Call
 
 ```http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -291,18 +291,8 @@ Content-Type: application/json
 ## Response
 
 ```http
-HTTP/1.1 200 OK
-Location: /app/calls/90ED37DCD8E34E119DE330A955DDA06F/operations/0FE0623FD62842EDB4BD8AC290072CC5
-Content-Type: application/json
-Content-Length: 306
-
-{
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "running"
-}
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
 ### Notification - Operation Completed

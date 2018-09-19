@@ -30,21 +30,21 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|prompts|[prompt](../resources/prompt.md) collection||
-|bargeInAllowed|Boolean||
-|initialSilenceTimeoutInSeconds|Int32||
-|maxSilenceTimeoutInSeconds|Int32||
-|maxRecordDurationInSeconds|Int32||
-|playBeep|Boolean||
-|streamWhileRecording|Boolean||
-|stopTones|String collection||
+|prompts|[mediaprompt](../resources/mediaprompt.md) collection | Collection of prompts to play (if any) before recording starts. Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt |
+|bargeInAllowed|Boolean| Allow users to enter choice before prompt finishes.                                                                 |
+|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence allowed from the time we start the record operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. |
+|maxSilenceTimeoutInSeconds|Int32| The maximum silence timeout in seconds.|
+|maxRecordDurationInSeconds|Int32| The maximum record duration in seconds.|
+|playBeep|Boolean| Plays a beep after playing the prompt|
+|streamWhileRecording|Boolean|If set to true, a resource location will be provided as soon as the recording starts. |
+|stopTones|String collection|Stop tones specified to end recording|
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [recordOperation](../resources/recordoperation.md) object in the response body.
+Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 Here is an example of the request.
@@ -89,23 +89,9 @@ Content-Length: 394
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.recordOperation"
-} -->
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-
-{
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
 ##### Notification - Operation Completed

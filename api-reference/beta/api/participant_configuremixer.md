@@ -30,13 +30,13 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) collection||
+|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) collection| Configuration of mixer levels for given audio participant|
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 Here is an example of the request.
@@ -78,23 +78,8 @@ Content-Length: 501
 
 > Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 306
-
-{
-  "clientContext": "clientContext-value",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "id": "id-value",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "status": "running"
-}
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
 ##### Notification - Operation Completed

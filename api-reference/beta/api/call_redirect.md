@@ -30,14 +30,14 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection||
-|targetDisposition|String||
-|timeout|Int32||
-|maskCallee|Boolean||
-|maskCaller|Boolean||
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation|
+|targetDisposition|String|The possible value is: `default`|
+|timeout|Int32|The timeout in seconds for the redirect operation.|
+|maskCallee|Boolean|Indicates whether to mask the callee.|
+|maskCaller|Boolean|Indicates whether to mask the caller.|
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+Returns `202 Accepted` response code
 
 ## Examples
 
@@ -79,7 +79,7 @@ Content-Length: 515
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -87,7 +87,7 @@ Content-Length: 515
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 ### Forward a call
@@ -175,7 +175,7 @@ Content-Type: application/json
 ##### Response
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 ##### Notification - Redirecting
