@@ -1,4 +1,5 @@
-Remove an app from your organization's app catalog (aka. tenant app catalog) with the given ID.
+### Description
+Remove the app from your organization's app catalog (aka. tenant app catalog). To remove your app from your Organization's app catalog, specify 'Organization' as the distributionMethod in the resource  [TeamsCatalogApp](../resources/teamscatalogapp.md)
 
 #### Permissions
 One of the following permissions is required to call this API. Only Global Administrators can call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
@@ -15,7 +16,7 @@ One of the following permissions is required to call this API. Only Global Admin
 | Authorization | Bearer {token} | ✓
 
 #### Request Body
-- None.
+None.
 
 #### Response
 ```
@@ -32,4 +33,4 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 HTTP/1.1 204 No Content
 ```
 #### Usage Tips
-The ID to include in this call is the ID returned by making the [List apps in the organization catalog (POST) call](./list_lob_apps.md). This ID is not the ID in the manifest of the zip app package.
+Use the ID returned from the [List app catalog](./list_lob_apps.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
