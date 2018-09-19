@@ -64,4 +64,4 @@ The response is a [TeamsCatalogApp](#teamscatalogapp).
 Information for creating a Teams app manifest package can be found [here](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
 
 #### Known Limitations
-One cannot create a tenant app with the same manifest ID as an already existing organization app.
+One cannot create an app for their organization with the same manifest ID as an already existing organization app.
