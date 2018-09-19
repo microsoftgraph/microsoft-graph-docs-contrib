@@ -18,4 +18,4 @@ After you develop an application using Microsoft Graph Data Connect, you can mak
 Customers who install the application will see the terms of service, the data that is required, the price for each application SKU, and the approximate cost for resource consumption. When the properties are specified by the purchaser, the resources are provisioned. This includes the Data Factory pipeline that begins extracting data. You provide a readme for your application that explains when to expect the installation to be complete, how to use the application, and how to get support.
 
 ## Next Steps 
-To get started developing Microsoft Graph Data Connect applications, see (Overview of Managed Access)(link to Learn topic).
+To get started developing Microsoft Graph Data Connect applications, see [Overview of Microsoft Graph Data Connect](data-connect-overview.md).
