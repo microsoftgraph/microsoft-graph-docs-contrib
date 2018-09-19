@@ -1,5 +1,5 @@
 #### Description
-Get apps from the Teams app catalog. This includes apps from the Teams store as well as apps from the organizations app catalog(aka. tenant app catalog). To get apps from the Tenant app catalog, specify 'Organization' as the distributionMethod.
+Get apps from the Teams app catalog. This includes apps from the Teams store as well as apps from your Organization's app catalog(aka. tenant app catalog). To get apps from your Organization's app catalog only, specify 'Organization' as the distributionMethod in the resource  [TeamsCatalogApp](../resources/teamscatalogapp.md)
 
 #### Permissions
 One of the following permissions is required to call this API. Only Global Administrators can call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
@@ -36,7 +36,7 @@ Content-Type: application/json
   ]
 }
 ```
-The response is a list of [TeamsCatalogApps](../resources/teamscatalogapp.md).
+The response is a list of [TeamsCatalogApp](../resources/teamscatalogapp.md).
 
 #### Example
 ##### Request
@@ -56,12 +56,12 @@ Content-Type: application/json
       "developerProvidedId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
-      "distributionMethod":"Tenant"
+      "distributionMethod":"Organization"
     }
   ]
 }
 ```
-The response is a list of [TeamsCatalogApps](#teamscatalogapp).
+The response is a list of [TeamsCatalogApp](#teamscatalogapp).
 
 #### Usage Tips
 This endpoint allows a filter to be used on any of the fields of the [TeamsCatalogApp](../resources/teamscatalogapp.md) object in order to shorten the list of results (as seen in the example above). The allowed filter operations are: Equal, Not-Equal, And, Or, Not. 
