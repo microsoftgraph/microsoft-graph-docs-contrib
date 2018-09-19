@@ -8,7 +8,7 @@ You can take advantage of Microsoft Graph Data Connect if you are:
 - An enterprise developer building intelligent applications for everyone inside of your organization that access Office 365 data.
 
 ## Develop a pipeline with Office 365 data
-You can use Microsoft Graph Data Connect to create new types of applications based on Office 365 data while taking advantage of the best tooling inside Microsoft Azure. You can use Azure Data Factory to move Office 365 data into popular Azure data stores: Azure Data Lake Gen 1 or Gen 2 (preview), or Azure Blob Storage. Then, you can process the data (using Azure Data Lake Analytics, for example) or move it into an additional store, like Azure SQL Database. You can then use the data to service your application's end user scenario.
+You can use Microsoft Graph Data Connect to create new types of applications based on Office 365 data, while taking advantage of the best tooling inside Microsoft Azure. You can use Azure Data Factory to move Office 365 data into popular Azure data stores: Azure Data Lake Gen 1 or Gen 2 (preview), or Azure Blob Storage. Then, you can process the data (using Azure Data Lake Analytics, for example) or move it into an additional store, like Azure SQL Database. You can then use the data to service your application's end user scenario.
 
 Before the Azure Data Factory pipeline can move data from Office 365, a data request consent is sent to the customer's Office 365 administrator-designated data approvers. Data movement begins only upon approval by the data approvers.
 
