@@ -8,16 +8,16 @@ The resource captures information about the meeting, including the join URL, the
 
 | Method         | Return Type | Description |
 |:---------------|:--------|:----------|
-| [Get onlineMeeting](../api/onlineMeeting_get.md) | [onlineMeeting](onlineMeeting.md) | Read properties and relationships of onlineMeeting object. |
+| [Get onlineMeeting](../api/onlinemeeting_get.md) | [onlineMeeting](onlinemeeting.md) | Read properties and relationships of onlineMeeting object. |
 
 ## Properties
 
 | Property                  | Type                                                   | Description                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | accessLevel               | String                                                 | The access level that controls admission to the online meeting. Possible values are: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
-| audioConferencing         | [audioConferencing](audioConferencing.md)              | Represents phone access information for an onlineMeeting. |
+| audioConferencing         | [audioConferencing](audioconferencing.md)              | Represents phone access information for an onlineMeeting. |
 | canceledTime              | DateTime                                               | The time when the meeting was canceled. |
-| chatInfo                  | [chatInfo](chatInfo.md)                                | The chat associated with this meeting. |
+| chatInfo                  | [chatInfo](chatinfo.md)                                | The chat associated with this meeting. |
 | creationTime              | DateTime                                               | The time when the meeting was created. Readonly.
 | endTime                   | DateTime                                               | End time of the meeting. |
 | entryExitAnnouncement     | Boolean                                                | The attendance announcements status for the online meeting. When attendance announcements are enabled, the online meeting will announce the names of the participantswho join the meeting through audio. |
@@ -26,7 +26,7 @@ The resource captures information about the meeting, including the join URL, the
 | isCancelled               | Boolean                                                | Whether the meeting has been canceled. |
 | joinUrl                   | String                                                 | The URL that is used when the online meeting is joined from the web. |
 | meetingType               | String                                                 | Possible values are: `meetNow`, `calendar`, `recurring`, `broadcast` |
-| participants              | [meetingParticipants](meetingParticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
+| participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | startTime                 | DateTime                                               | Start time of the meeting. |
 | subject                   | String                                                 | The subject of the online meeting. |
 

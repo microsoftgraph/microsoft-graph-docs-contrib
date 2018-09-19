@@ -6,8 +6,8 @@
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| attendees | [meetingParticipantInfo](meetingParticipantInfo.md) collection |  |
-| organizer | [meetingParticipantInfo](meetingParticipantInfo.md) |  |
+| attendees | [meetingParticipantInfo](meetingparticipantinfo.md) collection |  |
+| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
 
 ## JSON representation
 

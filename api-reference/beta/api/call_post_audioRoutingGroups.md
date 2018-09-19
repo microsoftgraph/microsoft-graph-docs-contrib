@@ -26,10 +26,10 @@ POST /applications/{id}/calls/{id}/audioRoutingGroups
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioRoutingGroup.md) object.
+In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.
 
 ## Response
-If successful, this method returns `201, Created` response code and [audioRoutingGroup](../resources/audioRoutingGroup.md) object in the response body.
+If successful, this method returns `201, Created` response code and [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.
 
 ## Example
 
@@ -58,7 +58,7 @@ Content-Length: 233
 }
 ```
 
-In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioRoutingGroup.md) object.
+In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.
 
 ##### Response
 

@@ -8,10 +8,10 @@ Configuration of mixer levels for given audio participant
 
 | Property               | Type                                                      | Description                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| ducking                | [audioDuckingConfiguration](audioDuckingConfiguration.md) | Configuration of ducking (phasing in and out) of other sources for this partipant custom mix.       |
+| ducking                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Configuration of ducking (phasing in and out) of other sources for this partipant custom mix.       |
 | exclusiveMode          | boolean                                                   | Whether sources without explicit source level should be removed from the mix.                       |
 | participant            | String                                                    | The participant for whom the mixer is being configured.                                             |
-| sourceLevels           | [audioSourceLevel](audioSourceLevel.md) collection        | Level configuration for other sources.                                                              |
+| sourceLevels           | [audioSourceLevel](audiosourcelevel.md) collection        | Level configuration for other sources.                                                              |
 
 ## JSON representation
 

@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String||
 
 ## Response
-If successful, this method returns `200, OK` response code and [recordOperation](../resources/recordOperation.md) object in the response body.
+If successful, this method returns `200, OK` response code and [recordOperation](../resources/recordoperation.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.

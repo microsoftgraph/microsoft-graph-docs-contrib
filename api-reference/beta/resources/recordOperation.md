@@ -20,7 +20,7 @@ The recordOperation type
 | playBeep                       | Boolean                     |                                                                                                                                                   |
 | prompts                        | [prompt](prompt.md) collection |                                                                                                                                                |
 | recordResourceLocation         | String                      |                                                                                                                                                   |
-| resultInfo                     | [resultInfo](resultInfo.md) | The result information.  Read-only. Server generated.                                                                                             |
+| resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
 | stopTones                      | String collection           |                                                                                                                                                   |
 | streamWhileRecording           | Boolean                     | If set to true, a resource location will be provided as soon as the recording starts.                                                             |

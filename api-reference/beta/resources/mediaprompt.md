@@ -9,7 +9,7 @@ The mediaPrompt type.
 | Property    | Type                      | Description                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
 | loop        | Int32                     | The loop count. 0 value indicates to loop infinitely. The default value is `1`. |
-| mediaInfo   | [mediaInfo](mediaInfo.md) | The media information                                                           |
+| mediaInfo   | [mediaInfo](mediainfo.md) | The media information                                                           |
 
 ## JSON representation
 

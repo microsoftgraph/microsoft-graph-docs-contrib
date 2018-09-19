@@ -25,7 +25,7 @@ POST /app/calls/{id}/participants/mute
 
 ## Request body
 
-[commsOperation](../resources/commsOperation.md) object.
+[commsOperation](../resources/commsoperation.md) object.
 
 ## Response
 

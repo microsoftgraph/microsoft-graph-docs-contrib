@@ -30,7 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationParticipantInfo.md) collection||
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection||
 |targetDisposition|String||
 |timeout|Int32||
 |maskCallee|Boolean||
