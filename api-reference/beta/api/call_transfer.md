@@ -35,7 +35,11 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
-## Example
+
+## Examples
+
+### Transfer call directly, with no user involvement
+
 Here is an example of how to call this API.
 
 ##### Request
@@ -189,7 +193,7 @@ Content-Type: application/json
 }
 ```
 
-## Example - Consultative transfer
+### Consultative transfer
 
 ##### Request
 
