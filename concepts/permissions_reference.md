@@ -1006,3 +1006,10 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 
 
 <br/>
+
+## Financials permissions
+#### Delegated permissions
+
+|Permission|Display String|Description|Admin Consent Required|
+|:----------|:--------------|:-----------|:-------|
+|_Financials.ReadWrite.All_|Read and write financials data|Allows the app to read and write financials data on behalf of the signed-in user|No|
