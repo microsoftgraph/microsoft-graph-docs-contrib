@@ -1,23 +1,23 @@
-﻿# Call: subscribeToTone
+# Call: Cancel Media Processing
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Subscribe to the specified touch-tone. This allows you to be notified when the user presses a specific button on a telephone keypad.
+Cancels media processing for all in-progress operations or just the current one.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-| Permission type | Permissions (from least to most privileged) |
-| :-------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not Supported        |
-| Delegated (personal Microsoft account) | Not Supported        |
-| Application     | Calls.AccessMedia.All                       |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Not Supported.                               |
+| Delegated (personal Microsoft account) | Not Supported.                               |
+| Application                            | None.                                       |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /app/calls/{id}/subscribeToTone
-POST /applications/{id}/calls/{id}/subscribeToTone
+POST /app/calls/{id}/cancelMediaProcessing
+POST /applications/{id}/calls/{id}/cancelMediaProcessing
 ```
 
 ## Request headers
@@ -28,36 +28,38 @@ POST /applications/{id}/calls/{id}/subscribeToTone
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter      | Type    | Description |
-|:---------------|:--------|:------------|
-| clientContext  | String  |             |
+| Parameter      | Type    | Description                                                    |
+|:---------------|:--------|:---------------------------------------------------------------|
+| all            | Boolean | The flag indicating whether to stop all operations or current. |
+| clientContext  | String  | The client context.                                            |
 
 ## Response
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [commsOperation](../resources/commsOperation.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_subscribeToTone"
+  "name": "call_cancelMediaProcessing"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/subscribeToTone
+POST https://graph.microsoft.com/beta/app/calls/{id}/cancelMediaProcessing
 Content-Type: application/json
-Content-Length: 46
+Content-Length: 62
 
 {
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "all": true,
+  "clientContext": "clientContext-value"
 }
 ```
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -70,15 +72,15 @@ Content-Type: application/json
 Content-Length: 259
 
 {
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "clientContext": "clientContext-value",
+  "createdDateTime": "2018-03-19T09:46:02Z",
+  "id": "id-value",
+  "lastActionDateTime": "2018-03-19T09:46:02Z",
+  "status": "running"
 }
 ```
 
-##### Notification - Operation Completed
+##### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -112,7 +114,7 @@ Content-Type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "call: subscribeToTone",
+  "description": "call: cancelMediaProcessing",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
