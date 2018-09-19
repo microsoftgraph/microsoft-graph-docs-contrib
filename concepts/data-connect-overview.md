@@ -4,7 +4,7 @@ Microsoft Graph Data Connect brings Office 365 data and Microsoft Azure resource
 
 You can take advantage of Microsoft Graph Data Connect if you are:
 
-- An ISV building intelligent applications for all Office 365 customers
+- An ISV building intelligent applications for all Office 365 customers.
 - An enterprise developer building intelligent applications for everyone inside of your organization that access Office 365 data.
 
 ## Develop a pipeline with Office 365 data
