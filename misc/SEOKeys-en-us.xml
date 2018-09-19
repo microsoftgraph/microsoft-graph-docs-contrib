@@ -201,6 +201,7 @@
       <Item text="Check member groups" url="/en-us/api-reference/v1.0/api/group_checkmembergroups" SEOKeyword="group: checkMemberGroups, Microsoft Graph API, group API" SEODescription="" />
       <Item text="Create group" url="/en-us/api-reference/v1.0/api/group_post_groups" />
       <Item text="Delete group" url="/en-us/api-reference/v1.0/api/group_delete" SEOKeyword="Delete group, Microsoft Graph API, Groups API" SEODescription="Delete group." />
+	  <Item text="Get delta" url="/en-us/api-reference/v1.0/api/group_delta" />
       <Item text="Get group" url="/en-us/api-reference/v1.0/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
       <Item text="Get member groups" url="/en-us/api-reference/v1.0/api/group_getmembergroups" SEOKeyword="group: getMemberGroups, Microsoft Graph API, group API" SEODescription="" />
       <Item text="Get member objects" url="/en-us/api-reference/v1.0/api/group_getmemberobjects" SEOKeyword="group: getMemberObjects, Microsoft Graph API, group API" SEODescription="" />
@@ -2321,7 +2322,6 @@
         <Item text="Check member groups" url="/en-us/api-reference/beta/api/group_checkmembergroups" SEOKeyword="group: checkMemberGroups, Microsoft Graph API, group API" SEODescription="" />
         <Item text="Create group" url="/en-us/api-reference/beta/api/group_post_groups" />
         <Item text="Delete group" url="/en-us/api-reference/beta/api/group_delete" SEOKeyword="Delete group, Microsoft Graph API, Groups API" SEODescription="Delete group." />
-		<Item text="Get delta" url="/en-us/api-reference/beta/api/group_delta" />
         <Item text="Get deleted group" url="/en-us/api-reference/beta/api/directory_deleteditems_get" />
 		<Item text="Get delta" url="/en-us/api-reference/beta/api/group_delta" />
         <Item text="Get group" url="/en-us/api-reference/beta/api/group_get" SEOKeyword="Get group, Microsoft Graph API, Groups API" SEODescription="Retrieve the properties and relationships of group object." />
