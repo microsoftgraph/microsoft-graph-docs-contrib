@@ -5,7 +5,8 @@ A message in a mailFolder.
 This resource supports:
 
 - Adding your own data as custom Internet message headers. Add custom headers only when creating a message, and name them starting with "x-". Once the message has been sent, you cannot modify the headers. To get the headers of a message, apply the `$select` query parameter in a [get message](../api/message_get.md) operation.
-- Adding your own data as custom properties in [extensions](../../../concepts/extensibility_overview.md).
+- Adding your own data as custom properties as [extensions](../../../concepts/extensibility_overview.md).
+- Subscribing to [change notifications](../../../concepts/webhooks.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, 
 by providing a [delta](../api/message_delta.md) function.
 
