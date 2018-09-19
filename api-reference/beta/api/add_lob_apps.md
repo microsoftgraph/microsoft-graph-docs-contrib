@@ -1,4 +1,4 @@
-Publish an app to the organization's catalog (aka Tenant app catalog).
+Publish an app to the organization's catalog (aka Tenant app catalog)
 
 #### Permissions
 One of the following permissions is required to call this API. Only Global Administrators can call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. Only Global Admin
 | Content-Type  | application/zip |
 
 #### Request Body
-- Teams Zip Manifest Payload: Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
+Teams Zip Manifest Payload: For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
 #### Response
 ```
