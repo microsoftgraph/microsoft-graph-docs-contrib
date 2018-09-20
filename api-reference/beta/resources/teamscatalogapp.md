@@ -1,15 +1,15 @@
 
 ### TeamsCatalogApp
-This resource is the representation of an app in the Teams app catalog.
+Represents an app in the Microsoft Teams app catalog.
 
 #### Properties
 | Property            | Type     | Description
 | ------------------- | -------- | -----------
-| id                  | string   | The catalog app's generated app ID (different from the developer provided ID in the [Teams zip app package](#teams-application-manifest))
-| developerProvidedId | string   | The ID of the catalog provided by the app developer in the [Teams zip app package](#teams-application-manifest)
-| name                | string   | The name of the catalog app provided by the app developer in the [Teams zip app package](#teams-application-manifest)
-| version             | string   | The version of the catalog app provided by the app developer in the [Teams zip app package](#teams-application-manifest)
-| distributionMethod  | enum     | The method of distribution for the catalog app: 'Organization', 'Store' 
+| id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Teams zip app package](#teams-application-manifest)).
+| developerProvidedId | string   | The ID of the catalog provided by the app developer in the [Teams zip app package](#teams-application-manifest).
+| name                | string   | The name of the catalog app provided by the app developer in the [Teams zip app package](#teams-application-manifest).
+| version             | string   | The version of the catalog app provided by the app developer in the [Teams zip app package](#teams-application-manifest).
+| distributionMethod  | enum     | The method of distribution for the catalog app: `Organization`, `Store`.
 
 #### JSON representation
 ```json
@@ -22,7 +22,8 @@ This resource is the representation of an app in the Teams app catalog.
 }
 ```
 
-#### Useful Links
+#### See also
+
 - [Publish an app to your organization's app catalog](../api/add_lob_apps.md)
 - [List apps from the app catalog](../api/list_lob_apps.md)
 - [Update an app in your organization's app catalog](../api/update_lob_apps.md)
