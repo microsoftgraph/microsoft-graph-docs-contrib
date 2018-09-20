@@ -74,13 +74,15 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 
 |**Feature**| **Microsoft Graph API** | **Microsoft Graph Data Connect** |
 |:----------|:------------------------|:--------------------------------------|
-| **Data access** | Single/few instances of a resource accessed at a time from a single user or group. | Multiple instances of a resource  accessed at a time across users or groups. |
-| **Access pattern** | Real-time synchronous access to the data and the consumer only defines what data they want. |  Scheduled access to data (scheduled granularity can be hours, days, and so on) and the consumer defines what data they want, when they want that data, and where they want that data. |
-| **Data operations** | Read/write access to the master data. | Read-only access to a copy of the data. |
-| **Data governance** | No control over data after it’s extracted. | Data can only be extracted into the customer's own Azure storage, and can have policies monitored like encryption at rest. |
-| **Access permissions** | Access permissions are scoped to each resource (mail, file, events, and so on) and can be scoped for a single user, a group, or the entire tenant. | Access permissions can be granularly scoped to individual properties/fields within a resource type and to a list of users, groups, or the entire tenant. |
+| **Access scope** | Single user or entire tenant | Many users or groups |
+| **Access pattern** | Realtime | Recurrent schedule |
+| **Data operations** | Operates on data master | Operates on a cache of the data |
+| **Data protection** | Data is protected while in Microsoft 365 | Data protection is extended to the cache of data in your Azure subscription |
+| **User consent** | Self<br>Resource types | None |
+| **Admin consent** | Entire organization<br>Resource Types | Select groups of users<br>Resource types and properties<br>Exclude users |
+| **Access tools** | RESTful web queries | Azure Data Factory |
 
-For more information about Microsoft Graph Data Connect, see (link to be added in separate PR) on the platform and the Learn section for more information on (how to get developing)(link to come in separate PR). 
+For more information about Microsoft Graph Data Connect, see (../concepts/data-connect-overview.md) on the platform and the Learn section for more information on (how to get developing)(../concepts/data-connect-concept-overview.md). 
 
 ## Next steps
 
