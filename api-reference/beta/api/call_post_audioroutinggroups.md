@@ -2,15 +2,15 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Use this API to create a new audioRoutingGroup.
+Create a new **audioRoutingGroup*.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not Supported                               |
-| Delegated (personal Microsoft account) | Not Supported                               |
+| Delegated (work or school account)     | Not supported.                               |
+| Delegated (personal Microsoft account) | Not supported.                               |
 | Application     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
 
 ## HTTP request
@@ -33,7 +33,7 @@ If successful, this method returns `200 OK` response code and [audioRoutingGroup
 
 ## Examples
 
-### Example - one-to-one audio routing group
+### Example 1: One-to-one audio routing group
 
 ##### Request
 Here is an example of the request.
@@ -86,7 +86,7 @@ Content-Length: 233
   ]
 }
 ```
-### Example - multicast audioRoutingGroup
+### Example 2: Multicast audioRoutingGroup
 
 ##### Request
 Here is an example of the request.
