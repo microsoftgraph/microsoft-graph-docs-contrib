@@ -61,7 +61,7 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 
 ## Access Microsoft Graph at scale
 
-Microsoft Graph Data Connect enables bulk - rather than the traditional transactional - access to Office 365 data. This enables intelligent feature development using Azure tools. You can use Microsoft Graph Data Connect to build apps that:
+Microsoft Graph Data Connect (preview) enables bulk - rather than the traditional transactional - access to Office 365 data. This enables intelligent feature development using Azure tools. You can use Microsoft Graph Data Connect to build apps that:
 
 - Find you the closest expert on a topic to you in your organization 
 - Automate knowledge base creation
@@ -75,14 +75,14 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 |**Feature**| **Microsoft Graph API** | **Microsoft Graph Data Connect** |
 |:----------|:------------------------|:--------------------------------------|
 | **Access scope** | Single user or entire tenant | Many users or groups |
-| **Access pattern** | Realtime | Recurrent schedule |
+| **Access pattern** | Real time | Recurrent schedule |
 | **Data operations** | Operates on data master | Operates on a cache of the data |
 | **Data protection** | Data is protected while in Microsoft 365 | Data protection is extended to the cache of data in your Azure subscription |
 | **User consent** | Self<br>Resource types | None |
-| **Admin consent** | Entire organization<br>Resource Types | Select groups of users<br>Resource types and properties<br>Exclude users |
+| **Admin consent** | Entire organization<br>Resource types | Select groups of users<br>Resource types and properties<br>Excludes users |
 | **Access tools** | RESTful web queries | Azure Data Factory |
 
-For more information about Microsoft Graph Data Connect, see (../concepts/data-connect-overview.md) on the platform and the Learn section for more information on (how to get developing)(../concepts/data-connect-concept-overview.md). 
+For more information about Microsoft Graph Data Connect, see [Microsoft Graph Data Connect](../concepts/data-connect-overview.md). To get started, see [Overview of Microsoft Graph Data Connect](../concepts/data-connect-concept-overview.md). 
 
 ## Next steps
 
