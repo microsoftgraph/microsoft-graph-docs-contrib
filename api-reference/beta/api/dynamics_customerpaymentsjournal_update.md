@@ -20,11 +20,11 @@ Update the properties of a customer payments journal object for Dynamics 365 Bus
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../concepts/permissions_reference.md).
 
-|Permission type|Permissions (from least to most privileged)|
-|---------------|-------------------------------------|
-|Delegated (work or school account)|Financials.ReadWrite.All|
-Delegated (personal Microsoft account)|	Not supported.|
-Application|Financials.ReadWrite.All|
+|Permission type |Permissions (from least to most privileged)|
+|:---------------|:------------------------------------------|
+|Delegated (work or school account)|Financials.ReadWrite.All |
+|Delegated (personal Microsoft account|Not supported.|
+|Application|Financials.ReadWrite.All|
 
 ## HTTP request
 
