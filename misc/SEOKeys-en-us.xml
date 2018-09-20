@@ -2527,6 +2527,7 @@
     </Item>
   <Item text="Calls and Meetings" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls-api-overview">
       <Item text="Call" url="/en-us/api-reference/beta/resources/call">
+          <Item text="Create" url="/en-us/api-reference/beta/api/application_post_calls" />
           <Item text="Get call" url="/en-us/api-reference/beta/api/call_get" />
           <Item text="Delete/hang up" url="/en-us/api-reference/beta/api/call_delete" />
           <Item text="Answer" url="/en-us/api-reference/beta/api/call_answer" />
@@ -2540,18 +2541,16 @@
               <Item text="Subscribe to tone" url="/en-us/api-reference/beta/api/call_subscribetotone" />
           </Item>
           <Item text="Participant" url="/en-us/api-reference/beta/resources/participant">
-              <Item text="Invite" url="/en-us/api-reference/beta/api/participant_invite" />
               <Item text="Get participant" url="/en-us/api-reference/beta/api/participant_get" />
               <Item text="Configure mixer" url="/en-us/api-reference/beta/api/participant_configuremixer" />
               <Item text="Mute participant" url="/en-us/api-reference/beta/api/participant_mute" />
-              <Item text="Mute all participants" url="/en-us/api-reference/beta/api/participant_muteAll" />
+              <Item text="Mute all participants" url="/en-us/api-reference/beta/api/participant_muteall" />
               <Item text="List participants" url="/en-us/api-reference/beta/api/call_list_participants" />
               <Item text="Invite participants" url="/en-us/api-reference/beta/api/participant_invite" />   
           </Item>        
           <Item text="Change screen sharing role" url="/en-us/api-reference/beta/api/call_changescreensharingrole" />
           <Item text="Unmute self" url="/en-us/api-reference/beta/api/call_unmute" />
           <Item text="Update metadata" url="/en-us/api-reference/beta/api/call_updatemetadata" />        
-          <Item text="Configure audio mixer" url="/en-us/api-reference/beta/api/participant_configuremixer" />
           <Item text="Audio routing group" url="/en-us/api-reference/beta/resources/audioroutinggroup">
               <Item text="Create audio routing group" url="/en-us/api-reference/beta/api/call_post_audioroutinggroups" />
               <Item text="Get audio routing group" url="/en-us/api-reference/beta/api/audioroutinggroup_get" />
