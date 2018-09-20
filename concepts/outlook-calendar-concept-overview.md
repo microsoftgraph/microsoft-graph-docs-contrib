@@ -67,6 +67,12 @@ Use the [people API](people_example.md) in Microsoft Graph to connect to [people
 
 Save overhead in storing and managing app data in external data stores. With Microsoft Graph, you can store custom app data as [open extensions](extensibility_overview.md#open-extensions) in individual resource instances. If you require the data to be typed, or would like to be able to share the typed schema, you can store custom app data in [schema extensions](extensibility_overview.md#schema-extensions).
 
+## API reference
+Looking for the API reference for this service?
+
+- [Outlook calendar API in Microsoft Graph v1.0](../api-reference/v1.0/resources/calendar.md)
+- [Outlook calendar API in Microsoft Graph beta](../api-reference/beta/resources/calendar.md)
+
 
 ## Next steps
 
