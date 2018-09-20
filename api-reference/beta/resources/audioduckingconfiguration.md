@@ -1,4 +1,4 @@
-# Audio ducking configuration resource type
+# audioDuckingConfiguration resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -28,28 +28,12 @@ Here is a JSON representation of the resource.
 }-->
 ```json
 {
-  "lowerLevel": 1024,
-  "rampActive": 1024,
-  "rampInactive": 1024,
-  "upperLevel": 1024
-}
-```
-
-## Example - Phasing in and out defaults
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.audioDuckingConfiguration"
-}-->
-```json
-{
   "lowerLevel": 20,
   "rampActive": 1000,
   "rampInactive": 1000,
   "upperLevel": 100
 }
 ```
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

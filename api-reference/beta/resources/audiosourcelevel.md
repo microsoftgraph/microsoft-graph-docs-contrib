@@ -1,4 +1,4 @@
-# Audio source level resource type
+# audioSourceLevel resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -26,22 +26,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "duckOthers": true,
-  "level": 1024,
-  "participant": "String"
-}
-```
-
-## Example - Listen to only one participant
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.audioSourceLevel"
-}-->
-```json
-{
-  "duckOthers": true,
   "level": 100,
-  "participant": "8A34A46B3D174ADC8DCEDC4E7D572698"
+  "participant": "String"
 }
 ```
 

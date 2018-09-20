@@ -30,9 +30,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-| receivers | String collection |  |
+| receivers | String collection | The target participants in the audioRoutingGroup. |
 | routingMode | String | Possible values are: `oneToOne`, `multicast`. |
-| sources | String collection |  |
+| sources | String collection | The source participant in the audioRoutingGroup. |
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [audioRoutingGroup](../resources/audioroutinggroup.md) object in the response body.
@@ -63,9 +63,6 @@ Content-Length: 233
   ]
 }
 ```
-
-In the request body, supply a JSON representation of [audioRoutingGroup](../resources/audioroutinggroup.md) object.
-
 ##### Response
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.

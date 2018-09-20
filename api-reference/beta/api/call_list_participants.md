@@ -34,7 +34,9 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [participant](../resources/participant.md) objects in the response body.
 
-## Example
+## Examples
+
+### Example 1
 
 ##### Request
 Here is an example of the request.
@@ -95,7 +97,7 @@ Content-Length: 1152
 }
 ```
 
-## Example
+### Example 2
 
 ##### Request
 

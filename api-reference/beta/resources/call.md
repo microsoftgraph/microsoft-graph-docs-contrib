@@ -18,9 +18,9 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | [Answer](../api/call_answer.md)                                   |                                                   | Answer an incoming call.                     |
 | [Reject](../api/call_reject.md)                                   |                                                   | Reject an incoming call.                     |
 | [Redirect](../api/call_redirect.md)                               |                                                   | Redirect an incoming call.                   |
-| [Transfer](../api/call_transfer.md)                               |                                                   |                                              |
+| [Transfer](../api/call_transfer.md)                               |                                                   | Transfer a call                              |
 | **Multi-party**                                                   |                                                   |                                              |
-| [List participants](../api/call_list_participants.md)             | [participant](participant.md) collection          |Get a participant object collection.          |
+| [List participants](../api/call_list_participants.md)             | [participant](participant.md) collection          | Get a participant object collection.         |
 | [Invite Participants](../api/participant_invite.md)               | [commsOperation](commsoperation.md)               | Invite participants to the active call.      |
 | [Mute All Participants](../api/participant_muteall.md)            | [commsOperation](commsoperation.md)               | Mute all participants in the call.           |
 | [Configure Audio Mixer](../api/participant_configuremixer.md)     | [commsOperation](commsoperation.md)               | Configure audio in multiparty conversation.  |
@@ -35,7 +35,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | [Mute](../api/call_mute.md)                                       | [commsOperation](commsoperation.md)               | Mute self in the call.                       |
 | [Unmute](../api/call_unmute.md)                                   | [commsOperation](commsoperation.md)               | Unmute self in the call.                     |
 | [UpdateMetadata](../api/call_updatemetadata.md)                   | [commsOperation](commsoperation.md)               | Update metadata for self in roster.          |
-| [ChangeScreenSharingRole](../api/call_changescreensharingrole.md) |                                                   |                                              |
+| [ChangeScreenSharingRole](../api/call_changescreensharingrole.md) |                                                   | Start and stop sharing screen in the call                                             |
 
 ## Properties
 
@@ -49,18 +49,18 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | direction           | String                                                                                                 | The direction of the call. The possible value are `incoming` or `outgoing`. Read-only. Server generated.                                                                                          |
 | id                  | String                                                                                                 | Read-only. Server generated.                                                                                                                                                                        |
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) or [serviceHostedMediaConfig](servicehostedmediaconfig.md) | The media configuration.                                                                                                                                                                        |
-| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              |                                                                                                                                                                                                     |
+| meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Contains the capabilities of a meeting                                                                                                                                                                                                    |
 | meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) or [tokenMeetingInfo](tokenmeetinginfo.md)             | The meeting information.                                                                                                                                                                            |
 | myParticipantId     | String                                                                                                 | Read-only. Server generated.                                                                                                                                                                        |
 | requestedModalities | String collection                                                                                      | The list of requested modalities. | Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                       |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | The result information. For example can hold termination reason. Read-only. Server generated.                                                                                                       |
-| ringingTimeoutInSeconds | Int32                                                                                              |                                                                                                                                                                                                     |
+| ringingTimeoutInSeconds | Int32                                                                                              | Ringing timeout for outgoing peer to peer calls                                                                                                                                                                                                    |
 | routingPolicies     | String collection                                                                                      | Possible values are: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`.                                                                                             |
 | source              | [participantInfo](participantinfo.md)                                                                  | The originator of the call.                                                                                                                                                                         |
 | state               | String                                                                                                 | The call state. Possible values are: `incoming`, `establishing`, `ringing`, `established`, `hold`, `redirecting`, `terminating`, `terminated`. Read-only. Server generated.                 |
 | subject             | String                                                                                                 | The subject of the conversation.                                                                                                                                                                    |
 | targets             | [participantInfo](participantinfo.md) collection                                                       | The targets of the call.                                                                                                                                                                            |
-| tenantId            | String                                                                                                 |                                                                                                                                                                                                     |
+| tenantId            | String                                                                                                 | tenantId in Azure Active Directory                                                                                                                                                                                                    |
 | terminationReason   | String                                                                                                 | Read-only. Server generated.                                                                                                                                                                        |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only. Server generated.                                                                                                                                                                        |
 
@@ -156,115 +156,6 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
         "id": "4b444206-207c-42f8-92a6-e332b41c88a2"
       }
     }
-  }
-}
-```
-
-## Example
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
-{
-  "activeModalities": [
-    "audio", "video"
-  ],
-  "answeredBy": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "callRoutes": [
-    {
-      "final": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      },
-      "original": {
-        "phone": {
-          "id": "+14258828080"
-        }
-      },
-      "routingType": "forwarded"
-    }
-  ],
-  "callbackUri": "callbackUri-value",
-  "chatInfo": {
-    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
-    "messageId": "0",
-    "replyChainMessageId": "0"
-  },
-  "direction": "incoming",
-  "mediaConfig": {
-    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<media config blob>",
-    "removeFromDefaultAudioGroup": false
-  },
-  "meetingCapability": {
-    "allowAnonymousUsersToDialOut": true,
-    "autoAdmittedUsers": "everyoneInCompany"
-  },
-  "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
-    "organizer": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "allowConversationWithoutHost": true
-  },
-  "myParticipantId": "myParticipantId-value",
-  "requestedModalities": [
-    "unknown"
-  ],
-  "ringingTimeoutInSeconds": 99,
-  "routingPolicies": [
-    "none"
-  ],
-  "source": {
-    "identity" : {
-      "application" : {
-        "@odata.type": "#microsoft.graph.identity",
-        "displayName": "Test BOT",
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "state": "incoming",
-  "subject": "subject-value",
-  "targets": [
-    {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      },
-      "languageId": "languageId-value",
-      "region": "region-value"
-    }
-  ],
-  "tenantId": "tenantId-value",
-  "terminationReason": "terminationReason-value",
-  "toneInfo": {
-    "sequenceId": 99,
-    "tone": "tone0"
   }
 }
 ```

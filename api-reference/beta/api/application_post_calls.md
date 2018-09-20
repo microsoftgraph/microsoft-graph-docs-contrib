@@ -145,7 +145,7 @@ Content-Type: application/json
 }
 ```
 
-#### Notification - Establishing
+##### Notification - Establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -173,37 +173,7 @@ Content-Type: application/json
   ]
 }
 ```
-
-#### Notification - Ringing
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.notifications"
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "ringing"
-      }
-    }
-  ]
-}
-```
-
-#### Notification - Established
+##### Notification - Established
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -225,23 +195,14 @@ Content-Type: application/json
         "@odata.type": "#microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
-        "state": "established",
-        "answeredBy": {
-          "identity": {
-            "user": {
-              "displayName": "Test User",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-            }
-          }
-        },
-        "activeModalities": [ "audio", "video" ]
-      }
+        "state": "established"
+		}
     }
   ]
 }
 ```
 
-### Create peer to peer VOIP call with application hosted media
+#### Create peer to peer VOIP call with application hosted media
 
 > Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.
 
@@ -292,69 +253,11 @@ Content-Type: application/json
 }
 ```
 
-### Create peer to peer simultaneous ring call with service hosted media
-
->**Note:** This example needs the Calls.Initiate.All permission.
-
-##### Request
-Here is an example of the request.
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
-{
-  "callbackUri": "https://bot.contoso.com/api/calls",
-  "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-    "removeFromDefaultAudioGroup": false
-  },
-  "source": {
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    },
-    "languageId": "languageId-value",
-    "region": "region-value"
-  },
-  "subject": "Test Call",
-  "requestedModalities": [ "audio" ],
-  "targets": [
-    {
-      "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
-        }
-      }
-    },
-    {
-      "identity": {
-        "phone": {
-          "id": "+14258828080",
-          "displayName": "Test Phone"
-        }
-      }
-    }
-  ],
-  "tenantId": "tenantId-value"
-}
-```
-
-## Examples
-
-### Create group call with service hosted media
+#### Create group call with service hosted media
 
 >**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.
 
-#### Request
+##### Request
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -412,24 +315,15 @@ Content-Type: application/json
     "threadId": "19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2",
     "messageId": "0",
     "replyChainMessageId": null
-  },
-  "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
-    "organizer": {
-      "user": {
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "id": "4b444206-207c-42f8-92a6-e332b41c88a2"
-      }
-    }
   }
 }
 ```
 
-### Meet Now with service hosted media
+#### Join private meeting with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCalls.All permission.
 
-#### Request
+##### Request
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -468,63 +362,6 @@ Content-Type: application/json
   "chatInfo": {
     "threadId": "19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2",
     "messageId": "0",
-    "replyChainMessageId": null
-  },
-  "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
-    "organizer": {
-      "user": {
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "id": "4b444206-207c-42f8-92a6-e332b41c88a2"
-      }
-    }
-  }
-}
-```
-
-### Join Private Meeting with service hosted media
-
->**Note:** This example needs the Calls.JoinGroupCalls.All permission.
-
-#### Request
-
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.call"
-}-->
-```json
-{
-  "subject": "Test Call",
-  "callbackUri": "https://bot.contoso.com/api/calls",
-  "source": {
-    "identity": {
-      "application": {
-        "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
-      }
-    },
-  },
-  "requestedModalities": [ "audio", "video" ],
-  "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
-    "preFetchMedia": [
-      {
-        "uri": "https://cdn.contoso.com/beep.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-      },
-      {
-        "uri": "https://cdn.contoso.com/cool.wav",
-        "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F",
-      }
-    ]
-  },
-  "chatInfo": {
-    "threadId": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
-    "messageId": "0",
   },
   "meetingInfo": {
     "@odata.type": "#microsoft.graph.organizerMeetingInfo",
@@ -538,11 +375,11 @@ Content-Type: application/json
 }
 ```
 
-### Join Channel Meeting with service hosted media
+#### Join channel meeting with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCalls.All permission.
 
-#### Request
+##### Request
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -579,7 +416,7 @@ Content-Type: application/json
     ]
   },
   "chatInfo": {
-    "threadId": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
+    "threadId": "19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2",
     "messageId": "1507228578052",
     "replyChainMessageId": null
   },
@@ -595,11 +432,11 @@ Content-Type: application/json
 }
 ```
 
-### Join Channel Meeting as a guest with service hosted media
+#### Join channel meeting as a guest with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.
 
-#### Request
+##### Request
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -637,7 +474,7 @@ Content-Type: application/json
     ]
   },
   "chatInfo": {
-    "threadId": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
+    "threadId": "19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLThmNmEtOGQ3M2E0ODdmZDZk@thread.v2",
     "messageId": "1507228578052",
     "replyChainMessageId": null
   },

@@ -30,11 +30,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)||
+|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|The participant which is the target of the transfer.|
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200, OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.
+Returns `202 Accepted` response code.
 
 ## Examples
 
@@ -76,23 +76,8 @@ Content-Length: 430
 
 > Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
-} -->
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-
-{
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
+HTTP/1.1 202 Accepted
 ```
 
 ##### Notification - Transferring
@@ -230,23 +215,7 @@ Content-Type: application/json
 > Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 ```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-```
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
-  "truncated": true
-}-->
-```json
-{
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "createdDateTime": "2018-03-19T09:46:02Z",
-  "lastActionDateTime": "2018-03-19T09:46:02Z",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
+HTTP/1.1 202 Accepted
 ```
 
 ##### Notification - Transferring

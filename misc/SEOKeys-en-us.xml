@@ -2535,7 +2535,7 @@
         </Item>
       </Item>
     </Item>
-  <Item text="Calls and Meetings" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls_overview">
+  <Item text="Calls and Meetings" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/calls-api-overview">
       <Item text="Call" url="/en-us/api-reference/beta/resources/call">
           <Item text="Get call" url="/en-us/api-reference/beta/api/call_get" />
           <Item text="Delete/hang up" url="/en-us/api-reference/beta/api/call_delete" />
@@ -2543,7 +2543,7 @@
           <Item text="Reject" url="/en-us/api-reference/beta/api/call_reject" />
           <Item text="Redirect" url="/en-us/api-reference/beta/api/call_redirect" />
           <Item text="Transfer" url="/en-us/api-reference/beta/api/call_transfer" />
-          <Item text="IVR scenarios" url="/en-us/api-reference/beta/resources/ivr_scenarios">
+          <Item text="IVR scenarios" url="/en-us/api-reference/beta/resources/calls-api-ivr-overview">
               <Item text="Play prompt" url="/en-us/api-reference/beta/api/call_playprompt" />
               <Item text="Record" url="/en-us/api-reference/beta/api/call_record" />
               <Item text="Cancel media processing" url="/en-us/api-reference/beta/api/call_cancelmediaprocessing" />
@@ -2555,7 +2555,6 @@
               <Item text="Configure mixer" url="/en-us/api-reference/beta/api/participant_configuremixer" />
               <Item text="Mute participant" url="/en-us/api-reference/beta/api/participant_mute" />
               <Item text="Mute all participants" url="/en-us/api-reference/beta/api/participant_muteAll" />
-              <Item text="Subscribe video" url="/en-us/api-reference/beta/api/participant_subscribevideo" />
               <Item text="List participants" url="/en-us/api-reference/beta/api/call_list_participants" />
               <Item text="Invite participants" url="/en-us/api-reference/beta/api/participant_invite" />   
           </Item>        

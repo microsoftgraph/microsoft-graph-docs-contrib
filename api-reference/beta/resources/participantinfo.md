@@ -1,14 +1,16 @@
-# Participant info resource type
+# participantInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Contains additional properties about the participant identity
 
 ## Properties
 
 | Property       | Type                          | Description  |
 |:---------------|:------------------------------|:-------------|
-| identity       | [identitySet](identitySet.md) |              |
-| languageId     | String                        |              |
-| region         | String                        |              |
+| identity       | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this participant. |
+| languageId     | String                        | The language culture string. |
+| region         | String                        | Region of the participant. |
 
 ## JSON representation
 

@@ -1,4 +1,4 @@
-# Notifications resource type
+# notifications resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -6,7 +6,7 @@
 
 | Property       | Type                                       | Description |
 |:---------------|:-------------------------------------------|:------------|
-| value          | [notification](notification.md) collection |             |
+| value          | [notification](notification.md) collection | The notification of a change in the resource. |
 
 ## JSON representation
 

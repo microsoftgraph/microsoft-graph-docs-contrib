@@ -1,14 +1,16 @@
-# Chat info resource type
+# chatInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Information about a message in Teams
 
 ## Properties
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| messageId           | String  |            |
-| replyChainMessageId | String  |            |
-| threadId            | String  |            |
+| messageId           | String  | unique identifier for a message in a Teams channel |
+| replyChainMessageId | String  | Id of the reply message |
+| threadId            | String  | unique identifier for a thread in Teams |
 
 ## JSON representation
 
