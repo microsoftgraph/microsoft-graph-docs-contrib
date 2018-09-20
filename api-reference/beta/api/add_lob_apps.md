@@ -34,7 +34,7 @@ Content-Type: application/json
   "distributionMethod": "Tenant"
 }
 ```
-The response is a [TeamsCatalogApp](../resources/teamscatalogapp.md).
+The response is a [teamsCatalogApp](../resources/teamscatalogapp.md).
 
 #### Example
 ##### Request
@@ -45,7 +45,7 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
-For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+For information about how to create a Microsoft Teams application zip file, see [Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
 
 ##### Response
 ```
@@ -60,7 +60,7 @@ Content-Type: application/json
   "distributionMethod": "Tenant"
 }
 ```
-The response is a [TeamsCatalogApp](#teamscatalogapp).
+The response is a [teamsCatalogApp](#teamscatalogapp).
 
 #### Usage Tips
 Information for creating a Teams app manifest package can be found [here](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
