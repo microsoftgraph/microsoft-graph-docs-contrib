@@ -1,4 +1,4 @@
-# Get started with Microsoft Graph Data Connect
+# Get started with Microsoft Graph Data Connect (preview)
 
 Before you can use Microsoft Graph Data Connect, an Office 365 administrator must take two actions, both of which enable the ability for the admin to control data movement through Privileged Access Management (PAM). 
 

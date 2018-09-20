@@ -1,4 +1,4 @@
-# Microsoft Graph Data Connect
+# Microsoft Graph Data Connect (preview)
 
 Microsoft Graph Data Connect brings Office 365 data and Microsoft Azure resources to you through a core data pipeline. You can use Microsoft Graph Data Connect to build intelligent applications that access valuable data using the best development tools offered by Microsoft, all within the Microsoft secure cloud. All businesses are interested in improving productivity, which means that building products that make knowledge workers more productive presents tremendous opportunities. 
 
