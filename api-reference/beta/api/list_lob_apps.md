@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 | --------------| --------------  | --------
 | Authorization | Bearer {token}  | ✓
 
-#### Request Body
+#### Request body
 None.
 
 #### Response
@@ -38,7 +38,7 @@ Content-Type: application/json
   ]
 }
 ```
-The response is a list of [TeamsCatalogApp](../resources/teamscatalogapp.md).
+The response is a list of [teamsCatalogApp](../resources/teamscatalogapp.md) objects.
 
 #### Example
 ##### Request
