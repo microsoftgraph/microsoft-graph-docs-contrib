@@ -33,7 +33,7 @@ If successful, this method returns `200 OK` response code and [audioRoutingGroup
 
 ## Examples
 
-### Example - oneToOne audioRoutingGroup
+### Example - one-to-one audio routing group
 
 ##### Request
 Here is an example of the request.
