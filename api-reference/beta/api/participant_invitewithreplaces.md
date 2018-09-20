@@ -161,7 +161,7 @@ Content-Type: application/json
 }
 ```
 
-## Join Channel Meeting without media
+## Join channel meeting without media
 
 > **IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.  Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.
 
@@ -267,7 +267,7 @@ Content-Type: application/json
 }
 ```
 
-## Invite Participant from Initial Incoming Call
+## Invite participant from initial incoming call
 
 ```http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
