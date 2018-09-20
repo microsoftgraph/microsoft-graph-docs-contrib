@@ -9,7 +9,7 @@
 		<Item text="Terms of use" url="https://developer.microsoft.com/en-us/graph/terms-of-use" IsExternal="true" />
 	</Item>
   </Item>
-  <Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-overview" />
+  <Item text="What is Microsoft Graph Data Connect (preview)?" url="/en-us/concepts/data-connect-overview" />
 
   <Item Label="LEARN" url="" />
   <Item text="Users" url="/en-us/concepts/azuread-users-concept-overview" />
@@ -18,6 +18,7 @@
 	  <Item text="Find meeting times" url="/en-us/concepts/findmeetingtimes_example" />
 	  <Item text="Get free/busy schedule" url="/en-us/concepts/outlook-get-free-busy-schedule" />
 	  <Item text="Schedule recurring events" url="/en-us/concepts/outlook-schedule-recurring-events" />
+	  <Item text="Get shared events" url="/en-us/concepts/outlook-get-shared-events-calendars" />
   </Item>
   <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview" >
     <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
@@ -34,7 +35,7 @@
   <Item text="Mail" ProdTag="Outlook" url="/en-us/concepts/outlook-mail-concept-overview" >
 	  <Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
 	  <Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
-	  <Item text="Share message folders" url="/en-us/concepts/outlook-share-messages-folders" />
+	  <Item text="Get shared messages" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
   <Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-concept-overview" >
 	<Item text="Get started" url="/en-us/concepts/data-connect-get-started" />
@@ -54,7 +55,9 @@
 	<Item text="Branding guidelines" url="/en-us/concepts/onenote-branding" />
 	<Item text="Error codes" url="/en-us/concepts/onenote_error_codes" SEODescription="Find error codes that are returned by OneNote APIs in Microsoft Graph." />
   </Item>
-  <Item text="Personal contacts" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" />
+  <Item text="Personal contacts" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" >
+	<Item text="Get shared contacts" url="/en-us/concepts/outlook-get-shared-contacts-folders" />
+  </Item>
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Security" url="/en-us/concepts/security-concept-overview" >
     <Item text="Data flow" url="/en-us/concepts/security-dataflow" />
