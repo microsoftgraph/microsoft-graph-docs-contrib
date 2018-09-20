@@ -42,7 +42,7 @@ Returns `202 Accepted` response code
 ## Example
 The following example shows how to call this API.
 
-##### Notification - Incoming
+##### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -124,7 +124,7 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - Deleted
+##### Notification - deleted
 
 ```http
 POST https://bot.contoso.com/api/calls

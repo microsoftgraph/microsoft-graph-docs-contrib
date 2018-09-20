@@ -57,7 +57,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 HTTP/1.1 204 No Content
 ```
 
-##### Notification - Terminating
+##### Notification - terminating
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -86,7 +86,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Terminated
+##### Notification - terminated
 
 ```http
 POST https://bot.contoso.com/api/calls

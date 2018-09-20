@@ -122,7 +122,7 @@ Content-Length: 259
 }
 ```
 
-##### Notification - Operation Completed
+##### Notification - operation completed
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Roster Updated With Participant Added
+##### Notification - roster updated with participant added
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -641,7 +641,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Terminated the original P2P call
+##### Notification - terminated the original P2P call
 
 ``` http
 POST https://bot.contoso.com/api/calls

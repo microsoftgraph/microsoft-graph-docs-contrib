@@ -78,7 +78,7 @@ HTTP/1.1 202 Accepted
 
 ### Answer VOIP call with service hosted media
 
-##### Notification - Incoming
+##### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -244,7 +244,7 @@ Content-Type: application/json
 
 ### Answer VOIP call with application hosted media
 
-##### Notification - Incoming
+##### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -328,7 +328,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - Establishing
+##### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -357,7 +357,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Established
+##### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls

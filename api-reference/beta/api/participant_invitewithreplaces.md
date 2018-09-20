@@ -398,7 +398,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Terminated the original P2P call
+##### Notification - terminated the original P2P call
 
 ```http
 POST https://bot.contoso.com/api/calls

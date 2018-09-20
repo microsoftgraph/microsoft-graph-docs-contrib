@@ -80,7 +80,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - Transferring
+##### Notification - transferring
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -114,7 +114,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Transfer Accepted
+##### Notification - transfer accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -148,7 +148,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Terminated
+##### Notification - terminated
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -218,7 +218,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - Transferring
+##### Notification - transferring
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -252,7 +252,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Transfer Accepted
+##### Notification - transfer accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -286,7 +286,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Terminated
+##### Notification - terminated
 
 ```http
 POST https://bot.contoso.com/api/calls

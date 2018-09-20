@@ -145,7 +145,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Establishing
+##### Notification - establishing
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -173,7 +173,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### Notification - Established
+##### Notification - established
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -114,7 +114,7 @@ Content-Length: 259
 }
 ```
 
-##### Notification - Roster Updated With Participant Muted
+##### Notification - roster updated with participant muted
 
 ```http
 POST https://bot.contoso.com/api/calls

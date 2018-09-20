@@ -92,7 +92,7 @@ HTTP/1.1 202 Accepted
 
 ### Forward a call
 
-##### Notification - Incoming
+##### Notification - incoming
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -178,7 +178,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### Notification - Redirecting
+##### Notification - redirecting
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -207,7 +207,7 @@ Content-Type: application/json
 }
 ```
 
-##### Notification - Terminated
+##### Notification - terminated
 
 ```http
 POST https://bot.contoso.com/api/calls
