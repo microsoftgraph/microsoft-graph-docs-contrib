@@ -18,6 +18,7 @@ Represents an application. Any application that outsources authentication to Azu
 |[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
+|[Create call](../api/application_post_calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
 
 ## Properties
 
@@ -50,11 +51,15 @@ Represents an application. Any application that outsources authentication to Azu
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
+|calls           |[call](call.md) collection                  |Read-only. Nullable.|
+|connectorGroup|[connectorGroup](connectorgroup.md)| The connectorGroup the application is using with Azure AD Application Proxy. Nullable.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Read-only.|
+|onlineMeetings  |[onlineMeeting](onlinemeeting.md) collection|Read-only. Nullable.|
 |owners|[directoryObject](directoryobject.md) collection|Directory objects that are owners of the application. The owners are a set of non-admin users who are allowed to modify this object. Requires version 2013-11-08 or newer.  Read-only. Nullable.|
 |policy|[policy](policy.md) collection|The policies assigned to this application.|
 
 ## JSON representation
+
 Here is a JSON representation of the resource
 
 <!-- {

@@ -1,31 +1,27 @@
-# entity resource type
+# noMediaConfig resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 ## Properties
-| Property | Type  | Description |
-|:---------|:------|:------------|
-|id        |String | Read-only.  |
 
-## Relationships
-None
+| Property       | Type    | Description|
+|:---------------|:--------|:----------|
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "abstract": "true",
-  "keyProperty": "id",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.entity"
+  "@odata.type": "microsoft.graph.noMediaConfig"
 }-->
 ```json
 {
-  "id": "string (identifier)"
+  "removeFromDefaultAudioGroup": true
 }
 ```
 
@@ -33,7 +29,7 @@ Here is a JSON representation of the resource
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "entity resource",
+  "description": "noMediaConfig resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
