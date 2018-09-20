@@ -1,14 +1,16 @@
 ### Description
-Remove the app from your organization's app catalog (aka. tenant app catalog). To remove your app from your Organization's app catalog, specify 'Organization' as the distributionMethod in the resource  [TeamsCatalogApp](../resources/teamscatalogapp.md)
+Remove the app from your organization's app catalog (the tenant app catalog). To remove your app from your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
 
 #### Permissions
-One of the following permissions is required to call this API. Only Global Administrators can call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+
+>**Note:** Only global administrators can call this API. 
 
 | Permission Type                        | Permissions (from least to most privileged)
 | ---------------                        | ----------------------------
-| Delegated (work or school account)     | AppCatalog.ReadWrite.All (Only Global Administrators)
-| Delegated (personal Microsoft account) | Not supported
-| Application                            | Not supported
+| Delegated (work or school account)     | AppCatalog.ReadWrite.All 
+| Delegated (personal Microsoft account) | Not supported.
+| Application                            | Not supported.
 
 #### Request headers
 | Header        | Value          | Required
