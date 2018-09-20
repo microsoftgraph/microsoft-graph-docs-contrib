@@ -22,14 +22,12 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | **Multi-party**                                                   |                                                   |                                              |
 | [List participants](../api/call_list_participants.md)             | [participant](participant.md) collection          | Get a participant object collection.         |
 | [Invite Participants](../api/participant_invite.md)               | [commsOperation](commsoperation.md)               | Invite participants to the active call.      |
-| [Eject Participants](../api/participant_eject.md)                 | [commsOperation](commsoperation.md)               | Eject participant from the active call.      |
 | [Mute All Participants](../api/participant_muteall.md)            | [commsOperation](commsoperation.md)               | Mute all participants in the call.           |
 | [Configure Audio Mixer](../api/participant_configuremixer.md)     | [commsOperation](commsoperation.md)               | Configure audio in multiparty conversation.  |
 | [Create audioRoutingGroup](../api/call_post_audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Create a new audioRoutingGroup by posting to the audioRoutingGroups collection. |
 | [List audioRoutingGroups](../api/call_list_audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) collection|Get a audioRoutingGroup object collection.  |
 | **Interactive-Voice-Response**                                    |                                                   |                                              |
 | [PlayPrompt](../api/call_playprompt.md)                           | [commsOperation](commsoperation.md)               | Play prompt in the call.                     |
-| [Recognize](../api/call_recognize.md)                             | [recognizeOperation](recognizeoperation.md)       | Play prompt and recognize DTMF tones.        |
 | [Record](../api/call_record.md)                                   | [recordOperation](recordoperation.md)             | Record the call.                             |
 | [CancelMediaProcessing](../api/call_cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancel media processing.                     |
 | [SubscribeToTone](../api/call_subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Subscribe to DTMF tones.                     |
