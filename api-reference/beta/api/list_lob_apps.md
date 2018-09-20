@@ -1,14 +1,16 @@
 #### Description
-List apps from the Teams app catalog. This includes apps from the Teams store as well as apps from your Organization's app catalog(aka. tenant app catalog). To get apps from your Organization's app catalog only, specify 'Organization' as the distributionMethod in the resource  [TeamsCatalogApp](../resources/teamscatalogapp.md)
+List apps from the Microsoft Teams app catalog. This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
 
 #### Permissions
-One of the following permissions is required to call this API. Only Global Administrators can call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+
+>**Note:** Only global administrators can call this API.
 
 | Permission Type                        | Permissions (from least to most privileged)
 | ----------------------------------     | -------------
-| Delegated (work or school account)     | AppCatalog.ReadWrite.All (Only Global Administrators)
-| Delegated (personal Microsoft account) | Not supported
-| Application                            | Not supported
+| Delegated (work or school account)     | AppCatalog.ReadWrite.All 
+| Delegated (personal Microsoft account) | Not supported.
+| Application                            | Not supported.
 
 #### Request headers
 | Header        | Value           | Required
@@ -16,7 +18,7 @@ One of the following permissions is required to call this API. Only Global Admin
 | Authorization | Bearer {token}  | ✓
 
 #### Request Body
-- None.
+None.
 
 #### Response
 ```
@@ -61,7 +63,7 @@ Content-Type: application/json
   ]
 }
 ```
-The response is a list of [TeamsCatalogApp](#teamscatalogapp).
+The response is a list of [teamsCatalogApp](#teamscatalogapp) objects.
 
 #### Usage Tips
 This endpoint allows a filter to be used on any of the fields of the [TeamsCatalogApp](../resources/teamscatalogapp.md) object in order to shorten the list of results (as seen in the example above). The allowed filter operations are: Equal, Not-Equal, And, Or, Not. 
