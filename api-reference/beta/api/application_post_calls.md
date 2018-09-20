@@ -35,6 +35,8 @@ In the request body, supply a JSON representation of a [call](../resources/call.
 ## Response
 If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.
 
+## Examples
+
 ### Create peer to peer VOIP call with service hosted media
 
 >**Note:** This call needs the Calls.Initiate.All permission.
@@ -202,7 +204,7 @@ Content-Type: application/json
 }
 ```
 
-#### Create peer to peer VOIP call with application hosted media
+### Create peer to peer VOIP call with application hosted media
 
 > Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.
 
@@ -253,7 +255,7 @@ Content-Type: application/json
 }
 ```
 
-#### Create group call with service hosted media
+### Create group call with service hosted media
 
 >**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.
 
@@ -319,7 +321,7 @@ Content-Type: application/json
 }
 ```
 
-#### Join private meeting with service hosted media
+### Join private meeting with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCalls.All permission.
 
@@ -375,7 +377,7 @@ Content-Type: application/json
 }
 ```
 
-#### Join channel meeting with service hosted media
+### Join channel meeting with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCalls.All permission.
 
@@ -432,7 +434,7 @@ Content-Type: application/json
 }
 ```
 
-#### Join channel meeting as a guest with service hosted media
+### Join channel meeting as a guest with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.
 
