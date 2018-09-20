@@ -18,7 +18,7 @@ ms.author: solsen
 In this section, you can find API documentation for the resources that are available for integration with Dynamics 365 Business Central.
 
 |For Resource Type|See|
-|-----------------|---|
+|:-----------------|:---|
 |item resource type|[item](../resources/dynamics_item.md)|
 |itemCategories resource type|[itemCategories](../resources/dynamics_itemcategories.md)|
 |customer resource type|[customer](../resources/dynamics_customer.md)|
