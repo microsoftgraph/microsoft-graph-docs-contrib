@@ -53,7 +53,7 @@ If you need to add and subsequently update custom data, you can [store the data 
 
   - [Creating and sending messages](outlook-create-send-messages.md)
   - Ways to [organize messages](outlook-organize-messages.md)
-  - How to [share message folders](outlook-share-messages-folders.md)
+  - How to [get shared messages](outlook-share-messages-folders.md)
 
 - Find out more about [using the mail API](../api-reference/v1.0/resources/mail_api_overview.md) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.
 
