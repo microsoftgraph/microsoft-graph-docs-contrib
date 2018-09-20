@@ -1,4 +1,4 @@
-﻿# Working with Calls in Microsoft Graph
+﻿# Working with calls in Microsoft Graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -24,13 +24,13 @@ Calling APIs may be used directly by the **service media** bot.  In these cases,
 
 [Graph Calling SDK](https://graphcallingsdk-docs.azurewebsites.net/index.html) is provided to simplify the creation of bots. The SDK provides functionality to manage the states of the resources in memory and to pull in bot developers' media stack. The Media Extension allows the bot developers to host the media locally and gain access to the low level audio-video sockets.
 
-# Bot Service
+# Bot service
 - Register your bot in the [Bot Services](https://docs.microsoft.com/en-us/bot-framework/bot-service-quickstart) in azure portal and save the Microsoft AppId and Password as entered in it.
 - Add the Skype channel and the settings required for that. You would select your media type to be `Local Media - Real Time Media` in the settings. You also provide a webhook where we would contact you for the incoming Call notifications.
 
 ## Permissions
 
-## Registration and Provisioning
+## Registration and provisioning
 Please contact [Graph Platform Champs](mailto:sbsplatchamps@microsoft.com) with your business reason, bot application id and the list of `tenant ids` that your bot would be accessing for provisioning. This is a temporary flow before the [Application Roles](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/app-roles) in Azure is ready.
 
 # Calls
