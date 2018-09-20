@@ -8,8 +8,8 @@
 		<Item text="Versioning and support" url="/en-us/concepts/versioning_and_support" />
 		<Item text="Terms of use" url="https://developer.microsoft.com/en-us/graph/terms-of-use" IsExternal="true" />
 	</Item>
-	<Item text="Microsoft Graph Data Connect" url="/en-us/concepts/data-connect-overview" />
   </Item>
+  <Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-overview" />
 
   <Item Label="LEARN" url="" />
   <Item text="Users" url="/en-us/concepts/azuread-users-concept-overview" />
@@ -29,14 +29,14 @@
   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
   <Item text="Files" ProdTag="OneDrive" url="/en-us/concepts/onedrive-concept-overview" />
-  <Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/concepts/dynamics-business-central-concept-overview" />
+  <Item text="Financials (preview)" ProdTag="Dynamics 365 Business Central" url="/en-us/concepts/dynamics-business-central-concept-overview" />
   <Item text="Identity and access" ProdTag="Azure AD" url="/en-us/concepts/azuread-identity-access-management-concept-overview" />
   <Item text="Mail" ProdTag="Outlook" url="/en-us/concepts/outlook-mail-concept-overview" >
 	  <Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
 	  <Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
 	  <Item text="Share message folders" url="/en-us/concepts/outlook-share-messages-folders" />
   </Item>
-  <Item text="Microsoft Graph Data Connect" url="/en-us/concepts/data-connect-concept-overview" >
+  <Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-concept-overview" >
 	<Item text="Get started" url="/en-us/concepts/data-connect-get-started" />
   </Item>
   <Item text="Notes" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
