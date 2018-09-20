@@ -8,8 +8,8 @@
 		<Item text="Versioning and support" url="/en-us/concepts/versioning_and_support" />
 		<Item text="Terms of use" url="https://developer.microsoft.com/en-us/graph/terms-of-use" IsExternal="true" />
 	</Item>
-	<Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-overview" />
   </Item>
+  <Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-overview" />
 
   <Item Label="LEARN" url="" />
   <Item text="Users" url="/en-us/concepts/azuread-users-concept-overview" />
