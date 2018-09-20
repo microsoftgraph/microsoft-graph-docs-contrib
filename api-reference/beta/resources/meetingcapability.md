@@ -8,7 +8,7 @@ Contains the capabilities of a meeting
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| allowAnonymousUsersToDialOut | Boolean | Indicates whether anonymous users dialout is allowed in a meeting |
+| allowAnonymousUsersToDialOut | Boolean | Indicates whether anonymous users dialout is allowed in a meeting. |
 | autoAdmittedUsers | String | Possible values are: `everyoneInCompany`, `everyone`. |
 
 ## JSON representation
