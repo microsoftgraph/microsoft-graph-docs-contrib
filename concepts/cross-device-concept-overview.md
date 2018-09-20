@@ -20,6 +20,13 @@ Notifications are one of the most effective and direct ways to communicate to an
 
 With the Microsoft Graph notifications API, you can deliver notifications in a human-centric, instead of a device-centric way. You can target a user to send notifications to, and rely on the Microsoft Graph notifications framework to deliver the notifications to each endpoint the user is signed in on. Cross-device notification management is made easy with the Microsoft Graph notifications API as well, so you can sync notifications across users' devices, and reduce the amount of redundancy and interruption for your users. 
 
+## API reference
+Looking for the API reference to enable cross-device experiences?
+
+- [API for cross-device experiences in Microsoft Graph v1.0](../api-reference/v1.0/resources/project_rome_overview.md)
+- [API for cross-device experiences in Microsoft Graph beta](../api-reference/beta/resources/project_rome_overview.md)
+
+
 ## Next steps
 
 - [Use the Microsoft Graph API to enable cross-device experiences](../api-reference/v1.0/resources/cross-device-reference-overview.md)

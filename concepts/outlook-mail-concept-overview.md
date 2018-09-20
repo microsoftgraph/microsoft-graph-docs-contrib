@@ -45,6 +45,12 @@ Often times apps have to store their data in an external data store and entail o
 
 If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility_overview.md#open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility_overview.md#schema-extensions) discoverable and shareable. 
 
+## API reference
+Looking for the API reference for this service?
+
+- [Outlook mail API in Microsoft Graph v1.0](../api-reference/v1.0/resources/mail_api_overview.md)
+- [Outlook mail API in Microsoft Graph beta](../api-reference/beta/resources/mail_api_overview.md)
+
 
 ## Next steps
 
