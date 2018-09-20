@@ -319,7 +319,7 @@ Content-Type: application/json
 }
 ```
 
-#### Join Private Meeting with service hosted media
+#### Join private meeting with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCalls.All permission.
 
@@ -375,7 +375,7 @@ Content-Type: application/json
 }
 ```
 
-#### Join Channel Meeting with service hosted media
+#### Join channel meeting with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCalls.All permission.
 
@@ -432,7 +432,7 @@ Content-Type: application/json
 }
 ```
 
-#### Join Channel Meeting as a guest with service hosted media
+#### Join channel meeting as a guest with service hosted media
 
 >**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.
 
