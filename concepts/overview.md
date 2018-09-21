@@ -59,9 +59,34 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 |   GET items trending around me |	[`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
 |   GET my notes |	[`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
+## Access Microsoft Graph at scale
+
+Microsoft Graph Data Connect (preview) enables bulk - rather than the traditional transactional - access to Office 365 data. This enables intelligent feature development using Azure tools. You can use Microsoft Graph Data Connect to build apps that:
+
+- Find you the closest expert on a topic to you in your organization 
+- Automate knowledge base creation
+- Analyze meeting requests to provide insights into conference room utilization
+- Detect fraud with productivity and communication data
+
+## When should I use Microsoft Graph Data Connect?
+
+Microsoft Graph Data Connect provides a new way for you to interact with the data that's available through Microsoft Graph APIs. In addition to providing scalable access to Office 365 data, Microsoft Graph Data Connect also provides a unique set of capabilities that streamline the building of intelligent applications, all within the Microsoft cloud.
+
+|**Feature**| **Microsoft Graph API** | **Microsoft Graph Data Connect** |
+|:----------|:------------------------|:--------------------------------------|
+| **Access scope** | Single user or entire tenant | Many users or groups |
+| **Access pattern** | Real time | Recurrent schedule |
+| **Data operations** | Operates on data master | Operates on a cache of the data |
+| **Data protection** | Data is protected while in Microsoft 365 | Data protection is extended to the cache of data in your Azure subscription |
+| **User consent** | Self<br>Resource types | None |
+| **Admin consent** | Entire organization<br>Resource types | Select groups of users<br>Resource types and properties<br>Excludes users |
+| **Access tools** | RESTful web queries | Azure Data Factory |
+
+For more information about Microsoft Graph Data Connect, see [Microsoft Graph Data Connect](../concepts/data-connect-overview.md). To get started, see [Overview of Microsoft Graph Data Connect](../concepts/data-connect-concept-overview.md). 
+
 ## Next steps
 
-- Check out some [featured scenarios](../concepts/featured_scenarios.md).
+- Check out some [featured scenarios](https://developer.microsoft.com/en-us/graph/examples).
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 

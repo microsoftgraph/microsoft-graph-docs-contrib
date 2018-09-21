@@ -30,7 +30,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications. Manages access to resources and data. | [Azure AD identity and access management overview](../concepts/azuread-identity-access-management-concept-overview.md)  |
+| Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications. Manages access to resources and data. Gives customers access to sign-in and account risk data in Azure AD.| [Azure AD identity and access management overview](../concepts/azuread-identity-access-management-concept-overview.md)  |
 
 
 ## Productivity
@@ -75,8 +75,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Security integration (preview) | Azure AD Identity Protection, Azure Security Center | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](../concepts/security-concept-overview.md) |
-| Identity protection (preview) | Azure AD | Gives access to sign-in and account risk data for users in Azure AD. | [Security in Microsoft Graph](../concepts/security-concept-overview.md)  |
+| Security integration (preview) | Azure AD Identity Protection, Azure Information Protection, Azure Security Center, Microsoft Cloud Application Security, Windows Defender Advanced Threat Protection, and more | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](../concepts/security-concept-overview.md) |
 
 
 
@@ -106,6 +105,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
 | Customer booking (preview) | Microsoft Bookings | Targets small businesses to enable their customers to book services directly on the web or Facebook. Lets business operators manage customer preferences, services and pricing, staff lists and schedules, and other common business information. | [Microsoft Bookings API overview](../concepts/booking-concept-overview.md) |
+| Financials (preview) | Dynamics 365 Business Central | Enables management of financial data, automation and securing of the supply chain, sales management and improved customer service, management of projects, and optimazation of operations with the all-in-one business management solution.| [Business Central API overview](../concepts/dynamics-business-central-concept-overview.md) |
 
 
 ## Next steps
