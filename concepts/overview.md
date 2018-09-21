@@ -5,7 +5,7 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Micros
 You can use the Microsoft Graph API to build apps for organizations and consumers that interact with the data of millions of users. With Microsoft Graph, you can connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
 
 ## What's in the graph?
-Microsoft Graph exposes APIs for:
+Microsoft Graph exposes REST APIs and client libraries to access data on the following:
 
 - Azure Active Directory
 - Office 365 services: SharePoint, OneDrive, Outlook/Exchange, Microsoft Teams, OneNote, Planner, and Excel
@@ -61,7 +61,7 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 
 ## Access Microsoft Graph at scale
 
-Microsoft Graph Data Connect enables bulk - rather than the traditional transactional - access to Office 365 data. This enables intelligent feature development using Azure tools. You can use Microsoft Graph Data Connect to build apps that:
+Microsoft Graph Data Connect enables bulk - rather than the traditional transactional - access to Office 365 data. With the bulk Office 365 data, you can use Azure tools to build intelligent apps that:
 
 - Find you the closest expert on a topic to you in your organization 
 - Automate knowledge base creation
