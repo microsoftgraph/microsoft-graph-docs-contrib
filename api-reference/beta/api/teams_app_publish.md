@@ -20,7 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## Request body
 Teams Zip Manifest Payload. 
-For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
+For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+You can't create an app for an organization that has the same manifest ID as another app in that organization.
 
 ## Response
 ```
@@ -63,8 +64,4 @@ Content-Type: application/json
 ```
 The response is a [teamsCatalogApp](#teamscatalogapp).
 
-## Usage tips
-Information for creating a Teams app manifest package can be found [here](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
 
-## Known limitations
-You can't create an app for an organization that has the same manifest ID as another app in that organization.
