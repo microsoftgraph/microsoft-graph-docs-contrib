@@ -1,4 +1,4 @@
-#### Description
+# List the published apps from the Teams app catalog
 List apps from the Microsoft Teams app catalog. This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
 
 #### Permissions
@@ -7,15 +7,15 @@ One of the following permissions is required to call this API. To learn more, in
 >**Note:** Only global administrators can call this API.
 
 | Permission Type                        | Permissions (from least to most privileged)
-| ----------------------------------     | -------------
+|:----------------------------------     |:-------------
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All 
 | Delegated (personal Microsoft account) | Not supported.
 | Application                            | Not supported.
 
 #### Request headers
-| Header        | Value           | Required
-| --------------| --------------  | --------
-| Authorization | Bearer {token}  | ✓
+| Header        | Value           
+| --------------| --------------  
+| Authorization | Bearer {token}. Required.  
 
 #### Request body
 None.
@@ -65,9 +65,9 @@ Content-Type: application/json
 ```
 The response is a list of [teamsCatalogApp](#teamscatalogapp) objects.
 
-#### Usage Tips
+#### Usage tips
 This endpoint allows a filter to be used on any of the fields of the [TeamsCatalogApp](../resources/teamscatalogapp.md) object in order to shorten the list of results (as seen in the example above). The allowed filter operations are: Equal, Not-Equal, And, Or, Not. 
 
-#### Known Limitations
+#### Known limitations
 One cannot use filter operations that are not allowed, such as Greater-Than.
 
