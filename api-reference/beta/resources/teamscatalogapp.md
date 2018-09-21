@@ -1,6 +1,7 @@
-
 # teamsCatalogApp resource type
+
 Represents an app in the Microsoft Teams app catalog.
+Users can see these apps inside Microsoft Teams Store, and these apps can be installed into [teams](team.md) using [Add app to team](../api/teams_apps_add.md).
 
 ## Methods
 
@@ -12,13 +13,13 @@ Represents an app in the Microsoft Teams app catalog.
 |[Remove a published app](../api/teams_apps_remove_published.md) | None | Remove a published app from your organization's app catalog.|
 
 ## Properties
-| Property            | Type     | Description
-|:------------------- |:-------- |:-----------
-| id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
-| developerProvidedId | string   | The ID of the catalog provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
-| name                | string   | The name of the catalog app provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
-| version             | string   | The version of the catalog app provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
-| distributionMethod  | enum     | The method of distribution for the catalog app: `Organization`, `Store`.
+| Property            | Type     | Description |
+|:------------------- |:-------- |:----------- |
+| id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| developerProvidedId | string   | The ID of the catalog provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| name                | string   | The name of the catalog app provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| version             | string   | The version of the catalog app provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| distributionMethod  | enum     | The method of distribution for the catalog app: `Organization`, `Store`. |
 
 ## JSON representation
 ```json
