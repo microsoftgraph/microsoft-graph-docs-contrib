@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## Request body
 None.
 
->**Note:** You can use any of the following filter operations: Equal, not-equal, and, or, and not.
+>**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamscatalogapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
 ## Response
 If successful, this method returns a `200 OK` response code and list of [teamsCatalogApp](../resources/teamscatalogapp.md) objects in the response body.
