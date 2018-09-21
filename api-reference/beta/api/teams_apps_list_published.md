@@ -38,7 +38,7 @@ Content-Type: application/json
   ]
 }
 ```
-The response is a list of [teamsCatalogApp](../resources/teamscatalogapp.md) objects.
+The response is a list of [teamsCatalogApp](../resources/teamscatalogapp.md) objects. You can filter on any of the fields of the [teamsCatalogApp] object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
 ## Example
 ### Request
@@ -65,9 +65,4 @@ Content-Type: application/json
 ```
 The response is a list of [teamsCatalogApp](#teamscatalogapp) objects.
 
-## Usage tips
-This endpoint allows a filter to be used on any of the fields of the [teamsCatalogApp](../resources/teamscatalogapp.md) object in order to shorten the list of results (as seen in the example above). The allowed filter operations are: Equal, Not-Equal, And, Or, Not. 
-
-## Known limitations
-One cannot use filter operations that are not allowed, such as Greater-Than.
 
