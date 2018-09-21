@@ -77,6 +77,7 @@ Replace the values in the JSON file as follows:
 - **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
 - **“days”:** is the number of days you want to retain messages in your event hub.
 
+
 4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
 
 5. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
