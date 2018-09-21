@@ -20,25 +20,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## Request body
 None.
 
-## Response
-```
-HTTP/1.1 200 OK
-Content-Type: application/json
+>**Note:** You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
-{
-  "value": [
-    {
-      "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
-      "developerProvidedId": "f31b1263-ba99-435a-a679-911d24850d7c",
-      "name": "Test App",
-      "version": "1.0.1",
-      "distributionMethod":"Organization"
-    },
-    ...
-  ]
-}
-```
-The response is a list of [teamsCatalogApp](../resources/teamscatalogapp.md) objects. You can filter on any of the fields of the [teamsCatalogApp] object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
+## Response
+If successful, this method returns a 200 OK response code and list of [teamsCatalogApp](../resources/teamscatalogapp.md) objects in the response body.
 
 ## Example
 ### Request
@@ -63,6 +48,3 @@ Content-Type: application/json
   ]
 }
 ```
-The response is a list of [teamsCatalogApp](#teamscatalogapp) objects.
-
-
