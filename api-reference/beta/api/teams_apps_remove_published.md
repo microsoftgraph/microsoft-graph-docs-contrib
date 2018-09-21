@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## Request Body
 None.
 
-Use the ID returned from the [List app catalog](./teams_apps_list_published.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./teams_apps_list_published.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 ```
