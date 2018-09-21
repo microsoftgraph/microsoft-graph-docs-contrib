@@ -12,11 +12,11 @@ Complete the following steps to enable Microsoft Graph Data Connect in your envi
 3.	Select **Mail-enabled security**.
 4.	Enter a name for the group (for example, Privileged Access Management approver group).
 5.	Enter an email address for the group (for example, approvers@contoso.com).
-6.	Choose **Save**.
+6.	Choose **Add**.
 7.	Go to [Home > Services & add-ins](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) in the Microsoft 365 admin center.
 8.	Open **Microsoft Graph Data Connect Preview**.
 9.	Flip the switch to **On**.
-10.	Under **Group of users to make approval decisions**, enter a mail-enabled security group (for example, approvers@contoso.com).
+10.	Under **Group of users to make approval decisions**, enter an alias for a mail-enabled security group (for example, approvers for approvers@contoso.com).
 11.	Choose **Save**.
 12.	Wait until the settings update confirmation message is displayed: Microsoft Graph Data Connect Preview settings has been updated.
 
