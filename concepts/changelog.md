@@ -6,6 +6,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2018
 
+### Calls and online meetings API
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Change          | Beta        | The [application](../api-reference/beta/resources/application) resource was updated to add a calls collection. |
+| Change          | Beta        | The [operation](../api-reference/beta/resources/operation) resource was updated to support long-running calls and meetings APIs. |
+| Addition        | Beta        | Added the [call](../api-reference/beta/resources/call.md) resource for managing audio/video calls (initially, in Microsoft Teams), including APIs for [creating calls](../api-reference/beta/api/application_post_calls), [retrieving a a call](../api-reference/beta/api/call_get), [deleting (hanging up) a call](../api-reference/beta/api/call_delete), [answering a call](../api-reference/beta/api/call_answer), [rejecting a call](../api-reference/beta/api/call_reject), [redirecting a call](../api-reference/beta/api/call_redirect), and [transferring a call](../api-reference/beta/api/call_transfer). We've also added APIs to support [IVR scenarios](../api-reference/beta/resources/calls-api-ivr-overview): [playing a prompt](../api-reference/beta/api/call_playprompt), [recording a call](../api-reference/beta/api/call_record), [cancel media processing](../api-reference/beta/api/call_cancelmediaprocessing), and [subscribing to touch tone notifications](../api-reference/beta/api/call_subscribetotone). |
+| Addition        | Beta        | Added the [participant](../api-reference/beta/resources/call.md) resource and APIs for managing the participants in audio/video calls and meetings, including [retrieving a participant object](../api-reference/beta/api/participant_get), [configuring the audio mixer for a participant](../api-reference/beta/api/participant_configuremixer), muting [one](../api-reference/beta/api/participant_mute) or [all](../api-reference/beta/api/participant_muteall) of the participants, [retrieving a list of the participants](../api-reference/beta/api/call_list_participants) in a call/meeting, and [inviting participants](../api-reference/beta/api/participant_invite) to a call/meeting. |
+| Addition        | Beta        | Added APIs for applications to manage and participate in calls and meetings, including the ability to [share content](../api-reference/beta/api/call_changescreensharingrole), [mute and unmute itself](../api-reference/beta/api/call_unmute), and [update the metadata associated with a call](../api-reference/beta/api/call_updatemetadata). |
+| Addition        | Beta        | Added the [audio routing group](../api-reference/beta/resources/audioroutinggroup.md) resource and APIs for managing private audio routes between participants in a multiparty conversation, including [creating audio routing groups](../api-reference/beta/api/call_post_audioroutinggroups), [retrieving a list of them](../api-reference/beta/api/audioroutinggroup_get), and [updating](../api-reference/beta/api/audioroutinggroup_update) and [deleting](../api-reference/beta/api/audioroutinggroup_delete) them. |
+| Addition        | Beta        | Added the [online meeting](../api-reference/beta/resources/audioroutinggroup.md) resource and APIs for managing Microsoft Teams online meetings. Initially, there is only one API for online meetings, to [retrieve an online meeting object](../api-reference/beta/api/onlinemeeting_get). A related resource for the [audio conference information](../api-reference/beta/resources/audioconferencing.md) associated with a meeting (e.g. dial-in URL, passcodes, and phone numbers) was also added. |
+| Addition        | Beta        | Many of the calls and meetings APIs take time to complete, so resources for these long-running operations were added: [calling-specific operations](../api-reference/beta/resources/commsoperation.md), [playing audio prompts](../api-reference/beta/resources/playpromptoperation.md), and [recording](../api-reference/beta/resources/recordoperation.md).  |
+
 ### Microsoft Teams APIs
 
 | **Change type** | **Version**   | **Description**                          |
@@ -16,12 +29,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |
 |Addition|beta|Added application permissions support to [PUT /groups/{id}/team](../api-reference/beta/api/team_put_teams.md). |
 |Addition|beta|Added application permissions support to [PATCH /teams/{id}](../api-reference/beta/api/team_update.md). |
+|Addition|beta|Added API for [tabs](../api-reference/beta/resources/teamsTab.md).|
 
 ### Outlook mail
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0 and beta | The **internetMessageHeaders** property of the [message](../api-reference/v1.0/resources/message.md) entity is now writeable on message creation. |
+
 
 ### Project Rome notifications API
 
