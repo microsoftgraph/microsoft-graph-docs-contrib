@@ -34,6 +34,11 @@ You can use the typical CRUD operations for an Outlook [contact](../api-referenc
 - You can keep the app local store synchronized by subscribing to [change notifications](../api-reference/v1.0/resources/webhooks.md) and [tracking changes](delta_query_overview.md) to contacts and contact folders.
 - You can extend app storage in a contact instance as an [open extension](extensibility_overview.md#open-extensions), or add strongly typed custom data to the contact schema as a [schema extension](extensibility_overview.md#schema-extensions).
 
+## API reference
+Looking for the API reference for this service?
+
+- [Outlook contacts API in Microsoft Graph v1.0](../api-reference/v1.0/resources/contact.md)
+- [Outlook contacts API in Microsoft Graph beta](../api-reference/beta/resources/contact.md)
 
 ## Next steps
 

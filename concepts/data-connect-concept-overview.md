@@ -16,8 +16,7 @@ Rich applications require access to large amounts of data, often from many users
 ## API reference
 Looking for the API reference for this service?
 
-Data Connect lets you bring Office 365 data to Azure and create Azure managed applications to work with the data. Proceed with [Use Azure analytics and Office 365 data to build intelligent applications](https://github.com/OfficeDev/MS-Graph-Data-Connect/wiki).
-
+[Set up](data-connect-get-started.md) Data Connect, and proceed with [Use Azure analytics and Office 365 data to build intelligent applications](https://github.com/OfficeDev/MS-Graph-Data-Connect/wiki).
 
 
 ## Next steps

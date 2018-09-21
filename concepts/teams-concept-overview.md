@@ -41,6 +41,11 @@ Use Microsoft Graph to create a new virtual team when a new business issue arise
 
 When the business issue is resolved and you no longer need the virtual team, use the Microsoft Teams API to tear down the team. If you know the maximum duration of the virtual team when you create it, set an [Office 365 group expiration policy](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) for the team that automatically removes the team according to the policy.
 
+## API reference
+Looking for the API reference for this service?
+
+See the [Teams API in Microsoft Graph beta](../api-reference/beta/resources/teams_api_overview.md).
+
 ## Next steps
 
 - Learn how to [use the Microsoft Teams API](../api-reference/beta/resources/teams_api_overview.md).
