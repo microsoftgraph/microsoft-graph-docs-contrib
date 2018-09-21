@@ -14,10 +14,10 @@ Represents an app in the Microsoft Teams app catalog.
 ## Properties
 | Property            | Type     | Description
 |:------------------- |:-------- |:-----------
-| id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Teams zip app package](#teams-application-manifest)).
-| developerProvidedId | string   | The ID of the catalog provided by the app developer in the [Teams zip app package](#teams-application-manifest).
-| name                | string   | The name of the catalog app provided by the app developer in the [Teams zip app package](#teams-application-manifest).
-| version             | string   | The version of the catalog app provided by the app developer in the [Teams zip app package](#teams-application-manifest).
+| id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
+| developerProvidedId | string   | The ID of the catalog provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
+| name                | string   | The name of the catalog app provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
+| version             | string   | The version of the catalog app provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package).
 | distributionMethod  | enum     | The method of distribution for the catalog app: `Organization`, `Store`.
 
 ## JSON representation
