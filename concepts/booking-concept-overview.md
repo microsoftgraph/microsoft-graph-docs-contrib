@@ -18,6 +18,12 @@ Completing an appointment automatically verifies if the customer is already on t
 ### Integrate with productivity and team collaboration services in Microsoft Graph
 Using the same unified Microsoft Graph REST endpoint, you can access the Bookings API and [integrate with the best of Microsoft 365](overview-major-services.md) to support richer scenarios. For example, you can use [Excel](excel-concept-overview.md#generate-reports-and-analyze-results) to track and analyze business financial data, and generate professional reports, or use [SharePoint](sharepoint-concept-overview.md) or [Microsoft Teams](teams-concept-overview.md) to enhance team collaboration.
 
+## API reference
+Looking for the API reference for this service?
+
+See [Microsoft Bookings API in Microsoft Graph beta](../api-reference/beta/resources/booking-api-overview.md).
+
+
 ## Next steps
 
 Learn more about:

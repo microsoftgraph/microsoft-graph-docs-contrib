@@ -58,6 +58,12 @@ You can get secure access to resources by activating administrative privileges o
 
 You can configure access reviews of group memberships and application access. [Access reviews](../api-reference/beta/resources/accessreviews_root.md) is featured in Azure AD Premium P2.
 
+## API reference
+Looking for the API reference for this service?
+
+- [Azure AD identity and access management API in Microsoft Graph v1.0](../api-reference/v1.0/resources/azure_ad_overview.md)
+- [Azure AD identity and access management API in Microsoft Graph beta](../api-reference/beta/resources/azure_ad_overview.md)
+
 ## Next steps
 
 - Find out how to [Use the Azure AD REST APIs](../api-reference/v1.0/resources/azure_ad_overview.md).
