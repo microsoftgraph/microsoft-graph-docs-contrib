@@ -31,5 +31,11 @@ Microsoft Graph provides access to your financial reports. Connect BI tools and 
 ## Authorization
 Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs. All APIs require the `Authorization: Bearer {access-token}` request header. For more information about authorization, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview).
 
+## API reference
+Looking for the API reference for this service?
+
+See [Dynamics 365 Business Central API in Microsoft Graph beta](../api-reference/beta/api/dynamics_graph_reference.md).
+
+
 ## Next steps
-Find out more about the financials API and use cases supported in Microsoft Graph.
+Find out more about the [Business Central API and use cases](../api-reference/beta/api/dynamics_graph_reference.md) supported in Microsoft Graph.
