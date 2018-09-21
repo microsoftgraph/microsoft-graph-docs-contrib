@@ -10,7 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/dynamics_graph_reference.md)
+| Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/dynamics_graph_reference.md)
 
 ### Calls and online meetings API
 
