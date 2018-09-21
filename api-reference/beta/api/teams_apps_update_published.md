@@ -1,33 +1,35 @@
-### Description
+# Update apps published to your organization's app catalog
 Update an app previously published to the Microsoft Teams app catalog. This API specifically updates an app published to your organization's app catalog (the tenant app catalog). To publish to your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
 
-#### Permissions
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
 
 >**Note:** Only Global administrators can call this API. 
 
 | Permission Type                        | Permissions (from least to most privileged)
-| ---------------                        | ---------------------------
+|:---------------                        |:---------------------------
 | Delegated (work or school account)     | AppCatalog.ReadWrite.All 
 | Delegated (personal Microsoft account) | Not supported
 | Application                            | Not supported
 
-#### Request headers
-| Header        | Value           | Required
-| ---------     | --------------  | --------
-| Authorization | Bearer {token}  | ✓
+## Request headers
+| Header        | Value           | 
+|:---------     |:--------------  | 
+| Authorization | Bearer {token}. Required.  | 
 | Content-Type  | application/zip |
 
-#### Request Body
+## Request body
 Teams Zip Manifest Payload: For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
-#### Response
+>**Note:** Use the ID returned from the [List published apps](./list_lob_apps.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
+
+## Response
 ```
 HTTP/1.1 204 No Content
 ```
 
-#### Example
-##### Request
+## Example
+### Request
 ```
 PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
@@ -38,10 +40,10 @@ Content-length: 244
 For Teams application zip file [see Create app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
 
-##### Response
+### Response
 ```
 HTTP/1.1 204 No Content
 ```
 
-#### Usage Tips
+## Usage Tips
 Use the ID returned from the [List app catalog](./list_lob_apps.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
