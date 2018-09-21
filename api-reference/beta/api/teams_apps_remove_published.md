@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------     |:-------------- | 
 | Authorization | Bearer {token}. Required. | 
 
-## Request Body
+## Request body
 None.
 
 >**Note:** Use the ID returned from the [List published apps](./teams_apps_list_published.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
@@ -36,5 +36,3 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ```
 HTTP/1.1 204 No Content
 ```
-## Usage tips
-Use the ID returned from the [List apps published to the catalog](./teams_apps_list_published.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
