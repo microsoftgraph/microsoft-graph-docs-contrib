@@ -13,7 +13,7 @@ The following are the differences at the API level between teams and groups:
 - Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](../resources/channel.md), [chatThread](../resources/chatthread.md), and [chatMessage](../resources/chatmessage.md) resources.
 - Group conversations are available only to Office 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources. 
 - The [List joined teams](../api/user_list_joinedteams.md) method applies only to Microsoft Teams.
-- [Calling and online meeting APIs](../api-reference/beta/resources/calls-api-overview) apply only to Microsoft Teams.
+- [Calling and online meeting APIs](./calls-api-overview.md) apply only to Microsoft Teams.
 - See also the [known issues](../../../concepts/known_issues.md) for these APIs.
 
 >**Note:** If you use the groups API in a [Microsoft Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/#apps-in-microsoft-teams) rather than in a standalone app - for example as part of a tab or bot running in Microsoft Teams - follow the guidance in the article [Using Microsoft Graph in your Microsoft Teams pages](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/microsoft-graph).
