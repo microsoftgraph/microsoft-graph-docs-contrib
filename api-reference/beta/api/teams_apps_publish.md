@@ -24,19 +24,7 @@ For Teams application zip file [see Create an app package](https://docs.microsof
 You can't create an app for an organization that has the same manifest ID as another app in that organization.
 
 ## Response
-```
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
-  "developerProvidedId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
-  "name": "Test App",
-  "version": "1.0.0",
-  "distributionMethod": "Tenant"
-}
-```
-The response is a [teamsCatalogApp](../resources/teamscatalogapp.md).
+If successful, this method returns a `200 OK` response code and a [teamsCatalogApp](../resources/teamscatalogapp.md) object.
 
 ## Example
 ### Request
@@ -62,6 +50,6 @@ Content-Type: application/json
   "distributionMethod": "Tenant"
 }
 ```
-The response is a [teamsCatalogApp](#teamscatalogapp).
+
 
 
