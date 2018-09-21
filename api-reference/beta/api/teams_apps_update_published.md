@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## Request body
 Teams Zip Manifest Payload: For Teams application zip file [see Create an app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
->**Note:** Use the ID returned from the [List published apps](./list_lob_apps.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./teams_apps_list_published.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 ```
@@ -44,6 +44,3 @@ For Teams application zip file [see Create app package](https://docs.microsoft.c
 ```
 HTTP/1.1 204 No Content
 ```
-
-## Usage Tips
-Use the ID returned from the [List app catalog](./list_lob_apps.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
