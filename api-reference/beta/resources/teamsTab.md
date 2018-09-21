@@ -17,8 +17,6 @@ A teamsTab is a [tab](../resources/teamsTab.md) that's pinned (attached) to a [c
 
 ## Properties
 
-##### Properties
-
 |Property|Type|Required|ReadOnly|Description|
 |-|-|-|-|-|
 |  `id`              |   `string`                  |✓|✓|  Identifier that uniquely identifies a specific instance of a channel tab     |
