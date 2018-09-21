@@ -16,20 +16,21 @@ Websites, services, and native platform applications are not run within the Micr
 
 ![Call the Microsoft Teams API from tabs, bots, websites, and services](images/TeamsAppEndpoints.png)
 
-These collaboration tools include Microsoft Graph-enabled tab or bot apps running inside Microsoft Teams. You can also call Microsoft Graph outside of a Microsoft Teams app, such as from a website or a web service. If you've already enabled your website for Microsoft Graph, you can use that work for Microsoft Teams by using the [Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) to create a tab app that uses the existing website code.
+These collaboration tools include Microsoft Graph-enabled tabs or bots running inside Microsoft Teams apps. You can also call Microsoft Graph outside of a Microsoft Teams app, such as from a website or a web service. If you've already enabled your website for Microsoft Graph, you can use that work for Microsoft Teams by using the [Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) to [create a tab](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) that uses the existing website code.
 
-If a Microsoft Teams tab or bot app is not the ideal way to complete your scenario, choose one of the following app types.
+Microsoft Teams APIs can enhance apps inside and outside of Teams:
 
 |App type|Scenario description|
 |:-------|:-------------------|
 |Tabs|Surface enhanced content within Microsoft Teams.|
-|Connectors|Post enhanced updates to channels.|
+|Connectors|Post updates from external services to channels.|
 |Actionable messaging|Add enhanced interaction to your connector cards.|
 |Websites|Surface enhanced content in your web pages.|
 |Bots|Help users get tasks done in conversations.|
 |Activity feed|Engage users via feed notifications.|
-|Messaging extensions|Allow users to query and share enhanced cards in conversations.|
+|Messaging extensions|Allow users to query and share information in conversations.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
+|Calling and online meetings|Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
 ### Create multiple teams and channels
 
@@ -47,4 +48,5 @@ When the business issue is resolved and you no longer need the virtual team, use
 - Drill down on the methods, properties, and relationships of the [team](../api-reference/beta/resources/team.md), [channel](../api-reference/beta/resources/channel.md), and [group](../api-reference/v1.0/resources/group.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 - Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
+- Explore the [calling and online meeting APIs](../api-reference/beta/resources/calls-api-overview).
 - Get a jump-start with [sample code](https://github.com/OfficeDev/microsoft-teams-sample-graph).
