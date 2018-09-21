@@ -4,7 +4,7 @@ You can use the Microsoft Graph Security API to connect Microsoft security produ
 
 ![security_overview_diagram_1.png](./images/security_overview_diagram_1.png)
 
-For information about authorization, see [Authorization and the security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions_reference.md#security-permissions).
+For information about authorization, see [Authorization and the Microsoft Graph Security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions_reference.md#security-permissions).
 
 ## Why use the Microsoft Graph Security API?
 
