@@ -9,7 +9,7 @@
 		<Item text="Terms of use" url="https://developer.microsoft.com/en-us/graph/terms-of-use" IsExternal="true" />
 	</Item>
   </Item>
-  <Item text="What is Microsoft Graph Data Connect (preview)?" url="/en-us/concepts/data-connect-overview" />
+  <Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-overview" />
 
   <Item Label="LEARN" url="" />
   <Item text="Users" url="/en-us/concepts/azuread-users-concept-overview" />
@@ -27,6 +27,9 @@
 	  <Item text="Build cross-device apps" url="/en-us/concepts/cross-device-app-configuration" />
   </Item>
   <Item text="Customer booking (preview)" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
+  <Item text="Data access (preview)" ProdTag="Microsoft Graph Data Connect" url="/en-us/concepts/data-connect-concept-overview" >
+	<Item text="Get started" url="/en-us/concepts/data-connect-get-started" />
+  </Item>
   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
   <Item text="Files" ProdTag="OneDrive" url="/en-us/concepts/onedrive-concept-overview" />
@@ -36,9 +39,6 @@
 	  <Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
 	  <Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
 	  <Item text="Get shared messages" url="/en-us/concepts/outlook-share-messages-folders" />
-  </Item>
-  <Item text="Microsoft Graph Data Connect (preview)" url="/en-us/concepts/data-connect-concept-overview" >
-	<Item text="Get started" url="/en-us/concepts/data-connect-get-started" />
   </Item>
   <Item text="Notes" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
     <Item text="Get OneNote content" url="/en-us/concepts/onenote-get-content" />
@@ -5386,7 +5386,7 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/api/dynamics_graph_reference" >
+  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/resources/dynamics_graph_reference" >
 		<Item text="Account" url="/en-us/api-reference/beta/resources/dynamics_account">
 			<Item text="Get account" url="/en-us/api-reference/beta/api/dynamics_account_get"/>
 		  </Item>
@@ -6222,7 +6222,7 @@
         <Item text="Update progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_update" />
       </Item>
     </Item>
-    <Item text="Teamwork" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+    <Item text="Teamwork (preview)" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="Team" url="/en-us/api-reference/beta/resources/team" >
 		<Item text="Create team" url="/en-us/api-reference/beta/api/team_put_teams" />
 		<Item text="Get team" url="/en-us/api-reference/beta/api/team_get" />
@@ -6263,6 +6263,11 @@
 		<Item text="Get channel message" url="/en-us/api-reference/beta/api/channel_get_message" />
 		<Item text="List message replies" url="/en-us/api-reference/beta/api/channel_list_messagereplies" />
 		<Item text="Get message reply" url="/en-us/api-reference/beta/api/channel_get_messagereply" />
+		<Item text="List tabs" url="/en-us/api-reference/beta/api/channels_tabs_list" />
+		<Item text="Get tab" url="/en-us/api-reference/beta/api/channels_tabs_get" />
+		<Item text="Update tab" url="/en-us/api-reference/beta/api/channels_tabs_update" />
+		<Item text="Delete tab" url="/en-us/api-reference/beta/api/channels_tabs_delete" />
+		<Item text="Add tab" url="/en-us/api-reference/beta/api/channels_tabs_add" />
       </Item>
       <Item text="Chat thread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="chatthread API, Microsoft Graph API, chatthread API" SEODescription="">
         <Item text="Create chat thread" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Create chat thread, Microsoft Graph API, Microsoft Teams chat API" SEODescription="Use this API to create a new chat thread." />
@@ -6271,6 +6276,10 @@
 		<Item text="List apps" url="/en-us/api-reference/beta/api/teams_apps_list" />
 		<Item text="Add app" url="/en-us/api-reference/beta/api/teams_apps_add" />
 		<Item text="Delete app" url="/en-us/api-reference/beta/api/teams_apps_delete" />
+		<Item text="Publish app" url="/en-us/api-reference/beta/api/teams_apps_publish" />
+		<Item text="List published apps" url="/en-us/api-reference/beta/api/teams_apps_list_published" />
+		<Item text="Update published app" url="/en-us/api-reference/beta/api/teams_apps_update_published" />
+		<Item text="Remove published app" url="/en-us/api-reference/beta/api/teams_apps_remove_published" />
 	  </Item>
 	  <Item text="Chat message" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="chat message API, Microsoft Graph API, chat message API" SEODescription="">
       </Item>

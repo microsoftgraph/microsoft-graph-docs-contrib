@@ -2,17 +2,17 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-A teamsTab is a [tab](../resources/teamsTab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
+A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [channel](channel.md) within a [team](team.md). 
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List tabs](../api/channels_tabs_list.md) | [teamsTab](teamsTab.md) | Lists tabs pinned to a channel.|
-|[Get tab](../api/channels_tabs_get.md) | [teamsTab](teamsTab.md) | Reads a tab pinned to a channel.|
-|[Add tab](../api/channels_tabs_add.md) | [teamsTab](teamsTab.md) | Adds (pins) a tab to a channel.|
+|[List tabs](../api/channels_tabs_list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
+|[Get tab](../api/channels_tabs_get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
+|[Add tab](../api/channels_tabs_add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
 |[Remove tab](../api/channels_tabs_delete.md) | | Removes (unpins) a tab from a channel.|
-|[Update tab](../api/channels_tabs_update.md) | [teamsTab](teamsTab.md) | Updates the tab properties.|
+|[Update tab](../api/channels_tabs_update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 
 ## Properties
@@ -25,7 +25,7 @@ A teamsTab is a [tab](../resources/teamsTab.md) that's pinned (attached) to a [c
 |  `sortOrderIndex`  |   `int`                     |✓| |  Index of the order used for sorting tabs     |
 |  `chatMessage`   |   [`chatMessage`](chatmessage.md)                  |✓|✓|  The chat message associated with the tab. This is a navigation property.     |
 |  `webUrl`          |   `string`                  |✓|✓|  Deep link url of the tab instance     |
-|  `configuration`        |   [`teamsTabConfiguration`](teamsTabConfiguration.md) ||  |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
+|  `configuration`        |   [`teamsTabConfiguration`](teamstabconfiguration.md) ||  |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
 
 ## JSON representation
 

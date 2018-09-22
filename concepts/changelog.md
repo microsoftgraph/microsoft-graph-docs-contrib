@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2018
 
+### Dynamics 365 Business Central API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/dynamics_graph_reference.md)
+
 ### Calls and online meetings API
 
 | **Change type** | **Version** | **Description**                          |
@@ -23,13 +29,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Deletion|beta| Removed isBlocks and installedState properties from [teamsApp](../api-reference/beta/resources/teamsapp.md).|
-|Change | beta | Announced that the context property on [teamsApp](../api-reference/beta/resources/teamsapp.md) will be renamed.|
+|Addition|beta|Added API for [Tabs](../api-reference/beta/resources/teamstab.md).|
+|Addition|beta|Added API for [publishing apps for your organization](../api-reference/beta/resources/teamscatalogapp.md).|
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md). |
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |
 |Addition|beta|Added application permissions support to [PUT /groups/{id}/team](../api-reference/beta/api/team_put_teams.md). |
 |Addition|beta|Added application permissions support to [PATCH /teams/{id}](../api-reference/beta/api/team_update.md). |
-|Addition|beta|Added API for [tabs](../api-reference/beta/resources/teamsTab.md).|
+|Deletion|beta| Removed isBlocks and installedState properties from [teamsApp](../api-reference/beta/resources/teamsapp.md).|
+|Change| beta | The context property on [teamsApp](../api-reference/beta/resources/teamsapp.md) has been renamed to distributionMethod.|
 
 ### Outlook mail
 
@@ -49,7 +56,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added the Secure Score APIs to the [security API](../api-reference/beta/resources/security-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (and related entities)<br/>[List secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[List secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
+| Addition        | Beta       | Added the Secure Score APIs to the [security API](../api-reference/beta/resources/securescore-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (and related entities)<br/>[List secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[List secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
+
 
 ## August 2018
 
