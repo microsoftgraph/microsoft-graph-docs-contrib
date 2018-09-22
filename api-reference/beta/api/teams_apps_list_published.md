@@ -1,4 +1,4 @@
-# List the published apps from the Teams app catalog
+# List the published apps from the Microsoft Teams app catalog
 
 List [apps](../api-reference/beta/resources/teamscatalogapp.md) from the Microsoft Teams app catalog. 
 This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
