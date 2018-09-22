@@ -19,6 +19,7 @@ Represents an application. Any application that outsources authentication to Azu
 |[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
 |[Create call](../api/application_post_calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
+|[Create onlineMeeting](../api/application_post_onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Create a new onlineMeeting by posting to the onlineMeetings collection.|
 
 ## Properties
 
@@ -43,7 +44,7 @@ Represents an application. Any application that outsources authentication to Azu
 |publicClient|[publicClient](publicclient.md)| Specifies settings for installed clients such as desktop or mobile devices. |
 |publisherDomain| String | The verified publisher domain for the application. Read-only.|
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
-| signInAudience | String | Specifies what microsoft accounts are supported for the current application. Supported values are:<ul><li>**AzureADMyOrg**: Users with a Microsoft work or school account in my organizationâ€™s Azure AD tenant (i.e. single tenant)</li><li>**AzureADMultipleOrgs**: Users with a Microsoft work or school account in any organizationâ€™s Azure AD tenant (i.e. multi-tenant)</li> <li>**AzureADandPersonalMicrosoftAccount**: Users with a personal Microsoft account, or a work or school account in any organizationâ€™s Azure AD tenant</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+| signInAudience | String | Specifies what microsoft accounts are supported for the current application. Supported values are:<ul><li>**AzureADMyOrg**: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>**AzureADMultipleOrgs**: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>**AzureADandPersonalMicrosoftAccount**: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |tags|String collection| Custom strings that can be used to categorize and identify the application. |
 |web|[web](web.md)| Specifies settings for a web application. |
 
