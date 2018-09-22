@@ -68,6 +68,7 @@ Security alerts are highly privileged data typically viewable only by security r
       }
     }
     ``` 
+    
 Replace the values in the JSON file as follows:
 
 * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
