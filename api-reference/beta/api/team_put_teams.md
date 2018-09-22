@@ -4,6 +4,8 @@
 
 Create a new [team](../resources/team.md) under a [group](../resources/group.md).
 
+In order to create a team, the group must have a least one owner.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
