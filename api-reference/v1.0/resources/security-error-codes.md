@@ -1,8 +1,8 @@
-# Security API error responses
+# Microsoft Graph Security API error responses
 
-Errors in the security API in Microsoft Graph are returned using standard HTTP status codes and are delivered by way of a warning header.
+Errors in the Microsoft Graph Security API in Microsoft Graph are returned using standard HTTP status codes and are delivered by way of a warning header.
 
-The security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the security API, it will send back a warning header in the following format:
+The Microsoft Graph Security API is a federated service that receives multiple responses from all data providers. When an HTTP error is received by the Microsoft Graph Security API, it will send back a warning header in the following format:
 <!-- { "blockType": "ignored" } -->
 
 ```http
