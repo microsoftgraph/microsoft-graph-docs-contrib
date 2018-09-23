@@ -6,9 +6,8 @@
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| identity | [identitySet](identityset.md) |  |
-| sipProxyAddress | String |  |
-| upn | String |  |
+| identity | [identitySet](identityset.md) | identity information of the participant |
+| upn | String |  the user principal name of the participant |
 
 ## JSON representation
 
@@ -24,7 +23,6 @@ Here is a JSON representation of the resource.
 ```json
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
-  "sipProxyAddress": "String",
   "upn": "String"
 }
 ```
