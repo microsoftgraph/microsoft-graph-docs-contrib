@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The Microsoft Graph calls and online meeting APIs add a new dimension to how your apps and services can interact with users by enabling voice and video features.  The Calls APIs enable you to create calls and receive calls from users and applications in Microsoft Teams.  These APIs allow developers to build a service application (bot) that can act as a participant in a call or meeting.
+The Microsoft Graph calls and online meetings API adds a new dimension to how your apps and services can interact with users by enabling voice and video features.  The Calls APIs enable you to create calls and receive calls from users and applications in Microsoft Teams.  These APIs allow developers to build a service application (bot) that can act as a participant in a call or meeting.
 
 ## Call Types
 
