@@ -28,10 +28,10 @@ POST /applications/{id}/onlineMeetings
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [onlineMeeting](../resources/onlinemeeting.md) object.
+In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Response
-If successful, this method returns `201, Created` response code and [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+If successful, this method returns `201, Created` response code an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
 ## Example
 
