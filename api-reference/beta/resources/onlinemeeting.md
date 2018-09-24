@@ -22,7 +22,7 @@ Captures information about the meeting, including the join URL, the attendees li
 | endTime                   | DateTime                                               | End time of the meeting. |
 | entryExitAnnouncement     | Boolean                                                | The attendance announcements status for the online meeting. When attendance announcements are enabled, the online meeting will announce the names of the participantswho join the meeting through audio. |
 | expirationTime            | DateTime                                               | The absolute Coordinated Universal Time (UTC) date and time after which the online meeting can be deleted.The day and time must be between one year before, and ten years after, the current date and time on the server. |
-| id                        | String                                                 | The ID associated with the online meeting. Used in GET HTTP Request as the ID. Read-only. Server generated. |
+| id                        | String                                                 | The ID associated with the online meeting. Used in a GET HTTP request as the ID. Read-only. Server generated. |
 | isCancelled               | Boolean                                                | Whether the meeting has been canceled. |
 | joinUrl                   | String                                                 | The URL that is used when the online meeting is joined from the web. |
 | meetingType               | String                                                 | Possible values are: `meetNow`, `calendar`, `recurring`, `broadcast` |
