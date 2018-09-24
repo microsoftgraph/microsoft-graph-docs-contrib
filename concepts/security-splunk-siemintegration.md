@@ -81,9 +81,10 @@ Security alerts are highly privileged data typically viewable only by security r
   <li><b>“days”:</b> is the number of days you want to retain messages in your event hub.</li>
   </ul>
 
-4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
-
-5. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
+  <ol start="4"> 
+    <li>Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file <b>AzMonConfig.json.</b></li>
+    <li>Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.</li>
+  </ol>
 
     ``` shell
     ARMClient.exe login
