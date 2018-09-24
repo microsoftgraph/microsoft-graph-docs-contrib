@@ -6,8 +6,8 @@
 
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
-| identity | [identitySet](identityset.md) | identity information of the participant |
-| upn | String |  the user principal name of the participant |
+| identity | [identitySet](identityset.md) | Identity information of the participant. |
+| upn | String |  The user principal name of the participant. |
 
 ## JSON representation
 
