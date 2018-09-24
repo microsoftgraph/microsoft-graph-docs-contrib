@@ -172,7 +172,7 @@ None.
 * _Calls.JoinGroupCallasGuest.All_: Join a group call or online meeting from the application, but the application only has guest privileges in the meeting (`POST /beta/app/calls`).
 * _Calls.AccessMedia.All_: Create or Join a call and the app gets direct access to participant media streams in the call (`POST /beta/app/calls`).
 
-> **Note:** For request examples, see to [Create Call](../api-reference/beta/api/application_post_calls.md).
+> **Note:** For request examples, see to [Create call](../api-reference/beta/api/application_post_calls.md).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
