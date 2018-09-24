@@ -111,20 +111,4 @@ Security alerts are highly privileged data typically viewable only by security r
   
  > **Note:** Microsoft Azure integration with IBM QRadar supports the events listed in [Microsoft Azure DSM specifications](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_microsoft_azure_DSM_specs.html). We are currently working with IBM QRadar to add complete support for Microsoft Graph Security API alerts. Currently, you will be able to receive the Microsoft Security Graph API alerts and view them in your IBM QRadar console. You can use [DSM editor](https://www.ibm.com/support/knowledgecenter/SS42VS_7.2.8/com.ibm.qradar.doc/c_qradar_adm_dsm_ed_overview.html) to enable parsing Microsoft Security Graph API alerts.  
 
-<!-- {
-  "suppressions": [
-      "Error: /concepts/security-qradar-siemintegration.md:
-      Unable to parse code block metadata.
-  Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
-     at Newtonsoft.Json.JsonTextReader.ParseValue()
-     at Newtonsoft.Json.JsonTextReader.ReadInternal()
-     at Newtonsoft.Json.JsonTextReader.Read()
-     at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
-     at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
-     at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
-     at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
-     at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
-     at ApiDoctor.Validation.CodeBlockAnnotation.ParseMetadata(String json, Block codeBlock, DocFile sourceFile)
-     at ApiDoctor.Validation.DocFile.ParseCodeBlock(Block metadata, Block code, IssueLogger issues)"
-  ],
-}-->
+
