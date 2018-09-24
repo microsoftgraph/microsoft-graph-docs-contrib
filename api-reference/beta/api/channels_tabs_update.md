@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update the properties of the specified [tab](../resources/teamsTab.md).
+Update the properties of the specified [tab](../resources/teamstab.md).
 This can be used to configure the content of the tab.
 
 ## Permissions
@@ -26,7 +26,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of [tab](../resources/teamsTab.md) object.
+In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.
 
 ## Response
 

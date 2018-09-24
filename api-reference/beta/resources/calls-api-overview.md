@@ -26,7 +26,7 @@ You can use the calls and online meetings API directly via the **service media**
 
 You can also use the [Microsoft Graph calls and online meetings SDK](https://graphcallingsdk-docs.azurewebsites.net/index.html) to simplify bot creation. The SDK provides functionality to manage the states of the resources in memory and to pull in you media stack. The media extension enables you to host the media locally and gain access to the low-level audio-video sockets.
 
-# Bot service
+## Bot service
 
 You can register your bot in the [Bot Service](https://docs.microsoft.com/en-us/bot-framework/bot-service-quickstart) in the Azure portal and save the Microsoft app ID and password. You can also add the Skype channel and the required settings. To do that, in the settings select **Local Media - Real Time Media** for the media type. You can also provide a webhook that send incoming call notifications.
 
