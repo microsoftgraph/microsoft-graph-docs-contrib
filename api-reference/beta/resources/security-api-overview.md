@@ -24,6 +24,7 @@ Microsoft Graph Security-integrated solutions will receive alerts from the follo
 - Windows Defender Advanced Threat Protection
 - Microsoft Intune (private preview)
 - Office 365 (coming soon)
+- Azure Advanced Threat Protection (coming soon)
 - Partner solutions, such as Palo Alto Networks App Framework
 
 > **Note:** New providers are continuously onboarding to the Microsoft Graph Security ecosystem.
