@@ -1,6 +1,6 @@
 # Publish apps to your organization's app catalog
 
-Publish an [app](../api-reference/beta/resources/teamscatalogapp.md) to the Microsoft Teams apps catalog. 
+Publish an [app](../resources/teamscatalogapp.md) to the Microsoft Teams apps catalog. 
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog). To publish to your organization's app catalog, specify `Organization` as the `distributionMethod` in the  [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
 
 ## Permissions

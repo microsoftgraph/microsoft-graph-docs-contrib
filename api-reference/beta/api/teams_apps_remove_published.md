@@ -1,6 +1,6 @@
 # Remove an app from your organization's app catalog
 
-Remove the [app](../api-reference/beta/resources/teamscatalogapp.md) from your organization's app catalog (the tenant app catalog). 
+Remove the [app](../resources/teamscatalogapp.md) from your organization's app catalog (the tenant app catalog). 
 To remove your app from your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
 
 ## Permissions
