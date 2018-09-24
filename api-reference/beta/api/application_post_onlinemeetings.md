@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Calling this API creates a meeting on behalf of a user specified in the request body.
+Creates a meeting on behalf of a user specified in the request body.
 
 > **Note**: The meeting does not show on the user's calendar.
 
@@ -31,7 +31,7 @@ POST /applications/{id}/onlineMeetings
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ## Response
-If successful, this method returns `201, Created` response code an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 
 ## Example
 
@@ -63,11 +63,11 @@ Content-Length: 1553
 }
 ```
 
-In the request body, supply a JSON representation of [onlineMeeting](../resources/onlinemeeting.md) object.
+In the request body, supply a JSON representation of the [onlineMeeting](../resources/onlinemeeting.md) object.
 
 ##### Response
 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
