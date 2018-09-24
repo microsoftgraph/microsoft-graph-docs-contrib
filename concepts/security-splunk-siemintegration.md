@@ -203,3 +203,22 @@ Or you can create a dashboard as a timeline chart:
  ![splunk_search_timeline](../concepts/images/splunk_search_timeline.png)
 
 You can follow [Splunk Search & Report tutorial](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
+
+<!-- {
+  "suppressions": [
+      "Error: /concepts/security-splunk-siemintegration.md:
+      Unable to parse code block metadata.
+  Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: <. Path '', line 0, position 0.
+     at Newtonsoft.Json.JsonTextReader.ParseValue()
+     at Newtonsoft.Json.JsonTextReader.ReadInternal()
+     at Newtonsoft.Json.JsonTextReader.Read()
+     at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+     at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+     at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+     at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+     at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+     at ApiDoctor.Validation.CodeBlockAnnotation.ParseMetadata(String json, Block codeBlock, DocFile sourceFile)
+     at ApiDoctor.Validation.DocFile.ParseCodeBlock(Block metadata, Block code, IssueLogger issues)"
+  ],
+  "tocPath": ""
+}-->
