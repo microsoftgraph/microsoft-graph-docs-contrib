@@ -41,19 +41,6 @@ No request body is required.
 
 This method returns a [DriveItem](../resources/driveitem.md) for the item being followed.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "id": "1312abc!1231",
-  "name": "March Proposal.docx",
-  "size": 19121,
-  "lastModifiedDateTime": "2017-12-12T10:40:59Z"
-}
-```
 ## Example
 
 This example follows an item identified by `{item-id}`.
@@ -71,3 +58,17 @@ POST /me/drive/items/{item-id}/follow
   "section": "documentation",
   "tocPath": "Items/Follow"
 } -->
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "1312abc!1231",
+  "name": "March Proposal.docx",
+  "size": 19121,
+  "lastModifiedDateTime": "2017-12-12T10:40:59Z"
+}
+```
