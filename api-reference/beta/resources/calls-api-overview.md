@@ -8,11 +8,12 @@ The Microsoft Graph calls and online meetings API adds a new dimension to how yo
 
 Calls are categorized as peer-to-peer or multiparty calls. A user can initiate a peer-to-peer call with your bot or invite your bot into an existing multiparty conference. No permissions are necessary when the user is inviting the bot to a peer-to-peer call. For your bot to participate in a multiparty call, the bot needs to have permission from the tenant administrator to join a group call.
 
-![An image showing peer-to-peer and multiparty calls](../../../concepts/images/call-types.png)
+![An image showing peer-to-peer and multiparty calls](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-types.png)
 
 If your bot is creating the call, it needs to have either the initiate or the initiate-group-call permission. Your bot has the option to create a peer-to-peer call or a multiparty call. 
-* For a peer-to-peer call, the bot needs to specify only one target and no meeting coordinates. 
-* If your bot initiates a call with multiple participants, an ad hoc meeting is set up behind the scenes and everyone joins that conference. If meeting coordinates are specified, a multiparty call is set up even if there is only one target.
+
+- For a peer-to-peer call, the bot needs to specify only one target and no meeting coordinates. 
+- If your bot initiates a call with multiple participants, an ad hoc meeting is set up behind the scenes and everyone joins that conference. If meeting coordinates are specified, a multiparty call is set up even if there is only one target.
 
 A call might start as peer-to-peer and escalate to multiparty. A conference is provisioned automatically and the media is retargeted to the conference. Your bot can initiate escalation by inviting others, provided your bot has the initiate-group-call permission. If escalation is initiated by another participant and the bot does not have join-group-call permission, your bot is dropped from the call.
 
@@ -32,7 +33,7 @@ To receive an incoming call, you need to register the calling bot. When the bot 
 
 The bot can redirect the call to another user or a bot. The bot can also redirect it to a user's voicemail.
 
-![Image showing a bot redirecting a call to a voice mail](../../../concepts/images/call-handling.png)
+![Image showing a bot redirecting a call to a voice mail](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-handling.png)
 
 > **Important:** Redirecting or making outbound calls to PSTN is currently not supported.
 
