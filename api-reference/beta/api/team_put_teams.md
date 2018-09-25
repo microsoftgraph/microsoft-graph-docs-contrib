@@ -6,6 +6,9 @@ Create a new [team](../resources/team.md) under a [group](../resources/group.md)
 
 In order to create a team, the group must have a least one owner.
 
+If the group has been around less than 24 hours, it's possible for the Create Team call to fail with a 404 result code due to replication delays. 
+The recommended pattern is to retry Create Team 3 times with a 10 second delay between calls.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
