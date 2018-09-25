@@ -11,6 +11,7 @@ Calls are categorized as peer-to-peer or multiparty calls. A user can initiate a
 ![An image showing peer-to-peer and multiparty calls](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-types.png)
 
 If your bot is creating the call, it needs to have either the initiate or the initiate-group-call permission. Your bot has the option to create a peer-to-peer call or a multiparty call. 
+
 - For a peer-to-peer call, the bot needs to specify only one target and no meeting coordinates. 
 - If your bot initiates a call with multiple participants, an ad hoc meeting is set up behind the scenes and everyone joins that conference. If meeting coordinates are specified, a multiparty call is set up even if there is only one target.
 
