@@ -17,7 +17,7 @@ To learn more, including how to choose permissions, see [Permissions](../../../c
 |:---------------------------------------|:-------------------------------------------
 | Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
 | Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
-| Application                            | n/a
+| Application                            | Not supported.
 
 ## HTTP request
 
