@@ -848,8 +848,8 @@ Security permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|
 | _Sites.Read.All_        | Read items in all site collections | Allows the app to read documents and list items in all site collections without a signed in user. | Yes |
 | _Sites.ReadWrite.All_   | Read and write items in all site collections | Allows the app to create, read, update, and delete documents and list items in all site collections without a signed in user. | Yes |
-| _Sites.Manage.All_      | Have full control of all site collections | Allows the app to manage and create lists, documents, and list items in all site collections without a signed-in user.  | Yes  |
-| _Sites.FullControl.All_ | Create, edit, and delete items and lists in all site collections | Allows the app to have full control to SharePoint sites in all site collections without a signed-in user.  | Yes  |
+| _Sites.Manage.All_      | Create, edit, and delete items and lists in all site collections | Allows the app to manage and create lists, documents, and list items in all site collections without a signed-in user.  | Yes  |
+| _Sites.FullControl.All_ | Have full control of all site collections | Allows the app to have full control to SharePoint sites in all site collections without a signed-in user.  | Yes  |
 
 
 ### Remarks
