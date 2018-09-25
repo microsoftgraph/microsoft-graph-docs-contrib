@@ -85,7 +85,7 @@ The following example controls the behavior if the filename is already taken, an
 | item                 | driveItemUploadableProperties | Data about the file being uploaded
 | deferCommit          | Boolean                       | If set to true, final creation of the file in the destination will require an explicit request. Only on OneDrive for Business.
 
-## Item Properties
+## Item properties
 
 | Property             | Type               | Description
 |:---------------------|:-------------------|:---------------------------------
