@@ -30,7 +30,7 @@ GET /me/drive/following
 
 ## Response
 
-This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.
+This method returns a collection of [driveItem](../resources/driveitem.md) resources for items which the owner of the drive is following.
 If no items were found, an empty collection is returned.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
