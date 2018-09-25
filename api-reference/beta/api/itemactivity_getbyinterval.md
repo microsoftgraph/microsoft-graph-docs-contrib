@@ -10,8 +10,8 @@ title: Get item activity stats by interval
 
 Get [itemActivityStats][] for the activities that took place under this resource within the specified time interval.
 
-**Note:** ItemActivities and Analytics are in a limited Preview and not yet available to all tenants.
-Analytics aggregates may not be available for all action types.
+**Note:** ItemActivities and Analytics are in a limited preview and are not yet available to all tenants.
+Analytics aggregates might not be available for all action types.
 
 [itemActivityStats]: ../resources/itemActivityStat.md
 
@@ -39,9 +39,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | Name           | Value              | Description
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | string (timestamp) | The start time over which to aggregate activities
-| endDateTime    | string (timestamp) | The end time over which to aggregate activities
-| interval       | string             | The aggregation interval
+| startDateTime  | string (timestamp) | The start time over which to aggregate activities.
+| endDateTime    | string (timestamp) | The end time over which to aggregate activities.
+| interval       | string             | The aggregation interval.
 
 ## Example
 
