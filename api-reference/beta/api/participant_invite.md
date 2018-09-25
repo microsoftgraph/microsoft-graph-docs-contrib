@@ -132,7 +132,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.notifications"
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
 {
@@ -162,7 +162,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.notifications"
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
 {
@@ -240,7 +240,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "isCollection": true
 }-->
 ``` json
@@ -336,7 +336,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "isCollection": true
 }-->
 ``` json
@@ -366,7 +366,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "isCollection": true
 }-->
 ``` json
@@ -445,7 +445,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "isCollection": true
 }-->
 ``` json
@@ -476,7 +476,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "isCollection": true
 }-->
 ``` json
@@ -546,7 +546,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "isCollection": true
 }-->
 ``` json
@@ -577,7 +577,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "isCollection": true
 }-->
 ``` json
@@ -651,7 +651,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "isCollection": true
 }-->
 ``` json
@@ -682,7 +682,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.notification",
+  "@odata.type": "microsoft.graph.commsNotification",
   "isCollection": true
 }-->
 ``` json

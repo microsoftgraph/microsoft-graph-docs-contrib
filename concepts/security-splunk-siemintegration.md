@@ -52,6 +52,9 @@ Security alerts are highly privileged data typically viewable only by security r
 2. To configure Azure Monitor using the Azure Resource Manager API, obtain the [ARMClient](https://github.com/projectkudu/ARMClient) tool. This tool will be used to send REST API calls to the Azure portal from a command line.
 
 3. Prepare a diagnostic setting request JSON file like the following:
+<!-- {
+  "blockType": "ignored"
+} -->
 
     ``` json
     {
@@ -73,17 +76,13 @@ Security alerts are highly privileged data typically viewable only by security r
     }
     ```
 
-    ```markdown
-    Replace the values in the JSON file as follows:
-
-    * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
-    * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
-    * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
-    * **“days”:** is the number of days you want to retain messages in your event hub.
-    ```
+  Replace the values in the JSON file as follows:
+  * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
+  * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
+  * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
+  * **“days”:** is the number of days you want to retain messages in your event hub.
 
 4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
-
 5. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
 
     ``` shell
@@ -203,3 +202,4 @@ Or you can create a dashboard as a timeline chart:
  ![splunk_search_timeline](../concepts/images/splunk_search_timeline.png)
 
 You can follow [Splunk Search & Report tutorial](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
+
