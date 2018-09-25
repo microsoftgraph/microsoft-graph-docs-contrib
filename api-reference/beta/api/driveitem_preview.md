@@ -83,16 +83,16 @@ The following values are allowed for the **viewer** parameter.
 | `onedrive` | Use the OneDrive previewer app to render the file.
 | `office`   | Use the WAC (Office online) to render the file. Only valid for Office documents.
 
-### Chrome vs Chromeless
+### Chrome vs chromeless
 
-If 'chromeless' is true, the preview will be a bare rendering of the file.
+If `chromeless` is true, the preview will be a bare rendering of the file.
 Otherwise, there may be additional toolbars/buttons displayed for interacting with the document/view.
 
-### View/Edit
+### View/eedit
 
-If 'allowEdit' is true, the document can be modified by user interaction with the embedded preview.
+If `allowEdit` is true, the document can be modified by user interaction with the embedded preview.
 This capability may not be available for all preview apps or file types.
 
-### Page/Zoom
+### Page/zoom
 
-The 'page' and 'zoom' options may not be available for all preview apps, but will be applied if the preview app supports it.
+The `page` and `zoom` options might not be available for all preview apps, but will be applied if the preview app supports it.
