@@ -52,6 +52,9 @@ Security alerts are highly privileged data typically viewable only by security r
 2. To configure Azure Monitor using the Azure Resource Manager API, obtain the [ARMClient](https://github.com/projectkudu/ARMClient) tool. This tool will be used to send REST API calls to the Azure portal from a command line.
 
 3. Prepare a diagnostic setting request JSON file like the following:
+<!-- {
+  "blockType": "ignored"
+} -->
 
     ``` json
     {
@@ -199,3 +202,4 @@ Or you can create a dashboard as a timeline chart:
  ![splunk_search_timeline](../concepts/images/splunk_search_timeline.png)
 
 You can follow [Splunk Search & Report tutorial](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
+
