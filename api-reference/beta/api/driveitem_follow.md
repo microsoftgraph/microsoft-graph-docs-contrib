@@ -9,6 +9,8 @@ title: Follow drive item
 
 Follow a [driveItem](../resources/driveitem.md).
 
+>**Note:** To unfollow an item, see [Unfollow Item](driveitem_unfollow.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -31,19 +33,9 @@ POST /sites/{site-id}/drive/items/{item-id}/follow
 POST /users/{user-id}/drive/items/{item-id}/follow
 ```
 
-### Request body
+## Request body
 
 No request body is required.
-
-## Example
-
-This example follows an item identified by `{item-id}`.
-
-<!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
-
-```http
-POST /me/drive/items/{item-id}/follow
-```
 
 ## Response
 
@@ -62,10 +54,15 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-12-12T10:40:59Z"
 }
 ```
+## Example
 
-### Remarks
+This example follows an item identified by `{item-id}`.
 
-To unfollow an item, see [Unfollow Item](driveitem_unfollow.md).
+<!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
+
+```http
+POST /me/drive/items/{item-id}/follow
+```
 
 <!-- {
   "type": "#page.annotation",
