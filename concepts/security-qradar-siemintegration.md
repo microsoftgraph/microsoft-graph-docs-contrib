@@ -49,11 +49,7 @@ Security alerts are highly privileged data typically viewable only by security r
 2. To configure Azure Monitor using the Azure Resource Manager API, obtain the [ARMClient](https://github.com/projectkudu/ARMClient) tool. This tool will be used to send REST API calls to the Azure portal from a command line.
 
 3. Prepare a diagnostic setting request JSON file like the following:
- <!-- {
-  "blockType": "ignored"
-} -->
- 
- ``` json
+    ``` json
     {
       "location": "",
       "properties": {
@@ -74,17 +70,15 @@ Security alerts are highly privileged data typically viewable only by security r
     ``` 
     
   Replace the values in the JSON file as follows:
-  <ul>
-  <li><b>SUBSCRIPTION_ID</b> is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.</li>
-  <li><b>RESOURCE_GROUP</b> is the resource group containing the event hub namespace where you will be sending security alerts from your organization.</li>
-  <li><b>EVENT_HUB_NAMESPACE</b> is the event hub namespace where you will be sending security alerts from your organization.</li>
-  <li><b>“days”:</b> is the number of days you want to retain messages in your event hub.</li>
-  </ul>
 
-  <ol start="4"> 
-    <li>Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file <b>AzMonConfig.json.</b></li>
-    <li>Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.</li>
-  </ol>
+  * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
+  * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
+  * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
+  * **“days”:** is the number of days you want to retain messages in your event hub.
+  &nbsp;
+4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
+
+5. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
 
     ``` shell
     ARMClient.exe login
@@ -110,5 +104,3 @@ Security alerts are highly privileged data typically viewable only by security r
 3. Finally, follow the steps in [Configuring QRadar to collect events from Microsoft Azure Event Hubs by using the Microsoft Azure Event Hubs protocol](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/t_logsource_microsoft_azure_event_hubs.html) to begin surfacing security alerts.
   
  > **Note:** Microsoft Azure integration with IBM QRadar supports the events listed in [Microsoft Azure DSM specifications](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_microsoft_azure_DSM_specs.html). We are currently working with IBM QRadar to add complete support for Microsoft Graph Security API alerts. Currently, you will be able to receive the Microsoft Security Graph API alerts and view them in your IBM QRadar console. You can use [DSM editor](https://www.ibm.com/support/knowledgecenter/SS42VS_7.2.8/com.ibm.qradar.doc/c_qradar_adm_dsm_ed_overview.html) to enable parsing Microsoft Security Graph API alerts.  
-
-
