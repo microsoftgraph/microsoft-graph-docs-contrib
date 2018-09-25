@@ -10,7 +10,7 @@ title: Download a previous version
 
 Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md). 
 
->**Note:** Obtaining the content of the current version is not supported. Instead, use the [driveItem content endpoint](driveitem_get_content.md).
+>**Note:** Getting the content of the current version is not supported. Instead, use the [driveItem content endpoint](driveitem_get_content.md).
 
 ## Permissions
 
@@ -48,7 +48,7 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 
 This example retrieves a version of a file in the current user's drive.
 
-### HTTP request
+### Request
 
 <!-- { "blockType": "request", "name": "get-version-contents", "scopes": "files.read", "tags": "service.graph" } -->
 
