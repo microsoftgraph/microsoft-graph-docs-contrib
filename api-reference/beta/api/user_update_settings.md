@@ -74,7 +74,7 @@ Content-length: 72
 }
 ```
 
-## Batch request
+#### Batch request
 
 It's also possible to opt-out multiple users from Delve and disable their contribution on content relevancy for the whole organization through a batch request.
 To learn more, see [JSON batching](https://developer.microsoft.com/en-us/graph/docs/concepts/json_batching).
