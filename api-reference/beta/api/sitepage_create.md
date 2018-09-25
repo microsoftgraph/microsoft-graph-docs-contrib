@@ -8,7 +8,7 @@ title: Create a new page in a SharePoint site
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [sitePage][] in the SitePages [list][] in a [site][].
+Create a new [sitePage][] in the sitePages [list][] in a [site][].
 
 ## Permissions
 
@@ -34,7 +34,7 @@ In the request body, supply a JSON representation of the [sitePage][] resource t
 
 ## Example
 
-Here is an example of how to create a new page.
+The following example shows how to create a new page.
 
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
