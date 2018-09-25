@@ -9,6 +9,8 @@ title: Unfollow drive item
 
 Unfollow a [driveItem](../resources/driveitem.md).
 
+>**Note:** To follow an item, see [Follow Item](driveitem_follow.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -28,19 +30,9 @@ DELETE /me/drive/following/{item-id}
 DELETE /users/{user-id}/drive/following/{item-id}
 ```
 
-### Request body
+## Request body
 
 No request body is required.
-
-## Example
-
-This example unfollows an item identified by `{item-id}`.
-
-<!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
-
-```http
-DELETE /me/drive/following/{item-id}
-```
 
 ## Response
 
@@ -52,9 +44,16 @@ If successful, the API call returns a `204 No Content`.
 HTTP/1.1 204 No Content
 ```
 
-### Remarks
+## Example
 
-To follow an item, see [Follow Item](driveitem_follow.md).
+This example unfollows an item identified by `{item-id}`.
+
+<!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
+
+```http
+DELETE /me/drive/following/{item-id}
+```
+
 
 <!-- {
   "type": "#page.annotation",
