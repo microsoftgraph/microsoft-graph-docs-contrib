@@ -33,13 +33,13 @@ The beta endpoint is faster -- under a minute in most cases, regardless of wheth
 | [Remove owner](../api/group_delete_owners.md)	| DELETE	| https://graph.microsoft.com/beta/groups/{id}/owners/{userId}/$ref |
 | [Update team](../api/team_update.md)	| PATCH     | https://graph.microsoft.com/beta/teams/{id} |
 
-Its recommended that when you add an owner, you also add that user as a member as well. 
-If a team has an owner who is not also a member, ownership and membership changes may not show up immediately in Microsoft Teams. 
-In addition, if you have an owner who is not also a member, different apps and APIs will handle that differently. 
-For example, Microsoft Teams will show teams that the user is either a member or an owner of, while the Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of. 
+We recommend that when you add an owner, you also add that user as a member. 
+If a team has an owner who is not also a member, ownership and membership changes might not show up immediately in Microsoft Teams. 
+In addition, different apps and APIs will handle that differently. 
+For example, Microsoft Teams will show teams that the user is either a member or an owner of, while the Microsoft Teams PowerShell cmdlets and the /me/joinedTeams API will only show teams the user is a member of. 
 To avoid confusion, add all owners to the members list as well. 
 
-Known issue: when DELETE /groups/{id}/owners is called, the user is also removed from the /groups/{id}/members list. The recommended workaround is to remove the user from both owners & members, then wait 10 seconds, then add them back to members.
+Known issue: when DELETE /groups/{id}/owners is called, the user is also removed from the /groups/{id}/members list. To work around this, we recommend that you remove the user from both owners and members, then wait 10 seconds, then add them back to members.
 
 When adding and removing members and owners, don't put braces { } around the ID.
 
