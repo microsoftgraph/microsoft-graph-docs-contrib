@@ -88,19 +88,23 @@ This resource supports:
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.|
+|assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the group. Read-only. Not nullable.|
 |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group.|
 |classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](directorySetting.md) value, based on the [template definition](directorySettingTemplate.md).|
 |createdDateTime|DateTimeOffset| Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 |description|String|An optional description for the group.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |groupTypes|String collection| Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property.|
+|hasMembersWithLicenseErrors|Boolean|true if the group has member or members with license error(s) from this group-based license assignment; otherwise, false. Read-only. Cannot view property. Only supports $filter.|
 |id|String|The unique identifier for the group. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isSubscribedByMail|Boolean|Default value is **true**. Indicates whether the current user is subscribed to receive email conversations.|
+|licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Read-only. Possible values: QueuedForProcessing, ProcessingInProgress and ProcessingComplete.|
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". Read-only. Supports $filter.|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.|
 |mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter.|
 |membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains "**DynamicMembership**"). For more information about the syntax of the membership rule, please refer to [Membership Rules syntax](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
 |membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are "On" or "Paused"|
+|membersWithLicenseErrors|[User](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Supports $filter.|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. |
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Read-only. |
@@ -170,18 +174,22 @@ The following is a JSON representation of the resource
 {
   "accessType": "string",
   "allowExternalSenders": false,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "autoSubscribeNewMembers": true,
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
+  "hasMembersWithLicenseErrors": "Boolean",
   "id": "string (identifier)",
   "isFavorite": true,  
   "isSubscribedByMail": true,
+  "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,
   "mailNickname": "string",
+  "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",

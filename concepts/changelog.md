@@ -4,6 +4,17 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## October 2018
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the **licenseAssignmentStates** property to the [User](../api-reference/beta/resources/user.md) entity for Group Based Licensing.|
+| Addition | Beta | Added the **licenseAssignmentState** resource for Group Based Licensing.|
+| Addition | Beta | Added the **assignedLicenses**, **assignedLicenses**, **assignedLicenses** and **assignedLicenses** properties to [Group](../api-reference/beta/resources/group.md) entity for Group Based Licensing.|
+
+
 ## September 2018
 
 ### Dynamics 365 Business Central API
