@@ -4,11 +4,11 @@ ms.author: rahmit
 ms.date: 03/15/2018
 title: List the pages in a site
 ---
-# List the pages in the SitePages list of a site
+# List the pages in the site pages list of a site
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get the collection of [sitePage][]s from the Site Pages [list][] in a site [site][].
+Get the collection of [sitePages][] from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination).
 
 [sitePage]: ../resources/sitePage.md
 [list]: ../resources/list.md
@@ -208,10 +208,6 @@ Content-type: application/json
     ]
 }
 ```
-
-## Remarks
-
-All pages in the site are returned (with pagination).
 
 <!-- {
   "type": "#page.annotation",
