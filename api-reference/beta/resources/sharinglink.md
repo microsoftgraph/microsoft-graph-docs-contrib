@@ -4,13 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
 ---
-# SharingLink resource type
+# sharingLink resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **SharingLink** resource groups link-related data items into a single structure.
+The **sharingLink** resource groups link-related data items into a single structure.
 
-If a [**Permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).
+If a [**permission**](permission.md) resource has a non-null **sharingLink** facet, the permission represents a sharing link (as opposed to permissions granted to a person or group).
 
 ## JSON representation
 
@@ -46,9 +46,9 @@ Here is a JSON representation of the resource.
 
 [Identity]: identity.md
 
-## Type options
+### Type options
 
-This table defines the possible values for the **type** property:
+The following table defines the possible values for the **type** property.
 
 | Value    | Role     | Description
 |:---------|:---------|:---------------------------------------------------------
@@ -56,7 +56,9 @@ This table defines the possible values for the **type** property:
 | `edit`   | `write`  | An edit sharing link, allowing read-write access.
 | `embed`  | `read`   | A view-only sharing link that can be used to embed content into a host webpage. Embed links are not available for OneDrive for Business or SharePoint.
 
-## Scope options
+### Scope options
+
+The following table defines the possible values for the **scope** property.
 
 | Value            | Description
 |:-----------------|:------------------------------------------------------------
