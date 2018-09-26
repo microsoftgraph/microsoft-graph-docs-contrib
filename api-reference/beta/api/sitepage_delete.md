@@ -45,17 +45,20 @@ DELETE /sites/{site-id}/pages/{page-id}
 Do not supply a request body with this method.
 <!-- TODO: should we provide a URL to recover/undelete the file, if one exists? -->
 
+## Response
+
+If successful, this call returns a `204 No Content` response to indicate that the resource was deleted and there was nothing to return.
+
 ## Example
 
 <!-- { "blockType": "request", "name": "delete-page", "scopes": "files.readwrite sites.readwrite.all" } -->
 
+##### Request
+
 ```http
 DELETE /sites/{site-id}/pages/{page-id}
 ```
-
-## Response
-
-If successful, this call returns a `204 No Content` response to indicate that the resource was deleted and there was nothing to return.
+##### Response
 
 <!-- { "blockType": "response" } -->
 
