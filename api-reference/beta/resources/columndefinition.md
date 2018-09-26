@@ -4,13 +4,13 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
 ---
-# ColumnDefinition resource
+# columnDefinition resource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 ## JSON representation
 
-Here is a JSON representation of a ColumnDefinition resource.
+Here is a JSON representation of a columnDefinition resource.
 
 <!--{
   "blockType": "resource",
@@ -76,8 +76,8 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 | **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
 | **text**          | [textColumn][]          | This column stores text values.
 
-Note: These properties correspond to SharePoint's [SPFieldType][] enumeration.
-While the most common field types are represented above, this beta API is still missing some.
+>**Note:** These properties correspond to SharePoint's [SPFieldType][] enumeration.
+While the most common field types are represented in the previous table, this beta API is still missing some.
 In those cases, none of the column type facets will be populated, and the column will only have its basic properties.
 
 ## Remarks
