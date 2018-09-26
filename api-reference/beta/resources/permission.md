@@ -92,7 +92,7 @@ You can use the [invite][] API to create a link that only works for specific peo
 
 Here are some examples of sharing links.
 
-### View Link
+### View link
 
 This view link provides read-only access to anyone with the link.
 
