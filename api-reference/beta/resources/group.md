@@ -98,7 +98,7 @@ This resource supports:
 |hasMembersWithLicenseErrors|Boolean|true if the group has member or members with license error(s) from this group-based license assignment; otherwise, false. Read-only. Cannot view property. Only supports $filter.|
 |id|String|The unique identifier for the group. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isSubscribedByMail|Boolean|Default value is **true**. Indicates whether the current user is subscribed to receive email conversations.|
-|licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Read-only. Possible values: QueuedForProcessing, ProcessingInProgress and ProcessingComplete.|
+|licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.|
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". Read-only. Supports $filter.|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.|
 |mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter.|
