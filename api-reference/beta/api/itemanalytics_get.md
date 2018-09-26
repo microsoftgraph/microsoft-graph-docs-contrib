@@ -4,7 +4,7 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: Get analytics
 ---
-# Get analytics (preview)
+# Get analytics
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
