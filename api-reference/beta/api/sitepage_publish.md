@@ -8,7 +8,7 @@ title: Publish Page
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Publish the latest version of a [sitePage][] resource, which makes the version of the page available to all users. If the page is checked out, check in the page and publish it.
+Publish the latest version of a [sitePage][] resource, which makes the version of the page available to all users. If the page is checked out, check in the page and publish it. If the page is checked out to the caller of this API, the page is automatically checked in and then published.
 
 [sitePage]: ../resources/sitePage.md
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /sites/{siteId}/pages/{pageId}/publish
 ```
 
-### Request body
+## Request body
 
 This message does not have a request body. Any request body sent will be ignored.
 
@@ -44,9 +44,6 @@ If successful, the API call returns a `204 No Content`.
 HTTP/1.1 204 No Content
 ```
 
-### Remarks
-
-If the page is checked out to caller of this API, the page is automatically checked in and then published.
 
 <!-- {
   "type": "#page.annotation",
