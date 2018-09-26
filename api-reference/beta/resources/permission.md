@@ -13,6 +13,8 @@ The **permission** resource provides information about a sharing permission gran
 Sharing permissions have a number of different forms.
 The **permission** resource represents these different forms through facets on the resource.
 
+>**Note:** OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
+
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -165,7 +167,7 @@ This link provides read and write access to the specific people in the `grantedT
 }
 ```
 
-## Sharing Invitations
+## Sharing invitations
 
 Permissions sent by the [invite][] API may have additional information in the [invitation][SharingInvitation] facet.
 If an invitation was sent to an email address that doesn't match a known account, the **grantedTo** property may not be set until the invitation is redeemed, which occurs the first time the user clicks the link and signs in.
@@ -220,9 +222,6 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 | [Delete](../api/permission_delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
-## Remarks
-
-OneDrive for Business and SharePoint document libraries do not return the **inheritedFrom** property.
 
 [createLink]: ../api/driveItem_createLink.md
 [IdentitySet]: identityset.md
