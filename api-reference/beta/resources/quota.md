@@ -4,11 +4,11 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Quota
 ---
-# Quota resource type
+# quota resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.
+The **quota** resource provides details about space constrains on a [drive](drive.md) resource.
 
 ## JSON representation
 
@@ -44,7 +44,7 @@ Here is a JSON representation of the resource.
 | state         | string | Enumeration value that indicates the state of the storage space. Read-only. |
 | storagePlanInformation  | [storagePlanInformation](storagePlanInformation.md) | Information about the drive's storage quota plans. Only in Personal OneDrive.|
 
-## State Enumeration
+### State enumeration values
 
 | Value      | Description                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
