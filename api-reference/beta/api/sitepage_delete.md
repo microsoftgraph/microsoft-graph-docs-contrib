@@ -4,11 +4,11 @@ ms.author: rahmit
 ms.date: 05/07/2018
 title: Delete a page from a SharePoint site
 ---
-# Delete page from the SitePages list of a site
+# Delete page from the site pages list of a site
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Removes a [sitePage][] from the Site Pages [list][] in a [site][].
+Removes a [sitePage][] from the site pages [list][] in a [site][].
 
 [sitePage]: ../resources/sitePage.md
 [list]: ../resources/list.md
@@ -55,7 +55,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 
 ## Response
 
-If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
+If successful, this call returns a `204 No Content` response to indicate that the resource was deleted and there was nothing to return.
 
 <!-- { "blockType": "response" } -->
 
