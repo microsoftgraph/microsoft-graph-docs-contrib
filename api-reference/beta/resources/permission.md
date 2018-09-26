@@ -4,18 +4,18 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
 ---
-# Permission resource type
+# permission resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.
+The **permission** resource provides information about a sharing permission granted for a [driveItem](driveitem.md) resource.
 
 Sharing permissions have a number of different forms.
-The **Permission** resource represents these different forms through facets on the resource.
+The **permission** resource represents these different forms through facets on the resource.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -64,9 +64,9 @@ Here is a JSON representation of the resource
 | expirationDateTime  | DateTimeOffset              | A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
 | hasPassword         | Boolean                     | This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
 
-## Roles enumeration
+### Roles enumeration values
 
-| Role        | Details                                                                        |
+| Value        | Details                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
 | `read`      | Provides the ability to read the metadata and contents of the item.            |
 | `write`     | Provides the ability to read and modify the metadata and contents of the item. |
