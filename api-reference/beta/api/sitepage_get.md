@@ -8,7 +8,7 @@ title: Get a page in a site
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Returns the metadata for a [sitePage][] in the site pages [list][] in a site [site][].
+Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
 
 [sitePage]: ../resources/sitePage.md
 [list]: ../resources/list.md
@@ -32,7 +32,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 ## Example
 
-#### Request
+##### Request
 
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
