@@ -11,7 +11,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |[List tabs](../api/channels_tabs_list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
 |[Get tab](../api/channels_tabs_get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
 |[Add tab](../api/channels_tabs_add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Remove tab](../api/channels_tabs_delete.md) | | Removes (unpins) a tab from a channel.|
+|[Remove tab](../api/channels_tabs_delete.md) | None | Removes (unpins) a tab from a channel.|
 |[Update tab](../api/channels_tabs_update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 
