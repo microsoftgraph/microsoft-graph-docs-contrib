@@ -5,6 +5,7 @@
 Reusable property that reflects the 'risk state' of a risky user, sign-in or a risk event. For e.g. active, remediated or dismissed.
 
 ## Members
+
 |Member|Value|Description|
 |:---|:---|:---|
 |`none`|`0`|Risky user: The user is not at risk. Sign-in: The sign-in is not at risk. Risk event: The risk event is not at risk. |
