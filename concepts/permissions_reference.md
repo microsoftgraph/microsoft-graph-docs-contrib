@@ -41,6 +41,36 @@ With the appropriate permissions, the app can read the profiles of users or grou
 
 ---
 
+## AppCatalog resource permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AppCatalog.ReadWrite.All_ | Read and write to all app catalogs  | Allows the app to create, read, update, and delete apps in the app catalogs. | Yes |
+
+#### Application permissions
+
+None.
+
+### Remarks
+
+Currently the only catalog is the list of applications in [Microsoft Teams](../concepts/teams-concept-overview).
+
+### Example usage
+
+#### Delegated
+* _AppCatalog.ReadWrite.All_: [List all applications in catalog](../api-reference/beta/api/teams_apps_list_published.md) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Publish an app](../api-reference/beta/api/teams_apps_publish.md) (`POST /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Update a published app](../api-reference/beta/api/teams_apps_update_published.md) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_: [Remove a published app](../api-reference/beta/api/teams_apps_remove_published.md) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
+
+#### Application
+
+None.
+
+---
+
 ## Application resource permissions
 
 #### Delegated permissions
