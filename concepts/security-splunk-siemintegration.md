@@ -86,6 +86,7 @@ Security alerts are highly privileged data typically viewable only by security r
   
 &nbsp;
 4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
+
 5. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
 
     ``` shell
