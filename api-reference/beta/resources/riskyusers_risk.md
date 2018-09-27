@@ -6,8 +6,8 @@ Aggregates the the risk level, risk state and risk detail for the risky user, si
 
 ## Properties
 
-|Property|Type|Description|
-|-|-|-|-|-|
+| Property   | Type|Description|
+|:---------------|:--------|:----------|
 |`stateDetail`|[riskDetail](../api/riskyusers_riskdetail.md)|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event|
 |`riskLevelAggregated`|[riskLevel](../api/riskyusers_riskLevel.md)|Provides the overall risk level of a risky user, sign-in or a risk event|
 |`riskLevelDuringSignIn`|[riskLevel](../api/riskyusers_riskLevel.md)|Provides the risk level of a sign-in during the sign-in (i.e. based on the real-time risk events) |
