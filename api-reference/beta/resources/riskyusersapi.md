@@ -50,8 +50,8 @@ Here is a JSON representation of the resource.
 {
  "id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
-“isGuest”: “boolean”,
-“isDeleted”: “boolean”,
+"isGuest": "boolean",
+"isDeleted": "boolean",
 "risk": {"@odata.type": "microsoft.graph.risk"},
 "userDisplayName": "string",
 "userPrincipalName": "string"
