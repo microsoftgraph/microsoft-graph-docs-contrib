@@ -73,4 +73,4 @@ Similarly, if the `userId` in the URL or payload is expressed as a UPN rather th
 
 ## See also
 
-[Microsoft Teams API overview](teams-concept-overview)
+[Microsoft Teams API overview](teams-concept-overview.md)
