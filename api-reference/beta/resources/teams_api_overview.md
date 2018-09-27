@@ -70,3 +70,7 @@ Similarly, if the `userId` in the URL or payload is expressed as a UPN rather th
 | Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) | 
 | Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
 | List notebooks for a team             | [Notebook](../../v1.0/resources/notebook.md) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks.md) |
+
+## See also
+
+[Microsoft Teams API overview](../../../concepts/teams-concept-overview.md)
