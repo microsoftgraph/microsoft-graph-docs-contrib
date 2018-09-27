@@ -55,7 +55,7 @@ None.
 
 ### Remarks
 
-Currently the only catalog is the list of applications in [Microsoft Teams](../concepts/teams-concept-overview).
+Currently the only catalog is the list of applications in [Microsoft Teams](../concepts/teams-concept-overview.md).
 
 ### Example usage
 
