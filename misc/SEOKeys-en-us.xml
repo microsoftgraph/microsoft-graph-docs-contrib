@@ -3165,7 +3165,7 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_windowsuniversalappxcontainedapp_update"/>
         </Item>
       </Item>
-      <Item text="Company terms" url="/en-us/api-reference/beta/resources/intune_term_conceptual">
+      <Item text="Company terms" url="/en-us/api-reference/beta/resources/intune_company_conceptual">
         <Item text="Terms and conditions" url="/en-us/api-reference/beta/resources/intune_companyterms_termsandconditions">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_companyterms_termsandconditions_get"/>
@@ -4742,7 +4742,7 @@
           <Item text="windowsDefenderUpdateSignatures action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures"/>
           <Item text="updateWindowsDeviceAccount action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount"/>
           <Item text="revokeAppleVppLicenses action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses"/>
-          <Item text="overrideComplianceState action" url="/en-us/api-reference/beta/api/manageddevice_overridecompliancestate"/>
+          <Item text="overrideComplianceState action" url="/en-us/api-reference/beta/api/intune_deviceconfig_managedDevice_overrideComplianceState"/>
         </Item>
         <Item text="Managed device cleanup settings" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicecleanupsettings"/>
         <Item text="Managed device models and manufacturers" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicemodelsandmanufacturers"/>

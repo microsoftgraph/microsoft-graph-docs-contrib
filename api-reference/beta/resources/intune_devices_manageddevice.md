@@ -33,7 +33,7 @@ Devices that are managed or pre-enrolled through Intune
 |[windowsDefenderUpdateSignatures action](../api/intune_devices_manageddevice_windowsdefenderupdatesignatures.md)|None|Not yet documented|
 |[updateWindowsDeviceAccount action](../api/intune_devices_manageddevice_updatewindowsdeviceaccount.md)|None|Not yet documented|
 |[revokeAppleVppLicenses action](../api/intune_devices_manageddevice_revokeapplevpplicenses.md)|None|Revoke all Apple Vpp licenses for a device|
-|[overrideComplianceState action](../api/managedDevice_overrideComplianceState.md)|None|Not yet documented|
+|[overrideComplianceState action](../api/intune_deviceconfig_managedDevice_overrideComplianceState.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
