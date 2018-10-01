@@ -1,10 +1,10 @@
 # Microsoft Graph Security API overview
 
-You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple [Microsoft Graph Security providers](../api-reference/v1.0/resources/securityvendorinformation.md) (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see [Microsoft Graph Security data flow](security-dataflow.md).
+You can use the Microsoft Graph Security API to connect Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities. The Microsoft Graph Security API is an intermediary service (or broker) that provides a single programmatic interface to connect multiple [Microsoft Graph Security providers](../api-reference/v1.0/resources/securityvendorinformation.md) (also called security providers or providers). Requests to the Microsoft Graph Security API are federated to all applicable security providers. The results are aggregated and returned to the requesting application in a common schema, as shown in the following diagram. For details, see [Microsoft Graph Security API data flow](security-dataflow.md).
 
 ![security_overview_diagram_1.png](./images/security_overview_diagram_1.png)
 
-For information about authorization, see [Authorization and the security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions_reference.md#security-permissions).
+For information about authorization, see [Authorization and the Microsoft Graph Security API](security-authorization.md). For information about permissions, including delegated and application permissions, see [Permissions](permissions_reference.md#security-permissions).
 
 ## Why use the Microsoft Graph Security API?
 
@@ -39,6 +39,12 @@ The following table lists the benefits that different security solutions can acc
 |**Managed Security Service Providers (MSSPs)**|<ul><li>Streamlined integration with security operations tools and services.</li> <li>Reduced deployment and maintenance time and efforts.</li> <li>Ability to deliver more value to MSSP customers.</li></ul>|
 |**SIEM and IT Risk management solutions**|<ul><li>Smooth integration with Microsoft security solutions and ecosystem partners.</li> <li>Rich alert metadata.</li> <li>Better alert correlation.</li></ul>|
 |**Applications** <br>(Threat Intelligence, Mobile, Cloud, IOT, Fraud detection, Identity & Access, Risk & Compliance, Firewall, and so on)|<ul><li>Unified threat management, prevention, and risk management across various security solutions.</li> <li>Alerts, inventory, config, and actions exposed through Microsoft Graph.</li> <li>Instant integration with Microsoft Graph-enabled solutions.</li></ul>|
+
+## API reference
+Looking for the API reference for this service?
+
+- [Security API in Microsoft Graph v1.0](../api-reference/v1.0/resources/security-api-overview.md)
+- [Security API in Microsoft Graph beta](../api-reference/beta/resources/security-api-overview.md)
 
 ## Next steps
 
