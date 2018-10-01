@@ -32,7 +32,7 @@ You only need to specify any desired query parameters once upfront.
 
 In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from the previous response, as that URL already includes the encoded, desired parameters.
 
-| Query parameter	   | Type	|Description|
+| Query parameter | Type  |Description|
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same group collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same group collection. |
@@ -52,7 +52,7 @@ This method supports optional OData query parameters to help customize the respo
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
-| Prefer | return=minimal <br><br>Specifying this header with a request that uses a deltaLink would return only the object properties that have changed since the last round. Optional. |
+| Prefer | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
 
