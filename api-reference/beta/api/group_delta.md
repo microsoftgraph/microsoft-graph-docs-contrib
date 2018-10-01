@@ -5,6 +5,7 @@
 Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection. See [Using Delta Query](../../../concepts/delta_query_overview.md) for details.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -14,14 +15,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
+
 To begin tracking changes, you make a request including the delta function on the groups resource.
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /groups/delta
 ```
 
 ## Query parameters
+
 Tracking changes in groups incurs a round of one or more **delta** function calls. If you use any query parameter (other than `$deltatoken` and `$skiptoken`), you must specify it in the initial **delta** request. Microsoft Graph automatically encodes any specified parameters into the token portion of the `nextLink` or `deltaLink` URL provided in the response.
 
 You only need to specify any desired query parameters once upfront.
@@ -34,15 +38,16 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same group collection. |
 
 ### OData query parameters
+
 This method supports optional OData query parameters to help customize the response.
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The
-*id* property is always returned.
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The *id* property is always returned.
 - You can use `$expand=members` to get membership changes.
 - There is limited support for `$filter`:
-  * The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
+  - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There is a limit of 50 filtered objects.
 
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
@@ -50,9 +55,11 @@ This method supports optional OData query parameters to help customize the respo
 | Prefer | return=minimal <br><br>Specifying this header with a request that uses a deltaLink would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ### Response
+
 If successful, this method returns `200 OK` response code and [group](../resources/group.md) collection object in the response body. The response also includes a state token which is either a nextLink URL or a deltaLink URL.
 
 - If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
@@ -66,14 +73,17 @@ Responses for `nextLink` always include the same set of properties as in the ini
 By default, responses for `deltaLink` include all originally selected properties, whether they have changed or not, and their current values. Optionally, you can request that only the changed properties be included.
 
 #### Default: all properties included
+
 All properties selected in the initial delta query are always returned in the Json response, even if their values have not changed.
 
 For example, an initial request initiating the delta query selected 3 properties for change tracking:
+
 ```http
 GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description,mailNickname
 ```
 
 A response to a subsequent delta query may look like this:
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -92,11 +102,13 @@ Content-type: application/json
 ```
 
 #### Alternative: only changed properties included
+
 Adding an optional request header - `prefer:return=minimal` - ensures that only the properties whose values have changed since the last delta sync are included in the Json response.
 
 > **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed.
 
 Using the same example as before, a response to the delta query would look like this:
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -112,24 +124,30 @@ Content-type: application/json
   ]
 }
 ```
+
 Note that the *mailNickname* property is not included, which means it has not changed since the last delta query. *displayName* and *description* are included which means their values have changed.
 
-See:<br>
+See:
+
 - [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.<br>
 - [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.<br>
 
 ### Example
+
 #### Request
+
 The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "group_delta"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/groups/delta
 ```
 
 #### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 >
@@ -141,6 +159,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -173,6 +192,7 @@ Content-type: application/json
 ```
 
 ## See also
+
 - [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.
 - [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.
 
