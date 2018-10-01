@@ -78,7 +78,7 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 - If the property has been set to an empty value, return the property value as null.
 - If the property has not changed, return the value as null.
 
-> **Note:** With the above behavior, it is not possible to differentiate between a property that has not changed and one that has changed to a `null` value. See the second example below. If this is important, we recommend using the alternative behavior described in the next section.
+> **Note:** With the above behavior, it is not possible to differentiate between a property that has not changed and one that has changed to a `null` value. See the [second example](#request-2) below. If this is important, we recommend using the alternative behavior described in the next section.
 
 #### Alternative: return only the changed properties
 
@@ -88,71 +88,13 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 - If the property has been set to an empty value, return the property value as null.
 - If the property has not changed, do not include the property in the JSON response. (Different from the default behavior.)
 
-> **Note:** The header can be added to a deltaLink request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed.
-
-All properties selected in the initial delta query are always returned in the Json response, even if their values have not changed.
-
-For example, an initial request initiating the delta query selected 3 properties for change tracking:
-
-```http
-GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description,mailNickname
-```
-
-A response to a subsequent delta query may look like this:
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "description": null,
-      "mailNickname": "mailNickname-value"
-    }
-  ]
-}
-```
-
-#### Alternative: only changed properties included
-
-Adding an optional request header - `prefer:return=minimal` - ensures that only the properties whose values have changed since the last delta sync are included in the Json response.
-
-> **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed.
-
-Using the same example as before, a response to the delta query would look like this:
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "description": null
-    }
-  ]
-}
-```
-
-Note that the *mailNickname* property is not included, which means it has not changed since the last delta query. *displayName* and *description* are included which means their values have changed.
-
-See:
-
-- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.<br>
-- [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.<br>
+> **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
 
 ### Example
 
-#### Request
+#### Request 1
 
-The following is an example of the request.
+The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 <!-- {
   "blockType": "request",
   "name": "group_delta"
@@ -162,9 +104,10 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/groups/delta
 ```
 
-#### Response
+#### Response 1
 
-The following is an example of the response.
+The following is an example of the response when using `deltaLink` obtained from the query initialization.
+
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 >
 > Note the presence of the *members@delta* property which includes the ids of member objects in the group.
@@ -206,6 +149,77 @@ Content-type: application/json
   ]
 }
 ```
+
+#### Request 2
+
+The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
+<!-- {
+  "blockType": "request",
+  "name": "group_delta"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description,mailNickname
+```
+
+#### Response 2
+
+The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that `description` and `mailNickname` have the value of `null` which means that they may have not changed or have been set to an empty value.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "description": null,
+      "mailNickname": null
+    }
+  ]
+}
+```
+
+#### Request 3
+
+The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:
+<!-- {
+  "blockType": "request",
+  "name": "group_delta"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,description,mailNickname
+Prefer: return=minimal
+```
+
+#### Response 3
+
+The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that the `mailNickname` property is not included, which means it has not changed since the last delta query; `displayName` and `description` are included which means their values have changed.
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#groups",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "value": [
+    {
+      "displayName": "displayName-value",
+      "description": null
+    }
+  ]
+}
+```
+
+See:
+
+- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details.
+- [Get incremental changes for groups](../../../concepts/delta_query_groups.md) for a more detailed walkthrough.
 
 ## See also
 
