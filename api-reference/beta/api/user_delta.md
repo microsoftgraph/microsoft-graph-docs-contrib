@@ -57,15 +57,15 @@ Do not supply a request body for this method.
 
 ### Response
 
-If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL.
+If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
 - If a `nextLink` URL is returned:
-  - This indicates there are additional pages of data to be retrieved in the session. The application continues making requests using the nextLink URL until a deltaLink URL is included in the response.
+  - This indicates there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
   - The response includes the same set of properties as in the initial delta query request. This allows you to capture the full current state of the objects when initiating the delta cycle.
 
 - If a `deltaLink` URL is returned:
-  - This indicates there is no more data about the existing state of the resource to be returned. Save and use the deltaLink URL to learn about changes to the resource in the next round.
-  - You have a choice to specify the `Prefer:return=minimal` header, to include in the response values for only the properties that have changed since the time the deltaLink was issued.
+  - This indicates there is no more data about the existing state of the resource to be returned. Save and use the `deltaLink` URL to learn about changes to the resource in the next round.
+  - You have a choice to specify the `Prefer:return=minimal` header, to include in the response values for only the properties that have changed since the time the `deltaLink` was issued.
 
 #### Default: return the same properties as initial delta request
 
