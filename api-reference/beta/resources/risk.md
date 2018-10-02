@@ -8,10 +8,10 @@ Aggregates the the risk level, risk state and risk detail for the risky user, si
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|`stateDetail`|[riskDetail](../api/riskyusers_riskdetail.md)|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event|
-|`riskLevelAggregated`|[riskLevel](../api/riskyusers_riskLevel.md)|Provides the overall risk level of a risky user, sign-in or a risk event|
-|`riskLevelDuringSignIn`|[riskLevel](../api/riskyusers_riskLevel.md)|Provides the risk level of a sign-in during the sign-in (i.e. based on the real-time risk events) |
-|`state`|[riskState](../api/riskyusers_riskstate.md)|Provides the 'risk state' of a risky user, sign-in or a risk event |
+|`stateDetail`|riskDetail|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far. |
+|`riskLevelAggregated`|riskLevel|Provides the overall risk level of a risky user, sign-in or a risk event. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection.|
+|`riskLevelDuringSignIn`|riskLeve|Provides the risk level of a sign-in during the sign-in (i.e. based on the real-time risk events). The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the sign-in was not enabled for Azure AD Identity Protection.|
+|`state`|riskState|Provides the 'risk state' of a risky user, sign-in or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. |
 
 ## JSON representation
 
