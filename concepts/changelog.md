@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## October 2018
+
+### Delta query
+
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
+
 ## September 2018
 
 ### Dynamics 365 Business Central API
