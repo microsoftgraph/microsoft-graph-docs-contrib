@@ -85,10 +85,6 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 > **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
 
-See:<br>
-- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details<br>
-- [Get incremental changes for users](../../../concepts/delta_query_users.md) for an example requests.<br>
-
 ### Example
 
 #### Request 1
