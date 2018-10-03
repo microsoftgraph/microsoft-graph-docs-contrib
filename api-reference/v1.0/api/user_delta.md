@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To begin tracking changes, you make a request including the delta function on the users resource. 
+To begin tracking changes, you make a request including the delta function on the users resource.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -155,6 +155,13 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mo
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that `jobTitle` and `mobilePhone` have the value of `null` which means that they may have not changed or have been set to an empty value.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -188,6 +195,13 @@ Prefer: return=minimal
 #### Response 3
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that the `mobilePhone` property is not included, which means it has not changed since the last delta query; `displayName` and `jobTitle` are included which means their values have changed.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
 
 ```http
 HTTP/1.1 200 OK
