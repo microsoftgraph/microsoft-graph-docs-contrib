@@ -294,7 +294,7 @@ Content-type: application/json
         ],
         "originalStartTimeZone":"Pacific Standard Time",
         "originalEndTimeZone":"Pacific Standard Time",
-        "uid":"040000008200E00074C5B7101A82E00800000000A2A6F3535D7FD3010000000000000000100000003D770E2E8974F44B9471BDB348097FE3",
+        "iCalUid":"040000008200E00074C5B7101A82E00800000000A2A6F3535D7FD3010000000000000000100000003D770E2E8974F44B9471BDB348097FE3",
         "reminderMinutesBeforeStart":15,
         "isReminderOn":true,
         "hasAttachments":false,

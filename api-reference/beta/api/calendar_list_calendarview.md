@@ -89,7 +89,7 @@ Content-length: 354
         "response": "response-value",
         "time": "2016-10-19T10:37:00Z"
       },
-      "uid": "iCalUId-value",
+      "iCalUid": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }

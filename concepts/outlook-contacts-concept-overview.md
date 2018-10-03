@@ -44,6 +44,5 @@ Looking for the API reference for this service?
 
 - Select and try contacts sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fcontacts&version=v1.0). Choose **Show more samples** in the column on the left. Use the menu to turn on **Personal contacts**.
 - Learn about:
-  - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
   - [Getting shared contacts](outlook-get-shared-contacts-folders.md)
 - Take a look at the Outlook [contacts API](../api-reference/v1.0/resources/contact.md) reference.
