@@ -96,6 +96,7 @@ The following is an example of the request. There is no `$select` parameter, so 
   "blockType": "request",
   "name": "group_delta"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
@@ -114,6 +115,7 @@ The following is an example of the response when using `deltaLink` obtained from
   "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -161,6 +163,13 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that `description` and `mailNickname` have the value of `null` which means that they may have not changed or have been set to an empty value.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -194,6 +203,13 @@ Prefer: return=minimal
 #### Response 3
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that the `mailNickname` property is not included, which means it has not changed since the last delta query; `displayName` and `description` are included which means their values have changed.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
 
 ```http
 HTTP/1.1 200 OK
