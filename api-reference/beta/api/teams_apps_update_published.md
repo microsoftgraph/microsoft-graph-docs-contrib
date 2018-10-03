@@ -1,6 +1,6 @@
 # Update apps published to your organization's app catalog
 
-Update an [app](../api-reference/beta/resources/teamscatalogapp.md) previously published to the Microsoft Teams app catalog. 
+Update an [app](../resources/teamscatalogapp.md) previously published to the Microsoft Teams app catalog. 
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog). 
 To publish to your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
 

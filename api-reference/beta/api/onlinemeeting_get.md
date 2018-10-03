@@ -94,7 +94,6 @@ Content-Length: 1574
             "displayName": "Heidi Steen"
           }
         },
-        "sipProxyAddress": "sipProxyAddress-value",
         "upn": "upn-value"
       }
     ],
@@ -106,7 +105,6 @@ Content-Length: 1574
           "displayName": "Heidi Steen"
         }
       },
-      "sipProxyAddress": "sipProxyAddress-value",
       "upn": "upn-value"
     }
   },

@@ -41,6 +41,36 @@ With the appropriate permissions, the app can read the profiles of users or grou
 
 ---
 
+## AppCatalog resource permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AppCatalog.ReadWrite.All_ | Read and write to all app catalogs  | Allows the app to create, read, update, and delete apps in the app catalogs. | Yes |
+
+#### Application permissions
+
+None.
+
+### Remarks
+
+Currently the only catalog is the list of applications in [Microsoft Teams](../concepts/teams-concept-overview.md).
+
+### Example usage
+
+#### Delegated
+* _AppCatalog.ReadWrite.All_: [List all applications in catalog](../api-reference/beta/api/teams_apps_list_published.md) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Publish an app](../api-reference/beta/api/teams_apps_publish.md) (`POST /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Update a published app](../api-reference/beta/api/teams_apps_update_published.md) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_: [Remove a published app](../api-reference/beta/api/teams_apps_remove_published.md) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
+
+#### Application
+
+None.
+
+---
+
 ## Application resource permissions
 
 #### Delegated permissions
@@ -140,6 +170,41 @@ None.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+## Calls permissions
+
+#### Delegated permissions
+
+None.
+
+<br/>
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_Calls.Initiate.All_|Initiate outgoing 1:1 calls from the app (preview)|Allows the app to place outbound calls to a single user and transfer calls to users in your organization’s directory, without a signed-in user.|Yes|
+|_Calls.InitiateGroupCall.All_|Initiate outgoing group calls from the app (preview)|Allows the app to place outbound calls to multiple users and add participants to meetings in your organization, without a signed-in user.|Yes|
+|_Calls.JoinGroupCall.All_|Join Group Calls and Meetings as an app (preview)|Allows the app to join group calls and scheduled meetings in your organization, without a signed-in user. The app will be joined with the privileges of a directory user to meetings in your tenant.|Yes|
+|_Calls.JoinGroupCallasGuest.All_|Join Group Calls and Meetings as a guest (preview)|Allows the app to anonymously join group calls and scheduled meetings in your organization, without a signed-in user. The app will be joined as a guest to meetings in your tenant.|Yes|
+|_Calls.AccessMedia.All_\*|Access media streams in a call as an app (preview)|Allows the app to get direct access to media streams in a call, without a signed-in user.|Yes|
+
+> \***Important:** You may not use the Microsoft.Graph.Calls.Media API to record or otherwise persist media content from calls or meetings that your bot accesses.
+
+<br/>
+
+### Example usage
+
+#### Application
+
+* _Calls.Initiate.All_: Make a peer-to-peer call from the application to a user in the organization (`POST /beta/app/calls`).
+* _Calls.InitiateGroupCall.All_: Make a group call from the application to a group of users in the organization (`POST /beta/app/calls`).
+* _Calls.JoinGroupCall.All_: Join a group call or online meeting from the application (`POST /beta/app/calls`).
+* _Calls.JoinGroupCallasGuest.All_: Join a group call or online meeting from the application, but the application only has guest privileges in the meeting (`POST /beta/app/calls`).
+* _Calls.AccessMedia.All_: Create or Join a call and the app gets direct access to participant media streams in the call (`POST /beta/app/calls`).
+
+> **Note:** For request examples, see to [Create call](../api-reference/beta/api/application_post_calls.md).
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ## Contacts permissions
 
@@ -651,8 +716,38 @@ The *CreatedByApp* constraint associated with this permission indicates that the
 #### Delegated
 * _Notifications.ReadWrite.CreatedByApp_: Publish a user-centric notification, which might then be delivered to the user’s multiple application clients running on different endpoints. (POST /me/notifications/).
 
+---
+
+## Online meetings permissions
+
+#### Delegated permissions
+
+None.
 
 <br/>
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+|_OnlineMeetings.Read.All_|Read Online Meeting details from the app (preview)|Allows the app to read Online Meeting details in your organization, without a signed-in user.|Yes|
+|_OnlineMeetings.ReadWrite.All_|Read and Create Online Meetings from the app (preview) on behalf of a user|Allows the app to create Online Meetings in your organization on behalf of a user, without a signed-in user.|Yes|
+
+<br/>
+
+### Example usage
+
+#### Application
+
+* _OnlineMeetings.Read.All_: Retrieve the properties and relationships of an [Online Meeting](../api-reference/beta/api/onlinemeeting_get.md) (`GET /beta/app/onlinemeetings/{id}`).
+* _OnlineMeetings.ReadWrite.All_: Create an [Online Meeting](../api-reference/beta/api/application_post_onlineMeetings.md) (`POST /beta/app/onlinemeetings`).
+
+> **Note**: Creating an [Online Meeting](../api-reference/beta/api/application_post_onlineMeetings.md) creates a meeting on behalf of a user specified in the request body, but does not show it on the user's Calendar.
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
 ## OpenID permissions
 
 #### Delegated permissions
@@ -783,8 +878,8 @@ Security permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|
 | _Sites.Read.All_        | Read items in all site collections | Allows the app to read documents and list items in all site collections without a signed in user. | Yes |
 | _Sites.ReadWrite.All_   | Read and write items in all site collections | Allows the app to create, read, update, and delete documents and list items in all site collections without a signed in user. | Yes |
-| _Sites.Manage.All_      | Have full control of all site collections | Allows the app to manage and create lists, documents, and list items in all site collections without a signed-in user.  | Yes  |
-| _Sites.FullControl.All_ | Create, edit, and delete items and lists in all site collections | Allows the app to have full control to SharePoint sites in all site collections without a signed-in user.  | Yes  |
+| _Sites.Manage.All_      | Create, edit, and delete items and lists in all site collections | Allows the app to manage and create lists, documents, and list items in all site collections without a signed-in user.  | Yes  |
+| _Sites.FullControl.All_ | Have full control of all site collections | Allows the app to have full control to SharePoint sites in all site collections without a signed-in user.  | Yes  |
 
 
 ### Remarks
