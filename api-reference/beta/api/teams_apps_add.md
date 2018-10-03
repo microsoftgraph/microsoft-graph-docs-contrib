@@ -31,7 +31,7 @@ This method supports the [OData Query Parameters](../../../concepts/query_parame
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String|The id of the app to add|
+|id|String|The id of the app to add.|
 
 
 ## Response
@@ -75,3 +75,6 @@ Content-length: 401
   "section": "documentation",
   "tocPath": ""
 }-->
+
+## See also
+
