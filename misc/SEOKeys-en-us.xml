@@ -5428,152 +5428,152 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/resources/dynamics_graph_reference" >
+  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/api/dynamics_graph_reference" >
 		<Item text="Account" url="/en-us/api-reference/beta/resources/dynamics_account">
-			<Item text="Get account" url="/en-us/api-reference/beta/api/dynamics_account_get"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_account_get"/>
 		  </Item>
 		<Item text="Aged accounts payable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountspayable">
-			<Item text="Get aged accounts payable" url="/en-us/api-reference/beta/api/dynamics_agedaccountspayable_get"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_agedaccountspayable_get"/>
 		  </Item>
 		<Item text="Aged accounts receivable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountsreceivable">
-			<Item text="Get aged accounts payable" url="/en-us/api-reference/beta/api/dynamics_agedaccountsreceivable_get"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_agedaccountsreceivable_get"/>
 		  </Item>
 		<Item text="Balance sheet" url="/en-us/api-reference/beta/resources/dynamics_balancesheet">
-			<Item text="Get balance sheet" url="/en-us/api-reference/beta/api/dynamics_balancesheet_get"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_balancesheet_get"/>
 		  </Item>
 		<Item text="Cash flow statement" url="/en-us/api-reference/beta/resources/dynamics_cashflowstatement">
-			<Item text="Get cashflow statement" url="/en-us/api-reference/beta/api/dynamics_cashflowstatement_get"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_cashflowstatement_get"/>
 		  </Item>
 		<Item text="Companies" url="/en-us/api-reference/beta/resources/dynamics_companies">
-			<Item text="Get companies" url="/en-us/api-reference/beta/api/dynamics_companies_get"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_companies_get"/>
 		  </Item>
-		<Item text="Companyinformation" url="/en-us/api-reference/beta/resources/dynamics_companyinformation">
-			<Item text="Get company information" url="/en-us/api-reference/beta/api/dynamics_companyinformation_get"/>
-			<Item text="Update company information" url="/en-us/api-reference/beta/api/dynamics_companyinformation_update"/>
+		<Item text="Company information" url="/en-us/api-reference/beta/resources/dynamics_companyinformation">
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_companyinformation_get"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_companyinformation_update"/>
 		  </Item>
-		<Item text="Countriesregions" url="/en-us/api-reference/beta/resources/dynamics_countriesregions">
-			<Item text="Get countries/regions" url="/en-us/api-reference/beta/api/dynamics_countriesregions_get"/>
-			<Item text="Create countries/regions" url="/en-us/api-reference/beta/api/dynamics_create_countriesregions"/>
-			<Item text="Delete countries/regions" url="/en-us/api-reference/beta/api/dynamics_countriesregions_delete"/>
+		<Item text="Countries regions" url="/en-us/api-reference/beta/resources/dynamics_countriesregions">
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_countriesregions_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_countriesregions"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_countriesregions_delete"/>
 		  </Item>
 		<Item text="Currencies" url="/en-us/api-reference/beta/resources/dynamics_currencies">
-			<Item text="Get currencies" url="/en-us/api-reference/beta/api/dynamics_currencies_get"/>
-			<Item text="Create currencies" url="/en-us/api-reference/beta/api/dynamics_create_currencies"/>
-			<Item text="Delete currencies" url="/en-us/api-reference/beta/api/dynamics_currencies_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_currencies_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_currencies"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_currencies_delete"/>
 		  </Item>
 		<Item text="Customer" url="/en-us/api-reference/beta/resources/dynamics_customer">
-			<Item text="Get customer" url="/en-us/api-reference/beta/api/dynamics_customer_get"/>
-			<Item text="Create customer" url="/en-us/api-reference/beta/api/dynamics_create_customer"/>
-			<Item text="Update customer" url="/en-us/api-reference/beta/api/dynamics_customer_update"/>
-			<Item text="Delete customer" url="/en-us/api-reference/beta/api/dynamics_customer_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_customer_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_customer"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_customer_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_customer_delete"/>
 		  </Item>
 		<Item text="Customer payment" url="/en-us/api-reference/beta/resources/dynamics_customerpayment">
-			<Item text="Get customer payment" url="/en-us/api-reference/beta/api/dynamics_customerpayment_get"/>
-			<Item text="Create customer payment" url="/en-us/api-reference/beta/api/dynamics_create_customerpayment"/>
-			<Item text="Update customer payment" url="/en-us/api-reference/beta/api/dynamics_customerpayment_update"/>
-			<Item text="Delete customer payment" url="/en-us/api-reference/beta/api/dynamics_customerpayment_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_customerpayment_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_customerpayment"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_customerpayment_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_customerpayment_delete"/>
 		  </Item>
 		  <Item text="Customer payments journal" url="/en-us/api-reference/beta/resources/dynamics_customerpaymentsjournal">
-			<Item text="Get customer payments journal" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_get"/>
-			<Item text="Create customer payments journal" url="/en-us/api-reference/beta/api/dynamics_create_customerpaymentsjournal"/>
-			<Item text="Update customer payments journal" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_update"/>
-			<Item text="Delete customer payments journal" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_customerpaymentsjournal"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_delete"/>
 		  </Item>  
 		<Item text="Dimension" url="/en-us/api-reference/beta/resources/dynamics_dimension">
-			<Item text="Get dimension" url="/en-us/api-reference/beta/api/dynamics_dimension_get"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_dimension_get"/>
 		  </Item>
 		<Item text="Dimension value" url="/en-us/api-reference/beta/resources/dynamics_dimensionvalue">
-			<Item text="Get dimension" url="/en-us/api-reference/beta/api/dynamics_dimensionvalue_get"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_dimensionvalue_get"/>
 		  </Item>  
 		<Item text="Employee" url="/en-us/api-reference/beta/resources/dynamics_employee">
-			<Item text="Get employee" url="/en-us/api-reference/beta/api/dynamics_employee_get"/>
-			<Item text="Create employee" url="/en-us/api-reference/beta/api/dynamics_create_employee"/>
-			<Item text="Update employee" url="/en-us/api-reference/beta/api/dynamics_employee_update"/>
-			<Item text="Delete employee" url="/en-us/api-reference/beta/api/dynamics_employee_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_employee_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_employee"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_employee_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_employee_delete"/>
 		  </Item>  
 		 <Item text="General ledger entries" url="/en-us/api-reference/beta/resources/dynamics_generalledgerentries">
-			<Item text="Get general ledger entries" url="/en-us/api-reference/beta/api/dynamics_generalledgerentries_get"/>     
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_generalledgerentries_get"/>     
 		  </Item>
 		  <Item text="Income statement" url="/en-us/api-reference/beta/resources/dynamics_incomestatement">
-			<Item text="Get income statement" url="/en-us/api-reference/beta/api/dynamics_incomestatement_get"/>     
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_incomestatement_get"/>     
 		</Item>  
 		<Item text="IRS 1099" url="/en-us/api-reference/beta/resources/dynamics_irs1099">
-			<Item text="Get IRS 1099" url="/en-us/api-reference/beta/api/dynamics_irs1099_get"/>
-			<Item text="Create IRS 1099" url="/en-us/api-reference/beta/api/dynamics_create_irs1099"/>
-			<Item text="Update IRS 1099" url="/en-us/api-reference/beta/api/dynamics_irs1099_update"/>
-			<Item text="Delete IRS 1099" url="/en-us/api-reference/beta/api/dynamics_irs1099_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_irs1099_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_irs1099"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_irs1099_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_irs1099_delete"/>
 		  </Item>
 		<Item text="Item" url="/en-us/api-reference/beta/resources/dynamics_item">
-			<Item text="Get item" url="/en-us/api-reference/beta/api/dynamics_item_get"/>
-			<Item text="Create item" url="/en-us/api-reference/beta/api/dynamics_create_item"/>
-			<Item text="Update item" url="/en-us/api-reference/beta/api/dynamics_item_update"/>
-			<Item text="Delete item" url="/en-us/api-reference/beta/api/dynamics_item_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_item_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_item"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_item_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_item_delete"/>
 		  </Item>
 		<Item text="Item categories" url="/en-us/api-reference/beta/resources/dynamics_itemcategories">
-			<Item text="Get item categories" url="/en-us/api-reference/beta/api/dynamics_itemcategories_get"/>
-			<Item text="Create item categories" url="/en-us/api-reference/beta/api/dynamics_create_itemcategories"/>
-			<Item text="Update item categories" url="/en-us/api-reference/beta/api/dynamics_itemcategories_update"/>
-			<Item text="Delete item categories" url="/en-us/api-reference/beta/api/dynamics_itemcategories_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_itemcategories_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_itemcategories"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_itemcategories_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_itemcategories_delete"/>
 		  </Item>
 		<Item text="Journal" url="/en-us/api-reference/beta/resources/dynamics_journal">
-			<Item text="Get journal" url="/en-us/api-reference/beta/api/dynamics_journal_get"/>
-			<Item text="Create journal" url="/en-us/api-reference/beta/api/dynamics_create_journal"/>
-			<Item text="Update journal" url="/en-us/api-reference/beta/api/dynamics_journal_update"/>
-			<Item text="Delete journal" url="/en-us/api-reference/beta/api/dynamics_journal_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_journal_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_journal"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_journal_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_journal_delete"/>
 		  </Item>  
 		<Item text="Journal line" url="/en-us/api-reference/beta/resources/dynamics_journalline">
-			<Item text="Get journal line" url="/en-us/api-reference/beta/api/dynamics_journalline_get"/>
-			<Item text="Create journal line" url="/en-us/api-reference/beta/api/dynamics_create_journalline"/>
-			<Item text="Update journal line" url="/en-us/api-reference/beta/api/dynamics_journalline_update"/>
-			<Item text="Delete journal line" url="/en-us/api-reference/beta/api/dynamics_journalline_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_journalline_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_journalline"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_journalline_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_journalline_delete"/>
 		  </Item>
 		<Item text="Payment methods" url="/en-us/api-reference/beta/resources/dynamics_paymentmethods">
-			<Item text="Get payment methods" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_get"/>
-			<Item text="Create payment methods" url="/en-us/api-reference/beta/api/dynamics_create_paymentmethods"/>
-			<Item text="Update payment methods" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_update"/>
-			<Item text="Delete payment methods" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_paymentmethods"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_delete"/>
 		  </Item>
 		<Item text="Payment terms" url="/en-us/api-reference/beta/resources/dynamics_paymentterms">
-			<Item text="Get payment terms" url="/en-us/api-reference/beta/api/dynamics_paymentterms_get"/>
-			<Item text="Create payment terms" url="/en-us/api-reference/beta/api/dynamics_create_paymentterms"/>
-			<Item text="Update payment terms" url="/en-us/api-reference/beta/api/dynamics_paymentterms_update"/>
-			<Item text="Delete payment terms" url="/en-us/api-reference/beta/api/dynamics_paymentterms_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_paymentterms_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_paymentterms"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_paymentterms_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_paymentterms_delete"/>
 		  </Item>
 		<Item text="Retained earnings statement" url="/en-us/api-reference/beta/resources/dynamics_retainedearningsstatement">
-			<Item text="Get retained earnings statement" url="/en-us/api-reference/beta/api/dynamics_retainedearningsstatement_get"/>  
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_retainedearningsstatement_get"/>  
 		  </Item>  
 		<Item text="Shipment methods" url="/en-us/api-reference/beta/resources/dynamics_shipmentmethods">
-			<Item text="Get shipment methods" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_get"/>
-			<Item text="Create shipment methods" url="/en-us/api-reference/beta/api/dynamics_create_shipmentmethods"/>
-			<Item text="Update shipment methods" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_update"/>
-			<Item text="Delete shipment methods" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_shipmentmethods"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_delete"/>
 		  </Item>
 		<Item text="Tax area" url="/en-us/api-reference/beta/resources/dynamics_taxarea">
-			<Item text="Get tax area" url="/en-us/api-reference/beta/api/dynamics_taxarea_get"/>    
-			<Item text="Create tax area" url="/en-us/api-reference/beta/api/dynamics_create_taxarea"/>    
-			<Item text="Update tax area" url="/en-us/api-reference/beta/api/dynamics_taxarea_update"/>    
-			<Item text="Delete tax area" url="/en-us/api-reference/beta/api/dynamics_taxarea_delete"/>    
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_taxarea_get"/>    
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_taxarea"/>    
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_taxarea_update"/>    
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_taxarea_delete"/>    
 		  </Item>  
 		<Item text="Tax groups" url="/en-us/api-reference/beta/resources/dynamics_taxgroups">
-			<Item text="Get tax groups" url="/en-us/api-reference/beta/api/dynamics_taxgroups_get"/>    
-			<Item text="Create tax groups" url="/en-us/api-reference/beta/api/dynamics_create_taxgroups"/>    
-			<Item text="Update tax groups" url="/en-us/api-reference/beta/api/dynamics_taxgroups_update"/>    
-			<Item text="Delete tax groups" url="/en-us/api-reference/beta/api/dynamics_taxgroups_delete"/>    
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_taxgroups_get"/>    
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_taxgroups"/>    
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_taxgroups_update"/>    
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_taxgroups_delete"/>    
 		  </Item>    
 		<Item text="Trial balance" url="/en-us/api-reference/beta/resources/dynamics_trialbalance">
-			<Item text="Get trial balance" url="/en-us/api-reference/beta/api/dynamics_trialbalance_get"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_trialbalance_get"/>
 		  </Item> 
-		<Item text="Unitsofmeasure" url="/en-us/api-reference/beta/resources/dynamics_unitsofmeasure">
-			<Item text="Get units of measure" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_get"/>
-			<Item text="Create units of measure" url="/en-us/api-reference/beta/api/dynamics_create_unitsofmeasure"/>
-			<Item text="Update units of measure" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_update"/>
-			<Item text="Delete units of measure" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_delete"/>
+		<Item text="Units of measure" url="/en-us/api-reference/beta/resources/dynamics_unitsofmeasure">
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_unitsofmeasure"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_delete"/>
 		  </Item>
 		<Item text="Vendor" url="/en-us/api-reference/beta/resources/dynamics_vendor">
-			<Item text="Get vendor" url="/en-us/api-reference/beta/api/dynamics_vendor_get"/>
-			<Item text="Create vendor" url="/en-us/api-reference/beta/api/dynamics_create_vendor"/>
-			<Item text="Update vendor" url="/en-us/api-reference/beta/api/dynamics_vendor_update"/>
-			<Item text="Delete vendor" url="/en-us/api-reference/beta/api/dynamics_vendor_delete"/>
+			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_vendor_get"/>
+			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_vendor"/>
+			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_vendor_update"/>
+			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_vendor_delete"/>
 		  </Item>
   </Item>
 	<Item text="Identity and access" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
