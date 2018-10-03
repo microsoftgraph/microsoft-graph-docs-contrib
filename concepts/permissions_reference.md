@@ -41,6 +41,36 @@ With the appropriate permissions, the app can read the profiles of users or grou
 
 ---
 
+## AppCatalog resource permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AppCatalog.ReadWrite.All_ | Read and write to all app catalogs  | Allows the app to create, read, update, and delete apps in the app catalogs. | Yes |
+
+#### Application permissions
+
+None.
+
+### Remarks
+
+Currently the only catalog is the list of applications in [Microsoft Teams](../concepts/teams-concept-overview.md).
+
+### Example usage
+
+#### Delegated
+* _AppCatalog.ReadWrite.All_: [List all applications in catalog](../api-reference/beta/api/teams_apps_list_published.md) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Publish an app](../api-reference/beta/api/teams_apps_publish.md) (`POST /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_: [Update a published app](../api-reference/beta/api/teams_apps_update_published.md) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_: [Remove a published app](../api-reference/beta/api/teams_apps_remove_published.md) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
+
+#### Application
+
+None.
+
+---
+
 ## Application resource permissions
 
 #### Delegated permissions
@@ -848,8 +878,8 @@ Security permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|
 | _Sites.Read.All_        | Read items in all site collections | Allows the app to read documents and list items in all site collections without a signed in user. | Yes |
 | _Sites.ReadWrite.All_   | Read and write items in all site collections | Allows the app to create, read, update, and delete documents and list items in all site collections without a signed in user. | Yes |
-| _Sites.Manage.All_      | Have full control of all site collections | Allows the app to manage and create lists, documents, and list items in all site collections without a signed-in user.  | Yes  |
-| _Sites.FullControl.All_ | Create, edit, and delete items and lists in all site collections | Allows the app to have full control to SharePoint sites in all site collections without a signed-in user.  | Yes  |
+| _Sites.Manage.All_      | Create, edit, and delete items and lists in all site collections | Allows the app to manage and create lists, documents, and list items in all site collections without a signed-in user.  | Yes  |
+| _Sites.FullControl.All_ | Have full control of all site collections | Allows the app to have full control to SharePoint sites in all site collections without a signed-in user.  | Yes  |
 
 
 ### Remarks
