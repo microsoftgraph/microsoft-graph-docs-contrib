@@ -17,6 +17,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change type | Version | Description |
 | :---------- | :-------| :---------- |
 | Change      | Beta    | Removed he `iCalUid` property from the [event resource](../api-reference/beta/resources/event.md) and added the `uid` property to the `event` resource. The `uid` property serves the same purpose as the removed `iCalUid` property. |
+| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
+
+### Outlook contacts
+
+| Change type | Version | Description |
+| :---------- | :-------| :---------- |
+| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
+
+### Outlook mail
+
+| Change type | Version | Description |
+| :---------- | :-------| :---------- |
+| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
 
 ## September 2018
 
