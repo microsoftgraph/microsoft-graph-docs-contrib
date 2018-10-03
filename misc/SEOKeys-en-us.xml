@@ -5428,7 +5428,7 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/api/dynamics_graph_reference" >
+  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/resources/dynamics_graph_reference" >
 		<Item text="Account" url="/en-us/api-reference/beta/resources/dynamics_account">
 			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_account_get"/>
 		  </Item>
