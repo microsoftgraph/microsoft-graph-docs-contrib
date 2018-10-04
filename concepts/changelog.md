@@ -14,11 +14,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2018
 
-### Dynamics 365 Business Central API
+### Microsoft Teams APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/dynamics_graph_reference.md)
+|Addition|beta|Added application permissions support to [Create channel](../api-reference/beta/api/group_post_channels.md), [Update channel](../api-reference/beta/api/channel_patch.md), and [Delete channel](../api-reference/beta/api/channel_delete.md). |
+
 
 ### Calls and online meetings API
 
@@ -32,6 +33,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta        | Added the [audio routing group](../api-reference/beta/resources/audioroutinggroup.md) resource and APIs for managing private audio routes between participants in a multiparty conversation, including [creating audio routing groups](../api-reference/beta/api/call_post_audioroutinggroups), [retrieving a list of them](../api-reference/beta/api/audioroutinggroup_get), and [updating](../api-reference/beta/api/audioroutinggroup_update) and [deleting](../api-reference/beta/api/audioroutinggroup_delete) them. |
 | Addition        | Beta        | Added the [online meeting](../api-reference/beta/resources/audioroutinggroup.md) resource and APIs for managing Microsoft Teams online meetings. Initially, there is only one API for online meetings, to [retrieve an online meeting object](../api-reference/beta/api/onlinemeeting_get). A related resource for the [audio conference information](../api-reference/beta/resources/audioconferencing.md) associated with a meeting (e.g. dial-in URL, passcodes, and phone numbers) was also added. |
 | Addition        | Beta        | Many of the calls and meetings APIs take time to complete, so resources for these long-running operations were added: [calling-specific operations](../api-reference/beta/resources/commsoperation.md), [playing audio prompts](../api-reference/beta/resources/playpromptoperation.md), and [recording](../api-reference/beta/resources/recordoperation.md).  |
+
+### Dynamics 365 Business Central API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/dynamics_graph_reference.md)
+
+### Microsoft Graph data connect
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition         | Not applicable| Introduced the ability to access Office 365 data in bulk. For details, see [Microsoft Graph data connect (preview)](data-connect-overview.md).|
 
 ### Microsoft Intune APIs
 |Change type|Version|Description|
