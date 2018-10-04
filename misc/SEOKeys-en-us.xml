@@ -5459,7 +5459,7 @@
 			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_companyinformation_get"/>
 			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_companyinformation_update"/>
 		  </Item>
-		<Item text="Countries regions" url="/en-us/api-reference/beta/resources/dynamics_countriesregions">
+		<Item text="Countries/regions" url="/en-us/api-reference/beta/resources/dynamics_countriesregions">
 			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_countriesregions_get"/>
 			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_countriesregions"/>
 			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_countriesregions_delete"/>
