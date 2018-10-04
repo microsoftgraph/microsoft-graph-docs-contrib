@@ -162,7 +162,7 @@ The age group and minor consent properties are optional properties used by Azure
 |granted|1|Consent has been obtained for the user to have an account.|
 |denied|2|Consent has not been obtained for the user to have an account.|
 |notRequired|3|The user is from a location that does not require consent.|
- 
+
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
