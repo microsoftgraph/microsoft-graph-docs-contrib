@@ -10,7 +10,7 @@ title: Get item activity stats by interval
 
 Get [itemActivityStats][] for the activities that took place under this resource within the specified time interval.
 
->**Note:** The **itemAnalytics** resource is in a limited preview and is not yet available in all [national deployments][../../../concepts/deployments.md].
+>**Note:** The **itemAnalytics** resource is in a limited preview and is not yet available in all [national deployments](../../../concepts/deployments.md).
 
 Analytics aggregates might not be available for all action types.
 
