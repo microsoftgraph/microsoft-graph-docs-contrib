@@ -10,11 +10,9 @@ title: Site
 
 The **site** resource provides metadata and relationships for a SharePoint site.
 
-## Tasks
+## Methods
 
-All examples below are relative to `https://graph.microsoft.com/beta`.
-
-| Task name                      | Example request
+| Method                         | REST Path
 |:-------------------------------|:--------------------------------------------
 | [Get root site][]              | GET /sites/root
 | [Get site][]                   | GET /sites/{site-id}
