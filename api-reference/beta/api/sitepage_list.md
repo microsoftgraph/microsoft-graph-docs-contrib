@@ -63,14 +63,14 @@ Content-type: application/json
             "pageLayoutType": "Article",
             "createdBy": {
                 "user": {
-                    "displayName": "Rahul Mittal",
-                    "email": "rahmit"
+                    "displayName": "Jimmy Felts",
+                    "email": "jimmy@contoso.com"
                 }
             },
             "lastModifiedBy": {
                 "user": {
-                    "displayName": "Rahul Mittal",
-                    "email": "rahmit"
+                    "displayName": "Jimmy Felts",
+                    "email": "jimmy@contoso.com"
                 }
             },
             "parentReference": {
@@ -132,16 +132,16 @@ Content-type: application/json
             "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
             "createdBy": {
                 "user": {
-                    "email": "rahmit@microsoft.com",
+                    "email": "jimmy@contoso.com",
                     "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-                    "displayName": "Rahul Mittal (ODSP)"
+                    "displayName": "Jimmy Felts"
                 }
             },
             "lastModifiedBy": {
                 "user": {
-                    "email": "rahmit@microsoft.com",
+                    "email": "jimmy@contoso.com",
                     "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-                    "displayName": "Rahul Mittal (ODSP)"
+                    "displayName": "Jimmy Felts"
                 }
             },
             "parentReference": {
@@ -158,8 +158,8 @@ Content-type: application/json
                 "versionId": "1.1",
                 "checkedOutBy": {
                     "user": {
-                        "displayName": "Rahul Mittal",
-                        "email": "rahmit"
+                        "displayName": "Jimmy Felts",
+                        "email": "jimmy@contoso.com"
                     }
                 }
             },
