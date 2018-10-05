@@ -4,9 +4,9 @@ ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo
 ---
-# ItemPreviewInfo resource type
+# itemPreviewInfo resource type
 
-The **ItemPreviewInfo** resource contains information on how to embed a preview of a [DriveItem](driveitem.md).
+The **itemPreviewInfo** resource contains information on how to embed a preview of a [driveItem](driveitem.md).
 
 ## JSON representation
 
