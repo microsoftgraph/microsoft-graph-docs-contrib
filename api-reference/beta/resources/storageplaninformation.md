@@ -2,7 +2,7 @@
 author: psampath
 ms.author: psampath
 ms.date: 06/20/2018
-title: storagePlanInformation
+title: StoragePlanInformation
 ---
 # storagePlanInformation resource type
 
