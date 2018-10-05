@@ -2,19 +2,19 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: Page
+title: sitePage
 ---
-# Page resource
+# sitePage resource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-This resource represents a **sitePage** in the SitePages [list][].
+This resource represents a page in the SitePages [list][].
 It contains the title, layout, and a collection of [webPart][]s.
 
 ## Tasks on a page
 
 The following tasks are available for **sitePage** resources.
-All examples below are relative to a [site][], eg: `https://graph.microsoft.com/v1.0/sites/{site-id}`.
+All examples below are relative to a [site][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
 
 | Common task                     | HTTP method
 |:--------------------------------|:------------------------------
