@@ -4,11 +4,11 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionStat
 ---
-# ItemActionStat resource type
+# itemActionStat resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **ItemActionStat** resource provides aggregate details about an action over a period of time.
+The **itemActionStat** resource provides aggregate details about an action over a period of time.
 
 ## JSON representation
 
