@@ -12,6 +12,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Change | beta | Change the [privilegedapproval](../api-reference/beta/resources/privilegedapproval.md) entity.|
 | Addition | beta | Added the [privilegedroleassignmentrequest](../api-reference/beta/resources/privilegedroleassignmentrequest.md) entity, and following methods and actions:<br> [List](../api-reference/beta/api/privilegedroleassignmentrequest_list.md) <br> [Create](../api-reference/beta/api/privilegedroleassignmentrequest_post.md) <br> [Cancel](../api-reference/beta/api/privilegedroleassignmentrequest_cancel.md) <br> [My](../api-reference/beta/api/privilegedroleassignmentrequest_my.md) |
+| Addition | beta | Added [Update] (../api-reference/beta/api/privilegedrolesettings_update.md) for [privilegedRoleSettings](./api-reference/beta/resources/privilegedrolesettings.md)|
 | Removal |beta| Deprecated the [Self Activate Role Assignment] (../api-reference\beta\api\privilegedrole_selfactivate.md)|
 
 ### Dynamics 365 Business Central API
