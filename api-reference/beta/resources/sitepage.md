@@ -2,7 +2,7 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: sitePage
+title: SitePage
 ---
 # sitePage resource
 
