@@ -2,9 +2,9 @@
 author: psampath
 ms.author: psampath
 ms.date: 06/20/2018
-title: StoragePlanInformation
+title: storagePlanInformation
 ---
-# StoragePlanInformation resource type
+# storagePlanInformation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
