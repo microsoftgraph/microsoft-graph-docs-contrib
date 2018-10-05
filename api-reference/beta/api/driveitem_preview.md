@@ -88,7 +88,7 @@ The following values are allowed for the **viewer** parameter.
 If `chromeless` is true, the preview will be a bare rendering of the file.
 Otherwise, there may be additional toolbars/buttons displayed for interacting with the document/view.
 
-### View/eedit
+### View/edit
 
 If `allowEdit` is true, the document can be modified by user interaction with the embedded preview.
 This capability may not be available for all preview apps or file types.
