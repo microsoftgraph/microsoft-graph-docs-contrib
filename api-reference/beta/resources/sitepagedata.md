@@ -2,7 +2,7 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
-title: sitePageData
+title: SitePageData
 ---
 # sitePageData resource
 
