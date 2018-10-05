@@ -12,7 +12,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Tasks
 
-All examples below are relative to `https://graph.microsoft.com/v1.0`.
+All examples below are relative to `https://graph.microsoft.com/beta`.
 
 | Task name                      | Example request
 |:-------------------------------|:--------------------------------------------
