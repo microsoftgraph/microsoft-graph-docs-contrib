@@ -1,8 +1,8 @@
-# Embeddable file previews
+# driveItem: preview
 
-This action allows you to obtain short-lived embeddable URLs for an item.
+This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.
 
-If you wish to obtain long-lived embeddable links, use the [createLink][] API instead.
+If you want to obtain long-lived embeddable links, use the [createLink][] API instead.
 
 [createLink]: driveItem_createLink.md
 
@@ -15,7 +15,7 @@ To learn more, including how to choose permissions, see [Permissions](../../../c
 |:---------------------------------------|:-------------------------------------------
 | Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All
 | Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.ReadWrite.All
-| Application                            | n/a
+| Application                            | Not supported.
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ POST /users/{userId}/drive/items/{itemId}/preview
 POST /shares/{shareId}/driveItem/preview
 ```
 
-### Request body
+## Request body
 
 The body of the request defines properties of the embeddable URL your application is requesting.
 The request should be a JSON object with the following properties.
@@ -40,7 +40,7 @@ The request should be a JSON object with the following properties.
 | page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP.
 | zoom        | number        | Optional. Zoom level to start at, if applicable.
 
-### Response
+## Response
 
 ```json
 {
@@ -58,7 +58,7 @@ The response will be a JSON object containing the following properties:
 | postUrl        | string | URL suitable for embedding using HTTP POST (form post, JS, etc.)
 | postParameters | string | POST parameters to include if using postUrl
 
-Either getUrl, postUrl, or both may be returned depending on the current state of embed support for the specified options.
+Either getUrl, postUrl, or both might be returned depending on the current state of embed support for the specified options.
 
 postParameters is a string formatted as `application/x-www-form-urlencoded`, and if performing a POST to the postUrl the content-type should be set accordingly. For example:
 ```
@@ -68,6 +68,6 @@ Content-Type: application/x-www-form-urlencoded
 param1=value&param2=another%20value
 ```
 
-### Page/Zoom
+### Page/zoom
 
 The 'page' and 'zoom' options may not be available for all preview apps, but will be applied if the preview app supports it.
