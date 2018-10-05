@@ -4,11 +4,11 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: IncompleteData
 ---
-# IncompleteData resource type
+# incompleteData resource type
 
  > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-The **IncompleteData** facet indicates that a resource was generated with incomplete data.
+The **incompleteData** facet indicates that a resource was generated with incomplete data.
 The properties within may provide information about why there is incomplete data.
 
 ## JSON representation
