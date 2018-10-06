@@ -4,11 +4,11 @@ ms.author: rahmit
 ms.date: 05/07/2018
 title: Create a new page in a SharePoint site
 ---
-# Create a page in the SitePages list of a site
+# Create a page in the site pages list of a site
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [sitePage][] in the sitePages [list][] in a [site][].
+Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 ## Permissions
 
