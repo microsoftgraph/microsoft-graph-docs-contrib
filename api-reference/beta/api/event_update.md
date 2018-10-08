@@ -92,7 +92,7 @@ Content-length: 285
     "time": "2016-10-19T10:37:00Z"
   },
   "recurrence": null,
-  "iCalUid": "iCalUId-value",
+  "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
@@ -118,7 +118,7 @@ Content-length: 285
     "time": "2016-10-19T10:37:00Z"
   },
   "recurrence": null,
-  "iCalUid": "iCalUId-value",
+  "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
