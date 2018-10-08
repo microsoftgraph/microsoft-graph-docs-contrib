@@ -12,25 +12,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:------------|:--------|:-----------------------------------------|
 | Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
 
-### Outlook calendar
-
-| Change type | Version | Description |
-| :---------- | :-------| :---------- |
-| Change      | Beta    | Removed he `iCalUid` property from the [event resource](../api-reference/beta/resources/event.md) and added the `uid` property to the `event` resource. The `uid` property serves the same purpose as the removed `iCalUid` property. |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
-
-### Outlook contacts
-
-| Change type | Version | Description |
-| :---------- | :-------| :---------- |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
-
-### Outlook mail
-
-| Change type | Version | Description |
-| :---------- | :-------| :---------- |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
-
 ## September 2018
 
 ### Microsoft Teams APIs
