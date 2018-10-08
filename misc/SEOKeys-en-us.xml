@@ -19,6 +19,7 @@
 	  <Item text="Get free/busy schedule" url="/en-us/concepts/outlook-get-free-busy-schedule" />
 	  <Item text="Schedule recurring events" url="/en-us/concepts/outlook-schedule-recurring-events" />
 	  <Item text="Get shared events" url="/en-us/concepts/outlook-get-shared-events-calendars" />
+    <Item text="Immutable ID (preview)" url="/en-us/concepts/outlook-immutable-id" />
   </Item>
   <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview" >
     <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
@@ -38,6 +39,7 @@
 	  <Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
 	  <Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
 	  <Item text="Get shared messages" url="/en-us/concepts/outlook-share-messages-folders" />
+    <Item text="Immutable ID (preview)" url="/en-us/concepts/outlook-immutable-id" />
   </Item>
   <Item text="Notes" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
     <Item text="Get OneNote content" url="/en-us/concepts/onenote-get-content" />
@@ -56,6 +58,7 @@
   </Item>
   <Item text="Personal contacts" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" >
     <Item text="Get shared contacts" url="/en-us/concepts/outlook-get-shared-contacts-folders" />
+    <Item text="Immutable ID (preview)" url="/en-us/concepts/outlook-immutable-id" />
   </Item>
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Security" url="/en-us/concepts/security-concept-overview" >
