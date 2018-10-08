@@ -8,7 +8,7 @@ A subscription allows a client app to receive notifications about changes to dat
 - Conversations from Office Groups.
 - Drive root items from OneDrive.
 - Users and Groups from Azure Active Directory.
-- Security API
+- Alerts from Graph Security
 
 ## JSON representation
 

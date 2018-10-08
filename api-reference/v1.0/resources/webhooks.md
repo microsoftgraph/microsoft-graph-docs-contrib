@@ -20,9 +20,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types in v1.0                                 |
 | :------------------------------------- | :--------------------------------------------------------------- |
-| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [message][], [security][] |
+| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [message][], [alert][] |
 | Delegated - personal Microsoft account | None                                                             |
-| Application                            | [contact][], [conversation][], [event][], [message][], [security][]           |
+| Application                            | [contact][], [conversation][], [event][], [message][], [alert][]           |
 
 ## See also
 
@@ -37,4 +37,4 @@ In general, subscription operations require read permission to the resource. For
 [drive]: ./drive.md
 [event]: ./event.md
 [message]: ./message.md
-[security]: ./security-api-overview.md
+[alert]: ./alert.md
