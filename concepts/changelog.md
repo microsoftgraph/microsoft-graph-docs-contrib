@@ -120,6 +120,37 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta       | Added the Secure Score APIs to the [security API](../api-reference/beta/resources/securescore-api-overview.md), including the following resources and operations:<br/>[secureScores](../api-reference/beta/resources/securescores.md) (and related entities)<br/>[List secureScores](../api-reference/beta/api/securescores_list.md)<br/>[secureScoreControlProfiles](../api-reference/beta//resources/securescorecontrolprofiles.md)<br/>[List secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_list.md)<br/>[Update secureScoreControlProfiles](../api-reference/beta/api/securescorecontrolprofiles_update.md)
 
 
+### OneDrive and SharePoint APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the **deferCommit** argument to the [createUploadSession](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/driveitem_createuploadsession) action on [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/driveitem)|
+| Addition        | Beta        | Added the [storagePlanInformation](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/storagePlanInformation) complex type |
+| Addition        | Beta        | Added the **storagePlanInformation** property to the [quota](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/quota) complex type |
+| Addition        | Beta        | Added the **following** navigation property to the [drive](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/drive) entity |
+| Addition        | Beta        | Added the [follow](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/driveItem_follow) action on [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/driveItem) |
+| Addition        | Beta        | Added the [unfollow](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/driveItem_unfollow) API |
+| Addition        | Beta        | Added the **hasPassword** property to the [permission](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/permission) entity |
+| Addition        | Beta        | Added the **preventsDownload** property to the [sharingLink](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sharingLink) complex type |
+| Addition        | Beta        | Added the **permission** navigation property to the [sharedDriveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/sharedDriveItem) entity |
+| Addition        | Beta        | Added the **geolocation** property to the [columnDefinition](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/columnDefinition) entity |
+| Addition        | Beta        | Added the [geolocationColumn](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/geolocationColumn) complex type |
+| Addition        | Beta        | Added the **analytics** property to the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/driveItem) entity |
+| Addition        | Beta        | Added the **analytics** property to the [site](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/site) entity |
+| Addition        | Beta        | Added the **analytics** property to the [listItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/listItem) entity |
+| Addition        | Beta        | Added the **getActivitiesByInterval** function on the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/driveItem) entity |
+| Addition        | Beta        | Added the **getActivitiesByInterval** function on the [site](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/site) entity |
+| Addition        | Beta        | Added the **getActivitiesByInterval** function on the [listItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/listItem) entity |
+| Addition        | Beta        | Added the [itemAnalytics](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemAnalytics) entity |
+| Addition        | Beta        | Added the [itemActivityStat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivity) entity |
+| Addition        | Beta        | Added the [itemActionStat](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActionStat) complex type |
+| Addition        | Beta        | Added the [accessAction](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/accessAction) complex type |
+| Addition        | Beta        | Added the [incompleteData](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/incompleteData) complex type |
+| Addition        | Beta        | Added the **access** property to the [itemActivity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivity) complex type |
+| Addition        | Beta        | Added the **location** property to the [itemActivity](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/itemActivity) complex type |
+| Addition        | v1.0        | Added the **preview** action on the [driveItem](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/driveItem) entity |
+| Addition        | v1.0        | Added the [itemPreviewInfo](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/itemPreviewInfo) complex type |
+
 ## August 2018
 
 ### Directory APIs
@@ -274,7 +305,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added **progress** property to [sychronizationStatus](../api-reference/beta/resources/synchronization_synchronizationstatus.md) to permit clients to monitor the progress of a synchronization job.|
-
 
 ### Application and servicePrincipal API changes
 

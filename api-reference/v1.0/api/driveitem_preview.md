@@ -1,7 +1,5 @@
 # driveItem: preview
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
 This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.
 
 If you want to obtain long-lived embeddable links, use the [createLink][] API instead.
@@ -41,9 +39,6 @@ The request should be a JSON object with the following properties.
 
 |   Name      |  Type         | Description
 |:------------|:--------------|:-----------------------------------------------
-| viewer      | string        | Optional. Preview app to use. `onedrive` or `office`. If null, a suitable viewer will be chosen automatically.
-| chromeless  | boolean       | Optional. If `true` (default), the embedded view will not include any controls.
-| allowEdit   | boolean       | Optional. If `true`, the file can be edited from the embedded UI.
 | page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP.
 | zoom        | number        | Optional. Zoom level to start at, if applicable.
 
@@ -75,26 +70,6 @@ Content-Type: application/x-www-form-urlencoded
 param1=value&param2=another%20value
 ```
 
-### Viewers
-
-The following values are allowed for the **viewer** parameter.
-
-| Type value | Description
-|:-----------|:----------------------------------------------------------------
-| (null)     | Chooses an appropriate app for rendering the file. In most cases this will use the `onedrive` previewer, but may vary by file type.
-| `onedrive` | Use the OneDrive previewer app to render the file.
-| `office`   | Use the WAC (Office online) to render the file. Only valid for Office documents.
-
-### Chrome vs chromeless
-
-If `chromeless` is true, the preview will be a bare rendering of the file.
-Otherwise, there may be additional toolbars/buttons displayed for interacting with the document/view.
-
-### View/edit
-
-If `allowEdit` is true, the document can be modified by user interaction with the embedded preview.
-This capability may not be available for all preview apps or file types.
-
 ### Page/zoom
 
-The `page` and `zoom` options might not be available for all preview apps, but will be applied if the preview app supports it.
+The 'page' and 'zoom' options may not be available for all preview apps, but will be applied if the preview app supports it.
