@@ -75,7 +75,7 @@ This resource supports:
 |city|String|The city in which the user is located. Supports $filter.|
 |companyName| String | The company name which the user is associated. Read-only.
 |consentProvidedForMinor|String|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
-|country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
+|country|String|The country/region in which the user is located; for example, "US" or "UK". Supports $filter.|
 |deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|

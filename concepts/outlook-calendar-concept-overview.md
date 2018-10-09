@@ -81,6 +81,7 @@ Looking for the API reference for this service?
   - [Finding possible meeting times on the Outlook calendar](findmeetingtimes_example.md)
   - [Getting the free/busy schedule for users and resources (preview)](outlook-get-free-busy-schedule.md)
   - [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
+  - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
   - [Getting shared events](outlook-get-shared-events-calendars.md)
 - Take a look at the Outlook [calendar API](../api-reference/v1.0/resources/calendar.md) reference.
 
