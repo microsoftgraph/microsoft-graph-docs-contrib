@@ -18,8 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /teams/{id}/channels/{id}/tabs/{id}
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
