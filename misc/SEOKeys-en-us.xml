@@ -6066,8 +6066,8 @@
 		<Item text="List pages" url="/en-us/api-reference/beta/api/sitepage_list" />
 		<Item text="Get page" url="/en-us/api-reference/beta/api/sitepage_get" />
 		<Item text="Create page" url="/en-us/api-reference/beta/api/sitepage_create" />
-		<Item text="Update page" url="/en-us/api-reference/beta/api/sitepage_update" />
 		<Item text="Delete page" url="/en-us/api-reference/beta/api/sitepage_delete" />
+		<Item text="Publish page" url="/en-us/api-reference/beta/api/sitepage_publish" />
 	  </Item>
     </Item>
 	<Item text="Social intelligence" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
