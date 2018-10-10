@@ -47,11 +47,15 @@ Security alerts are highly privileged data typically viewable only by security r
 > **Note:** Currently, the Azure Monitor Diagnostic settings blade does not support configuration of tenant-level resources. Microsoft Graph Security API alerts are a tenant-level resource, which requires using the Azure Resource Manager API to configure Azure Monitor to support consumption of your organization’s security alerts.
 
 1. In your Azure subscription, register "microsoft.insights" (Azure Monitor) as a resource provider.  
-> **Note:** Do not register "Microsoft.SecurityGraph" (Microsoft Graph Security API) as a resource provider in your Azure subscription, as “Microsoft.SecurityGraph” is a tenant-level resource as explained above. Tenant level configuration will be part of #6 below.
+ > **Note:** Do not register "Microsoft.SecurityGraph" (Microsoft Graph Security API) as a resource provider in your Azure subscription, as “Microsoft.SecurityGraph” is a tenant-level resource as explained above. Tenant level configuration will be part of #6 below.
 
 2. To configure Azure Monitor using the Azure Resource Manager API, obtain the [ARMClient](https://github.com/projectkudu/ARMClient) tool. This tool will be used to send REST API calls to the Azure portal from a command line.
 
 3. Prepare a diagnostic setting request JSON file like the following:
+
+<!-- {
+  "blockType": "ignored"
+} -->
 
     ``` json
     {
@@ -73,16 +77,14 @@ Security alerts are highly privileged data typically viewable only by security r
     }
     ```
 
-    Replace the values in the JSON file as follows:
+  Replace the values in the JSON file as follows:
 
-    **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
-
-    **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
-
-    **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
-
-    **“days”:** is the number of days you want to retain messages in your event hub.
-
+  * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
+  * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
+  * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
+  * **“days”:** is the number of days you want to retain messages in your event hub.
+  
+&nbsp;
 4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
 
 5. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
@@ -102,6 +104,7 @@ Security alerts are highly privileged data typically viewable only by security r
     ``` shell
     ARMClient.exe get https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
     ```
+
 8. Exit the ARMClient tool. You have now completed the configuration of Azure Monitor to send security alerts from your tenant to event hub.
 
 ## Step 3: Download and install the Azure Monitor Add-on for Splunk which will allow Splunk to consume security alerts
@@ -178,14 +181,14 @@ The last step to complete the setup process is to configure Splunk data inputs t
 
 ## (Optional) Use Splunk Search to explore data
 
-After you have set up the Azure Monitor Splunk plugin, your Splunk instance will start retrieving events from the configured event hub. By default, Splunk will index each property of the Microsoft Graph security alert schema to allow searching.
+After you have set up the Azure Monitor Splunk plugin, your Splunk instance will start retrieving events from the configured event hub. By default, Splunk will index each property of the Microsoft Graph Security API alert schema to allow searching.
 
-To search for Microsoft Graph security alerts, to create dashboards, or to set Splunk alerts with your search query, navigate to apps -> Search & Reporting app in Splunk.
+To search for Microsoft Graph Security API alerts, to create dashboards, or to set Splunk alerts with your search query, navigate to apps -> Search & Reporting app in Splunk.
 
 **Examples**:<br/>
 Try searching Graph Security alerts:
 
-- Type `sourcetype="amdl:securitygraph:alert"` in the search bar to get all alerts surfaced through the graph security API. On the right-hand side, you will see the top-level properties of Azure Monitor log where Graph Security alert is under properties field.<br/>
+- Type `sourcetype="amdl:securitygraph:alert"` in the search bar to get all alerts surfaced through the Microsoft Graph Security API. On the right-hand side, you will see the top-level properties of Azure Monitor log where Graph Security alert is under properties field.<br/>
 - On the left pane, you will see selected fields and interesting fields. You can use selected fields to create dashboards or Splunk alerts, you can also add or remove selected fields by right-clicking on the fields.  
 > **Note:**
 As shown in the following search query, you can restrict your search as needed. In the example, we filter the Graph Security Alerts by high severity alerts from Azure Security Center. We also used `eventDatetime`, `severity`, `status`, and `provider` as selected fields to be displayed. For more advance search terms, see [Splunk search tutorials](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
@@ -204,3 +207,4 @@ Or you can create a dashboard as a timeline chart:
  ![splunk_search_timeline](../concepts/images/splunk_search_timeline.png)
 
 You can follow [Splunk Search & Report tutorial](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
+

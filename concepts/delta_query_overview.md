@@ -16,6 +16,8 @@ The typical call pattern is as follows:
 3.  When the application needs to learn about changes to the resource, it makes a new request using the `deltaLink` URL received in step 2. This request *may* be made immediately after completing step 2 or when the application checks for changes.
 4.  Microsoft Graph returns a response describing changes to the resource since the previous request, and either a `nextLink` URL or a `deltaLink` URL.
 
+>**Note:** Entities derrived from `directoryObject` (such as users and groups) support "sync from now" scenarios. This allows you to skip steps 1 and 2 above (if you are not interested in retrieving the full state of the resource) and ask for the latest `deltaLink` instead. Append `$deltaToken=latest` to the `delta` function and the response will contain a `deltaLink` and no resource data.
+
 ### State tokens
 
 A delta query GET response always includes a URL specified in a `nextLink` or `deltaLink` response header.
@@ -35,10 +37,10 @@ If a client uses a query parameter, it must be specified in the initial request.
 
 For users and groups, there are restrictions on using some query parameters:
 
--   If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
--   `$expand` is only suported for the `manager` and `members` navigational property for users and groups respectively.
+- If a `$select` query parameter is used, the parameter indicates that the client prefers to only track changes on the properties or relationships specified in the `$select` statement. If a change occurs to a property that is not selected, the resource for which that property changed does not appear in the delta response after a subsequent request.
+- `$expand` is only suported for the `manager` and `members` navigational property for users and groups respectively.
 
-For users and groups APIs, scoping filters allow you to track changes to one or more specific users or groups by objectId. For example, the following request: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' returns changes for the groups matching the ids specified in the query filter.
+- Scoping filters allow you to track changes to one or more specific users or groups by objectId. For example, the following request: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' returns changes for the groups matching the ids specified in the query filter.
 
 ## Resource representation in the delta query response
 
