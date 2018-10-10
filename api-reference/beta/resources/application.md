@@ -6,6 +6,10 @@ Represents an application. Any application that outsources authentication to Azu
 
 > **Note:** Changes to the application resource type are currently in development. For more information, see [known issues with Microsoft Graph](../../../concepts/known_issues.md#application-and-serviceprincipal-api-changes).
 
+This resource supports:
+
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/application_delta.md) function.
+
 ## Methods
 
 | Method | Return Type | Description |

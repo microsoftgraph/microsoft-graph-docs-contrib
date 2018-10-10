@@ -4,6 +4,10 @@
 
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
+This resource supports:
+
+- Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/serviceprincipal_delta.md) function.
+
 ## JSON representation
 Here is a JSON representation of the resource
 
