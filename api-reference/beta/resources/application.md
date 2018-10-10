@@ -22,6 +22,7 @@ This resource supports:
 |[List assigned policies](../api/policy_list_assigned.md)| [policy](policy.md) collection| Get all policies assigned to this object.|
 |[Create owner](../api/application_post_owners.md) |[directoryObject](directoryobject.md)| Create a new owner by posting to the owners collection.|
 |[List owners](../api/application_list_owners.md) |[directoryObject](directoryobject.md) collection| Get an owner object collection.|
+|[delta](../api/application_delta.md)|application collection| Get incremental changes for applications. |
 |[Create call](../api/application_post_calls.md)|[call](call.md)|Create a new call by posting to the calls collection.|
 |[Create online meeting](../api/application_post_onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Create a new online meeting by posting to the onlineMeetings collection.|
 
