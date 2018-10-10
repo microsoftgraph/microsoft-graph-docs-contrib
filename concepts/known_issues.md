@@ -50,7 +50,7 @@ Currently, Graph Explorer allows global admins to manipulate teams they are not 
 
 ### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permissions ([*Group.Read.All*](../concepts/permissions_reference#group-permissions) and [*Group.ReadWrite.All*](../concepts/permissions_reference#group-permissions)) for access to the APIs for groups and Microsoft Teams.
+Microsoft Graph exposes two permissions ([*Group.Read.All*](../concepts/permissions_reference.md#group-permissions) and [*Group.ReadWrite.All*](../concepts/permissions_reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
 These permissions must be consented to by an administrator.
 In the future, we plan to add new permissions for groups and teams that users can consent to.
 
