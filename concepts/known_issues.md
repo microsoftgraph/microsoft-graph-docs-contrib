@@ -40,7 +40,7 @@ The fix will retroactively update control messages that are already posted.
 ### Create chat thread API
 
 The current API to [create a chat thread](../api-reference/beta/api/channel_post_chatthreads.md) 
-will be replaced with a richer API that is consistent with the schema for [listing channel messages](../api/channel_list_messages.md).
+will be replaced with a richer API that is consistent with the schema for [listing channel messages](../api-reference/beta/api/channel_list_messages.md).
 
 ### Graph Explorer and Global Admins
 
