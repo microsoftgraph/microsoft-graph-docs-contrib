@@ -413,7 +413,7 @@
 		</Item>
 	</Item>
     <Item text="Devices and apps" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
-      <Item text="App management" url="/en-us/api-reference/v1.0/resources/intune_apps_app_conceptual">
+      <Item text="App management" url="/en-us/api-reference/v1.0/resources/intune_app_conceptual">
         <Item text="Android LOB app" url="/en-us/api-reference/v1.0/resources/intune_apps_androidlobapp">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_get"/>
@@ -519,6 +519,7 @@
         <Item text="Managed device mobile app configuration" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get"/>
+          <Item text="assign action" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_assign"/>
         </Item>
         <Item text="Managed device mobile app configuration assignment" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationassignment">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_list"/>
@@ -664,7 +665,7 @@
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_apps_windowsuniversalappx_update"/>
         </Item>
       </Item>
-      <Item text="Company terms" url="/en-us/api-reference/v1.0/resources/intune_company_conceptual">
+      <Item text="Company terms" url="/en-us/api-reference/v1.0/resources/intune_conceptual_conceptual">
         <Item text="Terms and conditions" url="/en-us/api-reference/v1.0/resources/intune_companyterms_termsandconditions">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditions_get"/>
@@ -687,7 +688,7 @@
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_update"/>
         </Item>
       </Item>
-      <Item text="Corporate enrollment" url="/en-us/api-reference/v1.0/resources/intune_corporate_enrollment_conceptual">
+      <Item text="Corporate enrollment" url="/en-us/api-reference/v1.0/resources/intune_enrollment_conceptual">
         <Item text="Imported windows autopilot device identity" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get"/>
@@ -706,7 +707,7 @@
         </Item>
         <Item text="Imported windows autopilot device identity upload status" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityuploadstatus"/>
       </Item>
-      <Item text="Device configuration" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
+      <Item text="Device configuration" url="/en-us/api-reference/v1.0/resources/intune_device_cfg_conceptual">
         <Item text="Android compliance policy" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_get"/>
@@ -1170,7 +1171,7 @@
         <Item text="Windows update type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatetype"/>
         <Item text="Windows user account control settings" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsuseraccountcontrolsettings"/>
       </Item>
-      <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_devices_conceptual">
+      <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_device_mgt_conceptual">
         <Item text="Action state" url="/en-us/api-reference/v1.0/resources/intune_devices_actionstate"/>
         <Item text="Apple push notification certificate" url="/en-us/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate">
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_get"/>
@@ -1287,7 +1288,7 @@
         <Item text="Windows device AD account" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceadaccount"/>
         <Item text="Windows device Azure AD account" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceazureadaccount"/>
       </Item>
-      <Item text="Mobile app protection" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
+      <Item text="Mobile app management" url="/en-us/api-reference/v1.0/resources/intune_mam_conceptual">
         <Item text="Android managed app protection" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_get"/>
@@ -1324,6 +1325,7 @@
         <Item text="IP range" url="/en-us/api-reference/v1.0/resources/intune_mam_iprange"/>
         <Item text="IPv4 range" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv4range"/>
         <Item text="IPv6 range" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range"/>
+        <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json"/>
         <Item text="Key/value pair" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair"/>
         <Item text="Managed app clipboard sharing level" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel"/>
         <Item text="Managed app configuration" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
@@ -1540,7 +1542,7 @@
         <Item text="VPP token sync status" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokensyncstatus"/>
         <Item text="Windows Hello for business PIN usage" url="/en-us/api-reference/v1.0/resources/intune_onboarding_windowshelloforbusinesspinusage"/>
       </Item>
-      <Item text="Role based access control" url="/en-us/api-reference/v1.0/resources/intune_rbac_conceptual">
+      <Item text="Role-based access control" url="/en-us/api-reference/v1.0/resources/intune_rbac_conceptual">
         <Item text="Device and app management role assignment" url="/en-us/api-reference/v1.0/resources/intune_rbac_deviceandappmanagementroleassignment">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroleassignment_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroleassignment_get"/>
@@ -1590,11 +1592,11 @@
           <Item text="syncMicrosoftStoreForBusinessApps action" url="/en-us/api-reference/v1.0/api/intune_shared_deviceappmanagement_syncmicrosoftstoreforbusinessapps"/>
         </Item>
         <Item text="Device category" url="/en-us/api-reference/v1.0/resources/intune_shared_devicecategory">
-          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_list"/>
-          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_get"/>
-          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_create"/>
-          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_delete"/>
-          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_update"/>
+          <Item text="List" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
+          <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
+          <Item text="Create" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
+          <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
+          <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory"/>
         </Item>
         <Item text="Device enrollment type" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceenrollmenttype"/>
         <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">

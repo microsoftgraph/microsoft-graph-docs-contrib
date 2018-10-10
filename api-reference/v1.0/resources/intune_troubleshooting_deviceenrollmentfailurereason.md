@@ -3,9 +3,7 @@
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Top level failure categories for enrollment.
-
 ## Members
-
 |Member|Value|Description|
 |:---|:---|:---|
 |unknown|0|Default value, failure reason is unknown.|
@@ -21,13 +19,5 @@ Top level failure categories for enrollment.
 |clientDisconnected|10|Client timed out or enrollment was aborted by enduser.|
 |userAbandonment|11|Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)|
 
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
-  ],
-}
--->
 
 

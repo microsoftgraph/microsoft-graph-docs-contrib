@@ -1,4 +1,4 @@
-# androidManagedAppRegistration resource type
+﻿# androidManagedAppRegistration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -40,12 +40,12 @@ Inherits from [managedAppRegistration](../resources/intune_mam_managedappregistr
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.managedAppRegistration",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.androidManagedAppRegistration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -69,11 +69,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-
-
-
-
 
 
 
