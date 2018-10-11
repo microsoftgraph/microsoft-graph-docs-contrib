@@ -44,7 +44,7 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 
 This method supports optional OData Query Parameters to help customize the response.
 
-- You can use `$filter` with the special `isOf` operator to filter a subset of types derrived from directoryObject.
+- You can use `$filter` with the special `isOf` operator to filter a subset of types derived from directoryObject.
   - You can combine multiple expressions using an `or`, which allows you to have a single delta query tracking multiple types. For example, the following delta query tracks changes to both `user` and `group` entities:
 
   ```http
@@ -60,6 +60,7 @@ This method supports optional OData Query Parameters to help customize the respo
 | Prefer | return=minimal <br><br>Specifying this header with a request that uses a `deltaLink` would return only the object properties that have changed since the last round. Optional. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ### Response
@@ -110,7 +111,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 #### Response 1
 
-The following is an example of the response when using `deltaLink` obtained from the query initialization.
+The following is an example of the response when using `deltaLink` obtained from the query initialization. No `isOf` filter has been used, so all types derived from directoryObject are returned.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -126,24 +127,47 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/directoryObjects/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "businessPhones": [
-          "businessPhones-value"
-      ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
-    }
+      "@odata.type": "#microsoft.graph.user",
+      "deletedDateTime": null,
+      "accountEnabled": true,
+      "ageGroup": null,
+      "city": null,
+      "companyName": null,
+      "consentProvidedForMinor": null,
+      "country": null,
+      "createdDateTime": null,
+      "department": null,
+      "displayName": "John Smith",
+      "givenName": null,
+      "jobTitle": null,
+      <...response trimmed for brevity...>
+    },
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-06-20T16:50:09Z",
+      "description": null,
+      "displayName": "testgp",
+      <...response trimmed for brevity...>
+    },
+    {
+      "@odata.type": "#microsoft.graph.application",
+      "id": "01754bb5-89de-4003-be72-9106a9fb16f2",
+      "deletedDateTime": null,
+      "isFallbackPublicClient": null,
+      "appId": "ddea71d4-fc72-4342-9b61-998fdb9c4562",
+      "api": {
+        "requestedAccessTokenVersion": null,
+        "oauth2PermissionScopes": []
+      },
+      <...response trimmed for brevity...>
+    },
+    <...response trimmed for brevity...>
   ]
 }
 ```
