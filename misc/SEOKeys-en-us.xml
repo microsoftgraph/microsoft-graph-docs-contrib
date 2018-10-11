@@ -33,7 +33,6 @@
   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
   <Item text="Files" ProdTag="OneDrive" url="/en-us/concepts/onedrive-concept-overview" />
-  <Item text="Financials (preview)" ProdTag="Dynamics 365 Business Central" url="/en-us/concepts/dynamics-business-central-concept-overview" />
   <Item text="Identity and access" ProdTag="Azure AD" url="/en-us/concepts/azuread-identity-access-management-concept-overview" />
   <Item text="Mail" ProdTag="Outlook" url="/en-us/concepts/outlook-mail-concept-overview" >
 	  <Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
@@ -1679,7 +1678,7 @@
       <Item text="Shared files" url="/en-us/api-reference/v1.0/api/drive_sharedwithme" SEOKeyword="Shared with me files, Microsoft Graph API, drive API" SEODescription="Get shared with me files." />
       <Item text="Get special folder" url="/en-us/api-reference/v1.0/api/drive_get_specialfolder" SEOKeyword="Special folders, Microsoft Graph API, drive API" SEODescription="Get special folders." />
     </Item>
-    <Item text="DriveItems" url="/en-us/api-reference/v1.0/resources/driveitem" SEOKeyword="item API, Microsoft Graph API, item API" SEODescription="The item resource represents an item contained in a drive, like a file or folder.">
+    <Item text="Drive items" url="/en-us/api-reference/v1.0/resources/driveitem" SEOKeyword="item API, Microsoft Graph API, item API" SEODescription="The item resource represents an item contained in a drive, like a file or folder.">
       <Item text="List children" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="List items, Microsoft Graph API, drive API" SEODescription="Retrieve a list of item objects." />
       <Item text="Get item" url="/en-us/api-reference/v1.0/api/driveitem_get" SEOKeyword="Get item, Microsoft Graph API, OneDrive Drive API" SEODescription="Retrieve the properties and relationships of item object." />
       <Item text="Get thumbnails" url="/en-us/api-reference/v1.0/api/driveitem_list_thumbnails" SEOKeyword="Get thumbnails, Microsoft Graph API, thumbnailset API" SEODescription="" />
@@ -1695,6 +1694,7 @@
       <Item text="Search items" url="/en-us/api-reference/v1.0/api/driveitem_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
       <Item text="Track changes" url="/en-us/api-reference/v1.0/api/driveitem_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
 	  <Item text="List versions" url="/en-us/api-reference/v1.0/api/driveitem_list_versions" />
+	  <Item text="Preview item" url="/en-us/api-reference/v1.0/api/driveitem_preview" />
     </Item>
     <Item text="Permissions" url="/en-us/api-reference/v1.0/resources/permission" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
       <Item text="Create sharing link" url="/en-us/api-reference/v1.0/api/driveitem_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
@@ -5409,8 +5409,9 @@
         <Item text="Recent files" url="/en-us/api-reference/beta/api/drive_recent" SEOKeyword="Recent files, Microsoft Graph API, drive API" SEODescription="Get recent files." />
         <Item text="Shared files" url="/en-us/api-reference/beta/api/drive_sharedwithme" SEOKeyword="Shared with me files, Microsoft Graph API, drive API" SEODescription="Get shared with me files." />
         <Item text="Get special folder" url="/en-us/api-reference/beta/api/drive_get_specialfolder" SEOKeyword="Special folders, Microsoft Graph API, drive API" SEODescription="Get special folders." />
+		<Item text="List followed items" url="/en-us/api-reference/beta/api/drive_list_following" />
       </Item>
-      <Item text="DriveItems" url="/en-us/api-reference/beta/resources/driveitem" SEOKeyword="item API, Microsoft Graph API, item API" SEODescription="The item resource represents an item contained in a drive, like a file or folder.">
+      <Item text="Drive items" url="/en-us/api-reference/beta/resources/driveitem" SEOKeyword="item API, Microsoft Graph API, item API" SEODescription="The item resource represents an item contained in a drive, like a file or folder.">
         <Item text="List children" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="List items, Microsoft Graph API, drive API" SEODescription="Retrieve a list of item objects." />
         <Item text="Get item" url="/en-us/api-reference/beta/api/driveitem_get" SEOKeyword="Get item, Microsoft Graph API, OneDrive Drive API" SEODescription="Retrieve the properties and relationships of item object." />
         <Item text="Get thumbnails" url="/en-us/api-reference/beta/api/driveitem_list_thumbnails" SEOKeyword="Get thumbnails, Microsoft Graph API, thumbnailset API" SEODescription="" />
@@ -5427,6 +5428,11 @@
         <Item text="Track changes" url="/en-us/api-reference/beta/api/driveitem_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
 		<Item text="Get preview link" url="/en-us/api-reference/beta/api/driveitem_preview" />
 		<Item text="List versions" url="/en-us/api-reference/beta/api/driveitem_list_versions" />
+		<Item text="Follow item" url="/en-us/api-reference/beta/api/driveitem_follow" />
+		<Item text="Unfollow item" url="/en-us/api-reference/beta/api/driveitem_unfollow" />
+		<Item text="Get item analytics" url="/en-us/api-reference/beta/api/itemanalytics_get" />
+		<Item text="Get activities by interval" url="/en-us/api-reference/beta/api/itemactivity_getbyinterval" />
+		<Item text="Preview item" url="/en-us/api-reference/beta/api/driveitem_preview" />
       </Item>
       <Item text="Permissions" url="/en-us/api-reference/beta/resources/permission" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
         <Item text="Create sharing link" url="/en-us/api-reference/beta/api/driveitem_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
@@ -5438,154 +5444,6 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/resources/dynamics_graph_reference" >
-		<Item text="Account" url="/en-us/api-reference/beta/resources/dynamics_account">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_account_get"/>
-		  </Item>
-		<Item text="Aged accounts payable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountspayable">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_agedaccountspayable_get"/>
-		  </Item>
-		<Item text="Aged accounts receivable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountsreceivable">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_agedaccountsreceivable_get"/>
-		  </Item>
-		<Item text="Balance sheet" url="/en-us/api-reference/beta/resources/dynamics_balancesheet">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_balancesheet_get"/>
-		  </Item>
-		<Item text="Cash flow statement" url="/en-us/api-reference/beta/resources/dynamics_cashflowstatement">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_cashflowstatement_get"/>
-		  </Item>
-		<Item text="Companies" url="/en-us/api-reference/beta/resources/dynamics_companies">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_companies_get"/>
-		  </Item>
-		<Item text="Company information" url="/en-us/api-reference/beta/resources/dynamics_companyinformation">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_companyinformation_get"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_companyinformation_update"/>
-		  </Item>
-		<Item text="Countries regions" url="/en-us/api-reference/beta/resources/dynamics_countriesregions">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_countriesregions_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_countriesregions"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_countriesregions_delete"/>
-		  </Item>
-		<Item text="Currencies" url="/en-us/api-reference/beta/resources/dynamics_currencies">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_currencies_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_currencies"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_currencies_delete"/>
-		  </Item>
-		<Item text="Customer" url="/en-us/api-reference/beta/resources/dynamics_customer">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_customer_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_customer"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_customer_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_customer_delete"/>
-		  </Item>
-		<Item text="Customer payment" url="/en-us/api-reference/beta/resources/dynamics_customerpayment">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_customerpayment_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_customerpayment"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_customerpayment_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_customerpayment_delete"/>
-		  </Item>
-		  <Item text="Customer payments journal" url="/en-us/api-reference/beta/resources/dynamics_customerpaymentsjournal">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_customerpaymentsjournal"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_delete"/>
-		  </Item>
-		<Item text="Dimension" url="/en-us/api-reference/beta/resources/dynamics_dimension">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_dimension_get"/>
-		  </Item>
-		<Item text="Dimension value" url="/en-us/api-reference/beta/resources/dynamics_dimensionvalue">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_dimensionvalue_get"/>
-		  </Item>
-		<Item text="Employee" url="/en-us/api-reference/beta/resources/dynamics_employee">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_employee_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_employee"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_employee_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_employee_delete"/>
-		  </Item>
-		 <Item text="General ledger entries" url="/en-us/api-reference/beta/resources/dynamics_generalledgerentries">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_generalledgerentries_get"/>
-		  </Item>
-		  <Item text="Income statement" url="/en-us/api-reference/beta/resources/dynamics_incomestatement">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_incomestatement_get"/>
-		</Item>
-		<Item text="IRS 1099" url="/en-us/api-reference/beta/resources/dynamics_irs1099">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_irs1099_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_irs1099"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_irs1099_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_irs1099_delete"/>
-		  </Item>
-		<Item text="Item" url="/en-us/api-reference/beta/resources/dynamics_item">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_item_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_item"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_item_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_item_delete"/>
-		  </Item>
-		<Item text="Item categories" url="/en-us/api-reference/beta/resources/dynamics_itemcategories">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_itemcategories_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_itemcategories"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_itemcategories_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_itemcategories_delete"/>
-		  </Item>
-		<Item text="Journal" url="/en-us/api-reference/beta/resources/dynamics_journal">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_journal_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_journal"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_journal_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_journal_delete"/>
-		  </Item>
-		<Item text="Journal line" url="/en-us/api-reference/beta/resources/dynamics_journalline">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_journalline_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_journalline"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_journalline_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_journalline_delete"/>
-		  </Item>
-		<Item text="Payment methods" url="/en-us/api-reference/beta/resources/dynamics_paymentmethods">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_paymentmethods"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_delete"/>
-		  </Item>
-		<Item text="Payment terms" url="/en-us/api-reference/beta/resources/dynamics_paymentterms">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_paymentterms_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_paymentterms"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_paymentterms_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_paymentterms_delete"/>
-		  </Item>
-		<Item text="Retained earnings statement" url="/en-us/api-reference/beta/resources/dynamics_retainedearningsstatement">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_retainedearningsstatement_get"/>
-		  </Item>
-		<Item text="Shipment methods" url="/en-us/api-reference/beta/resources/dynamics_shipmentmethods">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_shipmentmethods"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_delete"/>
-		  </Item>
-		<Item text="Tax area" url="/en-us/api-reference/beta/resources/dynamics_taxarea">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_taxarea_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_taxarea"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_taxarea_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_taxarea_delete"/>
-		  </Item>
-		<Item text="Tax groups" url="/en-us/api-reference/beta/resources/dynamics_taxgroups">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_taxgroups_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_taxgroups"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_taxgroups_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_taxgroups_delete"/>
-		  </Item>
-		<Item text="Trial balance" url="/en-us/api-reference/beta/resources/dynamics_trialbalance">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_trialbalance_get"/>
-		  </Item>
-		<Item text="Units of measure" url="/en-us/api-reference/beta/resources/dynamics_unitsofmeasure">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_unitsofmeasure"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_delete"/>
-		  </Item>
-		<Item text="Vendor" url="/en-us/api-reference/beta/resources/dynamics_vendor">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_vendor_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_vendor"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_vendor_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_vendor_delete"/>
-		  </Item>
-  </Item>
 	<Item text="Identity and access" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       <Item text="Access reviews" url="/en-us/api-reference/beta/resources/accessreviews_root" SEOKeyword="Access review API, Microsoft Graph API, accessReview API" SEODescription="The Access review API lets you validate group and app access and membership.">
         <Item text="Access review" url="/en-us/api-reference/beta/resources/accessreview" SEOKeyword="Access review API, Microsoft Graph API, accessReview resource">
@@ -6188,6 +6046,8 @@
         <Item text="Get site" url="/en-us/api-reference/beta/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
         <Item text="Get lists" url="/en-us/api-reference/beta/api/list_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
         <Item text="List subsites" url="/en-us/api-reference/beta/api/site_list_subsites" SEOKeyword="sharepoint, list subsites" SEODescription="" />
+		<Item text="Get site analytics" url="/en-us/api-reference/beta/api/itemanalytics_get" />
+		<Item text="Get activities by interval" url="/en-us/api-reference/beta/api/itemactivity_getbyinterval" />	
       </Item>
       <Item text="Lists" url="/en-us/api-reference/beta/resources/list" SEOKeyword="sharepoint, list, lists, microsoft graph api, sharepoint list api">
         <Item text="Get list" url="/en-us/api-reference/beta/api/list_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
@@ -6195,13 +6055,22 @@
         <Item text="Create list" url="/en-us/api-reference/beta/api/list_create" SEOKeyword="sharepoint, create list, create, microsoft graph api, sharepoint list api" SEODescription="" />
 
       </Item>
-      <Item text="ListItems" url="/en-us/api-reference/beta/resources/listitem" SEOKeyword="sharepoint, listitems, microsoft graph api, sharepoint list api" SEODescription="">
+      <Item text="List items" url="/en-us/api-reference/beta/resources/listitem" SEOKeyword="sharepoint, listitems, microsoft graph api, sharepoint list api" SEODescription="">
         <Item text="Get item" url="/en-us/api-reference/beta/api/listitem_get" SEOKeyword="sharepoint, get item, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Create item" url="/en-us/api-reference/beta/api/listitem_create" SEOKeyword="sharepoint, create item, create, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Update item" url="/en-us/api-reference/beta/api/listitem_update" SEOKeyword="sharepoint, update item, update, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Delete item" url="/en-us/api-reference/beta/api/listitem_delete" SEOKeyword="sharepoint, delete item, delete, microsoft graph api, sharepoint list api" SEODescription="" />
 		<Item text="List versions" url="/en-us/api-reference/beta/api/listitem_list_versions" />
+		<Item text="Get item analytics" url="/en-us/api-reference/beta/api/itemanalytics_get" />
+		<Item text="Get activities by interval" url="/en-us/api-reference/beta/api/itemactivity_getbyinterval" />		
       </Item>
+	  <Item text="Pages" url="/en-us/api-reference/beta/resources/sitepage" >
+		<Item text="List pages" url="/en-us/api-reference/beta/api/sitepage_list" />
+		<Item text="Get page" url="/en-us/api-reference/beta/api/sitepage_get" />
+		<Item text="Create page" url="/en-us/api-reference/beta/api/sitepage_create" />
+		<Item text="Delete page" url="/en-us/api-reference/beta/api/sitepage_delete" />
+		<Item text="Publish page" url="/en-us/api-reference/beta/api/sitepage_publish" />
+	  </Item>
     </Item>
 	<Item text="Social intelligence" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
@@ -6274,7 +6143,7 @@
         <Item text="Update progress task board format" url="/en-us/api-reference/beta/api/plannerprogresstaskboardtaskformat_update" />
       </Item>
     </Item>
-    <Item text="Teamwork (preview)" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
+    <Item text="Teamwork" ProdTag="Microsoft Teams" url="/en-us/api-reference/beta/resources/teams_api_overview" SEOKeyword="Teams API, Microsoft Graph API, Microsoft Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
       <Item text="Team" url="/en-us/api-reference/beta/resources/team" >
 		<Item text="Create team" url="/en-us/api-reference/beta/api/team_put_teams" />
 		<Item text="Get team" url="/en-us/api-reference/beta/api/team_get" />
