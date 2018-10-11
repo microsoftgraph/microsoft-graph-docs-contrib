@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -18,8 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /teams/{id}/apps/{id}
 ```
-## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
