@@ -62,7 +62,7 @@ Here is a JSON representation of the resource.
   ],
   "userId": "String",
   "appIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "@odata.type": "microsoft.graph.mobileAppIdentifier",
     "packageId": "String"
   },
   "id": "String (identifier)",
