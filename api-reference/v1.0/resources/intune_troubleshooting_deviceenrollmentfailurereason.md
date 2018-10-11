@@ -20,4 +20,10 @@ Top level failure categories for enrollment.
 |userAbandonment|11|Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)|
 
 
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
+  ],
+}
+-->
