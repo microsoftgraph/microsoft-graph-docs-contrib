@@ -15,7 +15,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Reports APIs
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Addition    | v1.0    | Added the **Site ID** property to [getSharePointSiteUsageDetail](../api-reference/v1.0/api/reportroot_getSharePointSiteUsageDetail.md). |
+| Addition    | v1.0    | Added the **Site ID** property to [getSharePointSiteUsageDetail](../api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail.md). |
 
 
 ## September 2018
