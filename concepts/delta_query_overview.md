@@ -67,6 +67,7 @@ Delta query is currently supported for the following resources.
 | **Resource collection** | **API** |
 |:------ | :------ |
 | Applications (preview) | [delta](../api-reference/beta/api/application_delta.md) function of the [application](../api-reference/beta/resources/application.md) resource (preview) |
+| Directory objects | [delta](../api-reference/beta/api/directoryobject_delta.md) function of the [directoryObjects](../api-reference/beta/resources/directoryobject.md) resource (preview) |
 | Directory roles | [delta](../api-reference/beta/api/directoryrole_delta.md) function of the [directoryRole](../api-reference/beta/resources/directoryrole.md) resource (preview) |
 | Events in a calendar view (date range) of the primary calendar | [delta](../api-reference/v1.0/api/event_delta.md) function of the [event](../api-reference/v1.0/resources/event.md) resource |
 | Groups | [delta](../api-reference/v1.0/api/group_delta.md) function of the [group](../api-reference/v1.0/resources/group.md) resource |
