@@ -95,7 +95,6 @@ This resource supports:
 |description|String|An optional description for the group.|
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |groupTypes|String collection| Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property.|
-|hasMembersWithLicenseErrors|Boolean|true if the group has member or members with license error(s) from this group-based license assignment; otherwise, false. Read-only. Cannot view property. Only supports $filter.|
 |id|String|The unique identifier for the group. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isSubscribedByMail|Boolean|Default value is **true**. Indicates whether the current user is subscribed to receive email conversations.|
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.|
@@ -181,7 +180,6 @@ The following is a JSON representation of the resource
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
-  "hasMembersWithLicenseErrors": "Boolean",
   "id": "string (identifier)",
   "isFavorite": true,  
   "isSubscribedByMail": true,
