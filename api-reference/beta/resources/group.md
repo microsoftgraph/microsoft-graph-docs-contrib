@@ -114,6 +114,33 @@ This resource supports:
 |unseenCount|Int32|Count of posts that the current  user has not seen since his last visit.|
 |visibility|String| Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, **HiddenMembership**, or empty (which is interpreted as **Public**).|
 
+### Visibility property definitions
+
+The visibility of Unified groups (`"grouptypes" = ["Unified"]`) can be controlled through the **visibility** property. Here's the impact of each supported value:
+
+- `Public`
+
+    - Anyone can join the group without needing owner permission.   
+    - Anyone can view the contents of the group.   
+
+- `Private`
+
+    - Owner permission is needed to join the group.  
+    - Non-members cannot view the contents of the group.   
+
+- `HiddenMembership`
+
+    - Owner permission is needed to join the group.  
+    - Non-members cannot view the contents of the group.  
+    - Non-members cannot see the members of the group.   
+    - Global/company administrators, user administrators, and helpdesk administrators can view the membership of the group.
+    - Group appears in the global address book (GAL).
+
+Visibility can be set only when a group is created; it is not editable.
+
+Visibility is supported only for Unified groups; it is not supported for security groups.
+
+
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
