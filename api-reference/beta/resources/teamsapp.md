@@ -25,7 +25,7 @@ then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 
 |id			|string      |App id.|
 |name			|string      |Name of the app.|
 |version		|string      |Version of the app.|
-|distributionMethod		| string  |Where the app came from, values are "store", "organization", and "sideloaded" |
+|distributionMethod		| string  |Where the app came from, possible values are "store", "organization", and "sideloaded" |
 
 ## JSON representation
 
