@@ -2,9 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get newly created, updated, or deleted directoryObjects without having to perform a full read of the entire directoryObject collection. See [Track changes](../../../concepts/delta_query_overview.md) for details. 
-
-Using delta query with directoryObjects, instead of specific types such as user or group, allows you to create a single change tracking query for multiple types of entities. You can use `$filter` with the `isOf` operator to select a subset of types to return.
+Get newly created, updated, or deleted directory objects of the following types: [user](../../../api-reference/beta/resources/user), [group](../../../api-reference/beta/resources/group) and [organizational contact](../../../api-reference/beta/resources/orgcontact), in a single delta query. See [Track changes](../../../concepts/delta_query_overview.md) for details.
 
 ## Permissions
 
