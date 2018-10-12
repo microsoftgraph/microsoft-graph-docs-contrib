@@ -10,7 +10,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
+| Addition    | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
+| Addition    | Beta   | Added [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview) capability for [directoryObject](../api-reference/beta/api/directoryobject_delta.md) |
 
 ## September 2018
 
