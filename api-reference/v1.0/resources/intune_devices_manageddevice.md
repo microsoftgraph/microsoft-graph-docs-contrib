@@ -1,4 +1,4 @@
-# managedDevice resource type
+﻿# managedDevice resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -88,12 +88,12 @@ Devices that are managed or pre-enrolled through Intune
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedDevice"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -196,11 +196,6 @@ Here is a JSON representation of the resource.
   "partnerReportedThreatState": "String"
 }
 ```
-
-
-
-
-
 
 
 
