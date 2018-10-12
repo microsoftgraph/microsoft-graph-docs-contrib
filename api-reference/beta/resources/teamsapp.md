@@ -25,9 +25,7 @@ then use [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) 
 |id			|string      |App id.|
 |name			|string      |Name of the app.|
 |version		|string      |Version of the app.|
-|isBlocked		|bool        |An indication whether the app is blocked by tenant. Note: this property is deprecated and will be removed in the future. It is currently always false. |
-|installedState |[teamsAppInstalledState](../resources/teamsappinstalledstate.md)   |App's install state. Note: this property is deprecated and will be removed in the future. It is currently always "installed".|
-|context		|[teamsAppContext](../resources/teamsappcontext.md)  |Where the app came from. Note: this property will soon be replaced by a property named "distributionMethod" with values "store", "organization", and "sideloaded" |
+|distributionMethod		| string  |Where the app came from, values are "store", "organization", and "sideloaded" |
 
 ## JSON representation
 
