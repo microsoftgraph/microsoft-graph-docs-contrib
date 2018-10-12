@@ -20,9 +20,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /teams/{id}/channels/{id}/tabs
 ```
 
-## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
-
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

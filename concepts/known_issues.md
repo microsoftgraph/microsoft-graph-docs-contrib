@@ -22,25 +22,40 @@ Failure to read or update a photo, in this case, would result in the following e
 	}
 ```
 
-
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
 
-## Groups and Microsoft Teams
+## Microsoft Teams
 
 >**Note** Microsoft Teams is currently in preview and is available only in the Microsoft Graph beta endpoint.
 
-### Policy
+### Application permissions
 
-Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
+When making changes to teams and channels using application permissions, 
+Microsoft Teams renders the control message posted to the General channel with a blank name instead of the application name. 
+This will be addressed in a future update. 
+The fix will retroactively update control messages that are already posted.
+
+### Create chat thread API
+
+The current API to [create a chat thread](../api-reference/beta/api/channel_post_chatthreads.md) 
+will be replaced with a richer API that is consistent with the schema for [listing channel messages](../api-reference/beta/api/channel_list_messages.md).
+
+### Graph Explorer and Global Admins
+
+Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
+
+## Groups
 
 ### Permissions for groups and Microsoft Teams
 
-Microsoft Graph exposes two permissions (*Group.Read.All* and *Group.ReadWrite.All*) for access to the APIs for groups and Microsoft Teams.
-These permissions must be consented to by an administrator (which is a change from preview).  In the future, we plan to add new permissions for groups and teams that users can consent to.
+Microsoft Graph exposes two permissions ([*Group.Read.All*](../concepts/permissions_reference.md#group-permissions) and [*Group.ReadWrite.All*](../concepts/permissions_reference.md#group-permissions)) for access to the APIs for groups and Microsoft Teams.
+These permissions must be consented to by an administrator.
+In the future, we plan to add new permissions for groups and teams that users can consent to.
 
-Also, only the API for core group administration and management supports access using delegated or app-only permissions. All other features of the group API support only delegated permissions.
+Also, only the API for core group administration and management supports access using delegated or app-only permissions. 
+All other features of the group API support only delegated permissions.
 
 Examples of group features that support delegated and app-only permissions:
 
@@ -54,19 +69,10 @@ Examples of group features that support only delegated permissions:
 * Group conversations, events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
-* Microsoft Teams channels and chats
 
-### Teams in Microsoft Teams (preview)
+### Policy
 
-Microsoft Teams and Office 365 groups [share similar functionality](../api-reference/beta/resources/teams_api_overview.md). All group APIs can be used with teams, with the exception that the Create group API does not currently allow you to create a team.  Future API releases will support this.
-
-### Microsoft Teams chat threads and chat messages (preview)
-
-Currently, you can create chat threads in channels, but you cannot read existing chat threads or add replies to them. Also, you cannot read or write direct chats between users that are outside the scope of a team or channel.  Future API releases will add additional capabilities in this area.
-
-### Microsoft Teams user's list of joined teams (preview)
-
-Currrently, [listing the teams a user has joined](../api-reference/beta/api/user_list_joinedteams.md) only works for the 'me' user for which the caller has [delegated permissions](permissions_reference.md).  Future releases will support this operation for any specified user ID.
+Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
 
 ### Adding and getting attachments of group posts
 
@@ -81,7 +87,6 @@ There is currently an issue that prevents setting the **allowExternalSenders** p
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
-
 
 ## Bookings
 
