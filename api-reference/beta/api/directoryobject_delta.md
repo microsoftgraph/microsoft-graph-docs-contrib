@@ -42,11 +42,7 @@ In subsequent requests, copy and apply the `nextLink` or `deltaLink` URL from th
 This method supports optional OData Query Parameters to help customize the response.
 
 - You can use `$filter` with the special `isOf` operator to filter a subset of types derived from directoryObject.
-  - You can combine multiple expressions using an `or`, which allows you to have a single delta query tracking multiple types. For example, the following delta query tracks changes to both `user` and `group` entities:
-
-  ```http
-  GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')
-  ```
+  - You can combine multiple expressions using an `or`, which allows you to have a single delta query tracking multiple types. See the [third example](#request-3) for details.
 
 ## Request headers
 
@@ -175,24 +171,25 @@ Content-type: application/json
 
 #### Request 2
 
-The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
+The next example shows the use of the alternative minimal response behavior:
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "directoryObject_delta"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mobilePhone
+GET https://graph.microsoft.com/beta/directoryObjects/delta
+Prefer: return=minimal
 ```
 
 #### Response 2
 
-The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that `jobTitle` and `mobilePhone` have the value of `null` which means that they may have not changed or have been set to an empty value.
+The following is an example of the response when using `deltaLink` obtained from the query initialization. Note only the properties that have actually changed are returned.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 
@@ -201,39 +198,50 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/directoryObjects/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
-      "jobTitle": null,
-      "mobilePhone": null
-    }
+      "@odata.type": "#microsoft.graph.user",
+      "id": "01754bb5-89de-4003-be72-9106a9fb16f2",
+      "displayName": "John Smith"
+    },
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "id": "cf33844a-b6f8-4d4d-84f4-54e8d45094f0",
+      "description": null,
+      "displayName": "testgp"
+    },
+    {
+      "@odata.type": "#microsoft.graph.orgContact",
+      "id": "8f301319-4b4e-493f-8067-bce1dec76e7a",
+      "businessPhones": "12345"
+    },
+    <...response trimmed for brevity...>
   ]
 }
 ```
 
 #### Request 3
 
-The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:
+The next example shows the initial request using the `isOf` operator to filter out only user and group entities:
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "directoryobject_delta"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mobilePhone
-Prefer: return=minimal
+GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')
 ```
 
 #### Response 3
 
-The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that the `mobilePhone` property is not included, which means it has not changed since the last delta query; `displayName` and `jobTitle` are included which means their values have changed.
+The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that only user and group objects are returned:
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.user",
+  "@odata.type": "microsoft.graph.directoryObject",
   "isCollection": true
 } -->
 
@@ -242,13 +250,37 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users",
-  "@odata.nextLink":"https://graph.microsoft.com/beta/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#directoryObjects",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/directoryObjects/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
-      "jobTitle": null
-    }
+      "@odata.type": "#microsoft.graph.user",
+      "id": "01754bb5-89de-4003-be72-9106a9fb16f2",
+      "deletedDateTime": null,
+      "accountEnabled": true,
+      "ageGroup": null,
+      "city": null,
+      "companyName": null,
+      "consentProvidedForMinor": null,
+      "country": null,
+      "createdDateTime": null,
+      "department": null,
+      "displayName": "John Smith",
+      "givenName": null,
+      "jobTitle": null,
+      <...response trimmed for brevity...>
+    },
+    {
+      "@odata.type": "#microsoft.graph.group",
+      "id": "cf33844a-b6f8-4d4d-84f4-54e8d45094f0",
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-06-20T16:50:09Z",
+      "description": null,
+      "displayName": "testgp",
+      <...response trimmed for brevity...>
+    },
+    <...response trimmed for brevity...>
   ]
 }
 ```
