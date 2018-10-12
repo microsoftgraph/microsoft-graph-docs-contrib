@@ -8,7 +8,6 @@ Get newly created, updated, or deleted directory objects of the following types:
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All  |
@@ -130,6 +129,7 @@ Content-type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.user",
+      "id": "01754bb5-89de-4003-be72-9106a9fb16f2",
       "deletedDateTime": null,
       "accountEnabled": true,
       "ageGroup": null,
@@ -146,6 +146,7 @@ Content-type: application/json
     },
     {
       "@odata.type": "#microsoft.graph.group",
+      "id": "cf33844a-b6f8-4d4d-84f4-54e8d45094f0",
       "deletedDateTime": null,
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
@@ -154,15 +155,17 @@ Content-type: application/json
       <...response trimmed for brevity...>
     },
     {
-      "@odata.type": "#microsoft.graph.application",
-      "id": "01754bb5-89de-4003-be72-9106a9fb16f2",
-      "deletedDateTime": null,
-      "isFallbackPublicClient": null,
-      "appId": "ddea71d4-fc72-4342-9b61-998fdb9c4562",
-      "api": {
-        "requestedAccessTokenVersion": null,
-        "oauth2PermissionScopes": []
-      },
+      "@odata.type": "#microsoft.graph.orgContact",
+      "id": "8f301319-4b4e-493f-8067-bce1dec76e7a",
+      "businessPhones": ["string"],
+      "city": "string",
+      "companyName": "string",
+      "country": "string",
+      "department": "string",
+      "displayName": "string",
+      "givenName": "string",
+      "id": "string (identifier)",
+      "jobTitle": "string",
       <...response trimmed for brevity...>
     },
     <...response trimmed for brevity...>
