@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To begin tracking changes, you make a request including the delta function on the directoryRole resource. 
+To begin tracking changes, you make a request including the **delta** function on the [directoryRole](../resources/directoryrole.md) resource.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,20 +41,21 @@ includes the encoded, desired parameters.
 
 This method supports OData Query Parameters to help customize the response.
 
-- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
-_id_ property is always returned. 
+- You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.
 
 - There is limited support for `$filter`:
-  * The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of ids you can specify is limited by the maximum URL length.
 
+  - The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of ids you can specify is limited by the maximum URL length.
 
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ### Response
