@@ -22,7 +22,7 @@ To begin tracking changes, you make a request including the **delta** function o
 GET /directoryRoles/delta
 ```
 
-### Query parameters
+## Query parameters
 
 Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
@@ -37,9 +37,9 @@ includes the encoded, desired parameters.
 | $deltatoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](../../../concepts/delta_query_overview.md) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |
 
-## Optional query parameters
+### OData query parameters
 
-This method supports OData Query Parameters to help customize the response.
+This method supports OData query parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The _id_ property is always returned.
 
@@ -60,27 +60,27 @@ Do not supply a request body for this method.
 
 ### Response
 
-If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
+If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
 - If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
 
-- If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `deltaLink` URL to learn about changes to the resource in the future.
-
-See:</br>
-- [Using Delta Query](../../../concepts/delta_query_overview.md) for more details</br>
-- [Get incremental changes for users](../../../concepts/delta_query_users.md) for an example requests.</br>
+- If a `deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Save `deltaLink` URL and apply it in the next **delta** call to learn about changes to the resource in the future.
 
 ### Example
+
 ##### Request
+
 <!-- {
   "blockType": "request",
   "name": "directoryRole_delta"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 ```
 
 ##### Response
+
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- { 
   "blockType": "response",
@@ -105,6 +105,11 @@ Content-type: application/json
   ]
 }
 ```
+
+### See also
+
+- [Use delta query to track changes in Microsoft Graph data](../../../concepts/delta_query_overview.md) for more details
+- [Get incremental changes for users](../../../concepts/delta_query_users.md) for an example requests.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
