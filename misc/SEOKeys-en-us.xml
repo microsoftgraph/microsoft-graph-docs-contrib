@@ -4787,7 +4787,7 @@
           <Item text="windowsDefenderUpdateSignatures action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures"/>
           <Item text="updateWindowsDeviceAccount action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount"/>
           <Item text="revokeAppleVppLicenses action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses"/>
-          <Item text="overrideComplianceState action" url="/en-us/api-reference/beta/api/ntune_deviceconfig_managedDevice_overrideComplianceState"/>
+          <Item text="overrideComplianceState action" url="/en-us/api-reference/beta/api/intune_deviceconfig_managedDevice_overrideComplianceState"/>
         </Item>
         <Item text="Managed device cleanup settings" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicecleanupsettings"/>
         <Item text="Managed device models and manufacturers" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicemodelsandmanufacturers"/>
