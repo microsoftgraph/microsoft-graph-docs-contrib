@@ -54,7 +54,7 @@ Content-Type: application/json
 
 {
   "id": "e3e29acb-8c79-412b-b746-e6c39ff4cd22",
-  "developerProvidedId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
+  "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
   "name": "Test App",
   "version": "1.0.0",
   "distributionMethod": "Tenant"

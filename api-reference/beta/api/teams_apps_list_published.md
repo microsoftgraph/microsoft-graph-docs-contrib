@@ -47,7 +47,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
-      "developerProvidedId": "f31b1263-ba99-435a-a679-911d24850d7c",
+      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
       "distributionMethod":"Organization"
@@ -74,7 +74,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
-      "developerProvidedId": "f31b1263-ba99-435a-a679-911d24850d7c",
+      "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
       "distributionMethod":"Organization"
