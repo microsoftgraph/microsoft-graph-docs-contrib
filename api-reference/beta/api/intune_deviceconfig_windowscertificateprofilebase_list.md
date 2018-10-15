@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 706
+Content-Length: 809
 
 {
   "value": [
@@ -55,6 +56,10 @@ Content-Length: 706
       "@odata.type": "#microsoft.graph.windowsCertificateProfileBase",
       "id": "c0979ce1-9ce1-c097-e19c-97c0e19c97c0",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -62,7 +67,7 @@ Content-Length: 706
       "renewalThresholdPercentage": 10,
       "keyStorageProvider": "useTpmKspOtherwiseFail",
       "subjectNameFormat": "commonNameIncludingEmail",
-      "subjectAlternativeNameType": "userPrincipalName",
+      "subjectAlternativeNameType": "emailAddress",
       "certificateValidityPeriodValue": 14,
       "certificateValidityPeriodScale": "months"
     }

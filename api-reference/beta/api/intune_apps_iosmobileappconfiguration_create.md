@@ -43,7 +43,7 @@ The following table shows the properties that are required when you create the i
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|
-|settingXml|String|mdm app configuration.|
+|encodedSettingXml|Binary|mdm app configuration Base64 binary.|
 |settings|[appConfigurationSettingItem](../resources/intune_apps_appconfigurationsettingitem.md) collection|app configuration setting items.|
 
 
@@ -57,7 +57,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 584
+Content-length: 598
 
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
@@ -68,7 +68,7 @@ Content-length: 584
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "settingXml": "Setting Xml value",
+  "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
   "settings": [
     {
       "@odata.type": "microsoft.graph.appConfigurationSettingItem",
@@ -85,7 +85,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 692
+Content-Length: 706
 
 {
   "@odata.type": "#microsoft.graph.iosMobileAppConfiguration",
@@ -98,7 +98,7 @@ Content-Length: 692
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7,
-  "settingXml": "Setting Xml value",
+  "encodedSettingXml": "ZW5jb2RlZFNldHRpbmdYbWw=",
   "settings": [
     {
       "@odata.type": "microsoft.graph.appConfigurationSettingItem",

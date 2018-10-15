@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Not supported.                           |
+| Delegated (work or school account)     | Reports.Read.All                         |
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
@@ -23,7 +23,7 @@ GET /reports/getYammerGroupsActivityDetail(period='{period_value}')
 GET /reports/getYammerGroupsActivityDetail(date={date_value})
 ```
 
-## Request parameters
+## Function parameters
 
 In the request URL, provide one of the following parameters with a valid value.
 
@@ -36,9 +36,9 @@ In the request URL, provide one of the following parameters with a valid value.
 
 ## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                              |
+| :------------ | :--------------------------------------- |
+| Authorization | Bearer {token}. Required.                |
 | If-None-Match | If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned. Optional. |
 
 ## Response
@@ -68,8 +68,9 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
-<!-- {
+<!--{
   "blockType": "request",
+  "isComposable": true,
   "name": "reportroot_getyammergroupsactivityuserdetail"
 }-->
 
@@ -81,7 +82,31 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(perio
 
 The following is an example of the response.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+
+```http
+HTTP/1.1 302 Found
+Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
+```
+
+#### Request
+If called with a `date`, the report is scoped to activity on the given date.
+
+<!--{
+  "blockType": "request",
+  "isComposable": true,
+  "name": "reportroot_getyammergroupsactivityuserdetail_date"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(date='2018-03-05')
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
 ```http
 HTTP/1.1 302 Found
@@ -92,9 +117,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "stream"
+  "blockType": "ignored"
 } -->
 
 ```http

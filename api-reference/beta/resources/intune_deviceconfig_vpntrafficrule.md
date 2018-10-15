@@ -15,8 +15,8 @@ VPN Traffic Rule definition.
 |localAddressRanges|[iPv4Range](../resources/intune_deviceconfig_ipv4range.md) collection|Local address range. This collection can contain a maximum of 500 elements.|
 |remoteAddressRanges|[iPv4Range](../resources/intune_deviceconfig_ipv4range.md) collection|Remote address range. This collection can contain a maximum of 500 elements.|
 |appId|String|App identifier, if this traffic rule is triggered by an app.|
-|appType|String|App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.|
-|routingPolicyType|String|When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`.|
+|appType|[vpnTrafficRuleAppType](../resources/intune_deviceconfig_vpntrafficruleapptype.md)|App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.|
+|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune_deviceconfig_vpntrafficruleroutingpolicytype.md)|When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`.|
 |claims|String|Claims associated with this traffic rule.|
 
 ## Relationships
@@ -25,7 +25,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.vpnTrafficRule"
 }
 -->

@@ -13,7 +13,7 @@ Only the read and update operations are supported on tenants; create and delete 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization_get.md) | [organization](organization.md) |Read properties and relationships of organization object.|
-|[Update](../api/organization_update.md) | [organization](organization.md)  |Update organization object. (Only the **marketingNotificationMails** and **technicalNotificationMails** properties can be updated.) |
+|[Update](../api/organization_update.md) | [organization](organization.md)  |Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones** and **privacyProfile**. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -32,10 +32,12 @@ Only the read and update operations are supported on tenants; create and delete 
 |dirSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default).|
 |displayName|String|The display name for the tenant.|
 |id|String|The unique identifier for the tenant. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|isMultipleDataLocationsForServicesEnabled|Boolean|**true** if organization is Multi-Geo enabled; **false** if organization is not Multi-Geo enabled; **null** (default). Read-only. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|String collection| Not nullable.            |
 |objectType|String|A string that identifies the object type. For tenants the value is always “Company”. |
 |postalCode|String| Postal code of the address for the organization |
 |preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example "en". |
+|privacyProfile|[privacyProfile](privacyprofile.md)| The privacy profile of an organization.            |
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection| Not nullable.            |
 |provisioningErrors|ProvisioningError collection| Not nullable.            |
 |securityComplianceNotificationMails|String collection||
@@ -71,11 +73,13 @@ Here is a JSON representation of the resource
   "countryLetterCode": "string",
   "displayName": "string",
   "id": "string (identifier)",
+  "isMultipleDataLocationsForServicesEnabled": "boolean",
   "marketingNotificationEmails": ["string"],
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
+  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "securityComplianceNotificationMails": ["string"],
   "securityComplianceNotificationPhones": ["string"],

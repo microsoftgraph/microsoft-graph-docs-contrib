@@ -8,8 +8,6 @@ Device app management singleton entity.
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get deviceAppManagement](../api/intune_mam_deviceappmanagement_get.md)|[deviceAppManagement](../resources/intune_mam_deviceappmanagement.md)|Read properties and relationships of the [deviceAppManagement](../resources/intune_mam_deviceappmanagement.md) object.|
-|[Update deviceAppManagement](../api/intune_mam_deviceappmanagement_update.md)|[deviceAppManagement](../resources/intune_mam_deviceappmanagement.md)|Update the properties of a [deviceAppManagement](../resources/intune_mam_deviceappmanagement.md) object.|
 
 ## Properties
 |Property|Type|Description|

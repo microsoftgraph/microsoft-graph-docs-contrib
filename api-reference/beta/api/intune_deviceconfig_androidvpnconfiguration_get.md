@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -50,13 +51,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1029
+Content-Length: 1247
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.androidVpnConfiguration",
     "id": "d4c48852-8852-d4c4-5288-c4d45288c4d4",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -69,7 +74,6 @@ Content-Length: 1029
       {
         "@odata.type": "microsoft.graph.vpnServer",
         "description": "Description value",
-        "ipAddressOrFqdn": "Ip Address Or Fqdn value",
         "address": "Address value",
         "isDefaultServer": true
       }
@@ -79,6 +83,13 @@ Content-Length: 1029
       {
         "@odata.type": "microsoft.graph.keyValue",
         "key": "Key value",
+        "value": "Value value"
+      }
+    ],
+    "customKeyValueData": [
+      {
+        "@odata.type": "microsoft.graph.keyValuePair",
+        "name": "Name value",
         "value": "Value value"
       }
     ],

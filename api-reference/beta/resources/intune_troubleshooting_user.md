@@ -23,6 +23,8 @@ Not yet documented
 |Relationship|Type|Description|
 |:---|:---|:---|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune_troubleshooting_devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for this user.|
+|mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune_troubleshooting_mobileappintentandstate.md) collection|The list of troubleshooting events for this user.|
+|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune_troubleshooting_mobileapptroubleshootingevent.md) collection|The list of mobile app troubleshooting events for this user.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

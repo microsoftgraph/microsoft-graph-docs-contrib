@@ -38,15 +38,19 @@ The following table shows the properties that are required when you create the w
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object|
-|deploymentProfileAssignmentStatus|String|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
+|deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune_enrollment_windowsautopilotprofileassignmentstatus.md)|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
+|deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune_enrollment_windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
 |orderIdentifier|String|Order Identifier of the Windows autopilot device.|
+|purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
 |productKey|String|Product Key of the Windows autopilot device.|
 |manufacturer|String|Oem manufacturer of the Windows autopilot device.|
 |model|String|Model name of the Windows autopilot device.|
-|enrollmentState|String|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`.|
+|enrollmentState|[enrollmentState](../resources/intune_enrollment_enrollmentstate.md)|Intune enrollment state of the Windows autopilot device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
+|addressableUserName|String|Addressable user name.|
+|userPrincipalName|String|User Principal Name.|
 
 
 
@@ -59,19 +63,23 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 502
+Content-length: 755
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
   "deploymentProfileAssignmentStatus": "assignedInSync",
+  "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
   "manufacturer": "Manufacturer value",
   "model": "Model value",
   "enrollmentState": "enrolled",
-  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00"
+  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
+  "addressableUserName": "Addressable User Name value",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -80,20 +88,24 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 551
+Content-Length: 804
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
   "id": "fac6f0b1-f0b1-fac6-b1f0-c6fab1f0c6fa",
   "deploymentProfileAssignmentStatus": "assignedInSync",
+  "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
   "manufacturer": "Manufacturer value",
   "model": "Model value",
   "enrollmentState": "enrolled",
-  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00"
+  "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
+  "addressableUserName": "Addressable User Name value",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

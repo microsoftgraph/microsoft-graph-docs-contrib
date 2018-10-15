@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2615
+Content-Length: 3558
 
 {
   "value": {
@@ -88,6 +88,12 @@ Content-Length: 2615
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",
     "minimumWarningAppVersion": "Minimum Warning App Version value",
+    "minimumWipeOsVersion": "Minimum Wipe Os Version value",
+    "minimumWipeAppVersion": "Minimum Wipe App Version value",
+    "appActionIfDeviceComplianceRequired": "wipe",
+    "appActionIfMaximumPinRetriesExceeded": "wipe",
+    "pinRequiredOnLaunchInsteadOfBiometric": true,
+    "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
     "appDataEncryptionType": "afterDeviceRestart",
     "screenCaptureBlocked": true,
     "encryptAppData": true,
@@ -117,7 +123,17 @@ Content-Length: 2615
         "value": "Value value"
       }
     ],
-    "faceIdBlocked": true
+    "faceIdBlocked": true,
+    "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
+    "minimumWipePatchVersion": "Minimum Wipe Patch Version value",
+    "allowedIosDeviceModels": "Allowed Ios Device Models value",
+    "appActionIfIosDeviceModelNotAllowed": "wipe",
+    "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
+    "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
+    "thirdPartyKeyboardsBlocked": true,
+    "filterOpenInToOnlyManagedApps": true,
+    "disableProtectionOfManagedOutboundOpenInData": true,
+    "protectInboundDataFromUnknownSources": true
   }
 }
 ```

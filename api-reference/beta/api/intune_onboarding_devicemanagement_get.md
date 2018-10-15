@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1230
+Content-Length: 1394
 
 {
   "value": {
@@ -83,6 +83,11 @@ Content-Length: 1230
         "value": "dmFsdWU="
       },
       "showNameNextToLogo": true,
+      "landingPageCustomizedImage": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "Type value",
+        "value": "dmFsdWU="
+      },
       "showDisplayNameNextToLogo": true
     }
   }

@@ -6,7 +6,7 @@
 
 IP V4 range
 
-Inherits from [ipRange](../resources/intune_mam_iprange.md)
+Inherits from [ipRange](../resources/intune_shared_iprange.md)
 
 ## Properties
 |Property|Type|Description|
@@ -20,7 +20,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iPv4Range"
 }
 -->

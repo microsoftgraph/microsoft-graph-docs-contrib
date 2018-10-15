@@ -21,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -47,7 +48,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1157
+Content-Length: 1516
 
 {
   "value": [
@@ -55,13 +56,17 @@ Content-Length: 1157
       "@odata.type": "#microsoft.graph.iosScepCertificateProfile",
       "id": "0deb8dbf-8dbf-0deb-bf8d-eb0dbf8deb0d",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
+      "supportsScopeTags": true,
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
       "renewalThresholdPercentage": 10,
       "subjectNameFormat": "commonNameAsEmail",
-      "subjectAlternativeNameType": "userPrincipalName",
+      "subjectAlternativeNameType": "emailAddress",
       "certificateValidityPeriodValue": 14,
       "certificateValidityPeriodScale": "months",
       "scepServerUrls": [
@@ -77,7 +82,15 @@ Content-Length: 1157
           "objectIdentifier": "Object Identifier value"
         }
       ],
-      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+      "certificateStore": "machine",
+      "customSubjectAlternativeNames": [
+        {
+          "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+          "sanType": "emailAddress",
+          "name": "Name value"
+        }
+      ]
     }
   ]
 }

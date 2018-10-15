@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 843
+Content-Length: 2352
 
 {
   "value": {
@@ -57,6 +57,10 @@ Content-Length: 843
     "id": "0b283420-3420-0b28-2034-280b2034280b",
     "subscriptionState": "active",
     "subscriptions": "intune",
+    "managedDeviceCleanupSettings": {
+      "@odata.type": "microsoft.graph.managedDeviceCleanupSettings",
+      "deviceInactivityBeforeRetirementInDays": "Device Inactivity Before Retirement In Days value"
+    },
     "adminConsent": {
       "@odata.type": "microsoft.graph.adminConsent",
       "shareAPNSData": "granted"
@@ -73,7 +77,48 @@ Content-Length: 843
       "pendingManualStepsDeviceCount": 13,
       "pendingOfflineScanDeviceCount": 13,
       "criticalFailuresDeviceCount": 11
-    }
+    },
+    "windowsMalwareOverview": {
+      "@odata.type": "microsoft.graph.windowsMalwareOverview",
+      "malwareDetectedDeviceCount": 10,
+      "malwareStateSummary": [
+        {
+          "@odata.type": "microsoft.graph.windowsMalwareStateCount",
+          "state": "actionFailed",
+          "deviceCount": 11
+        }
+      ],
+      "malwareExecutionStateSummary": [
+        {
+          "@odata.type": "microsoft.graph.windowsMalwareExecutionStateCount",
+          "executionState": "blocked",
+          "deviceCount": 11
+        }
+      ],
+      "malwareCategorySummary": [
+        {
+          "@odata.type": "microsoft.graph.windowsMalwareCategoryCount",
+          "category": "adware",
+          "deviceCount": 11
+        }
+      ],
+      "malwareNameSummary": [
+        {
+          "@odata.type": "microsoft.graph.windowsMalwareNameCount",
+          "malwareIdentifier": "Malware Identifier value",
+          "name": "Name value",
+          "deviceCount": 11
+        }
+      ],
+      "osVersionsSummary": [
+        {
+          "@odata.type": "microsoft.graph.osVersionCount",
+          "osVersion": "Os Version value",
+          "deviceCount": 11
+        }
+      ]
+    },
+    "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
   }
 }
 ```

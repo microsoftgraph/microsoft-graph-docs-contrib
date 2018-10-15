@@ -58,7 +58,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1444
+Content-length: 1390
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -67,9 +67,6 @@ Content-length: 1444
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
-    "permissions": [
-      "Permissions value"
-    ],
     "userPermissions": [
       "User Permissions value"
     ],
@@ -85,7 +82,7 @@ Content-length: 1444
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",
@@ -111,7 +108,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1493
+Content-Length: 1439
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -121,9 +118,6 @@ Content-Length: 1493
   "actor": {
     "@odata.type": "microsoft.graph.auditActor",
     "type": "Type value",
-    "permissions": [
-      "Permissions value"
-    ],
     "userPermissions": [
       "User Permissions value"
     ],
@@ -139,7 +133,7 @@ Content-Length: 1493
   "activityType": "Activity Type value",
   "activityOperationType": "Activity Operation Type value",
   "activityResult": "Activity Result value",
-  "correlationId": "<Unknown Primitive Type Edm.Guid>",
+  "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
   "resources": [
     {
       "@odata.type": "microsoft.graph.auditResource",

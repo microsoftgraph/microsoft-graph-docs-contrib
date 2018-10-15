@@ -2,7 +2,12 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Delete mailFolder.
+Delete the specified [mailFolder](../resources/mailfolder.md) or [mailSearchFolder](../resources/mailSearchFolder.md).
+
+You can specify a mail folder by its folder ID, or by its [well-known folder name](../resources/mailfolder.md), if one exists. 
+
+>**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the well-known folder name `recoverableitemsdeletions`). See [Deleted item retention](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -27,21 +32,21 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 Do not supply a request body for this method.
 
 ## Response
-
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
-Here is an example of the request.
+#### Request
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_mailfolder"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/mailFolders/{id}
+DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/
 ```
-##### Response
-Here is an example of the response. 
+
+#### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

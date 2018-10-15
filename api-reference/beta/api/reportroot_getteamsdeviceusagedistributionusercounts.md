@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegated (work or school account)     | Not supported.                           |
+| Delegated (work or school account)     | Reports.Read.All                         |
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getTeamsDeviceUsageDistributionUserCounts(period='D7')
 ```
 
-## Request parameters
+## Function parameters
 
 In the request URL, provide the following parameter with a valid value.
 

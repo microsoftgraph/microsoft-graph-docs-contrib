@@ -29,7 +29,6 @@ Singleton entity that acts as a container for all device management functionalit
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune_onboarding_mobilethreatdefenseconnector.md) collection|The list of Mobile threat Defense connectors configured by the tenant.|
 |deviceManagementPartners|[deviceManagementPartner](../resources/intune_onboarding_devicemanagementpartner.md) collection|The list of Device Management Partners configured by the tenant.|
-|depOnboardingSettings|[depOnboardingSetting](../resources/intune_onboarding_deponboardingsetting.md) collection|Intune only supports using 1 DEP token per tenant. This collections will support potential future development of multiple DEP tokens per-tenant.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -71,6 +70,11 @@ Here is a JSON representation of the resource.
       "value": "binary"
     },
     "showNameNextToLogo": true,
+    "landingPageCustomizedImage": {
+      "@odata.type": "microsoft.graph.mimeContent",
+      "type": "String",
+      "value": "binary"
+    },
     "showDisplayNameNextToLogo": true
   }
 }

@@ -20,7 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/deviceSetupConfigurations/{deviceSetupConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -41,7 +43,7 @@ If successful, this method returns a `200 OK` response code and [windowsDomainJo
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceSetupConfigurations/{deviceSetupConfigurationId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### Response
@@ -49,20 +51,25 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 560
+Content-Length: 716
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsDomainJoinConfiguration",
     "id": "40118d08-8d08-4011-088d-1140088d1140",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
     "version": 7,
     "computerNameStaticPrefix": "Computer Name Static Prefix value",
     "computerNameSuffixRandomCharCount": 1,
-    "activeDirectoryDomainName": "Active Directory Domain Name value"
+    "activeDirectoryDomainName": "Active Directory Domain Name value",
+    "organizationalUnit": "Organizational Unit value"
   }
 }
 ```

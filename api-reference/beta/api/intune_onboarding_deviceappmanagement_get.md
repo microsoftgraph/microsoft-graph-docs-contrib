@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 474
+Content-Length: 540
 
 {
   "value": {
@@ -58,7 +58,8 @@ Content-Length: 474
     "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "2016-12-31T23:57:45.2453148-08:00",
     "isEnabledForMicrosoftStoreForBusiness": true,
     "microsoftStoreForBusinessLanguage": "Microsoft Store For Business Language value",
-    "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "2017-01-01T00:02:00.0421137-08:00"
+    "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "2017-01-01T00:02:00.0421137-08:00",
+    "microsoftStoreForBusinessPortalSelection": "companyPortal"
   }
 }
 ```

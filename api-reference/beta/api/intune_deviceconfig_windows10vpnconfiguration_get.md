@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -50,13 +51,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3444
+Content-Length: 3676
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windows10VpnConfiguration",
     "id": "c23c9727-9727-c23c-2797-3cc227973cc2",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -66,14 +71,20 @@ Content-Length: 3444
       {
         "@odata.type": "microsoft.graph.vpnServer",
         "description": "Description value",
-        "ipAddressOrFqdn": "Ip Address Or Fqdn value",
         "address": "Address value",
         "isDefaultServer": true
       }
     ],
     "customXml": "Y3VzdG9tWG1s",
+    "profileTarget": "device",
     "connectionType": "f5EdgeClient",
     "enableSplitTunneling": true,
+    "enableAlwaysOn": true,
+    "enableDeviceTunnel": true,
+    "enableDnsRegistration": true,
+    "dnsSuffixes": [
+      "Dns Suffixes value"
+    ],
     "authenticationMethod": "usernameAndPassword",
     "rememberUserCredentials": true,
     "enableConditionalAccess": true,

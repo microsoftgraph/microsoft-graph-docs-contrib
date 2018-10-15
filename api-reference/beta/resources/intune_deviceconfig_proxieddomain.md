@@ -9,7 +9,7 @@ Proxied Domain
 |Property|Type|Description|
 |:---|:---|:---|
 |ipAddressOrFQDN|String|The IP address or FQDN|
-|proxy|String|Proxy IP|
+|proxy|String|Proxy IP or FQDN|
 
 ## Relationships
 None
@@ -17,7 +17,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.proxiedDomain"
 }
 -->

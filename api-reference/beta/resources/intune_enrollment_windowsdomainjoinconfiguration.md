@@ -14,7 +14,6 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity.|
 
 ## Relationships
 None
@@ -28,8 +27,7 @@ Here is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsDomainJoinConfiguration",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.windowsDomainJoinConfiguration"
 }
 ```
 

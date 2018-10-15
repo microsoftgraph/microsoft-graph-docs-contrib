@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## Optional query parameters
@@ -50,13 +51,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 777
+Content-Length: 724
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windows10SecureAssessmentConfiguration",
     "id": "f60d71be-71be-f60d-be71-0df6be710df6",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
     "displayName": "Display Name value",
@@ -66,12 +71,7 @@ Content-Length: 777
     "configurationAccountType": "domainAccount",
     "allowPrinting": true,
     "allowScreenCapture": true,
-    "allowTextSuggestion": true,
-    "printerNames": [
-      "Printer Names value"
-    ],
-    "defaultPrinterName": "Default Printer Name value",
-    "blockAddingNewPrinter": true
+    "allowTextSuggestion": true
   }
 }
 ```

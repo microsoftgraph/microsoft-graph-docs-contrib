@@ -9,7 +9,6 @@ VPN Server definition.
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description.|
-|ipAddressOrFqdn|String|IP Address or FQDN.|
 |address|String|Address (IP address, FQDN or URL)|
 |isDefaultServer|Boolean|Default server.|
 
@@ -19,7 +18,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.vpnServer"
 }
 -->
@@ -27,7 +25,6 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.vpnServer",
   "description": "String",
-  "ipAddressOrFqdn": "String",
   "address": "String",
   "isDefaultServer": true
 }

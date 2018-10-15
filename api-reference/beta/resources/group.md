@@ -7,17 +7,18 @@ Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
 
-- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Adding your own data to custom properties as [extensions](../../../concepts/extensibility_overview.md).
+- Subscribing to [change notifications](../../../concepts/webhooks.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
-> **Microsoft Teams and Office 365 groups support group collaboration**. You can use most of the Office 365 groups API with Microsoft Teams. You cannot use [Create group](../api/group_post_groups.md) to create a team. For details, see the [Microsoft Teams overview](teams_api_overview.md).
+> **Microsoft Teams and Office 365 groups support group collaboration**. You can use most of the Office 365 groups API with Microsoft Teams. To create a [team](team.md), first  [create group](../api/group_post_groups.md) and then [add a team to it](../api/team_put_teams.md). For details, see the [Microsoft Teams overview](teams_api_overview.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Group management**| | |
-|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group as specified. It can be an Office 365 group, dynamic group, or security group.|
+|[Create group](../api/group_post_groups.md) | [group](group.md) |Create a new group as specified. It can be an Office 365 group, dynamic group, security group, or team.|
 |[Get group](../api/group_get.md) | [group](group.md) |Read properties and relationships of group object.|
 |[Update group](../api/group_update.md) | None |Update the properties of a group object. |
 |[Delete group](../api/group_delete.md) | None |Delete group object. |
@@ -40,24 +41,25 @@ This resource supports:
 |[List endpoints](../api/group_list_endpoints.md) |[endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint_get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
 |[delta](../api/group_delta.md)|group collection| Get incremental changes for groups. |
+|[validateProperties](../api/group_validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. | 
 |**Calendar**| | |
 |[Create event](../api/group_post_events.md) |[event](event.md)| Create a new event by posting to the events collection.|
-|[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.| 
+|[Get event](../api/group_get_event.md) |[event](event.md)|Read properties of an event object.|
 |[List events](../api/group_list_events.md) |[event](event.md) collection| Get an event object collection.|
-|[Update event](../api/group_update_event.md) |None|Update the properties of an event object.| 
-|[Delete event](../api/group_delete_event.md) |None|Delete event object.| 
+|[Update event](../api/group_update_event.md) |None|Update the properties of an event object.|
+|[Delete event](../api/group_delete_event.md) |None|Delete event object.|
 |[List calendarView](../api/group_list_calendarview.md) |[event](event.md) collection| Get a collection of events in a specified time window.|
 |**Chat channels**| | |
 |[Create channel](../api/group_post_channels.md) |[channel](channel.md)| Create a new channel by posting to the channels collection.|
 |[List channel](../api/group_list_channels.md) |[channel](channel.md) collection| Get a channel object collection.|
 |**Conversations**| | |
 |[Create conversation](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new conversation by posting to the conversations collection.|
-|[Get conversation](../api/group_get_conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.| 
+|[Get conversation](../api/group_get_conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.|
 |[List conversations](../api/group_list_conversations.md) |[conversation](conversation.md) collection| Get a conversation object collection.|
 |[Delete conversation](../api/group_delete_conversation.md) |None|Delete conversation object.|
-|[Get thread](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.| 
+|[Get thread](../api/group_get_thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.|
 |[List threads](../api/group_list_threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads of a group.|
-|[Update thread](../api/group_update_thread.md) |None| Update properties of a thread object.| 
+|[Update thread](../api/group_update_thread.md) |None| Update properties of a thread object.|
 |[Delete thread](../api/group_delete_thread.md) |None| Delete thread object
 |[List acceptedSenders](../api/group_list_acceptedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the acceptedSenders list for this group.|
 |[Add acceptedSender](../api/group_post_acceptedsenders.md) |[directoryObject](directoryobject.md)| Add a User or Group to the acceptSenders collection.|
@@ -96,13 +98,14 @@ This resource supports:
 |isSubscribedByMail|Boolean|Default value is **true**. Indicates whether the current user is subscribed to receive email conversations.|
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". Read-only. Supports $filter.|
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.|
-|mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.|
-|membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains "**DynamicMembership**"). For more information about the syntax of the membership rule, please refer to [Membership Rules syntax](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
+|mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter.|
+|membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains "**DynamicMembership**"). For more information about the syntax of the membership rule, see [Membership Rules syntax](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)|
 |membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are "On" or "Paused"|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. Supports $filter.|
-|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product (including Azure AD Connect, DirSync and MIM + Connector) during provisioning. |
+|onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. |
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Read-only. |
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter.|
+|preferredDataLocation|String|The preferred data location for the group. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|The preferred language for an Office 365 group. Should follow ISO 639-1 Code; for example "en-US".|
 |proxyAddresses|String collection| For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` The **any** operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/grouplifecyclepolicy_renewgroup.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
@@ -183,6 +186,7 @@ The following is a JSON representation of the resource
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "preferredDataLocation": ["string"],
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
