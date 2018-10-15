@@ -18,6 +18,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added application permissions support to [archive team](../api-reference/beta/api/team_archive.md) and [unarchive team](../api-reference/beta/api/team_unarchive.md) APIs.|
 
+### Synchronization APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added **readOnly** property to [directorydefinition](../api-reference/beta/resources/synchronization_directorydefinition.md) to inform clients clients if a directory definition can be altered.|
+
 ## September 2018
 
 ### Calls and online meetings API
