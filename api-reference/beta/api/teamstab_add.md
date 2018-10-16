@@ -81,7 +81,7 @@ Content-type: application/json
 
 ## See also
 
-[Configuring the built-in tab types](teamstab_builtin.md)
+[Configuring the built-in tab types](../resources/teamstab_builtin.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
