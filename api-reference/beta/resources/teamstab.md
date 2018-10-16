@@ -64,3 +64,7 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+## See also
+
+[Configuring the built-in tab types](teamstab_builtin.md)
