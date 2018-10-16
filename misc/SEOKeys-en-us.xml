@@ -7,7 +7,7 @@
 		<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	</Item>
 	<Item text="Versioning and support" url="/en-us/concepts/versioning_and_support" />
-	<Item text="Terms of use" url="https://developer.microsoft.com/en-us/graph/terms-of-use" IsExternal="true" />
+	<Item text="Terms of use" url="https://developer.microsoft.com/graph/terms-of-use" IsExternal="true" />
 	</Item>
   <Item text="Microsoft Graph data connect (preview)" url="/en-us/concepts/data-connect-overview" />
 
@@ -1737,7 +1737,7 @@
       <Item text="Check member groups" url="/en-us/api-reference/v1.0/api/directoryobject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
       <Item text="Get objects by IDs" url="/en-us/api-reference/v1.0/api/directoryobject_getbyids" />
     </Item>
-    <Item text="Directory role" url="/en-us/api-reference/v1.0/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
+    <Item text="Directory role" url="/en-us/api-reference/v1.0/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
       <Item text="List directory roles" url="/en-us/api-reference/v1.0/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
       <Item text="Activate directory role" url="/en-us/api-reference/v1.0/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
       <Item text="Get directory role" url="/en-us/api-reference/v1.0/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
@@ -5583,7 +5583,7 @@
         <Item text="Check member groups" url="/en-us/api-reference/beta/api/directoryobject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
         <Item text="Get directoryObjects by ids" url="/en-us/api-reference/beta/api/directoryobject_getbyids" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
       </Item>
-      <Item text="Directory role" url="/en-us/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
+      <Item text="Directory role" url="/en-us/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
         <Item text="List directory roles" url="/en-us/api-reference/beta/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
         <Item text="Activate directory role" url="/en-us/api-reference/beta/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
         <Item text="Get directory role" url="/en-us/api-reference/beta/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
