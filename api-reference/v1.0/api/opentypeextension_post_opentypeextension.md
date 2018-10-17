@@ -10,7 +10,7 @@ Depending on the resource you're creating the extension in and the permission ty
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| [device](../resources/device.md) | Device.ReadWrite.All | Not supported | Device.ReadWrite.All |
+| [device](../resources/device.md) | Directory.AccessAsUser.All | Not supported | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported | Group.ReadWrite.All |
 | [group event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
@@ -18,7 +18,7 @@ Depending on the resource you're creating the extension in and the permission ty
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organization](../resources/organization.md) | Directory.AccessAsUser.All | Not supported | Not supported |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [user](../resources/user.md) | Directory.AccessAsUser.All | Directory.AccessAsUser.All | Directory.AccessAsUser.All |
+| [user](../resources/user.md) | Directory.AccessAsUser.All | User.ReadWrite | User.ReadWrite.All |
 
 ## HTTP request
 
