@@ -10,7 +10,7 @@ The data in an extension can be primitive types, or arrays of primitive types.
 
 ## Permissions
 
-Depending on the resource that the extension was created in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Depending on the resource that the extension was created in and the permission type (delegated or application) requested, the specified permission in the following table is the mimimum required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
