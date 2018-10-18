@@ -3048,6 +3048,26 @@
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_mobilelobapp_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_mobilelobapp_get"/>
         </Item>
+        <Item text="Office client checkin status" url="/en-us/api-reference/beta/resources/intune_cirrus_officeclientcheckinstatus"/>
+        <Item text="Office client configuration" url="/en-us/api-reference/beta/resources/intune_cirrus_officeclientconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfiguration_get"/>
+          <Item text="assign action" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfiguration_assign"/>
+          <Item text="updatePriorities action" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfiguration_updatepriorities"/>
+        </Item>
+        <Item text="Office client configuration assignment" url="/en-us/api-reference/beta/resources/intune_cirrus_officeclientconfigurationassignment">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfigurationassignment_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfigurationassignment_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfigurationassignment_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfigurationassignment_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfigurationassignment_update"/>
+        </Item>
+        <Item text="Office configuration" url="/en-us/api-reference/beta/resources/intune_cirrus_officeconfiguration">
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_cirrus_officeconfiguration_get"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_cirrus_officeconfiguration_update"/>
+        </Item>
+        <Item text="Office configuration assignment target" url="/en-us/api-reference/beta/resources/intune_cirrus_officeconfigurationassignmenttarget"/>
+        <Item text="Office configuration group assignment target" url="/en-us/api-reference/beta/resources/intune_cirrus_officeconfigurationgroupassignmenttarget"/>
         <Item text="Office product id" url="/en-us/api-reference/beta/resources/intune_apps_officeproductid"/>
         <Item text="Office suite app" url="/en-us/api-reference/beta/resources/intune_apps_officesuiteapp">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_apps_officesuiteapp_list"/>
@@ -3058,6 +3078,7 @@
         </Item>
         <Item text="Office suite install progress display level" url="/en-us/api-reference/beta/resources/intune_apps_officesuiteinstallprogressdisplaylevel"/>
         <Item text="Office update channel" url="/en-us/api-reference/beta/resources/intune_apps_officeupdatechannel"/>
+        <Item text="Office user checkin summary" url="/en-us/api-reference/beta/resources/intune_cirrus_officeusercheckinsummary"/>
         <Item text="Resultant app state detail" url="/en-us/api-reference/beta/resources/intune_apps_resultantappstatedetail"/>
         <Item text="Symantec code signing certificate" url="/en-us/api-reference/beta/resources/intune_apps_symanteccodesigningcertificate">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_apps_symanteccodesigningcertificate_get"/>
@@ -3122,6 +3143,20 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_apps_windowsmobilemsi_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_apps_windowsmobilemsi_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_apps_windowsmobilemsi_update"/>
+        </Item>
+        <Item text="Windows office client configuration" url="/en-us/api-reference/beta/resources/intune_cirrus_windowsofficeclientconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientconfiguration_update"/>
+        </Item>
+        <Item text="Windows office client security configuration" url="/en-us/api-reference/beta/resources/intune_cirrus_windowsofficeclientsecurityconfiguration">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientsecurityconfiguration_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientsecurityconfiguration_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientsecurityconfiguration_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientsecurityconfiguration_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_cirrus_windowsofficeclientsecurityconfiguration_update"/>
         </Item>
         <Item text="Windows package information" url="/en-us/api-reference/beta/resources/intune_apps_windowspackageinformation"/>
         <Item text="Windows Phone 8.1 AppX" url="/en-us/api-reference/beta/resources/intune_apps_windowsphone81appx">
@@ -6226,10 +6261,6 @@
       <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
-      </Item>
-	   <Item text="Photo" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Get photo" url="/en-us/api-reference/beta/api/profilephoto_get" />
-        <Item text="Update photo" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
     </Item>
     <Item text="To-do tasks" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/outlooktask" >
