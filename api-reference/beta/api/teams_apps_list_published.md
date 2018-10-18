@@ -30,6 +30,36 @@ None.
 If successful, this method returns a `200 OK` response code and list of [teamsCatalogApp](../resources/teamscatalogapp.md) objects in the response body.
 
 ## Example
+
+List all applications that are specific to your tenant:
+
+### Request
+```
+GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
+```
+
+### Response
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "id": "b1c5353a-7aca-41b3-830f-27d5218fe0e5",
+      "developerProvidedId": "f31b1263-ba99-435a-a679-911d24850d7c",
+      "name": "Test App",
+      "version": "1.0.1",
+      "distributionMethod":"Organization"
+    }
+  ]
+}
+```
+
+## Example
+
+List applications with a given ID:
+
 ### Request
 ```
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
@@ -52,3 +82,4 @@ Content-Type: application/json
   ]
 }
 ```
+

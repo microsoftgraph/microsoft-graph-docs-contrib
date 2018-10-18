@@ -23,7 +23,6 @@ None
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsNetworkIsolationPolicy"
 }
 -->
@@ -60,8 +59,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

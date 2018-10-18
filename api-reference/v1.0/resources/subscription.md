@@ -2,10 +2,11 @@
 
 A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
 
-- Mail, events, and contacts from Outlook
-- Conversations from Office Groups
-- Drive root items from OneDrive
-- Users and Groups from Azure Active Directory
+- Mail, events, and contacts from Outlook.
+- Conversations from Office Groups.
+- Drive root items from OneDrive.
+- Users and Groups from Azure Active Directory.
+- Alerts from the Microsoft Graph Security API.
 
 ## JSON representation
 
@@ -67,6 +68,7 @@ Here is a JSON representation of the resource.
 | Contacts            | 4230 minutes (under 3 days)    |
 | Group conversations | 4230 minutes (under 3 days)    |
 | Drive root items    | 4230 minutes (under 3 days)    |
+| Security alerts     | 43200 minutes (under 30 days)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
 
