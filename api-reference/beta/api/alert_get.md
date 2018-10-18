@@ -34,7 +34,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an **alert** object in the response body.
+If successful, this method returns a `200 OK` response code and an **alert** object in the response body. If an status code other than 2xx or 404 is returned from a provider, then the response will be a 206 status code with the providers response in a warning header. Read [Microsoft Graph Security API error responses](../resources/security-error-codes.md) for additional information.
 
 ## Example
 
