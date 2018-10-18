@@ -10,7 +10,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](../api-reference/v1.0/api/user_delta) and [groups](../api-reference/v1.0/api/group_delta). |
+| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
+
+### Reports APIs
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Addition    | v1.0    | Added the **Site ID** property to [getSharePointSiteUsageDetail](../api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail.md). |
+
 
 ### Microsoft Teams APIs
 
