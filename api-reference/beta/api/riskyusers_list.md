@@ -1,6 +1,6 @@
 # List riskyUsers
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of riskyUsers object.
 ## Permissions
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /riskyUsers/{query}
 ```
 ## Optional query parameters
-This method supports `$filter` to customize the query response. See an example below. 
+This method supports `$filter` to customize the query response. See the example later in this topic. 
 
 ## Request headers
 | Name      |Description|
