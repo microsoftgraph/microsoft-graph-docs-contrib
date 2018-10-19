@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Aggregates the the risk level, risk state and risk detail for the risky user, sign-in or risk event.
+Aggregates the risk level, risk state and risk detail for the risky user, sign-in or risk event.
 
 ## Properties
 
