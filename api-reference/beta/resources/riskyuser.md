@@ -2,14 +2,16 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Azure AD continually evaluates user risk based on the detected anomalies. This API provides programmatic access to all at-risk users in your Azure AD.
+Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based in various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
+
 Complete information about risk events can be found in the  [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) documentation.
 
 ## Methods
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[Get riskyUsers](../api/riskyusers_get.md) | [identityRiskEvent](riskyUsers.md) |Read properties and relationships of riskyUsers object.|
+|[List riskyUsers](../api/riskyusers_list.md) | [riskyUsers](riskyUser.md) |List risky users and their properties.|
+|[Get riskyUsers](../api/riskyusers_get.md) | [riskyUsers](riskyUser.md)|Get a specific risky user and its properties.|
 
 ## Properties
 
@@ -31,7 +33,7 @@ Complete information about risk events can be found in the  [Azure Active Direct
 |isGuest|[isGuest](../api/riskyusers_isGuest.md)| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
 |isDeleted|isDeleted| A user may or may not be deleted. |
 |riskState|[riskState](../api/riskyusers_riskstate.md)| A risky user could exist in one of multiple states. |
-|riskState|[riskDetail](../api/riskyusers_riskdetail.md)| A risky user could be in a certain state because of multiple reasons. |
+|riskDetail|[riskDetail](../api/riskyusers_riskdetail.md)| A risky user could be in a certain state because of multiple reasons. |
 |riskLevel|[riskLevel](../api/riskyusers_riskLevel.md)| A risky user could be considered one of multiple risk levels. |
 
 ## JSON representation
