@@ -15,8 +15,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET ~/riskyUsers/{query}
+GET /riskyUsers/{query}
 ```
+## Optional query parameters
+This method supports '$filter' to customize the query response. See an example below. 
+
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
@@ -30,7 +33,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.
 ## Example
-##### Request
+##### Request 1
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -39,7 +42,7 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-##### Response
+##### Response 1
 Here is an example of the response.
 <!-- {
   "blockType": "response",
