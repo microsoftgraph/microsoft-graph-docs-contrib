@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /riskyUsers/{query}
 ```
 ## Optional query parameters
-This method supports '$filter' to customize the query response. See an example below. 
+This method supports `$filter` to customize the query response. See an example below. 
 
 ## Request headers
 | Name      |Description|
@@ -65,6 +65,48 @@ HTTP/1.1 200 OK
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Get riskyUsers",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+##### Request 2
+The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.
+<!-- {
+  "blockType": "request",
+  "name": "list_riskyusers"
+}-->
+```http
+GET https://graph.microsoft.com/beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'
+```
+##### Response 2
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.riskyUsers"
+} -->
+```http
+HTTP/1.1 200 OK
+{
+      "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
+      "isDeleted": false,
+      "isGuest": false,
+      "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
+      "userDisplayName": "Jon Doe",
+      "userPrincipalName": "jon@contoso.com",
+      "risk": {
+        "riskLevelAggregated": "medium",
+        "riskLevelDuringSignIn": "none",
+        "state": "atRisk",
+        "stateDetail": "none"
+      }
+    }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
