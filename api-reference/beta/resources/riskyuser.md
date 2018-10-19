@@ -19,8 +19,8 @@ Complete information about risk events can be found in the  [Azure Active Direct
 |:---------------|:--------|:----------|
 |`id`|`string`|Unique id of the user at risk|
 |`isDeleted`|`bool`|Indicates whether the user is deleted. Possible values are: `true`, `false`|
-|`isGuest`|`bool`|Indicates whether the user is a guest user. Possible values are: `Home`, `Guest`|
-|`risk`|`risk`(riskyUsers_risk.md)|Risky user state|
+|`isGuest`|`bool`|Indicates whether the user is a guest user. Possible values are: `true`, `false`. True if user’s identity lies outside of the tenant in consideration. This user could be a B2B or a B2C user with identity in Azure AD, MSA or 3rd party identity provider. False if user’s identity lies inside the tenant in consideration|
+|`risk`|[risk](risk.md)|Risky user state|
 |`riskLastUpdatedDateTime`|`datetime`|The date and time that the risky user was last updated|
 |`userDisplayName`|`string`|Risky user display name|
 |`userPrincipalName`|`string`|Risky user principal name|
@@ -30,11 +30,11 @@ Complete information about risk events can be found in the  [Azure Active Direct
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |id|UserObjectId| The unique identifier of the user with which a given risk event is associated with.|
-|isGuest|[isGuest](../api/riskyusers_isGuest.md)| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
+|isGuest|isGuest| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
 |isDeleted|isDeleted| A user may or may not be deleted. |
-|riskState|[riskState](../api/riskyusers_riskstate.md)| A risky user could exist in one of multiple states. |
-|riskDetail|[riskDetail](../api/riskyusers_riskdetail.md)| A risky user could be in a certain state because of multiple reasons. |
-|riskLevel|[riskLevel](../api/riskyusers_riskLevel.md)| A risky user could be considered one of multiple risk levels. |
+|riskState|[riskState](risk.md)| A risky user could exist in one of multiple states. |
+|riskDetail|[riskDetail](risk.md)| A risky user could be in a certain state because of multiple reasons. |
+|riskLevel|[riskLevel](risk.md)| A risky user could be considered one of multiple risk levels. |
 
 ## JSON representation
 
