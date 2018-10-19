@@ -1,10 +1,10 @@
 # riskyUsers resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based in various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
+Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
 
-Complete information about risk events can be found in the  [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) documentation.
+For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
 
 ## Methods
 
