@@ -19,7 +19,7 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 |Property|Type|Required|ReadOnly|Description|
 |-|-|-|-|-|
-|  `id`              |   `string`                  |✓|✓|  Identifier that uniquely identifies a specific instance of a channel tab     |
+|  `id`              |   string                  |✓|✓|  Identifier that uniquely identifies a specific instance of a channel tab     |
 |  `name`            |   `string`                  |✓| |  Name of the tab     |
 |  `teamsAppId`           |   `string`                  |✓|✓|  App definition identifier of the tab. This value cannot be changed after tab creation.     |
 |  `sortOrderIndex`  |   `int`                     |✓| |  Index of the order used for sorting tabs     |
