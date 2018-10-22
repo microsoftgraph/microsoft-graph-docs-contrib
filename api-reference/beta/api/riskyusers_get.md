@@ -8,9 +8,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityriskyUser.Read.All    |
+|Delegated (work or school account) | IdentityrRskyUser.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityriskyUser.Read.All |
+|Application | IdentityRiskyUser.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
