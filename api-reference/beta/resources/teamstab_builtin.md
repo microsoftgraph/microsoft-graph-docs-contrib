@@ -119,15 +119,35 @@ Configuration is not supported.
 
 ## OneNote
 
-TBD.
-
 teamsAppId is `0d820ecd-def2-4297-adad-78056cde7c78`.
+Configuration:
+
+| Property   | Type        | Description                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | `<???>_<notebookId>`                                      |
+| contentUrl | string      | a URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `sectionsUrl`, `notebookId`, and `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](../api/onenote_list_notebooks.md) |
+| removeUrl  | string      | null                                                     |
+| websiteUrl | string      | URL of the website                                       |
+
+GET https://graph.microsoft.com/beta/groups/{id}/onenote/notebooks
+
+                "contentUrl": "https://www.onenote.com/teams/TabContent
+                ?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2F
+                groups%2F<sectionsUrl>%2Fnotes%2F   // sectionsUrl
+                notebooks%2F<notebookId>&        // notebook
+                oneNoteWebUrl=<oneNoteWebUrl>
+                &notebookName=note&ui={locale}&tenantId={tid}",
+
+// entityid = <????>_<notebookId>
+
 
                "entityId": "c35639af-6f35-41cf-a950-b545dfa65ea2_1-751ef128-c3ab-4ec6-bb73-e2663b404f50",
                 "contentUrl": "https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2Fbdb7bcda-9c3b-4341-b9a9-f52bf9a23407%2Fnotes%2Fnotebooks%2F1-751ef128-c3ab-4ec6-bb73-e2663b404f50&oneNoteWebUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FTestforNick%2FShared%2520Documents%2FVSTStest%2Fnote&notebookName=note&ui={locale}&tenantId={tid}",
                 "removeUrl": "https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2Fbdb7bcda-9c3b-4341-b9a9-f52bf9a23407%2Fnotes%2Fnotebooks%2F1-751ef128-c3ab-4ec6-bb73-e2663b404f50&oneNoteWebUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FTestforNick%2FShared%2520Documents%2FVSTStest%2Fnote&notebookName=note&ui={locale}&tenantId={tid}",
                 "websiteUrl": "https://www.onenote.com/teams/TabRedirect?redirectUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FTestforNick%2FShared%2520Documents%2FVSTStest%2Fnote",
                 "dateAdded": "2018-10-01T17:36:36.775Z"
+
+https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<fooId>%2Fnotes%2Fnotebooks%2F<barId>&oneNoteWebUrl=<webUrl>&notebookName=<tabName>&ui={locale}&tenantId={tid}`                                       |
  
 ## Power%20BI
 TBD. 
