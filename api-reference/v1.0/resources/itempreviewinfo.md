@@ -2,13 +2,11 @@
 author: kevinlam
 ms.author: kevinlam
 ms.date: 3/16/2018
-title: ItemPreviewInfo - OneDrive API
+title: ItemPreviewInfo
 ---
-# ItemPreviewInfo resource type
+# itemPreviewInfo resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-The **ItemPreviewInfo** resource contains information on how to embed a preview of a [DriveItem](driveitem.md).
+The **itemPreviewInfo** resource contains information on how to embed a preview of a [driveItem](driveitem.md).
 
 ## JSON representation
 
@@ -37,3 +35,5 @@ Content-Type: application/x-www-form-urlencoded
 
 param1=value&param2=another%20value
 ```
+
+The formats of URLs and parameters should be considered opaque.
