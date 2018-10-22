@@ -135,7 +135,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 
 This read-only property is used by enterprise application developers to ensure the correct handling of a user based on their legal age group. It is calculated based on the user's `ageGroup` and `consentProvidedForMinor` properties.
 
-| Value	   | #	|Description|
+| Value   | # |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
 |minorWithoutParentalConsent |1|(Reserved for future use)|
@@ -150,7 +150,7 @@ The age group and minor consent properties are optional properties used by Azure
 
 #### ageGroup property
 
-| Value	   | #	|Description|
+| Value    | # |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
 |minor|1|The user is consider a minor.|
@@ -159,7 +159,7 @@ The age group and minor consent properties are optional properties used by Azure
 
 #### consentProvidedForMinor property
 
-| Value	   | #	|Description|
+| Value    | # |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `consentProvidedForMinor` has been set for the user.|
 |granted|1|Consent has been obtained for the user to have an account.|
@@ -168,7 +168,7 @@ The age group and minor consent properties are optional properties used by Azure
 
 ## Relationships
 
-| Relationship | Type	|Description|
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
