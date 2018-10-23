@@ -12,6 +12,44 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:------------|:--------|:-----------------------------------------|
 | Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
 
+### Microsoft Intune APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new entities:<br/>[intuneBrandingProfile](../api-reference/beta/resources/intune_wip_intunebrandingprofile.md)<br/>|
+|Addition|beta|Added new complex types:<br/>[deviceAndAppManagementAssignedRoleIds](../api-reference/beta/resources/intune_rbac_deviceandappmanagementassignedroleids.md)<br/>|
+|Addition|beta|Added new enum types:<br/>[applicationGuardEnabledOptions](../api-reference/beta/resources/intune_deviceconfig_applicationguardenabledoptions.md)<br/>[autoRestartNotificationDismissalMethod](../api-reference/beta/resources/intune_deviceconfig_autorestartnotificationdismissalmethod.md)<br/>[meteredConnectionLimitType](../api-reference/beta/resources/intune_deviceconfig_meteredconnectionlimittype.md)<br/>|
+|Addition|beta|Added the [enableLegacyPcManagement](../api-reference/beta/api/intune_deviceconfig_devicemanagement_enablelegacypcmanagement.md) action on [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
+|Addition|beta|Added the [extendFeatureUpdatesPause](../api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendfeatureupdatespause.md) action on [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) |
+|Addition|beta|Added the [extendQualityUpdatesPause](../api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendqualityupdatespause.md) action on [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) |
+|Addition|beta|Added the [unassignUserFromDevice](../api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_unassignuserfromdevice.md) action on [windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md) |
+|Addition|beta|Added the [getAssignedRoleIdsForLoggedInUser](../api-reference/beta/api/intune_rbac_devicemanagement_getassignedroleidsforloggedinuser.md) function on [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
+|Addition|beta|Added the [getManagedDevicesWithAppFailures](../api-reference/beta/api/intune_troubleshooting_user_getmanageddeviceswithappfailures.md) function on [user](../api-reference/beta/resources/intune_devices_user.md) |
+|Addition|beta|Added the [managedDeviceEnrollmentAbandonmentSummary](../api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentabandonmentsummary.md) function on [reportRoot](../api-reference/beta/resources/intune_deviceconfig_reportroot.md) |
+|Addition|beta|Added the [managedDeviceEnrollmentAbandonmentDetails](../api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentabandonmentdetails.md) function on [reportRoot](../api-reference/beta/resources/intune_deviceconfig_reportroot.md) |
+|Deletion|beta|Removed the **subjectAlternativeNameType** property from the [androidForWorkCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_androidforworkcertificateprofilebase.md) entity|
+|Addition|beta|Added the **subjectAlternativeNameType** property to the [androidForWorkPkcsCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidforworkpkcscertificateprofile.md) entity|
+|Addition|beta|Added the **certificateStore**, **customSubjectAlternativeNames** and **subjectAlternativeNameType** properties to the [androidForWorkScepCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidforworkscepcertificateprofile.md) entity|
+|Deletion|beta|Removed the **subjectAlternativeNameType** property from the [androidWorkProfileCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilecertificateprofilebase.md) entity|
+|Addition|beta|Added the **subjectAlternativeNameType** property to the [androidWorkProfilePkcsCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilepkcscertificateprofile.md) entity|
+|Addition|beta|Added the **certificateStore**, **customSubjectAlternativeNames** and **subjectAlternativeNameType** properties to the [androidWorkProfileScepCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilescepcertificateprofile.md) entity|
+|Addition|beta|Added the **legacyPcManangementEnabled** property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
+|Deletion|beta|Removed the **pinRequiredOnLaunchInsteadOfBiometric** property from the [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) entity|
+|Addition|beta|Added the **roleScopeTagIds** property to the [managedDeviceMobileAppConfiguration](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration.md) entity|
+|Addition|beta|Added the **applicationGuardEnabledOptions** property to the [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) entity|
+|Addition|beta|Added the **selectedMobileAppIds** property to the [windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md) entity|
+|Addition|beta|Added the **engagedRestartDeadlineInDays**, **engagedRestartSnoozeScheduleInDays**, **engagedRestartTransitionScheduleInDays**, **autoRestartNotificationDismissal**, **scheduleRestartWarningInHours** and **scheduleImminentRestartWarningInMinutes** properties to the [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) entity|
+|Addition|beta|Added the **preSharedKey** and **meteredConnectionLimit** properties to the [windowsWifiConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowswificonfiguration.md) entity|
+|Addition|beta|Added the **intuneBrandingProfiles** navigation property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
+|Addition|beta|Added the **v6_0**, **v7_0**, **v7_1**, **v8_0**, **v8_1** and **v9_0** properties to the [androidMinimumOperatingSystem](../api-reference/beta/resources/intune_apps_androidminimumoperatingsystem.md) complex type|
+|Addition|beta|Added the **v12_0** property to the [iosMinimumOperatingSystem](../api-reference/beta/resources/intune_apps_iosminimumoperatingsystem.md) complex type|
+|Deletion|beta|Removed the **runAsLoggedOnUser** property from the [win32LobAppPowerShellScriptDetection](../api-reference/beta/resources/intune_apps_win32lobapppowershellscriptdetection.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [osVersionCount](../api-reference/beta/resources/intune_devices_osversioncount.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareCategoryCount](../api-reference/beta/resources/intune_devices_windowsmalwarecategorycount.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareExecutionStateCount](../api-reference/beta/resources/intune_devices_windowsmalwareexecutionstatecount.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareNameCount](../api-reference/beta/resources/intune_devices_windowsmalwarenamecount.md) complex type|
+|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareStateCount](../api-reference/beta/resources/intune_devices_windowsmalwarestatecount.md) complex type|
+
 ### Microsoft Teams APIs
 
 | **Change type** | **Version**   | **Description**                          |
