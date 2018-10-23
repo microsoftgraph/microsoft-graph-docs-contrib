@@ -12,8 +12,8 @@ This resource supports:
 
 ## Methods
 
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
+| Method | Return Type | Description |
+|:-------|:------------|:------------|
 |[List users](../api/user_list.md) |[user](user.md) collection| Get a list of user objects.|
 |[Create user](../api/user_post_users.md) |[user](user.md)| Create a new user object.|
 |[Get user](../api/user_get.md) | [user](user.md) |Read properties and relationships of user object.|
