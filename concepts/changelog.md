@@ -56,17 +56,30 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added application permissions support to [archive team](../api-reference/beta/api/team_archive.md) and [unarchive team](../api-reference/beta/api/team_unarchive.md) APIs.|
 
+### Outlook calendar
+
+| Change type | Version | Description |
+| :---------- | :-------| :---------- |
+| Change      | Beta    | Removed he `iCalUid` property from the [event resource](../api-reference/beta/resources/event.md) and added the `uid` property to the `event` resource. The `uid` property serves the same purpose as the removed `iCalUid` property. |
+| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
+
 ### Outlook contacts
 
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
+| Change type | Version | Description |
+| :---------- | :-------| :---------- |
+| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
 | Removal         | v1.0        | This is a correction to the documentation: removed the **flag** property from the [contact](../api-reference/v1.0/resources/contact) entity topic. The property was never made available in the **contact** entity.|
+
+### Outlook mail
+
+| Change type | Version | Description |
+| :---------- | :-------| :---------- |
+| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
 
 ### Reports APIs
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
 | Addition    | v1.0    | Added the **Site ID** property to [getSharePointSiteUsageDetail](../api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail.md). |
-
 
 ## September 2018
 
