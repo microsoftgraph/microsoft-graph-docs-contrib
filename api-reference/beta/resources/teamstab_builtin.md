@@ -35,7 +35,7 @@ Configuration:
 
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | The plan Id                                              |
+| entityId   | string      | The plan Id (ie, the id to use with GET /planner/plans/{id})                                              |
 | contentUrl | string      | `https://tasks.office.com/<tenantName>/Home/PlannerFrame?page=7&planId=<planId>`, where <tenantName> is the name of the tenant (eg, example.onmicrosoft.com), and <planId> is the same as the entity id.  |
 | removeUrl  | string      | Same value as the contentUrl    |
 | websiteUrl | string      | Same value as the contentUrl   |
@@ -66,13 +66,6 @@ Configuration:
 | contentUrl | string      | `https://forms.office.com/Pages/TeamsDesignPage.aspx?Host=Teams&lang={locale}&groupId={groupId}&tid={tid}&teamsTheme={theme}&upn={upn}&fragment=FormId%3D<formId>`, where <formId> is the same as the entity Id.  |
 | removeUrl  | string      | null                                                     |
 | websiteUrl | string      |  `https://forms.office.com`    |
-
-## Wiki tabs
-
-teamsAppId is `com.microsoft.teamspace.tab.wiki`.
-Wiki tabs do not support configuration through Graph.
-Note however there's not much to configure --
-in an un-configured wiki tab, the first user just needs to click "set up tab" to configure it.
 
 ## Microsoft Word, Microsoft Excel, Microsoft PowerPoint, and PDF tabs
 
@@ -125,52 +118,16 @@ Configuration:
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `<???>_<notebookId>`                                      |
-| contentUrl | string      | a URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api/onenote_list_notebooks.md) |
-| removeUrl  | string      | a URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api/onenote_list_notebooks.md) |
+| contentUrl | string      | a URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api/onenote_list_notebooks.md). Slashes must be escaped. |
+| removeUrl  | string      | a URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api/onenote_list_notebooks.md). Slashes must be escaped. |
 | websiteUrl | string      | a URL of the form `https://www.onenote.com/teams/TabRedirect?redirectUrl=<oneNoteWebUrl>`, where `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](../api/onenote_list_notebooks.md) |
 
-
-GET https://graph.microsoft.com/beta/groups/{id}/onenote/notebooks
-
-                "contentUrl": "https://www.onenote.com/teams/TabContent
-                ?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2F
-                groups%2F<sectionsUrl>%2Fnotes%2F   // sectionsUrl
-                notebooks%2F<notebookId>&        // notebook
-                oneNoteWebUrl=<oneNoteWebUrl>
-                &notebookName=note&ui={locale}&tenantId={tid}",
-
-// entityid = <????>_<notebookId>
-
-
-               "entityId": "c35639af-6f35-41cf-a950-b545dfa65ea2_1-751ef128-c3ab-4ec6-bb73-e2663b404f50",
-                "contentUrl": "https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2Fbdb7bcda-9c3b-4341-b9a9-f52bf9a23407%2Fnotes%2Fnotebooks%2F1-751ef128-c3ab-4ec6-bb73-e2663b404f50&oneNoteWebUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FTestforNick%2FShared%2520Documents%2FVSTStest%2Fnote&notebookName=note&ui={locale}&tenantId={tid}",
-                "removeUrl": "https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2Fbdb7bcda-9c3b-4341-b9a9-f52bf9a23407%2Fnotes%2Fnotebooks%2F1-751ef128-c3ab-4ec6-bb73-e2663b404f50&oneNoteWebUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FTestforNick%2FShared%2520Documents%2FVSTStest%2Fnote&notebookName=note&ui={locale}&tenantId={tid}",
-                "websiteUrl": "https://www.onenote.com/teams/TabRedirect?redirectUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FTestforNick%2FShared%2520Documents%2FVSTStest%2Fnote",
-                "dateAdded": "2018-10-01T17:36:36.775Z"
-
-https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<fooId>%2Fnotes%2Fnotebooks%2F<barId>&oneNoteWebUrl=<webUrl>&notebookName=<tabName>&ui={locale}&tenantId={tid}`                                       |
- 
 ## Power%20BI
-TBD. 
 
 teamsAppId is `com.microsoft.teamspace.tab.powerbi`.
-
-                "entityId": null,
-                "contentUrl": null,
-                "removeUrl": null,
-                "websiteUrl": "https://app.powerbi.com/groups/MyWorkspace/reports/bc229e13-3539-40b8-9565-797bf101e4dc",
-                "reports": "bc229e13-3539-40b8-9565-797bf101e4dc",
-                "originatingTeam": "My workspace",
-                "originatingTeamId": "MyWorkspace",
+Configuration is not supported.
 
 ## SharePoint Pages and Lists
 
-TBD.
-
 teamsAppId is `2a527703-1f6f-4559-a332-d8a7d288cd88`.
-
-
-                "entityId": "sharepointtab_0.9183859808092976",
-                "contentUrl": "https://spoprod-a.akamaihd.net/files/sp-client-prod_2018-09-28.005/sp-teams-tab/sp-teams-tabcontent.html?contentUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FTestforNick%2FSitePages%2FHome.aspx",
-                "removeUrl": null,
-                "websiteUrl": "https://spoprod-a.akamaihd.net/files/sp-client-prod_2018-09-28.005/sp-teams-tab/sp-teams-tabcontent.html?contentUrl=https%3A%2F%2Fmicrosoft.sharepoint.com%2Fteams%2FTestforNick%2FSitePages%2FHome.aspx",
+Configuration is not supported.
