@@ -7,7 +7,7 @@
 		<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	</Item>
 	<Item text="Versioning and support" url="/en-us/concepts/versioning_and_support" />
-	<Item text="Terms of use" url="https://developer.microsoft.com/en-us/graph/terms-of-use" IsExternal="true" />
+	<Item text="Terms of use" url="https://developer.microsoft.com/graph/terms-of-use" IsExternal="true" />
 	</Item>
   <Item text="Microsoft Graph data connect (preview)" url="/en-us/concepts/data-connect-overview" />
 
@@ -19,6 +19,7 @@
 	  <Item text="Get free/busy schedule" url="/en-us/concepts/outlook-get-free-busy-schedule" />
 	  <Item text="Schedule recurring events" url="/en-us/concepts/outlook-schedule-recurring-events" />
 	  <Item text="Get shared events" url="/en-us/concepts/outlook-get-shared-events-calendars" />
+    <Item text="Immutable ID (preview)" url="/en-us/concepts/outlook-immutable-id" />
   </Item>
   <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview" >
     <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
@@ -38,6 +39,7 @@
 	  <Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
 	  <Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
 	  <Item text="Get shared messages" url="/en-us/concepts/outlook-share-messages-folders" />
+    <Item text="Immutable ID (preview)" url="/en-us/concepts/outlook-immutable-id" />
   </Item>
   <Item text="Notes" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
     <Item text="Get OneNote content" url="/en-us/concepts/onenote-get-content" />
@@ -56,6 +58,7 @@
   </Item>
   <Item text="Personal contacts" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" >
     <Item text="Get shared contacts" url="/en-us/concepts/outlook-get-shared-contacts-folders" />
+    <Item text="Immutable ID (preview)" url="/en-us/concepts/outlook-immutable-id" />
   </Item>
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Security" url="/en-us/concepts/security-concept-overview" >
@@ -1737,7 +1740,7 @@
       <Item text="Check member groups" url="/en-us/api-reference/v1.0/api/directoryobject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
       <Item text="Get objects by IDs" url="/en-us/api-reference/v1.0/api/directoryobject_getbyids" />
     </Item>
-    <Item text="Directory role" url="/en-us/api-reference/v1.0/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
+    <Item text="Directory role" url="/en-us/api-reference/v1.0/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
       <Item text="List directory roles" url="/en-us/api-reference/v1.0/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
       <Item text="Activate directory role" url="/en-us/api-reference/v1.0/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
       <Item text="Get directory role" url="/en-us/api-reference/v1.0/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
@@ -3338,6 +3341,7 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_update"/>
           <Item text="assignUserToDevice action" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_assignusertodevice"/>
+          <Item text="unassignUserFromDevice action" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_unassignuserfromdevice"/>
         </Item>
         <Item text="Windows autopilot profile assignment detailed status" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotprofileassignmentdetailedstatus"/>
         <Item text="Windows autopilot profile assignment status" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotprofileassignmentstatus"/>
@@ -3671,6 +3675,8 @@
         <Item text="Apple VPN connection type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applevpnconnectiontype"/>
         <Item text="Application guard block clipboard sharing type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype"/>
         <Item text="Application guard block file transfer type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockfiletransfertype"/>
+        <Item text="Application guard enabled options" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardenabledoptions"/>
+        <Item text="Auto restart notification dismissal method" url="/en-us/api-reference/beta/resources/intune_deviceconfig_autorestartnotificationdismissalmethod"/>
         <Item text="Automatic update mode" url="/en-us/api-reference/beta/resources/intune_deviceconfig_automaticupdatemode"/>
         <Item text="BitLocker encryption method" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerencryptionmethod"/>
         <Item text="BitLocker fixed drive policy" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerfixeddrivepolicy"/>
@@ -3872,7 +3878,6 @@
         <Item text="Edition upgrade license type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype"/>
         <Item text="Email sync duration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_emailsyncduration"/>
         <Item text="Email sync schedule" url="/en-us/api-reference/beta/resources/intune_deviceconfig_emailsyncschedule"/>
-        <Item text="Enablement" url="/en-us/api-reference/beta/resources/intune_deviceconfig_enablement"/>
         <Item text="Extended key usage" url="/en-us/api-reference/beta/resources/intune_deviceconfig_extendedkeyusage"/>
         <Item text="Firewall certificate revocation list check method type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype"/>
         <Item text="Firewall packet queueing method type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_firewallpacketqueueingmethodtype"/>
@@ -4129,6 +4134,7 @@
         <Item text="Media content rating New Zealand" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingnewzealand"/>
         <Item text="Media content rating United Kingdom" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedkingdom"/>
         <Item text="Media content rating United States" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedstates"/>
+        <Item text="Metered connection limit type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_meteredconnectionlimittype"/>
         <Item text="Miracast channel" url="/en-us/api-reference/beta/resources/intune_deviceconfig_miracastchannel"/>
         <Item text="NDES connector" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ndesconnector">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_list"/>
@@ -4540,6 +4546,8 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_update"/>
+          <Item text="extendFeatureUpdatesPause action" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendfeatureupdatespause"/>
+          <Item text="extendQualityUpdatesPause action" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendqualityupdatespause"/>
         </Item>
         <Item text="Windows update for business update weeks" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessupdateweeks"/>
         <Item text="Windows update install schedule type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsupdateinstallscheduletype"/>
@@ -4752,7 +4760,6 @@
           <Item text="windowsDefenderUpdateSignatures action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures"/>
           <Item text="updateWindowsDeviceAccount action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount"/>
           <Item text="revokeAppleVppLicenses action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses"/>
-          <Item text="overrideComplianceState action" url="/en-us/api-reference/beta/api/intune_deviceconfig_managedDevice_overrideComplianceState"/>
         </Item>
         <Item text="Managed device cleanup settings" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicecleanupsettings"/>
         <Item text="Managed device models and manufacturers" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicemodelsandmanufacturers"/>
@@ -4939,6 +4946,13 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappprotection_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappprotection_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappprotection_update"/>
+        </Item>
+        <Item text="Intune branding profile" url="/en-us/api-reference/beta/resources/intune_wip_intunebrandingprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_update"/>
         </Item>
         <Item text="iOS managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappprotection">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_list"/>
@@ -5136,7 +5150,6 @@
         </Item>
         <Item text="Device management partner app type" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnerapptype"/>
         <Item text="Device management partner tenant state" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnertenantstate"/>
-        <Item text="Enablement" url="/en-us/api-reference/beta/resources/intune_onboarding_enablement"/>
         <Item text="Enrollment configuration assignment" url="/en-us/api-reference/beta/resources/intune_onboarding_enrollmentconfigurationassignment">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_get"/>
@@ -5165,7 +5178,6 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_organization_update"/>
           <Item text="setMobileDeviceManagementAuthority action" url="/en-us/api-reference/beta/api/intune_onboarding_organization_setmobiledevicemanagementauthority"/>
         </Item>
-        <Item text="RGB color" url="/en-us/api-reference/beta/resources/intune_onboarding_rgbcolor"/>
         <Item text="Side loading key" url="/en-us/api-reference/beta/resources/intune_onboarding_sideloadingkey">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_get"/>
@@ -5198,6 +5210,7 @@
         <Item text="Windows Hello for business PIN usage" url="/en-us/api-reference/beta/resources/intune_onboarding_windowshelloforbusinesspinusage"/>
       </Item>
       <Item text="Role-based access control" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">
+        <Item text="Device and app management assigned role ids" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementassignedroleids"/>
         <Item text="Device and app management role assignment" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_get"/>
@@ -5266,6 +5279,7 @@
         <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_update"/>
+          <Item text="enableLegacyPcManagement action" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_enablelegacypcmanagement"/>
           <Item text="sendCustomNotificationToCompanyPortal action" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_sendcustomnotificationtocompanyportal"/>
         </Item>
         <Item text="Device platform type" url="/en-us/api-reference/beta/resources/intune_shared_deviceplatformtype"/>
@@ -5286,6 +5300,7 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_reportroot_update"/>
         </Item>
         <Item text="Resultant app state" url="/en-us/api-reference/beta/resources/intune_shared_resultantappstate"/>
+        <Item text="RGB color" url="/en-us/api-reference/beta/resources/intune_shared_rgbcolor"/>
         <Item text="Run as account type" url="/en-us/api-reference/beta/resources/intune_shared_runasaccounttype"/>
         <Item text="Run state" url="/en-us/api-reference/beta/resources/intune_shared_runstate"/>
         <Item text="Saved UI state generation options" url="/en-us/api-reference/beta/resources/intune_shared_saveduistategenerationoptions"/>
@@ -5548,7 +5563,7 @@
         <Item text="Check member groups" url="/en-us/api-reference/beta/api/directoryobject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
         <Item text="Get directoryObjects by ids" url="/en-us/api-reference/beta/api/directoryobject_getbyids" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
       </Item>
-      <Item text="Directory role" url="/en-us/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
+      <Item text="Directory role" url="/en-us/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
         <Item text="List directory roles" url="/en-us/api-reference/beta/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
         <Item text="Activate directory role" url="/en-us/api-reference/beta/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
         <Item text="Get directory role" url="/en-us/api-reference/beta/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />

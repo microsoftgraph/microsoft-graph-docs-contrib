@@ -6,7 +6,7 @@ To publish to your organization's app catalog, specify `Organization` as the **d
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
 >**Note:** Only global administrators can call this API.
 
