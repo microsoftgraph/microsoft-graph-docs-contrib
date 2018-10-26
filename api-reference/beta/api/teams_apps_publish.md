@@ -16,6 +16,12 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported|
 | Application                            | Not supported|
 
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+POST /appCatalogs/teamsApps
+```
+
 ## Request headers
 
 | Header        | Value           |
@@ -37,7 +43,7 @@ If successful, this method returns a `200 OK` response code and a [teamsCatalogA
 
 ### Request
 
-```
+```http
 POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
