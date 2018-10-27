@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/apps
+GET /teams/{id}/installedApps
 ```
 
 ## Optional query parameters
@@ -42,7 +42,7 @@ The following is an example of the request.
   "name": "get_owners"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/apps
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
 
 #### Response

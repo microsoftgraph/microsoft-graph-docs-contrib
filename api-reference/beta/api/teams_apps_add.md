@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/apps
+POST /teams/{id}/installedApps
 ```
 
 ## Request headers
@@ -42,7 +42,7 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/apps
+POST https://graph.microsoft.com/beta/teams/{id}/installedApps
 {
   "id": "12345678-9abc-def0-123456789a"
 }
