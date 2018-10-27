@@ -10,7 +10,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Add |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resource/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
+|Add |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
 
 ## October 2018
 
