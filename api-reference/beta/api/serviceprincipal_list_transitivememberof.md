@@ -1,11 +1,10 @@
-# user: List memberOf
+# servicePrincipal: List transitive memberOf
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get groups, directory roles and administrative units that the user is a direct member of. This operation is not transitive.
+Get the groups and directory roles that this service principal is a member of. This operation is transitive and will include all groups that this service principal is a nested member of.
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -17,15 +16,15 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id | userPrincipalName}/memberOf
+GET /servicePrincipals/{id}/memberOf
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Accept  | application/json|
+| Name       | Type | Description|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
 Do not supply a request body for this method.
@@ -38,11 +37,12 @@ If successful, this method returns a `200 OK` response code and collection of [d
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_user_memberof"
+  "name": "get_serviceprincipal_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/memberOf
+GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 ```
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -75,7 +75,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List memberOf",
+  "description": "List servicePrincipal memberOf",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

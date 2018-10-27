@@ -1,8 +1,8 @@
-# user: List memberOf
+# device: List memberOf
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get groups, directory roles and administrative units that the user is a direct member of. This operation is not transitive.
+Get groups that this device is a direct member of. This operation is not transitive.
 
 ## Permissions
 
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id | userPrincipalName}/memberOf
+GET /devices/{id | userPrincipalName}/memberOf
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -41,7 +41,7 @@ Here is an example of the request.
   "name": "get_user_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/memberOf
+GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
