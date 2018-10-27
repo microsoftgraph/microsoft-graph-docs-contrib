@@ -114,7 +114,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added API for [Tabs](../api-reference/beta/resources/teamstab.md).|
-|Addition|beta|Added API for [publishing apps for your organization](../api-reference/beta/resources/teamscatalogapp.md).|
+|Addition|beta|Added API for [publishing apps for your organization](../api-reference/beta/resources/teamsapp.md).|
 |Addition|beta|Added application permissions support to [GET /teams/{id}](../api-reference/beta/api/team_get.md). |
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md). |
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |

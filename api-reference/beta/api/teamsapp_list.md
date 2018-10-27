@@ -1,7 +1,7 @@
 # List the published apps from the Microsoft Teams app catalog
 
-List [apps](../resources/teamscatalogapp.md) from the Microsoft Teams app catalog. 
-This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
+List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog. 
+This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
 ## Permissions
 
@@ -30,10 +30,10 @@ GET /appCatalogs/teamsApps
 ## Request body
 None.
 
->**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamscatalogapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
+>**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
 ## Response
-If successful, this method returns a `200 OK` response code and list of [teamsCatalogApp](../resources/teamscatalogapp.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.
 
 ## Example
 
