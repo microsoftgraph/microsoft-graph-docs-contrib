@@ -5,7 +5,8 @@ Inherits from [directoryObject](directoryobject.md).
 
 This resource supports:
 
-- Adding your own data to custom properties using [extensions](../../../concepts/extensibility_overview.md).
+- Adding your own data to custom properties as [extensions](../../../concepts/extensibility_overview.md).
+- Subscribing to [change notifications](../../../concepts/webhooks.md).
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
 
@@ -98,6 +99,7 @@ This resource supports:
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. |
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Read-only. |
 |onPremisesSyncEnabled|Boolean|**true** if this group is synced from an on-premises directory; **false** if this group was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter.|
+|preferredDataLocation|String|The preferred data location for the group. For more information, see  [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |proxyAddresses|String collection| The **any** operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/group_renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
 |securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter.|
@@ -270,6 +272,7 @@ The following is a JSON representation of the resource.
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,

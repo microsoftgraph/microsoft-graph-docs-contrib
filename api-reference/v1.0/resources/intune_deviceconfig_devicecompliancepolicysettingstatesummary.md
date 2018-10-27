@@ -1,4 +1,4 @@
-# deviceCompliancePolicySettingStateSummary resource type
+﻿# deviceCompliancePolicySettingStateSummary resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -15,10 +15,10 @@ Device Compilance Policy Setting State summary across the account.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|Key of the entity.|
 |setting|String|The setting class name and property name.|
 |settingName|String|Name of the setting.|
-|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Setting platform. The possible values are: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
-|id|String|Key of the entity.|
+|platformType|[policyPlatformType](../resources/intune_deviceconfig_policyplatformtype.md)|Setting platform. Possible values are: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Number of unknown devices|
 |notApplicableDeviceCount|Int32|Number of not applicable devices|
 |compliantDeviceCount|Int32|Number of compliant devices|
@@ -34,19 +34,19 @@ Device Compilance Policy Setting State summary across the account.
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceCompliancePolicySettingStateSummary"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicySettingStateSummary",
+  "id": "String (identifier)",
   "setting": "String",
   "settingName": "String",
   "platformType": "String",
-  "id": "String (identifier)",
   "unknownDeviceCount": 1024,
   "notApplicableDeviceCount": 1024,
   "compliantDeviceCount": 1024,

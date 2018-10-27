@@ -8,9 +8,12 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Corporate terms and conditions 
 - Corporate enrollment profiles
 - Device configuration settings
+- Electronic SIM (ESIM)
 - Endpoint protection objects and relationships
+- Fencing
 - Notifications
-- On-boarding policies, settings, and details
+-Onboarding policies, settings, and details
+- Resource access
 - Remote access
 - Remote assistance partners
 - Role-based access control (RBAC) policies
@@ -25,7 +28,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |[Update deviceManagement](../api/intune_shared_devicemanagement_update.md)|Update the properties of a [deviceManagement](../resources/intune_shared_devicemanagement.md) object.|
 |**Device management**|
 |[sendCustomNotificationToCompanyPortal action](../api/intune_shared_devicemanagement_sendcustomnotificationtocompanyportal.md)|None|Not yet documented|
-|**On-boarding**|
+|**Onboarding**|
 |[verifyWindowsEnrollmentAutoDiscovery function](../api/intune_shared_devicemanagement_verifywindowsenrollmentautodiscovery.md)|Boolean|Not yet documented|
 |**Role based access control (RBAC)**|
 |[getEffectivePermissions function](../api/intune_shared_devicemanagement_geteffectivepermissions.md)|[rolePermission](../resources/intune_rbac_rolepermission.md) collection|Retrieves the effective permissions of the currently authenticated user|
@@ -49,7 +52,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune_devices_devicemanagementsubscriptionstate.md)|Tenant mobile device management subscription state. Possible values are: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |subscriptions|[deviceManagementSubscriptions](../resources/intune_devices_devicemanagementsubscriptions.md)|Tenant's Subscription. Possible values are: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune_devices_windowsmalwareoverview.md)|Malware overview for windows devices.|
-|**On-boarding**|
+|**Onboarding**|
 |intuneBrand|[intuneBrand](../resources/intune_onboarding_intunebrand.md)|intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.|
 
 ## Relationships
@@ -76,6 +79,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |deviceCompliancePolicies|[deviceCompliancePolicy](../resources/intune_deviceconfig_devicecompliancepolicy.md) collection|The device compliance policies.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune_deviceconfig_devicecompliancepolicydevicestatesummary.md)|The device compliance state summary for this account.|
 |deviceCompliancePolicySettingStateSummaries|[deviceCompliancePolicySettingStateSummary](../resources/intune_deviceconfig_devicecompliancepolicysettingstatesummary.md) collection|The summary states of compliance policy settings for this account.|
+|deviceConfigurationConflictSummary|[deviceConfigurationConflictSummary](../resources/intune_deviceconfig_deviceconfigurationconflictsummary.md) collection|Summary of policies in conflict state for this account.|
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune_deviceconfig_deviceconfigurationdevicestatesummary.md)|The device configuration device state summary for this account.|
 |deviceConfigurationRestrictedAppsViolations|[restrictedAppsViolation](../resources/intune_deviceconfig_restrictedappsviolation.md) collection|Restricted apps violations for this account.|
 |deviceConfigurations|[deviceConfiguration](../resources/intune_deviceconfig_deviceconfiguration.md) collection|The device configurations.|
@@ -107,7 +111,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |managementConditionStatements|[managementConditionStatement](../resources/intune_fencing_managementconditionstatement.md) collection|The management condition statements associated with device management of the company.|
 |**Notifications**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune_notification_notificationmessagetemplate.md) collection|The Notification Message Templates.|
-|**On-boarding**|
+|**Onboarding**|
 |conditionalAccessSettings|[onPremisesConditionalAccessSettings](../resources/intune_onboarding_onpremisesconditionalaccesssettings.md)|The Exchange on premises conditional access settings. On premises conditional access will require devices to be both enrolled and compliant for mail access|
 |deviceCategories|[deviceCategory](../resources/intune_shared_devicecategory.md) collection|The list of device categories with the tenant.|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune_onboarding_deviceenrollmentconfiguration.md) collection|The list of device enrollment configurations|

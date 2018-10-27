@@ -1,4 +1,4 @@
-# windowsUpdateScheduledInstall resource type
+﻿# windowsUpdateScheduledInstall resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -9,18 +9,18 @@ Inherits from [windowsUpdateInstallScheduleType](../resources/intune_deviceconfi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|scheduledInstallDay|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Scheduled Install Day in week. The possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|scheduledInstallDay|[weeklySchedule](../resources/intune_deviceconfig_weeklyschedule.md)|Scheduled Install Day in week. Possible values are: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |scheduledInstallTime|TimeOfDay|Scheduled Install Time during day|
 
 ## Relationships
 None
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsUpdateInstallScheduleType",
   "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdateScheduledInstall",

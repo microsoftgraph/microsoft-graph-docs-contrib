@@ -1,4 +1,4 @@
-# managedDeviceMobileAppConfiguration resource type
+﻿# managedDeviceMobileAppConfiguration resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -8,6 +8,7 @@ An abstract class for Mobile app configuration for enrolled devices.
 |:---|:---|:---|
 |[List managedDeviceMobileAppConfigurations](../api/intune_apps_manageddevicemobileappconfiguration_list.md)|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) collection|List properties and relationships of the [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) objects.|
 |[Get managedDeviceMobileAppConfiguration](../api/intune_apps_manageddevicemobileappconfiguration_get.md)|[managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md)|Read properties and relationships of the [managedDeviceMobileAppConfiguration](../resources/intune_apps_manageddevicemobileappconfiguration.md) object.|
+|[assign action](../api/intune_apps_manageddevicemobileappconfiguration_assign.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -31,13 +32,12 @@ An abstract class for Mobile app configuration for enrolled devices.
 
 ## JSON Representation
 Here is a JSON representation of the resource.
-<!--{
+<!-- {
   "blockType": "resource",
-  "abstract": true,
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.managedDeviceMobileAppConfiguration"
-}-->
+}
+-->
 ``` json
 {
   "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfiguration",

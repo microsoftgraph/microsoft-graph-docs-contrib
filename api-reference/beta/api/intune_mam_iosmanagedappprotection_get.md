@@ -24,7 +24,7 @@ GET /deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -49,7 +49,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2678
+Content-Length: 2788
 
 {
   "value": {
@@ -111,12 +111,12 @@ Content-Length: 2678
     "allowedIosDeviceModels": "Allowed Ios Device Models value",
     "appActionIfIosDeviceModelNotAllowed": "wipe",
     "thirdPartyKeyboardsBlocked": true,
-    "filterOpenInToOnlyManagedApps": true
+    "filterOpenInToOnlyManagedApps": true,
+    "disableProtectionOfManagedOutboundOpenInData": true,
+    "protectInboundDataFromUnknownSources": true
   }
 }
 ```
-
-
 
 
 

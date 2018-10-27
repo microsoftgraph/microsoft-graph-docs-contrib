@@ -47,7 +47,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4598
+Content-Length: 4601
 
 {
   "value": [
@@ -79,7 +79,7 @@ Content-Length: 4598
         "certificate": "Y2VydGlmaWNhdGU="
       },
       "revokeOnUnenrollDisabled": true,
-      "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+      "rightsManagementServicesTemplateId": "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab",
       "azureRightsManagementServicesAllowed": true,
       "iconsVisible": true,
       "protectedApps": [

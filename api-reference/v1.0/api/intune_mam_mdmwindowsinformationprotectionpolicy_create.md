@@ -40,7 +40,7 @@ The following table shows the properties that are required when you create the m
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP enforcement level.See the Enum definition for supported values Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). The possible values are: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP enforcement level.See the Enum definition for supported values Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Possible values are: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String|Primary enterprise domain Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|List of enterprise domains to be protected Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |protectionUnderLockConfigRequired|Boolean|Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
@@ -74,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mdmWindowsInformationProtectionPolicies
 Content-type: application/json
-Content-length: 3966
+Content-length: 3969
 
 {
   "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
@@ -102,7 +102,7 @@ Content-length: 3966
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -208,7 +208,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4074
+Content-Length: 4077
 
 {
   "@odata.type": "#microsoft.graph.mdmWindowsInformationProtectionPolicy",
@@ -238,7 +238,7 @@ Content-Length: 4074
     "certificate": "Y2VydGlmaWNhdGU="
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "abf7b16f-b16f-abf7-6fb1-f7ab6fb1f7ab",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [

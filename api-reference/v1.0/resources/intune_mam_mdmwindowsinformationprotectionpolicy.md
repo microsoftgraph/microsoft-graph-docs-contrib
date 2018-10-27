@@ -1,4 +1,4 @@
-# mdmWindowsInformationProtectionPolicy resource type
+﻿# mdmWindowsInformationProtectionPolicy resource type
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
@@ -24,7 +24,7 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune_mam_managedapppolicy.md)|
-|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP enforcement level.See the Enum definition for supported values Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). The possible values are: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
+|enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune_mam_windowsinformationprotectionenforcementlevel.md)|WIP enforcement level.See the Enum definition for supported values Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md). Possible values are: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String|Primary enterprise domain Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |enterpriseProtectedDomainNames|[windowsInformationProtectionResourceCollection](../resources/intune_mam_windowsinformationprotectionresourcecollection.md) collection|List of enterprise domains to be protected Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
 |protectionUnderLockConfigRequired|Boolean|Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured Inherited from [windowsInformationProtection](../resources/intune_mam_windowsinformationprotection.md)|
@@ -58,7 +58,7 @@ Inherits from [windowsInformationProtection](../resources/intune_mam_windowsinfo
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.windowsInformationProtection",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.mdmWindowsInformationProtectionPolicy"
 }
 -->
@@ -91,7 +91,7 @@ Here is a JSON representation of the resource.
     "certificate": "binary"
   },
   "revokeOnUnenrollDisabled": true,
-  "rightsManagementServicesTemplateId": "79199ed9-e50b-4257-8de4-70b9c8685061",
+  "rightsManagementServicesTemplateId": "Guid",
   "azureRightsManagementServicesAllowed": true,
   "iconsVisible": true,
   "protectedApps": [
@@ -192,5 +192,20 @@ Here is a JSON representation of the resource.
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
 
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: dmWindowsInformation...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Policy for Windows i...",
+
+"Warning: /api-reference/v1.0/resources/intune_mam_mdmwindowsinformationprotectionpolicy.md:
+      Paragraph text found before a valid header: Inherits from [windo..."
+
+  ]
+}
+-->
 
