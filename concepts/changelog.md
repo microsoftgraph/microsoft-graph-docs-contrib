@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## November 2018
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Add |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resource/teamsinstalledapp.md), which will replace /teams/{id}/apps with some differences in payload. |
+
 ## October 2018
 
 ### Delta query
