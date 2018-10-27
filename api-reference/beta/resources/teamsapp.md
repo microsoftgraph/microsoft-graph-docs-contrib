@@ -4,16 +4,16 @@
 
 An app in the [Microsoft Teams](teams_api_overview.md) app catalog.
 
-Users can see these apps inside Microsoft Teams Store, and these apps can be installed into [teams](team.md) using [Add app to team](../api/teams_apps_add.md).
+Users can see these apps inside Microsoft Teams Store, and these apps can be installed into [teams](team.md) using [Add app to team](../api/teamsappinstallation_add.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List published apps](../api/teams_apps_list_published.md) | [teamsApp](teamsApp.md) collection | List published apps from the Teams apps catalog.|
-|[Publish an app](../api/teams_apps_publish.md) | [teamsApp](teamsApp.md) | Publish an app to your organization's app catalog.|
-|[Update a published app](../api/teams_apps_update_published.md) | [teamsApp](teamsApp.md) | Update a published app in your organization's app catalog.|
-|[Remove a published app](../api/teams_apps_remove_published.md) | None | Remove a published app from your organization's app catalog.|
+|[List published apps](../api/teamsapp_list.md) | [teamsApp](teamsApp.md) collection | List published apps from the Teams apps catalog.|
+|[Publish an app](../api/teamsapp_publish.md) | [teamsApp](teamsApp.md) | Publish an app to your organization's app catalog.|
+|[Update a published app](../api/teamsapp_update.md) | [teamsApp](teamsApp.md) | Update a published app in your organization's app catalog.|
+|[Remove a published app](../api/teamsapp_delete.md) | None | Remove a published app from your organization's app catalog.|
 
 ## Properties
 
