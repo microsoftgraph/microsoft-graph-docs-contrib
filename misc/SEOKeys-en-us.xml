@@ -5613,6 +5613,10 @@
         <Item text="List unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve a list of unfamiliarLocationRiskEvent objects." />
         <Item text="Get unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve an unfamiliarLocationRiskEvent object." />
       </Item>
+	  <Item text="Risky users" url="/en-us/api-reference/beta/resources/riskyuser" >
+		<Item text="List" url="/en-us/api-reference/beta/api/riskyusers_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/riskyusers_get" />
+	  </Item>
     </Item>
       <Item text="Identity provider" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
         <Item text="List identity providers" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="List all identityProviders configured within the directory." />
