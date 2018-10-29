@@ -4,6 +4,15 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## November 2018
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added a new method to get a group's [transitive members](../api-reference/beta/api/group_list_transitivemembers.md). This returns a flat list of members including nested members. Similar new methods have been added for getting the list of memberships including nested memberships of [users](../api-reference/beta/api/user_list_transitivemembersof.md), [groups](../api-reference/beta/api/group_list_transitivemembersof.md), [devices](../api-reference/beta/api/device_list_transitivemembersof.md) and [service principals](../api-reference/beta/api/serviceprincipal_list_transitivemembersof.md).|
+| Addition | beta | Added a method to get a device's direct [memberships](../api-reference/beta/api/device_list_members.md).|
+
 ## October 2018
 
 ### Delta query
