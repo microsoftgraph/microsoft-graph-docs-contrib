@@ -11,21 +11,20 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |[List tabs](../api/channels_tabs_list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
 |[Get tab](../api/channels_tabs_get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
 |[Add tab](../api/channels_tabs_add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Remove tab](../api/channels_tabs_delete.md) | | Removes (unpins) a tab from a channel.|
+|[Remove tab](../api/channels_tabs_delete.md) | None | Removes (unpins) a tab from a channel.|
 |[Update tab](../api/channels_tabs_update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 
 ## Properties
 
-|Property|Type|Required|ReadOnly|Description|
-|-|-|-|-|-|
-|  `id`              |   `string`                  |✓|✓|  Identifier that uniquely identifies a specific instance of a channel tab     |
-|  `name`            |   `string`                  |✓| |  Name of the tab     |
-|  `teamsAppId`           |   `string`                  |✓|✓|  App definition identifier of the tab. This value cannot be changed after tab creation.     |
-|  `sortOrderIndex`  |   `int`                     |✓| |  Index of the order used for sorting tabs     |
-|  `chatMessage`   |   [`chatMessage`](chatmessage.md)                  |✓|✓|  The chat message associated with the tab. This is a navigation property.     |
-|  `webUrl`          |   `string`                  |✓|✓|  Deep link url of the tab instance     |
-|  `configuration`        |   [`teamsTabConfiguration`](teamstabconfiguration.md) ||  |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
+|Property|Type|Description|
+|:---------------|:--------|:----------|
+|  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read only.     |
+|  name            |   string                  |  Name of the tab.     |
+|  teamsAppId           |   string             |  App definition identifier of the tab. This value cannot be changed after tab creation.     |
+|  sortOrderIndex  |   int                     |  Index of the order used for sorting tabs     |
+|  webUrl          |   string                  |  Deep link url of the tab instance. Read only.     |
+|  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
 
 ## JSON representation
 

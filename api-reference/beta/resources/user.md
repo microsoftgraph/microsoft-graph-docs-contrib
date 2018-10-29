@@ -11,8 +11,9 @@ This resource supports:
 - Using [delta query](../../../concepts/delta_query_overview.md) to track incremental additions, deletions, and updates, by providing a [delta](../api/user_delta.md) function.
 
 ## Methods
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
+
+| Method | Return Type | Description |
+|:-------|:------------|:------------|
 |[List users](../api/user_list.md) |[user](user.md) collection| Get a list of user objects.|
 |[Create user](../api/user_post_users.md) |[user](user.md)| Create a new user object.|
 |[Get user](../api/user_get.md) | [user](user.md) |Read properties and relationships of user object.|
@@ -57,6 +58,7 @@ This resource supports:
 |[invalidateAllRefreshTokens](../api/user_invalidateallrefreshtokens.md)| None |Invalidates all the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again.|
 |[reminderView](../api/user_reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 |[delta](../api/user_delta.md)|user collection| Get incremental changes for users. |
+|[Translate Outlook identifiers](../api/user_translateexchangeids.md) |[convertIdResult resource type](convertidresult.md) collection| Translate identifiers of Outlook-related resources between formats.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension_post_opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension_get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -64,6 +66,7 @@ This resource supports:
 |[Add schema extension values](../../../concepts/extensibility_schema_groups.md) || Create a schema extension definition and then use it to add custom typed data to a resource.|
 
 ## Properties
+
 | Property       | Type    | Description |
 |:---------------|:--------|:------------|
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
@@ -75,7 +78,7 @@ This resource supports:
 |city|String|The city in which the user is located. Supports $filter.|
 |companyName| String | The company name which the user is associated. Read-only.
 |consentProvidedForMinor|String|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
-|country|String|The country/region in which the user is located; for example, “US” or “UK”. Supports $filter.|
+|country|String|The country/region in which the user is located; for example, "US" or "UK". Supports $filter.|
 |deletedDateTime|DateTimeOffset| The date and time the user was deleted. |
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
@@ -106,7 +109,7 @@ This resource supports:
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
-|preferredDataLocation|String|The preferred data location for the user. For more information see: [OneDrive for Business Multi-Geo tenant configuration](https://docs.microsoft.com/office365/enterprise/multi-geo-tenant-configuration) and [Multi-Geo Capabilities in Exchange Online](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online).|
+|preferredDataLocation|String|The preferred data location for the user. For more information, see [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
 |preferredName|String|The preferred name for the user.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
@@ -133,7 +136,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 
 This read-only property is used by enterprise application developers to ensure the correct handling of a user based on their legal age group. It is calculated based on the user's `ageGroup` and `consentProvidedForMinor` properties.
 
-| Value	   | #	|Description|
+| Value   | # |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
 |minorWithoutParentalConsent |1|(Reserved for future use)|
@@ -148,7 +151,7 @@ The age group and minor consent properties are optional properties used by Azure
 
 #### ageGroup property
 
-| Value	   | #	|Description|
+| Value    | # |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `ageGroup` has been set for the user.|
 |minor|1|The user is consider a minor.|
@@ -157,15 +160,16 @@ The age group and minor consent properties are optional properties used by Azure
 
 #### consentProvidedForMinor property
 
-| Value	   | #	|Description|
+| Value    | # |Description|
 |:---------------|:--------|:----------|
 |null|0|Default value, no `consentProvidedForMinor` has been set for the user.|
 |granted|1|Consent has been obtained for the user to have an account.|
 |denied|2|Consent has not been obtained for the user to have an account.|
 |notRequired|3|The user is from a location that does not require consent.|
- 
+
 ## Relationships
-| Relationship | Type	|Description|
+
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
@@ -315,7 +319,6 @@ Here is a JSON representation of the resource
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
 }
-
 ```
 
 ## See also
@@ -323,7 +326,6 @@ Here is a JSON representation of the resource
 - [Add custom data to resources using extensions](../../../concepts/extensibility_overview.md)
 - [Add custom data to users using open extensions](../../../concepts/extensibility_open_users.md)
 - [Add custom data to groups using schema extensions](../../../concepts/extensibility_schema_groups.md)
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

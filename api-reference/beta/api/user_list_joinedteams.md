@@ -25,8 +25,10 @@ GET /me/joinedTeams
 or
 GET /users/{id}/joinedTeams
 ```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](http://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) to help customize the response.
+The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

@@ -8,6 +8,8 @@ Membership changes to the team continue to be allowed.
 
 Archiving is an async operation. A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
+In order to archive team, the team and [group](../resources/group.md) must have an owner.
+
 To restore a team from its archived state, use the API to [unarchive](team_unarchive.md).
 
 ## Permissions
@@ -17,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.ReadWrite.All    |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

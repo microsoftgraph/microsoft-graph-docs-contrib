@@ -17,8 +17,10 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /teams/{id}/channels/{id}/tabs
 ```
+
+
 ## Optional query parameters
-None.
+The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
 
 ## Request headers
 | Header       | Value |

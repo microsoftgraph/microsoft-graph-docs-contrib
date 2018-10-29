@@ -47,11 +47,15 @@ Security alerts are highly privileged data typically viewable only by security r
 > **Note:** Currently, the Azure Monitor Diagnostic settings blade does not support configuration of tenant-level resources. Microsoft Graph Security API alerts are a tenant-level resource, which requires using the Azure Resource Manager API to configure Azure Monitor to support consumption of your organization’s security alerts.
 
 1. In your Azure subscription, register "microsoft.insights" (Azure Monitor) as a resource provider.  
-> **Note:** Do not register "Microsoft.SecurityGraph" (Microsoft Graph Security API) as a resource provider in your Azure subscription, as “Microsoft.SecurityGraph” is a tenant-level resource as explained above. Tenant level configuration will be part of #6 below.
+ > **Note:** Do not register "Microsoft.SecurityGraph" (Microsoft Graph Security API) as a resource provider in your Azure subscription, as “Microsoft.SecurityGraph” is a tenant-level resource as explained above. Tenant level configuration will be part of #6 below.
 
 2. To configure Azure Monitor using the Azure Resource Manager API, obtain the [ARMClient](https://github.com/projectkudu/ARMClient) tool. This tool will be used to send REST API calls to the Azure portal from a command line.
 
 3. Prepare a diagnostic setting request JSON file like the following:
+
+<!-- {
+  "blockType": "ignored"
+} -->
 
     ``` json
     {
@@ -73,15 +77,14 @@ Security alerts are highly privileged data typically viewable only by security r
     }
     ```
 
-    ```markdown
-    Replace the values in the JSON file as follows:
+  Replace the values in the JSON file as follows:
 
-    * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
-    * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
-    * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
-    * **“days”:** is the number of days you want to retain messages in your event hub.
-    ```
-
+  * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
+  * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
+  * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
+  * **“days”:** is the number of days you want to retain messages in your event hub.
+  
+&nbsp;
 4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
 
 5. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
@@ -101,6 +104,7 @@ Security alerts are highly privileged data typically viewable only by security r
     ``` shell
     ARMClient.exe get https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
     ```
+
 8. Exit the ARMClient tool. You have now completed the configuration of Azure Monitor to send security alerts from your tenant to event hub.
 
 ## Step 3: Download and install the Azure Monitor Add-on for Splunk which will allow Splunk to consume security alerts
@@ -118,7 +122,7 @@ Splunk needs an application registration in your organization’s Azure Active D
 
     ![app registration image](../concepts/images/app-registration.png)
 
-2. Select a name for your application, choose **Web app / API** for the type, and **`http://localhost`** for the sign-on URL. Then select **Create**.
+2. Select a name for your application, choose **Web app / API** for the type, and **`https://localhost`** for the sign-on URL. Then select **Create**.
 
     ![web api config](../concepts/images/app-web-config.png)
 
@@ -187,14 +191,14 @@ Try searching Graph Security alerts:
 - Type `sourcetype="amdl:securitygraph:alert"` in the search bar to get all alerts surfaced through the Microsoft Graph Security API. On the right-hand side, you will see the top-level properties of Azure Monitor log where Graph Security alert is under properties field.<br/>
 - On the left pane, you will see selected fields and interesting fields. You can use selected fields to create dashboards or Splunk alerts, you can also add or remove selected fields by right-clicking on the fields.  
 > **Note:**
-As shown in the following search query, you can restrict your search as needed. In the example, we filter the Graph Security Alerts by high severity alerts from Azure Security Center. We also used `eventDatetime`, `severity`, `status`, and `provider` as selected fields to be displayed. For more advance search terms, see [Splunk search tutorials](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
+As shown in the following search query, you can restrict your search as needed. In the example, we filter the Graph Security Alerts by high severity alerts from Azure Security Center. We also used `eventDatetime`, `severity`, `status`, and `provider` as selected fields to be displayed. For more advance search terms, see [Splunk search tutorials](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial).
 
  ![splunk_search_query](../concepts/images/splunk_search_query.png)
 > Search query: `sourcetype="amdl:securitygraph:alert" "properties.vendorInformation.provider"=ASC "properties.severity"=High | rename properties.eventDataTime as eventDateTime properties.severity as severity properties.vendorInformation.provider as provider properties.status as status`
 
 Splunk also allows multiple actions on search results using the "Save As" menu option in top right of the screen. You can create Reports, Dashboard Panels, or Alerts based on your search filter.
 Below is an example of a dashboard with an event stream based on the previous query:
-You can add a drilldown link to each event to further access the details on Microsoft Graph site. See [Splunk drilldown documentation](http://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro).
+You can add a drilldown link to each event to further access the details on Microsoft Graph site. See [Splunk drilldown documentation](https://docs.splunk.com/Documentation/Splunk/7.1.2/Viz/DrilldownIntro).
 
  ![splunk_search_results](../concepts/images/splunk_search_results.png)
 
@@ -202,4 +206,5 @@ Or you can create a dashboard as a timeline chart:
 
  ![splunk_search_timeline](../concepts/images/splunk_search_timeline.png)
 
-You can follow [Splunk Search & Report tutorial](http://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
+You can follow [Splunk Search & Report tutorial](https://docs.splunk.com/Documentation/Splunk/7.1.2/SearchTutorial/WelcometotheSearchTutorial) for more details.
+

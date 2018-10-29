@@ -6,6 +6,9 @@ Create a new [team](../resources/team.md) under a [group](../resources/group.md)
 
 In order to create a team, the group must have a least one owner.
 
+If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. 
+The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -28,11 +31,11 @@ PUT /groups/{id}/team
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply a JSON representation of [team](../resources/team.md) object.
+In the request body, supply a JSON representation of a [team](../resources/team.md) object.
 
 ## Response
 
-If successful, this method should return a `201 Created` response code and [team](../resources/team.md) object in the response body.
+If successful, this method should return a `201 Created` response code and a [team](../resources/team.md) object in the response body.
 
 ## Example
 #### Request
@@ -60,7 +63,9 @@ Content-type: application/json
 }
 ```
 #### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
