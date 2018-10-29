@@ -88,9 +88,9 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 > **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
 
-### Example
+## Example
 
-#### Request 1
+### Request 1
 
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 <!-- {
@@ -102,7 +102,7 @@ The following is an example of the request. There is no `$select` parameter, so 
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 ```
 
-#### Response 1
+### Response 1
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. No `isOf` filter has been used, so all types derived from directoryObject are returned.
 
@@ -169,7 +169,7 @@ Content-type: application/json
 }
 ```
 
-#### Request 2
+### Request 2
 
 The next example shows the use of the alternative minimal response behavior:
 <!-- {
@@ -182,7 +182,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 Prefer: return=minimal
 ```
 
-#### Response 2
+### Response 2
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note only the properties that have actually changed are returned.
 
@@ -222,7 +222,7 @@ Content-type: application/json
 }
 ```
 
-#### Request 3
+### Request 3
 
 The next example shows the initial request using the `isOf` operator to filter out only user and group entities:
 <!-- {
@@ -234,7 +234,7 @@ The next example shows the initial request using the `isOf` operator to filter o
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')
 ```
 
-#### Response 3
+### Response 3
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that only user and group objects are returned:
 
