@@ -34,7 +34,7 @@ Or to a user's personal OneDrive:
 `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-Or to a new [Secuirty API alert](security-concept-overview.md):
+Or to a new [Security API alert](security-concept-overview.md):
 `/security/alerts?$filter=status eq ‘New’`,
 `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
