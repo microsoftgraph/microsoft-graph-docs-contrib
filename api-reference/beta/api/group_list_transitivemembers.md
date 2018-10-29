@@ -1,4 +1,4 @@
-# List a group's transitive members
+# List group transitive members
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -44,7 +44,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 <!-- {
@@ -56,7 +56,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/groups/{id}/tranisitiveMembers
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.

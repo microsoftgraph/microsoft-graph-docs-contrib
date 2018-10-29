@@ -1,4 +1,4 @@
-# device: List transitive memberOf
+# List device transitive groups
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -43,7 +43,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 ## Example
 
-##### Request
+### Request
 
 Here is an example of the request.
 <!-- {
@@ -55,7 +55,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 ```
 
-##### Response
+### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 

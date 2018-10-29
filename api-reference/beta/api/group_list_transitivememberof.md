@@ -1,4 +1,4 @@
-# group: List transitive memberOf
+# List group transitive memberOf
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -35,7 +35,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
 ## Example
-#### Request
+
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -46,7 +47,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/groups/{id}/transitiveMemberOf
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
