@@ -68,7 +68,7 @@ Delta query is currently supported for the following resources.
 |:------ | :------ |
 | Applications (preview) | [delta](../api-reference/beta/api/application_delta.md) function of the [application](../api-reference/beta/resources/application.md) resource (preview) |
 | Directory objects | [delta](../api-reference/beta/api/directoryobject_delta.md) function of the [directoryObjects](../api-reference/beta/resources/directoryobject.md) resource (preview) |
-| Directory roles | [delta](../api-reference/beta/api/directoryrole_delta.md) function of the [directoryRole](../api-reference/beta/resources/directoryrole.md) resource (preview) |
+| Directory roles | [delta](../api-reference/v1.0/api/directoryrole_delta.md) function of the [directoryRole](../api-reference/v1.0/resources/directoryrole.md) resource |
 | Events in a calendar view (date range) of the primary calendar | [delta](../api-reference/v1.0/api/event_delta.md) function of the [event](../api-reference/v1.0/resources/event.md) resource |
 | Groups | [delta](../api-reference/v1.0/api/group_delta.md) function of the [group](../api-reference/v1.0/resources/group.md) resource |
 | Mail folders | [delta](../api-reference/v1.0/api/mailfolder_delta.md) function of the [mailFolder](../api-reference/v1.0/resources/mailFolder.md) resource |
@@ -81,7 +81,7 @@ Delta query is currently supported for the following resources.
 | Planner items\*\* | [delta](../api-reference/beta/api/planneruser_list_delta.md) function of the all segment of [plannerUser](../api-reference/beta/resources/planneruser.md) resource (preview) |
 
 > \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
-[Track changes for a Drive](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/item_delta).
+[Track changes for a Drive](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/item_delta).
 
 > \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](../api-reference/beta/api/planneruser_list_delta.md).
 
