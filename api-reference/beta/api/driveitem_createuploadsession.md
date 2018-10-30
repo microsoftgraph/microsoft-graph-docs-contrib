@@ -54,7 +54,7 @@ For example, the `item` property allows setting the following parameters:
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "rename | fail | replace",
   "description": "description",
   "name": "filename.txt"
 }
