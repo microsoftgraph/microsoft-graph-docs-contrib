@@ -1,12 +1,13 @@
-# List all teams
+# List all teams in organization
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieves all [groups](../resources/group.md) in the organization (tenant) that have corresponding [teams](../resources/team.md). 
+To list all teams in an organization (tenant), 
+Retrieves all [groups](../api-reference/beta/resources/group.md) in the organization (tenant) that have corresponding [teams](../api-reference/beta/resources/team.md). 
 Any group that has a team has a resourceProvisioningOptions property that contains "Team", 
-so the approach is to get a [list of all groups](group_list.md) where resourceProvisioningOptions contains "Team".
+so the approach is to get a [list of all groups](../api-reference/beta/resources/group_list.md) where resourceProvisioningOptions contains "Team".
 
-See [list of all groups](group_list.md) for information on permissions and responses.
+See [list of all groups](../api-reference/beta/api/group_list.md) for information on permissions and responses.
 
 Note: Teams that were deleted then restored may not be included, Microsoft is working to address this limitation.
 
@@ -25,7 +26,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. The [default properties](../api/group_get.md#default-properties) will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. The [default properties](../api-reference/beta/api/group_get.md#default-properties) will be returned from an actual call.
 
 ```http
 HTTP/1.1 200 OK
@@ -72,5 +73,5 @@ Content-length: xxx
 ```
 
 ## See also
-- [List joinedTeams](user_list_joinedteams.md)
-- [List groups](group_list.md)
+- [List joinedTeams](../api-reference/beta/api/user_list_joinedteams.md)
+- [List groups](../api-reference/beta/api/group_list.md)
