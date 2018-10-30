@@ -2,18 +2,16 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-To list all teams in an organization (tenant), 
-Retrieves all [groups](../api-reference/beta/resources/group.md) in the organization (tenant) that have corresponding [teams](../api-reference/beta/resources/team.md). 
+To list all [teams](../api-reference/beta/resources/team.md) in an organization (tenant), 
+get a list of all [groups](../api-reference/beta/resources/group.md) in the organization that have corresponding teams. 
 Any group that has a team has a resourceProvisioningOptions property that contains "Team", 
 so the approach is to get a [list of all groups](../api-reference/beta/resources/group_list.md) where resourceProvisioningOptions contains "Team".
-
-See [list of all groups](../api-reference/beta/api/group_list.md) for information on permissions and responses.
-
-Note: Teams that were deleted then restored may not be included, Microsoft is working to address this limitation.
 
 Note: The Group.resourceProvisioningOptions can be changed.
 Do not add or remove "Team" from that collection, 
 otherwise list all teams will return incorrect results.
+
+> **Note**: There is a known issue with certain unused old teams not being listed with this approach. For details, see the [known issues list](../../../concepts/known_issues.md#Missing-teams-in-list-all-teams).
 
 ## Example
 
