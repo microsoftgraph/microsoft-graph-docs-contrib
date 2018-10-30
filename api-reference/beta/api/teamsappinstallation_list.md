@@ -20,8 +20,7 @@ GET /teams/{id}/installedApps
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
-
+This method supports the $filter, $select, and $expand [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Header       | Value |

@@ -21,6 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 GET /appCatalogs/teamsApps
 ```
 
+## Optional query parameters
+This method supports the $filter, $select, and $expand [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+
 ## Request headers
 
 | Header        | Value           |
