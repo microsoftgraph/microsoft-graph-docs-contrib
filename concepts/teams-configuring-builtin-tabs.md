@@ -120,7 +120,7 @@ Configuration:
 | removeUrl  | string      | a URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. |
 | websiteUrl | string      | a URL of the form `https://www.onenote.com/teams/TabRedirect?redirectUrl=<oneNoteWebUrl>`, where `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md) |
 
-## Power%20BI
+## Power BI
 
 teamsAppId is `com.microsoft.teamspace.tab.powerbi`.
 Configuration is not supported.
