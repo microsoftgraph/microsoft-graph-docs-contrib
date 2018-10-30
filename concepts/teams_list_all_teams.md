@@ -5,7 +5,7 @@
 To list all [teams](../api-reference/beta/resources/team.md) in an organization (tenant), 
 get a list of all [groups](../api-reference/beta/resources/group.md) in the organization that have corresponding teams. 
 Any group that has a team has a resourceProvisioningOptions property that contains "Team", 
-so the approach is to get a [list of all groups](../api-reference/beta/resources/group_list.md) where resourceProvisioningOptions contains "Team".
+so the approach is to get a [list of all groups](../api-reference/beta/api/group_list.md) where resourceProvisioningOptions contains "Team".
 
 Note: The Group.resourceProvisioningOptions can be changed.
 Do not add or remove "Team" from that collection, 
