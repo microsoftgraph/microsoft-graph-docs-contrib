@@ -21,7 +21,7 @@ GET /teams/{id}/channels/{id}/tabs
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the $filter, $select, and $expand [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Header       | Value |
