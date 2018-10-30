@@ -4,7 +4,7 @@
 
 An app in the [Microsoft Teams](teams_api_overview.md) app catalog.
 
-Users can see these apps inside Microsoft Teams Store, and these apps can be installed into [teams](team.md) using [Add app to team](../api/teamsappinstallation_add.md).
+Users can see these apps in the Microsoft Teams Store, and these apps can be installed in [teams](team.md) using the [Add app to team](../api/teamsappinstallation_add.md) method.
 
 ## Methods
 
