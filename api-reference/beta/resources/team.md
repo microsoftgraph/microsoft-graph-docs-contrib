@@ -24,7 +24,7 @@ For more information about working with groups and members in teams, see [Use th
 |[List all teams](../api/team_list_all_teams.md) | [group](group.md) collection | List all groups that have teams. |
 |[Publish apps to your organization](../resources/teamsapp.md)| [app](../resources/teamsapp.md) | Create Teams apps visible only to your organization. |
 |[Add app to team](../api/teamsappinstallation_add.md) | [teamsApp](teamsapp.md) | Adds (installs) an app to a team.|
-|[Add tab to channel](../api/channels_tabs_add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
+|[Add tab to channel](../api/teamstab_add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
 |[List channel messages](../api/channel_list_messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel_list_messages.md) |
 
 ## Properties
