@@ -1,10 +1,12 @@
-# Delete app from team
+# Upgrade app in team
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
+Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md)
+to the latest version of the app.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -16,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /teams/{id}/installedApps/{id}
+POST /teams/{id}/installedApps/{id}/upgrade
 ```
 
 ## Request headers
@@ -32,14 +34,16 @@ Do not supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
+
 #### Request
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
 }-->
+
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
+POST /teams/{id}/installedApps/{id}/upgrade
 ```
 #### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

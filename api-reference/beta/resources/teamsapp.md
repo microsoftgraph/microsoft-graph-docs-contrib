@@ -22,7 +22,7 @@ Users can see these apps inside Microsoft Teams Store, and these apps can be ins
 | id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
 | externalId          | string   | The ID of the catalog provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
 | displayName                | string   | The name of the catalog app provided by the app developer in the [Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
-| distributionMethod  | enum     | The method of distribution for the catalog app: `Organization`, `Store`. |
+| distributionMethod  | enum     | The method of distribution for the app: `organization`, `sideloaded`, `store`. |
 
 ## Relationships
 

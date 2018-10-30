@@ -8,6 +8,7 @@ The details of one version of a [teamsApp](teamsapp.md).
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | A unique id (not the teams appid). |
+| teamsAppId          | string   | The id from the Teams App manifest. |
 | displayName         | string   | The name of the app provided by the app developer. |
 | version             | string   | The version number of the application. |
 

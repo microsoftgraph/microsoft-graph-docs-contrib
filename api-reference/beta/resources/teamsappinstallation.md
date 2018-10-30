@@ -12,6 +12,7 @@ Any bots that are part of the app will become part of any team the app is added 
 |[List apps](../api/teamsappinstallation_list.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in a team.|
 |[Add app](../api/teamsappinstallation_add.md) | [teamsAppInstallation](teamsapp.md) | Adds (installs) an app to a team.|
 |[Remove app](../api/teamsappinstallation_delete.md) | None | Removes (uninstalls) an app from a team.|
+|[Upgrade app](../api/teamsappinstallation_delete.md) | None | Upgrades to the latest version of the app.|
 
 ## Properties
 
@@ -24,7 +25,7 @@ Any bots that are part of the app will become part of any team the app is added 
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| The app that is installed. |
-|appDefinition|[teamsAppDefinition](teamsapp.md)| The details of this version of the app. |
+|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| The details of this version of the app. |
 
 ## JSON representation
 
