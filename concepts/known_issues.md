@@ -46,6 +46,15 @@ will be replaced with a richer API that is consistent with the schema for [listi
 
 Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
 
+### Missing teams in list of teams in organization
+
+Some teams that were created in the past but which haven't been recently used by a user in Microsoft Teams aren't listed by
+[list all teams](.../../../concepts/teams_list_all_teams.md).
+New teams will not have this problem.
+The problem is that certain old teams don't have a resourceProvisioningOptions property that contains "Team",
+which is set on newly created teams and teams that are visited in Microsoft Teams.
+In the future we will set resourceProvisioningOptions on existing teams that have not been opened in Microsoft Teams.
+
 ## Groups
 
 ### Permissions for groups and Microsoft Teams
