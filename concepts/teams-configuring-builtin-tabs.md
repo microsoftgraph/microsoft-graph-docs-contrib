@@ -1,8 +1,6 @@
 # Configuring the built-in tab types
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-To [create](../api/channels_tabs_add.md) or [configure a tab](../api/channels_tabs_update.md) using Graph APIs, 
+To [create](../api-reference/beta/api/channels_tabs_add.md) or [configure a tab](../api-reference/beta/api/channels_tabs_update.md) using Graph APIs, 
 you need to know the `teamsAppId` of the app, and the
 `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` to provide for that kind of app.
 Here are how to get those values for the built-in tab types.
@@ -40,7 +38,7 @@ Configuration:
 | removeUrl  | string      | Same value as the contentUrl    |
 | websiteUrl | string      | Same value as the contentUrl   |
 
-To create a new plan to display in your planner tab, see [create plannerPlan](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/planner_post_plans).
+To create a new plan to display in your planner tab, see [create plannerPlan](../api-reference/beta/api/planner_post_plans.md).
 
 
 ## Microsoft Stream
@@ -84,7 +82,7 @@ Configuration:
 | contentUrl | string      | null                                                     |
 | removeUrl  | string      | null                                                     |
 | websiteUrl | string      | null                                                     |
-| objectId   | string      | The file's UniqueId in SharePoint. This can be found by using [`GET /beta/groups/{id}/drive/root:/{channel-Name>}:/children`](../api/driveitem_list_children.md) to get the metadata for the file. The first property, @microsoft.graph.downloadUrl, will contain a URL of the form https://microsoft.sharepoint.com/.....?UniqueId=<guid>&... |
+| objectId   | string      | The file's UniqueId in SharePoint. This can be found by using [`GET /beta/groups/{id}/drive/root:/{channel-Name>}:/children`](../api-reference/beta/api/driveitem_list_children.md) to get the metadata for the file. The first property, @microsoft.graph.downloadUrl, will contain a URL of the form https://microsoft.sharepoint.com/.....?UniqueId=<guid>&... |
 | file       | <see below> | <see below>                                              |
 | dateAdded   | string      | in the form `2018-02-21T01:37:12.629Z` |
 
@@ -118,9 +116,9 @@ Configuration:
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `<randomGuid>_<notebookId>`, where <randomGuid> is a guid you generate.                                      |
-| contentUrl | string      | a URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api/onenote_list_notebooks.md). Slashes must be escaped. |
-| removeUrl  | string      | a URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api/onenote_list_notebooks.md). Slashes must be escaped. |
-| websiteUrl | string      | a URL of the form `https://www.onenote.com/teams/TabRedirect?redirectUrl=<oneNoteWebUrl>`, where `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](../api/onenote_list_notebooks.md) |
+| contentUrl | string      | a URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. |
+| removeUrl  | string      | a URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. |
+| websiteUrl | string      | a URL of the form `https://www.onenote.com/teams/TabRedirect?redirectUrl=<oneNoteWebUrl>`, where `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md) |
 
 ## Power%20BI
 
