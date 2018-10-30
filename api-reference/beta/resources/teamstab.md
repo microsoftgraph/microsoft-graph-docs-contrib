@@ -61,4 +61,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-[Configuring the built-in tab types](../../../concepts/teamstab_builtin.md)
+[Configuring the built-in tab types](../../../concepts/teams-configuring-builtin-tabs.md)
