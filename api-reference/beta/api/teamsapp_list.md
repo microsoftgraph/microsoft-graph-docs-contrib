@@ -22,7 +22,7 @@ GET /appCatalogs/teamsApps
 ```
 
 ## Optional query parameters
-This method supports the $filter, $select, and $expand [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the $filter, $select, and $expand [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 
@@ -36,18 +36,18 @@ None.
 >**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results. You can use any of the following filter operations: Equal, not-equal, and, or, and not.
 
 ## Response
-If successful, this method returns a `200 OK` response code and list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.
 
-## Example
+## Examples
+### Example 1
+The following example lists all applications that are specific to your tenant.
 
-List all applications that are specific to your tenant:
-
-### Request
+#### Request
 ```
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
-### Response
+#### Response
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -65,16 +65,16 @@ Content-Type: application/json
 }
 ```
 
-## Example
+### Example 2
 
-List applications with a given ID:
+The following example lists applications with a given ID.
 
-### Request
+#### Request
 ```
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
-### Response
+#### Response
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
