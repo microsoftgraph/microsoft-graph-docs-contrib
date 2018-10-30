@@ -22,7 +22,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## Optional query parameters
 
-This method supports the $select, and $expand [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the $select, and $expand [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -34,7 +34,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [tab](../resources/teamstab.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [tab](../resources/teamstab.md) object in the response body.
 ## Example
 #### Request
 The following is an example of the request.
@@ -42,7 +42,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
