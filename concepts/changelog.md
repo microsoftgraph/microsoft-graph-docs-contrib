@@ -17,6 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Removal |beta| teamsCatalogAppDistributionMethod has been renamed to teamsAppDistributionMethod  |
 |Addition |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
 |Addition |beta| Added the displayName property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
+|Addition |beta| Added the messageId property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
 |Addition |beta| Added the teamsApp property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
 |Addition |beta| Introduced new resource type [teamsAppInstallation](../api-reference/beta/resources/teamsappinstallation.md).|
 |Addition |beta| Introduced new resource type [teamsApp](../api-reference/beta/resources/teamsapp.md).|
