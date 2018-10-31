@@ -6204,10 +6204,10 @@
 		<Item text="List message replies" url="/en-us/api-reference/beta/api/channel_list_messagereplies" />
 		<Item text="Get message reply" url="/en-us/api-reference/beta/api/channel_get_messagereply" />
 		<Item text="List tabs" url="/en-us/api-reference/beta/api/channels_tabs_list" />
-		<Item text="Get tab" url="/en-us/api-reference/beta/api/channels_tabs_get" />
-		<Item text="Update tab" url="/en-us/api-reference/beta/api/channels_tabs_update" />
-		<Item text="Delete tab" url="/en-us/api-reference/beta/api/channels_tabs_delete" />
-		<Item text="Add tab" url="/en-us/api-reference/beta/api/channels_tabs_add" />
+		<Item text="Get tab" url="/en-us/api-reference/beta/api/teamstab_get" />
+		<Item text="Update tab" url="/en-us/api-reference/beta/api/teamstab_update" />
+		<Item text="Delete tab" url="/en-us/api-reference/beta/api/teamstab_delete" />
+		<Item text="Add tab" url="/en-us/api-reference/beta/api/teamstab_add" />
       </Item>
       <Item text="Chat thread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="chatthread API, Microsoft Graph API, chatthread API" SEODescription="">
         <Item text="Create chat thread" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Create chat thread, Microsoft Graph API, Microsoft Teams chat API" SEODescription="Use this API to create a new chat thread." />
