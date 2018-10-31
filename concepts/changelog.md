@@ -10,10 +10,21 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Add |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
-|Add |beta| Introduced [/appCatalogs/teamsApps/{id}/appDefinition](../api-reference/beta/resources/teamsappdefinition.md), which will replace the version property on [/appCatalogs/teamsApps/{id}](../api-reference/beta/resources/teamsapp.md). |
-|Add |beta| Introduced new resource type [teamsAppInstallation](../api-reference/beta/resources/teamsappinstallation.md).|
-|Addition|beta|[teamsTab](../api-reference/beta/resources/teamstab.md) resource now has displayName, messageId, and teamsApp properties.|
+|Addition |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
+|Addition |beta| Introduced [/appCatalogs/teamsApps/{id}/appDefinition](../api-reference/beta/resources/teamsappdefinition.md), which will replace the version property on [/appCatalogs/teamsApps/{id}](../api-reference/beta/resources/teamsapp.md). |
+|Change   |beta| Renamed the type of [/appCatalogs/teamsApps](../api-reference/beta/resources/teamsapp.md) from teamsCatalogApp to teamsApp. |
+|Change   |beta| Renamed the type of the distributionMethod property on [/appCatalogs/teamsApps](../api-reference/beta/resources/teamsapp.md) from teamsCatalogAppDistributionMethod to teamsAppDistributionMethod  |
+|Removal |beta| teamsCatalogAppDistributionMethod has been renamed to teamsAppDistributionMethod  |
+|Addition |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
+|Addition |beta| Added the displayName property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
+|Addition |beta| Added the teamsApp property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
+|Addition |beta| Introduced new resource type [teamsAppInstallation](../api-reference/beta/resources/teamsappinstallation.md).|
+|Addition |beta| Introduced new resource type [teamsApp](../api-reference/beta/resources/teamsapp.md).|
+|Addition |beta| Introduced new resource type [teamsAppDefinition](../api-reference/beta/resources/teamsappdefinition.md).|
+|Addition |beta| Introduced new enum member hiddenMembership to teamVisibilityType.|
+|Addition |beta| Introduced new enum member createTeam to teamsAsyncOperationType.|
+|Addition |beta| Introduced new enum member teamsAppDistributionMethod.|
+|Addition |beta| Introduced new upgrade app action under [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md). |
 
 ## October 2018
 
