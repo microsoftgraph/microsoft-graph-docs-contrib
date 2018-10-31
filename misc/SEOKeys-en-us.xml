@@ -6203,7 +6203,7 @@
 		<Item text="Get channel message" url="/en-us/api-reference/beta/api/channel_get_message" />
 		<Item text="List message replies" url="/en-us/api-reference/beta/api/channel_list_messagereplies" />
 		<Item text="Get message reply" url="/en-us/api-reference/beta/api/channel_get_messagereply" />
-		<Item text="List tabs" url="/en-us/api-reference/beta/api/channels_tabs_list" />
+		<Item text="List tabs" url="/en-us/api-reference/beta/api/teamstab_list" />
 		<Item text="Get tab" url="/en-us/api-reference/beta/api/teamstab_get" />
 		<Item text="Update tab" url="/en-us/api-reference/beta/api/teamstab_update" />
 		<Item text="Delete tab" url="/en-us/api-reference/beta/api/teamstab_delete" />
