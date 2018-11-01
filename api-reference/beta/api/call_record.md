@@ -35,16 +35,16 @@ In the request body, provide a JSON object with the following parameters.
 |initialSilenceTimeoutInSeconds | Int32| Maximum initial silence allowed from the time we start the record operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. |
 |maxSilenceTimeoutInSeconds|Int32| The maximum silence timeout in seconds.|
 |maxRecordDurationInSeconds|Int32| The maximum record duration in seconds.|
-|playBeep|Boolean| Plays a beep after playing the prompt|
+|playBeep|Boolean| Plays a beep after playing the prompt.|
 |streamWhileRecording|Boolean|If set to true, a resource location will be provided as soon as the recording starts. |
-|stopTones|String collection|Stop tones specified to end recording|
+|stopTones|String collection|Stop tones specified to end recording.|
 |clientContext|String|The client context.|
 
 ## Response
 Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 Here is an example of the request.

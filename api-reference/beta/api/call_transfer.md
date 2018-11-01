@@ -42,7 +42,7 @@ Returns `202 Accepted` response code.
 
 ### Transfer call directly, with no user involvement
 
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 Here is an example of the request.

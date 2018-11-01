@@ -30,7 +30,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation|
+|targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection|The target participants of the redirect operation.|
 |targetDisposition|String|The possible value is: `default`|
 |timeout|Int32|The timeout in seconds for the redirect operation.|
 |maskCallee|Boolean|Indicates whether to mask the callee.|

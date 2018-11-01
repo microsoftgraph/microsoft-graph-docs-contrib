@@ -30,14 +30,14 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) collection| Configuration of mixer levels for given audio participant|
+|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) collection| Configuration of mixer levels for given audio participant.|
 |clientContext|String|The client context.|
 
 ## Response
 Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 Here is an example of the request.

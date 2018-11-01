@@ -40,7 +40,7 @@ Returns `202 Accepted` response code
 ```
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Notification - incoming
 

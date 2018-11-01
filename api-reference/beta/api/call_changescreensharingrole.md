@@ -34,8 +34,9 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 Returns `202 Accepted` response code.
+
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 Here is an example of the request.

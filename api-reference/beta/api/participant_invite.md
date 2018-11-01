@@ -36,8 +36,8 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 
-## Example
-Here is an example of how to call this API.
+## Examples
+The following examples shows how to call this API.
 
 ##### Request
 Here is an example of the request.
@@ -86,7 +86,7 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 ```
 <br/>
 
-## Example Invite Participants in Existing P2P meeting
+### Invite Participants in Existing P2P meeting
 
 ##### Request
 
@@ -232,11 +232,11 @@ Content-Type: application/json
 }
 ```
 
-# Example Invite Participants in Existing P2P meeting
+### Invite Participants in Existing P2P meeting
 
 This example shows a complete E2E flow for [Invite Participants](../api/participant_invite.md) in an existing P2P meeting.
 
-## Answer Incoming VOIP call with service hosted media
+##### Answer Incoming VOIP call with service hosted media
 
 ##### Notification - Incoming
 
@@ -393,7 +393,7 @@ Content-Type: application/json
 }
 ```
 
-## Join channel meeting without media
+### Join channel meeting without media
 
 > **IMPORTANT**: If the bot instance is joining only for the purpose of facilitating the transfer, it should avoid media negotiations.  Therefore, it is best to add it without any `requestedModalities` or `mediaConfig`.
 
@@ -500,7 +500,7 @@ Content-Type: application/json
 }
 ```
 
-## Invite participant from initial incoming call
+### Invite participant from initial incoming call
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
