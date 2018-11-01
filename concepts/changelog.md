@@ -4,6 +4,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
+## November 2018
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the [forceDelete](../api-reference/v1.0/api/domain_forcedelete.md) action to [domains](../api-reference/v1.0/resources/domain.md).|
+
 ## October 2018
 
 ### Delta query
