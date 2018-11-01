@@ -2,19 +2,19 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Information about a message in Microsoft Teams
+Information about a message in Microsoft Teams.
 
 ## Properties
 
 | Property            | Type    | Description|
 |:--------------------|:--------|:-----------|
-| messageId           | String  | unique identifier for a message in a Microsoft Teams channel |
-| replyChainMessageId | String  | Id of the reply message |
-| threadId            | String  | unique identifier for a thread in Microsoft Teams |
+| messageId           | String  | The unique identifier for a message in a Microsoft Teams channel. |
+| replyChainMessageId | String  | The ID of the reply message. |
+| threadId            | String  | The unique identifier for a thread in Microsoft Teams. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

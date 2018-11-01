@@ -4,7 +4,7 @@
 
 Retrieve the properties and relationships of an **onlineMeeting** object.
 
-> **Note:** `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/en-us/microsoftteams/cloud-video-interop-for-teams-set-up). These ids are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
+> **Note:** The `GET` method is limited to a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
 > For regular flows, the bot can use the `joinURL` to join a meeting and no lookup is necessary.
 
 ## Permissions
@@ -41,7 +41,7 @@ If successful, this method returns a `200 OK` response code and [onlineMeeting](
 ## Example
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
