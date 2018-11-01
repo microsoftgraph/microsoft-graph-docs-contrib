@@ -49,7 +49,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}
 
 ##### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -124,11 +124,6 @@ Content-Length: 2821
   "requestedModalities": [
     "audio", "video"
   ],
-  "resultInfo": {
-    "code": "code-value",
-    "message": "message-value",
-    "subCode": "subCode-value"
-  },
   "ringingTimeoutInSeconds": 99,
   "routingPolicies": [
     "none"
