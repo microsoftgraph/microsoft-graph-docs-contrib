@@ -58,9 +58,21 @@ The CSV file has the following headers for columns.
 - Report Date
 - Report Period
 
+However, the following columns are not supported in Gallatin.
+
+- Yammer Messages Posted
+- Yammer Messages Read
+- Yammer Messages Liked
+
 ### JSON
 
 If successful, this method returns a `200 OK` response code and an **[office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md)** object in the response body.
+
+However, the following properties in **[office365GroupsActivityCounts](../resources/office365groupsactivitycounts.md)** object are not supported in Gallatin.
+
+- yammerMessagesPosted
+- yammerMessagesRead
+- yammerMessagesLiked
 
 ## Example
 

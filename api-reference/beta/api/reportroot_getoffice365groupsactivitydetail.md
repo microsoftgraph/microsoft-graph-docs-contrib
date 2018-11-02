@@ -73,9 +73,21 @@ The CSV file has the following headers for columns.
 - SharePoint Site Storage Used (Byte)
 - Report Period
 
+However, the following columns are not supported in Gallatin.
+
+- Yammer Posted Message Count
+- Yammer Read Message Count
+- Yammer Liked Message Count
+
 ### JSON
 
 If successful, this method returns a `200 OK` response code and an **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object in the response body.
+
+However, the following properties in **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object are not supported in Gallatin.
+
+- yammerPostedMessageCount
+- yammerReadMessageCount
+- yammerLikedMessageCount
 
 The default page size for this request is 200 items.
 

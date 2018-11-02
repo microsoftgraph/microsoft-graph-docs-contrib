@@ -65,9 +65,23 @@ The CSV file has the following headers for columns.
 - Teams Inactive
 - Report Period
 
+However, the following columns are not supported in Gallatin.
+
+- Yammer Active
+- Yammer Inactive
+- Teams Active
+- Teams Inactive
+
 ### JSON
 
 If successful, this method returns a `200 OK` response code and an **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** object in the response body.
+
+However, the following properties in **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** object are not supported in Gallatin.
+
+- yammerActive
+- yammerInactive
+- teamsActive
+- teamsInactive
 
 ## Example
 

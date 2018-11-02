@@ -79,9 +79,27 @@ The CSV file has the following headers for columns.
 - Teams License Assign Date
 - Assigned Products
 
+However, the following columns are not supported in Gallatin.
+
+- Has Yammer License
+- Has Teams License
+- Yammer Last Activity Date
+- Teams Last Activity Date
+- Yammer License Assign Date
+- Teams License Assign Date
+
 ### JSON
 
 If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.
+
+However, the following properties in **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object are not supported in Gallatin.
+
+- hasYammerLicense
+- hasTeamsLicense
+- yammerLastActivityDate
+- teamsLastActivityDate
+- yammerLicenseAssignDate
+- teamsLicenseAssignDate
 
 The default page size for this request is 200 items.
 
