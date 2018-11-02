@@ -31,8 +31,6 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|The participant which is the target of the transfer.|
-|target|[identitySet](../resources/identitySet.md)||
-|replacesCallId|String|Original call id of the participant that is being transferred.|
 |clientContext|String|The client context.|
 
 ## Response
@@ -67,8 +65,7 @@ Content-Length: 430
       }
     },
     "languageId": "languageId-value",
-    "region": "region-value",
-    "replacesCallId": "replacesCallId-value"
+    "region": "region-value"
   },
   "clientContext": "clientContext-value"
 }
@@ -211,8 +208,7 @@ Content-Type: application/json
       }
     },
     "languageId": "en-US",
-    "region": "westus",
-    "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
+    "region": "westus"
   }
 }
 ```
