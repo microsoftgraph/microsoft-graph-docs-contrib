@@ -76,7 +76,7 @@ Although the same identity cannot be invited multiple times, it is possible for 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

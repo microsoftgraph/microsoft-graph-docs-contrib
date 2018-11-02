@@ -96,7 +96,7 @@ Content-Type: application/json
 ```
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",

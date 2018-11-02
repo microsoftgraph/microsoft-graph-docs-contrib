@@ -36,7 +36,7 @@ If successful, this method returns `200 OK` response code and [audioRoutingGroup
 ### Example 1: One-to-one audio routing group
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -89,7 +89,7 @@ Content-Length: 233
 ### Example 2: Multicast audioRoutingGroup
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups

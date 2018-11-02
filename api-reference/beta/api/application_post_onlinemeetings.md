@@ -36,7 +36,7 @@ If successful, this method returns `201 Created` response code and an [onlineMee
 ## Example
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",

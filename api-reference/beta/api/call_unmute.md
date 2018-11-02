@@ -39,7 +39,7 @@ If successful, this method returns `200 OK` response code and [commsOperation](.
 The following example shows how to call this API.
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",

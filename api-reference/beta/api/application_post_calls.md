@@ -42,7 +42,7 @@ If successful, this method returns a `201 Created` response code and a [call](..
 > **Note:** This call needs the Calls.Initiate.All permission.
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -209,7 +209,7 @@ Content-Type: application/json
 > Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls

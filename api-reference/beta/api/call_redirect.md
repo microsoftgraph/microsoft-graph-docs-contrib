@@ -44,7 +44,7 @@ Returns `202 Accepted` response code
 ### Redirect a call
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",

@@ -37,7 +37,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",

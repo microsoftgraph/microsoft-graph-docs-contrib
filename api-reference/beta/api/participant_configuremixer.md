@@ -40,7 +40,7 @@ Returns `202 Accepted` response code and a Location header with a uri to the [co
 The following example shows how to call this API.
 
 ##### Request
-Here is an example of the request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
