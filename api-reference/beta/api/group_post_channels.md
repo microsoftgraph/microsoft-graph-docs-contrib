@@ -4,6 +4,8 @@
 
 Create a new [channel](../resources/channel.md) in a Microsoft Team, as specified in the request body.
 
+> **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](../../../concepts/known_issues.md#application-permissions).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 

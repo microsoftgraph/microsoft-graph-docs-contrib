@@ -7,7 +7,7 @@
 		<Item text="Hybrid deployments (preview)" url="/en-us/concepts/hybrid_rest_support" SEODescription="" />
 	</Item>
 	<Item text="Versioning and support" url="/en-us/concepts/versioning_and_support" />
-	<Item text="Terms of use" url="https://developer.microsoft.com/en-us/graph/terms-of-use" IsExternal="true" />
+	<Item text="Terms of use" url="https://developer.microsoft.com/graph/terms-of-use" IsExternal="true" />
 	</Item>
   <Item text="Microsoft Graph data connect (preview)" url="/en-us/concepts/data-connect-overview" />
 
@@ -19,6 +19,7 @@
 	  <Item text="Get free/busy schedule" url="/en-us/concepts/outlook-get-free-busy-schedule" />
 	  <Item text="Schedule recurring events" url="/en-us/concepts/outlook-schedule-recurring-events" />
 	  <Item text="Get shared events" url="/en-us/concepts/outlook-get-shared-events-calendars" />
+    <Item text="Immutable ID (preview)" url="/en-us/concepts/outlook-immutable-id" />
   </Item>
   <Item text="Cross-device experiences" ProdTag="Project Rome" url="/en-us/concepts/cross-device-concept-overview" >
     <Item text="Activity feed" url="/en-us/concepts/activity-feed-concept-overview" />
@@ -33,12 +34,12 @@
   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
   <Item text="Files" ProdTag="OneDrive" url="/en-us/concepts/onedrive-concept-overview" />
-  <Item text="Financials (preview)" ProdTag="Dynamics 365 Business Central" url="/en-us/concepts/dynamics-business-central-concept-overview" />
   <Item text="Identity and access" ProdTag="Azure AD" url="/en-us/concepts/azuread-identity-access-management-concept-overview" />
   <Item text="Mail" ProdTag="Outlook" url="/en-us/concepts/outlook-mail-concept-overview" >
 	  <Item text="Create and send messages" url="/en-us/concepts/outlook-create-send-messages" />
 	  <Item text="Organize messages" url="/en-us/concepts/outlook-organize-messages" />
 	  <Item text="Get shared messages" url="/en-us/concepts/outlook-share-messages-folders" />
+    <Item text="Immutable ID (preview)" url="/en-us/concepts/outlook-immutable-id" />
   </Item>
   <Item text="Notes" ProdTag="OneNote" url="/en-us/concepts/integrate_with_onenote" SEODescription="Use Microsoft Graph to integrate your apps with OneNote.">
     <Item text="Get OneNote content" url="/en-us/concepts/onenote-get-content" />
@@ -57,6 +58,7 @@
   </Item>
   <Item text="Personal contacts" ProdTag="Outlook" url="/en-us/concepts/outlook-contacts-concept-overview" >
     <Item text="Get shared contacts" url="/en-us/concepts/outlook-get-shared-contacts-folders" />
+    <Item text="Immutable ID (preview)" url="/en-us/concepts/outlook-immutable-id" />
   </Item>
   <Item text="Reports" url="/en-us/concepts/reportroot-concept-overview" />
   <Item text="Security" url="/en-us/concepts/security-concept-overview" >
@@ -413,7 +415,7 @@
 		</Item>
 	</Item>
     <Item text="Devices and apps" ProdTag="Intune" url="/en-us/api-reference/v1.0/resources/intune_graph_overview">
-      <Item text="App management" url="/en-us/api-reference/v1.0/resources/intune_apps_app_conceptual">
+      <Item text="App management" url="/en-us/api-reference/v1.0/resources/intune_app_conceptual">
         <Item text="Android LOB app" url="/en-us/api-reference/v1.0/resources/intune_apps_androidlobapp">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_apps_androidlobapp_get"/>
@@ -519,6 +521,7 @@
         <Item text="Managed device mobile app configuration" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfiguration">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_get"/>
+          <Item text="assign action" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfiguration_assign"/>
         </Item>
         <Item text="Managed device mobile app configuration assignment" url="/en-us/api-reference/v1.0/resources/intune_apps_manageddevicemobileappconfigurationassignment">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_apps_manageddevicemobileappconfigurationassignment_list"/>
@@ -687,7 +690,7 @@
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_companyterms_termsandconditionsassignment_update"/>
         </Item>
       </Item>
-      <Item text="Corporate enrollment" url="/en-us/api-reference/v1.0/resources/intune_corporate_enrollment_conceptual">
+      <Item text="Corporate enrollment" url="/en-us/api-reference/v1.0/resources/intune_enrollment_conceptual">
         <Item text="Imported windows autopilot device identity" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentity">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_enrollment_importedwindowsautopilotdeviceidentity_get"/>
@@ -706,7 +709,7 @@
         </Item>
         <Item text="Imported windows autopilot device identity upload status" url="/en-us/api-reference/v1.0/resources/intune_enrollment_importedwindowsautopilotdeviceidentityuploadstatus"/>
       </Item>
-      <Item text="Device configuration" url="/en-us/api-reference/v1.0/resources/intune_device_configuration_conceptual">
+      <Item text="Device configuration" url="/en-us/api-reference/v1.0/resources/intune_device_cfg_conceptual">
         <Item text="Android compliance policy" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_androidcompliancepolicy">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_deviceconfig_androidcompliancepolicy_get"/>
@@ -1170,7 +1173,7 @@
         <Item text="Windows update type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsupdatetype"/>
         <Item text="Windows user account control settings" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_windowsuseraccountcontrolsettings"/>
       </Item>
-      <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_devices_conceptual">
+      <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_device_mgt_conceptual">
         <Item text="Action state" url="/en-us/api-reference/v1.0/resources/intune_devices_actionstate"/>
         <Item text="Apple push notification certificate" url="/en-us/api-reference/v1.0/resources/intune_devices_applepushnotificationcertificate">
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_devices_applepushnotificationcertificate_get"/>
@@ -1287,7 +1290,7 @@
         <Item text="Windows device AD account" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceadaccount"/>
         <Item text="Windows device Azure AD account" url="/en-us/api-reference/v1.0/resources/intune_devices_windowsdeviceazureadaccount"/>
       </Item>
-      <Item text="Mobile app protection" url="/en-us/api-reference/v1.0/resources/intune_app_protection_conceptual">
+      <Item text="Mobile app management" url="/en-us/api-reference/v1.0/resources/intune_mam_conceptual">
         <Item text="Android managed app protection" url="/en-us/api-reference/v1.0/resources/intune_mam_androidmanagedappprotection">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_mam_androidmanagedappprotection_get"/>
@@ -1324,6 +1327,7 @@
         <Item text="IP range" url="/en-us/api-reference/v1.0/resources/intune_mam_iprange"/>
         <Item text="IPv4 range" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv4range"/>
         <Item text="IPv6 range" url="/en-us/api-reference/v1.0/resources/intune_mam_ipv6range"/>
+        <Item text="JSON" url="/en-us/api-reference/v1.0/resources/intune_mam_json"/>
         <Item text="Key/value pair" url="/en-us/api-reference/v1.0/resources/intune_mam_keyvaluepair"/>
         <Item text="Managed app clipboard sharing level" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappclipboardsharinglevel"/>
         <Item text="Managed app configuration" url="/en-us/api-reference/v1.0/resources/intune_mam_managedappconfiguration">
@@ -1540,7 +1544,7 @@
         <Item text="VPP token sync status" url="/en-us/api-reference/v1.0/resources/intune_onboarding_vpptokensyncstatus"/>
         <Item text="Windows Hello for business PIN usage" url="/en-us/api-reference/v1.0/resources/intune_onboarding_windowshelloforbusinesspinusage"/>
       </Item>
-      <Item text="Role based access control" url="/en-us/api-reference/v1.0/resources/intune_rbac_conceptual">
+      <Item text="Role-based access control" url="/en-us/api-reference/v1.0/resources/intune_rbac_conceptual">
         <Item text="Device and app management role assignment" url="/en-us/api-reference/v1.0/resources/intune_rbac_deviceandappmanagementroleassignment">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroleassignment_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_rbac_deviceandappmanagementroleassignment_get"/>
@@ -1677,7 +1681,7 @@
       <Item text="Shared files" url="/en-us/api-reference/v1.0/api/drive_sharedwithme" SEOKeyword="Shared with me files, Microsoft Graph API, drive API" SEODescription="Get shared with me files." />
       <Item text="Get special folder" url="/en-us/api-reference/v1.0/api/drive_get_specialfolder" SEOKeyword="Special folders, Microsoft Graph API, drive API" SEODescription="Get special folders." />
     </Item>
-    <Item text="DriveItems" url="/en-us/api-reference/v1.0/resources/driveitem" SEOKeyword="item API, Microsoft Graph API, item API" SEODescription="The item resource represents an item contained in a drive, like a file or folder.">
+    <Item text="Drive items" url="/en-us/api-reference/v1.0/resources/driveitem" SEOKeyword="item API, Microsoft Graph API, item API" SEODescription="The item resource represents an item contained in a drive, like a file or folder.">
       <Item text="List children" url="/en-us/api-reference/v1.0/api/driveitem_list_children" SEOKeyword="List items, Microsoft Graph API, drive API" SEODescription="Retrieve a list of item objects." />
       <Item text="Get item" url="/en-us/api-reference/v1.0/api/driveitem_get" SEOKeyword="Get item, Microsoft Graph API, OneDrive Drive API" SEODescription="Retrieve the properties and relationships of item object." />
       <Item text="Get thumbnails" url="/en-us/api-reference/v1.0/api/driveitem_list_thumbnails" SEOKeyword="Get thumbnails, Microsoft Graph API, thumbnailset API" SEODescription="" />
@@ -1693,6 +1697,7 @@
       <Item text="Search items" url="/en-us/api-reference/v1.0/api/driveitem_search" SEOKeyword="Search items, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
       <Item text="Track changes" url="/en-us/api-reference/v1.0/api/driveitem_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
 	  <Item text="List versions" url="/en-us/api-reference/v1.0/api/driveitem_list_versions" />
+	  <Item text="Preview item" url="/en-us/api-reference/v1.0/api/driveitem_preview" />
     </Item>
     <Item text="Permissions" url="/en-us/api-reference/v1.0/resources/permission" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
       <Item text="Create sharing link" url="/en-us/api-reference/v1.0/api/driveitem_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
@@ -1735,7 +1740,7 @@
       <Item text="Check member groups" url="/en-us/api-reference/v1.0/api/directoryobject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
       <Item text="Get objects by IDs" url="/en-us/api-reference/v1.0/api/directoryobject_getbyids" />
     </Item>
-    <Item text="Directory role" url="/en-us/api-reference/v1.0/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
+    <Item text="Directory role" url="/en-us/api-reference/v1.0/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
       <Item text="List directory roles" url="/en-us/api-reference/v1.0/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
       <Item text="Activate directory role" url="/en-us/api-reference/v1.0/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
       <Item text="Get directory role" url="/en-us/api-reference/v1.0/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
@@ -3336,6 +3341,7 @@
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_update"/>
           <Item text="assignUserToDevice action" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_assignusertodevice"/>
+          <Item text="unassignUserFromDevice action" url="/en-us/api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_unassignuserfromdevice"/>
         </Item>
         <Item text="Windows autopilot profile assignment detailed status" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotprofileassignmentdetailedstatus"/>
         <Item text="Windows autopilot profile assignment status" url="/en-us/api-reference/beta/resources/intune_enrollment_windowsautopilotprofileassignmentstatus"/>
@@ -3669,6 +3675,8 @@
         <Item text="Apple VPN connection type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applevpnconnectiontype"/>
         <Item text="Application guard block clipboard sharing type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockclipboardsharingtype"/>
         <Item text="Application guard block file transfer type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardblockfiletransfertype"/>
+        <Item text="Application guard enabled options" url="/en-us/api-reference/beta/resources/intune_deviceconfig_applicationguardenabledoptions"/>
+        <Item text="Auto restart notification dismissal method" url="/en-us/api-reference/beta/resources/intune_deviceconfig_autorestartnotificationdismissalmethod"/>
         <Item text="Automatic update mode" url="/en-us/api-reference/beta/resources/intune_deviceconfig_automaticupdatemode"/>
         <Item text="BitLocker encryption method" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerencryptionmethod"/>
         <Item text="BitLocker fixed drive policy" url="/en-us/api-reference/beta/resources/intune_deviceconfig_bitlockerfixeddrivepolicy"/>
@@ -3870,7 +3878,6 @@
         <Item text="Edition upgrade license type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_editionupgradelicensetype"/>
         <Item text="Email sync duration" url="/en-us/api-reference/beta/resources/intune_deviceconfig_emailsyncduration"/>
         <Item text="Email sync schedule" url="/en-us/api-reference/beta/resources/intune_deviceconfig_emailsyncschedule"/>
-        <Item text="Enablement" url="/en-us/api-reference/beta/resources/intune_deviceconfig_enablement"/>
         <Item text="Extended key usage" url="/en-us/api-reference/beta/resources/intune_deviceconfig_extendedkeyusage"/>
         <Item text="Firewall certificate revocation list check method type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_firewallcertificaterevocationlistcheckmethodtype"/>
         <Item text="Firewall packet queueing method type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_firewallpacketqueueingmethodtype"/>
@@ -4127,6 +4134,7 @@
         <Item text="Media content rating New Zealand" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingnewzealand"/>
         <Item text="Media content rating United Kingdom" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedkingdom"/>
         <Item text="Media content rating United States" url="/en-us/api-reference/beta/resources/intune_deviceconfig_mediacontentratingunitedstates"/>
+        <Item text="Metered connection limit type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_meteredconnectionlimittype"/>
         <Item text="Miracast channel" url="/en-us/api-reference/beta/resources/intune_deviceconfig_miracastchannel"/>
         <Item text="NDES connector" url="/en-us/api-reference/beta/resources/intune_deviceconfig_ndesconnector">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_deviceconfig_ndesconnector_list"/>
@@ -4538,6 +4546,8 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_update"/>
+          <Item text="extendFeatureUpdatesPause action" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendfeatureupdatespause"/>
+          <Item text="extendQualityUpdatesPause action" url="/en-us/api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendqualityupdatespause"/>
         </Item>
         <Item text="Windows update for business update weeks" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessupdateweeks"/>
         <Item text="Windows update install schedule type" url="/en-us/api-reference/beta/resources/intune_deviceconfig_windowsupdateinstallscheduletype"/>
@@ -4750,7 +4760,6 @@
           <Item text="windowsDefenderUpdateSignatures action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_windowsdefenderupdatesignatures"/>
           <Item text="updateWindowsDeviceAccount action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_updatewindowsdeviceaccount"/>
           <Item text="revokeAppleVppLicenses action" url="/en-us/api-reference/beta/api/intune_devices_manageddevice_revokeapplevpplicenses"/>
-          <Item text="overrideComplianceState action" url="/en-us/api-reference/beta/api/intune_deviceconfig_managedDevice_overrideComplianceState"/>
         </Item>
         <Item text="Managed device cleanup settings" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicecleanupsettings"/>
         <Item text="Managed device models and manufacturers" url="/en-us/api-reference/beta/resources/intune_devices_manageddevicemodelsandmanufacturers"/>
@@ -4937,6 +4946,13 @@
           <Item text="Create" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappprotection_create"/>
           <Item text="Delete" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappprotection_delete"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_mam_defaultmanagedappprotection_update"/>
+        </Item>
+        <Item text="Intune branding profile" url="/en-us/api-reference/beta/resources/intune_wip_intunebrandingprofile">
+          <Item text="List" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_list"/>
+          <Item text="Get" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_get"/>
+          <Item text="Create" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_create"/>
+          <Item text="Delete" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_delete"/>
+          <Item text="Update" url="/en-us/api-reference/beta/api/intune_wip_intunebrandingprofile_update"/>
         </Item>
         <Item text="iOS managed app protection" url="/en-us/api-reference/beta/resources/intune_mam_iosmanagedappprotection">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_mam_iosmanagedappprotection_list"/>
@@ -5134,7 +5150,6 @@
         </Item>
         <Item text="Device management partner app type" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnerapptype"/>
         <Item text="Device management partner tenant state" url="/en-us/api-reference/beta/resources/intune_onboarding_devicemanagementpartnertenantstate"/>
-        <Item text="Enablement" url="/en-us/api-reference/beta/resources/intune_onboarding_enablement"/>
         <Item text="Enrollment configuration assignment" url="/en-us/api-reference/beta/resources/intune_onboarding_enrollmentconfigurationassignment">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_enrollmentconfigurationassignment_get"/>
@@ -5163,7 +5178,6 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_onboarding_organization_update"/>
           <Item text="setMobileDeviceManagementAuthority action" url="/en-us/api-reference/beta/api/intune_onboarding_organization_setmobiledevicemanagementauthority"/>
         </Item>
-        <Item text="RGB color" url="/en-us/api-reference/beta/resources/intune_onboarding_rgbcolor"/>
         <Item text="Side loading key" url="/en-us/api-reference/beta/resources/intune_onboarding_sideloadingkey">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_onboarding_sideloadingkey_get"/>
@@ -5196,6 +5210,7 @@
         <Item text="Windows Hello for business PIN usage" url="/en-us/api-reference/beta/resources/intune_onboarding_windowshelloforbusinesspinusage"/>
       </Item>
       <Item text="Role-based access control" url="/en-us/api-reference/beta/resources/intune_rbac_conceptual">
+        <Item text="Device and app management assigned role ids" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementassignedroleids"/>
         <Item text="Device and app management role assignment" url="/en-us/api-reference/beta/resources/intune_rbac_deviceandappmanagementroleassignment">
           <Item text="List" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_list"/>
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_rbac_deviceandappmanagementroleassignment_get"/>
@@ -5264,6 +5279,7 @@
         <Item text="Device management" url="/en-us/api-reference/beta/resources/intune_shared_devicemanagement">
           <Item text="Get" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_get"/>
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_update"/>
+          <Item text="enableLegacyPcManagement action" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_enablelegacypcmanagement"/>
           <Item text="sendCustomNotificationToCompanyPortal action" url="/en-us/api-reference/beta/api/intune_shared_devicemanagement_sendcustomnotificationtocompanyportal"/>
         </Item>
         <Item text="Device platform type" url="/en-us/api-reference/beta/resources/intune_shared_deviceplatformtype"/>
@@ -5284,6 +5300,7 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_shared_reportroot_update"/>
         </Item>
         <Item text="Resultant app state" url="/en-us/api-reference/beta/resources/intune_shared_resultantappstate"/>
+        <Item text="RGB color" url="/en-us/api-reference/beta/resources/intune_shared_rgbcolor"/>
         <Item text="Run as account type" url="/en-us/api-reference/beta/resources/intune_shared_runasaccounttype"/>
         <Item text="Run state" url="/en-us/api-reference/beta/resources/intune_shared_runstate"/>
         <Item text="Saved UI state generation options" url="/en-us/api-reference/beta/resources/intune_shared_saveduistategenerationoptions"/>
@@ -5407,8 +5424,9 @@
         <Item text="Recent files" url="/en-us/api-reference/beta/api/drive_recent" SEOKeyword="Recent files, Microsoft Graph API, drive API" SEODescription="Get recent files." />
         <Item text="Shared files" url="/en-us/api-reference/beta/api/drive_sharedwithme" SEOKeyword="Shared with me files, Microsoft Graph API, drive API" SEODescription="Get shared with me files." />
         <Item text="Get special folder" url="/en-us/api-reference/beta/api/drive_get_specialfolder" SEOKeyword="Special folders, Microsoft Graph API, drive API" SEODescription="Get special folders." />
+		<Item text="List followed items" url="/en-us/api-reference/beta/api/drive_list_following" />
       </Item>
-      <Item text="DriveItems" url="/en-us/api-reference/beta/resources/driveitem" SEOKeyword="item API, Microsoft Graph API, item API" SEODescription="The item resource represents an item contained in a drive, like a file or folder.">
+      <Item text="Drive items" url="/en-us/api-reference/beta/resources/driveitem" SEOKeyword="item API, Microsoft Graph API, item API" SEODescription="The item resource represents an item contained in a drive, like a file or folder.">
         <Item text="List children" url="/en-us/api-reference/beta/api/driveitem_list_children" SEOKeyword="List items, Microsoft Graph API, drive API" SEODescription="Retrieve a list of item objects." />
         <Item text="Get item" url="/en-us/api-reference/beta/api/driveitem_get" SEOKeyword="Get item, Microsoft Graph API, OneDrive Drive API" SEODescription="Retrieve the properties and relationships of item object." />
         <Item text="Get thumbnails" url="/en-us/api-reference/beta/api/driveitem_list_thumbnails" SEOKeyword="Get thumbnails, Microsoft Graph API, thumbnailset API" SEODescription="" />
@@ -5425,6 +5443,11 @@
         <Item text="Track changes" url="/en-us/api-reference/beta/api/driveitem_delta" SEOKeyword="Track changes, Microsoft Graph API" SEODescription="" />
 		<Item text="Get preview link" url="/en-us/api-reference/beta/api/driveitem_preview" />
 		<Item text="List versions" url="/en-us/api-reference/beta/api/driveitem_list_versions" />
+		<Item text="Follow item" url="/en-us/api-reference/beta/api/driveitem_follow" />
+		<Item text="Unfollow item" url="/en-us/api-reference/beta/api/driveitem_unfollow" />
+		<Item text="Get item analytics" url="/en-us/api-reference/beta/api/itemanalytics_get" />
+		<Item text="Get activities by interval" url="/en-us/api-reference/beta/api/itemactivity_getbyinterval" />
+		<Item text="Preview item" url="/en-us/api-reference/beta/api/driveitem_preview" />
       </Item>
       <Item text="Permissions" url="/en-us/api-reference/beta/resources/permission" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" >
         <Item text="Create sharing link" url="/en-us/api-reference/beta/api/driveitem_createlink" SEOKeyword="Create link item, Microsoft Graph API, OneDrive Drive API" SEODescription="" />
@@ -5436,154 +5459,6 @@
         <Item text="Delete permission" url="/en-us/api-reference/beta/api/permission_delete" SEOKeyword="Delete permission, Microsoft Graph API, permission API" SEODescription="Delete permission." />
       </Item>
     </Item>
-  	<Item text="Financials" ProdTag="Dynamics 365 Business Central" url="/en-us/api-reference/beta/resources/dynamics_graph_reference" >
-		<Item text="Account" url="/en-us/api-reference/beta/resources/dynamics_account">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_account_get"/>
-		  </Item>
-		<Item text="Aged accounts payable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountspayable">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_agedaccountspayable_get"/>
-		  </Item>
-		<Item text="Aged accounts receivable" url="/en-us/api-reference/beta/resources/dynamics_agedaccountsreceivable">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_agedaccountsreceivable_get"/>
-		  </Item>
-		<Item text="Balance sheet" url="/en-us/api-reference/beta/resources/dynamics_balancesheet">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_balancesheet_get"/>
-		  </Item>
-		<Item text="Cash flow statement" url="/en-us/api-reference/beta/resources/dynamics_cashflowstatement">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_cashflowstatement_get"/>
-		  </Item>
-		<Item text="Companies" url="/en-us/api-reference/beta/resources/dynamics_companies">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_companies_get"/>
-		  </Item>
-		<Item text="Company information" url="/en-us/api-reference/beta/resources/dynamics_companyinformation">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_companyinformation_get"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_companyinformation_update"/>
-		  </Item>
-		<Item text="Countries regions" url="/en-us/api-reference/beta/resources/dynamics_countriesregions">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_countriesregions_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_countriesregions"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_countriesregions_delete"/>
-		  </Item>
-		<Item text="Currencies" url="/en-us/api-reference/beta/resources/dynamics_currencies">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_currencies_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_currencies"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_currencies_delete"/>
-		  </Item>
-		<Item text="Customer" url="/en-us/api-reference/beta/resources/dynamics_customer">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_customer_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_customer"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_customer_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_customer_delete"/>
-		  </Item>
-		<Item text="Customer payment" url="/en-us/api-reference/beta/resources/dynamics_customerpayment">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_customerpayment_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_customerpayment"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_customerpayment_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_customerpayment_delete"/>
-		  </Item>
-		  <Item text="Customer payments journal" url="/en-us/api-reference/beta/resources/dynamics_customerpaymentsjournal">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_customerpaymentsjournal"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_customerpaymentsjournal_delete"/>
-		  </Item>
-		<Item text="Dimension" url="/en-us/api-reference/beta/resources/dynamics_dimension">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_dimension_get"/>
-		  </Item>
-		<Item text="Dimension value" url="/en-us/api-reference/beta/resources/dynamics_dimensionvalue">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_dimensionvalue_get"/>
-		  </Item>
-		<Item text="Employee" url="/en-us/api-reference/beta/resources/dynamics_employee">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_employee_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_employee"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_employee_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_employee_delete"/>
-		  </Item>
-		 <Item text="General ledger entries" url="/en-us/api-reference/beta/resources/dynamics_generalledgerentries">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_generalledgerentries_get"/>
-		  </Item>
-		  <Item text="Income statement" url="/en-us/api-reference/beta/resources/dynamics_incomestatement">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_incomestatement_get"/>
-		</Item>
-		<Item text="IRS 1099" url="/en-us/api-reference/beta/resources/dynamics_irs1099">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_irs1099_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_irs1099"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_irs1099_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_irs1099_delete"/>
-		  </Item>
-		<Item text="Item" url="/en-us/api-reference/beta/resources/dynamics_item">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_item_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_item"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_item_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_item_delete"/>
-		  </Item>
-		<Item text="Item categories" url="/en-us/api-reference/beta/resources/dynamics_itemcategories">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_itemcategories_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_itemcategories"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_itemcategories_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_itemcategories_delete"/>
-		  </Item>
-		<Item text="Journal" url="/en-us/api-reference/beta/resources/dynamics_journal">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_journal_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_journal"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_journal_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_journal_delete"/>
-		  </Item>
-		<Item text="Journal line" url="/en-us/api-reference/beta/resources/dynamics_journalline">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_journalline_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_journalline"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_journalline_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_journalline_delete"/>
-		  </Item>
-		<Item text="Payment methods" url="/en-us/api-reference/beta/resources/dynamics_paymentmethods">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_paymentmethods"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_paymentmethods_delete"/>
-		  </Item>
-		<Item text="Payment terms" url="/en-us/api-reference/beta/resources/dynamics_paymentterms">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_paymentterms_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_paymentterms"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_paymentterms_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_paymentterms_delete"/>
-		  </Item>
-		<Item text="Retained earnings statement" url="/en-us/api-reference/beta/resources/dynamics_retainedearningsstatement">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_retainedearningsstatement_get"/>
-		  </Item>
-		<Item text="Shipment methods" url="/en-us/api-reference/beta/resources/dynamics_shipmentmethods">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_shipmentmethods"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_shipmentmethods_delete"/>
-		  </Item>
-		<Item text="Tax area" url="/en-us/api-reference/beta/resources/dynamics_taxarea">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_taxarea_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_taxarea"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_taxarea_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_taxarea_delete"/>
-		  </Item>
-		<Item text="Tax groups" url="/en-us/api-reference/beta/resources/dynamics_taxgroups">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_taxgroups_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_taxgroups"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_taxgroups_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_taxgroups_delete"/>
-		  </Item>
-		<Item text="Trial balance" url="/en-us/api-reference/beta/resources/dynamics_trialbalance">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_trialbalance_get"/>
-		  </Item>
-		<Item text="Units of measure" url="/en-us/api-reference/beta/resources/dynamics_unitsofmeasure">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_unitsofmeasure"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_unitsofmeasure_delete"/>
-		  </Item>
-		<Item text="Vendor" url="/en-us/api-reference/beta/resources/dynamics_vendor">
-			<Item text="Get" url="/en-us/api-reference/beta/api/dynamics_vendor_get"/>
-			<Item text="Create" url="/en-us/api-reference/beta/api/dynamics_create_vendor"/>
-			<Item text="Update" url="/en-us/api-reference/beta/api/dynamics_vendor_update"/>
-			<Item text="Delete" url="/en-us/api-reference/beta/api/dynamics_vendor_delete"/>
-		  </Item>
-  </Item>
 	<Item text="Identity and access" ProdTag="Azure AD" url="/en-us/api-reference/beta/resources/azure_ad_overview" SEOKeyword="directory object, Microsoft Graph API, user API" SEODescription="">
       <Item text="Access reviews" url="/en-us/api-reference/beta/resources/accessreviews_root" SEOKeyword="Access review API, Microsoft Graph API, accessReview API" SEODescription="The Access review API lets you validate group and app access and membership.">
         <Item text="Access review" url="/en-us/api-reference/beta/resources/accessreview" SEOKeyword="Access review API, Microsoft Graph API, accessReview resource">
@@ -5688,7 +5563,7 @@
         <Item text="Check member groups" url="/en-us/api-reference/beta/api/directoryobject_checkmembergroups" SEOKeyword="directoryObject: checkMemberGroups, Microsoft Graph API, Directory API" SEODescription="" />
         <Item text="Get directoryObjects by ids" url="/en-us/api-reference/beta/api/directoryobject_getbyids" SEOKeyword="Get directoryObject, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryobject objects." />
       </Item>
-      <Item text="Directory role" url="/en-us/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(http://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
+      <Item text="Directory role" url="/en-us/api-reference/beta/resources/directoryrole" SEOKeyword="directoryrole API, Microsoft Graph API, directoryrole API" SEODescription="Represents an Azure AD directory role. Azure AD directory roles are also known as administrator roles. For more information about directory (administrator) roles, see Assigning administrator roles in Azure AD(https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/).">
         <Item text="List directory roles" url="/en-us/api-reference/beta/api/directoryrole_list" SEOKeyword="List directoryRoles, Microsoft Graph API, Directory API" SEODescription="Retrieve a list of directoryrole objects." />
         <Item text="Activate directory role" url="/en-us/api-reference/beta/api/directoryrole_post_directoryroles" SEOKeyword="Create DirectoryRole, Microsoft Graph API, Directory API" SEODescription="Use this API to create a new DirectoryRole." />
         <Item text="Get directory role" url="/en-us/api-reference/beta/api/directoryrole_get" SEOKeyword="Get directoryRole, Microsoft Graph API, Directory API" SEODescription="Retrieve the properties and relationships of directoryrole object." />
@@ -5738,6 +5613,10 @@
         <Item text="List unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_list" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve a list of unfamiliarLocationRiskEvent objects." />
         <Item text="Get unfamiliarLocationRiskEvent" url="/en-us/api-reference/beta/api/unfamiliarlocationriskevent_get" SEOKeyword="Microsoft Graph API, Identity Protection API, Azure AD, AADIP, Identity Protection, Event Risk,  unfamiliarLocationRiskEvent API" SEODescription="Retrieve an unfamiliarLocationRiskEvent object." />
       </Item>
+	  <Item text="Risky users" url="/en-us/api-reference/beta/resources/riskyuser" >
+		<Item text="List" url="/en-us/api-reference/beta/api/riskyusers_list" />
+		<Item text="Get" url="/en-us/api-reference/beta/api/riskyusers_get" />
+	  </Item>
     </Item>
       <Item text="Identity provider" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
         <Item text="List identity providers" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="List all identityProviders configured within the directory." />
@@ -6193,6 +6072,8 @@
         <Item text="Get site" url="/en-us/api-reference/beta/api/site_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
         <Item text="Get lists" url="/en-us/api-reference/beta/api/list_list" SEOKeyword="sharepoint, list lists, get lists" SEODescription="" />
         <Item text="List subsites" url="/en-us/api-reference/beta/api/site_list_subsites" SEOKeyword="sharepoint, list subsites" SEODescription="" />
+		<Item text="Get site analytics" url="/en-us/api-reference/beta/api/itemanalytics_get" />
+		<Item text="Get activities by interval" url="/en-us/api-reference/beta/api/itemactivity_getbyinterval" />	
       </Item>
       <Item text="Lists" url="/en-us/api-reference/beta/resources/list" SEOKeyword="sharepoint, list, lists, microsoft graph api, sharepoint list api">
         <Item text="Get list" url="/en-us/api-reference/beta/api/list_get" SEOKeyword="sharepoint, site, get site" SEODescription="" />
@@ -6200,13 +6081,22 @@
         <Item text="Create list" url="/en-us/api-reference/beta/api/list_create" SEOKeyword="sharepoint, create list, create, microsoft graph api, sharepoint list api" SEODescription="" />
 
       </Item>
-      <Item text="ListItems" url="/en-us/api-reference/beta/resources/listitem" SEOKeyword="sharepoint, listitems, microsoft graph api, sharepoint list api" SEODescription="">
+      <Item text="List items" url="/en-us/api-reference/beta/resources/listitem" SEOKeyword="sharepoint, listitems, microsoft graph api, sharepoint list api" SEODescription="">
         <Item text="Get item" url="/en-us/api-reference/beta/api/listitem_get" SEOKeyword="sharepoint, get item, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Create item" url="/en-us/api-reference/beta/api/listitem_create" SEOKeyword="sharepoint, create item, create, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Update item" url="/en-us/api-reference/beta/api/listitem_update" SEOKeyword="sharepoint, update item, update, microsoft graph api, sharepoint list api" SEODescription="" />
         <Item text="Delete item" url="/en-us/api-reference/beta/api/listitem_delete" SEOKeyword="sharepoint, delete item, delete, microsoft graph api, sharepoint list api" SEODescription="" />
 		<Item text="List versions" url="/en-us/api-reference/beta/api/listitem_list_versions" />
+		<Item text="Get item analytics" url="/en-us/api-reference/beta/api/itemanalytics_get" />
+		<Item text="Get activities by interval" url="/en-us/api-reference/beta/api/itemactivity_getbyinterval" />		
       </Item>
+	  <Item text="Pages" url="/en-us/api-reference/beta/resources/sitepage" >
+		<Item text="List pages" url="/en-us/api-reference/beta/api/sitepage_list" />
+		<Item text="Get page" url="/en-us/api-reference/beta/api/sitepage_get" />
+		<Item text="Create page" url="/en-us/api-reference/beta/api/sitepage_create" />
+		<Item text="Delete page" url="/en-us/api-reference/beta/api/sitepage_delete" />
+		<Item text="Publish page" url="/en-us/api-reference/beta/api/sitepage_publish" />
+	  </Item>
     </Item>
 	<Item text="Social intelligence" url="/en-us/api-reference/beta/resources/social_overview" SEOKeyword="device API, Microsoft Graph API, device API" SEODescription="Represents a device registered in the directory. Inherits from DirectoryObject.">
       <Item text="Insights" url="/en-us/api-reference/beta/resources/insights" >
@@ -6362,10 +6252,6 @@
       <Item text="Notes" url="/en-us/api-reference/beta/resources/onenote" SEOKeyword="user notes, Microsoft Graph API, user API" SEODescription="">
         <Item text="List notebooks" url="/en-us/api-reference/beta/api/onenote_list_notebooks" SEOKeyword="List notebooks, Microsoft Graph API, notes API" SEODescription="Retrieve a list of notebook(../resources/notebook.md) objects." />
         <Item text="Create notebook" url="/en-us/api-reference/beta/api/onenote_post_notebooks" SEOKeyword="Create notebook, Microsoft Graph API, notes API" SEODescription="Create a new OneNote notebook(../resources/notebook.md)." />
-      </Item>
-	   <Item text="Photo" url="/en-us/api-reference/beta/resources/profilephoto" SEOKeyword="user people, Microsoft Graph API, user API" SEODescription="">
-        <Item text="Get photo" url="/en-us/api-reference/beta/api/profilephoto_get" />
-        <Item text="Update photo" url="/en-us/api-reference/beta/api/profilephoto_update" />
       </Item>
     </Item>
     <Item text="To-do tasks" ProdTag="Outlook" url="/en-us/api-reference/beta/resources/outlooktask" >
