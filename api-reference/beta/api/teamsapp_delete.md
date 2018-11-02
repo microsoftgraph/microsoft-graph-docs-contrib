@@ -1,7 +1,7 @@
 # Remove an app from your organization's app catalog
 
-Remove the [app](../resources/teamscatalogapp.md) from your organization's app catalog (the tenant app catalog). 
-To remove your app from your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamscatalogapp.md) resource.
+Remove the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 
+To remove your app from your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
 ## Permissions
 
@@ -31,7 +31,7 @@ DELETE /appCatalogs/teamsApps/{id}
 
 None.
 
->**Note:** Use the ID returned from the [List published apps](./teams_apps_list_published.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
+>**Note:** Use the ID returned from the [List published apps](./teamsapp_list.md) call for to reference the app you'd like to update. Do not use the ID from the manifest of the zip app package.
 
 ## Response
 
