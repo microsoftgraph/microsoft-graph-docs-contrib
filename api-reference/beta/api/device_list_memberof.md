@@ -1,10 +1,8 @@
-# List group memberOf
+# List device groups
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get groups and administrative units that the group is a direct member of.
-
-This operation is not transitive. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 Groups. 
+Get groups that this device is a direct member of. This operation is not transitive.
 
 ## Permissions
 
@@ -12,47 +10,45 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/memberOf
+GET /devices/{id | userPrincipalName}/memberOf
 ```
-
 ## Optional query parameters
-This method supports the [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
-
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+| Accept  | application/json|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_memberof"
+  "name": "get_user_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/memberOf
+GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 ```
 
 ### Response
-
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -62,12 +58,18 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.group",
+      "id": "id-value",
+      "createdDateTime": null,
+      "description": "All users at the company",
+      "displayName": "All Users",
+      "groupTypes": [],
+      "mailEnabled": false,
+      "securityEnabled": true,
     }
   ]
 }
@@ -81,4 +83,4 @@ Content-length: 55
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->
+}-->S

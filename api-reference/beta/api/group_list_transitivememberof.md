@@ -1,8 +1,8 @@
-# List group members
+# List group transitive memberOf
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get a list of the group's direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation is not transitive.
+Get groups and administrative units that the group is a member of.  This operation is transitive and will also include all groups that this groups is a nested member of. Unlike getting a user's Office 365 Groups, this returns all types of groups, not just Office 365 Groups.
 
 ## Permissions
 
@@ -10,16 +10,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    |
+|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, User.Read.All |
+|Application | Directory.Read.All, Directory.ReadWrite.All |
 
-> Note: To list the members of a hidden membership group, the Member.Read.Hidden permission is required.
- 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/members
+GET /groups/{id}/transitiveMemberOf
 ```
 
 ## Optional query parameters
@@ -37,17 +35,20 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 
 ## Example
-#### Request
+
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_group_members"
+  "name": "get_group_transitivememberof"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}/members
+GET https://graph.microsoft.com/beta/groups/{id}/transitiveMemberOf
 ```
 
-#### Response
+### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
@@ -62,21 +63,15 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
-      "businessPhones": [
-        "businessPhones-value"
-      ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
+      "@odata.type": "#microsoft.graph.group",
+      "id": "id-value",
+      "createdDateTime": null,
+      "description": "All users at the company",
+      "displayName": "All Users",
+      "groupTypes": [],
+      "mailEnabled": false,
+      "securityEnabled": true,
     }
   ]
 }
@@ -86,7 +81,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List group members",
+  "description": "List group transitive memberOf",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
