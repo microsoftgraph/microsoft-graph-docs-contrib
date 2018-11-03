@@ -1,5 +1,7 @@
 # List the published apps from the Microsoft Teams app catalog
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog. 
 This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog). To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 

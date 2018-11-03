@@ -1,5 +1,7 @@
 # Update apps published to your organization's app catalog
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog. 
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog). 
 To publish to your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
