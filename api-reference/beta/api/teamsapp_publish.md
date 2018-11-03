@@ -1,5 +1,7 @@
 # Publish apps to your organization's app catalog
 
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Publish an [app](../resources/teamsapp.md) to the Microsoft Teams apps catalog. 
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog); 
 the created resource will have `distributionMethod` = `organization`.
