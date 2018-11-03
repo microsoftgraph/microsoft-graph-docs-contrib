@@ -28,7 +28,7 @@ POST /teams/{id}/installedApps
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String|The id of the app to add.|
+|teamsApp|String|The id of the app to add.|
 
 
 ## Response
@@ -44,7 +44,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/installedApps
 {
-  "id": "12345678-9abc-def0-123456789a"
+   "teamsApp":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 #### Response
