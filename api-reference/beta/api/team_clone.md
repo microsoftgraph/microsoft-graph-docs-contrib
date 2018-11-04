@@ -16,7 +16,7 @@ When tabs are cloned, they are put into an unconfigured state
 (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
 
 Cloning is a long-running operation.
-After the POST clone returns, you need to GET the operation to see if it's "running" or "succeeded" or "failed". 
+After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperationtype.md) to see if it's "running" or "succeeded" or "failed". 
 You should continue to GET until the status is not "running". 
 The recommended delay between GETs is 5 seconds.
 
@@ -57,7 +57,7 @@ POST /teams/{id}/clone
 
 ## Response
 
-If successful, this method will return a `202 Accepted` response code with a Location: header pointing to the operation resource.
+If successful, this method will return a `202 Accepted` response code with a Location: header pointing to the [operation](../resources/teamsasyncoperationtype.md) resource.
 When the operation is complete, the operation resource will tell you the id of the created team.
 
 ## Example
