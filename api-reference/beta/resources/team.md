@@ -44,7 +44,7 @@ For more information about working with groups and members in teams, see [Use th
 |:---------------|:--------|:----------|
 |apps|[teamsApp](teamsapp.md) collection| (Obsolete) The apps installed in this team.|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
-|installedApps|[teamsApp](teamsappinstallation.md) collection|The apps installed in this team.|
+|installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 
 ## JSON representation
 
