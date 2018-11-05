@@ -1,6 +1,6 @@
 # Configuring the built-in tab types
 
-To [create](../api-reference/beta/api/channels_tabs_add.md) or [configure a tab](../api-reference/beta/api/channels_tabs_update.md) using Graph APIs, 
+To [create](../api-reference/beta/api/teamstab_add.md) or [configure a tab](../api-reference/beta/api/teamstab_update.md) using Graph APIs, 
 you need to know the `teamsAppId` of the app, and the
 `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` to provide for that kind of app.
 Here are how to get those values for the built-in tab types.

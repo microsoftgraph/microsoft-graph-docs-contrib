@@ -11,7 +11,7 @@ Note: The Group.resourceProvisioningOptions can be changed.
 Do not add or remove "Team" from that collection, 
 otherwise list all teams will return incorrect results.
 
-> **Note**: There is a known issue with certain unused old teams not being listed with this approach. For details, see the [known issues list](../../../concepts/known_issues.md#Missing-teams-in-list-all-teams).
+> **Note**: There is a known issue with certain unused old teams not being listed with this approach. For details, see the [known issues list](../concepts/known_issues.md#Missing-teams-in-list-all-teams).
 
 ## Example
 
