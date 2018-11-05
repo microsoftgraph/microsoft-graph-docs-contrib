@@ -45,6 +45,8 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 # See also
 
 - [teamsAppInstallation](teamsappinstallation.md)
+- [teamsAppDefinition](teamsappdefinition.md)
+- [teamsTab](../resources/teamstab.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
