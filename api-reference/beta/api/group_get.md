@@ -4,7 +4,7 @@
 
 Get the properties and relationships of a [group](../resources/group.md) object.
 
-## Default properties
+##### Default properties
 
 The following represent the default set of properties that are returned when getting or listing groups. 
 These are a subset of all available properties. 
