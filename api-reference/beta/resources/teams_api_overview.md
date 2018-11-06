@@ -20,7 +20,7 @@ The following are the differences at the API level between teams and groups:
 
 ## Membership changes in Microsoft Teams
 
-To add members and owners to a team, change the membership of the [group](../api/beta/resources/group.md) with the same Id:
+To add members and owners to a team, change the membership of the [group](../api/beta/resources/group.md) with the same ID.
 
 | Use case      | Verb      | URL |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
