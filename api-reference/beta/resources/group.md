@@ -49,9 +49,6 @@ This resource supports:
 |[Update event](../api/group_update_event.md) |None|Update the properties of an event object.|
 |[Delete event](../api/group_delete_event.md) |None|Delete event object.|
 |[List calendarView](../api/group_list_calendarview.md) |[event](event.md) collection| Get a collection of events in a specified time window.|
-|**Chat channels**| | |
-|[Create channel](../api/group_post_channels.md) |[channel](channel.md)| Create a new channel by posting to the channels collection.|
-|[List channel](../api/group_list_channels.md) |[channel](channel.md) collection| Get a channel object collection.|
 |**Conversations**| | |
 |[Create conversation](../api/group_post_conversations.md) |[conversation](conversation.md)| Create a new conversation by posting to the conversations collection.|
 |[Get conversation](../api/group_get_conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.|

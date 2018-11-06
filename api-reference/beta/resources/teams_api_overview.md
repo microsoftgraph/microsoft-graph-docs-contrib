@@ -61,7 +61,7 @@ If none of those users are signed in to the Microsoft Teams application/website,
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Create and delete teams               | [team](team.md) | [Create team](../api/team_put_teams.md) |
 | Add members and owners                | [group](../resources/group.md) | [Add member](../api/group_post_members.md), [Remove member](../api/group_delete_members.md) |
-| Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/group_post_channels.md) |
+| Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/channel_post.md) |
 | Add apps to team                      | [teamsApp](../resources/teamsapp.md) | [Add apps](../api/teamsappinstallation_add.md) |
 | Get a channel message                 | [chatMessage](../resources/chatmessage.md) | [Get channel message](../api/channel_get_message.md) |
 | Get all the replies of a message      | [chatMessage](../resources/chatmessage.md) | [Get all replies to a channel message](../api/channel_list_messagereplies.md) |
