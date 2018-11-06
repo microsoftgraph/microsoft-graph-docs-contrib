@@ -1,31 +1,25 @@
-# List all teams in organization
+# List all teams in Microsoft Teams for an organization (preview)
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-To list all [teams](../api-reference/beta/resources/team.md) in an organization (tenant), 
+To list all [teams](../api-reference/beta/resources/team.md) in Microsoft Teams for organization (tenant), 
 get a list of all [groups](../api-reference/beta/resources/group.md) in the organization that have corresponding teams. 
-Any group that has a team has a resourceProvisioningOptions property that contains "Team", 
-so the approach is to get a [list of all groups](../api-reference/beta/api/group_list.md) where resourceProvisioningOptions contains "Team".
+Any group that has a team has a **resourceProvisioningOptions** property that contains "Team". The approach is to get a [list of all groups](../api-reference/beta/api/group_list.md) where **resourceProvisioningOptions** contains "Team".
 
-Note: The Group.resourceProvisioningOptions can be changed.
-Do not add or remove "Team" from that collection, 
-otherwise list all teams will return incorrect results.
+>**Note:** The **Group.resourceProvisioningOptions** property can be changed.
+Do not add or remove "Team" from that collection;  
+otherwise, you'll get incorrect results when you list all teams.
 
-> **Note**: There is a known issue with certain unused old teams not being listed with this approach. For details, see the [known issues list](../concepts/known_issues.md#missing-teams-in-list-all-teams).
+> **Note**: Certain unused old teams aren't listed with this approach. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
 
-## Example
+## List all teams example
 
-#### Request
-
-The following is an example of the request.
+The following example shows how to request a list of all teams.
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-#### Response
+The following example shows the response.
 
-The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. The [default properties](../api-reference/beta/api/group_get.md) will be returned from an actual call.
 
 ```http
