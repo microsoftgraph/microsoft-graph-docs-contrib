@@ -27,19 +27,22 @@ GET /teams/{id}/installedApps
 This method supports the $filter, $select, and $expand [OData Query Parameters](../../../concepts/query_parameters.md) to help customize the response.
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsapp.md) objects in the response body.
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 <!-- {
@@ -51,7 +54,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -78,7 +81,7 @@ Content-length: 55
 
 ## Example -- getting the names of the installed apps
 
-#### Request
+### Request
 
 The following is an example of the request.
 <!-- {
@@ -90,7 +93,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 
