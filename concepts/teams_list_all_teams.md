@@ -11,18 +11,20 @@ Note: The Group.resourceProvisioningOptions can be changed.
 Do not add or remove "Team" from that collection, 
 otherwise list all teams will return incorrect results.
 
-> **Note**: There is a known issue with certain unused old teams not being listed with this approach. For details, see the [known issues list](../concepts/known_issues.md#Missing-teams-in-list-all-teams).
+> **Note**: There is a known issue with certain unused old teams not being listed with this approach. For details, see the [known issues list](../concepts/known_issues.md#missing-teams-in-list-all-teams).
 
 ## Example
 
 #### Request
 
 The following is an example of the request.
+
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
 #### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. The [default properties](../api-reference/beta/api/group_get.md#default-properties) will be returned from an actual call.
 
