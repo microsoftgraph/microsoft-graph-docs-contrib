@@ -48,12 +48,12 @@ Currently, Graph Explorer allows global admins to manipulate teams they are not 
 
 ### Missing teams in list all teams
 
-Some teams that were created in the past but which haven't been recently used by a user in Microsoft Teams aren't listed by
+Some teams that were created in the past but haven't been used recently by a Microsoft Teams user aren't listed by
 [list all teams](../concepts/teams_list_all_teams.md).
-New teams do not have this problem.
-The problem is that certain old teams don't have a resourceProvisioningOptions property that contains "Team",
+New teams will be listed.
+Certain old teams don't have a **resourceProvisioningOptions** property that contains "Team",
 which is set on newly created teams and teams that are visited in Microsoft Teams.
-In the future we will set resourceProvisioningOptions on existing teams that have not been opened in Microsoft Teams.
+In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
 
 ## Groups
 
