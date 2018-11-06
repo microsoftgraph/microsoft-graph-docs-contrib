@@ -26,7 +26,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. The [default properties](../api-reference/beta/api/group_get.md#default-properties) will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. The [default properties](../api-reference/beta/api/group_get.md) will be returned from an actual call.
 
 ```http
 HTTP/1.1 200 OK
