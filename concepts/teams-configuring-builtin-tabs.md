@@ -38,7 +38,6 @@ For Planner tabs, the teamsAppId is `com.microsoft.teamspace.tab.planner`. The f
 
 To create a new plan to display in your planner tab, see [create plannerPlan](../api-reference/beta/api/planner_post_plans.md).
 
-
 ## Microsoft Stream tabs
 
 For Microsoft Stream tabs, the `teamsAppId` is `com.microsoftstream.embed.skypeteamstab`. The following is the configuration.
@@ -107,3 +106,4 @@ Configuration is not supported.
 
 For SharePoint page and list tabs, the `teamsAppId` is `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Configuration is not supported.
+If configuration is desired, consider using a Website tab.
