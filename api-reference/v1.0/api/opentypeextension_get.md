@@ -12,7 +12,7 @@ The following table lists the three scenarios where you can get an open extensio
 
 ## Permissions
 
-Depending on the resource that contains the extension and the permission type (delegated or application) requested, the specified permission in the following table is the mimimum required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+Depending on the resource that contains the extension and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -22,9 +22,9 @@ Depending on the resource that contains the extension and the permission type (d
 | [group event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
 | [group post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
-| [organization](../resources/organization.md) | Directory.AccessAsUser.All | Not supported | Not supported |
+| [organization](../resources/organization.md) | User.Read | Not supported | Not supported |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [user](../resources/user.md) | User.ReadBasic.All | User.ReadBasic.All | User.Read.All |
+| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 
 ## HTTP request
