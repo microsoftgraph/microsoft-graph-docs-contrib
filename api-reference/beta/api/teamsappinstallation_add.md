@@ -44,7 +44,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/installedApps
 {
-   "teamsApp":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 #### Response
