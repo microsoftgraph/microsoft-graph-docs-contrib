@@ -8,6 +8,12 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and Office 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a [team](team.md) and an Office 365 group is the mode of communication between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, which are email conversations that occur in the context of a group in Outlook.
 
+Any group that has a team has a **resourceProvisioningOptions** property that contains "Team". 
+
+>**Note:** The **Group.resourceProvisioningOptions** property can be changed.
+Do not add or remove "Team" from that collection;
+otherwise, you'll get incorrect results when you list all teams.
+
 The following are the differences at the API level between teams and groups:
 
 - Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](../resources/channel.md), [chatThread](../resources/chatthread.md), and [chatMessage](../resources/chatmessage.md) resources.

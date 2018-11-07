@@ -1,26 +1,23 @@
 # List all teams in Microsoft Teams for an organization (preview)
 
-To list all [teams](../api-reference/beta/resources/team.md) in Microsoft Teams for organization (tenant), 
-get a list of all [groups](../api-reference/beta/resources/group.md) in the organization that have corresponding teams. 
-Any group that has a team has a **resourceProvisioningOptions** property that contains "Team". The approach is to get a [list of all groups](../api-reference/beta/api/group_list.md) where **resourceProvisioningOptions** contains "Team".
+The following examples demonstrate how to list all [teams](../api-reference/beta/resources/team.md) 
+in an organization (tenant) by finding all groups that have teams, then getting information for each team.
 
->**Note:** The **Group.resourceProvisioningOptions** property can be changed.
-Do not add or remove "Team" from that collection;  
-otherwise, you'll get incorrect results when you list all teams.
+##### Request
 
-> **Note**: Certain unused old teams aren't listed with this approach. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
-
-## List all teams example
-
-The following example shows how to request a list of all teams.
+To get a list of all [groups](../api-reference/beta/resources/group.md) in the organization that have teams,
+get a [list of groups](../api-reference/beta/api/group_list.md) whose **resourceProvisioningOptions** property that contains "Team".
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-The following example shows the response.
+> **Note**: Certain unused old teams aren't listed with this approach. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
 
->**Note:** The response object shown here might be shortened for readability. The [default properties](../api-reference/beta/api/group_get.md) will be returned from an actual call.
+##### Response
+
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+All of the properties will be returned from an actual call.
 
 ```http
 HTTP/1.1 200 OK
@@ -66,6 +63,60 @@ Content-length: xxx
 }
 ```
 
+##### Request
+
+To get team information for the team in a particular group, 
+call the [get team](../api-reference/beta/api/team_get.md) API with the group's ID:
+
+```http
+GET /teams/{group-id}
+```
+
+##### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+<!-- {
+  "blockType": "ignored",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.team"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 401
+
+{
+  "isArchived" : false,
+  "memberSettings": {
+    "allowCreateUpdateChannels": true,
+    "allowDeleteChannels": true,
+    "allowAddRemoveApps": true,
+    "allowCreateUpdateRemoveTabs": true,
+    "allowCreateUpdateRemoveConnectors": true    
+  },
+  "guestSettings": {
+    "allowCreateUpdateChannels": true,
+    "allowDeleteChannels": true 
+  },
+  "messagingSettings": {
+    "allowUserEditMessages": true,
+    "allowUserDeleteMessages": true,
+    "allowOwnerDeleteMessages": true,
+    "allowTeamMentions": true,
+    "allowChannelMentions": true    
+  },
+  "funSettings": {
+    "allowGiphy": true,
+    "giphyContentRating": "strict",
+    "allowStickersAndMemes": true,
+    "allowCustomMemes": true
+  }
+}
+```
+
 ## See also
+
 - [List joinedTeams](../api-reference/beta/api/user_list_joinedteams.md)
 - [List groups](../api-reference/beta/api/group_list.md)

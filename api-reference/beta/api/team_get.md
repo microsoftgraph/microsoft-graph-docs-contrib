@@ -58,6 +58,7 @@ Content-type: application/json
 Content-length: 401
 
 {
+  "isArchived" : false,
   "memberSettings": {
     "allowCreateUpdateChannels": true,
     "allowDeleteChannels": true,
