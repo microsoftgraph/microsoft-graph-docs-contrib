@@ -38,28 +38,35 @@ Use Microsoft Graph to create a new virtual team when a new business issue arise
 
 ![Automate team lifecycles by creating a team, adding members and owners, configuring team settings, adding channels, installing apps, adding tabs, and archiving or deleting the team when the time comes.](images/teams_lifecycle.png)
 
-When the business issue is resolved and you no longer need the virtual team, use the Microsoft Teams API to archive or delete the team. If you know the maximum duration of the virtual team when you create it, set an [Office 365 group expiration policy](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) for the team that automatically removes the team according to the policy.
+When the business issue is resolved and you no longer need the virtual team, use the Microsoft Teams API to [archive](../api-reference/beta/api/team_archive.md)
+ or delete the team. If you know the maximum duration of the virtual team when you create it, set an [Office 365 group expiration policy](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) for the team that automatically removes the team according to the policy.
 
 ### Take action when no one is around
 
 Use [application permissions](permissions_reference.md) to work with 
 [teams](../api-reference/beta/resources/team.md), [channels](../api-reference/beta/resources/channel.md),
- [tabs](../api-reference/beta/resources/teamstab.md), and [apps](../api-reference/beta/resources/teamsapp.md)
- without human intervention. 
-Create a new channel when your customer files in order in your order database. Automatically create teams for classes at the beginning of the school year, and archive them at the end.
+[tabs](../api-reference/beta/resources/teamstab.md), and [apps](../api-reference/beta/resources/teamsapp.md)
+without human intervention. 
+Create a new channel when your customer files an order.
+Automatically create teams for classes at the beginning of the school year, and archive them at the end.
 
 ### Create teams linked to your app
 
-Allow your customers to create new [teams](../api-reference/beta/resources/team.md) and [channels](../api-reference/beta/resources/channel.md). Install your Teams app in the teams you create. Pin your app to a tab in the channel you create. Send messages to the channel linking back to your website.
+Allow your customers to create new [teams](../api-reference/beta/resources/team.md) and [channels](../api-reference/beta/resources/channel.md). 
+[Install ](../api-reference/beta/api/teamsappinstallation_add.md) your Teams app in the teams you create. 
+[Pin your app to a tab](../api-reference/beta/api/teamstab_add.md) in the channel you create. 
+Send messages to the channel linking back to your website.
 
 ### Create and manage multiple teams and channels
 
-Make creating large numbers of teams and populating them with users and channels easy by using the Microsoft Teams API. Automate the creation and management of teams, channels, and apps by calling the same APIs that the [Microsoft Teams Admin Center](https://docs.microsoft.com/en-us/microsoftteams/enable-features-office-365) 
+Make creating large numbers of teams and populating them with users and channels easy by using the Microsoft Teams API. Automate the creation and management of teams, channels, tabs, and apps by calling the same APIs that the [Microsoft Teams Admin Center](https://docs.microsoft.com/en-us/microsoftteams/enable-features-office-365) 
 and [Teams PowerShell commandlets](https://docs.microsoft.com/en-us/microsoftteams/teams-powershell-overview) are built on. Make creating large numbers of teams and populating them with users and channels easy by using the Microsoft Teams API. Find and archive the teams you are no longer using.
 
 ### Deploy apps to teams
 
-List the teams in your tenant, and install apps to them. Create tabs in channels to give users easy access to apps.
+[List the teams in your tenant](teams_list_all_teams.md), 
+and [install apps](../api-reference/beta/api/teamsappinstallation_add.md) to them. 
+[Create tabs](../api-reference/beta/api/teamstab_add.md) in channels to give users easy access to apps.
 
 ## API reference
 
