@@ -32,17 +32,37 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
 |Calling and online meetings|Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
-### Create multiple teams and channels
-
-Allow your customers to create new [teams](../api-reference/beta/resources/team.md) and [channels](../api-reference/beta/resources/channel.md) linked to your app. Make creating large numbers of teams and populating them with users and channels easy by using the Microsoft Teams API.
-
 ### Automate team lifecycles
 
-Use Microsoft Graph to create a new virtual team when a new business issue arises, [populate the team](../api-reference/v1.0/api/group_post_members.md) with the right people, and configure the team with channels. To start a team channel discussion around the new business issue, you can seed the channel with a new conversation thread to post a welcome message to new team members. If you want to get the new team together to discuss the business issue, add a new event to the team calendar and then invite the members of the team to the event.
+Use Microsoft Graph to create a new virtual team when a new business issue arises, [populate the team](../api-reference/v1.0/api/group_post_members.md) with the right people, and configure the team with channels and apps. If you want to get the new team together to discuss the business issue, add a new event to the team calendar and then invite the members of the team to the event.
 
-When the business issue is resolved and you no longer need the virtual team, use the Microsoft Teams API to tear down the team. If you know the maximum duration of the virtual team when you create it, set an [Office 365 group expiration policy](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) for the team that automatically removes the team according to the policy.
+![Automate team lifecycles by creating a team, adding members and owners, configuring team settings, adding channels, installing apps, adding tabs, and archiving or deleting the team when the time comes.](images/teams_lifecycle.png)
+
+When the business issue is resolved and you no longer need the virtual team, use the Microsoft Teams API to archive or delete the team. If you know the maximum duration of the virtual team when you create it, set an [Office 365 group expiration policy](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) for the team that automatically removes the team according to the policy.
+
+### Take action when no one is around
+
+Use [application permissions](permissions_reference.md) to work with 
+[teams](../api-reference/beta/resources/team.md), [channels](../api-reference/beta/resources/channel.md),
+ [tabs](../api-reference/beta/resources/teamstab.md), and [apps](../api-reference/beta/resources/teamsapp.md)
+ without human intervention. 
+Create a new channel when your customer files in order in your order database. Automatically create teams for classes at the beginning of the school year, and archive them at the end.
+
+### Create teams linked to your app
+
+Allow your customers to create new [teams](../api-reference/beta/resources/team.md) and [channels](../api-reference/beta/resources/channel.md). Install your Teams app in the teams you create. Pin your app to a tab in the channel you create. Send messages to the channel linking back to your website.
+
+### Create and manage multiple teams and channels
+
+Make creating large numbers of teams and populating them with users and channels easy by using the Microsoft Teams API. Automate the creation and management of teams, channels, and apps by calling the same APIs that the [Microsoft Teams Admin Center](https://docs.microsoft.com/en-us/microsoftteams/enable-features-office-365) 
+and [Teams PowerShell commandlets](https://docs.microsoft.com/en-us/microsoftteams/teams-powershell-overview) are built on. Make creating large numbers of teams and populating them with users and channels easy by using the Microsoft Teams API. Find and archive the teams you are no longer using.
+
+### Deploy apps to teams
+
+List the teams in your tenant, and install apps to them. Create tabs in channels to give users easy access to apps.
 
 ## API reference
+
 Looking for the API reference for this service?
 
 See the [Teams API in Microsoft Graph beta](../api-reference/beta/resources/teams_api_overview.md).
