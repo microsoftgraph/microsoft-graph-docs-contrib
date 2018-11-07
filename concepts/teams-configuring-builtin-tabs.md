@@ -32,7 +32,7 @@ For Planner tabs, the teamsAppId is `com.microsoft.teamspace.tab.planner`. The f
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | The plan ID (the ID to use with GET /planner/plans/{id}).                                              |
-| contentUrl | string      | `https://tasks.office.com/{tenantName}/Home/PlannerFrame?page=7&planId=<planId>`, where {tenantName} is the name of the tenant (such as example.onmicrosoft.com), and {planId} is the same as the entity ID.  |
+| contentUrl | string      | `https://tasks.office.com/{tenantName}/Home/PlannerFrame?page=7&planId={planId}`, where {tenantName} is the name of the tenant (such as example.onmicrosoft.com), and {planId} is the same as the entity ID.  |
 | removeUrl  | string      | Same value as the contentUrl.    |
 | websiteUrl | string      | Same value as the contentUrl.   |
 
@@ -57,8 +57,8 @@ Configuration:
 
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | The ID of the form.  Define this value, navigate to the form in the Forms website, and find the URL of the form `https://forms.office.com/Pages/DesignPage.aspx#FormId=<formId>`.      |
-| contentUrl | string      | `https://forms.office.com/Pages/TeamsDesignPage.aspx?Host=Teams&lang={locale}&groupId={groupId}&tid={tid}&teamsTheme={theme}&upn={upn}&fragment=FormId%3D{formId}`, where {formId} is the same as the entity ID.  |
+| entityId   | string      | The ID of the form.  Define this value, navigate to the form in the Forms website, and find the URL of the form `https://forms.office.com/Pages/DesignPage.aspx#FormId={formId}`.      |
+| contentUrl | string      | `https://forms.office.com/Pages/TeamsDesignPage.aspx?Host=Teams&lang={locale}&groupId={groupId}&tid={tid}&teamsTheme={theme}&upn={upn}&fragment=FormId%3D{formId}`, where {formId} is the same as the entity ID, and {locale}, {groupId}, {tid}, {upn} are literals.   |
 | removeUrl  | string      | Null                                                     |
 | websiteUrl | string      |  `https://forms.office.com`    |
 
@@ -73,27 +73,7 @@ The following table lists the `teamsAppId` for each app.
 | PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
 | PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
 
-The following is the configuration.
-
-| Property   | Type        | Description                                              |
-| ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | Null                                                     |
-| contentUrl | string      | Null                                                     |
-| removeUrl  | string      | Null                                                     |
-| websiteUrl | string      | Null                                                     |
-| objectId   | string      | The file's UniqueId in SharePoint. This can be found by using [`GET /beta/groups/{id}/drive/root:/{channel-Name>}:/children`](../api-reference/beta/api/driveitem_list_children.md) to get the metadata for the file. The first property, @microsoft.graph.downloadUrl, will contain a URL of the form https://microsoft.sharepoint.com/.....?UniqueId={guid}&... |
-| file       | See the following table. | See the following table.                                             |
-| dateAdded   | string      | in the form `2018-02-21T01:37:12.629Z` |
-
-The following table lists the poperties for the file object.
-
-| Property   | Type        | Description                                              |
-| ---------- | ----------- | -------------------------------------------------------- |
-| type       | string      | The type/extension listed in the previous table.
-| objectId       | string      | The objectId listed in the previous table.
-| objectUrl      | string      | A download URL to the document of the form `https://microsoft.sharepoint.com/teams/<Team Name>/Shared Documents/{hannel name}/{filename.pptx}`. |
-|serviceName| string |`teams`|
-|providerMetadata| string      | "" |
+Configuration is not supported.
 
 ## Wiki tabs
 
@@ -114,8 +94,8 @@ For OneNote tabs, the `teamsAppId` is `0d820ecd-def2-4297-adad-78056cde7c78`. Th
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `{randomGuid}_{notebookId}`, where {randomGuid} is a GUID you generate.                                      |
-| contentUrl | string      | A URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl=<oneNoteWebUrl>&notebookName=note&ui={locale}&tenantId={tid}`, where `<sectionsUrl>`, `<notebookId>`, and `<oneNoteWebUrl>` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. |
-| removeUrl  | string      | A URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F<sectionsUrl>%2Fnotes%2Fnotebooks%2F<notebookId>&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. |
+| contentUrl | string      | A URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. {locale} and {tid} are literals. |
+| removeUrl  | string      | A URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. {locale} and {tid} are literals. |
 | websiteUrl | string      | A URL of the form `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, where `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md) |
 
 ## Power BI tabs
