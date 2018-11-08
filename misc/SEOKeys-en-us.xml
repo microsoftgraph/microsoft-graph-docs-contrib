@@ -29,7 +29,6 @@
   </Item>
   <Item text="Customer booking (preview)" ProdTag="Microsoft Bookings" url="/en-us/concepts/booking-concept-overview" />
   <Item text="Data access (preview)" ProdTag="Microsoft Graph data connect" url="/en-us/concepts/data-connect-concept-overview" >
-	<Item text="Get started" url="/en-us/concepts/data-connect-get-started" />
   </Item>
   <Item text="Devices and apps" ProdTag="Intune" url="/en-us/concepts/intune-concept-overview" />
   <Item text="Education" url="/en-us/concepts/education-concept-overview" />
@@ -74,7 +73,10 @@
 	<Item text="Get information about relevant people" url="/en-us/concepts/people_example" SEODescription="Use the People API to retrieve the people who are most relevant to a user." />
   </Item>
   <Item text="Tasks and plans" ProdTag="Planner" url="/en-us/concepts/planner-concept-overview" />
-  <Item text="Teamwork" ProdTag="Microsoft Teams" url="/en-us/concepts/teams-concept-overview" />
+  <Item text="Teamwork" ProdTag="Microsoft Teams" url="/en-us/concepts/teams-concept-overview" >
+	<Item text="List all teams for an organization" url="/en-us/concepts/teams_list_all_teams" />
+	<Item text="Configure built-in tabs" url="/en-us/concepts/teams-configuring-builtin-tabs" />
+  </Item>
   <Item text="Workbooks and charts" ProdTag="Excel" url="/en-us/concepts/excel-concept-overview" >
 	  <Item text="Manage sessions" url="/en-us/concepts/excel-manage-sessions" />
 	  <Item text="Display a chart image" url="/en-us/concepts/excel-display-chart-image" />
