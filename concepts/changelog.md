@@ -6,6 +6,27 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2018
 
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
+|Addition |beta| Introduced [/appCatalogs/teamsApps/{id}/appDefinition](../api-reference/beta/resources/teamsappdefinition.md), which will replace the version property on [/appCatalogs/teamsApps/{id}](../api-reference/beta/resources/teamsapp.md). |
+|Change   |beta| Renamed the type of [/appCatalogs/teamsApps](../api-reference/beta/resources/teamsapp.md) from teamsCatalogApp to teamsApp. |
+|Change   |beta| Renamed the type of the distributionMethod property on [/appCatalogs/teamsApps](../api-reference/beta/resources/teamsapp.md) from teamsCatalogAppDistributionMethod to teamsAppDistributionMethod  |
+|Removal |beta| teamsCatalogAppDistributionMethod has been renamed to teamsAppDistributionMethod  |
+|Addition |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
+|Addition |beta| Added the displayName property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
+|Addition |beta| Added the messageId property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
+|Addition |beta| Added the teamsApp property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
+|Addition |beta| Introduced new resource type [teamsAppInstallation](../api-reference/beta/resources/teamsappinstallation.md).|
+|Addition |beta| Introduced new resource type [teamsApp](../api-reference/beta/resources/teamsapp.md).|
+|Addition |beta| Introduced new resource type [teamsAppDefinition](../api-reference/beta/resources/teamsappdefinition.md).|
+|Addition |beta| Introduced new enum member hiddenMembership to teamVisibilityType.|
+|Addition |beta| Introduced new enum member createTeam to teamsAsyncOperationType.|
+|Addition |beta| Introduced new enum member teamsAppDistributionMethod.|
+|Addition |beta| Introduced new upgrade app action under [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md). |
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
@@ -16,6 +37,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added new properties to [users](../api-reference/beta/resources/user.md): **faxNumber**, **onPremisesDistinguishedName**, and **otherMails**.|
 
 ## October 2018
+
+### Delta query
+
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Addition    | Beta   | Added [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview) capability for [directoryObject](../api-reference/beta/api/directoryobject_delta.md) |
+| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
+| Addition        | v1.0        | Added [delta](../api-reference/v1.0/api/directoryrole_delta.md) function for [directoryRole](../api-reference/v1.0/resources/directoryrole.md) to support [change tracking using delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview). |
+
 
 ### Delta query
 
@@ -39,7 +69,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
 | Addition    | v1.0    | Added the **Site ID** property to [getSharePointSiteUsageDetail](../api-reference/v1.0/api/reportroot_getsharepointsiteusagedetail.md). |
-
 
 ## September 2018
 
@@ -117,7 +146,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added API for [Tabs](../api-reference/beta/resources/teamstab.md).|
-|Addition|beta|Added API for [publishing apps for your organization](../api-reference/beta/resources/teamscatalogapp.md).|
+|Addition|beta|Added API for [publishing apps for your organization](../api-reference/beta/resources/teamsapp.md).|
 |Addition|beta|Added application permissions support to [GET /teams/{id}](../api-reference/beta/api/team_get.md). |
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md). |
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |
