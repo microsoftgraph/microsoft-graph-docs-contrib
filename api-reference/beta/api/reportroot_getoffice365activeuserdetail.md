@@ -92,7 +92,7 @@ The following columns are not supported in Gallatin:
 
 If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.
 
-However, the following properties in **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object are not supported in Gallatin.
+The following properties in **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object are not supported in Gallatin:
 
 - hasYammerLicense
 - hasTeamsLicense
