@@ -3,7 +3,7 @@
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Remove the [app](../resources/teamsapp.md) from your organization's app catalog (the tenant app catalog). 
-To remove your app from your organization's app catalog, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
+To remove your app from your organization's app catalog, specify `organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.
 
 ## Permissions
 

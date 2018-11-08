@@ -34,9 +34,13 @@ Any bots that are part of the app will become part of any team the app is added 
   "id": "0d0e31ca-59a5-31a6-8d87-12429a173d34",
 }
 ```
+
 # See also
 
-[Pinning apps to tabs in channels](../resources/teamstab.md)
+- [teamsApp](teamsapp.md)
+- [teamsAppDefinition](teamsappdefinition.md)
+- [teamsTab](../resources/teamstab.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
