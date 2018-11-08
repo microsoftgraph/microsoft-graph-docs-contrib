@@ -66,6 +66,6 @@ Content-Type: application/json
   "externalId": "b5561ec9-8cab-4aa3-8aa2-d8d7172e4311",
   "name": "Test App",
   "version": "1.0.0",
-  "distributionMethod": "Tenant"
+  "distributionMethod": "organization"
 }
 ```

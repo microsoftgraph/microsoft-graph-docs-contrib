@@ -27,6 +27,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta| Introduced new enum member teamsAppDistributionMethod.|
 |Addition |beta| Introduced new upgrade app action under [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md). |
 
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added new method transitiveMembers on [groups](../api-reference/beta/api/group_list_transitivemembers.md). This method returns a flat list of members including nested members.|
+| Addition | beta | Added new method transitiveMemberOf on [users](../api-reference/beta/api/user_list_transitivemembersof.md), [groups](../api-reference/beta/api/group_list_transitivemembersof.md), [devices](../api-reference/beta/api/device_list_transitivemembersof.md) and [service principals](../api-reference/beta/api/serviceprincipal_list_transitivemembersof.md).|
+| Addition | beta | Added method memberOf to get a devices direct [membership](../api-reference/beta/api/device_list_members.md). This method has been added for getting the list of memberships including nested memberships.|
+| Addition | beta | Added new properties to [users](../api-reference/beta/resources/user.md): **faxNumber**, **onPremisesDistinguishedName**, and **otherMails**.|
+
 ## October 2018
 
 ### Delta query
@@ -37,43 +46,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
 | Addition        | v1.0        | Added [delta](../api-reference/v1.0/api/directoryrole_delta.md) function for [directoryRole](../api-reference/v1.0/resources/directoryrole.md) to support [change tracking using delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview). |
 
-### Microsoft Intune APIs
 
-|Change type|Version|Description|
-|:---|:---|:---|
-|Addition|beta|Added new entities:<br/>[intuneBrandingProfile](../api-reference/beta/resources/intune_wip_intunebrandingprofile.md)<br/>|
-|Addition|beta|Added new complex types:<br/>[deviceAndAppManagementAssignedRoleIds](../api-reference/beta/resources/intune_rbac_deviceandappmanagementassignedroleids.md)<br/>|
-|Addition|beta|Added new enum types:<br/>[applicationGuardEnabledOptions](../api-reference/beta/resources/intune_deviceconfig_applicationguardenabledoptions.md)<br/>[autoRestartNotificationDismissalMethod](../api-reference/beta/resources/intune_deviceconfig_autorestartnotificationdismissalmethod.md)<br/>[meteredConnectionLimitType](../api-reference/beta/resources/intune_deviceconfig_meteredconnectionlimittype.md)<br/>|
-|Addition|beta|Added the [enableLegacyPcManagement](../api-reference/beta/api/intune_deviceconfig_devicemanagement_enablelegacypcmanagement.md) action on [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
-|Addition|beta|Added the [extendFeatureUpdatesPause](../api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendfeatureupdatespause.md) action on [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) |
-|Addition|beta|Added the [extendQualityUpdatesPause](../api-reference/beta/api/intune_deviceconfig_windowsupdateforbusinessconfiguration_extendqualityupdatespause.md) action on [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) |
-|Addition|beta|Added the [unassignUserFromDevice](../api-reference/beta/api/intune_enrollment_windowsautopilotdeviceidentity_unassignuserfromdevice.md) action on [windowsAutopilotDeviceIdentity](../api-reference/beta/resources/intune_enrollment_windowsautopilotdeviceidentity.md) |
-|Addition|beta|Added the [getAssignedRoleIdsForLoggedInUser](../api-reference/beta/api/intune_rbac_devicemanagement_getassignedroleidsforloggedinuser.md) function on [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) |
-|Addition|beta|Added the [getManagedDevicesWithAppFailures](../api-reference/beta/api/intune_troubleshooting_user_getmanageddeviceswithappfailures.md) function on [user](../api-reference/beta/resources/intune_devices_user.md) |
-|Addition|beta|Added the [managedDeviceEnrollmentAbandonmentSummary](../api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentabandonmentsummary.md) function on [reportRoot](../api-reference/beta/resources/intune_deviceconfig_reportroot.md) |
-|Addition|beta|Added the [managedDeviceEnrollmentAbandonmentDetails](../api-reference/beta/api/intune_troubleshooting_reportroot_manageddeviceenrollmentabandonmentdetails.md) function on [reportRoot](../api-reference/beta/resources/intune_deviceconfig_reportroot.md) |
-|Deletion|beta|Removed the **subjectAlternativeNameType** property from the [androidForWorkCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_androidforworkcertificateprofilebase.md) entity|
-|Addition|beta|Added the **subjectAlternativeNameType** property to the [androidForWorkPkcsCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidforworkpkcscertificateprofile.md) entity|
-|Addition|beta|Added the **certificateStore**, **customSubjectAlternativeNames** and **subjectAlternativeNameType** properties to the [androidForWorkScepCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidforworkscepcertificateprofile.md) entity|
-|Deletion|beta|Removed the **subjectAlternativeNameType** property from the [androidWorkProfileCertificateProfileBase](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilecertificateprofilebase.md) entity|
-|Addition|beta|Added the **subjectAlternativeNameType** property to the [androidWorkProfilePkcsCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilepkcscertificateprofile.md) entity|
-|Addition|beta|Added the **certificateStore**, **customSubjectAlternativeNames** and **subjectAlternativeNameType** properties to the [androidWorkProfileScepCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_androidworkprofilescepcertificateprofile.md) entity|
-|Addition|beta|Added the **legacyPcManangementEnabled** property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
-|Deletion|beta|Removed the **pinRequiredOnLaunchInsteadOfBiometric** property from the [managedAppProtection](../api-reference/beta/resources/intune_mam_managedappprotection.md) entity|
-|Addition|beta|Added the **roleScopeTagIds** property to the [managedDeviceMobileAppConfiguration](../api-reference/beta/resources/intune_apps_manageddevicemobileappconfiguration.md) entity|
-|Addition|beta|Added the **applicationGuardEnabledOptions** property to the [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune_deviceconfig_windows10endpointprotectionconfiguration.md) entity|
-|Addition|beta|Added the **selectedMobileAppIds** property to the [windows10EnrollmentCompletionPageConfiguration](../api-reference/beta/resources/intune_onboarding_windows10enrollmentcompletionpageconfiguration.md) entity|
-|Addition|beta|Added the **engagedRestartDeadlineInDays**, **engagedRestartSnoozeScheduleInDays**, **engagedRestartTransitionScheduleInDays**, **autoRestartNotificationDismissal**, **scheduleRestartWarningInHours** and **scheduleImminentRestartWarningInMinutes** properties to the [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowsupdateforbusinessconfiguration.md) entity|
-|Addition|beta|Added the **preSharedKey** and **meteredConnectionLimit** properties to the [windowsWifiConfiguration](../api-reference/beta/resources/intune_deviceconfig_windowswificonfiguration.md) entity|
-|Addition|beta|Added the **intuneBrandingProfiles** navigation property to the [deviceManagement](../api-reference/beta/resources/intune_androidforwork_devicemanagement.md) entity|
-|Addition|beta|Added the **v6_0**, **v7_0**, **v7_1**, **v8_0**, **v8_1** and **v9_0** properties to the [androidMinimumOperatingSystem](../api-reference/beta/resources/intune_apps_androidminimumoperatingsystem.md) complex type|
-|Addition|beta|Added the **v12_0** property to the [iosMinimumOperatingSystem](../api-reference/beta/resources/intune_apps_iosminimumoperatingsystem.md) complex type|
-|Deletion|beta|Removed the **runAsLoggedOnUser** property from the [win32LobAppPowerShellScriptDetection](../api-reference/beta/resources/intune_apps_win32lobapppowershellscriptdetection.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [osVersionCount](../api-reference/beta/resources/intune_devices_osversioncount.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareCategoryCount](../api-reference/beta/resources/intune_devices_windowsmalwarecategorycount.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareExecutionStateCount](../api-reference/beta/resources/intune_devices_windowsmalwareexecutionstatecount.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareNameCount](../api-reference/beta/resources/intune_devices_windowsmalwarenamecount.md) complex type|
-|Addition|beta|Added the **lastUpdateDateTime** property to the [windowsMalwareStateCount](../api-reference/beta/resources/intune_devices_windowsmalwarestatecount.md) complex type|
+### Delta query
+
+| Change type | Version | Description                              |
+|:------------|:--------|:-----------------------------------------|
+| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
 
 ### Microsoft Teams APIs
 
@@ -81,25 +59,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added application permissions support to [archive team](../api-reference/beta/api/team_archive.md) and [unarchive team](../api-reference/beta/api/team_unarchive.md) APIs.|
 
-### Outlook calendar
-
-| Change type | Version | Description |
-| :---------- | :-------| :---------- |
-| Change      | Beta    | Removed he `iCalUid` property from the [event resource](../api-reference/beta/resources/event.md) and added the `uid` property to the `event` resource. The `uid` property serves the same purpose as the removed `iCalUid` property. |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
-
 ### Outlook contacts
 
-| Change type | Version | Description |
-| :---------- | :-------| :---------- |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 | Removal         | v1.0        | This is a correction to the documentation: removed the **flag** property from the [contact](../api-reference/v1.0/resources/contact) entity topic. The property was never made available in the **contact** entity.|
-
-### Outlook mail
-
-| Change type | Version | Description |
-| :---------- | :-------| :---------- |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
 
 ### Reports APIs
 | Change type | Version | Description                              |
@@ -188,7 +152,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |
 |Addition|beta|Added application permissions support to [PUT /groups/{id}/team](../api-reference/beta/api/team_put_teams.md). |
 |Addition|beta|Added application permissions support to [PATCH /teams/{id}](../api-reference/beta/api/team_update.md). |
-|Addition|beta|Added application permissions support to [Create channel](../api-reference/beta/api/group_post_channels.md), [Update channel](../api-reference/beta/api/channel_patch.md), and [Delete channel](../api-reference/beta/api/channel_delete.md). |
+|Addition|beta|Added application permissions support to [Create channel](../api-reference/beta/api/channel_post.md), [Update channel](../api-reference/beta/api/channel_patch.md), and [Delete channel](../api-reference/beta/api/channel_delete.md). |
 |Deletion|beta| Removed isBlocks and installedState properties from [teamsApp](../api-reference/beta/resources/teamsapp.md).|
 |Change| beta | The context property on [teamsApp](../api-reference/beta/resources/teamsapp.md) has been renamed to distributionMethod.|
 
@@ -437,7 +401,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed POST /groups/{id}/team/channels, use POST /teams/{id}/channels instead. |
 |Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
-|Addition|beta|Added API to [list all teams in organization](../api-reference/beta/api/team_list_all_teams.md). |
+|Addition|beta|Added API to [list all teams in organization](../concepts/teams_list_all_teams.md). |
 
 ### Outlook contacts
 | **Change type** | **Version**   | **Description**                          |
