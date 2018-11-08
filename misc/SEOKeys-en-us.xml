@@ -6173,7 +6173,7 @@
 		<Item text="Unarchive team" url="/en-us/api-reference/beta/api/team_unarchive" />
 		<Item text="Clone team" url="/en-us/api-reference/beta/api/team_clone" />
 		<Item text="List your teams" url="/en-us/api-reference/beta/api/user_list_joinedteams" />
-		<Item text="List all teams" url="/en-us/api-reference/beta/api/team_list_all_teams" />
+		<Item text="List all teams" url="/en-us/concepts/teams_list_all_teams" />
 	  </Item>
 	  <Item text="Group (team)" url="/en-us/api-reference/beta/resources/group" SEOKeyword="Groups API, Microsoft Graph API, Groups API, Microsoft Teams API, Teams API" SEODescription="Represents an Azure Active Directory Group. Inherited from DirectoryObject.">
         <Item text="Create group" url="/en-us/api-reference/beta/api/group_post_groups" />
@@ -6198,18 +6198,18 @@
         <Item text="Restore deleted group" url="/en-us/api-reference/beta/api/directory_deleteditems_restore" />
       </Item>
       <Item text="Channel" url="/en-us/api-reference/beta/resources/channel" SEOKeyword="channel API, Microsoft Graph API, channel API" SEODescription="">
-        <Item text="List channels" url="/en-us/api-reference/beta/api/group_list_channels" SEOKeyword="List channels, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of channel objects." />
-        <Item text="Create channel" url="/en-us/api-reference/beta/api/group_post_channels" SEOKeyword="Create Conversation, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new channel." />
+        <Item text="List channels" url="/en-us/api-reference/beta/api/channel_list" SEOKeyword="List channels, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of channel objects." />
+        <Item text="Create channel" url="/en-us/api-reference/beta/api/channel_post" SEOKeyword="Create Conversation, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new channel." />
         <Item text="Get channel" url="/en-us/api-reference/beta/api/channel_get" SEOKeyword="Get team channel, Microsoft Graph API, Microsoft Teams channel API" SEODescription="Retrieve the properties and relationships of a channel object." />
 		<Item text="List channel messages" url="/en-us/api-reference/beta/api/channel_list_messages" />
 		<Item text="Get channel message" url="/en-us/api-reference/beta/api/channel_get_message" />
 		<Item text="List message replies" url="/en-us/api-reference/beta/api/channel_list_messagereplies" />
 		<Item text="Get message reply" url="/en-us/api-reference/beta/api/channel_get_messagereply" />
-		<Item text="List tabs" url="/en-us/api-reference/beta/api/channels_tabs_list" />
-		<Item text="Get tab" url="/en-us/api-reference/beta/api/channels_tabs_get" />
-		<Item text="Update tab" url="/en-us/api-reference/beta/api/channels_tabs_update" />
-		<Item text="Delete tab" url="/en-us/api-reference/beta/api/channels_tabs_delete" />
-		<Item text="Add tab" url="/en-us/api-reference/beta/api/channels_tabs_add" />
+		<Item text="List tabs" url="/en-us/api-reference/beta/api/teamstab_list" />
+		<Item text="Get tab" url="/en-us/api-reference/beta/api/teamstab_get" />
+		<Item text="Update tab" url="/en-us/api-reference/beta/api/teamstab_update" />
+		<Item text="Delete tab" url="/en-us/api-reference/beta/api/teamstab_delete" />
+		<Item text="Add tab" url="/en-us/api-reference/beta/api/teamstab_add" />
       </Item>
       <Item text="Chat thread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="chatthread API, Microsoft Graph API, chatthread API" SEODescription="">
         <Item text="Create chat thread" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Create chat thread, Microsoft Graph API, Microsoft Teams chat API" SEODescription="Use this API to create a new chat thread." />

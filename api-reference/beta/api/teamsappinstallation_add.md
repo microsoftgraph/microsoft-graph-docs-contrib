@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Installs an app to the specified [team](../resources/team.md).
+Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/apps
+POST /teams/{id}/installedApps
 ```
 
 ## Request headers
@@ -28,7 +28,7 @@ POST /teams/{id}/apps
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String|The id of the app to add.|
+|teamsApp|String|The id of the app to add.|
 
 
 ## Response
@@ -42,9 +42,9 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/apps
+POST https://graph.microsoft.com/beta/teams/{id}/installedApps
 {
-  "id": "12345678-9abc-def0-123456789a"
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
 #### Response

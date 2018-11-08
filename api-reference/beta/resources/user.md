@@ -38,6 +38,7 @@ This resource supports:
 |[List directReports](../api/user_list_directreports.md) |[directoryObject](directoryobject.md) collection| Get the users and contacts that report to the user from the directReports navigation property.|
 |[List manager](../api/user_list_manager.md) |[directoryObject](directoryobject.md) | Get the user or contact that is this user's manager from the manager navigation property.|
 |[List memberOf](../api/user_list_memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups, directory roles, and administrative units that the user is a direct member of from the memberOf navigation property.|
+|[List transitive memberOf](../api/user_list_transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups, directory roles, and administrative units that the user is a member of. This operation is transitive and includes the groups that the user is a nested member of. |
 |[List joinedTeams](../api/user_list_joinedTeams.md) |[groups](group.md) collection| Get the Microsoft Teams that the user is a direct member of from the joinedTeams navigation property.|
 |[List ownedDevices](../api/user_list_owneddevices.md) |[directoryObject](directoryobject.md) collection| Get the devices that are owned by the user from the ownedDevices navigation property.|
 |[List ownedObjects](../api/user_list_ownedobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects that are owned by the user from the ownedObjects navigation property.|
