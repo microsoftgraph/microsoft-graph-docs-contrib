@@ -52,7 +52,7 @@ If successful, this method returns a `302 Found` response that redirects to a pr
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
 
-The CSV file has the following headers for columns.
+The CSV file has the following headers for columns:
 
 - Report Refresh Date
 - User Principal Name
@@ -79,7 +79,7 @@ The CSV file has the following headers for columns.
 - Teams License Assign Date
 - Assigned Products
 
-However, the following columns are not supported in Gallatin.
+The following columns are not supported in Gallatin:
 
 - Has Yammer License
 - Has Teams License
