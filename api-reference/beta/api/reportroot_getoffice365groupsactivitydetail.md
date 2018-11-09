@@ -73,7 +73,7 @@ The CSV file has the following headers for columns.
 - SharePoint Site Storage Used (Byte)
 - Report Period
 
-The following columns are not supported in Gallatin:
+The following columns are not supported in Microsoft Graph China operated by 21Vianet:
 
 - Yammer Posted Message Count
 - Yammer Read Message Count
@@ -83,7 +83,7 @@ The following columns are not supported in Gallatin:
 
 If successful, this method returns a `200 OK` response code and an **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object in the response body.
 
-The following properties in **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object are not supported in Gallatin:
+The following properties in **[office365GroupsActivityDetail](../resources/office365groupsactivitydetail.md)** object are not supported in Microsoft Graph China operated by 21Vianet:
 
 - yammerPostedMessageCount
 - yammerReadMessageCount

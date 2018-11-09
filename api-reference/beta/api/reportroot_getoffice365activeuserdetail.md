@@ -79,7 +79,7 @@ The CSV file has the following headers for columns:
 - Teams License Assign Date
 - Assigned Products
 
-The following columns are not supported in Gallatin:
+The following columns are not supported in Microsoft Graph China operated by 21Vianet:
 
 - Has Yammer License
 - Has Teams License
@@ -92,7 +92,7 @@ The following columns are not supported in Gallatin:
 
 If successful, this method returns a `200 OK` response code and an **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object in the response body.
 
-The following properties in **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object are not supported in Gallatin:
+The following properties in **[office365ActiveUserDetail](../resources/office365activeuserdetail.md)** object are not supported in Microsoft Graph China operated by 21Vianet:
 
 - hasYammerLicense
 - hasTeamsLicense

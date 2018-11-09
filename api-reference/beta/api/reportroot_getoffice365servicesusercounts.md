@@ -65,7 +65,7 @@ The CSV file has the following headers for columns.
 - Teams Inactive
 - Report Period
 
-The following columns are not supported in Gallatin:
+The following columns are not supported in Microsoft Graph China operated by 21Vianet:
 
 - Yammer Active
 - Yammer Inactive
@@ -76,7 +76,7 @@ The following columns are not supported in Gallatin:
 
 If successful, this method returns a `200 OK` response code and an **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** object in the response body.
 
-The following properties in **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** object are not supported in Gallatin:
+The following properties in **[office365ServicesUserCounts](../resources/office365servicesusercounts.md)** object are not supported in Microsoft Graph China operated by 21Vianet:
 
 - yammerActive
 - yammerInactive
