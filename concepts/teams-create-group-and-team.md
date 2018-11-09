@@ -1,13 +1,17 @@
-# Creating a group with a team
+# Creating a group with a Microsoft Teams team
 
-To create a [group](../api-reference/beta/resources/group.md) with a [team](../api-reference/beta/resources/team.md) in it
-is a two-step process: first [create a group](../api-reference/beta/api/group_post_groups.md) with the right properties, 
-then [add a team](../api-reference/beta/api/team_put_teams.md) to it.
+Creating a [group](../api-reference/beta/resources/group.md) that includes a [team](../api-reference/beta/resources/team.md) involves two steps: 
+
+- [Create a group](../api-reference/beta/api/group_post_groups.md) with the right properties.
+- [Add a team](../api-reference/beta/api/team_put_teams.md) to the group.
 
 ## Create a group
 
-In order to put a team in it, the group must have 
-GroupTypes = { "Unified" }, MailEnabled = true, and SecurityEnabled = false. 
+In order to include a team, you need to set the following property values, as shown in the following example:
+
+- **groupTypes** = { "Unified" } 
+- **mailEnabled** = true
+- **securityEnabled** = false
 
 ```http
 POST /groups
@@ -32,7 +36,7 @@ POST /groups
 }
 ```
 
-The following is an example of the response. 
+The following example shows response. 
 
 >**Note:** The response object shown might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -48,12 +52,14 @@ Content-length: xxx
 
 ## Add a team to the group
 
+Add a team to the group, as shown.
+
 ```http
 PUT /groups/{id}/team
 { }
 ```
 
-The following is an example of the response. 
+The following example shows the response. 
 
 >**Note:** The response object shown might be shortened for readability. All the properties will be returned from an actual call.
 
