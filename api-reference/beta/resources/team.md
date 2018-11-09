@@ -52,36 +52,17 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.team"
+  "@odata.type": "microsoft.graph.team",
+  "baseType": "microsoft.graph.entity"
 }-->
 
 ```json
 {  
-  "memberSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true,
-    "allowAddRemoveApps": true,
-    "allowCreateUpdateRemoveTabs": true,
-    "allowCreateUpdateRemoveConnectors": true    
-  },
-  "guestSettings": {
-    "allowCreateUpdateChannels": true,
-    "allowDeleteChannels": true 
-  },
-  "messagingSettings": {
-    "allowUserEditMessages": true,
-    "allowUserDeleteMessages": true,
-    "allowOwnerDeleteMessages": true,
-    "allowTeamMentions": true,
-    "allowChannelMentions": true    
-  },
-  "funSettings": {
-    "allowGiphy": true,
-    "giphyContentRating": "strict",
-    "allowStickersAndMemes": true,
-    "allowCustomMemes": true
-  },
+  "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
+  "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
+  "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
+  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "isArchived": false,
   "webUrl": "https://...longUrl..."
 }
 

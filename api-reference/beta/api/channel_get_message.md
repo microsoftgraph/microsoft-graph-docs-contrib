@@ -32,7 +32,8 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/channel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.
+
 ## Example
 ##### Request
 Here is an example of the request.
@@ -94,14 +95,12 @@ Content-length: 201
   "importance": "normal",
   "reactions": [
       {
-          "type": "like",
-          "reactedBy": {
-              "user": { 
-				  "id": "id-value",
-				  "displayName": "John Doe"
-			  }
-          },
-          "createdDateTime": "2018-07-09T07:40:20.152Z"
+        "reactionType": "like",
+        "user": {
+            "id": "id-value",
+            "displayName": "John Doe"
+        },
+        "createdDateTime": "2018-07-09T07:40:20.152Z"
       }
   ],
   "locale": "en-us"
