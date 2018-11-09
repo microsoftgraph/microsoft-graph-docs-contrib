@@ -10,8 +10,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition |v1.0| Introduced 
-
 |Addition |v1.0| Introduced new resource type [team](../api-reference/beta/resources/team.md).|
 |Addition |v1.0| Introduced new resource type [channel](../api-reference/beta/resources/channel.md).|
 |Addition |v1.0| Introduced new resource type [teamsApp](../api-reference/beta/resources/teamsapp.md).|
