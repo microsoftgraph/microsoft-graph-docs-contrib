@@ -6,32 +6,6 @@ Microsoft Teams is the ultimate hub for teamwork and intelligent communications.
 
 Microsoft Teams makes it easy for you to build collaboration services and apps, reaching millions of enterprise users and helping people get work done together. You can use Microsoft Graph to create and manage teams, channels, messages, and more.
 
-### Use Microsoft Graph in any kind of app
-
-Microsoft Teams apps give work groups a new tool to make collaboration a more productive and compelling experience. These apps let work group users share assets, interact through chat, and schedule events on the team calendar. These apps can also automate creating teams, channels, and conversations, enhancing the value of Microsoft Teams.
-
-You can create web sites, services, and native platform applications that run outside the Microsoft Teams user experience, and call the Teams API to automate Teams scenarios.
-
-**Types of apps enabled for Microsoft Teams**
-
-![Call the Microsoft Teams API from tabs, bots, websites, and services](images/TeamsAppEndpoints.png)
-
-These collaboration tools include Microsoft Graph-enabled tabs or bots running inside Microsoft Teams apps. You can also call Microsoft Graph outside of a Microsoft Teams app, such as from a website or a web service. If you've already enabled your website for Microsoft Graph, you can use that work for Microsoft Teams by using the [Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) to [create a tab](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) that uses the existing website code.
-
-Microsoft Teams APIs can enhance apps inside and outside of Teams:
-
-|App type|Scenario description|
-|:-------|:-------------------|
-|Tabs|Surface enhanced content within Microsoft Teams.|
-|Connectors|Post updates from external services to channels.|
-|Actionable messaging|Add enhanced interaction to your connector cards.|
-|Websites|Surface enhanced content in your web pages.|
-|Bots|Help users get tasks done in conversations.|
-|Activity feed|Engage users via feed notifications.|
-|Messaging extensions|Allow users to query and share information in conversations.|
-|Services|Enhance your client applications with Microsoft Graph data via your web service.|
-|Calling and online meetings|Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
-
 ### Automate team lifecycles
 
 Use Microsoft Graph to [create a new virtual team](../api-reference/beta/api/team_put_teams.md) when a new business issue arises, 
@@ -83,6 +57,32 @@ and [Teams PowerShell commandlets](https://docs.microsoft.com/en-us/microsofttea
 [List the teams in your tenant](teams_list_all_teams.md), 
 and [install apps](../api-reference/beta/api/teamsappinstallation_add.md) to them. 
 [Create tabs](../api-reference/beta/api/teamstab_add.md) in channels to give users easy access to apps.
+
+### Use Microsoft Graph in any kind of app
+
+Microsoft Teams apps give work groups a new tool to make collaboration a more productive and compelling experience. These apps let work group users share assets, interact through chat, and schedule events on the team calendar. These apps can also automate creating teams, channels, and conversations, enhancing the value of Microsoft Teams.
+
+You can create web sites, services, and native platform applications that run outside the Microsoft Teams user experience, and call the Teams API to automate Teams scenarios.
+
+**Types of apps enabled for Microsoft Teams**
+
+![Call the Microsoft Teams API from tabs, bots, websites, and services](images/TeamsAppEndpoints.png)
+
+These collaboration tools include Microsoft Graph-enabled tabs or bots running inside Microsoft Teams apps. You can also call Microsoft Graph outside of a Microsoft Teams app, such as from a website or a web service. If you've already enabled your website for Microsoft Graph, you can use that work for Microsoft Teams by using the [Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) to [create a tab](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) that uses the existing website code.
+
+Microsoft Teams APIs can enhance apps inside and outside of Teams:
+
+|App type|Scenario description|
+|:-------|:-------------------|
+|Tabs|Surface enhanced content within Microsoft Teams.|
+|Connectors|Post updates from external services to channels.|
+|Actionable messaging|Add enhanced interaction to your connector cards.|
+|Websites|Surface enhanced content in your web pages.|
+|Bots|Help users get tasks done in conversations.|
+|Activity feed|Engage users via feed notifications.|
+|Messaging extensions|Allow users to query and share information in conversations.|
+|Services|Enhance your client applications with Microsoft Graph data via your web service.|
+|Calling and online meetings|Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
 ## API reference
 
