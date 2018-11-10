@@ -1,23 +1,22 @@
 # List all teams in Microsoft Teams for an organization (preview)
 
-The following examples demonstrate how to list all [teams](../api-reference/beta/resources/team.md) 
-in an organization (tenant) by finding all groups that have teams, then getting information for each team.
+To list all [teams](../api-reference/beta/resources/team.md) 
+in an organization (tenant), you find all groups that have teams, and then get information for each team.
 
-##### Request
+## Get a list of groups
 
 To get a list of all [groups](../api-reference/beta/resources/group.md) in the organization that have teams,
-get a [list of groups](../api-reference/beta/api/group_list.md) whose **resourceProvisioningOptions** property that contains "Team".
+get a [list of groups](../api-reference/beta/api/group_list.md) that have a **resourceProvisioningOptions** property that contains "Team".
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **Note**: Certain unused old teams aren't listed with this approach. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
+> **Note**: Certain unused old teams will not be listed. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
 
-##### Response
+The following is an example of the response. 
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
-All of the properties will be returned from an actual call.
+>**Note:** The response object shown might be shortened for readability. All the properties will be returned from an actual call.
 
 ```http
 HTTP/1.1 200 OK
@@ -63,18 +62,16 @@ Content-length: xxx
 }
 ```
 
-##### Request
+## Get team information for a group
 
 To get team information for the team in a particular group, 
-call the [get team](../api-reference/beta/api/team_get.md) API with the group's ID:
+call the [get team](../api-reference/beta/api/team_get.md) API and include the group ID.
 
 ```http
 GET /teams/{group-id}
 ```
 
-##### Response
-
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
