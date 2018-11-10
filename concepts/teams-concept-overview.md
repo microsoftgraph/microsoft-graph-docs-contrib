@@ -4,13 +4,13 @@ Microsoft Teams is the ultimate hub for teamwork and intelligent communications.
 
 ## Why integrate with Microsoft Teams?
 
-Integrating with Microsoft Teams makes it easy for you to build your own services and apps, reaching millions of enterprise users and helping people get work done together. You can use Microsoft Graph to create and manage teams, channels, messages, and more.
+Microsoft Teams makes it easy for you to build collaboration services and apps, reaching millions of enterprise users and helping people get work done together. You can use Microsoft Graph to create and manage teams, channels, messages, and more.
 
 ### Use Microsoft Graph in any kind of app
 
-Microsoft Teams apps built on Microsoft Graph give work groups a new tool to make collaboration a more productive and compelling experience. Using Microsoft Teams, work group users share assets, interact through chat, and schedule events on the team calendar. Enhance the value of Microsoft Teams by adding team, channel, and conversation automation via apps based on the Microsoft Teams API.
+Microsoft Teams apps give work groups a new tool to make collaboration a more productive and compelling experience. These apps let work group users share assets, interact through chat, and schedule events on the team calendar. These apps can also automate creating teams, channels, and conversations, enhancing the value of Microsoft Teams.
 
-Websites, services, and native platform applications are not run within the Microsoft Teams user experience but can be used to call the Microsoft Teams APIs that enable Microsoft Teams automation scenarios.
+You can create web sites, services, and native platform applications that run outside the Microsoft Teams user experience, and call the Teams API to automate Teams scenarios.
 
 **Types of apps enabled for Microsoft Teams**
 
@@ -35,13 +35,13 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 ### Automate team lifecycles
 
 Use Microsoft Graph to [create a new virtual team](../api-reference/beta/api/team_put_teams.md) when a new business issue arises, 
-[populate the team](../api-reference/v1.0/api/group_post_members.md) with the right people, 
+[add the right people](../api-reference/v1.0/api/group_post_members.md) to the team, 
 and configure the team with 
 [channels](../api-reference/beta/api/channel_post.md),
 [tabs](../api-reference/beta/api/teamstab_add.md),
 and [apps](../api-reference/beta/api/teamsappinstallation_add.md).
 If you want to get the new team together to discuss the business issue, 
-[add a new event](../api-reference/v1.0/api/group_post_events.md) to the team calendar and then invite the members of the team to the event.
+[add a new event](../api-reference/v1.0/api/group_post_events.md) to the team calendar.
 
 ![Automate team lifecycles by creating a team, adding members and owners, configuring team settings, adding channels, installing apps, adding tabs, and archiving or deleting the team when the time comes.](images/teams_lifecycle.png)
 
