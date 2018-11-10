@@ -4,8 +4,6 @@ Microsoft Teams is the ultimate hub for teamwork and intelligent communications.
 
 ## Why integrate with Microsoft Teams?
 
-Microsoft Teams makes it easy for you to build collaboration services and apps, reaching millions of enterprise users and helping people get work done together. You can use Microsoft Graph to create and manage teams, channels, messages, and more.
-
 ### Automate team lifecycles
 
 Use Microsoft Graph to [create a new virtual team](../api-reference/beta/api/team_put_teams.md) when a new business issue arises, 
@@ -19,10 +17,12 @@ If you want to get the new team together to discuss the business issue,
 
 ![Automate team lifecycles by creating a team, adding members and owners, configuring team settings, adding channels, installing apps, adding tabs, and archiving or deleting the team when the time comes.](images/teams_lifecycle.png)
 
-When the business issue is resolved and you no longer need the virtual team, 
+When the business issue is resolved and you no longer need the team, 
 use the Microsoft Teams API to [archive](../api-reference/beta/api/team_archive.md)
 or [delete](../api-reference/v1.0/api/group_delete.md) the team. 
-If you know the maximum duration of the virtual team when you create it, set an [Office 365 group expiration policy](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US) for the team that automatically removes the team according to the policy.
+If you know the maximum duration of the team when you create it, 
+set an [Office 365 group expiration policy](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
+for the team that automatically removes the team according to the policy.
 
 ### Take action when no one is around
 
@@ -43,7 +43,7 @@ Let customers to create new [teams](../api-reference/beta/resources/team.md) and
 
 ### Create and manage multiple teams and channels
 
-Microsoft Teams API makes it easy to create large numbers of teams and populate them with users and channels.
+Microsoft Graph makes it easy to create large numbers of teams and populate them with users and channels.
 The API lets you automate creating and managing [teams](../api-reference/beta/resources/team.md), [channels](../api-reference/beta/resources/channel.md),
 [tabs](../api-reference/beta/resources/teamstab.md), and [apps](../api-reference/beta/resources/teamsapp.md).
 It also lets you [find](teams_list_all_teams.md) 
@@ -74,15 +74,15 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 
 |App type|Scenario description|
 |:-------|:-------------------|
-|Tabs|Surface enhanced content within Microsoft Teams.|
-|Connectors|Post updates from external services to channels.|
-|Actionable messaging|Add enhanced interaction to your connector cards.|
-|Websites|Surface enhanced content in your web pages.|
-|Bots|Help users get tasks done in conversations.|
-|Activity feed|Engage users via feed notifications.|
-|Messaging extensions|Allow users to query and share information in conversations.|
+| [Tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) |Surface your content in Microsoft Teams.|
+| [Bots](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-overview) |Help users get tasks done in conversations.|
+| [Connectors](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/connectors/connectors) |Post updates from external services to channels.|
+| [Actionable messaging](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards) |Add enhanced interaction to your connector cards.|
+| [Messaging extensions](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/messaging-extensions) |Allow users to query and share information in conversations.|
+|Websites| Surface enhanced content in your web pages.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
-|Calling and online meetings|Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
+| [Activity feed](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
+| [Calling and online meetings](../api-reference/beta/resources/calls-api-overview.md) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
 
 ## API reference
 
