@@ -21,7 +21,6 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |:---------------|:--------|:----------|
 |  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read only.     |
 |  displayName            |   string                  |  Name of the tab.     |
-|  name            |   string                  |  (Deprecated) Name of the tab.     |
 |  teamsAppId           |   string             |  App definition identifier of the tab. This value cannot be changed after tab creation.     |
 |  sortOrderIndex  |   int                     |  Index of the order used for sorting tabs     |
 |  webUrl          |   string                  |  Deep link url of the tab instance. Read only.     |
