@@ -1,6 +1,6 @@
 # teamsAppInstallation resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 
 A [teamsApp](teamsapp.md) installed in a [team](team.md). 
 Any bots that are part of the app will become part of any team the app is added to.

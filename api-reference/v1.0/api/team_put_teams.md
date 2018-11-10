@@ -1,6 +1,6 @@
 # Create team
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 
 Create a new [team](../resources/team.md) under a [group](../resources/group.md).
 

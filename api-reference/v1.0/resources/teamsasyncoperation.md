@@ -1,6 +1,6 @@
 # teamsAsyncOperation resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 
 A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. 
 These operations are long-running or too expensive to complete within the timeframe of their originating request.

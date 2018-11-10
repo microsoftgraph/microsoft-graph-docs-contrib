@@ -1,6 +1,6 @@
 # Delete tab from channel
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 
 Removes (unpins) a tab from the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
