@@ -1,6 +1,8 @@
 # Microsoft Teams API overview (preview)
 
-Microsoft Teams is the ultimate hub for teamwork and intelligent communications. Built on the strength and scale of Office 365 with over 120 million users, Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
+[Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for teamwork and intelligent communications. 
+Built on the strength and scale of [Office 365](https://products.office.com/) with over 120 million users, 
+Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
 
 ## Why integrate with Microsoft Teams?
 
@@ -24,7 +26,7 @@ If you know the maximum duration of the team when you create it,
 set an [Office 365 group expiration policy](https://support.office.com/en-us/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
 for the team that automatically removes the team according to the policy.
 
-### Take action when no one is around
+### Get work done even when no one is around
 
 Use [application permissions](permissions_reference.md) to work with 
 [teams](../api-reference/beta/resources/team.md), [channels](../api-reference/beta/resources/channel.md),
@@ -43,14 +45,14 @@ Let customers to create new [teams](../api-reference/beta/resources/team.md) and
 
 ### Create and manage multiple teams and channels
 
-Microsoft Graph makes it easy to create large numbers of teams and populate them with users and channels.
-The API lets you automate creating and managing [teams](../api-reference/beta/resources/team.md), [channels](../api-reference/beta/resources/channel.md),
+Microsoft Graph makes it easy to create large numbers of teams and populate them with users and channels,
+by automate creating and managing [teams](../api-reference/beta/resources/team.md), [channels](../api-reference/beta/resources/channel.md),
 [tabs](../api-reference/beta/resources/teamstab.md), and [apps](../api-reference/beta/resources/teamsapp.md).
-It also lets you [find](teams_list_all_teams.md) 
+Microsoft Graph also lets you [find](teams_list_all_teams.md) 
 and [archive](../api-reference/beta/api/team_archive.md)
 the teams you are no longer using. 
 This is the same API that the [Microsoft Teams Admin Center](https://docs.microsoft.com/en-us/microsoftteams/enable-features-office-365)
-and [Teams PowerShell commandlets](https://docs.microsoft.com/en-us/microsoftteams/teams-powershell-overview) commandlets are built on.
+and [Teams PowerShell commandlets](https://docs.microsoft.com/en-us/microsoftteams/teams-powershell-overview) are built on.
 
 ### Deploy apps to teams
 
