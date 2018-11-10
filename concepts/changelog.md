@@ -23,6 +23,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |v1.0| Introduced new action [Clone team](../api-reference/v1.0/api/team_clone.md). |
 |Addition |v1.0| Introduced new action [Archive team](../api-reference/v1.0/api/team_archive.md).|
 |Addition |v1.0| Introduced new action [Unarchive team](../api-reference/v1.0/api/team_unarchive.md). |
+|Addition         | Beta          | Added application permissions support to [clone team](../api-reference/beta/api/team_clone.md). |
 |Addition |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
 |Addition |beta| Introduced [/appCatalogs/teamsApps/{id}/appDefinition](../api-reference/beta/resources/teamsappdefinition.md), which will replace the version property on [/appCatalogs/teamsApps/{id}](../api-reference/beta/resources/teamsapp.md). |
 |Change   |beta| Renamed the type of [/appCatalogs/teamsApps](../api-reference/beta/resources/teamsapp.md) from teamsCatalogApp to teamsApp. |
