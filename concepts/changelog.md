@@ -4,25 +4,47 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known_issues.md).
 
-## October 2018
+## November 2018
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
+|Addition |beta| Introduced [/appCatalogs/teamsApps/{id}/appDefinition](../api-reference/beta/resources/teamsappdefinition.md), which will replace the version property on [/appCatalogs/teamsApps/{id}](../api-reference/beta/resources/teamsapp.md). |
+|Change   |beta| Renamed the type of [/appCatalogs/teamsApps](../api-reference/beta/resources/teamsapp.md) from teamsCatalogApp to teamsApp. |
+|Change   |beta| Renamed the type of the distributionMethod property on [/appCatalogs/teamsApps](../api-reference/beta/resources/teamsapp.md) from teamsCatalogAppDistributionMethod to teamsAppDistributionMethod  |
+|Removal |beta| teamsCatalogAppDistributionMethod has been renamed to teamsAppDistributionMethod  |
+|Addition |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
+|Addition |beta| Added the displayName property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
+|Addition |beta| Added the messageId property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
+|Addition |beta| Added the teamsApp property to [teamsTab](../api-reference/beta/resources/teamstab.md) |
+|Addition |beta| Introduced new resource type [teamsAppInstallation](../api-reference/beta/resources/teamsappinstallation.md).|
+|Addition |beta| Introduced new resource type [teamsApp](../api-reference/beta/resources/teamsapp.md).|
+|Addition |beta| Introduced new resource type [teamsAppDefinition](../api-reference/beta/resources/teamsappdefinition.md).|
+|Addition |beta| Introduced new enum member hiddenMembership to teamVisibilityType.|
+|Addition |beta| Introduced new enum member createTeam to teamsAsyncOperationType.|
+|Addition |beta| Introduced new enum member teamsAppDistributionMethod.|
+|Addition |beta| Introduced new upgrade app action under [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md). |
 
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta | Added the **licenseAssignmentStates** property to the [User](../api-reference/beta/resources/user.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
-| Addition | Beta | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
-| Addition | Beta | Added the **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** and **membersWithLicenseErrors** properties to [Group](../api-reference/beta/resources/group.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
+| Addition | beta | Added new method transitiveMembers on [groups](../api-reference/beta/api/group_list_transitivemembers.md). This method returns a flat list of members including nested members.|
+| Addition | beta | Added new method transitiveMemberOf on [users](../api-reference/beta/api/user_list_transitivemembersof.md), [groups](../api-reference/beta/api/group_list_transitivemembersof.md), [devices](../api-reference/beta/api/device_list_transitivemembersof.md) and [service principals](../api-reference/beta/api/serviceprincipal_list_transitivemembersof.md).|
+| Addition | beta | Added method memberOf to get a devices direct [membership](../api-reference/beta/api/device_list_members.md). This method has been added for getting the list of memberships including nested memberships.|
+| Addition | beta | Added new properties to [users](../api-reference/beta/resources/user.md): **faxNumber**, **onPremisesDistinguishedName**, and **otherMails**.|
 
-
-## September 2018
-=======
+## October 2018
 
 ### Delta query
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
+| Addition    | Beta   | Added [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview) capability for [directoryObject](../api-reference/beta/api/directoryobject_delta.md) |
 | Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
+| Addition        | v1.0        | Added [delta](../api-reference/v1.0/api/directoryrole_delta.md) function for [directoryRole](../api-reference/v1.0/resources/directoryrole.md) to support [change tracking using delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview). |
 
 ### Microsoft Intune APIs
 
@@ -71,25 +93,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added application permissions support to [archive team](../api-reference/beta/api/team_archive.md) and [unarchive team](../api-reference/beta/api/team_unarchive.md) APIs.|
 
-### Outlook calendar
-
-| Change type | Version | Description |
-| :---------- | :-------| :---------- |
-| Change      | Beta    | Removed he `iCalUid` property from the [event resource](../api-reference/beta/resources/event.md) and added the `uid` property to the `event` resource. The `uid` property serves the same purpose as the removed `iCalUid` property. |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
-
 ### Outlook contacts
 
-| Change type | Version | Description |
-| :---------- | :-------| :---------- |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
 | Removal         | v1.0        | This is a correction to the documentation: removed the **flag** property from the [contact](../api-reference/v1.0/resources/contact) entity topic. The property was never made available in the **contact** entity.|
-
-### Outlook mail
-
-| Change type | Version | Description |
-| :---------- | :-------| :---------- |
-| Addition    | Beta    | Added the [translateExchangeIds](../api-reference/beta/api/user_translateexchangeids.md) function to translate identifiers of Outlook-related resources between formats. |
 
 ### Reports APIs
 | Change type | Version | Description                              |
@@ -172,13 +180,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition|beta|Added API for [Tabs](../api-reference/beta/resources/teamstab.md).|
-|Addition|beta|Added API for [publishing apps for your organization](../api-reference/beta/resources/teamscatalogapp.md).|
+|Addition|beta|Added API for [publishing apps for your organization](../api-reference/beta/resources/teamsapp.md).|
 |Addition|beta|Added application permissions support to [GET /teams/{id}](../api-reference/beta/api/team_get.md). |
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels](../api-reference/beta/api/group_list_channels.md). |
 |Addition|beta|Added application permissions support to [GET /teams/{id}/channels/{id}](../api-reference/beta/api/channel_get.md). |
 |Addition|beta|Added application permissions support to [PUT /groups/{id}/team](../api-reference/beta/api/team_put_teams.md). |
 |Addition|beta|Added application permissions support to [PATCH /teams/{id}](../api-reference/beta/api/team_update.md). |
-|Addition|beta|Added application permissions support to [Create channel](../api-reference/beta/api/group_post_channels.md), [Update channel](../api-reference/beta/api/channel_patch.md), and [Delete channel](../api-reference/beta/api/channel_delete.md). |
+|Addition|beta|Added application permissions support to [Create channel](../api-reference/beta/api/channel_post.md), [Update channel](../api-reference/beta/api/channel_patch.md), and [Delete channel](../api-reference/beta/api/channel_delete.md). |
 |Deletion|beta| Removed isBlocks and installedState properties from [teamsApp](../api-reference/beta/resources/teamsapp.md).|
 |Change| beta | The context property on [teamsApp](../api-reference/beta/resources/teamsapp.md) has been renamed to distributionMethod.|
 
@@ -427,7 +435,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion|beta|Removed POST /groups/{id}/team/channels, use POST /teams/{id}/channels instead. |
 |Deletion|beta|Removed GET /groups/{id}/team, use GET /teams/{id} instead. |
 |Deletion|beta|Removed PATCH /groups/{id}/team, use PATCH /teams/{id} instead. |
-|Addition|beta|Added API to [list all teams in organization](../api-reference/beta/api/team_list_all_teams.md). |
+|Addition|beta|Added API to [list all teams in organization](../concepts/teams_list_all_teams.md). |
 
 ### Outlook contacts
 | **Change type** | **Version**   | **Description**                          |
