@@ -30,6 +30,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:---|:---|:---|
 |Addition|v1.0|Added the **tenantLockdownRequireNetworkDuringOutOfBoxExperience** property to the [windows10GeneralConfiguration](../api-reference/v1.0/resources/intune_deviceconfig_windows10generalconfiguration.md) entity|
 |Addition|v1.0|Added the **v12_0** property to the [iosMinimumOperatingSystem](../api-reference/v1.0/resources/intune_apps_iosminimumoperatingsystem.md) complex type|
+|Addition|beta|Added the **lastReportAggregationDateTime** property to the [deviceManagement](../api-reference/beta/resources/intune_shared_deviceManagement) entity|
 |Addition|beta|Added new entities:<br/>[intuneBrandingProfile](../api-reference/beta/resources/intune_wip_intunebrandingprofile.md)<br/>|
 |Addition|beta|Added new complex types:<br/>[deviceAndAppManagementAssignedRoleIds](../api-reference/beta/resources/intune_rbac_deviceandappmanagementassignedroleids.md)<br/>|
 |Addition|beta|Added new enum types:<br/>[applicationGuardEnabledOptions](../api-reference/beta/resources/intune_deviceconfig_applicationguardenabledoptions.md)<br/>[autoRestartNotificationDismissalMethod](../api-reference/beta/resources/intune_deviceconfig_autorestartnotificationdismissalmethod.md)<br/>[meteredConnectionLimitType](../api-reference/beta/resources/intune_deviceconfig_meteredconnectionlimittype.md)<br/>|

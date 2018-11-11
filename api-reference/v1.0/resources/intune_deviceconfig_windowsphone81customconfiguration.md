@@ -55,7 +55,7 @@ Here is a JSON representation of the resource.
   "version": 1024,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSetting",
+      "@odata.type": "microsoft.graph.omaSettingInteger",
       "displayName": "String",
       "description": "String",
       "omaUri": "String",
