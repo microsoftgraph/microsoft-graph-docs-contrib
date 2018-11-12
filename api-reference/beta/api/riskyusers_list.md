@@ -80,7 +80,7 @@ The following example shows how to use `$filter` to get the collection of riskyU
   "name": "list_riskyusers"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers?$filter=risk/riskLevel eq microsoft.graph.riskLevel'medium'
+GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
 ##### Response 2
 <!-- {
