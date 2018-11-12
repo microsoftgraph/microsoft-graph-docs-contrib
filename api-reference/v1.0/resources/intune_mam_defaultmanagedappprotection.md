@@ -131,5 +131,14 @@ Here is a JSON representation of the resource.
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+     "Warning: /api-reference/v1.0/resources/intune_mam_defaultmanagedappprotection.md/microsoft.graph.defaultManagedAppProtection/allowedDataStorageLocations:
+      Inconsistent types between parameter (String) and table (Object)"
+  ],
+}
+-->
+
 
 

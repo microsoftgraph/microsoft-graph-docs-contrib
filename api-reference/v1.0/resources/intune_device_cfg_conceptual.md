@@ -126,7 +126,6 @@ The following Graph resources are available to manage settings and features on d
 - [Rating United Kingdom television type](intune_deviceconfig_ratingunitedkingdomtelevisiontype.md)
 - [Rating United States movies type](intune_deviceconfig_ratingunitedstatesmoviestype.md)
 - [Rating United States television type](intune_deviceconfig_ratingunitedstatestelevisiontype.md)
-- [Report](intune_deviceconfig_report.md)
 - [Required password type](intune_deviceconfig_requiredpasswordtype.md)
 - [Safe search filter type](intune_deviceconfig_safesearchfiltertype.md)
 - [Setting source](intune_deviceconfig_settingsource.md)

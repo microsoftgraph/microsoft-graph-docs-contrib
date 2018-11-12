@@ -108,7 +108,7 @@ Here is a JSON representation of the resource.
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -118,7 +118,7 @@ Here is a JSON representation of the resource.
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",

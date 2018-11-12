@@ -1027,7 +1027,6 @@
         <Item text="Rating United Kingdom television type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedkingdomtelevisiontype"/>
         <Item text="Rating United States movies type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatesmoviestype"/>
         <Item text="Rating United States television type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_ratingunitedstatestelevisiontype"/>
-        <Item text="Report" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_report"/>
         <Item text="Required password type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_requiredpasswordtype"/>
         <Item text="Safe search filter type" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_safesearchfiltertype"/>
         <Item text="Setting source" url="/en-us/api-reference/v1.0/resources/intune_deviceconfig_settingsource"/>
