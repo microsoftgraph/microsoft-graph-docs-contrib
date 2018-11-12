@@ -74,7 +74,7 @@
   </Item>
   <Item text="Tasks and plans" ProdTag="Planner" url="/en-us/concepts/planner-concept-overview" />
   <Item text="Teamwork" ProdTag="Microsoft Teams" url="/en-us/concepts/teams-concept-overview" >
-	<Item text="Creating a group with a team" url="/en-us/concepts/teams-create-group-and-team.md" />
+	<Item text="Create a group with a team" url="/en-us/concepts/teams-create-group-and-team.md" />
 	<Item text="List all teams for an organization" url="/en-us/concepts/teams_list_all_teams" />
 	<Item text="Configure built-in tabs" url="/en-us/concepts/teams-configuring-builtin-tabs" />
   </Item>
