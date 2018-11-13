@@ -22,7 +22,15 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 | id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Microsoft Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
 | externalId          | string   | The ID of the catalog provided by the app developer in the [Microsoft Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
 | displayName                | string   | The name of the catalog app provided by the app developer in the [Microsoft Teams zip app package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
-| distributionMethod  | enum     | The method of distribution for the app: `organization`, `sideloaded`, `store`. |
+| distributionMethod  | teamsAppDistributionMethod     | The method of distribution for the app. |
+
+### teamsAppDistributionMethod values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|store|0| The app is available to all tenants through the Microsoft Teams app store.|
+|organization|1|The app is available only in this tenant.|
+|sideloaded|2|The app is available only to the user/team its installed to.|
 
 ## Relationships
 
@@ -32,12 +40,17 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 ## JSON representation
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "baseType": "microsoft.graph.entity"
+}-->
+
 ```json
 {
-  "id": "0d0e31ca-59a5-31a6-8d87-12429a173d34",
-  "externalId": "bcb707d5-94e0-48f8-bbe7-6137a0565a4c",
-  "name": "Test App",
-  "version": "1.0.0",
+  "id": "string",
+  "externalId": "string",
+  "displayName": "Test App",
   "distributionMethod": "Organization"
 }
 ```
