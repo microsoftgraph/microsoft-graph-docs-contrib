@@ -12,6 +12,8 @@ get a [list of groups](../api-reference/beta/api/group_list.md) that have a **re
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
+> **Note**: $filter on /groups is only available through the beta endpoint. resourceProvisioningOptions is available in v1.0 and beta.
+
 > **Note**: Certain unused old teams will not be listed. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
 
 The following is an example of the response. 
