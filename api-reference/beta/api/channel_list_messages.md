@@ -97,12 +97,10 @@ Content-length: 201
         "importance": "normal",
         "reactions": [
             {
-                "type": "like",
-                "reactedBy": {
-                    "user": { 
-                        "id": "id-value",
-                        "displayName": "John Doe"
-                    }
+                "reactionType": "like",
+                "user": {
+                    "id": "id-value",
+                    "displayName": "John Doe"
                 },
                 "createdDateTime": "2018-07-09T07:40:20.152Z"
             }

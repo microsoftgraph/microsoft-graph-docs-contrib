@@ -29,9 +29,15 @@ Any bots that are part of the app will become part of any team the app is added 
 
 ## JSON representation
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "baseType": "microsoft.graph.entity"
+}-->
+
 ```json
 {
-  "id": "0d0e31ca-59a5-31a6-8d87-12429a173d34",
+  "id": "string",
 }
 ```
 
