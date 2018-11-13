@@ -5,6 +5,7 @@
 The details of one version of a [teamsApp](teamsapp.md).
 
 ## Properties
+
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | A unique id (not the teams appid). |
@@ -13,9 +14,17 @@ The details of one version of a [teamsApp](teamsapp.md).
 | version             | string   | The version number of the application. |
 
 ## JSON representation
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.teamsAppDefinition",
+  "baseType": "microsoft.graph.entity"
+}-->
+
 ```json
 {
-  "id": "0d0e31ca-59a5-31a6-8d87-12429a173d34",
+  "id": "string",
+  "teamsAppId": "string",
   "displayName": "Test App",
   "version": "1.0.0",
 }
