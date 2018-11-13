@@ -28,12 +28,13 @@ POST /teams/{id}/installedApps
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|teamsApp|String|The id of the app to add.|
+|teamsApp| [teamsApp](../resources/teamsapp.md) |The app to add.|
 
 
 ## Response
 
 If successful, this method returns a `200 OK` response code.
+
 ## Example
 #### Request
 The following is an example of the request.
@@ -57,7 +58,7 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 401
+Content-length: xxx
 
 {
 }
