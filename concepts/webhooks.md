@@ -34,7 +34,7 @@ Or to a user's personal OneDrive:
 `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-Or to a new [Secuirty API alert](security-concept-overview.md):
+Or to a new [Security API alert](security-concept-overview.md):
 `/security/alerts?$filter=status eq ‘New’`,
 `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
@@ -105,9 +105,11 @@ Microsoft Graph validates the notification endpoint provided in the `notificatio
 
 1. Microsoft Graph sends a POST request to the notification URL:
 
-  ``` http
-  POST https://{notificationUrl}?validationToken={TokenDefinedByMicrosoftGraph}
-  ```
+    ``` http
+    POST https://{notificationUrl}?validationToken={opaqueTokenCreatedByMicrosoftGraph}
+    ```
+
+    > **Important:** Since the `validationToken` is a query parameter it must be properly decoded by the client, as per HTTP coding practices. If the client does not decode the token, and instead uses the encoded value in the next step (response), validation will fail. Also, the client should treat the token value as opaque since the token format may change in the future, without notice.
 
 1. The client must provide a response with the following characteristics within 10 seconds:
 
