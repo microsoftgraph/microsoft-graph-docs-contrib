@@ -55,12 +55,9 @@ HTTP/1.1 200 OK
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
   "isGuest": "true",
   "isDeleted": "true",
-  "risk": {
-    "stateDetail": "adminConfirmedSigninCompromised",
-    "riskLevelAggregated": "high",
-    "riskLevelDuringSignIn": "none",
-    "state": "atRisk"
-  },
+  "riskDetail": "adminConfirmedSigninCompromised",
+  "riskLevel": "high",
+  "riskState": "atRisk"
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }
