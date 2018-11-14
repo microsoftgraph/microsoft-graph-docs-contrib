@@ -6,6 +6,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2018
 
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the [forceDelete](../api-reference/v1.0/api/domain_forcedelete.md) action to [domains](../api-reference/v1.0/resources/domain.md).|
+| Addition | beta | Added new method transitiveMembers on [groups](../api-reference/beta/api/group_list_transitivemembers.md). This method returns a flat list of members including nested members.|
+| Addition | beta | Added new method transitiveMemberOf on [users](../api-reference/beta/api/user_list_transitivemembersof.md), [groups](../api-reference/beta/api/group_list_transitivemembersof.md), [devices](../api-reference/beta/api/device_list_transitivemembersof.md) and [service principals](../api-reference/beta/api/serviceprincipal_list_transitivemembersof.md).|
+| Addition | beta | Added method memberOf to get a devices direct [membership](../api-reference/beta/api/device_list_members.md). This method has been added for getting the list of memberships including nested memberships.|
+| Addition | beta | Added new properties to [users](../api-reference/beta/resources/user.md): **faxNumber**, **onPremisesDistinguishedName**, and **otherMails**.|
+| Addition | beta | Added the **forceChangePasswordNextSignInWithMfa** property to the [passwordProfile](../api-reference/beta/resources/passwordprofile.md) complex type.|
+
 ### Reports APIs
 
 | Change type | Version                                    | Description                              |
@@ -41,16 +52,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta| Introduced new enum member createTeam to teamsAsyncOperationType.|
 |Addition |beta| Introduced new enum member teamsAppDistributionMethod.|
 |Addition |beta| Introduced new upgrade app action under [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md). |
-
-### Directory APIs
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added new method transitiveMembers on [groups](../api-reference/beta/api/group_list_transitivemembers.md). This method returns a flat list of members including nested members.|
-| Addition | beta | Added new method transitiveMemberOf on [users](../api-reference/beta/api/user_list_transitivemembersof.md), [groups](../api-reference/beta/api/group_list_transitivemembersof.md), [devices](../api-reference/beta/api/device_list_transitivemembersof.md) and [service principals](../api-reference/beta/api/serviceprincipal_list_transitivemembersof.md).|
-| Addition | beta | Added method memberOf to get a devices direct [membership](../api-reference/beta/api/device_list_members.md). This method has been added for getting the list of memberships including nested memberships.|
-| Addition | beta | Added new properties to [users](../api-reference/beta/resources/user.md): **faxNumber**, **onPremisesDistinguishedName**, and **otherMails**.|
-|Addition|beta|Added the **forceChangePasswordNextSignInWithMfa** property to the [passwordProfile](../api-reference/beta/resources/passwordprofile.md) complex type.|
 
 ## October 2018
 
