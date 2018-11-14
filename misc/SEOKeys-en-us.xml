@@ -74,6 +74,7 @@
   </Item>
   <Item text="Tasks and plans" ProdTag="Planner" url="/en-us/concepts/planner-concept-overview" />
   <Item text="Teamwork" ProdTag="Microsoft Teams" url="/en-us/concepts/teams-concept-overview" >
+	<Item text="Create a group with a team" url="/en-us/concepts/teams-create-group-and-team.md" />
 	<Item text="List all teams for an organization" url="/en-us/concepts/teams_list_all_teams" />
 	<Item text="Configure built-in tabs" url="/en-us/concepts/teams-configuring-builtin-tabs" />
   </Item>
@@ -6205,23 +6206,23 @@
 		<Item text="Get channel message" url="/en-us/api-reference/beta/api/channel_get_message" />
 		<Item text="List message replies" url="/en-us/api-reference/beta/api/channel_list_messagereplies" />
 		<Item text="Get message reply" url="/en-us/api-reference/beta/api/channel_get_messagereply" />
-		<Item text="List tabs" url="/en-us/api-reference/beta/api/teamstab_list" />
-		<Item text="Get tab" url="/en-us/api-reference/beta/api/teamstab_get" />
-		<Item text="Update tab" url="/en-us/api-reference/beta/api/teamstab_update" />
-		<Item text="Delete tab" url="/en-us/api-reference/beta/api/teamstab_delete" />
-		<Item text="Add tab" url="/en-us/api-reference/beta/api/teamstab_add" />
       </Item>
       <Item text="Chat thread" url="/en-us/api-reference/beta/resources/chatthread" SEOKeyword="chatthread API, Microsoft Graph API, chatthread API" SEODescription="">
         <Item text="Create chat thread" url="/en-us/api-reference/beta/api/channel_post_chatthreads" SEOKeyword="Create chat thread, Microsoft Graph API, Microsoft Teams chat API" SEODescription="Use this API to create a new chat thread." />
       </Item>
       <Item text="Apps" url="/en-us/api-reference/beta/resources/teamsapp" >
-		<Item text="List apps" url="/en-us/api-reference/beta/api/teamsappinstallation_list" />
-		<Item text="Add app" url="/en-us/api-reference/beta/api/teamsappinstallation_add" />
-		<Item text="Delete app" url="/en-us/api-reference/beta/api/teamsappinstallation_delete" />
-		<Item text="Publish app" url="/en-us/api-reference/beta/api/teamsapp_publish" />
-		<Item text="List published apps" url="/en-us/api-reference/beta/api/teamsapp_list" />
-		<Item text="Update published app" url="/en-us/api-reference/beta/api/teamsapp_update" />
-		<Item text="Remove published app" url="/en-us/api-reference/beta/api/teamsapp_delete" />
+		<Item text="List apps in team" url="/en-us/api-reference/beta/api/teamsappinstallation_list" />
+		<Item text="Add app to team" url="/en-us/api-reference/beta/api/teamsappinstallation_add" />
+		<Item text="Remove app from team" url="/en-us/api-reference/beta/api/teamsappinstallation_delete" />
+		<Item text="Publish apps to catalog" url="/en-us/api-reference/beta/api/teamsapp_publish" />
+		<Item text="List apps in catalog" url="/en-us/api-reference/beta/api/teamsapp_list" />
+		<Item text="Update app in catalog" url="/en-us/api-reference/beta/api/teamsapp_update" />
+		<Item text="Remove app from catalog" url="/en-us/api-reference/beta/api/teamsapp_delete" />
+		<Item text="List tabs" url="/en-us/api-reference/beta/api/teamstab_list" />
+		<Item text="Get tab" url="/en-us/api-reference/beta/api/teamstab_get" />
+		<Item text="Add tab" url="/en-us/api-reference/beta/api/teamstab_add" />
+		<Item text="Update tab" url="/en-us/api-reference/beta/api/teamstab_update" />
+		<Item text="Delete tab" url="/en-us/api-reference/beta/api/teamstab_delete" />
 	  </Item>
 	  <Item text="Chat message" url="/en-us/api-reference/beta/resources/chatmessage" SEOKeyword="chat message API, Microsoft Graph API, chat message API" SEODescription="">
       </Item>
