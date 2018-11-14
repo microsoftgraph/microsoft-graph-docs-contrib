@@ -85,6 +85,9 @@ Here is a JSON representation of the resource.
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
   "riskEventTypes": "string",
+  "resourceDisplayName": "string",
+  "resourceId": "string",
+  "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
 }
 
