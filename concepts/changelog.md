@@ -40,7 +40,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition |beta| Introduced [riskyUsers API](../api-reference/beta/resources/riskyuser), which represents Azure AD users who are at risk, as detected by Azure AD Identity Protection |
+|Addition |beta| Introduced [riskyUsers API](../api-reference/beta/resources/riskyuser), which represents Azure AD users who are at risk, as detected by Azure AD Identity Protection. |
 
 
 ### SignIn APIs
