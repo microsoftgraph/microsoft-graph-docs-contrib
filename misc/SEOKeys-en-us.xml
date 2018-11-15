@@ -2177,11 +2177,6 @@
         <Item text="List channels" url="/en-us/api-reference/v1.0/api/channel_list" SEOKeyword="List channels, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of channel objects." />
         <Item text="Create channel" url="/en-us/api-reference/v1.0/api/channel_post" SEOKeyword="Create Conversation, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new channel." />
         <Item text="Get channel" url="/en-us/api-reference/v1.0/api/channel_get" SEOKeyword="Get team channel, Microsoft Graph API, Microsoft Teams channel API" SEODescription="Retrieve the properties and relationships of a channel object." />
-		<Item text="List tabs" url="/en-us/api-reference/v1.0/api/teamstab_list" />
-		<Item text="Get tab" url="/en-us/api-reference/v1.0/api/teamstab_get" />
-		<Item text="Update tab" url="/en-us/api-reference/v1.0/api/teamstab_update" />
-		<Item text="Delete tab" url="/en-us/api-reference/v1.0/api/teamstab_delete" />
-		<Item text="Add tab" url="/en-us/api-reference/v1.0/api/teamstab_add" />
       </Item>
       <Item text="Apps" url="/en-us/api-reference/v1.0/resources/teamsapp" >
 		<Item text="List apps" url="/en-us/api-reference/v1.0/api/teamsappinstallation_list" />
@@ -2191,6 +2186,11 @@
 		<Item text="List published apps" url="/en-us/api-reference/v1.0/api/teamsapp_list" />
 		<Item text="Update published app" url="/en-us/api-reference/v1.0/api/teamsapp_update" />
 		<Item text="Remove published app" url="/en-us/api-reference/v1.0/api/teamsapp_delete" />
+		<Item text="List tabs" url="/en-us/api-reference/v1.0/api/teamstab_list" />
+		<Item text="Get tab" url="/en-us/api-reference/v1.0/api/teamstab_get" />
+		<Item text="Update tab" url="/en-us/api-reference/v1.0/api/teamstab_update" />
+		<Item text="Delete tab" url="/en-us/api-reference/v1.0/api/teamstab_delete" />
+		<Item text="Add tab" url="/en-us/api-reference/v1.0/api/teamstab_add" />
 	  </Item>
       <Item text="Calendar" url="/en-us/api-reference/v1.0/resources/event" SEOKeyword="user calendar, Microsoft Graph API, user API" SEODescription="">
         <Item text="List events" url="/en-us/api-reference/v1.0/api/group_list_events" SEOKeyword="List events, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of event objects." />
