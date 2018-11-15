@@ -6,7 +6,42 @@ in an organization (tenant), you find all groups that have teams, and then get i
 ## Get a list of groups
 
 To get a list of all [groups](../api-reference/beta/resources/group.md) in the organization that have teams,
-get a [list of groups](../api-reference/beta/api/group_list.md) that have a **resourceProvisioningOptions** property that contains "Team".
+get a [list of all groups](../api-reference/beta/api/group_list.md) and then in code find the ones that have
+a **resourceProvisioningOptions** property that contains "Team".
+Since groups are large objects, use $select to only get the properties of the group you care about.
+
+```http
+GET /groups?$select=id,resourceProvisioningOptions
+```
+
+> **Note**: Certain unused old teams will not have resourceProvisioningOptions set. For details, see [known issues](../concepts/known_issues.md#missing-teams-in-list-all-teams).
+
+The following is an example of the response. 
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: xxx
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,resourceProvisioningOptions)",
+    "value": [
+        {
+            "id": "00e897b1-70ba-4cb9-9126-fd5f95c4bb78",
+            "resourceProvisioningOptions": []
+        },
+        {
+            "id": "00f6e045-f884-4359-a617-d459ee626862",
+            "resourceProvisioningOptions": [
+                "Team"
+            ]
+        }
+    ]
+}```
+
+## Get a list of groups using beta APIs
+
+Using the beta APIs, you can use $filter to return only the groups that have teams.
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
