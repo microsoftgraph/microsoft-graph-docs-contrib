@@ -34,6 +34,20 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition |v1.0| Introduced new resource type [team](../api-reference/v1.0/resources/team.md).|
+|Addition |v1.0| Introduced new resource type [channel](../api-reference/v1.0/resources/channel.md).|
+|Addition |v1.0| Introduced new resource type [teamsApp](../api-reference/v1.0/resources/teamsapp.md).|
+|Addition |v1.0| Introduced new resource type [teamsAppDefinition](../api-reference/v1.0/resources/teamsappdefinition.md).|
+|Addition |v1.0| Introduced new resource type [teamsAppInstallation](../api-reference/v1.0/resources/teamsappinstallation.md).|
+|Addition |v1.0| Introduced new resource type [teamsAsyncOperation](../api-reference/v1.0/resources/teamsasyncoperation.md). |
+|Addition |v1.0| Introduced new complex type [teamGuestSettings](../api-reference/v1.0/resources/teamguestsettings.md). |
+|Addition |v1.0| Introduced new complex type [teamMemberSettings](../api-reference/v1.0/resources/teammembersettings.md). |
+|Addition |v1.0| Introduced new complex type [teamMessagingSettings](../api-reference/v1.0/resources/teammessagingsettings.md). |
+|Addition |v1.0| Introduced new complex type [teamFunSettings](../api-reference/v1.0/resources/teamfunsettings.md). |
+|Addition |v1.0| Introduced new action [Clone team](../api-reference/v1.0/api/team_clone.md). |
+|Addition |v1.0| Introduced new action [Archive team](../api-reference/v1.0/api/team_archive.md).|
+|Addition |v1.0| Introduced new action [Unarchive team](../api-reference/v1.0/api/team_unarchive.md). |
+|Addition         | Beta          | Added application permissions support to [clone team](../api-reference/beta/api/team_clone.md). |
 |Addition |beta| Introduced [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md), which will replace /teams/{id}/apps with some differences in payload. |
 |Addition |beta| Introduced [/appCatalogs/teamsApps/{id}/appDefinition](../api-reference/beta/resources/teamsappdefinition.md), which will replace the version property on [/appCatalogs/teamsApps/{id}](../api-reference/beta/resources/teamsapp.md). |
 |Change   |beta| Renamed the type of [/appCatalogs/teamsApps](../api-reference/beta/resources/teamsapp.md) from teamsCatalogApp to teamsApp. |
