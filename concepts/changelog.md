@@ -6,6 +6,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2018
 
+### Data Policy Operations
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta        | Added new property progress to [dataPolicyOperation](../api-reference/beta/resources/dataPolicyOperation). This specifies the progress of an operation.
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
