@@ -30,8 +30,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## October 2018
 
-### Delta query
-
 ### Microsoft Teams APIs
 
 | **Change type** | **Version**   | **Description**                          |
@@ -52,6 +50,31 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta| Introduced new enum member createTeam to teamsAsyncOperationType.|
 |Addition |beta| Introduced new enum member teamsAppDistributionMethod.|
 |Addition |beta| Introduced new upgrade app action under [/teams/{id}/installedApps](../api-reference/beta/resources/teamsappinstallation.md). |
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added new method transitiveMembers on [groups](../api-reference/beta/api/group_list_transitivemembers.md). This method returns a flat list of members including nested members.|
+| Addition | beta | Added new method transitiveMemberOf on [users](../api-reference/beta/api/user_list_transitivemembersof.md), [groups](../api-reference/beta/api/group_list_transitivemembersof.md), [devices](../api-reference/beta/api/device_list_transitivemembersof.md) and [service principals](../api-reference/beta/api/serviceprincipal_list_transitivemembersof.md).|
+| Addition | beta | Added method memberOf to get a devices direct [membership](../api-reference/beta/api/device_list_members.md). This method has been added for getting the list of memberships including nested memberships.|
+| Addition | beta | Added new properties to [users](../api-reference/beta/resources/user.md): **faxNumber**, **onPremisesDistinguishedName**, and **otherMails**.|
+
+### RiskyUsers APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Introduced [riskyUsers API](../api-reference/beta/resources/riskyuser), which represents Azure AD users who are at risk, as detected by Azure AD Identity Protection. |
+
+
+### SignIn APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Change   |beta| Renamed the property `conditionalAccessPolicies` to `appliedConditionalAccessPolicy`.|
+|Addition |beta| Introduced additional risk properties in the [signIn API](../api-reference/beta/resources/signin), including `riskDetail`, `riskLevelAggregated`, `riskLevelDuringSignIn`, `riskEventTypes`, and `riskState`.|
+|Addition |beta| Introduced additional sign-in properties in the [signIn API](../api-reference/beta/resources/signin), including `authenticationProcessingDetails`, `originalRequestID`, `isInteractive`, `tokenIssuerName`, `tokenIssuerType`, `correlationId`, and `processingTimeinMilliseconds`.|
+|Removal   |beta| Removed the property `isRisky`.|
 
 ## October 2018
 
