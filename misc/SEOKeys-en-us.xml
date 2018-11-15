@@ -1203,6 +1203,7 @@
         </Item>
         <Item text="Device action result" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceactionresult"/>
         <Item text="Device enrollment failure reason" url="/en-us/api-reference/v1.0/resources/intune_troubleshooting_deviceenrollmentfailurereason"/>
+        <Item text="Device enrollment type" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceenrollmenttype"/>
         <Item text="Device exchange access state summary" url="/en-us/api-reference/v1.0/resources/intune_devices_deviceexchangeaccessstatesummary"/>
         <Item text="Device geolocation" url="/en-us/api-reference/v1.0/resources/intune_devices_devicegeolocation"/>
         <Item text="Device health attestation state" url="/en-us/api-reference/v1.0/resources/intune_devices_devicehealthattestationstate"/>
@@ -1455,7 +1456,7 @@
         <Item text="Windows information protection resource collection" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionresourcecollection"/>
         <Item text="Windows information protection store app" url="/en-us/api-reference/v1.0/resources/intune_mam_windowsinformationprotectionstoreapp"/>
       </Item>
-      <Item text="On-boarding" url="/en-us/api-reference/v1.0/resources/intune_onboarding_conceptual">
+      <Item text="Onboarding" url="/en-us/api-reference/v1.0/resources/intune_onboarding_conceptual">
         <Item text="Device enrollment configuration" url="/en-us/api-reference/v1.0/resources/intune_onboarding_deviceenrollmentconfiguration">
           <Item text="List" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_list"/>
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_onboarding_deviceenrollmentconfiguration_get"/>
@@ -1602,7 +1603,6 @@
           <Item text="Delete" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_delete"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicecategory_update"/>
         </Item>
-        <Item text="Device enrollment type" url="/en-us/api-reference/v1.0/resources/intune_shared_deviceenrollmenttype"/>
         <Item text="Device management" url="/en-us/api-reference/v1.0/resources/intune_shared_devicemanagement">
           <Item text="Get" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_get"/>
           <Item text="Update" url="/en-us/api-reference/v1.0/api/intune_shared_devicemanagement_update"/>

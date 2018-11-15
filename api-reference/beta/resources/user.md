@@ -84,6 +84,8 @@ This resource supports:
 |department|String|The name for the department in which the user works. Supports $filter.|
 |displayName|String|The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |employeeId|String|The employee identifier assigned to the user by the organization. Supports $filter.|
+|externalUserState|String|For an external user invited to the tenant using the [invitation API](../api/invitation_post.md), this property represents the invited user's invitation status. For invited users, the state can be 'PendingAcceptance' or 'Accepted', or `null` for all other users. Supports $filter with the supported values. For example: `$filter=externalUserState eq 'PendingAcceptance'`.|
+|externalUserStateChangeDateTime|String|Shows the timestamp for the latest change to the externalUserState property.|
 |faxNumber|String|The fax number of the user.|
 |givenName|String|The given name (first name) of the user. Supports $filter.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -260,6 +262,8 @@ Here is a JSON representation of the resource
   "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
+  "externalUserState": "PendingAcceptance",
+  "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
