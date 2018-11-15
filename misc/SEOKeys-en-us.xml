@@ -2176,10 +2176,6 @@
         <Item text="List channels" url="/en-us/api-reference/v1.0/api/channel_list" SEOKeyword="List channels, Microsoft Graph API, Groups API" SEODescription="Retrieve a list of channel objects." />
         <Item text="Create channel" url="/en-us/api-reference/v1.0/api/channel_post" SEOKeyword="Create Conversation, Microsoft Graph API, Groups API" SEODescription="Use this API to create a new channel." />
         <Item text="Get channel" url="/en-us/api-reference/v1.0/api/channel_get" SEOKeyword="Get team channel, Microsoft Graph API, Microsoft Teams channel API" SEODescription="Retrieve the properties and relationships of a channel object." />
-		<Item text="List channel messages" url="/en-us/api-reference/v1.0/api/channel_list_messages" />
-		<Item text="Get channel message" url="/en-us/api-reference/v1.0/api/channel_get_message" />
-		<Item text="List message replies" url="/en-us/api-reference/v1.0/api/channel_list_messagereplies" />
-		<Item text="Get message reply" url="/en-us/api-reference/v1.0/api/channel_get_messagereply" />
 		<Item text="List tabs" url="/en-us/api-reference/v1.0/api/teamstab_list" />
 		<Item text="Get tab" url="/en-us/api-reference/v1.0/api/teamstab_get" />
 		<Item text="Update tab" url="/en-us/api-reference/v1.0/api/teamstab_update" />
