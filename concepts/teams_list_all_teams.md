@@ -24,7 +24,7 @@ Content-type: application/json
 Content-length: xxx
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,resourceProvisioningOptions)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
     "value": [
         {
             "id": "00e897b1-70ba-4cb9-9126-fd5f95c4bb78",
@@ -37,7 +37,8 @@ Content-length: xxx
             ]
         }
     ]
-}```
+}
+```
 
 ## Get a list of groups using beta APIs
 
