@@ -29,8 +29,8 @@ for the team that automatically removes the team according to the policy.
 ### Get work done even when no one is around
 
 Use [application permissions](permissions_reference.md) to work with 
-[teams](../api-reference/v1.0/resources/team.md), [channels](../api-reference/v1.0/resources/channel.md),
-[tabs](../api-reference/v1.0/resources/teamstab.md), and [apps](../api-reference/v1.0/resources/teamsapp.md)
+[teams](../api-reference/v1.0/resources/team.md), [channels](../api-reference/v1.0/resources/channel.md), and 
+[tabs](../api-reference/v1.0/resources/teamstab.md)
 without human intervention. 
 Create a new channel when your customer files an order.
 Automatically create teams for classes at the beginning of the school year, and archive them at the end.
