@@ -28,8 +28,6 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ## Microsoft Teams
 
->**Note** Microsoft Teams is currently in preview and is available only in the Microsoft Graph beta endpoint.
-
 ### Application permissions
 
 When making changes to teams and channels using application permissions, 
