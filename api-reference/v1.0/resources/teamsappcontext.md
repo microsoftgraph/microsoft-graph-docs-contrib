@@ -1,4 +1,4 @@
-#teamsAppContext enum type
+# teamsAppContext enum type
 
 
 
