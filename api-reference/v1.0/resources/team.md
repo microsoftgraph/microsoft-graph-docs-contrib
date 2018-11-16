@@ -1,6 +1,6 @@
 # team resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 
 A team in Microsoft Teams is a collection of [channels](channel.md). 
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
@@ -25,7 +25,6 @@ For more information about working with groups and members in teams, see [Use th
 |[Publish apps to your organization](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Create Teams apps visible only to your organization. |
 |[Add app to team](../api/teamsappinstallation_add.md) | [teamsappinstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
 |[Add tab to channel](../api/teamstab_add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
-|[List channel messages](../api/channel_list_messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel_list_messages.md) |
 
 ## Properties
 
@@ -42,7 +41,6 @@ For more information about working with groups and members in teams, see [Use th
 
 | Relationship | Type	| Description |
 |:---------------|:--------|:----------|
-|apps|[teamsApp](teamsapp.md) collection| (Obsolete) The apps installed in this team.|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 
