@@ -6,6 +6,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2018
 
+### Data Policy Operations
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Addition |v1.0| Added new entity [dataPolicyOperation](../api-reference/v1.0/resources/dataPolicyOperation). This represents a submitted data policy operation for tracking purposes.
+|Addition |v1.0| Added the [exportPersonalData](../api-reference/v1.0/api/user_exportPersonalData) action on [users](../api-reference/v1.0/resources/users). This action submits a data policy operation request to export personal data stored by Microsoft for a user. |
+
 ### Microsoft Teams APIs
 
 | **Change type** | **Version**   | **Description**                          |
