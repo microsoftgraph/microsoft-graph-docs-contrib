@@ -4,7 +4,7 @@
 
 Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more.
 
-## Key Resources
+## Key resources in Microsoft Teams
 
 | Resource | Methods |
 |:---------------|:--------|
