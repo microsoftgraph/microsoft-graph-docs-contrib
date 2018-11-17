@@ -8,12 +8,13 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 | Resource | Methods |
 |:---------------|:--------|
-|[team](../api-reference/v1.0/resources/team.md)| [create](../api/team_put_teams.md), [get](../api/team_get.md), [update](../api/team_update.md), [clone](../api/team_clone.md), [archive](../api/team_archive.md), [unarchive](../api/team_unarchive.md) |
+|[team](../api-reference/v1.0/resources/team.md)| [create](../api/team_put_teams.md), [read](../api/team_get.md), [update](../api/team_update.md), [clone](../api/team_clone.md), [archive](../api/team_archive.md), [unarchive](../api/team_unarchive.md) |
 |[group](../api-reference/v1.0/resources/group.md)| [add member](../api/group_post_members.md), [remove member](../api/group_delete_members.md), [add owner](../api/group_post_owners.md), [remove owner](../api/group_delete_owners.md) |
-|[channel](../api-reference/v1.0/resources/channel.md)|[list](../api/channel_list.md), [create](../api/channel_post.md), [get](../api/channel_get.md), [update](../api/channel_patch.md), [delete](../api/channel_delete.md)|
-|[teamsTab](../resources/teamstab.md) |[list](../api/teamstab_list.md), [get](../api/teamstab_get.md), [add](../api/teamstab_add.md), [delete](../api/teamstab_delete.md), [update](../api/teamstab_update.md) |
+|[channel](../api-reference/v1.0/resources/channel.md)|[list](../api/channel_list.md), [create](../api/channel_post.md), [read](../api/channel_get.md), [update](../api/channel_patch.md), [delete](../api/channel_delete.md)|
+|[teamsTab](../resources/teamstab.md) |[list](../api/teamstab_list.md), [create](../api/teamstab_add.md), [read](../api/teamstab_get.md), [update](../api/teamstab_update.md), [delete](../api/teamstab_delete.md) |
 |[teamsApp](../api-reference/v1.0/resources/teamsapp.md)|[list](../api/teamsapp_list.md), [publish](../api/teamsapp_publish.md), [update](../api/teamsapp_update.md), [remove](../api/teamsapp_delete.md)|
-|[teamsAppInstallation](../api-reference/v1.0/resources/teamsappinstallation.md)| [list](../api/teamsappinstallation_list.md), [add](../api/teamsappinstallation_add.md), [remove](../api/teamsappinstallation_delete.md), [upgrade](../api/teamsappinstallation_delete.md) |
+|[teamsAppInstallation](../api-reference/v1.0/resources/teamsappinstallation.md)| [list](../api/teamsappinstallation_list.md), [install](../api/teamsappinstallation_add.md), [remove](../api/teamsappinstallation_delete.md), [upgrade](../api/teamsappinstallation_delete.md) |
+| (Preview) [chatMessage](chatmessage.md) and [chatThread](chatthread.md) | [list](../api/channel_list_messages.md), [create](../api/channel_post_chatthreads.md), [read](../api/channel_get_message.md) |
 
 
 ## Teams and groups
