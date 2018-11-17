@@ -71,19 +71,6 @@ Similarly, if the `userId` in the URL or payload is expressed as a UPN rather th
 When the slower path is taken, if a current team member or owner is signed in to the Microsoft Teams application/website, the change will be reflected within an hour.
 If none of those users are signed in to the Microsoft Teams application/website, the change will not be reflected until an hour after one of them signs in.
 
-## Common use cases  
-
-| Use cases                             | REST resources                                               | See also                                                     |
-| ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Create and delete teams               | [team](team.md) | [Create team](../api/team_put_teams.md) |
-| Add members and owners                | [group](../resources/group.md) | [Add member](../api/group_post_members.md), [Remove member](../api/group_delete_members.md) |
-| Add and remove channels               | [channel](../resources/channel.md) | [Create channel](../api/channel_post.md) |
-| Add apps to team                      | [teamsApp](../resources/teamsapp.md) | [Add apps](../api/teamsappinstallation_add.md) |
-| Change team settings                  | [teamMemberSettings](../resources/teammembersettings.md), [teamGuestSettings](../resources/teamGuestSettings.md), [teamMessagingSettings](../resources/teammessagingsettings.md), [teamFunSettings](../resources/teamFunSettings.md) |                                                              |
-| Archive the team                      | [team](team.md) | [Archive team](../api/team_archive.md) | 
-| Get the photo of a member of a team   | [profilePhoto](../../v1.0/api/profilephoto_get.md) |                                                              |
-| List notebooks for a team             | [Notebook](../../v1.0/resources/notebook.md) | [List notebooks in a group](../../v1.0/api/onenote_list_notebooks.md) |
-
 ## See also
 
 - [Microsoft Teams API overview](../../../concepts/teams-concept-overview.md)
