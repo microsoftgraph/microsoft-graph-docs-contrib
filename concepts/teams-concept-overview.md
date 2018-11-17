@@ -100,4 +100,4 @@ See the [Teams API in Microsoft Graph](../api-reference/v1.0/resources/teams_api
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
 - Explore the [calling and online meeting APIs](../api-reference/beta/resources/calls-api-overview.md).
-- Get a jump-start with sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph), [Node.js mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph/tree/master/Node).
+- Get a jump-start with sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)

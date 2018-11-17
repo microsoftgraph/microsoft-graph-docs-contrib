@@ -1,4 +1,4 @@
-# List all teams in Microsoft Teams for an organization (preview)
+# List all teams in Microsoft Teams for an organization
 
 To list all [teams](../api-reference/beta/resources/team.md) 
 in an organization (tenant), you find all groups that have teams, and then get information for each team.
