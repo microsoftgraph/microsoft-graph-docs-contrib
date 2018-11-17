@@ -4,6 +4,17 @@
 
 Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more.
 
+## 
+
+|[team](../api-reference/v1.0/resources/team.md)| [Create](../api/team_put_teams.md), [Get](../api/team_get.md), [Update](../api/team_update.md), [Clone](../api/team_clone.md), [Archive](../api/team_archive.md), [Unarchive](../api/team_unarchive.md) |
+|[group](../api-reference/v1.0/resources/group.md)| |
+|[channel](../api-reference/v1.0/resources/channel.md)|[List channels](../api/channel_list.md), [Create channel](../api/channel_post.md), [Get channel](../api/channel_get.md), [Update channel](../api/channel_patch.md), [Delete channel](../api/channel_delete.md)|
+|[teamsTab](../resources/teamstab.md) |[List tabs](../api/teamstab_list.md), [Get tab](../api/teamstab_get.md), [Add tab](../api/teamstab_add.md), [Remove tab](../api/teamstab_delete.md), [Update tab](../api/teamstab_update.md) |
+|[teamsApp](../api-reference/v1.0/resources/teamsapp.md)|
+|[teamsAppDefinition](../api-reference/v1.0/resources/teamsappdefinition.md)|
+|[teamsAppInstallation](../api-reference/v1.0/resources/teamsappinstallation.md)| [List apps](../api/teamsappinstallation_list.md), [Add app](../api/teamsappinstallation_add.md), [Remove app](../api/teamsappinstallation_delete.md), [Upgrade app](../api/teamsappinstallation_delete.md) |
+
+
 ## Teams and groups
 
 In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and Office 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a [team](team.md) and an Office 365 group is the mode of communication between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, which are email conversations that occur in the context of a group in Outlook.
