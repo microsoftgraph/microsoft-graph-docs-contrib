@@ -73,4 +73,5 @@ If none of those users are signed in to the Microsoft Teams application/website,
 
 ## See also
 
-[Microsoft Teams API overview](../../../concepts/teams-concept-overview.md)
+- [Microsoft Teams API overview](../../../concepts/teams-concept-overview.md)
+- Sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
