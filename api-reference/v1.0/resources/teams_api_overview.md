@@ -15,7 +15,7 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 |[teamsApp](../api-reference/v1.0/resources/teamsapp.md)|[list](../api/teamsapp_list.md), [publish](../api/teamsapp_publish.md), [update](../api/teamsapp_update.md), [remove](../api/teamsapp_delete.md)|
 |[teamsAppInstallation](../api-reference/v1.0/resources/teamsappinstallation.md)| [list](../api/teamsappinstallation_list.md), [install](../api/teamsappinstallation_add.md), [upgrade](../api/teamsappinstallation_delete.md), [remove](../api/teamsappinstallation_delete.md) |
 | (Preview) [chatMessage](chatmessage.md) and [chatThread](chatthread.md) | [list](../../beta/api/channel_list_messages.md), [create](../../beta/api/channel_post_chatthreads.md), [read](../../beta/api/channel_get_message.md) |
-
+| (Preview) [call](../../beta/resources/call.md) | [answer](../../beta/api/call_answer.md), [reject](../../beta/api/call_reject.md), [redirect](../../beta/api/call_redirect.md), [mute](../../beta/api/call_mute.md), [unmute](../../beta/api/call_unmute.md), [update metadata](../../beta/api/call_updatemetadata.md), [change screen sharing role](../../beta/api/call_changescreensharingrole.md), [list participants](../../beta/api/call_list_participants.md), [invite participants](../../beta/api/participant_invite.md), [mute all participants](../../beta/api/participant_muteall.md) |
 
 ## Teams and groups
 
