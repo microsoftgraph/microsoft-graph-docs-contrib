@@ -13,8 +13,8 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 |[channel](../api-reference/v1.0/resources/channel.md)|[list](../api/channel_list.md), [create](../api/channel_post.md), [read](../api/channel_get.md), [update](../api/channel_patch.md), [delete](../api/channel_delete.md)|
 |[teamsTab](../resources/teamstab.md) |[list](../api/teamstab_list.md), [create](../api/teamstab_add.md), [read](../api/teamstab_get.md), [update](../api/teamstab_update.md), [delete](../api/teamstab_delete.md) |
 |[teamsApp](../api-reference/v1.0/resources/teamsapp.md)|[list](../api/teamsapp_list.md), [publish](../api/teamsapp_publish.md), [update](../api/teamsapp_update.md), [remove](../api/teamsapp_delete.md)|
-|[teamsAppInstallation](../api-reference/v1.0/resources/teamsappinstallation.md)| [list](../api/teamsappinstallation_list.md), [install](../api/teamsappinstallation_add.md), [remove](../api/teamsappinstallation_delete.md), [upgrade](../api/teamsappinstallation_delete.md) |
-| (Preview) [chatMessage](chatmessage.md) and [chatThread](chatthread.md) | [list](../api/channel_list_messages.md), [create](../api/channel_post_chatthreads.md), [read](../api/channel_get_message.md) |
+|[teamsAppInstallation](../api-reference/v1.0/resources/teamsappinstallation.md)| [list](../api/teamsappinstallation_list.md), [install](../api/teamsappinstallation_add.md), [upgrade](../api/teamsappinstallation_delete.md), [remove](../api/teamsappinstallation_delete.md) |
+| (Preview) [chatMessage](chatmessage.md) and [chatThread](chatthread.md) | [list](../../beta/api/channel_list_messages.md), [create](../../beta/api/channel_post_chatthreads.md), [read](../../beta/api/channel_get_message.md) |
 
 
 ## Teams and groups
