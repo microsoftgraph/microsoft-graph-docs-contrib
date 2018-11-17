@@ -40,9 +40,22 @@ The fix will retroactively update control messages that are already posted.
 The current API to [create a chat thread](../api-reference/beta/api/channel_post_chatthreads.md) 
 will be replaced with a richer API that is consistent with the schema for [listing channel messages](../api-reference/beta/api/channel_list_messages.md).
 
+### Graph Explorer and v1.0
+
+Graph Explorer sample queries have not been updated for v1.0 yet.
+You can still type v1.0 queries into the text box on the top.
+Make sure you have set up Graph Explorer with the appropriate permissions, such as Group.ReadWrite.All and User.Read.All.
+
 ### Graph Explorer and Global Admins
 
 Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
+
+### GET /teams and POST /teams are not supported
+
+See [list all teams](../concepts/teams_list_all_teams.md) and 
+[list your teams](../api-reference/v1.0/api/user_list_joinedteams.md)
+to get a list of teams.
+See [create team](../api-reference/v1.0/api/team_put_teams.md) for creating teams.
 
 ### Missing teams in list all teams
 
