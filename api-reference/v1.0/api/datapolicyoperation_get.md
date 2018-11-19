@@ -54,7 +54,7 @@ Content-length: 212
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
   "submittedDateTime": "datetime-value", 
-  "progress": 97.8
+  "progress": "double-value"
 }
 ```
 
