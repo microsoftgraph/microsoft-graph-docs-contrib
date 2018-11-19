@@ -3148,8 +3148,6 @@
           <Item text="Update" url="/en-us/api-reference/beta/api/intune_cirrus_officeclientconfigurationassignment_update"/>
         </Item>
         <Item text="Office configuration" url="/en-us/api-reference/beta/resources/intune_cirrus_officeconfiguration">
-          <Item text="Get" url="/en-us/api-reference/beta/api/intune_cirrus_officeconfiguration_get"/>
-          <Item text="Update" url="/en-us/api-reference/beta/api/intune_cirrus_officeconfiguration_update"/>
         </Item>
         <Item text="Office configuration assignment target" url="/en-us/api-reference/beta/resources/intune_cirrus_officeconfigurationassignmenttarget"/>
         <Item text="Office configuration group assignment target" url="/en-us/api-reference/beta/resources/intune_cirrus_officeconfigurationgroupassignmenttarget"/>
