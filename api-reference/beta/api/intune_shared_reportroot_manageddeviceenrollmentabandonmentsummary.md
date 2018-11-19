@@ -44,7 +44,7 @@ The following table shows the parameters that can be used with this function.
 
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune_troubleshooting_report.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [report](../resources/intune_shared_report.md) in the response body.
 
 ## Example
 ### Request

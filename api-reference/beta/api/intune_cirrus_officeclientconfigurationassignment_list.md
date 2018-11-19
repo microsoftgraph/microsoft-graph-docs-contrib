@@ -1,16 +1,16 @@
-﻿# Get deviceManagement
+﻿# List officeClientConfigurationAssignments
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Read properties and relationships of the [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object.
+List properties and relationships of the [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) objects.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|**TODO: Determine scopes **|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -20,11 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement
+GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments
 ```
 
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -35,13 +33,13 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune_deviceconfig_devicemanagement.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) objects in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement
+GET https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments
 ```
 
 ### Response
@@ -49,28 +47,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 563
+Content-Length: 274
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b",
-    "settings": {
-      "@odata.type": "microsoft.graph.deviceManagementSettings",
-      "deviceComplianceCheckinThresholdDays": 4,
-      "isScheduledActionEnabled": true,
-      "secureByDefault": true,
-      "enhancedJailBreak": true,
-      "deviceInactivityBeforeRetirementInDay": 5
-    },
-    "maximumDepTokens": 0,
-    "intuneAccountId": "cf1549a1-49a1-cf15-a149-15cfa14915cf",
-    "legacyPcManangementEnabled": true
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.officeClientConfigurationAssignment",
+      "id": "804730f3-30f3-8047-f330-4780f3304780",
+      "target": {
+        "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
-
-
 
 
 
