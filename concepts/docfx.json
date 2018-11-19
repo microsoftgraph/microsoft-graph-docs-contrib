@@ -1,21 +1,18 @@
 {
-  "build": {
+  "build": {    
     "content": [
       {
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "**.md",
+          "**.yml"
         ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices",
-          "appveyor.yml"
+          "ThirdPartyNotices"
         ]
       }
     ],
@@ -35,12 +32,24 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {
+    "globalMetadata": { 
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
+      "feedback_product_url": "https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis",
       "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "author": "jthake-msft",
+      "ms.author": "jthake-msft",
+      "ms.date": "06/11/2018"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.service": {
+        "**/*.md": "microsoft-graph"
+      },
+      "ms.topic": {
+        "**/*.md": "conceptual"
+      }
+    },
     "template": [],
     "dest": "microsoft-graph-docs",
     "markdownEngineName": "markdig"
