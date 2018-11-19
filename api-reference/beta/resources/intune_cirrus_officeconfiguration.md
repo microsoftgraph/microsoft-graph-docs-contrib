@@ -8,8 +8,8 @@ Singleton entity that acts as a container for all device management functionalit
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
-|[Get officeConfiguration](../api/intune_cirrus_officeconfiguration_get.md)|[officeConfiguration](../resources/intune_cirrus_officeconfiguration.md)|Read properties and relationships of the [officeConfiguration](../resources/intune_cirrus_officeconfiguration.md) object.|
-|[Update officeConfiguration](../api/intune_cirrus_officeconfiguration_update.md)|[officeConfiguration](../resources/intune_cirrus_officeconfiguration.md)|Update the properties of a [officeConfiguration](../resources/intune_cirrus_officeconfiguration.md) object.|
+|Get officeConfiguration|[officeConfiguration](../resources/intune_cirrus_officeconfiguration.md)|Read properties and relationships of the [officeConfiguration](../resources/intune_cirrus_officeconfiguration.md) object.|
+|Update officeConfiguration|[officeConfiguration](../resources/intune_cirrus_officeconfiguration.md)|Update the properties of a [officeConfiguration](../resources/intune_cirrus_officeconfiguration.md) object.|
 
 ## Properties
 |Property|Type|Description|
