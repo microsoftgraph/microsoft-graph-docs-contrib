@@ -35,7 +35,6 @@ The following group properties are not returned by default:
 * accessType
 * allowExternalSenders
 * autoSubscribeNewMembers
-* hasMembersWithLicenseErrors
 * isSubscribedByMail
 * isFavorite
 * unseenConversationsCount
@@ -50,13 +49,6 @@ GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f
 
 GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
 ```
-
-To return groups containing members with license errors, use the **$filter** query parameter:
-
-```http
-GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true
-```
-
 
 Since the **group** resource supports [extensions](../../../concepts/extensibility_overview.md), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
