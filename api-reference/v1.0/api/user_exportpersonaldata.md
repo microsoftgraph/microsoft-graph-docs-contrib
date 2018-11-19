@@ -1,6 +1,6 @@
 # user: exportPersonalData
 
-Submits a data policy operation request, made by a Company Administrator to export an organizational user's data.
+Submits a data policy operation request, made by a Company Administrator or an Application to export an organizational user's data.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id>/exportPersonalData
+POST /users/<id>/exportpersonaldata
 
 ```
 ## Request headers
@@ -32,7 +32,7 @@ In the request body, provide a JSON object with the following parameters.
 |storageLocation|String|This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.|
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request
@@ -41,7 +41,7 @@ If successful, this method returns `200, OK` response code. It does not return a
   "name": "user_exportpersonaldata"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/{id}/exportPersonalData
+POST https://graph.microsoft.com/v1.0/users/{id}/exportpersonaldata
 Content-type: application/json
 Content-length: 48
 
@@ -57,7 +57,7 @@ Content-length: 48
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
