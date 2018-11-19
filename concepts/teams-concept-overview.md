@@ -29,8 +29,8 @@ for the team that automatically removes the team according to the policy.
 ### Get work done even when no one is around
 
 Use [application permissions](permissions_reference.md) to work with 
-[teams](../api-reference/v1.0/resources/team.md), [channels](../api-reference/v1.0/resources/channel.md),
-[tabs](../api-reference/v1.0/resources/teamstab.md), and [apps](../api-reference/v1.0/resources/teamsapp.md)
+[teams](../api-reference/v1.0/resources/team.md), [channels](../api-reference/v1.0/resources/channel.md), and 
+[tabs](../api-reference/v1.0/resources/teamstab.md)
 without human intervention. 
 Create a new channel when your customer files an order.
 Automatically create teams for classes at the beginning of the school year, and archive them at the end.
@@ -100,4 +100,4 @@ See the [Teams API in Microsoft Graph](../api-reference/v1.0/resources/teams_api
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Read more about the [Microsoft Teams programming model](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/concepts-overview).
 - Explore the [calling and online meeting APIs](../api-reference/beta/resources/calls-api-overview.md).
-- Get a jump-start with [sample code](https://github.com/OfficeDev/microsoft-teams-sample-graph).
+- Get a jump-start with sample code: [Contoso Airlines](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [C# mini-samples](https://github.com/microsoftgraph/csharp-teams-sample-graph)
