@@ -1,16 +1,16 @@
-﻿# Get deviceManagement
+﻿# updatePriorities action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Read properties and relationships of the [deviceManagement](../resources/intune_notification_devicemanagement.md) object.
+Update policy priorities.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -20,11 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement
+POST /officeConfiguration/clientConfigurations/microsoft.management.services.api.updatePriorities
 ```
 
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -32,34 +30,44 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request body, supply JSON representation of the parameters.
+
+The following table shows the parameters that can be used with this action.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|officeConfigurationPolicyIds|String collection|List of office configuration policy ids|
+|officeConfigurationPriorities|Int32 collection|List of office configuration priorities|
+
+
 
 ## Response
-If successful, this method returns a `200 OK` response code and [deviceManagement](../resources/intune_notification_devicemanagement.md) object in the response body.
+If successful, this action returns a `200 OK` response code.
 
 ## Example
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement
+POST https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/microsoft.management.services.api.updatePriorities
+
+Content-type: application/json
+Content-length: 143
+
+{
+  "officeConfigurationPolicyIds": [
+    "Office Configuration Policy Ids value"
+  ],
+  "officeConfigurationPriorities": [
+    13
+  ]
+}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 130
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.deviceManagement",
-    "id": "0b283420-3420-0b28-2034-280b2034280b"
-  }
-}
 ```
-
-
 
 
 

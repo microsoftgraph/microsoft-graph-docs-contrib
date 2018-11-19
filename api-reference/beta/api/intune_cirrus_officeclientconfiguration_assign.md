@@ -1,10 +1,10 @@
-﻿# Update deviceManagement
+﻿# assign action
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
-Update the properties of a [deviceManagement](../resources/intune_androidforwork_devicemanagement.md) object.
+Replace all targeted groups for a policy.
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /deviceManagement
+POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assign
 ```
 
 ## Request headers
@@ -30,28 +30,39 @@ PATCH /deviceManagement
 |Accept|application/json|
 
 ## Request body
-In the request body, supply a JSON representation for the [deviceManagement](../resources/intune_androidforwork_devicemanagement.md) object.
+In the request body, supply JSON representation of the parameters.
 
-The following table shows the properties that are required when you create the [deviceManagement](../resources/intune_androidforwork_devicemanagement.md).
+The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|officeConfigurationAssignments|[officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) collection|List of office configuration assignments|
 
 
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [deviceManagement](../resources/intune_androidforwork_devicemanagement.md) object in the response body.
+If successful, this action returns a `200 OK` response code and a [officeClientConfigurationAssignment](../resources/intune_cirrus_officeclientconfigurationassignment.md) collection in the response body.
 
 ## Example
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceManagement
-Content-type: application/json
-Content-length: 2
+POST https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assign
 
-{}
+Content-type: application/json
+Content-length: 299
+
+{
+  "officeConfigurationAssignments": [
+    {
+      "@odata.type": "#microsoft.graph.officeClientConfigurationAssignment",
+      "id": "804730f3-30f3-8047-f330-4780f3304780",
+      "target": {
+        "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
+      }
+    }
+  ]
+}
 ```
 
 ### Response
@@ -59,15 +70,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 107
+Content-Length: 274
 
 {
-  "@odata.type": "#microsoft.graph.deviceManagement",
-  "id": "0b283420-3420-0b28-2034-280b2034280b"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.officeClientConfigurationAssignment",
+      "id": "804730f3-30f3-8047-f330-4780f3304780",
+      "target": {
+        "@odata.type": "microsoft.graph.officeConfigurationAssignmentTarget"
+      }
+    }
+  ]
 }
 ```
-
-
 
 
 
