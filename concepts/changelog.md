@@ -94,11 +94,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ### Delta query
 
-| Change type | Version | Description                              |
+| **Change type** | **Version** | **Description**                  |
 |:------------|:--------|:-----------------------------------------|
 | Addition    | Beta   | Added [delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview) capability for [directoryObject](../api-reference/beta/api/directoryobject_delta.md) |
-| Change      | v1.0 and beta   | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
-| Addition        | v1.0        | Added [delta](../api-reference/v1.0/api/directoryrole_delta.md) function for [directoryRole](../api-reference/v1.0/resources/directoryrole.md) to support [change tracking using delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview). |
+| Change      | v1.0 and beta  | Alternative behavior to return changed properties only in JSON response for [users](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/user_delta) and [groups](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/api/group_delta). |
+| Addition    | v1.0   | Added [delta](../api-reference/v1.0/api/directoryrole_delta.md) function for [directoryRole](../api-reference/v1.0/resources/directoryrole.md) to support [change tracking using delta query](https://developer.microsoft.com/en-us/graph/docs/concepts/delta_query_overview). |
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          | 
+| :-------------- | :------------ | :--------------------------------------- | 
+| Addition | Beta | Added the **licenseAssignmentStates** property to the [User](../api-reference/beta/resources/user.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
+| Addition | Beta | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Addition | Beta | Added the **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** and **membersWithLicenseErrors** properties to [Group](../api-reference/beta/resources/group.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 
 ### Microsoft Intune APIs
 
@@ -1124,7 +1132,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|v1.0|Added the **deviceEnrollmentLimit** property to the [user](../api-reference/v1.0/resources/intune_shared_user) entity|
 |Change|v1.0|Added the **managedDevices**, **managedAppRegistrations** and **deviceManagementTroubleshootingEvents** navigation properties to the [user](../api-reference/v1.0/resources/intune_shared_user) entity|
 |||
-|Addition|Beta|Added new entities:<br/>[deviceManagementScriptAssignment](../api-reference/beta/resources/intune_devices_devicemanagementscriptassignment)<br/>[iosCertificateProfile](../resources/intune_deviceconfig_ioscertificateprofile)<br/>[windowsInformationProtectionNetworkLearningSummary](../api-reference/beta/resources/intune_wip_windowsinformationprotectionnetworklearningsummary)<br/>|
+|Addition|Beta|Added new entities:<br/>[deviceManagementScriptAssignment](../api-reference/beta/resources/intune_devices_devicemanagementscriptassignment)<br/>[iosCertificateProfile](../api-reference/beta/resources/intune_deviceconfig_ioscertificateprofile)<br/>[windowsInformationProtectionNetworkLearningSummary](../api-reference/beta/resources/intune_wip_windowsinformationprotectionnetworklearningsummary)<br/>|
 |Addition|Beta|Added new complex types:<br/>[revokeAppleVppLicensesActionResult](../api-reference/beta/resources/intune_devices_revokeapplevpplicensesactionresult)<br/>[vppTokenRevokeLicensesActionResult](../api-reference/beta/resources/intune_onboarding_vpptokenrevokelicensesactionresult)<br/>|
 |Addition|Beta|Added the [revokeToken](../api-reference/beta/api/intune_androidforwork_androidforworkenrollmentprofile_revoketoken.md) action on [androidForWorkEnrollmentProfile](../api-reference/beta/resources/intune_androidforwork_androidforworkenrollmentprofile) |
 |Addition|Beta|Added the [assign](../api-reference/beta/api/intune_apps_mobileapp_assign.md) action on [mobileApp](../api-reference/beta/resources/intune_apps_mobileapp) |
