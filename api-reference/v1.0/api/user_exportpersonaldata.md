@@ -41,7 +41,7 @@ If successful, this method returns `202, Accepted` response code. It does not re
   "name": "user_exportpersonaldata"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/users/{id}/exportpersonaldata
+POST https://graph.microsoft.com/v1.0/users/{id}/exportPersonalData
 Content-type: application/json
 Content-length: 48
 
