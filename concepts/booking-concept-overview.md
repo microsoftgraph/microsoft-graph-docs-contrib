@@ -5,7 +5,7 @@ Microsoft Bookings provides online and mobile apps that make appointment schedul
 ## Why integrate with Microsoft Bookings using Microsoft Graph?
 
 ### Streamline appointment booking
-A business operator may never miss a customer booking when away from the phone or the business is closed. Customers can [see the available services](../api-reference/beta/api/bookingbusiness_list_services.md) and [book appontments](../api-reference/beta/api/bookingbusiness_post_appointments.md) any time directly on the scheduling page, on the business web site or Facebook. 
+A business operator may never miss a customer booking when away from the phone or the business is closed. Customers can [see the available services](../api-reference/beta/api/bookingbusiness_list_services.md) and [book appointments](../api-reference/beta/api/bookingbusiness_post_appointments.md) any time directly on the scheduling page, on the business web site or Facebook. 
 
 Business operators can take bookings anywhere, on the web or a mobile app, in-person or on the phone. They can [reschedule](../api-reference/beta//api/bookingappointment_update.md), [cancel](../api-reference/beta/api/bookingappointment_cancel.md), or [re-assign](../api-reference/beta/api/bookingappointment_update.md) an existing booking to another available staff member. 
 
