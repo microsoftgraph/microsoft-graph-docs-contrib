@@ -14,7 +14,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /dataPolicyOperations/<id>
+GET /dataPolicyOperations/{id}
 ```
 
 ## Request headers
@@ -33,7 +33,7 @@ If successful, this method returns a `200 OK` response code and [dataPolicyOpera
   "name": "get_datapolicyoperation"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/dataPolicyOperations/<id>
+GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
