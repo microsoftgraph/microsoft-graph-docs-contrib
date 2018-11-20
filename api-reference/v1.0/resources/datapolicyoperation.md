@@ -7,6 +7,7 @@ Represents a submitted data policy operation. It contains necessary information 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get dataPolicyOperation](../api/datapolicyoperation_get.md) | [dataPolicyOperation](datapolicyoperation.md) |Read properties of the dataPolicyOperation object.|
+|[ExportPersonalData](../api/user_exportpersonaldata.md) | None |Submits a data policy operation request to export organizational user's data which can later be read using [Get dataPolicyOperation](../api/datapolicyoperation_get.md)|
 
 ## Properties
 
