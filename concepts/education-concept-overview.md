@@ -63,7 +63,7 @@ Looking for the API reference for this service?
     - [Use the roster APIs](../api-reference/v1.0/resources/education-overview.md)
     - [Use the assignment APIs](../api-reference/beta/resources/educationassignment.md)
     - [Use the SDS management APIs](../api-reference/beta/resources/educationsynchronizationprofile.md)
-- Try the education APIs in [Graph Explorer](../../graph-explorer).
+- Try the education APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Explore the following education-related samples:
     - [.NET sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AspNetMVC-Samples.md)
     - [Angular Node sample for SSO & Rostering](https://github.com/OfficeDev/O365-EDU-AngularNodeJS-Samples.md)   
