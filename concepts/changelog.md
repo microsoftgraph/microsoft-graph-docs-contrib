@@ -833,9 +833,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added [Get recent activities API](../api-reference/v1.0/api/projectrome_get_recent_activities) |
 | Addition | v1.0 | Added [Get activities API](../api-reference/v1.0/api/projectrome_get_activities) |
 | Addition | v1.0 | Added [Upsert Activity](../api-reference/v1.0/api/projectrome_put_activity) |
-| Addition | v1.0 | Added [Upsert HistoryItem](../api-reference/v1.0/projectrome_put_historyitem) |
-| Addition | v1.0 | Added [Delete Activity](../api-reference/v1.0/projectrome_delete_activity) |
-| Addition | v1.0 | Added [Upsert HistoryItem](../api-reference/v1.0/projectrome_delete_historyItem) |
+| Addition | v1.0 | Added [Upsert HistoryItem](../api-reference/v1.0/api/projectrome_put_historyitem) |
+| Addition | v1.0 | Added [Delete Activity](../api-reference/v1.0/api/projectrome_delete_activity) |
+| Addition | v1.0 | Added [Upsert HistoryItem](../api-reference/v1.0/api/projectrome_delete_historyItem) |
 | Addition | v1.0 | Added [activity](../api-reference/v1.0/resources/projectrome_activity) |
 | Addition | v.10 | Added [historyItem](../api-reference/v1.0/resources/projectrome_historyitem) |
 | Addition | v1.0 | Added [visualInfo](../api-reference/v1.0/resources/projectrome_visualinfo) |
@@ -872,9 +872,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta       | Added [Get recent activities API](../api-reference/beta/api/projectrome_get_recent_activities) |
 | Addition        | Beta       | Added [Get activities API](../api-reference/beta/api/projectrome_get_activities) |
 | Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert Activity](../api-reference/beta/api/projectrome_put_activity) |
-| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](../api-reference/beta/projectrome_put_historyitem) |
-| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Delete Activity](../api-reference/beta/projectrome_delete_activity) |
-| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](../api-reference/beta/projectrome_delete_historyItem) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](../api-reference/beta/api/projectrome_put_historyitem) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Delete Activity](../api-reference/beta/api/projectrome_delete_activity) |
+| Change | Beta | Added UserActivity.ReadWrite.CreatedByApp permission to [Upsert HistoryItem](../api-reference/beta/api/projectrome_delete_historyItem) |
 | Change | Beta | Added **status** property to [activity](../api-reference/beta/resources/projectrome_activity) |
 | Change | Beta | Added **activity** navigation property to [historyItem](../api-reference/beta/resources/projectrome_historyitem) |
 | Change | Beta | Added new APIs to [Project Rome overview](../api-reference/beta/resources/project_rome_overview) |

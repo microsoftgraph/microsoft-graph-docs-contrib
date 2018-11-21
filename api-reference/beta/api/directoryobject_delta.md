@@ -2,7 +2,7 @@
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get newly created, updated, or deleted directory objects of the following types: [user](../../beta/resources/user), [group](../../beta/resources/group) and [organizational contact](../../beta/resources/orgcontact), in a single delta query. See [Track changes](../../../concepts/delta_query_overview.md) for details.
+Get newly created, updated, or deleted directory objects of the following types: [user](../resources/resources/user), [group](../resources/group) and [organizational contact](../resources/orgcontact), in a single delta query. See [Track changes](../../../concepts/delta_query_overview.md) for details.
 
 ## Permissions
 
