@@ -48,6 +48,9 @@
       },
       "ms.topic": {
         "**/*.md": "conceptual"
+      },
+      "titleSuffix": {
+        "**/*.md": "Microsoft Graph"
       }
     },
     "template": [],
