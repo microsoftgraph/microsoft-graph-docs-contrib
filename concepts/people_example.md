@@ -904,35 +904,10 @@ Content-type: application/json
 Searches implement a fuzzy matching algorithm. They will return results based on an exact match and also on inferences about the intent of the search. For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the **people** collection of the signed-in user. All of the following searches will return this user Tyler as one of the results.
 
 ```http
-GET https://graph.microsoft.com/v1.0/me/people?$search=tyler                //matches both Tyler's name and email
-GET https://graph.microsoft.com/v1.0/me/people?$search=tylerle              //matches Tyler's email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tyler"                //matches both Tyler's name and email
+GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle"              //matches Tyler's email
 GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //matches Tyler's email. Note the quotes to enclose '@'.
-GET https://graph.microsoft.com/v1.0/me/people?$search=tiler                //fuzzy match with Tyler's name 
+GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //fuzzy match with Tyler's name 
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"          //matches Tyler's name. Note the quotes to enclose the space.
 ```
-
-You can also perform searches for people who are relevant to the signed-in user and have expressed an interest in communicating with that user over topics such as 
-pizzas in the following example:
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:pizza"                
-```
-
-Topics in this context are just words that have been used most by users in email conversations. Microsoft extracts such words and creates an index 
-for this data to facilitate fuzzy searches. 
-
-Note that the search phrase is enclosed in quotes, and topics in this data are extracted free of their contexts. As an example, searching for "windows" in the following query:
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="topic:windows" 
-```
-is a fuzzy search in the topic data index, and the results can include instances that mean the Windows operating system, an opening in a building wall, or other definitions.
-
-Finally, you can combine both people searches and topic searches in the same request by combining the two types of search expression.
-
-```http
-GET https://graph.microsoft.com/v1.0/me/people/?$search="tyl topic:pizza"                
-```
-
-This request essentially conducts two searches: a fuzzy search against **displayName** and **emailAddress** properties of the signed-in user's relevant people, and a topic search for "pizza" against the user's relevant people. The results are then ranked, ordered, and returned. Note that the search is not restrictive; you might get results that contain people that fuzzy match "tyl", or that are interested in "pizza", or both.
 
