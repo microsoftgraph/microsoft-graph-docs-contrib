@@ -19,7 +19,7 @@ This method does **not** support [OData Query Parameters](../../../concepts/quer
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedRoleAssignmentRequests('{request-id}')/cancel
+POST /privilegedRoleAssignmentRequests({requestid})/cancel
 ```
 
 ## Request headers

@@ -13,9 +13,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-List a collection of [privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) on a resource.
-    
->**Note:** Besides the permission scope, the request requires the requestor to have at least one role assignment on the resource.
+```http
+GET /privilegedRoleAssignmentRequests
+```
+**Note:** Besides the permission scope, the request requires the requestor to have at least one role assignment on the resource.
 
 ## Optional query parameters
 This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
@@ -39,7 +40,7 @@ The following is an example of the request.
   "name": "get_privilegedroleassignmentrequest"
 }-->
 ```http
-https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
+GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
