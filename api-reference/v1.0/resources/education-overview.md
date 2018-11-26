@@ -49,7 +49,7 @@ The rostering APIs support the following scenarios:
 - [List all schools](../api/educationroot_list_schools.md) 
 - [List schools in which a class is taught](../api/educationclass_list_schools.md)
 - [List schools for a user](../api/educationuser_list_schools.md)
-- [Get all classes](../api/educationroot_list_classes.md )
+- [Get all classes](../api/educationroot_list_classes.md)
 - [Get classes in a school](../api/educationschool_list_classes.md)
 - [List classes for a user](../api/educationuser_list_classes.md)
 - [Add classes to a school](../api/educationschool_post_classes.md)
