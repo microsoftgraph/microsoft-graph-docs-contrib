@@ -1,8 +1,10 @@
 # privilegedRole: selfActivate
 
+>**Note:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
 Activate the role that is assigned to the requestor.
 
-APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported. As of As of December 2018, this API is no longer supported and should not be used. Use the [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest_post.md) instead.
+>**Note:** Effective December 2018, this API will no longer be supported and should not be used. Use the [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest_post.md) instead.
 
 
 ## Permissions
@@ -23,7 +25,7 @@ The requestor can only call ```selfActivate``` for the role that is assigned to 
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-Note that ``<id>`` is the target role id.
+Note that ``<id>`` is the target role ID.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
