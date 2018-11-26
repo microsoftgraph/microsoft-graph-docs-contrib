@@ -26,6 +26,7 @@ This method does **not** support [OData query parameters](../../../concepts/quer
 
 ## Request body
 In the request body, supply a JSON representation of [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) object. 
+
 | Property	   | Type	 |Required|  Description|
 |:---------------|:--------|:----------|:----------|
 |roleId|String|Yes|The id of the role.|
