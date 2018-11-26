@@ -40,7 +40,7 @@ This API follows the standard of HTTP codes. Besides, the custom error codes are
 | 400 BadRequest | RequestId cannot be Null. |
 | 400 BadRequest | Request with request ID not found. |
 | 400 BadRequest | Cancellation can be done only on status Scheduled and PendingApproval. |
-| 403 UnAuthorized | Requestor not allowed to make Cancel call or request not found. |
+| 403 UnAuthorized | Requester not allowed to make Cancel call or request not found. |
 
 ## Example
 ##### Request

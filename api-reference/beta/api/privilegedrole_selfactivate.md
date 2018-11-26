@@ -1,8 +1,9 @@
 # privilegedRole: selfActivate
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported. As of (11/2018),  this API is no longer supported and should not be used. Use the [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest_post.md) instead.
-
 Activate the role that is assigned to the requestor.
+
+APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported. As of As of December 2018, this API is no longer supported and should not be used. Use the [Create PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest_post.md) instead.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).

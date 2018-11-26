@@ -7,7 +7,7 @@ Update the role settings for the given role setting. A [privilegedRoleSettings](
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_. 
+The requester must have one of the following roles: Privileged Role Administrator, Global Administrator, Security Administrator, or Security Reader. 
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -20,8 +20,6 @@ The requestor needs to have one of the following roles: _Privileged Role Adminis
 ```http
 PUT /privilegedRoles/{id}/settings
 ```
-## Optional query parameters
-This method does **not** support [OData query parameters](../../../concepts/query_parameters.md).
 
 ## Request headers
 | Name      |Description|
@@ -29,6 +27,9 @@ This method does **not** support [OData query parameters](../../../concepts/quer
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
+In the request body, supply a JSON representation of a [privilegedRoleSettings](../resources/privilegedrolesettings.md) object.
+
+The following table shows the properties that can be supplied when you update a role setting.
 
 |Property|Type|Required|Description|
 |:---------------|:--------|:--------|:----------|
@@ -42,7 +43,7 @@ This method does **not** support [OData query parameters](../../../concepts/quer
 |notificationToUserOnElevation|boolean|Yes|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated.|
 |ticketingInfoOnElevation|boolean|Yes|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role.|
 |approvalOnElevation|boolean|Yes|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role.|
-|approverIds|array|No|List of Approval ids, if approval is required for activation|
+|approverIds|array|No|List of Approval ids, if approval is required for activation.|
 
 ## Response
 

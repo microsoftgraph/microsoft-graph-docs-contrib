@@ -1,6 +1,6 @@
 # Create privilegedRoleAssignmentRequest
 
-Create a privilegedroleassignmentrequest object.
+Create a [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,8 +16,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /privilegedRoleAssignmentRequests
 ```
-## Optional query parameters
-This method does **not** support [OData query parameters](../../../concepts/query_parameters.md).
 
 ## Request headers
 | Name      |Description|
@@ -38,20 +36,20 @@ In the request body, supply a JSON representation of [privilegedroleassignmentre
 ## Response
 If successful, this method returns a `201 Created` response code and [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) object in the response body.
 
-## Error codes
-This API follows the standard of HTTP codes, in addition to the error codes listed in the following table.
+### Error codes
+This API returns that standard HTTP error codes. In addition, it can return the error codes listed in the following table.
 
 |Error code     | Error message              | 
 |:--------------------| :---------------------|
-| 400 BadRequest | roleAssignmentRequest property was NULL |
-| 400 BadRequest | Unable to deserialize RoleAssignmentRequest Object. |
-| 400 BadRequest | roleId is required. |
-| 400 BadRequest | Schedule Start Date Must be Specified and should be greater than Now. |
+| 400 BadRequest | RoleAssignmentRequest property was NULL |
+| 400 BadRequest | Unable to deserialize roleAssignmentRequest Object. |
+| 400 BadRequest | RoleId is required. |
+| 400 BadRequest | Schedule start date must be specified and should be greater than Now. |
 | 400 BadRequest | A schedule already exists for this user, role and schedule type. |
 | 400 BadRequest | A pending approval already exists for this user, role and approval type. |
 | 400 BadRequest | Requestor reason is missing. |
 | 400 BadRequest | Requestor reason should be less than 500 characters. |
-| 400 BadRequest | Elevation Duration must be between 0.5 and {from setting}. |
+| 400 BadRequest | Elevation duration must be between 0.5 and {from setting}. |
 | 400 BadRequest | There is a overlap between scheduled activation and the request. |
 | 400 BadRequest | The role is already activated. |
 | 400 BadRequest | GenericElevateUserToRoleAssignments: Tickting information is required and not supplied in the activation process. |

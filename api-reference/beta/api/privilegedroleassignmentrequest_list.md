@@ -1,6 +1,8 @@
-# List privilegedRoleAssignmentRequest
+# List privilegedRoleAssignmentRequests
 
 Retrieve a collection of [privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md). 
+
+**Note:** This requester must have at least one role assignment on the resource.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -16,7 +18,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /privilegedRoleAssignmentRequests
 ```
-**Note:** Besides the permission scope, the request requires the requestor to have at least one role assignment on the resource.
 
 ## Optional query parameters
 This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.

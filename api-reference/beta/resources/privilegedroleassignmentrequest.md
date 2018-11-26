@@ -23,14 +23,14 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |assignmentState|String| The state of the assignment. The value can be `Eligible` for eligible assignment `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.|
 |duration|String| The duration of a role assignment.|
 |reason|String| The reason for the role assignment.|
-|requestedDateTime|DateTimeOffset| Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|roleId|String| The id of the role|
+|requestedDateTime|DateTimeOffset| Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|roleId|String| The id of the role.|
 |schedule|[governanceSchedule](governanceschedule.md)| The schedule object of the role assignment request.|
-|status|String| Read-only.The status of the role assignment request. The value can be ``NotStarted``,``Completed``,``RequestedApproval``,``Scheduled``,``Approved``,``ApprovalDenied``,``ApprovalAborted``,``Cancelling``,``Cancelled``,``Revoked``,``RequestExpired``.|
+|status|String| Read-only.The status of the role assignment request. The value can be `NotStarted`,`Completed`,`RequestedApproval`,`Scheduled`,`Approved`,`ApprovalDenied`,`ApprovalAborted`,`Cancelling`,`Cancelled`,`Revoked`,`RequestExpired`.|
 |ticketNumber|String| The ticketNumber for the role assignment. |
 |ticketSystem|String| The ticketSystem for the role assignment.|
-|type|String| Representing the the type of the operation on the role assignment. The value can be `AdminAdd`: Adminstrators add users to roles;`UserAdd`: Users add role assignments;|
-|userId|String| The id of the user|
+|type|String| Representing the the type of the operation on the role assignment. The value can be `AdminAdd`: Adminstrators add users to roles;`UserAdd`: Users add role assignments.|
+|userId|String| The id of the user.|
 
 ## Relationships
 | Relationship | Type        | Description |

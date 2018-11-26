@@ -1,6 +1,6 @@
-# privilegedRoleAssignmentRequest: my
+# my privilegedRoleAssignmentRequest
 
-Get the requestor's privileged role assignment requests.
+Get the requester's privileged role assignment requests.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
