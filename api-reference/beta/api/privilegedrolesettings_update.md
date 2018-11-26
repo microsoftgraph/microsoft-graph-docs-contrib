@@ -11,7 +11,7 @@ The requestor needs to have one of the following roles: _Privileged Role Adminis
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -29,7 +29,7 @@ This method does **not** support [OData query parameters](../../../concepts/quer
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+
 |Property|Type|Required|Description|
 |:---------------|:--------|:--------|:----------|
 |elevationDuration|duration|Yes|The duration when the role is activated.|
