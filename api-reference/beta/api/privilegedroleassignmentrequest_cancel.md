@@ -9,7 +9,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
@@ -37,10 +37,10 @@ If successful, this method returns `200 Ok` response code. It returns [privilege
 This API follows the standard of HTTP codes. Besides, the custom error codes are shown below.
 |Error code     | Error message              |
 |:--------------------| :---------------------|
-| 400 BadRequest | RequestId cannot be Null.
-| 400 BadRequest | Request with request ID not found.
-| 400 BadRequest | Cancellation can be done only on status Scheduled and PendingApproval.
-| 403 UnAuthorized | Requestor not allowed to make Cancel call or request not found.
+| 400 BadRequest | RequestId cannot be Null. |
+| 400 BadRequest | Request with request ID not found. |
+| 400 BadRequest | Cancellation can be done only on status Scheduled and PendingApproval. |
+| 403 UnAuthorized | Requestor not allowed to make Cancel call or request not found. |
 
 ## Example
 ##### Request

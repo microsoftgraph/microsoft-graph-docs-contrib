@@ -7,7 +7,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
@@ -43,21 +43,21 @@ This API follows the standard of HTTP codes, in addition to the error codes list
 
 |Error code     | Error message              | 
 |:--------------------| :---------------------|
-| 400 BadRequest | roleAssignmentRequest property was NULL
-| 400 BadRequest | Unable to deserialize RoleAssignmentRequest Object.
-| 400 BadRequest | roleId is required.
-| 400 BadRequest | Schedule Start Date Must be Specified and should be greater than Now.
-| 400 BadRequest | A schedule already exists for this user, role and schedule type.
-| 400 BadRequest | A pending approval already exists for this user, role and approval type.
-| 400 BadRequest | Requestor reason is missing.
-| 400 BadRequest | Requestor reason should be less than 500 characters.
-| 400 BadRequest | Elevation Duration must be between 0.5 and {from setting}.
-| 400 BadRequest | There is a overlap between scheduled activation and the request.
-| 400 BadRequest | The role is already activated.
-| 400 BadRequest | GenericElevateUserToRoleAssignments: Tickting information is required and not supplied in the activation process.
-| 400 BadRequest | There is a overlap between scheduled activation and the request.
-| 403 UnAuthorized | Elevation requires Multi-Factor Authentication.
-| 403 UnAuthorized | On behalf of elevation is not allowed.
+| 400 BadRequest | roleAssignmentRequest property was NULL |
+| 400 BadRequest | Unable to deserialize RoleAssignmentRequest Object. |
+| 400 BadRequest | roleId is required. |
+| 400 BadRequest | Schedule Start Date Must be Specified and should be greater than Now. |
+| 400 BadRequest | A schedule already exists for this user, role and schedule type. |
+| 400 BadRequest | A pending approval already exists for this user, role and approval type. |
+| 400 BadRequest | Requestor reason is missing. |
+| 400 BadRequest | Requestor reason should be less than 500 characters. |
+| 400 BadRequest | Elevation Duration must be between 0.5 and {from setting}. |
+| 400 BadRequest | There is a overlap between scheduled activation and the request. |
+| 400 BadRequest | The role is already activated. |
+| 400 BadRequest | GenericElevateUserToRoleAssignments: Tickting information is required and not supplied in the activation process. |
+| 400 BadRequest | There is a overlap between scheduled activation and the request. |
+| 403 UnAuthorized | Elevation requires Multi-Factor Authentication. |
+| 403 UnAuthorized | On behalf of elevation is not allowed. |
 
 ## Example
 ##### Request

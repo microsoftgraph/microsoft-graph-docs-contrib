@@ -16,6 +16,7 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |[My](../api/privilegedroleassignmentrequest_my.md)|  |Get role assignment request for current requstor.|
 
 ## Properties
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |id|String| Read-only. The id of the role assignment request.|
