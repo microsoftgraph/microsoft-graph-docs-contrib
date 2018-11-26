@@ -223,7 +223,7 @@
         "beta/**": "graph-rest-beta"
       },
       "feedback_system": {},
-      "ms.service": {
+      "ms.technology": {
         "v1.0/api/*.md": "microsoft-graph",  
         "beta/api/*.md": "microsoft-graph",
         "v1.0/resources/*.md": "microsoft-graph",  
