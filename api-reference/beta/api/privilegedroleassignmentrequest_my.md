@@ -1,4 +1,4 @@
-# my privilegedRoleAssignmentRequest
+# privilegedRoleAssignmentRequest: my
 
 Get the requester's privileged role assignment requests.
 
