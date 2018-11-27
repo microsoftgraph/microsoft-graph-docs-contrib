@@ -1,4 +1,4 @@
-# Microsoft Graph Training
+# Microsoft Graph training
 
 Microsoft Graph training exercises are step-by-step tutorials that guide you through creating a basic application that uses Azure Active Directory authentication and accesses data via the Microsoft Graph.
 
