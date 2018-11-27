@@ -10,6 +10,23 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Introduced new resource type [teamsTemplate](../api-reference/beta/resources/teamstemplate.md).|
+|Addition |beta| Introduced new resource type [teamSpecialization](../api-reference/beta/resources/teamspecialization.md).|
+|Addition |beta| Added the isFavoriteByDefault property to [channel](../api-reference/beta/resources/channel.md).|
+|Addition |beta| Added the displayName property to [team](../api-reference/beta/resources/team.md).|
+|Addition |beta| Added the description property to [team](../api-reference/beta/resources/team.md).|
+|Addition |beta| Added the classification property to [team](../api-reference/beta/resources/team.md).|
+|Addition |beta| Added the [specialization](../api-reference/beta/resources/teamspecialization.md) property to [team](../api-reference/beta/resources/team.md).|
+|Addition |beta| Added the [visibility](../api-reference/beta/resources/teamvisibility.md) property to [team](../api-reference/beta/resources/team.md).|
+|Addition |beta| Added the [template](../api-reference/beta/resources/teamstemplate.md) property to [team](../api-reference/beta/resources/team.md).|
+|Addition |beta| Added the owners collection to [team](../api-reference/beta/resources/user.md).|
+
+## November 2018
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
 |Addition |v1.0| Introduced new resource type [team](../api-reference/v1.0/resources/team.md).|
 |Addition |v1.0| Introduced new resource type [channel](../api-reference/v1.0/resources/channel.md).|
 |Addition |v1.0| Introduced new resource type [teamsApp](../api-reference/v1.0/resources/teamsapp.md).|

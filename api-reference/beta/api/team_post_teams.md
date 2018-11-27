@@ -74,59 +74,59 @@ Here is request with a full payload. The client can override values in the base 
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "Template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
-  "Visibility": "Private",
-  "DisplayName": "My Care Team",
-  "Description": "My Care Team’s description",
-  "Channels": [
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "visibility": "Private",
+  "displayName": "My Care Team",
+  "description": "My Care Team’s description",
+  "channels": [
     {
-      "DisplayName": "Announcements",
-      "IsFavoriteByDefault": true,
-      "Tabs": [
+      "displayName": "Announcements",
+      "isFavoriteByDefault": true,
+      "tabs": [
         {
-          "TeamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('0d820ecd-def2-4297-adad-78056cde7c78')",
-          "Name": "Intranet"
+          "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('0d820ecd-def2-4297-adad-78056cde7c78')",
+          "name": "Intranet"
         }
       ]
     },
     {
-      "DisplayName": "Diabetes",
-      "IsFavoriteByDefault": true
+      "displayName": "Diabetes",
+      "isFavoriteByDefault": true
     },
     {
-      "DisplayName": "Cardiovascular",
-      "IsFavoriteByDefault": true
+      "displayName": "Cardiovascular",
+      "isFavoriteByDefault": true
     },
     {
-      "DisplayName": "Registered Nurses",
-      "IsFavoriteByDefault": true
+      "displayName": "Registered Nurses",
+      "isFavoriteByDefault": true
     }
   ],
-  "MemberSettings": {
-    "AllowCreateUpdateChannels": true,
-    "AllowDeleteChannels": true,
-    "AllowAddRemoveApps": true,
-    "AllowCreateUpdateRemoveTabs": true,
-    "AllowCreateUpdateRemoveConnectors": true
+  "memberSettings": {
+    "allowCreateUpdateChannels": true,
+    "allowDeleteChannels": true,
+    "allowAddRemoveApps": true,
+    "allowCreateUpdateRemoveTabs": true,
+    "allowCreateUpdateRemoveConnectors": true
   },
-  "GuestSettings": {
-    "AllowCreateUpdateChannels": false,
-    "AllowDeleteChannels": false
+  "guestSettings": {
+    "allowCreateUpdateChannels": false,
+    "allowDeleteChannels": false
   },
-  "FunSettings": {
-    "AllowGiphy": true,
-    "GiphyContentRating": "Moderate",
-    "AllowStickersAndMemes": true,
-    "AllowCustomMemes": true
+  "funSettings": {
+    "allowGiphy": true,
+    "giphyContentRating": "Moderate",
+    "allowStickersAndMemes": true,
+    "allowCustomMemes": true
   },
-  "MessagingSettings": {
-    "AllowUserEditMessages": true,
-    "AllowUserDeleteMessages": true,
-    "AllowOwnerDeleteMessages": true,
-    "AllowTeamMentions": true,
-    "AllowChannelMentions": true
+  "messagingSettings": {
+    "allowUserEditMessages": true,
+    "allowUserDeleteMessages": true,
+    "allowOwnerDeleteMessages": true,
+    "allowTeamMentions": true,
+    "allowChannelMentions": true
   },
-  "InstalledApps": [
+  "installedApps": [
     {
       "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
     }
