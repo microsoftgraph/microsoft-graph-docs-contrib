@@ -136,7 +136,7 @@
           "overview.md"
         ],
         "src": "v1.0/",
-		"dest": "api/",
+		    "dest": "api/",
         "group": "v1.0",
         "exclude": [
           "**/obj/**",
@@ -152,7 +152,7 @@
           "overview.md"
         ],
         "src": "beta/",
-		"dest": "api/",
+		    "dest": "api/",
         "group": "beta",
         "exclude": [
           "**/obj/**",
