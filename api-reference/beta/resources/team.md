@@ -13,7 +13,8 @@ For more information about working with groups and members in teams, see [Use th
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create team](../api/team_put_teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
+|[Create team](../api/team_post_teams.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) | Create a team from scratch. |
+|[Create team from group](../api/team_put_teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
 |[Get team](../api/team_get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team_update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](../../v1.0/api/group_delete.md) | None |Delete the team and its associated group. |
@@ -31,12 +32,17 @@ For more information about working with groups and members in teams, see [Use th
 
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
+|displayName|String| The name of the team. |
+|description|String| An optional description for the team. |
+|classification|String| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
+|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of a the group and team. Defaults to Public. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
 |isArchived|Boolean|Whether this team is in read-only mode. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
-|webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
+|webUrl|String (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 
 ## Relationships
 
@@ -45,6 +51,8 @@ For more information about working with groups and members in teams, see [Use th
 |apps|[teamsApp](teamsapp.md) collection| (Obsolete) The apps installed in this team.|
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
+|owners|[user](user.md)| The list of this team's owners. |
+|template|[teamsTemplate](teamstemplate.md)| The template this team was created from. |
 
 ## JSON representation
 

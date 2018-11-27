@@ -7396,6 +7396,8 @@
         href: resources/team.md
         items:
         - name: Create team
+          href: api/team-post-teams.md
+        - name: Create team from group
           href: api/team-put-teams.md
         - name: Get team
           href: api/team-get.md

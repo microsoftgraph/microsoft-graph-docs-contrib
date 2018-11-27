@@ -25,6 +25,7 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 |description|String|Optional textual description for the channel.|
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
 |id|String|The channels's unique identifier. Read-only.|
+|isFavoriteByDefault|Boolean|Whether the channel should automatically be marked 'favorite' for all members of the team. Default: `false`.|
 
 ## Relationships
 | Relationship | Type	|Description|
