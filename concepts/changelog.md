@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta| Added the description property to [team](../api-reference/beta/resources/team.md).|
 |Addition |beta| Added the classification property to [team](../api-reference/beta/resources/team.md).|
 |Addition |beta| Added the [specialization](../api-reference/beta/resources/teamspecialization.md) property to [team](../api-reference/beta/resources/team.md).|
-|Addition |beta| Added the [visibility](../api-reference/beta/resources/teamvisibility.md) property to [team](../api-reference/beta/resources/team.md).|
+|Addition |beta| Added the [visibility](../api-reference/beta/resources/teamvisibilitytype.md) property to [team](../api-reference/beta/resources/team.md).|
 |Addition |beta| Added the [template](../api-reference/beta/resources/teamstemplate.md) property to [team](../api-reference/beta/resources/team.md).|
 |Addition |beta| Added the owners collection to [team](../api-reference/beta/resources/user.md).|
 
