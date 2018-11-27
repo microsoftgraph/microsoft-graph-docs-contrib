@@ -1,3 +1,8 @@
+---
+title: "Update privilegedRoleSettings"
+description: "Update the role settings for the given role setting. A privilegedRoleSettings object will be returned."
+---
+
 # Update privilegedRoleSettings
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,7 +10,7 @@
 Update the role settings for the given role setting. A [privilegedRoleSettings](../resources/privilegedrolesettings.md) object will be returned.
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 >**Note:** The requester must have one of the following roles: Privileged Role Administrator, Global Administrator, Security Administrator, or Security Reader. 
 

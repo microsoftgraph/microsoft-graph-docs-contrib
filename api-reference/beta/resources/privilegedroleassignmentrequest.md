@@ -1,3 +1,8 @@
+---
+title: "privilegedRoleAssignmentRequest resource type"
+description: "Represents the request for role assignment operations in Privilegd Identity Management."
+---
+
 # privilegedRoleAssignmentRequest resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -10,10 +15,10 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[List](../api/privilegedroleassignmentrequest_list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)  collection|List role assignment requests.|
-|[Create](../api/privilegedroleassignmentrequest_post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Create a request to manage the lifecycle of existing or new role assignment.|
-|[Cancel](../api/privilegedroleassignmentrequest_cancel.md)|  |Cancel a pending role assignment request.|
-|[My](../api/privilegedroleassignmentrequest_my.md)|  |Get role assignment request for current requstor.|
+|[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)  collection|List role assignment requests.|
+|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Create a request to manage the lifecycle of existing or new role assignment.|
+|[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |Cancel a pending role assignment request.|
+|[My](../api/privilegedroleassignmentrequest-my.md)|  |Get role assignment request for current requstor.|
 
 ## Properties
 

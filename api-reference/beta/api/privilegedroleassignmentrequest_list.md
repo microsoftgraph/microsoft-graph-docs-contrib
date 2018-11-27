@@ -1,13 +1,18 @@
+---
+title: "List privilegedRoleAssignmentRequests"
+description: "Retrieve a collection of privilegedRoleAssignmentRequest. "
+---
+
 # List privilegedRoleAssignmentRequests
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve a collection of [privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md). 
+Retrieve a collection of [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md). 
 
 **Note:** This requester must have at least one role assignment on the resource.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -22,7 +27,7 @@ GET /privilegedRoleAssignmentRequests
 ```
 
 ## Optional query parameters
-This method supports the [OData query parameters](../../../concepts/query_parameters.md) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|
@@ -33,7 +38,7 @@ This method supports the [OData query parameters](../../../concepts/query_parame
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) objects in the response body.
 
 ## Example
 ##### Request
