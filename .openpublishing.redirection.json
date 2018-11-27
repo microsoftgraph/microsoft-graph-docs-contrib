@@ -2,7 +2,7 @@
     "redirections": [
         {
             "source_path": "concepts\\v1-overview.md",
-            "redirect_url": "graph/api/overview?view=graph-rest-1.0",
+            "redirect_url": "api/overview?view=graph-rest-1.0",
             "redirect_document_id": true
         },
         {
