@@ -13,8 +13,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
-## Optional query parameters
-This method does **not** support [OData Query Parameters](../../../concepts/query_parameters.md).
 
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -31,10 +29,11 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns `200 Ok` response code. It returns [privilegedRoleAssignmentRequest] (../resources/privilegedRoleAssignmentRequest.md) in the response body.
+If successful, this method returns a `200 Ok` response code. It returns [privilegedRoleAssignmentRequest] (../resources/privilegedRoleAssignmentRequest.md) in the response body.
 
-## Error codes
-This API follows the standard of HTTP codes. Besides, the custom error codes are shown below.
+### Error codes
+This API returns the standard HTTP error codes. In addition, it returns the custom error codes listed in the following table.
+
 |Error code     | Error message              |
 |:--------------------| :---------------------|
 | 400 BadRequest | RequestId cannot be Null. |
