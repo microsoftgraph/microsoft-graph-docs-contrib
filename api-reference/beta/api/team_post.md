@@ -37,7 +37,7 @@ In the request body, supply a JSON representation of a [team](../resources/team.
 
 If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
-#### Example 1
+#### Example
 
 Here is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
@@ -64,7 +64,7 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-#### Example 2
+#### Example - create a team with an app installed, multiple channels with pinned tabs
 
 Here is request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
 
@@ -86,6 +86,14 @@ Content-Type: application/json
         {
           "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('0d820ecd-def2-4297-adad-78056cde7c78')",
           "name": "Intranet"
+        },
+        {
+          "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
+          "name": "A Pinned YouTube video",
+          "configuration": {
+              "contentUrl": "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=j44iyHIu3nU",
+              "websiteUrl": "https://www.youtube.com/watch?v=lR2tJxRqYKc"
+          }
         }
       ]
     },
