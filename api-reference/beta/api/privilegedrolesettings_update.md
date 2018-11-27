@@ -7,7 +7,7 @@ Update the role settings for the given role setting. A [privilegedRoleSettings](
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
-The requester must have one of the following roles: Privileged Role Administrator, Global Administrator, Security Administrator, or Security Reader. 
+>**Note:** The requester must have one of the following roles: Privileged Role Administrator, Global Administrator, Security Administrator, or Security Reader. 
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -29,21 +29,21 @@ PUT /privilegedRoles/{id}/settings
 ## Request body
 In the request body, supply a JSON representation of a [privilegedRoleSettings](../resources/privilegedrolesettings.md) object.
 
-The following table shows the properties that can be supplied when you update a role setting.
+The following table lists the properties that you can supply when you update a role setting.
 
-|Property|Type|Required|Description|
-|:---------------|:--------|:--------|:----------|
-|elevationDuration|duration|Yes|The duration when the role is activated.|
-|id|string|Yes| The unique identifier for the role settings. Read-only.|
-|isMfaOnElevationConfigurable|boolean|Yes|**true** if mfaOnElevation is configurable. **false** if mfaOnElevation is not configurable.|
-|lastGlobalAdmin|boolean|No|Internal used only.|
-|maxElavationDuration|duration|Yes|Maximal duration for the activated role.|
-|mfaOnElevation|boolean|Yes|**true** if MFA is required to activate the role. **false** if MFA is not required to activate the role.|
-|minElevationDuration|duration|Yes|Minimal duration for the activated role.|
-|notificationToUserOnElevation|boolean|Yes|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated.|
-|ticketingInfoOnElevation|boolean|Yes|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role.|
-|approvalOnElevation|boolean|Yes|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role.|
-|approverIds|array|No|List of Approval ids, if approval is required for activation.|
+|Property|Type|Description|
+|:---------------|:--------|:----------|
+|elevationDuration|duration|The duration when the role is activated. Required.|
+|id|string|The unique identifier for the role settings. Read-only. Required.|
+|isMfaOnElevationConfigurable|boolean|**true** if mfaOnElevation is configurable. **false** if mfaOnElevation is not configurable. Required.|
+|lastGlobalAdmin|Boolean|For internal use only.|
+|maxElavationDuration|duration|Maximum duration for the activated role. Required.|
+|mfaOnElevation|Boolean|**true** if MFA is required to activate the role. **false** if MFA is not required to activate the role. Required.|
+|minElevationDuration|duration|Minimum duration for the activated role. Required.|
+|notificationToUserOnElevation|Boolean|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated. Required.|
+|ticketingInfoOnElevation|Boolean|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role. Required.|
+|approvalOnElevation|Boolean|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role. Required.|
+|approverIds|array|List of Approval IDs, if approval is required for activation.|
 
 ## Response
 
