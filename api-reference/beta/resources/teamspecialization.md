@@ -9,3 +9,4 @@ Indicates the [team](../resources/team.md) is intended for a particular use case
 | Member | Value| Description |
 |:---------------|:--------|:----------|
 |none|0|Default type for a team which gives the standard team experience.|
+|unknownFutureValue|7|Sentinel value reserved as a placeholder for future expansion of the enum.|
