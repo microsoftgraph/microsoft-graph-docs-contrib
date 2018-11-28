@@ -37,10 +37,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	remediation |	String	|	Description of what the control will help remediate. |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation. |
 |	actionUrl |	String	|	URL to where the control can be actioned. |
-|	controlStateUpdates |	String	|	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
-|	tenantNote |	String	|	Tenant can set per control comments (supports [update](../api/securescorecontrolprofiles-update.md)). |
-|	assignedTo |	String	|	Tenant can assign the control to a individual (supports [update](../api/securescorecontrolprofiles-update.md)). |
-|	updatedBy |	String	|	User principal name of who made changes to a control's state. |
+|	controlStateUpdates |	[secureScoreControlStateUpdate](secureScoreControlStateUpdate.md)	collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
 
 ## Relationships
 
