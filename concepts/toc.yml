@@ -43,8 +43,6 @@
           href: /graph/training/react-tutorial/
         - name: UWP
           href: /graph/training/uwp-tutorial/
-    - name: Training
-      href: training.md
     - name: Learn
       expanded: true
       items:
