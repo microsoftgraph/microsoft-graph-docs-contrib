@@ -79,7 +79,7 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 - If the property has never been set to a value (null or non-null), it will not be included in the response at all.
 
 
-> **Note:** With the above behavior, it is not possible to tell if a property is changing or not. Also, the delta responses tend to be large since they contain all property values - as shown in the [second example](#request-2) below.
+> **Note:** With the this behavior, it isn't possible to tell whether a property is changing. Also, the delta responses tend to be large because they contain all property values - as shown in the [second example](#request-2).
 
 #### Alternative: return only the changed properties
 
