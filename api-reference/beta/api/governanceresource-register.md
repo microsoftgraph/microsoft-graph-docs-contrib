@@ -7,18 +7,18 @@ description: "Register an unmanaged governanceResource object in PIM."
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Register an unmanaged [governanceResource](../resources/governanceresource.md)  object in PIM.
+Register an unmanaged [governanceResource](../resources/governanceresource.md) object in Privileged Identity Management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+>**Note:** This API also requires that the requester have at least one active role assignment on the resource.
 
 |Permission type      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | PrivilegedAccess.ReadWrite.AzureResources |
-
-Besides the permission scope, this API requires the requestor to have at least one active role assignment on the resource.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -27,7 +27,7 @@ POST /privilegedAccess/azureResources/resources/register
 ```
 
 ### Optional query parameters
-This method **only** supports  `$select` and `$expand` [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method **only** supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ### Request headers
 | Name      |Description|
