@@ -15,16 +15,16 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition |beta| Introduced new resource type [teamsTemplate](../api-reference/beta/resources/teamstemplate.md).|
-|Addition |beta| Introduced new resource type [teamSpecialization](../api-reference/beta/resources/teamspecialization.md).|
-|Addition |beta| Added the isFavoriteByDefault property to [channel](../api-reference/beta/resources/channel.md).|
-|Addition |beta| Added the displayName property to [team](../api-reference/beta/resources/team.md).|
-|Addition |beta| Added the description property to [team](../api-reference/beta/resources/team.md).|
-|Addition |beta| Added the classification property to [team](../api-reference/beta/resources/team.md).|
-|Addition |beta| Added the [specialization](../api-reference/beta/resources/teamspecialization.md) property to [team](../api-reference/beta/resources/team.md).|
-|Addition |beta| Added the [visibility](../api-reference/beta/resources/teamvisibilitytype.md) property to [team](../api-reference/beta/resources/team.md).|
-|Addition |beta| Added the [template](../api-reference/beta/resources/teamstemplate.md) property to [team](../api-reference/beta/resources/team.md).|
-|Addition |beta| Added the owners collection to [team](../api-reference/beta/resources/team.md).|
+|Addition |beta| Introduced new resource type [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+|Addition |beta| Introduced new resource type [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
+|Addition |beta| Added the isFavoriteByDefault property to [channel](/graph/api/resources/channel?view=graph-rest-beta).|
+|Addition |beta| Added the displayName property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the description property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the classification property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the [specialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the [visibility](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the [template](/graph/api/resources/teamstemplate?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the owners collection to [team](/graph/api/resources/team?view=graph-rest-beta).|
 
 ## November 2018
 
