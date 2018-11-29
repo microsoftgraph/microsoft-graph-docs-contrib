@@ -10,7 +10,7 @@ This resource contains compliance data associated with secure score control.
 |Property |Type |Description |
 |:--|:--|:--|
 |certificationName | string | compliance certification name(Ex:  ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
-|certificationControls | collection([certificationControl](#certificationControl)) | Collection of the certification controls associated with certification |
+|certificationControls | [certificationControl](#certificationControl.md) collection | Collection of the certification controls associated with certification |
 
 ## JSON representation
 
