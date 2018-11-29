@@ -24,7 +24,7 @@
           href: https://developer.microsoft.com/graph/terms-of-use
       - name: Microsoft Graph data connect (preview)
         href: data-connect-overview.md
-      - name: Training
+      - name: Tutorials
         href: training.md
         items:
         - name: ASP.NET
