@@ -143,12 +143,6 @@ Content-Type: application/json
     "Error: get_recent_activities/container/contentInfo:
       Property 'contentInfo' is of type Custom but has no custom members.",
 
-    "Warning: get_recent_activities/container/visualElements:
-      Schema validation failed on property 'visualElements' ['microsoft.graph.visualInfo']",
-
-    "Warning: get_recent_activities/container/visualElements/content:
-      Schema validation failed on property 'content' ['microsoft.graph.Json']",
-
     "Warning: get_recent_activities/container/visualElements/content/$schema:
       Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
 

@@ -477,13 +477,5 @@ Content-Type: application/json
   "description": "Get openTypeExtension",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-      "Warning: /api-reference/v1.0/api/opentypeextension_get.md:
-        Unable to map some markdown elements into schema.
-            Unmapped methods:
-        get_opentypeextension_1, get_opentypeextension_2, get_opentypeextension_3, get_opentypeextension_5
-            Unmapped tables:
-        Get open extension - Unknown, Permissions - AuthScopes, Path parameters - PathParameters, Optional query parameters - PathParameters, Request headers - HttpHeaders"
-  ],
   "tocPath": ""
 }-->

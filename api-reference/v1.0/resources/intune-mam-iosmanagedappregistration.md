@@ -78,7 +78,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune_mam_iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/flaggedReasons:
+     "Warning: /api-reference/v1.0/resources/intune-mam-iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/flaggedReasons:
       Inconsistent types between parameter (String) and table (Object)"
   ],
 }
