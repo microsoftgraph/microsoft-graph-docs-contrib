@@ -5,7 +5,7 @@ description: "This resource contains compliance data associated with secure scor
 
 #  complianceInformation resource type
 
-This resource contains compliance data associated with secure score control.
+Contains compliance data associated with secure score control.
 
 |Property |Type |Description |
 |:--|:--|:--|
