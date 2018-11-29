@@ -1,0 +1,42 @@
+---
+title: " certificationControl resource type"
+description: "This resource contains compliance certification data associated with secure score control."
+---
+
+#  certificationControl resource type
+
+This resource contains compliance certification data associated with secure score control.
+
+|Property |Type |Description |
+|:--|:--|:--|
+|name | string | certification control name |
+|url | string | urlfor Microsoft Service Trust Portal |
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.certificationControl"
+}-->
+
+```json
+{
+  "name": "String",
+  "url": "Collection(microsoft.graph.certificationControl)"
+}
+
+```
+
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "certificationControl resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

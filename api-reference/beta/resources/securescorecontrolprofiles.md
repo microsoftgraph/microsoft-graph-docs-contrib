@@ -24,6 +24,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	azureTenantId	|	String	|	GUID string for tenant ID.	|
 |	controlName	|	String	|	Name of the control. |
 |	title	|	String	|	Title of the control.	|
+| complianceInformation | collection([complianceInformation](#complianceInformation)) | The collection of compliance information associated with secure score control |
 |	controlCategory	|	String	|	Control action category (Account, Data, Device, Apps, Infrastructure).	|
 |	actionType	|	String	|	Control action type (Config, Review, Behavior).	|
 |	service	|	String	|	Service that owns the control (Exchange, Sharepoint, Azure AD).	|

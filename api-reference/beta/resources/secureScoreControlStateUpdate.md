@@ -4,7 +4,8 @@ description: "This resource contains history of control states updated by user (
 ---
  #  secureScoreControlStateUpdate resource type
  This resource contains history of control states updated by user (control states include Default, Ignored, ThirdParty, Reviewed).
- |Property |Type |Description |
+
+|Property |Type |Description |
 |:--|:--|:--|
 |assignedTo | string | assign the control to the user who will take the action |
 |comment | string | Provides optional comment about the control |
