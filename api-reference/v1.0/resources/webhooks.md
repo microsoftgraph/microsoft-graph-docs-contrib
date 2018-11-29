@@ -41,5 +41,7 @@ In general, subscription operations require read permission to the resource. For
 [conversation]: ./conversation.md
 [drive]: ./drive.md
 [event]: ./event.md
+[group]: ./group.md
 [message]: ./message.md
+[user]: ./user.md
 [alert]: ./alert.md
