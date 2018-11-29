@@ -9,8 +9,8 @@ Contains compliance certification data associated with secure score control.
 
 |Property |Type |Description |
 |:--|:--|:--|
-|name | string | certification control name |
-|url | string | urlfor Microsoft Service Trust Portal |
+|name | string | Certification control name |
+|url | string | URL for the Microsoft Service Trust Portal |
 
 ## JSON representation
 
