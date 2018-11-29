@@ -33,6 +33,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 | Content-type  | application/json|
 
 ### Request body
+
 |Parameters	     |Type	                 |Required |Description|
 |:-------------|:----------------------|:--------|:----------|
 |reason        |String                 |✓        |The reason provided by the administrator for his decision.|
