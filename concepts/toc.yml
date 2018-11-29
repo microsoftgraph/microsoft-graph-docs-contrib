@@ -22,6 +22,8 @@
           href: versioning-and-support.md
         - name: Terms of use
           href: https://developer.microsoft.com/graph/terms-of-use
+      - name: Microsoft Graph data connect (preview)
+        href: data-connect-overview.md
       - name: Training
         href: training.md
         items:
@@ -41,8 +43,6 @@
           href: /graph/training/react-tutorial/
         - name: UWP
           href: /graph/training/uwp-tutorial/
-      - name: Microsoft Graph data connect (preview)
-        href: data-connect-overview.md
     - name: Learn
       expanded: true
       items:
@@ -233,7 +233,7 @@
           href: changelog.md
         - name: Errors
           href: errors.md
-    - name: v1.0 API Reference
+    - name: v1.0 reference
       href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-    - name: beta API Reference
+    - name: Beta reference
       href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
