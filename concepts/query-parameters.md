@@ -26,7 +26,7 @@ Microsoft Graph provides optional query parameters that you can use to specify a
 
 These parameters are compatible with the [OData V4 query language][odata-query]. Not all parameters are supported across all Microsoft Graph APIs, and support might differ significantly between the `v1.0` and `beta` endpoints. 
 
-> **Note:** On the `beta` endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. For more details and examples, see [Supporting query parameters without $ prefixes in Microsoft Graph](https://dev.office.com/queryparametersinMicrosoftGraph).
+> **Note:** On the `beta` and `v1.0` endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
 
 ## Encoding query parameters
 

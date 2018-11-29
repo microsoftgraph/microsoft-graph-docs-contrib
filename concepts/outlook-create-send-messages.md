@@ -92,16 +92,3 @@ Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
 - [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
-
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /concepts/outlook-create-send-messages.md:
-        BookmarkSkippedDocFileNotFound: Link '[creating a message](/graph/api/user-post-messages?view=graph-rest-beta#request-2)'.",
-    "Error: /concepts/outlook-create-send-messages.md:
-      BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/user-list-messages?view=graph-rest-beta#request-2)'.",
-    "Error: /concepts/outlook-create-send-messages.md:
-      BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](/graph/api/message-get?view=graph-rest-beta#request-2)'."
-  ]
-}-->
