@@ -7,7 +7,7 @@ description: "Get newly created, updated, or deleted directory objects of the fo
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Get newly created, updated, or deleted directory objects of the following types: [user](../resources/resources/user), [group](../resources/group) and [organizational contact](../resources/orgcontact), in a single delta query. See [Track changes](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted directory objects of the following types: [user](../resources/user.md), [group](../resources/group.md) and [organizational contact](../resources/orgcontact.md), in a single delta query. See [Track changes](/graph/delta-query-overview) for details.
 
 ## Permissions
 
