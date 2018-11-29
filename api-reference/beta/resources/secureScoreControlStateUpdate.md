@@ -3,7 +3,7 @@ title: " secureScoreControlStateUpdate resource type"
 description: "This resource contains history of control states updated by user (control states include Default, Ignored, ThirdParty, Reviewed)."
 ---
  #  secureScoreControlStateUpdate resource type
- This resource contains history of control states updated by user (control states include Default, Ignored, ThirdParty, Reviewed).
+Contains history of control states updated by user (control states include Default, Ignored, ThirdParty, Reviewed).
 
 |Property |Type |Description |
 |:--|:--|:--|
