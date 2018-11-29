@@ -15,7 +15,7 @@ Represents the settings for a privileged role.
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Read properties and relationships of privilegedRoleSettings object.|
-|[Update privilegedRoleSettings](../api/privilegedrolesettings-updatet.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Update privilegedRoleSettings object.|
+|[Update privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Update privilegedRoleSettings object.|
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
