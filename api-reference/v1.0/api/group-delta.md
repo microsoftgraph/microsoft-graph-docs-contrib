@@ -76,20 +76,19 @@ If successful, this method returns `200 OK` response code and [group](../resourc
 
 By default, requests using a `deltaLink` or `nextLink` return the same properties as selected in the initial delta query in the following ways:
 
-- If the property has changed, the new value is included in the response.
+- If the property has changed, the new value is included in the response. This includes properties being set to null value.
 - If the property has not changed, the old value is included in the response.
-- If the property has never been set to a value (null or non-null), it will not be included in the response at all.
+- If the property has never been set before it will not be included in the response at all.
 
 
-> **Note:** With the above behavior, it is not possible to tell if a property is changing or not. Also, the delta responses tend to be large since they contain all property values - as shown in the [second example](#request-2) below.
+> **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values  - as shown in the [second example](#request-2) below.
 
 #### Alternative: return only the changed properties
 
 Adding an optional request header - `prefer:return=minimal` - results in the following behavior:
 
-- If the property has changed, return the property in the JSON response.
-- If the property has been set to an empty value, return the property value as null.
-- If the property has not changed, do not include the property in the JSON response. (Different from the default behavior.)
+- If the property has changed, the new value is included in the response. This includes properties being set to null value.
+- If the property has not changed, the property is not included in the response at all. (Different from the default behavior.)
 
 > **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
 
