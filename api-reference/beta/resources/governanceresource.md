@@ -28,8 +28,8 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity se
 |type               |String     |Required. Resource type. For example, for Azure resources, the type could be "Subscription", "ResourceGroup", "Microsoft.Sql/server", etc.|
 |displayName        |String     |The display name of the resource.|
 |status             |String     |The status of a given resource. For example, it could represent whether the resource is locked or not (values: `Active`/`Locked`). Note: This property may be extended in the future to support more scenarios.|
-|registeredDateTime|DateTimeOffset      |It represents the date time when the resource is registered in PIM.|
-|registeredRoot|String      |It is the externalId of the resource's root scope that is registered in PIM. The root scope can be the parent, grandparent, or higher ancestor resources.|
+|registeredDateTime|DateTimeOffset      |Represents the date time when the resource is registered in PIM.|
+|registeredRoot|String      |The externalId of the resource's root scope that is registered in PIM. The root scope can be the parent, grandparent, or higher ancestor resources.|
 |roleAssignmentCount|Int32      |Optional. The number of role assignments for the given resource. To get the property, please explictly use `$select=roleAssignmentCount` in the query.|
 |roleDefinitionCount|Int32      |Optional. The number of role definitions for the given resource. To get the property, please explictly use `$select=roleDefinitionCount` in the query.|
 |permissions|[governancePermission](../resources/governancepermission.md)      |Optional. It represents the status of the requestor's access to the resource.To get the property, please explictly use `$select=permissions` in the query.|
@@ -45,7 +45,7 @@ No `POST`, `PUT`, `PATCH`, `DELETE` are supported on `roleDefinitions` entity se
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
