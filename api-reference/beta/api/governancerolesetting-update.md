@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## Optional request headers
+## Request headers
 | Name       | Description|
 |:-----------|:-----------|
 | Authorization  | Bearer {code}|
@@ -45,7 +45,7 @@ In the request body, supply the values for [governanceRuleSettings](../resources
 ## Response
 If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body. 
 
-## Error codes
+### Error codes
 This API returns the standard HTTP error codes. In addition, it returns the following custom error codes.
 
 |Error code     | Error message         | Details             |
