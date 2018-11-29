@@ -1,3 +1,8 @@
+---
+title: "Create a team"
+description: "Create a new team."
+---
+
 # Create team
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -37,7 +42,7 @@ In the request body, supply a JSON representation of a [team](../resources/team.
 
 If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
-#### Example
+#### Example (delegated permissions)
 
 Here is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
@@ -64,7 +69,7 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-#### Example - create a team with an app installed, multiple channels with pinned tabs
+#### Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions
 
 Here is request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
 
@@ -138,6 +143,36 @@ Content-Type: application/json
     {
       "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
     }
+  ]
+}
+```
+
+##### Response
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+#### Example (application permissions)
+
+Here is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`. When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.
+
+##### Request
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/teamTemplates/standard",
+  "displayName": "My Sample Team",
+  "description": "My Sample Team’s Description",
+  "owners@odata.bind": [
+    "https://graph.microsoft.com/beta/users('abc123')"
   ]
 }
 ```

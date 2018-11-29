@@ -1,3 +1,8 @@
+---
+title: "teamSpecialization enum type"
+description: "Describes the special use case for a team."
+---
+
 # teamSpecialization enum type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -6,7 +11,7 @@ Indicates the [team](../resources/team.md) is intended for a particular use case
 
 ## Members
 
-| Member | Value| Description |
-|:---------------|:--------|:----------|
-|none|0|Default type for a team which gives the standard team experience.|
-|unknownFutureValue|7|Sentinel value reserved as a placeholder for future expansion of the enum.|
+| Member             | Value | Description                                                                |
+| :----------------- | :---- | :------------------------------------------------------------------------- |
+| none               | 0     | Default type for a team which gives the standard team experience.          |
+| unknownFutureValue | 7     | Sentinel value reserved as a placeholder for future expansion of the enum. |
