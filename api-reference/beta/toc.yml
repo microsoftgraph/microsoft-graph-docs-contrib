@@ -6474,9 +6474,9 @@
           - name: Self role deactivate
             href: api/privilegedrole-selfdeactivate.md
           - name: Get role settings
-            href: api/privilegedrolesettings_get.md
+            href: api/privilegedrolesettings-get.md
           - name: Update role settings
-            href: api/privilegedrolesettings_update.md
+            href: api/privilegedrolesettings-update.md
           - name: Get role summary
             href: api/privilegedrolesummary-get.md
         - name: Privileged role assignment
@@ -6500,13 +6500,13 @@
           href: resources/privilegedroleassignmentrequest.md
           items:
           - name: List role assignments
-            href: api/privilegedroleassignmentrequest_list.md
+            href: api/privilegedroleassignmentrequest-list.md
           - name: Create role assignments
-            href: api/privilegedroleassignmentrequest_post.md
+            href: api/privilegedroleassignmentrequest-post.md
           - name: Cancel role assignment
-            href: api/privilegedroleassignmentrequest_cancel.md
+            href: api/privilegedroleassignmentrequest-cancel.md
           - name: Get my role assignments
-            href: api/privilegedroleassignmentrequest_my.md
+            href: api/privilegedroleassignmentrequest-my.md
         - name: Audit event
           href: resources/privilegedoperationevent.md
           items:
