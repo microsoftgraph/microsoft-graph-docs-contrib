@@ -60,10 +60,10 @@ All the ordering is controlled by the principles identified in [Planner order hi
 
 ## Planner resource versioning
 
-Planner versions all resources using etags. These etags are returned with `@odata.etag` property on each resource, and `PATCH` and `DELETE` requests require the last etag known by the client to be specified with `If-Match` header.
-Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which etag for the same resource is newer by calculating which etag value is greater in ordinal string comparison. 
-Each resource has a separate etag. Etag values for different resources, including those with containment relationships, cannot be compared.
-The client apps are expected to handle two versioning related error status codes 409 and 412 by reading the latest version of the item, and resolving the conflicting changes.
+Planner versions all resources using **etags**. These **etags** are returned with `@odata.etag` property on each resource. `PATCH` and `DELETE` requests require the last **etag** known by the client to be specified with a `If-Match` header.
+Planner allows changes to older versions of resources, if the intended change does not conflict with newer changes accepted by the Planner service on the same resource. The clients can identify which **etag** for the same resource is newer by calculating which **etag** value is greater in ordinal string comparison. 
+Each resource has a unique **etag**. Etag values for different resources, including those with containment relationships, cannot be compared.
+The client apps are expected to handle versioning related [error codes](/graph/errors) **409** and **412** by reading the latest version of the item and resolving the conflicting changes.
 
 ## Common Planner error conditions
 
@@ -73,11 +73,27 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 In some common scenarios, `POST` and `PATCH` requests can return a 400 status code. The following are some of the common causes:
 
-* Open Type properties are not of correct types, or the type isn't specified, or they do not contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
-* Order hint values do not have the [correct format](planner-order-hint-format.md). For example, an order hint value is being set directly to the value returned to the client.
-* The data is logically inconsistent. For example, start date of task is later than due date of the task.
+* Open Type properties are not of correct types.
+* The type isn't specified.
+* The request does not contain any properties.
 
-### 403 Forbidden
+#### Example
+
+[plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
+
+* Order hint values do not have the [correct format](planner-order-hint-format.md).
+
+   For example, an order hint value is being set directly to the value returned to the client.
+
+* The data is logically inconsistent.
+
+   For example, start date of task is later than due date of the task.
+
+### Planner error status codes
+
+In addition to general error status codes, Planner indicates special error conditions by returning the following codes.
+
+#### 403 Forbidden
 
 In addition to the general errors, the Planner API also returns the 403 status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request.
 The following are the possible values for the limit types.
