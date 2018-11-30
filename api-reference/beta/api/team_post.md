@@ -11,7 +11,7 @@ Create a new [team](../resources/team.md) from scratch.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
@@ -190,4 +190,4 @@ Content-Location: /teams/{teamId}
 
 ## See also
 
-- [Creating a group with a team](../../../concepts/teams-create-group-and-team.md)
+- [Creating a group with a team](/graph/teams-create-group-and-team)
