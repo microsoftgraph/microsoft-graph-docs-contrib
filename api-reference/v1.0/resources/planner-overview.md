@@ -79,8 +79,8 @@ There are several common cases where the `POST` and `PATCH` requests can get a 4
 
 ### 403 Forbidden
 
-In addition to the general errors, the Planner API also returns this status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request.
-The possible values for the limit types include:
+In addition to the general errors, the Planner API also returns the 403 status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request.
+The following are the possible values for the limit types.
 
 | Value                         | Description                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -95,7 +95,7 @@ The possible values for the limit types include:
 | MaximumReferencesOnTask       | The `references` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The `checklist` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
 | MaximumAssigneesInTasks       | The `assignments` property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
-| MaximumPlannerPlans       | Currently it is not possible to create more than one plan in a Group using Microsoft Graph. This limit does not apply to Plans created in Microsoft Teams user interface.                                                                                                       |
+| MaximumPlannerPlans       | More than one plan was created in a group. This limit does not apply to plans created via the Microsoft Teams UI.                                                                                                       |
 ### 412 Precondition Failed 
 
 All `POST`, `PATCH` and `DELETE` requests in Planner API require `If-Match` header to be specified with the last etag value seen of the resource that is subject to the request.
