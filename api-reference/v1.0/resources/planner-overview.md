@@ -95,7 +95,7 @@ The possible values for the limit types include:
 | MaximumReferencesOnTask       | The `references` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The `checklist` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
 | MaximumAssigneesInTasks       | The `assignments` property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
-
+| MaximumPlannerPlans       | Currently it is not possible to create more than one plan in a Group using Microsoft Graph. This limit does not apply to Plans created in Microsoft Teams user interface.                                                                                                       |
 ### 412 Precondition Failed 
 
 All `POST`, `PATCH` and `DELETE` requests in Planner API require `If-Match` header to be specified with the last etag value seen of the resource that is subject to the request.
