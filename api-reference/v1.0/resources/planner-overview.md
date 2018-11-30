@@ -95,7 +95,7 @@ The following are the possible values for the limit types.
 | MaximumReferencesOnTask       | The `references` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The `checklist` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
 | MaximumAssigneesInTasks       | The `assignments` property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
-| MaximumPlannerPlans       | The Group already contains a Plan. The group can only contain one Plan. Microsoft owned apps can exceed this limit, and we’re working on extending this capability to all apps.                                                                                                       |
+| MaximumPlannerPlans       | The group already contains a Plan. Currently, groups can only contain one Plan. **Note:** Some Microsoft apps can exceed this limit. In the future, we will extend this capability to all apps.                                                                                                      |
 
 ### 412 Precondition Failed 
 
