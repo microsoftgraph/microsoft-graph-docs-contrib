@@ -20,7 +20,7 @@ To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the
 GET /groups/{id}/planner/plans
 ```
 
-When [creating a new plan](../api/planner-post-plans.md), give the plan a group owner by setting the `owner` property on a plan object. A plan must be owned by a group. A group can own multiple plans.
+When [creating a new plan](../api/planner-post-plans.md), make a group its owner by setting the `owner` property on a plan object. Plans must be owned by groups.
 
 >**Note:** The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
@@ -42,7 +42,7 @@ The ID of the user to assign the task is the name of the open property on `assig
 
 ## Task and plan details 
 
-Planner resources are arranged into basic task and plan objects and detail task and plan objects. Basic objects provide access to common properties of the resources, suitable for list views, while the detail objects provide access to large properties of the resources suitable for drill down views.
+Planner resources are arranged into basic objects and detail objects. Basic objects provide access to common properties of the resources, suitable for list views, while the detail objects provide access to large properties of the resources suitable for drill down views.
 
 ## Visualization
 
@@ -127,27 +127,11 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 In some common scenarios, `POST` and `PATCH` requests can return a 400 status code. The following are some of the common causes:
 
-* Open Type properties are not of correct types.
-* The type isn't specified.
-* The request does not contain any properties.
+* Open Type properties are not of correct types, or the type isn't specified, or they do not contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
+* Order hint values do not have the [correct format](planner-order-hint-format.md). For example, an order hint value is being set directly to the value returned to the client.
+* The data is logically inconsistent. For example, start date of task is later than due date of the task.
 
-#### Example
-
-[plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
-
-* Order hint values do not have the [correct format](planner-order-hint-format.md).
-
-   For example, an order hint value is being set directly to the value returned to the client.
-
-* The data is logically inconsistent.
-
-   For example, start date of task is later than due date of the task.
-
-### Planner error status codes
-
-In addition to general error status codes, Planner indicates special error conditions by returning the following codes.
-
-#### 403 Forbidden
+### 403 Forbidden
 
 In addition to the general errors, the Planner API also returns the 403 status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request.
 The following are the possible values for the limit types.
@@ -169,6 +153,7 @@ The following are the possible values for the limit types.
 | MaximumRecentPlansForUser     | The `recentPlanReferences` property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                              |
 | MaximumContextsOnPlan         | The `contexts` property on the [plannerPlan](plannerplan.md) resource contains too many values.                                                                                                          |
 | MaximumPlannerPlans       | The Group already contains a Plan. The group can only contain one Plan. Microsoft owned apps can exceed this limit, and we’re working on extending this capability to all apps.                                                                                                       |
+
 ### 412 Precondition Failed 
 
 All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.

@@ -73,27 +73,11 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 In some common scenarios, `POST` and `PATCH` requests can return a 400 status code. The following are some of the common causes:
 
-* Open Type properties are not of correct types.
-* The type isn't specified.
-* The request does not contain any properties.
+* Open Type properties are not of correct types, or the type isn't specified, or they do not contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
+* Order hint values do not have the [correct format](planner-order-hint-format.md). For example, an order hint value is being set directly to the value returned to the client.
+* The data is logically inconsistent. For example, start date of task is later than due date of the task.
 
-#### Example
-
-[plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
-
-* Order hint values do not have the [correct format](planner-order-hint-format.md).
-
-   For example, an order hint value is being set directly to the value returned to the client.
-
-* The data is logically inconsistent.
-
-   For example, start date of task is later than due date of the task.
-
-### Planner error status codes
-
-In addition to general error status codes, Planner indicates special error conditions by returning the following codes.
-
-#### 403 Forbidden
+### 403 Forbidden
 
 In addition to the general errors, the Planner API also returns the 403 status code when a service-defined limit has been exceeded. If this is the case, the `code` property on the error resource type will indicate the type of the limit exceeded by the request.
 The following are the possible values for the limit types.
@@ -112,6 +96,7 @@ The following are the possible values for the limit types.
 | MaximumChecklistItemsOnTask   | The `checklist` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
 | MaximumAssigneesInTasks       | The `assignments` property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
 | MaximumPlannerPlans       | The Group already contains a Plan. The group can only contain one Plan. Microsoft owned apps can exceed this limit, and we’re working on extending this capability to all apps.                                                                                                       |
+
 ### 412 Precondition Failed 
 
 All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
