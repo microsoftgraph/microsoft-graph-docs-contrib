@@ -7,9 +7,9 @@ description: "You can use the Planner API in Microsoft Graph to create tasks and
 
 You can use the Planner API in Microsoft Graph to create tasks and assign them to users in a group in Office 365.
 
-Before you get started with Planner API, it is worth understanding how the main objects relate to each other as well as to Office 365 groups.
+Before you get started with Planner API, you will want to understand how the main objects relate to each other as well as to Office 365 groups.
 
-## Groups
+## Office 365 Groups
 
 Office 365 groups are the owners of the plans in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
@@ -44,7 +44,7 @@ Planner resources are arranged into basic objects and detail objects. Basic obje
 
 ## Visualization
 
-Aside from task and plan data, the Planner API also provides resources to provide common visualization of data across clients. Several types of visualization data are available for tasks:
+Aside from task and plan data, the Planner API also provides resources for creating a common visualization of data across clients. Several types of visualization data are available for tasks, as listed in the following table.
 
 | Tasks are shown as                                                                        | Tasks are ordered with information from                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -56,7 +56,7 @@ Aside from task and plan data, the Planner API also provides resources to provid
 
 The custom columns in the bucket task board are represented by [bucket](plannerbucket.md) objects, and their order by `orderHint` property on the object.
 
-All the ordering is controlled by the principles identified in [Planner order hints](planner-order-hint-format.md).
+All the ordering is controlled by the principles described in [Planner order hints](planner-order-hint-format.md).
 
 ## Planner resource versioning
 
