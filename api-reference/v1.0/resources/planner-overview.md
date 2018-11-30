@@ -95,7 +95,7 @@ The following are the possible values for the limit types.
 | MaximumReferencesOnTask       | The `references` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                          |
 | MaximumChecklistItemsOnTask   | The `checklist` property on the [plannerTaskDetails](plannertaskdetails.md) resource contains too many values.                                                                                           |
 | MaximumAssigneesInTasks       | The `assignments` property on the [plannerTask](plannertask.md) resource contains too many values.                                                                                                       |
-| MaximumPlannerPlans       | More than one plan was created in a group. This limit does not apply to plans created via the Microsoft Teams UI.                                                                                                       |
+| MaximumPlannerPlans       | The Group already contains a Plan. The group can only contain one Plan. Microsoft owned apps can exceed this limit, and we’re working on extending this capability to all apps.                                                                                                       |
 ### 412 Precondition Failed 
 
 All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
