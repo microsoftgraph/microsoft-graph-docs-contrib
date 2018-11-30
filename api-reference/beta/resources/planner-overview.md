@@ -152,7 +152,7 @@ The following are the possible values for the limit types.
 | MaximumFavoritePlansForUser   | The `favoritePlanReferences` property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                            |
 | MaximumRecentPlansForUser     | The `recentPlanReferences` property on the [plannerUser](planneruser.md) resource contains too many values.                                                                                              |
 | MaximumContextsOnPlan         | The `contexts` property on the [plannerPlan](plannerplan.md) resource contains too many values.                                                                                                          |
-| MaximumPlannerPlans       | The group already contains a Plan. Groups can only contain one Plan. **Note:** Currently, some Microsoft apps can exceed this limit, and we’re working on extending this capability to all apps.                                                                                                       |
+| MaximumPlannerPlans       | The group already contains a Plan. Currently, groups can only contain one Plan. **Note:** Some Microsoft apps can exceed this limit. In the future, we will extend this capability to all apps.                                                                                                      |
 
 ### 412 Precondition Failed 
 
