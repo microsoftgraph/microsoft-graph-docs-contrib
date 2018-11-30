@@ -18,9 +18,9 @@ For more information about working with groups and members in teams, see [Use th
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create team](../api/team_post_teams.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Create a team from scratch. |
-|[Create team from group](../api/team_put_teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
-|[Get team](../api/team-get.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
+|[Create team](../api/team-post-teams.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Create a team from scratch. |
+|[Create team from group](../api/team-put-teams.md) | [team](team.md) | Create a new team, or add a team to an existing group.|
+|[Get team](../api/teamget.md) | [team](team.md) | Retrieve the properties and relationships of the specified team.|
 |[Update team](../api/team-update.md) | [team](team.md) |Update the properties of the specified team. |
 |[Delete team](/graph/api/group-delete?view=graph-rest-1.0) | None |Delete the team and its associated group. |
 |[Clone team](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Copy the team and its associated group. |
