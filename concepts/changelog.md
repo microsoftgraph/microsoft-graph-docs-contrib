@@ -14,7 +14,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Directory APIs
 | Change type | Version                                    | Description                              |
 | :---------- | :----------------------------------------- | :--------------------------------------- |
-| Addition    | Beta | Added the 'createdDateTime' property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) object.|
+| Addition    | Beta | Added the `createdDateTime` property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) resource.|
 
 ## November 2018
 
