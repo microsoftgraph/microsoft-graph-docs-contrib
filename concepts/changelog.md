@@ -25,7 +25,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta| Added the [visibility](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
 |Addition |beta| Added the [template](/graph/api/resources/teamstemplate?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
 |Addition |beta| Added the owners collection to [team](/graph/api/resources/team?view=graph-rest-beta).|
-
+|Addition |beta| Introduced new enum member unknownFutureValue to teamVisibilityType.|
+|Addition |beta| Introduced new enum member unknownFutureValue to giphyRatingType.|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamsAsyncOperationType.|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamsAsyncOperationStatus.|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamsAppDistributionMethod.|
 
 ## November 2018
 
