@@ -71,7 +71,7 @@ In addition to [general errors](/graph/errors) that apply to Microsoft Graph, so
 
 ### 400 Bad request
 
-There are several common cases where the `POST` and `PATCH` requests can get a 400 status code. Common problems include:
+In some common scenarios, `POST` and `PATCH` requests can return a 400 status code. The following are some of the common causes:
 
 * Open Type properties are not of correct types, or the type isn't specified, or they do not contain any properties. For example, [plannerAssignments](plannerassignments.md) properties with complex values need to declare `@odata.type` property with value `microsoft.graph.plannerAssignment`.
 * Order hint values do not have the [correct format](planner-order-hint-format.md). For example, an order hint value is being set directly to the value returned to the client.
@@ -98,6 +98,6 @@ The following are the possible values for the limit types.
 | MaximumPlannerPlans       | More than one plan was created in a group. This limit does not apply to plans created via the Microsoft Teams UI.                                                                                                       |
 ### 412 Precondition Failed 
 
-All `POST`, `PATCH` and `DELETE` requests in Planner API require `If-Match` header to be specified with the last etag value seen of the resource that is subject to the request.
-Additionally, 412 status code can be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and obtain a new etag.
+All Planer API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
+The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
 
