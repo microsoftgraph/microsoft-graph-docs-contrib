@@ -3830,7 +3830,7 @@
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams
-          href: /en-us/concepts/teams-list-all-teams
+          href: /graph/teams-list-all-teams
       - name: Group (team)
         href: resources/group.md
         items:
