@@ -30,6 +30,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta| Introduced new enum member unknownFutureValue to teamsAsyncOperationType.|
 |Addition |beta| Introduced new enum member unknownFutureValue to teamsAsyncOperationStatus.|
 |Addition |beta| Introduced new enum member unknownFutureValue to teamsAppDistributionMethod.|
+|Addition |beta| Introduced new resource [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
 
 ## November 2018
 
