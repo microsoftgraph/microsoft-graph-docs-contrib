@@ -9,6 +9,13 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## December 2018
+
+### Directory APIs
+| Change type | Version                                    | Description                              |
+| :---------- | :----------------------------------------- | :--------------------------------------- |
+| Addition    | Beta | Added the 'createdDateTime' property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) object.|
+
 ## November 2018
 
 ### Microsoft Teams APIs
