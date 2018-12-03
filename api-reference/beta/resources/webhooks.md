@@ -25,7 +25,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 
 In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription-post-subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
 
-| Permission type                        | Supported resource types in beta                                                      |
+| Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][], [alert][] |
 | Delegated - personal Microsoft account | [contact][], [drive][], [event][], [message][]                                        |
