@@ -52,7 +52,7 @@ Here is an example of a minimal request. By omitting other properties, the clien
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/teamTemplates/standard",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
 }
@@ -168,7 +168,7 @@ Here is an example of a minimal request using application permissions. By omitti
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/teamTemplates/standard",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
   "owners@odata.bind": [
