@@ -11,6 +11,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2018
 
+### Data Policy Operations API
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | beta        | Added new  **progress** property to [dataPolicyOperation](../api-reference/beta/resources/dataPolicyOperation). This specifies the progress of an operation.
+
 ### Microsoft Teams APIs
 
 | **Change type** | **Version**   | **Description**                          |
