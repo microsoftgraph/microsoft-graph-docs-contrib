@@ -6,8 +6,8 @@ Represents a submitted data policy operation. It contains necessary information 
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get dataPolicyOperation](../api/datapolicyoperation_get.md) | [dataPolicyOperation](datapolicyoperation.md) |Read properties of the dataPolicyOperation object.|
-|[Export personal data](../api/user_exportpersonaldata.md) | None |Submits a data policy operation request to export organizational user's data which can later be read using [Get dataPolicyOperation](../api/datapolicyoperation_get.md)|
+|[Get dataPolicyOperation](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |Read properties of the dataPolicyOperation object.|
+|[Export personal data](../api/user-exportpersonaldata.md) | None |Submits a data policy operation request to export organizational user's data which can later be read using [Get dataPolicyOperation](../api/datapolicyoperation-get.md)|
 
 ## Properties
 
@@ -24,7 +24,7 @@ Represents a submitted data policy operation. It contains necessary information 
 |progress|String|Specifies the progress of an operation.|
 
 ## Relationships
-None
+None.
 
 
 ## JSON representation
