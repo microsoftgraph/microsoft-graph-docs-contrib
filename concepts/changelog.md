@@ -9,6 +9,16 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## January 2019 
+
+### Directory APIs 
+
+| **Change type** | **Version**   | **Description**                          | 
+| :-------------- | :------------ | :--------------------------------------- | 
+| Addition | v1.0 | Added the **licenseAssignmentStates** property to the [User](../api-reference/v1.0/resources/user.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Addition | v1.0 | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Addition | v1.0 | Added the **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** and **membersWithLicenseErrors** properties to [Group](../api-reference/v1.0/resources/group.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
+
 ## November 2018
 
 ### Microsoft Teams APIs

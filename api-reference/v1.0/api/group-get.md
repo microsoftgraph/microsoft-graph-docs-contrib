@@ -29,10 +29,11 @@ The following group properties are not returned by default:
 
 * allowExternalSenders
 * autoSubscribeNewMembers
+* hasMembersWithLicenseErrors
 * isSubscribedByMail
 * unseenCount
 
-To get these properties, use the **$select** query parameter. The following are examples: 
+To get these properties (except **isFavorite** and **hasMembersWithLicenseErrors**), use the `$select` query parameter. The following are examples: 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -41,6 +42,12 @@ GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f
 GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
 ```
 
+To return groups containing members with license errors, use the **$filter** query parameter:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true
+```
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
