@@ -15,9 +15,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-|Addition |v1.0| Added new entity [dataPolicyOperation](../api-reference/v1.0/resources/datapolicyoperation.md). This represents a submitted data policy operation for tracking purposes.
-|Addition |v1.0| Added the [exportPersonalData](../api-reference/v1.0/api/user-exportpersonaldata.md) action on [users](../api-reference/v1.0/resources/users.md). This action submits a data policy operation request to export personal data stored by Microsoft for a user. |
-|Addition |v1.0| Added method [dataPolicyOperations](../api-reference/v1.0/api/datapolicyoperation-get.md). This retrieves properties of the dataPolicyOperation object.
+|Addition |v1.0| Added new entity [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-1.0). This represents a submitted data policy operation for tracking purposes.
+|Addition |v1.0| Added the [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-1.0) action on [users](/graph/api/resources/users?view=graph-rest-1.0). This action submits a data policy operation request to export personal data stored by Microsoft for a user. |
+|Addition |v1.0| Added method [dataPolicyOperations](/graph/api/datapolicyoperation-get?view=graph-rest-1.0). This retrieves properties of the dataPolicyOperation object.
 
 ## November 2018
 
