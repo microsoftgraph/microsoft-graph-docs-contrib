@@ -7220,7 +7220,7 @@
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
       - name: Errors
-        href: resources/security-error-codes.md
+        href: /graph/security-error-codes?toc=./toc.json
     - name: Sites and lists
       href: resources/sharepoint.md
       items:

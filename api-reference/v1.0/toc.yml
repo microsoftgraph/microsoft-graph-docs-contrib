@@ -3687,7 +3687,7 @@
         - name: Update alert
           href: api/alert-update.md
       - name: Errors
-        href: resources/security-error-codes.md
+        href: /graph/security-error-codes?toc=./toc.json
     - name: Sites and lists
       href: resources/sharepoint.md
       items:
