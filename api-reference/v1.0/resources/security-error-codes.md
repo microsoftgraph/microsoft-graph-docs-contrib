@@ -50,4 +50,4 @@ A work-around for this limit is to use the `$filter` OData query parameter with 
 
 ## See also
 
-If you’re having trouble with authorization, see our [blog post](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/Authorization-and-Microsoft-Graph-Security-API/m-p/184376#M2).
+If you’re having trouble with authorization, see [Authorization and the Microsoft Graph Security API](/graph/security-authorization).
