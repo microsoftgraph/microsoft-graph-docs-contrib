@@ -1,3 +1,8 @@
+---
+title: "notification resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # notification resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -12,7 +17,7 @@
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -25,7 +30,7 @@ Here is a JSON representation of the resource.
 ```json
 {
   "changeType": "created | updated | deleted",
-  "resource": "String",
+  "resource": "String"
 }
 ```
 

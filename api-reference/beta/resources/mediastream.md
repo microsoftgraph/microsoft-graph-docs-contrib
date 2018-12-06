@@ -1,3 +1,8 @@
+---
+title: "mediaStream resource type"
+description: "The mediaStream type."
+---
+
 # mediaStream resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -16,12 +21,12 @@ The mediaStream type.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "serverMuted"
   ],
   "@odata.type": "microsoft.graph.mediaStream"
 }-->

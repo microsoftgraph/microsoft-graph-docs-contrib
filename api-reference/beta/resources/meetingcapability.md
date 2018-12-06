@@ -1,3 +1,8 @@
+---
+title: "meetingCapability resource type"
+description: "Contains the capabilities of a meeting"
+---
+
 # meetingCapability resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -13,7 +18,7 @@ Contains the capabilities of a meeting
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

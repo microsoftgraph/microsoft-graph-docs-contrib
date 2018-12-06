@@ -1,17 +1,22 @@
+---
+title: "meetingParticipantInfo resource type"
+description: "The following is a JSON representation of the resource."
+---
+
 # meetingParticipantInfo resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 ## Properties
 
-| Property       | Type    | Description|
-|:---------------|:--------|:----------|
-| identity | [identitySet](identityset.md) | Identity information of the participant. |
-| upn | String |  The user principal name of the participant. |
+| Property       | Type                          | Description                              |
+|:---------------|:------------------------------|:-----------------------------------------|
+| identity       | [identitySet](identityset.md) | Identity information of the participant. |
+| upn            | String                        | User principal name of the participant.  |
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
