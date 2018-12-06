@@ -1,3 +1,8 @@
+---
+title: "signIn resource type"
+description: "This resource details user or application sign-in activity in your directory. "
+---
+
 # signIn resource type
 This resource details user or application sign-in activity in your directory. 
 
@@ -5,8 +10,8 @@ This resource details user or application sign-in activity in your directory.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List signIn](../api/signin_list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
-|[Get signIn](../api/signin_get.md) | [signIn](signin.md) |Read properties and relationships of signIn object.|
+|[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
+|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of signIn object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -33,7 +38,7 @@ This resource details user or application sign-in activity in your directory.
 |riskEventTypes|`riskEventTypes`|Provides the list of risk event types associated with the sign-in. The possible values are: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, and `unknownFutureValue`.|
 |riskState|`riskState`|Provides the 'risk state' of a risky user, sign-in or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |mfaDetail|[mfaDetail](mfadetail.md)|Provides the MFA related information like MFA Required, MFA Status for the corresponding sign-in.|
-|networkLocationDetail|[networkLocationDetail](networkLocationDetail.md)|Provides details about the network location.|
+|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Provides details about the network location.|
 |riskLevel|string| Provides the risk level associated with the sign-in.Possible values are: `low`, `medium`, `high`.|
 |status|[signInStatus](signinstatus.md)|Provides the sign-in status. Possible values include `Success` and `Failure`.|
 |userDisplayName|String|Indicates the display Name of the User.|
