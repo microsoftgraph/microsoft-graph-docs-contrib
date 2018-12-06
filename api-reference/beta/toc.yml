@@ -6519,6 +6519,8 @@
             href: api/governanceresource-list.md
           - name: Get
             href: api/governanceresource-get.md
+          - name: Register
+            href: api/governanceresource-register.md
         - name: Role definitions
           href: resources/governanceroledefinition.md
           items:
