@@ -7,7 +7,7 @@ description: "Represents a reference to a directory object in a partner tenant. 
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents a reference to a directory object in a partner tenant. Inherits from [directoryObject](directoryobject.md).
+Represents a reference to a directory object in a partner tenant. Inherits from [directoryObject](directoryobject.md?view=graph-rest-beta).
 
 ## Properties
 
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-- [Get directory objects from a list of ids](/graph/api/directoryobject-getbyids)
+- [Get directory objects from a list of ids](/graph/api/directoryobject-getbyids?view=graph-rest-beta)
 
 <!-- uuid: fbec8cd7-cfe4-431d-87fc-d102cd2841a4
 2018-12-06 02:01:30 UTC -->
