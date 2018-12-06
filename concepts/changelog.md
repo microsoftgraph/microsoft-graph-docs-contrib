@@ -16,8 +16,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Change type | Version                                    | Description                              |
 | :---------- | :----------------------------------------- | :--------------------------------------- |
 | Addition    | Beta | Added the `createdDateTime` property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) resource.|
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added method `memberOf` to get a [devices](/graph/api/resources/device?view=graph-rest-1.0) direct [membership](/graph/api/device-list-memberOf?view=graph-rest-1.0). This method has been added for getting the list of memberships including nested memberships.|
 
 ## November 2018
