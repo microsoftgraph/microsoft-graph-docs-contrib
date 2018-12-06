@@ -64,7 +64,8 @@ Looking for the API reference for this service?
 
   - [Creating and sending messages](outlook-create-send-messages.md)
   - Ways to [organize messages](outlook-organize-messages.md)
-  - How to [get shared messages](outlook-share-messages-folders.md)
+  - [Getting the MIME content of a message](outlook-get-mime-message.md)
+  - [Getting shared messages](outlook-share-messages-folders.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
 
 - Find out more about [using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
