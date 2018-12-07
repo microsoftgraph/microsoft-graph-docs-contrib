@@ -42,11 +42,13 @@ In the request body, supply a JSON representation of a [team](../resources/team.
 
 If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
-#### Example (delegated permissions)
+## Examples
+
+### Example - delegated permissions
 
 Here is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
-##### Request
+#### Request
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -69,11 +71,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-#### Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions
+### Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions
 
 Here is request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.
 
-##### Request
+#### Request
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -156,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 ```http
 HTTP/1.1 202 Accepted
@@ -167,11 +169,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-#### Example (application permissions)
+### Example - application permissions
 
 Here is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`. When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.
 
-##### Request
+#### Request
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -186,7 +188,7 @@ Content-Type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 ```http
 HTTP/1.1 202 Accepted
