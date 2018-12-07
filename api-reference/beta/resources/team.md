@@ -40,7 +40,7 @@ For more information about working with groups and members in teams, see [Use th
 |displayName|string| The name of the team. |
 |description|string| An optional description for the team. |
 |classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
-|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
+|specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of a the group and team. Defaults to Public. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Settings to configure use of Giphy, memes, and stickers in the team.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Settings to configure whether guests can create, update, or delete channels in the team.|
