@@ -43,16 +43,12 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## Optional query parameters
-You can use the `$filter` query parameter to filter contacts based on their email addresses:
+This method supports the [OData query arameters](/graph/query-parameters) to help customize the response.p
 
-<!-- { "blockType": "ignored" } -->
-``` http
-GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
-```
+For example, you can use the `$filter` query parameter to filter contacts based on the domain of their email addresses:
 
-Note that you can use `$filter`, `any`, and the `eq` operator on only the **address** sub-property of instances in an **emailAddresses** collection. That is, you cannot filter on the **name** or any other sub-property of an instance of **emailAddresses**, nor can you apply any other operator or function with `filter`, such as `ne`, `le`, and `startswith()`.
+`https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq '@domain.com')`
 
-For general information on the `$filter` query parameter, see [OData Query Parameters](/graph/query-parameters).
 
 
 ## Request headers
