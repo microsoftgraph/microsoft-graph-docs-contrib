@@ -38,7 +38,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta| Introduced new enum member unknownFutureValue to teamsAsyncOperationStatus.|
 |Addition |beta| Introduced new enum member unknownFutureValue to teamsAppDistributionMethod.|
 |Addition |beta| Introduced new resource [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
-|Addition | v1.0 | Added admin permissions support to operations on [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0), and [tab](/graph/api/resources/teamstab?view=graph-rest-1.0). |
+|Addition | v1.0 | Added admin permissions support to [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0), and [tab](/graph/api/resources/teamstab?view=graph-rest-1.0) operations. |
 
 ### Privileged Identity Management APIs
 
