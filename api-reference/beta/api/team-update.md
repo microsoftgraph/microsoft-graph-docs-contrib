@@ -60,6 +60,9 @@ Content-length: 211
   "funSettings": {
     "allowGiphy": true,
     "giphyContentRating": "strict"
+  },
+  "discoverySettings": {
+    "showInSearchAndSuggestions": true
   }
 }
 ```

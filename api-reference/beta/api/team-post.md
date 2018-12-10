@@ -147,6 +147,9 @@ Content-Type: application/json
         "allowTeamMentions": true,
         "allowChannelMentions": true
     },
+    "discoverySettings": {
+        "showInSearchAndSuggestions": true
+    },
     "installedApps": [
         {
             "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"

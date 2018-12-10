@@ -71,6 +71,9 @@ Content-type: application/json
   "funSettings": {
     "allowGiphy": true,
     "giphyContentRating": "strict"
+  },
+  "discoverySettings": {
+    "showInSearchAndSuggestions": true
   }
 }
 ```
@@ -115,6 +118,9 @@ Content-length: 401
     "giphyContentRating": "strict",
     "allowStickersAndMemes": true,
     "allowCustomMemes": true
+  },
+  "discoverySettings": {
+    "showInSearchAndSuggestions": true
   }
 }
 ```
