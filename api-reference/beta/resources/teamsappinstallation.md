@@ -1,3 +1,8 @@
+---
+title: "teamsAppInstallation resource type"
+description: "A teamsApp installed in a team. "
+---
+
 # teamsAppInstallation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,10 +14,10 @@ Any bots that are part of the app will become part of any team the app is added 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps](../api/teamsappinstallation_list.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in a team.|
-|[Add app](../api/teamsappinstallation_add.md) | [teamsAppInstallation](teamsapp.md) | Adds (installs) an app to a team.|
-|[Remove app](../api/teamsappinstallation_delete.md) | None | Removes (uninstalls) an app from a team.|
-|[Upgrade app](../api/teamsappinstallation_delete.md) | None | Upgrades to the latest version of the app.|
+|[List apps](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in a team.|
+|[Add app](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Adds (installs) an app to a team.|
+|[Remove app](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
+|[Upgrade app](../api/teamsappinstallation-delete.md) | None | Upgrades to the latest version of the app.|
 
 ## Properties
 
@@ -29,14 +34,24 @@ Any bots that are part of the app will become part of any team the app is added 
 
 ## JSON representation
 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "baseType": "microsoft.graph.entity"
+}-->
+
 ```json
 {
-  "id": "0d0e31ca-59a5-31a6-8d87-12429a173d34",
+  "id": "string",
 }
 ```
+
 # See also
 
-[Pinning apps to tabs in channels](../resources/teamstab.md)
+- [teamsApp](teamsapp.md)
+- [teamsAppDefinition](teamsappdefinition.md)
+- [teamsTab](../resources/teamstab.md)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,3 +1,8 @@
+---
+title: "teamsAppDefinition resource type"
+description: "The details of one version of a teamsApp."
+---
+
 # teamsAppDefinition resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -5,6 +10,7 @@
 The details of one version of a [teamsApp](teamsapp.md).
 
 ## Properties
+
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | A unique id (not the teams appid). |
@@ -13,13 +19,27 @@ The details of one version of a [teamsApp](teamsapp.md).
 | version             | string   | The version number of the application. |
 
 ## JSON representation
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.teamsAppDefinition",
+  "baseType": "microsoft.graph.entity"
+}-->
+
 ```json
 {
-  "id": "0d0e31ca-59a5-31a6-8d87-12429a173d34",
+  "id": "string",
+  "teamsAppId": "string",
   "displayName": "Test App",
   "version": "1.0.0",
 }
 ```
+
+# See also
+
+- [teamsApp](teamsapp.md)
+- [teamsAppInstallation](teamsappinstallation.md)
+- [teamsTab](../resources/teamstab.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

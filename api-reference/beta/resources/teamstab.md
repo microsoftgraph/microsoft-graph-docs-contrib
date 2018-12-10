@@ -1,3 +1,8 @@
+---
+title: "teamsTab resource type"
+description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "
+---
+
 # teamsTab resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -8,11 +13,11 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List tabs](../api/teamstab_list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[Get tab](../api/teamstab_get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
-|[Add tab](../api/teamstab_add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Remove tab](../api/teamstab_delete.md) | None | Removes (unpins) a tab from a channel.|
-|[Update tab](../api/teamstab_update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
+|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
+|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
+|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
+|[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
+|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 
 ## Properties
@@ -40,13 +45,14 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.teamsTab"
 }-->
 
 ```json
 {  
-  "id": "guid",
-  "name": "string",
+  "id": "string",
+  "displayName": "string",
   "teamsAppId": "string",
   "sortOrderIndex": "string",
   "webUrl": "string",
@@ -64,3 +70,7 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+## See also
+
+[Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
