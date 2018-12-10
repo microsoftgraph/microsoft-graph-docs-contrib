@@ -52,7 +52,8 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/
 
 Note that you can use `$filter`, `any`, and the `eq` operator on only the **address** sub-property of instances in an **emailAddresses** collection. That is, you cannot filter on the **name** or any other sub-property of an instance of **emailAddresses**, nor can you apply any other operator or function with `filter`, such as `ne`, `le`, and `startswith()`.
 
-For general information on the `$filter` query parameter, see [OData Query Parameters](/graph/query-parameters).
+For general information on the `$filter` query parameter, see [OData query parameters](/graph/query-parameters).
+
 
 
 ## Request headers

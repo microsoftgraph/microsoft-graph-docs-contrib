@@ -19,6 +19,28 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | Beta | Added the `createdDateTime` property to the [organization](/graph/api/resources/organization?view=graph-rest-beta) resource.|
 | Addition | v1.0 | Added method `memberOf` to get a [devices](/graph/api/resources/device?view=graph-rest-1.0) direct [membership](/graph/api/device-list-memberOf?view=graph-rest-1.0). This method has been added for getting the list of memberships including nested memberships.|
 
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Introduced new resource type [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+|Addition |beta| Introduced new resource type [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
+|Addition |beta| Added the isFavoriteByDefault, mail, and webUrl properties to [channel](/graph/api/resources/channel?view=graph-rest-beta).|
+|Addition |beta| Added the displayName property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the description property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the classification property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the [specialization](/graph/api/resources/teamspecialization?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the [visibility](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the [template](/graph/api/resources/teamstemplate?view=graph-rest-beta) property to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Added the owners collection to [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamVisibilityType.|
+|Addition |beta| Introduced new enum member unknownFutureValue to giphyRatingType.|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamsAsyncOperationType.|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamsAsyncOperationStatus.|
+|Addition |beta| Introduced new enum member unknownFutureValue to teamsAppDistributionMethod.|
+|Addition |beta| Introduced new resource [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+
+
 ### Privileged Identity Management APIs
 
 | **Change type** | **Version**   | **Description**                          |

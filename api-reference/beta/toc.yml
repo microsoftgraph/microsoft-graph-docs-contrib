@@ -6289,6 +6289,8 @@
           href: api/device-post-registeredowners.md
         - name: Create registered user
           href: api/device-post-registeredusers.md
+        - name: List device groups
+          href: api/device-list-memberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -7411,6 +7413,8 @@
         href: resources/team.md
         items:
         - name: Create team
+          href: api/team-post.md
+        - name: Create team from group
           href: api/team-put-teams.md
         - name: Get team
           href: api/team-get.md
