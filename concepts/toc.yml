@@ -24,25 +24,25 @@
           href: https://developer.microsoft.com/graph/terms-of-use
       - name: Microsoft Graph data connect (preview)
         href: data-connect-overview.md
-      - name: Training
-        href: training.md
+      - name: Tutorials
+        href: tutorials.md
         items:
         - name: ASP.NET
-          href: /graph/training/aspnet-tutorial/
+          href: /graph/tutorials/aspnet
         - name: Microsoft Flow
-          href: /graph/training/flow-tutorial/
+          href: /graph/tutorials/flow
         - name: Node.js
-          href: /graph/training/node-tutorial/
+          href: /graph/tutorials/node
         - name: PHP
-          href: /graph/training/php-tutorial/
+          href: /graph/tutorials/php
         - name: Python
-          href: /graph/training/python-tutorial/
+          href: /graph/tutorials/python
         - name: Ruby
-          href: /graph/training/ruby-tutorial/
+          href: /graph/tutorials/ruby
         - name: React
-          href: /graph/training/react-tutorial/
+          href: /graph/tutorials/react
         - name: UWP
-          href: /graph/training/uwp-tutorial/
+          href: /graph/tutorials/uwp
     - name: Learn
       expanded: true
       items:
