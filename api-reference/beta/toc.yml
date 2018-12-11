@@ -6289,6 +6289,8 @@
           href: api/device-post-registeredowners.md
         - name: Create registered user
           href: api/device-post-registeredusers.md
+        - name: List device groups
+          href: api/device-list-memberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -6474,9 +6476,9 @@
           - name: Self role deactivate
             href: api/privilegedrole-selfdeactivate.md
           - name: Get role settings
-            href: api/privilegedrolesettings_get.md
+            href: api/privilegedrolesettings-get.md
           - name: Update role settings
-            href: api/privilegedrolesettings_update.md
+            href: api/privilegedrolesettings-update.md
           - name: Get role summary
             href: api/privilegedrolesummary-get.md
         - name: Privileged role assignment
@@ -6500,13 +6502,13 @@
           href: resources/privilegedroleassignmentrequest.md
           items:
           - name: List role assignments
-            href: api/privilegedroleassignmentrequest_list.md
+            href: api/privilegedroleassignmentrequest-list.md
           - name: Create role assignments
-            href: api/privilegedroleassignmentrequest_post.md
+            href: api/privilegedroleassignmentrequest-post.md
           - name: Cancel role assignment
-            href: api/privilegedroleassignmentrequest_cancel.md
+            href: api/privilegedroleassignmentrequest-cancel.md
           - name: Get my role assignments
-            href: api/privilegedroleassignmentrequest_my.md
+            href: api/privilegedroleassignmentrequest-my.md
         - name: Audit event
           href: resources/privilegedoperationevent.md
           items:
@@ -6519,6 +6521,8 @@
             href: api/governanceresource-list.md
           - name: Get
             href: api/governanceresource-get.md
+          - name: Register
+            href: api/governanceresource-register.md
         - name: Role definitions
           href: resources/governanceroledefinition.md
           items:
@@ -7409,6 +7413,8 @@
         href: resources/team.md
         items:
         - name: Create team
+          href: api/team-post.md
+        - name: Create team from group
           href: api/team-put-teams.md
         - name: Get team
           href: api/team-get.md
@@ -7423,7 +7429,7 @@
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams
-          href: /en-us/concepts/teams-list-all-teams
+          href: /graph/teams-list-all-teams?toc=./ref/toc.json
       - name: Group (team)
         href: resources/group.md
         items:
