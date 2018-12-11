@@ -5,21 +5,21 @@ description: "Multipurpose Internet Mail Extensions (MIME) is an industry email 
 
 # Get MIME content from a message (preview)
 
-Multipurpose Internet Mail Extensions (MIME) is an industry email standard. Many email applications create messages in MIME format and save them in files with the .EML extension. 
+MIME is an industry email standard. Many email applications create messages in MIME format and save them in files with the .EML extension. 
 Even though Outlook _does not save_ messages in MIME format, you can now use a `$value` segment to get the MIME content of an Outlook message. You can then save the content in a .EML file 
 and attach the file to records in business systems, such as those for CRM, ERP, and bug tracking. 
 
-> **Important:** This capability is currently available only in the /beta version. Similar to other API in preview status, it is subject to change. Do not use this capability in production apps. For more information, see [versioning and support](versioning-and-support.md).
+> **Important:** This capability is currently available only in the /beta version. Similar to other APIs in preview status, it is subject to change. Do not use this capability in production apps. For more information, see [versioning and support](versioning-and-support.md).
 
 ## What is MIME?
 
-MIME is a standard used by Internet email to transmit the following types of content via SMTP: 
+MIME is a standard used by internet email to transmit the following types of content via SMTP: 
 
-- plain text message
-- message with alternative content (i.e., in both plain text and HTML)
-- reply message with the original message attached
-- text message with attachments of image, audio, video, or application files  
-- other message constructs.
+- Plain text message
+- Message with alternative content (i.e., in both plain text and HTML)
+- Reply message with the original message attached
+- Text message with attachments of image, audio, video, or application files  
+- Other message constructs
 
 ## Get MIME content from an Outlook message
 
@@ -31,14 +31,14 @@ You can get the MIME representation of a message by appending the `$value` segme
 GET /me/messages/{id}/$value
 ```
 
-The following are typical MIME headers in a message. For more information, see [MIME](https://en.wikipedia.org/wiki/MIME).
+The following are typical MIME headers in a message. For more information, see [RFC 2045](https://tools.ietf.org/html/rfc2045).
 
-- `MIME-Version` which indicates the message is MIME-formatted.
-- `Content-Type` which indicates the media type of the message or a part of the message, represented by a *type* and *subtype*. It also 
+- `MIME-Version` - Indicates the message is MIME-formatted.
+- `Content-Type` - Indicates the media type of the message or a part of the message, represented by a *type* and *subtype*. It also 
 includes a `boundary` field which specifies a string as the MIME boundary or as the encapsulation boundary, depending on the location of `Content-Type`. 
-- `Content-Disposition` which provides details of an attachment such as its presentation style (`inline` or `attachment`), filenames, and 
+- `Content-Disposition` - Provides details of an attachment such as its presentation style (`inline` or `attachment`), filenames, and 
 creation and last modification dates.
-- `Content-Transfer-Encoding` which specifies the encoding method to represent binary data.
+- `Content-Transfer-Encoding` - Specifies the encoding method to represent binary data.
 
 
 ## Example
