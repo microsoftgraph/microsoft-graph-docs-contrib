@@ -7,9 +7,10 @@ description: "Retrieve the properties and relationships of a **riskyUsers** obje
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
-
 Retrieve the properties and relationships of a **riskyUsers** object.
+
+> **Note:** This API requires an Azure AD Premium P2 license.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
