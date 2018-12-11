@@ -7,9 +7,9 @@ description: "Represents Azure AD users who are at risk. Azure AD continually ev
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
-
 Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
+
+> **Note:** This API requires an Azure AD Premium P2 license.
 
 For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
 
