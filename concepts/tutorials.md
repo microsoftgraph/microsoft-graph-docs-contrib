@@ -9,14 +9,15 @@ Microsoft Graph tutorials are step-by-step training exercises that guide you thr
 
 The following tutorials are currently available:
 
-- [ASP.NET](https://docs.microsoft.com/graph/training/aspnet-tutorial/)
-- [Microsoft Flow](https://docs.microsoft.com/graph/training/flow-tutorial/)
-- [Node.js](https://docs.microsoft.com/graph/training/node-tutorial/)
-- [PHP](https://docs.microsoft.com/graph/training/php-tutorial/)
-- [Python](https://docs.microsoft.com/graph/training/python-tutorial/)
-- [Ruby](https://docs.microsoft.com/graph/training/ruby-tutorial/)
-- [React](https://docs.microsoft.com/graph/training/react-tutorial/)
-- [UWP](https://docs.microsoft.com/graph/training/uwp-tutorial/)
+- [Angular](https://docs.microsoft.com/graph/tutorials/aspnet/)
+- [ASP.NET](https://docs.microsoft.com/graph/tutorials/angular/)
+- [Microsoft Flow](https://docs.microsoft.com/graph/tutorials/flow/)
+- [Node.js](https://docs.microsoft.com/graph/tutorials/node/)
+- [PHP](https://docs.microsoft.com/graph/tutorials/php/)
+- [Python](https://docs.microsoft.com/graph/tutorials/python/)
+- [Ruby](https://docs.microsoft.com/graph/tutorials/ruby/)
+- [React](https://docs.microsoft.com/graph/tutorials/react/)
+- [UWP](https://docs.microsoft.com/graph/tutorials/uwp/)
 
 Don't see your preferred language or platform? Request a tutorial for it on [UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis).
 
