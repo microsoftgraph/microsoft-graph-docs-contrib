@@ -9,8 +9,8 @@ Microsoft Graph tutorials are step-by-step training exercises that guide you thr
 
 The following tutorials are currently available:
 
-- [Angular](https://docs.microsoft.com/graph/tutorials/aspnet/)
-- [ASP.NET](https://docs.microsoft.com/graph/tutorials/angular/)
+- [Angular](https://docs.microsoft.com/graph/tutorials/angular/)
+- [ASP.NET](https://docs.microsoft.com/graph/tutorials/aspnet/)
 - [Microsoft Flow](https://docs.microsoft.com/graph/tutorials/flow/)
 - [Node.js](https://docs.microsoft.com/graph/tutorials/node/)
 - [PHP](https://docs.microsoft.com/graph/tutorials/php/)
