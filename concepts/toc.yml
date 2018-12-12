@@ -27,6 +27,8 @@
       - name: Tutorials
         href: tutorials.md
         items:
+        - name: Angular
+          href: /graph/tutorials/angular
         - name: ASP.NET
           href: /graph/tutorials/aspnet
         - name: Microsoft Flow
