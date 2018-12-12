@@ -63,14 +63,27 @@ Content-length: 222
 {
   "value": [
     {
-      "businessPhones": [
-        "businessPhones-value"
+      "addresses":[
+          {
+            "city": "string",
+            "countryOrRegion": "string",
+            "officeLocation": "string",
+            "postalCode": "string",
+            "postOfficeBox": "string",
+            "state": "string",
+            "street": "string",
+            "type": "string"
+          }
       ],
-      "city": "city-value",
       "companyName": "companyName-value",
-      "country": "country-value",
       "department": "department-value",
-      "displayName": "displayName-value"
+      "displayName": "displayName-value",
+      "phones":[
+          {
+            "type": "string",
+            "number": "string"
+          }
+      ]
     }
   ]
 }
