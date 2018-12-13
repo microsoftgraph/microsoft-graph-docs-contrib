@@ -5,7 +5,7 @@ description: "Represents the business address of a resource such as a contact or
 
 # physicalOfficeAddress resource type
 
-Represents the business address of a resource such as an organizational contact.  Derives from the [physicalAddress](physicalAddress.md) resource type.
+Represents the business address of a resource such as an organizational contact.
 
 ## Properties
 
@@ -15,10 +15,8 @@ Represents the business address of a resource such as an organizational contact.
 |countryOrRegion|String|The country or region. It's a free-format string value, for example, "United States".|
 |officeLocation  | String | Office location such as building and office number for an organizational contact.  |
 |postalCode|String|The postal code.|
-|postOfficeBox|String|The post office box number.|
 |state|String|The state.|
 |street|String|The street.|
-|type|String|The type of address. Possible values are: `unknown`, `home`, `business`, `other`.|
 
 ## JSON representation
 
@@ -38,10 +36,8 @@ Here is a JSON representation of the resource
   "countryOrRegion": "string",
   "officeLocation": "string",
   "postalCode": "string",
-  "postOfficeBox": "string",
   "state": "string",
-  "street": "string",
-  "type": "string"
+  "street": "string"
 }
 
 ```

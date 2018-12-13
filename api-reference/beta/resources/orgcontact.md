@@ -37,7 +37,7 @@ description: "Here is a JSON representation of the resource"
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | Date and time when this organizational contact was last synchronized from on-premises AD. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.   |
 | onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection       | List of any synchronization provisioning errors for this organizational contact.                                                                                                                                                                                                                                                                                                |
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; **null** if this object has never been synced from an on-premises directory (default).|
-| phones                       | [phone](phone.md)                             | List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection.                                                                                                                       |
+| phones                       | [phone](phone.md) collection                            | List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection.                                                                                                                       |
 | proxyAddresses               | String collection                                         | For example: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]. The **any** operator is required for filter expressions on multi-valued properties. Supports \$filter.                                                                                                                                                                               |
 | surname                      | String                                                     | Last name for this organizational contact.                          |
 
@@ -77,7 +77,7 @@ Here is a JSON representation of the resource
   "onPremisesLastSyncDateTime": "string (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSyncEnabled": true,
-  "phones": [{"@odata.type": "microsoft.graph.phones"}],
+  "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "proxyAddresses": ["string"],
   "surname": "string"
 }

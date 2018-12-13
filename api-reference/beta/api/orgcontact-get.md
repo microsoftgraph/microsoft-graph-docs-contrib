@@ -65,10 +65,8 @@ Content-length: 222
         "countryOrRegion": "string",
         "officeLocation": "string",
         "postalCode": "string",
-        "postOfficeBox": "string",
         "state": "string",
-        "street": "string",
-        "type": "string"
+        "street": "string"
       }
   ],
   "companyName": "companyName-value",
