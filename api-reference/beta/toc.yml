@@ -6440,6 +6440,39 @@
           href: api/organization-get.md
         - name: Update org details
           href: api/organization-update.md
+      - name: Organizational contacts
+        href: resources/orgcontact.md
+        items:
+        - name: Contact
+          href: resources/orgcontact.md
+          items:
+          - name: List org contacts
+            href: api/orgcontact-list.md
+          - name: Get org contact
+            href: api/orgcontact-get.md
+          - name: Update org contact
+            href: api/orgcontact-update.md
+          - name: Delete org contact
+            href: api/orgcontact-delete.md
+        - name: Groups
+          href: resources/group.md
+          items:
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get member groups
+            href: api/orgcontact-getmembergroups.md
+          - name: Check member groups
+            href: api/orgcontact-checkmembergroups.md
+        - name: Org hierarchy
+          href: resources/directoryobject.md
+          items:
+          - name: List direct reports
+            href: api/orgcontact-list-directreports.md
+        - name: Directory object
+          href: resources/directoryobject.md
+          items:
+          - name: Get member objects
+            href: api/orgcontact-getmemberobjects.md
       - name: Policies
         href: resources/policy.md
         items:
@@ -6890,39 +6923,6 @@
         items:
         - name: Get resource
           href: api/resource-get.md
-    - name: Organizational contacts
-      href: resources/orgcontact.md
-      items:
-      - name: Contact
-        href: resources/orgcontact.md
-        items:
-        - name: List org contacts
-          href: api/orgcontact-list.md
-        - name: Get org contact
-          href: api/orgcontact-get.md
-        - name: Update org contact
-          href: api/orgcontact-update.md
-        - name: Delete org contact
-          href: api/orgcontact-delete.md
-      - name: Groups
-        href: resources/group.md
-        items:
-        - name: List memberOf
-          href: api/orgcontact-list-memberof.md
-        - name: Get member groups
-          href: api/orgcontact-getmembergroups.md
-        - name: Check member groups
-          href: api/orgcontact-checkmembergroups.md
-      - name: Org hierarchy
-        href: resources/directoryobject.md
-        items:
-        - name: List direct reports
-          href: api/orgcontact-list-directreports.md
-      - name: Directory object
-        href: resources/directoryobject.md
-        items:
-        - name: Get member objects
-          href: api/orgcontact-getmemberobjects.md
     - name: Personal contacts
       href: resources/contact.md
       items:
