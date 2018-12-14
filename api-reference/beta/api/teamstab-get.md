@@ -67,7 +67,7 @@ Content-length: 401
   "teamsApp": {
       "id": "0d820ecd-def2-4297-adad-78056cde7c78",
       "externalId": null,
-      "displayName": "OneNote",
+      "displayName": "Contoso",
       "distributionMethod": "store"
   },
   "sortOrderIndex": 20,
