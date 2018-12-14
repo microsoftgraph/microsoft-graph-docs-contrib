@@ -58,7 +58,7 @@ The following table lists the corresponding tutorial and GitHub repository for e
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
 
-The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other authentication flows in the [Azure Active Directory](/azure/active-directory/develop/authentication-scenarios) documentation.
+The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other authentication flows in the [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios) documentation.
 
 ### What if I run into an unexpected error or problem with a quick start?
 
