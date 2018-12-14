@@ -59,7 +59,7 @@ Content-type: application/json
   "value": [
     {
       "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
-      "name": "My Contoso Tab - updated",
+      "displayName": "My Contoso Tab - updated",
       "configuration": {
         "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
         "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
@@ -76,7 +76,7 @@ Content-type: application/json
     },
     {
       "id": "b5d5f001-0471-49a5-aac4-04ef96683be0",
-      "name": "My Planner Tab",
+      "displayName": "My Planner Tab",
       "configuration": null,
       "sortOrderIndex": 21,
       "teamsApp": {
