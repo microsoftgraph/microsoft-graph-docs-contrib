@@ -1,6 +1,6 @@
 ---
 title: "user resource type"
-description: "Represents an Azure AD user account. Inherits from directoryObject."
+description: "Represents an Azure AD user account. Inherits from directoryObject."author: "dkershaw10"
 ---
 
 # user resource type

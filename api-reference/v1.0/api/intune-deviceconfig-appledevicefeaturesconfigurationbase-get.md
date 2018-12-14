@@ -1,6 +1,6 @@
 ---
 title: "Get appleDeviceFeaturesConfigurationBase"
-description: "Read properties and relationships of the appleDeviceFeaturesConfigurationBase object."
+description: "Read properties and relationships of the appleDeviceFeaturesConfigurationBase object."author: "tfitzmac"
 ---
 
 # Get appleDeviceFeaturesConfigurationBase

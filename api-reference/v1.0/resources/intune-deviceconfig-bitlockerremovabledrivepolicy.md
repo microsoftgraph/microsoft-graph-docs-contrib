@@ -1,6 +1,6 @@
 ---
 title: "bitLockerRemovableDrivePolicy resource type"
-description: "BitLocker Removable Drive Policies."
+description: "BitLocker Removable Drive Policies."author: "tfitzmac"
 ---
 
 # bitLockerRemovableDrivePolicy resource type

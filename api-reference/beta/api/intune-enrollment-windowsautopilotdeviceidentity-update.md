@@ -1,6 +1,6 @@
 ---
 title: "Update windowsAutopilotDeviceIdentity"
-description: "Update the properties of a windowsAutopilotDeviceIdentity object."
+description: "Update the properties of a windowsAutopilotDeviceIdentity object."author: "tfitzmac"
 ---
 
 # Update windowsAutopilotDeviceIdentity

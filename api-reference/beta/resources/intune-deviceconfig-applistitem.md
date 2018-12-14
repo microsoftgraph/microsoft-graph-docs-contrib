@@ -1,6 +1,6 @@
 ---
 title: "appListItem resource type"
-description: "Represents an app in the list of managed applications"
+description: "Represents an app in the list of managed applications"author: "tfitzmac"
 ---
 
 # appListItem resource type

@@ -1,6 +1,6 @@
 ---
 title: "List macOSWiFiConfigurations"
-description: "List properties and relationships of the macOSWiFiConfiguration objects."
+description: "List properties and relationships of the macOSWiFiConfiguration objects."author: "tfitzmac"
 ---
 
 # List macOSWiFiConfigurations

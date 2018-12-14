@@ -1,6 +1,6 @@
 ---
 title: "ratingAppsType enum type"
-description: "Apps rating as in media content"
+description: "Apps rating as in media content"author: "tfitzmac"
 ---
 
 # ratingAppsType enum type

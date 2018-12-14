@@ -1,6 +1,6 @@
 ---
 title: "Get officeSuiteApp"
-description: "Read properties and relationships of the officeSuiteApp object."
+description: "Read properties and relationships of the officeSuiteApp object."author: "tfitzmac"
 ---
 
 # Get officeSuiteApp

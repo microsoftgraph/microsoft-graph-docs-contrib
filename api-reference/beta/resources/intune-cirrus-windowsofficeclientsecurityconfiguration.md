@@ -1,6 +1,6 @@
 ---
 title: "windowsOfficeClientSecurityConfiguration resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # windowsOfficeClientSecurityConfiguration resource type

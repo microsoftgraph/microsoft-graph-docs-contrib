@@ -1,6 +1,6 @@
 ---
 title: "emailSyncDuration enum type"
-description: "Possible values for email sync duration."
+description: "Possible values for email sync duration."author: "tfitzmac"
 ---
 
 # emailSyncDuration enum type

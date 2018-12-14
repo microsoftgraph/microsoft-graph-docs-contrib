@@ -1,6 +1,6 @@
 ---
 title: "macOSCertificateProfileBase resource type"
-description: "Mac OS certificate profile."
+description: "Mac OS certificate profile."author: "tfitzmac"
 ---
 
 # macOSCertificateProfileBase resource type

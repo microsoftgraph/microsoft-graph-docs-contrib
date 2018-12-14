@@ -1,6 +1,6 @@
 ---
 title: "Create iosVppApp"
-description: "Create a new iosVppApp object."
+description: "Create a new iosVppApp object."author: "tfitzmac"
 ---
 
 # Create iosVppApp

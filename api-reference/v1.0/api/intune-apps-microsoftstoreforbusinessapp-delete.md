@@ -1,6 +1,6 @@
 ---
 title: "Delete microsoftStoreForBusinessApp"
-description: "Deletes a microsoftStoreForBusinessApp."
+description: "Deletes a microsoftStoreForBusinessApp."author: "tfitzmac"
 ---
 
 # Delete microsoftStoreForBusinessApp

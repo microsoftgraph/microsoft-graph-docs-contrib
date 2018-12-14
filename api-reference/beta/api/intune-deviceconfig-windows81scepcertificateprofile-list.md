@@ -1,6 +1,6 @@
 ---
 title: "List windows81SCEPCertificateProfiles"
-description: "List properties and relationships of the windows81SCEPCertificateProfile objects."
+description: "List properties and relationships of the windows81SCEPCertificateProfile objects."author: "tfitzmac"
 ---
 
 # List windows81SCEPCertificateProfiles

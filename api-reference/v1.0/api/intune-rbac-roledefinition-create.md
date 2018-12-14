@@ -1,6 +1,6 @@
 ---
 title: "Create roleDefinition"
-description: "Create a new roleDefinition object."
+description: "Create a new roleDefinition object."author: "tfitzmac"
 ---
 
 # Create roleDefinition

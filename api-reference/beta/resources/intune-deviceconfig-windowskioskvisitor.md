@@ -1,6 +1,6 @@
 ---
 title: "windowsKioskVisitor resource type"
-description: "The class used to identify a visitor kiosk account"
+description: "The class used to identify a visitor kiosk account"author: "tfitzmac"
 ---
 
 # windowsKioskVisitor resource type

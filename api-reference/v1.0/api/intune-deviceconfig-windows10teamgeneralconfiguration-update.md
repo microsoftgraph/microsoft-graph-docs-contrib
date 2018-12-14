@@ -1,6 +1,6 @@
 ---
 title: "Update windows10TeamGeneralConfiguration"
-description: "Update the properties of a windows10TeamGeneralConfiguration object."
+description: "Update the properties of a windows10TeamGeneralConfiguration object."author: "tfitzmac"
 ---
 
 # Update windows10TeamGeneralConfiguration

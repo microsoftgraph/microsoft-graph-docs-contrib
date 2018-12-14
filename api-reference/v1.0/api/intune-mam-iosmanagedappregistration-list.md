@@ -1,6 +1,6 @@
 ---
 title: "List iosManagedAppRegistrations"
-description: "List properties and relationships of the iosManagedAppRegistration objects."
+description: "List properties and relationships of the iosManagedAppRegistration objects."author: "tfitzmac"
 ---
 
 # List iosManagedAppRegistrations

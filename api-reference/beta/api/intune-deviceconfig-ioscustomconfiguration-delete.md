@@ -1,6 +1,6 @@
 ---
 title: "Delete iosCustomConfiguration"
-description: "Deletes a iosCustomConfiguration."
+description: "Deletes a iosCustomConfiguration."author: "tfitzmac"
 ---
 
 # Delete iosCustomConfiguration

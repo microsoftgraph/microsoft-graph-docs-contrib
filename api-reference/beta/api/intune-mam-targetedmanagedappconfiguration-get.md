@@ -1,6 +1,6 @@
 ---
 title: "Get targetedManagedAppConfiguration"
-description: "Read properties and relationships of the targetedManagedAppConfiguration object."
+description: "Read properties and relationships of the targetedManagedAppConfiguration object."author: "tfitzmac"
 ---
 
 # Get targetedManagedAppConfiguration

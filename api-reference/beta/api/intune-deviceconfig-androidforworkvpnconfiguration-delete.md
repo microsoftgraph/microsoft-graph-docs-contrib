@@ -1,6 +1,6 @@
 ---
 title: "Delete androidForWorkVpnConfiguration"
-description: "Deletes a androidForWorkVpnConfiguration."
+description: "Deletes a androidForWorkVpnConfiguration."author: "tfitzmac"
 ---
 
 # Delete androidForWorkVpnConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "List photos"
-description: "Retrieve a list of profilePhoto objects."
+description: "Retrieve a list of profilePhoto objects."author: "dkershaw10"
 ---
 
 # List photos

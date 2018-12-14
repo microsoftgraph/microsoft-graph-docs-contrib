@@ -1,6 +1,6 @@
 ---
 title: "Delete androidForWorkPkcsCertificateProfile"
-description: "Deletes a androidForWorkPkcsCertificateProfile."
+description: "Deletes a androidForWorkPkcsCertificateProfile."author: "tfitzmac"
 ---
 
 # Delete androidForWorkPkcsCertificateProfile

@@ -1,6 +1,6 @@
 ---
 title: "Create windowsPhone81VpnConfiguration"
-description: "Create a new windowsPhone81VpnConfiguration object."
+description: "Create a new windowsPhone81VpnConfiguration object."author: "tfitzmac"
 ---
 
 # Create windowsPhone81VpnConfiguration

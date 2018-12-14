@@ -1,6 +1,6 @@
 ---
 title: "List deviceConfigurationAssignments"
-description: "List properties and relationships of the deviceConfigurationAssignment objects."
+description: "List properties and relationships of the deviceConfigurationAssignment objects."author: "tfitzmac"
 ---
 
 # List deviceConfigurationAssignments

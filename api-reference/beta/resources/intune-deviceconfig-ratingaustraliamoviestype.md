@@ -1,6 +1,6 @@
 ---
 title: "ratingAustraliaMoviesType enum type"
-description: "Movies rating labels in Australia"
+description: "Movies rating labels in Australia"author: "tfitzmac"
 ---
 
 # ratingAustraliaMoviesType enum type

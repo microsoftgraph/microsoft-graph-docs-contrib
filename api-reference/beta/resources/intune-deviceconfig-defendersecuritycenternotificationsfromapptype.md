@@ -1,6 +1,6 @@
 ---
 title: "defenderSecurityCenterNotificationsFromAppType enum type"
-description: "Possible values for defenderSecurityCenterNotificationsFromApp"
+description: "Possible values for defenderSecurityCenterNotificationsFromApp"author: "tfitzmac"
 ---
 
 # defenderSecurityCenterNotificationsFromAppType enum type

@@ -1,6 +1,6 @@
 ---
 title: "Create managedDeviceMobileAppConfigurationDeviceStatus"
-description: "Create a new managedDeviceMobileAppConfigurationDeviceStatus object."
+description: "Create a new managedDeviceMobileAppConfigurationDeviceStatus object."author: "tfitzmac"
 ---
 
 # Create managedDeviceMobileAppConfigurationDeviceStatus

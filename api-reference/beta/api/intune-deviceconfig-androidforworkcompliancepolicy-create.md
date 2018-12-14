@@ -1,6 +1,6 @@
 ---
 title: "Create androidForWorkCompliancePolicy"
-description: "Create a new androidForWorkCompliancePolicy object."
+description: "Create a new androidForWorkCompliancePolicy object."author: "tfitzmac"
 ---
 
 # Create androidForWorkCompliancePolicy

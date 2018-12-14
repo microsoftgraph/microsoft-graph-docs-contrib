@@ -1,6 +1,6 @@
 ---
 title: "Update macOSLobApp"
-description: "Update the properties of a macOSLobApp object."
+description: "Update the properties of a macOSLobApp object."author: "tfitzmac"
 ---
 
 # Update macOSLobApp

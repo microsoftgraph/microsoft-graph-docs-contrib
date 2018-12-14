@@ -1,6 +1,6 @@
 ---
 title: "windowsAutopilotDeploymentProfileAssignment resource type"
-description: "An assignment of a Windows Autopilot deployment profile to an AAD group."
+description: "An assignment of a Windows Autopilot deployment profile to an AAD group."author: "tfitzmac"
 ---
 
 # windowsAutopilotDeploymentProfileAssignment resource type

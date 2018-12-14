@@ -1,6 +1,6 @@
 ---
 title: "intendedPurpose enum type"
-description: "PFX Import Options."
+description: "PFX Import Options."author: "tfitzmac"
 ---
 
 # intendedPurpose enum type

@@ -1,6 +1,6 @@
 ---
 title: "Delete managedAndroidLobApp"
-description: "Deletes a managedAndroidLobApp."
+description: "Deletes a managedAndroidLobApp."author: "tfitzmac"
 ---
 
 # Delete managedAndroidLobApp

@@ -1,6 +1,6 @@
 ---
 title: "Get windowsWifiEnterpriseEAPConfiguration"
-description: "Read properties and relationships of the windowsWifiEnterpriseEAPConfiguration object."
+description: "Read properties and relationships of the windowsWifiEnterpriseEAPConfiguration object."author: "tfitzmac"
 ---
 
 # Get windowsWifiEnterpriseEAPConfiguration

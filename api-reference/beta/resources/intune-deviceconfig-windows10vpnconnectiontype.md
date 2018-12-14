@@ -1,6 +1,6 @@
 ---
 title: "windows10VpnConnectionType enum type"
-description: "VPN connection types."
+description: "VPN connection types."author: "tfitzmac"
 ---
 
 # windows10VpnConnectionType enum type

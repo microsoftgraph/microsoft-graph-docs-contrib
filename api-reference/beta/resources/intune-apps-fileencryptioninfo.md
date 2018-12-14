@@ -1,6 +1,6 @@
 ---
 title: "fileEncryptionInfo resource type"
-description: "Contains properties for file encryption information for the content version of a line of business app."
+description: "Contains properties for file encryption information for the content version of a line of business app."author: "tfitzmac"
 ---
 
 # fileEncryptionInfo resource type

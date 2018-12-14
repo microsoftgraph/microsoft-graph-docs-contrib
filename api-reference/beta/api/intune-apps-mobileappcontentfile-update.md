@@ -1,6 +1,6 @@
 ---
 title: "Update mobileAppContentFile"
-description: "Update the properties of a mobileAppContentFile object."
+description: "Update the properties of a mobileAppContentFile object."author: "tfitzmac"
 ---
 
 # Update mobileAppContentFile

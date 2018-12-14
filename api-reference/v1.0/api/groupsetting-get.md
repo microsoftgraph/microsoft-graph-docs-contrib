@@ -1,6 +1,6 @@
 ---
 title: "Get a group setting"
-description: "Retrieve the properties of a specific of group setting object."
+description: "Retrieve the properties of a specific of group setting object."author: "dkershaw10"
 ---
 
 # Get a group setting

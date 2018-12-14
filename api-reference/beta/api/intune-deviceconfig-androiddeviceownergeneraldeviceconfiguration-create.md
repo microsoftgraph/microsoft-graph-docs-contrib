@@ -1,6 +1,6 @@
 ---
 title: "Create androidDeviceOwnerGeneralDeviceConfiguration"
-description: "Create a new androidDeviceOwnerGeneralDeviceConfiguration object."
+description: "Create a new androidDeviceOwnerGeneralDeviceConfiguration object."author: "tfitzmac"
 ---
 
 # Create androidDeviceOwnerGeneralDeviceConfiguration

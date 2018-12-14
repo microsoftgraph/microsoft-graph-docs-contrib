@@ -1,6 +1,6 @@
 ---
 title: "Create userInstallStateSummary"
-description: "Create a new userInstallStateSummary object."
+description: "Create a new userInstallStateSummary object."author: "tfitzmac"
 ---
 
 # Create userInstallStateSummary

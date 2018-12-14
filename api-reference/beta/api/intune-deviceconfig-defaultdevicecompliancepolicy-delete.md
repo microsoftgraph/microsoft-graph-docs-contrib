@@ -1,6 +1,6 @@
 ---
 title: "Delete defaultDeviceCompliancePolicy"
-description: "Deletes a defaultDeviceCompliancePolicy."
+description: "Deletes a defaultDeviceCompliancePolicy."author: "tfitzmac"
 ---
 
 # Delete defaultDeviceCompliancePolicy

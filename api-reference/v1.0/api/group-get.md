@@ -1,6 +1,6 @@
 ---
 title: "Get group"
-description: "Get the properties and relationships of a group object."
+description: "Get the properties and relationships of a group object."author: "dkershaw10"
 ---
 
 # Get group

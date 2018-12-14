@@ -1,6 +1,6 @@
 ---
 title: "Get event"
-description: "Get an event object."
+description: "Get an event object."author: "dkershaw10"
 ---
 
 # Get event

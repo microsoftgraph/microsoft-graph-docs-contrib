@@ -1,6 +1,6 @@
 ---
 title: "deviceThreatProtectionLevel enum type"
-description: "Device threat protection levels for the Device Threat Protection API."
+description: "Device threat protection levels for the Device Threat Protection API."author: "tfitzmac"
 ---
 
 # deviceThreatProtectionLevel enum type

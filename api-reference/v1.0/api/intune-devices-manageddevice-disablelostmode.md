@@ -1,6 +1,6 @@
 ---
 title: "disableLostMode action"
-description: "Disable lost mode"
+description: "Disable lost mode"author: "tfitzmac"
 ---
 
 # disableLostMode action

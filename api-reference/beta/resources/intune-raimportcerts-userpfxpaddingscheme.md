@@ -1,6 +1,6 @@
 ---
 title: "userPfxPaddingScheme enum type"
-description: "Supported values for the padding scheme used by encryption provider."
+description: "Supported values for the padding scheme used by encryption provider."author: "tfitzmac"
 ---
 
 # userPfxPaddingScheme enum type

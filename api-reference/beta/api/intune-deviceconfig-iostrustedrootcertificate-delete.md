@@ -1,6 +1,6 @@
 ---
 title: "Delete iosTrustedRootCertificate"
-description: "Deletes a iosTrustedRootCertificate."
+description: "Deletes a iosTrustedRootCertificate."author: "tfitzmac"
 ---
 
 # Delete iosTrustedRootCertificate

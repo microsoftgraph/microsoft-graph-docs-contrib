@@ -1,6 +1,6 @@
 ---
 title: "androidForWorkDefaultAppPermissionPolicyType enum type"
-description: "Android For Work default app permission policy type."
+description: "Android For Work default app permission policy type."author: "tfitzmac"
 ---
 
 # androidForWorkDefaultAppPermissionPolicyType enum type

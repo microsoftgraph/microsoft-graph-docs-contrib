@@ -1,6 +1,6 @@
 ---
 title: "deviceAndAppManagementData resource type"
-description: "Exported Data"
+description: "Exported Data"author: "tfitzmac"
 ---
 
 # deviceAndAppManagementData resource type

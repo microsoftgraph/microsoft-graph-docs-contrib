@@ -1,6 +1,6 @@
 ---
 title: "Create androidWorkProfileCustomConfiguration"
-description: "Create a new androidWorkProfileCustomConfiguration object."
+description: "Create a new androidWorkProfileCustomConfiguration object."author: "tfitzmac"
 ---
 
 # Create androidWorkProfileCustomConfiguration

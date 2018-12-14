@@ -1,6 +1,6 @@
 ---
 title: "Get contact"
-description: "Retrieve the properties and relationships of contact object."
+description: "Retrieve the properties and relationships of contact object."author: "angelgolfer-ms"
 ---
 
 # Get contact

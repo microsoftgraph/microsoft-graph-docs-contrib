@@ -1,6 +1,6 @@
 ---
 title: "message: replyAll"
-description: "Reply to all recipients of a message by specifying a comment and modifying any updateable properties "
+description: "Reply to all recipients of a message by specifying a comment and modifying any updateable properties "author: "angelgolfer-ms"
 ---
 
 # message: replyAll

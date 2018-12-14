@@ -1,6 +1,6 @@
 ---
 title: "List settingStateDeviceSummaries"
-description: "List properties and relationships of the settingStateDeviceSummary objects."
+description: "List properties and relationships of the settingStateDeviceSummary objects."author: "tfitzmac"
 ---
 
 # List settingStateDeviceSummaries

@@ -1,6 +1,6 @@
 ---
 title: "Update win32LobApp"
-description: "Update the properties of a win32LobApp object."
+description: "Update the properties of a win32LobApp object."author: "tfitzmac"
 ---
 
 # Update win32LobApp

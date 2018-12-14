@@ -1,6 +1,6 @@
 ---
 title: "Get advancedThreatProtectionOnboardingStateSummary"
-description: "Read properties and relationships of the advancedThreatProtectionOnboardingStateSummary object."
+description: "Read properties and relationships of the advancedThreatProtectionOnboardingStateSummary object."author: "tfitzmac"
 ---
 
 # Get advancedThreatProtectionOnboardingStateSummary

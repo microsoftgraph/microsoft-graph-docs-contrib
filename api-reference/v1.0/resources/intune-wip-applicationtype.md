@@ -1,6 +1,6 @@
 ---
 title: "applicationType enum type"
-description: "Possible types of Application"
+description: "Possible types of Application"author: "tfitzmac"
 ---
 
 # applicationType enum type

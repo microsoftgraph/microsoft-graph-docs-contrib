@@ -1,6 +1,6 @@
 ---
 title: "ratingFranceMoviesType enum type"
-description: "Movies rating labels in France"
+description: "Movies rating labels in France"author: "tfitzmac"
 ---
 
 # ratingFranceMoviesType enum type

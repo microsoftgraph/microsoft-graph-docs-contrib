@@ -1,6 +1,6 @@
 ---
 title: "Create androidManagedStoreAppConfigurationSchema"
-description: "Create a new androidManagedStoreAppConfigurationSchema object."
+description: "Create a new androidManagedStoreAppConfigurationSchema object."author: "tfitzmac"
 ---
 
 # Create androidManagedStoreAppConfigurationSchema

@@ -1,6 +1,6 @@
 ---
 title: "directoryAudit resource type"
-description: "This resource represents the directory Audit items and its collection"
+description: "This resource represents the directory Audit items and its collection"author: "lleonard-msft"
 ---
 
 # directoryAudit resource type

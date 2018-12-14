@@ -1,6 +1,6 @@
 ---
 title: "Update androidLobApp"
-description: "Update the properties of a androidLobApp object."
+description: "Update the properties of a androidLobApp object."author: "tfitzmac"
 ---
 
 # Update androidLobApp

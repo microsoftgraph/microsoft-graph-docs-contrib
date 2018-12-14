@@ -1,6 +1,6 @@
 ---
 title: "Update windowsAppX"
-description: "Update the properties of a windowsAppX object."
+description: "Update the properties of a windowsAppX object."author: "tfitzmac"
 ---
 
 # Update windowsAppX

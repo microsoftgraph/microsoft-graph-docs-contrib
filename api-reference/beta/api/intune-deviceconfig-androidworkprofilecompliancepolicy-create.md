@@ -1,6 +1,6 @@
 ---
 title: "Create androidWorkProfileCompliancePolicy"
-description: "Create a new androidWorkProfileCompliancePolicy object."
+description: "Create a new androidWorkProfileCompliancePolicy object."author: "tfitzmac"
 ---
 
 # Create androidWorkProfileCompliancePolicy

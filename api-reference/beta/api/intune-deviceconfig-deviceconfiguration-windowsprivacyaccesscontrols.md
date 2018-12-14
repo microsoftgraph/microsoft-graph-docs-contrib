@@ -1,6 +1,6 @@
 ---
 title: "windowsPrivacyAccessControls action"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # windowsPrivacyAccessControls action

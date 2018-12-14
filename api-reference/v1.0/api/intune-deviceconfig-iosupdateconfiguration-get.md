@@ -1,6 +1,6 @@
 ---
 title: "Get iosUpdateConfiguration"
-description: "Read properties and relationships of the iosUpdateConfiguration object."
+description: "Read properties and relationships of the iosUpdateConfiguration object."author: "tfitzmac"
 ---
 
 # Get iosUpdateConfiguration

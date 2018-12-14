@@ -1,6 +1,6 @@
 ---
 title: "educationPowerSchoolDataProvider resource"
-description: "Used to set up the school data synchronization profile when PowerSchool is used as the input source."
+description: "Used to set up the school data synchronization profile when PowerSchool is used as the input source."author: "mmast-msft"
 ---
 
 # educationPowerSchoolDataProvider resource

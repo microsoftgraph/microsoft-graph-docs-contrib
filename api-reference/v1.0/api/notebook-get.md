@@ -1,6 +1,6 @@
 ---
 title: "Get notebook"
-description: "Retrieve the properties and relationships of a notebook object."
+description: "Retrieve the properties and relationships of a notebook object."author: "Jewan-microsoft"
 ---
 
 # Get notebook

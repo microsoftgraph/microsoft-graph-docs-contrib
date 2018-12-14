@@ -1,6 +1,6 @@
 ---
 title: "Get windows10PFXImportCertificateProfile"
-description: "Read properties and relationships of the windows10PFXImportCertificateProfile object."
+description: "Read properties and relationships of the windows10PFXImportCertificateProfile object."author: "tfitzmac"
 ---
 
 # Get windows10PFXImportCertificateProfile

@@ -1,6 +1,6 @@
 ---
 title: "managedDevice resource type"
-description: "Devices that are managed or pre-enrolled through Intune"
+description: "Devices that are managed or pre-enrolled through Intune"author: "tfitzmac"
 ---
 
 # managedDevice resource type

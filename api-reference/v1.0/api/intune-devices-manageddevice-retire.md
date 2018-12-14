@@ -1,6 +1,6 @@
 ---
 title: "retire action"
-description: "Retire a device"
+description: "Retire a device"author: "tfitzmac"
 ---
 
 # retire action

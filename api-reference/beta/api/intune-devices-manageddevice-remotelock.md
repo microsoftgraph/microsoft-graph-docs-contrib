@@ -1,6 +1,6 @@
 ---
 title: "remoteLock action"
-description: "Remote lock"
+description: "Remote lock"author: "tfitzmac"
 ---
 
 # remoteLock action

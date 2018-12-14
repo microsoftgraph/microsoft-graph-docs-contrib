@@ -1,6 +1,6 @@
 ---
 title: "List participants"
-description: "Retrieve a list of participant objects in the call."
+description: "Retrieve a list of participant objects in the call."author: "VinodRavichandran"
 ---
 
 # List participants

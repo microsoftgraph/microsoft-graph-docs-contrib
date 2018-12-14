@@ -1,6 +1,6 @@
 ---
 title: "Create androidWorkProfilePkcsCertificateProfile"
-description: "Create a new androidWorkProfilePkcsCertificateProfile object."
+description: "Create a new androidWorkProfilePkcsCertificateProfile object."author: "tfitzmac"
 ---
 
 # Create androidWorkProfilePkcsCertificateProfile

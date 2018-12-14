@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementPartnerTenantState enum type"
-description: "Partner state of this tenant."
+description: "Partner state of this tenant."author: "tfitzmac"
 ---
 
 # deviceManagementPartnerTenantState enum type

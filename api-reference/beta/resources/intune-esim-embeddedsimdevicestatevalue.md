@@ -1,6 +1,6 @@
 ---
 title: "embeddedSIMDeviceStateValue enum type"
-description: "Describes the various states for an embedded SIM activation code."
+description: "Describes the various states for an embedded SIM activation code."author: "tfitzmac"
 ---
 
 # embeddedSIMDeviceStateValue enum type

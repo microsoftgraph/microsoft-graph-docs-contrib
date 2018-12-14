@@ -1,6 +1,6 @@
 ---
 title: "configurationManagerClientState enum type"
-description: "Configuration manager client state"
+description: "Configuration manager client state"author: "tfitzmac"
 ---
 
 # configurationManagerClientState enum type

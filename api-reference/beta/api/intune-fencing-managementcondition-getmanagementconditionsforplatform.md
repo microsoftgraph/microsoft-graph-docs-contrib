@@ -1,6 +1,6 @@
 ---
 title: "getManagementConditionsForPlatform function"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # getManagementConditionsForPlatform function

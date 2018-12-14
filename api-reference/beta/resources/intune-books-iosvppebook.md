@@ -1,6 +1,6 @@
 ---
 title: "iosVppEBook resource type"
-description: "A class containing the properties for iOS Vpp eBook."
+description: "A class containing the properties for iOS Vpp eBook."author: "tfitzmac"
 ---
 
 # iosVppEBook resource type

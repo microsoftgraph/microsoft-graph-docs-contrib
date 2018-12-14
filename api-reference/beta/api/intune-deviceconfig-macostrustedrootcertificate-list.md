@@ -1,6 +1,6 @@
 ---
 title: "List macOSTrustedRootCertificates"
-description: "List properties and relationships of the macOSTrustedRootCertificate objects."
+description: "List properties and relationships of the macOSTrustedRootCertificate objects."author: "tfitzmac"
 ---
 
 # List macOSTrustedRootCertificates

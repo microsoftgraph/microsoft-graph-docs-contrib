@@ -1,6 +1,6 @@
 ---
 title: "operatingSystemVersionRange resource type"
-description: "Operating System version range."
+description: "Operating System version range."author: "tfitzmac"
 ---
 
 # operatingSystemVersionRange resource type

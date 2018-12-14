@@ -1,6 +1,6 @@
 ---
 title: "List groupLifecyclePolicies"
-description: "List all the groupLifecyclePolicies."
+description: "List all the groupLifecyclePolicies."author: "dkershaw10"
 ---
 
 # List groupLifecyclePolicies

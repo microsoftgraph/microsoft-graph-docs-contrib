@@ -1,6 +1,6 @@
 ---
 title: "windows10AppType enum type"
-description: "Windows 10 Application type."
+description: "Windows 10 Application type."author: "tfitzmac"
 ---
 
 # windows10AppType enum type

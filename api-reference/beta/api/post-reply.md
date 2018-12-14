@@ -1,6 +1,6 @@
 ---
 title: "post: reply"
-description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "
+description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "author: "dkershaw10"
 ---
 
 # post: reply

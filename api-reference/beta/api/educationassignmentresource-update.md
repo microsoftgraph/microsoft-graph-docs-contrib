@@ -1,6 +1,6 @@
 ---
 title: "Update educationAssignmentResource"
-description: "Update the properties of resource associated with an assignment. Only teachers in a class can change assignment resource objects.  "
+description: "Update the properties of resource associated with an assignment. Only teachers in a class can change assignment resource objects.  "author: "mmast-msft"
 ---
 
 # Update educationAssignmentResource

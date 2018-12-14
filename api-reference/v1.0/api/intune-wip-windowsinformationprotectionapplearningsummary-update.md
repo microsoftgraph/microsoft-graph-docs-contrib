@@ -1,6 +1,6 @@
 ---
 title: "Update windowsInformationProtectionAppLearningSummary"
-description: "Update the properties of a windowsInformationProtectionAppLearningSummary object."
+description: "Update the properties of a windowsInformationProtectionAppLearningSummary object."author: "tfitzmac"
 ---
 
 # Update windowsInformationProtectionAppLearningSummary

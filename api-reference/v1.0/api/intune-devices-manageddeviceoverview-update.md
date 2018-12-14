@@ -1,6 +1,6 @@
 ---
 title: "Update managedDeviceOverview"
-description: "Update the properties of a managedDeviceOverview object."
+description: "Update the properties of a managedDeviceOverview object."author: "tfitzmac"
 ---
 
 # Update managedDeviceOverview

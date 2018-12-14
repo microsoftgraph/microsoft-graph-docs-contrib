@@ -1,6 +1,6 @@
 ---
 title: "List macOSEnterpriseWiFiConfigurations"
-description: "List properties and relationships of the macOSEnterpriseWiFiConfiguration objects."
+description: "List properties and relationships of the macOSEnterpriseWiFiConfiguration objects."author: "tfitzmac"
 ---
 
 # List macOSEnterpriseWiFiConfigurations

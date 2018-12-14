@@ -1,6 +1,6 @@
 ---
 title: "Create windows81GeneralConfiguration"
-description: "Create a new windows81GeneralConfiguration object."
+description: "Create a new windows81GeneralConfiguration object."author: "tfitzmac"
 ---
 
 # Create windows81GeneralConfiguration

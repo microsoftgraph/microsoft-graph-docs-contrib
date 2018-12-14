@@ -1,6 +1,6 @@
 ---
 title: "List managedIOSStoreApps"
-description: "List properties and relationships of the managedIOSStoreApp objects."
+description: "List properties and relationships of the managedIOSStoreApp objects."author: "tfitzmac"
 ---
 
 # List managedIOSStoreApps

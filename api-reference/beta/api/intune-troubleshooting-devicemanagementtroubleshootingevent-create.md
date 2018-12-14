@@ -1,6 +1,6 @@
 ---
 title: "Create deviceManagementTroubleshootingEvent"
-description: "Create a new deviceManagementTroubleshootingEvent object."
+description: "Create a new deviceManagementTroubleshootingEvent object."author: "tfitzmac"
 ---
 
 # Create deviceManagementTroubleshootingEvent

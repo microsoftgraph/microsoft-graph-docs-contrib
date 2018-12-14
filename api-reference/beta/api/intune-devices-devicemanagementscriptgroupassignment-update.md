@@ -1,6 +1,6 @@
 ---
 title: "Update deviceManagementScriptGroupAssignment"
-description: "Update the properties of a deviceManagementScriptGroupAssignment object."
+description: "Update the properties of a deviceManagementScriptGroupAssignment object."author: "tfitzmac"
 ---
 
 # Update deviceManagementScriptGroupAssignment

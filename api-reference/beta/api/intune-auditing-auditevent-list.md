@@ -1,6 +1,6 @@
 ---
 title: "List auditEvents"
-description: "List properties and relationships of the auditEvent objects."
+description: "List properties and relationships of the auditEvent objects."author: "tfitzmac"
 ---
 
 # List auditEvents

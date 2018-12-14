@@ -1,6 +1,6 @@
 ---
 title: "Update windows10GeneralConfiguration"
-description: "Update the properties of a windows10GeneralConfiguration object."
+description: "Update the properties of a windows10GeneralConfiguration object."author: "tfitzmac"
 ---
 
 # Update windows10GeneralConfiguration

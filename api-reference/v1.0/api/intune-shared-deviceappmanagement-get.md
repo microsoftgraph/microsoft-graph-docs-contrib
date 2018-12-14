@@ -1,6 +1,6 @@
 ---
 title: "Get deviceAppManagement"
-description: "Read properties and relationships of the deviceAppManagement object."
+description: "Read properties and relationships of the deviceAppManagement object."author: "tfitzmac"
 ---
 
 # Get deviceAppManagement

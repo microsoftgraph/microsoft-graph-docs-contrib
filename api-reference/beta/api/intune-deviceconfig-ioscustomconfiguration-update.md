@@ -1,6 +1,6 @@
 ---
 title: "Update iosCustomConfiguration"
-description: "Update the properties of a iosCustomConfiguration object."
+description: "Update the properties of a iosCustomConfiguration object."author: "tfitzmac"
 ---
 
 # Update iosCustomConfiguration

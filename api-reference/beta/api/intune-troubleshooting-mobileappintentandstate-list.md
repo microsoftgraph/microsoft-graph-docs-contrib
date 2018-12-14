@@ -1,6 +1,6 @@
 ---
 title: "List mobileAppIntentAndStates"
-description: "List properties and relationships of the mobileAppIntentAndState objects."
+description: "List properties and relationships of the mobileAppIntentAndState objects."author: "tfitzmac"
 ---
 
 # List mobileAppIntentAndStates

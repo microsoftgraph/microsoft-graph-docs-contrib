@@ -1,6 +1,6 @@
 ---
 title: "List groupSettingTemplates"
-description: "Group setting templates represents a set of templates  from which group settings may be created and used within a tenant.  This operation retrieves the list of available groupSettingTemplates objects."
+description: "Group setting templates represents a set of templates  from which group settings may be created and used within a tenant.  This operation retrieves the list of available groupSettingTemplates objects."author: "dkershaw10"
 ---
 
 # List groupSettingTemplates

@@ -1,6 +1,6 @@
 ---
 title: "windowsAssignedAccessProfile resource type"
-description: "Assigned Access profile for Windows."
+description: "Assigned Access profile for Windows."author: "tfitzmac"
 ---
 
 # windowsAssignedAccessProfile resource type

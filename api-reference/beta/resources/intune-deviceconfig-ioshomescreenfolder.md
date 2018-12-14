@@ -1,6 +1,6 @@
 ---
 title: "iosHomeScreenFolder resource type"
-description: "A folder containing pages of apps on the Home Screen"
+description: "A folder containing pages of apps on the Home Screen"author: "tfitzmac"
 ---
 
 # iosHomeScreenFolder resource type

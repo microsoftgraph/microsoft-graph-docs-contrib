@@ -1,6 +1,6 @@
 ---
 title: "Delete contact"
-description: "Delete contact."
+description: "Delete contact."author: "angelgolfer-ms"
 ---
 
 # Delete contact

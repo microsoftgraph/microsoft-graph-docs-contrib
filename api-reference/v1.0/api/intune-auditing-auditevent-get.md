@@ -1,6 +1,6 @@
 ---
 title: "Get auditEvent"
-description: "Read properties and relationships of the auditEvent object."
+description: "Read properties and relationships of the auditEvent object."author: "tfitzmac"
 ---
 
 # Get auditEvent

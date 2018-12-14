@@ -1,6 +1,6 @@
 ---
 title: "Update androidWorkProfileTrustedRootCertificate"
-description: "Update the properties of a androidWorkProfileTrustedRootCertificate object."
+description: "Update the properties of a androidWorkProfileTrustedRootCertificate object."author: "tfitzmac"
 ---
 
 # Update androidWorkProfileTrustedRootCertificate

@@ -1,6 +1,6 @@
 ---
 title: "List windowsInformationProtectionAppLockerFiles"
-description: "List properties and relationships of the windowsInformationProtectionAppLockerFile objects."
+description: "List properties and relationships of the windowsInformationProtectionAppLockerFile objects."author: "tfitzmac"
 ---
 
 # List windowsInformationProtectionAppLockerFiles

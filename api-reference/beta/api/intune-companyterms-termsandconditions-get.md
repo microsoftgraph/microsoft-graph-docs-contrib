@@ -1,6 +1,6 @@
 ---
 title: "Get termsAndConditions"
-description: "Read properties and relationships of the termsAndConditions object."
+description: "Read properties and relationships of the termsAndConditions object."author: "tfitzmac"
 ---
 
 # Get termsAndConditions

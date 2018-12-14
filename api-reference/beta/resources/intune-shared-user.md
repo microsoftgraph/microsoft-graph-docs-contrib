@@ -1,6 +1,6 @@
 ---
 title: "user resource type"
-description: "Represents an Azure Active Directory user object."
+description: "Represents an Azure Active Directory user object."author: "tfitzmac"
 ---
 
 # user resource type

@@ -1,6 +1,6 @@
 ---
 title: "List group memberOf"
-description: "Get groups and administrative units that the group is a direct member of."
+description: "Get groups and administrative units that the group is a direct member of."author: "dkershaw10"
 ---
 
 # List group memberOf

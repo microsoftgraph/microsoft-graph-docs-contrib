@@ -1,6 +1,6 @@
 ---
 title: "Delete windows10CustomConfiguration"
-description: "Deletes a windows10CustomConfiguration."
+description: "Deletes a windows10CustomConfiguration."author: "tfitzmac"
 ---
 
 # Delete windows10CustomConfiguration

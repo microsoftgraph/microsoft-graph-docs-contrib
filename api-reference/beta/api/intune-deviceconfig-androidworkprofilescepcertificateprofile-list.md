@@ -1,6 +1,6 @@
 ---
 title: "List androidWorkProfileScepCertificateProfiles"
-description: "List properties and relationships of the androidWorkProfileScepCertificateProfile objects."
+description: "List properties and relationships of the androidWorkProfileScepCertificateProfile objects."author: "tfitzmac"
 ---
 
 # List androidWorkProfileScepCertificateProfiles

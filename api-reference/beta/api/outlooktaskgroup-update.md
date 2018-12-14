@@ -1,6 +1,6 @@
 ---
 title: "Update outlooktaskgroup"
-description: "Update the writable properties of an Outlook task group."
+description: "Update the writable properties of an Outlook task group."author: "angelgolfer-ms"
 ---
 
 # Update outlooktaskgroup

@@ -1,6 +1,6 @@
 ---
 title: "Update windowsDomainJoinConfiguration"
-description: "Update the properties of a windowsDomainJoinConfiguration object."
+description: "Update the properties of a windowsDomainJoinConfiguration object."author: "tfitzmac"
 ---
 
 # Update windowsDomainJoinConfiguration

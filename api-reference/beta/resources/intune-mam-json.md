@@ -1,6 +1,6 @@
 ---
 title: "Json resource type"
-description: "Represents data returned in JSON format"
+description: "Represents data returned in JSON format"author: "tfitzmac"
 ---
 
 # Json resource type

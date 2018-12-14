@@ -1,6 +1,6 @@
 ---
 title: "Update mobileAppTroubleshootingEvent"
-description: "Update the properties of a mobileAppTroubleshootingEvent object."
+description: "Update the properties of a mobileAppTroubleshootingEvent object."author: "tfitzmac"
 ---
 
 # Update mobileAppTroubleshootingEvent

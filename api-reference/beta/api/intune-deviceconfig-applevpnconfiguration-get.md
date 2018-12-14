@@ -1,6 +1,6 @@
 ---
 title: "Get appleVpnConfiguration"
-description: "Read properties and relationships of the appleVpnConfiguration object."
+description: "Read properties and relationships of the appleVpnConfiguration object."author: "tfitzmac"
 ---
 
 # Get appleVpnConfiguration

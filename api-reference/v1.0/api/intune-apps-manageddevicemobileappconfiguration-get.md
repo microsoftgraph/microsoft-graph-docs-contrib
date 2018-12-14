@@ -1,6 +1,6 @@
 ---
 title: "Get managedDeviceMobileAppConfiguration"
-description: "Read properties and relationships of the managedDeviceMobileAppConfiguration object."
+description: "Read properties and relationships of the managedDeviceMobileAppConfiguration object."author: "tfitzmac"
 ---
 
 # Get managedDeviceMobileAppConfiguration

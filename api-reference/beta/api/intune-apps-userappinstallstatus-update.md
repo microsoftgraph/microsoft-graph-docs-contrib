@@ -1,6 +1,6 @@
 ---
 title: "Update userAppInstallStatus"
-description: "Update the properties of a userAppInstallStatus object."
+description: "Update the properties of a userAppInstallStatus object."author: "tfitzmac"
 ---
 
 # Update userAppInstallStatus

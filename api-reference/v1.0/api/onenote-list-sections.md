@@ -1,6 +1,6 @@
 ---
 title: "List sections"
-description: "Retrieve a list of onenoteSection objects."
+description: "Retrieve a list of onenoteSection objects."author: "Jewan-microsoft"
 ---
 
 # List sections

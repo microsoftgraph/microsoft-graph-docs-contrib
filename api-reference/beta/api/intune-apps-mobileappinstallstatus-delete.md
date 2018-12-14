@@ -1,6 +1,6 @@
 ---
 title: "Delete mobileAppInstallStatus"
-description: "Deletes a mobileAppInstallStatus."
+description: "Deletes a mobileAppInstallStatus."author: "tfitzmac"
 ---
 
 # Delete mobileAppInstallStatus

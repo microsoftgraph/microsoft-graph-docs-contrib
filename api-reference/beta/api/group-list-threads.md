@@ -1,6 +1,6 @@
 ---
 title: "List threads"
-description: "Get all the threads of a group."
+description: "Get all the threads of a group."author: "dkershaw10"
 ---
 
 # List threads

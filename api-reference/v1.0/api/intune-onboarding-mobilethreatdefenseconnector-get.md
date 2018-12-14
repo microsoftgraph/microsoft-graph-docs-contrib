@@ -1,6 +1,6 @@
 ---
 title: "Get mobileThreatDefenseConnector"
-description: "Read properties and relationships of the mobileThreatDefenseConnector object."
+description: "Read properties and relationships of the mobileThreatDefenseConnector object."author: "tfitzmac"
 ---
 
 # Get mobileThreatDefenseConnector

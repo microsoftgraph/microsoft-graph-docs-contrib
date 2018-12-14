@@ -1,6 +1,6 @@
 ---
 title: "Create educationUser"
-description: "Create a new user."
+description: "Create a new user."author: "mmast-msft"
 ---
 
 # Create educationUser

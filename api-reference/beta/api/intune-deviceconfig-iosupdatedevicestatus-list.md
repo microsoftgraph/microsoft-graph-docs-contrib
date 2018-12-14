@@ -1,6 +1,6 @@
 ---
 title: "List iosUpdateDeviceStatuses"
-description: "List properties and relationships of the iosUpdateDeviceStatus objects."
+description: "List properties and relationships of the iosUpdateDeviceStatus objects."author: "tfitzmac"
 ---
 
 # List iosUpdateDeviceStatuses

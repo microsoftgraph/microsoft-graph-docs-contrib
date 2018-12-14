@@ -1,6 +1,6 @@
 ---
 title: "Get androidWorkProfileEasEmailProfileBase"
-description: "Read properties and relationships of the androidWorkProfileEasEmailProfileBase object."
+description: "Read properties and relationships of the androidWorkProfileEasEmailProfileBase object."author: "tfitzmac"
 ---
 
 # Get androidWorkProfileEasEmailProfileBase

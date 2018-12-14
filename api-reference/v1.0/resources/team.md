@@ -1,6 +1,6 @@
 ---
 title: "team resource type"
-description: "A team in Microsoft Teams is a collection of channels. "
+description: "A team in Microsoft Teams is a collection of channels. "author: "nkramer"
 ---
 
 # team resource type

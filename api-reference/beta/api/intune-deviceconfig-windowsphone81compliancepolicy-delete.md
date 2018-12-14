@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsPhone81CompliancePolicy"
-description: "Deletes a windowsPhone81CompliancePolicy."
+description: "Deletes a windowsPhone81CompliancePolicy."author: "tfitzmac"
 ---
 
 # Delete windowsPhone81CompliancePolicy

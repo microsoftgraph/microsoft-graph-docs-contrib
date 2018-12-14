@@ -1,6 +1,6 @@
 ---
 title: "mobileContainedApp resource type"
-description: "An abstract class that represents a contained app in a mobileApp acting as a package."
+description: "An abstract class that represents a contained app in a mobileApp acting as a package."author: "tfitzmac"
 ---
 
 # mobileContainedApp resource type

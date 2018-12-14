@@ -1,6 +1,6 @@
 ---
 title: "androidEapType enum type"
-description: "Extensible Authentication Protocol (EAP) Configuration Types."
+description: "Extensible Authentication Protocol (EAP) Configuration Types."author: "tfitzmac"
 ---
 
 # androidEapType enum type

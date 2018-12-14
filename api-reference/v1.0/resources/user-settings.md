@@ -1,6 +1,6 @@
 ---
 title: "settings resource type"
-description: "The current user settings. "
+description: "The current user settings. "author: "dkershaw10"
 ---
 
 # settings resource type

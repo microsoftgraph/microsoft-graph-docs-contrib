@@ -1,6 +1,6 @@
 ---
 title: "getAssignedRoleIdsForLoggedInUser function"
-description: "Retrieves the assigned role definitions and role assignments of the currently authenticated user."
+description: "Retrieves the assigned role definitions and role assignments of the currently authenticated user."author: "tfitzmac"
 ---
 
 # getAssignedRoleIdsForLoggedInUser function

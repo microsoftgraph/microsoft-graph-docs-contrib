@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsPhone81GeneralConfiguration"
-description: "Deletes a windowsPhone81GeneralConfiguration."
+description: "Deletes a windowsPhone81GeneralConfiguration."author: "tfitzmac"
 ---
 
 # Delete windowsPhone81GeneralConfiguration

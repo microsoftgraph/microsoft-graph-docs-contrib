@@ -1,6 +1,6 @@
 ---
 title: "ratingUnitedStatesMoviesType enum type"
-description: "Movies rating labels in United States"
+description: "Movies rating labels in United States"author: "tfitzmac"
 ---
 
 # ratingUnitedStatesMoviesType enum type

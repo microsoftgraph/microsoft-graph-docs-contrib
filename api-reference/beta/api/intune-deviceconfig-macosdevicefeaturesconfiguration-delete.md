@@ -1,6 +1,6 @@
 ---
 title: "Delete macOSDeviceFeaturesConfiguration"
-description: "Deletes a macOSDeviceFeaturesConfiguration."
+description: "Deletes a macOSDeviceFeaturesConfiguration."author: "tfitzmac"
 ---
 
 # Delete macOSDeviceFeaturesConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "List iosVppEBookAssignments"
-description: "List properties and relationships of the iosVppEBookAssignment objects."
+description: "List properties and relationships of the iosVppEBookAssignment objects."author: "tfitzmac"
 ---
 
 # List iosVppEBookAssignments

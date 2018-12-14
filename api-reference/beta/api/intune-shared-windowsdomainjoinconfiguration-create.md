@@ -1,6 +1,6 @@
 ---
 title: "Create windowsDomainJoinConfiguration"
-description: "Create a new windowsDomainJoinConfiguration object."
+description: "Create a new windowsDomainJoinConfiguration object."author: "tfitzmac"
 ---
 
 # Create windowsDomainJoinConfiguration

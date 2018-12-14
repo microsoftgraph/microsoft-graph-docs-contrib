@@ -1,6 +1,6 @@
 ---
 title: "Update intuneBrandingProfile"
-description: "Update the properties of a intuneBrandingProfile object."
+description: "Update the properties of a intuneBrandingProfile object."author: "tfitzmac"
 ---
 
 # Update intuneBrandingProfile

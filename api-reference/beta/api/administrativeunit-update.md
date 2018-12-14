@@ -1,6 +1,6 @@
 ---
 title: "Update administrativeunit"
-description: "Update the properties of an administrativeUnit object."
+description: "Update the properties of an administrativeUnit object."author: "lleonard-msft"
 ---
 
 # Update administrativeunit

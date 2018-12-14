@@ -1,6 +1,6 @@
 ---
 title: "Create detectedApp"
-description: "Create a new detectedApp object."
+description: "Create a new detectedApp object."author: "tfitzmac"
 ---
 
 # Create detectedApp

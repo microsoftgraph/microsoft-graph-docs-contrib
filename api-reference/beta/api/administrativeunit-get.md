@@ -1,6 +1,6 @@
 ---
 title: "Get administrativeUnit"
-description: "Retrieve the properties and relationships of an administrativeUnit object."
+description: "Retrieve the properties and relationships of an administrativeUnit object."author: "lleonard-msft"
 ---
 
 # Get administrativeUnit

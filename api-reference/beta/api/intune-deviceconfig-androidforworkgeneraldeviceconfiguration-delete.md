@@ -1,6 +1,6 @@
 ---
 title: "Delete androidForWorkGeneralDeviceConfiguration"
-description: "Deletes a androidForWorkGeneralDeviceConfiguration."
+description: "Deletes a androidForWorkGeneralDeviceConfiguration."author: "tfitzmac"
 ---
 
 # Delete androidForWorkGeneralDeviceConfiguration

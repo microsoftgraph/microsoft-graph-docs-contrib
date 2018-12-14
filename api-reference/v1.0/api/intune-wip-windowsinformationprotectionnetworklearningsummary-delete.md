@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsInformationProtectionNetworkLearningSummary"
-description: "Deletes a windowsInformationProtectionNetworkLearningSummary."
+description: "Deletes a windowsInformationProtectionNetworkLearningSummary."author: "tfitzmac"
 ---
 
 # Delete windowsInformationProtectionNetworkLearningSummary

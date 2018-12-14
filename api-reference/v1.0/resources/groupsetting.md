@@ -1,6 +1,6 @@
 ---
 title: "groupSetting resource type"
-description: "Group settings control behaviors such as blocked word lists for group display names or whether guest users are allowed to be group owners."
+description: "Group settings control behaviors such as blocked word lists for group display names or whether guest users are allowed to be group owners."author: "dkershaw10"
 ---
 
 # groupSetting resource type

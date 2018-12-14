@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementUserRightsLocalUserOrGroup resource type"
-description: "Represents information for a local user or group used for user rights setting."
+description: "Represents information for a local user or group used for user rights setting."author: "tfitzmac"
 ---
 
 # deviceManagementUserRightsLocalUserOrGroup resource type

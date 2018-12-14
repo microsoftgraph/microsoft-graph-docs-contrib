@@ -1,6 +1,6 @@
 ---
 title: "runSchedule resource type"
-description: "Run schedule of a recurring device management script."
+description: "Run schedule of a recurring device management script."author: "tfitzmac"
 ---
 
 # runSchedule resource type

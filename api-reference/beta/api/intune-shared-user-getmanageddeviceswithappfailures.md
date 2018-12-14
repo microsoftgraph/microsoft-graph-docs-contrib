@@ -1,6 +1,6 @@
 ---
 title: "getManagedDevicesWithAppFailures function"
-description: "Retrieves the list of devices with failed apps"
+description: "Retrieves the list of devices with failed apps"author: "tfitzmac"
 ---
 
 # getManagedDevicesWithAppFailures function

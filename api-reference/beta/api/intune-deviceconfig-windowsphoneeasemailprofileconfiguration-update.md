@@ -1,6 +1,6 @@
 ---
 title: "Update windowsPhoneEASEmailProfileConfiguration"
-description: "Update the properties of a windowsPhoneEASEmailProfileConfiguration object."
+description: "Update the properties of a windowsPhoneEASEmailProfileConfiguration object."author: "tfitzmac"
 ---
 
 # Update windowsPhoneEASEmailProfileConfiguration

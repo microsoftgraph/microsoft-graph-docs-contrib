@@ -1,6 +1,6 @@
 ---
 title: "targetedManagedAppProtection resource type"
-description: "Policy used to configure detailed management settings targeted to specific security groups"
+description: "Policy used to configure detailed management settings targeted to specific security groups"author: "tfitzmac"
 ---
 
 # targetedManagedAppProtection resource type

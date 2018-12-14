@@ -1,6 +1,6 @@
 ---
 title: "Create macOSScepCertificateProfile"
-description: "Create a new macOSScepCertificateProfile object."
+description: "Create a new macOSScepCertificateProfile object."author: "tfitzmac"
 ---
 
 # Create macOSScepCertificateProfile

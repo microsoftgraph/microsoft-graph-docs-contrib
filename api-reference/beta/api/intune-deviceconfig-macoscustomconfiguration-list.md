@@ -1,6 +1,6 @@
 ---
 title: "List macOSCustomConfigurations"
-description: "List properties and relationships of the macOSCustomConfiguration objects."
+description: "List properties and relationships of the macOSCustomConfiguration objects."author: "tfitzmac"
 ---
 
 # List macOSCustomConfigurations

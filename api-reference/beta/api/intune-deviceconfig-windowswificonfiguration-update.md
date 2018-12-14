@@ -1,6 +1,6 @@
 ---
 title: "Update windowsWifiConfiguration"
-description: "Update the properties of a windowsWifiConfiguration object."
+description: "Update the properties of a windowsWifiConfiguration object."author: "tfitzmac"
 ---
 
 # Update windowsWifiConfiguration

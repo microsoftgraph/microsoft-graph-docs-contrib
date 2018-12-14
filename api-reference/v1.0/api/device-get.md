@@ -1,6 +1,6 @@
 ---
 title: "Get device"
-description: "Get the properties and relationships of a device object."
+description: "Get the properties and relationships of a device object."author: "tfitzmac"
 ---
 
 # Get device

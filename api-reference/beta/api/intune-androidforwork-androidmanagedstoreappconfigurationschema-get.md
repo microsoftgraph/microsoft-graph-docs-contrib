@@ -1,6 +1,6 @@
 ---
 title: "Get androidManagedStoreAppConfigurationSchema"
-description: "Read properties and relationships of the androidManagedStoreAppConfigurationSchema object."
+description: "Read properties and relationships of the androidManagedStoreAppConfigurationSchema object."author: "tfitzmac"
 ---
 
 # Get androidManagedStoreAppConfigurationSchema

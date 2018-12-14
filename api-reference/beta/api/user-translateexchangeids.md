@@ -1,6 +1,6 @@
 ---
 title: "user: translateExchangeIds"
-description: "Translate identifiers of Outlook-related resources between formats."
+description: "Translate identifiers of Outlook-related resources between formats."author: "dkershaw10"
 ---
 
 # user: translateExchangeIds

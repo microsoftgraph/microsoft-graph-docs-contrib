@@ -1,6 +1,6 @@
 ---
 title: "Update roleDefinition"
-description: "Update the properties of a roleDefinition object."
+description: "Update the properties of a roleDefinition object."author: "tfitzmac"
 ---
 
 # Update roleDefinition

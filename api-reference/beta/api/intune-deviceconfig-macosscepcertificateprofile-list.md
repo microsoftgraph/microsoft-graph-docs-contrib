@@ -1,6 +1,6 @@
 ---
 title: "List macOSScepCertificateProfiles"
-description: "List properties and relationships of the macOSScepCertificateProfile objects."
+description: "List properties and relationships of the macOSScepCertificateProfile objects."author: "tfitzmac"
 ---
 
 # List macOSScepCertificateProfiles

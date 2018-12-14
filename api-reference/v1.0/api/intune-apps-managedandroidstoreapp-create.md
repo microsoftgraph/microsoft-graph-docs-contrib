@@ -1,6 +1,6 @@
 ---
 title: "Create managedAndroidStoreApp"
-description: "Create a new managedAndroidStoreApp object."
+description: "Create a new managedAndroidStoreApp object."author: "tfitzmac"
 ---
 
 # Create managedAndroidStoreApp

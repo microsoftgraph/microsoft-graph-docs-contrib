@@ -1,6 +1,6 @@
 ---
 title: "List iosPkcsCertificateProfiles"
-description: "List properties and relationships of the iosPkcsCertificateProfile objects."
+description: "List properties and relationships of the iosPkcsCertificateProfile objects."author: "tfitzmac"
 ---
 
 # List iosPkcsCertificateProfiles

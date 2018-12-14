@@ -1,6 +1,6 @@
 ---
 title: "deleteUserFromSharedAppleDevice action"
-description: "Delete user from shared Apple device"
+description: "Delete user from shared Apple device"author: "tfitzmac"
 ---
 
 # deleteUserFromSharedAppleDevice action

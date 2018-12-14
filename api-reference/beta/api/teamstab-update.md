@@ -1,6 +1,6 @@
 ---
 title: "Update tab"
-description: "Update the properties of the specified tab."
+description: "Update the properties of the specified tab."author: "nkramer"
 ---
 
 # Update tab

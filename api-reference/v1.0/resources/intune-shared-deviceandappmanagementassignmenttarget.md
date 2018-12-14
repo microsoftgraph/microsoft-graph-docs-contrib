@@ -1,6 +1,6 @@
 ---
 title: "deviceAndAppManagementAssignmentTarget resource type"
-description: "Base type for assignment targets."
+description: "Base type for assignment targets."author: "tfitzmac"
 ---
 
 # deviceAndAppManagementAssignmentTarget resource type

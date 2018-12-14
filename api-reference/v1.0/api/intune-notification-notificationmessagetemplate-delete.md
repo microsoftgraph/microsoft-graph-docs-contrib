@@ -1,6 +1,6 @@
 ---
 title: "Delete notificationMessageTemplate"
-description: "Deletes a notificationMessageTemplate."
+description: "Deletes a notificationMessageTemplate."author: "tfitzmac"
 ---
 
 # Delete notificationMessageTemplate

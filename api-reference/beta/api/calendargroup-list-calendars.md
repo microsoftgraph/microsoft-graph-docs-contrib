@@ -1,6 +1,6 @@
 ---
 title: "List calendars"
-description: "Retrieve a list of calendars belonging to a calendar group."
+description: "Retrieve a list of calendars belonging to a calendar group."author: "angelgolfer-ms"
 ---
 
 # List calendars

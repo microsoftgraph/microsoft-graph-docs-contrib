@@ -1,6 +1,6 @@
 ---
 title: "Get mobileLobApp"
-description: "Read properties and relationships of the mobileLobApp object."
+description: "Read properties and relationships of the mobileLobApp object."author: "tfitzmac"
 ---
 
 # Get mobileLobApp

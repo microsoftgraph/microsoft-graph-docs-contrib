@@ -1,6 +1,6 @@
 ---
 title: "List microsoftStoreForBusinessApps"
-description: "List properties and relationships of the microsoftStoreForBusinessApp objects."
+description: "List properties and relationships of the microsoftStoreForBusinessApp objects."author: "tfitzmac"
 ---
 
 # List microsoftStoreForBusinessApps

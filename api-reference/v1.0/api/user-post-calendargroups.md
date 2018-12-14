@@ -1,6 +1,6 @@
 ---
 title: "Create CalendarGroup"
-description: "Use this API to create a new CalendarGroup."
+description: "Use this API to create a new CalendarGroup."author: "dkershaw10"
 ---
 
 # Create CalendarGroup

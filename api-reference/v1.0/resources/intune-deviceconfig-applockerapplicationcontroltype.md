@@ -1,6 +1,6 @@
 ---
 title: "appLockerApplicationControlType enum type"
-description: "Possible values of AppLocker Application Control Types"
+description: "Possible values of AppLocker Application Control Types"author: "tfitzmac"
 ---
 
 # appLockerApplicationControlType enum type

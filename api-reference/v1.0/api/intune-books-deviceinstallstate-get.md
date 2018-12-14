@@ -1,6 +1,6 @@
 ---
 title: "Get deviceInstallState"
-description: "Read properties and relationships of the deviceInstallState object."
+description: "Read properties and relationships of the deviceInstallState object."author: "tfitzmac"
 ---
 
 # Get deviceInstallState

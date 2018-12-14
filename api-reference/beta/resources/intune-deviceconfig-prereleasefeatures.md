@@ -1,6 +1,6 @@
 ---
 title: "prereleaseFeatures enum type"
-description: "Possible values for pre-release features."
+description: "Possible values for pre-release features."author: "tfitzmac"
 ---
 
 # prereleaseFeatures enum type

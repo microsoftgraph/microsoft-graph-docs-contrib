@@ -1,6 +1,6 @@
 ---
 title: "windowsKioskMultipleApps resource type"
-description: "The class used to identify the MultiMode app configuration for the kiosk configuration"
+description: "The class used to identify the MultiMode app configuration for the kiosk configuration"author: "tfitzmac"
 ---
 
 # windowsKioskMultipleApps resource type

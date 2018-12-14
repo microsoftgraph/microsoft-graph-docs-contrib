@@ -1,6 +1,6 @@
 ---
 title: "resetPasscode action"
-description: "Reset passcode"
+description: "Reset passcode"author: "tfitzmac"
 ---
 
 # resetPasscode action

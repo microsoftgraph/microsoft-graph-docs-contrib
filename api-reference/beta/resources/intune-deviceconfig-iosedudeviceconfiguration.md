@@ -1,6 +1,6 @@
 ---
 title: "iosEduDeviceConfiguration resource type"
-description: "iOS Education device configuration"
+description: "iOS Education device configuration"author: "tfitzmac"
 ---
 
 # iosEduDeviceConfiguration resource type

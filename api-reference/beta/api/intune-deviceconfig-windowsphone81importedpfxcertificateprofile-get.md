@@ -1,6 +1,6 @@
 ---
 title: "Get windowsPhone81ImportedPFXCertificateProfile"
-description: "Read properties and relationships of the windowsPhone81ImportedPFXCertificateProfile object."
+description: "Read properties and relationships of the windowsPhone81ImportedPFXCertificateProfile object."author: "tfitzmac"
 ---
 
 # Get windowsPhone81ImportedPFXCertificateProfile

@@ -1,6 +1,6 @@
 ---
 title: "deviceConfigurationSettingState resource type"
-description: "Device Configuration Setting State for a given device."
+description: "Device Configuration Setting State for a given device."author: "tfitzmac"
 ---
 
 # deviceConfigurationSettingState resource type

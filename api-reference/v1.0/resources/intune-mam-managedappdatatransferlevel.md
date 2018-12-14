@@ -1,6 +1,6 @@
 ---
 title: "managedAppDataTransferLevel enum type"
-description: "Data can be transferred from/to these classes of apps"
+description: "Data can be transferred from/to these classes of apps"author: "tfitzmac"
 ---
 
 # managedAppDataTransferLevel enum type

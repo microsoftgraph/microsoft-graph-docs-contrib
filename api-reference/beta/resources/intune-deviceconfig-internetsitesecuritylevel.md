@@ -1,6 +1,6 @@
 ---
 title: "internetSiteSecurityLevel enum type"
-description: "Possible values for internet site security level."
+description: "Possible values for internet site security level."author: "tfitzmac"
 ---
 
 # internetSiteSecurityLevel enum type

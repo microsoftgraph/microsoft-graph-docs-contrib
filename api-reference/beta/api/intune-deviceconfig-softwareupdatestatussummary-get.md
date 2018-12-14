@@ -1,6 +1,6 @@
 ---
 title: "Get softwareUpdateStatusSummary"
-description: "Read properties and relationships of the softwareUpdateStatusSummary object."
+description: "Read properties and relationships of the softwareUpdateStatusSummary object."author: "tfitzmac"
 ---
 
 # Get softwareUpdateStatusSummary

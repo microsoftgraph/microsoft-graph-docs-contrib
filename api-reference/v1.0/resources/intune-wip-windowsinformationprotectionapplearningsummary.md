@@ -1,6 +1,6 @@
 ---
 title: "windowsInformationProtectionAppLearningSummary resource type"
-description: "Windows Information Protection AppLearning Summary entity."
+description: "Windows Information Protection AppLearning Summary entity."author: "tfitzmac"
 ---
 
 # windowsInformationProtectionAppLearningSummary resource type

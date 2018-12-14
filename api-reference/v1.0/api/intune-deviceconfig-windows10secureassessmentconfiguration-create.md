@@ -1,6 +1,6 @@
 ---
 title: "Create windows10SecureAssessmentConfiguration"
-description: "Create a new windows10SecureAssessmentConfiguration object."
+description: "Create a new windows10SecureAssessmentConfiguration object."author: "tfitzmac"
 ---
 
 # Create windows10SecureAssessmentConfiguration

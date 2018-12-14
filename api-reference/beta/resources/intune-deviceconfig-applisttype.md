@@ -1,6 +1,6 @@
 ---
 title: "appListType enum type"
-description: "Possible values of the compliance app list."
+description: "Possible values of the compliance app list."author: "tfitzmac"
 ---
 
 # appListType enum type

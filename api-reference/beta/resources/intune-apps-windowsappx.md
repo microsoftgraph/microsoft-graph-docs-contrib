@@ -1,6 +1,6 @@
 ---
 title: "windowsAppX resource type"
-description: "Contains properties and inherited properties for Windows AppX Line Of Business apps."
+description: "Contains properties and inherited properties for Windows AppX Line Of Business apps."author: "tfitzmac"
 ---
 
 # windowsAppX resource type

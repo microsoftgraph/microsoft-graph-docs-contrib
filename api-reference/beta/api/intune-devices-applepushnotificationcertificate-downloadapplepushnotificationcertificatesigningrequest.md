@@ -1,6 +1,6 @@
 ---
 title: "downloadApplePushNotificationCertificateSigningRequest function"
-description: "Download Apple push notification certificate signing request"
+description: "Download Apple push notification certificate signing request"author: "tfitzmac"
 ---
 
 # downloadApplePushNotificationCertificateSigningRequest function

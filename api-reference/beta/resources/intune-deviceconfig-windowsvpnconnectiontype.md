@@ -1,6 +1,6 @@
 ---
 title: "windowsVpnConnectionType enum type"
-description: "Windows VPN connection type."
+description: "Windows VPN connection type."author: "tfitzmac"
 ---
 
 # windowsVpnConnectionType enum type

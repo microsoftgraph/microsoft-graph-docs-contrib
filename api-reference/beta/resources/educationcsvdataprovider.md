@@ -1,6 +1,6 @@
 ---
 title: "educationCsvDataProvider resource type"
-description: "Used to set up the school data synchronization profile when CSV files are the input source.  "
+description: "Used to set up the school data synchronization profile when CSV files are the input source.  "author: "mmast-msft"
 ---
 
 # educationCsvDataProvider resource type

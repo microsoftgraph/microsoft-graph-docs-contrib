@@ -1,6 +1,6 @@
 ---
 title: "Create embeddedSIMActivationCodePool"
-description: "Create a new embeddedSIMActivationCodePool object."
+description: "Create a new embeddedSIMActivationCodePool object."author: "tfitzmac"
 ---
 
 # Create embeddedSIMActivationCodePool

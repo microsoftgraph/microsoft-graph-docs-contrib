@@ -1,6 +1,6 @@
 ---
 title: "Update roleAssignment"
-description: "Update the properties of a roleAssignment object."
+description: "Update the properties of a roleAssignment object."author: "tfitzmac"
 ---
 
 # Update roleAssignment

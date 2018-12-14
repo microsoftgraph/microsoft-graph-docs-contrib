@@ -1,6 +1,6 @@
 ---
 title: "Delete iosDeviceFeaturesConfiguration"
-description: "Deletes a iosDeviceFeaturesConfiguration."
+description: "Deletes a iosDeviceFeaturesConfiguration."author: "tfitzmac"
 ---
 
 # Delete iosDeviceFeaturesConfiguration

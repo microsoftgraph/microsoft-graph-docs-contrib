@@ -1,6 +1,6 @@
 ---
 title: "resourceAction resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # resourceAction resource type

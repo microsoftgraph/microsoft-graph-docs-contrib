@@ -1,6 +1,6 @@
 ---
 title: "unaryManagementConditionExpression resource type"
-description: "A management condition expression that is evaluated using a unary operation."
+description: "A management condition expression that is evaluated using a unary operation."author: "tfitzmac"
 ---
 
 # unaryManagementConditionExpression resource type

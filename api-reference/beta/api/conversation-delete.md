@@ -1,6 +1,6 @@
 ---
 title: "Delete conversation"
-description: "Delete conversation."
+description: "Delete conversation."author: "dkershaw10"
 ---
 
 # Delete conversation

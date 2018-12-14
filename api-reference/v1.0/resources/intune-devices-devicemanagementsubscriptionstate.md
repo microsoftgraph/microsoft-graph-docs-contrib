@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementSubscriptionState enum type"
-description: "Tenant mobile device management subscription state."
+description: "Tenant mobile device management subscription state."author: "tfitzmac"
 ---
 
 # deviceManagementSubscriptionState enum type

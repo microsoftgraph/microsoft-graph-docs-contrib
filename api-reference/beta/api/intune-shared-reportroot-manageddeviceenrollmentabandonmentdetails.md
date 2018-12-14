@@ -1,6 +1,6 @@
 ---
 title: "managedDeviceEnrollmentAbandonmentDetails function"
-description: "Metadata for Enrollment abandonment details report"
+description: "Metadata for Enrollment abandonment details report"author: "tfitzmac"
 ---
 
 # managedDeviceEnrollmentAbandonmentDetails function

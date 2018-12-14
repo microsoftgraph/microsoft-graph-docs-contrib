@@ -1,6 +1,6 @@
 ---
 title: "List restrictedAppsViolations"
-description: "List properties and relationships of the restrictedAppsViolation objects."
+description: "List properties and relationships of the restrictedAppsViolation objects."author: "tfitzmac"
 ---
 
 # List restrictedAppsViolations

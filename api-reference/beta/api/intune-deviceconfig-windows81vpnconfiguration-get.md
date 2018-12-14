@@ -1,6 +1,6 @@
 ---
 title: "Get windows81VpnConfiguration"
-description: "Read properties and relationships of the windows81VpnConfiguration object."
+description: "Read properties and relationships of the windows81VpnConfiguration object."author: "tfitzmac"
 ---
 
 # Get windows81VpnConfiguration

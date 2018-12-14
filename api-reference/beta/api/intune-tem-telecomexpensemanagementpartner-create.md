@@ -1,6 +1,6 @@
 ---
 title: "Create telecomExpenseManagementPartner"
-description: "Create a new telecomExpenseManagementPartner object."
+description: "Create a new telecomExpenseManagementPartner object."author: "tfitzmac"
 ---
 
 # Create telecomExpenseManagementPartner

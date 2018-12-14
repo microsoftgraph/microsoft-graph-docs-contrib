@@ -1,6 +1,6 @@
 ---
 title: "dataSharingConsent resource type"
-description: "Data sharing consent information."
+description: "Data sharing consent information."author: "tfitzmac"
 ---
 
 # dataSharingConsent resource type

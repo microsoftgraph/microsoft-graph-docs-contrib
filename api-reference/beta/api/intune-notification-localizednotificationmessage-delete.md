@@ -1,6 +1,6 @@
 ---
 title: "Delete localizedNotificationMessage"
-description: "Deletes a localizedNotificationMessage."
+description: "Deletes a localizedNotificationMessage."author: "tfitzmac"
 ---
 
 # Delete localizedNotificationMessage

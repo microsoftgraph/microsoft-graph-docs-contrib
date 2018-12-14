@@ -1,6 +1,6 @@
 ---
 title: "Update managedAndroidLobApp"
-description: "Update the properties of a managedAndroidLobApp object."
+description: "Update the properties of a managedAndroidLobApp object."author: "tfitzmac"
 ---
 
 # Update managedAndroidLobApp

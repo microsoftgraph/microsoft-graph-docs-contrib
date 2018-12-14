@@ -1,6 +1,6 @@
 ---
 title: "Device configuration in Microsoft Intune"
-description: "Use the Microsoft Intune Device Configuration workload to manage settings and features on all of the devices you manage."
+description: "Use the Microsoft Intune Device Configuration workload to manage settings and features on all of the devices you manage."author: "tfitzmac"
 ---
 
 # Device configuration in Microsoft Intune

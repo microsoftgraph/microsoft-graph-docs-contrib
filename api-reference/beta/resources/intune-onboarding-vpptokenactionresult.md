@@ -1,6 +1,6 @@
 ---
 title: "vppTokenActionResult resource type"
-description: "The status of the action performed with an Apple Volume Purchase Program token."
+description: "The status of the action performed with an Apple Volume Purchase Program token."author: "tfitzmac"
 ---
 
 # vppTokenActionResult resource type

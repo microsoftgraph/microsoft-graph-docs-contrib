@@ -1,6 +1,6 @@
 ---
 title: "groupLifecyclePolicy: removeGroup"
-description: "Removes a group from a lifecycle policy."
+description: "Removes a group from a lifecycle policy."author: "dkershaw10"
 ---
 
 # groupLifecyclePolicy: removeGroup

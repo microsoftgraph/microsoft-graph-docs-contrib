@@ -1,6 +1,6 @@
 ---
 title: "androidForWorkGeneralDeviceConfiguration resource type"
-description: "Android For Work general device configuration."
+description: "Android For Work general device configuration."author: "tfitzmac"
 ---
 
 # androidForWorkGeneralDeviceConfiguration resource type

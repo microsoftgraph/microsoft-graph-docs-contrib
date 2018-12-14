@@ -1,6 +1,6 @@
 ---
 title: "Delete circularGeofenceManagementCondition"
-description: "Deletes a circularGeofenceManagementCondition."
+description: "Deletes a circularGeofenceManagementCondition."author: "tfitzmac"
 ---
 
 # Delete circularGeofenceManagementCondition

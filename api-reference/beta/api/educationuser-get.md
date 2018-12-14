@@ -1,6 +1,6 @@
 ---
 title: "Get educationUser"
-description: "Retrieve the properties and relationships of a user."
+description: "Retrieve the properties and relationships of a user."author: "mmast-msft"
 ---
 
 # Get educationUser

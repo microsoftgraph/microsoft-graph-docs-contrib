@@ -1,6 +1,6 @@
 ---
 title: "Delete macOSEndpointProtectionConfiguration"
-description: "Deletes a macOSEndpointProtectionConfiguration."
+description: "Deletes a macOSEndpointProtectionConfiguration."author: "tfitzmac"
 ---
 
 # Delete macOSEndpointProtectionConfiguration

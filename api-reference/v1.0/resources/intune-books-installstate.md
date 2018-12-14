@@ -1,6 +1,6 @@
 ---
 title: "installState enum type"
-description: "Possible values for install state."
+description: "Possible values for install state."author: "tfitzmac"
 ---
 
 # installState enum type

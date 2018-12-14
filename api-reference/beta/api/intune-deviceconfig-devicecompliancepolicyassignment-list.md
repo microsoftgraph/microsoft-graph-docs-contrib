@@ -1,6 +1,6 @@
 ---
 title: "List deviceCompliancePolicyAssignments"
-description: "List properties and relationships of the deviceCompliancePolicyAssignment objects."
+description: "List properties and relationships of the deviceCompliancePolicyAssignment objects."author: "tfitzmac"
 ---
 
 # List deviceCompliancePolicyAssignments

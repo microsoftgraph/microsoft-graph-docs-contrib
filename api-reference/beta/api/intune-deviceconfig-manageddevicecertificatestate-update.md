@@ -1,6 +1,6 @@
 ---
 title: "Update managedDeviceCertificateState"
-description: "Update the properties of a managedDeviceCertificateState object."
+description: "Update the properties of a managedDeviceCertificateState object."author: "tfitzmac"
 ---
 
 # Update managedDeviceCertificateState

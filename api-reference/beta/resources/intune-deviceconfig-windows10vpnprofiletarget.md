@@ -1,6 +1,6 @@
 ---
 title: "windows10VpnProfileTarget enum type"
-description: "Windows 10 VPN profile target types."
+description: "Windows 10 VPN profile target types."author: "tfitzmac"
 ---
 
 # windows10VpnProfileTarget enum type

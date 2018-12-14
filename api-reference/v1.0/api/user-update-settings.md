@@ -1,6 +1,6 @@
 ---
 title: "Update settings"
-description: "Update the properties of the settings object. "
+description: "Update the properties of the settings object. "author: "dkershaw10"
 ---
 
 # Update settings

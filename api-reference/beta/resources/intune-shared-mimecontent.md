@@ -1,6 +1,6 @@
 ---
 title: "mimeContent resource type"
-description: "Contains properties for a generic mime content."
+description: "Contains properties for a generic mime content."author: "tfitzmac"
 ---
 
 # mimeContent resource type

@@ -1,6 +1,6 @@
 ---
 title: "mobileAppTroubleshootingEvent resource type"
-description: "Event representing a users device application install status."
+description: "Event representing a users device application install status."author: "tfitzmac"
 ---
 
 # mobileAppTroubleshootingEvent resource type

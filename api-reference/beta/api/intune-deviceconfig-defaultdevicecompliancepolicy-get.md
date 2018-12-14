@@ -1,6 +1,6 @@
 ---
 title: "Get defaultDeviceCompliancePolicy"
-description: "Read properties and relationships of the defaultDeviceCompliancePolicy object."
+description: "Read properties and relationships of the defaultDeviceCompliancePolicy object."author: "tfitzmac"
 ---
 
 # Get defaultDeviceCompliancePolicy

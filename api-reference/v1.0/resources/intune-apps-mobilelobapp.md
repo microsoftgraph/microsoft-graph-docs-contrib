@@ -1,6 +1,6 @@
 ---
 title: "mobileLobApp resource type"
-description: "An abstract base class containing properties for all mobile line of business apps."
+description: "An abstract base class containing properties for all mobile line of business apps."author: "tfitzmac"
 ---
 
 # mobileLobApp resource type

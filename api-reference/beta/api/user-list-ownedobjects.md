@@ -1,6 +1,6 @@
 ---
 title: "List ownedObjects"
-description: "Get the list of directory objects that are owned by the user."
+description: "Get the list of directory objects that are owned by the user."author: "dkershaw10"
 ---
 
 # List ownedObjects

@@ -1,6 +1,6 @@
 ---
 title: "Update androidForWorkGeneralDeviceConfiguration"
-description: "Update the properties of a androidForWorkGeneralDeviceConfiguration object."
+description: "Update the properties of a androidForWorkGeneralDeviceConfiguration object."author: "tfitzmac"
 ---
 
 # Update androidForWorkGeneralDeviceConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "Create deviceManagementScript"
-description: "Create a new deviceManagementScript object."
+description: "Create a new deviceManagementScript object."author: "tfitzmac"
 ---
 
 # Create deviceManagementScript

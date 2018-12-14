@@ -1,6 +1,6 @@
 ---
 title: "List alerts"
-description: "Retrieve a list of alert objects."
+description: "Retrieve a list of alert objects."author: "Preetikr"
 ---
 
 # List alerts

@@ -1,6 +1,6 @@
 ---
 title: "Update auditEvent"
-description: "Update the properties of a auditEvent object."
+description: "Update the properties of a auditEvent object."author: "tfitzmac"
 ---
 
 # Update auditEvent

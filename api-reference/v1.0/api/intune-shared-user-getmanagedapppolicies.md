@@ -1,6 +1,6 @@
 ---
 title: "getManagedAppPolicies function"
-description: "Gets app restrictions for a given user."
+description: "Gets app restrictions for a given user."author: "tfitzmac"
 ---
 
 # getManagedAppPolicies function

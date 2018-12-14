@@ -1,6 +1,6 @@
 ---
 title: "Get androidManagedStoreAccountEnterpriseSettings"
-description: "Read properties and relationships of the androidManagedStoreAccountEnterpriseSettings object."
+description: "Read properties and relationships of the androidManagedStoreAccountEnterpriseSettings object."author: "tfitzmac"
 ---
 
 # Get androidManagedStoreAccountEnterpriseSettings

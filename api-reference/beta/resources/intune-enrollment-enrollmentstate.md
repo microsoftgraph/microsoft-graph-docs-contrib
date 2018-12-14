@@ -1,6 +1,6 @@
 ---
 title: "enrollmentState enum type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # enrollmentState enum type

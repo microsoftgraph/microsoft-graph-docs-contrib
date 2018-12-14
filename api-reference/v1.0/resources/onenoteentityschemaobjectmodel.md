@@ -1,6 +1,6 @@
 ---
 title: "onenoteEntitySchemaObjectModel resource"
-description: "This is a base type for OneNote entities."
+description: "This is a base type for OneNote entities."author: "Jewan-microsoft"
 ---
 
 # onenoteEntitySchemaObjectModel resource

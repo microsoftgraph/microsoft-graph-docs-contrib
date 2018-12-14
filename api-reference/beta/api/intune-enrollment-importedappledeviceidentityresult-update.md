@@ -1,6 +1,6 @@
 ---
 title: "Update importedAppleDeviceIdentityResult"
-description: "Update the properties of a importedAppleDeviceIdentityResult object."
+description: "Update the properties of a importedAppleDeviceIdentityResult object."author: "tfitzmac"
 ---
 
 # Update importedAppleDeviceIdentityResult

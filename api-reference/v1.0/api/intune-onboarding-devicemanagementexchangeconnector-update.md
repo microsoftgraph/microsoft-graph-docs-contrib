@@ -1,6 +1,6 @@
 ---
 title: "Update deviceManagementExchangeConnector"
-description: "Update the properties of a deviceManagementExchangeConnector object."
+description: "Update the properties of a deviceManagementExchangeConnector object."author: "tfitzmac"
 ---
 
 # Update deviceManagementExchangeConnector

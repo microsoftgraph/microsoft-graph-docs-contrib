@@ -1,6 +1,6 @@
 ---
 title: "Delete androidDeviceOwnerEnrollmentProfile"
-description: "Deletes a androidDeviceOwnerEnrollmentProfile."
+description: "Deletes a androidDeviceOwnerEnrollmentProfile."author: "tfitzmac"
 ---
 
 # Delete androidDeviceOwnerEnrollmentProfile

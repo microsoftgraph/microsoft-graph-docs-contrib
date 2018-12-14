@@ -1,6 +1,6 @@
 ---
 title: "Create Calendar"
-description: "Use this API to create a new calendar for a user."
+description: "Use this API to create a new calendar for a user."author: "dkershaw10"
 ---
 
 # Create Calendar

@@ -1,6 +1,6 @@
 ---
 title: "macOSFirewallApplication resource type"
-description: "Represents an app in the list of macOS firewall applications"
+description: "Represents an app in the list of macOS firewall applications"author: "tfitzmac"
 ---
 
 # macOSFirewallApplication resource type

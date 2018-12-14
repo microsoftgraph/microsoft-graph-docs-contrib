@@ -1,6 +1,6 @@
 ---
 title: "Create macOSOfficeSuiteApp"
-description: "Create a new macOSOfficeSuiteApp object."
+description: "Create a new macOSOfficeSuiteApp object."author: "tfitzmac"
 ---
 
 # Create macOSOfficeSuiteApp

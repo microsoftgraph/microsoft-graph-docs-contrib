@@ -1,6 +1,6 @@
 ---
 title: "Get enrollmentConfigurationAssignment"
-description: "Read properties and relationships of the enrollmentConfigurationAssignment object."
+description: "Read properties and relationships of the enrollmentConfigurationAssignment object."author: "tfitzmac"
 ---
 
 # Get enrollmentConfigurationAssignment

@@ -1,6 +1,6 @@
 ---
 title: "Update windows10CustomConfiguration"
-description: "Update the properties of a windows10CustomConfiguration object."
+description: "Update the properties of a windows10CustomConfiguration object."author: "tfitzmac"
 ---
 
 # Update windows10CustomConfiguration

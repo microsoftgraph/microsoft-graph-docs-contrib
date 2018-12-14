@@ -1,6 +1,6 @@
 ---
 title: "Get applePushNotificationCertificate"
-description: "Read properties and relationships of the applePushNotificationCertificate object."
+description: "Read properties and relationships of the applePushNotificationCertificate object."author: "tfitzmac"
 ---
 
 # Get applePushNotificationCertificate

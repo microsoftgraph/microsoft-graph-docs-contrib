@@ -1,6 +1,6 @@
 ---
 title: "Delete depOnboardingSetting"
-description: "Deletes a depOnboardingSetting."
+description: "Deletes a depOnboardingSetting."author: "tfitzmac"
 ---
 
 # Delete depOnboardingSetting

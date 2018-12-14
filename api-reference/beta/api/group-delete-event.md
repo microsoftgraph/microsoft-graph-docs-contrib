@@ -1,6 +1,6 @@
 ---
 title: "Delete event"
-description: "Delete an event object."
+description: "Delete an event object."author: "dkershaw10"
 ---
 
 # Delete event

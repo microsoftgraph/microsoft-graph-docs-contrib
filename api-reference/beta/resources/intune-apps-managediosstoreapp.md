@@ -1,6 +1,6 @@
 ---
 title: "managedIOSStoreApp resource type"
-description: "Contains properties and inherited properties for an iOS store app that you can manage with an Intune app protection policy."
+description: "Contains properties and inherited properties for an iOS store app that you can manage with an Intune app protection policy."author: "tfitzmac"
 ---
 
 # managedIOSStoreApp resource type

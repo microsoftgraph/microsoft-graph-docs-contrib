@@ -1,6 +1,6 @@
 ---
 title: "message: reply"
-description: "Reply to the sender of a message. The message is then saved in the Sent Items folder."
+description: "Reply to the sender of a message. The message is then saved in the Sent Items folder."author: "angelgolfer-ms"
 ---
 
 # message: reply

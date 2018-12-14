@@ -1,6 +1,6 @@
 ---
 title: "officeClientConfigurationAssignment resource type"
-description: "Office Client Configuration Assignment."
+description: "Office Client Configuration Assignment."author: "tfitzmac"
 ---
 
 # officeClientConfigurationAssignment resource type

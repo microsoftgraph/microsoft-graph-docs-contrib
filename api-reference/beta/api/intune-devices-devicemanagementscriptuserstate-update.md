@@ -1,6 +1,6 @@
 ---
 title: "Update deviceManagementScriptUserState"
-description: "Update the properties of a deviceManagementScriptUserState object."
+description: "Update the properties of a deviceManagementScriptUserState object."author: "tfitzmac"
 ---
 
 # Update deviceManagementScriptUserState

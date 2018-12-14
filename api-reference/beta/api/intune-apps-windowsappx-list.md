@@ -1,6 +1,6 @@
 ---
 title: "List windowsAppXs"
-description: "List properties and relationships of the windowsAppX objects."
+description: "List properties and relationships of the windowsAppX objects."author: "tfitzmac"
 ---
 
 # List windowsAppXs

@@ -1,6 +1,6 @@
 ---
 title: "Get iosVppAppAssignedUserLicense"
-description: "Read properties and relationships of the iosVppAppAssignedUserLicense object."
+description: "Read properties and relationships of the iosVppAppAssignedUserLicense object."author: "tfitzmac"
 ---
 
 # Get iosVppAppAssignedUserLicense

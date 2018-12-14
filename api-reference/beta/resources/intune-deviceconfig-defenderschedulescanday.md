@@ -1,6 +1,6 @@
 ---
 title: "defenderScheduleScanDay enum type"
-description: "Possible values of DefenderScheduleScanDay "
+description: "Possible values of DefenderScheduleScanDay "author: "tfitzmac"
 ---
 
 # defenderScheduleScanDay enum type

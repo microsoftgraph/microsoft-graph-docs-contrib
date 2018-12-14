@@ -1,6 +1,6 @@
 ---
 title: "revokeToken action"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # revokeToken action

@@ -1,6 +1,6 @@
 ---
 title: "Update windows10PkcsCertificateProfile"
-description: "Update the properties of a windows10PkcsCertificateProfile object."
+description: "Update the properties of a windows10PkcsCertificateProfile object."author: "tfitzmac"
 ---
 
 # Update windows10PkcsCertificateProfile

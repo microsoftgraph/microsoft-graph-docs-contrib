@@ -1,6 +1,6 @@
 ---
 title: "Create mobileAppContentFile"
-description: "Create a new mobileAppContentFile object."
+description: "Create a new mobileAppContentFile object."author: "tfitzmac"
 ---
 
 # Create mobileAppContentFile

@@ -1,6 +1,6 @@
 ---
 title: "Get deviceManagementScriptGroupAssignment"
-description: "Read properties and relationships of the deviceManagementScriptGroupAssignment object."
+description: "Read properties and relationships of the deviceManagementScriptGroupAssignment object."author: "tfitzmac"
 ---
 
 # Get deviceManagementScriptGroupAssignment

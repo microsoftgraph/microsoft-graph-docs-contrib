@@ -1,6 +1,6 @@
 ---
 title: "List locationManagementConditions"
-description: "List properties and relationships of the locationManagementCondition objects."
+description: "List properties and relationships of the locationManagementCondition objects."author: "tfitzmac"
 ---
 
 # List locationManagementConditions

@@ -1,6 +1,6 @@
 ---
 title: "Get defaultManagedAppProtection"
-description: "Read properties and relationships of the defaultManagedAppProtection object."
+description: "Read properties and relationships of the defaultManagedAppProtection object."author: "tfitzmac"
 ---
 
 # Get defaultManagedAppProtection

@@ -1,6 +1,6 @@
 ---
 title: "Get conversation thread"
-description: "Get a thread object."
+description: "Get a thread object."author: "dkershaw10"
 ---
 
 # Get conversation thread

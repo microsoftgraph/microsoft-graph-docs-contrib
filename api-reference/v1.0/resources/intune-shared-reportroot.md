@@ -1,6 +1,6 @@
 ---
 title: "reportRoot resource type"
-description: "The resource that represents an instance of History Reports."
+description: "The resource that represents an instance of History Reports."author: "tfitzmac"
 ---
 
 # reportRoot resource type

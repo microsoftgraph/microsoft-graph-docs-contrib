@@ -1,6 +1,6 @@
 ---
 title: "Get windows10TeamGeneralConfiguration"
-description: "Read properties and relationships of the windows10TeamGeneralConfiguration object."
+description: "Read properties and relationships of the windows10TeamGeneralConfiguration object."author: "tfitzmac"
 ---
 
 # Get windows10TeamGeneralConfiguration

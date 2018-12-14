@@ -1,6 +1,6 @@
 ---
 title: "windowsWifiConfiguration resource type"
-description: "Device Configuration."
+description: "Device Configuration."author: "tfitzmac"
 ---
 
 # windowsWifiConfiguration resource type

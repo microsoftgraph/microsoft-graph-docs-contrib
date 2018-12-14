@@ -1,6 +1,6 @@
 ---
 title: "participant: invite"
-description: "Invite participants to the active call."
+description: "Invite participants to the active call."author: "VinodRavichandran"
 ---
 
 # participant: invite

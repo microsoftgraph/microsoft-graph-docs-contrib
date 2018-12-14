@@ -1,6 +1,6 @@
 ---
 title: "Get windowsManagementAppHealthSummary"
-description: "Read properties and relationships of the windowsManagementAppHealthSummary object."
+description: "Read properties and relationships of the windowsManagementAppHealthSummary object."author: "tfitzmac"
 ---
 
 # Get windowsManagementAppHealthSummary

@@ -1,6 +1,6 @@
 ---
 title: "List windowsManagedDevices"
-description: "List properties and relationships of the windowsManagedDevice objects."
+description: "List properties and relationships of the windowsManagedDevice objects."author: "tfitzmac"
 ---
 
 # List windowsManagedDevices

@@ -1,6 +1,6 @@
 ---
 title: "Update symantecCodeSigningCertificate"
-description: "Update the properties of a symantecCodeSigningCertificate object."
+description: "Update the properties of a symantecCodeSigningCertificate object."author: "tfitzmac"
 ---
 
 # Update symantecCodeSigningCertificate

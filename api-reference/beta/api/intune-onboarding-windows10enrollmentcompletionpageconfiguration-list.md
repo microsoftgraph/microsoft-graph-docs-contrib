@@ -1,6 +1,6 @@
 ---
 title: "List windows10EnrollmentCompletionPageConfigurations"
-description: "List properties and relationships of the windows10EnrollmentCompletionPageConfiguration objects."
+description: "List properties and relationships of the windows10EnrollmentCompletionPageConfiguration objects."author: "tfitzmac"
 ---
 
 # List windows10EnrollmentCompletionPageConfigurations

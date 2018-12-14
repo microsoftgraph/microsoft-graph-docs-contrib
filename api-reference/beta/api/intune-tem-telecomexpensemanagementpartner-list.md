@@ -1,6 +1,6 @@
 ---
 title: "List telecomExpenseManagementPartners"
-description: "List properties and relationships of the telecomExpenseManagementPartner objects."
+description: "List properties and relationships of the telecomExpenseManagementPartner objects."author: "tfitzmac"
 ---
 
 # List telecomExpenseManagementPartners

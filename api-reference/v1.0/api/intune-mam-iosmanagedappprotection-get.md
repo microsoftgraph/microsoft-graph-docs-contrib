@@ -1,6 +1,6 @@
 ---
 title: "Get iosManagedAppProtection"
-description: "Read properties and relationships of the iosManagedAppProtection object."
+description: "Read properties and relationships of the iosManagedAppProtection object."author: "tfitzmac"
 ---
 
 # Get iosManagedAppProtection

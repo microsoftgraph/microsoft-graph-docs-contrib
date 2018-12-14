@@ -1,6 +1,6 @@
 ---
 title: "Get androidForWorkNineWorkEasConfiguration"
-description: "Read properties and relationships of the androidForWorkNineWorkEasConfiguration object."
+description: "Read properties and relationships of the androidForWorkNineWorkEasConfiguration object."author: "tfitzmac"
 ---
 
 # Get androidForWorkNineWorkEasConfiguration

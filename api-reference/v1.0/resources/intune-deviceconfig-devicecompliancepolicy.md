@@ -1,6 +1,6 @@
 ---
 title: "deviceCompliancePolicy resource type"
-description: "This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. "
+description: "This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. "author: "tfitzmac"
 ---
 
 # deviceCompliancePolicy resource type

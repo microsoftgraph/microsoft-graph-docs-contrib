@@ -1,6 +1,6 @@
 ---
 title: "Delete roleDefinition"
-description: "Deletes a roleDefinition."
+description: "Deletes a roleDefinition."author: "tfitzmac"
 ---
 
 # Delete roleDefinition

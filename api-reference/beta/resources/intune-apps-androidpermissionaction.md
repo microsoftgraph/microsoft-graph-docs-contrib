@@ -1,6 +1,6 @@
 ---
 title: "androidPermissionAction resource type"
-description: "Mapping between an Android app permission and the action Android should take when that permission is requested."
+description: "Mapping between an Android app permission and the action Android should take when that permission is requested."author: "tfitzmac"
 ---
 
 # androidPermissionAction resource type

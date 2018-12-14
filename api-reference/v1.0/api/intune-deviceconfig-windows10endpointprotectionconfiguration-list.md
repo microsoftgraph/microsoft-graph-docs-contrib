@@ -1,6 +1,6 @@
 ---
 title: "List windows10EndpointProtectionConfigurations"
-description: "List properties and relationships of the windows10EndpointProtectionConfiguration objects."
+description: "List properties and relationships of the windows10EndpointProtectionConfiguration objects."author: "tfitzmac"
 ---
 
 # List windows10EndpointProtectionConfigurations

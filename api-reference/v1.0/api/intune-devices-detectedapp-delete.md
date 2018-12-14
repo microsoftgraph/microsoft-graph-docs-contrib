@@ -1,6 +1,6 @@
 ---
 title: "Delete detectedApp"
-description: "Deletes a detectedApp."
+description: "Deletes a detectedApp."author: "tfitzmac"
 ---
 
 # Delete detectedApp

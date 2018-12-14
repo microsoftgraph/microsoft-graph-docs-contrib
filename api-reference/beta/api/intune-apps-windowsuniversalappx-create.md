@@ -1,6 +1,6 @@
 ---
 title: "Create windowsUniversalAppX"
-description: "Create a new windowsUniversalAppX object."
+description: "Create a new windowsUniversalAppX object."author: "tfitzmac"
 ---
 
 # Create windowsUniversalAppX

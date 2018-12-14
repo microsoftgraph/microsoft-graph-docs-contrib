@@ -1,6 +1,6 @@
 ---
 title: "Delete user"
-description: "Deletes a user."
+description: "Deletes a user."author: "tfitzmac"
 ---
 
 # Delete user

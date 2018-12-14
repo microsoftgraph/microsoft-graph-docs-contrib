@@ -1,6 +1,6 @@
 ---
 title: "managementConditionStatement resource type"
-description: "A management condition statement is a group of management conditions that enable/disable device/application configurations when all contained management conditions are met."
+description: "A management condition statement is a group of management conditions that enable/disable device/application configurations when all contained management conditions are met."author: "tfitzmac"
 ---
 
 # managementConditionStatement resource type

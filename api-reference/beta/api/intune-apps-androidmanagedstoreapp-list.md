@@ -1,6 +1,6 @@
 ---
 title: "List androidManagedStoreApps"
-description: "List properties and relationships of the androidManagedStoreApp objects."
+description: "List properties and relationships of the androidManagedStoreApp objects."author: "tfitzmac"
 ---
 
 # List androidManagedStoreApps

@@ -1,6 +1,6 @@
 ---
 title: "enrollmentConfigurationAssignment resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # enrollmentConfigurationAssignment resource type

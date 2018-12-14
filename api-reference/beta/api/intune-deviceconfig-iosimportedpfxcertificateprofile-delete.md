@@ -1,6 +1,6 @@
 ---
 title: "Delete iosImportedPFXCertificateProfile"
-description: "Deletes a iosImportedPFXCertificateProfile."
+description: "Deletes a iosImportedPFXCertificateProfile."author: "tfitzmac"
 ---
 
 # Delete iosImportedPFXCertificateProfile

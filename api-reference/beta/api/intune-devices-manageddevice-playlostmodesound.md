@@ -1,6 +1,6 @@
 ---
 title: "playLostModeSound action"
-description: "Remote lock"
+description: "Remote lock"author: "tfitzmac"
 ---
 
 # playLostModeSound action

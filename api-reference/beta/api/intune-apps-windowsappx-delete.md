@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsAppX"
-description: "Deletes a windowsAppX."
+description: "Deletes a windowsAppX."author: "tfitzmac"
 ---
 
 # Delete windowsAppX

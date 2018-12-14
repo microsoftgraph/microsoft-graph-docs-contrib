@@ -1,6 +1,6 @@
 ---
 title: "Get androidWorkProfileCertificateProfileBase"
-description: "Read properties and relationships of the androidWorkProfileCertificateProfileBase object."
+description: "Read properties and relationships of the androidWorkProfileCertificateProfileBase object."author: "tfitzmac"
 ---
 
 # Get androidWorkProfileCertificateProfileBase

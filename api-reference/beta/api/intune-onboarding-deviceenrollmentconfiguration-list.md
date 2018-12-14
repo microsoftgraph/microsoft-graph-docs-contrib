@@ -1,6 +1,6 @@
 ---
 title: "List deviceEnrollmentConfigurations"
-description: "List properties and relationships of the deviceEnrollmentConfiguration objects."
+description: "List properties and relationships of the deviceEnrollmentConfiguration objects."author: "tfitzmac"
 ---
 
 # List deviceEnrollmentConfigurations

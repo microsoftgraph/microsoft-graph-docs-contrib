@@ -1,6 +1,6 @@
 ---
 title: "Force domain deletion"
-description: "Deletes a domain using an asynchronous long-running operation."
+description: "Deletes a domain using an asynchronous long-running operation."author: "lleonard-msft"
 ---
 
 # Force domain deletion

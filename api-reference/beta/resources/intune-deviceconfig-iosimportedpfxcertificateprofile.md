@@ -1,6 +1,6 @@
 ---
 title: "iosImportedPFXCertificateProfile resource type"
-description: "iOS PFX Import certificate profile"
+description: "iOS PFX Import certificate profile"author: "tfitzmac"
 ---
 
 # iosImportedPFXCertificateProfile resource type

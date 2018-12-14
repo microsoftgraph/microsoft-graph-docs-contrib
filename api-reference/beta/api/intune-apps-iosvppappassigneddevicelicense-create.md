@@ -1,6 +1,6 @@
 ---
 title: "Create iosVppAppAssignedDeviceLicense"
-description: "Create a new iosVppAppAssignedDeviceLicense object."
+description: "Create a new iosVppAppAssignedDeviceLicense object."author: "tfitzmac"
 ---
 
 # Create iosVppAppAssignedDeviceLicense

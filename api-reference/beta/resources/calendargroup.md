@@ -1,6 +1,6 @@
 ---
 title: "calendarGroup resource type"
-description: "A group of user calendars."
+description: "A group of user calendars."author: "angelgolfer-ms"
 ---
 
 # calendarGroup resource type

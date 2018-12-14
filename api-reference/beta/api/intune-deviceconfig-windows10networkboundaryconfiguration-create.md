@@ -1,6 +1,6 @@
 ---
 title: "Create windows10NetworkBoundaryConfiguration"
-description: "Create a new windows10NetworkBoundaryConfiguration object."
+description: "Create a new windows10NetworkBoundaryConfiguration object."author: "tfitzmac"
 ---
 
 # Create windows10NetworkBoundaryConfiguration

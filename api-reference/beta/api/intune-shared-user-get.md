@@ -1,6 +1,6 @@
 ---
 title: "Get user"
-description: "Read properties and relationships of the user object."
+description: "Read properties and relationships of the user object."author: "tfitzmac"
 ---
 
 # Get user

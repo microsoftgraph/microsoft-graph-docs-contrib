@@ -1,6 +1,6 @@
 ---
 title: "mediaContentRatingCanada resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # mediaContentRatingCanada resource type

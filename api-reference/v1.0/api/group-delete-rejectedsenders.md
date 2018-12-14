@@ -1,6 +1,6 @@
 ---
 title: "Remove rejectedSender"
-description: "Remove a user or group from the rejectedSenders list."
+description: "Remove a user or group from the rejectedSenders list."author: "dkershaw10"
 ---
 
 # Remove rejectedSender

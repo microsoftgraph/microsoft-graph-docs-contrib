@@ -1,6 +1,6 @@
 ---
 title: "Delete importedAppleDeviceIdentityResult"
-description: "Deletes a importedAppleDeviceIdentityResult."
+description: "Deletes a importedAppleDeviceIdentityResult."author: "tfitzmac"
 ---
 
 # Delete importedAppleDeviceIdentityResult

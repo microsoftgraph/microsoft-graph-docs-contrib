@@ -1,6 +1,6 @@
 ---
 title: "secureAssessmentAccountType enum type"
-description: "Type of accounts that are allowed for Windows10SecureAssessment ConfigurationAccount."
+description: "Type of accounts that are allowed for Windows10SecureAssessment ConfigurationAccount."author: "tfitzmac"
 ---
 
 # secureAssessmentAccountType enum type

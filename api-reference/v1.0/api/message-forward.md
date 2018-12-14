@@ -1,6 +1,6 @@
 ---
 title: "message: forward"
-description: "Forward a message. The message is saved in the Sent Items folder."
+description: "Forward a message. The message is saved in the Sent Items folder."author: "angelgolfer-ms"
 ---
 
 # message: forward

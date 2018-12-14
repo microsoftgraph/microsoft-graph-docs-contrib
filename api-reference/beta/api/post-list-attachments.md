@@ -1,6 +1,6 @@
 ---
 title: "List attachments"
-description: "Retrieve a list of attachment objects attached to a post."
+description: "Retrieve a list of attachment objects attached to a post."author: "dkershaw10"
 ---
 
 # List attachments

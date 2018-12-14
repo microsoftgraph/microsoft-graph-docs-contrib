@@ -1,6 +1,6 @@
 ---
 title: "List androidDeviceOwnerEnrollmentProfiles"
-description: "List properties and relationships of the androidDeviceOwnerEnrollmentProfile objects."
+description: "List properties and relationships of the androidDeviceOwnerEnrollmentProfile objects."author: "tfitzmac"
 ---
 
 # List androidDeviceOwnerEnrollmentProfiles

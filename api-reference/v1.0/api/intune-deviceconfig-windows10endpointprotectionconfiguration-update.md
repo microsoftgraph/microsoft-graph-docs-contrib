@@ -1,6 +1,6 @@
 ---
 title: "Update windows10EndpointProtectionConfiguration"
-description: "Update the properties of a windows10EndpointProtectionConfiguration object."
+description: "Update the properties of a windows10EndpointProtectionConfiguration object."author: "tfitzmac"
 ---
 
 # Update windows10EndpointProtectionConfiguration

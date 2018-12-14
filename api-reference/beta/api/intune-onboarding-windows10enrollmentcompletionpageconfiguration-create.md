@@ -1,6 +1,6 @@
 ---
 title: "Create windows10EnrollmentCompletionPageConfiguration"
-description: "Create a new windows10EnrollmentCompletionPageConfiguration object."
+description: "Create a new windows10EnrollmentCompletionPageConfiguration object."author: "tfitzmac"
 ---
 
 # Create windows10EnrollmentCompletionPageConfiguration

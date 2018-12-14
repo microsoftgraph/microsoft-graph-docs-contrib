@@ -1,6 +1,6 @@
 ---
 title: "devicePlatformType enum type"
-description: "Supported platform types."
+description: "Supported platform types."author: "tfitzmac"
 ---
 
 # devicePlatformType enum type

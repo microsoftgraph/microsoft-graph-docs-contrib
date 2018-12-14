@@ -1,6 +1,6 @@
 ---
 title: "plannerPlanContextDetailsCollection resource type"
-description: " the value is the plannerPlanContextDetails object."
+description: " the value is the plannerPlanContextDetails object."author: "TarkanSevilmis"
 ---
 
 # plannerPlanContextDetailsCollection resource type

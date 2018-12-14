@@ -1,6 +1,6 @@
 ---
 title: "mobileAppIntentAndStateDetail resource type"
-description: "Mobile App Intent and Install State for a given device."
+description: "Mobile App Intent and Install State for a given device."author: "tfitzmac"
 ---
 
 # mobileAppIntentAndStateDetail resource type

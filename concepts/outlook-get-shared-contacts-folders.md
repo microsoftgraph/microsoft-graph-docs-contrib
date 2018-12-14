@@ -1,6 +1,6 @@
 ---
 title: "Get Outlook contacts in a shared folder"
-description: " this is also "
+description: " this is also "author: "angelgolfer-ms"
 ---
 
 # Get Outlook contacts in a shared folder

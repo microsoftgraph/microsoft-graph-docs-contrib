@@ -1,6 +1,6 @@
 ---
 title: "dailySchedule resource type"
-description: "Daily run schedule of a recurring device management script."
+description: "Daily run schedule of a recurring device management script."author: "tfitzmac"
 ---
 
 # dailySchedule resource type

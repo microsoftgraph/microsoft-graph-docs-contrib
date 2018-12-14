@@ -1,6 +1,6 @@
 ---
 title: "Delete mobileAppTroubleshootingEvent"
-description: "Deletes a mobileAppTroubleshootingEvent."
+description: "Deletes a mobileAppTroubleshootingEvent."author: "tfitzmac"
 ---
 
 # Delete mobileAppTroubleshootingEvent

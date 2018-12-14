@@ -1,6 +1,6 @@
 ---
 title: "Get managedMobileApp"
-description: "Read properties and relationships of the managedMobileApp object."
+description: "Read properties and relationships of the managedMobileApp object."author: "tfitzmac"
 ---
 
 # Get managedMobileApp

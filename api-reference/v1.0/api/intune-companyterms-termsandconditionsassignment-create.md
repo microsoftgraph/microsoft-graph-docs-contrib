@@ -1,6 +1,6 @@
 ---
 title: "Create termsAndConditionsAssignment"
-description: "Create a new termsAndConditionsAssignment object."
+description: "Create a new termsAndConditionsAssignment object."author: "tfitzmac"
 ---
 
 # Create termsAndConditionsAssignment

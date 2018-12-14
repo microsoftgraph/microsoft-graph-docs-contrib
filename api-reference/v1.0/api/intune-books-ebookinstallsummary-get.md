@@ -1,6 +1,6 @@
 ---
 title: "Get eBookInstallSummary"
-description: "Read properties and relationships of the eBookInstallSummary object."
+description: "Read properties and relationships of the eBookInstallSummary object."author: "tfitzmac"
 ---
 
 # Get eBookInstallSummary

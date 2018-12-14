@@ -1,6 +1,6 @@
 ---
 title: "hashAlgorithms enum type"
-description: "Hash Algorithm Options."
+description: "Hash Algorithm Options."author: "tfitzmac"
 ---
 
 # hashAlgorithms enum type

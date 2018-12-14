@@ -1,6 +1,6 @@
 ---
 title: "deviceEnrollmentLimitConfiguration resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # deviceEnrollmentLimitConfiguration resource type

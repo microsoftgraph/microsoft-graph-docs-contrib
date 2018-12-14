@@ -1,6 +1,6 @@
 ---
 title: "Update deviceInstallState"
-description: "Update the properties of a deviceInstallState object."
+description: "Update the properties of a deviceInstallState object."author: "tfitzmac"
 ---
 
 # Update deviceInstallState

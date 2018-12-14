@@ -1,6 +1,6 @@
 ---
 title: "Get iosLobAppProvisioningConfiguration"
-description: "Read properties and relationships of the iosLobAppProvisioningConfiguration object."
+description: "Read properties and relationships of the iosLobAppProvisioningConfiguration object."author: "tfitzmac"
 ---
 
 # Get iosLobAppProvisioningConfiguration

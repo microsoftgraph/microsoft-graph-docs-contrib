@@ -1,6 +1,6 @@
 ---
 title: "Update windowsKioskConfiguration"
-description: "Update the properties of a windowsKioskConfiguration object."
+description: "Update the properties of a windowsKioskConfiguration object."author: "tfitzmac"
 ---
 
 # Update windowsKioskConfiguration

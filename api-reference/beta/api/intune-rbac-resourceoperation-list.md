@@ -1,6 +1,6 @@
 ---
 title: "List resourceOperations"
-description: "List properties and relationships of the resourceOperation objects."
+description: "List properties and relationships of the resourceOperation objects."author: "tfitzmac"
 ---
 
 # List resourceOperations

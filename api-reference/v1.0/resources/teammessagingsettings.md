@@ -1,6 +1,6 @@
 ---
 title: "teamMessagingSettings resource type"
-description: "Settings to configure messaging and mentions in the team."
+description: "Settings to configure messaging and mentions in the team."author: "nkramer"
 ---
 
 # teamMessagingSettings resource type

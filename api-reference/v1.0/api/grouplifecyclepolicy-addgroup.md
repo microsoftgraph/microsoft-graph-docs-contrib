@@ -1,6 +1,6 @@
 ---
 title: "groupLifecyclePolicy: addGroup"
-description: "Adds a group to a lifecycle policy."
+description: "Adds a group to a lifecycle policy."author: "dkershaw10"
 ---
 
 # groupLifecyclePolicy: addGroup

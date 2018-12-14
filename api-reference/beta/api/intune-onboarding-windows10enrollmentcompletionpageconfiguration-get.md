@@ -1,6 +1,6 @@
 ---
 title: "Get windows10EnrollmentCompletionPageConfiguration"
-description: "Read properties and relationships of the windows10EnrollmentCompletionPageConfiguration object."
+description: "Read properties and relationships of the windows10EnrollmentCompletionPageConfiguration object."author: "tfitzmac"
 ---
 
 # Get windows10EnrollmentCompletionPageConfiguration

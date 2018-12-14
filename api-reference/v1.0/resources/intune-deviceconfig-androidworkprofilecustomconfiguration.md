@@ -1,6 +1,6 @@
 ---
 title: "androidWorkProfileCustomConfiguration resource type"
-description: "Android Work Profile custom configuration"
+description: "Android Work Profile custom configuration"author: "tfitzmac"
 ---
 
 # androidWorkProfileCustomConfiguration resource type

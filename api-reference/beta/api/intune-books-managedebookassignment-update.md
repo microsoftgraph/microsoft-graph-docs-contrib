@@ -1,6 +1,6 @@
 ---
 title: "Update managedEBookAssignment"
-description: "Update the properties of a managedEBookAssignment object."
+description: "Update the properties of a managedEBookAssignment object."author: "tfitzmac"
 ---
 
 # Update managedEBookAssignment

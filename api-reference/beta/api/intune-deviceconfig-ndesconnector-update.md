@@ -1,6 +1,6 @@
 ---
 title: "Update ndesConnector"
-description: "Update the properties of a ndesConnector object."
+description: "Update the properties of a ndesConnector object."author: "tfitzmac"
 ---
 
 # Update ndesConnector

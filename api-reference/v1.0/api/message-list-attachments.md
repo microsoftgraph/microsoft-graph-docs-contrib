@@ -1,6 +1,6 @@
 ---
 title: "List attachments"
-description: "Retrieve a list of attachment objects attached to a message."
+description: "Retrieve a list of attachment objects attached to a message."author: "angelgolfer-ms"
 ---
 
 # List attachments

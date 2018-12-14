@@ -1,6 +1,6 @@
 ---
 title: "List macOSImportedPFXCertificateProfiles"
-description: "List properties and relationships of the macOSImportedPFXCertificateProfile objects."
+description: "List properties and relationships of the macOSImportedPFXCertificateProfile objects."author: "tfitzmac"
 ---
 
 # List macOSImportedPFXCertificateProfiles

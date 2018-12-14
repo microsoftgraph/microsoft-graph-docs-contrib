@@ -1,6 +1,6 @@
 ---
 title: "Update resourceOperation"
-description: "Update the properties of a resourceOperation object."
+description: "Update the properties of a resourceOperation object."author: "tfitzmac"
 ---
 
 # Update resourceOperation

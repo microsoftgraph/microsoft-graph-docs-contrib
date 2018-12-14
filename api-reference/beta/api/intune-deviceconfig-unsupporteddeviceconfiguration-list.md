@@ -1,6 +1,6 @@
 ---
 title: "List unsupportedDeviceConfigurations"
-description: "List properties and relationships of the unsupportedDeviceConfiguration objects."
+description: "List properties and relationships of the unsupportedDeviceConfiguration objects."author: "tfitzmac"
 ---
 
 # List unsupportedDeviceConfigurations

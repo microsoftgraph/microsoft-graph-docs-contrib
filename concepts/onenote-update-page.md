@@ -1,6 +1,6 @@
 ---
 title: "Update OneNote page content"
-description: " Enterprise notebooks on Office 365"
+description: " Enterprise notebooks on Office 365"author: "Jewan-microsoft"
 ---
 
 # Update OneNote page content

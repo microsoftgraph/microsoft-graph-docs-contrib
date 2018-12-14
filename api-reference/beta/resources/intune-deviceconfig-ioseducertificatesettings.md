@@ -1,6 +1,6 @@
 ---
 title: "iosEduCertificateSettings resource type"
-description: "Trusted Root and PFX certificates for iOS EDU."
+description: "Trusted Root and PFX certificates for iOS EDU."author: "tfitzmac"
 ---
 
 # iosEduCertificateSettings resource type

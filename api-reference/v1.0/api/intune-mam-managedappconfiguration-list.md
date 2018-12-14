@@ -1,6 +1,6 @@
 ---
 title: "List managedAppConfigurations"
-description: "List properties and relationships of the managedAppConfiguration objects."
+description: "List properties and relationships of the managedAppConfiguration objects."author: "tfitzmac"
 ---
 
 # List managedAppConfigurations

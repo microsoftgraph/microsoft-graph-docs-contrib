@@ -1,6 +1,6 @@
 ---
 title: "Get dataSharingConsent"
-description: "Read properties and relationships of the dataSharingConsent object."
+description: "Read properties and relationships of the dataSharingConsent object."author: "tfitzmac"
 ---
 
 # Get dataSharingConsent

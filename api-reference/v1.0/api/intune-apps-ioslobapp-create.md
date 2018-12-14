@@ -1,6 +1,6 @@
 ---
 title: "Create iosLobApp"
-description: "Create a new iosLobApp object."
+description: "Create a new iosLobApp object."author: "tfitzmac"
 ---
 
 # Create iosLobApp

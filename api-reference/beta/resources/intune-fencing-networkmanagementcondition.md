@@ -1,6 +1,6 @@
 ---
 title: "networkManagementCondition resource type"
-description: "Contains the information to define a network management condition."
+description: "Contains the information to define a network management condition."author: "tfitzmac"
 ---
 
 # networkManagementCondition resource type

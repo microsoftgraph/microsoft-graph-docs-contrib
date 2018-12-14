@@ -1,6 +1,6 @@
 ---
 title: "Create section"
-description: "Create a new section in the specified notebook."
+description: "Create a new section in the specified notebook."author: "Jewan-microsoft"
 ---
 
 # Create section

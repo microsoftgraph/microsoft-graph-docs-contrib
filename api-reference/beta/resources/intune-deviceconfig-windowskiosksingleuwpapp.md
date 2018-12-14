@@ -1,6 +1,6 @@
 ---
 title: "windowsKioskSingleUWPApp resource type"
-description: "The class used to identify the UWP app info for the kiosk configuration"
+description: "The class used to identify the UWP app info for the kiosk configuration"author: "tfitzmac"
 ---
 
 # windowsKioskSingleUWPApp resource type

@@ -1,6 +1,6 @@
 ---
 title: "Get managedApp"
-description: "Read properties and relationships of the managedApp object."
+description: "Read properties and relationships of the managedApp object."author: "tfitzmac"
 ---
 
 # Get managedApp

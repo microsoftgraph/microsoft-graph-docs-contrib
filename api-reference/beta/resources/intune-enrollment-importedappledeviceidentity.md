@@ -1,6 +1,6 @@
 ---
 title: "importedAppleDeviceIdentity resource type"
-description: "The importedAppleDeviceIdentity resource represents the imported device identity of an Apple device ."
+description: "The importedAppleDeviceIdentity resource represents the imported device identity of an Apple device ."author: "tfitzmac"
 ---
 
 # importedAppleDeviceIdentity resource type

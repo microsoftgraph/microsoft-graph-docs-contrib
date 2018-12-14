@@ -1,6 +1,6 @@
 ---
 title: "Create androidForWorkNineWorkEasConfiguration"
-description: "Create a new androidForWorkNineWorkEasConfiguration object."
+description: "Create a new androidForWorkNineWorkEasConfiguration object."author: "tfitzmac"
 ---
 
 # Create androidForWorkNineWorkEasConfiguration

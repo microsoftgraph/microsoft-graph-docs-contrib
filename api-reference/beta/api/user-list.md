@@ -1,6 +1,6 @@
 ---
 title: "List users"
-description: "Retrieve a list of user objects."
+description: "Retrieve a list of user objects."author: "dkershaw10"
 ---
 
 # List users

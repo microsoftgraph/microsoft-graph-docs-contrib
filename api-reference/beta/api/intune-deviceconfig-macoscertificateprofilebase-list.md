@@ -1,6 +1,6 @@
 ---
 title: "List macOSCertificateProfileBases"
-description: "List properties and relationships of the macOSCertificateProfileBase objects."
+description: "List properties and relationships of the macOSCertificateProfileBase objects."author: "tfitzmac"
 ---
 
 # List macOSCertificateProfileBases

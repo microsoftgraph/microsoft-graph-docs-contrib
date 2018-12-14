@@ -1,6 +1,6 @@
 ---
 title: "Get macOSScepCertificateProfile"
-description: "Read properties and relationships of the macOSScepCertificateProfile object."
+description: "Read properties and relationships of the macOSScepCertificateProfile object."author: "tfitzmac"
 ---
 
 # Get macOSScepCertificateProfile

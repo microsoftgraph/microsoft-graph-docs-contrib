@@ -1,6 +1,6 @@
 ---
 title: "List windowsInformationProtectionPolicies"
-description: "List properties and relationships of the windowsInformationProtectionPolicy objects."
+description: "List properties and relationships of the windowsInformationProtectionPolicy objects."author: "tfitzmac"
 ---
 
 # List windowsInformationProtectionPolicies

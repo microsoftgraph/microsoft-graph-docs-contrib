@@ -1,6 +1,6 @@
 ---
 title: "Delete iosEducationDeviceConfiguration"
-description: "Deletes a iosEducationDeviceConfiguration."
+description: "Deletes a iosEducationDeviceConfiguration."author: "tfitzmac"
 ---
 
 # Delete iosEducationDeviceConfiguration

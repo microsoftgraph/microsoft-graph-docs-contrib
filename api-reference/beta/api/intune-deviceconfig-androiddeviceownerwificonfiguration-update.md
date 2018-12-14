@@ -1,6 +1,6 @@
 ---
 title: "Update androidDeviceOwnerWiFiConfiguration"
-description: "Update the properties of a androidDeviceOwnerWiFiConfiguration object."
+description: "Update the properties of a androidDeviceOwnerWiFiConfiguration object."author: "tfitzmac"
 ---
 
 # Update androidDeviceOwnerWiFiConfiguration

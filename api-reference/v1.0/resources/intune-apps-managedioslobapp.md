@@ -1,6 +1,6 @@
 ---
 title: "managedIOSLobApp resource type"
-description: "Contains properties and inherited properties for Managed iOS Line Of Business apps."
+description: "Contains properties and inherited properties for Managed iOS Line Of Business apps."author: "tfitzmac"
 ---
 
 # managedIOSLobApp resource type

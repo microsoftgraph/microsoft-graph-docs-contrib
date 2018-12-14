@@ -1,6 +1,6 @@
 ---
 title: "List androidForWorkTrustedRootCertificates"
-description: "List properties and relationships of the androidForWorkTrustedRootCertificate objects."
+description: "List properties and relationships of the androidForWorkTrustedRootCertificate objects."author: "tfitzmac"
 ---
 
 # List androidForWorkTrustedRootCertificates

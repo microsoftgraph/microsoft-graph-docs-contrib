@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsPhone81ImportedPFXCertificateProfile"
-description: "Deletes a windowsPhone81ImportedPFXCertificateProfile."
+description: "Deletes a windowsPhone81ImportedPFXCertificateProfile."author: "tfitzmac"
 ---
 
 # Delete windowsPhone81ImportedPFXCertificateProfile

@@ -1,6 +1,6 @@
 ---
 title: "importedWindowsAutopilotDeviceIdentityUpload resource type"
-description: "Import windows autopilot devices using upload."
+description: "Import windows autopilot devices using upload."author: "tfitzmac"
 ---
 
 # importedWindowsAutopilotDeviceIdentityUpload resource type

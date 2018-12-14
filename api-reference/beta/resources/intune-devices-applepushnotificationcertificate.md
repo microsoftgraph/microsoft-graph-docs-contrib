@@ -1,6 +1,6 @@
 ---
 title: "applePushNotificationCertificate resource type"
-description: "Apple push notification certificate."
+description: "Apple push notification certificate."author: "tfitzmac"
 ---
 
 # applePushNotificationCertificate resource type

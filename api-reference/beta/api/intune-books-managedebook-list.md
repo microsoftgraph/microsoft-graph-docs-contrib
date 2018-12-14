@@ -1,6 +1,6 @@
 ---
 title: "List managedEBooks"
-description: "List properties and relationships of the managedEBook objects."
+description: "List properties and relationships of the managedEBook objects."author: "tfitzmac"
 ---
 
 # List managedEBooks

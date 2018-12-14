@@ -1,6 +1,6 @@
 ---
 title: "Upgrade an app in a team"
-description: "Upgrades an app installation in a team"
+description: "Upgrades an app installation in a team"author: "nkramer"
 ---
 
 # Upgrade an app in a team

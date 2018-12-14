@@ -1,6 +1,6 @@
 ---
 title: "keyValuePair resource type"
-description: "Key value pair for storing custom settings"
+description: "Key value pair for storing custom settings"author: "tfitzmac"
 ---
 
 # keyValuePair resource type

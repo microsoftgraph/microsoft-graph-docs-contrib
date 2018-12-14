@@ -1,6 +1,6 @@
 ---
 title: "Update iosVppEBook"
-description: "Update the properties of a iosVppEBook object."
+description: "Update the properties of a iosVppEBook object."author: "tfitzmac"
 ---
 
 # Update iosVppEBook

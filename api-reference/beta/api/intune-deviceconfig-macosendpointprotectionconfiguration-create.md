@@ -1,6 +1,6 @@
 ---
 title: "Create macOSEndpointProtectionConfiguration"
-description: "Create a new macOSEndpointProtectionConfiguration object."
+description: "Create a new macOSEndpointProtectionConfiguration object."author: "tfitzmac"
 ---
 
 # Create macOSEndpointProtectionConfiguration

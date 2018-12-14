@@ -1,6 +1,6 @@
 ---
 title: "Update group"
-description: "Update the properties of a group object."
+description: "Update the properties of a group object."author: "dkershaw10"
 ---
 
 # Update group

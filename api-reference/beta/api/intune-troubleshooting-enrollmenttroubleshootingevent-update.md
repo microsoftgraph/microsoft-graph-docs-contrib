@@ -1,6 +1,6 @@
 ---
 title: "Update enrollmentTroubleshootingEvent"
-description: "Update the properties of a enrollmentTroubleshootingEvent object."
+description: "Update the properties of a enrollmentTroubleshootingEvent object."author: "tfitzmac"
 ---
 
 # Update enrollmentTroubleshootingEvent

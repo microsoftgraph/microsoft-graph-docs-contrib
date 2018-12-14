@@ -1,6 +1,6 @@
 ---
 title: "numberRange resource type"
-description: "Number Range definition."
+description: "Number Range definition."author: "tfitzmac"
 ---
 
 # numberRange resource type

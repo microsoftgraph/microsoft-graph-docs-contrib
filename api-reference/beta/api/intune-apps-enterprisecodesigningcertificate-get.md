@@ -1,6 +1,6 @@
 ---
 title: "Get enterpriseCodeSigningCertificate"
-description: "Read properties and relationships of the enterpriseCodeSigningCertificate object."
+description: "Read properties and relationships of the enterpriseCodeSigningCertificate object."author: "tfitzmac"
 ---
 
 # Get enterpriseCodeSigningCertificate

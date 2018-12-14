@@ -1,6 +1,6 @@
 ---
 title: "List windows81GeneralConfigurations"
-description: "List properties and relationships of the windows81GeneralConfiguration objects."
+description: "List properties and relationships of the windows81GeneralConfiguration objects."author: "tfitzmac"
 ---
 
 # List windows81GeneralConfigurations

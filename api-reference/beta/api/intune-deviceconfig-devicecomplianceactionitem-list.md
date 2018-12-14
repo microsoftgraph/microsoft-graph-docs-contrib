@@ -1,6 +1,6 @@
 ---
 title: "List deviceComplianceActionItems"
-description: "List properties and relationships of the deviceComplianceActionItem objects."
+description: "List properties and relationships of the deviceComplianceActionItem objects."author: "tfitzmac"
 ---
 
 # List deviceComplianceActionItems

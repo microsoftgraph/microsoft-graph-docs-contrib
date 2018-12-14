@@ -1,6 +1,6 @@
 ---
 title: "Get alert"
-description: " Retrieve the properties and relationships of an alert object."
+description: " Retrieve the properties and relationships of an alert object."author: "Preetikr"
 ---
 
 # Get alert

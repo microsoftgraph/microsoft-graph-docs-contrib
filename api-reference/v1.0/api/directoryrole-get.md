@@ -1,6 +1,6 @@
 ---
 title: "Get directoryRole"
-description: "Retrieve the properties of a directoryRole object."
+description: "Retrieve the properties of a directoryRole object."author: "lleonard-msft"
 ---
 
 # Get directoryRole

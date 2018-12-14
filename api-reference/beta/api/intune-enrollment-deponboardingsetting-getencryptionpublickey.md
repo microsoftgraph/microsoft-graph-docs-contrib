@@ -1,6 +1,6 @@
 ---
 title: "getEncryptionPublicKey function"
-description: "Get a public key to use to encrypt the Apple device enrollment program token"
+description: "Get a public key to use to encrypt the Apple device enrollment program token"author: "tfitzmac"
 ---
 
 # getEncryptionPublicKey function

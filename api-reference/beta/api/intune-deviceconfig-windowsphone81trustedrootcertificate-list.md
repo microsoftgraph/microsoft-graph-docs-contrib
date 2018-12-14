@@ -1,6 +1,6 @@
 ---
 title: "List windowsPhone81TrustedRootCertificates"
-description: "List properties and relationships of the windowsPhone81TrustedRootCertificate objects."
+description: "List properties and relationships of the windowsPhone81TrustedRootCertificate objects."author: "tfitzmac"
 ---
 
 # List windowsPhone81TrustedRootCertificates

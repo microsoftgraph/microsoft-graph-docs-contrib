@@ -1,6 +1,6 @@
 ---
 title: "omaSetting resource type"
-description: "OMA Settings definition."
+description: "OMA Settings definition."author: "tfitzmac"
 ---
 
 # omaSetting resource type

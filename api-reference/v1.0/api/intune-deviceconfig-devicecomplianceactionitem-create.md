@@ -1,6 +1,6 @@
 ---
 title: "Create deviceComplianceActionItem"
-description: "Create a new deviceComplianceActionItem object."
+description: "Create a new deviceComplianceActionItem object."author: "tfitzmac"
 ---
 
 # Create deviceComplianceActionItem

@@ -1,6 +1,6 @@
 ---
 title: "Update advancedThreatProtectionOnboardingDeviceSettingState"
-description: "Update the properties of a advancedThreatProtectionOnboardingDeviceSettingState object."
+description: "Update the properties of a advancedThreatProtectionOnboardingDeviceSettingState object."author: "tfitzmac"
 ---
 
 # Update advancedThreatProtectionOnboardingDeviceSettingState

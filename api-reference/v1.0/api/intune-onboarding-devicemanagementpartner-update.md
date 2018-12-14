@@ -1,6 +1,6 @@
 ---
 title: "Update deviceManagementPartner"
-description: "Update the properties of a deviceManagementPartner object."
+description: "Update the properties of a deviceManagementPartner object."author: "tfitzmac"
 ---
 
 # Update deviceManagementPartner

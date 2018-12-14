@@ -1,6 +1,6 @@
 ---
 title: "Create iosLobAppProvisioningConfigurationAssignment"
-description: "Create a new iosLobAppProvisioningConfigurationAssignment object."
+description: "Create a new iosLobAppProvisioningConfigurationAssignment object."author: "tfitzmac"
 ---
 
 # Create iosLobAppProvisioningConfigurationAssignment

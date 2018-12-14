@@ -1,6 +1,6 @@
 ---
 title: "Get educationAssignmentResource"
-description: "Get the properties of a specific resource on an assignment.  "
+description: "Get the properties of a specific resource on an assignment.  "author: "mmast-msft"
 ---
 
 # Get educationAssignmentResource

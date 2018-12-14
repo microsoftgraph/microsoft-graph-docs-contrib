@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceComplianceActionItem"
-description: "Deletes a deviceComplianceActionItem."
+description: "Deletes a deviceComplianceActionItem."author: "tfitzmac"
 ---
 
 # Delete deviceComplianceActionItem

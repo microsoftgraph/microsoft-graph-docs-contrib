@@ -1,6 +1,6 @@
 ---
 title: "Get windowsOfficeClientSecurityConfiguration"
-description: "Get a specific security policy windowsOfficeClientSecurityConfiguration object."
+description: "Get a specific security policy windowsOfficeClientSecurityConfiguration object."author: "tfitzmac"
 ---
 
 # Get windowsOfficeClientSecurityConfiguration

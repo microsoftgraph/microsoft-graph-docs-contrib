@@ -1,6 +1,6 @@
 ---
 title: "List windows10CustomConfigurations"
-description: "List properties and relationships of the windows10CustomConfiguration objects."
+description: "List properties and relationships of the windows10CustomConfiguration objects."author: "tfitzmac"
 ---
 
 # List windows10CustomConfigurations

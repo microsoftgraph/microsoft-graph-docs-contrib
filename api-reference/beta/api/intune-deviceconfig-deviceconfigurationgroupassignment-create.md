@@ -1,6 +1,6 @@
 ---
 title: "Create deviceConfigurationGroupAssignment"
-description: "Create a new deviceConfigurationGroupAssignment object."
+description: "Create a new deviceConfigurationGroupAssignment object."author: "tfitzmac"
 ---
 
 # Create deviceConfigurationGroupAssignment

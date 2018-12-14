@@ -1,6 +1,6 @@
 ---
 title: "extendQualityUpdatesPause action"
-description: "Extend Quality Updates Pause for a Windows Update for Business ring."
+description: "Extend Quality Updates Pause for a Windows Update for Business ring."author: "tfitzmac"
 ---
 
 # extendQualityUpdatesPause action

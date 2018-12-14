@@ -1,6 +1,6 @@
 ---
 title: "Create windows10GeneralConfiguration"
-description: "Create a new windows10GeneralConfiguration object."
+description: "Create a new windows10GeneralConfiguration object."author: "tfitzmac"
 ---
 
 # Create windows10GeneralConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "managedAppProtection resource type"
-description: "Policy used to configure detailed management settings for a specified set of apps"
+description: "Policy used to configure detailed management settings for a specified set of apps"author: "tfitzmac"
 ---
 
 # managedAppProtection resource type

@@ -1,6 +1,6 @@
 ---
 title: "Get identityRiskEvent"
-description: "Retrieve the properties and relationships of identityriskevent object."
+description: "Retrieve the properties and relationships of identityriskevent object."author: "cloudhandler"
 ---
 
 # Get identityRiskEvent

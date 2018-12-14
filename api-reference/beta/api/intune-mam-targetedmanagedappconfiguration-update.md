@@ -1,6 +1,6 @@
 ---
 title: "Update targetedManagedAppConfiguration"
-description: "Update the properties of a targetedManagedAppConfiguration object."
+description: "Update the properties of a targetedManagedAppConfiguration object."author: "tfitzmac"
 ---
 
 # Update targetedManagedAppConfiguration

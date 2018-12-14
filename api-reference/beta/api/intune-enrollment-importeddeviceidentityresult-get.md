@@ -1,6 +1,6 @@
 ---
 title: "Get importedDeviceIdentityResult"
-description: "Read properties and relationships of the importedDeviceIdentityResult object."
+description: "Read properties and relationships of the importedDeviceIdentityResult object."author: "tfitzmac"
 ---
 
 # Get importedDeviceIdentityResult

@@ -1,6 +1,6 @@
 ---
 title: "Delete windows81GeneralConfiguration"
-description: "Deletes a windows81GeneralConfiguration."
+description: "Deletes a windows81GeneralConfiguration."author: "tfitzmac"
 ---
 
 # Delete windows81GeneralConfiguration

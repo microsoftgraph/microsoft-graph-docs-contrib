@@ -1,6 +1,6 @@
 ---
 title: "deviceEnrollmentWindowsHelloForBusinessConfiguration resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # deviceEnrollmentWindowsHelloForBusinessConfiguration resource type

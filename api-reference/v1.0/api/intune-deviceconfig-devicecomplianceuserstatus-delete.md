@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceComplianceUserStatus"
-description: "Deletes a deviceComplianceUserStatus."
+description: "Deletes a deviceComplianceUserStatus."author: "tfitzmac"
 ---
 
 # Delete deviceComplianceUserStatus

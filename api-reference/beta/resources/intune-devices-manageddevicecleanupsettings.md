@@ -1,6 +1,6 @@
 ---
 title: "managedDeviceCleanupSettings resource type"
-description: "Define the rule when the admin wants the devices to be cleaned up."
+description: "Define the rule when the admin wants the devices to be cleaned up."author: "tfitzmac"
 ---
 
 # managedDeviceCleanupSettings resource type

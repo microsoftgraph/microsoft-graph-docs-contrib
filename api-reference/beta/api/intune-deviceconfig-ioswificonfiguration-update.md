@@ -1,6 +1,6 @@
 ---
 title: "Update iosWiFiConfiguration"
-description: "Update the properties of a iosWiFiConfiguration object."
+description: "Update the properties of a iosWiFiConfiguration object."author: "tfitzmac"
 ---
 
 # Update iosWiFiConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "Create defaultDeviceCompliancePolicy"
-description: "Create a new defaultDeviceCompliancePolicy object."
+description: "Create a new defaultDeviceCompliancePolicy object."author: "tfitzmac"
 ---
 
 # Create defaultDeviceCompliancePolicy

@@ -1,6 +1,6 @@
 ---
 title: "Create managedMobileApp"
-description: "Create a new managedMobileApp object."
+description: "Create a new managedMobileApp object."author: "tfitzmac"
 ---
 
 # Create managedMobileApp

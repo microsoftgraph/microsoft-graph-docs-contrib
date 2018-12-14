@@ -1,6 +1,6 @@
 ---
 title: "Update educationclass properties"
-description: "Update the properties of a class."
+description: "Update the properties of a class."author: "mmast-msft"
 ---
 
 # Update educationclass properties

@@ -1,6 +1,6 @@
 ---
 title: "Update iosPkcsCertificateProfile"
-description: "Update the properties of a iosPkcsCertificateProfile object."
+description: "Update the properties of a iosPkcsCertificateProfile object."author: "tfitzmac"
 ---
 
 # Update iosPkcsCertificateProfile

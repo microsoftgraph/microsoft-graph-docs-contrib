@@ -1,6 +1,6 @@
 ---
 title: "Get androidForWorkApp"
-description: "Read properties and relationships of the androidForWorkApp object."
+description: "Read properties and relationships of the androidForWorkApp object."author: "tfitzmac"
 ---
 
 # Get androidForWorkApp

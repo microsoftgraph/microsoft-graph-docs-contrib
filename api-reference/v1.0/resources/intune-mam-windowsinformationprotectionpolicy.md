@@ -1,6 +1,6 @@
 ---
 title: "windowsInformationProtectionPolicy resource type"
-description: "Policy for Windows information protection without MDM"
+description: "Policy for Windows information protection without MDM"author: "tfitzmac"
 ---
 
 # windowsInformationProtectionPolicy resource type

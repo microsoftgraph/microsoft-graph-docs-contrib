@@ -1,6 +1,6 @@
 ---
 title: "domain resource type"
-description: "Represents a domain associated with the tenant."
+description: "Represents a domain associated with the tenant."author: "lleonard-msft"
 ---
 
 # domain resource type

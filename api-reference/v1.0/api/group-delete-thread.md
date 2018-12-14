@@ -1,6 +1,6 @@
 ---
 title: "Delete conversation thread"
-description: "Delete a thread object."
+description: "Delete a thread object."author: "dkershaw10"
 ---
 
 # Delete conversation thread

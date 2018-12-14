@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceManagementExchangeConnector"
-description: "Deletes a deviceManagementExchangeConnector."
+description: "Deletes a deviceManagementExchangeConnector."author: "tfitzmac"
 ---
 
 # Delete deviceManagementExchangeConnector

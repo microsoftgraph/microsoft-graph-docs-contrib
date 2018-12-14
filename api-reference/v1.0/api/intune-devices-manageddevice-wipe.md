@@ -1,6 +1,6 @@
 ---
 title: "wipe action"
-description: "Wipe a device"
+description: "Wipe a device"author: "tfitzmac"
 ---
 
 # wipe action

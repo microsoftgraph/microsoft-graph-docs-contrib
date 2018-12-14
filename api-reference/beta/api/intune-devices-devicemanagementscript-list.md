@@ -1,6 +1,6 @@
 ---
 title: "List deviceManagementScripts"
-description: "List properties and relationships of the deviceManagementScript objects."
+description: "List properties and relationships of the deviceManagementScript objects."author: "tfitzmac"
 ---
 
 # List deviceManagementScripts

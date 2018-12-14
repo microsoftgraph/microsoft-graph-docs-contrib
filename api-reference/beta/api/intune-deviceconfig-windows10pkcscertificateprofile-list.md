@@ -1,6 +1,6 @@
 ---
 title: "List windows10PkcsCertificateProfiles"
-description: "List properties and relationships of the windows10PkcsCertificateProfile objects."
+description: "List properties and relationships of the windows10PkcsCertificateProfile objects."author: "tfitzmac"
 ---
 
 # List windows10PkcsCertificateProfiles

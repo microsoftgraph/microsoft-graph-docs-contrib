@@ -1,6 +1,6 @@
 ---
 title: "Get windowsManagementAppHealthState"
-description: "Read properties and relationships of the windowsManagementAppHealthState object."
+description: "Read properties and relationships of the windowsManagementAppHealthState object."author: "tfitzmac"
 ---
 
 # Get windowsManagementAppHealthState

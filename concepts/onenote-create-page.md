@@ -1,6 +1,6 @@
 ---
 title: "Create OneNote pages"
-description: " Enterprise notebooks on Office 365"
+description: " Enterprise notebooks on Office 365"author: "Jewan-microsoft"
 ---
 
 # Create OneNote pages

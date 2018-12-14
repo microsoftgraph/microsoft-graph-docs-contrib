@@ -1,6 +1,6 @@
 ---
 title: "managedDevicePartnerReportedHealthState enum type"
-description: "Available health states for the Device Health API"
+description: "Available health states for the Device Health API"author: "tfitzmac"
 ---
 
 # managedDevicePartnerReportedHealthState enum type

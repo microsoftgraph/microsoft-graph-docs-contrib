@@ -1,6 +1,6 @@
 ---
 title: "androidWorkProfileRequiredPasswordType enum type"
-description: "Android Work Profile required password type."
+description: "Android Work Profile required password type."author: "tfitzmac"
 ---
 
 # androidWorkProfileRequiredPasswordType enum type

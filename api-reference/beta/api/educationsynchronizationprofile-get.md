@@ -1,6 +1,6 @@
 ---
 title: "Get an educationSynchronizationProfile"
-description: "Retrieve a school data synchronization profile in the tenant based on the identifier."
+description: "Retrieve a school data synchronization profile in the tenant based on the identifier."author: "mmast-msft"
 ---
 
 # Get an educationSynchronizationProfile

@@ -1,6 +1,6 @@
 ---
 title: "omaSettingDateTime resource type"
-description: "OMA Settings DateTime definition."
+description: "OMA Settings DateTime definition."author: "tfitzmac"
 ---
 
 # omaSettingDateTime resource type

@@ -1,6 +1,6 @@
 ---
 title: "ratingIrelandMoviesType enum type"
-description: "Movies rating labels in Ireland"
+description: "Movies rating labels in Ireland"author: "tfitzmac"
 ---
 
 # ratingIrelandMoviesType enum type

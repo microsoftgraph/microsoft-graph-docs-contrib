@@ -1,6 +1,6 @@
 ---
 title: "Get windows10CompliancePolicy"
-description: "Read properties and relationships of the windows10CompliancePolicy object."
+description: "Read properties and relationships of the windows10CompliancePolicy object."author: "tfitzmac"
 ---
 
 # Get windows10CompliancePolicy

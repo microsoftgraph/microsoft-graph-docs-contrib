@@ -1,6 +1,6 @@
 ---
 title: "requestSignupUrl action"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # requestSignupUrl action

@@ -1,6 +1,6 @@
 ---
 title: "Delete androidForWorkEnrollmentProfile"
-description: "Deletes a androidForWorkEnrollmentProfile."
+description: "Deletes a androidForWorkEnrollmentProfile."author: "tfitzmac"
 ---
 
 # Delete androidForWorkEnrollmentProfile

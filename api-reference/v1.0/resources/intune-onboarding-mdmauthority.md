@@ -1,6 +1,6 @@
 ---
 title: "mdmAuthority enum type"
-description: "Mobile device management authority."
+description: "Mobile device management authority."author: "tfitzmac"
 ---
 
 # mdmAuthority enum type

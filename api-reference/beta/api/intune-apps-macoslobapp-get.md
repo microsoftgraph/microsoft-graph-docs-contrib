@@ -1,6 +1,6 @@
 ---
 title: "Get macOSLobApp"
-description: "Read properties and relationships of the macOSLobApp object."
+description: "Read properties and relationships of the macOSLobApp object."author: "tfitzmac"
 ---
 
 # Get macOSLobApp

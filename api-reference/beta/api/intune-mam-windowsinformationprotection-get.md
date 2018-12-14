@@ -1,6 +1,6 @@
 ---
 title: "Get windowsInformationProtection"
-description: "Read properties and relationships of the windowsInformationProtection object."
+description: "Read properties and relationships of the windowsInformationProtection object."author: "tfitzmac"
 ---
 
 # Get windowsInformationProtection

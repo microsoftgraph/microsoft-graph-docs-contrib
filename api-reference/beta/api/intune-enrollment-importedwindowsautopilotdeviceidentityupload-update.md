@@ -1,6 +1,6 @@
 ---
 title: "Update importedWindowsAutopilotDeviceIdentityUpload"
-description: "Update the properties of a importedWindowsAutopilotDeviceIdentityUpload object."
+description: "Update the properties of a importedWindowsAutopilotDeviceIdentityUpload object."author: "tfitzmac"
 ---
 
 # Update importedWindowsAutopilotDeviceIdentityUpload

@@ -1,6 +1,6 @@
 ---
 title: "List iosImportedPFXCertificateProfiles"
-description: "List properties and relationships of the iosImportedPFXCertificateProfile objects."
+description: "List properties and relationships of the iosImportedPFXCertificateProfile objects."author: "tfitzmac"
 ---
 
 # List iosImportedPFXCertificateProfiles

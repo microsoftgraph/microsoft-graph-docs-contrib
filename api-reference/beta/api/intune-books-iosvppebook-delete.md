@@ -1,6 +1,6 @@
 ---
 title: "Delete iosVppEBook"
-description: "Deletes a iosVppEBook."
+description: "Deletes a iosVppEBook."author: "tfitzmac"
 ---
 
 # Delete iosVppEBook

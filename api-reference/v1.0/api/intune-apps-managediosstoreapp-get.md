@@ -1,6 +1,6 @@
 ---
 title: "Get managedIOSStoreApp"
-description: "Read properties and relationships of the managedIOSStoreApp object."
+description: "Read properties and relationships of the managedIOSStoreApp object."author: "tfitzmac"
 ---
 
 # Get managedIOSStoreApp

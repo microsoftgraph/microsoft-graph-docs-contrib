@@ -1,6 +1,6 @@
 ---
 title: "List workingWith"
-description: "Calculated insight for the list of users that a user has been working with."
+description: "Calculated insight for the list of users that a user has been working with."author: "dkershaw10"
 ---
 
 # List workingWith

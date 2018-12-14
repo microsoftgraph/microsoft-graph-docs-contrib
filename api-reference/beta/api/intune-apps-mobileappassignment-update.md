@@ -1,6 +1,6 @@
 ---
 title: "Update mobileAppAssignment"
-description: "Update the properties of a mobileAppAssignment object."
+description: "Update the properties of a mobileAppAssignment object."author: "tfitzmac"
 ---
 
 # Update mobileAppAssignment

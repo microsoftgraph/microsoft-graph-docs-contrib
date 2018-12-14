@@ -1,6 +1,6 @@
 ---
 title: "Update enterpriseCodeSigningCertificate"
-description: "Update the properties of a enterpriseCodeSigningCertificate object."
+description: "Update the properties of a enterpriseCodeSigningCertificate object."author: "tfitzmac"
 ---
 
 # Update enterpriseCodeSigningCertificate

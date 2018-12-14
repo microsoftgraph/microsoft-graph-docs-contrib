@@ -1,6 +1,6 @@
 ---
 title: "List applications"
-description: "Retrieve the list of applications in this organization."
+description: "Retrieve the list of applications in this organization."author: "lleonard-msft"
 ---
 
 # List applications

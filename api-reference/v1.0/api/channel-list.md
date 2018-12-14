@@ -1,6 +1,6 @@
 ---
 title: "List channels"
-description: "Retrieve the list of channels in this team."
+description: "Retrieve the list of channels in this team."author: "nkramer"
 ---
 
 # List channels

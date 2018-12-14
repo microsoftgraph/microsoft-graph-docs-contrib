@@ -1,6 +1,6 @@
 ---
 title: "Get managedDeviceMobileAppConfigurationUserStatus"
-description: "Read properties and relationships of the managedDeviceMobileAppConfigurationUserStatus object."
+description: "Read properties and relationships of the managedDeviceMobileAppConfigurationUserStatus object."author: "tfitzmac"
 ---
 
 # Get managedDeviceMobileAppConfigurationUserStatus

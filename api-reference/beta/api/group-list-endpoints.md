@@ -1,6 +1,6 @@
 ---
 title: "List endpoints"
-description: "Retrieve a list of endpoint objects."
+description: "Retrieve a list of endpoint objects."author: "dkershaw10"
 ---
 
 # List endpoints

@@ -1,6 +1,6 @@
 ---
 title: "Update iosScepCertificateProfile"
-description: "Update the properties of a iosScepCertificateProfile object."
+description: "Update the properties of a iosScepCertificateProfile object."author: "tfitzmac"
 ---
 
 # Update iosScepCertificateProfile

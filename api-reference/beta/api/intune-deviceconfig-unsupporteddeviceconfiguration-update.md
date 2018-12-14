@@ -1,6 +1,6 @@
 ---
 title: "Update unsupportedDeviceConfiguration"
-description: "Update the properties of a unsupportedDeviceConfiguration object."
+description: "Update the properties of a unsupportedDeviceConfiguration object."author: "tfitzmac"
 ---
 
 # Update unsupportedDeviceConfiguration

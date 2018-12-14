@@ -1,6 +1,6 @@
 ---
 title: "windowsDomainJoinConfiguration resource type"
-description: "Windows Domain Join device configuration."
+description: "Windows Domain Join device configuration."author: "tfitzmac"
 ---
 
 # windowsDomainJoinConfiguration resource type

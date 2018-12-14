@@ -1,6 +1,6 @@
 ---
 title: "Get depMacOSEnrollmentProfile"
-description: "Read properties and relationships of the depMacOSEnrollmentProfile object."
+description: "Read properties and relationships of the depMacOSEnrollmentProfile object."author: "tfitzmac"
 ---
 
 # Get depMacOSEnrollmentProfile

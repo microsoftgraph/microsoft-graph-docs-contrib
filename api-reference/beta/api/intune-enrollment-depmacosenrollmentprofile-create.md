@@ -1,6 +1,6 @@
 ---
 title: "Create depMacOSEnrollmentProfile"
-description: "Create a new depMacOSEnrollmentProfile object."
+description: "Create a new depMacOSEnrollmentProfile object."author: "tfitzmac"
 ---
 
 # Create depMacOSEnrollmentProfile

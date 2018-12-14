@@ -1,6 +1,6 @@
 ---
 title: "Get iosEducationDeviceConfiguration"
-description: "Read properties and relationships of the iosEducationDeviceConfiguration object."
+description: "Read properties and relationships of the iosEducationDeviceConfiguration object."author: "tfitzmac"
 ---
 
 # Get iosEducationDeviceConfiguration

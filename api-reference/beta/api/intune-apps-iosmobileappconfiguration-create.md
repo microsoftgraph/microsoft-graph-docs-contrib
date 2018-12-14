@@ -1,6 +1,6 @@
 ---
 title: "Create iosMobileAppConfiguration"
-description: "Create a new iosMobileAppConfiguration object."
+description: "Create a new iosMobileAppConfiguration object."author: "tfitzmac"
 ---
 
 # Create iosMobileAppConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "Create rule"
-description: "Create a messageRule object by specifying a set of conditions and actions. "
+description: "Create a messageRule object by specifying a set of conditions and actions. "author: "angelgolfer-ms"
 ---
 
 # Create rule

@@ -1,6 +1,6 @@
 ---
 title: "Update roleScopeTag"
-description: "Update the properties of a roleScopeTag object."
+description: "Update the properties of a roleScopeTag object."author: "tfitzmac"
 ---
 
 # Update roleScopeTag

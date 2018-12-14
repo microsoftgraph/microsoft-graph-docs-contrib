@@ -1,6 +1,6 @@
 ---
 title: "List androidManagedAppProtections"
-description: "List properties and relationships of the androidManagedAppProtection objects."
+description: "List properties and relationships of the androidManagedAppProtection objects."author: "tfitzmac"
 ---
 
 # List androidManagedAppProtections

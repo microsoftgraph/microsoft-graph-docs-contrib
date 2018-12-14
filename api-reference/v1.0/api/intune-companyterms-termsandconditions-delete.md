@@ -1,6 +1,6 @@
 ---
 title: "Delete termsAndConditions"
-description: "Deletes a termsAndConditions."
+description: "Deletes a termsAndConditions."author: "tfitzmac"
 ---
 
 # Delete termsAndConditions

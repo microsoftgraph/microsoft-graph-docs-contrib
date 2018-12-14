@@ -1,6 +1,6 @@
 ---
 title: "Get windowsInformationProtectionPolicy"
-description: "Read properties and relationships of the windowsInformationProtectionPolicy object."
+description: "Read properties and relationships of the windowsInformationProtectionPolicy object."author: "tfitzmac"
 ---
 
 # Get windowsInformationProtectionPolicy

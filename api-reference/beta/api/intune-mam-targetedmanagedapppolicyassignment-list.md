@@ -1,6 +1,6 @@
 ---
 title: "List targetedManagedAppPolicyAssignments"
-description: "List properties and relationships of the targetedManagedAppPolicyAssignment objects."
+description: "List properties and relationships of the targetedManagedAppPolicyAssignment objects."author: "tfitzmac"
 ---
 
 # List targetedManagedAppPolicyAssignments

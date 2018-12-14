@@ -1,6 +1,6 @@
 ---
 title: "windowsUpdateForBusinessUpdateWeeks enum type"
-description: "Scheduled the update installation on the weeks of the month"
+description: "Scheduled the update installation on the weeks of the month"author: "tfitzmac"
 ---
 
 # windowsUpdateForBusinessUpdateWeeks enum type

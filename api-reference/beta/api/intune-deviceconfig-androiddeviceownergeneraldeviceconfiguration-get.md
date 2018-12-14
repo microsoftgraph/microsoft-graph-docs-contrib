@@ -1,6 +1,6 @@
 ---
 title: "Get androidDeviceOwnerGeneralDeviceConfiguration"
-description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."
+description: "Read properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration object."author: "tfitzmac"
 ---
 
 # Get androidDeviceOwnerGeneralDeviceConfiguration

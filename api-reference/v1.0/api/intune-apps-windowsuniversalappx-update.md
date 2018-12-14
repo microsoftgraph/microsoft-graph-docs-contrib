@@ -1,6 +1,6 @@
 ---
 title: "Update windowsUniversalAppX"
-description: "Update the properties of a windowsUniversalAppX object."
+description: "Update the properties of a windowsUniversalAppX object."author: "tfitzmac"
 ---
 
 # Update windowsUniversalAppX

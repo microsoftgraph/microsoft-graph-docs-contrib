@@ -1,6 +1,6 @@
 ---
 title: "Get deviceConfigurationDeviceStateSummary"
-description: "Read properties and relationships of the deviceConfigurationDeviceStateSummary object."
+description: "Read properties and relationships of the deviceConfigurationDeviceStateSummary object."author: "tfitzmac"
 ---
 
 # Get deviceConfigurationDeviceStateSummary

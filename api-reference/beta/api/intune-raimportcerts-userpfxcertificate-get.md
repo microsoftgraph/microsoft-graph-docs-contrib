@@ -1,6 +1,6 @@
 ---
 title: "Get userPFXCertificate"
-description: "Read properties and relationships of the userPFXCertificate object."
+description: "Read properties and relationships of the userPFXCertificate object."author: "tfitzmac"
 ---
 
 # Get userPFXCertificate

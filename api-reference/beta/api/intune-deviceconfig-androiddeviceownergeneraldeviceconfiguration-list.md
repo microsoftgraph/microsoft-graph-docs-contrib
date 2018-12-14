@@ -1,6 +1,6 @@
 ---
 title: "List androidDeviceOwnerGeneralDeviceConfigurations"
-description: "List properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration objects."
+description: "List properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration objects."author: "tfitzmac"
 ---
 
 # List androidDeviceOwnerGeneralDeviceConfigurations

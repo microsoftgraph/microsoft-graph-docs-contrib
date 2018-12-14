@@ -1,6 +1,6 @@
 ---
 title: "outlookItem resource type"
-description: "Here is a JSON representation of the resource"
+description: "Here is a JSON representation of the resource"author: "angelgolfer-ms"
 ---
 
 # outlookItem resource type

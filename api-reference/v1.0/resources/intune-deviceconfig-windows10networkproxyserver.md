@@ -1,6 +1,6 @@
 ---
 title: "windows10NetworkProxyServer resource type"
-description: "Network Proxy Server Policy."
+description: "Network Proxy Server Policy."author: "tfitzmac"
 ---
 
 # windows10NetworkProxyServer resource type

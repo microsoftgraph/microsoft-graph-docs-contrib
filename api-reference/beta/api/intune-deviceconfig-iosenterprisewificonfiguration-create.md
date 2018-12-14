@@ -1,6 +1,6 @@
 ---
 title: "Create iosEnterpriseWiFiConfiguration"
-description: "Create a new iosEnterpriseWiFiConfiguration object."
+description: "Create a new iosEnterpriseWiFiConfiguration object."author: "tfitzmac"
 ---
 
 # Create iosEnterpriseWiFiConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "deviceEnrollmentType enum type"
-description: "Possible ways of adding a mobile device to management."
+description: "Possible ways of adding a mobile device to management."author: "tfitzmac"
 ---
 
 # deviceEnrollmentType enum type

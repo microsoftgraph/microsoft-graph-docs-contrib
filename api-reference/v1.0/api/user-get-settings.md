@@ -1,6 +1,6 @@
 ---
 title: "Get settings"
-description: "Read the user and organization settings object."
+description: "Read the user and organization settings object."author: "dkershaw10"
 ---
 
 # Get settings

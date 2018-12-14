@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceInstallState"
-description: "Deletes a deviceInstallState."
+description: "Deletes a deviceInstallState."author: "tfitzmac"
 ---
 
 # Delete deviceInstallState

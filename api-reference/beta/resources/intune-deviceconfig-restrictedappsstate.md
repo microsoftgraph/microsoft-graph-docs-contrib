@@ -1,6 +1,6 @@
 ---
 title: "restrictedAppsState enum type"
-description: "Restricted apps state"
+description: "Restricted apps state"author: "tfitzmac"
 ---
 
 # restrictedAppsState enum type

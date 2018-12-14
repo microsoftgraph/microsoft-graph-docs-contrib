@@ -1,6 +1,6 @@
 ---
 title: "Create a directory setting on groups"
-description: "Use this API to create a new directory setting for the group."
+description: "Use this API to create a new directory setting for the group."author: "dkershaw10"
 ---
 
 # Create a directory setting on groups

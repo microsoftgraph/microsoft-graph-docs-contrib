@@ -1,6 +1,6 @@
 ---
 title: "Create thread"
-description: "Create a new thread in the specified conversation."
+description: "Create a new thread in the specified conversation."author: "dkershaw10"
 ---
 
 # Create thread

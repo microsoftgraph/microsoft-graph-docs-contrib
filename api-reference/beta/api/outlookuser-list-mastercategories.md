@@ -1,6 +1,6 @@
 ---
 title: "List Outlook categories"
-description: "Get all the categories that have been defined for the user."
+description: "Get all the categories that have been defined for the user."author: "angelgolfer-ms"
 ---
 
 # List Outlook categories

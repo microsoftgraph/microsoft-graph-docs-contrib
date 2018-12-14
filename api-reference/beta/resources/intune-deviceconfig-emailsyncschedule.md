@@ -1,6 +1,6 @@
 ---
 title: "emailSyncSchedule enum type"
-description: "Possible values for email sync schedule."
+description: "Possible values for email sync schedule."author: "tfitzmac"
 ---
 
 # emailSyncSchedule enum type

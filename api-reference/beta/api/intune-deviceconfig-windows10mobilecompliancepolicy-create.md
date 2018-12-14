@@ -1,6 +1,6 @@
 ---
 title: "Create windows10MobileCompliancePolicy"
-description: "Create a new windows10MobileCompliancePolicy object."
+description: "Create a new windows10MobileCompliancePolicy object."author: "tfitzmac"
 ---
 
 # Create windows10MobileCompliancePolicy

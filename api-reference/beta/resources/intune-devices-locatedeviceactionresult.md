@@ -1,6 +1,6 @@
 ---
 title: "locateDeviceActionResult resource type"
-description: "Locate device action result"
+description: "Locate device action result"author: "tfitzmac"
 ---
 
 # locateDeviceActionResult resource type

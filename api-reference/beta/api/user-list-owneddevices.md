@@ -1,6 +1,6 @@
 ---
 title: "List ownedDevices"
-description: "Get the list of devices that are owned by the user."
+description: "Get the list of devices that are owned by the user."author: "dkershaw10"
 ---
 
 # List ownedDevices

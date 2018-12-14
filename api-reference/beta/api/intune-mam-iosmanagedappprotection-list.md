@@ -1,6 +1,6 @@
 ---
 title: "List iosManagedAppProtections"
-description: "List properties and relationships of the iosManagedAppProtection objects."
+description: "List properties and relationships of the iosManagedAppProtection objects."author: "tfitzmac"
 ---
 
 # List iosManagedAppProtections

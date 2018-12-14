@@ -1,6 +1,6 @@
 ---
 title: "Create remoteActionAudit"
-description: "Create a new remoteActionAudit object."
+description: "Create a new remoteActionAudit object."author: "tfitzmac"
 ---
 
 # Create remoteActionAudit

@@ -1,6 +1,6 @@
 ---
 title: "Get managedAppStatus"
-description: "Read properties and relationships of the managedAppStatus object."
+description: "Read properties and relationships of the managedAppStatus object."author: "tfitzmac"
 ---
 
 # Get managedAppStatus

@@ -1,6 +1,6 @@
 ---
 title: "settingSource resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # settingSource resource type

@@ -1,6 +1,6 @@
 ---
 title: "Create androidForWorkAppConfigurationSchema"
-description: "Create a new androidForWorkAppConfigurationSchema object."
+description: "Create a new androidForWorkAppConfigurationSchema object."author: "tfitzmac"
 ---
 
 # Create androidForWorkAppConfigurationSchema

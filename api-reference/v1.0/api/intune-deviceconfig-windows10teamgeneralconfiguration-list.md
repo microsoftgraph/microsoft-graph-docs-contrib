@@ -1,6 +1,6 @@
 ---
 title: "List windows10TeamGeneralConfigurations"
-description: "List properties and relationships of the windows10TeamGeneralConfiguration objects."
+description: "List properties and relationships of the windows10TeamGeneralConfiguration objects."author: "tfitzmac"
 ---
 
 # List windows10TeamGeneralConfigurations

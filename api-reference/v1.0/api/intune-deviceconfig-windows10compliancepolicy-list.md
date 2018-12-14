@@ -1,6 +1,6 @@
 ---
 title: "List windows10CompliancePolicies"
-description: "List properties and relationships of the windows10CompliancePolicy objects."
+description: "List properties and relationships of the windows10CompliancePolicy objects."author: "tfitzmac"
 ---
 
 # List windows10CompliancePolicies

@@ -1,6 +1,6 @@
 ---
 title: "educationSubmission resource type"
-description: "Submissions are owned by an assignment. A submission represents the resources that an individual (or group) turn in for an assignment and the grade/feedback that is returned."
+description: "Submissions are owned by an assignment. A submission represents the resources that an individual (or group) turn in for an assignment and the grade/feedback that is returned."author: "mmast-msft"
 ---
 
 # educationSubmission resource type

@@ -1,6 +1,6 @@
 ---
 title: "Remove a student"
-description: "Removes an educationUser from an educationClass"
+description: "Removes an educationUser from an educationClass"author: "mmast-msft"
 ---
 
 # Remove a student

@@ -1,6 +1,6 @@
 ---
 title: "List windows81WifiImportConfigurations"
-description: "List properties and relationships of the windows81WifiImportConfiguration objects."
+description: "List properties and relationships of the windows81WifiImportConfiguration objects."author: "tfitzmac"
 ---
 
 # List windows81WifiImportConfigurations

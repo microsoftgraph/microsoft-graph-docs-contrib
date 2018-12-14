@@ -1,6 +1,6 @@
 ---
 title: "Get windows10CustomConfiguration"
-description: "Read properties and relationships of the windows10CustomConfiguration object."
+description: "Read properties and relationships of the windows10CustomConfiguration object."author: "tfitzmac"
 ---
 
 # Get windows10CustomConfiguration

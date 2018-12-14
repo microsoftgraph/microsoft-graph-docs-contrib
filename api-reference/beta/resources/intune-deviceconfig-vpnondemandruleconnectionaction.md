@@ -1,6 +1,6 @@
 ---
 title: "vpnOnDemandRuleConnectionAction enum type"
-description: "VPN On-Demand Rule Connection Action."
+description: "VPN On-Demand Rule Connection Action."author: "tfitzmac"
 ---
 
 # vpnOnDemandRuleConnectionAction enum type

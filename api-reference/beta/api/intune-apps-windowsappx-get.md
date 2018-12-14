@@ -1,6 +1,6 @@
 ---
 title: "Get windowsAppX"
-description: "Read properties and relationships of the windowsAppX object."
+description: "Read properties and relationships of the windowsAppX object."author: "tfitzmac"
 ---
 
 # Get windowsAppX

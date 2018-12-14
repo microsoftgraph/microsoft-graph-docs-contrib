@@ -1,6 +1,6 @@
 ---
 title: "List windowsOfficeClientConfigurations"
-description: "List properties and relationships of the windowsOfficeClientConfiguration objects."
+description: "List properties and relationships of the windowsOfficeClientConfiguration objects."author: "tfitzmac"
 ---
 
 # List windowsOfficeClientConfigurations

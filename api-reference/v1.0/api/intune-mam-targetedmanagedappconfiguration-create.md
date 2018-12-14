@@ -1,6 +1,6 @@
 ---
 title: "Create targetedManagedAppConfiguration"
-description: "Create a new targetedManagedAppConfiguration object."
+description: "Create a new targetedManagedAppConfiguration object."author: "tfitzmac"
 ---
 
 # Create targetedManagedAppConfiguration

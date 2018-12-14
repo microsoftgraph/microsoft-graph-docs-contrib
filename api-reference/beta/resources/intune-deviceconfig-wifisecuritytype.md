@@ -1,6 +1,6 @@
 ---
 title: "wiFiSecurityType enum type"
-description: "Wi-Fi Security Types."
+description: "Wi-Fi Security Types."author: "tfitzmac"
 ---
 
 # wiFiSecurityType enum type

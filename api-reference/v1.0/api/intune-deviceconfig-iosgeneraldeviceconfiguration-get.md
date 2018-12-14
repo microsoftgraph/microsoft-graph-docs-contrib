@@ -1,6 +1,6 @@
 ---
 title: "Get iosGeneralDeviceConfiguration"
-description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."
+description: "Read properties and relationships of the iosGeneralDeviceConfiguration object."author: "tfitzmac"
 ---
 
 # Get iosGeneralDeviceConfiguration

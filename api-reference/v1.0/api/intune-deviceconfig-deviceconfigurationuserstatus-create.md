@@ -1,6 +1,6 @@
 ---
 title: "Create deviceConfigurationUserStatus"
-description: "Create a new deviceConfigurationUserStatus object."
+description: "Create a new deviceConfigurationUserStatus object."author: "tfitzmac"
 ---
 
 # Create deviceConfigurationUserStatus

@@ -1,6 +1,6 @@
 ---
 title: "wiFiAuthenticationMethod enum type"
-description: "Wi-Fi authentication method."
+description: "Wi-Fi authentication method."author: "tfitzmac"
 ---
 
 # wiFiAuthenticationMethod enum type

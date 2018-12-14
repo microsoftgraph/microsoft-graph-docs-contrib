@@ -1,6 +1,6 @@
 ---
 title: "androidWorkProfileTrustedRootCertificate resource type"
-description: "Android Work Profile Trusted Root Certificate configuration profile"
+description: "Android Work Profile Trusted Root Certificate configuration profile"author: "tfitzmac"
 ---
 
 # androidWorkProfileTrustedRootCertificate resource type

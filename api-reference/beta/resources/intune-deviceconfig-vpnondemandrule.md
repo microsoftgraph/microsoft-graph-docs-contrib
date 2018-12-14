@@ -1,6 +1,6 @@
 ---
 title: "vpnOnDemandRule resource type"
-description: "VPN On-Demand Rule definition."
+description: "VPN On-Demand Rule definition."author: "tfitzmac"
 ---
 
 # vpnOnDemandRule resource type

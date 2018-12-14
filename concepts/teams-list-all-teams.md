@@ -1,6 +1,6 @@
 ---
 title: "List all teams in Microsoft Teams for an organization"
-description: "To list all teams "
+description: "To list all teams "author: "nkramer"
 ---
 
 # List all teams in Microsoft Teams for an organization

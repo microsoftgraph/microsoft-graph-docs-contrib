@@ -1,6 +1,6 @@
 ---
 title: "Update androidTrustedRootCertificate"
-description: "Update the properties of a androidTrustedRootCertificate object."
+description: "Update the properties of a androidTrustedRootCertificate object."author: "tfitzmac"
 ---
 
 # Update androidTrustedRootCertificate

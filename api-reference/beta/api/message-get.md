@@ -1,6 +1,6 @@
 ---
 title: "Get message"
-description: "Retrieve the properties and relationships of the message object."
+description: "Retrieve the properties and relationships of the message object."author: "angelgolfer-ms"
 ---
 
 # Get message

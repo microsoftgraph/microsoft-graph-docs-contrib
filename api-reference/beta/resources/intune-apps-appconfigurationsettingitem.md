@@ -1,6 +1,6 @@
 ---
 title: "appConfigurationSettingItem resource type"
-description: "Contains properties for App configuration setting item."
+description: "Contains properties for App configuration setting item."author: "tfitzmac"
 ---
 
 # appConfigurationSettingItem resource type

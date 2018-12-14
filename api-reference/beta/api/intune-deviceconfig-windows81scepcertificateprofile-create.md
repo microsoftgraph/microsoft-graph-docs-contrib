@@ -1,6 +1,6 @@
 ---
 title: "Create windows81SCEPCertificateProfile"
-description: "Create a new windows81SCEPCertificateProfile object."
+description: "Create a new windows81SCEPCertificateProfile object."author: "tfitzmac"
 ---
 
 # Create windows81SCEPCertificateProfile

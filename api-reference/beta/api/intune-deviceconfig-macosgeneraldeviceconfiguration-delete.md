@@ -1,6 +1,6 @@
 ---
 title: "Delete macOSGeneralDeviceConfiguration"
-description: "Deletes a macOSGeneralDeviceConfiguration."
+description: "Deletes a macOSGeneralDeviceConfiguration."author: "tfitzmac"
 ---
 
 # Delete macOSGeneralDeviceConfiguration

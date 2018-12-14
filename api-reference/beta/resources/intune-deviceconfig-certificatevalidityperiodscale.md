@@ -1,6 +1,6 @@
 ---
 title: "certificateValidityPeriodScale enum type"
-description: "Certificate Validity Period Options."
+description: "Certificate Validity Period Options."author: "tfitzmac"
 ---
 
 # certificateValidityPeriodScale enum type

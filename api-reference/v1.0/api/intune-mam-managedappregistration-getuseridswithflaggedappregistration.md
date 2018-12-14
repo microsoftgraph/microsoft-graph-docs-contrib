@@ -1,6 +1,6 @@
 ---
 title: "getUserIdsWithFlaggedAppRegistration function"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # getUserIdsWithFlaggedAppRegistration function

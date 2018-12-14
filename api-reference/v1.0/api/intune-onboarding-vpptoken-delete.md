@@ -1,6 +1,6 @@
 ---
 title: "Delete vppToken"
-description: "Deletes a vppToken."
+description: "Deletes a vppToken."author: "tfitzmac"
 ---
 
 # Delete vppToken

@@ -1,6 +1,6 @@
 ---
 title: "Get telecomExpenseManagementPartner"
-description: "Read properties and relationships of the telecomExpenseManagementPartner object."
+description: "Read properties and relationships of the telecomExpenseManagementPartner object."author: "tfitzmac"
 ---
 
 # Get telecomExpenseManagementPartner

@@ -1,6 +1,6 @@
 ---
 title: "Get windows10EnterpriseModernAppManagementConfiguration"
-description: "Read properties and relationships of the windows10EnterpriseModernAppManagementConfiguration object."
+description: "Read properties and relationships of the windows10EnterpriseModernAppManagementConfiguration object."author: "tfitzmac"
 ---
 
 # Get windows10EnterpriseModernAppManagementConfiguration

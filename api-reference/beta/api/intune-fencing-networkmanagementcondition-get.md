@@ -1,6 +1,6 @@
 ---
 title: "Get networkManagementCondition"
-description: "Read properties and relationships of the networkManagementCondition object."
+description: "Read properties and relationships of the networkManagementCondition object."author: "tfitzmac"
 ---
 
 # Get networkManagementCondition

@@ -1,6 +1,6 @@
 ---
 title: "Best practices for working with the OneNote API in Microsoft Graph"
-description: "This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on Stack Overflow and Twitter."
+description: "This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on Stack Overflow and Twitter."author: "Jewan-microsoft"
 ---
 
 # Best practices for working with the OneNote API in Microsoft Graph

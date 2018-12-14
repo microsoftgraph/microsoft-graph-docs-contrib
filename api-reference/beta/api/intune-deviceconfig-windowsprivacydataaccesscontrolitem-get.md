@@ -1,6 +1,6 @@
 ---
 title: "Get windowsPrivacyDataAccessControlItem"
-description: "Read properties and relationships of the windowsPrivacyDataAccessControlItem object."
+description: "Read properties and relationships of the windowsPrivacyDataAccessControlItem object."author: "tfitzmac"
 ---
 
 # Get windowsPrivacyDataAccessControlItem

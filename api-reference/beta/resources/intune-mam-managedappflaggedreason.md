@@ -1,6 +1,6 @@
 ---
 title: "managedAppFlaggedReason enum type"
-description: "The reason for which a user has been flagged"
+description: "The reason for which a user has been flagged"author: "tfitzmac"
 ---
 
 # managedAppFlaggedReason enum type

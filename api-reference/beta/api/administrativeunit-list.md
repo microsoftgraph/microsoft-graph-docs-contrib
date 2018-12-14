@@ -1,6 +1,6 @@
 ---
 title: "List administrativeUnits"
-description: "Retrieve a list of administrativeUnit objects."
+description: "Retrieve a list of administrativeUnit objects."author: "lleonard-msft"
 ---
 
 # List administrativeUnits

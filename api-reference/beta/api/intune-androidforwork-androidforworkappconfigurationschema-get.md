@@ -1,6 +1,6 @@
 ---
 title: "Get androidForWorkAppConfigurationSchema"
-description: "Read properties and relationships of the androidForWorkAppConfigurationSchema object."
+description: "Read properties and relationships of the androidForWorkAppConfigurationSchema object."author: "tfitzmac"
 ---
 
 # Get androidForWorkAppConfigurationSchema

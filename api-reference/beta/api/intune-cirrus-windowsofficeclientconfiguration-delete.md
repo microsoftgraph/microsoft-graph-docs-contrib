@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsOfficeClientConfiguration"
-description: "Delete a specific non-security policy."
+description: "Delete a specific non-security policy."author: "tfitzmac"
 ---
 
 # Delete windowsOfficeClientConfiguration

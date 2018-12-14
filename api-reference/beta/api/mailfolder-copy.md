@@ -1,6 +1,6 @@
 ---
 title: "mailFolder: copy"
-description: "Copy a mailfolder and its contents to another mailfolder."
+description: "Copy a mailfolder and its contents to another mailfolder."author: "angelgolfer-ms"
 ---
 
 # mailFolder: copy

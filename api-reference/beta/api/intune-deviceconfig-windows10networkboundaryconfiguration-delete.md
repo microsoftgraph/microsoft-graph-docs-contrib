@@ -1,6 +1,6 @@
 ---
 title: "Delete windows10NetworkBoundaryConfiguration"
-description: "Deletes a windows10NetworkBoundaryConfiguration."
+description: "Deletes a windows10NetworkBoundaryConfiguration."author: "tfitzmac"
 ---
 
 # Delete windows10NetworkBoundaryConfiguration

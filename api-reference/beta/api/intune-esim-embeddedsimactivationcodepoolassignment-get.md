@@ -1,6 +1,6 @@
 ---
 title: "Get embeddedSIMActivationCodePoolAssignment"
-description: "Read properties and relationships of the embeddedSIMActivationCodePoolAssignment object."
+description: "Read properties and relationships of the embeddedSIMActivationCodePoolAssignment object."author: "tfitzmac"
 ---
 
 # Get embeddedSIMActivationCodePoolAssignment

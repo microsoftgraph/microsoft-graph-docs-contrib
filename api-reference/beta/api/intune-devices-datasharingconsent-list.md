@@ -1,6 +1,6 @@
 ---
 title: "List dataSharingConsents"
-description: "List properties and relationships of the dataSharingConsent objects."
+description: "List properties and relationships of the dataSharingConsent objects."author: "tfitzmac"
 ---
 
 # List dataSharingConsents

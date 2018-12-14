@@ -1,6 +1,6 @@
 ---
 title: "Get windows81SCEPCertificateProfile"
-description: "Read properties and relationships of the windows81SCEPCertificateProfile object."
+description: "Read properties and relationships of the windows81SCEPCertificateProfile object."author: "tfitzmac"
 ---
 
 # Get windows81SCEPCertificateProfile

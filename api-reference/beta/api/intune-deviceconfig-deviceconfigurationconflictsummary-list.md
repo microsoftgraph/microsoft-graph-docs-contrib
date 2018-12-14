@@ -1,6 +1,6 @@
 ---
 title: "List deviceConfigurationConflictSummaries"
-description: "List properties and relationships of the deviceConfigurationConflictSummary objects."
+description: "List properties and relationships of the deviceConfigurationConflictSummary objects."author: "tfitzmac"
 ---
 
 # List deviceConfigurationConflictSummaries

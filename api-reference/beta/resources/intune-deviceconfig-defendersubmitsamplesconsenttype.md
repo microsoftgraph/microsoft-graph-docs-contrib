@@ -1,6 +1,6 @@
 ---
 title: "defenderSubmitSamplesConsentType enum type"
-description: "Possible values for DefenderSubmitSamplesConsentType"
+description: "Possible values for DefenderSubmitSamplesConsentType"author: "tfitzmac"
 ---
 
 # defenderSubmitSamplesConsentType enum type

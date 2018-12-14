@@ -1,6 +1,6 @@
 ---
 title: "Permissions"
-description: "Publish an app to the Microsoft Teams apps catalog. "
+description: "Publish an app to the Microsoft Teams apps catalog. "author: "nkramer"
 ---
 
 # Publish apps to your organization's app catalog

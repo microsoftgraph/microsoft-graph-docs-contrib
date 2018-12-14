@@ -1,6 +1,6 @@
 ---
 title: "Get androidForWorkPkcsCertificateProfile"
-description: "Read properties and relationships of the androidForWorkPkcsCertificateProfile object."
+description: "Read properties and relationships of the androidForWorkPkcsCertificateProfile object."author: "tfitzmac"
 ---
 
 # Get androidForWorkPkcsCertificateProfile

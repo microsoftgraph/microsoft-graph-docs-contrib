@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsPhone81SCEPCertificateProfile"
-description: "Deletes a windowsPhone81SCEPCertificateProfile."
+description: "Deletes a windowsPhone81SCEPCertificateProfile."author: "tfitzmac"
 ---
 
 # Delete windowsPhone81SCEPCertificateProfile

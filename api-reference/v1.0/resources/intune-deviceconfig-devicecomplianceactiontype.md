@@ -1,6 +1,6 @@
 ---
 title: "deviceComplianceActionType enum type"
-description: "Scheduled Action Type Enum"
+description: "Scheduled Action Type Enum"author: "tfitzmac"
 ---
 
 # deviceComplianceActionType enum type

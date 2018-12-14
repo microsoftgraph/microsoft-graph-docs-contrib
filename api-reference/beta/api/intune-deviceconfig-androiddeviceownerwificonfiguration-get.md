@@ -1,6 +1,6 @@
 ---
 title: "Get androidDeviceOwnerWiFiConfiguration"
-description: "Read properties and relationships of the androidDeviceOwnerWiFiConfiguration object."
+description: "Read properties and relationships of the androidDeviceOwnerWiFiConfiguration object."author: "tfitzmac"
 ---
 
 # Get androidDeviceOwnerWiFiConfiguration

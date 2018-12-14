@@ -1,6 +1,6 @@
 ---
 title: "List androidWorkProfileGeneralDeviceConfigurations"
-description: "List properties and relationships of the androidWorkProfileGeneralDeviceConfiguration objects."
+description: "List properties and relationships of the androidWorkProfileGeneralDeviceConfiguration objects."author: "tfitzmac"
 ---
 
 # List androidWorkProfileGeneralDeviceConfigurations

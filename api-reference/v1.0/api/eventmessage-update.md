@@ -1,6 +1,6 @@
 ---
 title: "Update eventMessage"
-description: "Update the properties of an eventMessage object."
+description: "Update the properties of an eventMessage object."author: "angelgolfer-ms"
 ---
 
 # Update eventMessage

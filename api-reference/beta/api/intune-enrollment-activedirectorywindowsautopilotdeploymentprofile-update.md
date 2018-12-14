@@ -1,6 +1,6 @@
 ---
 title: "Update activeDirectoryWindowsAutopilotDeploymentProfile"
-description: "Update the properties of a activeDirectoryWindowsAutopilotDeploymentProfile object."
+description: "Update the properties of a activeDirectoryWindowsAutopilotDeploymentProfile object."author: "tfitzmac"
 ---
 
 # Update activeDirectoryWindowsAutopilotDeploymentProfile

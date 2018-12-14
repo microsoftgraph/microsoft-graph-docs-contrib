@@ -1,6 +1,6 @@
 ---
 title: "Update calendargroup"
-description: "Update the properties of calendargroup object."
+description: "Update the properties of calendargroup object."author: "angelgolfer-ms"
 ---
 
 # Update calendargroup

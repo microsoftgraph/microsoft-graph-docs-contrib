@@ -1,6 +1,6 @@
 ---
 title: "Update mobileAppInstallSummary"
-description: "Update the properties of a mobileAppInstallSummary object."
+description: "Update the properties of a mobileAppInstallSummary object."author: "tfitzmac"
 ---
 
 # Update mobileAppInstallSummary

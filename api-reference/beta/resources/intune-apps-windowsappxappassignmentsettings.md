@@ -1,6 +1,6 @@
 ---
 title: "windowsAppXAppAssignmentSettings resource type"
-description: "Contains properties used when assigning a Windows AppX mobile app to a group."
+description: "Contains properties used when assigning a Windows AppX mobile app to a group."author: "tfitzmac"
 ---
 
 # windowsAppXAppAssignmentSettings resource type

@@ -1,6 +1,6 @@
 ---
 title: "Delete educationAssignment"
-description: "Delete an existing assignment. Only teachers within a class can delete assignments."
+description: "Delete an existing assignment. Only teachers within a class can delete assignments."author: "mmast-msft"
 ---
 
 # Delete educationAssignment

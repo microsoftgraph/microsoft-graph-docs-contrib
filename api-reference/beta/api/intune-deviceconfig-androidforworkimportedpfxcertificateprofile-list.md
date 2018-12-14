@@ -1,6 +1,6 @@
 ---
 title: "List androidForWorkImportedPFXCertificateProfiles"
-description: "List properties and relationships of the androidForWorkImportedPFXCertificateProfile objects."
+description: "List properties and relationships of the androidForWorkImportedPFXCertificateProfile objects."author: "tfitzmac"
 ---
 
 # List androidForWorkImportedPFXCertificateProfiles

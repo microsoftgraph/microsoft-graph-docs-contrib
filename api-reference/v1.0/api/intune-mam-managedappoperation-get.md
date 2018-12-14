@@ -1,6 +1,6 @@
 ---
 title: "Get managedAppOperation"
-description: "Read properties and relationships of the managedAppOperation object."
+description: "Read properties and relationships of the managedAppOperation object."author: "tfitzmac"
 ---
 
 # Get managedAppOperation

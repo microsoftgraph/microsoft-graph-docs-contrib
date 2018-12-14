@@ -1,6 +1,6 @@
 ---
 title: "Get calendarGroup"
-description: "Retrieve the properties and relationships of a calendar group object."
+description: "Retrieve the properties and relationships of a calendar group object."author: "angelgolfer-ms"
 ---
 
 # Get calendarGroup

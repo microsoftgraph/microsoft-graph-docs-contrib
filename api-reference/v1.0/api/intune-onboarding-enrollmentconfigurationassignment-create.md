@@ -1,6 +1,6 @@
 ---
 title: "Create enrollmentConfigurationAssignment"
-description: "Create a new enrollmentConfigurationAssignment object."
+description: "Create a new enrollmentConfigurationAssignment object."author: "tfitzmac"
 ---
 
 # Create enrollmentConfigurationAssignment

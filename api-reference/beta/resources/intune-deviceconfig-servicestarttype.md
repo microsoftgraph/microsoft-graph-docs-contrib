@@ -1,6 +1,6 @@
 ---
 title: "serviceStartType enum type"
-description: "Possible values of xbox service start type"
+description: "Possible values of xbox service start type"author: "tfitzmac"
 ---
 
 # serviceStartType enum type

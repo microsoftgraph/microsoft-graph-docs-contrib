@@ -1,6 +1,6 @@
 ---
 title: "ratingAustraliaTelevisionType enum type"
-description: "TV content rating labels in Australia"
+description: "TV content rating labels in Australia"author: "tfitzmac"
 ---
 
 # ratingAustraliaTelevisionType enum type

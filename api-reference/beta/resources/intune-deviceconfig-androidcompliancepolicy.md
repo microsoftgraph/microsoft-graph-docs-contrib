@@ -1,6 +1,6 @@
 ---
 title: "androidCompliancePolicy resource type"
-description: "This class contains compliance settings for Android."
+description: "This class contains compliance settings for Android."author: "tfitzmac"
 ---
 
 # androidCompliancePolicy resource type

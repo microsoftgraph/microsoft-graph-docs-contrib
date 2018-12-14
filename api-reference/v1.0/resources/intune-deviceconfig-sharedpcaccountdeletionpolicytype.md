@@ -1,6 +1,6 @@
 ---
 title: "sharedPCAccountDeletionPolicyType enum type"
-description: "Possible values for when accounts are deleted on a shared PC."
+description: "Possible values for when accounts are deleted on a shared PC."author: "tfitzmac"
 ---
 
 # sharedPCAccountDeletionPolicyType enum type

@@ -1,6 +1,6 @@
 ---
 title: "Update deviceCompliancePolicyDeviceStateSummary"
-description: "Update the properties of a deviceCompliancePolicyDeviceStateSummary object."
+description: "Update the properties of a deviceCompliancePolicyDeviceStateSummary object."author: "tfitzmac"
 ---
 
 # Update deviceCompliancePolicyDeviceStateSummary

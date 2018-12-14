@@ -1,6 +1,6 @@
 ---
 title: "macOSScepCertificateProfile resource type"
-description: "Mac OS SCEP certificate profile."
+description: "Mac OS SCEP certificate profile."author: "tfitzmac"
 ---
 
 # macOSScepCertificateProfile resource type

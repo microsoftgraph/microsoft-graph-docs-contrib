@@ -1,6 +1,6 @@
 ---
 title: "Delete managedEBookCategory"
-description: "Deletes a managedEBookCategory."
+description: "Deletes a managedEBookCategory."author: "tfitzmac"
 ---
 
 # Delete managedEBookCategory

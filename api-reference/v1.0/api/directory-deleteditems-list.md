@@ -1,6 +1,6 @@
 ---
 title: "List deleted items"
-description: "Retrieve a list of recently deleted items from deleted items."
+description: "Retrieve a list of recently deleted items from deleted items."author: "lleonard-msft"
 ---
 
 # List deleted items

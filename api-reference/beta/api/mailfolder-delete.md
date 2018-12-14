@@ -1,6 +1,6 @@
 ---
 title: "Delete mailFolder"
-description: "Delete the specified mailFolder or mailSearchFolder."
+description: "Delete the specified mailFolder or mailSearchFolder."author: "angelgolfer-ms"
 ---
 
 # Delete mailFolder

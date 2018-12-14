@@ -1,6 +1,6 @@
 ---
 title: "Delete windows10EnterpriseModernAppManagementConfiguration"
-description: "Deletes a windows10EnterpriseModernAppManagementConfiguration."
+description: "Deletes a windows10EnterpriseModernAppManagementConfiguration."author: "tfitzmac"
 ---
 
 # Delete windows10EnterpriseModernAppManagementConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "Get deviceConfiguration"
-description: "Read properties and relationships of the deviceConfiguration object."
+description: "Read properties and relationships of the deviceConfiguration object."author: "tfitzmac"
 ---
 
 # Get deviceConfiguration

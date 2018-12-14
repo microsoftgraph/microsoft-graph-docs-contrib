@@ -1,6 +1,6 @@
 ---
 title: "Get windowsAutopilotDeviceIdentity"
-description: "Read properties and relationships of the windowsAutopilotDeviceIdentity object."
+description: "Read properties and relationships of the windowsAutopilotDeviceIdentity object."author: "tfitzmac"
 ---
 
 # Get windowsAutopilotDeviceIdentity

@@ -1,6 +1,6 @@
 ---
 title: "vpnDnsRule resource type"
-description: "VPN DNS Rule definition."
+description: "VPN DNS Rule definition."author: "tfitzmac"
 ---
 
 # vpnDnsRule resource type

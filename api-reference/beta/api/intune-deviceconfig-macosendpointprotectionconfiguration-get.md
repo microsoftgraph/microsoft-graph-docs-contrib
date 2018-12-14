@@ -1,6 +1,6 @@
 ---
 title: "Get macOSEndpointProtectionConfiguration"
-description: "Read properties and relationships of the macOSEndpointProtectionConfiguration object."
+description: "Read properties and relationships of the macOSEndpointProtectionConfiguration object."author: "tfitzmac"
 ---
 
 # Get macOSEndpointProtectionConfiguration

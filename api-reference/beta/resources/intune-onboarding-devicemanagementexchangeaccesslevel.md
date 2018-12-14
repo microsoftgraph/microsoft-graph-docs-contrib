@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementExchangeAccessLevel enum type"
-description: "Access Level in Exchange."
+description: "Access Level in Exchange."author: "tfitzmac"
 ---
 
 # deviceManagementExchangeAccessLevel enum type

@@ -1,6 +1,6 @@
 ---
 title: "Create windowsWifiConfiguration"
-description: "Create a new windowsWifiConfiguration object."
+description: "Create a new windowsWifiConfiguration object."author: "tfitzmac"
 ---
 
 # Create windowsWifiConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "Get mobileAppInstallSummary"
-description: "Read properties and relationships of the mobileAppInstallSummary object."
+description: "Read properties and relationships of the mobileAppInstallSummary object."author: "tfitzmac"
 ---
 
 # Get mobileAppInstallSummary

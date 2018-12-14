@@ -1,6 +1,6 @@
 ---
 title: "Create page"
-description: "Create a new OneNote page in the default section of the default notebook."
+description: "Create a new OneNote page in the default section of the default notebook."author: "Jewan-microsoft"
 ---
 
 # Create page

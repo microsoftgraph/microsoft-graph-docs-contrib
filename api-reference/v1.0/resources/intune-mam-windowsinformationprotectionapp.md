@@ -1,6 +1,6 @@
 ---
 title: "windowsInformationProtectionApp resource type"
-description: "App for Windows information protection"
+description: "App for Windows information protection"author: "tfitzmac"
 ---
 
 # windowsInformationProtectionApp resource type

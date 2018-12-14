@@ -1,6 +1,6 @@
 ---
 title: "Get managedDevice"
-description: "Read properties and relationships of the managedDevice object."
+description: "Read properties and relationships of the managedDevice object."author: "tfitzmac"
 ---
 
 # Get managedDevice

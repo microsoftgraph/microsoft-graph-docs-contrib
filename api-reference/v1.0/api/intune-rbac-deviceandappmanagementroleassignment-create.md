@@ -1,6 +1,6 @@
 ---
 title: "Create deviceAndAppManagementRoleAssignment"
-description: "Create a new deviceAndAppManagementRoleAssignment object."
+description: "Create a new deviceAndAppManagementRoleAssignment object."author: "tfitzmac"
 ---
 
 # Create deviceAndAppManagementRoleAssignment

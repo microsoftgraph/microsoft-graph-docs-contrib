@@ -1,6 +1,6 @@
 ---
 title: "Create deviceEnrollmentLimitConfiguration"
-description: "Create a new deviceEnrollmentLimitConfiguration object."
+description: "Create a new deviceEnrollmentLimitConfiguration object."author: "tfitzmac"
 ---
 
 # Create deviceEnrollmentLimitConfiguration

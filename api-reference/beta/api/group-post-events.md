@@ -1,6 +1,6 @@
 ---
 title: "Create event"
-description: "Use this API to create a new event."
+description: "Use this API to create a new event."author: "dkershaw10"
 ---
 
 # Create event

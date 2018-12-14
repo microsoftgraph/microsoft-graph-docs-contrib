@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementExchangeConnectorType enum type"
-description: "The type of Exchange Connector."
+description: "The type of Exchange Connector."author: "tfitzmac"
 ---
 
 # deviceManagementExchangeConnectorType enum type

@@ -1,6 +1,6 @@
 ---
 title: "windowsPrivacyDataCategory enum type"
-description: "Windows privacy data category specifier for privacy data access."
+description: "Windows privacy data category specifier for privacy data access."author: "tfitzmac"
 ---
 
 # windowsPrivacyDataCategory enum type

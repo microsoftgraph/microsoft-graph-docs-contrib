@@ -1,6 +1,6 @@
 ---
 title: "List mobileAppContents"
-description: "List properties and relationships of the mobileAppContent objects."
+description: "List properties and relationships of the mobileAppContent objects."author: "tfitzmac"
 ---
 
 # List mobileAppContents

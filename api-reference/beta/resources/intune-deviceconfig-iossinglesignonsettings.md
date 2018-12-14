@@ -1,6 +1,6 @@
 ---
 title: "iosSingleSignOnSettings resource type"
-description: "iOS Kerberos authentication settings for single sign-on"
+description: "iOS Kerberos authentication settings for single sign-on"author: "tfitzmac"
 ---
 
 # iosSingleSignOnSettings resource type

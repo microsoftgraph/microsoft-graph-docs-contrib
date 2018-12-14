@@ -1,6 +1,6 @@
 ---
 title: "List windowsPhone81CertificateProfileBases"
-description: "List properties and relationships of the windowsPhone81CertificateProfileBase objects."
+description: "List properties and relationships of the windowsPhone81CertificateProfileBase objects."author: "tfitzmac"
 ---
 
 # List windowsPhone81CertificateProfileBases

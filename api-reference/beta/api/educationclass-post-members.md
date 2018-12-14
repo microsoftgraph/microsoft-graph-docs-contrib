@@ -1,6 +1,6 @@
 ---
 title: "Add a student"
-description: "Add a member to a class."
+description: "Add a member to a class."author: "mmast-msft"
 ---
 
 # Add a student

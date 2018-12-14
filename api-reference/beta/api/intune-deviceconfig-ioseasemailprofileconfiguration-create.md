@@ -1,6 +1,6 @@
 ---
 title: "Create iosEasEmailProfileConfiguration"
-description: "Create a new iosEasEmailProfileConfiguration object."
+description: "Create a new iosEasEmailProfileConfiguration object."author: "tfitzmac"
 ---
 
 # Create iosEasEmailProfileConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "Create windowsPhone81StoreApp"
-description: "Create a new windowsPhone81StoreApp object."
+description: "Create a new windowsPhone81StoreApp object."author: "tfitzmac"
 ---
 
 # Create windowsPhone81StoreApp

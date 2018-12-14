@@ -1,6 +1,6 @@
 ---
 title: "nonEapAuthenticationMethodForEapTtlsType enum type"
-description: "Non-EAP methods for authentication."
+description: "Non-EAP methods for authentication."author: "tfitzmac"
 ---
 
 # nonEapAuthenticationMethodForEapTtlsType enum type

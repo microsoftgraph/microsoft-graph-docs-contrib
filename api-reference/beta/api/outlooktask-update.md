@@ -1,6 +1,6 @@
 ---
 title: "Update outlooktask"
-description: "Change writable properties of an Outlook task."
+description: "Change writable properties of an Outlook task."author: "angelgolfer-ms"
 ---
 
 # Update outlooktask

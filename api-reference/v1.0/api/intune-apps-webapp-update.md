@@ -1,6 +1,6 @@
 ---
 title: "Update webApp"
-description: "Update the properties of a webApp object."
+description: "Update the properties of a webApp object."author: "tfitzmac"
 ---
 
 # Update webApp

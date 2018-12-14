@@ -1,6 +1,6 @@
 ---
 title: "onenote resource type"
-description: "The entry point for OneNote resources."
+description: "The entry point for OneNote resources."author: "Jewan-microsoft"
 ---
 
 # onenote resource type

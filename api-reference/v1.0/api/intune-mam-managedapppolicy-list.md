@@ -1,6 +1,6 @@
 ---
 title: "List managedAppPolicies"
-description: "List properties and relationships of the managedAppPolicy objects."
+description: "List properties and relationships of the managedAppPolicy objects."author: "tfitzmac"
 ---
 
 # List managedAppPolicies

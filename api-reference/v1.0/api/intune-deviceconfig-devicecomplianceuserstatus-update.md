@@ -1,6 +1,6 @@
 ---
 title: "Update deviceComplianceUserStatus"
-description: "Update the properties of a deviceComplianceUserStatus object."
+description: "Update the properties of a deviceComplianceUserStatus object."author: "tfitzmac"
 ---
 
 # Update deviceComplianceUserStatus

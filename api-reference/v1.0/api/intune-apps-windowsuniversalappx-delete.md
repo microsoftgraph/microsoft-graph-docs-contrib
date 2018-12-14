@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsUniversalAppX"
-description: "Deletes a windowsUniversalAppX."
+description: "Deletes a windowsUniversalAppX."author: "tfitzmac"
 ---
 
 # Delete windowsUniversalAppX

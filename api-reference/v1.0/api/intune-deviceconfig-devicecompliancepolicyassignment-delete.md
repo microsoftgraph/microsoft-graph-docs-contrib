@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceCompliancePolicyAssignment"
-description: "Deletes a deviceCompliancePolicyAssignment."
+description: "Deletes a deviceCompliancePolicyAssignment."author: "tfitzmac"
 ---
 
 # Delete deviceCompliancePolicyAssignment

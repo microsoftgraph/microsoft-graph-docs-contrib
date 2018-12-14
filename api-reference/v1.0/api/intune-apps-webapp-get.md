@@ -1,6 +1,6 @@
 ---
 title: "Get webApp"
-description: "Read properties and relationships of the webApp object."
+description: "Read properties and relationships of the webApp object."author: "tfitzmac"
 ---
 
 # Get webApp

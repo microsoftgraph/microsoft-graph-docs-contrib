@@ -1,6 +1,6 @@
 ---
 title: "vpnRoute resource type"
-description: "VPN Route definition."
+description: "VPN Route definition."author: "tfitzmac"
 ---
 
 # vpnRoute resource type

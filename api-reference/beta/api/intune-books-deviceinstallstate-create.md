@@ -1,6 +1,6 @@
 ---
 title: "Create deviceInstallState"
-description: "Create a new deviceInstallState object."
+description: "Create a new deviceInstallState object."author: "tfitzmac"
 ---
 
 # Create deviceInstallState

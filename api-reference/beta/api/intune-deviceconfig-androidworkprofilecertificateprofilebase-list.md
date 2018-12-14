@@ -1,6 +1,6 @@
 ---
 title: "List androidWorkProfileCertificateProfileBases"
-description: "List properties and relationships of the androidWorkProfileCertificateProfileBase objects."
+description: "List properties and relationships of the androidWorkProfileCertificateProfileBase objects."author: "tfitzmac"
 ---
 
 # List androidWorkProfileCertificateProfileBases

@@ -1,6 +1,6 @@
 ---
 title: "Get windowsAutopilotSettings"
-description: "Read properties and relationships of the windowsAutopilotSettings object."
+description: "Read properties and relationships of the windowsAutopilotSettings object."author: "tfitzmac"
 ---
 
 # Get windowsAutopilotSettings

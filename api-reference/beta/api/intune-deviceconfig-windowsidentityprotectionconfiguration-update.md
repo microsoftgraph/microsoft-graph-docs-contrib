@@ -1,6 +1,6 @@
 ---
 title: "Update windowsIdentityProtectionConfiguration"
-description: "Update the properties of a windowsIdentityProtectionConfiguration object."
+description: "Update the properties of a windowsIdentityProtectionConfiguration object."author: "tfitzmac"
 ---
 
 # Update windowsIdentityProtectionConfiguration

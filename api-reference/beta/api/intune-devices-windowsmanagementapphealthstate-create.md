@@ -1,6 +1,6 @@
 ---
 title: "Create windowsManagementAppHealthState"
-description: "Create a new windowsManagementAppHealthState object."
+description: "Create a new windowsManagementAppHealthState object."author: "tfitzmac"
 ---
 
 # Create windowsManagementAppHealthState

@@ -1,6 +1,6 @@
 ---
 title: "Get deviceComplianceDeviceStatus"
-description: "Read properties and relationships of the deviceComplianceDeviceStatus object."
+description: "Read properties and relationships of the deviceComplianceDeviceStatus object."author: "tfitzmac"
 ---
 
 # Get deviceComplianceDeviceStatus

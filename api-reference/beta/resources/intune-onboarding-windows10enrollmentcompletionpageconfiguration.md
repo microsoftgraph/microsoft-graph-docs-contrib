@@ -1,6 +1,6 @@
 ---
 title: "windows10EnrollmentCompletionPageConfiguration resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # windows10EnrollmentCompletionPageConfiguration resource type

@@ -1,6 +1,6 @@
 ---
 title: "call: unmute"
-description: "Allows the application to unmute itself."
+description: "Allows the application to unmute itself."author: "VinodRavichandran"
 ---
 
 # call: unmute

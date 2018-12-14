@@ -1,6 +1,6 @@
 ---
 title: "List windowsPhone81AppXs"
-description: "List properties and relationships of the windowsPhone81AppX objects."
+description: "List properties and relationships of the windowsPhone81AppX objects."author: "tfitzmac"
 ---
 
 # List windowsPhone81AppXs

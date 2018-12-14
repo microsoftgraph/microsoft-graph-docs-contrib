@@ -1,6 +1,6 @@
 ---
 title: "iosBookmark resource type"
-description: "iOS URL bookmark"
+description: "iOS URL bookmark"author: "tfitzmac"
 ---
 
 # iosBookmark resource type

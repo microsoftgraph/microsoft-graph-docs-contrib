@@ -1,6 +1,6 @@
 ---
 title: "Update iosDeviceFeaturesConfiguration"
-description: "Update the properties of a iosDeviceFeaturesConfiguration object."
+description: "Update the properties of a iosDeviceFeaturesConfiguration object."author: "tfitzmac"
 ---
 
 # Update iosDeviceFeaturesConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "windowsPhone81TrustedRootCertificate resource type"
-description: " Trusted Root Certificate configuration profile"
+description: " Trusted Root Certificate configuration profile"author: "tfitzmac"
 ---
 
 # windowsPhone81TrustedRootCertificate resource type

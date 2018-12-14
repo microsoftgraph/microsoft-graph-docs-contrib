@@ -1,6 +1,6 @@
 ---
 title: "Get deviceManagementExchangeOnPremisesPolicy"
-description: "Read properties and relationships of the deviceManagementExchangeOnPremisesPolicy object."
+description: "Read properties and relationships of the deviceManagementExchangeOnPremisesPolicy object."author: "tfitzmac"
 ---
 
 # Get deviceManagementExchangeOnPremisesPolicy

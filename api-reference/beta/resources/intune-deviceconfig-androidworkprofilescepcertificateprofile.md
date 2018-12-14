@@ -1,6 +1,6 @@
 ---
 title: "androidWorkProfileScepCertificateProfile resource type"
-description: "Androif Work Profile SCEP certificate profile"
+description: "Androif Work Profile SCEP certificate profile"author: "tfitzmac"
 ---
 
 # androidWorkProfileScepCertificateProfile resource type

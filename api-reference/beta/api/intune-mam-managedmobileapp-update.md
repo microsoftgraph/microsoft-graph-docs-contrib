@@ -1,6 +1,6 @@
 ---
 title: "Update managedMobileApp"
-description: "Update the properties of a managedMobileApp object."
+description: "Update the properties of a managedMobileApp object."author: "tfitzmac"
 ---
 
 # Update managedMobileApp

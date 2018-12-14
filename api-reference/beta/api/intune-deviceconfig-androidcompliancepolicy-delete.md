@@ -1,6 +1,6 @@
 ---
 title: "Delete androidCompliancePolicy"
-description: "Deletes a androidCompliancePolicy."
+description: "Deletes a androidCompliancePolicy."author: "tfitzmac"
 ---
 
 # Delete androidCompliancePolicy

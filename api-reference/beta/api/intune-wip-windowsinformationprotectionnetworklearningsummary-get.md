@@ -1,6 +1,6 @@
 ---
 title: "Get windowsInformationProtectionNetworkLearningSummary"
-description: "Read properties and relationships of the windowsInformationProtectionNetworkLearningSummary object."
+description: "Read properties and relationships of the windowsInformationProtectionNetworkLearningSummary object."author: "tfitzmac"
 ---
 
 # Get windowsInformationProtectionNetworkLearningSummary

@@ -1,6 +1,6 @@
 ---
 title: "Create groupLifecyclePolicy"
-description: "Creates a new groupLifecyclePolicy."
+description: "Creates a new groupLifecyclePolicy."author: "dkershaw10"
 ---
 
 # Create groupLifecyclePolicy

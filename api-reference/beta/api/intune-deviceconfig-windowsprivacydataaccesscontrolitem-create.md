@@ -1,6 +1,6 @@
 ---
 title: "Create windowsPrivacyDataAccessControlItem"
-description: "Create a new windowsPrivacyDataAccessControlItem object."
+description: "Create a new windowsPrivacyDataAccessControlItem object."author: "tfitzmac"
 ---
 
 # Create windowsPrivacyDataAccessControlItem

@@ -1,6 +1,6 @@
 ---
 title: "officeUpdateChannel enum type"
-description: "The Enum to specify the Office365 Updates Channel."
+description: "The Enum to specify the Office365 Updates Channel."author: "tfitzmac"
 ---
 
 # officeUpdateChannel enum type

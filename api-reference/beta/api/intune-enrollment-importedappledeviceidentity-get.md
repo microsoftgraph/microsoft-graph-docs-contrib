@@ -1,6 +1,6 @@
 ---
 title: "Get importedAppleDeviceIdentity"
-description: "Read properties and relationships of the importedAppleDeviceIdentity object."
+description: "Read properties and relationships of the importedAppleDeviceIdentity object."author: "tfitzmac"
 ---
 
 # Get importedAppleDeviceIdentity

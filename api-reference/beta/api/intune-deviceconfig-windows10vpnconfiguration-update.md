@@ -1,6 +1,6 @@
 ---
 title: "Update windows10VpnConfiguration"
-description: "Update the properties of a windows10VpnConfiguration object."
+description: "Update the properties of a windows10VpnConfiguration object."author: "tfitzmac"
 ---
 
 # Update windows10VpnConfiguration

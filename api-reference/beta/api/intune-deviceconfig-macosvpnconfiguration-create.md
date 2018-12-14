@@ -1,6 +1,6 @@
 ---
 title: "Create macOSVpnConfiguration"
-description: "Create a new macOSVpnConfiguration object."
+description: "Create a new macOSVpnConfiguration object."author: "tfitzmac"
 ---
 
 # Create macOSVpnConfiguration

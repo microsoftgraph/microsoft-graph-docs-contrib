@@ -1,6 +1,6 @@
 ---
 title: "List iosVppApps"
-description: "List properties and relationships of the iosVppApp objects."
+description: "List properties and relationships of the iosVppApp objects."author: "tfitzmac"
 ---
 
 # List iosVppApps

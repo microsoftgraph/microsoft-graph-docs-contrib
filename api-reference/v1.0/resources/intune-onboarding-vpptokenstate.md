@@ -1,6 +1,6 @@
 ---
 title: "vppTokenState enum type"
-description: "Possible states associated with an Apple Volume Purchase Program token."
+description: "Possible states associated with an Apple Volume Purchase Program token."author: "tfitzmac"
 ---
 
 # vppTokenState enum type

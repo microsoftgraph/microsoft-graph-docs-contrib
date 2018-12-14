@@ -1,6 +1,6 @@
 ---
 title: "Get audio routing group"
-description: "Retrieve the properties and relationships of an audioRoutingGroup object."
+description: "Retrieve the properties and relationships of an audioRoutingGroup object."author: "VinodRavichandran"
 ---
 
 # Get audio routing group

@@ -1,6 +1,6 @@
 ---
 title: "outOfBoxExperienceSettings resource type"
-description: "Out of box experience setting"
+description: "Out of box experience setting"author: "tfitzmac"
 ---
 
 # outOfBoxExperienceSettings resource type

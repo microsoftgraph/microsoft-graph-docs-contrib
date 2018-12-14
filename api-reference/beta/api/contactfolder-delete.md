@@ -1,6 +1,6 @@
 ---
 title: "Delete contactFolder"
-description: "Delete contactFolder other than the default contactFolder."
+description: "Delete contactFolder other than the default contactFolder."author: "angelgolfer-ms"
 ---
 
 # Delete contactFolder

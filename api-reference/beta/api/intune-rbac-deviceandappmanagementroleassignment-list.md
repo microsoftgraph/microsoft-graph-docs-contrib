@@ -1,6 +1,6 @@
 ---
 title: "List deviceAndAppManagementRoleAssignments"
-description: "List properties and relationships of the deviceAndAppManagementRoleAssignment objects."
+description: "List properties and relationships of the deviceAndAppManagementRoleAssignment objects."author: "tfitzmac"
 ---
 
 # List deviceAndAppManagementRoleAssignments

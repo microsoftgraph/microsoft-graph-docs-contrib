@@ -1,6 +1,6 @@
 ---
 title: "List managedAppRegistrations"
-description: "List properties and relationships of the managedAppRegistration objects."
+description: "List properties and relationships of the managedAppRegistration objects."author: "tfitzmac"
 ---
 
 # List managedAppRegistrations

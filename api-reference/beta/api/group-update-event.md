@@ -1,6 +1,6 @@
 ---
 title: "Update event"
-description: "Update an event object."
+description: "Update an event object."author: "dkershaw10"
 ---
 
 # Update event

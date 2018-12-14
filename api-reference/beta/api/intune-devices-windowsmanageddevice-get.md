@@ -1,6 +1,6 @@
 ---
 title: "Get windowsManagedDevice"
-description: "Read properties and relationships of the windowsManagedDevice object."
+description: "Read properties and relationships of the windowsManagedDevice object."author: "tfitzmac"
 ---
 
 # Get windowsManagedDevice

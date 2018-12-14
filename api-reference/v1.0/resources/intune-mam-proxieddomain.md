@@ -1,6 +1,6 @@
 ---
 title: "proxiedDomain resource type"
-description: "Proxied Domain"
+description: "Proxied Domain"author: "tfitzmac"
 ---
 
 # proxiedDomain resource type

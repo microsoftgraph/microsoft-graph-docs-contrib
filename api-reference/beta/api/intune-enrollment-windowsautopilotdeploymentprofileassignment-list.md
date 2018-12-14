@@ -1,6 +1,6 @@
 ---
 title: "List windowsAutopilotDeploymentProfileAssignments"
-description: "List properties and relationships of the windowsAutopilotDeploymentProfileAssignment objects."
+description: "List properties and relationships of the windowsAutopilotDeploymentProfileAssignment objects."author: "tfitzmac"
 ---
 
 # List windowsAutopilotDeploymentProfileAssignments

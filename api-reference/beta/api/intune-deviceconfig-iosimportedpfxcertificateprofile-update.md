@@ -1,6 +1,6 @@
 ---
 title: "Update iosImportedPFXCertificateProfile"
-description: "Update the properties of a iosImportedPFXCertificateProfile object."
+description: "Update the properties of a iosImportedPFXCertificateProfile object."author: "tfitzmac"
 ---
 
 # Update iosImportedPFXCertificateProfile

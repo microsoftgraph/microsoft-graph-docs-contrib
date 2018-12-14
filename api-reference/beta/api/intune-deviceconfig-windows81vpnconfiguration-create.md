@@ -1,6 +1,6 @@
 ---
 title: "Create windows81VpnConfiguration"
-description: "Create a new windows81VpnConfiguration object."
+description: "Create a new windows81VpnConfiguration object."author: "tfitzmac"
 ---
 
 # Create windows81VpnConfiguration

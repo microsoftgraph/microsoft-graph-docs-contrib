@@ -1,6 +1,6 @@
 ---
 title: "List windowsManagementAppHealthStates"
-description: "List properties and relationships of the windowsManagementAppHealthState objects."
+description: "List properties and relationships of the windowsManagementAppHealthState objects."author: "tfitzmac"
 ---
 
 # List windowsManagementAppHealthStates

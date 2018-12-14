@@ -1,6 +1,6 @@
 ---
 title: "Update defaultDeviceCompliancePolicy"
-description: "Update the properties of a defaultDeviceCompliancePolicy object."
+description: "Update the properties of a defaultDeviceCompliancePolicy object."author: "tfitzmac"
 ---
 
 # Update defaultDeviceCompliancePolicy

@@ -1,6 +1,6 @@
 ---
 title: "Update androidWorkProfileNineWorkEasConfiguration"
-description: "Update the properties of a androidWorkProfileNineWorkEasConfiguration object."
+description: "Update the properties of a androidWorkProfileNineWorkEasConfiguration object."author: "tfitzmac"
 ---
 
 # Update androidWorkProfileNineWorkEasConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "Update advancedThreatProtectionOnboardingStateSummary"
-description: "Update the properties of a advancedThreatProtectionOnboardingStateSummary object."
+description: "Update the properties of a advancedThreatProtectionOnboardingStateSummary object."author: "tfitzmac"
 ---
 
 # Update advancedThreatProtectionOnboardingStateSummary

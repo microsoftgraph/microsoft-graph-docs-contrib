@@ -1,6 +1,6 @@
 ---
 title: "List editionUpgradeConfigurations"
-description: "List properties and relationships of the editionUpgradeConfiguration objects."
+description: "List properties and relationships of the editionUpgradeConfiguration objects."author: "tfitzmac"
 ---
 
 # List editionUpgradeConfigurations

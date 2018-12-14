@@ -1,6 +1,6 @@
 ---
 title: "syncMicrosoftStoreForBusinessApps action"
-description: "Syncs Intune account with Microsoft Store For Business"
+description: "Syncs Intune account with Microsoft Store For Business"author: "tfitzmac"
 ---
 
 # syncMicrosoftStoreForBusinessApps action

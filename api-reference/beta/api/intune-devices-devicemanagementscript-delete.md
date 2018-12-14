@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceManagementScript"
-description: "Deletes a deviceManagementScript."
+description: "Deletes a deviceManagementScript."author: "tfitzmac"
 ---
 
 # Delete deviceManagementScript

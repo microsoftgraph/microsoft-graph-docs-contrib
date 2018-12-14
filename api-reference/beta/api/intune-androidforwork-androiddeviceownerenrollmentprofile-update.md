@@ -1,6 +1,6 @@
 ---
 title: "Update androidDeviceOwnerEnrollmentProfile"
-description: "Update the properties of a androidDeviceOwnerEnrollmentProfile object."
+description: "Update the properties of a androidDeviceOwnerEnrollmentProfile object."author: "tfitzmac"
 ---
 
 # Update androidDeviceOwnerEnrollmentProfile

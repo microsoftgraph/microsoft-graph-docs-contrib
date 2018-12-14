@@ -1,6 +1,6 @@
 ---
 title: "Get a reply to a channel message"
-description: "Get a single reply to a message in a channel of a team."
+description: "Get a single reply to a message in a channel of a team."author: "nkramer"
 ---
 
 # Get a reply to a channel message

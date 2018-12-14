@@ -1,6 +1,6 @@
 ---
 title: "Get windows81WifiImportConfiguration"
-description: "Read properties and relationships of the windows81WifiImportConfiguration object."
+description: "Read properties and relationships of the windows81WifiImportConfiguration object."author: "tfitzmac"
 ---
 
 # Get windows81WifiImportConfiguration

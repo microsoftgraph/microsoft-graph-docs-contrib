@@ -1,6 +1,6 @@
 ---
 title: "Create macOSLobApp"
-description: "Create a new macOSLobApp object."
+description: "Create a new macOSLobApp object."author: "tfitzmac"
 ---
 
 # Create macOSLobApp

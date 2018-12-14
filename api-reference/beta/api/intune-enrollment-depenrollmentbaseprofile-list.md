@@ -1,6 +1,6 @@
 ---
 title: "List depEnrollmentBaseProfiles"
-description: "List properties and relationships of the depEnrollmentBaseProfile objects."
+description: "List properties and relationships of the depEnrollmentBaseProfile objects."author: "tfitzmac"
 ---
 
 # List depEnrollmentBaseProfiles

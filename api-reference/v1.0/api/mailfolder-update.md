@@ -1,6 +1,6 @@
 ---
 title: "Update mailfolder"
-description: "Update the properties of mailfolder object."
+description: "Update the properties of mailfolder object."author: "angelgolfer-ms"
 ---
 
 # Update mailfolder

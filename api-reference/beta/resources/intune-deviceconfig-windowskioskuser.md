@@ -1,6 +1,6 @@
 ---
 title: "windowsKioskUser resource type"
-description: "The user base class used to identify the account info for the kiosk configuration"
+description: "The user base class used to identify the account info for the kiosk configuration"author: "tfitzmac"
 ---
 
 # windowsKioskUser resource type

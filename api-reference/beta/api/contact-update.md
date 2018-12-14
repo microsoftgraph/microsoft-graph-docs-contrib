@@ -1,6 +1,6 @@
 ---
 title: "Update contact"
-description: "Update the properties of contact object."
+description: "Update the properties of contact object."author: "angelgolfer-ms"
 ---
 
 # Update contact

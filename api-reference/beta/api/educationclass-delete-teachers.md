@@ -1,6 +1,6 @@
 ---
 title: "Remove teacher"
-description: "Remove a teacher from a class."
+description: "Remove a teacher from a class."author: "mmast-msft"
 ---
 
 # Remove teacher

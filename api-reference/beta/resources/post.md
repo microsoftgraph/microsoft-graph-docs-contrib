@@ -1,6 +1,6 @@
 ---
 title: "post resource type"
-description: "Represents an individual post item within a converstaionThread entity."
+description: "Represents an individual post item within a converstaionThread entity."author: "dkershaw10"
 ---
 
 # post resource type

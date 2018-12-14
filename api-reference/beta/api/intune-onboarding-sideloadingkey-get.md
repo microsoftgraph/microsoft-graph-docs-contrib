@@ -1,6 +1,6 @@
 ---
 title: "Get sideLoadingKey"
-description: "Read properties and relationships of the sideLoadingKey object."
+description: "Read properties and relationships of the sideLoadingKey object."author: "tfitzmac"
 ---
 
 # Get sideLoadingKey

@@ -1,6 +1,6 @@
 ---
 title: "List owners"
-description: "Retrieve a list of directoryObject objects."
+description: "Retrieve a list of directoryObject objects."author: "lleonard-msft"
 ---
 
 # List owners

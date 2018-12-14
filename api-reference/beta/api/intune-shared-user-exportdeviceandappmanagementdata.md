@@ -1,6 +1,6 @@
 ---
 title: "exportDeviceAndAppManagementData function"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # exportDeviceAndAppManagementData function

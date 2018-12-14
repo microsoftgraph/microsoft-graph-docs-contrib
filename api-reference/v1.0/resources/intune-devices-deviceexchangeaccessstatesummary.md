@@ -1,6 +1,6 @@
 ---
 title: "deviceExchangeAccessStateSummary resource type"
-description: "Device Exchange Access State summary"
+description: "Device Exchange Access State summary"author: "tfitzmac"
 ---
 
 # deviceExchangeAccessStateSummary resource type

@@ -1,6 +1,6 @@
 ---
 title: "List schools"
-description: "Retrieve a list of schools for a user."
+description: "Retrieve a list of schools for a user."author: "mmast-msft"
 ---
 
 # List schools

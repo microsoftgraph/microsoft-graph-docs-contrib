@@ -1,6 +1,6 @@
 ---
 title: "certificateConnectorSetting resource type"
-description: "Certificate connector settings."
+description: "Certificate connector settings."author: "tfitzmac"
 ---
 
 # certificateConnectorSetting resource type

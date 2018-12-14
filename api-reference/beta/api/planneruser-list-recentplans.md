@@ -1,6 +1,6 @@
 ---
 title: "List recentPlans"
-description: "Retrieve a list of plannerPlans recently viewed by a user. You can update recently viewed plans by updating the plannerUser resource."
+description: "Retrieve a list of plannerPlans recently viewed by a user. You can update recently viewed plans by updating the plannerUser resource."author: "TarkanSevilmis"
 ---
 
 # List recentPlans

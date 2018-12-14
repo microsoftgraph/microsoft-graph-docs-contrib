@@ -1,6 +1,6 @@
 ---
 title: "List managedDeviceCertificateStates"
-description: "List properties and relationships of the managedDeviceCertificateState objects."
+description: "List properties and relationships of the managedDeviceCertificateState objects."author: "tfitzmac"
 ---
 
 # List managedDeviceCertificateStates

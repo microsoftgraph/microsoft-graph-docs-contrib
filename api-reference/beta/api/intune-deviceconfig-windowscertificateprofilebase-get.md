@@ -1,6 +1,6 @@
 ---
 title: "Get windowsCertificateProfileBase"
-description: "Read properties and relationships of the windowsCertificateProfileBase object."
+description: "Read properties and relationships of the windowsCertificateProfileBase object."author: "tfitzmac"
 ---
 
 # Get windowsCertificateProfileBase

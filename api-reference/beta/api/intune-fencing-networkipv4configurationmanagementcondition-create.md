@@ -1,6 +1,6 @@
 ---
 title: "Create networkIPv4ConfigurationManagementCondition"
-description: "Create a new networkIPv4ConfigurationManagementCondition object."
+description: "Create a new networkIPv4ConfigurationManagementCondition object."author: "tfitzmac"
 ---
 
 # Create networkIPv4ConfigurationManagementCondition

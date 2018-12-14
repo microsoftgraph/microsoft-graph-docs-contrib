@@ -1,6 +1,6 @@
 ---
 title: "Patch channel"
-description: "Update the properties of the specified channel."
+description: "Update the properties of the specified channel."author: "nkramer"
 ---
 
 # Patch channel

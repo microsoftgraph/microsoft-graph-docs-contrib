@@ -1,6 +1,6 @@
 ---
 title: "bulkManagedDeviceActionResult resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # bulkManagedDeviceActionResult resource type

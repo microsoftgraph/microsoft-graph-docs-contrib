@@ -1,6 +1,6 @@
 ---
 title: "List sections"
-description: "Retrieve a list of section objects."
+description: "Retrieve a list of section objects."author: "Jewan-microsoft"
 ---
 
 # List sections

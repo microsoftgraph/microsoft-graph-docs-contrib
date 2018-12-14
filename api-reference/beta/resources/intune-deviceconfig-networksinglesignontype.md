@@ -1,6 +1,6 @@
 ---
 title: "networkSingleSignOnType enum type"
-description: "Wi-Fi Network Single Sign On Type Settings."
+description: "Wi-Fi Network Single Sign On Type Settings."author: "tfitzmac"
 ---
 
 # networkSingleSignOnType enum type

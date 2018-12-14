@@ -1,6 +1,6 @@
 ---
 title: "participant: mute"
-description: "Mute a specific participant in the call."
+description: "Mute a specific participant in the call."author: "VinodRavichandran"
 ---
 
 # participant: mute

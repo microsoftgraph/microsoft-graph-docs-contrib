@@ -1,6 +1,6 @@
 ---
 title: "officeClientConfiguration resource type"
-description: "Office Client Configuration."
+description: "Office Client Configuration."author: "tfitzmac"
 ---
 
 # officeClientConfiguration resource type

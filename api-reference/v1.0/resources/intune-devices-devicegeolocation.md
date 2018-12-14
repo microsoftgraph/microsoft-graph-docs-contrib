@@ -1,6 +1,6 @@
 ---
 title: "deviceGeoLocation resource type"
-description: "Device location"
+description: "Device location"author: "tfitzmac"
 ---
 
 # deviceGeoLocation resource type

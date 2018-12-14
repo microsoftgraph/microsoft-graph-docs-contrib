@@ -1,6 +1,6 @@
 ---
 title: "Create macOSImportedPFXCertificateProfile"
-description: "Create a new macOSImportedPFXCertificateProfile object."
+description: "Create a new macOSImportedPFXCertificateProfile object."author: "tfitzmac"
 ---
 
 # Create macOSImportedPFXCertificateProfile

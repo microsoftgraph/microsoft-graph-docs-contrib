@@ -1,6 +1,6 @@
 ---
 title: "Get windows10SecureAssessmentConfiguration"
-description: "Read properties and relationships of the windows10SecureAssessmentConfiguration object."
+description: "Read properties and relationships of the windows10SecureAssessmentConfiguration object."author: "tfitzmac"
 ---
 
 # Get windows10SecureAssessmentConfiguration

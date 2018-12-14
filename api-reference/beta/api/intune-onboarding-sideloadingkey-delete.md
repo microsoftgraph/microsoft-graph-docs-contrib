@@ -1,6 +1,6 @@
 ---
 title: "Delete sideLoadingKey"
-description: "Deletes a sideLoadingKey."
+description: "Deletes a sideLoadingKey."author: "tfitzmac"
 ---
 
 # Delete sideLoadingKey

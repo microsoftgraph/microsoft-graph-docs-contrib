@@ -1,6 +1,6 @@
 ---
 title: "List termsAndConditionsAssignments"
-description: "List properties and relationships of the termsAndConditionsAssignment objects."
+description: "List properties and relationships of the termsAndConditionsAssignment objects."author: "tfitzmac"
 ---
 
 # List termsAndConditionsAssignments

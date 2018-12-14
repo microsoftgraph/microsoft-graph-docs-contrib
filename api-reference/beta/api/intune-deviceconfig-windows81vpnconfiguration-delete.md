@@ -1,6 +1,6 @@
 ---
 title: "Delete windows81VpnConfiguration"
-description: "Deletes a windows81VpnConfiguration."
+description: "Deletes a windows81VpnConfiguration."author: "tfitzmac"
 ---
 
 # Delete windows81VpnConfiguration

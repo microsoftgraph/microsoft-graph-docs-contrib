@@ -1,6 +1,6 @@
 ---
 title: "officeSuiteApp resource type"
-description: "Contains properties and inherited properties for the Office365 Suite App."
+description: "Contains properties and inherited properties for the Office365 Suite App."author: "tfitzmac"
 ---
 
 # officeSuiteApp resource type

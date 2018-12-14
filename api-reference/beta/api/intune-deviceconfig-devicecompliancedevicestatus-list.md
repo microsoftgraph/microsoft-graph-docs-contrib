@@ -1,6 +1,6 @@
 ---
 title: "List deviceComplianceDeviceStatuses"
-description: "List properties and relationships of the deviceComplianceDeviceStatus objects."
+description: "List properties and relationships of the deviceComplianceDeviceStatus objects."author: "tfitzmac"
 ---
 
 # List deviceComplianceDeviceStatuses

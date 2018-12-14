@@ -1,6 +1,6 @@
 ---
 title: "cartToClassAssociation resource type"
-description: "CartToClassAssociation for associating device carts with classrooms."
+description: "CartToClassAssociation for associating device carts with classrooms."author: "tfitzmac"
 ---
 
 # cartToClassAssociation resource type

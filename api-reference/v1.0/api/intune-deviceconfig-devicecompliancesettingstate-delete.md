@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceComplianceSettingState"
-description: "Deletes a deviceComplianceSettingState."
+description: "Deletes a deviceComplianceSettingState."author: "tfitzmac"
 ---
 
 # Delete deviceComplianceSettingState

@@ -1,6 +1,6 @@
 ---
 title: "Create androidForWorkMobileAppConfiguration"
-description: "Create a new androidForWorkMobileAppConfiguration object."
+description: "Create a new androidForWorkMobileAppConfiguration object."author: "tfitzmac"
 ---
 
 # Create androidForWorkMobileAppConfiguration

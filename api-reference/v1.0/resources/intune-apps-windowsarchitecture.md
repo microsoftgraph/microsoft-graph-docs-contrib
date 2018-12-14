@@ -1,6 +1,6 @@
 ---
 title: "windowsArchitecture enum type"
-description: "Contains properties for Windows architecture."
+description: "Contains properties for Windows architecture."author: "tfitzmac"
 ---
 
 # windowsArchitecture enum type

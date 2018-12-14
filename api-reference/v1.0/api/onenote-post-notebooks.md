@@ -1,6 +1,6 @@
 ---
 title: "Create notebook"
-description: "Create a new OneNote notebook."
+description: "Create a new OneNote notebook."author: "Jewan-microsoft"
 ---
 
 # Create notebook

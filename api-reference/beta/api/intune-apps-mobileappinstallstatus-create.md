@@ -1,6 +1,6 @@
 ---
 title: "Create mobileAppInstallStatus"
-description: "Create a new mobileAppInstallStatus object."
+description: "Create a new mobileAppInstallStatus object."author: "tfitzmac"
 ---
 
 # Create mobileAppInstallStatus

@@ -1,6 +1,6 @@
 ---
 title: "getAuditActivityTypes function"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # getAuditActivityTypes function

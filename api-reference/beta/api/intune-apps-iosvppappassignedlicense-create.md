@@ -1,6 +1,6 @@
 ---
 title: "Create iosVppAppAssignedLicense"
-description: "Create a new iosVppAppAssignedLicense object."
+description: "Create a new iosVppAppAssignedLicense object."author: "tfitzmac"
 ---
 
 # Create iosVppAppAssignedLicense

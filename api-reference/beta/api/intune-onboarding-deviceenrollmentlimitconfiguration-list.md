@@ -1,6 +1,6 @@
 ---
 title: "List deviceEnrollmentLimitConfigurations"
-description: "List properties and relationships of the deviceEnrollmentLimitConfiguration objects."
+description: "List properties and relationships of the deviceEnrollmentLimitConfiguration objects."author: "tfitzmac"
 ---
 
 # List deviceEnrollmentLimitConfigurations

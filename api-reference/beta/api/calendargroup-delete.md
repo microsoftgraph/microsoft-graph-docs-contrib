@@ -1,6 +1,6 @@
 ---
 title: "Delete calendarGroup"
-description: "Delete a calendar group other than the default calendar group."
+description: "Delete a calendar group other than the default calendar group."author: "angelgolfer-ms"
 ---
 
 # Delete calendarGroup

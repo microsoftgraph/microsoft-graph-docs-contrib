@@ -1,6 +1,6 @@
 ---
 title: "Update embeddedSIMActivationCodePool"
-description: "Update the properties of a embeddedSIMActivationCodePool object."
+description: "Update the properties of a embeddedSIMActivationCodePool object."author: "tfitzmac"
 ---
 
 # Update embeddedSIMActivationCodePool

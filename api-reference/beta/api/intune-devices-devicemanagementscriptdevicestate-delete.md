@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceManagementScriptDeviceState"
-description: "Deletes a deviceManagementScriptDeviceState."
+description: "Deletes a deviceManagementScriptDeviceState."author: "tfitzmac"
 ---
 
 # Delete deviceManagementScriptDeviceState

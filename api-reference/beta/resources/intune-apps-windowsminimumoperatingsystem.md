@@ -1,6 +1,6 @@
 ---
 title: "windowsMinimumOperatingSystem resource type"
-description: "The minimum operating system required for a Windows mobile app."
+description: "The minimum operating system required for a Windows mobile app."author: "tfitzmac"
 ---
 
 # windowsMinimumOperatingSystem resource type

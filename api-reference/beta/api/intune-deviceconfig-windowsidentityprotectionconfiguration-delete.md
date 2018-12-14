@@ -1,6 +1,6 @@
 ---
 title: "Delete windowsIdentityProtectionConfiguration"
-description: "Deletes a windowsIdentityProtectionConfiguration."
+description: "Deletes a windowsIdentityProtectionConfiguration."author: "tfitzmac"
 ---
 
 # Delete windowsIdentityProtectionConfiguration

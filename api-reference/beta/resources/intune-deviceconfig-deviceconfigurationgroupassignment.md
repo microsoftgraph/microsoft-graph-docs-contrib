@@ -1,6 +1,6 @@
 ---
 title: "deviceConfigurationGroupAssignment resource type"
-description: "Device configuration group assignment."
+description: "Device configuration group assignment."author: "tfitzmac"
 ---
 
 # deviceConfigurationGroupAssignment resource type

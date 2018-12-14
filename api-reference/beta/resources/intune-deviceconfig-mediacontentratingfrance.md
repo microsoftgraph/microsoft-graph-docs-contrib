@@ -1,6 +1,6 @@
 ---
 title: "mediaContentRatingFrance resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # mediaContentRatingFrance resource type

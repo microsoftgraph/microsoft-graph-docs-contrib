@@ -1,6 +1,6 @@
 ---
 title: "Delete androidForWorkScepCertificateProfile"
-description: "Deletes a androidForWorkScepCertificateProfile."
+description: "Deletes a androidForWorkScepCertificateProfile."author: "tfitzmac"
 ---
 
 # Delete androidForWorkScepCertificateProfile

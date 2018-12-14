@@ -1,6 +1,6 @@
 ---
 title: "Get windowsPhone81StoreApp"
-description: "Read properties and relationships of the windowsPhone81StoreApp object."
+description: "Read properties and relationships of the windowsPhone81StoreApp object."author: "tfitzmac"
 ---
 
 # Get windowsPhone81StoreApp

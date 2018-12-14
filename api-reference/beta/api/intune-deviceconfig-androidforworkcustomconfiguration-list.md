@@ -1,6 +1,6 @@
 ---
 title: "List androidForWorkCustomConfigurations"
-description: "List properties and relationships of the androidForWorkCustomConfiguration objects."
+description: "List properties and relationships of the androidForWorkCustomConfiguration objects."author: "tfitzmac"
 ---
 
 # List androidForWorkCustomConfigurations

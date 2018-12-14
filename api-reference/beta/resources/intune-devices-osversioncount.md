@@ -1,6 +1,6 @@
 ---
 title: "osVersionCount resource type"
-description: "Count of devices with malware for each OS version"
+description: "Count of devices with malware for each OS version"author: "tfitzmac"
 ---
 
 # osVersionCount resource type

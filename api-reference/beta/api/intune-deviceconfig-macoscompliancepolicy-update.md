@@ -1,6 +1,6 @@
 ---
 title: "Update macOSCompliancePolicy"
-description: "Update the properties of a macOSCompliancePolicy object."
+description: "Update the properties of a macOSCompliancePolicy object."author: "tfitzmac"
 ---
 
 # Update macOSCompliancePolicy

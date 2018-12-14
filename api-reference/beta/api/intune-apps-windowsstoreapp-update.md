@@ -1,6 +1,6 @@
 ---
 title: "Update windowsStoreApp"
-description: "Update the properties of a windowsStoreApp object."
+description: "Update the properties of a windowsStoreApp object."author: "tfitzmac"
 ---
 
 # Update windowsStoreApp

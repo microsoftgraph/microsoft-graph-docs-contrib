@@ -1,6 +1,6 @@
 ---
 title: "Delete androidWorkProfileNineWorkEasConfiguration"
-description: "Deletes a androidWorkProfileNineWorkEasConfiguration."
+description: "Deletes a androidWorkProfileNineWorkEasConfiguration."author: "tfitzmac"
 ---
 
 # Delete androidWorkProfileNineWorkEasConfiguration

@@ -1,6 +1,6 @@
 ---
 title: "Get androidWorkProfileScepCertificateProfile"
-description: "Read properties and relationships of the androidWorkProfileScepCertificateProfile object."
+description: "Read properties and relationships of the androidWorkProfileScepCertificateProfile object."author: "tfitzmac"
 ---
 
 # Get androidWorkProfileScepCertificateProfile

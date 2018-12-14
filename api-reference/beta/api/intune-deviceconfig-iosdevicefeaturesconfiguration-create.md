@@ -1,6 +1,6 @@
 ---
 title: "Create iosDeviceFeaturesConfiguration"
-description: "Create a new iosDeviceFeaturesConfiguration object."
+description: "Create a new iosDeviceFeaturesConfiguration object."author: "tfitzmac"
 ---
 
 # Create iosDeviceFeaturesConfiguration

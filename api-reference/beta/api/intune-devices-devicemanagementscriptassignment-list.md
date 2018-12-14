@@ -1,6 +1,6 @@
 ---
 title: "List deviceManagementScriptAssignments"
-description: "List properties and relationships of the deviceManagementScriptAssignment objects."
+description: "List properties and relationships of the deviceManagementScriptAssignment objects."author: "tfitzmac"
 ---
 
 # List deviceManagementScriptAssignments

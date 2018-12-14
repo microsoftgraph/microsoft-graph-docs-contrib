@@ -1,6 +1,6 @@
 ---
 title: "windowsManagementAppHealthState resource type"
-description: "Windows management app health state entity."
+description: "Windows management app health state entity."author: "tfitzmac"
 ---
 
 # windowsManagementAppHealthState resource type

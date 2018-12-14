@@ -1,6 +1,6 @@
 ---
 title: "call: transfer"
-description: "Transfer an active call."
+description: "Transfer an active call."author: "VinodRavichandran"
 ---
 
 # call: transfer

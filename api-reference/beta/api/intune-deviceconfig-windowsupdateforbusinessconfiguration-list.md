@@ -1,6 +1,6 @@
 ---
 title: "List windowsUpdateForBusinessConfigurations"
-description: "List properties and relationships of the windowsUpdateForBusinessConfiguration objects."
+description: "List properties and relationships of the windowsUpdateForBusinessConfiguration objects."author: "tfitzmac"
 ---
 
 # List windowsUpdateForBusinessConfigurations

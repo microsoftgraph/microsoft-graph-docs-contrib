@@ -1,6 +1,6 @@
 ---
 title: "Update androidForWorkAppConfigurationSchema"
-description: "Update the properties of a androidForWorkAppConfigurationSchema object."
+description: "Update the properties of a androidForWorkAppConfigurationSchema object."author: "tfitzmac"
 ---
 
 # Update androidForWorkAppConfigurationSchema

@@ -1,6 +1,6 @@
 ---
 title: "Create conversation"
-description: "Create a new conversation by including a thread and a post. "
+description: "Create a new conversation by including a thread and a post. "author: "dkershaw10"
 ---
 
 # Create conversation

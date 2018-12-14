@@ -1,6 +1,6 @@
 ---
 title: "welcomeScreenMeetingInformation enum type"
-description: "Possible values for welcome screen meeting information."
+description: "Possible values for welcome screen meeting information."author: "tfitzmac"
 ---
 
 # welcomeScreenMeetingInformation enum type

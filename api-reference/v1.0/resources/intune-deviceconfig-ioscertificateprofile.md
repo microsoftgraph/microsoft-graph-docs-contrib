@@ -1,6 +1,6 @@
 ---
 title: "iosCertificateProfile resource type"
-description: "Device Configuration."
+description: "Device Configuration."author: "tfitzmac"
 ---
 
 # iosCertificateProfile resource type

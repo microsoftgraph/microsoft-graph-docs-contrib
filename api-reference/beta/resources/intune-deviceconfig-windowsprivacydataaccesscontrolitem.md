@@ -1,6 +1,6 @@
 ---
 title: "windowsPrivacyDataAccessControlItem resource type"
-description: "Specify access control level per privacy data category"
+description: "Specify access control level per privacy data category"author: "tfitzmac"
 ---
 
 # windowsPrivacyDataAccessControlItem resource type

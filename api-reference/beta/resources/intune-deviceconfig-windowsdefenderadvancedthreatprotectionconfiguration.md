@@ -1,6 +1,6 @@
 ---
 title: "windowsDefenderAdvancedThreatProtectionConfiguration resource type"
-description: "Windows Defender AdvancedThreatProtection Configuration."
+description: "Windows Defender AdvancedThreatProtection Configuration."author: "tfitzmac"
 ---
 
 # windowsDefenderAdvancedThreatProtectionConfiguration resource type

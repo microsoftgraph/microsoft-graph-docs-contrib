@@ -1,6 +1,6 @@
 ---
 title: "List sharedPCConfigurations"
-description: "List properties and relationships of the sharedPCConfiguration objects."
+description: "List properties and relationships of the sharedPCConfiguration objects."author: "tfitzmac"
 ---
 
 # List sharedPCConfigurations

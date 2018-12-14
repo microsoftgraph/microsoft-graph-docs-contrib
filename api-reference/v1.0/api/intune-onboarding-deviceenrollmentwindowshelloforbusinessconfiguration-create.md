@@ -1,6 +1,6 @@
 ---
 title: "Create deviceEnrollmentWindowsHelloForBusinessConfiguration"
-description: "Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object."
+description: "Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object."author: "tfitzmac"
 ---
 
 # Create deviceEnrollmentWindowsHelloForBusinessConfiguration

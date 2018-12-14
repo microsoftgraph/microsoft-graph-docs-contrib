@@ -1,6 +1,6 @@
 ---
 title: "Get educationAssignment"
-description: " teachers can see all assignments in a class."
+description: " teachers can see all assignments in a class."author: "mmast-msft"
 ---
 
 # Get educationAssignment

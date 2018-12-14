@@ -1,6 +1,6 @@
 ---
 title: "localSecurityOptionsStandardUserElevationPromptBehaviorType enum type"
-description: "Possible values for LocalSecurityOptionsStandardUserElevationPromptBehavior"
+description: "Possible values for LocalSecurityOptionsStandardUserElevationPromptBehavior"author: "tfitzmac"
 ---
 
 # localSecurityOptionsStandardUserElevationPromptBehaviorType enum type

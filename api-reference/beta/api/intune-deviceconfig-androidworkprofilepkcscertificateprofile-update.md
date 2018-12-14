@@ -1,6 +1,6 @@
 ---
 title: "Update androidWorkProfilePkcsCertificateProfile"
-description: "Update the properties of a androidWorkProfilePkcsCertificateProfile object."
+description: "Update the properties of a androidWorkProfilePkcsCertificateProfile object."author: "tfitzmac"
 ---
 
 # Update androidWorkProfilePkcsCertificateProfile

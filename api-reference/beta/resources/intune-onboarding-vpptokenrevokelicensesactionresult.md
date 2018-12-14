@@ -1,6 +1,6 @@
 ---
 title: "vppTokenRevokeLicensesActionResult resource type"
-description: "The status of the revoke licenses action performed on the Apple Volume Purchase Program token."
+description: "The status of the revoke licenses action performed on the Apple Volume Purchase Program token."author: "tfitzmac"
 ---
 
 # vppTokenRevokeLicensesActionResult resource type

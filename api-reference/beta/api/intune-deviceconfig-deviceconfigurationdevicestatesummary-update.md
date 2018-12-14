@@ -1,6 +1,6 @@
 ---
 title: "Update deviceConfigurationDeviceStateSummary"
-description: "Update the properties of a deviceConfigurationDeviceStateSummary object."
+description: "Update the properties of a deviceConfigurationDeviceStateSummary object."author: "tfitzmac"
 ---
 
 # Update deviceConfigurationDeviceStateSummary

@@ -1,6 +1,6 @@
 ---
 title: "Update deviceAndAppManagementRoleDefinition"
-description: "Update the properties of a deviceAndAppManagementRoleDefinition object."
+description: "Update the properties of a deviceAndAppManagementRoleDefinition object."author: "tfitzmac"
 ---
 
 # Update deviceAndAppManagementRoleDefinition

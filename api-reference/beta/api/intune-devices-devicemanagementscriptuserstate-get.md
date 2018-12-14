@@ -1,6 +1,6 @@
 ---
 title: "Get deviceManagementScriptUserState"
-description: "Read properties and relationships of the deviceManagementScriptUserState object."
+description: "Read properties and relationships of the deviceManagementScriptUserState object."author: "tfitzmac"
 ---
 
 # Get deviceManagementScriptUserState

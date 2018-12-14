@@ -1,6 +1,6 @@
 ---
 title: "Delete calendar"
-description: "Delete a calendar other than the default calendar."
+description: "Delete a calendar other than the default calendar."author: "angelgolfer-ms"
 ---
 
 # Delete calendar

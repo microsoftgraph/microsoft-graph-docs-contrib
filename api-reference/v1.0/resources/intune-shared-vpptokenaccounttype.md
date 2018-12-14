@@ -1,6 +1,6 @@
 ---
 title: "vppTokenAccountType enum type"
-description: "Possible types of an Apple Volume Purchase Program token."
+description: "Possible types of an Apple Volume Purchase Program token."author: "tfitzmac"
 ---
 
 # vppTokenAccountType enum type

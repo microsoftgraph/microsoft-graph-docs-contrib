@@ -1,6 +1,6 @@
 ---
 title: "List managedDeviceMobileAppConfigurations"
-description: "List properties and relationships of the managedDeviceMobileAppConfiguration objects."
+description: "List properties and relationships of the managedDeviceMobileAppConfiguration objects."author: "tfitzmac"
 ---
 
 # List managedDeviceMobileAppConfigurations

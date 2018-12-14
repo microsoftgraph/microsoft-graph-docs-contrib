@@ -1,6 +1,6 @@
 ---
 title: "Delete audio routing group"
-description: "Delete the specified audioRoutingGroup."
+description: "Delete the specified audioRoutingGroup."author: "VinodRavichandran"
 ---
 
 # Delete audio routing group

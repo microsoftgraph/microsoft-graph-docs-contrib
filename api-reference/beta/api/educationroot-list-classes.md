@@ -1,6 +1,6 @@
 ---
 title: "List classes"
-description: "Retrieve a list of all class objects. "
+description: "Retrieve a list of all class objects. "author: "mmast-msft"
 ---
 
 # List classes

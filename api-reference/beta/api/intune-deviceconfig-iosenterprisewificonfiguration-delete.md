@@ -1,6 +1,6 @@
 ---
 title: "Delete iosEnterpriseWiFiConfiguration"
-description: "Deletes a iosEnterpriseWiFiConfiguration."
+description: "Deletes a iosEnterpriseWiFiConfiguration."author: "tfitzmac"
 ---
 
 # Delete iosEnterpriseWiFiConfiguration

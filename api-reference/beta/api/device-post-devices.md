@@ -1,6 +1,6 @@
 ---
 title: "Create device"
-description: "Create a new device."
+description: "Create a new device."author: "tfitzmac"
 ---
 
 # Create device

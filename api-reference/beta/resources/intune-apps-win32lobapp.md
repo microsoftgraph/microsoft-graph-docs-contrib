@@ -1,6 +1,6 @@
 ---
 title: "win32LobApp resource type"
-description: "Contains properties and inherited properties for Win32 apps."
+description: "Contains properties and inherited properties for Win32 apps."author: "tfitzmac"
 ---
 
 # win32LobApp resource type

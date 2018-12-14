@@ -1,6 +1,6 @@
 ---
 title: "Get windowsKioskConfiguration"
-description: "Read properties and relationships of the windowsKioskConfiguration object."
+description: "Read properties and relationships of the windowsKioskConfiguration object."author: "tfitzmac"
 ---
 
 # Get windowsKioskConfiguration

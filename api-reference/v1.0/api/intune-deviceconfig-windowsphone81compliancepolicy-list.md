@@ -1,6 +1,6 @@
 ---
 title: "List windowsPhone81CompliancePolicies"
-description: "List properties and relationships of the windowsPhone81CompliancePolicy objects."
+description: "List properties and relationships of the windowsPhone81CompliancePolicy objects."author: "tfitzmac"
 ---
 
 # List windowsPhone81CompliancePolicies

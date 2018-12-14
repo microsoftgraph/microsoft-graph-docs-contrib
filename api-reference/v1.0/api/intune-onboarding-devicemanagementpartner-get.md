@@ -1,6 +1,6 @@
 ---
 title: "Get deviceManagementPartner"
-description: "Read properties and relationships of the deviceManagementPartner object."
+description: "Read properties and relationships of the deviceManagementPartner object."author: "tfitzmac"
 ---
 
 # Get deviceManagementPartner

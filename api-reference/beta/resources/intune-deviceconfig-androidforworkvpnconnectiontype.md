@@ -1,6 +1,6 @@
 ---
 title: "androidForWorkVpnConnectionType enum type"
-description: "Android For Work VPN connection type."
+description: "Android For Work VPN connection type."author: "tfitzmac"
 ---
 
 # androidForWorkVpnConnectionType enum type

@@ -1,6 +1,6 @@
 ---
 title: "Add attachment"
-description: "Use this API to add an attachment to an event. Since there"
+description: "Use this API to add an attachment to an event. Since there"author: "angelgolfer-ms"
 ---
 
 # Add attachment

@@ -1,6 +1,6 @@
 ---
 title: "message: replyAll"
-description: "Reply to all recipients of a message. The message is then saved in the Sent Items folder."
+description: "Reply to all recipients of a message. The message is then saved in the Sent Items folder."author: "angelgolfer-ms"
 ---
 
 # message: replyAll

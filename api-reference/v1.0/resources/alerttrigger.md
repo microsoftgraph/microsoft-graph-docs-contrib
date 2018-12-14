@@ -1,6 +1,6 @@
 ---
 title: "alertTrigger resource type"
-description: "Contains information about the properties that triggered a detection (properties exist in the alert entity)."
+description: "Contains information about the properties that triggered a detection (properties exist in the alert entity)."author: "Preetikr"
 ---
 
 # alertTrigger resource type

@@ -1,6 +1,6 @@
 ---
 title: "List roleDefinitions"
-description: "List properties and relationships of the roleDefinition objects."
+description: "List properties and relationships of the roleDefinition objects."author: "tfitzmac"
 ---
 
 # List roleDefinitions

@@ -1,6 +1,6 @@
 ---
 title: "Delete managedAndroidStoreApp"
-description: "Deletes a managedAndroidStoreApp."
+description: "Deletes a managedAndroidStoreApp."author: "tfitzmac"
 ---
 
 # Delete managedAndroidStoreApp

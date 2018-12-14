@@ -1,6 +1,6 @@
 ---
 title: "Update microsoftStoreForBusinessApp"
-description: "Update the properties of a microsoftStoreForBusinessApp object."
+description: "Update the properties of a microsoftStoreForBusinessApp object."author: "tfitzmac"
 ---
 
 # Update microsoftStoreForBusinessApp

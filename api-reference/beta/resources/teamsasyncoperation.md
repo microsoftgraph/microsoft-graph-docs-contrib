@@ -1,6 +1,6 @@
 ---
 title: "teamsAsyncOperation resource type"
-description: "A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. "
+description: "A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. "author: "nkramer"
 ---
 
 # teamsAsyncOperation resource type

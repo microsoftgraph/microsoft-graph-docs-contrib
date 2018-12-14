@@ -1,6 +1,6 @@
 ---
 title: "windowsDeviceAzureADAccount resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # windowsDeviceAzureADAccount resource type

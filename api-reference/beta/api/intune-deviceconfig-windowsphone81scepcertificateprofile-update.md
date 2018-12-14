@@ -1,6 +1,6 @@
 ---
 title: "Update windowsPhone81SCEPCertificateProfile"
-description: "Update the properties of a windowsPhone81SCEPCertificateProfile object."
+description: "Update the properties of a windowsPhone81SCEPCertificateProfile object."author: "tfitzmac"
 ---
 
 # Update windowsPhone81SCEPCertificateProfile

@@ -1,6 +1,6 @@
 ---
 title: "Update domain"
-description: "Update the properties of domain object."
+description: "Update the properties of domain object."author: "lleonard-msft"
 ---
 
 # Update domain

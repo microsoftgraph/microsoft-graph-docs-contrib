@@ -1,6 +1,6 @@
 ---
 title: "List members"
-description: "Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role."
+description: "Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role."author: "lleonard-msft"
 ---
 
 # List members

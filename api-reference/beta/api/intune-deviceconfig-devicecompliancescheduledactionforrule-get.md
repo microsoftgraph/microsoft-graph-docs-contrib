@@ -1,6 +1,6 @@
 ---
 title: "Get deviceComplianceScheduledActionForRule"
-description: "Read properties and relationships of the deviceComplianceScheduledActionForRule object."
+description: "Read properties and relationships of the deviceComplianceScheduledActionForRule object."author: "tfitzmac"
 ---
 
 # Get deviceComplianceScheduledActionForRule

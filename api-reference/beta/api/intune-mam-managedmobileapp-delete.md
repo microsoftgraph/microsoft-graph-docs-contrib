@@ -1,6 +1,6 @@
 ---
 title: "Delete managedMobileApp"
-description: "Deletes a managedMobileApp."
+description: "Deletes a managedMobileApp."author: "tfitzmac"
 ---
 
 # Delete managedMobileApp

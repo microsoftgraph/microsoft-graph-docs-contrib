@@ -1,6 +1,6 @@
 ---
 title: "Delete deviceAndAppManagementRoleAssignment"
-description: "Deletes a deviceAndAppManagementRoleAssignment."
+description: "Deletes a deviceAndAppManagementRoleAssignment."author: "tfitzmac"
 ---
 
 # Delete deviceAndAppManagementRoleAssignment

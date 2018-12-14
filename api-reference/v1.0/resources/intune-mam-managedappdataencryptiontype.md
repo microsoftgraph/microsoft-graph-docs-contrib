@@ -1,6 +1,6 @@
 ---
 title: "managedAppDataEncryptionType enum type"
-description: "Represents the level to which app data is encrypted for managed apps"
+description: "Represents the level to which app data is encrypted for managed apps"author: "tfitzmac"
 ---
 
 # managedAppDataEncryptionType enum type

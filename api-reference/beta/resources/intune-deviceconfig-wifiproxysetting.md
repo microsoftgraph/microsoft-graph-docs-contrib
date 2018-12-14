@@ -1,6 +1,6 @@
 ---
 title: "wiFiProxySetting enum type"
-description: "Wi-Fi Proxy Settings."
+description: "Wi-Fi Proxy Settings."author: "tfitzmac"
 ---
 
 # wiFiProxySetting enum type

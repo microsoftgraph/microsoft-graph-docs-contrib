@@ -1,6 +1,6 @@
 ---
 title: "Update a group setting"
-description: "Update the properties of a specific group setting object."
+description: "Update the properties of a specific group setting object."author: "dkershaw10"
 ---
 
 # Update a group setting

@@ -1,6 +1,6 @@
 ---
 title: "Get officeClientConfiguration"
-description: "Get a specific policy."
+description: "Get a specific policy."author: "tfitzmac"
 ---
 
 # Get officeClientConfiguration

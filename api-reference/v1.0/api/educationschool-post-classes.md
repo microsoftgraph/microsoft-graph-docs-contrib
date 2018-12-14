@@ -1,6 +1,6 @@
 ---
 title: "Add educationClass to educationSchool"
-description: "Add a class to a school."
+description: "Add a class to a school."author: "mmast-msft"
 ---
 
 # Add educationClass to educationSchool

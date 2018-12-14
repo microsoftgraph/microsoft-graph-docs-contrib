@@ -1,6 +1,6 @@
 ---
 title: "Get iosPkcsCertificateProfile"
-description: "Read properties and relationships of the iosPkcsCertificateProfile object."
+description: "Read properties and relationships of the iosPkcsCertificateProfile object."author: "tfitzmac"
 ---
 
 # Get iosPkcsCertificateProfile

@@ -1,6 +1,6 @@
 ---
 title: "Create windowsStoreApp"
-description: "Create a new windowsStoreApp object."
+description: "Create a new windowsStoreApp object."author: "tfitzmac"
 ---
 
 # Create windowsStoreApp

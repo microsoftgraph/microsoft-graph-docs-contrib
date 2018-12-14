@@ -1,6 +1,6 @@
 ---
 title: "List windows81CertificateProfileBases"
-description: "List properties and relationships of the windows81CertificateProfileBase objects."
+description: "List properties and relationships of the windows81CertificateProfileBase objects."author: "tfitzmac"
 ---
 
 # List windows81CertificateProfileBases

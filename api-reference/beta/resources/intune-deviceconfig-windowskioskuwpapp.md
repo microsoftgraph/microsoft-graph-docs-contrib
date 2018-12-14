@@ -1,6 +1,6 @@
 ---
 title: "windowsKioskUWPApp resource type"
-description: "The base class for a type of apps"
+description: "The base class for a type of apps"author: "tfitzmac"
 ---
 
 # windowsKioskUWPApp resource type

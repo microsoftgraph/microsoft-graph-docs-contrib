@@ -1,6 +1,6 @@
 ---
 title: "List apps in team"
-description: "Retrieve the list of apps installed in the specified team."
+description: "Retrieve the list of apps installed in the specified team."author: "nkramer"
 ---
 
 # List apps in team

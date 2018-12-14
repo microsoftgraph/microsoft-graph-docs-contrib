@@ -1,6 +1,6 @@
 ---
 title: "Delete iosVpnConfiguration"
-description: "Deletes a iosVpnConfiguration."
+description: "Deletes a iosVpnConfiguration."author: "tfitzmac"
 ---
 
 # Delete iosVpnConfiguration

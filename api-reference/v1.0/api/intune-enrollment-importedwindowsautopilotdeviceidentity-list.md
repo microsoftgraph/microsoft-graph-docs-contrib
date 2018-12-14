@@ -1,6 +1,6 @@
 ---
 title: "List importedWindowsAutopilotDeviceIdentities"
-description: "List properties and relationships of the importedWindowsAutopilotDeviceIdentity objects."
+description: "List properties and relationships of the importedWindowsAutopilotDeviceIdentity objects."author: "tfitzmac"
 ---
 
 # List importedWindowsAutopilotDeviceIdentities

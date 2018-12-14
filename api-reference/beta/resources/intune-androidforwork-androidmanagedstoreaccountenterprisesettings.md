@@ -1,6 +1,6 @@
 ---
 title: "androidManagedStoreAccountEnterpriseSettings resource type"
-description: "Enterprise settings for an Android managed store account."
+description: "Enterprise settings for an Android managed store account."author: "tfitzmac"
 ---
 
 # androidManagedStoreAccountEnterpriseSettings resource type

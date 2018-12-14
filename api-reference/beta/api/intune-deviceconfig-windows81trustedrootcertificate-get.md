@@ -1,6 +1,6 @@
 ---
 title: "Get windows81TrustedRootCertificate"
-description: "Read properties and relationships of the windows81TrustedRootCertificate object."
+description: "Read properties and relationships of the windows81TrustedRootCertificate object."author: "tfitzmac"
 ---
 
 # Get windows81TrustedRootCertificate

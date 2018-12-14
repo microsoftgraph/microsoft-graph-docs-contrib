@@ -1,6 +1,6 @@
 ---
 title: "Update officeSuiteApp"
-description: "Update the properties of a officeSuiteApp object."
+description: "Update the properties of a officeSuiteApp object."author: "tfitzmac"
 ---
 
 # Update officeSuiteApp

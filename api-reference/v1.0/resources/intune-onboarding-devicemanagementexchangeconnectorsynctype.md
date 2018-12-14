@@ -1,6 +1,6 @@
 ---
 title: "deviceManagementExchangeConnectorSyncType enum type"
-description: "The type of Exchange Connector sync requested."
+description: "The type of Exchange Connector sync requested."author: "tfitzmac"
 ---
 
 # deviceManagementExchangeConnectorSyncType enum type

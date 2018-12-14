@@ -1,6 +1,6 @@
 ---
 title: "Get androidWorkProfileTrustedRootCertificate"
-description: "Read properties and relationships of the androidWorkProfileTrustedRootCertificate object."
+description: "Read properties and relationships of the androidWorkProfileTrustedRootCertificate object."author: "tfitzmac"
 ---
 
 # Get androidWorkProfileTrustedRootCertificate

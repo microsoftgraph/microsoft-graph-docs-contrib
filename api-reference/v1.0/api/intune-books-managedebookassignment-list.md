@@ -1,6 +1,6 @@
 ---
 title: "List managedEBookAssignments"
-description: "List properties and relationships of the managedEBookAssignment objects."
+description: "List properties and relationships of the managedEBookAssignment objects."author: "tfitzmac"
 ---
 
 # List managedEBookAssignments

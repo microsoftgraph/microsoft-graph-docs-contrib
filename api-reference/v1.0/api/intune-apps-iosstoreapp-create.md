@@ -1,6 +1,6 @@
 ---
 title: "Create iosStoreApp"
-description: "Create a new iosStoreApp object."
+description: "Create a new iosStoreApp object."author: "tfitzmac"
 ---
 
 # Create iosStoreApp

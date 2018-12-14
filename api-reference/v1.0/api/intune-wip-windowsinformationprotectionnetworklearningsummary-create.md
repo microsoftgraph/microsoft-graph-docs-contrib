@@ -1,6 +1,6 @@
 ---
 title: "Create windowsInformationProtectionNetworkLearningSummary"
-description: "Create a new windowsInformationProtectionNetworkLearningSummary object."
+description: "Create a new windowsInformationProtectionNetworkLearningSummary object."author: "tfitzmac"
 ---
 
 # Create windowsInformationProtectionNetworkLearningSummary

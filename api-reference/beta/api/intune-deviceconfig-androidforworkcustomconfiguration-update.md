@@ -1,6 +1,6 @@
 ---
 title: "Update androidForWorkCustomConfiguration"
-description: "Update the properties of a androidForWorkCustomConfiguration object."
+description: "Update the properties of a androidForWorkCustomConfiguration object."author: "tfitzmac"
 ---
 
 # Update androidForWorkCustomConfiguration

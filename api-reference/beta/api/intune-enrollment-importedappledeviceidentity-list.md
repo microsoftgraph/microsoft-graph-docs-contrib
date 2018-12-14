@@ -1,6 +1,6 @@
 ---
 title: "List importedAppleDeviceIdentities"
-description: "List properties and relationships of the importedAppleDeviceIdentity objects."
+description: "List properties and relationships of the importedAppleDeviceIdentity objects."author: "tfitzmac"
 ---
 
 # List importedAppleDeviceIdentities

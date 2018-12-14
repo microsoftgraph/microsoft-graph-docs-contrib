@@ -1,6 +1,6 @@
 ---
 title: "Update windows10EnterpriseModernAppManagementConfiguration"
-description: "Update the properties of a windows10EnterpriseModernAppManagementConfiguration object."
+description: "Update the properties of a windows10EnterpriseModernAppManagementConfiguration object."author: "tfitzmac"
 ---
 
 # Update windows10EnterpriseModernAppManagementConfiguration

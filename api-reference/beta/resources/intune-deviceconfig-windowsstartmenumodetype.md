@@ -1,6 +1,6 @@
 ---
 title: "windowsStartMenuModeType enum type"
-description: "Type of display modes for the start menu."
+description: "Type of display modes for the start menu."author: "tfitzmac"
 ---
 
 # windowsStartMenuModeType enum type

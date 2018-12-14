@@ -1,6 +1,6 @@
 ---
 title: "Get mobileAppContent"
-description: "Read properties and relationships of the mobileAppContent object."
+description: "Read properties and relationships of the mobileAppContent object."author: "tfitzmac"
 ---
 
 # Get mobileAppContent

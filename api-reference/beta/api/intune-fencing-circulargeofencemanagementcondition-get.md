@@ -1,6 +1,6 @@
 ---
 title: "Get circularGeofenceManagementCondition"
-description: "Read properties and relationships of the circularGeofenceManagementCondition object."
+description: "Read properties and relationships of the circularGeofenceManagementCondition object."author: "tfitzmac"
 ---
 
 # Get circularGeofenceManagementCondition

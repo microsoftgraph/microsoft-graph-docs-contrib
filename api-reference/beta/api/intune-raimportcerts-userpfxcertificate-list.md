@@ -1,6 +1,6 @@
 ---
 title: "List userPFXCertificates"
-description: "List properties and relationships of the userPFXCertificate objects."
+description: "List properties and relationships of the userPFXCertificate objects."author: "tfitzmac"
 ---
 
 # List userPFXCertificates

@@ -1,6 +1,6 @@
 ---
 title: "Delete androidForWorkNineWorkEasConfiguration"
-description: "Deletes a androidForWorkNineWorkEasConfiguration."
+description: "Deletes a androidForWorkNineWorkEasConfiguration."author: "tfitzmac"
 ---
 
 # Delete androidForWorkNineWorkEasConfiguration

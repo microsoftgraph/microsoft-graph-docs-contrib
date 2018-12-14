@@ -1,6 +1,6 @@
 ---
 title: "iosUpdateDeviceStatus resource type"
-description: "Not yet documented"
+description: "Not yet documented"author: "tfitzmac"
 ---
 
 # iosUpdateDeviceStatus resource type

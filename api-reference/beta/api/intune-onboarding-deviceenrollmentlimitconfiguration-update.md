@@ -1,6 +1,6 @@
 ---
 title: "Update deviceEnrollmentLimitConfiguration"
-description: "Update the properties of a deviceEnrollmentLimitConfiguration object."
+description: "Update the properties of a deviceEnrollmentLimitConfiguration object."author: "tfitzmac"
 ---
 
 # Update deviceEnrollmentLimitConfiguration

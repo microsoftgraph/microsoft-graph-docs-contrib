@@ -1,6 +1,6 @@
 ---
 title: "Get macOSDeviceFeaturesConfiguration"
-description: "Read properties and relationships of the macOSDeviceFeaturesConfiguration object."
+description: "Read properties and relationships of the macOSDeviceFeaturesConfiguration object."author: "tfitzmac"
 ---
 
 # Get macOSDeviceFeaturesConfiguration

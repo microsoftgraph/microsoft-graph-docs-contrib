@@ -1,6 +1,6 @@
 ---
 title: "Get settingStateDeviceSummary"
-description: "Read properties and relationships of the settingStateDeviceSummary object."
+description: "Read properties and relationships of the settingStateDeviceSummary object."author: "tfitzmac"
 ---
 
 # Get settingStateDeviceSummary

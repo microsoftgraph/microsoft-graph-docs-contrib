@@ -1,6 +1,6 @@
 ---
 title: "Create device"
-description: "Create and register a new device in the organization."
+description: "Create and register a new device in the organization."author: "tfitzmac"
 ---
 
 # Create device

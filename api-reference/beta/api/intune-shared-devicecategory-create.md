@@ -1,6 +1,6 @@
 ---
 title: "Create deviceCategory"
-description: "Create a new deviceCategory object."
+description: "Create a new deviceCategory object."author: "tfitzmac"
 ---
 
 # Create deviceCategory

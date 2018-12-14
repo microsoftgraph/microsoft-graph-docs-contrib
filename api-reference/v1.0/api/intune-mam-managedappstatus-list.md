@@ -1,6 +1,6 @@
 ---
 title: "List managedAppStatuses"
-description: "List properties and relationships of the managedAppStatus objects."
+description: "List properties and relationships of the managedAppStatus objects."author: "tfitzmac"
 ---
 
 # List managedAppStatuses

@@ -1,6 +1,6 @@
 ---
 title: "Update sharedPCConfiguration"
-description: "Update the properties of a sharedPCConfiguration object."
+description: "Update the properties of a sharedPCConfiguration object."author: "tfitzmac"
 ---
 
 # Update sharedPCConfiguration

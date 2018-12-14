@@ -1,6 +1,6 @@
 ---
 title: "List androidForWorkEasEmailProfileBases"
-description: "List properties and relationships of the androidForWorkEasEmailProfileBase objects."
+description: "List properties and relationships of the androidForWorkEasEmailProfileBase objects."author: "tfitzmac"
 ---
 
 # List androidForWorkEasEmailProfileBases

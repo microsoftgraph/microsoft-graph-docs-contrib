@@ -1,6 +1,6 @@
 ---
 title: "Permanently delete item"
-description: "Permanently deletes an item from deleted items."
+description: "Permanently deletes an item from deleted items."author: "lleonard-msft"
 ---
 
 # Permanently delete item

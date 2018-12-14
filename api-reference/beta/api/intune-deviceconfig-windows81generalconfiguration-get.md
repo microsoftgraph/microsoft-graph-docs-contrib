@@ -1,6 +1,6 @@
 ---
 title: "Get windows81GeneralConfiguration"
-description: "Read properties and relationships of the windows81GeneralConfiguration object."
+description: "Read properties and relationships of the windows81GeneralConfiguration object."author: "tfitzmac"
 ---
 
 # Get windows81GeneralConfiguration

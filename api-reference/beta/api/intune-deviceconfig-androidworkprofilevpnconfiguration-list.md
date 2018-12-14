@@ -1,6 +1,6 @@
 ---
 title: "List androidWorkProfileVpnConfigurations"
-description: "List properties and relationships of the androidWorkProfileVpnConfiguration objects."
+description: "List properties and relationships of the androidWorkProfileVpnConfiguration objects."author: "tfitzmac"
 ---
 
 # List androidWorkProfileVpnConfigurations

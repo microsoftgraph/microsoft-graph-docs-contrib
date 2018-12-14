@@ -1,6 +1,6 @@
 ---
 title: "edgeSearchEngineType enum type"
-description: "Allows IT admind to set a predefined default search engine for MDM-Controlled devices"
+description: "Allows IT admind to set a predefined default search engine for MDM-Controlled devices"author: "tfitzmac"
 ---
 
 # edgeSearchEngineType enum type
