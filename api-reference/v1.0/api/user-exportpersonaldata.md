@@ -5,7 +5,7 @@ description: "Submits a data policy operation request, made by a Company Adminis
 
 # user: exportPersonalData
 
-Submits a data policy operation request, made by a Company Administrator or an Application to export an organizational user's data.
+Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) |  Not applicable  |
 |Application | User.Export.All, User.Read.All |
 
->Note: Export can only be performed by a Company Administrator when using the delegated permission.
+>**Note:** The export can only be performed by a company administrator when delegated permissions are used.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ In the request body, provide a JSON object with the following parameters.
 |storageLocation|String|This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.|
 
 ## Response
-If successful, this method returns `202, Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request
