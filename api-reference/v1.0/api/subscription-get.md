@@ -23,6 +23,22 @@ The following table lists the suggested permission needed for each resource. To 
 | Drives (SharePoint shared content and drives) | Files.ReadWrite.All |
 |Security alert| SecurityEvents.ReadWrite.All |
 
+Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+|[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[drive](../resources/drive.md) (user's OneDrive) | Files.ReadWrite | Files.ReadWrite | Files.ReadWrite.All |
+|[drive](../resources/drive.md) (SharePoint shared content and drive) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
+|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
+|[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
+|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
+|[user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+
+> **Note:** Even though the respective shared permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts) allow reading or writing contacts, events, and messages in shared or delegated folders, they do NOT support accessing subscriptions to contacts, events, and messages in such folders. 
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
