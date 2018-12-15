@@ -36,8 +36,7 @@ Absolutely! Each quick start download is based on a [Microsoft Graph tutorial](t
 - Build the code yourself by following the step-by-step tutorial.
 - Download the completed project from the corresponding GitHub repository and follow the instructions in the README to configure and run the sample.
 
-> [!NOTE]
-> We are in the process of generating tutorials for each of the platforms that currently have a quick start. Some of the quick starts do not have corresponding tutorials yet.
+> **Note:** We are in the process of generating tutorials for each of the platforms that currently have a quick start. Some of the quick starts do not have corresponding tutorials yet.
 
 #### Tutorials and GitHub repositories
 
@@ -59,7 +58,7 @@ The following table lists the corresponding tutorial and GitHub repository for e
 
 ### Why don't any of the quick start samples show advanced authentication use cases?
 
-The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other authentication flows in the [Azure Active Directory](/azure/active-directory/develop/authentication-scenarios) documentation.
+The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other authentication flows in the [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios) documentation.
 
 ### What if I run into an unexpected error or problem with a quick start?
 
