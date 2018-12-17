@@ -1,6 +1,7 @@
 ---
 title: "windowsInformationProtectionResourceCollection resource type"
-description: "Windows Information Protection Resource Collection"author: "tfitzmac"
+description: "Windows Information Protection Resource Collection"
+author:"tfitzmac"
 ---
 
 # windowsInformationProtectionResourceCollection resource type

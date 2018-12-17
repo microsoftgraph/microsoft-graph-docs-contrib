@@ -1,6 +1,7 @@
 ---
 title: "Delete macOSLobApp"
-description: "Deletes a macOSLobApp."author: "tfitzmac"
+description: "Deletes a macOSLobApp."
+author:"tfitzmac"
 ---
 
 # Delete macOSLobApp

@@ -1,6 +1,7 @@
 ---
 title: "deviceGuardVirtualizationBasedSecurityHardwareRequirementState enum type"
-description: "Not yet documented"author: "tfitzmac"
+description: "Not yet documented"
+author:"tfitzmac"
 ---
 
 # deviceGuardVirtualizationBasedSecurityHardwareRequirementState enum type

@@ -1,6 +1,7 @@
 ---
 title: "call: changeScreenSharingRole"
-description: "Start and stop sharing screen in the call. This API is used to allow applications to share screen content with the participants of a call or meeting."author: "VinodRavichandran"
+description: "Start and stop sharing screen in the call. This API is used to allow applications to share screen content with the participants of a call or meeting."
+author:"VinodRavichandran"
 ---
 
 # call: changeScreenSharingRole

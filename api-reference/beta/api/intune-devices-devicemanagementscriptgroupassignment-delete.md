@@ -1,6 +1,7 @@
 ---
 title: "Delete deviceManagementScriptGroupAssignment"
-description: "Deletes a deviceManagementScriptGroupAssignment."author: "tfitzmac"
+description: "Deletes a deviceManagementScriptGroupAssignment."
+author:"tfitzmac"
 ---
 
 # Delete deviceManagementScriptGroupAssignment

@@ -1,6 +1,7 @@
 ---
 title: "Delete macOSVpnConfiguration"
-description: "Deletes a macOSVpnConfiguration."author: "tfitzmac"
+description: "Deletes a macOSVpnConfiguration."
+author:"tfitzmac"
 ---
 
 # Delete macOSVpnConfiguration

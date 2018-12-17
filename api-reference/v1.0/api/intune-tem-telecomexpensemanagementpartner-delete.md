@@ -1,6 +1,7 @@
 ---
 title: "Delete telecomExpenseManagementPartner"
-description: "Deletes a telecomExpenseManagementPartner."author: "tfitzmac"
+description: "Deletes a telecomExpenseManagementPartner."
+author:"tfitzmac"
 ---
 
 # Delete telecomExpenseManagementPartner

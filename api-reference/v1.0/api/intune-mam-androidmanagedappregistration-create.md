@@ -1,6 +1,7 @@
 ---
 title: "Create androidManagedAppRegistration"
-description: "Create a new androidManagedAppRegistration object."author: "tfitzmac"
+description: "Create a new androidManagedAppRegistration object."
+author:"tfitzmac"
 ---
 
 # Create androidManagedAppRegistration

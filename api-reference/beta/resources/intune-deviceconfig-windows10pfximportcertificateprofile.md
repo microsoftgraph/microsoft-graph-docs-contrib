@@ -1,6 +1,7 @@
 ---
 title: "windows10PFXImportCertificateProfile resource type"
-description: "Deprecated"author: "tfitzmac"
+description: "Deprecated"
+author:"tfitzmac"
 ---
 
 # windows10PFXImportCertificateProfile resource type

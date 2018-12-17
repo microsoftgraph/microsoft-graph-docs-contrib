@@ -1,6 +1,7 @@
 ---
 title: "participant: muteAll"
-description: "Mute all participants in the call."author: "VinodRavichandran"
+description: "Mute all participants in the call."
+author:"VinodRavichandran"
 ---
 
 # participant: muteAll

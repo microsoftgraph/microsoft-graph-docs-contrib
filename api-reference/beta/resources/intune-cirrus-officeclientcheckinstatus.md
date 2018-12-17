@@ -1,6 +1,7 @@
 ---
 title: "officeClientCheckinStatus resource type"
-description: "Entity that describes  tenant check-in stats."author: "tfitzmac"
+description: "Entity that describes  tenant check-in stats."
+author:"tfitzmac"
 ---
 
 # officeClientCheckinStatus resource type

@@ -1,6 +1,7 @@
 ---
 title: "Delete call"
-description: "Delete or hang up an active call."author: "VinodRavichandran"
+description: "Delete or hang up an active call."
+author:"VinodRavichandran"
 ---
 
 # Delete call

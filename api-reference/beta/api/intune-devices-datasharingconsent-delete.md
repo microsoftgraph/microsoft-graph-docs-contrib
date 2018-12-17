@@ -1,6 +1,7 @@
 ---
 title: "Delete dataSharingConsent"
-description: "Deletes a dataSharingConsent."author: "tfitzmac"
+description: "Deletes a dataSharingConsent."
+author:"tfitzmac"
 ---
 
 # Delete dataSharingConsent

@@ -1,6 +1,7 @@
 ---
 title: "Update macOSImportedPFXCertificateProfile"
-description: "Update the properties of a macOSImportedPFXCertificateProfile object."author: "tfitzmac"
+description: "Update the properties of a macOSImportedPFXCertificateProfile object."
+author:"tfitzmac"
 ---
 
 # Update macOSImportedPFXCertificateProfile

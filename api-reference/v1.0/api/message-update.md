@@ -1,6 +1,7 @@
 ---
 title: "Update message"
-description: "Update the properties of message object."author: "angelgolfer-ms"
+description: "Update the properties of message object."
+author:"angelgolfer-ms"
 ---
 
 # Update message

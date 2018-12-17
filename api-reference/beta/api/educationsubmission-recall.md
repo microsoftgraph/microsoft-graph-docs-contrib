@@ -1,6 +1,7 @@
 ---
 title: "educationSubmission: recall"
-description: "."author: "mmast-msft"
+description: "."
+author:"mmast-msft"
 ---
 
 # educationSubmission: recall

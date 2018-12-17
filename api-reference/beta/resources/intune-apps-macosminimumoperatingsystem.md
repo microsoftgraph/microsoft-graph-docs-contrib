@@ -1,6 +1,7 @@
 ---
 title: "macOSMinimumOperatingSystem resource type"
-description: "The minimum operating system required for a MacOS app."author: "tfitzmac"
+description: "The minimum operating system required for a MacOS app."
+author:"tfitzmac"
 ---
 
 # macOSMinimumOperatingSystem resource type

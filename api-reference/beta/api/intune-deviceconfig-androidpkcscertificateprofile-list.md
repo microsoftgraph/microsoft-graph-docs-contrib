@@ -1,6 +1,7 @@
 ---
 title: "List androidPkcsCertificateProfiles"
-description: "List properties and relationships of the androidPkcsCertificateProfile objects."author: "tfitzmac"
+description: "List properties and relationships of the androidPkcsCertificateProfile objects."
+author:"tfitzmac"
 ---
 
 # List androidPkcsCertificateProfiles

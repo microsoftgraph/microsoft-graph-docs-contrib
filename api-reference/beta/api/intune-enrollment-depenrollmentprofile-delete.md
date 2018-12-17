@@ -1,6 +1,7 @@
 ---
 title: "Delete depEnrollmentProfile"
-description: "Deletes a depEnrollmentProfile."author: "tfitzmac"
+description: "Deletes a depEnrollmentProfile."
+author:"tfitzmac"
 ---
 
 # Delete depEnrollmentProfile

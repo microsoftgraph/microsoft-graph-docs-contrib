@@ -1,6 +1,7 @@
 ---
 title: "Delete a directory setting"
-description: "Delete a directory setting."author: "lleonard-msft"
+description: "Delete a directory setting."
+author:"lleonard-msft"
 ---
 
 # Delete a directory setting

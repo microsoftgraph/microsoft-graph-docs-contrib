@@ -1,6 +1,7 @@
 ---
 title: "sync action"
-description: "Not yet documented"author: "tfitzmac"
+description: "Not yet documented"
+author:"tfitzmac"
 ---
 
 # sync action

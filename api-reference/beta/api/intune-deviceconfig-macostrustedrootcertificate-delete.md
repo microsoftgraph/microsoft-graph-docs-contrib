@@ -1,6 +1,7 @@
 ---
 title: "Delete macOSTrustedRootCertificate"
-description: "Deletes a macOSTrustedRootCertificate."author: "tfitzmac"
+description: "Deletes a macOSTrustedRootCertificate."
+author:"tfitzmac"
 ---
 
 # Delete macOSTrustedRootCertificate

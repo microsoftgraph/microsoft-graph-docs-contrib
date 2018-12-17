@@ -1,6 +1,7 @@
 ---
 title: "Delete roleScopeTag"
-description: "Deletes a roleScopeTag."author: "tfitzmac"
+description: "Deletes a roleScopeTag."
+author:"tfitzmac"
 ---
 
 # Delete roleScopeTag

@@ -1,6 +1,7 @@
 ---
 title: "Delete embeddedSIMActivationCodePoolAssignment"
-description: "Deletes a embeddedSIMActivationCodePoolAssignment."author: "tfitzmac"
+description: "Deletes a embeddedSIMActivationCodePoolAssignment."
+author:"tfitzmac"
 ---
 
 # Delete embeddedSIMActivationCodePoolAssignment

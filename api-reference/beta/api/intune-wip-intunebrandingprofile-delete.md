@@ -1,6 +1,7 @@
 ---
 title: "Delete intuneBrandingProfile"
-description: "Deletes a intuneBrandingProfile."author: "tfitzmac"
+description: "Deletes a intuneBrandingProfile."
+author:"tfitzmac"
 ---
 
 # Delete intuneBrandingProfile

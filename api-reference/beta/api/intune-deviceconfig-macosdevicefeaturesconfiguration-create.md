@@ -1,6 +1,7 @@
 ---
 title: "Create macOSDeviceFeaturesConfiguration"
-description: "Create a new macOSDeviceFeaturesConfiguration object."author: "tfitzmac"
+description: "Create a new macOSDeviceFeaturesConfiguration object."
+author:"tfitzmac"
 ---
 
 # Create macOSDeviceFeaturesConfiguration

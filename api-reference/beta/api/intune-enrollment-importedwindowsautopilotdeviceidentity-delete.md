@@ -1,6 +1,7 @@
 ---
 title: "Delete importedWindowsAutopilotDeviceIdentity"
-description: "Deletes a importedWindowsAutopilotDeviceIdentity."author: "tfitzmac"
+description: "Deletes a importedWindowsAutopilotDeviceIdentity."
+author:"tfitzmac"
 ---
 
 # Delete importedWindowsAutopilotDeviceIdentity

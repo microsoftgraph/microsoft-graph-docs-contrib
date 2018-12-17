@@ -1,6 +1,7 @@
 ---
 title: "Delete educationAssignmentResource"
-description: "."author: "mmast-msft"
+description: "."
+author:"mmast-msft"
 ---
 
 # Delete educationAssignmentResource

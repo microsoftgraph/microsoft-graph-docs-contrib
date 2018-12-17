@@ -1,6 +1,7 @@
 ---
 title: "deviceType enum type"
-description: "Device type."author: "tfitzmac"
+description: "Device type."
+author:"tfitzmac"
 ---
 
 # deviceType enum type

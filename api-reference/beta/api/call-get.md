@@ -1,6 +1,7 @@
 ---
 title: "Get call"
-description: "Retrieve the properties and relationships of a call object."author: "VinodRavichandran"
+description: "Retrieve the properties and relationships of a call object."
+author:"VinodRavichandran"
 ---
 
 # Get call

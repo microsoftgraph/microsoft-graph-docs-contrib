@@ -1,6 +1,7 @@
 ---
 title: "Delete mobileAppAssignment"
-description: "Deletes a mobileAppAssignment."author: "tfitzmac"
+description: "Deletes a mobileAppAssignment."
+author:"tfitzmac"
 ---
 
 # Delete mobileAppAssignment
