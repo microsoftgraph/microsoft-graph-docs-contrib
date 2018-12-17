@@ -1,6 +1,6 @@
 ---
 title: "TableColumn resource type"
-description: "Represents a column in a table.
+description: "Represents a column in a table."
 author: "lumine2008"
 ---
 

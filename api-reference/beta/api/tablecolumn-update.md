@@ -1,6 +1,6 @@
 ---
 title: "Update tablecolumn"
-description: "Update the properties of tablecolumn object.
+description: "Update the properties of tablecolumn object."
 author: "lumine2008"
 ---
 

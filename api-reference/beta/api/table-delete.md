@@ -1,6 +1,6 @@
 ---
 title: "Table: delete"
-description: "Deletes the table.
+description: "Deletes the table."
 author: "lumine2008"
 ---
 

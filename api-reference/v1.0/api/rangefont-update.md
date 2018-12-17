@@ -1,6 +1,6 @@
 ---
 title: "Update rangefont"
-description: "Update the properties of rangefont object.
+description: "Update the properties of rangefont object."
 author: "lumine2008"
 ---
 

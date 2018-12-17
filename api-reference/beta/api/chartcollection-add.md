@@ -1,6 +1,6 @@
 ---
 title: "ChartCollection: add"
-description: "Creates a new chart.
+description: "Creates a new chart."
 author: "lumine2008"
 ---
 

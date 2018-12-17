@@ -1,6 +1,6 @@
 ---
 title: "ChartPointsCollection: ItemAt"
-description: "Retrieve a point based on its position within the series.
+description: "Retrieve a point based on its position within the series."
 author: "lumine2008"
 ---
 

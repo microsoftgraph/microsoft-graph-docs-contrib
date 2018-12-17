@@ -1,6 +1,6 @@
 ---
 title: "Update chartlineformat"
-description: "Update the properties of chartlineformat object.
+description: "Update the properties of chartlineformat object."
 author: "lumine2008"
 ---
 

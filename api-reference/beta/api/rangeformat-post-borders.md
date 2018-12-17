@@ -1,6 +1,6 @@
 ---
 title: "Create RangeBorder"
-description: "Use this API to create a new RangeBorder.
+description: "Use this API to create a new RangeBorder."
 author: "lumine2008"
 ---
 

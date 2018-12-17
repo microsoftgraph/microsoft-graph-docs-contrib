@@ -1,6 +1,6 @@
 ---
 title: "workbookPivotTable: refreshAll"
-description: "Refreshes the PivotTable within a given worksheet.
+description: "Refreshes the PivotTable within a given worksheet."
 author: "lumine2008"
 ---
 

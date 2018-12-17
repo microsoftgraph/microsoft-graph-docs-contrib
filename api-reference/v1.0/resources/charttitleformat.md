@@ -1,6 +1,6 @@
 ---
 title: "ChartTitleFormat resource type"
-description: "Encapsulates the format properties for the chart title.
+description: "Encapsulates the format properties for the chart title."
 author: "lumine2008"
 ---
 

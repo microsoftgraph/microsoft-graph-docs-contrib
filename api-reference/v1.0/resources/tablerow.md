@@ -1,6 +1,6 @@
 ---
 title: "TableRow resource type"
-description: "Represents a row in a table.
+description: "Represents a row in a table."
 author: "lumine2008"
 ---
 

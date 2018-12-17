@@ -1,6 +1,6 @@
 ---
 title: "TableRowCollection: ItemAt"
-description: "Gets a row based on its position in the collection.
+description: "Gets a row based on its position in the collection."
 author: "lumine2008"
 ---
 

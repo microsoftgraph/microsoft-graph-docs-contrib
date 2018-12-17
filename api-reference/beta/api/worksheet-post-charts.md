@@ -1,6 +1,6 @@
 ---
 title: "Create Chart"
-description: "Use this API to create a new Chart.
+description: "Use this API to create a new Chart."
 author: "lumine2008"
 ---
 

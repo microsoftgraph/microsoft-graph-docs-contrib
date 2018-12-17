@@ -1,6 +1,6 @@
 ---
 title: "Get TableColumn"
-description: "Retrieve the properties and relationships of tablecolumn object.
+description: "Retrieve the properties and relationships of tablecolumn object."
 author: "lumine2008"
 ---
 

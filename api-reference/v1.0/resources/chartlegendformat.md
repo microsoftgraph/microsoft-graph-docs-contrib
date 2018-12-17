@@ -1,6 +1,6 @@
 ---
 title: "ChartLegendFormat resource type"
-description: "Encapsulates the format properties of a chart legend.
+description: "Encapsulates the format properties of a chart legend."
 author: "lumine2008"
 ---
 

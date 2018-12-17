@@ -1,6 +1,6 @@
 ---
 title: "Update table"
-description: "Update the properties of table object.
+description: "Update the properties of table object."
 author: "lumine2008"
 ---
 

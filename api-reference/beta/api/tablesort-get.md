@@ -1,6 +1,6 @@
 ---
 title: "Get TableSort"
-description: "Retrieve the properties and relationships of tablesort object.
+description: "Retrieve the properties and relationships of tablesort object."
 author: "lumine2008"
 ---
 

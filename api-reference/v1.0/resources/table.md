@@ -1,6 +1,6 @@
 ---
 title: "Table resource type"
-description: "Represents an Excel table.
+description: "Represents an Excel table."
 author: "lumine2008"
 ---
 

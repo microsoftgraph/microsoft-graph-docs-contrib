@@ -1,6 +1,6 @@
 ---
 title: "Get RangeFormat"
-description: "Retrieve the properties and relationships of rangeformat object.
+description: "Retrieve the properties and relationships of rangeformat object."
 author: "lumine2008"
 ---
 

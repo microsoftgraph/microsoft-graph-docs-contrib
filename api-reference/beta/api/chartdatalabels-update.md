@@ -1,6 +1,6 @@
 ---
 title: "Update chartdatalabels"
-description: "Update the properties of chartdatalabels object.
+description: "Update the properties of chartdatalabels object."
 author: "lumine2008"
 ---
 

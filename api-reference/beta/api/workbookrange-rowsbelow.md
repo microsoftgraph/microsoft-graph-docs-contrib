@@ -1,6 +1,6 @@
 ---
 title: "workbookRange: rowsBelow"
-description: "Gets certain number of rows below a given range.
+description: "Gets certain number of rows below a given range."
 author: "lumine2008"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Update chartgridlines"
-description: "Update the properties of chartgridlines object.
+description: "Update the properties of chartgridlines object."
 author: "lumine2008"
 ---
 

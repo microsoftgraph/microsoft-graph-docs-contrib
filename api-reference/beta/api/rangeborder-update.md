@@ -1,6 +1,6 @@
 ---
 title: "Update rangeborder"
-description: "Update the properties of rangeborder object.
+description: "Update the properties of rangeborder object."
 author: "lumine2008"
 ---
 

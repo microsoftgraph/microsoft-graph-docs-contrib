@@ -1,6 +1,6 @@
 ---
 title: "TableColumn: HeaderRowRange"
-description: "Gets the range object associated with the header row of the column.
+description: "Gets the range object associated with the header row of the column."
 author: "lumine2008"
 ---
 

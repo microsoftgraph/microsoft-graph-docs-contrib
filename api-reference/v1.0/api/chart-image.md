@@ -1,6 +1,6 @@
 ---
 title: "Chart: Image"
-description: "Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
+description: "Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions."
 author: "lumine2008"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Get Table"
-description: "Retrieve the properties and relationships of table object.
+description: "Retrieve the properties and relationships of table object."
 author: "lumine2008"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "TableColumn: TotalRowRange"
-description: "Gets the range object associated with the totals row of the column.
+description: "Gets the range object associated with the totals row of the column."
 author: "lumine2008"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Get ChartGridlines"
-description: "Retrieve the properties and relationships of chartgridlines object.
+description: "Retrieve the properties and relationships of chartgridlines object."
 author: "lumine2008"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "ChartGridlines resource type"
-description: "Represents major or minor gridlines on a chart axis.
+description: "Represents major or minor gridlines on a chart axis."
 author: "lumine2008"
 ---
 

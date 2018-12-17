@@ -1,6 +1,6 @@
 ---
 title: "RangeBorderCollection: ItemAt"
-description: "Gets a border object using its index
+description: "Gets a border object using its index"
 author: "lumine2008"
 ---
 

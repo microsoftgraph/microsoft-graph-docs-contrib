@@ -1,6 +1,6 @@
 ---
 title: "Range: unmerge"
-description: "Unmerge the range cells into separate cells.
+description: "Unmerge the range cells into separate cells."
 author: "lumine2008"
 ---
 

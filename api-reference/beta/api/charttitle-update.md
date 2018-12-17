@@ -1,6 +1,6 @@
 ---
 title: "Update charttitle"
-description: "Update the properties of charttitle object.
+description: "Update the properties of charttitle object."
 author: "lumine2008"
 ---
 

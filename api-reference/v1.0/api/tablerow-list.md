@@ -1,6 +1,6 @@
 ---
 title: "List TableRowCollection"
-description: "Retrieve a list of tablerow objects.
+description: "Retrieve a list of tablerow objects."
 author: "lumine2008"
 ---
 
