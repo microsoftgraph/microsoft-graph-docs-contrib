@@ -32,7 +32,7 @@ The following example shows how you can determine whether an application is inst
 
 ## Using permissions
 
-The Microsoft Graph API controls access to resources using permission scopes. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference]https://docs.microsoft.com/en-us/graph/permissions-reference).
+The Microsoft Graph API controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference]https://docs.microsoft.com/en-us/graph/permissions-reference).
 
 ## Next Steps
 
