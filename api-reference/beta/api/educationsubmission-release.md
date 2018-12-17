@@ -1,7 +1,7 @@
 ---
 title: "educationSubmission: release"
 description: " and indicates that grading is done. This action can only be done by the teacher."
-author: "mmast-msft"
+author: "dipakboyed"
 ---
 
 # educationSubmission: release

@@ -1,7 +1,7 @@
 ---
 title: "Get educationSubmissionResource"
 description: " resource list and should be considered work in process by a student. This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment."
-author: "mmast-msft"
+author: "dipakboyed"
 ---
 
 # Get educationSubmissionResource
