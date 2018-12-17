@@ -5,23 +5,23 @@ description: "Submits a data policy operation request, made by a Company Adminis
 
 # user: exportPersonalData
 
-Submits a data policy operation request, made by a Company Administrator to export an organizational user's data.
+Submit a data policy operation request from a company administrator or an application to export an organizational user's data.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  User.Export.All and User.Read.All  |
+|Delegated (work or school account) |  User.Export.All, User.Read.All  |
 |Delegated (personal Microsoft account) |  Not applicable  |
-|Application | User.Export.All and User.Read.All |
+|Application | User.Export.All, User.Read.All |
 
->Note: Export can only be performed by a Company Administrator when using the delegated permission.
+>**Note:** The export can only be performed by a company administrator when delegated permissions are used.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/<id>/exportPersonalData
+POST /users/{id}/exportPersonalData
 
 ```
 ## Request headers
@@ -37,7 +37,7 @@ In the request body, provide a JSON object with the following parameters.
 |storageLocation|String|This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.|
 
 ## Response
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
 ##### Request
@@ -46,7 +46,7 @@ If successful, this method returns `200, OK` response code. It does not return a
   "name": "user_exportpersonaldata"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/users/{id}/exportPersonalData
+POST https://graph.microsoft.com/v1.0/users/{id}/exportPersonalData
 Content-type: application/json
 Content-length: 48
 
@@ -62,7 +62,7 @@ Content-length: 48
   "@odata.type": "microsoft.graph.none"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
