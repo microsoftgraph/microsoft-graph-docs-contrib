@@ -1,6 +1,7 @@
 ---
 title: "Range: BoundingRect"
-description: "."author: "lumine2008"
+description: ".
+"author: "lumine2008"
 ---
 
 # Range: BoundingRect

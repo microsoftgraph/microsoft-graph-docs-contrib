@@ -1,6 +1,7 @@
 ---
 title: "user: reminderView"
-description: "Return a list of calendar reminders within the specified start and end times. "author: "dkershaw10"
+description: "Return a list of calendar reminders within the specified start and end times. "
+author: "dkershaw10"
 ---
 
 # user: reminderView
