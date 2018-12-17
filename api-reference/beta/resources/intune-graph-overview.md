@@ -34,7 +34,7 @@ The following example shows how you can determine whether an application is inst
 
 ## Using Microsoft Graph permissions
 
-Microsof Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes).
+Microsof Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](https://docs.microsoft.com/en-us/graph/permissions-reference).
 
 ## Next Steps
 
