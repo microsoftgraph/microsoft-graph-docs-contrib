@@ -1,7 +1,7 @@
 ---
 title: "Update chartgridlines"
 description: "Update the properties of chartgridlines object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Update chartgridlines

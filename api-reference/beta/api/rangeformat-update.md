@@ -1,7 +1,7 @@
 ---
 title: "Update rangeformat"
 description: "Update the properties of rangeformat object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Update rangeformat

@@ -1,7 +1,7 @@
 ---
 title: "RangeFill resource type"
 description: "Represents the background of a range object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # RangeFill resource type

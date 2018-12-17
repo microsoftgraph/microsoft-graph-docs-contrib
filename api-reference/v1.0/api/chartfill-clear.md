@@ -1,7 +1,7 @@
 ---
 title: "ChartFill: clear"
 description: "Clear the fill color of a chart element.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # ChartFill: clear

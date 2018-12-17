@@ -1,7 +1,7 @@
 ---
 title: "Create ChartSeries"
 description: "Use this API to create a new ChartSeries.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Create ChartSeries

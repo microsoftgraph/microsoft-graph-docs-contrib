@@ -1,7 +1,7 @@
 ---
 title: "Get RangeBorder"
 description: "Retrieve the properties and relationships of rangeborder object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Get RangeBorder

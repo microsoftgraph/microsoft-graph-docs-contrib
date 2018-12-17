@@ -1,7 +1,7 @@
 ---
 title: "workbookRangeView: range"
 description: "Return the range associated with the rangeView resource.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # workbookRangeView: range

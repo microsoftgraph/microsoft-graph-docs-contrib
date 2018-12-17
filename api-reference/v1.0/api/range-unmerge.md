@@ -1,7 +1,7 @@
 ---
 title: "Range: unmerge"
 description: "Unmerge the range cells into separate cells.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Range: unmerge

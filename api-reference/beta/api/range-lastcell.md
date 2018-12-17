@@ -1,7 +1,7 @@
 ---
 title: "Range: LastCell"
 description: ".
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Range: LastCell

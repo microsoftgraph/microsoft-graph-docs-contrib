@@ -1,7 +1,7 @@
 ---
 title: "Update range"
 description: "Update the properties of range object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Update range

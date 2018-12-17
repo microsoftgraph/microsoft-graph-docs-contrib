@@ -1,7 +1,7 @@
 ---
 title: "Table: delete"
 description: "Deletes the table.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Table: delete

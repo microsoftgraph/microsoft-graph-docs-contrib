@@ -1,7 +1,7 @@
 ---
 title: "Get ChartAxis"
 description: "Retrieve the properties and relationships of chartaxis object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Get ChartAxis

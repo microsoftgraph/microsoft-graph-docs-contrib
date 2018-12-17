@@ -1,7 +1,7 @@
 ---
 title: "WorksheetProtection: unprotect"
 description: "Unprotect a worksheet
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # WorksheetProtection: unprotect

@@ -1,7 +1,7 @@
 ---
 title: "Get RangeFont"
 description: "Retrieve the properties and relationships of rangefont object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Get RangeFont

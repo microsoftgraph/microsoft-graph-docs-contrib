@@ -1,7 +1,7 @@
 ---
 title: "ChartAxisFormat resource type"
 description: "Encapsulates the format properties for the chart axis.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # ChartAxisFormat resource type

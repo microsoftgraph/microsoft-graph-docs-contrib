@@ -1,7 +1,7 @@
 ---
 title: "Create TableColumn"
 description: "Use this API to create a new TableColumn.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Create TableColumn

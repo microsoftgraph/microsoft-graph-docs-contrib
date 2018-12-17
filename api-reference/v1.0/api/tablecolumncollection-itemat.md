@@ -1,7 +1,7 @@
 ---
 title: "TableColumnCollection: ItemAt"
 description: "Gets a column based on its position in the collection.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # TableColumnCollection: ItemAt

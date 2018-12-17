@@ -1,7 +1,7 @@
 ---
 title: "Get ChartLegend"
 description: "Retrieve the properties and relationships of chartlegend object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Get ChartLegend

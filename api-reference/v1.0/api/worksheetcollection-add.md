@@ -1,7 +1,7 @@
 ---
 title: "WorksheetCollection: add"
 description: ".activate() on it.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # WorksheetCollection: add

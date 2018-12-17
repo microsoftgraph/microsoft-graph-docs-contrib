@@ -1,7 +1,7 @@
 ---
 title: "Update charttitle"
 description: "Update the properties of charttitle object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Update charttitle

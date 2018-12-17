@@ -1,7 +1,7 @@
 ---
 title: "WorksheetProtection resource type"
 description: "Represents the protection of a sheet object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # WorksheetProtection resource type

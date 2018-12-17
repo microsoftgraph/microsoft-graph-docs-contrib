@@ -1,7 +1,7 @@
 ---
 title: "Update chartfont"
 description: "Update the properties of chartfont object.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # Update chartfont

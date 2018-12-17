@@ -1,7 +1,7 @@
 ---
 title: "ChartDataLabels resource type"
 description: "Represents a collection of all the data labels on a chart point.
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # ChartDataLabels resource type

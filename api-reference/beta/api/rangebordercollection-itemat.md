@@ -1,7 +1,7 @@
 ---
 title: "RangeBorderCollection: ItemAt"
 description: "Gets a border object using its index
-"author: "lumine2008"
+author: "lumine2008"
 ---
 
 # RangeBorderCollection: ItemAt
