@@ -36,3 +36,8 @@ The following example shows how you can determine whether an application is inst
 
 Microsof Graph controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](https://developer.microsoft.com/en-us/graph/docs/authorization/permission_scopes).
 
+## Next Steps
+
+- Learn [how to use Azure AD](https://docs.microsoft.com/en-us/intune/intune-graph-apis) to access the Microsoft Graph API for Intune.  
+- Explore the [PowerShell Intune samples](https://github.com/microsoftgraph/powershell-intune-samples), which show how to use the Microsoft Graph API for Intune in context of working examples.
+
