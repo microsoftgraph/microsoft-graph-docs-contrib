@@ -1,7 +1,7 @@
 ---
 title: "Update androidWiFiConfiguration"
 description: "Update the properties of a androidWiFiConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidWiFiConfiguration

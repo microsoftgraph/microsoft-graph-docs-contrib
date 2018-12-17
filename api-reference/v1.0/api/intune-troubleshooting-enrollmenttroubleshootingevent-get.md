@@ -1,7 +1,7 @@
 ---
 title: "Get enrollmentTroubleshootingEvent"
 description: "Read properties and relationships of the enrollmentTroubleshootingEvent object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get enrollmentTroubleshootingEvent

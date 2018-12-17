@@ -1,7 +1,7 @@
 ---
 title: "Delete androidForWorkMobileAppConfiguration"
 description: "Deletes a androidForWorkMobileAppConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidForWorkMobileAppConfiguration

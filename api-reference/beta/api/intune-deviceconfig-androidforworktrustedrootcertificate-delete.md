@@ -1,7 +1,7 @@
 ---
 title: "Delete androidForWorkTrustedRootCertificate"
 description: "Deletes a androidForWorkTrustedRootCertificate."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidForWorkTrustedRootCertificate

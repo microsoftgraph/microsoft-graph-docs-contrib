@@ -1,7 +1,7 @@
 ---
 title: "List educationSynchronizationProfiles"
 description: "Retrieve the collection of school data synchronization profiles in the tenant."
-author:"mmast-msft"
+author: "mmast-msft"
 ---
 
 # List educationSynchronizationProfiles

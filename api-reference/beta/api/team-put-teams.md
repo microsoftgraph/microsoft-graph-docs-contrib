@@ -1,7 +1,7 @@
 ---
 title: "Create team from group"
 description: "Create a new team from a group."
-author:"nkramer"
+author: "nkramer"
 ---
 
 # Create team from group

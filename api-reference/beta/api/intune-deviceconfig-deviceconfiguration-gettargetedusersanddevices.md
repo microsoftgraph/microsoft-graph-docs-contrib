@@ -1,7 +1,7 @@
 ---
 title: "getTargetedUsersAndDevices action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # getTargetedUsersAndDevices action

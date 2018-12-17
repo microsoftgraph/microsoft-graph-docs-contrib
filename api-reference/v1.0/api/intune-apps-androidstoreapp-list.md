@@ -1,7 +1,7 @@
 ---
 title: "List androidStoreApps"
 description: "List properties and relationships of the androidStoreApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List androidStoreApps

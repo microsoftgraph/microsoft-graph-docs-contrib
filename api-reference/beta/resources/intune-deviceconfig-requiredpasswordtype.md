@@ -1,7 +1,7 @@
 ---
 title: "requiredPasswordType enum type"
 description: "Possible values of required passwords."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # requiredPasswordType enum type

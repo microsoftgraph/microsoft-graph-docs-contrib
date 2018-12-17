@@ -1,7 +1,7 @@
 ---
 title: "appleVpnConfiguration resource type"
 description: "Apple VPN configuration profile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # appleVpnConfiguration resource type

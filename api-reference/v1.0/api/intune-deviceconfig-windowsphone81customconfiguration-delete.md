@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsPhone81CustomConfiguration"
 description: "Deletes a windowsPhone81CustomConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsPhone81CustomConfiguration

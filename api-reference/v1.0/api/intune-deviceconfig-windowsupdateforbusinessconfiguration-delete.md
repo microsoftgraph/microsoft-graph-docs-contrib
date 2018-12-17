@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsUpdateForBusinessConfiguration"
 description: "Deletes a windowsUpdateForBusinessConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsUpdateForBusinessConfiguration

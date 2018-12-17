@@ -1,7 +1,7 @@
 ---
 title: "List targetedManagedAppProtections"
 description: "List properties and relationships of the targetedManagedAppProtection objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List targetedManagedAppProtections

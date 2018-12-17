@@ -1,7 +1,7 @@
 ---
 title: "Delete macOSCustomConfiguration"
 description: "Deletes a macOSCustomConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete macOSCustomConfiguration

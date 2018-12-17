@@ -1,7 +1,7 @@
 ---
 title: "List iosStoreApps"
 description: "List properties and relationships of the iosStoreApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List iosStoreApps

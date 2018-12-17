@@ -1,7 +1,7 @@
 ---
 title: "mobileAppIdentifier resource type"
 description: "The identifier for a mobile app."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # mobileAppIdentifier resource type

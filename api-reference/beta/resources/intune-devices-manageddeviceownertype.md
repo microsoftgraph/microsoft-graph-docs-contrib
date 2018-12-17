@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceOwnerType enum type"
 description: "Owner type of device."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managedDeviceOwnerType enum type

@@ -1,7 +1,7 @@
 ---
 title: "List iosUpdateConfigurations"
 description: "List properties and relationships of the iosUpdateConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List iosUpdateConfigurations

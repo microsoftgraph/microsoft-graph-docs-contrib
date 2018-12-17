@@ -1,7 +1,7 @@
 ---
 title: "officeConfigurationGroupAssignmentTarget resource type"
 description: "Office client configuration AAD group assignment target."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # officeConfigurationGroupAssignmentTarget resource type

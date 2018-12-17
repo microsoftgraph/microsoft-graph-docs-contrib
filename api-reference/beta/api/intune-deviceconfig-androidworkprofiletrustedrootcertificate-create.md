@@ -1,7 +1,7 @@
 ---
 title: "Create androidWorkProfileTrustedRootCertificate"
 description: "Create a new androidWorkProfileTrustedRootCertificate object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidWorkProfileTrustedRootCertificate

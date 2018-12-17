@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsInformationProtectionPolicy"
 description: "Deletes a windowsInformationProtectionPolicy."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsInformationProtectionPolicy

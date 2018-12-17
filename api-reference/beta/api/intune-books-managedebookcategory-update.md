@@ -1,7 +1,7 @@
 ---
 title: "Update managedEBookCategory"
 description: "Update the properties of a managedEBookCategory object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update managedEBookCategory

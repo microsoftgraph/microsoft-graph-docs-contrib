@@ -1,7 +1,7 @@
 ---
 title: "Update circularGeofenceManagementCondition"
 description: "Update the properties of a circularGeofenceManagementCondition object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update circularGeofenceManagementCondition

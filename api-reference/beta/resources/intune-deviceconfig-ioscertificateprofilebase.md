@@ -1,7 +1,7 @@
 ---
 title: "iosCertificateProfileBase resource type"
 description: "iOS certificate profile base."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # iosCertificateProfileBase resource type

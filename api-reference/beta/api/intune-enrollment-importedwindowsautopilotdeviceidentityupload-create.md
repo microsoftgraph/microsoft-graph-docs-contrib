@@ -1,7 +1,7 @@
 ---
 title: "Create importedWindowsAutopilotDeviceIdentityUpload"
 description: "Create a new importedWindowsAutopilotDeviceIdentityUpload object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create importedWindowsAutopilotDeviceIdentityUpload

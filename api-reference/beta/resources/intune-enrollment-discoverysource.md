@@ -1,7 +1,7 @@
 ---
 title: "discoverySource enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # discoverySource enum type

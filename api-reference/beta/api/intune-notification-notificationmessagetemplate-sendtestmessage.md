@@ -1,7 +1,7 @@
 ---
 title: "sendTestMessage action"
 description: "Sends test message using the specified notificationMessageTemplate in the default locale"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # sendTestMessage action

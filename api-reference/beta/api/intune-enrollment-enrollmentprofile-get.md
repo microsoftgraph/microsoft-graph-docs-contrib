@@ -1,7 +1,7 @@
 ---
 title: "Get enrollmentProfile"
 description: "Read properties and relationships of the enrollmentProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get enrollmentProfile

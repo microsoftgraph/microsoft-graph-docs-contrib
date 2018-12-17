@@ -1,7 +1,7 @@
 ---
 title: "Create deviceConfigurationConflictSummary"
 description: "Create a new deviceConfigurationConflictSummary object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create deviceConfigurationConflictSummary

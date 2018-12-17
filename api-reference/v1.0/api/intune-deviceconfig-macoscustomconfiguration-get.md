@@ -1,7 +1,7 @@
 ---
 title: "Get macOSCustomConfiguration"
 description: "Read properties and relationships of the macOSCustomConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get macOSCustomConfiguration

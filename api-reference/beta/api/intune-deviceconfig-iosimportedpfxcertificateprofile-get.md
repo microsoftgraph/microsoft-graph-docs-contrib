@@ -1,7 +1,7 @@
 ---
 title: "Get iosImportedPFXCertificateProfile"
 description: "Read properties and relationships of the iosImportedPFXCertificateProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get iosImportedPFXCertificateProfile

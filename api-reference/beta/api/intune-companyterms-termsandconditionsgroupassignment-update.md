@@ -1,7 +1,7 @@
 ---
 title: "Update termsAndConditionsGroupAssignment"
 description: "Update the properties of a termsAndConditionsGroupAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update termsAndConditionsGroupAssignment

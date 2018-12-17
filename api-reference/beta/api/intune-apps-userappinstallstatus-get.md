@@ -1,7 +1,7 @@
 ---
 title: "Get userAppInstallStatus"
 description: "Read properties and relationships of the userAppInstallStatus object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get userAppInstallStatus

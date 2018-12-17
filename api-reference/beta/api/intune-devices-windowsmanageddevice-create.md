@@ -1,7 +1,7 @@
 ---
 title: "Create windowsManagedDevice"
 description: "Create a new windowsManagedDevice object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windowsManagedDevice

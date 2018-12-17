@@ -1,7 +1,7 @@
 ---
 title: "Get androidForWorkEnterpriseWiFiConfiguration"
 description: "Read properties and relationships of the androidForWorkEnterpriseWiFiConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get androidForWorkEnterpriseWiFiConfiguration

@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskAzureADUser resource type"
 description: "The class used to identify an AzureAD user account for the kiosk configuration"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsKioskAzureADUser resource type

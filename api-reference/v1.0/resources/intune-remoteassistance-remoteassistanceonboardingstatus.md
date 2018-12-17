@@ -1,7 +1,7 @@
 ---
 title: "remoteAssistanceOnboardingStatus enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # remoteAssistanceOnboardingStatus enum type

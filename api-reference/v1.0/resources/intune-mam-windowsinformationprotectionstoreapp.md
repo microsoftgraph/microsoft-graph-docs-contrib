@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionStoreApp resource type"
 description: "Store App for Windows information protection"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsInformationProtectionStoreApp resource type

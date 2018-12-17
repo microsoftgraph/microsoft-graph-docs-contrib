@@ -1,7 +1,7 @@
 ---
 title: "List tasks"
 description: "Get all the Outlook tasks in the specified folder."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # List tasks

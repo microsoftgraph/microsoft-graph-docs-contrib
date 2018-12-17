@@ -1,7 +1,7 @@
 ---
 title: "Delete mobileAppCategory"
 description: "Deletes a mobileAppCategory."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete mobileAppCategory

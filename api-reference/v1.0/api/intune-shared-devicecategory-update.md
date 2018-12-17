@@ -1,7 +1,7 @@
 ---
 title: "Update deviceCategory"
 description: "Update the properties of a deviceCategory object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update deviceCategory

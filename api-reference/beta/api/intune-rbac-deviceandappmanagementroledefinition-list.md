@@ -1,7 +1,7 @@
 ---
 title: "List deviceAndAppManagementRoleDefinitions"
 description: "List properties and relationships of the deviceAndAppManagementRoleDefinition objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List deviceAndAppManagementRoleDefinitions

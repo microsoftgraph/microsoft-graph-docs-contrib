@@ -1,7 +1,7 @@
 ---
 title: "Delete mobileAppProvisioningConfigGroupAssignment"
 description: "Deletes a mobileAppProvisioningConfigGroupAssignment."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete mobileAppProvisioningConfigGroupAssignment

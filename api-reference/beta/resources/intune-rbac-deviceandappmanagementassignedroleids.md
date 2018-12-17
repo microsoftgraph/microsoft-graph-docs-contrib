@@ -1,7 +1,7 @@
 ---
 title: "deviceAndAppManagementAssignedRoleIds resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceAndAppManagementAssignedRoleIds resource type

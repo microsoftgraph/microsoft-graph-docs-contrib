@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsMobileMSI"
 description: "Deletes a windowsMobileMSI."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsMobileMSI

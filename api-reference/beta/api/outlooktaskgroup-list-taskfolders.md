@@ -1,7 +1,7 @@
 ---
 title: "List taskFolders"
 description: "Get Outlook task folders in a specific outlookTaskGroup."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # List taskFolders

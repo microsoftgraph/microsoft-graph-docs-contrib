@@ -1,7 +1,7 @@
 ---
 title: "microsoftStoreForBusinessLicenseType enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # microsoftStoreForBusinessLicenseType enum type

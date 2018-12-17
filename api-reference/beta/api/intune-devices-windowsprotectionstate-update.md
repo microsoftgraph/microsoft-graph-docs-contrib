@@ -1,7 +1,7 @@
 ---
 title: "Update windowsProtectionState"
 description: "Update the properties of a windowsProtectionState object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsProtectionState

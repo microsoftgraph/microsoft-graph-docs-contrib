@@ -1,7 +1,7 @@
 ---
 title: "Update deviceComplianceActionItem"
 description: "Update the properties of a deviceComplianceActionItem object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update deviceComplianceActionItem

@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementScriptDeviceState"
 description: "Update the properties of a deviceManagementScriptDeviceState object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update deviceManagementScriptDeviceState

@@ -1,7 +1,7 @@
 ---
 title: "List educationSchools"
 description: "Retrieve a list of all school objects."
-author:"mmast-msft"
+author: "mmast-msft"
 ---
 
 # List educationSchools

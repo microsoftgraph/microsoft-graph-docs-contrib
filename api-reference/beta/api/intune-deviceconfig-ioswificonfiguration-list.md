@@ -1,7 +1,7 @@
 ---
 title: "List iosWiFiConfigurations"
 description: "List properties and relationships of the iosWiFiConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List iosWiFiConfigurations

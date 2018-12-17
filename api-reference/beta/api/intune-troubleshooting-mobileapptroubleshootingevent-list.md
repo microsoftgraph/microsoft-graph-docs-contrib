@@ -1,7 +1,7 @@
 ---
 title: "List mobileAppTroubleshootingEvents"
 description: "List properties and relationships of the mobileAppTroubleshootingEvent objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List mobileAppTroubleshootingEvents

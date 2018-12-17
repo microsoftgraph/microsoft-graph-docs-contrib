@@ -1,7 +1,7 @@
 ---
 title: "List managedAndroidLobApps"
 description: "List properties and relationships of the managedAndroidLobApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List managedAndroidLobApps

@@ -1,7 +1,7 @@
 ---
 title: "Get managedAppPolicy"
 description: "Read properties and relationships of the managedAppPolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managedAppPolicy

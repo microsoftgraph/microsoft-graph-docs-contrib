@@ -1,7 +1,7 @@
 ---
 title: "officeConfigurationAssignmentTarget resource type"
 description: "Office Client Configuration Assignment Target."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # officeConfigurationAssignmentTarget resource type

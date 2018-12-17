@@ -1,7 +1,7 @@
 ---
 title: "getEffectivePermissions function"
 description: "Retrieves the effective permissions of the currently authenticated user"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # getEffectivePermissions function

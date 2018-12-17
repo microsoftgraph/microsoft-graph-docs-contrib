@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfilePkcsCertificateProfile resource type"
 description: "Android Work Profile PKCS certificate profile"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # androidWorkProfilePkcsCertificateProfile resource type

@@ -1,7 +1,7 @@
 ---
 title: "Update notificationMessageTemplate"
 description: "Update the properties of a notificationMessageTemplate object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update notificationMessageTemplate

@@ -1,7 +1,7 @@
 ---
 title: "List androidEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the androidEnterpriseWiFiConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List androidEnterpriseWiFiConfigurations

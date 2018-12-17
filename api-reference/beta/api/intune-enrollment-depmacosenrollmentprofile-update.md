@@ -1,7 +1,7 @@
 ---
 title: "Update depMacOSEnrollmentProfile"
 description: "Update the properties of a depMacOSEnrollmentProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update depMacOSEnrollmentProfile

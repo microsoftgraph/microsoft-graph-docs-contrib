@@ -1,7 +1,7 @@
 ---
 title: "Delete channel"
 description: "Delete the channel."
-author:"nkramer"
+author: "nkramer"
 ---
 
 # Delete channel

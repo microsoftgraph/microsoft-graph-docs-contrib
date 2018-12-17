@@ -1,7 +1,7 @@
 ---
 title: "Update iosEasEmailProfileConfiguration"
 description: "Update the properties of a iosEasEmailProfileConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update iosEasEmailProfileConfiguration

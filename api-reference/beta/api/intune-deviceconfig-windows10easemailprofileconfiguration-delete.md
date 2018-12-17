@@ -1,7 +1,7 @@
 ---
 title: "Delete windows10EasEmailProfileConfiguration"
 description: "Deletes a windows10EasEmailProfileConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windows10EasEmailProfileConfiguration

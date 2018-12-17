@@ -1,7 +1,7 @@
 ---
 title: "Update iosEduDeviceConfiguration"
 description: "Update the properties of a iosEduDeviceConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update iosEduDeviceConfiguration

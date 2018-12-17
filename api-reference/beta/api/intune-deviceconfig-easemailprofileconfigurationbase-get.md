@@ -1,7 +1,7 @@
 ---
 title: "Get easEmailProfileConfigurationBase"
 description: "Read properties and relationships of the easEmailProfileConfigurationBase object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get easEmailProfileConfigurationBase

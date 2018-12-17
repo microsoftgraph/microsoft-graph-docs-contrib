@@ -1,7 +1,7 @@
 ---
 title: "windowsPhone81ImportedPFXCertificateProfile resource type"
 description: "Windows 8.1 Phone and Mobile PFX Import certificate profile"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsPhone81ImportedPFXCertificateProfile resource type

@@ -1,7 +1,7 @@
 ---
 title: "List deviceComplianceSettingStates"
 description: "List properties and relationships of the deviceComplianceSettingState objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List deviceComplianceSettingStates

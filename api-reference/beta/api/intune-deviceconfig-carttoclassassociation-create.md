@@ -1,7 +1,7 @@
 ---
 title: "Create cartToClassAssociation"
 description: "Create a new cartToClassAssociation object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create cartToClassAssociation

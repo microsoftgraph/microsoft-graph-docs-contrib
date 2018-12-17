@@ -1,7 +1,7 @@
 ---
 title: "Create depOnboardingSetting"
 description: "Create a new depOnboardingSetting object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create depOnboardingSetting

@@ -1,7 +1,7 @@
 ---
 title: "defenderPromptForSampleSubmission enum type"
 description: "Possible values for prompting user for samples submission."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # defenderPromptForSampleSubmission enum type

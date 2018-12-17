@@ -1,7 +1,7 @@
 ---
 title: "Delete androidVpnConfiguration"
 description: "Deletes a androidVpnConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidVpnConfiguration

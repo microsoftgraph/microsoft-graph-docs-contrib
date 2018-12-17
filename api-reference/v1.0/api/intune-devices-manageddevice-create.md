@@ -1,7 +1,7 @@
 ---
 title: "Create managedDevice"
 description: "Create a new managedDevice object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create managedDevice

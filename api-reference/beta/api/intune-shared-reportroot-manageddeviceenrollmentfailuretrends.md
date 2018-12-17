@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceEnrollmentFailureTrends function"
 description: "Metadata for the enrollment failure trends report"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managedDeviceEnrollmentFailureTrends function

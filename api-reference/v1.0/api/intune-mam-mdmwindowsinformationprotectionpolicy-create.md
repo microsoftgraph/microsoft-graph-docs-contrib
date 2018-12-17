@@ -1,7 +1,7 @@
 ---
 title: "Create mdmWindowsInformationProtectionPolicy"
 description: "Create a new mdmWindowsInformationProtectionPolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create mdmWindowsInformationProtectionPolicy

@@ -1,7 +1,7 @@
 ---
 title: "rebootNow action"
 description: "Reboot device"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # rebootNow action

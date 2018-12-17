@@ -1,7 +1,7 @@
 ---
 title: "Update managedDevice"
 description: "Update the properties of a managedDevice object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update managedDevice

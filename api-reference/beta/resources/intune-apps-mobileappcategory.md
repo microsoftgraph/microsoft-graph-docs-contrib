@@ -1,7 +1,7 @@
 ---
 title: "mobileAppCategory resource type"
 description: "Contains properties for a single Intune app category."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # mobileAppCategory resource type

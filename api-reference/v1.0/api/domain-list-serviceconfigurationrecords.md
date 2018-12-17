@@ -1,7 +1,7 @@
 ---
 title: "List serviceConfigurationRecords"
 description: "Retrieves a list of domainDnsRecord objects needed to enable services for the domain."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # List serviceConfigurationRecords

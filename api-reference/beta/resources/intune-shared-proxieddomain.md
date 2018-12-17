@@ -1,7 +1,7 @@
 ---
 title: "proxiedDomain resource type"
 description: "Proxied Domain"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # proxiedDomain resource type

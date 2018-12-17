@@ -1,7 +1,7 @@
 ---
 title: "Update iosCompliancePolicy"
 description: "Update the properties of a iosCompliancePolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update iosCompliancePolicy

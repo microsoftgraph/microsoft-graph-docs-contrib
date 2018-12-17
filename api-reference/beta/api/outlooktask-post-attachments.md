@@ -1,7 +1,7 @@
 ---
 title: "Create attachment"
 description: "Use this API to add an attachment to an outlookTask."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # Create attachment

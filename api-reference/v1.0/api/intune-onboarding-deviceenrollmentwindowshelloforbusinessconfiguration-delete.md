@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete deviceEnrollmentWindowsHelloForBusinessConfiguration

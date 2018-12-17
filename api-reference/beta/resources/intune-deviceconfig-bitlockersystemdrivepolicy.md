@@ -1,7 +1,7 @@
 ---
 title: "bitLockerSystemDrivePolicy resource type"
 description: "BitLocker Encryption Base Policies."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # bitLockerSystemDrivePolicy resource type

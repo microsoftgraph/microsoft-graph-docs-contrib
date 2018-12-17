@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkGmailEasConfiguration"
 description: "Update the properties of a androidForWorkGmailEasConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidForWorkGmailEasConfiguration

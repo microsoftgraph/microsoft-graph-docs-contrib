@@ -1,7 +1,7 @@
 ---
 title: "Archive team"
 description: "Archive the specified team. "
-author:"nkramer"
+author: "nkramer"
 ---
 
 # Archive team

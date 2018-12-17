@@ -1,7 +1,7 @@
 ---
 title: "windowsStoreApp resource type"
 description: "Contains properties and inherited properties for Windows Store apps."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsStoreApp resource type

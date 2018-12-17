@@ -1,7 +1,7 @@
 ---
 title: "eapFastConfiguration enum type"
 description: "Available settings for EAP-FAST Configuration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # eapFastConfiguration enum type

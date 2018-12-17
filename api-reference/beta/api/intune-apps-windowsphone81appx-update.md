@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81AppX"
 description: "Update the properties of a windowsPhone81AppX object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsPhone81AppX

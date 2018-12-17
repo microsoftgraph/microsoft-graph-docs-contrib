@@ -1,7 +1,7 @@
 ---
 title: "Delete domain"
 description: "Deletes a domain from a tenant."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # Delete domain

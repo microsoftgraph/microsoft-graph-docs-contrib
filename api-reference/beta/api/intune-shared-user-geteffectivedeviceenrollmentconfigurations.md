@@ -1,7 +1,7 @@
 ---
 title: "getEffectiveDeviceEnrollmentConfigurations function"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # getEffectiveDeviceEnrollmentConfigurations function

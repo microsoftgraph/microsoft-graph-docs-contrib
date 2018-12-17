@@ -1,7 +1,7 @@
 ---
 title: "managementConditionExpressionString resource type"
 description: "A management condition expression string is a string representation of a management condition expression."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managementConditionExpressionString resource type

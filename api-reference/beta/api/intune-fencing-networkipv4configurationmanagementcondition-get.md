@@ -1,7 +1,7 @@
 ---
 title: "Get networkIPv4ConfigurationManagementCondition"
 description: "Read properties and relationships of the networkIPv4ConfigurationManagementCondition object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get networkIPv4ConfigurationManagementCondition

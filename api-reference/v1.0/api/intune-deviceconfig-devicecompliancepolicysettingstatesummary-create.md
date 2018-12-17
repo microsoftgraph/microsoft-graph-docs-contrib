@@ -1,7 +1,7 @@
 ---
 title: "Create deviceCompliancePolicySettingStateSummary"
 description: "Create a new deviceCompliancePolicySettingStateSummary object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create deviceCompliancePolicySettingStateSummary

@@ -1,7 +1,7 @@
 ---
 title: "windows81CertificateProfileBase resource type"
 description: "Device Configuration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windows81CertificateProfileBase resource type

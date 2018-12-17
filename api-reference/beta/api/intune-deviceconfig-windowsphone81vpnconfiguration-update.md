@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81VpnConfiguration"
 description: "Update the properties of a windowsPhone81VpnConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsPhone81VpnConfiguration

@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsUniversalAppXContainedApp"
 description: "Deletes a windowsUniversalAppXContainedApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsUniversalAppXContainedApp

@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsManagedDevice"
 description: "Deletes a windowsManagedDevice."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsManagedDevice

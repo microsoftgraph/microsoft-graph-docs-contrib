@@ -1,7 +1,7 @@
 ---
 title: "Delete managedEBookAssignment"
 description: "Deletes a managedEBookAssignment."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete managedEBookAssignment

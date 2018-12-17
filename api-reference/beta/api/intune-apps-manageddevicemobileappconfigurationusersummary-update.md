@@ -1,7 +1,7 @@
 ---
 title: "Update managedDeviceMobileAppConfigurationUserSummary"
 description: "Update the properties of a managedDeviceMobileAppConfigurationUserSummary object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update managedDeviceMobileAppConfigurationUserSummary

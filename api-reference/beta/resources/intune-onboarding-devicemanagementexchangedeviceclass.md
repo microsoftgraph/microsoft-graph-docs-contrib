@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementExchangeDeviceClass resource type"
 description: "Device Class in Exchange."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceManagementExchangeDeviceClass resource type

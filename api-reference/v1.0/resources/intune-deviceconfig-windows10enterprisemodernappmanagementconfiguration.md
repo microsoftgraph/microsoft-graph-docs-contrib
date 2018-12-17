@@ -1,7 +1,7 @@
 ---
 title: "windows10EnterpriseModernAppManagementConfiguration resource type"
 description: "Windows10 Enterprise Modern App Management Configuration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windows10EnterpriseModernAppManagementConfiguration resource type

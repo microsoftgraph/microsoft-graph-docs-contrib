@@ -1,7 +1,7 @@
 ---
 title: "remoteAssistancePartner resource type"
 description: "remoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # remoteAssistancePartner resource type

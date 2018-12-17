@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskLocalUser resource type"
 description: "The class used to identify a local account for the kiosk configuration"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsKioskLocalUser resource type

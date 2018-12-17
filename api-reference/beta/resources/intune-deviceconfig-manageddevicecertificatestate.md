@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceCertificateState resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managedDeviceCertificateState resource type

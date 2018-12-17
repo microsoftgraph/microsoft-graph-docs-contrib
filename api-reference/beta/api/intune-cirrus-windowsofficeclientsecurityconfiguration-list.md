@@ -1,7 +1,7 @@
 ---
 title: "List windowsOfficeClientSecurityConfigurations"
 description: "List properties and relationships of the windowsOfficeClientSecurityConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windowsOfficeClientSecurityConfigurations

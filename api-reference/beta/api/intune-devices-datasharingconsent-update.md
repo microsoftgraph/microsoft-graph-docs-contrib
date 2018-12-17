@@ -1,7 +1,7 @@
 ---
 title: "Update dataSharingConsent"
 description: "Update the properties of a dataSharingConsent object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update dataSharingConsent

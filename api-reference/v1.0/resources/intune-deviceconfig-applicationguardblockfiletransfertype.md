@@ -1,7 +1,7 @@
 ---
 title: "applicationGuardBlockFileTransferType enum type"
 description: "Possible values for applicationGuardBlockFileTransfer"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # applicationGuardBlockFileTransferType enum type

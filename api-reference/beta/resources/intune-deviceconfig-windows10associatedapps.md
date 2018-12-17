@@ -1,7 +1,7 @@
 ---
 title: "windows10AssociatedApps resource type"
 description: "Windows 10 Associated Application definition."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windows10AssociatedApps resource type

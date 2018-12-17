@@ -1,7 +1,7 @@
 ---
 title: "Delete iosVppEBookAssignment"
 description: "Deletes a iosVppEBookAssignment."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete iosVppEBookAssignment

@@ -1,7 +1,7 @@
 ---
 title: "unassignUserFromDevice action"
 description: "Unassigns the user from an Autopilot device."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # unassignUserFromDevice action

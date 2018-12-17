@@ -1,7 +1,7 @@
 ---
 title: "setPriority action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # setPriority action

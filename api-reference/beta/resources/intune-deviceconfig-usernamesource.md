@@ -1,7 +1,7 @@
 ---
 title: "usernameSource enum type"
 description: "Username source."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # usernameSource enum type

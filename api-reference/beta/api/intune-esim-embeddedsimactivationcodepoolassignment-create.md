@@ -1,7 +1,7 @@
 ---
 title: "Create embeddedSIMActivationCodePoolAssignment"
 description: "Create a new embeddedSIMActivationCodePoolAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create embeddedSIMActivationCodePoolAssignment

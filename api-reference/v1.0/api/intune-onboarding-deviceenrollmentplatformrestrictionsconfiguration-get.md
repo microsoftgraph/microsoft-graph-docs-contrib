@@ -1,7 +1,7 @@
 ---
 title: "Get deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get deviceEnrollmentPlatformRestrictionsConfiguration

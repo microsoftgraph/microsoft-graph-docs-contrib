@@ -1,7 +1,7 @@
 ---
 title: "Delete iosVppApp"
 description: "Deletes a iosVppApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete iosVppApp

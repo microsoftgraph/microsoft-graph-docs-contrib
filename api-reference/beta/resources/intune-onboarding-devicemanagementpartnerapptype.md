@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementPartnerAppType enum type"
 description: "Partner App Type."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceManagementPartnerAppType enum type

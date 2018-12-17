@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerSystemUpdateInstallType enum type"
 description: "System Update Types for Android Device Owner."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # androidDeviceOwnerSystemUpdateInstallType enum type

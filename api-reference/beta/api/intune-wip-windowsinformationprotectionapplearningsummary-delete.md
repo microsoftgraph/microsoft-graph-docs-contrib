@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsInformationProtectionAppLearningSummary"
 description: "Deletes a windowsInformationProtectionAppLearningSummary."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsInformationProtectionAppLearningSummary

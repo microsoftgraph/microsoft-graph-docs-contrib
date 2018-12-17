@@ -1,7 +1,7 @@
 ---
 title: "List mobileAppInstallStatuses"
 description: "List properties and relationships of the mobileAppInstallStatus objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List mobileAppInstallStatuses

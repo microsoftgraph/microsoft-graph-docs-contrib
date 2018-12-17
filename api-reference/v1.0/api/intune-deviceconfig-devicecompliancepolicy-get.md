@@ -1,7 +1,7 @@
 ---
 title: "Get deviceCompliancePolicy"
 description: "Read properties and relationships of the deviceCompliancePolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get deviceCompliancePolicy

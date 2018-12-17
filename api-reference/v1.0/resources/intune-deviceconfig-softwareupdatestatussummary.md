@@ -1,7 +1,7 @@
 ---
 title: "softwareUpdateStatusSummary resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # softwareUpdateStatusSummary resource type

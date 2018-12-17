@@ -1,7 +1,7 @@
 ---
 title: "Delete managementConditionStatement"
 description: "Deletes a managementConditionStatement."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete managementConditionStatement

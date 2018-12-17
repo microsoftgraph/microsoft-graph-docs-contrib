@@ -1,7 +1,7 @@
 ---
 title: "Get iosWiFiConfiguration"
 description: "Read properties and relationships of the iosWiFiConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get iosWiFiConfiguration

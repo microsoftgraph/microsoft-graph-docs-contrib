@@ -1,7 +1,7 @@
 ---
 title: "Create termsAndConditionsGroupAssignment"
 description: "Create a new termsAndConditionsGroupAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create termsAndConditionsGroupAssignment

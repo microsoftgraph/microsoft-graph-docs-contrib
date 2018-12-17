@@ -1,7 +1,7 @@
 ---
 title: "List androidDeviceOwnerWiFiConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerWiFiConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List androidDeviceOwnerWiFiConfigurations

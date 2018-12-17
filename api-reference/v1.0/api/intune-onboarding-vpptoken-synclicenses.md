@@ -1,7 +1,7 @@
 ---
 title: "syncLicenses action"
 description: "Syncs licenses associated with a specific appleVolumePurchaseProgramToken"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # syncLicenses action

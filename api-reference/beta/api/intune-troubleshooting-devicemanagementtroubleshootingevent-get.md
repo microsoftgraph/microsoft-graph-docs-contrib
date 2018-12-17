@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementTroubleshootingEvent"
 description: "Read properties and relationships of the deviceManagementTroubleshootingEvent object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get deviceManagementTroubleshootingEvent

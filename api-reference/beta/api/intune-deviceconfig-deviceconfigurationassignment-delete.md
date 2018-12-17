@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceConfigurationAssignment"
 description: "Deletes a deviceConfigurationAssignment."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete deviceConfigurationAssignment

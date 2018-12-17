@@ -1,7 +1,7 @@
 ---
 title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceOperatingSystemSummary resource type

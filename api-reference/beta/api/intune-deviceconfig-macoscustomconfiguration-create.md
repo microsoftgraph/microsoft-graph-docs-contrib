@@ -1,7 +1,7 @@
 ---
 title: "Create macOSCustomConfiguration"
 description: "Create a new macOSCustomConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create macOSCustomConfiguration

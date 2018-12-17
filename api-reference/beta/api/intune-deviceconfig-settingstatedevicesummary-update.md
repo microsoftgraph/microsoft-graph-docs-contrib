@@ -1,7 +1,7 @@
 ---
 title: "Update settingStateDeviceSummary"
 description: "Update the properties of a settingStateDeviceSummary object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update settingStateDeviceSummary

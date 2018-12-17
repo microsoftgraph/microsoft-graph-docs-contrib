@@ -1,7 +1,7 @@
 ---
 title: "Create androidManagedStoreAppConfiguration"
 description: "Create a new androidManagedStoreAppConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidManagedStoreAppConfiguration

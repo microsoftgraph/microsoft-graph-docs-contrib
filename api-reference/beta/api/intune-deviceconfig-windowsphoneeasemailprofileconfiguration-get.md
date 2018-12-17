@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhoneEASEmailProfileConfiguration"
 description: "Read properties and relationships of the windowsPhoneEASEmailProfileConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get windowsPhoneEASEmailProfileConfiguration

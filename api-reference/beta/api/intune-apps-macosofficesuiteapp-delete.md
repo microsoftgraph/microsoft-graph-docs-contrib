@@ -1,7 +1,7 @@
 ---
 title: "Delete macOSOfficeSuiteApp"
 description: "Deletes a macOSOfficeSuiteApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete macOSOfficeSuiteApp

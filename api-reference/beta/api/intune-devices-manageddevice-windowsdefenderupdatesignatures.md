@@ -1,7 +1,7 @@
 ---
 title: "windowsDefenderUpdateSignatures action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsDefenderUpdateSignatures action

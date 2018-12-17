@@ -1,7 +1,7 @@
 ---
 title: "managedAppDiagnosticStatus resource type"
 description: "Represents diagnostics status."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managedAppDiagnosticStatus resource type

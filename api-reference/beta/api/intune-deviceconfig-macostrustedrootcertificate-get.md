@@ -1,7 +1,7 @@
 ---
 title: "Get macOSTrustedRootCertificate"
 description: "Read properties and relationships of the macOSTrustedRootCertificate object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get macOSTrustedRootCertificate

@@ -1,7 +1,7 @@
 ---
 title: "Update iosVppAppAssignedDeviceLicense"
 description: "Update the properties of a iosVppAppAssignedDeviceLicense object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update iosVppAppAssignedDeviceLicense

@@ -1,7 +1,7 @@
 ---
 title: "commit action"
 description: "Commits a file of a given app."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # commit action

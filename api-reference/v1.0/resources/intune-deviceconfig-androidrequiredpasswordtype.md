@@ -1,7 +1,7 @@
 ---
 title: "androidRequiredPasswordType enum type"
 description: "Android required password type."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # androidRequiredPasswordType enum type

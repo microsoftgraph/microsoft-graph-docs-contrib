@@ -1,7 +1,7 @@
 ---
 title: "outlookUser resource type"
 description: "Represents the Outlook services available to a user."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # outlookUser resource type

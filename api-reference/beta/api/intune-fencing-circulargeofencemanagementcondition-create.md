@@ -1,7 +1,7 @@
 ---
 title: "Create circularGeofenceManagementCondition"
 description: "Create a new circularGeofenceManagementCondition object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create circularGeofenceManagementCondition

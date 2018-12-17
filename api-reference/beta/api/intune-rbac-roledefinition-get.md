@@ -1,7 +1,7 @@
 ---
 title: "Get roleDefinition"
 description: "Read properties and relationships of the roleDefinition object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get roleDefinition

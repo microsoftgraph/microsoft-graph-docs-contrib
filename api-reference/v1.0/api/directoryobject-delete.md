@@ -1,7 +1,7 @@
 ---
 title: "Delete directoryObject"
 description: "Deletes a directoryObject."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # Delete directoryObject

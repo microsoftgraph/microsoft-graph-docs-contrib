@@ -1,7 +1,7 @@
 ---
 title: "Update iosTrustedRootCertificate"
 description: "Update the properties of a iosTrustedRootCertificate object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update iosTrustedRootCertificate

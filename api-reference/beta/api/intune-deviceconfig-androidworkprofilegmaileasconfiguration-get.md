@@ -1,7 +1,7 @@
 ---
 title: "Get androidWorkProfileGmailEasConfiguration"
 description: "Read properties and relationships of the androidWorkProfileGmailEasConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get androidWorkProfileGmailEasConfiguration

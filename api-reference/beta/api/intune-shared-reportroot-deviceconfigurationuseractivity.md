@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationUserActivity function"
 description: "Metadata for the device configuration user activity report"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceConfigurationUserActivity function

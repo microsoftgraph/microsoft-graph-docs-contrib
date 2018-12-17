@@ -1,7 +1,7 @@
 ---
 title: "Clone a team"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
-author:"nkramer"
+author: "nkramer"
 ---
 
 # Clone a team

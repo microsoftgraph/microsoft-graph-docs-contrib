@@ -1,7 +1,7 @@
 ---
 title: "Delete cartToClassAssociation"
 description: "Deletes a cartToClassAssociation."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete cartToClassAssociation

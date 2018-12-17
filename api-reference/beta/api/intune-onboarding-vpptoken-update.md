@@ -1,7 +1,7 @@
 ---
 title: "Update vppToken"
 description: "Update the properties of a vppToken object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update vppToken

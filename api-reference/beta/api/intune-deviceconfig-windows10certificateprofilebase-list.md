@@ -1,7 +1,7 @@
 ---
 title: "List windows10CertificateProfileBases"
 description: "List properties and relationships of the windows10CertificateProfileBase objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windows10CertificateProfileBases

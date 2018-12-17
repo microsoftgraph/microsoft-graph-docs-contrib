@@ -1,7 +1,7 @@
 ---
 title: "windowsDeliveryOptimizationMode enum type"
 description: "Delivery optimization mode for peer distribution"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsDeliveryOptimizationMode enum type

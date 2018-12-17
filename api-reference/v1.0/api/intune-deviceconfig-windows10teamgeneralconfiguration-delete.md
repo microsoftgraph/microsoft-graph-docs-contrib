@@ -1,7 +1,7 @@
 ---
 title: "Delete windows10TeamGeneralConfiguration"
 description: "Deletes a windows10TeamGeneralConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windows10TeamGeneralConfiguration

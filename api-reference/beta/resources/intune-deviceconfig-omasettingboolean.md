@@ -1,7 +1,7 @@
 ---
 title: "omaSettingBoolean resource type"
 description: "OMA Settings Boolean definition."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # omaSettingBoolean resource type

@@ -1,7 +1,7 @@
 ---
 title: "complianceStatus enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # complianceStatus enum type

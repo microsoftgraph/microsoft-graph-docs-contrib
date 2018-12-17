@@ -1,7 +1,7 @@
 ---
 title: "List officeClientConfigurations"
 description: "Get all policies."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List officeClientConfigurations

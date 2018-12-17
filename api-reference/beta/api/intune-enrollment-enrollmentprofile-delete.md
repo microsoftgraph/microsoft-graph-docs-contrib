@@ -1,7 +1,7 @@
 ---
 title: "Delete enrollmentProfile"
 description: "Deletes a enrollmentProfile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete enrollmentProfile

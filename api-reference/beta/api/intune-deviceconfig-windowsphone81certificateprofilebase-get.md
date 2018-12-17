@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhone81CertificateProfileBase"
 description: "Read properties and relationships of the windowsPhone81CertificateProfileBase object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get windowsPhone81CertificateProfileBase

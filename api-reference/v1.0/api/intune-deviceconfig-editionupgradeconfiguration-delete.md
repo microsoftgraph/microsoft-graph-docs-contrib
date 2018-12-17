@@ -1,7 +1,7 @@
 ---
 title: "Delete editionUpgradeConfiguration"
 description: "Deletes a editionUpgradeConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete editionUpgradeConfiguration

@@ -1,7 +1,7 @@
 ---
 title: "List managementConditionStatements"
 description: "List properties and relationships of the managementConditionStatement objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List managementConditionStatements

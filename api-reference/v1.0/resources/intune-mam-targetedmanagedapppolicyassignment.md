@@ -1,7 +1,7 @@
 ---
 title: "targetedManagedAppPolicyAssignment resource type"
 description: "The type for deployment of groups or apps."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # targetedManagedAppPolicyAssignment resource type

@@ -1,7 +1,7 @@
 ---
 title: "domainNameSource enum type"
 description: "Domainname source."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # domainNameSource enum type

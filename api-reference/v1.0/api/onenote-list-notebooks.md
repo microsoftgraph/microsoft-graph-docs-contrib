@@ -1,7 +1,7 @@
 ---
 title: "List notebooks"
 description: "Retrieve a list of notebook objects."
-author:"Jewan-microsoft"
+author: "Jewan-microsoft"
 ---
 
 # List notebooks

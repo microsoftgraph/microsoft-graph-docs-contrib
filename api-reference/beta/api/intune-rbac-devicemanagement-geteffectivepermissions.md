@@ -1,7 +1,7 @@
 ---
 title: "getEffectivePermissions function"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # getEffectivePermissions function

@@ -1,7 +1,7 @@
 ---
 title: "Create iosCustomConfiguration"
 description: "Create a new iosCustomConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create iosCustomConfiguration

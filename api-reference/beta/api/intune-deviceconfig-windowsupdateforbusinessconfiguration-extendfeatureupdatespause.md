@@ -1,7 +1,7 @@
 ---
 title: "extendFeatureUpdatesPause action"
 description: "Extend Feature Updates Pause for a Windows Update for Business ring."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # extendFeatureUpdatesPause action

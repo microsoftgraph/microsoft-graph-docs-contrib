@@ -1,7 +1,7 @@
 ---
 title: "Delete androidImportedPFXCertificateProfile"
 description: "Deletes a androidImportedPFXCertificateProfile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidImportedPFXCertificateProfile

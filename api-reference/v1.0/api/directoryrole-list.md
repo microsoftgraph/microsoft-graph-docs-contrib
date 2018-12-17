@@ -1,7 +1,7 @@
 ---
 title: "List directoryRoles"
 description: "List the directory roles that are activated in the tenant."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # List directoryRoles

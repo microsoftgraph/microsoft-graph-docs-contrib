@@ -1,7 +1,7 @@
 ---
 title: "certificateStore enum type"
 description: "CertificateStore types"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # certificateStore enum type

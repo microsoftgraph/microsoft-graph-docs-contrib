@@ -1,7 +1,7 @@
 ---
 title: "List depIOSEnrollmentProfiles"
 description: "List properties and relationships of the depIOSEnrollmentProfile objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List depIOSEnrollmentProfiles

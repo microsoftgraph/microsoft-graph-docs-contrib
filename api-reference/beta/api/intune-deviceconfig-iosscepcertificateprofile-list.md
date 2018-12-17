@@ -1,7 +1,7 @@
 ---
 title: "List iosScepCertificateProfiles"
 description: "List properties and relationships of the iosScepCertificateProfile objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List iosScepCertificateProfiles

@@ -1,7 +1,7 @@
 ---
 title: "keySize enum type"
 description: "Key Size Options."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # keySize enum type

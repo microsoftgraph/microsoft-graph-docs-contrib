@@ -1,7 +1,7 @@
 ---
 title: "List windowsWifiConfigurations"
 description: "List properties and relationships of the windowsWifiConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windowsWifiConfigurations

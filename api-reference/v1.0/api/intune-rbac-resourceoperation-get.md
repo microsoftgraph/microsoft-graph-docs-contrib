@@ -1,7 +1,7 @@
 ---
 title: "Get resourceOperation"
 description: "Read properties and relationships of the resourceOperation object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get resourceOperation

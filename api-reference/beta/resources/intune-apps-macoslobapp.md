@@ -1,7 +1,7 @@
 ---
 title: "macOSLobApp resource type"
 description: "Contains properties and inherited properties for the MacOS LOB App."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # macOSLobApp resource type

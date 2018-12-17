@@ -1,7 +1,7 @@
 ---
 title: "Delete azureADWindowsAutopilotDeploymentProfile"
 description: "Deletes a azureADWindowsAutopilotDeploymentProfile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete azureADWindowsAutopilotDeploymentProfile

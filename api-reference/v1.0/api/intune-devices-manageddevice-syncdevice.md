@@ -1,7 +1,7 @@
 ---
 title: "syncDevice action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # syncDevice action

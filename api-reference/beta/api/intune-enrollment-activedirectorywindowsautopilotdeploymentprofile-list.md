@@ -1,7 +1,7 @@
 ---
 title: "List activeDirectoryWindowsAutopilotDeploymentProfiles"
 description: "List properties and relationships of the activeDirectoryWindowsAutopilotDeploymentProfile objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List activeDirectoryWindowsAutopilotDeploymentProfiles

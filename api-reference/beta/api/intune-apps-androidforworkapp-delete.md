@@ -1,7 +1,7 @@
 ---
 title: "Delete androidForWorkApp"
 description: "Deletes a androidForWorkApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidForWorkApp

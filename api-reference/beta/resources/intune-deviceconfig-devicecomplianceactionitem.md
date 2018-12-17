@@ -1,7 +1,7 @@
 ---
 title: "deviceComplianceActionItem resource type"
 description: "Scheduled Action Configuration"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceComplianceActionItem resource type

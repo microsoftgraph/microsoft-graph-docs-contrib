@@ -1,7 +1,7 @@
 ---
 title: "Update androidEasEmailProfileConfiguration"
 description: "Update the properties of a androidEasEmailProfileConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidEasEmailProfileConfiguration

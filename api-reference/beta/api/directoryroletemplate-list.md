@@ -1,7 +1,7 @@
 ---
 title: "List directoryRoleTemplates"
 description: "Retrieve a list of directoryroletemplate objects."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # List directoryRoleTemplates

@@ -1,7 +1,7 @@
 ---
 title: "List windowsPhoneEASEmailProfileConfigurations"
 description: "List properties and relationships of the windowsPhoneEASEmailProfileConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windowsPhoneEASEmailProfileConfigurations

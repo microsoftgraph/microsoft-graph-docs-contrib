@@ -1,7 +1,7 @@
 ---
 title: "List windowsAutopilotDeviceIdentities"
 description: "List properties and relationships of the windowsAutopilotDeviceIdentity objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windowsAutopilotDeviceIdentities

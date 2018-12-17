@@ -1,7 +1,7 @@
 ---
 title: "Delete windows10PkcsCertificateProfile"
 description: "Deletes a windows10PkcsCertificateProfile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windows10PkcsCertificateProfile

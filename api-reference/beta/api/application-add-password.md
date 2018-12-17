@@ -1,7 +1,7 @@
 ---
 title: "Add application password"
 description: "Adds a strong password to an application."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # Add application password

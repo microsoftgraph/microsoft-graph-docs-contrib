@@ -1,7 +1,7 @@
 ---
 title: "Create importedDeviceIdentity"
 description: "Create a new importedDeviceIdentity object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create importedDeviceIdentity

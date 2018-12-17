@@ -1,7 +1,7 @@
 ---
 title: "Get termsAndConditionsAssignment"
 description: "Read properties and relationships of the termsAndConditionsAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get termsAndConditionsAssignment

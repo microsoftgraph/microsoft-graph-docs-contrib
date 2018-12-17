@@ -1,7 +1,7 @@
 ---
 title: "Delete officeClientConfigurationAssignment"
 description: "Deletes a officeClientConfigurationAssignment."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete officeClientConfigurationAssignment

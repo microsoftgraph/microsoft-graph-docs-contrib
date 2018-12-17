@@ -1,7 +1,7 @@
 ---
 title: "ratingNewZealandTelevisionType enum type"
 description: "TV content rating labels in New Zealand"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # ratingNewZealandTelevisionType enum type

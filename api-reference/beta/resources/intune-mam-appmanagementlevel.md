@@ -1,7 +1,7 @@
 ---
 title: "appManagementLevel enum type"
 description: "Management levels for apps"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # appManagementLevel enum type

@@ -1,7 +1,7 @@
 ---
 title: "updatePriorities action"
 description: "Update policy priorities."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # updatePriorities action

@@ -1,7 +1,7 @@
 ---
 title: "ownerType enum type"
 description: "Owner type of device."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # ownerType enum type

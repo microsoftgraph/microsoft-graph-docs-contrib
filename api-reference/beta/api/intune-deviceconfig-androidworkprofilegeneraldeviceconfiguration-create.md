@@ -1,7 +1,7 @@
 ---
 title: "Create androidWorkProfileGeneralDeviceConfiguration"
 description: "Create a new androidWorkProfileGeneralDeviceConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidWorkProfileGeneralDeviceConfiguration

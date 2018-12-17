@@ -1,7 +1,7 @@
 ---
 title: "meteredConnectionLimitType enum type"
 description: "Metered Connection Limit Settings."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # meteredConnectionLimitType enum type

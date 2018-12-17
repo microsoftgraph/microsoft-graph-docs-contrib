@@ -1,7 +1,7 @@
 ---
 title: "List androidForWorkCertificateProfileBases"
 description: "List properties and relationships of the androidForWorkCertificateProfileBase objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List androidForWorkCertificateProfileBases

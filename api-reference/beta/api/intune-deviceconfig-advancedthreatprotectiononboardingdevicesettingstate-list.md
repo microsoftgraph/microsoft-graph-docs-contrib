@@ -1,7 +1,7 @@
 ---
 title: "List advancedThreatProtectionOnboardingDeviceSettingStates"
 description: "List properties and relationships of the advancedThreatProtectionOnboardingDeviceSettingState objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List advancedThreatProtectionOnboardingDeviceSettingStates

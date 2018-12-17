@@ -1,7 +1,7 @@
 ---
 title: "setDeviceName action"
 description: "Set device name of the device."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # setDeviceName action

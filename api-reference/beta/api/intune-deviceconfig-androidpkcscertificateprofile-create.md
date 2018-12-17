@@ -1,7 +1,7 @@
 ---
 title: "Create androidPkcsCertificateProfile"
 description: "Create a new androidPkcsCertificateProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidPkcsCertificateProfile

@@ -1,7 +1,7 @@
 ---
 title: "List windowsAssignedAccessProfiles"
 description: "List properties and relationships of the windowsAssignedAccessProfile objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windowsAssignedAccessProfiles

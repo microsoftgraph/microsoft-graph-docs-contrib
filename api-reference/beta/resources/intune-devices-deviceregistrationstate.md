@@ -1,7 +1,7 @@
 ---
 title: "deviceRegistrationState enum type"
 description: "Device registration status."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceRegistrationState enum type

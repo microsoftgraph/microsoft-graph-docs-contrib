@@ -1,7 +1,7 @@
 ---
 title: "Get embeddedSIMDeviceState"
 description: "Read properties and relationships of the embeddedSIMDeviceState object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get embeddedSIMDeviceState

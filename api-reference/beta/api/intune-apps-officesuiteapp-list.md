@@ -1,7 +1,7 @@
 ---
 title: "List officeSuiteApps"
 description: "List properties and relationships of the officeSuiteApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List officeSuiteApps

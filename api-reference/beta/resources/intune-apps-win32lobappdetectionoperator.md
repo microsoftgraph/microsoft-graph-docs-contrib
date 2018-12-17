@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppDetectionOperator enum type"
 description: "Contains properties for detection operator."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # win32LobAppDetectionOperator enum type

@@ -1,7 +1,7 @@
 ---
 title: "Get macOSDeviceFeaturesConfiguration"
 description: "Read properties and relationships of the macOSDeviceFeaturesConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get macOSDeviceFeaturesConfiguration

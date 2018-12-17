@@ -1,7 +1,7 @@
 ---
 title: "Delete managedAppOperation"
 description: "Deletes a managedAppOperation."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete managedAppOperation

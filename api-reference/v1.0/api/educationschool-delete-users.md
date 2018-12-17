@@ -1,7 +1,7 @@
 ---
 title: "Remove educationUser from an educationSchool"
 description: "Delete a user from a school."
-author:"mmast-msft"
+author: "mmast-msft"
 ---
 
 # Remove educationUser from an educationSchool

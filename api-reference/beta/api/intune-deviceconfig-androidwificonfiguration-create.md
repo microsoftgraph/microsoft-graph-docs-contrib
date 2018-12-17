@@ -1,7 +1,7 @@
 ---
 title: "Create androidWiFiConfiguration"
 description: "Create a new androidWiFiConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidWiFiConfiguration

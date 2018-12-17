@@ -1,7 +1,7 @@
 ---
 title: "windowsDeviceHealthState enum type"
 description: "Computer endpoint protection state"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsDeviceHealthState enum type

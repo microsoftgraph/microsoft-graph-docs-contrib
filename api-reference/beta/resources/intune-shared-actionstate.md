@@ -1,7 +1,7 @@
 ---
 title: "actionState enum type"
 description: "State of the action on the device"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # actionState enum type

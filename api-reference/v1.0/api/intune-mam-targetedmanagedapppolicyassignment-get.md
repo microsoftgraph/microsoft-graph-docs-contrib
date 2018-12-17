@@ -1,7 +1,7 @@
 ---
 title: "Get targetedManagedAppPolicyAssignment"
 description: "Read properties and relationships of the targetedManagedAppPolicyAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get targetedManagedAppPolicyAssignment

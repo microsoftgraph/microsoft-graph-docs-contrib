@@ -1,7 +1,7 @@
 ---
 title: "Update importedDeviceIdentityResult"
 description: "Update the properties of a importedDeviceIdentityResult object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update importedDeviceIdentityResult

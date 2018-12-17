@@ -1,7 +1,7 @@
 ---
 title: "scheduleActionsForRules action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # scheduleActionsForRules action

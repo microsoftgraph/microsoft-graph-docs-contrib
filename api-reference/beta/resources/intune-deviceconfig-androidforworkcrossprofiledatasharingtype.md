@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkCrossProfileDataSharingType enum type"
 description: "Android For Work cross profile data sharing type."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # androidForWorkCrossProfileDataSharingType enum type

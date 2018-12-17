@@ -1,7 +1,7 @@
 ---
 title: "azureADWindowsAutopilotDeploymentProfile resource type"
 description: "Windows Autopilot Deployment Profile"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # azureADWindowsAutopilotDeploymentProfile resource type

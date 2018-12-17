@@ -1,7 +1,7 @@
 ---
 title: "List sections"
 description: "Retrieve a list of section objects from the specified notebook."
-author:"Jewan-microsoft"
+author: "Jewan-microsoft"
 ---
 
 # List sections

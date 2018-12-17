@@ -1,7 +1,7 @@
 ---
 title: "Delete androidGeneralDeviceConfiguration"
 description: "Deletes a androidGeneralDeviceConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidGeneralDeviceConfiguration

@@ -1,7 +1,7 @@
 ---
 title: "unsupportedDeviceConfiguration resource type"
 description: "UnsupportedDeviceConfiguration is used when an entity cannot be mapped to another model-compliant subtype of deviceConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # unsupportedDeviceConfiguration resource type

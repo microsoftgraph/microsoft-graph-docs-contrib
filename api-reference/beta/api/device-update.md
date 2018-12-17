@@ -1,7 +1,7 @@
 ---
 title: "Update device"
 description: "Update the properties of a device."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update device

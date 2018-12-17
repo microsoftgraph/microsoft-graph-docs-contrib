@@ -1,7 +1,7 @@
 ---
 title: "deviceCompliancePolicySettingStateSummary resource type"
 description: "Device Compilance Policy Setting State summary across the account."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceCompliancePolicySettingStateSummary resource type

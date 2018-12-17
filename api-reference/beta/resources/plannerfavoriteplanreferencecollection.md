@@ -1,7 +1,7 @@
 ---
 title: "plannerFavoritePlanReferenceCollection resource type"
 description: " the value is the plannerFavoritePlanReference object."
-author:"TarkanSevilmis"
+author: "TarkanSevilmis"
 ---
 
 # plannerFavoritePlanReferenceCollection resource type

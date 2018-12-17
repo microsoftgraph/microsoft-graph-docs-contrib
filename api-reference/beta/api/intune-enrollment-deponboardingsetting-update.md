@@ -1,7 +1,7 @@
 ---
 title: "Update depOnboardingSetting"
 description: "Update the properties of a depOnboardingSetting object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update depOnboardingSetting

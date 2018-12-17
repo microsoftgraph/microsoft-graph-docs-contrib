@@ -1,7 +1,7 @@
 ---
 title: "Update windows10CompliancePolicy"
 description: "Update the properties of a windows10CompliancePolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windows10CompliancePolicy

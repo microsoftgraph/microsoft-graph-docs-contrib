@@ -1,7 +1,7 @@
 ---
 title: "Delete androidWorkProfileWiFiConfiguration"
 description: "Deletes a androidWorkProfileWiFiConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidWorkProfileWiFiConfiguration

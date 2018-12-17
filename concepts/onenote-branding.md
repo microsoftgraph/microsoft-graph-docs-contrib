@@ -1,7 +1,7 @@
 ---
 title: "Branding guidelines for OneNote API developers "
 description: " "
-author:"Jewan-microsoft"
+author: "Jewan-microsoft"
 ---
 
 # Branding guidelines for OneNote API developers 

@@ -1,7 +1,7 @@
 ---
 title: "applicationGuardBlockClipboardSharingType enum type"
 description: "Possible values for applicationGuardBlockClipboardSharingType"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # applicationGuardBlockClipboardSharingType enum type

@@ -1,7 +1,7 @@
 ---
 title: "teamsAppInstallation resource type"
 description: "A teamsApp installed in a team. "
-author:"nkramer"
+author: "nkramer"
 ---
 
 # teamsAppInstallation resource type

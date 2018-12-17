@@ -1,7 +1,7 @@
 ---
 title: "Create iosImportedPFXCertificateProfile"
 description: "Create a new iosImportedPFXCertificateProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create iosImportedPFXCertificateProfile

@@ -1,7 +1,7 @@
 ---
 title: "Update roleDefinition"
 description: "Update the properties of a roleDefinition object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update roleDefinition

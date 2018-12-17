@@ -1,7 +1,7 @@
 ---
 title: "enrollmentTroubleshootingEvent resource type"
 description: "Event representing an enrollment failure."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # enrollmentTroubleshootingEvent resource type

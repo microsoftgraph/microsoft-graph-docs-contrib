@@ -1,7 +1,7 @@
 ---
 title: "mediaContentRatingNewZealand resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # mediaContentRatingNewZealand resource type

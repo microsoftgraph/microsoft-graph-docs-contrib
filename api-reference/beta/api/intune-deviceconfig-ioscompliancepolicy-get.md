@@ -1,7 +1,7 @@
 ---
 title: "Get iosCompliancePolicy"
 description: "Read properties and relationships of the iosCompliancePolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get iosCompliancePolicy

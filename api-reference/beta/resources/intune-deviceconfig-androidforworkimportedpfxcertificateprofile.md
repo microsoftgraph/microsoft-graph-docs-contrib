@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkImportedPFXCertificateProfile resource type"
 description: "Android For Work PFX Import certificate profile"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # androidForWorkImportedPFXCertificateProfile resource type

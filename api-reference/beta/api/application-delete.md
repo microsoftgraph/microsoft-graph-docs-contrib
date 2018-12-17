@@ -1,7 +1,7 @@
 ---
 title: "Delete application"
 description: "Deletes an application."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # Delete application

@@ -1,7 +1,7 @@
 ---
 title: "Delete enrollmentTroubleshootingEvent"
 description: "Deletes a enrollmentTroubleshootingEvent."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete enrollmentTroubleshootingEvent

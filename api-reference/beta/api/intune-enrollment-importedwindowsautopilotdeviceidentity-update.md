@@ -1,7 +1,7 @@
 ---
 title: "Update importedWindowsAutopilotDeviceIdentity"
 description: "Update the properties of a importedWindowsAutopilotDeviceIdentity object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update importedWindowsAutopilotDeviceIdentity

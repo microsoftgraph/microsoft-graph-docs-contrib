@@ -1,7 +1,7 @@
 ---
 title: "Get windowsOfficeClientConfiguration"
 description: "Get a specific non-security policy windowsOfficeClientConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get windowsOfficeClientConfiguration

@@ -1,7 +1,7 @@
 ---
 title: "Get managedDeviceMobileAppConfigurationAssignment"
 description: "Read properties and relationships of the managedDeviceMobileAppConfigurationAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managedDeviceMobileAppConfigurationAssignment

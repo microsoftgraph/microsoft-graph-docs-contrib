@@ -1,7 +1,7 @@
 ---
 title: "Get windows10MobileCompliancePolicy"
 description: "Read properties and relationships of the windows10MobileCompliancePolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get windows10MobileCompliancePolicy

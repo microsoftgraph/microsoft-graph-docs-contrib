@@ -1,7 +1,7 @@
 ---
 title: "Create settingStateDeviceSummary"
 description: "Create a new settingStateDeviceSummary object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create settingStateDeviceSummary

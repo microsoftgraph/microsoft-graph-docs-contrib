@@ -1,7 +1,7 @@
 ---
 title: "List mobileApps"
 description: "List properties and relationships of the mobileApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List mobileApps

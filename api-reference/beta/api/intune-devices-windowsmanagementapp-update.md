@@ -1,7 +1,7 @@
 ---
 title: "Update windowsManagementApp"
 description: "Update the properties of a windowsManagementApp object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsManagementApp

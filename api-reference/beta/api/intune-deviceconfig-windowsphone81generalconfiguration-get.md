@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhone81GeneralConfiguration"
 description: "Read properties and relationships of the windowsPhone81GeneralConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get windowsPhone81GeneralConfiguration

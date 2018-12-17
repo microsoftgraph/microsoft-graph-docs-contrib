@@ -1,7 +1,7 @@
 ---
 title: "Create windowsOfficeClientConfiguration"
 description: "Create a new non-security policy with targeting groups."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windowsOfficeClientConfiguration

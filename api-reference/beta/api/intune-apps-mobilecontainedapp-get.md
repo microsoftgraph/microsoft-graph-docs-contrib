@@ -1,7 +1,7 @@
 ---
 title: "Get mobileContainedApp"
 description: "Read properties and relationships of the mobileContainedApp object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get mobileContainedApp

@@ -1,7 +1,7 @@
 ---
 title: "Delete outlookTaskGroup"
 description: "Delete the specified outlookTaskGroup."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # Delete outlookTaskGroup

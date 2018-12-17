@@ -1,7 +1,7 @@
 ---
 title: "Get deviceConfigurationUserOverview"
 description: "Read properties and relationships of the deviceConfigurationUserOverview object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get deviceConfigurationUserOverview

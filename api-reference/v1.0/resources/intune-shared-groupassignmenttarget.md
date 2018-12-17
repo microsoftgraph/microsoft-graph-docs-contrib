@@ -1,7 +1,7 @@
 ---
 title: "groupAssignmentTarget resource type"
 description: "Represents an assignment to a group."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # groupAssignmentTarget resource type

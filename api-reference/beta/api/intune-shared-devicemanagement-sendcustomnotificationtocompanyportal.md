@@ -1,7 +1,7 @@
 ---
 title: "sendCustomNotificationToCompanyPortal action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # sendCustomNotificationToCompanyPortal action

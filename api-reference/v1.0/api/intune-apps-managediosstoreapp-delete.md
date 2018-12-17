@@ -1,7 +1,7 @@
 ---
 title: "Delete managedIOSStoreApp"
 description: "Deletes a managedIOSStoreApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete managedIOSStoreApp

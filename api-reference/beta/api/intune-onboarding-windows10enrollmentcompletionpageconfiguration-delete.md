@@ -1,7 +1,7 @@
 ---
 title: "Delete windows10EnrollmentCompletionPageConfiguration"
 description: "Deletes a windows10EnrollmentCompletionPageConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windows10EnrollmentCompletionPageConfiguration

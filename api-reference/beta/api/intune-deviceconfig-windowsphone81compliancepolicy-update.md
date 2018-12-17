@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81CompliancePolicy"
 description: "Update the properties of a windowsPhone81CompliancePolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsPhone81CompliancePolicy

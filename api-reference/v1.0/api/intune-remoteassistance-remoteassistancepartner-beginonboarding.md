@@ -1,7 +1,7 @@
 ---
 title: "beginOnboarding action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # beginOnboarding action

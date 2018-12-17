@@ -1,7 +1,7 @@
 ---
 title: "Delete androidForWorkWiFiConfiguration"
 description: "Deletes a androidForWorkWiFiConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidForWorkWiFiConfiguration

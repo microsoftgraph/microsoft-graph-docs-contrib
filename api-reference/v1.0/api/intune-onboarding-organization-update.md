@@ -1,7 +1,7 @@
 ---
 title: "Update organization"
 description: "Update the properties of a organization object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update organization

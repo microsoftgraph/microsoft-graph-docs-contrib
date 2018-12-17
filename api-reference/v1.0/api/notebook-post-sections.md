@@ -1,7 +1,7 @@
 ---
 title: "Create section"
 description: "Create a new onenoteSection in the specified notebook."
-author:"Jewan-microsoft"
+author: "Jewan-microsoft"
 ---
 
 # Create section

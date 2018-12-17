@@ -1,7 +1,7 @@
 ---
 title: "Delete userPFXCertificate"
 description: "Deletes a userPFXCertificate."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete userPFXCertificate

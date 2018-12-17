@@ -1,7 +1,7 @@
 ---
 title: "importedWindowsAutopilotDeviceIdentityImportStatus enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # importedWindowsAutopilotDeviceIdentityImportStatus enum type

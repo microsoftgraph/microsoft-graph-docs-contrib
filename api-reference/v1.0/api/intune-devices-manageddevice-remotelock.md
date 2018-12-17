@@ -1,7 +1,7 @@
 ---
 title: "remoteLock action"
 description: "Remote lock"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # remoteLock action

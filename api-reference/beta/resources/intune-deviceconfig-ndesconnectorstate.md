@@ -1,7 +1,7 @@
 ---
 title: "ndesConnectorState enum type"
 description: "The current status of the Ndes Connector."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # ndesConnectorState enum type

@@ -1,7 +1,7 @@
 ---
 title: "Get androidCertificateProfileBase"
 description: "Read properties and relationships of the androidCertificateProfileBase object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get androidCertificateProfileBase

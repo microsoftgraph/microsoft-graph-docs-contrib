@@ -1,7 +1,7 @@
 ---
 title: "Update mdmWindowsInformationProtectionPolicy"
 description: "Update the properties of a mdmWindowsInformationProtectionPolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update mdmWindowsInformationProtectionPolicy

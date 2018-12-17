@@ -1,7 +1,7 @@
 ---
 title: "Update rule"
 description: "Change writable properties on a messageRule object and save the changes."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # Update rule

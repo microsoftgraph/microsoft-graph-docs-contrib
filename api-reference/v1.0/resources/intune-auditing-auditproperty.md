@@ -1,7 +1,7 @@
 ---
 title: "auditProperty resource type"
 description: "A class containing the properties for Audit Property."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # auditProperty resource type

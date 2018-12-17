@@ -1,7 +1,7 @@
 ---
 title: "Delete importedAppleDeviceIdentity"
 description: "Deletes a importedAppleDeviceIdentity."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete importedAppleDeviceIdentity

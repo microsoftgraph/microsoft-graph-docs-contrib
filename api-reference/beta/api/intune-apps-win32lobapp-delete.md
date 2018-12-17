@@ -1,7 +1,7 @@
 ---
 title: "Delete win32LobApp"
 description: "Deletes a win32LobApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete win32LobApp

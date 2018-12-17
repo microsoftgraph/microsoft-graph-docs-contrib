@@ -1,7 +1,7 @@
 ---
 title: "mobileAppPublishingState enum type"
 description: "Indicates the publishing state of an app."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # mobileAppPublishingState enum type

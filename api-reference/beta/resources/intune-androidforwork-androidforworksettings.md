@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkSettings resource type"
 description: "Settings for Android For Work."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # androidForWorkSettings resource type

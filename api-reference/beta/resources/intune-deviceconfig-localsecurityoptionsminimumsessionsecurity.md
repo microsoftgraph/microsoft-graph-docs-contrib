@@ -1,7 +1,7 @@
 ---
 title: "localSecurityOptionsMinimumSessionSecurity enum type"
 description: "Possible values for LocalSecurityOptionsMinimumSessionSecurity"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # localSecurityOptionsMinimumSessionSecurity enum type

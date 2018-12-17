@@ -1,7 +1,7 @@
 ---
 title: "Get channel message"
 description: "Retrieve a single message (without its replies) in a channel of a team."
-author:"nkramer"
+author: "nkramer"
 ---
 
 # Get channel message

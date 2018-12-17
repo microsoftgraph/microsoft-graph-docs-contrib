@@ -1,7 +1,7 @@
 ---
 title: "Update windowsAutopilotSettings"
 description: "Update the properties of a windowsAutopilotSettings object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsAutopilotSettings

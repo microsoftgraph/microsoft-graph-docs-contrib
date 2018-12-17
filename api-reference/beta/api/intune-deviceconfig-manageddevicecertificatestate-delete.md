@@ -1,7 +1,7 @@
 ---
 title: "Delete managedDeviceCertificateState"
 description: "Deletes a managedDeviceCertificateState."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete managedDeviceCertificateState

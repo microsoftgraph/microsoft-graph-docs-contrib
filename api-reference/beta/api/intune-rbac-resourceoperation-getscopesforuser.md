@@ -1,7 +1,7 @@
 ---
 title: "getScopesForUser function"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # getScopesForUser function

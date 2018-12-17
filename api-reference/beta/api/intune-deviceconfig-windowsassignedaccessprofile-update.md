@@ -1,7 +1,7 @@
 ---
 title: "Update windowsAssignedAccessProfile"
 description: "Update the properties of a windowsAssignedAccessProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsAssignedAccessProfile

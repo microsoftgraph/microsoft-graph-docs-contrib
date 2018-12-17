@@ -1,7 +1,7 @@
 ---
 title: "customSubjectAlternativeName resource type"
 description: "Custom Subject Alternative Name definition"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # customSubjectAlternativeName resource type

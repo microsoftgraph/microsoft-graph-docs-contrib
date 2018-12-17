@@ -1,7 +1,7 @@
 ---
 title: "List deviceComplianceScheduledActionForRules"
 description: "List properties and relationships of the deviceComplianceScheduledActionForRule objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List deviceComplianceScheduledActionForRules

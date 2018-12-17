@@ -1,7 +1,7 @@
 ---
 title: "Get mobileAppContentFile"
 description: "Read properties and relationships of the mobileAppContentFile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get mobileAppContentFile

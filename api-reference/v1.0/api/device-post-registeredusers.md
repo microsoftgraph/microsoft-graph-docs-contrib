@@ -1,7 +1,7 @@
 ---
 title: "Create registeredUser"
 description: "Add a registered user for the device."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create registeredUser

@@ -1,7 +1,7 @@
 ---
 title: "ratingCanadaMoviesType enum type"
 description: "Movies rating labels in Canada"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # ratingCanadaMoviesType enum type

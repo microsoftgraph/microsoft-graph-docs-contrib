@@ -1,7 +1,7 @@
 ---
 title: "Create deviceComplianceDeviceStatus"
 description: "Create a new deviceComplianceDeviceStatus object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create deviceComplianceDeviceStatus

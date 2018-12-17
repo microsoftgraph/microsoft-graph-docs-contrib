@@ -1,7 +1,7 @@
 ---
 title: "excludedApps resource type"
 description: "Contains properties for Excluded Office365 Apps."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # excludedApps resource type

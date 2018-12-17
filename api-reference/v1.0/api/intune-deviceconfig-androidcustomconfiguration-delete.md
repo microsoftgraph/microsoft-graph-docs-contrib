@@ -1,7 +1,7 @@
 ---
 title: "Delete androidCustomConfiguration"
 description: "Deletes a androidCustomConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidCustomConfiguration

@@ -1,7 +1,7 @@
 ---
 title: "List iosEasEmailProfileConfigurations"
 description: "List properties and relationships of the iosEasEmailProfileConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List iosEasEmailProfileConfigurations

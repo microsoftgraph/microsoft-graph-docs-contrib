@@ -1,7 +1,7 @@
 ---
 title: "Delete androidForWorkCompliancePolicy"
 description: "Deletes a androidForWorkCompliancePolicy."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidForWorkCompliancePolicy

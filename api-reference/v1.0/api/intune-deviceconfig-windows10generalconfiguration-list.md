@@ -1,7 +1,7 @@
 ---
 title: "List windows10GeneralConfigurations"
 description: "List properties and relationships of the windows10GeneralConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windows10GeneralConfigurations

@@ -1,7 +1,7 @@
 ---
 title: "welcomeScreenMeetingInformation enum type"
 description: "Possible values for welcome screen meeting information."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # welcomeScreenMeetingInformation enum type

@@ -1,7 +1,7 @@
 ---
 title: "Update iosMobileAppConfiguration"
 description: "Update the properties of a iosMobileAppConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update iosMobileAppConfiguration

@@ -1,7 +1,7 @@
 ---
 title: "Members"
 description: "Describes the visibility of a team. "
-author:"nkramer"
+author: "nkramer"
 ---
 
 #teamVisibilityType enum type

@@ -1,7 +1,7 @@
 ---
 title: "Update macOSDeviceFeaturesConfiguration"
 description: "Update the properties of a macOSDeviceFeaturesConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update macOSDeviceFeaturesConfiguration

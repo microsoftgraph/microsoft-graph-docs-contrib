@@ -1,7 +1,7 @@
 ---
 title: "Create mobileAppTroubleshootingEvent"
 description: "Create a new mobileAppTroubleshootingEvent object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create mobileAppTroubleshootingEvent

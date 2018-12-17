@@ -1,7 +1,7 @@
 ---
 title: "Get vppToken"
 description: "Read properties and relationships of the vppToken object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get vppToken

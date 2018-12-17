@@ -1,7 +1,7 @@
 ---
 title: "Delete iosUpdateDeviceStatus"
 description: "Deletes a iosUpdateDeviceStatus."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete iosUpdateDeviceStatus

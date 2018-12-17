@@ -1,7 +1,7 @@
 ---
 title: "teamSpecialization enum type"
 description: "Describes the special use case for a team."
-author:"nkramer"
+author: "nkramer"
 ---
 
 # teamSpecialization enum type

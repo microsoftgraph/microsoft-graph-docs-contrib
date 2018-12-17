@@ -1,7 +1,7 @@
 ---
 title: "Update windowsManagementAppHealthState"
 description: "Update the properties of a windowsManagementAppHealthState object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsManagementAppHealthState

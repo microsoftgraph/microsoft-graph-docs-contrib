@@ -1,7 +1,7 @@
 ---
 title: "Delete restrictedAppsViolation"
 description: "Deletes a restrictedAppsViolation."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete restrictedAppsViolation

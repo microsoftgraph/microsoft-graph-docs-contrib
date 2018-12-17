@@ -1,7 +1,7 @@
 ---
 title: "Create windows10VpnConfiguration"
 description: "Create a new windows10VpnConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windows10VpnConfiguration

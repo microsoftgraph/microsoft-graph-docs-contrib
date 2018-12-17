@@ -1,7 +1,7 @@
 ---
 title: "Update mobileAppContent"
 description: "Update the properties of a mobileAppContent object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update mobileAppContent

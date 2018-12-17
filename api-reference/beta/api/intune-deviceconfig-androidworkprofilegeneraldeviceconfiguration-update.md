@@ -1,7 +1,7 @@
 ---
 title: "Update androidWorkProfileGeneralDeviceConfiguration"
 description: "Update the properties of a androidWorkProfileGeneralDeviceConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidWorkProfileGeneralDeviceConfiguration

@@ -1,7 +1,7 @@
 ---
 title: "appleDeviceFeaturesConfigurationBase resource type"
 description: "Apple device features configuration profile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # appleDeviceFeaturesConfigurationBase resource type

@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhone81CustomConfiguration"
 description: "Create a new windowsPhone81CustomConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windowsPhone81CustomConfiguration

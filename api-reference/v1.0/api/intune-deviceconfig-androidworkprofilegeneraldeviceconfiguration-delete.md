@@ -1,7 +1,7 @@
 ---
 title: "Delete androidWorkProfileGeneralDeviceConfiguration"
 description: "Deletes a androidWorkProfileGeneralDeviceConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidWorkProfileGeneralDeviceConfiguration

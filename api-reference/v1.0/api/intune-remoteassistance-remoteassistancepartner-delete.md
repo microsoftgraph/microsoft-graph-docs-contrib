@@ -1,7 +1,7 @@
 ---
 title: "Delete remoteAssistancePartner"
 description: "Deletes a remoteAssistancePartner."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete remoteAssistancePartner

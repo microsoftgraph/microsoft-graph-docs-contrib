@@ -1,7 +1,7 @@
 ---
 title: "Delete iosGeneralDeviceConfiguration"
 description: "Deletes a iosGeneralDeviceConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete iosGeneralDeviceConfiguration

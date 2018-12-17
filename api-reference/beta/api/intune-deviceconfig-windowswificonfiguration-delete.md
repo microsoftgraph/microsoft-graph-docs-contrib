@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsWifiConfiguration"
 description: "Deletes a windowsWifiConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsWifiConfiguration

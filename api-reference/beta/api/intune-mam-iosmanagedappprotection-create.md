@@ -1,7 +1,7 @@
 ---
 title: "Create iosManagedAppProtection"
 description: "Create a new iosManagedAppProtection object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create iosManagedAppProtection

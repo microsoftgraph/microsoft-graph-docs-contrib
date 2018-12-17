@@ -1,7 +1,7 @@
 ---
 title: "Get managedDeviceOverview"
 description: "Read properties and relationships of the managedDeviceOverview object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managedDeviceOverview

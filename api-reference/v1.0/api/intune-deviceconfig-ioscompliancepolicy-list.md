@@ -1,7 +1,7 @@
 ---
 title: "List iosCompliancePolicies"
 description: "List properties and relationships of the iosCompliancePolicy objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List iosCompliancePolicies

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsUniversalAppXContainedApp"
 description: "Update the properties of a windowsUniversalAppXContainedApp object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsUniversalAppXContainedApp

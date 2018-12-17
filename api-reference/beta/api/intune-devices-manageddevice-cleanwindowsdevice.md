@@ -1,7 +1,7 @@
 ---
 title: "cleanWindowsDevice action"
 description: "Clean Windows device"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # cleanWindowsDevice action

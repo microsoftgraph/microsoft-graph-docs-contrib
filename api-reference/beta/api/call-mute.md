@@ -1,7 +1,7 @@
 ---
 title: "call: mute"
 description: "Allows the application to mute itself."
-author:"VinodRavichandran"
+author: "VinodRavichandran"
 ---
 
 # call: mute

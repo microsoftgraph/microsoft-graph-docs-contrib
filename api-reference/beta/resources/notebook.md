@@ -1,7 +1,7 @@
 ---
 title: "notebook resource type"
 description: "A OneNote notebook."
-author:"Jewan-microsoft"
+author: "Jewan-microsoft"
 ---
 
 # notebook resource type

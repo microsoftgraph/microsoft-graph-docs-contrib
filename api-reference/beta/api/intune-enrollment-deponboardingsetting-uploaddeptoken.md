@@ -1,7 +1,7 @@
 ---
 title: "uploadDepToken action"
 description: "Uploads a new Device Enrollment Program token"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # uploadDepToken action

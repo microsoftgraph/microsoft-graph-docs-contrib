@@ -1,7 +1,7 @@
 ---
 title: "List embeddedSIMDeviceStates"
 description: "List properties and relationships of the embeddedSIMDeviceState objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List embeddedSIMDeviceStates

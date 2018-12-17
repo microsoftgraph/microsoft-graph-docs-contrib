@@ -1,7 +1,7 @@
 ---
 title: "List identityRiskEvents"
 description: "Retrieve a list of identityriskevent objects."
-author:"cloudhandler"
+author: "cloudhandler"
 ---
 
 # List identityRiskEvents

@@ -1,7 +1,7 @@
 ---
 title: "Update androidImportedPFXCertificateProfile"
 description: "Update the properties of a androidImportedPFXCertificateProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidImportedPFXCertificateProfile

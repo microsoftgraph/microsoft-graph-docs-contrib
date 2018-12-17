@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementScriptGroupAssignment"
 description: "Create a new deviceManagementScriptGroupAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create deviceManagementScriptGroupAssignment

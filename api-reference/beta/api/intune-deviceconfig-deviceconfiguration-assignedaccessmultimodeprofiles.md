@@ -1,7 +1,7 @@
 ---
 title: "assignedAccessMultiModeProfiles action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # assignedAccessMultiModeProfiles action

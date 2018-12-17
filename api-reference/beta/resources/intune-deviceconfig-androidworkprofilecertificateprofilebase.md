@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfileCertificateProfileBase resource type"
 description: "Android Work Profile certificate profile base."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # androidWorkProfileCertificateProfileBase resource type

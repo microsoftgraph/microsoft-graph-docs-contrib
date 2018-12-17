@@ -1,7 +1,7 @@
 ---
 title: "wipe action"
 description: "Wipe a device"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # wipe action

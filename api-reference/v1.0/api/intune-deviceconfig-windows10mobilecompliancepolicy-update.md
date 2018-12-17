@@ -1,7 +1,7 @@
 ---
 title: "Update windows10MobileCompliancePolicy"
 description: "Update the properties of a windows10MobileCompliancePolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windows10MobileCompliancePolicy

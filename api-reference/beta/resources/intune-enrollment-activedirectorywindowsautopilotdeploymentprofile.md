@@ -1,7 +1,7 @@
 ---
 title: "activeDirectoryWindowsAutopilotDeploymentProfile resource type"
 description: "Windows Autopilot Deployment Profile"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # activeDirectoryWindowsAutopilotDeploymentProfile resource type

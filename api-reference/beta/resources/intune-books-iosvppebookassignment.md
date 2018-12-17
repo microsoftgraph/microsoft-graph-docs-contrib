@@ -1,7 +1,7 @@
 ---
 title: "iosVppEBookAssignment resource type"
 description: "Contains properties used to assign an iOS VPP EBook to a group."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # iosVppEBookAssignment resource type

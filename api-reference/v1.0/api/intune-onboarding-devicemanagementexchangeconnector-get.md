@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementExchangeConnector"
 description: "Read properties and relationships of the deviceManagementExchangeConnector object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get deviceManagementExchangeConnector

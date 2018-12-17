@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhone81AppX"
 description: "Read properties and relationships of the windowsPhone81AppX object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get windowsPhone81AppX

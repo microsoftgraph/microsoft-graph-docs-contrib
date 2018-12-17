@@ -1,7 +1,7 @@
 ---
 title: "Get windows10ImportedPFXCertificateProfile"
 description: "Read properties and relationships of the windows10ImportedPFXCertificateProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get windows10ImportedPFXCertificateProfile

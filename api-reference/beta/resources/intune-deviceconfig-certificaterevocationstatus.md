@@ -1,7 +1,7 @@
 ---
 title: "certificateRevocationStatus enum type"
 description: "Certificate Revocation Status."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # certificateRevocationStatus enum type

@@ -1,7 +1,7 @@
 ---
 title: "mobileAppTroubleshootingAppTargetHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # mobileAppTroubleshootingAppTargetHistory resource type

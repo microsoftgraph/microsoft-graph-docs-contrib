@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagement"
 description: "Read properties and relationships of the deviceManagement object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get deviceManagement

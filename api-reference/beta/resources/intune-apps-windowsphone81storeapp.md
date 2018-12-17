@@ -1,7 +1,7 @@
 ---
 title: "windowsPhone81StoreApp resource type"
 description: "Contains properties and inherited properties for Windows Phone 8.1 Store apps."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsPhone81StoreApp resource type

@@ -1,7 +1,7 @@
 ---
 title: "adminConsentState enum type"
 description: "Admin consent state."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # adminConsentState enum type

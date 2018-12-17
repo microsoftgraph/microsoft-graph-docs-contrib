@@ -1,7 +1,7 @@
 ---
 title: "outlookTask resource type"
 description: "An Outlook item that can track a work item. "
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # outlookTask resource type

@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkEnrollmentProfile"
 description: "Update the properties of a androidForWorkEnrollmentProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidForWorkEnrollmentProfile

@@ -1,7 +1,7 @@
 ---
 title: "List mobileAppAssignments"
 description: "List properties and relationships of the mobileAppAssignment objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List mobileAppAssignments

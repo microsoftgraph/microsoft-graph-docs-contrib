@@ -1,7 +1,7 @@
 ---
 title: "Delete sharedPCConfiguration"
 description: "Deletes a sharedPCConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete sharedPCConfiguration

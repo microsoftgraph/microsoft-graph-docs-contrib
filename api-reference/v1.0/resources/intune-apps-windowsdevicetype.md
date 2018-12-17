@@ -1,7 +1,7 @@
 ---
 title: "windowsDeviceType enum type"
 description: "Contains properties for Windows device type."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsDeviceType enum type

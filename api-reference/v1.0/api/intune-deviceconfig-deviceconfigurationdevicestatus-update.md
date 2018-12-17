@@ -1,7 +1,7 @@
 ---
 title: "Update deviceConfigurationDeviceStatus"
 description: "Update the properties of a deviceConfigurationDeviceStatus object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update deviceConfigurationDeviceStatus

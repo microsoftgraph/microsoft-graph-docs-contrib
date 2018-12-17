@@ -1,7 +1,7 @@
 ---
 title: "getManagedAppDiagnosticStatuses function"
 description: "Gets diagnostics validation status for a given user."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # getManagedAppDiagnosticStatuses function

@@ -1,7 +1,7 @@
 ---
 title: "Create embeddedSIMDeviceState"
 description: "Create a new embeddedSIMDeviceState object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create embeddedSIMDeviceState

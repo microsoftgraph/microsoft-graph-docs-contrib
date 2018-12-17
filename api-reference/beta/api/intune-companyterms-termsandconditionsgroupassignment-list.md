@@ -1,7 +1,7 @@
 ---
 title: "List termsAndConditionsGroupAssignments"
 description: "List properties and relationships of the termsAndConditionsGroupAssignment objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List termsAndConditionsGroupAssignments

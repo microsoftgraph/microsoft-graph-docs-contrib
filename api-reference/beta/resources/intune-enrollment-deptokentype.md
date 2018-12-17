@@ -1,7 +1,7 @@
 ---
 title: "depTokenType enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # depTokenType enum type

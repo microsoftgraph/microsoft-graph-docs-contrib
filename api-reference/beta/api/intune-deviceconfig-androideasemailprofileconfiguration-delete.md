@@ -1,7 +1,7 @@
 ---
 title: "Delete androidEasEmailProfileConfiguration"
 description: "Deletes a androidEasEmailProfileConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidEasEmailProfileConfiguration

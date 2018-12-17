@@ -1,7 +1,7 @@
 ---
 title: "mobileAppInstallStatus resource type"
 description: "Contains properties for the installation state of a mobile app for a device."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # mobileAppInstallStatus resource type

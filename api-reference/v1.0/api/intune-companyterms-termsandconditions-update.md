@@ -1,7 +1,7 @@
 ---
 title: "Update termsAndConditions"
 description: "Update the properties of a termsAndConditions object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update termsAndConditions

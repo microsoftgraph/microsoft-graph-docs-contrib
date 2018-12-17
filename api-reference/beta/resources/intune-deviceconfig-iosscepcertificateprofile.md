@@ -1,7 +1,7 @@
 ---
 title: "iosScepCertificateProfile resource type"
 description: "iOS SCEP certificate profile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # iosScepCertificateProfile resource type

@@ -1,7 +1,7 @@
 ---
 title: "Update embeddedSIMDeviceState"
 description: "Update the properties of a embeddedSIMDeviceState object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update embeddedSIMDeviceState

@@ -1,7 +1,7 @@
 ---
 title: "Update editionUpgradeConfiguration"
 description: "Update the properties of a editionUpgradeConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update editionUpgradeConfiguration

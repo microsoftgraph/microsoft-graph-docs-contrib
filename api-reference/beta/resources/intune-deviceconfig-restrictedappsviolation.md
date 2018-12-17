@@ -1,7 +1,7 @@
 ---
 title: "restrictedAppsViolation resource type"
 description: "Violation of restricted apps configuration profile per device per user"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # restrictedAppsViolation resource type

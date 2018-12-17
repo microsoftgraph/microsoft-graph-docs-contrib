@@ -1,7 +1,7 @@
 ---
 title: "List windows10SecureAssessmentConfigurations"
 description: "List properties and relationships of the windows10SecureAssessmentConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windows10SecureAssessmentConfigurations

@@ -1,7 +1,7 @@
 ---
 title: "managementAgentType enum type"
 description: "Management agent type."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managementAgentType enum type

@@ -1,7 +1,7 @@
 ---
 title: "Delete iosPkcsCertificateProfile"
 description: "Deletes a iosPkcsCertificateProfile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete iosPkcsCertificateProfile

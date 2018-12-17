@@ -1,7 +1,7 @@
 ---
 title: "Update reportRoot"
 description: "Update the properties of a reportRoot object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update reportRoot

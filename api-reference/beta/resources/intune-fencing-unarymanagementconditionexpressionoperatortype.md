@@ -1,7 +1,7 @@
 ---
 title: "unaryManagementConditionExpressionOperatorType enum type"
 description: "Supported operators for unary management condition expressions"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # unaryManagementConditionExpressionOperatorType enum type

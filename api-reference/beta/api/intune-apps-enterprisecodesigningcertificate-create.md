@@ -1,7 +1,7 @@
 ---
 title: "Create enterpriseCodeSigningCertificate"
 description: "Create a new enterpriseCodeSigningCertificate object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create enterpriseCodeSigningCertificate

@@ -1,7 +1,7 @@
 ---
 title: "List androidForWorkGmailEasConfigurations"
 description: "List properties and relationships of the androidForWorkGmailEasConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List androidForWorkGmailEasConfigurations

@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionNetworkLearningSummary resource type"
 description: "Windows Information Protection Network learning Summary entity."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsInformationProtectionNetworkLearningSummary resource type

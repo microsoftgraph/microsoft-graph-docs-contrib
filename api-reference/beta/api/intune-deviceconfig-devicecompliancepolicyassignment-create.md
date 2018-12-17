@@ -1,7 +1,7 @@
 ---
 title: "Create deviceCompliancePolicyAssignment"
 description: "Create a new deviceCompliancePolicyAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create deviceCompliancePolicyAssignment

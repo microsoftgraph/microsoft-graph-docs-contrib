@@ -1,7 +1,7 @@
 ---
 title: "runAsAccountType enum type"
 description: "Indicates execution context of a device management script or an app."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # runAsAccountType enum type

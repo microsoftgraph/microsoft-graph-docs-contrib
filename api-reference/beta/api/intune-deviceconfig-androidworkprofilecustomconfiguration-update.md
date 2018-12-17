@@ -1,7 +1,7 @@
 ---
 title: "Update androidWorkProfileCustomConfiguration"
 description: "Update the properties of a androidWorkProfileCustomConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidWorkProfileCustomConfiguration

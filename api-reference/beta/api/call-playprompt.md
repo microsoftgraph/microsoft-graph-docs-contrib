@@ -1,7 +1,7 @@
 ---
 title: "call: playPrompt"
 description: "Play a prompt in the call."
-author:"VinodRavichandran"
+author: "VinodRavichandran"
 ---
 
 # call: playPrompt

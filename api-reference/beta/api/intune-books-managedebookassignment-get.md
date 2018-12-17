@@ -1,7 +1,7 @@
 ---
 title: "Get managedEBookAssignment"
 description: "Read properties and relationships of the managedEBookAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managedEBookAssignment

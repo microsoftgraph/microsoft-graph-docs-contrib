@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkCustomConfiguration resource type"
 description: "Android For Work custom configuration"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # androidForWorkCustomConfiguration resource type

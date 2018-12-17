@@ -1,7 +1,7 @@
 ---
 title: "Add directory role member"
 description: "Use this API to create a new directory role member."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # Add directory role member

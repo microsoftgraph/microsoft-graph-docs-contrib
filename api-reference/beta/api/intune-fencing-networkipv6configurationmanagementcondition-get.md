@@ -1,7 +1,7 @@
 ---
 title: "Get networkIPv6ConfigurationManagementCondition"
 description: "Read properties and relationships of the networkIPv6ConfigurationManagementCondition object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get networkIPv6ConfigurationManagementCondition

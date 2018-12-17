@@ -1,7 +1,7 @@
 ---
 title: "retire action"
 description: "Retire a device"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # retire action

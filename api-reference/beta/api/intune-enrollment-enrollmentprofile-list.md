@@ -1,7 +1,7 @@
 ---
 title: "List enrollmentProfiles"
 description: "List properties and relationships of the enrollmentProfile objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List enrollmentProfiles

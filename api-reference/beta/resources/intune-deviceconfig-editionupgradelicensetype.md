@@ -1,7 +1,7 @@
 ---
 title: "editionUpgradeLicenseType enum type"
 description: "Edition Upgrade License type"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # editionUpgradeLicenseType enum type

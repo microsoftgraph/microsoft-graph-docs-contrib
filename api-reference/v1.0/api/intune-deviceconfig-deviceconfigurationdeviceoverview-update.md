@@ -1,7 +1,7 @@
 ---
 title: "Update deviceConfigurationDeviceOverview"
 description: "Update the properties of a deviceConfigurationDeviceOverview object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update deviceConfigurationDeviceOverview

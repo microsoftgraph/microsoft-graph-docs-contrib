@@ -1,7 +1,7 @@
 ---
 title: "Create mailFolder"
 description: "Use this API to create a new child mailFolder."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # Create mailFolder

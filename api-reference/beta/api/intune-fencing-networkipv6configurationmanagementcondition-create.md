@@ -1,7 +1,7 @@
 ---
 title: "Create networkIPv6ConfigurationManagementCondition"
 description: "Create a new networkIPv6ConfigurationManagementCondition object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create networkIPv6ConfigurationManagementCondition

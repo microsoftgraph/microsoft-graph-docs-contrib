@@ -1,7 +1,7 @@
 ---
 title: "Delete androidManagedAppProtection"
 description: "Deletes a androidManagedAppProtection."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidManagedAppProtection

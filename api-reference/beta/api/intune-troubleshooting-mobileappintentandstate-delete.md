@@ -1,7 +1,7 @@
 ---
 title: "Delete mobileAppIntentAndState"
 description: "Deletes a mobileAppIntentAndState."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete mobileAppIntentAndState

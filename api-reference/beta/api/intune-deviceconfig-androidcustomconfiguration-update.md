@@ -1,7 +1,7 @@
 ---
 title: "Update androidCustomConfiguration"
 description: "Update the properties of a androidCustomConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidCustomConfiguration

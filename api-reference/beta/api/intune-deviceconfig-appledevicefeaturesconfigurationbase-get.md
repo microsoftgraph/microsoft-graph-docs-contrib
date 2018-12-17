@@ -1,7 +1,7 @@
 ---
 title: "Get appleDeviceFeaturesConfigurationBase"
 description: "Read properties and relationships of the appleDeviceFeaturesConfigurationBase object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get appleDeviceFeaturesConfigurationBase

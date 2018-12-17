@@ -1,7 +1,7 @@
 ---
 title: "List androidWorkProfileCustomConfigurations"
 description: "List properties and relationships of the androidWorkProfileCustomConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List androidWorkProfileCustomConfigurations

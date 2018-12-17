@@ -1,7 +1,7 @@
 ---
 title: "Create iosVppEBookAssignment"
 description: "Create a new iosVppEBookAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create iosVppEBookAssignment

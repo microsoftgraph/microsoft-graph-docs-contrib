@@ -1,7 +1,7 @@
 ---
 title: "webBrowserCookieSettings enum type"
 description: "Web Browser Cookie Settings."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # webBrowserCookieSettings enum type

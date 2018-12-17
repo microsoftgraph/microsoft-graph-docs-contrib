@@ -1,7 +1,7 @@
 ---
 title: "Delete androidDeviceOwnerWiFiConfiguration"
 description: "Deletes a androidDeviceOwnerWiFiConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidDeviceOwnerWiFiConfiguration

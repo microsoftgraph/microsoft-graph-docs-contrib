@@ -1,7 +1,7 @@
 ---
 title: "Delete managedIOSLobApp"
 description: "Deletes a managedIOSLobApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete managedIOSLobApp

@@ -1,7 +1,7 @@
 ---
 title: "importDeviceIdentityList action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # importDeviceIdentityList action

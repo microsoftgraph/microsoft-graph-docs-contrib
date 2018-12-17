@@ -1,7 +1,7 @@
 ---
 title: "Update androidStoreApp"
 description: "Update the properties of a androidStoreApp object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidStoreApp

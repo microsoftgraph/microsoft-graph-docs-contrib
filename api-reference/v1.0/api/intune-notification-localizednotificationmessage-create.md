@@ -1,7 +1,7 @@
 ---
 title: "Create localizedNotificationMessage"
 description: "Create a new localizedNotificationMessage object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create localizedNotificationMessage

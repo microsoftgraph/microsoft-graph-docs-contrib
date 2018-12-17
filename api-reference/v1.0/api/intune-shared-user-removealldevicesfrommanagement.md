@@ -1,7 +1,7 @@
 ---
 title: "removeAllDevicesFromManagement action"
 description: "Retire all devices from management for this user"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # removeAllDevicesFromManagement action

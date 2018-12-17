@@ -1,7 +1,7 @@
 ---
 title: "Update userInstallStateSummary"
 description: "Update the properties of a userInstallStateSummary object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update userInstallStateSummary

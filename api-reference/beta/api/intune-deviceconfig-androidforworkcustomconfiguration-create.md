@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkCustomConfiguration"
 description: "Create a new androidForWorkCustomConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidForWorkCustomConfiguration

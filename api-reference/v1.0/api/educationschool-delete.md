@@ -1,7 +1,7 @@
 ---
 title: "Delete educationSchool"
 description: "Delete a school."
-author:"mmast-msft"
+author: "mmast-msft"
 ---
 
 # Delete educationSchool

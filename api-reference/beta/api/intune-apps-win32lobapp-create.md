@@ -1,7 +1,7 @@
 ---
 title: "Create win32LobApp"
 description: "Create a new win32LobApp object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create win32LobApp

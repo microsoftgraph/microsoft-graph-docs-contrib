@@ -1,7 +1,7 @@
 ---
 title: "Update androidGeneralDeviceConfiguration"
 description: "Update the properties of a androidGeneralDeviceConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidGeneralDeviceConfiguration

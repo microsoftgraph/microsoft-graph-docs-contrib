@@ -1,7 +1,7 @@
 ---
 title: "Create windows10EnterpriseModernAppManagementConfiguration"
 description: "Create a new windows10EnterpriseModernAppManagementConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windows10EnterpriseModernAppManagementConfiguration

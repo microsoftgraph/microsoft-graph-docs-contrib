@@ -1,7 +1,7 @@
 ---
 title: "List verificationDnsRecords"
 description: "Retrieve a list of domainDnsRecord objects."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # List verificationDnsRecords

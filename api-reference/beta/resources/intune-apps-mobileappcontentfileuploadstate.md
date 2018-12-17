@@ -1,7 +1,7 @@
 ---
 title: "mobileAppContentFileUploadState enum type"
 description: "Contains properties for upload request states."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # mobileAppContentFileUploadState enum type

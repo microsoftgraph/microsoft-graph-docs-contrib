@@ -1,7 +1,7 @@
 ---
 title: "Create intuneBrandingProfile"
 description: "Create a new intuneBrandingProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create intuneBrandingProfile

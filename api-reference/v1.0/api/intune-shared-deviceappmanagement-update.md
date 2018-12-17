@@ -1,7 +1,7 @@
 ---
 title: "Update deviceAppManagement"
 description: "Update the properties of a deviceAppManagement object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update deviceAppManagement

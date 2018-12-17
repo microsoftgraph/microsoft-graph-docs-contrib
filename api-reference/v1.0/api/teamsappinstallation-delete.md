@@ -1,7 +1,7 @@
 ---
 title: "Delete app from team"
 description: "Uninstalls an app from the specified team."
-author:"nkramer"
+author: "nkramer"
 ---
 
 # Delete app from team

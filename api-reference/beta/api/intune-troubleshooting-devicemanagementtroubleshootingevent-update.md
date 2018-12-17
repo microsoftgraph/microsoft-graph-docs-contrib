@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementTroubleshootingEvent"
 description: "Update the properties of a deviceManagementTroubleshootingEvent object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update deviceManagementTroubleshootingEvent

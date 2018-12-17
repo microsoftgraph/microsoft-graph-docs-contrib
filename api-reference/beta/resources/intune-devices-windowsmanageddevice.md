@@ -1,7 +1,7 @@
 ---
 title: "windowsManagedDevice resource type"
 description: "Windows devices that are managed or pre-enrolled through Intune"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsManagedDevice resource type

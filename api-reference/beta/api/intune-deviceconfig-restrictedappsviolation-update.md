@@ -1,7 +1,7 @@
 ---
 title: "Update restrictedAppsViolation"
 description: "Update the properties of a restrictedAppsViolation object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update restrictedAppsViolation

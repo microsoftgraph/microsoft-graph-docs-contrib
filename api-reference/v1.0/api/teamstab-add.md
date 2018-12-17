@@ -1,7 +1,7 @@
 ---
 title: "Add tab to channel"
 description: "Adds (pins) a tab to the specified channel within a team. "
-author:"nkramer"
+author: "nkramer"
 ---
 
 # Add tab to channel

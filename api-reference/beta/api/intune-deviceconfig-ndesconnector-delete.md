@@ -1,7 +1,7 @@
 ---
 title: "Delete ndesConnector"
 description: "Deletes a ndesConnector."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete ndesConnector

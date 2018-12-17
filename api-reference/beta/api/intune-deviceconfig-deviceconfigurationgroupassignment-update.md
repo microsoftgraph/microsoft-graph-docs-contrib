@@ -1,7 +1,7 @@
 ---
 title: "Update deviceConfigurationGroupAssignment"
 description: "Update the properties of a deviceConfigurationGroupAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update deviceConfigurationGroupAssignment

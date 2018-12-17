@@ -1,7 +1,7 @@
 ---
 title: "List scopedMembers for a directory role"
 description: "Retrieve a list of scopedRoleMembership objects for a directory role."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # List scopedMembers for a directory role

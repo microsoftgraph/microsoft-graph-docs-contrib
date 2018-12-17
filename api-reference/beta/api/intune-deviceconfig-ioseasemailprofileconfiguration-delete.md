@@ -1,7 +1,7 @@
 ---
 title: "Delete iosEasEmailProfileConfiguration"
 description: "Deletes a iosEasEmailProfileConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete iosEasEmailProfileConfiguration

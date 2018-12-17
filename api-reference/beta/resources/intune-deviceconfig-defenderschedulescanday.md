@@ -1,7 +1,7 @@
 ---
 title: "defenderScheduleScanDay enum type"
 description: "Possible values of DefenderScheduleScanDay "
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # defenderScheduleScanDay enum type

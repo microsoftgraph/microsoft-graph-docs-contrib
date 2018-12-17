@@ -1,7 +1,7 @@
 ---
 title: "getRoleScopeTagsByResource function"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # getRoleScopeTagsByResource function

@@ -1,7 +1,7 @@
 ---
 title: "Create windowsAssignedAccessProfile"
 description: "Create a new windowsAssignedAccessProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windowsAssignedAccessProfile

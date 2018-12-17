@@ -1,7 +1,7 @@
 ---
 title: "deviceComplianceUserStatus resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceComplianceUserStatus resource type

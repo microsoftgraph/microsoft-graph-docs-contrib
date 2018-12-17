@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsPhoneEASEmailProfileConfiguration"
 description: "Deletes a windowsPhoneEASEmailProfileConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsPhoneEASEmailProfileConfiguration

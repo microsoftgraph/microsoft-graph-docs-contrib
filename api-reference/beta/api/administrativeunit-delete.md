@@ -1,7 +1,7 @@
 ---
 title: "Delete administrativeUnit"
 description: "Delete an administrativeUnit."
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # Delete administrativeUnit

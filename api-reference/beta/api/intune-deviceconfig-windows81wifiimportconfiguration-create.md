@@ -1,7 +1,7 @@
 ---
 title: "Create windows81WifiImportConfiguration"
 description: "Create a new windows81WifiImportConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windows81WifiImportConfiguration

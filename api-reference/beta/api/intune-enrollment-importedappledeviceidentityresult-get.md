@@ -1,7 +1,7 @@
 ---
 title: "Get importedAppleDeviceIdentityResult"
 description: "Read properties and relationships of the importedAppleDeviceIdentityResult object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get importedAppleDeviceIdentityResult

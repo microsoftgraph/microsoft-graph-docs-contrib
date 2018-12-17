@@ -1,7 +1,7 @@
 ---
 title: "getManagementConditionsForPlatform function"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # getManagementConditionsForPlatform function

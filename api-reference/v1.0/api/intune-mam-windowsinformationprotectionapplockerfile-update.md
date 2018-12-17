@@ -1,7 +1,7 @@
 ---
 title: "Update windowsInformationProtectionAppLockerFile"
 description: "Update the properties of a windowsInformationProtectionAppLockerFile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsInformationProtectionAppLockerFile

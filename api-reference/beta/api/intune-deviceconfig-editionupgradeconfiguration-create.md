@@ -1,7 +1,7 @@
 ---
 title: "Create editionUpgradeConfiguration"
 description: "Create a new editionUpgradeConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create editionUpgradeConfiguration

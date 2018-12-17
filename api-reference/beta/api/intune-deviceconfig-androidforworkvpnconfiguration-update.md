@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkVpnConfiguration"
 description: "Update the properties of a androidForWorkVpnConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidForWorkVpnConfiguration

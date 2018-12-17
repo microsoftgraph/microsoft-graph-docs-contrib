@@ -1,7 +1,7 @@
 ---
 title: "List iosCertificateProfileBases"
 description: "List properties and relationships of the iosCertificateProfileBase objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List iosCertificateProfileBases

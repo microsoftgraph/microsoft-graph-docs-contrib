@@ -1,7 +1,7 @@
 ---
 title: "Create a team"
 description: "Create a new team."
-author:"nkramer"
+author: "nkramer"
 ---
 
 # Create team

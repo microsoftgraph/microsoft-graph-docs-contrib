@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhone81SCEPCertificateProfile"
 description: "Create a new windowsPhone81SCEPCertificateProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windowsPhone81SCEPCertificateProfile

@@ -1,7 +1,7 @@
 ---
 title: "allDevicesAssignmentTarget resource type"
 description: "Represents an assignment to all managed devices in the tenant."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # allDevicesAssignmentTarget resource type

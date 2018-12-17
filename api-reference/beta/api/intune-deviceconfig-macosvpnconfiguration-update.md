@@ -1,7 +1,7 @@
 ---
 title: "Update macOSVpnConfiguration"
 description: "Update the properties of a macOSVpnConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update macOSVpnConfiguration

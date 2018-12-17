@@ -1,7 +1,7 @@
 ---
 title: "windowsAutopilotDeviceIdentity resource type"
 description: "The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsAutopilotDeviceIdentity resource type

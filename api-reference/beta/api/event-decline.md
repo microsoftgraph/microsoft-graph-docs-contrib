@@ -1,7 +1,7 @@
 ---
 title: "event: decline"
 description: "Decline invitation to the specified event in a user calendar."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # event: decline

@@ -1,7 +1,7 @@
 ---
 title: "Delete depIOSEnrollmentProfile"
 description: "Deletes a depIOSEnrollmentProfile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete depIOSEnrollmentProfile

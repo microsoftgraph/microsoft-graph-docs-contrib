@@ -1,7 +1,7 @@
 ---
 title: "Create sharedPCConfiguration"
 description: "Create a new sharedPCConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create sharedPCConfiguration

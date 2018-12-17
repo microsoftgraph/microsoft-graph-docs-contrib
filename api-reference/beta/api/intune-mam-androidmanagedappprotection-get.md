@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedAppProtection"
 description: "Read properties and relationships of the androidManagedAppProtection object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get androidManagedAppProtection

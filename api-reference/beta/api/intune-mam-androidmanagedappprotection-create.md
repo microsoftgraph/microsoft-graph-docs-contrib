@@ -1,7 +1,7 @@
 ---
 title: "Create androidManagedAppProtection"
 description: "Create a new androidManagedAppProtection object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidManagedAppProtection

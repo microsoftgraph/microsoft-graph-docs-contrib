@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsStoreApp"
 description: "Deletes a windowsStoreApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsStoreApp

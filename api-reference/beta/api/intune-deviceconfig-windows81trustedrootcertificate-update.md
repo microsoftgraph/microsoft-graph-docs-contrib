@@ -1,7 +1,7 @@
 ---
 title: "Update windows81TrustedRootCertificate"
 description: "Update the properties of a windows81TrustedRootCertificate object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windows81TrustedRootCertificate

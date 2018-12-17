@@ -1,7 +1,7 @@
 ---
 title: "localSecurityOptionsAdministratorElevationPromptBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsAdministratorElevationPromptBehavior"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # localSecurityOptionsAdministratorElevationPromptBehaviorType enum type

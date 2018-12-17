@@ -1,7 +1,7 @@
 ---
 title: "Create iosVpnConfiguration"
 description: "Create a new iosVpnConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create iosVpnConfiguration

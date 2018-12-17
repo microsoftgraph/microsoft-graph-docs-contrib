@@ -1,7 +1,7 @@
 ---
 title: "List remoteActionAudits"
 description: "List properties and relationships of the remoteActionAudit objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List remoteActionAudits

@@ -1,7 +1,7 @@
 ---
 title: "airPrintDestination resource type"
 description: "Represents an AirPrint destination."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # airPrintDestination resource type

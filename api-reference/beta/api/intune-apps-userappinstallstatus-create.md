@@ -1,7 +1,7 @@
 ---
 title: "Create userAppInstallStatus"
 description: "Create a new userAppInstallStatus object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create userAppInstallStatus

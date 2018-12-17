@@ -1,7 +1,7 @@
 ---
 title: "Create resourceOperation"
 description: "Create a new resourceOperation object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create resourceOperation

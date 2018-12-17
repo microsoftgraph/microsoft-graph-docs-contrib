@@ -1,7 +1,7 @@
 ---
 title: "Create iosEduDeviceConfiguration"
 description: "Create a new iosEduDeviceConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create iosEduDeviceConfiguration

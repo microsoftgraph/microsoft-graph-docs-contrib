@@ -1,7 +1,7 @@
 ---
 title: "List localizedNotificationMessages"
 description: "List properties and relationships of the localizedNotificationMessage objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List localizedNotificationMessages

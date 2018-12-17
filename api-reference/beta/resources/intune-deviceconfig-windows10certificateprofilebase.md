@@ -1,7 +1,7 @@
 ---
 title: "windows10CertificateProfileBase resource type"
 description: "Base class for Windows 10 certificate profile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windows10CertificateProfileBase resource type

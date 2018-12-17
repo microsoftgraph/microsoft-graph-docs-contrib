@@ -1,7 +1,7 @@
 ---
 title: "Delete iosStoreApp"
 description: "Deletes a iosStoreApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete iosStoreApp

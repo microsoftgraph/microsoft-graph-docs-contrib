@@ -1,7 +1,7 @@
 ---
 title: "List enterpriseCodeSigningCertificates"
 description: "List properties and relationships of the enterpriseCodeSigningCertificate objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List enterpriseCodeSigningCertificates

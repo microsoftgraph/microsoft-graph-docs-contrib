@@ -1,7 +1,7 @@
 ---
 title: "Restore deleted item"
 description: "Restores a recently deleted item from deleted items. "
-author:"lleonard-msft"
+author: "lleonard-msft"
 ---
 
 # Restore deleted item

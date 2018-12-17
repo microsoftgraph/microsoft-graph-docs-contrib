@@ -1,7 +1,7 @@
 ---
 title: "Get windows10EasEmailProfileConfiguration"
 description: "Read properties and relationships of the windows10EasEmailProfileConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get windows10EasEmailProfileConfiguration

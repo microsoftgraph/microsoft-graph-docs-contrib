@@ -1,7 +1,7 @@
 ---
 title: "Update windowsOfficeClientConfiguration"
 description: "Patch a specific non-security policy payload."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsOfficeClientConfiguration

@@ -1,7 +1,7 @@
 ---
 title: "Create remoteAssistancePartner"
 description: "Create a new remoteAssistancePartner object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create remoteAssistancePartner

@@ -1,7 +1,7 @@
 ---
 title: "weeklySchedule enum type"
 description: "Possible values for a weekly schedule."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # weeklySchedule enum type

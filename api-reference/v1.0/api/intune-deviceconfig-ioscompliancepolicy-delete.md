@@ -1,7 +1,7 @@
 ---
 title: "Delete iosCompliancePolicy"
 description: "Deletes a iosCompliancePolicy."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete iosCompliancePolicy

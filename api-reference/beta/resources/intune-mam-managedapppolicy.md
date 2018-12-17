@@ -1,7 +1,7 @@
 ---
 title: "managedAppPolicy resource type"
 description: "The ManagedAppPolicy resource represents a base type for platform specific policies."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managedAppPolicy resource type

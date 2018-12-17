@@ -1,7 +1,7 @@
 ---
 title: "Create androidImportedPFXCertificateProfile"
 description: "Create a new androidImportedPFXCertificateProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidImportedPFXCertificateProfile

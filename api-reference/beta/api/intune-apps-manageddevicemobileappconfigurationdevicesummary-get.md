@@ -1,7 +1,7 @@
 ---
 title: "Get managedDeviceMobileAppConfigurationDeviceSummary"
 description: "Read properties and relationships of the managedDeviceMobileAppConfigurationDeviceSummary object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managedDeviceMobileAppConfigurationDeviceSummary

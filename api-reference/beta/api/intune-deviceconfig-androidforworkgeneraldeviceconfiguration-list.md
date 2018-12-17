@@ -1,7 +1,7 @@
 ---
 title: "List androidForWorkGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidForWorkGeneralDeviceConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List androidForWorkGeneralDeviceConfigurations

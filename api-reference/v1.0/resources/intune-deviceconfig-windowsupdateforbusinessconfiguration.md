@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateForBusinessConfiguration resource type"
 description: "Windows Update for business configuration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsUpdateForBusinessConfiguration resource type

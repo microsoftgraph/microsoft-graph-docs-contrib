@@ -1,7 +1,7 @@
 ---
 title: "Delete androidManagedStoreAppConfigurationSchema"
 description: "Deletes a androidManagedStoreAppConfigurationSchema."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidManagedStoreAppConfigurationSchema

@@ -1,7 +1,7 @@
 ---
 title: "Update androidPkcsCertificateProfile"
 description: "Update the properties of a androidPkcsCertificateProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update androidPkcsCertificateProfile

@@ -1,7 +1,7 @@
 ---
 title: "Update enrollmentConfigurationAssignment"
 description: "Update the properties of a enrollmentConfigurationAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update enrollmentConfigurationAssignment

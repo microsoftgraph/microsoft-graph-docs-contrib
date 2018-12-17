@@ -1,7 +1,7 @@
 ---
 title: "Get managedMobileLobApp"
 description: "Read properties and relationships of the managedMobileLobApp object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managedMobileLobApp

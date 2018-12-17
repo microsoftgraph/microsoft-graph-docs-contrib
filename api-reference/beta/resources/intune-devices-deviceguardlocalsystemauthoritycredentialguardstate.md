@@ -1,7 +1,7 @@
 ---
 title: "deviceGuardLocalSystemAuthorityCredentialGuardState enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceGuardLocalSystemAuthorityCredentialGuardState enum type

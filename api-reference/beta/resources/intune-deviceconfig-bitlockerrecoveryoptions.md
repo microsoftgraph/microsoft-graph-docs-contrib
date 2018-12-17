@@ -1,7 +1,7 @@
 ---
 title: "bitLockerRecoveryOptions resource type"
 description: "BitLocker Recovery Options."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # bitLockerRecoveryOptions resource type

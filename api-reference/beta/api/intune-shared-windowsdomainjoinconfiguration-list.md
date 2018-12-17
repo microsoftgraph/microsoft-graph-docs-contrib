@@ -1,7 +1,7 @@
 ---
 title: "List windowsDomainJoinConfigurations"
 description: "List properties and relationships of the windowsDomainJoinConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windowsDomainJoinConfigurations

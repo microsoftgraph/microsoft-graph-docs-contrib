@@ -1,7 +1,7 @@
 ---
 title: "Get managedIOSLobApp"
 description: "Read properties and relationships of the managedIOSLobApp object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managedIOSLobApp

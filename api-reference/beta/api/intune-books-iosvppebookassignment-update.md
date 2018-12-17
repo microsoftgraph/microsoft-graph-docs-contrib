@@ -1,7 +1,7 @@
 ---
 title: "Update iosVppEBookAssignment"
 description: "Update the properties of a iosVppEBookAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update iosVppEBookAssignment

@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementScriptDeviceState"
 description: "Create a new deviceManagementScriptDeviceState object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create deviceManagementScriptDeviceState

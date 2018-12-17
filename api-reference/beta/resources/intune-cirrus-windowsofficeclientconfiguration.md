@@ -1,7 +1,7 @@
 ---
 title: "windowsOfficeClientConfiguration resource type"
 description: "Entity that describes office policy settings for Windows."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsOfficeClientConfiguration resource type

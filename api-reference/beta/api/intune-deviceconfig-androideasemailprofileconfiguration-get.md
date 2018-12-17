@@ -1,7 +1,7 @@
 ---
 title: "Get androidEasEmailProfileConfiguration"
 description: "Read properties and relationships of the androidEasEmailProfileConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get androidEasEmailProfileConfiguration

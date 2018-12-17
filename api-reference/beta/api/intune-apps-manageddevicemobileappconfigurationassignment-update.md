@@ -1,7 +1,7 @@
 ---
 title: "Update managedDeviceMobileAppConfigurationAssignment"
 description: "Update the properties of a managedDeviceMobileAppConfigurationAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update managedDeviceMobileAppConfigurationAssignment

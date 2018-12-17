@@ -1,7 +1,7 @@
 ---
 title: "Get mailFolder"
 description: "Retrieve the properties and relationships of a message folder object."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # Get mailFolder

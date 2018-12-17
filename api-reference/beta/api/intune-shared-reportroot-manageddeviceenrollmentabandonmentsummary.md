@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceEnrollmentAbandonmentSummary function"
 description: "Metadata for Enrollment abandonment summary report"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managedDeviceEnrollmentAbandonmentSummary function

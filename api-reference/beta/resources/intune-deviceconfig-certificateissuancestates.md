@@ -1,7 +1,7 @@
 ---
 title: "certificateIssuanceStates enum type"
 description: "Certificate Issuance State Options."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # certificateIssuanceStates enum type

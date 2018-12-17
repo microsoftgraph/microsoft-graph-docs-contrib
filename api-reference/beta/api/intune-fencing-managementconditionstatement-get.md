@@ -1,7 +1,7 @@
 ---
 title: "Get managementConditionStatement"
 description: "Read properties and relationships of the managementConditionStatement object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managementConditionStatement

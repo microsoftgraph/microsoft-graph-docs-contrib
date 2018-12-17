@@ -1,7 +1,7 @@
 ---
 title: "complianceState enum type"
 description: "Compliance state."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # complianceState enum type

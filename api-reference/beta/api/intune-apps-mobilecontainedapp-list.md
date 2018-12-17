@@ -1,7 +1,7 @@
 ---
 title: "List mobileContainedApps"
 description: "List properties and relationships of the mobileContainedApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List mobileContainedApps

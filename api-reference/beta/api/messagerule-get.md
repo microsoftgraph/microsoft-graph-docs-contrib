@@ -1,7 +1,7 @@
 ---
 title: "Get rule"
 description: "Get the properties and relationships of a messageRule object."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # Get rule

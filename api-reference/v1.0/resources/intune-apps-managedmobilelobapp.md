@@ -1,7 +1,7 @@
 ---
 title: "managedMobileLobApp resource type"
 description: "An abstract base class containing properties for all managed mobile line of business apps."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managedMobileLobApp resource type

@@ -1,7 +1,7 @@
 ---
 title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create defaultManagedAppProtection

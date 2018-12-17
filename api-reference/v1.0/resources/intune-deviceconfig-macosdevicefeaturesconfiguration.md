@@ -1,7 +1,7 @@
 ---
 title: "macOSDeviceFeaturesConfiguration resource type"
 description: "MacOS device features configuration profile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # macOSDeviceFeaturesConfiguration resource type

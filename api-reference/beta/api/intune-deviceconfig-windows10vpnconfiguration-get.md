@@ -1,7 +1,7 @@
 ---
 title: "Get windows10VpnConfiguration"
 description: "Read properties and relationships of the windows10VpnConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get windows10VpnConfiguration

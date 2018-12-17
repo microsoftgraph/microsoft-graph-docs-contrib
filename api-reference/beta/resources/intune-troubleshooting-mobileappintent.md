@@ -1,7 +1,7 @@
 ---
 title: "mobileAppIntent enum type"
 description: "Indicates the status of the mobile app on the device."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # mobileAppIntent enum type

@@ -1,7 +1,7 @@
 ---
 title: "List managedApps"
 description: "List properties and relationships of the managedApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List managedApps

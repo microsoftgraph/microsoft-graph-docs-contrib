@@ -1,7 +1,7 @@
 ---
 title: "Update macOSEnterpriseWiFiConfiguration"
 description: "Update the properties of a macOSEnterpriseWiFiConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update macOSEnterpriseWiFiConfiguration

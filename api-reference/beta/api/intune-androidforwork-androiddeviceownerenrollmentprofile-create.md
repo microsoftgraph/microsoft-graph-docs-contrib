@@ -1,7 +1,7 @@
 ---
 title: "Create androidDeviceOwnerEnrollmentProfile"
 description: "Create a new androidDeviceOwnerEnrollmentProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidDeviceOwnerEnrollmentProfile

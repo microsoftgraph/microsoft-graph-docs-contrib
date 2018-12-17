@@ -1,7 +1,7 @@
 ---
 title: "Delete windows10GeneralConfiguration"
 description: "Deletes a windows10GeneralConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windows10GeneralConfiguration

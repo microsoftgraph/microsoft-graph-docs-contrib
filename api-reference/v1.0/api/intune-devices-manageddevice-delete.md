@@ -1,7 +1,7 @@
 ---
 title: "Delete managedDevice"
 description: "Deletes a managedDevice."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete managedDevice

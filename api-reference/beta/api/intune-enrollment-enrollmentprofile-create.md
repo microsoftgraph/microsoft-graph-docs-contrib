@@ -1,7 +1,7 @@
 ---
 title: "Create enrollmentProfile"
 description: "Create a new enrollmentProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create enrollmentProfile

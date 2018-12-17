@@ -1,7 +1,7 @@
 ---
 title: "ndesConnector resource type"
 description: "Entity which represents an OnPrem Ndes connector."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # ndesConnector resource type

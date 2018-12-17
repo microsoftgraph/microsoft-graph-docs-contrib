@@ -1,7 +1,7 @@
 ---
 title: "windows10EditionType enum type"
 description: "Windows 10 Edition type."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windows10EditionType enum type

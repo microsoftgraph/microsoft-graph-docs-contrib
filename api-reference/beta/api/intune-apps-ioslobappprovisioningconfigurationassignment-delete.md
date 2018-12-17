@@ -1,7 +1,7 @@
 ---
 title: "Delete iosLobAppProvisioningConfigurationAssignment"
 description: "Deletes a iosLobAppProvisioningConfigurationAssignment."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete iosLobAppProvisioningConfigurationAssignment

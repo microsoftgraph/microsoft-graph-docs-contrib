@@ -1,7 +1,7 @@
 ---
 title: "revokeUserLicense action"
 description: "Revoke assigned iOS VPP user license for given app."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # revokeUserLicense action

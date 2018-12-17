@@ -1,7 +1,7 @@
 ---
 title: "List sectionGroups"
 description: "Retrieve a list of sectionGroup objects."
-author:"Jewan-microsoft"
+author: "Jewan-microsoft"
 ---
 
 # List sectionGroups

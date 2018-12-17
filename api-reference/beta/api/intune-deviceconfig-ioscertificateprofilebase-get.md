@@ -1,7 +1,7 @@
 ---
 title: "Get iosCertificateProfileBase"
 description: "Read properties and relationships of the iosCertificateProfileBase object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get iosCertificateProfileBase

@@ -1,7 +1,7 @@
 ---
 title: "configurationManagerClientEnabledFeatures resource type"
 description: "configuration Manager client enabled features"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # configurationManagerClientEnabledFeatures resource type

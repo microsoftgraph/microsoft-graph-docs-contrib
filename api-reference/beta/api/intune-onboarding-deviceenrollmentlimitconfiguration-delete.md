@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceEnrollmentLimitConfiguration"
 description: "Deletes a deviceEnrollmentLimitConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete deviceEnrollmentLimitConfiguration

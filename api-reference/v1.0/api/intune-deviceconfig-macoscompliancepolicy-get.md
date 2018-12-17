@@ -1,7 +1,7 @@
 ---
 title: "Get macOSCompliancePolicy"
 description: "Read properties and relationships of the macOSCompliancePolicy object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get macOSCompliancePolicy

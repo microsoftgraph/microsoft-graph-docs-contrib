@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskProfile resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsKioskProfile resource type

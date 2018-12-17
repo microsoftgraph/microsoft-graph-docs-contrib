@@ -1,7 +1,7 @@
 ---
 title: "bitLockerEncryptionMethod enum type"
 description: "BitLockerEncryptionMethod types"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # bitLockerEncryptionMethod enum type

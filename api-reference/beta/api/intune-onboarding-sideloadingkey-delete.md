@@ -1,7 +1,7 @@
 ---
 title: "Delete sideLoadingKey"
 description: "Deletes a sideLoadingKey."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete sideLoadingKey

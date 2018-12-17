@@ -1,7 +1,7 @@
 ---
 title: "shutDown action"
 description: "Shut down device"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # shutDown action

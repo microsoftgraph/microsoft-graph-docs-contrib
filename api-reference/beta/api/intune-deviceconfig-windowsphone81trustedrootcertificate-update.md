@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81TrustedRootCertificate"
 description: "Update the properties of a windowsPhone81TrustedRootCertificate object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update windowsPhone81TrustedRootCertificate

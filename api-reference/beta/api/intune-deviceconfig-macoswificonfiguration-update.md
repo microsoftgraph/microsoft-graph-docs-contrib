@@ -1,7 +1,7 @@
 ---
 title: "Update macOSWiFiConfiguration"
 description: "Update the properties of a macOSWiFiConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update macOSWiFiConfiguration

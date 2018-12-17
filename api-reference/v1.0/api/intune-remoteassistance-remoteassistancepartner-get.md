@@ -1,7 +1,7 @@
 ---
 title: "Get remoteAssistancePartner"
 description: "Read properties and relationships of the remoteAssistancePartner object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get remoteAssistancePartner

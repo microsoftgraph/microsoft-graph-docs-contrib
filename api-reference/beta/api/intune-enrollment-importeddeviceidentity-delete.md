@@ -1,7 +1,7 @@
 ---
 title: "Delete importedDeviceIdentity"
 description: "Deletes a importedDeviceIdentity."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete importedDeviceIdentity

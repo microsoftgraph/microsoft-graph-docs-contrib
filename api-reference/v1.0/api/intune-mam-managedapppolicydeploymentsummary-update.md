@@ -1,7 +1,7 @@
 ---
 title: "Update managedAppPolicyDeploymentSummary"
 description: "Update the properties of a managedAppPolicyDeploymentSummary object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update managedAppPolicyDeploymentSummary

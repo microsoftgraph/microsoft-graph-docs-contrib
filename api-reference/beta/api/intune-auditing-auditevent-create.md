@@ -1,7 +1,7 @@
 ---
 title: "Create auditEvent"
 description: "Create a new auditEvent object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create auditEvent

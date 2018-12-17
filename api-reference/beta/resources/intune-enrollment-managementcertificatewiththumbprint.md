@@ -1,7 +1,7 @@
 ---
 title: "managementCertificateWithThumbprint resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # managementCertificateWithThumbprint resource type

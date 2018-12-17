@@ -1,7 +1,7 @@
 ---
 title: "List windowsVpnConfigurations"
 description: "List properties and relationships of the windowsVpnConfiguration objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windowsVpnConfigurations

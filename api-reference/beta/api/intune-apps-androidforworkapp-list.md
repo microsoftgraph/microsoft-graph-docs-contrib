@@ -1,7 +1,7 @@
 ---
 title: "List androidForWorkApps"
 description: "List properties and relationships of the androidForWorkApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List androidForWorkApps

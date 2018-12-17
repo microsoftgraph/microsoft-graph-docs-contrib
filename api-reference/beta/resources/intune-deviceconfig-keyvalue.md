@@ -1,7 +1,7 @@
 ---
 title: "keyValue resource type"
 description: "Key Value definition."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # keyValue resource type

@@ -1,7 +1,7 @@
 ---
 title: "Create windowsAutopilotDeviceIdentity"
 description: "Create a new windowsAutopilotDeviceIdentity object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windowsAutopilotDeviceIdentity

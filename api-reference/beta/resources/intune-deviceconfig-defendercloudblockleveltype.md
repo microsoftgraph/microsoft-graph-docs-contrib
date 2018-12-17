@@ -1,7 +1,7 @@
 ---
 title: "defenderCloudBlockLevelType enum type"
 description: "Possible values of Cloud Block Level"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # defenderCloudBlockLevelType enum type

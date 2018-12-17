@@ -1,7 +1,7 @@
 ---
 title: "Update applePushNotificationCertificate"
 description: "Update the properties of a applePushNotificationCertificate object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update applePushNotificationCertificate

@@ -1,7 +1,7 @@
 ---
 title: "localSecurityOptionsInformationDisplayedOnLockScreenType enum type"
 description: "Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # localSecurityOptionsInformationDisplayedOnLockScreenType enum type

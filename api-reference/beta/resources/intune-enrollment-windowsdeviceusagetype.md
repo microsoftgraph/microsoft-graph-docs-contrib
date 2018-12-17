@@ -1,7 +1,7 @@
 ---
 title: "windowsDeviceUsageType enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsDeviceUsageType enum type

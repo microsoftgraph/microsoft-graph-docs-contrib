@@ -1,7 +1,7 @@
 ---
 title: "enableLegacyPcManagement action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # enableLegacyPcManagement action

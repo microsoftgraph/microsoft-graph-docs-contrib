@@ -1,7 +1,7 @@
 ---
 title: "deviceComplianceScheduledActionForRule resource type"
 description: "Scheduled Action for Rule"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceComplianceScheduledActionForRule resource type

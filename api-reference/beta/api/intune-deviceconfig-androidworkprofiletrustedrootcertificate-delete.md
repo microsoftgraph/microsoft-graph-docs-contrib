@@ -1,7 +1,7 @@
 ---
 title: "Delete androidWorkProfileTrustedRootCertificate"
 description: "Deletes a androidWorkProfileTrustedRootCertificate."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete androidWorkProfileTrustedRootCertificate

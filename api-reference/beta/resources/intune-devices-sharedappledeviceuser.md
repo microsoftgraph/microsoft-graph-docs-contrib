@@ -1,7 +1,7 @@
 ---
 title: "sharedAppleDeviceUser resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # sharedAppleDeviceUser resource type

@@ -1,7 +1,7 @@
 ---
 title: "lanManagerAuthenticationLevel enum type"
 description: "Possible values for LanManagerAuthenticationLevel"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # lanManagerAuthenticationLevel enum type

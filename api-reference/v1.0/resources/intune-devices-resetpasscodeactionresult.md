@@ -1,7 +1,7 @@
 ---
 title: "resetPasscodeActionResult resource type"
 description: "Reset passcode action result"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # resetPasscodeActionResult resource type

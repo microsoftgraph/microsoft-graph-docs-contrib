@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Deletes a deviceEnrollmentPlatformRestrictionsConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete deviceEnrollmentPlatformRestrictionsConfiguration

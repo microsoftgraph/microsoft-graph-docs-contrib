@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsDomainJoinConfiguration"
 description: "Deletes a windowsDomainJoinConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windowsDomainJoinConfiguration

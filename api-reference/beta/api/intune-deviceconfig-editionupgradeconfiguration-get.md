@@ -1,7 +1,7 @@
 ---
 title: "Get editionUpgradeConfiguration"
 description: "Read properties and relationships of the editionUpgradeConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get editionUpgradeConfiguration

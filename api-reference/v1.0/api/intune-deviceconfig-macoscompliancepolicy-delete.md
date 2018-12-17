@@ -1,7 +1,7 @@
 ---
 title: "Delete macOSCompliancePolicy"
 description: "Deletes a macOSCompliancePolicy."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete macOSCompliancePolicy

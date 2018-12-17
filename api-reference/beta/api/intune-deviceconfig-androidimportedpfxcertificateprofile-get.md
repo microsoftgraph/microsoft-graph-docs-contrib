@@ -1,7 +1,7 @@
 ---
 title: "Get androidImportedPFXCertificateProfile"
 description: "Read properties and relationships of the androidImportedPFXCertificateProfile object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get androidImportedPFXCertificateProfile

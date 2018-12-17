@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskAppBase resource type"
 description: "The base class for a type of apps"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # windowsKioskAppBase resource type

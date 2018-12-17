@@ -1,7 +1,7 @@
 ---
 title: "Delete networkIPv6ConfigurationManagementCondition"
 description: "Deletes a networkIPv6ConfigurationManagementCondition."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete networkIPv6ConfigurationManagementCondition

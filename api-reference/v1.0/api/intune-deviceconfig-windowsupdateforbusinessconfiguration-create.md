@@ -1,7 +1,7 @@
 ---
 title: "Create windowsUpdateForBusinessConfiguration"
 description: "Create a new windowsUpdateForBusinessConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create windowsUpdateForBusinessConfiguration

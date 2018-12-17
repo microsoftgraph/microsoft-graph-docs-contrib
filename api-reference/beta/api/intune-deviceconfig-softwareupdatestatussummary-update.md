@@ -1,7 +1,7 @@
 ---
 title: "Update softwareUpdateStatusSummary"
 description: "Update the properties of a softwareUpdateStatusSummary object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update softwareUpdateStatusSummary

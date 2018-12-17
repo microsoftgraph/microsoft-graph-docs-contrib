@@ -1,7 +1,7 @@
 ---
 title: "event: tentativelyAccept"
 description: "Tentatively accept the specified event in a user calendar."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # event: tentativelyAccept

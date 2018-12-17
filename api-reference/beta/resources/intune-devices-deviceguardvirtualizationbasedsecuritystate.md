@@ -1,7 +1,7 @@
 ---
 title: "deviceGuardVirtualizationBasedSecurityState enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceGuardVirtualizationBasedSecurityState enum type

@@ -1,7 +1,7 @@
 ---
 title: "Delete settingStateDeviceSummary"
 description: "Deletes a settingStateDeviceSummary."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete settingStateDeviceSummary

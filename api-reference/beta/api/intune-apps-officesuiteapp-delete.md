@@ -1,7 +1,7 @@
 ---
 title: "Delete officeSuiteApp"
 description: "Deletes a officeSuiteApp."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete officeSuiteApp

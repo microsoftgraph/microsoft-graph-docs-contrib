@@ -1,7 +1,7 @@
 ---
 title: "mobileAppActionType enum type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # mobileAppActionType enum type

@@ -1,7 +1,7 @@
 ---
 title: "Get roleAssignment"
 description: "Read properties and relationships of the roleAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get roleAssignment

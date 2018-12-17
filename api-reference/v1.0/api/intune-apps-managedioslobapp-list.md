@@ -1,7 +1,7 @@
 ---
 title: "List managedIOSLobApps"
 description: "List properties and relationships of the managedIOSLobApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List managedIOSLobApps

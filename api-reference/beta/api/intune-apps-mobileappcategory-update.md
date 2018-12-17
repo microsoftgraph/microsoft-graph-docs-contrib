@@ -1,7 +1,7 @@
 ---
 title: "Update mobileAppCategory"
 description: "Update the properties of a mobileAppCategory object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update mobileAppCategory

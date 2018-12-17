@@ -1,7 +1,7 @@
 ---
 title: "event resource type"
 description: "An event in a calendar."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # event resource type

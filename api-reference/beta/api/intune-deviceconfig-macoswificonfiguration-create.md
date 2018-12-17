@@ -1,7 +1,7 @@
 ---
 title: "Create macOSWiFiConfiguration"
 description: "Create a new macOSWiFiConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create macOSWiFiConfiguration

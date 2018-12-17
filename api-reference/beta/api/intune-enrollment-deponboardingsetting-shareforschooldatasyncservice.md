@@ -1,7 +1,7 @@
 ---
 title: "shareForSchoolDataSyncService action"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # shareForSchoolDataSyncService action

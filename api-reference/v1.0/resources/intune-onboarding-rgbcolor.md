@@ -1,7 +1,7 @@
 ---
 title: "rgbColor resource type"
 description: "Color in RGB."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # rgbColor resource type

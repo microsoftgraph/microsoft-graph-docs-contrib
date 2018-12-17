@@ -1,7 +1,7 @@
 ---
 title: "Get managedDeviceCertificateState"
 description: "Read properties and relationships of the managedDeviceCertificateState object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managedDeviceCertificateState

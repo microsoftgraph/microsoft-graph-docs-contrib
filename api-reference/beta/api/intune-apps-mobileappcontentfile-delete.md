@@ -1,7 +1,7 @@
 ---
 title: "Delete mobileAppContentFile"
 description: "Deletes a mobileAppContentFile."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete mobileAppContentFile

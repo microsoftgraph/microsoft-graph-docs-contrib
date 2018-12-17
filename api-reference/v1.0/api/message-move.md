@@ -1,7 +1,7 @@
 ---
 title: "message: move"
 description: "Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message."
-author:"angelgolfer-ms"
+author: "angelgolfer-ms"
 ---
 
 # message: move

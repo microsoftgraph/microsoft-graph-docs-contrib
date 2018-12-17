@@ -1,7 +1,7 @@
 ---
 title: "Get managedMobileApp"
 description: "Read properties and relationships of the managedMobileApp object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get managedMobileApp

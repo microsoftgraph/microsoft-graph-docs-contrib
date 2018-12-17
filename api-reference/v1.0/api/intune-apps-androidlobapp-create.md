@@ -1,7 +1,7 @@
 ---
 title: "Create androidLobApp"
 description: "Create a new androidLobApp object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create androidLobApp

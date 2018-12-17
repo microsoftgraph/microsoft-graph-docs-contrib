@@ -1,7 +1,7 @@
 ---
 title: "List channel message replies"
 description: "List all the replies of a message in a channel of a team."
-author:"nkramer"
+author: "nkramer"
 ---
 
 # List channel message replies

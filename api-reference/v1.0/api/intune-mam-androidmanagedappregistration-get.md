@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedAppRegistration"
 description: "Read properties and relationships of the androidManagedAppRegistration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get androidManagedAppRegistration

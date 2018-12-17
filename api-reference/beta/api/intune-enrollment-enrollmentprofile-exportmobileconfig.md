@@ -1,7 +1,7 @@
 ---
 title: "exportMobileConfig function"
 description: "Exports the mobile configuration"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # exportMobileConfig function

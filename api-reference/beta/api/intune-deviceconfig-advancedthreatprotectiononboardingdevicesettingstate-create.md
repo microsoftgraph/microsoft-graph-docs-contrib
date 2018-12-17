@@ -1,7 +1,7 @@
 ---
 title: "Create advancedThreatProtectionOnboardingDeviceSettingState"
 description: "Create a new advancedThreatProtectionOnboardingDeviceSettingState object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create advancedThreatProtectionOnboardingDeviceSettingState

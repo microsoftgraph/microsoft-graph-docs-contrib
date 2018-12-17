@@ -1,7 +1,7 @@
 ---
 title: "Get androidDeviceOwnerWiFiConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerWiFiConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get androidDeviceOwnerWiFiConfiguration

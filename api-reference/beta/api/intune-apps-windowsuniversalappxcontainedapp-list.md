@@ -1,7 +1,7 @@
 ---
 title: "List windowsUniversalAppXContainedApps"
 description: "List properties and relationships of the windowsUniversalAppXContainedApp objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List windowsUniversalAppXContainedApps

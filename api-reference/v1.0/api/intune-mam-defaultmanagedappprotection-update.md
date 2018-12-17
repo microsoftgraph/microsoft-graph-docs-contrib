@@ -1,7 +1,7 @@
 ---
 title: "Update defaultManagedAppProtection"
 description: "Update the properties of a defaultManagedAppProtection object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update defaultManagedAppProtection

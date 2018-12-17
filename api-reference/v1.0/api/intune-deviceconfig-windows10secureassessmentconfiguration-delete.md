@@ -1,7 +1,7 @@
 ---
 title: "Delete windows10SecureAssessmentConfiguration"
 description: "Deletes a windows10SecureAssessmentConfiguration."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Delete windows10SecureAssessmentConfiguration

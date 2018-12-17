@@ -1,7 +1,7 @@
 ---
 title: "Create deviceAndAppManagementRoleAssignment"
 description: "Create a new deviceAndAppManagementRoleAssignment object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Create deviceAndAppManagementRoleAssignment

@@ -1,7 +1,7 @@
 ---
 title: "Get importedWindowsAutopilotDeviceIdentity"
 description: "Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Get importedWindowsAutopilotDeviceIdentity

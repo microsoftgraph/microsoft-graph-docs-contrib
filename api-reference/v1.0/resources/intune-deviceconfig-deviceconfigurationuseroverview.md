@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationUserOverview resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceConfigurationUserOverview resource type

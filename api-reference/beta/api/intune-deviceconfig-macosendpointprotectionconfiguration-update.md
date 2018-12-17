@@ -1,7 +1,7 @@
 ---
 title: "Update macOSEndpointProtectionConfiguration"
 description: "Update the properties of a macOSEndpointProtectionConfiguration object."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # Update macOSEndpointProtectionConfiguration

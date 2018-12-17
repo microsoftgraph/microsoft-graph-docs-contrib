@@ -1,7 +1,7 @@
 ---
 title: "List easEmailProfileConfigurationBases"
 description: "List properties and relationships of the easEmailProfileConfigurationBase objects."
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # List easEmailProfileConfigurationBases

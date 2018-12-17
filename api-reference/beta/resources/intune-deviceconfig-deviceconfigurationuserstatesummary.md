@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationUserStateSummary resource type"
 description: "Not yet documented"
-author:"tfitzmac"
+author: "tfitzmac"
 ---
 
 # deviceConfigurationUserStateSummary resource type
