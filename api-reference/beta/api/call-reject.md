@@ -1,6 +1,7 @@
 ---
 title: "call: reject"
 description: "Reject an incoming call."
+author: "VinodRavichandran"
 ---
 
 # call: reject
