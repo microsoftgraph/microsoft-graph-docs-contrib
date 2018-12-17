@@ -1,6 +1,6 @@
 ---
 title: "ChartCollection: ItemAt"
-description: "Gets a chart based on its position in the collection."
+description: "Gets a chart based on its position in the collection."author: "lumine2008"
 ---
 
 # ChartCollection: ItemAt

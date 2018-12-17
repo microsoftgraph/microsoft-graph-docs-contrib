@@ -1,6 +1,6 @@
 ---
 title: "TableColumn: DataBodyRange"
-description: "Gets the range object associated with the data body of the column."
+description: "Gets the range object associated with the data body of the column."author: "lumine2008"
 ---
 
 # TableColumn: DataBodyRange

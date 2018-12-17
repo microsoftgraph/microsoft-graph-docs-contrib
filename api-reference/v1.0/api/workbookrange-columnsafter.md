@@ -1,6 +1,6 @@
 ---
 title: "workbookRange: columnsAfter"
-description: "Gets a certain number of columns to the right of the given range."
+description: "Gets a certain number of columns to the right of the given range."author: "lumine2008"
 ---
 
 # workbookRange: columnsAfter

@@ -1,6 +1,6 @@
 ---
 title: "Get ChartLineFormat"
-description: "Retrieve the properties and relationships of chartlineformat object."
+description: "Retrieve the properties and relationships of chartlineformat object."author: "lumine2008"
 ---
 
 # Get ChartLineFormat

@@ -1,6 +1,6 @@
 ---
 title: "List points"
-description: "Retrieve a list of chartpoints objects."
+description: "Retrieve a list of chartpoints objects."author: "lumine2008"
 ---
 
 # List points

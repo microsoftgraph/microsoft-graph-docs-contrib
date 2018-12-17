@@ -1,6 +1,6 @@
 ---
 title: "Range: Intersection"
-description: "Gets the range object that represents the rectangular intersection of the given ranges."
+description: "Gets the range object that represents the rectangular intersection of the given ranges."author: "lumine2008"
 ---
 
 # Range: Intersection

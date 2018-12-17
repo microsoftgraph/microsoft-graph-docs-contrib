@@ -1,6 +1,6 @@
 ---
 title: "TableColumn: delete"
-description: "Deletes the column from the table."
+description: "Deletes the column from the table."author: "lumine2008"
 ---
 
 # TableColumn: delete

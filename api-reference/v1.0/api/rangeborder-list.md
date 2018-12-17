@@ -1,6 +1,6 @@
 ---
 title: "List RangeBorderCollection"
-description: "Retrieve a list of rangeborder objects."
+description: "Retrieve a list of rangeborder objects."author: "lumine2008"
 ---
 
 # List RangeBorderCollection

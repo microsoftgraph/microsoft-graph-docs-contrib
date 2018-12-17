@@ -1,6 +1,6 @@
 ---
 title: "Update chartseries"
-description: "Update the properties of chartseries object."
+description: "Update the properties of chartseries object."author: "lumine2008"
 ---
 
 # Update chartseries

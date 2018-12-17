@@ -1,6 +1,6 @@
 ---
 title: "List names"
-description: "Retrieve a list of nameditem objects."
+description: "Retrieve a list of nameditem objects."author: "lumine2008"
 ---
 
 # List names

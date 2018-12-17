@@ -1,6 +1,6 @@
 ---
 title: "List rangeView rows"
-description: "Retrieve a list of range view objects."
+description: "Retrieve a list of range view objects."author: "lumine2008"
 ---
 
 # List rangeView rows

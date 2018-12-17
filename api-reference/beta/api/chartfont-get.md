@@ -1,6 +1,6 @@
 ---
 title: "Get ChartFont"
-description: "Retrieve the properties and relationships of chartfont object."
+description: "Retrieve the properties and relationships of chartfont object."author: "lumine2008"
 ---
 
 # Get ChartFont

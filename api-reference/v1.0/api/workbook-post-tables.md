@@ -1,6 +1,6 @@
 ---
 title: "Create table"
-description: "Use this API to create a new Table."
+description: "Use this API to create a new Table."author: "lumine2008"
 ---
 
 # Create table

@@ -1,6 +1,6 @@
 ---
 title: "WorksheetProtection: protect"
-description: "Protect a worksheet. It throws if the worksheet has been protected."
+description: "Protect a worksheet. It throws if the worksheet has been protected."author: "lumine2008"
 ---
 
 # WorksheetProtection: protect

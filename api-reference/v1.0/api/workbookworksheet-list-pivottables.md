@@ -1,6 +1,6 @@
 ---
 title: "List pivotTables"
-description: "Retrieve a list of workbookpivottable objects."
+description: "Retrieve a list of workbookpivottable objects."author: "lumine2008"
 ---
 
 # List pivotTables

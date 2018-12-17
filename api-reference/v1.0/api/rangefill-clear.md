@@ -1,6 +1,6 @@
 ---
 title: "RangeFill: clear"
-description: "Resets the range background."
+description: "Resets the range background."author: "lumine2008"
 ---
 
 # RangeFill: clear

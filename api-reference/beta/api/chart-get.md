@@ -1,6 +1,6 @@
 ---
 title: "Get Chart"
-description: "Retrieve the properties and relationships of chart object."
+description: "Retrieve the properties and relationships of chart object."author: "lumine2008"
 ---
 
 # Get Chart

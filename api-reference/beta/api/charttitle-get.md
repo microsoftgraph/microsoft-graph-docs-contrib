@@ -1,6 +1,6 @@
 ---
 title: "Get ChartTitle"
-description: "Retrieve the properties and relationships of charttitle object."
+description: "Retrieve the properties and relationships of charttitle object."author: "lumine2008"
 ---
 
 # Get ChartTitle

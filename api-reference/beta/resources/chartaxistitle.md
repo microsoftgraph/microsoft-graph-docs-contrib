@@ -1,6 +1,6 @@
 ---
 title: "ChartAxisTitle resource type"
-description: "Represents the title of a chart axis."
+description: "Represents the title of a chart axis."author: "lumine2008"
 ---
 
 # ChartAxisTitle resource type

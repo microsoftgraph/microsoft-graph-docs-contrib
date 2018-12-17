@@ -1,6 +1,6 @@
 ---
 title: "Chart: setData"
-description: "Resets the source data for the chart."
+description: "Resets the source data for the chart."author: "lumine2008"
 ---
 
 # Chart: setData

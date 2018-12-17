@@ -1,6 +1,6 @@
 ---
 title: "Table: TotalRowRange"
-description: "Gets the range object associated with totals row of the table."
+description: "Gets the range object associated with totals row of the table."author: "lumine2008"
 ---
 
 # Table: TotalRowRange

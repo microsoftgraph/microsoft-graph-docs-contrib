@@ -1,6 +1,6 @@
 ---
 title: "Get ChartPoint"
-description: "Retrieve the properties and relationships of chartpoint object."
+description: "Retrieve the properties and relationships of chartpoint object."author: "lumine2008"
 ---
 
 # Get ChartPoint

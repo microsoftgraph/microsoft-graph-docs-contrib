@@ -1,6 +1,6 @@
 ---
 title: "Range: Column"
-description: "Gets a column contained in the range."
+description: "Gets a column contained in the range."author: "lumine2008"
 ---
 
 # Range: Column

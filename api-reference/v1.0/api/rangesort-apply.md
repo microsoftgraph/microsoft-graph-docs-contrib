@@ -1,6 +1,6 @@
 ---
 title: "RangeSort: apply"
-description: "Perform a sort operation."
+description: "Perform a sort operation."author: "lumine2008"
 ---
 
 # RangeSort: apply
