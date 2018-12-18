@@ -1,6 +1,7 @@
 ---
 title: "Get Outlook messages in a shared or delegated folder"
 description: "These topics also have similar section - list events, get event, get calendar, list contacts, get contact, get contact folder."
+author: "angelgolfer-ms"
 ---
 
 # Get Outlook messages in a shared or delegated folder

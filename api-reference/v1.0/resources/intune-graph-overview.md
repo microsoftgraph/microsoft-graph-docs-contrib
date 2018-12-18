@@ -1,6 +1,7 @@
 ---
 title: "Using the Intune Graph API"
 description: " Intune hybrid deployments are not supported. "
+author: "tfitzmac"
 ---
 
 # Working with Intune in Microsoft Graph  

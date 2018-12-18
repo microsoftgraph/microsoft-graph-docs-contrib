@@ -1,6 +1,7 @@
 ---
 title: "Create online meeting"
 description: "Creates an online meeting on behalf of a user specified in the request body."
+author: "lleonard-msft"
 ---
 
 # Create online meeting
