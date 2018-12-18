@@ -1,6 +1,7 @@
 ---
 title: "message resource type"
 description: "A message in a mailFolder."
+author: "angelgolfer-ms"
 ---
 
 # message resource type
