@@ -37,7 +37,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
-> **Note:** The respective sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts) allow reading or writing contacts, events, and messages in shared or delegated folders. However, these sharing permissions do NOT support creating or accessing subscriptions to contacts, events, and messages in such folders. Use the corresponding application permissions (with Contacts.Read, Calendars.Read, Mail.Read being the least privileged permissions) to subscribe to items in the corresponding contact, calendar, and mail folders in all the mailboxes.
+> **Note:** The Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts) allow reading or writing contacts, events, and messages in shared or delegated folders. These sharing permissions do **not** support subscribing to notifications on items in shared or delegated folders. Use the corresponding delegated permission to subscribe to items in a specified folder in the signed-in user's mailbox, or, use the corresponding application permission to subscribe to items of that type in any user's folder and mailbox in the tenant.
 
 ## HTTP request
 
