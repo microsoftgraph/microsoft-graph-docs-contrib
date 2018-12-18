@@ -6255,6 +6255,11 @@
           href: api/contract-get.md
         - name: List contracts
           href: api/contract-list.md
+      - name: Data policy operation
+        href: resources/datapolicyoperation.md
+        items:
+        - name: Get data policy operation
+          href: api/datapolicyoperation-get.md  
       - name: Deleted items
         href: resources/directory.md
         items:
