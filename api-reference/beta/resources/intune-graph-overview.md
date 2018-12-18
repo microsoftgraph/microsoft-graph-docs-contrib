@@ -1,6 +1,7 @@
 ---
-title: "Using the Microsoft Graph API for Intune"
-description: "The Microsoft Graph API for Intune enables programmatic access to Intune information for your tenant; the API performs the same Intune operations as those available through the Azure Portal."
+title: "Using the Intune Graph API"
+description: " Intune hybrid deployments are not supported. "
+author: "tfitzmac"
 ---
 
 # Working with Intune in Microsoft Graph  
