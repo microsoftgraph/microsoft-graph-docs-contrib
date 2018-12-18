@@ -213,8 +213,7 @@
       "ms.author": "jthake-msft",
       "ms.suite": "microsoft graph",
       "ms.date": "06/11/2018",
-      "uhfHeaderId": "MSDocsHeader-MSGraph",
-      "searchScope": ["graph"]
+      "uhfHeaderId": "MSDocsHeader-MSGraph"
     },
     "fileMetadata": {
       "breadcrumb_path": {
