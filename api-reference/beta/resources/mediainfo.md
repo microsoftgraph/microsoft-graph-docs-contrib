@@ -11,10 +11,10 @@ author: "VinodRavichandran"
 The media information used in actions for prompts.
 
 ## Properties
-| Property	 | Type	   |Description|
-|:---------------|:--------|:----------|
-| resourceId     | String  |           |
-| uri            | String  |           |
+| Property	     | Type	   | Description                      |
+|:---------------|:--------|:---------------------------------|
+| resourceId     | String  | Unique identity of the resource. |
+| uri            | String  | Path to the resource.            |
 
 ## JSON representation
 

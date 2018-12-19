@@ -1,12 +1,14 @@
 ---
 title: "commsNotification resource type"
-description: "Communications notification."
+description: "Communications notification base type that is published by Communications servers to notify changes."
 author: "VinodRavichandran"
 ---
 
 # commsNotification resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+
+Communications notification base type that is published by Communications servers to notify changes.
 
 ## Properties
 | Property	     | Type    | Description                                                |

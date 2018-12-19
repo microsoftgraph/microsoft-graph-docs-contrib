@@ -1,6 +1,6 @@
 ---
 title: "mediaConfig resource type"
-description: "media configuration used to connect to a call."
+description: "The media configuration used to connect to a call."
 author: "VinodRavichandran"
 ---
 
