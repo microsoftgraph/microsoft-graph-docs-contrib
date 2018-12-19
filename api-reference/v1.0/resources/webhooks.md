@@ -1,11 +1,11 @@
 ---
 title: "Use the Microsoft Graph API to get change notifications"
-description: "The Microsoft Graph REST API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see Set up notifications for changes in user data."
+description: "The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see Set up notifications for changes in user data."
 ---
 
 # Use the Microsoft Graph API to get change notifications
 
-The Microsoft Graph REST API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](/graph/webhooks).
+The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](/graph/webhooks).
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
@@ -25,9 +25,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][], [alert][] |
+| Delegated - work or school account     | [alert][], [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][]|
 | Delegated - personal Microsoft account | [contact][], [drive][], [event][], [message][]                                        |
-| Application                            | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][], [alert][] |
+| Application                            | [alert][], [contact][], [drive][], [event][], [group][], [message][], [user][]|
 
 ## See also
 
