@@ -49,7 +49,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_changeScreenSharingRole"
+  "name": "call-changeScreenSharingRole"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/changeScreenSharingRole

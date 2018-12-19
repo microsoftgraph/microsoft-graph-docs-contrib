@@ -1,4 +1,4 @@
----
+﻿---
 title: "participant: mute"
 description: "Mute a specific participant in the call."
 author: "VinodRavichandran"
@@ -48,7 +48,7 @@ The following example shows how to call this API.
 The following example shows the request.
 <!-- {
   "blockType": "request",
-  "name": "participant_mute"
+  "name": "participant-mute"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}/mute
