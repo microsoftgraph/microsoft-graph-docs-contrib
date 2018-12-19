@@ -1,6 +1,7 @@
 ---
 title: "Refresh Session"
 description: "Use this API to refresh an existing workbook session. "
+author: "lumine2008"
 ---
 
 # Refresh Session
@@ -70,7 +71,7 @@ HTTP/1.1 204 No Content
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: refresh_excel_session//api-reference/v1.0/api/workbook_refreshsession.md:
+    "Warning: refresh_excel_session//api-reference/v1.0/api/workbook-refreshsession.md:
       Request includes a non-standard header: workbook-session-id"
   ]
 }-->

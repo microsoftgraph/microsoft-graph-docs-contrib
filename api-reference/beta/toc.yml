@@ -6255,6 +6255,11 @@
           href: api/contract-get.md
         - name: List contracts
           href: api/contract-list.md
+      - name: Data policy operation
+        href: resources/datapolicyoperation.md
+        items:
+        - name: Get data policy operation
+          href: api/datapolicyoperation-get.md  
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -6289,6 +6294,8 @@
           href: api/device-post-registeredowners.md
         - name: Create registered user
           href: api/device-post-registeredusers.md
+        - name: List device groups
+          href: api/device-list-memberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -6438,6 +6445,39 @@
           href: api/organization-get.md
         - name: Update org details
           href: api/organization-update.md
+      - name: Organizational contacts
+        href: resources/orgcontact.md
+        items:
+        - name: Contact
+          href: resources/orgcontact.md
+          items:
+          - name: List org contacts
+            href: api/orgcontact-list.md
+          - name: Get org contact
+            href: api/orgcontact-get.md
+          - name: Update org contact
+            href: api/orgcontact-update.md
+          - name: Delete org contact
+            href: api/orgcontact-delete.md
+        - name: Groups
+          href: resources/group.md
+          items:
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get member groups
+            href: api/orgcontact-getmembergroups.md
+          - name: Check member groups
+            href: api/orgcontact-checkmembergroups.md
+        - name: Org hierarchy
+          href: resources/directoryobject.md
+          items:
+          - name: List direct reports
+            href: api/orgcontact-list-directreports.md
+        - name: Directory object
+          href: resources/directoryobject.md
+          items:
+          - name: Get member objects
+            href: api/orgcontact-getmemberobjects.md
       - name: Policies
         href: resources/policy.md
         items:
@@ -6474,9 +6514,9 @@
           - name: Self role deactivate
             href: api/privilegedrole-selfdeactivate.md
           - name: Get role settings
-            href: api/privilegedrolesettings_get.md
+            href: api/privilegedrolesettings-get.md
           - name: Update role settings
-            href: api/privilegedrolesettings_update.md
+            href: api/privilegedrolesettings-update.md
           - name: Get role summary
             href: api/privilegedrolesummary-get.md
         - name: Privileged role assignment
@@ -6500,13 +6540,13 @@
           href: resources/privilegedroleassignmentrequest.md
           items:
           - name: List role assignments
-            href: api/privilegedroleassignmentrequest_list.md
+            href: api/privilegedroleassignmentrequest-list.md
           - name: Create role assignments
-            href: api/privilegedroleassignmentrequest_post.md
+            href: api/privilegedroleassignmentrequest-post.md
           - name: Cancel role assignment
-            href: api/privilegedroleassignmentrequest_cancel.md
+            href: api/privilegedroleassignmentrequest-cancel.md
           - name: Get my role assignments
-            href: api/privilegedroleassignmentrequest_my.md
+            href: api/privilegedroleassignmentrequest-my.md
         - name: Audit event
           href: resources/privilegedoperationevent.md
           items:
@@ -6519,6 +6559,8 @@
             href: api/governanceresource-list.md
           - name: Get
             href: api/governanceresource-get.md
+          - name: Register
+            href: api/governanceresource-register.md
         - name: Role definitions
           href: resources/governanceroledefinition.md
           items:
@@ -6886,39 +6928,6 @@
         items:
         - name: Get resource
           href: api/resource-get.md
-    - name: Organizational contacts
-      href: resources/orgcontact.md
-      items:
-      - name: Contact
-        href: resources/orgcontact.md
-        items:
-        - name: List org contacts
-          href: api/orgcontact-list.md
-        - name: Get org contact
-          href: api/orgcontact-get.md
-        - name: Update org contact
-          href: api/orgcontact-update.md
-        - name: Delete org contact
-          href: api/orgcontact-delete.md
-      - name: Groups
-        href: resources/group.md
-        items:
-        - name: List memberOf
-          href: api/orgcontact-list-memberof.md
-        - name: Get member groups
-          href: api/orgcontact-getmembergroups.md
-        - name: Check member groups
-          href: api/orgcontact-checkmembergroups.md
-      - name: Org hierarchy
-        href: resources/directoryobject.md
-        items:
-        - name: List direct reports
-          href: api/orgcontact-list-directreports.md
-      - name: Directory object
-        href: resources/directoryobject.md
-        items:
-        - name: Get member objects
-          href: api/orgcontact-getmemberobjects.md
     - name: Personal contacts
       href: resources/contact.md
       items:
@@ -7409,6 +7418,8 @@
         href: resources/team.md
         items:
         - name: Create team
+          href: api/team-post.md
+        - name: Create team from group
           href: api/team-put-teams.md
         - name: Get team
           href: api/team-get.md
@@ -7423,7 +7434,7 @@
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams
-          href: /en-us/concepts/teams-list-all-teams
+          href: /graph/teams-list-all-teams?toc=./ref/toc.json
       - name: Group (team)
         href: resources/group.md
         items:

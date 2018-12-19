@@ -1,6 +1,7 @@
 ---
 title: "List channels"
 description: "Retrieve the list of channels in this team."
+author: "nkramer"
 ---
 
 # List channels
@@ -18,6 +19,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Group.ReadWrite.All    |
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

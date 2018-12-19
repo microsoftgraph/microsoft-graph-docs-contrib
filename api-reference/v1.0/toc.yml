@@ -131,6 +131,8 @@
           href: api/user-checkmembergroups.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
+        - name: Export personal data
+          href: api/user-exportpersonaldata.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -3042,6 +3044,11 @@
           href: api/contract-get.md
         - name: List contracts
           href: api/contract-list.md
+      - name: Data policy operation
+        href: resources/datapolicyoperation.md
+        items:
+        - name: Get data policy operation
+          href: api/datapolicyoperation-get.md  
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -3076,6 +3083,8 @@
           href: api/device-post-registeredowners.md
         - name: Create registered user
           href: api/device-post-registeredusers.md
+        - name: List device groups
+          href: api/device-list-memberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -3830,7 +3839,7 @@
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams
-          href: /en-us/concepts/teams-list-all-teams
+          href: /graph/teams-list-all-teams?toc=./ref/toc.json
       - name: Group (team)
         href: resources/group.md
         items:

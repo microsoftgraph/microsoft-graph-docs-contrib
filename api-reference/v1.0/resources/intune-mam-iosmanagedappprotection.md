@@ -1,6 +1,7 @@
 ---
 title: "iosManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device"
+author: "tfitzmac"
 ---
 
 # iosManagedAppProtection resource type
@@ -124,7 +125,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune_mam_iosmanagedappprotection.md/microsoft.graph.iosManagedAppProtection/allowedDataStorageLocations:
+     "Warning: /api-reference/v1.0/resources/intune-mam-iosmanagedappprotection.md/microsoft.graph.iosManagedAppProtection/allowedDataStorageLocations:
       Inconsistent types between parameter (String) and table (Object)"
   ],
 }

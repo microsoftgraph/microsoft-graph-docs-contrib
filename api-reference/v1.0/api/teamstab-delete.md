@@ -1,6 +1,7 @@
 ---
 title: "Delete tab from channel"
 description: "Removes (unpins) a tab from the specified channel within a team. "
+author: "nkramer"
 ---
 
 # Delete tab from channel
@@ -17,6 +18,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.ReadWrite.All |
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

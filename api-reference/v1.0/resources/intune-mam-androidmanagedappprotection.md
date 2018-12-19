@@ -1,6 +1,7 @@
 ---
 title: "androidManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device"
+author: "tfitzmac"
 ---
 
 # androidManagedAppProtection resource type
@@ -128,7 +129,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune_mam_androidmanagedappprotection.md/microsoft.graph.androidManagedAppProtection/allowedDataStorageLocations:
+     "Warning: /api-reference/v1.0/resources/intune-mam-androidmanagedappprotection.md/microsoft.graph.androidManagedAppProtection/allowedDataStorageLocations:
       Inconsistent types between parameter (String) and table (Object)"
   ],
 }

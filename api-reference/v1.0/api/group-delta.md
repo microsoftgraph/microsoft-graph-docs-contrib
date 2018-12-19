@@ -76,19 +76,19 @@ If successful, this method returns `200 OK` response code and [group](../resourc
 
 By default, requests using a `deltaLink` or `nextLink` return the same properties as selected in the initial delta query in the following ways:
 
-- If the property has changed, return the property in the JSON response.
-- If the property has been set to an empty value, return the property value as null.
-- If the property has not changed, return the value as null.
+- If the property has changed, the new value is included in the response. This includes properties being set to null value.
+- If the property has not changed, the old value is included in the response.
+- If the property has never been set before it will not be included in the response at all.
 
-> **Note:** With the above behavior, it is not possible to differentiate between a property that has not changed and one that has changed to a `null` value. See the [second example](#request-2) below. If this is important, we recommend using the alternative behavior described in the next section.
+
+> **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values  - as shown in the [second example](#request-2) below.
 
 #### Alternative: return only the changed properties
 
 Adding an optional request header - `prefer:return=minimal` - results in the following behavior:
 
-- If the property has changed, return the property in the JSON response.
-- If the property has been set to an empty value, return the property value as null.
-- If the property has not changed, do not include the property in the JSON response. (Different from the default behavior.)
+- If the property has changed, the new value is included in the response. This includes properties being set to null value.
+- If the property has not changed, the property is not included in the response at all. (Different from the default behavior.)
 
 > **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
 
@@ -166,7 +166,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 
 #### Response 2
 
-The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that `description` and `mailNickname` have the value of `null` which means that they may have not changed or have been set to an empty value.
+The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that all 3 properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.
 
 <!-- {
   "blockType": "response",
@@ -186,7 +186,7 @@ Content-type: application/json
     {
       "displayName": "displayName-value",
       "description": null,
-      "mailNickname": null
+      "mailNickname": "mailNickname-value"
     }
   ]
 }

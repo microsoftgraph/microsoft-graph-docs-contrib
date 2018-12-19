@@ -23,15 +23,16 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 
 In general, subscription operations require read permission to the resource. For example, to get notifications for messages, your app needs the `Mail.Read` permission. The [create subscription](../api/subscription-post-subscriptions.md) article lists permissions needed for each resource type. The following table lists the types of permissions your app can request to use webhooks for specific resource types.
 
-| Permission type                        | Supported resource types in v1.0                                 |
-| :------------------------------------- | :--------------------------------------------------------------- |
-| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [message][], [alert][] |
-| Delegated - personal Microsoft account | None                                                             |
-| Application                            | [contact][], [conversation][], [event][], [message][], [alert][]           |
+| Permission type                        | Supported resource types                                                      |
+| :------------------------------------- | :------------------------------------------------------------------------------------ |
+| Delegated - work or school account     | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][], [alert][] |
+| Delegated - personal Microsoft account | [contact][], [drive][], [event][], [message][]                                        |
+| Application                            | [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][], [alert][] |
 
 ## See also
 
 - [Subscription resource type](./subscription.md)
+- [List subscriptions](../api/subscription-list.md)
 - [Get subscription](../api/subscription-get.md)
 - [Create subscription](../api/subscription-post-subscriptions.md)
 - [Update subscription](../api/subscription-update.md)
@@ -41,5 +42,7 @@ In general, subscription operations require read permission to the resource. For
 [conversation]: ./conversation.md
 [drive]: ./drive.md
 [event]: ./event.md
+[group]: ./group.md
 [message]: ./message.md
+[user]: ./user.md
 [alert]: ./alert.md

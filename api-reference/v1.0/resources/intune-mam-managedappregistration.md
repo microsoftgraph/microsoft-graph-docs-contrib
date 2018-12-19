@@ -1,6 +1,7 @@
 ---
 title: "managedAppRegistration resource type"
 description: "The ManagedAppEntity is the base entity type for all other entity types under app management workflow."
+author: "tfitzmac"
 ---
 
 # managedAppRegistration resource type
@@ -75,7 +76,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-     "Warning: /api-reference/v1.0/resources/intune_mam_managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
+     "Warning: /api-reference/v1.0/resources/intune-mam-managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
       Inconsistent types between parameter (String) and table (Object)"
   ],
 }

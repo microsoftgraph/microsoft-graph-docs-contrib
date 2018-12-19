@@ -1,6 +1,7 @@
 ---
 title: "Get access without a user"
 description: "Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these are background services or daemons that run on a server without the presence of a signed-in user. An example of such an app might be an email archival service that wakes up and runs overnight. In some cases, apps that have a signed-in user present may also need to call Microsoft Graph under their own identity. For example, an app may need to use functionality that requires more elevated privileges in an organization than those carried by the signed-in user.  "
+author: "jackson-woods"
 ---
 
 # Get access without a user
@@ -117,7 +118,7 @@ You send a POST request to the `/token` v2.0 endpoint to acquire an access token
 ```
 // Line breaks are for legibility only.
 
-POST /{tenant}/oauth2/v2.0/token HTTP/1.1
+POST https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 

@@ -281,7 +281,7 @@ how errors are returned.
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/driveitem_list_thumbnails.md:
+    "Warning: /api-reference/v1.0/api/driveitem-list-thumbnails.md:
       Unable to map some markdown elements into schema.
          Unmapped methods:
       enum-item-thumbnails, get-one-thumbnail, get-thumbnail-content, get-thumbnail-while-listing, get-thumbnail-custom-size

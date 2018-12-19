@@ -22,27 +22,29 @@
           href: versioning-and-support.md
         - name: Terms of use
           href: https://developer.microsoft.com/graph/terms-of-use
-      - name: Training
-        href: training.md
-        items:
-        - name: ASP.NET
-          href: /graph/training/aspnet-tutorial/
-        - name: Microsoft Flow
-          href: /graph/training/flow-tutorial/
-        - name: Node.js
-          href: /graph/training/node-tutorial/
-        - name: PHP
-          href: /graph/training/php-tutorial/
-        - name: Python
-          href: /graph/training/python-tutorial/
-        - name: Ruby
-          href: /graph/training/ruby-tutorial/
-        - name: React
-          href: /graph/training/react-tutorial/
-        - name: UWP
-          href: /graph/training/uwp-tutorial/
       - name: Microsoft Graph data connect (preview)
         href: data-connect-overview.md
+      - name: Tutorials
+        href: tutorials.md
+        items:
+        - name: Angular
+          href: /graph/tutorials/angular
+        - name: ASP.NET
+          href: /graph/tutorials/aspnet
+        - name: Microsoft Flow
+          href: /graph/tutorials/flow
+        - name: Node.js
+          href: /graph/tutorials/node
+        - name: PHP
+          href: /graph/tutorials/php
+        - name: Python
+          href: /graph/tutorials/python
+        - name: Ruby
+          href: /graph/tutorials/ruby
+        - name: React
+          href: /graph/tutorials/react
+        - name: UWP
+          href: /graph/tutorials/uwp
     - name: Learn
       expanded: true
       items:
@@ -92,7 +94,7 @@
       - name: Mail
         href: outlook-mail-concept-overview.md
         items:
-        - name: Create and send messages
+        - name: Automate messaging
           href: outlook-create-send-messages.md
         - name: Organize messages
           href: outlook-organize-messages.md
@@ -233,7 +235,7 @@
           href: changelog.md
         - name: Errors
           href: errors.md
-    - name: v1.0 API Reference
+    - name: v1.0 reference
       href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-    - name: beta API Reference
+    - name: Beta reference
       href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
