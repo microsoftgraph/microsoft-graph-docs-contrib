@@ -1,9 +1,10 @@
 ---
-title: "notifications resource type"
-description: "The following is a JSON representation of the resource."
+title: "communications notifications resource type"
+description: "List of communications notifications."
+author: "VinodRavichandran"
 ---
 
-# notifications resource type
+# communications notifications resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -34,7 +35,7 @@ The following is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "notifications resource",
+  "description": "commsNotifications resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
