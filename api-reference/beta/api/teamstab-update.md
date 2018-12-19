@@ -1,6 +1,7 @@
 ---
 title: "Update tab"
 description: "Update the properties of the specified tab."
+author: "nkramer"
 ---
 
 # Update tab
@@ -20,10 +21,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application                            | Group.ReadWrite.All                         |
 
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
+
 ## HTTP request
 ```http
 PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

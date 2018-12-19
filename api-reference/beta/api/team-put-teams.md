@@ -1,13 +1,14 @@
 ---
-title: "Create team"
-description: "Create a new team under a group."
+title: "Create team from group"
+description: "Create a new team from a group."
+author: "nkramer"
 ---
 
-# Create team
+# Create team from group
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new [team](../resources/team.md) under a [group](../resources/group.md).
+Create a new [team](../resources/team.md) from a [group](../resources/group.md).
 
 In order to create a team, the group must have a least one owner.
 
@@ -23,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.ReadWrite.All |
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access groups that they are not a member of.
 
 ## HTTP request
 
