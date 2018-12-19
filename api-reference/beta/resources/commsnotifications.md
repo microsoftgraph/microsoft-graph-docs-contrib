@@ -1,10 +1,10 @@
 ---
-title: "communications notifications resource type"
+title: "commsNotifications resource type"
 description: "List of communications notifications."
 author: "VinodRavichandran"
 ---
 
-# communications notifications resource type
+# commsNotifications resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
