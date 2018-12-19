@@ -24,7 +24,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	azureTenantId	|	String	|	GUID string for tenant ID.	|
 |	controlName	|	String	|	Name of the control. |
 |	title	|	String	|	Title of the control.	|
-| complianceInformation | [complianceInformation](complianceInformation.md) collection | The collection of compliance information associated with secure score control |
+| complianceInformation | [complianceInformation](complianceinformation.md) collection | The collection of compliance information associated with secure score control |
 |	controlCategory	|	String	|	Control action category (Account, Data, Device, Apps, Infrastructure).	|
 |	actionType	|	String	|	Control action type (Config, Review, Behavior).	|
 |	service	|	String	|	Service that owns the control (Exchange, Sharepoint, Azure AD).	|
@@ -38,7 +38,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	remediation |	String	|	Description of what the control will help remediate. |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation. |
 |	actionUrl |	String	|	URL to where the control can be actioned. |
-|	controlStateUpdates |	[secureScoreControlStateUpdate](secureScoreControlStateUpdate.md)	collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	controlStateUpdates |	[secureScoreControlStateUpdate](securescorecontrolstateupdate.md)	collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
 
 ## Relationships
 
