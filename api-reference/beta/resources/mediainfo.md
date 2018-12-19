@@ -1,6 +1,6 @@
 ---
 title: "mediaInfo resource type"
-description: "media information used in actions for prompts."
+description: "The media information used in actions for prompts."
 author: "VinodRavichandran"
 ---
 
@@ -8,7 +8,7 @@ author: "VinodRavichandran"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-media information used in actions for prompts.
+The media information used in actions for prompts.
 
 ## Properties
 | Property	 | Type	   |Description|
