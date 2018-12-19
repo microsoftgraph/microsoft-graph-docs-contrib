@@ -8,7 +8,7 @@ author: "VinodRavichandran"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-media configuration used to connect to a call.
+The media configuration used to connect to a call.
 
 ## Properties
 
