@@ -1,6 +1,6 @@
 ﻿---
 title: "call: subscribeToTone"
-description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a "touchtone" phone."
+description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a 'touchtone' phone."
 author: "VinodRavichandran"
 ---
 
