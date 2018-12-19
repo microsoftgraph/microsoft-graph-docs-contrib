@@ -9,20 +9,6 @@ Retrieve the properties and relationships of a subscription.
 
 ## Permissions
 
-The following table lists the suggested permission needed for each resource. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-| Resource type / Item        | Permission          |
-|-----------------------------|---------------------|
-| Contacts                    | Contacts.Read       |
-| Conversations               | Group.Read.All      |
-| Events                      | Calendars.Read      |
-| Messages                    | Mail.Read           |
-| Groups                      | Group.Read.All      |
-| Users                       | User.Read.All       |
-| Drive  (User's OneDrive)    | Files.ReadWrite     |
-| Drives (SharePoint shared content and drives) | Files.ReadWrite.All |
-|Security alert| SecurityEvents.ReadWrite.All |
-
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
@@ -35,9 +21,13 @@ Depending on the resource and the permission type (delegated or application) req
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
-|[user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note:** The Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts) allow reading or writing contacts, events, and messages in shared or delegated folders. These sharing permissions do **not** support subscribing to notifications on items in shared or delegated folders. Use the corresponding delegated permission to subscribe to items in a specified folder in the signed-in user's mailbox, or, use the corresponding application permission to subscribe to items of that type in any user's folder and mailbox in the tenant.
+> **Note:** For Outlook contacts, events, or messages in shared folders:
+
+- The Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts) allow reading or writing contacts, events, and messages in shared or delegated folders. These sharing permissions do **not** support subscribing to change notifications on items in shared or delegated folders. 
+- Instead, use the corresponding delegated permission to subscribe to items in folders in the signed-in user's mailbox. 
+- Or, use the corresponding application permission to subscribe to items in any user's folders and mailbox in the tenant.
 
 ## HTTP request
 
