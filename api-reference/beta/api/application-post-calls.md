@@ -1,7 +1,7 @@
 ---
 title: "Create call"
 description: "Create a new call."
-author: "lleonard-msft"
+author: "VinodRavichandran"
 ---
 
 # Create call
@@ -52,7 +52,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_call_from_application"
+  "name": "create-call-from-application"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -110,6 +110,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",

@@ -51,7 +51,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/answer
@@ -162,7 +162,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {
@@ -315,7 +315,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "ignored",
-  "name": "call_answer"
+  "name": "call-answer"
 }-->
 ```json
 {

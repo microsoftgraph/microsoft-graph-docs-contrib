@@ -54,7 +54,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "call_redirect"
+  "name": "call-redirect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/app/calls/{id}/redirect
