@@ -1,10 +1,10 @@
 ---
-title: "PlayPromptOperation resource type"
+title: "playPromptOperation resource type"
 description: "The playPrompt operation to obtain the result of the playPrompt action."
 author: "VinodRavichandran"
 ---
 
-# PlayPromptOperation resource type
+# playPromptOperation resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
