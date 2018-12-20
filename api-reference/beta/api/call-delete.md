@@ -45,7 +45,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_call"
+  "name": "delete-call"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/app/calls/{id}
