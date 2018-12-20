@@ -12,6 +12,8 @@ Programmatically, Microsoft Graph supports getting events in calendars that have
 
 As an example, Garth has shared with John his default calendar and given John read access. If John has signed into your app and provided delegated permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared), your app will be able to access Garth's default calendar and events in that calendar as described below.
 
+> **Note** The sharing permissions (Calendars.Read.Shared or Calendars.ReadWrite.Shared) allow you to read or write events in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in shared or delegated folders. To set up change notification subscriptions on events in shared or delegated calendars, use the application permission, Calendars.Read.
+
 ## Get an event in the shared calendar
 
 You can get a specific event in Garth's shared default calendar:
