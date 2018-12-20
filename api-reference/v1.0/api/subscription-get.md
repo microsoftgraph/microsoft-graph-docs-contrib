@@ -23,11 +23,15 @@ Depending on the resource and the permission type (delegated or application) req
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note:** For Outlook contacts, events, or messages in shared folders:
+> **Note:** There are additional permission limitations for subscriptions on OneDrive drives and Outlook items. The limitations apply to subscribing, as well as getting, updating, and deleting the subscriptions.
 
-- The Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts) allow reading or writing contacts, events, and messages in shared or delegated folders. These sharing permissions do **not** support subscribing to change notifications on items in shared or delegated folders. 
-- Instead, use the corresponding delegated permission to subscribe to items in folders in the signed-in user's mailbox. 
-- Or, use the corresponding application permission to subscribe to items in any user's folders and mailbox in the tenant.
+- You cannot use application permissions to subscribe to change notifications on _root items_ in a OneDrive **drive**.
+
+- To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
+
+  - Use the corresponding application permission to subscribe to items in any user's folders and mailbox in the tenant.
+  - Do not use the Outlook sharing permissions (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared, and their read/write counterparts), as they do **not** support subscribing to change notifications on items in shared or delegated folders. 
+  - And, delegated permission supports subscribing to items in folders in only the signed-in user's mailbox. 
 
 ## HTTP request
 
