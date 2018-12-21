@@ -12,7 +12,7 @@ Programmatically, Microsoft Graph supports getting contacts in contact folders t
 
 As an example, Garth has shared with John a custom contact folder and given John read access. If John has signed into your app and provided delegated permissions (Contacts.Read.Shared or Contacts.ReadWrite.Shared), your app will be able to access Garth's custom contact folder and contacts in that folder as described below.
 
-> **Note** The sharing permissions (Contacts.Read.Shared or Contacts.ReadWrite.Shared) allow you to read or write contacts in a shared or delegated calendar. They do not support [subscribing to change notifications](webhooks.md) on items in shared or delegated folders. To set up change notification subscriptions on contacts in shared or delegated folders, use the application permission, Contacts.Read.
+> **Note** The sharing permissions (Contacts.Read.Shared or Contacts.ReadWrite.Shared) allow you to read or write contacts in a shared or delegated folder. They do not support [subscribing to change notifications](webhooks.md) on items in such folders. To set up change notification subscriptions on contacts in a shared, delegated, or any other user's contact folder in the tenant, use the application permission, Contacts.Read.
 
 ## Get a contact in the shared folder
 
