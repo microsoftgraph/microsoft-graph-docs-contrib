@@ -351,7 +351,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta       | Added the Secure Score APIs to the [security API](/graph/api/resources/securescore-api-overview?view=graph-rest-beta), including the following resources and operations:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (and related entities)<br/>[List secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Update secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
-| Addition        | Beta        | Introduced new complex type [secureScoreControlStateUpdate](/graph/api/resources/secureScoreControlStateUpdate/team?view=graph-rest-beta) |
+| Addition        | Beta        | Introduced new complex type [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) |
 
 
 
