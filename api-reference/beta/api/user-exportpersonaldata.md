@@ -25,19 +25,19 @@ POST /users/<id>/exportPersonalData
 
 ```
 ## Request headers
-| Name       | Description|
+| Name       | Description |
 |:---------------|:----------|
 | Authorization  | Bearer {token}|
 
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter	   | Type	|Description |
 |:---------------|:--------|:----------|
 |storageLocation|String|This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.|
 
 ## Response headers
-| Name       | Description|
+| Name       | Description |
 |:---------------|:----------|
 | Location  | An URL to check on the status of the Request. |
 | Retry-After  | A time period in seconds. Request maker should wait this long after submitting a request to check for the status. |
