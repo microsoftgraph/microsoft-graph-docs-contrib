@@ -36,7 +36,14 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |storageLocation|String|This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.|
 
-## Response
+
+## Response headers
+| Name       | Description|
+|:---------------|:----------|
+| Location  | An URL to check on the status of the Request. |
+| Retry-After  | A time period in seconds. Request maker should wait this long after submitting a request to check for the status. |
+
+## Response body
 If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
@@ -55,6 +62,14 @@ Content-length: 48
 }
 ```
 
+##### Response Headers
+```
+{
+  Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
+  Retry-After: 60
+}
+```
+
 ##### Response
 <!-- {
   "blockType": "response",
@@ -64,6 +79,7 @@ Content-length: 48
 ```http
 HTTP/1.1 202 Accepted
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
