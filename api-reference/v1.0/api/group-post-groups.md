@@ -98,7 +98,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -135,22 +136,23 @@ Content-type: application/json
 ```
 
 #### Request 2
-The second example request creates an Office 365 Group with owners specified.
+The second example request creates an Office 365 group with an owner specified.
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "create_group_with_owner"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
 {
-  "description": "Group with owners",
-  "displayName": "Group1",
+  "description": "Group with designated owner",
+  "displayName": "Operations group",
   "groupTypes": [
     "Unified"
   ],
   "mailEnabled": true,
-  "mailNickname": "group1",
+  "mailNickname": "operations2019",
   "securityEnabled": false,
   "owners@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
@@ -159,27 +161,46 @@ Content-Type: application/json
 ```
 
 #### Response 2
-The following is an example of the successful response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of a successful response. It includes only default properties. You can subsequenty get the **owners** navigation property of the group to verify details of the owner. 
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group_with_owner"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "description": "Group with owners",
-    "displayName": "Group1",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "id": "502df398-d59c-469d-944f-34a50e60db3f",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-27T22:17:07Z",
+    "creationOptions": [],
+    "description": "Group with designated owner",
+    "displayName": "Operations group",
     "groupTypes": [
         "Unified"
     ],
-    "mail": "group1@contoso.onmicrosoft.com",
+    "mail": "operations2019@contoso.com",
     "mailEnabled": true,
-    "mailNickname": "group1",
-    "securityEnabled": false
+    "mailNickname": "operations2019",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "SMTP:operations2019@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-27T22:17:07Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
 }
 ```
 
