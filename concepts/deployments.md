@@ -55,9 +55,9 @@ Tenant-specific endpoints can be formed by replacing "common" in the URLs above 
 Whether you use the common or tenant-specific endpoints will depend upon the requirements of your app and the authentication flow you are using to get tokens. 
 
 To learn more about Azure AD access tokens and Microsoft Graph, see [Get auth tokens](./auth-overview.md).
-To learn more about Azure AD authentication scenarios, see [Azure AD authentication basics](authentication-scenarios.md)
+To learn more about Azure AD authentication scenarios, see [Azure AD authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
 
-> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/en-us/documentation/articles/active-directory-appmodel-v2-overview/) are available on the global service only; they are not yet supported for use with national cloud deployments.
+> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/documentation/articles/active-directory-appmodel-v2-overview) are available on the global service only; they are not yet supported for use with national cloud deployments.
 
 ## Supported features
 
@@ -86,9 +86,9 @@ The following Microsoft Graph features are not yet supported on national cloud d
 * Directory schema extensions
 * Open type extensions
 
- > **IMPORTANT:** Certain services and features that are in specific regions of the global service might not be available in all of the National clouds. To find out what services are available go to [products available by region](https://azure.microsoft.com/en-us/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)
+ > **IMPORTANT:** Certain services and features that are in specific regions of the global service might not be available in all of the National clouds. To find out what services are available go to [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)
 
-- To learn more, see [Microsoft National Clouds](https://www.microsoft.com/en-us/TrustCenter/CloudServices/NationalCloud)
+- To learn more, see [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
 - To learn more, see [Azure Government](https://docs.microsoft.com/azure/azure-government/)
 - To learn more, see[Azure China 21Vianet](https://docs.microsoft.com/azure/china/)
 - To learn more, see [Azure Germany](https://docs.microsoft.com/azure/germany/)
