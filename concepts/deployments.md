@@ -63,32 +63,32 @@ To learn more about Azure AD authentication scenarios, see [Azure AD authenticat
 
 The following Microsoft Graph features are generally available (on the `/v1.0` endpoint) across all national cloud deployments, except where noted:
 
-* Users
-* Groups
-* Excel (Support is limited on Microsoft Graph operated by 21Vianet in China.)
-* OneDrive (Support is limited on Microsoft Graph operated by 21Vianet in China.)
-* Outlook Mail
-* Outlook Calendar
-* Personal Contacts
-* SharePoint (Support is limited on Microsoft Graph operated by 21Vianet in China.)
-* Delta query (Support varies across different resources on each national cloud deployment.)
-* Webhooks (Support varies across different resources on each national cloud deployment.)
+| Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
+|---------------------------|----------------|----------------|----------------|
+| Users | Supported |Supported |Supported |
+| Groups | Supported |Supported |Supported |
+| Excel | Supported| Limited support | Supported|
+| OneDrive | Supported| Limited support| Supported|
+| Outlook Mail | Supported |Supported |Supported |
+| Outlook Calendar | Supported |Supported |Supported |
+| Personal Contacts | Supported |Supported |Supported |
+| SharePoint | Supported|Limited support  | Supported|
+| Delta query |Supported |Supported |Supported |
+| Webhooks  |Supported | Supported| Supported|
+ | Microsoft Planner|Not supported |Not supported |Not supported |
+|Directory schema extensions |Not supported |Not supported |Not supported |
+| Open type extensions|Not supported |Not supported |Not supported |
 
+  
 The following additional Microsoft Graph features are available in preview (on the `/beta` endpoint) across all national cloud deployments, except where noted:
 
 * Organizational Contacts
 * Applications
 * Service Principals
 
-The following Microsoft Graph features are not yet supported on national cloud deployments:
-
-* Microsoft Planner
-* Directory schema extensions
-* Open type extensions
-
  > **IMPORTANT:** Certain services and features that are in specific regions of the global service might not be available in all of the National clouds. To find out what services are available go to [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)
 
 - To learn more, see [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-- To learn more, see [Azure Government](https://docs.microsoft.com/azure/azure-government/)
+- To learn more, see [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - To learn more, see[Azure China 21Vianet](https://docs.microsoft.com/azure/china/)
 - To learn more, see [Azure Germany](https://docs.microsoft.com/azure/germany/)
