@@ -80,23 +80,24 @@ Content-length: 411
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#organization",
   "value": [
-  {
-    "assignedPlans": [
-      {
-        "assignedDateTime": "datetime-value",
-        "capabilityStatus": "capabilityStatus-value",
-        "service": "service-value",
-        "servicePlanId": "servicePlanId-value"
-      }
-    ],
-    "businessPhones": [
-      "businessPhones-value"
-    ],
-    "city": "city-value",
-    "country": "country-value",
-    "countryLetterCode": "countryLetterCode-value",
-    "displayName": "displayName-value"
-  }
+    {
+      "assignedPlans": [
+        {
+          "assignedDateTime": "datetime-value",
+          "capabilityStatus": "capabilityStatus-value",
+          "service": "service-value",
+          "servicePlanId": "servicePlanId-value"
+        }
+      ],
+      "businessPhones": [
+        "businessPhones-value"
+      ],
+      "city": "city-value",
+      "country": "country-value",
+      "countryLetterCode": "countryLetterCode-value",
+      "displayName": "displayName-value"
+    }
+  ]
 }
 ```
 
