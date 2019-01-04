@@ -1,3 +1,9 @@
+---
+title: "alertTrigger resource type"
+description: "Contains information about the properties that triggered a detection (properties exist in the alert entity)."
+author: "Preetikr"
+---
+
 # alertTrigger resource type
 
 Contains information about the properties that triggered a detection (properties exist in the alert entity).
@@ -35,8 +41,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "name": "endpointAddress",
-  "type": "networkConnection.sourceAddress",
+  "name": "hostState.privateIpAddress",
+  "type": "String",
   "value": "10.154.9.40"
 }
 

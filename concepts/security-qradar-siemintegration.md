@@ -1,3 +1,9 @@
+---
+title: "Integrate Microsoft Graph Security API alerts with IBM QRadar SIEM using Azure Monitor"
+description: "The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to Azure Monitor, which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the QRadar SIEM connector."
+author: "Preetikr"
+---
+
 # Integrate Microsoft Graph Security API alerts with IBM QRadar SIEM using Azure Monitor
 
 The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to [Azure Monitor](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/), which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the [QRadar](https://www.ibm.com/us-en/marketplace/ibm-qradar-siem) SIEM connector.
@@ -25,15 +31,15 @@ Also see the [Azure Event Hubs FAQ](https://docs.microsoft.com/en-us/azure/event
 
 1. Log on to the [Azure portal](https://portal.azure.com/) and choose **Create a resource** at the top left of the screen.
 
-    ![Create resource image](../concepts/images/create-resource.png)
+    ![Create resource image](images/create-resource.png)
 
 2. Select **Internet of Things** and choose **Event Hubs**.
 
-    ![event hubs image](../concepts/images/event-hubs.png)
+    ![event hubs image](images/event-hubs.png)
 
 3. In **Create namespace**, enter a namespace name. After making sure the namespace name is available, choose the pricing tier (Basic or Standard). Also, choose an Azure subscription, resource group, and location in which to create the resource. Choose **Create** to create the namespace. You might have to wait a few minutes for the system to fully provision the resources.
 
-    ![create namespace image](../concepts/images/create-namespace.png)
+    ![create namespace image](images/create-namespace.png)
 
 ## Step 2: Configure Azure Monitor to send security alerts from your tenant to the event hub
 
@@ -44,7 +50,7 @@ Security alerts are highly privileged data typically viewable only by security r
 > **Note:** Currently, the Azure Monitor Diagnostic settings blade does not support configuration of tenant-level resources. Microsoft Graph Security API alerts are a tenant-level resource, which requires using the Azure Resource Manager API to configure Azure Monitor to support consumption of your organization’s security alerts.
 
 1. In your Azure subscription (can be found under "All services"), register "microsoft.insights" (Azure Monitor) as a resource provider.  
-> **Note:** Do not register "Microsoft.SecurityGraph" (Microsoft Graph Security API) as a resource provider in your Azure subscription, as “Microsoft.SecurityGraph” is a tenant-level resource as explained above. Tenant level configuration will be part of #6 below.
+ > **Note:** Do not register "Microsoft.SecurityGraph" (Microsoft Graph Security API) as a resource provider in your Azure subscription, as “Microsoft.SecurityGraph” is a tenant-level resource as explained above. Tenant level configuration will be part of #6 below.
 
 2. To configure Azure Monitor using the Azure Resource Manager API, obtain the [ARMClient](https://github.com/projectkudu/ARMClient) tool. This tool will be used to send REST API calls to the Azure portal from a command line.
 
@@ -70,15 +76,14 @@ Security alerts are highly privileged data typically viewable only by security r
     }
     ```
 
-    Replace the values in the JSON file as follows:
+  Replace the values in the JSON file as follows:
 
-    **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
-
-    **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
-
-    **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
-
-    **“days”:** is the number of days you want to retain messages in your event hub.
+  * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
+  * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
+  * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
+  * **“days”:** is the number of days you want to retain messages in your event hub.
+  
+&nbsp;
 
 4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
 
@@ -99,6 +104,7 @@ Security alerts are highly privileged data typically viewable only by security r
     ``` shell
     ARMClient.exe get https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
     ```
+
 8. Exit the ARMClient tool. You have now completed the configuration of Azure Monitor to send security alerts from your tenant to event hub.
 
 ## Step 3: Download and install the QRadar to consume security alerts
