@@ -27,7 +27,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The collection of service plans associated with the tenant. Not nullable.            |
-| businessPhones                      | String collection                                         | Telephone number for the organization. NOTE: Although this is a string collection, only one number can be set for this property.                                                                                            |
+| businessPhones                      | String collection                                         | Telephone number for the organization. **Note:** Although this is a string collection, only one number can be set for this property.                                                                                            |
 |city|String| City name of the address for the organization |
 |companyLastDirSyncTime|DateTimeOffset|The time and date at which the tenant was last synced with the on-premise directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |country|String| Country/region name of the address for the organization |
