@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 | Location  | URL to check on the status of the Request. |
 | Retry-After  | Time period in seconds. Request maker should wait this long after submitting a request to check for the status. |
 
-## Response body
+## Response
 If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
 
 ## Example
