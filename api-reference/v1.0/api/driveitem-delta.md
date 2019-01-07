@@ -208,10 +208,9 @@ Content-type: application/json
 * In OneDrive for Business and SharePoint, `delta` is only supported on the `root` folder, not on other folders within a drive.
 
 * Delta will not return the following DriveItem properties:
-
-* **cTag**
-* **lastModifiedBy**
-* **size**
+  * **cTag**
+  * **lastModifiedBy**
+  * **size**
 
 ## Error responses
 
