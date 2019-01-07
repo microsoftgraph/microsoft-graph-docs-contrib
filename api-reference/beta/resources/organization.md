@@ -7,7 +7,7 @@ description: "Represents an Azure Active Directory tenant. "
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Represents the Azure Active Directory tenant that the user or application is signed-in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
+Represents the Azure Active Directory tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
 This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview).
 
@@ -53,6 +53,9 @@ This resource lets you add your own data to custom properties using [extensions]
 |verifiedDomains|[VerifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable.            |
 
 ## Relationships
+
+| Relationship	   | Type	|Description|
+|:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization resource. Nullable.|
 
 ## JSON representation
