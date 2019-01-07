@@ -5,7 +5,7 @@ description: "Submits a data policy operation request, made by a Company Adminis
 
 # user: exportPersonalData
 
-Submits a data policy operation request, made by a Company Administrator to export an organizational user's data.
+Submits a data policy operation request, made by a company administrator to export an organizational user's data.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -16,7 +16,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) |  Not applicable  |
 |Application | User.Export.All and User.Read.All |
 
->Note: Export can only be performed by a Company Administrator when using the delegated permission.
+>**Note:** Export can only be performed by a company administrator when the delegated permission is used.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
