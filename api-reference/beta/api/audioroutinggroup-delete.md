@@ -1,6 +1,6 @@
----
+﻿---
 title: "Delete audio routing group"
-description: "Delete the specified audioRoutingGroup."
+description: "Delete the specified audio routing group."
 author: "VinodRavichandran"
 ---
 
@@ -44,7 +44,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_audioRoutingGroup"
+  "name": "delete-audioRoutingGroup"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
