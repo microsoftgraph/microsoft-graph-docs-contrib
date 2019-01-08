@@ -36,7 +36,8 @@ Absolutely! Each quick start download is based on a [Microsoft Graph tutorial](t
 - Build the code yourself by following the step-by-step tutorial.
 - Download the completed project from the corresponding GitHub repository and follow the instructions in the README to configure and run the sample.
 
-> **Note:** We are in the process of generating tutorials for each of the platforms that currently have a quick start. Some of the quick starts do not have corresponding tutorials yet.
+> [!NOTE]
+> We are in the process of generating tutorials for each of the platforms that currently have a quick start. Some of the quick starts do not have corresponding tutorials yet.
 
 #### Tutorials and GitHub repositories
 
