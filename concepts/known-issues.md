@@ -34,23 +34,10 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ## Microsoft Teams
 
-### Application permissions
-
-When making changes to teams and channels using application permissions, 
-Microsoft Teams renders the control message posted to the General channel with a blank name instead of the application name. 
-This will be addressed in a future update. 
-The fix will retroactively update control messages that are already posted.
-
 ### Create chat thread API
 
 The current API to [create a chat thread](/graph/api/channel-post-chatthreads?view=graph-rest-beta) 
 will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel-list-messages?view=graph-rest-beta).
-
-### Graph Explorer and v1.0
-
-Graph Explorer sample queries have not been updated for v1.0 yet.
-You can still type v1.0 queries into the text box on the top.
-Make sure you have set up Graph Explorer with the appropriate permissions, such as Group.ReadWrite.All and User.Read.All.
 
 ### Graph Explorer and Global Admins
 
