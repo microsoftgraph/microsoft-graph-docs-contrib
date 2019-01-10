@@ -20,11 +20,11 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Users
 - Groups
 - Group conversations
-- Content shared on OneDrive including drives associated with SharePoint sites
-- User's personal OneDrive folders
+- Content within the hierarchy of any folder on a user's personal OneDrive
+- Content within the hierarchy of the root folder on OneDrive for Business
 - Security Alerts
 
-For instance, you can create a subscription to a specific mail folder:
+You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
 
 Or to a top-level resource:
@@ -33,12 +33,12 @@ Or to a top-level resource:
 Or to a specific resource instance:
 `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
-Or to a SharePoint/OneDrive for Business drive:
-`/drive/root`
-
-Or to a user's personal OneDrive:
+Or to any folder in a user's personal OneDrive:
 `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
+
+Or to the root folder of a SharePoint/OneDrive for Business drive:
+`/drive/root`
 
 Or to a new [Security API alert](security-concept-overview.md):
 `/security/alerts?$filter=status eq ‘New’`,

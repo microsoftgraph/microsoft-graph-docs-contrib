@@ -15,8 +15,8 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Users
 - Groups
 - Group conversations
-- Content shared on OneDrive, including drives associated with SharePoint sites
-- Users' personal OneDrive folders
+- Content within the hierarchy of any folder on a user's personal OneDrive
+- Content within the hierarchy of the root folder on OneDrive for Business
 - Security alerts
 
 ## Permissions
@@ -25,9 +25,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [contact][], [conversation][], [drive][], [event][], [group][], [message][], [user][]|
-| Delegated - personal Microsoft account | [contact][], [drive][], [event][], [message][]                                        |
-| Application                            | [alert][], [contact][], [drive][], [event][], [group][], [message][], [user][]|
+| Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [event][], [group][], [message][], [user][]|
+| Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [message][]                                        |
+| Application                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][]|
 
 > **Note** You cannot use application permissions to create, get, update, or delete subscriptions for change notifications on _root items_ in a OneDrive **drive**.
 
@@ -42,7 +42,7 @@ In general, subscription operations require read permission to the resource. For
 
 [contact]: ./contact.md
 [conversation]: ./conversation.md
-[drive]: ./drive.md
+[driveItem]: ./driveitem.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md

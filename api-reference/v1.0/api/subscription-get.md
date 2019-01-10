@@ -14,8 +14,8 @@ Depending on the resource and the permission type (delegated or application) req
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-|[drive](../resources/drive.md) (user's OneDrive) | Files.ReadWrite | Files.ReadWrite | Files.ReadWrite.All |
-|[drive](../resources/drive.md) (SharePoint shared content and drive) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
+|[driveItem](../resources/driveitem.md) (user's personal OneDrive) | Not supported | Files.ReadWrite | Not supported |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Not supported | Files.ReadWrite.All |
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
@@ -23,9 +23,9 @@ Depending on the resource and the permission type (delegated or application) req
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note:** There are additional permission limitations for subscriptions on OneDrive drives and Outlook items. The limitations apply to subscribing, as well as getting, updating, and deleting the subscriptions.
+> **Note:** There are additional limitations for subscriptions on OneDrive and Outlook items. The limitations apply to creating, getting, updating, and deleting subscriptions.
 
-- You cannot use application permissions to subscribe to change notifications on _root items_ in a OneDrive **drive**.
+- On personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other driveItem objects in its hierarchy. Do not subscribe to **drive** or **driveItem** instances that are not folders, such as specific files.
 
 - To subscribe to change notifications of Outlook contacts, events, or messages in _shared or delegated_ folders:
 
