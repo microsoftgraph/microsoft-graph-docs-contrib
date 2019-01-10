@@ -2,6 +2,7 @@
 title: "Delete macOSDeviceFeaturesConfiguration"
 description: "Deletes a macOSDeviceFeaturesConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete macOSDeviceFeaturesConfiguration

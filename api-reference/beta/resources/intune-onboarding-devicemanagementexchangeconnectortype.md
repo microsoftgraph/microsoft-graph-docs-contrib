@@ -2,6 +2,7 @@
 title: "deviceManagementExchangeConnectorType enum type"
 description: "The type of Exchange Connector."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementExchangeConnectorType enum type

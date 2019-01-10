@@ -1,6 +1,7 @@
 ---
 title: "invitation manager"
 description: "Use the invitation manager to create an invite, in order to add an external user to the organization. "
+localization_priority: Priority
 ---
 
 # invitation manager

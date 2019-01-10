@@ -2,6 +2,7 @@
 title: "callRoute resource type"
 description: "The callRoute type."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # callRoute resource type

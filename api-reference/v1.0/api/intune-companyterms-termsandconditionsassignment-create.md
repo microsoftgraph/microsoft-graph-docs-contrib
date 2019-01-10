@@ -2,6 +2,7 @@
 title: "Create termsAndConditionsAssignment"
 description: "Create a new termsAndConditionsAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create termsAndConditionsAssignment

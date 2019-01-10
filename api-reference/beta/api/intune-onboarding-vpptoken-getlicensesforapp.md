@@ -2,6 +2,7 @@
 title: "getLicensesForApp function"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # getLicensesForApp function

@@ -2,6 +2,7 @@
 title: "policyPlatformType enum type"
 description: "Suppoorted platform types for policies."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # policyPlatformType enum type

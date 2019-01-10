@@ -2,6 +2,7 @@
 title: "List windowsAutopilotDeviceIdentities"
 description: "List properties and relationships of the windowsAutopilotDeviceIdentity objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsAutopilotDeviceIdentities

@@ -2,6 +2,7 @@
 title: "windowsInformationProtectionDataRecoveryCertificate resource type"
 description: "Windows Information Protection DataRecoveryCertificate"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtectionDataRecoveryCertificate resource type

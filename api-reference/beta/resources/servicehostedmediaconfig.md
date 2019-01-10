@@ -2,6 +2,7 @@
 title: "serviceHostedMediaConfig resource type"
 description: "The serviceHostedMediaConfig type."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # serviceHostedMediaConfig resource type

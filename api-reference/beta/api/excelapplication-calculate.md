@@ -1,6 +1,7 @@
 ---
 title: "Application: calculate"
 description: "Recalculate all currently opened workbooks in Excel."
+localization_priority: Normal
 ---
 
 # Application: calculate

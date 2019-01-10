@@ -2,6 +2,7 @@
 title: "commsOperation resource type"
 description: "The status of certain long-running operations."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # commsOperation resource type

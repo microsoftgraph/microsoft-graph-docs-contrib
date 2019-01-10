@@ -1,6 +1,7 @@
 ---
 title: "page: copyToSection"
 description: "Copies a page to a specific section."
+localization_priority: Normal
 ---
 
 # page: copyToSection

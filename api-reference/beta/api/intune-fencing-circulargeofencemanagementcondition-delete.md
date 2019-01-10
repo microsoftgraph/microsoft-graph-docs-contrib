@@ -2,6 +2,7 @@
 title: "Delete circularGeofenceManagementCondition"
 description: "Deletes a circularGeofenceManagementCondition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete circularGeofenceManagementCondition

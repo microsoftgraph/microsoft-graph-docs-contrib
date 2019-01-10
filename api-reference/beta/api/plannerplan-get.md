@@ -1,6 +1,7 @@
 ---
 title: "Get plannerPlan"
 description: "Retrieve the properties and relationships of **plannerplan** object."
+localization_priority: Normal
 ---
 
 # Get plannerPlan

@@ -2,6 +2,7 @@
 title: "Create windowsKioskConfiguration"
 description: "Create a new windowsKioskConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsKioskConfiguration

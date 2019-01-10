@@ -1,6 +1,7 @@
 ---
 title: "educationSchool resource type"
 description: "A school. The **educationSchool** resource currently corresponds to an administrativeUnit resource and shares the same ID.  "
+localization_priority: Normal
 ---
 
 # educationSchool resource type

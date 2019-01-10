@@ -2,6 +2,7 @@
 title: "androidManagedStoreAccountAppSyncStatus enum type"
 description: "Sync status of the tenant with the Google EMM API"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidManagedStoreAccountAppSyncStatus enum type

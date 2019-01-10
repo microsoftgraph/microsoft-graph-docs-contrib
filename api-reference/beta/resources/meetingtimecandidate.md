@@ -1,6 +1,7 @@
 ---
 title: "meetingTimeCandidate resource type"
 description: "A meeting suggestion that includes information like meeting time, attendance likelihood, individual "
+localization_priority: Normal
 ---
 
 # meetingTimeCandidate resource type

@@ -2,6 +2,7 @@
 title: "Create androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Create a new androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create androidDeviceOwnerGeneralDeviceConfiguration

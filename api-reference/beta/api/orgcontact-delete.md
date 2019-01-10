@@ -1,6 +1,7 @@
 ---
 title: "Delete orgContact"
 description: "Delete orgContact."
+localization_priority: Normal
 ---
 
 # Delete orgContact

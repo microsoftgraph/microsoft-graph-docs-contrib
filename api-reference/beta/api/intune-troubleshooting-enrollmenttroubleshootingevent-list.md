@@ -2,6 +2,7 @@
 title: "List enrollmentTroubleshootingEvents"
 description: "List properties and relationships of the enrollmentTroubleshootingEvent objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List enrollmentTroubleshootingEvents

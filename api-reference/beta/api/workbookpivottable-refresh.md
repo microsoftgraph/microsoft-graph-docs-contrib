@@ -2,6 +2,7 @@
 title: "workbookPivotTable: refresh"
 description: "Refreshes the PivotTable."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # workbookPivotTable: refresh

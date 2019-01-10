@@ -2,6 +2,7 @@
 title: "event: snoozeReminder"
 description: "Postpone a reminder for an event in a user calendar until a new time."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # event: snoozeReminder

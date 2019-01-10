@@ -1,6 +1,7 @@
 ---
 title: "androidForWorkAppConfigurationSchemaItem resource type"
 description: "Single configuration item inside an Android for Work application's custom configuration schema."
+localization_priority: Normal
 ---
 
 # androidForWorkAppConfigurationSchemaItem resource type

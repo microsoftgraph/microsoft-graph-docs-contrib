@@ -2,6 +2,7 @@
 title: "locateDeviceActionResult resource type"
 description: "Locate device action result"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # locateDeviceActionResult resource type

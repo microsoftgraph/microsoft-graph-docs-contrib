@@ -2,6 +2,7 @@
 title: "wiFiProxySetting enum type"
 description: "Wi-Fi Proxy Settings."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # wiFiProxySetting enum type

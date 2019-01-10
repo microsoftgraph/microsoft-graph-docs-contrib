@@ -2,6 +2,7 @@
 title: "Update deviceConfigurationDeviceStateSummary"
 description: "Update the properties of a deviceConfigurationDeviceStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceConfigurationDeviceStateSummary

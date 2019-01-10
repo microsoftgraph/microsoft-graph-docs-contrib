@@ -2,6 +2,7 @@
 title: "defenderScheduleScanDay enum type"
 description: "Possible values of DefenderScheduleScanDay "
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # defenderScheduleScanDay enum type

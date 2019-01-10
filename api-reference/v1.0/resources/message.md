@@ -2,6 +2,7 @@
 title: "message resource type"
 description: "A message in a mailFolder."
 author: "angelgolfer-ms"
+localization_priority: Priority
 ---
 
 # message resource type

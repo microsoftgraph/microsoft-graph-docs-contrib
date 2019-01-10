@@ -2,6 +2,7 @@
 title: "iosMinimumOperatingSystem resource type"
 description: "Contains properties of the minimum operating system required for an iOS mobile app."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosMinimumOperatingSystem resource type

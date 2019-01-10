@@ -2,6 +2,7 @@
 title: "Update termsAndConditionsGroupAssignment"
 description: "Update the properties of a termsAndConditionsGroupAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update termsAndConditionsGroupAssignment

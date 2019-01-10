@@ -2,6 +2,7 @@
 title: "Delete dataSharingConsent"
 description: "Deletes a dataSharingConsent."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete dataSharingConsent

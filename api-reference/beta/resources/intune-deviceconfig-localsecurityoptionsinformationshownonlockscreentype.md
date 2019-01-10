@@ -2,6 +2,7 @@
 title: "localSecurityOptionsInformationShownOnLockScreenType enum type"
 description: "Possible values for LocalSecurityOptionsInformationShownOnLockScreenType"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # localSecurityOptionsInformationShownOnLockScreenType enum type

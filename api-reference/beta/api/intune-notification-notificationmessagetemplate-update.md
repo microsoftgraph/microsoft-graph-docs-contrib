@@ -2,6 +2,7 @@
 title: "Update notificationMessageTemplate"
 description: "Update the properties of a notificationMessageTemplate object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update notificationMessageTemplate

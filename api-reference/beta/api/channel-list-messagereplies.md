@@ -2,6 +2,7 @@
 title: "List channel message replies"
 description: "List all the replies of a message in a channel of a team."
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # List channel message replies

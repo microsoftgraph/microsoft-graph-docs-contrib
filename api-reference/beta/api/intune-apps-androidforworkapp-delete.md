@@ -2,6 +2,7 @@
 title: "Delete androidForWorkApp"
 description: "Deletes a androidForWorkApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete androidForWorkApp

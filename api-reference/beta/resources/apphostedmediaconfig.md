@@ -2,6 +2,7 @@
 title: "appHostedMediaConfig resource type"
 description: "Media stack hosted by the application."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # appHostedMediaConfig resource type

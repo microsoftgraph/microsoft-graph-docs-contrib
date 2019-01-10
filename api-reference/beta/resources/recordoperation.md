@@ -2,6 +2,7 @@
 title: "recordOperation resource type"
 description: "The recordOperation type"
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # recordOperation resource type

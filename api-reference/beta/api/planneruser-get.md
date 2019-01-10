@@ -1,6 +1,7 @@
 ---
 title: "Get plannerUser"
 description: "Retrieve the properties and relationships of a plannerUser object. The returned properties include the user's favorite plans and recently viewed plans. "
+localization_priority: Normal
 ---
 
 # Get plannerUser

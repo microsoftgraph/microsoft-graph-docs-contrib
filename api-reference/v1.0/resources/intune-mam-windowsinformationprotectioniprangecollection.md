@@ -2,6 +2,7 @@
 title: "windowsInformationProtectionIPRangeCollection resource type"
 description: "Windows Information Protection IP Range Collection"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtectionIPRangeCollection resource type

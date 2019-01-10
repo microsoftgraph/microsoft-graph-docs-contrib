@@ -2,6 +2,7 @@
 title: "Update contact"
 description: "Update the properties of contact object."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # Update contact

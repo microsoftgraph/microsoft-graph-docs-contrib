@@ -2,6 +2,7 @@
 title: "List androidImportedPFXCertificateProfiles"
 description: "List properties and relationships of the androidImportedPFXCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List androidImportedPFXCertificateProfiles

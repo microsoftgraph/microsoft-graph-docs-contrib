@@ -2,6 +2,7 @@
 title: "Delete unsupportedDeviceConfiguration"
 description: "Deletes a unsupportedDeviceConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete unsupportedDeviceConfiguration

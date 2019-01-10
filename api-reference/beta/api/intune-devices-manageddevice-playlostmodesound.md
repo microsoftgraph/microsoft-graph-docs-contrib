@@ -2,6 +2,7 @@
 title: "playLostModeSound action"
 description: "Remote lock"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # playLostModeSound action

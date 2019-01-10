@@ -2,6 +2,7 @@
 title: "localSecurityOptionsAdministratorElevationPromptBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsAdministratorElevationPromptBehavior"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # localSecurityOptionsAdministratorElevationPromptBehaviorType enum type

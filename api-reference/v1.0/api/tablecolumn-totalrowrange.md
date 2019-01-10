@@ -2,6 +2,7 @@
 title: "TableColumn: TotalRowRange"
 description: "Gets the range object associated with the totals row of the column."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # TableColumn: TotalRowRange

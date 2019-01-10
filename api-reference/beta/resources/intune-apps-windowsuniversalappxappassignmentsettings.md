@@ -2,6 +2,7 @@
 title: "windowsUniversalAppXAppAssignmentSettings resource type"
 description: "Contains properties used when assigning a Windows Universal AppX mobile app to a group."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsUniversalAppXAppAssignmentSettings resource type

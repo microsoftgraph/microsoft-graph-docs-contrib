@@ -2,6 +2,7 @@
 title: "revokeAppleVppLicenses action"
 description: "Revoke all Apple Vpp licenses for a device"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # revokeAppleVppLicenses action

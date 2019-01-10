@@ -2,6 +2,7 @@
 title: "List groupLifecyclePolicies"
 description: "List all the groupLifecyclePolicies."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # List groupLifecyclePolicies

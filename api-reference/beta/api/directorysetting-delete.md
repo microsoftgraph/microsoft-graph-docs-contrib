@@ -2,6 +2,7 @@
 title: "Delete a directory setting"
 description: "Delete a directory setting."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Delete a directory setting

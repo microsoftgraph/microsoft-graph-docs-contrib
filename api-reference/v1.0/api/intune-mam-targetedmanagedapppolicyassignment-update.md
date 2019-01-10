@@ -2,6 +2,7 @@
 title: "Update targetedManagedAppPolicyAssignment"
 description: "Update the properties of a targetedManagedAppPolicyAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update targetedManagedAppPolicyAssignment

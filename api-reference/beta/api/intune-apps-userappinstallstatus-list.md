@@ -2,6 +2,7 @@
 title: "List userAppInstallStatuses"
 description: "List properties and relationships of the userAppInstallStatus objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List userAppInstallStatuses

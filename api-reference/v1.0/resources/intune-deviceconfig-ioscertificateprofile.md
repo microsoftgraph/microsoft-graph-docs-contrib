@@ -2,6 +2,7 @@
 title: "iosCertificateProfile resource type"
 description: "Device Configuration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosCertificateProfile resource type

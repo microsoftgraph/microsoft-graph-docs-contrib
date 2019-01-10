@@ -2,6 +2,7 @@
 title: "Create iosVpnConfiguration"
 description: "Create a new iosVpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create iosVpnConfiguration

@@ -2,6 +2,7 @@
 title: "Delete macOSEndpointProtectionConfiguration"
 description: "Deletes a macOSEndpointProtectionConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete macOSEndpointProtectionConfiguration

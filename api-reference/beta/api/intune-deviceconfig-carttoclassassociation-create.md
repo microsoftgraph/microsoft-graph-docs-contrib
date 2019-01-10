@@ -2,6 +2,7 @@
 title: "Create cartToClassAssociation"
 description: "Create a new cartToClassAssociation object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create cartToClassAssociation

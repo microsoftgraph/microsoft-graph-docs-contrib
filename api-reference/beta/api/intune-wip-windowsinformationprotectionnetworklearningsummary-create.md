@@ -2,6 +2,7 @@
 title: "Create windowsInformationProtectionNetworkLearningSummary"
 description: "Create a new windowsInformationProtectionNetworkLearningSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsInformationProtectionNetworkLearningSummary

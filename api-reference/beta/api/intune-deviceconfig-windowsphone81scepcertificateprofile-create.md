@@ -2,6 +2,7 @@
 title: "Create windowsPhone81SCEPCertificateProfile"
 description: "Create a new windowsPhone81SCEPCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsPhone81SCEPCertificateProfile

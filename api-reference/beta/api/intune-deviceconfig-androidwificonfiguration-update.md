@@ -2,6 +2,7 @@
 title: "Update androidWiFiConfiguration"
 description: "Update the properties of a androidWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidWiFiConfiguration

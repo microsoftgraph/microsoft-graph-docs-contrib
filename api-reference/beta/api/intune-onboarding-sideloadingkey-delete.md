@@ -2,6 +2,7 @@
 title: "Delete sideLoadingKey"
 description: "Deletes a sideLoadingKey."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete sideLoadingKey

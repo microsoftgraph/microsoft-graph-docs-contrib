@@ -1,6 +1,7 @@
 ---
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
+localization_priority: Normal
 ---
 
 # Update organization

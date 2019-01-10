@@ -2,6 +2,7 @@
 title: "windowsUserAccountControlSettings enum type"
 description: "Possible values for Windows user account control settings."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsUserAccountControlSettings enum type

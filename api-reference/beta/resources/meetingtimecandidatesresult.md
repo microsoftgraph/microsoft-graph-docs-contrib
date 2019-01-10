@@ -1,6 +1,7 @@
 ---
 title: "meetingTimeCandidatesResult resource type"
 description: "A collection of meeting suggestions if there is any, or the reason if there isn't."
+localization_priority: Normal
 ---
 
 # meetingTimeCandidatesResult resource type

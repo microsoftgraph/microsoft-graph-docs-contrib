@@ -2,6 +2,7 @@
 title: "Get a scopedRoleMember"
 description: "Retrieve a specific scopedRoleMembership resource."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Get a scopedRoleMember

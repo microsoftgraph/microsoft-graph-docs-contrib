@@ -2,6 +2,7 @@
 title: "unaryManagementConditionExpressionOperatorType enum type"
 description: "Supported operators for unary management condition expressions"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # unaryManagementConditionExpressionOperatorType enum type

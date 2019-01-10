@@ -2,6 +2,7 @@
 title: "deviceGuardVirtualizationBasedSecurityHardwareRequirementState enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceGuardVirtualizationBasedSecurityHardwareRequirementState enum type

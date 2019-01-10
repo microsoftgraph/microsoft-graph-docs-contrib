@@ -2,6 +2,7 @@
 title: "List androidCustomConfigurations"
 description: "List properties and relationships of the androidCustomConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List androidCustomConfigurations

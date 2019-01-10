@@ -2,6 +2,7 @@
 title: "Update windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Update the properties of a windowsDefenderAdvancedThreatProtectionConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsDefenderAdvancedThreatProtectionConfiguration

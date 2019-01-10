@@ -2,6 +2,7 @@
 title: "Update mdmWindowsInformationProtectionPolicy"
 description: "Update the properties of a mdmWindowsInformationProtectionPolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update mdmWindowsInformationProtectionPolicy

@@ -2,6 +2,7 @@
 title: "enrollmentTroubleshootingEvent resource type"
 description: "Event representing an enrollment failure."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # enrollmentTroubleshootingEvent resource type

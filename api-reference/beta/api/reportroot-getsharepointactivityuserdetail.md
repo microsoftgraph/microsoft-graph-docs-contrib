@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getSharePointActivityUserDetail"
 description: "Get details about SharePoint activity by user."
+localization_priority: Normal
 ---
 
 # reportRoot: getSharePointActivityUserDetail

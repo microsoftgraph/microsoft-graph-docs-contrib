@@ -2,6 +2,7 @@
 title: "Get deviceCompliancePolicyDeviceStateSummary"
 description: "Read properties and relationships of the deviceCompliancePolicyDeviceStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get deviceCompliancePolicyDeviceStateSummary

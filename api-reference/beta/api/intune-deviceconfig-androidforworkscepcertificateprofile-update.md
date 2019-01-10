@@ -2,6 +2,7 @@
 title: "Update androidForWorkScepCertificateProfile"
 description: "Update the properties of a androidForWorkScepCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidForWorkScepCertificateProfile

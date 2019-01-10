@@ -2,6 +2,7 @@
 title: "Get deviceComplianceDeviceOverview"
 description: "Read properties and relationships of the deviceComplianceDeviceOverview object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get deviceComplianceDeviceOverview

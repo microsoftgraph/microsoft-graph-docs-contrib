@@ -2,6 +2,7 @@
 title: "Delete windowsIdentityProtectionConfiguration"
 description: "Deletes a windowsIdentityProtectionConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsIdentityProtectionConfiguration

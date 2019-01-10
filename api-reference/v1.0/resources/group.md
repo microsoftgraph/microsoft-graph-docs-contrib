@@ -1,6 +1,7 @@
 ---
 title: "group resource type"
 description: "Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a dynamic group, or a security group."
+localization_priority: Priority
 ---
 
 # group resource type

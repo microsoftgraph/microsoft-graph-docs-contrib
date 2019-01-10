@@ -2,6 +2,7 @@
 title: "managedAndroidLobApp resource type"
 description: "Contains properties and inherited properties for Managed Android Line Of Business apps."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managedAndroidLobApp resource type

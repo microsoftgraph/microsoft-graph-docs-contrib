@@ -2,6 +2,7 @@
 title: "Delete windows10MobileCompliancePolicy"
 description: "Deletes a windows10MobileCompliancePolicy."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windows10MobileCompliancePolicy

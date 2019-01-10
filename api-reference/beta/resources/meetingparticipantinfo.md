@@ -2,6 +2,7 @@
 title: "meetingParticipantInfo resource type"
 description: "Information about a participant in a meeting."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # meetingParticipantInfo resource type

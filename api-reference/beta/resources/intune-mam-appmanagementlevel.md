@@ -2,6 +2,7 @@
 title: "appManagementLevel enum type"
 description: "Management levels for apps"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # appManagementLevel enum type

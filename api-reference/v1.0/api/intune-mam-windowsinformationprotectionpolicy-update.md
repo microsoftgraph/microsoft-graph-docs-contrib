@@ -2,6 +2,7 @@
 title: "Update windowsInformationProtectionPolicy"
 description: "Update the properties of a windowsInformationProtectionPolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsInformationProtectionPolicy

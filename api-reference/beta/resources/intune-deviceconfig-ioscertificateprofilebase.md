@@ -2,6 +2,7 @@
 title: "iosCertificateProfileBase resource type"
 description: "iOS certificate profile base."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosCertificateProfileBase resource type

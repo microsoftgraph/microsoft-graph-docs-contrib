@@ -2,6 +2,7 @@
 title: "Delete windowsUpdateForBusinessConfiguration"
 description: "Deletes a windowsUpdateForBusinessConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsUpdateForBusinessConfiguration

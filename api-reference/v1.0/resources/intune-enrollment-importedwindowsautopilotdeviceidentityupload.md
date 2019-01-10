@@ -2,6 +2,7 @@
 title: "importedWindowsAutopilotDeviceIdentityUpload resource type"
 description: "Import windows autopilot devices using upload."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # importedWindowsAutopilotDeviceIdentityUpload resource type

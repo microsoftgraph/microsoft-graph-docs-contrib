@@ -2,6 +2,7 @@
 title: "Create windowsWifiConfiguration"
 description: "Create a new windowsWifiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsWifiConfiguration

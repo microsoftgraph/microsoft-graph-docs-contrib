@@ -2,6 +2,7 @@
 title: "Get iosUpdateDeviceStatus"
 description: "Read properties and relationships of the iosUpdateDeviceStatus object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get iosUpdateDeviceStatus

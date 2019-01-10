@@ -2,6 +2,7 @@
 title: "Get windows81CompliancePolicy"
 description: "Read properties and relationships of the windows81CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windows81CompliancePolicy

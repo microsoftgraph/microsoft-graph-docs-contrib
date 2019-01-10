@@ -2,6 +2,7 @@
 title: "organizerMeetingInfo resource type"
 description: "Meeting information containing the organizer of the meeting."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # organizerMeetingInfo resource type

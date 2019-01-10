@@ -2,6 +2,7 @@
 title: "List targetedManagedAppConfigurations"
 description: "List properties and relationships of the targetedManagedAppConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List targetedManagedAppConfigurations

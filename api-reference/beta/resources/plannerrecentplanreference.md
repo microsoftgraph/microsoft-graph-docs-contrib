@@ -1,6 +1,7 @@
 ---
 title: "plannerRecentPlanReference resource type"
 description: "The **plannerRecentPlanReference** resource type repesents a reference to a plannerPlan that has recently been viewed by a user. "
+localization_priority: Normal
 ---
 
 # plannerRecentPlanReference resource type

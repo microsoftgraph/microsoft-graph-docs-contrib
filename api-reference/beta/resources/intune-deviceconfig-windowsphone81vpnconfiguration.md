@@ -2,6 +2,7 @@
 title: "windowsPhone81VpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Windows Phone 8.1 to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsPhone81VpnConfiguration resource type

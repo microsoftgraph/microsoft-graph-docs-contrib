@@ -2,6 +2,7 @@
 title: "Update webApp"
 description: "Update the properties of a webApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update webApp

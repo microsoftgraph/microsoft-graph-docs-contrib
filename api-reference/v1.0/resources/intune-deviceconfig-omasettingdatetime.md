@@ -2,6 +2,7 @@
 title: "omaSettingDateTime resource type"
 description: "OMA Settings DateTime definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # omaSettingDateTime resource type

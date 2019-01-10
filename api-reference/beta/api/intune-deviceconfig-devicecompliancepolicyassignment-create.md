@@ -2,6 +2,7 @@
 title: "Create deviceCompliancePolicyAssignment"
 description: "Create a new deviceCompliancePolicyAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceCompliancePolicyAssignment

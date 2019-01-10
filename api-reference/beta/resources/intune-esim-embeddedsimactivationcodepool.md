@@ -2,6 +2,7 @@
 title: "embeddedSIMActivationCodePool resource type"
 description: "A pool represents a group of embedded SIM activation codes."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # embeddedSIMActivationCodePool resource type

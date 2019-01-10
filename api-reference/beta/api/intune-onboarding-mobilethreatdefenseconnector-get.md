@@ -2,6 +2,7 @@
 title: "Get mobileThreatDefenseConnector"
 description: "Read properties and relationships of the mobileThreatDefenseConnector object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get mobileThreatDefenseConnector

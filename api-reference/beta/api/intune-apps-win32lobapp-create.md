@@ -2,6 +2,7 @@
 title: "Create win32LobApp"
 description: "Create a new win32LobApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create win32LobApp

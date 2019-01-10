@@ -2,6 +2,7 @@
 title: "Delete macOSEnterpriseWiFiConfiguration"
 description: "Deletes a macOSEnterpriseWiFiConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete macOSEnterpriseWiFiConfiguration

@@ -2,6 +2,7 @@
 title: "Delete iosVpnConfiguration"
 description: "Deletes a iosVpnConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosVpnConfiguration

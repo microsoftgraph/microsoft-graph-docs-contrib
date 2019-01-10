@@ -2,6 +2,7 @@
 title: "Update windowsInformationProtectionAppLearningSummary"
 description: "Update the properties of a windowsInformationProtectionAppLearningSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsInformationProtectionAppLearningSummary

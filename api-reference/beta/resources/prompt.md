@@ -2,6 +2,7 @@
 title: "prompt resource type"
 description: "Prompt action base type."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # prompt resource type

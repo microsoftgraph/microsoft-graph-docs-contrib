@@ -2,6 +2,7 @@
 title: "windows10EnrollmentCompletionPageConfiguration resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows10EnrollmentCompletionPageConfiguration resource type

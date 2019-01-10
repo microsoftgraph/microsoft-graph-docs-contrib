@@ -1,6 +1,7 @@
 ---
 title: "Skype for Business participant activity reports"
 description: "You can get details on conferencing activity across your organization. These details are very helpful when you are investigating, planning, and making other business decisions for your organization."
+localization_priority: Normal
 ---
 
 # Skype for Business participant activity reports

@@ -2,6 +2,7 @@
 title: "nonEapAuthenticationMethodForPeap enum type"
 description: "Non-EAP methods for authentication when PEAP is the selected EAP type."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # nonEapAuthenticationMethodForPeap enum type

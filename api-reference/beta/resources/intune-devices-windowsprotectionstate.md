@@ -2,6 +2,7 @@
 title: "windowsProtectionState resource type"
 description: "Device protection status entity."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsProtectionState resource type

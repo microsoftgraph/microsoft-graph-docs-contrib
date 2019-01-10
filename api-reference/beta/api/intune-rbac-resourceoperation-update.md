@@ -2,6 +2,7 @@
 title: "Update resourceOperation"
 description: "Update the properties of a resourceOperation object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update resourceOperation

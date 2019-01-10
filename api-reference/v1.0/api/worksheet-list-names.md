@@ -2,6 +2,7 @@
 title: "List names"
 description: "Retrieve a list of named item associated with the worksheet. "
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # List names

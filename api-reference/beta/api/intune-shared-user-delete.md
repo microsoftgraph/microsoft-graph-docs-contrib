@@ -2,6 +2,7 @@
 title: "Delete user"
 description: "Deletes a user."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete user

@@ -2,6 +2,7 @@
 title: "Update deviceComplianceDeviceOverview"
 description: "Update the properties of a deviceComplianceDeviceOverview object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceComplianceDeviceOverview

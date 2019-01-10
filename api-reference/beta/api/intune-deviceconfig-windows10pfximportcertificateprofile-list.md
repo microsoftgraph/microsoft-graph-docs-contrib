@@ -2,6 +2,7 @@
 title: "List windows10PFXImportCertificateProfiles"
 description: "List properties and relationships of the windows10PFXImportCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windows10PFXImportCertificateProfiles

@@ -2,6 +2,7 @@
 title: "List easEmailProfileConfigurationBases"
 description: "List properties and relationships of the easEmailProfileConfigurationBase objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List easEmailProfileConfigurationBases

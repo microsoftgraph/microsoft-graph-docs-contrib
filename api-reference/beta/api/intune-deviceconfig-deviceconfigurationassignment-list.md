@@ -2,6 +2,7 @@
 title: "List deviceConfigurationAssignments"
 description: "List properties and relationships of the deviceConfigurationAssignment objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List deviceConfigurationAssignments

@@ -2,6 +2,7 @@
 title: "List sectionGroups"
 description: "Retrieve a list of sectionGroup objects."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # List sectionGroups

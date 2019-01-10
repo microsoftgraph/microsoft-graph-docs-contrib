@@ -1,6 +1,7 @@
 ---
 title: "locationManagementCondition resource type"
 description: "Contains the information to define a location management condition, an area of interest, to monitor."
+localization_priority: Normal
 ---
 
 # locationManagementCondition resource type

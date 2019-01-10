@@ -2,6 +2,7 @@
 title: "List workingWith"
 description: "Calculated insight for the list of users that a user has been working with."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # List workingWith

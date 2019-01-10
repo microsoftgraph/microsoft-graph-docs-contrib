@@ -2,6 +2,7 @@
 title: "usernameSource enum type"
 description: "Username source."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # usernameSource enum type

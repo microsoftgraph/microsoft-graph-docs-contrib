@@ -2,6 +2,7 @@
 title: "windowsDomainJoinConfiguration resource type"
 description: "Windows Domain Join device configuration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsDomainJoinConfiguration resource type

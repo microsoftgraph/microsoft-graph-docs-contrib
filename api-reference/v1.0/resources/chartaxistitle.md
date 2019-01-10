@@ -2,6 +2,7 @@
 title: "ChartAxisTitle resource type"
 description: "Represents the title of a chart axis."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # ChartAxisTitle resource type

@@ -2,6 +2,7 @@
 title: "Create device"
 description: "Create a new device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create device

@@ -1,6 +1,7 @@
 ---
 title: "androidManagedStoreAppConfigurationSchema resource type"
 description: "Schema describing an Android application's custom configurations."
+localization_priority: Normal
 ---
 
 # androidManagedStoreAppConfigurationSchema resource type

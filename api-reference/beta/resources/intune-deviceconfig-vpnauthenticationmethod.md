@@ -2,6 +2,7 @@
 title: "vpnAuthenticationMethod enum type"
 description: "VPN Authentication Method."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vpnAuthenticationMethod enum type

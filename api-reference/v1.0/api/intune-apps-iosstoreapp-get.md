@@ -2,6 +2,7 @@
 title: "Get iosStoreApp"
 description: "Read properties and relationships of the iosStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get iosStoreApp

@@ -3,6 +3,7 @@ author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
 title: Create a new page in a SharePoint site
+localization_priority: Normal
 ---
 # Create a page in the site pages list of a site
 

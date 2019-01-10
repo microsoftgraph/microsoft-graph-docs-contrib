@@ -2,6 +2,7 @@
 title: "List windowsDomainJoinConfigurations"
 description: "List properties and relationships of the windowsDomainJoinConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsDomainJoinConfigurations

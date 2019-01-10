@@ -2,6 +2,7 @@
 title: "Update windowsOfficeClientConfiguration"
 description: "Patch a specific non-security policy payload."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsOfficeClientConfiguration

@@ -2,6 +2,7 @@
 title: "Delete groupLifecyclePolicy"
 description: "Deletes a groupLifecyclePolicy."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # Delete groupLifecyclePolicy

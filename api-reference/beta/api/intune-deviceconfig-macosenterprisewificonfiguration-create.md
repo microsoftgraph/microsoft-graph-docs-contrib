@@ -2,6 +2,7 @@
 title: "Create macOSEnterpriseWiFiConfiguration"
 description: "Create a new macOSEnterpriseWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create macOSEnterpriseWiFiConfiguration

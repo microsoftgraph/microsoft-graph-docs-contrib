@@ -2,6 +2,7 @@
 title: "win32LobAppReturnCode resource type"
 description: "Contains return code properties for a Win32 App"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # win32LobAppReturnCode resource type

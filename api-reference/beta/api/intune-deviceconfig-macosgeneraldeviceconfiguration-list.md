@@ -2,6 +2,7 @@
 title: "List macOSGeneralDeviceConfigurations"
 description: "List properties and relationships of the macOSGeneralDeviceConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List macOSGeneralDeviceConfigurations

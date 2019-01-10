@@ -1,6 +1,7 @@
 ---
 title: "mailboxUsageQuotaStatusMailboxCounts resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # mailboxUsageQuotaStatusMailboxCounts resource type

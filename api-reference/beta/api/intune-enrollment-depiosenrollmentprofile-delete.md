@@ -2,6 +2,7 @@
 title: "Delete depIOSEnrollmentProfile"
 description: "Deletes a depIOSEnrollmentProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete depIOSEnrollmentProfile

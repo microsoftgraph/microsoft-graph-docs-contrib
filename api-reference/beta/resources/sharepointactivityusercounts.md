@@ -1,6 +1,7 @@
 ---
 title: "sharePointActivityUserCounts resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # sharePointActivityUserCounts resource type

@@ -1,6 +1,7 @@
 ---
 title: "educationPowerPointResource resource type"
 description: "A subclass of educationResource. This is a PowerPoint resource. The PowerPoint file must be uploaded in the **fileResource** directory associated with the "
+localization_priority: Normal
 ---
 
 # educationPowerPointResource resource type

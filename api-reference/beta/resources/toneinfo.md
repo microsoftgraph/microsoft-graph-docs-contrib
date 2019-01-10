@@ -2,6 +2,7 @@
 title: "toneInfo resource type"
 description: "A single DTMF event."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # toneInfo resource type

@@ -2,6 +2,7 @@
 title: "List termsAndConditionsAssignments"
 description: "List properties and relationships of the termsAndConditionsAssignment objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List termsAndConditionsAssignments

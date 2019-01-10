@@ -2,6 +2,7 @@
 title: "Update deviceConfigurationConflictSummary"
 description: "Update the properties of a deviceConfigurationConflictSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceConfigurationConflictSummary

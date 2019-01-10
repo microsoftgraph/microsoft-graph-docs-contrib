@@ -2,6 +2,7 @@
 title: "wiFiSecurityType enum type"
 description: "Wi-Fi Security Types."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # wiFiSecurityType enum type

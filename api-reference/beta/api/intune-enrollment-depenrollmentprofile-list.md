@@ -2,6 +2,7 @@
 title: "List depEnrollmentProfiles"
 description: "List properties and relationships of the depEnrollmentProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List depEnrollmentProfiles

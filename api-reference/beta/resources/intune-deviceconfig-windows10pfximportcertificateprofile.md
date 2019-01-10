@@ -2,6 +2,7 @@
 title: "windows10PFXImportCertificateProfile resource type"
 description: "Deprecated"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows10PFXImportCertificateProfile resource type

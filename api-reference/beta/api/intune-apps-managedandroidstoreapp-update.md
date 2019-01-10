@@ -2,6 +2,7 @@
 title: "Update managedAndroidStoreApp"
 description: "Update the properties of a managedAndroidStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update managedAndroidStoreApp

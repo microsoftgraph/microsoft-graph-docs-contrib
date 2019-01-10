@@ -2,6 +2,7 @@
 title: "Remove a student"
 description: "Removes an educationUser from an educationClass"
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # Remove a student

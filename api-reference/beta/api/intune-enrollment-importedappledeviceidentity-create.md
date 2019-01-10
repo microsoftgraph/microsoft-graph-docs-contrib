@@ -2,6 +2,7 @@
 title: "Create importedAppleDeviceIdentity"
 description: "Create a new importedAppleDeviceIdentity object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create importedAppleDeviceIdentity

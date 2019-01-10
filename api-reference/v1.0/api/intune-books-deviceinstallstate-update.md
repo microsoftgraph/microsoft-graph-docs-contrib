@@ -2,6 +2,7 @@
 title: "Update deviceInstallState"
 description: "Update the properties of a deviceInstallState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceInstallState

@@ -2,6 +2,7 @@
 title: "deviceEnrollmentLimitConfiguration resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceEnrollmentLimitConfiguration resource type

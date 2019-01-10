@@ -2,6 +2,7 @@
 title: "windowsInformationProtectionDesktopApp resource type"
 description: "Desktop App for Windows information protection"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtectionDesktopApp resource type

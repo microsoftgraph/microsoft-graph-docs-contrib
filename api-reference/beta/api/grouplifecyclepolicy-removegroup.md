@@ -2,6 +2,7 @@
 title: "groupLifecyclePolicy: removeGroup"
 description: "Removes a group from a lifecycle policy."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # groupLifecyclePolicy: removeGroup

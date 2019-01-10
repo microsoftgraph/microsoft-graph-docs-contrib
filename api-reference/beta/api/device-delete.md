@@ -2,6 +2,7 @@
 title: "Delete device"
 description: "Delete a registered device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete device

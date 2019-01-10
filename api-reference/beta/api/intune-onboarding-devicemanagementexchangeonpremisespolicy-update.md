@@ -2,6 +2,7 @@
 title: "Update deviceManagementExchangeOnPremisesPolicy"
 description: "Update the properties of a deviceManagementExchangeOnPremisesPolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceManagementExchangeOnPremisesPolicy

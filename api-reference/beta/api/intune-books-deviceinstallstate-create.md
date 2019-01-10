@@ -2,6 +2,7 @@
 title: "Create deviceInstallState"
 description: "Create a new deviceInstallState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceInstallState

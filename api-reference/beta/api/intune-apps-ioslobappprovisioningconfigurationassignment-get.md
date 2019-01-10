@@ -2,6 +2,7 @@
 title: "Get iosLobAppProvisioningConfigurationAssignment"
 description: "Read properties and relationships of the iosLobAppProvisioningConfigurationAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get iosLobAppProvisioningConfigurationAssignment

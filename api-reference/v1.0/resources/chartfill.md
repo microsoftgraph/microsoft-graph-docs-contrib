@@ -2,6 +2,7 @@
 title: "ChartFill resource type"
 description: "Represents the fill formatting for a chart element."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # ChartFill resource type

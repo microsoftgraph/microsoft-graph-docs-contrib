@@ -1,6 +1,7 @@
 ---
 title: "Update plannerbucket"
 description: "Update the properties of **plannerbucket** object."
+localization_priority: Normal
 ---
 
 # Update plannerbucket

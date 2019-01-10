@@ -1,6 +1,7 @@
 ---
 title: "List orgContacts"
 description: "Retrieve the list of organizational contacts for this organization."
+localization_priority: Normal
 ---
 
 # List orgContacts

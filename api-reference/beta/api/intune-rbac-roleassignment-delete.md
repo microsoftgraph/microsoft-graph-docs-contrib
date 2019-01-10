@@ -2,6 +2,7 @@
 title: "Delete roleAssignment"
 description: "Deletes a roleAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete roleAssignment

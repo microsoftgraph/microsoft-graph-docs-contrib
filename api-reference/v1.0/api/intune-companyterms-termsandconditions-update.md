@@ -2,6 +2,7 @@
 title: "Update termsAndConditions"
 description: "Update the properties of a termsAndConditions object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update termsAndConditions

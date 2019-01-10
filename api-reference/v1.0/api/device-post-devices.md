@@ -2,6 +2,7 @@
 title: "Create device"
 description: "Create and register a new device in the organization."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create device

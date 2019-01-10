@@ -2,6 +2,7 @@
 title: "Create windowsOfficeClientConfiguration"
 description: "Create a new non-security policy with targeting groups."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsOfficeClientConfiguration

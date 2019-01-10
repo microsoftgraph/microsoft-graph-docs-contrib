@@ -2,6 +2,7 @@
 title: "Update androidManagedStoreAppConfiguration"
 description: "Update the properties of a androidManagedStoreAppConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidManagedStoreAppConfiguration

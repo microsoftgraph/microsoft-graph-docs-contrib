@@ -2,6 +2,7 @@
 title: "Delete managedAppOperation"
 description: "Deletes a managedAppOperation."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete managedAppOperation

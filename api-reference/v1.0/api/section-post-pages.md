@@ -1,6 +1,7 @@
 ---
 title: "Create page"
 description: "Create a new page in the specified section."
+localization_priority: Normal
 ---
 
 # Create page

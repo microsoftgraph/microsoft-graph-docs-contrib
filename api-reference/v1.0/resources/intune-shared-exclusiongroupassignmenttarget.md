@@ -2,6 +2,7 @@
 title: "exclusionGroupAssignmentTarget resource type"
 description: "Represents a group that should be excluded from an assignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # exclusionGroupAssignmentTarget resource type

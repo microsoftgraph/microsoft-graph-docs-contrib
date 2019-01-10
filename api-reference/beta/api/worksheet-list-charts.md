@@ -2,6 +2,7 @@
 title: "List charts"
 description: "Retrieve a list of chart objects."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # List charts

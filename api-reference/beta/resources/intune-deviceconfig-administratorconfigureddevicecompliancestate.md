@@ -2,6 +2,7 @@
 title: "administratorConfiguredDeviceComplianceState enum type"
 description: "Administrator configured device compliance state Enum"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # administratorConfiguredDeviceComplianceState enum type

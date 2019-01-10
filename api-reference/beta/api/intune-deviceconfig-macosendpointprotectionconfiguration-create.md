@@ -2,6 +2,7 @@
 title: "Create macOSEndpointProtectionConfiguration"
 description: "Create a new macOSEndpointProtectionConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create macOSEndpointProtectionConfiguration

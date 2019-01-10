@@ -2,6 +2,7 @@
 title: "subjectNameFormat enum type"
 description: "Subject Name Format Options."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # subjectNameFormat enum type

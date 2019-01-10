@@ -2,6 +2,7 @@
 title: "notebook resource type"
 description: "A OneNote notebook."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # notebook resource type

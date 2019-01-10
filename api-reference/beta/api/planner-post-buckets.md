@@ -1,6 +1,7 @@
 ---
 title: "Create plannerBucket"
 description: "Use this API to create a new **plannerBucket**."
+localization_priority: Normal
 ---
 
 # Create plannerBucket

@@ -2,6 +2,7 @@
 title: "windowsInformationProtectionNetworkLearningSummary resource type"
 description: "Windows Information Protection Network learning Summary entity."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtectionNetworkLearningSummary resource type

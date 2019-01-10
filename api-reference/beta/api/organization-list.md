@@ -1,6 +1,7 @@
 ---
 title: "List organization"
 description: "Retrieve a list of organization objects."
+localization_priority: Normal
 ---
 
 # List organization

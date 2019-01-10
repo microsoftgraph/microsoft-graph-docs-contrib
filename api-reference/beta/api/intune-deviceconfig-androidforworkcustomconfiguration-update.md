@@ -2,6 +2,7 @@
 title: "Update androidForWorkCustomConfiguration"
 description: "Update the properties of a androidForWorkCustomConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidForWorkCustomConfiguration

@@ -2,6 +2,7 @@
 title: "Create importedDeviceIdentityResult"
 description: "Create a new importedDeviceIdentityResult object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create importedDeviceIdentityResult

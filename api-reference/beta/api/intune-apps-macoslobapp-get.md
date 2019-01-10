@@ -2,6 +2,7 @@
 title: "Get macOSLobApp"
 description: "Read properties and relationships of the macOSLobApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get macOSLobApp

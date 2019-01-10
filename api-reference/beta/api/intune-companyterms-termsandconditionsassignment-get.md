@@ -2,6 +2,7 @@
 title: "Get termsAndConditionsAssignment"
 description: "Read properties and relationships of the termsAndConditionsAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get termsAndConditionsAssignment

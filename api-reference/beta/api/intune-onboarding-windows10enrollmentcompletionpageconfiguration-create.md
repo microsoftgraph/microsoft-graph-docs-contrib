@@ -2,6 +2,7 @@
 title: "Create windows10EnrollmentCompletionPageConfiguration"
 description: "Create a new windows10EnrollmentCompletionPageConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windows10EnrollmentCompletionPageConfiguration

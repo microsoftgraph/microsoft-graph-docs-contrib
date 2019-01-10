@@ -2,6 +2,7 @@
 title: "Update windows10PkcsCertificateProfile"
 description: "Update the properties of a windows10PkcsCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windows10PkcsCertificateProfile

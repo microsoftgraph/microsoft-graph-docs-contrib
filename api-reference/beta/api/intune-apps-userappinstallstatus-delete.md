@@ -2,6 +2,7 @@
 title: "Delete userAppInstallStatus"
 description: "Deletes a userAppInstallStatus."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete userAppInstallStatus

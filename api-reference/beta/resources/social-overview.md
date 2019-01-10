@@ -1,6 +1,7 @@
 ---
 title: "Use the Microsoft Graph API to integrate social intelligence in an app"
 description: "Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data."
+localization_priority: Priority
 ---
 
 # Use the Microsoft Graph API to integrate social intelligence in an app

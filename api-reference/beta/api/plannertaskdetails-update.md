@@ -1,6 +1,7 @@
 ---
 title: "Update plannertaskdetails"
 description: "Update the properties of **plannertaskdetails** object."
+localization_priority: Normal
 ---
 
 # Update plannertaskdetails

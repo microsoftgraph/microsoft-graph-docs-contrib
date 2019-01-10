@@ -2,6 +2,7 @@
 title: "windowsManagementApp resource type"
 description: "Windows management app entity."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsManagementApp resource type

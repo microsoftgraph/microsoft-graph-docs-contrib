@@ -2,6 +2,7 @@
 title: "operatingSystemVersionRange resource type"
 description: "Operating System version range."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # operatingSystemVersionRange resource type

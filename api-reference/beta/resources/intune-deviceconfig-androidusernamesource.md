@@ -2,6 +2,7 @@
 title: "androidUsernameSource enum type"
 description: "Android username source."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidUsernameSource enum type

@@ -2,6 +2,7 @@
 title: "Delete mobileThreatDefenseConnector"
 description: "Deletes a mobileThreatDefenseConnector."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete mobileThreatDefenseConnector

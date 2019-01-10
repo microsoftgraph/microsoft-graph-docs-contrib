@@ -2,6 +2,7 @@
 title: "Get call"
 description: "Retrieve the properties and relationships of a call object."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # Get call

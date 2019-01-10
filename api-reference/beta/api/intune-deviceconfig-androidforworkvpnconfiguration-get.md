@@ -2,6 +2,7 @@
 title: "Get androidForWorkVpnConfiguration"
 description: "Read properties and relationships of the androidForWorkVpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidForWorkVpnConfiguration

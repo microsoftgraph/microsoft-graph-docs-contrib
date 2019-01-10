@@ -2,6 +2,7 @@
 title: "Create section"
 description: "Create a new section in the specified notebook."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # Create section

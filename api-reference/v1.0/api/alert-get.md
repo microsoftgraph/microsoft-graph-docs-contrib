@@ -2,6 +2,7 @@
 title: "Get alert"
 description: " Retrieve the properties and relationships of an alert object."
 author: "Preetikr"
+localization_priority: Normal
 ---
 
 # Get alert

@@ -2,6 +2,7 @@
 title: "Delete windowsWifiEnterpriseEAPConfiguration"
 description: "Deletes a windowsWifiEnterpriseEAPConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsWifiEnterpriseEAPConfiguration

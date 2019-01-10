@@ -2,6 +2,7 @@
 title: "List mobileAppContentFiles"
 description: "List properties and relationships of the mobileAppContentFile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List mobileAppContentFiles

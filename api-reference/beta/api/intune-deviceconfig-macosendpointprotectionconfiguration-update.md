@@ -2,6 +2,7 @@
 title: "Update macOSEndpointProtectionConfiguration"
 description: "Update the properties of a macOSEndpointProtectionConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update macOSEndpointProtectionConfiguration

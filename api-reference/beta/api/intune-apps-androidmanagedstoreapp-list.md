@@ -2,6 +2,7 @@
 title: "List androidManagedStoreApps"
 description: "List properties and relationships of the androidManagedStoreApp objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List androidManagedStoreApps

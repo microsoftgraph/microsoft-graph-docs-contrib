@@ -2,6 +2,7 @@
 title: "Get application"
 description: "Retrieve the properties and relationships of application object."
 author: "lleonard-msft"
+localization_priority: Priority
 ---
 
 # Get application

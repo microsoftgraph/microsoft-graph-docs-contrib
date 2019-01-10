@@ -2,6 +2,7 @@
 title: "Get macOSOfficeSuiteApp"
 description: "Read properties and relationships of the macOSOfficeSuiteApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get macOSOfficeSuiteApp

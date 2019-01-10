@@ -2,6 +2,7 @@
 title: "ratingNewZealandMoviesType enum type"
 description: "Movies rating labels in New Zealand"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingNewZealandMoviesType enum type

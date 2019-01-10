@@ -2,6 +2,7 @@
 title: "Get windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Read properties and relationships of the windowsDefenderAdvancedThreatProtectionConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windowsDefenderAdvancedThreatProtectionConfiguration

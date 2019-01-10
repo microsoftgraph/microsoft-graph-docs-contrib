@@ -2,6 +2,7 @@
 title: "Delete event"
 description: "Delete event."
 author: "angelgolfer-ms"
+localization_priority: Priority
 ---
 
 # Delete event

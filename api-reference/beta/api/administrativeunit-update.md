@@ -2,6 +2,7 @@
 title: "Update administrativeunit"
 description: "Update the properties of an administrativeUnit object."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Update administrativeunit

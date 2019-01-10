@@ -2,6 +2,7 @@
 title: "WorksheetProtection: unprotect"
 description: "Unprotect a worksheet"
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # WorksheetProtection: unprotect

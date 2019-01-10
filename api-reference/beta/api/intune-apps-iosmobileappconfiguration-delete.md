@@ -2,6 +2,7 @@
 title: "Delete iosMobileAppConfiguration"
 description: "Deletes a iosMobileAppConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosMobileAppConfiguration

@@ -2,6 +2,7 @@
 title: "rangeView resource type"
 description: "RangeView represents a set of visible cells of the parent range."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # rangeView resource type

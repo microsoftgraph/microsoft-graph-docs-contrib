@@ -2,6 +2,7 @@
 title: "educationTerm resource type"
 description: "A term. This represents a designated portion of the academic year. It is used within educationClass."
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # educationTerm resource type

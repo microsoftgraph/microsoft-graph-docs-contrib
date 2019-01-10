@@ -1,6 +1,7 @@
 ---
 title: "directoryObject: delta"
 description: "Get newly created, updated, or deleted directory objects of the following types: user, group and organizational contact, in a single delta query. See Track changes for details."
+localization_priority: Normal
 ---
 
 # directoryObject: delta

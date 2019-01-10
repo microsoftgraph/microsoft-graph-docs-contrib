@@ -1,6 +1,7 @@
 ---
 title: "Update orgcontact"
 description: "Update the properties of orgcontact object."
+localization_priority: Normal
 ---
 
 # Update orgcontact

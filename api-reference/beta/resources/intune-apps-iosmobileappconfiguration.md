@@ -1,6 +1,7 @@
 ---
 title: "iosMobileAppConfiguration resource type"
 description: "Contains properties, inherited properties and actions for iOS mobile app configurations."
+localization_priority: Normal
 ---
 
 # iosMobileAppConfiguration resource type

@@ -1,6 +1,7 @@
 ---
 title: "List instances"
 description: "Get the instances (occurrences) of an event for a specified time range. If the event is a `SeriesMaster` type, this returns the "
+localization_priority: Normal
 ---
 
 # List instances

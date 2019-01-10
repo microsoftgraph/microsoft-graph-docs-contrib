@@ -1,6 +1,7 @@
 ---
 title: "List contracts"
 description: "Retrieve a list of contract objects associated to a partner tenant."
+localization_priority: Normal
 ---
 
 # List contracts

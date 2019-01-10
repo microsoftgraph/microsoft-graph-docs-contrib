@@ -2,6 +2,7 @@
 title: "noMediaConfig resource type"
 description: "Media configuration for indicating no media."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # noMediaConfig resource type

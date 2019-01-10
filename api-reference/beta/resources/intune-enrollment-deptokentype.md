@@ -2,6 +2,7 @@
 title: "depTokenType enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # depTokenType enum type

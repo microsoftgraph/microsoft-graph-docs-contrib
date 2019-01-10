@@ -2,6 +2,7 @@
 title: "deviceManagementExchangeAccessState enum type"
 description: "Device Exchange Access State."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementExchangeAccessState enum type

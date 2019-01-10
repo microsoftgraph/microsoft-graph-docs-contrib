@@ -2,6 +2,7 @@
 title: "deviceManagementExchangeAccessLevel enum type"
 description: "Access Level in Exchange."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementExchangeAccessLevel enum type

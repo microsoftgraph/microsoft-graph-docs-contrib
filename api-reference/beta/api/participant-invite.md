@@ -2,6 +2,7 @@
 title: "participant: invite"
 description: "Invite participants to the active call."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # participant: invite

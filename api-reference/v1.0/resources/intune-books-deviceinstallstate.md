@@ -2,6 +2,7 @@
 title: "deviceInstallState resource type"
 description: "Contains properties for the installation state for a device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceInstallState resource type

@@ -2,6 +2,7 @@
 title: "Update iosVppEBookAssignment"
 description: "Update the properties of a iosVppEBookAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosVppEBookAssignment

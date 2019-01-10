@@ -2,6 +2,7 @@
 title: "ChartLegend resource type"
 description: "Represents the legend in a chart."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # ChartLegend resource type

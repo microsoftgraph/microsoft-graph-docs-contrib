@@ -2,6 +2,7 @@
 title: "Create windowsPrivacyDataAccessControlItem"
 description: "Create a new windowsPrivacyDataAccessControlItem object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsPrivacyDataAccessControlItem

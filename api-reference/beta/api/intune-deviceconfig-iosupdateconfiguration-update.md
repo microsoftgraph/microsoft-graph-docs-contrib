@@ -2,6 +2,7 @@
 title: "Update iosUpdateConfiguration"
 description: "Update the properties of a iosUpdateConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosUpdateConfiguration

@@ -2,6 +2,7 @@
 title: "defenderProtectionType enum type"
 description: "Possible values of Defender Protection"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # defenderProtectionType enum type

@@ -2,6 +2,7 @@
 title: "Create CalendarGroup"
 description: "Use this API to create a new CalendarGroup."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # Create CalendarGroup

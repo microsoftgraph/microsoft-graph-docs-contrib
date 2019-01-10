@@ -2,6 +2,7 @@
 title: "resultantAppStateDetail enum type"
 description: "Enum indicating additional details regarding why an application has a particular install state."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # resultantAppStateDetail enum type

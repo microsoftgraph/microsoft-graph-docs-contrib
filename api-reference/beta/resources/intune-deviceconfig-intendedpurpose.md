@@ -2,6 +2,7 @@
 title: "intendedPurpose enum type"
 description: "PFX Import Options."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # intendedPurpose enum type

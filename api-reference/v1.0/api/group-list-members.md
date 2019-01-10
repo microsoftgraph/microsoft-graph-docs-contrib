@@ -1,6 +1,7 @@
 ---
 title: "List members"
 description: "Get a list of the group's direct members. A group can have users, contacts, and other groups as members."
+localization_priority: Priority
 ---
 
 # List members

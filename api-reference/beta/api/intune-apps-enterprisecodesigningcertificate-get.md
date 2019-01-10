@@ -2,6 +2,7 @@
 title: "Get enterpriseCodeSigningCertificate"
 description: "Read properties and relationships of the enterpriseCodeSigningCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get enterpriseCodeSigningCertificate

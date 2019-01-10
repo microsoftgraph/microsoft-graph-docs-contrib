@@ -2,6 +2,7 @@
 title: "deviceConfigurationUserStateSummary resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceConfigurationUserStateSummary resource type

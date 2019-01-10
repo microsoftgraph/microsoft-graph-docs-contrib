@@ -2,6 +2,7 @@
 title: "insightIdentity"
 description: "Complex type containing properties of Shared items."
 author: "simonhult"
+localization_priority: Normal
 ---
 
 # insightIdentity

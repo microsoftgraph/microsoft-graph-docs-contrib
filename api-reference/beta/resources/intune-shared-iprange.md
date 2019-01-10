@@ -1,6 +1,7 @@
 ---
 title: "ipRange resource type"
 description: "IP range base class for representing IPV4, IPV6 address ranges"
+localization_priority: Normal
 ---
 
 # ipRange resource type

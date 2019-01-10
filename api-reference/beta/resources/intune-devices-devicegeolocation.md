@@ -2,6 +2,7 @@
 title: "deviceGeoLocation resource type"
 description: "Device location"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceGeoLocation resource type

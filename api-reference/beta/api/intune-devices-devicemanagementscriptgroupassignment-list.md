@@ -2,6 +2,7 @@
 title: "List deviceManagementScriptGroupAssignments"
 description: "List properties and relationships of the deviceManagementScriptGroupAssignment objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List deviceManagementScriptGroupAssignments

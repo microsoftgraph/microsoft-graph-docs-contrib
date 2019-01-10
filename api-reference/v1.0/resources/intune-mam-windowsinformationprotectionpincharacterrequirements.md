@@ -2,6 +2,7 @@
 title: "windowsInformationProtectionPinCharacterRequirements enum type"
 description: "Pin Character Requirements"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtectionPinCharacterRequirements enum type

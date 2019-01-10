@@ -2,6 +2,7 @@
 title: "Delete app from team"
 description: "Uninstalls an app from the specified team."
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # Delete app from team

@@ -1,6 +1,7 @@
 ---
 title: "windows81GeneralConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windows81GeneralConfiguration resource."
+localization_priority: Normal
 ---
 
 # windows81GeneralConfiguration resource type

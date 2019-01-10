@@ -2,6 +2,7 @@
 title: "iosMobileAppIdentifier resource type"
 description: "The identifier for an iOS app."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosMobileAppIdentifier resource type

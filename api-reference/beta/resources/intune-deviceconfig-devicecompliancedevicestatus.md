@@ -2,6 +2,7 @@
 title: "deviceComplianceDeviceStatus resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceComplianceDeviceStatus resource type

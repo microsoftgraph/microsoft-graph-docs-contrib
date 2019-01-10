@@ -2,6 +2,7 @@
 title: "user resource type"
 description: "Represents an Azure Active Directory user object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # user resource type

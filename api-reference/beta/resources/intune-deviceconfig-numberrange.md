@@ -2,6 +2,7 @@
 title: "numberRange resource type"
 description: "Number Range definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # numberRange resource type

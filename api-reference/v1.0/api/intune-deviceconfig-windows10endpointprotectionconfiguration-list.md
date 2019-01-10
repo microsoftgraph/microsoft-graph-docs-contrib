@@ -2,6 +2,7 @@
 title: "List windows10EndpointProtectionConfigurations"
 description: "List properties and relationships of the windows10EndpointProtectionConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windows10EndpointProtectionConfigurations

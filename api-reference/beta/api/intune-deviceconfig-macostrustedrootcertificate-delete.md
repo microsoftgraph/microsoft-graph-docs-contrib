@@ -2,6 +2,7 @@
 title: "Delete macOSTrustedRootCertificate"
 description: "Deletes a macOSTrustedRootCertificate."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete macOSTrustedRootCertificate

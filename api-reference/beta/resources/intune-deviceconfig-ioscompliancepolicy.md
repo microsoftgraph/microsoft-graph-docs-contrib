@@ -2,6 +2,7 @@
 title: "iosCompliancePolicy resource type"
 description: "This class contains compliance settings for IOS."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosCompliancePolicy resource type

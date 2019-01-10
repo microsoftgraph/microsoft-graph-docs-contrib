@@ -2,6 +2,7 @@
 title: "signInAssistantOptions enum type"
 description: "Values for the SignInAssistantSettings."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # signInAssistantOptions enum type

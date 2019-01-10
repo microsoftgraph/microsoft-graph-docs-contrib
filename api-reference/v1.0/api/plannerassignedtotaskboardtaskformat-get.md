@@ -1,6 +1,7 @@
 ---
 title: "Get plannerAssignedToTaskBoardTaskFormat"
 description: "Retrieve the properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object."
+localization_priority: Normal
 ---
 
 # Get plannerAssignedToTaskBoardTaskFormat

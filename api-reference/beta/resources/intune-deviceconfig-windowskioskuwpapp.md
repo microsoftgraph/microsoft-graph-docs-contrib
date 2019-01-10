@@ -2,6 +2,7 @@
 title: "windowsKioskUWPApp resource type"
 description: "The base class for a type of apps"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsKioskUWPApp resource type

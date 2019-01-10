@@ -2,6 +2,7 @@
 title: "Create localizedNotificationMessage"
 description: "Create a new localizedNotificationMessage object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create localizedNotificationMessage

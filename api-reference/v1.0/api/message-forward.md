@@ -2,6 +2,7 @@
 title: "message: forward"
 description: "Forward a message. The message is saved in the Sent Items folder."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # message: forward

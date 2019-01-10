@@ -2,6 +2,7 @@
 title: "Create androidTrustedRootCertificate"
 description: "Create a new androidTrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create androidTrustedRootCertificate

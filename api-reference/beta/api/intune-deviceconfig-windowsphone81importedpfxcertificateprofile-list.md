@@ -2,6 +2,7 @@
 title: "List windowsPhone81ImportedPFXCertificateProfiles"
 description: "List properties and relationships of the windowsPhone81ImportedPFXCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsPhone81ImportedPFXCertificateProfiles

@@ -2,6 +2,7 @@
 title: "Get windowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the windowsAutopilotDeploymentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windowsAutopilotDeploymentProfile

@@ -2,6 +2,7 @@
 title: "List audio routing groups"
 description: "Retrieve a list of **audioRoutingGroup** objects."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # List audio routing groups

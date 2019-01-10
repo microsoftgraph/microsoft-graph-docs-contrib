@@ -2,6 +2,7 @@
 title: "Create intuneBrandingProfile"
 description: "Create a new intuneBrandingProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create intuneBrandingProfile

@@ -2,6 +2,7 @@
 title: "Create iosCompliancePolicy"
 description: "Create a new iosCompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create iosCompliancePolicy

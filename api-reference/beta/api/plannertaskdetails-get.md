@@ -1,6 +1,7 @@
 ---
 title: "Get plannerTaskDetails"
 description: "Retrieve the properties and relationships of **plannertaskdetails** object."
+localization_priority: Normal
 ---
 
 # Get plannerTaskDetails

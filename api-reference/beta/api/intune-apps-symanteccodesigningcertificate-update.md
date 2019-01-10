@@ -2,6 +2,7 @@
 title: "Update symantecCodeSigningCertificate"
 description: "Update the properties of a symantecCodeSigningCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update symantecCodeSigningCertificate

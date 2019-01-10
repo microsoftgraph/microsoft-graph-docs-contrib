@@ -1,6 +1,7 @@
 ---
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
+localization_priority: Normal
 ---
 
 # List agreementAcceptances

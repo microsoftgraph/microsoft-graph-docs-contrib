@@ -1,6 +1,7 @@
 ---
 title: "Microsoft Teams user activity reports"
 description: "Use the Microsoft Teams user activity reports to get insights into the Microsoft Teams user activity in your organization."
+localization_priority: Normal
 ---
 
 # Microsoft Teams user activity reports

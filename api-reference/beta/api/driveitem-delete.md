@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Delete a file or folder
+localization_priority: Normal
 ---
 # Delete a DriveItem
 

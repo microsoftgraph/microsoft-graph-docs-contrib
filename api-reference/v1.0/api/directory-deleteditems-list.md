@@ -2,6 +2,7 @@
 title: "List deleted items"
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # List deleted items

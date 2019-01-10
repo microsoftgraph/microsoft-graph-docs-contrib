@@ -2,6 +2,7 @@
 title: "Delete windowsAppX"
 description: "Deletes a windowsAppX."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsAppX

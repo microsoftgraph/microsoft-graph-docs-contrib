@@ -2,6 +2,7 @@
 title: "List windowsVpnConfigurations"
 description: "List properties and relationships of the windowsVpnConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsVpnConfigurations

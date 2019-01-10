@@ -2,6 +2,7 @@
 title: "Delete deviceComplianceScheduledActionForRule"
 description: "Deletes a deviceComplianceScheduledActionForRule."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceComplianceScheduledActionForRule

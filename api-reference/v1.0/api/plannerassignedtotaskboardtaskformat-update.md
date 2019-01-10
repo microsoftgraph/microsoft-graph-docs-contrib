@@ -1,6 +1,7 @@
 ---
 title: "Update plannerAssignedToTaskBoardTaskFormat"
 description: "Update the properties of **plannerAssignedToTaskBoardTaskFormat** object."
+localization_priority: Normal
 ---
 
 # Update plannerAssignedToTaskBoardTaskFormat

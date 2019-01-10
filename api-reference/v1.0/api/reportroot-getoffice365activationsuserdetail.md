@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getOffice365ActivationsUserDetail"
 description: "Get details about users who have activated Office 365."
+localization_priority: Normal
 ---
 
 # reportRoot: getOffice365ActivationsUserDetail

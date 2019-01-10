@@ -2,6 +2,7 @@
 title: "Delete deviceInstallState"
 description: "Deletes a deviceInstallState."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceInstallState

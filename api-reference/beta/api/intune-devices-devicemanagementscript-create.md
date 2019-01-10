@@ -2,6 +2,7 @@
 title: "Create deviceManagementScript"
 description: "Create a new deviceManagementScript object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceManagementScript

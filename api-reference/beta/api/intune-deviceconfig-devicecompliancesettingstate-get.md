@@ -2,6 +2,7 @@
 title: "Get deviceComplianceSettingState"
 description: "Read properties and relationships of the deviceComplianceSettingState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get deviceComplianceSettingState

@@ -2,6 +2,7 @@
 title: "Delete androidManagedStoreApp"
 description: "Deletes a androidManagedStoreApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete androidManagedStoreApp

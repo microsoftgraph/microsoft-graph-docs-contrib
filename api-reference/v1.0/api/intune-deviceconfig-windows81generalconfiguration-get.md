@@ -2,6 +2,7 @@
 title: "Get windows81GeneralConfiguration"
 description: "Read properties and relationships of the windows81GeneralConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windows81GeneralConfiguration

@@ -1,6 +1,7 @@
 ---
 title: "plannerChecklistItem resource type"
 description: "The **plannerChecklistItem** resource represents an item in the checklist of a task. The checklist on a task is represented by the checklistItems object."
+localization_priority: Normal
 ---
 
 # plannerChecklistItem resource type

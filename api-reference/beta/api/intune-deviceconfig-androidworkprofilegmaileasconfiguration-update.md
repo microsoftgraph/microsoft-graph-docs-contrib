@@ -2,6 +2,7 @@
 title: "Update androidWorkProfileGmailEasConfiguration"
 description: "Update the properties of a androidWorkProfileGmailEasConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidWorkProfileGmailEasConfiguration

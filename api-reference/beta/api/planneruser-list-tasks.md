@@ -1,6 +1,7 @@
 ---
 title: "List tasks"
 description: "Retrieve a list of **plannertask** objects assigned to a User."
+localization_priority: Normal
 ---
 
 # List tasks

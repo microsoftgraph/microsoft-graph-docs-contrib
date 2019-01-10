@@ -2,6 +2,7 @@
 title: "Get deviceComplianceActionItem"
 description: "Read properties and relationships of the deviceComplianceActionItem object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get deviceComplianceActionItem
