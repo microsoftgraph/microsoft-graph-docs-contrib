@@ -3,6 +3,7 @@ title: "Update androidForWorkAppConfigurationSchema"
 description: "Update the properties of a androidForWorkAppConfigurationSchema object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidForWorkAppConfigurationSchema

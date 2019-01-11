@@ -3,6 +3,7 @@ title: "Get windowsPhoneXAP"
 description: "Read properties and relationships of the windowsPhoneXAP object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsPhoneXAP

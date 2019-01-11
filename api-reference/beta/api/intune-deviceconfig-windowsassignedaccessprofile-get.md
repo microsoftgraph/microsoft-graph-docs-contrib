@@ -3,6 +3,7 @@ title: "Get windowsAssignedAccessProfile"
 description: "Read properties and relationships of the windowsAssignedAccessProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsAssignedAccessProfile

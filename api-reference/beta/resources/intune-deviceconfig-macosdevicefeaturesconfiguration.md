@@ -3,6 +3,7 @@ title: "macOSDeviceFeaturesConfiguration resource type"
 description: "MacOS device features configuration profile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # macOSDeviceFeaturesConfiguration resource type

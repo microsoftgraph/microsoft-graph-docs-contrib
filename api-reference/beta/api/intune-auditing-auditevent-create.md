@@ -3,6 +3,7 @@ title: "Create auditEvent"
 description: "Create a new auditEvent object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create auditEvent

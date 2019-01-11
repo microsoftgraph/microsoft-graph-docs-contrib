@@ -3,6 +3,7 @@ title: "Update androidForWorkEnrollmentProfile"
 description: "Update the properties of a androidForWorkEnrollmentProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidForWorkEnrollmentProfile

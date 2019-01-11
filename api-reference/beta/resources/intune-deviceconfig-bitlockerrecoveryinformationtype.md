@@ -3,6 +3,7 @@ title: "bitLockerRecoveryInformationType enum type"
 description: "BitLockerRecoveryInformationType types"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # bitLockerRecoveryInformationType enum type

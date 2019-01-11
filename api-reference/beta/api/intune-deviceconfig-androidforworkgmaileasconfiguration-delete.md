@@ -3,6 +3,7 @@ title: "Delete androidForWorkGmailEasConfiguration"
 description: "Deletes a androidForWorkGmailEasConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidForWorkGmailEasConfiguration

@@ -3,6 +3,7 @@ title: "configurationUsage enum type"
 description: "Possible values of the ConfigurationUsage list."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # configurationUsage enum type

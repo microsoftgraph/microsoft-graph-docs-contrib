@@ -3,6 +3,7 @@ title: "defenderPromptForSampleSubmission enum type"
 description: "Possible values for prompting user for samples submission."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # defenderPromptForSampleSubmission enum type

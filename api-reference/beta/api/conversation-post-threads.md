@@ -3,6 +3,7 @@ title: "Create thread"
 description: "Create a new thread in the specified conversation."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Create thread

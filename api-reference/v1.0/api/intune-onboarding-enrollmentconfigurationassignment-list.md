@@ -3,6 +3,7 @@ title: "List enrollmentConfigurationAssignments"
 description: "List properties and relationships of the enrollmentConfigurationAssignment objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List enrollmentConfigurationAssignments

@@ -3,6 +3,7 @@ title: "requestRemoteAssistance action"
 description: "Request remote assistance"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # requestRemoteAssistance action

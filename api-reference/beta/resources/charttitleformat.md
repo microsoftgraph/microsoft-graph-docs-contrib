@@ -3,6 +3,7 @@ title: "ChartTitleFormat resource type"
 description: "Provides access to the office art formatting for chart title."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartTitleFormat resource type

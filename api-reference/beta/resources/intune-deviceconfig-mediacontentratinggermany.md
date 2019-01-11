@@ -3,6 +3,7 @@ title: "mediaContentRatingGermany resource type"
 description: "Not yet documented"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # mediaContentRatingGermany resource type

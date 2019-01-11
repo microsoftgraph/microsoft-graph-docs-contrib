@@ -3,6 +3,7 @@ title: "Update androidManagedStoreAccountEnterpriseSettings"
 description: "Update the properties of a androidManagedStoreAccountEnterpriseSettings object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidManagedStoreAccountEnterpriseSettings

@@ -3,6 +3,7 @@ title: "List sideLoadingKeies"
 description: "List properties and relationships of the sideLoadingKey objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List sideLoadingKeies

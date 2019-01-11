@@ -3,6 +3,7 @@ title: "Delete administrativeUnit"
 description: "Delete an administrativeUnit."
 author: "lleonard-msft"
 localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete administrativeUnit

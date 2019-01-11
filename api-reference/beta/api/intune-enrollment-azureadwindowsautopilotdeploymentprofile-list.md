@@ -3,6 +3,7 @@ title: "List azureADWindowsAutopilotDeploymentProfiles"
 description: "List properties and relationships of the azureADWindowsAutopilotDeploymentProfile objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List azureADWindowsAutopilotDeploymentProfiles

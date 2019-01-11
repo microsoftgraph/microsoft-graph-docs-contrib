@@ -3,6 +3,7 @@ title: "binaryManagementConditionExpression resource type"
 description: "A management condition expression that is evaluated using a binary operation."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # binaryManagementConditionExpression resource type

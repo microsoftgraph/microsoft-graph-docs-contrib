@@ -3,6 +3,7 @@ title: "Update iosPkcsCertificateProfile"
 description: "Update the properties of a iosPkcsCertificateProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update iosPkcsCertificateProfile

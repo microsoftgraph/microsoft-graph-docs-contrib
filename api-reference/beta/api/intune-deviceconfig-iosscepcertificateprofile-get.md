@@ -3,6 +3,7 @@ title: "Get iosScepCertificateProfile"
 description: "Read properties and relationships of the iosScepCertificateProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get iosScepCertificateProfile

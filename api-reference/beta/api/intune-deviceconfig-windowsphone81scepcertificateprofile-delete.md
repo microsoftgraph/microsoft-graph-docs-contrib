@@ -3,6 +3,7 @@ title: "Delete windowsPhone81SCEPCertificateProfile"
 description: "Deletes a windowsPhone81SCEPCertificateProfile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsPhone81SCEPCertificateProfile

@@ -3,6 +3,7 @@ title: "Permissions"
 description: "Update an app previously published to the Microsoft Teams app catalog. "
 author: "nkramer"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Update apps published to your organization's app catalog

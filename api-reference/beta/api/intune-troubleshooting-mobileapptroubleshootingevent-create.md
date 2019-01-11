@@ -3,6 +3,7 @@ title: "Create mobileAppTroubleshootingEvent"
 description: "Create a new mobileAppTroubleshootingEvent object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create mobileAppTroubleshootingEvent

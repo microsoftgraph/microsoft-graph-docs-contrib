@@ -3,6 +3,7 @@ title: "List deviceEnrollmentPlatformRestrictionsConfigurations"
 description: "List properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceEnrollmentPlatformRestrictionsConfigurations

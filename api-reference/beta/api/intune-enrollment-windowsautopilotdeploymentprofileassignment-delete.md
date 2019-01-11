@@ -3,6 +3,7 @@ title: "Delete windowsAutopilotDeploymentProfileAssignment"
 description: "Deletes a windowsAutopilotDeploymentProfileAssignment."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsAutopilotDeploymentProfileAssignment

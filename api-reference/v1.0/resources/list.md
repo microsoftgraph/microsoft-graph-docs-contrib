@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: List
 localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # List resource
 

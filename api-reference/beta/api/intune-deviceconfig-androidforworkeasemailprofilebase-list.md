@@ -3,6 +3,7 @@ title: "List androidForWorkEasEmailProfileBases"
 description: "List properties and relationships of the androidForWorkEasEmailProfileBase objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidForWorkEasEmailProfileBases

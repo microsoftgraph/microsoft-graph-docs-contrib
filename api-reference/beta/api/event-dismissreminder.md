@@ -3,6 +3,7 @@ title: "event: dismissReminder"
 description: "Dismiss a reminder that has been triggered for an event in a user calendar."
 author: "angelgolfer-ms"
 localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # event: dismissReminder

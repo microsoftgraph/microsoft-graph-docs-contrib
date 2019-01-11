@@ -2,6 +2,8 @@
 title: "androidManagedStoreAppConfiguration resource type"
 description: "Contains properties, inherited properties and actions for Android Enterprise mobile app configurations."
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # androidManagedStoreAppConfiguration resource type

@@ -3,6 +3,7 @@ author: chackman
 ms.author: chackman
 title: Follow drive item
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Follow drive item
 

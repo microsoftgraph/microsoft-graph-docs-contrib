@@ -3,6 +3,7 @@ title: "Get event"
 description: "Get the properties and relationships of the specified event object."
 author: "angelgolfer-ms"
 localization_priority: Priority
+ms.prod: "outlook"
 ---
 
 # Get event

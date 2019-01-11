@@ -2,6 +2,7 @@
 title: "reportRoot: getOneDriveActivityFileCounts"
 description: "Get the number of unique, licensed users that performed file interactions against any OneDrive account."
 localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getOneDriveActivityFileCounts

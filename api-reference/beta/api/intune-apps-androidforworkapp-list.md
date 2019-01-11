@@ -3,6 +3,7 @@ title: "List androidForWorkApps"
 description: "List properties and relationships of the androidForWorkApp objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidForWorkApps

@@ -3,6 +3,7 @@ title: "Update auditEvent"
 description: "Update the properties of a auditEvent object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update auditEvent

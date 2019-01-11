@@ -2,6 +2,8 @@
 title: "iosCustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iosCustomConfiguration resource."
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # iosCustomConfiguration resource type

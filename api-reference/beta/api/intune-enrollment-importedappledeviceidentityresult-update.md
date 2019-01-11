@@ -3,6 +3,7 @@ title: "Update importedAppleDeviceIdentityResult"
 description: "Update the properties of a importedAppleDeviceIdentityResult object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update importedAppleDeviceIdentityResult

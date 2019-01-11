@@ -3,6 +3,7 @@ title: "Create iosScepCertificateProfile"
 description: "Create a new iosScepCertificateProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosScepCertificateProfile

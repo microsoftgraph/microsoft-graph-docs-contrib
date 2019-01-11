@@ -3,6 +3,7 @@ title: "Create windowsPhone81GeneralConfiguration"
 description: "Create a new windowsPhone81GeneralConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsPhone81GeneralConfiguration

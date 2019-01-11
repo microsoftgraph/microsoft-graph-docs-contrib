@@ -3,6 +3,7 @@ title: "Create androidForWorkImportedPFXCertificateProfile"
 description: "Create a new androidForWorkImportedPFXCertificateProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidForWorkImportedPFXCertificateProfile

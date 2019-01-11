@@ -3,6 +3,7 @@ title: "officeConfigurationAssignmentTarget resource type"
 description: "Office Client Configuration Assignment Target."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # officeConfigurationAssignmentTarget resource type

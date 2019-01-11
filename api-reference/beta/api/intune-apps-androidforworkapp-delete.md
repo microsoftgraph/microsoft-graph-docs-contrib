@@ -3,6 +3,7 @@ title: "Delete androidForWorkApp"
 description: "Deletes a androidForWorkApp."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidForWorkApp

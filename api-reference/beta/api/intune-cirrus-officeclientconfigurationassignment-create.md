@@ -3,6 +3,7 @@ title: "Create officeClientConfigurationAssignment"
 description: "Add a target group to an existing policy."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create officeClientConfigurationAssignment

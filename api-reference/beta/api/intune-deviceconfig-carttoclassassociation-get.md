@@ -3,6 +3,7 @@ title: "Get cartToClassAssociation"
 description: "Read properties and relationships of the cartToClassAssociation object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get cartToClassAssociation

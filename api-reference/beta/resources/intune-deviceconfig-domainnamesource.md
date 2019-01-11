@@ -3,6 +3,7 @@ title: "domainNameSource enum type"
 description: "Domainname source."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # domainNameSource enum type

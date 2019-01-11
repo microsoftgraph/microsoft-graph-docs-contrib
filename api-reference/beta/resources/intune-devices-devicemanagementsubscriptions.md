@@ -3,6 +3,7 @@ title: "deviceManagementSubscriptions enum type"
 description: "Tenant mobile device management subscriptions."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceManagementSubscriptions enum type

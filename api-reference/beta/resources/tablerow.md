@@ -3,6 +3,7 @@ title: "TableRow resource type"
 description: "Represents a row in a table."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # TableRow resource type

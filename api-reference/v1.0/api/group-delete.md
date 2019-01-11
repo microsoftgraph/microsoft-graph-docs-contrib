@@ -3,6 +3,7 @@ title: "Delete group"
 description: "Delete group."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Delete group

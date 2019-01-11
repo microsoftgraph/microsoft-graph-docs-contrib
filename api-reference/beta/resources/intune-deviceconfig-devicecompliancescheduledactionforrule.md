@@ -3,6 +3,7 @@ title: "deviceComplianceScheduledActionForRule resource type"
 description: "Scheduled Action for Rule"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceComplianceScheduledActionForRule resource type

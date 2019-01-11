@@ -3,6 +3,7 @@ title: "Update group"
 description: "Update the properties of a group object."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Update group

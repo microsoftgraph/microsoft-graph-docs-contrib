@@ -3,6 +3,7 @@ title: "syncWithAppleDeviceEnrollmentProgram action"
 description: "Synchronizes between Apple Device Enrollment Program and Intune"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # syncWithAppleDeviceEnrollmentProgram action

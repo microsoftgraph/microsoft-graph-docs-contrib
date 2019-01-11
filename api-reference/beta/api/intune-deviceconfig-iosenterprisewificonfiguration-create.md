@@ -3,6 +3,7 @@ title: "Create iosEnterpriseWiFiConfiguration"
 description: "Create a new iosEnterpriseWiFiConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosEnterpriseWiFiConfiguration

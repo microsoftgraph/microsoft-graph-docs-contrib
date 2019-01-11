@@ -3,6 +3,7 @@ title: "Delete mobileAppTroubleshootingEvent"
 description: "Deletes a mobileAppTroubleshootingEvent."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete mobileAppTroubleshootingEvent

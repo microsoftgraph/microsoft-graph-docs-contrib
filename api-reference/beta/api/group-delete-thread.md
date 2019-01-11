@@ -3,6 +3,7 @@ title: "Delete conversation thread"
 description: "Delete a thread object."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Delete conversation thread

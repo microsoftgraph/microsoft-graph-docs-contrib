@@ -3,6 +3,7 @@ title: "List restrictedAppsViolations"
 description: "List properties and relationships of the restrictedAppsViolation objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List restrictedAppsViolations

@@ -3,6 +3,7 @@ title: "getManagedAppDiagnosticStatuses function"
 description: "Gets diagnostics validation status for a given user."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # getManagedAppDiagnosticStatuses function

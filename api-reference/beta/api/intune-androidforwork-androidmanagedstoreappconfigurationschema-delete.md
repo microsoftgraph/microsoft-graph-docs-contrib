@@ -3,6 +3,7 @@ title: "Delete androidManagedStoreAppConfigurationSchema"
 description: "Deletes a androidManagedStoreAppConfigurationSchema."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidManagedStoreAppConfigurationSchema

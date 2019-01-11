@@ -2,6 +2,7 @@
 title: "siteActivitySummary resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # siteActivitySummary resource type

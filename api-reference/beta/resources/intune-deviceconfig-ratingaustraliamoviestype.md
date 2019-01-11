@@ -3,6 +3,7 @@ title: "ratingAustraliaMoviesType enum type"
 description: "Movies rating labels in Australia"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingAustraliaMoviesType enum type

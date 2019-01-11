@@ -3,6 +3,7 @@ title: "Delete managedDevice"
 description: "Deletes a managedDevice."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete managedDevice

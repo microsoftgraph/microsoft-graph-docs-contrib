@@ -3,6 +3,7 @@ title: "revokeLicenses action"
 description: "Revoke licenses associated with a specific appleVolumePurchaseProgramToken"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # revokeLicenses action

@@ -3,6 +3,7 @@ title: "Delete azureADWindowsAutopilotDeploymentProfile"
 description: "Deletes a azureADWindowsAutopilotDeploymentProfile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete azureADWindowsAutopilotDeploymentProfile

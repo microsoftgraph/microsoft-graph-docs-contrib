@@ -2,6 +2,8 @@
 title: "educationAssignmentGradeType resource type"
 description: "Represents how an assignment will be graded. This is used within the **assignments.grading** property."
 localization_priority: Normal
+author: "dipakboyed"
+ms.prod: "education"
 ---
 
 # educationAssignmentGradeType resource type

@@ -3,6 +3,7 @@ title: "Update azureADWindowsAutopilotDeploymentProfile"
 description: "Update the properties of a azureADWindowsAutopilotDeploymentProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update azureADWindowsAutopilotDeploymentProfile

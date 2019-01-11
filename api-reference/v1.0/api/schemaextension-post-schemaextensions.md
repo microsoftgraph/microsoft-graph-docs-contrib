@@ -2,6 +2,7 @@
 title: "Create schemaExtension"
 description: "Create a new schemaExtension definition to extend a supporting resource type."
 localization_priority: Priority
+author: "dkershaw10"
 ---
 
 # Create schemaExtension

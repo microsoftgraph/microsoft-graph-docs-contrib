@@ -3,6 +3,7 @@ title: "call: record"
 description: "Record the call."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # call: record

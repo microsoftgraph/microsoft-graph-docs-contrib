@@ -3,6 +3,7 @@ title: "Get deviceEnrollmentLimitConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentLimitConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceEnrollmentLimitConfiguration

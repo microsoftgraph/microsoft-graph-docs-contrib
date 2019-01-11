@@ -2,6 +2,8 @@
 title: "androidManagedStoreAppConfigurationSchema resource type"
 description: "Schema describing an Android application's custom configurations."
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # androidManagedStoreAppConfigurationSchema resource type

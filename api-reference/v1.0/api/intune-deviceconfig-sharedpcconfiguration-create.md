@@ -3,6 +3,7 @@ title: "Create sharedPCConfiguration"
 description: "Create a new sharedPCConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create sharedPCConfiguration

@@ -3,6 +3,7 @@ title: "intendedPurpose enum type"
 description: "PFX Import Options."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # intendedPurpose enum type

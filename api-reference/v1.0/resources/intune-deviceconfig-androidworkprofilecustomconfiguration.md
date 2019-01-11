@@ -3,6 +3,7 @@ title: "androidWorkProfileCustomConfiguration resource type"
 description: "Android Work Profile custom configuration"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidWorkProfileCustomConfiguration resource type

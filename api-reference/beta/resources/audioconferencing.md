@@ -3,6 +3,7 @@ title: "audioConferencing resource type"
 description: "Represents phone access information for an onlineMeeting."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # audioConferencing resource type

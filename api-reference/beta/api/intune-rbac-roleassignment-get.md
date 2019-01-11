@@ -3,6 +3,7 @@ title: "Get roleAssignment"
 description: "Read properties and relationships of the roleAssignment object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get roleAssignment

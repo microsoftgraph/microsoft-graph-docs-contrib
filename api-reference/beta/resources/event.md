@@ -3,6 +3,7 @@ title: "event resource type"
 description: "An event in a calendar."
 author: "angelgolfer-ms"
 localization_priority: Priority
+ms.prod: "outlook"
 ---
 
 # event resource type

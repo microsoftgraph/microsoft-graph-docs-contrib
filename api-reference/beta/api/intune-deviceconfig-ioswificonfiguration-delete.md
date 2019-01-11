@@ -3,6 +3,7 @@ title: "Delete iosWiFiConfiguration"
 description: "Deletes a iosWiFiConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosWiFiConfiguration

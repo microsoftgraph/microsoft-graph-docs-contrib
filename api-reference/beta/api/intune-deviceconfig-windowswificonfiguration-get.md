@@ -3,6 +3,7 @@ title: "Get windowsWifiConfiguration"
 description: "Read properties and relationships of the windowsWifiConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsWifiConfiguration

@@ -3,6 +3,7 @@ title: "Create androidForWorkTrustedRootCertificate"
 description: "Create a new androidForWorkTrustedRootCertificate object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidForWorkTrustedRootCertificate

@@ -2,6 +2,8 @@
 title: "Permissions"
 description: "Remove the app from your organization's app catalog (the tenant app catalog). "
 localization_priority: Normal
+author: "nkramer"
+ms.prod: "microsoft-teams"
 ---
 
 # Remove an app from your organization's app catalog

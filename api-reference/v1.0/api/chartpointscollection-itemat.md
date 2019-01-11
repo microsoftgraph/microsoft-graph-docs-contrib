@@ -3,6 +3,7 @@ title: "ChartPointsCollection: ItemAt"
 description: "Retrieve a point based on its position within the series."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartPointsCollection: ItemAt

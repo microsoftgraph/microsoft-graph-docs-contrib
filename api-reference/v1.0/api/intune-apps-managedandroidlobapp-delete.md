@@ -3,6 +3,7 @@ title: "Delete managedAndroidLobApp"
 description: "Deletes a managedAndroidLobApp."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete managedAndroidLobApp

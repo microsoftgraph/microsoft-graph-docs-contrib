@@ -3,6 +3,7 @@ title: "Update deviceManagementScriptRunSummary"
 description: "Update the properties of a deviceManagementScriptRunSummary object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceManagementScriptRunSummary
