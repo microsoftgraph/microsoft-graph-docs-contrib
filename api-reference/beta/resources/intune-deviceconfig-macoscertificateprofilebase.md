@@ -2,6 +2,7 @@
 title: "macOSCertificateProfileBase resource type"
 description: "Mac OS certificate profile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # macOSCertificateProfileBase resource type

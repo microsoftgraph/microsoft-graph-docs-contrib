@@ -2,6 +2,7 @@
 title: "wipe action"
 description: "Wipe a device"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # wipe action

@@ -2,6 +2,7 @@
 title: "Get settingStateDeviceSummary"
 description: "Read properties and relationships of the settingStateDeviceSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get settingStateDeviceSummary

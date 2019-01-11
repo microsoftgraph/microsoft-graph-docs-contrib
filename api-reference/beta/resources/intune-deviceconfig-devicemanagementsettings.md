@@ -2,6 +2,7 @@
 title: "deviceManagementSettings resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementSettings resource type

@@ -1,6 +1,7 @@
 ---
 title: "macOSGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSGeneralDeviceConfiguration resource."
+localization_priority: Normal
 ---
 
 # macOSGeneralDeviceConfiguration resource type

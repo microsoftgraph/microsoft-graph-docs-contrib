@@ -2,6 +2,7 @@
 title: "omaSettingInteger resource type"
 description: "OMA Settings Integer definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # omaSettingInteger resource type

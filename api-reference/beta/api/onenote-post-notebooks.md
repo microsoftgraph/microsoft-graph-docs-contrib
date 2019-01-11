@@ -2,6 +2,7 @@
 title: "Create notebook"
 description: "Create a new OneNote notebook."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # Create notebook

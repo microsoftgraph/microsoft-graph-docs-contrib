@@ -2,6 +2,7 @@
 title: "Update windows10PFXImportCertificateProfile"
 description: "Update the properties of a windows10PFXImportCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windows10PFXImportCertificateProfile

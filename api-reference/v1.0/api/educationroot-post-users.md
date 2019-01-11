@@ -2,6 +2,7 @@
 title: "Create educationUser"
 description: "Create a new user."
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # Create educationUser

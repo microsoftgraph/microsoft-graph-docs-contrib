@@ -2,6 +2,7 @@
 title: "Create userAppInstallStatus"
 description: "Create a new userAppInstallStatus object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create userAppInstallStatus

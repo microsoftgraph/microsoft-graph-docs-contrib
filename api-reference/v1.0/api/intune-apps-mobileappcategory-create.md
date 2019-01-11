@@ -2,6 +2,7 @@
 title: "Create mobileAppCategory"
 description: "Create a new mobileAppCategory object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create mobileAppCategory

@@ -1,6 +1,7 @@
 ---
 title: "Unarchive team"
 description: "Restore an archived team. This restores users' ability to send messages and edit the team, abiding by tenant and team settings. Teams are archived using the archive API."
+localization_priority: Normal
 ---
 
 # Unarchive team

@@ -2,6 +2,7 @@
 title: "Get notebook"
 description: "Retrieve the properties and relationships of a notebook object."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # Get notebook

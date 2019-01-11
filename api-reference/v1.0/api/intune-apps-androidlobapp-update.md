@@ -2,6 +2,7 @@
 title: "Update androidLobApp"
 description: "Update the properties of a androidLobApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidLobApp

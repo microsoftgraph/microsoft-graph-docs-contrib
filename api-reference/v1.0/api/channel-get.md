@@ -2,6 +2,7 @@
 title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
 author: "nkramer"
+localization_priority: Priority
 ---
 
 # Get channel

@@ -2,6 +2,7 @@
 title: "Delete application"
 description: "Deletes an application."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Delete application

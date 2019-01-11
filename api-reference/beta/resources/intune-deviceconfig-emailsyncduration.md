@@ -2,6 +2,7 @@
 title: "emailSyncDuration enum type"
 description: "Possible values for email sync duration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # emailSyncDuration enum type

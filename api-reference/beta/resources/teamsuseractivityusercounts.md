@@ -2,6 +2,7 @@
 title: "teamsUserActivityUserCounts resource type"
 description: "The following is a JSON representation of the resource."
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # teamsUserActivityUserCounts resource type

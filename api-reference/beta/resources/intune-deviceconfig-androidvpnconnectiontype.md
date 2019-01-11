@@ -2,6 +2,7 @@
 title: "androidVpnConnectionType enum type"
 description: "Android VPN connection type."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidVpnConnectionType enum type

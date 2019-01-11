@@ -2,6 +2,7 @@
 title: "Get managedApp"
 description: "Read properties and relationships of the managedApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get managedApp

@@ -1,6 +1,7 @@
 ---
 title: "Update plannerBucketTaskBoardTaskFormat"
 description: "Update the properties of **plannerBucketTaskBoardTaskFormat** object."
+localization_priority: Normal
 ---
 
 # Update plannerBucketTaskBoardTaskFormat

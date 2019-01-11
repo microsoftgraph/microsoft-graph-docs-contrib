@@ -1,6 +1,7 @@
 ---
 title: "Range: clear"
 description: "Clear range values, format, fill, border, etc."
+localization_priority: Normal
 ---
 
 # Range: clear

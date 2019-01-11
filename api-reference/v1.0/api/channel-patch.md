@@ -2,6 +2,7 @@
 title: "Patch channel"
 description: "Update the properties of the specified channel."
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # Patch channel

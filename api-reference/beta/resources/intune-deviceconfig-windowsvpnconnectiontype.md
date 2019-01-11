@@ -2,6 +2,7 @@
 title: "windowsVpnConnectionType enum type"
 description: "Windows VPN connection type."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsVpnConnectionType enum type

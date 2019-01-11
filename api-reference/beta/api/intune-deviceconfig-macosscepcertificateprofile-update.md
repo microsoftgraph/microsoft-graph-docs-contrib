@@ -2,6 +2,7 @@
 title: "Update macOSScepCertificateProfile"
 description: "Update the properties of a macOSScepCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update macOSScepCertificateProfile

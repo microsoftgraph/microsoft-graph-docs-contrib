@@ -2,6 +2,7 @@
 title: "Delete windowsDefenderAdvancedThreatProtectionConfiguration"
 description: "Deletes a windowsDefenderAdvancedThreatProtectionConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsDefenderAdvancedThreatProtectionConfiguration

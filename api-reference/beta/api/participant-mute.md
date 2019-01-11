@@ -1,7 +1,8 @@
-﻿---
+---
 title: "participant: mute"
 description: "Mute a specific participant in the call."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # participant: mute

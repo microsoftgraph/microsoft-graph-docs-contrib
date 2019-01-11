@@ -2,6 +2,7 @@
 title: "certificateStore enum type"
 description: "CertificateStore types"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # certificateStore enum type

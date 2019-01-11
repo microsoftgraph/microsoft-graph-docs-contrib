@@ -2,6 +2,7 @@
 title: "Get iosVppAppAssignedLicense"
 description: "Read properties and relationships of the iosVppAppAssignedLicense object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get iosVppAppAssignedLicense

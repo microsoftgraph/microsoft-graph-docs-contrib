@@ -2,6 +2,7 @@
 title: "directoryAudit resource type"
 description: "This resource represents the directory Audit items and its collection"
 author: "lleonard-msft"
+localization_priority: Priority
 ---
 
 # directoryAudit resource type

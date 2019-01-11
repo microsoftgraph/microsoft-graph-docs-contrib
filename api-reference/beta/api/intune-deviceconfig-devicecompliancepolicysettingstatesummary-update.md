@@ -2,6 +2,7 @@
 title: "Update deviceCompliancePolicySettingStateSummary"
 description: "Update the properties of a deviceCompliancePolicySettingStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceCompliancePolicySettingStateSummary

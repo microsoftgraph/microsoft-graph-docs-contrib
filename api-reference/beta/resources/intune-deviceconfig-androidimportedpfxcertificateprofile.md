@@ -2,6 +2,7 @@
 title: "androidImportedPFXCertificateProfile resource type"
 description: "Android PFX Import certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidImportedPFXCertificateProfile resource type

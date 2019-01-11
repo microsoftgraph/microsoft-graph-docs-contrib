@@ -2,6 +2,7 @@
 title: "Delete managedDevice"
 description: "Deletes a managedDevice."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete managedDevice

@@ -2,6 +2,7 @@
 title: "Delete deviceCompliancePolicySettingStateSummary"
 description: "Deletes a deviceCompliancePolicySettingStateSummary."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceCompliancePolicySettingStateSummary

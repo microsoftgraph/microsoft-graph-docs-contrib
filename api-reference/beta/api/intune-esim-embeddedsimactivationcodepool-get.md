@@ -2,6 +2,7 @@
 title: "Get embeddedSIMActivationCodePool"
 description: "Read properties and relationships of the embeddedSIMActivationCodePool object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get embeddedSIMActivationCodePool

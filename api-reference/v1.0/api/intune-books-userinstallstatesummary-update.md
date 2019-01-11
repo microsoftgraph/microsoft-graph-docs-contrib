@@ -2,6 +2,7 @@
 title: "Update userInstallStateSummary"
 description: "Update the properties of a userInstallStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update userInstallStateSummary

@@ -2,6 +2,7 @@
 title: "Delete windowsWifiConfiguration"
 description: "Deletes a windowsWifiConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsWifiConfiguration

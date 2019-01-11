@@ -2,6 +2,7 @@
 title: "Delete managedEBookCategory"
 description: "Deletes a managedEBookCategory."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete managedEBookCategory

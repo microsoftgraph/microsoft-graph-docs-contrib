@@ -2,6 +2,7 @@
 title: "List androidScepCertificateProfiles"
 description: "List properties and relationships of the androidScepCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List androidScepCertificateProfiles

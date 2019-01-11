@@ -2,6 +2,7 @@
 title: "Delete Outlook category"
 description: "Delete the specified outlookCategory object."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # Delete Outlook category

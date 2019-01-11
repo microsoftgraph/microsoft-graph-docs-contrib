@@ -2,6 +2,7 @@
 title: "stateManagementSetting enum type"
 description: "State Management Setting."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # stateManagementSetting enum type

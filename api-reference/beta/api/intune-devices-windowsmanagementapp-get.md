@@ -2,6 +2,7 @@
 title: "Get windowsManagementApp"
 description: "Read properties and relationships of the windowsManagementApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windowsManagementApp

@@ -2,6 +2,7 @@
 title: "mediaInfo resource type"
 description: "The media information used in actions for prompts."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # mediaInfo resource type

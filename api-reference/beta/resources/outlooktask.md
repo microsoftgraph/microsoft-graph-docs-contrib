@@ -2,6 +2,7 @@
 title: "outlookTask resource type"
 description: "An Outlook item that can track a work item. "
 author: "angelgolfer-ms"
+localization_priority: Priority
 ---
 
 # outlookTask resource type

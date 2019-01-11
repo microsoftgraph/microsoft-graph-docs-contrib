@@ -1,6 +1,7 @@
 ---
 title: "Get orgContact"
 description: "Retrieve the properties and relationships of orgcontact object."
+localization_priority: Normal
 ---
 
 # Get orgContact

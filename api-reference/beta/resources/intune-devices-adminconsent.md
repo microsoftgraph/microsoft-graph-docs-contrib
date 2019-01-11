@@ -2,6 +2,7 @@
 title: "adminConsent resource type"
 description: "Admin consent information."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # adminConsent resource type

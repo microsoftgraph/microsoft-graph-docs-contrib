@@ -2,6 +2,7 @@
 title: "Get remoteActionAudit"
 description: "Read properties and relationships of the remoteActionAudit object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get remoteActionAudit

@@ -2,6 +2,7 @@
 title: "windowsKioskSingleUWPApp resource type"
 description: "The class used to identify the UWP app info for the kiosk configuration"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsKioskSingleUWPApp resource type

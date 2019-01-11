@@ -2,6 +2,7 @@
 title: "macOSGatekeeperAppSources enum type"
 description: "App source options for macOS Gatekeeper."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # macOSGatekeeperAppSources enum type

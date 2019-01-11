@@ -2,6 +2,7 @@
 title: "ChartGridlinesFormat resource type"
 description: "Encapsulates the format properties for chart gridlines."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # ChartGridlinesFormat resource type

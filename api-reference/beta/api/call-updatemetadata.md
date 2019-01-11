@@ -2,6 +2,7 @@
 title: "call: updateMetadata"
 description: "Update the appliation's metadata associated with a call."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # call: updateMetadata

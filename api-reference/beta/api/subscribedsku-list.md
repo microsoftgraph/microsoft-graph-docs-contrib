@@ -1,6 +1,7 @@
 ---
 title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
+localization_priority: Normal
 ---
 
 # List subscribedSkus

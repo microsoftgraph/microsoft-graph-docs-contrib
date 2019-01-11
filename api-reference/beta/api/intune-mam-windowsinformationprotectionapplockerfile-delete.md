@@ -2,6 +2,7 @@
 title: "Delete windowsInformationProtectionAppLockerFile"
 description: "Deletes a windowsInformationProtectionAppLockerFile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsInformationProtectionAppLockerFile

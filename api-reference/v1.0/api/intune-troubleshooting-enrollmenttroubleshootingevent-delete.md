@@ -2,6 +2,7 @@
 title: "Delete enrollmentTroubleshootingEvent"
 description: "Deletes a enrollmentTroubleshootingEvent."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete enrollmentTroubleshootingEvent

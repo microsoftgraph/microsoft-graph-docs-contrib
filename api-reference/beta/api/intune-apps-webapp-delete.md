@@ -2,6 +2,7 @@
 title: "Delete webApp"
 description: "Deletes a webApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete webApp

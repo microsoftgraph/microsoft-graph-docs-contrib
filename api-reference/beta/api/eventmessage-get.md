@@ -1,6 +1,7 @@
 ---
 title: "Get eventMessage"
 description: "expand` parameter on the **event**"
+localization_priority: Normal
 ---
 
 # Get eventMessage

@@ -2,6 +2,7 @@
 title: "Delete windowsKioskConfiguration"
 description: "Deletes a windowsKioskConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsKioskConfiguration

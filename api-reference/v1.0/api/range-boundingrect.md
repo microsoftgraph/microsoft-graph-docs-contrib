@@ -2,6 +2,7 @@
 title: "Range: BoundingRect"
 description: "."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Range: BoundingRect

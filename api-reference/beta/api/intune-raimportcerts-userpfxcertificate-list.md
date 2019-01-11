@@ -2,6 +2,7 @@
 title: "List userPFXCertificates"
 description: "List properties and relationships of the userPFXCertificate objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List userPFXCertificates

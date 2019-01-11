@@ -2,6 +2,7 @@
 title: "Delete mobileAppContent"
 description: "Deletes a mobileAppContent."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete mobileAppContent

@@ -2,6 +2,7 @@
 title: "subjectAlternativeNameType enum type"
 description: "Subject Alternative Name Options."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # subjectAlternativeNameType enum type

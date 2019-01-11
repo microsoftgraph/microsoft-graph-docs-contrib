@@ -2,6 +2,7 @@
 title: "Delete enterpriseCodeSigningCertificate"
 description: "Deletes a enterpriseCodeSigningCertificate."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete enterpriseCodeSigningCertificate

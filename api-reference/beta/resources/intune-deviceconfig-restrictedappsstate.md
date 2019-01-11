@@ -2,6 +2,7 @@
 title: "restrictedAppsState enum type"
 description: "Restricted apps state"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # restrictedAppsState enum type

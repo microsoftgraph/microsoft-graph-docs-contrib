@@ -2,6 +2,7 @@
 title: "Get windowsCertificateProfileBase"
 description: "Read properties and relationships of the windowsCertificateProfileBase object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windowsCertificateProfileBase

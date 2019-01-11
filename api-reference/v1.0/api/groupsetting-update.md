@@ -2,6 +2,7 @@
 title: "Update a group setting"
 description: "Update the properties of a specific group setting object."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # Update a group setting

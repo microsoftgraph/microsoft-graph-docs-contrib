@@ -2,6 +2,7 @@
 title: "Get deviceConfigurationUserOverview"
 description: "Read properties and relationships of the deviceConfigurationUserOverview object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get deviceConfigurationUserOverview

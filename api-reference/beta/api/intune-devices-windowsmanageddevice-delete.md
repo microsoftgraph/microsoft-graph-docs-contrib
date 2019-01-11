@@ -2,6 +2,7 @@
 title: "Delete windowsManagedDevice"
 description: "Deletes a windowsManagedDevice."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsManagedDevice

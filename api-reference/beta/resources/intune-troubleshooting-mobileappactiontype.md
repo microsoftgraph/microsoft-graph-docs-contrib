@@ -2,6 +2,7 @@
 title: "mobileAppActionType enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mobileAppActionType enum type

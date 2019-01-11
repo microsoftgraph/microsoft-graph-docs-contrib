@@ -2,6 +2,7 @@
 title: "Get androidForWorkEnterpriseWiFiConfiguration"
 description: "Read properties and relationships of the androidForWorkEnterpriseWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidForWorkEnterpriseWiFiConfiguration

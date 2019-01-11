@@ -2,6 +2,7 @@
 title: "List iosVppEBookAssignments"
 description: "List properties and relationships of the iosVppEBookAssignment objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List iosVppEBookAssignments

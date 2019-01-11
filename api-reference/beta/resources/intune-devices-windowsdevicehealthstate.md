@@ -2,6 +2,7 @@
 title: "windowsDeviceHealthState enum type"
 description: "Computer endpoint protection state"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsDeviceHealthState enum type

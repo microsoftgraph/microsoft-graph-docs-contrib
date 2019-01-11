@@ -2,6 +2,7 @@
 title: "Add teacher"
 description: "Add a teacher to a class."
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # Add teacher

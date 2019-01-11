@@ -2,6 +2,7 @@
 title: "Delete iosImportedPFXCertificateProfile"
 description: "Deletes a iosImportedPFXCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosImportedPFXCertificateProfile

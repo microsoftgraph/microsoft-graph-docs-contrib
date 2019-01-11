@@ -2,6 +2,7 @@
 title: "androidStoreApp resource type"
 description: "Contains properties and inherited properties for Android store apps."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidStoreApp resource type

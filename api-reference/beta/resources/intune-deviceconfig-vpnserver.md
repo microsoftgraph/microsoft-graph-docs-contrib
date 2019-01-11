@@ -2,6 +2,7 @@
 title: "vpnServer resource type"
 description: "VPN Server definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vpnServer resource type

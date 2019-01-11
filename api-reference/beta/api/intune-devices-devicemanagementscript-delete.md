@@ -2,6 +2,7 @@
 title: "Delete deviceManagementScript"
 description: "Deletes a deviceManagementScript."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceManagementScript

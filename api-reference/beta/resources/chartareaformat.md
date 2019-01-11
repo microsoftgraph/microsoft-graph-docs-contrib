@@ -2,6 +2,7 @@
 title: "ChartAreaFormat resource type"
 description: "Encapsulates the format properties for the overall chart area."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # ChartAreaFormat resource type

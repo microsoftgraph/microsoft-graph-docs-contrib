@@ -2,6 +2,7 @@
 title: "Update windowsPhone81GeneralConfiguration"
 description: "Update the properties of a windowsPhone81GeneralConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsPhone81GeneralConfiguration

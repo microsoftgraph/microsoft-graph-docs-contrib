@@ -1,6 +1,7 @@
 ---
 title: "List taskFolders"
 description: "Get all the Outlook task folders in the user's mailbox."
+localization_priority: Normal
 ---
 
 # List taskFolders

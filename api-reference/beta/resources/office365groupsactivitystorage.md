@@ -1,6 +1,7 @@
 ---
 title: "office365GroupsActivityStorage resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # office365GroupsActivityStorage resource type

@@ -2,6 +2,7 @@
 title: "Get conversation"
 description: "Get a conversation object."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # Get conversation

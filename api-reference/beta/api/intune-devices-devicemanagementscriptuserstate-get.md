@@ -2,6 +2,7 @@
 title: "Get deviceManagementScriptUserState"
 description: "Read properties and relationships of the deviceManagementScriptUserState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get deviceManagementScriptUserState

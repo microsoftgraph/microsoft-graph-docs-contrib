@@ -2,6 +2,7 @@
 title: "Delete iosLobAppProvisioningConfigurationAssignment"
 description: "Deletes a iosLobAppProvisioningConfigurationAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosLobAppProvisioningConfigurationAssignment

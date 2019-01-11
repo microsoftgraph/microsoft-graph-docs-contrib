@@ -2,6 +2,7 @@
 title: "Get androidForWorkScepCertificateProfile"
 description: "Read properties and relationships of the androidForWorkScepCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidForWorkScepCertificateProfile

@@ -2,6 +2,7 @@
 title: "deviceManagementExchangeAccessRule resource type"
 description: "Device Access Rules in Exchange."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementExchangeAccessRule resource type

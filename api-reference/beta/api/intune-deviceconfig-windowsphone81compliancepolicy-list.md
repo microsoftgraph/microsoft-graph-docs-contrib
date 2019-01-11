@@ -2,6 +2,7 @@
 title: "List windowsPhone81CompliancePolicies"
 description: "List properties and relationships of the windowsPhone81CompliancePolicy objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsPhone81CompliancePolicies

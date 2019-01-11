@@ -2,6 +2,7 @@
 title: "Delete ndesConnector"
 description: "Deletes a ndesConnector."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete ndesConnector

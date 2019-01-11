@@ -2,6 +2,7 @@
 title: "Update deviceConfigurationGroupAssignment"
 description: "Update the properties of a deviceConfigurationGroupAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceConfigurationGroupAssignment

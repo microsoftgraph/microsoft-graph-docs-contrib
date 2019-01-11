@@ -2,6 +2,7 @@
 title: "Update androidWorkProfileVpnConfiguration"
 description: "Update the properties of a androidWorkProfileVpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidWorkProfileVpnConfiguration

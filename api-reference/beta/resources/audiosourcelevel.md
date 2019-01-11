@@ -2,6 +2,7 @@
 title: "audioSourceLevel resource type"
 description: "Level configuration for other sources."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # audioSourceLevel resource type

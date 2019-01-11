@@ -2,6 +2,7 @@
 title: "deviceComplianceUserOverview resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceComplianceUserOverview resource type

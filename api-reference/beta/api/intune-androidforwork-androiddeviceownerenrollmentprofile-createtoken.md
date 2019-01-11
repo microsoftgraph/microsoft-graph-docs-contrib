@@ -2,6 +2,7 @@
 title: "createToken action"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # createToken action

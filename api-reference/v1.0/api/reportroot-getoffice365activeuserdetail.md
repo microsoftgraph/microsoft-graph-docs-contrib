@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getOffice365ActiveUserDetail"
 description: "Get details about Office 365 active users."
+localization_priority: Priority
 ---
 
 # reportRoot: getOffice365ActiveUserDetail

@@ -2,6 +2,7 @@
 title: "List androidDeviceOwnerEnrollmentProfiles"
 description: "List properties and relationships of the androidDeviceOwnerEnrollmentProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List androidDeviceOwnerEnrollmentProfiles

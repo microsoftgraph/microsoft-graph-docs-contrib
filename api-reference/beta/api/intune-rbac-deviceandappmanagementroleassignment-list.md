@@ -2,6 +2,7 @@
 title: "List deviceAndAppManagementRoleAssignments"
 description: "List properties and relationships of the deviceAndAppManagementRoleAssignment objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List deviceAndAppManagementRoleAssignments

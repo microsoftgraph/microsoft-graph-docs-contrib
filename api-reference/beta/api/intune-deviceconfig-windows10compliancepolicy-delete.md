@@ -2,6 +2,7 @@
 title: "Delete windows10CompliancePolicy"
 description: "Deletes a windows10CompliancePolicy."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windows10CompliancePolicy

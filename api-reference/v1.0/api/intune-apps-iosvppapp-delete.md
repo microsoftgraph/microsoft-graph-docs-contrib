@@ -2,6 +2,7 @@
 title: "Delete iosVppApp"
 description: "Deletes a iosVppApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosVppApp

@@ -2,6 +2,7 @@
 title: "mediaContentRatingUnitedKingdom resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mediaContentRatingUnitedKingdom resource type

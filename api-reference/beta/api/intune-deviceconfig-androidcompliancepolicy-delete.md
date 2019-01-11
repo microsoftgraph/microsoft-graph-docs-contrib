@@ -2,6 +2,7 @@
 title: "Delete androidCompliancePolicy"
 description: "Deletes a androidCompliancePolicy."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete androidCompliancePolicy

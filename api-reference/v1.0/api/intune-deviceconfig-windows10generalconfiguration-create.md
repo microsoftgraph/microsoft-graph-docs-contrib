@@ -2,6 +2,7 @@
 title: "Create windows10GeneralConfiguration"
 description: "Create a new windows10GeneralConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windows10GeneralConfiguration

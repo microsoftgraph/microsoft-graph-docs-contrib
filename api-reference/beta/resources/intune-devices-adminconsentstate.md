@@ -2,6 +2,7 @@
 title: "adminConsentState enum type"
 description: "Admin consent state."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # adminConsentState enum type

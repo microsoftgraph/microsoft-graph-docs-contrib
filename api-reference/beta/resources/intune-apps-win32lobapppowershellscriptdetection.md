@@ -2,6 +2,7 @@
 title: "win32LobAppPowerShellScriptDetection resource type"
 description: "Contains PowerShell script properties to detect a Win32 App"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # win32LobAppPowerShellScriptDetection resource type

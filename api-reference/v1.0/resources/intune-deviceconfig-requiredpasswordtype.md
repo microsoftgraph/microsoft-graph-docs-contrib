@@ -2,6 +2,7 @@
 title: "requiredPasswordType enum type"
 description: "Possible values of required passwords."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # requiredPasswordType enum type

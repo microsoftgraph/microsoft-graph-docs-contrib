@@ -2,6 +2,7 @@
 title: "embeddedSIMActivationCodePoolAssignment resource type"
 description: "The embedded SIM activation code pool assignment entity assigns a specific embeddedSIMActivationCodePool to an AAD device group."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # embeddedSIMActivationCodePoolAssignment resource type

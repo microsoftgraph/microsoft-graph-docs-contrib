@@ -2,6 +2,7 @@
 title: "meteredConnectionLimitType enum type"
 description: "Metered Connection Limit Settings."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # meteredConnectionLimitType enum type

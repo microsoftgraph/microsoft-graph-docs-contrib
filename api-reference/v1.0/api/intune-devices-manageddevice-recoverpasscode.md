@@ -2,6 +2,7 @@
 title: "recoverPasscode action"
 description: "Recover passcode"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # recoverPasscode action

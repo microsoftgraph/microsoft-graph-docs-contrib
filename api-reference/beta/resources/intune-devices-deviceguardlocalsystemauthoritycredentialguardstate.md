@@ -2,6 +2,7 @@
 title: "deviceGuardLocalSystemAuthorityCredentialGuardState enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceGuardLocalSystemAuthorityCredentialGuardState enum type

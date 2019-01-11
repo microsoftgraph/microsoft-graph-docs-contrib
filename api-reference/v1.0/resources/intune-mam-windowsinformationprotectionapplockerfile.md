@@ -2,6 +2,7 @@
 title: "windowsInformationProtectionAppLockerFile resource type"
 description: "Windows Information Protection AppLocker File"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtectionAppLockerFile resource type

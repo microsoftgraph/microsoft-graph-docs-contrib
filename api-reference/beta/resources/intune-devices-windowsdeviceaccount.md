@@ -2,6 +2,7 @@
 title: "windowsDeviceAccount resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsDeviceAccount resource type

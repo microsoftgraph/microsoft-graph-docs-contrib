@@ -2,6 +2,7 @@
 title: "Create windowsManagementAppHealthState"
 description: "Create a new windowsManagementAppHealthState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsManagementAppHealthState

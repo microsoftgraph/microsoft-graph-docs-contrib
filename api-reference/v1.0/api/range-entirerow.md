@@ -2,6 +2,7 @@
 title: "Range: EntireRow"
 description: "Gets an object that represents the entire row of the range."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Range: EntireRow

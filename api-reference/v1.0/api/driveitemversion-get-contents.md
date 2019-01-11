@@ -1,6 +1,7 @@
 ---
 title: "Download contents of a DriveItemVersion resource"
 description: "Retrieve the contents of a specific version of a DriveItem."
+localization_priority: Normal
 ---
 
 # Download contents of a DriveItemVersion resource

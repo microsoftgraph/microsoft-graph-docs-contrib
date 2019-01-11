@@ -2,6 +2,7 @@
 title: "Create macOSDeviceFeaturesConfiguration"
 description: "Create a new macOSDeviceFeaturesConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create macOSDeviceFeaturesConfiguration

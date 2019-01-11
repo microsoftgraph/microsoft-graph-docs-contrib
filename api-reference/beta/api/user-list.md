@@ -2,6 +2,7 @@
 title: "List users"
 description: "Retrieve a list of user objects."
 author: "dkershaw10"
+localization_priority: Priority
 ---
 
 # List users

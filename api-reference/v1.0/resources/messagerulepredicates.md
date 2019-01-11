@@ -2,6 +2,7 @@
 title: "messageRulePredicates resource type"
 description: "Represents the set of conditions and exceptions that are available for a rule."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # messageRulePredicates resource type

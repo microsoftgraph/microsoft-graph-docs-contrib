@@ -2,6 +2,7 @@
 title: "bitLockerEncryptionMethod enum type"
 description: "BitLockerEncryptionMethod types"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # bitLockerEncryptionMethod enum type

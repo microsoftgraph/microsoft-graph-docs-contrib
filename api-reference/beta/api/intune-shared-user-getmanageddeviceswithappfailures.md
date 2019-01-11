@@ -2,6 +2,7 @@
 title: "getManagedDevicesWithAppFailures function"
 description: "Retrieves the list of devices with failed apps"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # getManagedDevicesWithAppFailures function

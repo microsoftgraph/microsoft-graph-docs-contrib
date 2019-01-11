@@ -2,6 +2,7 @@
 title: "Get userAppInstallStatus"
 description: "Read properties and relationships of the userAppInstallStatus object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get userAppInstallStatus

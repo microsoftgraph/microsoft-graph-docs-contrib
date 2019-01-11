@@ -1,6 +1,7 @@
 ---
 title: "visualInfo resource type"
 description: "A complex type for representing the **visualElements** property in the activity object."
+localization_priority: Normal
 ---
 
 # visualInfo resource type

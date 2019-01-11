@@ -2,6 +2,7 @@
 title: "Delete iosTrustedRootCertificate"
 description: "Deletes a iosTrustedRootCertificate."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosTrustedRootCertificate

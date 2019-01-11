@@ -2,6 +2,7 @@
 title: "Delete deviceAndAppManagementRoleDefinition"
 description: "Deletes a deviceAndAppManagementRoleDefinition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceAndAppManagementRoleDefinition

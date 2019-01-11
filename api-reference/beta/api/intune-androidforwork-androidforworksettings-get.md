@@ -2,6 +2,7 @@
 title: "Get androidForWorkSettings"
 description: "Read properties and relationships of the androidForWorkSettings object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidForWorkSettings

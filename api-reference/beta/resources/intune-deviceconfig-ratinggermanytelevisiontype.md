@@ -2,6 +2,7 @@
 title: "ratingGermanyTelevisionType enum type"
 description: "TV content rating labels in Germany"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingGermanyTelevisionType enum type

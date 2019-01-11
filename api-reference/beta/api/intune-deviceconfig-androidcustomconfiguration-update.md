@@ -2,6 +2,7 @@
 title: "Update androidCustomConfiguration"
 description: "Update the properties of a androidCustomConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidCustomConfiguration

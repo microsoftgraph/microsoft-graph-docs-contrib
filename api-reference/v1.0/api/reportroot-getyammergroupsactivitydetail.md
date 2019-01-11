@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getYammerGroupsActivityDetail"
 description: "Get details about Yammer groups activity by group."
+localization_priority: Normal
 ---
 
 # reportRoot: getYammerGroupsActivityDetail

@@ -2,6 +2,7 @@
 title: "List iosLobAppProvisioningConfigurationAssignments"
 description: "List properties and relationships of the iosLobAppProvisioningConfigurationAssignment objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List iosLobAppProvisioningConfigurationAssignments

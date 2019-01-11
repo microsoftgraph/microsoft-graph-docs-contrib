@@ -2,6 +2,7 @@
 title: "windows10NetworkBoundaryConfiguration resource type"
 description: "Windows10 Network Boundary Configuration"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows10NetworkBoundaryConfiguration resource type

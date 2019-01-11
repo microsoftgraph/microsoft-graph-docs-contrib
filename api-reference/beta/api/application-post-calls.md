@@ -2,6 +2,7 @@
 title: "Create call"
 description: "Create a new call."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # Create call

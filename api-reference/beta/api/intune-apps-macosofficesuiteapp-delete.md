@@ -2,6 +2,7 @@
 title: "Delete macOSOfficeSuiteApp"
 description: "Deletes a macOSOfficeSuiteApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete macOSOfficeSuiteApp

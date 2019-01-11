@@ -2,6 +2,7 @@
 title: "Create deviceManagementScriptAssignment"
 description: "Create a new deviceManagementScriptAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceManagementScriptAssignment

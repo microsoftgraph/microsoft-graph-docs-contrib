@@ -2,6 +2,7 @@
 title: "Create managedIOSStoreApp"
 description: "Create a new managedIOSStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create managedIOSStoreApp

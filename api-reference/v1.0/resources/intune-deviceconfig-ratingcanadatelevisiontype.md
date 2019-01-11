@@ -2,6 +2,7 @@
 title: "ratingCanadaTelevisionType enum type"
 description: "TV content rating labels in Canada"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingCanadaTelevisionType enum type

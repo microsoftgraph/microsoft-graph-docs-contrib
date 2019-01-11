@@ -2,6 +2,7 @@
 title: "discoverySource enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # discoverySource enum type

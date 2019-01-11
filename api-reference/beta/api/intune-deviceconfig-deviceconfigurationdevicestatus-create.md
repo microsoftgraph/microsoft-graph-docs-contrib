@@ -2,6 +2,7 @@
 title: "Create deviceConfigurationDeviceStatus"
 description: "Create a new deviceConfigurationDeviceStatus object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceConfigurationDeviceStatus

@@ -2,6 +2,7 @@
 title: "Delete win32LobApp"
 description: "Deletes a win32LobApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete win32LobApp

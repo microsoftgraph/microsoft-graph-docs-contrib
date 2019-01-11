@@ -2,6 +2,7 @@
 title: "Update windows81TrustedRootCertificate"
 description: "Update the properties of a windows81TrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windows81TrustedRootCertificate

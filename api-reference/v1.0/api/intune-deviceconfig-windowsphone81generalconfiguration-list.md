@@ -2,6 +2,7 @@
 title: "List windowsPhone81GeneralConfigurations"
 description: "List properties and relationships of the windowsPhone81GeneralConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsPhone81GeneralConfigurations

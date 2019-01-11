@@ -2,6 +2,7 @@
 title: "Get managedAppProtection"
 description: "Read properties and relationships of the managedAppProtection object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get managedAppProtection

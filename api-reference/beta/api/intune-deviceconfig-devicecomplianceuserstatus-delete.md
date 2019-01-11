@@ -2,6 +2,7 @@
 title: "Delete deviceComplianceUserStatus"
 description: "Deletes a deviceComplianceUserStatus."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceComplianceUserStatus

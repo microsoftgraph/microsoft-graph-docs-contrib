@@ -2,6 +2,7 @@
 title: "Delete deviceConfigurationConflictSummary"
 description: "Deletes a deviceConfigurationConflictSummary."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceConfigurationConflictSummary

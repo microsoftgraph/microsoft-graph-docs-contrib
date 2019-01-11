@@ -1,6 +1,7 @@
 ---
 title: "contactFolder: delta"
 description: "Get a set of contact folders that have been added, deleted, or removed from the user's mailbox."
+localization_priority: Normal
 ---
 
 # contactFolder: delta

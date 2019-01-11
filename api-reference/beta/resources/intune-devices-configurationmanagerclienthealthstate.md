@@ -2,6 +2,7 @@
 title: "configurationManagerClientHealthState resource type"
 description: "Configuration manager client health state"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # configurationManagerClientHealthState resource type

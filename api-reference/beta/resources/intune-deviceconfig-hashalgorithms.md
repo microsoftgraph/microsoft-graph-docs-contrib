@@ -2,6 +2,7 @@
 title: "hashAlgorithms enum type"
 description: "Hash Algorithm Options."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # hashAlgorithms enum type

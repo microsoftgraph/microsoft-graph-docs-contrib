@@ -2,6 +2,7 @@
 title: "List embeddedSIMDeviceStates"
 description: "List properties and relationships of the embeddedSIMDeviceState objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List embeddedSIMDeviceStates

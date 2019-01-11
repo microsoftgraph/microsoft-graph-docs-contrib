@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getMailboxUsageQuotaStatusMailboxCounts"
 description: "Get the count of user mailboxes in each quota category."
+localization_priority: Normal
 ---
 
 # reportRoot: getMailboxUsageQuotaStatusMailboxCounts

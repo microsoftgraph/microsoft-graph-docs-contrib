@@ -2,6 +2,7 @@
 title: "Create mobileAppProvisioningConfigGroupAssignment"
 description: "Create a new mobileAppProvisioningConfigGroupAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create mobileAppProvisioningConfigGroupAssignment

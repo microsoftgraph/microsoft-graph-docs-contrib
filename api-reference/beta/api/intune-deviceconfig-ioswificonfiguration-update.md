@@ -2,6 +2,7 @@
 title: "Update iosWiFiConfiguration"
 description: "Update the properties of a iosWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosWiFiConfiguration

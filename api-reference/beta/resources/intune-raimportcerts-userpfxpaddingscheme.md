@@ -2,6 +2,7 @@
 title: "userPfxPaddingScheme enum type"
 description: "Supported values for the padding scheme used by encryption provider."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # userPfxPaddingScheme enum type

@@ -2,6 +2,7 @@
 title: "Update macOSImportedPFXCertificateProfile"
 description: "Update the properties of a macOSImportedPFXCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update macOSImportedPFXCertificateProfile

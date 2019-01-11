@@ -2,6 +2,7 @@
 title: "Microsoft Graph Security API error responses"
 description: "Errors in the Microsoft Graph Security API are returned using the standard HTTP 206 Partial Content status code and are delivered via a warning header."
 author: "Preetikr"
+localization_priority: Normal
 ---
 
 # Microsoft Graph Security API error responses

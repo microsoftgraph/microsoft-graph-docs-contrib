@@ -2,6 +2,7 @@
 title: "Update iosStoreApp"
 description: "Update the properties of a iosStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosStoreApp

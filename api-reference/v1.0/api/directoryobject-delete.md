@@ -2,6 +2,7 @@
 title: "Delete directoryObject"
 description: "Deletes a directoryObject."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Delete directoryObject

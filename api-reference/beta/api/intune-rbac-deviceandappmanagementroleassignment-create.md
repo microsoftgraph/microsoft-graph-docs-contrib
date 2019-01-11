@@ -2,6 +2,7 @@
 title: "Create deviceAndAppManagementRoleAssignment"
 description: "Create a new deviceAndAppManagementRoleAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceAndAppManagementRoleAssignment

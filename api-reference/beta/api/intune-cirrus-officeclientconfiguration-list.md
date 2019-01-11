@@ -2,6 +2,7 @@
 title: "List officeClientConfigurations"
 description: "Get all policies."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List officeClientConfigurations

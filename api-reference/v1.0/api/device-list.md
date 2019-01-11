@@ -2,6 +2,7 @@
 title: "List devices"
 description: "Retrieve a list of device objects registered in the organization."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List devices

@@ -2,6 +2,7 @@
 title: "Create managedDeviceCertificateState"
 description: "Create a new managedDeviceCertificateState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create managedDeviceCertificateState

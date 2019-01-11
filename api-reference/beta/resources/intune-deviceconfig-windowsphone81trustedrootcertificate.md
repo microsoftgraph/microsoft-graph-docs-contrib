@@ -2,6 +2,7 @@
 title: "windowsPhone81TrustedRootCertificate resource type"
 description: " Trusted Root Certificate configuration profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsPhone81TrustedRootCertificate resource type

@@ -2,6 +2,7 @@
 title: "firewallPreSharedKeyEncodingMethodType enum type"
 description: "Possible values for firewallPreSharedKeyEncodingMethod"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # firewallPreSharedKeyEncodingMethodType enum type

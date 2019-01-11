@@ -2,6 +2,7 @@
 title: "certificateConnectorSetting resource type"
 description: "Certificate connector settings."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # certificateConnectorSetting resource type

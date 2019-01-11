@@ -2,6 +2,7 @@
 title: "Delete userPFXCertificate"
 description: "Deletes a userPFXCertificate."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete userPFXCertificate

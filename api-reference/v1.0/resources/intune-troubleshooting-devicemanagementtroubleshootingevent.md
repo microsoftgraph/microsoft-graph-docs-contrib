@@ -2,6 +2,7 @@
 title: "deviceManagementTroubleshootingEvent resource type"
 description: "Event representing an general failure."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementTroubleshootingEvent resource type

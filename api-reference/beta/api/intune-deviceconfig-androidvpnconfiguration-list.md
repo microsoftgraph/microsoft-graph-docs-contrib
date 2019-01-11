@@ -2,6 +2,7 @@
 title: "List androidVpnConfigurations"
 description: "List properties and relationships of the androidVpnConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List androidVpnConfigurations

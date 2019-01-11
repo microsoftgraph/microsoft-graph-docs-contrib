@@ -2,6 +2,7 @@
 title: "miracastChannel enum type"
 description: "Possible values for Miracast channel."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # miracastChannel enum type

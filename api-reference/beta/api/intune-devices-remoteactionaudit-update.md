@@ -2,6 +2,7 @@
 title: "Update remoteActionAudit"
 description: "Update the properties of a remoteActionAudit object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update remoteActionAudit

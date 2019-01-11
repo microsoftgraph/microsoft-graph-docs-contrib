@@ -2,6 +2,7 @@
 title: "Create iosStoreApp"
 description: "Create a new iosStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create iosStoreApp

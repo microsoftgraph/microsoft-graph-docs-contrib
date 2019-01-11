@@ -2,6 +2,7 @@
 title: "Delete depOnboardingSetting"
 description: "Deletes a depOnboardingSetting."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete depOnboardingSetting

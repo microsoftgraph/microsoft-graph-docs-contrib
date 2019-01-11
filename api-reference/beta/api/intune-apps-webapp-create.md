@@ -2,6 +2,7 @@
 title: "Create webApp"
 description: "Create a new webApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create webApp

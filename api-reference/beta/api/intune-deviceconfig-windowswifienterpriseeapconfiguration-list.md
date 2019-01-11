@@ -2,6 +2,7 @@
 title: "List windowsWifiEnterpriseEAPConfigurations"
 description: "List properties and relationships of the windowsWifiEnterpriseEAPConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsWifiEnterpriseEAPConfigurations

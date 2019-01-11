@@ -2,6 +2,7 @@
 title: "Delete androidLobApp"
 description: "Deletes a androidLobApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete androidLobApp

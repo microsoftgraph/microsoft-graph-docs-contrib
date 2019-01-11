@@ -1,6 +1,7 @@
 ---
 title: "List pages"
 description: "Retrieve a list of page objects from the specified section."
+localization_priority: Normal
 ---
 
 # List pages

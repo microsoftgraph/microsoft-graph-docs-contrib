@@ -2,6 +2,7 @@
 title: "certificateRevocationStatus enum type"
 description: "Certificate Revocation Status."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # certificateRevocationStatus enum type

@@ -2,6 +2,7 @@
 title: "Create deviceCategory"
 description: "Create a new deviceCategory object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceCategory

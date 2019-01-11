@@ -2,6 +2,7 @@
 title: "getMobileAppCount function"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # getMobileAppCount function

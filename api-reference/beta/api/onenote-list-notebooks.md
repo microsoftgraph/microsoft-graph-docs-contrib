@@ -2,6 +2,7 @@
 title: "List notebooks"
 description: "Retrieve a list of notebook objects."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # List notebooks

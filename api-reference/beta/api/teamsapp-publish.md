@@ -2,6 +2,7 @@
 title: "Permissions"
 description: "Publish an app to the Microsoft Teams apps catalog. "
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # Publish apps to your organization's app catalog

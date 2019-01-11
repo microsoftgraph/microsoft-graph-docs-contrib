@@ -2,6 +2,7 @@
 title: "Range: UsedRange"
 description: "Returns the used range of the given range object."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Range: UsedRange

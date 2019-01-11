@@ -2,6 +2,7 @@
 title: "Delete managedDeviceMobileAppConfigurationAssignment"
 description: "Deletes a managedDeviceMobileAppConfigurationAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete managedDeviceMobileAppConfigurationAssignment

@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Download a previous version
+localization_priority: Normal
 ---
 # Download contents of a DriveItemVersion resource (preview)
 

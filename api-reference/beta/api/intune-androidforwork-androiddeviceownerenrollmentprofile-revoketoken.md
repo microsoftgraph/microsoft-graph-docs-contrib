@@ -2,6 +2,7 @@
 title: "revokeToken action"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # revokeToken action

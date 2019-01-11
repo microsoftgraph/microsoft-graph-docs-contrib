@@ -2,6 +2,7 @@
 title: "Delete depEnrollmentProfile"
 description: "Deletes a depEnrollmentProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete depEnrollmentProfile

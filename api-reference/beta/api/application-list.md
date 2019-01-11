@@ -2,6 +2,7 @@
 title: "List applications"
 description: "Retrieve the list of applications in this organization."
 author: "lleonard-msft"
+localization_priority: Priority
 ---
 
 # List applications

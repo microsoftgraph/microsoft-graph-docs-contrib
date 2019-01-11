@@ -2,6 +2,7 @@
 title: "deviceManagementExchangeConnectorSyncType enum type"
 description: "The type of Exchange Connector sync requested."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementExchangeConnectorSyncType enum type

@@ -2,6 +2,7 @@
 title: "Delete windowsAutopilotDeploymentProfileAssignment"
 description: "Deletes a windowsAutopilotDeploymentProfileAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsAutopilotDeploymentProfileAssignment

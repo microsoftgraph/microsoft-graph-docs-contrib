@@ -2,6 +2,7 @@
 title: "participantMixerLevel resource type"
 description: "Configuration of mixer levels for given audio participant"
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # participantMixerLevel resource type

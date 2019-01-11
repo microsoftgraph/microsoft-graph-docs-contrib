@@ -2,6 +2,7 @@
 title: "educationSubmission: release"
 description: " and indicates that grading is done. This action can only be done by the teacher."
 author: "dipakboyed"
+localization_priority: Normal
 ---
 
 # educationSubmission: release

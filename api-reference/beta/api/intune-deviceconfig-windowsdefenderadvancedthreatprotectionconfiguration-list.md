@@ -2,6 +2,7 @@
 title: "List windowsDefenderAdvancedThreatProtectionConfigurations"
 description: "List properties and relationships of the windowsDefenderAdvancedThreatProtectionConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsDefenderAdvancedThreatProtectionConfigurations

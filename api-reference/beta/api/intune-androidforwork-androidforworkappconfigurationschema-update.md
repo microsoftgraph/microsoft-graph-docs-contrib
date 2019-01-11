@@ -2,6 +2,7 @@
 title: "Update androidForWorkAppConfigurationSchema"
 description: "Update the properties of a androidForWorkAppConfigurationSchema object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidForWorkAppConfigurationSchema

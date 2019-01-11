@@ -2,6 +2,7 @@
 title: "deviceEnrollmentFailureReason enum type"
 description: "Top level failure categories for enrollment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceEnrollmentFailureReason enum type

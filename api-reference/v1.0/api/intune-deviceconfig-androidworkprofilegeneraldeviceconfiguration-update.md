@@ -2,6 +2,7 @@
 title: "Update androidWorkProfileGeneralDeviceConfiguration"
 description: "Update the properties of a androidWorkProfileGeneralDeviceConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidWorkProfileGeneralDeviceConfiguration

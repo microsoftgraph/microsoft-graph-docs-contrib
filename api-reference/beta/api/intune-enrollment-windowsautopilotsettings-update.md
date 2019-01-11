@@ -2,6 +2,7 @@
 title: "Update windowsAutopilotSettings"
 description: "Update the properties of a windowsAutopilotSettings object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsAutopilotSettings

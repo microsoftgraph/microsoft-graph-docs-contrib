@@ -2,6 +2,7 @@
 title: "Create windows10TeamGeneralConfiguration"
 description: "Create a new windows10TeamGeneralConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windows10TeamGeneralConfiguration

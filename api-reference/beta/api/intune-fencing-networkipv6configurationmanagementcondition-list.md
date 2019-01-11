@@ -2,6 +2,7 @@
 title: "List networkIPv6ConfigurationManagementConditions"
 description: "List properties and relationships of the networkIPv6ConfigurationManagementCondition objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List networkIPv6ConfigurationManagementConditions

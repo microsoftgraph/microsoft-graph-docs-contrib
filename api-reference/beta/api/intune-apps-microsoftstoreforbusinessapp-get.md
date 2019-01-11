@@ -2,6 +2,7 @@
 title: "Get microsoftStoreForBusinessApp"
 description: "Read properties and relationships of the microsoftStoreForBusinessApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get microsoftStoreForBusinessApp

@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Download a file
+localization_priority: Normal
 ---
 # Download the contents of a DriveItem
 

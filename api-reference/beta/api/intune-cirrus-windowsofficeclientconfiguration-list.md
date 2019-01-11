@@ -2,6 +2,7 @@
 title: "List windowsOfficeClientConfigurations"
 description: "List properties and relationships of the windowsOfficeClientConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsOfficeClientConfigurations

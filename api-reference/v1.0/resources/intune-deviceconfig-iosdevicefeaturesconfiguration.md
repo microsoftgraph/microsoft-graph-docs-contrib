@@ -2,6 +2,7 @@
 title: "iosDeviceFeaturesConfiguration resource type"
 description: "iOS Device Features Configuration Profile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosDeviceFeaturesConfiguration resource type

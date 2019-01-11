@@ -2,6 +2,7 @@
 title: "retire action"
 description: "Retire a device"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # retire action

@@ -2,6 +2,7 @@
 title: "Update eBookInstallSummary"
 description: "Update the properties of a eBookInstallSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update eBookInstallSummary

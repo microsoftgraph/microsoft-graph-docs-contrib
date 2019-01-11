@@ -2,6 +2,7 @@
 title: "windowsDeviceUsageType enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsDeviceUsageType enum type

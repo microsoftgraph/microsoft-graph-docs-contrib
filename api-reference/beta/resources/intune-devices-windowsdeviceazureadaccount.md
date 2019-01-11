@@ -2,6 +2,7 @@
 title: "windowsDeviceAzureADAccount resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsDeviceAzureADAccount resource type

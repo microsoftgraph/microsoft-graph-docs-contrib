@@ -2,6 +2,7 @@
 title: "Delete macOSCustomConfiguration"
 description: "Deletes a macOSCustomConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete macOSCustomConfiguration

@@ -1,6 +1,7 @@
 ---
 title: "OneDrive file storage API overview"
 description: "OneDrive is the files hub in Office 365."
+localization_priority: Priority
 ---
 
 # OneDrive file storage API overview

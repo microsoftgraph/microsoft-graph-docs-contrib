@@ -2,6 +2,7 @@
 title: "vpnTrafficRule resource type"
 description: "VPN Traffic Rule definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vpnTrafficRule resource type

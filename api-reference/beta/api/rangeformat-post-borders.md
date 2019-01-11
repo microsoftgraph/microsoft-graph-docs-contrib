@@ -2,6 +2,7 @@
 title: "Create RangeBorder"
 description: "Use this API to create a new RangeBorder."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Create RangeBorder

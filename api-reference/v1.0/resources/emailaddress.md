@@ -1,6 +1,7 @@
 ---
 title: "emailAddress resource type"
 description: "The name and email address of a contact or message recipient."
+localization_priority: Normal
 ---
 
 # emailAddress resource type

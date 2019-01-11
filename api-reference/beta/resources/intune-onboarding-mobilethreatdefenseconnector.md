@@ -2,6 +2,7 @@
 title: "mobileThreatDefenseConnector resource type"
 description: "Entity which represents a connection to Mobile threat defense partner."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mobileThreatDefenseConnector resource type

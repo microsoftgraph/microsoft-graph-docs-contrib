@@ -2,6 +2,7 @@
 title: "Get message"
 description: "Retrieve the properties and relationships of a message object."
 author: "angelgolfer-ms"
+localization_priority: Priority
 ---
 
 # Get message

@@ -1,6 +1,7 @@
 ---
 title: "List plans"
 description: "Retrieve a list of **plannerplan** objects."
+localization_priority: Normal
 ---
 
 # List plans

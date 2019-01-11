@@ -2,6 +2,7 @@
 title: "Get androidImportedPFXCertificateProfile"
 description: "Read properties and relationships of the androidImportedPFXCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidImportedPFXCertificateProfile

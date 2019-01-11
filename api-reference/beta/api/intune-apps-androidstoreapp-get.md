@@ -2,6 +2,7 @@
 title: "Get androidStoreApp"
 description: "Read properties and relationships of the androidStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidStoreApp

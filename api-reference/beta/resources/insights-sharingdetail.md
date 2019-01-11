@@ -2,6 +2,7 @@
 title: "sharingDetail resource type"
 description: "Complex type containing properties of Shared items. "
 author: "simonhult"
+localization_priority: Normal
 ---
 
 # sharingDetail resource type

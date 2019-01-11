@@ -2,6 +2,7 @@
 title: "Update defaultDeviceCompliancePolicy"
 description: "Update the properties of a defaultDeviceCompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update defaultDeviceCompliancePolicy

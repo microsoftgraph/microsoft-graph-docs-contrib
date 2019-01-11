@@ -2,6 +2,7 @@
 title: "teamsTemplate resource type"
 description: "Describes the teamsTemplate entity."
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # teamsTemplate resource type

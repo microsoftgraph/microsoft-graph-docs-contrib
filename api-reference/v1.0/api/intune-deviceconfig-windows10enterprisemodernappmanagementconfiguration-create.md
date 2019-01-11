@@ -2,6 +2,7 @@
 title: "Create windows10EnterpriseModernAppManagementConfiguration"
 description: "Create a new windows10EnterpriseModernAppManagementConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windows10EnterpriseModernAppManagementConfiguration

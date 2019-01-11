@@ -2,6 +2,7 @@
 title: "managedDeviceEnrollmentFailureTrends function"
 description: "Metadata for the enrollment failure trends report"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managedDeviceEnrollmentFailureTrends function

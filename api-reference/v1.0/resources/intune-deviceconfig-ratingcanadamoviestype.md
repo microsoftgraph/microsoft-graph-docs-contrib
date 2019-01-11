@@ -2,6 +2,7 @@
 title: "ratingCanadaMoviesType enum type"
 description: "Movies rating labels in Canada"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingCanadaMoviesType enum type

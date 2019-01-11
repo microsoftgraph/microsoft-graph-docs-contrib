@@ -2,6 +2,7 @@
 title: "Update iosEducationDeviceConfiguration"
 description: "Update the properties of a iosEducationDeviceConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosEducationDeviceConfiguration

@@ -2,6 +2,7 @@
 title: "win32LobAppDetectionOperator enum type"
 description: "Contains properties for detection operator."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # win32LobAppDetectionOperator enum type

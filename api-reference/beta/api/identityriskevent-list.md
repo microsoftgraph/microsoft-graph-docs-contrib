@@ -2,6 +2,7 @@
 title: "List identityRiskEvents"
 description: "Retrieve a list of identityriskevent objects."
 author: "cloudhandler"
+localization_priority: Normal
 ---
 
 # List identityRiskEvents

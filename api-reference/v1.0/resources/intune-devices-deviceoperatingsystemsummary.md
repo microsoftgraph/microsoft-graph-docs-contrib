@@ -2,6 +2,7 @@
 title: "deviceOperatingSystemSummary resource type"
 description: "Device operating system summary."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceOperatingSystemSummary resource type

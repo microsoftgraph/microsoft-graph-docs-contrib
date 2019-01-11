@@ -2,6 +2,7 @@
 title: "mediaPrompt resource type"
 description: "The mediaPrompt type."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # mediaPrompt resource type

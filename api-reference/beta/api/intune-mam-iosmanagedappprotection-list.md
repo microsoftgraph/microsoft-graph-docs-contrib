@@ -2,6 +2,7 @@
 title: "List iosManagedAppProtections"
 description: "List properties and relationships of the iosManagedAppProtection objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List iosManagedAppProtections

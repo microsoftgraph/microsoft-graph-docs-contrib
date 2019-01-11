@@ -2,6 +2,7 @@
 title: "androidWorkProfileScepCertificateProfile resource type"
 description: "Androif Work Profile SCEP certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidWorkProfileScepCertificateProfile resource type

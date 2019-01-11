@@ -2,6 +2,7 @@
 title: "enterpriseCodeSigningCertificate resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # enterpriseCodeSigningCertificate resource type

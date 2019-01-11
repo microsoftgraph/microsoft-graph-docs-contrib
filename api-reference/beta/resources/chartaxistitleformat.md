@@ -2,6 +2,7 @@
 title: "ChartAxisTitleFormat resource type"
 description: "Represents the chart axis title formatting."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # ChartAxisTitleFormat resource type

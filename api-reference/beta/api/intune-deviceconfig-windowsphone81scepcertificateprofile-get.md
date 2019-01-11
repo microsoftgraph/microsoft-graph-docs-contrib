@@ -2,6 +2,7 @@
 title: "Get windowsPhone81SCEPCertificateProfile"
 description: "Read properties and relationships of the windowsPhone81SCEPCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windowsPhone81SCEPCertificateProfile

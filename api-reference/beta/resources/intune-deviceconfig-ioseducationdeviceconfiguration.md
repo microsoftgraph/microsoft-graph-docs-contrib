@@ -2,6 +2,7 @@
 title: "iosEducationDeviceConfiguration resource type"
 description: "iOS Education configuration profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosEducationDeviceConfiguration resource type

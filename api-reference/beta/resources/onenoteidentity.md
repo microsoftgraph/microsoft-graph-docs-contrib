@@ -1,6 +1,7 @@
 ---
 title: "oneNoteIdentity resource type"
 description: "**Support coming soon**"
+localization_priority: Normal
 ---
 
 # oneNoteIdentity resource type

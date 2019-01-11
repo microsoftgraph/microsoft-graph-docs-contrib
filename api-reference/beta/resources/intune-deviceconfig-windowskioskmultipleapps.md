@@ -2,6 +2,7 @@
 title: "windowsKioskMultipleApps resource type"
 description: "The class used to identify the MultiMode app configuration for the kiosk configuration"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsKioskMultipleApps resource type

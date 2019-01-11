@@ -2,6 +2,7 @@
 title: "certificateValidityPeriodScale enum type"
 description: "Certificate Validity Period Options."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # certificateValidityPeriodScale enum type

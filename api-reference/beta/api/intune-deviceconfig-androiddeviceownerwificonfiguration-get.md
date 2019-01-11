@@ -2,6 +2,7 @@
 title: "Get androidDeviceOwnerWiFiConfiguration"
 description: "Read properties and relationships of the androidDeviceOwnerWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidDeviceOwnerWiFiConfiguration

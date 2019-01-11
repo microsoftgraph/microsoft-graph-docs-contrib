@@ -1,6 +1,7 @@
 ---
 title: "mailboxUsageMailboxCounts resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # mailboxUsageMailboxCounts resource type

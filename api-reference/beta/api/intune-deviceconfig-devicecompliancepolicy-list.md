@@ -2,6 +2,7 @@
 title: "List deviceCompliancePolicies"
 description: "List properties and relationships of the deviceCompliancePolicy objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List deviceCompliancePolicies

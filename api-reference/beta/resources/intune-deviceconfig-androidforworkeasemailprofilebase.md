@@ -2,6 +2,7 @@
 title: "androidForWorkEasEmailProfileBase resource type"
 description: "Base for Android For Work EAS Email profiles"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidForWorkEasEmailProfileBase resource type

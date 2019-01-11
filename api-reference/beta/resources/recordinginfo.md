@@ -2,6 +2,7 @@
 title: "recordingInfo resource type"
 description: "Recording information for a participant."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # recordingInfo resource type

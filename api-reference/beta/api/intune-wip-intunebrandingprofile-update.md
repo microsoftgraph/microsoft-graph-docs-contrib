@@ -2,6 +2,7 @@
 title: "Update intuneBrandingProfile"
 description: "Update the properties of a intuneBrandingProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update intuneBrandingProfile

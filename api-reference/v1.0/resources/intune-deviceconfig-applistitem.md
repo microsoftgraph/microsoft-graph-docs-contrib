@@ -2,6 +2,7 @@
 title: "appListItem resource type"
 description: "Represents an app in the list of managed applications"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # appListItem resource type

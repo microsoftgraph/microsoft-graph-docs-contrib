@@ -1,6 +1,7 @@
 ---
 title: "Get schemaExtension"
 description: "Get the properties of the specified schemaExtension definition."
+localization_priority: Normal
 ---
 
 # Get schemaExtension

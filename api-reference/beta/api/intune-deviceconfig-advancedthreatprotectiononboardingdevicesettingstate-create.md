@@ -2,6 +2,7 @@
 title: "Create advancedThreatProtectionOnboardingDeviceSettingState"
 description: "Create a new advancedThreatProtectionOnboardingDeviceSettingState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create advancedThreatProtectionOnboardingDeviceSettingState

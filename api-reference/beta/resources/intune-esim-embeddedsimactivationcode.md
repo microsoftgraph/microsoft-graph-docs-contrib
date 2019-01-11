@@ -2,6 +2,7 @@
 title: "embeddedSIMActivationCode resource type"
 description: "The embedded SIM activation code as provided by the mobile operator."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # embeddedSIMActivationCode resource type

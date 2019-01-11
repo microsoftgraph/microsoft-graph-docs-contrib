@@ -2,6 +2,7 @@
 title: "Get windowsAutopilotSettings"
 description: "Read properties and relationships of the windowsAutopilotSettings object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windowsAutopilotSettings

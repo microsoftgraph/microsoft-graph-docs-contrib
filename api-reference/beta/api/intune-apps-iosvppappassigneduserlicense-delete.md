@@ -2,6 +2,7 @@
 title: "Delete iosVppAppAssignedUserLicense"
 description: "Deletes a iosVppAppAssignedUserLicense."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosVppAppAssignedUserLicense

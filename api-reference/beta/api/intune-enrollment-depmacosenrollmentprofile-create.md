@@ -2,6 +2,7 @@
 title: "Create depMacOSEnrollmentProfile"
 description: "Create a new depMacOSEnrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create depMacOSEnrollmentProfile

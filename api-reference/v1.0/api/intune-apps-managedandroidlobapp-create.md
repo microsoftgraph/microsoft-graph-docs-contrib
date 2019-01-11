@@ -2,6 +2,7 @@
 title: "Create managedAndroidLobApp"
 description: "Create a new managedAndroidLobApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create managedAndroidLobApp

@@ -2,6 +2,7 @@
 title: "Add application password"
 description: "Adds a strong password to an application."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Add application password

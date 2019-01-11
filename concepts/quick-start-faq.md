@@ -4,6 +4,7 @@ description: "This FAQ answers questions related to the Microsoft Graph Quick St
 author: jasonjoh
 ms.author: jasonjoh
 ms.date: 12/13/2018
+localization_priority: Normal
 ---
 
 # Microsoft Graph quick start FAQ

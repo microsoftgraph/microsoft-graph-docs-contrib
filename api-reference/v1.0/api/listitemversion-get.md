@@ -1,6 +1,7 @@
 ---
 title: "Get a ListItemVersion resource"
 description: "Retrieve the metadata for a specific version of a ListItem."
+localization_priority: Normal
 ---
 
 # Get a ListItemVersion resource

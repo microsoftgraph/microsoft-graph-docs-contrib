@@ -2,6 +2,7 @@
 title: "windows10CompliancePolicy resource type"
 description: "This class contains compliance settings for Windows 10."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows10CompliancePolicy resource type

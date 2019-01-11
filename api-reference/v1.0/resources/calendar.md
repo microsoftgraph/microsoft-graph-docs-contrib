@@ -1,6 +1,7 @@
 ---
 title: "calendar resource type"
 description: "A calendar which is a container for events. It can be a calendar for a user, or the default calendar of an Office 365 group."
+localization_priority: Priority
 ---
 
 # calendar resource type

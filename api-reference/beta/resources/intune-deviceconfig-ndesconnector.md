@@ -2,6 +2,7 @@
 title: "ndesConnector resource type"
 description: "Entity which represents an OnPrem Ndes connector."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ndesConnector resource type

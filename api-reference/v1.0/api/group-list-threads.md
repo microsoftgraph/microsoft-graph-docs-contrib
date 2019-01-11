@@ -2,6 +2,7 @@
 title: "List threads"
 description: "Get all the threads of a group."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # List threads

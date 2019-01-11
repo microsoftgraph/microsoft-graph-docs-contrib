@@ -2,6 +2,7 @@
 title: "List windows81TrustedRootCertificates"
 description: "List properties and relationships of the windows81TrustedRootCertificate objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windows81TrustedRootCertificates

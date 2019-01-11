@@ -2,6 +2,7 @@
 title: "bypassActivationLock action"
 description: "Bypass activation lock"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # bypassActivationLock action

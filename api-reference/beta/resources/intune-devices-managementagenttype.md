@@ -2,6 +2,7 @@
 title: "managementAgentType enum type"
 description: "Management agent type."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managementAgentType enum type

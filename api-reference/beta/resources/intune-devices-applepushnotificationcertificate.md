@@ -2,6 +2,7 @@
 title: "applePushNotificationCertificate resource type"
 description: "Apple push notification certificate."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # applePushNotificationCertificate resource type

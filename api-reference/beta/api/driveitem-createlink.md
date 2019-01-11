@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Share a file with a link
+localization_priority: Normal
 ---
 # Create a sharing link for a DriveItem
 

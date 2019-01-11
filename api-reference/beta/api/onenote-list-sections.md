@@ -2,6 +2,7 @@
 title: "List sections"
 description: "Retrieve a list of section objects."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # List sections

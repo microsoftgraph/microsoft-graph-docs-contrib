@@ -2,6 +2,7 @@
 title: "androidManagedStoreAccountEnterpriseSettings resource type"
 description: "Enterprise settings for an Android managed store account."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidManagedStoreAccountEnterpriseSettings resource type

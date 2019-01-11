@@ -2,6 +2,7 @@
 title: "Table: convertToRange"
 description: "Converts the table into a normal range of cells. All data is preserved."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Table: convertToRange

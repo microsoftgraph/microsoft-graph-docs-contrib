@@ -2,6 +2,7 @@
 title: "Update androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Update the properties of a androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidDeviceOwnerGeneralDeviceConfiguration
