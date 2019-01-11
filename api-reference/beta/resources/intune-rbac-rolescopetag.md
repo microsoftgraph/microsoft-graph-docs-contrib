@@ -2,6 +2,7 @@
 title: "roleScopeTag resource type"
 description: "Role Scope Tag"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # roleScopeTag resource type

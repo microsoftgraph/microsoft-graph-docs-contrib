@@ -2,6 +2,7 @@
 title: "windows81SCEPCertificateProfile resource type"
 description: " SCEP certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows81SCEPCertificateProfile resource type

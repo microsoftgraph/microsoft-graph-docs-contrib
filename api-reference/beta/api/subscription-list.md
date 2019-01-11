@@ -1,6 +1,7 @@
 ---
 title: "List subscriptions"
 description: " see the scenarios below for details."
+localization_priority: Normal
 ---
 
 # List subscriptions

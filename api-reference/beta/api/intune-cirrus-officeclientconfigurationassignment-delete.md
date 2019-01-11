@@ -2,6 +2,7 @@
 title: "Delete officeClientConfigurationAssignment"
 description: "Deletes a officeClientConfigurationAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete officeClientConfigurationAssignment

@@ -2,6 +2,7 @@
 title: "windowsInformationProtectionResourceCollection resource type"
 description: "Windows Information Protection Resource Collection"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtectionResourceCollection resource type

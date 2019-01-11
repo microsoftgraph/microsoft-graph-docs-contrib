@@ -2,6 +2,7 @@
 title: "meetingCapability resource type"
 description: "Contains the capabilities of a meeting"
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # meetingCapability resource type

@@ -2,6 +2,7 @@
 title: "wipeManagedAppRegistrationsByDeviceTag action"
 description: "Issues a wipe operation on an app registration with specified device tag."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # wipeManagedAppRegistrationsByDeviceTag action

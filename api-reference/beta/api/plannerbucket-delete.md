@@ -1,6 +1,7 @@
 ---
 title: "Delete plannerBucket"
 description: "Delete **plannerBucket**."
+localization_priority: Normal
 ---
 
 # Delete plannerBucket

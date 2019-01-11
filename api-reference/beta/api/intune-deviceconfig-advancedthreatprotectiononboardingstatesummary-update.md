@@ -2,6 +2,7 @@
 title: "Update advancedThreatProtectionOnboardingStateSummary"
 description: "Update the properties of a advancedThreatProtectionOnboardingStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update advancedThreatProtectionOnboardingStateSummary

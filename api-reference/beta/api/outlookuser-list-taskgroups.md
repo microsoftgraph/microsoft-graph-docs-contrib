@@ -1,6 +1,7 @@
 ---
 title: "List taskGroups"
 description: "Get all the Outlook task groups in the user's mailbox."
+localization_priority: Normal
 ---
 
 # List taskGroups

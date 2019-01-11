@@ -2,6 +2,7 @@
 title: "Delete deviceManagementExchangeConnector"
 description: "Deletes a deviceManagementExchangeConnector."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceManagementExchangeConnector

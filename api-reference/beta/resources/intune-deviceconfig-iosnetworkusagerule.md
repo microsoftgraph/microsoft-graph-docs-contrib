@@ -1,6 +1,7 @@
 ---
 title: "iosNetworkUsageRule resource type"
 description: "Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks."
+localization_priority: Normal
 ---
 
 # iosNetworkUsageRule resource type

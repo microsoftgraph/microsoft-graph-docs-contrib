@@ -2,6 +2,7 @@
 title: "List mobileApps"
 description: "List properties and relationships of the mobileApp objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List mobileApps

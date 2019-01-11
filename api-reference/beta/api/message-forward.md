@@ -1,6 +1,7 @@
 ---
 title: "message: forward"
 description: "Forward a message, add a comment or modify any updateable properties  "
+localization_priority: Normal
 ---
 
 # message: forward

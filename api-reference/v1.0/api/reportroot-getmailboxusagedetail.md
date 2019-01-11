@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getMailboxUsageDetail"
 description: "Get details about mailbox usage."
+localization_priority: Priority
 ---
 
 # reportRoot: getMailboxUsageDetail

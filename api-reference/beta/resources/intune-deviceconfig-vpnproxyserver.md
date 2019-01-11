@@ -2,6 +2,7 @@
 title: "vpnProxyServer resource type"
 description: "VPN Proxy Server."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vpnProxyServer resource type

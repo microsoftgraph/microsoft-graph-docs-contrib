@@ -2,6 +2,7 @@
 title: "Delete windowsPhone81AppX"
 description: "Deletes a windowsPhone81AppX."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsPhone81AppX

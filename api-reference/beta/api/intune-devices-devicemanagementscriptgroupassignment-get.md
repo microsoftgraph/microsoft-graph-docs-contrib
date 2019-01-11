@@ -2,6 +2,7 @@
 title: "Get deviceManagementScriptGroupAssignment"
 description: "Read properties and relationships of the deviceManagementScriptGroupAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get deviceManagementScriptGroupAssignment

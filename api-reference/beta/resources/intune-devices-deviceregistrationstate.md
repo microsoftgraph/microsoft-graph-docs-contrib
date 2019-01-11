@@ -2,6 +2,7 @@
 title: "deviceRegistrationState enum type"
 description: "Device registration status."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceRegistrationState enum type

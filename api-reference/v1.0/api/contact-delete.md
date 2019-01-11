@@ -2,6 +2,7 @@
 title: "Delete contact"
 description: "Delete a contact."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # Delete contact

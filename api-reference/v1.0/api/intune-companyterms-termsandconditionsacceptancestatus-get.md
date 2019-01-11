@@ -2,6 +2,7 @@
 title: "Get termsAndConditionsAcceptanceStatus"
 description: "Read properties and relationships of the termsAndConditionsAcceptanceStatus object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get termsAndConditionsAcceptanceStatus

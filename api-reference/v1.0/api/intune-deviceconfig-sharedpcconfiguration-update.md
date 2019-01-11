@@ -2,6 +2,7 @@
 title: "Update sharedPCConfiguration"
 description: "Update the properties of a sharedPCConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update sharedPCConfiguration

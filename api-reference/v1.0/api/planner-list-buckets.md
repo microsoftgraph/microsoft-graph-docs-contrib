@@ -1,6 +1,7 @@
 ---
 title: "List buckets"
 description: "Retrieve a list of **plannerbucket** objects."
+localization_priority: Normal
 ---
 
 # List buckets

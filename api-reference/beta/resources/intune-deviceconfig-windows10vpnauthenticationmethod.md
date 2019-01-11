@@ -2,6 +2,7 @@
 title: "windows10VpnAuthenticationMethod enum type"
 description: "Windows 10 VPN connection types."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows10VpnAuthenticationMethod enum type

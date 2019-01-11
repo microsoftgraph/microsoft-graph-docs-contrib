@@ -2,6 +2,7 @@
 title: "List windowsUniversalAppXContainedApps"
 description: "List properties and relationships of the windowsUniversalAppXContainedApp objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsUniversalAppXContainedApps

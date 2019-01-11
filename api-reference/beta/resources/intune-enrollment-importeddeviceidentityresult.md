@@ -2,6 +2,7 @@
 title: "importedDeviceIdentityResult resource type"
 description: "The importedDeviceIdentityResult resource represents the result of attempting to import a device identity."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # importedDeviceIdentityResult resource type

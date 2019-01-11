@@ -2,6 +2,7 @@
 title: "ratingUnitedKingdomTelevisionType enum type"
 description: "TV content rating labels in United Kingdom"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingUnitedKingdomTelevisionType enum type

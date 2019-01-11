@@ -2,6 +2,7 @@
 title: "vpnOnDemandRule resource type"
 description: "VPN On-Demand Rule definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vpnOnDemandRule resource type

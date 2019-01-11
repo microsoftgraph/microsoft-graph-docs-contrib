@@ -2,6 +2,7 @@
 title: "call: transfer"
 description: "Transfer an active call."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # call: transfer

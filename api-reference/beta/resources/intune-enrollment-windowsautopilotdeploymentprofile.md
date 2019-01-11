@@ -2,6 +2,7 @@
 title: "windowsAutopilotDeploymentProfile resource type"
 description: "Windows Autopilot Deployment Profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsAutopilotDeploymentProfile resource type

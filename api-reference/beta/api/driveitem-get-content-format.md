@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Convert to other formats
+localization_priority: Normal
 ---
 # Download a file in another format
 

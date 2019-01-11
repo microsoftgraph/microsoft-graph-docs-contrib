@@ -2,6 +2,7 @@
 title: "Create androidEasEmailProfileConfiguration"
 description: "Create a new androidEasEmailProfileConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create androidEasEmailProfileConfiguration

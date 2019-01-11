@@ -1,6 +1,7 @@
 ---
 title: "orgContact: Get manager"
 description: "Get the contact's manager"
+localization_priority: Normal
 ---
 
 # orgContact: Get manager

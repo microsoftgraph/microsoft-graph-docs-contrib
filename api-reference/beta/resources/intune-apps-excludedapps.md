@@ -2,6 +2,7 @@
 title: "excludedApps resource type"
 description: "Contains properties for Excluded Office365 Apps."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # excludedApps resource type

@@ -2,6 +2,7 @@
 title: "getManagementConditionsForPlatform function"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # getManagementConditionsForPlatform function

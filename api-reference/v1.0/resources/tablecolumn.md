@@ -2,6 +2,7 @@
 title: "TableColumn resource type"
 description: "Represents a column in a table."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # TableColumn resource type

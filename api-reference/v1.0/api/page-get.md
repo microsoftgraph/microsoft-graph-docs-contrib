@@ -1,6 +1,7 @@
 ---
 title: "Get page"
 description: "Retrieve the properties and relationships of a page object."
+localization_priority: Normal
 ---
 
 # Get page

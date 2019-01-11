@@ -2,6 +2,7 @@
 title: "Create mobileAppContentFile"
 description: "Create a new mobileAppContentFile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create mobileAppContentFile

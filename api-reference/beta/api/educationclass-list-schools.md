@@ -2,6 +2,7 @@
 title: "List schools"
 description: "Retrieve a list of schools in which the class is taught."
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # List schools

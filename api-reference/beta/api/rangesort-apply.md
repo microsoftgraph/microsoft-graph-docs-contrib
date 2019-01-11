@@ -2,6 +2,7 @@
 title: "RangeSort: apply"
 description: "Perform a sort operation."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # RangeSort: apply

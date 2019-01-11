@@ -2,6 +2,7 @@
 title: "Update windows81CompliancePolicy"
 description: "Update the properties of a windows81CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windows81CompliancePolicy

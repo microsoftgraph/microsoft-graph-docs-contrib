@@ -2,6 +2,7 @@
 title: "Create owner"
 description: "Use this API to create a new owner."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Create owner

@@ -2,6 +2,7 @@
 title: "List deviceManagementScriptDeviceStates"
 description: "List properties and relationships of the deviceManagementScriptDeviceState objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List deviceManagementScriptDeviceStates

@@ -2,6 +2,7 @@
 title: "windows10ImportedPFXCertificateProfile resource type"
 description: "Windows 10 Desktop and Mobile PFX Import certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows10ImportedPFXCertificateProfile resource type

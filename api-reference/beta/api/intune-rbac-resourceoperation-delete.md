@@ -2,6 +2,7 @@
 title: "Delete resourceOperation"
 description: "Deletes a resourceOperation."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete resourceOperation

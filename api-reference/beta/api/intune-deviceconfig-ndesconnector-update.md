@@ -2,6 +2,7 @@
 title: "Update ndesConnector"
 description: "Update the properties of a ndesConnector object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update ndesConnector

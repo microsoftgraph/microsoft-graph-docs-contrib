@@ -2,6 +2,7 @@
 title: "Delete windows81SCEPCertificateProfile"
 description: "Deletes a windows81SCEPCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windows81SCEPCertificateProfile

@@ -2,6 +2,7 @@
 title: "Update iosVppEBook"
 description: "Update the properties of a iosVppEBook object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosVppEBook

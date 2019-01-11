@@ -2,6 +2,7 @@
 title: "Get participant"
 description: "Retrieve the properties and relationships of a **participant** object."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # Get participant

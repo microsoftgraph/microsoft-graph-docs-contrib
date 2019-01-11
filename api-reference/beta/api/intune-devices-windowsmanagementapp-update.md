@@ -2,6 +2,7 @@
 title: "Update windowsManagementApp"
 description: "Update the properties of a windowsManagementApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsManagementApp

@@ -2,6 +2,7 @@
 title: "Update defaultManagedAppProtection"
 description: "Update the properties of a defaultManagedAppProtection object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update defaultManagedAppProtection

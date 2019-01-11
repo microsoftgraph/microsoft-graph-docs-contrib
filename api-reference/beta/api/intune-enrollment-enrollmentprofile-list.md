@@ -2,6 +2,7 @@
 title: "List enrollmentProfiles"
 description: "List properties and relationships of the enrollmentProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List enrollmentProfiles

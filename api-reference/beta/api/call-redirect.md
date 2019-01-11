@@ -2,6 +2,7 @@
 title: "call: redirect"
 description: "Redirect an incoming call."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # call: redirect

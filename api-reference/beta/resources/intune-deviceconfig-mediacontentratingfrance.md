@@ -2,6 +2,7 @@
 title: "mediaContentRatingFrance resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mediaContentRatingFrance resource type

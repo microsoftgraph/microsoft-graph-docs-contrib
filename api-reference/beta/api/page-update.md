@@ -1,6 +1,7 @@
 ---
 title: "Update page"
 description: "Update the content of a OneNote page."
+localization_priority: Normal
 ---
 
 # Update page

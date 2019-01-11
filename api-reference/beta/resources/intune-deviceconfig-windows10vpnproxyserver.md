@@ -2,6 +2,7 @@
 title: "windows10VpnProxyServer resource type"
 description: "VPN Proxy Server."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows10VpnProxyServer resource type

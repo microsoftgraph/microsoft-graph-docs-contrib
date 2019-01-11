@@ -2,6 +2,7 @@
 title: "managedDeviceEnrollmentTopFailures function"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managedDeviceEnrollmentTopFailures function

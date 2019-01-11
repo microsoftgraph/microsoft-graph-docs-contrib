@@ -2,6 +2,7 @@
 title: "Delete windowsPhone81VpnConfiguration"
 description: "Deletes a windowsPhone81VpnConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsPhone81VpnConfiguration

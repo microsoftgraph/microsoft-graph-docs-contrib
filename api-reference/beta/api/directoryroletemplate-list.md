@@ -2,6 +2,7 @@
 title: "List directoryRoleTemplates"
 description: "Retrieve a list of directoryroletemplate objects."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # List directoryRoleTemplates

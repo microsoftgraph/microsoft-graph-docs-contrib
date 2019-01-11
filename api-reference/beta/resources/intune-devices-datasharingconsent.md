@@ -2,6 +2,7 @@
 title: "dataSharingConsent resource type"
 description: "Data sharing consent information."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # dataSharingConsent resource type

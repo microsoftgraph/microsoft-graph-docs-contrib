@@ -2,6 +2,7 @@
 title: "Delete microsoftStoreForBusinessApp"
 description: "Deletes a microsoftStoreForBusinessApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete microsoftStoreForBusinessApp

@@ -2,6 +2,7 @@
 title: "Update iosVppAppAssignedDeviceLicense"
 description: "Update the properties of a iosVppAppAssignedDeviceLicense object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosVppAppAssignedDeviceLicense

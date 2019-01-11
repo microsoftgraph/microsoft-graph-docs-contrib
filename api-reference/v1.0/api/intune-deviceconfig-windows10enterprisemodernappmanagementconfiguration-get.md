@@ -2,6 +2,7 @@
 title: "Get windows10EnterpriseModernAppManagementConfiguration"
 description: "Read properties and relationships of the windows10EnterpriseModernAppManagementConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windows10EnterpriseModernAppManagementConfiguration

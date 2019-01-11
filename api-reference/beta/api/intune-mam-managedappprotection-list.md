@@ -2,6 +2,7 @@
 title: "List managedAppProtections"
 description: "List properties and relationships of the managedAppProtection objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List managedAppProtections

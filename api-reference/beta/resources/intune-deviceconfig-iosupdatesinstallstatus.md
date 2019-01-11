@@ -2,6 +2,7 @@
 title: "iosUpdatesInstallStatus enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosUpdatesInstallStatus enum type

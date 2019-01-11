@@ -2,6 +2,7 @@
 title: "call: record"
 description: "Record the call."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # call: record

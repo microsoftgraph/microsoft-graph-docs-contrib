@@ -2,6 +2,7 @@
 title: "List locationManagementConditions"
 description: "List properties and relationships of the locationManagementCondition objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List locationManagementConditions

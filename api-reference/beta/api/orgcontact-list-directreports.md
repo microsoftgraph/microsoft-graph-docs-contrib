@@ -1,6 +1,7 @@
 ---
 title: "orgContact: List directReports"
 description: "Get the contact's direct reports."
+localization_priority: Normal
 ---
 
 # orgContact: List directReports

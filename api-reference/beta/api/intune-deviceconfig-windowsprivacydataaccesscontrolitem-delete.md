@@ -2,6 +2,7 @@
 title: "Delete windowsPrivacyDataAccessControlItem"
 description: "Deletes a windowsPrivacyDataAccessControlItem."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsPrivacyDataAccessControlItem

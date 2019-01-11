@@ -2,6 +2,7 @@
 title: "eapFastConfiguration enum type"
 description: "Available settings for EAP-FAST Configuration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # eapFastConfiguration enum type

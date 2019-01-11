@@ -1,6 +1,7 @@
 ---
 title: "Create open extension"
 description: "Create an open extension (openTypeExtension object) and add custom properties"
+localization_priority: Normal
 ---
 
 # Create open extension

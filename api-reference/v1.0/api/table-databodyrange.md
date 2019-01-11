@@ -2,6 +2,7 @@
 title: "Table: DataBodyRange"
 description: "Gets the range object associated with the data body of the table."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Table: DataBodyRange

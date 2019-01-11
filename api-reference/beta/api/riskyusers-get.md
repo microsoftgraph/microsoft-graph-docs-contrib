@@ -1,6 +1,7 @@
 ---
 title: "Get riskyUsers"
 description: "Retrieve the properties and relationships of a **riskyUsers** object."
+localization_priority: Normal
 ---
 
 # Get riskyUsers

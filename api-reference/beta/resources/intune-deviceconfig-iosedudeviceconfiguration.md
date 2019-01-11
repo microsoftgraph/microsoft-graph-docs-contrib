@@ -2,6 +2,7 @@
 title: "iosEduDeviceConfiguration resource type"
 description: "iOS Education device configuration"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosEduDeviceConfiguration resource type

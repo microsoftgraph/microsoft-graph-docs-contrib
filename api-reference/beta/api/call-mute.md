@@ -2,6 +2,7 @@
 title: "call: mute"
 description: "Allows the application to mute itself."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # call: mute

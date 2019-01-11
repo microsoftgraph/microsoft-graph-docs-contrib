@@ -2,6 +2,7 @@
 title: "Delete auditEvent"
 description: "Deletes a auditEvent."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete auditEvent

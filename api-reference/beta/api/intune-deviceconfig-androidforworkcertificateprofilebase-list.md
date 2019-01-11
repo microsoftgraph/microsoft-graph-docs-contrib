@@ -2,6 +2,7 @@
 title: "List androidForWorkCertificateProfileBases"
 description: "List properties and relationships of the androidForWorkCertificateProfileBase objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List androidForWorkCertificateProfileBases

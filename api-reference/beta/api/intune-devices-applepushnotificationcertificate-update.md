@@ -2,6 +2,7 @@
 title: "Update applePushNotificationCertificate"
 description: "Update the properties of a applePushNotificationCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update applePushNotificationCertificate

@@ -2,6 +2,7 @@
 title: "Error codes for OneNote APIs in Microsoft Graph"
 description: "This article describes error codes that are returned by the OneNote APIs in Microsoft Graph whenever a request sent through the API fails."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # Error codes for OneNote APIs in Microsoft Graph

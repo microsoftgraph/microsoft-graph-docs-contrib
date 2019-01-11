@@ -2,6 +2,7 @@
 title: "advancedThreatProtectionOnboardingDeviceSettingState resource type"
 description: "ATP onboarding State for a given device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # advancedThreatProtectionOnboardingDeviceSettingState resource type

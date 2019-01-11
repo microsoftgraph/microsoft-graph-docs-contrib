@@ -2,6 +2,7 @@
 title: "calendarGroup resource type"
 description: "A group of user calendars."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # calendarGroup resource type

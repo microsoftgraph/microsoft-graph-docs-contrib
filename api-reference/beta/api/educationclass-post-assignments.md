@@ -1,6 +1,7 @@
 ---
 title: "Create educationAssignment"
 description: "Creates a new assignment. Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publish is called.  "
+localization_priority: Normal
 ---
 
 # Create educationAssignment

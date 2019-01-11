@@ -2,6 +2,7 @@
 title: "List apps in team"
 description: "Retrieve the list of apps installed in the specified team."
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # List apps in team

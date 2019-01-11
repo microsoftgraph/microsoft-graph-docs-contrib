@@ -2,6 +2,7 @@
 title: "windows10AssociatedApps resource type"
 description: "Windows 10 Associated Application definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows10AssociatedApps resource type

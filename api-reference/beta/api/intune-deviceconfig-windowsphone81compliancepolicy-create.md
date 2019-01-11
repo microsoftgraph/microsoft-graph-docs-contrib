@@ -2,6 +2,7 @@
 title: "Create windowsPhone81CompliancePolicy"
 description: "Create a new windowsPhone81CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsPhone81CompliancePolicy

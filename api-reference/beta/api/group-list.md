@@ -1,6 +1,7 @@
 ---
 title: "List groups"
 description: "List all the groups available in an organization, including but not limited to Office 365 Groups."
+localization_priority: Priority
 ---
 
 # List groups

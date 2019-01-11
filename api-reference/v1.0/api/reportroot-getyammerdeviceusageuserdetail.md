@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getYammerDeviceUsageUserDetail function"
 description: "Get details about Yammer device usage by user."
+localization_priority: Normal
 ---
 
 # reportRoot: getYammerDeviceUsageUserDetail function

@@ -1,6 +1,7 @@
 ---
 title: "Get outlookTask"
 description: "Get the properties and relationships of an Outlook task in the user's mailbox."
+localization_priority: Normal
 ---
 
 # Get outlookTask

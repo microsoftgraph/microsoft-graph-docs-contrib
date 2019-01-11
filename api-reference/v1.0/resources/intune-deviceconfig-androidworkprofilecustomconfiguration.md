@@ -2,6 +2,7 @@
 title: "androidWorkProfileCustomConfiguration resource type"
 description: "Android Work Profile custom configuration"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidWorkProfileCustomConfiguration resource type

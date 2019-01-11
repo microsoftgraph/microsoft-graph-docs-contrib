@@ -2,6 +2,7 @@
 title: "Update androidDeviceOwnerEnrollmentProfile"
 description: "Update the properties of a androidDeviceOwnerEnrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidDeviceOwnerEnrollmentProfile

@@ -1,6 +1,7 @@
 ---
 title: "Delete page"
 description: "Delete a OneNote page."
+localization_priority: Normal
 ---
 
 # Delete page

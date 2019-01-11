@@ -2,6 +2,7 @@
 title: "Remove directory role member"
 description: "Remove a member from a directoryRole."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Remove directory role member

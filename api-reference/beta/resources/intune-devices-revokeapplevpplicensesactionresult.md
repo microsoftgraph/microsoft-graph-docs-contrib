@@ -2,6 +2,7 @@
 title: "revokeAppleVppLicensesActionResult resource type"
 description: "Revoke Apple Vpp licenses action result"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # revokeAppleVppLicensesActionResult resource type

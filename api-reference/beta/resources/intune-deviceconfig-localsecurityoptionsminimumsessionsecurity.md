@@ -2,6 +2,7 @@
 title: "localSecurityOptionsMinimumSessionSecurity enum type"
 description: "Possible values for LocalSecurityOptionsMinimumSessionSecurity"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # localSecurityOptionsMinimumSessionSecurity enum type

@@ -1,6 +1,7 @@
 ---
 title: "Check member groups"
 description: "Check for membership in a specified list of groups, and returns from that list those groups"
+localization_priority: Normal
 ---
 
 # Check member groups

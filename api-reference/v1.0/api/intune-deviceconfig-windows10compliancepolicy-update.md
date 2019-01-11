@@ -2,6 +2,7 @@
 title: "Update windows10CompliancePolicy"
 description: "Update the properties of a windows10CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windows10CompliancePolicy

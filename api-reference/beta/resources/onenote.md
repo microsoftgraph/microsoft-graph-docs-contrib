@@ -2,6 +2,7 @@
 title: "onenote resource type"
 description: "The entry point for OneNote resources."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # onenote resource type

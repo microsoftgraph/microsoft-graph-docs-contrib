@@ -2,6 +2,7 @@
 title: "Get enrollmentTroubleshootingEvent"
 description: "Read properties and relationships of the enrollmentTroubleshootingEvent object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get enrollmentTroubleshootingEvent

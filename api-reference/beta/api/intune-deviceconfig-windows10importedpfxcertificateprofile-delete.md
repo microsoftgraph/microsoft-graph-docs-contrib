@@ -2,6 +2,7 @@
 title: "Delete windows10ImportedPFXCertificateProfile"
 description: "Deletes a windows10ImportedPFXCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windows10ImportedPFXCertificateProfile

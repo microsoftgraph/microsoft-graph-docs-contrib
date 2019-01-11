@@ -2,6 +2,7 @@
 title: "windowsMobileMSI resource type"
 description: "Contains properties and inherited properties for Windows Mobile MSI Line Of Business apps."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsMobileMSI resource type

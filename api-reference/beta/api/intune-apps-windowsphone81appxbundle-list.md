@@ -2,6 +2,7 @@
 title: "List windowsPhone81AppXBundles"
 description: "List properties and relationships of the windowsPhone81AppXBundle objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsPhone81AppXBundles

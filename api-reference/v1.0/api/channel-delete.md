@@ -2,6 +2,7 @@
 title: "Delete channel"
 description: "Delete the channel."
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # Delete channel

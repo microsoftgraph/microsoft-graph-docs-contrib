@@ -2,6 +2,7 @@
 title: "Update windowsPrivacyDataAccessControlItem"
 description: "Update the properties of a windowsPrivacyDataAccessControlItem object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsPrivacyDataAccessControlItem

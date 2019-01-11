@@ -1,6 +1,7 @@
 ---
 title: "List channel messages"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. To get the replies for a message, call the list message replies or the get message reply API. "
+localization_priority: Priority
 ---
 
 # List channel messages

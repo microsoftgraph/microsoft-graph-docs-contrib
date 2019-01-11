@@ -2,6 +2,7 @@
 title: "Get identityRiskEvent"
 description: "Retrieve the properties and relationships of identityriskevent object."
 author: "cloudhandler"
+localization_priority: Normal
 ---
 
 # Get identityRiskEvent

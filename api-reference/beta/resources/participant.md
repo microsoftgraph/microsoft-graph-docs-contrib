@@ -2,6 +2,7 @@
 title: "participant resource type"
 description: "The participant type."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # participant resource type

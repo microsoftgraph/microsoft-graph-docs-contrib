@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getSharePointSiteUsageStorage"
 description: "Get the trend of storage allocated and consumed during the reporting period."
+localization_priority: Normal
 ---
 
 # reportRoot: getSharePointSiteUsageStorage

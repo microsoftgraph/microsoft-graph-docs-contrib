@@ -2,6 +2,7 @@
 title: "Get androidWorkProfileWiFiConfiguration"
 description: "Read properties and relationships of the androidWorkProfileWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidWorkProfileWiFiConfiguration

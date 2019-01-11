@@ -1,6 +1,7 @@
 ---
 title: "Update schemaExtension"
 description: "Update properties in the definition of the specified schemaExtension."
+localization_priority: Normal
 ---
 
 # Update schemaExtension

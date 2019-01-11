@@ -2,6 +2,7 @@
 title: "ratingJapanMoviesType enum type"
 description: "Movies rating labels in Japan"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingJapanMoviesType enum type

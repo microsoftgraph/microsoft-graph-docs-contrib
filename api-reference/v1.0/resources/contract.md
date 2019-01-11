@@ -1,6 +1,7 @@
 ---
 title: "Contract resource type"
 description: "Represents an existing partnership that the partner tenant has with a customer tenant."
+localization_priority: Normal
 ---
 
 # Contract resource type

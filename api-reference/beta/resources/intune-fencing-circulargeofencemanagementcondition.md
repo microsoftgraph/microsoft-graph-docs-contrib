@@ -1,6 +1,7 @@
 ---
 title: "circularGeofenceManagementCondition resource type"
 description: "Contains the information to define a circular geo-fence management condition, an area of interest, to monitor."
+localization_priority: Normal
 ---
 
 # circularGeofenceManagementCondition resource type

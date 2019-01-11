@@ -2,6 +2,7 @@
 title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List registeredUsers

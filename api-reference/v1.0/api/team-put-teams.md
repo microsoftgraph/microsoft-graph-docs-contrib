@@ -2,6 +2,7 @@
 title: "Create team"
 description: "Create a new team under a group."
 author: "nkramer"
+localization_priority: Priority
 ---
 
 # Create team

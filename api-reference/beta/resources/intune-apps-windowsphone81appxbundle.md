@@ -2,6 +2,7 @@
 title: "windowsPhone81AppXBundle resource type"
 description: "Contains properties and inherited properties for Windows Phone 8.1 AppX Bundle Line Of Business apps."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsPhone81AppXBundle resource type

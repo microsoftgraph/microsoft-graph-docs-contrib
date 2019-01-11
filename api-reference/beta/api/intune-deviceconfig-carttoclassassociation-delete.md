@@ -2,6 +2,7 @@
 title: "Delete cartToClassAssociation"
 description: "Deletes a cartToClassAssociation."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete cartToClassAssociation

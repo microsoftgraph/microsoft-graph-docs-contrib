@@ -2,6 +2,7 @@
 title: "managedMobileApp resource type"
 description: "The identifier for the deployment an app."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managedMobileApp resource type

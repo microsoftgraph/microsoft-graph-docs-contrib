@@ -2,6 +2,7 @@
 title: "deviceConfigurationSettingState resource type"
 description: "Device Configuration Setting State for a given device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceConfigurationSettingState resource type

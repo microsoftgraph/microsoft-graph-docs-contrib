@@ -1,6 +1,7 @@
 ---
 title: "androidDeviceOwnerBatteryPluggedMode enum type"
 description: "Android Device Owner possible values for states of the device's plugged-in power modes."
+localization_priority: Normal
 ---
 
 # androidDeviceOwnerBatteryPluggedMode enum type

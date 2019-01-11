@@ -2,6 +2,7 @@
 title: "Get windowsManagementAppHealthSummary"
 description: "Read properties and relationships of the windowsManagementAppHealthSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windowsManagementAppHealthSummary

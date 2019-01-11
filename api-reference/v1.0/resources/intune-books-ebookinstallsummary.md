@@ -2,6 +2,7 @@
 title: "eBookInstallSummary resource type"
 description: "Contains properties for the installation summary of a book for a device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # eBookInstallSummary resource type

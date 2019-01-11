@@ -2,6 +2,7 @@
 title: "settings resource type"
 description: "The current user settings. "
 author: "dkershaw10"
+localization_priority: Priority
 ---
 
 # settings resource type

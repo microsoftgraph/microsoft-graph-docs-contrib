@@ -2,6 +2,7 @@
 title: "Delete iosLobApp"
 description: "Deletes a iosLobApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosLobApp

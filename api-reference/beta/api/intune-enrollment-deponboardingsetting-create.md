@@ -2,6 +2,7 @@
 title: "Create depOnboardingSetting"
 description: "Create a new depOnboardingSetting object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create depOnboardingSetting

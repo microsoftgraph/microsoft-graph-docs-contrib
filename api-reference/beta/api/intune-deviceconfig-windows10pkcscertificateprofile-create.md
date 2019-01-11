@@ -2,6 +2,7 @@
 title: "Create windows10PkcsCertificateProfile"
 description: "Create a new windows10PkcsCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windows10PkcsCertificateProfile

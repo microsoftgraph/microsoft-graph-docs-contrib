@@ -2,6 +2,7 @@
 title: "List mobileAppTroubleshootingEvents"
 description: "List properties and relationships of the mobileAppTroubleshootingEvent objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List mobileAppTroubleshootingEvents

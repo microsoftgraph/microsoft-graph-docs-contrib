@@ -2,6 +2,7 @@
 title: "Update worksheet"
 description: "Update the properties of worksheet object."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Update worksheet

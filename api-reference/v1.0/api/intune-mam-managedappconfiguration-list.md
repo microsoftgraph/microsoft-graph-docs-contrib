@@ -2,6 +2,7 @@
 title: "List managedAppConfigurations"
 description: "List properties and relationships of the managedAppConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List managedAppConfigurations

@@ -2,6 +2,7 @@
 title: "Update deviceConfigurationUserOverview"
 description: "Update the properties of a deviceConfigurationUserOverview object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceConfigurationUserOverview

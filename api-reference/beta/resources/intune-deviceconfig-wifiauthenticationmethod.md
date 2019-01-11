@@ -2,6 +2,7 @@
 title: "wiFiAuthenticationMethod enum type"
 description: "Wi-Fi authentication method."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # wiFiAuthenticationMethod enum type

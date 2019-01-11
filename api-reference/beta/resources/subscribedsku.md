@@ -1,6 +1,7 @@
 ---
 title: "subscribedSku resource type"
 description: " create, update, and delete are not supported. Query filter expressions are not supported. Inherits from directoryObject."
+localization_priority: Normal
 ---
 
 # subscribedSku resource type

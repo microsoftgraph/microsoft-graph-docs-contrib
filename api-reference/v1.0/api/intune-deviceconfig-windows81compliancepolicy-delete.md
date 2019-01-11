@@ -2,6 +2,7 @@
 title: "Delete windows81CompliancePolicy"
 description: "Deletes a windows81CompliancePolicy."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windows81CompliancePolicy

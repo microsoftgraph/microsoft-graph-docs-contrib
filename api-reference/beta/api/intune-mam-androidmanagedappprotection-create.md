@@ -2,6 +2,7 @@
 title: "Create androidManagedAppProtection"
 description: "Create a new androidManagedAppProtection object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create androidManagedAppProtection

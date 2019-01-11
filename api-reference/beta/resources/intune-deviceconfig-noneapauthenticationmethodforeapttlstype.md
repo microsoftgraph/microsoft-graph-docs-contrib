@@ -2,6 +2,7 @@
 title: "nonEapAuthenticationMethodForEapTtlsType enum type"
 description: "Non-EAP methods for authentication."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # nonEapAuthenticationMethodForEapTtlsType enum type

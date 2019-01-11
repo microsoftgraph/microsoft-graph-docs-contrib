@@ -2,6 +2,7 @@
 title: "Planner: delta"
 description: "Retrieves changes to objects that the user is subscribed to."
 author: "TarkanSevilmis"
+localization_priority: Normal
 ---
 
 # Planner: delta

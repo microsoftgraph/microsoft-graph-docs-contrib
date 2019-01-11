@@ -2,6 +2,7 @@
 title: "List circularGeofenceManagementConditions"
 description: "List properties and relationships of the circularGeofenceManagementCondition objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List circularGeofenceManagementConditions

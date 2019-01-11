@@ -2,6 +2,7 @@
 title: "inkAccessSetting enum type"
 description: "Values for the InkWorkspaceAccess setting."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # inkAccessSetting enum type

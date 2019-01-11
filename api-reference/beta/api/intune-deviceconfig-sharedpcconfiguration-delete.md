@@ -2,6 +2,7 @@
 title: "Delete sharedPCConfiguration"
 description: "Deletes a sharedPCConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete sharedPCConfiguration

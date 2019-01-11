@@ -1,6 +1,7 @@
 ---
 title: "Create plannerPlan"
 description: "Use this API to create a new **plannerPlan**."
+localization_priority: Normal
 ---
 
 # Create plannerPlan

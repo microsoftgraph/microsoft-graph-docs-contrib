@@ -1,6 +1,7 @@
 ---
 title: "Create directReport"
 description: "Use this API to create a new directReport."
+localization_priority: Normal
 ---
 
 # Create directReport

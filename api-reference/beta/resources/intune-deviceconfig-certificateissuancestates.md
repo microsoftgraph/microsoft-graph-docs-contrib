@@ -2,6 +2,7 @@
 title: "certificateIssuanceStates enum type"
 description: "Certificate Issuance State Options."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # certificateIssuanceStates enum type

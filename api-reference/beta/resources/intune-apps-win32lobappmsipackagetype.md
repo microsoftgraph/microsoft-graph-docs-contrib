@@ -2,6 +2,7 @@
 title: "win32LobAppMsiPackageType enum type"
 description: "Indicates the package type of an MSI Win32LobApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # win32LobAppMsiPackageType enum type

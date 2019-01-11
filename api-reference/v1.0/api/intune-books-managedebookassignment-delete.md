@@ -2,6 +2,7 @@
 title: "Delete managedEBookAssignment"
 description: "Deletes a managedEBookAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete managedEBookAssignment

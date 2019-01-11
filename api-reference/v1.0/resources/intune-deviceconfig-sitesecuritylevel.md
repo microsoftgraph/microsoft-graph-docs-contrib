@@ -2,6 +2,7 @@
 title: "siteSecurityLevel enum type"
 description: "Possible values for site security level."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # siteSecurityLevel enum type

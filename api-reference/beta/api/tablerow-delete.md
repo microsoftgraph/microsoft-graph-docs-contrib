@@ -2,6 +2,7 @@
 title: "TableRow: delete"
 description: "Deletes the row from the table."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # TableRow: delete

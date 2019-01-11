@@ -2,6 +2,7 @@
 title: "deviceProtectionOverview resource type"
 description: "Hardware information of a given device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceProtectionOverview resource type

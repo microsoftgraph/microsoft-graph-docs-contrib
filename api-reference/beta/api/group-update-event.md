@@ -2,6 +2,7 @@
 title: "Update event"
 description: "Update an event object."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # Update event

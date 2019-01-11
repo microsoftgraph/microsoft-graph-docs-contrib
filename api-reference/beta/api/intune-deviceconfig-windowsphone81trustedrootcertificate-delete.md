@@ -2,6 +2,7 @@
 title: "Delete windowsPhone81TrustedRootCertificate"
 description: "Deletes a windowsPhone81TrustedRootCertificate."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsPhone81TrustedRootCertificate

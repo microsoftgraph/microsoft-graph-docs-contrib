@@ -2,6 +2,7 @@
 title: "List ChartSeriesCollection"
 description: "Retrieve a list of chartseries objects."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # List ChartSeriesCollection

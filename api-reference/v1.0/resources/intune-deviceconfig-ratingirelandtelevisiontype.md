@@ -2,6 +2,7 @@
 title: "ratingIrelandTelevisionType enum type"
 description: "TV content rating labels in Ireland"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingIrelandTelevisionType enum type

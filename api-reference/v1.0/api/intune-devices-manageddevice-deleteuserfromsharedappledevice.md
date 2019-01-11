@@ -2,6 +2,7 @@
 title: "deleteUserFromSharedAppleDevice action"
 description: "Delete user from shared Apple device"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deleteUserFromSharedAppleDevice action

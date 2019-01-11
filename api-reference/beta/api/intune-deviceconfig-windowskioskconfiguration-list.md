@@ -2,6 +2,7 @@
 title: "List windowsKioskConfigurations"
 description: "List properties and relationships of the windowsKioskConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsKioskConfigurations

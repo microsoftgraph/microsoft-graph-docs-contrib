@@ -1,7 +1,8 @@
-﻿---
+---
 title: "Delete audio routing group"
 description: "Delete the specified audio routing group."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # Delete audio routing group

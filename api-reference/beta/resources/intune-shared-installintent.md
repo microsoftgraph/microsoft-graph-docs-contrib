@@ -2,6 +2,7 @@
 title: "installIntent enum type"
 description: "Possible values for the install intent chosen by the admin."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # installIntent enum type

@@ -1,6 +1,7 @@
 ---
 title: "mailTipsError resource type"
 description: "An error that occurs during an action."
+localization_priority: Normal
 ---
 
 # mailTipsError resource type

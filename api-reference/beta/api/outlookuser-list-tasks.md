@@ -1,6 +1,7 @@
 ---
 title: "List tasks"
 description: "Get all the Outlook tasks in the user's mailbox."
+localization_priority: Normal
 ---
 
 # List tasks

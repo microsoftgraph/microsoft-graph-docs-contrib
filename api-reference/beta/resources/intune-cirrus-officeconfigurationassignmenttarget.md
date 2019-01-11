@@ -2,6 +2,7 @@
 title: "officeConfigurationAssignmentTarget resource type"
 description: "Office Client Configuration Assignment Target."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # officeConfigurationAssignmentTarget resource type

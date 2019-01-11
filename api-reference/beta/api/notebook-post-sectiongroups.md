@@ -2,6 +2,7 @@
 title: "Create sectionGroup"
 description: "Create a new section group in the specified notebook."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # Create sectionGroup

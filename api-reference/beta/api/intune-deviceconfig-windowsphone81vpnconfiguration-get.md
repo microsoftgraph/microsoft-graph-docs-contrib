@@ -2,6 +2,7 @@
 title: "Get windowsPhone81VpnConfiguration"
 description: "Read properties and relationships of the windowsPhone81VpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windowsPhone81VpnConfiguration

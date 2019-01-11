@@ -2,6 +2,7 @@
 title: "RangeBorder resource type"
 description: "Represents the border of an object."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # RangeBorder resource type

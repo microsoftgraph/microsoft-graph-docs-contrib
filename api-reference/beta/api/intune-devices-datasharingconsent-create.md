@@ -2,6 +2,7 @@
 title: "Create dataSharingConsent"
 description: "Create a new dataSharingConsent object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create dataSharingConsent

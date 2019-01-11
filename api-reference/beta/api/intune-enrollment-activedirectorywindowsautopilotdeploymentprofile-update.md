@@ -2,6 +2,7 @@
 title: "Update activeDirectoryWindowsAutopilotDeploymentProfile"
 description: "Update the properties of a activeDirectoryWindowsAutopilotDeploymentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update activeDirectoryWindowsAutopilotDeploymentProfile

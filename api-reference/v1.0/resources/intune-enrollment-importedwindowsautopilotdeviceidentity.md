@@ -2,6 +2,7 @@
 title: "importedWindowsAutopilotDeviceIdentity resource type"
 description: "Imported windows autopilot devices."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # importedWindowsAutopilotDeviceIdentity resource type

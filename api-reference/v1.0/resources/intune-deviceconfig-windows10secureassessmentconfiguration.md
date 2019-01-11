@@ -1,6 +1,7 @@
 ---
 title: "windows10SecureAssessmentConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the secureAssessment resource."
+localization_priority: Normal
 ---
 
 # windows10SecureAssessmentConfiguration resource type

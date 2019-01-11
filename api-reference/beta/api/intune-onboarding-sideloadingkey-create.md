@@ -2,6 +2,7 @@
 title: "Create sideLoadingKey"
 description: "Create a new sideLoadingKey object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create sideLoadingKey

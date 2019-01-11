@@ -2,6 +2,7 @@
 title: "List iosCustomConfigurations"
 description: "List properties and relationships of the iosCustomConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List iosCustomConfigurations

@@ -2,6 +2,7 @@
 title: "ratingUnitedStatesMoviesType enum type"
 description: "Movies rating labels in United States"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingUnitedStatesMoviesType enum type

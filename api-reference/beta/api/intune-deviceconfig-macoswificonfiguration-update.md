@@ -2,6 +2,7 @@
 title: "Update macOSWiFiConfiguration"
 description: "Update the properties of a macOSWiFiConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update macOSWiFiConfiguration

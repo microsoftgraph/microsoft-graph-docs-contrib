@@ -2,6 +2,7 @@
 title: "Delete deviceManagementScriptAssignment"
 description: "Deletes a deviceManagementScriptAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceManagementScriptAssignment

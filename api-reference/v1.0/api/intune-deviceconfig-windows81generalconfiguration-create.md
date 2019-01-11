@@ -2,6 +2,7 @@
 title: "Create windows81GeneralConfiguration"
 description: "Create a new windows81GeneralConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windows81GeneralConfiguration

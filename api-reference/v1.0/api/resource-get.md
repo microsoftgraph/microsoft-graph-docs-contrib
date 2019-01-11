@@ -1,6 +1,7 @@
 ---
 title: "Get resource"
 description: "Retrieve the binary data of a file or image resource object."
+localization_priority: Normal
 ---
 
 # Get resource

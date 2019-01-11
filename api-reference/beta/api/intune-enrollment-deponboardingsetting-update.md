@@ -2,6 +2,7 @@
 title: "Update depOnboardingSetting"
 description: "Update the properties of a depOnboardingSetting object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update depOnboardingSetting

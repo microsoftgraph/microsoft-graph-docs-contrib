@@ -2,6 +2,7 @@
 title: "deviceActionResult resource type"
 description: "Device action result"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceActionResult resource type

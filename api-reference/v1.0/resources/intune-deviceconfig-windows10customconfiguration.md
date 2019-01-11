@@ -1,6 +1,7 @@
 ---
 title: "windows10CustomConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10CustomConfiguration resource."
+localization_priority: Normal
 ---
 
 # windows10CustomConfiguration resource type

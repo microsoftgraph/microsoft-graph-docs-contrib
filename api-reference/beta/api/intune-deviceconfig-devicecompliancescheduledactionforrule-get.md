@@ -2,6 +2,7 @@
 title: "Get deviceComplianceScheduledActionForRule"
 description: "Read properties and relationships of the deviceComplianceScheduledActionForRule object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get deviceComplianceScheduledActionForRule

@@ -2,6 +2,7 @@
 title: "deviceConfigurationDeviceOverview resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceConfigurationDeviceOverview resource type

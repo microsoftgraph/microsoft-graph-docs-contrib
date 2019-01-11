@@ -1,6 +1,7 @@
 ---
 title: "Get member objects"
 description: " Returns all the groups and directory roles that a user, group, or directory object is a member of. This function is transitive. "
+localization_priority: Normal
 ---
 
 # Get member objects

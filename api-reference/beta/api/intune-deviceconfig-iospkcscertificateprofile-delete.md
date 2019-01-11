@@ -2,6 +2,7 @@
 title: "Delete iosPkcsCertificateProfile"
 description: "Deletes a iosPkcsCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosPkcsCertificateProfile

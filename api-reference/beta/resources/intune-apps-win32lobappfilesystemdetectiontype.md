@@ -2,6 +2,7 @@
 title: "win32LobAppFileSystemDetectionType enum type"
 description: "Contains all supported file system detection type."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # win32LobAppFileSystemDetectionType enum type

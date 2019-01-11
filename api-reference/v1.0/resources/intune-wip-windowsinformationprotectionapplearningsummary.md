@@ -2,6 +2,7 @@
 title: "windowsInformationProtectionAppLearningSummary resource type"
 description: "Windows Information Protection AppLearning Summary entity."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtectionAppLearningSummary resource type

@@ -2,6 +2,7 @@
 title: "Create importedWindowsAutopilotDeviceIdentityUpload"
 description: "Create a new importedWindowsAutopilotDeviceIdentityUpload object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create importedWindowsAutopilotDeviceIdentityUpload

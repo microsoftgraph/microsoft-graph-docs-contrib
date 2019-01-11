@@ -2,6 +2,7 @@
 title: "deviceAndAppManagementAssignedRoleIds resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceAndAppManagementAssignedRoleIds resource type

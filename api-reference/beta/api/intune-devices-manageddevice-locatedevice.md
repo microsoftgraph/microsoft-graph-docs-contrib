@@ -2,6 +2,7 @@
 title: "locateDevice action"
 description: "Locate a device"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # locateDevice action

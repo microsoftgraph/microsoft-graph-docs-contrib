@@ -2,6 +2,7 @@
 title: "List macOSImportedPFXCertificateProfiles"
 description: "List properties and relationships of the macOSImportedPFXCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List macOSImportedPFXCertificateProfiles

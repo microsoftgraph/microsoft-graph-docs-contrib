@@ -1,6 +1,7 @@
 ---
 title: "educationAssignmentRecipient resource type"
 description: "Used within the **assignments.assignTo** property. This superclass is abstract and you cannot"
+localization_priority: Normal
 ---
 
 # educationAssignmentRecipient resource type

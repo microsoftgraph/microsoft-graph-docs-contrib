@@ -2,6 +2,7 @@
 title: "Update depEnrollmentProfile"
 description: "Update the properties of a depEnrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update depEnrollmentProfile

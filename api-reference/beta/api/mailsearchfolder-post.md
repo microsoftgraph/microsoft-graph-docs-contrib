@@ -1,6 +1,7 @@
 ---
 title: "Create mailSearchFolder"
 description: "Use this API to create a new mailSearchFolder in the specified user's mailbox."
+localization_priority: Normal
 ---
 
 # Create mailSearchFolder

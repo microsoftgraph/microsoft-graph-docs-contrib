@@ -2,6 +2,7 @@
 title: "cartToClassAssociation resource type"
 description: "CartToClassAssociation for associating device carts with classrooms."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # cartToClassAssociation resource type

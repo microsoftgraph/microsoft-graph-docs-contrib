@@ -2,6 +2,7 @@
 title: "Update deviceConfigurationDeviceStatus"
 description: "Update the properties of a deviceConfigurationDeviceStatus object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceConfigurationDeviceStatus

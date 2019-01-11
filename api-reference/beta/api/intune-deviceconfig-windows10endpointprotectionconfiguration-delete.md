@@ -2,6 +2,7 @@
 title: "Delete windows10EndpointProtectionConfiguration"
 description: "Deletes a windows10EndpointProtectionConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windows10EndpointProtectionConfiguration

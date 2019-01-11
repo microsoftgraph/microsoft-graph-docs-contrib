@@ -2,6 +2,7 @@
 title: "ratingJapanTelevisionType enum type"
 description: "TV content rating labels in Japan"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingJapanTelevisionType enum type

@@ -2,6 +2,7 @@
 title: "Create windowsPhone81TrustedRootCertificate"
 description: "Create a new windowsPhone81TrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsPhone81TrustedRootCertificate

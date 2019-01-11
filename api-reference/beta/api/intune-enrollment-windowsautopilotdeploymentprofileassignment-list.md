@@ -2,6 +2,7 @@
 title: "List windowsAutopilotDeploymentProfileAssignments"
 description: "List properties and relationships of the windowsAutopilotDeploymentProfileAssignment objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsAutopilotDeploymentProfileAssignments

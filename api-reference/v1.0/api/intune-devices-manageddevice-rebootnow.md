@@ -2,6 +2,7 @@
 title: "rebootNow action"
 description: "Reboot device"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # rebootNow action

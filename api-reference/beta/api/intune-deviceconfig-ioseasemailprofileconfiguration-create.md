@@ -2,6 +2,7 @@
 title: "Create iosEasEmailProfileConfiguration"
 description: "Create a new iosEasEmailProfileConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create iosEasEmailProfileConfiguration

@@ -2,6 +2,7 @@
 title: "getAuditActivityTypes function"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # getAuditActivityTypes function

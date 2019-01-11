@@ -2,6 +2,7 @@
 title: "Get mobileAppIntentAndState"
 description: "Read properties and relationships of the mobileAppIntentAndState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get mobileAppIntentAndState

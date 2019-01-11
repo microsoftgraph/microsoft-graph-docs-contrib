@@ -2,6 +2,7 @@
 title: "List alerts"
 description: "Retrieve a list of alert objects."
 author: "Preetikr"
+localization_priority: Priority
 ---
 
 # List alerts

@@ -2,6 +2,7 @@
 title: "Get networkIPv4ConfigurationManagementCondition"
 description: "Read properties and relationships of the networkIPv4ConfigurationManagementCondition object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get networkIPv4ConfigurationManagementCondition

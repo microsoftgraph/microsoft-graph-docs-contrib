@@ -1,6 +1,7 @@
 ---
 title: "Delete subscription"
 description: "Delete a subscription."
+localization_priority: Normal
 ---
 
 # Delete subscription

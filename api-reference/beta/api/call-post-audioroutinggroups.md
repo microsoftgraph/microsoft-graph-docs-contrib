@@ -2,6 +2,7 @@
 title: "Create audio routing group"
 description: "Create a new **audioRoutingGroup**."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # Create audio routing group

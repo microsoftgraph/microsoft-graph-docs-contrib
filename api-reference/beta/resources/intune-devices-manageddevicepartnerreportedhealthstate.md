@@ -2,6 +2,7 @@
 title: "managedDevicePartnerReportedHealthState enum type"
 description: "Available health states for the Device Health API"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managedDevicePartnerReportedHealthState enum type

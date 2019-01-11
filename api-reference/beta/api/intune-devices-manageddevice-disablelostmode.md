@@ -2,6 +2,7 @@
 title: "disableLostMode action"
 description: "Disable lost mode"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # disableLostMode action

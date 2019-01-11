@@ -2,6 +2,7 @@
 title: "deviceType enum type"
 description: "Device type."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceType enum type

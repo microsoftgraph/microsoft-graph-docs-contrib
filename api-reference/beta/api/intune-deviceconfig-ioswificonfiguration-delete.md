@@ -2,6 +2,7 @@
 title: "Delete iosWiFiConfiguration"
 description: "Deletes a iosWiFiConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosWiFiConfiguration

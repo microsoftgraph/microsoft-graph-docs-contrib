@@ -2,6 +2,7 @@
 title: "Update reportRoot"
 description: "Update the properties of a reportRoot object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update reportRoot

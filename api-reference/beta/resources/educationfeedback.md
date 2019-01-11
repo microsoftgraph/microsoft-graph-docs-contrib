@@ -2,6 +2,7 @@
 title: "educationFeedback resource type"
 description: "Feedback from a teacher to a student. This property represents both the text part of the feedback along with the who."
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # educationFeedback resource type

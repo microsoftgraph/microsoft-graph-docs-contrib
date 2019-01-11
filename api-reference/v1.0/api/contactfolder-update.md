@@ -2,6 +2,7 @@
 title: "Update contactfolder"
 description: "Update the properties of contactfolder object."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # Update contactfolder

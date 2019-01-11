@@ -2,6 +2,7 @@
 title: "windowsPhone81CertificateProfileBase resource type"
 description: " certificate profile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsPhone81CertificateProfileBase resource type

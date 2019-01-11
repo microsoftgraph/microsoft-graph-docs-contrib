@@ -2,6 +2,7 @@
 title: "mediaContentRatingNewZealand resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mediaContentRatingNewZealand resource type

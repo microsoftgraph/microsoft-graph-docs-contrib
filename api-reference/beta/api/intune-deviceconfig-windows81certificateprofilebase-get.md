@@ -2,6 +2,7 @@
 title: "Get windows81CertificateProfileBase"
 description: "Read properties and relationships of the windows81CertificateProfileBase object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windows81CertificateProfileBase

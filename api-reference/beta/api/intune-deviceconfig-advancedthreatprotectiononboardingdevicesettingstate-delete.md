@@ -2,6 +2,7 @@
 title: "Delete advancedThreatProtectionOnboardingDeviceSettingState"
 description: "Deletes a advancedThreatProtectionOnboardingDeviceSettingState."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete advancedThreatProtectionOnboardingDeviceSettingState

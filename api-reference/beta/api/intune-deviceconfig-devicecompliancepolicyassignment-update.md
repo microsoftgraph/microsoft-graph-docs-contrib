@@ -2,6 +2,7 @@
 title: "Update deviceCompliancePolicyAssignment"
 description: "Update the properties of a deviceCompliancePolicyAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceCompliancePolicyAssignment

@@ -2,6 +2,7 @@
 title: "windowsArchitecture enum type"
 description: "Contains properties for Windows architecture."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsArchitecture enum type

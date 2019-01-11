@@ -2,6 +2,7 @@
 title: "defenderSecurityCenterITContactDisplayType enum type"
 description: "Possible values for defenderSecurityCenterITContactDisplay"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # defenderSecurityCenterITContactDisplayType enum type

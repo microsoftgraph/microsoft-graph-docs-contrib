@@ -2,6 +2,7 @@
 title: "Update mobileAppContentFile"
 description: "Update the properties of a mobileAppContentFile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update mobileAppContentFile

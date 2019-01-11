@@ -2,6 +2,7 @@
 author: chackman
 ms.author: chackman
 title: List followed items
+localization_priority: Normal
 ---
 # List followed items
 

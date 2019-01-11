@@ -2,6 +2,7 @@
 title: "List deviceConfigurationConflictSummaries"
 description: "List properties and relationships of the deviceConfigurationConflictSummary objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List deviceConfigurationConflictSummaries

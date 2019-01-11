@@ -2,6 +2,7 @@
 title: "androidForWorkCertificateProfileBase resource type"
 description: "Android For Work certificate profile base."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidForWorkCertificateProfileBase resource type

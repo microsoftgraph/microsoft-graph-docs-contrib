@@ -1,6 +1,7 @@
 ---
 title: "Create memberOf"
 description: "Use this API to create a new memberOf."
+localization_priority: Normal
 ---
 
 # Create memberOf

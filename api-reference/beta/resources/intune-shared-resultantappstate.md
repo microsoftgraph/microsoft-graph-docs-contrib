@@ -2,6 +2,7 @@
 title: "resultantAppState enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # resultantAppState enum type

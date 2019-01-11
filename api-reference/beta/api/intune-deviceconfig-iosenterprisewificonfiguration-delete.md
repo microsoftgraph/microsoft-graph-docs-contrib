@@ -2,6 +2,7 @@
 title: "Delete iosEnterpriseWiFiConfiguration"
 description: "Deletes a iosEnterpriseWiFiConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosEnterpriseWiFiConfiguration

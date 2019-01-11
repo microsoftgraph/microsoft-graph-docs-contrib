@@ -2,6 +2,7 @@
 title: "assignUserToDevice action"
 description: "Assigns user to Autopilot devices."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # assignUserToDevice action

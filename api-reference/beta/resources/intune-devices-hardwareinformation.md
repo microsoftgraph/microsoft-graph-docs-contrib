@@ -2,6 +2,7 @@
 title: "hardwareInformation resource type"
 description: "Hardware information of a given device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # hardwareInformation resource type

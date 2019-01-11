@@ -2,6 +2,7 @@
 title: "Delete group"
 description: "Delete group."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # Delete group

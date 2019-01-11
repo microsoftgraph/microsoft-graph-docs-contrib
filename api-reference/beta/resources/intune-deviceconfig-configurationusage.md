@@ -2,6 +2,7 @@
 title: "configurationUsage enum type"
 description: "Possible values of the ConfigurationUsage list."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # configurationUsage enum type

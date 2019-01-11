@@ -2,6 +2,7 @@
 title: "Update deviceManagementScriptGroupAssignment"
 description: "Update the properties of a deviceManagementScriptGroupAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceManagementScriptGroupAssignment

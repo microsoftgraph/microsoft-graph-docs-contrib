@@ -2,6 +2,7 @@
 title: "Update dataSharingConsent"
 description: "Update the properties of a dataSharingConsent object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update dataSharingConsent

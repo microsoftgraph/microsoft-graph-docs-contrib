@@ -1,6 +1,7 @@
 ---
 title: "List posts"
 description: "Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, "
+localization_priority: Normal
 ---
 
 # List posts

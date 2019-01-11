@@ -2,6 +2,7 @@
 title: "List depOnboardingSettings"
 description: "List properties and relationships of the depOnboardingSetting objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List depOnboardingSettings

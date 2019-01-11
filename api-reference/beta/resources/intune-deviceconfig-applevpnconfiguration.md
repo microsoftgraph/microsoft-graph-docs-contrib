@@ -2,6 +2,7 @@
 title: "appleVpnConfiguration resource type"
 description: "Apple VPN configuration profile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # appleVpnConfiguration resource type

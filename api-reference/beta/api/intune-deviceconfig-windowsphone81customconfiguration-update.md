@@ -2,6 +2,7 @@
 title: "Update windowsPhone81CustomConfiguration"
 description: "Update the properties of a windowsPhone81CustomConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsPhone81CustomConfiguration

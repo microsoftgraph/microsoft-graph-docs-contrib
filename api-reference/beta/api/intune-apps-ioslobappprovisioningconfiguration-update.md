@@ -2,6 +2,7 @@
 title: "Update iosLobAppProvisioningConfiguration"
 description: "Update the properties of a iosLobAppProvisioningConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosLobAppProvisioningConfiguration

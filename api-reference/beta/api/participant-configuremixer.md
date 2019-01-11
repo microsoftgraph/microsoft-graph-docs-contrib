@@ -1,7 +1,8 @@
-﻿---
+---
 title: "participant: configureMixer"
 description: "Configure how audio is mixed for different participants in a multiparty conversation."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # participant: configureMixer

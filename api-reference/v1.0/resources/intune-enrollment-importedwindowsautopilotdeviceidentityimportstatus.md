@@ -2,6 +2,7 @@
 title: "importedWindowsAutopilotDeviceIdentityImportStatus enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # importedWindowsAutopilotDeviceIdentityImportStatus enum type

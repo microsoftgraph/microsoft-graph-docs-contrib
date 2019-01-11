@@ -2,6 +2,7 @@
 title: "Delete deviceCompliancePolicyAssignment"
 description: "Deletes a deviceCompliancePolicyAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceCompliancePolicyAssignment

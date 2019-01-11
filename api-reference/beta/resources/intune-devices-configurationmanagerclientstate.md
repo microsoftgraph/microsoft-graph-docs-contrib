@@ -2,6 +2,7 @@
 title: "configurationManagerClientState enum type"
 description: "Configuration manager client state"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # configurationManagerClientState enum type

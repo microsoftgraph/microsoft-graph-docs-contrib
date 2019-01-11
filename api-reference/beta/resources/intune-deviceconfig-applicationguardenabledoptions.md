@@ -2,6 +2,7 @@
 title: "applicationGuardEnabledOptions enum type"
 description: "Possible values for ApplicationGuardEnabledOptions"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # applicationGuardEnabledOptions enum type

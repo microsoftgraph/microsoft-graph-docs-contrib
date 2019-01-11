@@ -2,6 +2,7 @@
 title: "Create roleScopeTag"
 description: "Create a new roleScopeTag object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create roleScopeTag

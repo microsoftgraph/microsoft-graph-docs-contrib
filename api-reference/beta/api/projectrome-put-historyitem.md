@@ -1,6 +1,7 @@
 ---
 title: "Create or replace a historyItem"
 description: "Create a new or replace an existing history item for an existing user activity."
+localization_priority: Normal
 ---
 
 # Create or replace a historyItem

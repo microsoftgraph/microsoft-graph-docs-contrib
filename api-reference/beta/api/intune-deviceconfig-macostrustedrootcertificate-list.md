@@ -2,6 +2,7 @@
 title: "List macOSTrustedRootCertificates"
 description: "List properties and relationships of the macOSTrustedRootCertificate objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List macOSTrustedRootCertificates

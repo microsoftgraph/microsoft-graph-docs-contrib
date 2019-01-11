@@ -2,6 +2,7 @@
 title: "List windows10EnterpriseModernAppManagementConfigurations"
 description: "List properties and relationships of the windows10EnterpriseModernAppManagementConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windows10EnterpriseModernAppManagementConfigurations

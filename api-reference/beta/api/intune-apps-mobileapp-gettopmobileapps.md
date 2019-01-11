@@ -2,6 +2,7 @@
 title: "getTopMobileApps function"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # getTopMobileApps function

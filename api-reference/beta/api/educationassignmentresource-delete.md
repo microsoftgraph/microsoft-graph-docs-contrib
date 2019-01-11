@@ -2,6 +2,7 @@
 title: "Delete educationAssignmentResource"
 description: "."
 author: "dipakboyed"
+localization_priority: Normal
 ---
 
 # Delete educationAssignmentResource

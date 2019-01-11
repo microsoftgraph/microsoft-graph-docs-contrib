@@ -2,6 +2,7 @@
 title: "Delete macOSGeneralDeviceConfiguration"
 description: "Deletes a macOSGeneralDeviceConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete macOSGeneralDeviceConfiguration

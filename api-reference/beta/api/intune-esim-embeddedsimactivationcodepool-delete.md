@@ -2,6 +2,7 @@
 title: "Delete embeddedSIMActivationCodePool"
 description: "Deletes a embeddedSIMActivationCodePool."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete embeddedSIMActivationCodePool

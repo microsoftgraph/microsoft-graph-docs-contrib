@@ -1,6 +1,7 @@
 ---
 title: "personType resource type"
 description: "Represents the type of person."
+localization_priority: Normal
 ---
 
 # personType resource type

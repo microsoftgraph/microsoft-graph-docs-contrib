@@ -2,6 +2,7 @@
 title: "hourlySchedule resource type"
 description: "Hourly run schedule of a recurring device management script."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # hourlySchedule resource type

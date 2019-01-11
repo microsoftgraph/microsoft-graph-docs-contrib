@@ -2,6 +2,7 @@
 title: "Delete targetedManagedAppPolicyAssignment"
 description: "Deletes a targetedManagedAppPolicyAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete targetedManagedAppPolicyAssignment

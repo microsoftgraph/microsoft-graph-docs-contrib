@@ -2,6 +2,7 @@
 title: "iosVppApp resource type"
 description: "Contains properties and inherited properties for iOS Volume-Purchased Program (VPP) Apps."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosVppApp resource type

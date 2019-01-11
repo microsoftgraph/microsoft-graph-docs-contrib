@@ -2,6 +2,7 @@
 title: "Delete remoteAssistancePartner"
 description: "Deletes a remoteAssistancePartner."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete remoteAssistancePartner

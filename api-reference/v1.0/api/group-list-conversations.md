@@ -2,6 +2,7 @@
 title: "List conversations"
 description: "Retrieve the list of conversations in this group."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # List conversations

@@ -2,6 +2,7 @@
 title: "windowsFirewallNetworkProfile resource type"
 description: "Windows Firewall Profile Policies."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsFirewallNetworkProfile resource type

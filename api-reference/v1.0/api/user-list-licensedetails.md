@@ -2,6 +2,7 @@
 title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # List licenseDetails

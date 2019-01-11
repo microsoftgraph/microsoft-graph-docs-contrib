@@ -2,6 +2,7 @@
 title: "Archive team"
 description: "Archive the specified team. "
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # Archive team

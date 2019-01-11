@@ -2,6 +2,7 @@
 title: "Update deviceComplianceUserStatus"
 description: "Update the properties of a deviceComplianceUserStatus object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceComplianceUserStatus

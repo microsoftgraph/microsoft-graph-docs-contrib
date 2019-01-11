@@ -2,6 +2,7 @@
 title: "Create embeddedSIMActivationCodePoolAssignment"
 description: "Create a new embeddedSIMActivationCodePoolAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create embeddedSIMActivationCodePoolAssignment

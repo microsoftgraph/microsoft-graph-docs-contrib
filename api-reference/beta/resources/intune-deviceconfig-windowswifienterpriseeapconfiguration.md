@@ -1,6 +1,7 @@
 ---
 title: "windowsWifiEnterpriseEAPConfiguration resource type"
 description: "This entity provides descriptions of the declared methods, properties and relationships exposed by the Wifi CSP."
+localization_priority: Normal
 ---
 
 # windowsWifiEnterpriseEAPConfiguration resource type

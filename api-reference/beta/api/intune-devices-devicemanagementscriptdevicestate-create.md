@@ -2,6 +2,7 @@
 title: "Create deviceManagementScriptDeviceState"
 description: "Create a new deviceManagementScriptDeviceState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceManagementScriptDeviceState

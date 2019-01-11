@@ -2,6 +2,7 @@
 title: "managedDeviceModelsAndManufacturers resource type"
 description: "Models and Manufactures meatadata for managed devices in the account"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managedDeviceModelsAndManufacturers resource type

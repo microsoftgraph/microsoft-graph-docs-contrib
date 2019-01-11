@@ -2,6 +2,7 @@
 title: "omaSettingBase64 resource type"
 description: "OMA Settings Base64 definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # omaSettingBase64 resource type

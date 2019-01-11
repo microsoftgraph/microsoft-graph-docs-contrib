@@ -2,6 +2,7 @@
 title: "Update win32LobApp"
 description: "Update the properties of a win32LobApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update win32LobApp

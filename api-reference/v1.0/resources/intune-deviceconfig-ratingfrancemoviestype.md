@@ -2,6 +2,7 @@
 title: "ratingFranceMoviesType enum type"
 description: "Movies rating labels in France"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingFranceMoviesType enum type

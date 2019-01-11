@@ -2,6 +2,7 @@
 title: "mobileAppPublishingState enum type"
 description: "Indicates the publishing state of an app."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mobileAppPublishingState enum type

@@ -2,6 +2,7 @@
 title: "Delete mobileAppContentFile"
 description: "Deletes a mobileAppContentFile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete mobileAppContentFile

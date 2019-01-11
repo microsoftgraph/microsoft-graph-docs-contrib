@@ -2,6 +2,7 @@
 title: "Create registeredUser"
 description: "Add a registered user for the device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create registeredUser

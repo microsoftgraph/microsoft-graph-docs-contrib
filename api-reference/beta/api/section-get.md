@@ -1,6 +1,7 @@
 ---
 title: "Get section"
 description: "Retrieve the properties and relationships of a section object."
+localization_priority: Normal
 ---
 
 # Get section

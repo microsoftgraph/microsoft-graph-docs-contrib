@@ -2,6 +2,7 @@
 title: "mediaContentRatingIreland resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mediaContentRatingIreland resource type

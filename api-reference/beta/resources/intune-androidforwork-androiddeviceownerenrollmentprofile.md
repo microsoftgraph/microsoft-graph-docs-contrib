@@ -1,6 +1,7 @@
 ---
 title: "androidDeviceOwnerEnrollmentProfile resource type"
 description: "Enrollment Profile used to enroll COSU devices using Google's Cloud Management."
+localization_priority: Normal
 ---
 
 # androidDeviceOwnerEnrollmentProfile resource type

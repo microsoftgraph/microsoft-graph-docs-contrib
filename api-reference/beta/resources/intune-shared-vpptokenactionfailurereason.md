@@ -2,6 +2,7 @@
 title: "vppTokenActionFailureReason enum type"
 description: "Possible types of reasons for an Apple Volume Purchase Program token action failure."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vppTokenActionFailureReason enum type

@@ -2,6 +2,7 @@
 title: "mimeContent resource type"
 description: "Contains properties for a generic mime content."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mimeContent resource type

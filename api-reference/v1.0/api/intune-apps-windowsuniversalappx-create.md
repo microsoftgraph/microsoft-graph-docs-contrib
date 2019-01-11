@@ -2,6 +2,7 @@
 title: "Create windowsUniversalAppX"
 description: "Create a new windowsUniversalAppX object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsUniversalAppX

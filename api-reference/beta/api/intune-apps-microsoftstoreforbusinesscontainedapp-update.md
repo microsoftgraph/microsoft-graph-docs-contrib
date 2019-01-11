@@ -2,6 +2,7 @@
 title: "Update microsoftStoreForBusinessContainedApp"
 description: "Update the properties of a microsoftStoreForBusinessContainedApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update microsoftStoreForBusinessContainedApp

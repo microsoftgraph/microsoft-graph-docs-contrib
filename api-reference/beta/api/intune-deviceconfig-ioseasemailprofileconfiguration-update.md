@@ -2,6 +2,7 @@
 title: "Update iosEasEmailProfileConfiguration"
 description: "Update the properties of a iosEasEmailProfileConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosEasEmailProfileConfiguration

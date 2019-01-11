@@ -2,6 +2,7 @@
 title: "getRoleScopeTagsByIds function"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # getRoleScopeTagsByIds function

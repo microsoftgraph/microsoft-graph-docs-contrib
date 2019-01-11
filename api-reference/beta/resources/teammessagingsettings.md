@@ -2,6 +2,7 @@
 title: "teamMessagingSettings resource type"
 description: "Settings to configure messaging and mentions in the team."
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # teamMessagingSettings resource type

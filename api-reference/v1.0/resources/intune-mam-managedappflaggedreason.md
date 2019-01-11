@@ -2,6 +2,7 @@
 title: "managedAppFlaggedReason enum type"
 description: "The reason for which a user has been flagged"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managedAppFlaggedReason enum type

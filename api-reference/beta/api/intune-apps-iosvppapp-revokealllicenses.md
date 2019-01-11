@@ -2,6 +2,7 @@
 title: "revokeAllLicenses action"
 description: "Revoke all assigned iOS VPP licenses for given app."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # revokeAllLicenses action

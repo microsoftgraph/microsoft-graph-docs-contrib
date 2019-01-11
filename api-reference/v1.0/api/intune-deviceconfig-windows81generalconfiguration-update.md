@@ -2,6 +2,7 @@
 title: "Update windows81GeneralConfiguration"
 description: "Update the properties of a windows81GeneralConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windows81GeneralConfiguration

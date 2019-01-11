@@ -1,6 +1,7 @@
 ---
 title: "managedAppAvailability enum type"
 description: "A managed (MAM) application's availability."
+localization_priority: Normal
 ---
 
 # managedAppAvailability enum type

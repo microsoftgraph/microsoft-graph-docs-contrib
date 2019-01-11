@@ -2,6 +2,7 @@
 title: "visibilitySetting enum type"
 description: "Generic visibility state."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # visibilitySetting enum type

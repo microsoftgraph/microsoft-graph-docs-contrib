@@ -2,6 +2,7 @@
 title: "Create circularGeofenceManagementCondition"
 description: "Create a new circularGeofenceManagementCondition object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create circularGeofenceManagementCondition

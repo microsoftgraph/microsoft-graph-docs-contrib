@@ -1,6 +1,7 @@
 ---
 title: "Create ContactFolder"
 description: "Create a new contactFolder under the user's default contacts folder."
+localization_priority: Normal
 ---
 
 # Create ContactFolder

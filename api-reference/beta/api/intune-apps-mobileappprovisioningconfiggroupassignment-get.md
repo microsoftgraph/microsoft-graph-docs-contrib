@@ -2,6 +2,7 @@
 title: "Get mobileAppProvisioningConfigGroupAssignment"
 description: "Read properties and relationships of the mobileAppProvisioningConfigGroupAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get mobileAppProvisioningConfigGroupAssignment
