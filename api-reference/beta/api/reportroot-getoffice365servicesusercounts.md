@@ -69,6 +69,8 @@ The CSV file has the following headers for columns.
 - Yammer Inactive
 - Teams Active
 - Teams Inactive
+- Office 365 Active
+- Office 365 Inactive
 - Report Period
 
 The following columns are not supported in Microsoft Graph China operated by 21Vianet:
@@ -186,6 +188,8 @@ Content-Length: 458
       "yammerInactive": 2526, 
       "teamsActive": 846, 
       "teamsInactive": 1960, 
+      "office365Active": 2791,
+      "office365Inactive": 503,
       "reportPeriod": "7"
     }
   ]
