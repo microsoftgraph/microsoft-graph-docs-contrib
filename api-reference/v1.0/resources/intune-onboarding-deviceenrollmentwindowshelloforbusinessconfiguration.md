@@ -2,6 +2,7 @@
 title: "deviceEnrollmentWindowsHelloForBusinessConfiguration resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceEnrollmentWindowsHelloForBusinessConfiguration resource type

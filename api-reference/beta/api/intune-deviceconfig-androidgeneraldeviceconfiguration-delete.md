@@ -2,6 +2,7 @@
 title: "Delete androidGeneralDeviceConfiguration"
 description: "Deletes a androidGeneralDeviceConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete androidGeneralDeviceConfiguration

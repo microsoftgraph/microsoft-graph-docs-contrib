@@ -2,6 +2,7 @@
 title: "Get appleVpnConfiguration"
 description: "Read properties and relationships of the appleVpnConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get appleVpnConfiguration

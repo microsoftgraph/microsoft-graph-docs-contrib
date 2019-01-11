@@ -2,6 +2,7 @@
 title: "Delete macOSVpnConfiguration"
 description: "Deletes a macOSVpnConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete macOSVpnConfiguration

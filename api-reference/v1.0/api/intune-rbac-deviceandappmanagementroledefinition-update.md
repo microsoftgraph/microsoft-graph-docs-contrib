@@ -2,6 +2,7 @@
 title: "Update deviceAndAppManagementRoleDefinition"
 description: "Update the properties of a deviceAndAppManagementRoleDefinition object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceAndAppManagementRoleDefinition

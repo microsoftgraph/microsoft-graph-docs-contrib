@@ -1,6 +1,7 @@
 ---
 title: "section: copyToNotebook"
 description: "Copies a section to a specific notebook."
+localization_priority: Normal
 ---
 
 # section: copyToNotebook

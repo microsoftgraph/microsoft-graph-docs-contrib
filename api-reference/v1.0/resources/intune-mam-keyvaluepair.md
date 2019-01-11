@@ -2,6 +2,7 @@
 title: "keyValuePair resource type"
 description: "Key value pair for storing custom settings"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # keyValuePair resource type

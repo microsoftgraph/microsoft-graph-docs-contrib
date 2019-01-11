@@ -2,6 +2,7 @@
 title: "Update androidWorkProfileTrustedRootCertificate"
 description: "Update the properties of a androidWorkProfileTrustedRootCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidWorkProfileTrustedRootCertificate

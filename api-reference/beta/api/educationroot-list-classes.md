@@ -2,6 +2,7 @@
 title: "List classes"
 description: "Retrieve a list of all class objects. "
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # List classes

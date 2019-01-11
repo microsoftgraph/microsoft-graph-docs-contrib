@@ -2,6 +2,7 @@
 title: "Get iosScepCertificateProfile"
 description: "Read properties and relationships of the iosScepCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get iosScepCertificateProfile

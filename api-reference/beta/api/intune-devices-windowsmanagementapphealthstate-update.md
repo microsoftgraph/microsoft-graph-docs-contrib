@@ -2,6 +2,7 @@
 title: "Update windowsManagementAppHealthState"
 description: "Update the properties of a windowsManagementAppHealthState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsManagementAppHealthState

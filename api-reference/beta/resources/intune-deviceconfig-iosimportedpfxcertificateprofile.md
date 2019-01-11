@@ -2,6 +2,7 @@
 title: "iosImportedPFXCertificateProfile resource type"
 description: "iOS PFX Import certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosImportedPFXCertificateProfile resource type

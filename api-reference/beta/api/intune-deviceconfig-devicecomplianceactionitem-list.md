@@ -2,6 +2,7 @@
 title: "List deviceComplianceActionItems"
 description: "List properties and relationships of the deviceComplianceActionItem objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List deviceComplianceActionItems

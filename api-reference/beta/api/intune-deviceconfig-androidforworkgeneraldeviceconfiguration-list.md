@@ -2,6 +2,7 @@
 title: "List androidForWorkGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidForWorkGeneralDeviceConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List androidForWorkGeneralDeviceConfigurations

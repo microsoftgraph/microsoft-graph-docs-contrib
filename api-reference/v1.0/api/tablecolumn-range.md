@@ -2,6 +2,7 @@
 title: "TableColumn: Range"
 description: "Gets the range object associated with the entire column."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # TableColumn: Range

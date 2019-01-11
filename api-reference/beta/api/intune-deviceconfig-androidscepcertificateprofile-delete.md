@@ -2,6 +2,7 @@
 title: "Delete androidScepCertificateProfile"
 description: "Deletes a androidScepCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete androidScepCertificateProfile

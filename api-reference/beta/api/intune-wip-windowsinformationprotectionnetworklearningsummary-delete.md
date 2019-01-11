@@ -2,6 +2,7 @@
 title: "Delete windowsInformationProtectionNetworkLearningSummary"
 description: "Deletes a windowsInformationProtectionNetworkLearningSummary."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsInformationProtectionNetworkLearningSummary

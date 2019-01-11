@@ -2,6 +2,7 @@
 title: "managedAppPolicyDeploymentSummaryPerApp resource type"
 description: "Represents policy deployment summary per app."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managedAppPolicyDeploymentSummaryPerApp resource type

@@ -2,6 +2,7 @@
 title: "mention resource type"
 description: "Represents a notification to a person based on the person's email address."
 author: "simonhult"
+localization_priority: Normal
 ---
 
 # mention resource type

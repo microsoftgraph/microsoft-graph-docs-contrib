@@ -2,6 +2,7 @@
 title: "windowsCertificateProfileBase resource type"
 description: "Device Configuration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsCertificateProfileBase resource type

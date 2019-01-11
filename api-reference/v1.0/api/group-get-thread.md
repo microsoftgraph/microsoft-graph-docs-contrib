@@ -2,6 +2,7 @@
 title: "Get conversation thread"
 description: "Get a thread object."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # Get conversation thread

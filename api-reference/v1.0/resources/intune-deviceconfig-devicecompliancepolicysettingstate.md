@@ -2,6 +2,7 @@
 title: "deviceCompliancePolicySettingState resource type"
 description: "Device Compilance Policy Setting State for a given device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceCompliancePolicySettingState resource type

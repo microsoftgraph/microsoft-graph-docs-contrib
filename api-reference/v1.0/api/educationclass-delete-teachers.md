@@ -2,6 +2,7 @@
 title: "Remove teacher"
 description: "Remove a teacher from a class."
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # Remove teacher

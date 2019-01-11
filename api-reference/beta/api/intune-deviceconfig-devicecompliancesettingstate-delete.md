@@ -2,6 +2,7 @@
 title: "Delete deviceComplianceSettingState"
 description: "Deletes a deviceComplianceSettingState."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceComplianceSettingState

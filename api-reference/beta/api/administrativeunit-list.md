@@ -2,6 +2,7 @@
 title: "List administrativeUnits"
 description: "Retrieve a list of administrativeUnit objects."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # List administrativeUnits

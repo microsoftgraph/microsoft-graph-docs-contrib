@@ -2,6 +2,7 @@
 title: "shutDown action"
 description: "Shut down device"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # shutDown action

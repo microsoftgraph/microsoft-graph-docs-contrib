@@ -2,6 +2,7 @@
 title: "Delete termsAndConditionsAcceptanceStatus"
 description: "Deletes a termsAndConditionsAcceptanceStatus."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete termsAndConditionsAcceptanceStatus

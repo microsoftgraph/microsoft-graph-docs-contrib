@@ -2,6 +2,7 @@
 title: "windowsKioskAutologon resource type"
 description: "The class used to identify an autologon kiosk configuration"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsKioskAutologon resource type

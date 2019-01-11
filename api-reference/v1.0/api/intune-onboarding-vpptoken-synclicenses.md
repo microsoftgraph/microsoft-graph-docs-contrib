@@ -2,6 +2,7 @@
 title: "syncLicenses action"
 description: "Syncs licenses associated with a specific appleVolumePurchaseProgramToken"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # syncLicenses action

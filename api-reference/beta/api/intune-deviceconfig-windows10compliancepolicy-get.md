@@ -2,6 +2,7 @@
 title: "Get windows10CompliancePolicy"
 description: "Read properties and relationships of the windows10CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windows10CompliancePolicy

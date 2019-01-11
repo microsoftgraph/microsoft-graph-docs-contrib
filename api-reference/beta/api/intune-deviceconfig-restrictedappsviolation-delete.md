@@ -2,6 +2,7 @@
 title: "Delete restrictedAppsViolation"
 description: "Deletes a restrictedAppsViolation."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete restrictedAppsViolation

@@ -2,6 +2,7 @@
 title: "vpnOnDemandRuleConnectionDomainAction enum type"
 description: "VPN On-Demand Rule Connection Domain Action."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vpnOnDemandRuleConnectionDomainAction enum type

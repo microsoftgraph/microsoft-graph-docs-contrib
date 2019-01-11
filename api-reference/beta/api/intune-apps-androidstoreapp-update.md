@@ -2,6 +2,7 @@
 title: "Update androidStoreApp"
 description: "Update the properties of a androidStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update androidStoreApp

@@ -2,6 +2,7 @@
 title: "Get officeSuiteApp"
 description: "Read properties and relationships of the officeSuiteApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get officeSuiteApp

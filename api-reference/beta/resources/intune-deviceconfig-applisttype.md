@@ -2,6 +2,7 @@
 title: "appListType enum type"
 description: "Possible values of the compliance app list."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # appListType enum type

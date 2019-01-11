@@ -2,6 +2,7 @@
 title: "complianceState enum type"
 description: "Compliance state."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # complianceState enum type

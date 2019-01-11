@@ -2,6 +2,7 @@
 title: "Create depEnrollmentProfile"
 description: "Create a new depEnrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create depEnrollmentProfile

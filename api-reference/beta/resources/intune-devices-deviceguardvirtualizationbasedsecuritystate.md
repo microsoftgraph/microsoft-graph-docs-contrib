@@ -2,6 +2,7 @@
 title: "deviceGuardVirtualizationBasedSecurityState enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceGuardVirtualizationBasedSecurityState enum type

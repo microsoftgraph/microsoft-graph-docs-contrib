@@ -2,6 +2,7 @@
 title: "Get androidEasEmailProfileConfiguration"
 description: "Read properties and relationships of the androidEasEmailProfileConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidEasEmailProfileConfiguration

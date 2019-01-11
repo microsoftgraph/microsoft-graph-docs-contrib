@@ -2,6 +2,7 @@
 title: "post resource type"
 description: "Represents an individual post item within a converstaionThread entity."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # post resource type

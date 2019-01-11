@@ -1,6 +1,7 @@
 ---
 title: "androidForWorkAppConfigurationSchemaItemDataType enum type"
 description: "Data type for a configuration item inside an Android for Work application's custom configuration schema"
+localization_priority: Normal
 ---
 
 # androidForWorkAppConfigurationSchemaItemDataType enum type

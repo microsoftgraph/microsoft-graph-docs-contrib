@@ -2,6 +2,7 @@
 title: "onenoteOperationError resource type"
 description: "An error from a failed OneNote operation."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # onenoteOperationError resource type

@@ -1,7 +1,8 @@
-﻿---
+---
 title: "Update audio routing group"
 description: "Modify sources and receivers of an audioRoutingGroup."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # Update audio routing group

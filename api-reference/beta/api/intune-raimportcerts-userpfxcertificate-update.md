@@ -2,6 +2,7 @@
 title: "Update userPFXCertificate"
 description: "Update the properties of a userPFXCertificate object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update userPFXCertificate

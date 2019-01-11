@@ -2,6 +2,7 @@
 title: "Get windows10PFXImportCertificateProfile"
 description: "Read properties and relationships of the windows10PFXImportCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windows10PFXImportCertificateProfile

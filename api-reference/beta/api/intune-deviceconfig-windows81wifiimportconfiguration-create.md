@@ -2,6 +2,7 @@
 title: "Create windows81WifiImportConfiguration"
 description: "Create a new windows81WifiImportConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windows81WifiImportConfiguration

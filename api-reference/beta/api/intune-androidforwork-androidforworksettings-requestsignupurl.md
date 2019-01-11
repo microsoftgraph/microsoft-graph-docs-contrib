@@ -2,6 +2,7 @@
 title: "requestSignupUrl action"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # requestSignupUrl action

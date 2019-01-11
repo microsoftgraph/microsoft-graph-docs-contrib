@@ -2,6 +2,7 @@
 title: "windowsNetworkIsolationPolicy resource type"
 description: "Windows Network Isolation Policy"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsNetworkIsolationPolicy resource type

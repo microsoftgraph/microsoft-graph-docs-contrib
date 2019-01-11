@@ -2,6 +2,7 @@
 title: "Update macOSLobApp"
 description: "Update the properties of a macOSLobApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update macOSLobApp

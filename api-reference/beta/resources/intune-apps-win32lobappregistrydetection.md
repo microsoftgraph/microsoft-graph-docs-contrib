@@ -2,6 +2,7 @@
 title: "win32LobAppRegistryDetection resource type"
 description: "Contains registry properties to detect a Win32 App"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # win32LobAppRegistryDetection resource type

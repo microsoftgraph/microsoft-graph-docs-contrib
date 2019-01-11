@@ -2,6 +2,7 @@
 title: "Delete macOSCompliancePolicy"
 description: "Deletes a macOSCompliancePolicy."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete macOSCompliancePolicy

@@ -2,6 +2,7 @@
 title: "Delete deviceAndAppManagementRoleAssignment"
 description: "Deletes a deviceAndAppManagementRoleAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete deviceAndAppManagementRoleAssignment

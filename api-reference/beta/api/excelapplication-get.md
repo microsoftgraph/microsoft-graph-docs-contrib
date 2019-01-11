@@ -1,6 +1,7 @@
 ---
 title: "Get Application"
 description: "Retrieve the properties and relationships of application object."
+localization_priority: Normal
 ---
 
 # Get Application

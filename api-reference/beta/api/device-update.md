@@ -2,6 +2,7 @@
 title: "Update device"
 description: "Update the properties of a device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update device

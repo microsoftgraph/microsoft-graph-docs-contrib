@@ -2,6 +2,7 @@
 title: "assign action"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # assign action

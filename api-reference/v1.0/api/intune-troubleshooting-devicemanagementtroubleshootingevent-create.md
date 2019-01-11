@@ -2,6 +2,7 @@
 title: "Create deviceManagementTroubleshootingEvent"
 description: "Create a new deviceManagementTroubleshootingEvent object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceManagementTroubleshootingEvent

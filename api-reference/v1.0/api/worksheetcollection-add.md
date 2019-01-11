@@ -2,6 +2,7 @@
 title: "WorksheetCollection: add"
 description: ".activate() on it."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # WorksheetCollection: add

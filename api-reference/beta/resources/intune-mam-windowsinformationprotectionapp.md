@@ -2,6 +2,7 @@
 title: "windowsInformationProtectionApp resource type"
 description: "App for Windows information protection"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtectionApp resource type

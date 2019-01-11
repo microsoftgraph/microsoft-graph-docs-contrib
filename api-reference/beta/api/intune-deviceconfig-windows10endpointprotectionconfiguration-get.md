@@ -2,6 +2,7 @@
 title: "Get windows10EndpointProtectionConfiguration"
 description: "Read properties and relationships of the windows10EndpointProtectionConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windows10EndpointProtectionConfiguration

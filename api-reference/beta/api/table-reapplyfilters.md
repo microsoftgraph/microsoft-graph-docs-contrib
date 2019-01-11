@@ -2,6 +2,7 @@
 title: "Table: reapplyFilters"
 description: "Reapplies all the filters currently on the table."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Table: reapplyFilters

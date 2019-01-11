@@ -2,6 +2,7 @@
 title: "List termsAndConditionses"
 description: "List properties and relationships of the termsAndConditions objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List termsAndConditionses

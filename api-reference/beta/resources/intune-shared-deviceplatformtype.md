@@ -2,6 +2,7 @@
 title: "devicePlatformType enum type"
 description: "Supported platform types."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # devicePlatformType enum type

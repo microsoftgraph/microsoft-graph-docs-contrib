@@ -2,6 +2,7 @@
 title: "resetPasscodeActionResult resource type"
 description: "Reset passcode action result"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # resetPasscodeActionResult resource type

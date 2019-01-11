@@ -2,6 +2,7 @@
 title: "Delete iosManagedAppProtection"
 description: "Deletes a iosManagedAppProtection."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosManagedAppProtection

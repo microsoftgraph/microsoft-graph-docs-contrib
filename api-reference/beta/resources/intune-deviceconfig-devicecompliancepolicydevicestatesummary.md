@@ -2,6 +2,7 @@
 title: "deviceCompliancePolicyDeviceStateSummary resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceCompliancePolicyDeviceStateSummary resource type

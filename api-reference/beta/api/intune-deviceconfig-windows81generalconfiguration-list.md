@@ -2,6 +2,7 @@
 title: "List windows81GeneralConfigurations"
 description: "List properties and relationships of the windows81GeneralConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windows81GeneralConfigurations

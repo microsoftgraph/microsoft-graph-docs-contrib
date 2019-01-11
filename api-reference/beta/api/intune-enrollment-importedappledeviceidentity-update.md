@@ -2,6 +2,7 @@
 title: "Update importedAppleDeviceIdentity"
 description: "Update the properties of a importedAppleDeviceIdentity object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update importedAppleDeviceIdentity

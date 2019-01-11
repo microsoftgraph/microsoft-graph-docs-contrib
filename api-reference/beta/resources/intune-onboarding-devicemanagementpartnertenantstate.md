@@ -2,6 +2,7 @@
 title: "deviceManagementPartnerTenantState enum type"
 description: "Partner state of this tenant."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementPartnerTenantState enum type

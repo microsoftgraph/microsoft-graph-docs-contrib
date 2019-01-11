@@ -2,6 +2,7 @@
 title: "List editionUpgradeConfigurations"
 description: "List properties and relationships of the editionUpgradeConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List editionUpgradeConfigurations

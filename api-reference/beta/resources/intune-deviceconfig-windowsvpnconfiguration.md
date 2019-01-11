@@ -2,6 +2,7 @@
 title: "windowsVpnConfiguration resource type"
 description: "Windows VPN configuration profile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsVpnConfiguration resource type

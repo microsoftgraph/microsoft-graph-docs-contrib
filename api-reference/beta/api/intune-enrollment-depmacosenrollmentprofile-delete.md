@@ -2,6 +2,7 @@
 title: "Delete depMacOSEnrollmentProfile"
 description: "Deletes a depMacOSEnrollmentProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete depMacOSEnrollmentProfile

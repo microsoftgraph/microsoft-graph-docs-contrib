@@ -2,6 +2,7 @@
 title: "mdmAuthority enum type"
 description: "Mobile device management authority."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mdmAuthority enum type

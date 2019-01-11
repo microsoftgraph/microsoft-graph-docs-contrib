@@ -2,6 +2,7 @@
 title: "remoteLock action"
 description: "Remote lock"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # remoteLock action

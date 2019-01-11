@@ -2,6 +2,7 @@
 title: "Update macOSGeneralDeviceConfiguration"
 description: "Update the properties of a macOSGeneralDeviceConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update macOSGeneralDeviceConfiguration

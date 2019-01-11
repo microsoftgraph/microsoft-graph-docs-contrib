@@ -2,6 +2,7 @@
 title: "deviceManagementExchangeConnector resource type"
 description: "Entity which represents a connection to an Exchange environment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementExchangeConnector resource type

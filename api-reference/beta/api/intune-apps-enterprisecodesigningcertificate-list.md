@@ -2,6 +2,7 @@
 title: "List enterpriseCodeSigningCertificates"
 description: "List properties and relationships of the enterpriseCodeSigningCertificate objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List enterpriseCodeSigningCertificates

@@ -2,6 +2,7 @@
 title: "Create roleAssignment"
 description: "Create a new roleAssignment object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create roleAssignment

@@ -2,6 +2,7 @@
 title: "Get embeddedSIMDeviceState"
 description: "Read properties and relationships of the embeddedSIMDeviceState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get embeddedSIMDeviceState

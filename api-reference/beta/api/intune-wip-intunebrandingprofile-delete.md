@@ -2,6 +2,7 @@
 title: "Delete intuneBrandingProfile"
 description: "Deletes a intuneBrandingProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete intuneBrandingProfile

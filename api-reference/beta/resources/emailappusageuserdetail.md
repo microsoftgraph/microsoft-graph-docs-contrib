@@ -1,6 +1,7 @@
 ---
 title: "emailAppUsageUserDetail resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # emailAppUsageUserDetail resource type

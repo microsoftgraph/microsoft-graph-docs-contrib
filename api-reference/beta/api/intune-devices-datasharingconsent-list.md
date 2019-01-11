@@ -2,6 +2,7 @@
 title: "List dataSharingConsents"
 description: "List properties and relationships of the dataSharingConsent objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List dataSharingConsents

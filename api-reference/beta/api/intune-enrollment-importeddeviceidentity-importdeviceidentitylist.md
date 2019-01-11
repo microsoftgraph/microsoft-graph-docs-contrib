@@ -2,6 +2,7 @@
 title: "importDeviceIdentityList action"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # importDeviceIdentityList action

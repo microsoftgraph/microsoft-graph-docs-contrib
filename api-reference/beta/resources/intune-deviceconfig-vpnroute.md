@@ -2,6 +2,7 @@
 title: "vpnRoute resource type"
 description: "VPN Route definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vpnRoute resource type

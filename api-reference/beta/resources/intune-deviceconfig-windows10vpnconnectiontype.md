@@ -2,6 +2,7 @@
 title: "windows10VpnConnectionType enum type"
 description: "VPN connection types."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows10VpnConnectionType enum type

@@ -2,6 +2,7 @@
 title: "Delete notificationMessageTemplate"
 description: "Deletes a notificationMessageTemplate."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete notificationMessageTemplate

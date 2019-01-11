@@ -2,6 +2,7 @@
 title: "Get managedEBook"
 description: "Read properties and relationships of the managedEBook object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get managedEBook

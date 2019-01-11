@@ -2,6 +2,7 @@
 title: "List domains"
 description: "Retrieve a list of domain objects."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # List domains

@@ -2,6 +2,7 @@
 title: "deviceComplianceActionItem resource type"
 description: "Scheduled Action Configuration"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceComplianceActionItem resource type

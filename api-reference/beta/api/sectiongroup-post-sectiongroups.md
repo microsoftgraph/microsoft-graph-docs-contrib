@@ -1,6 +1,7 @@
 ---
 title: "Create sectionGroup"
 description: "Create a new section group in the specified section group."
+localization_priority: Normal
 ---
 
 # Create sectionGroup

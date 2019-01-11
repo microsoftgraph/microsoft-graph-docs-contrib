@@ -2,6 +2,7 @@
 title: "Get windowsInformationProtection"
 description: "Read properties and relationships of the windowsInformationProtection object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windowsInformationProtection

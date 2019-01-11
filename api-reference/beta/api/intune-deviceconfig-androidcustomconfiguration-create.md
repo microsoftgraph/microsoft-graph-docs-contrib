@@ -2,6 +2,7 @@
 title: "Create androidCustomConfiguration"
 description: "Create a new androidCustomConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create androidCustomConfiguration

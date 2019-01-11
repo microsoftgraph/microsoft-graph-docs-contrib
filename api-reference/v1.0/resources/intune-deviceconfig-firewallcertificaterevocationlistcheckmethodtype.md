@@ -2,6 +2,7 @@
 title: "firewallCertificateRevocationListCheckMethodType enum type"
 description: "Possible values for firewallCertificateRevocationListCheckMethod"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # firewallCertificateRevocationListCheckMethodType enum type

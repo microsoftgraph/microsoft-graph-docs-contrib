@@ -2,6 +2,7 @@
 title: "mobileAppTroubleshootingDeviceCheckinHistory resource type"
 description: "History Item contained in the Mobile App Troubleshooting Event."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mobileAppTroubleshootingDeviceCheckinHistory resource type

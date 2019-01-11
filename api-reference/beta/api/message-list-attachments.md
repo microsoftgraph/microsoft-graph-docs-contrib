@@ -2,6 +2,7 @@
 title: "List attachments"
 description: "Retrieve a list of attachment objects attached to a message."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # List attachments

@@ -2,6 +2,7 @@
 title: "Update deviceManagementPartner"
 description: "Update the properties of a deviceManagementPartner object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update deviceManagementPartner

@@ -2,6 +2,7 @@
 title: "workbookRangeView: range"
 description: "Return the range associated with the rangeView resource."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # workbookRangeView: range

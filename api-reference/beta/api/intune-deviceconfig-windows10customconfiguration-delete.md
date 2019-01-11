@@ -2,6 +2,7 @@
 title: "Delete windows10CustomConfiguration"
 description: "Deletes a windows10CustomConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windows10CustomConfiguration

@@ -2,6 +2,7 @@
 title: "participant: muteAll"
 description: "Mute all participants in the call."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # participant: muteAll

@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getYammerActivityUserDetail"
 description: "Get details about Yammer activity by user."
+localization_priority: Normal
 ---
 
 # reportRoot: getYammerActivityUserDetail

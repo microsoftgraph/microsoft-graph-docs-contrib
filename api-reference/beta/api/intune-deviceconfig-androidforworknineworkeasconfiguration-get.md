@@ -2,6 +2,7 @@
 title: "Get androidForWorkNineWorkEasConfiguration"
 description: "Read properties and relationships of the androidForWorkNineWorkEasConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidForWorkNineWorkEasConfiguration

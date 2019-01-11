@@ -2,6 +2,7 @@
 title: "Update cartToClassAssociation"
 description: "Update the properties of a cartToClassAssociation object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update cartToClassAssociation

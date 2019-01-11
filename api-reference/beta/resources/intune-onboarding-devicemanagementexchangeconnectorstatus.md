@@ -2,6 +2,7 @@
 title: "deviceManagementExchangeConnectorStatus enum type"
 description: "The current status of the Exchange Connector."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceManagementExchangeConnectorStatus enum type

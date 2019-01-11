@@ -2,6 +2,7 @@
 title: "microsoftStoreForBusinessPortalSelectionOptions enum type"
 description: "Portal to which admin syncs available Microsoft Store for Business apps. This is available in the Intune Admin Console."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # microsoftStoreForBusinessPortalSelectionOptions enum type

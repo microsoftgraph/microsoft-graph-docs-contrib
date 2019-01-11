@@ -1,6 +1,7 @@
 ---
 title: "organization resource type"
 description: "Represents an Azure Active Directory tenant. "
+localization_priority: Normal
 ---
 
 # organization resource type

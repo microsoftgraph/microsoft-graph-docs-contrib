@@ -2,6 +2,7 @@
 title: "Update educationclass properties"
 description: "Update the properties of a class."
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # Update educationclass properties

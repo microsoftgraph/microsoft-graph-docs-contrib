@@ -2,6 +2,7 @@
 title: "Range: LastColumn"
 description: "."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Range: LastColumn

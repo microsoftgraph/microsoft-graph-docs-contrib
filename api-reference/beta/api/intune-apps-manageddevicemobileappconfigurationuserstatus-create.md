@@ -2,6 +2,7 @@
 title: "Create managedDeviceMobileAppConfigurationUserStatus"
 description: "Create a new managedDeviceMobileAppConfigurationUserStatus object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create managedDeviceMobileAppConfigurationUserStatus

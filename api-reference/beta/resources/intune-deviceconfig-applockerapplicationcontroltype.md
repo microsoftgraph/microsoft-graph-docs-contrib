@@ -2,6 +2,7 @@
 title: "appLockerApplicationControlType enum type"
 description: "Possible values of AppLocker Application Control Types"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # appLockerApplicationControlType enum type

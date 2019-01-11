@@ -2,6 +2,7 @@
 title: "omaSettingString resource type"
 description: "OMA Settings String definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # omaSettingString resource type

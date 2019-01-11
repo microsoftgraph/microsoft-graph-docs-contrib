@@ -2,6 +2,7 @@
 title: "Delete mailFolder"
 description: "Delete the specified mailFolder."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # Delete mailFolder

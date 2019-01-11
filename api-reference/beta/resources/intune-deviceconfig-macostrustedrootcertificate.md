@@ -2,6 +2,7 @@
 title: "macOSTrustedRootCertificate resource type"
 description: "OS X Trusted Root Certificate configuration profile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # macOSTrustedRootCertificate resource type

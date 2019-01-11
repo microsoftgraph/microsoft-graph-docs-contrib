@@ -2,6 +2,7 @@
 title: "List managedMobileApps"
 description: "List properties and relationships of the managedMobileApp objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List managedMobileApps

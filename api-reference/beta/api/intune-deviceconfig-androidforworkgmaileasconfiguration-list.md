@@ -2,6 +2,7 @@
 title: "List androidForWorkGmailEasConfigurations"
 description: "List properties and relationships of the androidForWorkGmailEasConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List androidForWorkGmailEasConfigurations

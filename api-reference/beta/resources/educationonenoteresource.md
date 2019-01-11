@@ -2,6 +2,7 @@
 title: "educationOneNoteResource resource type"
 description: "A subclass of educationResource. This represents the location of the OneNote page.  "
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # educationOneNoteResource resource type

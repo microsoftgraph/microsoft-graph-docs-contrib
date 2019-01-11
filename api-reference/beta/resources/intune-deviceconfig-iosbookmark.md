@@ -2,6 +2,7 @@
 title: "iosBookmark resource type"
 description: "iOS URL bookmark"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iosBookmark resource type

@@ -1,6 +1,7 @@
 ---
 title: "Assign a manager"
 description: "Use this API to assign a user's manager."
+localization_priority: Normal
 ---
 
 # Assign a manager

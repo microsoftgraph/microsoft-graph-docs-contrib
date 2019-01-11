@@ -2,6 +2,7 @@
 title: "Delete editionUpgradeConfiguration"
 description: "Deletes a editionUpgradeConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete editionUpgradeConfiguration

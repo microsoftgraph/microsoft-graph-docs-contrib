@@ -2,6 +2,7 @@
 title: "Get mobileContainedApp"
 description: "Read properties and relationships of the mobileContainedApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get mobileContainedApp

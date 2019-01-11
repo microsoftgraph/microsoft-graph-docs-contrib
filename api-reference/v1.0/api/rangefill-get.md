@@ -2,6 +2,7 @@
 title: "Get RangeFill"
 description: "Retrieve the properties and relationships of rangefill object."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Get RangeFill

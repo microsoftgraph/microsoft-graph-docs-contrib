@@ -2,6 +2,7 @@
 title: "Create windowsPhone81GeneralConfiguration"
 description: "Create a new windowsPhone81GeneralConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsPhone81GeneralConfiguration

@@ -2,6 +2,7 @@
 title: "windowsPackageInformation resource type"
 description: "Contains properties for the package information for a Windows line of business app."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsPackageInformation resource type

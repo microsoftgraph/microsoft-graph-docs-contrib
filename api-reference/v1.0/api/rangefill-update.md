@@ -2,6 +2,7 @@
 title: "Update rangefill"
 description: "Update the properties of rangefill object."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Update rangefill

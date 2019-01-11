@@ -2,6 +2,7 @@
 title: "Get RangeFormat"
 description: "Retrieve the properties and relationships of rangeformat object."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Get RangeFormat

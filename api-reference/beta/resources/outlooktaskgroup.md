@@ -2,6 +2,7 @@
 title: "outlookTaskGroup resource type"
 description: "A group of folders (outlookTaskFolder) that contain Outlook tasks (collection of outlookTask objects). "
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # outlookTaskGroup resource type

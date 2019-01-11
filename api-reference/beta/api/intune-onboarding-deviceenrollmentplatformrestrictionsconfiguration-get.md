@@ -2,6 +2,7 @@
 title: "Get deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get deviceEnrollmentPlatformRestrictionsConfiguration

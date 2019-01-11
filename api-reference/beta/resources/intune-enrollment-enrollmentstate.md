@@ -2,6 +2,7 @@
 title: "enrollmentState enum type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # enrollmentState enum type

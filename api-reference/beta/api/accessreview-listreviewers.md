@@ -1,6 +1,7 @@
 ---
 title: "List accessReview reviewers"
 description: "In the Azure AD access reviews feature, retrieve the reviewers of an accessReview object."
+localization_priority: Normal
 ---
 
 # List accessReview reviewers

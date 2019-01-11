@@ -2,6 +2,7 @@
 title: "androidWorkProfilePkcsCertificateProfile resource type"
 description: "Android Work Profile PKCS certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidWorkProfilePkcsCertificateProfile resource type

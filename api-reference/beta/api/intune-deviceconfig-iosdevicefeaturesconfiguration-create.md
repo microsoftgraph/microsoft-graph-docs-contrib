@@ -2,6 +2,7 @@
 title: "Create iosDeviceFeaturesConfiguration"
 description: "Create a new iosDeviceFeaturesConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create iosDeviceFeaturesConfiguration

@@ -2,6 +2,7 @@
 title: "windows81CertificateProfileBase resource type"
 description: "Device Configuration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows81CertificateProfileBase resource type

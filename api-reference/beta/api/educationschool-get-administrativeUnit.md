@@ -1,6 +1,7 @@
 ---
 title: "Get administrativeUnit"
 description: "Retrieve the simple directory **administrativeUnit** that corresponds to this **educationSchool**."
+localization_priority: Normal
 ---
 
 # Get administrativeUnit

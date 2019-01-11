@@ -2,6 +2,7 @@
 title: "Delete localizedNotificationMessage"
 description: "Deletes a localizedNotificationMessage."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete localizedNotificationMessage

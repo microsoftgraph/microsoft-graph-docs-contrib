@@ -1,6 +1,7 @@
 ---
 title: "application: delta"
 description: "Get newly created, updated, or deleted applications without having to perform a full read of the entire resource collection. See Using Delta Query for details."
+localization_priority: Normal
 ---
 
 # application: delta

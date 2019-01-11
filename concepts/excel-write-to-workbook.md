@@ -1,6 +1,7 @@
 ---
 title: "Write data to an Excel workbook with Microsoft Graph"
 description: "q=excelstarter)."
+localization_priority: Priority
 ---
 
 # Write data to an Excel workbook with Microsoft Graph

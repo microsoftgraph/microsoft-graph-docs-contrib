@@ -2,6 +2,7 @@
 title: "androidManagedStoreAccountEnrollmentTarget enum type"
 description: "Android for Work device management targeting type for the account"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidManagedStoreAccountEnrollmentTarget enum type

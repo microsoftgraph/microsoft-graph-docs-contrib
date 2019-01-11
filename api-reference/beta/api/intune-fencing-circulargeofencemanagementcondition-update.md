@@ -2,6 +2,7 @@
 title: "Update circularGeofenceManagementCondition"
 description: "Update the properties of a circularGeofenceManagementCondition object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update circularGeofenceManagementCondition

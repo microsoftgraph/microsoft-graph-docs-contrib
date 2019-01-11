@@ -2,6 +2,7 @@
 title: "eventMessageRequest resource type"
 description: "A message that represents a meeting request."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # eventMessageRequest resource type

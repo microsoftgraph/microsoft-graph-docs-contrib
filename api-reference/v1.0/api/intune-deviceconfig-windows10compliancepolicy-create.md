@@ -2,6 +2,7 @@
 title: "Create windows10CompliancePolicy"
 description: "Create a new windows10CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windows10CompliancePolicy

@@ -2,6 +2,7 @@
 title: "Table: Range"
 description: "Gets the range object associated with the entire table."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # Table: Range

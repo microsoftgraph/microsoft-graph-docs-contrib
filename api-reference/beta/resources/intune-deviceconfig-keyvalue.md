@@ -2,6 +2,7 @@
 title: "keyValue resource type"
 description: "Key Value definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # keyValue resource type

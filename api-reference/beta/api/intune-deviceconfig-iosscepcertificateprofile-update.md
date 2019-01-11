@@ -2,6 +2,7 @@
 title: "Update iosScepCertificateProfile"
 description: "Update the properties of a iosScepCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update iosScepCertificateProfile

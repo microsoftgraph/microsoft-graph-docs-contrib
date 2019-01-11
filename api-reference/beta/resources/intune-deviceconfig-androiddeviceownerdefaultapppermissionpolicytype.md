@@ -2,6 +2,7 @@
 title: "androidDeviceOwnerDefaultAppPermissionPolicyType enum type"
 description: "Android Device Owner default app permission policy type."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # androidDeviceOwnerDefaultAppPermissionPolicyType enum type

@@ -2,6 +2,7 @@
 title: "windows81VpnProxyServer resource type"
 description: "VPN Proxy Server."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows81VpnProxyServer resource type

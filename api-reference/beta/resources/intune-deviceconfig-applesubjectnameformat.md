@@ -2,6 +2,7 @@
 title: "appleSubjectNameFormat enum type"
 description: "Subject Name Format Options for Apple devices."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # appleSubjectNameFormat enum type

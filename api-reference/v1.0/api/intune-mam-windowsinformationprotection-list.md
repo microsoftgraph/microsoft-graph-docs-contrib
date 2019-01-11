@@ -2,6 +2,7 @@
 title: "List windowsInformationProtections"
 description: "List properties and relationships of the windowsInformationProtection objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsInformationProtections

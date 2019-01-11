@@ -2,6 +2,7 @@
 title: "Delete managedIOSStoreApp"
 description: "Deletes a managedIOSStoreApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete managedIOSStoreApp

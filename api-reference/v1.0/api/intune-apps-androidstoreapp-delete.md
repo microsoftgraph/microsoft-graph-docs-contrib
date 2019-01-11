@@ -2,6 +2,7 @@
 title: "Delete androidStoreApp"
 description: "Deletes a androidStoreApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete androidStoreApp

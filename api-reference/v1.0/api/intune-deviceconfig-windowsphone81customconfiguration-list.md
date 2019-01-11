@@ -2,6 +2,7 @@
 title: "List windowsPhone81CustomConfigurations"
 description: "List properties and relationships of the windowsPhone81CustomConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windowsPhone81CustomConfigurations

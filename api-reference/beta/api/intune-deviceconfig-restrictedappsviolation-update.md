@@ -2,6 +2,7 @@
 title: "Update restrictedAppsViolation"
 description: "Update the properties of a restrictedAppsViolation object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update restrictedAppsViolation

@@ -2,6 +2,7 @@
 title: "List photos"
 description: "Retrieve a list of profilePhoto objects."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # List photos

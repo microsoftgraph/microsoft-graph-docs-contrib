@@ -2,6 +2,7 @@
 title: "Update windowsPhone81AppX"
 description: "Update the properties of a windowsPhone81AppX object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsPhone81AppX

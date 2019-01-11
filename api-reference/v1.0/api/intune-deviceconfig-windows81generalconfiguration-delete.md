@@ -2,6 +2,7 @@
 title: "Delete windows81GeneralConfiguration"
 description: "Deletes a windows81GeneralConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windows81GeneralConfiguration

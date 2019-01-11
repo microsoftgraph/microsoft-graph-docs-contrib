@@ -2,6 +2,7 @@
 title: "vpnDnsRule resource type"
 description: "VPN DNS Rule definition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vpnDnsRule resource type

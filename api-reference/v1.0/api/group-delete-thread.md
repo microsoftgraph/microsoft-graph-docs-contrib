@@ -2,6 +2,7 @@
 title: "Delete conversation thread"
 description: "Delete a thread object."
 author: "dkershaw10"
+localization_priority: Normal
 ---
 
 # Delete conversation thread

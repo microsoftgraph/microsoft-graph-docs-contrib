@@ -2,6 +2,7 @@
 title: "Update domain"
 description: "Update the properties of domain object."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Update domain

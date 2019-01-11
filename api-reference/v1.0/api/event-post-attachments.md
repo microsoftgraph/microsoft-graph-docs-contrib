@@ -2,6 +2,7 @@
 title: "Add attachment"
 description: "Use this API to add an attachment to an event. Since there"
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # Add attachment

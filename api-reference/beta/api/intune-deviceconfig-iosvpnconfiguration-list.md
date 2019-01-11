@@ -2,6 +2,7 @@
 title: "List iosVpnConfigurations"
 description: "List properties and relationships of the iosVpnConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List iosVpnConfigurations

@@ -2,6 +2,7 @@
 title: "deviceGuardLocalSystemAuthorityCredentialGuardType enum type"
 description: "Possible values of Credential Guard settings."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceGuardLocalSystemAuthorityCredentialGuardType enum type

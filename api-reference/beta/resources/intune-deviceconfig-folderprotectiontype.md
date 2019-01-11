@@ -2,6 +2,7 @@
 title: "folderProtectionType enum type"
 description: "Possible values of Folder Protection"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # folderProtectionType enum type

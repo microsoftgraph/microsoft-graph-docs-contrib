@@ -2,6 +2,7 @@
 title: "Create mobileAppIntentAndState"
 description: "Create a new mobileAppIntentAndState object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create mobileAppIntentAndState

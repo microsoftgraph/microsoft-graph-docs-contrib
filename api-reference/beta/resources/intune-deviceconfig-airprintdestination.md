@@ -2,6 +2,7 @@
 title: "airPrintDestination resource type"
 description: "Represents an AirPrint destination."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # airPrintDestination resource type

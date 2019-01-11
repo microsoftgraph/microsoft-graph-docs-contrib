@@ -1,6 +1,7 @@
 ---
 title: "oneDriveActivityUserDetail resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # oneDriveActivityUserDetail resource type

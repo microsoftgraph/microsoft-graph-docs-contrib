@@ -2,6 +2,7 @@
 title: "List settingStateDeviceSummaries"
 description: "List properties and relationships of the settingStateDeviceSummary objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List settingStateDeviceSummaries

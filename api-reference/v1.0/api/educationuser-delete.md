@@ -2,6 +2,7 @@
 title: "Delete educationUser"
 description: "Delete a user."
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # Delete educationUser

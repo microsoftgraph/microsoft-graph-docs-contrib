@@ -2,6 +2,7 @@
 title: "macOSEndpointProtectionConfiguration resource type"
 description: "MacOS endpoint protection configuration profile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # macOSEndpointProtectionConfiguration resource type

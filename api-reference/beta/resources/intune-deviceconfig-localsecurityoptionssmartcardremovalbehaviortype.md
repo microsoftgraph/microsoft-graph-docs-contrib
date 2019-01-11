@@ -2,6 +2,7 @@
 title: "localSecurityOptionsSmartCardRemovalBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # localSecurityOptionsSmartCardRemovalBehaviorType enum type

@@ -2,6 +2,7 @@
 title: "edgeSearchEngine resource type"
 description: "Allows IT admins to set a predefined default search engine for MDM-Controlled devices."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # edgeSearchEngine resource type

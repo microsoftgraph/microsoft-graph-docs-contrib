@@ -2,6 +2,7 @@
 title: "windowsWifiConfiguration resource type"
 description: "Device Configuration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsWifiConfiguration resource type

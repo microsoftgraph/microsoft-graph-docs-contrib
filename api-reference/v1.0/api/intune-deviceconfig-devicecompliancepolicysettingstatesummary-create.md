@@ -2,6 +2,7 @@
 title: "Create deviceCompliancePolicySettingStateSummary"
 description: "Create a new deviceCompliancePolicySettingStateSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create deviceCompliancePolicySettingStateSummary

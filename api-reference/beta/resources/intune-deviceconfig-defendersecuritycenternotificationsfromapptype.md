@@ -2,6 +2,7 @@
 title: "defenderSecurityCenterNotificationsFromAppType enum type"
 description: "Possible values for defenderSecurityCenterNotificationsFromApp"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # defenderSecurityCenterNotificationsFromAppType enum type

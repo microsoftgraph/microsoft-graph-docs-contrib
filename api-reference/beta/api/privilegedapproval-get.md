@@ -1,6 +1,7 @@
 ---
 title: "Get privilegedApproval"
 description: "Retrieve the properties and relationships of privilegedapproval object."
+localization_priority: Normal
 ---
 
 # Get privilegedApproval

@@ -2,6 +2,7 @@
 title: "ratingAustraliaMoviesType enum type"
 description: "Movies rating labels in Australia"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingAustraliaMoviesType enum type

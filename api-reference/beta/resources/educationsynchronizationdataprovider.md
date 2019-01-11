@@ -2,6 +2,7 @@
 title: "educationSynchronizationDataProvider resource type"
 description: "Represents the source SIS schema. This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema. "
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # educationSynchronizationDataProvider resource type

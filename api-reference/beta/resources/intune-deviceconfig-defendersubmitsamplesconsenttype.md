@@ -2,6 +2,7 @@
 title: "defenderSubmitSamplesConsentType enum type"
 description: "Possible values for DefenderSubmitSamplesConsentType"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # defenderSubmitSamplesConsentType enum type

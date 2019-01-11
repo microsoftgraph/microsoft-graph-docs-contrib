@@ -2,6 +2,7 @@
 title: "windows81TrustedRootCertificate resource type"
 description: "Windows 8.1 Trusted Certificate configuration profile"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windows81TrustedRootCertificate resource type

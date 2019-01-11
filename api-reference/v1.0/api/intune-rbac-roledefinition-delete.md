@@ -2,6 +2,7 @@
 title: "Delete roleDefinition"
 description: "Deletes a roleDefinition."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete roleDefinition

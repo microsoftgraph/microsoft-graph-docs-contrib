@@ -2,6 +2,7 @@
 title: "auditProperty resource type"
 description: "A class containing the properties for Audit Property."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # auditProperty resource type

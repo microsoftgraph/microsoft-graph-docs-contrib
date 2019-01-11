@@ -2,6 +2,7 @@
 title: "iPv4Range resource type"
 description: "IP V4 range"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # iPv4Range resource type

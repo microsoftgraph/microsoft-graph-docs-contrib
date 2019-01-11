@@ -2,6 +2,7 @@
 title: "Get iosCustomConfiguration"
 description: "Read properties and relationships of the iosCustomConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get iosCustomConfiguration

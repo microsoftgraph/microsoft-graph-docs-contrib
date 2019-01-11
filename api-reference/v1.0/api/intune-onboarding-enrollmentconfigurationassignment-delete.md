@@ -2,6 +2,7 @@
 title: "Delete enrollmentConfigurationAssignment"
 description: "Deletes a enrollmentConfigurationAssignment."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete enrollmentConfigurationAssignment

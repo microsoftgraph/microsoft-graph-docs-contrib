@@ -2,6 +2,7 @@
 title: "easAuthenticationMethod enum type"
 description: "Exchange Active Sync authentication method."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # easAuthenticationMethod enum type

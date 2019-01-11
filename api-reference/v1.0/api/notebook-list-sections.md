@@ -2,6 +2,7 @@
 title: "List sections"
 description: "Retrieve a list of onenoteSection objects from the specified notebook."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # List sections

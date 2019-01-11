@@ -2,6 +2,7 @@
 title: "Delete importedWindowsAutopilotDeviceIdentity"
 description: "Deletes a importedWindowsAutopilotDeviceIdentity."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete importedWindowsAutopilotDeviceIdentity

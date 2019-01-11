@@ -2,6 +2,7 @@
 title: "Create enrollmentProfile"
 description: "Create a new enrollmentProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create enrollmentProfile

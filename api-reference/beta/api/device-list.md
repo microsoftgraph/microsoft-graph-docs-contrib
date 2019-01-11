@@ -2,6 +2,7 @@
 title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List devices

@@ -2,6 +2,7 @@
 title: "Update userAppInstallStatus"
 description: "Update the properties of a userAppInstallStatus object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update userAppInstallStatus

@@ -2,6 +2,7 @@
 title: "ratingAppsType enum type"
 description: "Apps rating as in media content"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingAppsType enum type

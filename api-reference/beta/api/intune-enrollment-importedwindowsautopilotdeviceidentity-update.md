@@ -2,6 +2,7 @@
 title: "Update importedWindowsAutopilotDeviceIdentity"
 description: "Update the properties of a importedWindowsAutopilotDeviceIdentity object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update importedWindowsAutopilotDeviceIdentity

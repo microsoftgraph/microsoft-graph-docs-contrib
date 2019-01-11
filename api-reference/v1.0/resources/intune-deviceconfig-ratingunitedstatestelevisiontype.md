@@ -2,6 +2,7 @@
 title: "ratingUnitedStatesTelevisionType enum type"
 description: "TV content rating labels in United States"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingUnitedStatesTelevisionType enum type

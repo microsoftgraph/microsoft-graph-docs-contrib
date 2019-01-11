@@ -2,6 +2,7 @@
 title: "Create iosLobAppProvisioningConfiguration"
 description: "Create a new iosLobAppProvisioningConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create iosLobAppProvisioningConfiguration

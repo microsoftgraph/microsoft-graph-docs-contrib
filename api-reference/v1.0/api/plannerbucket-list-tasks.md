@@ -1,6 +1,7 @@
 ---
 title: "List tasks"
 description: "Retrieve a list of **plannerTask** objects associated to a plannerBucket object."
+localization_priority: Normal
 ---
 
 # List tasks

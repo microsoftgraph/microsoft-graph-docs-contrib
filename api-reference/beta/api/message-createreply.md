@@ -2,6 +2,7 @@
 title: "message: createReply"
 description: "Create a draft of a reply message to include a comment or update any message properties "
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # message: createReply

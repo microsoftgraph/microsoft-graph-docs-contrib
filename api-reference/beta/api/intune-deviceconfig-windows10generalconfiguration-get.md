@@ -2,6 +2,7 @@
 title: "Get windows10GeneralConfiguration"
 description: "Read properties and relationships of the windows10GeneralConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get windows10GeneralConfiguration

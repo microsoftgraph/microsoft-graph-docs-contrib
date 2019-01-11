@@ -1,6 +1,7 @@
 ---
 title: "Create a group setting"
 description: "Use this API to create a new setting, based on the templates available in groupSettingTemplates. These settings can be at the tenant-level or at the group level. The creation request must provide settingValues for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available."
+localization_priority: Normal
 ---
 
 # Create a group setting

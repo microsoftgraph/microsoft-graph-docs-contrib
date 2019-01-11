@@ -2,6 +2,7 @@
 title: "List macOSEndpointProtectionConfigurations"
 description: "List properties and relationships of the macOSEndpointProtectionConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List macOSEndpointProtectionConfigurations

@@ -2,6 +2,7 @@
 title: "setDeviceName action"
 description: "Set device name of the device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # setDeviceName action

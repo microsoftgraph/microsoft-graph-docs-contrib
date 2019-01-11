@@ -2,6 +2,7 @@
 title: "Create settingStateDeviceSummary"
 description: "Create a new settingStateDeviceSummary object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create settingStateDeviceSummary

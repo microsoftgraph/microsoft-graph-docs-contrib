@@ -2,6 +2,7 @@
 title: "List iosCertificateProfileBases"
 description: "List properties and relationships of the iosCertificateProfileBase objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List iosCertificateProfileBases

@@ -2,6 +2,7 @@
 title: "edgeCookiePolicy enum type"
 description: "Possible values to specify which cookies are allowed in Microsoft Edge."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # edgeCookiePolicy enum type

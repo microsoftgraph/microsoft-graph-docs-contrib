@@ -1,6 +1,7 @@
 ---
 title: "List mailFolders"
 description: "Get all the mail folders in the signed-in user's mailbox."
+localization_priority: Normal
 ---
 
 # List mailFolders

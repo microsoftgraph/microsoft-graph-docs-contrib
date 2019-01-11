@@ -2,6 +2,7 @@
 title: "Delete androidTrustedRootCertificate"
 description: "Deletes a androidTrustedRootCertificate."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete androidTrustedRootCertificate

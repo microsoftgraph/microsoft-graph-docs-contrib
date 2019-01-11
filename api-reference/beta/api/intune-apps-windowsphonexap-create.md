@@ -2,6 +2,7 @@
 title: "Create windowsPhoneXAP"
 description: "Create a new windowsPhoneXAP object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsPhoneXAP

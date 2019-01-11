@@ -2,6 +2,7 @@
 title: "List pages"
 description: "Retrieve a list of page objects."
 author: "Jewan-microsoft"
+localization_priority: Normal
 ---
 
 # List pages

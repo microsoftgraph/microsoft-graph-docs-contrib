@@ -2,6 +2,7 @@
 title: "editionUpgradeConfiguration resource type"
 description: "Windows 10 Edition Upgrade configuration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # editionUpgradeConfiguration resource type

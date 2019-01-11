@@ -2,6 +2,7 @@
 title: "deviceComplianceActionType enum type"
 description: "Scheduled Action Type Enum"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # deviceComplianceActionType enum type

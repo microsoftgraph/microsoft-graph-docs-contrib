@@ -2,6 +2,7 @@
 title: "Create windowsManagedDevice"
 description: "Create a new windowsManagedDevice object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsManagedDevice

@@ -2,6 +2,7 @@
 title: "List managedAppStatusRaws"
 description: "List properties and relationships of the managedAppStatusRaw objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List managedAppStatusRaws

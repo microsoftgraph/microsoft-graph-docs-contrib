@@ -2,6 +2,7 @@
 title: "bitLockerSystemDrivePolicy resource type"
 description: "BitLocker Encryption Base Policies."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # bitLockerSystemDrivePolicy resource type

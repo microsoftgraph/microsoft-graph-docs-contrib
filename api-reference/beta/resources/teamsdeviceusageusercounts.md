@@ -2,6 +2,7 @@
 title: "teamsDeviceUsageUserCounts resource type"
 description: "The following is a JSON representation of the resource."
 author: "nkramer"
+localization_priority: Normal
 ---
 
 # teamsDeviceUsageUserCounts resource type

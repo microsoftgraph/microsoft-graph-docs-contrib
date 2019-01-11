@@ -2,6 +2,7 @@
 title: "Create detectedApp"
 description: "Create a new detectedApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create detectedApp

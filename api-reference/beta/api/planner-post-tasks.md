@@ -1,6 +1,7 @@
 ---
 title: "Create plannerTask"
 description: "Use this API to create a new **plannerTask**."
+localization_priority: Normal
 ---
 
 # Create plannerTask

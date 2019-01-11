@@ -2,6 +2,7 @@
 title: "Update managedDeviceOverview"
 description: "Update the properties of a managedDeviceOverview object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update managedDeviceOverview

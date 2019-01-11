@@ -2,6 +2,7 @@
 title: "unsupportedDeviceConfigurationDetail resource type"
 description: "A description of why an entity is unsupported."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # unsupportedDeviceConfigurationDetail resource type

@@ -2,6 +2,7 @@
 title: "windowsDeviceType enum type"
 description: "Contains properties for Windows device type."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsDeviceType enum type

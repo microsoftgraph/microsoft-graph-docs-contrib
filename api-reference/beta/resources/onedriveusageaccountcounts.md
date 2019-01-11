@@ -1,6 +1,7 @@
 ---
 title: "oneDriveUsageAccountCounts resource type"
 description: "The following is a JSON representation of the resource."
+localization_priority: Normal
 ---
 
 # oneDriveUsageAccountCounts resource type

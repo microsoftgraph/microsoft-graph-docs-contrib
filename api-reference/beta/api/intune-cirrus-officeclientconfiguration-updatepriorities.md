@@ -2,6 +2,7 @@
 title: "updatePriorities action"
 description: "Update policy priorities."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # updatePriorities action

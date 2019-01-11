@@ -1,6 +1,7 @@
 ---
 title: "List group members"
 description: "Get a list of the group's direct members. A group can have users, contacts, devices, service principals, and other groups as members. This operation is not transitive."
+localization_priority: Normal
 ---
 
 # List group members

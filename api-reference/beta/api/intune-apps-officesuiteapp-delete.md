@@ -2,6 +2,7 @@
 title: "Delete officeSuiteApp"
 description: "Deletes a officeSuiteApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete officeSuiteApp

@@ -1,6 +1,7 @@
 ---
 title: "reportRoot: getOffice365ActiveUserCounts"
 description: "Get the count of daily active users in the reporting period by product."
+localization_priority: Normal
 ---
 
 # reportRoot: getOffice365ActiveUserCounts

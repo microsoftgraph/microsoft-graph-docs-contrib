@@ -2,6 +2,7 @@
 title: "Delete administrativeUnit"
 description: "Delete an administrativeUnit."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # Delete administrativeUnit

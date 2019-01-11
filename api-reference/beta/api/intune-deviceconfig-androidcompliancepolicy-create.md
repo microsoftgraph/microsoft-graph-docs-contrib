@@ -2,6 +2,7 @@
 title: "Create androidCompliancePolicy"
 description: "Create a new androidCompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create androidCompliancePolicy

@@ -2,6 +2,7 @@
 title: "Delete managedIOSLobApp"
 description: "Deletes a managedIOSLobApp."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete managedIOSLobApp

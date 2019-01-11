@@ -2,6 +2,7 @@
 title: "Update managementConditionStatement"
 description: "Update the properties of a managementConditionStatement object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update managementConditionStatement

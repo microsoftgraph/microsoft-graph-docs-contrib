@@ -2,6 +2,7 @@
 title: "List windows81CompliancePolicies"
 description: "List properties and relationships of the windows81CompliancePolicy objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windows81CompliancePolicies

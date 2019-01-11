@@ -2,6 +2,7 @@
 title: "Get androidForWorkCompliancePolicy"
 description: "Read properties and relationships of the androidForWorkCompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get androidForWorkCompliancePolicy

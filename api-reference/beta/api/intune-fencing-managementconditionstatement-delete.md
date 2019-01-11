@@ -2,6 +2,7 @@
 title: "Delete managementConditionStatement"
 description: "Deletes a managementConditionStatement."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete managementConditionStatement

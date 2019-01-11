@@ -2,6 +2,7 @@
 title: "windowsKioskAppConfiguration resource type"
 description: "The app base class used to identify the application info for the kiosk configuration"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsKioskAppConfiguration resource type

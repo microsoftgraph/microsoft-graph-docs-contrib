@@ -2,6 +2,7 @@
 title: "Get managedIOSStoreApp"
 description: "Read properties and relationships of the managedIOSStoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get managedIOSStoreApp

@@ -2,6 +2,7 @@
 title: "Delete iosScepCertificateProfile"
 description: "Deletes a iosScepCertificateProfile."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosScepCertificateProfile

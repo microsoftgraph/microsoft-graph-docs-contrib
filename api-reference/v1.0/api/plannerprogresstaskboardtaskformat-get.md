@@ -1,6 +1,7 @@
 ---
 title: "Get plannerProgressTaskBoardTaskFormat"
 description: "Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object."
+localization_priority: Normal
 ---
 
 # Get plannerProgressTaskBoardTaskFormat

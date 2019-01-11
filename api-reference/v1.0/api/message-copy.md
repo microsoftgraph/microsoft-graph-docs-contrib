@@ -2,6 +2,7 @@
 title: "message: copy"
 description: "Copy a message to a folder."
 author: "angelgolfer-ms"
+localization_priority: Normal
 ---
 
 # message: copy

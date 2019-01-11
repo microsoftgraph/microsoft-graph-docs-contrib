@@ -2,6 +2,7 @@
 title: "vppTokenState enum type"
 description: "Possible states associated with an Apple Volume Purchase Program token."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # vppTokenState enum type

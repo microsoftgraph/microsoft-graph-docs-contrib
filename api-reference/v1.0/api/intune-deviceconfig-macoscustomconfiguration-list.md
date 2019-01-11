@@ -2,6 +2,7 @@
 title: "List macOSCustomConfigurations"
 description: "List properties and relationships of the macOSCustomConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List macOSCustomConfigurations

@@ -2,6 +2,7 @@
 title: "Delete importedAppleDeviceIdentity"
 description: "Deletes a importedAppleDeviceIdentity."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete importedAppleDeviceIdentity

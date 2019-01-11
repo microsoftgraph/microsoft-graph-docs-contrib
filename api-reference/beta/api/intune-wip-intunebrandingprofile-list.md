@@ -2,6 +2,7 @@
 title: "List intuneBrandingProfiles"
 description: "List properties and relationships of the intuneBrandingProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List intuneBrandingProfiles

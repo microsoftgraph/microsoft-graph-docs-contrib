@@ -2,6 +2,7 @@
 title: "mobileLobApp resource type"
 description: "An abstract base class containing properties for all mobile line of business apps."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mobileLobApp resource type

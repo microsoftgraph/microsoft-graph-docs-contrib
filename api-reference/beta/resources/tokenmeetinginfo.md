@@ -2,6 +2,7 @@
 title: "tokenMeetingInfo resource type"
 description: "The tokenMeetingInfo type."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # tokenMeetingInfo resource type

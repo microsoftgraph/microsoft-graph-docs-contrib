@@ -2,6 +2,7 @@
 title: "TableRow: Range"
 description: "Returns the range object associated with the entire row."
 author: "lumine2008"
+localization_priority: Normal
 ---
 
 # TableRow: Range

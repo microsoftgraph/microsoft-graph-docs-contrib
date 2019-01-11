@@ -2,6 +2,7 @@
 title: "Get importedDeviceIdentity"
 description: "Read properties and relationships of the importedDeviceIdentity object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get importedDeviceIdentity

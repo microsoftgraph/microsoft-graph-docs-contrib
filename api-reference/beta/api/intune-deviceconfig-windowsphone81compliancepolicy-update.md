@@ -2,6 +2,7 @@
 title: "Update windowsPhone81CompliancePolicy"
 description: "Update the properties of a windowsPhone81CompliancePolicy object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Update windowsPhone81CompliancePolicy

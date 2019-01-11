@@ -1,6 +1,7 @@
 ---
 title: "Working with files in Microsoft Graph"
 description: "You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries."
+localization_priority: Priority
 ---
 
 # Working with files in Microsoft Graph

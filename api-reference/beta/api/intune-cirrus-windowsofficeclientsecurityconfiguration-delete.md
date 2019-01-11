@@ -2,6 +2,7 @@
 title: "Delete windowsOfficeClientSecurityConfiguration"
 description: "Deletes a security policy windowsOfficeClientSecurityConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete windowsOfficeClientSecurityConfiguration

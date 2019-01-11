@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Upload small files
+localization_priority: Priority
 ---
 # Upload or replace the contents of a DriveItem
 

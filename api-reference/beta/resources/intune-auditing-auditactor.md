@@ -2,6 +2,7 @@
 title: "auditActor resource type"
 description: "A class containing the properties for Audit Actor."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # auditActor resource type

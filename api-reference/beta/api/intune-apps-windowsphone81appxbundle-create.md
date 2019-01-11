@@ -2,6 +2,7 @@
 title: "Create windowsPhone81AppXBundle"
 description: "Create a new windowsPhone81AppXBundle object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create windowsPhone81AppXBundle

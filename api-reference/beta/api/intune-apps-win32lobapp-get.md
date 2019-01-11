@@ -2,6 +2,7 @@
 title: "Get win32LobApp"
 description: "Read properties and relationships of the win32LobApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get win32LobApp

@@ -1,6 +1,7 @@
 ---
 title: "Permissions"
 description: "Remove the app from your organization's app catalog (the tenant app catalog). "
+localization_priority: Normal
 ---
 
 # Remove an app from your organization's app catalog

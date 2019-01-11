@@ -2,6 +2,7 @@
 title: "chassisType enum type"
 description: "Chassis type."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # chassisType enum type

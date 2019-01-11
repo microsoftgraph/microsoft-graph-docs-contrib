@@ -2,6 +2,7 @@
 title: "meetingParticipants resource type"
 description: "Participants in a meeting."
 author: "VinodRavichandran"
+localization_priority: Normal
 ---
 
 # meetingParticipants resource type

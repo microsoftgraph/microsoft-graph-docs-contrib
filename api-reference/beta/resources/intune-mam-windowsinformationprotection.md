@@ -2,6 +2,7 @@
 title: "windowsInformationProtection resource type"
 description: "Policy for Windows information protection to configure detailed management settings"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsInformationProtection resource type

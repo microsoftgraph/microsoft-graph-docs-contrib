@@ -2,6 +2,7 @@
 title: "Delete iosEducationDeviceConfiguration"
 description: "Deletes a iosEducationDeviceConfiguration."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete iosEducationDeviceConfiguration

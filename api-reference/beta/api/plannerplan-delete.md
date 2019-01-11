@@ -1,6 +1,7 @@
 ---
 title: "Delete plannerPlan"
 description: "Delete **plannerPlan**."
+localization_priority: Normal
 ---
 
 # Delete plannerPlan

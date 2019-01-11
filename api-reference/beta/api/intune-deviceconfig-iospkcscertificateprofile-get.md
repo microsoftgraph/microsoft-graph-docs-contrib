@@ -2,6 +2,7 @@
 title: "Get iosPkcsCertificateProfile"
 description: "Read properties and relationships of the iosPkcsCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get iosPkcsCertificateProfile

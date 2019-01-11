@@ -2,6 +2,7 @@
 title: "Create networkIPv6ConfigurationManagementCondition"
 description: "Create a new networkIPv6ConfigurationManagementCondition object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create networkIPv6ConfigurationManagementCondition

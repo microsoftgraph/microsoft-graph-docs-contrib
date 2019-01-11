@@ -2,6 +2,7 @@
 title: "ratingIrelandMoviesType enum type"
 description: "Movies rating labels in Ireland"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # ratingIrelandMoviesType enum type

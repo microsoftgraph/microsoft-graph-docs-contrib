@@ -2,6 +2,7 @@
 title: "Get mobileLobApp"
 description: "Read properties and relationships of the mobileLobApp object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get mobileLobApp

@@ -2,6 +2,7 @@
 title: "windowsUpdateScheduledInstall resource type"
 description: "Not yet documented"
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # windowsUpdateScheduledInstall resource type

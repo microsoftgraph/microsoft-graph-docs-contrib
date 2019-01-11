@@ -2,6 +2,7 @@
 title: "Get iosEasEmailProfileConfiguration"
 description: "Read properties and relationships of the iosEasEmailProfileConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Get iosEasEmailProfileConfiguration

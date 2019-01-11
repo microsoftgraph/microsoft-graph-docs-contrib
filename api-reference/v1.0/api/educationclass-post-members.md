@@ -2,6 +2,7 @@
 title: "Add a student"
 description: "Add a member to a class."
 author: "mmast-msft"
+localization_priority: Normal
 ---
 
 # Add a student

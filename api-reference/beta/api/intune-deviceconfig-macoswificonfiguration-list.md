@@ -2,6 +2,7 @@
 title: "List macOSWiFiConfigurations"
 description: "List properties and relationships of the macOSWiFiConfiguration objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List macOSWiFiConfigurations

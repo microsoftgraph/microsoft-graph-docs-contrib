@@ -2,6 +2,7 @@
 title: "List scopedRoleMembers"
 description: "Retrieve a list of scopedRoleMembership resources."
 author: "lleonard-msft"
+localization_priority: Normal
 ---
 
 # List scopedRoleMembers

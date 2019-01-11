@@ -2,6 +2,7 @@
 title: "Create Application"
 description: "Use this API to create a new application."
 author: "lleonard-msft"
+localization_priority: Priority
 ---
 
 # Create Application

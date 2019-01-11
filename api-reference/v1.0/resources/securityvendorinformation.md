@@ -1,6 +1,7 @@
 ---
 title: "securityVendorInformation resource type"
 description: " subProvider=AppLocker)."
+localization_priority: Normal
 ---
 
 # securityVendorInformation resource type

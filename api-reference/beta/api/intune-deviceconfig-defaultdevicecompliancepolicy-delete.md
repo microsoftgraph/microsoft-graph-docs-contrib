@@ -2,6 +2,7 @@
 title: "Delete defaultDeviceCompliancePolicy"
 description: "Deletes a defaultDeviceCompliancePolicy."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Delete defaultDeviceCompliancePolicy

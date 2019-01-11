@@ -2,6 +2,7 @@
 title: "webBrowserCookieSettings enum type"
 description: "Web Browser Cookie Settings."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # webBrowserCookieSettings enum type

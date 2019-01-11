@@ -2,6 +2,7 @@
 title: "List windows10PkcsCertificateProfiles"
 description: "List properties and relationships of the windows10PkcsCertificateProfile objects."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # List windows10PkcsCertificateProfiles

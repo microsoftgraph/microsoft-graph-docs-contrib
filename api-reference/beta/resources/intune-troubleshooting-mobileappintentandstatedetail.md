@@ -2,6 +2,7 @@
 title: "mobileAppIntentAndStateDetail resource type"
 description: "Mobile App Intent and Install State for a given device."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # mobileAppIntentAndStateDetail resource type

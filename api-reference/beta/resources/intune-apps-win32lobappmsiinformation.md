@@ -2,6 +2,7 @@
 title: "win32LobAppMsiInformation resource type"
 description: "Contains MSI app properties for a Win32 App."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # win32LobAppMsiInformation resource type

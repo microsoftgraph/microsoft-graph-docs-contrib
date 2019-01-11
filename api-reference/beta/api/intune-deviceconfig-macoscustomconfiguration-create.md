@@ -2,6 +2,7 @@
 title: "Create macOSCustomConfiguration"
 description: "Create a new macOSCustomConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # Create macOSCustomConfiguration

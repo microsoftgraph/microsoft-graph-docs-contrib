@@ -2,6 +2,7 @@
 title: "managedAppRemediationAction enum type"
 description: "An admin initiated action to be applied on a managed app."
 author: "tfitzmac"
+localization_priority: Normal
 ---
 
 # managedAppRemediationAction enum type
