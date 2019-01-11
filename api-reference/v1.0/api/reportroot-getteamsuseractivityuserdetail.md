@@ -2,6 +2,7 @@
 title: "reportRoot: getTeamsUserActivityUserDetail"
 description: "Get details about Microsoft Teams user activity by user."
 localization_priority: Priority
+ms.prod: "reports"
 ---
 
 # reportRoot: getTeamsUserActivityUserDetail

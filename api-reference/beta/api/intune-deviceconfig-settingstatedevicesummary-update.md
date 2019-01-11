@@ -3,6 +3,7 @@ title: "Update settingStateDeviceSummary"
 description: "Update the properties of a settingStateDeviceSummary object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update settingStateDeviceSummary

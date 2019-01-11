@@ -2,6 +2,8 @@
 title: "Create page"
 description: "Create a new page in the specified section."
 localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # Create page

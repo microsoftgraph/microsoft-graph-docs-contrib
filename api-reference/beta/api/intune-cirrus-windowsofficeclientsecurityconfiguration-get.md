@@ -3,6 +3,7 @@ title: "Get windowsOfficeClientSecurityConfiguration"
 description: "Get a specific security policy windowsOfficeClientSecurityConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsOfficeClientSecurityConfiguration

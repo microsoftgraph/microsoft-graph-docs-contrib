@@ -3,6 +3,7 @@ title: "Get outlookTaskGroup"
 description: "Get the properties and relationships of the specified Outlook task group."
 author: "angelgolfer-ms"
 localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Get outlookTaskGroup

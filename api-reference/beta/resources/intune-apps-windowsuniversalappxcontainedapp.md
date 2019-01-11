@@ -3,6 +3,7 @@ title: "windowsUniversalAppXContainedApp resource type"
 description: "A class that represents a contained app of a WindowsUniversalAppX app."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsUniversalAppXContainedApp resource type

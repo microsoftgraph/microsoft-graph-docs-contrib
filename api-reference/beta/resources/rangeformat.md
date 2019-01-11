@@ -2,6 +2,8 @@
 title: "RangeFormat resource type"
 description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."
 localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
 ---
 
 # RangeFormat resource type

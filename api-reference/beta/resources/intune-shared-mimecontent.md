@@ -3,6 +3,7 @@ title: "mimeContent resource type"
 description: "Contains properties for a generic mime content."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # mimeContent resource type

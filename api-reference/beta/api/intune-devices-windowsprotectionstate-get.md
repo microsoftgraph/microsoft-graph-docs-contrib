@@ -3,6 +3,7 @@ title: "Get windowsProtectionState"
 description: "Read properties and relationships of the windowsProtectionState object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsProtectionState

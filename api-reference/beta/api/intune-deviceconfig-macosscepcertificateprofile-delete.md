@@ -3,6 +3,7 @@ title: "Delete macOSScepCertificateProfile"
 description: "Deletes a macOSScepCertificateProfile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete macOSScepCertificateProfile

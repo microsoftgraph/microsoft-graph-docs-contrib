@@ -3,6 +3,7 @@ title: "renewUpload action"
 description: "Renews the SAS URI for an application file upload."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # renewUpload action

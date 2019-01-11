@@ -3,6 +3,7 @@ title: "List windowsAssignedAccessProfiles"
 description: "List properties and relationships of the windowsAssignedAccessProfile objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsAssignedAccessProfiles

@@ -3,6 +3,7 @@ title: "Create windows81VpnConfiguration"
 description: "Create a new windows81VpnConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windows81VpnConfiguration

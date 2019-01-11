@@ -3,6 +3,7 @@ title: "Delete audio routing group"
 description: "Delete the specified audio routing group."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Delete audio routing group

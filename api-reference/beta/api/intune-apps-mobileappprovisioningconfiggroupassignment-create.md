@@ -3,6 +3,7 @@ title: "Create mobileAppProvisioningConfigGroupAssignment"
 description: "Create a new mobileAppProvisioningConfigGroupAssignment object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create mobileAppProvisioningConfigGroupAssignment

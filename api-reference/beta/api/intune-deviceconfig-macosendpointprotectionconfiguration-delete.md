@@ -3,6 +3,7 @@ title: "Delete macOSEndpointProtectionConfiguration"
 description: "Deletes a macOSEndpointProtectionConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete macOSEndpointProtectionConfiguration

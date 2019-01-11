@@ -3,6 +3,7 @@ title: "List androidCompliancePolicies"
 description: "List properties and relationships of the androidCompliancePolicy objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidCompliancePolicies

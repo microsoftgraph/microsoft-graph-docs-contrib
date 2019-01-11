@@ -3,6 +3,7 @@ title: "toneInfo resource type"
 description: "A single DTMF event."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # toneInfo resource type

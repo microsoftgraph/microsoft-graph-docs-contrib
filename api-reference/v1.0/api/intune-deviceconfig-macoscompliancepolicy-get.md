@@ -3,6 +3,7 @@ title: "Get macOSCompliancePolicy"
 description: "Read properties and relationships of the macOSCompliancePolicy object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get macOSCompliancePolicy

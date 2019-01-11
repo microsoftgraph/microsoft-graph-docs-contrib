@@ -4,6 +4,7 @@ ms.author: rahmit
 ms.date: 03/15/2018
 title: List the pages in a site
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # List the pages in the site pages list of a site
 

@@ -3,6 +3,7 @@ title: "Create enrollmentProfile"
 description: "Create a new enrollmentProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create enrollmentProfile

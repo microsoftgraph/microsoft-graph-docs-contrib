@@ -2,6 +2,8 @@
 title: "List organization"
 description: "Retrieve a list of organization objects."
 localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List organization

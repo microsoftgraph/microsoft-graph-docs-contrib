@@ -3,6 +3,7 @@ title: "edgeSearchEngineCustom resource type"
 description: "Allows IT admins to set a custom default search engine for MDM-Controlled devices."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # edgeSearchEngineCustom resource type

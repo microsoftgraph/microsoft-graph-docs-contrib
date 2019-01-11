@@ -3,6 +3,7 @@ title: "Delete androidForWorkMobileAppConfiguration"
 description: "Deletes a androidForWorkMobileAppConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidForWorkMobileAppConfiguration

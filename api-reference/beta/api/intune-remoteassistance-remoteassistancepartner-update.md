@@ -3,6 +3,7 @@ title: "Update remoteAssistancePartner"
 description: "Update the properties of a remoteAssistancePartner object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update remoteAssistancePartner

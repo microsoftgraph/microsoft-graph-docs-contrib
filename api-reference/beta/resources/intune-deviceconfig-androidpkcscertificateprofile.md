@@ -3,6 +3,7 @@ title: "androidPkcsCertificateProfile resource type"
 description: "Android PKCS certificate profile"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidPkcsCertificateProfile resource type

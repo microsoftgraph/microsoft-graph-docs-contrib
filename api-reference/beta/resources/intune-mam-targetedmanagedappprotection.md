@@ -3,6 +3,7 @@ title: "targetedManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # targetedManagedAppProtection resource type

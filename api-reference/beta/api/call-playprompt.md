@@ -3,6 +3,7 @@ title: "call: playPrompt"
 description: "Play a prompt in the call."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # call: playPrompt

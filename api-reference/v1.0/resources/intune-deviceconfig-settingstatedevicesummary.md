@@ -3,6 +3,7 @@ title: "settingStateDeviceSummary resource type"
 description: "Device Compilance Policy and Configuration for a Setting State summary"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # settingStateDeviceSummary resource type

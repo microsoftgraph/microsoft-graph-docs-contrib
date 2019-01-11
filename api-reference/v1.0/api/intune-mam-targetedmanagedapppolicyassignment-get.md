@@ -3,6 +3,7 @@ title: "Get targetedManagedAppPolicyAssignment"
 description: "Read properties and relationships of the targetedManagedAppPolicyAssignment object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get targetedManagedAppPolicyAssignment

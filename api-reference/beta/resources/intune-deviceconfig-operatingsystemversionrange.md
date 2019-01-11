@@ -3,6 +3,7 @@ title: "operatingSystemVersionRange resource type"
 description: "Operating System version range."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # operatingSystemVersionRange resource type

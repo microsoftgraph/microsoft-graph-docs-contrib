@@ -3,6 +3,7 @@ title: "List groupLifecyclePolicies"
 description: "List all the groupLifecyclePolicies."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # List groupLifecyclePolicies

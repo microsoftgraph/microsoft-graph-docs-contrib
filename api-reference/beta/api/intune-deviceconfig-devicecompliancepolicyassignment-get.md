@@ -3,6 +3,7 @@ title: "Get deviceCompliancePolicyAssignment"
 description: "Read properties and relationships of the deviceCompliancePolicyAssignment object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceCompliancePolicyAssignment

@@ -3,6 +3,7 @@ title: "Update windowsWifiConfiguration"
 description: "Update the properties of a windowsWifiConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsWifiConfiguration

@@ -2,6 +2,8 @@
 title: "Delete accessReview"
 description: "In the Azure AD access reviews feature, delete an accessReview object."
 localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete accessReview

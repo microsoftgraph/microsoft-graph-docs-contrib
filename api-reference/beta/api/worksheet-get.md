@@ -3,6 +3,7 @@ title: "Get Worksheet"
 description: "Retrieve the properties and relationships of worksheet object."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Get Worksheet

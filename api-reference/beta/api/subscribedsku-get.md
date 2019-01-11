@@ -2,6 +2,8 @@
 title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
 localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get subscribedSku

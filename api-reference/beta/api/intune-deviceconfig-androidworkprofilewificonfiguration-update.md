@@ -3,6 +3,7 @@ title: "Update androidWorkProfileWiFiConfiguration"
 description: "Update the properties of a androidWorkProfileWiFiConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidWorkProfileWiFiConfiguration

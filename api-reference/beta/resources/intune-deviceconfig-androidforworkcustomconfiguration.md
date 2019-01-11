@@ -3,6 +3,7 @@ title: "androidForWorkCustomConfiguration resource type"
 description: "Android For Work custom configuration"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidForWorkCustomConfiguration resource type

@@ -3,6 +3,7 @@ title: "Create androidForWorkGmailEasConfiguration"
 description: "Create a new androidForWorkGmailEasConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidForWorkGmailEasConfiguration

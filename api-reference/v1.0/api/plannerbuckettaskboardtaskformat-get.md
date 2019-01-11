@@ -2,6 +2,8 @@
 title: "Get plannerBucketTaskBoardTaskFormat"
 description: "Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object."
 localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Get plannerBucketTaskBoardTaskFormat

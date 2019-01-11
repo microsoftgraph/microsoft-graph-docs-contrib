@@ -3,6 +3,7 @@ title: "managedAppPolicyDeploymentSummaryPerApp resource type"
 description: "Represents policy deployment summary per app."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedAppPolicyDeploymentSummaryPerApp resource type

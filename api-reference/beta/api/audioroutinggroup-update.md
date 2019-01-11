@@ -3,6 +3,7 @@ title: "Update audio routing group"
 description: "Modify sources and receivers of an audioRoutingGroup."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Update audio routing group

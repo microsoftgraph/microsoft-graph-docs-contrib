@@ -2,6 +2,7 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive notifications when data on the Microsoft Graph changes."
 localization_priority: Priority
+author: "piotrci"
 ---
 
 # Create subscription

@@ -3,6 +3,7 @@ title: "Update message"
 description: "Update the properties of message object."
 author: "angelgolfer-ms"
 localization_priority: Priority
+ms.prod: "outlook"
 ---
 
 # Update message

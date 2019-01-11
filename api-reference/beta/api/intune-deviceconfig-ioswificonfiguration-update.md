@@ -3,6 +3,7 @@ title: "Update iosWiFiConfiguration"
 description: "Update the properties of a iosWiFiConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update iosWiFiConfiguration

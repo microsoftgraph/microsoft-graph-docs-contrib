@@ -3,6 +3,7 @@ title: "Update deviceAndAppManagementRoleAssignment"
 description: "Update the properties of a deviceAndAppManagementRoleAssignment object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceAndAppManagementRoleAssignment

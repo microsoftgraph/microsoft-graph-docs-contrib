@@ -3,6 +3,7 @@ title: "ratingFranceTelevisionType enum type"
 description: "TV content rating labels in France"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # ratingFranceTelevisionType enum type

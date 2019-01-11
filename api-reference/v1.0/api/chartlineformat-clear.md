@@ -3,6 +3,7 @@ title: "ChartLineFormat: clear"
 description: "Clear the line format of a chart element."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartLineFormat: clear

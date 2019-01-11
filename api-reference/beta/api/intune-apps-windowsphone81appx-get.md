@@ -3,6 +3,7 @@ title: "Get windowsPhone81AppX"
 description: "Read properties and relationships of the windowsPhone81AppX object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsPhone81AppX

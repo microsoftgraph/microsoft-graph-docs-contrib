@@ -3,6 +3,7 @@ title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List win32LobApps

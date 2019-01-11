@@ -1094,6 +1094,7 @@ To read the group memberships of a user (`memberOf`), the app must have either [
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+ms.prod: "microsoft-identity-platform"
 ---
 ## User Activity permissions
 

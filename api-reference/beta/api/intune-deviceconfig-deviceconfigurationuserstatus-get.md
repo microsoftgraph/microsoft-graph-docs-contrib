@@ -3,6 +3,7 @@ title: "Get deviceConfigurationUserStatus"
 description: "Read properties and relationships of the deviceConfigurationUserStatus object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceConfigurationUserStatus

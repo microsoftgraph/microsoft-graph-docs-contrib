@@ -3,6 +3,7 @@ title: "iosCertificateProfile resource type"
 description: "Device Configuration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosCertificateProfile resource type

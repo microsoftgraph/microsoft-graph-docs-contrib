@@ -3,6 +3,7 @@ title: "List tasks"
 description: "Get all the Outlook tasks in the specified folder."
 author: "angelgolfer-ms"
 localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # List tasks

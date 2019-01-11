@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Get a previous version of a list item - SharePoint API
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get a ListItemVersion resource (preview)
 

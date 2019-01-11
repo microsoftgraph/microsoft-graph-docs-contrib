@@ -3,6 +3,7 @@ title: "vpnServer resource type"
 description: "VPN Server definition."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # vpnServer resource type

@@ -3,6 +3,7 @@ title: "List windowsUpdateForBusinessConfigurations"
 description: "List properties and relationships of the windowsUpdateForBusinessConfiguration objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsUpdateForBusinessConfigurations

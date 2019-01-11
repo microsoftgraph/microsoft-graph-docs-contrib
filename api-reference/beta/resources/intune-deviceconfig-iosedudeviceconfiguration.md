@@ -3,6 +3,7 @@ title: "iosEduDeviceConfiguration resource type"
 description: "iOS Education device configuration"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosEduDeviceConfiguration resource type

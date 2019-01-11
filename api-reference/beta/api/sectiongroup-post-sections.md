@@ -2,6 +2,8 @@
 title: "Create section"
 description: "Create a new section in the specified section group."
 localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # Create section

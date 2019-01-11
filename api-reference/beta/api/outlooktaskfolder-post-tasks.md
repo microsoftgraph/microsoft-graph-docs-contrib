@@ -3,6 +3,7 @@ title: "Create outlookTask"
 description: "Create an Outlook task in the specified task folder."
 author: "angelgolfer-ms"
 localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Create outlookTask

@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Update a file or folder
 localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Update DriveItem properties
 

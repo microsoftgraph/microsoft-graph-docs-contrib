@@ -3,6 +3,7 @@ title: "Update educationschool properties"
 description: "Update the properties of a school object."
 author: "mmast-msft"
 localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Update educationschool properties

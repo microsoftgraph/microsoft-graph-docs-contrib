@@ -2,6 +2,8 @@
 title: "List plans"
 description: "Retrieve a list of **plannerplan** objects shared with a user object."
 localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # List plans

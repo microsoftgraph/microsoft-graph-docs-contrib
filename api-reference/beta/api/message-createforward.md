@@ -3,6 +3,7 @@ title: "message: createForward"
 description: "Create a draft forward message to include a comment or update any message properties  "
 author: "angelgolfer-ms"
 localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # message: createForward
