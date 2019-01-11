@@ -3,6 +3,7 @@ title: "Update androidWorkProfileNineWorkEasConfiguration"
 description: "Update the properties of a androidWorkProfileNineWorkEasConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidWorkProfileNineWorkEasConfiguration

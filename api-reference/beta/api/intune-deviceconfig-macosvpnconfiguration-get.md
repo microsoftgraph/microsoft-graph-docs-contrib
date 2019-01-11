@@ -3,6 +3,7 @@ title: "Get macOSVpnConfiguration"
 description: "Read properties and relationships of the macOSVpnConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get macOSVpnConfiguration

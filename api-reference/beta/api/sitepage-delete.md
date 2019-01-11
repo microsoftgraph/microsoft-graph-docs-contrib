@@ -4,6 +4,7 @@ ms.author: rahmit
 ms.date: 05/07/2018
 title: Delete a page from a SharePoint site
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Delete page from the site pages list of a site
 

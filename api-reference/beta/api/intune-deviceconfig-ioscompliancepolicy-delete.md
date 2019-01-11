@@ -3,6 +3,7 @@ title: "Delete iosCompliancePolicy"
 description: "Deletes a iosCompliancePolicy."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosCompliancePolicy

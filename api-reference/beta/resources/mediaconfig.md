@@ -3,6 +3,7 @@ title: "mediaConfig resource type"
 description: "The media configuration used to connect to a call."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # mediaConfig resource type

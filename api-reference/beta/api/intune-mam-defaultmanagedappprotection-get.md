@@ -3,6 +3,7 @@ title: "Get defaultManagedAppProtection"
 description: "Read properties and relationships of the defaultManagedAppProtection object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get defaultManagedAppProtection

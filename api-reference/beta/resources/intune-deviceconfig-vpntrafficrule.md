@@ -3,6 +3,7 @@ title: "vpnTrafficRule resource type"
 description: "VPN Traffic Rule definition."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # vpnTrafficRule resource type

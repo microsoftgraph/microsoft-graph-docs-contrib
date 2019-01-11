@@ -3,6 +3,7 @@ title: "Create importedWindowsAutopilotDeviceIdentity"
 description: "Create a new importedWindowsAutopilotDeviceIdentity object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create importedWindowsAutopilotDeviceIdentity

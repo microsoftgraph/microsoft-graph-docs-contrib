@@ -3,6 +3,7 @@ title: "Get windowsAppX"
 description: "Read properties and relationships of the windowsAppX object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsAppX

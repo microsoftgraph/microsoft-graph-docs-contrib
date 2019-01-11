@@ -3,6 +3,7 @@ title: "Get managedApp"
 description: "Read properties and relationships of the managedApp object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedApp

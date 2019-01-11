@@ -3,6 +3,7 @@ title: "Get androidForWorkImportedPFXCertificateProfile"
 description: "Read properties and relationships of the androidForWorkImportedPFXCertificateProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidForWorkImportedPFXCertificateProfile

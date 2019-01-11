@@ -3,6 +3,7 @@ title: "List managementConditions"
 description: "List properties and relationships of the managementCondition objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managementConditions

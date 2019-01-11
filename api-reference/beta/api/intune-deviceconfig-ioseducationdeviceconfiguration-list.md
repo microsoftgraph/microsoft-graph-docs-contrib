@@ -3,6 +3,7 @@ title: "List iosEducationDeviceConfigurations"
 description: "List properties and relationships of the iosEducationDeviceConfiguration objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosEducationDeviceConfigurations

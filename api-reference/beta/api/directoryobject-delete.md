@@ -3,6 +3,7 @@ title: "Delete directoryObject"
 description: "Delete directoryObject."
 author: "lleonard-msft"
 localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete directoryObject

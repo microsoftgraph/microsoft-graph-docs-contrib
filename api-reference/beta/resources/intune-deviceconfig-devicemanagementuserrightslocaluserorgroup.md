@@ -3,6 +3,7 @@ title: "deviceManagementUserRightsLocalUserOrGroup resource type"
 description: "Represents information for a local user or group used for user rights setting."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceManagementUserRightsLocalUserOrGroup resource type

@@ -2,6 +2,8 @@
 title: "report resource type"
 description: "A report that varies according to the workflow, either device configuration profile history or enrollment failures."
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # report resource type

@@ -3,6 +3,7 @@ title: "Update androidWorkProfileScepCertificateProfile"
 description: "Update the properties of a androidWorkProfileScepCertificateProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidWorkProfileScepCertificateProfile

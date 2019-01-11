@@ -3,6 +3,7 @@ title: "Update mobileAppInstallSummary"
 description: "Update the properties of a mobileAppInstallSummary object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update mobileAppInstallSummary

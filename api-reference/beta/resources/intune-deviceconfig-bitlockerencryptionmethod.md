@@ -3,6 +3,7 @@ title: "bitLockerEncryptionMethod enum type"
 description: "BitLockerEncryptionMethod types"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # bitLockerEncryptionMethod enum type

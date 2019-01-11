@@ -3,6 +3,7 @@ title: "enableLostMode action"
 description: "Enable lost mode"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # enableLostMode action

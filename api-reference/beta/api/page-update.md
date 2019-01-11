@@ -2,6 +2,8 @@
 title: "Update page"
 description: "Update the content of a OneNote page."
 localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # Update page

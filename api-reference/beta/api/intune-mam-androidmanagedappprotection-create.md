@@ -3,6 +3,7 @@ title: "Create androidManagedAppProtection"
 description: "Create a new androidManagedAppProtection object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidManagedAppProtection

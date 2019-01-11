@@ -3,6 +3,7 @@ title: "iosBookmark resource type"
 description: "iOS URL bookmark"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosBookmark resource type

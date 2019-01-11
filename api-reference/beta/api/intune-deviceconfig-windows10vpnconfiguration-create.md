@@ -3,6 +3,7 @@ title: "Create windows10VpnConfiguration"
 description: "Create a new windows10VpnConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windows10VpnConfiguration

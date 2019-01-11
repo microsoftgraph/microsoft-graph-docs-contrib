@@ -4,6 +4,7 @@ ms.author: rahmit
 ms.date: 09/10/2018
 title: Publish Page
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # sitePage: publish
 

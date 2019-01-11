@@ -3,6 +3,7 @@ title: "Get managedIOSLobApp"
 description: "Read properties and relationships of the managedIOSLobApp object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedIOSLobApp

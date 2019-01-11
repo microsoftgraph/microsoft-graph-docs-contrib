@@ -3,6 +3,7 @@ title: "List iosVppAppAssignedDeviceLicenses"
 description: "List properties and relationships of the iosVppAppAssignedDeviceLicense objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosVppAppAssignedDeviceLicenses

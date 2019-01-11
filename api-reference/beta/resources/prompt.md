@@ -3,6 +3,7 @@ title: "prompt resource type"
 description: "Prompt action base type."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # prompt resource type

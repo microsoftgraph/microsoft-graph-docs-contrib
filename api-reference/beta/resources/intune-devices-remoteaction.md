@@ -3,6 +3,7 @@ title: "remoteAction enum type"
 description: "Remote actions Intune supports."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # remoteAction enum type

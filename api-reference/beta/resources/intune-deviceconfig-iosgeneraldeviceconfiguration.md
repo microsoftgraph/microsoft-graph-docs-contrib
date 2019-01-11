@@ -2,6 +2,8 @@
 title: "iosGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the iosGeneralDeviceConfiguration resource."
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # iosGeneralDeviceConfiguration resource type

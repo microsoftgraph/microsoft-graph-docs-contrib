@@ -3,6 +3,7 @@ title: "Delete androidWorkProfileNineWorkEasConfiguration"
 description: "Deletes a androidWorkProfileNineWorkEasConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidWorkProfileNineWorkEasConfiguration

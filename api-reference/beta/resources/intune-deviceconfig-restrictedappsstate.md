@@ -3,6 +3,7 @@ title: "restrictedAppsState enum type"
 description: "Restricted apps state"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # restrictedAppsState enum type

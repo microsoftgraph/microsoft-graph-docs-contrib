@@ -3,6 +3,7 @@ title: "deleteUserFromSharedAppleDeviceActionResult resource type"
 description: "Delete user from shared apple device action result"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deleteUserFromSharedAppleDeviceActionResult resource type

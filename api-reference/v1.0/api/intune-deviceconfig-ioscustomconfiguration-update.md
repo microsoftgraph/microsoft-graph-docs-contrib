@@ -3,6 +3,7 @@ title: "Update iosCustomConfiguration"
 description: "Update the properties of a iosCustomConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update iosCustomConfiguration

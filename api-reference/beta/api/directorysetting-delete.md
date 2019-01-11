@@ -3,6 +3,7 @@ title: "Delete a directory setting"
 description: "Delete a directory setting."
 author: "lleonard-msft"
 localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete a directory setting

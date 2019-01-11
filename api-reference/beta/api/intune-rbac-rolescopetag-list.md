@@ -3,6 +3,7 @@ title: "List roleScopeTags"
 description: "List properties and relationships of the roleScopeTag objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List roleScopeTags

@@ -3,6 +3,7 @@ title: "Update deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update deviceEnrollmentWindowsHelloForBusinessConfiguration

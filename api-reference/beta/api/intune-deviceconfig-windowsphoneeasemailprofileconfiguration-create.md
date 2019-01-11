@@ -3,6 +3,7 @@ title: "Create windowsPhoneEASEmailProfileConfiguration"
 description: "Create a new windowsPhoneEASEmailProfileConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsPhoneEASEmailProfileConfiguration

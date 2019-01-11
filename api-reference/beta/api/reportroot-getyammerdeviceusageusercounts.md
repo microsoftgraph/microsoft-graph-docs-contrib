@@ -2,6 +2,7 @@
 title: "reportRoot: getYammerDeviceUsageUserCounts"
 description: "Get the number of daily users by device type."
 localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getYammerDeviceUsageUserCounts

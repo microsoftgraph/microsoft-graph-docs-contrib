@@ -3,6 +3,7 @@ title: "Delete windows10PFXImportCertificateProfile"
 description: "Deletes a windows10PFXImportCertificateProfile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windows10PFXImportCertificateProfile

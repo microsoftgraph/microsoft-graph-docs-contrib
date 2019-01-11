@@ -3,6 +3,7 @@ title: "Worksheet: Range"
 description: "Gets the range object specified by the address or name."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Worksheet: Range

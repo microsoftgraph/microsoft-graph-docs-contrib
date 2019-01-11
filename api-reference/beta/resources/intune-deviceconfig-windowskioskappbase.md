@@ -3,6 +3,7 @@ title: "windowsKioskAppBase resource type"
 description: "The base class for a type of apps"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsKioskAppBase resource type

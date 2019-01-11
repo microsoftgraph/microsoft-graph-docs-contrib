@@ -3,6 +3,7 @@ title: "Get deviceConfigurationConflictSummary"
 description: "Read properties and relationships of the deviceConfigurationConflictSummary object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceConfigurationConflictSummary

@@ -3,6 +3,7 @@ title: "Delete enterpriseCodeSigningCertificate"
 description: "Deletes a enterpriseCodeSigningCertificate."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete enterpriseCodeSigningCertificate

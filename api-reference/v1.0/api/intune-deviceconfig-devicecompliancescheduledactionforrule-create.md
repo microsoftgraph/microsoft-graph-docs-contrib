@@ -3,6 +3,7 @@ title: "Create deviceComplianceScheduledActionForRule"
 description: "Create a new deviceComplianceScheduledActionForRule object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceComplianceScheduledActionForRule

@@ -3,6 +3,7 @@ title: "Members"
 description: "Describes the visibility of a team. "
 author: "nkramer"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # teamVisibilityType enum type

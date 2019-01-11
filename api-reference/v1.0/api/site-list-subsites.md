@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: List the subsites for a SharePoint site
 localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Enumerate subsites
 

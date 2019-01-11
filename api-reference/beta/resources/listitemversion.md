@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/17/2017
 title: ListItemVersion
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # ListItemVersion resource type
 

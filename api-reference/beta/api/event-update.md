@@ -3,6 +3,7 @@ title: "Update event"
 description: "Update the properties of the event object."
 author: "angelgolfer-ms"
 localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Update event

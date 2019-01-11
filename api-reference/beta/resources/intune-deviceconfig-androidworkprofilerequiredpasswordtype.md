@@ -3,6 +3,7 @@ title: "androidWorkProfileRequiredPasswordType enum type"
 description: "Android Work Profile required password type."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidWorkProfileRequiredPasswordType enum type

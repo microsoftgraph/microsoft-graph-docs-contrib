@@ -3,6 +3,7 @@ title: "List androidPkcsCertificateProfiles"
 description: "List properties and relationships of the androidPkcsCertificateProfile objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidPkcsCertificateProfiles

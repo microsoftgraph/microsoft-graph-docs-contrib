@@ -3,6 +3,7 @@ title: "Update androidCompliancePolicy"
 description: "Update the properties of a androidCompliancePolicy object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidCompliancePolicy

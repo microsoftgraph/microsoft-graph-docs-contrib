@@ -3,6 +3,7 @@ title: "androidForWorkTrustedRootCertificate resource type"
 description: "Android For Work Trusted Root Certificate configuration profile"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidForWorkTrustedRootCertificate resource type

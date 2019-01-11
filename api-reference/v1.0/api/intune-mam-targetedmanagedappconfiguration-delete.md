@@ -3,6 +3,7 @@ title: "Delete targetedManagedAppConfiguration"
 description: "Deletes a targetedManagedAppConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete targetedManagedAppConfiguration

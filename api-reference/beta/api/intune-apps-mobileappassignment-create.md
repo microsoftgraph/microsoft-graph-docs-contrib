@@ -3,6 +3,7 @@ title: "Create mobileAppAssignment"
 description: "Create a new mobileAppAssignment object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create mobileAppAssignment

@@ -3,6 +3,7 @@ title: "Delete androidVpnConfiguration"
 description: "Deletes a androidVpnConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidVpnConfiguration

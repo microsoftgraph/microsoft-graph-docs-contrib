@@ -3,6 +3,7 @@ title: "Create importedAppleDeviceIdentityResult"
 description: "Create a new importedAppleDeviceIdentityResult object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create importedAppleDeviceIdentityResult

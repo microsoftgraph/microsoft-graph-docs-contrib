@@ -3,6 +3,7 @@ title: "Delete androidWorkProfileGeneralDeviceConfiguration"
 description: "Deletes a androidWorkProfileGeneralDeviceConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidWorkProfileGeneralDeviceConfiguration

@@ -3,6 +3,7 @@ title: "iosMobileAppIdentifier resource type"
 description: "The identifier for an iOS app."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosMobileAppIdentifier resource type

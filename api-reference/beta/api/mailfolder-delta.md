@@ -2,6 +2,8 @@
 title: "mailFolder: delta"
 description: "Get a set of mail folders that have been added, deleted, or removed from the user's mailbox."
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # mailFolder: delta

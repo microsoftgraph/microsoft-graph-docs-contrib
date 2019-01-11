@@ -3,6 +3,7 @@ title: "Enroll corporate-owned devices by using Intune"
 description: " (BYOD) scenario."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Enroll corporate-owned devices by using Intune

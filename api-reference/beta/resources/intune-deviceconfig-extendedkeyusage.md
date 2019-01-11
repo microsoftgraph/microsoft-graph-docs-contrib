@@ -3,6 +3,7 @@ title: "extendedKeyUsage resource type"
 description: "Custom Extended Key Usage definition"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # extendedKeyUsage resource type

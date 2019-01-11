@@ -3,6 +3,7 @@ title: "Delete androidForWorkEnterpriseWiFiConfiguration"
 description: "Deletes a androidForWorkEnterpriseWiFiConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidForWorkEnterpriseWiFiConfiguration

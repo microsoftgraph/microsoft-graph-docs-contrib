@@ -2,6 +2,8 @@
 title: "contact: delta"
 description: "Get a set of contacts that have been added, deleted, or updated in a specified folder."
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # contact: delta

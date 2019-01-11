@@ -3,6 +3,7 @@ title: "Delete windowsPhone81AppXBundle"
 description: "Deletes a windowsPhone81AppXBundle."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsPhone81AppXBundle

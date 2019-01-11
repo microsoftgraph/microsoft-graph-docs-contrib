@@ -3,6 +3,7 @@ title: "Get depOnboardingSetting"
 description: "Read properties and relationships of the depOnboardingSetting object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get depOnboardingSetting

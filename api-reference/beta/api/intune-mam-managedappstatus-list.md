@@ -3,6 +3,7 @@ title: "List managedAppStatuses"
 description: "List properties and relationships of the managedAppStatus objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedAppStatuses

@@ -3,6 +3,7 @@ title: "windowsInformationProtectionProxiedDomainCollection resource type"
 description: "Windows Information Protection Proxied Domain Collection"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsInformationProtectionProxiedDomainCollection resource type

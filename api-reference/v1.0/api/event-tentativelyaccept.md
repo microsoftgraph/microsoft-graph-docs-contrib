@@ -3,6 +3,7 @@ title: "event: tentativelyAccept"
 description: "Tentatively accept the specified event in a user calendar."
 author: "angelgolfer-ms"
 localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # event: tentativelyAccept

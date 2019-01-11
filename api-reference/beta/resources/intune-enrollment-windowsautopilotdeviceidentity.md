@@ -3,6 +3,7 @@ title: "windowsAutopilotDeviceIdentity resource type"
 description: "The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsAutopilotDeviceIdentity resource type

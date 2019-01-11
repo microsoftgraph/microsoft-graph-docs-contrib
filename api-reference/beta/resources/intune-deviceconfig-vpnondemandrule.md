@@ -3,6 +3,7 @@ title: "vpnOnDemandRule resource type"
 description: "VPN On-Demand Rule definition."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # vpnOnDemandRule resource type

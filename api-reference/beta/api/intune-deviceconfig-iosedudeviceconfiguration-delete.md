@@ -3,6 +3,7 @@ title: "Delete iosEduDeviceConfiguration"
 description: "Deletes a iosEduDeviceConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete iosEduDeviceConfiguration
