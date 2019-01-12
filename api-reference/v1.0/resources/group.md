@@ -80,12 +80,12 @@ This resource supports:
 |[List photos](../api/group-list-photos.md) |[profilePhoto](photo.md) collection| Get a collection of profile photos for the group.|
 |[List plannerPlans](../api/plannergroup-list-plans.md) |[plannerPlan](plannerplan.md) collection| Get Planner plans owned by the group.|
 |**User settings**| | |
-|[addFavorite](../api/group-addfavorite.md)|None|Add the group to the list of the current user's favorite groups. Supported for only Office 365 groups.|
-|[removeFavorite](../api/group-removefavorite.md)|None|Remove the group from the list of the current user's favorite groups. Supported for only Office 365 groups.|
+|[addFavorite](../api/group-addfavorite.md)|None|Add the group to the list of the signed-in user's favorite groups. Supported for only Office 365 groups.|
+|[removeFavorite](../api/group-removefavorite.md)|None|Remove the group from the list of the signed-in user's favorite groups. Supported for only Office 365 groups.|
 |[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administative units that this user is a direct member of, from the **memberOf** navigation property.|
-|[subscribeByMail](../api/group-subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the current user to receive email conversations. Supported for only Office 365 groups.|
-|[unsubscribeByMail](../api/group-unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the current user from receive email conversations. Supported for only Office 365 groups.|
-|[resetUnseenCount](../api/group-resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the current user has not seen since their last visit. Supported for only Office 365 groups.|
+|[subscribeByMail](../api/group-subscribebymail.md)|None|Set the isSubscribedByMail property to **true**. Enabling the signed-in user to receive email conversations. Supported for only Office 365 groups.|
+|[unsubscribeByMail](../api/group-unsubscribebymail.md)|None|Set the isSubscribedByMail property to **false**. Disabling the signed-in user from receive email conversations. Supported for only Office 365 groups.|
+|[resetUnseenCount](../api/group-resetunseencount.md)|None|Reset the unseenCount to 0 of all the posts that the signed-in user has not seen since their last visit. Supported for only Office 365 groups.|
 
 ## Properties
 > [!div class="mx-tdBreakAll"]
@@ -99,7 +99,7 @@ This resource supports:
 > |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.| Yes |
 > |groupTypes|String collection| Specifies the type of group to create. Possible values are `Unified` to create an Office 365 group, or `DynamicMembership` for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property. Supports $filter.| Yes |
 > |id|String|The unique identifier for the group. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.| Yes |
-> |isSubscribedByMail|Boolean|Default value is **true**. Indicates whether the current user is subscribed to receive email conversations.| No 
+> |isSubscribedByMail|Boolean|Default value is **true**. Indicates whether the signed-in user is subscribed to receive email conversations.| No 
 > |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". Read-only. Supports $filter.| Yes |
 > |mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.| Yes |
 > |mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter.| Yes |
@@ -111,7 +111,7 @@ This resource supports:
 > |proxyAddresses|String collection| The **any** operator is required for filter expressions on multi-valued properties. Read-only. Not nullable. Supports $filter. | Yes |
 > |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/group-renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.| Yes |
 > |securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter.| Yes |
-> |unseenCount|Int32|Count of conversations that have been delivered one or more new posts since the signed-in user's last visit to the group.| No 
+> |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group.| No 
 > |visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `private`, `public`, or `hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups.| Yes |
 
 ### Group visibility options

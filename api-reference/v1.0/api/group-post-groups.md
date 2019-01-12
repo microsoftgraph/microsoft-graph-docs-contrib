@@ -161,7 +161,7 @@ Content-Type: application/json
 ```
 
 #### Response 2
-The following is an example of a successful response. It includes only default properties. You can subsequenty get the **owners** navigation property of the group to verify details of the owner. 
+The following is an example of a successful response. It includes only default properties. You can subsequenty get the **owners** navigation property of the group to verify the details of the owner. 
 >**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
 <!-- {
   "blockType": "response",

@@ -25,7 +25,7 @@ GET /groups/{id}
 ```
 
 ## Optional query parameters
-You can use `select` to get specific group properties, including those that are not returned by default. See an [example](#request-2) below.
+You can use `$select` to get specific group properties, including those that are not returned by default. See an [example](#request-2) below.
 
 For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
@@ -98,7 +98,7 @@ Content-type: application/json
 ```
 
 #### Request 2
-The next example uses a `select` query option to get a few properties that are not returned by default. 
+The next example uses a `$select` query option to get a few properties that are not returned by default. 
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
