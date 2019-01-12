@@ -1,6 +1,7 @@
 ---
 title: "Update privilegedapproval"
 description: "Update the properties of privilegedapproval object."
+localization_priority: Normal
 ---
 
 # Update privilegedapproval
