@@ -8,7 +8,7 @@ List all the groups available in an organization, including but not limited to O
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. 
 
-To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `select` OData query option. See an [example](group-get.md#request-2).
+To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
