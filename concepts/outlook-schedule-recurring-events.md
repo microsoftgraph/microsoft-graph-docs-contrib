@@ -198,7 +198,7 @@ The relative yearly pattern causes an event to repeat on the same day of the wee
 | **index** | Optional | Specifies on which instance of the allowed days specified in **daysOfsWeek** the event occurs, counted from the first instance in the month. Possible values: `first`, `second`, `third`, `fourth`, and `last`. Default value: `first`. |
 | **month** | Required | Specifies in which month the event occurs. |
 | **interval** | Required | Specifies the number of years between each occurrence. |
-| **type** | Required | Must be set to `relativeMonthly`. |
+| **type** | Required | Must be set to `relativeYearly`. |
 
 #### Examples
 
