@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-UnFollow a [user's][] [site][] or multiple [sites][] in one request.
+UnFollow a user's [site][] or multiple sites in one request.
 
 ## Permissions
 
@@ -66,9 +66,7 @@ Content-Type: application/json
 If successful, this method returns a 204 status code with no content.  
 If an error occured, this method returns a 207 status code and the response body will have the error object and siteId. 
 
-[user's]: ../resources/user.md
 [site]: ../resources/site.md
-[sites]: ../resources/sites.md
 
 <!-- {
   "type": "#page.annotation",
