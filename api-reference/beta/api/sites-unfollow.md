@@ -2,11 +2,11 @@
 author: learafa
 ms.author: learafa
 ms.date: 01/14/2019
-title: UnFollow Sites
+title: UnFollow Site
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
-# UnFollow sites 
+# UnFollow site 
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
@@ -32,7 +32,7 @@ DELETE https://graph.microsoft.com/beta/users/{user-id}/followingSites
 
 ## Request body
 
-In the request body, supply a JSON object with the following parameter. 
+In the request body, supply an array of JSON objects with the following parameter. 
 
 
 | Name    | Value  | Description                                                  |
@@ -64,9 +64,10 @@ Content-Type: application/json
 ## Response
 
 If successful, this method returns a 204 status code with no content.  
-If an error occured, this method returns a 207 status code and the response body will have the error object and siteId. 
+If an [error][] occured, this method returns a 207 status code and the response body will have the [error][] object and siteId. 
 
 [site]: ../resources/site.md
+[error]: ../../../concepts/errors.md
 
 <!-- {
   "type": "#page.annotation",
