@@ -213,6 +213,7 @@ Find out more about:
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "System.ArgumentException: Link Definition was null. Link text: !NOTE"
+    "Error: /concepts/outlook-send-mail-from-other-user.md:
+      Exception processing links."
   ]
 }-->
