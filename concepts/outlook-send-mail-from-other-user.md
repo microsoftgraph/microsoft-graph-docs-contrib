@@ -19,7 +19,7 @@ There are two types of permissions that apply to sending messages from another u
 In order to send messages from another user, applications that use user tokens use the **Mail.Send.Shared** permission.
 
 > [!NOTE]
-> Applications that use application tokens instead of user tokens that have the **Mail.Send** permission consented by an administrator can send mail as any user in the organization by sending the mail normally through the user's mailbox.
+> Applications that use application tokens instead of user tokens and have the **Mail.Send** permission consented by an administrator can send mail as any user in the organization by sending the mail normally through the user's mailbox.
 
 ### Mailbox permissions
 
@@ -123,7 +123,7 @@ Content-Type: application/json
     "body": {
       "contentType": "text",
       "content": "Have you submitted your expense reports yet?"
-    }
+    },
     "toRecipients": [
       {
         "emailAddress": {
@@ -166,7 +166,7 @@ Content-Type: application/json
     "body": {
       "contentType": "text",
       "content": "I noticed you opened a support ticket yesterday..."
-    }
+    },
     "toRecipients": [
       {
         "emailAddress": {
