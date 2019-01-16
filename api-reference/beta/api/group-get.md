@@ -97,47 +97,93 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.
 
 ## Example
-### Request
-The following is an example of the request.
+#### Request 1
+The following is an example of a GET request. 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}
+GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
 
-### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability. The default properties will be returned from an actual call, as described before.
+#### Response 1
+The following is an example of the response. It includes only the default properties.
+
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
-  "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-22T00:51:37Z",
+    "creationOptions": [],
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "library2@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "smtp:library7423@contoso.com",
+        "SMTP:library2@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-22T00:51:37Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
+}
+```
+
+#### Request 2
+The next example uses a `$select` query option to get a few properties that are not returned by default. 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
+
+#### Response 2
+The following is an example of the response which includes the requested non-default properties.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
 }
 ```
 
