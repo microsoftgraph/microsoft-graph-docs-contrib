@@ -214,6 +214,9 @@ Find out more about:
   "type": "#page.annotation",
   "suppressions": [
     "Error: /concepts/outlook-send-mail-from-other-user.md:
-      Exception processing links."
+      Exception processing links.
+    System.ArgumentException: Link Definition was null. Link text: !NOTE
+      at ApiDoctor.Validation.DocFile.get_LinkDestinations()
+      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }-->
