@@ -25,6 +25,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List pages][]                 | GET /sites/{site-id}/pages
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
+| [Follow Site][]                | POST /users/{user-id}/followingSites
+| [Unfollow Site][]              | DELETE /users/{user-id}/followingSites
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -35,6 +37,8 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [List pages]: ../api/sitepage-list.md
 [List root sites]: ../api/site-list.md
 [Search for sites]: ../api/site-search.md
+[Follow site]: ../api/site-follow.md
+[Unfollow site]: ../api/site-unfollow.md
 
 
 ## Properties

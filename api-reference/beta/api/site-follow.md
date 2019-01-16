@@ -95,8 +95,8 @@ Content-type: application/json
 
 <!-- {
   "type": "#page.annotation",
-  "description": "Follow sharepoint sites/site for a user.",
+  "description": "Follow sharepoint site/sites for a user.",
   "keywords": "follow site",
   "section": "documentation",
-  "tocPath": "Sites/Follow"
+  "tocPath": "Sites/Follow site"
 } -->

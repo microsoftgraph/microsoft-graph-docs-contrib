@@ -2,15 +2,15 @@
 author: learafa
 ms.author: learafa
 ms.date: 01/14/2019
-title: UnFollow Site
+title: Unfollow Site
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
-# UnFollow site 
+# Unfollow site 
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-UnFollow a user's [site][] or multiple sites in one request.
+Unfollow a user's [site][] or multiple sites in one request.
 
 ## Permissions
 
@@ -71,8 +71,8 @@ If an [error][] occured, this method returns a 207 status code and the response 
 
 <!-- {
   "type": "#page.annotation",
-  "description": "UnFollow sharepoint sites/site for a user.",
+  "description": "Unfollow sharepoint site/sites for a user.",
   "keywords": "unfollow site",
   "section": "documentation",
-  "tocPath": "Sites/UnFollow"
+  "tocPath": "Sites/Unfollow site"
 } -->
