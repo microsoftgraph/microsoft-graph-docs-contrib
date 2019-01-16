@@ -81,28 +81,66 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
- {
-  "value": [
-    {
-      "id": "id-value",
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "groupTypes": [
-        "groupTypes-value"
-      ],
-      "mail": "mail-value",
-      "mailEnabled": true,
-      "mailNickname": "mailNickname-value",
-      "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-      "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-      "onPremisesSyncEnabled": true,
-      "proxyAddresses": [
-        "proxyAddresses-value"
-      ],
-      "securityEnabled": true,
-      "visibility": "visibility-value"
-    }
-  ]
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups",
+    "value": [
+        {
+            "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-12-22T02:21:05Z",
+            "creationOptions": [],
+            "description": "Self help community for golf",
+            "displayName": "Golf Assist",
+            "groupTypes": [
+                "Unified"
+            ],
+            "mail": "golfassist@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golflib",
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": "CAN",
+            "proxyAddresses": [
+                "smtp:golfassist@contoso.onmicrosoft.com",
+                "SMTP:golfassist@contoso.com"
+            ],
+            "renewedDateTime": "2018-12-22T02:21:05Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "visibility": "Public",
+            "onPremisesProvisioningErrors": []
+        },
+        {
+            "id": "d7797254-3084-44d0-99c9-a3b5ab149538",
+            "deletedDateTime": null,
+            "classification": null,
+            "createdDateTime": "2018-11-19T20:29:40Z",
+            "creationOptions": [],
+            "description": "Talk about golf",
+            "displayName": "Golf Discussion",
+            "groupTypes": [],
+            "mail": "golftalk@contoso.com",
+            "mailEnabled": true,
+            "mailNickname": "golfdisc",
+            "onPremisesLastSyncDateTime": null,
+            "onPremisesSecurityIdentifier": null,
+            "onPremisesSyncEnabled": null,
+            "preferredDataLocation": CAN,
+            "proxyAddresses": [
+                "smtp:golftalk@contoso.onmicrosoft.com",
+                "SMTP:golftalk@contoso.com"
+            ],
+            "renewedDateTime": "2018-11-19T20:29:40Z",
+            "resourceBehaviorOptions": [],
+            "resourceProvisioningOptions": [],
+            "securityEnabled": false,
+            "visibility": null,
+            "onPremisesProvisioningErrors": []
+        }
+    ]
 }
 
 ```
