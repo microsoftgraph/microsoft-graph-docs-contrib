@@ -75,7 +75,8 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "isCollection": true
+  "isCollection": true,
+  "name": "get_groups"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -97,7 +98,7 @@ Content-type: application/json
             ],
             "mail": "golfassist@contoso.com",
             "mailEnabled": true,
-            "mailNickname": "golflib",
+            "mailNickname": "golfassist",
             "onPremisesLastSyncDateTime": null,
             "onPremisesSecurityIdentifier": null,
             "onPremisesSyncEnabled": null,
@@ -124,11 +125,11 @@ Content-type: application/json
             "groupTypes": [],
             "mail": "golftalk@contoso.com",
             "mailEnabled": true,
-            "mailNickname": "golfdisc",
+            "mailNickname": "golftalk",
             "onPremisesLastSyncDateTime": null,
             "onPremisesSecurityIdentifier": null,
             "onPremisesSyncEnabled": null,
-            "preferredDataLocation": CAN,
+            "preferredDataLocation": "CAN",
             "proxyAddresses": [
                 "smtp:golftalk@contoso.onmicrosoft.com",
                 "SMTP:golftalk@contoso.com"

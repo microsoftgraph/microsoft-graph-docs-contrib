@@ -80,7 +80,8 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "isCollection": true
+  "isCollection": true,
+  "name": "get_groups"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -139,7 +140,7 @@ Content-type: application/json
             "onPremisesLastSyncDateTime": null,
             "onPremisesSecurityIdentifier": null,
             "onPremisesSyncEnabled": null,
-            "preferredDataLocation": CAN,
+            "preferredDataLocation": "CAN",
             "preferredLanguage": null,
             "proxyAddresses": [
                 "smtp:golftalk@contoso.onmicrosoft.com",
