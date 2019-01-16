@@ -209,3 +209,10 @@ Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
 - [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "System.ArgumentException: Link Definition was null. Link text: !NOTE"
+  ]
+}-->
