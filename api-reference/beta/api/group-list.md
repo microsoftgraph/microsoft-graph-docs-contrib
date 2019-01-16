@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/groups
 
 #### Response 1
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the [default properties](../api/group-get.md#default-properties) are returned for each group in an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned for each group in an actual call.
 
 <!-- {
   "blockType": "response",
