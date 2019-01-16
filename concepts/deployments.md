@@ -5,7 +5,6 @@ description: "In addition to our global network of datacenters, Microsoft cloud 
 
 # National cloud deployments
 
-
 In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services, which are confined within the geographic borders of specific countries and operated by local personnel.
 
 Current national clouds include:
@@ -14,50 +13,38 @@ Current national clouds include:
 - Microsoft Cloud Germany
 - Azure and Office 365 operated by 21Vianet in China
 
-National clouds are unique and different environment than Azure global. Therefore, it is important to be aware of some key differences while calling the Microsoft Graph api for these environments. Some of the key differences you can find here are around separate endpoints for separate cloud and acquiring token.
+National clouds are unique and different environment than Microsoft global.  Therefore, it is important to be aware of some key differences while developing your application for these environments such as registering applications, acquiring tokens, and calling Microsoft Graph API.
 
 This article provides information about the different national cloud deployments of Microsoft Graph and the capabilities within each deployment that are available to developers.
 
+## App registration and auth token service root endpoints
+
+Before calling the Microsoft Graph APIs, you should first register your application and acquire an auth token. The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints to register your application and acquire tokens for each national cloud.
+
+| National cloud | Azure AD portal endpoint| Azure AD auth endpoint|
+|---------------------------|----------------|----------------|
+| Azure AD for US Government |https://portal.azure.us|`https://login.microsoftonline.us`|
+|Azure AD Germany |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
+|Azure AD China operated by 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
+|Azure AD (global service)|https://portal.azure.com |`https://login.microsoftonline.com`|
+
+To learn more about Azure AD access tokens and Microsoft Graph, see [get auth tokens](./auth-overview.md) and for Azure AD authentication scenarios, see [Azure AD authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
+
+> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/documentation/articles/active-directory-appmodel-v2-overview) are available on the global service only; they are not yet supported for use with national cloud deployments.
+
+
 ## Microsoft Graph and Microsoft Graph Explorer service root endpoints
 
-There are separate Microsoft Graph and Graph Explorer endpoints for all of the national clouds due to diversity of the environments from each other.
-
-The following table shows the service root endpoints for Microsoft Graph and Microsoft Graph Explorer for each National cloud.
+The following table shows the service root endpoints for Microsoft Graph and Microsoft Graph Explorer for each national cloud.
 
 | National Cloud | Microsoft Graph | Microsoft Graph Explorer
 |---------------------------|----------------|----------------|
+| Microsoft Graph for US Government | https://graph.microsoft.us | Not supported |
+| Microsoft Graph Germany | https://graph.microsoft.de | Not supported |
 | Microsoft Graph China operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
-| Microsoft Graph Germany | https://graph.microsoft.de | Not supported. |
-| Microsoft Graph for US Government | https://graph.microsoft.com | Not supported. |
 | Microsoft Graph global service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
 > **Note**: Apps can only access organizational data through the national cloud endpoints. This means that only data in tenants registered in the specific national cloud can be accessed. Apps that are trying to access consumer data associated with personal Microsoft accounts through Microsoft Graph should use the global service (https://graph.microsoft.com). Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service.
-
-## Azure AD OpenID Connect and OAuth2.0 endpoints
-
-All of the national clouds authenticate users separately in each environment and have separate authentication endpoints.
-
-The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints used to acquire tokens to call Microsoft Graph for each national cloud.
-
-| National Cloud | Azure AD root endpoint |
-|---------------------------|----------------|
-| Azure AD China operated by 21Vianet |https://login.chinacloudapi.cn |
-| Azure AD Germany | https://login.microsoftonline.de |
-| Azure AD for US Government | https://login.microsoftonline.us |
-| Azure AD (global service) | https://login.microsoftonline.com |
-
-Requests to the Azure AD authorization or token endpoints can be formed using the appropriate region-specific base URL. For example, for Germany:
-
-- The authorization common endpoint is https://login.microsoftonline.de/common/oauth2/authorize.
-- The token common endpoint is https://login.microsoftonline.de/common/oauth2/token.
-
-Tenant-specific endpoints can be formed by replacing "common" in the URLs above with either the tenant ID or a verified domain for the tenant.
-Whether you use the common or tenant-specific endpoints will depend upon the requirements of your app and the authentication flow you are using to get tokens. 
-
-To learn more about Azure AD access tokens and Microsoft Graph, see [Get auth tokens](./auth-overview.md).
-To learn more about Azure AD authentication scenarios, see [Azure AD authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
-
-> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://azure.microsoft.com/documentation/articles/active-directory-appmodel-v2-overview) are available on the global service only; they are not yet supported for use with national cloud deployments.
 
 ## Supported features
 
@@ -65,20 +52,19 @@ The following Microsoft Graph features are generally available (on the `/v1.0` e
 
 | Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
 |---------------------------|----------------|----------------|----------------|
-| Users | Supported |Supported |Supported |
-| Groups | Supported |Supported |Supported |
-| Excel | Supported| Limited support | Supported|
-| OneDrive | Supported| Limited support| Supported|
-| Outlook Mail | Supported |Supported |Supported |
-| Outlook Calendar | Supported |Supported |Supported |
-| Personal Contacts | Supported |Supported |Supported |
-| SharePoint | Supported|Limited support  | Supported|
-| Delta query |Supported |Supported |Supported |
-| Webhooks  |Supported | Supported| Supported|
- | Microsoft Planner|Not supported |Not supported |Not supported |
-|Directory schema extensions |Not supported |Not supported |Not supported |
-| Open type extensions|Not supported |Not supported |Not supported |
-
+| Users | ✔ | ✔ | ✔ |
+| Groups | ✔ | ✔ | ✔ |
+| Excel | ✔| ✔* | ✔ |
+| OneDrive | ✔ | ✔* | ✔ |
+| Outlook Mail | ✔ | ✔ | ✔ |
+| Outlook Calendar | ✔ | ✔ | ✔ |
+| Personal Contacts | ✔ | ✔ | ✔ |
+| SharePoint| ✔ | ✔* | ✔ |
+| Delta query | ✔ | ✔ | ✔ |
+| Webhooks  | ✔ | ✔ | ✔ |
+ | Microsoft Planner|➖|➖|➖|
+|Directory schema extensions |➖|➖|➖|
+| Open type extensions|➖|➖|➖|
   
 The following additional Microsoft Graph features are available in preview (on the `/beta` endpoint) across all national cloud deployments, except where noted:
 
@@ -86,9 +72,14 @@ The following additional Microsoft Graph features are available in preview (on t
 * Applications
 * Service Principals
 
+(*) Limited support for this API in this cloud.
+
  > **IMPORTANT:** Certain services and features that are in specific regions of the global service might not be available in all of the National clouds. To find out what services are available go to [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)
 
 - To learn more, see [Microsoft National Clouds](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
+- To learn more, see [Office 365 for US Government](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+-  To learn more, see [Office 365 operated by 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+-  To learn more, see [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - To learn more, see [Azure Government](https://azure.microsoft.com/global-infrastructure/government/)
 - To learn more, see[Azure China 21Vianet](https://docs.microsoft.com/azure/china/)
 - To learn more, see [Azure Germany](https://docs.microsoft.com/azure/germany/)
