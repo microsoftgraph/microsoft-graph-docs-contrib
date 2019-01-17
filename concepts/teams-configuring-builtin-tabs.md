@@ -60,7 +60,7 @@ For Microsoft Stream tabs, the `teamsAppId` is `com.microsoftstream.embed.skypet
 ## Microsoft Forms tabs
 
 For Microsoft Forms tabs, the `teamsAppId` is `81fef3a6-72aa-4648-a763-de824aeafb7d`.
-Configuration:
+The following is the configuration.
 
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
@@ -80,16 +80,18 @@ The following table lists the `teamsAppId` for each app.
 | PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
 | PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
 
-Configuration:
+The following is the configuration.
 
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | The soureDoc id of the file. You can find this by clicking on the file in SharePoint and looking at the address bar – the URL will have a `sourcedoc=%7B{sourceDocId}%7D` clause. You can also derive this from the webUrl of the SharePoint drive item for the document, see [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
-| contentUrl | string      | The url of file in the format `{folder-webUrl}/{item-name}`. {folder-webUrl} is the webUrl of the SharePoint folder containing the file, which can be found by clicking on the file in SharePoint and looking at the address bar, or by using the webUrl property from [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} is the file name (eg, foo.docx), which is the `name` property in [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| entityId   | string      | The sourceDoc ID of the file. You can find this by opening the file in SharePoint and looking at the address bar – the URL will have a `sourcedoc=%7B{sourceDocId}%7D` clause. You can also derive this from the webUrl of the SharePoint drive item for the document. For details, see [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| contentUrl | string      | The URL of file in the format `{folder-webUrl}/{item-name}`. {folder-webUrl} is the webUrl of the SharePoint folder containing the file, which can be found by opening the file in SharePoint and looking at the address bar, or by using the webUrl property from [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} is the file name (for example, file.docx), which is the `name` property in [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
 | removeUrl  | string      | Null                                                     |
 | websiteUrl | string      | Null                                       |
 
-### Example of creating a configured Word tab
+### Example: Create a configured Word tab
+
+The following example creates a configured Word tab.
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
@@ -110,7 +112,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 For wiki tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.wiki`.
 Wiki tabs do not support configuration through Graph.
 Note, however, that there isn't much to configure --
-in an un-configured wiki tab, the first user just needs to click **Set up tab** to configure it.
+in an un-configured wiki tab, the first user just needs to select **Set up tab** to configure it.
 
 ## Document library tabs
 
@@ -137,4 +139,4 @@ Configuration is not supported.
 
 For SharePoint page and list tabs, the `teamsAppId` is `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Configuration is not supported.
-If configuration is desired, consider using a Website tab.
+If you want to configure the tab, consider using a Website tab.
