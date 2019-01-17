@@ -80,7 +80,29 @@ The following table lists the `teamsAppId` for each app.
 | PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
 | PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
 
-Configuration is not supported.
+Configuration:
+
+| Property   | Type        | Description                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | The soureDoc id of the file. You can find this by clicking on the file in SharePoint and looking at the address bar – the URL will have a `sourcedoc=%7B{sourceDocId}%7D` clause. You can also derive this from the webUrl of the SharePoint drive item for the document, see [GET /groups/{group-id}/drive/items/{item-id}](/api/driveitem-get.md). |
+| contentUrl | string      | The url of file in the format `{folder-webUrl}/{item-name}`. {folder-webUrl} is the webUrl of the SharePoint folder containing the file, which can be found by clicking on the file in SharePoint and looking at the address bar, or by using the webUrl property from [GET /groups/{group-id}/drive/items/{folder-item-id}](/api/driveitem-get.md). {item-name} is the file name (eg, foo.docx), which is the `name` property in [GET /groups/{group-id}/drive/items/{item-id}](/api/driveitem-get.md). |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | Null                                       |
+
+### Example Word tab
+
+```json
+{
+  "displayName": "word",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+  "configuration": {
+                "entityId": "115A90F4-AC9C-4F79-9837-36D1EFB3BE08",
+                "contentUrl": "https://m365x165177.sharepoint.com/sites/4NewCloneWithClonableParts/Shared%20Documents/General/Employee Handbook.docx",
+                "removeUrl": null,
+                "websiteUrl": null
+            }
+}
+```
 
 ## Wiki tabs
 
