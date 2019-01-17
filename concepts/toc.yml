@@ -168,7 +168,7 @@
         href: teams-concept-overview.md
         items:
         - name: Configuring built-in tabs
-        - href: teams-configuring-builtin-tabs.md
+          href: teams-configuring-builtin-tabs.md
       - name: Workbooks and charts
         href: excel-concept-overview.md
         items:
