@@ -12,7 +12,7 @@ ms.prod: "groups"
 
 List all the groups available in an organization, including but not limited to Office 365 Groups.
 
-This operation by default returns only a subset of the more commonly used properties for each group. These _default_ properties are noted in the [Properties](../resources/group.md#properties) section. 
+This operation returns by default only a subset of the more commonly used properties for each group. These _default_ properties are noted in the [Properties](../resources/group.md#properties) section. 
 
 To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
 
