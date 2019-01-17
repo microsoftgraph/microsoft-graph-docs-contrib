@@ -1,6 +1,6 @@
 ---
 title: "Send Outlook messages from another user"
-description: "Learn how to leverage Send As and Send On Behalf Of permissions to send Outlook messages as another user or shared mailbox in Microsoft Graph."
+description: "Use Send As and Send On Behalf Of permissions to send Outlook messages as another user or shared mailbox in Microsoft Graph."
 author: "jasonjoh"
 localization_priority: Priority
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Exchange Online provides [mailbox permissions](/Exchange/recipients/mailbox-perm
 
 ## Permissions
 
-There are two types of permissions that apply to sending messages from another user, [Microsoft Graph permissions](permissions-reference.md), and mailbox permissions.
+Two types of permissions apply to sending messages from another user: [Microsoft Graph permissions](permissions-reference.md), and mailbox permissions.
 
 ### Microsoft Graph permissions
 
@@ -23,7 +23,7 @@ In order to send messages from another user, applications that use user tokens u
 
 ### Mailbox permissions
 
-There are two permissions that affect the end result of sending a message from another user, **Send on Behalf** and **Send As**. The user that is logged in to your application with the **Mail.Send.Shared** permission MUST have at least one of these permissions granted to the mailbox, group, or distribution list that the mail is from.
+Two permissions affect the end result of sending a message from another user: **Send on Behalf** and **Send As**. The user that is signed in to your application with the **Mail.Send.Shared** permission MUST have at least one of these permissions granted to the mailbox, group, or distribution list that the mail is from.
 
 #### Send on Behalf
 
@@ -64,7 +64,7 @@ Users cannot grant this permission to their mailboxes. Admins can grant this per
 
 You can send messages from another user by either [sending directly](/graph/api/user-sendmail?view=graph-rest-1.0) or by [creating a draft](/graph/api/user-post-messages?view=graph-rest-1.0) and then [sending it](/graph/api/message-send?view=graph-rest-1.0).
 
-In order to send from another user, set the `from` property on the [message](/graph/api/resources/message?view=graph-rest-1.0) sent to the email address of the user to send from. There is no need to set the `sender` property, Microsoft Graph will set it appropriately, based on the mailbox permissions granted to the logged-in user.
+In order to send from another user, set the `from` property on the [message](/graph/api/resources/message?view=graph-rest-1.0) sent to the email address of the user to send from. You don't need to set the `sender` property - Microsoft Graph will set it appropriately, based on the mailbox permissions granted to the user who has signed in.
 
 For example, to send mail from the `sales@contoso.com` group, configure the message as follows.
 
@@ -95,15 +95,15 @@ After the message is sent, it can be saved to the sending user's Sent Items fold
 > [!NOTE]
 > If the message is sent from an address that does not have a mailbox (a distribution list, for example), there is no Sent Items for the from user.
 
-- If your application sends by using the `/me` endpoint (or `/users/{user-id}` where the `user-id` corresponds to the logged on user), by default, the message will be saved in the sending user's Sent Items folder.
+- If your application sends by using the `/me` endpoint (or `/users/{user-id}` where the `user-id` corresponds to the signed in user), by default, the message will be saved in the sending user's Sent Items folder.
 - If your application sends by using the `/users/{user-id}` where the `user-id` corresponds to the from user, by default, the message will be saved in the from user's Sent Items folder.
     > [!IMPORTANT]
     > In order to send this way, the sending user must have the **Full Access** mailbox permission in addition to either the **Send on Behalf** or **Send As** permission.
 
-The default behavior can be changed by other outside factors.
+The default behavior can be changed by other outside factors:
 
 - Administrators can update the from user's mailbox to [always save a copy of messages sent from a delegate](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox) to their Sent Items.
-- By setting the `saveToSentItems` property to `true` in a [send mail](/graph/api/user-sendmail?view=graph-rest-1.0) request, you can prevent the item being saved to the Sent Items folder. However, if an administrator has configured the "always save a copy" setting, the message will still be saved to the from user's Sent Items.
+- By setting the `saveToSentItems` property to `true` in a [send mail](/graph/api/user-sendmail?view=graph-rest-1.0) request, you can prevent the item from being saved to the Sent Items folder. However, if an administrator has configured the "always save a copy" setting, the message will still be saved to the from user's Sent Items.
 
 ## Examples
 
@@ -208,7 +208,7 @@ Content-Type: application/json
 Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
+- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and mail API [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
 
 <!-- {
   "type": "#page.annotation",
