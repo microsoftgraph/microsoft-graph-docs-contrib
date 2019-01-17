@@ -4,6 +4,7 @@ description: "Use Send As and Send On Behalf Of permissions to send Outlook mess
 author: "jasonjoh"
 localization_priority: Priority
 ms.prod: "outlook"
+ms.date: 01/16/2019
 ---
 
 # Send Outlook messages from another user
