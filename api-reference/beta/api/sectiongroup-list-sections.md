@@ -2,6 +2,8 @@
 title: "List sections"
 description: "Retrieve a list of section objects from the specified section group."
 localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # List sections

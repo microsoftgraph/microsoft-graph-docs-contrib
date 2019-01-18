@@ -3,6 +3,7 @@ title: "ChartSeries resource type"
 description: "Represents a series in a chart."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartSeries resource type

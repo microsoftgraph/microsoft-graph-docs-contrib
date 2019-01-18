@@ -3,6 +3,7 @@ title: "Delete remoteAssistancePartner"
 description: "Deletes a remoteAssistancePartner."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete remoteAssistancePartner

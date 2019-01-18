@@ -3,6 +3,7 @@ title: "roleScopeTag resource type"
 description: "Role Scope Tag"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # roleScopeTag resource type

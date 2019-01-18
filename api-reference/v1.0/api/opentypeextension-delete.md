@@ -2,6 +2,7 @@
 title: "Delete open extension"
 description: "Delete an open extension (openTypeExtension object) from the specified instance of a resource. "
 localization_priority: Normal
+author: "dkershaw10"
 ---
 
 # Delete open extension

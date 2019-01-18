@@ -3,6 +3,7 @@ title: "Get iosTrustedRootCertificate"
 description: "Read properties and relationships of the iosTrustedRootCertificate object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get iosTrustedRootCertificate

@@ -3,6 +3,7 @@ title: "Add tab to channel"
 description: "Adds (pins) a tab to the specified channel within a team. "
 author: "nkramer"
 localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Add tab to channel
@@ -52,7 +53,7 @@ The following is an example of the request.
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 {
   "name": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",

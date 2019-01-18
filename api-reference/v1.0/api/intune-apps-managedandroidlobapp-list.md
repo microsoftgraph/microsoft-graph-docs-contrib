@@ -3,6 +3,7 @@ title: "List managedAndroidLobApps"
 description: "List properties and relationships of the managedAndroidLobApp objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List managedAndroidLobApps

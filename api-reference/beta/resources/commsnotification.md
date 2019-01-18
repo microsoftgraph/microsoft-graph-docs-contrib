@@ -3,6 +3,7 @@ title: "commsNotification resource type"
 description: "Communications notification base type that is published by Communications servers to notify changes."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # commsNotification resource type

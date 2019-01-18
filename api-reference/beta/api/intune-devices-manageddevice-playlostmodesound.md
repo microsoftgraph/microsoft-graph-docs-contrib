@@ -3,6 +3,7 @@ title: "playLostModeSound action"
 description: "Remote lock"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # playLostModeSound action

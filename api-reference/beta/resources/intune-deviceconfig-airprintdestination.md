@@ -3,6 +3,7 @@ title: "airPrintDestination resource type"
 description: "Represents an AirPrint destination."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # airPrintDestination resource type

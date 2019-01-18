@@ -3,6 +3,7 @@ title: "List group memberOf"
 description: "Get groups and administrative units that the group is a direct member of."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # List group memberOf

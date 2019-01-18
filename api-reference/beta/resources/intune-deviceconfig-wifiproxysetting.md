@@ -3,6 +3,7 @@ title: "wiFiProxySetting enum type"
 description: "Wi-Fi Proxy Settings."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # wiFiProxySetting enum type

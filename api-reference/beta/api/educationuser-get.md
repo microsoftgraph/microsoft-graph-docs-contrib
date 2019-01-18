@@ -3,6 +3,7 @@ title: "Get educationUser"
 description: "Retrieve the properties and relationships of a user."
 author: "mmast-msft"
 localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Get educationUser

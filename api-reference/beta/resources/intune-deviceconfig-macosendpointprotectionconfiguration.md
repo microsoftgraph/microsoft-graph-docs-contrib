@@ -3,6 +3,7 @@ title: "macOSEndpointProtectionConfiguration resource type"
 description: "MacOS endpoint protection configuration profile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # macOSEndpointProtectionConfiguration resource type

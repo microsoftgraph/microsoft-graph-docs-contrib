@@ -3,6 +3,7 @@ title: "windowsAutopilotProfileAssignmentStatus enum type"
 description: "Not yet documented"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsAutopilotProfileAssignmentStatus enum type

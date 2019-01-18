@@ -3,6 +3,7 @@ title: "Create Session"
 description: "Use this API to create a new workbook session. "
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Create Session

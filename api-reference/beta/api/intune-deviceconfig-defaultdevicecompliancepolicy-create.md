@@ -3,6 +3,7 @@ title: "Create defaultDeviceCompliancePolicy"
 description: "Create a new defaultDeviceCompliancePolicy object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create defaultDeviceCompliancePolicy

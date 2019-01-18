@@ -3,6 +3,7 @@ title: "deviceCompliancePolicySettingState resource type"
 description: "Device Compilance Policy Setting State for a given device."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceCompliancePolicySettingState resource type

@@ -3,6 +3,7 @@ title: "List shared"
 description: "Calculated insight that returns the list of files shared with a user."
 author: "simonhult"
 localization_priority: Normal
+ms.prod: "insights"
 ---
 
 # List shared

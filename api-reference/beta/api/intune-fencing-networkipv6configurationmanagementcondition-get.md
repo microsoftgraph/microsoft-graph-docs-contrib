@@ -3,6 +3,7 @@ title: "Get networkIPv6ConfigurationManagementCondition"
 description: "Read properties and relationships of the networkIPv6ConfigurationManagementCondition object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get networkIPv6ConfigurationManagementCondition

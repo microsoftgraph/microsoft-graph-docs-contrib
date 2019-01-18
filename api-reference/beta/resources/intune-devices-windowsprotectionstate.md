@@ -3,6 +3,7 @@ title: "windowsProtectionState resource type"
 description: "Device protection status entity."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsProtectionState resource type

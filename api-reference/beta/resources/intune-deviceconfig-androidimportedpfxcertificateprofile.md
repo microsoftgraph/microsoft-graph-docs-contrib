@@ -3,6 +3,7 @@ title: "androidImportedPFXCertificateProfile resource type"
 description: "Android PFX Import certificate profile"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidImportedPFXCertificateProfile resource type

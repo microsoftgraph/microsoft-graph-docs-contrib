@@ -3,6 +3,7 @@ title: "deviceGuardLocalSystemAuthorityCredentialGuardType enum type"
 description: "Possible values of Credential Guard settings."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceGuardLocalSystemAuthorityCredentialGuardType enum type

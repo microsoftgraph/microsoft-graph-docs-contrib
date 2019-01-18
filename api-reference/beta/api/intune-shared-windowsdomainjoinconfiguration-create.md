@@ -3,6 +3,7 @@ title: "Create windowsDomainJoinConfiguration"
 description: "Create a new windowsDomainJoinConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsDomainJoinConfiguration

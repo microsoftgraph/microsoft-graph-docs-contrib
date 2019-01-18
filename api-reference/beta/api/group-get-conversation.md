@@ -3,6 +3,7 @@ title: "Get conversation"
 description: "Get a conversation object."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Get conversation

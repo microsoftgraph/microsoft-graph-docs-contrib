@@ -2,6 +2,8 @@
 title: "Delete plannerTask"
 description: "Delete **plannerTask**."
 localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Delete plannerTask

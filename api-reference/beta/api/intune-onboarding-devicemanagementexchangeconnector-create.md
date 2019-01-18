@@ -3,6 +3,7 @@ title: "Create deviceManagementExchangeConnector"
 description: "Create a new deviceManagementExchangeConnector object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceManagementExchangeConnector

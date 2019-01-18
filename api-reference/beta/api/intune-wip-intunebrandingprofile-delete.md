@@ -3,6 +3,7 @@ title: "Delete intuneBrandingProfile"
 description: "Deletes a intuneBrandingProfile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete intuneBrandingProfile

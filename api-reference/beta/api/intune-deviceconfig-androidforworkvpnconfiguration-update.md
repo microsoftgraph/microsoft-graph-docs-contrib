@@ -3,6 +3,7 @@ title: "Update androidForWorkVpnConfiguration"
 description: "Update the properties of a androidForWorkVpnConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update androidForWorkVpnConfiguration

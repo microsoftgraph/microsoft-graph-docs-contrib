@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Copy a file or folder
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Copy a DriveItem
 

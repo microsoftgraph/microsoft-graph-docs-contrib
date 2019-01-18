@@ -3,6 +3,7 @@ title: "List deviceManagementScripts"
 description: "List properties and relationships of the deviceManagementScript objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceManagementScripts

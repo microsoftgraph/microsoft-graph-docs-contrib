@@ -3,6 +3,7 @@ title: "appLockerApplicationControlType enum type"
 description: "Possible values of AppLocker Application Control Types"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # appLockerApplicationControlType enum type

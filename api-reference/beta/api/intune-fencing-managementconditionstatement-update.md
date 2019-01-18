@@ -3,6 +3,7 @@ title: "Update managementConditionStatement"
 description: "Update the properties of a managementConditionStatement object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update managementConditionStatement

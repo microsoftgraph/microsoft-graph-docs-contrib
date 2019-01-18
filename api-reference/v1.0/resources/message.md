@@ -3,6 +3,7 @@ title: "message resource type"
 description: "A message in a mailFolder."
 author: "angelgolfer-ms"
 localization_priority: Priority
+ms.prod: "outlook"
 ---
 
 # message resource type

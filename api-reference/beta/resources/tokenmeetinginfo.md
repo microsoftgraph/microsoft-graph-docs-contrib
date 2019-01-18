@@ -3,6 +3,7 @@ title: "tokenMeetingInfo resource type"
 description: "The tokenMeetingInfo type."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # tokenMeetingInfo resource type

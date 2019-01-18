@@ -3,6 +3,7 @@ title: "Delete managedDeviceCertificateState"
 description: "Deletes a managedDeviceCertificateState."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete managedDeviceCertificateState

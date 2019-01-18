@@ -3,6 +3,7 @@ title: "Update userAppInstallStatus"
 description: "Update the properties of a userAppInstallStatus object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update userAppInstallStatus

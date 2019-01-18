@@ -3,6 +3,7 @@ title: "Update telecomExpenseManagementPartner"
 description: "Update the properties of a telecomExpenseManagementPartner object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update telecomExpenseManagementPartner

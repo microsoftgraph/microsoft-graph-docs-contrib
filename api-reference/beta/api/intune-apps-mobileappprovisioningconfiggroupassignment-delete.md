@@ -3,6 +3,7 @@ title: "Delete mobileAppProvisioningConfigGroupAssignment"
 description: "Deletes a mobileAppProvisioningConfigGroupAssignment."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete mobileAppProvisioningConfigGroupAssignment

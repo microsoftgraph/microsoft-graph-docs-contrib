@@ -3,6 +3,7 @@ title: "setMobileDeviceManagementAuthority action"
 description: "Set mobile device management authority"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # setMobileDeviceManagementAuthority action

@@ -2,6 +2,8 @@
 title: "orgContact: List directReports"
 description: "Get the contact's direct reports."
 localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # orgContact: List directReports

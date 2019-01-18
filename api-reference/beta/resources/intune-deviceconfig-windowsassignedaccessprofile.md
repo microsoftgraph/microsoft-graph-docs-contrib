@@ -3,6 +3,7 @@ title: "windowsAssignedAccessProfile resource type"
 description: "Assigned Access profile for Windows."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsAssignedAccessProfile resource type

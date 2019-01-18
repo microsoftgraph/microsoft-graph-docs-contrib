@@ -3,6 +3,7 @@ title: "workbookPivotTable: refresh"
 description: "Refreshes the PivotTable."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # workbookPivotTable: refresh

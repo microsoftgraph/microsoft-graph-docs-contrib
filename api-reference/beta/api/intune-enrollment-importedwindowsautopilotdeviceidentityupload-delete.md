@@ -3,6 +3,7 @@ title: "Delete importedWindowsAutopilotDeviceIdentityUpload"
 description: "Deletes a importedWindowsAutopilotDeviceIdentityUpload."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete importedWindowsAutopilotDeviceIdentityUpload

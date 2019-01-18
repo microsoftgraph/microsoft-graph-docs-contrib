@@ -3,6 +3,7 @@ title: "Delete deviceComplianceSettingState"
 description: "Deletes a deviceComplianceSettingState."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete deviceComplianceSettingState

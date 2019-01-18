@@ -3,6 +3,7 @@ title: "Get circularGeofenceManagementCondition"
 description: "Read properties and relationships of the circularGeofenceManagementCondition object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get circularGeofenceManagementCondition

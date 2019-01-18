@@ -3,6 +3,7 @@ title: "List microsoftStoreForBusinessContainedApps"
 description: "List properties and relationships of the microsoftStoreForBusinessContainedApp objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List microsoftStoreForBusinessContainedApps

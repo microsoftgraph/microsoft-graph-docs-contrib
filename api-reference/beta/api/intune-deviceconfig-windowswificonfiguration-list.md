@@ -3,6 +3,7 @@ title: "List windowsWifiConfigurations"
 description: "List properties and relationships of the windowsWifiConfiguration objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsWifiConfigurations

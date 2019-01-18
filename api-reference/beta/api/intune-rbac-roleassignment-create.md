@@ -3,6 +3,7 @@ title: "Create roleAssignment"
 description: "Create a new roleAssignment object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create roleAssignment

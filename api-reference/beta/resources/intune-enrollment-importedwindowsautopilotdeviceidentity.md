@@ -3,6 +3,7 @@ title: "importedWindowsAutopilotDeviceIdentity resource type"
 description: "Imported windows autopilot devices."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # importedWindowsAutopilotDeviceIdentity resource type

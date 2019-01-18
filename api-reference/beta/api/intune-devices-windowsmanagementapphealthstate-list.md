@@ -3,6 +3,7 @@ title: "List windowsManagementAppHealthStates"
 description: "List properties and relationships of the windowsManagementAppHealthState objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsManagementAppHealthStates

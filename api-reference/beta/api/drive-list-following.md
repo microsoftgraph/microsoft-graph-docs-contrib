@@ -3,6 +3,7 @@ author: chackman
 ms.author: chackman
 title: List followed items
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # List followed items
 

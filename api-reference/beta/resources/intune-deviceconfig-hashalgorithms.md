@@ -3,6 +3,7 @@ title: "hashAlgorithms enum type"
 description: "Hash Algorithm Options."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # hashAlgorithms enum type

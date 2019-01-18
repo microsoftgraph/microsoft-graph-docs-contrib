@@ -3,6 +3,7 @@ title: "List windows81CertificateProfileBases"
 description: "List properties and relationships of the windows81CertificateProfileBase objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windows81CertificateProfileBases

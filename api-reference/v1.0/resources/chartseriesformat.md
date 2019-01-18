@@ -3,6 +3,7 @@ title: "ChartSeriesFormat resource type"
 description: "encapsulates the format properties for the chart series"
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # ChartSeriesFormat resource type

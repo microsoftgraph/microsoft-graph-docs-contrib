@@ -3,6 +3,7 @@ title: "List educationSynchronizationProfiles"
 description: "Retrieve the collection of school data synchronization profiles in the tenant."
 author: "mmast-msft"
 localization_priority: Normal
+ms.prod: "education"
 ---
 
 # List educationSynchronizationProfiles

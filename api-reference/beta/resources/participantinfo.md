@@ -3,6 +3,7 @@ title: "participantInfo resource type"
 description: "Contains additional properties about the participant identity"
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # participantInfo resource type

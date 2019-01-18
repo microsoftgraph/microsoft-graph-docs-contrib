@@ -3,6 +3,7 @@ title: "List deviceEnrollmentConfigurations"
 description: "List properties and relationships of the deviceEnrollmentConfiguration objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List deviceEnrollmentConfigurations

@@ -3,6 +3,7 @@ title: "win32LobAppReturnCode resource type"
 description: "Contains return code properties for a Win32 App"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # win32LobAppReturnCode resource type
