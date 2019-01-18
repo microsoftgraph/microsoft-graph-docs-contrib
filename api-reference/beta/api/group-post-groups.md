@@ -69,7 +69,7 @@ Since the **group** resource supports [extensions](/graph/extensibility-overview
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
 ## Response
-If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.
+If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
 ## Example
 #### Request 1

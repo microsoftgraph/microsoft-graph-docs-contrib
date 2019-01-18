@@ -40,7 +40,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties.
 
 ## Example
 #### Request 1
