@@ -60,7 +60,7 @@ For more information about working with groups and members in teams, see [Use th
 |channels|[channel](channel.md) collection|The collection of channels & messages associated with the team.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |owners|[user](user.md)| The list of this team's owners. |
-|operation|[teamsAsyncOperation](teamsasyncoperation.md)| The async operation status of this team. | 
+|operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations executed or executing on this team. | 
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. |
 
 ## JSON representation
