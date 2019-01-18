@@ -167,6 +167,10 @@
       - name: Teamwork
         href: teams-concept-overview.md
         items:
+        - name: Create a group and team
+          href: teams-create-group-and-team.md
+        - name: List all teams
+          href: teams-list-all-teams.md
         - name: Configuring built-in tabs
           href: teams-configuring-builtin-tabs.md
       - name: Workbooks and charts
