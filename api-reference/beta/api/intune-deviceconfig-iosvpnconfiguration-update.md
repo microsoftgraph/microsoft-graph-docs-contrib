@@ -3,6 +3,7 @@ title: "Update iosVpnConfiguration"
 description: "Update the properties of a iosVpnConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update iosVpnConfiguration

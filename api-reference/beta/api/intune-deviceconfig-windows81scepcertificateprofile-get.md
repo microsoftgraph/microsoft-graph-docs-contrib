@@ -3,6 +3,7 @@ title: "Get windows81SCEPCertificateProfile"
 description: "Read properties and relationships of the windows81SCEPCertificateProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windows81SCEPCertificateProfile

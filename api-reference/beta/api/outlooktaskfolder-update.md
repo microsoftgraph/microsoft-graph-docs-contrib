@@ -3,6 +3,7 @@ title: "Update outlooktaskfolder"
 description: "Update the writable properties of an Outlook task folder."
 author: "angelgolfer-ms"
 localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Update outlooktaskfolder

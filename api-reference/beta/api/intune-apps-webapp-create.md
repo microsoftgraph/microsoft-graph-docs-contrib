@@ -3,6 +3,7 @@ title: "Create webApp"
 description: "Create a new webApp object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create webApp

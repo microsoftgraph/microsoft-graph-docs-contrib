@@ -2,6 +2,8 @@
 title: "Update calendar"
 description: "Update the properties of of a calendar object. The calendar can be one for a user, "
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Update calendar

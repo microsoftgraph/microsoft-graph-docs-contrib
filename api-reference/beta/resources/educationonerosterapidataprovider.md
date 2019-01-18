@@ -3,6 +3,7 @@ title: "educationOneRosterApiDataProvider resource"
 description: "Used to set up the school data synchronization profile when the OneRoster API is used as the input source."
 author: "mmast-msft"
 localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationOneRosterApiDataProvider resource

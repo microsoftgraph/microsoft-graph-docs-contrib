@@ -3,6 +3,7 @@ title: "Delete windowsInformationProtectionAppLearningSummary"
 description: "Deletes a windowsInformationProtectionAppLearningSummary."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete windowsInformationProtectionAppLearningSummary

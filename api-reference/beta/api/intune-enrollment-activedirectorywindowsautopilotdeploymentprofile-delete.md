@@ -3,6 +3,7 @@ title: "Delete activeDirectoryWindowsAutopilotDeploymentProfile"
 description: "Deletes a activeDirectoryWindowsAutopilotDeploymentProfile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete activeDirectoryWindowsAutopilotDeploymentProfile

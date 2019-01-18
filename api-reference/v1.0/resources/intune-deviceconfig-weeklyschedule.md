@@ -3,6 +3,7 @@ title: "weeklySchedule enum type"
 description: "Possible values for a weekly schedule."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # weeklySchedule enum type

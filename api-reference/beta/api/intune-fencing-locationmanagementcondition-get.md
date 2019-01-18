@@ -3,6 +3,7 @@ title: "Get locationManagementCondition"
 description: "Read properties and relationships of the locationManagementCondition object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get locationManagementCondition

@@ -3,6 +3,7 @@ title: "Delete event"
 description: "Delete an event object."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Delete event

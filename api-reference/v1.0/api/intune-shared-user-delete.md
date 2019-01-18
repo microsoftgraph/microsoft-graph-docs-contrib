@@ -3,6 +3,7 @@ title: "Delete user"
 description: "Deletes a user."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete user

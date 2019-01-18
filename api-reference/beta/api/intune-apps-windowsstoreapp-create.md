@@ -3,6 +3,7 @@ title: "Create windowsStoreApp"
 description: "Create a new windowsStoreApp object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create windowsStoreApp

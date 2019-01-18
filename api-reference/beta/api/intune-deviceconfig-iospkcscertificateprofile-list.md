@@ -3,6 +3,7 @@ title: "List iosPkcsCertificateProfiles"
 description: "List properties and relationships of the iosPkcsCertificateProfile objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosPkcsCertificateProfiles

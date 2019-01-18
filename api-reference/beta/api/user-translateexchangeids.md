@@ -3,6 +3,7 @@ title: "user: translateExchangeIds"
 description: "Translate identifiers of Outlook-related resources between formats."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user: translateExchangeIds

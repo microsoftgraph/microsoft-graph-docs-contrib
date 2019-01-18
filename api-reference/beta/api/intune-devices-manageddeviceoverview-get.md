@@ -3,6 +3,7 @@ title: "Get managedDeviceOverview"
 description: "Read properties and relationships of the managedDeviceOverview object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get managedDeviceOverview

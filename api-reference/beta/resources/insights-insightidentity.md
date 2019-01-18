@@ -3,6 +3,7 @@ title: "insightIdentity"
 description: "Complex type containing properties of Shared items."
 author: "simonhult"
 localization_priority: Normal
+ms.prod: "insights"
 ---
 
 # insightIdentity

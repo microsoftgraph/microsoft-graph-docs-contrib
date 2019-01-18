@@ -3,6 +3,7 @@ title: "Update advancedThreatProtectionOnboardingStateSummary"
 description: "Update the properties of a advancedThreatProtectionOnboardingStateSummary object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update advancedThreatProtectionOnboardingStateSummary

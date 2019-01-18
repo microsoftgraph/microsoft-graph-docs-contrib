@@ -4,6 +4,7 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: MentionAction
 localization_priority: Normal
+ms.prod: "insights"
 ---
 # MentionAction resource type
 

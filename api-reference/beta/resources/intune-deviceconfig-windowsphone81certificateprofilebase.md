@@ -3,6 +3,7 @@ title: "windowsPhone81CertificateProfileBase resource type"
 description: " certificate profile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsPhone81CertificateProfileBase resource type

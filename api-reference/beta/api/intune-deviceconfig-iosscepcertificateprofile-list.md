@@ -3,6 +3,7 @@ title: "List iosScepCertificateProfiles"
 description: "List properties and relationships of the iosScepCertificateProfile objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List iosScepCertificateProfiles

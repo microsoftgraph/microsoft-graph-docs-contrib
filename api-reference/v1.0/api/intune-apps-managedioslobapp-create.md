@@ -3,6 +3,7 @@ title: "Create managedIOSLobApp"
 description: "Create a new managedIOSLobApp object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create managedIOSLobApp

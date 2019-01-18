@@ -3,6 +3,7 @@ title: "windowsInformationProtectionStoreApp resource type"
 description: "Store App for Windows information protection"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsInformationProtectionStoreApp resource type

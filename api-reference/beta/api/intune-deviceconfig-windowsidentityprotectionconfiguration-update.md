@@ -3,6 +3,7 @@ title: "Update windowsIdentityProtectionConfiguration"
 description: "Update the properties of a windowsIdentityProtectionConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsIdentityProtectionConfiguration

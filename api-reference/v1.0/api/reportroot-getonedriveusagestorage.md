@@ -2,6 +2,7 @@
 title: "reportRoot: getOneDriveUsageStorage"
 description: "Get the trend on the amount of storage you are using in OneDrive for Business."
 localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getOneDriveUsageStorage

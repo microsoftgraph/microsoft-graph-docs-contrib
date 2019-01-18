@@ -3,6 +3,7 @@ title: "rgbColor resource type"
 description: "Color in RGB."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # rgbColor resource type

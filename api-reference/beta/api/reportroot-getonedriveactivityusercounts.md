@@ -2,6 +2,7 @@
 title: "reportRoot: getOneDriveActivityUserCounts"
 description: "Get the trend in the number of active OneDrive users."
 localization_priority: Normal
+ms.prod: "reports"
 ---
 
 # reportRoot: getOneDriveActivityUserCounts

@@ -3,6 +3,7 @@ title: "certificateConnectorSetting resource type"
 description: "Certificate connector settings."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # certificateConnectorSetting resource type

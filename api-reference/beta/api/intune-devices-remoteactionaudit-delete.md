@@ -3,6 +3,7 @@ title: "Delete remoteActionAudit"
 description: "Deletes a remoteActionAudit."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete remoteActionAudit

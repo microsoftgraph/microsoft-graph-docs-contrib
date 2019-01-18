@@ -3,6 +3,7 @@ title: "iosImportedPFXCertificateProfile resource type"
 description: "iOS PFX Import certificate profile"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosImportedPFXCertificateProfile resource type

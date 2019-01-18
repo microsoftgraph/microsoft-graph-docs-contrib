@@ -3,6 +3,7 @@ title: "educationSynchronizationLicenseAssignment resource type"
 description: "Represents the license information to assign to user accounts. The resource will be used to set up license assignments when creating new user accounts."
 author: "mmast-msft"
 localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationSynchronizationLicenseAssignment resource type

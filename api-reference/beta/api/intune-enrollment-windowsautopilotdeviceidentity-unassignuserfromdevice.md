@@ -3,6 +3,7 @@ title: "unassignUserFromDevice action"
 description: "Unassigns the user from an Autopilot device."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # unassignUserFromDevice action

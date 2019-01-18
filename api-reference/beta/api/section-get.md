@@ -2,6 +2,8 @@
 title: "Get section"
 description: "Retrieve the properties and relationships of a section object."
 localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # Get section

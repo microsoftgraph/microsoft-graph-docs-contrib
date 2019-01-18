@@ -3,6 +3,7 @@ title: "Delete outlookTaskGroup"
 description: "Delete the specified outlookTaskGroup."
 author: "angelgolfer-ms"
 localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Delete outlookTaskGroup

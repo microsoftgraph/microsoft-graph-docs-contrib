@@ -3,6 +3,7 @@ title: "Get tab"
 description: "Retrieve the properties and relationships of the specified tab. "
 author: "nkramer"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Get tab

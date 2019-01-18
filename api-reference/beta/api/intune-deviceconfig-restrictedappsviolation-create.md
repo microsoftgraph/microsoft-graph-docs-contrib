@@ -3,6 +3,7 @@ title: "Create restrictedAppsViolation"
 description: "Create a new restrictedAppsViolation object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create restrictedAppsViolation

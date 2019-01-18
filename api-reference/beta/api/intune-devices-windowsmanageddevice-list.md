@@ -3,6 +3,7 @@ title: "List windowsManagedDevices"
 description: "List properties and relationships of the windowsManagedDevice objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsManagedDevices

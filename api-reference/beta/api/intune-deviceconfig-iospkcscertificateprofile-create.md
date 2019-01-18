@@ -3,6 +3,7 @@ title: "Create iosPkcsCertificateProfile"
 description: "Create a new iosPkcsCertificateProfile object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create iosPkcsCertificateProfile

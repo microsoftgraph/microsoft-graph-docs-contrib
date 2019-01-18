@@ -2,6 +2,7 @@
 title: "Get open extension"
 description: "Get an open extension (openTypeExtension object) identified by name or fully qualified name."
 localization_priority: Normal
+author: "dkershaw10"
 ---
 
 # Get open extension

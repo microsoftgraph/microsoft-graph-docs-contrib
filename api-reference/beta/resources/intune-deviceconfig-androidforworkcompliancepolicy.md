@@ -3,6 +3,7 @@ title: "androidForWorkCompliancePolicy resource type"
 description: "This class contains compliance settings for Android for Work."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # androidForWorkCompliancePolicy resource type

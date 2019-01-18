@@ -3,6 +3,7 @@ title: "Get androidManagedStoreApp"
 description: "Read properties and relationships of the androidManagedStoreApp object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidManagedStoreApp

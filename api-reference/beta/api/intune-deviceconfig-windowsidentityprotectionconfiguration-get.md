@@ -3,6 +3,7 @@ title: "Get windowsIdentityProtectionConfiguration"
 description: "Read properties and relationships of the windowsIdentityProtectionConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get windowsIdentityProtectionConfiguration

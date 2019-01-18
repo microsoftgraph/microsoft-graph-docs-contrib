@@ -3,6 +3,7 @@ title: "managedDeviceEnrollmentAbandonmentSummary function"
 description: "Metadata for Enrollment abandonment summary report"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # managedDeviceEnrollmentAbandonmentSummary function

@@ -3,6 +3,7 @@ title: "Range: LastColumn"
 description: "."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Range: LastColumn

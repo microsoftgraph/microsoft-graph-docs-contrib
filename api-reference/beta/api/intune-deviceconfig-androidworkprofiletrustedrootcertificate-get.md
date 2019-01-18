@@ -3,6 +3,7 @@ title: "Get androidWorkProfileTrustedRootCertificate"
 description: "Read properties and relationships of the androidWorkProfileTrustedRootCertificate object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get androidWorkProfileTrustedRootCertificate

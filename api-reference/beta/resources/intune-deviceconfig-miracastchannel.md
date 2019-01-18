@@ -3,6 +3,7 @@ title: "miracastChannel enum type"
 description: "Possible values for Miracast channel."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # miracastChannel enum type

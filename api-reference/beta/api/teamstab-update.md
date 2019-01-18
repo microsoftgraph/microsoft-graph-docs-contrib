@@ -3,6 +3,7 @@ title: "Update tab"
 description: "Update the properties of the specified tab."
 author: "nkramer"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Update tab

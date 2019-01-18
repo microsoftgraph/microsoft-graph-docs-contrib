@@ -3,6 +3,7 @@ title: "officeClientConfiguration resource type"
 description: "Office Client Configuration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # officeClientConfiguration resource type

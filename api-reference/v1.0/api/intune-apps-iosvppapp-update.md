@@ -3,6 +3,7 @@ title: "Update iosVppApp"
 description: "Update the properties of a iosVppApp object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update iosVppApp

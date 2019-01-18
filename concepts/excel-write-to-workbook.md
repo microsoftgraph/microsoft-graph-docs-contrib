@@ -2,6 +2,8 @@
 title: "Write data to an Excel workbook with Microsoft Graph"
 description: "q=excelstarter)."
 localization_priority: Priority
+author: "lumine2008"
+ms.prod: "excel"
 ---
 
 # Write data to an Excel workbook with Microsoft Graph

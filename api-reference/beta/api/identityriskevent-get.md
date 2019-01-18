@@ -3,6 +3,7 @@ title: "Get identityRiskEvent"
 description: "Retrieve the properties and relationships of identityriskevent object."
 author: "cloudhandler"
 localization_priority: Normal
+ms.prod: "security"
 ---
 
 # Get identityRiskEvent

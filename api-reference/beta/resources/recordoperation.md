@@ -3,6 +3,7 @@ title: "recordOperation resource type"
 description: "The recordOperation type"
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # recordOperation resource type

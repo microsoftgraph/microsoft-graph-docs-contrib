@@ -3,6 +3,7 @@ title: "deviceAndAppManagementData resource type"
 description: "Exported Data"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceAndAppManagementData resource type

@@ -2,6 +2,8 @@
 title: "Delete plannerBucket"
 description: "Delete **plannerBucket**."
 localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Delete plannerBucket

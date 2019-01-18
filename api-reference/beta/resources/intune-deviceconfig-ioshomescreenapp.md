@@ -3,6 +3,7 @@ title: "iosHomeScreenApp resource type"
 description: "Represents an icon for an app on the Home Screen"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iosHomeScreenApp resource type

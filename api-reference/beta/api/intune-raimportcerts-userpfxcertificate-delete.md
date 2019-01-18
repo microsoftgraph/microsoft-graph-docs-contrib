@@ -3,6 +3,7 @@ title: "Delete userPFXCertificate"
 description: "Deletes a userPFXCertificate."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete userPFXCertificate

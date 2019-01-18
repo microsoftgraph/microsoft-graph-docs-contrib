@@ -3,6 +3,7 @@ title: "Delete macOSImportedPFXCertificateProfile"
 description: "Deletes a macOSImportedPFXCertificateProfile."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete macOSImportedPFXCertificateProfile

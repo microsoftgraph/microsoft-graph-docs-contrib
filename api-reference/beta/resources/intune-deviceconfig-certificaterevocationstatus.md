@@ -3,6 +3,7 @@ title: "certificateRevocationStatus enum type"
 description: "Certificate Revocation Status."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # certificateRevocationStatus enum type

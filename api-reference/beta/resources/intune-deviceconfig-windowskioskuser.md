@@ -3,6 +3,7 @@ title: "windowsKioskUser resource type"
 description: "The user base class used to identify the account info for the kiosk configuration"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # windowsKioskUser resource type

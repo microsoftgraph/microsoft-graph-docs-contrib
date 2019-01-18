@@ -3,6 +3,7 @@ title: "Create editionUpgradeConfiguration"
 description: "Create a new editionUpgradeConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create editionUpgradeConfiguration

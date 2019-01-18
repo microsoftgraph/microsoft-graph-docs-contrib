@@ -3,6 +3,7 @@ title: "outOfBoxExperienceSettings resource type"
 description: "Out of box experience setting"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # outOfBoxExperienceSettings resource type

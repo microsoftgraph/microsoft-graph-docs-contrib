@@ -3,6 +3,7 @@ title: "participant: invite"
 description: "Invite participants to the active call."
 author: "VinodRavichandran"
 localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # participant: invite

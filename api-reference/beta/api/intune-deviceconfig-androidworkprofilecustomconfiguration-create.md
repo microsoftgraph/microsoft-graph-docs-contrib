@@ -3,6 +3,7 @@ title: "Create androidWorkProfileCustomConfiguration"
 description: "Create a new androidWorkProfileCustomConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create androidWorkProfileCustomConfiguration

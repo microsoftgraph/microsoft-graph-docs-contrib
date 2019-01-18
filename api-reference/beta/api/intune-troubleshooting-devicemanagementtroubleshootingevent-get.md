@@ -3,6 +3,7 @@ title: "Get deviceManagementTroubleshootingEvent"
 description: "Read properties and relationships of the deviceManagementTroubleshootingEvent object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get deviceManagementTroubleshootingEvent

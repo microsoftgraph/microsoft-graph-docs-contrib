@@ -3,6 +3,7 @@ title: "Update windows81WifiImportConfiguration"
 description: "Update the properties of a windows81WifiImportConfiguration object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windows81WifiImportConfiguration

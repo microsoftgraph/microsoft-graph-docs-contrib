@@ -3,6 +3,7 @@ title: "List androidForWorkTrustedRootCertificates"
 description: "List properties and relationships of the androidForWorkTrustedRootCertificate objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List androidForWorkTrustedRootCertificates

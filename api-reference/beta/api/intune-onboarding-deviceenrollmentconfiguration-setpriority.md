@@ -3,6 +3,7 @@ title: "setPriority action"
 description: "Not yet documented"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # setPriority action

@@ -3,6 +3,7 @@ title: "Delete unsupportedDeviceConfiguration"
 description: "Deletes a unsupportedDeviceConfiguration."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete unsupportedDeviceConfiguration

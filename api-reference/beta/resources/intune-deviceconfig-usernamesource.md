@@ -3,6 +3,7 @@ title: "usernameSource enum type"
 description: "Username source."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # usernameSource enum type
