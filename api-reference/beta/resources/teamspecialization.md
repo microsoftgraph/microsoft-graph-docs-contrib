@@ -17,4 +17,7 @@ Indicates whether the [team](../resources/team.md) is intended for a particular 
 | Member             | Value | Description                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
 | none               | 0     | Default type for a team which gives the standard team experience.          |
-| unknownFutureValue | 7     | Sentinel value reserved as a placeholder for future expansion of the enum. |
+| EducationStandard  | 1     | Team created by an education user. All teams created by education user are of type Edu. |
+| EducationClass     | 2     | Team experience optimized for a class. This enables segmentation of features across O365. |
+| EducationProfessionalLearningCommunity | 3 | Team experience optimized for a PLC. Learn more about PLC at https://en.wikipedia.org/wiki/Professional_learning_community |
+| EducationStaff     | 4     |  Team type for optimized experience for staff in an institution. Where staff leader, like principal, is admin and teachers are members in a team which comes with a specialized notebook. Learn more the staff notebook at https://www.onenote.com/staffnotebookedu |
