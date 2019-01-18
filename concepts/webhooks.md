@@ -15,15 +15,15 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-- Messages
-- Events
-- Contacts
-- Users
-- Groups
-- Group conversations
-- Content within the hierarchy of any folder on a user's personal OneDrive
-- Content within the hierarchy of the root folder on OneDrive for Business
-- Security Alerts
+- [message][]
+- [event][]
+- [contact][]
+- [user][]
+- [group][]
+- Group [conversation][]
+- Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
+- Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- Security [alert][]
 
 You can create a subscription to a specific Outlook folder such as the Inbox:
 `me/mailFolders('inbox')/messages`
@@ -41,7 +41,7 @@ Or to any folder in a user's personal OneDrive:
 Or to the root folder of a SharePoint/OneDrive for Business drive:
 `/drive/root`
 
-Or to a new [Security API alert](security-concept-overview.md):
+Or to a new [Security API](security-concept-overview.md) alert:
 `/security/alerts?$filter=status eq ‘New’`,
 `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
@@ -244,6 +244,9 @@ The following code samples are available on GitHub.
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
 [event]: /graph/api/resources/event?view=graph-rest-1.0
+[group]: /graph/api/resources/group?view=graph-rest-1.0
 [message]: /graph/api/resources/message?view=graph-rest-1.0
+[user]: /graph/api/resources/user?view=graph-rest-1.0
+[alert]: /graph/api/resources/alert?view=graph-rest-1.0

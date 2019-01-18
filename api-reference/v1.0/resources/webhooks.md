@@ -10,15 +10,15 @@ The Microsoft Graph REST API uses a webhook mechanism to deliver change notifica
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
-- Messages
-- Events
-- Contacts
-- Users
-- Groups
-- Group conversations
-- Content within the hierarchy of any folder on a user's personal OneDrive
-- Content within the hierarchy of the root folder on OneDrive for Business
-- Security alerts
+- [message][]
+- [event][]
+- [contact][]
+- [user][]
+- [group][]
+- Group [conversation][]
+- Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
+- Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
+- Security [alert][]
 
 ## Permissions
 
