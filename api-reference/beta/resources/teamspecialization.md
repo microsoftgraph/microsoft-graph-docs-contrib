@@ -20,4 +20,4 @@ Indicates whether the [team](../resources/team.md) is intended for a particular 
 | educationStandard  | 1     | Team created by an education user. All teams created by education user are of type Edu. |
 | educationClass     | 2     | Team experience optimized for a class. This enables segmentation of features across O365. |
 | educationProfessionalLearningCommunity | 3 | Team experience optimized for a PLC. Learn more about PLC at https://en.wikipedia.org/wiki/Professional_learning_community |
-| educationStaff     | 4     |  Team type for optimized experience for staff in an institution. Where staff leader, like principal, is admin and teachers are members in a team which comes with a specialized notebook. Learn more the staff notebook at https://www.onenote.com/staffnotebookedu |
+| educationStaff     | 4     |  Team type for an optimized experience for staff in an organization, where a staff leader, like a principal, is the admin and teachers are members in a team that comes with a specialized notebook. For more details, see [OneNote staff notebook for education](https://www.onenote.com/staffnotebookedu). |
