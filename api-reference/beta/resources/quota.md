@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Quota
+localization_priority: Normal
 ---
 # quota resource type
 
@@ -42,7 +43,7 @@ Here is a JSON representation of the resource.
 | remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
 | deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
 | state         | string | Enumeration value that indicates the state of the storage space. Read-only. |
-| storagePlanInformation  | [storagePlanInformation](storagePlanInformation.md) | Information about the drive's storage quota plans. Only in Personal OneDrive.|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Information about the drive's storage quota plans. Only in Personal OneDrive.|
 
 ### State enumeration values
 

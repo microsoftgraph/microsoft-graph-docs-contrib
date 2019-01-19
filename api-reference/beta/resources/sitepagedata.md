@@ -3,6 +3,8 @@ author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
 title: SitePageData
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # sitePageData resource
 
@@ -10,7 +12,7 @@ title: SitePageData
 
 The **sitePageData** resource represents the properties of a [webPart][]. As these properties vary by web part, this is an OpenType with no fixed properties.
 
-[webPart]: webPart.md
+[webPart]: webpart.md
 
 ## JSON representation
 

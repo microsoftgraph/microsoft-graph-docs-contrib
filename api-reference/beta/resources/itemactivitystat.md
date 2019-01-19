@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
+localization_priority: Normal
 ---
 # itemActivityStat resource type
 
@@ -48,8 +49,8 @@ The **itemActivityStat** resource provides information about activities that too
 | move             | [itemActionStat][]      | Statistics about the **move** actions in this interval. Read-only.
 | access           | [itemActionStat][]      | Statistics about the **access** actions in this interval. Read-only.
 
-[itemActionStat]: itemActionStat.md
-[incompleteData]: incompleteData.md
+[itemActionStat]: itemactionstat.md
+[incompleteData]: incompletedata.md
 
 ## Relationships
 
@@ -57,7 +58,7 @@ The **itemActivityStat** resource provides information about activities that too
 |:------------------|:----------------------------|:---------------------------
 | activities        | [itemActivity][] collection | Exposes the **itemActivities** represented in this **itemActivityStat** resource.
 
-[itemActivity]: itemActivity.md
+[itemActivity]: itemactivity.md
 
 ## Remarks
 

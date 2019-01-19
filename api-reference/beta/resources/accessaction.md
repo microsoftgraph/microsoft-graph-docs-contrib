@@ -3,6 +3,7 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2018
 title: AccessAction
+localization_priority: Normal
 ---
 # accessAction resource type
 
@@ -12,7 +13,7 @@ The presence of the **accessAction** resource on an [**itemActivity**][activity]
 
 >**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.
 
-[activity]: itemActivity.md
+[activity]: itemactivity.md
 
 ## Properties
 
