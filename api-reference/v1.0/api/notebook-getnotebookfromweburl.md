@@ -56,7 +56,7 @@ Content-type: application/json
 {"webUrl":"webUrl value"}
 ```
 ##### Response
-Here is an example of the response.
+Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -82,14 +82,7 @@ Content-Length: 544
             "href": "href-value"
         }
     },
-    "name": "name-value",
-    "createdBy": "createdBy-value",
-    "createdByIdentity": null,
-    "lastModifiedBy": "lastModifiedBy-value",
-    "lastModifiedByIdentity": null,
-    "lastModifiedTime": "lastModifiedTime-value",
     "id": "id-value",
     "self": "self-value",
-    "createdTime": "createdTime-value"
 }
 ```

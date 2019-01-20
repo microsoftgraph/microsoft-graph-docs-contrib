@@ -84,14 +84,7 @@ Content-Length: 544
             "href": "href-value"
         }
     },
-    "name": "name-value",
-    "createdBy": "createdBy-value",
-    "createdByIdentity": null,
-    "lastModifiedBy": "lastModifiedBy-value",
-    "lastModifiedByIdentity": null,
-    "lastModifiedTime": "lastModifiedTime-value",
     "id": "id-value",
     "self": "self-value",
-    "createdTime": "createdTime-value"
 }
 ```
