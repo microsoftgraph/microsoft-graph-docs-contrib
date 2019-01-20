@@ -67,7 +67,8 @@ Here is an example of the response.
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-Type:"application/json; odata.metadata=minimal"
+Content-Type: application/json; odata.metadata=minimal
+Content-Length: 544
 
 {
     "isDefault": isDefault-boolean-value,
