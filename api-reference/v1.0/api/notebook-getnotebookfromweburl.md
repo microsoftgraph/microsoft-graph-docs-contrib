@@ -71,7 +71,7 @@ Content-Length: 544
 {
     "isDefault": true,
     "userRole": "userRole-value",
-    "isShared": isShared-boolean-value,
+    "isShared": true,
     "sectionsUrl": "sectionUrl-value",
     "sectionGroupsUrl": "sectionGroupUrl-value",
     "links": {
