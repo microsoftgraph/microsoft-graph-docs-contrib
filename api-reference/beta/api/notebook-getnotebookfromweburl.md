@@ -71,7 +71,7 @@ Content-Type: application/json; odata.metadata=minimal
 Content-Length: 544
 
 {
-    "isDefault": isDefault-boolean-value,
+    "isDefault": true,
     "userRole": "userRole-value",
     "isShared": isShared-boolean-value,
     "sectionsUrl": "sectionUrl-value",
