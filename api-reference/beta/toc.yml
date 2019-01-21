@@ -6879,6 +6879,8 @@
           href: api/notebook-copynotebook.md
         - name: Get recent notebooks
           href: api/notebook-getrecentnotebooks.md
+        - name: Get notebook from web url
+          href: api/notebook-getnotebookfromweburl.md
         - name: List sections
           href: api/notebook-list-sections.md
         - name: Create section
