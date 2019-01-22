@@ -22,8 +22,7 @@ intune-troubleshooting-applevpptokentroubleshootingevent?view=graph-rest-beta)<b
 intune-devices-applogcollectionrequest?view=graph-rest-beta)<br/>[windowsUpdateState](/graph/api/resources/
 intune-deviceconfig-windowsupdatestate?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new complex types:<br/>[appLogCollectionDownloadDetails](/graph/api/resources/
-intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>[deviceManagementTroubleshootingErrorDetails](/graph/api/resources/
-intune-troubleshooting-devicemanagementtroubleshootingerrordetails?view=graph-rest-beta)<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/
+intune-devices-applogcollectiondownloaddetails?view=graph-rest-beta)<br/>**deviceManagementTroubleshootingErrorDetails**<br/>[deviceManagementTroubleshootingErrorResource](/graph/api/resources/
 intune-troubleshooting-devicemanagementtroubleshootingerrorresource?view=graph-rest-beta)<br/>[win32LobAppAssignmentSettings](/graph/api/resources/
 intune-apps-win32lobappassignmentsettings?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new enum types:<br/>[appLogDecryptionAlgorithm](/graph/api/resources/
