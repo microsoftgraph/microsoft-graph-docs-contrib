@@ -1,4 +1,7 @@
   name: Graph Docs
+  metadata:
+    experimental: true
+    experiment_id: "b8938daf-1bcb-4f"
   items:
   - name: Overview of Microsoft Graph
     href: overview.md
@@ -102,6 +105,8 @@
           href: outlook-share-messages-folders.md
         - name: Immutable ID (preview)
           href: outlook-immutable-id.md
+        - name: Send mail from another user
+          href: outlook-send-mail-from-other-user.md
       - name: Notes
         href: integrate-with-onenote.md
         items:
@@ -164,6 +169,13 @@
         href: planner-concept-overview.md
       - name: Teamwork
         href: teams-concept-overview.md
+        items:
+        - name: Create a group and team
+          href: teams-create-group-and-team.md
+        - name: List all teams
+          href: teams-list-all-teams.md
+        - name: Configuring built-in tabs
+          href: teams-configuring-builtin-tabs.md
       - name: Workbooks and charts
         href: excel-concept-overview.md
         items:

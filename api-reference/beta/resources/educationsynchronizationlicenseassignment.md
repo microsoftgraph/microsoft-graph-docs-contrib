@@ -2,6 +2,8 @@
 title: "educationSynchronizationLicenseAssignment resource type"
 description: "Represents the license information to assign to user accounts. The resource will be used to set up license assignments when creating new user accounts."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationSynchronizationLicenseAssignment resource type
@@ -23,12 +25,12 @@ Represents the license information to assign to user accounts. The resource will
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment"
+  "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment"
 }-->
 
 ```json
 {
-    "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
     "skuIds": ["String"]
 }
 ```

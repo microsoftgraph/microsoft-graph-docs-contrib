@@ -1,6 +1,9 @@
 ---
 title: "educationSynchronizationCustomizations resource type"
 description: "Contains the list of entities to sync and their customizations, if any."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
 ---
 
 # educationSynchronizationCustomizations resource type
@@ -33,7 +36,7 @@ This resource is member of the following data providers:
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationCustomizations"
+  "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
 }-->
 
 ```json

@@ -3,6 +3,8 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Sync the contents of a drive
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Track changes for a Drive
 
@@ -208,10 +210,9 @@ Content-type: application/json
 * In OneDrive for Business and SharePoint, `delta` is only supported on the `root` folder, not on other folders within a drive.
 
 * Delta will not return the following DriveItem properties:
-
-* **cTag**
-* **lastModifiedBy**
-* **size**
+  * **cTag**
+  * **lastModifiedBy**
+  * **size**
 
 ## Error responses
 
