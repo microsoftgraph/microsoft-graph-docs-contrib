@@ -149,7 +149,7 @@ The second example request creates an Office 365 group with an owner and members
   "name": "create_prepopulated_group"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups
+POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
 {
