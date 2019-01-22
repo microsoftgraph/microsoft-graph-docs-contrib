@@ -31,7 +31,7 @@ intune-devices-applogdecryptionalgorithm?view=graph-rest-beta)<br/>[appLogUpload
 intune-devices-apploguploadstate?view=graph-rest-beta)<br/>[win32LobAppNotification](/graph/api/resources/
 intune-apps-win32lobappnotification?view=graph-rest-beta)<br/>[windowsUpdateStatus](/graph/api/resources/
 intune-deviceconfig-windowsupdatestatus?view=graph-rest-beta)<br/>|
-|Addition|beta|Added the [createDownloadUrl](../api/intune-devices-applogcollectionrequest-createdownloadurl.md?view=graph-rest-beta) action on [appLogCollectionRequest](/graph/api/resources/
+|Addition|beta|Added the [createDownloadUrl](../api/intune-devices-applogcollectionrequest-createdownloadurl?view=graph-rest-beta) action on [appLogCollectionRequest](/graph/api/resources/
 intune-devices-applogcollectionrequest?view=graph-rest-beta) |
 |Deletion|beta|Removed the following entities:<br/>**deviceManagementApplicabilityRuleOsEdition**<br/>**deviceManagementApplicabilityRuleOsVersion**<br/>|
 |Addition|beta|Added the **passwordSignInFailureCountBeforeFactoryReset** property to the [androidCompliancePolicy](/graph/api/resources/

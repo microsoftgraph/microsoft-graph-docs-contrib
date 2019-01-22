@@ -42,7 +42,7 @@ GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [deviceAndAppManagementAssignedRoleIds](../resources/intune-rbac-deviceandappmanagementassignedroleids.md) in the response body.
+If successful, this function returns a `200 OK` response code and a **deviceAndAppManagementAssignedRoleId** in the response body.
 
 ## Example
 ### Request

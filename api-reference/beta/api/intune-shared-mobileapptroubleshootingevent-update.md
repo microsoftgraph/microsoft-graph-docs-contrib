@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the [
 |userId|String|Identifier for the user that tried to enroll the device.|
 
 ## Response
-If successful, this method returns a `200 OK` response code and an updated [mobileAppTroubleshootingEvent](../resources/intune-devices-mobileapptroubleshootingevent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) object in the response body.
 
 ## Example
 

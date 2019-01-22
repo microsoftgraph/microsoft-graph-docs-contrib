@@ -56,7 +56,7 @@ Represents an Azure Active Directory user object.
 |**Troubleshooting**|
 |deviceManagementTroubleshootingEvents|[deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) collection|The list of troubleshooting events for this user.|
 |mobileAppIntentAndStates|[mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) collection|The list of troubleshooting events for this user.|
-|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) collection|The list of mobile app troubleshooting events for this user.|
+|mobileAppTroubleshootingEvents|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) collection|The list of mobile app troubleshooting events for this user.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

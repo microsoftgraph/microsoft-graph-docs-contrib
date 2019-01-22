@@ -47,7 +47,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedAccessMultiModeProfiles|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) collection|Not yet documented|
+|assignedAccessMultiModeProfiles|**windowsAssignedAccessProfile** collection|Not yet documented|
 
 
 
