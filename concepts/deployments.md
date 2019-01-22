@@ -1,11 +1,11 @@
 ---
 title: "National cloud deployments"
-description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services, which are confined within the geographic borders of specific countries and operated by local personnel. To learn more, see Microsoft National Clouds."
+description: "In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services that are confined within the geographic borders of specific countries and operated by local personnel."
 ---
 
 # National cloud deployments
 
-In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services, which are confined within the geographic borders of specific countries and operated by local personnel.
+In addition to our global network of datacenters, Microsoft cloud services are available in three separate national clouds. These national cloud versions are physical and logical network-isolated instances of Microsoft enterprise cloud services that are confined within the geographic borders of specific countries and operated by local personnel.
 
 Current national clouds include:
 
@@ -13,7 +13,7 @@ Current national clouds include:
 - Microsoft Cloud Germany
 - Azure and Office 365 operated by 21Vianet in China
 
-Each national cloud environment is a unique and different environment from the Microsoft global environment. Therefore, it is important to be aware of some key differences while developing your application for these environments such as registering applications, acquiring tokens, and calling Microsoft Graph API.
+Each national cloud environment is a unique environment that is different than the Microsoft global environment. It is important to be aware of some of these key differences when you develop applications for these environments such as registering applications, acquiring tokens, and calling Microsoft Graph API.
 
 This article provides information about the different national cloud deployments of Microsoft Graph and the capabilities within each deployment that are available to developers.
 
