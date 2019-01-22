@@ -13,9 +13,9 @@ Current national clouds include:
 - Microsoft Cloud Germany
 - Azure and Office 365 operated by 21Vianet in China
 
-Each national cloud environment is a unique environment that is different than the Microsoft global environment. It is important to be aware of some of these key differences when you develop applications for these environments such as registering applications, acquiring tokens, and calling Microsoft Graph API.
+Each national cloud environment is unique and different than the Microsoft global environment. It is important to be aware of some of these key differences when you develop applications for national cloud environments; for example, registering applications, acquiring tokens, and calling the Microsoft Graph API can be different.
 
-This article provides information about the different national cloud deployments of Microsoft Graph and the capabilities within each deployment that are available to developers.
+This article provides information about the different Microsoft Graph national cloud deployments and the capabilities that are available to developers within each.
 
 ## App registration and token service root endpoints
 
@@ -23,7 +23,7 @@ Before calling the Microsoft Graph APIs, you should first register your applicat
 
 | National cloud | Azure AD portal endpoint| Azure AD endpoint|
 |---------------------------|----------------|----------------|
-| Azure AD for US Government |https://portal.azure.us|`https://login.microsoftonline.us`|
+|Azure AD for US Government |https://portal.azure.us|`https://login.microsoftonline.us`|
 |Azure AD Germany |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |Azure AD China operated by 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 |Azure AD (global service)|https://portal.azure.com |`https://login.microsoftonline.com`|
