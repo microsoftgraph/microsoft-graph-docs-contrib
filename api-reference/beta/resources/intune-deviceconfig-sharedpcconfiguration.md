@@ -3,16 +3,17 @@ title: "sharedPCConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the sharedPCConfiguration resource."
 localization_priority: Normal
 author: "tfitzmac"
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # sharedPCConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This topic provides descriptions of the declared methods, properties and relationships exposed by the sharedPCConfiguration resource.
+
 
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -37,16 +38,16 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|Specifies how accounts are managed on a shared PC. Only applies when disableAccountManager is false.|
-|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Indicates which type of accounts are allowed to use on a shared PC. Possible values are: `guest`, `domain`.|
-|localStorage|[enablement](../resources/intune-shared-enablement.md)|Specifies whether local storage is allowed on a shared PC. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Indicates which type of accounts are allowed to use on a shared PC. Possible values are: `notConfigured`, `guest`, `domain`.|
+|localStorage|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies whether local storage is allowed on a shared PC. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |allowLocalStorage|Boolean|Specifies whether local storage is allowed on a shared PC.|
-|setAccountManager|[enablement](../resources/intune-shared-enablement.md)|Disables the account manager for shared PC mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|setAccountManager|[enablement](../resources/intune-deviceconfig-enablement.md)|Disables the account manager for shared PC mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disableAccountManager|Boolean|Disables the account manager for shared PC mode.|
-|setEduPolicies|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the default shared PC education environment policies should be enabled/disabled/not configured. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|setEduPolicies|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies whether the default shared PC education environment policies should be enabled/disabled/not configured. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disableEduPolicies|Boolean|Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true.|
-|setPowerPolicies|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the default shared PC power policies should be enabled/disabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|setPowerPolicies|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies whether the default shared PC power policies should be enabled/disabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disablePowerPolicies|Boolean|Specifies whether the default shared PC power policies should be disabled.|
-|signInOnResume|[enablement](../resources/intune-shared-enablement.md)|Specifies the requirement to sign in whenever the device wakes up from sleep mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|signInOnResume|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies the requirement to sign in whenever the device wakes up from sleep mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disableSignInOnResume|Boolean|Disables the requirement to sign in whenever the device wakes up from sleep mode.|
 |enabled|Boolean|Enables shared PC mode and applies the shared pc policies.|
 |idleTimeBeforeSleepInSeconds|Int32|Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents the sleep timeout from occurring.|
@@ -111,7 +112,6 @@ Here is a JSON representation of the resource.
   "maintenanceStartTime": "String (time of day)"
 }
 ```
-
 
 
 

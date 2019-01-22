@@ -1,18 +1,19 @@
 ---
 title: "windowsManagedDevice resource type"
 description: "Windows devices that are managed or pre-enrolled through Intune"
-author: "tfitzmac"
 localization_priority: Normal
-ms.prod: "intune"
+author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # windowsManagedDevice resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Windows devices that are managed or pre-enrolled through Intune
+
 
 Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 
@@ -100,7 +101,7 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|All applications currently installed on the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## JSON Representation
@@ -278,7 +279,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 
