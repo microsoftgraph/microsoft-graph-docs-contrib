@@ -157,6 +157,8 @@ Content-Type: application/json
 
 ### Example 2: Deep insert
 
+This example creates a new activity and a history item for that activity in one request.
+
 #### Request
 
 The following is an example of the request.

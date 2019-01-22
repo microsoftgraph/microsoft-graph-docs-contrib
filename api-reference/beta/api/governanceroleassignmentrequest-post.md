@@ -51,15 +51,15 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 In the request body, supply a JSON representation of a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) object.
 
-| Property         | Type                                                     | Required | Description |
-|:-----------------|:---------------------------------------------------------|:---------|:--|
-| resourceId       | String                                                   | Yes      | The ID of the resource. |
-| roleDefinitionId | String                                                   | Yes      | The ID of the role definition. |
-| subjectId        | String                                                   | Yes      | The ID of the subject. |
-| assignmentState  | String                                                   | Yes      | The state of assignment. The value can be ``Eligible`` and ``Active``. |
-| type             | String                                                   | Yes      | The request type. The value can be `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`and `AdminExtend`. |
-| reason           | String                                                   |          | The reason needs to be provided for the role assignment request for audit and review purpose. |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) |          | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required. |
+| Property         | Type                                                     | Description |
+|:-----------------|:---------------------------------------------------------|:--|
+| resourceId       | String                                                   | The ID of the resource. Required. |
+| roleDefinitionId | String                                                   | The ID of the role definition. Required. |
+| subjectId        | String                                                   | The ID of the subject. Required. |
+| assignmentState  | String                                                   | The state of assignment. The value can be `Eligible` and `Active`. Required. |
+| type             | String                                                   | The request type. The value can be `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`and `AdminExtend`. Required. |
+| reason           | String                                                   | The reason needs to be provided for the role assignment request for audit and review purpose. |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | The schedule of the role assignment request. For request type of `UserAdd`, `AdminAdd`, `AdminUpdate`, and `AdminExtend`, it is required. |
 
 ## Response
 

@@ -123,7 +123,7 @@ Content-type: application/json
 
 #### Request
 
-This example uses the `Prefer: outlook.timezone` header to specify displaying date-time properties in the response in Pacific Standard Time.
+This example uses the `Prefer: outlook.timezone` header to specify that the API should return date-time properties in the response in Pacific Standard Time.
 
 <!-- {
   "blockType": "request",
@@ -137,7 +137,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### Response
 
-Here is an example of the response. The date-time properties in the response are displayed in the specified Pacific Standard Time.
+Here is an example of the response. The date-time properties in the response are returned in the specified Pacific Standard Time.
 
 > **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
