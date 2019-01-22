@@ -162,11 +162,11 @@ Content-Type: application/json
   "mailNickname": "operations2019",
   "securityEnabled": false,
   "owners@odata.bind": [
-    "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
+    "https://graph.microsoft.com/beta/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ],
   "members@odata.bind": [
-    "https://graph.microsoft.com/v1.0/users/ff7cb387-6688-423c-8188-3da9532a73cc",
-    "https://graph.microsoft.com/v1.0/users/69456242-0067-49d3-ba96-9de6f2728e14"
+    "https://graph.microsoft.com/beta/users/ff7cb387-6688-423c-8188-3da9532a73cc",
+    "https://graph.microsoft.com/beta/users/69456242-0067-49d3-ba96-9de6f2728e14"
   ]
 }
 ```
@@ -185,7 +185,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
     "id": "502df398-d59c-469d-944f-34a50e60db3f",
     "deletedDateTime": null,
     "classification": null,
