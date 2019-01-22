@@ -30,17 +30,17 @@ Before calling the Microsoft Graph APIs, you should first register your applicat
 
 To learn more about Azure AD access tokens and Microsoft Graph, see [get auth tokens](./auth-overview.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
 
-> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview) are available on the global service only; they are not yet supported for use with national cloud deployments.
+> **Note:** The [Azure AD v2.0 authorization and token endpoints](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) are available on the global service only; they are not yet supported for use with national cloud deployments.
 
 
-## Microsoft Graph and Microsoft Graph Explorer service root endpoints
+## Microsoft Graph and Graph Explorer service root endpoints
 
-The following table shows the service root endpoints for Microsoft Graph and Microsoft Graph Explorer for each national cloud.
+The following table shows the service root endpoints for Microsoft Graph and [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) for each national cloud.
 
-| National Cloud | Microsoft Graph | Microsoft Graph Explorer |
+| National Cloud | Microsoft Graph | Graph Explorer |
 |---------------------------|----------------|----------------|
-| Microsoft Graph for US Government | https://graph.microsoft.us | Not supported |
-| Microsoft Graph Germany | https://graph.microsoft.de | Not supported |
+| Microsoft Graph for US Government | https://graph.microsoft.us | Not supported. |
+| Microsoft Graph Germany | https://graph.microsoft.de | Not supported. |
 | Microsoft Graph China operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Microsoft Graph global service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
@@ -48,7 +48,7 @@ The following table shows the service root endpoints for Microsoft Graph and Mic
 
 ## Supported features
 
-The following Microsoft Graph features are generally available on the `/v1.0` endpoint across all national cloud deployments, except where noted:
+The following Microsoft Graph features are generally available on the `/v1.0` endpoint across all national cloud deployments, except where noted.
 
 | Microsoft Graph features | Microsoft Cloud for US Government | Microsoft Cloud China operated by 21Vianet | Microsoft Cloud Germany |
 |---------------------------|----------------|----------------|----------------|
@@ -74,7 +74,7 @@ The following additional Microsoft Graph features are available in preview (on t
 
 (*) Limited support for this API in this cloud.
 
- > **IMPORTANT:** Certain services and features that are in specific regions of the global service might not be available in all of the National clouds. To find out what services are available, go to [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast)
+ > **IMPORTANT:** Certain services and features that are in specific regions of the global service might not be available in all of the national clouds. To find out what services are available, see [products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
 
 
 To learn more about National clouds, see the following topics:
