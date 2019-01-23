@@ -11,13 +11,14 @@ ms.prod: "onenote"
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object using its url path.
+
+The location can be user notebooks on Office 365, group notebooks, or SharePoint site-hosted team notebooks on Office 365
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Notes.Create, Notes.Read, Notes.ReadWrite    |
 |Application | Notes.Read.All, Notes.ReadWrite.All |
 
 ## HTTP request
@@ -52,7 +53,7 @@ Here is an example of the request.
   "name": "notebook_fromweburl"
 }-->
 ```http
-POST /me/onenote/notebooks/GetNotebookFromWebUrl
+POST https://graph.microsoft.com/beta/me/onenote/notebooks/GetNotebookFromWebUrl
 Content-type: application/json
 
 {"webUrl":"webUrl value"}
