@@ -49,7 +49,7 @@ In the request body, supply one or an array of JSON objects with the following p
 >**Note:** The request body can have multiple objects, each with an ID parameter that allows multiple sites to follow per request. 
 
 
-## Example
+## Examples
 
 ### Example 1: Follow one site
 
