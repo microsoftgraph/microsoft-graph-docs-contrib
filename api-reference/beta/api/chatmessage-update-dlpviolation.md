@@ -34,14 +34,14 @@ In the request body, supply the properties for the Data Loss Prevention (DLP) vi
 | justificationText | String | Justification text provided by the sender of message. When the DLP app is updating the message for blocking sensitive content, justificationText is not required in the request payload. |
 
 
-#### policyTip JSON 
+### policyTip JSON 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 | generalText | string | The explanatory text shown to the sender of the message that was flagged. |
 | complianceUrl | string | The URL that represents the DLP policies of the organization or a page the admin chooses to configure to provide more information about DLP policies in the organization. |
 | matchedConditionDescriptions | IEnumerable\<string\> | The set of sensitive types that were a match during classification of the given message. The values are defined by the DLP app. Example: Credit Card Information, Social Security Number.|
 
-#### verdictDetails enum
+### verdictDetails enum
 
 | Property	   | Int value |  Description |
 |:---------------|:--------|:----------|
@@ -50,7 +50,7 @@ In the request body, supply the properties for the Data Loss Prevention (DLP) vi
 | AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to ```AllowOverrideWithJustification```. |
 | AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to ```AllowOverrideWithoutJustification```. |
 
-#### dlpAction enum
+### dlpAction enum
 | Property	   | Int value |  Description |
 |:---------------|:--------|:----------|
 | None | 0 | Default value. This is the value on a message which has not yet been evaluated by DLP processing or has been evaluated but is a pass.|
@@ -58,7 +58,7 @@ In the request body, supply the properties for the Data Loss Prevention (DLP) vi
 | BlockAccess | 2 | Message is blocked from being sent based on DLP processing. |
 | BlockAccessExternal  | 4 | Message is blocked from being sent only if there are external users in the conversation thread. This is currently unused and Teams treat BlockAccessExternal as ```BlockAccess```. |
 
-#### userAction enum
+### userAction enum
 | Property	   | Int value |  Description |
 |:---------------|:--------|:----------|
 | None | 0 | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
@@ -71,7 +71,7 @@ In the request body, supply the properties for the Data Loss Prevention (DLP) vi
 If successful, this method returns a `200 OK` response.
 ## Example
 ##### Request
-The following is an example of the request for updating DLP properties on a Teams channel message.
+The following is an example of the request for updating DLP properties on a Microsoft Teams channel message.
 <!-- {
   "blockType": "request",
   "name": "chatMessage.PatchPolicyViolation.All"
