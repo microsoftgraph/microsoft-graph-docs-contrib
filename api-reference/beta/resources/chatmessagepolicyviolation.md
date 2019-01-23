@@ -1,9 +1,9 @@
 ---
 title: "Update chatMessage with DLP violations"
 description: "Update a chatMessage with a Data Loss Prevention (DLP) policy violation."
-author: nkramer
+author: "nkramer"
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: "microsoft-teams"
 ---
 
 # chatMessagePolicyViolation resource type
