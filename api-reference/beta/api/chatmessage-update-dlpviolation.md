@@ -77,7 +77,7 @@ The following is an example of the request for updating DLP properties on a Micr
   "name": "chatMessage.PatchPolicyViolation.All"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{group-id}/channels/{channel-id}/messages/{message-id}
+PATCH https://graph.microsoft.com/beta/teams/{group-id}/channels/{channel-id}/messages/{message-id}
 Content-type: application/json
 Content-length: 248
 {
