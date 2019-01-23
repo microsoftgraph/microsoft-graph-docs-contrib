@@ -18,7 +18,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |[Get Channel message](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Get a single root message from a channel.|
 |[List replies to a message](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) collection| Get the list of all replies to a message in channel.|
 |[Get a reply to a message](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Get a single reply to a message in a channel.|
-|[Update DLP violation](../api/chatmessage-update-dlpviolation.md) | http response status| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
+|[Update DLP violation](../api/chatmessage-update-dlpviolation.md) | none| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
 
 ## Properties
 | Property	   | Type	|Description|
