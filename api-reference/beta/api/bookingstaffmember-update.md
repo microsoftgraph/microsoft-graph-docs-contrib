@@ -1,6 +1,6 @@
 ---
 title: "Update bookingstaffmember"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Update the properties of a bookingStaffMember in the specified bookingbusiness."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
@@ -9,7 +9,7 @@ ms.prod: "bookings"
 # Update bookingstaffmember
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 Update the properties of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingbusiness](../resources/bookingbusiness.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  | 
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +64,7 @@ Content-type: application/json
             "day":"monday",
             "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
             "timeSlots":[
-   
+
             ]
         },
         {
@@ -123,7 +123,7 @@ Content-type: application/json
 }
 ```
 ##### Response
-The following is an example of the response. 
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

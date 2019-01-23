@@ -1,6 +1,6 @@
 ---
 title: "Delete bookingBusiness"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Delete a bookingBusiness object."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
@@ -9,7 +9,7 @@ ms.prod: "bookings"
 # Delete bookingBusiness
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+
 Delete a [bookingBusiness](../resources/bookingbusiness.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  | 
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
 ```
 ##### Response
-The following is an example of the response. 
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

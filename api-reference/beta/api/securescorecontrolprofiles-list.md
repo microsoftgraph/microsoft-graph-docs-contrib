@@ -1,6 +1,6 @@
 ---
 title: "List secureScoreControlProfiles"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Retrieve the properties and relationships of a secureScoreControlProfiles object."
 localization_priority: Normal
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Update alert"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"

@@ -1,6 +1,6 @@
 ---
 title: "bookingAppointment: cancel"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Cancel the specified bookingAppointment in the specified bookingbusiness, and send a message to the involved customer and staff members."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
@@ -8,8 +8,8 @@ ms.prod: "bookings"
 
 # bookingAppointment: cancel
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Cancel the specified [bookingAppointment](../resources/bookingappointment.md) in the specified [bookingbusiness](../resources/bookingbusiness.md), and send a message to the involved customer and staff members.
 
 ## Permissions
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  | 
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -62,7 +62,7 @@ Content-type: application/json
 ```
 
 ##### Response
-The following is an example of the response. 
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

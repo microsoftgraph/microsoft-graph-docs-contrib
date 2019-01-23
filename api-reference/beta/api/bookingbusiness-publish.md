@@ -1,6 +1,6 @@
 ---
 title: "bookingBusiness: publish"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Make the scheduling page of this business available to external customers."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
@@ -9,8 +9,8 @@ ms.prod: "bookings"
 # bookingBusiness: publish
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
-Make the scheduling page of this business available to external customers. 
+
+Make the scheduling page of this business available to external customers.
 
 Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.
 
@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  |  
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M36
 ```
 
 ##### Response
-The following is an example of the response. 
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
