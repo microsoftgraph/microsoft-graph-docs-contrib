@@ -36,6 +36,7 @@ The following Graph resources are shared between Intune workflows:
 - [IPv6 range](intune-shared-ipv6range.md)
 - [Key/value pair](intune-shared-keyvaluepair.md)
 - [MIME content](intune-shared-mimecontent.md)
+- [Mobile app troubleshooting event](intune-shared-mobileapptroubleshootingevent.md)
 - [Proxied domain](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [Report root](intune-shared-reportroot.md)
