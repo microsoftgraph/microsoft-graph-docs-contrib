@@ -1,3 +1,11 @@
+---
+title: "educationPowerSchoolDataProvider resource"
+description: "Used to set up the school data synchronization profile when PowerSchool is used as the input source."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+---
+
 # educationPowerSchoolDataProvider resource
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -24,12 +32,12 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider"
+  "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider",
+    "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
     "connectionUrl": "String",
     "clientId": "String",
     "clientSecret": "String",

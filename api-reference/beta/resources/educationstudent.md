@@ -1,3 +1,11 @@
+---
+title: "educationStudent resource type"
+description: "Additional information added to an educationUser that is present when the primaryRole of a user is `student`."
+author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
+---
+
 # educationStudent resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
@@ -9,7 +17,7 @@ Additional information added to an [educationUser](educationuser.md) that is pre
 |:---------------|:--------|:----------|
 |birthDate|Date| Birth date of the student.|
 |externalId|String| ID of the student in the source system.|
-|gender|`educationGender enumeration`| Possible values are: `female`, `male`, `other`, `unkownFutureValue`.|
+|gender|educationGender| Possible values are: `female`, `male`, `other`, `unkownFutureValue`.|
 |grade|String|Current grade level of the student.|
 |graduationYear|String| Year the student is graduating from the school.|
 |studentNumber|String| Student Number.|
