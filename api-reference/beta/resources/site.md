@@ -45,7 +45,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 | Property name            | Type               | Description
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | string             | The [unique identifier](#site's-id) of the item. Read-only.
+| **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
 | **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
 | **description**          | string             | The descriptive text for the site.
 | **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
@@ -57,13 +57,13 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | **siteCollection**       | [siteCollection][] | Provides details about the site's site collection. Available only on the root site. Read-only.
 | **webUrl**               | string (url)       | URL that displays the item in the browser. Read-only.
 
-### Site's Id
-A **site** is addressed by a unique identifier which is a composite ID of the following values:
+### id property
+A **site** is identified by a unique ID that is a composite of the following values:
 * Site collection hostname (contoso.sharepoint.com)
 * Site collection unique ID (GUID)
 * Site unique ID (GUID)
   
-There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:
+The `root` identifier always references the root site for a given target, as follows:
 
 * `/sites/root`: The tenant root site.
 * `/groups/{group-id}/sites/root`: The group's team site.
