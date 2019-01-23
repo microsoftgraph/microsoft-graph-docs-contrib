@@ -26,30 +26,46 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
+### Unfollow one site
 ```http
 DELETE https://graph.microsoft.com/beta/users/{user-id}/followingSites
+```
+### Unfollow multiple sites
+```http
+DELETE https://graph.microsoft.com/beta/users/{user-id}/followingSites/batch
 ```
 
 ## Request body
 
-In the request body, supply an array of JSON objects with the following parameter. 
+In the request body, supply one or an array of JSON objects with the following parameter. 
 
 
 | Name    | Value  | Description                                                  |
 |:------- |:-------|:-------------------------------------------------------------|
-|   Id    | string | A composite id of the hostname, site-id, web-id of the site. |
+|   Id    | string | The [unique identifier](../resources/site.md#site's-id) of the item. |
 
-**Note:** The request body can have multiple objects with an Id that allows to unfollow multiple sites.
+**Note:** The request body can have multiple objects each with Id parameter that allows multiple sites to unfollow per request. 
 
 
 ## Example
 
-Here is an example of how to unfollow multiple sites. 
+An example of how to unfollow one site.
 
-<!-- { "blockType": "request", "name": "unfollow-sites", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
 DELETE /users/{user-id}/followingSites
+Content-Type: application/json
+
+{
+    "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"
+}
+```
+
+An example of how to unfollow multiple sites. 
+
+```http
+DELETE /users/{user-id}/followingSites/batch
 Content-Type: application/json
 
 {
@@ -63,8 +79,45 @@ Content-Type: application/json
 
 ## Response
 
+### Unfollow one site 
+
 If successful, this method returns a 204 status code with no content.  
-If an [error][] occured, this method returns a 207 status code and the response body will have the [error][] object and siteId. 
+If an error occured, this method returns the information of the [error][].
+
+### Unfollow multiple sites 
+If successful, this method returns a 204 status code with no content.  
+If an error occured, this method returns a 207 status code and the response body will have the [error][] object and siteId. 
+
+<!-- { "blockType": "response" } -->
+
+```json
+HTTP/1.1 204 No Content
+Content-type: application/json
+```
+
+```json
+HTTP/1.1 207 Multi-Status
+Content-type: application/json
+{
+    "value": [
+        {
+            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
+            "error": {
+                "@odata.type": "#oneDrive.error",
+                "code": "invalidRequest",
+                "message": "The site Id information that is provided in the request is incorrect",
+                "innerError": {
+                    "code": "invalidRequest",
+                    "errorType": "expected",
+                    "message": "The site Id information that is provided in the request is incorrect",
+                    "stackTrace": "",
+                    "throwSite": "a123b_ULS"
+                }
+            }
+        }
+    ]
+}
+```
 
 [site]: ../resources/site.md
 [error]: ../../../concepts/errors.md

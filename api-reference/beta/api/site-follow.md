@@ -26,30 +26,46 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
+### Follow one site
 ```http
 POST https://graph.microsoft.com/beta/users/{user-id}/followingSites
+```
+### Follow multiple sites
+```http
+POST https://graph.microsoft.com/beta/users/{user-id}/followingSites/batch
 ```
 
 ## Request body
 
-In the request body, supply an array of JSON objects with the following parameter. 
+In the request body, supply one or an array of JSON objects with the following parameter. 
 
 
 | Name    | Value  | Description                                                  |
 |:------- |:-------|:-------------------------------------------------------------|
-|   Id    | string | A composite id of the hostname, site-id, web-id of the site. |
+|   id    | string | The [unique identifier](../resources/site.md#site's-id) of the item. |
 
-**Note:** The request body can have multiple objects with an Id that allows to follow multiple sites.
+**Note:** The request body can have multiple objects each with Id parameter that allows multiple sites to follow per request. 
 
 
 ## Example
 
-Here is an example of how to follow multiple sites. 
+An example of how to follow one site.
 
-<!-- { "blockType": "request", "name": "follow-sites", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
 POST /users/{user-id}/followingSites
+Content-Type: application/json
+
+{
+    "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"
+}
+```
+
+An example of how to follow multiple sites. 
+
+```http
+POST /users/{user-id}/followingSites/batch
 Content-Type: application/json
 
 {
@@ -63,20 +79,47 @@ Content-Type: application/json
 
 ## Response
 
-If successful, this method returns an array of the sites that were followed.  
-If an [error][] occured, this method returns a 207 status code and the response body will have the [error][] object and siteId. 
+### Follow one site  
+
+If successful, this method returns a site object that was followed.  
 
 <!-- { "blockType": "response" } -->
 
 ```json
-HTTP/1.1 202 OK
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context":"http://sp-my.devinstall/personal/contoso_sharepoint_com/_api/v2.1/$metadata#followingSites/$entity",
+    "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
+    "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed",
+    "title": "SiteFollowed",
+    "sharepointIds": {
+        "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
+        "siteUrl": "http://contoso.sharepoint.com/sites/SiteFollowed",
+        "webId": "712a596e-90a1-49e3-9b48-bfa80bee8740"
+    },
+    "siteCollection": {
+        "hostName": "contoso.sharepoint.com"
+    }
+}
+```
+
+If an error occured, this method returns the information of the [error][]. 
+
+### Follow multiple sites  
+If successful, this method returns an array of site objects that were followed.  
+
+<!-- { "blockType": "response" } -->
+
+```json
+HTTP/1.1 200 OK
 Content-type: application/json
 {
     "value": [
         {
             "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
             "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed",
-            "title": "LenaAdelSite",
+            "title": "SiteFollowed",
             "sharepointIds": {
                 "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
                 "siteUrl": "http://contoso.sharepoint.com/sites/SiteFollowed",
@@ -89,6 +132,34 @@ Content-type: application/json
     ]
 }
 ```
+
+If an error occured, this method returns a 207 status code and the response body will have the [error][] object and siteId. 
+
+<!-- { "blockType": "response" } -->
+
+```json
+HTTP/1.1 207 Multi-Status
+Content-type: application/json
+{
+    "value": [
+        {
+            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
+            "error": {
+                "@odata.type": "#oneDrive.error",
+                "code": "invalidRequest",
+                "message": "The site Id information that is provided in the request is incorrect",
+                "innerError": {
+                    "code": "invalidRequest",
+                    "errorType": "expected",
+                    "message": "The site Id information that is provided in the request is incorrect",
+                    "stackTrace": "",
+                    "throwSite": ""
+                }
+            }
+        }
+    ]
+}
+```  
 
 [site]: ../resources/site.md
 [error]: ../../../concepts/errors.md
