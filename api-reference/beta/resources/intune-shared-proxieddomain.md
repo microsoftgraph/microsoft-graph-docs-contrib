@@ -1,6 +1,6 @@
 ---
 title: "proxiedDomain resource type"
-description: "Proxied Domain"
+description: "Describes the proxiedDomain resource of the Microsoft Graph API for Intune, which supports multiple workflows."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"
