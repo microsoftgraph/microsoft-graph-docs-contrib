@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### Path Parameters
+### Path parameters
 
 | Parameter Name                 | Value    | Description                                                                         |
 |:-------------------------------|:---------|:------------------------------------------------------------------------------------|
@@ -58,7 +58,8 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 |:-----------|:-------|:---------------------------------------------------------------|
 | **Prefer** | string | Optional. Set to one of the `prefer` values documented below.  |
 
-**Prefer** header values
+### Prefer header values
+
 | Name                          | Description                                                                                             |
 |:------------------------------|:--------------------------------------------------------------------------------------------------------|
 | redeemSharingLink             | If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item    |
