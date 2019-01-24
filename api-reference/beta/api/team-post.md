@@ -148,7 +148,7 @@ Content-Type: application/json
         "allowChannelMentions": true
     },
     "discoverySettings": {
-        "showInSearchAndSuggestions": true
+        "showInTeamsSearchAndSuggestions": true
     },
     "installedApps": [
         {

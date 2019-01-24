@@ -73,7 +73,7 @@ Content-type: application/json
     "giphyContentRating": "strict"
   },
   "discoverySettings": {
-    "showInSearchAndSuggestions": true
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```
@@ -120,7 +120,7 @@ Content-length: 401
     "allowCustomMemes": true
   },
   "discoverySettings": {
-    "showInSearchAndSuggestions": true
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```

@@ -62,7 +62,7 @@ Content-length: 211
     "giphyContentRating": "strict"
   },
   "discoverySettings": {
-    "showInSearchAndSuggestions": true
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```

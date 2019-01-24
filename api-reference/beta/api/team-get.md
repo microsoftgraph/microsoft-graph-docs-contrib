@@ -89,7 +89,7 @@ Content-length: 401
     "allowCustomMemes": true
   },
   "discoverySettings": {
-    "showInSearchAndSuggestions": true
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```

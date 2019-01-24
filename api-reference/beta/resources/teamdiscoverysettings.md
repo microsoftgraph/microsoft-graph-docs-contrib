@@ -12,7 +12,7 @@ Settings to configure [team](team.md) discoverability by others. A team's discov
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|showInSearchAndSuggestions|Boolean|If set to true, the team is visible via search and suggestions from the Teams client.|
+|showInTeamsSearchAndSuggestions|Boolean|If set to true, the team is visible via search and suggestions from the Teams client.|
 
 ## JSON representation
 
@@ -25,7 +25,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "showInSearchAndSuggestions": true
+  "showInTeamsSearchAndSuggestions": true
 }
 ```
 
