@@ -1775,6 +1775,13 @@
 	  <Item text="List group setting templates" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_list" />
 	  <Item text="Get group setting template" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_get" />
 	</Item>
+ <Item text="Identity provider" url="/en-us/api-reference/v1.0/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
+        <Item text="List identity providers" url="/en-us/api-reference/v1.0/api/identityprovider_list" SEODescription="List all identityProviders configured within the directory." />
+        <Item text="Create identity provider" url="/en-us/api-reference/v1.0/api/identityprovider_post_identityproviders" SEODescription="Create a new identityProvider." />
+        <Item text="Get identity provider" url="/en-us/api-reference/v1.0/api/identityprovider_get" SEODescription="Get an identityProvider by id." />
+        <Item text="Upate identity provider" url="/en-us/api-reference/v1.0/api/identityprovider_update" SEODescription="Update the properties of an identityProvider." />
+        <Item text="Delete identity provider" url="/en-us/api-reference/v1.0/api/identityprovider_delete" SEODescription="Delete an existing identityProvider." />
+      </Item>   
 	<Item text="Invitation manager" url="/en-us/api-reference/v1.0/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
       <Item text="Create invitation" url="/en-us/api-reference/v1.0/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
     </Item>
@@ -5733,14 +5740,14 @@
 		<Item text="Get" url="/en-us/api-reference/beta/api/riskyusers_get" />
 	  </Item>
     </Item>
-      <Item text="Identity provider" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
-        <Item text="List identity providers" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="List all identityProviders configured within the directory." />
-        <Item text="Create identity provider" url="/en-us/api-reference/beta/api/identityprovider_post_identityproviders" SEODescription="Create a new identityProvider." />
-        <Item text="Get identity provider" url="/en-us/api-reference/beta/api/identityprovider_get" SEODescription="Get an identityProvider by id." />
-        <Item text="Upate identity provider" url="/en-us/api-reference/beta/api/identityprovider_update" SEODescription="Update the properties of an identityProvider." />
-        <Item text="Delete identity provider" url="/en-us/api-reference/beta/api/identityprovider_delete" SEODescription="Delete an existing identityProvider." />
-      </Item>
-      <Item text="Invitation manager" url="/en-us/api-reference/beta/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
+    <Item text="Identity provider" url="/en-us/api-reference/beta/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
+      <Item text="List identity providers" url="/en-us/api-reference/beta/api/identityprovider_list" SEODescription="List all identityProviders configured within the directory." />
+      <Item text="Create identity provider" url="/en-us/api-reference/beta/api/identityprovider_post_identityproviders" SEODescription="Create a new identityProvider." />
+      <Item text="Get identity provider" url="/en-us/api-reference/beta/api/identityprovider_get" SEODescription="Get an identityProvider by id." />
+      <Item text="Upate identity provider" url="/en-us/api-reference/beta/api/identityprovider_update" SEODescription="Update the properties of an identityProvider." />
+      <Item text="Delete identity provider" url="/en-us/api-reference/beta/api/identityprovider_delete" SEODescription="Delete an existing identityProvider." />
+    </Item>
+    <Item text="Invitation manager" url="/en-us/api-reference/beta/resources/invitation" SEODescription="Use the invitation manager to create an invite to add an external user to the organization's directory. " >
         <Item text="Create invitation" url="/en-us/api-reference/beta/api/invitation_post" SEODescription="Creates a new invitation to add an external user to the organization's directory." />
       </Item>
 
