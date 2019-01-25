@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # Create single-value extended property
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create one or more single-value extended properties in a new or existing instance of a resource. 
 
@@ -154,16 +154,16 @@ PATCH /groups/{id}/events/{id}
 ## Request body
 
 Provide a JSON body of each [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object in the 
-**singleValueExtendedProperties** collection property of the resource instance.
+**singleValueLegacyExtendedProperty** collection property of the resource instance.
 
 |**Property**|**Type**|**Description**|
 |:-----|:-----|:-----|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| An array of one or more single-valued extended properties. |
-|id|String|For each property in the **singleValueExtendedProperties** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
-|value|string|For each property in the **singleValueExtendedProperties** collection, specify the property value. Required.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) collection| An array of one or more single-valued extended properties. |
+|id|String|For each property in the **singleValueLegacyExtendedProperty** collection, specify this to identify the property. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
+|value|string|For each property in the **singleValueLegacyExtendedProperty** collection, specify the property value. Required.|
 
 When creating an extended property in a _new_ resource instance, in addition to the 
-new **singleValueExtendedProperties** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
+new **singleValueLegacyExtendedProperty** collection, provide a JSON representation of that resource instance (that is, a [message](../resources/message.md), 
 [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 
 ## Response
@@ -189,7 +189,7 @@ a response code but not the new post nor the extended property.
 ##### Request 1
 
 The first example creates a new event and a single-value extended property in the same POST operation. Apart from the properties you'd normally 
-include for a new event, the request body includes the **singleValueExtendedProperties** collection that contains one single-value 
+include for a new event, the request body includes the **singleValueLegacyExtendedProperty** collection that contains one single-value 
 extended property, and the following for the property:
 
 - **id** specifies the property type as `String`, the GUID, and the property named `Fun`.
@@ -223,7 +223,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "singleValueExtendedProperties": [
+  "singleValueLegacyExtendedProperty": [
      {
            "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
            "value":"Food"
@@ -246,7 +246,7 @@ To see the newly created extended property, [get the event expanded with the ext
 ##### Request 2
 
 The second example creates one single-value extended property for the specified existing message. That extended property is the only
-element in the **singleValueExtendedProperties** array. The request body includes the following for the 
+element in the **singleValueLegacyExtendedProperty** array. The request body includes the following for the 
 extended property:
 - **id** specifies the property type as `String`, the GUID, and the property named `Color`.
 - **value** specifies `Green` as the value of the `Color` property.
@@ -258,7 +258,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA='
 Content-Type: application/json
 
 {
-  "singleValueExtendedProperties": [
+  "singleValueLegacyExtendedProperty": [
       {
          "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
          "value":"Green"
@@ -278,11 +278,16 @@ To see the newly created extended property, [get the message expanded with the e
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a single-value extended property",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 

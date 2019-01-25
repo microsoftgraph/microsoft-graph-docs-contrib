@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # rangeView resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 RangeView represents a set of visible cells of the parent range.
 
@@ -23,6 +23,7 @@ RangeView represents a set of visible cells of the parent range.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|cellAddresses|Json|Represents the cell addresses
 |columnCount|Int32|Returns the number of visible columns. Read-only.|
 |formulas|Json|Represents the formula in A1-style notation.	|
 |formulasLocal|Json|Represents the formula in A1-style notation, in the user's language and number-formatting locale. For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.	|
@@ -31,7 +32,7 @@ RangeView represents a set of visible cells of the parent range.
 |numberFormat|Json|Represents Excel's number format code for the given cell. Read-only.	|
 |rowCount|Int32|Returns the number of visible rows. Read-only.	|
 |text|Json|Text values of the specified range. The Text value will not depend on the cell width. The # sign substitution that happens in Excel UI will not affect the text value returned by the API. Read-only.	|
-|valueTypes|Json|Represents the type of data of each cell. Read-only. Possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.	|
+|valueTypes|Json|Represents the type of data of each cell. Read-only. The possible values are: Unknown, Empty, String, Integer, Double, Boolean, Error.	|
 |values|Json|Represents the raw values of the specified range view. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.	|
 
 ## Relationships
@@ -43,6 +44,7 @@ RangeView represents a set of visible cells of the parent range.
 Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.workbookRangeView"
 }-->
@@ -62,3 +64,11 @@ Here is a JSON representation of the resource.
   "values": "Json"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/workbookrangeview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

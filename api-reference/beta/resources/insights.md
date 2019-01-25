@@ -1,5 +1,5 @@
 ---
-title: "insights resource type"
+title: "officeGraphInsights resource type"
 description: "Insights are relationships calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive documents trending around users."
 author: "simonhult"
 localization_priority: Priority
@@ -8,7 +8,7 @@ ms.prod: "insights"
 
 # insights resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Insights are relationships calculated using advanced analytics and machine learning techniques. You can, for example, identify OneDrive documents trending around users.
 
@@ -24,13 +24,23 @@ Each insight is returned with a `resourceVisualization` and `resourceReference` 
 
 | Relationship      | Type          | Description  |
 | ------------- |---------------| -------------|
-| trending    	| [Trending](insights-trending.md) collection		| Calculated relationship identifying trending documents. Trending documents can be stored in OneDrive or in SharePoint sites.	 |
-| used    	| [Used](insights-used.md) collection		| Calculated relationship identifying documents viewed and modified by a user. Includes documents the user used in OneDrive for Business, SharePoint, opened as email attachments, and as link attachments from sources like Box, DropBox and Google Drive.	 |
-| shared    	| [Shared](insights-shared.md) collection		| Calculated relationship identifying documents shared with a user. Documents can be shared as email attachments or as OneDrive for Business links sent in emails.	 |
+| trending    	| [trending](insights-trending.md) collection		| Calculated relationship identifying trending documents. Trending documents can be stored in OneDrive or in SharePoint sites.	 |
+| used    	| [usedInsight](insights-used.md) collection		| Calculated relationship identifying documents viewed and modified by a user. Includes documents the user used in OneDrive for Business, SharePoint, opened as email attachments, and as link attachments from sources like Box, DropBox and Google Drive.	 |
+| shared    	| [shared](insights-shared.md) collection		| Calculated relationship identifying documents shared with a user. Documents can be shared as email attachments or as OneDrive for Business links sent in emails.	 |
 
 ## JSON representation
 
 Here is a JSON representation of the resource
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "attachments",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
+  ],
+  "@odata.type": "microsoft.graph.officeGraphInsights"
+}-->
+
 ```json
 {
   "trending": [ { "@odata.type": "microsoft.graph.trending" } ],
@@ -38,3 +48,11 @@ Here is a JSON representation of the resource
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

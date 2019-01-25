@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # Get multiValueLegacyExtendedProperty
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a resource instance that contains a multi-value extended property by using `$expand`.
 
@@ -60,74 +60,74 @@ Get a resource instance expanded with the extended property which matches a filt
 Get a **message** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/messages/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 Get a **mailFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 Get an **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/events/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 Get a **calendar** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/calendars/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 Get a **contact** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contacts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 Get a **contactFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactfolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 Get an **outlookTask** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/outlook/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/outlook/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/outlook/taskFolders/{id}/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 Get an **outlookTaskFolder** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/outlook/taskFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 Get a group **event** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/events/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 Get a group **post** instance:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
-GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
 ```
 
 ## Path parameters
@@ -158,7 +158,7 @@ extended property that has its **id** matching the string `StringArray {66f5a359
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
+GET https://graph.microsoft.com/beta/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueLegacyExtendedProperty($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
 ```
 ##### Response
 
@@ -189,8 +189,8 @@ Content-type: application/json
             "address": "christine@contoso.com"
         }
     },
-    "multiValueExtendedProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/events('AAMkAGE1M2_bs88AACbuFiiAAA%3D')/multiValueExtendedProperties",
-    "multiValueExtendedProperties": [
+    "multiValueLegacyExtendedProperty@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/events('AAMkAGE1M2_bs88AACbuFiiAAA%3D')/multiValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty": [
         {
             "id": "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
             "value": [
@@ -205,10 +205,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get multiValueLegacyExtendedProperty",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/multivaluelegacyextendedproperty-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

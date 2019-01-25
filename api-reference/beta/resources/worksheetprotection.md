@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # WorksheetProtection resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the protection of a sheet object.
 
@@ -17,7 +17,7 @@ Represents the protection of a sheet object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [WorksheetProtection](worksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
+|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
 |[Protect](../api/worksheetprotection-protect.md)|None|Protect a worksheet. It throws if the worksheet has been protected.|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|None|Unprotect a worksheet|
 
@@ -29,7 +29,7 @@ Represents the protection of a sheet object.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
+|options|[workbookWorksheetProtection](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
 
 ## JSON representation
 
@@ -38,24 +38,31 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+  "options"
   ],
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true
+  "protected": true,
+  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "WorksheetProtection resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/worksheetprotection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

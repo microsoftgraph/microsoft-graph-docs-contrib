@@ -8,24 +8,22 @@ ms.prod: "insights"
 
 # resourceVisualization resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type containing properties of [Insights](insights.md).
+Complex type containing properties of [officeGraphInsights](insights.md).
 
 ## JSON representation
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
 ```json
 {
-  "title": "string",
-  "type"  : "string",
-  "mediaType": "string",
-  "previewImageUrl": "string",
-  "previewText": "string",
-  "containerWebUrl": "string",
-  "containerDisplayName": "string",
-  "containerType": "string"
 }
 ```
 
@@ -84,3 +82,11 @@ The supported types can differ based on containers from which the [Insight](insi
 
 Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-resourcevisualization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

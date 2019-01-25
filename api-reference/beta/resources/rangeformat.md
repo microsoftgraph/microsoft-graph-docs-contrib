@@ -1,5 +1,5 @@
 ---
-title: "RangeFormat resource type"
+title: "rangeFormat resource type"
 description: "A format object encapsulating the range's font, fill, borders, alignment, and other properties."
 localization_priority: Normal
 author: "lumine2008"
@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # RangeFormat resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A format object encapsulating the range's font, fill, borders, alignment, and other properties.
 
@@ -18,9 +18,9 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |Read properties and relationships of rangeFormat object.|
-|[Create RangeBorder](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
-|[List borders](../api/rangeformat-list-borders.md) |[RangeBorder](rangeborder.md) collection| Get a RangeBorder object collection.|
-|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md)	|Update RangeFormat object. |
+|[Create RangeBorder](../api/rangeformat-post-borders.md) |[rangeBorder](rangeborder.md)| Create a new RangeBorder by posting to the borders collection.|
+|[List borders](../api/rangeformat-list-borders.md) |[rangeBorder](rangeborder.md) collection| Get a RangeBorder object collection.|
+|[Update](../api/rangeformat-update.md) | [rangeFormat](rangeformat.md)	|Update RangeFormat object. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|None|Changes the width of the columns of the current range to achieve the best fit, based on the current data in the columns.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|None|Changes the height of the rows of the current range to achieve the best fit, based on the current data in the columns.|
 
@@ -36,10 +36,10 @@ A format object encapsulating the range's font, fill, borders, alignment, and ot
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|borders|[RangeBorder](rangeborder.md) collection|Collection of border objects that apply to the overall range selected Read-only.|
-|fill|[RangeFill](rangefill.md)|Returns the fill object defined on the overall range. Read-only.|
-|font|[RangeFont](rangefont.md)|Returns the font object defined on the overall range selected Read-only.|
-|protection|[FormatProtection](formatprotection.md)|Returns the format protection object for a range. Read-only.|
+|borders|[rangeBorder](rangeborder.md) collection|Collection of border objects that apply to the overall range selected Read-only.|
+|fill|[rangeFill](rangefill.md)|Returns the fill object defined on the overall range. Read-only.|
+|font|[rangeFont](rangefont.md)|Returns the font object defined on the overall range selected Read-only.|
+|protection|[formatProtection](formatprotection.md)|Returns the format protection object for a range. Read-only.|
 
 ## JSON representation
 
@@ -66,10 +66,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "RangeFormat resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/rangeformat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Update event
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the [event](../resources/event.md) object.
 ## Permissions
@@ -57,9 +57,9 @@ In the request body, supply the values for relevant fields that should be update
 | importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Set to true if the event lasts all day.|
 | isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
-| location|Location|The location of the event.|
-|locations|[Location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
-| recurrence|PatternedRecurrence|The recurrence pattern for the event.|
+| location| [location](../resources/location.md) |The location of the event.|
+| locations| [location](../resources/location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
+| recurrence| [patternedRecurrence](../resources/patternedrecurrence.md) |The recurrence pattern for the event.|
 | reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 | responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 | sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
@@ -142,10 +142,15 @@ Content-length: 285
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

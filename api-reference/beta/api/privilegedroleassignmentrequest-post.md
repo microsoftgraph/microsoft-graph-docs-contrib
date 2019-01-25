@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # Create privilegedRoleAssignmentRequest
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) object.
 
@@ -39,7 +39,7 @@ In the request body, supply a JSON representation of [privilegedroleassignmentre
 |type|String|Represents the the type of the operation on the role assignment. The value can be `AdminAdd`: Adminstrators add users to roles;`UserAdd`: Users add role assignments. Required.|
 |assignmentState|String|The state of the assignment. The value can be `Eligible` for eligible assignment `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users. Possible values are: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Required.|
 |reason|String|The reason needs to be provided for the role assignment request for audit and review purpose.|
-|schedule|[governanceSchedule](../resources/governanceschedule.md)|The schedule of the role assignment request.|
+|schedule|[ microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|The schedule of the role assignment request.|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) object in the response body.
@@ -102,7 +102,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 304
 
-
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests/$entity",
     "schedule": {
@@ -121,17 +120,22 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self"，
+    "userId": "Self",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Post privilegedRoleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

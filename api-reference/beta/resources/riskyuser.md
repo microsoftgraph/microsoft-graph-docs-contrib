@@ -8,7 +8,7 @@ ms.prod: "security"
 
 # riskyUsers resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
 
@@ -41,9 +41,9 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|id|UserObjectId| The unique identifier of the user with which a given risk event is associated with.|
-|isGuest|isGuest| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
-|isDeleted|isDeleted| A user may or may not be deleted. |
+|id|string| The unique identifier of the user with which a given risk event is associated with.|
+|isGuest|boolean| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
+|isDeleted|boolean| A user may or may not be deleted. |
 |riskState|riskState| A risky user could exist in one of multiple states. |
 |riskDetail|riskDetail| A risky user could be in a certain state because of multiple reasons. |
 |riskLevel|riskLevel| A risky user could be considered one of multiple risk levels. |
@@ -55,9 +55,8 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json
@@ -77,10 +76,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "riskyusers resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/riskyuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

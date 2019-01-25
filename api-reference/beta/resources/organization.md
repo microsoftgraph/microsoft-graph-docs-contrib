@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # organization resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the Azure Active Directory tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
@@ -46,8 +46,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |postalCode|String| Postal code of the address for the organization |
 |preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example "en". |
 |privacyProfile|[privacyProfile](privacyprofile.md)| The privacy profile of an organization.            |
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection| Not nullable.            |
-|provisioningErrors|ProvisioningError collection| Not nullable.            |
+|provisionedPlans|[provisionedPlan](provisionedplan.md) collection| Not nullable.            |
+|provisioningErrors|onPremisesProvisioningError collection| Not nullable.            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
 |state|String| State name of the address for the organization |
@@ -111,10 +111,15 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "organization resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/organization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

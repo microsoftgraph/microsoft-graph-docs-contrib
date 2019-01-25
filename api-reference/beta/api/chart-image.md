@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # Chart: Image
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.
 ## Permissions
@@ -32,14 +32,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Request body
+## Path parameters
 In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|height|number|Optional. The desired height of the resulting image.|
-|width|number|Optional. The desired width of the resulting image.|
-|fittingMode|string|Optional. The method used to scale the chart to the specified to the specified dimensions (if both height and width are set)."  Possible values are: `Fit`, `FitAndCenter`, `Fill`.|
+|height|Int32|The desired height of the resulting image. Optional.|
+|width|Int32|The desired width of the resulting image. Optional.|
+|fittingMode|string|The method used to scale the chart to the specified dimensions (if both height and width are set)."  The possible values are: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## Response
 
@@ -49,14 +49,15 @@ If successful, this method returns `200 OK` response code and base-64 image stri
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
-<!-- { "blockType": "ignored" } -->
+
+<!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 ```
 
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -67,7 +68,7 @@ Content-length: 3
 }
 ```
 
-##### Usage
+## Usage
 
 You can display the base-64 string inside an HTML image tag: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 
@@ -81,10 +82,15 @@ If you want to customize the display of the image, specify a height, width, and 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Chart: Image",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chart-image.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

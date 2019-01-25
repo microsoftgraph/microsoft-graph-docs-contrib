@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # policy resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Azure AD policy. Policies are custom rules that can be enforced on applications, service principals, groups, or the entire organization they are assigned to. Currently only one type of policy is available:
 
@@ -28,7 +28,7 @@ This policy is described in further detail below.
 ### Common Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|String|The string version of the specific policy. See below. Required.|
+|definition|String collection|The string version of the specific policy. See below. Required.|
 |displayName|String|A custom name for the policy. Required.|
 |IsOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
 |type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy". Required.|
@@ -65,6 +65,13 @@ The properties below form the JSON object that represents a token lifetime polic
 
 ## JSON representation
 Here is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.policy"
+}-->
 
 ```json
 {
@@ -74,3 +81,11 @@ Here is a JSON representation of the resource.
   "type":"TokenLifetimePolicy",
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/policy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

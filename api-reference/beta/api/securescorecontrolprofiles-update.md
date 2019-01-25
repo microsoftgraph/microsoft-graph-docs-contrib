@@ -1,12 +1,12 @@
 ---
 title: "Update secureScoreControlProfiles"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote."
 localization_priority: Normal
 ---
 
 # Update secureScoreControlProfiles
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update an editable **secureScoreControlProfiles** property within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
 
@@ -79,20 +79,21 @@ The following is an example of a successful response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-
-
-
 <!-- {
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfiles",
+  "description": "Update secureScoreControlProfile",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

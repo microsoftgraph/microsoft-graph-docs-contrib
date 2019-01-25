@@ -1,12 +1,12 @@
 ---
 title: "List secureScores"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Retrieve the properties and relationships of a secureScores object."
 localization_priority: Normal
 ---
 
 # List secureScores
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.
 
@@ -61,55 +61,46 @@ GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScores"
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.secureScore"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
 {
     "value": [
         {
-            "activeUserCount": "activeUserCount.value",
-            "createdDateTime": "createdDateTime.value",
-            "currentScore": "currentScore.value",
-            "enabledServices": "enabledServices.value",
-            "licensedUserCount": "licensedUserCount.value",
-            "maxScore": "maxScore.value",
-            "id": "id.value",
+            "activeUserCount": 12,
+            "createdDate": "createdDateTime.value",
+            "currentScore": 12.4566633444,
+            "enabledServices": ["Skype"],
+            "licensedUserCount": 12,
+            "maxScore": 45.2324443,
+            "id": "id.value",            
             "azureTenantId": "azureTenantId.value",
             "averageComparativeScores": [
                 {
-                    "basis": "AllTenants",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value"
+                    "@odata.type":"microsoft.graph.averageComparativeScores",
+                    "basis": "basis.value",
+                    "averageScore": 34.2324443
                 },
                 {
-                    "basis": "TotalSeats",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value",
-                    "seatSizeRangeUpperValue": "seatSizeRangeUpperValue.value",
-                    "categoryValue": "categoryValue.value",
-                    "seatSizeRangeLowerValue": "seatSizeRangeLowerValue.value"
+                    "@odata.type":"microsoft.graph.averageComparativeScores",
+                    "basis": "basis.value",
+                    "averageScore": 34.2324443
                 },
                 {
-                    "basis": "IndustryTypes",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value",
-                    "categoryValue": "categoryValue.value"
+                    "@odata.type":"microsoft.graph.averageComparativeScores",
+                    "basis": "basis.value",
+                    "averageScore": 34.2324443
                 }
             ],
             "controlScores": [
                 {
+                    "@odata.type":"microsoft.graph.controlScores",
                     "controlCategory": "controlCategory.value",
                     "controlName": "controlName.value",
                     "description": "description.value",
@@ -119,16 +110,21 @@ Content-type: application/json
                 }
             ]
         }
-    ]            
+    ]
 }
 
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List secureScores",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescores-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

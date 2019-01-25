@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # Table resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Excel table.
 
@@ -51,10 +51,10 @@ Represents an Excel table.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|columns|[TableColumn](tablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
-|rows|[TableRow](tablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
-|sort|[TableSort](tablesort.md)|Represents the sorting for the table. Read-only.|
-|worksheet|[Worksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
+|columns|[tableColumn](tablecolumn.md) collection|Represents a collection of all the columns in the table. Read-only.|
+|rows|[tableRow](tablerow.md) collection|Represents a collection of all the rows in the table. Read-only.|
+|sort|[tableSort](tablesort.md)|Represents the sorting for the table. Read-only.|
+|worksheet|[workbookWorksheet](worksheet.md)|The worksheet containing the current table. Read-only.|
 
 ## JSON representation
 
@@ -65,7 +65,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
      "legacyId"
   ],
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 }-->
 
 ```json
@@ -87,10 +87,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Table resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/table.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

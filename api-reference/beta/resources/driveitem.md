@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # driveItem resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **driveItem** resource represents a file, folder, or other item stored in a drive.
 All file system objects in OneDrive and SharePoint are returned as **driveItem** resources.
@@ -34,16 +34,22 @@ Here is a JSON representation of a **driveItem** resource.
 
 The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
 
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+<!-- { 
+       "blockType": "resource", 
+       "@odata.type": "microsoft.graph.driveItem", 
+       "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
+       "keyProperty": "id", "openType": true 
+    } 
+-->
 
 ```json
 {
+  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -96,7 +102,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
 | Property             | Type               | Description
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only.
+| audio                | [audio](audio.md)  | Audio metadata, if the item is an audio file. Read-only.
 | createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
@@ -138,7 +144,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | activities         | [itemActivity][] collection     | The list of recent activities that took place on this item.
 | analytics          | [itemAnalytics][] resource      | Analytics about the view activities that took place on this item.
 | content            | Stream                          | The content stream, if the item represents a file.
-| children           | driveitem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
+| children           | driveItem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | listItem           | [listItem][]                    | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection       | The set of permissions for the item. Read-only. Nullable.
 | thumbnails         | [thumbnailSet][] collection     | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
@@ -230,11 +236,18 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Item is the main data model in the OneDrive API. Everything is an item.",
   "keywords": "item,facet,resource",
   "section": "documentation",
   "tocPath": "Items",
-  "tocBookmarks": { "Resources/Item": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Item": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/driveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

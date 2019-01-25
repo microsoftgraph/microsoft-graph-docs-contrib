@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 ---
 # Audio facet
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Audio** resource groups audio-related properties on an item into a single structure.
 
@@ -45,11 +45,11 @@ The properties of the **Audio** resource are populated by extracting metadata fr
 | **album**             | string  | The title of the album for this audio file.                          |
 | **albumArtist**       | string  | The artist named on the album for the audio file.                    |
 | **artist**            | string  | The performing artist for the audio file.                            |
-| **bitrate**           | Int32   | Bitrate expressed in kbps.                                           |
+| **bitrate**           | Int64   | Bitrate expressed in kbps.                                           |
 | **composers**         | string  | The name of the composer of the audio file.                          |
 | **copyright**         | string  | Copyright information for the audio file.                            |
-| **disc**              | Int32   | The number of the disc this audio file came from.                    |
-| **discCount**         | Int32   | The total number of discs in this album.                             |
+| **disc**              | Int16   | The number of the disc this audio file came from.                    |
+| **discCount**         | Int16   | The total number of discs in this album.                             |
 | **duration**          | Int64   | Duration of the audio file, expressed in milliseconds                |
 | **genre**             | string  | The genre of this audio file.                                        |
 | **hasDrm**            | boolean | Indicates if the file is protected with digital rights management.   |
@@ -65,10 +65,15 @@ The properties of the **Audio** resource are populated by extracting metadata fr
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The audio facet provides information about music or audio metadata.",
   "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Audio"
-} -->
+  "tocPath": "Facets/Audio",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

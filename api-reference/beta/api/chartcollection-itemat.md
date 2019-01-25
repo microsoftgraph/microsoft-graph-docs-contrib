@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # ChartCollection: ItemAt
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a chart based on its position in the collection.
 ## Permissions
@@ -37,11 +37,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|index|number|Index value of the object to be retrieved. Zero-indexed.|
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Chart](../resources/chart.md) object in the response body.
+If successful, this method returns `200 OK` response code and [WorkbookChart](../resources/chart.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -49,7 +49,10 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "chartcollection_itemat"
+  "isComposable": true,
+  "name": "chartcollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.chartcollection_itemat"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
@@ -57,8 +60,7 @@ Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 8
 }
 ```
 
@@ -67,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -83,10 +85,15 @@ Content-length: 52
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartCollection: ItemAt",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartcollection-itemat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

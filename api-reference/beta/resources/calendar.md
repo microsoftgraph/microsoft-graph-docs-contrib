@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # calendar resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A calendar which is a container for events. It can be a calendar for a [user](user.md), or the default calendar of an Office 365 [group](group.md).
 
@@ -58,8 +58,8 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |:---------------|:--------|:----------|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Navigation property. Read-only.|
 |events|[event](event.md) collection|The events in the calendar. Navigation property. Read-only.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
+|multiValueLegacyExtendedProperty| [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection | The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.|
+|singleValueLegacyExtendedProperty| [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection | The collection of single-value extended properties defined for the calendar. Read-only. Nullable.|
 
 ## JSON representation
 
@@ -70,11 +70,35 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "calendarView",
     "events",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendar"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendar",
+  "@odata.annotations": [
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -96,10 +120,15 @@ Here is a JSON representation of the resource
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendar resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/calendar.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

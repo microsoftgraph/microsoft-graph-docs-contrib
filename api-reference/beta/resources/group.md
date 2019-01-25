@@ -8,7 +8,7 @@ ms.prod: "groups"
 
 # group resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a team in Microsoft Teams, a dynamic group, or a security group.
 Inherits from [directoryObject](directoryobject.md).
@@ -157,8 +157,8 @@ Here's what each **visibility** property value means:
 |groupLifecyclePolicies|[groupLifecyclePolicy](grouplifecyclepolicy.md) collection|The collection of lifecycle policies for this group. Read-only. Nullable.|
 |memberOf|[directoryObject](directoryobject.md) collection|Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
 |members|[directoryObject](directoryobject.md) collection| Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
-|membersWithLicenseErrors|[User](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
-|onenote|[OneNote](onenote.md)| Read-only.|
+|membersWithLicenseErrors|[user](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
+|onenote|[oneNote](onenote.md)| Read-only.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo. |
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
@@ -185,7 +185,7 @@ The following is a JSON representation of the resource
     "extensions",
     "memberOf",
     "members",
-    "onenote",
+    "oneNote",
     "owners",
     "photo",
     "photos",    
@@ -219,7 +219,7 @@ The following is a JSON representation of the resource
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": ["string"],
+  "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
@@ -255,10 +255,15 @@ The following is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/group.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -7,7 +7,7 @@ ms.prod: "project-rome"
 
 # Get recent user activities
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get recent activities for a given user. This OData function has some default behaviors included to make it operate like a "most recently used" API. The service will query for the most recent [historyItems](../resources/projectrome-historyitem.md), and then pull those related activities. Activities will be sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** will not be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate.
 
@@ -83,7 +83,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.activity)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http
@@ -94,7 +95,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
     "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "#microsoft.graph.activity",
+        "@odata.type": "microsoft.graph.activity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
@@ -138,10 +139,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get recent activities",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-get-recent-activities.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

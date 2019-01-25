@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # message resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message in a mailbox folder.
 
@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "attachments",
     "extensions",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty",
     "mentions"
   ],
   "@odata.type": "microsoft.graph.message"
@@ -45,7 +45,7 @@ Here is a JSON representation of the resource
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": "binary",
+  "conversationIndex": { "type":"String", "format":"base64"},
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -76,8 +76,8 @@ Here is a JSON representation of the resource
   "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],
   "mentions": [{"@odata.type": "microsoft.graph.mention"}],
-  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
-  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
+  "multiValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```
@@ -126,8 +126,8 @@ Here is a JSON representation of the resource
 |attachments|[Attachment](attachment.md) collection|The [fileAttachment](fileattachment.md) and [itemAttachment](itemattachment.md) attachments for the message.|
 |extensions|[Extension](extension.md) collection| The collection of open extensions defined for the message. Nullable.|
 |mentions|[mention](mention.md) collection | A collection of mentions in the message, ordered by the **createdDateTime** from the newest to the oldest. By default, a `GET` /messages does not return this property unless you apply `$expand` on the property.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Nullable.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Nullable.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Nullable.|
 
 ## Methods
 
@@ -175,10 +175,15 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/message.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -8,7 +8,7 @@ ms.prod: "excel"
 
 # Update chartfont
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of chartfont object.
 ## Permissions
@@ -38,16 +38,16 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|bold|boolean|Represents the bold status of font.|
-|color|string|HTML color code representation of the text color. E.g. #FF0000 represents Red.|
-|italic|boolean|Represents the italic status of the font.|
-|name|string|Font name (e.g. "Calibri")|
-|size|double|Size of the font (e.g. 11)|
-|underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`.|
+|bold| boolean |Represents the bold status of font.|
+|color| string |HTML color code representation of the text color. E.g. #FF0000 represents Red.|
+|italic| boolean |Represents the italic status of the font.|
+|name| string |Font name (e.g. "Calibri")|
+|size| double |Size of the font (e.g. 11)|
+|underline| enum-string |Type of underline applied to the font. Possible values are: `None`, `Single`.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [ChartFont](../resources/chartfont.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookChartFont](../resources/chartfont.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -66,7 +66,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "underline-value"
+  "underline": "None"
 }
 ```
 ##### Response
@@ -74,7 +74,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartFont"
+  "@odata.type": "microsoft.graph.workbookChartFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,16 +87,21 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "underline-value"
+  "underline": "None"
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update chartfont",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartfont-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

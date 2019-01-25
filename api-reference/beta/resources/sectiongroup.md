@@ -8,7 +8,7 @@ ms.prod: "onenote"
 
 # sectionGroup resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A section group in a OneNote notebook. Section groups can contain sections and section groups.
 
@@ -24,7 +24,7 @@ Here is a JSON representation of the resource.
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -57,10 +57,10 @@ Here is a JSON representation of the resource.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|The notebook that contains the section group. Read-only.|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|The section group that contains the section group. Read-only.|
-|sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in the section. Read-only. Nullable.|
-|sections|[Section](section.md) collection|The sections in the section group. Read-only. Nullable.|
+|parentNotebook|[notebook](notebook.md)|The notebook that contains the section group. Read-only.|
+|parentSectionGroup|[sectionGroup](sectiongroup.md)|The section group that contains the section group. Read-only.|
+|sectionGroups|[sectionGroup](sectiongroup.md) collection|The section groups in the section. Read-only. Nullable.|
+|sections|[onenoteSection](section.md) collection|The sections in the section group. Read-only. Nullable.|
 
 ## Methods
 
@@ -74,10 +74,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "sectionGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sectiongroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
