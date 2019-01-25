@@ -26,11 +26,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
-### Follow one site
+To follow one site:
+
 ```http
 POST https://graph.microsoft.com/beta/users/{user-id}/followingSites
 ```
-### Follow multiple sites
+To follow multiple sites:
+
 ```http
 POST https://graph.microsoft.com/beta/users/{user-id}/followingSites/batch
 ```
@@ -44,12 +46,16 @@ In the request body, supply one or an array of JSON objects with the following p
 |:------- |:-------|:-------------------------------------------------------------|
 |   id    | string | The [unique identifier](../resources/site.md#site's-id) of the item. |
 
-**Note:** The request body can have multiple objects each with Id parameter that allows multiple sites to follow per request. 
+>**Note:** The request body can have multiple objects, each with an ID parameter that allows multiple sites to follow per request. 
 
 
-## Example
+## Examples
 
-An example of how to follow one site.
+### Example 1: Follow one site
+
+The following example shows how to follow one site.
+
+##### Request
 
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
@@ -61,25 +67,7 @@ Content-Type: application/json
     "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"
 }
 ```
-
-An example of how to follow multiple sites. 
-
-```http
-POST /users/{user-id}/followingSites/batch
-Content-Type: application/json
-
-{
-    "value":
-    [
-        {"id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"},
-        {"id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851"}
-    ] 
-}
-```
-
-## Response
-
-### Follow one site  
+##### Response
 
 If successful, this method returns a site object that was followed.  
 
@@ -106,7 +94,26 @@ Content-type: application/json
 
 If an error occured, this method returns the information of the [error][]. 
 
-### Follow multiple sites  
+### Example 2: Follow multiple sites
+
+The following example shows how to follow multiple sites. 
+
+##### Request
+
+```http
+POST /users/{user-id}/followingSites/batch
+Content-Type: application/json
+
+{
+    "value":
+    [
+        {"id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"},
+        {"id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851"}
+    ] 
+}
+```
+##### Response
+
 If successful, this method returns an array of site objects that were followed.  
 
 <!-- { "blockType": "response" } -->
