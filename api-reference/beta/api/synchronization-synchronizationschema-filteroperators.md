@@ -71,13 +71,11 @@ Content-type: application/json
 {
     "value": [
         {
-            "name": "EQUALS",
-            "arity": "Binary",
+            "arity": "Unary",
             "multivaluedComparisonType": "All",
-            "supportedAttributeTypes": [
-                "String",
-                "Integer"
-            ]
+            "supportedAttributeTypes": [                
+                "@string"
+             ]
         }
     ]
 }
@@ -93,8 +91,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+               "Boolean"
             ]
         },
         {
@@ -102,7 +99,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Boolean"
+              "Boolean"
             ]
         },
         {
@@ -110,9 +107,6 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String",
-                "Binary",
                 "Boolean"
             ]
         },
@@ -121,9 +115,6 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String",
-                "Binary",
                 "Boolean"
             ]
         },
@@ -140,8 +131,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+                "Boolean"
             ]
         },
         {
@@ -149,8 +139,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+                "Boolean"
             ]
         },
         {
@@ -158,8 +147,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+                "Boolean"
             ]
         }
     ]

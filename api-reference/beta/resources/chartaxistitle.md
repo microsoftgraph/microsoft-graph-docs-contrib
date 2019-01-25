@@ -17,8 +17,8 @@ Represents the title of a chart axis.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
-|[Update](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)	|Update ChartAxisTitle object. |
+|[Get ChartAxisTitle](../api/chartaxistitle-get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |Read properties and relationships of chartAxisTitle object.|
+|[Update](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)	|Update ChartAxisTitle object. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -29,24 +29,24 @@ Represents the title of a chart axis.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[ChartAxisTitleFormat](chartaxistitleformat.md)|Represents the formatting of chart axis title. Read-only.|
+|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|Represents the formatting of chart axis title. Read-only.|
 
 ## JSON representation
 
 Here is a JSON representation of the resource.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
 }
 
 ```
