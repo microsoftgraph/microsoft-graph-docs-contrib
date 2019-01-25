@@ -19,7 +19,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |:---------------|:--------|:----------|
 |[Get Worksheet](../api/worksheet-get.md) | [WorkbookWorksheet](worksheet.md) |Read properties and relationships of worksheet object.|
 |[Create Chart](../api/worksheet-post-charts.md) |[WorkbookChart](chart.md)| Create a new Chart by posting to the charts collection.|
-|[List names](../api/worksheet-list-names.md) |[WorkbookNamedItem](nameditem.md) collection| Get named item collection associated with the worksheet.|
+|[List names](../api/worksheet-list-names.md) |[WorkbookNamedItem](workbooknameditem.md) collection| Get named item collection associated with the worksheet.|
 |[List charts](../api/worksheet-list-charts.md) |[WorkbookChart](chart.md) collection| Get a Chart object collection.|
 |[Create Table](../api/worksheet-post-tables.md) |[WorkbookTable](table.md)| Create a new Table by posting to the tables collection.|
 |[List tables](../api/worksheet-list-tables.md) |[WorkbookTable](table.md) collection| Get a Table object collection.|

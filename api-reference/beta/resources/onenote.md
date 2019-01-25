@@ -48,7 +48,7 @@ For information about the permissions required to work with OneNote APIs, see [N
 |:---------------|:--------|:----------|
 |notebooks|[Notebook](notebook.md) collection|The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.|
 |operations|[Operation](onenoteoperation.md) collection |The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the `Operation-Location` header is returned in the response. Read-only. Nullable.|
-|pages|[onenotePage](page.md) collection|The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
+|pages|[onenotePage](onenotepage.md) collection|The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 |resources|[governanceResource](resource.md) collection |The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can [get the binary content of a specific resource](resource.md). Read-only. Nullable.|
 |sectionGroups|[sectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 |sections|[onenoteSection](section.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
@@ -59,8 +59,8 @@ For information about the permissions required to work with OneNote APIs, see [N
 |:---------------|:--------|:----------|
 |[Create notebook](../api/onenote-post-notebooks.md) |[Notebook](notebook.md)| Create a notebook by posting to the notebooks collection.|
 |[List notebooks](../api/onenote-list-notebooks.md) |[Notebook](notebook.md) collection| Get a collection of notebooks.|
-|[Create page](../api/onenote-post-pages.md) |[Page](page.md)| Create a page by posting to the pages collection.|
-|[List pages](../api/onenote-list-pages.md) |[Page](page.md) collection| Get a collection of pages.|
+|[Create page](../api/onenote-post-pages.md) |[onenotePage](onenotepage.md)| Create a page by posting to the pages collection.|
+|[List pages](../api/onenote-list-pages.md) |[onenotePage](onenotepage.md) collection| Get a collection of pages.|
 |[List section groups](../api/onenote-list-sectiongroups.md) |[SectionGroup](sectiongroup.md) collection| Get a collection of section groups.|
 |[List sections](../api/onenote-list-sections.md) |[Section](section.md) collection| Get a collection of sections.|
 <!--{

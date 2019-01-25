@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|pages|[onenotePage](page.md) collection|The collection of pages in the section.  Read-only. Nullable.|
+|pages|[onenotePage](onenotepage.md) collection|The collection of pages in the section.  Read-only. Nullable.|
 |parentNotebook|[notebook](notebook.md)|The notebook that contains the section.  Read-only.|
 |parentSectionGroup|[sectionGroup](sectiongroup.md)|The section group that contains the section.  Read-only.|
 
@@ -64,9 +64,9 @@ Here is a JSON representation of the resource.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get section](../api/section-get.md) | [Section](section.md) |Read the properties and relationships of the section.|
-|[Create page](../api/section-post-pages.md) |[Page](page.md)| Create a page by posting to the pages collection in the specified section.|
-|[List pages](../api/section-list-pages.md) |[Page](page.md) collection| Get a collection of pages in the specified section.|
+|[Get section](../api/section-get.md) | [onenoteSection](section.md) |Read the properties and relationships of the section.|
+|[Create page](../api/section-post-pages.md) |[onenotePage](onenotepage.md)| Create a page by posting to the pages collection in the specified section.|
+|[List pages](../api/section-list-pages.md) |[onenotePage](onenotepage.md) collection| Get a collection of pages in the specified section.|
 |[copyToNotebook](../api/section-copytonotebook.md)|None|Copy the section to a specific notebook.|
 |[copyToSectionGroup](../api/section-copytosectiongroup.md)|None|Copy the section to a specific section group.|
 
