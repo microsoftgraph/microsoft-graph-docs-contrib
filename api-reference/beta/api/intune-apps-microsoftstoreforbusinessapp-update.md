@@ -1,19 +1,21 @@
 ---
 title: "Update microsoftStoreForBusinessApp"
 description: "Update the properties of a microsoftStoreForBusinessApp object."
-author: "tfitzmac"
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # Update microsoftStoreForBusinessApp
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -60,6 +62,8 @@ The following table shows the properties that are required when you create the [
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |usedLicenseCount|Int32|The number of Microsoft Store for Business licenses in use.|
 |totalLicenseCount|Int32|The total number of Microsoft Store for Business licenses.|
 |productKey|String|The app product key|
@@ -72,14 +76,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 788
+Content-length: 876
 
 {
+  "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -88,7 +94,6 @@ Content-length: 788
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -97,6 +102,10 @@ Content-length: 788
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
@@ -110,7 +119,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 963
+Content-Length: 1048
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -133,6 +142,10 @@ Content-Length: 963
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
@@ -140,7 +153,6 @@ Content-Length: 963
   "packageIdentityName": "Package Identity Name value"
 }
 ```
-
 
 
 

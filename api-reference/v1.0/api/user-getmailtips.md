@@ -3,6 +3,7 @@ title: "user: getMailTips"
 description: "Get the MailTips of one or more recipients as available to the signed-in user."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user: getMailTips

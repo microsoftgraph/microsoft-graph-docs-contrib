@@ -3,6 +3,7 @@ title: "Update charttitle"
 description: "Update the properties of charttitle object."
 author: "lumine2008"
 localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Update charttitle

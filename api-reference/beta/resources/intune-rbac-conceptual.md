@@ -2,6 +2,8 @@
 title: "Role-based access control in Microsoft Intune"
 description: "Intune's role-based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.   "
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "intune"
 ---
 
 # Role-based access control in Microsoft Intune
@@ -14,7 +16,7 @@ Intune's role-based access control determines who can perform actions on Intune 
 
 The following Graph resources are available to manage role-based access control in Intune:
 
-- [Device and app management assigned role ids](intune-rbac-deviceandappmanagementassignedroleids.md)
+- [Device and app management assigned role details](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [Device and app management role assignment](intune-rbac-deviceandappmanagementroleassignment.md)
 - [Device and app management role definition](intune-rbac-deviceandappmanagementroledefinition.md)
 - [Resource action](intune-rbac-resourceaction.md)

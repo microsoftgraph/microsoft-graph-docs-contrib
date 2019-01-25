@@ -3,6 +3,7 @@ title: "Update windowsMobileMSI"
 description: "Update the properties of a windowsMobileMSI object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update windowsMobileMSI

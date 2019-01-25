@@ -3,6 +3,7 @@ title: "Get mdmWindowsInformationProtectionPolicy"
 description: "Read properties and relationships of the mdmWindowsInformationProtectionPolicy object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Get mdmWindowsInformationProtectionPolicy

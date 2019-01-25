@@ -3,6 +3,7 @@ title: "Update termsAndConditionsAcceptanceStatus"
 description: "Update the properties of a termsAndConditionsAcceptanceStatus object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Update termsAndConditionsAcceptanceStatus

@@ -3,6 +3,7 @@ title: "List windowsInformationProtectionPolicies"
 description: "List properties and relationships of the windowsInformationProtectionPolicy objects."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # List windowsInformationProtectionPolicies

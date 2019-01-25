@@ -2,6 +2,8 @@
 title: "plannerGroup resource type"
 description: "The **plannerGroup** resource provides access to Planner resources for a group. It doesn't contain any usable properties."
 localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # plannerGroup resource type

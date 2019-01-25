@@ -3,6 +3,7 @@ title: "commit action"
 description: "Commits a file of a given app."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # commit action

@@ -2,6 +2,8 @@
 title: "Range: clear"
 description: "Clear range values, format, fill, border, etc."
 localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
 ---
 
 # Range: clear

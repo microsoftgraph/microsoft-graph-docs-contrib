@@ -2,6 +2,8 @@
 title: "reportRoot: getOneDriveActivityUserDetail"
 description: "Get details about OneDrive activity by user."
 localization_priority: Normal
+ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # reportRoot: getOneDriveActivityUserDetail

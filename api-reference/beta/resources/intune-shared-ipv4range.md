@@ -1,8 +1,9 @@
 ---
 title: "iPv4Range resource type"
-description: "IP V4 range"
+description: "Describes the iPv4Range resource of the Microsoft Graph API for Intune, which supports multiple workflows."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # iPv4Range resource type

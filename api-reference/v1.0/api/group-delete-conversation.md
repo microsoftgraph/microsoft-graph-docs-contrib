@@ -3,6 +3,7 @@ title: "Delete conversation"
 description: "Delete a conversation object."
 author: "dkershaw10"
 localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Delete conversation

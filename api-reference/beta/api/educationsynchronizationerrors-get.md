@@ -3,6 +3,7 @@ title: "Get educationSynchronizationErrors"
 description: "Get the errors generated during validation and/or during a sync of a specific school data synchronization profile in the tenant. "
 author: "mmast-msft"
 localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Get educationSynchronizationErrors
@@ -54,7 +55,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "#microsoft.graph.educationSynchronizationError",
+  "@odata.type": "microsoft.graph.educationSynchronizationError",
   "isCollection": true
 } -->
 ```http

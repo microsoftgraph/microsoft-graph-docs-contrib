@@ -2,6 +2,8 @@
 title: "Get plannerPlan"
 description: "Retrieve the properties and relationships of **plannerplan** object."
 localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Get plannerPlan

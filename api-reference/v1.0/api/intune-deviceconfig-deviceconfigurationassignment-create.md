@@ -3,6 +3,7 @@ title: "Create deviceConfigurationAssignment"
 description: "Create a new deviceConfigurationAssignment object."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Create deviceConfigurationAssignment

@@ -4,6 +4,7 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Upload small files
 localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Upload or replace the contents of a DriveItem
 

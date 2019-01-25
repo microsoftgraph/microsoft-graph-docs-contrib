@@ -2,6 +2,8 @@
 title: "reportRoot: getOffice365ActiveUserDetail"
 description: "Get details about Office 365 active users."
 localization_priority: Priority
+ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # reportRoot: getOffice365ActiveUserDetail

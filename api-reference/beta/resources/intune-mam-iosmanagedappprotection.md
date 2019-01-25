@@ -1,17 +1,19 @@
 ---
 title: "iosManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device"
-author: "tfitzmac"
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # iosManagedAppProtection resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an iOS device
+
 
 Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)
 
@@ -31,6 +33,7 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 |description|String|The policy's description. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |createdDateTime|DateTimeOffset|The date and time the policy was created. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|Last time the policy was modified. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |id|String|Key of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Version of the entity. Inherited from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |periodOfflineBeforeAccessCheck|Duration|The period after which access is checked when the device is not connected to the internet. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -101,6 +104,9 @@ Here is a JSON representation of the resource.
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "version": "String",
   "periodOfflineBeforeAccessCheck": "String (duration)",
@@ -158,7 +164,6 @@ Here is a JSON representation of the resource.
   "protectInboundDataFromUnknownSources": true
 }
 ```
-
 
 
 

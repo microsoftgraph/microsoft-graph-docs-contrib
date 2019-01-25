@@ -3,6 +3,7 @@ title: "deviceGeoLocation resource type"
 description: "Device location"
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # deviceGeoLocation resource type

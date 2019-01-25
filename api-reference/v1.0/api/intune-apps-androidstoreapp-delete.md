@@ -3,6 +3,7 @@ title: "Delete androidStoreApp"
 description: "Deletes a androidStoreApp."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # Delete androidStoreApp

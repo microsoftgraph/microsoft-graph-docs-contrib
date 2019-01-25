@@ -3,6 +3,7 @@ title: "How to protect your company app data with Microsoft Intune"
 description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
 author: "tfitzmac"
 localization_priority: Normal
+ms.prod: "intune"
 ---
 
 # How to protect your company app data with Microsoft Intune
@@ -24,6 +25,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Application type](intune-wip-applicationtype.md)
 - [Default managed app protection](intune-mam-defaultmanagedappprotection.md)
 - [Intune branding profile](intune-wip-intunebrandingprofile.md)
+- [Intune branding profile assignment](intune-wip-intunebrandingprofileassignment.md)
 - [iOS managed app protection](intune-mam-iosmanagedappprotection.md)
 - [iOS managed app registration](intune-mam-iosmanagedappregistration.md)
 - [iOS mobile app identifier](intune-mam-iosmobileappidentifier.md)
@@ -57,6 +59,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection app locker file](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Windows information protection data recovery certificate](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Windows information protection desktop app](intune-mam-windowsinformationprotectiondesktopapp.md)
+- [Windows information protection device registration](intune-mam-windowsinformationprotectiondeviceregistration.md)
 - [Windows information protection enforcement level](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Windows information protection IP range collection](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Windows information protection network learning summary](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
@@ -65,3 +68,4 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection proxied domain collection](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Windows information protection resource collection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows information protection store app](intune-mam-windowsinformationprotectionstoreapp.md)
+- [Windows information protection wipe action](intune-mam-windowsinformationprotectionwipeaction.md)

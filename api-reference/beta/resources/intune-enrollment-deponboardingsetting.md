@@ -1,17 +1,19 @@
 ---
 title: "depOnboardingSetting resource type"
 description: "The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune."
-author: "tfitzmac"
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # depOnboardingSetting resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune. The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -40,7 +42,6 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Gets or sets the Dep Token Type. Possible values are: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|String|Friendly Name for Dep Token|
 |syncedDeviceCount|Int32|Gets synced device count|
-|defaultProfileDisplayName|String|Gets synced device count|
 |dataSharingConsentGranted|Boolean|Consent granted for data sharing with Apple Dep Service|
 
 ## Relationships
@@ -73,11 +74,9 @@ Here is a JSON representation of the resource.
   "tokenType": "String",
   "tokenName": "String",
   "syncedDeviceCount": 1024,
-  "defaultProfileDisplayName": "String",
   "dataSharingConsentGranted": true
 }
 ```
-
 
 
 

@@ -2,6 +2,8 @@
 title: "reportRoot: getSharePointSiteUsagePages"
 description: "Get the number of pages viewed across all sites."
 localization_priority: Normal
+ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # reportRoot: getSharePointSiteUsagePages

@@ -1,19 +1,21 @@
 ---
 title: "Create windows10GeneralConfiguration"
 description: "Create a new windows10GeneralConfiguration object."
-author: "tfitzmac"
 localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # Create windows10GeneralConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -52,13 +54,12 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|taskManagerBlockEndTask|Boolean|Specify whether non-administrators can use Task Manager to end tasks.|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 force update schedule for Apps.|
 |enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
-|assignedAccessSingleModeUserName|String|This policy setting allows to define the user account that will be locked to Single App Kiosk Mode.|
-|assignedAccessSingleModeAppUserModelId|String|This policy setting allows to define the Application User Model ID (AUMID) that will be locked to Single App Kiosk Mode.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service. Possible values are: `notConfigured`, `disabled`.|
 |authenticationAllowSecondaryDevice|Boolean|Allows secondary authentication devices to work with Windows.|
-|authenticationAllowFIDODevice|Boolean|Indicates whether or not to allow authentication using FIDO device (https://fidoalliance.org/)|
+|authenticationPreferredAzureADTenantDomainName|String|Specifies the preferred domain among available domains in the Azure AD tenant.|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
 |displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
 |displayAppListWithGdiDPIScalingTurnedOff|String collection|List of legacy applications that have GDI DPI Scaling turned off.|
@@ -68,6 +69,7 @@ The following table shows the properties that are required when you create the w
 |enterpriseCloudPrintResourceIdentifier|String|OAuth resource URI for print service as configured in the Azure portal.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Maximum number of printers that should be queried from a discovery endpoint. This is a mobile only setting. Valid values 1 to 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
+|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Allow or prevent the syncing of Microsoft Edge Browser settings. Option for IT admins to prevent syncing across devices, but allow user override. Possible values are: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
 |messagingBlockSync|Boolean|Indicates whether or not to block text message back up and restore and Messaging Everywhere.|
 |messagingBlockMMS|Boolean|Indicates whether or not to block the the MMS send/receive functionality on the device.|
 |messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the the RCS send/receive functionality on the device.|
@@ -88,6 +90,7 @@ The following table shows the properties that are required when you create the w
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Gets or sets a value allowing the device to send diagnostic and usage telemetry data, such as Watson. Possible values are: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Gets or sets a value allowing IT admins to prevent apps and features from working with files on OneDrive.|
 |systemTelemetryProxyServer|String|Gets or sets the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests.|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Specifies what type of telemetry data (none, intranet, internet, both) is sent to Microsoft 365 Analytics. Possible values are: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |inkWorkspaceBlockSuggestedApps|Boolean|Specify whether to show recommended app suggestions in the ink workspace.|
@@ -96,6 +99,7 @@ The following table shows the properties that are required when you create the w
 |personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
 |bluetoothBlockAdvertising|Boolean|Whether or not to Block the user from using bluetooth advertising.|
+|bluetoothBlockPromptedProximalConnections|Boolean|Whether or not to block the users from using Swift Pair and other proximity based scenarios.|
 |bluetoothBlockDiscoverableMode|Boolean|Whether or not to Block the user from using bluetooth discoverable mode.|
 |bluetoothBlockPrePairing|Boolean|Whether or not to block specific bundled Bluetooth peripherals to automatically pair with the host device.|
 |edgeBlockAutofill|Boolean|Indicates whether or not to block auto fill.|
@@ -116,6 +120,21 @@ The following table shows the properties that are required when you create the w
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Enable favorites sync between Internet Explorer and Microsoft Edge. Additions, deletions, modifications and order changes to favorites are shared between browsers.|
 |edgeFavoritesListLocation|String|The location of the favorites list to provision. Could be a local file, local network or http location.|
 |edgeBlockEditFavorites|Boolean|Indicates whether or not to Block the user from making changes to Favorites.|
+|edgeNewTabPageURL|String|Specify the page opened when new tabs are created.|
+|edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Causes the Home button to either hide, load the default Start page, load a New tab page, or a custom URL|
+|edgeHomeButtonConfigurationEnabled|Boolean|Enable the Home button configuration.|
+|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Specify what kind of pages are open at start. Possible values are: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
+|edgeBlockSideloadingExtensions|Boolean|Indicates whether the user can sideload extensions.|
+|edgeRequiredExtensionPackageFamilyNames|String collection|Specify the list of package family names of browser extensions that are required and cannot be turned off by the user.|
+|edgeBlockPrinting|Boolean|Configure Edge to allow or block printing.|
+|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Get or set a value that specifies whether to set the favorites bar to always be visible or hidden on any page. Possible values are: `notConfigured`, `hide`, `show`.|
+|edgeBlockSavingHistory|Boolean|Configure Edge to allow browsing history to be saved or to never save browsing history.|
+|edgeBlockFullScreenMode|Boolean|Allow or prevent Edge from entering the full screen mode.|
+|edgeBlockWebContentOnNewTabPage|Boolean|Configure what appears when Microsoft Edge opens a new tab.|
+|edgeBlockTabPreloading|Boolean|Configure whether Edge preloads the new tab page at Windows startup.|
+|edgeBlockPrelaunch|Boolean|Decide whether Microsoft Edge is prelaunched at Windows startup.|
+|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Controls the message displayed by Edge before switching to Internet Explorer. Possible values are: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
+|edgePreventCertificateErrorOverride|Boolean|Allow or prevent users from overriding certificate errors.|
 |cellularBlockDataWhenRoaming|Boolean|Whether or not to Block the user from using data over cellular while roaming.|
 |cellularBlockVpn|Boolean|Whether or not to Block the user from using VPN over cellular.|
 |cellularBlockVpnWhenRoaming|Boolean|Whether or not to Block the user from using VPN when roaming over cellular.|
@@ -239,7 +258,8 @@ The following table shows the properties that are required when you create the w
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|Specifies what filter level of safe search is required. Possible values are: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indicates whether or not to block popups.|
 |edgeBlockSearchSuggestions|Boolean|Indicates whether or not to Block the user from using the search suggestions in the address bar.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to Block the user from sending Intranet traffic to Internet Explorer from Edge.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer. Note: the name of this property is misleading; the property is obsolete, use EdgeSendIntranetTrafficToInternetExplorer instead.|
+|edgeSendIntranetTrafficToInternetExplorer|Boolean|Indicates whether or not to switch the intranet traffic from Edge to Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Indicates whether or not to Require the user to use the smart screen filter.|
 |edgeEnterpriseModeSiteListLocation|String|Indicates the enterprise mode site list location. Could be a local file, local network or http location.|
 |edgeFirstRunUrl|String|The first run URL for when Edge browser is opened for the first time.|
@@ -299,16 +319,16 @@ The following table shows the properties that are required when you create the w
 If successful, this method returns a `201 Created` response code and a [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 12202
+Content-length: 13056
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -316,6 +336,7 @@ Content-length: 12202
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "taskManagerBlockEndTask": true,
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -323,11 +344,9 @@ Content-length: 12202
     "runImmediatelyIfAfterStartDateTime": true
   },
   "enableAutomaticRedeployment": true,
-  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
-  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
-  "authenticationAllowFIDODevice": true,
+  "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
@@ -341,6 +360,7 @@ Content-length: 12202
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "messagingBlockSync": true,
   "messagingBlockMMS": true,
   "messagingBlockRichCommunicationServices": true,
@@ -363,6 +383,7 @@ Content-length: 12202
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
   "inkWorkspaceAccess": "enabled",
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
@@ -373,6 +394,7 @@ Content-length: 12202
     "Bluetooth Allowed Services value"
   ],
   "bluetoothBlockAdvertising": true,
+  "bluetoothBlockPromptedProximalConnections": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
   "edgeBlockAutofill": true,
@@ -393,6 +415,25 @@ Content-length: 12202
   "edgeSyncFavoritesWithInternetExplorer": true,
   "edgeFavoritesListLocation": "Edge Favorites List Location value",
   "edgeBlockEditFavorites": true,
+  "edgeNewTabPageURL": "Edge New Tab Page URL value",
+  "edgeHomeButtonConfiguration": {
+    "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
+  },
+  "edgeHomeButtonConfigurationEnabled": true,
+  "edgeOpensWith": "startPage",
+  "edgeBlockSideloadingExtensions": true,
+  "edgeRequiredExtensionPackageFamilyNames": [
+    "Edge Required Extension Package Family Names value"
+  ],
+  "edgeBlockPrinting": true,
+  "edgeFavoritesBarVisibility": "hide",
+  "edgeBlockSavingHistory": true,
+  "edgeBlockFullScreenMode": true,
+  "edgeBlockWebContentOnNewTabPage": true,
+  "edgeBlockTabPreloading": true,
+  "edgeBlockPrelaunch": true,
+  "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
+  "edgePreventCertificateErrorOverride": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -536,6 +577,7 @@ Content-length: 12202
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
@@ -600,7 +642,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 12310
+Content-Length: 13228
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -614,6 +656,7 @@ Content-Length: 12310
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "taskManagerBlockEndTask": true,
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -621,11 +664,9 @@ Content-Length: 12310
     "runImmediatelyIfAfterStartDateTime": true
   },
   "enableAutomaticRedeployment": true,
-  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
-  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
-  "authenticationAllowFIDODevice": true,
+  "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
@@ -639,6 +680,7 @@ Content-Length: 12310
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "messagingBlockSync": true,
   "messagingBlockMMS": true,
   "messagingBlockRichCommunicationServices": true,
@@ -661,6 +703,7 @@ Content-Length: 12310
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
   "inkWorkspaceAccess": "enabled",
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
@@ -671,6 +714,7 @@ Content-Length: 12310
     "Bluetooth Allowed Services value"
   ],
   "bluetoothBlockAdvertising": true,
+  "bluetoothBlockPromptedProximalConnections": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
   "edgeBlockAutofill": true,
@@ -691,6 +735,25 @@ Content-Length: 12310
   "edgeSyncFavoritesWithInternetExplorer": true,
   "edgeFavoritesListLocation": "Edge Favorites List Location value",
   "edgeBlockEditFavorites": true,
+  "edgeNewTabPageURL": "Edge New Tab Page URL value",
+  "edgeHomeButtonConfiguration": {
+    "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
+  },
+  "edgeHomeButtonConfigurationEnabled": true,
+  "edgeOpensWith": "startPage",
+  "edgeBlockSideloadingExtensions": true,
+  "edgeRequiredExtensionPackageFamilyNames": [
+    "Edge Required Extension Package Family Names value"
+  ],
+  "edgeBlockPrinting": true,
+  "edgeFavoritesBarVisibility": "hide",
+  "edgeBlockSavingHistory": true,
+  "edgeBlockFullScreenMode": true,
+  "edgeBlockWebContentOnNewTabPage": true,
+  "edgeBlockTabPreloading": true,
+  "edgeBlockPrelaunch": true,
+  "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
+  "edgePreventCertificateErrorOverride": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -834,6 +897,7 @@ Content-Length: 12310
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
@@ -892,7 +956,6 @@ Content-Length: 12310
   "dataProtectionBlockDirectMemoryAccess": true
 }
 ```
-
 
 
 

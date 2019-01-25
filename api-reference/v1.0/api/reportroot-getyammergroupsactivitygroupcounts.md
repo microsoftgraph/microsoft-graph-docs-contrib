@@ -2,6 +2,8 @@
 title: "reportRoot: getYammerGroupsActivityGroupCounts"
 description: "Get the total number of groups that existed and how many included group conversation activity."
 localization_priority: Normal
+ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # reportRoot: getYammerGroupsActivityGroupCounts
