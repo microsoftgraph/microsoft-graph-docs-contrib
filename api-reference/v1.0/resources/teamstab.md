@@ -1,3 +1,11 @@
+---
+title: "teamsTab resource type"
+description: "A teamsTab is a tab that's pinned (attached) to a channel within a team. "
+localization_priority: Normal
+author: "nkramer"
+ms.prod: "microsoft-teams"
+---
+
 # teamsTab resource type
 
 
@@ -8,11 +16,11 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List tabs](../api/teamstab_list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
-|[Get tab](../api/teamstab_get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
-|[Add tab](../api/teamstab_add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
-|[Remove tab](../api/teamstab_delete.md) | None | Removes (unpins) a tab from a channel.|
-|[Update tab](../api/teamstab_update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
+|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
+|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
+|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
+|[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
+|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 
 ## Properties
@@ -21,7 +29,6 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 |:---------------|:--------|:----------|
 |  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read only.     |
 |  displayName            |   string                  |  Name of the tab.     |
-|  sortOrderIndex  |   int                     |  Index of the order used for sorting tabs     |
 |  webUrl          |   string                  |  Deep link url of the tab instance. Read only.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
 
@@ -46,7 +53,6 @@ The following is a JSON representation of the resource.
 {  
   "id": "string",
   "displayName": "string",
-  "sortOrderIndex": "string",
   "webUrl": "string",
   "configuration" : "teamsTabConfiguration"
 }
@@ -65,4 +71,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-[Configuring the built-in tab types](../../../concepts/teams-configuring-builtin-tabs.md)
+[Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)

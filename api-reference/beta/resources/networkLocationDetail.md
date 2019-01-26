@@ -1,3 +1,9 @@
+---
+title: "networkLocationDetail resource type"
+description: "Indicates details associated with the network location. ."
+localization_priority: Normal
+---
+
 # networkLocationDetail resource type
 Indicates details associated with the network location. .
 
@@ -6,7 +12,7 @@ Indicates details associated with the network location. .
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|networkType|String|Provides the type of the network. Possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.|
+|networkType| enum-string |Provides the type of the network. Possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.|
 |networkName|String|Name of the network.|
 
 
@@ -24,7 +30,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "networkTypes": "namedNetork",
+  "networkTypes": " intranet | extranet | namedNetwork | trusted ",
   "networkName": "String"
 }
 

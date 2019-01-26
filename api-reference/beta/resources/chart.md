@@ -1,6 +1,14 @@
+---
+title: "Chart resource type"
+description: "Represents a chart object in a workbook."
+author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
+---
+
 # Chart resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a chart object in a workbook.
 
@@ -9,17 +17,17 @@ Represents a chart object in a workbook.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Chart](../api/chart_get.md) | [Chart](chart.md) |Read properties and relationships of chart object.|
-|[Create ChartSeries](../api/chart_post_series.md) |[ChartSeries](chartseries.md)| Create a new ChartSeries by posting to the series collection.|
-|[List series](../api/chart_list_series.md) |[ChartSeries](chartseries.md) collection| Get a ChartSeries object collection.|
-|[Update](../api/chart_update.md) | [Chart](chart.md)	|Update Chart object. |
-|[Image](../api/chart_image.md)|Image base64 encoded string|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
-|[Delete](../api/chart_delete.md)|None|Deletes the chart object.|
-|[Setdata](../api/chart_setdata.md)|None|Resets the source data for the chart.|
-|[Setposition](../api/chart_setposition.md)|None|Positions the chart relative to cells on the worksheet.|
-|[List](../api/chart_list.md) | [Chart](chart.md) collection |Get chart object collection. |
-|[Itemat](../api/chartcollection_itemat.md)|[Chart](chart.md)|Gets a chart based on its position in the collection.|
-|[Add](../api/chartcollection_add.md)|[Chart](chart.md)|Creates a new chart.|
+|[Get Chart](../api/chart-get.md) | [WorkbookChart](chart.md) |Read properties and relationships of chart object.|
+|[Create ChartSeries](../api/chart-post-series.md) |[WorkbookChartSeries](chartseries.md)| Create a new ChartSeries by posting to the series collection.|
+|[List series](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md) collection| Get a ChartSeries object collection.|
+|[Update](../api/chart-update.md) | [WorkbookChart](chart.md)	|Update Chart object. |
+|[Image](../api/chart-image.md)|Image base64 encoded string|Renders the chart as a base64-encoded image by scaling the chart to fit the specified dimensions.|
+|[Delete](../api/chart-delete.md)|None|Deletes the chart object.|
+|[Setdata](../api/chart-setdata.md)|None|Resets the source data for the chart.|
+|[Setposition](../api/chart-setposition.md)|None|Positions the chart relative to cells on the worksheet.|
+|[List](../api/chart-list.md) | [WorkbookChart](chart.md) collection |Get chart object collection. |
+|[Itemat](../api/chartcollection-itemat.md)|[WorkbookChart](chart.md)|Gets a chart based on its position in the collection.|
+|[Add](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|Creates a new chart.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -34,13 +42,13 @@ Represents a chart object in a workbook.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|axes|[ChartAxes](chartaxes.md)|Represents chart axes. Read-only.|
-|dataLabels|[ChartDataLabels](chartdatalabels.md)|Represents the datalabels on the chart. Read-only.|
-|format|[ChartAreaFormat](chartareaformat.md)|Encapsulates the format properties for the chart area. Read-only.|
-|legend|[ChartLegend](chartlegend.md)|Represents the legend for the chart. Read-only.|
-|series|[ChartSeries](chartseries.md) collection|Represents either a single series or collection of series in the chart. Read-only.|
-|title|[ChartTitle](charttitle.md)|Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.|
-|worksheet|[Worksheet](worksheet.md)|The worksheet containing the current chart. Read-only.|
+|axes|[WorkbookChartAxes](chartaxes.md)|Represents chart axes. Read-only.|
+|dataLabels|[WorkbookChartDataLabels](chartdatalabels.md)|Represents the datalabels on the chart. Read-only.|
+|format|[WorkbookChartAreaFormat](chartareaformat.md)|Encapsulates the format properties for the chart area. Read-only.|
+|legend|[WorkbookChartLegend](chartlegend.md)|Represents the legend for the chart. Read-only.|
+|series|[WorkbookChartSeries](chartseries.md) collection|Represents either a single series or collection of series in the chart. Read-only.|
+|title|[WorkbookChartTitle](charttitle.md)|Represents the title of the specified chart, including the text, visibility, position and formating of the title. Read-only.|
+|worksheet|[WorkbookWorksheet](worksheet.md)|The worksheet containing the current chart. Read-only.|
 
 ## JSON representation
 
@@ -48,10 +56,10 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chart"
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChart"
 }-->
 
 ```json
@@ -68,10 +76,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Chart resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chart.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

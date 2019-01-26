@@ -1,8 +1,18 @@
+---
+title: "riskyUsers resource type"
+description: "Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD."
+author: "cloudhandler"
+localization_priority: Normal
+ms.prod: "security"
+---
+
 # riskyUsers resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
+
+> **Note:** This API requires an Azure AD Premium P2 license.
 
 For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
 
@@ -10,8 +20,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List riskyUsers](../api/riskyusers_list.md) | [riskyUsers](riskyUser.md) |List risky users and their properties.|
-|[Get riskyUsers](../api/riskyusers_get.md) | [riskyUsers](riskyUser.md)|Get a specific risky user and its properties.|
+|[List riskyUsers](../api/riskyusers-list.md) | [riskyUsers](riskyuser.md) |List risky users and their properties.|
+|[Get riskyUsers](../api/riskyusers-get.md) | [riskyUsers](riskyuser.md)|Get a specific risky user and its properties.|
 
 ## Properties
 
@@ -31,9 +41,9 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
-|id|UserObjectId| The unique identifier of the user with which a given risk event is associated with.|
-|isGuest|isGuest| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
-|isDeleted|isDeleted| A user may or may not be deleted. |
+|id|string| The unique identifier of the user with which a given risk event is associated with.|
+|isGuest|boolean| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
+|isDeleted|boolean| A user may or may not be deleted. |
 |riskState|riskState| A risky user could exist in one of multiple states. |
 |riskDetail|riskDetail| A risky user could be in a certain state because of multiple reasons. |
 |riskLevel|riskLevel| A risky user could be considered one of multiple risk levels. |
@@ -45,9 +55,8 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json
@@ -58,7 +67,7 @@ Here is a JSON representation of the resource.
 "isDeleted": "boolean",
 "riskDetail":  {"@odata.type": "microsoft.graph.riskDetail"},
 "riskLevel":  {"@odata.type": "microsoft.graph.riskLevel"},
-"riskState":  {"@odata.type": "microsoft.graph.riskState"}
+"riskState":  {"@odata.type": "microsoft.graph.riskState"},
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }
@@ -67,10 +76,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "riskyusers resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/riskyuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

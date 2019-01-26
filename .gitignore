@@ -6,7 +6,4 @@ nuget.exe
 *.nupkg
 apidoc.exe
 *.dll
-/.vs/config/applicationhost.config
-/.vs/microsoft-graph-docs/v15/.suo
-/.vs/ProjectSettings.json
-/.vs/slnx.sqlite
+.vs/

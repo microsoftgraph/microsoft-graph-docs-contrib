@@ -1,3 +1,11 @@
+---
+title: "securityVendorInformation resource type"
+description: " subProvider=AppLocker)."
+localization_priority: Normal
+author: "preetikr"
+ms.prod: "security"
+---
+
 # securityVendorInformation resource type
 
 Contains details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).

@@ -3,10 +3,11 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
+localization_priority: Normal
 ---
 # itemActivityStat resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **itemActivityStat** resource provides information about activities that took place within an interval of time.
 
@@ -48,8 +49,8 @@ The **itemActivityStat** resource provides information about activities that too
 | move             | [itemActionStat][]      | Statistics about the **move** actions in this interval. Read-only.
 | access           | [itemActionStat][]      | Statistics about the **access** actions in this interval. Read-only.
 
-[itemActionStat]: itemActionStat.md
-[incompleteData]: incompleteData.md
+[itemActionStat]: itemactionstat.md
+[incompleteData]: incompletedata.md
 
 ## Relationships
 
@@ -57,14 +58,19 @@ The **itemActivityStat** resource provides information about activities that too
 |:------------------|:----------------------------|:---------------------------
 | activities        | [itemActivity][] collection | Exposes the **itemActivities** represented in this **itemActivityStat** resource.
 
-[itemActivity]: itemActivity.md
+[itemActivity]: itemactivity.md
 
 ## Remarks
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivityStat object provides information about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivityStat"
-} -->
+  "tocPath": "Resources/ItemActivityStat",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivitystat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

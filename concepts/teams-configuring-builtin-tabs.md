@@ -1,6 +1,14 @@
+---
+title: "Configuring the built-in tab types in Microsoft Teams"
+description: "To create or configure a Microsoft Teams tab using Microsoft Graph APIs"
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
+---
+
 # Configuring the built-in tab types in Microsoft Teams
 
-To [create](../api-reference/beta/api/teamstab_add.md) or [configure](../api-reference/beta/api/teamstab_update.md) a Microsoft Teams tab using Microsoft Graph APIs, 
+To [create](/graph/api/teamstab-add?view=graph-rest-beta) or [configure](/graph/api/teamstab-update?view=graph-rest-beta) a Microsoft Teams tab using Microsoft Graph APIs, 
 you need to know the `teamsAppId` of the app, and the
 `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` to provide for that kind of app.
 This article explains how to get those values for the built-in tab types.
@@ -36,7 +44,7 @@ For Planner tabs, the teamsAppId is `com.microsoft.teamspace.tab.planner`. The f
 | removeUrl  | string      | Same value as the contentUrl.    |
 | websiteUrl | string      | Same value as the contentUrl.   |
 
-To create a new plan to display in your planner tab, see [create plannerPlan](../api-reference/beta/api/planner_post_plans.md).
+To create a new plan to display in your planner tab, see [create plannerPlan](/graph/api/planner-post-plans?view=graph-rest-beta).
 
 ## Microsoft Stream tabs
 
@@ -52,7 +60,7 @@ For Microsoft Stream tabs, the `teamsAppId` is `com.microsoftstream.embed.skypet
 ## Microsoft Forms tabs
 
 For Microsoft Forms tabs, the `teamsAppId` is `81fef3a6-72aa-4648-a763-de824aeafb7d`.
-Configuration:
+The following is the configuration.
 
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
@@ -72,14 +80,39 @@ The following table lists the `teamsAppId` for each app.
 | PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
 | PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
 
-Configuration is not supported.
+The following is the configuration.
+
+| Property   | Type        | Description                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | The sourceDoc ID of the file. You can find this by opening the file in SharePoint and looking at the address bar – the URL will have a `sourcedoc=%7B{sourceDocId}%7D` clause. You can also derive this from the webUrl of the SharePoint drive item for the document. For details, see [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| contentUrl | string      | The URL of file in the format `{folder-webUrl}/{item-name}`. {folder-webUrl} is the webUrl of the SharePoint folder containing the file, which can be found by opening the file in SharePoint and looking at the address bar, or by using the webUrl property from [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} is the file name (for example, file.docx), which is the `name` property in [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| removeUrl  | string      | Null                                                     |
+| websiteUrl | string      | Null                                       |
+
+### Example: Create a configured Word tab
+
+The following example creates a configured Word tab.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+  "displayName": "word",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+  "configuration": {
+     "entityId": "115A90F4-AC9C-4F79-9837-36D1EFB3BE08",
+     "contentUrl": "https://m365x165177.sharepoint.com/sites/4NewCloneWithClonableParts/Shared%20Documents/General/Employee Handbook.docx",
+     "removeUrl": null,
+     "websiteUrl": null
+  }
+}
+```
 
 ## Wiki tabs
 
 For wiki tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.wiki`.
 Wiki tabs do not support configuration through Graph.
 Note, however, that there isn't much to configure --
-in an un-configured wiki tab, the first user just needs to click **Set up tab** to configure it.
+in an un-configured wiki tab, the first user just needs to select **Set up tab** to configure it.
 
 ## Document library tabs
 
@@ -93,9 +126,9 @@ For OneNote tabs, the `teamsAppId` is `0d820ecd-def2-4297-adad-78056cde7c78`. Th
 | Property   | Type        | Description                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | `{randomGuid}_{notebookId}`, where {randomGuid} is a GUID you generate.                                      |
-| contentUrl | string      | A URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. {locale} and {tid} are literals. |
-| removeUrl  | string      | A URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md). Slashes must be escaped. {locale} and {tid} are literals. |
-| websiteUrl | string      | A URL of the form `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, where `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](../api-reference/beta/api/onenote_list_notebooks.md) |
+| contentUrl | string      | A URL of the form `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Slashes must be escaped. {locale} and {tid} are literals. |
+| removeUrl  | string      | A URL of the form `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, where `{sectionsUrl}`, `{notebookId}`, and `{oneNoteWebUrl}` can be found in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Slashes must be escaped. {locale} and {tid} are literals. |
+| websiteUrl | string      | A URL of the form `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, where `oneNoteWebUrl` can be found in [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) |
 
 ## Power BI tabs
 
@@ -106,4 +139,4 @@ Configuration is not supported.
 
 For SharePoint page and list tabs, the `teamsAppId` is `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Configuration is not supported.
-If configuration is desired, consider using a Website tab.
+If you want to configure the tab, consider using a Website tab.

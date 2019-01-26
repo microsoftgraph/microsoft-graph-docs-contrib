@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Site
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # site resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **site** resource provides metadata and relationships for a SharePoint site.
 
@@ -24,15 +26,15 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [List root sites][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Search for sites][]           | GET /sites?search={query}
 
-[Get site]: ../api/site_get.md
-[Get root site]: ../api/site_get.md
-[Get site by path]: ../api/site_getbypath.md
-[Get site for a group]: ../api/site_get.md
-[Get analytics]: ../api/itemAnalytics_get.md
-[Get activities by interval]: ../api/itemActivity_getByInterval.md
-[List pages]: ../api/sitepage_list.md
-[List root sites]: ../api/site_list.md
-[Search for sites]: ../api/site_search.md
+[Get site]: ../api/site-get.md
+[Get root site]: ../api/site-get.md
+[Get site by path]: ../api/site-getbypath.md
+[Get site for a group]: ../api/site-get.md
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivity-getbyinterval.md
+[List pages]: ../api/sitepage-list.md
+[List root sites]: ../api/site-list.md
+[Search for sites]: ../api/site-search.md
 
 
 ## Properties
@@ -67,16 +69,16 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
-[contentType]: contentType.md
+[contentType]: contenttype.md
 [drive]: drive.md
 [identitySet]: identityset.md
-[itemAnalytics]: itemAnalytics.md
+[itemAnalytics]: itemanalytics.md
 [list]: list.md
-[sitePage]: sitePage.md
+[sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
-[sharepointIds]: sharepointIds.md
-[siteCollection]: siteCollection.md
+[sharepointIds]: sharepointids.md
+[siteCollection]: sitecollection.md
 
 ## JSON representation
 
@@ -127,11 +129,18 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites",
-  "tocBookmarks": { "Resources/Site": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Site": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/site.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

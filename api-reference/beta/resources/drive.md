@@ -3,10 +3,12 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Drive
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # drive resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
 
@@ -89,10 +91,10 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | Relationship | Type                                 | Description
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | [itemActivity][] collection          | The list of recent activities that took place under this drive.
-| items        | [driveitem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
-| root         | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.
-| special      | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
-| following    | [DriveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
+| items        | [driveItem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
+| root         | [driveItem](driveitem.md)            | The root folder of the drive. Read-only.
+| special      | [driveItem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
+| following    | [driveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
 
 ## Methods
 
@@ -105,31 +107,38 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | [List children under the Drive][item-children]             | `GET /drive/root/children`  |
 | [List changes for all Items in the Drive][item-changes]    | `GET /drive/root/delta`     |
 | [Search for Items in the Drive][item-search]               | `GET /drive/root/search`    |
-| [Access special folder](../api/drive_get_specialfolder.md) | `GET /drive/special/{name}` |
+| [Access special folder](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
 In the previous table, the examples use `/drive`, but other paths are valid too.
 
-[itemActivity]: itemActivity.md
+[itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
-[drive-activities]: ../api/activities_list.md
-[drive-following]: ../api/drive_list_following.md
-[drive-get]: ../api/drive_get.md
-[item-get]: ../api/driveitem_get.md
-[item-changes]: ../api/driveitem_delta.md
-[item-search]: ../api/driveitem_search.md
-[item-children]: ../api/driveitem_list_children.md
+[drive-activities]: ../api/activities-list.md
+[drive-following]: ../api/drive-list-following.md
+[drive-get]: ../api/drive-get.md
+[item-get]: ../api/driveitem-get.md
+[item-changes]: ../api/driveitem-delta.md
+[item-search]: ../api/driveitem-search.md
+[item-children]: ../api/driveitem-list-children.md
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

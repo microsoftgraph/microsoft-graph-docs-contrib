@@ -1,6 +1,12 @@
+---
+title: "privilegedRoleSettings resource type"
+description: "Represents the settings for a privileged role."
+localization_priority: Normal
+---
+
 # privilegedRoleSettings resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the settings for a privileged role.
 
@@ -9,22 +15,22 @@ Represents the settings for a privileged role.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get privilegedRoleSettings](../api/privilegedrolesettings_get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Read properties and relationships of privilegedRoleSettings object.|
-|[Update privilegedRoleSettings](../api/privilegedrolesettings_updatet.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Update privilegedRoleSettings object.|
+|[Get privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Read properties and relationships of privilegedRoleSettings object.|
+|[Update privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Update privilegedRoleSettings object.|
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|The duration when the role is activated.|
-|id|string| The unique identifier for the role settings. Read-only.|
+|elevationDuration| String (timestamp) |The duration when the role is activated.|
+|id| string (identifier)| The unique identifier for the role settings. Read-only.|
 |isMfaOnElevationConfigurable|boolean|**true** if mfaOnElevation is configurable. **false** if mfaOnElevation is not configurable.|
 |lastGlobalAdmin|boolean|Internal used only.|
-|maxElavationDuration|duration|Maximal duration for the activated role.|
+|maxElavationDuration| string (identifier)| |Maximal duration for the activated role.|
 |mfaOnElevation|boolean|**true** if MFA is required to activate the role. **false** if MFA is not required to activate the role.|
-|minElevationDuration|duration|Minimal duration for the activated role.|
+|minElevationDuration|string (identifier)||Minimal duration for the activated role.|
 |notificationToUserOnElevation|boolean|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated.|
 |ticketingInfoOnElevation|boolean|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role.|
 |approvalOnElevation|boolean|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role.|
-|approverIds|array|List of Approval ids, if approval is required for activation.|
+|approverIds| String collection |List of Approval ids, if approval is required for activation.|
 
 ## Relationships
 None
@@ -54,17 +60,22 @@ Here is a JSON representation of the resource.
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": []
+  "approverIds": [ "String (identifier)" ]
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleSettings resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedrolesettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

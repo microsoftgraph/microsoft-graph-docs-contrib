@@ -1,3 +1,9 @@
+---
+title: "operationError resource type"
+description: "Describes errors in teamsAsyncOperation."
+localization_priority: Normal
+---
+
 # operationError resource type
 
 
