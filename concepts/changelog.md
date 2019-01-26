@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## January 2019
 
+### Reports APIs
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta  | Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.|
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |

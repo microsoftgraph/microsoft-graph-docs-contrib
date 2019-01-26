@@ -29,8 +29,8 @@ Here is a JSON representation of the resource
   "optionalProperties": [
     "attachments",
     "extensions",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties",
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty",
     "mentions"
   ],
   "@odata.type": "microsoft.graph.message"
@@ -45,7 +45,7 @@ Here is a JSON representation of the resource
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": "binary",
+  "conversationIndex": { "type":"String", "format":"base64"},
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -76,8 +76,8 @@ Here is a JSON representation of the resource
   "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],
   "mentions": [{"@odata.type": "microsoft.graph.mention"}],
-  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
-  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
+  "multiValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```
@@ -126,8 +126,8 @@ Here is a JSON representation of the resource
 |attachments|[Attachment](attachment.md) collection|The [fileAttachment](fileattachment.md) and [itemAttachment](itemattachment.md) attachments for the message.|
 |extensions|[Extension](extension.md) collection| The collection of open extensions defined for the message. Nullable.|
 |mentions|[mention](mention.md) collection | A collection of mentions in the message, ordered by the **createdDateTime** from the newest to the oldest. By default, a `GET` /messages does not return this property unless you apply `$expand` on the property.|
-|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Nullable.|
-|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Nullable.|
+|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the message. Nullable.|
+|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the message. Nullable.|
 
 ## Methods
 
