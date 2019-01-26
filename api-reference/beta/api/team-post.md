@@ -47,9 +47,9 @@ If successful, this API returns a `202 Accepted` response containing a link to t
 
 ## Examples
 
-### Example - Delegated permissions
+### Example 1: Delegated permissions
 
-Here is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
+The following is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
 #### Request
 
@@ -74,9 +74,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### Example - Application permissions
+### Example 2: Application permissions
 
-Here is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`. When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.
+The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `owners` collection.
 
 #### Request
 
@@ -104,9 +104,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### Example - Create a team with an app installed, multiple channels with pinned tabs using delegated permissions
+### Example 3: Create a team with an app installed, multiple channels with pinned tabs using delegated permissions
 
-Here is request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`. 
+The following is a request with a full payload. The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`. 
 
 #### Request
 
@@ -202,13 +202,13 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### Example - Create a team with a non-standard base template type
+### Example 4: Create a team with a non-standard base template type
 
-Base template types are special templates that Microsoft created for specific industries. These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Teams templates.
+Base template types are special templates that Microsoft created for specific industries. These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.
 
-To create a team from a non-standard base template, you’ll want to change the “template@odata.bind” property in the request body from ‘standard’ to point to the specific base template you’d like to create.
+To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
 
-Learn more about supported base template types [here](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
+To learn more about supported base template types, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
 
@@ -233,11 +233,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### Example - Create a team with a non-standard base template type with extended properties
+### Example 5: Create a team with a non-standard base template type with extended properties
 
-Base template types can be extended with additional properties, allowing you to build on an existing base template with additional team settings, channels, apps, or tabs.
+Base template types can be extended with additional properties, enabling you to build on an existing base template with additional team settings, channels, apps, or tabs.
 
-Learn more about supported base template types and supported properties [here](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
+To learn more about supported base template types and supported properties, see [Get started with Teams templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates).
 
 #### Request
 
