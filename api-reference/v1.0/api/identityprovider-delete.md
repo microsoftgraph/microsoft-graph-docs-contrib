@@ -12,7 +12,7 @@ Delete an existing [identityProvider](../resources/identityprovider.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -51,7 +51,7 @@ The following example deletes an **identityProvider**.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_identityprovider"
+  "name": "delete-identityprovider"
 }-->
 ```http
 DELETE https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
