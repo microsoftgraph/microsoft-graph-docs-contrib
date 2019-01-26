@@ -54,7 +54,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition |beta| Added new members and values [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
+|Addition |beta| Added new members and values to the [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
 
 ## December 2018
 
