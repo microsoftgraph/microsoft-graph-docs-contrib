@@ -1772,7 +1772,6 @@
 	  <Item text="Delete setting" url="/en-us/api-reference/v1.0/api/groupsetting_delete" />
 	</Item>
 	<Item text="Group setting template" url="/en-us/api-reference/v1.0/resources/groupsettingtemplate" >
-	  <Item text="List group setting templates" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_list" />
 	  <Item text="Get group setting template" url="/en-us/api-reference/v1.0/api/groupsettingtemplate_get" />
 	</Item>
  <Item text="Identity provider" url="/en-us/api-reference/v1.0/resources/identityprovider" SEOKeyword="Azure AD, B2C, B2B, MSA, LinkedIn, Facebook, Google" SEODescription="Configure Identity Providers in Azure Active Directory and Azure Active Directory B2C." >
