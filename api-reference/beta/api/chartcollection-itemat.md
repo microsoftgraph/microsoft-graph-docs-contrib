@@ -37,11 +37,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
+|index|number|Index value of the object to be retrieved. Zero-indexed.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [WorkbookChart](../resources/chart.md) object in the response body.
+If successful, this method returns `200 OK` response code and [Chart](../resources/chart.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -49,10 +49,7 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "isComposable": true,
-  "name": "chartcollection_itemat",
-  "idempotent": true,
-  "@type": "requestBodyResourceFor.chartcollection_itemat"
+  "name": "chartcollection_itemat"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
@@ -60,7 +57,8 @@ Content-type: application/json
 Content-length: 20
 
 {
-  "index": 8
+  "index": {
+  }
 }
 ```
 
@@ -69,7 +67,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChart"
+  "@odata.type": "microsoft.graph.chart"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -69,6 +69,7 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
+
 {
     "value": [
         {
