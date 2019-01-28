@@ -35,8 +35,8 @@ Here is a JSON representation of the resource
     "calendar",
     "extensions",
     "instances",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -51,7 +51,7 @@ Here is a JSON representation of the resource
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "uid": "string",
+  "iud": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -82,8 +82,8 @@ Here is a JSON representation of the resource
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -128,12 +128,12 @@ Here is a JSON representation of the resource
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|attachments|[attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
+|attachments|[Attachment](attachment.md) collection|The collection of [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md), and [referenceAttachment](referenceattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[Calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the event. Nullable.|
 |instances|[Event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
-|multiValueLegacyExtendedProperty|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
-|singleValueLegacyExtendedProperty|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
+|multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
+|singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
 
 ## Methods
 
