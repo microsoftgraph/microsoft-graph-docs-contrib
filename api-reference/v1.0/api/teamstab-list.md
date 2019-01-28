@@ -1,6 +1,9 @@
 ---
 title: "List tabs in channel"
 description: "Retrieve the list of tabs in the specified channel within a team. "
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # List tabs in channel
@@ -17,6 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 | Application                            | Group.Read.All, Group.ReadWrite.All         |
+
+> **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 
@@ -43,7 +48,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 #### Request
 The following is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 ```
 
 #### Response
@@ -65,7 +70,6 @@ Content-type: application/json
         "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
         "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
       },
-      "sortOrderIndex": 20,
       "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
     },
     {
@@ -73,7 +77,6 @@ Content-type: application/json
       "name": "My Trello Tab",
       "teamsAppId": "23134c6b-5e4b-439c-8f70-3ded1df20805",
       "configuration": null,
-      "sortOrderIndex": 21,
       "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3a3709b35c-a0ba-467c-8001-0f66895fb9d3?label=My%20Trello%Tab"
     }
   ]

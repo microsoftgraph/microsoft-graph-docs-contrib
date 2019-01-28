@@ -1,11 +1,12 @@
 ---
 title: "List governanceResources"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
+localization_priority: Normal
 ---
 
 # List governanceResources
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a collection of [governanceResource](../resources/governanceresource.md) that the requestor has access to.
 
@@ -70,7 +71,8 @@ Content-Length: 1289
             "type": "Microsoft.Storage/storageAccounts",
             "displayName": "anujstoragefimdev",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         },
         {
             "id": "0e0e4461-0c46-4d13-bf69-7cacbec75471",
@@ -78,7 +80,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines",
             "displayName": "APRJ-VM-01-T",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         },
         {
             "id": "c072eb85-e47b-4627-81cb-5af82a8fc9fb",
@@ -86,7 +89,8 @@ Content-Length: 1289
             "type": "Microsoft.Compute/virtualMachines/extensions",
             "displayName": "APRJ-VM-01-T/IaaSAntimalware",
             "status": "Active",
-            "onboardDateTime": null
+            "registeredDateTime": "2018-04-05T22:30:37.13Z",
+            "registeredRoot": "/subscriptions/38ab2ccc-3747-4567-b36b-9478f5602f0d",  
         }
 	]
 }
@@ -94,10 +98,15 @@ Content-Length: 1289
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List governanceResources",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceresource-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

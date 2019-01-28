@@ -1,4 +1,7 @@
   name: Graph Docs
+  metadata:
+    experimental: true
+    experiment_id: "b8938daf-1bcb-4f"
   items:
   - name: Overview of Microsoft Graph
     href: overview.md
@@ -24,25 +27,27 @@
           href: https://developer.microsoft.com/graph/terms-of-use
       - name: Microsoft Graph data connect (preview)
         href: data-connect-overview.md
-      - name: Training
-        href: training.md
+      - name: Tutorials
+        href: tutorials.md
         items:
+        - name: Angular
+          href: /graph/tutorials/angular
         - name: ASP.NET
-          href: /graph/training/aspnet-tutorial/
+          href: /graph/tutorials/aspnet
         - name: Microsoft Flow
-          href: /graph/training/flow-tutorial/
+          href: /graph/tutorials/flow
         - name: Node.js
-          href: /graph/training/node-tutorial/
+          href: /graph/tutorials/node
         - name: PHP
-          href: /graph/training/php-tutorial/
+          href: /graph/tutorials/php
         - name: Python
-          href: /graph/training/python-tutorial/
+          href: /graph/tutorials/python
         - name: Ruby
-          href: /graph/training/ruby-tutorial/
+          href: /graph/tutorials/ruby
         - name: React
-          href: /graph/training/react-tutorial/
+          href: /graph/tutorials/react
         - name: UWP
-          href: /graph/training/uwp-tutorial/
+          href: /graph/tutorials/uwp
     - name: Learn
       expanded: true
       items:
@@ -92,7 +97,7 @@
       - name: Mail
         href: outlook-mail-concept-overview.md
         items:
-        - name: Create and send messages
+        - name: Automate messaging
           href: outlook-create-send-messages.md
         - name: Organize messages
           href: outlook-organize-messages.md
@@ -100,6 +105,8 @@
           href: outlook-share-messages-folders.md
         - name: Immutable ID (preview)
           href: outlook-immutable-id.md
+        - name: Send mail from another user
+          href: outlook-send-mail-from-other-user.md
       - name: Notes
         href: integrate-with-onenote.md
         items:
@@ -162,6 +169,13 @@
         href: planner-concept-overview.md
       - name: Teamwork
         href: teams-concept-overview.md
+        items:
+        - name: Create a group and team
+          href: teams-create-group-and-team.md
+        - name: List all teams
+          href: teams-list-all-teams.md
+        - name: Configuring built-in tabs
+          href: teams-configuring-builtin-tabs.md
       - name: Workbooks and charts
         href: excel-concept-overview.md
         items:

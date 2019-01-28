@@ -1,11 +1,12 @@
 ---
 title: "governanceRoleAssignmentRequest resource type"
 description: "Represents the request for role assignment operations in Privilegd Identity Management."
+localization_priority: Normal
 ---
 
 # governanceRoleAssignmentRequest resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the request for role assignment operations in Privilegd Identity Management.
 
@@ -31,8 +32,6 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |type                       |String         |Required. Representing the the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Adminstrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Adminstrators change existing role assignments</li><li>`AdminRemove`: Adminstrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
 |assignmentState|String  |Required. The state of the assignment. The value can be <ul><li> `Eligible` for eligible assignment</li><li> `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.</li></ul>|
 |requestedDateTime          |DateTimeOffset |Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|roleAssignmentStartDateTime|DateTimeOffset |The start time for the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|roleAssignmentEndDateTime|DateTimeOffset   |The end time for the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |schedule                   |[governanceSchedule](governanceschedule.md)|The schedule object of the role assignment request.|
 |reason                     |String         |A message provided by users and administrators when create the request about why it is needed.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |The status of the role assignment request.|
@@ -69,8 +68,6 @@ Here is a JSON representation of the resource.
   "assignmentState": "String",
   "reason": "String",
   "requestedDateTime": "String (timestamp)",
-  "roleAssignmentStartDateTime": "String (timestamp)",
-  "roleAssignmentEndDateTime": "String (timestamp)",
   "schedule": {"@odata.type": "microsoft.graph.governanceSchedule"},
   "status": {"@odata.type": "microsoft.graph.governanceRoleAssignmentRequestStatus"},
   "linkedEligibleRoleAssignmentId": "String"
@@ -80,10 +77,15 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

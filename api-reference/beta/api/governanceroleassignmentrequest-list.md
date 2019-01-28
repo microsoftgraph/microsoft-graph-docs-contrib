@@ -1,11 +1,12 @@
 ---
 title: "List governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests. "
+localization_priority: Normal
 ---
 
 # List governanceRoleAssignmentRequests
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
@@ -94,8 +95,6 @@ Content-length: 279
             "type": "UserRemove",
             "assignmentState": "Active",
             "requestedDateTime": "2018-01-09T23:41:34.367Z",
-            "roleAssignmentStartDateTime": null,
-            "roleAssignmentEndDateTime": null,
             "reason": "Deactivation request",
             "schedule": null,
             "status": {
@@ -113,8 +112,6 @@ Content-length: 279
             "type": "UserAdd",
             "assignmentState": "Active",
             "requestedDateTime": "2018-01-10T20:58:09.163Z",
-            "roleAssignmentStartDateTime": "2018-01-10T20:58:11.363Z",
-            "roleAssignmentEndDateTime": "2018-01-11T01:58:11.363914Z",
             "reason": "test activations",
             "status": {
                 "status": "Closed",
@@ -160,10 +157,15 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List governanceRoleAssignmentRequests",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

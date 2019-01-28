@@ -1,6 +1,9 @@
 ---
 title: "Get dataPolicyOperation"
 description: "Retrieve the properties of the dataPolicyOperation object."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get dataPolicyOperation
@@ -12,14 +15,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+|Delegated (work or school account) |  User.Export.All and User.Read.All  |
 |Delegated (personal Microsoft account) |  Not applicable  |
-|Application | Directory.Read.All, Directory.ReadWrite.All | 
+|Application | User.Export.All and User.Read.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /dataPolicyOperations/<id>
+GET /dataPolicyOperations/{id}
 ```
 
 ## Request headers
@@ -38,7 +41,7 @@ If successful, this method returns a `200 OK` response code and [dataPolicyOpera
   "name": "get_datapolicyoperation"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/dataPolicyOperations/<id>
+GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
 ##### Response
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -58,7 +61,8 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value"
+  "submittedDateTime": "datetime-value",
+  "progress": "progress-value"
 }
 ```
 

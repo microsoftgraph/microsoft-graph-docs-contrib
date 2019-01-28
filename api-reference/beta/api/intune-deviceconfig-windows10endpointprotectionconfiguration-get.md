@@ -1,17 +1,21 @@
 ---
 title: "Get windows10EndpointProtectionConfiguration"
 description: "Read properties and relationships of the windows10EndpointProtectionConfiguration object."
+localization_priority: Normal
+author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # Get windows10EndpointProtectionConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -31,7 +35,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -45,6 +50,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -56,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 27756
+Content-Length: 27910
 
 {
   "value": {
@@ -71,6 +77,7 @@ Content-Length: 27756
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "dmaGuardDeviceEnumerationPolicy": "blockAll",
     "userRightsAccessCredentialManagerAsTrustedCaller": {
       "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
       "state": "blocked",
@@ -426,9 +433,9 @@ Content-Length: 27756
     "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
     "localSecurityOptionsBlockMicrosoftAccounts": true,
     "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-    "localSecurityOptionsEnableAdministratorAccount": true,
+    "localSecurityOptionsDisableAdministratorAccount": true,
     "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-    "localSecurityOptionsEnableGuestAccount": true,
+    "localSecurityOptionsDisableGuestAccount": true,
     "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
     "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
     "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -447,7 +454,7 @@ Content-Length: 27756
     "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
     "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
     "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-    "lanManagerWorkstationEnableInsecureGuestLogons": true,
+    "lanManagerWorkstationDisableInsecureGuestLogons": true,
     "localSecurityOptionsClearVirtualMemoryPageFile": true,
     "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
     "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -616,6 +623,7 @@ Content-Length: 27756
     "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
     "deviceGuardEnableVirtualizationBasedSecurity": true,
     "deviceGuardEnableSecureBootWithDMA": true,
+    "deviceGuardLaunchSystemGuard": "enabled",
     "smartScreenEnableInShell": true,
     "smartScreenBlockOverrideForFiles": true,
     "applicationGuardEnabled": true,
@@ -631,6 +639,7 @@ Content-Length: 27756
     "applicationGuardAllowPrintToNetworkPrinters": true,
     "applicationGuardAllowVirtualGPU": true,
     "applicationGuardAllowFileSaveOnHost": true,
+    "bitLockerAllowStandardUserEncryption": true,
     "bitLockerDisableWarningForOtherDiskEncryption": true,
     "bitLockerEnableStorageCardEncryptionOnMobile": true,
     "bitLockerEncryptDevice": true,
@@ -682,7 +691,6 @@ Content-Length: 27756
   }
 }
 ```
-
 
 
 

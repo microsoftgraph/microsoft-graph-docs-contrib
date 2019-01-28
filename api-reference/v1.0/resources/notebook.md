@@ -1,6 +1,9 @@
 ---
 title: "notebook resource type"
 description: "A OneNote notebook."
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # notebook resource type
