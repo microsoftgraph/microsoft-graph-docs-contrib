@@ -17,8 +17,8 @@ Enapsulates the formatting options for line elements.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
-|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Read properties and relationships of chartLineFormat object.|
+|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md)	|Update ChartLineFormat object. |
 |[Clear](../api/chartlineformat-clear.md)|None|Clear the line format of a chart element.|
 
 ## Properties
@@ -34,11 +34,12 @@ None
 
 Here is a JSON representation of the resource.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
-  "@odata.type": "microsoft.graph.workbookChartLineFormat"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartLineFormat"
 }-->
 
 ```json
