@@ -80,6 +80,7 @@
           href: api/user-delta.md
       - name: Calendar
         href: resources/event.md
+        displayName: Outlook
         items:
         - name: List events
           href: api/user-list-events.md
@@ -592,6 +593,7 @@
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Cross-device experiences
       href: resources/project-rome-overview.md
+      displayName: Project Rome
       items:
       - name: Activity feed
         href: resources/activity-feed-api-overview.md
@@ -616,6 +618,7 @@
             href: api/projectrome-delete-historyitem.md
     - name: Devices and apps
       href: resources/intune-graph-overview.md
+      displayName: Intune
       items:
       - name: App management
         href: resources/intune-app-conceptual.md
@@ -2966,6 +2969,7 @@
           href: api/educationuser-delete.md
     - name: Files
       href: resources/onedrive.md
+      displayName: OneDrive
       items:
       - name: Drives
         href: resources/drive.md
@@ -3036,6 +3040,7 @@
           href: api/permission-delete.md
     - name: Identity and access
       href: resources/azure-ad-overview.md
+      displayName: Azure AD, Microsoft identity platform
       items:
       - name: Contracts
         href: resources/contract.md
@@ -3178,6 +3183,7 @@
           href: api/subscribedsku-get.md
     - name: Mail
       href: resources/mail-api-overview.md
+      displayName: Outlook
       items:
       - name: Message
         href: resources/message.md
@@ -3320,6 +3326,7 @@
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Notes
       href: resources/onenote-api-overview.md
+      displayName: OneNote
       items:
       - name: Notes
         href: resources/onenote.md
@@ -3409,6 +3416,7 @@
           href: api/resource-get.md
     - name: Personal contacts
       href: resources/contact.md
+      displayName: Outlook
       items:
       - name: Contact
         href: resources/contact.md
@@ -3699,6 +3707,7 @@
         href: resources/security-error-codes.md
     - name: Sites and lists
       href: resources/sharepoint.md
+      displayName: SharePoint
       items:
       - name: Sites
         href: resources/site.md
@@ -3741,6 +3750,7 @@
           href: api/user-list-people.md
     - name: Tasks and plans
       href: resources/planner-overview.md
+      displayName: Planner
       items:
       - name: Plan
         href: resources/plannerplan.md
@@ -3820,6 +3830,7 @@
           href: api/plannerprogresstaskboardtaskformat-update.md
     - name: Teamwork
       href: resources/teams-api-overview.md
+      displayName: Microsoft Teams
       items:
       - name: Team
         href: resources/team.md
@@ -3963,6 +3974,7 @@
           href: api/onenote-post-notebooks.md
     - name: Workbooks and charts
       href: resources/excel.md
+      displayName: Excel
       items:
       - name: Workbook
         href: resources/workbook.md
@@ -4103,6 +4115,7 @@
         href: api/schemaextension-delete.md
     - name: Change notifications
       href: resources/webhooks.md
+      displayName: Webhooks
       items:
       - name: Subscription
         href: resources/subscription.md
