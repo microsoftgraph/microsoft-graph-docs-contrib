@@ -9,7 +9,7 @@ ms.prod: "groups"
 # Get group
 Get the properties and relationships of a group object.
 
-This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. See an [example](#request-2).
+This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. See an [example](#request-2) of  `$select`. An exception is the **hasMembersWithLicenseErrors** property. See an [example](group-list.md#request-2) of how to use this property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -131,13 +131,6 @@ Content-type: application/json
     "isSubscribedByMail": false,
     "unseenCount": 0
 }
-```
-
-#### Request 3
-To return groups containing members with license errors, use the **$filter** query parameter. 
-
-```http
-GET https://graph.microsoft.com/v1.0/groups?$filter=hasMembersWithLicenseErrors+eq+true 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
