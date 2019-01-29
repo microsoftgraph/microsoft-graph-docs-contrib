@@ -17,20 +17,20 @@ Represents the legend in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
-|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md)	|Update ChartLegend object. |
+|[Get ChartLegend](../api/chartlegend-get.md) | [ChartLegend](chartlegend.md) |Read properties and relationships of chartLegend object.|
+|[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md)	|Update ChartLegend object. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |overlay|boolean|Boolean value for whether the chart legend should overlap with the main body of the chart.|
-|position|string|Represents the position of the legend on the chart. The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
+|position|string|Represents the position of the legend on the chart. Possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|boolean|A boolean value the represents the visibility of a ChartLegend object.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartLegendFormat](chartlegendformat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
+|format|[ChartLegendFormat](chartlegendformat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 
@@ -38,19 +38,17 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartLegend"
+  "@odata.type": "microsoft.graph.chartLegend"
 }-->
 
 ```json
 {
   "overlay": true,
   "position": "string",
-  "visible": true,
-  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
+  "visible": true
 }
 
 ```
