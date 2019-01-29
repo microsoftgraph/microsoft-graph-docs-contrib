@@ -30,6 +30,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | v1.0 | Added the **forceChangePasswordNextSignInWithMfa** property to the [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0) complex type.|
+| Addition | v1.0 | Added the **licenseAssignmentStates** property to the [User](../api-reference/v1.0/resources/user.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
+| Addition | v1.0 | Added the **licenseAssignmentState** resource for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Addition | v1.0 | Added the **assignedLicenses**, **licenseProcessingState** and **hasMembersWithLicenseErrors** properties and **membersWithLicenseErrors** relationship to [Group](../api-reference/v1.0/resources/group.md) entity for [Group Based Licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Addition | beta | Added the **createdDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-beta) resource.|
 
 ### Microsoft Intune APIs
@@ -122,14 +125,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Removal | beta | Removed the `isPermanent` property on [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta) entity.|
 | Removal | beta | Removed the `roleAssignmentStartDateTime` property on [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) entity.|
 | Removal | beta | Removed the `roleAssignmentEndDateTime` property on [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) entity.|
-
-## January 2019
-
-### Azure AD APIs
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-|Addition |v1.0|Introduced new resource type [identityProvider](../api-reference/v1.0/resources/identityprovider.md) entity and the [create](../api-reference/v1.0/api/identityprovider_post_identityproviders.md), [list](../api-reference/v1.0/api/identityprovider_list.md), [get](../api-reference/v1.0/api/identityprovider_get.md), [update](../api-reference/v1.0/api/identityprovider_update.md), and [delete](../api-reference/v1.0/api/identityprovider_delete.md) operations.|
 
 ## November 2018
 
