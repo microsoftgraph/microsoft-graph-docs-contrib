@@ -19,7 +19,7 @@ Contact record related to an educationUser providing inforation for guardians, c
 |displayName|String|(required) Name of the contact.|
 |emailAddress|String|Primary email address of the contact.|
 |mobilePhone|String|Mobile phone number of the contact.|
-|relationship|contactRelationship|Relationship to the user. Possible values are `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`.|
+|relationship|`contactRelationship`|Relationship to the user. Possible values are `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`.|
 |accessConsent|Boolean|Whether the user has been consented to access student data.|
 
 ## JSON representation
