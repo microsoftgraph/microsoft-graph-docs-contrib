@@ -29,8 +29,10 @@ One of the following permissions is required to call this API. To learn more, in
 To unfollow one site: 
 
 ```http
-DELETE https://graph.microsoft.com/beta/users/{user-id}/followingSites
+DELETE https://graph.microsoft.com/beta/users/{user-id}/followingSites/{id}
 ```
+
+>**Note:** The "id" is the [unique identifier](../resources/site.md#id-property) of the site.
 
 To unfollow multiple sites:
 
@@ -40,15 +42,6 @@ PATCH https://graph.microsoft.com/beta/users/{user-id}/followingSites
 
 ## Request body
 
-To follow one site:
-
-In the request body, supply a JSON object with the following parameter. 
-
-
-| Name    | Value  | Description                                                            |
-|:------- |:-------|:-----------------------------------------------------------------------|
-|   Id    | string | The [unique identifier](../resources/site.md#id-property) of the item. |
-
 To unfollow multiple sites:
 
 In the request body, supply an array JSON objects with the following parameters. 
@@ -56,7 +49,7 @@ In the request body, supply an array JSON objects with the following parameters.
 
 | Name                 | Value  | Description                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   id                 | string | The [unique identifier](../resources/site.md#id-property) of the item. |
+|   id                 | string | The [unique identifier](../resources/site.md#id-property) of the site. |
 |   @oneDrive.action   | string | The type of action to perform on the site.                             |
 
 The types of actions that are supported are the following:

@@ -56,7 +56,7 @@ In the request body, supply an array JSON objects with the following parameters.
 
 | Name                 | Value  | Description                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   id                 | string | The [unique identifier](../resources/site.md#id-property) of the item. |
+|   id                 | string | The [unique identifier](../resources/site.md#id-property) of the site. |
 |   @oneDrive.action    | string | The type of action to perform on the site.                            |
 
 The types of actions that are supported are the following:
