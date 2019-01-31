@@ -54,6 +54,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
 
+This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to get the results ready. For example, some internal provisioning needs to happen before returning the user's data. Without dedicating a connection for this request to complete, you can retry the operation at a later point. Alternatively, you can poll for the status until the final result becomes available, by getting the URL returned in the location response header that accompanies the HTTP 202 response. 
+
 ## Examples
 
 ### Example 1: Standard users request
