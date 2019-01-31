@@ -83,7 +83,7 @@
           href: cross-device-app-configuration.md
       - name: Customer booking (preview)
         href: booking-concept-overview.md
-        displayName: Bookings
+        displayName: Bookings, Microsoft Bookings
       - name: Data access (preview)
         href: data-connect-concept-overview.md
         displayName: Microsoft Graph data connect
@@ -97,13 +97,13 @@
         href: education-concept-overview.md
       - name: Files
         href: onedrive-concept-overview.md
-        displayName: OneDrive
+        displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
         displaName: Azure AD, Microsoft identity platform
       - name: Mail
         href: outlook-mail-concept-overview.md
-        displayName: Outlook
+        displayName: Outlook, Outlook mail
         items:
         - name: Automate messaging
           href: outlook-create-send-messages.md
@@ -146,7 +146,7 @@
           href: onenote-error-codes.md
       - name: Personal contacts
         href: outlook-contacts-concept-overview.md
-        displayName: Outlook
+        displayName: Outlook, Outlook contacts, Outlook contact, People
         items:
         - name: Get shared contacts
           href: outlook-get-shared-contacts-folders.md
@@ -170,7 +170,7 @@
             href: security-qradar-siemintegration.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
-        displayName: SharePoint
+        displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
       - name: Social intelligence
         href: social-intel-concept-overview.md
         items:
@@ -232,10 +232,10 @@
           href: throttling.md
         - name: Change notifications
           href: webhooks.md
-          displayName: Webhooks
+          displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         - name: Track changes
           href: delta-query-overview.md
-          displayName: Delta query
+          displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
           items:
           - name: Get changes to events (example)
             href: delta-query-events.md
@@ -247,6 +247,7 @@
             href: delta-query-users.md
         - name: Add custom data
           href: extensibility-overview.md
+          displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
           items:
           - name: Use open extensions (example)
             href: extensibility-open-users.md

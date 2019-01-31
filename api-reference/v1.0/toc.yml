@@ -28,8 +28,10 @@
       href: /graph/throttling?toc=./ref/toc.json
     - name: Change notifications
       href: /graph/webhooks?toc=./ref/toc.json
+      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
     - name: Track changes
       href: /graph/delta-query-overview?toc=./ref/toc.json
+      displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users
       items:
       - name: Get changes to events (example)
         href: /graph/delta-query-events?toc=./ref/toc.json
@@ -41,6 +43,7 @@
         href: /graph/delta-query-users?toc=./ref/toc.json
     - name: Add custom data
       href: /graph/extensibility-overview?toc=./ref/toc.json
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
       - name: Use open extensions (example)
         href: /graph/extensibility-open-users?toc=./ref/toc.json
@@ -2969,7 +2972,7 @@
           href: api/educationuser-delete.md
     - name: Files
       href: resources/onedrive.md
-      displayName: OneDrive
+      displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
       items:
       - name: Drives
         href: resources/drive.md
@@ -3183,7 +3186,7 @@
           href: api/subscribedsku-get.md
     - name: Mail
       href: resources/mail-api-overview.md
-      displayName: Outlook
+      displayName: Outlook, Outlook mail
       items:
       - name: Message
         href: resources/message.md
@@ -3416,7 +3419,7 @@
           href: api/resource-get.md
     - name: Personal contacts
       href: resources/contact.md
-      displayName: Outlook
+      displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
       - name: Contact
         href: resources/contact.md
@@ -3707,7 +3710,7 @@
         href: resources/security-error-codes.md
     - name: Sites and lists
       href: resources/sharepoint.md
-      displayName: SharePoint
+      displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
       items:
       - name: Sites
         href: resources/site.md
@@ -4091,6 +4094,7 @@
     - name: Tools
     - name: Open extensions
       href: resources/opentypeextension.md
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
       - name: Create open extension
         href: api/opentypeextension-post-opentypeextension.md
@@ -4102,6 +4106,7 @@
         href: api/opentypeextension-delete.md
     - name: Schema extensions
       href: resources/schemaextension.md
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
       - name: List schema extensions
         href: api/schemaextension-list.md
@@ -4115,7 +4120,7 @@
         href: api/schemaextension-delete.md
     - name: Change notifications
       href: resources/webhooks.md
-      displayName: Webhooks
+      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Subscription
         href: resources/subscription.md
