@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
   "emailAddress": "String",
   "mobilePhone": "String",
   "relationship": "contactRelationship",
-  "accessConsent": True
+  "accessConsent": true
 }
 ```
 
