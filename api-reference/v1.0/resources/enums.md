@@ -436,7 +436,7 @@ localization_priority: Normal
 | preset23 | 23      
 | preset24 | 24      
 
-### alertFeedback enum type
+### alertFeedback values
 
 Possible feedback values on the alert provided by an analyst.
 
@@ -447,7 +447,7 @@ Possible feedback values on the alert provided by an analyst.
 |falsePositive|2| Alert is false-positive.|
 |benignPositive|3| Alert is benign-positive.|
 
-### fileHashType enum type
+### fileHashType values
 
 Enum for file hash types.
 
@@ -463,7 +463,7 @@ Enum for file hash types.
 |peSha1|7| PESHA1 hash type.|
 |peSha256|8| PESHA256 hash type.|
 
-### connectionDirection enum type
+### connectionDirection values
 
 Enum for the direction of the network connection (inbound/outbound).
 
@@ -473,7 +473,7 @@ Enum for the direction of the network connection (inbound/outbound).
 |inbound|1|Inbound connection.|
 |outbound|2| Outbound connection.|
 
-### connectionStatus enum type
+### connectionStatus values
 
 Enum for the status of connections.
 
@@ -485,7 +485,7 @@ Enum for the status of connections.
 |blocked|3| Connection blocked.|
 |failed|4| Connection failed.|
 
-### processIntegrityLevel enum type
+### processIntegrityLevel values
 
 Possible integrity level values of the process.
 
@@ -498,7 +498,7 @@ Possible integrity level values of the process.
 |high|40| Integrity level is High.|
 |system|50| Integrity level is System.|
 
-### registryHive enum type
+### registryHive values
 
 Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
 
@@ -512,7 +512,7 @@ Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System hive.|
 |usersDefault|6| HKEY_USERS\\.DEFAULT hive.|
 
-### registryOperation enum type
+### registryOperation values
 
 Operation that changed the registry key name and/or value.
 
@@ -523,7 +523,7 @@ Operation that changed the registry key name and/or value.
 |modify|2|Modify registry.|
 |delete|3|Delete registry.|
 
-### registryValueType enum type
+### registryValueType values
 
 Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
 
@@ -542,7 +542,7 @@ Enum for registry value types as defined by [https://docs.microsoft.com/en-us/wi
 |qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN registry value type.|
 |sz|11| REG_SZ registry value type.|
 
-### alertSeverity enum type
+### alertSeverity values
 
 Enum for severity of alerts.
 
@@ -554,7 +554,7 @@ Enum for severity of alerts.
 |medium|3| Severity is medium.|
 |high|4| Severity is high.|
 
-### alertStatus enum type
+### alertStatus values
 
 Possible values of an Alert lifecycle status (stage).
 
@@ -565,8 +565,7 @@ Possible values of an Alert lifecycle status (stage).
 |inProgress|20|Alert is in progress.|
 |resolved|30|Alert is resolved.|
 
-### emailRole enum type
-
+### emailRole values
 Possible values for email roles.
 
 |Member|Value|Description|
@@ -575,7 +574,7 @@ Possible values for email roles.
 |sender|1|Sender of the email.|
 |recipient|2|Recipient of the email.|
 
-### logonType enum type
+### logonType values
 
 Possible values for the method of user signin.
 
@@ -588,7 +587,7 @@ Possible values for the method of user signin.
 |batch|3| Logon is batch.|
 |service|4| Logon is service.|
 
-### userAccountSecurityType enum type
+### userAccountSecurityType values
 
 Possible values for user account types (group membership), per Windows definition.
 
@@ -598,20 +597,3 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|0|Member of Standard Users group.|
 |power|1| Member of Power Users group.|
 |administrator|2| Member of Administrators group.|
-
-# contactRelationship enum type
-
-Possible values for relationship of a relatedContact to their user.
-
-## Members
-
-|Member|Value|Description|
-|:---|:---|:---|
-|parent|0|The user's parent.|
-|relative|1| The user's relative.|
-|aide|2| The user's aide.|
-|doctor|3| The user's doctor.|
-|guardian|4| The user's guardian.|
-|child|5| The user's child.|
-|other|6| An unspecified relationship to the user.|
-|unknownFutureValue|7| Marker value for future compatibility.|
