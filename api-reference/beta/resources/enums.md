@@ -5,16 +5,16 @@ description: "Microsoft Graph enumeration values"
 
 ### contactRelationship values
 
-|Values|
-|:-----|
-|Parent|
-|Relative|
-|Aide|
-|Doctor|
-|Guardian|
-|Child|
-|Other|
-|UnknownFutureValue|
+|Member|Value|Description|
+|:---|:---|:---|
+|parent|0|The user's parent.|
+|relative|1| The user's relative.|
+|aide|2| The user's aide.|
+|doctor|3| The user's doctor.|
+|guardian|4| The user's guardian.|
+|child|5| The user's child.|
+|other|6| An unspecified relationship to the user.|
+|unknownFutureValue|7| Marker value for future compatibility.|
 
 ### timeZoneStandard values
 
