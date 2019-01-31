@@ -637,3 +637,20 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|0|Member of Standard Users group.|
 |power|1| Member of Power Users group.|
 |administrator|2| Member of Administrators group.|
+
+# contactRelationship enum type
+
+Possible values for relationship of a relatedContact to their user.
+
+## Members
+
+|Member|Value|Description|
+|:---|:---|:---|
+|parent|0|The user's parent.|
+|relative|1| The user's relative.|
+|aide|2| The user's aide.|
+|doctor|3| The user's doctor.|
+|guardian|4| The user's guardian.|
+|child|5| The user's child.|
+|other|6| An unspecified relationship to the user.|
+|unknownFutureValue|7| Marker value for future compatibility.|
