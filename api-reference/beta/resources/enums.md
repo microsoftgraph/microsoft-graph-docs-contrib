@@ -1,8 +1,20 @@
 ---
-title: "timeZoneStandard values"
-description: " Value"
+title: "Enum values"
+description: "Microsoft Graph enumeration values"
 ---
 
+### contactRelationship values
+
+|Values|
+|:-----|
+|Parent|
+|Relative|
+|Aide|
+|Doctor|
+|Guardian|
+|Child|
+|Other|
+|UnknownFutureValue|
 
 ### timeZoneStandard values
 
@@ -447,13 +459,9 @@ description: " Value"
 | preset23 | 23      
 | preset24 | 24      
 
-# Security API enums
-
-# alertFeedback enum type
+### alertFeedback enum type
 
 Possible feedback values on the alert provided by an analyst.
-
-## Members
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -462,11 +470,7 @@ Possible feedback values on the alert provided by an analyst.
 |falsePositive|2| Alert is false-positive.|
 |benignPositive|3| Alert is benign-positive.|
 
-# fileHashType enum type
-
-Enum for file hash types.
-
-## Members
+### fileHashType enum type
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -480,11 +484,7 @@ Enum for file hash types.
 |peSha1|7| PESHA1 hash type.|
 |peSha256|8| PESHA256 hash type.|
 
-# connectionDirection enum type
-
-Enum for the direction of the network connection (inbound/outbound).
-
-## Members
+### connectionDirection enum type
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -492,11 +492,7 @@ Enum for the direction of the network connection (inbound/outbound).
 |inbound|1|Inbound connection.|
 |outbound|2| Outbound connection.|
 
-# connectionStatus enum type
-
-Enum for the status of connections.
-
-## Members
+### connectionStatus enum type
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -506,11 +502,7 @@ Enum for the status of connections.
 |blocked|3| Connection blocked.|
 |failed|4| Connection failed.|
 
-# processIntegrityLevel enum type
-
-Possible integrity level values of the process.
-
-## Members
+### processIntegrityLevel enum type
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -521,11 +513,9 @@ Possible integrity level values of the process.
 |high|40| Integrity level is High.|
 |system|50| Integrity level is System.|
 
-# registryHive enum type
+### registryHive enum type
 
 Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
-
-## Members
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -537,11 +527,9 @@ Enum for registry hives as defined by [https://docs.microsoft.com/en-us/windows/
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System hive.|
 |usersDefault|6| HKEY_USERS\\.DEFAULT hive.|
 
-# registryOperation enum type
+### registryOperation enum type
 
 Operation that changed the registry key name and/or value.
-
-## Members
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -550,11 +538,9 @@ Operation that changed the registry key name and/or value.
 |modify|2|Modify registry.|
 |delete|3|Delete registry.|
 
-# registryValueType enum type
+### registryValueType enum type
 
 Enum for registry value types as defined by [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
-
-## Members
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -571,11 +557,9 @@ Enum for registry value types as defined by [https://docs.microsoft.com/en-us/wi
 |qwordlittleEndian|10| REG_QWORD_LITTLE_ENDIAN registry value type.|
 |sz|11| REG_SZ registry value type.|
 
-# alertSeverity enum type
+### alertSeverity enum type
 
 Enum for severity of alerts.
-
-## Members
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -585,11 +569,9 @@ Enum for severity of alerts.
 |medium|3| Severity is medium.|
 |high|4| Severity is high.|
 
-# alertStatus enum type
+### alertStatus enum type
 
 Possible values of an Alert lifecycle status (stage).
-
-## Members
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -598,11 +580,9 @@ Possible values of an Alert lifecycle status (stage).
 |inProgress|20|Alert is in progress.|
 |resolved|30|Alert is resolved.|
 
-# emailRole enum type
+### emailRole enum type
 
 Possible values for email roles.
-
-## Members
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -610,11 +590,9 @@ Possible values for email roles.
 |sender|1|Sender of the email.|
 |recipient|2|Recipient of the email.|
 
-# logonType enum type
+### logonType enum type
 
 Possible values for the method of user signin.
-
-## Members
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -625,11 +603,9 @@ Possible values for the method of user signin.
 |batch|3| Logon is batch.|
 |service|4| Logon is service.|
 
-# userAccountSecurityType enum type
+### userAccountSecurityType enum type
 
 Possible values for user account types (group membership), per Windows definition.
-
-## Members
 
 |Member|Value|Description|
 |:---|:---|:---|
@@ -637,3 +613,4 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|0|Member of Standard Users group.|
 |power|1| Member of Power Users group.|
 |administrator|2| Member of Administrators group.|
+
