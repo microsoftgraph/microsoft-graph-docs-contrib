@@ -1,16 +1,16 @@
 ---
 title: "relatedContact resource type"
-description: "Contact record related to an educationUser providing inforation for guardians, carers, doctors etc."
+description: "Contact record related to an educationUser that provides information for guardians, aides, doctors, and so on."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 ---
 
-# educationStudent resource type
+# relatedContact resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contact record related to an educationUser providing inforation for guardians, aides, doctors and so on.
+Contact record related to an [educationUser](../resources/educationuser.md) that provides inforation for guardians, aides, doctors, and so on.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -20,7 +20,7 @@ Contact record related to an educationUser providing inforation for guardians, a
 |emailAddress|String|Primary email address of the contact.|
 |mobilePhone|String|Mobile phone number of the contact.|
 |relationship|`contactRelationship`|Relationship to the user. Possible values are `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`.|
-|accessConsent|Boolean|Indicated whether the user has been consented to access student data.|
+|accessConsent|Boolean|Indicates whether the user has been consented to access student data.|
 
 ## JSON representation
 
