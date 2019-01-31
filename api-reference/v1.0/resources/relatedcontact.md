@@ -1,12 +1,12 @@
 ---
 title: "relatedContact resource type"
-description: "Contact record related to an educationUser providing inforation for guardians, carers, doctors etc."
+description: "Contact record related to an educationUser that provides information for guardians, aides, doctors, and so on."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 ---
 
-# educationStudent resource type
+# realtedContact resource type
 
 Contact record related to an [educationUser](../resources/educationuser.md) that provides information for guardians, aides, doctors, and so on.
 
