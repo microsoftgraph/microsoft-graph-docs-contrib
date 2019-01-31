@@ -8,17 +8,17 @@ ms.prod: "education"
 
 # educationStudent resource type
 
-Contact record related to an educationUser providing inforation for guardians, carers, doctors etc.
+Contact record related to an educationUser providing inforation for guardians, aides, doctors and so on.
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String|Identity of the contact within Azure Active Directory.|
-|displayName|String|(required) Name of the contact.|
+|displayName|String|Name of the contact. Required.|
 |emailAddress|String|Primary email address of the contact.|
 |mobilePhone|String|Mobile phone number of the contact.|
 |relationship|`contactRelationship`|Relationship to the user. Possible values are `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`.|
-|accessConsent|Boolean|Whether the user has been consented to access student data.|
+|accessConsent|Boolean|Indicated whether the user has been consented to access student data.|
 
 ## JSON representation
 
