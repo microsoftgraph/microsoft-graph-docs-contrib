@@ -80,7 +80,7 @@
           href: api/user-delta.md
       - name: Calendar
         href: resources/event.md
-        displayName: Outlook
+        displayName: Outlook, Outlook calendar
         items:
         - name: List events
           href: api/user-list-events.md
