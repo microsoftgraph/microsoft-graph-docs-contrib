@@ -1,20 +1,23 @@
 ---
 title: "windowsPackageInformation resource type"
 description: "Contains properties for the package information for a Windows line of business app."
+localization_priority: Normal
 author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # windowsPackageInformation resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties for the package information for a Windows line of business app.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |displayName|String|The Display Name.|
 |identityName|String|The Identity Name.|
 |identityPublisher|String|The Identity Publisher.|
@@ -24,6 +27,7 @@ Contains properties for the package information for a Windows line of business a
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -52,7 +56,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

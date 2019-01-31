@@ -1,16 +1,19 @@
 ---
 title: "ratingAustraliaTelevisionType enum type"
 description: "TV content rating labels in Australia"
+localization_priority: Normal
 author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # ratingAustraliaTelevisionType enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 TV content rating labels in Australia
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -23,7 +26,6 @@ TV content rating labels in Australia
 |mature|6|The M classification is recommended for viewers over 15|
 |agesAbove15|7|The MA15+ classification is not suitable for viewers under 15|
 |agesAbove15AdultViolence|8|The AV15+ classification is not suitable for viewers under 15, adult violence-specific|
-
 
 
 

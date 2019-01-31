@@ -2,6 +2,8 @@
 title: "Update tab"
 description: "Update the properties of the specified tab."
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Update tab
@@ -46,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 #### Request
 The following is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -69,7 +71,6 @@ Content-type: application/json
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   },
-  "sortOrderIndex": 20,
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
 }
 ```

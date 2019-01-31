@@ -1,18 +1,21 @@
 ---
 title: "Create iosGeneralDeviceConfiguration"
 description: "Create a new iosGeneralDeviceConfiguration object."
+localization_priority: Normal
 author: "tfitzmac"
+ms.prod: "Intune"
 ---
 
 # Create iosGeneralDeviceConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -195,6 +198,14 @@ The following table shows the properties that are required when you create the i
 |airPrintBlockiBeaconDiscovery|Boolean|Indicates whether or not iBeacon discovery of AirPrint printers is blocked. This prevents spurious AirPrint Bluetooth beacons from phishing for network traffic (iOS 11.0 and later).|
 |blockSystemAppRemoval|Boolean|Indicates whether or not the removal of system apps from the device is blocked on a supervised device (iOS 11.0 and later).|
 |vpnBlockCreation|Boolean|Indicates whether or not the creation of VPN configurations is blocked (iOS 11.0 and later).|
+|appRemovalBlocked|Boolean|Indicates if the removal of apps is allowed.|
+|usbRestrictedModeBlocked|Boolean|Indicates if connecting to USB accessories while the device is locked is allowed (iOS 11.4.1 and later).|
+|passwordBlockAutoFill|Boolean|Indicates if the AutoFill passwords feature is allowed (iOS 12.0 and later).|
+|passwordBlockProximityRequests|Boolean|Indicates whether or not to block requesting passwords from nearby devices (iOS 12.0 and later).|
+|passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature iOS 12.0 and later).|
+|dateAndTimeForceSetAutomatically|Boolean|Indicates whether or not the Date and Time "Set Automatically" feature is enabled and cannot be turned off by the user (iOS 12.0 and later).|
+|contactsAllowManagedToUnmanagedWrite|Boolean|Indicates whether or not managed apps can write contacts to unmanaged contacts accounts (iOS 12.0 and later).|
+|contactsAllowUnmanagedToManagedRead|Boolean|Indicates whether or not unmanaged apps can read from managed contacts accounts (iOS 12.0 or later).|
 
 
 
@@ -202,16 +213,16 @@ The following table shows the properties that are required when you create the i
 If successful, this method returns a `201 Created` response code and a [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 8496
+Content-length: 8758
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -443,7 +454,15 @@ Content-length: 8496
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true
 }
 ```
 
@@ -452,7 +471,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8604
+Content-Length: 8930
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -690,10 +709,17 @@ Content-Length: 8604
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true
 }
 ```
-
 
 
 
