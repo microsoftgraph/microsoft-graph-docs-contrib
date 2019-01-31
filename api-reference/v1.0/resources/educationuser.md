@@ -46,6 +46,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example, "en-US".|
 |primaryRole|educationUserRole| Default role for a user. The user's role might be different in an individual class. The possible values are: `student`, `teacher`, `unknownFutureValue`. Supports $filter.|
 |provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
+|relatedContacts|[relatedContact](relatedcontact.md) collection|Set of contacts related to the user.  This optional property must be specified in a $select clause and can only be retrieved for an individual user.|
 |residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
 |student|[educationStudent](educationstudent.md)| If the primary role is student, this block will contain student specific data.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
