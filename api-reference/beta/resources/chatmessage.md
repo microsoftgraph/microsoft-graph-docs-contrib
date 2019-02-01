@@ -29,7 +29,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |messageType|String|The type of message, current supported values are: message, chatEvent, Typing|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated|
-|deleted|boolean|Represents if a message has been soft deleted|
+|deleted|Boolean|Indicates whether a message has been soft deleted|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted |
 |subject|string|Message subject line. Optional|
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
