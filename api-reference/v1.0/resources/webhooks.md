@@ -31,7 +31,6 @@ In general, subscription operations require read permission to the resource. For
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [message][]                                        |
 | Application                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][]|
 
-> **Note** You cannot use application permissions to create, get, update, or delete subscriptions for change notifications on _root items_ in a OneDrive **drive**.
 
 ## See also
 
