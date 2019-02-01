@@ -224,6 +224,15 @@
             href: extensibility-open-users.md
           - name: Use schema extensions (example)
             href: extensibility-schema-groups.md
+        - name: Use SDKs
+          href: sdks-overview.md
+          items:
+          - name: Use .net SDK
+            href: sdks/dotnet/readme.md
+          - name: Use Java SDK
+            href: sdks-java.md
+          - name: Use Javascript SDK
+            href: sdks-javascript.md
       - name: Resources
         expanded: true
         items:
