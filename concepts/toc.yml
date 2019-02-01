@@ -228,11 +228,13 @@
           href: sdks-overview.md
           items:
           - name: Use .net SDK
-            href: sdks/dotnet/readme.md
+            href: sdks/dotnet/overview.md
           - name: Use Java SDK
-            href: sdks-java.md
+            href: sdks/java/overview.md
           - name: Use Javascript SDK
-            href: sdks-javascript.md
+            href: sdks/javascript/overview.md
+          - name: Use PHP SDK
+            href: sdks/php/overview.md
       - name: Resources
         expanded: true
         items:
