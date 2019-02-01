@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
 
-This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to get the results ready. For example, internal provisioning may need to complete before returning the user's data. You can retry the operation at a later point. Alternatively, you can poll for the status until the final result becomes available, by doing a GET operation on the URI returned in the `Location` response header that accompanies the HTTP 202 response. For more information, see [RFC 2616: Section 10 Status code definitions](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
+This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to get the results ready. For example, internal provisioning may need to complete before returning the user's data. You can retry the operation at a later point. Alternatively, you can poll for the status until the final result becomes available, by doing a GET operation on the URI returned in the `Location` response header that accompanies the HTTP 202 response. For more information, see [[RFC 2616]: Section 10 Status code definitions](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html).
 
 ## Examples
 
