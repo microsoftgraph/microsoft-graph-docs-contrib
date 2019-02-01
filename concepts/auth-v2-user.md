@@ -237,7 +237,7 @@ You can call Microsoft Graph on behalf of a user from the following kinds of app
 
 For more information about supported app types with the Azure AD v2.0 endpoint, see [Types of apps](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
 
-> **Note**: Calling Microsoft Graph from a [standalone web API](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types) is not currently supported by the Azure AD v2.0 endpoint. For this scenario, you need to use the Azure AD endpoint.
+> **Note**: Calling Microsoft Graph from a standalone web API is not currently supported by the Azure AD v2.0 endpoint. For this scenario, you need to use the Azure AD endpoint.
 
 For more information about getting access to Microsoft Graph on behalf of a user from the Azure AD v2.0 endpoint:
 
