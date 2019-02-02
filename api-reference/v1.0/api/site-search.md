@@ -59,6 +59,7 @@ Content-type: application/json
   ]
 }
 ```
+>**Note:** The only property that works for sorting is the createdDateTime, the search filter is free text search which uses multiple properties when retrieving the results for your search.
 
 <!-- {
   "type": "#page.annotation",
