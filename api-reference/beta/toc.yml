@@ -7409,12 +7409,12 @@
           href: api/sectiongroup-list-sections.md
         - name: Create section
           href: api/sectiongroup-post-sections.md
-      - name: Pages
-        href: resources/page.md
+      - name: Onenote Pages
+        href: resources/onenotepage.md
         items:
         - name: List pages
           href: api/onenote-list-pages.md
-        - name: Create page
+        - name: Create pageresources/range.md
           href: api/section-post-pages.md
         - name: Get page
           href: api/page-get.md
@@ -7425,7 +7425,7 @@
         - name: Copy to section
           href: api/page-copytosection.md
       - name: Resources
-        href: resources/resource.md
+        href: resources/onenoteresource.md
         items:
         - name: Get resource
           href: api/resource-get.md
@@ -8213,7 +8213,7 @@
         - name: Add chart
           href: api/worksheet-post-charts.md
       - name: Range
-        href: resources/range.md
+        href: resources/workbookrange.md
         items:
         - name: Get range
           href: api/range-get.md
@@ -8255,7 +8255,7 @@
         - name: Get range
           href: api/table-range.md
       - name: Chart
-        href: resources/chart.md
+        href: resources/workbookchart.md
         items:
         - name: List charts
           href: api/chart-list.md
@@ -8274,7 +8274,7 @@
         - name: Set position data
           href: api/chart-setposition.md
       - name: Named item
-        href: resources/nameditem.md
+        href: resources/workbooknameditem.md
         items:
         - name: List named item
           href: api/nameditem-get.md
