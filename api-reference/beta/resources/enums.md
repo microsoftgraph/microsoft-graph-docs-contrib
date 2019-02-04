@@ -705,3 +705,19 @@ Possible values for user account types (group membership), per Windows definitio
 |immutableEntryId|2||
 |restId|3||
 |restImmutableEntryId|4||
+
+### attributeFlowBehavior values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|flowWhenChanged|0||
+|flowAlways|1||
+
+### attributeFlowType values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|always|0||
+|objectAddOnly|1||
+|multiValueAddOnly|2||
+|restId|3||
