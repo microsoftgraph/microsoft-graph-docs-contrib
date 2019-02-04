@@ -17,7 +17,7 @@ Represents the protection of a sheet object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [WorksheetProtection](worksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
+|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](worksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
 |[Protect](../api/worksheetprotection-protect.md)|None|Protect a worksheet. It throws if the worksheet has been protected.|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|None|Unprotect a worksheet|
 

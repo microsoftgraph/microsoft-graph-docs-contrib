@@ -34,7 +34,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "user": {"@odata.type": "microsoft.graph.oneNoteIdentity"}
+  "user": {"@odata.type": "microsoft.graph.onenoteIdentity"}
 }
 
 ```

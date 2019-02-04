@@ -109,7 +109,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1},
+      "sourceId": "{rest-formatted-id-1}",
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
