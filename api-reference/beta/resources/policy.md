@@ -66,6 +66,10 @@ The properties below form the JSON object that represents a token lifetime polic
 ## JSON representation
 Here is a JSON representation of the resource.
 
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.parentalControlSettings"
+}-->
 ```json
 {
   "definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"],
