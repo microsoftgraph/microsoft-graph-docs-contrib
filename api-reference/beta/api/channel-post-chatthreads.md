@@ -10,6 +10,8 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+NOTE: This API has been deprected. Please use the [Post chat message](../api/channel-post-chatmessage.md) API instead
+
 Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.
 
 ## Permissions
