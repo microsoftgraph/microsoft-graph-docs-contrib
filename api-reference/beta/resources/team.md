@@ -80,6 +80,7 @@ The following is a JSON representation of the resource.
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
   "webUrl": "https://...longUrl..."
 }
