@@ -46,7 +46,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |charts|[workbookChart](workbookchart.md) collection|Returns collection of charts that are part of the worksheet. Read-only.|
 |names|[workbookNamedItem](workbooknameditem.md) collection|Returns collection of names that are associated with the worksheet. Read-only.|
 |pivotTables|[workbookPivotTable](workbookpivottable.md) collection| Collection of PivotTables that are part of the worksheet. |
-|protection|[WorksheetProtection](worksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
+|protection|[workbookWorksheetProtection](worksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
 |tables|[workbookTable](workbooktable.md) collection|Collection of tables that are part of the worksheet. Read-only.|
 
 ## JSON representation
