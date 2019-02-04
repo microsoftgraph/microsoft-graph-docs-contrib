@@ -94,7 +94,7 @@ primitive types.
 
 | Name       | Value |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 When creating an extension in a _new_ resource instance, in addition to the
