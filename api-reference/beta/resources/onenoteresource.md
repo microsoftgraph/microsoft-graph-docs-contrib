@@ -4,7 +4,7 @@ description: "An image or other file resource on a OneNote page. "
 localization_priority: Normal
 ---
 
-# resource resource type
+# onenoteResource resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,6 +20,13 @@ You can get the binary data of a resource, but getting a JSON representation of 
   "@odata.type": "microsoft.graph.onenoteResource"
 }-->
 
+```json
+{
+  "content": "String (Stream)",
+  "contentUrl": "String"
+}
+
+```
 Get the binary data of a specific resource by sending a GET request to the resource's `content` endpoint:
 
 ```
@@ -51,7 +58,10 @@ An `object` tag (which represents files such as PDF, DOCX, and PNG) includes the
 ```
 
 ## Properties
-None.
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+| content | Edm.Stream||
+| contentUrl | String ||
 
 ## Relationships
 None.

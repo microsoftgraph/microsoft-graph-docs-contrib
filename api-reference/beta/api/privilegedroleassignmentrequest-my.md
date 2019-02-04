@@ -72,7 +72,7 @@ Content-length: 304
             "duration" : null
         },
         "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-         "userId": "Self"，
+         "userId": "Self",
          "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
         "evaluateOnly": false,
         "type": "UserAdd",

@@ -138,7 +138,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | activities         | [itemActivity][] collection     | The list of recent activities that took place on this item.
 | analytics          | [itemAnalytics][] resource      | Analytics about the view activities that took place on this item.
 | content            | Stream                          | The content stream, if the item represents a file.
-| children           | driveitem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
+| children           | driveItem collection            | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | listItem           | [listItem][]                    | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection       | The set of permissions for the item. Read-only. Nullable.
 | thumbnails         | [thumbnailSet][] collection     | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.

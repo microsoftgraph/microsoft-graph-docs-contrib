@@ -1,10 +1,10 @@
 ---
-title: "secureScoreControlProfiles resource type"
+title: "secureScoreControlProfile resource type"
 description: "Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls."
 localization_priority: Normal
 ---
 
-# secureScoreControlProfiles resource type
+# secureScoreControlProfile resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,8 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	remediation |	String	|	Description of what the control will help remediate. |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation. |
 |	actionUrl |	String	|	URL to where the control can be actioned. |
-|	controlStateUpdates |	[secureScoreControlStateUpdate](securescorecontrolstateupdate.md)	collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	controlStateUpdates | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
 ## Relationships
 
@@ -60,26 +61,23 @@ The following is a JSON representation of the resource.
 ```json
 {
 "title": "String", 
-"azureTenantId": "Guid", 
+"azureTenantId": "String (identifier)", 
 "referenceId": "String", 
 "controlName": "String", 
 "maxScore": "Int32",
-"actionCategory": "Collection(microsoft.graph.SecureScore.actionCategory)",
-"actionType": "Collection(microsoft.graph.SecureScore.actionType)",
+"actionType": "String",
 "service": "String",
-"tier": "Collection(microsoft.graph.SecureScore.tier)",
-"userImpact": "Collection(microsoft.graph.SecureScore.ranking)",
-"implementationCost ": "Collection(microsoft.graph.SecureScore.ranking)",
+"tier": "String",
+"userImpact": "string",
+"implementationCost ": "String",
 "rank ": "Int32",
-"threats": "Collection(microsoft.graph.SecureScore.threat)",
+"threats": ["string"],
 "deprecated ": "Boolean",
 "remediation": "String",
 "remediationImpact ": "String",
 "actionUrl": "String",
-"controlStateUpdates": "Collection(microsoft.graph.SecureScore.controlStateUpdates)",
-"tenantNotes": "String",
-"upn": "String",
-"comments": "String",
+"controlStateUpdates": [{"@odata.type":"microsoft.graph.secureScoreControlStateUpdate"}],
+"vendorInformation": {"@odata.type":"microsoft.graph.securityVendorInformation"}
 }
 
 

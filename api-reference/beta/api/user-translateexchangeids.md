@@ -113,7 +113,7 @@ Content-type: application/json
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2},
+      "sourceId": "{rest-formatted-id-2}",
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

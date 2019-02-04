@@ -37,7 +37,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|options|[workbookWorksheetProtectionOptions](../resources/worksheetprotection.md)|Optional. sheet protection options.|
+|options|[workbookWorksheetProtection](../resources/worksheetprotection.md)|Optional. sheet protection options.|
 
 ## Response
 

@@ -45,7 +45,11 @@ GET /sites/{site-id}/pages
 
 #### Response
 
-<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
+<!-- { 
+    "blockType": "response", 
+    "@odata.type": "Collection(microsoft.graph.sitePage)", 
+    "truncated": true
+ } -->
 
 ```json
 HTTP/1.1 200 OK
@@ -112,12 +116,12 @@ Content-type: application/json
                         "properties": {
                             "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
                             "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": { ... },
+                            "query": {  },
                             "templateId": 1,
                             "maxItemsPerPage": 10,
                             "hideWebPartWhenEmpty": false,
                             "kqlQueryTemplate": "...",
-                            "displayMaps": { ... },
+                            "displayMaps": {  },
                             "sites": [],
                             "layoutId": "Card",
                             "dataProviderId": "Search"
