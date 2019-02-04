@@ -29,7 +29,7 @@ Represents the protection of a sheet object.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|options|[worksheetProtectionOptions](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
+|options|[workbookWorksheetProtection](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
 
 ## JSON representation
 

@@ -47,8 +47,9 @@ GET /sites/{site-id}/pages
 
 <!-- { 
     "blockType": "response", 
-    "@odata.type": "Collection(microsoft.graph.sitePage)", 
-    "truncated": true
+    "@odata.type": "microsoft.graph.sitePage", 
+    "truncated": "true,
+    "isCollection":true
  } -->
 
 ```json
@@ -58,7 +59,7 @@ Content-type: application/json
 {
     "value": [
         {
-            "id": "5",
+            "id": 5,
             "eTag": "{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3},4",
             "lastModifiedDateTime": "2018-08-15T19:20:20Z",
             "name": "EventInstructions.aspx",

@@ -57,7 +57,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "String",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",
