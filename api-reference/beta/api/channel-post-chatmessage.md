@@ -59,8 +59,6 @@ Content-type: application/json
 }
 ```
 
-> Currently, the contentType must be specified as an integer rather than a string: 0 for "text" or 1 for "html".  Future API releases will fix this.
-
 ##### Response
 
 Here is an example of the response.
