@@ -46,14 +46,13 @@ This resource lets you add your own data to custom properties using [extensions]
 |postalCode|String| Postal code of the address for the organization |
 |preferredLanguage|String| The preferred language for the organization. Should follow ISO 639-1 Code; for example "en". |
 |privacyProfile|[privacyProfile](privacyprofile.md)| The privacy profile of an organization.            |
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection| Not nullable.            |
-|provisioningErrors|ProvisioningError collection| Not nullable.            |
+|provisionedPlans|[provisionedPlan](provisionedplan.md) collection| Not nullable.            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
 |state|String| State name of the address for the organization |
 |street|String| Street name of the address for organization |
 |technicalNotificationMails|String collection| Not nullable. |
-|verifiedDomains|[VerifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable.            |
+|verifiedDomains|[verifiedDomain](verifieddomain.md) collection|The collection of domains associated with this tenant. Not nullable.            |
 
 ## Relationships
 

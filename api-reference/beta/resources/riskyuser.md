@@ -1,5 +1,5 @@
 ---
-title: "riskyUsers resource type"
+title: "riskyUser resource type"
 description: "Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD."
 author: "cloudhandler"
 localization_priority: Normal
@@ -37,17 +37,6 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`userDisplayName`|`string`|Risky user display name|
 |`userPrincipalName`|`string`|Risky user principal name|
 
-## Relationships
-
-| Relationship | Type |Description|
-|:---------------|:--------|:----------|
-|id|UserObjectId| The unique identifier of the user with which a given risk event is associated with.|
-|isGuest|isGuest| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
-|isDeleted|isDeleted| A user may or may not be deleted. |
-|riskState|riskState| A risky user could exist in one of multiple states. |
-|riskDetail|riskDetail| A risky user could be in a certain state because of multiple reasons. |
-|riskLevel|riskLevel| A risky user could be considered one of multiple risk levels. |
-
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -55,9 +44,9 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json
@@ -66,9 +55,9 @@ Here is a JSON representation of the resource.
 "riskLastUpdatedDateTime": "dateTimeOffset",
 "isGuest": "boolean",
 "isDeleted": "boolean",
-"riskDetail":  {"@odata.type": "microsoft.graph.riskDetail"},
-"riskLevel":  {"@odata.type": "microsoft.graph.riskLevel"},
-"riskState":  {"@odata.type": "microsoft.graph.riskState"},
+"riskDetail":  "string",
+"riskLevel":  "string",
+"riskState":  "string",
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }

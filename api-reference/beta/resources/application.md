@@ -99,7 +99,7 @@ The following is a JSON representation of the resource.
   "isFallbackPublicClient": true,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
-  "optionalClaims": [{"@odata.type": "microsoft.graph.optionalClaims"}],
+  "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "orgRestrictions": ["Guid"],
   "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],

@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Parameter | Type | Description |
 |:----------|:-----|:------------|
-| inputIds | Edm.String collection | A collection of identifiers to convert. All identifiers in the collection MUST have the same source ID type, and MUST be for items in the same mailbox. Maximum size of this collection is 1000 strings. |
+| inputIds | String collection | A collection of identifiers to convert. All identifiers in the collection MUST have the same source ID type, and MUST be for items in the same mailbox. Maximum size of this collection is 1000 strings. |
 | sourceIdType | exchangeIdFormat | The ID type of the identifiers in the `InputIds` parameter. |
 | targetIdType | exchangeIdFormat | The requested ID type to convert to. |
 

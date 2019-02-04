@@ -74,7 +74,7 @@ Here is a JSON representation of the resource.
  "status": "string",
  "createdDateTime": "string (timestamp)",
  "owner": "microsoft.graph.userIdentity",
- "resource":"microsoft.graph.programResource"
+ "resource":{"@odata.type":"microsoft.graph.programResource"}
 }
 
 ```
@@ -89,7 +89,24 @@ This type inherits from `microsoft.graph.identity` and has one additional proper
 |:---------------|:--------|:----------|
 | `type`               |`String`  | Type of the resource, indicating whether it is a group or an app. |     
 
+## JSON representation
 
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.programResource"
+}-->
+
+```json
+{
+ "type": "string"
+}
+
+```
 <!--
 {
   "type": "#page.annotation",

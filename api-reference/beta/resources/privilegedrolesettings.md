@@ -30,7 +30,7 @@ Represents the settings for a privileged role.
 |notificationToUserOnElevation|boolean|**true** if send notification to the end user when the role is activated. **false** if do not send notification when the role is activated.|
 |ticketingInfoOnElevation|boolean|**true** if the ticketing information is required when activate the role. **false** if the ticketing information is not required when activate the role.|
 |approvalOnElevation|boolean|**true** if the approval is required when activate the role. **false** if the approval is not required when activate the role.|
-|approverIds|array|List of Approval ids, if approval is required for activation.|
+|approverIds| string collection |List of Approval ids, if approval is required for activation.|
 
 ## Relationships
 None
@@ -60,7 +60,7 @@ Here is a JSON representation of the resource.
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": []
+  "approverIds": ["string"]
 }
 
 ```

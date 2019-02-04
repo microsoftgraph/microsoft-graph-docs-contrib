@@ -31,20 +31,27 @@ Rich relationship connecting a user to documents that are trending around the us
 
 | Property      | Type          | Description  |
 | ------------- |---------------| -------------|
-| resource    	| Entity		| Used for navigating to the trending document. |
+| resource    	| entity		| Used for navigating to the trending document. |
 
 ## JSON representation
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.trending"
+}-->
+
 ```json
 {
   "id": "string",
   "weight": "double",
-  "resourceVisualization": [{"@odata.type": "microsoft.graph.resourceVisualization"}],
-  "resourceReference": [{"@odata.type": "microsoft.graph.resourceReference"}],
-  
-  "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
+  "resourceVisualization": {"@odata.type": "microsoft.graph.resourceVisualization"},
+  "resourceReference": {"@odata.type": "microsoft.graph.resourceReference"},
+  "resource":  { "@odata.type": "microsoft.graph.entity" }
 }
 ```
 <!--

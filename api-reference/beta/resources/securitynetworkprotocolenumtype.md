@@ -6,7 +6,7 @@ author: "preetikr"
 ms.prod: "security"
 ---
 
-# securityNetworkProtocol enum
+# securityNetworkProtocol values
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

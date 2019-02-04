@@ -59,7 +59,7 @@ The following is a JSON representation of the resource.
   "natDestinationPort": "String",
   "natSourceAddress": "String",
   "natSourcePort": "String",
-  "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+  "protocol": "string",
   "riskScore": "String",
   "sourceAddress": "String",
   "sourcePort": "String",

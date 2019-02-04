@@ -68,7 +68,7 @@ Here is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.parentalControlSettings"
+  "@odata.type": "microsoft.graph.policy"
 }-->
 ```json
 {

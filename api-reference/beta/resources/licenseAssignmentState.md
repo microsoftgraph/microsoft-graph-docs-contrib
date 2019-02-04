@@ -29,10 +29,15 @@ The **licenseAssignmentStates** property of the [user](user.md) entity is a coll
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.licenseAssignmentState"
+}-->
 ```json
 {
   "assignedByGroup": "String",
-  "disabledPlans": "Collection(String)",
+  "disabledPlans": ["string"],
   "error": " String ",  
   "skuId": "String ",
   "state": "String"

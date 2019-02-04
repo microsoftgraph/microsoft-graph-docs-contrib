@@ -613,3 +613,95 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|0|Member of Standard Users group.|
 |power|1| Member of Power Users group.|
 |administrator|2| Member of Administrators group.|
+
+### scopeOperatorMultiValuedComparisonType values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|all|0||
+|any|1||
+
+### riskLevel values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|low|0||
+|medium|1||
+|high|2||
+|hidden|3||
+|none|4||
+|unknownFutureValue|5||
+
+### riskState values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|none|0||
+|confirmedSafe|1||
+|remediated|2||
+|dismissed|3||
+|atRisk|4||
+|confirmedCompromised|5||
+|unknownFutureValue|6||
+
+### riskDetail values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|none|0||
+|adminGeneratedTemporaryPassword|1||
+|userPerformedSecuredPasswordChange|2||
+|userPerformedSecuredPasswordReset|3||
+|adminConfirmedSigninSafe|4||
+|aiConfirmedSigninSafe|5||
+|userPassedMFADrivenByRiskBasedPolicy|6||
+|adminDismissedAllRiskForUser|7||
+|adminConfirmedSigninCompromised|8||
+|hidden|9||
+|unknownFutureValue|10||
+
+### referenceAttachmentPermission values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|other|0||
+|view|1||
+|edit|2||
+|anonymousView|3||
+|anonymousEdit|4||
+|organizationView|5||
+|organizationEdit|6||
+
+### referenceAttachmentProvider values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|other|0||
+|oneDriveBusiness|1||
+|oneDriveConsumer|2||
+|dropbox|3||
+
+### riskEventType values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unlikelyTravel|0||
+|anonymizedIPAddress|1||
+|maliciousIPAddress|2||
+|unfamiliarFeatures|3||
+|malwareInfectedIPAddress|4||
+|suspiciousIPAddress|5||
+|leakedCredentials|6||
+|investigationsThreatIntelligence|7||
+|generic|8||
+|unknownFutureValue|9||
+
+### exchangeIdFormat values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|entryId|0||
+|ewsId|1||
+|immutableEntryId|2||
+|restId|3||
+|restImmutableEntryId|4||

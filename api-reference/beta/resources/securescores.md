@@ -1,5 +1,5 @@
 ---
-title: "secureScores resource type"
+title: "secureScore resource type"
 description: "top=n, where n = the number of days of data that you want to retrieve. "
 localization_priority: Normal
 ---
@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScore"
 }-->
 
 ```json

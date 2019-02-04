@@ -1,11 +1,10 @@
 ---
-title: "optionalClaims type"
+title: "publicError resource type"
 description: ""
 localization_priority: Normal
 ---
 
-# optionalClaims resource type
-
+# publicError resource type
 
 ## Properties
 |Property|Type|Description|
@@ -17,12 +16,9 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.optionalClaims"
+  "@odata.type": "microsoft.graph.publicError"
 }-->
 ``` json
 {
 }
 ```
-
-
-

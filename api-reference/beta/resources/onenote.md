@@ -70,6 +70,12 @@ For information about the permissions required to work with OneNote APIs, see [N
 }-->
 ``` json
 {
+  "notebooks": [{ "@odata.type": "microsoft.graph.notebook" }],
+  "operations": [{ "@odata.type": "microsoft.graph.onenoteOperation" }],
+  "pages": { "@odata.type": "microsoft.graph.onenotePage" },
+  "resources": [ { "@odata.type": "microsoft.graph.onenoteResource" } ],
+  "sectionGroups": [ { "@odata.type": "microsoft.graph.sectionGroup" } ],
+  "sections": [ { "@odata.type": "microsoft.graph.onenoteSection" } ]
 }
 ```
 
