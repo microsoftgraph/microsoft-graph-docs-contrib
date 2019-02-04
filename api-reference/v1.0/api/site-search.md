@@ -2,13 +2,14 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: Find SharePoint sites by keyword
+title: Search for sites
+description: Search across a SharePoint tenant for sites that match keywords provided.
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 # Search for sites
 
-Search across a SharePoint tenant for [sites][] that match provided keywords.
+Search across a SharePoint tenant for [sites][] that match keywords provided.
 
 [sites]: ../resources/site.md
 
@@ -59,7 +60,7 @@ Content-type: application/json
   ]
 }
 ```
->**Note:** The only property that works for sorting is the createdDateTime, the search filter is free text search which uses multiple properties when retrieving the results for your search.
+>**Note:** The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
 
 <!-- {
   "type": "#page.annotation",
