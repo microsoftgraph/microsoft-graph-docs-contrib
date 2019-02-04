@@ -1,5 +1,5 @@
 ---
-title: "Workbook resource type"
+title: "workbook resource type"
 description: "Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc."
 localization_priority: Normal
 author: "lumine2008"
@@ -25,9 +25,9 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|names|[NamedItem](nameditem.md) collection|Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
-|tables|[Table](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
-|worksheets|[Worksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
+|names|[workbookNamedItem](workbooknameditem.md) collection |Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
+|tables|[workbookTable](workbooktable.md) collection |Represents a collection of tables associated with the workbook. Read-only.|
+|worksheets|[workbookWorksheet](workbookworksheet.md) collection |Represents a collection of worksheets associated with the workbook. Read-only.|
 
 ## Functions
 

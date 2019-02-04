@@ -10,12 +10,18 @@ ms.prod: "insights"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type containing properties of [Insights](insights.md).
+Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
 
 ## JSON representation
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
 ```json
 {
   "title": "string",
@@ -73,7 +79,7 @@ Example query:
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## containerType property values
-The supported types can differ based on containers from which the [Insight](insights.md) returns files. For example, only the [Shared](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
+The supported types can differ based on containers from which the [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
 
 -	OneDriveBusiness
 -	Site

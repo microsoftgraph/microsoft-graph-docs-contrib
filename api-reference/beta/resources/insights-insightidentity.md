@@ -15,6 +15,12 @@ Complex type containing properties of [Shared](insights-shared.md) items.
 ## JSON representation
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],
+  "@odata.type": "microsoft.graph.insightIdentity"
+}-->
 ```json
 {
   "displayName": "string",

@@ -8,7 +8,7 @@ localization_priority: Normal
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) object.
+Retrieve the properties and relationships of a [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) object.
 
 ## Permissions
 
@@ -61,8 +61,9 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http

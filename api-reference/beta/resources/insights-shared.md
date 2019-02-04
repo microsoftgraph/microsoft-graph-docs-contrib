@@ -1,5 +1,5 @@
 ---
-title: "shared resource type"
+title: "sharedInsight resource type"
 description: "An insight representing files shared with or by a specific user. The following shared files are supported:"
 author: "simonhult"
 localization_priority: Normal
@@ -36,11 +36,14 @@ An insight representing files shared with or by a specific user. The following s
 
 | Property      | Type          | Description  |
 | ------------- |---------------| -------------|
-| resource    	| Entity		| Used for navigating to the item that was shared. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
+| resource    	| entity collection	| Used for navigating to the item that was shared. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
 
 ## JSON representation
 Here is a JSON representation of the resource
 
+  ],
+  "@odata.type": "microsoft.graph.sharedInsight"
+}-->
 ```json
 {
   "id": "string",

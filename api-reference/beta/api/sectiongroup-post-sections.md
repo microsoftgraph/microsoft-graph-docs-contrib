@@ -10,7 +10,7 @@ ms.prod: "onenote"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [section](../resources/section.md) in the specified section group.
+Create a new [onenoteSection](../resources/onenotesection.md) in the specified section group.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +41,7 @@ Within the same hierarchy level, section names must be unique. The name cannot c
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [section](../resources/section.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [onenoteSection](../resources/onenotesection.md) object in the response body.
 
 ## Example
 ##### Request

@@ -35,8 +35,8 @@ Here is a JSON representation of the resource
     "calendar",
     "extensions",
     "instances",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -51,7 +51,7 @@ Here is a JSON representation of the resource
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "iud": "string",
+  "uid": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -82,8 +82,8 @@ Here is a JSON representation of the resource
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]  
 }
 
 ```

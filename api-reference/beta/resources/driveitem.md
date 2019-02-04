@@ -43,7 +43,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "keyProperty": "id", "openType": true } -->
 
 ```json
-{
+{  
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
