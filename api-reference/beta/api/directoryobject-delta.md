@@ -165,8 +165,7 @@ Content-type: application/json
       "country": "string",
       "department": "string",
       "displayName": "string",
-      "givenName": "string",
-      "id": "string (identifier)",
+      "givenName": "string",      
       "jobTitle": "string"
     }
   ]

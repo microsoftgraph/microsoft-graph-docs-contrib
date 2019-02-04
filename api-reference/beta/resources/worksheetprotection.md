@@ -1,5 +1,5 @@
 ---
-title: "WorksheetProtection resource type"
+title: "workbookWorksheetProtection resource type"
 description: "Represents the protection of a sheet object."
 author: "lumine2008"
 localization_priority: Normal
@@ -29,7 +29,7 @@ Represents the protection of a sheet object.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
+|options|[worksheetProtectionOptions](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
 
 ## JSON representation
 
@@ -38,14 +38,14 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "options"
   ],
   "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true
+  "protected": "boolean"
 }
 
 ```

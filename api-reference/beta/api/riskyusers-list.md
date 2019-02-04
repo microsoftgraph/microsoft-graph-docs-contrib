@@ -52,6 +52,7 @@ Here is an example of the request.
 }-->
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
+
 ```
 ##### Response 1
 Here is an example of the response.
@@ -62,6 +63,8 @@ Here is an example of the response.
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
@@ -101,6 +104,8 @@ GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.g
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
       "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
       "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",

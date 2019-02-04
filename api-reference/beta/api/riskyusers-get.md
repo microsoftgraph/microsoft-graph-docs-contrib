@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "get_identityriskevent"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/{id}
+GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 ##### Response
 Here is an example of the response.
