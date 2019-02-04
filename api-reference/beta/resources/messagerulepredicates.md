@@ -18,7 +18,7 @@ Represents the set of conditions and exceptions that are available for a rule.
 | bodyContains |string collection | Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply. |
 | bodyOrSubjectContains | string collection | Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply. |
 | categories | string collection | Represents the categories that an incoming message should be labeled with in order for the condition or exception to apply. |
-| fromAddresses | Collection ([recipient](recipient.md)) | Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply. |
+| fromAddresses |  [recipient](recipient.md) Collection | Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply. |
 | hasAttachments | Boolean | Indicates whether an incoming message must have attachments in order for the condition or exception to apply. |
 | headerContains | string collection | Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply. |
 | importance | String | The importance that is stamped on an incoming message in order for the condition or exception to apply: `low`, `normal`, `high`. |
@@ -40,7 +40,7 @@ Represents the set of conditions and exceptions that are available for a rule.
 | sensitivity | String | Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to apply. Possible values are: `normal`, `personal`, `private`, `confidential`. |
 | sentCcMe | Boolean | Indicates whether the owner of the mailbox must be in the **ccRecipients** property of an incoming message in order for the condition or exception to apply. |
 | sentOnlyToMe | Boolean | Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition or exception to apply. |
-| sentToAddresses | Collection ([recipient](recipient.md)) | Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply. |
+| sentToAddresses |  [recipient](recipient.md) Collection | Represents the email addresses that an incoming message must have been sent to in order for the condition or exception to apply. |
 | sentToMe | Boolean | Indicates whether the owner of the mailbox must be in the **toRecipients** property of an incoming message in order for the condition or exception to apply. |
 | sentToOrCcMe | Boolean | Indicates whether the owner of the mailbox must be in either a **toRecipients** or **ccRecipients** property of an incoming message in order for the condition or exception to apply. |
 | subjectContains | string collection | Represents the strings that appear in the subject of an incoming message in order for the condition or exception to apply. |
