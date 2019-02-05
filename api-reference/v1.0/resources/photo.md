@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Photo
+localization_priority: Normal
 ---
 # Photo resource type
 
@@ -15,6 +16,7 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.photo"
 }-->
+
 ```json
 {
   "cameraMake": "string",
@@ -39,9 +41,10 @@ The **photo** resource provides photo and camera properties, for example, EXIF m
 | **exposureDenominator** | Double         | The denominator for the exposure time fraction from the camera. Read-only.
 | **exposureNumerator**   | Double         | The numerator for the exposure time fraction from the camera. Read-only.
 | **focalLength**         | Double         | The focal length from the camera. Read-only.
-| **iso**                 | Int64          | The ISO value from the camera. Read-only.
+| **iso**                 | Int32          | The ISO value from the camera. Read-only.
 
 ## Remarks
+
 OneDrive for Business and SharePoint only return the **takenDateTime** property.
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).

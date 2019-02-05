@@ -1,6 +1,14 @@
+---
+title: "Update a range format in Excel with Microsoft Graph"
+description: "The following examples demonstrate how to update properties of the RangeFormat, RangeFill, and RangeFont properties of a specified range."
+localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
+---
+
 # Update a range format in Excel with Microsoft Graph
 
-The following examples demonstrate how to update properties of the [RangeFormat](../api-reference/v1.0/resources/rangeformat.md), [RangeFill](../api-reference/v1.0/resources/rangefill.md), and [RangeFont](../api-reference/v1.0/resources/rangefont.md) properties of a specified range.
+The following examples demonstrate how to update properties of the [RangeFormat](/graph/api/resources/rangeformat?view=graph-rest-1.0), [RangeFill](/graph/api/resources/rangefill?view=graph-rest-1.0), and [RangeFont](/graph/api/resources/rangefont?view=graph-rest-1.0) properties of a specified range.
 
 The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
 
@@ -11,6 +19,7 @@ This request updates the vertical alignment, row height, and column height of th
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat"
 }-->
 ```http
@@ -29,7 +38,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -49,6 +58,7 @@ This request updates the font style, size, and color of the first cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_font"
 }-->
 ```http
@@ -66,7 +76,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,6 +97,7 @@ This request updates the background color of the first cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_fill"
 }-->
 ```http
@@ -102,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -117,6 +128,7 @@ This request updates the vertical alignment, horizontal alignment, row height, a
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_two"
 }-->
 ```http
@@ -136,7 +148,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -156,6 +168,7 @@ This request updates the font style and size of the second cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_font_two"
 }-->
 ```http
@@ -172,7 +185,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -193,6 +206,7 @@ This request updates the background color of the second cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_fill_two"
 }-->
 ```http
@@ -208,7 +222,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -224,6 +238,7 @@ This request updates the horizontal alignment, vertical alignment, row height, a
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_three"
 }-->
 ```http
@@ -243,7 +258,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFormat"
+  "@odata.type": "microsoft.graph.workbookRangeFormat"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -263,6 +278,7 @@ This request updates the font style, size, and color of the third cell. Note tha
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_font_three"
 }-->
 ```http
@@ -280,7 +296,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFont"
+  "@odata.type": "microsoft.graph.workbookRangeFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -301,6 +317,7 @@ This request updates the background color of the third cell.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["Sheet1"],
   "name": "update_rangeformat_fill_three"
 }-->
 ```http
@@ -316,7 +333,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.rangeFill"
+  "@odata.type": "microsoft.graph.workbookRangeFill"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -333,4 +350,4 @@ Content-type: application/json
 * [Write to an Excel workbook using Microsoft Graph](excel-write-to-workbook.md)
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
 * [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
-* [Use the Excel REST API](../api-reference/v1.0/resources/excel.md)
+* [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)

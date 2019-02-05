@@ -3,17 +3,21 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
+localization_priority: Normal
 ---
 # ColumnLink resource type
 
 A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
 
-[contentType]: contentType.md
+[contentType]: contenttype.md
 
 ## JSON representation
 
 Here is a JSON representation of a **columnLink** resource.
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.columnLink" } -->
+<!-- {
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.columnLink" } -->
 
 ```json
 {

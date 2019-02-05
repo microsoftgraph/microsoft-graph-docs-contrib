@@ -1,3 +1,9 @@
+---
+title: "attendee resource type"
+description: "An event attendee. This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant."
+localization_priority: Normal
+---
+
 # attendee resource type
 
 An event attendee. This can be a person or resource such as a meeting room or equipment, that has been set up as a resource on the Exchange server for the tenant.
@@ -9,7 +15,7 @@ Derived from [attendeeBase](attendeebase.md).
 |:---------------|:--------|:----------|
 |status|[ResponseStatus](responsestatus.md)|The attendee's response (none, accepted, declined, etc.) for the event and date-time that the response was sent.|
 |type|String|The attendee type: `required`, `optional`, `resource`.|
-|emailAddress|[emailAddress](emailAddress.md)|Includes the name and SMTP address of the attendee.|
+|emailAddress|[emailAddress](emailaddress.md)|Includes the name and SMTP address of the attendee.|
 
 ## JSON representation
 
@@ -17,6 +23,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

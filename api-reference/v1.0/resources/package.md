@@ -3,6 +3,7 @@ author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
 title: Package
+localization_priority: Normal
 ---
 # Package resource type
 
@@ -22,9 +23,11 @@ DriveItems with the **package** facet do not include a **folder** or **file** fa
 }
 ```
 
+## Properties
+
 | Property Name | Type   | Description                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **type**      | string | An string indicating the type of package. While `oneNote` is the only currently defined value, you should expect other package types to be returned and handle them accordingly. |
+| type          | string | A string indicating the type of package. While `oneNote` is the only currently defined value, you should expect other package types to be returned and handle them accordingly. |
 
 ## Remarks 
 

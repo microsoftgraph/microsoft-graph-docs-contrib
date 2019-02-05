@@ -1,3 +1,11 @@
+---
+title: "domainDnsSrvRecord resource type"
+description: "Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+---
+
 # domainDnsSrvRecord resource type
 
 Represents a SRV record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.
@@ -30,6 +38,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -38,7 +47,6 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",

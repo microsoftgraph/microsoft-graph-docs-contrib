@@ -1,3 +1,9 @@
+---
+title: "phone resource type"
+description: "Represents a phone number."
+localization_priority: Normal
+---
+
 # phone resource type
 
 Represents a phone number.
@@ -7,7 +13,7 @@ Represents a phone number.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |number|string|The phone number.|
-|type|String|The type of phone number. Possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|type|phoneType|The type of phone number. The possible values are: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## JSON representation
 

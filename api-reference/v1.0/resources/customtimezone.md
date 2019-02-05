@@ -1,3 +1,9 @@
+---
+title: "customTimeZone resource type"
+description: "Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard."
+localization_priority: Normal
+---
+
 # customTimeZone resource type
 
 Represents a time zone where the transition from standard to daylight saving time, or vice versa is not standard.
@@ -21,6 +27,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.timeZoneBase",
   "@odata.type": "microsoft.graph.customTimeZone"
 }-->
 

@@ -1,3 +1,9 @@
+---
+title: "attendeeAvailability resource type"
+description: "The type and availability of an attendee."
+localization_priority: Normal
+---
+
 # attendeeAvailability resource type
 
 The type and availability of an attendee.
@@ -25,7 +31,7 @@ Here is a JSON representation of the resource
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |attendee|[AttendeeBase](attendeebase.md)|The type of attendee - whether it's a person or a resource, and whether required or optional if it's a person.|
-|availability|String| The availability status of the attendee. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|availability|freeBusyStatus| The availability status of the attendee. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
