@@ -289,6 +289,7 @@ Content-Location: /teams/{teamId}
 
 ## See also
 
+- [Available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates)
 - [Creating a group with a team](/graph/teams-create-group-and-team)
 <!-- {
   "type": "#page.annotation",
