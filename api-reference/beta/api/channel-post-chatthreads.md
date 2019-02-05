@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-NOTE: This API has been deprected. Please use the [Post chat message](../api/channel-post-chatmessage.md) API instead
+> **NOTE**: This API has been deprected. Please use the [Post chat message](../api/channel-post-chatmessage.md) API instead
 
 Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.
 
@@ -22,8 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
-
-> Currently, only [delegated permissions](/graph/permissions-reference) are supported for this operation.  Future releases will support application permissions. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
