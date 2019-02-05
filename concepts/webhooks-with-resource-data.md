@@ -54,20 +54,22 @@ Content-Type: application/json
   "clientState": "<secretClientState>"
 }
 ```
+ 
+> **Important:** Both notifications URLs must share the same hostname. 
+
+> **Note:** Both notification endpoints will need to be validated by the client app, as described in [the generic notification article](webhooks.md#managing-subscriptions).
+You may choose to use the same URL for both endpoints, in which case you will receive two validation requests, to which you will need to respond.
 
 ## Subscription lifecycle notifications
 
-### @@@Set up endpoint
-
-@@@validate
-
-### Future-proof - we may add more @@@
+Subscription lifecycle notifications inform the app about actions 
 
 ### @@@Authorization challenges - responding to them.
 
-Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
+### Future-proof - we may add more @@@
+@@@ignore and drop
 
-Apps can also unsubscribe at any time to stop getting notifications.
+### Renewal is still required@@@
 
 ## Validating the authenticity of notifications
 @@@why
