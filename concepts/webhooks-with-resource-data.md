@@ -62,9 +62,38 @@ You may choose to use the same URL for both endpoints, in which case you will re
 
 ## Subscription lifecycle notifications
 
-Subscription lifecycle notifications inform the app about actions 
+Subscription lifecycle notifications inform the app about actions it needs to take in order to maintain an uninterrupted flow of notifications. Unlike  resource change notifications, which inform about an instance of a resource changing, these notifications tell the app about the subscription itself, and its current state in the lifecycle.
 
-### @@@Authorization challenges - responding to them.
+These notifications will be delivered to the `subscriptionLifecycleNotificationUrl`. Your app should identify the type of notification, and take the corresponding action to ensure that the change notifications continue to flow.
+
+### Authorization challenges
+
+These notifications inform the app that a subscription must be re-authorized to maintain the flow of data. 
+
+An app can create a long lived subscription (e.g. 3 days), and resource data will start flowing to the `notificationUrl`. However, the conditions of access to the resource data may change over time. For example, a tenant admin may revoke the app's permissions or the user providing the authentication token to the app may be subject to dynamic policies based on their location, device state, risk assesment, etc. - see this article for more information on [Azure AD conditional access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview).
+
+Given an active, non-expired subscription, the flow looks as follows:
+
+1. Microsoft Graph decides that a subscription requires re-authorization from the app, to maintain the resource data flow.
+  1. The reasons for this may vary from resource to resource. The app does not need to understand why the re-authorization events occur, it only needs to respond to them.
+
+2. Microsoft Graph sends an authorization challenge notification to the `subscriptionLifecycleNotificationUrl`
+  1. Note that the flow of resource notifications may continue for a while, giving the app extra time to respond. However, eventually resource notification delivery will be paused, until the app takes the required action.
+
+3. The app responds to the challenge. It has two options:
+  1. Re-authorize the subscription; this does not extend the subscription's expiry date.
+  2. Renew the subscription; this both re-authorizes and extends the expiry date.
+
+  Note: the above actions require the app to present a valid authentication token, the same as when creating or renewing a subscription.
+
+4. If the app succeeds, resource notifications are resumed. However, if the app fails (for example, it may not be able to obtain a current authentication token), resource notifications will remain paused.
+  1. Microsoft Graph will retry delivery of paused notifications for a period of time - currently @@@4 hours. If the app does not re-authorize the subscription, notification data will be lost and the app will need to re-sync the lost state outside of the notification flow.
+
+#### Notification example
+
+#### Action to take
+
+#### Implementation guidelines
 
 ### Future-proof - we may add more @@@
 @@@ignore and drop
