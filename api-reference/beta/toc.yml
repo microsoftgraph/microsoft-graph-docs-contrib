@@ -28,7 +28,7 @@
       href: /graph/throttling?toc=./ref/toc.json
     - name: Change notifications
       href: /graph/webhooks?toc=./ref/toc.json
-      displayname: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
     - name: Track changes
       href: /graph/delta-query-overview?toc=./ref/toc.json
       displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users
