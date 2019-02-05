@@ -1,11 +1,11 @@
 ---
-title: "Set up notifications for changes in user data"
-description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes."
+title: "Set up notifications for Teams messages, including message properties"
+description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. Notifications can include resource properties. Apps need to implement additional code to handle the requirements related to resource data being included."
 author: "piotrci"
 localization_priority: Priority
 ---
 
-# Set up notifications for changes in user data
+# Set up notifications for Teams messages, including message properties
 
 The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
 
@@ -13,7 +13,7 @@ After Microsoft Graph accepts the subscription request, it pushes notifications 
 
 By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it makes calls to Graph APIs to get the full resource. In this article we use the `user` resource as an example for working with notifications.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: periodic re-authorization checks, validating the origin and integrity notifications, and decrypting the resource data. We are gradually extending support for these notifications to additional resource types. For details on how to work with these notificatios, see [Set up notifications for Teams messages, including message properties](webhooks-with-resource-data.md).
+An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: periodic re-authorization checks, validating the origin and integrity notifications, and decrypting the resource data. We are gradually extending support for these notifications to additional resource types. For details on how to work with these notificatios, see [Set up notifications for Teams messages, including messages properties]()
 
 ## Supported resources
 

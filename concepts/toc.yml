@@ -218,6 +218,9 @@
           href: throttling.md
         - name: Change notifications
           href: webhooks.md
+          items:
+            - name: Notifications with resource data (new)
+            href: webhooks-with-resource-data.md
         - name: Track changes
           href: delta-query-overview.md
           items:
