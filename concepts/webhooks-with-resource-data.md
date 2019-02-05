@@ -11,43 +11,25 @@ The Microsoft Graph API uses a webhook mechanism to deliver notifications to cli
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.
 
-By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it makes calls to Graph APIs to get the full resource. In this article we use the `user` resource as an example for working with notifications.
+Subscriptions can be set up to include resource data in notifications. This allows the app to execute its business logic without the need to make additional Graph API calls to fetch the changing resource; as a result, the app makes fewer API calls and improving performance, which is especially beneficial in large scale scenarios.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additonal API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: periodic re-authorization checks, validating the origin and integrity notifications, and decrypting the resource data. We are gradually extending support for these notifications to additional resource types. For details on how to work with these notificatios, see [Set up notifications for Teams messages, including messages properties]()
+However, since notfications can include sensitive customer data, the app must implement additional logic to satisfy data access and security requirements. In this article, we walk through the details, using the Team messages as an example. We focus specifically on the net new requirements specific to including resource data in notifications:
+
+- Receiving special subscription lifecycle notifications, and responding to them to maintain an uninterrupted flow of data.
+- Validating the authenticity of notifications, as having originated from Microsoft Graph.
+- Decrypting resource data payload received through notifications.
 
 ## Supported resources
 
-Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
+In Microsoft Graph API, the following resources support change notifications which include resource data:
 
-- Messages
-- Events
-- Contacts
-- Users
-- Groups
-- Group conversations
-- Content shared on OneDrive including drives associated with SharePoint sites
-- User's personal OneDrive folders
-- Security Alerts
+- Teams messages (preview)
 
-For instance, you can create a subscription to a specific mail folder:
-`me/mailFolders('inbox')/messages`
+For instance, you can create a subscription to receive notifications about new or changed Teams messages in the entire organization (tenant):
+@@@``
 
-Or to a top-level resource:
-`me/messages`, `me/contacts`, `me/events`, `users`, or `groups`
-
-Or to a specific resource instance:
-`users/{id}`, `groups/{id}`, `groups/{id}/conversations`
-
-Or to a SharePoint/OneDrive for Business drive:
-`/drive/root`
-
-Or to a user's personal OneDrive:
-`/drives/{id}/root`
-`/drives/{id}/root/subfolder`
-
-Or to a new [Security API alert](security-concept-overview.md):
-`/security/alerts?$filter=status eq ‘New’`,
-`/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+Or to all Teams messages in a specific tenant:
+@@@``
 
 ### Azure AD resource limitations
 
