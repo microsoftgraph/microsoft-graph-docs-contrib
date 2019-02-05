@@ -7996,6 +7996,10 @@
           href: api/channel-list-messagereplies.md
         - name: Get message reply
           href: api/channel-get-messagereply.md
+        - name: Post channel message
+          href: api/channel-post-chatmessage.md
+        - name: Post reply message
+          href: api/channel-post-reply-chatmessage.md
       - name: Chat thread
         href: resources/chatthread.md
         items:
