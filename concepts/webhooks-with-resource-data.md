@@ -91,7 +91,53 @@ Given an active, non-expired subscription, the flow looks as follows:
 
 #### Notification example
 
+@@@confirm the actual shape of the notification
+
+
+```json
+{
+  "value": [
+    {
+      "subscriptionId":"<subscription_guid>",
+      "subscriptionExpirationDateTime":"2019-03-20T11:00:00.0000000Z",
+      "clientState":"<secretClientState>",
+      "changeType":"created,updated",
+      "resource": "/teams/allMessages?$select=subject,body",
+      "authorizationRequired": true
+    }
+  ]
+}
+```
+
+A few things to note about this type of notification:
+- The `authorizationRequired` field designates this notification as an authorization challenge
+- The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state
+- `value` is an array, so multiple authorization challenges may be batched together, the same as for resource notifications. You should process each notification in the batch, and react to it.
+
 #### Action to take
+
+1. Acknowledge the receipt of the notification, by responding to the POST call with `202 - Accepted`.
+2. Validate the authenticity of the notification @@@more details@@@.
+3. Ensure the app has a valid authentication token to take the next step. 
+> **Note:** If you are using one of the [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) they will handle this for you by either reusing a valid cached token, or obtaining a new token.
+Obtaining a new token may fail, since the conditions of access may have changed. For example, the user may have changed their geographical location and the conditional access policy may now deny tokens to a specific resource, such as /messages. In this case you won't be able to re-authorize the subscription until a token can be obtained, potentially losing some notification data.
+
+4. Call one of these two Graph APIs - if successful, both will have the affect of resuming the resource notification flow
+  1. To re-authorize the subscription, without extending its expiration date, call the /reauthorize action:
+```http
+POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
+Content-type: application/json
+```
+  2. To re-authorize and renew the subscription at the same time, perform a regular renew action:
+```http
+PATCH https://graph.microsoft.com/beta/subscriptions/{id}
+Content-Type: application/json
+
+{
+  "expirationDateTime": "2019-03-22T11:00:00.0000000Z",
+}
+```
+
 
 #### Implementation guidelines
 
