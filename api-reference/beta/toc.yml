@@ -43,7 +43,7 @@
         href: /graph/delta-query-users?toc=./ref/toc.json
     - name: Add custom data
       href: /graph/extensibility-overview?toc=./ref/toc.json
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
       items:
       - name: Use open extensions (example)
         href: /graph/extensibility-open-users?toc=./ref/toc.json
