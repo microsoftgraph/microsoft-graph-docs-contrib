@@ -31,7 +31,9 @@ Here is a JSON representation of the resource
     "extensions",
     "singleValueExtendedProperties",
     "multiValueExtendedProperties",
-    "mentions"
+    "mentions",
+
+    "internetMessageHeaders"
   ],
   "@odata.type": "microsoft.graph.message"
 }-->
