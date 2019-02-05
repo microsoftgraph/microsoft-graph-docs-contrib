@@ -1,8 +1,8 @@
 ---
 title: "Create message in a channel"
 description: "Create a new message in the specified channel."
-author: "hamenon-ms"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 

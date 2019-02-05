@@ -1,8 +1,8 @@
 ---
 title: "Reply to a message in a channel"
 description: "Reply to an existing message in a channel."
-author: "hamenon-ms"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
