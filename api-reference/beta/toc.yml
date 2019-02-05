@@ -31,7 +31,7 @@
       displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
     - name: Track changes
       href: /graph/delta-query-overview?toc=./ref/toc.json
-      displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users
+      displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
       - name: Get changes to events (example)
         href: /graph/delta-query-events?toc=./ref/toc.json
