@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## February 2019
 
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Change |beta and v1.0| The **companyName** property on [user](/graph/api/resources/user?view=graph-rest-v1.0) resource is writeable.|
+
 ### Education APIs
 
 | **Change type** | **Version**   | **Description**                          |
