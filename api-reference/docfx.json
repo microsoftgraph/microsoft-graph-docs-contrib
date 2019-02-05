@@ -210,7 +210,7 @@
       "feedback_product_url": "https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis",
       "extendBreadcrumb": true,
       "author": "jthake-msft",
-      "ms.author": "jthake-msft",
+      "ms.author": "MSGraphDocsVteam,
       "ms.suite": "microsoft graph",
       "ms.prod": "non-product-specific",	
       "ms.date": "11/27/2018",
