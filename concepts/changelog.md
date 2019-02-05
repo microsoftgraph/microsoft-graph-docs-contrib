@@ -20,6 +20,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta|Introduced new relatedContacts property on [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).|
 |Addition |v1.0|Introduced new relatedContacts property on [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0).|
 
+### Teams API's
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta| Post a [message](/graph/api/resources/chatmessage?view=graph-rest-beta) a channel.|
+|Addition |beta| Reply to a [message](/graph/api/resources/chatmessage?view=graph-rest-beta) in a channel.|
+| Change |beta| Deprecated the create chat [thread](/graph/api/resources/chatthread?view=graph-rest-beta) API |
+
 ## January 2019
 
 ### Azure AD APIs
