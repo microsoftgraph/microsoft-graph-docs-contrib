@@ -13,12 +13,24 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## February 2019
 
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Change |beta and v1.0| Updated the **companyName** property on the [user](/graph/api/resources/user?view=graph-rest-v1.0) resource to be writeable.|
+
 ### Education APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |beta|Introduced new relatedContacts property on [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).|
 |Addition |v1.0|Introduced new relatedContacts property on [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0).|
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta and v1.0| Added the **internalId** property to the [team](/graph/api/resources/team?view=graph-rest-v1.0) resource.|
 
 ## January 2019
 
