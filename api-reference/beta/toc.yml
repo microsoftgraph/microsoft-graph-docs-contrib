@@ -6655,13 +6655,13 @@
           href: resources/program.md
           items:
           - name: Create
-            href: api/program-list.md
+            href: api/program-create.md
           - name: Delete
-            href: api/program-list.md
+            href: api/program-delete.md
           - name: List
             href: api/program-list.md
           - name: Update
-            href: api/program-list.md
+            href: api/program-update.md
           - name: List controls
             href: api/program-listcontrols.md
         - name: Program control
