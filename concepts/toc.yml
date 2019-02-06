@@ -92,6 +92,8 @@
         href: education-concept-overview.md
       - name: Files
         href: onedrive-concept-overview.md
+      - Financials
+        name: dynamics-business-central-concept-overview.md
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
       - name: Mail
