@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Follow a user's [site][] or multiple sites.
+Follow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions
 
@@ -59,12 +59,12 @@ To follow multiple sites:
 To follow one site:
 
 * If the request is successful, this method returns the site object the was followed.  
-* If an error occured while executing the request, this method returns the information of the [error][].
+* If an error occured while executing the request, this method returns the information of the [error](../../../concepts/errors.md).
 
 To follow multiple sites:  
 
 * If the request is successful, this method returns an array of sites that were followed.  
-* If an error occured while executing the request, this method returns a `207` status code and the response body will have the [error][] object and siteId.
+* If an error occured while executing the request, this method returns a `207` status code and the response body will have the [error](../../../concepts/errors.md) object and siteId.
 
 ## Examples
 
@@ -211,9 +211,6 @@ Content-type: application/json
     ]
 }
 ```  
-
-[site]: ../resources/site.md
-[error]: ../../../concepts/errors.md
 
 <!-- {
   "type": "#page.annotation",

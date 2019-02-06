@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Unfollow a user's [site][].
+Unfollow a user's [site](../resources/site.md).
 
 ## Permissions
 
@@ -35,7 +35,7 @@ DELETE https://graph.microsoft.com/beta/users/{user-id}/followingSites/{id}
 ## Response body
 
   If the request is successful, this method returns a `204` status code with no content.  
-  If an error occured while executing the request, this method returns the information of the [error][].
+  If an error occured while executing the request, this method returns the information of the [error](../../../concepts/errors.md).
 
 ## Example
 
@@ -51,9 +51,6 @@ Content-Type: application/json
     "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"
 }
 ```
-
-[site]: ../resources/site.md
-[error]: ../../../concepts/errors.md
 
 <!-- {
   "type": "#page.annotation",
