@@ -4,15 +4,7 @@ description: API documentation for integration with Microsoft Graph
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-businesscentral
-ms.topic: get-started-article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/20/2018
-ms.author: solsen
-
+localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 # Working with Dynamics 365 Business Central resources in Microsoft Graph

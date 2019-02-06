@@ -4,14 +4,7 @@ description: Gets a customer object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
-
-ms.service: dynamics365-businesscentral
-ms.topic: article
-ms.devlang: na
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 03/19/2018
-ms.author: solsen
+localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
 
