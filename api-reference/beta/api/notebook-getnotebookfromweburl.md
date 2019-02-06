@@ -8,6 +8,8 @@ ms.prod: "onenote"
 
 # notebook: getNotebookFromWebUrl
 
+[!INCLUDE beta-disclaimer]
+
 Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object using its url path.
 
 The location can be user notebooks on Office 365, group notebooks, or SharePoint site-hosted team notebooks on Office 365
@@ -87,3 +89,8 @@ Content-Length: 544
     "self": "self-value",
 }
 ```
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error:{notebook-getnotebookfromweburl.md}:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+}-->
