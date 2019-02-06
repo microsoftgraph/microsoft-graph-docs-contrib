@@ -35,35 +35,24 @@ POST https://graph.microsoft.com/beta/users/{user-id}/followingSites
 To follow multiple sites:
 
 ```http
-PATCH https://graph.microsoft.com/beta/users/{user-id}/followingSites
+POST https://graph.microsoft.com/beta/users/{user-id}/followingSites/add
 ```
 
 ## Request body
 
 To follow one site:
 
-In the request body, supply a JSON object with the following parameter. 
+* In the request body, supply a JSON object with the id parameter mentioned in the table below. 
+
+To follow multiple sites:
+
+* In the request body, supply an array JSON objects with the id parameter mentioned in the table below. 
 
 
 | Name                 | Value  | Description                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
 |   id                 | string | The [unique identifier](../resources/site.md#id-property) of the item. |
 
-To follow multiple sites:
-
-In the request body, supply an array JSON objects with the following parameters. 
-
-
-| Name                 | Value  | Description                                                            |
-|:---------------------|:-------|:-----------------------------------------------------------------------|
-|   id                 | string | The [unique identifier](../resources/site.md#id-property) of the site. |
-|   @oneDrive.action    | string | The type of action to perform on the site.                            |
-
-The types of actions that are supported are the following:
-* "oneDrive.action" : "follow"
-* "oneDrive.action" : "unfollow"
-
->**Note:** This is a batch request supports to follow or unfollow multiple of sites per request.  
 
 ## Response body 
 
@@ -74,12 +63,12 @@ To follow one site:
 
 To follow multiple sites:  
 
-* If the batch request is successful, this method returns an array of sites that were either followed or unfollowed.  
-* If an error occured while executing the batch request, this method returns a `207` status code and the response body will have the [error][] object and siteId.
+* If the request is successful, this method returns an array of sites that were followed.  
+* If an error occured while executing the request, this method returns a `207` status code and the response body will have the [error][] object and siteId.
 
 ## Examples
 
-### Example 1: Follow one sites
+### Example 1: Follow one site
 
 The following example shows how to follow a site.
 
@@ -126,19 +115,17 @@ The following example shows how to follow multiple sites.
 ##### Request
 
 ```http
-PATCH /users/{user-id}/followingSites
+POST /users/{user-id}/followingSites/add
 Content-Type: application/json
 
 {
     "value":
     [
         {
-            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740", 
-            "@oneDrive.action": "follow"
+            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"
         },
         {
-            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851", 
-            "@oneDrive.action": "follow"
+            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851"
         }
     ] 
 }
