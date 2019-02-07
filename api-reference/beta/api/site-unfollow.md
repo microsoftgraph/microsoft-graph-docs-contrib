@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/users/{user-id}/followingSites/{id}
+DELETE https://graph.microsoft.com/beta/users/{user-id}/followedSites/{id}
 ```
 
 >**Note:** The "id" is the [unique identifier](../resources/site.md#id-property) of the site.
@@ -44,7 +44,7 @@ The following example shows how to unfollow a site.
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-DELETE /users/{user-id}/followingSites
+DELETE /users/{user-id}/followSites
 Content-Type: application/json
 
 {

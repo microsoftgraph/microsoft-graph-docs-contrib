@@ -29,13 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 To follow one site:
 
 ```http
-POST https://graph.microsoft.com/beta/users/{user-id}/followingSites
+POST https://graph.microsoft.com/beta/users/{user-id}/followedSites
 ```
 
 To follow multiple sites:
 
 ```http
-POST https://graph.microsoft.com/beta/users/{user-id}/followingSites/add
+POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/add
 ```
 
 ## Request body
@@ -77,7 +77,7 @@ The following example shows how to follow a site.
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST /users/{user-id}/followingSites
+POST /users/{user-id}/followedSites
 Content-Type: application/json
 
 {
@@ -94,7 +94,7 @@ If successful, it returns the following JSON response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context":"http://sp-my.devinstall/personal/contoso_sharepoint_com/_api/v2.1/$metadata#followingSites/$entity",
+    "@odata.context":"http://sp-my.devinstall/personal/contoso_sharepoint_com/_api/v2.1/$metadata#followedSites/$entity",
     "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
     "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed",
     "title": "SiteFollowed",
@@ -115,7 +115,7 @@ The following example shows how to follow multiple sites.
 ##### Request
 
 ```http
-POST /users/{user-id}/followingSites/add
+POST /users/{user-id}/followedSites/add
 Content-Type: application/json
 
 {
