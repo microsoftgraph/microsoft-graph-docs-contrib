@@ -37,7 +37,7 @@ Creating a subscription for notifications that include resource data requires ad
 
 - @@@Name may change@@@`includeProperties` set to `true` to explicitly request resource properties.
 - A `$select` operator in the resource path to select the properties to be included.
-- An additional endpoint - `subscriptionLifecycleNotificationUrl` - where a new type of notifications related to subscription state will be delivered (more on this later in the article).
+- An additional endpoint - `lifecycleNotificationUrl` - where a new type of notifications related to subscription state will be delivered (more on this later in the article).
 
 #### Subscription request example
 
@@ -47,7 +47,7 @@ Content-Type: application/json
 {
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "subscriptionLifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
+  "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/allMessages?$select=subject,body",
   @@@subject to change@@@"includeProperties": true,
   "expirationDateTime": "2019-03-20T11:00:00.0000000Z",
@@ -64,7 +64,7 @@ You may choose to use the same URL for both endpoints, in which case you will re
 
 Subscription lifecycle notifications inform the app about actions it needs to take in order to maintain an uninterrupted flow of notifications. Unlike  resource change notifications, which inform about an instance of a resource changing, these notifications tell the app about the subscription itself, and its current state in the lifecycle.
 
-These notifications will be delivered to the `subscriptionLifecycleNotificationUrl`. Your app should identify the type of notification, and take the corresponding action to ensure that the change notifications continue to flow.
+These notifications will be delivered to the `lifecycleNotificationUrl`. Your app should identify the type of notification, and take the corresponding action to ensure that the change notifications continue to flow.
 
 ### Authorization challenges
 
@@ -77,7 +77,7 @@ Given an active, non-expired subscription, the flow looks as follows:
 1. Microsoft Graph decides that a subscription requires re-authorization from the app, to maintain the resource data flow.
     1. The reasons for this may vary from resource to resource. The app does not need to understand why the re-authorization events occur, it only needs to respond to them.
 
-2. Microsoft Graph sends an authorization challenge notification to the `subscriptionLifecycleNotificationUrl`
+2. Microsoft Graph sends an authorization challenge notification to the `lifecycleNotificationUrl`
     1. Note that the flow of resource notifications may continue for a while, giving the app extra time to respond. However, eventually resource notification delivery will be paused, until the app takes the required action.
 
 3. The app responds to the challenge. It has two options:
@@ -147,7 +147,7 @@ Keep the following things in mind when implementing your app:
 
 ### Future-proof the code handling lifecycle notifications
 
-In the future Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: `subscriptionLifecycleNotificationUrl`, but they may have a different a slightly different schema and properties, specific to the scenario for which they will be issued.
+In the future Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: `lifecycleNotificationUrl`, but they may have a different a slightly different schema and properties, specific to the scenario for which they will be issued.
 
 You should implement your code in a future-proof way so it does not break when Graph introduces new types of notifications. We recommend the following approach:
 
