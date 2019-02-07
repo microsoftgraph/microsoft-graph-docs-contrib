@@ -6605,6 +6605,7 @@
           href: api/permission-delete.md
     - name: Financials
       href: resources/dynamics-graph-reference.md
+      displayname: Dynamics, Dynamics 365 Business Central
       items:
       - name: Account
         href: resources/dynamics-account.md
