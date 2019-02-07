@@ -2,8 +2,8 @@
 title: "user: findMeetingTimes"
 description: "Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # user: findMeetingTimes
@@ -43,9 +43,9 @@ All the supported parameters are listed below. Depending on your scenario, speci
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|attendees|[attendeeBase](../resources/attendeebase.md) collection|A collection of attendees or resources for the meeting. Since findMeetingTimes assumes that any attendee who is a person is always required, specify `required` for a person and `resource` for a resource in the corresponding **type** property. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer. Optional.|
+|attendees|[attendeeDataModel](../resources/attendeedatamodel.md) collection|A collection of attendees or resources for the meeting. In the corresponding **type** property, specify `required` or `optional` for a person and `resource` for a resource like meeting room. If not specified, **findMeetingTimes** assumes `required` for the **type** property. An empty collection causes **findMeetingTimes** to look for free time slots for only the organizer. Optional.|
 |isOrganizerOptional|Edm.Boolean|Specify `True` if the organizer doesn't necessarily have to attend. The default is `false`. Optional.|
-|locationConstraint|[locationConstraint](../resources/locationconstraint.md)|The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place. Optional.|
+|locationConstraint|[locationConstraints](../resources/locationconstraints.md)|The organizer's requirements about the meeting location, such as whether a suggestion for a meeting location is required, or there are specific locations only where the meeting can take place. Optional.|
 |maxCandidates|Edm.Int32|The maximum number of meeting time suggestions to be returned. Optional.|
 |meetingDuration|Edm.Duration|The length of the meeting, denoted in [ISO8601](https://www.iso.org/iso/iso8601) format. For example, 1 hour is denoted as 'PT1H', where 'P' is the duration designator, 'T' is the time designator, and 'H' is the hour designator. Use M to indicate minutes for the duration; for example, 2 hours and 30 minutes would be 'PT2H30M'. If no meeting duration is specified, **findMeetingTimes** uses the default of 30 minutes. Optional.|
 |minimumAttendeePercentage|Edm.Double| The minimum required [confidence](#the-confidence-of-a-meeting-suggestion) for a time slot to be returned in the response. It is a % value ranging from 0 to 100. Optional.|
