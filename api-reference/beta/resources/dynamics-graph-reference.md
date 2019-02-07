@@ -1,5 +1,5 @@
 ---
-title: Working with Dynamics 365 Business Central resources in Microsoft Graph 
+title: Working with the Dynamics 365 Business Central API in Microsoft Graph 
 description: API documentation for integration with Microsoft Graph
 services: project-madeira
 documentationcenter: ''
@@ -7,7 +7,7 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: "dynamics-365-business-central"
 ---
-# Working with Dynamics 365 Business Central resources in Microsoft Graph
+# Working with the Dynamics 365 Business Central API in Microsoft Graph
 You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central. With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data.
 
 ## Authorization
@@ -17,10 +17,10 @@ Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central API
 The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint. Use the API to, for example, get access to [customer](../resources/dynamics-customer.md) and [vendor](../resources/dynamics-vendor.md) information, view [cash flow statements](../resources/dynamics-cashflowstatement.md), or [view overdue payments](../resources/dynamics-agedaccountspayable.md).
 
 ## Next steps
-The Microsoft Graph Business Central API can open up new ways for you to engage with users.
+The Dynamics 365 Business Central API can open up new ways for you to engage with users. To learn more, see the following:
 
-+ [Dynamics 365 Business Central Overview](/graph/dynamics-business-central-concept-overview).
-+ Try the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
++ [Dynamics 365 Business Central Overview](/graph/dynamics-business-central-concept-overview)
++ Try the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 
 <!--
 |For Resource Type |See                                                 |
