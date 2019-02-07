@@ -155,7 +155,47 @@ You should implement your code in a future-proof way so it does not break when G
 
 2. For any notifications you do not recognize, ignore them. We advise you log them so you can become aware of the new types of signals, in case you missed a Graph announcement for the new scenario. That way you can look up the updated documentation and implement your support for it at your discretion.
 
-## Validating the authenticity of notifications
+## Validating the authenticity of notifications@@@this entire section is made up, we don't have this finalized yet@@@
+
+When an app receives notifications with resource data, it will execute business logic based on that data. It is important that the app first verifies that the authenticity and integrity of the data; otherwise a 3rd party could spoof the app with false notifications and make it execute its business logic incorrectly, which could result in a security incident.
+
+For simple notifications, which do not contain resource data, this validation is simplified and based on the `clientState` value, as described [here](webhooks.md#notifications). That is acceptable, because app rely on additional trusted Microsoft Graph calls to get access to resource data, and therefore the impact of any spoofing attempts is limited. A more thorough validation is required before apps process resource data included inside of the notification.
+
+1. Send a `202 - Accepted` status code in in the response to the notification. You should do that before validating the notification itself; it prevents any potential rogue actors from finding out if they passed or failed validation. It also acknoledges the receipt of the notification to Microsoft Graph.
+
+2. Validate the digital signature of the notification. Use the public certificate for Microsoft Graph, to verify the signature. The signature applies to the entire content of the `value` property, and is generated using SHA256@@@
+
+For example, given this notification:
+```json
+{
+  "value": [
+    {
+      "subscriptionId":"<subscription_guid>",
+      "subscriptionExpirationDateTime":"2019-03-19T22:11:09.952Z",
+      "clientState":"<secretClientState>",
+      "changeType":"created",
+      "resource":"/teams/allMessages?$select=subject,body",
+      "resourceData": <encryptedResourceDataContent>
+    }
+  ],
+  "signature": <digitalSignatureContent>
+}
+```
+
+the C# code for validating the signature would look as follows (using the [RSACryptoServiceProvider's VerifyData method](https://docs.microsoft.com/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.verifydata?view=netframework-4.7.2)):
+
+@@@real example needed here
+
+```csharp
+    byte[] data = UTF8Encoding.GetBytes(notification["value"].Value<String>());
+    byte[] signature = UTF8Encoding.GetBytes(notification["signature"].Value<String>());
+    RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
+    bool validationPassed = rsaCSP.VerifyData(data., "SHA256"), signature);
+```
+### Obtaining the Microsoft Graph public certificate for signature validation
+@@@how
+
+notification is authentic and was sent by Microsoft Graph
 @@@why
 @@@what
 
