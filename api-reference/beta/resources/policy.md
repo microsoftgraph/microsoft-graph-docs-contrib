@@ -72,10 +72,20 @@ Here is a JSON representation of the resource.
 }-->
 ```json
 {
-  "definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"],
-  "displayName":"Test Policy",
-  "isOrganizationDefault":false,
-  "type":"TokenLifetimePolicy",
+  "definition": [
+    "{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"
+  ],
+  "displayName": "Test Policy",
+  "isOrganizationDefault": false,
+  "type": "TokenLifetimePolicy",
+  "IsOrganizationDefault": true,
+  "AccessTokenLifetime": "string",
+  "MaxInactiveTime": "string",
+  "MaxAgeSingleFactor": "string",
+  "MaxAgeMultiFactor": "string",
+  "MaxAgeSessionSingleFactor": "string",
+  "MaxAgeSessionMultiFactor": "string",
+  "Version": 12356
 }
 ```
 <!--

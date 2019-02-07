@@ -53,13 +53,14 @@ The following is a JSON representation of the resource.
 }-->
 
 ```json
-{  
+{
   "id": "string",
   "displayName": "string",
   "teamsAppId": "string",
   "sortOrderIndex": "string",
   "webUrl": "string",
-  "configuration" : "teamsTabConfiguration"
+  "configuration": "teamsTabConfiguration",
+  "name": "string"
 }
 
 ```

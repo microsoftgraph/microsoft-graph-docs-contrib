@@ -75,8 +75,14 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
-  "businessPhones": ["string"],
+  "assignedPlans": [
+    {
+      "@odata.type": "microsoft.graph.assignedPlan"
+    }
+  ],
+  "businessPhones": [
+    "string"
+  ],
   "city": "string",
   "country": "string",
   "countryLetterCode": "string",
@@ -85,20 +91,40 @@ Here is a JSON representation of the resource
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",
-  "marketingNotificationEmails": ["string"],
+  "marketingNotificationEmails": [
+    "string"
+  ],
   "objectType": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "postalCode": "string",
   "preferredLanguage": "string",
-  "privacyProfile": {"@odata.type": "microsoft.graph.privacyProfile"},
-  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "securityComplianceNotificationMails": ["string"],
-  "securityComplianceNotificationPhones": ["string"],
+  "privacyProfile": {
+    "@odata.type": "microsoft.graph.privacyProfile"
+  },
+  "provisionedPlans": [
+    {
+      "@odata.type": "microsoft.graph.provisionedPlan"
+    }
+  ],
+  "securityComplianceNotificationMails": [
+    "string"
+  ],
+  "securityComplianceNotificationPhones": [
+    "string"
+  ],
   "state": "string",
   "street": "string",
-  "technicalNotificationMails": ["string"],
-  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
+  "technicalNotificationMails": [
+    "string"
+  ],
+  "verifiedDomains": [
+    {
+      "@odata.type": "microsoft.graph.verifiedDomain"
+    }
+  ],
+  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
+  "dirSyncEnabled": true
 }
 ```
 

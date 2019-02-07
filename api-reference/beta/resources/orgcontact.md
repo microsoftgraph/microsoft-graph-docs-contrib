@@ -33,7 +33,6 @@ ms.prod: "microsoft-identity-platform"
 | displayName                  | String                                                     | Display name for this organizational contact.                                                                                                                                                                                                                                                                                                                                   |
 | givenName                    | String                                                     | First name for this organizational contact.                                                                                                                                                                                                                                                                                                                                     |
 | id                           | String                                                     | Unique identifier for this organizational contact.                                                                                                                                                                                                                                                                                                                             |
-| imAddresses                  | String collection                          | List of IM addresses for this organizational contact. For now a contact can only have one SIP address.                                                                                                                                                                                                                        |
 | jobTitle                     | String                                                     | Job title for this organizational contact.                                                                                                                                                                                                                                                                                                                                      |
 |mail|String| The SMTP address for the contact, for example, "jeff@contoso.onmicrosoft.com". |
 | mailNickname                 | String                                                     | Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.                                                                                                                                                                                                                                                                                |
@@ -68,7 +67,11 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "addresses": [{"@odata.type": "microsoft.graph.physicalOfficeAddress"}],
+  "addresses": [
+    {
+      "@odata.type": "microsoft.graph.physicalOfficeAddress"
+    }
+  ],
   "companyName": "string",
   "department": "string",
   "displayName": "string",
@@ -78,10 +81,20 @@ Here is a JSON representation of the resource
   "mail": "string",
   "mailNickname": "string",
   "onPremisesLastSyncDateTime": "string (timestamp)",
-  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
+  "onPremisesProvisioningErrors": [
+    {
+      "@odata.type": "microsoft.graph.onPremisesProvisioningError"
+    }
+  ],
   "onPremisesSyncEnabled": true,
-  "phones": [{"@odata.type": "microsoft.graph.phone"}],
-  "proxyAddresses": ["string"],
+  "phones": [
+    {
+      "@odata.type": "microsoft.graph.phone"
+    }
+  ],
+  "proxyAddresses": [
+    "string"
+  ],
   "surname": "string"
 }
 ```

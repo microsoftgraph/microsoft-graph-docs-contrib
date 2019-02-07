@@ -74,13 +74,30 @@ The following is a JSON representation of the resource.
 }-->
 
 ```json
-{  
-  "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
-  "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
-  "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
-  "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+{
+  "guestSettings": {
+    "@odata.type": "microsoft.graph.teamGuestSettings"
+  },
+  "memberSettings": {
+    "@odata.type": "microsoft.graph.teamMemberSettings"
+  },
+  "messagingSettings": {
+    "@odata.type": "microsoft.graph.teamMessagingSettings"
+  },
+  "funSettings": {
+    "@odata.type": "microsoft.graph.teamFunSettings"
+  },
   "isArchived": false,
-  "webUrl": "https://...longUrl..."
+  "webUrl": "https://...longUrl...",
+  "displayName": "string",
+  "description": "string",
+  "classification": "string",
+  "specialization": {
+    "@odata.type": "microsoft.graph.teamSpecialization"
+  },
+  "visibility": {
+    "@odata.type": "microsoft.graph.teamVisibilityType"
+  }
 }
 
 ```

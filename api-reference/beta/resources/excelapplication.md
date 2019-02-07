@@ -38,7 +38,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.application"
+  "@odata.type": "microsoft.graph.excelApplication"
 }-->
 
 ```json

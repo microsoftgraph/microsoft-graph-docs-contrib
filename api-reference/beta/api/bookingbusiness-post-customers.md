@@ -47,7 +47,6 @@ The following is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers
-
 Content-type: application/json
 
 {

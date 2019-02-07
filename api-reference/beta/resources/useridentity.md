@@ -60,7 +60,8 @@ Here is a JSON representation of the type.
 {
   "displayName": "string",
   "id": "string",
- "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "ipAddress": "string"
 }
 
 ```

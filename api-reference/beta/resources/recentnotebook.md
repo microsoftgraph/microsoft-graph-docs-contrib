@@ -34,8 +34,11 @@ The following is a JSON representation of the resource.
 {
   "displayName": "String",
   "lastAccessedTime": "String (timestamp)",
-  "links": {"@odata.type": "microsoft.graph.recentNotebookLinks"},
-  "sourceService": "String"
+  "links": {
+    "@odata.type": "microsoft.graph.recentNotebookLinks"
+  },
+  "sourceService": "String",
+  "name": "string"
 }
 
 ```

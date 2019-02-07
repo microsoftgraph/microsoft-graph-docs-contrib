@@ -76,16 +76,26 @@ Here is a JSON representation of the resource.
   "appId": "String",
   "ipAddress": "String",
   "clientAppUsed": "String",
-  "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
+  "mfaDetail": {
+    "@odata.type": "microsoft.graph.mfaDetail"
+  },
   "correlationId": "String",
   "conditionalAccessStatus": "string",
-  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "appliedConditionalAccessPolicy": [
+    {
+      "@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"
+    }
+  ],
   "originalRequestId": "String",
   "isInteractive": "String",
   "tokenIssuerName": "String",
   "tokenIssuerType": "String",
-  "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
-  "location": {"@odata.type": "microsoft.graph.signInLocation"},
+  "deviceDetail": {
+    "@odata.type": "microsoft.graph.deviceDetail"
+  },
+  "location": {
+    "@odata.type": "microsoft.graph.signInLocation"
+  },
   "riskDetail": "string",
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
@@ -94,7 +104,14 @@ Here is a JSON representation of the resource.
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",
-  "status": {"@odata.type": "microsoft.graph.signInStatus"},
+  "status": {
+    "@odata.type": "microsoft.graph.signInStatus"
+  },
+  "processingTimeInMilliseconds": 12356,
+  "networkLocationDetail": {
+    "@odata.type": "microsoft.graph.networkLocationDetail"
+  },
+  "riskLevel": "string"
 }
 
 ```

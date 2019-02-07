@@ -63,7 +63,12 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "status": "String",
   "registeredDateTime": "String (timestamp)",
-  "registeredRoot": "String"
+  "registeredRoot": "String",
+  "roleAssignmentCount": 12356,
+  "roleDefinitionCount": 12356,
+  "permissions": {
+    "@odata.type": "microsoft.graph.governancePermission"
+  }
 }
 
 ```

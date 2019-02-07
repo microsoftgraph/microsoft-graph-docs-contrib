@@ -28,11 +28,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "audioVideo": 1024, 
-  "dialInMicrosoft": 1024, 
-  "dialOutMicrosoft": 1024, 
-  "reportRefreshDate": "Date", 
-  "reportDate": "Date", 
-  "reportPeriod": "String"
+  "audioVideo": 1024,
+  "dialInMicrosoft": 1024,
+  "dialOutMicrosoft": 1024,
+  "reportRefreshDate": "Date",
+  "reportDate": "Date",
+  "reportPeriod": "String",
+  "dialInOut3rdParty": 12356,
+  "dialInOutMicrosoft": 12356
 }
 ```

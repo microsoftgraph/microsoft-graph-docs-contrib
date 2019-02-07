@@ -60,7 +60,6 @@ The following example changes the name of the rule, and the actions to be taken 
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
-
 Content-type: application/json
 
 {

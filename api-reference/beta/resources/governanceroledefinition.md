@@ -55,6 +55,9 @@ Here is a JSON representation of the resource.
   "resourceId": "String",
   "externalId": "String",
   "displayName": "String",
+  "subjectCount": 12356,
+  "eligibleAssignmentCount": 12356,
+  "activeAssignmentCount": 12356
 }
 
 ```

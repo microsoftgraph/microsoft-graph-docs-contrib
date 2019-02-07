@@ -39,7 +39,7 @@ The following table shows the properties that can be supplied when you update an
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| `id`             |`String`                                                        | The user ID.  |
+| `id`             |`String (identifier)`                                                        | The user ID.  |
 
 
 ## Response

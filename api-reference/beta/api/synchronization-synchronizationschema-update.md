@@ -52,6 +52,7 @@ The following is an example of a request.
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+Content-type: application/json
 
 {
     "directories": [

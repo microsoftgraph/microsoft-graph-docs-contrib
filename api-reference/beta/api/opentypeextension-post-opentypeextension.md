@@ -136,6 +136,7 @@ The first example creates a message and an extension in the same call. The reque
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages
+Content-Type: application/json
 
 {
   "subject": "Annual review",
@@ -260,6 +261,7 @@ extension:
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
+Content-Type: application/json
 
 {
   "@odata.type" : "microsoft.graph.openTypeExtension",
@@ -317,6 +319,7 @@ extension:
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions
+Content-type: application/json
 
 {
   "@odata.type" : "microsoft.graph.openTypeExtension",
@@ -369,6 +372,7 @@ the **body** of the new post, and the following data for the new extension:
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAAC1heiSAAA=')/reply
+Content-type: application/json
 
 {
   "post": {
@@ -427,6 +431,7 @@ in turn contains the **body** of the new post, and the following data for the ex
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/conversations
+Content-type: application/json
 
 {
   "Topic": "Does anyone have a second?",

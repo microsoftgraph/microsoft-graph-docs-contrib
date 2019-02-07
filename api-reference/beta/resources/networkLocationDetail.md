@@ -31,7 +31,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "networkTypes": "namedNetork",
-  "networkName": "String"
+  "networkName": "String",
+  "networkType": "string"
 }
 
 ```

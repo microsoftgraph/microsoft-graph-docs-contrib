@@ -66,7 +66,9 @@ Here is a JSON representation of the resource.
   "tenantId": "string",
   "userId": "string",
   "userMail": "string",
-  "userName": "string"
+  "userName": "string",
+  "referenceKey": "string",
+  "referenceSystem": "string"
 }
 
 ```

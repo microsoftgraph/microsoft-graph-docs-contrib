@@ -75,7 +75,8 @@ Here is a JSON representation of the resource.
   "userAgent": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```

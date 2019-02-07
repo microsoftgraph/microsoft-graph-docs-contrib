@@ -51,7 +51,6 @@ The following example changes the name of a task group to "Personal Tasks".
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/me/outlook/taskgroups('AAMkADIyAAAhrbe-AAA=')
-
 Content-type: application/json
 Content-length: 28
 

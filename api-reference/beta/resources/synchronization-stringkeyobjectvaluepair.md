@@ -30,7 +30,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "key": "String"
+  "key": "String",
+  "value": {
+    "@odata.type": "microsoft.graph.Json"
+  }
 }
 
 ```

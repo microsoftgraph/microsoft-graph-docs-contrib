@@ -53,17 +53,18 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-"id": "String",
-"azureTenantId": "Guid",
-"createdDate": "DateTimeOffset",
-"licensedUserCount": "Int32",
-"activeUserCount": "Int32",
-"currentScore": "Int32",
-"maxScore": "Int32",
-"averageScore": "Double",
-"enabledServices": "Collection(string)",
-"averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
-"controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
+  "id": "String",
+  "azureTenantId": "Guid",
+  "createdDate": "DateTimeOffset",
+  "licensedUserCount": "Int32",
+  "activeUserCount": "Int32",
+  "currentScore": "Int32",
+  "maxScore": "Int32",
+  "averageScore": "Double",
+  "enabledServices": "Collection(string)",
+  "averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
+  "controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
+  "createdDateTime": "2019-02-07T20:33:53.156Z"
 }
 
 ```
