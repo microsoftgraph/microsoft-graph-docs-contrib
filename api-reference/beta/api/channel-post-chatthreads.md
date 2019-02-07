@@ -2,7 +2,7 @@
 title: "Create chat thread"
 description: "Create a new chat thread in the specified channel by supplying the root messages."
 author: "nkramer"
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> **NOTE**: This API has been deprected. Please use the [Post chat message](../api/channel-post-chatmessage.md) API instead
+> **NOTE**: This API has been deprected. Please use the [Create chat message](../api/channel-post-chatmessage.md) API instead.
 
 Create a new chat thread in the specified [channel](../resources/channel.md) by supplying the root messages.
 
