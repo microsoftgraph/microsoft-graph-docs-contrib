@@ -26,12 +26,6 @@ more, including how to choose permissions, see
 | Delegated (personal Microsoft account) |  Not supported. |
 | Application | Group.Read.All, Group.ReadWrite.All  |
 
-## HTTP request
-
-``` http
-POST /directory/deletedItems/getUserOwnedObjects
-```
-
 ## Request headers
 
 | **Name**      | **Description**           |
@@ -39,8 +33,10 @@ POST /directory/deletedItems/getUserOwnedObjects
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
+``` http
+POST https://graph.microsoft.com/beta/directory/deletedItems/getUserOwnedObjects
+Content-type: application/json
 
-```json
 {
   "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
   "type":"group"
@@ -67,9 +63,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/directory/deletedItems/getUserOwnedObjects
 Content-type: application/json
-```
 
-``` json
 {
   "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
   "type":"Group"
