@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupIds|String|A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.|
+|groupIds|String (identifier) collection |A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.|
 
 ## Response
 

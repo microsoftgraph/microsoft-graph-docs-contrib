@@ -81,7 +81,7 @@ Content-type: application/json
             "deprecated": "deprecated.value",
             "implementationCost": "implementationCost.value",
             "lastModifiedDateTime": "lastModifiedDateTime.value",
-            "maxScore": "maxScore.value",
+            "maxScore": 12,
             "rank": "rank.value",
             "remediation": "remediation.value",
             "remediationImpact": "remediationImpact.value",

@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
   "destinationDomain": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
-  "direction": "@odata.type: microsoft.graph.connectionDirection",
+  "direction": "String",
   "domainRegisteredDateTime": "String (timestamp)",
   "localDnsName": "String",
   "natDestinationAddress": "String",
@@ -63,7 +63,7 @@ The following is a JSON representation of the resource.
   "riskScore": "String",
   "sourceAddress": "String",
   "sourcePort": "String",
-  "status": "@odata.type: microsoft.graph.connectionStatus",
+  "status": "String",
   "urlParameters": "String"
 }
 

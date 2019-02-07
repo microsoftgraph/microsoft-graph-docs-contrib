@@ -61,14 +61,16 @@ Here is an example of the response.
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
-  "isDeleted": "true",
+  "isGuest": true,
+  "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk"
+  "riskState": "atRisk",
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }

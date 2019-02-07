@@ -33,7 +33,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupIds|String||
+|groupIds|String collection||
 
 ## Response
 

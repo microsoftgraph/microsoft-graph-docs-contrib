@@ -53,7 +53,7 @@ Here is a JSON representation of the resource.
   "maximum": "string",
   "minimum": "string",
   "minorUnit": "string",
-   "format": {"@odata.type": "microsoft.graph.workbookChartAxisFormat"},
+  "format": {"@odata.type": "microsoft.graph.workbookChartAxisFormat"},
   "majorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
   "minorGridlines": {"@odata.type": "microsoft.graph.workbookChartGridlines"},
   "title": {"@odata.type": "microsoft.graph.workbookChartAxisTitle"}

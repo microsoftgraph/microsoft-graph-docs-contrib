@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartaxis"
+  "@odata.type": "microsoft.graph.workbookChartAxis"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -65,12 +65,9 @@ Content-type: application/json
 Content-length: 64
 
 {
-  "majorUnit": {
-  },
-  "maximum": {
-  },
-  "minimum": {
-  }
+  "majorUnit": "string",
+  "maximum": "string",
+  "minimum": "string"
 }
 ```
 

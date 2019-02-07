@@ -23,9 +23,7 @@ The **webPart** resource represents type and rendering information for a web par
 ```json
 {
   "type": "string (identifier)",
-  "data": {
-    "instanceId": "string (identifier)"
-    }
+  "data": {"@odata.type":"microsoft.graph.sitePageData"}
 }
 ```
 

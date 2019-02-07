@@ -42,9 +42,9 @@ In the request body, supply the values for relevant fields that should be update
 |formulas|Json|Represents the formula in A1-style notation.|
 |formulasLocal|Json|Represents the formula in A1-style notation, in the user's language and number-formatting locale.  For example, the English "=SUM(A1, 1.5)" formula would become "=SUMME(A1; 1,5)" in German.|
 |formulasR1C1|Json|Represents the formula in R1C1-style notation.|
-|numberFormat|Json|Represents Excel's number format code for the given cell.|
+|numberFormat|Json collection|Represents Excel's number format code for the given cell.|
 |rowHidden|boolean|Represents if all rows of the current range are hidden.|
-|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|values|Json collection|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
 
 ## Response
 

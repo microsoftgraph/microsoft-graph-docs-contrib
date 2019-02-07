@@ -9,11 +9,11 @@ localization_priority: Normal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the recent [activities][] that took place on an item or under a hierarchy.
+List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.
 
 **Note:** Activities is in a limited Preview and not yet available to all tenants.
 
-[activities]: ../resources/itemactivity.md
+[activities](../resources/itemactivity.md)
 
 ## Permissions
 
