@@ -101,14 +101,14 @@ Given an active, non-expired subscription, the flow looks as follows:
       "subscriptionExpirationDateTime":"2019-03-20T11:00:00.0000000Z",
       "clientState":"<secretClientState>",
       "resource": "/teams/allMessages?$select=subject,body",
-      "reauthorizationRequired": true
+      "lifecycleEvent": "reauthorizationRequired"
     }
   ]
 }
 ```
 
 A few things to note about this type of notification:
-- The `reauthorizationRequired` field designates this notification as an authorization challenge
+- The `"lifecycleEvent": "reauthorizationRequired"` field designates this notification as an authorization challenge.
 - The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state
 - `value` is an array, so multiple authorization challenges may be batched together, the same as for resource notifications. You should process each notification in the batch, and react to it.
 
@@ -151,9 +151,9 @@ In the future Graph will add more types of subscription lifecycle notifications.
 
 You should implement your code in a future-proof way so it does not break when Graph introduces new types of notifications. We recommend the following approach:
 
-1. Explicitly identify each notification as a type you support. For example, look for the `"reauthorizationRequired": true` propety to identify an authorization challenge, and handle it.
+1. Explicitly identify each notification as an event that you support, using the `lifecycleEvent` property. For example, look for the `"lifecycleEvent": "reauthorizationRequired"` propety to identify an authorization challenge, and handle it.
 
-2. For any notifications you do not recognize, ignore them. We advise you log them so you can become aware of the new types of signals, in case you missed a Graph announcement for the new scenario. That way you can look up the updated documentation and implement your support for it at your discretion.
+2. For any lifecycle events you do not recognize, ignore them; we may add more values for the `lifecycleEvent` property in the future. We advise you log them so you can become aware of the new types of signals, in case you missed a Graph announcement for the new scenario. That way you can look up the updated documentation and implement your support for it at your discretion.
 
 ## Validating the authenticity of notifications@@@this entire section is made up, we don't have this finalized yet@@@
 
