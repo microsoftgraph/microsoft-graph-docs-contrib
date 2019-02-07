@@ -59,7 +59,7 @@ Content-length: 364
     {
       "type": 99,
       "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "key": "base64Y3YxN2E1MWFlYw=="
     }
   ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
@@ -87,7 +87,7 @@ Content-length: 364
     {
       "type": 99,
       "identityProvider": "identityProvider-value",
-      "key": "key-value"
+      "key": "base64Y3YxN2E1MWFlYw=="
     }
   ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
