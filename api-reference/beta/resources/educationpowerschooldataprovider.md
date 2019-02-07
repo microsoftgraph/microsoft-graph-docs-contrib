@@ -37,14 +37,18 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 
 ```json
 {
-    "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
-    "connectionUrl": "String",
-    "clientId": "String",
-    "clientSecret": "String",
-    "schoolsids": ["String"],
-    "schoolYear": "String",
-    "allowTeachersInMultipleSchools": "Boolean",
-    "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
+  "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
+  "connectionUrl": "String",
+  "clientId": "String",
+  "clientSecret": "String",
+  "schoolsIds": [
+    "String"
+  ],
+  "schoolYear": "String",
+  "allowTeachersInMultipleSchools": "Boolean",
+  "customizations": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
+  }
 }
 ```
 <!--

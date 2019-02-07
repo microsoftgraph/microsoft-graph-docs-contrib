@@ -21,7 +21,8 @@ It is available from the [folder][folder-facet] property of [driveItem][item-res
 {
   "sortBy": "default | name | type | size | takenOrCreatedDateTime | lastModifiedDateTime | sequence",
   "sortDescending": "ascending | descending",
-  "viewType": "default | icons | details | thumbnails"
+  "viewType": "default | icons | details | thumbnails",
+  "sortOrder": "string"
 }
 ```
 

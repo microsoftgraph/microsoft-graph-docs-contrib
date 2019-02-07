@@ -47,6 +47,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+   "baseType":"microsoft.graph.locatedRiskEvent",
   "@odata.type": "microsoft.graph.anonymousIpRiskEvent"
 }-->
 
@@ -63,7 +64,8 @@ Here is a JSON representation of the resource.
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```

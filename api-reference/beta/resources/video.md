@@ -35,7 +35,8 @@ Here is a JSON representation of the resource
   "fourCC": "H264",
   "frameRate": 239.877,
   "height": 1280,
-  "width": 720
+  "width": 720,
+  "framerate": 2.75
 }
 ```
 

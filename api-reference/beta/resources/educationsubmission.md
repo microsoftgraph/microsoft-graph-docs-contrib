@@ -65,18 +65,34 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
-  "grade": {"@odata.type": "microsoft.graph.educationAssignmentGrade"},
+  "feedback": {
+    "@odata.type": "microsoft.graph.educationFeedback"
+  },
+  "grade": {
+    "@odata.type": "microsoft.graph.educationAssignmentGrade"
+  },
   "id": "String (identifier)",
-  "recipient": {"@odata.type": "microsoft.graph.educationSubmissionRecipient"},
-  "returnedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "recipient": {
+    "@odata.type": "microsoft.graph.educationSubmissionRecipient"
+  },
+  "returnedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "returnedDateTime": "String (timestamp)",
   "resourcesFolderUrl": "String",
   "status": "string",
-  "submittedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "submittedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "submittedDateTime": "String (timestamp)",
-  "unsubmittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "unsubmittedDateTime": "String (timestamp)"
+  "unsubmittedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "unsubmittedDateTime": "String (timestamp)",
+  "releasedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "releasedDateTime": "2019-02-07T21:52:48.300Z"
 }
 ```
 

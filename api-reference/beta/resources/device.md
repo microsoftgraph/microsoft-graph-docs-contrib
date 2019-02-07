@@ -99,14 +99,19 @@ The following is a JSON representation of the resource.
   "onPremisesSyncEnabled": true,
   "operatingSystem": "string",
   "operatingSystemVersion": "string",
-  "physicalIds": ["string"],
+  "physicalIds": [
+    "string"
+  ],
   "trustType": "string",
   "Name": "string",
   "Status": "string",
   "Platform": "string",
   "Kind": "string",
   "Model": "string",
-  "Manufacturer": "string"
+  "Manufacturer": "string",
+  "alternativeSecurityIds": {
+    "@odata.type": "microsoft.graph.alternativeSecurityId"
+  }
 }
 ```
 

@@ -260,10 +260,20 @@ Here is a JSON representation of the resource
   "aboutMe": "string",
   "accountEnabled": true,
   "ageGroup": "string",
-  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
-  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "assignedLicenses": [
+    {
+      "@odata.type": "microsoft.graph.assignedLicense"
+    }
+  ],
+  "assignedPlans": [
+    {
+      "@odata.type": "microsoft.graph.assignedPlan"
+    }
+  ],
   "birthday": "String (timestamp)",
-  "businessPhones": ["string"],
+  "businessPhones": [
+    "string"
+  ],
   "city": "string",
   "companyName": "string",
   "consentProvidedForMinor": "string",
@@ -276,64 +286,179 @@ Here is a JSON representation of the resource
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
-  "interests": ["string"],
+  "interests": [
+    "string"
+  ],
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
-  "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
+  "licenseAssignmentStates": [
+    {
+      "@odata.type": "microsoft.graph.licenseAssignmentState"
+    }
+  ],
   "mail": "string",
-  "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
+  "mailboxSettings": {
+    "@odata.type": "microsoft.graph.mailboxSettings"
+  },
   "mailNickname": "string",
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
-  "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
+  "onPremisesExtensionAttributes": {
+    "@odata.type": "microsoft.graph.onPremisesExtensionAttributes"
+  },
   "onPremisesImmutableId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
+  "onPremisesProvisioningErrors": [
+    {
+      "@odata.type": "microsoft.graph.onPremisesProvisioningError"
+    }
+  ],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "passwordPolicies": "string",
-  "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
-  "pastProjects": ["string"],
+  "passwordProfile": {
+    "@odata.type": "microsoft.graph.passwordProfile"
+  },
+  "pastProjects": [
+    "string"
+  ],
   "postalCode": "string",
   "preferredDataLocation": "string",
   "preferredLanguage": "string",
   "preferredName": "string",
-  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  "proxyAddresses": ["string"],
-  "responsibilities": ["string"],
-  "schools": ["string"],
-  "skills": ["string"],
+  "provisionedPlans": [
+    {
+      "@odata.type": "microsoft.graph.provisionedPlan"
+    }
+  ],
+  "proxyAddresses": [
+    "string"
+  ],
+  "responsibilities": [
+    "string"
+  ],
+  "schools": [
+    "string"
+  ],
+  "skills": [
+    "string"
+  ],
   "state": "string",
   "streetAddress": "string",
   "surname": "string",
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-
-  "calendar": { "@odata.type": "microsoft.graph.calendar" },
-  "calendarGroups": [{ "@odata.type": "microsoft.graph.calendarGroup" }],
-  "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
-  "calendars": [ {"@odata.type": "microsoft.graph.calendar"} ],
-  "contacts": [ { "@odata.type": "microsoft.graph.contact" } ],
-  "contactFolders": [ { "@odata.type": "microsoft.graph.contactFolder" } ],
-  "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "drive": { "@odata.type": "microsoft.graph.drive" },
-  "insights": { "@odata.type": "microsoft.graph.officeGraphInsights" },
-  "settings": { "@odata.type": "microsoft.graph.userSettings" },
-  "events": [ { "@odata.type": "microsoft.graph.event" } ],
-  "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
-  "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },
-  "mailFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
-  "manager": { "@odata.type": "microsoft.graph.directoryObject" },
-  "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "joinedTeams": [ { "@odata.type": "microsoft.graph.group" } ],
-  "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "outlook": { "@odata.type": "microsoft.graph.outlookUser" },
-  "ownedDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
-  "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "registeredDevices": [ { "@odata.type": "microsoft.graph.directoryObject" } ]
+  "calendar": {
+    "@odata.type": "microsoft.graph.calendar"
+  },
+  "calendarGroups": [
+    {
+      "@odata.type": "microsoft.graph.calendarGroup"
+    }
+  ],
+  "calendarView": [
+    {
+      "@odata.type": "microsoft.graph.event"
+    }
+  ],
+  "calendars": [
+    {
+      "@odata.type": "microsoft.graph.calendar"
+    }
+  ],
+  "contacts": [
+    {
+      "@odata.type": "microsoft.graph.contact"
+    }
+  ],
+  "contactFolders": [
+    {
+      "@odata.type": "microsoft.graph.contactFolder"
+    }
+  ],
+  "createdObjects": [
+    {
+      "@odata.type": "microsoft.graph.directoryObject"
+    }
+  ],
+  "directReports": [
+    {
+      "@odata.type": "microsoft.graph.directoryObject"
+    }
+  ],
+  "drive": {
+    "@odata.type": "microsoft.graph.drive"
+  },
+  "insights": {
+    "@odata.type": "microsoft.graph.officeGraphInsights"
+  },
+  "settings": {
+    "@odata.type": "microsoft.graph.userSettings"
+  },
+  "events": [
+    {
+      "@odata.type": "microsoft.graph.event"
+    }
+  ],
+  "extensions": [
+    {
+      "@odata.type": "microsoft.graph.extension"
+    }
+  ],
+  "inferenceClassification": {
+    "@odata.type": "microsoft.graph.inferenceClassification"
+  },
+  "mailFolders": [
+    {
+      "@odata.type": "microsoft.graph.mailFolder"
+    }
+  ],
+  "manager": {
+    "@odata.type": "microsoft.graph.directoryObject"
+  },
+  "memberOf": [
+    {
+      "@odata.type": "microsoft.graph.directoryObject"
+    }
+  ],
+  "joinedTeams": [
+    {
+      "@odata.type": "microsoft.graph.group"
+    }
+  ],
+  "messages": [
+    {
+      "@odata.type": "microsoft.graph.message"
+    }
+  ],
+  "outlook": {
+    "@odata.type": "microsoft.graph.outlookUser"
+  },
+  "ownedDevices": [
+    {
+      "@odata.type": "microsoft.graph.directoryObject"
+    }
+  ],
+  "photo": {
+    "@odata.type": "microsoft.graph.profilePhoto"
+  },
+  "registeredDevices": [
+    {
+      "@odata.type": "microsoft.graph.directoryObject"
+    }
+  ],
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
+  "employeeId": "string",
+  "faxNumber": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
+  "onPremisesSamAccountName": "string",
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
+  "showInAddressList": true
 }
 ```
 

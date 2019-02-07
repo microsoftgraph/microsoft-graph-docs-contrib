@@ -65,7 +65,9 @@ The following is a JSON representation of the resource.
 {
   "id": "string (identifier)",
   "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.identitySet"},
+  "from": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "etag": "string",
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
@@ -73,13 +75,28 @@ The following is a JSON representation of the resource.
   "isDeleted": "boolean",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
-  "body": {"@odata.type": "microsoft.graph.itemBody"},
+  "body": {
+    "@odata.type": "microsoft.graph.itemBody"
+  },
   "summary": "string",
-  "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
-  "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
+  "attachments": [
+    {
+      "@odata.type": "microsoft.graph.chatMessageAttachment"
+    }
+  ],
+  "mentions": [
+    {
+      "@odata.type": "microsoft.graph.chatMessageMention"
+    }
+  ],
   "importance": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
-  "locale": "string"
+  "reactions": [
+    {
+      "@odata.type": "microsoft.graph.chatMessageReaction"
+    }
+  ],
+  "locale": "string",
+  "deleted": true
 }
 
 ```

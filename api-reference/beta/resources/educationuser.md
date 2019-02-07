@@ -85,13 +85,47 @@ The following is a JSON representation of the resource.
   "surname": "string",
   "mail": "string",
   "mobilePhone": "string",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
   "externalSource": "string",
-  "mailingAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "mailingAddress": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
   "primaryRole": "string",
-  "residenceAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "student": {"@odata.type": "microsoft.graph.educationStudent"},
-  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"}
+  "residenceAddress": {
+    "@odata.type": "microsoft.graph.physicalAddress"
+  },
+  "student": {
+    "@odata.type": "microsoft.graph.educationStudent"
+  },
+  "teacher": {
+    "@odata.type": "microsoft.graph.educationTeacher"
+  },
+  "accountEnabled": true,
+  "assignedLicenses": {
+    "@odata.type": "microsoft.graph.assignedLicense"
+  },
+  "assignedPlans": {
+    "@odata.type": "microsoft.graph.assignedPlan"
+  },
+  "businessPhones": null,
+  "department": "string",
+  "mailNickname": "string",
+  "passwordPolicies": "string",
+  "passwordProfile": {
+    "@odata.type": "microsoft.graph.passwordProfile"
+  },
+  "preferredLanguage": "string",
+  "provisionedPlans": {
+    "@odata.type": "microsoft.graph.provisionedPlan"
+  },
+  "relatedContacts": {
+    "@odata.type": "microsoft.graph.relatedContact"
+  },
+  "usageLocation": "string",
+  "userPrincipalName": "string",
+  "userType": "string"
 }
 
 ```

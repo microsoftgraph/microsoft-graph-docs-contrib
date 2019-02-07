@@ -60,24 +60,40 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-"title": "String", 
-"azureTenantId": "String (identifier)", 
-"referenceId": "String", 
-"controlName": "String", 
-"maxScore": "Int32",
-"actionType": "String",
-"service": "String",
-"tier": "String",
-"userImpact": "string",
-"implementationCost ": "String",
-"rank ": "Int32",
-"threats": ["string"],
-"deprecated ": "Boolean",
-"remediation": "String",
-"remediationImpact ": "String",
-"actionUrl": "String",
-"controlStateUpdates": [{"@odata.type":"microsoft.graph.secureScoreControlStateUpdate"}],
-"vendorInformation": {"@odata.type":"microsoft.graph.securityVendorInformation"}
+  "title": "String",
+  "azureTenantId": "String (identifier)",
+  "referenceId": "String",
+  "controlName": "String",
+  "maxScore": "Int32",
+  "actionType": "String",
+  "service": "String",
+  "tier": "String",
+  "userImpact": "string",
+  "implementationCost ": "String",
+  "rank ": "Int32",
+  "threats": [
+    "string"
+  ],
+  "deprecated ": "Boolean",
+  "remediation": "String",
+  "remediationImpact ": "String",
+  "actionUrl": "String",
+  "controlStateUpdates": [
+    {
+      "@odata.type": "microsoft.graph.secureScoreControlStateUpdate"
+    }
+  ],
+  "vendorInformation": {
+    "@odata.type": "microsoft.graph.securityVendorInformation"
+  },
+  "complianceInformation": {
+    "@odata.type": "microsoft.graph.complianceInformation"
+  },
+  "controlCategory": "string",
+  "implementationCost": "string",
+  "rank": 12356,
+  "deprecated": true,
+  "remediationImpact": "string"
 }
 
 
