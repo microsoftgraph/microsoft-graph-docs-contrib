@@ -94,6 +94,7 @@
         href: onedrive-concept-overview.md
       - name: Financials
         href: dynamics-business-central-concept-overview.md
+        displayname: Dynamics, Dynamics 365 Business Central
       - name: Identity and access
         href: azuread-identity-access-management-concept-overview.md
       - name: Mail
