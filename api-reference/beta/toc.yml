@@ -6604,7 +6604,7 @@
         - name: Delete permission
           href: api/permission-delete.md
     - name: Financials
-      href: api/dynamics-graph-reference.md
+      href: resources/dynamics-graph-reference.md
       items:
       - name: Account
         href: resources/dynamics-account.md
