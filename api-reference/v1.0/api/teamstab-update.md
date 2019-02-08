@@ -2,6 +2,8 @@
 title: "Update tab"
 description: "Update the properties of the specified tab."
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Update tab
@@ -46,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 #### Request
 The following is an example of the request.
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 

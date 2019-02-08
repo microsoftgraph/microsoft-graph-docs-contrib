@@ -2,6 +2,8 @@
 title: "Create an educationSynchronizationProfile"
 description: "Create a request for a new school data synchronization profile in the tenant. Query the status to get the status of the profile. "
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Create an educationSynchronizationProfile
@@ -51,7 +53,7 @@ Content-type: application/json
 {
     "displayName": "Test Profile",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationcsvdataprovider",
+        "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -62,7 +64,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationidentitycreationconfiguration",
+        "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -99,7 +101,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -110,7 +112,7 @@ Content-type: application/json
     "state": "provisioning",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -150,7 +152,7 @@ Content-type: application/json
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+        "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -164,14 +166,14 @@ Content-type: application/json
     },
     "licensesToAssign": [
         {
-            "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "teacher",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"
             ]
         },
         {
-            "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+            "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
             "appliesTo": "student",
             "skuIds": [
                 "6fd2c87f-b296-42f0-b197-1e91e994b900"

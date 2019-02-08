@@ -1,6 +1,9 @@
 ---
 title: "List channel messages"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. To get the replies for a message, call the list message replies or the get message reply API. "
+localization_priority: Priority
+author: "nkramer"
+ms.prod: "microsoft-teams"
 ---
 
 # List channel messages
@@ -37,7 +40,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/channel.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
