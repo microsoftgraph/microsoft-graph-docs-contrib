@@ -163,7 +163,28 @@ For simple notifications, which do not contain resource data, this validation is
 
 1. Send a `202 - Accepted` status code in in the response to the notification. You should do that before validating the notification itself; it prevents any potential rogue actors from finding out if they passed or failed validation. It also acknoledges the receipt of the notification to Microsoft Graph.
 
-2. Validate the digital signature of the notification. Use the public certificate for Microsoft Graph, to verify the signature. The signature applies to the entire content of the `value` property, and is generated using SHA256@@@
+2. The `POST` request will contain an `Authorization` header, with a JWT token that you need to validate. Validation consists of the following steps: 
+
+    1. Verify the token was signed by the expected ceritificate - that it was issued by Microsoft.
+
+    2. Verify the issuer is as expected.
+
+    3. Verify that the audience of your token is your application.
+
+    4. Verify that the token has not expired.
+
+If you are new to token validation, this [blog article](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) contains a useful overview.
+
+The above steps can be easily executed using the Microsoft Authentication Libraries available for .NET and Node.js@@@link to docs, samples here@@@. If you are building on a different platform, you can use a third party library for working with JWT tokens.
+
+3. Validate the value of `clientState` in the notification matches the value you originally provided when creating the subscription.
+
+4. At this point, the app can trust that the notification is legitimate.
+
+## Descrypting resource data from notifications
+@@@Mananging certificates for the app
+@@@Steps to decrypt
+Validate the digital signature of the notification. Use the public certificate for Microsoft Graph, to verify the signature. The signature applies to the entire content of the `value` property, and is generated using SHA256@@@
 
 For example, given this notification:
 ```json
@@ -178,7 +199,6 @@ For example, given this notification:
       "resourceData": <encryptedResourceDataContent>
     }
   ],
-  "signature": <digitalSignatureContent>
 }
 ```
 
@@ -192,20 +212,6 @@ the C# code for validating the signature would look as follows (using the [RSACr
     RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
     bool validationPassed = rsaCSP.VerifyData(data., "SHA256"), signature);
 ```
-#### Obtaining the Microsoft Graph public certificate for signature validation@@@this entire section is made up, we don't have this finalized yet@@@
-@@@where is the ceritifcate
-@@@guidance regarding how to get it and refresh it periodically (since we can rotate it?). what would the rotation look like to the developer?
-
-3. 
-4. Validate the value of `clientState` matches 
-notification is authentic and was sent by Microsoft Graph
-@@@why
-@@@what
-
-## Descrypting resource data from notifications
-@@@Mananging certificates for the app
-@@@Steps to decrypt
-
 
 
 
