@@ -184,7 +184,7 @@ For example, given this notification:
 
 the C# code for validating the signature would look as follows (using the [RSACryptoServiceProvider's VerifyData method](https://docs.microsoft.com/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.verifydata?view=netframework-4.7.2)):
 
-@@@real example needed here
+@@@real example needed here - the below is madeup and incomplete
 
 ```csharp
     byte[] data = UTF8Encoding.GetBytes(notification["value"].Value<String>());
@@ -192,9 +192,12 @@ the C# code for validating the signature would look as follows (using the [RSACr
     RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
     bool validationPassed = rsaCSP.VerifyData(data., "SHA256"), signature);
 ```
-### Obtaining the Microsoft Graph public certificate for signature validation
-@@@how
+#### Obtaining the Microsoft Graph public certificate for signature validation@@@this entire section is made up, we don't have this finalized yet@@@
+@@@where is the ceritifcate
+@@@guidance regarding how to get it and refresh it periodically (since we can rotate it?). what would the rotation look like to the developer?
 
+3. 
+4. Validate the value of `clientState` matches 
 notification is authentic and was sent by Microsoft Graph
 @@@why
 @@@what
