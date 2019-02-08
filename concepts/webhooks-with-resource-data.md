@@ -39,6 +39,8 @@ Creating a subscription for notifications that include resource data requires ad
 - A `$select` operator in the resource path to select the properties to be included.
 - An additional endpoint - `lifecycleNotificationUrl` - where a new type of notifications related to subscription state will be delivered (more on this later in the article).
 
+> **Important:** You must upload and configure a public key for your app to enable encryption of resource data. Without the key, any attempts to create a subcription will fail. More information on encryption is available later in this article.
+
 #### Subscription request example
 
 ```http
@@ -175,13 +177,42 @@ For simple notifications, which do not contain resource data, this validation is
 
 If you are new to token validation, this [blog article](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) contains a useful overview.
 
-The above steps can be easily executed using the Microsoft Authentication Libraries available for .NET and Node.js@@@link to docs, samples here@@@. If you are building on a different platform, you can use a third party library for working with JWT tokens.
+The above steps can be easily executed using the Microsoft libraries available for .NET and Node.js@@@link to docs, samples here@@@. If you are building on a different platform, you can use a third party library for working with JWT tokens.
 
 3. Validate the value of `clientState` in the notification matches the value you originally provided when creating the subscription.
 
 4. At this point, the app can trust that the notification is legitimate.
 
 ## Descrypting resource data from notifications
+
+The data included in the `resourceData` property of the notification is encrypted by Microsoft Graph using the public key provided by the app developer. This is done to increase the security of customer data accessed via notifications.
+
+### Managing app public keys for encryption
+
+> **Important:** You must upload and configure a public key for you app before it will be able to create subscriptions for notifications with resource data. If a key is not configured, any requests to create subscriptions will fail.
+
+1. You need to obtain a pair of assymetric keys.
+2. You need to upload the **public** key, in the form of a X509 certificate, to the app object you already registered with Azure AD for calling Microsoft Graph. You will give it a unique GUID identifier.
+    1. @@@more intructions on how to do this, but will be similar to [what is described here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/howto-saml-token-encryption)
+3. The private key will be held by your app; we recommend using as secure key store.
+4. You can upload one or more keys, but your app's property@@@TBD@@@ must be set to a single key for all notification encryption.
+    1. @@@more info on how to set that@@@
+
+#### Rotating keys
+
+It is a good practice to periodically change assymetric keys, to minimize the risk of a private key becoming compromised. If you want to introduce a new pair of keys, follow these steps:
+
+1. Upload a new **public** key to your app registration.
+2. Configure the property@@@ to point to the new key. This is now the new key for encryption.
+3. Some things to keep in mind:
+    - There will be some time (@@@give SLA@@@) when the old key will still be used for encryption. Your app must have access to both old and new private keys to be able to decrypt content. Old and new keys may be used in parallel for a period of time.
+    - Use the `encryptionKeyId` property in each notification to  identify the correct key to use.
+    - Discard of the old key pair only when you have seen no recent notifications referencing the old key.
+
+### How to decrypt
+
+#### Code sample using .NET
+
 @@@Mananging certificates for the app
 @@@Steps to decrypt
 Validate the digital signature of the notification. Use the public certificate for Microsoft Graph, to verify the signature. The signature applies to the entire content of the `value` property, and is generated using SHA256@@@
@@ -196,6 +227,7 @@ For example, given this notification:
       "clientState":"<secretClientState>",
       "changeType":"created",
       "resource":"/teams/allMessages?$select=subject,body",
+      "encryptionKeyId": <key_guid>,
       "resourceData": <encryptedResourceDataContent>
     }
   ],
@@ -217,20 +249,9 @@ the C# code for validating the signature would look as follows (using the [RSACr
 
 ## Code samples
 
-The following code samples are available on GitHub.
-
-- [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
-- [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
-- [Microsoft Graph User Webhooks Sample using WebJobs SDK](https://github.com/microsoftgraph/webjobs-webhooks-sample)
-
+@@@TBD@@@
 ## See also
 
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
