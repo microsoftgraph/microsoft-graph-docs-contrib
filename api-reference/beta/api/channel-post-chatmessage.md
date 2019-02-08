@@ -1,12 +1,12 @@
 ---
-title: "Create message in a channel"
+title: "Create a message in a channel"
 description: "Create a new message in the specified channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Create chat thread
+# Create a message in a channel
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

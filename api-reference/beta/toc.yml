@@ -7999,7 +7999,7 @@
         - name: Post channel message
           href: api/channel-post-chatmessage.md
         - name: Post reply message
-          href: api/channel-post-reply-chatmessage.md
+          href: api/channel-post-messagereply.md
       - name: Chat thread
         href: resources/chatthread.md
         items:

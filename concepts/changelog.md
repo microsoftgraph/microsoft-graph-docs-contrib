@@ -24,8 +24,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Addition |beta| Post a [message](/graph/api/resources/chatmessage?view=graph-rest-beta) a channel.|
-|Addition |beta| Reply to a [message](/graph/api/resources/chatmessage?view=graph-rest-beta) in a channel.|
+|Addition |beta| Introduced the [Create a message in a channel](/graph/api/channel-post-chatmessage?view=graph-rest-beta) API |
+|Addition |beta| Introduced the [Reply to a message in a channel](/graph/api/channel-post-messagereply?view=graph-rest-beta) API |
 | Change |beta| Deprecated the create chat [thread](/graph/api/resources/chatthread?view=graph-rest-beta) API |
 
 ## January 2019
