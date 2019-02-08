@@ -6631,16 +6631,6 @@
         items:
         - name: Get aged accounts payable
           href: api/dynamics-agedaccountsreceivable-get.md
-      - name: Balance sheet
-        href: resources/dynamics-balancesheet.md
-        items:
-        - name: Get balance sheet
-          href: api/dynamics-balancesheet-get.md
-      - name: Cash flow statement
-        href: resources/dynamics-cashflowstatement.md
-        items:
-        - name: Get cashflow statement
-          href: api/dynamics-cashflowstatement-get.md
       - name: Companies
         href: resources/dynamics-companies.md
         items:
@@ -6730,22 +6720,6 @@
         items:
         - name: Get general ledger entries
           href: api/dynamics-generalledgerentries-get.md
-      - name: Income statement
-        href: resources/dynamics-incomestatement.md
-        items:
-        - name: Get income statement
-          href: api/dynamics-incomestatement-get.md
-      - name: IRS 1099
-        href: resources/dynamics-irs1099.md
-        items:
-        - name: Get IRS 1099
-          href: api/dynamics-irs1099-get.md
-        - name: Create IRS 1099
-          href: api/dynamics-create-irs1099.md
-        - name: Update IRS 1099
-          href: api/dynamics-irs1099-update.md
-        - name: Delete IRS 1099
-          href: api/dynamics-irs1099-delete.md
       - name: Item
         href: resources/dynamics-item.md
         items:
@@ -6812,11 +6786,6 @@
           href: api/dynamics-paymentterms-update.md
         - name: Delete payment terms
           href: api/dynamics-paymentterms-delete.md
-      - name: Retained earnings statement
-        href: resources/dynamics-retainedearningsstatement.md
-        items:
-        - name: Get retained earnings statement
-          href: api/dynamics-retainedearningsstatement-get.md
       - name: Shipment methods
         href: resources/dynamics-shipmentmethods.md
         items:
