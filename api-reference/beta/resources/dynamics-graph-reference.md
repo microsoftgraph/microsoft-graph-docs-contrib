@@ -29,7 +29,6 @@ The Dynamics 365 Business Central API can open up new ways for you to engage wit
 |aged accounts receivable resource type|[agedAccountsReceivable](../resources/dynamics-agedaccountsreceivable.md)|
 |aged accounts payable resource type|[agedAccountsPayable](../resources/dynamics-agedaccountspayable.md)|
 |balance sheet resource type|[balanceSheet](../resources/dynamics-balancesheet.md)|
-|cash flow statement resource type|[cashFlowStatement](../resources/dynamics-cashflowstatement.md)|
 |companies resource type|[companies](../resources/dynamics-companies.md)|
 |companyInformation resource type|[companyInformation](../resources/dynamics-companyinformation.md)|
 |countriesRegions resource type|[countriesRegions](../resources/dynamics-countriesregions.md)|
