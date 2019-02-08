@@ -61,8 +61,9 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Personal Contacts | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔* | ✔ |
 | Planner|✔ |✔ |✔ |
+| Reports  |➖| ✔ |➖|
 | Delta query | ➖ | ➖| ➖ |
-| Webhooks  | ➖| ➖| ➖|
+| Webhooks  | ➖| ➖| ➖
 |Directory schema extensions |➖|➖|➖|
 | Open type extensions|➖|➖|➖|
   
