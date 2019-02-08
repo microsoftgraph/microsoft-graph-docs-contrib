@@ -10,9 +10,7 @@ ms.prod: "outlook"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The type of attendee.
-
-Derived from [recipient](recipient.md).
+Represents a person or resource who is being included in a meeting.
 
 ## JSON representation
 
@@ -21,7 +19,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "type"
   ],
   "@odata.type": "microsoft.graph.attendeeDataModel"
 }-->
@@ -36,7 +34,7 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|String| The type of attendee. Possible values are: `required`, `optional`, `resource`. Currently if the attendee is a person, [findMeetingTimes](../api/user-findmeetingtimes.md) always considers the person is of the `Required` type.|
+|type|attendeeType| The type of attendee. The possible values are: `required`, `optional`, `resource`. Currently if the attendee is a person, [findMeetingTimes](../api/user-findmeetingtimes.md) always considers the person is of the `Required` type.|
 |emailAddress|[emailAddress](emailaddress.md)|Includes the name and SMTP address of the attendee.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

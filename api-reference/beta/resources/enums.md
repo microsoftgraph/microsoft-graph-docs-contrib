@@ -36,6 +36,26 @@ description: "Microsoft Graph enumeration values"
 | unknown           | -1
 
 
+### addressType values
+
+| Value
+|:-------------------------
+| unknown 
+| home
+| business 
+| other
+
+
+### physicalAddressType values
+
+| Value
+|:-------------------------
+| unknown 
+| home
+| business 
+| other
+
+
 ### attendeeType values
 
 | Value
