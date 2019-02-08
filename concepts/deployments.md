@@ -60,9 +60,9 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Outlook Calendar | ✔ | ✔ | ✔ |
 | Personal Contacts | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔* | ✔ |
-| Delta query | ✔ | ✔ | ✔ |
-| Webhooks  | ✔ | ✔ | ✔ |
- | Microsoft Planner|➖|➖|➖|
+| Microsoft Planner|✔ |✔ |✔ |
+| Delta query | ➖ | ➖| ➖ |
+| Webhooks  | ➖| ➖| ➖|
 |Directory schema extensions |➖|➖|➖|
 | Open type extensions|➖|➖|➖|
   
