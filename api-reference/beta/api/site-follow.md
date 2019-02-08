@@ -1,8 +1,8 @@
 ---
 author: learafa
-ms.author: learafa
-ms.date: 01/14/2019
+ms.date: 02/08/2019
 title: Follow Site
+description: Follow a user's site/sites.
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
