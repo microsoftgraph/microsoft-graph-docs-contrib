@@ -24,6 +24,18 @@ description: "Microsoft Graph enumeration values"
 | iana
 
 
+### availabilityStatus values
+
+| Value
+|:-------------------------
+| unknown
+| free
+| tentative
+| busy
+| oof  
+| workingElsewhere
+
+
 ### freeBusyStatus values
 
 | Member            |Value

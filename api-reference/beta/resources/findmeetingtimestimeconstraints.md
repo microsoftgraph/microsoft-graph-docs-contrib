@@ -10,7 +10,7 @@ ms.prod: "outlook"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restricts meeting time suggestions to certain hours and days of the week according to the specified nature of activity and open time slots.
+Restricts meeting time suggestions to the nature of activity and certain ranges of time.|
 
 ## JSON representation
 
@@ -34,8 +34,8 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|activityDomain|String|The nature of the activity, optional. Possible values are: `work`, `personal`, `unrestricted`, or `unknown`.|
-|timeslots|[timeSlot](timeslot.md) collection|An array of time periods.|
+|activityDomain|activityDomain|The nature of the activity, optional. Possible values are: `work`, `personal`, `unrestricted`, or `unknown`.|
+|timeslots|[searchWindowTimeSlot](searchwindowtimeslot.md) collection|An array of time ranges to look into for possible meeting times.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
