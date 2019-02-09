@@ -211,11 +211,17 @@ It is a good practice to periodically change assymetric keys, to minimize the ri
 
 ### How to decrypt
 
-#### Code sample using .NET
+To optimize performance, Microsoft Graph uses its own generated symmetric key to encrypt resource data. That key itself is then encrypted by Microsoft Graph using the apps assymetric public key, and included in the `symmetricKey` property.
 
-@@@Mananging certificates for the app
-@@@Steps to decrypt
-Validate the digital signature of the notification. Use the public certificate for Microsoft Graph, to verify the signature. The signature applies to the entire content of the `value` property, and is generated using SHA256@@@
+To decrypt resource data, your app should perform the following steps:
+
+1. Use the `assymetricKeyId` property to identify the private key your app should use for decryption.
+2. Using the private key, decrypt the content of the `symmetricKey` property.
+3. Use the symmetric key to decrypt the content of the `resourceData` for each notification item in the `value` array.
+
+Note that the symmetric key will change frequently so you should not store or cache it, but always use the latest value in the notification payload.
+
+#### Code sample using .NET
 
 For example, given this notification:
 ```json
@@ -227,23 +233,15 @@ For example, given this notification:
       "clientState":"<secretClientState>",
       "changeType":"created",
       "resource":"/teams/allMessages?$select=subject,body",
-      "encryptionKeyId": <key_guid>,
       "resourceData": <encryptedResourceDataContent>
     }
   ],
+  "assymetricKeyId": <key_guid>,
+  "symmetricKey": <encryptedSymmetricKeyFromGraph>
 }
 ```
 
-the C# code for validating the signature would look as follows (using the [RSACryptoServiceProvider's VerifyData method](https://docs.microsoft.com/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.verifydata?view=netframework-4.7.2)):
-
-@@@real example needed here - the below is madeup and incomplete
-
-```csharp
-    byte[] data = UTF8Encoding.GetBytes(notification["value"].Value<String>());
-    byte[] signature = UTF8Encoding.GetBytes(notification["signature"].Value<String>());
-    RSACryptoServiceProvider rsaCSP = new RSACryptoServiceProvider();
-    bool validationPassed = rsaCSP.VerifyData(data., "SHA256"), signature);
-```
+@@@TBD@@@
 
 
 
