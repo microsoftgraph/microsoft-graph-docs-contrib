@@ -1,11 +1,12 @@
 ---
 title: "chatMessage resource type"
 description: "Represents an individual chat message within a channel or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message."
+localization_priority: Priority
 ---
 
 # chatMessage resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message.
 
@@ -28,7 +29,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |messageType|String|The type of message, current supported values are: message, chatEvent, Typing|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated|
-|isDeleted|boolean|Represents if a message has been soft deleted|
+|deleted|Boolean|Indicates whether a message has been soft deleted|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted |
 |subject|string|Message subject line. Optional|
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
@@ -47,7 +48,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "isDeleted",
+    "deleted",
     "deletedDateTime",
     "attachments",
     "importance",
@@ -85,10 +86,15 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "chat message resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chatmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

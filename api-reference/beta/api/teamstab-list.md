@@ -1,11 +1,14 @@
 ---
 title: "List tabs in channel"
 description: "Retrieve the list of tabs in the specified channel within a team. "
+author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # List tabs in channel
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
@@ -66,7 +69,7 @@ Content-type: application/json
         "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
         "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
       },
-      "sortOrderIndex": 20,
+      "sortOrderIndex": "20",
       "teamsApp": {
         "id": "06805b9e-77e3-4b93-ac81-525eb87513b8",
         "displayName": "Contoso",
@@ -78,7 +81,7 @@ Content-type: application/json
       "id": "b5d5f001-0471-49a5-aac4-04ef96683be0",
       "displayName": "My Planner Tab",
       "configuration": null,
-      "sortOrderIndex": 21,
+      "sortOrderIndex": "21",
       "teamsApp": {
         "id": "com.microsoft.teamspace.tab.planner",
         "displayName": "Microsoft Planner",
@@ -91,10 +94,15 @@ Content-type: application/json
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List all tabs in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
