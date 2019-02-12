@@ -43,7 +43,6 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable. Currently this API only supports reading but will eventually support writing messages too.|
-|chatThreads|[chatThread](chatthread.md) collection|(Deprecated, use the messages property instead) chatThreads supports creating new messages but not reading messages. ChatThreads is a navigation property, and is Nullable.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 
 
