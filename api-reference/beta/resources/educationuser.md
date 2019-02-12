@@ -8,7 +8,7 @@ ms.prod: "education"
 
 # educationUser resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.
 This object provides a targeted subset of properties from the core [user](user.md) object and adds a set of education-specific properties such as `primaryRole`, student, and teacher data.
@@ -49,6 +49,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |primaryRole|string| Default role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. Supports $filter.|
 |provisionedPlans|[provisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
 |residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
+|relatedContacts|[relatedContact](relatedcontact.md) collection|Set of contacts related to the user.  This optional property must be specified in a $select clause and can only be retrieved for an individual user.|
 |student|[educationStudent](educationstudent.md)| If the primary role is student, this block will contain student specific data.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
 |teacher|[educationTeacher](educationteacher.md)| If the primary role is teacher, this block will conatin teacher specific data.|
@@ -97,10 +98,15 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationUser resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
