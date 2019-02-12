@@ -10,7 +10,7 @@ localization_priority: Priority
 
 A chatThread is a collection of [chatMessages](chatmessage.md) in Microsoft Teams.
 
-> Currently, chatThreads can be [created in channels](../api/channel-post-chatthreads.md).  Future API releases will support reading existing chatThreads, as well as reading/writing direct chats between users that are outside the scope of a team or channel.
+> **NOTE**: This API has been deprected. Please use the [ChatMessage](../api/channel-post-chatmessage.md) resource instead.
 
 ## Methods
 
