@@ -34,7 +34,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta and v1.0| Added support for configuring Word, Excel, PowerPoint, PDF, and document library [tabs](teams-configuring-builtin-tabs.md). |
 |Addition |beta| Introduced the [Create a message in a channel](/graph/api/channel-post-chatmessage?view=graph-rest-beta) API. |
 |Addition |beta| Introduced the [Reply to a message in a channel](/graph/api/channel-post-messagereply?view=graph-rest-beta) API. |
-| Change |beta| Deprecated the [Create chat thread](/graph/api/resources/chatthread?view=graph-rest-beta) API. |
+|Deletion |beta| Removed the POST /teams/{id}/channels/{id}/chatThreads API, use [Create a message in a channel](/graph/api/channel-post-chatmessage?view=graph-rest-beta) instead. |
 
 ## January 2019
 
