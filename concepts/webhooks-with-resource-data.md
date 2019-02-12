@@ -183,7 +183,7 @@ The above steps can be easily executed using the Microsoft libraries available f
 
 4. At this point, the app can trust that the notification is legitimate.
 
-## Descrypting resource data from notifications
+## Decrypting resource data from change notifications
 
 The data included in the `resourceData` property of the notification is encrypted by Microsoft Graph using the public key provided by the app developer. This is done to increase the security of customer data accessed via notifications.
 
@@ -242,7 +242,6 @@ For example, given this notification:
 ```
 
 @@@TBD@@@
-
 
 
 ## Code samples
