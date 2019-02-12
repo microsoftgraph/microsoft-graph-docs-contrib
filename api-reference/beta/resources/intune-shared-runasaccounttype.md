@@ -1,6 +1,6 @@
 ---
 title: "runAsAccountType enum type"
-description: "Indicates execution context of a device management script or an app."
+description: "Describes the runAsAccountType enum of the Microsoft Graph API for Intune, which supports multiple workflows."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "intune"

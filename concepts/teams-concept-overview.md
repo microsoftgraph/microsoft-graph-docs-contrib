@@ -102,7 +102,7 @@ See the [Teams API in Microsoft Graph](/graph/api/resources/teams-api-overview?v
 
 ## Next steps
 
-- Watch the [overview video](http://aka.ms/teamsgraph/v1/video).
+- Watch the [overview video](https://aka.ms/teamsgraph/v1/video).
 - Learn how to [use the Microsoft Teams API](/graph/api/resources/teams-api-overview?view=graph-rest-1.0).
 - Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0), and [group](/graph/api/resources/group?view=graph-rest-1.0) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

@@ -8,7 +8,7 @@ ms.prod: "groups"
 
 # Create group
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to create a new [group](../resources/group.md) as specified in the request body. You can create one of three types of groups:
 
@@ -69,7 +69,7 @@ Since the **group** resource supports [extensions](/graph/extensibility-overview
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
 ## Response
-If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body.
+If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
 ## Example
 #### Request 1
@@ -143,17 +143,17 @@ Content-type: application/json
 ```
 
 #### Request 2
-The second example request creates an Office 365 group with an owner specified.
+The second example request creates an Office 365 group with an owner and members specified.
 <!-- {
   "blockType": "request",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
 {
-  "description": "Group with designated owner",
+  "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
     "Unified"
@@ -163,55 +163,55 @@ Content-Type: application/json
   "securityEnabled": false,
   "owners@odata.bind": [
     "https://graph.microsoft.com/beta/users/26be1845-4119-4801-a799-aea79d09f1a2"
+  ],
+  "members@odata.bind": [
+    "https://graph.microsoft.com/beta/users/ff7cb387-6688-423c-8188-3da9532a73cc",
+    "https://graph.microsoft.com/beta/users/69456242-0067-49d3-ba96-9de6f2728e14"
   ]
 }
 ```
 
- #### Response 2
-The following is an example of a successful response. It includes only default properties. You can subsequenty get the **owners** navigation property of the group to verify the details of the owner. 
->**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
-
+#### Response 2
+The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 } -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-	 "id": "502df398-d59c-469d-944f-34a50e60db3f",
-	 "deletedDateTime": null,
-	 "classification": null,
-	 "createdDateTime": "2018-12-27T22:17:07Z",
-	 "description": "Group with designated owner",
-	 "displayName": "Operations group",
-	 "expirationDateTime": null,
-	 "groupTypes": [
-	     "Unified"
-	 ],
-	 "mail": "operations2019@contoso.com",
-	 "mailEnabled": true,
-	 "mailNickname": "operations2019",
-	 "membershipRule": null,
-	 "membershipRuleProcessingState": null,
-	 "onPremisesLastSyncDateTime": null,
-	 "onPremisesSecurityIdentifier": null,
-	 "onPremisesSyncEnabled": null,
-	 "preferredDataLocation": "CAN",
-	 "preferredLanguage": null,
-	 "proxyAddresses": [
-	     "SMTP:operations2019@contoso.com"
-	 ],
-	 "renewedDateTime": "2018-12-27T22:17:07Z",
-	 "resourceBehaviorOptions": [],
-	 "resourceProvisioningOptions": [],
-	 "securityEnabled": false,
-	 "theme": null,
-	 "visibility": "Public",
-	 "onPremisesProvisioningErrors": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "id": "502df398-d59c-469d-944f-34a50e60db3f",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-27T22:17:07Z",
+    "creationOptions": [],
+    "description": "Group with designated owner and members",
+    "displayName": "Operations group",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "operations2019@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "operations2019",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "SMTP:operations2019@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-27T22:17:07Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
 }
 ```
 
@@ -224,10 +224,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create group",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-post-groups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
