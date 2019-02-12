@@ -28,8 +28,10 @@
       href: /graph/throttling?toc=./ref/toc.json
     - name: Change notifications
       href: /graph/webhooks?toc=./ref/toc.json
+      displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
     - name: Track changes
       href: /graph/delta-query-overview?toc=./ref/toc.json
+      displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
       - name: Get changes to events (example)
         href: /graph/delta-query-events?toc=./ref/toc.json
@@ -41,6 +43,7 @@
         href: /graph/delta-query-users?toc=./ref/toc.json
     - name: Add custom data
       href: /graph/extensibility-overview?toc=./ref/toc.json
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
       items:
       - name: Use open extensions (example)
         href: /graph/extensibility-open-users?toc=./ref/toc.json
@@ -80,6 +83,7 @@
           href: api/user-delta.md
       - name: Calendar
         href: resources/event.md
+        displayName: Outlook, Outlook calendar
         items:
         - name: List events
           href: api/user-list-events.md
@@ -649,6 +653,7 @@
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Calls and online meetings
       href: resources/calls-api-overview.md
+      displayName: Microsoft Teams
       items:
       - name: Call
         href: resources/call.md
@@ -719,6 +724,7 @@
           href: api/onlinemeeting-get.md
     - name: Cross-device experiences
       href: resources/project-rome-overview.md
+      displayName: Project Rome
       items:
       - name: List user devices
         href: api/user-list-devices.md
@@ -759,6 +765,7 @@
             href: api/projectrome-notification-post.md
     - name: Customer booking
       href: resources/booking-api-overview.md
+      displayName: Bookings, Microsoft Bookings
       items:
       - name: Booking business
         href: resources/bookingbusiness.md
@@ -842,6 +849,7 @@
           href: api/bookingstaffmember-delete.md
     - name: Devices and apps
       href: resources/intune-graph-overview.md
+      displayName: Intune
       items:
       - name: App management
         href: resources/intune-app-conceptual.md
@@ -6523,6 +6531,7 @@
           href: api/educationsynchronizationerrors-get.md
     - name: Files
       href: resources/onedrive.md
+      displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
       items:
       - name: Drives
         href: resources/drive.md
@@ -6605,6 +6614,7 @@
           href: api/permission-delete.md
     - name: Identity and access
       href: resources/azure-ad-overview.md
+      displayName: Azure AD, Microsoft identity platform
       items:
       - name: Access reviews
         href: resources/accessreviews-root.md
@@ -7179,6 +7189,7 @@
           href: api/user-list-agreementacceptances.md
     - name: Mail
       href: resources/mail-api-overview.md
+      displayName: Outlook, Outlook mail
       items:
       - name: Message
         href: resources/message.md
@@ -7342,6 +7353,7 @@
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Notes
       href: resources/onenote-api-overview.md
+      displayName: OneNote
       items:
       - name: Notes
         href: resources/onenote.md
@@ -7431,6 +7443,7 @@
           href: api/resource-get.md
     - name: Personal contacts
       href: resources/contact.md
+      displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
       - name: Contact
         href: resources/contact.md
@@ -7733,6 +7746,7 @@
         href: resources/security-error-codes.md
     - name: Sites and lists
       href: resources/sharepoint.md
+      displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
       items:
       - name: Sites
         href: resources/site.md
@@ -7816,6 +7830,7 @@
         href: resources/mention.md
     - name: Tasks and plans
       href: resources/planner-overview.md
+      displayName: Planner
       items:
       - name: Plan
         href: resources/plannerplan.md
@@ -7914,6 +7929,7 @@
           href: api/plannerprogresstaskboardtaskformat-update.md
     - name: Teamwork
       href: resources/teams-api-overview.md
+      displayName: Microsoft Teams
       items:
       - name: Team
         href: resources/team.md
@@ -8078,6 +8094,7 @@
           href: api/onenote-post-notebooks.md
     - name: To-do tasks
       href: resources/outlooktask.md
+      displayName: Outlook
       items:
       - name: Outlook task
         href: resources/outlooktask.md
@@ -8177,6 +8194,7 @@
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Workbooks and charts
       href: resources/excel.md
+      displayName: Excel
       items:
       - name: Workbook
         href: resources/workbook.md
@@ -8293,6 +8311,7 @@
     - name: Tools
     - name: Open extensions
       href: resources/opentypeextension.md
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
       - name: Create open extension
         href: api/opentypeextension-post-opentypeextension.md
@@ -8304,6 +8323,7 @@
         href: api/opentypeextension-delete.md
     - name: Schema extensions
       href: resources/schemaextension.md
+      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
       items:
       - name: List schema extensions
         href: api/schemaextension-list.md
@@ -8317,6 +8337,7 @@
         href: api/schemaextension-delete.md
     - name: Change notifications
       href: resources/webhooks.md
+      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Subscription
         href: resources/subscription.md
