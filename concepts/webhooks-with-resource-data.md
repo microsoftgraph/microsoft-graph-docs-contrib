@@ -1,13 +1,13 @@
 ---
-title: "Set up notifications for Teams messages, including message properties"
-description: "The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. Notifications can include resource properties. Apps need to implement additional code to handle the requirements related to resource data being included."
+title: "Set up change notifications for Teams messages, including message properties"
+description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. Notifications can include resource properties. Apps need to implement additional code to handle the requirements related to resource data being included."
 author: "piotrci"
 localization_priority: Priority
 ---
 
-# Set up notifications for Teams messages, including message properties
+# Set up change notifications for Teams messages, including message properties
 
-The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
+The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.
 
@@ -33,7 +33,7 @@ Or to all Teams messages in a specific tenant:
 
 ## Creating a subscription
 
-Creating a subscription for notifications that include resource data requires additional information in the request:
+Creating a subscription for change notifications that include resource data requires additional information in the request:
 
 - @@@Name may change@@@`includeProperties` set to `true` to explicitly request resource properties.
 - A `$select` operator in the resource path to select the properties to be included.
