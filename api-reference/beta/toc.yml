@@ -8016,11 +8016,6 @@
           href: api/channel-post-chatmessage.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
-      - name: Chat thread
-        href: resources/chatthread.md
-        items:
-        - name: Create chat thread
-          href: api/channel-post-chatthreads.md
       - name: Apps
         href: resources/teamsapp.md
         items:

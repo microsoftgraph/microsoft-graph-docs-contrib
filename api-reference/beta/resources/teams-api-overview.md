@@ -37,7 +37,7 @@ otherwise, you'll get incorrect results when you list all teams.
 
 The following are the differences at the API level between teams and groups:
 
-- Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](../resources/channel.md), [chatThread](../resources/chatthread.md), and [chatMessage](../resources/chatmessage.md) resources.
+- Persistent chat is available only to Microsoft Teams. This feature is hierarchically represented by the [channel](../resources/channel.md) and [chatMessage](../resources/chatmessage.md) resources.
 - Group conversations are available only to Office 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources. 
 - The [List joined teams](../api/user-list-joinedteams.md) method applies only to Microsoft Teams.
 - [Calling and online meeting APIs](./calls-api-overview.md) apply only to Microsoft Teams.
