@@ -10,7 +10,7 @@ localization_priority: Priority
 
 A chatThread is a collection of [chatMessages](chatmessage.md) in Microsoft Teams.
 
-> **NOTE**: This API has been deprected. Please use the [ChatMessage](../api/channel-post-chatmessage.md) resource instead.
+> **NOTE**: This API has been deprected. Please use the [ChatMessage](chatmessage.md) resource instead.
 
 ## Methods
 
