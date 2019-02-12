@@ -8012,9 +8012,9 @@
           href: api/channel-list-messagereplies.md
         - name: Get message reply
           href: api/channel-get-messagereply.md
-        - name: Post channel message
+        - name: Create message
           href: api/channel-post-chatmessage.md
-        - name: Post reply message
+        - name: Reply to message
           href: api/channel-post-messagereply.md
       - name: Chat thread
         href: resources/chatthread.md
