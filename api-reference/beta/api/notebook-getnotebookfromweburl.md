@@ -10,7 +10,7 @@ ms.prod: "onenote"
 
 [!INCLUDE beta-disclaimer]
 
-Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object using its url path.
+Retrieve the properties and relationships of a [notebook](../resources/notebook.md) object by using its URL path.
 
 The location can be user notebooks on Office 365, group notebooks, or SharePoint site-hosted team notebooks on Office 365
 ## Permissions
@@ -36,11 +36,11 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 | Accept | string | `application/json` |
 
 ## Request body
-In the request body, supply a JSON representation of the full url path to the notebook you want to retrieve.
+In the request body, supply a JSON representation of the full URL path to the notebook you want to retrieve.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | The url path of the notebook to retrieve. It can also contain a "onenote:" prefix.|
+| `webUrl`     |`String`     | The URL path of the notebook to retrieve. It can also contain a "onenote:" prefix.|
 
 ## Response
 
@@ -59,7 +59,9 @@ Content-type: application/json
 {"webUrl":"webUrl value"}
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
