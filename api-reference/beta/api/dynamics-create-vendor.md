@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-POST /financials/companies{id}/vendors
+POST /financials/companies('{id}')/vendors
 ```
 
 ## Optional query parameters
@@ -47,7 +47,7 @@ If successful, this method returns ```201 Created``` response code and a **vendo
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies{id}/vendors
+POST https://graph.microsoft.com/beta/financials/companies('{id}')/vendors
 Content-type: application/json
 
 {

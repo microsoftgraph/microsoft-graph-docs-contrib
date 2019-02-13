@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-DELETE /financials/companies{id}/items{id}
+DELETE /financials/companies('{id}')/items('{id}')
 ```
 
 ## Optional query parameters
@@ -46,7 +46,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 
 Here is an example of the request.
 ```json
-DELETE https://graph.microsoft.com/beta/financials/companies{id}/items{id}
+DELETE https://graph.microsoft.com/beta/financials/companies('{id}')/items('{id}')
 ```
 
 **Response**

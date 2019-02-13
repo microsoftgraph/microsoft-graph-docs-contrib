@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 ```
-POST /financials/companies{id}/unitsOfMeasure
+POST /financials/companies('{id}')/unitsOfMeasure
 ```
 
 ## Optional query parameters
@@ -47,7 +47,7 @@ If successful, this method returns ```201 Created``` response code and a **units
 Here is an example of a request.
 
 ```json
-POST https://graph.microsoft.com/beta/financials/companies{id}/unitsOfMeasure
+POST https://graph.microsoft.com/beta/financials/companies('{id}')/unitsOfMeasure
 Content-type: application/json
 
 {
