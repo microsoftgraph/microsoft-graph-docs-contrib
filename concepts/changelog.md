@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## February 2019
 
+### OneNote
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta and v1.0 | Added the [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) method. |
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
@@ -34,7 +40,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta and v1.0| Added support for configuring Word, Excel, PowerPoint, PDF, and document library [tabs](teams-configuring-builtin-tabs.md). |
 |Addition |beta| Introduced the [Create a message in a channel](/graph/api/channel-post-chatmessage?view=graph-rest-beta) API. |
 |Addition |beta| Introduced the [Reply to a message in a channel](/graph/api/channel-post-messagereply?view=graph-rest-beta) API. |
-|Deletion |beta| Removed the POST /teams/{id}/channels/{id}/chatThreads API, use [Create a message in a channel](/graph/api/channel-post-chatmessage?view=graph-rest-beta) instead. |
+|Deletion |beta| Removed the POST /teams/{id}/channels/{id}/chatThreads API. Use [Create a message in a channel](/graph/api/channel-post-chatmessage?view=graph-rest-beta) instead. |
+
 
 ## January 2019
 
@@ -49,7 +56,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta  | Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.|
-
 
 ### Directory APIs
 
