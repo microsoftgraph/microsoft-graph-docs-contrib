@@ -12,6 +12,8 @@ ms.prod: "microsoft-teams"
 
 Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
 
+> See [known issues](/graph/concepts/known-issues.md) for using application permissions.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
