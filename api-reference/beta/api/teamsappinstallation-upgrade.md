@@ -13,6 +13,8 @@ ms.prod: "microsoft-teams"
 Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md)
 to the latest version of the app.
 
+> See [known issues](/graph/concepts/known-issues.md) for using application permissions.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
