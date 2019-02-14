@@ -44,9 +44,6 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "chatthreads"
-  ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"
 }-->
