@@ -35,11 +35,6 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ## Microsoft Teams
 
-### Create chat thread API
-
-The current API to [create a chat thread](/graph/api/channel-post-chatthreads?view=graph-rest-beta) 
-will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel-list-messages?view=graph-rest-beta).
-
 ### GET /teams and POST /teams are not supported
 
 See [list all teams](teams-list-all-teams.md) and 

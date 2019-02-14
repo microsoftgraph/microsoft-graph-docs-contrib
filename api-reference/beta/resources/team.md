@@ -35,6 +35,7 @@ For more information about working with groups and members in teams, see [Use th
 |[Add app to team](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
 |[Add tab to channel](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel-list-messages.md) |
+|[Send channel message](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Send a message to a channel](../api/channel-post-chatmessage.md) |
 
 ## Properties
 
@@ -62,7 +63,7 @@ For more information about working with groups and members in teams, see [Use th
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |owners|[user](user.md)| The list of this team's owners. |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
-|template|[teamsTemplate](teamstemplate.md)| The template this team was created from. |
+|template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates). |
 
 ## JSON representation
 
