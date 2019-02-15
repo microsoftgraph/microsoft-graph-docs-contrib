@@ -55,7 +55,7 @@ In the future, we will set **resourceProvisioningOptions** on existing teams tha
 
 When uninstalling an app from a team using application permissions, the API will return a 500 error code even though the app was successfully uninstalled.
 
-When installing, updating, and uninstalling apps in a team using application permissions, audit log events are not be written.
+When installing, updating, and uninstalling apps in a team using application permissions, audit log events are not written.
 
 ## Groups
 
