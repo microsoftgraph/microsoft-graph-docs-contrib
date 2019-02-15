@@ -5,6 +5,7 @@ author: "degoh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
+### policyViolation Resource 
 
 In the request body, supply the properties for the Data Loss Prevention (DLP) violation. 'policyViolation' is the parent property for the following DLP properties.
 
