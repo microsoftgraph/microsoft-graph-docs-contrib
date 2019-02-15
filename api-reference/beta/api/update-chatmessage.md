@@ -34,7 +34,7 @@ In the request body, supply the relevant properties that you would like to updat
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| PolicyViolation | chatMessagePolicyViolation | Supply the properties for the Data Loss Prevention (DLP) violation. 'policyViolation' is the parent property for the following DLP properties|
+| [PolicyViolation](policyviolation.md) | chatMessagePolicyViolation | Supply the properties for the Data Loss Prevention (DLP) violation. 'policyViolation' is the parent property for the following DLP properties|
 
 ## Response
 
