@@ -13,6 +13,8 @@ ms.prod: "microsoft-teams"
 Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md)
 to the latest version of the app.
 
+>**Note:** If you're using application permissions, a known issue will occur. For details, see [known issues](graph/concepts/known-issues.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
