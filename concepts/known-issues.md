@@ -35,10 +35,6 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ## Microsoft Teams
 
-### Graph Explorer and global admins
-
-Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
-
 ### GET /teams and POST /teams are not supported
 
 See [list all teams](teams-list-all-teams.md) and 
@@ -54,6 +50,12 @@ New teams will be listed.
 Certain old teams don't have a **resourceProvisioningOptions** property that contains "Team",
 which is set on newly created teams and teams that are visited in Microsoft Teams.
 In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
+
+### Installing and uninstalling applications using application permissions
+
+When uninstalling an app from a team using application permissions, the API will return a 500 error code even though the app was successfully uninstalled.
+
+When installing, updating, and uninstalling apps in a team using application permissions, audit log events are not written.
 
 ## Groups
 
