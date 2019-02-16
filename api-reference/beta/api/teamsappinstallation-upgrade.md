@@ -13,7 +13,7 @@ ms.prod: "microsoft-teams"
 Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md)
 to the latest version of the app.
 
->**Note:** If you're using application permissions, a known issue will occur. For details, see [known issues](graph/concepts/known-issues.md).
+>**Note:** If you're using application permissions, a known issue will occur. For details, see [known issues](/graph/known-issues).
 
 ## Permissions
 
