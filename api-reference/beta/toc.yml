@@ -1260,36 +1260,6 @@
             href: api/intune-books-iosvppebookassignment-delete.md
           - name: Update
             href: api/intune-books-iosvppebookassignment-update.md
-        - name: macOS VPP app
-          href: resources/intune-apps-macosvppapp.md
-          items:
-          - name: List
-            href: api/intune-apps-macosvppapp-list.md
-          - name: Get
-            href: api/intune-apps-macosvppapp-get.md
-          - name: Create
-            href: api/intune-apps-macosvppapp-create.md
-          - name: Delete
-            href: api/intune-apps-macosvppapp-delete.md
-          - name: Update
-            href: api/intune-apps-macosvppapp-update.md
-        - name: macOS VPP app assigned license
-          href: resources/intune-apps-macosvppappassignedlicense.md
-          items:
-          - name: List
-            href: api/intune-apps-macosvppappassignedlicense-list.md
-          - name: Get
-            href: api/intune-apps-macosvppappassignedlicense-get.md
-          - name: Create
-            href: api/intune-apps-macosvppappassignedlicense-create.md
-          - name: Delete
-            href: api/intune-apps-macosvppappassignedlicense-delete.md
-          - name: Update
-            href: api/intune-apps-macosvppappassignedlicense-update.md
-        - name: macOS VPP app assignment settings
-          href: resources/intune-apps-macosvppappassignmentsettings.md
-        - name: macOS VPP app revoke licenses action result
-          href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
         - name: macOS LOB app
           href: resources/intune-apps-macoslobapp.md
           items:
@@ -1320,6 +1290,36 @@
             href: api/intune-apps-macosofficesuiteapp-delete.md
           - name: Update
             href: api/intune-apps-macosofficesuiteapp-update.md
+        - name: macOS VPP app
+          href: resources/intune-apps-macosvppapp.md
+          items:
+          - name: List
+            href: api/intune-apps-macosvppapp-list.md
+          - name: Get
+            href: api/intune-apps-macosvppapp-get.md
+          - name: Create
+            href: api/intune-apps-macosvppapp-create.md
+          - name: Delete
+            href: api/intune-apps-macosvppapp-delete.md
+          - name: Update
+            href: api/intune-apps-macosvppapp-update.md
+        - name: macOS VPP app assigned license
+          href: resources/intune-apps-macosvppappassignedlicense.md
+          items:
+          - name: List
+            href: api/intune-apps-macosvppappassignedlicense-list.md
+          - name: Get
+            href: api/intune-apps-macosvppappassignedlicense-get.md
+          - name: Create
+            href: api/intune-apps-macosvppappassignedlicense-create.md
+          - name: Delete
+            href: api/intune-apps-macosvppappassignedlicense-delete.md
+          - name: Update
+            href: api/intune-apps-macosvppappassignedlicense-update.md
+        - name: macOS VPP app assignment settings
+          href: resources/intune-apps-macosvppappassignmentsettings.md
+        - name: macOS VPP app revoke licenses action result
+          href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
         - name: Managed android LOB app
           href: resources/intune-apps-managedandroidlobapp.md
           items:
@@ -2274,6 +2274,8 @@
         items:
         - name: Administrator configured device compliance state
           href: resources/intune-deviceconfig-administratorconfigureddevicecompliancestate.md
+        - name: Advanced BitLocker state
+          href: resources/intune-deviceconfig-advancedbitlockerstate.md
         - name: Advanced threat protection on-boarding device setting state
           href: resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md
           items:
@@ -2601,6 +2603,19 @@
             href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-update.md
         - name: Android keyguard feature
           href: resources/intune-deviceconfig-androidkeyguardfeature.md
+        - name: Android OMA cp configuration
+          href: resources/intune-deviceconfig-androidomacpconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-androidomacpconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-androidomacpconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-androidomacpconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-androidomacpconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-androidomacpconfiguration-update.md
         - name: Android PKCS certificate profile
           href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
           items:
@@ -2955,6 +2970,32 @@
           href: resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md
         - name: Defender threat action
           href: resources/intune-deviceconfig-defenderthreataction.md
+        - name: Delivery optimization bandwidth
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidth.md
+        - name: Delivery optimization bandwidth absolute
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md
+        - name: Delivery optimization bandwidth business hours limit
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md
+        - name: Delivery optimization bandwidth hours with percentage
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md
+        - name: Delivery optimization bandwidth percentage
+          href: resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md
+        - name: Delivery optimization group id custom
+          href: resources/intune-deviceconfig-deliveryoptimizationgroupidcustom.md
+        - name: Delivery optimization group id options type
+          href: resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md
+        - name: Delivery optimization group id source
+          href: resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md
+        - name: Delivery optimization group id source options
+          href: resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md
+        - name: Delivery optimization max cache size
+          href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md
+        - name: Delivery optimization max cache size absolute
+          href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md
+        - name: Delivery optimization max cache size percentage
+          href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md
+        - name: Delivery optimization restrict peer selection by options
+          href: resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md
         - name: Derived credential provider type
           href: resources/intune-deviceconfig-derivedcredentialprovidertype.md
         - name: Device compliance action item
@@ -3208,9 +3249,11 @@
           href: resources/intune-deviceconfig-devicemanagementuserrightssetting.md
         - name: Device threat protection level
           href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
+        - name: Device types
+          href: resources/intune-deviceconfig-devicetypes.md
         - name: Diagnostic data submission mode
           href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-        - name: Dma guard device enumeration policy type
+        - name: DMA guard device enumeration policy type
           href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
         - name: Domain name source
           href: resources/intune-deviceconfig-domainnamesource.md
@@ -3239,6 +3282,8 @@
           href: resources/intune-deviceconfig-edgehomebuttonopenscustomurl.md
         - name: Edge home button opens new tab
           href: resources/intune-deviceconfig-edgehomebuttonopensnewtab.md
+        - name: Edge kiosk mode restriction type
+          href: resources/intune-deviceconfig-edgekioskmoderestrictiontype.md
         - name: Edge open options
           href: resources/intune-deviceconfig-edgeopenoptions.md
         - name: Edge search engine
@@ -3270,6 +3315,12 @@
           href: resources/intune-deviceconfig-emailsyncduration.md
         - name: Email sync schedule
           href: resources/intune-deviceconfig-emailsyncschedule.md
+        - name: Encryption readiness state
+          href: resources/intune-deviceconfig-encryptionreadinessstate.md
+        - name: Encryption report policy details
+          href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
+        - name: Encryption state
+          href: resources/intune-deviceconfig-encryptionstate.md
         - name: Extended key usage
           href: resources/intune-deviceconfig-extendedkeyusage.md
         - name: Firewall certificate revocation list check method type
@@ -4013,6 +4064,19 @@
             href: api/intune-deviceconfig-manageddevicecertificatestate-delete.md
           - name: Update
             href: api/intune-deviceconfig-manageddevicecertificatestate-update.md
+        - name: Managed device encryption state
+          href: resources/intune-deviceconfig-manageddeviceencryptionstate.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-list.md
+          - name: Get
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-get.md
+          - name: Create
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-manageddeviceencryptionstate-update.md
         - name: Managed device reported app
           href: resources/intune-deviceconfig-manageddevicereportedapp.md
         - name: Media content rating Australia
@@ -4826,8 +4890,6 @@
           href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
         - name: Windows update scheduled install
           href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
-        - name: Windows update state
-          href: resources/intune-deviceconfig-windowsupdatestate.md
         - name: Windows update status
           href: resources/intune-deviceconfig-windowsupdatestatus.md
         - name: Windows update type
@@ -6129,7 +6191,7 @@
             href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md
         - name: Windows Hello for business PIN usage
           href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-      - name: Role-based access control
+      - name: Role-based access control 
         href: /resources/intune-rbac-conceptual.md
         items:
         - name: Device and app management assigned role details
@@ -7617,6 +7679,8 @@
           href: api/notebook-copynotebook.md
         - name: Get recent notebooks
           href: api/notebook-getrecentnotebooks.md
+        - name: Get notebook from web URL
+          href: api/notebook-getnotebookfromweburl.md
         - name: List sections
           href: api/notebook-list-sections.md
         - name: Create section
@@ -8246,11 +8310,10 @@
           href: api/channel-list-messagereplies.md
         - name: Get message reply
           href: api/channel-get-messagereply.md
-      - name: Chat thread
-        href: resources/chatthread.md
-        items:
-        - name: Create chat thread
-          href: api/channel-post-chatthreads.md
+        - name: Create message
+          href: api/channel-post-chatmessage.md
+        - name: Reply to message
+          href: api/channel-post-messagereply.md
       - name: Apps
         href: resources/teamsapp.md
         items:

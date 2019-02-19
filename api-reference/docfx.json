@@ -211,9 +211,8 @@
       "extendBreadcrumb": true,
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
-      "ms.suite": "microsoft graph",
+      "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",	
-      "ms.date": "11/27/2018",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "searchScope": ["graph"]
     },
