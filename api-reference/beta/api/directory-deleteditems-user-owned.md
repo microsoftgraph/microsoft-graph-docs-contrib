@@ -12,7 +12,7 @@ Retrieves a list of recently deleted items owned by the specified user.
 
 Currently, list deleted items functionality is supported only for [group](../resources/group.md) resources owned by the user.
 
-This is a service action, which means it does not support pagination.  The API returns up to 1,000 deleted objects owned by the user, sorted by ID.  Should the user own 1,000 or more deleted objects, the API returns nothing.
+This is a service action, which means it does not support pagination.  The API returns up to 1,000 deleted objects owned by the user, sorted by ID.
 
 ## Permissions
 
@@ -26,20 +26,24 @@ more, including how to choose permissions, see
 | Delegated (personal Microsoft account) |  Not supported. |
 | Application | Group.Read.All, Group.ReadWrite.All  |
 
+## HTTP request
+
+``` http
+POST /directory/deletedItems/getUserOwnedObjects
+```
+
 ## Request headers
 
-| **Name**      | **Description**           |
+| Name          | Description               |
 | ------------- | ------------------------- |
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-``` http
-POST https://graph.microsoft.com/beta/directory/deletedItems/getUserOwnedObjects
-Content-type: application/json
 
+```json
 {
-  "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
-  "type":"group"
+  "userId":"{id}",
+  "type":"Group"
 }
 ```
 
@@ -49,6 +53,7 @@ The request body requires the following parameters:
 |:---------------|:--------|:----------|
 |userId|String|ID of the owner.|
 |type|String|Type of owned objects to return; `Group` is currently the only supported value.|
+
 
 ## Response
 
@@ -61,12 +66,12 @@ Successful requests return `200 OK` response codes; the response object includes
 Here is an example of the request.
 
 ``` http
-POST https://graph.microsoft.com/beta/directory/deletedItems/getUserOwnedObjects
+POST https://graph.microsoft.com/v1.0/directory/deletedItems/getUserOwnedObjects
 Content-type: application/json
 
 {
   "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
-  "type":"Group"
+  "type":"group"
 }
 ```
 
@@ -85,7 +90,7 @@ Content-length: 1249
           {
               "@odata.type": "#microsoft.graph.group",
               "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
-              "deletedDateTime": "2018-04-01T12:34:56Z",
+              "deletedDateTime": 2018-04-01T12:39:16Z,
               "classification": null,
               "createdDateTime": "2017-03-22T12:39:16Z",
               "description": null,

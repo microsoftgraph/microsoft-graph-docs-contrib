@@ -10,7 +10,7 @@ ms.prod: "onenote"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [onenotePage](../resources/onenotepage.md) object.
+Retrieve the properties and relationships of a [page](../resources/onenotepage.md) object.
 
 **Getting page information**
 

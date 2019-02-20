@@ -13,7 +13,7 @@ List the recent [activities](../resources/itemactivity.md) that took place on an
 
 **Note:** Activities is in a limited Preview and not yet available to all tenants.
 
-[activities](../resources/itemactivity.md)
+[activities]: ../resources/itemactivity.md
 
 ## Permissions
 

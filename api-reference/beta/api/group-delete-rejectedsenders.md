@@ -49,6 +49,13 @@ The following are a couple of examples of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
 ```
+<!-- {
+  "blockType": "request",
+  "name": "remove_rejectedSender_from_group"
+}-->
+```http
+DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
+```
 
 #### Response
 The following is an example of the response. 
