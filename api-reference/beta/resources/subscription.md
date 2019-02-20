@@ -11,11 +11,11 @@ author: "piotrci"
 
 A subscription allows a client app to receive notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
 
-- Mail, events, and contacts from Outlook.
-- Conversations from Office Groups.
-- Drive root items from OneDrive.
-- Users and Groups from Azure Active Directory.
-- Alerts from the Microsoft Graph Security API.
+- Messages, events, and contacts in Outlook
+- Conversations of Office 365 groups
+- Root folder in OneDrive for Business, root folder and subfolders in a user's personal OneDrive
+- Users and groups in Azure Active Directory
+- Alerts from the Microsoft Graph Security API
 
 ## JSON representation
 
