@@ -224,17 +224,19 @@
             href: extensibility-open-users.md
           - name: Use schema extensions (example)
             href: extensibility-schema-groups.md
-        - name: Use SDKs
-          href: sdks-overview.md
-          items:
-          - name: Use .net SDK
-            href: sdks/dotnet/overview.md
-          - name: Use Java SDK
-            href: sdks/java/overview.md
-          - name: Use Javascript SDK
-            href: sdks/javascript/overview.md
-          - name: Use PHP SDK
-            href: sdks/php/overview.md
+      - name: Use SDKs
+        href: sdks-overview.md
+        items:
+        - name: Use .net SDK
+          href: sdks/dotnet/Overview.md
+        - name: Use Java SDK
+          href: sdks/java/Overview.md
+        - name: Use Javascript SDK
+          href: sdks/javascript/Overview.md
+        - name: Use PHP SDK
+          href: sdks/php/Overview.md
+        - name: Use ObjectiveC SDK
+          href: sdks/objectivec/Overview.md
       - name: Resources
         expanded: true
         items:

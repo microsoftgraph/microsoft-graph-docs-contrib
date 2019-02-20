@@ -1,178 +1,102 @@
-Microsoft Graph .NET Client Library Overview
-=====
+# Microsoft Graph .Net Client Library
 
-The Microsoft Graph .NET Client Library is made up of 6 major components:
+* [Components](./components.md)
+* [Collections](./collections.md)
+* [Errors](./errors.md)
+* [Contributions](./contributions.md)
+* [Headers](./headers.md)
+* [FAQ](./FAQ.md)
 
-* A client object
-* An authentication provider
-* An HTTP provider + serializer
-* Request builder objects
-* Request objects
-* Property bag object model classes for serialization and deserialization
+## How do I work with...
 
-The library is designed to be highly extensible. This overview covers basic scenarios but many of the individual components can be replaced with custom implementations.
+### OneDrive
 
-## GraphServiceClient
-
-To begin making requests with the library, you will need to initialize a **GraphServiceClient** instance for building and sending requests.
-
-### GraphServiceClientConstructor
-
-| Parameter                                      | Required?      | Default Value                                    |
-|:-----------------------------------------------|:---------------|:-------------------------------------------------|
-|`string` baseUrl                                | No             | https://graph.microsoft.com/currentServiceVersion|
-|`IAuthenticationProvider` authenticationProvider| Yes            | n/a                                              |
-|`IHttpProvider` httpProvider                    | No             | `new HttpProvider(new Serializer())`             |
-
-## IAuthenticationProvider
-
-The authentication provider is responsible for authenticating requests before sending them to the service. The Microsoft Graph .NET Client Library doesn't implement any authentication by default. Instead, you will need to retrieve access tokens for the service via the authentication library of your choice or by coding against one of the authentication endpoints directly. Please [read here](https://developer.microsoft.com/en-us/graph/docs/concepts/auth_overview) for more details about authenticating the Microsoft Graph service.
-
-### DelegateAuthenticationProvider
-
-The `DelegateAuthenticationProvider` is an implementation of `IAuthenticationProvider` that accepts a delegate to call during `AuthenticateRequestAsync`. This is the simplest way to append a retrieved access token to a request message:
-
-``` csharp
-var graphServiceClient = new GraphServiceClient(new DelegateAuthenticationProvider((requestMessage) => {
-    requestMessage
-        .Headers
-        .Authorization = new AuthenticationHeaderValue("bearer", accessToken);
-
-    return Task.FromResult(0);
-}));
-```
+* [Download a large file from OneDrive](#downloadLargeFile)
 
 
-## Resource model
-
-Microsoft Graph service resource are represented by property bag model classes of the same name in the client library. For example, the [user resource](https://graph.microsoft.io/en-us/docs/api-reference/v1.0/resources/user) is represented by the [user class](../src/Microsoft.Graph/Models/Generated/User.cs) in the client library. Each of these model classes contain properties that represent the properties of the resources they represent.
-
-These classes are used for serializing and deserializing the resources in requests to the service. They do not contain any logic to issue requests.
-
-The resource model classes are generated based on the $metadata description of the service.
-
-## Requests
-
-To make requests against the service, you'll need to build a request using the request builders off the client. The request builders are responsible for building the request URL while the `Request()` method off a request builder will build the request object. The request builder patterns are intended to mirror the REST API pattern.
-
-**Note:** Request and request builder classes are generated based on the $metadata description of the service. Interfaces are provided for each of these classes to enable easy unit testing around the logic contained in the classes. Since these interfaces are also generated, their signatures are subject to change without being considered a breaking change in the library. Anybody consuming these interfaces should be prepared for the class names or interface definitions to change between library versions.
-
-### 1. Request builders
-
-You get the first request builder from the `GraphServiceClient` object. For example, to get a request builder for the /me navigation you call:
-
-|Task       | SDK                    | URL                            |
-|:----------|:----------------------:|:-------------------------------|
-|Get me     | graphServiceClient.Me  | GET graph.microsoft.com/v1.0/me|
- 
-The call will return an `IUserRequestBuilder` object. From Me you can continue to chain the request builders.
-
-The [Microsoft Graph service documentation](https://graph.microsoft.io/en-us/docs) has more details about the full functionality of the API.
 
 
-### 2. Request calls
 
-After you build the request you call the `Request` method on the request builder. This will construct the request object needed to make calls against the service.
 
-For /me/calendar you call:
+<a name="downloadLargeFile"></a>
+### Download a large file from OneDrive
 
-``` csharp
-var calendarRequest = graphServiceClient
-    .Me
-    .Calendar
-    .Request();
-```
+```csharp
+// Based on question by Pavan Tiwari, 11/26/2012, and answer by Simon Mourier
+// https://stackoverflow.com/questions/13566302/download-large-file-in-small-chunks-in-c-sharp
 
-All request builders have a `Request` method that can generate a request object. Request objects may have different methods on them depending on the type of request. To get /me/calendar you call:
+const long DefaultChunkSize = 50 * 1024; // 50 KB, TODO: change chunk size to make it realistic for a large file.
+long ChunkSize = DefaultChunkSize;
+long offset = 0;         // cursor location for updating the Range header.
+byte[] bytesInStream;                    // bytes in range returned by chunk download.
 
-``` csharp
-var calendar = await graphServiceClient
-    .Me
-    .Calendar
-    .Request()
-    .GetAsync();
-```
+// Get the collection of drive items. We'll only use one.
+IDriveItemChildrenCollectionPage driveItems = await graphClient.Me.Drive.Root.Children.Request().GetAsync();
 
-Any errors while building or sending a request will bubble up as a `ServiceException`. See [errors](/docs/errors.md) for more information on errors.
-
-## Query options
-
-If you only want to retrieve certain properties of a resource you can select them. Here's how to get only the ID of the me object:
-
-``` csharp
-var user = await graphServiceClient
-    .Me
-    .Request()
-    .Select("id")
-    .GetAsync();
-```
-
-All properties other than `Id` will be null on the returned user object.
-
-Expand, Skip, Top, OrderBy, and Filter are also supported via the client library when supported by the Microsoft Graph service for the request type.
-
-## Custom query options
-
-If you need to include more specific behavior during a request that is not supported by the library, you can create a custom queryOptions List that you can add when calling ```Request```:
-
-``` chsarp
-List<QueryOption> options = new List<QueryOption>
+foreach (var item in driveItems)
 {
-     new QueryOption("$search", "lunch")
-};
-var messages = await client.Me.Messages.Request(options).GetAsync();
-```
-
-
-
-## Collections
-
-Please see [collections](/docs/collections.md) for details on collections and paging.
-
-## Send HTTP requests with the .Net Microsoft Graph client library
-
-Sometimes, the functionality that you want to use isn't a part of the .NET client library. In this case, you can still use the client library to make your life easier. The client library can authenticate your requests and provide you the serializers. Here's an example of using the client library to create a OneNote page and deserialize the response object. 
-
-``` csharp
-
-public async Task OneNoteAddPageHtml()
-{
-    // Get a page of OneNote sections.
-    IOnenoteSectionsCollectionPage sectionPage = await graphClient.Me.Onenote.Sections.Request().GetAsync();
-
-    // Get a handle to the first section.
-    string sectionId = sectionPage[0].Id;
-
-    // Get the request URL for adding a page. 
-    string requestUrl = graphClient.Me.Onenote.Sections[sectionId].Pages.Request().RequestUrl;
-
-    string htmlBody = @"<!DOCTYPE html><html><head><title>OneNoteAddPageHtml created this</title></head>
-                        <body>Generated with love</body></html> ";
-
-    // Create the request message and add the content.
-    HttpRequestMessage hrm = new HttpRequestMessage(HttpMethod.Post, requestUrl);
-    hrm.Content = new StringContent(htmlBody, System.Text.Encoding.UTF8, "text/html");
-
-    // Authenticate (add access token) our HttpRequestMessage
-    await graphClient.AuthenticationProvider.AuthenticateRequestAsync(hrm);
-
-    // Send the request and get the response.
-    HttpResponseMessage response = await graphClient.HttpProvider.SendAsync(hrm);
-
-    // Get the OneNote page that we created.
-    if (response.IsSuccessStatusCode)
+    // Let's download the first file we get in the response.
+    if (item.File != null)
     {
-        // Deserialize into OneNotePage object.
-        var content = await response.Content.ReadAsStringAsync();
-        OnenotePage page = graphClient.HttpProvider.Serializer.DeserializeObject<OnenotePage>(content);
-    }
-    else
-        throw new ServiceException(
-            new Error
-            {
-                Code = response.StatusCode.ToString(),
-                Message = await response.Content.ReadAsStringAsync()
-            });
-}
+        // We'll use the file metadata to determine size and the name of the downloaded file
+        // and to get the download URL.
+        var driveItemInfo = await graphClient.Me.Drive.Items[item.Id].Request().GetAsync();
 
+        // Get the download URL. This URL is preauthenticated and has a short TTL.
+        object downloadUrl;
+        driveItemInfo.AdditionalData.TryGetValue("@microsoft.graph.downloadUrl", out downloadUrl);
+
+        // Get the number of bytes to download. calculate the number of chunks and determine
+        // the last chunk size.
+        long size = (long)driveItemInfo.Size;
+        int numberOfChunks = Convert.ToInt32(size / DefaultChunkSize); 
+        // We are incrementing the offset cursor after writing the response stream to a file after each chunk. 
+        // Subtracting one since the size is 1 based, and the range is 0 base. There should be a better way to do
+        // this but I haven't spent the time on that.
+        int lastChunkSize = Convert.ToInt32(size % DefaultChunkSize) - numberOfChunks - 1; 
+        if (lastChunkSize > 0) { numberOfChunks++; }
+
+        // Create a file stream to contain the downloaded file.
+        using (FileStream fileStream = System.IO.File.Create((@"C:\Temp\" + driveItemInfo.Name)))
+        {
+            for (int i = 0; i < numberOfChunks; i++)
+            {
+                // Setup the last chunk to request. This will be called at the end of this loop.
+                if (i == numberOfChunks - 1)
+                {
+                    ChunkSize = lastChunkSize;
+                }
+
+                // Create the request message with the download URL and Range header.
+                HttpRequestMessage req = new HttpRequestMessage(HttpMethod.Get, (string)downloadUrl);
+                req.Headers.Range = new System.Net.Http.Headers.RangeHeaderValue(offset, ChunkSize + offset);
+
+                // We can use the the client library to send this although it does add an authentication cost.
+                // HttpResponseMessage response = await graphClient.HttpProvider.SendAsync(req);
+                // Since the download URL is preauthenticated, and we aren't deserializing objects, 
+                // we'd be better to make the request with HttpClient.
+                var client = new HttpClient();
+                HttpResponseMessage response = await client.SendAsync(req);
+
+                using (Stream responseStream = await response.Content.ReadAsStreamAsync())
+                {
+                    bytesInStream = new byte[ChunkSize];
+                    int read;
+                    do
+                    {
+                        read = responseStream.Read(bytesInStream, 0, (int)bytesInStream.Length);
+                        if (read > 0)
+                            fileStream.Write(bytesInStream, 0, bytesInStream.Length);
+                    }
+                    while (read > 0);
+                }
+                offset += ChunkSize + 1; // Move the offset cursor to the next chunk.
+            }
+        }
+        return;
+    }
+}
 ```
+
+
+
