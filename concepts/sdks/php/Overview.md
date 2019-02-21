@@ -1,4 +1,4 @@
-# Getting started
+# Microsoft Graph SDK for PHP
 
 ## Installation
 The PHP SDK can be installed with Composer:

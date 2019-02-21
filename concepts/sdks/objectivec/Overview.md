@@ -1,4 +1,3 @@
-
 # Microsoft Graph SDK for ObjC
 
 

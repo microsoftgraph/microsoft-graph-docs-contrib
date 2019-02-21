@@ -254,17 +254,30 @@
           - name: Use schema extensions (example)
             href: extensibility-schema-groups.md
       - name: Use SDKs
-        href: sdks-overview.md
+        href: sdks/sdks-overview.md
         items:
-        - name: Use .net SDK
+        - name: .NET
           href: sdks/dotnet/Overview.md
-        - name: Use Java SDK
+          items:
+            - name: Components
+              href: sdks/dotnet/components.md
+            - name: Collections
+              href: sdks/dotnet/collections.md
+            - name: Errors
+              href: sdks/dotnet/errors.md
+            - name: Errors
+              href: sdks/dotnet/errors.md
+            - name: Headers
+              href: sdks/dotnet/headers.md
+            - name: FAQ
+              href: sdks/dotnet/FAQ.md
+        - name: Java
           href: sdks/java/Overview.md
-        - name: Use Javascript SDK
+        - name: Javascript
           href: sdks/javascript/Overview.md
-        - name: Use PHP SDK
+        - name: PHP
           href: sdks/php/Overview.md
-        - name: Use ObjectiveC SDK
+        - name: Objective C
           href: sdks/objectivec/Overview.md
       - name: Resources
         expanded: true

@@ -1,4 +1,4 @@
-# Overview for the Microsoft Graph SDK for Java
+# Microsoft Graph SDK for Java
 
 The Microsoft Graph SDK for Java is designed to look just like the Microsoft Graph APIs.
 
