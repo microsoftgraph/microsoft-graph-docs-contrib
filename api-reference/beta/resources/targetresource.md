@@ -1,6 +1,6 @@
 ---
-title: "targetResource resource type - Microsoft Graph API"
-description: "Defines the targetResource entity resource of the Microsoft Graph API which supports audit log reporting organization (tenant) activity."
+title: "targetResource resource complex type - Microsoft Graph API"
+description: "Defines the targetResource entity resource complex type of the Microsoft Graph API which supports audit log reporting organization (tenant) activity."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "azure-ad"
@@ -8,7 +8,7 @@ ms.prod: "azure-ad"
 
 # targetResource resource type
 
-Indicates a collection of  target resource types associated with the audit activity. 
+Represents target resource types associated with audit activity. 
 
 
 ## Properties
@@ -17,7 +17,7 @@ Indicates a collection of  target resource types associated with the audit activ
 |:---------------|:--------|:----------|
 |id|String|Indicates the unique ID of the resource.|
 |displayName|String|Indicates the visible name defined for the resource. Typically specified when the resource is created.|
-|type|String|Describes the resource type.  Example values include `Application`, `Group`, `ServicePrincipal`, and `UserPrincipal`.|
+|type|String|Describes the resource type.  Example values include `Application`, `Group`, `ServicePrincipal`, and `User`.|
 |userPrincipalName|String|When **type** is set to `User`, this includes the user name that initiated the action; `null` for other types.|
 |groupType|String|When **type** is set to `Group`, this indicates the group type.|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. Property values depend on the operation **type**.|
