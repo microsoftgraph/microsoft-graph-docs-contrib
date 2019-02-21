@@ -61,6 +61,8 @@ In the request body, provide a JSON object with the following parameters.
 | requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
 | sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is just created (true).            |
 | roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
+| expirationDateTime | DateTime                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
+| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only
 
 ## Example
 
@@ -86,7 +88,9 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "write" ]
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
 
@@ -96,7 +100,7 @@ Here is an example of the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -109,16 +113,88 @@ Content-type: application/json
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
+      "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "write" ]
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
     }
   ]
 }
 ```
+### Partial Success Response
+
+When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others.
+In this case, the service returns a partial success response with an HTTP status code of 207.
+When partial success is returned, the response for each failed recipient will contain an `error` object with information about what went wrong and how to fix it.
+
+Here is an example of the partial response.  
+
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
+
+```json
+HTTP/1.1 207 Multi-Status
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "John Adams",
+          "id": "5D8CA5D0-FFF8-4A97-B0A6-8F5AEA339681"
+        }
+      },
+      "id": "1EFG7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "adams@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "error": {
+        "code":"notAllowed",
+        "message":"Account verification needed to unblock sending emails.",
+        "localizedMessage": "Kontobestätigung erforderlich, um das Senden von E-Mails zu entsperren.",
+        "fixItUrl":"http://g.live.com/8SESkydrive/VerifyAccount",
+        "innererror":{  
+          "code":"accountVerificationRequired" 
+        }
+      }
+    },
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "Ryan Gregg",
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
+        }
+      },
+      "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "ryan@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
+    }
+  ]
+}
+```
+### SendNotification errors
+Below are some additional errors that your app may encounter within the nested `innererror` objects when sending notification fails. 
+Apps are not required to handle these, but may if they choose.
+
+| Code                           | Description
+|:-------------------------------|:--------------------------------------------------------------------------------------
+| accountVerificationRequired    | Account verification is required to unblock sending notifications.
+| hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications.
+| exchangeInvalidUser            | Current user's mailbox was not found.
+| exchangeOutOfMailboxQuota      | Out of quota.
+| exchangeMaxRecipients          | Exceeded maximum number of recipients that can be sent notifications at the same time.
+
+Note: The service may add new error codes or stop returning old ones at any time.
 
 ## Remarks
 
