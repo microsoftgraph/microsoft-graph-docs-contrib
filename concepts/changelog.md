@@ -24,8 +24,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Change |beta and v1.0| Updated the **companyName** property on the [user](/graph/api/resources/user?view=graph-rest-v1.0) resource to be writeable.|
-| Changed | beta | The [targetResource](/graph/api/resources/targetresource?view=graph-rest-beta) type is now a complex type and reports property changes as a collection of [modifiedProperty](/graph/api/resources/user?view=graph-rest-beta) values. |
-| Deleted | beta | Because the [targetResource](/graph/api/resources/targetresource?view=graph-rest-beta) type is now a complex type, the following types are no longer supported and have been removed: **targetResourceDevice**, **targetResourceDirectory**, **targetResourceGroup**, **targetResourcePolicy**, **targetResourceRole**, **targetResourceServicePrincipal**, **targetResourceUser**, and **targetResourceOther**. |
+| Change | beta | The [targetResource](/graph/api/resources/targetresource?view=graph-rest-beta) type is now a complex type and reports property changes as a collection of [modifiedProperty](/graph/api/resources/user?view=graph-rest-beta) values. |
+| Deletion | beta | Because the [targetResource](/graph/api/resources/targetresource?view=graph-rest-beta) type is now a complex type, the following types are no longer supported and have been removed: **targetResourceDevice**, **targetResourceDirectory**, **targetResourceGroup**, **targetResourcePolicy**, **targetResourceRole**, **targetResourceServicePrincipal**, **targetResourceUser**, and **targetResourceOther**. |
 
 
 ### Education APIs
