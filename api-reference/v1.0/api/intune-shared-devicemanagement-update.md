@@ -13,7 +13,7 @@ ms.prod: "intune"
 Update the properties of a [deviceManagement](../resources/intune-shared-devicemanagement.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission&nbsp;type&nbsp;(by&nbsp;workflow) | Permissions (from most to least privileged) |
 |:---|:---|
