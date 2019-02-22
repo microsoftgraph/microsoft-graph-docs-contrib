@@ -93,7 +93,7 @@ Devices that are managed or pre-enrolled through Intune
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|Device category|
+|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
