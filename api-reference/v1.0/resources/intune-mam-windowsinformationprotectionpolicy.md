@@ -3,14 +3,15 @@ title: "windowsInformationProtectionPolicy resource type"
 description: "Policy for Windows information protection without MDM"
 author: "tfitzmac"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # windowsInformationProtectionPolicy resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Policy for Windows information protection without MDM
+
 
 Inherits from [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md)
 
@@ -116,7 +117,7 @@ Here is a JSON representation of the resource.
   "iconsVisible": true,
   "protectedApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",
@@ -126,7 +127,7 @@ Here is a JSON representation of the resource.
   ],
   "exemptApps": [
     {
-      "@odata.type": "microsoft.graph.windowsInformationProtectionApp",
+      "@odata.type": "microsoft.graph.windowsInformationProtectionStoreApp",
       "displayName": "String",
       "description": "String",
       "publisherName": "String",

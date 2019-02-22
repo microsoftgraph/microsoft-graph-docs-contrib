@@ -3,14 +3,15 @@ title: "organization resource type"
 description: "The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level."
 author: "tfitzmac"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # organization resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -27,6 +28,7 @@ The organization resource represents an instance of global settings and resource
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -44,20 +46,4 @@ Here is a JSON representation of the resource.
 ```
 
 
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-
-"Warning: Resource microsoft.graph.organization is defined in multiple files: /api-reference/v1.0/resources/intune_onboarding_organization.md, /api-reference/v1.0/resources/organization.md",
-
-"Warning: Schema type organization has a different BaseType value microsoft.graph.directoryObject than the documentation .",
-
-"Warning: Schema type organization has a different OpenType value False than the documentation True.",
-
-"Warning: Resource organization has multiple declarations with mismatched OpenType declarations."
-
-  ],
-
-}
--->
 
