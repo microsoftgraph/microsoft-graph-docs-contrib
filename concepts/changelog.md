@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## February 2019
 
+### Planner APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change          | beta          | Set the workloadName to userDetails for EntityType plannerUser. |
+
 ### OneNote
 
 | **Change type** | **Version**   | **Description**                          |
