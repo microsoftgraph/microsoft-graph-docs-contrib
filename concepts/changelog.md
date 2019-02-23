@@ -23,6 +23,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition |beta and v1.0| Add the **createdDateTime** property on [organization](/graph/api/resources/organization?view=graph-rest-v1.0).|
+|Addition | v1.0 | Added new resource type [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0).|
 |Change |beta and v1.0| Updated the **companyName** property on the [user](/graph/api/resources/user?view=graph-rest-v1.0) resource to be writeable.|
 
 ### Education APIs
