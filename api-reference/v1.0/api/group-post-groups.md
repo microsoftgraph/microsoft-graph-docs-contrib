@@ -1,6 +1,6 @@
 ---
-title: "Create group"
-description: "Use this API to create a new group as specified in the request body. You can create one of three types of groups:"
+title: "Create group - Microsoft Graph API"
+description: "Describes how to create a group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group, a dynamic group, or a security group."
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
@@ -46,12 +46,13 @@ The following table shows the properties of the [group](../resources/group.md) r
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 Group. Set this to **false** if creating dynamic or security group. Required. |
+| mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups. Set this to **true** if creating a dynamic or security group. Set this to **false** if creating an Office 365 group. Required. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups. Required. |
 | owners | string collection | This property represents the owners for the group at creation time. Optional. |
 | members | string collection | This property represents the members for the group at creation time. Optional. |
 
+> Note: Groups created using the Microsoft Azure portal always have **securityEnabled** and **mailEnabled** initially set to `true`.
 
 Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.
 
@@ -61,7 +62,6 @@ Specify the **groupTypes** property if you're creating an Office 365 or dynamic 
 |:--------------|:------------------------|
 | Office 365 (aka unified group)| "Unified" |
 | Dynamic | "DynamicMembership" |
-| Security | Do not set. |
 
 
 >**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  

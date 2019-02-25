@@ -1,6 +1,6 @@
 ---
-title: "group resource type"
-description: "Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a dynamic group, or a security group."
+title: "group resource type - Microsoft Graph API"
+description: "Describes the group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group, a dynamic group, or a security group."
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
@@ -108,7 +108,7 @@ This resource supports:
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is **true**. <br><br>Returned only on $select. |
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Default value is **false**. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on $select. Read-only.|
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports $filter.|
-|mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. <br><br>Returned by default.|
+|mailEnabled|Boolean|Specifies whether the group is mail-enabled. <br><br>Returned by default.|
 |mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. <br><br>Returned by default. Supports $filter.|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only. Supports $filter.|
 |onPremisesProvisioningErrors|[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection| Errors when using Microsoft synchronization product during provisioning. <br><br>Returned by default.|
@@ -117,7 +117,7 @@ This resource supports:
 |preferredDataLocation|String|The preferred data location for the group. For more information, see  [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Returned by default.|
 |proxyAddresses|String collection| Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required to filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports $filter. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/group-renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only.|
-|securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. <br><br>Returned by default. Supports $filter.|
+|securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports $filter.|
 |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group. <br><br>Returned only on $select. |
 |visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `private`, `public`, or `hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
 

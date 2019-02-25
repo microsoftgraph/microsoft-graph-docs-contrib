@@ -1,6 +1,6 @@
 ---
-title: "group resource type"
-description: "Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a team in Microsoft Teams, a dynamic group, or a security group."
+title: "group resource type - Microsoft Graph API"
+description: "Describes the group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group, a dynamic group, or a security group."
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
@@ -112,7 +112,7 @@ This resource supports:
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is **true**. <br><br>Returned only on $select. |
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`. <br><br>Returned only on $select. Read-only. |
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports $filter.|
-|mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group. <br><br>Returned by default.|
+|mailEnabled|Boolean|Specifies whether the group is mail-enabled. <br><br>Returned by default.|
 |mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. <br><br>Returned by default. Supports $filter.|
 |membershipRule|String|The rule that determines members for this group if the group is a dynamic group (groupTypes contains `DynamicMembership`). For more information about the syntax of the membership rule, see [Membership Rules syntax](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Returned by default. |
 |membershipRuleProcessingState|String|Indicates whether the dynamic membership processing is on or paused. Possible values are "On" or "Paused". <br><br>Returned by default. |
@@ -124,7 +124,7 @@ This resource supports:
 |preferredLanguage|String|The preferred language for an Office 365 group. Should follow ISO 639-1 Code; for example "en-US". <br><br>Returned by default. |
 |proxyAddresses|String collection| Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required for filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports $filter. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/grouplifecyclepolicy-renewgroup.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only.|
-|securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. <br><br>Returned by default. Supports $filter.|
+|securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports $filter.|
 |theme|String|Specifies an Office 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` or `Red`. <br><br>Returned by default. |
 |unseenConversationsCount|Int32|Count of conversations that have been delivered one or more new posts since the signed-in user's last visit to the group. This property is the same as **unseenCount**. <br><br>Returned only on $select.|
 |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as **unseenConversationsCount**.<br><br>Returned only on $select. |

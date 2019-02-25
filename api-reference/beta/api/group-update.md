@@ -1,6 +1,6 @@
 ---
-title: "Update group"
-description: "Update the properties of a group object."
+title: "Update group - Microsoft Graph API"
+description: "Describes how to update a group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group, a dynamic group, or a security group."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
@@ -47,12 +47,15 @@ In the request body, supply the values for relevant fields that should be update
 |description|String|An optional description for the group. |
 |displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
 |groupTypes|String collection|Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property.|
-|mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.|
+|mailEnabled|Boolean|Specifies whether the group is mail-enabled. |
 |mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.|
-|securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter..|
+|securityEnabled|Boolean|Specifies whether the group is a security group. Supports $filter..|
 |visibility|String|Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
 
 Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **group** instance.
+
+> Note: The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](https://docs.microsoft.com/en-us/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
+ 
 
 > **Note:**
 >
