@@ -13,7 +13,7 @@ Allows setting a flag in an item for the user to follow up on later.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time that the follow-up was finished.|
-|dueDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to be finished.|
+|dueDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to be finished. **NOTE**: in order to set due Date, you must specify also `startDateTime`, otherwise you will get `400 "InvalidRequest"`|
 |flagStatus|followupFlagStatus|The status for follow-up for an item. Possible values are `notFlagged`, `complete`, and `flagged`.|
 |startDateTime|**dateTimeTimeZone**|The date and time that the follow-up is to begin.|
 
