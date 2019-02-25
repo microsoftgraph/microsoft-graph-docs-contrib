@@ -12,8 +12,6 @@ ms.prod: "microsoft-teams"
 
 Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
->**Note:** If you're using application permissions, a known issue will occur. For details, see [known issues](/graph/known-issues).
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
