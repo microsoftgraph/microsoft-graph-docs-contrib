@@ -2,7 +2,7 @@
 title: "chat resource type"
 description: "A chat is a collection of chatMessages between 1 or more participants"
 author: "nkramer"
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
