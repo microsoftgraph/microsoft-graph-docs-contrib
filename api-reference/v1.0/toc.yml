@@ -431,6 +431,7 @@
           href: api/opentypeextension-get.md
     - name: Calendar
       href: resources/calendar.md
+      displayname: Outlook calendar
       items:
       - name: Event
         href: resources/event.md
@@ -1092,6 +1093,7 @@
             href: api/intune-apps-windowsuniversalappx-update.md
       - name: Company terms
         href: resources/intune-company-conceptual.md
+        displayName: Intune
         items:
         - name: Terms and conditions
           href: resources/intune-companyterms-termsandconditions.md
@@ -1134,6 +1136,7 @@
             href: api/intune-companyterms-termsandconditionsassignment-update.md
       - name: Corporate enrollment
         href: resources/intune-enrollment-conceptual.md
+        displayName: Intune
         items:
         - name: Imported windows autopilot device identity
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
@@ -1169,6 +1172,7 @@
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
       - name: Device configuration
         href: resources/intune-device-cfg-conceptual.md
+        displayName: Intune
         items:
         - name: Android compliance policy
           href: resources/intune-deviceconfig-androidcompliancepolicy.md
@@ -2041,6 +2045,7 @@
           href: resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md
       - name: Device management
         href: resources/intune-device-mgt-conceptual.md
+        displayName: Intune
         items:
         - name: Action state
           href: resources/intune-devices-actionstate.md
@@ -2093,8 +2098,6 @@
           href: resources/intune-devices-deviceactionresult.md
         - name: Device enrollment failure reason
           href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
-        - name: Device enrollment type
-          href: resources/intune-devices-deviceenrollmenttype.md
         - name: Device exchange access state summary
           href: resources/intune-devices-deviceexchangeaccessstatesummary.md
         - name: Device geolocation
@@ -2264,8 +2267,9 @@
           href: resources/intune-devices-windowsdeviceadaccount.md
         - name: Windows device Azure AD account
           href: resources/intune-devices-windowsdeviceazureadaccount.md
-      - name: Mobile app management
+      - name: Mobile app management (MAM)
         href: resources/intune-mam-conceptual.md
+        displayName: Intune
         items:
         - name: Android managed app protection
           href: resources/intune-mam-androidmanagedappprotection.md
@@ -2568,6 +2572,7 @@
           href: resources/intune-mam-windowsinformationprotectionstoreapp.md
       - name: Onboarding
         href: resources/intune-onboarding-conceptual.md
+        displayName: Intune
         items:
         - name: Device enrollment configuration
           href: resources/intune-onboarding-deviceenrollmentconfiguration.md
@@ -2736,8 +2741,9 @@
           href: resources/intune-onboarding-vpptokensyncstatus.md
         - name: Windows Hello for business PIN usage
           href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-      - name: Role-based access control
-        href: resources/intune-rbac-conceptual.md
+      - name: Role-based access control (RBAC)
+        href: /resources/intune-rbac-conceptual.md
+        displayName: Intune
         items:
         - name: Device and app management role assignment
           href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -2810,6 +2816,7 @@
           href: resources/intune-rbac-rolepermission.md
       - name: Shared resources
         href: resources/intune-shared-conceptual.md
+        displayName: Intune
         items:
         - name: All devices assignment target
           href: resources/intune-shared-alldevicesassignmenttarget.md
@@ -2841,6 +2848,8 @@
             href: api/intune-shared-devicecategory-delete.md
           - name: Update
             href: api/intune-shared-devicecategory-update.md
+        - name: Device enrollment type
+          href: resources/intune-shared-deviceenrollmenttype.md
         - name: Device management
           href: resources/intune-shared-devicemanagement.md
           items:
@@ -2890,6 +2899,7 @@
           href: resources/intune-shared-vpptokenaccounttype.md
       - name: Telecom expenses
         href: resources/intune-tem-conceptual.md
+        displayName: Intune
         items:
         - name: Telecom expense management partner
           href: resources/intune-tem-telecomexpensemanagementpartner.md
@@ -3709,6 +3719,7 @@
           href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
       href: resources/security-api-overview.md
+      displayname: Security API, Microsoft Intelligent Security Graph
       items:
       - name: Alerts
         href: resources/alert.md

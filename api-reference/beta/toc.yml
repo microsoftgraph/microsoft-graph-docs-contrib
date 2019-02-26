@@ -478,6 +478,7 @@
           href: api/opentypeextension-get.md
     - name: Calendar
       href: resources/calendar.md
+      displayname: Outlook calendar
       items:
       - name: Event
         href: resources/event.md
@@ -8018,6 +8019,7 @@
           href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
       href: resources/security-api-overview.md
+      displayname: Security API, Microsoft Intelligent Security Graph
       items:
       - name: Alerts
         href: resources/alert.md
