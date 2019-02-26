@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A team in Microsoft Teams is a collection of [channel](channel.md). 
+A team in Microsoft Teams is a collection of [channel](channel.md) objects. 
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
 Every team is associated with a [group](../resources/group.md).
