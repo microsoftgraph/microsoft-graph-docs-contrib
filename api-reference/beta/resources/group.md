@@ -215,11 +215,7 @@ The following is a JSON representation of the resource
 ```json
 {
   "accessType": "string",
-  "assignedLicenses": [
-    {
-      "@odata.type": "microsoft.graph.assignedLicense"
-    }
-  ],
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "allowExternalSenders": false,
   "autoSubscribeNewMembers": true,
   "createdDateTime": "String (timestamp)",
@@ -227,9 +223,7 @@ The following is a JSON representation of the resource
   "description": "string",
   "displayName": "string",
   "expirationDateTime": "String (timestamp)",
-  "groupTypes": [
-    "string"
-  ],
+  "groupTypes": ["string"],
   "id": "string (identifier)",
   "isFavorite": true,
   "isSubscribedByMail": true,
@@ -238,90 +232,32 @@ The following is a JSON representation of the resource
   "mailEnabled": true,
   "mailNickname": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.onPremisesProvisioningError"
-    }
-  ],
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "preferredDataLocation": "string",
-  "proxyAddresses": [
-    "string"
-  ],
+  "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
   "unseenConversationsCount": 1024,
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,
   "visibility": "string",
-  "acceptedSenders": [
-    {
-      "@odata.type": "microsoft.graph.directoryObject"
-    }
-  ],
-  "calendar": {
-    "@odata.type": "microsoft.graph.calendar"
-  },
-  "calendarView": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
-  "conversations": [
-    {
-      "@odata.type": "microsoft.graph.conversation"
-    }
-  ],
-  "createdOnBehalfOf": {
-    "@odata.type": "microsoft.graph.directoryObject"
-  },
-  "drive": {
-    "@odata.type": "microsoft.graph.drive"
-  },
-  "events": [
-    {
-      "@odata.type": "microsoft.graph.event"
-    }
-  ],
-  "memberOf": [
-    {
-      "@odata.type": "microsoft.graph.directoryObject"
-    }
-  ],
-  "members": [
-    {
-      "@odata.type": "microsoft.graph.directoryObject"
-    }
-  ],
-  "membersWithLicenseErrors": [
-    {
-      "@odata.type": "microsoft.graph.user"
-    }
-  ],
-  "owners": [
-    {
-      "@odata.type": "microsoft.graph.directoryObject"
-    }
-  ],
-  "photo": {
-    "@odata.type": "microsoft.graph.profilePhoto"
-  },
-  "rejectedSenders": [
-    {
-      "@odata.type": "microsoft.graph.directoryObject"
-    }
-  ],
-  "sites": [
-    {
-      "@odata.type": "microsoft.graph.site"
-    }
-  ],
-  "threads": [
-    {
-      "@odata.type": "microsoft.graph.conversationThread"
-    }
-  ],
+  "acceptedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "calendar": {"@odata.type": "microsoft.graph.calendar"},
+  "calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  "conversations": [{"@odata.type": "microsoft.graph.conversation"}],
+  "createdOnBehalfOf": {"@odata.type": "microsoft.graph.directoryObject"},
+  "drive": {"@odata.type": "microsoft.graph.drive"},
+  "events": [{"@odata.type": "microsoft.graph.event"}],
+  "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "members": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
+  "owners": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "rejectedSenders": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "sites": [{"@odata.type": "microsoft.graph.site"}],
+  "threads": [{"@odata.type": "microsoft.graph.conversationThread"}],
   "classification": "string",
   "hasMembersWithLicenseErrors": true,
   "membershipRule": "string",
