@@ -6,12 +6,11 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartLegend resource type
+# workbookChartLegend resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the legend in a chart.
-
 
 ## Methods
 
@@ -30,7 +29,7 @@ Represents the legend in a chart.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartLegendFormat](workbookchartlegendformat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
+|format|[workbookChartLegendFormat](workbookchartlegendformat.md)|Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.|
 
 ## JSON representation
 
@@ -40,7 +39,7 @@ Here is a JSON representation of the resource.
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
   "optionalProperties": [
-
+    "format"        
   ],
   "@odata.type": "microsoft.graph.workbookChartLegend"
 }-->

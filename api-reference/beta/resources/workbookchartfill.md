@@ -1,17 +1,16 @@
 ---
-title: "ChartFill resource type"
+title: "workbookChartFill resource type"
 description: "Represents the fill formatting for a chart element."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartFill resource type
+# workbookChartFill resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the fill formatting for a chart element.
-
 
 ## Methods
 

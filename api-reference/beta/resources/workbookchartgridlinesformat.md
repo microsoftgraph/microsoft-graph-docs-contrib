@@ -6,12 +6,11 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartGridlinesFormat resource type
+# workbookChartGridlinesFormat resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Encapsulates the format properties for chart gridlines.
-
 
 ## Methods
 None
@@ -31,7 +30,9 @@ Here is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
-  "optionalProperties": [],
+  "optionalProperties": [
+    "line"
+    ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookChartGridlinesFormat"
 }-->

@@ -151,7 +151,7 @@
           href: api/user-list-joinedteams.md
         - name: List member of
           href: api/user-list-memberof.md
-      - name: OfficeGraphInsights
+      - name: Insights
         href: resources/officegraphinsights.md
         items:
         - name: List trending

@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# RangeBorder resource type
+# workbookRangeBorder resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

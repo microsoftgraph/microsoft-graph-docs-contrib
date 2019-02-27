@@ -4,7 +4,7 @@ description: "Represents a cell icon."
 localization_priority: Normal
 ---
 
-# Icon resource type
+# workbookIcon resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

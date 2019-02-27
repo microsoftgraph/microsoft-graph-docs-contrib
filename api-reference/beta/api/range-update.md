@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 |formulasR1C1|Json|Represents the formula in R1C1-style notation.|
 |numberFormat|Json collection|Represents Excel's number format code for the given cell.|
 |rowHidden|boolean|Represents if all rows of the current range are hidden.|
-|values|Json collection|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
+|values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
 
 ## Response
 
@@ -64,7 +64,7 @@ Content-length: 169
 
 {
 "values" : [["Hello", "100"],["1/1/2016", null]],
-"formula" : [[null, null], [null, "=B1*2"]],
+"formulas" : [[null, null], [null, "=B1*2"]],
 "numberFormat" : [[null,null], ["m-ddd", null]]
 }
 ```

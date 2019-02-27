@@ -1,12 +1,11 @@
 ---
 title: "command resource type"
-description: "Represents data returned in JSON format"
+description: ""
 localization_priority: Normal
 ---
 
-# Json resource type
+# command resource type
 
-Represents data returned in JSON format
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

@@ -27,9 +27,9 @@ The audio routing group stores a private audio route between participants in a m
 | Property      | Type              | Description                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | id            | String            | Read-only. Server generated.                                         |
-| receivers     | Guid collection | List of receiving participant ids.                                   |
+| receivers     | String collection | List of receiving participant ids.                                   |
 | routingMode   | String            | Routing group mode.  Possible values are: `oneToOne`, `multicast`.   |
-| sources       | Guid collection | List of source participant ids.                                      |
+| sources       | String collection | List of source participant ids.                                      |
 
 > **Note:** Routing mode determines the restrictions on the sources and receivers. Only the following routing groups are supported.
 > - `oneToOne` - sources and receivers have only one participant each.
@@ -54,9 +54,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "receivers": [ "Guid" ],
+  "receivers": [ "String" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "Guid" ]
+  "sources": [ "String" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

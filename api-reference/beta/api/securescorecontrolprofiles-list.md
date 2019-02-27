@@ -8,7 +8,7 @@ localization_priority: Normal
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) object.
+Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) objects for a tenant
 
 ## Permissions
 

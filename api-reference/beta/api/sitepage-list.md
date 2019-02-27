@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the collection of [sitePage](../resources/sitepage.md) from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination).
+Get the collection of [sitePage][] objects from the site pages [list][] in a site [site][]. All pages in the site are returned (with pagination).
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -68,7 +68,7 @@ Content-type: application/json
 {
     "value": [
         {
-            "id": "id.value",
+            "id": "5",
             "eTag": "{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3}",
             "lastModifiedDateTime": "2018-08-15T19:20:20Z",
             "name": "EventInstructions.aspx",
@@ -141,8 +141,8 @@ Content-type: application/json
             ]
         },
         {
-            "id": "id.value",
-            "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
+            "id": "2",
+            "eTag": "{75bc70e2-6587-45be-8493-c99a956b2e05}",
             "createdDateTime": "2016-12-06T20:04:40Z",
             "lastModifiedDateTime": "2016-12-06T20:05:09Z",
             "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",

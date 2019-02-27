@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartTitleFormat resource type
+# workbookChartTitleFormat resource type
 
 Encapsulates the format properties for the chart title.
 
@@ -31,7 +31,10 @@ Here is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
-  "optionalProperties": [],
+  "optionalProperties": [
+    "fill",
+    "font"
+    ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookChartTitleFormat"
 }-->

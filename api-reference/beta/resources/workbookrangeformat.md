@@ -6,7 +6,7 @@ author: "lumine2008"
 ms.prod: "excel"
 ---
 
-# RangeFormat resource type
+# workbookRangeFormat resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

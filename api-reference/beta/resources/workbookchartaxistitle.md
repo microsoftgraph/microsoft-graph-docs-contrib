@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartAxisTitle resource type
+# workbookChartAxisTitle resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,9 @@ Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
   "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
+  "optionalProperties": [
+    "format"
+    ],
   "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 }-->
 

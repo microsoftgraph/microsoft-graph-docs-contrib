@@ -4,7 +4,7 @@ description: "Represents the filtering criteria applied to a column."
 localization_priority: Normal
 ---
 
-# FilterCriteria resource type
+# workbookFilterCriteria resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

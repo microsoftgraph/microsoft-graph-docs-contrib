@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartSeriesFormat resource type
+# workbookChartSeriesFormat resource type
 
 encapsulates the format properties for the chart series
 

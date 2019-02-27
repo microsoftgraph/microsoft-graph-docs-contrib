@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartDataLabelFormat resource type
+# workbookChartDataLabelFormat resource type
 
 Encapsulates the format properties for the chart data labels.
 
@@ -30,7 +30,10 @@ Here is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
-  "optionalProperties": [],
+  "optionalProperties": [
+    "fill",
+    "font"
+    ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookChartDataLabelFormat"
 }-->

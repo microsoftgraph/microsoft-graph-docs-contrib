@@ -321,7 +321,7 @@ PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/S
 Content-type: application/json
 
 {
-  "underline": "underline-value",
+  "underline": "Single",
   "color": "#FFFFFF",
   "size": 26
 }
@@ -343,7 +343,7 @@ Content-type: application/json
     "italic": false,
     "name": "Calibri",
     "size": 26,
-    "underline": "SingleAccountant"
+    "underline": "Single"
 }
 ```
 

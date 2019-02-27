@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartAxis resource type
+# workbookChartAxis resource type
 
 Represents a single axis in a chart.
 
@@ -41,7 +41,12 @@ Here is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
-  "optionalProperties": [],
+  "optionalProperties": [
+    "title",
+    "minorGridlines",
+    "majorGridlines",
+    "format"
+   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.workbookChartAxis"
 }-->

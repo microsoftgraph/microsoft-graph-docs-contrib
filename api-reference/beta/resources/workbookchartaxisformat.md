@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartAxisFormat resource type
+# workbookChartAxisFormat resource type
 
 Encapsulates the format properties for the chart axis.
 

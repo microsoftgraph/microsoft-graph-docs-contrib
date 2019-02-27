@@ -40,13 +40,6 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## Request body
 
-```json
-{
-  "userId":"{id}",
-  "type":"Group"
-}
-```
-
 The request body requires the following parameters:
 
 | Parameter    | Type |Description|

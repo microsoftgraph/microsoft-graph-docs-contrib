@@ -41,6 +41,6 @@
       "@odata.nextLink",
       "@odata.deltaLink"
     ],
-    "caseSensativeHeaders": false
+    "caseSensitiveHeaders": false
   }
 }

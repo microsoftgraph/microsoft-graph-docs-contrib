@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartSeries resource type
+# workbookChartSeries resource type
 
 Represents a series in a chart.
 

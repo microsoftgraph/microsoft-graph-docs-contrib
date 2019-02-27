@@ -1,12 +1,12 @@
 ---
-title: "ChartFont resource type"
+title: "workbookChartFont resource type"
 description: "This object represents the font attributes (font name, font size, color, etc.) for a chart object."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 ---
 
-# ChartFont resource type
+# workbookChartFont resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

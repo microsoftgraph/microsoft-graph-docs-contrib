@@ -72,7 +72,7 @@ Content-type: application/json
     "value": [
         {
             "name": "EQUALS",
-            "arity": "Unary",
+            "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
                 "String",

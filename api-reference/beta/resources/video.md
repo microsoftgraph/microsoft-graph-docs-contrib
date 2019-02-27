@@ -33,7 +33,6 @@ Here is a JSON representation of the resource
   "bitrate": 39101896,
   "duration": 8053,
   "fourCC": "H264",
-  "frameRate": 239.877,
   "height": 1280,
   "width": 720,
   "framerate": 2.75

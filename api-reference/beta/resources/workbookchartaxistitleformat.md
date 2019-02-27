@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartAxisTitleFormat resource type
+# workbookChartAxisTitleFormat resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](workbookchartfont.md)|Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.|
+|font|[workbookChartFont](workbookchartfont.md)|Represents the font attributes, such as font name, font size, color, etc. of chart axis title object. Read-only.|
 
 ## JSON representation
 
@@ -30,7 +30,9 @@ Here is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
-  "optionalProperties": [],
+  "optionalProperties": [
+    "font"
+    ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookChartAxisTitleFormat"
 }-->

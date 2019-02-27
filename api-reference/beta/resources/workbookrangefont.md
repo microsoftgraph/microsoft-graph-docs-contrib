@@ -6,7 +6,7 @@ author: "lumine2008"
 ms.prod: "excel"
 ---
 
-# RangeFont resource type
+# workbookRangeFont resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ Here is a JSON representation of the resource.
   "italic": true,
   "name": "string",
   "size": 1024,
-  "underline": "None | Single | Double | SingleAccountant | DoubleAccountant"
+  "underline": "string"
 }
 
 ```

@@ -4,7 +4,7 @@ description: "Manages the filtering of a table's column."
 localization_priority: Normal
 ---
 
-# Filter resource type
+# workbookFilter resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

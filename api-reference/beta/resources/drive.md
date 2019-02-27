@@ -88,7 +88,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "system": {
     "@odata.type": "microsoft.graph.systemFacet"
   },
-  "webUrl": "url",
+  "webUrl": "string",
   "sharepointIds": {
     "@odata.type": "microsoft.graph.sharepointIds"
   }

@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartTitle resource type
+# workbookChartTitle resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,7 +17,7 @@ Represents a chart title object of a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](workbookcharttitle.md) |Read properties and relationships of chartTitle object.|
+|[Get ChartTitle](../api/charttitle-get.md) | [workbookChartTitle](workbookcharttitle.md) |Read properties and relationships of chartTitle object.|
 |[Update](../api/charttitle-update.md) | [workbookChartTitle](workbookcharttitle.md)	|Update ChartTitle object. |
 
 ## Properties

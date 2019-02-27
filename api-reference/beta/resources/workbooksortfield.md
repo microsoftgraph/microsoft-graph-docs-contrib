@@ -4,7 +4,7 @@ description: "Represents a condition in a sorting operation."
 localization_priority: Normal
 ---
 
-# SortField resource type
+# workbookSortField resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

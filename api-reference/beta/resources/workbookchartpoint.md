@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartPoint resource type
+# workbookChartPoint resource type
 
 Represents a point of a series in a chart.
 
@@ -36,7 +36,9 @@ Here is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
-  "optionalProperties": [],
+  "optionalProperties": [
+    "format"
+    ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookChartPoint"
@@ -45,7 +47,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "value": "string",
-  "id": "string"
+  "id": "string",
+  "format": {"@odata.type": "microsoft.graph.workbookChartPointFormat"}
 }
 
 ```

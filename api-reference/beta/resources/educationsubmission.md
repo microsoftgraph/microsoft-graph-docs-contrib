@@ -92,7 +92,7 @@ The following is a JSON representation of the resource.
   "releasedBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
-  "releasedDateTime": "2019-02-07T21:52:48.300Z"
+  "releasedDateTime": "String (timestamp)"
 }
 ```
 
