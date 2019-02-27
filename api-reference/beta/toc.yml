@@ -7808,6 +7808,27 @@
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
+      - name: TI indicators
+        href: resources/tiindicator.md
+        items:
+        - name: List ti indicators
+          href: api/tiindicators-list.md
+        - name: Get ti indicator
+          href: api/tiindicator-get.md
+        - name: Update ti indicator
+          href: api/tiindicator-update.md
+        - name: Update multiple ti indicators
+          href: api/tiindicator-updatetiindicators.md
+        - name: Create ti indicator
+          href: api/tiindicators-post.md
+        - name: Submit multiple ti indicators
+          href: api/tiindicator-submittiindicators.md
+        - name: Delete ti indicator
+          href: api/tiindicator-delete.md
+        - name: Delete multiple ti indicators
+          href: api/tiindicator-deletetiindicators.md
+        - name: Delete multiple ti indicators by external id
+          href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
