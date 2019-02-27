@@ -7796,6 +7796,8 @@
           href: api/alert-get.md
         - name: Update alert
           href: api/alert-update.md
+        - name: Update multiple alerts
+          href: api/alert-updatealerts.md
       - name: Secure scores
         href: resources/securescores.md
         items:
