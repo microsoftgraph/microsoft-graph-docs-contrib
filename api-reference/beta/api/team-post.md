@@ -114,7 +114,7 @@ The following is a request with a full payload. The client can override values i
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
     "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
@@ -289,7 +289,11 @@ Content-Location: /teams/{teamId}
 
 ## See also
 
+- [Available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates)
+- [Getting started with Retail Teams templates](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Getting started with Healthcare Teams templates](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Creating a group with a team](/graph/teams-create-group-and-team)
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
