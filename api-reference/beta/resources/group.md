@@ -197,7 +197,6 @@ The following is a JSON representation of the resource
     "settings",
     "sites",
     "threads",
-
     "allowExternalSenders",
     "assignedLicenses",
     "autoSubscribeNewMembers",

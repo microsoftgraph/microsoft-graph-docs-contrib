@@ -4,7 +4,7 @@ description: "A section in a OneNote notebook. Sections can contain pages."
 localization_priority: Normal
 ---
 
-# section resource type
+# onenoteSection resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

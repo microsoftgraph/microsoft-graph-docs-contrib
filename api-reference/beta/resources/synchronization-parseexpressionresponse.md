@@ -8,7 +8,7 @@ localization_priority: Normal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the response from the [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action.
+Represents the response from the [parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action.
 
 ## Properties
 | Property	   | Type	|Description|

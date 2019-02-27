@@ -83,7 +83,7 @@ The following is a JSON representation of the resource.
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
-  "webUrl": "https://...longUrl..."
+  "webUrl": "String"
 }
 
 ```

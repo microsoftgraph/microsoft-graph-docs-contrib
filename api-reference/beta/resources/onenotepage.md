@@ -4,7 +4,7 @@ description: "A page in a OneNote notebook."
 localization_priority: Normal
 ---
 
-# page resource type
+# onenotePage resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -76,9 +76,9 @@ Here is a JSON representation of the resource
   "tags": [
     "string"
   ],
-  "appRoles": {
+  "appRoles": [{
     "@odata.type": "microsoft.graph.appRole"
-  }
+  }]
 }
 
 ```

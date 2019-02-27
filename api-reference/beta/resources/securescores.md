@@ -4,7 +4,7 @@ description: "top=n, where n = the number of days of data that you want to retri
 localization_priority: Normal
 ---
 
-# secureScores resource type
+# secureScore resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

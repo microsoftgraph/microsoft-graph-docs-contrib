@@ -42,7 +42,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "resource"
   ],
   "@odata.type": "microsoft.graph.usedInsight"
 }-->

@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "security"
 ---
 
-# riskyUsers resource type
+# riskyUser resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

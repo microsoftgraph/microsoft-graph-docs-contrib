@@ -18,9 +18,6 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.resourceReference"
 }-->

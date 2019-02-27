@@ -11,8 +11,8 @@ localization_priority: Normal
 | Property           | Type   |
 | :----------------- | :----- |
 | audioVideo         | Int64  |
-| dialInOut3rdParty  | Int64  |
-| dialInOutMicrosoft | Int64  |
+| dialInMicrosoft    | Int64  |
+| dialOutMicrosoft   | Int64  |
 | reportRefreshDate  | Date   |
 | reportDate         | Date   |
 | reportPeriod       | String |
@@ -33,8 +33,6 @@ The following is a JSON representation of the resource.
   "dialOutMicrosoft": 1024,
   "reportRefreshDate": "Date",
   "reportDate": "Date",
-  "reportPeriod": "String",
-  "dialInOut3rdParty": 12356,
-  "dialInOutMicrosoft": 12356
+  "reportPeriod": "String"
 }
 ```

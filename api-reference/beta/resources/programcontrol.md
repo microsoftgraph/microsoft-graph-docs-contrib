@@ -73,7 +73,7 @@ Here is a JSON representation of the resource.
  "displayName": "string",
  "status": "string",
  "createdDateTime": "string (timestamp)",
- "owner": "microsoft.graph.userIdentity",
+ "owner": {"@odata.type":"microsoft.graph.userIdentity"},
  "resource":{"@odata.type":"microsoft.graph.programResource"}
 }
 

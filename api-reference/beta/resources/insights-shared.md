@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "insights"
 ---
 
-# shared resource type
+# sharedInsight resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

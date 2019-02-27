@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.prod: "insights"
 ---
 
-# insights resource type
+# officeGraphInsights resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ Each insight is returned with a `resourceVisualization` and `resourceReference` 
 | ------------- |---------------| -------------|
 | trending    	| [trending](insights-trending.md) collection		| Calculated relationship identifying trending documents. Trending documents can be stored in OneDrive or in SharePoint sites.	 |
 | used    	| [usedInsight](insights-used.md) collection		| Calculated relationship identifying documents viewed and modified by a user. Includes documents the user used in OneDrive for Business, SharePoint, opened as email attachments, and as link attachments from sources like Box, DropBox and Google Drive.	 |
-| shared    	| [shared](insights-shared.md) collection		| Calculated relationship identifying documents shared with a user. Documents can be shared as email attachments or as OneDrive for Business links sent in emails.	 |
+| shared    	| [sharedInsight](insights-shared.md) collection		| Calculated relationship identifying documents shared with a user. Documents can be shared as email attachments or as OneDrive for Business links sent in emails.	 |
 
 ## JSON representation
 
@@ -34,9 +34,9 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
+    "trending",
+    "used",
+    "shared"
   ],
   "@odata.type": "microsoft.graph.officeGraphInsights"
 }-->
