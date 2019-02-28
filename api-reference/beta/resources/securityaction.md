@@ -19,7 +19,7 @@ PROVIDE DESCRIPTION HERE
 | [Get securityAction](../api/securityaction-get.md) | [securityAction](securityaction.md) | Read properties and relationships of securityAction object. |
 | [Create securityAction](../api/securityactions-post.md) | [securityAction](securityaction.md) | Create a new securityAction by posting to the securityActions collection. |
 | [List securityActions](../api/securityactions-list.md) | [securityAction](securityaction.md) collection | Get a securityAction object collection. |
-|[Cancelsecurityaction](../api/securityaction-cancelsecurityaction.md)|None|Cancel a security operation.|
+|[Cancel securityAction](../api/securityaction-cancelsecurityaction.md)|None|Cancel a security operation.|
 
 ## Properties
 
