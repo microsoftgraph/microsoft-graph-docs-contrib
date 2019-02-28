@@ -59,16 +59,21 @@ POST https://graph.microsoft.com/beta/security/tiIndicators
 Content-type: application/json
 
 {
-  "tiIndicator": {
-    "action": "action-value",
-    "activityGroupNames": [
-      "activityGroupNames-value"
-    ],
-    "additionalInformation": "additionalInformation-value",
-    "azureTenantId": "azureTenantId-value",
-    "confidence": 99,
-    "description": "description-value"
-  }
+  "action": "alert",
+  "activityGroupNames": [],
+  "confidence": 0,
+  "description": "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator.",
+  "expirationDateTime": "2019-03-01T21:43:37.5031462+00:00",
+  "externalId": "Test--8586509942679764298MS501",
+  "fileHashType": "sha256",
+  "fileHashValue": "aa64428647b57bf51524d1756b2ed746e5a3f31b67cf7fe5b5d8a9daf07ca313",
+  "killChain": [],
+  "malwareFamilyNames": [],
+  "severity": 0,
+  "tags": [],
+  "targetProduct": "Azure Sentinel",
+  "threatType": "WatchList",
+  "tlpLevel": "green"
 }
 ```
 
