@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Create event
 
-Use this API to create a new event in the default or the specified calendar.
+Use this API to create a new event in the default or specified calendar.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
