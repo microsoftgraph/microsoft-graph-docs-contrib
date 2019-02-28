@@ -7792,11 +7792,11 @@
         items:
         - name: Create security action
           href: api/securityactions-post.md
-        - name: Get action
+        - name: Get security action
           href: api/securityaction-get.md
-        - name: List actions
+        - name: List security actions
           href: api/securityactions-list.md
-        - name: Cancel an action
+        - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
       - name: Alerts
         href: resources/alert.md
