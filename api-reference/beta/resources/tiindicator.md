@@ -10,7 +10,8 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Threat Indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, then you often wish to use these indicators in various security tools for matching with log data. The Graph Security tiIndicators entity allows you to upload your threat indicators to Microsoft security tools for the actions of Allow, Block, or Alert.</br>
+Threat Indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, then you often wish to use these indicators in various security tools for matching with log data. The Graph Security tiIndicators entity allows you to upload your threat indicators to Microsoft security tools for the actions of Allow, Block, or Alert.
+
 Threat indicators uploaded via tiIndicators will be used in conjunction with Microsoft threat intelligence to provide a customized security solution for your organization. When using the tiIndicators entity you specify the Microsoft security solution you wish to utilize the indicators via the targetProduct property and you specify the action (allow, block, or alert) to which the security solution should apply the indicators via the action property.
 
 ## Methods
