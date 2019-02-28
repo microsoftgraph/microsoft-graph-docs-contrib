@@ -80,12 +80,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition | Beta | Added the **order** property to [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) |
 |Deletion | Beta | Removed the following complex types: <br> **attendeeAvailability** <br> **locationConstraint** <br> **meetingTimeSuggestionsResult** <br>**timeConstraint** |
 
-### Planner APIs
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Change          | beta          | Set the workloadName to userDetails for EntityType plannerUser. |
-
 
 ## January 2019
 
