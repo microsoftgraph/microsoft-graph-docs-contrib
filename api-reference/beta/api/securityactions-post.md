@@ -59,11 +59,18 @@ POST https://graph.microsoft.com/beta/security/securityActions
 Content-type: application/json
 
 {
-    "name": "blockIp",
-    "vendorInformation" : {"vendor": "Palo Alto Network" },
-    "parameters" : [
-      {"name": "IP", "value":"1.2.3.4" }
-    ]
+  "name": "BlockIp",
+  "actionReason": "Test",
+  "parameters": [
+    {
+      "name": "IP",
+      "value": "1.2.3.4"
+    }
+  ],
+  "vendorInformation": {
+    "provider": "Windows Defender ATP",
+    "vendor": "Microsoft"
+  }
 }
 ```
 
@@ -90,9 +97,19 @@ Content-type: application/json
     "createdDateTime": "2019-01-10 12:23:23.33333",
     "lastActionDateTime": "2019-01-10 12:23:23.33333",
     "name": "blockIp",
-    "vendorInformation" : {"vendor": "Palo Alto Network" },
-    "parameters" : [
-      {"name": "IP", "value":"1.2.3.4" }
+    "actionReason": "Test",
+    "errorInfo": null,
+    "vendorInformation": {
+        "provider": "Windows Defender ATP",
+        "providerVersion": null,
+        "subProvider": null,
+        "vendor": "Microsoft"
+    },
+    "parameters": [
+        {
+            "name": "IP",
+            "value": "1.2.3.4"
+        }
     ]
 }
 ```
