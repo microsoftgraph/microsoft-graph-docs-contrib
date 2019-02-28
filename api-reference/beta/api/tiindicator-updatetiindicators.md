@@ -38,11 +38,11 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## Request body
 
-In the request body, provide a JSON object with the following parameters.
+In the request body, provide a JSON object with the following parameters.For details regarding properties that can be updated, refer to the [update tiIndicator](tiindicator-update.md) resource.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|value|tiIndicator collection| Collection of tiIndicators to update.|
+|value|tiIndicator collection| Collection of tiIndicators to update.Each entity must have id and other editable properties to be updated.|
 
 ## Response
 
@@ -59,7 +59,6 @@ The following is an example of the request.
   "blockType": "request",
   "name": "tiindicator_updatetiindicators"
 }-->
-
 ```http
 POST https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators
 Content-type: application/json
@@ -72,34 +71,12 @@ Content-type: application/json
         "activityGroupNames-value"
       ],
       "additionalInformation": "additionalInformation-value",
-      "azureTenantId": "azureTenantId-value",
       "confidence": 99,
       "description": "description-value",
       "diamondModel": "diamondModel-value",
-      "domainName": "domainName-value",
-      "emailEncoding": "emailEncoding-value",
-      "emailLanguage": "emailLanguage-value",
-      "emailRecipient": "emailRecipient-value",
-      "emailSenderAddress": "emailSenderAddress-value",
-      "emailSenderName": "emailSenderName-value",
-      "emailSourceDomain": "emailSourceDomain-value",
-      "emailSourceIpAddress": "emailSourceIpAddress-value",
-      "emailSubject": "emailSubject-value",
-      "emailXMailer": "emailXMailer-value",
       "expirationDateTime": "datetime-value",
       "externalId": "externalId-value",
-      "fileCompileDateTime": "datetime-value",
-      "fileCreatedDateTime": "datetime-value",
-      "fileHashType": "fileHashType-value",
-      "fileHashValue": "fileHashValue-value",
-      "fileMutexName": "fileMutexName-value",
-      "fileName": "fileName-value",
-      "filePacker": "filePacker-value",
-      "filePath": "filePath-value",
-      "fileSize": 99,
-      "fileType": "fileType-value",
       "id": "id-value",
-      "ingestedDateTime": "datetime-value",
       "isActive": true,
       "killChain": [
         "killChain-value"
@@ -109,31 +86,12 @@ Content-type: application/json
       "malwareFamilyNames": [
         "malwareFamilyNames-value"
       ],
-      "networkCidrBlock": "networkCidrBlock-value",
-      "networkDestinationAsn": 99,
-      "networkDestinationCidrBlock": "networkDestinationCidrBlock-value",
-      "networkDestinationIPv4": "networkDestinationIPv4-value",
-      "networkDestinationIPv6": "networkDestinationIPv6-value",
-      "networkDestinationPort": 99,
-      "networkIPv4": "networkIPv4-value",
-      "networkIPv6": "networkIPv6-value",
-      "networkPort": 99,
-      "networkProtocol": 99,
-      "networkSourceAsn": 99,
-      "networkSourceCidrBlock": "networkSourceCidrBlock-value",
-      "networkSourceIPv4": "networkSourceIPv4-value",
-      "networkSourceIPv6": "networkSourceIPv6-value",
-      "networkSourcePort": 99,
       "passiveOnly": true,
-      "severity": 99,
+      "severity": 5,
       "tags": [
         "tags-value"
       ],
-      "targetProduct": "targetProduct-value",
-      "threatType": "threatType-value",
-      "tlpLevel": "tlpLevel-value",
-      "url": "url-value",
-      "userAgent": "userAgent-value"
+      "tlpLevel": "tlpLevel-value"
     }
   ]
 }

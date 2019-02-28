@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|value|String collection| Collection of `externalId`s of tiIndicators to delete. |
+|value|String collection| Collection of `externalId`s of tiIndicators to be deleted. |
 
 ## Response
 

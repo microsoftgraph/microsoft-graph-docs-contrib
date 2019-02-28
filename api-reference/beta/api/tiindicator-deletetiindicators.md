@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|value|String collection| Collection of tiIndicator `id`s to delete. |
+|value|String collection| Collection of tiIndicator `id`s to be deleted. |
 
 ## Response
 
@@ -66,8 +66,8 @@ Content-type: application/json
 
 {
   "value": [
-    "id-1",
-    "id-2"
+    "id-value1",
+    "id-value2"
   ]
 }
 ```

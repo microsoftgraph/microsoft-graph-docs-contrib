@@ -7787,6 +7787,17 @@
       href: resources/security-api-overview.md
       displayname: Security API, Microsoft Intelligent Security Graph
       items:
+      - name: Actions
+        href: resources/securityaction.md
+        items:
+        - name: Create security action
+          href: api/securityactions-post.md
+        - name: Get action
+          href: api/securityaction-get.md
+        - name: List actions
+          href: api/securityactions-list.md
+        - name: Cancel an action
+          href: api/securityaction-cancelsecurityaction.md
       - name: Alerts
         href: resources/alert.md
         items:

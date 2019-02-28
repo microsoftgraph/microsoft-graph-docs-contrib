@@ -40,7 +40,7 @@ Threat indicators uploaded via tiIndicators will be used in conjunction with Mic
 |diamondModel|string|The area of the Diamond Model in which this indicator exists. Possible values are: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| DateTime string indicating when the Indicator expires. All indicators must have an expiration date to avoid stale indicators persisting in the system. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. **Required.**|
 |externalId|String| An identification number that ties the indicator back to the indicator provider’s system (e.g. a foreign key). |
-|id|String|Stamped by the system when the indicator is ingested. Generated GUID/unique identifier. Read-only.|
+|id|String|Created by the system when the indicator is ingested. Generated GUID/unique identifier. Read-only.|
 |ingestedDateTime|DateTimeOffset| Stamped by the system when the indicator is ingested. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |isActive|Boolean| Used to deactivate indicators within system. By default, any indicator submitted is set as active. However, providers may submit existing indicators with this set to ‘False’ to deactivate indicators in the system.|
 |killChain|String collection|A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See ‘killChain values’ below for exact values. |

@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.  Each 
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|value|[alert](../resources/alert.md) collection| Collection of alerts to update. |
+|value|[alert](../resources/alert.md) collection| Collection of alerts to update. Each entity must have id, vendorInformation and other editable properties to be updated.|
 
 ## Response
 
