@@ -13,18 +13,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## February 2019
 
-### Planner APIs
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Change          | beta          | Set the workloadName to userDetails for EntityType plannerUser. |
-
-### OneNote
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition        | beta and v1.0 | Added the [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) method. |
-
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
@@ -72,6 +60,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion |beta| Removed the POST /teams/{id}/channels/{id}/chatThreads API. Use [Create a message in a channel](/graph/api/channel-post-chatmessage?view=graph-rest-beta) instead. |
 |Addition |beta | Added support for application permissions to the [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) resource.|
 
+### OneNote
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta and v1.0 | Added the [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0) method. |
+
 ### Outlook calendar
 
 | **Change type** | **Version**   | **Description**                          |
@@ -85,6 +79,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition | Beta | New enumerations: <br> **addressType** <br> **availabilityStatus** |
 |Addition | Beta | Added the **order** property to [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta) |
 |Deletion | Beta | Removed the following complex types: <br> **attendeeAvailability** <br> **locationConstraint** <br> **meetingTimeSuggestionsResult** <br>**timeConstraint** |
+
+### Planner APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change          | beta          | Set the workloadName to userDetails for EntityType plannerUser. |
 
 
 ## January 2019
