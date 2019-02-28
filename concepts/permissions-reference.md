@@ -949,10 +949,10 @@ Sites permissions are valid only on work or school accounts.
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | Read user tasks | Allows the app to read user tasks. | No | Yes |
-| _Tasks.Read.Shared_ | Read user and shared tasks | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No | No |
-| _Tasks.ReadWrite_ |    Create, read, update and delete user tasks and containers | Allows the app to create, read, update and delete tasks and containers (and tasks in them) that are assigned to or shared with the signed-in user.| No | Yes |
-| _Tasks.ReadWrite.Shared_ | Read and write user and shared tasks | Allows the app to create, read, update, and delete tasks a user has permissions to, including their own and shared tasks. | No | No |
+| _Tasks.Read_ | Read user tasks (preview) | Allows the app to read user tasks. | No | Yes |
+| _Tasks.Read.Shared_ | Read user and shared tasks (preview) | Allows the app to read tasks a user has permissions to access, including their own and shared tasks. | No | No |
+| _Tasks.ReadWrite_ | Create, read, update and delete user tasks and containers (preview) | Allows the app to create, read, update and delete tasks and containers (and tasks in them) that are assigned to or shared with the signed-in user.| No | Yes |
+| _Tasks.ReadWrite.Shared_ | Read and write user and shared tasks (preview) | Allows the app to create, read, update, and delete tasks a user has permissions to, including their own and shared tasks. | No | No |
 
 #### Application permissions
 
