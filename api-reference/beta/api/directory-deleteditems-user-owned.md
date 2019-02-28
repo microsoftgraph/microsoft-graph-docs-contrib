@@ -59,7 +59,7 @@ Successful requests return `200 OK` response codes; the response object includes
 Here is an example of the request.
 
 ``` http
-POST https://graph.microsoft.com/v1.0/directory/deletedItems/getUserOwnedObjects
+POST https://graph.microsoft.com/beta/directory/deletedItems/getUserOwnedObjects
 Content-type: application/json
 
 {
