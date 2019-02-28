@@ -1,6 +1,6 @@
 ---
 title: "tiIndicator resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Threat Indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, then you often wish to use these indicators in various security tools for matching with log data. The Graph Security tiIndicators entity allows you to upload your threat indicators to Microsoft security tools for the actions of Allow, Block, or Alert."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
