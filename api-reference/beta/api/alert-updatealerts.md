@@ -1,6 +1,6 @@
 ---
 title: "alert: updateAlerts"
-description: "Used to update multiple alerts in one request instead of multiple requests."
+description: "Update multiple alerts in one request instead of multiple requests."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to update multiple alerts in one request instead of multiple requests.
+Update multiple alerts in one request instead of multiple requests.
 
 ## Permissions
 
@@ -38,11 +38,11 @@ POST /security/alerts/updateAlerts
 
 ## Request body
 
-In the request body, provide a JSON object with the following parameters.  Each entity must have id and vendorInformation. For details regarding properties that can be updated, refer to the [update alert](alert-update.md) resource.
+In the request body, provide a JSON object with the following parameters. Each entity must have **id** and **vendorInformation** properties. For details about properties that can be updated, see [update alert](alert-update.md).
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|value|[alert](../resources/alert.md) collection| Collection of alerts to update. Each entity must have id, vendorInformation and other editable properties to be updated.|
+|value|[alert](../resources/alert.md) collection| Collection of alerts to update. Each entity must have **id**, **vendorInformation**, and other editable properties to be updated.|
 
 ## Response
 
@@ -50,7 +50,7 @@ If successful, this method returns `200, OK` response code and [alert](../resour
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 

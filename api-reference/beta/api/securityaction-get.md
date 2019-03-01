@@ -1,16 +1,16 @@
 ---
-title: "Get securityAction"
+title: "Get security action"
 description: "Retrieve the properties and relationships of securityAction object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Get securityAction
+# Get security action
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of securityAction object.
+Retrieve the properties and relationships of a [securityAction](../resources/securityaction.md) object.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ GET /security/securityActions/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters)
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [securityAction](../resources/securityaction.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [securityAction](../resources/securityaction.md) object in the response body.
 
 ## Examples
 

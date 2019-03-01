@@ -1,6 +1,6 @@
 ---
 title: "securityAction: cancelSecurityAction"
-description: "Used to cancel a security operation."
+description: "Cancel a security operation."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to cancel a security operation.
+Cancel a security operation.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ If successful, this method returns `200, OK` response code. It does not return a
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
