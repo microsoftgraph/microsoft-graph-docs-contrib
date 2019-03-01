@@ -7824,23 +7824,23 @@
       - name: TI indicators
         href: resources/tiindicator.md
         items:
-        - name: List ti indicators
+        - name: List TI indicators
           href: api/tiindicators-list.md
-        - name: Get ti indicator
+        - name: Get TI indicator
           href: api/tiindicator-get.md
-        - name: Update ti indicator
+        - name: Update TI indicator
           href: api/tiindicator-update.md
-        - name: Update multiple ti indicators
+        - name: Update multiple TI indicators
           href: api/tiindicator-updatetiindicators.md
-        - name: Create ti indicator
+        - name: Create TI indicator
           href: api/tiindicators-post.md
-        - name: Submit multiple ti indicators
+        - name: Submit multiple TI indicators
           href: api/tiindicator-submittiindicators.md
-        - name: Delete ti indicator
+        - name: Delete TI indicator
           href: api/tiindicator-delete.md
-        - name: Delete multiple ti indicators
+        - name: Delete multiple TI indicators
           href: api/tiindicator-deletetiindicators.md
-        - name: Delete multiple ti indicators by external id
+        - name: Delete multiple TI indicators by external id
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md

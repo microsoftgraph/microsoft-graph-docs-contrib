@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of tiindicator objects.
+Retrieve a list of tiIndicator objects.
 
 ## Permissions
 
