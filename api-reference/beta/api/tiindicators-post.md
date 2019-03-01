@@ -95,16 +95,14 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "tiIndicator": {
-    "action": "action-value",
-    "activityGroupNames": [
-      "activityGroupNames-value"
-    ],
-    "additionalInformation": "additionalInformation-value",
-    "azureTenantId": "azureTenantId-value",
-    "confidence": 99,
-    "description": "description-value"
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Security/tiIndicators/$entity",
+    "id": "e58c072b-c9bb-a5c4-34ce-eb69af44fb1e",
+    "azureTenantId": "XXXXXXXXXXXXXXXXXXXX",
+    "action": "alert",
+    "additionalInformation": null,
+    "activityGroupNames": [],
+    "confidence": 0,
+    "description": "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator.",
 }
 ```
 

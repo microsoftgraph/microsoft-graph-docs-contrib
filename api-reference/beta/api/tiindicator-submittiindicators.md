@@ -67,73 +67,36 @@ Content-type: application/json
 {
   "value": [
     {
-      "action": "action-value",
-      "activityGroupNames": [
-        "activityGroupNames-value"
-      ],
-      "additionalInformation": "additionalInformation-value",
-      "azureTenantId": "azureTenantId-value",
-      "confidence": 99,
-      "description": "description-value",
-      "diamondModel": "diamondModel-value",
-      "domainName": "domainName-value",
-      "emailEncoding": "emailEncoding-value",
-      "emailLanguage": "emailLanguage-value",
-      "emailRecipient": "emailRecipient-value",
-      "emailSenderAddress": "emailSenderAddress-value",
-      "emailSenderName": "emailSenderName-value",
-      "emailSourceDomain": "emailSourceDomain-value",
-      "emailSourceIpAddress": "emailSourceIpAddress-value",
-      "emailSubject": "emailSubject-value",
-      "emailXMailer": "emailXMailer-value",
-      "expirationDateTime": "datetime-value",
-      "externalId": "externalId-value",
-      "fileCompileDateTime": "datetime-value",
-      "fileCreatedDateTime": "datetime-value",
-      "fileHashType": "fileHashType-value",
-      "fileHashValue": "fileHashValue-value",
-      "fileMutexName": "fileMutexName-value",
-      "fileName": "fileName-value",
-      "filePacker": "filePacker-value",
-      "filePath": "filePath-value",
-      "fileSize": 99,
-      "fileType": "fileType-value",
-      "id": "id-value",
-      "ingestedDateTime": "datetime-value",
-      "isActive": true,
-      "killChain": [
-        "killChain-value"
-      ],
-      "knownFalsePositives": "knownFalsePositives-value",
-      "lastReportedDateTime": "datetime-value",
-      "malwareFamilyNames": [
-        "malwareFamilyNames-value"
-      ],
-      "networkCidrBlock": "networkCidrBlock-value",
-      "networkDestinationAsn": 99,
-      "networkDestinationCidrBlock": "networkDestinationCidrBlock-value",
-      "networkDestinationIPv4": "networkDestinationIPv4-value",
-      "networkDestinationIPv6": "networkDestinationIPv6-value",
-      "networkDestinationPort": 99,
-      "networkIPv4": "networkIPv4-value",
-      "networkIPv6": "networkIPv6-value",
-      "networkPort": 99,
-      "networkProtocol": 99,
-      "networkSourceAsn": 99,
-      "networkSourceCidrBlock": "networkSourceCidrBlock-value",
-      "networkSourceIPv4": "networkSourceIPv4-value",
-      "networkSourceIPv6": "networkSourceIPv6-value",
-      "networkSourcePort": 99,
-      "passiveOnly": true,
-      "severity": 99,
-      "tags": [
-        "tags-value"
-      ],
-      "targetProduct": "targetProduct-value",
-      "threatType": "threatType-value",
-      "tlpLevel": "tlpLevel-value",
-      "url": "url-value",
-      "userAgent": "userAgent-value"
+      "activityGroupNames": [],
+      "confidence": 0,
+      "description": "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator.",
+      "expirationDateTime": "2019-03-01T21:44:03.1668987+00:00",
+      "externalId": "Test--8586509942423126760MS164-0",
+      "fileHashType": "sha256",
+      "fileHashValue": "b555c45c5b1b01304217e72118d6ca1b14b7013644a078273cea27bbdc1cf9d6",
+      "killChain": [],
+      "malwareFamilyNames": [],
+      "severity": 0,
+      "tags": [],
+      "targetProduct": "Azure Sentinel",
+      "threatType": "WatchList",
+      "tlpLevel": "green",
+    },
+    {
+      "activityGroupNames": [],
+      "confidence": 0,
+      "description": "This is a canary indicator for demo purpose. Take no action on any observables set in this indicator.",
+      "expirationDateTime": "2019-03-01T21:44:03.1748779+00:00",
+      "externalId": "Test--8586509942423126760MS164-1",
+      "fileHashType": "sha256",
+      "fileHashValue": "1796b433950990b28d6a22456c9d2b58ced1bdfcdf5f16f7e39d6b9bdca4213b",
+      "killChain": [],
+      "malwareFamilyNames": [],
+      "severity": 0,
+      "tags": [],
+      "targetProduct": "Azure Sentinel",
+      "threatType": "WatchList",
+      "tlpLevel": "green",
     }
   ]
 }
@@ -159,14 +122,14 @@ Content-type: application/json
 {
   "value": [
     {
-      "action": "action-value",
-      "activityGroupNames": [
-        "activityGroupNames-value"
-      ],
-      "additionalInformation": "additionalInformation-value",
-      "azureTenantId": "azureTenantId-value",
-      "confidence": 99,
-      "description": "description-value"
+      "@odata.type": "#microsoft.graph.tiIndicator",
+      "id": "c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4",
+      "azureTenantId": "XXXXXXXXXXXXXXXXXXXXX",
+      "action": null,
+      "additionalInformation": null,
+      "activityGroupNames": [],
+      "confidence": 0,
+      "description": "This is a test indicator for demo purpose. Take no action on any observables set in this indicator.",
     }
   ]
 }

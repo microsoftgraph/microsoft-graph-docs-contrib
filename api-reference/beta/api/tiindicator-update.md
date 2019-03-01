@@ -34,7 +34,8 @@ PATCH /security/tiIndicators/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {code} **Required** |
+|Prefer | return=representation |
 
 ## Request body
 
@@ -60,15 +61,54 @@ In the request body, supply the values for relevant fields that should be update
 |tags|String collection|A JSON array of strings that stores arbitrary tags/keywords.|
 |tlpLevel|string| Traffic Light Protocol value for the indicator. Possible values are: `unknown`, `white`, `green`, `amber`, `red`.|
 
+### diamondModel values
+
+The Diamond Model is a novel understanding of intrusion analysis that establishes the foundational method of our discipline.  The model establishes the basic atomic element of any intrusion activity, the event, composed of four core features present in all malicious activity: adversary, infrastructure, capability, and victim. These features are edge-connected representing their underlying relationships and arranged in the shape of a diamond. The Model further defines additional meta-features to support higher-level constructs such as the always present, and sometimes enduring, social-political relationship between adversary and victim as well as the technology enabling the capability and infrastructure.</br>
+For more information on the diamond model, please visit <http://diamondmodel.org>.
+
+| Values | Description |
+|:-------|:------------|
+|adversary|The indicator describes the adversary.|
+|capability|Indicator is a capability of the adversary.|
+|infrastructure|The indicator describes infrastructure of the adversary.|
+|victim|The indicator describes the victim of the adversary.|
+
+### killChain values
+
+| Values | Description |
+|:-------|:------------|
+|Actions|“Actions” is shorthand for “Actions on Objectives.” At this phase, the attacker is leveraging the compromised system to take actions such as a distributed denial of service attack.|
+|C2|“C2” is shorthand for “Command and Control”. This represents the control channel by which a compromised system is manipulated.|
+|Delivery|The process of distributing the exploit code to victims (For example USB, email, websites, etc.).|
+|Exploitation|The exploit code taking advantage of vulnerabilities (For example, code execution).|
+|Installation|Installing malware once a vulnerability has been exploited.|
+|Reconnaissance|Indicator is evidence of an activity group harvesting information to be used in a future attack.|
+|Weaponization|Turning a vulnerability into exploit code (For example, malware).|
+
+### tlpLevel values
+
+Every indicator must also have a Traffic Light Protocol value when it is submitted. This value represents the sensitivity and sharing scope of a given indicator.
+
+| Values | Description |
+|:-------|:------------|
+|White| Sharing scope: Unlimited. Indicators can be shared freely, without restriction.|
+|Green| Sharing scope: Community. Indicators may be shared with the security community.|
+|Amber| Sharing scope: Limited. This is the default setting for indicators and restricts sharing to only those with a ‘need-to-know’  being 1) Services and service operators that implement threat intelligence 2) Customers whose system(s) exhibit behavior consistent with the indicator.|
+|Red| Sharing scope: Personal. These indicators are to only be shared directly and, preferably, in person. Typically, TLP Red indicators are not ingested due to their pre-defined restrictions. If TLP Red indicators are submitted, the “PassiveOnly” property should be set to `True` as well. |
+
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [tiIndicator](../resources/tiIndicator.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
+
+If the optional request header is used, the method returns a `200 OK` response code and the updated [tiIndicator](../resources/tiIndicator.md) object in the response body.
 
 ## Examples
 
+### Example 1: Request without Prefer header
+
 ### Request
 
-The following is an example of the request.
+The following is an example of the request without the `Prefer` header.
 <!-- {
   "blockType": "request",
   "name": "update_tiIndicator"
@@ -79,32 +119,44 @@ PATCH https://graph.microsoft.com/beta/security/tiIndicators/{id}
 Content-type: application/json
 
 {
-  "action": "action-value",
-  "activityGroupNames": [
-    "activityGroupNames-value"
-  ],
-  "additionalInformation": "additionalInformation-value",
-  "confidence": 99,
-  "description": "description-value",
-  "diamondModel": "diamondModel-value",
-  "expirationDateTime": "datetime-value",
-  "externalId": "externalId-value",
-  "id": "id-value",
-  "isActive": true,
-  "killChain": [
-    "killChain-value"
-  ],
-  "knownFalsePositives": "knownFalsePositives-value",
-  "lastReportedDateTime": "datetime-value",
-  "malwareFamilyNames": [
-    "malwareFamilyNames-value"
-  ],
-  "passiveOnly": true,
-  "severity": 5,
-  "tags": [
-    "tags-value"
-  ],
-  "tlpLevel": "tlpLevel-value"
+  "description": "description-updated",
+}
+```
+
+### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.tiIndicator"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Request with Prefer header
+
+### Request
+
+The following is an example of the request that includes the `Prefer` header.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_tiIndicator"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/security/tiIndicators/{id}
+Content-type: application/json
+Prefer: return=representation
+
+{
+  "additionalInformation": "additionalInformation-after-update",
+  "confidence": 42,
+  "description": "description-after-update",
 }
 ```
 
@@ -126,14 +178,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "action": "action-value",
-  "activityGroupNames": [
-    "activityGroupNames-value"
-  ],
-  "additionalInformation": "additionalInformation-value",
-  "azureTenantId": "azureTenantId-value",
-  "confidence": 99,
-  "description": "description-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Security/tiIndicators/$entity",
+    "id": "e58c072b-c9bb-a5c4-34ce-eb69af44fb1e",
+    "azureTenantId": "XXXXXXXXXXXXXXXXXXXXXXXXX",
+    "action": null,
+    "additionalInformation": "additionalInformation-after-update",
+    "activityGroupNames": [],
+    "confidence": 42,
+    "description": "description-after-update",
 }
 ```
 

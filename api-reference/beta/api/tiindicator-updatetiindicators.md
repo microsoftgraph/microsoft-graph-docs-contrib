@@ -66,35 +66,16 @@ Content-type: application/json
 {
   "value": [
     {
-      "action": "action-value",
-      "activityGroupNames": [
-        "activityGroupNames-value"
-      ],
-      "additionalInformation": "additionalInformation-value",
-      "confidence": 99,
-      "description": "description-value",
-      "diamondModel": "diamondModel-value",
-      "expirationDateTime": "datetime-value",
-      "externalId": "externalId-value",
-      "id": "id-value",
-      "isActive": true,
-      "killChain": [
-        "killChain-value"
-      ],
-      "knownFalsePositives": "knownFalsePositives-value",
-      "lastReportedDateTime": "datetime-value",
-      "malwareFamilyNames": [
-        "malwareFamilyNames-value"
-      ],
-      "passiveOnly": true,
-      "severity": 5,
-      "tags": [
-        "tags-value"
-      ],
-      "tlpLevel": "tlpLevel-value"
+      "id": "c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4",
+      "additionalInformation": "mytest"
+    },
+    {
+      "id": "e58c072b-c9bb-a5c4-34ce-eb69af44fb1e",
+      "additionalInformation": "test again"
     }
   ]
 }
+
 ```
 
 ### Response
@@ -117,14 +98,14 @@ Content-type: application/json
 {
   "value": [
     {
-      "action": "action-value",
-      "activityGroupNames": [
-        "activityGroupNames-value"
-      ],
-      "additionalInformation": "additionalInformation-value",
-      "azureTenantId": "azureTenantId-value",
-      "confidence": 99,
-      "description": "description-value"
+      "@odata.type": "#microsoft.graph.tiIndicator",
+      "id": "c6fb948b-89c5-3bba-a2cd-a9d9a1e430e4",
+      "azureTenantId": "XXXXXXXXXXXXXXXXXX",
+      "action": null,
+      "additionalInformation": "mytest",
+      "activityGroupNames": [],
+      "confidence": 0,
+      "description": "This is a test indicator for demo purpose. Take no action on any observables set in this indicator.",
     }
   ]
 }
