@@ -1,16 +1,16 @@
 ---
-title: "Create securityAction"
-description: "Use this API to create a new securityAction."
+title: "Create security action"
+description: Create a new security action object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Create securityAction
+# Create security action
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new securityAction.
+Create a new [securityAction](../resources/securityaction.md).
 
 ## Permissions
 
@@ -38,11 +38,11 @@ POST /security/securityActions
 
 ## Request body
 
-In the request body, supply a JSON representation of [securityAction](../resources/securityaction.md) object.
+In the request body, supply a JSON representation of a [securityAction](../resources/securityaction.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [securityAction](../resources/securityaction.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [securityAction](../resources/securityaction.md) object in the response body.
 
 ## Examples
 
