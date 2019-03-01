@@ -71,7 +71,7 @@ Aside from a meeting request, an **eventMessage** instance can be found in an at
 |isRead|Boolean|Indicates whether the message has been read.|
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
-|meetingMessageType|meetingMessageType| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType|meetingMessageType| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |replyTo|[recipient](recipient.md) collection|The email addresses to use when replying.|
