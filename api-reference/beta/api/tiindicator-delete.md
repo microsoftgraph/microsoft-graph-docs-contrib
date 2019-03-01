@@ -1,6 +1,6 @@
 ---
 title: "Delete tiIndicator"
-description: "Delete tiIndicator."
+description: "Delete a tiIndicator."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete tiIndicator.
+Delete a [tiIndicator](../resources/tiindicator.md).
 
 ## Permissions
 
@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 

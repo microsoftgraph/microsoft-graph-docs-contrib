@@ -1,6 +1,6 @@
 ---
 title: "tiIndicator: deleteTiIndicatorsByExternalId"
-description: "Used to delete multiple TI indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs."
+description: "Delete multiple TI indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to delete multiple TI indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs.
+Delete multiple TI indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs.
 
 ## Permissions
 
@@ -46,11 +46,11 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [resultInfo](../resources/resultinfo.md) collection object in the response body.
+If successful, this method returns `200, OK` response code and a [resultInfo](../resources/resultinfo.md) collection object in the response body.
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 

@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of tiIndicator objects.
+Retrieve a list of [tiIndicator](../resources/tiindicator.md) objects.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.
 
 ## Examples
 

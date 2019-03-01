@@ -1,6 +1,6 @@
 ---
 title: "tiIndicator: submitTiIndicators"
-description: "Used to upload multiple TI indicators in one request instead of multiple requests."
+description: "Upload multiple TI indicators in one request instead of multiple requests."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to upload multiple TI indicators in one request instead of multiple requests.
+Upload multiple TI indicators in one request instead of multiple requests.
 
 ## Permissions
 
@@ -46,11 +46,11 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [tiIndicator](../resources/tiindicator.md) collection object in the response body.
+If successful, this method returns `200, OK` response code and a [tiIndicator](../resources/tiindicator.md) collection object in the response body.
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 

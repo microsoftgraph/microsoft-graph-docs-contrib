@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [securityaction](../resources/securityaction.md) objects.
+Retrieve a list of [securityAction](../resources/securityaction.md) objects.
 
 ## Permissions
 

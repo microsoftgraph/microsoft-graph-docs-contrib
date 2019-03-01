@@ -1,6 +1,6 @@
 ---
 title: "Create tiIndicator"
-description: "Use this API to create a new tiIndicator."
+description: "Create a new tiIndicator."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new tiIndicator.
+Create a new [tiIndicator](../resources/tiindicator.md).
 
 ## Permissions
 
@@ -38,11 +38,11 @@ POST /security/tiIndicators
 
 ## Request body
 
-In the request body, supply a JSON representation of [tiIndicator](../resources/tiindicator.md) object containing at least one observable.
+In the request body, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one observable.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [tiIndicator](../resources/tiindicator.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [tiIndicator](../resources/tiindicator.md) object in the response body.
 
 ## Examples
 
