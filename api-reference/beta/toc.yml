@@ -7790,12 +7790,12 @@
       - name: Actions
         href: resources/securityaction.md
         items:
+        - name: List security actions
+          href: api/securityactions-list.md
         - name: Create security action
           href: api/securityactions-post.md
         - name: Get security action
           href: api/securityaction-get.md
-        - name: List security actions
-          href: api/securityactions-list.md
         - name: Cancel security action
           href: api/securityaction-cancelsecurityaction.md
       - name: Alerts
@@ -7826,16 +7826,16 @@
         items:
         - name: List TI indicators
           href: api/tiindicators-list.md
+        - name: Create TI indicator
+          href: api/tiindicators-post.md
+        - name: Submit multiple TI indicators
+          href: api/tiindicator-submittiindicators.md
         - name: Get TI indicator
           href: api/tiindicator-get.md
         - name: Update TI indicator
           href: api/tiindicator-update.md
         - name: Update multiple TI indicators
           href: api/tiindicator-updatetiindicators.md
-        - name: Create TI indicator
-          href: api/tiindicators-post.md
-        - name: Submit multiple TI indicators
-          href: api/tiindicator-submittiindicators.md
         - name: Delete TI indicator
           href: api/tiindicator-delete.md
         - name: Delete multiple TI indicators
