@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [tiIndicator](../resources/tiindicator.md).
+Delete a [tiIndicator](../resources/tiindicator.md) object.
 
 ## Permissions
 
