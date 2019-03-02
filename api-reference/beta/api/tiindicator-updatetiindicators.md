@@ -1,6 +1,6 @@
 ---
 title: "tiIndicator: updateTiIndicators"
-description: "Update multiple TI indicators in one request instead of multiple requests."
+description: "Update multiple threat intelligence (TI) indicators in one request instead of multiple requests."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update multiple TI indicators in one request instead of multiple requests.
+Update multiple (threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## Permissions
 
@@ -38,15 +38,15 @@ POST /security/tiIndicators/updateTiIndicators
 
 ## Request body
 
-In the request body, provide a JSON object with the following parameters. For details regarding properties that can be updated, refer to the [update tiIndicator](tiindicator-update.md) resource.
+In the request body, provide a JSON object with the following parameters. For details about properties that can be updated, see [update tiIndicator](tiindicator-update.md).
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|value|tiIndicator collection| Collection of tiIndicators to update. Each entity must have **id** and other editable properties to be updated.|
+|value|tiIndicator collection| Collection of **tiIndicators** to update. Each entity must have **id** and other editable properties to be updated.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.
 
 ## Examples
 
