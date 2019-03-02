@@ -8,7 +8,7 @@ ms.prod: "security"
 
 # Partnering with Microsoft Graph Security – technology partner opportunities
 
-This document is an introduction to partnering opportunities enabled by Microsoft Graph Security and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions.
+This article describes partnering opportunities enabled by Microsoft Graph Security and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions.
 
 ## Background
 
