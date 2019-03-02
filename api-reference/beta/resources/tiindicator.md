@@ -109,7 +109,7 @@ Threat indicators uploaded via **tiIndicators** will be used in conjunction with
 
 ### diamondModel values
 
-For information about this model, see <http://diamondmodel.org>.
+For information about this model, see [The Diamond Model](http://diamondmodel.org).
 
 | Values | Description |
 |:-------|:------------|
