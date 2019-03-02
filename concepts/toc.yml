@@ -171,9 +171,8 @@
             href: security-splunk-siemintegration.md
           - name: QRadar
             href: security-qradar-siemintegration.md
-        - name: Partner Overview
+        - name: Partner overview
           href: security-partner-overview.md
-          items:
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
