@@ -86,6 +86,8 @@ Here is a JSON representation of the resource.
   "isInitial": true,
   "isRoot": true,
   "isVerified": true,
+  "passwordNotificationWindowInDays": 14,
+  "passwordValidityPeriodInDays": 90,
   "state": {"@odata.type": "microsoft.graph.domainState"},
   "supportedServices": ["String"]
 }

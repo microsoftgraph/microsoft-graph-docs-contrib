@@ -91,6 +91,7 @@ The following is a JSON representation of the resource.
 {
   "accountEnabled": true,
   "approximateLastSignInDateTime": "String (timestamp)",
+  "complianceExpirationDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",
   "deviceVersion": 1024,
@@ -103,6 +104,8 @@ The following is a JSON representation of the resource.
   "operatingSystem": "string",
   "operatingSystemVersion": "string",
   "physicalIds": ["string"],
+  "profileType": "string",
+  "systemLabels": ["string"],
   "trustType": "string",
   "Name": "string",
   "Status": "string",

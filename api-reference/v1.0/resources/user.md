@@ -384,6 +384,7 @@ Here is a JSON representation of the resource
   "id": "string (identifier)",
   "imAddresses": ["string"],
   "interests": ["string"],
+  "isResourceAccount": false,
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
