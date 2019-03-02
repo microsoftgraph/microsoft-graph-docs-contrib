@@ -1,6 +1,6 @@
 ---
 title: "tiIndicator: deleteTiIndicatorsByExternalId"
-description: "Delete multiple TI indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs."
+description: "Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes multiple TI indicators in one request instead of multiple requests, with the TI indicators specified by their `externalId`.
+Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, when the request contains external IDs instead of IDs.
 
 ## Permissions
 
@@ -42,11 +42,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|value|String collection| Collection of `externalId`s of tiIndicators to be deleted. |
+|value|String collection| Collection of `externalIds` of the **tiIndicator** objects to be deleted. |
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a [resultInfo](../resources/resultinfo.md) collection object in the response body.
+If successful, this method returns `200 OK` response code and a [resultInfo](../resources/resultinfo.md) collection object in the response body.
 
 ## Examples
 
