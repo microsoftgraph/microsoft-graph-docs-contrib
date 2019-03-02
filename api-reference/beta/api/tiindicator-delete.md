@@ -1,12 +1,12 @@
 ---
-title: "Delete tiIndicator"
-description: "Delete a tiIndicator."
+title: "Delete threat intelligence indicator"
+description: "Delete a tiIndicator object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Delete tiIndicator
+# Delete threat intelligence indicator
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

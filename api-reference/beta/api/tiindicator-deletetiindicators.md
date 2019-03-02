@@ -1,6 +1,6 @@
 ---
 title: "tiIndicator: deleteTiIndicators"
-description: "Used to delete multiple TI indicators in one request instead of multiple requests."
+description: "Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes multiple TI indicators in one request instead of multiple requests, with the TI indicators specified by their `id`.
+Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## Permissions
 
