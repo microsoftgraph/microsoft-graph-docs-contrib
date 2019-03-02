@@ -1,16 +1,16 @@
 ---
-title: "Get tiIndicator"
-description: "Retrieve the properties and relationships of tiindicator object."
+title: "Get threat intelligence indicator"
+description: "Retrieve the properties and relationships of a tiindicator object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Get tiIndicator
+# Get threat intelligence indicator
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [tiIndicator](../resources/tiindicator.md) object.
+Retrieve the properties and relationships of a [tiIndicator](../resources/tiindicator.md) object.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ GET /security/tiIndicators/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters)
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters).
 
 ## Request headers
 
