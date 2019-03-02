@@ -7785,7 +7785,7 @@
           href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
       href: resources/security-api-overview.md
-      displayname: Security API, Microsoft Intelligent Security Graph
+      displayname: Security API, Microsoft Graph Security API
       items:
       - name: Actions
         href: resources/securityaction.md
@@ -7821,26 +7821,26 @@
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
-      - name: TI indicators
+      - name: Threat intelligence indicators
         href: resources/tiindicator.md
         items:
-        - name: List TI indicators
+        - name: List
           href: api/tiindicators-list.md
-        - name: Create TI indicator
+        - name: Create
           href: api/tiindicators-post.md
-        - name: Submit multiple TI indicators
+        - name: Submit multiple
           href: api/tiindicator-submittiindicators.md
-        - name: Get TI indicator
+        - name: Get
           href: api/tiindicator-get.md
-        - name: Update TI indicator
+        - name: Update
           href: api/tiindicator-update.md
-        - name: Update multiple TI indicators
+        - name: Update multiple
           href: api/tiindicator-updatetiindicators.md
-        - name: Delete TI indicator
+        - name: Delete
           href: api/tiindicator-delete.md
-        - name: Delete multiple TI indicators
+        - name: Delete multiple
           href: api/tiindicator-deletetiindicators.md
-        - name: Delete multiple TI indicators by external id
+        - name: Delete multiple by external IDid
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
