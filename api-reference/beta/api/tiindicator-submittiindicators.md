@@ -1,6 +1,6 @@
 ---
 title: "tiIndicator: submitTiIndicators"
-description: "Upload multiple TI indicators in one request instead of multiple requests."
+description: "Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uploads multiple TI indicators in one request instead of multiple requests.
+Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## Permissions
 
@@ -42,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|value|tiIndicator collection| JSON collection of tiIndicators to be created. |
+|value|tiIndicator collection| JSON collection of **tiIndicators** to be created. |
 
 ## Response
 
