@@ -63,8 +63,8 @@ In the request body, supply the values for relevant fields that should be update
 
 ### diamondModel values
 
-The Diamond Model is a novel understanding of intrusion analysis that establishes the foundational method of our discipline.  The model establishes the basic atomic element of any intrusion activity, the event, composed of four core features present in all malicious activity: adversary, infrastructure, capability, and victim. These features are edge-connected representing their underlying relationships and arranged in the shape of a diamond. The Model further defines additional meta-features to support higher-level constructs such as the always present, and sometimes enduring, social-political relationship between adversary and victim as well as the technology enabling the capability and infrastructure.</br>
-For more information on the diamond model, please visit <http://diamondmodel.org>.
+The Diamond Model is a novel understanding of intrusion analysis that establishes the foundational method of our discipline. The model establishes the basic atomic element of any intrusion activity - the event - is composed of four core features present in all malicious activity: adversary, infrastructure, capability, and victim. These features are edge-connected representing their underlying relationships and arranged in the shape of a diamond. The Model further defines additional meta-features to support higher-level constructs such as the always present, and sometimes enduring, social-political relationship between adversary and victim as well as the technology enabling the capability and infrastructure.</br>
+For more information, see [The diamond model](http://diamondmodel.org).
 
 | Values | Description |
 |:-------|:------------|

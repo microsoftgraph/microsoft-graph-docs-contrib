@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload multiple TI indicators in one request instead of multiple requests.
+Uploads multiple TI indicators in one request instead of multiple requests.
 
 ## Permissions
 

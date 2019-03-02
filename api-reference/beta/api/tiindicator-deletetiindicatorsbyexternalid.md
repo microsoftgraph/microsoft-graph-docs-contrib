@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete multiple TI indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs.
+Deletes multiple TI indicators in one request instead of multiple requests, with the TI indicators specified by their `externalId`.
 
 ## Permissions
 
