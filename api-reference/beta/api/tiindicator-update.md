@@ -1,6 +1,6 @@
 ---
 title: "Update tiIndicator"
-description: "Update the properties of tiIndicator object."
+description: "Update the properties of a tiIndicator object."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of tiIndicator object.
+Update the properties of a [tiIndicator](../resources/tiindicator.md) object.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 |expirationDateTime|DateTimeOffset| DateTime string indicating when the Indicator expires. All indicators must have an expiration date to avoid stale indicators persisting in the system. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`.|
 |externalId|String|An identification number that ties the indicator back to the indicator provider’s system (e.g. a foreign key).|
 |isActive|Boolean|Used to deactivate indicators within system. By default, any indicator submitted is set as active. However, providers may submit existing indicators with this set to ‘False’ to deactivate indicators in the system.|
-|killChain|String collection|A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See ‘killChain values’ below for exact values.|
+|killChain|String collection|A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See "killChain values" below for exact values.|
 |knownFalsePositives|String|Scenarios in which the indicator may cause false positives. This should be human-readable text.|
 |lastReportedDateTime|DateTimeOffset|The last time the indicator was seen. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
 |malwareFamilyNames|String collection|The malware family name associated with an indicator if it exists. Microsoft prefers the Microsoft malware family name if at all possible which can be found via the Windows Defender Security Intelligence [threat encyclopedia](https://www.microsoft.com/wdsi/threats).|
@@ -63,13 +63,12 @@ In the request body, supply the values for relevant fields that should be update
 
 ### diamondModel values
 
-The Diamond Model is a novel understanding of intrusion analysis that establishes the foundational method of our discipline. The model establishes the basic atomic element of any intrusion activity - the event - is composed of four core features present in all malicious activity: adversary, infrastructure, capability, and victim. These features are edge-connected representing their underlying relationships and arranged in the shape of a diamond. The Model further defines additional meta-features to support higher-level constructs such as the always present, and sometimes enduring, social-political relationship between adversary and victim as well as the technology enabling the capability and infrastructure.</br>
-For more information, see [The diamond model](http://diamondmodel.org).
+For information about this model, see [The diamond model](http://diamondmodel.org).
 
 | Values | Description |
 |:-------|:------------|
 |adversary|The indicator describes the adversary.|
-|capability|Indicator is a capability of the adversary.|
+|capability|The indicator is a capability of the adversary.|
 |infrastructure|The indicator describes infrastructure of the adversary.|
 |victim|The indicator describes the victim of the adversary.|
 
@@ -77,24 +76,24 @@ For more information, see [The diamond model](http://diamondmodel.org).
 
 | Values | Description |
 |:-------|:------------|
-|Actions|“Actions” is shorthand for “Actions on Objectives.” At this phase, the attacker is leveraging the compromised system to take actions such as a distributed denial of service attack.|
-|C2|“C2” is shorthand for “Command and Control”. This represents the control channel by which a compromised system is manipulated.|
-|Delivery|The process of distributing the exploit code to victims (For example USB, email, websites, etc.).|
-|Exploitation|The exploit code taking advantage of vulnerabilities (For example, code execution).|
-|Installation|Installing malware once a vulnerability has been exploited.|
+|Actions|Represents “Actions on Objectives”. The attacker is leveraging the compromised system to take actions such as a distributed denial of service attack.|
+|C2|Represents the control channel by which a compromised system is manipulated.|
+|Delivery|The process of distributing the exploit code to victims (for example USB, email, websites).|
+|Exploitation|The exploit code taking advantage of vulnerabilities (for example, code execution).|
+|Installation|Installing malware after a vulnerability has been exploited.|
 |Reconnaissance|Indicator is evidence of an activity group harvesting information to be used in a future attack.|
-|Weaponization|Turning a vulnerability into exploit code (For example, malware).|
+|Weaponization|Turning a vulnerability into exploit code (for example, malware).|
 
 ### tlpLevel values
 
-Every indicator must also have a Traffic Light Protocol value when it is submitted. This value represents the sensitivity and sharing scope of a given indicator.
+Every indicator must have a Traffic Light Protocol (tlp) value when it is submitted. This value represents the sensitivity and sharing scope of a given indicator.
 
 | Values | Description |
 |:-------|:------------|
 |White| Sharing scope: Unlimited. Indicators can be shared freely, without restriction.|
-|Green| Sharing scope: Community. Indicators may be shared with the security community.|
-|Amber| Sharing scope: Limited. This is the default setting for indicators and restricts sharing to only those with a ‘need-to-know’  being 1) Services and service operators that implement threat intelligence 2) Customers whose system(s) exhibit behavior consistent with the indicator.|
-|Red| Sharing scope: Personal. These indicators are to only be shared directly and, preferably, in person. Typically, TLP Red indicators are not ingested due to their pre-defined restrictions. If TLP Red indicators are submitted, the “PassiveOnly” property should be set to `True` as well. |
+|Green| Sharing scope: Community. Indicators can be shared with the security community.|
+|Amber| Sharing scope: Limited. This is the default setting for indicators and restricts sharing to only those with a need-to-know: 1) Services and service operators that implement threat intelligence; 2) Customers whose system(s) exhibit behavior consistent with the indicator.|
+|Red| Sharing scope: Personal. These indicators are to only be shared directly and, preferably, in person. Typically, TLP Red indicators are not ingested due to their pre-defined restrictions. If TLP Red indicators are submitted, the **passiveOnly** property should be set to `True` as well. |
 
 ## Response
 
