@@ -1,6 +1,6 @@
 ---
 title: "securityActionState resource type"
-description: "Represents the history of securityAction state change"
+description: "Represents the history of securityAction state changes."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the history of securityAction state change.
+Represents the history of securityAction state changes.
 
 ## Properties
 
