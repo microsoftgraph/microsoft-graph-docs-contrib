@@ -1,12 +1,12 @@
 ---
-title: "List tiIndicators"
+title: "List threat intelligence indicators"
 description: "Retrieve a list of tiindicator objects."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# List tiIndicators
+# List threat intelligence indicators
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ GET /security/tiIndicators
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters)
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters).
 
 ## Request headers
 
