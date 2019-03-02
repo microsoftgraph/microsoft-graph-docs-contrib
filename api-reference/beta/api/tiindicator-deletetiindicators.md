@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to delete multiple TI indicators in one request instead of multiple requests.
+Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## Permissions
 
