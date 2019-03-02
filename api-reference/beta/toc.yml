@@ -8019,8 +8019,19 @@
           href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
       href: resources/security-api-overview.md
-      displayname: Security API, Microsoft Intelligent Security Graph
+      displayname: Security API, Microsoft Graph Security API
       items:
+      - name: Actions
+        href: resources/securityaction.md
+        items:
+        - name: List security actions
+          href: api/securityactions-list.md
+        - name: Create security action
+          href: api/securityactions-post.md
+        - name: Get security action
+          href: api/securityaction-get.md
+        - name: Cancel security action
+          href: api/securityaction-cancelsecurityaction.md
       - name: Alerts
         href: resources/alert.md
         items:
@@ -8030,6 +8041,8 @@
           href: api/alert-get.md
         - name: Update alert
           href: api/alert-update.md
+        - name: Update multiple alerts
+          href: api/alert-updatealerts.md
       - name: Secure scores
         href: resources/securescores.md
         items:
@@ -8042,6 +8055,27 @@
           href: api/securescorecontrolprofiles-list.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofiles-update.md
+      - name: Threat intelligence indicators
+        href: resources/tiindicator.md
+        items:
+        - name: List
+          href: api/tiindicators-list.md
+        - name: Create
+          href: api/tiindicators-post.md
+        - name: Submit multiple
+          href: api/tiindicator-submittiindicators.md
+        - name: Get
+          href: api/tiindicator-get.md
+        - name: Update
+          href: api/tiindicator-update.md
+        - name: Update multiple
+          href: api/tiindicator-updatetiindicators.md
+        - name: Delete
+          href: api/tiindicator-delete.md
+        - name: Delete multiple
+          href: api/tiindicator-deletetiindicators.md
+        - name: Delete multiple by external IDid
+          href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
