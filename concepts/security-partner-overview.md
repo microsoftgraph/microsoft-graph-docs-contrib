@@ -79,7 +79,7 @@ Supported entities:
 - **Security Actions** enable technology partners to expose functional capabilities via the Graph.  For example, if your security solution supports the ability to block IP addresses you can expose “Block IP” as a capability in the Graph. Other Graph Security API products can call your action via the Graph. [Learn more](https://aka.ms/graphsecurityaction).
 - **Secure Score**… [Learn more](https://aka.ms/graphsecurescore).
 
-### Integrate your application with Microsoft Graph Security
+### Integrate your application with the Microsoft Graph Security API
 
 All integrated applications [must be registered](https://docs.microsoft.com/en-us/graph/auth-register-app-v2) with Microsoft Graph. Both applications used by a single customer as well as those used by many customers (multi-tenant) are supported.  In either case, the customer must grant consent for your application. When calling the Microsoft Graph, each request from your application will contain your application identifier and the customer you are calling on behalf of. The following types of requests are supported:
 
