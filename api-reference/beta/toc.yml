@@ -8074,7 +8074,7 @@
           href: api/tiindicator-delete.md
         - name: Delete multiple
           href: api/tiindicator-deletetiindicators.md
-        - name: Delete multiple by external IDid
+        - name: Delete multiple by external ID
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
