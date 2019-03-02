@@ -1,14 +1,14 @@
 ---
 title: "Partnering with Microsoft Graph Security – technology partner opportunities "
-description: "This document is an introduction to partnering opportunities enabled by Microsoft Graph Security and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions. "
+description: "This This article describes partnering opportunities enabled by the Microsoft Graph Security API and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions. "
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Partnering with Microsoft Graph Security – technology partner opportunities
+# Partnering with the Microsoft Graph Security API – technology partner opportunities
 
-This article describes partnering opportunities enabled by Microsoft Graph Security and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions.
+This article describes partnering opportunities enabled by the Microsoft Graph Security API and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions.
 
 ## Background
 
@@ -68,7 +68,7 @@ Gain visibility into the security posture and recommendation on how to improve i
 - Enable swift action to defend against new threats, such as block file, URL, domain, IP address from within your security tools and workflows.
 - Customer supplied TI is used only for the supplying customer and not for any other Microsoft customer.
 
-## Technical integrations introduction and overview
+## Technical integrations overview
 
 The Microsoft Graph Security API partnering opportunities are made available via two primary integration paths, which can be used independently or together.  We will outline the high-level requirements and provide some insight into how to think about investing in these paths here, but detailed technical explanations are left to the documents referenced later in this document.
 
@@ -90,7 +90,7 @@ All integrated applications [must be registered](https://docs.microsoft.com/en-u
 - **Feed custom threat indicators** - Automatically send your threat indicators to Microsoft security solutions to enable Alert, Block, or Allow actions. Use the Microsoft Graph Security API directly or leverage integrations with leading threat intelligence platforms.
 - **Invoke a Microsoft Graph Security Action** – Take immediate action to defend against threats using the Microsoft Graph Security [securityActions](https://aka.ms/graphsecurityaction) entity.
 
-### Enable others to integrate with your products through Microsoft Graph Security
+### Enable others to integrate with your products through the Microsoft Graph Security API
 
 Microsoft Graph Security providers make their security alerts available to others through the Microsoft Graph.  Microsoft products that generate security alerts all have providers that expose their respective alerts to the Microsoft Graph. In addition, Microsoft Graph Security API allows for external providers, enabling you, as a Microsoft technology partner, to share relevant security alerts from your applications in the Microsoft Graph for customers to use. In addition to alerts, Microsoft Graph Security securityActions enable technology partners to expose functional capabilities via the Microsoft Graph.  For example, if your security solution supports the ability to block IP addresses you can expose “Block IP” as a capability in the Microsoft Graph. Other Microsoft Graph Security products can call your action via the Microsoft Graph.
 
