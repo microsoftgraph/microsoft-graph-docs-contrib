@@ -1,6 +1,6 @@
 ---
 title: "tiIndicator resource type"
-description: "Threat intelligence (TI) Indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, then you often wish to use these indicators in various security tools for matching with log data. The Graph Security tiIndicators entity allows you to upload your threat indicators to Microsoft security tools for the actions of Allow, Block, or Alert."
+description: "Threat intelligence (TI) indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, then you often wish to use these indicators in various security tools for matching with log data. The Graph Security tiIndicators entity allows you to upload your threat indicators to Microsoft security tools for the actions of Allow, Block, or Alert."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -10,9 +10,9 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Threat intelligence (TI) indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, then you often wish to use these indicators in various security tools for matching with log data. The Graph Security tiIndicators entity allows you to upload your threat indicators to Microsoft security tools for the actions of Allow, Block, or Alert.
+Threat intelligence (TI) indicators represent data used to identify malicious activities. If your organization works with threat indicators, either by generating your own, obtaining them from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, you might want to use these indicators in various security tools for matching with log data. The Microsoft Graph Security API **tiIndicators** entity allows you to upload your threat indicators to Microsoft security tools for the actions of allow, block, or alert.
 
-Threat indicators uploaded via tiIndicators will be used in conjunction with Microsoft threat intelligence to provide a customized security solution for your organization. When using the tiIndicators entity you specify the Microsoft security solution you wish to utilize the indicators via the targetProduct property and you specify the action (allow, block, or alert) to which the security solution should apply the indicators via the action property.
+Threat indicators uploaded via **tiIndicators** will be used in conjunction with Microsoft threat intelligence to provide a customized security solution for your organization. When using the **tiIndicators** entity, you specify the Microsoft security solution you want to utilize the indicators for via the **targetProduct** property and you specify the action (allow, block, or alert) to which the security solution should apply the indicators via the **action** property.
 
 ## Methods
 
@@ -109,8 +109,7 @@ Threat indicators uploaded via tiIndicators will be used in conjunction with Mic
 
 ### diamondModel values
 
-The Diamond Model is a novel understanding of intrusion analysis that establishes the foundational method of our discipline.  The model establishes the basic atomic element of any intrusion activity, the event, composed of four core features present in all malicious activity: adversary, infrastructure, capability, and victim. These features are edge-connected representing their underlying relationships and arranged in the shape of a diamond. The Model further defines additional meta-features to support higher-level constructs such as the always present, and sometimes enduring, social-political relationship between adversary and victim as well as the technology enabling the capability and infrastructure.</br>
-For more information on the diamond model, please visit <http://diamondmodel.org>.
+For information about this model, see <http://diamondmodel.org>.
 
 | Values | Description |
 |:-------|:------------|
@@ -123,13 +122,13 @@ For more information on the diamond model, please visit <http://diamondmodel.org
 
 | Values | Description |
 |:-------|:------------|
-|Actions|“Actions” is shorthand for “Actions on Objectives.” At this phase, the attacker is leveraging the compromised system to take actions such as a distributed denial of service attack.|
-|C2|“C2” is shorthand for “Command and Control”. This represents the control channel by which a compromised system is manipulated.|
-|Delivery|The process of distributing the exploit code to victims (For example USB, email, websites, etc.).|
-|Exploitation|The exploit code taking advantage of vulnerabilities (For example, code execution).|
-|Installation|Installing malware once a vulnerability has been exploited.|
+|Actions|Indcates that the attacker is leveraging the compromised system to take actions such as a distributed denial of service attack.|
+|C2|Represents the control channel by which a compromised system is manipulated.|
+|Delivery|The process of distributing the exploit code to victims (for example USB, email, websites).|
+|Exploitation|The exploit code taking advantage of vulnerabilities (for example, code execution).|
+|Installation|Installing malware after a vulnerability has been exploited.|
 |Reconnaissance|Indicator is evidence of an activity group harvesting information to be used in a future attack.|
-|Weaponization|Turning a vulnerability into exploit code (For example, malware).|
+|Weaponization|Turning a vulnerability into exploit code (for example, malware).|
 
 ### threatType values
 
@@ -160,7 +159,7 @@ Every indicator must also have a Traffic Light Protocol value when it is submitt
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
