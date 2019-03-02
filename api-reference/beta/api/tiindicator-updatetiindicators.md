@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update multiple (threat intelligence (TI) indicators in one request instead of multiple requests.
+Update multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## Permissions
 
