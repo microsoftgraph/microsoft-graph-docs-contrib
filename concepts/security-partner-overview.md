@@ -1,12 +1,12 @@
 ---
-title: "Partnering with Microsoft Graph Security– Technology Partner Opportunities "
+title: "Partnering with Microsoft Graph Security – technology partner opportunities "
 description: "This document is an introduction to partnering opportunities enabled by Microsoft Graph Security and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions. "
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Partnering with Microsoft Graph Security– Technology Partner Opportunities
+# Partnering with Microsoft Graph Security – technology partner opportunities
 
 This document is an introduction to partnering opportunities enabled by Microsoft Graph Security and is designed to help product managers and business development roles understand the investment paths and provide insight into partnering value propositions.
 
@@ -16,33 +16,33 @@ Most organizations deal with high volumes of security data and have dozens of se
 
 Technology partners can integrate with the Microsoft platform using the Microsoft Graph Security API to address these customer challenges.
 
-## Introduction to Microsoft Graph Security
+## Introduction to the Microsoft Graph Security API
 
-Microsoft Graph Security is a unified API that provides a standard interface and uniform schema to integrate security alerts and threat intelligence from multiple sources, enrich alerts and data with contextual information, and automate security operations.
+The Microsoft Graph Security API is a unified API that provides a standard interface and uniform schema to integrate security alerts and threat intelligence from multiple sources, enrich alerts and data with contextual information, and automate security operations.
 
-The Security API is part of the Microsoft Graph, which is a unified REST API for integrating data and intelligence from Microsoft and partner products and services. Using Microsoft Graph, customers and partners can rapidly build solutions that authenticate once and use a single API call to access or act on security insights from multiple security solutions. Additional value is uncovered when you explore the other [Microsoft Graph entities](https://docs.microsoft.com/en-us/graph/overview) (Office 365, Azure Active Directory, Intune, and more) to tie business context with your security insights.
+The security API is part of the Microsoft Graph, which is a unified REST API for integrating data and intelligence from Microsoft and partner products and services. Using Microsoft Graph, customers and partners can rapidly build solutions that authenticate once and use a single API call to access or act on security insights from multiple security solutions. Additional value is uncovered when you explore the other [Microsoft Graph entities](https://docs.microsoft.com/en-us/graph/overview) (Office 365, Azure Active Directory, Intune, and more) to tie business context with your security insights.
 
 Microsoft enables technology partner integration in two key ways.
 
-1. As a consumer of information from the Microsoft Graph you can enrich your solutions with information contained in the Microsoft Graph as well as use the Microsoft Graph to perform tasks on behalf of a customer.
-2. You can also contribute your alerts and actions to the graph alongside Microsoft providers.
+1. As a consumer of information from Microsoft Graph, you can enrich your solutions with information contained in Microsoft Graph as well as use the Microsoft Graph API to perform tasks on behalf of a customer.
+2. You can also contribute your alerts and actions to Microsoft Graph alongside Microsoft providers.
 
-|How do you integrate?|Data Available|Capabilities Supported|
+|How do you integrate?|Data available|Capabilities supported|
 |:--------------------|:-------------|:---------------------|
-|Integrate your application with Microsoft Graph Security API.|<li>Alerts from Microsoft Graph Security Providers</li><li>Secure Scores from Microsoft</li>| <li>Query alerts/Secure Score</li> <li>Call a Microsoft Graph Security Action</li> <li>Update a Microsoft Graph Security alert</li> <li>Upload Customer threat indicators to Microsoft</li> |
+|Integrate your application with the Microsoft Graph Security API.|<li>Alerts from Microsoft Graph Security Providers</li><li>Secure Scores from Microsoft</li>| <li>Query alerts/Secure Score</li> <li>Call a Microsoft Graph Security Action</li> <li>Update a Microsoft Graph Security alert</li> <li>Upload Customer threat indicators to Microsoft</li> |
 |Enable others to integrate with your products through the Microsoft Graph Security API.|<li>Alerts from your security products</li>|<li>Security Actions for your security product</li>|
 
 Let’s delve a little deeper and explore some common scenarios where Microsoft Graph Security API integration magnifies security integration investments and the benefits to customers that we can achieve together.
 
-## Featured Technology Partner Scenarios
+## Featured technology partner scenarios
 
-Following are three key benefits you can derive by integrating with the Microsoft Graph Security API.
+The following are three key benefits you can derive by integrating with the Microsoft Graph Security API:
 
 1. Your customers benefit from improvements in security effectiveness and operations.
 2. Your customers benefit from the rich information supplied by yours and other integrated partner products.
 3. The engineering investment for technology partners is simplified and the customer value is magnified via integration with the Microsoft Graph Security API.
 
-### Enhance Threat Protection with Microsoft Graph Security
+### Enhance threat protection with the Microsoft Graph Security API
 
 *Enabling easier integration of security alerts to inform threat detection and response.*
 
@@ -50,7 +50,7 @@ Following are three key benefits you can derive by integrating with the Microsof
 - Access detections and context via the Microsoft Graph to improve threat response – triage, investigation, remediation.
 - Access customer threat intelligence (hash, IP, URL, domain, etc.) to block/alert on malicious activity.
 
-### Streamline IT and Security Management
+### Streamline IT and security management
 
 *Providing greater visibility and streamlining management of the incident lifecycle.*
 
@@ -60,7 +60,7 @@ Following are three key benefits you can derive by integrating with the Microsof
 Keep alert status synchronized across systems managing alerts. </br>
 Gain visibility into the security posture and recommendation on how to improve it with Secure Scores.
 
-### Share Threat Intelligence to Enable Custom Detections
+### Share threat intelligence to enable custom detections
 
 *Leverage your threat intelligence to power custom detections in Microsoft solutions.*
 
@@ -68,7 +68,7 @@ Gain visibility into the security posture and recommendation on how to improve i
 - Enable swift action to defend against new threats, such as block file, URL, domain, IP address from within your security tools and workflows.
 - Customer supplied TI is used only for the supplying customer and not for any other Microsoft customer.
 
-## Technical Integrations Introduction and Overview
+## Technical integrations introduction and overview
 
 The Microsoft Graph Security API partnering opportunities are made available via two primary integration paths, which can be used independently or together.  We will outline the high-level requirements and provide some insight into how to think about investing in these paths here, but detailed technical explanations are left to the documents referenced later in this document.
 
@@ -98,31 +98,31 @@ A Microsoft Graph Security Provider is essentially a cloud endpoint that respond
 
 Provider scenarios are widely varied. A curated onboarding process begins with identifying relevant scenarios. Once scenarios are agreed upon, documentation, sample code and development environments are available to support development of your Microsoft Graph Security Provider.
 
-## Getting Started
+## Get started
 
-### Onboarding guides and Technical Documentation
+### Onboarding guides and technical documentation
 
-- [Overview of Microsoft Graph Security API](https://aka.ms/graphsecuritydocs)
-- [Reference documentation for entities](https://aka.ms/graphsecurityreferencebetadocs)
+- [Overview of the Microsoft Graph Security API](https://aka.ms/graphsecuritydocs)
+- [API reference](https://aka.ms/graphsecurityreferencebetadocs)
 - [alert schema](https://aka.ms/graphsecurityalertschema)
 - [tiIndicator schema](https://aka.ms/graphsecuritytiindicators)
 - [Security Actions schema](https://aka.ms/graphsecurityaction)
 - [Secure Score schema](https://aka.ms/graphsecurescore)
 
-### Sample Code
+### Sample code
 
 - [Microsoft Graph Security samples](https://aka.ms/graphsecurityapicode)
 - [Contribute to Microsoft Graph Security samples](https://aka.ms/graphsecurityapicodecontribute)
 
-### Getting Help
+### Help and support
 
 - If you have questions on application or service or product integrations with the Microsoft Graph Security API, reach out to the [Using Microsoft Security Graph API tech community](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/bd-p/SecurityGraphAPI)
 - Follow discussions on [Stack Overflow](https://aka.ms/graphsecuritystackoverflow) with the tag: microsoft-graph-security.
 - If you find bugs in the samples or documentation requests or bugs file issues in the respective [sample repository](https://github.com/microsoftgraph/security-api-solutions/blob/master/sample-repos.md).
 - If you have new sample requests or issues that is not scoped to a single sample, [file issues](https://github.com/microsoftgraph/security-api-solutions/issues/new) in the [Microsoft Graph Security Solutions repository](https://github.com/microsoftgraph/security-api-solutions).
 
-### Getting to Market
+### Getting to market
 
-- [Microsoft Partner Network](https://partner.microsoft.com/) – The primary program for partnering with Microsoft is the Microsoft Partner Network. Graph Security integrations fall into the [MPN Independent Software Vendor (ISV)](https://partner.microsoft.com/isv-resource-hub) track.
+- [Microsoft Partner Network](https://partner.microsoft.com/) – The primary program for partnering with Microsoft is the Microsoft Partner Network. Microsoft Graph Security integrations fall into the [MPN Independent Software Vendor (ISV)](https://partner.microsoft.com/isv-resource-hub) track.
 - [Microsoft Intelligent Security Association](https://www.microsoft.com/security/partnerships/intelligent-security-association) is the program specifically for Microsoft Security Partners to help enrich your security products and improve customer discoverability of your integrations to Microsoft Security products.
-- Microsoft AppSource – As a Microsoft Graph Security API partner you can list your graph integration as an [listing in the Microsoft AppSource Marketplace](https://appsource.microsoft.com/partners/signup).
+- Microsoft AppSource – As a Microsoft Graph Security API partner, you can list your Microsoft Graph integration [in the Microsoft AppSource Marketplace](https://appsource.microsoft.com/partners/signup).
