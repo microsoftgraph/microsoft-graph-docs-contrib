@@ -1,16 +1,16 @@
 ---
-title: "Create tiIndicator"
+title: "Create threat intelligence indicator"
 description: "Create a new tiIndicator."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# Create tiIndicator
+# Create threat intelligence indicator
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [tiIndicator](../resources/tiindicator.md).
+Create a new [tiIndicator](../resources/tiindicator.md) object.
 
 ## Permissions
 
