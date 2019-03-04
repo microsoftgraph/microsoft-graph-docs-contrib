@@ -117,6 +117,10 @@ Content-Type: application/json
 ```
 > **Note:** These actions may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. You may retry these actions later, at any time, without having to wait for another authorization challenge, for example when the conditions of access have change. Note that any resource changes in the time period from when the challenge was sent, to when the app re-authorizes the subscription successfully, will be lost. The app will need to fetch those changes on its own.@@@provide guidance as in the Outlook API blog@@@
 
+### "Missed notifications"@@@
+
+@@@ - add a secion describing the re-sync required signals @@@
+
 ### Future-proof the code handling lifecycle notifications
 
 In the future Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: `lifecycleNotificationUrl`, but they may have a different a slightly different schema and properties, specific to the scenario for which they will be issued.
