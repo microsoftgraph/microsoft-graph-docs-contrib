@@ -27,7 +27,7 @@ Alerts are potential security issues within a customer's tenant that Microsoft o
 
 Alerts from the following providers are available via the Microsoft Graph Security API. Support for GET alerts, PATCH alerts (updates are available via the Microsoft Graph Security API but might not be exposed in the provider’s management experience), and Subscribe (via webhooks) is indicated in the following table.
 
-| Security provider | GET alert| PATCH alert| Subscribe to alert|
+| Security provider | <p align="center">GET alert</p>| <p align="center">PATCH alert</p>| <p align="center">Subscribe to alert</p>|
 |:------------------|:---------|:-----------|:------------------|
 |[Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
 |[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
