@@ -59,7 +59,7 @@ The following array defines two changes. The first inserts an image above a para
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url-or-part-name" alt="Image above the target paragraph" />'
+    'content':'<img src="image-data-url-or-part-name" alt="Image above the target paragraph" />'
   }, 
   {
     'target':'#list-id',
@@ -276,7 +276,7 @@ The following example adds two sibling nodes to the page. It adds an image above
      'target':'#para1',
      'action':'insert',
      'position':'before',
-     'content':'<img src="image-url-or-part-name" alt="Image inserted above the target" />'
+     'content':'<img src="image-data-url-or-part-name" alt="Image inserted above the target" />'
   },
   {
     'target':'#para2',
@@ -380,7 +380,7 @@ Authorization: Bearer {token}
     'target':'#para-id',
     'action':'insert',
     'position':'before',
-    'content':'<img src="image-url" alt="New image from a URL" />'
+    'content':'<img src="image-data-url" alt="New image from a URL" />'
   }, 
   {
     'target':'#list-id',
