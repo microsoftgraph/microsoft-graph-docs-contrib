@@ -20,11 +20,11 @@ An app needs to implement logic additional to the standard [notification pattern
 - the app registers a separate new notification url to receive authorization challenges
 - the app responds to the challenges by calling a specific API in Microsoft Graph; the app has to be able to obtain authentication tokens to make these calls, the same as in the subscription creation or renewal scenarios.
 
-The Outlook service may also send special notifications if some notifications may not have been delivered to the app. An app may handle those by re-syncing resource data using Microsoft Graph, or it may choose to ignore them.
+The Outlook service may also send special signals if some notifications may not have been delivered to the app. An app may handle those by re-syncing resource data using Microsoft Graph, or it may choose to ignore them.
 
 ## Creating a subscription
 
-When creating a subscription, a separate notification endpoint needs to be specified, using the `lifecycleNotificationUrl` property; this is where the authorization challenges will be delivered. If the property is not set, the challenges will not be sent, and the app will not be aware of the need to re-authorize the subscription.
+When creating a subscription, a separate notification endpoint needs to be specified, using the `lifecycleNotificationUrl` property; this is where the special notifications will be delivered. If the property is not set, the notifications will not be sent and the app will not be aware of the need to re-authorize the subscription or to re-sync missing data.
 
 #### Subscription request example
 
@@ -119,16 +119,11 @@ Content-Type: application/json
 ```
 > **Note:** These actions may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. You may retry these actions later, at any time, without having to wait for another authorization challenge, for example when the conditions of access have change. Note that any resource changes in the time period from when the challenge was sent, to when the app re-authorizes the subscription successfully, will be lost. The app will need to fetch those changes on its own.@@@provide guidance as in the Outlook API blog@@@
 
-## "Missed notifications"@@@
+## Responding to data re-sync notifications
 
-@@@ - add a secion describing the re-sync required signals @@@
-
-There are cases when some notifications could not be delivered to your application. The service will notify your app about the need to re-sync data corresponding to the missed notifications.
-
+These signals inform the app that some notifications may have not been delivered. You should decide if your app ignores or handles these signals.
 
 ### Notification example
-
-@@@confirm the actual shape of the notification
 
 ```json
 {
@@ -144,9 +139,22 @@ There are cases when some notifications could not be delivered to your applicati
 }
 ```
 
+A few things to note about this type of notification:
+- The `"lifecycleEvent": "dataResyncRequired"` field designates this as a signal about missed notifications..
+- The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state
+- `value` is an array, so multiple signals may be batched together, the same as for resource notifications. You should process each notification in the batch, and react to it.
+
+### Action to take
+
+1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
+  - If you ignore these, signals, do nothing else. Otherwise:
+2. [Validate]((webhooks.md#notifications)) the authenticity of the notification.
+3. Perform data resync, from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
+
+
 ## Future-proof the code handling lifecycle notifications
 
-In the future Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: `lifecycleNotificationUrl`, but they may have a different a slightly different schema and properties, specific to the scenario for which they will be issued.
+In the future Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: `lifecycleNotificationUrl`, but they will have a different value under `lifecycleEvent` and may contain a slightly different schema and properties, specific to the scenario for which they will be issued.
 
 You should implement your code in a future-proof way so it does not break when Graph introduces new types of notifications. We recommend the following approach:
 
