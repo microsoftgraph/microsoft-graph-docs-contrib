@@ -40,19 +40,19 @@ Tag alerts with additional context or threat intelligence to inform response and
 
 Dive deep into related security-relevant inventory (like users, hosts, and apps), then add organizational context from other Microsoft Graph providers (Azure AD, Microsoft Intune, Office 365) to bring business and security contexts together and improve threat response.
 
-## Automate security workflows and reporting
+### Automate security workflows and reporting
 
 Automate security management, monitoring, and investigations to improve operational efficiencies-and response times. Get deeper insights and context by integrating Microsoft Graph Security into your reports and dashboards.
 
-## Get deep insights to train security solutions
+### Get deep insights to train security solutions
 
 Visualize your data across different security products running in your organization to get deeper security insights. Discover opportunities to learn from the data and train your security solutions. The schema provides multiple properties to pivot on to build rich exploratory datasets using your security data.
 
-## Utilize your threat intelligence in Microsoft security solutions (preview)
+### Utilize your threat intelligence in Microsoft security solutions (preview)
 
 Automatically send your threat indicators to Microsoft security solutions to enable `alert`, `block`, or `allow` actions. Use the Microsoft Graph Security API directly or take advantage of integrations with leading threat intelligence platforms.
 
-## Act quickly in response to new threats (preview)
+### Act quickly in response to new threats (preview)
 
 Enable swift action to defend against new threats, such as actions to block files, URLs, domains, or IP addresses from within your security tools and workflows.
 
