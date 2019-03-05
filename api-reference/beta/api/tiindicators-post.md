@@ -38,7 +38,7 @@ POST /security/tiIndicators
 
 ## Request body
 
-In the request body, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one [email](../resources/tiindicator.md#Indicator-Observables---Email), [file](../resources/tiindicator.md#Indicator-Observables---File), or [network](../resources/tiindicator.md#Indicator-Observables---Network) observable.
+In the request body, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one [email](../resources/tiindicator.md#indicator-observables---email), [file](../resources/tiindicator.md#indicator-observables---file), or [network](../resources/tiindicator.md#indicator-observables---network) observable.
 
 ## Response
 
