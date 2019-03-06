@@ -1,12 +1,12 @@
 ---
-title: "ChartCollection: add"
-description: "Creates a new chart."
+title: "workbookChartCollection: add"
+description: "Creates a new workbookChart."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# ChartCollection: add
+# workbookChartCollection: add
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

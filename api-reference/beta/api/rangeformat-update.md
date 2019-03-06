@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and updated [workboo
 
 ### Update the format, fill, and font properties in three table cells
 
-The following examples demonstrate how to update properties of the [workbookRangeFormat](../resources/workbookrangeformat.md), [RangeFill](../resources/workbookrangefill.md), and [workbookRangeFont](../resources/workbookrangefont.md) properties of a specified range.
+The following examples demonstrate how to update properties of the [workbookRangeFormat](../resources/workbookrangeformat.md), [workbookRangeFill](../resources/workbookrangefill.md), and [workbookRangeFont](../resources/workbookrangefont.md) properties of a specified range.
 
 The result of this set of requests is a table with three cells formatted like the top three cells in the image below.
 

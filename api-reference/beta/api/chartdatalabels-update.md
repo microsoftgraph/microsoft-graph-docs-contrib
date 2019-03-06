@@ -1,12 +1,12 @@
 ---
-title: "Update chartdatalabels"
-description: "Update the properties of chartdatalabels object."
+title: "Update workbookChartDataLabels"
+description: "Update the properties of workbookchartdatalabels object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# Update chartdatalabels
+# Update workbookChartDataLabels
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

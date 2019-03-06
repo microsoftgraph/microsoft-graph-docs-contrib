@@ -1,12 +1,12 @@
 ---
-title: "Get ChartFont"
-description: "Retrieve the properties and relationships of chartfont object."
+title: "Get workbookChartFont"
+description: "Retrieve the properties and relationships of workbookChartFont object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# Get ChartFont
+# Get workbookChartFont
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [WorkbookChartFont](../resources/workbookchartfont.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [workbookChartFont](../resources/workbookchartfont.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

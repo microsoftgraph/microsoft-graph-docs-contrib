@@ -1,6 +1,6 @@
 ---
-title: "Update chartfont"
-description: "Update the properties of chartfont object."
+title: "Update workbookChartFont"
+description: "Update the properties of workbookChartFont object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"

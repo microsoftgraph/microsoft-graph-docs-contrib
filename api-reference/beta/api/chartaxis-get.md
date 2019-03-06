@@ -1,12 +1,12 @@
 ---
-title: "Get ChartAxis"
-description: "Retrieve the properties and relationships of chartaxis object."
+title: "Get workbookChartAxis"
+description: "Retrieve the properties and relationships of workbookChartAxis object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# Get ChartAxis
+# Get workbookChartAxis
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

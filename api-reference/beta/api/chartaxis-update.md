@@ -1,12 +1,12 @@
 ---
-title: "Update chartaxis"
-description: "Update the properties of chartaxis object."
+title: "Update workbookChartAxis"
+description: "Update the properties of workbookchartaxis object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# Update chartaxis
+# Update workbookChartAxis
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

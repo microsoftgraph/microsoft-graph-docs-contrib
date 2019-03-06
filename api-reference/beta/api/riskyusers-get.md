@@ -47,10 +47,11 @@ If successful, this method returns a `200 OK` response code and a [riskyUser](..
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_identityriskevent"
+  "name": "get_identityriskevent",
+   "sampleKeys":["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+GET https://graph.microsoft.com/beta/riskyUsers/{id}
 ```
 ##### Response
 Here is an example of the response.
