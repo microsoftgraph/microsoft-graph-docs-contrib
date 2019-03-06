@@ -63,7 +63,6 @@ GET https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.mediaReadLink": "identityExperienceFrameworkPolicies/B2C_1A_Test/$value",
     "id": "B2C_1A_Test"
 }
 ```
