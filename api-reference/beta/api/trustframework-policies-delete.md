@@ -1,8 +1,8 @@
 # Delete trustFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-Delete an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).
+>
+>Delete an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).
 
 ## Permissions
 
@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.ReadWrite.All|
+|Delegated (work or school account)|Policy.ReadWrite.TrustFramework|
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|Not supported.|
 
@@ -20,7 +20,7 @@ The work or school account must be a global administrator of the tenant.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /policies/identityExperienceFramework/{id}
+DELETE /trustFramework/policies/{id}
 ```
 
 ## Request headers
@@ -39,7 +39,7 @@ If successful, this method returns `204 No Content` response code.
 
 ## Example
 
-The following example deletes an **trustFrameworkPolicy**.
+The following example deletes a **trustFrameworkPolicy**.
 
 ##### Request
 
@@ -48,7 +48,7 @@ The following example deletes an **trustFrameworkPolicy**.
   "name": "delete_trustFrameworkPolicy"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/trustFramework/policy/B2C_1A_SocialAndLocalAccounts_Base
+DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base
 ```
 
 ##### Response

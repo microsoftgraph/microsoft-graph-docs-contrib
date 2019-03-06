@@ -1,7 +1,7 @@
 # Create trustFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
+>
 >Create a new [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).
 
 ## Permissions
@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.ReadWrite.All|
+|Delegated (work or school account)|Policy.ReadWrite.TrustFramework|
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|Not supported.|
 

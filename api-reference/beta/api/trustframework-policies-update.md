@@ -1,8 +1,8 @@
 # Update trustFrameworkPolicy
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
-
-> Update or insert (Upsert) in an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) will be created with the given content.
+>**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+>
+>Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or create a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) if one does not exist.
 
 ## Permissions
 
@@ -10,7 +10,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|Policy.ReadWrite.All|
+|Delegated (work or school account)|Policy.ReadWrite.TrustFramework, Policy.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|Not supported.|
 
@@ -19,8 +19,9 @@ The work or school account must be a global administrator of the tenant.
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-PUT /trustFramework/policies/{id}
+PUT /trustFramework/policies/{id}/$value
 ```
 
 ## Request headers
@@ -32,11 +33,17 @@ PUT /trustFramework/policies/{id}
 
 ## Request body
 
-In the request body, provide a XML representation of the [trustFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) object.
+In the request body, provide a XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details. If the [trustFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) existed, then it wil be updated. Else a [trustFrameworkPolicy](../resources/identityexperienceframeworkpolicy.md) will be created.
+If successful, this method returns `200 OK` response code.
+
+**Case [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists:** This will result in an update.
+
+**Case [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist:** This is similar to the [POST](trustframework-policies-create.md) method.
+
+If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 
@@ -49,7 +56,7 @@ The following example updates **trustFrameworkPolicy**.
   "name": "update_identityexperienceframework"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base
+PUT https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/$value
 Content-Type:application/xml
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
     <!---PolicyContent-->
@@ -63,9 +70,16 @@ Content-Type:application/xml
   "truncated": true
 } -->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_Test" PublicPolicyUri="http://tenantName.onmicrosoft.com/B2C_1A_Test">
+	.....
+	....
+	<!---PolicyContent-->
+	....
+	....
+</TrustFrameworkPolicy>
 ```
-
+If the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, then one will be created similar to the [POST](trustframework-policies-create.md) method
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
