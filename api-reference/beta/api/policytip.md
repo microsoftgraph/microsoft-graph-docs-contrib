@@ -5,6 +5,8 @@ author: "degoh"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
+# policytip Resource
+Details for the policytip Resource type.
 
 ### policyTip JSON 
 | Property	   | Type	|Description|
