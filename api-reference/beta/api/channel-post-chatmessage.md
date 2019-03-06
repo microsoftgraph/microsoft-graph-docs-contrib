@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /teams/{id}/channels/{id}/messages
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -33,6 +34,7 @@ POST /teams/{id}/channels/{id}/messages
 
 ## Request body
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
+Sending messages with attachments and images is not supported.
 
 ## Response
 
