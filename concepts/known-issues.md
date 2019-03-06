@@ -35,15 +35,6 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ## Microsoft Teams
 
-### Create chat thread API
-
-The current API to [create a chat thread](/graph/api/channel-post-chatthreads?view=graph-rest-beta) 
-will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel-list-messages?view=graph-rest-beta).
-
-### Graph Explorer and global admins
-
-Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
-
 ### GET /teams and POST /teams are not supported
 
 See [list all teams](teams-list-all-teams.md) and 
@@ -59,6 +50,12 @@ New teams will be listed.
 Certain old teams don't have a **resourceProvisioningOptions** property that contains "Team",
 which is set on newly created teams and teams that are visited in Microsoft Teams.
 In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
+
+### Installing and uninstalling applications using application permissions
+
+When uninstalling an app from a team using application permissions, the API will return a 500 error code even though the app was successfully uninstalled.
+
+When installing, updating, and uninstalling apps in a team using application permissions, audit log events are not written.
 
 ## Groups
 
@@ -381,6 +378,3 @@ In the meantime, to unblock development and testing you can use the following wo
 
 Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://msdn.microsoft.com/office/office365/api/api-catalog). For Azure Active Directory, please refer to the [Microsoft Graph or Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) blog post on the features that are only available through Azure AD Graph API.
 
-## Feedback
-
-> Your feedback is important to us. Connect with us on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph).

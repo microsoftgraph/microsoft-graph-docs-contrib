@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Update message
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a message object.
 ## Permissions
@@ -42,6 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 |body|ItemBody|The body of the message. Updatable only if isDraft = true.|
 |categories|String collection|The categories associated with the message.|
 |ccRecipients|Recipient collection|The Cc recipients for the message. |
+|flag|[followupFlag](../resources/followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|Recipient|The mailbox owner and sender of the message. Must correspond to the actual mailbox used. |
 |importance|String|The importance of the message. Possible values are: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
@@ -117,10 +118,15 @@ Content-length: 248
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update message",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
