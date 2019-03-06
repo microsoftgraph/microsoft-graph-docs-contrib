@@ -15,7 +15,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Not supported.    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChatMessage.PatchPolicyViolation.All to update DLP policy violation on a chat message. ChannelMessage.UpdatePolicyViolation.All to update DLP policy violation on a channel message. |
+|Application | ChatMessage.PatchPolicyViolation.All to update policyViolation on a chat message. ChannelMessage.UpdatePolicyViolation.All to update policyViolation on a channel message. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
