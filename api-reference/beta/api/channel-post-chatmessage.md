@@ -1,12 +1,12 @@
 ---
-title: "Create a message in a channel"
-description: "Create a new message in the specified channel."
+title: "Send a message in a channel"
+description: "Send a new message in the specified channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Create a message in a channel
+# Send a message to a channel
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,8 @@ POST /teams/{id}/channels/{id}/messages
 
 ## Request body
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
-Sending messages with attachments and images is not supported.
+
+> Note: Sending messages with attachments and images is not supported.
 
 ## Response
 
