@@ -112,7 +112,7 @@ Content-length: 160
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create message",
+  "description": "Send message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
