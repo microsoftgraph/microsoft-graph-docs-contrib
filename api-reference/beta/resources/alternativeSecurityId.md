@@ -1,12 +1,12 @@
 ---
 title: "alternativeSecurityId resource type"
-description: "For internal use only."
+description: "For internal use only. This complex type will be deprecated in the future."
 localization_priority: Normal
 ---
 
 # alternativeSecurityId resource type
 
-For internal use only.
+For internal use only. This complex type will be deprecated in the future.
 
 ## JSON representation
 

@@ -48,7 +48,7 @@ Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_identityriskevent",
-   "sampleKeys":["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
+  "sampleKeys":["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers/{id}
