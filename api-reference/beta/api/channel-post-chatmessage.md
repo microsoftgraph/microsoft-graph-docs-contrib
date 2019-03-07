@@ -112,7 +112,7 @@ Content-length: 160
     },
     "body": {
         "contentType": "html",
-        "content": "Hello World"
+        "content": "Hello World <at id=\"0\">Jane Smith</at>"
     },
     "attachments": [],
     "mentions": [
