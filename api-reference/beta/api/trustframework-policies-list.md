@@ -27,7 +27,7 @@ The work or school account must be a global administrator of the tenant.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/trustFramework/policies/
+GET /trustFramework/policies/
 ```
 
 ## Request headers
