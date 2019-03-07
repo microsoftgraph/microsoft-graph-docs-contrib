@@ -8,8 +8,8 @@ ms.prod: "microsoft-identity-platform"
 # Update trustFrameworkPolicy
 
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
->
->Update an existing Trust Framework Policy or create one if it does not exist.
+
+Update an existing Trust Framework Policy or create one if it does not exist.
 
 ## Permissions
 

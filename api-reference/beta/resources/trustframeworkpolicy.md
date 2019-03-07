@@ -8,13 +8,13 @@ ms.prod: "microsoft-identity-platform"
 # trustFrameworkPolicy resource type
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
->
->Represents a [Trust Framework](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom) Policy (also called [custom policy](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom)) in [Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview). A Trust Framework Policy gives full control over the User Journeys.  Use the Trust Framework Policy to:
->
->* Customize the signup and sign-in experiences fully. 
->* Federation to any SAML, Open ID Connect, or OAuth2 identity provider.
->* Integration with other systems or user data stores by calling REST endpoints.
->* Transformation of claims and customization of tokens issued to the relying party application.
+
+Represents a [Trust Framework](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-trustframeworks-defined-ief-custom) Policy (also called [custom policy](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom)) in [Azure Active Directory B2C](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview). A Trust Framework Policy gives full control over the User Journeys.  Use the Trust Framework Policy to:
+
+* Customize the signup and sign-in experiences fully. 
+* Federation to any SAML, Open ID Connect, or OAuth2 identity provider.
+* Integration with other systems or user data stores by calling REST endpoints.
+* Transformation of claims and customization of tokens issued to the relying party application.
 
 For more information, visit [https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-overview-custom).
 
