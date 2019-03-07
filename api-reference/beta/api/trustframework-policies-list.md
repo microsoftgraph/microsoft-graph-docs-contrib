@@ -1,8 +1,15 @@
+---
+title: "List all trustFrameworkPolicy"
+description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation lists all  trustFrameworkPolicy objects for the tenant."
+localization_priority: Normal
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
 # List trustFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 >
->List all [trustFrameworkPolicies](../resources/trustframeworkpolicy.md) in the tenant.
+>List all Trust Framework policies in the tenant/directory.
 
 ## Permissions
 

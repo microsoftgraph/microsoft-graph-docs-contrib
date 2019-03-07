@@ -1,8 +1,15 @@
+---
+title: "Delete trustFrameworkPolicy"
+description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation deletes an existing trustFrameworkPolicy object from the tenant."  
+localization_priority: Normal
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
 # Delete trustFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 >
->Delete an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).
+>Delete an existing Trust Framework Policy.
 
 ## Permissions
 

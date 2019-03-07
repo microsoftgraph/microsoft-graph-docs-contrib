@@ -1,8 +1,15 @@
+---
+title: "Create trustFrameworkPolicy"
+description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation creates a new trustFrameworkPolicy object for the tenant." 
+localization_priority: Normal
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
 # Create trustFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 >
->Create a new [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).
+>Create a new Trust Framework Policy.
 
 ## Permissions
 
@@ -32,7 +39,7 @@ POST /trustFramework/policies
 
 ## Request body
 
-In the request body, provide a XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.
+In the request body, provide a XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. The content type must be `application/xml`.
 
 ## Response
 
@@ -46,7 +53,7 @@ The following example creates an **trustFrameworkPolicy**.
 
 <!-- {
   "blockType": "request",
-  "name": "create__identityexperienceframework_from__identityexperienceframework"
+  "name": "create__trustframeworkpolicy_from__trustframeworkpolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/trustFramework/policies
@@ -61,7 +68,7 @@ Content-Type:application/xml
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.policy.identityExperienceFramework"
+  "@odata.type": "microsoft.graph.trustFramework.policy"
 } -->
 ```http
 HTTP/1.1 201 Created

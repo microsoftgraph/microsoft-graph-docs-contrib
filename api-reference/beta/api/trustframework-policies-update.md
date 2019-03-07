@@ -1,8 +1,15 @@
+---
+title: "Update trustFrameworkPolicy"
+description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation updates an existing trustFrameworkPolicy object or if one doesnt exist it creates one similar to the Post for the tenant. "
+localization_priority: Normal
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
 # Update trustFrameworkPolicy
 
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 >
->Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or create a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) if one does not exist.
+>Update an existing Trust Framework Policy or create one if it does not exist.
 
 ## Permissions
 
@@ -29,19 +36,17 @@ PUT /trustFramework/policies/{id}/$value
 |Name|Description|
 |:---------------|:----------|
 |Authorization|Bearer {token}. Required.|
-|Content-Type|application/json. Required.|
+|Content-Type|application/xml. Required.|
 
 ## Request body
 
-In the request body, provide a XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.
+In the request body, provide a XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. **Note:** the content type must be `application/xml`.
 
 ## Response
 
-If successful, this method returns `200 OK` response code.
+**Case [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists:** This will result in an update. If successful, this method returns `200 OK` response code.
 
-**Case [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists:** This will result in an update.
-
-**Case [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist:** This is similar to the [POST](trustframework-policies-create.md) method.
+**Case [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist:** This is similar to the [POST](trustframework-policies-create.md) method. If successful, this method returns `201 Created` response code.
 
 If unsuccessful, a `4xx` error will be returned with specific details.
 
@@ -53,7 +58,7 @@ The following example updates **trustFrameworkPolicy**.
 
 <!-- {
   "blockType": "request",
-  "name": "update_identityexperienceframework"
+  "name": "update_trustframeworkpolicy"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/$value
@@ -84,7 +89,7 @@ If the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exi
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update identityExperienceFramework",
+  "description": "Update trustframeworkpolicy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

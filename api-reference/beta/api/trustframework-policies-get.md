@@ -1,8 +1,15 @@
-# Get trustFrameworkPolicy
+---
+title: "Get trustFrameworkPolicy Context"
+description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation retrieves the content of an existing trustFrameworkPolicy object from the tenant."
+localization_priority: Normal
+author: "valnav"
+ms.prod: "microsoft-identity-platform"
+---
+# Get trustFrameworkPolicy Content
 
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 >
->Retrieve the properties of an existing [trustFrameworkPolicy](../resources/trustFrameworkpolicy.md).
+>Retrieve the contents of an existing Trust Framework Policy.
 
 ## Permissions
 
@@ -20,8 +27,7 @@ The work or school account must be a global administrator of the tenant.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /policies/identityExperienceFramework/{id}
-GET /policies/identityExperienceFramework/{id}/$value
+GET /trustFramework/policies/{id}/$value
 ```
 
 ## Request headers
@@ -36,7 +42,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a XML representation of the [trustFrameworkPolicy](../resources/trustFrameworkpolicy.md) in the response body.
+If successful, this method returns `200 OK` response code and a XML representation of the [trustFrameworkPolicy](../resources/trustFrameworkpolicy.md) in the response body.  **Note:** the response content type will be `application/xml`.
 
 ## Example
 
@@ -49,7 +55,7 @@ The following example retrieves a specific **trustFrameworkPolicy**.
   "name": "get_trustFramework"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test
+https://graph.microsoft.com/v1.0/trustFramework/policies/B2C_1A_Test/$value
 ```
 
 ##### Response
@@ -61,20 +67,6 @@ GET https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-{
-    "id": "B2C_1A_Test"
-}
-```
-**Request**
-
-```http
-https://graph.microsoft.com/v1.0/trustFramework/policies/B2C_1A_Test/$value
-```
-
-**Response**
-```http
-HTTP/1.1 200 OK
 Content-Type application/xml
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_Test" PublicPolicyUri="http://tenantName.onmicrosoft.com/B2C_1A_Test">
 	.....
@@ -84,11 +76,12 @@ Content-Type application/xml
 	....
 </TrustFrameworkPolicy>
 ```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get identityExperienceFramework",
+  "description": "Get trustFramework policy",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
