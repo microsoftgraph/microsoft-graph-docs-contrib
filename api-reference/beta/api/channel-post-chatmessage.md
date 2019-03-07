@@ -55,8 +55,21 @@ Content-type: application/json
 {
   "body": {
     "contentType": "html",
-    "content": "Hello World"
-  }
+    "content": "Hello World <at id=\"0\">Jane Smith</at>"
+  },
+  "mentions": [
+    {
+      "id": 0,
+      "mentionText": "Jane Smith",
+      "mentioned": {
+        "user": {
+          "displayName": "Jane Smith",
+          "id": "ef1c916a-3135-4417-ba27-8eb7bd084193",
+          "userIdentityType": "aadUser"
+        }
+      }
+    }
+  ]
 }
 ```
 
@@ -102,7 +115,22 @@ Content-length: 160
         "content": "Hello World"
     },
     "attachments": [],
-    "mentions": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "Jane Smith",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "ef1c916a-3135-4417-ba27-8eb7bd084193",
+                    "displayName": "Jane Smith",
+                    "userIdentityType": "aadUser"
+                }
+            }
+        }
+    ],
     "reactions": []
 }
 ```
