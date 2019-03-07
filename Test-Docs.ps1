@@ -8,8 +8,8 @@ $downloadedNuGet = $false
 $downloadedCsc = $false
 
 Write-Host "Repository location: ", $repoPath
-Write-Host "GitHub Token: ", $env:GITHUB_TOKEN
-Write-Host "Pull Request: ", $env:SYSTEM_PULLREQUEST_PULLREQUESTNUMBER
+Write-Host "GitHub Token: ", $(GITHUB_TOKEN)
+Write-Host "Pull Request: ", $(SYSTEM_PULLREQUEST_PULLREQUESTNUMBER)
 
 
 # Check for ApiDoctor in path
