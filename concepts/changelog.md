@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2019
 
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Add schedule resource under team with schedulingGroups, shifts, timeOffReasons and timesOff resources. |
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
