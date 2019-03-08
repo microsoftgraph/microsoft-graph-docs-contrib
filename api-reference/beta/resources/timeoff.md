@@ -10,17 +10,17 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A shift is a unit of scheduled work in the schedule. 
+A timeOff is a unit of scheduled work in the schedule. 
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Post shift](../api/shift-post.md) | [shift](shift.md) | Creates a new shift.|
-|[List shift](../api/shift-list.md) | [shift](shift.md) collection | Get the list of shifts in this schedule.|
-|[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a shift by id.|
-|[Put shift](../api/shift-put.md) | [shift](shift.md) | Updates a shift.|
-|[Delete shift](../api/shift-delete.md) | None | Deletes a shift from the schedule.|
+|[Post timeOff](../api/timeOff-post.md) | [timeOff](timeOff.md) | Creates a new timeOff.|
+|[List timeOff](../api/timeOff-list.md) | [timeOff](timeOff.md) collection | Get the list of timeOff in this schedule.|
+|[Get timeOff](../api/timeOff-get.md) | [timeOff](timeOff.md) | Get a timeOff by id.|
+|[Put timeOff](../api/timeOff-put.md) | [timeOff](timeOff.md) | Updates a timeOff.|
+|[Delete timeOff](../api/timeOff-delete.md) | None | Deletes a timeOff from the schedule.|
 
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                                                                      |

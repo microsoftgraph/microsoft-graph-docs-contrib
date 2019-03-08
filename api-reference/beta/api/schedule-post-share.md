@@ -48,7 +48,7 @@ POST /teams/{teamId}/schedule/share
 
 ## Response
 
-If successful, this method should return a `204 No Content` response code.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
