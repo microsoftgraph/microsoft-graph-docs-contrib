@@ -1,16 +1,16 @@
 ---
-title: "Creates a new shift"
-description: "Creates a new shift."
+title: "Updates a timeOff"
+description: "Updates a timeOff."
 author: "zivk"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Creates a new shift
+# Updates a timeOff
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [shift](../resources/shift.md).
+Updates a [timeOff](../resources/timeOff.md).
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/shifts
+PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 
 ## Request headers
@@ -39,9 +39,13 @@ POST /teams/{teamId}/schedule/shifts
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
+## Request body
+
+In the request body, supply a JSON representation of a [timeOff](../resources/timeOff.md) object.
+
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method should return a `200 OK` response code and a [timeOff](../resources/timeOff.md) object in the response body.
 
 ## Example
 
@@ -50,46 +54,26 @@ If successful, this method should return a `200 OK` response code and a [shift](
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "shift-post"
+  "name": "timeOff-put"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts
+PUT https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
 Content-type: application/json
+Prefer: return=representation
 
 {
   "userId": "string",
-  "schedulingGroupId": "string",
-  "sharedShift": {
-    "notes": "string",
-    "displayName": "string",
+  "sharedTimeOff": {
+    "timeOffReasonId": "string",
     "startDateTime": "2018-10-04T00:58:45.340Z",
     "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
+    "theme": "white"
   },
-  "draftShift": {
-    "notes": "string",
-    "displayName": "string",
+  "draftTimeOff": {
+    "timeOffReasonId": "string",
     "startDateTime": "2018-10-04T00:58:45.340Z",
     "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
+    "theme": "white"
   }
 }
 ```
@@ -102,7 +86,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.timeOff"
 } -->
 
 ```http
@@ -113,38 +97,17 @@ Content-length: 401
 {
   "id": "string",
   "userId": "string",
-  "schedulingGroupId": "string",
-  "sharedShift": {
-    "notes": "string",
-    "displayName": "string",
+  "sharedTimeOff": {
+    "timeOffReasonId": "string",
     "startDateTime": "2018-10-04T00:58:45.340Z",
     "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
+    "theme": "white"
   },
-  "draftShift": {
-    "notes": "string",
-    "displayName": "string",
+  "draftTimeOff": {
+    "timeOffReasonId": "string",
     "startDateTime": "2018-10-04T00:58:45.340Z",
     "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
+    "theme": "white"
   },
   "createdDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
@@ -170,12 +133,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Updates a shift",
+  "description": "Updates a timeOff",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/shift-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeOff-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

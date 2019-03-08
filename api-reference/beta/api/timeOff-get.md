@@ -1,16 +1,16 @@
 ---
-title: "Get a shift by id"
-description: "Get a shift by id."
+title: "Get a timeOff by id"
+description: "Get a timeOff by id."
 author: "zivk"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Get a shift by id
+# Get a timeOff by id
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [shift](../resources/shift.md) by id.
+Get a [timeOff](../resources/timeOff.md) by id.
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/shifts/{shiftId}
+GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method should return a `200 OK` response code and a [timeOff](../resources/timeOff.md) object in the response body.
 
 ## Example
 
@@ -50,10 +50,10 @@ If successful, this method should return a `200 OK` response code and a [shift](
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "shift-get"
+  "name": "timeOff-get"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 
 #### Response
@@ -64,7 +64,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.timeOff"
 } -->
 
 ```http
@@ -75,38 +75,17 @@ Content-length: 401
 {
   "id": "string",
   "userId": "string",
-  "schedulingGroupId": "string",
-  "sharedShift": {
-    "notes": "string",
-    "displayName": "string",
+  "sharedTimeOff": {
+    "timeOffReasonId": "string",
     "startDateTime": "2018-10-04T00:58:45.340Z",
     "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
+    "theme": "white"
   },
-  "draftShift": {
-    "notes": "string",
-    "displayName": "string",
+  "draftTimeOff": {
+    "timeOffReasonId": "string",
     "startDateTime": "2018-10-04T00:58:45.340Z",
     "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "code": "string",
-        "displayName": "string"
-      }
-    ]
+    "theme": "white"
   },
   "createdDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
@@ -132,12 +111,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get a shift by id",
+  "description": "Get a timeOff by id",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/shift-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeOff-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

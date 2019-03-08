@@ -1,15 +1,15 @@
 ---
-title: "Get the list of shifts in this schedule"
-description: "Get the list of shifts in this schedule."
+title: "Get the list of timeOffs in this schedule"
+description: "Get the list of timeOffs in this schedule."
 author: "zivk"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Get a shift by id
+# Get a timeOff by id
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [shifts](../resources/shift.md) in this [schedule](../resources/schedule.md).
+Get the list of [timeOffs](../resources/timeOff.md) in this [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/shifts
+GET /teams/{teamId}/schedule/timesOff
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/shifts
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a collection of [shift](../resources/shift.md) objects in the response body.
+If successful, this method should return a `200 OK` response code and a collection of [timeOff](../resources/timeOff.md) objects in the response body.
 
 ## Example
 
@@ -49,10 +49,10 @@ If successful, this method should return a `200 OK` response code and a collecti
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "shift-list"
+  "name": "timeOff-list"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=sharedShift/startDateTime ge 2018-10-04T00:58:45.332Z and sharedShift/endDateTime le 2018-10-04T00:58:45.332Z and draftShift/startDateTime ge 2018-10-04T00:58:45.332Z and draftShift/endDateTime le 2018-10-04T00:58:45.332Z
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sharedTimeOff/startDateTime ge 2018-10-04T00:58:45.332Z and sharedTimeOff/endDateTime le 2018-10-04T00:58:45.332Z and draftTimeOff/startDateTime ge 2018-10-04T00:58:45.332Z and draftTimeOff/endDateTime le 2018-10-04T00:58:45.332Z
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.shift"
+  "@odata.type": "microsoft.graph.timeOff"
 } -->
 
 ```http
@@ -79,38 +79,17 @@ Content-length: 401
     {
       "id": "string",
       "userId": "string",
-      "schedulingGroupId": "string",
-      "sharedShift": {
-        "notes": "string",
-        "displayName": "string",
+      "sharedTimeOff": {
+        "timeOffReasonId": "string",
         "startDateTime": "2018-10-04T00:58:45.340Z",
         "endDateTime": "2018-10-04T00:58:45.340Z",
-        "theme": "white",
-        "activities": [
-          {
-            "isPaid": true,
-            "startDateTime": "2018-10-04T00:58:45.340Z",
-            "endDateTime": "2018-10-04T00:58:45.340Z",
-            "code": "string",
-            "displayName": "string"
-          }
-        ]
+        "theme": "white"
       },
-      "draftShift": {
-        "notes": "string",
-        "displayName": "string",
+      "draftTimeOff": {
+        "timeOffReasonId": "string",
         "startDateTime": "2018-10-04T00:58:45.340Z",
         "endDateTime": "2018-10-04T00:58:45.340Z",
-        "theme": "white",
-        "activities": [
-          {
-            "isPaid": true,
-            "startDateTime": "2018-10-04T00:58:45.340Z",
-            "endDateTime": "2018-10-04T00:58:45.340Z",
-            "code": "string",
-            "displayName": "string"
-          }
-        ]
+        "theme": "white"
       },
       "createdDateTime": "2018-10-04T00:58:45.340Z",
       "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
@@ -138,12 +117,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get the list of shifts in this schedule",
+  "description": "Get the list of timeOffs in this schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/shift-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeOff-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

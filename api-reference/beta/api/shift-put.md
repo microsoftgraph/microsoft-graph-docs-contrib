@@ -107,7 +107,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.schedule"
+  "@odata.type": "microsoft.graph.shift"
 } -->
 
 ```http
