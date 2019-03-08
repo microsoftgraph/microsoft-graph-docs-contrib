@@ -19,8 +19,8 @@ A timeOffReason is a valid reason to take time-off in the schedule.
 |[Post timeOffReason](../api/timeOffReason-post.md) | [timeOffReason](timeOffReason.md) | Creates a new timeOffReason.|
 |[List timeOffReason](../api/timeOffReason-list.md) | [timeOffReason](timeOffReason.md) collection | Get the list of timeOffReason in this schedule.|
 |[Get timeOffReason](../api/timeOffReason-get.md) | [timeOffReason](timeOffReason.md) | Get a timeOffReason by id.|
-|[Put timeOffReason](../api/timeOffReason-put.md) | [timeOffReason](timeOffReason.md) | Updates the timeOffReason.|
-|[Delete timeOffReason](../api/timeOffReason-delete.md) | None | Marks a timeOffReason as not active.|
+|[Put timeOffReason](../api/timeOffReason-put.md) | [timeOffReason](timeOffReason.md) | Updates a timeOffReason.|
+|[Delete timeOffReason](../api/timeOffReason-delete.md) | None | Marks a timeOffReason as inactive.|
 
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                 |

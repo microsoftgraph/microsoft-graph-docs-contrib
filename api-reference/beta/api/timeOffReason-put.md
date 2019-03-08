@@ -1,16 +1,16 @@
 ---
-title: "Creates a new timeOff"
-description: "Creates a new timeOff."
+title: "Updates a timeOffReason"
+description: "Updates a timeOffReason."
 author: "zivk"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Creates a new timeOff
+# Updates a timeOffReason
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [timeOff](../resources/timeOff.md).
+Updates a [timeOffReason](../resources/timeOffReason.md).
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/timesOff
+PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
 ## Request headers
@@ -39,9 +39,13 @@ POST /teams/{teamId}/schedule/timesOff
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
+## Request body
+
+In the request body, supply a JSON representation of a [timeOffReason](../resources/timeOffReason.md) object.
+
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [timeOff](../resources/timeOff.md) object in the response body.
+If successful, this method should return a `200 OK` response code and a [timeOffReason](../resources/timeOffReason.md) object in the response body.
 
 ## Example
 
@@ -50,26 +54,17 @@ If successful, this method should return a `200 OK` response code and a [timeOff
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "timeOff-post"
+  "name": "timeOffReason-put"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff
+PUT https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 Content-type: application/json
+Prefer: return=representation
 
 {
-  "userId": "string",
-  "sharedTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  }
+  "displayName": "string",
+  "iconType": "none",
+  "isActive": true
 }
 ```
 
@@ -81,7 +76,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type": "microsoft.graph.timeOffReason"
 } -->
 
 ```http
@@ -91,19 +86,9 @@ Content-length: 401
 
 {
   "id": "string",
-  "userId": "string",
-  "sharedTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
+  "displayName": "string",
+  "iconType": "none",
+  "isActive": true,
   "createdDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedBy": {
@@ -128,12 +113,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Creates a new timeOff",
+  "description": "Updates a timeOffReason",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeOff-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeOffReason-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

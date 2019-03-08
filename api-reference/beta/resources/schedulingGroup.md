@@ -19,8 +19,8 @@ A schedulingGroup is a logical grouping of members in the schedule (usually by r
 |[Post schedulingGroup](../api/schedulingGroup-post.md) | [schedulingGroup](schedulingGroup.md) | Creates a new schedulingGroup.|
 |[List schedulingGroup](../api/schedulingGroup-list.md) | [schedulingGroup](schedulingGroup.md) collection | Get the list of schedulingGroup in this schedule.|
 |[Get schedulingGroup](../api/schedulingGroup-get.md) | [schedulingGroup](schedulingGroup.md) | Get a schedulingGroup by id.|
-|[Put schedulingGroup](../api/schedulingGroup-put.md) | [schedulingGroup](schedulingGroup.md) | Updates the schedulingGroup.|
-|[Delete schedulingGroup](../api/schedulingGroup-delete.md) | None | Marks a schedulingGroup as not active.|
+|[Put schedulingGroup](../api/schedulingGroup-put.md) | [schedulingGroup](schedulingGroup.md) | Updates a schedulingGroup.|
+|[Delete schedulingGroup](../api/schedulingGroup-delete.md) | None | Marks a schedulingGroup as inactive.|
 
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                 |

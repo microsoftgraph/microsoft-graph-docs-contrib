@@ -170,7 +170,7 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Updates a shift",
+  "description": "Creates a new shift",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

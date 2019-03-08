@@ -1,16 +1,16 @@
 ---
-title: "Creates a new timeOff"
-description: "Creates a new timeOff."
+title: "Creates a new timeOffReason"
+description: "Creates a new timeOffReason."
 author: "zivk"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Creates a new timeOff
+# Creates a new timeOffReason
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [timeOff](../resources/timeOff.md).
+Creates a new [timeOffReason](../resources/timeOffReason.md).
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/timesOff
+POST /teams/{teamId}/schedule/timeOffReasons
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/timesOff
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [timeOff](../resources/timeOff.md) object in the response body.
+If successful, this method should return a `200 OK` response code and a [timeOffReason](../resources/timeOffReason.md) object in the response body.
 
 ## Example
 
@@ -50,26 +50,16 @@ If successful, this method should return a `200 OK` response code and a [timeOff
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "timeOff-post"
+  "name": "timeOffReason-post"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 Content-type: application/json
 
 {
-  "userId": "string",
-  "sharedTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  }
+  "displayName": "string",
+  "iconType": "none",
+  "isActive": true
 }
 ```
 
@@ -81,7 +71,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type": "microsoft.graph.timeOffReason"
 } -->
 
 ```http
@@ -91,19 +81,9 @@ Content-length: 401
 
 {
   "id": "string",
-  "userId": "string",
-  "sharedTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
+  "displayName": "string",
+  "iconType": "none",
+  "isActive": true,
   "createdDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedBy": {
@@ -128,12 +108,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Creates a new timeOff",
+  "description": "Creates a new timeOffReason",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeOff-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeOffReason-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

@@ -1,15 +1,15 @@
 ---
-title: "Get the list of timesOff in this schedule"
-description: "Get the list of timesOff in this schedule."
+title: "Get the list of timeOffReason in this schedule"
+description: "Get the list of timeOffReason in this schedule."
 author: "zivk"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Get a timeOff by id
+# Get a timeOffReason by id
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [timesOff](../resources/timeOff.md) in this [schedule](../resources/schedule.md).
+Get the list of [timeOffReasons](../resources/timeOffReason.md) in this [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/timesOff
+GET /teams/{teamId}/schedule/timeOffReasons
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/timesOff
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a collection of [timeOff](../resources/timeOff.md) objects in the response body.
+If successful, this method should return a `200 OK` response code and a collection of [timeOffReason](../resources/timeOffReason.md) objects in the response body.
 
 ## Example
 
@@ -49,14 +49,11 @@ If successful, this method should return a `200 OK` response code and a collecti
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "timeOff-list"
+  "name": "timeOffReason-list"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sharedTimeOff/startDateTime ge 2018-10-04T00:58:45.332Z and sharedTimeOff/endDateTime le 2018-10-04T00:58:45.332Z and draftTimeOff/startDateTime ge 2018-10-04T00:58:45.332Z and draftTimeOff/endDateTime le 2018-10-04T00:58:45.332Z
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```
-
-## Optional query parameters
-This method supports the $filter [OData query parameters](/graph/query-parameters) to help customize the response.
 
 #### Response
 
@@ -66,7 +63,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type": "microsoft.graph.timeOffReason"
 } -->
 
 ```http
@@ -78,19 +75,9 @@ Content-length: 401
   "value": [
     {
       "id": "string",
-      "userId": "string",
-      "sharedTimeOff": {
-        "timeOffReasonId": "string",
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "theme": "white"
-      },
-      "draftTimeOff": {
-        "timeOffReasonId": "string",
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
-        "theme": "white"
-      },
+      "displayName": "string",
+      "iconType": "none",
+      "isActive": true,
       "createdDateTime": "2018-10-04T00:58:45.340Z",
       "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
       "lastModifiedBy": {
@@ -117,12 +104,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get the list of timesOff in this schedule",
+  "description": "Get the list of timeOffReason in this schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeOff-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeOffReason-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
