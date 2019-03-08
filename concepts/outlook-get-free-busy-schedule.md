@@ -161,15 +161,17 @@ The least privileged permission required by **getSchedule** is Calendar.Read.
 
 
 ## Event data returned
-The least privileged permission required by **getSchedule** to get free/busy information is Calendar.Read. Depending on your app scenario, this can be consented by the signed-in user or administrator.
+The least privileged permission required by **getSchedule** for an app to get free/busy information is Calendar.Read. Depending on your app scenario, this can be consented by the signed-in user or administrator.
 
-Other than the free/busy status and working hours of requested entities, **getSchedule** can also return the subject, location, and isPrivate properties of an event, provided that:
+Other than the free/busy status and working hours of the requested users, **getSchedule** can also return the **subject**, **location**, and **isPrivate** properties of an event, provided that:
 
 - The event is marked with low sensitivity level - `normal` or `personal` - 
 AND one or more of the following conditions apply:
 
-   - The requested user’s calendar settings allow all the users in the organization to view subject lines and locations
+   - The requested user’s calendar settings allow the signed-in user to view subject lines and locations
    - The requested user’s calendar is shared with the signed-in user
+
+These conditions apply regardless of whether the signed-in user is an administrator in the organization. The requested user can control in Outlook how much event information is displayed or returned, both in Outlook and in an app calling **getSchedule**.
 
 ## Time zone representation
 By default, the start and end times of the returned schedule items are represented in UTC. You can use a `Prefer` header to specify a time zone appropriate for your app. As an example: 
