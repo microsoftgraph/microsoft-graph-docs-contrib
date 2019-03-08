@@ -166,7 +166,7 @@ The least privileged permission required by **getSchedule** to get free/busy inf
 Other than the free/busy status and working hours of requested entities, **getSchedule** can also return the subject, location, and isPrivate properties of an event, provided that:
 
 - The event is marked with low sensitivity level - `normal` or `personal` - 
-AND one or more of the following conditions applies:
+AND one or more of the following conditions apply:
 
    - The requested user’s calendar settings allow all the users in the organization to view subject lines and locations
    - The requested user’s calendar is shared with the signed-in user
