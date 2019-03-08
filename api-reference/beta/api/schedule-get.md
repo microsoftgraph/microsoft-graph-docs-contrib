@@ -44,10 +44,6 @@ GET /teams/{teamId}/schedule
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
-## Request body
-
-In the request body, supply a JSON representation of a [schedule](../resources/schedule.md) object.
-
 ## Response
 
 If successful, this method should return a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
