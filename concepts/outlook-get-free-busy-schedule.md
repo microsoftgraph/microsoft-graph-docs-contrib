@@ -59,7 +59,6 @@ Content-type: application/json
             "availabilityView":"111111002222222200000000000000000000",
             "scheduleItems":[
                 {
-                    "isPrivate":false,
                     "status":"Tentative",
                     "start":{
                         "dateTime":"2018-08-06T09:00:00.0000000",
@@ -71,7 +70,6 @@ Content-type: application/json
                     }
                 },
                 {
-                    "isPrivate":false,
                     "status":"Busy",
                     "start":{
                         "dateTime":"2018-08-06T11:00:00.0000000",
@@ -165,14 +163,13 @@ The least privileged permission required by **getSchedule** is Calendar.Read.
 ## Event data returned
 The least privileged permission required by **getSchedule** to get free/busy information is Calendar.Read. Depending on your app scenario, this can be consented by the signed-in user or administrator.
 
-Other than the free/busy status and working hours of requested entities, **getSchedule** can also return the subject and location of an event, provided that:
+Other than the free/busy status and working hours of requested entities, **getSchedule** can also return the subject, location, and isPrivate properties of an event, provided that:
 
 - The event is marked with low sensitivity level - `normal` or `personal` - 
 AND one or more of the following conditions applies:
 
-   - The requested user’s calendar settings allow all the users in the organization to view titles and locations
+   - The requested user’s calendar settings allow all the users in the organization to view subject lines and locations
    - The requested user’s calendar is shared with the signed-in user
-   - The signed-in user is an administrator of the same organization as the requested user.
 
 ## Time zone representation
 By default, the start and end times of the returned schedule items are represented in UTC. You can use a `Prefer` header to specify a time zone appropriate for your app. As an example: 
