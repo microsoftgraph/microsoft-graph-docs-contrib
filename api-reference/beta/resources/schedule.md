@@ -1,12 +1,12 @@
 ---
 title: "schedule resource type"
-description: "A schedule is a collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team. "
+description: "A schedule is a collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team."
 author: "zivk"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# channel resource type
+# schedule resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,7 +17,8 @@ A schedule is a collection of [schedulingGroups](schedulingGroup.md), [shifts](s
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Put schedule](../api/schedule-put.md) | [schedule](schedule.md) | Creates or updates the schedule.|
-|[Get schedule](../api/schedule-get.md) | [channel](channel.md) | Read the schedule.|
+|[Get schedule](../api/schedule-get.md) | [schedule](schedule.md) | Gets the schedule.|
+|[Share schedule](../api/schedule-post-share.md) | None | Shares a time-range of the schedule with the schedule members.|
 
 ## Properties
 |Name                   |Type           |Req.|Nav.|computed|Description                                                                                                                                      |
