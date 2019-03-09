@@ -1,5 +1,5 @@
 ---
-title: "Get trustFrameworkPolicy Context"
+title: "Get trustFrameworkPolicy Content"
 description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation retrieves the content of an existing trustFrameworkPolicy object from the tenant."
 localization_priority: Normal
 author: "valnav"
@@ -55,7 +55,7 @@ The following example retrieves a specific **trustFrameworkPolicy**.
   "name": "get_trustFramework"
 }-->
 ```http
-https://graph.microsoft.com/v1.0/trustFramework/policies/B2C_1A_Test/$value
+https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test/$value
 ```
 
 ##### Response
