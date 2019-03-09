@@ -7210,6 +7210,19 @@
             href: api/riskyusers-list.md
           - name: Get
             href: api/riskyusers-get.md
+      - name: TrustFramework Policy
+        href: resources/trustframeworkpolicy.md
+        items:
+        - name: List trustFramework policies
+          href: api/trustframework-policies-list.md
+        - name: Create trustFramework policy
+          href: api/trustframework-policies-create.md
+        - name: Get trustFramework policy
+          href: api/identityprovider-get.md
+        - name: Upate trustFramework policy
+          href: api/identityprovider-update.md
+        - name: Delete trustFramework policy
+          href: api/identityprovider-delete.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:

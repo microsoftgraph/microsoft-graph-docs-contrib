@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2019
 
+### Azure AD B2C APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta |Introduced a new resource type [trustFramework policy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta). This resource type supports  [create](/graph/api/trustframework-policies-create?view=graph-rest-beta), [list](/graph/api/trustframework-policies-list?view=graph-rest-beta), [get](/graph/api/identityprovider-get?view=graph-rest-v1.0), [update](/graph/api/trustframework-policies-update?view=graph-rest-beta), and [delete](/graph/api/trustframework-policies-delete?view=graph-rest-beta) operations.|
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |
@@ -112,7 +118,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## January 2019
 
-### Azure AD APIs
+### Azure AD B2C APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
