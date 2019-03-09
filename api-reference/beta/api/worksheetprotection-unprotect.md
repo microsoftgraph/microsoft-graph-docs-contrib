@@ -1,12 +1,12 @@
 ---
-title: "WorksheetProtection: unprotect"
+title: "workbookWorksheetProtection: unprotect"
 description: "Unprotect a worksheet"
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# WorksheetProtection: unprotect
+# workbookWorksheetProtection: unprotect
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ Here is an example of how to call this API.
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "worksheetprotection_unprotect"
+  "name": "workbookworksheetprotection_unprotect"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/unprotect
@@ -77,7 +77,7 @@ HTTP/1.1 200 OK
 <!--
 {
   "type": "#page.annotation",
-  "description": "WorksheetProtection: unprotect",
+  "description": "workbookWorksheetProtection: unprotect",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -1,14 +1,14 @@
 ---
-title: "Worksheet resource type"
+title: "workbookWorksheet resource type"
 description: "An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 ---
 
-# Worksheet resource type
+# workbookWorksheet resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
@@ -17,7 +17,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Worksheet](../api/worksheet-get.md) | [workbookWorksheet](workbookchart.md) |Read properties and relationships of worksheet object.|
+|[Get Worksheet](../api/worksheet-get.md) | [workbookWorksheet](workbookworksheet.md) |Read properties and relationships of worksheet object.|
 |[Create Chart](../api/worksheet-post-charts.md) |[workbookChart](workbookchart.md)| Create a new Chart by posting to the charts collection.|
 |[List names](../api/worksheet-list-names.md) |[workbookNamedItem](workbooknameditem.md) collection| Get named item collection associated with the worksheet.|
 |[List charts](../api/worksheet-list-charts.md) |[workbookChart](workbookchart.md) collection| Get a Chart object collection.|
@@ -46,7 +46,7 @@ An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
 |charts|[workbookChart](workbookchart.md) collection|Returns collection of charts that are part of the worksheet. Read-only.|
 |names|[workbookNamedItem](workbooknameditem.md) collection|Returns collection of names that are associated with the worksheet. Read-only.|
 |pivotTables|[workbookPivotTable](workbookpivottable.md) collection| Collection of PivotTables that are part of the worksheet. |
-|protection|[workbookWorksheetProtection](worksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
+|protection|[workbookWorksheetProtection](workbookworksheetprotection.md)|Returns sheet protection object for a worksheet. Read-only.|
 |tables|[workbookTable](workbooktable.md) collection|Collection of tables that are part of the worksheet. Read-only.|
 
 ## JSON representation
@@ -78,5 +78,8 @@ Here is a JSON representation of the resource.
   "description": "Worksheet resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/workbookworksheet.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }-->

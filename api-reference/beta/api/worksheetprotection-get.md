@@ -1,16 +1,16 @@
 ---
-title: "Get WorksheetProtection"
-description: "Retrieve the properties and relationships of worksheetprotection object."
+title: "Get workbookWorksheetProtection"
+description: "Retrieve the properties and relationships of workbookworksheetprotection object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# Get WorksheetProtection
+# Get workbookWorksheetProtection
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of worksheetprotection object.
+Retrieve the properties and relationships of workbookWorksheetProtection object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,13 +39,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [WorksheetProtection](../resources/worksheetprotection.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [workbookWorksheetProtection](../resources/workbookworksheetprotection.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_worksheetprotection"
+  "name": "get_workbookworksheetprotection"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection
@@ -72,7 +72,7 @@ Content-length: 23
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get WorksheetProtection",
+  "description": "Get workbookWorksheetProtection",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

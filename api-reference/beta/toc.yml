@@ -7690,7 +7690,7 @@
           href: api/notebook-list-sectiongroups.md
         - name: Create section group
           href: api/notebook-post-sectiongroups.md
-      - name: Onenote Sections
+      - name: Sections
         href: resources/onenotesection.md
         items:
         - name: List sections
@@ -7720,12 +7720,12 @@
           href: api/sectiongroup-list-sections.md
         - name: Create section
           href: api/sectiongroup-post-sections.md
-      - name: Onenote Pages
+      - name: Pages
         href: resources/onenotepage.md
         items:
         - name: List pages
           href: api/onenote-list-pages.md
-        - name: Create pageresources/range.md
+        - name: Create page
           href: api/section-post-pages.md
         - name: Get page
           href: api/page-get.md
@@ -8137,7 +8137,7 @@
     - name: Social intelligence
       href: resources/social-overview.md
       items:
-      - name: Office Graph Insights
+      - name: Insights
         href: resources/officegraphinsights.md
         items:
         - name: Trending

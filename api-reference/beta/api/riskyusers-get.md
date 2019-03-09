@@ -1,16 +1,16 @@
 ---
-title: "Get riskyUsers"
+title: "Get riskyUser"
 description: "Retrieve the properties and relationships of a **riskyUsers** object."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "security"
 ---
 
-# Get riskyUsers
+# Get riskyUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a **riskyUsers** object.
+Retrieve the properties and relationships of a **riskyUser** object.
 
 > **Note:** This API requires an Azure AD Premium P2 license.
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{query}
+GET /riskyUsers/{id}
 ```
 
 
@@ -34,7 +34,6 @@ GET /riskyUsers/{query}
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -47,16 +46,17 @@ If successful, this method returns a `200 OK` response code and a [riskyUser](..
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_identityriskevent",
+  "name": "get_riskuser",
   "sampleKeys":["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/{id}
+GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "get_riskuser",
   "truncated": true,
   "@odata.type": "microsoft.graph.riskyUser"
 } -->
@@ -72,8 +72,8 @@ Content-Type: application/json
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
   "riskState": "atRisk",
-  "userDisplayName": "Jon Doe",
-  "userPrincipalName": "jon@contoso.com"
+  "userDisplayName": "Alex Wilbur",
+  "userPrincipalName": "alexw@contoso.com"
 }
 ```
 

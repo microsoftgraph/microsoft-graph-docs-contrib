@@ -10,7 +10,7 @@ ms.prod: "insights"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type containing properties of [officeGraphInsights](officegraphinsights.md).
+Complex type containing properties of [insights](officegraphinsights.md).
 
 ## JSON representation
 

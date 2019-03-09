@@ -10,7 +10,7 @@ ms.prod: "security"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a **riskyUsers** object.
+Retrieve the properties and relationships of a collection of **riskyUser** objects.
 
 > **Note:** This API requires an Azure AD Premium P2 license.
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{query}
+GET /riskyUsers
 ```
 ## Optional query parameters
 This method supports `$filter` to customize the query response. See the example later in this topic. 
@@ -35,7 +35,6 @@ This method supports `$filter` to customize the query response. See the example 
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -44,20 +43,21 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.
 ## Example
-##### Request 1
+##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_identityriskevent"
+  "name": "list_riskusers"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 
 ```
-##### Response 1
+##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "list_riskusers",
   "truncated": true,
   "isCollection":true,
   "@odata.type": "microsoft.graph.riskyUser"
@@ -65,8 +65,11 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-[
-    {
+
+{
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#riskyUsers",
+  "value":[
+      {
         "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
         "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
         "isGuest": true,
@@ -74,10 +77,11 @@ Content-Type: application/json
         "riskDetail": "adminConfirmedSigninCompromised",
         "riskLevel": "high",
         "riskState": "atRisk",
-        "userDisplayName": "Jon Doe",
-        "userPrincipalName": "jon@contoso.com"
-    }
-]
+        "userDisplayName": "Alex Wilbur",
+        "userPrincipalName": "alexw@contoso.com"
+      }
+  ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

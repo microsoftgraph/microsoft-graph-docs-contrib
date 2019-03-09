@@ -16,10 +16,10 @@ Represents an Excel table.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Table](../api/table-get.md) | [workbookTable](workbooktable.md) |Read properties and relationships of table object.|
-|[Create TableColumn](../api/table-post-columns.md) |[workbookTableColumn](workbooktablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
+|[Get workbookTable](../api/table-get.md) | [workbookTable](workbooktable.md) |Read properties and relationships of table object.|
+|[Create workbookTableColumn](../api/table-post-columns.md) |[workbookTableColumn](workbooktablecolumn.md)| Create a new TableColumn by posting to the columns collection.|
 |[List columns](../api/table-list-columns.md) |[workbookTableColumn](workbooktablecolumn.md) collection| Get a TableColumn object collection.|
-|[Create TableRow](../api/table-post-rows.md) |[workbookTableRow](workbooktablerow.md)| Create a new TableRow by posting to the rows collection.|
+|[Create workbookTableRow](../api/table-post-rows.md) |[workbookTableRow](workbooktablerow.md)| Create a new TableRow by posting to the rows collection.|
 |[List rows](../api/table-list-rows.md) |[workbookTableRow](workbooktablerow.md) collection| Get a TableRow object collection.|
 |[Update](../api/table-update.md) | [workbookTable](workbooktable.md)	|Update Table object. |
 |[Databodyrange](../api/table-databodyrange.md)|[workbookRange](workbookrange.md)|Gets the range object associated with the data body of the table.|
@@ -95,7 +95,7 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/table.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/workbooktable.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

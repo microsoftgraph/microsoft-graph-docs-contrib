@@ -1,12 +1,12 @@
 ---
-title: "Application resource type"
-description: "Represents the Excel application that manages the workbook."
+title: "workbookApplication resource type"
+description: "Represents the Excel workbookApplication that manages the workbook."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 ---
 
-# Application resource type
+# workbookApplication resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,8 +17,8 @@ Represents the Excel application that manages the workbook.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get Application](../api/excelapplication-get.md) | [Application](application.md) |Read properties and relationships of application object.|
-|[Calculate](../api/excelapplication-calculate.md)|None|Recalculate all currently opened workbooks in Excel.|
+|[Get workbookApplication](../api/workbookapplication-get.md) | [workbookApplication](workbookapplication.md) |Read properties and relationships of workbookApplication object.|
+|[Calculate](../api/workbookapplication-calculate.md)|None|Recalculate all currently opened workbooks in Excel.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -53,12 +53,12 @@ Here is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "Application resource",
+  "description": "workbookApplication resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/excelapplication.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/workbookapplication.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
