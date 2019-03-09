@@ -1,15 +1,15 @@
 ---
-title: "Create trustFrameworkPolicy"
+title: "Create a trustFrameworkPolicy"
 description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation creates a new trustFrameworkPolicy object for the tenant." 
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 ---
-# Create trustFrameworkPolicy
+# Create a trustFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new Trust Framework Policy.
+Create a new Trust Framework Policy. The request body contains the content in `application/xml`.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ If successful, this method returns `201 Created` response code and [trustFramewo
 
 ## Example
 
-The following example creates an **trustFrameworkPolicy**.
+The following example creates a **trustFrameworkPolicy**.
 
 ##### Request
 
