@@ -8346,7 +8346,7 @@
           href: api/channel-list-messagereplies.md
         - name: Get message reply
           href: api/channel-get-messagereply.md
-        - name: Create message
+        - name: Send message
           href: api/channel-post-chatmessage.md
         - name: Reply to message
           href: api/channel-post-messagereply.md

@@ -1,12 +1,12 @@
 ---
-title: "Create a message in a channel"
-description: "Create a new message in the specified channel."
+title: "Send a message in a channel"
+description: "Send a new message in the specified channel."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Create a message in a channel
+# Send a message to a channel
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /teams/{id}/channels/{id}/messages
 ```
+
 ## Request headers
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
@@ -33,6 +34,8 @@ POST /teams/{id}/channels/{id}/messages
 
 ## Request body
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
+
+> Note: Sending messages with attachments and images is not supported.
 
 ## Response
 
@@ -109,7 +112,7 @@ Content-length: 160
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create message",
+  "description": "Send message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
