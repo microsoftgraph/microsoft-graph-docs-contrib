@@ -19,6 +19,14 @@ The business flow template objects are automatically generated when the global a
 |:---------------|:--------|:----------|
 |[List businessFlowTemplates](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md) collection| Get the business flow templates appropriate to access reviews.|
 
+## Permissions
+
+|Permission type                        | Permissions (from least to most privileged)              |
+|:--------------------------------------|:---------------------------------------------------------|
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
+
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

@@ -29,7 +29,7 @@ Each tenant that has on-boarded Azure AD access reviews has one program, `Defaul
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All |
 
 
 ## Properties
