@@ -91,7 +91,7 @@ sections:
             src: ./images/index/logo_nodejs.svg
           title: Node.js
         - image:
-            src: ./images/index/logo_python.svg
+            src: ./images/index/logo_php.svg
           title: PHP
         - image:
             src: ./images/index/logo_python.svg
