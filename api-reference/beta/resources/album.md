@@ -1,5 +1,5 @@
 ---
-author: rgregg
+author: jeremyke
 ms.author: rgregg
 title: Album
 localization_priority: Normal

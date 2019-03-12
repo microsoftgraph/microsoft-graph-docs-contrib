@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: jeremyke
 title: Create a bundle from a folder
 localization_priority: Normal
 ms.prod: "sharepoint"
@@ -21,6 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
 
 ## Http Request
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /drive/bundles/createFromFolder
+```
 
 ### Request headers
 

@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: jeremyke
 title: List bundles
 localization_priority: Normal
 ms.prod: "sharepoint"
