@@ -13,6 +13,38 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2019
 
+### Microsoft Intune APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new entities:<br/>[windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration)<br/>|
+|Addition|beta|Added new complex types:<br/>[windowsFirewallRule](../resources/intune-deviceconfig-windowsfirewallrule)<br/>|
+|Addition|beta|Added new enum types:<br/>[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype)<br/>[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype)<br/>[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype)<br/>[windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes)<br/>[windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes)<br/>[windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype)<br/>[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope)<br/>[windowsUpdateNotificationDisplayOption](../resources/intune-deviceconfig-windowsupdatenotificationdisplayoption)<br/>|
+|Addition|beta|Added the [searchExistingIdentities](o:searchExistingIdentities:Collection(microsoft.graph.importedDeviceIdentity)) action on [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity) collection |
+|Addition|beta|Added the [assignResourceAccountToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md) action on [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity) |
+|Addition|beta|Added the [unassignResourceAccountFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md) action on [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity) |
+|Deletion|beta|Removed the following enum types:<br/>**defenderScheduleScanDay**<br/>|
+|Addition|beta|Added the **requiredAndroidSafetyNetDeviceAttestationType**, **appActionIfAndroidSafetyNetDeviceAttestationFailed**, **requiredAndroidSafetyNetAppsVerificationType** and **appActionIfAndroidSafetyNetAppsVerificationFailed** properties to the [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection) entity|
+|Addition|beta|Added the **supportsOemConfig** property to the [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp) entity|
+|Addition|beta|Added the **appSupportsOemConfig** property to the [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration) entity|
+|Addition|beta|Added the **requiredAndroidSafetyNetDeviceAttestationType**, **appActionIfAndroidSafetyNetDeviceAttestationFailed**, **requiredAndroidSafetyNetAppsVerificationType** and **appActionIfAndroidSafetyNetAppsVerificationFailed** properties to the [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection) entity|
+|Addition|beta|Added the **iCloudStorageDisabled** and **chooseYourLockScreenDisabled** properties to the [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile) entity|
+|Addition|beta|Added the **roleScopeTagIds** property to the [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration) entity|
+|Addition|beta|Added the **allowedOutboundClipboardSharingExceptionLength** property to the [managedAppProtection](../resources/intune-mam-managedappprotection) entity|
+|Addition|beta|Added the **fastFirstSignIn** property to the [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration) entity|
+|Addition|beta|Added the **tpmRequired** property to the [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy) entity|
+|Addition|beta|Added the **firewallRules** property to the [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration) entity|
+|Addition|beta|Added the **authenticationWebSignIn**, **privacyDisableLaunchExperience** and **appManagementPackageFamilyNamesToLaunchAfterLogOn** properties to the [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration) entity|
+|Deletion|beta|Removed the **defenderScheduleScanDay** property from the [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration) entity|
+|Addition|beta|Added the **deviceType** property to the [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile) entity|
+|Addition|beta|Added the **resourceName**, **skuNumber**, **systemFamily**, **azureActiveDirectoryDeviceId** and **managedDeviceId** properties to the [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity) entity|
+|Deletion|beta|Removed the **edgeKioskResetAfterIdleTimeInMinutes** property from the [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration) entity|
+|Addition|beta|Added the **userWindowsUpdateScanAccess** and **updateNotificationLevel** properties to the [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration) entity|
+|Addition|beta|Added the **teams** property to the [excludedApps](../resources/intune-apps-excludedapps) complex type|
+|Addition|beta|Added the **autoLaunch** property to the [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase) complex type|
+|Addition|beta|Added the **allowAccessToDownloadsFolder** property to the [windowsKioskMultipleApps](../resources/intune-deviceconfig-windowskioskmultipleapps) complex type|
+|Addition|beta|Added the **lowSecurityBiometric** member to the [androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype) enum type|
+|Addition|beta|Added the **androidBootloaderUnlocked** and **androidFactoryRomModified** members to the [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason) enum type|
+
 ### Directory APIs
 
 | **Change type** | **Version**   | **Description**                          |

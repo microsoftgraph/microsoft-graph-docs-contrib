@@ -57,21 +57,22 @@ The following table shows the properties that are required when you create the [
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|Specifies how accounts are managed on a shared PC. Only applies when disableAccountManager is false.|
 |allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Indicates which type of accounts are allowed to use on a shared PC. Possible values are: `notConfigured`, `guest`, `domain`.|
-|localStorage|[enablement](../resources/intune-shared-enablement.md)|Specifies whether local storage is allowed on a shared PC. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|localStorage|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies whether local storage is allowed on a shared PC. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |allowLocalStorage|Boolean|Specifies whether local storage is allowed on a shared PC.|
-|setAccountManager|[enablement](../resources/intune-shared-enablement.md)|Disables the account manager for shared PC mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|setAccountManager|[enablement](../resources/intune-deviceconfig-enablement.md)|Disables the account manager for shared PC mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disableAccountManager|Boolean|Disables the account manager for shared PC mode.|
-|setEduPolicies|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the default shared PC education environment policies should be enabled/disabled/not configured. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|setEduPolicies|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies whether the default shared PC education environment policies should be enabled/disabled/not configured. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disableEduPolicies|Boolean|Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true.|
-|setPowerPolicies|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the default shared PC power policies should be enabled/disabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|setPowerPolicies|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies whether the default shared PC power policies should be enabled/disabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disablePowerPolicies|Boolean|Specifies whether the default shared PC power policies should be disabled.|
-|signInOnResume|[enablement](../resources/intune-shared-enablement.md)|Specifies the requirement to sign in whenever the device wakes up from sleep mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|signInOnResume|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies the requirement to sign in whenever the device wakes up from sleep mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disableSignInOnResume|Boolean|Disables the requirement to sign in whenever the device wakes up from sleep mode.|
 |enabled|Boolean|Enables shared PC mode and applies the shared pc policies.|
 |idleTimeBeforeSleepInSeconds|Int32|Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents the sleep timeout from occurring.|
 |kioskAppDisplayName|String|Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.|
 |kioskAppUserModelId|String|Specifies the application user model ID of the app to use with assigned access.|
 |maintenanceStartTime|TimeOfDay|Specifies the daily start time of maintenance hour.|
+|fastFirstSignIn|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies whether to auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -85,7 +86,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1114
+Content-length: 1147
 
 {
   "@odata.type": "#microsoft.graph.sharedPCConfiguration",
@@ -118,7 +119,8 @@ Content-length: 1114
   "idleTimeBeforeSleepInSeconds": 12,
   "kioskAppDisplayName": "Kiosk App Display Name value",
   "kioskAppUserModelId": "Kiosk App User Model Id value",
-  "maintenanceStartTime": "11:59:24.7240000"
+  "maintenanceStartTime": "11:59:24.7240000",
+  "fastFirstSignIn": "enabled"
 }
 ```
 
@@ -127,7 +129,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1286
+Content-Length: 1319
 
 {
   "@odata.type": "#microsoft.graph.sharedPCConfiguration",
@@ -163,7 +165,8 @@ Content-Length: 1286
   "idleTimeBeforeSleepInSeconds": 12,
   "kioskAppDisplayName": "Kiosk App Display Name value",
   "kioskAppUserModelId": "Kiosk App User Model Id value",
-  "maintenanceStartTime": "11:59:24.7240000"
+  "maintenanceStartTime": "11:59:24.7240000",
+  "fastFirstSignIn": "enabled"
 }
 ```
 
