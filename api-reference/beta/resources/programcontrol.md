@@ -19,14 +19,6 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the program con
 |[Delete programControl](../api/programcontrol-delete.md) |		None.	|	Remove a programControl from a program.|
 |[List programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) collection| List controls across all programs in the tenant.|
 
-## Permissions
-
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All |
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

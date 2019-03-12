@@ -21,9 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All, and should also have ProgramControl.ReadWrite.All to complete scenario with the subsequent call to create a programControl |
+|Delegated (work or school account)     | AccessReview.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | AccessReview.ReadWrite.All, and should also have ProgramControl.ReadWrite.All to complete scenario with the subsequent call to create a programControl |
+|Application                            | AccessReview.ReadWrite.All |
+
+The caller should also have `ProgramControl.ReadWrite.All` permission, so that after creating an access review it can create a [programControl](../resources/programcontrol.md).
+In addition, the signed in user or service principal must also be in a directory role that permits them to create an access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

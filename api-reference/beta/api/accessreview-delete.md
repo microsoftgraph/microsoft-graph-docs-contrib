@@ -16,9 +16,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All, and should also have ProgramControl.ReadWrite.All to complete scenario with a call to delete a programControl |
+|Delegated (work or school account)     | AccessReview.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | AccessReview.ReadWrite.All, and should also have ProgramControl.ReadWrite.All to complete scenario with a call to delete a programControl |
+|Application                            | AccessReview.ReadWrite.All |
+
+The caller should also have `ProgramControl.ReadWrite.All` permission, so that it can delete a [programControl](../resources/programcontrol.md).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

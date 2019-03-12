@@ -31,14 +31,6 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessRevi
 |[Reset accessReview decisions](../api/accessreview-reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
 |[Apply accessReview decisions](../api/accessreview-apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
 
-## Permissions
-
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|

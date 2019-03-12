@@ -22,7 +22,9 @@ Typical customer scenarios for access reviews of group memberships and applicati
 
 There is also a related capability for customers to review and certify the role assignments of administrative users who are assigned to Azure AD roles such as Global Administrator or Azure subscription roles.  This capability is included in [Azure AD Privileged Identity Management](privilegedidentitymanagement-root.md).
 
-Note that the access reviews feature, including the API, is included in Azure AD Premium P2. 
+Note that the access reviews feature, including the API, is included in Azure AD Premium P2.  The tenant where an access review is being created must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription. 
+Prior to creating an access review, program or program control, an administrator must have previously onboarded to Azure AD access reviews or, in the case of access reviews of Azure AD roles or Azure subscription roles, Azure AD PIM, in order to prepare the [programControlType](programcontroltype.md) and [businessFlowTemplate](businessflowtemplate.md) resources.
+
 
 ## Methods
 
@@ -54,6 +56,20 @@ Here is the list of methods that are provided by Azure AD access reviews.
 |[List programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) collection| List controls across all programs in the tenant.|
 |[List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
+## Role and permission authorization checks
+
+Here are the required directory roles of a calling user or service principal to manage access reviews, programs and controls.
+
+| Target resource | Desired Operation | Permissions | Required directory role of the calling user or service principal|
+|:----------------|:------------------|:------------|:--------------------------------------------|
+|[accessReview](accessreview.md) of an Azure AD role | Read | `AccessReview.Read.All` | Global Administrator, Security Administrator, Security Reader or Privileged Role Administrator |
+|[accessReview](accessreview.md) of an Azure AD role | Create, Update or Delete | `AccessReview.ReadWrite.All` | Global Administrator or Privileged Role Administrator |
+|[accessReview](accessreview.md) of a group or app | Read | `AccessReview.Read.All` | Global Administrator, Security Administrator, Security Reader or User Administrator |
+|[accessReview](accessreview.md) of a group or app | Create, Update or Delete | `AccessReview.ReadWrite.All` | Global Administrator or User Administrator |
+| [program](program.md) and [programControl](programcontrol.md)| Read | `ProgramControl.Read.All` |  Global Administrator, Security Administrator, Security Reader or User Administrator |
+| [program](program.md) and [programControl](programcontrol.md) | Create, Update or Delete | `ProgramControl.ReadWrite.All` | Global Administrator or User Administrator |
+
+In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 
 ## See also
 
