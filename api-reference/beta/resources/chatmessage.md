@@ -41,7 +41,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |importance| string | The importance of the message: Normal, High.|
 |reactions| [chatMessageReaction](chatreaction.md) collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
-|attachments|[chatMessageAttachment](chatattachment.md) collection |Attached files|
+|attachments|[chatMessageAttachment](chatattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 
 
 ## JSON representation
