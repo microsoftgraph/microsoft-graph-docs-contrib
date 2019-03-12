@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the w
 |enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service. Possible values are: `notConfigured`, `disabled`.|
 |authenticationAllowSecondaryDevice|Boolean|Allows secondary authentication devices to work with Windows.|
-|authenticationWebSignIn|[enablement](../resources/intune-deviceconfig-enablement.md)|Indicates whether or not Web Credential Provider will be enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|authenticationWebSignIn|[enablement](../resources/intune-shared-enablement.md)|Indicates whether or not Web Credential Provider will be enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |authenticationPreferredAzureADTenantDomainName|String|Specifies the preferred domain among available domains in the Azure AD tenant.|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
 |displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
