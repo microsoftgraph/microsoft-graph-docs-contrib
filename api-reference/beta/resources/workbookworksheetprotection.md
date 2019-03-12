@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# WorksheetProtection resource type
+# workbookWorksheetProtection resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,19 +17,18 @@ Represents the protection of a sheet object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](worksheetprotection.md) |Read properties and relationships of worksheetProtection object.|
+|[Get workbookWorksheetProtection](../api/worksheetprotection-get.md) | [workbookWorksheetProtection](workbookworksheetprotection.md) |Read properties and relationships of workbookWorksheetProtection object.|
 |[Protect](../api/worksheetprotection-protect.md)|None|Protect a worksheet. It throws if the worksheet has been protected.|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|None|Unprotect a worksheet|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|options|[workbookWorksheetProtectionOptions](workbookworksheetprotectionoptions.md)|Sheet protection options. Read-only.|
 |protected|boolean|Indicates if the worksheet is protected.  Read-only.|
 
 ## Relationships
-| Relationship | Type	|Description|
-|:---------------|:--------|:----------|
-|options|[workbookWorksheetProtection](worksheetprotectionoptions.md)|Sheet protection options. Read-only.|
+None.
 
 ## JSON representation
 
@@ -55,12 +54,12 @@ Here is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "WorksheetProtection resource",
+  "description": "workbookWorksheetProtection resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/worksheetprotection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/workbookworksheetprotection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

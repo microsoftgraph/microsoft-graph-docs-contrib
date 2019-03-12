@@ -4,11 +4,11 @@ description: "Retrieve the application and service principal objects with the sp
 localization_priority: Normal
 ---
 
-# List Applications and Service Principals with specific Policy assigned
+# List applications and service principals with specific policy assigned
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) objects with the specified policy assigned.
+Retrieve the [application](../resources/application.md) and [service principal](../resources/serviceprincipal.md) objects with the specified policy assigned.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

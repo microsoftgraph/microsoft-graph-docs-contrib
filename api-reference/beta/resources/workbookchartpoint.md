@@ -8,6 +8,8 @@ ms.prod: "excel"
 
 # workbookChartPoint resource type
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Represents a point of a series in a chart.
 
 
@@ -15,7 +17,7 @@ Represents a point of a series in a chart.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartPoint](../api/chartpoint-get.md) | [workbookChartPoint](workbookchartpoint.md) |Read properties and relationships of chartPoint object.|
+|[Get workbookChartPoint](../api/chartpoint-get.md) | [workbookChartPoint](workbookchartpoint.md) |Read properties and relationships of chartPoint object.|
 |[List](../api/chartpoint-list.md) | [workbookChartPoint](workbookchartpoint.md) collection |Get chartPoint object collection. |
 |[ItemAt](../api/chartpointscollection-itemat.md)|[workbookChartPoint](workbookchartpoint.md)|Retrieve a point based on its position within the series.|
 
@@ -60,5 +62,8 @@ Here is a JSON representation of the resource.
   "description": "ChartPoint resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/workbookchartpoint.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }-->

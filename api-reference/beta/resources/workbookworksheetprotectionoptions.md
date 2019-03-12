@@ -1,12 +1,12 @@
 ---
-title: "WorksheetProtectionOptions resource type"
+title: "workbookWorksheetProtectionOptions resource type"
 description: "Represents the options in sheet protection."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 ---
 
-# WorksheetProtectionOptions resource type
+# workbookWorksheetProtectionOptions resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,12 +61,12 @@ Here is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "WorksheetProtectionOptions resource",
+  "description": "workbookWorksheetProtectionOptions resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/worksheetprotectionoptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/workbookworksheetprotectionoptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

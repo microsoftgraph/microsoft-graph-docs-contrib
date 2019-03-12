@@ -240,7 +240,7 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 * Multiple namespaces are not supported.
 * GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
-* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the `Accepted` or `RejectedSenders` on a group.
+* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
   * No support for `nextLink`

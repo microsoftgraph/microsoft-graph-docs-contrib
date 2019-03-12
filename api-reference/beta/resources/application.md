@@ -54,7 +54,7 @@ This resource supports:
 |orgRestrictions|String collection| Reserved for future use. |
 |parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) collection |Specifies parental control settings for an application.|
 |passwordCredentials|[passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
-|publicClient|[publicClientApplication](publicclient.md)| Specifies settings for installed clients such as desktop or mobile devices. |
+|publicClient|[publicClientApplication](publicclientapplication.md)| Specifies settings for installed clients such as desktop or mobile devices. |
 |publisherDomain| String | The verified publisher domain for the application. Read-only.|
 |requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
 |signInAudience | String | Specifies what Microsoft accounts are supported for the current application. Supported values are:<ul><li>**AzureADMyOrg**: Users with a Microsoft work or school account in my organization’s Azure AD tenant (i.e. single tenant)</li><li>**AzureADMultipleOrgs**: Users with a Microsoft work or school account in any organization’s Azure AD tenant (i.e. multi-tenant)</li> <li>**AzureADandPersonalMicrosoftAccount**: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant</li></ul> | `AzureADandPersonalMicrosoftAccount` |

@@ -648,108 +648,108 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### scopeOperatorMultiValuedComparisonType values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|all|0||
-|any|1||
+|Member|
+|:---|
+|all|
+|any|
 
 ### riskLevel values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|low|0||
-|medium|1||
-|high|2||
-|hidden|3||
-|none|4||
-|unknownFutureValue|5||
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|hidden|
+|none|
+|unknownFutureValue|
 
 ### riskState values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0||
-|confirmedSafe|1||
-|remediated|2||
-|dismissed|3||
-|atRisk|4||
-|confirmedCompromised|5||
-|unknownFutureValue|6||
+|Member|
+|:---|
+|none|
+|confirmedSafe|
+|remediated|
+|dismissed|
+|atRisk|
+|confirmedCompromised|
+|unknownFutureValue|
 
 ### riskDetail values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|none|0||
-|adminGeneratedTemporaryPassword|1||
-|userPerformedSecuredPasswordChange|2||
-|userPerformedSecuredPasswordReset|3||
-|adminConfirmedSigninSafe|4||
-|aiConfirmedSigninSafe|5||
-|userPassedMFADrivenByRiskBasedPolicy|6||
-|adminDismissedAllRiskForUser|7||
-|adminConfirmedSigninCompromised|8||
-|hidden|9||
-|unknownFutureValue|10||
+|Member|
+|:---|
+|none|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|hidden|
+|unknownFutureValue|
 
 ### referenceAttachmentPermission values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|other|0||
-|view|1||
-|edit|2||
-|anonymousView|3||
-|anonymousEdit|4||
-|organizationView|5||
-|organizationEdit|6||
+|Member|
+|:---|
+|other|
+|view|
+|edit|
+|anonymousView|
+|anonymousEdit|
+|organizationView|
+|organizationEdit|
 
 ### referenceAttachmentProvider values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|other|0||
-|oneDriveBusiness|1||
-|oneDriveConsumer|2||
-|dropbox|3||
+|Member|
+|:---|
+|other|
+|oneDriveBusiness|
+|oneDriveConsumer|
+|dropbox|
 
 ### riskEventType values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|unlikelyTravel|0||
-|anonymizedIPAddress|1||
-|maliciousIPAddress|2||
-|unfamiliarFeatures|3||
-|malwareInfectedIPAddress|4||
-|suspiciousIPAddress|5||
-|leakedCredentials|6||
-|investigationsThreatIntelligence|7||
-|generic|8||
-|unknownFutureValue|9||
+|Member|
+|:---|
+|unlikelyTravel|
+|anonymizedIPAddress|
+|maliciousIPAddress|
+|unfamiliarFeatures|
+|malwareInfectedIPAddress|
+|suspiciousIPAddress|
+|leakedCredentials|
+|investigationsThreatIntelligence|
+|generic|
+|unknownFutureValue|
 
 ### exchangeIdFormat values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|entryId|0||
-|ewsId|1||
-|immutableEntryId|2||
-|restId|3||
-|restImmutableEntryId|4||
+|Member|
+|:---|
+|entryId|
+|ewsId|
+|immutableEntryId|
+|restId|
+|restImmutableEntryId|
 
 ### attributeFlowBehavior values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|flowWhenChanged|0||
-|flowAlways|1||
+|Member|
+|:---|
+|flowWhenChanged|
+|flowAlways|
 
 ### attributeFlowType values
 
-|Member|Value|Description|
-|:---|:---|:---|
-|always|0||
-|objectAddOnly|1||
-|multiValueAddOnly|2||
-|restId|3||
+|Member|
+|:---|
+|always|
+|objectAddOnly|
+|multiValueAddOnly|
+|restId|

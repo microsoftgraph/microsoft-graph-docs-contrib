@@ -1,16 +1,16 @@
 ---
-title: "Get Application"
-description: "Retrieve the properties and relationships of application object."
+title: "Get workbookApplication"
+description: "Retrieve the properties and relationships of workbookApplication object."
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
 ---
 
-# Get Application
+# Get workbookApplication
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of application object.
+Retrieve the properties and relationships of workbookApplication object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,13 +38,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [Application](../resources/application.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [workbookApplication](../resources/workbookapplication.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_application"
+  "name": "get_workbookApplication"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
@@ -54,7 +54,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.application"
+  "@odata.type": "microsoft.graph.workbookApplication"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -71,12 +71,12 @@ Content-length: 48
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get Application",
+  "description": "Get workbookApplication",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/excelapplication-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/workbookapplication-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

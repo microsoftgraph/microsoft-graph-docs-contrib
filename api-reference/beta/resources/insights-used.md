@@ -52,8 +52,7 @@ Here is a JSON representation of the resource
   "id": "string",
   "lastUsed": "usageDetails",
   "resourceVisualization": { "@odata.type": "microsoft.graph.resourceVisualization" },
-  "resourceReference": { "@odata.type": "microsoft.graph.resourceReference" },
-  "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
+  "resourceReference": { "@odata.type": "microsoft.graph.resourceReference" }
 }
 ```
 <!--

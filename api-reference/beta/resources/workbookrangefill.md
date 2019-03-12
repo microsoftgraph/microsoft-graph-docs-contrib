@@ -17,7 +17,7 @@ Represents the background of a range object.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get RangeFill](../api/rangefill-get.md) | [workbookRangeFill](workbookrangefill.md) |Read properties and relationships of rangeFill object.|
+|[Get workbookRangeFill](../api/rangefill-get.md) | [workbookRangeFill](workbookrangefill.md) |Read properties and relationships of rangeFill object.|
 |[Update](../api/rangefill-update.md) | [workbookRangeFill](workbookrangefill.md)	|Update RangeFill object. |
 |[Clear](../api/rangefill-clear.md)|None|Resets the range background.|
 
@@ -59,7 +59,7 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/rangefill.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/workbookrangefill.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

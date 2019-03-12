@@ -72,20 +72,14 @@ Here is a JSON representation of the resource.
 }-->
 ```json
 {
+  "alternativeIdentifer": "String",
   "definition": [
     "{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"
   ],
-  "displayName": "Test Policy",
-  "isOrganizationDefault": false,
-  "type": "TokenLifetimePolicy",
-  "IsOrganizationDefault": true,
-  "AccessTokenLifetime": "string",
-  "MaxInactiveTime": "string",
-  "MaxAgeSingleFactor": "string",
-  "MaxAgeMultiFactor": "string",
-  "MaxAgeSessionSingleFactor": "string",
-  "MaxAgeSessionMultiFactor": "string",
-  "Version": 12356
+  "displayName": "String",
+  "isOrganizationDefault": "Boolean",
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
+  "type": "String"
 }
 ```
 <!--

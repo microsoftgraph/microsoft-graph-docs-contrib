@@ -17,7 +17,7 @@ Represents a collection of all the data labels on a chart point.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [workbookChartDataLabels](workbookchartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
+|[Get workbookChartDataLabels](../api/chartdatalabels-get.md) | [workbookChartDataLabels](workbookchartdatalabels.md) |Read properties and relationships of chartDataLabels object.|
 |[Update](../api/chartdatalabels-update.md) | [workbookChartDataLabels](workbookchartdatalabels.md)	|Update ChartDataLabels object. |
 
 ## Properties
@@ -67,12 +67,12 @@ Here is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "ChartDataLabels resource",
+  "description": "workbookChartDataLabels resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/chartdatalabels.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/workbookchartdatalabels.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
