@@ -65,34 +65,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "feedback": {
-    "@odata.type": "microsoft.graph.educationFeedback"
-  },
-  "grade": {
-    "@odata.type": "microsoft.graph.educationAssignmentGrade"
-  },
-  "id": "String (identifier)",
-  "recipient": {
-    "@odata.type": "microsoft.graph.educationSubmissionRecipient"
-  },
-  "returnedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "returnedDateTime": "String (timestamp)",
-  "resourcesFolderUrl": "String",
-  "status": "string",
-  "submittedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "submittedDateTime": "String (timestamp)",
-  "unsubmittedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "unsubmittedDateTime": "String (timestamp)",
-  "releasedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "releasedDateTime": "String (timestamp)"
+    "feedback":{"@odata.type":"microsoft.graph.educationFeedback"},
+    "grade":{"@odata.type":"microsoft.graph.educationAssignmentGrade"},
+    "id":"String (identifier)",
+    "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
+    "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "returnedDateTime":"String (timestamp)",
+    "resourcesFolderUrl":"String",
+    "status":"string",
+    "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "submittedDateTime":"String (timestamp)",
+    "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "unsubmittedDateTime":"String (timestamp)",
+    "releasedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "releasedDateTime":"String (timestamp)"
 }
 ```
 

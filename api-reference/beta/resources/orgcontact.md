@@ -67,11 +67,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "addresses": [
-    {
-      "@odata.type": "microsoft.graph.physicalOfficeAddress"
-    }
-  ],
+  "addresses": [{"@odata.type": "microsoft.graph.physicalOfficeAddress"}],
   "companyName": "string",
   "department": "string",
   "displayName": "string",
@@ -81,20 +77,10 @@ Here is a JSON representation of the resource
   "mail": "string",
   "mailNickname": "string",
   "onPremisesLastSyncDateTime": "string (timestamp)",
-  "onPremisesProvisioningErrors": [
-    {
-      "@odata.type": "microsoft.graph.onPremisesProvisioningError"
-    }
-  ],
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSyncEnabled": true,
-  "phones": [
-    {
-      "@odata.type": "microsoft.graph.phone"
-    }
-  ],
-  "proxyAddresses": [
-    "string"
-  ],
+  "phones": [{"@odata.type": "microsoft.graph.phone"}],
+  "proxyAddresses": ["string"],
   "surname": "string"
 }
 ```

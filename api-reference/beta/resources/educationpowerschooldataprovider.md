@@ -41,14 +41,10 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "connectionUrl": "String",
   "clientId": "String",
   "clientSecret": "String",
-  "schoolsIds": [
-    "String"
-  ],
+  "schoolsIds": ["String"],
   "schoolYear": "String",
   "allowTeachersInMultipleSchools": "Boolean",
-  "customizations": {
-    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
-  }
+  "customizations": {"@odata.type": "microsoft.graph.educationSynchronizationCustomizations"}
 }
 ```
 <!--

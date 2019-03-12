@@ -35,11 +35,7 @@ Here is a JSON representation of the resource
 ```json
 {
   "accountEnabled": true,
-  "addIns": [
-    {
-      "@odata.type": "microsoft.graph.addIn"
-    }
-  ],
+  "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
   "appDisplayName": "string",
   "appId": "string",
   "appOwnerOrganizationId": "guid",
@@ -48,37 +44,17 @@ Here is a JSON representation of the resource
   "errorUrl": "string",
   "homepage": "string",
   "id": "string (identifier)",
-  "keyCredentials": [
-    {
-      "@odata.type": "microsoft.graph.keyCredential"
-    }
-  ],
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logoutUrl": "string",
-  "oauth2Permissions": [
-    {
-      "@odata.type": "microsoft.graph.oAuth2Permission"
-    }
-  ],
-  "passwordCredentials": [
-    {
-      "@odata.type": "microsoft.graph.passwordCredential"
-    }
-  ],
+  "oauth2Permissions": [{"@odata.type": "microsoft.graph.oAuth2Permission"}],
+  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
   "preferredTokenSigningKeyThumbprint": "string",
   "publisherName": "string",
-  "replyUrls": [
-    "string"
-  ],
+  "replyUrls": ["string"],
   "samlMetadataUrl": "string",
-  "servicePrincipalNames": [
-    "string"
-  ],
-  "tags": [
-    "string"
-  ],
-  "appRoles": [{
-    "@odata.type": "microsoft.graph.appRole"
-  }]
+  "servicePrincipalNames": ["string"],
+  "tags": ["string"],
+  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}]
 }
 
 ```
