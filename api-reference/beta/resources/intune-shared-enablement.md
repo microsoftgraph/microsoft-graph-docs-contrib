@@ -1,6 +1,6 @@
 ---
 title: "enablement enum type"
-description: "Possible values of a property"
+description: "Describes the enablement enumeration of the Microsoft Graph API for Intune, which supports multiple workflows."
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
@@ -20,7 +20,3 @@ Possible values of a property
 |notConfigured|0|Device default value, no intent.|
 |enabled|1|Enables the setting on the device.|
 |disabled|2|Disables the setting on the device.|
-
-
-
-
