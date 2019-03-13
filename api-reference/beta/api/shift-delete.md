@@ -1,6 +1,6 @@
 ---
 title: "Delete shift"
-description: "Deletes a shift from the schedule."
+description: "Delete a shift from the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [shift](../resources/shift.md) from the schedule.
+Delete a [shift](../resources/shift.md) from the schedule.
 
 ## Permissions
 
