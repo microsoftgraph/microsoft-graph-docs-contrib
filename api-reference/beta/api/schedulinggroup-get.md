@@ -1,6 +1,6 @@
 ---
-title: "Get a schedulingGroup by id"
-description: "Get a schedulingGroup by id."
+title: "Get schedulingGroup"
+description: "Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) object by ID."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by id.
+Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) object by ID.
 
 ## Permissions
 
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+>**Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
 
 ## HTTP request
 
