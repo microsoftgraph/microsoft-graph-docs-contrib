@@ -1,15 +1,15 @@
 ---
 title: "Get the list of schedulingGroup in this schedule"
 description: "Get the list of schedulingGroup in this schedule."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
 # Get a schedulingGroup by id
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [schedulingGroups](../resources/schedulingGroup.md) in this [schedule](../resources/schedule.md).
+Get the list of [schedulingGroups](../resources/schedulinggroup.md) in this [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulingGroup.md) objects in the response body.
+If successful, this method return a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulinggroup.md) objects in the response body.
 
 ## Example
 
@@ -111,7 +111,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedulingGroup-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedulinggroup-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

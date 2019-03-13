@@ -1,8 +1,8 @@
 ---
 title: "Updates a shift"
 description: "Updates a shift."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [shift](../resources/shif
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 

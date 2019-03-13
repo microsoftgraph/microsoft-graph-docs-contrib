@@ -1,8 +1,8 @@
 ---
 title: "Creates or updates the schedule"
 description: "Creates or updates the schedule."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -50,7 +50,7 @@ In the request body, supply a JSON representation of a [schedule](../resources/s
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
 
 ## Example
 

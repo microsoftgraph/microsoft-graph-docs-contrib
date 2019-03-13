@@ -1,15 +1,15 @@
 ---
 title: "Get the list of timesOff in this schedule"
 description: "Get the list of timesOff in this schedule."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
 # Get a timeOff by id
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [timesOff](../resources/timeOff.md) in this [schedule](../resources/schedule.md).
+Get the list of [timesOff](../resources/timeoff.md) in this [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/timesOff
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a collection of [timeOff](../resources/timeOff.md) objects in the response body.
+If successful, this method return a `200 OK` response code and a collection of [timeOff](../resources/timeoff.md) objects in the response body.
 
 ## Example
 
@@ -122,7 +122,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeOff-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeoff-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

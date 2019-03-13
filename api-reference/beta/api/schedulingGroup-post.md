@@ -1,8 +1,8 @@
 ---
 title: "Creates a new schedulingGroup"
 description: "Creates a new schedulingGroup."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [schedulingGroup](../resources/schedulingGroup.md).
+Creates a new [schedulingGroup](../resources/schedulinggroup.md).
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/schedulingGroups
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [schedulingGroup](../resources/schedulingGroup.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
 
 ## Example
 
@@ -117,7 +117,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedulingGroup-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedulinggroup-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

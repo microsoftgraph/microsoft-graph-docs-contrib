@@ -1,8 +1,8 @@
 ---
 title: "Shares a time-range of the schedule with the schedule members"
 description: "Shares a time-range of the schedule with the schedule members."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -42,9 +42,9 @@ POST /teams/{teamId}/schedule/share
 ## Request body
 |Name                   |Type           |Req.|Description                                                                                                                                       |
 |-----------------------|-------------------|:--:|----------------------------------------------------------------------------------------------------------------------------------------------|
-| notifyTeam	        |`bool`             | ✓  | Should the entire team get a visible notification of this action or only employees that have a shift assigned to them that got shared?       |
-| startDateTime         |`DateTimeOffset`   | ✓  | The start time to share shifts on the schedule from.                                                                                         |
-| endDateTime           |`DateTimeOffset`   | ✓  | The end time to share shifts on the schedule until.                                                                                          |
+| notifyTeam	        |`bool`             | ?  | Should the entire team get a visible notification of this action or only employees that have a shift assigned to them that got shared?       |
+| startDateTime         |`DateTimeOffset`   | ?  | The start time to share shifts on the schedule from.                                                                                         |
+| endDateTime           |`DateTimeOffset`   | ?  | The end time to share shifts on the schedule until.                                                                                          |
 
 ## Response
 
@@ -57,7 +57,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "schedule-post-share"
+  "name": "schedule-share-timerange"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/share
@@ -94,7 +94,7 @@ HTTP/1.1 204 No content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedule-post-share.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-share-timerange.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

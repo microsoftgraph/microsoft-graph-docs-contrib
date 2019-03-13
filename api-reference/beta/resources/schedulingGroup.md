@@ -1,7 +1,7 @@
 ---
 title: "schedulingGroup resource type"
 description: "A schedulingGroup is a logical grouping of members in the schedule (usually by role)."
-author: "zivk"
+author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
@@ -25,13 +25,13 @@ A schedulingGroup is a logical grouping of members in the schedule (usually by r
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                 |
 |--------------|---------------|:--:|:--:|:--:|--------------------------------------------------------------------------------------------|
-| id			| `string`      |✓   |  |  |Id of the `schedulingGroup`.|
+| id			| `string`      |?   |  |  |Id of the `schedulingGroup`.|
 | displayName   | `string`      |     |  |  | The display name for the `schedulingGroup`.      |
-| isActive 			|`bool`      |✓   |  |   | Indicates if the `schedulingGroup` can be used when creating new entities or updating existing ones.|
+| isActive 			|`bool`      |?   |  |   | Indicates if the `schedulingGroup` can be used when creating new entities or updating existing ones.|
 | userIds 		| `collection(string)`    |   |   | |  The list of user ids that are a member of the `schedulingGroup`. |
-| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `schedulingGroup` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `schedulingGroup` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `schedulingGroup`.|
+| createdDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `schedulingGroup` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `schedulingGroup` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |?  |The identity that last updated this `schedulingGroup`.|
 
 ## JSON representation
 
@@ -81,7 +81,7 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/schedulingGroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/schedulinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

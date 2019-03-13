@@ -1,8 +1,8 @@
 ---
 title: "Creates a new timeOffReason"
 description: "Creates a new timeOffReason."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [timeOffReason](../resources/timeOffReason.md).
+Creates a new [timeOffReason](../resources/timeoffreason.md).
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [timeOffReason](../resources/timeOffReason.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
 
 ## Example
 
@@ -113,7 +113,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeOffReason-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeoffreason-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

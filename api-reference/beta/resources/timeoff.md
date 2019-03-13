@@ -1,8 +1,8 @@
 ---
 title: "timeOff resource type"
-description: "A timeOff is a unit of time off in the schedule."
-author: "zivk"
-localization_priority: Priority
+description: "A timeOff is a unit of non-work in the schedule."
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A timeOff is a unit of scheduled work in the schedule. 
+A timeOff is a unit of non-work in the schedule.
 
 ## Methods
 
@@ -25,13 +25,13 @@ A timeOff is a unit of scheduled work in the schedule.
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                                                                      |
 |--------------|---------------|:--:|:--:|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |✓   |  |  |Id of the `timeOff`.|
-| userId 			|`string`      |✓   |   |   |Id of the user assigned to the `timeOff`.|
+| id			|`string`      |?   |  |  |Id of the `timeOff`.|
+| userId 			|`string`      |?   |   |   |Id of the user assigned to the `timeOff`.|
 | sharedTimeOff 	|`timeOffItem`  |   |   |  |The shared version of this `timeOff` that is viewable by both employees and managers.|
 | draftTimeOff		|`timeOffItem`        |   |   |  |The draft version of this `timeOff` that is viewable by managers.|
-| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOff` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOff` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `timeOff`.|
+| createdDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `timeOff` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `timeOff` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |?  |The identity that last updated this `timeOff`.|
 
 ## JSON representation
 
@@ -89,7 +89,7 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/timeOff.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/timeoff.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

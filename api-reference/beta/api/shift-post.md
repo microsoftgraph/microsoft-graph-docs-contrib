@@ -1,8 +1,8 @@
 ---
 title: "Creates a new shift"
 description: "Creates a new shift."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/shifts
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 

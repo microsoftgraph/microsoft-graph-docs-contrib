@@ -1,8 +1,8 @@
 ---
 title: "timeOffItem resource type"
 description: "A timeOffItem represents a version of the timeOff."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -15,9 +15,9 @@ A timeOffItem represents a version of the timeOff.
 ## Properties
 | Name                         | Type                    | Req. | R.O. | Nav. | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|------|------|------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | `string`                  | ✓     |      |      | Id of the `timeOffReason` for this `timeOffItem`.      |
-| startDateTime               | `DateTimeOffset`                  | ✓    |      |      | The start date and time for the `timeOffItem`.     |
-| endDateTime               | `DateTimeOffset`                  | ✓    |      |      | The end date and time for the `timeOffItem`.     |
+| timeOffReasonId               | `string`                  | ?     |      |      | Id of the `timeOffReason` for this `timeOffItem`.      |
+| startDateTime               | `DateTimeOffset`                  | ?    |      |      | The start date and time for the `timeOffItem`.     |
+| endDateTime               | `DateTimeOffset`                  | ?    |      |      | The end date and time for the `timeOffItem`.     |
 | theme | `enum`   |    |  |  | Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 
 ## JSON representation
@@ -49,7 +49,7 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/timeOffItem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/timeoffitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

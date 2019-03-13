@@ -1,8 +1,8 @@
 ---
 title: "Updates a timeOff"
 description: "Updates a timeOff."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates a [timeOff](../resources/timeOff.md).
+Updates a [timeOff](../resources/timeoff.md).
 
 ## Permissions
 
@@ -41,11 +41,11 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## Request body
 
-In the request body, supply a JSON representation of a [timeOff](../resources/timeOff.md) object.
+In the request body, supply a JSON representation of a [timeOff](../resources/timeoff.md) object.
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [timeOff](../resources/timeOff.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
 
 ## Example
 
@@ -138,7 +138,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeOff-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeoff-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

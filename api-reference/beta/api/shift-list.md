@@ -1,8 +1,8 @@
 ---
 title: "Get the list of shifts in this schedule"
 description: "Get the list of shifts in this schedule."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/shifts
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a collection of [shift](../resources/shift.md) objects in the response body.
+If successful, this method return a `200 OK` response code and a collection of [shift](../resources/shift.md) objects in the response body.
 
 ## Example
 

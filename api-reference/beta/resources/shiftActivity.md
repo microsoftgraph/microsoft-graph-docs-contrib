@@ -1,8 +1,8 @@
 ---
 title: "shiftActivity resource type"
 description: "A shiftActivity represents an activity in the shift."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -15,9 +15,9 @@ A shiftActivity represents an activity in the shift.
 ## Properties
 | Name                         | Type                    | Req. | R.O. | Nav. | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|------|------|------|---------------------------------------------------------------------------------------------|
-| isPaid               | `bool`                  | ✓    |      |      | Indicates if the `microsoft.graph.user` should be paid for the acitivity during their `shift`.     |
-| startDateTime               | `DateTimeOffset`                  | ✓    |      |      | The start date and time for the `shiftActivity`.     |
-| endDateTime               | `DateTimeOffset`                  | ✓    |      |      | The end date and time for the `shiftActivity`.     |
+| isPaid               | `bool`                  | ?    |      |      | Indicates if the `microsoft.graph.user` should be paid for the acitivity during their `shift`.     |
+| startDateTime               | `DateTimeOffset`                  | ?    |      |      | The start date and time for the `shiftActivity`.     |
+| endDateTime               | `DateTimeOffset`                  | ?    |      |      | The end date and time for the `shiftActivity`.     |
 | code               | `string`                  |     |      |      | Customer defined code for the `shiftActivity`.     |
 | displayName               | `string`                  |      |      |      | The name of the `shiftActivity`.     |
 
@@ -51,7 +51,7 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/shiftActivity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/shiftactivity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

@@ -1,8 +1,8 @@
 ---
 title: "Updates a timeOffReason"
 description: "Updates a timeOffReason."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates a [timeOffReason](../resources/timeOffReason.md).
+Updates a [timeOffReason](../resources/timeoffreason.md).
 
 ## Permissions
 
@@ -41,11 +41,11 @@ PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## Request body
 
-In the request body, supply a JSON representation of a [timeOffReason](../resources/timeOffReason.md) object.
+In the request body, supply a JSON representation of a [timeOffReason](../resources/timeoffreason.md) object.
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [timeOffReason](../resources/timeOffReason.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
 
 ## Example
 
@@ -118,7 +118,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeOffReason-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeoffreason-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

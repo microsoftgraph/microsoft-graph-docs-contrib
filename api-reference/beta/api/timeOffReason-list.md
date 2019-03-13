@@ -1,15 +1,15 @@
 ---
 title: "Get the list of timeOffReason in this schedule"
 description: "Get the list of timeOffReason in this schedule."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
 # Get a timeOffReason by id
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [timeOffReasons](../resources/timeOffReason.md) in this [schedule](../resources/schedule.md).
+Get the list of [timeOffReasons](../resources/timeoffreason.md) in this [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/timeOffReasons
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a collection of [timeOffReason](../resources/timeOffReason.md) objects in the response body.
+If successful, this method return a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.
 
 ## Example
 
@@ -109,7 +109,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeOffReason-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeoffreason-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

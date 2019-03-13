@@ -1,8 +1,8 @@
 ---
 title: "Deletes a shift from the schedule"
 description: "Deletes a shift from the schedule."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 

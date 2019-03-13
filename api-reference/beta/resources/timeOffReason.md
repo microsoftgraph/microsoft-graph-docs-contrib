@@ -1,8 +1,8 @@
 ---
 title: "timeOffReason resource type"
 description: "A timeOffReason is a valid reason to take time-off in the schedule."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -25,13 +25,13 @@ A timeOffReason is a valid reason to take time-off in the schedule.
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                 |
 |--------------|---------------|:--:|:--:|:--:|--------------------------------------------------------------------------------------------|
-| id			|`string`      |✓   |  |  |Id of the `timeOffReason`.|
+| id			|`string`      |?   |  |  |Id of the `timeOffReason`.|
 | displayName               | `string`                  |      |      |  | The name of the `timeOffReason`.     |
-| iconType | `enum`   | ✓   |   |   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. |
-| isActive 			|`bool`      |✓   |  |   | Indicates if the `timeOffReason` can be used when creating new entities or updating existing ones.|
-| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOffReason` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOffReason` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `timeOffReason`.|
+| iconType | `enum`   | ?   |   |   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. |
+| isActive 			|`bool`      |?   |  |   | Indicates if the `timeOffReason` can be used when creating new entities or updating existing ones.|
+| createdDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `timeOffReason` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `timeOffReason` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |?  |The identity that last updated this `timeOffReason`.|
 
 ## JSON representation
 
@@ -79,7 +79,7 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/timeOffReason.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/timeoffreason.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

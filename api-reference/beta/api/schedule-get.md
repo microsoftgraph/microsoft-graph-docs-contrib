@@ -1,8 +1,8 @@
 ---
 title: "Gets the schedule"
 description: "Gets the schedule."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the [schedule](../resources/schedule.md).
+Retrieve the properties and relationships of a [schedule](../resources/schedule.md).
 
 Schedule creation adheres to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
 Clients PUT to a schedule which if the schedule is provisioned would update it and otherwise it will start schedule provisioning in the background.
@@ -46,7 +46,7 @@ GET /teams/{teamId}/schedule
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
 
 ## Example
 

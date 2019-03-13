@@ -1,8 +1,8 @@
 ---
 title: "shiftItem resource type"
 description: "A shiftItem represents a version of the shift."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -17,8 +17,8 @@ A shiftItem represents a version of the shift.
 |------------------------------|-------------------------|------|------|------|---------------------------------------------------------------------------------------------|
 | notes               | `string`                  |      |      |      | These are the notes for the `shiftItem`.      |
 | displayName               | `string`                  |      |      |      | The name of the `shiftItem`.     |
-| startDateTime               | `DateTimeOffset`                  | ✓    |      |      | The start date and time for the `shiftItem`.     |
-| endDateTime               | `DateTimeOffset`                  | ✓    |      |      | The end date and time for the `shiftItem`.     |
+| startDateTime               | `DateTimeOffset`                  | ?    |      |      | The start date and time for the `shiftItem`.     |
+| endDateTime               | `DateTimeOffset`                  | ?    |      |      | The end date and time for the `shiftItem`.     |
 | theme | `enum`   |    |  |  | Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 | activities 	| `collection(shiftActivity)`    |    |  |  | A shiftActivity is an incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. |
 
@@ -61,7 +61,7 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/resources/shiftItem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/resources/shiftitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

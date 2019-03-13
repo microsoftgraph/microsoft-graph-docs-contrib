@@ -1,8 +1,8 @@
 ---
 title: "Get a schedulingGroup by id"
 description: "Get a schedulingGroup by id."
-author: "zivk"
-localization_priority: Priority
+author: "nkramer"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [schedulingGroup](../resources/schedulingGroup.md) by id.
+Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by id.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## Response
 
-If successful, this method should return a `200 OK` response code and a [schedulingGroup](../resources/schedulingGroup.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
 
 ## Example
 
@@ -108,7 +108,7 @@ Content-length: 401
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedulingGroup-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedulinggroup-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
