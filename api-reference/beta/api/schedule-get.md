@@ -14,8 +14,8 @@ Gets the [schedule](../resources/schedule.md).
 
 Schedule creation adheres to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
 Clients PUT to a schedule which if the schedule is provisioned would update it and otherwise it will start schedule provisioning in the background.
-During schedule provisioning, clients can GET the schedule and look at the provisionStatus for the current state of provisioning and in case it Failed the provisionStatusCode for additional information.
-Clients can GET a schedule to inspect the configuration of the schedule.
+During schedule provisioning, clients can get the schedule and look at the `provisionStatus` property for the current state of the provisioning, or if the provisioning failed, get additional information from the `provisionStatusCode` property.
+Clients can also inspect the configuration of the schedule.
 
 ## Permissions
 
