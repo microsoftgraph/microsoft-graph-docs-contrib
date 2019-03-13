@@ -23,20 +23,20 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 ## Properties
 |Name                   |Type           |Req.|Nav.|computed|Description                                                                                                                                      |
 |-----------------------|---------------|:--:|:--:|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			        |`string`  |?   |  |  |Id of the `schedule`.|
-| enabled 			    |`bool`    |?   |   |  | Indicates if the scheudle is enabled for the team.|
-| timeZone 		        |`string`  | ?  |  |  | Indicates the time zone of the schedule team. |
-| provisionStatus       |`enum`    |    |   |?  | The status of the schedule provision. |
-| provisionStatusCode   |`string`  |    |   |?  | Additional information in case schedule provision failed. |
+| id			        |`string`  |✓   |  |  |Id of the `schedule`.|
+| enabled 			    |`bool`    |✓   |   |  | Indicates if the scheudle is enabled for the team.|
+| timeZone 		        |`string`  | ✓  |  |  | Indicates the time zone of the schedule team. |
+| provisionStatus       |`enum`    |    |   |✓  | The status of the schedule provision. |
+| provisionStatusCode   |`string`  |    |   |✓  | Additional information in case schedule provision failed. |
 
 
 ## Relationships
 |Name                   |Type           |Req.|Nav.|computed|Description                                                                                                                                      |
 |-----------------------|---------------|:--:|:--:|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| shifts   |`collection(shift)`  |    |? contained non-expandable  |  | The shifts in the schedule. |
-| timesOff   |`collection(timeOff)`  |    |? contained non-expandable   |  | The times off in the schedule. |
-| timeOffReasons   |`collection(timeOffReason)`  |    |? contained non-expandable   |  | The set of reasons for a time off in the schedule. |
-| schedulingGroups   |`collection(schedulingGroup)`  |    |? contained non-expandable   |  | The logical grouping of users in the schedule to groups (e.g. by roles). |
+| shifts   |`collection(shift)`  |    |✓ contained non-expandable  |  | The shifts in the schedule. |
+| timesOff   |`collection(timeOff)`  |    |✓ contained non-expandable   |  | The times off in the schedule. |
+| timeOffReasons   |`collection(timeOffReason)`  |    |✓ contained non-expandable   |  | The set of reasons for a time off in the schedule. |
+| schedulingGroups   |`collection(schedulingGroup)`  |    |✓ contained non-expandable   |  | The logical grouping of users in the schedule to groups (e.g. by roles). |
 
 
 ## JSON representation

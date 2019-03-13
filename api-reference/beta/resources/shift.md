@@ -25,14 +25,14 @@ A shift is a unit of scheduled work in the schedule.
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                                                                      |
 |--------------|---------------|:--:|:--:|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |?   |   |  |Id of the `shift`.|
-| userId 			|`string`      |?   |   |   |Id of the user assigned to the `shift`.|
+| id			|`string`      |✓   |   |  |Id of the `shift`.|
+| userId 			|`string`      |✓   |   |   |Id of the user assigned to the `shift`.|
 | schedulingGroupId 		|`string`      |   |   |  |Id of the scheduling group the `shift` is part of.|
 | sharedShift 	|`shiftItem`  |   |   |  |The shared version of this `shift` that is viewable by both employees and managers.|
 | draftShift		|`shiftItem`        |   |   |  |The draft version of this `shift` that is viewable by managers.|
-| createdDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `shift` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `shift` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |?  |The identity that last updated this `shift`.|
+| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `shift` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `shift` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `shift`.|
 
 ## JSON representation
 

@@ -25,13 +25,13 @@ A timeOffReason is a valid reason to take time-off in the schedule.
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                 |
 |--------------|---------------|:--:|:--:|:--:|--------------------------------------------------------------------------------------------|
-| id			|`string`      |?   |  |  |Id of the `timeOffReason`.|
+| id			|`string`      |✓   |  |  |Id of the `timeOffReason`.|
 | displayName               | `string`                  |      |      |  | The name of the `timeOffReason`.     |
-| iconType | `enum`   | ?   |   |   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. |
-| isActive 			|`bool`      |?   |  |   | Indicates if the `timeOffReason` can be used when creating new entities or updating existing ones.|
-| createdDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `timeOffReason` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `timeOffReason` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |?  |The identity that last updated this `timeOffReason`.|
+| iconType | `enum`   | ✓   |   |   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. |
+| isActive 			|`bool`      |✓   |  |   | Indicates if the `timeOffReason` can be used when creating new entities or updating existing ones.|
+| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOffReason` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOffReason` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `timeOffReason`.|
 
 ## JSON representation
 

@@ -15,9 +15,9 @@ A shiftActivity represents an activity in the shift.
 ## Properties
 | Name                         | Type                    | Req. | R.O. | Nav. | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|------|------|------|---------------------------------------------------------------------------------------------|
-| isPaid               | `bool`                  | ?    |      |      | Indicates if the `microsoft.graph.user` should be paid for the acitivity during their `shift`.     |
-| startDateTime               | `DateTimeOffset`                  | ?    |      |      | The start date and time for the `shiftActivity`.     |
-| endDateTime               | `DateTimeOffset`                  | ?    |      |      | The end date and time for the `shiftActivity`.     |
+| isPaid               | `bool`                  | ✓    |      |      | Indicates if the `microsoft.graph.user` should be paid for the acitivity during their `shift`.     |
+| startDateTime               | `DateTimeOffset`                  | ✓    |      |      | The start date and time for the `shiftActivity`.     |
+| endDateTime               | `DateTimeOffset`                  | ✓    |      |      | The end date and time for the `shiftActivity`.     |
 | code               | `string`                  |     |      |      | Customer defined code for the `shiftActivity`.     |
 | displayName               | `string`                  |      |      |      | The name of the `shiftActivity`.     |
 

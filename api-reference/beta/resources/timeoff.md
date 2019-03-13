@@ -25,13 +25,13 @@ A timeOff is a unit of non-work in the schedule.
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                                                                      |
 |--------------|---------------|:--:|:--:|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |?   |  |  |Id of the `timeOff`.|
-| userId 			|`string`      |?   |   |   |Id of the user assigned to the `timeOff`.|
+| id			|`string`      |✓   |  |  |Id of the `timeOff`.|
+| userId 			|`string`      |✓   |   |   |Id of the user assigned to the `timeOff`.|
 | sharedTimeOff 	|`timeOffItem`  |   |   |  |The shared version of this `timeOff` that is viewable by both employees and managers.|
 | draftTimeOff		|`timeOffItem`        |   |   |  |The draft version of this `timeOff` that is viewable by managers.|
-| createdDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `timeOff` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |?  |The time stamp in which this `timeOff` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |?  |The identity that last updated this `timeOff`.|
+| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOff` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOff` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `timeOff`.|
 
 ## JSON representation
 

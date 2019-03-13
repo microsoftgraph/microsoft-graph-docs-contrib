@@ -42,9 +42,9 @@ POST /teams/{teamId}/schedule/share
 ## Request body
 |Name                   |Type           |Req.|Description                                                                                                                                       |
 |-----------------------|-------------------|:--:|----------------------------------------------------------------------------------------------------------------------------------------------|
-| notifyTeam	        |`bool`             | ?  | Should the entire team get a visible notification of this action or only employees that have a shift assigned to them that got shared?       |
-| startDateTime         |`DateTimeOffset`   | ?  | The start time to share shifts on the schedule from.                                                                                         |
-| endDateTime           |`DateTimeOffset`   | ?  | The end time to share shifts on the schedule until.                                                                                          |
+| notifyTeam	        |`bool`             | ✓  | Should the entire team get a visible notification of this action or only employees that have a shift assigned to them that got shared?       |
+| startDateTime         |`DateTimeOffset`   | ✓  | The start time to share shifts on the schedule from.                                                                                         |
+| endDateTime           |`DateTimeOffset`   | ✓  | The end time to share shifts on the schedule until.                                                                                          |
 
 ## Response
 

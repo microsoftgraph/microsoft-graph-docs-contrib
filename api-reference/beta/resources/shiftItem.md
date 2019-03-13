@@ -17,8 +17,8 @@ A shiftItem represents a version of the shift.
 |------------------------------|-------------------------|------|------|------|---------------------------------------------------------------------------------------------|
 | notes               | `string`                  |      |      |      | These are the notes for the `shiftItem`.      |
 | displayName               | `string`                  |      |      |      | The name of the `shiftItem`.     |
-| startDateTime               | `DateTimeOffset`                  | ?    |      |      | The start date and time for the `shiftItem`.     |
-| endDateTime               | `DateTimeOffset`                  | ?    |      |      | The end date and time for the `shiftItem`.     |
+| startDateTime               | `DateTimeOffset`                  | ✓    |      |      | The start date and time for the `shiftItem`.     |
+| endDateTime               | `DateTimeOffset`                  | ✓    |      |      | The end date and time for the `shiftItem`.     |
 | theme | `enum`   |    |  |  | Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 | activities 	| `collection(shiftActivity)`    |    |  |  | A shiftActivity is an incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. |
 
