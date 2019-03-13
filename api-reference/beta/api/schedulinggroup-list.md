@@ -1,15 +1,15 @@
 ---
-title: "Get the list of schedulingGroup in this schedule"
-description: "Get the list of schedulingGroup in this schedule."
+title: "List schedulingGroups"
+description: "Get the list of **schedulingGroup** objects in a schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a schedulingGroup by id
+# List schedulingGroups
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [schedulingGroups](../resources/schedulinggroup.md) in this [schedule](../resources/schedule.md).
+Get the list of [schedulingGroup](../resources/schedulinggroup.md) objects in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulinggroup.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulinggroup.md) objects in the response body.
 
 ## Example
 
