@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Gets the schedule
+# Get schedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -14,7 +14,7 @@ Retrieve the properties and relationships of a [schedule](../resources/schedule.
 
 Schedule creation adheres to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
 Clients PUT to a schedule which if the schedule is provisioned would update it and otherwise it will start schedule provisioning in the background.
-During schedule provisioning, clients can get the schedule and look at the `provisionStatus` property for the current state of the provisioning, or if the provisioning failed, get additional information from the `provisionStatusCode` property.
+During schedule provisioning, clients can get the schedule and look at the `provisionStatus` property for the current state of the provisioning. If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
 Clients can also inspect the configuration of the schedule.
 
 ## Permissions
