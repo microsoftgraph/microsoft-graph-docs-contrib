@@ -1,21 +1,24 @@
 ---
-title: "Creates or updates the schedule"
-description: "Creates or updates the schedule."
+title: "Create or update schedule"
+description: "Create or update a **schedule** object."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Creates or updates the schedule
+# Create or update schedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates or updates the [schedule](../resources/schedule.md).
+Create or update a [schedule](../resources/schedule.md) object.
 
-Schedule creation adheres to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
-Clients PUT to a schedule which if the schedule is provisioned would update it and otherwise it will start schedule provisioning in the background.
-During schedule provisioning, clients can GET the schedule and look at the provisionStatus for the current state of provisioning and in case it Failed the provisionStatusCode for additional information.
-Clients can GET a schedule to inspect the configuration of the schedule.
+The schedule creation process conforms to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
+When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+
+During schedule provisioning, clients can use the [GET method](schedule-get.md) to get the schedule and look at the `provisionStatus` property for the current state of the provisioning. If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
+
+Clients can also inspect the configuration of the schedule.
+
 
 ## Permissions
 
