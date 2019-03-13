@@ -10,17 +10,17 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A timeOff is a unit of non-work in the schedule.
+A unit of non-work in the schedule.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Post timeOff](../api/timeOff-post.md) | [timeOff](timeOff.md) | Creates a new timeOff.|
-|[List timeOff](../api/timeOff-list.md) | [timeOff](timeOff.md) collection | Get the list of timeOff in this schedule.|
-|[Get timeOff](../api/timeOff-get.md) | [timeOff](timeOff.md) | Get a timeOff by id.|
-|[Put timeOff](../api/timeOff-put.md) | [timeOff](timeOff.md) | Updates a timeOff.|
-|[Delete timeOff](../api/timeOff-delete.md) | None | Deletes a timeOff from the schedule.|
+|[Create timeOff](../api/timeOff-post.md) | [timeOff](timeOff.md) | Create a new `timeOff` object.|
+|[List timeOffs](../api/timeOff-list.md) | [timeOff](timeOff.md) collection | Get the list of `timeOffs` in this schedule.|
+|[Get timeOff](../api/timeOff-get.md) | [timeOff](timeOff.md) | Get a `timeOff` by ID.|
+|[Update timeOff](../api/timeOff-put.md) | [timeOff](timeOff.md) | Update a `timeOff`.|
+|[Delete timeOff](../api/timeOff-delete.md) | None | Delete a `timeOff` from the schedule.|
 
 ## Properties
 |Name          |Type           |Req.|Nav.|computed|Description                                                                                                                                      |
@@ -35,7 +35,7 @@ A timeOff is a unit of non-work in the schedule.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
