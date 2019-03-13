@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Add [schedule](../api-reference/beta/resources/schedule.md) resource under [team](../api-reference/beta/resources/team.md) with [schedulingGroups](../api-reference/beta/resources/schedulinggroup.md), [shifts](../api-reference/beta/resources/shift.md), [timeOffReasons](../api-reference/beta/resources/timeoffreason.md) and [timesOff](../api-reference/beta/resources/timeoff.md) resources and its associated methods. |
+| Addition | beta | Add [schedule](/api-reference/beta/resources/schedule.md) resource under [team](/api-reference/beta/resources/team.md) with [schedulingGroups](/api-reference/beta/resources/schedulinggroup.md), [shifts](/api-reference/beta/resources/shift.md), [timeOffReasons](/api-reference/beta/resources/timeoffreason.md) and [timesOff](/api-reference/beta/resources/timeoff.md) resources and its associated methods. |
 
 ### Directory APIs
 
