@@ -1,16 +1,16 @@
 ---
-title: "Get a shift by id"
+title: "Get shift"
 description: "Get a shift by id."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a shift by id
+# Get shift
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [shift](../resources/shift.md) by id.
+Retrieve the properties and relationships of a [shift](../resources/shift.md) object by ID.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
