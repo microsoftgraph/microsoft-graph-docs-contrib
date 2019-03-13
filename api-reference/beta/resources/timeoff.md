@@ -1,6 +1,6 @@
 ---
 title: "timeOff resource type"
-description: "A timeOff is a unit of non-work in the schedule."
+description: "A unit of non-work in the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
