@@ -1,6 +1,6 @@
 ---
 title: "Create shift"
-description: "Creates a new shift."
+description: "Create a new shift."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [shift](../resources/shift.md).
+Create a new [shift](../resources/shift.md) in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
