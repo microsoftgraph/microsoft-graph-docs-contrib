@@ -1,16 +1,16 @@
 ---
-title: "Creates a new timeOffReason"
+title: "Create timeOffReason"
 description: "Creates a new timeOffReason."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Creates a new timeOffReason
+# Create timeOffReason
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [timeOffReason](../resources/timeoffreason.md).
+Create a new [timeOffReason](../resources/timeoffreason.md).
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
 
 ## Example
 
