@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Shares a time-range of the schedule with the schedule members
+# Share schedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Shares a [schedule](../resources/schedule.md) time range with schedule members.
+Share a [schedule](../resources/schedule.md) time range with schedule members.
 
 ## Permissions
 
@@ -43,8 +43,8 @@ POST /teams/{teamId}/schedule/share
 |Name                   |Type           |Description                                                                                                                                       |
 |-----------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | notifyTeam	        |`Boolean`             |Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared. Required.       |
-| startDateTime         |`DateTimeOffset`   |The start time to share shifts on the schedule from.  Required.   |                                                                                    |
-| endDateTime           |`DateTimeOffset`   | The end time to share shifts on the schedule until.   |                                                                                       |
+| startDateTime         |`DateTimeOffset`   |The start time to share shifts on the schedule from.  Required.   |
+| endDateTime           |`DateTimeOffset`   | The end time to share shifts on the schedule until.   |
 
 ## Response
 
