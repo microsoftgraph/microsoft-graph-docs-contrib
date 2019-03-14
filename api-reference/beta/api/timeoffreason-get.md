@@ -1,16 +1,16 @@
 ---
-title: "Get a timeOffReason by id"
-description: "Get a timeOffReason by id."
+title: "Get timeOffReason"
+description: "Get a timeOffReason by ID."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a timeOffReason by id
+# Get timeOffReason
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [timeOffReason](../resources/timeoffreason.md) by id.
+Retrieve the properties and relationships of a [timeOffReason](../resources/timeoffreason.md) object by ID.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
 
 ## Example
 
