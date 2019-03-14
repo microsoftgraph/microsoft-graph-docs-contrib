@@ -1,16 +1,16 @@
 ---
-title: "Deletes a timeOff from the schedule"
-description: "Deletes a timeOff from the schedule."
+title: "Delete timeOff"
+description: "Delete a timeOff from the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Deletes a timeOff from the schedule
+# Delete timeOff
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [timeOff](../resources/timeoff.md) from the schedule.
+Delete a [timeOff](../resources/timeoff.md) from the schedule.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ DELETE /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
