@@ -1,6 +1,6 @@
 ---
 title: "schedule resource type"
-description: "A schedule is a collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team."
+description: "A collection of schedulingGroups, shifts, timeOffReasons and timesOff within a team."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,38 +10,38 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A schedule collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md). 
+A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md) objects, [timeOffReason](timeoffreason.md) objects, and [timeOff](timeoff.md) objects within a [team](../resources/team.md). 
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Put schedule](../api/schedule-put.md) | [schedule](schedule.md) | Creates or updates the `schedule`.|
-|[Get schedule](../api/schedule-get.md) | [schedule](schedule.md) | Gets the `schedule`.|
-|[Share schedule](../api/schedule-share.md) | None | Shares a time-range of the schedule with the `schedule` members.|
+|[Create or update schedule](../api/schedule-put.md) | [schedule](schedule.md) | Create or update a `schedule`.|
+|[Get schedule](../api/schedule-get.md) | [schedule](schedule.md) | Get a `schedule`.|
+|[share](../api/schedule-share.md) | None | Share a `schedule` time range with schedule members.|
 
 ## Properties
 |Name                   |Type           |Description                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			        |`string`  |Id of the `schedule`.|
-| enabled 			    |`bool`    | Indicates if the scheudle is enabled for the team.|
+| id			        |`string`  |ID of the `schedule`.|
+| enabled 			    |`bool`    | Indicates whether the schedule is enabled for the team.|
 | timeZone 		        |`string`  | Indicates the time zone of the schedule team using tz database format. |
-| provisionStatus       |`enum`    | The status of the schedule provision. |
-| provisionStatusCode   |`string`  | Additional information in case schedule provision failed. |
+| provisionStatus       |`enum`    | The status of the schedule provisioning. |
+| provisionStatusCode   |`string`  | Additional information about why schedule provisioning failed. |
 
 
 ## Relationships
 |Name                   |Type           |Description                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | shifts   |`collection(shift)`  | The shifts in the schedule. |
-| timesOff   |`collection(timeOff)`  | The times off in the schedule. |
+| timesOff   |`collection(timeOff)`  | The instances of times off in the schedule. |
 | timeOffReasons   |`collection(timeOffReason)`  | The set of reasons for a time off in the schedule. |
-| schedulingGroups   |`collection(schedulingGroup)`  | The logical grouping of users in the schedule to groups (e.g. by roles). |
+| schedulingGroups   |`collection(schedulingGroup)`  | The logical grouping of users in the schedule (usually by role). |
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
