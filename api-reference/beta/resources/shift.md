@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unit of scheduled work in the schedule. 
+A unit of scheduled work in a [schedule](schedule.md). 
 
 ## Methods
 
