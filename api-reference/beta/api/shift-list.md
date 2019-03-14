@@ -1,15 +1,15 @@
 ---
-title: "Get the list of shifts in this schedule"
-description: "Get the list of shifts in this schedule."
+title: "List shifts"
+description: "Get the list of shifts in a schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a shift by id
+# List shifts
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [shifts](../resources/shift.md) in this [schedule](../resources/schedule.md).
+Get the list of [shifts](../resources/shift.md) in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -30,6 +30,9 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /teams/{teamId}/schedule/shifts
 ```
+
+## Optional query parameters
+This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -54,9 +57,6 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=sharedShift/startDateTime ge 2018-10-04T00:58:45.332Z and sharedShift/endDateTime le 2018-10-04T00:58:45.332Z and draftShift/startDateTime ge 2018-10-04T00:58:45.332Z and draftShift/endDateTime le 2018-10-04T00:58:45.332Z
 ```
-
-## Optional query parameters
-This method supports the $filter [OData query parameters](/graph/query-parameters) to help customize the response.
 
 #### Response
 
