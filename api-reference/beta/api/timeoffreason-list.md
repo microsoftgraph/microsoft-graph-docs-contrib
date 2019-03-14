@@ -1,15 +1,15 @@
 ---
-title: "Get the list of timeOffReason in this schedule"
-description: "Get the list of timeOffReason in this schedule."
+title: "List timeOffReasons"
+description: "Get the list of timeOffReasons in a schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a timeOffReason by id
+# List timeOffReasons
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [timeOffReasons](../resources/timeoffreason.md) in this [schedule](../resources/schedule.md).
+Get the list of [timeOffReasons](../resources/timeoffreason.md) in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/timeOffReasons
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [timeOffReason](../resources/timeoffreason.md) objects in the response body.
 
 ## Example
 
