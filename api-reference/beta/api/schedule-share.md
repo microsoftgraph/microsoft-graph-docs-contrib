@@ -1,12 +1,12 @@
 ---
-title: "Shares a schedule time-range"
+title: "Shares a schedule time range"
 description: "Share a schedule time range with schedule members."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Shares a schedule time-range
+# Share a schedule time range
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
