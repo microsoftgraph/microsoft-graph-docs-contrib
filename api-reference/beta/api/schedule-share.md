@@ -1,6 +1,6 @@
 ---
-title: "Shares a time-range of the schedule with the schedule members"
-description: "Shares a time-range of the schedule with the schedule members."
+title: "Share schedule"
+description: "Share a schedule time range with schedule members."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Shares a time-range of the  [schedule](../resources/schedule.md) with the schedule members.
+Shares a [schedule](../resources/schedule.md) time range with schedule members.
 
 ## Permissions
 
@@ -40,11 +40,11 @@ POST /teams/{teamId}/schedule/share
 | Content-Type  | application/json  |
 
 ## Request body
-|Name                   |Type           |Req.|Description                                                                                                                                       |
-|-----------------------|-------------------|:--:|----------------------------------------------------------------------------------------------------------------------------------------------|
-| notifyTeam	        |`bool`             | ✓  | Should the entire team get a visible notification of this action or only employees that have a shift assigned to them that got shared?       |
-| startDateTime         |`DateTimeOffset`   | ✓  | The start time to share shifts on the schedule from.                                                                                         |
-| endDateTime           |`DateTimeOffset`   | ✓  | The end time to share shifts on the schedule until.                                                                                          |
+|Name                   |Type           |Description                                                                                                                                       |
+|-----------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| notifyTeam	        |`Boolean`             |Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared. Required.       |
+| startDateTime         |`DateTimeOffset`   |The start time to share shifts on the schedule from.  Required.   |                                                                                    |
+| endDateTime           |`DateTimeOffset`   | The end time to share shifts on the schedule until.   |                                                                                       |
 
 ## Response
 
