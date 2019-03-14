@@ -1,16 +1,16 @@
 ---
-title: "Updates a shift"
-description: "Updates a shift."
+title: "Update shift"
+description: "Update a shift in a schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Updates a shift
+# Update shift
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates a [shift](../resources/shift.md).
+Update a [shift](../resources/shift.md) in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [shift](../resources/shif
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
