@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A logical grouping of members in the schedule (usually by role). 
+A logical grouping of members in a [schedule](schedule.md) (usually by role). 
 
 ## Methods
 
