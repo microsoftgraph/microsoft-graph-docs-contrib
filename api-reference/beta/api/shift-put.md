@@ -1,12 +1,12 @@
 ---
-title: "Replace an existing shift"
+title: "Replace shift"
 description: "Replace an existing shift."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Replace an existing shift
+# Replace shift
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [shift](../resources/shif
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
