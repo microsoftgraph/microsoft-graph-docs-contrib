@@ -43,13 +43,13 @@ This method supports the $filter [OData query parameter](/graph/query-parameters
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a collection of [shift](../resources/shift.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [shift](../resources/shift.md) objects in the response body.
 
 ## Example
 
 #### Request
 
-The following is an example of the request which gets all shift objects that have a shared version and a draft version between March 11th 2019 and March 18th 2019.
+The following is an example of a request that gets all **shift** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 <!-- {
   "blockType": "request",
   "name": "shift-list"
