@@ -2,7 +2,7 @@
 documentType: LandingData
 title: Microsoft Graph Documentation
 metadata:
-  title: Microsoft Graph Documentation
+  title: Microsoft Graph documentation
   description: Learn how you can use Microsoft Graph to build apps for organizations and consumers that interact with the data of millions of users. 
   services: active-directory
   author: CelesteDG
@@ -13,14 +13,14 @@ metadata:
   ms.date: 12/13/2018
   ms.author: celested
 abstract:
-  description: Microsoft Graph provides a unified programmability model that developers can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data on Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, and Education. Learn how to use Microsoft Graph with our full developer documentation, tutorials, code samples, videos, blog posts, and other content.
+  description: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data on Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, and Education. Learn how to use Microsoft Graph with our full developer documentation, tutorials, code samples, videos, blog posts, and other content.
   aside:
     image:
       alt: 
       height: 110
       src: ./images/index/whatsnew-video.png
       width: 250  
-    title: What's new on Microsoft Graph (12:39)
+    title: What's new in Microsoft Graph (12:39)
     href: https://www.youtube.com/watch?v=3X10r2VVLCg
     width: 250
 sections:
@@ -32,17 +32,17 @@ sections:
       columns: 3
       items:
       - href: /graph/overview
-        html: <p>Learn more about the Microsoft Graph and its features and capabilities.</p>
+        html: <p>Learn more about Microsoft Graph and its features and capabilities.</p>
         image:
           src: ./images/index/i_get-started.svg
         title: Overview of Microsoft Graph
       - href: /graph/overview-major-services
-        html: <p>Get to know the basics in Microosft Graph and understand the major services and features that are available to you.</p>
+        html: <p>Get to know the basics in Microosft Graph and understand the major services and features that are available.</p>
         image:
           src: ./images/index/i_overview.svg
         title: Services and features
       - href: https://developer.microsoft.com/graph/graph-explorer/
-        html: <p>Make requests and see responses against the Microsoft Graph.</p>
+        html: <p>Make requests and see responses against Microsoft Graph.</p>
         image:
           src: ./images/index/i_queries.svg
         title: Graph Explorer
@@ -52,12 +52,12 @@ sections:
           src: ./images/index/i_code-edit.svg
         title: Use the API
       - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
-        html: <p>Use the generally available Microsoft Graph REST API v1.0 to meet your practical, production needs.</p>
+        html: <p>Use the Microsoft Graph REST API v1.0 to meet your practical production needs.</p>
         image: 
           src: ./images/index/i_api-reference.svg
         title: Microsoft Graph REST API v1.0
       - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
-        html: <p>Try out the Microsoft Graph beta endpoint and send us feedback.</p>
+        html: <p>Try out the Microsoft Graph beta endpoint.</p>
         image: 
           src: ./images/index/i_api.svg
         title: Microsoft Graph REST API Beta
