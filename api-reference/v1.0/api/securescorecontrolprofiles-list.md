@@ -6,9 +6,7 @@ localization_priority: Normal
 
 # List secureScoreControlProfiles
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) object.
+Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object.
 
 ## Permissions
 
@@ -26,7 +24,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /security/secureScoreControlProfiles
+GET /security/secureScoreControlProfiles?$top=1
+GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}'
 ```
+
+## Optional query parameters
+
+This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:
+
+- `$count`
+- `$filter`
+- `$skip`
+- `$top` will return the aggregated top results from each security API provider.  
 
 ## Request headers
 
@@ -36,7 +45,7 @@ GET /security/secureScoreControlProfiles
 
 ## Request body
 
-Do not supply a request body for this method.
+Do not supply a request body for this method. The request body will be ignored.
 
 ## Response
 
@@ -49,11 +58,11 @@ If successful, this method returns a `200 OK` response code and a **secureScoreC
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "securescorecontrolprofiles_list"
+  "name": "get_securescorecontrolprofiles"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
+GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 ```
 
 ### Response
@@ -71,44 +80,53 @@ Content-type: application/json
 
 
 {
-    "value": [
+  "value": [
+    {
+      "id": "String (identifier)",
+      "azureTenantId": "String",
+      "actionType": "String",
+      "actionUrl": "String",
+      "controlCategory": "String",
+      "title": "String", 
+      "deprecated ": "Boolean",
+      "implementationCost ": "String",
+      "lastModifiedDateTime": "String (timestamp)",
+      "maxScore": "Double",
+      "rank ": "Int32",
+      "remediation": "String",
+      "remediationImpact ": "String",
+      "service": "String",
+      "threats":  ["String"],
+      "tier": "String",
+      "userImpact": "String",
+      "complianceInformation": [
         {
-            "actionType": "actionType.value",
-            "actionUrl": "actionUrl.value",
-            "controlCategory": "controlCategory.value",
-            "title": "title.value",
-            "deprecated": "deprecated.value",
-            "implementationCost": "implementationCost.value",
-            "lastModifiedDateTime": "lastModifiedDateTime.value",
-            "maxScore": "maxScore.value",
-            "rank": "rank.value",
-            "remediation": "remediation.value",
-            "remediationImpact": "remediationImpact.value",
-            "service": "service.value",
-            "threats": [
-                "threats.value"
-            ],
-            "tier": "tier.value",
-            "userImpact": "userImpact.value",
-            "id": "id.value",
-            "azureTenantId": "azureTenantId.value",
-            "controlStateUpdates": [
-                {
-                    "assignedTo": "assignedTo.value",
-                    "comment": "comment.value",
-                    "state": "state.value",
-                    "updatedBy": "updatedBy.value",
-                    "updatedDateTime": "updatedDateTime.value"
-                }
-            ],
-            "vendorInformation": {
-                "provider": "SecureScore",
-                "providerVersion": null,
-                "subProvider": null,
-                "vendor": "Microsoft"
+          "certificationName": "certificationName.value",
+          "certificationControl": [
+            {
+              "name": "name.value",
+              "url": "url.value",
             }
-         }
-     ]
+          ]
+        }         
+      ],
+      "controlStateUpdates": [
+        {
+          "assignedTo": "assignedTo.value",
+          "comment": "comment.value",
+          "state": "state.value",
+          "updatedBy": "updatedBy.value",
+          "updatedDateTime": "updatedDateTime.value"
+        }
+      ],
+      "vendorInformation": {
+        "provider": "SecureScore",
+        "providerVersion": null,
+        "subProvider": null,
+        "vendor": "Microsoft"
+      }
+    }    
+  ]
 }
 ```
 
@@ -119,9 +137,6 @@ Content-type: application/json
   "description": "List secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

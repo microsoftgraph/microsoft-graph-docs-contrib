@@ -12,9 +12,6 @@ This resource contains various different scores based by different scopes (for e
 |:--|:--|:--|
 |	basis	|	String	|	Scope type (By AllTenants, TotalSeats, IndustryTypes).	|
 |	averageScore	|	Double	| Average score within specified basis. |
-|	deviceScore	|	Double	| Average score within specified basis. |
-|	dataScore	|	Double	| Average score within specified basis. |
-|	identityScore	|	Double	| Average score within specified basis. |
 
 ## JSON representation
 
@@ -31,10 +28,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "basis": "String",
-  "averageScore": "Double",
-  "deviceScore": "Double",
-  "dataScore": "Double",
-  "identityScore": "Double"
+  "averageScore": "Double"
 }
 
 ```

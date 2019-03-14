@@ -6,9 +6,7 @@ localization_priority: Normal
 
 # List secureScores
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.
+Retrieve the properties and relationships of a [secureScores](../resources/securescore.md) object.
 
 ## Permissions
 
@@ -26,7 +24,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /security/secureScores
+GET /security/secureScores?$top=1
+GET /security/secureScores?$filter={property} eq '{property-value}'
 ```
+## Optional query parameters
+
+This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:
+
+- `$count`
+- `$filter`
+- `$skip`
+- `$top` will return the aggregated top results from each security API provider.  
 
 ## Request headers
 
@@ -36,7 +44,7 @@ GET /security/secureScores
 
 ## Request body
 
-Do not supply a request body for this method.
+Do not supply a request body for this method. The request body will be ignored.
 
 ## Response
 
@@ -49,11 +57,11 @@ If successful, this method returns a `200 OK` response code and a **secureScores
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "securescores_list"
+  "name": "get_securescores"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/security/secureScores?$top=1
+GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 ```
 
 ### Response
@@ -62,7 +70,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScore"
 } -->
 
 ```http
@@ -76,7 +84,9 @@ Content-type: application/json
             "activeUserCount": "activeUserCount.value",
             "createdDateTime": "createdDateTime.value",
             "currentScore": "currentScore.value",
-            "enabledServices": "enabledServices.value",
+            "enabledServices": [
+                "enabledServices.value"
+            ],
             "licensedUserCount": "licensedUserCount.value",
             "maxScore": "maxScore.value",
             "id": "id.value",
@@ -113,9 +123,7 @@ Content-type: application/json
                     "controlCategory": "controlCategory.value",
                     "controlName": "controlName.value",
                     "description": "description.value",
-                    "score": "score.value",
-                    "total": "total.value",
-                    "count": "count.value"
+                    "score": "score.value"
                 }
             ]
         }
@@ -131,9 +139,6 @@ Content-type: application/json
   "description": "List secureScores",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/securescores-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->
