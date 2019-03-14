@@ -1,16 +1,16 @@
 ---
-title: "Creates a new schedulingGroup"
-description: "Creates a new schedulingGroup."
+title: "Create schedulingGroup"
+description: "Create a new schedulingGroup."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Creates a new schedulingGroup
+# Create schedulingGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [schedulingGroup](../resources/schedulinggroup.md).
+Create a new [schedulingGroup](../resources/schedulinggroup.md).
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/schedulingGroups
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
 
 ## Example
 
