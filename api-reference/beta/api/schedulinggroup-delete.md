@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Marks a schedulingGroup [schedulingGroup](../resources/schedulinggroup.md) as inactive.
+Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
