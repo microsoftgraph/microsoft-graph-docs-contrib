@@ -1,12 +1,12 @@
 ---
-title: "Marks a timeOffReason as inactive"
-description: "Marks a timeOffReason as inactive."
+title: "Mark timeOffReason as inactive"
+description: "Mark a timeOffReason as inactive."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Marks a timeOffReason as inactive
+# Mark timeOffReason as inactive
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ DELETE /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
