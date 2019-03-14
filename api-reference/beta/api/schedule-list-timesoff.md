@@ -1,15 +1,16 @@
 ---
-title: "List timeOffs"
-description: "Get the list of timeOffs in this schedule."
+title: "List timesOff"
+description: "Get the list of timesOff in this schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# List timeOffs
+# List timesOff
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [timeOffs](../resources/timeoff.md) in a [schedule](../resources/schedule.md).
+
+Get the list of [timesOff](../resources/timeoff.md) in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
