@@ -1,12 +1,12 @@
 ---
-title: "Replace an existing schedulingGroup"
+title: "Replace schedulingGroup"
 description: "Replace an existing schedulingGroup."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Replace an existing schedulingGroup
+# Replace schedulingGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [schedulingGroup](../reso
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
 
 ## Example
 
