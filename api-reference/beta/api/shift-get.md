@@ -1,6 +1,6 @@
 ---
 title: "Get shift"
-description: "Get a shift by id."
+description: "Get a shift by ID."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
