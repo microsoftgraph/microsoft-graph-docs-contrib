@@ -1,16 +1,16 @@
 ---
-title: "Get a schedulingGroup by id"
-description: "Get a schedulingGroup by id."
+title: "Get schedulingGroup"
+description: "Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by ID."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a schedulingGroup by id
+# Get schedulingGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by id.
+Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by ID.
 
 ## Permissions
 
@@ -41,7 +41,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
 
 ## Example
 
