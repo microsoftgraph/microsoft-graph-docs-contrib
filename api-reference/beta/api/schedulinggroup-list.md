@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulinggroup.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulinggroup.md) objects in the response body.
 
 ## Example
 
