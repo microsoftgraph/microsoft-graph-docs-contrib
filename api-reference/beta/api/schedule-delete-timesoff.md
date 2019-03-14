@@ -1,6 +1,6 @@
 ---
 title: "Delete timeOff"
-description: "Delete a timeOff from the schedule."
+description: "Delete a timeOff from a schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [timeOff](../resources/timeoff.md) from the schedule.
+Delete a [timeOff](../resources/timeoff.md) from a [schedule](../resources/schedule.md).
 
 ## Permissions
 
