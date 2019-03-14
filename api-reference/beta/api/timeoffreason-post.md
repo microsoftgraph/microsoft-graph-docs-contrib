@@ -1,6 +1,6 @@
 ---
 title: "Create timeOffReason"
-description: "Creates a new timeOffReason."
+description: "Create a new timeOffReason."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
