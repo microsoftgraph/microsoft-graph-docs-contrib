@@ -1,6 +1,6 @@
 ---
 title: "shiftActivity resource type"
-description: "A shiftActivity represents an activity in the shift."
+description: "Represents an activity in the shift."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,12 +10,12 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A shiftActivity represents an activity in the shift.
+Represents an activity in the shift.
 
 ## Properties
 | Name                         | Type                    | Req. | R.O. | Nav. | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|------|------|------|---------------------------------------------------------------------------------------------|
-| isPaid               | `bool`                  | ✓    |      |      | Indicates if the `microsoft.graph.user` should be paid for the acitivity during their `shift`.     |
+| isPaid               | `bool`                  | ✓    |      |      | Indicates whether the `microsoft.graph.user` should be paid for the acitivity during their `shift`.     |
 | startDateTime               | `DateTimeOffset`                  | ✓    |      |      | The start date and time for the `shiftActivity`.     |
 | endDateTime               | `DateTimeOffset`                  | ✓    |      |      | The end date and time for the `shiftActivity`.     |
 | code               | `string`                  |     |      |      | Customer defined code for the `shiftActivity`.     |
@@ -23,7 +23,7 @@ A shiftActivity represents an activity in the shift.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
