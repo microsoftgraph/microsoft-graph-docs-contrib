@@ -1,12 +1,12 @@
 ---
-title: "Deletes a shift from the schedule"
+title: "Delete shift"
 description: "Deletes a shift from the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Deletes a shift from the schedule
+# Delete shift
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ DELETE /teams/{teamId}/schedule/shifts/{shiftId}
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
