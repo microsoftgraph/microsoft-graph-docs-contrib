@@ -48,7 +48,7 @@ GET /teams/{teamId}/schedule
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
 
 ## Example
 
