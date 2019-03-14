@@ -45,36 +45,31 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string",
-  "userId": "string",
-  "sharedTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
-  "createdDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedBy": {
-    "user": {
-      "id": "string",
-      "displayName": "string"
+    "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+    "createdDateTime": "2019-03-14T05:35:57.755Z",
+    "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
+    "userId": "b6120efa-0ddd-426b-99de-800e9b94a504",
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+            "displayName": "John Doe"
+        }
     },
-    "application": {
-      "id": "string",
-      "displayName": "string"
+    "sharedTimeOff": {
+        "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+        "startDateTime": "2019-03-11T07:00:00Z",
+        "endDateTime": "2019-03-12T07:00:00Z",
+        "theme": "white"
     },
-    "device": {
-      "id": "string",
-      "displayName": "string"
+    "draftTimeOff": {
+        "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+        "startDateTime": "2019-03-11T07:00:00Z",
+        "endDateTime": "2019-03-12T07:00:00Z",
+        "theme": "pink"
     }
-  }
 }
 ```
 

@@ -45,26 +45,21 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "id": "string",
-  "displayName": "string",
-  "iconType": "none",
-  "isActive": true,
-  "createdDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedBy": {
-    "user": {
-      "id": "string",
-      "displayName": "string"
-    },
-    "application": {
-      "id": "string",
-      "displayName": "string"
-    },
-    "device": {
-      "id": "string",
-      "displayName": "string"
+    "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+    "createdDateTime": "2019-03-12T22:10:38.242Z",
+    "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
+    "displayName": "Vacation",
+    "iconType": "plane",
+    "isActive": true,
+    "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+            "displayName": "John Doe"
+        }
     }
-  }
 }
 ```
 

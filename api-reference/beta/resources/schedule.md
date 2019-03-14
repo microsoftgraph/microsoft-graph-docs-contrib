@@ -25,7 +25,7 @@ A schedule collection of [schedulingGroup](schedulinggroup.md) objects, [shift](
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id			        |`string`  |Id of the `schedule`.|
 | enabled 			    |`bool`    | Indicates if the scheudle is enabled for the team.|
-| timeZone 		        |`string`  | Indicates the time zone of the schedule team. |
+| timeZone 		        |`string`  | Indicates the time zone of the schedule team using tz database format. |
 | provisionStatus       |`enum`    | The status of the schedule provision. |
 | provisionStatusCode   |`string`  | Additional information in case schedule provision failed. |
 
@@ -51,11 +51,11 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "id": "string",
-  "enabled": true,
-  "timeZone": "string",
-  "provisionStatus": "notStarted",
-  "provisionStatusCode": "string"
+    "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
+    "enabled": true,
+    "timeZone": "America/Chicago",
+    "provisionStatus": "Completed",
+    "provisionStatusCode": null
 }
 ```
 
