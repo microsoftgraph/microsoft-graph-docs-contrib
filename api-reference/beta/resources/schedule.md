@@ -16,9 +16,9 @@ A schedule collection of [schedulingGroup](schedulinggroup.md) objects, [shift](
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Put schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Creates or updates the schedule.|
-|[Get schedule](../api/team-get-schedule.md) | [schedule](schedule.md) | Gets the schedule.|
-|[Share schedule](../api/schedule-share-timerange.md) | None | Shares a time-range of the schedule with the schedule members.|
+|[Put schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Creates or updates the `schedule`.|
+|[Get schedule](../api/team-get-schedule.md) | [schedule](schedule.md) | Gets the `schedule`.|
+|[Share schedule](../api/schedule-share-timerange.md) | None | Shares a time-range of the schedule with the `schedule` members.|
 
 ## Properties
 |Name                   |Type           |Description                                                                                                                                      |
