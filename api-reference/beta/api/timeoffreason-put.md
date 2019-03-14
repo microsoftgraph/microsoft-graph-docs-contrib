@@ -1,16 +1,16 @@
 ---
-title: "Creates a new timeOffReason"
-description: "Creates a new timeOffReason."
+title: "Replace an existing timeOffReason"
+description: "Replace an existing timeOffReason."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Creates a new timeOffReason
+# Replace an existing timeOffReason
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [timeOffReason](../resources/timeoffreason.md).
+Replace an existing [timeOffReason](../resources/timeoffreason.md).
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/timeOffReasons
+PUT /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
 ## Request headers
@@ -38,6 +38,10 @@ POST /teams/{teamId}/schedule/timeOffReasons
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
+
+## Request body
+
+In the request body, supply a JSON representation of a [timeOffReason](../resources/timeoffreason.md) object.
 
 ## Response
 
@@ -50,11 +54,12 @@ If successful, this method return a `200 OK` response code and a [timeOffReason]
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "schedule-post-timeoffreasons"
+  "name": "timeoffreason-put"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
+PUT https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 Content-type: application/json
+Prefer: return=representation
 
 {
   "displayName": "string",
@@ -75,7 +80,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 401
 
@@ -108,12 +113,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Creates a new timeOffReason",
+  "description": "Replace an existing timeOffReason",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedule-post-timeoffreasons.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeoffreason-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

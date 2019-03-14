@@ -16,11 +16,11 @@ A logical grouping of members in the schedule (usually by role).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create schedulingGroup](../api/schedule-post-schedulinggroup.md) | [schedulingGroup](schedulinggroup.md) | Create a new `schedulingGroup`.|
-|[List schedulingGroup](../api/schedule-list-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md) collection | Get the list of `schedulingGroup` in this schedule.|
-|[Get schedulingGroup](../api/schedule-get-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md) | Get a `schedulingGroup` by ID.|
-|[Update schedulingGroup](../api/schedule-put-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md) | Update a `schedulingGroup`.|
-|[Delete schedulingGroup](../api/schedule-delete-schedulinggroups.md) | None | Marks a `schedulingGroup` as inactive.|
+|[Create schedulingGroup](../api/schedulinggroup-post.md) | [schedulingGroup](schedulinggroup.md) | Create a new `schedulingGroup`.|
+|[List schedulingGroup](../api/schedulinggroup-list.md) | [schedulingGroup](schedulinggroup.md) collection | Get the list of `schedulingGroup` in this schedule.|
+|[Get schedulingGroup](../api/schedulinggroup-get.md) | [schedulingGroup](schedulinggroup.md) | Get a `schedulingGroup` by ID.|
+|[Update schedulingGroup](../api/schedulinggroup-put.md) | [schedulingGroup](schedulinggroup.md) | Update a `schedulingGroup`.|
+|[Delete schedulingGroup](../api/schedulinggroup-delete.md) | None | Marks a `schedulingGroup` as inactive.|
 
 ## Properties
 |Name          |Type           |Description                                                                                 |

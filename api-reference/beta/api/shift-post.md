@@ -1,16 +1,16 @@
 ---
-title: "Replace an existing shift"
-description: "Replace an existing shift."
+title: "Create shift"
+description: "Create a new shift."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Replace an existing shift
+# Create shift
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Replace an existing [shift](../resources/shift.md).
+Create a new [shift](../resources/shift.md) in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /teams/{teamId}/schedule/shifts/{shiftId}
+POST /teams/{teamId}/schedule/shifts
 ```
 
 ## Request headers
@@ -39,13 +39,9 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
-## Request body
-
-In the request body, supply a JSON representation of a [shift](../resources/shift.md) object.
-
 ## Response
 
-If successful, this method return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
@@ -54,12 +50,11 @@ If successful, this method return a `200 OK` response code and a [shift](../reso
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "schedule-put-shifts"
+  "name": "shift-post"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts
 Content-type: application/json
-Prefer: return=representation
 
 {
   "userId": "string",
@@ -111,7 +106,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 401
 
@@ -175,12 +170,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Replace an existing shift",
+  "description": "Creates a new shift",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedule-put-shifts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/shift-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

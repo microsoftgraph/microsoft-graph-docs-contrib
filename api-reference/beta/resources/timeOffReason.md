@@ -16,11 +16,11 @@ A timeOffReason is a valid reason to take time-off in the schedule.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create timeOffReason](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Creates a new `timeOffReason`.|
-|[List timeOffReason](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md) collection | Get the list of `timeOffReason` in this schedule.|
-|[Get timeOffReason](../api/schedule-get-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Get a `timeOffReason` by ID.|
-|[Update timeOffReason](../api/schedule-put-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Updates a `timeOffReason`.|
-|[Delete timeOffReason](../api/schedule-delete-timeoffreasons.md) | None | Marks a `timeOffReason` as inactive.|
+|[Create timeOffReason](../api/timeoffreason-post.md) | [timeOffReason](timeoffreason.md) | Creates a new `timeOffReason`.|
+|[List timeOffReason](../api/timeoffreason-list.md) | [timeOffReason](timeoffreason.md) collection | Get the list of `timeOffReason` in this schedule.|
+|[Get timeOffReason](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Get a `timeOffReason` by ID.|
+|[Update timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Updates a `timeOffReason`.|
+|[Delete timeOffReason](../api/timeoffreason-delete.md) | None | Marks a `timeOffReason` as inactive.|
 
 ## Properties
 |Name          |Type           |Description                                                                                 |

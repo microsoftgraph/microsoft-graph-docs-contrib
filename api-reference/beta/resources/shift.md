@@ -16,11 +16,11 @@ A shift is a unit of scheduled work in the schedule.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create shift](../api/schedule-post-shifts.md) | [shift](shift.md) | Creates a new `shift`.|
-|[List shift](../api/schedule-list-shifts.md) | [shift](shift.md) collection | Get the list of `shift` in this schedule.|
-|[Get shift](../api/schedule-get-shifts.md) | [shift](shift.md) | Get a `shift` by ID.|
-|[Update shift](../api/schedule-put-shifts.md) | [shift](shift.md) | Updates a `shift`.|
-|[Delete shift](../api/schedule-delete-shifts.md) | None | Deletes a `shift` from the schedule.|
+|[Create shift](../api/shift-post.md) | [shift](shift.md) | Creates a new `shift`.|
+|[List shift](../api/shift-list.md) | [shift](shift.md) collection | Get the list of `shift` in this schedule.|
+|[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a `shift` by ID.|
+|[Update shift](../api/shift-put.md) | [shift](shift.md) | Updates a `shift`.|
+|[Delete shift](../api/shift-delete.md) | None | Deletes a `shift` from the schedule.|
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |

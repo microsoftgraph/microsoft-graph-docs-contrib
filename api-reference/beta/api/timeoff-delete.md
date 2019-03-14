@@ -1,16 +1,16 @@
 ---
-title: "Deletes a shift from the schedule"
-description: "Deletes a shift from the schedule."
+title: "Deletes a timeOff from the schedule"
+description: "Deletes a timeOff from the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Deletes a shift from the schedule
+# Deletes a timeOff from the schedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a [shift](../resources/shift.md) from the schedule.
+Deletes a [timeOff](../resources/timeoff.md) from the schedule.
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{teamId}/schedule/shifts/{shiftId}
+DELETE /teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 
 ## Request headers
@@ -50,10 +50,10 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "schedule-delete-shifts"
+  "name": "timeoff-delete"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
+DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
 ```
 
 #### Response
@@ -76,12 +76,12 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Deletes a shift from the schedule",
+  "description": "Deletes a timeOff from the schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedule-delete-shifts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeoff-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
