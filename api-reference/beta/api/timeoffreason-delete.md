@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Marks a timeOffReason [timeOffReason](../resources/timeoffreason.md) as inactive.
+Mark a timeOffReason [timeOffReason](../resources/timeoffreason.md) as inactive.
 
 ## Permissions
 
