@@ -1,6 +1,6 @@
 ---
 title: "Create timeOff"
-description: "Creates a new timeOff."
+description: "Create a new timeOff."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
