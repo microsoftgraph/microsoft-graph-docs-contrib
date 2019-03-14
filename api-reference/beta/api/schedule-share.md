@@ -40,8 +40,11 @@ POST /teams/{teamId}/schedule/share
 | Content-Type  | application/json  |
 
 ## Request body
-|Name                   |Type           |Description                                                                                                                                       |
-|-----------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+
+In the request body, provide a JSON object with the following parameters.
+
+|Parameter                   |Type           |Description  |
+|-----------------------|-------------------|--------------|
 | notifyTeam	        |`Boolean`             |Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared. Required.       |
 | startDateTime         |`DateTimeOffset`   |The start time to share shifts on the schedule from.  Required.   |
 | endDateTime           |`DateTimeOffset`   | The end time to share shifts on the schedule until.   |
