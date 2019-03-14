@@ -16,11 +16,11 @@ A unit of non-work in the schedule.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create timeOff](../api/schedule-post-timesoff.md) | [timeOff](timeOff.md) | Create a new `timeOff` object.|
-|[List timeOffs](../api/schedule-list-timesoff.md) | [timeOff](timeOff.md) collection | Get the list of `timeOff` in this schedule.|
-|[Get timeOff](../api/schedule-get-timesoff.md) | [timeOff](timeOff.md) | Get a `timeOff` by ID.|
-|[Update timeOff](../api/schedule-put-timesoff.md) | [timeOff](timeOff.md) | Update a `timeOff`.|
-|[Delete timeOff](../api/schedule-delete-timesoff.md) | None | Delete a `timeOff` from the schedule.|
+|[Create timeOff](../api/timeoff-post.md) | [timeOff](timeOff.md) | Create a new `timeOff` object.|
+|[List timeOffs](../api/timeoff-list.md) | [timeOff](timeOff.md) collection | Get the list of `timeOff` in this schedule.|
+|[Get timeOff](../api/timeoff-get.md) | [timeOff](timeOff.md) | Get a `timeOff` by ID.|
+|[Update timeOff](../api/timeoff-put.md) | [timeOff](timeOff.md) | Update a `timeOff`.|
+|[Delete timeOff](../api/timeoff-delete.md) | None | Delete a `timeOff` from the schedule.|
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |

@@ -1,16 +1,16 @@
 ---
-title: "Get a timeOff by id"
-description: "Get a timeOff by id."
+title: "Get a timeOffReason by id"
+description: "Get a timeOffReason by id."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a timeOff by id
+# Get a timeOffReason by id
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [timeOff](../resources/timeoff.md) by id.
+Retrieve the properties and relationships of a [timeOffReason](../resources/timeoffreason.md) by id.
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/timesOff/{timeOffId}
+GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
 
 ## Example
 
@@ -50,10 +50,10 @@ If successful, this method return a `200 OK` response code and a [timeOff](../re
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "schedule-get-timesoff"
+  "name": "timeoffreason-get"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
 #### Response
@@ -64,7 +64,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type": "microsoft.graph.timeOffReason"
 } -->
 
 ```http
@@ -74,19 +74,9 @@ Content-length: 401
 
 {
   "id": "string",
-  "userId": "string",
-  "sharedTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
+  "displayName": "string",
+  "iconType": "none",
+  "isActive": true,
   "createdDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedBy": {
@@ -111,12 +101,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get a timeOff by id",
+  "description": "Get a timeOffReason by id",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedule-get-timesoff.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/timeoffreason-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
