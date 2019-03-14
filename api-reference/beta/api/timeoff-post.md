@@ -1,16 +1,16 @@
 ---
-title: "Creates a new timeOff"
+title: "Create timeOff"
 description: "Creates a new timeOff."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Creates a new timeOff
+# Create timeOff
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [timeOff](../resources/timeoff.md).
+Create a new [timeOff](../resources/timeoff.md).
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/timesOff
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
 
 ## Example
 
