@@ -1,6 +1,6 @@
 ---
 title: "timeOffReason resource type"
-description: "A timeOffReason is a valid reason to take time-off in the schedule."
+description: "A valid reason to take time-off in the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,32 +10,32 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A timeOffReason is a valid reason to take time-off in the schedule.
+A valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create timeOffReason](../api/timeoffreason-post.md) | [timeOffReason](timeoffreason.md) | Creates a new `timeOffReason`.|
-|[List timeOffReason](../api/timeoffreason-list.md) | [timeOffReason](timeoffreason.md) collection | Get the list of `timeOffReason` in this schedule.|
+|[Create timeOffReason](../api/timeoffreason-post.md) | [timeOffReason](timeoffreason.md) | Create a new `timeOffReason`.|
+|[List timeOffReason](../api/timeoffreason-list.md) | [timeOffReason](timeoffreason.md) collection | Get the list of `timeOffReasons` in a schedule.|
 |[Get timeOffReason](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Get a `timeOffReason` by ID.|
-|[Update timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Updates a `timeOffReason`.|
-|[Delete timeOffReason](../api/timeoffreason-delete.md) | None | Marks a `timeOffReason` as inactive.|
+|[Update timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Update a `timeOffReason`.|
+|[Delete timeOffReason](../api/timeoffreason-delete.md) | None | Mark a `timeOffReason` as inactive.|
 
 ## Properties
 |Name          |Type           |Description                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
-| id			|`string`      |Id of the `timeOffReason`.|
+| id			|`string`      |ID of the `timeOffReason`.|
 | displayName               | `string`                  | The name of the `timeOffReason`.     |
 | iconType | `enum`   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. |
-| isActive 			|`bool`      | Indicates if the `timeOffReason` can be used when creating new entities or updating existing ones.|
-| createdDateTime		|`DateTimeOffset`        |The time stamp in which this `timeOffReason` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`         |The time stamp in which this `timeOffReason` was last updated.|
+| isActive 			|`bool`      | Indicates whether the `timeOffReason` can be used when creating new entities or updating existing ones.|
+| createdDateTime		|`DateTimeOffset`        |The time stamp on which this `timeOffReason` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`         |The time stamp on which this `timeOffReason` was last updated.|
 | lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `timeOffReason`.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
