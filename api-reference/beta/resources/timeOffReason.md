@@ -16,22 +16,22 @@ A timeOffReason is a valid reason to take time-off in the schedule.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Post timeOffReason](../api/timeOffReason-post.md) | [timeOffReason](timeOffReason.md) | Creates a new timeOffReason.|
-|[List timeOffReason](../api/timeOffReason-list.md) | [timeOffReason](timeOffReason.md) collection | Get the list of timeOffReason in this schedule.|
-|[Get timeOffReason](../api/timeOffReason-get.md) | [timeOffReason](timeOffReason.md) | Get a timeOffReason by id.|
-|[Put timeOffReason](../api/timeOffReason-put.md) | [timeOffReason](timeOffReason.md) | Updates a timeOffReason.|
-|[Delete timeOffReason](../api/timeOffReason-delete.md) | None | Marks a timeOffReason as inactive.|
+|[Post timeOffReason](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Creates a new timeOffReason.|
+|[List timeOffReason](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md) collection | Get the list of timeOffReason in this schedule.|
+|[Get timeOffReason](../api/schedule-get-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Get a timeOffReason by id.|
+|[Put timeOffReason](../api/schedule-put-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Updates a timeOffReason.|
+|[Delete timeOffReason](../api/schedule-delete-timeoffreasons.md) | None | Marks a timeOffReason as inactive.|
 
 ## Properties
-|Name          |Type           |Req.|Nav.|computed|Description                                                                                 |
-|--------------|---------------|:--:|:--:|:--:|--------------------------------------------------------------------------------------------|
-| id			|`string`      |✓   |  |  |Id of the `timeOffReason`.|
-| displayName               | `string`                  |      |      |  | The name of the `timeOffReason`.     |
-| iconType | `enum`   | ✓   |   |   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. |
-| isActive 			|`bool`      |✓   |  |   | Indicates if the `timeOffReason` can be used when creating new entities or updating existing ones.|
-| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOffReason` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOffReason` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `timeOffReason`.|
+|Name          |Type           |Description                                                                                 |
+|--------------|---------------|--------------------------------------------------------------------------------------------|
+| id			|`string`      |Id of the `timeOffReason`.|
+| displayName               | `string`                  | The name of the `timeOffReason`.     |
+| iconType | `enum`   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. |
+| isActive 			|`bool`      | Indicates if the `timeOffReason` can be used when creating new entities or updating existing ones.|
+| createdDateTime		|`DateTimeOffset`        |The time stamp in which this `timeOffReason` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`         |The time stamp in which this `timeOffReason` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `timeOffReason`.|
 
 ## JSON representation
 

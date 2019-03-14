@@ -16,22 +16,22 @@ A unit of non-work in the schedule.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create timeOff](../api/timeOff-post.md) | [timeOff](timeOff.md) | Create a new `timeOff` object.|
-|[List timeOffs](../api/timeOff-list.md) | [timeOff](timeOff.md) collection | Get the list of `timeOffs` in this schedule.|
-|[Get timeOff](../api/timeOff-get.md) | [timeOff](timeOff.md) | Get a `timeOff` by ID.|
-|[Update timeOff](../api/timeOff-put.md) | [timeOff](timeOff.md) | Update a `timeOff`.|
-|[Delete timeOff](../api/timeOff-delete.md) | None | Delete a `timeOff` from the schedule.|
+|[Create timeOff](../api/schedule-post-timesoff.md) | [timeOff](timeOff.md) | Create a new `timeOff` object.|
+|[List timeOffs](../api/schedule-list-timesoff.md) | [timeOff](timeOff.md) collection | Get the list of `timeOffs` in this schedule.|
+|[Get timeOff](../api/schedule-get-timesoff.md) | [timeOff](timeOff.md) | Get a `timeOff` by ID.|
+|[Update timeOff](../api/schedule-put-timesoff.md) | [timeOff](timeOff.md) | Update a `timeOff`.|
+|[Delete timeOff](../api/schedule-delete-timesoff.md) | None | Delete a `timeOff` from the schedule.|
 
 ## Properties
-|Name          |Type           |Req.|Nav.|computed|Description                                                                                                                                      |
-|--------------|---------------|:--:|:--:|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |✓   |  |  |Id of the `timeOff`.|
-| userId 			|`string`      |✓   |   |   |Id of the user assigned to the `timeOff`.|
-| sharedTimeOff 	|`timeOffItem`  |   |   |  |The shared version of this `timeOff` that is viewable by both employees and managers.|
-| draftTimeOff		|`timeOffItem`        |   |   |  |The draft version of this `timeOff` that is viewable by managers.|
-| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOff` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `timeOff` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `timeOff`.|
+|Name          |Type           |Description                                                                                                                                      |
+|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| id			|`string`      |Id of the `timeOff`.|
+| userId 			|`string`      |Id of the user assigned to the `timeOff`.|
+| sharedTimeOff 	|`timeOffItem`  |The shared version of this `timeOff` that is viewable by both employees and managers.|
+| draftTimeOff		|`timeOffItem`        |The draft version of this `timeOff` that is viewable by managers.|
+| createdDateTime		|`DateTimeOffset`        |The time stamp in which this `timeOff` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp in which this `timeOff` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `timeOff`.|
 
 ## JSON representation
 

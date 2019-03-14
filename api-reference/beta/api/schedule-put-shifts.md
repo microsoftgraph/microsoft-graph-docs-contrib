@@ -1,16 +1,16 @@
 ---
-title: "Update shift"
-description: "Update a shift in a schedule."
+title: "Replace an existing shift"
+description: "Replace an existing shift."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Update shift
+# Replace an existing shift
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update a [shift](../resources/shift.md) in a [schedule](../resources/schedule.md).
+Replace an existing [shift](../resources/shift.md).
 
 ## Permissions
 
@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [shift](../resources/shif
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
@@ -53,8 +53,8 @@ If successful, this method returns a `200 OK` response code and a [shift](../res
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "shift-put"
+  "blockType": "request",
+  "name": "schedule-put-shifts"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
@@ -105,7 +105,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.shift"
 } -->
@@ -175,12 +175,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Updates a shift",
+  "description": "Replace an existing shift",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/shift-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-put-shifts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

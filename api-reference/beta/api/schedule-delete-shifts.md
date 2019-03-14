@@ -1,16 +1,16 @@
 ---
-title: "Delete shift"
-description: "Delete a shift from the schedule."
+title: "Deletes a shift from the schedule"
+description: "Deletes a shift from the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete shift
+# Deletes a shift from the schedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [shift](../resources/shift.md) from the schedule.
+Deletes a [shift](../resources/shift.md) from the schedule.
 
 ## Permissions
 
@@ -49,8 +49,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "shift-delete"
+  "blockType": "request",
+  "name": "schedule-delete-shifts"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
@@ -62,7 +62,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 } -->
@@ -81,7 +81,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/shift-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-delete-shifts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

@@ -1,16 +1,16 @@
 ---
-title: "Updates a timeOff"
-description: "Updates a timeOff."
+title: "Creates a new timeOffReason"
+description: "Creates a new timeOffReason."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Updates a timeOff
+# Creates a new timeOffReason
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates a [timeOff](../resources/timeoff.md).
+Creates a new [timeOffReason](../resources/timeoffreason.md).
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
+POST /teams/{teamId}/schedule/timeOffReasons
 ```
 
 ## Request headers
@@ -39,13 +39,9 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
-## Request body
-
-In the request body, supply a JSON representation of a [timeOff](../resources/timeoff.md) object.
-
 ## Response
 
-If successful, this method return a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
+If successful, this method return a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
 
 ## Example
 
@@ -53,28 +49,17 @@ If successful, this method return a `200 OK` response code and a [timeOff](../re
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "timeOff-put"
+  "blockType": "request",
+  "name": "schedule-post-timeoffreasons"
 }-->
 ```http
-PUT https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff/{timeOffId}
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 Content-type: application/json
-Prefer: return=representation
 
 {
-  "userId": "string",
-  "sharedTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  }
+  "displayName": "string",
+  "iconType": "none",
+  "isActive": true
 }
 ```
 
@@ -84,31 +69,21 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOff"
+  "@odata.type": "microsoft.graph.timeOffReason"
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 401
 
 {
   "id": "string",
-  "userId": "string",
-  "sharedTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
-  "draftTimeOff": {
-    "timeOffReasonId": "string",
-    "startDateTime": "2018-10-04T00:58:45.340Z",
-    "endDateTime": "2018-10-04T00:58:45.340Z",
-    "theme": "white"
-  },
+  "displayName": "string",
+  "iconType": "none",
+  "isActive": true,
   "createdDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedBy": {
@@ -133,12 +108,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Updates a timeOff",
+  "description": "Creates a new timeOffReason",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeoff-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-post-timeoffreasons.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

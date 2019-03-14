@@ -1,16 +1,16 @@
 ---
-title: "Delete schedulingGroup"
-description: "Mark a schedulingGroup as inactive."
+title: "Marks a timeOffReason as inactive"
+description: "Marks a timeOffReason as inactive."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete schedulingGroup
+# Marks a timeOffReason as inactive
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive.
+Marks a timeOffReason [timeOffReason](../resources/timeoffreason.md) as inactive.
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+DELETE /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -49,11 +49,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "schedulingGroup-delete"
+  "blockType": "request",
+  "name": "schedule-delete-timeoffreasons"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
 #### Response
@@ -62,7 +62,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 } -->
@@ -76,12 +76,12 @@ HTTP/1.1 204 No Content
 <!--
 {
   "type": "#page.annotation",
-  "description": "Marks a schedulingGroup as inactive",
+  "description": "Marks a timeOffReason as inactive",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedulinggroup-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-delete-timeoffreasons.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
