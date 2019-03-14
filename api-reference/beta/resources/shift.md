@@ -10,14 +10,14 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A shift is a unit of scheduled work in the schedule. 
+A unit of scheduled work in the schedule. 
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Create shift](../api/shift-post.md) | [shift](shift.md) | Creates a new `shift`.|
-|[List shift](../api/shift-list.md) | [shift](shift.md) collection | Get the list of `shift` in this schedule.|
+|[List shifts](../api/shift-list.md) | [shift](shift.md) collection | Get the list of `shifts` in this schedule.|
 |[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a `shift` by ID.|
 |[Update shift](../api/shift-put.md) | [shift](shift.md) | Updates a `shift`.|
 |[Delete shift](../api/shift-delete.md) | None | Deletes a `shift` from the schedule.|
@@ -25,9 +25,9 @@ A shift is a unit of scheduled work in the schedule.
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |Id of the `shift`.|
-| userId 			|`string`      |Id of the user assigned to the `shift`.|
-| schedulingGroupId 		|`string`      |Id of the scheduling group the `shift` is part of.|
+| id			|`string`      |ID of the `shift`.|
+| userId 			|`string`      |ID of the user assigned to the `shift`.|
+| schedulingGroupId 		|`string`      |ID of the scheduling group the `shift` is part of.|
 | sharedShift 	|`shiftItem`  |The shared version of this `shift` that is viewable by both employees and managers.|
 | draftShift		|`shiftItem`        |The draft version of this `shift` that is viewable by managers.|
 | createdDateTime		|`DateTimeOffset`        |The time stamp in which this `shift` was first created.|
@@ -36,7 +36,7 @@ A shift is a unit of scheduled work in the schedule.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
