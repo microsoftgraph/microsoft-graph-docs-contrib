@@ -30,8 +30,8 @@ A unit of scheduled work in the schedule.
 | schedulingGroupId 		|`string`      |ID of the scheduling group the `shift` is part of.|
 | sharedShift 	|`shiftItem`  |The shared version of this `shift` that is viewable by both employees and managers.|
 | draftShift		|`shiftItem`        |The draft version of this `shift` that is viewable by managers.|
-| createdDateTime		|`DateTimeOffset`        |The time stamp in which this `shift` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp in which this `shift` was last updated.|
+| createdDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was last updated.|
 | lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `shift`.|
 
 ## JSON representation
