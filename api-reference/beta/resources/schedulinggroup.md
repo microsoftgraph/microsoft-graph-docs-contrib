@@ -17,7 +17,7 @@ A logical grouping of members in the schedule (usually by role).
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Create schedulingGroup](../api/schedulinggroup-post.md) | [schedulingGroup](schedulinggroup.md) | Create a new `schedulingGroup`.|
-|[List schedulingGroup](../api/schedulinggroup-list.md) | [schedulingGroup](schedulinggroup.md) collection | Get the list of `schedulingGroup` in this schedule.|
+|[List schedulingGroups](../api/schedulinggroup-list.md) | [schedulingGroup](schedulinggroup.md) collection | Get the list of `schedulingGroups` in this schedule.|
 |[Get schedulingGroup](../api/schedulinggroup-get.md) | [schedulingGroup](schedulinggroup.md) | Get a `schedulingGroup` by ID.|
 |[Update schedulingGroup](../api/schedulinggroup-put.md) | [schedulingGroup](schedulinggroup.md) | Update a `schedulingGroup`.|
 |[Delete schedulingGroup](../api/schedulinggroup-delete.md) | None | Marks a `schedulingGroup` as inactive.|
