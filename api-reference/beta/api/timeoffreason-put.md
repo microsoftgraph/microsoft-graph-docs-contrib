@@ -1,12 +1,12 @@
 ---
-title: "Replace an existing timeOffReason"
+title: "Replace timeOffReason"
 description: "Replace an existing timeOffReason."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Replace an existing timeOffReason
+# Replace timeOffReason
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [timeOffReason](../resour
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
 
 ## Example
 
