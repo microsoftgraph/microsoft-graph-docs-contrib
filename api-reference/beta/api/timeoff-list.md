@@ -46,13 +46,13 @@ If successful, this method return a `200 OK` response code and a collection of [
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request which gets all timeOff objects that have a shared version and a draft version between March 11th 2019 and March 18th 2019.
 <!-- {
   "blockType": "request",
   "name": "timeoff-list"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sharedTimeOff/startDateTime ge 2018-10-04T00:58:45.332Z and sharedTimeOff/endDateTime le 2018-10-04T00:58:45.332Z and draftTimeOff/startDateTime ge 2018-10-04T00:58:45.332Z and draftTimeOff/endDateTime le 2018-10-04T00:58:45.332Z
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and sharedTimeOff/endDateTime le 2019-03-18T00:00:00.000Z and draftTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and draftTimeOff/endDateTime le 2019-03-18T00:00:00.000Z
 ```
 
 ## Optional query parameters
@@ -81,14 +81,14 @@ Content-length: 401
       "userId": "string",
       "sharedTimeOff": {
         "timeOffReasonId": "string",
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
+        "startDateTime": "2019-03-12T00:00:00.000Z",
+        "endDateTime": "2019-03-12T08:00:00.000Z",
         "theme": "white"
       },
       "draftTimeOff": {
         "timeOffReasonId": "string",
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
+        "startDateTime": "2019-03-12T00:00:00.000Z",
+        "endDateTime": "2019-03-12T08:00:00.000Z",
         "theme": "white"
       },
       "createdDateTime": "2018-10-04T00:58:45.340Z",

@@ -49,13 +49,13 @@ If successful, this method return a `200 OK` response code and a collection of [
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request which gets all shift objects that have a shared version and a draft version between March 11th 2019 and March 18th 2019.
 <!-- {
   "blockType": "request",
   "name": "shift-list"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=sharedShift/startDateTime ge 2018-10-04T00:58:45.332Z and sharedShift/endDateTime le 2018-10-04T00:58:45.332Z and draftShift/startDateTime ge 2018-10-04T00:58:45.332Z and draftShift/endDateTime le 2018-10-04T00:58:45.332Z
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts?$filter=sharedShift/startDateTime ge 2019-03-11T00:00:00.000Z and sharedShift/endDateTime le 2019-03-18T00:00:00.000Z and draftShift/startDateTime ge 2019-03-11T00:00:00.000Z and draftShift/endDateTime le 2019-03-18T00:00:00.000Z
 ```
 
 #### Response
@@ -83,14 +83,14 @@ Content-length: 401
       "sharedShift": {
         "notes": "string",
         "displayName": "string",
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
+        "startDateTime": "2019-03-12T00:00:00.000Z",
+        "endDateTime": "2019-03-12T08:00:00.000Z",
         "theme": "white",
         "activities": [
           {
             "isPaid": true,
-            "startDateTime": "2018-10-04T00:58:45.340Z",
-            "endDateTime": "2018-10-04T00:58:45.340Z",
+            "startDateTime": "2019-03-12T00:00:00.000Z",
+            "endDateTime": "2019-03-12T00:15:00.000Z",
             "code": "string",
             "displayName": "string"
           }
@@ -99,14 +99,14 @@ Content-length: 401
       "draftShift": {
         "notes": "string",
         "displayName": "string",
-        "startDateTime": "2018-10-04T00:58:45.340Z",
-        "endDateTime": "2018-10-04T00:58:45.340Z",
+        "startDateTime": "2019-03-12T00:00:00.000Z",
+        "endDateTime": "2019-03-12T08:00:00.000Z",
         "theme": "white",
         "activities": [
           {
             "isPaid": true,
-            "startDateTime": "2018-10-04T00:58:45.340Z",
-            "endDateTime": "2018-10-04T00:58:45.340Z",
+            "startDateTime": "2019-03-12T00:00:00.000Z",
+            "endDateTime": "2019-03-12T00:15:00.000Z",
             "code": "string",
             "displayName": "string"
           }
