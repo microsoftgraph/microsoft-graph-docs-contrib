@@ -1,6 +1,6 @@
 ---
 title: "timeOffItem resource type"
-description: "A timeOffItem represents a version of the timeOff."
+description: "Represents a version of the timeOff."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,19 +10,19 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A timeOffItem represents a version of the timeOff.
+Represents a version of the [timeOff](timeoff.md).
 
 ## Properties
 | Name                         | Type                    | Req. | R.O. | Nav. | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|------|------|------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | `string`                  | ✓     |      |      | Id of the `timeOffReason` for this `timeOffItem`.      |
+| timeOffReasonId               | `string`                  | ✓     |      |      | ID of the `timeOffReason` for this `timeOffItem`.      |
 | startDateTime               | `DateTimeOffset`                  | ✓    |      |      | The start date and time for the `timeOffItem`.     |
 | endDateTime               | `DateTimeOffset`                  | ✓    |      |      | The end date and time for the `timeOffItem`.     |
 | theme | `enum`   |    |  |  | Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
