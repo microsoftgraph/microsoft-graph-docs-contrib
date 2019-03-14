@@ -1,16 +1,16 @@
 ---
-title: "Creates a new shift"
+title: "Create shift"
 description: "Creates a new shift."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Creates a new shift
+# Create shift
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new [shift](../resources/shift.md).
+Create a new [shift](../resources/shift.md).
 
 ## Permissions
 
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/shifts
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
