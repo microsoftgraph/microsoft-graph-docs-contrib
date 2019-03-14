@@ -1,16 +1,16 @@
 ---
-title: "Get a shift by id"
-description: "Get a shift by id."
+title: "Creates a new shift"
+description: "Creates a new shift."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a shift by id
+# Creates a new shift
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [shift](../resources/shift.md) by id.
+Creates a new [shift](../resources/shift.md).
 
 ## Permissions
 
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/shifts/{shiftId}
+POST /teams/{teamId}/schedule/shifts
 ```
 
 ## Request headers
@@ -49,11 +49,49 @@ If successful, this method return a `200 OK` response code and a [shift](../reso
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "shift-get"
+  "blockType": "request",
+  "name": "schedule-post-shifts"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts
+Content-type: application/json
+
+{
+  "userId": "string",
+  "schedulingGroupId": "string",
+  "sharedShift": {
+    "notes": "string",
+    "displayName": "string",
+    "startDateTime": "2018-10-04T00:58:45.340Z",
+    "endDateTime": "2018-10-04T00:58:45.340Z",
+    "theme": "white",
+    "activities": [
+      {
+        "isPaid": true,
+        "startDateTime": "2018-10-04T00:58:45.340Z",
+        "endDateTime": "2018-10-04T00:58:45.340Z",
+        "code": "string",
+        "displayName": "string"
+      }
+    ]
+  },
+  "draftShift": {
+    "notes": "string",
+    "displayName": "string",
+    "startDateTime": "2018-10-04T00:58:45.340Z",
+    "endDateTime": "2018-10-04T00:58:45.340Z",
+    "theme": "white",
+    "activities": [
+      {
+        "isPaid": true,
+        "startDateTime": "2018-10-04T00:58:45.340Z",
+        "endDateTime": "2018-10-04T00:58:45.340Z",
+        "code": "string",
+        "displayName": "string"
+      }
+    ]
+  }
+}
 ```
 
 #### Response
@@ -62,13 +100,13 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.shift"
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 401
 
@@ -132,12 +170,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get a shift by id",
+  "description": "Creates a new shift",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/shift-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-post-shifts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

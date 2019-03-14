@@ -1,6 +1,6 @@
 ---
-title: "Get a schedulingGroup by id"
-description: "Get a schedulingGroup by id."
+title: "Get the list of schedulingGroup in this schedule"
+description: "Get the list of schedulingGroup in this schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -9,8 +9,7 @@ ms.prod: "microsoft-teams"
 # Get a schedulingGroup by id
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieve the properties and relationships of a [schedulingGroup](../resources/schedulinggroup.md) by id.
+Get the list of [schedulingGroups](../resources/schedulinggroup.md) in this [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -29,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+GET /teams/{teamId}/schedule/schedulingGroups
 ```
 
 ## Request headers
@@ -41,7 +40,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
+If successful, this method return a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulinggroup.md) objects in the response body.
 
 ## Example
 
@@ -49,11 +48,11 @@ If successful, this method return a `200 OK` response code and a [schedulingGrou
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "schedulingGroup-get"
+  "blockType": "request",
+  "name": "schedule-list-schedulinggroups"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 ```
 
 #### Response
@@ -62,7 +61,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.schedulingGroup"
 } -->
@@ -73,28 +72,32 @@ Content-type: application/json
 Content-length: 401
 
 {
-  "id": "string",
-  "displayName": "string",
-  "isActive": true,
-  "userIds": [
-    "string"
-  ],
-  "createdDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
-  "lastModifiedBy": {
-    "user": {
+  "value": [
+    {
       "id": "string",
-      "displayName": "string"
-    },
-    "application": {
-      "id": "string",
-      "displayName": "string"
-    },
-    "device": {
-      "id": "string",
-      "displayName": "string"
+      "displayName": "string",
+      "isActive": true,
+      "userIds": [
+        "string"
+      ],
+      "createdDateTime": "2018-10-04T00:58:45.340Z",
+      "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
+      "lastModifiedBy": {
+        "user": {
+          "id": "string",
+          "displayName": "string"
+        },
+        "application": {
+          "id": "string",
+          "displayName": "string"
+        },
+        "device": {
+          "id": "string",
+          "displayName": "string"
+        }
+      }
     }
-  }
+  ]
 }
 ```
 
@@ -103,12 +106,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get a schedulingGroup by id",
+  "description": "Get the list of schedulingGroup in this schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedulinggroup-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-list-schedulinggroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

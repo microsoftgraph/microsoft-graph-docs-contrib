@@ -1,16 +1,16 @@
 ---
-title: "Updates a schedulingGroup"
-description: "Updates a schedulingGroup."
+title: "Replace an existing schedulingGroup"
+description: "Replace an existing schedulingGroup."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Updates a schedulingGroup
+# Replace an existing schedulingGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Updates a [schedulingGroup](../resources/schedulinggroup.md).
+Replace an existing [schedulingGroup](../resources/schedulinggroup.md).
 
 ## Permissions
 
@@ -53,8 +53,8 @@ If successful, this method return a `200 OK` response code and a [schedulingGrou
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "schedulingGroup-put"
+  "blockType": "request",
+  "name": "schedule-put-schedulinggroups"
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
@@ -76,7 +76,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.schedulingGroup"
 } -->
@@ -117,12 +117,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Updates a schedulingGroup",
+  "description": "Replace an existing schedulingGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedulinggroup-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-put-schedulinggroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

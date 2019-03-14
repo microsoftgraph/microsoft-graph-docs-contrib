@@ -1,15 +1,15 @@
 ---
-title: "Get the list of schedulingGroup in this schedule"
-description: "Get the list of schedulingGroup in this schedule."
+title: "Get the list of timesOff in this schedule"
+description: "Get the list of timesOff in this schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a schedulingGroup by id
+# Get a timeOff by id
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [schedulingGroups](../resources/schedulinggroup.md) in this [schedule](../resources/schedule.md).
+Get the list of [timesOff](../resources/timeoff.md) in this [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/schedulingGroups
+GET /teams/{teamId}/schedule/timesOff
 ```
 
 ## Request headers
@@ -40,7 +40,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a collection of [schedulingGroup](../resources/schedulinggroup.md) objects in the response body.
+If successful, this method return a `200 OK` response code and a collection of [timeOff](../resources/timeoff.md) objects in the response body.
 
 ## Example
 
@@ -48,12 +48,15 @@ If successful, this method return a `200 OK` response code and a collection of [
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "schedulingGroup-list"
+  "blockType": "request",
+  "name": "schedule-list-timesoff"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
+GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sharedTimeOff/startDateTime ge 2018-10-04T00:58:45.332Z and sharedTimeOff/endDateTime le 2018-10-04T00:58:45.332Z and draftTimeOff/startDateTime ge 2018-10-04T00:58:45.332Z and draftTimeOff/endDateTime le 2018-10-04T00:58:45.332Z
 ```
+
+## Optional query parameters
+This method supports the $filter [OData query parameters](/graph/query-parameters) to help customize the response.
 
 #### Response
 
@@ -61,9 +64,9 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.schedulingGroup"
+  "@odata.type": "microsoft.graph.timeOff"
 } -->
 
 ```http
@@ -75,11 +78,19 @@ Content-length: 401
   "value": [
     {
       "id": "string",
-      "displayName": "string",
-      "isActive": true,
-      "userIds": [
-        "string"
-      ],
+      "userId": "string",
+      "sharedTimeOff": {
+        "timeOffReasonId": "string",
+        "startDateTime": "2018-10-04T00:58:45.340Z",
+        "endDateTime": "2018-10-04T00:58:45.340Z",
+        "theme": "white"
+      },
+      "draftTimeOff": {
+        "timeOffReasonId": "string",
+        "startDateTime": "2018-10-04T00:58:45.340Z",
+        "endDateTime": "2018-10-04T00:58:45.340Z",
+        "theme": "white"
+      },
       "createdDateTime": "2018-10-04T00:58:45.340Z",
       "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
       "lastModifiedBy": {
@@ -106,12 +117,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get the list of schedulingGroup in this schedule",
+  "description": "Get the list of timesOff in this schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedulinggroup-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-list-timesoff.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

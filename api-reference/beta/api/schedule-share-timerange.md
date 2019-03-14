@@ -56,7 +56,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "schedule-share-timerange"
 }-->
 ```http
@@ -75,7 +75,7 @@ Content-type: application/json
 The following is an example of the response. 
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 } -->

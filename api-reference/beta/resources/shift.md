@@ -16,23 +16,23 @@ A shift is a unit of scheduled work in the schedule.
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Post shift](../api/shift-post.md) | [shift](shift.md) | Creates a new shift.|
-|[List shift](../api/shift-list.md) | [shift](shift.md) collection | Get the list of shifts in this schedule.|
-|[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a shift by id.|
-|[Put shift](../api/shift-put.md) | [shift](shift.md) | Updates a shift.|
-|[Delete shift](../api/shift-delete.md) | None | Deletes a shift from the schedule.|
+|[Post shift](../api/schedule-post-shifts.md) | [shift](shift.md) | Creates a new shift.|
+|[List shift](../api/schedule-list-shifts.md) | [shift](shift.md) collection | Get the list of shifts in this schedule.|
+|[Get shift](../api/schedule-get-shifts.md) | [shift](shift.md) | Get a shift by id.|
+|[Put shift](../api/schedule-put-shifts.md) | [shift](shift.md) | Updates a shift.|
+|[Delete shift](../api/schedule-delete-shifts.md) | None | Deletes a shift from the schedule.|
 
 ## Properties
-|Name          |Type           |Req.|Nav.|computed|Description                                                                                                                                      |
-|--------------|---------------|:--:|:--:|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id			|`string`      |✓   |   |  |Id of the `shift`.|
-| userId 			|`string`      |✓   |   |   |Id of the user assigned to the `shift`.|
-| schedulingGroupId 		|`string`      |   |   |  |Id of the scheduling group the `shift` is part of.|
-| sharedShift 	|`shiftItem`  |   |   |  |The shared version of this `shift` that is viewable by both employees and managers.|
-| draftShift		|`shiftItem`        |   |   |  |The draft version of this `shift` that is viewable by managers.|
-| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `shift` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `shift` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `shift`.|
+|Name          |Type           |Description                                                                                                                                      |
+|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| id			|`string`      |Id of the `shift`.|
+| userId 			|`string`      |Id of the user assigned to the `shift`.|
+| schedulingGroupId 		|`string`      |Id of the scheduling group the `shift` is part of.|
+| sharedShift 	|`shiftItem`  |The shared version of this `shift` that is viewable by both employees and managers.|
+| draftShift		|`shiftItem`        |The draft version of this `shift` that is viewable by managers.|
+| createdDateTime		|`DateTimeOffset`        |The time stamp in which this `shift` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp in which this `shift` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `shift`.|
 
 ## JSON representation
 

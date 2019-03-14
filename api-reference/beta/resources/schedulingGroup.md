@@ -16,22 +16,22 @@ A schedulingGroup is a logical grouping of members in the schedule (usually by r
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Post schedulingGroup](../api/schedulingGroup-post.md) | [schedulingGroup](schedulingGroup.md) | Creates a new schedulingGroup.|
-|[List schedulingGroup](../api/schedulingGroup-list.md) | [schedulingGroup](schedulingGroup.md) collection | Get the list of schedulingGroup in this schedule.|
-|[Get schedulingGroup](../api/schedulingGroup-get.md) | [schedulingGroup](schedulingGroup.md) | Get a schedulingGroup by id.|
-|[Put schedulingGroup](../api/schedulingGroup-put.md) | [schedulingGroup](schedulingGroup.md) | Updates a schedulingGroup.|
-|[Delete schedulingGroup](../api/schedulingGroup-delete.md) | None | Marks a schedulingGroup as inactive.|
+|[Post schedulingGroup](../api/schedule-post-schedulinggroup.md) | [schedulingGroup](schedulinggroup.md) | Creates a new schedulingGroup.|
+|[List schedulingGroup](../api/schedule-list-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md) collection | Get the list of schedulingGroup in this schedule.|
+|[Get schedulingGroup](../api/schedule-get-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md) | Get a schedulingGroup by id.|
+|[Put schedulingGroup](../api/schedule-put-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md) | Updates a schedulingGroup.|
+|[Delete schedulingGroup](../api/schedule-delete-schedulinggroups.md) | None | Marks a schedulingGroup as inactive.|
 
 ## Properties
-|Name          |Type           |Req.|Nav.|computed|Description                                                                                 |
-|--------------|---------------|:--:|:--:|:--:|--------------------------------------------------------------------------------------------|
-| id			| `string`      |✓   |  |  |Id of the `schedulingGroup`.|
-| displayName   | `string`      |     |  |  | The display name for the `schedulingGroup`.      |
-| isActive 			|`bool`      |✓   |  |   | Indicates if the `schedulingGroup` can be used when creating new entities or updating existing ones.|
-| userIds 		| `collection(string)`    |   |   | |  The list of user ids that are a member of the `schedulingGroup`. |
-| createdDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `schedulingGroup` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`        |   |   |✓  |The time stamp in which this `schedulingGroup` was last updated.|
-| lastModifiedBy		|`microsoft.graph.identitySet`        |   |   |✓  |The identity that last updated this `schedulingGroup`.|
+|Name          |Type           |Description                                                                                 |
+|--------------|---------------|--------------------------------------------------------------------------------------------|
+| id			| `string`      |Id of the `schedulingGroup`.|
+| displayName   | `string`      | The display name for the `schedulingGroup`.      |
+| isActive 			|`bool`      | Indicates if the `schedulingGroup` can be used when creating new entities or updating existing ones.|
+| userIds 		| `collection(string)`    |  The list of user ids that are a member of the `schedulingGroup`. |
+| createdDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was first created.|
+| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was last updated.|
+| lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `schedulingGroup`.|
 
 ## JSON representation
 

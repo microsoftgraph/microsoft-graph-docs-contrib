@@ -1,21 +1,21 @@
 ---
-title: "Gets the schedule"
-description: "Gets the schedule."
+title: "Creates or updates the schedule"
+description: "Creates or updates the schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Gets the schedule
+# Creates or updates the schedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [schedule](../resources/schedule.md).
+Creates or updates the [schedule](../resources/schedule.md).
 
 Schedule creation adheres to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
 Clients PUT to a schedule which if the schedule is provisioned would update it and otherwise it will start schedule provisioning in the background.
-During schedule provisioning, clients can get the schedule and look at the `provisionStatus` property for the current state of the provisioning, or if the provisioning failed, get additional information from the `provisionStatusCode` property.
-Clients can also inspect the configuration of the schedule.
+During schedule provisioning, clients can GET the schedule and look at the provisionStatus for the current state of provisioning and in case it Failed the provisionStatusCode for additional information.
+Clients can GET a schedule to inspect the configuration of the schedule.
 
 ## Permissions
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule
+PUT /teams/{teamId}/schedule
 ```
 
 ## Request headers
@@ -43,6 +43,10 @@ GET /teams/{teamId}/schedule
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
+
+## Request body
+
+In the request body, supply a JSON representation of a [schedule](../resources/schedule.md) object.
 
 ## Response
 
@@ -54,11 +58,17 @@ If successful, this method return a `200 OK` response code and a [schedule](../r
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "schedule-get"
+  "blockType": "request",
+  "name": "team-put-schedule"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{teamId}/schedule
+PUT https://graph.microsoft.com/beta/teams/{teamId}/schedule
+Content-type: application/json
+
+{
+  "enabled": true,
+  "timeZone": "string"
+}
 ```
 
 #### Response
@@ -67,7 +77,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.schedule"
 } -->
@@ -91,12 +101,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get the schedule",
+  "description": "Creates or updates the schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedule-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/team-put-schedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
