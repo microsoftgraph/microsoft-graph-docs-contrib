@@ -1,15 +1,15 @@
 ---
-title: "Get the list of timesOff in this schedule"
-description: "Get the list of timesOff in this schedule."
+title: "List timeOffs"
+description: "Get the list of timeOffs in this schedule."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a timeOff by id
+# List timeOffs
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [timesOff](../resources/timeoff.md) in this [schedule](../resources/schedule.md).
+Get the list of [timeOffs](../resources/timeoff.md) in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -30,6 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /teams/{teamId}/schedule/timesOff
 ```
+## Optional query parameters
+This method supports the $filter [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -40,13 +42,13 @@ GET /teams/{teamId}/schedule/timesOff
 
 ## Response
 
-If successful, this method return a `200 OK` response code and a collection of [timeOff](../resources/timeoff.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [timeOff](../resources/timeoff.md) objects in the response body.
 
 ## Example
 
 #### Request
 
-The following is an example of the request which gets all timeOff objects that have a shared version and a draft version between March 11th 2019 and March 18th 2019.
+The following is an example of a request that gets all **timeOff** objects that have a shared version and a draft version between March 11 - March 18, 2019.
 <!-- {
   "blockType": "request",
   "name": "timeoff-list"
@@ -54,9 +56,6 @@ The following is an example of the request which gets all timeOff objects that h
 ```http
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff?$filter=sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and sharedTimeOff/endDateTime le 2019-03-18T00:00:00.000Z and draftTimeOff/startDateTime ge 2019-03-11T00:00:00.000Z and draftTimeOff/endDateTime le 2019-03-18T00:00:00.000Z
 ```
-
-## Optional query parameters
-This method supports the $filter [OData query parameters](/graph/query-parameters) to help customize the response.
 
 #### Response
 
