@@ -10,8 +10,8 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive by setting its isActive property.
-This operation does not remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule. Existing [shift](../resources/shift.md) instances assigned to the scheduling group would remain part of the group.
+Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive by setting its **isActive** property.
+This method does not remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule. Existing [shift](../resources/shift.md) instances assigned to the scheduling group remain part of the group.
 
 ## Permissions
 
