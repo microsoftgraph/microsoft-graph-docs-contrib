@@ -6,9 +6,10 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get a schedulingGroup by id
+# List scheduleGroups
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the list of [schedulingGroups](../resources/schedulinggroup.md) in this [schedule](../resources/schedule.md).
 
 ## Permissions
