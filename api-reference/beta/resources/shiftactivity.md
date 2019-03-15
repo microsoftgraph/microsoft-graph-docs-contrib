@@ -33,10 +33,10 @@ Here is a JSON representation of the resource.
 ```json
 {
   "isPaid": true,
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T00:58:45.340Z",
-  "code": "string",
-  "displayName": "string"
+  "startDateTime": "2019-03-11T15:00:00Z",
+  "endDateTime": "2019-03-11T15:15:00Z",
+  "code": "",
+  "displayName": "Lunch"
 }
 ```
 

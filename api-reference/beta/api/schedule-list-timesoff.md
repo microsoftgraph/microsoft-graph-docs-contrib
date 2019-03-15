@@ -80,35 +80,29 @@ Content-length: 401
 {
   "value": [
     {
-      "id": "string",
-      "userId": "string",
+      "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+      "createdDateTime": "2019-03-14T05:35:57.755Z",
+      "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
+      "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+          "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+          "displayName": "John Doe"
+        }
+      },
       "sharedTimeOff": {
-        "timeOffReasonId": "string",
-        "startDateTime": "2019-03-12T00:00:00.000Z",
-        "endDateTime": "2019-03-12T08:00:00.000Z",
+        "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+        "startDateTime": "2019-03-11T07:00:00Z",
+        "endDateTime": "2019-03-12T07:00:00Z",
         "theme": "white"
       },
       "draftTimeOff": {
-        "timeOffReasonId": "string",
-        "startDateTime": "2019-03-12T00:00:00.000Z",
-        "endDateTime": "2019-03-12T08:00:00.000Z",
-        "theme": "white"
-      },
-      "createdDateTime": "2018-10-04T00:58:45.340Z",
-      "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
-      "lastModifiedBy": {
-        "user": {
-          "id": "string",
-          "displayName": "string"
-        },
-        "application": {
-          "id": "string",
-          "displayName": "string"
-        },
-        "device": {
-          "id": "string",
-          "displayName": "string"
-        }
+        "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+        "startDateTime": "2019-03-11T07:00:00Z",
+        "endDateTime": "2019-03-12T07:00:00Z",
+        "theme": "pink"
       }
     }
   ]

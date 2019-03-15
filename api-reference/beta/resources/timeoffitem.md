@@ -31,10 +31,10 @@ Here is a JSON representation of the resource.
 }-->
 ```json
 {
-  "timeOffReasonId": "string",
-  "startDateTime": "2018-10-04T00:58:45.340Z",
-  "endDateTime": "2018-10-04T00:58:45.340Z",
-  "theme": "white"
+  "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
+  "startDateTime": "2019-03-11T07:00:00Z",
+  "endDateTime": "2019-03-12T07:00:00Z",
+  "theme": "pink"
 }
 ```
 
