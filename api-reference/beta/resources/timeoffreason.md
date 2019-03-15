@@ -29,8 +29,8 @@ A valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.
 | displayName               | `string`                  | The name of the `timeOffReason`. Required. |
 | iconType | `enum`   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. Required. |
 | isActive 			|`bool`      | Indicates whether the `timeOffReason` can be used when creating new entities or updating existing ones. Required. |
-| createdDateTime		|`DateTimeOffset`        |The time stamp on which this `timeOffReason` was first created.|
-| lastModifiedDateTime		|`DateTimeOffset`         |The time stamp on which this `timeOffReason` was last updated.|
+| createdDateTime		|`DateTimeOffset`        |The time stamp on which this `timeOffReason` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| lastModifiedDateTime		|`DateTimeOffset`         |The time stamp on which this `timeOffReason` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
 | lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `timeOffReason`.|
 
 ## JSON representation
