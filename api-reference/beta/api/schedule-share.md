@@ -12,7 +12,7 @@ ms.prod: "microsoft-teams"
 
 Share a [schedule](../resources/schedule.md) time range with schedule members.
 Make the collections of [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) items in the specified time range of the [schedule](../resources/schedule.md) viewable by the specified team members, including employees and managers.
-Each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) supports a draft version and a shared version of the item. The draft version is viewable by only managers, and the shared version is viewable by employees and managers. For each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item. The notifyTeam parameter further specifies which employees can view the item.
+Each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in a [schedule](../resources/schedule.md) supports a draft version and a shared version of the item. The draft version is viewable by only managers, and the shared version is viewable by employees and managers. For each [shift](../resources/shift.md) and [timeOff](../resources/timeoff.md) instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item. The **notifyTeam** parameter further specifies which employees can view the item.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 |Parameter                   |Type           |Description  |
 |-----------------------|-------------------|--------------|
 | notifyTeam	        |`Boolean`             |Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared. Required.       |
-| startDateTime         |`DateTimeOffset`   |The start time to share shifts on the schedule from.  Required.   |
+| startDateTime         |`DateTimeOffset`   |The start time to share shifts on the schedule from. Required.   |
 | endDateTime           |`DateTimeOffset`   | The end time to share shifts on the schedule until.   |
 
 ## Response
