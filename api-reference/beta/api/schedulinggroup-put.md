@@ -11,7 +11,8 @@ ms.prod: "microsoft-teams"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Replace an existing [schedulingGroup](../resources/schedulinggroup.md).
-If the specified [schedulingGroup](../resources/schedulinggroup.md) doesn't exist, this operation returns `404 Not found`.
+
+If the specified [schedulingGroup](../resources/schedulinggroup.md) doesn't exist, this method returns `404 Not found`.
 
 ## Permissions
 
