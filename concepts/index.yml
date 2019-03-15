@@ -13,7 +13,7 @@ metadata:
   ms.date: 12/13/2018
   ms.author: celested
 abstract:
-  description: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data on Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, and Education. Learn how to use Microsoft Graph with our full developer documentation, tutorials, code samples, videos, blog posts, and other content.
+  description: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more. Explore our documentation to learn more about how to use Microsoft Graph APIs.
   aside:
     image:
       alt: 
@@ -37,7 +37,7 @@ sections:
           src: ./images/index/i_get-started.svg
         title: Overview of Microsoft Graph
       - href: /graph/overview-major-services
-        html: <p>Get to know the basics in Microosft Graph and understand the major services and features that are available.</p>
+        html: <p>Get familiar with the major services and features that are available in Microsoft Graph.</p>
         image:
           src: ./images/index/i_overview.svg
         title: Services and features
@@ -65,7 +65,7 @@ sections:
   - title: Supported platforms
     items:
     - type: paragraph
-      text: 'Follow platform-specific, step-by-step training exercises that guide you through basic Microsoft Graph concepts, including how to create a basic app that uses Azure Active Directory authentication and accesses data through the Microsoft Graph.'
+      text: 'Find SDKs and follow platform-specific, step-by-step training exercises that guide you through basic Microsoft Graph concepts, including how to create a simple app that uses Azure AD authentication and accesses data via Microsoft Graph.'
     - type: table
       style: dataMatrix
       columns:
