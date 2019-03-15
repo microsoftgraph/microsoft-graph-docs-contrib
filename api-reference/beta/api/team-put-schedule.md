@@ -1,19 +1,19 @@
 ---
-title: "Create or update schedule"
-description: "Create or update a **schedule** object."
+title: "Create or replace schedule"
+description: "Create or replace a **schedule** object."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Create or update schedule
+# Create or replace schedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create or update a [schedule](../resources/schedule.md) object.
+Create or replace a [schedule](../resources/schedule.md) object.
 
 The schedule creation process conforms to the [One API guideline for resource based long running operations (RELO)](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#131-resource-based-long-running-operations-relo).
-When clients use the PUT method, if the schedule is provisioned, the operation updates the schedule; otherwise, the operation starts the schedule provisioning process in the background.
+When clients use the PUT method, if the schedule is provisioned, the operation replaces the schedule; otherwise, the operation starts the schedule provisioning process in the background.
 
 During schedule provisioning, clients can use the [GET method](schedule-get.md) to get the schedule and look at the `provisionStatus` property for the current state of the provisioning. If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
 
@@ -104,7 +104,7 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Creates or updates the schedule",
+  "description": "Creates or replaces the schedule",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

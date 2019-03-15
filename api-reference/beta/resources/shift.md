@@ -19,17 +19,17 @@ A unit of scheduled work in a [schedule](schedule.md).
 |[Create shift](../api/schedule-post-shifts.md) | [shift](shift.md) | Create a new `shift`.|
 |[List shifts](../api/schedule-list-shifts.md) | [shift](shift.md) collection | Get the list of `shifts` in this schedule.|
 |[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a `shift` by ID.|
-|[Update shift](../api/shift-put.md) | [shift](shift.md) | Update a `shift`.|
+|[Replace shift](../api/shift-put.md) | [shift](shift.md) | Replace a `shift`.|
 |[Delete shift](../api/shift-delete.md) | None | Delete a `shift` from the schedule.|
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id			|`string`      |ID of the `shift`.|
-| userId 			|`string`      |ID of the user assigned to the `shift`.|
-| schedulingGroupId 		|`string`      |ID of the scheduling group the `shift` is part of.|
-| sharedShift 	|`[shiftItem](shiftitem.md)`  |The shared version of this `shift` that is viewable by both employees and managers.|
-| draftShift		|`[shiftItem](shiftitem.md)`        |The draft version of this `shift` that is viewable by managers.|
+| userId 			|`string`      |ID of the user assigned to the `shift`. Required. |
+| schedulingGroupId 		|`string`      |ID of the scheduling group the `shift` is part of. Required. |
+| sharedShift 	|`[shiftItem](shiftitem.md)`  |The shared version of this `shift` that is viewable by both employees and managers. Required. |
+| draftShift		|`[shiftItem](shiftitem.md)`        |The draft version of this `shift` that is viewable by managers. Required. |
 | createdDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was first created. |
 | lastModifiedDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was last updated.|
 | lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `shift`.|

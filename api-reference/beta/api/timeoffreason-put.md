@@ -11,6 +11,7 @@ ms.prod: "microsoft-teams"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Replace an existing [timeOffReason](../resources/timeoffreason.md).
+If the specified [timeOffReason](../resources/timeoffreason.md) doesn't exist, this operation returns 404 Not found.
 
 ## Permissions
 

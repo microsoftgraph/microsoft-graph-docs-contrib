@@ -16,7 +16,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create or update schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or update a `schedule`.|
+|[Create or replace schedule](../api/team-put-schedule.md) | [schedule](schedule.md) | Create or replace a `schedule`.|
 |[Get schedule](../api/schedule-get.md) | [schedule](schedule.md) | Get a `schedule`.|
 |[share](../api/schedule-share.md) | None | Share a `schedule` time range with schedule members.|
 
@@ -24,8 +24,8 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 |Name                   |Type           |Description                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id			        |`string`  |ID of the `schedule`.|
-| enabled 			    |`bool`    | Indicates whether the schedule is enabled for the team.|
-| timeZone 		        |`string`  | Indicates the time zone of the schedule team using tz database format. |
+| enabled 			    |`bool`    | Indicates whether the schedule is enabled for the team. Required.|
+| timeZone 		        |`string`  | Indicates the time zone of the schedule team using tz database format. Required.|
 | provisionStatus       |`enum`    | The status of the schedule provisioning. |
 | provisionStatusCode   |`string`  | Additional information about why schedule provisioning failed. |
 

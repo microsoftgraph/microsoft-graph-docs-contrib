@@ -19,16 +19,16 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 |[Create schedulingGroup](../api/schedule-post-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md) | Create a new `schedulingGroup`.|
 |[List schedulingGroups](../api/schedule-list-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md) collection | Get the list of `schedulingGroups` in a schedule.|
 |[Get schedulingGroup](../api/schedulinggroup-get.md) | [schedulingGroup](schedulinggroup.md) | Get a `schedulingGroup` by ID.|
-|[Update schedulingGroup](../api/schedulinggroup-put.md) | [schedulingGroup](schedulinggroup.md) | Update a `schedulingGroup`.|
+|[Replace schedulingGroup](../api/schedulinggroup-put.md) | [schedulingGroup](schedulinggroup.md) | Replace a `schedulingGroup`.|
 |[Delete schedulingGroup](../api/schedulinggroup-delete.md) | None | Mark `schedulingGroup` as inactive.|
 
 ## Properties
 |Name          |Type           |Description                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id			| `string`      |ID of the `schedulingGroup`.|
-| displayName   | `string`      | The display name for the `schedulingGroup`.      |
-| isActive 			|`bool`      | Indicates whether the `schedulingGroup` can be used when creating new entities or updating existing ones.|
-| userIds 		| `collection(string)`    |  The list of user IDs that are a member of the `schedulingGroup`. |
+| displayName   | `string`      | The display name for the `schedulingGroup`. Required. |
+| isActive 			|`bool`      | Indicates whether the `schedulingGroup` can be used when creating new entities or updating existing ones. Required. |
+| userIds 		| `collection(string)`    |  The list of user IDs that are a member of the `schedulingGroup`. Required. |
 | createdDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was first created.|
 | lastModifiedDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was last updated.|
 | lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `schedulingGroup`.|

@@ -19,16 +19,16 @@ A valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.
 |[Create timeOffReason](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Create a new `timeOffReason`.|
 |[List timeOffReason](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md) collection | Get the list of `timeOffReasons` in a schedule.|
 |[Get timeOffReason](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Get a `timeOffReason` by ID.|
-|[Update timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Update a `timeOffReason`.|
+|[Replace timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Replace a `timeOffReason`.|
 |[Delete timeOffReason](../api/timeoffreason-delete.md) | None | Mark `timeOffReason` as inactive.|
 
 ## Properties
 |Name          |Type           |Description                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id			|`string`      |ID of the `timeOffReason`.|
-| displayName               | `string`                  | The name of the `timeOffReason`.     |
-| iconType | `enum`   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. |
-| isActive 			|`bool`      | Indicates whether the `timeOffReason` can be used when creating new entities or updating existing ones.|
+| displayName               | `string`                  | The name of the `timeOffReason`. Required. |
+| iconType | `enum`   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. Required. |
+| isActive 			|`bool`      | Indicates whether the `timeOffReason` can be used when creating new entities or updating existing ones. Required. |
 | createdDateTime		|`DateTimeOffset`        |The time stamp on which this `timeOffReason` was first created.|
 | lastModifiedDateTime		|`DateTimeOffset`         |The time stamp on which this `timeOffReason` was last updated.|
 | lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `timeOffReason`.|

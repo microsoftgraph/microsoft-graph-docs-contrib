@@ -15,11 +15,11 @@ Represents an activity in a [shift](shift.md).
 ## Properties
 | Property                         | Type                    | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| isPaid               | `bool`                  | Indicates whether the `microsoft.graph.user` should be paid for the acitivity during their `shift`.     |
-| startDateTime               | `DateTimeOffset`                  | The start date and time for the `shiftActivity`.     |
-| endDateTime               | `DateTimeOffset`                  | The end date and time for the `shiftActivity`.     |
-| code               | `string`                  | Customer defined code for the `shiftActivity`.     |
-| displayName               | `string`                  | The name of the `shiftActivity`.     |
+| isPaid               | `bool`                  | Indicates whether the `microsoft.graph.user` should be paid for the activity during their `shift`. Required.    |
+| startDateTime               | `DateTimeOffset`                  | The start date and time for the `shiftActivity`. Required.    |
+| endDateTime               | `DateTimeOffset`                  | The end date and time for the `shiftActivity`. Required.    |
+| code               | `string`                  | Customer defined code for the `shiftActivity`. Required.    |
+| displayName               | `string`                  | The name of the `shiftActivity`. Required.    |
 
 ## JSON representation
 

@@ -1,6 +1,6 @@
 ---
 title: "Mark schedulingGroup as inactive"
-description: "Mark a schedulingGroup as inactive."
+description: "Mark a schedulingGroup as inactive by setting its isActive property"
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,7 +10,8 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive.
+Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive by setting its isActive property.
+This operation does not remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule. Existing [shift](../resources/shift.md) instances assigned to the scheduling group would remain part of the group.
 
 ## Permissions
 

@@ -19,16 +19,16 @@ A unit of non-work in the schedule.
 |[Create timeOff](../api/schedule-post-timesoff.md) | [timeOff](timeOff.md) | Create a new `timeOff` object.|
 |[List timeOffs](../api/schedule-list-timesoff.md) | [timeOff](timeOff.md) collection | Get the list of `timeOff` objects in this schedule.|
 |[Get timeOff](../api/timeoff-get.md) | [timeOff](timeOff.md) | Get a `timeOff` by ID.|
-|[Update timeOff](../api/timeoff-put.md) | [timeOff](timeOff.md) | Update a `timeOff`.|
+|[Replace timeOff](../api/timeoff-put.md) | [timeOff](timeOff.md) | Replace a `timeOff`.|
 |[Delete timeOff](../api/timeoff-delete.md) | None | Delete a `timeOff` from the schedule.|
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id			|`string`      |ID of the `timeOff`.|
-| userId 			|`string`      |ID of the user assigned to the `timeOff`.|
-| sharedTimeOff 	|`[timeOffItem](timeoffitem.md)`  |The shared version of this `timeOff` that is viewable by both employees and managers.|
-| draftTimeOff		|`[timeOffItem](timeoffitem.md)`        |The draft version of this `timeOff` that is viewable by managers.|
+| userId 			|`string`      |ID of the user assigned to the `timeOff`. Required.|
+| sharedTimeOff 	|`[timeOffItem](timeoffitem.md)`  |The shared version of this `timeOff` that is viewable by both employees and managers. Required.|
+| draftTimeOff		|`[timeOffItem](timeoffitem.md)`        |The draft version of this `timeOff` that is viewable by managers. Required.|
 | createdDateTime		|`DateTimeOffset`        |The time stamp at which this `timeOff` was first created.|
 | lastModifiedDateTime		|`DateTimeOffset`        |The time stamp at which this `timeOff` was last updated.|
 | lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `timeOff`.|

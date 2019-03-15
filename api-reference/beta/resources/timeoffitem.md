@@ -15,9 +15,9 @@ Represents a version of the [timeOff](timeoff.md).
 ## Properties
 | Property                         | Type                    | Description                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | `string`                  | ID of the `timeOffReason` for this `timeOffItem`.      |
-| startDateTime               | `DateTimeOffset`                  | The start date and time for the `timeOffItem`.     |
-| endDateTime               | `DateTimeOffset`                  | The end date and time for the `timeOffItem`.     |
+| timeOffReasonId               | `string`                  | ID of the `timeOffReason` for this `timeOffItem`. Required.     |
+| startDateTime               | `DateTimeOffset`                  | The start date and time for the `timeOffItem`. Required.    |
+| endDateTime               | `DateTimeOffset`                  | The end date and time for the `timeOffItem`. Required.    |
 | theme | `enum`   | Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 
 ## JSON representation
