@@ -1,16 +1,16 @@
 ---
-title: "Create timeOffReason"
-description: "Create a new timeOffReason."
+title: "Create schedulingGroup"
+description: "Create a new schedulingGroup."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Create timeOffReason
+# Create schedulingGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [timeOffReason](../resources/timeoffreason.md).
+Create a new [schedulingGroup](../resources/schedulinggroup.md).
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/timeOffReasons
+POST /teams/{teamId}/schedule/schedulingGroups
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/timeOffReasons
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [timeOffReason](../resources/timeoffreason.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
 
 ## Example
 
@@ -50,16 +50,18 @@ If successful, this method returns a `200 OK` response code and a [timeOffReason
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "timeoffreason-post"
+  "name": "schedule-post-schedulinggroups"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 Content-type: application/json
 
 {
   "displayName": "string",
-  "iconType": "none",
-  "isActive": true
+  "isActive": true,
+  "userIds": [
+    "string"
+  ]
 }
 ```
 
@@ -71,7 +73,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.timeOffReason"
+  "@odata.type": "microsoft.graph.schedulingGroup"
 } -->
 
 ```http
@@ -82,8 +84,10 @@ Content-length: 401
 {
   "id": "string",
   "displayName": "string",
-  "iconType": "none",
   "isActive": true,
+  "userIds": [
+    "string"
+  ],
   "createdDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedBy": {
@@ -108,12 +112,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Creates a new timeOffReason",
+  "description": "Creates a new schedulingGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/timeoffreason-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-post-schedulinggroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

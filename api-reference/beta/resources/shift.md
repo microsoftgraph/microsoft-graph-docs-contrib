@@ -16,8 +16,8 @@ A unit of scheduled work in a [schedule](schedule.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create shift](../api/shift-post.md) | [shift](shift.md) | Create a new `shift`.|
-|[List shifts](../api/shift-list.md) | [shift](shift.md) collection | Get the list of `shifts` in this schedule.|
+|[Create shift](../api/schedule-post-shifts.md) | [shift](shift.md) | Create a new `shift`.|
+|[List shifts](../api/schedule-list-shifts.md) | [shift](shift.md) collection | Get the list of `shifts` in this schedule.|
 |[Get shift](../api/shift-get.md) | [shift](shift.md) | Get a `shift` by ID.|
 |[Update shift](../api/shift-put.md) | [shift](shift.md) | Update a `shift`.|
 |[Delete shift](../api/shift-delete.md) | None | Delete a `shift` from the schedule.|

@@ -1,16 +1,16 @@
 ---
-title: "Create schedulingGroup"
-description: "Create a new schedulingGroup."
+title: "Create timeOff"
+description: "Create a new timeOff."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Create schedulingGroup
+# Create timeOff
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [schedulingGroup](../resources/schedulinggroup.md).
+Create a new [timeOff](../resources/timeoff.md) in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/schedulingGroups
+POST /teams/{teamId}/schedule/timesOff
 ```
 
 ## Request headers
@@ -41,7 +41,7 @@ POST /teams/{teamId}/schedule/schedulingGroups
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [timeOff](../resources/timeoff.md) object in the response body.
 
 ## Example
 
@@ -50,18 +50,26 @@ If successful, this method returns a `200 OK` response code and a [schedulingGro
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "schedule-post-schedulinggroups"
+  "name": "timeoff-post"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
+POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/timesOff
 Content-type: application/json
 
 {
-  "displayName": "string",
-  "isActive": true,
-  "userIds": [
-    "string"
-  ]
+  "userId": "string",
+  "sharedTimeOff": {
+    "timeOffReasonId": "string",
+    "startDateTime": "2018-10-04T00:58:45.340Z",
+    "endDateTime": "2018-10-04T00:58:45.340Z",
+    "theme": "white"
+  },
+  "draftTimeOff": {
+    "timeOffReasonId": "string",
+    "startDateTime": "2018-10-04T00:58:45.340Z",
+    "endDateTime": "2018-10-04T00:58:45.340Z",
+    "theme": "white"
+  }
 }
 ```
 
@@ -73,7 +81,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.schedulingGroup"
+  "@odata.type": "schedule-post-timesoff"
 } -->
 
 ```http
@@ -83,11 +91,19 @@ Content-length: 401
 
 {
   "id": "string",
-  "displayName": "string",
-  "isActive": true,
-  "userIds": [
-    "string"
-  ],
+  "userId": "string",
+  "sharedTimeOff": {
+    "timeOffReasonId": "string",
+    "startDateTime": "2018-10-04T00:58:45.340Z",
+    "endDateTime": "2018-10-04T00:58:45.340Z",
+    "theme": "white"
+  },
+  "draftTimeOff": {
+    "timeOffReasonId": "string",
+    "startDateTime": "2018-10-04T00:58:45.340Z",
+    "endDateTime": "2018-10-04T00:58:45.340Z",
+    "theme": "white"
+  },
   "createdDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
   "lastModifiedBy": {
@@ -112,12 +128,12 @@ Content-length: 401
 <!--
 {
   "type": "#page.annotation",
-  "description": "Creates a new schedulingGroup",
+  "description": "Creates a new timeOff",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/schedule-post-schedulinggroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/schedule-post-timesoff.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
