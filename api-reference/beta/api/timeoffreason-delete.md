@@ -1,17 +1,18 @@
 ---
-title: "Mark timeOffReason as inactive"
+title: "Delete timeOffReason"
 description: "Mark a timeOffReason as inactive by setting the isActive property"
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Mark timeOffReason as inactive
+# Delete timeOffReason
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mark a timeOffReason [timeOffReason](../resources/timeoffreason.md) as inactive by setting the isActive property.
-This operation does not remove the specified [timeOffReason](../resources/timeoffreason.md) instance. [timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason would remain assigned to this reason.
+Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property.
+
+This method does not remove the specified [timeOffReason](../resources/timeoffreason.md) instance. [timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.
 
 ## Permissions
 
