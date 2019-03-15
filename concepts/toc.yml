@@ -3,6 +3,8 @@
     experimental: true
     experiment_id: "b8938daf-1bcb-4f"
   items:
+  - name: Microsoft Graph Documentation
+    href: index.yml
   - name: Overview of Microsoft Graph
     href: overview.md
     expanded: true
@@ -171,7 +173,7 @@
             href: security-splunk-siemintegration.md
           - name: QRadar
             href: security-qradar-siemintegration.md
-        - name: Partner with the security API
+        - name: Partner opportunities
           href: security-partner-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
