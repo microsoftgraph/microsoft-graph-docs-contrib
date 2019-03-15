@@ -1,12 +1,12 @@
 ---
-title: "Mark schedulingGroup as inactive"
+title: "Delete schedulingGroup"
 description: "Mark a schedulingGroup as inactive by setting its isActive property"
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Mark schedulingGroup as inactive
+# Delete schedulingGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
