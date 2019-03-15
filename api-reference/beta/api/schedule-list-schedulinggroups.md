@@ -77,26 +77,22 @@ Content-length: 401
 {
   "value": [
     {
-      "id": "string",
-      "displayName": "string",
+      "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",
+      "createdDateTime": "2019-03-12T22:10:38.242Z",
+      "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
+      "displayName": "Cashiers",
       "isActive": true,
       "userIds": [
-        "string"
+        "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+        "2a4296b3-a28a-44ba-bc66-0274b9b95851"
       ],
-      "createdDateTime": "2018-10-04T00:58:45.340Z",
-      "lastModifiedDateTime": "2018-10-04T00:58:45.340Z",
       "lastModifiedBy": {
+        "application": null,
+        "device": null,
+        "conversation": null,
         "user": {
-          "id": "string",
-          "displayName": "string"
-        },
-        "application": {
-          "id": "string",
-          "displayName": "string"
-        },
-        "device": {
-          "id": "string",
-          "displayName": "string"
+          "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+          "displayName": "John Doe"
         }
       }
     }

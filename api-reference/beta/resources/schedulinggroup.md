@@ -45,24 +45,24 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-    "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",
-    "createdDateTime": "2019-03-12T22:10:38.242Z",
-    "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
-    "displayName": "Cashiers",
-    "isActive": true,
-    "userIds": [
-        "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-        "2a4296b3-a28a-44ba-bc66-0274b9b95851"
-    ],
-    "lastModifiedBy": {
-        "application": null,
-        "device": null,
-        "conversation": null,
-        "user": {
-            "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-            "displayName": "John Doe"
-        }
+  "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",
+  "createdDateTime": "2019-03-12T22:10:38.242Z",
+  "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
+  "displayName": "Cashiers",
+  "isActive": true,
+  "userIds": [
+    "c5d0c76b-80c4-481c-be50-923cd8d680a1",
+    "2a4296b3-a28a-44ba-bc66-0274b9b95851"
+  ],
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "conversation": null,
+    "user": {
+      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+      "displayName": "John Doe"
     }
+  }
 }
 ```
 

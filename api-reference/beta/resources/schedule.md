@@ -51,11 +51,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-    "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
-    "enabled": true,
-    "timeZone": "America/Chicago",
-    "provisionStatus": "Completed",
-    "provisionStatusCode": null
+  "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
+  "enabled": true,
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null
 }
 ```
 

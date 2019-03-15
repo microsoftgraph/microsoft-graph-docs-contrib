@@ -83,11 +83,11 @@ Content-type: application/json
 Content-length: 401
 
 {
-  "id": "string",
+  "id": "833fc4df-c88b-4398-992f-d8afcfe41df2",
   "enabled": true,
-  "timeZone": "string",
-  "provisionStatus": "completed",
-  "provisionStatusCode": "string"
+  "timeZone": "America/Chicago",
+  "provisionStatus": "Completed",
+  "provisionStatusCode": null
 }
 ```
 

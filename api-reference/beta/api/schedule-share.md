@@ -70,8 +70,8 @@ Content-type: application/json
 
 {
   "notifyTeam": true,
-  "startDateTime": "2018-10-08T01:17:32.754Z",
-  "endDateTime": "2018-10-08T01:17:32.754Z"
+  "startDateTime": "2018-10-08T00:00:00.000Z",
+  "endDateTime": "2018-10-15T00:00:00.000Z"
 }
 ```
 
