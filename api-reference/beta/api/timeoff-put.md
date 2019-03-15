@@ -12,7 +12,7 @@ ms.prod: "microsoft-teams"
 
 Replace an existing [timeOff](../resources/timeoff.md).
 
-If the specified [timeOff](../resources/timeoff.md) doesn't exist, this operation returns `404 Not found`.
+If the specified [timeOff](../resources/timeoff.md) doesn't exist, this method returns `404 Not found`.
 
 ## Permissions
 
