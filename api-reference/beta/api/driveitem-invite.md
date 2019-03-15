@@ -69,7 +69,7 @@ In the request body, provide a JSON object with the following parameters.
 This example sends a sharing invitation to a user with email address "ryan@contoso.org" with a message about a file being collaborated on.
 The invitation grants Ryan read-write access to the file.
 
-### HTTP Request
+### HTTP request
 
 If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
 
@@ -125,7 +125,7 @@ Content-type: application/json
   ]
 }
 ```
-### Partial Success Response
+### Partial success response
 
 When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others.
 In this case, the service returns a partial success response with an HTTP status code of 207.
@@ -183,7 +183,7 @@ Content-type: application/json
 }
 ```
 ### SendNotification errors
-Below are some additional errors that your app may encounter within the nested `innererror` objects when sending notification fails. 
+The following are some additional errors that your app might encounter within the nested `innererror` objects when sending notification fails. 
 Apps are not required to handle these, but may if they choose.
 
 | Code                           | Description
@@ -194,7 +194,7 @@ Apps are not required to handle these, but may if they choose.
 | exchangeOutOfMailboxQuota      | Out of quota.
 | exchangeMaxRecipients          | Exceeded maximum number of recipients that can be sent notifications at the same time.
 
-Note: The service may add new error codes or stop returning old ones at any time.
+>**Note:** The service can add new error codes or stop returning old ones at any time.
 
 ## Remarks
 
