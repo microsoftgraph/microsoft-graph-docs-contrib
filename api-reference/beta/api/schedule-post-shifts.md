@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [shift](../resources/shift.md) in a [schedule](../resources/schedule.md).
+Create a new [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md).
 
 ## Permissions
 

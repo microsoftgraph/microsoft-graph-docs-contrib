@@ -39,6 +39,9 @@ GET /teams/{teamId}/schedule/timesOff/{timeOffId}
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
 
+## Request body
+Do not supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.

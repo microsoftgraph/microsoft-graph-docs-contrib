@@ -9,7 +9,7 @@ ms.prod: "microsoft-teams"
 # List shifts
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the list of [shifts](../resources/shift.md) in a [schedule](../resources/schedule.md).
+Get the list of [shift](../resources/shift.md) instances in a [schedule](../resources/schedule.md).
 
 ## Permissions
 
@@ -40,6 +40,9 @@ This method supports the $filter [OData query parameter](/graph/query-parameters
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json  |
+
+## Request body
+Do not supply a request body for this method.
 
 ## Response
 
