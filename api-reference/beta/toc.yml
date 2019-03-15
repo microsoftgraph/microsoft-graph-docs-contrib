@@ -2157,6 +2157,10 @@
             href: api/intune-enrollment-importeddeviceidentity-update.md
           - name: importDeviceIdentityList action
             href: api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md
+          - name: searchExistingIdentities action
+            href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
+          - name: searchExistingIdentities action
+            href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
         - name: Imported device identity result
           href: resources/intune-enrollment-importeddeviceidentityresult.md
           items:
@@ -2249,6 +2253,12 @@
             href: api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md
           - name: unassignUserFromDevice action
             href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
+          - name: assignResourceAccountToDevice action
+            href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
+          - name: unassignResourceAccountFromDevice action
+            href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+        - name: Windows autopilot device type
+          href: resources/intune-enrollment-windowsautopilotdevicetype.md
         - name: Windows autopilot profile assignment detailed status
           href: resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md
         - name: Windows autopilot profile assignment status
@@ -2961,8 +2971,6 @@
           href: resources/intune-deviceconfig-defenderprotectiontype.md
         - name: Defender scan type
           href: resources/intune-deviceconfig-defenderscantype.md
-        - name: Defender schedule scan day
-          href: resources/intune-deviceconfig-defenderschedulescanday.md
         - name: Defender security center IT contact display type
           href: resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md
         - name: Defender security center notifications from app type
@@ -4670,6 +4678,29 @@
           href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
         - name: Windows firewall network profile
           href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
+        - name: Windows firewall rule
+          href: resources/intune-deviceconfig-windowsfirewallrule.md
+        - name: Windows firewall rule interface types
+          href: resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md
+        - name: Windows firewall rule network profile types
+          href: resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md
+        - name: Windows firewall rule traffic direction type
+          href: resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md
+        - name: Windows health monitoring configuration
+          href: resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md
+        - name: Windows health monitoring scope
+          href: resources/intune-deviceconfig-windowshealthmonitoringscope.md
         - name: Windows identity protection configuration
           href: resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md
           items:
@@ -4889,6 +4920,8 @@
           href: resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md
         - name: Windows update install schedule type
           href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+        - name: Windows update notification display option
+          href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
         - name: Windows update scheduled install
           href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
         - name: Windows update status
@@ -5619,7 +5652,7 @@
             href: api/intune-devices-windowsprotectionstate-get.md
           - name: Update
             href: api/intune-devices-windowsprotectionstate-update.md
-      - name: Mobile app management
+      - name: Mobile app management (MAM)
         href: resources/intune-mam-conceptual.md
         items:
         - name: Android managed app protection
@@ -5644,6 +5677,10 @@
             href: api/intune-mam-androidmanagedappregistration-get.md
           - name: Create
             href: api/intune-mam-androidmanagedappregistration-create.md
+        - name: Android managed app safety net apps verification type
+          href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
+        - name: Android managed app safety net device attestation type
+          href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
         - name: Android mobile app identifier
           href: resources/intune-mam-androidmobileappidentifier.md
         - name: App management level
@@ -6192,7 +6229,7 @@
             href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md
         - name: Windows Hello for business PIN usage
           href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-      - name: Role-based access control 
+      - name: Role-based access control (RBAC)
         href: /resources/intune-rbac-conceptual.md
         items:
         - name: Device and app management assigned role details
