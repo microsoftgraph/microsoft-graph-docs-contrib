@@ -1,5 +1,5 @@
 ---
-title: "Get the list of schedulingGroup in this schedule"
+title: "List schedulingGroups"
 description: "Get the list of schedulingGroup in this schedule."
 author: "nkramer"
 localization_priority: Normal
