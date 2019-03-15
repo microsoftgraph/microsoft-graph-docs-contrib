@@ -27,8 +27,8 @@ A unit of non-work in the schedule.
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id			|`string`      |ID of the `timeOff`.|
 | userId 			|`string`      |ID of the user assigned to the `timeOff`.|
-| sharedTimeOff 	|`timeOffItem`  |The shared version of this `timeOff` that is viewable by both employees and managers.|
-| draftTimeOff		|`timeOffItem`        |The draft version of this `timeOff` that is viewable by managers.|
+| sharedTimeOff 	|`[timeOffItem](timeoffitem.md)`  |The shared version of this `timeOff` that is viewable by both employees and managers.|
+| draftTimeOff		|`[timeOffItem](timeoffitem.md)`        |The draft version of this `timeOff` that is viewable by managers.|
 | createdDateTime		|`DateTimeOffset`        |The time stamp at which this `timeOff` was first created.|
 | lastModifiedDateTime		|`DateTimeOffset`        |The time stamp at which this `timeOff` was last updated.|
 | lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `timeOff`.|

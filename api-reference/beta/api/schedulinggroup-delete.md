@@ -1,12 +1,12 @@
 ---
-title: "Marks a schedulingGroup as inactive"
-description: "Marks a schedulingGroup as inactive."
+title: "Mark schedulingGroup as inactive"
+description: "Mark a schedulingGroup as inactive."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Marks a schedulingGroup as inactive
+# Mark schedulingGroup as inactive
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

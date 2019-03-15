@@ -28,9 +28,9 @@ A unit of scheduled work in a [schedule](schedule.md).
 | id			|`string`      |ID of the `shift`.|
 | userId 			|`string`      |ID of the user assigned to the `shift`.|
 | schedulingGroupId 		|`string`      |ID of the scheduling group the `shift` is part of.|
-| sharedShift 	|`shiftItem`  |The shared version of this `shift` that is viewable by both employees and managers.|
-| draftShift		|`shiftItem`        |The draft version of this `shift` that is viewable by managers.|
-| createdDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was first created.|
+| sharedShift 	|`[shiftItem](shiftitem.md)`  |The shared version of this `shift` that is viewable by both employees and managers.|
+| draftShift		|`[shiftItem](shiftitem.md)`        |The draft version of this `shift` that is viewable by managers.|
+| createdDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was first created. |
 | lastModifiedDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was last updated.|
 | lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `shift`.|
 

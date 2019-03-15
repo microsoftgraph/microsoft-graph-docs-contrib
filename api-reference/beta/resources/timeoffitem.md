@@ -13,12 +13,12 @@ ms.prod: "microsoft-teams"
 Represents a version of the [timeOff](timeoff.md).
 
 ## Properties
-| Name                         | Type                    | Req. | R.O. | Nav. | Description                                                                                                                                                                        |
-|------------------------------|-------------------------|------|------|------|---------------------------------------------------------------------------------------------|
-| timeOffReasonId               | `string`                  | ✓     |      |      | ID of the `timeOffReason` for this `timeOffItem`.      |
-| startDateTime               | `DateTimeOffset`                  | ✓    |      |      | The start date and time for the `timeOffItem`.     |
-| endDateTime               | `DateTimeOffset`                  | ✓    |      |      | The end date and time for the `timeOffItem`.     |
-| theme | `enum`   |    |  |  | Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
+| Property                         | Type                    | Description                                                                                                                                                                        |
+|------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
+| timeOffReasonId               | `string`                  | ID of the `timeOffReason` for this `timeOffItem`.      |
+| startDateTime               | `DateTimeOffset`                  | The start date and time for the `timeOffItem`.     |
+| endDateTime               | `DateTimeOffset`                  | The end date and time for the `timeOffItem`.     |
+| theme | `enum`   | Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 
 ## JSON representation
 

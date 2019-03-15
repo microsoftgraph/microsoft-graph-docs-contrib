@@ -20,7 +20,7 @@ A valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.
 |[List timeOffReason](../api/schedule-list-timeoffreasons.md) | [timeOffReason](timeoffreason.md) collection | Get the list of `timeOffReasons` in a schedule.|
 |[Get timeOffReason](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Get a `timeOffReason` by ID.|
 |[Update timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Update a `timeOffReason`.|
-|[Delete timeOffReason](../api/timeoffreason-delete.md) | None | Mark a `timeOffReason` as inactive.|
+|[Delete timeOffReason](../api/timeoffreason-delete.md) | None | Mark `timeOffReason` as inactive.|
 
 ## Properties
 |Name          |Type           |Description                                                                                 |

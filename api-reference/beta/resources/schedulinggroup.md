@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A logical grouping of members in a [schedule](schedule.md) (usually by role). 
+A logical grouping of users in a [schedule](schedule.md) (usually by role). 
 
 ## Methods
 
@@ -20,7 +20,7 @@ A logical grouping of members in a [schedule](schedule.md) (usually by role).
 |[List schedulingGroups](../api/schedule-list-schedulinggroups.md) | [schedulingGroup](schedulinggroup.md) collection | Get the list of `schedulingGroups` in a schedule.|
 |[Get schedulingGroup](../api/schedulinggroup-get.md) | [schedulingGroup](schedulinggroup.md) | Get a `schedulingGroup` by ID.|
 |[Update schedulingGroup](../api/schedulinggroup-put.md) | [schedulingGroup](schedulinggroup.md) | Update a `schedulingGroup`.|
-|[Delete schedulingGroup](../api/schedulinggroup-delete.md) | None | Mark a `schedulingGroup` as inactive.|
+|[Delete schedulingGroup](../api/schedulinggroup-delete.md) | None | Mark `schedulingGroup` as inactive.|
 
 ## Properties
 |Name          |Type           |Description                                                                                 |
