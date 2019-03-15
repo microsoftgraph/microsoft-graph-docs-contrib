@@ -12,7 +12,7 @@ ms.prod: "microsoft-teams"
 
 Replace an existing [shift](../resources/shift.md).
 
-If the specified [shift](../resources/shift.md) doesn't exist, this operation returns `404 Not found`.
+If the specified [shift](../resources/shift.md) doesn't exist, this method returns `404 Not found`.
 
 ## Permissions
 
