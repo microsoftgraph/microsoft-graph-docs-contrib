@@ -52,7 +52,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/security/secureScores/{id}
+GET https://graph.microsoft.com/v1.0/security/secureScores/{id}
 ```
 
 ### Response

@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # List secureScores
 
-Retrieve the properties and relationships of a [secureScores](../resources/securescore.md) object.
+Retrieve a list of [secureScores](../resources/securescore.md) objects.
 
 ## Permissions
 
@@ -25,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /security/secureScores
 GET /security/secureScores?$top=1
+GET /security/secureScores?$top=1&$skip=7
 GET /security/secureScores?$filter={property} eq '{property-value}'
 ```
 ## Optional query parameters
