@@ -11,7 +11,8 @@ ms.prod: "microsoft-teams"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Replace an existing [shift](../resources/shift.md).
-If the specified [shift](../resources/shift.md) doesn't exist, this operation returns 404 Not found.
+
+If the specified [shift](../resources/shift.md) doesn't exist, this operation returns `404 Not found`.
 
 ## Permissions
 
