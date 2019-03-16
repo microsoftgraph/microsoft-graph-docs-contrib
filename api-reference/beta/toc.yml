@@ -8458,7 +8458,7 @@
         - name: Get
           href: api/schedulinggroup-get.md
         - name: Replace
-          href: api/schedulinggroup-update.md
+          href: api/schedulinggroup-put.md
         - name: Delete
           href: api/schedulinggroup-delete.md    
       - name: Shift
@@ -8471,7 +8471,7 @@
           - name: Get
             href: api/shift-get.md
           - name: Replace
-            href: api/shift-update.md
+            href: api/shift-put.md
           - name: Delete
             href: api/shift-delete.md    
       - name: Time off
@@ -8484,7 +8484,7 @@
           - name: Get
             href: api/timeoff-get.md
           - name: Replace
-            href: api/timeoff-update.md
+            href: api/timeoff-put.md
           - name: Delete
             href: api/timeoff-delete.md   
       - name: Time off reason
@@ -8497,7 +8497,7 @@
           - name: Get
             href: api/timeoffreason-get.md
           - name: Replace
-            href: api/timeoffreason-update.md
+            href: api/timeoffreason-put.md
           - name: Delete
             href: api/timeoffreason-delete.md   
       - name: Drive
