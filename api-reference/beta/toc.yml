@@ -8452,54 +8452,54 @@
         href: resources/schedulinggroup.md
         items:
         - name: Create
-          href: api/schedule-post-schedulinggroups
+          href: api/schedule-post-schedulinggroups.md
         - name: List
-          href: api/schedule-list-schedulinggroups 
+          href: api/schedule-list-schedulinggroups.md 
         - name: Get
-          href: api/schedulinggroup-get
+          href: api/schedulinggroup-get.md
         - name: Replace
-          href: api/schedulinggroup-update
+          href: api/schedulinggroup-update.md
         - name: Delete
-          href: api/schedulinggroup-delete    
+          href: api/schedulinggroup-delete.md    
       - name: Shift
         href: resources/shift.md
         items:
           - name: Create
-            href: api/schedule-post-shifts
+            href: api/schedule-post-shifts.md
           - name: List
-            href: api/schedule-list-shifts 
+            href: api/schedule-list-shifts.md 
           - name: Get
-            href: api/shift-get
+            href: api/shift-get.md
           - name: Replace
-            href: api/shift-update
+            href: api/shift-update.md
           - name: Delete
-            href: api/shift-delete    
+            href: api/shift-delete.md    
       - name: Time off
         href: resources/timeoff.md
         items:
           - name: Create
-            href: api/schedule-post-timesoff
+            href: api/schedule-post-timesoff.md
           - name: List
-            href: api/schedule-list-timesoff 
+            href: api/schedule-list-timesoff.md 
           - name: Get
-            href: api/timeoff-get
+            href: api/timeoff-get.md
           - name: Replace
-            href: api/timeoff-update
+            href: api/timeoff-update.md
           - name: Delete
-            href: api/timeoff-delete   
+            href: api/timeoff-delete.md   
       - name: Time off reason
         href: resources/timeoffreason.md
         items:
           - name: Create
-            href: api/schedule-post-timeoffreasons
+            href: api/schedule-post-timeoffreasons.md
           - name: List
-            href: api/schedule-list-timeoffreasons 
+            href: api/schedule-list-timeoffreasons.md 
           - name: Get
-            href: api/timeoffreason-get
+            href: api/timeoffreason-get.md
           - name: Replace
-            href: api/timeoffreason-update
+            href: api/timeoffreason-update.md
           - name: Delete
-            href: api/timeoffreason-delete   
+            href: api/timeoffreason-delete.md   
       - name: Drive
         href: resources/drive.md
         items:
