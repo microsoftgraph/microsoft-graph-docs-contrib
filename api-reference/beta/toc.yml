@@ -8439,6 +8439,67 @@
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+      - name: Schedule
+        href: resources/schedule.md
+        items:
+        - name: Create or replace
+          href: api/team-put-schedule.md
+        - name: Get
+          href: api/schedule-get.md
+        - name: Share
+          href: api/schedule-share.md  
+      - name: Scheduling group
+        href: resources/schedulinggroup.md
+        items:
+        - name: Create
+          href: api/schedule-post-schedulinggroups
+        - name: List
+          href: api/schedule-list-schedulinggroups 
+        - name: Get
+          href: api/schedulinggroup-get
+        - name: Replace
+          href: api/schedulinggroup-update
+        - name: Delete
+          href: api/schedulinggroup-delete    
+      - name: Shift
+        href: resources/shift.md
+        items:
+          - name: Create
+            href: api/schedule-post-shifts
+          - name: List
+            href: api/schedule-list-shifts 
+          - name: Get
+            href: api/shift-get
+          - name: Replace
+            href: api/shift-update
+          - name: Delete
+            href: api/shift-delete    
+      - name: Time off
+        href: resources/timeoff.md
+        items:
+          - name: Create
+            href: api/schedule-post-timesoff
+          - name: List
+            href: api/schedule-list-timesoff 
+          - name: Get
+            href: api/timeoff-get
+          - name: Replace
+            href: api/timeoff-update
+          - name: Delete
+            href: api/timeoff-delete   
+      - name: Time off reason
+        href: resources/timeoffreason.md
+        items:
+          - name: Create
+            href: api/schedule-post-timeoffreasons
+          - name: List
+            href: api/schedule-list-timeoffreasons 
+          - name: Get
+            href: api/timeoffreason-get
+          - name: Replace
+            href: api/timeoffreason-update
+          - name: Delete
+            href: api/timeoffreason-delete   
       - name: Drive
         href: resources/drive.md
         items:
