@@ -28,10 +28,7 @@ For any app update, there are three main areas of concern:
 
 Simple migration projects should experience no issues in these areas.
 
-However, if you use new features, incorporate new workflows, or add additional capabilities, new permissions and consent may be required.  In such cases, consent is request when tokens are refreshed.
-
-    TODO// I feel there's more we could say here.  What should be added?
-
+However, if you use new features, incorporate new workflows, or add additional capabilities, new permissions and consent may be required.  In such cases, consent is requested when tokens are refreshed.
 
 ## Next Steps
 
