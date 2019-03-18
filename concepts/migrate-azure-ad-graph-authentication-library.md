@@ -44,9 +44,9 @@ var scopes = new string[] { "https://graph.microsoft.com/.default" };
 
 This scopes permissions requests to those requested through the Azure Portal experience.  Because your users have previously accepted these permissions, that consent passes through to the updated app.  They do not need to provide additional consent.
 
-Once you've migrated to MSAL, you can request additional scopes dynamically, which requests incremental consent from the user.  
+See [Migrating ADAL to MSAL](https://aka.ms/adal-net-to-msal-net) for direct and extensive help with the process, including troubleshooting and help with common errors.
 
-For detailed help, see: [Migrating ADAL to MSAL](https://aka.ms/adal-net-to-msal-net).
+Once you've migrated to MSAL, you can request additional scopes dynamically, which requests incremental consent from the user.  
 
 ## Next Steps
 
