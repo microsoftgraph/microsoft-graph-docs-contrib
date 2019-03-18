@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /reports/applicationSignInDetailedSummary/<id>
+GET /reports/applicationSignInDetailedSummary/{id}
 ```
 
 ## Optional query parameters
@@ -52,7 +52,7 @@ The following is an example of the request.
   "name": "get_applicationsignindetailedsummary"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/reports/applicationSignInDetailedSummary/<id>
+GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/<id>
 ```
 
 ### Response
