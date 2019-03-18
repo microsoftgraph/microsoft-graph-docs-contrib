@@ -32,7 +32,7 @@ sections:
       columns: 3
       items:
       - href: /graph/overview
-        html: <p>Learn more about Microsoft Graph and its features and capabilities.</p>
+        html: <p>Learn what apps can do in Microsoft Graph and see popular APIs.</p>
         image:
           src: ./images/index/i_get-started.svg
         title: Overview of Microsoft Graph
@@ -157,12 +157,12 @@ sections:
       columns: 3
       items:
       - href: /graph/changelog
-        html: <p>Find out what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.</p>
+        html: <p>Find out what’s changed in the v1.0 and beta versions of the Microsoft Graph API.</p>
         image:
           src: ./images/index/i_backlog.svg
         title: Changelog
       - href: https://developer.microsoft.com/graph/blogs/
-        html: <p>Read the blog for the latest news and updates.</p>
+        html: <p>Read the blog to get the latest news about new APIs, breaking changes, and more.</p>
         image:
           src: ./images/index/i_blog.svg
         title: Microsoft Graph blog
