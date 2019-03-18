@@ -28,7 +28,7 @@ Here are the property differences for the user resource:
 | dirSyncEnabled | beta/&nbsp;-&nbsp;onPremisesSyncEnabled <br> v1.0/ - onPremisesSyncEnabled | |
 | facsimileTelephoneNumber | beta/ - faxNumber <br> v1.0/ - faxNumber | |
 | immutableId | beta/&nbsp;-&nbsp;onPremisesImmutableId <br> v1.0/ - onPremisesImmutableId | |
-| isCompromised | beta/ - _Not available_ <br> v1.0/ - _Not available_ | The Microsoft Graph [identity protection](api/resources/identityprotection-root?view=graph-rest-beta) API provides more sophisticated functionality. |
+| isCompromised | beta/ - _Not available_ <br> v1.0/ - _Not available_ | The Microsoft Graph [identity protection](/graph/api/resources/identityprotection-root?view=graph-rest-beta) API provides more sophisticated functionality. |
 | lastDirSyncDateTime | beta/&nbsp;-&nbsp;onPremisesLastSyncDateTime <br> v1.0/ - onPremisesLastSyncDateTime | |
 | mobile | beta/ - mobilePhone <br> v1.0/ - mobilePhone | |
 | oAuth2PermissionGrants | beta/ - oAuth2PermissionGrants <br> v1.0/ - _Not yet available_ ||

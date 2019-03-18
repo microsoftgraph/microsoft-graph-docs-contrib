@@ -284,7 +284,7 @@
           href: changelog.md
         - name: Errors
           href: errors.md
-    - name: Develop
+    - name: Migrate
       expanded: false
       items:
         - name: Azure AD Graph
@@ -293,21 +293,21 @@
           - name: Audit API use
             href: migrate-azure-ad-graph-audit-api-use.md
           - name: Request differences
-            href: migrate-azure-ad-graph-audit-request-differences.md
+            href: migrate-azure-ad-graph-request-differences.md
           - name: Resource differences
-            href: migrate-azure-ad-graph-audit-resource-differences.md
+            href: migrate-azure-ad-graph-resource-differences.md
           - name: Property differences
-            href: migrate-azure-ad-graph-audit-property-differences.md
+            href: migrate-azure-ad-graph-property-differences.md
           - name: Method differences
-            href: migrate-azure-ad-graph-audit-method-differences.md
+            href: migrate-azure-ad-graph-method-differences.md
           - name: Feature differences
-            href: migrate-azure-ad-graph-audit-feature-differences.md
+            href: migrate-azure-ad-graph-feature-differences.md
           - name: App registration
-            href: migrate-azure-ad-graph-audit-app-registration.md
+            href: migrate-azure-ad-graph-app-registration.md
           - name: Auth libraries 
-            href: migrate-azure-ad-graph-audit-request-differences.md
+            href: migrate-azure-ad-graph-request-differences.md
           - name: .NET client libraries 
-            href: migrate-azure-ad-graph-audit-request-differences.md
+            href: migrate-azure-ad-graph-request-differences.md
     - name: v1.0 reference
       href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
     - name: Beta reference
