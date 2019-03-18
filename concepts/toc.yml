@@ -293,21 +293,21 @@
           - name: Audit API use
             href: migrate-azure-ad-graph-audit-api-use.md
           - name: Review request changes
-            href: migrate-azure-ad-graph-request-differences.md
+            href: migrate-azure-ad-graph-request-changes.md
           - name: Review resource changes
-            href: migrate-azure-ad-graph-resource-differences.md
+            href: migrate-azure-ad-graph-resource-changes.md
           - name: Review property changes
-            href: migrate-azure-ad-graph-property-differences.md
+            href: migrate-azure-ad-graph-property-changes.md
           - name: Review method changes
-            href: migrate-azure-ad-graph-method-differences.md
+            href: migrate-azure-ad-graph-method-changes.md
           - name: Review feature changes
-            href: migrate-azure-ad-graph-feature-differences.md
+            href: migrate-azure-ad-graph-feature-changes.md
           - name: Review app registration
             href: migrate-azure-ad-graph-app-registration.md
           - name: Review auth libraries 
-            href: migrate-azure-ad-graph-request-differences.md
+            href: migrate-azure-ad-graph-authentication-library.md
           - name: Review .NET client libraries 
-            href: migrate-azure-ad-graph-request-differences.md
+            href: migrate-azure-ad-graph-client-libraries.md
     - name: v1.0 reference
       href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
     - name: Beta reference
