@@ -184,7 +184,7 @@ Content-type: application/json
 ```
 ### SendNotification errors
 The following are some additional errors that your app might encounter within the nested `innererror` objects when sending notification fails. 
-Apps are not required to handle these, but may if they choose.
+Apps are not required to handle these.
 
 | Code                           | Description
 |:-------------------------------|:--------------------------------------------------------------------------------------
@@ -201,7 +201,7 @@ Apps are not required to handle these, but may if they choose.
 * [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) cannot create or modify permissions on the root DriveItem.
 * For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration-values).
 
-## Error Responses
+## Error responses
 
 Read the [Error Responses][error-response] topic for more information about
 how errors are returned.
