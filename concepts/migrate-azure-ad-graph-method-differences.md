@@ -1,12 +1,12 @@
 ---
-title: "Migrate Azure AD Graph apps to Microsoft Graph  | Microsoft Graph"
+title: "Review method changes from Azure AD to Microsoft Graph | Microsoft Graph"
 description: "Describes how to migrate Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Method differences
+# Review method changes from Azure AD to Microsoft Graph
 
 A handful of Azure AD Graph methods have also changed:
 
