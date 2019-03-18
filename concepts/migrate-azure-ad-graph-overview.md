@@ -104,9 +104,8 @@ Use the following checklist to plan your migration:
 ## Next Steps
 
 - Learn about request differences between Azure AD Graph and Microsoft Graph.
-- Follow Microsoft Graph [blogs](https://developer.microsoft.com/graph/blogs) for updates and review the [documentation]((https://developer.microsoft.com/graph)).
+- Follow Microsoft Graph [blogs](https://developer.microsoft.com/graph/blogs) for updates and review the [documentation](https://developer.microsoft.com/graph).
 - Manage Azure AD resources, such as [users](https://docs.microsoft.com/graph/azuread-users-concept-overview), [groups](https://docs.microsoft.com/graph/office365-groups-concept-overview), and [identity access](https://docs.microsoft.com/graph/azuread-identity-access-management-concept-overview).
 - Use [quick starts and samples](https://developer.microsoft.com/graph/get-started) to come up to speed quickly.
 - Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications supporting multiple operating systems and languages.
 - Experiment using the [Graph Explorer](https://aka.ms/ge).
-

@@ -58,8 +58,8 @@ While not all requests will be as easy to convert, many will.  To learn more, se
 
 ## Next Steps
 
-- Learn about [Link to next article in the series]().
-- Follow Microsoft Graph [blogs](https://developer.microsoft.com/graph/blogs) for updates and review the [documentation]((https://developer.microsoft.com/graph)).
+- Learn about [Link to next article in the series](#).
+- Follow Microsoft Graph [blogs](https://developer.microsoft.com/graph/blogs) for updates and review the [documentation](https://developer.microsoft.com/graph).
 - Manage Azure AD resources, such as [users](https://docs.microsoft.com/graph/azuread-users-concept-overview), [groups](https://docs.microsoft.com/graph/office365-groups-concept-overview), and [identity access](https://docs.microsoft.com/graph/azuread-identity-access-management-concept-overview).
 - Use [quick starts and samples](https://developer.microsoft.com/graph/get-started) to come up to speed quickly.
 - Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications supporting multiple operating systems and languages.
