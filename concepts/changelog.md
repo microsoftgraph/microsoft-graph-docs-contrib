@@ -67,6 +67,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
 
+### OneDrive and SharePoint APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type. |
+| Addition        | Beta        | Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type. |
 
 ## February 2019
 
