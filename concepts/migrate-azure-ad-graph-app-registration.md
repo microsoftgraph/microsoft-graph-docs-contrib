@@ -1,12 +1,12 @@
 ---
-title: "App registration, permission, and consent migration issues  | Microsoft Graph"
+title: "Review app registration, permission, and consent migration issues | Microsoft Graph"
 description: "Describes app registration, permission, and consent migration from Azure Active Directory (Azure AD) to Microsoft Graph API."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# App registration, permissions, and consent.
+# Review app registration, permissions, and consent issues
 
 From an app management perspective, migrating Azure AD Graph apps to Microsoft Graph is relatively painless.
 

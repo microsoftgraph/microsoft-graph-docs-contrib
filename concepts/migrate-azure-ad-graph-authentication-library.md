@@ -1,12 +1,12 @@
 ---
-title: "Migrate app authentication library use to Microsoft Graph  | Microsoft Graph"
+title: "Review app authentication library changes | Microsoft Graph"
 description: "Describes how to update authentication library use in order to migrate an app from Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Authentication libraries
+# Review app authentication library changes
 
 Many apps use an authentication library to aquire and manage access tokens.
 
