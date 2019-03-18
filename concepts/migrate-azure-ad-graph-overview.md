@@ -53,15 +53,9 @@ Use the following checklist to plan your migration:
 
     Also, review specials features, such as directory extensions, batching, differential queries, and so on.
 
-1.  **Check feature parity**
-
     Verify that the APIs you need are generally available as Microsoft Graph 1.0 APIs. 
 
     Verify that available APIs work the same way.
-
-    (TODO: What advice do we have if they're only in beta? Or if there are no plans to support? )
-
-    (TODO: Isn't this essentially the same as the advice in the previous two steps?  What makes each step unique so that it needs to be called out?)
 
 1.  **Account for syntax and behavioral differences** 
 

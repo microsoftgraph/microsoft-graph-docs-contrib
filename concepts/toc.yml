@@ -276,23 +276,39 @@
       - name: Add custom data
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: Overview
-          href: extensibility-overview.md
-        - name: Use open extensions (example)
-          href: extensibility-open-users.md
-        - name: Use schema extensions (example)
-          href: extensibility-schema-groups.md
-    - name: Resources
+        - name: Best practices
+          href: best-practices-concept.md
+        - name: Known issues
+          href: known-issues.md
+        - name: Changelog
+          href: changelog.md
+        - name: Errors
+          href: errors.md
+    - name: Develop
+      expanded: false
       items:
-      - name: Best practices
-        href: best-practices-concept.md
-      - name: Known issues
-        href: known-issues.md
-      - name: Changelog
-        href: changelog.md
-      - name: Errors
-        href: errors.md
-  - name: v1.0 reference
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-  - name: Beta reference
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+        - name: Azure AD Graph
+          href: migrate-azure-ad-graph-overview.md
+          items:
+          - name: Audit API use
+            href: migrate-azure-ad-graph-audit-api-use.md
+          - name: Request differences
+            href: migrate-azure-ad-graph-audit-request-differences.md
+          - name: Resource differences
+            href: migrate-azure-ad-graph-audit-resource-differences.md
+          - name: Property differences
+            href: migrate-azure-ad-graph-audit-property-differences.md
+          - name: Method differences
+            href: migrate-azure-ad-graph-audit-method-differences.md
+          - name: Feature differences
+            href: migrate-azure-ad-graph-audit-feature-differences.md
+          - name: App registration
+            href: migrate-azure-ad-graph-audit-app-registration.md
+          - name: Auth libraries 
+            href: migrate-azure-ad-graph-audit-request-differences.md
+          - name: .NET client libraries 
+            href: migrate-azure-ad-graph-audit-request-differences.md
+    - name: v1.0 reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+    - name: Beta reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
