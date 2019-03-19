@@ -61,7 +61,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.secureScore"
+  "@odata.type": "microsoft.graph.secureScores"
 } -->
 
 ```http
