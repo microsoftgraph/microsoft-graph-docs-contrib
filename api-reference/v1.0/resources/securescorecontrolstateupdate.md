@@ -8,10 +8,10 @@ Contains the history of the control states updated by the user (control states i
 
 |Property |Type |Description |
 |:--|:--|:--|
-|assignedTo | string | Assign the control to the user who will take the action |
-|comment | string | Provides optional comment about the control |
-|state | string | State of the control can be modified using PATCH command(Ex: ignored, thirdParty etc) |
-|updatedBy | string |ID of the user who updated tenant state |
+|assignedTo | String | Assign the control to the user who will take the action |
+|comment | String | Provides optional comment about the control |
+|state | String | State of the control can be modified using PATCH command(Ex: ignored, thirdParty etc) |
+|updatedBy | String |ID of the user who updated tenant state |
 |updatedDateTime | DateTimeOffset? |Time at which control state was updated |
  ## JSON representation
  The following is a JSON representation of the resource.
@@ -24,10 +24,10 @@ Contains the history of the control states updated by the user (control states i
  ```json
 {
   "assignedTo": "String",
-  "comment": "Double",
-  "state": "Double",
-  "updatedBy": "Double",
-  "updatedDateTime": "Double"
+  "comment": "String",
+  "state": "String",
+  "updatedBy": "String",
+  "updatedDateTime": "DateTimeOffset"
 }
  ```
  <!-- {

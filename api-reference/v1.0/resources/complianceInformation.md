@@ -8,6 +8,8 @@ localization_priority: Normal
 
 Contains compliance data associated with secure score control.
 
+## Properties
+
 |Property |Type |Description |
 |:--|:--|:--|
 |certificationName | string | Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
