@@ -1,12 +1,12 @@
 ---
 title: "List secureScores"
-description: "Retrieve the properties and relationships of a secureScores object."
+description: "Retrieve a list of secureScore objects."
 localization_priority: Normal
 ---
 
 # List secureScores
 
-Retrieve a list of [secureScores](../resources/securescore.md) objects.
+Retrieve a list of [secureScore](../resources/securescore.md) objects.
 
 ## Permissions
 
