@@ -69,41 +69,44 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "String (identifier)",
-  "azureTenantId": "String",
-  "actionType": "String",
-  "actionUrl": "String",
-  "controlCategory": "String",
-  "title": "String", 
-  "deprecated ": "Boolean",
-  "implementationCost ": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "maxScore": "Double",
-  "rank ": "Int32",
-  "remediation": "String",
-  "remediationImpact ": "String",
-  "service": "String",
-  "threats":  ["String"],
-  "tier": "String",
-  "userImpact": "String",
+  "id": "DLPEnabled",
+  "azureTenantId": "00000001-0001-0001-0001-000000000001c",
+  "actionType": "Config",
+  "actionUrl": "https://compliance.microsoft.com/#/policies",
+  "controlCategory": "Data",
+  "title": "Apply Data Loss Prevention policies", 
+  "deprecated ": false,
+  "implementationCost ": "Moderate",
+  "lastModifiedDateTime": null,
+  "maxScore": 20,
+  "rank ": 55,
+  "remediation": "You can create and manage data loss prevention policies in the Policies page of the compliance portal.",
+  "remediationImpact ": "This change will have a moderate impact on your users.",
+  "service": "IP",
+  "threats": [
+    "Data Exfiltration",
+    "Data Spillage"
+  ],
+  "tier": "Advanced",
+  "userImpact": "Moderate",
   "complianceInformation": [
     {
-      "certificationName": "certificationName.value",
+      "certificationName": "ISO 27001:2013",
       "certificationControl": [
         {
-          "name": "name.value",
-          "url": "url.value",
+          "name": "A.8.2.1",
+          "url": "",
         }
       ]
     }         
   ],
   "controlStateUpdates": [
     {
-      "assignedTo": "assignedTo.value",
-      "comment": "comment.value",
-      "state": "state.value",
-      "updatedBy": "updatedBy.value",
-      "updatedDateTime": "updatedDateTime.value"
+      "assignedTo": null,
+      "comment": null,
+      "state": "Default",
+      "updatedBy": null,
+      "updatedDateTime": null
     }
   ],
   "vendorInformation": {

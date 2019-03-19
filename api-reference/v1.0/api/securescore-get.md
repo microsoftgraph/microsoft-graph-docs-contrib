@@ -69,26 +69,59 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "String (identifier)",
-  "azureTenantId": "String",
-  "activeUserCount": "Int32",
-  "createdDateTime": "DateTimeOffset",
-  "currentScore": "Double",
-  "enabledServices": ["String"],
-  "licensedUserCount": "Int32",
-  "maxScore": "Double",
+  "id": "00000001-0001-0001-0001-000000000001c_2019-03-19",
+  "azureTenantId": "00000001-0001-0001-0001-000000000001c",
+  "activeUserCount": 0,
+  "createdDateTime": "2019-03-19T15:21:00Z",
+  "currentScore": 387,
+  "enabledServices": [
+    "HasExchange",
+    "HasSharePoint",
+    "HasInTune"
+  ],
+  "licensedUserCount": 100,
+  "maxScore": 697,
   "averageComparativeScores": [
     {
-      "basis": "basis.value",
-      "averageScore": "averageScore.value"
+      "basis": "AllTenants",
+      "averageScore": 37,
+      "deviceScore": "1",
+      "dataScore": "9",
+      "identityScore": "25",
+      "appsScore": "0"
+    },
+    {
+      "basis": "TotalSeats",
+      "averageScore": 46,
+      "deviceScore": "2",
+      "dataScore": "14",
+      "identityScore": "27",
+      "appsScore": "0",
+      "seatSizeRangeLowerValue": "6"
+      "seatSizeRangeUpperValue": "99"
+    },
+    {
+      "basis": "IndustryTypes",
+      "averageScore": 109,
+      "deviceScore": "19",
+      "dataScore": "33",
+      "identityScore": "45",
+      "appsScore": "10",
+      "categoryValue": "engineering,technology"
     }
   ],
   "controlScores": [
     {
-      "controlCategory": "controlCategory.value",
-      "controlName": "controlName.value",
-      "description": "description.value",
-      "score": "score.value"
+      "controlCategory": "Identity",
+      "controlName": "AdminMFA",
+      "description": "Requiring multi-factor authentication (MFA) for all Azure Active Directory accounts with privileged roles",
+      "score": 35
+    },
+    {
+      "controlCategory": "Data",
+      "controlName": "DLPEnabled",
+      "description": "Data Loss Prevention (DLP) policies can be used to comply with business standards and industry regulations.",
+      "score": 20
     }
   ],
 "vendorInformation": {

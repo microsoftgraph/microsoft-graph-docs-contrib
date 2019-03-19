@@ -41,7 +41,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 |:---------------|:--------|:----------|
 |assignedTo|String|Name of the analyst the control is assigned to for triage, implementation, or remediation.|
 |comment|String|Analyst comments on the control (for customer control management).|
-|state| String|Analyst driven setting on the control. Possible values are: `default`, `ignored`, `thirdparty`, `reviewed`.|
+|state| String|Analyst driven setting on the control. Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore;). **Provider and vendor fields are required.** |
 
 
@@ -64,16 +64,19 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/AdminMFA
+PATCH https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/NonOwnerAccess
 Content-type: application/json
 
 {
-  "assignedTo": "String",
-  "comment": "String",
-  "state": "String",
+  "assignedTo": "",
+  "comment": "control is reviewed",
+  "state": "Reviewed",
   "vendorInformation": {
-    "provider": "String",
-    "vendor": "String"
+
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
   }
 }
 ```
@@ -103,16 +106,18 @@ The following example shows a request that includes the `Prefer` request header.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/AdminMFA
+PATCH https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/NonOwnerAccess
 Content-type: application/json
 
 {
-  "assignedTo": "String",
-  "comment": "String",
-  "state": "String",
+  "assignedTo": "",
+  "comment": "control is reviewed",
+  "state": "Reviewed",
   "vendorInformation": {
-    "provider": "String",
-    "vendor": "String"
+    "provider": "SecureScore",
+    "providerVersion": null,
+    "subProvider": null,
+    "vendor": "Microsoft"
   }
 }
 ```
@@ -134,41 +139,45 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "String (identifier)",
-  "azureTenantId": "String",
-  "actionType": "String",
-  "actionUrl": "String",
-  "controlCategory": "String",
-  "title": "String", 
-  "deprecated ": "Boolean",
-  "implementationCost ": "String",
-  "lastModifiedDateTime": "String (timestamp)",
-  "maxScore": "Double",
-  "rank ": "Int32",
-  "remediation": "String",
-  "remediationImpact ": "String",
-  "service": "String",
-  "threats":  ["String"],
-  "tier": "String",
-  "userImpact": "String",
+  "id": "NonOwnerAccess",
+  "azureTenantId": "00000001-0001-0001-0001-000000000001c",
+  "actionType": "Review",
+  "actionUrl": "https://outlook.office365.com/NonOwnerAccessReport.aspx",
+  "controlCategory": "Data",
+  "title": "Review mailbox access by non-owners bi-weekly", 
+  "deprecated ": false,
+  "implementationCost ": "Low",
+  "lastModifiedDateTime": null,
+  "maxScore": 5,
+  "rank ": 25,
+  "remediation": "Once you have opened the search tool, specify a date range and select access by <b>All non-owners</b> or <b>External users</b>",
+  "remediationImpact ": "This change will have no effect on your users",
+  "service": "EXO",
+  "threats": [
+    "Account Breach",
+    "Data Exfiltration",
+    "Malicious Insider"
+  ],
+  "tier": "Core",
+  "userImpact": "Low",
   "complianceInformation": [
     {
-      "certificationName": "certificationName.value",
+      "certificationName": "FedRAMP_Moderate",
       "certificationControl": [
         {
-          "name": "name.value",
-          "url": "url.value",
+          "name": "AC-6(9)",
+          "url": "",
         }
       ]
     }         
   ],
   "controlStateUpdates": [
     {
-      "assignedTo": "assignedTo.value",
-      "comment": "comment.value",
-      "state": "state.value",
-      "updatedBy": "updatedBy.value",
-      "updatedDateTime": "updatedDateTime.value"
+      "assignedTo": "",
+      "comment": "control is reviewed",
+      "state": "Reviewed",
+      "updatedBy": "user1@contoso.com",
+      "updatedDateTime": "2019-03-19T22:37:14.628799Z"
     }
   ],
   "vendorInformation": {

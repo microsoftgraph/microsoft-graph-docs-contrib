@@ -78,55 +78,70 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
 {
     "value": [
         {
-            "activeUserCount": "activeUserCount.value",
-            "createdDateTime": "createdDateTime.value",
-            "currentScore": "currentScore.value",
+            "id": "00000001-0001-0001-0001-000000000001c_2019-03-19",
+            "azureTenantId": "00000001-0001-0001-0001-000000000001c",
+            "activeUserCount": 0,
+            "createdDateTime": "2019-03-19T15:21:00Z",
+            "currentScore": 387,
             "enabledServices": [
-                "enabledServices.value"
+                "HasExchange",
+                "HasSharePoint",
+                "HasInTune"
             ],
-            "licensedUserCount": "licensedUserCount.value",
-            "maxScore": "maxScore.value",
-            "id": "id.value",
-            "azureTenantId": "azureTenantId.value",
+            "licensedUserCount": 100,
+            "maxScore": 697,
             "averageComparativeScores": [
                 {
                     "basis": "AllTenants",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value"
+                    "averageScore": 37,
+                    "deviceScore": "1",
+                    "dataScore": "9",
+                    "identityScore": "25",
+                    "appsScore": "0"
                 },
                 {
                     "basis": "TotalSeats",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value",
-                    "seatSizeRangeUpperValue": "seatSizeRangeUpperValue.value",
-                    "categoryValue": "categoryValue.value",
-                    "seatSizeRangeLowerValue": "seatSizeRangeLowerValue.value"
-                },
+                    "averageScore": 46,
+                    "deviceScore": "2",
+                    "dataScore": "14",
+                    "identityScore": "27",
+                    "appsScore": "0",
+                    "seatSizeRangeLowerValue": "6"
+                    "seatSizeRangeUpperValue": "99"
+                }
                 {
                     "basis": "IndustryTypes",
-                    "averageScore": "averageScore.value",
-                    "deviceScore": "deviceScore.value",
-                    "dataScore": "dataScore.value",
-                    "identityScore": "identityScore.value",
-                    "categoryValue": "categoryValue.value"
+                    "averageScore": 109,
+                    "deviceScore": "19",
+                    "dataScore": "33",
+                    "identityScore": "45",
+                    "appsScore": "10",
+                    "categoryValue": "engineering,technology"
                 }
             ],
             "controlScores": [
                 {
-                    "controlCategory": "controlCategory.value",
-                    "controlName": "controlName.value",
-                    "description": "description.value",
-                    "score": "score.value"
+                    "controlCategory": "Identity",
+                    "controlName": "AdminMFA",
+                    "description": "Requiring multi-factor authentication (MFA) for all Azure Active Directory accounts with privileged roles",
+                    "score": 35
+                },
+                {
+                    "controlCategory": "Data",
+                    "controlName": "DLPEnabled",
+                    "description": "Data Loss Prevention (DLP) policies can be used to comply with business standards and industry regulations.",
+                    "score": 20
                 }
-            ]
+            ],
+            "vendorInformation": {
+                "provider": "SecureScore",
+                "providerVersion": null,
+                "subProvider": null,
+                "vendor": "Microsoft"
+            }
         }
     ]
 }
