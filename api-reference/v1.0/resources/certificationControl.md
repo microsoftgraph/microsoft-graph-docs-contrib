@@ -12,8 +12,8 @@ Contains compliance certification data associated with secure score control.
 
 |Property |Type |Description |
 |:--|:--|:--|
-|name | string | Certification control name |
-|url | string | URL for the Microsoft Service Trust Portal |
+|name|String|Certification control name |
+|url|String|URL for the Microsoft Service Trust Portal |
 
 ## JSON representation
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "name": "String",
-  "url": "Collection(microsoft.graph.certificationControl)"
+  "url": "String"
 }
 
 ```

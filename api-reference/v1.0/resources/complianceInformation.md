@@ -12,8 +12,8 @@ Contains compliance data associated with secure score control.
 
 |Property |Type |Description |
 |:--|:--|:--|
-|certificationName | string | Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
-|certificationControls | [certificationControl](certificationcontrol.md) collection | Collection of the certification controls associated with certification |
+|certificationName|String| Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171) |
+|certificationControls|[certificationControl](certificationcontrol.md) collection|Collection of the certification controls associated with certification|
 
 ## JSON representation
 
@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "certificationName": "String",
-  "certificationControls": "Collection(microsoft.graph.complianceInformation)"
+  "certificationControls": [{"@odata.type": "microsoft.graph.certificationControl"}]
 }
 
 ```
