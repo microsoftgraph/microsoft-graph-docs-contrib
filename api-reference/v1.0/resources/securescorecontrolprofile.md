@@ -1,10 +1,10 @@
 ---
-title: "secureScoreControlProfiles resource type"
+title: "secureScoreControlProfile resource type"
 description: "Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls."
 localization_priority: Normal
 ---
 
-# secureScoreControlProfiles resource type
+# secureScoreControlProfile resource type
 
 Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls.
 
