@@ -105,7 +105,7 @@ Content-type: application/json
       "complianceInformation": [
         {
           "certificationName": "ISO 27001:2013",
-          "certificationControl": [
+          "certificationControls": [
             {
               "name":  "A.8.2.1",
               "url": "",

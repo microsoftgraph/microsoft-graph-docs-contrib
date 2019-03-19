@@ -163,7 +163,7 @@ Content-type: application/json
   "complianceInformation": [
     {
       "certificationName": "FedRAMP_Moderate",
-      "certificationControl": [
+      "certificationControls": [
         {
           "name": "AC-6(9)",
           "url": "",

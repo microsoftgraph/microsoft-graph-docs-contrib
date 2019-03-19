@@ -75,13 +75,13 @@ Content-type: application/json
   "actionUrl": "https://compliance.microsoft.com/#/policies",
   "controlCategory": "Data",
   "title": "Apply Data Loss Prevention policies", 
-  "deprecated ": false,
-  "implementationCost ": "Moderate",
+  "deprecated": false,
+  "implementationCost": "Moderate",
   "lastModifiedDateTime": null,
-  "maxScore": 20,
-  "rank ": 55,
+  "maxScore": 20.0,
+  "rank": 55,
   "remediation": "You can create and manage data loss prevention policies in the Policies page of the compliance portal.",
-  "remediationImpact ": "This change will have a moderate impact on your users.",
+  "remediationImpact": "This change will have a moderate impact on your users.",
   "service": "IP",
   "threats": [
     "Data Exfiltration",
@@ -92,7 +92,7 @@ Content-type: application/json
   "complianceInformation": [
     {
       "certificationName": "ISO 27001:2013",
-      "certificationControl": [
+      "certificationControls": [
         {
           "name": "A.8.2.1",
           "url": "",

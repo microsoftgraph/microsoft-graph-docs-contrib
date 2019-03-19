@@ -84,30 +84,15 @@ Content-type: application/json
   "averageComparativeScores": [
     {
       "basis": "AllTenants",
-      "averageScore": 37,
-      "deviceScore": "1",
-      "dataScore": "9",
-      "identityScore": "25",
-      "appsScore": "0"
+      "averageScore": 37
     },
     {
       "basis": "TotalSeats",
-      "averageScore": 46,
-      "deviceScore": "2",
-      "dataScore": "14",
-      "identityScore": "27",
-      "appsScore": "0",
-      "seatSizeRangeLowerValue": "6"
-      "seatSizeRangeUpperValue": "99"
+      "averageScore": 46
     },
     {
       "basis": "IndustryTypes",
-      "averageScore": 109,
-      "deviceScore": "19",
-      "dataScore": "33",
-      "identityScore": "45",
-      "appsScore": "10",
-      "categoryValue": "engineering,technology"
+      "averageScore": 109
     }
   ],
   "controlScores": [
