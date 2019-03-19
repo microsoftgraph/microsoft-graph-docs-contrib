@@ -1,16 +1,16 @@
 ---
-title: "Add an educationCategory to an educationAssignment"
+title: "Add educationCategory"
 description: "Add an existing educationCategory to this educationAssignment"
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
 ---
 
-# Add an existing educationCategory to this educationAssignment
+# Add educationCategory
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an existing educationCategory to this educationAssignment
+Add an existing [educationCategory](../resources/educationcategory.md) object to this [educationAssignment](../resources/educationassignment.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
