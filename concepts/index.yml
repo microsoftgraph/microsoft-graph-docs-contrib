@@ -32,7 +32,7 @@ sections:
       columns: 3
       items:
       - href: /graph/overview
-        html: <p>Find out what you can do with Microsoft Graph and see popular use cases.</p>
+        html: <p>Find out what you can do with Microsoft Graph and see some popular use cases.</p>
         image:
           src: ./images/index/i_get-started.svg
         title: Overview of Microsoft Graph
