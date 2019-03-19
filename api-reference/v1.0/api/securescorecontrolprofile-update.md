@@ -1,12 +1,12 @@
 ---
-title: "Update secureScoreControlProfiles"
-description: "Update an editable secureScoreControlProfiles property within any integrated solution to change various properties, such as assignedTo or tenantNote."
+title: "Update secureScoreControlProfile"
+description: "Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote."
 localization_priority: Normal
 ---
 
-# Update secureScoreControlProfiles
+# Update secureScoreControlProfile
 
-Update an editable **secureScoreControlProfiles** property within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
+Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
 
 ## Permissions
 
@@ -35,7 +35,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the values for relevant fields that should be updated. The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields. The following table lists the fields that can be updated for a secureScoreControlProfile. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed
+In the request body, supply a JSON representation of the values for relevant fields that should be updated. The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields. The following table lists the fields that can be updated for a **secureScoreControlProfile**. The values for existing properties that are not included in the request body will not change. For best performance, don't include existing values that haven't changed.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
