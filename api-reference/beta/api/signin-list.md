@@ -1,15 +1,19 @@
 ---
-title: "List signIns"
-description: "Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.  The most recent signIns are returned first."
-localization_priority: Priority
+title: "List signIns | Microsoft Graph"
+description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API (REST), which helps audit directory (tenant) activity (beta version)."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List signIns
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.  The most recent signIns are returned first.
 
-
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |

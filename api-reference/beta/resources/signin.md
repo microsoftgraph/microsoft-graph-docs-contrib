@@ -1,10 +1,16 @@
 ---
-title: "signIn resource type"
-description: "This resource details user or application sign-in activity in your directory. "
-localization_priority: Priority
+title: "signIn resource type | Microsoft Graph"
+description: "Describes the signIn resource of Microsoft Graph API (REST), which helps audit user and application sign-in activity (beta version)."
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
+
 # signIn resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 This resource details user or application sign-in activity in your directory. 
 
 ## Methods

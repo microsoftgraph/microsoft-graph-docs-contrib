@@ -1,6 +1,6 @@
 ---
-title: "Get signIn"
-description: "Describes the get method of the signIn resource (entity) from the Microsoft Graph API (beta version)."
+title: "Get signIn | Microsoft Graph"
+description: "Describes the get method of the signIn resource (entity) from the Microsoft Graph API (v1.0 version)."
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
@@ -8,14 +8,12 @@ ms.prod: "microsoft-identity-platform"
 
 # Get signIn
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.
+Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -34,7 +32,7 @@ GET /auditLogs/signIns/{id}
 
 ## Optional query parameters
 
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
+This method supports OData Query Parameters to help customize the response. Check [OData Query Parameters](/graph/query_parameters.md) for how to use these parameters.
 
 ## Request headers
 
@@ -87,7 +85,7 @@ Content-length: 211
 		"id": "id",
 		"createdDateTime": "2018-01-09T21:17:21.5077253Z",
 		"userDisplayName": "Jamie Doe",
-		"userPrincipalName": "jdoe@contoso.com",
+		"userPrincipalName": "jdoe@wingtiptoys.com",
 		"userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302",
 		"appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
 		"appDisplayName": "Azure",
@@ -121,7 +119,7 @@ Content-length: 211
 			"mfaAuthMethod": "Phone Auth",
 			"mfaAuthDetail": null
 		},
-		"correlationId": "17c47d3c-593d-4d08-ac20-813892b87e42",
+		"correlationId": "17444d3c-563d-4b08-ac20-815892b87e42",
 		"conditionalAccessApplied": true,
 		"conditionalAccessPolicies": [{
 			"id": "26490ed6-52b3-4102-aeff-aad2292abacf",
