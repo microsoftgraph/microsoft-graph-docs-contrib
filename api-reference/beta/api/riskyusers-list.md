@@ -5,23 +5,19 @@ localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "security"
 ---
-
 # List riskyUsers
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Retrieve the properties and relationships of a **riskyUsers** object.
-
-> **Note:** This API requires an Azure AD Premium P2 license.
-
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityriskyUser.Read.All    |
+|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityriskyUser.Read.All |
+|Application | IdentityRiskyUser.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +44,7 @@ If successful, this method returns a `200 OK` response code and [identityRiskEve
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_identityriskevent"
+  "name": "list_riskyusers"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
@@ -66,6 +62,7 @@ HTTP/1.1 200 OK
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
   "isGuest": "true",
+  "isProcessing": true,
   "isDeleted": "true",
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
@@ -79,7 +76,7 @@ HTTP/1.1 200 OK
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get riskyUsers",
+  "description": "List riskyUsers",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
@@ -105,6 +102,7 @@ HTTP/1.1 200 OK
       "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
       "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
       "isGuest": false,
+      "isProcessing": true,
       "isDeleted": false,
       "riskDetail": "none",
       "riskLevel": "medium",
@@ -117,15 +115,10 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Get riskyUsers",
+  "description": "List riskyUsers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/riskyusers-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
