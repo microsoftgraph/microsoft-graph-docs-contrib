@@ -9,9 +9,9 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **Bundle** facet identifies an item as a bundle and groups bundle-specific information into a single structure.
+A bundle is a logical grouping of files used to share multiple files at once. A bundle is represented as a [driveItem][] and can be shared in the same way as any other driveItem.
 
-It is only included on [driveItem][] resources returned from the **bundles** endpoint.
+The **Bundle** facet on a [driveItem][] identifies an item as a bundle and groups bundle-specific information into a single structure. It is only included on [driveItem][] resources returned from the **bundles** endpoint.
 
 ## JSON representation
 
@@ -30,5 +30,24 @@ It is only included on [driveItem][] resources returned from the **bundles** end
 | childCount    | Int32     | Number of children contained immediately within this container.
 | album         | [album][] | If the bundle is an [album][], then the `album` property is included
 
+## Methods
+
+|                        Common task                         |         HTTP method                                 |
+| :--------------------------------------------------------- | :-------------------------------------------------- |
+| [List bundles][bundle-list]                                | `GET /drive/bundles`                                |
+| [Get bundle][bundle-get]                                   | `GET /drive/bundles/{bundle-id}`                    |
+| [Create bundle][bundle-create]                             | `POST /drive/bundles`                               |
+| [Add item to bundle][bundle-add-item]                      | `POST /drive/bundles/{bundle-id}/children`          |
+| [Remove item from bundle][bundle-remove-item]              | `DELETE /drive/bundles/{bundle-id}/items/{item-id}` |
+| [Update bundle][bundle-update]                             | `PATCH /drive/bundles/{bundle-id}`                  |
+| [Delete bundle][bundle-delete]                             | `DELETE /drive/bundles/{bundle-id}`                 |
+
 [album]: album.md
+[bundle-list]: ../api/bundle_list.md
+[bundle-get]: ../api/bundle_get.md
+[bundle-create]: ../api/bundle_create.md
+[bundle-add-item]: ../api/bundle_addItem.md
+[bundle-remove-item]: ../api/bundle_removeItem.md
+[bundle-update]: ../api/bundle_update.md
+[bundle-delete]: ../api/bundle_delete.md
 [driveItem]: driveItem.md

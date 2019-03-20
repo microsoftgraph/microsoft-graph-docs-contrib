@@ -94,7 +94,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 | items        | [driveitem](driveitem.md) collection | All items contained in the drive. Read-only. Nullable.
 | root         | [driveitem](driveitem.md)            | The root folder of the drive. Read-only.
 | special      | [driveitem](driveitem.md) collection | Collection of common folders available in OneDrive. Read-only. Nullable.
-| bundles      | [driveItem](driveitem.md) collection | Collection of bundles (albums and multi-select-shared sets of items). Only in personal OneDrive.
+| bundles      | [driveItem](driveitem.md) collection | Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
 | following    | [driveItem](driveitem.md) collection | The list of items the user is following. Only in OneDrive for Business.
 
 ## Methods
@@ -112,6 +112,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 
 In the previous table, the examples use `/drive`, but other paths are valid too.
 
+[bundle]: bundle.md
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
