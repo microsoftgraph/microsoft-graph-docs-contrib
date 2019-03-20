@@ -11,6 +11,8 @@ ms.date: 03/20/2019
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
+>**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+
 Dismiss the risk of a **riskyUsers** object. This action will set the targeted user's risk level to none.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
