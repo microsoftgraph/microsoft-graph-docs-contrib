@@ -1,11 +1,13 @@
 ---
-author: jeremyke
-ms.author: rgregg
+author: JeremyKelley
+ms.author: jeremyke
 title: Album
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 # album resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A Photo album is one way [driveItems][driveItem] with the [photo][] facet can be virtually grouped in a [bundle][].
 

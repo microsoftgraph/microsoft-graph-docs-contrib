@@ -5,7 +5,9 @@ title: Bundle
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
-# Bundle facet
+# bundle resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Bundle** facet identifies an item as a bundle and groups bundle-specific information into a single structure.
 
