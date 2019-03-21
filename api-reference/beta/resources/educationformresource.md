@@ -10,7 +10,7 @@ ms.prod: "education"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A subclass of [educationResource](educationresource.md). This resource is a Form.
+A subclass of [educationResource](educationresource.md). This resource is a form.
 
 
 ## Properties

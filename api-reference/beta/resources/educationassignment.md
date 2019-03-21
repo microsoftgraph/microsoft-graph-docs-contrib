@@ -57,7 +57,7 @@ The assignment APIs are exposed in the class namespace.
 |:---------------|:--------|:----------|
 |resources|[educationAssignmentResource](educationassignmentresource.md) collection| Learning objects that are associated with this assignment.  Only teachers can modify this list. Nullable.|
 |submissions|[educationSubmission](educationsubmission.md) collection| Once published, there is a submission object for each student representing their work and grade.  Read-only. Nullable.|
-|categories|[educationCategory](educationcategory.md) collection| Categories may be added to an assignment in order to easily find assignments of a given type.  Read-only. Nullable.|
+|categories|[educationCategory](educationcategory.md) collection| When set, enables users to easily find assignments of a given type.  Read-only. Nullable.|
 
 ## JSON representation
 

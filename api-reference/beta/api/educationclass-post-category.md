@@ -10,7 +10,7 @@ ms.prod: "education"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new category.
+Creates a new [educationCategory](../resources/educationcategory.md) on an [educationClass](../resources/educationclass.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

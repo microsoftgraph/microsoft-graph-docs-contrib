@@ -1,16 +1,16 @@
 ---
-title: "List assignments"
+title: "List educationCategories"
 description: "Retrieve a list of category objects."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 ---
 
-# List assignments
+# List educationCategories
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of category objects.
+Retrieve a list of [educationCategory](../resources/educationcategory.md) objects.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{id}/assignmentCategories
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |

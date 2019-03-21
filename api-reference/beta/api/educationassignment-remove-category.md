@@ -1,12 +1,12 @@
 ---
-title: "Remove an educationCategory from an educationAssignment"
+title: "Remove educationCategory"
 description: "Remove an existing educationCategory from this educationAssignment"
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
 ---
 
-# Remove an educationCategory from an educationAssignment
+# Remove educationCategory
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
