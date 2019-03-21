@@ -2,13 +2,15 @@
 title: "timeSlot resource type"
 description: "A time period."
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # timeSlot resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A time period.
+Represents a time slot for a meeting.
 
 ## JSON representation
 
