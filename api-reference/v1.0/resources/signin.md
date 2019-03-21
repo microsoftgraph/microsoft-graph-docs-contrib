@@ -23,7 +23,6 @@ Details user and application sign-in activity for a tenant (directory).
 |appDisplayName|String|App name displayed in the Azure Portal.|
 |appId|String|Unique GUID representing the app ID in the Azure Active Directory.|
 |appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
-|authenticationMethodsUsed|String|Indicates the list of Authentication methods used|
 |clientAppUsed|String|Identifies the legacy client used for sign-in activity.  Includes Browser, Exchange Active Sync, modern clients, IMAP, MAPI, SMTP, and POP.|
 |conditionalAccessStatus|string| Reports status of an activated conditional access policy. Possible values are: `success`, `failure`, `notApplied`, and `unknownFutureValue`.|
 |correlationId|String|The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity.|
@@ -46,11 +45,6 @@ Details user and application sign-in activity for a tenant (directory).
 |riskLevel|string| Risk level associated with the sign-in. Possible values are: `low`, `medium`, `high`.|
 |riskState|`riskState`|Reports status of the risky user, sign-in, or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |status|[signInStatus](signinstatus.md)|Sign-in status. Possible values include `Success` and `Failure`.|
-|tokenIssuerName|String|Name of the identity provider (example: `sts.microsoft.com`).|
-|tokenIssuerType|String|Identity provider type. Possible values are `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
-|userDisplayName|String|Display name of the user.|
-|userId|String|User ID.|
-|userPrincipalName|String|The user's principal name (UPN).|
 
 ## Relationships
 
