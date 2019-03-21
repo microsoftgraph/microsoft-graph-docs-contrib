@@ -60,16 +60,12 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.signIn"
+  "@odata.type": "microsoft.graph.signin"
 }-->
-
 ```json
 {
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "userDisplayName": "String",
-  "userPrincipalName": "String",
-  "userId": "String",
   "appDisplayName": "String",
   "appId": "String",
   "ipAddress": "String",
@@ -80,8 +76,6 @@ Here is a JSON representation of the resource.
   "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
   "originalRequestId": "String",
   "isInteractive": "String",
-  "tokenIssuerName": "String",
-  "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
   "riskDetail": "string",
@@ -91,7 +85,6 @@ Here is a JSON representation of the resource.
   "riskEventTypes": "string",
   "resourceDisplayName": "string",
   "resourceId": "string",
-  "authenticationMethodsUsed": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
 }
 
