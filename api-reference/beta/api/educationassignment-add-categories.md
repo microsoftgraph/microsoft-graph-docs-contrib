@@ -1,16 +1,16 @@
 ---
-title: "Add educationCategory"
+title: "Add educationCategories"
 description: "Add an existing educationCategory to this educationAssignment"
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
 ---
 
-# Add educationCategory
+# Add educationCategories
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an existing [educationCategory](../resources/educationcategory.md) object to this [educationAssignment](../resources/educationassignment.md).
+Add one or more existing [educationCategory](../resources/educationcategory.md) objects to this [educationAssignment](../resources/educationassignment.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,7 +33,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, supply the odata.id of the existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
+In the request body, supply the odata.id of the existing [educationCategory](../resources/educationcategory.md) object(s) to add to this assignment.
 
 
 ## Response
