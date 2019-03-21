@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /auditLogs/directoryAudits
+GET /auditlogs/directoryaudits
 ```
 
 ## Optional query parameters
@@ -73,10 +73,10 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_directoryaudits"
+  "name": "get_directoryaudit"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
+GET https://graph.microsoft.com/v1.0/auditlogs/directoryaudits
 ```
 
 ### Response
@@ -86,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryAudit",
+  "@odata.type": "microsoft.graph.directoryaudit",
   "isCollection": true
 } -->
 ```http
@@ -97,7 +97,7 @@ Content-length: 271
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/directoryAudits",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{
 		"id": "id",
 		"category": "UserManagement",

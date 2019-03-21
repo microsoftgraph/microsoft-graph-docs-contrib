@@ -55,7 +55,7 @@ Here is an example of the request.
   "name": "get_directoryaudit"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
+GET https://graph.microsoft.com/v1.0/auditlogs/directoryaudits/{id}
 ```
 ### Response
 
@@ -63,9 +63,8 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryAudit"
+  "@odata.type": "microsoft.graph.directoryaudit"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -74,7 +73,7 @@ Content-length: 218
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/directoryAudits",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{
 		"id": "id",
 		"category": "UserManagement",
