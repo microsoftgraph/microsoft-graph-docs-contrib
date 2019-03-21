@@ -25,7 +25,7 @@ The assignment APIs are exposed in the class namespace.
 |[List resources](../api/educationassignment-list-resources.md) |[educationAssignmentResource](educationassignmentresource.md) collection| Get an **educationAssignmentResource** object collection.|
 |[List submissions](../api/educationassignment-list-submissions.md) |[educationSubmission](educationsubmission.md) collection| Get an **educationSubmission** object collection.|
 |[List categories](../api/educationassignment-list-categories.md) |[educationCategory](educationcategory.md) collection| Get an **educationCategory** object collection.|
-|[Add category](../api/educationassignment-add-category.md) |[educationCategory](educationcategory.md) | Assign an **educationCategory** belonging to the class to this assignment.|
+|[Add categories](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Assign an **educationCategory** belonging to the class to this assignment.|
 |[Remove category](../api/educationassignment-remove-category.md) |None| Remove an **educationCategory** belonging to the class from this assignment.|
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
 |[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |

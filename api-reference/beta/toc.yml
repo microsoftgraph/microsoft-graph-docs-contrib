@@ -6543,7 +6543,7 @@
         - name: List categories
           href: api/educationassignment-list-categories.md
         - name: Add category
-          href: api/educationassignment-add-category.md
+          href: api/educationassignment-add-categories.md
         - name: Remove category
           href: api/educationassignment-remove-category.md
       - name: Category
