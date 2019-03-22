@@ -35,16 +35,6 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`userDisplayName`|`string`|Risky user display name|
 |`userPrincipalName`|`string`|Risky user principal name|
 
-## Relationships
-
-| Relationship | Type |Description|
-|:---------------|:--------|:----------|
-|id|UserObjectId| The unique identifier of the user with which a given risk event is associated with.|
-|isGuest|isGuest| A risky user could be either a Home user (B2E) or a Guest user (B2B, B2C).|
-|isDeleted|isDeleted| A user may or may not be deleted. |
-|riskState|[riskState](risk.md)| A risky user could exist in one of multiple states. |
-|riskDetail|[riskDetail](risk.md)| A risky user could be in a certain state because of multiple reasons. |
-|riskLevel|[riskLevel](risk.md)| A risky user could be considered one of multiple risk levels. |
 
 ## JSON representation
 
