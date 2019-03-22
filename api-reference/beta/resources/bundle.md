@@ -43,11 +43,11 @@ The **Bundle** facet on a [driveItem][] identifies an item as a bundle and group
 | [Delete bundle][bundle-delete]                             | `DELETE /drive/bundles/{bundle-id}`                 |
 
 [album]: album.md
-[bundle-list]: ../api/bundle_list.md
-[bundle-get]: ../api/bundle_get.md
-[bundle-create]: ../api/bundle_create.md
-[bundle-add-item]: ../api/bundle_addItem.md
-[bundle-remove-item]: ../api/bundle_removeItem.md
-[bundle-update]: ../api/bundle_update.md
-[bundle-delete]: ../api/bundle_delete.md
+[bundle-list]: ../api/bundle-list.md
+[bundle-get]: ../api/bundle-get.md
+[bundle-create]: ../api/bundle-create.md
+[bundle-add-item]: ../api/bundle-addItem.md
+[bundle-remove-item]: ../api/bundle-removeItem.md
+[bundle-update]: ../api/bundle-update.md
+[bundle-delete]: ../api/bundle-delete.md
 [driveItem]: driveItem.md
