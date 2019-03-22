@@ -31,11 +31,11 @@ Shifts is a core app and service within Microsoft Teams. The following are the r
 
 | Resource | Methods |
 |:---------------|:--------|
-|[schedule](../resources/schedule.md)| [Create or replace schedule](../api/team-put-schedule.md), [get schedule](../api/team-put-schedule-get.md), [share](../api/schedule-share.md) |
+|[schedule](../resources/schedule.md)| [Create or replace schedule](../api/team-put-schedule.md), [get schedule](../api/schedule-get.md), [share](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Create schedulingGroup](../api/schedule-post-schedulinggroups.md), [List schedulingGroups](../api/schedule-list-schedulinggroups.md), [Get schedulingGroup](../api/schedulinggroup-get.md), [Replace schedulingGroup](../api/schedulinggroup-put.md), [Delete schedulingGroup](../api/schedulinggroup-delete.md) |
 |[shift](../resources/shift.md)| [Create shift](../api/schedule-post-shifts.md), [List shift](../api/schedule-list-shifts.md), [Get shift](../api/shift-get.md), [Replace shift](../api/shift-put.md), [Delete shift](../api/shift-delete.md) |
-|[timeOff](../resources/timeoff.md)| [Create timeOff](../api/schedule-post-timeoff.md), [List timeOff](../api/schedule-list-timesoff.md), [Get timeOff](../api/timeoff-get.md), [Replace timeOff](../api/timeoff-put.md), [Delete timeOff](../api/timeoff-delete.md) |
-|[timeOffReason](../resources/timeoffreason.md)| [Create timeOffReason](../api/schedule-post-timeoffreasons.md), [List timeOffReasons](../api/schedule-list-timesoffreasons.md), [Get timeOffReason](../api/timeoffreason-get.md), [Replace timeOffReasons](../api/timeoffreason-put.md), [Delete timeOffReason](../api/timeoffreason-delete.md) |
+|[timeOff](../resources/timeoff.md)| [Create timeOff](../api/schedule-post-timesoff.md), [List timeOff](../api/schedule-list-timesoff.md), [Get timeOff](../api/timeoff-get.md), [Replace timeOff](../api/timeoff-put.md), [Delete timeOff](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Create timeOffReason](../api/schedule-post-timeoffreasons.md), [List timeOffReasons](../api/schedule-list-timeoffreasons.md), [Get timeOffReason](../api/timeoffreason-get.md), [Replace timeOffReasons](../api/timeoffreason-put.md), [Delete timeOffReason](../api/timeoffreason-delete.md) |
 
 ## Teams and groups
 
