@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more.
+Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more. For more information about Shifts and Microsoft Teams for Firstline Workers, see [Manage the Shifts app for your organization in Microsoft Teams](OfficeDocs-SkypeForBusiness/Teams/teams-for-firstline-workers/manage-the-shifts-app-for-your-organization-in-teams.md)
 
 ## Key resources in Microsoft Teams
 
