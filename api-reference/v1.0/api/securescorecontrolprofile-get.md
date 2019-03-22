@@ -1,6 +1,7 @@
 ---
 title: "Get secureScoreControlProfile"
 description: "Retrieve the properties and relationships of a secureScoreControlProfile object."
+author: "naynam"
 localization_priority: Normal
 ms.prod: "security"
 ---

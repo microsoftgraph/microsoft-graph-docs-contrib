@@ -1,6 +1,7 @@
 ---
 title: "Get secureScore"
 description: "Retrieve the properties and relationships of a secureScore object."
+author: "naynam"
 localization_priority: Normal
 ms.prod: "security"
 ---

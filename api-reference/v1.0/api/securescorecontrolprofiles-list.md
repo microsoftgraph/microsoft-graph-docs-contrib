@@ -1,6 +1,7 @@
 ---
 title: "List secureScoreControlProfiles"
 description: "Retrieve the properties and relationships of a secureScoreControlProfiles object."
+author: "naynam"
 localization_priority: Normal
 ---
 
@@ -49,7 +50,7 @@ Do not supply a request body for this method. The request body will be ignored.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a **secureScoreControlProfiles** object in the response body.
+If successful, this method returns a `200 OK` response code and collection of **secureScoreControlProfiles** objects in the response body.
 
 ## Example
 

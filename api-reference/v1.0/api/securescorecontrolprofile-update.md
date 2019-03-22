@@ -1,6 +1,7 @@
 ---
 title: "Update secureScoreControlProfile"
 description: "Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote."
+author: "naynam"
 localization_priority: Normal
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "List secureScores"
 description: "Retrieve a list of secureScore objects."
+author: "naynam"
 localization_priority: Normal
 ---
 
@@ -49,7 +50,7 @@ Do not supply a request body for this method. The request body will be ignored.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.
+If successful, this method returns a `200 OK` response code and collection of **secureScores** objects in the response body.
 
 ## Example
 
