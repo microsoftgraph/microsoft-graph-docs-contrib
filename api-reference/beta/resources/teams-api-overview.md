@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more. For more information about Shifts and Microsoft Teams for Firstline Workers, see [Manage the Shifts app for your organization in Microsoft Teams](OfficeDocs-SkypeForBusiness/Teams/teams-for-firstline-workers/manage-the-shifts-app-for-your-organization-in-teams.md)
+Microsoft Teams is a chat-based workspace in Office 365 that provides built-in access to team-specific calendars, files, OneNote notes, Planner plans, and more. 
 
 ## Key resources in Microsoft Teams
 
@@ -27,15 +27,15 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 
 ## Key resources for Shifts in Microsoft Teams
-Shifts is a core app and service within Microsoft Teams. The following are the resources which can be used to integrate with Shifts in Microsoft Teams.
+Shifts is a core app and service within Microsoft Teams. The following are the resources which can be used to integrate with Shifts in Microsoft Teams. For more information about Shifts and Microsoft Teams for Firstline Workers, see [Manage the Shifts app for your organization in Microsoft Teams](OfficeDocs-SkypeForBusiness/Teams/teams-for-firstline-workers/manage-the-shifts-app-for-your-organization-in-teams.md)
 
 | Resource | Methods |
 |:---------------|:--------|
-|[schedule](../resources/schedule.md)| [Create or replace schedule](../api/team-put-schedule.md), [get schedule](../api/schedule-get.md), [share](../api/schedule-share.md) |
-|[schedulingGroup](../resources/schedulinggroup.md)| [Create schedulingGroup](../api/schedule-post-schedulinggroups.md), [List schedulingGroups](../api/schedule-list-schedulinggroups.md), [Get schedulingGroup](../api/schedulinggroup-get.md), [Replace schedulingGroup](../api/schedulinggroup-put.md), [Delete schedulingGroup](../api/schedulinggroup-delete.md) |
-|[shift](../resources/shift.md)| [Create shift](../api/schedule-post-shifts.md), [List shift](../api/schedule-list-shifts.md), [Get shift](../api/shift-get.md), [Replace shift](../api/shift-put.md), [Delete shift](../api/shift-delete.md) |
-|[timeOff](../resources/timeoff.md)| [Create timeOff](../api/schedule-post-timesoff.md), [List timeOff](../api/schedule-list-timesoff.md), [Get timeOff](../api/timeoff-get.md), [Replace timeOff](../api/timeoff-put.md), [Delete timeOff](../api/timeoff-delete.md) |
-|[timeOffReason](../resources/timeoffreason.md)| [Create timeOffReason](../api/schedule-post-timeoffreasons.md), [List timeOffReasons](../api/schedule-list-timeoffreasons.md), [Get timeOffReason](../api/timeoffreason-get.md), [Replace timeOffReasons](../api/timeoffreason-put.md), [Delete timeOffReason](../api/timeoffreason-delete.md) |
+|[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
+|[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List all schedulingGroups](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
+|[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List all shifts](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
+|[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List all timesOff](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List all timeOffReasons](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
 
 ## Teams and groups
 
