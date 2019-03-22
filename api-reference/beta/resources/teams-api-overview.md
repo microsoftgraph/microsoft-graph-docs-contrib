@@ -26,16 +26,16 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 | [call](/graph/api/resources/call?view=graph-rest-beta) (Preview) | [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
 
 
-## Key resources for Shifts in Microsoft Teams
-Shifts is a core app and service within Microsoft Teams.  You can use the following resources to integrate with Shifts in Microsoft Teams. For more information about Shifts and Microsoft Teams for Firstline Workers, see [Manage the Shifts app for your organization in Microsoft Teams](OfficeDocs-SkypeForBusiness/Teams/teams-for-firstline-workers/manage-the-shifts-app-for-your-organization-in-teams.md)
+## Key resources for Shifts in Microsoft Teams (preview)
+Shifts is a core app and service within Microsoft Teams. You can use the following resources to integrate with Shifts in Microsoft Teams. For more information about Shifts for firstline Workers, see [Manage the Shifts app for your organization in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-for-firstline-workers/manage-the-shifts-app-for-your-organization-in-teams).
 
 | Resource | Methods |
 |:---------------|:--------|
 |[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
-|[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List all schedulingGroups](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
-|[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List all shifts](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
-|[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List all timesOff](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
-|[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List all timeOffReasons](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
+|[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
+|[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
+|[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
 
 ## Teams and groups
 
