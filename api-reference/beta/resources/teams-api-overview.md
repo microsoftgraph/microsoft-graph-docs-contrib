@@ -25,6 +25,18 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 | [chatMessage](../resources/chatmessage.md) (Preview)| [List](../api/channel-list-messages.md), [send](../api/channel-post-chatmessage.md), [read](/graph/api/channel-get-message?view=graph-rest-beta) |
 | [call](/graph/api/resources/call?view=graph-rest-beta) (Preview) | [Answer](/graph/api/call-answer?view=graph-rest-beta), [reject](/graph/api/call-reject?view=graph-rest-beta), [redirect](/graph/api/call-redirect?view=graph-rest-beta), [mute](/graph/api/call-mute?view=graph-rest-beta), [unmute](/graph/api/call-unmute?view=graph-rest-beta), [update metadata](/graph/api/call-updatemetadata?view=graph-rest-beta), [change screen sharing role](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [list participants](/graph/api/call-list-participants?view=graph-rest-beta), [invite participants](/graph/api/participant-invite?view=graph-rest-beta), [mute all participants](/graph/api/participant-muteall?view=graph-rest-beta) |
 
+
+## Key resources for Shifts in Microsoft Teams
+Shifts is a core app and service within Microsoft Teams. The following are the resources which can be used to integrate with Shifts in Microsoft Teams.
+
+| Resource | Methods |
+|:---------------|:--------|
+|[schedule](../resources/schedule.md)| [Create or replace schedule](../api/team-put-schedule.md), [get schedule](../api/team-put-schedule-get.md), [share](../api/schedule-share.md) |
+|[schedulingGroup](../resources/schedulinggroup.md)| [Create schedulingGroup](../api/schedule-post-schedulinggroups.md), [List schedulingGroups](../api/schedule-list-schedulinggroups.md), [Get schedulingGroup](../api/schedulinggroup-get.md), [Replace schedulingGroup](../api/schedulinggroup-put.md), [Delete schedulingGroup](../api/schedulinggroup-delete.md) |
+|[shift](../resources/shift.md)| [Create shift](../api/schedule-post-shifts.md), [List shift](../api/schedule-list-shifts.md), [Get shift](../api/shift-get.md), [Replace shift](../api/shift-put.md), [Delete shift](../api/shift-delete.md) |
+|[timeOff](../resources/timeoff.md)| [Create timeOff](../api/schedule-post-timeoff.md), [List timeOff](../api/schedule-list-timesoff.md), [Get timeOff](../api/timeoff-get.md), [Replace timeOff](../api/timeoff-put.md), [Delete timeOff](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Create timeOffReason](../api/schedule-post-timeoffreasons.md), [List timeOffReasons](../api/schedule-list-timesoffreasons.md), [Get timeOffReason](../api/timeoffreason-get.md), [Replace timeOffReasons](../api/timeoffreason-put.md), [Delete timeOffReason](../api/timeoffreason-delete.md) |
+
 ## Teams and groups
 
 In Microsoft Graph, Microsoft Teams is represented by a [group](../resources/group.md) resource. Both Microsoft Teams and Office 365 groups address the various needs of group collaboration. Almost all the group-based features apply to Microsoft Teams and Office 365 groups, such as group calendar, files, notes, photo, plans, and so on. The main difference between a [team](team.md) and an Office 365 group is the mode of communication between members. Team members communicate by persistent chat in the context of a specific team. Office 365 group members communicate by group conversations, which are email conversations that occur in the context of a group in Outlook.
