@@ -1,18 +1,19 @@
 ---
 title: Confirm riskyUsers compromised
-description: Confirm the risk of a riskyUsers object.
+description: Confirm a riskyUsers object as compromised.
 author: cloudhandler
 localization_priority: Normal 
-ms.prod: Identity protection
+ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 ---
-# Confirm riskyUsers Compromised
+# Confirm riskyUsers compromised
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** The riskyUsers API requires an Azure AD Premium P2 license.
 
-Confirm a **riskyUsers** object as compromised. This will set the targeted user's risk level to high.
+Confirm a [riskyUsers](../riskyusers.md) object as compromised. This will set the targeted user's risk level to high.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -40,7 +41,7 @@ Specify the userIds to dismiss in the request body.
 
 ## Response
 
-If successful, this method returns a `204 NoContent` response code
+If successful, this method returns a `204 No Content` response code
 ## Example
 ##### Request
 Here is an example of the request.
@@ -78,5 +79,7 @@ HTTP/1.1 204 NoContent
   "description": "Confirm compromised riskyUsers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
 }-->
