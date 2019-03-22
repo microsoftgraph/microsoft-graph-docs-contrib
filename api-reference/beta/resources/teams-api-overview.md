@@ -27,7 +27,7 @@ Microsoft Teams is a chat-based workspace in Office 365 that provides built-in a
 
 
 ## Key resources for Shifts in Microsoft Teams
-Shifts is a core app and service within Microsoft Teams. The following are the resources which can be used to integrate with Shifts in Microsoft Teams. For more information about Shifts and Microsoft Teams for Firstline Workers, see [Manage the Shifts app for your organization in Microsoft Teams](OfficeDocs-SkypeForBusiness/Teams/teams-for-firstline-workers/manage-the-shifts-app-for-your-organization-in-teams.md)
+Shifts is a core app and service within Microsoft Teams.  You can use the following resources to integrate with Shifts in Microsoft Teams. For more information about Shifts and Microsoft Teams for Firstline Workers, see [Manage the Shifts app for your organization in Microsoft Teams](OfficeDocs-SkypeForBusiness/Teams/teams-for-firstline-workers/manage-the-shifts-app-for-your-organization-in-teams.md)
 
 | Resource | Methods |
 |:---------------|:--------|
