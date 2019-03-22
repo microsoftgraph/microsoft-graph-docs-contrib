@@ -73,7 +73,7 @@ For brevity, the sample responses show only a subset of the properties for an ev
 
 See also what you'll do in the [next round](placeholder for link the the section below).
 
-##### Step 1: sample initial request
+### Step 1: sample initial request
 In this example, the channel messages are being synchronized for the first time, so the initial sync request does not include any state token. This round will return all the events in that calendar view.
 
 The request specifies the optional request header, odata.top, returning 2 events at a time.
@@ -87,7 +87,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 Prefer: odata.top=2
 ```
 
-##### Sample initial response
+### Sample initial response
 The response includes two messages and a `@odata.nextLink` response header with a `skipToken`. The `nextLink` URL indicates there are more messages in the channel to get.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -156,7 +156,7 @@ Content-type: application/json
 }
 ```
 
-##### Step 2: sample second request
+### Step 2: sample second request
 The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.
 
 <!-- {
@@ -168,7 +168,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUz
 Prefer: odata.top=2
 ```
 
-##### Sample second response
+### Sample second response
 The second response returns the next 2 messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages in the channel to get.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -237,7 +237,7 @@ Content-type: application/json
 }
 ```
 
-##### Step 3: sample third request
+### Step 3: sample third request
 The third request continues to use the latest `nextLink` returned from the last sync request.
 
 <!-- {
@@ -249,7 +249,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcy
 Prefer: odata.top=2
 ```
 
-##### Sample third and final response
+### Sample third and final response
 The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read. Save and use the `deltaLink` URL to query for any new messages starting from this point in the next round.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -295,7 +295,7 @@ Content-type: application/json
 }
 ```
 
-##### The next round: sample request
+### The next round: sample request
 Using the `deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then. Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
 <!-- {
@@ -307,7 +307,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc
 Prefer: odata.top=2
 ```
 
-##### The next round: sample response
+### The next round: sample response
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
