@@ -73,6 +73,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
@@ -145,6 +146,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
+| subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
 | versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
 | workbook           | [workbook][]                | For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
@@ -228,6 +230,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [shared]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[subscription]: subscription.md
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
 [workbook]: workbook.md
