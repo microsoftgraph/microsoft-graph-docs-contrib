@@ -65,9 +65,9 @@ The following parameters are supported by this API:
 ## Example
 The following example shows a series of 3 requests to synchronize the messages in the given channel. There are 5 messages in the channel.
 
-- Step 1: [sample initial request and response](placeholder for link the the section below).
-- Step 2: [sample second request and response](placeholder for link the the section below)
-- Step 3: [sample third request and final response](placeholder for link the the section below).
+- Step 1: [sample initial request](#step-1-sample-initial-request) and [response](#sample-initial-response).
+- Step 2: [sample second request](#step-2-sample-second-request) and [response](#sample-second-response)
+- Step 3: [sample third request](#step-3-sample-third-request) and [final response](#sample-third-and-final-response).
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
