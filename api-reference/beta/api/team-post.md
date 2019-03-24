@@ -57,7 +57,7 @@ The following is an example of a minimal request. By omitting other properties, 
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description"
 }
@@ -84,7 +84,7 @@ The following is an example of a minimal request using application permissions. 
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
   "owners@odata.bind": [
@@ -114,7 +114,7 @@ The following is a request with a full payload. The client can override values i
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
+    "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
     "visibility": "Private",
     "displayName": "Sample Engineering Team",
     "description": "This is a sample engineering team, used to showcase the range of properties supported by this API",
@@ -216,7 +216,7 @@ To learn more about supported base template types, see [Get started with Teams t
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description"
 }
@@ -245,7 +245,7 @@ To learn more about supported base template types and supported properties, see 
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description",
   "channels": [
