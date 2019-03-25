@@ -1,5 +1,5 @@
 ---
-title: "directoryAudit resource type - Microsoft Graph"
+title: "directoryAudit resource type | Microsoft Graph"
 description: "Describes the directoryAudit resource (entity) of Microsoft Graph API (REST), which helps audit directory (tenant) activities (beta version)."
 author: "lleonard-msft"
 localization_priority: Normal
