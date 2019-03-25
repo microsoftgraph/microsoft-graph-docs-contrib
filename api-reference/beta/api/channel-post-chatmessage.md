@@ -41,7 +41,9 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 
 If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
 
-## Example -- Hello World
+## Examples 
+
+### Example 1: Hello World
 
 ##### Request
 Here is an example of the request.
@@ -108,7 +110,7 @@ Content-length: 160
 }
 ```
 
-## Example -- @mentions
+### Example 2: @mentions
 
 ##### Request
 Here is an example of the request.
