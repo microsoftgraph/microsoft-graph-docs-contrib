@@ -103,6 +103,8 @@
           href: api/user-reminderview.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
+        - name: Find meeting times
+          href: api/user-findmeetingtimes.md
         - name: Find room lists
           href: api/user-findroomlists.md
         - name: Find rooms
@@ -588,10 +590,10 @@
           href: api/calendar-list-events.md
         - name: Create Event
           href: api/calendar-post-events.md
-        - name: Find meeting times
-          href: api/user-findmeetingtimes.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
+        - name: Find meeting times
+          href: api/user-findmeetingtimes.md
         - name: Find room lists
           href: api/user-findroomlists.md
         - name: Find rooms
