@@ -1,14 +1,14 @@
 ---
 title: "List windowsAutopilotDeviceIdentities"
 description: "List properties and relationships of the windowsAutopilotDeviceIdentity objects."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # List windowsAutopilotDeviceIdentities
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 897
+Content-Length: 1163
 
 {
   "value": [
@@ -77,7 +77,12 @@ Content-Length: 897
       "enrollmentState": "enrolled",
       "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
       "addressableUserName": "Addressable User Name value",
-      "userPrincipalName": "User Principal Name value"
+      "userPrincipalName": "User Principal Name value",
+      "resourceName": "Resource Name value",
+      "skuNumber": "Sku Number value",
+      "systemFamily": "System Family value",
+      "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+      "managedDeviceId": "Managed Device Id value"
     }
   ]
 }

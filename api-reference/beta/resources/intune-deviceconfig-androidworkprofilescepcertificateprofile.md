@@ -1,18 +1,18 @@
 ---
 title: "androidWorkProfileScepCertificateProfile resource type"
-description: "Androif Work Profile SCEP certificate profile"
-localization_priority: Normal
+description: "Android Work Profile SCEP certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # androidWorkProfileScepCertificateProfile resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Androif Work Profile SCEP certificate profile
+Android Work Profile SCEP certificate profile
 
 
 Inherits from [androidWorkProfileCertificateProfileBase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md)

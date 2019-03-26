@@ -1,14 +1,14 @@
 ---
 title: "androidManagedStoreApp resource type"
 description: "Contains properties and inherited properties for Android Managed Store Apps."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # androidManagedStoreApp resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -51,6 +51,7 @@ Inherits from [mobileApp](../resources/intune-apps-mobileapp.md)
 |usedLicenseCount|Int32|The number of VPP licenses in use.|
 |totalLicenseCount|Int32|The total number of VPP licenses.|
 |appStoreUrl|String|The Play for Work Store app URL.|
+|supportsOemConfig|Boolean|Whether this app supports OEMConfig policy.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -99,7 +100,8 @@ Here is a JSON representation of the resource.
   "appIdentifier": "String",
   "usedLicenseCount": 1024,
   "totalLicenseCount": 1024,
-  "appStoreUrl": "String"
+  "appStoreUrl": "String",
+  "supportsOemConfig": true
 }
 ```
 

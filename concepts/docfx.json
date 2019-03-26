@@ -20,7 +20,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.svg"
         ],
         "exclude": [
           "**/obj/**",
@@ -40,7 +41,6 @@
       "extendBreadcrumb": true,
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
-      "ms.date": "11/27/2018",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",
