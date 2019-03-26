@@ -96,7 +96,7 @@ A few things to note about this type of notification:
 ### Action to take
 
 1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
-2. [Validate]((webhooks.md#notifications)) the authenticity of the notification.
+2. [Validate](webhooks.md#notifications) the authenticity of the notification.
 3. Ensure the app has a valid authentication token to take the next step. 
 > **Note:** If you are using one of the [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) they will handle this for you by either reusing a valid cached token, or obtaining a new token. Note that obtaining a new token may fail, since the conditions of access may have changed, and the caller may no longer be allowed access to the resource data.
 
@@ -150,7 +150,7 @@ A few things to note about this type of notification:
 
 1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
   - If you ignore these, signals, do nothing else. Otherwise:
-2. [Validate]((webhooks.md#notifications)) the authenticity of the notification.
+2. [Validate](webhooks.md#notifications) the authenticity of the notification.
 3. Perform data resync, from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
 
 
