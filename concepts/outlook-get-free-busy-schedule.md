@@ -14,7 +14,7 @@ The [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) action le
 
 ## Example
 
-A simple example is to find the free/busy schedule of a coworker, Alex, on a specific day, from 9am to 6pm, Pacitfic Standard Time:
+A simple example is to find the free/busy schedule of a coworker, Alex, on a specific day, from 9am to 6pm, Pacific Standard Time:
 
 <!-- {
   "blockType": "ignored",
