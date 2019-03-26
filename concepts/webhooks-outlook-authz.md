@@ -17,7 +17,7 @@ There are certain events in the Outlook service that cause the notifications to 
 
 When these events occur, Microsoft Graph will send a special lifecycle notification - an authorization challenge - to the app. The app needs to respond to that notification by re-authorizing its subscription.
 
-An app needs to implement logic additional to the standard [notification pattern](webhooks):
+An app needs to implement logic additional to the standard [notification pattern](webhooks.md):
 - Register a separate lifecycle notification url to receive authorization challenges
 - Identify these challenges, and respond to them by calling a specific API in Microsoft Graph; 
 
@@ -44,7 +44,7 @@ Content-Type: application/json
  
 > **Important:** Both notifications URLs must share the same hostname. 
 
-> **Note:** Both notification endpoints will need to be validated by the client app, as described in [the generic notification article](webhooks#managing-subscriptions).
+> **Note:** Both notification endpoints will need to be validated by the client app, as described in [the generic notification article](webhooks.md#managing-subscriptions).
 You may choose to use the same URL for both endpoints, in which case you will receive two validation requests, to which you will need to respond.
 
 ## Migrating existing subscriptions
@@ -95,8 +95,8 @@ A few things to note about this type of notification:
 
 ### Action to take
 
-1. [Acknowledge](webhooks#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
-2. [Validate]((webhooks#notifications)) the authenticity of the notification.
+1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
+2. [Validate]((webhooks.md#notifications)) the authenticity of the notification.
 3. Ensure the app has a valid authentication token to take the next step. 
 > **Note:** If you are using one of the [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) they will handle this for you by either reusing a valid cached token, or obtaining a new token. Note that obtaining a new token may fail, since the conditions of access may have changed, and the caller may no longer be allowed access to the resource data.
 
@@ -148,9 +148,9 @@ A few things to note about this type of notification:
 
 ### Action to take
 
-1. [Acknowledge](webhooks#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
+1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
   - If you ignore these, signals, do nothing else. Otherwise:
-2. [Validate]((webhooks#notifications)) the authenticity of the notification.
+2. [Validate]((webhooks.md#notifications)) the authenticity of the notification.
 3. Perform data resync, from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
 
 
