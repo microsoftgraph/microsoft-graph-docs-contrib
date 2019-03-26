@@ -1,6 +1,6 @@
 ---
 title: "Maintaining continous notification delivery for Outlook resources by responding to authorization challenges"
-description: "@@@TBD@@@"
+description: "Outlook may suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `reauthorizationRequired` and `dataResyncRequired` - need to be handled to ensure uninterrupted delivery of notifications."
 author: "piotrci"
 localization_priority: Priority
 ---
