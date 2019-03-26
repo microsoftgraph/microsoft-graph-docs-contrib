@@ -16,7 +16,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Webhooks (change notifications)
 
 | **Change type** | **Version**   | **Description**                          |
-| Change | beta | Outlook may suspend delivery of [change notifications](graph/api/resources/webhooks?view=graph-rest-beta) (aka webhooks) for its resources (e.g. mail, calendar, contacts) due to security events such as user's password reset. This applies to apps using delegated authentication mode. Graph subscriptions to those resources can now be configured with a new notification endpoint - `lifecycleNotificationUrl`. Apps should update their subscriptions with this enpdoint and update their code to handle the two new lifecycle events - `reauthorizationRequired` and `dataResyncRequired` - to ensure uninterrupted delivery of notifications. [Read more about these new events](/graph/concepts/webhooks-outlook-authz) and how they apply to Outlook change notifications. |
+| :-------------- | :------------ | :--------------------------------------- |
+| Change | beta | Outlook may suspend delivery of [change notifications](webhooks) (aka webhooks) for its resources (e.g. mail, calendar, contacts) due to security events such as user's password reset. This applies to apps using delegated authentication mode. Graph subscriptions to those resources can now be configured with a new notification endpoint - `lifecycleNotificationUrl`. Apps should update their subscriptions with this enpdoint and update their code to handle the two new lifecycle events - `reauthorizationRequired` and `dataResyncRequired` - to ensure uninterrupted delivery of notifications. [Read more about these new events](webhooks-outlook-authz) and how they apply to Outlook change notifications. |
 
 ### Directory APIs
 
