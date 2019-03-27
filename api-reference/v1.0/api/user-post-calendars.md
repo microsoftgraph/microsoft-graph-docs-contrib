@@ -1,6 +1,9 @@
 ---
 title: "Create Calendar"
 description: "Use this API to create a new calendar for a user."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create Calendar
@@ -18,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/calendars
 POST /users/{id | userPrincipalName}/calendars
 ```
 ## Request headers

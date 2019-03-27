@@ -1,6 +1,9 @@
 ---
 title: "Create CalendarGroup"
 description: "Use this API to create a new CalendarGroup."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create CalendarGroup
@@ -18,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/calendarGroups
 POST /users/{id | userPrincipalName}/calendarGroups
 ```
 ## Request headers

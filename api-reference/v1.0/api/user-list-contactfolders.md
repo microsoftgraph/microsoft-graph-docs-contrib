@@ -1,6 +1,9 @@
 ---
 title: "List contactFolders"
 description: "Get the contact folder collection in the default Contacts folder of the signed-in user."
+author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List contactFolders
@@ -18,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders
 GET /users/{id | userPrincipalName}/contactFolders
 ```
 ## Optional query parameters

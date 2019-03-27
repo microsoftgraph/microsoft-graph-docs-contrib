@@ -1,6 +1,9 @@
 ---
 title: "List mailFolders"
 description: "Get the mail folder collection under the root folder of the signed-in user. "
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List mailFolders
@@ -18,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
 ## Optional query parameters

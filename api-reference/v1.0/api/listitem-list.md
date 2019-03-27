@@ -1,8 +1,10 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Retrieve items from a SharePoint list
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Enumerate items in a list
 

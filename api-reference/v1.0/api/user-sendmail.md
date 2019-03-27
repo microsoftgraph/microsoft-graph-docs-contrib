@@ -1,6 +1,9 @@
 ---
 title: "Send mail"
 description: "Send the message specified in the request body. The message is saved in the Sent Items folder by default."
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Send mail
@@ -22,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## Request headers

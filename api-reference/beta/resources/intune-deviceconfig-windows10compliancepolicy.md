@@ -1,15 +1,19 @@
 ---
 title: "windows10CompliancePolicy resource type"
 description: "This class contains compliance settings for Windows 10."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windows10CompliancePolicy resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This class contains compliance settings for Windows 10.
+
 
 Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)
 
@@ -62,6 +66,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune-deviceconfig-deviceco
 |deviceThreatProtectionEnabled|Boolean|Require that devices have enabled device threat protection.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |configurationManagerComplianceRequired|Boolean|Require to consider SCCM Compliance state into consideration for Intune Compliance State.|
+|tpmRequired|Boolean|Require Trusted Platform Module(TPM) to be present.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -130,10 +135,10 @@ Here is a JSON representation of the resource.
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
-  "configurationManagerComplianceRequired": true
+  "configurationManagerComplianceRequired": true,
+  "tpmRequired": true
 }
 ```
-
 
 
 

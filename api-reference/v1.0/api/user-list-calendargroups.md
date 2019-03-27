@@ -1,6 +1,9 @@
 ---
 title: "List calendarGroups"
 description: "Get the user's calendar groups."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List calendarGroups
@@ -18,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/calendarGroups
 GET /users/{id | userPrincipalName}/calendarGroups
 ```
 ## Optional query parameters

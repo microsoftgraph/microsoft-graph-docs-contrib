@@ -1,15 +1,19 @@
 ---
 title: "windowsAutopilotDeviceIdentity resource type"
 description: "The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device."
+author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # windowsAutopilotDeviceIdentity resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -20,6 +24,8 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |[Update windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Update the properties of a [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.|
 |[assignUserToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|None|Assigns user to Autopilot devices.|
 |[unassignUserFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|None|Unassigns the user from an Autopilot device.|
+|[assignResourceAccountToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|None|Assigns resource account to Autopilot devices.|
+|[unassignResourceAccountFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|None|Unassigns the resource account from an Autopilot device.|
 
 ## Properties
 |Property|Type|Description|
@@ -38,6 +44,11 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |lastContactedDateTime|DateTimeOffset|Intune Last Contacted Date Time of the Windows autopilot device.|
 |addressableUserName|String|Addressable user name.|
 |userPrincipalName|String|User Principal Name.|
+|resourceName|String|Resource Name.|
+|skuNumber|String|SKU Number|
+|systemFamily|String|System Family|
+|azureActiveDirectoryDeviceId|String|AAD Device ID|
+|managedDeviceId|String|Managed Device ID|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -69,10 +80,14 @@ Here is a JSON representation of the resource.
   "enrollmentState": "String",
   "lastContactedDateTime": "String (timestamp)",
   "addressableUserName": "String",
-  "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "resourceName": "String",
+  "skuNumber": "String",
+  "systemFamily": "String",
+  "azureActiveDirectoryDeviceId": "String",
+  "managedDeviceId": "String"
 }
 ```
-
 
 
 

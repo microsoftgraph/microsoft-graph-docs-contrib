@@ -1,6 +1,9 @@
 ---
 title: "Create ContactFolder"
 description: "Create a new contactFolder under the user's default contacts folder."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create ContactFolder
@@ -20,6 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/contactFolders
 POST /users/{id | userPrincipalName}/contactFolders
 ```
 ## Request headers

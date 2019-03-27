@@ -1,6 +1,9 @@
 ---
 title: "Create MailFolder"
 description: "Use this API to create a new mail folder in the root folder of the user's mailbox."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create MailFolder
@@ -18,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/mailFolders
 POST /users/{id | userPrincipalName}/mailFolders
 ```
 ## Request headers

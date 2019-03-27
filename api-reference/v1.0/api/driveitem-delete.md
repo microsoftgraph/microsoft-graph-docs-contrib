@@ -1,8 +1,10 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Delete a file or folder
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Delete a DriveItem
 

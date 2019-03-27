@@ -1,8 +1,10 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Download a file
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Download the contents of a DriveItem
 
