@@ -27,6 +27,8 @@ The Outlook service may also send special lifecycle notifications if some notifi
 
 When creating a subscription, a separate notification endpoint needs to be specified, using the `lifecycleNotificationUrl` property; this is where the authorization challenges will be delivered. If the property is not set, the challenges will not be sent, and the subscription's notifications might stop flowing without notice.
 
+> **Note:** At the moment, the `lifecycleNotificationUrl` property can only be set or read using the `beta` version of Graph APIs. However, subscriptions created using `beta` are stored in the same production environment as `v1.0` so you can implement the new Outlook flow described here in addition to your regular usage of `v1.0` with other subscriptions.
+
 #### Subscription request example
 
 ```http
@@ -106,6 +108,8 @@ A few things to note about this type of notification:
 POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
 Content-type: application/json
 ```
+
+> **Note:** At the moment, the `reauthorize` API is only available through the `beta` version.
 
   2. To re-authorize and renew the subscription at the same time, perform a regular renew action:
 ```http
