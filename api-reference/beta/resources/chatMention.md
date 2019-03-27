@@ -13,7 +13,7 @@ Represents a mention in a [chatMessage](chatmessage.md) entity. The mention can 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|string|Id of the entity being mentioned|
+|id|Int32|Id of the entity being mentioned|
 |mentionText|string|String used to represent the mention Ex: User display name, Team name etc|
 |mentioned|[identitySet](identityset.md)|The user that was mentioned|
 
@@ -29,9 +29,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
+  "id": "Int32",
   "mentionText": "string",
-  "mentioned": "microsoft.graph.identitySet"
+  "mentioned": {"@odata.type":"microsoft.graph.identitySet"}
  }
 
 ```
