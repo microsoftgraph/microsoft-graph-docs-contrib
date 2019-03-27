@@ -21,6 +21,19 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta and v1.0 | Add the **complianceExpirationDateTime**, **profileType** and **systemLabels** properties on the [device](/graph/api/resources/device?view=graph-rest-1.0) resource.|
 | Addition | beta and v1.0 | Add the **isResourceAccount** property on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.|
 
+### Dynamics 365 Business Central API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
+
+### Education APIs
+
+| Addition | beta | Add the new [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) resource.|
+| Addition | beta | Add APIs to manage [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) resources on [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
+| Addition | beta | Add the new [educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta) resource.|
+| Addition | beta | Add the **recipients** property on the [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta) resource.|
+
 ### Microsoft Intune APIs
 |Change type|Version|Description|
 |:---|:---|:---|
@@ -57,6 +70,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Removal |beta| Removed the **deleted** property from [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). Use **deletedDateTime** instead. |
 | Addition | beta | Added the [schedule](/api-reference/beta/resources/schedule.md), [schedulingGroup](/api-reference/beta/resources/schedulinggroup.md), [shift](/api-reference/beta/resources/shift.md), [timeOffReason](/api-reference/beta/resources/timeoffreason.md) and [timeOff](/api-reference/beta/resources/timeoff.md) resources and associated methods. |
 
 ### OneDrive and SharePoint APIs
@@ -64,10 +78,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0        | Added the **subscriptions** navigation property to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) entity |
+| Addition        | Beta        | Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type. |
+| Addition        | Beta        | Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type. |
 
 ### Outlook calendar
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Addition | v1.0 | Added the [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) action, and the [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-1.0), and [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-1.0) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md). |
 |Change | Beta | Rolled back the type changes related to [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta) documented in [February 2019](#february-2019). The specific changes are listed in the following rows.|
 |Change | Beta | Changed the data type of the following parameters of [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta): <br>**attendees**: from **attendeeDataModel** back to [attendeeBase](/graph/api/resources/attendeebase?view=graph-rest-beta) <br>**locationConstraint**: from **locationConstraints** back to [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> **timeConstraint**: from **findMeetingTimesTimeConstraints** back to [timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta)|
 |Change | Beta | Changed the return type of **findMeetingTimes** from **findMeetingTimesResponse** back to [meetingTimeSuggestionsResult](/graph/api/resources/meetingTimeSuggestionsResult?view=graph-rest-beta) |
@@ -76,6 +93,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Deletion | Beta | Complex types: <br> **attendeeAvailabilityDataModel** <br> **attendeeDataModel** <br> **findMeetingTimesResponse** <br> **findMeetingTimesTimeConstraints** <br> **locationConstraints** <br> **meetingTimeSlotDataModel** <br> **searchWindowTimeSlot**|
 |Deletion | Beta | Enumerations: <br> **addressType** <br> **availabilityStatus** |
 |Addition | Beta | Restored the following complex types: <br> [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) <br> [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) <br>[timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta) |
+
 
 ## February 2019
 
