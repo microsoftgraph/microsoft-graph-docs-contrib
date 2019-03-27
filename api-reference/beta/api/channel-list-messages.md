@@ -97,8 +97,7 @@ Content-length: 201
         ],
         "mentions": [
             {
-                "type": "user",
-                "id": "id-value ",
+                "id": "Int32",
                 "mentionText": "Test User"
             }
         ],
