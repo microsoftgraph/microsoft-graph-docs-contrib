@@ -74,8 +74,6 @@ An app can create a long lived subscription (e.g. 3 days), and resource data not
 
 ### Authorization challenge notification example
 
-@@@confirm the actual shape of the notification@@@
-
 ```json
 {
   "value": [
@@ -131,7 +129,6 @@ These signals inform the app that some notifications may have not been delivered
 
 ### Notification example
 
-@@@confirm the actual shape of the notification@@@
 ```json
 {
   "value": [
