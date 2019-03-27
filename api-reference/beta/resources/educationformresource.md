@@ -37,10 +37,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "originalFormId": "String"
-  "formId": "String"
-  "isGroupForm": "Boolean"
-  "viewUrl": "String"
+  "originalFormId": "String",
+  "formId": "String",
+  "isGroupForm": "Boolean",
+  "viewUrl": "String",
   "editUrl": "String"
 }
 
