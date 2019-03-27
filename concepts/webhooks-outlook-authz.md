@@ -82,8 +82,8 @@ An app can create a long lived subscription (e.g. 3 days), and resource data not
     {
       "subscriptionId":"<subscription_guid>",
       "subscriptionExpirationDateTime":"2019-03-20T11:00:00.0000000Z",
+      "tenantId": "<tenant_guid>",
       "clientState":"<secretClientState>",
-      "resource": "/users/{id}/messages",
       "lifecycleEvent": "reauthorizationRequired"
     }
   ]
@@ -138,8 +138,8 @@ These signals inform the app that some notifications may have not been delivered
     {
       "subscriptionId":"<subscription_guid>",
       "subscriptionExpirationDateTime":"2019-03-20T11:00:00.0000000Z",
+      "tenantId": "<tenant_guid>",
       "clientState":"<secretClientState>",
-      "resource": "/users/{id}/messages",
       "lifecycleEvent": "dataResyncRequired"
     }
   ]
