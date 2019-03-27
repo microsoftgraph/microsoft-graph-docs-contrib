@@ -101,6 +101,8 @@
           href: api/user-list-calendarview.md
         - name: Reminder view
           href: api/user-reminderview.md
+        - name: Get free/busy schedule
+          href: api/calendar-getschedule.md
         - name: Find meeting times
           href: api/user-findmeetingtimes.md
       - name: Contacts
@@ -537,6 +539,8 @@
           href: api/calendar-post-events.md
         - name: Reminder view
           href: api/user-reminderview.md
+        - name: Get free/busy schedule
+          href: api/calendar-getschedule.md
         - name: Find meeting times
           href: api/user-findmeetingtimes.md
       - name: Calendar view
