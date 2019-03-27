@@ -63,7 +63,7 @@ Content-Type: application/json
 {
   "callbackUri": "https://bot.contoso.com/api/calls",
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
@@ -118,7 +118,7 @@ Content-Type: application/json
   "id": "57DAB8B1894C409AB240BD8BEAE78896",
   "callbackUri": "https://bot.contoso.com/api/calls",
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
@@ -174,7 +174,7 @@ Content-Type: application/json
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
+        "@odata.type": "microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "state": "establishing",
         "direction": "outgoing"
@@ -202,7 +202,7 @@ Content-Type: application/json
       "changeType": "updated",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
+        "@odata.type": "microsoft.graph.call",
         "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "established"
@@ -309,7 +309,7 @@ Content-Type: application/json
   ],
   "requestedModalities": [ "audio", "video" ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
@@ -374,7 +374,7 @@ Content-Type: application/json
     "messageId": "0"
   },
   "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "@odata.type": "microsoft.graph.organizerMeetingInfo",
     "organizer": {
       "user": {
         "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
@@ -413,7 +413,7 @@ Content-Type: application/json
   },
   "requestedModalities": [ "audio", "video" ],
   "mediaConfig": {
-    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "@odata.type": "microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
       {
         "uri": "https://cdn.contoso.com/beep.wav",
@@ -431,7 +431,7 @@ Content-Type: application/json
     "replyChainMessageId": null
   },
   "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "@odata.type": "microsoft.graph.organizerMeetingInfo",
     "organizer": {
       "user": {
         "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",
@@ -489,7 +489,7 @@ Content-Type: application/json
     "replyChainMessageId": null
   },
   "meetingInfo": {
-    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
+    "@odata.type": "microsoft.graph.organizerMeetingInfo",
     "organizer": {
       "user": {
         "id": "90ED37DC-D8E3-4E11-9DE3-30A955DDA06F",

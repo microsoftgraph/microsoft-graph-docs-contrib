@@ -27,11 +27,11 @@ A valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id			|`string`      |ID of the `timeOffReason`.|
 | displayName               | `string`                  | The name of the `timeOffReason`. Required. |
-| iconType | `enum`   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. Required. |
+| iconType | `timeOffReasonIconType`   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. Required. |
 | isActive 			|`bool`      | Indicates whether the `timeOffReason` can be used when creating new entities or updating existing ones. Required. |
 | createdDateTime		|`DateTimeOffset`        |The time stamp on which this `timeOffReason` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
 | lastModifiedDateTime		|`DateTimeOffset`         |The time stamp on which this `timeOffReason` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `timeOffReason`.|
+| lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this `timeOffReason`.|
 
 ## JSON representation
 
@@ -40,7 +40,8 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.timeOffReason"
+  "@odata.type": "microsoft.graph.timeOffReason",
+  "baseType":"microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
@@ -51,15 +52,7 @@ Here is a JSON representation of the resource.
   "displayName": "Vacation",
   "iconType": "plane",
   "isActive": true,
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  }
+  "lastModifiedBy": { "@odata.type":"microsoft.graph.identitySet"}
 }
 ```
 

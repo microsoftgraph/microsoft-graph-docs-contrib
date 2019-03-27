@@ -138,7 +138,7 @@ Content-length: 199
   "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value",
+  "contentBytes": "base64",
   "contentId": "null",
   "lastModifiedDateTime": "2016-01-01T12:00:00Z",
   "id": "id-value",

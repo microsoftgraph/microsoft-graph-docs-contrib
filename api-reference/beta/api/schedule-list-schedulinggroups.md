@@ -67,7 +67,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.schedulingGroup"
+  "@odata.type": "microsoft.graph.schedulingGroup",
+  "isCollection": true
 } -->
 
 ```http
@@ -88,6 +89,7 @@ Content-length: 401
         "2a4296b3-a28a-44ba-bc66-0274b9b95851"
       ],
       "lastModifiedBy": {
+        "@odata.type":"microsoft.graph.identitySet",
         "application": null,
         "device": null,
         "conversation": null,

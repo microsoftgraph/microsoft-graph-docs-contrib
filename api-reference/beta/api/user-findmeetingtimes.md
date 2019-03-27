@@ -192,7 +192,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
     "emptySuggestionsReason": "",
     "meetingTimeSuggestions": [
         {
-            "confidence": 100,
+            "confidence": 100.0,
             "organizerAvailability": "free",
             "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
             "attendeeAvailability": [
@@ -222,7 +222,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
             }
         },
         {
-            "confidence": 100,
+            "confidence": 100.0,
             "organizerAvailability": "free",
             "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
             "attendeeAvailability": [
@@ -252,7 +252,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
             }
         },
         {
-            "confidence": 100,
+            "confidence": 100.0,
             "organizerAvailability": "free",
             "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
             "attendeeAvailability": [

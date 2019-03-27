@@ -112,6 +112,7 @@ GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.g
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 [
     {
 	    "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",

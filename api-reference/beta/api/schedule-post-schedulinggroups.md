@@ -50,6 +50,9 @@ If successful, this method returns a `201 Created` response code and a [scheduli
 The following is an example of the request.
 <!-- {
   "blockType": "request",
+   "optionalProperties": [
+    "lastModifiedBy"
+    ],
   "name": "schedule-post-schedulinggroups"
 }-->
 ```http
@@ -74,6 +77,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "baseType":"microsoft.graph.changeTrackedEntity",
   "@odata.type": "microsoft.graph.schedulingGroup"
 } -->
 

@@ -31,7 +31,7 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 | userIds 		| `collection(string)`    |  The list of user IDs that are a member of the `schedulingGroup`. Required. |
 | createdDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
 | lastModifiedDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy		|`microsoft.graph.identitySet`        |The identity that last updated this `schedulingGroup`.|
+| lastModifiedBy		| [identitySet](identityset.md) |The identity that last updated this `schedulingGroup`.|
 
 ## JSON representation
 
@@ -40,7 +40,8 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.schedulingGroup"
+  "@odata.type": "microsoft.graph.schedulingGroup",
+  "baseType": "microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
@@ -54,15 +55,7 @@ Here is a JSON representation of the resource.
     "c5d0c76b-80c4-481c-be50-923cd8d680a1",
     "2a4296b3-a28a-44ba-bc66-0274b9b95851"
   ],
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  }
+  "lastModifiedBy":{"@odata.type":"microsoft.graph.identitySet"}
 }
 ```
 

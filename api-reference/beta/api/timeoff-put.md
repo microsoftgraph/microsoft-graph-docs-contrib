@@ -101,6 +101,7 @@ Content-length: 401
   "createdDateTime": "2019-03-14T05:35:57.755Z",
   "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
   "lastModifiedBy": {
+    "@odata.type":"microsoft.graph.identitySet",
     "application": null,
     "device": null,
     "conversation": null,

@@ -82,7 +82,7 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "R0lGODdhEAYEAA7"
+  "contentBytes": "base64:R0lGODdhEAYEAA7"
 }
 ```
 
@@ -209,7 +209,7 @@ HTTP 201 Created
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/ddfcd489-628b-40d7-b48b-57002df800e5/messages/AAMkAGE1M88AADUv0uFAAA%3D/attachments/$entity",
-  "@odata.type": "#microsoft.graph.referenceAttachment",
+  "@odata.type": "microsoft.graph.referenceAttachment",
   "id": "AAMkAGE1Mg72tgf7hJp0PICVGCc0g=",
   "lastModifiedDateTime": "2016-03-12T06:04:38Z",
   "name": "Personal pictures",
@@ -236,7 +236,8 @@ HTTP 201 Created
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/message-post-attachments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/message-post-attachments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)",
+    "Error: create_file_attachment_from_message/contentBytes:\r\n       Expected type Binary but actual was String. Property: contentBytes, actual value: 'R0lGODdhEAYEAA7'"
   ]
 }
 -->

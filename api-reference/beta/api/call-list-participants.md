@@ -73,8 +73,7 @@ Authorization: Bearer <TOKEN>
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.participant",
-  "isCollection": true,
-  "truncated": true
+  "isCollection": true
 } -->
 
 ```http

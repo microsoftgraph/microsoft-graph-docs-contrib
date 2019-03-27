@@ -26,7 +26,7 @@ A collection of [schedulingGroup](schedulinggroup.md) objects, [shift](shift.md)
 | id			        |`string`  |ID of the `schedule`.|
 | enabled 			    |`bool`    | Indicates whether the schedule is enabled for the team. Required.|
 | timeZone 		        |`string`  | Indicates the time zone of the schedule team using tz database format. Required.|
-| provisionStatus       |`enum`    | The status of the schedule provisioning. |
+| provisionStatus       |`operationStatus`    | The status of the schedule provisioning. 'notStarted', 'running', 'completed', 'failed' |
 | provisionStatusCode   |`string`  | Additional information about why schedule provisioning failed. |
 
 

@@ -73,12 +73,12 @@ Content-type: application/json
 {
     "value": [
         {
-            "activeUserCount": "activeUserCount.value",
+            "activeUserCount": 1,
             "createdDateTime": "createdDateTime.value",
-            "currentScore": "currentScore.value",
+            "currentScore": 1,
             "enabledServices": "enabledServices.value",
-            "licensedUserCount": "licensedUserCount.value",
-            "maxScore": "maxScore.value",
+            "licensedUserCount": 1,
+            "maxScore": 1,
             "id": "id.value",
             "azureTenantId": "azureTenantId.value",
             "averageComparativeScores": [

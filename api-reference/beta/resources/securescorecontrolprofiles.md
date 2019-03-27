@@ -71,24 +71,14 @@ The following is a JSON representation of the resource.
   "userImpact": "string",
   "implementationCost ": "String",
   "rank ": "Int32",
-  "threats": [
-    "string"
-  ],
+  "threats": ["string"],
   "deprecated ": "Boolean",
   "remediation": "String",
   "remediationImpact ": "String",
   "actionUrl": "String",
-  "controlStateUpdates": [
-    {
-      "@odata.type": "microsoft.graph.secureScoreControlStateUpdate"
-    }
-  ],
-  "vendorInformation": {
-    "@odata.type": "microsoft.graph.securityVendorInformation"
-  },
-  "complianceInformation": {
-    "@odata.type": "microsoft.graph.complianceInformation"
-  },
+  "controlStateUpdates": [{"@odata.type": "microsoft.graph.secureScoreControlStateUpdate"}],
+  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"},
+  "complianceInformation": [{"@odata.type": "microsoft.graph.complianceInformation"}],
   "controlCategory": "string",
   "implementationCost": "string",
   "rank": 12356,

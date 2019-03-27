@@ -40,8 +40,8 @@ An insight representing files shared with or by a specific user. The following s
 
 ## JSON representation
 Here is a JSON representation of the resource
-
-  ],
+<!--{
+  "blockType":"resource",
   "@odata.type": "microsoft.graph.sharedInsight"
 }-->
 ```json

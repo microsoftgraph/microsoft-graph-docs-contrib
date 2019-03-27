@@ -72,7 +72,6 @@ Content-type: application/json
   }
 }
 ```
-
 #### Response
 
 The following is an example of the response. 
@@ -81,7 +80,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "schedule-post-timesoff"
+  "@odata.type":"microsoft.graph.timeOff"
 } -->
 
 ```http

@@ -40,7 +40,8 @@ Here is a JSON representation of a **sitePage** resource.
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.sitePage"
+  "@odata.type": "microsoft.graph.sitePage",
+  "openType": true
 }-->
 
 ```json
@@ -49,19 +50,21 @@ Here is a JSON representation of a **sitePage** resource.
 
   /* page content */
   "title": "string",
-  "pageLayout": "Article",
+  "pageLayoutType": "Article",
   "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
 
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "string",
+   /* inherited from baseItem */
+  "id": "string (identifier)",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "datetime",
+  "description": "string",
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "datetime",
+  "name": "string",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "webUrl": "url"
 }

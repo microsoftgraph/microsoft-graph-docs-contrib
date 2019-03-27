@@ -140,7 +140,8 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.yammerGroupsActivityGroupCounts"
+  "@odata.type": "microsoft.graph.yammerGroupsActivityGroupCounts",
+  "isCollection": true
 } -->
 
 ```http
@@ -152,7 +153,7 @@ Content-Length: 236
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.yammerGroupsActivityGroupCounts)", 
   "value": [
     {
-      "reportRefreshDate": "2017-09-01", 
+      "reportRefreshDate": "2017-09-01",
       "total": 50, 
       "active": 41, 
       "reportDate": "2017-09-01", 
