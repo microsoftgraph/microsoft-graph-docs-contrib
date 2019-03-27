@@ -100,16 +100,7 @@ A few things to note about this type of notification:
 3. Ensure the app has a valid authentication token to take the next step. 
 > **Note:** If you are using one of the [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) they will handle this for you by either reusing a valid cached token, or obtaining a new token. Note that obtaining a new token may fail, since the conditions of access may have changed, and the caller may no longer be allowed access to the resource data.
 
-4. Call either of these two Graph APIs - if successful, both will have the affect of resuming the resource notification flow
-    1. To re-authorize the subscription, without extending its expiration date, call the /reauthorize action:
-```http
-POST  https://graph.microsoft.com/beta/subscriptions/{id}/reauthorize
-Content-type: application/json
-```
-
-> **Note:** At the moment, the `reauthorize` API is only available through the `beta` version.
-
-  2. To re-authorize and renew the subscription at the same time, perform a regular renew action:
+4. To re-authorize the subscription perform a regular renewal action:
 ```http
 PATCH https://graph.microsoft.com/beta/subscriptions/{id}
 Content-Type: application/json
@@ -118,7 +109,8 @@ Content-Type: application/json
   "expirationDateTime": "2019-03-22T11:00:00.0000000Z",
 }
 ```
-> **Note:** These actions may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. You may retry these actions later, at any time, without having to wait for another authorization challenge, for example when the conditions of access have change. 
+> **Note:** This action may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new authentication token from the user to successfully reauthorize a subscription.
+You may retry these actions later, at any time, without having to wait for another authorization challenge, for example when the conditions of access have change. 
 Note that any resource changes in the time period from when the authorization challenge was sent, to when the app re-authorizes the subscription successfully, will be lost. The app will need to fetch those changes on its own.
 
 @@@provide guidance as in the Outlook API blog@@@
