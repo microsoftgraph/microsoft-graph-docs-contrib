@@ -33,8 +33,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated.|
 |deleted|Boolean|Indicates whether a message has been soft deleted.|
-|deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted. |
-|subject|string|Message subject line. Optional.|
+|deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted, or null if not deleted. |
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
 |summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
 |mentions|[chatMessageMention](chatmention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
@@ -73,7 +72,6 @@ The following is a JSON representation of the resource.
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
-  "isDeleted": "boolean",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},
