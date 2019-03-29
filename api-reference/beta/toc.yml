@@ -7266,6 +7266,10 @@
             href: api/riskyusers-list.md
           - name: Get
             href: api/riskyusers-get.md
+          - name: Confirm compromised
+            href: api/riskyusers-confirmcompromised.md
+          - name: Dismiss
+            href: api/riskusers-dismiss.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
