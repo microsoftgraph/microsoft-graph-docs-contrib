@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "dismiss_riskyuser"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/riskyUsers/dismiss
+POST https://graph.microsoft.com/beta/riskyUsers/dismiss
 
 Request Body
 {
