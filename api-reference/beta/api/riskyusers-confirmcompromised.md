@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "confirm_riskyuser"
 }-->
 ```http
-POST https://graph.microsoft-ppe.com/beta/riskyUsers/confirmCompromised
+POST https://graph.microsoft.com/beta/riskyUsers/confirmCompromised
 
 
 Request Body
