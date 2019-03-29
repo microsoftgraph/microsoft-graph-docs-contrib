@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [identityRiskEvent](../resources/identityriskevent.md) object in the response body.
 ## Examples
-#### Example 1
+#### Example 1: List risky users
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-#### Example 2
+#### Example 2: List risky users and filter the results
 The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.
 <!-- {
   "blockType": "request",
