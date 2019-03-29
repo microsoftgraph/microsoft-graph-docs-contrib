@@ -3,7 +3,7 @@ title: "riskyUsers resource type"
 description: "Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "security"
+ms.prod: "microsoft-identity-platform"
 ---
 # riskyUsers resource type
 
@@ -19,8 +19,10 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List riskyUsers](../api/riskyusers_list.md) | [riskyUsers](riskyUser.md) |List risky users and their properties.|
-|[Get riskyUsers](../api/riskyusers_get.md) | [riskyUsers](riskyUser.md)|Get a specific risky user and its properties.|
+|[List riskyUsers](../api/riskyusers-list.md) | [riskyUsers](riskyUser.md) |List risky users and their properties.|
+|[Get riskyUsers](../api/riskyusers-get.md) | [riskyUsers](riskyUser.md)|Get a specific risky user and its properties.|
+|[Confirm riskyUsers compromised](../api/riskyusers-confirmcompromised.md)|Confirm a risky user as compromised.|
+|[Dismiss riskyUsers](../api/riskyusers-dismiss.md)|Dismiss the risk of a risky user.|
 
 ## Properties
 
