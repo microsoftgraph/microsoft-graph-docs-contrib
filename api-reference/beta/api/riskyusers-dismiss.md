@@ -3,13 +3,13 @@ title: Dismiss riskyUsers
 description: Dismiss the risk of a riskyUsers object.
 author: cloudhandler
 localization_priority: Normal 
-ms.prod: Identity protection
+ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 ---
 
 # Dismiss riskyUsers
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -34,14 +34,14 @@ POST /riskyUsers/dismiss
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 Specify the userIds to dismiss in the request body.
 
 ## Response
 
-If successful, this method returns a `204 NoContent` response code
+If successful, this method returns a `204 NoContent` response code.
 ## Example
 ##### Request
 Here is an example of the request.
