@@ -42,8 +42,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [identityRiskEvent](../resources/identityriskevent.md) object in the response body.
-## Example
-##### Request 1
+## Examples
+#### Example 1
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -52,7 +52,7 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-##### Response 1
+
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-##### Request 2
+#### Example 2
 The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.
 <!-- {
   "blockType": "request",
@@ -93,7 +93,7 @@ The following example shows how to use `$filter` to get the collection of riskyU
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
-##### Response 2
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
