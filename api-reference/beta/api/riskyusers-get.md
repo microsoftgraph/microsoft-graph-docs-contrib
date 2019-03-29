@@ -3,7 +3,7 @@ title: "Get riskyUsers"
 description: "Retrieve the properties and relationships of a **riskyUsers** object."
 localization_priority: Normal
 author: "cloudhandler"
-ms.prod: "security"
+ms.prod: "microsoft-identity-platform"
 ---
 # Get riskyUsers
 
