@@ -12,7 +12,7 @@ ms.date: 03/20/2019
 
 >**Note:** The riskyUsers API requires an Azure AD Premium P2 license.
 
-Confirm a [riskyUsers](../riskyusers.md) object as compromised. This will set the targeted user's risk level to high.
+Confirm a [riskyUsers](../resources/riskyuser.md) object as compromised. This will set the targeted user's risk level to high.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
