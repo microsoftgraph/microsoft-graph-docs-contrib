@@ -7,11 +7,12 @@ ms.prod: "security"
 ---
 # List riskyUsers
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieve the properties and relationships of a **riskyUsers** object.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
-Retrieve the properties and relationships of a **riskyUsers** object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -33,14 +34,14 @@ This method supports `$filter` to customize the query response. See the example 
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [identityRiskEvent](../resources/identityriskevent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [identityRiskEvent](../resources/identityriskevent.md) object in the response body.
 ## Example
 ##### Request 1
 Here is an example of the request.
