@@ -68,7 +68,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+The following example gets within the specified time range the occurrences and exceptions of an event which is the master event of a recurring series.
 <!-- {
   "blockType": "request",
   "name": "get_instances"
@@ -77,7 +77,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
 ```
 ##### Response
-The following example gets within the specified time range the occurrences and exceptions of an event which is the master event of a recurring series.
+Here is an example of the response.
 <!-- {
   "blockType": "request",
   "name": "get_instances",
