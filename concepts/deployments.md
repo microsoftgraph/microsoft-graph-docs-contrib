@@ -44,7 +44,7 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 | Microsoft Graph China operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Microsoft Graph global service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
- **IMPORTANT:** If you already have an app in US Government, using `https://graph.microsoft.com` endpoint, our recommendation is to use the new endpoint `https://graph.microsoft.us`. The `https://graph.microsoft.com` will keep working but will eventually be obsolete. Please keep an eye on this page for the timeline.
+>**Important:** If you already have an app in US Government and you're using the `https://graph.microsoft.com` endpoint, we recommend that you use the new `https://graph.microsoft.us` endpoint. The `https://graph.microsoft.com` endpoint will continue to work but will eventually be obsolete. Please keep an eye on this page for the timeline.
 
 > **Note**: Apps can only access organizational data through the national cloud endpoints. This means that apps can only access data in tenants that are registered in the specific national cloud. Apps that are trying to access consumer data associated with personal Microsoft accounts through Microsoft Graph should use the global service `https://graph.microsoft.com`. Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service or any other national cloud.
 
