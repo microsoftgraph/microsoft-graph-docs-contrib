@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Create a new [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -56,6 +56,7 @@ The following table shows the properties that are required when you create the a
 |packageId|String|Android Enterprise app configuration package id.|
 |payloadJson|String|Android Enterprise app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
+|appSupportsOemConfig|Boolean|Whether or not this AppConfig is an OEMConfig policy.|
 
 
 
@@ -69,7 +70,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
-Content-length: 559
+Content-length: 592
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -90,7 +91,8 @@ Content-length: 559
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 
@@ -99,7 +101,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 731
+Content-Length: 764
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreAppConfiguration",
@@ -123,7 +125,8 @@ Content-Length: 731
       "permission": "Permission value",
       "action": "autoGrant"
     }
-  ]
+  ],
+  "appSupportsOemConfig": true
 }
 ```
 
