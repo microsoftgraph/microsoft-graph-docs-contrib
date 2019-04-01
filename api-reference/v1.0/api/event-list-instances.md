@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startD
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "name": "get_instances"
+  "name": "get_instances",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true

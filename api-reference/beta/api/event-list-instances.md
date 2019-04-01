@@ -80,6 +80,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGUzYRgWAAA=/instances?startD
 The following example gets within the specified time range the occurrences and exceptions of an event which is the master event of a recurring series.
 <!-- {
   "blockType": "request",
+  "name": "get_instances",
   "sampleKeys": ["AAMkAGUzYRgWAAA="],
   "name": "get_instances"
 }-->
