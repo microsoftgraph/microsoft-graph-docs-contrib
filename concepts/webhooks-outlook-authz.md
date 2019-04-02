@@ -1,31 +1,31 @@
 ---
-title: "Maintaining continous notification delivery for Outlook resources by responding to authorization challenges"
-description: "Outlook may suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `reauthorizationRequired` and `dataResyncRequired` - need to be handled to ensure uninterrupted delivery of notifications."
+title: "Maintaining continous notification delivery for Outlook resources by responding to subcriptionRemoved notifications"
+description: "Outlook may suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `subscriptionRemoved` and `missed` - need to be handled to ensure uninterrupted delivery of notifications."
 author: "piotrci"
 localization_priority: Priority
 ---
 
-# Maintaining continous notification delivery for Outlook resources by responding to authorization challenges
+# Maintaining continous notification delivery for Outlook resources by responding to subcriptionRemoved notifications
 
-An app that subscribes to notifications for Outlook resources, such as messages or events, needs to be able to respond to authorization challenges in order to maintain continous flow of notifications over the lifetime of its subscription.
+An app that subscribes to notifications for Outlook resources, such as messages or events, needs to be able to respond to `subscriptionRemoved` signals in order to maintain continous flow of notifications over the lifetime of its subscription.
 
-There are certain events in the Outlook service that cause the notifications to stop flowing to the subscribing app, until the app re-authorizes its subscription. Examples include:
+There are certain events in the Outlook service that cause a subscription to be removed. Examples include:
 
 - user's password has been reset
 - user's device is out of compliance
 -	user's account has been revoked
 
-When these events occur, Microsoft Graph will send a special lifecycle notification - an authorization challenge - to the app. The app needs to respond to that notification by re-authorizing its subscription.
+When these events occur, Microsoft Graph will send a special lifecycle notification - `subscriptionRemoved` to the app. The app needs to respond to that notification by creating a new subscription.
 
 An app needs to implement logic additional to the standard [notification pattern](webhooks.md):
-- Register a separate lifecycle notification url to receive authorization challenges
-- Identify these challenges, and respond to them by calling a specific API in Microsoft Graph; 
+- Identify these notifications, and respond to them by making an API in Microsoft Graph to create a new subscription;
+- Optionally, register a separate lifecycle notification url, if the app wishes to receive lifecycle notifications of all types to a separate endpoint
 
-The Outlook service may also send special lifecycle notifications if some notifications could not be delivered to the app. An app should handle those special notifications by re-syncing resource data using Microsoft Graph.
+The Outlook service may also send special lifecycle notifications - `missed` - if some notifications could not be delivered to the app. An app should can handle those special notifications by re-syncing resource data using Microsoft Graph.
 
 ## Creating a subscription
 
-When creating a subscription, a separate notification endpoint needs to be specified, using the `lifecycleNotificationUrl` property; this is where the authorization challenges will be delivered. If the property is not set, the challenges will not be sent, and the subscription's notifications might stop flowing without notice.
+When creating a subscription, a separate notification endpoint can be specified, using the `lifecycleNotificationUrl` property. If the endpoint is specified, all current and future types of lifecycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` notifications will be delivered to the currently specified `notificationUrl` for all existing subscriptions.
 
 > **Note:** At the moment, the `lifecycleNotificationUrl` property can only be set or read using the `beta` version of Graph APIs. However, subscriptions created using `beta` are stored in the same production environment as `v1.0` so you can implement the new Outlook flow described here in addition to your regular usage of `v1.0` with other subscriptions.
 
@@ -49,9 +49,7 @@ Content-Type: application/json
 > **Note:** Both notification endpoints will need to be validated by the client app, as described in [the generic notification article](webhooks.md#managing-subscriptions).
 You may choose to use the same URL for both endpoints, in which case you will receive two validation requests, to which you will need to respond.
 
-## Migrating existing subscriptions
-
-If the app has existing subscriptions, it will have to replace them with new subscriptions that include the `lifecycleNotificationUrl`. It is not possible to update (`PATCH`) the existing subscriptions.
+> **Note:** If the app has existing subscriptions, it will have to replace them with new subscriptions to specify the `lifecycleNotificationUrl` property. It is not possible to update (`PATCH`) the existing subscriptions.
 
 ## Responding to authorization challenges
 
