@@ -68,7 +68,7 @@ An app can create a long lived subscription (e.g. 3 days), and resource data not
 
 5. After creating the new subscription, the you may want to sync any missing resource data from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
 
-### Authorization challenge notification example
+### `subscriptionRemoved` notification example
 
 ```json
 {
