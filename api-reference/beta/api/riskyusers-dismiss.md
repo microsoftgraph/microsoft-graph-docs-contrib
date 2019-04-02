@@ -51,8 +51,8 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/dismiss
+Content-Type: application/json
 
-Request Body
 {
   "userIds": [
     "04487ee0-f4f6-4e7f-8999-facc5a30e232",
@@ -65,7 +65,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 204 NoContent

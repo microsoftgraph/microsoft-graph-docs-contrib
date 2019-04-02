@@ -51,9 +51,8 @@ Here is an example of the request.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/confirmCompromised
+Content-type: application/json
 
-
-Request Body
 {
   "userIds": [
     "29f270bb-4d23-4f68-8a57-dc73dc0d4caf",
@@ -66,7 +65,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 204 NoContent
@@ -80,6 +79,5 @@ HTTP/1.1 204 NoContent
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  "suppressions": []
 }-->

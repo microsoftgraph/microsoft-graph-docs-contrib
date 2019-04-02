@@ -55,8 +55,13 @@ This example unfollows an item identified by `{item-id}`.
 ```http
 DELETE /me/drive/following/{item-id}
 ```
-
-
+<!-- { 
+    "blockType": "response", 
+    "truncated": true 
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 <!--
 {
   "type": "#page.annotation",
