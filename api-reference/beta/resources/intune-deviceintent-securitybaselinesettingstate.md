@@ -28,7 +28,7 @@ The security baseline compliance state of a setting for a device
 |:---|:---|:---|
 |id|String|Unique identifier of the entity|
 |settingName|String|The setting name that is being reported|
-|state|[securityBaselineComplianceState]|The compliance state of the security baseline setting|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|The compliance state of the security baseline setting. Possible values are: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |settingCategoryId|String|The setting category id which this setting belongs to|
 
 ## Relationships
@@ -51,9 +51,6 @@ Here is a JSON representation of the resource.
   "settingCategoryId": "String"
 }
 ```
-
-
-
 
 
 

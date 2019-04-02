@@ -12,7 +12,7 @@ ms.prod: "Intune"
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Security baseline state for a device..
+Security baseline state for a device.
 
 ## Methods
 |Method|Return Type|Description|
@@ -26,13 +26,14 @@ Security baseline state for a device..
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier of the entity|
+|id|String|Key of the entity.|
 |securityBaselineTemplateId|String|The security baseline template id|
 |displayName|String|The display name of the security baseline|
-|settingStates|[securityBaselineSettingState] (../resources/intune-deviceintent-securitybaselinesettingstate.md) collection|The security baseline state for different settings for a device|
 
 ## Relationships
-None
+|Relationship|Type|Description|
+|:---|:---|:---|
+|settingStates|[securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md) collection|The security baseline state for different settings for a device|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -47,20 +48,9 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.securityBaselineState",
   "id": "String (identifier)",
   "securityBaselineTemplateId": "String",
-  "displayName": "String",
-  "settingStates": [
-    {
-      "@odata.type": "microsoft.graph.securityBaselineSettingState",
-      "settingName": "String",
-      "state": "String",
-      "settingCategoryId": "String"
-    }
-  ],
+  "displayName": "String"
 }
 ```
-
-
-
 
 
 
