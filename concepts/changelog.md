@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Change | beta | Outlook may suspend delivery of [change notifications](webhooks.md) (aka webhooks) for its resources (e.g. mail, calendar, contacts) due to security events such as user's password reset. This applies to apps using delegated authentication mode. Graph subscriptions to those resources can now be removed by Outlook and special new lifecycle notification - `subscriptionRemoved` - will now be delivered to the existing notification endpoints. An additional notification type - `missed` - is also introduced to notify the app if any data notifications may have not been delivered. [Read more about these new events](webhooks-outlook-authz.md) and how they apply to Outlook change notifications. |
+| Change | beta | Outlook might suspend delivery of [change notifications](webhooks.md) (webhooks) for its resources (mail, calendar, contacts) due to security events such as user's password reset. This applies to apps using delegated authentication mode. Microsoft Graph subscriptions to those resources can now be removed by Outlook and a special new lifecycle notification - `subscriptionRemoved` - will now be delivered to the existing notification endpoints. An additional notification type - `missed` - was also introduced to notify the app if any data notifications might not have been delivered. For details about these new events and how they apply to Outlook change notifications, see [Maintaining continuous notification delivery for Outlook](webhooks-outlook-authz.md). |
 
 ### Directory APIs
 
