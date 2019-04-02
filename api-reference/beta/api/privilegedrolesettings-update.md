@@ -83,7 +83,10 @@ Content-type: application/json
 ```
 ##### Response
 Here is an example of the response.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}-->
 ```http
 HTTP/1.1 204 No Content
 ```

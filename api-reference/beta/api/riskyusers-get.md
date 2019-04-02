@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a **riskyUser** object.
+Retrieve the properties and relationships of a **riskyUsers** object.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -49,31 +49,30 @@ Here is an example of the request.
   "name": "get_riskyuser"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+GET https://graph.microsoft.com/beta/riskyUsers/{id}
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "name": "get_riskuser",
   "truncated": true,
   "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
+  "isGuest": true,
   "isProcessing": true,
-  "isDeleted": "true",
+  "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk",
-  "userDisplayName": "Alex Wilbur",
-  "userPrincipalName": "alexw@contoso.com"
+  "riskState": "atRisk"
+  "userDisplayName": "Jon Doe",
+  "userPrincipalName": "jon@contoso.com"
 }
 ```
 
