@@ -64,7 +64,7 @@ An app can create a long lived subscription (e.g. 3 days), and resource data not
 
 3. The app can respond to this notification by creating a new subscription for the same resource. To do this, the app needs to present a valid access token; in some cases this means the app needs to re-authenticate the user to obtain a new valid access token.
 
-4. If the app successfully creates the subscription, resource notifications are resumed. However, if the app fails (for example, it could not obtain a valid authentication token), resource notifications will not be sent.
+4. If the app successfully creates the subscription, resource notifications are resumed. However, if the app fails (for example, it could not obtain a valid access token), resource notifications will not be sent.
 
 5. After creating the new subscription, the you may want to sync any missing resource data from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
 
@@ -98,7 +98,7 @@ A few things to note about this type of notification:
 
 4. Create a new subscription using the standard process described [here](webhooks.md#Subscription-request-example).
 
-> **Note:** This action may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new authentication token from the user to successfully reauthorize a subscription. You may retry these actions later, at any time, for example when the conditions of access have change. Any resource changes in the time period from when the lifecycle notification was sent, to when the app re-creates the subscription successfully, will be lost. The app will need to fetch those changes on its own.
+> **Note:** This action may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription. You may retry these actions later, at any time, for example when the conditions of access have change. Any resource changes in the time period from when the lifecycle notification was sent, to when the app re-creates the subscription successfully, will be lost. The app will need to fetch those changes on its own.
 
 ## Responding to `missed` notifications
 
