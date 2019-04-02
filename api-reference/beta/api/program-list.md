@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  |
 
- The signed in user or service principal must also be in a directory role which permits them to read a program.
+ The signed in user must also be in a directory role which permits them to read a program.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

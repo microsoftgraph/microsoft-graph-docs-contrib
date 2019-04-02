@@ -11,6 +11,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## April 2019
+
+### Access reviews API
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Add the application permissions `AccessReview.Read.All`, `AccessReview.ReadWrite.All`, `ProgramControl.Read.All` and `ProgramControl.ReadWrite.All`. For details, see the [access reviews API reference](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+
 ## March 2019
 
 ### Directory APIs

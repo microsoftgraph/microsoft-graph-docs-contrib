@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`. |
 
 
- The signed in or service principal user must also be in a directory role which permits them to read an access review.
+ The signed in user must also be in a directory role which permits them to read an access review.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
