@@ -51,7 +51,7 @@ You may choose to use the same URL for both endpoints, in which case you will re
 
 > **Note:** If the app has existing subscriptions, it will have to replace them with new subscriptions to specify the `lifecycleNotificationUrl` property. It is not possible to update (`PATCH`) the existing subscriptions.
 
-## Responding to subscriptionRemoved notifications
+## Responding to `subscriptionRemoved` notifications
 
 These lifecycle notifications inform the app that a subscription has been removed and should be recreated, if the app wants to continue receive notifications. 
 
@@ -96,11 +96,11 @@ A few things to note about this type of notification:
 3. Ensure the app has a valid access token to take the next step. 
 > **Note:** If you are using one of the [authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) they will handle this for you by either reusing a valid cached token, or obtaining a new token, including asking the user to login again (e.g. with a new password). Note that obtaining a new token may fail, since the conditions of access may have changed, and the caller may no longer be allowed access to the resource data.
 
-4. Create a new subscription, including endpoint validation, using the standard process described [here](webhooks.md#Subscription-request-example).
+4. Create a new subscription using the standard process described [here](webhooks.md#Subscription-request-example).
 
 > **Note:** This action may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new authentication token from the user to successfully reauthorize a subscription. You may retry these actions later, at any time, for example when the conditions of access have change. Any resource changes in the time period from when the lifecycle notification was sent, to when the app re-creates the subscription successfully, will be lost. The app will need to fetch those changes on its own.
 
-## Responding to data re-sync notifications
+## Responding to `missed` notifications
 
 These signals inform the app that some notifications may have not been delivered. You should decide if your app ignores or handles these signals.
 
@@ -114,16 +114,16 @@ These signals inform the app that some notifications may have not been delivered
       "subscriptionExpirationDateTime":"2019-03-20T11:00:00.0000000Z",
       "tenantId": "<tenant_guid>",
       "clientState":"<secretClientState>",
-      "lifecycleEvent": "dataResyncRequired"
+      "lifecycleEvent": "missed"
     }
   ]
 }
 ```
 
 A few things to note about this type of notification:
-- The `"lifecycleEvent": "dataResyncRequired"` field designates this as a signal about missed notifications..
-- The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state
-- `value` is an array, so multiple signals may be batched together, the same as for resource notifications. You should process each notification in the batch, and react to it.
+- The `"lifecycleEvent": "missed"` field designates this as a signal about missed notifications.Other types of lifecycle notifications are also possible, and new ones will be introduced in the future.
+- The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change
+- `value` is an array, so multiple lifecycle notifications may be batched together - possibly with different `lifecycleEvent` values - similarly to resource notifications. You should process each notification in the batch, and react to it.
 
 ### Action to take
 
