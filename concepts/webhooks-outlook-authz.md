@@ -139,7 +139,7 @@ In the future Graph will add more types of subscription lifecycle notifications.
 
 You should implement your code in a future-proof way so it does not break when Graph introduces new types of lifecycle notifications. We recommend the following approach:
 
-1. Explicitly identify each notification as an event that you support, using the `lifecycleEvent` property. For example, look for the `"lifecycleEvent": "reauthorizationRequired"` propety to identify an authorization challenge, and handle it.
+1. Explicitly identify each notification as an event that you support, using the `lifecycleEvent` property. For example, look for the `"lifecycleEvent": "subscriptionRemoved"` propety to identify a specific event, and handle it.
 
 2. For any lifecycle events you do not recognize, ignore them; we may add more values for the `lifecycleEvent` property in the future. We advise you log them so you can become aware of the new types of signals, in case you missed a Graph announcement for the new scenario. That way you can look up the updated documentation and implement your support for it at your discretion.
 
