@@ -52,7 +52,7 @@ Here is a JSON representation of the resource
 {
   "description": "string",
   "displayName": "string",
-  "id": "string (identifier)",
+  "id": "string (identifier)"
 }
 
 ```
