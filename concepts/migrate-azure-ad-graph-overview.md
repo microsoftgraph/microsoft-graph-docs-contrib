@@ -73,29 +73,6 @@ Use the following checklist to plan your migration:
 
     If you're currently using the [Azure AD v1.0 library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), consider switching to the Azure AD v2 endpoint and the [Microsoft Azure AD v2.0 library](https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries) (MSAL).
 
-1.  **Test throughly**
-
-    Once you've updated your app, test it thoroughly to verify that it works as it did and that it doesn't contain new bugs.  
-
-    Be sure to use multiple environments, data sets, and end-user personas, e.g. credentials with different roles, rights, and responsibilities.
-
-1.  **Deploy staged updates**
-
-    Consider deploying your updates in stages.  A limited roll-out to a small set of friendly users can help identify glitches and other potentially-embarrassing issues.  This also gives you a change to monitor initial reception and feedback.
-
-    If the initial roll-out goes well, monitor progress as you deploy to larger audiences.
-
-1.  **Explore new value**
-
-    Once your app is updated to Microsoft Graph API, continue exploring the API and supported services. New features and capabilities are introduced regularly.  
-
-    - The What's New (thingie) provides a high-level introduction to major changes
-
-    - The (foo) blog provides more detailed introductions.
-
-    - The Changelog summarizes specific document updates.
-
-    Following these updates to help you identify new ways to add value to your apps and to improve the experiences of your users.  
 
 ## Next Steps
 
