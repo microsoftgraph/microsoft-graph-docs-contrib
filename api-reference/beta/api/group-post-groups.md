@@ -1,6 +1,6 @@
 ---
 title: "Create group - Microsoft Graph API"
-description: "Describes how to create a group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group, a dynamic group, or a security group."
+description: "Describes the how to create a group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group or a security group."
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
@@ -51,8 +51,8 @@ The following table shows the properties of the [group](../resources/group.md) r
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups. Required. |
-| owners | string collection | This property represents the owners for the group at creation time. Optional. |
-| members | string collection | This property represents the members for the group at creation time. Optional. |
+| owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
+| members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 
 > Note: Groups created using the Microsoft Azure portal always have **securityEnabled** and **mailEnabled** initially set to `true`.
 
