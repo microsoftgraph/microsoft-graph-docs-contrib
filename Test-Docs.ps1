@@ -43,9 +43,6 @@ else {
 	
 	if ($apiDoctorVersion.StartsWith("https://"))
 	{
-        # Delete existing ApiDoctor source code     
-        Remove-Item $apidocPath\SourceCode -Force  -Recurse -ErrorAction SilentlyContinue
-
 		# Download ApiDoctor from GitHub	
 		Write-Host "Cloning API Doctor repository from GitHub"
 		& git clone -b master $apiDoctorVersion --recurse-submodules "$apidocPath\SourceCode"
@@ -56,8 +53,11 @@ else {
 			
 		# Build ApiDoctor
 		Install-Module -Name Invoke-MsBuild -Scope CurrentUser -Force 
-		Write-Host "Building API Doctor..."
+		Write-Host "`r`nBuilding API Doctor..."
 		Invoke-MsBuild -Path "$apidocPath\SourceCode\ApiDoctor.sln" -MsBuildParameters "/t:Rebuild /p:Configuration=Release /p:OutputPath=$apidocPath\ApiDoctor\tools"
+
+        # Delete existing ApiDoctor source code     
+        Remove-Item $apidocPath\SourceCode -Force  -Recurse -ErrorAction SilentlyContinue
 	}
 	else {
 		# Install ApiDoctor from NuGet
@@ -102,7 +102,7 @@ if ($cleanUp -eq $true) {
         Remove-Item $nugetPath 
     }
     if ($downloadedApiDoctor -eq $true) {
-        Remove-Item $apidocPath -Recurse
+        Remove-Item $apidocPath -Recurse -Force
     }
 }
 
