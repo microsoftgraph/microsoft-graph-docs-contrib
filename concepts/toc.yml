@@ -325,7 +325,7 @@
             - name: .NET client libraries 
               href: migrate-azure-ad-graph-client-libraries.md
           - name: Deploy, test, and extend
-            href: migrate-azure-ad-graph-deploy-test.md
+            href: migrate-azure-ad-graph-deploy-test-extend.md
       - name: Resources
         expanded: true
 >>>>>>> Interim updates, based on feedback.  TOC update.
