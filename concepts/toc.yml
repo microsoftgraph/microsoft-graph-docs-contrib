@@ -264,21 +264,21 @@
         - name: Azure AD Graph
           items:
           - name: App migration checklist
-          - href: migrate-azure-ad-graph-overview.md
+            href: migrate-azure-ad-graph-overview.md
           - name: Audit API use
             href: migrate-azure-ad-graph-audit-api-use.md
           - name: Differences
             items: 
             - name: Request differences
-              href: migrate-azure-ad-graph-request-difference.md
+              href: migrate-azure-ad-graph-request-differences.md
             - name: Resource type differences
-              href: migrate-azure-ad-graph-resource-difference.md
+              href: migrate-azure-ad-graph-resource-differences.md
             - name: Entity property differences
-              href: migrate-azure-ad-graph-property-difference.md
+              href: migrate-azure-ad-graph-property-differences.md
             - name: Method differences
-              href: migrate-azure-ad-graph-method-difference.md
+              href: migrate-azure-ad-graph-method-differences.md
             - name: Service eature differences
-              href: migrate-azure-ad-graph-feature-difference.md
+              href: migrate-azure-ad-graph-feature-differences.md
           - name: Review app details
             items:
             - name: App registration
