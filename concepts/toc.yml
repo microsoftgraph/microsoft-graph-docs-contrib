@@ -265,6 +265,7 @@
         items:
         - name: Overview
           href: delta-query-overview.md
+<<<<<<< HEAD
         - name: Get changes to events (example)
           href: delta-query-events.md
         - name: Get changes to groups (example)
@@ -275,6 +276,59 @@
           href: delta-query-users.md
       - name: Add custom data
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+=======
+          displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
+          items:
+          - name: Get changes to events (example)
+            href: delta-query-events.md
+          - name: Get changes to groups (example)
+            href: delta-query-groups.md
+          - name: Get changes to messages (example)
+            href: delta-query-messages.md
+          - name: Get changes to users (example)
+            href: delta-query-users.md
+        - name: Add custom data
+          href: extensibility-overview.md
+          displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+          items:
+          - name: Use open extensions (example)
+            href: extensibility-open-users.md
+          - name: Use schema extensions (example)
+            href: extensibility-schema-groups.md
+      - name: Migrate
+        expanded: false
+        items:
+        - name: Azure AD Graph
+          items:
+          - name: App migration checklist
+          - href: migrate-azure-ad-graph-overview.md
+          - name: Audit API use
+            href: migrate-azure-ad-graph-audit-api-use.md
+          - name: Differences
+            items: 
+            - name: Request differences
+              href: migrate-azure-ad-graph-request-difference.md
+            - name: Resource type differences
+              href: migrate-azure-ad-graph-resource-difference.md
+            - name: Entity property differences
+              href: migrate-azure-ad-graph-property-difference.md
+            - name: Method differences
+              href: migrate-azure-ad-graph-method-difference.md
+            - name: Service eature differences
+              href: migrate-azure-ad-graph-feature-difference.md
+          - name: Review app details
+            items:
+            - name: App registration
+              href: migrate-azure-ad-graph-app-registration.md
+            - name: Auth libraries 
+              href: migrate-azure-ad-graph-authentication-library.md
+            - name: .NET client libraries 
+              href: migrate-azure-ad-graph-client-libraries.md
+          - name: Deploy, test, and extend
+            href: migrate-azure-ad-graph-deploy-test.md
+      - name: Resources
+        expanded: true
+>>>>>>> Interim updates, based on feedback.  TOC update.
         items:
         - name: Best practices
           href: best-practices-concept.md
@@ -284,30 +338,6 @@
           href: changelog.md
         - name: Errors
           href: errors.md
-    - name: Migrate
-      expanded: false
-      items:
-        - name: Azure AD Graph
-          href: migrate-azure-ad-graph-overview.md
-          items:
-          - name: Audit API use
-            href: migrate-azure-ad-graph-audit-api-use.md
-          - name: Review request changes
-            href: migrate-azure-ad-graph-request-changes.md
-          - name: Review resource changes
-            href: migrate-azure-ad-graph-resource-changes.md
-          - name: Review property changes
-            href: migrate-azure-ad-graph-property-changes.md
-          - name: Review method changes
-            href: migrate-azure-ad-graph-method-changes.md
-          - name: Review feature changes
-            href: migrate-azure-ad-graph-feature-changes.md
-          - name: Review app registration
-            href: migrate-azure-ad-graph-app-registration.md
-          - name: Review auth libraries 
-            href: migrate-azure-ad-graph-authentication-library.md
-          - name: Review .NET client libraries 
-            href: migrate-azure-ad-graph-client-libraries.md
     - name: v1.0 reference
       href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
     - name: Beta reference

@@ -1,5 +1,5 @@
 ---
-title: "Review resource changes from Azure AD Graph to Microsoft Graph | Microsoft Graph | Microsoft Graph"
+title: "Review resource changes from Azure AD Graph to Microsoft Graph | Microsoft Graph"
 description: "Describes differences between resources in Azure AD Graph and resources in Microsoft Graph in order to help migrate apps."
 author: "lleonard-msft"
 localization_priority: Normal

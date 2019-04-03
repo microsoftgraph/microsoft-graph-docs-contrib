@@ -1,12 +1,12 @@
 ---
-title: "Review feature changes from Azure AD Graph to Microsoft Graph | Microsoft Graph"
-description: "Describes how to migrate Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
+title: "Feature differences between Azure AD Graph and Microsoft Graph | Microsoft Graph"
+description: "Describes feature differences between Azure Active Directory (Azure AD) API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Review feature changes from Azure AD Graph to Microsoft Graph
+# Feature differences between Azure AD Graph and Microsoft Graph
 
 Many features in Microsoft Graph work similarly to their Azure AD counterparts; however, a few have been improved. Here, you'll learn how to adapt you apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
 
@@ -21,7 +21,7 @@ Here, we look at how Microsoft Graph handles:
 We strongly recommend using the [Graph Explorer](https://aka.ms/ge) to try these features against your own tenant. It's a good way to learn from actual request responses run against your own data.
 
 
-### Default properties and $select
+## Default properties and $select
 
 There are places where Microsoft Graph returns different responses or where it can.  For example, request against the user and group resources vary between the beta and v1.0 versions.
 
@@ -65,7 +65,7 @@ To learn more about:
 - The $select parameter and other supported ODATA query parameters, see []().
 
 
-### Relationships and navigation properties
+## Relationships and navigation properties
 
 Relationships (or navigation properties) are a key concept in Azure AD Graph and Microsoft Graph. They link resources to other resources supported by other services.  For example, the manager and directReports properties extend the user resource to support services provided by an organizational context that might not apply to all users.  
 
@@ -86,7 +86,7 @@ When migrating your apps to Microsoft Graph, look for requests that use `$link` 
 
 In addition, take time to explore features and services supported by Microsoft Graph that aren't supported by Azure AD Graph; you may find that there are easier ways to accomplish certain tasks, which in turn can simplify your code.
 
-### Directory schema extensions
+## Directory schema extensions
 
 If your app uses Azure AD Graph directory schema extensions, there's good new and bad news.  The good news is that you can continue to use the same basic APIs to:
 
@@ -106,7 +106,7 @@ To migrate, we recommend the following approach:
 - Update the app to support custom data extensions.
 - Deploy the update once you've verified parity with the previous implemention.
 
-### Differential queries
+## Differential queries
 
 Azure AD Graph and Microsoft GRaph let you track changes using queries.  The high-level approach is similar between the two APIs, however, Microsoft Graph uses different syntax.  
 
@@ -126,7 +126,7 @@ The following table highlights key similarities and differences:
 
 If your app is already storing state data, consider using the "sync from now" shown earlier to help manage the transition to delta queries.
 
-### Batching
+## Batching
 
 The syntax for batch operations has changed in Microsoft Graph and you'll need to update your app accordingly.
 
