@@ -56,7 +56,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
