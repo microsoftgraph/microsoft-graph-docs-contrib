@@ -277,7 +277,7 @@
               href: migrate-azure-ad-graph-property-differences.md
             - name: Method differences
               href: migrate-azure-ad-graph-method-differences.md
-            - name: Service eature differences
+            - name: Service feature differences
               href: migrate-azure-ad-graph-feature-differences.md
           - name: Review app details
             items:
