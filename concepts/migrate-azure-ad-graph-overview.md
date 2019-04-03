@@ -35,7 +35,7 @@ Here, you'll find:
 
 To learn more, including progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) in the Office Dev Center.
 
-## Planning checklist
+## Migration planning  checklist
 
 Use the following checklist to plan your migration:
 
@@ -45,29 +45,31 @@ Use the following checklist to plan your migration:
 
     You can, for example, simply change the endpoint service name and version in your code for many calls.
 
-    However, certain resources, properties, and methods have changed.
+    Make an inventory of the endpoints called by your app, the permissions they require, and any changes.  
 
-1.  **Audit your app**: 
+    Specifically, look for differences between:
 
-    Make an inventory of the endpoints called by your app and the permissions they require.  
-
-    Also, review specials features, such as directory extensions, batching, differential queries, and so on.
+    - Request calls between the two services.
+    - Entity resource names and their types.
+    - Properties of request and response objects.
+    - Methods, including parameters and types.
+    - Features, such as directory extensions, batching, differential queries, and so on.
 
     Verify that the APIs you need are generally available as Microsoft Graph 1.0 APIs. 
 
     Verify that available APIs work the same way.
 
-1.  **Account for syntax and behavioral differences** 
-
     In some cases, new capabilities and features are designed to replace earlier approaches.
 
     Use the [Graph Explorer](https://aka.ms/ge) to experiment with new calls and to develop new approaches. For best results, sign in using the credentials of your app so that you see what it sees.
 
-1.  **Evaluate .NET client library**
+1.  Review app details, such as:
 
-    If you're using the Azure AD Graph .NET client library, take time to review our advice and examples.  
+    - App registration and consent changes (which should be minimal to none).
+    - Token acquisition and authentication libraries.
+    - For .NET applications, use of client libraries.
 
-1.  **Review token acquisition**
+1.  Deploy, test, and extend your app.
 
     If you're currently using the [Azure AD v1.0 library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), consider switching to the Azure AD v2 endpoint and the [Microsoft Azure AD v2.0 library](https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries) (MSAL).
 
@@ -97,9 +99,6 @@ Use the following checklist to plan your migration:
 
 ## Next Steps
 
-- Learn about request differences between Azure AD Graph and Microsoft Graph.
-- Follow Microsoft Graph [blogs](https://developer.microsoft.com/graph/blogs) for updates and review the [documentation](https://developer.microsoft.com/graph).
-- Manage Azure AD resources, such as [users](https://docs.microsoft.com/graph/azuread-users-concept-overview), [groups](https://docs.microsoft.com/graph/office365-groups-concept-overview), and [identity access](https://docs.microsoft.com/graph/azuread-identity-access-management-concept-overview).
-- Use [quick starts and samples](https://developer.microsoft.com/graph/get-started) to come up to speed quickly.
-- Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications supporting multiple operating systems and languages.
-- Experiment using the [Graph Explorer](https://aka.ms/ge).
+- Learn how to [audit API differences](migrate-azure-ad-graph-audit-api-use.md) between Azure AD Graph and Microsoft graph.
+- Learn more [Microsoft Graph](/graph/overview) concepts and practices.
+- Use Experiment [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
