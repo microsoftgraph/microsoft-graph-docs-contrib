@@ -2,6 +2,8 @@
 title: "Get attachment"
 description: "Read the properties and relationships of an attachment, attached to an event, message, Outlook task, or post."
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Get attachment
@@ -19,6 +21,10 @@ An attachment can be one of the following types:
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
 resource.
 
+You can append the path segment `/$value` to get the raw value of a file or item attachment. For a file attachment, the `Content-Type` is based on its original content type. For a message-type item attachment, the raw value includes the MIME representation of that message. The `Content-Type` of a message attachment is based on the media type of the corresponding part of the MIME message.
+
+Attempting to get the `$value` of a reference attachment returns HTTP 405.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,58 +40,76 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Attachments for an [event](../resources/event.md).
+This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md)) that support attachments:
+
+- To get the properties and relationships of an attachment, append a path segment that contains the attachment ID indexing into the **attachments** collection of the specified entity ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md)).
+- If the attachment is a file or Outlook item (contact, event, or message), you can further get the raw contents of the attachment by appending the path segment `/$value` to the request URL.
+
+An attachment of an [event](../resources/event.md):
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
+GET /me/events/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 ```
 
 <!--
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-Attachments for a [message](../resources/message.md) in a user's mailbox.
+An attachment of a [message](../resources/message.md) in a user's mailbox:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
+GET /me/messages/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-Attachments for a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox.
+An attachment of a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
+GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
-example below shows one level of nesting, but a message can be located in a child of a child and so on.
+An attachment of a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
+GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$value
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-Attachments for an [Outlook task](../resources/outlooktask.md).
+The preceding example shows one level of nesting, but a message can be located in a child of a child and so on.
+
+An attachment of an [Outlook task](../resources/outlooktask.md):
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/outlook/tasks/<id>/attachments/{id}
 GET /users/<id>/outlook/tasks/<id>/attachments/{id}
+GET /me/outlook/tasks/<id>/attachments/{id}/$value
+GET /users/<id>/outlook/tasks/<id>/attachments/{id}/$value
 ```
 
-Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
+An attachment of a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
+GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 
 ## Optional query parameters
@@ -106,9 +130,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
 
-## Example (file attachment)
+## Examples
 
-### Request
+### Example 1: Get the properties of a file attachment
+
+#### Request
 
 Here is an example of the request to get a file attachment on an event.
 <!-- {
@@ -120,7 +146,7 @@ Here is an example of the request to get a file attachment on an event.
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```
 
-### Response
+#### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -148,9 +174,9 @@ Content-length: 199
 }
 ```
 
-## Example (item attachment)
+### Example 2: Get the properties of an item attachment
 
-### Request 1
+#### Request
 
 The first example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
 <!-- {
@@ -162,7 +188,7 @@ The first example shows how to get an item attachment on a message. The properti
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-### Response 1
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -186,9 +212,10 @@ Content-type: application/json
 }
 ```
 
-### Request 2
+### Example 3: Expand and get the properties of the item attached to a message
+#### Request
 
-The next example shows how to use `$expand` to get the properties of the item that is attached to the message. In this example, that item is
+The next example shows how to use `$expand` to get the properties of the item (event, message, Outlook task, or post) that is attached to the message. In this example, that item is
 a message; the properties of that attached message are also returned.
 <!-- {
   "blockType": "request",
@@ -199,7 +226,7 @@ a message; the properties of that attached message are also returned.
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 
-### Response 2
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -278,9 +305,9 @@ Content-type: application/json
 }
 ```
 
-## Example (reference attachment)
+### Example 4: Get the properties of a reference attachment
 
-### Request
+#### Request
 
 Here is an example of the request to get a reference attachment on an event.
 <!-- {
@@ -292,7 +319,7 @@ Here is an example of the request to get a reference attachment on an event.
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
