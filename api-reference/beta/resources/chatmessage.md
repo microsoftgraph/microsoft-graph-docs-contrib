@@ -8,7 +8,8 @@ localization_priority: Priority
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message.
+Represents an individual chat message within a [channel](channel.md) or [chat](chat.md). 
+The message can be an root message or part of a thread that is defined by the **replyToId** property in the message.
 
 ## Methods
 

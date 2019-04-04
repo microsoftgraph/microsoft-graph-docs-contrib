@@ -1,16 +1,16 @@
 ---
-title: "List chats"
-description: "Retrieve the list of chats for a user"
+title: "Get chat"
+description: "Retrieve a single chat."
 author: "nkramer"
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# List channels
+# Get channel message
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [chats](../resources/chat.md) that the user is part of
+Retrieve a single [chat](../resources/chat.md) (without its messages).
 
 ## Permissions
 
@@ -47,47 +47,34 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chat](../resources/chat.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.
 
 ## Example
-
 ##### Request
-
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_channels"
+  "name": "get_channel_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users/id/chats
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
 ```
-
 ##### Response
-
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here are shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chat",
-  "isCollection": true
+  "@odata.type": "microsoft.graph.chatMessage"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 262
+Content-length: 201
 
 {
-  "value": [
-    {
-      "id": "id-value",
-      "topic": "string",
-      "createdDateTime": "dateTimeOffset",
-      "lastUpdatedDateTime": "dateTimeOffset",
-      "chatType": "string"
-    }
-  ]
+  "id": "id-value"
 }
 ```
 
@@ -96,12 +83,12 @@ Content-length: 262
 <!--
 {
   "type": "#page.annotation",
-  "description": "List channels",
+  "description": "Get channel message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/channel-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/channel-get-message.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
