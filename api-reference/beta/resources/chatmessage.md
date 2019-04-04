@@ -39,7 +39,7 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
 |importance| string | The importance of the message: Normal, High.|
-|reactions| [chatMessageReaction](chatreaction.md) collection | Reactions for this message (for example, Like).|
+|reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this message (for example, Like).|
 |locale|string|Locale of the message set by the client.|
 
 
