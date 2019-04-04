@@ -8,12 +8,10 @@ ms.prod: "microsoft-teams"
 
 # channel resource type
 
-
-
-A channel is a collection of messages within a [team](../resources/team.md). 
-A channel represents a topic, and therefore a logical isolation of discussion, within a team. 
-Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" channel.
-
+[Teams](../resources/team.md) are made up of channels, which are the conversations you have with your teammates. 
+Each channel is dedicated to a specific topic, department, or project.
+Channels are where the work actually gets done - where text, audio, and video conversations open to the whole team happen,
+where files are shared, and where tabs are added.
 
 ## Methods
 
