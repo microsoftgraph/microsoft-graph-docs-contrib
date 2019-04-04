@@ -58,8 +58,8 @@ Here is a JSON representation of the resource
   "description": "string",
   "displayName": "string",
   "email": "string (identifier)",
-  "id": "string (identifier)",
-  "webUrl": "string (identifier)"
+  "id": "string",
+  "webUrl": "string"
 }
 
 ```
