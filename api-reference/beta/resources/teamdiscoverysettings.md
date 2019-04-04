@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Settings to configure [team](team.md) discoverability by others. A team's discovery settings may only be changed if the team is private.
+Settings to configure [team](team.md) discoverability by others. A team's discovery settings may only be modified if the team is private.
 
 ## Properties
 | Property	   | Type	|Description|
