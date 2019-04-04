@@ -36,7 +36,7 @@
     "globalMetadata": { 
       "feedback_system": "GitHub",
       "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
-      "feedback_product_url": "https://developer.microsoft.com/en-us/graph/support",
+      "feedback_product_url": "https://developer.microsoft.com/graph/support",
       "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "author": "MSGraphDocsVteam",
