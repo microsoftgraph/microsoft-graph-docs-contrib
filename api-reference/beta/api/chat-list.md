@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# List channels
+# List chats
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
