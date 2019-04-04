@@ -21,7 +21,8 @@ An attachment can be one of the following types:
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
 resource.
 
-You can append the path segment `/$value` to get the raw value of a file or item attachment. For a file attachment, the `Content-Type` is based on its original content type. For a message-type item attachment, the raw value includes the MIME representation of that message. The `Content-Type` of a message attachment is based on the media type of the corresponding part of the MIME message.
+### Get the raw content of a file or item attachment
+You can append the path segment `/$value` to get the raw value of a file or item attachment. For a file attachment, the content type is based on its original content type. For a message-type item attachment, the raw value includes the MIME representation of that message. 
 
 Attempting to get the `$value` of a reference attachment returns HTTP 405.
 
@@ -42,7 +43,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md)) that support attachments:
 
-- To get the properties and relationships of an attachment, append a path segment that contains the attachment ID indexing into the **attachments** collection of the specified entity ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md)).
+- To get the properties and relationships of an attachment, specify the attachment ID to index into the **attachments** collection, attached to the specified [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) instance.
 - If the attachment is a file or Outlook item (contact, event, or message), you can further get the raw contents of the attachment by appending the path segment `/$value` to the request URL.
 
 An attachment of an [event](../resources/event.md):
@@ -128,7 +129,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
+If successful, the GET method returns a `200 OK` response code. 
+
+If you're getting the properties and relationships of an attachment, the response body includes an [attachment](../resources/attachment.md) object.
+
+If you're getting the raw contents of a file or item attachment, the response body includes the raw value of the attachment.
 
 ## Examples
 
@@ -136,14 +141,15 @@ If successful, this method returns a `200 OK` response code and [attachment](../
 
 #### Request
 
-Here is an example of the request to get a file attachment on an event.
+Here is an example of the request to get the properties of a file attachment on a message.
 <!-- {
   "blockType": "request",
-  "name": "get_file_attachment"
+  "name": "get_file_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
 
 #### Response
@@ -151,6 +157,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_file_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -158,19 +165,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 199
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
-  "contentType": "contentType-value",
-  "contentLocation": "contentLocation-value",
-  "contentBytes": "contentBytes-value",
-  "contentId": "null",
-  "lastModifiedDateTime": "2016-01-01T12:00:00Z",
-  "id": "id-value",
-  "isInline": false,
-  "name": "name-value",
-  "size": 99
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages('AAMkAGUzY5QKjAAA%3D')/attachments/$entity",
+    "@odata.type": "#microsoft.graph.fileAttachment",
+    "id": "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=",
+    "lastModifiedDateTime": "2019-04-02T03:41:29Z",
+    "name": "Draft sales invoice template.docx",
+    "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "size": 13068,
+    "isInline": false,
+    "contentId": null,
+    "contentLocation": null,
+    "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
 
@@ -181,7 +188,8 @@ Content-length: 199
 The first example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
 <!-- {
   "blockType": "request",
-  "name": "get_item_attachment"
+  "name": "get_item_attachment",
+  "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
 ```http
@@ -189,9 +197,10 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 ```
 
 #### Response
-
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_item_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
@@ -203,7 +212,7 @@ Content-type: application/json
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('d1a2fae9-db66-4cc9-8133-2184c77af1b8')/messages('AAMkADA1M-zAAA%3D')/attachments/$entity",
   "@odata.type":"#microsoft.graph.itemAttachment",
-  "id":"AAMkADA1MCJKtzmnlcqVgqI=",
+  "id":"AAMkADA1M-CJKtzmnlcqVgqI=",
   "lastModifiedDateTime":"2017-07-21T00:20:34Z",
   "name":"Reminder - please bring laptop",
   "contentType":null,
@@ -219,7 +228,8 @@ The next example shows how to use `$expand` to get the properties of the item (e
 a message; the properties of that attached message are also returned.
 <!-- {
   "blockType": "request",
-  "name": "get_and_expand_item_attachment"
+  "name": "get_and_expand_item_attachment",
+  "sampleKeys": ["AAMkADA1M-zAAA=","AAMkADA1M-CJKtzmnlcqVgqI="]
 }-->
 
 ```http
@@ -227,9 +237,10 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 ```
 
 #### Response
-
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_and_expand_item_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.itemAttachment"
 } -->
@@ -312,7 +323,8 @@ Content-type: application/json
 Here is an example of the request to get a reference attachment on an event.
 <!-- {
   "blockType": "request",
-  "name": "get_reference_attachment"
+  "name": "get_reference_attachment",
+  "sampleKeys": ["AAMkAGE1M88AADUv0uAAAG=","AAMkAGE1Mg72tgf7hJp0PICVGCc0g="]
 }-->
 
 ```http
@@ -320,9 +332,10 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 ```
 
 #### Response
-
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "get_reference_attachment",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
@@ -347,6 +360,112 @@ Content-type: application/json
   "permission": "edit",
   "isFolder": true
 }
+```
+
+
+### Example 5: Get the raw contents of a file attachment on a message
+
+#### Request
+
+Here is an example of the request to get the raw contents of a Word file that has been attached to a message.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_file_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=/$value
+```
+
+#### Response
+Here is an example of the response. 
+The actual response body includes the raw bytes of the file attachment, which are abbreviated here for brevity.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_file_attachment",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+{Raw bytes of the file}
+```
+
+### Example 6: Get the raw contents of a meeting invitation item attachment on a message
+
+#### Request
+
+Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_item_attachment",
+  "sampleKeys": ["AAMkAGUzY5QKiAAA=","AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ="]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ=/$value
+```
+
+#### Response
+Here is an example of the response. 
+
+The response body includes the **eventMessage** attachment in MIME format. The body of the  **eventMessage** is truncated for brevity. The full message body is returned from an actual call.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_item_attachment",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+
+From: Megan Bowen <MeganB@contoso.OnMicrosoft.com>
+To: Adele Vance <AdeleV@contoso.OnMicrosoft.com>
+Subject: Let's go for lunch
+Thread-Topic: Let's go for lunch
+Thread-Index: AdTPqxOmg4AXoJV960a1j5NrJCHYjA==
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Thu, 28 Feb 2019 21:17:58 +0000
+Message-ID:
+	<CY4PR2201MB1046E9C83FC42478EF4EE283C9750@CY4PR2201MB1046.namprd22.prod.outlook.com>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+Content-Type: multipart/alternative;
+	boundary="_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_"
+MIME-Version: 1.0
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_
+Content-Type: text/plain; charset="us-ascii"
+
+Does mid month work for you?
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_
+Content-Type: text/html; charset="us-ascii"
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+</head>
+<body>
+Does mid month work for you?
+</body>
+</html>
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_
+Content-Type: text/calendar; charset="utf-8"; method=REQUEST
+Content-Transfer-Encoding: base64
+
+QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
+
+
+--_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_--
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
