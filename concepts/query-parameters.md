@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
 
 ### Escaping single quotes
 
-For requests that use single quotes, if any parameter values also contain single quotes, those must be double escaped. Otherwise the request will fail due to invalid syntax. Note how in the example below the string value `let''s meet for lunch?` has the single quote escaped.
+For requests that use single quotes, if any parameter values also contain single quotes, those must be double escaped; otherwise, the request will fail due to invalid syntax. In the example, the string value `let''s meet for lunch?` has the single quote escaped.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet for lunch?'
