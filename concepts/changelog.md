@@ -11,7 +11,18 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## April 2019
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |v1.0 | Added support for application permissions to the [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) resource.|
+|Addition |v1.0| Added the **email** and **webUrl** properties to [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
+
+
 ## March 2019
+
 ### Risky users API
 
 | **Change type** | **Version**   | **Description**                          |
@@ -280,7 +291,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |beta| Introduced new resource type [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
 |Addition |beta| Introduced new resource type [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
-|Addition |beta| Added the isFavoriteByDefault, mail, and webUrl properties to [channel](/graph/api/resources/channel?view=graph-rest-beta).|
+|Addition |beta| Added the isFavoriteByDefault, email, and webUrl properties to [channel](/graph/api/resources/channel?view=graph-rest-beta).|
 |Addition |beta| Added the displayName property to [team](/graph/api/resources/team?view=graph-rest-beta).|
 |Addition |beta| Added the description property to [team](/graph/api/resources/team?view=graph-rest-beta).|
 |Addition |beta| Added the classification property to [team](/graph/api/resources/team?view=graph-rest-beta).|
