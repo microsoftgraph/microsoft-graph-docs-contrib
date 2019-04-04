@@ -11,17 +11,17 @@ Microsoft Graph tutorials are step-by-step training exercises that guide you thr
 
 The following tutorials are currently available:
 
-- [Android](/graph/tutorials/android/)
-- [Angular](/graph/tutorials/angular/)
-- [ASP.NET](/graph/tutorials/aspnet/)
-- [Microsoft Flow](/graph/tutorials/flow/)
-- [Node.js](/graph/tutorials/node/)
-- [PHP](/graph/tutorials/php/)
-- [Python](/graph/tutorials/python/)
-- [Ruby](/graph/tutorials/ruby/)
-- [React](/graph/tutorials/react/)
-- [UWP](/graph/tutorials/uwp/)
-- [Xamarin](/graph/tutorials/xamarin/)
+- [Android](/graph/tutorials/android)
+- [Angular](/graph/tutorials/angular)
+- [ASP.NET](/graph/tutorials/aspnet)
+- [Microsoft Flow](/graph/tutorials/flow)
+- [Node.js](/graph/tutorials/node)
+- [PHP](/graph/tutorials/php)
+- [Python](/graph/tutorials/python)
+- [Ruby](/graph/tutorials/ruby)
+- [React](/graph/tutorials/react)
+- [UWP](/graph/tutorials/uwp)
+- [Xamarin](/graph/tutorials/xamarin)
 
 Don't see your preferred language or platform? Request a tutorial for it on [UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis).
 
