@@ -26,6 +26,11 @@ where files are shared, and where tabs are added.
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
 |[Send channel message](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Send a message to a channel](../api/channel-post-chatmessage.md) |
+|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
+|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
+|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
+|[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
+|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 
 ## Properties
