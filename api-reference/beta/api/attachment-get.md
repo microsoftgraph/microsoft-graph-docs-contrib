@@ -21,8 +21,8 @@ An attachment can be one of the following types:
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
 resource.
 
-### Get the raw content of a file or item attachment
-You can append the path segment `/$value` to get the raw value of a file or item attachment. For a file attachment, the content type is based on its original content type. For a message-type item attachment, the raw value includes the MIME representation of that message. 
+### Get the raw contents of a file or item attachment
+You can append the path segment `/$value` to get the raw contents of a file or item attachment. For a file attachment, the content type is based on its original content type. For a message-type item attachment, the raw contents include the MIME representation of that message. 
 
 Attempting to get the `$value` of a reference attachment returns HTTP 405.
 
