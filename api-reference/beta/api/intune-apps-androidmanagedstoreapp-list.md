@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1202
+Content-Length: 1236
 
 {
   "value": [
@@ -90,7 +90,8 @@ Content-Length: 1202
       "appIdentifier": "App Identifier value",
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
-      "appStoreUrl": "https://example.com/appStoreUrl/"
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "supportsOemConfig": true
     }
   ]
 }
