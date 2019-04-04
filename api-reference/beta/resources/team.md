@@ -10,11 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<<<<<<< HEAD
-A team in Microsoft Teams is a collection of [channels](channel.md).
-=======
 A team in Microsoft Teams is a collection of [channel](channel.md) objects. 
->>>>>>> master
 A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
 Every team is associated with a [group](../resources/group.md).
@@ -56,7 +52,7 @@ For more information about working with groups and members in teams, see [Use th
 |isArchived|Boolean|Whether this team is in read-only mode. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Settings to configure whether members can perform certain actions, for example, create channels and add bots, in the team.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Settings to configure messaging and mentions in the team.|
-|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Settings to configure team discoverability by others.
+|discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Settings to configure team discoverability by others.|
 |webUrl|string (readonly) | A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select **Get link to team**. This URL should be treated as an opaque blob, and not parsed. |
 
 ## Relationships
