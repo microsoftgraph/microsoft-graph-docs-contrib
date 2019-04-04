@@ -53,7 +53,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json
