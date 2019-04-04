@@ -41,7 +41,7 @@ Specify the userIds to dismiss in the request body.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -64,11 +64,10 @@ Content-type: application/json
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUser"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

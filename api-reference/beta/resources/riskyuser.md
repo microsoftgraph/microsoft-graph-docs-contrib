@@ -22,8 +22,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |:---------------|:--------|:----------|
 |[List riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyUser.md) collection|List risky users and their properties.|
 |[Get riskyUsers](../api/riskyusers-get.md) | [riskyUser](riskyUser.md) collection|Get a specific risky user and its properties.|
-|[Confirm riskyUsers compromised](../api/riskyusers-confirmcompromised.md)| |Confirm a risky user as compromised.|
-|[Dismiss riskyUsers](../api/riskyusers-dismiss.md)| | Dismiss the risk of a risky user.|
+|[Confirm riskyUsers compromised](../api/riskyusers-confirmcompromised.md)|None |Confirm a risky user as compromised.|
+|[Dismiss riskyUsers](../api/riskyusers-dismiss.md)|None | Dismiss the risk of a risky user.|
 
 ## Properties
 

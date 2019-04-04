@@ -752,6 +752,11 @@ Possible values for user account types (group membership), per Windows definitio
 |leakedCredentials|
 |investigationsThreatIntelligence|
 |generic|
+|adminConfirmedUserCompromised|
+|mcasImpossibleTravel|
+|mcasSuspiciousInboxManipulationRules|
+|investigationsThreatIntelligenceSigninLinked|
+|maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
 
 ### exchangeIdFormat values

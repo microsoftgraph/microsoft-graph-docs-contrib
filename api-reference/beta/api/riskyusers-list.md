@@ -1,6 +1,6 @@
 ---
 title: "List riskyUsers"
-description: "Retrieve the properties and relationships of a **riskyUsers** object."
+description: "Retrieve the properties and relationships of a collection of **riskyUser** objects."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a **riskyUsers** object.
+Retrieve the properties and relationships of a collection of **riskyUser** objects.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{query}
+GET /riskyUsers
 ```
 ## Optional query parameters
 This method supports `$filter` to customize the query response. See the example later in this topic. 
@@ -40,7 +40,7 @@ This method supports `$filter` to customize the query response. See the example 
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and an [identityRiskEvent](../resources/identityriskevent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [riskyUser](../resources/riskyUser.md) objects in the response body.
 
 ## Examples
 #### Example 1: List risky users
@@ -57,6 +57,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "isCollection": true,
   "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
@@ -74,8 +75,8 @@ Content-type: application/json
             "riskDetail": "adminConfirmedSigninCompromised",
             "riskLevel": "high",
             "riskState": "atRisk",
-            "userDisplayName": "Jon Doe",
-            "userPrincipalName": "jon@contoso.com"
+            "userDisplayName": "Alex Wilbur",
+            "userPrincipalName": "alexw@contoso.com"
         }
     ]
 }
@@ -114,8 +115,8 @@ Content-type: application/json
             "riskDetail": "none",
             "riskLevel": "medium",
             "riskState": "atRisk",
-            "userDisplayName": "Jon Doe",
-            "userPrincipalName": "jon@contoso.com",
+            "userDisplayName": "Alex Wilbur",
+            "userPrincipalName": "alexw@contoso.com",
         }
     ]
 }
