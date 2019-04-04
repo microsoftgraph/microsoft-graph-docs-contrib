@@ -16,6 +16,54 @@ description: "Microsoft Graph enumeration values"
 |other|6| An unspecified relationship to the user.|
 |unknownFutureValue|7| Marker value for future compatibility.|
 
+
+### scheduleEntityTheme values
+
+| Value
+|:-------------------------
+| white
+| blue
+| green
+| purple
+| pink
+| yellow
+| gray
+| darkBlue
+| darkGreen
+| darkPurple
+| darkPink
+| darkYellow
+| unknownFutureValue
+
+
+### timeOffReasonIconType values
+
+|Member|
+|:---|
+|none|
+|car|
+|calendar|
+|running|
+|plane|
+|firstAid|
+|doctor|
+|notWorking|
+|clock|
+|juryDuty|
+|globe|
+|cup|
+|phone|
+|weather|
+|umbrella|
+|piggyBank|
+|dog|
+|cake|
+|trafficCone|
+|pin|
+|sunny|
+|unknownFutureValue|
+
+
 ### timeZoneStandard values
 
 | Value
@@ -731,30 +779,3 @@ Possible values for user account types (group membership), per Windows definitio
 |objectAddOnly|
 |multiValueAddOnly|
 |restId|
-
-### timeOffReasonIconType values
-
-|Member|
-|:---|
-|none|
-|car|
-|calendar|
-|running|
-|plane|
-|firstAid|
-|doctor|
-|notWorking|
-|clock|
-|juryDuty|
-|globe|
-|cup|
-|phone|
-|weather|
-|umbrella|
-|piggyBank|
-|dog|
-|cake|
-|trafficCone|
-|pin|
-|sunny|
-|unknownFutureValue|

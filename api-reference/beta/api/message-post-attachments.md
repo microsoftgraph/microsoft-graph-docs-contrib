@@ -209,7 +209,7 @@ HTTP 201 Created
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/ddfcd489-628b-40d7-b48b-57002df800e5/messages/AAMkAGE1M88AADUv0uFAAA%3D/attachments/$entity",
-  "@odata.type": "microsoft.graph.referenceAttachment",
+  "@odata.type": "#microsoft.graph.referenceAttachment",
   "id": "AAMkAGE1Mg72tgf7hJp0PICVGCc0g=",
   "lastModifiedDateTime": "2016-03-12T06:04:38Z",
   "name": "Personal pictures",

@@ -297,7 +297,7 @@ Content-type: application/json
 
 {
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('48d31887-5fad-4d73-a9f5-3c356e68a038')/messages(internetMessageHeaders)/$entity",
-  "@odata.type":"microsoft.graph.eventMessageRequest",
+  "@odata.type":"#microsoft.graph.eventMessageRequest",
   "@odata.etag":"W/\"CwAAABYAAAAiIsqMbYjsT5e/T7KzowPTAAAa/qUB\"",
   "id":"AAMkAGVmMDEz",
   "internetMessageHeaders":[
