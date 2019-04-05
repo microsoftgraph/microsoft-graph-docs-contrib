@@ -13,13 +13,18 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## April 2019
 
+### Messages
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta          | Added support for a new [Mail.ReadBasic (Preview) permission](permissions-reference.md#mail-permissions) for [List Messages](/graph/api/user-list-messages?view=graph-rest-beta) and [Get Message](/graph/api/message-get?view=graph-rest-beta).            |
+
 ### Microsoft Teams APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |v1.0 | Added support for application permissions to the [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) resource.|
 |Addition |v1.0| Added the **email** and **webUrl** properties to [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
-
 
 ## March 2019
 
