@@ -153,7 +153,7 @@ It is appropriate for scenarios that depend on [streamlining appointment booking
 ### Permissions
 The least privileged permissions required by **findmeetingtimes** is Calendars.Read.Shared.
 
-The least privileged permission required by **getSchedule** is Calendar.Read. 
+The least privileged permission required by **getSchedule** is Calendars.Read. 
 
 ### Version support
 
@@ -161,7 +161,7 @@ The least privileged permission required by **getSchedule** is Calendar.Read.
 
 
 ## Event data returned
-The least privileged permission required by **getSchedule** for an app to get free/busy information is Calendar.Read. Depending on your app scenario, this can be consented by the signed-in user or administrator.
+The least privileged permission required by **getSchedule** for an app to get free/busy information is Calendars.Read. Depending on your app scenario, this can be consented by the signed-in user or administrator.
 
 While the consented permission lets an app use **getSchedule** on the requested users' calendars, through Outlook, the requested user controls which event data, if any, that **getSchedule** returns. 
 
