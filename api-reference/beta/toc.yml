@@ -49,16 +49,16 @@
         href: /graph/extensibility-open-users?toc=./ref/toc.json
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-    - name: Resources
-      items:
-      - name: Best practices
-        href: /graph/best-practices-concept?toc=./ref/toc.json
-      - name: Known issues
-        href: /graph/known-issues?toc=./ref/toc.json
-      - name: Changelog
-        href: /graph/changelog?toc=./ref/toc.json
-      - name: Errors
-        href: /graph/errors?toc=./ref/toc.json
+  - name: Resources
+    items:
+    - name: Best practices
+      href: /graph/best-practices-concept?toc=./ref/toc.json
+    - name: Known issues
+      href: /graph/known-issues?toc=./ref/toc.json
+    - name: Changelog
+      href: /graph/changelog?toc=./ref/toc.json
+    - name: Errors
+      href: /graph/errors?toc=./ref/toc.json
   - name: Reference
     href: overview.md
     expanded: true
@@ -103,6 +103,8 @@
           href: api/user-reminderview.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
+        - name: Find meeting times
+          href: api/user-findmeetingtimes.md
         - name: Find room lists
           href: api/user-findroomlists.md
         - name: Find rooms
@@ -588,10 +590,10 @@
           href: api/calendar-list-events.md
         - name: Create Event
           href: api/calendar-post-events.md
-        - name: Find meeting times
-          href: api/user-findmeetingtimes.md
         - name: Get free/busy schedule
           href: api/calendar-getschedule.md
+        - name: Find meeting times
+          href: api/user-findmeetingtimes.md
         - name: Find room lists
           href: api/user-findroomlists.md
         - name: Find rooms
@@ -5111,10 +5113,216 @@
           href: resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md
         - name: Device health attestation state
           href: resources/intune-devices-devicehealthattestationstate.md
+        - name: Device management abstract complex setting definition
+          href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-update.md
+        - name: Device management abstract complex setting instance
+          href: resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-update.md
+        - name: Device management boolean setting instance
+          href: resources/intune-deviceintent-devicemanagementbooleansettinginstance.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementbooleansettinginstance-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementbooleansettinginstance-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementbooleansettinginstance-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementbooleansettinginstance-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementbooleansettinginstance-update.md
+        - name: Device management collection setting definition
+          href: resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-update.md
+        - name: Device management collection setting instance
+          href: resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-update.md
+        - name: Device management complex setting definition
+          href: resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-update.md
+        - name: Device management complex setting instance
+          href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-update.md
+        - name: Device management constraint
+          href: resources/intune-deviceintent-devicemanagementconstraint.md
+        - name: Device management enum constraint
+          href: resources/intune-deviceintent-devicemanagementenumconstraint.md
+        - name: Device management enum value
+          href: resources/intune-deviceintent-devicemanagementenumvalue.md
         - name: Device management exchange access state
           href: resources/intune-devices-devicemanagementexchangeaccessstate.md
         - name: Device management exchange access state reason
           href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
+        - name: Device management integer setting instance
+          href: resources/intune-deviceintent-devicemanagementintegersettinginstance.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementintegersettinginstance-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementintegersettinginstance-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementintegersettinginstance-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementintegersettinginstance-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementintegersettinginstance-update.md
+        - name: Device management intent
+          href: resources/intune-deviceintent-devicemanagementintent.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementintent-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementintent-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementintent-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementintent-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementintent-update.md
+          - name: updateSettings action
+            href: api/intune-deviceintent-devicemanagementintent-updatesettings.md
+          - name: assign action
+            href: api/intune-deviceintent-devicemanagementintent-assign.md
+        - name: Device management intent assignment
+          href: resources/intune-deviceintent-devicemanagementintentassignment.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementintentassignment-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementintentassignment-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementintentassignment-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementintentassignment-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementintentassignment-update.md
+        - name: Device management intent device setting state summary
+          href: resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-update.md
+        - name: Device management intent device state
+          href: resources/intune-deviceintent-devicemanagementintentdevicestate.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementintentdevicestate-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementintentdevicestate-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementintentdevicestate-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementintentdevicestate-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementintentdevicestate-update.md
+        - name: Device management intent device state summary
+          href: resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md
+          items:
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-get.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-update.md
+        - name: Device management intent setting category
+          href: resources/intune-deviceintent-devicemanagementintentsettingcategory.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementintentsettingcategory-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementintentsettingcategory-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementintentsettingcategory-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementintentsettingcategory-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementintentsettingcategory-update.md
+        - name: Device management intent user state
+          href: resources/intune-deviceintent-devicemanagementintentuserstate.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementintentuserstate-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementintentuserstate-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementintentuserstate-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementintentuserstate-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementintentuserstate-update.md
+        - name: Device management intent user state summary
+          href: resources/intune-deviceintent-devicemanagementintentuserstatesummary.md
+          items:
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementintentuserstatesummary-get.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementintentuserstatesummary-update.md
         - name: Device management script
           href: resources/intune-devices-devicemanagementscript.md
           items:
@@ -5189,10 +5397,96 @@
             href: api/intune-devices-devicemanagementscriptuserstate-delete.md
           - name: Update
             href: api/intune-devices-devicemanagementscriptuserstate-update.md
+        - name: Device management setting boolean constraint
+          href: resources/intune-deviceintent-devicemanagementsettingbooleanconstraint.md
+        - name: Device management setting category
+          href: resources/intune-deviceintent-devicemanagementsettingcategory.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementsettingcategory-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementsettingcategory-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementsettingcategory-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementsettingcategory-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementsettingcategory-update.md
+        - name: Device management setting definition
+          href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementsettingdefinition-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementsettingdefinition-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementsettingdefinition-update.md
+        - name: Device management setting dependency
+          href: resources/intune-deviceintent-devicemanagementsettingdependency.md
+        - name: Device management setting instance
+          href: resources/intune-deviceintent-devicemanagementsettinginstance.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementsettinginstance-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
+        - name: Device management setting integer constraint
+          href: resources/intune-deviceintent-devicemanagementsettingintegerconstraint.md
+        - name: Device management setting regex constraint
+          href: resources/intune-deviceintent-devicemanagementsettingregexconstraint.md
+        - name: Device management setting string length constraint
+          href: resources/intune-deviceintent-devicemanagementsettingstringlengthconstraint.md
+        - name: Device management setting xml constraint
+          href: resources/intune-deviceintent-devicemanagementsettingxmlconstraint.md
+        - name: Device management string setting instance
+          href: resources/intune-deviceintent-devicemanagementstringsettinginstance.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementstringsettinginstance-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementstringsettinginstance-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementstringsettinginstance-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementstringsettinginstance-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementstringsettinginstance-update.md
         - name: Device management subscription state
           href: resources/intune-devices-devicemanagementsubscriptionstate.md
         - name: Device management subscriptions
           href: resources/intune-devices-devicemanagementsubscriptions.md
+        - name: Device management template
+          href: resources/intune-deviceintent-devicemanagementtemplate.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementtemplate-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementtemplate-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementtemplate-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementtemplate-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementtemplate-update.md
+          - name: createInstance action
+            href: api/intune-deviceintent-devicemanagementtemplate-createinstance.md
+        - name: Device management template setting category
+          href: resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-list.md
+          - name: Get
+            href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-get.md
+          - name: Create
+            href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-create.md
+          - name: Delete
+            href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-delete.md
+          - name: Update
+            href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-update.md
         - name: Device management troubleshooting error details
           href: resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md
         - name: Device management troubleshooting error resource
@@ -5210,6 +5504,8 @@
             href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
           - name: Update
             href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
+        - name: Device manangement intent value type
+          href: resources/intune-deviceintent-devicemanangementintentvaluetype.md
         - name: Device operating system summary
           href: resources/intune-devices-deviceoperatingsystemsummary.md
         - name: Device protection overview
@@ -5539,6 +5835,67 @@
           href: resources/intune-devices-revokeapplevpplicensesactionresult.md
         - name: Run schedule
           href: resources/intune-devices-runschedule.md
+        - name: Security baseline compliance state
+          href: resources/intune-deviceintent-securitybaselinecompliancestate.md
+        - name: Security baseline device state
+          href: resources/intune-deviceintent-securitybaselinedevicestate.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-securitybaselinedevicestate-list.md
+          - name: Get
+            href: api/intune-deviceintent-securitybaselinedevicestate-get.md
+          - name: Create
+            href: api/intune-deviceintent-securitybaselinedevicestate-create.md
+          - name: Delete
+            href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
+          - name: Update
+            href: api/intune-deviceintent-securitybaselinedevicestate-update.md
+        - name: Security baseline setting state
+          href: resources/intune-deviceintent-securitybaselinesettingstate.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-securitybaselinesettingstate-list.md
+          - name: Get
+            href: api/intune-deviceintent-securitybaselinesettingstate-get.md
+          - name: Create
+            href: api/intune-deviceintent-securitybaselinesettingstate-create.md
+          - name: Delete
+            href: api/intune-deviceintent-securitybaselinesettingstate-delete.md
+          - name: Update
+            href: api/intune-deviceintent-securitybaselinesettingstate-update.md
+        - name: Security baseline state
+          href: resources/intune-deviceintent-securitybaselinestate.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-securitybaselinestate-list.md
+          - name: Get
+            href: api/intune-deviceintent-securitybaselinestate-get.md
+          - name: Create
+            href: api/intune-deviceintent-securitybaselinestate-create.md
+          - name: Delete
+            href: api/intune-deviceintent-securitybaselinestate-delete.md
+          - name: Update
+            href: api/intune-deviceintent-securitybaselinestate-update.md
+        - name: Security baseline state summary
+          href: resources/intune-deviceintent-securitybaselinestatesummary.md
+          items:
+          - name: Get
+            href: api/intune-deviceintent-securitybaselinestatesummary-get.md
+          - name: Update
+            href: api/intune-deviceintent-securitybaselinestatesummary-update.md
+        - name: Security baseline template
+          href: resources/intune-deviceintent-securitybaselinetemplate.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-securitybaselinetemplate-list.md
+          - name: Get
+            href: api/intune-deviceintent-securitybaselinetemplate-get.md
+          - name: Create
+            href: api/intune-deviceintent-securitybaselinetemplate-create.md
+          - name: Delete
+            href: api/intune-deviceintent-securitybaselinetemplate-delete.md
+          - name: Update
+            href: api/intune-deviceintent-securitybaselinetemplate-update.md
         - name: Shared Apple device user
           href: resources/intune-devices-sharedappledeviceuser.md
         - name: Unary management condition expression
@@ -6535,6 +6892,10 @@
           href: api/educationclass-list-assignments.md
         - name: Create assignment
           href: api/educationclass-post-assignments.md
+        - name: List categories
+          href: api/educationclass-list-categories.md
+        - name: Create category
+          href: api/educationclass-post-category.md
       - name: Users
         href: resources/educationuser.md
         items:
@@ -6573,6 +6934,19 @@
           href: api/educationassignment-list-submissions.md
         - name: Get resource folder URL
           href: api/educationassignment-getresourcesfolderurl.md
+        - name: List categories
+          href: api/educationassignment-list-categories.md
+        - name: Add category
+          href: api/educationassignment-add-categories.md
+        - name: Remove category
+          href: api/educationassignment-remove-category.md
+      - name: Category
+        href: resources/educationcategory.md
+        items:
+        - name: Get category
+          href: api/educationcategory-get.md
+        - name: Delete category
+          href: api/educationcategory-delete.md
       - name: Submission
         href: resources/educationsubmission.md
         items:
@@ -7247,6 +7621,10 @@
             href: api/riskyusers-list.md
           - name: Get
             href: api/riskyusers-get.md
+          - name: Confirm compromised
+            href: api/riskyusers-confirmcompromised.md
+          - name: Dismiss
+            href: api/riskyusers-dismiss.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
