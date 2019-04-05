@@ -27,6 +27,7 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Auditing** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Company terms** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **Device intent** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Electronic SIM** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All |
