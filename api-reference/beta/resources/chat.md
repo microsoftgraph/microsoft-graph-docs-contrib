@@ -30,7 +30,6 @@ Participants can be users or apps.
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was updated. Read-only.|
-| chatType| String|  The type of chat. Supported values: MicrosoftTeams, Interop, Federation.|
 
 ## Relationships
 | Relationship | Type	|Description|
