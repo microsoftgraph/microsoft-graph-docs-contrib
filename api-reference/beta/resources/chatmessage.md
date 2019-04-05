@@ -29,7 +29,7 @@ The message can be an root message or part of a thread that is defined by the **
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the message.|
-|replyToId| string | Id of the parent message/root message of the thread. |
+|replyToId| string | Id of the parent message/root message of the thread. (Only applies to messages in channels not chats) |
 |from|[identitySet](identityset.md)| Read only. Details of the sender of the message.|
 |etag| string | Version number of the message. |
 |messageType|String|The type of message, current supported values are: message, chatEvent, Typing.|
@@ -37,8 +37,8 @@ The message can be an root message or part of a thread that is defined by the **
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated.|
 |deleted|Boolean|Indicates whether a message has been soft deleted.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted, or null if not deleted. |
-|body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
-|summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
+|body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param.|
+|summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views.|
 |mentions|[chatMessageMention](chatmention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
 |importance| string | The importance of the message: Normal, High.|
 |reactions| [chatMessageReaction](chatreaction.md) collection | Reactions for this message (for example, Like)|
