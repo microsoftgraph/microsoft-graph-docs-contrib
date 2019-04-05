@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Get channel message
+# Get chat message
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
