@@ -21,6 +21,8 @@ The message can be an root message or part of a thread that is defined by the **
 |[Get a reply to a message](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Get a single reply to a message in a channel.|
 |[Send a message in a channel](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Create a new top-level message in a channel.|
 |[Reply to a message in a channel](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Reply to an existing message in a channel.|
+|[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a 1:1 or group chat. |
+|[Get message in chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
 
 
 ## Properties
