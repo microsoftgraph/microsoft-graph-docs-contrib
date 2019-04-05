@@ -1,6 +1,6 @@
 ---
 title: "List chats"
-description: "Retrieve the list of chats for a user"
+description: "Retrieve the list of chats for a user."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,18 +10,17 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [chats](../resources/chat.md) that the user is part of
+Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Chat.Read   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported   |
+|Application | Not supported.   |
 
 ## HTTP request
 

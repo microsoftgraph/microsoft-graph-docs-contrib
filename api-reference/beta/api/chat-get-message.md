@@ -1,6 +1,6 @@
 ---
-title: "Get channel message"
-description: "Retrieve a single message (without its replies) in a channel of a team."
+title: "Get chat message"
+description: "Retrieve a single message in a chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -10,24 +10,28 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single [message](../resources/chatmessage.md) (without its replies) in a [channel](../resources/channel.md) of a team.
+Retrieve a single [message](../resources/chatmessage.md) in a [chat](../resources/chat.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission Type|Permissions (from least to most privileged)|
-|---------|-------------|
-|Delegated (work or school account)|Group.Read.All,Group.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application| Not supported. |
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Chat.Read   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported.   |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/messages/{id}
+GET /me/chats/{id}/messages/{id}
+GET /chats/{id}/messages/{id}
 ```
 
 ## Optional query parameters
+
 The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
 
 ## Request headers
@@ -50,8 +54,9 @@ Here is an example of the request.
   "name": "get_channel_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
+GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 ```
+
 ##### Response
 Here is an example of the response. 
 
