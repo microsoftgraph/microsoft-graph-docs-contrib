@@ -25,7 +25,21 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **intents**, **settingDefinitions**, **templates** and **categories** navigation properties to the [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta) entity|
 |Addition|beta|Added the **securityBaselineStates** navigation property to the [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) entity|
 
+### Messages
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition        | beta          | Added support for a new [Mail.ReadBasic (Preview) permission](permissions-reference.md#mail-permissions) for [List Messages](/graph/api/user-list-messages?view=graph-rest-beta) and [Get Message](/graph/api/message-get?view=graph-rest-beta).            |
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Addition |v1.0 | Added support for application permissions to the [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) resource.|
+|Addition |v1.0| Added the **email** and **webUrl** properties to [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
+
 ## March 2019
+
 ### Risky users API
 
 | **Change type** | **Version**   | **Description**                          |
@@ -294,7 +308,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |beta| Introduced new resource type [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
 |Addition |beta| Introduced new resource type [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
-|Addition |beta| Added the isFavoriteByDefault, mail, and webUrl properties to [channel](/graph/api/resources/channel?view=graph-rest-beta).|
+|Addition |beta| Added the isFavoriteByDefault, email, and webUrl properties to [channel](/graph/api/resources/channel?view=graph-rest-beta).|
 |Addition |beta| Added the displayName property to [team](/graph/api/resources/team?view=graph-rest-beta).|
 |Addition |beta| Added the description property to [team](/graph/api/resources/team?view=graph-rest-beta).|
 |Addition |beta| Added the classification property to [team](/graph/api/resources/team?view=graph-rest-beta).|
@@ -794,9 +808,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Change|beta|Updated [chatmessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource|
-|Addition|beta|Added [Chat attachment](/graph/api/resources/chatattachment?view=graph-rest-beta) resource type|
-|Addition|beta|Added [Chat mention](/graph/api/resources/chatattachment?view=graph-rest-beta) resource type|
-|Addition|beta|Added [Chat reaction](/graph/api/resources/chatattachment?view=graph-rest-beta) resource type|
+|Addition|beta|Added [Chat attachment](/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource type|
+|Addition|beta|Added [Chat mention](/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource type|
+|Addition|beta|Added [Chat reaction](/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource type|
 |Addition|beta|Added [Get all channel messages API](/graph/api/channel-list-messages?view=graph-rest-beta) |
 |Addition|beta|Added [Get channel message API](/graph/api/channel-get-message?view=graph-rest-beta) |
 |Addition|beta|Added [Get all message replies API](/graph/api/channel-list-messagereplies?view=graph-rest-beta) |
@@ -810,9 +824,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added [Get channel message API](/graph/api/channel-get-message?view=graph-rest-beta) |
 |Addition|beta|Added [Get all message replies API](/graph/api/channel-list-messagereplies?view=graph-rest-beta) |
 |Addition|beta|Added [Get reply to a message API](/graph/api/channel-get-messagereply?view=graph-rest-beta) |
-|Addition|beta|Added [Chat attachment](/graph/api/resources/chatattachment?view=graph-rest-beta) resource type|
-|Addition|beta|Added [Chat mention](/graph/api/resources/chatattachment?view=graph-rest-beta) resource type|
-|Addition|beta|Added [Chat reaction](/graph/api/resources/chatattachment?view=graph-rest-beta) resource type|
+|Addition|beta|Added [Chat attachment](/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource type|
+|Addition|beta|Added [Chat mention](/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource type|
+|Addition|beta|Added [Chat reaction](/graph/api/resources/chatmessageattachment?view=graph-rest-beta) resource type|
 |Change|beta|Updated [chatmessage](/graph/api/resources/chatmessage?view=graph-rest-beta)) resource|
 |Deletion|beta|Removed DELETE /groups/{id}/team/channels/{id}, use DELETE /teams/{id}/channels/{id} instead. |
 |Deletion|beta|Removed GET /groups/{id}/team/channels/{id}, use GET /teams/{id}/channels/{id} instead. |
