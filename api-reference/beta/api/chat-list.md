@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats
-GET /users/id/chats
+GET /users/{id}/chats
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ Here is an example of the request.
   "name": "get_channels"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/users/id/chats
+GET https://graph.microsoft.com/beta/users/{id}/chats
 ```
 
 ##### Response

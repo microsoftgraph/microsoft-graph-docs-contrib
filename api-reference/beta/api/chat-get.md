@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Get channel message
+# Get chat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/chats
-GET /users/id/chats
+GET /me/chats/{id}
+GET /users/{id}/chats/{id}
 ```
 
 ## Optional query parameters
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [chat](../resources/chat.md) objects in the response body.
 
 ## Example
 ##### Request
@@ -57,7 +57,7 @@ Here is an example of the request.
   "name": "get_channel_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
+GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
 ```
 ##### Response
 Here is an example of the response. 
