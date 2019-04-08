@@ -305,6 +305,7 @@
           - name: Audit API use
             href: migrate-azure-ad-graph-audit-api-use.md
           - name: Differences
+            expanded: true
             items: 
             - name: Request differences
               href: migrate-azure-ad-graph-request-differences.md
@@ -317,6 +318,7 @@
             - name: Service feature differences
               href: migrate-azure-ad-graph-feature-differences.md
           - name: Review app details
+            expanded: true
             items:
             - name: App registration
               href: migrate-azure-ad-graph-app-registration.md

@@ -39,7 +39,7 @@ To learn more, including progress updates and timelines, see [Microsoft Graph or
 
 Use the following checklist to plan your migration:
 
-1.  **Research the differences between the APIs**
+1.  Research the differences between the APIs
 
     In many respects, the Microsoft Graph API is similar to the earlier Azure AD Graph API; however, there are differences.  Certain resources, properties, methods, and permissions have changed. 
 
@@ -77,5 +77,5 @@ Use the following checklist to plan your migration:
 ## Next Steps
 
 - Learn how to [audit API differences](migrate-azure-ad-graph-audit-api-use.md) between Azure AD Graph and Microsoft graph.
-- Learn more [Microsoft Graph](/graph/overview) concepts and practices.
-- Use Experiment [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
+- Explore [Microsoft Graph](/graph/overview) concepts and practices.
+- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

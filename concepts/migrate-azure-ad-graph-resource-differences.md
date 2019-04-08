@@ -1,18 +1,18 @@
 ---
-title: "Review resource changes from Azure AD Graph to Microsoft Graph | Microsoft Graph"
+title: "Resource type changes between Azure AD Graph and Microsoft Graph | Microsoft Graph"
 description: "Describes differences between resources in Azure AD Graph and resources in Microsoft Graph in order to help migrate apps."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Review resource changes from Azure AD to Microsoft Graph
+# Review resource type changes between Azure AD Graph and Microsoft Graph
 
-When migrating apps to Microsoft Graph, be aware that some resources have different names.  For example, if your Azure AD Graph app uses the tenantInfo resource, you'll need to update your code to refer to organization instead.
+When migrating apps to Microsoft Graph, be aware that some resources have different names and different types.  For example, if your Azure AD Graph app uses the **tenantInfo** resource, you'll need to update your code to refer to [organization](graph/api/resources/organization?view=graph-rest-1.0) instead.
 
 The following table highlights differences between Azure AD Graph and Microsoft Graph resources.  It shows resources that have different names or are not available; it also highlights resources available in the beta version of Microsoft Graph but not in the v1.0 version.
 
-If a resource is not shown in this list, it is available in the v1.0 version of Microsoft Graph.
+If a resource is not shown in this list, it is available in the [v1.0 version](graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0) of Microsoft Graph.
 
 |Azure AD Graph <br>(v1.6) resource |Microsoft Graph<br>resource|Comments|
 |---|---|---|
@@ -43,16 +43,8 @@ If a resource is not shown in this list, it is available in the v1.0 version of 
 | trustedCasForPasswordAuth | beta/&nbsp;-&nbsp;certificateBasedAuthConfiguration _Not yet available_ <br> v1.0/ - certificateBasedAuthConfiguration _Not yet available_  | |
 | userIdentity | beta/ - identityObject _Not yet available_ <br> v1.0 - identityObject _Not yet available_ |  Models identifiers used to sign into a user account.  Supports B2C scenarios. |
 
-## Example - ??
-
-_TODO: Determine if we want an example change here_
-
 ## Next Steps
 
-- Learn about [Link to next article in the series](#).
-- Follow Microsoft Graph [blogs](https://developer.microsoft.com/graph/blogs) for updates and review the [documentation](https://developer.microsoft.com/graph).
-- Manage Azure AD resources, such as [users](https://docs.microsoft.com/graph/azuread-users-concept-overview), [groups](https://docs.microsoft.com/graph/office365-groups-concept-overview), and [identity access](https://docs.microsoft.com/graph/azuread-identity-access-management-concept-overview).
-- Use [quick starts and samples](https://developer.microsoft.com/graph/get-started) to come up to speed quickly.
-- Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications supporting multiple operating systems and languages.
-- Experiment using the [Graph Explorer](https://aka.ms/ge).
-
+- Learn about [entity property differences](migrate-azure-ad-graph-property-differences.md) between Azure AD Graph and Microsoft Graph.
+- Explore [Microsoft Graph](/graph/overview) concepts and practices.
+- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
