@@ -106,6 +106,62 @@ Here are the property differences for device resources:
 | dirSyncEnabled |  beta/&nbsp;-&nbsp;onPremisesSyncEnabled <br> v1.0/ - onPremisesSyncEnabled |  |
 | lastDirSyncTime |  beta/&nbsp;-&nbsp;onPremisesLastSyncDateTime <br> v1.0/ - onPremisesLastSyncDateTime |  |
 
+## DirectoryObjectReference property differences
+
+The Azure AD Graph directoryObjectReference resource has been renamed to directoryObjectPartnerReference in Microsoft Graph.  Here are the property differences:
+
+|Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
+|---|---|---|
+| externalContextId | beta/&nbsp;-&nbsp;externalPartnerTenantId <br> v1.0/ - externalPartnerTenantId |  |
+
+## Domain property differences
+
+Here are the property differences for device resources:
+
+|Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
+|---|---|---|
+| name | beta/&nbsp;-&nbsp;id <br> v1.0/ - id | In Microsoft Graph, the unique identifier (id) contains the domain name; the `name` property doesn't exist. |
+| forceDeleteState |  beta/&nbsp;-&nbsp;state <br> v1.0/ - state | In Azure AD Graph, there are separate forceDelete and domain state properties.  In Microsoft Graph, all domain states are handled by the state property. |
+| isDefaultForCloudRedirections | beta/&nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_&nbsp;<br> v1.0/ - _Not yet available_ | |
+
+## OAuth2PermissionsGrant property differences
+
+TBD
+
+## Policy property differences
+
+TBD
+
+## ServiceEndpoint property differences
+
+|Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
+|---|---|---|
+| capability | beta/&nbsp;-&nbsp;capability<br> v1.0 - _Not yet available_ | |
+| serviceId | beta/&nbsp;-&nbsp;providerId<br> v1.0 - _Not yet available_ | |
+| serviceName | beta/&nbsp;-&nbsp;providerName<br> v1.0 - _Not yet available_ | |
+| resourceId | beta/&nbsp;-&nbsp;providerResourceId<br> v1.0 - _Not yet available_ | |
+| uri | beta/&nbsp;-&nbsp;uri<br> v1.0 - _Not yet available_ | |
+
+## ServicePrincipal property differences
+
+TBD
+
+## TenantDetails property differences
+
+The Azure AD Graph tenantDetails resource has been renamed to organization in Microsoft Graph.  Here are the property differences:
+
+|Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
+|---|---|---|
+| companyLastDirSyncTime | beta/&nbsp;-&nbsp;onPremisesLastSyncDateTime <br> v1.0/ - onPremisesLastSyncDateTime |  |
+| dirSyncEnabled | beta/&nbsp;-&nbsp;onPremisesSyncEnabled <br> v1.0/ - onPremisesSyncEnabled |  |
+| provisoningErrors | beta/&nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_<br> v1.0 - _Not yet available_ | |
+| telephoneNumber | beta/&nbsp;-&nbsp;businessPhones <br> v1.0/ - businessPhones |  |
+
+## TrustedCasForPasswordlessAuth property differences
+
+TBD
+
+
 ## Next Steps
 
 - Learn about [method differences](migrate-azure-ad-graph-method-differences.md) between Azure AD Graph and Microsoft Graph.
