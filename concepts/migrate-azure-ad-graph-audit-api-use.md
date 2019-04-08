@@ -14,11 +14,11 @@ Compare your list to the known differences.  This helps identify specific change
 
 Broadly speaking, Microsoft Graph supports many of the same features and capabilities of Azure AD graph.  There are a few key differences:
 
-- Request differences
-- Resource type (entity) differences
-- Property differences
-- Method differences
-- Feature differences
+- [Request differences](migrate-azure-ad-graph-request-differences.md)
+- [Resource type](migrate-azure-ad-graph-resource-differences.md) (entity) differences
+- [Property differences](migrate-azure-ad-graph-property-differences.md)
+- [Method differences](migrate-azure-ad-graph-method-differences.md)
+- [Feature differences](migrate-azure-ad-graph-feature-differences.md)
 
 You'll also want to verify the permissions required for the features you're using.  In some cases, more granular permissions are available.
 
