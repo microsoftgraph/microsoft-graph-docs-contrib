@@ -21,7 +21,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
 |[List riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyUser.md) collection|List risky users and their properties.|
-|[Get riskyUsers](../api/riskyusers-get.md) | [riskyUser](riskyUser.md) collection|Get a specific risky user and its properties.|
+|[Get riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|Get a specific risky user and its properties.|
 |[Confirm riskyUsers compromised](../api/riskyusers-confirmcompromised.md)|None |Confirm a risky user as compromised.|
 |[Dismiss riskyUsers](../api/riskyusers-dismiss.md)|None | Dismiss the risk of a risky user.|
 
@@ -34,9 +34,9 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`isGuest`|`bool`|Indicates whether the user is a guest user. Possible values are: `true`, `false`. True if user’s identity lies outside of the tenant in consideration. This user could be a B2B or a B2C user with identity in Azure AD, MSA or 3rd party identity provider. False if user’s identity lies inside the tenant in consideration|
 |`isProcessing`|`bool`|Indicates wehther a user's risky state is being processed by the backend|
 |`riskLastUpdatedDateTime`|`datetime`|The date and time that the risky user was last updated|
-|`riskLevel`|`riskLevel`| low, medium, high, hidden, none, unknownFutureValue  |
-|`riskState`|`riskState`| none, confirmedSafe, remediated, atRisk, unknownFutureValue  |
-|`riskDetail`|`riskDetail`| none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue  |
+|`riskLevel`|`riskLevel`| The possible values are low, medium, high, hidden, none, unknownFutureValue.  |
+|`riskState`|`riskState`| The possible values are none, confirmedSafe, remediated, atRisk, unknownFutureValue.  |
+|`riskDetail`|`riskDetail`| The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
 |`userDisplayName`|`string`|Risky user display name|
 |`userPrincipalName`|`string`|Risky user principal name|
 

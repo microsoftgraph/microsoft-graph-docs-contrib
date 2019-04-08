@@ -43,7 +43,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [riskyUser](../resources/riskyUser.md) objects in the response body.
 
 ## Examples
-#### Example 1: List risky users
+### Example 1: List risky users
+#### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -52,7 +53,7 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
@@ -82,7 +83,8 @@ Content-type: application/json
 }
 ```
 
-#### Example 2: List risky users and filter the results
+### Example 2: List risky users and filter the results
+#### Request
 The following example shows how to use `$filter` to get the collection of riskyUser whose aggregate risk level is Medium.
 
 <!-- {
@@ -93,6 +95,7 @@ The following example shows how to use `$filter` to get the collection of riskyU
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
 
+#### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",

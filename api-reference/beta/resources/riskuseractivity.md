@@ -22,7 +22,7 @@ ms.prod: "microsoft-identity-platform"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [ ],
-  "@type": "microsoft.graph.riskUserActivity"
+  "@odata.type": "microsoft.graph.riskUserActivity"
 }-->
 ```json
 {
