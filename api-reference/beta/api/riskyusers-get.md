@@ -1,15 +1,15 @@
 ---
-title: "Get riskyUsers"
-description: "Retrieve the properties and relationships of a **riskyUsers** object."
+title: "Get riskyUser"
+description: "Retrieve the properties and relationships of a **riskyUser** object."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 ---
-# Get riskyUsers
+# Get riskyUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a **riskyUsers** object.
+Retrieve the properties and relationships of a **riskyUser** object.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{query}
+GET /riskyUsers/{id}
 ```
 
 
@@ -46,10 +46,11 @@ If successful, this method returns a `200 OK` response code and a [riskyUser](..
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser",
+  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/{id}
+GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 ##### Response
 Here is an example of the response.
@@ -71,8 +72,8 @@ Content-type: application/json
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
   "riskState": "atRisk"
-  "userDisplayName": "Jon Doe",
-  "userPrincipalName": "jon@contoso.com"
+  "userDisplayName": "Alex Wilbur",
+  "userPrincipalName": "alexw@contoso.com"
 }
 ```
 
