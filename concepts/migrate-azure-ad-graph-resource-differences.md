@@ -39,7 +39,7 @@ If a resource is not shown in this list, it is available in the [v1.0 version](g
 | serviceEndpoint | beta/ - endpoint <br> v1.0/ - endpoint _Not yet available_ | |
 | servicePrincipal | beta/ - servicePrincipal <br> v1.0/ - _Not yet available_ | |
 | signinName | beta/ - identityObject _Not yet available_ <br> v1.0/ - identityObject _Not yet available_ | Models identifiers used to sign into a user account.  Supports B2C scenarios. |
-| tenantDetail | beta/ - organization <br> v1.0/ - Organization | |
+| tenantDetail | beta/ - organization <br> v1.0/ - organization | |
 | trustedCasForPasswordAuth | beta/&nbsp;-&nbsp;certificateBasedAuthConfiguration _Not yet available_ <br> v1.0/ - certificateBasedAuthConfiguration _Not yet available_  | |
 | userIdentity | beta/ - identityObject _Not yet available_ <br> v1.0 - identityObject _Not yet available_ |  Models identifiers used to sign into a user account.  Supports B2C scenarios. |
 

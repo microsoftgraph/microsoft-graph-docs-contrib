@@ -14,14 +14,13 @@ The variations are minor and should be quick to implement.
 
 > Note: If you're using the Azure AD Graph .NET library, see [xxx]() for specific strategies and assistance.
 
-The following table highlights the main differences between calling each service:
+The following table highlights the main differences between each API:
 
 || Azure AD Graph | Microsoft Graph |
 |---|---|---|
-|Request<br>syntax| `https://graph.windows.net/{tenant_id}/` <br> `   {resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>
-`    {version}/{resource}?query-parameters`|
+|Request<br>syntax| `https://graph.windows.net/{tenant_id}/` <br> `   {resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`    {version}/{resource}?query-parameters`|
 |Service URL|`https://graph.windows.net/` | `https://graph.microsoft.com/` <br><br> National clouds have unique base URLs; see [National cloud endpoints](https://docs.microsoft.com/graph/deployments) for details.|
-|_{tenant_id}_|ID of the tenant targeted by the request.|For Microsoft Graph, the tenant ID is inferred from the access token and not is therefore optional in the request.<br><br>When specified, it appears between the version and the resource in the request URL.<br><br>As with Azure AD Graph, all enterprise requests target a tenant.<br>Also called an organization ID or directory object ID.|
+|_{tenant_id}_|ID of the tenant targeted by the request.|For Microsoft Graph, the tenant ID is inferred from the access token and is optional in the request.<br><br>When specified, it appears between the version and the resource in the request URL.<br><br>As with Azure AD Graph, all enterprise requests target a tenant.<br><br>Also called an organization ID or directory object ID.|
 |_{version}_|Release version of Azure ID Graph targeted by the request.<br><br>Generally expressed as a required query parameter.|Release version of the Microsoft Graph targeted by the request.<br><br>Specified in the request as part of the path to the endpoint.<br><br>Required just after the service URL.|
 |_{resource}_|Path to the resource (entity), such as a user or group, targeted by the request.|Path to the resource (entity), such as a user or group, targeted by the request.|
 |_{query-parameters}_|Optional set of parameters and values designed to customize the response.|Optional set of parameters and values designed to customize the response.<br><br>Microsoft Graph supports the same query parameters supported by Azure AD Graph.|
@@ -41,7 +40,7 @@ This request:
 - Calls the users resource.  
 - Uses the `$filter` query parameter to limit the response to given names that begin with `Dan`.  
  
-Results will include users with names like Daniel, Danforth, Danielle, so on.
+Results include users with names like Daniel, Danforth, Danielle, Danerys, and so on.
 
 A similar request for Microsoft Graph would be:
 

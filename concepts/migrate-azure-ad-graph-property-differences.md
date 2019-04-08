@@ -14,7 +14,9 @@ In general, the best way to compare the Azure AD Graph API to Microsoft Graph is
 - [Microsoft Graph beta metadata](https://graph.microsoft.com/beta/$metadata)
 - [Microsoft Graph v1.0 metadata](https://graph.microsoft.com/v1.0/$metadata)
 
-Here, we highlight property differences between two of the major resources used in each service: user and group.
+Here, we highlight property differences between resources used in each service.
+
+Because user and group are so frequently used, we start with those.  Other resources appear alphabetically.
 
 ## User property differences
 
@@ -33,13 +35,13 @@ Here are the property differences for the user resource:
 | mobile | beta/ - mobilePhone <br> v1.0/ - mobilePhone | |
 | oAuth2PermissionGrants | beta/ - oAuth2PermissionGrants <br> v1.0/ - _Not yet available_ ||
 | provisioningErrors | beta/&nbsp;-&nbsp;onPremisesProvisioningErrors <br> v1.0/ - onPremisesProvisioningErrors | |
-| refreshTokensValidFromDateTime | beta/&nbsp;-&nbsp;signinSessionsValidFromDateTime <br> v1.0/ - signinSessionsValidFromDateTime | The beta/ API cuurrently supports refreshTokensFromDateTime; however, this will be updated shortly and then added to v1.0. |
+| refreshTokensValidFromDateTime | beta/&nbsp;-&nbsp;signinSessionsValidFromDateTime<br>v1.0/&nbsp;-&nbsp;signinSessionsValidFromDateTime | The beta/ API currently supports refreshTokensFromDateTime; however, this will be updated shortly and then added to v1.0. |
 | signinNames | beta/ - identities <br> v1.0/ - identities | |
 | telephoneNumber | beta/ - businessPhones <br> v1.0/ - businessPhones | |
 | thumbnailPhoto | beta/ - photo, photos <br> v1.0/ - photo, photos | The Azure AD thumbnail photo is no longer available through Microsoft Graph.  Apps should use the photo or photos API.  (The latter allows apps to specify size.) |
 | userIdentities | beta/ - identities <br> v1.0/ - identities | Planned, but not current available.|
 | userState | beta/ - externalUserState <br> v1.0/ - externalUserState | |
-| userStateChangedOn | beta/&nbsp;-&nbsp;externalUserStateChangeDateTime <br> v1.0/ - externalUserStateChangeDateTime | |
+| userStateChangedOn | beta/&nbsp;-&nbsp;externalUserStateChangeDateTime<br>v1.0/&nbsp;-&nbsp;externalUserStateChangeDateTime | |
 
 ## Group property differences
 
@@ -65,20 +67,20 @@ TBD
 
 ## Contact property differences
 
-Here are the property differences for contact resources:
+Here are the property differences for organizational contact (orgContact) resources:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| city | beta/&nbsp;-&nbsp;postalAddresses&nsbp;(city) <br> v1.0/ - _Not yet available_  | The city property is part of the postalAddresses resource collection. |
-| county | beta/&nbsp;-&nbsp;postalAddresses&nbsp;(countryOrRegion)<br> v1.0/ - _Not yet available_  | The countryOrRegion property is part of the postalAddresses resource collection. |
+| city | beta/&nbsp;-&nbsp;addresses&nsbp;(city) <br> v1.0/ - _Not yet available_  | The city property is part of the addresses resource collection. |
+| country | beta/&nbsp;-&nbsp;addresses&nbsp;(countryOrRegion)<br> v1.0/ - _Not yet available_  | The countryOrRegion property is part of the addresses resource collection. |
 | dirSyncEnabled | beta/&nbsp;-&nbsp;onPremisesSyncEnabled <br> v1.0/ - _Not yet available_  | |
 | facsimileTelephoneNumber | beta/&nbsp;-&nbsp;phones (businessFax) <br> v1.0/ - _Not yet available_ | Now part of the phones collection, which supports mobile, business, and businessFax. |
 | physicalDeliveryOfficeName | beta/&nbsp;-&nbsp;officeLocation <br> v1.0/ - officeLocation | |
-| postalCode | beta/&nbsp;-&nbsp;postalAddresses&nbsp;(postalCode)<br> v1.0/ - _Not yet available_  | The postalCode property is part of the postalAddresses resource collection. |
+| postalCode | beta/&nbsp;-&nbsp;addresses&nbsp;(postalCode)<br> v1.0/ - _Not yet available_  | The postalCode property is part of the addresses resource collection. |
 | provisioningErrors | beta/&nbsp;-&nbsp;onPremisesProvisioningErrors<br> v1.0/ - _Not yet available_  | |
 | sipProxyAddress |  beta/&nbsp;-&nbsp;imAddresses<br> v1.0/ - _Not yet available_  | |
-| state | beta/&nbsp;-&nbsp;postalAddresses&nbsp;(state)<br> v1.0/ - _Not yet available_  | The state property is part of the postalAddresses resource collection. |
-| streetAddress | beta/&nbsp;-&nbsp;postalAddresses&nbsp;(street)<br> v1.0/ - _Not yet available_  | The street property is part of the postalAddresses resource collection. |
+| state | beta/&nbsp;-&nbsp;addresses&nbsp;(state)<br> v1.0/ - _Not yet available_  | The state property is part of the addresses resource collection. |
+| streetAddress | beta/&nbsp;-&nbsp;addresses&nbsp;(street)<br> v1.0/ - _Not yet available_  | The street property is part of the addresses resource collection. |
 | telephoneNumber | beta/&nbsp;-&nbsp;phones (business) <br> v1.0/ - _Not yet available_ | Now part of the phones collection, which supports mobile, business, and businessFax. |
 | thumbnailPhoto | beta/&nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_&nbsp;<br> v1.0/ - _Not yet available_ | Not planned right now; may be added in the future. |
 
