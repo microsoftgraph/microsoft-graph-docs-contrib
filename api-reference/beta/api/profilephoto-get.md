@@ -63,10 +63,6 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
 GET /groups/{id}/photos/{size}
-GET /me/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contacts/{id}/photos/{size}
-GET /me/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
-GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photos/{size}
 ```
 
 ## Path parameters
