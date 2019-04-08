@@ -63,7 +63,9 @@ Here is a JSON representation of the resource.
 "isGuest": "boolean",
 "isProcessing": "boolean",
 "isDeleted": "boolean",
-"risk": {"@odata.type": "microsoft.graph.risk"},
+"riskDetail":  "string",
+"riskLevel":  "string",
+"riskState":  "string",
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }
