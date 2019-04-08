@@ -32,15 +32,15 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |messageType|String|The type of message, current supported values are: message, chatEvent, Typing.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated.|
-|deleted|Boolean|Indicates whether a message has been soft deleted.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted, or null if not deleted. |
-|body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
-|summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
-|mentions|[chatMessageMention](chatmention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
+|subject|string| The subject of the message, in plaintext.|
+|body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param.|
+|summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views.|
+|attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
+|mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
 |importance| string | The importance of the message: Normal, High.|
-|reactions| [chatMessageReaction](chatreaction.md) collection | Reactions for this message (for example, Like)|
-|locale|string|Locale of the message set by the client|
-|attachments|[chatMessageAttachment](chatattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
+|reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this message (for example, Like).|
+|locale|string|Locale of the message set by the client.|
 
 
 ## JSON representation
