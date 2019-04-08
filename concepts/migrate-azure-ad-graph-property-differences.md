@@ -1,12 +1,12 @@
 ---
-title: "Review property differences from Azure AD Graph to Microsoft Graph | Microsoft Graph"
+title: "Property differences between Azure AD Graph and Microsoft Graph | Microsoft Graph"
 description: "Describes property differences between Azure AD Graph resources (entities) and Microsoft Graph, in order to help migrate apps accordingly."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Review property changes from Azure AD to Microsoft Graph
+# Property differences between Azure AD Graph and Microsoft Graph
 
 In general, the best way to compare the Azure AD Graph API to Microsoft Graph is to compare the underlying metadata for each service, especially the resource descriptions:
 
@@ -59,8 +59,6 @@ Here are the property differences for group resources:
 
 ## Next Steps
 
-- Follow Microsoft Graph [blogs](https://developer.microsoft.com/graph/blogs) for updates and review the [documentation](https://developer.microsoft.com/graph).
-- Manage Azure AD resources, such as [users](https://docs.microsoft.com/graph/azuread-users-concept-overview), [groups](https://docs.microsoft.com/graph/office365-groups-concept-overview), and [identity access](https://docs.microsoft.com/graph/azuread-identity-access-management-concept-overview).
-- Use [quick starts and samples](https://developer.microsoft.com/graph/get-started) to come up to speed quickly.
-- Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications supporting multiple operating systems and languages.
-- Experiment using the [Graph Explorer](https://aka.ms/ge).
+- Learn about [method differences](migrate-azure-ad-graph-method-differences.md) between Azure AD Graph and Microsoft Graph.
+- Explore [Microsoft Graph](/graph/overview) concepts and practices.
+- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

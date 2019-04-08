@@ -59,4 +59,8 @@ If you run into problems or need help during the migration process, you can:
 
 ## Next Steps
 
+- Learn [how to migrate](migrate-azure-ad-graph-overview.md) Azure AD Graph apps to Microsoft Graph.
+- Explore [Microsoft Graph](/graph/overview) concepts and practices.
+- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
+
 
