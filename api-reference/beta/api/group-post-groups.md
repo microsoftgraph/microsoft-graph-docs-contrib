@@ -10,10 +10,9 @@ ms.prod: "groups"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [group](../resources/group.md) as specified in the request body. You can create one of three types of groups:
+Use this API to create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
 * Office 365 Group (unified group)
-* Dynamic group
 * Security group
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section.
@@ -32,17 +31,20 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Group.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group. 
 
 | Property | Type | Description|
@@ -50,18 +52,11 @@ The following table shows the properties of the [group](../resources/group.md) r
 | displayName | string | The name to display in the address book for the group. Required. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups. Required. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 
 > Note: Groups created using the Microsoft Azure portal always have **securityEnabled** and **mailEnabled** initially set to `true`.
-
-Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.
-
-| Type of group | **groupTypes** property |
-|:--------------|:------------------------|
-| Office 365 (aka unified group)| "Unified" |
-| Dynamic | "DynamicMembership" |
 
 Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
 
@@ -69,17 +64,30 @@ Since the **group** resource supports [extensions](/graph/extensibility-overview
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
+### groupTypes options
+
+Use the **groupTypes** property to control the type of group and its membership, as shown below:
+
+| Type of group | Assigned membership | Dynamic membership |
+|:--------------|:------------------------|:---------------|
+| Office 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
+
 ## Response
+
 If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
-## Example
-#### Request 1
+## Example: Create an Office 365 group
+
+### Request
+
 The first example request creates an Office 365 Group.
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
 Content-length: 244
@@ -96,16 +104,19 @@ Content-length: 244
 }
 ```
 
-#### Response
+### Response
+
 The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -143,13 +154,17 @@ Content-type: application/json
 }
 ```
 
-#### Request 2
+## Example 2: Create an Office 365 group with an owner and members
+
+### Request
+
 The second example request creates an Office 365 group with an owner and members specified.
+
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
@@ -172,16 +187,19 @@ Content-Type: application/json
 }
 ```
 
-#### Response 2
+### Response 
+
 The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
+
 >**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 

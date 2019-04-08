@@ -1,6 +1,6 @@
 ---
 title: "Update group - Microsoft Graph API"
-description: "Describes how to update a group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group, a dynamic group, or a security group."
+description: "Describes how to update a group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group or a security group."
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
@@ -43,11 +43,11 @@ In the request body, supply the values for relevant fields that should be update
 |allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.|
 |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications.|
 |description|String|An optional description for the group. |
-|displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|groupTypes|String collection|Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property.|
+|displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. |
+|groupTypes|String collection|Specifies the group type and its membership.  <br><br>If the collection contains **Unified** then the group is an Office 365 group; otherwise it's a security group.  <br><br>If the collection includes **DynamicMembership**, the group has dynamic membership; otherwise, membership is static. |
 |mailEnabled|Boolean|Specifies whether the group is mail-enabled.|
-|mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.|
-|securityEnabled|Boolean|Specifies whether the group is a security group. Supports $filter..|
+|mailNickname|String|The mail alias for the group. This property must be specified when a group is created. |
+|securityEnabled|Boolean|Specifies whether the group is a security group. |
 |visibility|String|Specifies the visibility of an Office 365 group. The possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
 
 > **Note:**
@@ -61,9 +61,9 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Example: Create a group
 
-#### Request
+### Request
 
 The following is an example of the request.
 <!-- {
@@ -88,7 +88,7 @@ Content-length: 211
 }
 ```
 
-#### Response
+### Response
 
 The following is an example of the response.
 

@@ -1,14 +1,15 @@
 ---
 title: "group resource type - Microsoft Graph API"
-description: "Describes the group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group, a dynamic group, or a security group."
+description: "Describes the group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group or a security group."
 localization_priority: Priority
-author: "dkershaw10"
+author: "dkershaw10" 
 ms.prod: "groups"
 ---
 
 # group resource type
 
-Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, a dynamic group, or a security group.
+Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, or a security group.  
+
 Inherits from [directoryObject](directoryobject.md).
 
 For performance reasons, the [create](../api/group-post-groups.md), [get](../api/group-get.md), and [list](../api/group-list.md) operations return only a subset of more commonly used properties by default. These _default_ properties are noted in the [Properties](#properties) section. To get any of the properties that are not returned by default, specify them in a `$select` OData query option. See an [example](../api/group-get.md#request-2).
@@ -102,7 +103,7 @@ This resource supports:
 |createdDateTime|DateTimeOffset| Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only. |
 |description|String|An optional description for the group. <br><br>Returned by default.|
 |displayName|String|The display name for the group. This property is required when a group is created and cannot be cleared during updates. <br><br>Returned by default. Supports $filter and $orderby. |
-|groupTypes|String collection| Specifies the type of group to create. Possible values are `Unified` to create an Office 365 group, or `DynamicMembership` for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property. <br><br>Returned by default. Supports $filter.|
+|groupTypes|String collection| Specifies the group type and its membership.  <br><br>If the collection contains `Unified` then the group is an Office 365 group; otherwise it's a security group.  <br><br>If the collection includes `DynamicMembership`, the group has dynamic membership; otherwise, membership is static.  <br><br>Returned by default. Supports $filter.|
 |hasMembersWithLicenseErrors|Boolean|Indicates whether there are members in this group that have license errors from its group-based license assignment. <br><br>This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true). See an [example](../api/group-list.md).|
 |id|String|The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is **true**. <br><br>Returned only on $select. |
