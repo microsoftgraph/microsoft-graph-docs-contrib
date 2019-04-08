@@ -2,7 +2,7 @@ Param(
     [switch]$cleanUp,
     [string]$file
 )
-$apiDoctorVersion = $env:APIDOCTOR_VERSION
+$apiDoctorVersion = "https://github.com/OneDrive/apidoctor.git"
 $repoPath = (Get-Location).Path
 $downloadedApiDoctor = $false
 $downloadedNuGet = $false
@@ -45,7 +45,7 @@ else {
 	{
 		# Download ApiDoctor from GitHub	
 		Write-Host "Cloning API Doctor repository from GitHub"
-		& git clone -b master $apiDoctorVersion --recurse-submodules "$apidocPath\SourceCode"
+		& git clone -b develop $apiDoctorVersion --recurse-submodules "$apidocPath\SourceCode"
 		$downloadedApiDoctor = $true
 		
 		$nugetParams = "restore", "$apidocPath\SourceCode"
@@ -84,7 +84,7 @@ $lastResultCode = 0
 # Run validation at the root of the repository
 $appVeyorUrl = $env:APPVEYOR_API_URL
 
-$params = "check-all", "--path", $repoPath
+$params = "check-all", "--path --ignore-warnings", $repoPath
 if ($appVeyorUrl -ne $null)
 {
     $params = $params += "--appveyor-url", $appVeyorUrl
