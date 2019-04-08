@@ -1,12 +1,12 @@
 ---
-title: "Review request differences between Azure AD Graph and Microsoft Graph | Microsoft Graph"
+title: "Request differences between Azure AD Graph and Microsoft Graph | Microsoft Graph"
 description: "Describes how Microsoft Graph requests differ from Azure AD requests, which helps migrate apps to the newer service.."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Review request differences between Azure AD Graph and Microsoft Graph
+# Request differences between Azure AD Graph and Microsoft Graph
 
 The Microsoft Graph API and the Azure AD Graph API are both REST APIs and they each support ODATA conventions for query parameters; however, the syntax varies between each API.
 
@@ -54,7 +54,6 @@ Here:
 - The resource and query parameter are the same as the Azure AD query.  
 
 While not all requests will be as easy to convert, many will.  To learn more, see [resource type differences](migrate-azure-ad-graph-resource-differences.md). 
-
 
 ## Next Steps
 

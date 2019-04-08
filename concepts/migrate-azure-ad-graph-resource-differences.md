@@ -1,14 +1,14 @@
 ---
-title: "Resource type changes between Azure AD Graph and Microsoft Graph | Microsoft Graph"
+title: "Resource type differences between Azure AD Graph and Microsoft Graph | Microsoft Graph"
 description: "Describes differences between resources in Azure AD Graph and resources in Microsoft Graph in order to help migrate apps."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Review resource type changes between Azure AD Graph and Microsoft Graph
+# Resource type differences between Azure AD Graph and Microsoft Graph
 
-When migrating apps to Microsoft Graph, be aware that some resources have different names and different types.  For example, if your Azure AD Graph app uses the **tenantInfo** resource, you'll need to update your code to refer to [organization](graph/api/resources/organization?view=graph-rest-1.0) instead.
+When migrating apps from Azure AD Graph to Microsoft Graph, be aware that some resources have different names and different types.  For example, if your Azure AD Graph app uses the **tenantInfo** resource, you'll need to update your code to refer to [organization](graph/api/resources/organization?view=graph-rest-1.0) instead.
 
 The following table highlights differences between Azure AD Graph and Microsoft Graph resources.  It shows resources that have different names or are not available; it also highlights resources available in the beta version of Microsoft Graph but not in the v1.0 version.
 
