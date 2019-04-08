@@ -49,24 +49,24 @@ Content-Type: application/json
 > **Note:** Both notification endpoints will need to be validated by the client app, as described in [the generic notification article](webhooks.md#managing-subscriptions).
 You may choose to use the same URL for both endpoints, in which case you will receive two validation requests, to which you will need to respond.
 
-> **Note:** If the app has existing subscriptions, it will have to replace them with new subscriptions to specify the `lifecycleNotificationUrl` property. It is not possible to update (`PATCH`) the existing subscriptions.
+> **Note:** It is not possible to update (`PATCH`) the existing subscriptions to add `lifecycleNotificationUrl` property. If the app has existing subscriptions, it will have to replace them with new subscriptions to specify the `lifecycleNotificationUrl` property. Existing subscriptions without `lifecycleNotificationUrl` property will receive the `subscriptionRemoved` and `missed` notifications via the `notificationUrl`. 
 
 ## Responding to `subscriptionRemoved` notifications
 
-These lifecycle notifications inform the app that a subscription has been removed and should be recreated, if the app wants to continue receive notifications. 
+These lifecycle notifications inform the app that a subscription has been removed and should be recreated, if the app wants to continue receiving notifications. 
 
 An app can create a long lived subscription (e.g. 3 days), and resource data notifications will start flowing to the `notificationUrl`. However, the conditions of access to the resource data may change over time. For example, an event in the Outlook service may occur that requires the app to re-authenticate the user. In such a case, the flow looks as follows:
 
 1. Outlook decides that a subscription needs to be removed from Microsoft Graph.
     1. There is no set cadence for these events. They may occur frequently for some resources, and almost never for others.
 
-2. Microsoft Graph sends an `subscriptionRemoved` notification to the `lifecycleNotificationUrl` (if specified), or the `notificationUrl`
+2. Microsoft Graph sends an `subscriptionRemoved` notification to the `lifecycleNotificationUrl` (if specified), or the `notificationUrl`.  
 
 3. The app can respond to this notification by creating a new subscription for the same resource. To do this, the app needs to present a valid access token; in some cases this means the app needs to re-authenticate the user to obtain a new valid access token.
 
-4. If the app successfully creates the subscription, resource notifications are resumed. However, if the app fails (for example, it could not obtain a valid access token), resource notifications will not be sent.
+4. If the app successfully creates a new subscription, resource notifications will start flowing again. However, if the app fails (for example, it could not obtain a valid access token), resource notifications will not be sent.
 
-5. After creating the new subscription, the you may want to sync any missing resource data from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
+5. After creating the new subscription, the app can sync the resource data to identify any missing changes.
 
 ### `subscriptionRemoved` notification example
 
@@ -100,6 +100,8 @@ A few things to note about this type of notification:
 
 > **Note:** This action may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription. You may retry these actions later, at any time, for example when the conditions of access have change. Any resource changes in the time period from when the lifecycle notification was sent, to when the app re-creates the subscription successfully, will be lost. The app will need to fetch those changes on its own.
 
+5. After creating the new subscription, sync any missing resource data from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
+
 ## Responding to `missed` notifications
 
 These signals inform the app that some notifications may have not been delivered. You should decide if your app ignores or handles these signals.
@@ -121,7 +123,7 @@ These signals inform the app that some notifications may have not been delivered
 ```
 
 A few things to note about this type of notification:
-- The `"lifecycleEvent": "missed"` field designates this as a signal about missed notifications.Other types of lifecycle notifications are also possible, and new ones will be introduced in the future.
+- The `"lifecycleEvent": "missed"` field designates this as a signal about missed notifications. Other types of lifecycle notifications are also possible, and new ones will be introduced in the future.
 - The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change
 - `value` is an array, so multiple lifecycle notifications may be batched together - possibly with different `lifecycleEvent` values - similarly to resource notifications. You should process each notification in the batch, and react to it.
 
@@ -130,7 +132,7 @@ A few things to note about this type of notification:
 1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
   - If you ignore these, signals, do nothing else. Otherwise:
 2. [Validate](webhooks.md#notifications) the authenticity of the notification.
-3. Perform data resync, from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
+3. Perform a full data resync of the resource to identify the changes that were not delivered as notifications. 
 
 
 ## Future-proof the code handling lifecycle notifications
