@@ -943,11 +943,11 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
 
-### Delve “Working With” feature implementation
+### Delve Working With feature implementation
  
-![Image of working with relationships](images/working-with.png "Image of Working With relationships")
+There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list. The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.
 
-There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list.
+![Image of working with relationships](images/working-with.png)
  
 The following are examples of public relationships:
 
