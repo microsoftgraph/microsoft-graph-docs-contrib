@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 687
+Content-Length: 693
 
 {
   "value": [
@@ -70,7 +70,7 @@ Content-Length: 687
       "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
       "mobileAppInstallStatusValue": "failed",
       "installState": "failed",
-      "installStateDetail": "seeInstallErrorCode",
+      "installStateDetail": "dependencyFailedToInstall",
       "errorCode": 9,
       "osVersion": "Os Version value",
       "osDescription": "Os Description value",
@@ -81,6 +81,7 @@ Content-Length: 687
   ]
 }
 ```
+
 
 
 

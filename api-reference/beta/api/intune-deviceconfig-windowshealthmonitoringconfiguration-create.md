@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Create a new [windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|allowDeviceHealthMonitoring|[enablement](../resources/intune-shared-enablement.md)|Enables device health monitoring on the device. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|allowDeviceHealthMonitoring|[enablement](../resources/intune-deviceconfig-enablement.md)|Enables device health monitoring on the device. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Sepcifies set of events collected from the device where health monitoring is enabled. Possible values are: `undefined`, `healthMonitoring`, `bootPerformance`.|
 
 
@@ -108,6 +108,7 @@ Content-Length: 543
   "configDeviceHealthMonitoringScope": "healthMonitoring"
 }
 ```
+
 
 
 

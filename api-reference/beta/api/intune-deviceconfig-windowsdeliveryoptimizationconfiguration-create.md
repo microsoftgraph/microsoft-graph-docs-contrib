@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Create a new [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -73,7 +73,7 @@ The default value is 0. The value 0 (zero) means "not limited" and the cloud ser
 |modifyCacheLocation|String|Specifies the drive that Delivery Optimization should use for its cache.|
 |maximumCacheAgeInDays|Int32|Specifies the maximum time in days that each file is held in the Delivery Optimization cache after downloading successfully (0-49710). Valid values 0 to 49710|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|Specifies the maximum cache size that Delivery Optimization either as a percentage or in GB.|
-|vpnPeerCaching|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|vpnPeerCaching|[enablement](../resources/intune-deviceconfig-enablement.md)|Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -162,6 +162,7 @@ Content-Length: 1232
   "vpnPeerCaching": "enabled"
 }
 ```
+
 
 
 

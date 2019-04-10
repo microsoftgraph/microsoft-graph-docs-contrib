@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 785
+Content-Length: 1715
 
 {
   "value": [
@@ -82,11 +82,36 @@ Content-Length: 785
           "port": 4,
           "forceTls": true
         }
-      ]
+      ],
+      "autoLaunchItems": [
+        {
+          "@odata.type": "microsoft.graph.macOSLaunchItem",
+          "path": "Path value",
+          "hide": true
+        }
+      ],
+      "adminShowHostInfo": true,
+      "loginWindowText": "Login Window Text value",
+      "authorizedUsersListHidden": true,
+      "authorizedUsersListHideLocalUsers": true,
+      "authorizedUsersListHideMobileAccounts": true,
+      "authorizedUsersListIncludeNetworkUsers": true,
+      "authorizedUsersListHideAdminUsers": true,
+      "authorizedUsersListShowOtherManagedUsers": true,
+      "shutDownDisabled": true,
+      "restartDisabled": true,
+      "sleepDisabled": true,
+      "consoleAccessDisabled": true,
+      "shutDownDisabledWhileLoggedIn": true,
+      "restartDisabledWhileLoggedIn": true,
+      "powerOffDisabledWhileLoggedIn": true,
+      "logOutDisabledWhileLoggedIn": true,
+      "screenLockDisableImmediate": true
     }
   ]
 }
 ```
+
 
 
 

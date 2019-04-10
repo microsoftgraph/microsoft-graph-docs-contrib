@@ -1,6 +1,6 @@
 ---
 title: "disconnect action"
-description: "Not yet documented"
+description: "A request to remove the active TeamViewer connector"
 author: "tfitzmac"
 localization_priority: Normal
 ms.prod: "Intune"
@@ -12,10 +12,10 @@ ms.prod: "Intune"
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+A request to remove the active TeamViewer connector
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -57,6 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [mobileLobApp](../resources/intune-apps-mobilelobapp.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1110
+Content-Length: 1141
 
 {
   "value": [
@@ -86,6 +86,7 @@ Content-Length: 1110
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4
@@ -93,6 +94,7 @@ Content-Length: 1110
   ]
 }
 ```
+
 
 
 
