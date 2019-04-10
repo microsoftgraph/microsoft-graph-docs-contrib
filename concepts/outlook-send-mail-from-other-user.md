@@ -208,6 +208,9 @@ Find out more about:
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
+    "Error: /concepts/outlook-send-mail-from-other-user.md:\r\n      FileNotFound: '[/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox](always save a copy of messages sent from a delegate)'.",
+    "Error: /concepts/outlook-send-mail-from-other-user.md:\r\n      InvalidUrlFormat '[/office365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide](Office 365 admin center)'.",
+    "Error: /concepts/outlook-send-mail-from-other-user.md:\r\n      FileNotFound: '[/Exchange/recipients/mailbox-permissions](mailbox permissions)'. ",
     "Error: /concepts/outlook-send-mail-from-other-user.md:
       Exception processing links.
     System.ArgumentException: Link Definition was null. Link text: !NOTE
