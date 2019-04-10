@@ -91,9 +91,8 @@ The first example gets the default, top 10 messages in the signed-in user's mail
 GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
 ##### Response 1
-Here is an example of the response. To get the next page of messages, simply apply the URL returned in `@odata.nextLink` to a subsequent GET request.
+Here is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
