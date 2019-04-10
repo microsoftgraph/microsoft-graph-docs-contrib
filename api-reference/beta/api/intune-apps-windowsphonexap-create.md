@@ -62,6 +62,7 @@ The following table shows the properties that are required when you create the w
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -81,7 +82,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1164
+Content-length: 1191
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -105,6 +106,7 @@ Content-length: 1164
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -128,7 +130,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1336
+Content-Length: 1363
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -155,6 +157,7 @@ Content-Length: 1336
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -172,6 +175,7 @@ Content-Length: 1336
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

@@ -85,6 +85,7 @@ Content-Length: 1566
           "objectIdentifier": "Object Identifier value"
         }
       ],
+      "subjectAlternativeNameType": "emailAddress",
       "scepServerUrls": [
         "Scep Server Urls value"
       ],
@@ -100,12 +101,12 @@ Content-Length: 1566
           "sanType": "emailAddress",
           "name": "Name value"
         }
-      ],
-      "subjectAlternativeNameType": "emailAddress"
+      ]
     }
   ]
 }
 ```
+
 
 
 
