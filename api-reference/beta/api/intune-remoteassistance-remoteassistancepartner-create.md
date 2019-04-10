@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the r
 |id|String|Unique identifier of the partner.|
 |displayName|String|Display name of the partner.|
 |onboardingUrl|String|URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.|
-|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|TBD. Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[remoteAssistanceOnboardingStatus](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|A friendly description of the current TeamViewer connector status. Possible values are: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Timestamp of the last request sent to Intune by the TEM partner.|
 
 
@@ -90,6 +90,7 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
 
 
 
