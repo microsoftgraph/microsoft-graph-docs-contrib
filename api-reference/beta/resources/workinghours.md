@@ -44,8 +44,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "daysOfWeek": ["string"],
-  "startTime": "String (timeofday)",
-  "endTime": "String (timeofday)",
+  "startTime": "String (TimeOfDay)",
+  "endTime": "String (TimeOfDay)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 
