@@ -11,22 +11,19 @@
     - name: Overview of Microsoft Graph
       href: overview.md
     - name: Services in Microsoft Graph
-      expanded: true
+      href: overview-major-services.md
+    - name: Users you can reach
       items:
       - name: Overview
-        href: overview-major-services.md
-      - name: Users you can reach
-        items:
-        - name: Overview
-          href: users-you-can-reach.md
-        - name: National cloud deployments
-          href: deployments.md
-        - name: Hybrid deployments (preview)
-          href: hybrid-rest-support.md
-      - name: Versioning and support
-        href: versioning-and-support.md
-      - name: Terms of use
-        href: https://developer.microsoft.com/graph/terms-of-use
+        href: users-you-can-reach.md
+      - name: National cloud deployments
+        href: deployments.md
+      - name: Hybrid deployments (preview)
+        href: hybrid-rest-support.md
+    - name: Versioning and support
+      href: versioning-and-support.md
+    - name: Terms of use
+      href: https://developer.microsoft.com/graph/terms-of-use
     - name: Microsoft Graph data connect (preview)
       href: data-connect-overview.md
     - name: Tutorials
