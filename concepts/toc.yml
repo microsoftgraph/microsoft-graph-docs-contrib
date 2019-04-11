@@ -20,12 +20,12 @@
         href: deployments.md
       - name: Hybrid deployments (preview)
         href: hybrid-rest-support.md
+    - name: Microsoft Graph data connect (preview)
+      href: data-connect-overview.md
     - name: Versioning and support
       href: versioning-and-support.md
     - name: Terms of use
       href: https://developer.microsoft.com/graph/terms-of-use
-    - name: Microsoft Graph data connect (preview)
-      href: data-connect-overview.md
     - name: Tutorials
       items:
       - name: Overview
