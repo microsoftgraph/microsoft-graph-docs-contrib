@@ -14,9 +14,9 @@ ms.prod: "microsoft-identity-platform"
 
 | Property       | Type    | Description |
 |:---------------|:--------|:------------|
-| userId         | string  |             |
-| initiatedBy    | bool    |             |
-| activity       | [riskUserActivity](riskuseractivity.md)| |
+| userId         | string  | The id of the user |
+| initiatedBy    | bool    | The id of actor that does the operation |
+| activity       | [riskUserActivity](riskuseractivity.md)| The activity related to user risk level change | 
 
 ## JSON representation
 
