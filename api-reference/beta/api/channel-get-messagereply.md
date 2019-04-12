@@ -93,7 +93,7 @@ Content-length: 201
   ],
   "mentions": [
       {
-          "id": "Int32",
+          "id": 100,
           "mentionText": "Test User"
       }
   ],

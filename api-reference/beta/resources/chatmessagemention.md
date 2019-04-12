@@ -29,7 +29,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "Int32",
+  "id": 1024,
   "mentionText": "string",
   "mentioned": {"@odata.type":"microsoft.graph.identitySet"}
  }
