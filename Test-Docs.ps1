@@ -89,7 +89,7 @@ $lastResultCode = 0
 # Run validation at the root of the repository
 $appVeyorUrl = $env:APPVEYOR_API_URL
 
-$params = "check-all", "--path", "$repoPath\api-reference\beta", "--ignore-warnings", "--log", "C:\Logs\ApiDoctor\ProdLogs.txt"
+$params = "check-all", "--path", "$repoPath\api-reference\beta", "--ignore-warnings"
 if ($appVeyorUrl -ne $null)
 {
     $params = $params += "--appveyor-url", $appVeyorUrl
