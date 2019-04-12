@@ -6,6 +6,7 @@
   - name: Microsoft Graph documentation
     href: index.yml
   - name: Explore
+    expanded: true
     items:
     - name: Overview of Microsoft Graph
       href: overview.md
@@ -223,6 +224,7 @@
       - name: Write data to a workbook
         href: excel-write-to-workbook.md
   - name: Develop
+    expanded: true
     items:
     - name: Get auth tokens
       items:
