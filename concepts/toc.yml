@@ -276,7 +276,6 @@
         - name: Use schema extensions (example)
           href: extensibility-schema-groups.md
     - name: Resources
-      expanded: true
       items:
       - name: Best practices
         href: best-practices-concept.md
