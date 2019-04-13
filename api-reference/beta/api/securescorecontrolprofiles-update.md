@@ -67,9 +67,7 @@ PATCH https://graph.microsoft.com/beta/security/secureScoreControlProfiles/Admin
 Content-type: application/json
 
 {
-  "assignedTo": "assignedTo-value",
-  "controlStateUpdates": "controlStateUpdates-value",
-  "tenantNote": "tenantNote-value"
+  "controlStateUpdates": "controlStateUpdates-value"
 }
 ```
 

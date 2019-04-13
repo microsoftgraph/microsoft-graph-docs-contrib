@@ -21,14 +21,17 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
+  "optionalProperties": [
+  ],
   "@odata.type": "microsoft.graph.changeTrackedEntity",
   "baseType":"microsoft.graph.entity",
   "abstract":true
 }-->
+
 ``` json
 {
-    "createdDateTime":"DateTimeOffset",
-    "lastModifiedDateTime" :"DateTimeOffset",
+    "createdDateTime":"String (timestamp)",
+    "lastModifiedDateTime" :"String (timestamp)",
     "lastModifiedBy":{"@odata.type":"microsoft.graph.identitySet"}
 }
 ```

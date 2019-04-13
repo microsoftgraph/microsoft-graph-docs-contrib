@@ -93,7 +93,15 @@ Content-length: 401
   "displayName": "Vacation",
   "iconType": "plane",
   "isActive": true,
-  "lastModifiedBy": { "@odata.type":"microsoft.graph.identitySet"}
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "conversation": null,
+    "user": {
+      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+      "displayName": "Alex Wilbur"
+    }
+  }
 }
 ```
 

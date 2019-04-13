@@ -45,7 +45,7 @@ The request body requires the following parameters:
 | Parameter    | Type |Description|
 |:---------------|:--------|:----------|
 |userId|String|ID of the owner.|
-|type|String|Type of owned objects to return; `Group` is currently the only supported value.|
+|type|String|Type of owned objects to return; `group` is currently the only supported value.|
 
 
 ## Response

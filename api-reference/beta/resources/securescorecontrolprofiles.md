@@ -62,17 +62,15 @@ The following is a JSON representation of the resource.
 {
   "title": "String",
   "azureTenantId": "String (identifier)",
-  "referenceId": "String",
-  "controlName": "String",
-  "maxScore": "Int32",
+  "maxScore": 1024.13,
   "actionType": "String",
   "service": "String",
   "tier": "String",
   "userImpact": "string",
   "implementationCost ": "String",
-  "rank ": "Int32",
+  "rank ": 100,
   "threats": ["string"],
-  "deprecated ": "Boolean",
+  "deprecated ": false,
   "remediation": "String",
   "remediationImpact ": "String",
   "actionUrl": "String",
@@ -80,10 +78,7 @@ The following is a JSON representation of the resource.
   "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"},
   "complianceInformation": [{"@odata.type": "microsoft.graph.complianceInformation"}],
   "controlCategory": "string",
-  "implementationCost": "string",
-  "rank": 12356,
-  "deprecated": true,
-  "remediationImpact": "string"
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 

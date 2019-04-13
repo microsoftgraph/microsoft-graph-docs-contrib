@@ -46,15 +46,12 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "TAG_f914d037-00a3-4ba4-b712-ef178cbea263",
-  "createdDateTime": "2019-03-12T22:10:38.242Z",
-  "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
-  "displayName": "Cashiers",
+  "id": "string (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "displayName": "String",
   "isActive": true,
-  "userIds": [
-    "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-    "2a4296b3-a28a-44ba-bc66-0274b9b95851"
-  ],
+  "userIds": ["String (identifier)"],
   "lastModifiedBy":{"@odata.type":"microsoft.graph.identitySet"}
 }
 ```

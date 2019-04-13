@@ -69,7 +69,7 @@ Content-type: application/json
     "value": [
         {
             "id": "5",
-            "eTag": "{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3}",
+            "eTag": "\"{8BEE5ABE-49B9-431B-AEBA-C96D6DEF44E3},4\"",
             "lastModifiedDateTime": "2018-08-15T19:20:20Z",
             "name": "EventInstructions.aspx",
             "webUrl": "SitePages/EventInstructions.aspx",
@@ -142,7 +142,7 @@ Content-type: application/json
         },
         {
             "id": "2",
-            "eTag": "{75bc70e2-6587-45be-8493-c99a956b2e05}",
+            "eTag": "\"{75bc70e2-6587-45be-8493-c99a956b2e05},7\"",
             "createdDateTime": "2016-12-06T20:04:40Z",
             "lastModifiedDateTime": "2016-12-06T20:05:09Z",
             "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
