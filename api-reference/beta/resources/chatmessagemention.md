@@ -15,7 +15,7 @@ Represents a mention in a [chatMessage](chatmessage.md) entity. The mention can 
 |:---------------|:--------|:----------|
 |id|string|Id of the entity being mentioned|
 |mentionText|string|String used to represent the mention Ex: User display name, Team name etc|
-|mentioned|[identitySet](identityset.md)|The user that was mentioned|
+|mentioned|[identitySet](identityset.md)|The entity (user/application/team/channel) that was mentioned|
 
 ## JSON representation
 
