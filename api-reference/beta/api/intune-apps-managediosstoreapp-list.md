@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1560
+Content-Length: 1591
 
 {
   "value": [
@@ -86,6 +86,7 @@ Content-Length: 1560
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "appAvailability": "lineOfBusiness",
       "version": "Version value",
       "bundleId": "Bundle Id value",
@@ -107,6 +108,7 @@ Content-Length: 1560
   ]
 }
 ```
+
 
 
 
