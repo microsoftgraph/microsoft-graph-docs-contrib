@@ -759,6 +759,16 @@ Possible values for user account types (group membership), per Windows definitio
 |maliciousIPAddressValidCredentialsBlockedIP|
 |unknownFutureValue|
 
+### networkType values
+
+|Member|
+|:---|
+|intranet|
+|extranet|
+|namedNetwork|
+|trusted|
+|unknownFutureValue|
+
 ### exchangeIdFormat values
 
 |Member|

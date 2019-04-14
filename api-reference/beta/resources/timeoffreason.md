@@ -28,7 +28,7 @@ A valid reason to for a [timeOff](timeoff.md) instance in a [schedule](schedule.
 | id			|`string`      |ID of the `timeOffReason`.|
 | displayName               | `string`                  | The name of the `timeOffReason`. Required. |
 | iconType | `timeOffReasonIconType`   | Supported icon types: none; car; calendar; running; plane; firstAid; doctor; notWorking; clock; juryDuty; globe; cup; phone; weather; umbrella; piggyBank; dog; cake; trafficCone; pin; sunny. Required. |
-| isActive 			|`bool`      | Indicates whether the `timeOffReason` can be used when creating new entities or updating existing ones. Required. |
+| isActive 			|`Boolean`      | Indicates whether the `timeOffReason` can be used when creating new entities or updating existing ones. Required. |
 | createdDateTime		|`DateTimeOffset`        |The time stamp on which this `timeOffReason` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
 | lastModifiedDateTime		|`DateTimeOffset`         |The time stamp on which this `timeOffReason` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this `timeOffReason`.|
@@ -46,11 +46,11 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-  "createdDateTime": "2019-03-12T22:10:38.242Z",
-  "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
-  "displayName": "Vacation",
-  "iconType": "plane",
+  "id": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "displayName": "String",
+  "iconType": "String",
   "isActive": true,
   "lastModifiedBy": { "@odata.type":"microsoft.graph.identitySet"}
 }

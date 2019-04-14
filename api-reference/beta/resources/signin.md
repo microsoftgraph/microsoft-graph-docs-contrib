@@ -89,7 +89,7 @@ Here is a JSON representation of the resource.
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
-  "riskEventTypes": [{"@odata.type": "microsoft.graph.riskEventType"}],
+  "riskEventTypes": ["String"],
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",

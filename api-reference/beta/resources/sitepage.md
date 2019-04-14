@@ -50,7 +50,7 @@ Here is a JSON representation of a **sitePage** resource.
 
   /* page content */
   "title": "string",
-  "pageLayoutType": "Article",
+  "pageLayoutType": "String",
   "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
@@ -59,11 +59,11 @@ Here is a JSON representation of a **sitePage** resource.
    /* inherited from baseItem */
   "id": "string (identifier)",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "createdDateTime": "datetime",
+  "createdDateTime": "String (timestamp)",
   "description": "string",
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "datetime",
+  "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "webUrl": "url"

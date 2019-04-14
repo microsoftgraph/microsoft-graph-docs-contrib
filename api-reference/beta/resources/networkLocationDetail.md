@@ -5,15 +5,15 @@ localization_priority: Normal
 ---
 
 # networkLocationDetail resource type
-Indicates details associated with the network location. .
+Indicates details associated with the network location.
 
 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|networkType|String|Provides the type of the network. Possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.|
-|networkName|String|Name of the network.|
+|networkType|networkType|Provides the type of the network. The possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.|
+|networkNames|String collection|Names of the network.|
 
 
 ## JSON representation
@@ -30,9 +30,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "networkTypes": "namedNetork",
-  "networkName": "String",
-  "networkType": "string"
+  "networkType": "string",
+  "networkNames": ["String"]
 }
 
 ```
@@ -41,7 +40,7 @@ Here is a JSON representation of the resource.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deviceDetail resource",
+  "description": "networkLocationDetail resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -31,9 +31,9 @@ Here is a JSON representation of the resource.
 }-->
 ```json
 {
-  "timeOffReasonId": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-  "startDateTime": "2019-03-11T07:00:00Z",
-  "endDateTime": "2019-03-12T07:00:00Z",
+  "timeOffReasonId": "String",
+  "startDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
   "theme": "pink"
 }
 ```

@@ -1,12 +1,12 @@
 ---
-title: "used resource type"
+title: "usedInsight resource type"
 description: "An insight representing documents used by a specific user. The insights returns the most relevant documents that a user viewed or accessed."
 author: "simonhult"
 localization_priority: Normal
 ms.prod: "insights"
 ---
 
-# used resource type
+# usedInsight resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,7 +19,7 @@ An insight representing documents used by a specific user. The insights returns 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List used](../api/insights-list-used.md) |[insights_used](insights-used.md) collection| Get a list of used files.|
+|[List used](../api/insights-list-used.md) |[usedInsight](insights-used.md) collection| Get a list of used files.|
 
 ## Properties
 
@@ -34,7 +34,7 @@ An insight representing documents used by a specific user. The insights returns 
 
 | Property      | Type          | Description  |
 | ------------- |---------------| -------------|
-| resource    	| entity collection	| Used for navigating to the item that was used. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
+| resource    	| [entity](entity.md) collection	| Used for navigating to the item that was used. For file attachments, the type is *fileAttachment*. For linked attachments, the type is *driveItem*. |
 
 ## JSON representation
 Here is a JSON representation of the resource

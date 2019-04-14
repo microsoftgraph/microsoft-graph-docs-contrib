@@ -46,9 +46,9 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
-  "createdDateTime": "2019-03-14T05:35:57.755Z",
-  "lastModifiedDateTime": "2019-03-14T05:36:08.381Z",
+  "userId": "string (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
   "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
   "sharedTimeOff": {"@odata.type":"microsoft.graph.timeOffItem"},
   "draftTimeOff": {"@odata.type":"microsoft.graph.timeOffItem"}

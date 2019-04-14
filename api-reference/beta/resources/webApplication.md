@@ -1,10 +1,10 @@
 ---
-title: "web resource type"
+title: "webApplication resource type"
 description: "Specifies settings for a web application."
 localization_priority: Normal
 ---
 
-# web resource type
+# webApplication resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ Here is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "web resource",
+  "description": "webApplication resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
