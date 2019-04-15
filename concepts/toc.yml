@@ -264,6 +264,39 @@
             href: extensibility-open-users.md
           - name: Use schema extensions (example)
             href: extensibility-schema-groups.md
+      - name: Migrate
+        expanded: false
+        items:
+        - name: Azure AD Graph
+          items:
+          - name: App migration checklist
+            href: migrate-azure-ad-graph-overview.md
+          - name: Audit API use
+            href: migrate-azure-ad-graph-audit-api-use.md
+          - name: Differences
+            expanded: true
+            items: 
+            - name: Request differences
+              href: migrate-azure-ad-graph-request-differences.md
+            - name: Resource type differences
+              href: migrate-azure-ad-graph-resource-differences.md
+            - name: Entity property differences
+              href: migrate-azure-ad-graph-property-differences.md
+            - name: Method differences
+              href: migrate-azure-ad-graph-method-differences.md
+            - name: Service feature differences
+              href: migrate-azure-ad-graph-feature-differences.md
+          - name: Review app details
+            expanded: true
+            items:
+            - name: App registration
+              href: migrate-azure-ad-graph-app-registration.md
+            - name: Auth libraries 
+              href: migrate-azure-ad-graph-authentication-library.md
+            - name: .NET client libraries 
+              href: migrate-azure-ad-graph-client-libraries.md
+          - name: Deploy, test, and extend
+            href: migrate-azure-ad-graph-deploy-test-extend.md
       - name: Resources
         expanded: true
         items:
