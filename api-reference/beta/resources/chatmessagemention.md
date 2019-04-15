@@ -2,20 +2,21 @@
 title: "chatMessageMention resource type"
 description: "Represents a mention in a chatMessage entity. The mention can be to a user, team, bot or channel. "
 localization_priority: Normal
+author: nkramer
 ---
 
 # chatMessageMention resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a mention in a [chatMessage](chatmessage.md) entity. The mention can be to a user, team, bot or channel. 
+Represents a mention in a [chatMessage](chatmessage.md) entity. The mention can be to a user, team, bot, or channel. 
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|string|Id of the entity being mentioned|
-|mentionText|string|String used to represent the mention Ex: User display name, Team name etc|
-|mentioned|[identitySet](identityset.md)|The user that was mentioned|
+|id|int|Index of the entity being mentioned. Matches with the <at id="index"> tag of the message body.|
+|mentionText|string|String used to represent the mention. For example, User display name, Team name.|
+|mentioned|[identitySet](identityset.md)|The entity (user, application, team, or channel) that was mentioned.|
 
 ## JSON representation
 
@@ -29,7 +30,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
+  "id": "number",
   "mentionText": "string",
   "mentioned": "microsoft.graph.identitySet"
  }
