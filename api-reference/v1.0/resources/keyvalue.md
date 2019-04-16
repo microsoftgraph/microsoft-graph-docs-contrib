@@ -6,8 +6,11 @@ localization_priority: Normal
 
 # keyValue resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
+## Properties
+| Property	   | Type	|Description|
+|:---------------|:--------|:----------|
+|key|string||
+|value|string||
 ## JSON representation
 
 Here is a JSON representation of the resource.
@@ -25,13 +28,7 @@ Here is a JSON representation of the resource.
   "key": "string",
   "value": "string"
 }
-
 ```
-## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|key|string||
-|value|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

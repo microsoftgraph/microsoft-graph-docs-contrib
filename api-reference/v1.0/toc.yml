@@ -3059,6 +3059,23 @@
       href: resources/azure-ad-overview.md
       displayName: Azure AD, Microsoft identity platform
       items:
+      - name: Audit logs
+        href: resources/azure-ad-auditlog-overview.md
+        items:
+        - name: Directory audit
+          href: resources/directoryaudit.md
+          items:
+          - name: List directory audits
+            href: api/directoryaudit-list.md
+          - name: Get directory audit
+            href: api/directoryaudit-get.md
+        - name: Sign-in
+          href: resources/signin.md
+          items:
+          - name: List sign-ins
+            href: api/signin-list.md
+          - name: Get sign-in
+            href: api/signin-get.md
       - name: Contracts
         href: resources/contract.md
         items:

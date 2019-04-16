@@ -68,11 +68,9 @@ Here is a JSON representation of the resource.
   "appId": "String",
   "ipAddress": "String",
   "clientAppUsed": "String",
-  "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
   "correlationId": "String",
   "conditionalAccessStatus": "string",
   "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
-  "originalRequestId": "String",
   "isInteractive": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
@@ -84,6 +82,9 @@ Here is a JSON representation of the resource.
   "resourceDisplayName": "string",
   "resourceId": "string",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
+  "userDisplayName": "string",
+  "userId": "string",
+  "userPrincipalName": "string"
 }
 
 ```
