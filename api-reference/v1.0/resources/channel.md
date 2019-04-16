@@ -8,12 +8,10 @@ ms.prod: "microsoft-teams"
 
 # channel resource type
 
-
-
-A channel is a collection of messages within a [team](../resources/team.md). 
-A channel represents a topic, and therefore a logical isolation of discussion, within a team. 
-Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" channel.
-
+[Teams](../resources/team.md) are made up of channels, which are the conversations you have with your teammates. 
+Each channel is dedicated to a specific topic, department, or project.
+Channels are where the work actually gets done - where text, audio, and video conversations open to the whole team happen,
+where files are shared, and where tabs are added.
 
 ## Methods
 
@@ -24,6 +22,11 @@ Examples can be "Friday Team Lunch" channel, and "Architecture Discussion" chann
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
+|[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
+|[Get tab](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Reads a tab pinned to a channel.|
+|[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
+|[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
+|[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
 ## Properties
 | Property	   | Type	|Description|

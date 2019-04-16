@@ -88,14 +88,15 @@ Content-Length: 1210
         "objectIdentifier": "Object Identifier value"
       }
     ],
+    "subjectAlternativeNameType": "emailAddress",
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
     "certificateTemplateName": "Certificate Template Name value",
-    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-    "subjectAlternativeNameType": "emailAddress"
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
   }
 }
 ```
+
 
 
 
