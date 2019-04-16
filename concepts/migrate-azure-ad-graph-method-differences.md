@@ -1,14 +1,14 @@
 ---
 title: "Method differences between Azure AD and Microsoft Graph | Microsoft Graph"
 description: "Describes method differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API (REST)."
-author: "lleonard-msft"
+author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
 # Method differences between Azure AD and Microsoft Graph
 
-A handful of Azure AD Graph methods have also changed:
+A handful of Azure AD Graph methods have also changed.  If a methis is not shown in this list, it is already available in the [v1.0 version](graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
 |Azure AD Graph <br>(v1.6) method |Microsoft Graph<br>(resource/method)|Comments|
 |---|---|---|

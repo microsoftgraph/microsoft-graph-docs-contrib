@@ -1,7 +1,7 @@
 ---
 title: "Audit Azure AD Graph apps to Microsoft Graph  | Microsoft Graph"
 description: "Describes how to audit Azure Active Directory (Azure AD) APIs to migrate an app to Microsoft Graph API."
-author: "lleonard-msft"
+author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
@@ -15,12 +15,12 @@ Compare your list to the known differences.  This helps identify specific change
 Broadly speaking, Microsoft Graph supports many of the same features and capabilities of Azure AD graph.  There are a few key differences:
 
 - [Request differences](migrate-azure-ad-graph-request-differences.md)
-- [Resource type](migrate-azure-ad-graph-resource-differences.md) (entity) differences
+- [Resource type differences](migrate-azure-ad-graph-resource-differences.md)
 - [Property differences](migrate-azure-ad-graph-property-differences.md)
 - [Method differences](migrate-azure-ad-graph-method-differences.md)
 - [Feature differences](migrate-azure-ad-graph-feature-differences.md)
 
-You'll also want to verify the permissions required for the features you're using.  In some cases, more granular permissions are available.
+You'll also want to verify the permissions required for the features your app is using.  In some cases, more granular permissions are available.
 
 To learn more, see [Permissions](/concepts/permissions-reference.md).
 

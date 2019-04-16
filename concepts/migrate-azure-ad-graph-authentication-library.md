@@ -1,7 +1,7 @@
 ---
 title: "Review app authentication library changes | Microsoft Graph"
 description: "Describes how to update authentication library use in order to migrate an app from Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
-author: "lleonard-msft"
+author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
@@ -15,7 +15,7 @@ Many apps use an authentication library to aquire and manage access tokens.
 
 In the short term, you need only to make a few minor changes to continue using either approach.
 
-## Updating ASAL 
+## Updating ADAL 
 
 However, ADAL will be retired at some point.  Eventually, you'll want to migrate to MSAL.
 
@@ -23,8 +23,8 @@ If your app currently uses ADAL, we recommend a two stage migration:
 
 1.  Update the **resourceURL** to reflect Microsoft Graph:
 
-    From: `https://graph.windows.net`  
-    TO:  `https://graph.microsoft.com`
+    from: `https://graph.windows.net`  
+    to:  `https://graph.microsoft.com`
 
     Newly acquired tokens will have the same scopes in the new service, however, queries will target Microsoft Graph.  
 
@@ -51,6 +51,7 @@ Once you've migrated to MSAL, you can request additional scopes dynamically, whi
 ## Next Steps
 
 - Learn [.NET client library](migrate-azure-ad-graph-client-libraries.md) differences between Azure AD Graph and Microsoft Graph.
+- Explore [Migrating ADAL to MSAL](https://aka.ms/adal-net-to-msal-net) for more in-depth help on migrating to MSAL.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
 
