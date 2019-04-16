@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Find SharePoint sites by keyword
 localization_priority: Normal
@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search across a SharePoint tenant for [sites][] that match provided keywords.
+Search across a SharePoint tenant for [sites][] that match keywords provided.
 
 [sites]: ../resources/site.md
 
@@ -61,6 +61,7 @@ Content-type: application/json
   ]
 }
 ```
+>**Note:** The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
 
 <!--
 {

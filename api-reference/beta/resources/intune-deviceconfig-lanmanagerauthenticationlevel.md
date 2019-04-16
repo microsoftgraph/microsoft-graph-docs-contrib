@@ -1,14 +1,14 @@
 ---
 title: "lanManagerAuthenticationLevel enum type"
 description: "Possible values for LanManagerAuthenticationLevel"
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # lanManagerAuthenticationLevel enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -23,6 +23,7 @@ Possible values for LanManagerAuthenticationLevel
 |lmAndNtlmV2|3|Send LM & NTLMv2 responses only|
 |lmNtlmV2AndNotLm|4|Send LM & NTLMv2 responses only. Refuse LM|
 |lmNtlmV2AndNotLmOrNtm|5|Send LM & NTLMv2 responses only. Refuse LM & NTLM|
+
 
 
 

@@ -1,14 +1,14 @@
 ---
 title: "mobileAppContentFileUploadState enum type"
 description: "Contains properties for upload request states."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # mobileAppContentFileUploadState enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -33,6 +33,7 @@ Contains properties for upload request states.
 |commitFilePending|301|Not yet documented|
 |commitFileFailed|302|Not yet documented|
 |commitFileTimedOut|303|Not yet documented|
+
 
 
 

@@ -1,14 +1,14 @@
 ---
 title: "circularGeofenceManagementCondition resource type"
 description: "Contains the information to define a circular geo-fence management condition, an area of interest, to monitor."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # circularGeofenceManagementCondition resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -72,6 +72,7 @@ Here is a JSON representation of the resource.
   "radiusInMeters": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
 
 
 

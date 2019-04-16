@@ -1,14 +1,14 @@
 ---
 title: "importedWindowsAutopilotDeviceIdentity resource type"
 description: "Imported windows autopilot devices."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # importedWindowsAutopilotDeviceIdentity resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -22,6 +22,7 @@ Imported windows autopilot devices.
 |[Create importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-create.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.|
 |[Delete importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md)|None|Deletes a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).|
 |[Update importedWindowsAutopilotDeviceIdentity](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Update the properties of a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.|
+|[import action](../api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md)|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -30,6 +31,7 @@ Imported windows autopilot devices.
 |orderIdentifier|String|Order Id of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
 |productKey|String|Product Key of the Windows autopilot device.|
+|importId|String|The Import Id of the Windows autopilot device.|
 |hardwareIdentifier|Binary|Hardware Blob of the Windows autopilot device.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Current state of the imported device.|
 
@@ -51,6 +53,7 @@ Here is a JSON representation of the resource.
   "orderIdentifier": "String",
   "serialNumber": "String",
   "productKey": "String",
+  "importId": "String",
   "hardwareIdentifier": "binary",
   "state": {
     "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -61,6 +64,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 

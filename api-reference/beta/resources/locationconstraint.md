@@ -2,6 +2,8 @@
 title: "locationConstraint resource type"
 description: "The conditions stated by a client for the location of a meeting."
 localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # locationConstraint resource type
@@ -19,7 +21,7 @@ Here is a JSON representation of the resource
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationconstraint"
+  "@odata.type": "microsoft.graph.locationConstraint"
 }-->
 
 ```json

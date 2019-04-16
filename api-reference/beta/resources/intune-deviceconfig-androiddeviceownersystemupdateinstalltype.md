@@ -1,14 +1,14 @@
 ---
 title: "androidDeviceOwnerSystemUpdateInstallType enum type"
 description: "System Update Types for Android Device Owner."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # androidDeviceOwnerSystemUpdateInstallType enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -21,6 +21,7 @@ System Update Types for Android Device Owner.
 |postpone|1|Postpone automatic install of updates up to 30 days.|
 |windowed|2|Install automatically inside a daily maintenance window.|
 |automatic|3|Automatically install updates as soon as possible.|
+
 
 
 
