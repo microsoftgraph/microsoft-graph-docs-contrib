@@ -11,6 +11,7 @@ ms.prod: "microsoft-identity-platform"
 Provides the sign-in status (Success or Failure) of the sign-in
 
 ## Properties
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |additionalDetails|String|Provides additional details on the sign-in activity|
