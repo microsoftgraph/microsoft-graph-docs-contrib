@@ -222,6 +222,8 @@ The data included in the `resourceData` property of the notification is encrypte
 
 It is a good practice to periodically change assymetric keys, to minimize the risk of a private key becoming compromised. If you want to introduce a new pair of keys, follow these steps:
 
+@@@TBD - change this section to reflect that keys are now part of the subscription. describe how to rotate them with a PATCH operation@@@
+@@@The content below is outdated, needs to be replaced@@@
 1. Upload a new **public** key to your app registration.
 2. Configure the property@@@ to point to the new key. This is now the new key for encryption.
 3. Some things to keep in mind:
