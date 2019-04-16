@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new Trust Framework Policy. The request body contains the content in `application/xml`.
+Create a new trustFramework policy. The request body contains the content in `application/xml`.
 
 ## Permissions
 
