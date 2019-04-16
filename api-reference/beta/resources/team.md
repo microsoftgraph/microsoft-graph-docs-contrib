@@ -65,6 +65,7 @@ For more information about working with groups and members in teams, see [Use th
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates). |
 
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
