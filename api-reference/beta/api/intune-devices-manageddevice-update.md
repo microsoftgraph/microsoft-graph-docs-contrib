@@ -1,21 +1,21 @@
 ---
 title: "Update managedDevice"
 description: "Update the properties of a managedDevice object."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # Update managedDevice
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [managedDevice](../resources/intune-devices-manageddevice.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -29,9 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-PATCH /users/{usersId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
@@ -126,9 +126,9 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 ``` http
-PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7166
+Content-length: 7224
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -224,7 +224,9 @@ Content-length: 7166
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "Wi Fi Mac Address value",
   "deviceHealthAttestationState": {
@@ -301,7 +303,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7215
+Content-Length: 7273
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -398,7 +400,9 @@ Content-Length: 7215
     "resourceAccess": true,
     "deviceConfiguration": true,
     "compliancePolicy": true,
-    "windowsUpdateForBusiness": true
+    "windowsUpdateForBusiness": true,
+    "endpointProtection": true,
+    "officeApps": true
   },
   "wiFiMacAddress": "Wi Fi Mac Address value",
   "deviceHealthAttestationState": {
@@ -469,6 +473,7 @@ Content-Length: 7215
   }
 }
 ```
+
 
 
 

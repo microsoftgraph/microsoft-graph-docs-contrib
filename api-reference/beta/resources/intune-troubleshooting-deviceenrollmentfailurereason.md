@@ -1,14 +1,14 @@
 ---
 title: "deviceEnrollmentFailureReason enum type"
 description: "Top level failure categories for enrollment."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # deviceEnrollmentFailureReason enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -29,7 +29,6 @@ Top level failure categories for enrollment.
 |enrollmentRestrictionsEnforced|9|Enrollment restrictions configured by admin blocked this enrollment.|
 |clientDisconnected|10|Client timed out or enrollment was aborted by enduser.|
 |userAbandonment|11|Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)|
-
 
 
 

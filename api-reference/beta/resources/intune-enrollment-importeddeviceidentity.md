@@ -1,14 +1,14 @@
 ---
 title: "importedDeviceIdentity resource type"
 description: "The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # importedDeviceIdentity resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -23,6 +23,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 |[Delete importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-delete.md)|None|Deletes a [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).|
 |[Update importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-update.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|Update the properties of a [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) object.|
 |[importDeviceIdentityList action](../api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) collection|Not yet documented|
+|[searchExistingIdentities action](../api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -62,6 +63,7 @@ Here is a JSON representation of the resource.
   "platform": "String"
 }
 ```
+
 
 
 

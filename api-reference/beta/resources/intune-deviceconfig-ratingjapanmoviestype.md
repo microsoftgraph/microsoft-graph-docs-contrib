@@ -1,14 +1,14 @@
 ---
 title: "ratingJapanMoviesType enum type"
 description: "Movies rating labels in Japan"
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # ratingJapanMoviesType enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -23,6 +23,7 @@ Movies rating labels in Japan
 |parentalGuidance|3|The PG-12 classification requests parental guidance for young people under 12|
 |agesAbove15|4|The R15+ classification is suitable for viewers of 15 or older|
 |agesAbove18|5|The R18+ classification is suitable for viewers of 18 or older|
+
 
 
 

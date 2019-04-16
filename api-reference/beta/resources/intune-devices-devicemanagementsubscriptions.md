@@ -1,14 +1,14 @@
 ---
 title: "deviceManagementSubscriptions enum type"
 description: "Tenant mobile device management subscriptions."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # deviceManagementSubscriptions enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -23,6 +23,7 @@ Tenant mobile device management subscriptions.
 |intunePremium|4|Microsoft Intune Premium Subscription|
 |intune_EDU|8|Microsoft Intune for Education Subscription|
 |intune_SMB|16|Microsoft Intune for Small Businesses Subscription|
+
 
 
 

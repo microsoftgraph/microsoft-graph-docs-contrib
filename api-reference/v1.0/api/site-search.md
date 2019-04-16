@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Search for sites
 description: Search across a SharePoint tenant for sites that match keywords provided.

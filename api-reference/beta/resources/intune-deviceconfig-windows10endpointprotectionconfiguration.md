@@ -1,14 +1,14 @@
 ---
 title: "windows10EndpointProtectionConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the Windows10EndpointProtectionConfiguration resource."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # windows10EndpointProtectionConfiguration resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -38,6 +38,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing. This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that cannot be controlled via policy or by end user. It has to be supported by the system at the time of manufacturing. To check if the system supports Kernel DMA Protection, please check the Kernel DMA Protection field in the Summary page of MSINFO32.exe. Possible values are: `deviceDefault`, `blockAll`, `allowAll`.|
+|firewallRules|[windowsFirewallRule](../resources/intune-deviceconfig-windowsfirewallrule.md) collection|Configures the firewall rule settings. This collection can contain a maximum of 150 elements.|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right is used by Credential Manager during Backup/Restore. Users' saved credentials might be compromised if this privilege is given to other entities. Only states NotConfigured and Allowed are supported|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.|
@@ -126,10 +127,13 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |defenderSecurityCenterDisableNetworkUI|Boolean|Used to disable the display of the firewall and network protection area.|
 |defenderSecurityCenterDisableVirusUI|Boolean|Used to disable the display of the virus and threat protection area.|
 |defenderSecurityCenterDisableAccountUI|Boolean|Used to disable the display of the account protection area.|
+|defenderSecurityCenterDisableClearTpmUI|Boolean|Used to disable the display of the Clear TPM button.|
 |defenderSecurityCenterDisableHardwareUI|Boolean|Used to disable the display of the hardware protection area.|
+|defenderSecurityCenterDisableNotificationAreaUI|Boolean|Used to disable the display of the notification area control. The user needs to either sign out and sign in or reboot the computer for this setting to take effect.|
 |defenderSecurityCenterDisableRansomwareUI|Boolean|Used to disable the display of the ransomware protection area. |
 |defenderSecurityCenterDisableSecureBootUI|Boolean|Used to disable the display of the secure boot area under Device security.|
 |defenderSecurityCenterDisableTroubleshootingUI|Boolean|Used to disable the display of the security process troubleshooting under Device security.|
+|defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Boolean|Used to disable the display of update TPM Firmware when a vulnerable firmware is detected.|
 |defenderSecurityCenterOrganizationDisplayName|String|The company name that is displayed to the users.|
 |defenderSecurityCenterHelpEmail|String|The email address that is displayed to users.|
 |defenderSecurityCenterHelpPhone|String|The phone number or Skype ID that is displayed to users.|
@@ -149,9 +153,11 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |firewallProfileDomain|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for domain networks|
 |firewallProfilePublic|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for public networks|
 |firewallProfilePrivate|[windowsFirewallNetworkProfile](../resources/intune-deviceconfig-windowsfirewallnetworkprofile.md)|Configures the firewall profile settings for private networks|
+|defenderAdobeReaderLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Adobe Reader from creating child processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderAttackSurfaceReductionExcludedPaths|String collection|List of exe files and folders to be excluded from attack surface reduction rules|
 |defenderOfficeAppsOtherProcessInjectionType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office applications injecting into other processes. Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderOfficeAppsOtherProcessInjection|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of  Office applications injecting into other processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
+|defenderOfficeCommunicationAppsLaunchChildProcess|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office communication applications, including Microsoft Outlook, from creating child processes. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeAppsExecutableContentCreationOrLaunchType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `block`, `auditMode`.|
 |defenderOfficeAppsExecutableContentCreationOrLaunch|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Value indicating the behavior of Office applications/macros creating or launching executable content. Possible values are: `userDefined`, `enable`, `auditMode`.|
 |defenderOfficeAppsLaunchChildProcessType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Office application launching child processes. Possible values are: `userDefined`, `block`, `auditMode`.|
@@ -183,8 +189,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Turn on Credential Guard when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Possible values are: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
 |deviceGuardEnableVirtualizationBasedSecurity|Boolean|Turns On Virtualization Based Security(VBS).|
 |deviceGuardEnableSecureBootWithDMA|Boolean|Specifies whether Platform Security Level is enabled at next reboot.|
-|deviceGuardLaunchSystemGuard|[enablement](../resources/intune-shared-enablement
-.md)|Allows the IT admin to configure the launch of System Guard. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|deviceGuardLaunchSystemGuard|[enablement](../resources/intune-shared-enablement.md)|Allows the IT admin to configure the launch of System Guard. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
 |applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
@@ -241,6 +246,34 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "version": 1024,
   "dmaGuardDeviceEnumerationPolicy": "String",
+  "firewallRules": [
+    {
+      "@odata.type": "microsoft.graph.windowsFirewallRule",
+      "displayName": "String",
+      "description": "String",
+      "packageFamilyName": "String",
+      "filePath": "String",
+      "serviceName": "String",
+      "protocol": 1024,
+      "localPortRanges": [
+        "String"
+      ],
+      "remotePortRanges": [
+        "String"
+      ],
+      "localAddressRanges": [
+        "String"
+      ],
+      "remoteAddressRanges": [
+        "String"
+      ],
+      "profileTypes": "String",
+      "action": "String",
+      "trafficDirection": "String",
+      "interfaceTypes": "String",
+      "localUserAuthorizations": "String"
+    }
+  ],
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "String",
@@ -648,10 +681,13 @@ Here is a JSON representation of the resource.
   "defenderSecurityCenterDisableNetworkUI": true,
   "defenderSecurityCenterDisableVirusUI": true,
   "defenderSecurityCenterDisableAccountUI": true,
+  "defenderSecurityCenterDisableClearTpmUI": true,
   "defenderSecurityCenterDisableHardwareUI": true,
+  "defenderSecurityCenterDisableNotificationAreaUI": true,
   "defenderSecurityCenterDisableRansomwareUI": true,
   "defenderSecurityCenterDisableSecureBootUI": true,
   "defenderSecurityCenterDisableTroubleshootingUI": true,
+  "defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI": true,
   "defenderSecurityCenterOrganizationDisplayName": "String",
   "defenderSecurityCenterHelpEmail": "String",
   "defenderSecurityCenterHelpPhone": "String",
@@ -746,11 +782,13 @@ Here is a JSON representation of the resource.
     "policyRulesFromGroupPolicyMerged": true,
     "policyRulesFromGroupPolicyNotMerged": true
   },
+  "defenderAdobeReaderLaunchChildProcess": "String",
   "defenderAttackSurfaceReductionExcludedPaths": [
     "String"
   ],
   "defenderOfficeAppsOtherProcessInjectionType": "String",
   "defenderOfficeAppsOtherProcessInjection": "String",
+  "defenderOfficeCommunicationAppsLaunchChildProcess": "String",
   "defenderOfficeAppsExecutableContentCreationOrLaunchType": "String",
   "defenderOfficeAppsExecutableContentCreationOrLaunch": "String",
   "defenderOfficeAppsLaunchChildProcessType": "String",
@@ -853,6 +891,7 @@ Here is a JSON representation of the resource.
   }
 }
 ```
+
 
 
 
