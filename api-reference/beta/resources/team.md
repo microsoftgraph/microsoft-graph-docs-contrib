@@ -63,6 +63,7 @@ For more information about working with groups and members in teams, see [Use th
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in this team.|
 |owners|[user](user.md)| The list of this team's owners. Currently, when creating a team using application permissions, exactly one owner must be specified. When using user delegated permissions, no owner can be specified (the current user is the owner). Owner must be specified as an object ID (GUID), not a UPN. |
 |operations|[teamsAsyncOperation](teamsasyncoperation.md) collection| The async operations that ran or are running on this team. | 
+|schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](https://docs.microsoft.com/en-us/MicrosoftTeams/get-started-with-teams-templates). |
 
 
@@ -84,10 +85,27 @@ The following is a JSON representation of the resource.
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
-  "webUrl": "https://...longUrl..."
+  "webUrl": "https://...longUrl...",
+  "displayName": "string",
+  "description": "string",
+  "classification": "string",
+  "specialization": "string",
+  "visibility": "string"
 }
 
 ```
+<Property Name="displayName" Type="Edm.String"/>
+<Property Name="description" Type="Edm.String"/>
+<Property Name="classification" Type="Edm.String"/>
+<Property Name="specialization" Type="microsoft.graph.teamSpecialization"/>
+<Property Name="visibility" Type="microsoft.graph.teamVisibilityType"/>
+<Property Name="webUrl" Type="Edm.String"/>
+<Property Name="memberSettings" Type="microsoft.graph.teamMemberSettings"/>
+<Property Name="guestSettings" Type="microsoft.graph.teamGuestSettings"/>
+<Property Name="messagingSettings" Type="microsoft.graph.teamMessagingSettings"/>
+<Property Name="funSettings" Type="microsoft.graph.teamFunSettings"/>
+<Property Name="isArchived" Type="Edm.Boolean"/>
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
