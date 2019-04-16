@@ -38,6 +38,7 @@ Creating a subscription for change notifications that include resource data requ
 - @@@Name may change@@@`includeProperties` set to `true` to explicitly request resource properties.
 - A `$select` operator in the resource path to select the properties to be included.
 - An additional endpoint - `lifecycleNotificationUrl` - where a new type of notifications related to subscription state will be delivered (more on this later in the article).
+- `publicEncryptionKey` with a @@@TBD - more details about what the key should be@@@ specific public encryption key that will be used by Graph to encrypt resource data.
 
 > **Important:** You must upload and configure a public key for your app to enable encryption of resource data. Without the key, any attempts to create a subcription will fail. More information on encryption is available later in this article.
 
@@ -52,10 +53,29 @@ Content-Type: application/json
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
   "resource": "/teams/allMessages?$select=subject,body",
   @@@subject to change@@@"includeProperties": true,
+  @@@"publicEncryptionKey": <base64encodedKey>,
   "expirationDateTime": "2019-03-20T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
 }
 ```
+
+#### Subscription response
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
+  "resource": "/teams/allMessages?$select=subject,body",
+  @@@subject to change@@@"includeProperties": true,
+  @@@"publicEncryptionKeyId": <the id of the key>,   @@@<- TBD should this be a thumbprint or what kind of identifier?@@@
+  "expirationDateTime": "2019-03-20T11:00:00.0000000Z",
+  "clientState": "<secretClientState>"
+}
+```
+
+@@@TBD provide the actual content@@@
  
 > **Important:** Both notifications URLs must share the same hostname. 
 
@@ -206,17 +226,17 @@ It is a good practice to periodically change assymetric keys, to minimize the ri
 2. Configure the property@@@ to point to the new key. This is now the new key for encryption.
 3. Some things to keep in mind:
     - There will be some time (@@@give SLA@@@) when the old key will still be used for encryption. Your app must have access to both old and new private keys to be able to decrypt content. Old and new keys may be used in parallel for a period of time.
-    - Use the `encryptionKeyId` property in each notification to  identify the correct key to use.
+    - Use the `publicEncryptionKeyId` property in each notification to  identify the correct key to use.
     - Discard of the old key pair only when you have seen no recent notifications referencing the old key.
 
 ### How to decrypt
 
-To optimize performance, Microsoft Graph uses its own generated symmetric key to encrypt resource data. That key itself is then encrypted by Microsoft Graph using the apps assymetric public key, and included in the `symmetricKey` property.
+To optimize performance, Microsoft Graph uses its own generated symmetric key to encrypt resource data. That key itself is then encrypted by Microsoft Graph using the apps assymetric public key, and included in the `symmetricEncryptionKey` property.
 
 To decrypt resource data, your app should perform the following steps:
 
-1. Use the `assymetricKeyId` property to identify the private key your app should use for decryption.
-2. Using the private key, decrypt the content of the `symmetricKey` property.
+1. Use the `publicEncryptionKeyId` property to identify the private key your app should use for decryption.
+2. Using the private key, decrypt the content of the `symmetricEncryptionKey` property.
 3. Use the symmetric key to decrypt the content of the `resourceData` for each notification item in the `value` array.
 
 Note that the symmetric key will change frequently so you should not store or cache it, but always use the latest value in the notification payload.
@@ -236,8 +256,8 @@ For example, given this notification:
       "resourceData": <encryptedResourceDataContent>
     }
   ],
-  "assymetricKeyId": <key_guid>,
-  "symmetricKey": <encryptedSymmetricKeyFromGraph>
+  "publicEncryptionKeyId": <key_guid>,
+  "symmetricEncryptionKey": <encryptedSymmetricKeyFromGraph>
 }
 ```
 
