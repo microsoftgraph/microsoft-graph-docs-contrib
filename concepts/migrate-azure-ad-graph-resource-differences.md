@@ -1,7 +1,7 @@
 ---
 title: "Resource type differences between Azure AD Graph and Microsoft Graph | Microsoft Graph"
 description: "Describes differences between resources in Azure AD Graph and resources in Microsoft Graph in order to help migrate apps."
-author: "lleonard-msft"
+author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
@@ -12,7 +12,7 @@ When migrating apps from Azure AD Graph to Microsoft Graph, be aware that some r
 
 The following table highlights differences between Azure AD Graph and Microsoft Graph resources.  It shows resources that have different names or are not available; it also highlights resources available in the beta version of Microsoft Graph but not in the v1.0 version.
 
-If a resource is not shown in this list, it is available in the [v1.0 version](graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0) of Microsoft Graph.
+If a resource is not shown in this list, it is already available in the [v1.0 version](graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
 |Azure AD Graph <br>(v1.6) resource |Microsoft Graph<br>resource|Comments|
 |---|---|---|
@@ -22,7 +22,7 @@ If a resource is not shown in this list, it is available in the [v1.0 version](g
 | appRoleAssignment | beta/&nbsp;-&nbsp;appRoleAssignment<br>v1.0/ - _Not yet available_ | Part of [application](/graph/api/resources/application?view=graph-rest-beta) APIs.  |
 | certificateAuthorityInformation | beta/&nbsp;-&nbsp;certificateAuthority<br>v1.0/ - _Not yet available_ | |
 | contact | beta/ - orgContact<br>v1.0/ - orgContact (_Not yet available_) | |
-| directoryLinkChange | beta/ - _new&nbsp;approach_ <br>v1.0/ - _new&nbsp;approach_ | Delta query supports relationship change detection with a mechanism that doesn't require this. |
+| directoryLinkChange | beta/ - _new&nbsp;approach_ <br>v1.0/ - _new&nbsp;approach_ | Delta query supports relationship change detection with a mechanism that doesn't require this resource. Please see [Feature differences between Azure AD Graph and Microsoft Graph](migrate-azure-ad-graph-feature-differences.md). |
 | keyCredential | beta/ - keyCredential <br> v1.0/ - _Not yet available_ |Part of [application](/graph/api/resources/application?view=graph-rest-beta) APIs.  |
 | keyValue | beta/ - keyValue <br> v1.0/ - _Not yet available_ |Part of [application](/graph/api/resources/application?view=graph-rest-beta) APIs.  |
 | oAuth2Permission | beta/ - permissionScope <br> v1.0/ - _Not yet available_ |Part of [application](/graph/api/resources/application?view=graph-rest-beta) APIs.  |

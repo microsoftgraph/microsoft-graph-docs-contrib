@@ -307,7 +307,7 @@
           - name: Differences
             expanded: true
             items: 
-            - name: Request differences
+            - name: API Request differences
               href: migrate-azure-ad-graph-request-differences.md
             - name: Resource type differences
               href: migrate-azure-ad-graph-resource-differences.md
