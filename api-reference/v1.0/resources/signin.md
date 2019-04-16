@@ -1,14 +1,14 @@
 ---
 title: "signIn resource type | Microsoft Graph"
 description: "Describes the signIn resource of Microsoft Graph API (REST), which helps audit user and application sign-in activity (v1.0 version)."
-author: "lleonard-msft"
+author: "dhanyahk"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
 # signIn resource type
 
-Details user and application sign-in activity for a tenant (directory). 
+Details user and application sign-in activity for a tenant (directory).
 
 ## Methods
 
@@ -22,7 +22,7 @@ Details user and application sign-in activity for a tenant (directory).
 |:---------------|:--------|:----------|
 |appDisplayName|String|App name displayed in the Azure Portal.|
 |appId|String|Unique GUID representing the app ID in the Azure Active Directory.|
-|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
+|appliedConditionalAccessPolicy|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |clientAppUsed|String|Identifies the legacy client used for sign-in activity.  Includes Browser, Exchange Active Sync, modern clients, IMAP, MAPI, SMTP, and POP.|
 |conditionalAccessStatus|string| Reports status of an activated conditional access policy. Possible values are: `success`, `failure`, `notApplied`, and `unknownFutureValue`.|
 |correlationId|String|The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity.|
@@ -32,19 +32,17 @@ Details user and application sign-in activity for a tenant (directory).
 |ipAddress|String|IP address of the client used to sign in.|
 |isInteractive|Boolean|Indicates if a sign-in is interactive or not.|
 |location|[signInLocation](signinlocation.md)|Provides the city, state, and country code where the sign-in originated.|
-|mfaDetail|[mfaDetail](mfadetail.md)|Provides multi-factor authentication details for the sign-in.|
-|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Details the network location of the sign-in.|
-|originalRequestId|String|Request ID of the first request in the authentication sequence.|
-|processingTimeInMilliseconds|Int|Reports the request processing time in milliseconds.|
 |resourceDisplayName|String|Name of the resource the user signed into.|
 |resourceId|String|ID of the resource that the user signed into.|
 |riskDetail|`riskDetail`|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far. <br>**Note:** Details for this property require an Azure AD Premium P2 license. Other licenses return the value `hidden`.|
 |riskEventTypes|`riskEventTypes`|Risk event types associated with the sign-in. The possible values are: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, and `unknownFutureValue`.|
 |riskLevelAggregated|`riskLevel`|Aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
 |riskLevelDuringSignIn|`riskLevel`|Risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
-|riskLevel|string| Risk level associated with the sign-in. Possible values are: `low`, `medium`, `high`.|
 |riskState|`riskState`|Reports status of the risky user, sign-in, or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |status|[signInStatus](signinstatus.md)|Sign-in status. Possible values include `Success` and `Failure`.|
+|userDisplayName|String|Display name of the user that initiated the sign-in.|
+|userId|String|ID of the user that initiated the sign-in.|
+|userPrincipalName|String|User principal name of the user that initiated the sign-in.|
 
 ## Relationships
 

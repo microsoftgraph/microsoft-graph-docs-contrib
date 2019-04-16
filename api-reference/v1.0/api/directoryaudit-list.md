@@ -2,7 +2,7 @@
 title: "List directoryAudits | Microsoft Graph"
 description: "Describes the list method of the directoryAudit resource (entity) from the Microsoft Graph API (v1.0 version)."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -32,12 +32,13 @@ GET /auditlogs/directoryaudits
 This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](/graph/query_parameters.md) for how to use these parameters.
 
 |Name     |Description                            |Example|
-|:--------------------|:----------------|"------------------------------------------------------------------------|
+|:--------------------|:----------------|:--------------------------------------|
 |[$filter](/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |/`auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`
 |[$top](/graph/docs/concepts/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/directoryAudits?$top=1`|
 |[$skiptoken](/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
 ### List of attributes supported by $filter parameter
+
 |Attribute Name |Supported operators|
 |:----------------|:------|
 |activityDisplayName| eq, startswith|
@@ -48,8 +49,9 @@ This method supports the following OData Query Parameters to help customize the 
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |initiatedBy/app/appId| eq|
 |initiatedBy/app/appDisplayName| eq|
-|targetResource/any(t: t/id)| eq|
-|targetResource/any(t:t/displayName)| eq, startswith|
+|targetResource/any(t: t/id eq '{value}')| eq|
+|targetResource/any(t:t/displayName eq '{value}') | eq |
+|targetResources/any(x: startswith(x/displayName, '{value}'))| startswith|
 
 ## Request headers
 

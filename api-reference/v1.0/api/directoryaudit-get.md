@@ -2,7 +2,7 @@
 title: "Get directoryAudit | Microsoft Graph"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API (v1.0 version)."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -54,9 +54,11 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_directoryaudit"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/auditlogs/directoryaudits/{id}
 ```
+
 ### Response
 
 Here is an example of the response. 
@@ -65,6 +67,7 @@ Here is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.directoryaudit"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

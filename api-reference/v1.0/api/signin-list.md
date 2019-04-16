@@ -2,7 +2,7 @@
 title: "List signIns | Microsoft Graph"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API (v1.0 version)."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All | 
+|Application | AuditLog.Read.All |
 
 In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
@@ -104,19 +104,19 @@ Content-length: 264
 	"@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
 	"value": [{
 		"id": "id",
-		"createdDateTime": "2018-01-09T21:17:21.5077253Z",
-		"userDisplayName": "Jamie Doe",
-		"userPrincipalName": "jdoe@contoso.com",
-		"userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302",
 		"appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",
 		"appDisplayName": "Azure",
-		"ipAddress": "127.0.0.1",
-		"status": {
-			"errorCode": 0,
-			"failureReason": null,
-			"additionalDetails": "SignIn Success & CA Success"
-		},
+		"createdDateTime": "2018-01-09T21:17:21.5077253Z",
 		"clientAppUsed": null,
+		"conditionalAccessApplied": true,
+		"conditionalAccessPolicies": [{
+			"id": "26490ed6-52b3-4102-aeff-aad2292abacf",
+			"displayName": "capPolicy",
+			"enforcedAccessControls": ["MFA", "TOU"],
+			"enforcedSessionControls": ["CloudAppSecurity"],
+			"result": "success"
+		}],
+		"correlationId": "17444d3c-563d-4b08-ac20-815892b87e42",
 		"deviceDetail": {
 			"deviceId": "34390ed6-52b3-4102-aeff-aad2292abac3",
 			"displayName": "DeviceName",
@@ -126,6 +126,7 @@ Content-length: 264
 			"isManaged": true,
 			"trustType": ""
 		},
+		"ipAddress": "127.0.0.1",
 		"location": {
 			"city": "Redmond",
 			"state": "WA",
@@ -136,21 +137,14 @@ Content-length: 264
 				"longitude": -93.6151
 			}
 		},
-		"mfaDetail": {
-			"mfaAuthMethod": "Phone Auth",
-			"mfaAuthDetail": null
+		"status": {
+			"errorCode": 0,
+			"failureReason": null,
+			"additionalDetails": "SignIn Success & CA Success"
 		},
-		"correlationId": "17444d3c-563d-4b08-ac20-815892b87e42",
-		"conditionalAccessApplied": true,
-		"conditionalAccessPolicies": [{
-			"id": "26490ed6-52b3-4102-aeff-aad2292abacf",
-			"displayName": "capPolicy",
-			"enforcedAccessControls": ["MFA", "TOU"],
-			"enforcedSessionControls": ["CloudAppSecurity"],
-			"result": "success"
-		}],
-		"isRisky": false,
-		"riskLevel": "low"
+		"userDisplayName": "Jamie Doe",
+		"userPrincipalName": "jdoe@wingtiptoys.com",
+		"userId": "bbb3b4b5-e6e6-f7f5-f7f5-090805040302"
 	}]
 }
 
