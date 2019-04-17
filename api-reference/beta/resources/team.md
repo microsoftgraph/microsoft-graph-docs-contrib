@@ -94,18 +94,6 @@ The following is a JSON representation of the resource.
 }
 
 ```
-<Property Name="displayName" Type="Edm.String"/>
-<Property Name="description" Type="Edm.String"/>
-<Property Name="classification" Type="Edm.String"/>
-<Property Name="specialization" Type="microsoft.graph.teamSpecialization"/>
-<Property Name="visibility" Type="microsoft.graph.teamVisibilityType"/>
-<Property Name="webUrl" Type="Edm.String"/>
-<Property Name="memberSettings" Type="microsoft.graph.teamMemberSettings"/>
-<Property Name="guestSettings" Type="microsoft.graph.teamGuestSettings"/>
-<Property Name="messagingSettings" Type="microsoft.graph.teamMessagingSettings"/>
-<Property Name="funSettings" Type="microsoft.graph.teamFunSettings"/>
-<Property Name="isArchived" Type="Edm.Boolean"/>
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
