@@ -1,6 +1,6 @@
 ---
-title: "List signIns | Microsoft Graph"
-description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API (v1.0 version)."
+title: "List signIns"
+description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API."
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
@@ -12,15 +12,13 @@ Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interact
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | AuditLog.Read.All |
-
-In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
 ## HTTP request
 
@@ -31,17 +29,17 @@ GET auditLogs/signIns
 
 ## Optional query parameters
 
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](/graph/query_parameters.md) for how to use these parameters.
+This method supports the following OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#filter-parameter)|Filters results (rows). |/`auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
-|[$top](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](https://developer.microsoft.com/en-us/graph/docs/concepts/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$filter](/graph/query_parameters#filter-parameter)|Filters results (rows). |/`auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
+|[$top](/graph/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
+|[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
 ### Attributes supported by $filter parameter
 
-|Attribute Name |Supported operators|
+|Attribute name |Supported operators|
 |:----------------|:------|
 |id|eq|
 |userId|eq|
@@ -85,7 +83,8 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
