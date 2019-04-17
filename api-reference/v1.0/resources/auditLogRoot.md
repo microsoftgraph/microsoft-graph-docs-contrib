@@ -1,14 +1,14 @@
 ---
 title: "auditLogRoot resource type"
-description: "The `/auditLog` namespace exposes functionality that is specific to the auditLog sector. "
+description: "The `/auditLogs` resource is a container for different types of audit logs."
 author: "dhanyahk"
 localization_priority: Normal
-ms.prod: "auditLog"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # auditLogRoot resource type
 
-The auditLog resource is a container for different types of audit logs. It returns a singleton auditLog resource. It doesn't contain any usable properties.
+The auditLogs resource is a container for different types of audit logs. It returns a singleton auditLog resource. It doesn't contain any usable properties.
 
 ## Methods
 
@@ -46,12 +46,14 @@ Here is a JSON representation of the resource.
 }
 ```
 
+## Example
+
 <!-- {
   "blockType": "request",
-  "name": "get_auditLog"
+  "name": "get_auditLogs"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/auditLog
+GET https://graph.microsoft.com/v1.0/auditLogs
 ```
 
 <!-- {

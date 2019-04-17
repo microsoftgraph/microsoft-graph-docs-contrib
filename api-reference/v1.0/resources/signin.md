@@ -58,7 +58,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.signin"
+  "@odata.type": "microsoft.graph.signIn"
 }-->
 ```json
 {
