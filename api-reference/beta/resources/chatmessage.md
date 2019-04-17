@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message.
+Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be a root message or part of a thread that is defined by the **replyToId** property in the message.
 
 ## Methods
 
@@ -81,6 +81,7 @@ The following is a JSON representation of the resource.
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
+  "policyViolation": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string"
 }
