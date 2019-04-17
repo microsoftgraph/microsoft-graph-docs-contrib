@@ -5,7 +5,7 @@ localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 ---
-# Update or create a trustFrameworkPolicy
+# Update or create trustFrameworkPolicy
 
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
