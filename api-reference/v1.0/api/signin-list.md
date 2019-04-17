@@ -100,7 +100,7 @@ Content-length: 264
 
 ```json
 {
-	"@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
+	"@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditLogs/signIns",
 	"value": [{
 		"id": "id",
 		"appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c",

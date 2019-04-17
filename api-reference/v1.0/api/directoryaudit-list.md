@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /auditlogs/directoryaudits
+GET /auditLogs/directoryaudits
 ```
 
 ## Optional query parameters
@@ -78,7 +78,7 @@ Here is an example of the request.
   "name": "get_directoryaudit"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/auditlogs/directoryaudits
+GET https://graph.microsoft.com/v1.0/auditlogs/directoryAudits
 ```
 
 ### Response

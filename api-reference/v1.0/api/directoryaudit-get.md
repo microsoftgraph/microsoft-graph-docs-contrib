@@ -56,7 +56,7 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/auditlogs/directoryaudits/{id}
+GET https://graph.microsoft.com/v1.0/auditlogs/directoryAudits/{id}
 ```
 
 ### Response
