@@ -30,7 +30,7 @@ To receive lifecycle notifications, you can use the existing **notificationUrl**
 
 When creating a subscription, you can specify a separate notification endpoint using the **lifecycleNotificationUrl** property. If you specify the endpoint, all current and future types of lifecycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` notifications will be delivered to the existing **notificationUrl** for all existing subscriptions.
 
-> **Note:** At the moment, the **lifecycleNotificationUrl** property can only be set or read using the `beta` version of Graph APIs. However, subscriptions created using `beta` are stored in the same production environment as `v1.0` so you can implement the new Outlook flow described here in addition to your regular usage of `v1.0` with other subscriptions.
+> **Note:** At the moment, the **lifecycleNotificationUrl** property can only be set or read using the `beta` version of Microsoft Graph APIs. However, subscriptions created using `beta` are stored in the same production environment as `v1.0` so you can implement the new Outlook flow described here in addition to your regular usage of `v1.0` with other subscriptions.
 
 #### Subscription request example
 
@@ -140,13 +140,13 @@ A few things to note about this type of notification:
 
 ## Future-proof the code handling lifecycle notifications
 
-In the future Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: **lifecycleNotificationUrl**, but they will have a different value under **lifecycleEvent** and may contain a slightly different schema and properties, specific to the scenario for which they will be issued.
+In the future Microsoft Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: **lifecycleNotificationUrl**, but they will have a different value under **lifecycleEvent** and may contain a slightly different schema and properties, specific to the scenario for which they will be issued.
 
-You should implement your code in a future-proof way so it does not break when Graph introduces new types of lifecycle notifications. We recommend the following approach:
+You should implement your code in a future-proof way so it does not break when Microsoft Graph introduces new types of lifecycle notifications. We recommend the following approach:
 
 1. Explicitly identify each notification as an event that you support, using the **lifecycleEvent** property. For example, look for the `"lifecycleEvent": "subscriptionRemoved"` propety to identify a specific event, and handle it.
 
-2. For any lifecycle events you do not recognize, ignore them; we may add more values for the **lifecycleEvent** property in the future. We advise you log them so you can become aware of the new types of signals, in case you missed a Graph announcement for the new scenario. That way you can look up the updated documentation and implement your support for it at your discretion.
+2. For any lifecycle events you do not recognize, ignore them; we may add more values for the **lifecycleEvent** property in the future. We advise you log them so you can become aware of the new types of signals, in case you missed a Microsoft Graph announcement for the new scenario. That way you can look up the updated documentation and implement your support for it at your discretion.
 
 ## See also
 
