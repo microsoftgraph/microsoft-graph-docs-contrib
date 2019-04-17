@@ -157,3 +157,5 @@ You should implement your code in a future-proof way so it does not break when M
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [Delete subscription](/graph/api/subscription-delete?view=graph-rest-1.0)
+- [Update subscription](/graph/api/subscription-update?view=graph-rest-1.0)
