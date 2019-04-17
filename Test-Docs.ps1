@@ -2,17 +2,23 @@ Param(
     [switch]$cleanUp,
     [string]$file
 )
-$apiDoctorVersion = "https://github.com/OneDrive/apidoctor.git"
-$apiDoctorBranch = "develop"
+$apiDoctorVersion = $env:APIDOCTOR_VERSION
 $repoPath = (Get-Location).Path
 $downloadedApiDoctor = $false
 $downloadedNuGet = $false
+$docSubPath = $env:APIDOCTOR_DOCSUBPATH
 
 Write-Host "Repository location: ", $repoPath
 
 # Check if ApiDoctor version has been set
 if ([string]::IsNullOrWhiteSpace($apiDoctorVersion)) {
 	Write-Host "API Doctor version has not been set. Aborting..."
+	exit 1
+}
+
+# Check if ApiDoctor subpath has been set
+if ([string]::IsNullOrWhiteSpace($docSubPath)) {
+	Write-Host "API Doctor subpath has not been set. Aborting..."
 	exit 1
 }
 
@@ -44,13 +50,9 @@ else {
 	
 	if ($apiDoctorVersion.StartsWith("https://"))
 	{
-		if([string]::IsNullOrWhiteSpace($apiDoctorBranch)){
-			Write-Host "API Doctor branch has not been set. Aborting..."
-			exit 1
-		}
 		# Download ApiDoctor from GitHub	
 		Write-Host "Cloning API Doctor repository from GitHub"
-		& git clone -b $apiDoctorBranch $apiDoctorVersion --recurse-submodules "$apidocPath\SourceCode"
+		& git clone -b master $apiDoctorVersion --recurse-submodules "$apidocPath\SourceCode"
 		$downloadedApiDoctor = $true
 		
 		$nugetParams = "restore", "$apidocPath\SourceCode"
@@ -62,7 +64,7 @@ else {
 		Invoke-MsBuild -Path "$apidocPath\SourceCode\ApiDoctor.sln" -MsBuildParameters "/t:Rebuild /p:Configuration=Release /p:OutputPath=$apidocPath\ApiDoctor\tools"
 
         # Delete existing ApiDoctor source code     
-        Remove-Item "$apidocPath\SourceCode" -Force  -Recurse -ErrorAction SilentlyContinue
+        Remove-Item $apidocPath\SourceCode -Force  -Recurse -ErrorAction SilentlyContinue
 	}
 	else {
 		# Install ApiDoctor from NuGet
@@ -87,9 +89,9 @@ else {
 $lastResultCode = 0
 
 # Run validation at the root of the repository
-$appVeyorUrl = $env:APPVEYOR_API_URL
+$appVeyorUrl = $env:APPVEYOR_API_URL 
 
-$params = "check-all", "--path", "$repoPath\api-reference\beta", "--ignore-warnings"
+$params = "check-all", "--path", $repoPath+$docSubPath
 if ($appVeyorUrl -ne $null)
 {
     $params = $params += "--appveyor-url", $appVeyorUrl
