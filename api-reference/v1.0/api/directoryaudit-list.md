@@ -78,7 +78,7 @@ Here is an example of the request.
   "name": "get_directoryaudit"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/auditlogs/directoryAudits
+GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits
 ```
 
 ### Response
