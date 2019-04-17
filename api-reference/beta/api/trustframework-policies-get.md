@@ -1,6 +1,6 @@
 ---
 title: "Get trustFrameworkPolicy Content"
-description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation retrieves the content of an existing trustFrameworkPolicy object from the tenant."
+description: "This operation retrieves the content of an existing trustFrameworkPolicy object from an Azure AD B2C tenant."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -9,11 +9,11 @@ ms.prod: "microsoft-identity-platform"
 
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Retrieve the contents of an existing Trust Framework Policy.
+Retrieve the contents of an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a XML representation of the [trustFrameworkPolicy](../resources/trustFrameworkpolicy.md) in the response body.  **Note:** the response content type will be `application/xml`.
+If successful, this method returns `200 OK` response code and an XML representation of the [trustFrameworkPolicy](../resources/trustFrameworkpolicy.md) in the response body.  **Note:** the response content type will be `application/xml`.
 
 ## Example
 

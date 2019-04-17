@@ -1,19 +1,19 @@
 ---
 title: "Update trustFrameworkPolicy"
-description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation updates an existing trustFrameworkPolicy object or if one doesnt exist it creates one similar to the Post for the tenant. "
+description: "This operation updates an existing trustFrameworkPolicy object or if one doesnt exist it creates one similar to the Post in an Azure AD B2C tenant. "
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 ---
-# Update trustFrameworkPolicy
+# Update or create a trustFrameworkPolicy
 
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update an existing Trust Framework Policy or create one if it does not exist.
+Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or create one if it does not exist.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,13 +40,13 @@ PUT /trustFramework/policies/{id}/$value
 
 ## Request body
 
-In the request body, provide a XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. **Note:** the content type must be `application/xml`.
+In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. **Note:** the content type must be `application/xml`.
 
 ## Response
+There are 2 cases for this response:
+1.  **[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists:** This will result in an update. If successful, this method returns `200 OK` response code.
 
-**Case [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists:** This will result in an update. If successful, this method returns `200 OK` response code.
-
-**Case [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist:** This is similar to the [POST](trustframework-policies-create.md) method. If successful, this method returns `201 Created` response code.
+2.  **[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist:** This is similar to the [POST](trustframework-policies-create.md) method. If successful, this method returns `201 Created` response code.
 
 If unsuccessful, a `4xx` error will be returned with specific details.
 

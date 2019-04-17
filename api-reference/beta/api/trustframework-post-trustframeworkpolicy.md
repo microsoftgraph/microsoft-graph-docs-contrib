@@ -1,19 +1,19 @@
 ---
-title: "Create a trustFrameworkPolicy"
-description: "In the Azure AD B2C trust framework policy is referred to as custom policies. This operation creates a new trustFrameworkPolicy object for the tenant." 
+title: "Create trustFrameworkPolicy"
+description: "This operation creates a new trustFrameworkPolicy object in an Azure AD B2C tenant." 
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
 ---
-# Create a trustFrameworkPolicy
+# Create trustFrameworkPolicy
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Create a new trustFramework policy. The request body contains the content in `application/xml`.
+Create new [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,11 +39,11 @@ POST /trustFramework/policies
 
 ## Request body
 
-In the request body, provide a XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. The content type must be `application/xml`.
+In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. The content type must be `application/xml`.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 
