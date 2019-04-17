@@ -1,6 +1,6 @@
 ---
 title: "Update trustFrameworkPolicy"
-description: "This operation updates an existing trustFrameworkPolicy object, or if one doesn't exist, it creates one similar to the Post in an Azure AD B2C tenant. "
+description: "This operation updates an existing trustFrameworkPolicy object, or if one doesn't exist, it creates one. "
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
