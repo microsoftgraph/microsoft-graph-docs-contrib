@@ -28,7 +28,7 @@ To receive lifecycle notifications, you can use the existing `notificationUrl` e
 
 ## Creating a subscription
 
-When creating a subscription, a separate notification endpoint can be specified, using the `lifecycleNotificationUrl` property. If the endpoint is specified, all current and future types of lifecycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` notifications will be delivered to the currently specified `notificationUrl` for all existing subscriptions.
+When creating a subscription, you can specify a separate notification endpoint using the `lifecycleNotificationUrl` property. If you specify the endpoint, all current and future types of lifecycle notifications will be delivered there. Otherwise, `subscriptionRemoved` and `missed` notifications will be delivered to the existing `notificationUrl` for all existing subscriptions.
 
 > **Note:** At the moment, the `lifecycleNotificationUrl` property can only be set or read using the `beta` version of Graph APIs. However, subscriptions created using `beta` are stored in the same production environment as `v1.0` so you can implement the new Outlook flow described here in addition to your regular usage of `v1.0` with other subscriptions.
 
@@ -56,20 +56,20 @@ You may choose to use the same URL for both endpoints, in which case you will re
 
 ## Responding to `subscriptionRemoved` notifications
 
-These lifecycle notifications inform the app that a subscription has been removed and should be recreated, if the app wants to continue receiving notifications. 
+These lifecycle notifications inform you that a subscription has been removed and should be recreated, if you want to continue receiving notifications. 
 
-An app can create a long lived subscription (e.g. 3 days), and resource data notifications will start flowing to the `notificationUrl`. However, the conditions of access to the resource data may change over time. For example, an event in the Outlook service may occur that requires the app to re-authenticate the user. In such a case, the flow looks as follows:
+You can create a long lived subscription (e.g. 3 days), and resource data notifications will start flowing to the `notificationUrl`. However, the conditions of access to the resource data may change over time. For example, an event in the Outlook service may occur that requires the app to re-authenticate the user. In such a case, the flow looks as follows:
 
 1. Outlook decides that a subscription needs to be removed from Microsoft Graph.
     1. There is no set cadence for these events. They may occur frequently for some resources, and almost never for others.
 
 2. Microsoft Graph sends an `subscriptionRemoved` notification to the `lifecycleNotificationUrl` (if specified), or the `notificationUrl`.  
 
-3. The app can respond to this notification by creating a new subscription for the same resource. To do this, the app needs to present a valid access token; in some cases this means the app needs to re-authenticate the user to obtain a new valid access token.
+3. You can respond to this notification by creating a new subscription for the same resource. To do this, you need to present a valid access token; in some cases this means the app needs to re-authenticate the user to obtain a new valid access token.
 
-4. If the app successfully creates a new subscription, resource notifications will start flowing again. However, if the app fails (for example, it could not obtain a valid access token), resource notifications will not be sent.
+4. If you successfully create a new subscription, resource notifications will start flowing again. However, if you fail (for example, the app could not obtain a valid access token), resource notifications will not be sent.
 
-5. After creating the new subscription, the app can sync the resource data to identify any missing changes.
+5. After creating the new subscription, you can sync the resource data to identify any missing changes.
 
 ### `subscriptionRemoved` notification example
 
@@ -107,7 +107,7 @@ A few things to note about this type of notification:
 
 ## Responding to `missed` notifications
 
-These signals inform the app that some notifications may have not been delivered. You should decide if your app ignores or handles these signals.
+These signals inform you that some notifications may have not been delivered. You should decide if you ignore or handle these signals.
 
 ### Notification example
 
