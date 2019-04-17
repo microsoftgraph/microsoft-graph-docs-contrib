@@ -1014,7 +1014,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## trustFrameworkPolicy permissions
+## Trust Framework policy permissions
 
 #### Delegated permissions
 
