@@ -47,12 +47,12 @@ Content-Type: application/json
 }
 ```
  
-> **Important:** Both notifications URLs must share the same hostname. 
+> **Important:** Use the same hostname for both notifications URLs. 
 
-> **Note:** Both notification endpoints will need to be validated by the client app, as described in [the generic notification article](webhooks.md#managing-subscriptions).
-You may choose to use the same URL for both endpoints, in which case you will receive two validation requests, to which you will need to respond.
+> **Note:** You need to validate both notification endpoints as described in [the generic notification article](webhooks.md#managing-subscriptions).
+If you choose to use the same URL for both endpoints you will receive and respond to two validation requests.
 
-> **Note:** It is not possible to update (`PATCH`) the existing subscriptions to add **lifecycleNotificationUrl** property. If the app has existing subscriptions, it will have to replace them with new subscriptions to specify the **lifecycleNotificationUrl** property. Existing subscriptions without **lifecycleNotificationUrl** property will receive the `subscriptionRemoved` and `missed` notifications via the **notificationUrl**. 
+> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property. Existing subscriptions without **lifecycleNotificationUrl** property will receive the `subscriptionRemoved` and `missed` notifications via the **notificationUrl**. 
 
 ## Responding to `subscriptionRemoved` notifications
 
