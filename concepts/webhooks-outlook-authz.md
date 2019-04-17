@@ -56,9 +56,9 @@ If you choose to use the same URL for both endpoints you will receive and respon
 
 ## Responding to `subscriptionRemoved` notifications
 
-These lifecycle notifications inform you that a subscription has been removed and should be recreated, if you want to continue receiving notifications. 
+The `subscriptionRemoved` notifications inform you that a subscription has been removed and should be recreated, if you want to continue receiving notifications. 
 
-You can create a long lived subscription (e.g. 3 days), and resource data notifications will start flowing to the **notificationUrl**. However, the conditions of access to the resource data may change over time. For example, an event in the Outlook service may occur that requires the app to re-authenticate the user. In such a case, the flow looks as follows:
+You can create a long-lived subscription (e.g. 3 days), and resource data notifications will start flowing to the **notificationUrl**. However, the conditions of access to the resource data may change over time. For example, an event in the Outlook service may occur that requires the app to re-authenticate the user. In such a case, the flow looks as follows:
 
 1. Outlook decides that a subscription needs to be removed from Microsoft Graph.
     1. There is no set cadence for these events. They may occur frequently for some resources, and almost never for others.
