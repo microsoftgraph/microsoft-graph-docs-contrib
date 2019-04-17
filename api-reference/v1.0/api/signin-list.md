@@ -33,9 +33,9 @@ This method supports the following OData query parameters to help customize the 
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
-|[$filter](/graph/query_parameters#filter-parameter)|Filters results (rows). |/`auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
+|[$filter](/graph/query_parameters#filter-parameter)|Filters results (rows). |`/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24`
 |[$top](/graph/query_parameters#top-parameter)|Sets the page size of results.|`/auditLogs/signIns?$top=1`|
-|[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
+|[$skiptoken](/graph/query_parameters#skiptoken-parameter)|Retrieves the next page of results from result sets that span multiple pages.|`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1`|
 
 ### Attributes supported by $filter parameter
 
@@ -78,7 +78,7 @@ Here is an example of the request.
   "name": "list_signins"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/auditLogs/signIns
+GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ```
 
 ### Response

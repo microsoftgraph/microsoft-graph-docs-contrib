@@ -57,7 +57,7 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
+GET https://graph.microsoft.com/v1.0/auditLogs/signIns/{id}
 ```
 
 ### Response
