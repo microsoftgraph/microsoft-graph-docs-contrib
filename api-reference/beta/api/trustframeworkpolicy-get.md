@@ -32,7 +32,7 @@ GET /trustFramework/policies/{id}/$value
 
 ## Optional query parameters
 
-This method supports the $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -46,7 +46,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and an XML representation of the [trustFrameworkPolicy](../resources/trustFrameworkpolicy.md) in the response body.  **Note:** the response content type will be `application/xml`.
+If successful, this method returns a `200 OK` response code and an XML representation of the [trustFrameworkPolicy](../resources/trustFrameworkpolicy.md) in the response body.  
+
+>**Note:** the response content type will be `application/xml`.
 
 ## Example
 

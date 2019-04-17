@@ -1,6 +1,6 @@
 ---
-title: "List trustFramework policies"
-description: "This operation lists all  trustFrameworkPolicy objects in an Azure AD B2C tenant."
+title: "List trustFrameworkPolicies"
+description: "This operation lists all trustFrameworkPolicy objects in an Azure AD B2C tenant."
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-List [trustFrameworkPolicies](../resources/trustframeworkpolicy.md) in the tenant/directory.
+Retrieve a list of [trustFrameworkPolicies](../resources/trustframeworkpolicy.md) in the tenant/directory.
 
 ## Permissions
 
@@ -31,7 +31,7 @@ GET /trustFramework/policies/
 ```
 ## Optional query parameters
 
-This method supports the $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -45,11 +45,11 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a collection of [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) in JSON representation in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) objects in a JSON representation in the response body.
 
 ## Example
 
-The following example retrieves all **trustFrameworkPolicy**.
+The following example retrieves all **trustFrameworkPolicies**.
 
 ##### Request
 
