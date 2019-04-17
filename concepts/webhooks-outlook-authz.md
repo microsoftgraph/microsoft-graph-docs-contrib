@@ -7,21 +7,24 @@ localization_priority: Priority
 
 # Maintaining continous notification delivery for Outlook resources
 
-An app that subscribes to notifications for Outlook resources, such as messages or events, needs to be able to respond to `subscriptionRemoved` signals in order to maintain continous flow of notifications over the lifetime of its subscription.
+Apps subscribing to notifications for Outlook resources may get their subscriptions removed and miss some notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous notification flow.
 
-There are certain events in the Outlook service that cause a subscription to be removed. Examples include:
+Certain events in Outlook can cause a subscription to be removed. These events include:
 
 - user's password has been reset
 - user's device is out of compliance
 -	user's account has been revoked
 
-When these events occur, Microsoft Graph will send a special lifecycle notification - `subscriptionRemoved` to the app. The app needs to respond to that notification by creating a new subscription.
+When such an event happens, Outlook sends a special lifecycle notification, `subscriptionRemoved`.
 
-An app needs to implement logic additional to the standard [notification pattern](webhooks.md):
-- Identify these notifications, and respond to them by making an API in Microsoft Graph to create a new subscription;
-- Optionally, register a separate lifecycle notification url, if the app wishes to receive lifecycle notifications of all types to a separate endpoint
+Outlook also sends another lifecycle notification, `missed`, if a notification cannot be delivered to an app.
 
-The Outlook service may also send special lifecycle notifications - `missed` - if some notifications could not be delivered to the app. An app should can handle those special notifications by re-syncing resource data using Microsoft Graph.
+An app subscribing to notifications for Outlook resources, such as `messages` or `events`, should listen to the subscriptionRemoved and missed signals:
+
+- Upon receiving a `subscriptionRemoved` notification, the app should re-create the subscription in order to maintain a continuous flow.
+- On receiving a `missed` notification, the app should re-synchronize resource data using Microsoft Graph.
+
+To receive lifecycle notifications, you can use the existing `notificationUrl` endpoint that already receives resource notifications, or you can register a separate `lifecycleNotificationUrl` to receive `subscriptionRemoved` and `missed` notifications in a separate endpoint.
 
 ## Creating a subscription
 
