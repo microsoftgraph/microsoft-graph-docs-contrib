@@ -60,7 +60,7 @@ The `subscriptionRemoved` notifications inform you that a subscription has been 
 
 You can create a long-lived subscription (e.g. 3 days), and resource data notifications will start flowing to the **notificationUrl**. However, the conditions of access to the resource data may change over time. For example, an event in the Outlook service may occur that requires the app to re-authenticate the user. In such a case, the flow looks as follows:
 
-1. Outlook decides that a subscription needs to be removed from Microsoft Graph.
+1. Outlook detects that a subscription needs to be removed from Microsoft Graph.
     1. There is no set cadence for these events. They may occur frequently for some resources, and almost never for others.
 
 2. Microsoft Graph sends an `subscriptionRemoved` notification to the **lifecycleNotificationUrl** (if specified), or the **notificationUrl**.  
@@ -90,7 +90,7 @@ You can create a long-lived subscription (e.g. 3 days), and resource data notifi
 A few things to note about this type of notification:
 - The `"lifecycleEvent": "subscriptionRemoved"` field designates this notification as related to subscription removal. Other types of lifecycle notifications are also possible, and new ones will be introduced in the future.
 - The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change
-- **value** is an array, so multiple lifecycle notifications may be batched together - possibly with different **lifecycleEvent** values - similarly to resource notifications. You should process each notification in the batch, and react to it.
+- Similar to resource notifications, lifecycle notifications may be batched together (in the **value** array), each with a possibly different **lifecycleEvent** value. Process each notification in the batch accordingly.
 
 ### Action to take
 
