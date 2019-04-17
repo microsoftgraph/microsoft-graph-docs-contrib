@@ -7701,15 +7701,15 @@
         href: resources/trustframeworkpolicy.md
         items:
         - name: List trustFrameworkPolicies
-          href: api/trustframework-policies-list.md
+          href: api/trustframework-list-trustframeworkpolicies.md
         - name: Create trustFrameworkPolicy
           href: api/trustframework-post-trustframeworkpolicy.md
         - name: Get trustFramework policy
-          href: api/trustframework-policies-get.md
+          href: api/trustframeworkpolicy-get.md
         - name: Upate or create trustFrameworkPolicy
           href: api/trustframework-put-trustframeworkpolicy.md
         - name: Delete trustFrameworkPolicy
-          href: api/trustframework-policies-delete.md
+          href: api/trustframeworkpolicy-delete.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:

@@ -16,7 +16,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta |Introduced a new resource type [trustFramework policy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta). This resource type supports  [create](/graph/api/trustframework-policies-create?view=graph-rest-beta), [list](/graph/api/trustframework-policies-list?view=graph-rest-beta), [get](/graph/api/trustframework-policies-get?view=graph-rest-beta), [update](/graph/api/trustframework-policies-update?view=graph-rest-beta), and [delete](/graph/api/trustframework-policies-delete?view=graph-rest-beta) operations.|
+| Addition | Beta |Introduced a new resource type [trustFramework policy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta). This resource type supports  [create](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [list](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [get](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [update](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), and [delete](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta) operations.|
 
 
 ### Directory APIs
