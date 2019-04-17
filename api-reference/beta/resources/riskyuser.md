@@ -19,10 +19,10 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List riskyUsers](../api/riskyusers-list.md) | [riskyUsers](riskyUser.md) |List risky users and their properties.|
-|[Get riskyUsers](../api/riskyusers-get.md) | [riskyUsers](riskyUser.md)|Get a specific risky user and its properties.|
-|[Confirm riskyUsers compromised](../api/riskyusers-confirmcompromised.md)|Confirm a risky user as compromised.|
-|[Dismiss riskyUsers](../api/riskyusers-dismiss.md)|Dismiss the risk of a risky user.|
+|[List riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyUser.md) collection|List risky users and their properties.|
+|[Get riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|Get a specific risky user and its properties.|
+|[Confirm riskyUsers compromised](../api/riskyusers-confirmcompromised.md)|None |Confirm a risky user as compromised.|
+|[Dismiss riskyUsers](../api/riskyusers-dismiss.md)|None | Dismiss the risk of a risky user.|
 
 ## Properties
 
@@ -32,11 +32,17 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`isDeleted`|`bool`|Indicates whether the user is deleted. Possible values are: `true`, `false`|
 |`isGuest`|`bool`|Indicates whether the user is a guest user. Possible values are: `true`, `false`. True if user’s identity lies outside of the tenant in consideration. This user could be a B2B or a B2C user with identity in Azure AD, MSA or 3rd party identity provider. False if user’s identity lies inside the tenant in consideration|
 |`isProcessing`|`bool`|Indicates wehther a user's risky state is being processed by the backend|
-|`risk`|[risk](risk.md)|Risky user state|
 |`riskLastUpdatedDateTime`|`datetime`|The date and time that the risky user was last updated|
+|`riskLevel`|`riskLevel`| Possible values are low, medium, high, hidden, none, unknownFutureValue.  |
+|`riskState`|`riskState`| Possible values are none, confirmedSafe, remediated, atRisk, unknownFutureValue.  |
+|`riskDetail`|`riskDetail`| Possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
 |`userDisplayName`|`string`|Risky user display name|
 |`userPrincipalName`|`string`|Risky user principal name|
 
+## Relationships
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+|history|[riskyUserHistoryItem](riskyuserhistoryitem.md) collection| |
 
 ## JSON representation
 
@@ -47,17 +53,19 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json
 {
- "id": "string",
+"id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
 "isGuest": "boolean",
 "isProcessing": "boolean",
 "isDeleted": "boolean",
-"risk": {"@odata.type": "microsoft.graph.risk"},
+"riskDetail":  "string",
+"riskLevel":  "string",
+"riskState":  "string",
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }
