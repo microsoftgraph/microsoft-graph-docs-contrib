@@ -128,7 +128,7 @@ These signals inform you that some notifications may have not been delivered. Yo
 A few things to note about this type of notification:
 - The `"lifecycleEvent": "missed"` field designates this as a signal about missed notifications. Other types of lifecycle notifications are also possible, and new ones will be introduced in the future.
 - The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change
-- **value** is an array, so multiple lifecycle notifications may be batched together - possibly with different **lifecycleEvent** values - similarly to resource notifications. You should process each notification in the batch, and react to it.
+- Similar to resource notifications, lifecycle notifications may be batched together (in the **value** array), each with a possibly different **lifecycleEvent** value. Process each notification in the batch accordingly.
 
 ### Action to take
 
