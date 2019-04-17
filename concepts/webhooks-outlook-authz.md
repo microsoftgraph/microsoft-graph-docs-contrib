@@ -146,7 +146,11 @@ You should implement your code in a future-proof way so it does not break when M
 
 1. Explicitly identify each notification as an event that you support, using the **lifecycleEvent** property. For example, look for the `"lifecycleEvent": "subscriptionRemoved"` property to identify a specific event, and handle it.
 
-2. For any lifecycle events you do not recognize, ignore them; we may add more values for the **lifecycleEvent** property in the future. We advise you log them so you can become aware of the new types of signals, in case you missed a Microsoft Graph announcement for the new scenario. That way you can look up the updated documentation and implement your support for it at your discretion.
+2. Watch for announcements of notifications for new scenarions, as there may be more types of lifecycle notifications in the future.
+
+3. In your app, ignore any lifecycle events that the app does not recognize, and log them to gain awareness.
+
+4. At your discretion, look up the related documentation for new lifecycle notifications and implement support for them as appropriate.
 
 ## See also
 
