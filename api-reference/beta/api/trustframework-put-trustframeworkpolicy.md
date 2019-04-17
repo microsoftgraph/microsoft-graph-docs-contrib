@@ -43,12 +43,11 @@ PUT /trustFramework/policies/{id}/$value
 In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. **Note:** the content type must be `application/xml`.
 
 ## Response
-There are 2 cases for this response:
-1.  **[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists:** This will result in an update. If successful, this method returns `200 OK` response code.
+There are 3 cases for this response:
+1.  If [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists, this results in an update. A successful request returns `200 OK` response code.
 
-2.  **[trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist:** This is similar to the [POST](trustframework-policies-create.md) method. If successful, this method returns `201 Created` response code.
-
-If unsuccessful, a `4xx` error will be returned with specific details.
+2.  If [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, this is similar to the [POST](trustframework-post-trustframeworkpolicy.md) method. A successful request returns `201 Created` response code.
+3. If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 

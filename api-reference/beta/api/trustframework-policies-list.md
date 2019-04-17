@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-List all [trustFrameworkPolicies](../resources/trustframeworkpolicy.md) in the tenant/directory.
+List [trustFrameworkPolicies](../resources/trustframeworkpolicy.md) in the tenant/directory.
 
 ## Permissions
 
@@ -29,6 +29,9 @@ The work or school account must be a global administrator of the tenant.
 ```http
 GET /trustFramework/policies/
 ```
+## Optional query parameters
+
+This method supports the $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

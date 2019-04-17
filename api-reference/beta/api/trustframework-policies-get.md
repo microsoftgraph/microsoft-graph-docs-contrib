@@ -30,6 +30,10 @@ The work or school account must be a global administrator of the tenant.
 GET /trustFramework/policies/{id}/$value
 ```
 
+## Optional query parameters
+
+This method supports the $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
 |Name|Description|

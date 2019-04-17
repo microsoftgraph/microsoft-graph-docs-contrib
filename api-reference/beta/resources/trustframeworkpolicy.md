@@ -44,12 +44,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## XML representation
+## XML Representation
 
-The following is an XML representation of the policy.  For more information, refer to the [documentation](https://docs.microsoft.com/en-us/azure/active-directory-b2c/trustframeworkpolicy) here.  The complete XML schema, refer to the TrustFrameworkPolicy xsd file here: [https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack).
-
-```xml
-<TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
-    <!---PolicyContent-->
-</TrustFrameworkPolicy>
-```
+1. See the [trustFrameworkPolicy schema](https://docs.microsoft.com/en-us/azure/active-directory-b2c/trustframeworkpolicy) to understand the elements  
+2. See the [trustFrameworkPolicy.xsd](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)
