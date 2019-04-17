@@ -1,6 +1,6 @@
 ---
 title: "Update trustFrameworkPolicy"
-description: "This operation updates an existing trustFrameworkPolicy object or if one doesnt exist it creates one similar to the Post in an Azure AD B2C tenant. "
+description: "This operation updates an existing trustFrameworkPolicy object, or if one doesn't exist, it creates one similar to the Post in an Azure AD B2C tenant. "
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
@@ -40,18 +40,20 @@ PUT /trustFramework/policies/{id}/$value
 
 ## Request body
 
-In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. **Note:** the content type must be `application/xml`.
+In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object. 
+
+>**Note:** the content type must be `application/xml`.
 
 ## Response
-There are 3 cases for this response:
-1.  If [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists, this results in an update. A successful request returns `200 OK` response code.
 
-2.  If [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, this is similar to the [POST](trustframework-post-trustframeworkpolicy.md) method. A successful request returns `201 Created` response code.
-3. If unsuccessful, a `4xx` error will be returned with specific details.
+The response will be one of the following:
+- If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists, a successful request returns a `200 OK` response code.
+- If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, a successful request returns a `201 Created` response code.
+- If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example
 
-The following example updates **trustFrameworkPolicy**.
+The following example updates a **trustFrameworkPolicy**.
 
 ##### Request
 
@@ -83,7 +85,7 @@ HTTP/1.1 200 OK
 	....
 </TrustFrameworkPolicy>
 ```
-If the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, then one will be created similar to the [POST](trustframework-post-trustframeworkpolicy.md) method
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
