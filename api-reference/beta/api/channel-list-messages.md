@@ -28,7 +28,9 @@ GET /teams/{id}/channels/{id}/messages
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+
+[$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter) can be used to control the number of items per response. 
+The other [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
 
 ## Request headers
 | Header       | Value |
