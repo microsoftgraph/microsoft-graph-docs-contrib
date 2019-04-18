@@ -245,7 +245,7 @@
           href: webhooks.md
           displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
           items:
-          - name: Maintaining continous notification flow for Outlook entities
+          - name: Maintaining continuous notification flow for Outlook entities
             href: webhooks-outlook-authz.md
         - name: Track changes
           href: delta-query-overview.md

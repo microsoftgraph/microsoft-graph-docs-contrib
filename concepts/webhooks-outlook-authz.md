@@ -1,11 +1,11 @@
 ---
-title: "Maintaining continous notification delivery for Outlook resources"
+title: "Maintaining continuous notification delivery for Outlook resources"
 description: "Outlook may suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `subscriptionRemoved` and `missed` - need to be handled to ensure uninterrupted delivery of notifications."
 author: "piotrci"
 localization_priority: Priority
 ---
 
-# Maintaining continous notification delivery for Outlook resources
+# Maintaining continuous notification delivery for Outlook resources
 
 Apps subscribing to notifications for Outlook resources may get their subscriptions removed and miss some notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous notification flow.
 
@@ -32,7 +32,7 @@ When creating a subscription, you can specify a separate notification endpoint u
 
 > **Note:** At the moment, the **lifecycleNotificationUrl** property can only be set or read using the `beta` version of Microsoft Graph APIs. However, subscriptions created using `beta` are stored in the same production environment as `v1.0` so you can implement the new Outlook flow described here in addition to your regular usage of `v1.0` with other subscriptions.
 
-#### Subscription request example
+### Subscription request example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -63,7 +63,7 @@ You can create a long-lived subscription (e.g. 3 days), and resource data notifi
 1. Outlook detects that a subscription needs to be removed from Microsoft Graph.
     1. There is no set cadence for these events. They may occur frequently for some resources, and almost never for others.
 
-2. Microsoft Graph sends an `subscriptionRemoved` notification to the **lifecycleNotificationUrl** (if specified), or the **notificationUrl**.  
+2. Microsoft Graph sends a `subscriptionRemoved` notification to the **lifecycleNotificationUrl** (if specified), or the **notificationUrl**.  
 
 3. You can respond to this notification by creating a new subscription for the same resource. To do this, you need to present a valid access token; in some cases this means the app needs to re-authenticate the user to obtain a new valid access token.
 
@@ -89,10 +89,10 @@ You can create a long-lived subscription (e.g. 3 days), and resource data notifi
 
 A few things to note about this type of notification:
 - The `"lifecycleEvent": "subscriptionRemoved"` field designates this notification as related to subscription removal. Other types of lifecycle notifications are also possible, and new ones will be introduced in the future.
-- The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change
+- The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change.
 - Similar to resource notifications, lifecycle notifications may be batched together (in the **value** array), each with a possibly different **lifecycleEvent** value. Process each notification in the batch accordingly.
 
-### Action to take
+### Actions to take
 
 1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
 2. [Validate](webhooks.md#notifications) the authenticity of the notification.
@@ -130,7 +130,7 @@ A few things to note about this type of notification:
 - The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state change
 - Similar to resource notifications, lifecycle notifications may be batched together (in the **value** array), each with a possibly different **lifecycleEvent** value. Process each notification in the batch accordingly.
 
-### Action to take
+### Actions to take
 
 1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
   - If you ignore these, signals, do nothing else. Otherwise:
