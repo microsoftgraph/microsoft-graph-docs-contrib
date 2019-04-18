@@ -29,7 +29,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## Optional query parameters
 
-You can use the [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter) query parameter to control the number of items per response. 
+You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. 
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
 ## Request headers
