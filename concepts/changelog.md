@@ -12,6 +12,12 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
 ## April 2019
+### Azure AD B2C APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta |Introduced a new resource type [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta). This resource type supports  [create](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [list](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [get](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [update](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), and [delete](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta) operations.|
+
 
 ### Directory APIs
 
@@ -262,7 +268,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## January 2019
 
-### Azure AD APIs
+### Azure AD B2C APIs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
