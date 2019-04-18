@@ -449,8 +449,8 @@ When sending image and file data, be aware of these limitations: <!--TODO: check
 
 - The Microsoft Graph REST API has a 4 MB request limit. Anything above this will fail with the error message "request too large (413)". 
 
-- The underlying OneNote REST API's limits are higher, but cannot be utilized through the Graph API. 
-  - There, the total POST size limit is ~70 MB, including images, files, and other data. The actual limit is affected by downstream encoding, so there's no fixed byte-count limit. Requests that exceed the limit may produce unreliable results.
+- The request limit of the underlying OneNote REST API is higher, but you cannot access it via the Microsoft Graph API. 
+  - The total POST size limit is ~70 MB, including images, files, and other data. The actual limit is affected by downstream encoding, so there's no fixed byte-count limit. Requests that exceed the limit might produce unreliable results.
   - The limit for each data part is 25 MB, including the part headers. Data parts that exceed the limit are rejected by Microsoft Graph. 
 
 - The maximum number of images per page is 150. When using the `src="https://..."` attribute, the API ignores **img** tags beyond the limit.
