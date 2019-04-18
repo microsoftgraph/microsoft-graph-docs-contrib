@@ -14,9 +14,9 @@ Represents a mention in a [chatMessage](chatmessage.md) entity. The mention can 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|int|Index of the entity being mentioned. Matches with the <at id="index"> tag of the message body.|
+|id|int|Index of the entity being mentioned. Referenced by the `<at id="index">` tag in the message body.|
 |mentionText|string|String used to represent the mention. For example, User display name, Team name.|
-|mentioned|[identitySet](identityset.md)|The entity (user, application, team, or channel) that was mentioned.|
+|mentioned|[identitySet](identityset.md)|The entity (user, application, team, or channel) that was mentioned. If it was a channel or team that was @mentioned, the identitySet will contain a **conversation** property giving the ID of the team/channel, and a **conversationIdentityType** property that's either **team** or **channel**. |
 
 ## JSON representation
 
