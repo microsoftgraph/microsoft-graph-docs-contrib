@@ -22,7 +22,7 @@ For more information, see [Custom policies in Azure Active Directory B2C](https:
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create trustFrameworkPolicy](../api/trustframework-post-trustframeworkpolicy.md)|trustFramework Policy|Create a new trustFrameworkPolicy.|
+|[Create trustFrameworkPolicy](../api/trustframework-post-trustframeworkpolicy.md)|trustFrameworkPolicy|Create a new trustFrameworkPolicy.|
 |[Get trustFrameworkPolicy](../api/trustframeworkpolicy-get.md) |trustFrameworkPolicy|Read properties of an existing trustFrameworkPolicy.|
 |[List trustFrameworkPolicies](../api/trustframework-list-trustframeworkpolicies.md)|trustFrameworkPolicy collection|List all trustFrameworkPolicies configured in a tenant.|
 |[Update or create trustFrameworkPolicy](../api/trustframework-put-trustframeworkpolicy.md)|None|Update an existing trustFrameworkPolicy.|
@@ -32,7 +32,7 @@ For more information, see [Custom policies in Azure Active Directory B2C](https:
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The id of the policy.|
+|id|String|The ID of the policy.|
 
 ## JSON representation
 
