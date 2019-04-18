@@ -19,7 +19,7 @@ When such an event happens, Outlook sends a special lifecycle notification, `sub
 
 Outlook also sends another lifecycle notification, `missed`, if a notification cannot be delivered to an app.
 
-An app subscribing to notifications for Outlook resources, such as **messages** or **events**, should listen to the subscriptionRemoved and missed signals:
+An app subscribing to notifications for Outlook resources, such as **message** and **event**, should listen to the `subscriptionRemoved` and `missed` signals:
 
 - Upon receiving a `subscriptionRemoved` notification, the app should re-create the subscription in order to maintain a continuous flow.
 - On receiving a `missed` notification, the app should re-synchronize resource data using Microsoft Graph.
