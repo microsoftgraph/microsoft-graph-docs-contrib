@@ -11,9 +11,9 @@ Apps subscribing to notifications for Outlook resources may get their subscripti
 
 Certain events in Outlook can cause a subscription to be removed. These events include:
 
-- user's password has been reset
-- user's device is out of compliance
--	user's account has been revoked
+- User's password has been reset
+- User's device is out of compliance
+-	User's account has been revoked
 
 When such an event happens, Outlook sends a special lifecycle notification, `subscriptionRemoved`.
 
@@ -21,8 +21,8 @@ Outlook also sends another lifecycle notification, `missed`, if a notification c
 
 An app subscribing to notifications for Outlook resources, such as **message** and **event**, should listen to the `subscriptionRemoved` and `missed` signals:
 
-- Upon receiving a `subscriptionRemoved` notification, the app should re-create the subscription in order to maintain a continuous flow.
-- On receiving a `missed` notification, the app should re-synchronize resource data using Microsoft Graph.
+- Upon receiving a `subscriptionRemoved` notification, the app should recreate the subscription in order to maintain a continuous flow.
+- On receiving a `missed` notification, the app should resynchronize resource data using Microsoft Graph.
 
 To receive lifecycle notifications, you can use the existing **notificationUrl** endpoint that already receives resource notifications, or you can register a separate **lifecycleNotificationUrl** to receive `subscriptionRemoved` and `missed` notifications in a separate endpoint.
 
@@ -54,7 +54,7 @@ If you choose to use the same URL for both endpoints you will receive and respon
 
 > **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property. Existing subscriptions without **lifecycleNotificationUrl** property will receive the `subscriptionRemoved` and `missed` notifications via the **notificationUrl**. 
 
-## Responding to `subscriptionRemoved` notifications
+## Responding to subscriptionRemoved notifications
 
 The `subscriptionRemoved` notification informs you that a subscription has been removed and should be recreated, if you want to continue receiving notifications. 
 
@@ -71,7 +71,7 @@ You can create a long-lived subscription (e.g. 3 days), and resource data notifi
 
 5. After creating the new subscription, you can sync the resource data to identify any missing changes.
 
-### `subscriptionRemoved` notification example
+### subscriptionRemoved notification example
 
 ```json
 {
@@ -103,9 +103,9 @@ A few things to note about this type of notification:
 
 > **Note:** This action may fail, because the authorization checks performed by the system may deny the app or the user access to the resource. It may be necessary for the app to obtain a new access token from the user to successfully reauthorize a subscription. You may retry these actions later, at any time, for example when the conditions of access have change. Any resource changes in the time period from when the lifecycle notification was sent, to when the app re-creates the subscription successfully, will be lost. The app will need to fetch those changes on its own.
 
-5. After creating the new subscription, sync any missing resource data from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
+5. After creating the new subscription, sync any missing resource data from the last known time you received a notification for this resource; for example: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
 
-## Responding to `missed` notifications
+## Responding to missed notifications
 
 These signals inform you that some notifications may have not been delivered. You should decide if you ignore or handle these signals.
 
