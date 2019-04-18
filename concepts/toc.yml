@@ -243,7 +243,7 @@
           href: throttling.md
         - name: Change notifications
           href: webhooks.md
-          displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+          displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
           items:
           - name: Maintaining continuous notification flow for Outlook entities (preview)
             href: webhooks-outlook-authz.md
