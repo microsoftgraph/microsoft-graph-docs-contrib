@@ -16,9 +16,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  The signed in user must also be permitted to read this particular access review. |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
+
+The signed in user must also be permitted to read this particular access review.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

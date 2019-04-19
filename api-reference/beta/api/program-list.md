@@ -14,11 +14,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  |
+|Delegated (work or school account)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  |
+|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 
- The signed in user must also be in a directory role which permits them to read a program.
+ The signed in user must also be in a directory role that permits them to read a program.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
