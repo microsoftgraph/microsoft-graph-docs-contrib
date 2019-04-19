@@ -32,9 +32,9 @@ For a fuller context of the example, see [List channel message replies](../api/c
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|Int32|Index of an entity being mentioned in the specified **chatMessage**. Matches with the {index} value in the corresponding `<at id="{index}">` tag in the message body.|
-|mentionText|string|String used to represent the mention. For example, User display name, Team name.|
-|mentioned|[identitySet](identityset.md)|The entity (user, application, team, or channel) that was mentioned.|
+|id|Int32|Index of an entity being mentioned in the specified **chatMessage**. Matches the {index} value in the corresponding `<at id="{index}">` tag in the message body.|
+|mentionText|string|String used to represent the mention. For example, a user's display name, a team name.|
+|mentioned|[identitySet](identityset.md)|The entity (user, application, team, or channel) that was mentioned.  If it was a channel or team that was @mentioned, the identitySet contains a **conversation** property giving the ID of the team/channel, and a **conversationIdentityType** property that represents either the team or channel.|
 
 ## JSON representation
 

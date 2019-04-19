@@ -21,6 +21,7 @@ The following is a JSON representation of the resource.
     "application",
     "applicationInstance",
     "conversation",
+    "conversationIdentityType",
     "device",
     "encrypted",
     "guest",
@@ -34,6 +35,7 @@ The following is a JSON representation of the resource.
   "application": {"@odata.type": "microsoft.graph.identity"},
   "applicationInstance": {"@odata.type": "microsoft.graph.identity"},
   "conversation": {"@odata.type": "microsoft.graph.identity"},
+  "conversationIdentityType": {"@odata.type": "microsoft.graph.identity"},
   "device": {"@odata.type": "microsoft.graph.identity"},
   "encrypted": {"@odata.type": "microsoft.graph.identity"},
   "guest": {"@odata.type": "microsoft.graph.identity"},
@@ -47,6 +49,8 @@ The following is a JSON representation of the resource.
 | Property    | Type                    | Description                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [Identity](identity.md) | Optional. The application associated with this action.  |
+| conversation| [Identity](identity.md) | Optional. The team or channel associated with this action.       |
+| conversationIdentityType| [Identity](identity.md) | Optional. Indicates whether the **conversation** property identifies a team or channel.|
 | device      | [Identity](identity.md) | Optional. The device associated with this action.       |
 | phone       | [identity](identity.md) | Optional. The phone number associated with this action. |
 | user        | [Identity](identity.md) | Optional. The user associated with this action.         |
