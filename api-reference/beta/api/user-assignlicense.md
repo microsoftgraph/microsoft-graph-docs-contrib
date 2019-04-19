@@ -76,7 +76,7 @@ Content-length: 185
 ## Example
 Remove licenses from the user.
 
-#####Request
+##### Request
 ```http
 POST https://graph.microsoft.com/beta/me/assignLicense
 Content-type: application/json

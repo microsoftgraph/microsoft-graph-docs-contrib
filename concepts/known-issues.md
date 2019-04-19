@@ -303,7 +303,7 @@ Directory resources, such as **device**, **group** and **user**, currently limit
 
 ### Filtering on schema extension properties not supported on all entity types
 
-Filtering on schema extension properties (using the `$filter` expresssion) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
+Filtering on schema extension properties (using the `$filter` expression) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
 
 ## JSON Batching
 
