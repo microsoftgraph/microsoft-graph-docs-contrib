@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Add the application permissions `AccessReview.Read.All`, `AccessReview.ReadWrite.All`, `ProgramControl.Read.All` and `ProgramControl.ReadWrite.All`. For details, see the [access reviews API reference](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Addition | beta | Add the application permissions AccessReview.Read.All, ProgramControl.Read.All and ProgramControl.ReadWrite.All. For details, see the [access reviews API reference](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
 
 ### Azure AD B2C APIs
 

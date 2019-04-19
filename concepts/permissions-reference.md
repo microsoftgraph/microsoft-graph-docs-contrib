@@ -63,7 +63,6 @@ With the appropriate permissions, the app can read the profiles of users or grou
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   Read all access reviews | Allows the app to read access reviews without a signed-in user. | Yes |
-| _AccessReview.ReadWrite.All_ |   Manage all access reviews | Allows the app to read and write access reviews without a signed-in user. | Yes |
 
 ### Remarks
 
