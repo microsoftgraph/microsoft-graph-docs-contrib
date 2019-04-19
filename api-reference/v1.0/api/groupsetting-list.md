@@ -28,7 +28,7 @@ List tenant-wide or group settings.
 
 ```http
 GET /groupSettings
-GET group/{id}/settings
+GET groups/{id}/settings
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
