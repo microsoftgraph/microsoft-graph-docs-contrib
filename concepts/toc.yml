@@ -254,31 +254,43 @@
           - name: Use schema extensions (example)
             href: extensibility-schema-groups.md
       - name: Use SDKs
-        href: sdks/sdks-overview.md
         items:
-        - name: .NET
-          href: sdks/dotnet/Overview.md
-          items:
-            - name: Components
-              href: sdks/dotnet/components.md
-            - name: Collections
-              href: sdks/dotnet/collections.md
-            - name: Errors
-              href: sdks/dotnet/errors.md
-            - name: Errors
-              href: sdks/dotnet/errors.md
-            - name: Headers
-              href: sdks/dotnet/headers.md
-            - name: FAQ
-              href: sdks/dotnet/FAQ.md
-        - name: Java
-          href: sdks/java/Overview.md
-        - name: Javascript
-          href: sdks/javascript/Overview.md
-        - name: PHP
-          href: sdks/php/Overview.md
-        - name: Objective C
-          href: sdks/objectivec/Overview.md
+        - name: Overview
+          href: sdks/sdks-overview.md
+        - name: Add the library to your project
+          href: sdks/sdk-installation.md          
+        - name: Create a client
+          href: sdks/create-client.md
+        - name: Choose an Authentication Provider
+          href: sdks/choose-authentication-providers.md
+        - name: Make a request with a builder
+          href: sdks/request-builders.md
+        - name: Make a request with a URL path
+          href: sdks/path-requests.md
+        - name: Work with collections
+          href: sdks/collections.md
+        - name: Make update requests
+          href: sdks/update-requests.md
+        - name: Large file uploads
+          href: sdks/large-file-uploads.md
+        - name: Create batch requests
+          href: sdks/batch-requests.md
+        - name: Handle errors, timeouts, retries and redirects
+          href: sdks/error-handling.md
+        - name: Debug and Log requests
+          href: sdks/debugging-and-logging.md
+        - name: Customize the middleware pipeline
+          href: sdks/customize-middleware.md
+        - name: Advanced client scenarios
+          href: sdks/advanced-client-scenarios.md
+        - name: Integrate with native HTTP library 
+          href: sdks/use-native-library.md
+        - name: Extend the SDKs
+          href: sdks/extensibility.md
+        - name: Access the beta API
+          href: sdks/beta.md
+        - name: Known Issues
+          href: sdks/known-issues.md
       - name: Resources
         expanded: true
         items:
