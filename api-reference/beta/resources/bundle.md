@@ -9,9 +9,11 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A bundle is a logical grouping of files used to share multiple files at once. A bundle is represented as a [driveItem][] and can be shared in the same way as any other driveItem.
+A 'bundle' is a logical grouping of files used to share multiple files at once. It is represented by a [driveItem][] entity containing a `bundle` facet and can be shared in the same way as any other driveItem.
 
-The **Bundle** facet on a [driveItem][] identifies an item as a bundle and groups bundle-specific information into a single structure. It is only included on [driveItem][] resources returned from the **bundles** endpoint.
+The `bundle` facet on a [driveItem][] identifies an item as a bundle and groups bundle-specific information into a single structure. It is only included on [driveItem][] resources returned from the **bundles** endpoint.
+
+Note that the `bundle` resource type itself is not entity of its own, and is only a facet on a [driveItem][]. The `bundles` collection on a [drive][] is of type [driveItem][], NOT `bundle`.
 
 ## JSON representation
 
@@ -43,6 +45,9 @@ The **Bundle** facet on a [driveItem][] identifies an item as a bundle and group
 | [Delete bundle][bundle-delete]                             | `DELETE /drive/bundles/{bundle-id}`                 |
 
 [album]: album.md
+[drive]: drive.md
+[driveItem]: driveItem.md
+
 [bundle-list]: ../api/bundle-list.md
 [bundle-get]: ../api/bundle-get.md
 [bundle-create]: ../api/bundle-create.md
@@ -50,4 +55,3 @@ The **Bundle** facet on a [driveItem][] identifies an item as a bundle and group
 [bundle-remove-item]: ../api/bundle-removeItem.md
 [bundle-update]: ../api/bundle-update.md
 [bundle-delete]: ../api/bundle-delete.md
-[driveItem]: driveItem.md
