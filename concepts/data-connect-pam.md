@@ -1,0 +1,157 @@
+---
+title: "Integration with Privileged Access Management"
+description: "Microsoft Graph data connect relies upon Privileged Access Management to allow Office 365 administrators to approve data movement requests."
+author: "tlenig"
+localization_priority: Priority
+ms.prod: "data-connect"
+---
+
+# Integration with Privileged Access Management
+Microsoft Graph data connect relies upon Privileged Access Management (PAM) to allow Office 365 administrators to approve data movement requests. Data connect pipelines must be approved by a member of the data access request approver specified by the Office 365 administrator during enablement. Refer to the getting started page to set up the approver group. 
+
+Approval request emails will be sent to the each member of the approver group to notify them when copy activities request access to extract Office 365 data. Approvers can approve or deny these requests, specify a user group that should be scrubbed out of extracted data or revoke a previously approved request. Approvals persist for 6 months, and one approval is needed per copy activity in the Azure Data Factory pipeline. 
+
+Every request will always include details about the data set and the users from whom data is being extracted:
+* `Requestor`: The user which requested the pipeline
+* `Duration`: If approved, how long the approval will persist. Always 4320 hours (6 months)
+* `Reason`: Reason for the request, typically "An app installed for your organization requires approval for access to Office 365 Data."
+* `Request at`: The DateTime of the request
+* `Request id`: The Id of the request, used for approval purposes
+* `DataTable`: The data set being extracted (e.g Sent Items)
+* `Columns`: The list of columns being extracted from the data table (e.g SentDateTime)
+* `AllowedGroups`: The group(s) of users against whom the pipeline is extracting data. If the list of groups is empty, then the pipeline is requesting access to data from ALL users in the tenant.
+* `User Scope Query`: The predicate used to filter out users. Only applies if the request is for all users in the tenant. If this is empty, no filter is applied. 
+* `OutputUri`: The output path in which the extracted data will be stored.
+* `SourceTenantId`: The tenant ID whose data is being extracted.
+* `InstallerIdentity`: The identity of the app installer.
+
+There are also some fields in the request that will be available only in some cases:
+* Application Name and the Marketplace URI (available only for applications installed from the Azure marketplace)
+* Links to the application's privacy policy and terms of service (available only if the application provides it)
+* The compliance policies that the application enforces, such as data encryption at rest in the output storage location. (available only if the application provides it and if the application is installed from the Azure marketplace)
+* Deny List: The user group that can be scrubbed out of the extracted data. This field is empty as a part of the request for datasets that support privacy scrubbing of extracted data. It can be populated by the member of the approver group who approves the request at approval time. 
+
+## Approving requests
+
+Data connect pipelines must be approved by a member of a data access request approver group. This can be done using one of two experiences; the Exchange Online PowerShell module or the PAM user experience. 
+
+### Approving, denying and revoking requests through PowerShell
+
+1. Install the Exchange Online Powershell module. See [here](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps#what-do-you-need-to-know-before-you-begin) for installation instructions.
+
+2. Connect to Exchange Online Powershell using multi-factor authentication. See [here](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps#what-do-you-need-to-know-before-you-begin) for instructions.
+    >**NOTE**: You do not need to enable Multi-Factor authentication for your Organization to use these steps while connecting to Exchange Online PowerShell. Connecting with MFA creates an OAuth token that is used by PAM for signing your requests.
+
+3. Login with your account. Note that you must be part of the configured data access approver group in order to be able to approve, deny or revoke requests. Guest users cannot approve requests, even if they are in the approver group. 
+
+   ```powershell
+   Connect-EXOPSSession
+   ```
+
+4. Find all pending requests
+   >**NOTE:** The value in the Identity property will be used to identify and approve or deny the request. Note this value and use it in the -RequestId parameter. 
+
+   ```powershell
+   Get-ElevatedAccessRequest | ?{$_.RequestStatus -eq 'Pending'}
+   ```
+
+4. Take a closer look at the **context** field of the request you are interested in. 
+   >**NOTE:** The context field of the data access request describes the parameters and properties of the copy activity.
+
+   ```powershell
+   (Get-ElevatedAccessRequest -RequestId $requestId).Context | ConvertFrom-Json
+   ```
+
+   You'll get a response like:
+
+   ```powershell
+   Key                          Value
+   ---                          -----
+   ApplicationName
+   ComplianceStatus             [{"Timestamp":"2018-05-02T18:29:21.5705664Z","RequirementName":"adlsEncryption","PolicyComplianceState":"Compliant","Violations":0},{"Timestamp":"2018-05-02T...
+   ApplicationMarketPlaceUri
+   OutputUri                    adl://myadlserumvrroyspmq.azuredatalakestore.net/targetFolder/Event
+   ApplicationPrivacyPolicyUri  http://www.wkw.com/privacy
+   ApplicationTermsOfServiceUri http://www.wkw.com/tos
+   InstallerIdentity            a89885c3-4b0e-499e-86ed-14d7ed9147c2@942229f8-4656-4fb0-828b-e938dad4019a
+   SourceTenantId               942229f8-4656-4fb0-828b-e938dad4019a
+   UserScopeQuery               tenant in (942229f8-4656-4fb0-828b-e938dad4019a)
+   ApplicationId
+   DataTable                    Calendar Events
+   DestinationTenantId          942229f8-4656-4fb0-828b-e938dad4019a
+   Columns                      Subject:string, HasAttachments:bool, End:DateTime, Start:DateTime, ResponseStatus:string, Organizer:Object, Attendees:string, Importance:string, Sensitivity:...
+   ```
+
+5. Approve/Deny the request using the value for Identity for the -RequestId parameter
+
+   ```powershell
+   Approve-ElevatedAccessRequest -RequestId $requestId -Comment "Yay!!"
+   Deny-ElevatedAccessRequest -RequestId $requestId -Comment "Nay!!"
+   ```
+
+You can also approve the request with a deny list to ensure data from certain users is not included. To do so, you need to modify the context of the request to add the `object Id` of the group that you wish to omit and then approve the request. 
+
+   ```powershell
+   $request = Get-ElevatedAccessRequest -RequestId
+   $hash = $request.Context
+   $hash["DenyList"] = <Object ID of denied user group>;
+   Approve-ElevatedAccessRequest -RequestId $requestId -Comment "Yay!!" -RequestContext $hash
+   Deny-ElevatedAccessRequest -RequestId $requestId -Comment "Nay!!"
+   ```
+You can also revoke requests that were previously approved. Similar to approving requests, the value for Identity is what is required in the -RequestId parameter. 
+   ```powershell 
+   Revoke-ElevatedAccessAuthorization -Comment "Revoking this request!" -RequestId $requestId
+   ```
+   You'll see a response like :
+   ```powershell
+   AuthorizedBy          : user@tenant.onmicrosoft.com
+   Type                  : Task
+   AuthorizedAccess      : Data Access Request
+   StartTimeUtc          : 7/24/2018 6:02:42 PM
+   EndTimeUtc            : 10/22/2018 6:02:42 PM
+   Revoked               : True
+   RevocationDateTimeUtc : 7/24/2018 9:12:55 PM
+   RevokedBy             : NAMPR00A001.prod.outlook.com/Microsoft Exchange Hosted  Organizations/tenant.onmicrosoft.com/user
+   RevocationComment     : Revoking this request!
+   Identity              : bda75607-0d87-43cb-bdf1-284b18446b34
+   DateCreatedUtc        : 1/1/0001 12:00:00 AM
+   DateUpdatedUtc        : 7/24/2018 9:12:55 PM
+   ```
+
+### Approving requests through the PAM UX
+
+1. Log into Office 365 admin portal using admin credentials and navigate to [Privileged Access Managment approval user experience](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess). page specified below. This will show you all the access requests (pending/approved/expired/denied).
+
+On the resulting page, click on the request that you are interested in. To select deny list for privacy scrubbing, click on the “DenyList” dropdown, and select the group that needs to be scrubbed, and then click “Approve”
+
+To revoke a previously approved request, click on the approved request that needs to be revoked, and click “Revoke”. The next attempt to move data using that approval will fail. 
+
+### Approval behavior
+
+Data conenct approval requests have particular characteristics that are important to be aware of. 
+- Approval requests are based on the Azure Data Factory, Pipeline and Copy Activity names. Every copy activity run will verify that the Office 365 admin has approved the copy activity's request to access Office data, and will validate the important parameters of the copy activity run against the parameters of the approval.
+
+- Under certain conditions, a new approval request will automatically be triggered. A data connect approver will have to approve the new request before the copy activity can access Office 365 data.
+- If the parameters of the copy activity run changes, then a new approval request will be triggered.
+- If the data factory, pipeline or copy activity names change, then a new approval request will be triggered.
+- For example: A new approval will be required if the data table or set of columns that the copy activity is accessing changes.
+- Copy activities will have to be approved once every 6 months. If the original approval was approved 6 months ago, then a new approval request will automatically be triggered.
+- If an Office 365 Data Access approver has denied an approval request or revoked a previously approved request, then the copy activity will fail continually. You should work with the approver to understand the reason for the denial or revocation and fix the parameters of the copy activity accordingly. A new copy activity will have to deployed, or the name of the existing copy activity will have to be changed in order to trigger a new approval request for approval.
+- An approval request will expire in 24 hours unless a Office 365 data access approver acts on the request. A new request will be submitted once every 24 hours for approval. If you see your copy activity waiting for approval (in the Consent Pending stage), then work with Office 365 data access approvers to get your request approved.
+
+## Privacy scrubbing 
+The member of the approver group who approves the request can specify the name of one user group whose data would be scrubbed out of extracted data. The rows containing email addresses corresponding to the members of the denied group will be scrubbed out of extracted data. Groups nested within the denied group will be expanded and only users will be scrubbed out. Refer to the approving requests section of this topic for details on how to apply the deny list during approval, through either PowerShell or the PAM UX. 
+
+The following table shows the names of the datasets and the columns whose contents are checked for privacy scrubbing:
+
+| Dataset name                     | Columns used for deny-list based scrubbing                                                  |
+|---------------------------------------------------------------------|----------------------------------------------------------|
+| **BasicDataSet_v0.Message_v0**<br>**BasicDataSet_v0.Message_v1**   | Sender, From, ToRecipients, CcRecipients, BccRecipients    |                                                                               
+| **BasicDataSet_v0.SentItem_v0**<br>**BasicDataSet_v0.SentItem_v1**  | Sender, From, ToRecipients, CcRecipients, BccRecipients  |
+| **BasicDataSet_v0.Event_v0**<br>**BasicDataSet_v0.Event_v1**     | Organizer, Attendees                                        |
+| **BasicDataSet_v0.Contact_v0**<br>**BasicDataSet_v0.Contact_v1**  | EmailAddresses                                            |
+| **BasicDataSet_v0.CalendarView_v0**                                | Organizer, Attendees                                      |
+
+## Next Steps
+
+Visit the [Privileged Access Management documentation](https://docs.microsoft.com/en-us/Office365/Enterprise/privileged-access-management-in-office-365) for more information on the Privileged Access Management system. 
