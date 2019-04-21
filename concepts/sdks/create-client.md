@@ -5,9 +5,11 @@ description: "Explanation of how to create a Graph client to use to make calls t
 
 # Create Graph Client
 
-Intro text.
+In order to make calls to the Microsoft Graph, you will first need an instance of the Graph client. The Graph client is designed to be used to make multiple calls to the Graph and a single instance can be used for the lifetime of the application.
 
-Reference to installing dependencies
+Before you can instantiate the the Graph client it is necessary to add the required packages to your projects.  Details on this process can be found in [SDK Installation](sdk-installation.md) section.
+
+The following code snippets demonstrate how to create an instance of a Graph client in the supported languages. An authentication provider is required as constructor parameter of the Graph Client. There are a range of different Authentication Providers available on each language and platform.  Refer to [Choose an Authentication Provider](choose-authentication-providers.md) for more details.
 
 #### Create a client
 # [C#](#tab/CS)
@@ -61,6 +63,6 @@ IGraphServiceClient graphClient = GraphServiceClient
 				.authenticationProvider(authProvider)
 				.buildClient();
 ```
+---
 
-
-There are a range of different Authentication Providers available on each language and platform.  Refer to [Choose an Authentication Provider](choose-authentication-provider.md) for more details.
+There are a number of other parameters that can be provided during the initialization that are described in more detail in the section [Advanced Client Scenarios](advanced-client-scenarios.md).
