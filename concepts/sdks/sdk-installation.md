@@ -78,25 +78,27 @@ The Microsoft Graph Objective-C SDK supports both iOS and MacOS platforms and ca
 
 ### Install the Microsoft Graph Objective-C SDK using Cocoapods
 
-Add the following line in your podfile to include the Objective-C Microsoft Graph SDK in your xcode project:
+Add the following line in your podfile to include the Objective-C Microsoft Graph SDK and Microsoft Graph Objective-C Auth SDK in your xcode project:
 
 ```
 pod 'MSGraphClientSDK'
+pod 'MSGraphMSALAuthProvider'
 ```
 
 ### Install the Microsoft Graph Objective-C SDK using Carthage
 
-Perform the following steps to install the Objective-C Microsoft Graph SDK using the [Carthage](https://github.com/Carthage/Carthage) package manager.
+Perform the following steps to install the Microsoft Graph Objective-C SDK and Microsoft Graph Objective-C Auth SDK using the [Carthage](https://github.com/Carthage/Carthage) package manager.
 
 1. Create a **Cartfile** that specifies the Objective-C SDK GitHub repository and [release tag](https://github.com/microsoftgraph/msgraph-sdk-objc/releases) to target.
 
 ```
 github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
+github "microsoftgraph/msgraph-sdk-objc-auth" "tags/<latest_release_tag>"
 ```
 
 2. Run `carthage update`. This will fetch dependencies into a Carthage/Checkouts folder and then builds the MSGraphClientSDK library.
 
-3. Using Xcode, in your application target's **General** settings tab, in the **Linked Frameworks and Libraries** section, drag and drop the **MSGraphClientSDK.framework** from the Carthage/Build folder on disk.
+3. Using Xcode, in your application target's **General** settings tab, in the **Linked Frameworks and Libraries** section, drag and drop the **MSGraphClientSDK.framework** and **MSGraphMSALAuthProvider.framework** from the Carthage/Build folder on disk.
 
 4. On your application target's **Build Phases** settings tab, click the **+** icon and choose **New Run Script Phase**. Create a Run Script in which you specify your shell (ex: /bin/sh), add the following contents to the script:
 
@@ -108,6 +110,7 @@ github "microsoftgraph/msgraph-sdk-objc" "tags/<latest_release_tag>"
 
 ```
 $(SRCROOT)/Carthage/Build/iOS/MSGraphClientSDK.framework
+$(SRCROOT)/Carthage/Build/iOS/MSGraphMSALAuthProvider.framework
 ```
 
 ## Install the Microsoft Graph PHP SDK
