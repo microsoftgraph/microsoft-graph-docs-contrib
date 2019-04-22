@@ -27,4 +27,3 @@ Indicates the status of the mobile app on the device.
 
 
 
-
