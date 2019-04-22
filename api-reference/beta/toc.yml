@@ -1531,6 +1531,8 @@
             href: api/intune-apps-mobileapp-assign.md
           - name: getTopMobileApps
             href: api/intune-apps-mobileapp-gettopmobileapps.md
+          - name: updateRelationships action
+            href: api/intune-apps-mobileapp-updaterelationships.md
         - name: Mobile app assignment
           href: resources/intune-apps-mobileappassignment.md
           items:
@@ -1591,6 +1593,21 @@
             href: api/intune-apps-mobileappcontentfile-renewupload.md
         - name: Mobile app content file upload state
           href: resources/intune-apps-mobileappcontentfileuploadstate.md
+        - name: Mobile app dependecy type
+          href: resources/intune-apps-mobileappdependecytype.md
+        - name: Mobile app dependency
+          href: resources/intune-apps-mobileappdependency.md
+          items:
+          - name: List
+            href: api/intune-apps-mobileappdependency-list.md
+          - name: Get
+            href: api/intune-apps-mobileappdependency-get.md
+          - name: Create
+            href: api/intune-apps-mobileappdependency-create.md
+          - name: Delete
+            href: api/intune-apps-mobileappdependency-delete.md
+          - name: Update
+            href: api/intune-apps-mobileappdependency-update.md
         - name: Mobile app install status
           href: resources/intune-apps-mobileappinstallstatus.md
           items:
@@ -1626,6 +1643,15 @@
             href: api/intune-apps-mobileappprovisioningconfiggroupassignment-update.md
         - name: Mobile app publishing state
           href: resources/intune-apps-mobileapppublishingstate.md
+        - name: Mobile app relationship
+          href: resources/intune-apps-mobileapprelationship.md
+          items:
+          - name: List
+            href: api/intune-apps-mobileapprelationship-list.md
+          - name: Get
+            href: api/intune-apps-mobileapprelationship-get.md
+        - name: Mobile app relationship state
+          href: resources/intune-apps-mobileapprelationshipstate.md
         - name: Mobile contained app
           href: resources/intune-apps-mobilecontainedapp.md
           items:
@@ -1767,6 +1793,8 @@
           href: resources/intune-apps-win32lobappfilesystemdetection.md
         - name: Win32 LOB app file system detection type
           href: resources/intune-apps-win32lobappfilesystemdetectiontype.md
+        - name: Win32 LOB app file system requirement
+          href: resources/intune-apps-win32lobappfilesystemrequirement.md
         - name: Win32 LOB app install experience
           href: resources/intune-apps-win32lobappinstallexperience.md
         - name: Win32 LOB app msi information
@@ -1777,12 +1805,20 @@
           href: resources/intune-apps-win32lobappnotification.md
         - name: Win32 LOB app power shell script detection
           href: resources/intune-apps-win32lobapppowershellscriptdetection.md
+        - name: Win32 LOB app power shell script detection type
+          href: resources/intune-apps-win32lobapppowershellscriptdetectiontype.md
+        - name: Win32 LOB app power shell script requirement
+          href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
         - name: Win32 LOB app product code detection
           href: resources/intune-apps-win32lobappproductcodedetection.md
         - name: Win32 LOB app registry detection
           href: resources/intune-apps-win32lobappregistrydetection.md
         - name: Win32 LOB app registry detection type
           href: resources/intune-apps-win32lobappregistrydetectiontype.md
+        - name: Win32 LOB app registry requirement
+          href: resources/intune-apps-win32lobappregistryrequirement.md
+        - name: Win32 LOB app requirement
+          href: resources/intune-apps-win32lobapprequirement.md
         - name: Win32 LOB app return code
           href: resources/intune-apps-win32lobappreturncode.md
         - name: Win32 LOB app return code type
@@ -2191,6 +2227,10 @@
             href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
           - name: Update
             href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md
+          - name: import action
+            href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md
+          - name: import action
+            href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md
         - name: Imported windows autopilot device identity import status
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md
         - name: Imported windows autopilot device identity state
@@ -2348,6 +2388,19 @@
           href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
         - name: Android device owner battery plugged mode
           href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
+        - name: Android device owner compliance policy
+          href: resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-list.md
+          - name: Get
+            href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-get.md
+          - name: Create
+            href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
         - name: Android device owner default app permission policy type
           href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
         - name: Android device owner general device configuration
@@ -2363,6 +2416,8 @@
             href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-update.md
+        - name: Android device owner play store mode
+          href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
         - name: Android device owner required password type
           href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md
         - name: Android device owner system update install type
@@ -3980,6 +4035,19 @@
             href: api/intune-deviceconfig-macosenterprisewificonfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-macosenterprisewificonfiguration-update.md
+        - name: macOS extensions configuration
+          href: resources/intune-deviceconfig-macosextensionsconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-macosextensionsconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-macosextensionsconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-macosextensionsconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-macosextensionsconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-macosextensionsconfiguration-update.md
         - name: macOS firewall application
           href: resources/intune-deviceconfig-macosfirewallapplication.md
         - name: macOS gatekeeper app sources
@@ -4010,6 +4078,10 @@
             href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-delete.md
           - name: Update
             href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-update.md
+        - name: macOS kernel extension
+          href: resources/intune-deviceconfig-macoskernelextension.md
+        - name: macOS launch item
+          href: resources/intune-deviceconfig-macoslaunchitem.md
         - name: macOS SCEP certificate profile
           href: resources/intune-deviceconfig-macosscepcertificateprofile.md
           items:
@@ -7625,6 +7697,19 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
+      - name: Trust Framework policy
+        href: resources/trustframeworkpolicy.md
+        items:
+        - name: List
+          href: api/trustframework-list-trustframeworkpolicies.md
+        - name: Create
+          href: api/trustframework-post-trustframeworkpolicy.md
+        - name: Get 
+          href: api/trustframeworkpolicy-get.md
+        - name: Upate
+          href: api/trustframework-put-trustframeworkpolicy.md
+        - name: Delete
+          href: api/trustframeworkpolicy-delete.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
