@@ -26,9 +26,7 @@ Note that the access reviews feature, including the API, is included in Azure AD
 Prior to creating an access review, program or program control, an administrator must have previously onboarded in order to prepare the [programControlType](programcontroltype.md) and [businessFlowTemplate](businessflowtemplate.md) resources. The organization can onboard to Azure AD access reviews or, in the case of access reviews of Azure AD roles or Azure subscription roles, Azure AD PIM.
 
 
-## Methods
-
-Here is the list of methods that are provided by Azure AD access reviews.  
+## Methods  
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
