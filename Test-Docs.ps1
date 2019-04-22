@@ -91,7 +91,8 @@ $lastResultCode = 0
 # Run validation at the root of the repository
 $appVeyorUrl = $env:APPVEYOR_API_URL 
 
-$params = "check-all", "--path", $repoPath+$docSubPath
+$fullPath = Join-Path $repoPath -ChildPath $docSubPath
+$params = "check-all", "--path", $fullPath, "--ignore-warnings"
 if ($appVeyorUrl -ne $null)
 {
     $params = $params += "--appveyor-url", $appVeyorUrl
