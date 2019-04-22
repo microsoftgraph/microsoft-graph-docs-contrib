@@ -151,9 +151,9 @@ YW5vdGhlciBtYWlsLg0K
 --_004_4aade2547798441eab5188a7a2436bc1contoso_-- 
 ```
 
-## Get MIME content of an Outlook message that is attached to an Outlook item or group post
+## Get MIME content of an Outlook message attached to an Outlook item or group post
 
-You can also get the MIME representation of an Outlook message, if the message has been attached to an Outlook [event](/graph/resources/event?view=graph-rest-beta), [message](/graph/resources/message?view=graph-rest-beta), [task](/graph/resources/outlooktask?view=graph-rest-beta), or group [post](/graph/resources/post?view=graph-rest-beta) that your app can access.
+You can also get the MIME representation of an Outlook message, if the message has been attached to an Outlook [event](/graph/api/resources/event?view=graph-rest-beta), [message](/graph/api/resources/message?view=graph-rest-beta), [task](/graph/api/resources/outlooktask?view=graph-rest-beta), or group [post](/graph/api/resources/post?view=graph-rest-beta) that your app can access.
 
 To do that, identify the message attachment, and append the `$value` segment when 
 [getting that attachment](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment
@@ -279,4 +279,4 @@ e.</p>
 Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
+- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-beta#common-use-cases) in Microsoft Graph beta.
