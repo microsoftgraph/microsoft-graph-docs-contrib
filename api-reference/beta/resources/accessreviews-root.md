@@ -28,7 +28,7 @@ Prior to creating an access review, program or program control, an administrator
 
 ## Methods  
 
-| Method		   | Return Type	|Description|
+| Method		   | Return type	|Description|
 |:---------------|:--------|:----------|
 |[Get accessReview](../api/accessreview-get.md) |	[accessReview](accessreview.md) |	Get an access review with a specific id. |
 |[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
@@ -56,9 +56,9 @@ Prior to creating an access review, program or program control, an administrator
 
 ## Role and application permission authorization checks
 
-Here are the required directory roles of a calling user to manage access reviews, programs and controls.
+The following directory roles are required for a calling user to manage access reviews, programs, and controls.
 
-| Target resource | Desired operation | Permissions of the application | Required directory role of the calling user |
+| Target resource | Operation | Application permissions | Required directory role of the calling user |
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[accessReview](accessreview.md) of an Azure AD role | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or Privileged Role Administrator |
 |[accessReview](accessreview.md) of an Azure AD role | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or Privileged Role Administrator |
