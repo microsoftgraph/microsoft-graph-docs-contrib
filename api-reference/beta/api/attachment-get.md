@@ -26,7 +26,7 @@ You can append the path segment `/$value` to get the raw contents of a file or i
 
 For a file attachment, the content type is based on its original content type. See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.
 
-For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw content returned is in MIME format.
+For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.
 
 | Item attachment type  | Raw contents returned |
 |:-----------|:----------|
