@@ -1,6 +1,6 @@
 ---
 title: "Get applicationSignInDetailedSummary"
-description: "Retrieve the properties and relationships of [applicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md) object."
+description: "Retrieve the properties and relationships of an applicationSignInDetailSummary object."
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: "microsoft-identity-platform"
