@@ -1,11 +1,11 @@
 ---
-title: "Maintaining continuous notification delivery for Outlook resources (preview)"
+title: "Reduce missing subscriptions and notifications for Outlook resources (preview)"
 description: "Outlook may suspend delivery of change notifications due to security events such as user's password reset. Special lifecycle events - `subscriptionRemoved` and `missed` - need to be handled to ensure uninterrupted delivery of notifications."
 author: "piotrci"
 localization_priority: Priority
 ---
 
-# Maintaining continuous notification delivery for Outlook resources (preview)
+# Reduce missing subscriptions and notifications for Outlook resources (preview) 
 
 Apps subscribing to notifications for Outlook resources may get their subscriptions removed and miss some notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous notification flow.
 
