@@ -624,6 +624,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Read user mail | Allows the app to read email in user mailboxes. | No | Yes
+| _Mail.ReadBasic_ |    Read user basic mail (preview) | (Preview) Allows the app to read the signed-in user's mailbox except body, previewBody, attachments and any extended properties. Does not include permissions to search messages. | No | Yes
 | _Mail.ReadWrite_ |    Read and write access to user mail | Allows the app to create, read, update, and delete email in user mailboxes. Does not include permission to send mail.| No | Yes
 | _Mail.Read.Shared_ |    Read user and shared mail | Allows the app to read mail that the user can access, including the user's own and shared mail. | No | No
 | _Mail.ReadWrite.Shared_ |    Read and write user and shared mail | Allows the app to create, read, update, and delete mail that the user has permission to access, including the user's own and shared mail. Does not include permission to send mail. | No | No
@@ -974,7 +975,7 @@ _Shared_ permissions are currently only supported for work or school accounts. E
 
 * _Tasks.Read_: Get all tasks in a user's mailbox (`GET /me/outlook/tasks`).
 * _Tasks.Read.Shared_: Access tasks in a folder shared to you by another user in your organization (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
-* _Tasks.ReadWrite_: Add an event to the user's default task folder (`POST /me/outook/tasks`).
+* _Tasks.ReadWrite_: Add an event to the user's default task folder (`POST /me/outlook/tasks`).
 * _Tasks.Read_: Get all uncompleted tasks in a user's mailbox (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
 * _Tasks.ReadWrite_: Update a task in a user's mailbox (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
 * _Tasks.ReadWrite.Shared_: Complete a task on behalf of another user (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
@@ -1008,6 +1009,30 @@ The following usages are valid for both delegated permissions:
 * _Agreement.Read.All_: Read all terms of use agreements (`GET /beta/agreements`)
 * _Agreement.ReadWrite.All_: Read and write all terms of use agreements (`POST /beta/agreements`)
 * _AgreementAcceptance.Read_ Read user terms of use acceptance statuses (`GET /beta/me/agreementAcceptances`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Trust Framework policy permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | Read all trustFramework Policies | Allows the app to read all TrustFramework Policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.TrustFramework_ | Read and write all trustFramework policies | Allows the app to read and write TrustFramework Policies on behalf of the signed-in user. | Yes | No |
+
+### Remarks
+The work or school account must be a global administrator of the tenant.
+
+### Example usage
+
+#### Delegated
+The following usages are valid for both delegated permissions:
+
+* _Policy.Read.All_: Read all trustFramework policies (`GET /beta/trustFramework/policies`)
+* _Policy.ReadWrite.TrustFramework_: Read and write all trustFramework policies (`POST /beta/trustFramework/policies`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 

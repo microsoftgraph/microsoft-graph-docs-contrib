@@ -14,6 +14,8 @@ Retrieve the properties and relationships of the [message](../resources/message.
 
 For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.
 
+You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).
+
 There are two scenarios where an app can get a message in another user's mail folder:
 
 * If the app has application permissions, or,
@@ -27,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read    |
-|Delegated (personal Microsoft account) | Mail.Read    |
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read    |
 |Application | Mail.Read |
 
 ## HTTP request
@@ -42,6 +44,15 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
+To get the MIME content of the specified message: 
+<!-- { "blockType": "ignored" } --> 
+```http 
+GET /me/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/messages/{id}/$value 
+GET /me/mailFolders/{id}/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
+```
+
 To get a message and expand all mentions in the message:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -52,9 +63,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
-You can use the `$expand` query parameter on the **mentions** navigation property to get a message with the details 
+Use the `$value` parameter to get the MIME content of a message.
+
+Use the `$expand` query parameter on the **mentions** navigation property to get a message with the details 
 of each [mention](../resources/mention.md) in the message expanded.
 
 

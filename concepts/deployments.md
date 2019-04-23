@@ -39,12 +39,15 @@ The following table shows the service root endpoints for Microsoft Graph and [Gr
 
 | National Cloud | Microsoft Graph | Graph Explorer |
 |---------------------------|----------------|----------------|
-| Microsoft Graph for US Government | https://graph.microsoft.us | Not supported. |
+| Microsoft Graph for US Government L4 | https://graph.microsoft.us | Not supported. |
+| Microsoft Graph for US Government L5 (DOD) | https://dod-graph.microsoft.us | Not supported. |
 | Microsoft Graph Germany | https://graph.microsoft.de | Not supported. |
 | Microsoft Graph China operated by 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Microsoft Graph global service | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
-> **Note**: Apps can only access organizational data through the national cloud endpoints. This means that apps can only access data in tenants that are registered in the specific national cloud. Apps that are trying to access consumer data associated with personal Microsoft accounts through Microsoft Graph should use the global service `https://graph.microsoft.com`. Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service or any other national cloud.
+>**Important:** If you already have an app in US Government and you're using the worldwide endpoint `https://graph.microsoft.com`, we recommend switching to the new `https://graph.microsoft.us` endpoint. Access to US Government data using worldwide endpoint is currently functional but will be disabled in near future.
+
+> **Note**: Apps can only access organizational data through the national cloud endpoints. This means that apps can only access data in tenants that are registered in the specific national cloud. Apps that are trying to access consumer data associated with Microsoft personal accounts through Microsoft Graph should use the global service `https://graph.microsoft.com`. Access tokens acquired for a national cloud deployment are not interchangeable with those acquired for the global service or any other national cloud.
 
 ## Supported features
 
@@ -62,9 +65,9 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Reports  |➖| ✔ |➖|
-| Webhooks  | ➖|✔* |✔* |
+| Change notifications (webhooks)  | ➖|✔* |✔* |
 | Delta query | ➖ | ➖| ➖ |
-|Directory schema extensions |➖|➖|➖|
+| Directory schema extensions |➖|➖|➖|
 | Open type extensions|➖|➖|➖|
   
 The following additional Microsoft Graph features are available in preview (on the `/beta` endpoint) across all national cloud deployments, except where noted:
@@ -72,6 +75,7 @@ The following additional Microsoft Graph features are available in preview (on t
 * Organizational Contacts
 * Applications
 * Service Principals
+* Change notifications (webhooks)
 
 (*) Limited support for Exchange and OneDrive services only. Azure AD services are not supported. 
 
