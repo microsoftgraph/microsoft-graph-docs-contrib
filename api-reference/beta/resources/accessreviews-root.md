@@ -26,11 +26,13 @@ Note that the access reviews feature, including the API, is included in Azure AD
 Prior to creating an access review, program or program control, an administrator must have previously onboarded in order to prepare the [programControlType](programcontroltype.md) and [businessFlowTemplate](businessflowtemplate.md) resources. The organization can onboard to Azure AD access reviews or, in the case of access reviews of Azure AD roles or Azure subscription roles, Azure AD PIM.
 
 
-## Methods  
+## Methods 
+
+The following table lists the methods that you can use to interact with access review-related resources.
 
 | Method		   | Return type	|Description|
 |:---------------|:--------|:----------|
-|[Get accessReview](../api/accessreview-get.md) |	[accessReview](accessreview.md) |	Get an access review with a specific id. |
+|[Get accessReview](../api/accessreview-get.md) |	[accessReview](accessreview.md) |	Get an access review with a specific ID. |
 |[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
 |[Delete accessReview](../api/accessreview-delete.md) |	None.	| Delete an accessReview. |
 |[Update accessReview](../api/accessreview-update.md) |	[accessReview](accessreview.md)	| Update an accessReview. |
