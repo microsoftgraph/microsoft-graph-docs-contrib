@@ -98,43 +98,61 @@ version number, `https://graph.microsoft.com/v1.0` in this case.
     ```
 
 2. Build and fix any resource, property, navigation, and service action errors, generally related to name changes.
-3. For any collections and paging, your app code will need to switch from using _fetcher_ syntax
-    
-    from:
+3. For any collections and paging, your app code will need to make some minor modification too.  The following example compares and contrasts fetching a group and paging through its members, 5 at a time. While the Azure AD Graph based code requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement. Other than that, the code is relatively similar.  NOTE: To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single threaded console app.
+
+    from Azure AD Graph client library based code:
 
     ```csharp
-    IUserFetcher signedInUserFetcher = user;
-    IPagedCollection<IDirectoryObject> pagedCollection = await signedInUserFetcher.MemberOf.ExecuteAsync();
+    Group retrievedGroup = client.Groups.
+        Where(g => g.ObjectId.Equals(id)).ExecuteAsync().Result;
+    IGroupFetcher retrievedGroupFetcher = (IGroupFetcher) retrievedGroup;
+
+    IPagedCollection<IDirectoryObject> membersPage = retrievedGroupFetcher.Members.Take(5).ExecuteAsync().Result;
+    Console.WriteLine(" Members:");
     do
     {
-        List<IDirectoryObject> directoryObjects = pagedCollection.CurrentPage.ToList();
-        foreach (IDirectoryObject directoryObject in directoryObjects)
+        List<IDirectoryObject> members = membersPage.CurrentPage.ToList();
+        foreach (IDirectoryObject member in members)
         {
-            if (directoryObject is Group)
+            if (member is User)
             {
-                Group group = directoryObject as Group;
-                Console.WriteLine(" Group: {0}  Description: {1}", group.DisplayName, group.Description);
-            }
-            if (directoryObject is DirectoryRole)
-            {
-                DirectoryRole role = directoryObject as DirectoryRole;
-                Console.WriteLine(" Role: {0}  Description: {1}", role.DisplayName, role.Description);
+                User memberUser = (User)member;
+                Console.WriteLine("        User: {0} ", memberUser.DisplayName);
             }
         }
-        pagedCollection = await pagedCollection.GetNextPageAsync();
-    } while (pagedCollection != null);
+        membersPage = membersPage.GetNextPageAsync().Result;
+    } while (membersPage != null);
+
     ```
 
-    to:
+    to Microsoft Graph client library based code:
 
     ```csharp
-    //TODO add example.  We don't have this ANYWHERE in any sample
-    // See https://github.com/microsoftgraph/msgraph-sdk-dotnet/blob/dev/docs/collections.md
+    var membersPage = client.Groups[id].Members.Request().Top(5).GetAsync().Result;
+    Console.WriteLine(" Members:");
+    do
+    {
+        List<DirectoryObject> members = membersPage.CurrentPage.ToList();
+        foreach (DirectoryObject member in members)
+        {
+            if (member is User)
+            {
+                User memberUser = (User)member;
+                Console.WriteLine("        User: {0} ", memberUser.DisplayName);
+            }
+        }
+        if (membersPage.NextPageRequest != null)
+            membersPage = membersPage.NextPageRequest.GetAsync().Result;
+        else membersPage = null;
+    } while (membersPage != null);
+
     ```
 
 ## Additional resources
 
 The Azure AD Graph library supported only the .NET platform.  The Microsoft.Graph library supports additional [platforms and languages](https://developer.microsoft.com/graph/gallery/?filterBy=Samples,SDKs) that you may find more useful for your solutions.
+
+More specifically, you should look at the [C# console snippets app](https://github.com/microsoftgraph/console-csharp-snippets-sample) to see more of the differences between Microsoft Graph and Azure AD Graph client libraries.
 
 ## Next Steps
 

@@ -18,9 +18,11 @@ Here, we highlight property differences between resources used in each service. 
 
 Because user and group are so frequently used, we start with those.  Other resources appear alphabetically.
 
-## User property differences
+## objectId vs id
 
-Here are the property differences for the user resource: 
+In Azure AD Graph, all entity resource types have a unique identifier (or key) called `objectId`.  For the most part (unless otherwise stated), this same identifier is called `id` in Microsoft Graph.
+
+## user property differences
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br>property|Comments|
 |---|---|---|
@@ -43,9 +45,7 @@ Here are the property differences for the user resource:
 | userState | beta/ - externalUserState <br> v1.0/ - externalUserState | |
 | userStateChangedOn | beta/&nbsp;-&nbsp;externalUserStateChangeDateTime<br>v1.0/&nbsp;-&nbsp;externalUserStateChangeDateTime | |
 
-## Group property differences
-
-Here are the property differences for group resources: 
+## group property differences
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -57,17 +57,43 @@ Here are the property differences for group resources:
 | onPremisesSamAccountName | beta/ - _Not yet available_ <br> v1.0/ - _Not yet available_ | Planned, but not yet available. |
 | provisioningErrors | beta/&nbsp;-&nbsp;onPremisesProvisioningErrors <br> v1.0/ - onPremisesProvisioningErrors | |
 
-## Application property differences
+## application property differences
 
-TBD
+|Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
+|---|---|---|
+acceptMappedClaims  | beta/&nbsp;-&nbsp;api/acceptMappedClaims <br> v1.0/ - _Not yet available_ | acceptMappedClaims is now part of the new api resource. |
+| addIns | beta/ - _Not yet available_ <br> v1.0/  - _Not yet available_  | |
+| applicationTemplateId | beta/ - _Not yet available_ <br> v1.0/  - _Not yet available_ | |
+| availableToOtherTenants | beta/&nbsp;-&nbsp; orgRestrictions <br> v1.0/ - _Not yet available_ | |
+| errorUrl| beta/&nbsp;-&nbsp;_not available_ <br> v1.0/ -  _not available_ | This property is deprecated.|
+| homepage| beta/&nbsp;-&nbsp;web/homepage <br> v1.0/ - _Not yet available_ | homepage is now part of the new web resource.|
+| informationalUrls| beta/&nbsp;-&nbsp;info <br> v1.0/ - _Not yet available_ | |
+| knownClientApplications| beta/&nbsp;-&nbsp;api/knownClientApplications <br> v1.0/ - _Not yet available_ | knownClientApplications is now part of the new api resource. |
+| logoutUrl| beta/&nbsp;-&nbsp;web/logoutUrl <br> v1.0/ - _Not yet available_ | logoutUrl is now part of the web resource. |
+| logoUrl| beta/&nbsp;-&nbsp;info/logoUrl <br> v1.0/ - _Not yet available_ | logoUrl is now part of the new info resource. |
+| mainLogo| beta/&nbsp;-&nbsp;_not available_ <br> v1.0/ -  _not available_ | This property is deprecated.|
+| oauth2AllowIdTokenImplicitFlow | beta/ - web/implicitGrantSettings/enableIdTokenIssuance<br>v1.0/ - _Not yet available_ | Renamed, and now part of the new implicitGrantSettings resource. |
+| oauth2AllowImplicitFlow| beta/&nbsp;-&nbsp;web/oauth2AllowImplicitFlow <br>v1.0/ - _Not yet available_ | oauth2AllowImplicitFlow is now part of the new web resource. |
+| oauth2AllowUrlPathMatching| beta/&nbsp;-&nbsp;_not available_ <br> v1.0/ -  _not available_ | This property is deprecated.|
+| oauth2Permissions| beta/&nbsp;-&nbsp;api/oauth2PermissionScopes <br> v1.0/ - _Not yet available_ | Renamed and now part of the new api resource. |
+| oauth2RequirePostResponse| beta/&nbsp;-&nbsp;_not available_ <br> v1.0/ -  _not available_ | This property is deprecated.|
+| publicClient| beta/&nbsp;-&nbsp; isFallbackPublicClient <br> v1.0/ - _Not yet available_ | This property now has a new meaning - it contains the public client settings like redirectUris. Determining whether the app is a public or confidential client or not is now done automatically, with the isFallbackPublicClient property handling the one special case that cannot be determined automatically.|
+| recordConsentConditions| beta/&nbsp;-&nbsp;_not available_ <br> v1.0/ -  _not available_ | This property is deprecated.|
+| replyUrls| beta/&nbsp;-&nbsp; web/redirectUris <br> v1.0/ - _Not yet available_ | As well as being renamed, redirectUris is now part of the new web resource. | |
+| samlMetadataUrl| beta/ - _Not yet available_  <br> v1.0/ - _Not yet available_  | |
+| extensionProperties| beta/&nbsp;-&nbsp;extensionProperties <br> v1.0/ - _Not yet available_ | This property will be deprecated. |
+| serviceEndpoints|  beta/ - _Not yet available_  <br> v1.0/ - _Not yet available_  | |
 
 ## AppRoleAssignment differences
 
-TBD
+|Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
+|---|---|---|
+| creationTimestamp | beta/&nbsp;-&nbsp;creationTimestamp <br> v1.0/ - _Not yet available_ | This will be renamed to createdDateTime.|
+| id | beta/&nbsp;-&nbsp;appRoleId <br> v1.0/ - _Not yet available_ | |
 
 ## Contact property differences
 
-Here are the property differences for organizational contact (orgContact) resources:
+The Azure AD Graph Contact resource has been renamed to orgContact in Microsoft Graph.  Here are the property differences:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -86,15 +112,11 @@ Here are the property differences for organizational contact (orgContact) resour
 
 ## Contract property differences
 
-Here are the property differences for contract resources:
-
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | customerContextId | beta/&nbsp;-&nbsp;customerId <br> v1.0/ - customerId  |  |
 
 ## Device property differences
-
-Here are the property differences for device resources:
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
@@ -118,8 +140,6 @@ The Azure AD Graph directoryObjectReference resource has been renamed to directo
 
 ## Domain property differences
 
-Here are the property differences for device resources:
-
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | name | beta/&nbsp;-&nbsp;id <br> v1.0/ - id | In Microsoft Graph, the unique identifier (id) contains the domain name; the `name` property doesn't exist. |
@@ -128,11 +148,14 @@ Here are the property differences for device resources:
 
 ## OAuth2PermissionsGrant property differences
 
-TBD
+|Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
+|---|---|---|
+| expiryTime | beta/&nbsp;-&nbsp;expiryTime <br> v1.0/  - _Not yet available_ | This property is not used and will likely be removed in Microsoft Graph. |
+| startTime | beta/&nbsp;-&nbsp;startTime <br> v1.0/  - _Not yet available_  | This property is not used and will likely be removed in Microsoft Graph. |
 
 ## Policy property differences
 
-TBD
+Currently the policy resource in Microsoft Graph (only available in preview) looks very similar to Azure AD Graph.  However it will change so that there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type.
 
 ## ServiceEndpoint property differences
 
@@ -161,7 +184,7 @@ The Azure AD Graph tenantDetails resource has been renamed to organization in Mi
 
 ## TrustedCasForPasswordlessAuth property differences
 
-TBD
+The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to certificateBasedAuthConfiguration in Microsoft Graph.  There are no property differences.
 
 
 ## Next Steps
