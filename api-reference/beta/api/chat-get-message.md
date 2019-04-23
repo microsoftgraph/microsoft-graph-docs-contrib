@@ -73,51 +73,45 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "id": "id-value",
-  "replyToId": "id-value",
-  "from": {
-      "user": { 
-        "id": "id-value",
-        "displayName": "John Doe"
-      }  
-  },
-  "etag": "id-value",
-  "messageType": "message",
-  "createdDateTime": "2018-07-09T07:40:20.152Z",
-  "lastModifiedDateTime": "2018-07-09T07:40:20.152Z",
-  "body": {
-      "content": "Hello World",
-      "contentType": "text"
-  },
-  "attachments": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf%40unq.gbl.spaces')/messages/$entity",
+    "id": "1555631722147",
+    "replyToId": null,
+    "etag": "1555631722147",
+    "messageType": "message",
+    "createdDateTime": "2019-04-18T23:55:22.147Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "policyViolation": null,
+    "from": {
+        "device": null,
+        "user": null,
+        "conversation": null,
+        "application": {
+            "id": "877192bd-9183-47d3-a74c-8aa0426716cf",
+            "displayName": "TestBot",
+            "applicationIdentityType": "bot"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<attachment id=\"bcb243ec589a4537b3c650356421e696\"></attachment>"
+    },
+    "attachments": [
         {
-            "id": "5e32f195-168a-474f-a273-123123123",
-            "contentType": "reference",
-            "contentUrl": "https://test.sharepoint.com/sites/TestSite/Shared%20Documents/General/Test.txt",
-            "content": null,
-            "name": "Test.txt",
+            "id": "bcb243ec589a4537b3c650356421e696",
+            "contentType": "application/vnd.microsoft.card.signin",
+            "contentUrl": null,
+            "content": "{\r\n  \"text\": \"Please sign in to sample to proceed.\",\r\n  \"buttons\": [\r\n    {\r\n      \"type\": \"signin\",\r\n      \"title\": \"Sign In\",\r\n      \"value\": \"https://token.botframework.com/api/oauth/signin?signin=921d46120f7695632ce6ca4b0da2e3ae15fea54c47\"\r\n    }\r\n  ]\r\n}",
+            "name": null,
             "thumbnailUrl": null
         }
-  ],
-  "mentions": [
-      {
-          "type": "user",
-          "id": "id-value ",
-          "mentionText": "Test User"
-      }
-  ],
-  "importance": "normal",
-  "reactions": [
-      {
-        "reactionType": "like",
-        "user": {
-            "id": "id-value",
-            "displayName": "John Doe"
-        },
-        "createdDateTime": "2018-07-09T07:40:20.152Z"
-      }
-  ],
-  "locale": "en-us"
+    ],
+    "mentions": [],
+    "reactions": []
 }
 ```
 
