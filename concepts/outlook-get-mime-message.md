@@ -1,21 +1,21 @@
 ---
-title: "Get MIME content from a message"
+title: "Get MIME content of a message"
 description: "Multipurpose Internet Mail Extensions (MIME) is an industry email standard. You can now use a `$value` segment to get the MIME content of an Outlook message."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Get MIME content from a message (preview)
+# Get MIME content of a message (preview)
 
 MIME is an industry email standard. Many email applications create messages in MIME format and save them in files with the .EML extension. 
 
-Even though Outlook _does not save_ messages in MIME format, there are two ways where you can get an Outlook message body in MIME format:
+Even though Outlook _does not save_ messages in MIME format, there are two ways you can get an Outlook message body in MIME format:
 
 - You can append a `$value` segment to a get-message operation on that message.
 - If the message is attached to an Outlook item or group post, you can append a `$value` segment to a get-attachment operation on that item or group post.
 
-In either case, your app must have the appropriate [permissions to access](permissions-reference.md#mail-permissions) the Outlook item or group post that the app is applying the operation on. 
+In either case, your app must have the appropriate [permissions to access](permissions-reference.md#mail-permissions) the Outlook item or group post in order to apply the get-message or get-attachment operation. 
 
 You can then save the message body content in a .EML file and attach the file to records in business systems, such as those for CRM, ERP, and bug tracking. 
 
@@ -278,5 +278,6 @@ e.</p>
 
 Find out more about:
 
+- [Get the MIME content of an item attachment](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-beta#common-use-cases) in Microsoft Graph beta.
+- [Using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-beta#common-use-cases) in Microsoft Graph beta
