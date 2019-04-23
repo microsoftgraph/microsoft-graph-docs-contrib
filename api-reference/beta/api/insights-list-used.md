@@ -27,7 +27,7 @@ GET /me/insights/used
 ```
 Requesting other user's used documents returns results sorted by 'lastModifiedDateTime' and 'lastAccessedDateTime' is set to 'lastModifiedDateTime'.
 ```http
-GET /users/<id | userPrincipalName>/insights/used
+GET /users/{id | userPrincipalName}/insights/used
 ```
 
 ## Optional query parameters
