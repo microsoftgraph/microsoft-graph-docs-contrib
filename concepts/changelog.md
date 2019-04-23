@@ -12,6 +12,15 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
 ## April 2019
+### OneDrive and SharePoint APIs
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the [bundle](/graph/api/resources/bundle?view=graph-rest-beta) complex type |
+| Addition | Beta | Added the [album](/graph/api/resources/album?view=graph-rest-beta) complex type |
+| Addition | Beta | Added the **bundles** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-beta) entity |
+| Addition | Beta | Added the **bundle** property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity |
+| Addition | Beta | Added the **grant** action to the [permission](/graph/api/resources/permission?view=graph-rest-beta) entity |
+
 ### Azure AD B2C APIs
 
 | **Change type** | **Version**   | **Description**                          |
