@@ -1,6 +1,6 @@
 ---
-title: "applicationSignInDetailedSummary resource type - Microsoft Graph API"
-description: "Describes the applicationSignInSummary resource of the Microsoft Graph API"
+title: "applicationSignInDetailedSummary resource type"
+description: "Represents an application sign-in summary."
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: "microsoft-identity-platform"
@@ -10,20 +10,20 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the number of successful and failed sign-ins for an application. 
+Represents an application sign-in summary.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read properties and relationships of applicationSignInSummary object. |
+| [Get applicationSignInSummary](../api/applicationsigninsummary-get.md) | [applicationSignInSummary](applicationsigninsummary.md) | Read the properties and relationships of an **applicationSignInSummary** object. |
 
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|appDisplayName|String|Name of the application that the user signed into.|
-|appId|String|  ID of the application that the user signed into.|
-|failedSignInCount|Int64|Count of Fialed SignIns made by the application.|
+|appDisplayName|String|Name of the application that the user signed in to.|
+|appId|String|  ID of the application that the user signed i nto.|
+|failedSignInCount|Int64|Count of failed sign-ins made by the application.|
 |successPercentage|Int32|Percentage of successful sign-ins made by the application.|
 |successfulSignInCount|Int64|Count of successful sign-ins made by the application.|
 
