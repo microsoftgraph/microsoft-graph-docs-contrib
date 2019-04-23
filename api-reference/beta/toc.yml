@@ -7067,16 +7067,6 @@
           href: api/application-list-owners.md
         - name: Assign owner
           href: api/application-post-owners.md
-        - name: Application sign-in summary
-          href: resources/applicationsigninsummary.md
-          items:
-          - name: Get
-            href: api/applicationsigninsummary-get.md
-        - name: Application sign-in summary details
-          href: resources/applicationsignindetailedsummary.md
-          items:
-          - name: Get
-            href: api/applicationsignindetailedsummary-get.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
@@ -8066,6 +8056,18 @@
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
+      - name: Identity and access reports
+        items:
+        - name: Application sign-in summary
+          href: resources/applicationsigninsummary.md
+          items:
+          - name: Get
+            href: api/applicationsigninsummary-get.md
+        - name: Application sign-in summary details
+            href: resources/applicationsignindetailedsummary.md
+            items:
+            - name: Get
+              href: api/applicationsignindetailedsummary-get.md
     - name: Security
       href: resources/security-api-overview.md
       displayname: Security API, Microsoft Graph Security API
