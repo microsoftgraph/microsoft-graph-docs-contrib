@@ -22,7 +22,17 @@ All these types of attachment resources are derived from the [attachment](../res
 resource.
 
 ### Get the raw contents of a file or item attachment
-You can append the path segment `/$value` to get the raw contents of a file or item attachment. For a file attachment, the content type is based on its original content type. For a message-type item attachment, the raw contents include the MIME representation of that message. 
+You can append the path segment `/$value` to get the raw contents of a file or item attachment. 
+
+For a file attachment, the content type is based on its original content type. See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.
+
+For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw content returned is in MIME format.
+
+| Item attachment type  | Raw contents returned |
+|:-----------|:----------|
+| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format. See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **event** | iCal MIME format. See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **message** | MIME format. See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
 Attempting to get the `$value` of a reference attachment returns HTTP 405.
 
@@ -97,10 +107,10 @@ An attachment of an [Outlook task](../resources/outlooktask.md):
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/outlook/tasks/<id>/attachments/{id}
-GET /users/<id>/outlook/tasks/<id>/attachments/{id}
-GET /me/outlook/tasks/<id>/attachments/{id}/$value
-GET /users/<id>/outlook/tasks/<id>/attachments/{id}/$value
+GET /me/outlook/tasks/{id}/attachments/{id}
+GET /users/{id}/outlook/tasks/{id}/attachments/{id}
+GET /me/outlook/tasks/{id}/attachments/{id}/$value
+GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
 An attachment of a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group:
@@ -394,14 +404,144 @@ HTTP/1.1 200 OK
 {Raw bytes of the file}
 ```
 
-### Example 6: Get the raw contents of a meeting invitation item attachment on a message
+
+### Example 6: Get the MIME raw contents of a contact attachment on a message
 
 #### Request
 
-Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message.
+Here is an example of the request to get the raw contents of a contact item that has been attached to a message. 
 <!-- {
   "blockType": "ignored",
-  "name": "get_value_item_attachment",
+  "name": "get_value_contact_attachment",
+  "sampleKeys": ["AAMkADI5MAAGjk2PxAAA=","AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8="]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages/AAMkADI5MAAGjk2PxAAA=/attachments/AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8=/$value
+```
+
+#### Response
+Here is an example of the response. 
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_contact_attachment",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 200 OK
+
+BEGIN:VCARD
+PROFILE:VCARD
+VERSION:3.0
+MAILER:Microsoft Exchange
+PRODID:Microsoft Exchange
+FN:Alex Wilbur
+N:Wilbur;Alex;;;
+NOTE:Sunday\, June 10\, 2012 5:44 PM:\nGutter\, window cleaning\, pressure 
+ washing\, roof debris blowing\n
+ORG:Contoso;
+CLASS:PUBLIC
+ADR;TYPE=WORK,PREF:;;4567 Main St;Buffalo;NY;98052;United States of America
+LABEL;TYPE=WORK,PREF:4567 Main St\nBuffalo\, NY 98052
+ADR;TYPE=HOME:;;;;;;
+ADR;TYPE=POSTAL:;;;;;;
+TEL;TYPE=WORK:(425) 555-0100
+TITLE:
+X-MS-IMADDRESS:
+REV;VALUE=DATE-TIME:2019-04-09T02:13:31,161Z
+END:VCARD
+```
+
+
+### Example 7: Get the MIME raw contents of an event attachment on a message
+
+#### Request
+
+Here is an example of the request to get the raw contents of an event that has been attached to a message. 
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_event_attachment",
+  "sampleKeys": ["AAMkADVIOAAA=","AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM="]
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/messages/AAMkADVIOAAA=/attachments/AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM=/$value
+```
+
+#### Response
+Here is an example of the response. 
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_event_attachment",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 200 OK
+
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:Microsoft Exchange Server 2010
+VERSION:2.0
+BEGIN:VTIMEZONE
+TZID:Pacific Standard Time
+BEGIN:STANDARD
+DTSTART:16010101T020000
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=1SU;BYMONTH=11
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010101T020000
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+RRULE:FREQ=YEARLY;INTERVAL=1;BYDAY=2SU;BYMONTH=3
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+ORGANIZER;CN=Adele Vance:MAILTO:adelev@contoso.com
+ATTENDEE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE;CN=Adele Vance:MAILTO:adelev@contoso.com
+DESCRIPTION;LANGUAGE=en-US:\n
+UID:040000008200
+SUMMARY;LANGUAGE=en-US:Review Megan's docs
+DTSTART;TZID=Pacific Standard Time:20190409T140000
+DTEND;TZID=Pacific Standard Time:20190409T160000
+CLASS:PUBLIC
+PRIORITY:5
+DTSTAMP:20190409T211833Z
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+SEQUENCE:0
+LOCATION;LANGUAGE=en-US:
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-OWNERAPPTID:0
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-LOCATIONS:[]
+BEGIN:VALARM
+DESCRIPTION:REMINDER
+TRIGGER;RELATED=START:-PT15M
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
+END:VCALENDAR
+```
+
+
+### Example 8: Get the MIME raw contents of a meeting invitation item attachment on a message
+
+#### Request
+
+Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message. The **eventMessage** entity is based on the **message** type.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_value_message_attachment",
   "sampleKeys": ["AAMkAGUzY5QKiAAA=","AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ="]
 }-->
 
@@ -416,7 +556,7 @@ The response body includes the **eventMessage** attachment in MIME format. The b
 
 <!-- {
   "blockType": "ignored",
-  "name": "get_value_item_attachment",
+  "name": "get_value_message_attachment",
   "truncated": true
 } -->
 
@@ -467,6 +607,7 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
 
 --_000_CY4PR2201MB1046E9C83FC42478EF4EE283C9750CY4PR2201MB1046_--
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
