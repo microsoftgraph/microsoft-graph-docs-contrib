@@ -22,7 +22,7 @@ For any app update, there are three main areas of concern:
 
     For example, if your existing app has _User.Read.All_ and _Group.Read.All_ permissions, those permissions are implicitly granted to your updated app for Microsoft Graph as well.
 
-    If your update also incudes the use of features or capabilities that aren't available to Azure AD Graph, you'll likely need to request permissions for these new features. If that's the case, additional/incremental consent can be requested dynamically, if you also switch your app to use MSAL and the v2 endpoint. You can find more details about switching to MSAL in [review app authentication library changes](/graph/migrate-aure-ad-graph-authentication-library).
+    If your update also incudes the use of features or capabilities that aren't available to Azure AD Graph, you'll likely need to request permissions for these new features. If that's the case, additional/incremental consent can be requested dynamically, if you also switch your app to use MSAL and the v2 endpoint. You can find more details about switching to MSAL in [review app authentication library changes](/graph/migrate-azure-ad-graph-authentication-library).
 
 - **Consent**: Consent is handled by the Azure AD authentication process.
 
