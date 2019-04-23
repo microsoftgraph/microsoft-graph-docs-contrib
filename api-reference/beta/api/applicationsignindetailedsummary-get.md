@@ -1,6 +1,6 @@
 ---
-title: "applicationSignInDetailedSummary resource type - Microsoft Graph API"
-description: "Describes the applicationSignInDetailSummary resource of the Microsoft Graph API"
+title: "Get applicationSignInDetailedSummary"
+description: "Retrieve the properties and relationships of [applicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md) object."
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: "microsoft-identity-platform"
@@ -10,10 +10,10 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [applicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md) object.
+Retrieve the properties and relationships of an [applicationSignInDetailSummary](../resources/applicationsignindetailedsummary.md) object.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -29,7 +29,7 @@ GET /reports/applicationSignInDetailedSummary/{id}
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -41,7 +41,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) object in the response body.
 
 ## Example
 
@@ -56,7 +56,9 @@ GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/<i
 ```
 
 ### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
