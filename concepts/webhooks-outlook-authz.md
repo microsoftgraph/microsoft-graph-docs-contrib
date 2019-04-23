@@ -5,7 +5,7 @@ author: "piotrci"
 localization_priority: Priority
 ---
 
-# Reduce missing subscriptions and notifications for Outlook resources (preview)
+# Reduce missing subscriptions and notifications for Outlook resources (preview) 
 
 Apps subscribing to notifications for Outlook resources may get their subscriptions removed and miss some notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous notification flow.
 
