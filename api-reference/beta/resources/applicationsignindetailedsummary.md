@@ -10,7 +10,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the number of sign ins per application.
+Represents a detailed summary of an application sign-in.
 
 ## Methods
 
@@ -21,11 +21,11 @@ Retrieve the number of sign ins per application.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|aggregatedEventDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|appDisplayName|String|Name of the application that the user signed into.|
-|appId|String|ID of the application that the user signed into.|
-|id|String| Indicates unique ID representing the sign-in activity.|
-|signInCount|Int64|Count of SignIns made by the application.|
+|aggregatedEventDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|appDisplayName|String|Name of the application that the user signed in to.|
+|appId|String|ID of the application that the user signed in to.|
+|id|String| A unique ID representing the sign-in activity.|
+|signInCount|Int64|Count of sign-ins made by the application.|
 |status|[signInStatus](signinstatus.md)|Details of the sign-in status.|
 
 ## Relationships
