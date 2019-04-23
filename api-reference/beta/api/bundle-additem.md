@@ -10,7 +10,9 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an additional item from a drive to a bundle.
+Add an additional item from a drive to a [bundle][].
+
+[bundle]: ../resources/bundle.md
 
 ## Permissions
 
