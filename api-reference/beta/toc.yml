@@ -8064,10 +8064,10 @@
           - name: Get
             href: api/applicationsigninsummary-get.md
         - name: Application sign-in summary details
-            href: resources/applicationsignindetailedsummary.md
-            items:
-            - name: Get
-              href: api/applicationsignindetailedsummary-get.md
+          href: resources/applicationsignindetailedsummary.md
+          items:
+          - name: Get
+            href: api/applicationsignindetailedsummary-get.md
     - name: Security
       href: resources/security-api-overview.md
       displayname: Security API, Microsoft Graph Security API
