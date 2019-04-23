@@ -16,7 +16,7 @@ Represents a detailed summary of an application sign-in.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read properties and relationships of applicationSignInDetailedSummary object. |
+| [Get applicationSignInDetailedSummary](../api/applicationsignindetailedsummary-get.md) | [applicationSignInDetailedSummary](applicationsignindetailedsummary.md) | Read the properties and relationships of an **applicationSignInDetailedSummary** object. |
 
 ## Properties
 | Property     | Type        | Description |
