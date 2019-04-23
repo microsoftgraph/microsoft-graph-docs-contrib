@@ -27,7 +27,7 @@ GET /me/insights/shared
 ```
 Request with a 'user id' or 'userPrincipalName' is only accessible by the user, not by anyone else:
 ```http
-GET /users/<id | userPrincipalName>/insights/shared
+GET /users/{id | userPrincipalName}/insights/shared
 ```
 
 ## Optional query parameters
