@@ -258,7 +258,7 @@
         href: webhooks.md
         displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         items:
-        - name: Maintaining continuous notification flow for Outlook entities (preview)
+        - name: Missing Outlook notifications (preview)
           href: webhooks-outlook-authz.md
       - name: Track changes
         displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
