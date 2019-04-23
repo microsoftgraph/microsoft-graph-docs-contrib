@@ -32,7 +32,7 @@ If you create an Azure Managed Application for others to use in their tenants, y
 
 Before data connect can copy your data, an administrator must approve a Privileged Access Management (PAM) request. PAM is the mechanism used to authorize your data pipeline access to the data in Office 365. The first time you trigger a pipeline, it will wait on an Office 365 administrator (or appointed delegate) to approve the access request. Although the pipeline status shows `In progress` the underlying copy activity will have a status of `ConsentPending` until approval is granted.
 
-![Copy Activity View](/images/data-connect-tips.png)
+![Copy Activity View](images/data-connect-tips.png)
 
 During development it's a good idea to make sure your pipeline executions aren't stuck on `ConsentPending`, especially after you make a change to your pipeline. For example, if you add an additional field to the schema, the next pipeline run will issue a new PAM request that has to be approved. Don't waste time waiting on a pipeline that's waiting on you!
 
@@ -56,4 +56,4 @@ The `puser` is also useful for datasets such as the `Manager` dataset. The expor
 
 ## Next Steps
 
-Reach out on [Uservoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) or to Microsoft Support or visit our [troubleshooting documentation](/data-connect-troubleshooting) if you encounter an issue executing a data connect pipeline. 
+Reach out on [Uservoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) or to Microsoft Support if you encounter an issue executing a data connect pipeline. 
