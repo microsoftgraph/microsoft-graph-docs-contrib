@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Change sharing permissions
 localization_priority: Normal
@@ -50,7 +50,7 @@ For best performance you shouldn't include existing values that haven't changed.
 
 | Property     | Type   | Description                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | String | An array of permission types. |
+| **roles**    | String collection | An array of permission types. |
 
 ## Response
 

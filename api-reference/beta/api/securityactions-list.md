@@ -1,12 +1,12 @@
 ---
-title: "List security actions"
-description: "Retrieve a list of securityaction objects."
+title: "List securityActions"
+description: "Retrieve a list of securityAction objects."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
 ---
 
-# List security actions
+# List securityActions
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | SecurityActions.Read.All, SecurityActions.ReadWrite.All |
+| Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | SecurityActions.Read.All, SecurityActions.ReadWrite.All |
 
