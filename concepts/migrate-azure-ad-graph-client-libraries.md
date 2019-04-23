@@ -22,7 +22,7 @@ Here, we'll look at some general steps to migrate over to the Microsoft Graph .N
 
 ## Overview of the migration steps (using ADAL)
 
-The following steps assume your app is already using ADAL to acquire access tokens to call Azure AD Graph, and that for now you will continue to use ADAL. Switching to MSAL can be done as a separate step described in [migrating to MSAL](migrate-azure-ad-graph-authentication-library#migrate-to-msal).
+The following steps assume your app is already using ADAL to acquire access tokens to call Azure AD Graph, and that for now you will continue to use ADAL. Switching to MSAL can be done as a separate step described in [migrating to MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).
 
 1. To acquire an access token to Microsoft Graph: **Update resource url** from `https://graph.windows.net` to `https://graph.microsoft.com`.
 

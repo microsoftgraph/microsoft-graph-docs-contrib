@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Method differences between Azure AD and Microsoft Graph
 
-A handful of Azure AD Graph methods have also changed.  If a methis is not shown in this list, it is already available in the [v1.0 version](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
+A handful of Azure AD Graph methods have also changed.  If a methis is not shown in this list, it is already available in the [v1.0 version](/graph/api/overview?view=graph-rest-1.0) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
 |Azure AD Graph <br>(v1.6) method |Microsoft Graph<br>(resource/method)|Comments|
 |---|---|---|
