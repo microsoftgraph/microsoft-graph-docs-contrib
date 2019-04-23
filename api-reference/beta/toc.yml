@@ -8320,6 +8320,18 @@
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Reports
       items:
+      - name: Identity and access reports
+        items:
+        - name: Application sign-in summary
+          href: resources/applicationsigninsummary.md
+          items:
+          - name: Get
+            href: api/applicationsigninsummary-get.md
+        - name: Application sign-in summary details
+          href: resources/applicationsignindetailedsummary.md
+          items:
+          - name: Get
+            href: api/applicationsignindetailedsummary-get.md
       - name: Office 365 usage reports
         href: resources/report.md
         items:
@@ -8519,18 +8531,6 @@
             href: api/reportroot-getyammergroupsactivitygroupcounts.md
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Identity and access reports
-        items:
-        - name: Application sign-in summary
-          href: resources/applicationsigninsummary.md
-          items:
-          - name: Get
-            href: api/applicationsigninsummary-get.md
-        - name: Application sign-in summary details
-          href: resources/applicationsignindetailedsummary.md
-          items:
-          - name: Get
-            href: api/applicationsignindetailedsummary-get.md
     - name: Security
       href: resources/security-api-overview.md
       displayname: Security API, Microsoft Graph Security API
