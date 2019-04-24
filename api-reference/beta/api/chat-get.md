@@ -77,7 +77,11 @@ Content-type: application/json
 Content-length: 201
 
 {
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
+    "id": "19:8b081ef6-4792-4def-b2c9-c363a1bf41d5_877192bd-9183-47d3-a74c-8aa0426716cf@unq.gbl.spaces",
+    "topic": null,
+    "createdDateTime": "2019-04-18T23:51:42.099Z",
+    "lastUpdatedDateTime": "2019-04-18T23:51:43.255Z"
 }
 ```
 
