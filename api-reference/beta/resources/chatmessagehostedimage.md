@@ -1,5 +1,5 @@
 ---
-title: "chatMessageHostedImage resource type"
+title: "Hosted Image resource type"
 description: "Represents an image inside a chatMessage."
 localization_priority: Priority
 ---
