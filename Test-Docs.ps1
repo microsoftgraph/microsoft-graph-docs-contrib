@@ -54,7 +54,7 @@ else {
 		# Default to master branch of ApiDoctor if not set
 		if([string]::IsNullOrWhiteSpace($apiDoctorBranch)){
 			$apiDoctorBranch = "master"
-            Write-Host "API Doctor branch has not been set, defaulting to 'master'."
+            Write-Host "API Doctor branch has not been set, defaulting to master branch."
 		}	
 		
 		# Download ApiDoctor from GitHub	

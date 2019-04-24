@@ -87,7 +87,7 @@ Here is an example of the response. Note: The response shown here may be truncat
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription",
   "isCollection": true
 } -->
