@@ -265,18 +265,6 @@
         items:
         - name: Overview
           href: delta-query-overview.md
-<<<<<<< HEAD
-        - name: Get changes to events (example)
-          href: delta-query-events.md
-        - name: Get changes to groups (example)
-          href: delta-query-groups.md
-        - name: Get changes to messages (example)
-          href: delta-query-messages.md
-        - name: Get changes to users (example)
-          href: delta-query-users.md
-      - name: Add custom data
-        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-=======
           displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
           items:
           - name: Get changes to events (example)
@@ -330,7 +318,6 @@
             href: migrate-azure-ad-graph-deploy-test-extend.md
       - name: Resources
         expanded: true
->>>>>>> Interim updates, based on feedback.  TOC update.
         items:
         - name: Best practices
           href: best-practices-concept.md
