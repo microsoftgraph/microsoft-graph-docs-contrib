@@ -16,7 +16,6 @@ Not all images in a message are hosted images.
 Microsoft Teams also supports public images (where the img src is a public website). 
 Microsoft Teams does not currently support [Data URLs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) but may add this in the future.
 
-
 ## Methods
 
 | Method       | Return Type  |Description|
@@ -25,13 +24,12 @@ Microsoft Teams does not currently support [Data URLs](https://developer.mozilla
 |[Get hosted image](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Get a single root message from a channel.|
 |[Get hosted image bytes](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Get a single root message from a channel.|
 
-
 ## Properties
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the message.|
 |url| string | The url to retrieve the image contents from.|
-
 
 ## JSON representation
 

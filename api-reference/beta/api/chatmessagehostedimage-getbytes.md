@@ -1,6 +1,6 @@
 ---
-title: "Get channel message"
-description: "Retrieve a single message (without its replies) in a channel of a team."
+title: "Get bytes of a hosted image"
+description: "Get the binary representation of a hosted image inside a channel or chat message.."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a single [message](../resources/chatmessage.md) (without its replies) in a [channel](../resources/channel.md) of a team.
+Retrieve the binary representation of a [hosted image](../resources/chatmessagehostedimage.md) in a [message](../resources/chatmessage.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/messages/{id}
+GET /teams/{id}/channels/{id}/messages/{id}/hostedImages/{id}/$value
+GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}/hostedImages/{id}/$value
+GET /chats/{id}/messages/{id}/hostedImages/{id}/$value
+GET /users/{id}/chats/{id}/messages/{id}/hostedImages/{id}/$value
 ```
 
 ## Optional query parameters
@@ -40,19 +43,24 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and binary data of the requested image.
 
 ## Example
+
 ##### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_channel_message"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
+GET /teams/{id}/channels/{id}/messages/{id}/hostedImages/{id}/$value
 ```
+
 ##### Response
+
 Here is an example of the response. 
 
 >**Note:** The response object shown here are shortened for readability. All the properties will be returned from an actual call.
@@ -63,60 +71,8 @@ Here is an example of the response.
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-type: image/jpeg
 Content-length: 201
-
-{
-  "id": "id-value",
-  "replyToId": "id-value",
-  "from": {
-      "user": { 
-        "id": "id-value",
-        "displayName": "John Doe"
-      }  
-  },
-  "etag": "id-value",
-  "messageType": "message",
-  "createdDateTime": "2018-07-09T07:40:20.152Z",
-  "lastModifiedDateTime": "2018-07-09T07:40:20.152Z",
-  "body": {
-      "content": "Hello World",
-      "contentType": "text"
-  },
-  "attachments": [
-        {
-            "id": "5e32f195-168a-474f-a273-123123123",
-            "contentType": "reference",
-            "contentUrl": "https://test.sharepoint.com/sites/TestSite/Shared%20Documents/General/Test.txt",
-            "content": null,
-            "name": "Test.txt",
-            "thumbnailUrl": null
-        }
-  ],
-  "mentions": [
-      {
-          "id": "id-value ",
-          "mentionText": "Test User",
-          "mentioned": {
-          "user": {
-            "id": "id-value",
-            "displayName: "string"
-          }
-        }
-      }
-  ],
-  "importance": "normal",
-  "reactions": [
-      {
-        "reactionType": "like",
-        "user": {
-            "id": "id-value",
-            "displayName": "John Doe"
-        },
-        "createdDateTime": "2018-07-09T07:40:20.152Z"
-      }
-  ],
-  "locale": "en-us"
 }
 ```
 
@@ -125,12 +81,12 @@ Content-length: 201
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get channel message",
+  "description": "Get bytes of a hosted image",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/channel-get-message.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/chatmessagehostedimage-getbytes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
