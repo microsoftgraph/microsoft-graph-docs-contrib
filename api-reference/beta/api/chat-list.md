@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_channels"
+  "name": "get_chats"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/chats

@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [chatmessage](
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_channel_message"
+  "name": "get_chat_message"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
