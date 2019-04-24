@@ -3,7 +3,7 @@ Param(
     [string]$file
 )
 $apiDoctorVersion = $env:APIDOCTOR_VERSION
-$apiDoctorBranch = $env:APIDOCTOR_BRANCH
+$apiDoctorBranch = "annotationprocessing"
 $repoPath = (Get-Location).Path
 $downloadedApiDoctor = $false
 $downloadedNuGet = $false
