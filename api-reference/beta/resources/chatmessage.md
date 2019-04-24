@@ -39,7 +39,7 @@ The message can be a root message or part of a thread that is defined by the **r
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted, or null if not deleted. |
 |subject|string| The subject of the message, in plaintext.|
-|body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. By default, the content is in plain text. An application can choose HTML as part of a query parameter. The content is in HTML if the message contains a [chatMessageMention](chatmessagemention.md). |
+|body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Representation is specified by the contentType inside the body. The content is always in HTML if the message contains a [chatMessageMention](chatmessagemention.md). |
 |summary|string| Summary text of the message that could be used for push notifications and summary views or fall back views. Only applies to channel messages, not chat messages. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
