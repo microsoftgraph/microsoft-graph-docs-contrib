@@ -51,8 +51,7 @@ Here is a JSON representation of the resource
   "id": "string (identifier)",
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
-  "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "string"
+  "lastUpdatedDateTime": "dateTimeOffset"
 }
 
 ```
