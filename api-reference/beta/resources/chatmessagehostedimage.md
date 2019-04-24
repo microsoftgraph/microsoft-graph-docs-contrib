@@ -4,7 +4,7 @@ description: "Represents an image inside a chatMessage."
 localization_priority: Priority
 ---
 
-# chatMessage resource type
+# chatMessageHostedImage resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

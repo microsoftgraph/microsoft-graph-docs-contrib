@@ -1,16 +1,16 @@
 ---
-title: "List hosted images in a chatmessage"
+title: "List chatMessageHostedImages in a chatmessage"
 description: "Retrieve the list of hosted images in a chatMessage."
 localization_priority: Priority
 author: "nkramer"
 ms.prod: "microsoft-teams"
 ---
 
-# List hosted images
+# List chatMessageHostedImages in a chatmessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [hosted images](../resources/chatmessagehostedimage.md) in a [message](../resources/chatmessage.md).
+List all [hosted images](../resources/chatmessagehostedimage.md) in a [chatMessage](../resources/chatmessage.md).
 
 ## Permissions
 
