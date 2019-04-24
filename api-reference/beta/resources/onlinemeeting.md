@@ -33,7 +33,7 @@ Captures information about the meeting, including the join URL, the attendees li
 | id                        | String                                                 | The ID associated with the online meeting. Used in a GET HTTP request as the ID. Read-only. Server generated. |
 | isCancelled               | Boolean                                                | Whether the meeting has been canceled. |
 | joinUrl                   | String                                                 | The URL that is used when the online meeting is joined from the web. |
-| meetingType               | String                                                 | Possible values are: `meetNow`, `scheduled`, `recurring`, `broadcast` |
+| meetingType               | String                                                 | Possible values are: `meetNow`, `scheduled`, `recurring`, `broadcast` (Note: [create online Meeting](application-post-onlinemeetings.md) only supports 'meetNow') |
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | startDateTime             | DateTime                                               | Start time of the meeting. |
 | subject                   | String                                                 | The subject of the online meeting. |
