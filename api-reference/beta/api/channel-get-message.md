@@ -47,10 +47,11 @@ If successful, this method returns a `200 OK` response code and a [chatmessage](
 Here is an example of the request.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype", "1555375673184"],
   "name": "get_channel_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
+GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages/1555375673184
 ```
 ##### Response
 Here is an example of the response. 
@@ -64,26 +65,36 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "id": "id-value",
-  "replyToId": "id-value",
-  "from": {
-      "user": { 
-        "id": "id-value",
-        "displayName": "John Doe"
-      }  
-  },
-  "etag": "id-value",
-  "messageType": "message",
-  "createdDateTime": "2018-07-09T07:40:20.152Z",
-  "lastModifiedDateTime": "2018-07-09T07:40:20.152Z",
-  "body": {
-      "content": "Hello World",
-      "contentType": "text"
-  },
-  "attachments": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('303d2c1c-f1c5-40ce-b68e-544343d7f42b')/channels('19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype')/messages/$entity",
+    "id": "1555375673184",
+    "replyToId": null,
+    "etag": "1555375673184",
+    "messageType": "message",
+    "createdDateTime": "2019-04-16T00:47:53.184Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": "",
+    "summary": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "policyViolation": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
+            "displayName": "Adele Vance",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div>Nice to join this team. <at id=\"0\">Megan Bowen</at>, have we got the March report ready please?</div>\n</div>"
+    },
+    "attachments": [
         {
             "id": "5e32f195-168a-474f-a273-123123123",
             "contentType": "reference",
@@ -92,26 +103,34 @@ Content-length: 201
             "name": "Test.txt",
             "thumbnailUrl": null
         }
-  ],
-  "mentions": [
-      {
-          "type": "user",
-          "id": "id-value ",
-          "mentionText": "Test User"
-      }
-  ],
-  "importance": "normal",
-  "reactions": [
+    ],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "Megan Bowen",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "5d8d505c-864f-4804-88c7-4583c966cde8",
+                    "displayName": "Megan Bowen",
+                    "userIdentityType": "aadUser"
+                }
+            }
+        }
+    ],
+    "reactions": [
       {
         "reactionType": "like",
         "user": {
-            "id": "id-value",
-            "displayName": "John Doe"
+            "id": "5d8d505c-864f-4804-88c7-4583c966cde8",
+            "displayName": "Megan Bowen",
+            "userIdentityType": "aadUser"
         },
-        "createdDateTime": "2018-07-09T07:40:20.152Z"
+        "createdDateTime": "2019-04-16T00:58:53.184Z"
       }
-  ],
-  "locale": "en-us"
+    ]
 }
 ```
 

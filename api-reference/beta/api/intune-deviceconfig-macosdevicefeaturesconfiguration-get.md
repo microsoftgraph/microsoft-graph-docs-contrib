@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 731
+Content-Length: 1613
 
 {
   "value": {
@@ -85,10 +85,35 @@ Content-Length: 731
         "port": 4,
         "forceTls": true
       }
-    ]
+    ],
+    "autoLaunchItems": [
+      {
+        "@odata.type": "microsoft.graph.macOSLaunchItem",
+        "path": "Path value",
+        "hide": true
+      }
+    ],
+    "adminShowHostInfo": true,
+    "loginWindowText": "Login Window Text value",
+    "authorizedUsersListHidden": true,
+    "authorizedUsersListHideLocalUsers": true,
+    "authorizedUsersListHideMobileAccounts": true,
+    "authorizedUsersListIncludeNetworkUsers": true,
+    "authorizedUsersListHideAdminUsers": true,
+    "authorizedUsersListShowOtherManagedUsers": true,
+    "shutDownDisabled": true,
+    "restartDisabled": true,
+    "sleepDisabled": true,
+    "consoleAccessDisabled": true,
+    "shutDownDisabledWhileLoggedIn": true,
+    "restartDisabledWhileLoggedIn": true,
+    "powerOffDisabledWhileLoggedIn": true,
+    "logOutDisabledWhileLoggedIn": true,
+    "screenLockDisableImmediate": true
   }
 }
 ```
+
 
 
 

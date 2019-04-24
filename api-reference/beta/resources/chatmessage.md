@@ -2,6 +2,8 @@
 title: "chatMessage resource type"
 description: "Represents an individual chat message within a channel or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message."
 localization_priority: Priority
+author: "nkramer"
+ms.prod: "microsoft-teams"
 ---
 
 # chatMessage resource type
@@ -9,7 +11,7 @@ localization_priority: Priority
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an individual chat message within a [channel](channel.md) or [chat](chat.md). 
-The message can be an root message or part of a thread that is defined by the **replyToId** property in the message.
+The message can be a root message or part of a thread that is defined by the **replyToId** property in the message.
 
 ## Methods
 
@@ -37,7 +39,7 @@ The message can be an root message or part of a thread that is defined by the **
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted, or null if not deleted. |
 |subject|string| The subject of the message, in plaintext.|
-|body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML using the contentType property.|
+|body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. By default, the content is in plain text. An application can choose HTML as part of a query parameter. The content is in HTML if the message contains a [chatMessageMention](chatmessagemention.md). |
 |summary|string| Summary text of the message that could be used for push notifications and summary views or fall back views. Only applies to channel messages, not chat messages. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
@@ -82,6 +84,7 @@ The following is a JSON representation of the resource.
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
+  "policyViolation": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string"
 }
