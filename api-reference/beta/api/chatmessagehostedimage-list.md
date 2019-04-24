@@ -33,7 +33,7 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedImages
 
 ## Optional query parameters
 
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+This operation does not support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to customize the response.
 
 ## Request headers
 

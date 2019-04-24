@@ -13,6 +13,7 @@ ms.prod: "microsoft-teams"
 Retrieve the binary representation of a [hosted image](../resources/chatmessagehostedimage.md) in a [message](../resources/chatmessage.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission Type|Permissions (from least to most privileged)|
@@ -31,14 +32,17 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedImages/{id}/$value
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+
+This operation does not support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to customize the response.
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
