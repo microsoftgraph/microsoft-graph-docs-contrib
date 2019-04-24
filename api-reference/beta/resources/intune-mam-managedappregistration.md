@@ -58,8 +58,7 @@ Here is a JSON representation of the resource.
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.managedAppRegistration",
   "abstract": true
-}
--->
+}-->
 ``` json
 {
   "createdDateTime": "String (timestamp)",

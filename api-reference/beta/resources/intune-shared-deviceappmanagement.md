@@ -72,8 +72,7 @@ Here is a JSON representation of the resource.  Note that this is only an exampl
     ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
-}
--->
+}-->
 ``` json
 {
   "id": "String (identifier)",
