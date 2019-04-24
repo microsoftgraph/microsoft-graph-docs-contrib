@@ -15,7 +15,7 @@ Many apps use an authentication library to aquire and manage access tokens.
 
 In the short term, you need only to make a few minor changes to continue using either approach.
 
-## Updating ADAL 
+## Updating ADAL
 
 However, ADAL will be retired at some point.  Eventually, you'll want to migrate to MSAL.
 

@@ -11,9 +11,6 @@ ms.prod: "microsoft-identity-platform"
 The Microsoft Graph API and the Azure AD Graph API are both REST APIs and they each support ODATA conventions for query parameters; however, the syntax varies between each API.
 
 The variations are minor and should be quick to implement.
-
-> Note: If you're using the Azure AD Graph .NET library, see [xxx]() for specific strategies and assistance.
-
 The following table highlights the main differences between each API:
 
 || Azure AD Graph | Microsoft Graph |
@@ -54,8 +51,10 @@ Here:
 
 While not all requests will be as easy to convert, many will.  To learn more, see [resource type differences](migrate-azure-ad-graph-resource-differences.md). 
 
+> **Note**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
+
 ## Next Steps
 
-- Learn about [resource type differences](migrate-azure-ad-graph-resource-differences.md) between Azure AD Graph and Microsoft Graph.
+- Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) between Azure AD Graph and Microsoft Graph.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

@@ -20,7 +20,7 @@ Here, we'll look at some general steps to migrate over to the Microsoft Graph .N
 - use query builders,
 - handle collections and paging.  
 
-## Overview of the migration steps (using ADAL)
+## Overview of the migration steps
 
 The following steps assume your app is already using ADAL to acquire access tokens to call Azure AD Graph, and that for now you will continue to use ADAL. Switching to MSAL can be done as a separate step described in [migrating to MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).
 
@@ -107,7 +107,7 @@ version number, `https://graph.microsoft.com/v1.0` in this case.
         Where(g => g.ObjectId.Equals(id)).ExecuteAsync().Result;
     IGroupFetcher retrievedGroupFetcher = (IGroupFetcher) retrievedGroup;
 
-    IPagedCollection<IDirectoryObject> membersPage = retrievedGroupFetcher.Members.Take(5).ExecuteAsync().Result;
+    var membersPage = retrievedGroupFetcher.Members.Take(5).ExecuteAsync().Result;
     Console.WriteLine(" Members:");
     do
     {

@@ -22,9 +22,8 @@ A handful of Azure AD Graph methods have also changed.  If a methis is not shown
 | addPassword | beta/ - addPassword <br> v1.0/ - _Not yet available_ | | 
 | removePassword | beta/ - removePassword <br> v1.0/ - _Not yet available_ | | 
 
-
 ## Next Steps
 
-- Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) between Azure AD Graph and Microsoft Graph.
+- Learn [app registration, permission, and consent](migrate-azure-ad-graph-app-registration.md) differences between Azure AD Graph and Microsoft Graph.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

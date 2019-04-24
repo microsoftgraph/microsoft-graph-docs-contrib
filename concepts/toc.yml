@@ -307,16 +307,16 @@
           - name: Differences
             expanded: true
             items: 
-            - name: API Request differences
+            - name: API Requests
               href: migrate-azure-ad-graph-request-differences.md
-            - name: Resource type differences
-              href: migrate-azure-ad-graph-resource-differences.md
-            - name: Entity property differences
-              href: migrate-azure-ad-graph-property-differences.md
-            - name: Method differences
-              href: migrate-azure-ad-graph-method-differences.md
-            - name: Service feature differences
+            - name: Service features
               href: migrate-azure-ad-graph-feature-differences.md
+            - name: Resource types
+              href: migrate-azure-ad-graph-resource-differences.md
+            - name: Entity properties
+              href: migrate-azure-ad-graph-property-differences.md
+            - name: Methods
+              href: migrate-azure-ad-graph-method-differences.md
           - name: Review app details
             expanded: true
             items:

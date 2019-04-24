@@ -61,7 +61,7 @@ In Azure AD Graph, all entity resource types have a unique identifier (or key) c
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-acceptMappedClaims  | beta/&nbsp;-&nbsp;api/acceptMappedClaims <br> v1.0/ - _Not yet available_ | acceptMappedClaims is now part of the new api resource. |
+| acceptMappedClaims  | beta/&nbsp;-&nbsp;api/acceptMappedClaims <br> v1.0/ - _Not yet available_ | acceptMappedClaims is now part of the new api resource. |
 | addIns | beta/ - _Not yet available_ <br> v1.0/  - _Not yet available_  | |
 | applicationTemplateId | beta/ - _Not yet available_ <br> v1.0/  - _Not yet available_ | |
 | availableToOtherTenants | beta/&nbsp;-&nbsp; orgRestrictions <br> v1.0/ - _Not yet available_ | |
@@ -169,7 +169,18 @@ Currently the policy resource in Microsoft Graph (only available in preview) loo
 
 ## ServicePrincipal property differences
 
-TBD
+|Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
+|---|---|---|
+| applicationTemplateId | beta/ - _Not yet available_ <br> v1.0/  - _Not yet available_ | |
+| appOwnerTenantId | beta/&nbsp;-&nbsp; appOwnerOrganizationId <br> v1.0/ - _Not yet available_ | |
+| informationalUrls| beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
+| preferredSingleSignOnMode | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
+| preferredTokenSigningKeyEndDateTime | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
+| samlSingleSignOnSettings | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
+| servicePrincipalType | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
+| signInAudience | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
+| tokenEncryptionKeyId | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
+| serviceEndpoints | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
 
 ## TenantDetails property differences
 
@@ -185,7 +196,6 @@ The Azure AD Graph tenantDetails resource has been renamed to organization in Mi
 ## TrustedCasForPasswordlessAuth property differences
 
 The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to certificateBasedAuthConfiguration in Microsoft Graph.  There are no property differences.
-
 
 ## Next Steps
 
