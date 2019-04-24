@@ -53,7 +53,7 @@ The following example changes the name of the specified task folder to `Charity 
   "name": "update_outlooktaskfolder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/outlook/taskFolders('AAMkADIyAAAhrbPWAAA=')
+PATCH https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPWAAA=
 Content-type: application/json
 Content-length: 31
 

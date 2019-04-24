@@ -49,7 +49,8 @@ Here is a JSON representation of the resource
 
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "openType": true
 }-->
 
 ```json

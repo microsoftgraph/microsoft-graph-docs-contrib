@@ -56,7 +56,7 @@ Here is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADIyAAAhrb_QAAA=')
+DELETE https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADIyAAAhrb_QAAA=
 ```
 
 ### Response

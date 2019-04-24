@@ -93,7 +93,7 @@ The first example gets the specified message. It does not specify any header to 
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
 ##### Response 1
 Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
@@ -245,7 +245,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')?$select=subject,body,bodyPreview,uniqueBody
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
 

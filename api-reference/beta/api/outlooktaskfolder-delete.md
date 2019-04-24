@@ -48,7 +48,7 @@ Here is an example of the request.
   "name": "delete_outlooktaskfolder"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/outlook/taskFolders('AAMkADIyAAAhrbPXAAA=')
+DELETE https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPXAAA=
 ```
 ##### Response
 Here is an example of the response. 

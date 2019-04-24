@@ -65,7 +65,7 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
+GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 ```
 
 <!-- markdownlint-disable MD024 -->
@@ -131,7 +131,7 @@ This example uses the `Prefer: outlook.timezone` header to specify that the API 
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
+GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
