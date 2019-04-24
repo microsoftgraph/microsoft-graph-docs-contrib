@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/beta/subscriptions/{id}
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
