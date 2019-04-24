@@ -55,7 +55,7 @@ Here is an example of the request.
   "name": "cancel_privilegedRoleAssignmentRequests"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests('7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee')/cancel
+POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/cancel
 ```
 
 ##### Response

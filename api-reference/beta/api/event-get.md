@@ -94,7 +94,7 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
   "name": "get_event"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### Response 1
@@ -185,7 +185,7 @@ The request also uses a `$select` query parameter to return specific properties.
   "name": "get_event_in_text"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=subject,body,bodyPreview
+GET https://graph.microsoft.com/beta/me/events/AAMkAGI1AAAoZDOFAAA=/?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text"
 ```
 ##### Response 2
@@ -227,7 +227,7 @@ to return specific properties.
   "name": "get_event_multiple_locations"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
+GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
 ##### Response 3
 Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 

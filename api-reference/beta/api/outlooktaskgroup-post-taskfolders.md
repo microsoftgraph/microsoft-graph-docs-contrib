@@ -46,7 +46,7 @@ The following example creates a task folder called `Cooking` in the specified ta
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/taskgroups('AAMkADIyAAAhrbe-AAA')/taskfolders
+POST https://graph.microsoft.com/beta/me/taskgroups/AAMkADIyAAAhrbe-AAA'/taskfolders
 Content-type: application/json
 Content-length: 131
 

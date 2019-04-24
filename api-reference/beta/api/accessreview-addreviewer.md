@@ -57,7 +57,7 @@ In the request body, supply a JSON representation of the id of the user object.
   "name": "add_accessReview_reviewer"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')/reviewers
+POST https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/reviewers
 Content-Type: application/json
 
 {

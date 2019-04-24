@@ -57,7 +57,7 @@ If successful, this method returns a `204, No Content` response code. It does no
   "name": "apply_accessReview"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/accessReviews('2975E9B5-44CE-4E71-93D3-30F03B5AA992')/applyDecisions()
+POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F03B5AA992/applyDecisions()
 ```
 ##### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.

@@ -42,6 +42,7 @@ An insight representing files shared with or by a specific user. The following s
 Here is a JSON representation of the resource
 <!--{
   "blockType":"resource",
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.sharedInsight"
 }-->
 ```json

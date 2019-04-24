@@ -50,14 +50,17 @@ The following is a JSON representation of the **educationSynchronizationProfile*
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.educationSynchronizationProfile"
 }-->
 
 ```json
 {
+    "id": "String",
     "displayName": "String",
     "state": { "@odata.type": "microsoft.graph.educationSynchronizationProfileState" },
     "profileStatus": {"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"},

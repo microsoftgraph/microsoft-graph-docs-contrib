@@ -51,6 +51,7 @@ Here is a JSON representation of the resource.
     "lastActiveDateTime",
     "activeDurationSeconds"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.historyItem"
 }-->
 

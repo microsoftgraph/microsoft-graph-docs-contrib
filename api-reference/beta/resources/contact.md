@@ -31,6 +31,7 @@ Here is a JSON representation of the resource
     "photo",
     "singleValueExtendedProperties"
   ],
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.contact"
 }-->
 

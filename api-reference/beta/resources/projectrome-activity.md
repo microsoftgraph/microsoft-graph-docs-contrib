@@ -66,6 +66,7 @@ Here is a JSON representation of the resource.
     "visualElements",
     "historyItems"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.activity"
 }-->
 

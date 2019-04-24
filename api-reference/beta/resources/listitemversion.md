@@ -29,7 +29,7 @@ The following tasks are available for listItemVersion resources.
 
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.listItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
+<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.listItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 
 ```json
 {

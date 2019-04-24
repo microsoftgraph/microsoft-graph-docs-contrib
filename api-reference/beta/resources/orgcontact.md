@@ -62,6 +62,8 @@ Here is a JSON representation of the resource
     "manager",
     "memberOf"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.orgcontact"
 }-->
 

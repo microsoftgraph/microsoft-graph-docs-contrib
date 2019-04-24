@@ -24,6 +24,7 @@ Here is a JSON representation of the resource.
     "sectionGroups",
     "sections"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 

@@ -57,6 +57,8 @@ Here is a JSON representation of the resource.
     "singleValueExtendedProperties",
     "tasks"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookTaskFolder"
 }-->
 

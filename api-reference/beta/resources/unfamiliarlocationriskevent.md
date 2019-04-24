@@ -47,6 +47,8 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.locatedRiskEvent",
   "@odata.type": "microsoft.graph.unfamiliarLocationRiskEvent"
 }-->
 

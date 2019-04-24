@@ -198,6 +198,7 @@ The age group and minor consent properties are optional properties used by Azure
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that were created by the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
+|drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
 |events|[event](event.md) collection|The user's events. Default is to show Events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance. |
@@ -237,6 +238,7 @@ Here is a JSON representation of the resource
     "createdObjects",
     "directReports",
     "drive",
+    "drives",
     "events",
     "extensions",
     "joinedGroups",
@@ -322,6 +324,7 @@ Here is a JSON representation of the resource
   "createdObjects": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
+  "drives": [{"@odata.type": "microsoft.graph.drive"}],
   "insights": {"@odata.type": "microsoft.graph.officeGraphInsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],

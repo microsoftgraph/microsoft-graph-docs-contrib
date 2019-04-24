@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of the [program](../resources/
   "name": "update_program"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/programs('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213')
+PATCH https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f9129213
 Content-type: application/json
 
 {

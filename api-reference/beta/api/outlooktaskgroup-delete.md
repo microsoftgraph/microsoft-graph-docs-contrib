@@ -46,7 +46,7 @@ Here is an example of the request.
   "name": "delete_outlooktaskgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups('AAMkADIyAAAhrbe-AAA=')
+DELETE https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=
 ```
 ##### Response
 Here is an example of the response.

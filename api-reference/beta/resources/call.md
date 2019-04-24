@@ -107,6 +107,7 @@ The following is a JSON representation of the resource.
     "terminationReason",
     "toneInfo"
   ],
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```json

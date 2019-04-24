@@ -39,14 +39,18 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+ 
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookTableSort"
 }-->
 
 ```json
 {
+  "id": "string",
   "matchCase": true,
   "method": "string"
 }

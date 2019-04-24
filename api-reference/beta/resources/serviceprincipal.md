@@ -29,6 +29,7 @@ Here is a JSON representation of the resource
     "ownedObjects",
     "owners"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.servicePrincipal"
 }-->
 

@@ -65,6 +65,8 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
      "legacyId"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookTable"
 }-->
 

@@ -89,6 +89,8 @@ Here is a JSON representation of the resource.
     "singleValueExtendedProperties",
     "multiValueExtendedProperties"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.outlookTask"
 }-->
 

@@ -133,7 +133,7 @@ In the next example, the signed-in user is Dana Swope. The example shows getting
   "name": "get_mentions_in_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/('AQMkADJmMTUAAAgVZAAAA')?$expand=mentions
+GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=mentions
 ```
 ##### Response 2
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -292,7 +292,7 @@ The fourth example shows how to get the Internet message headers of a specific m
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=internetMessageHeaders
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetMessageHeaders
 ```
 
 ##### Response 4

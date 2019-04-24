@@ -49,15 +49,18 @@ Here is a JSON representation of the resource
 
 <!-- 
 { 
-    "blockType": "resource", 
+    "blockType": "resource",
+    "keyProperty":"id",
     "@odata.type": "microsoft.graph.invitation", 
     "optionalProperties": [
         "invitedUser"
-     ] 
+     ],
+    "baseType": "microsoft.graph.entity"
 } 
 -->
 ```json
 {
+  "id": "string",
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
   "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},

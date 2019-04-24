@@ -42,7 +42,7 @@ If successful, this method returns a `200, OK` response code and an array of [pr
   "name": "get_programControl_from_program"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/programs('673a7379-9c38-4f01-bd9d-4fda7260b807')/controls
+GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b807/controls
 ```
 
 ##### Response

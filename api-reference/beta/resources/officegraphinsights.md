@@ -33,6 +33,8 @@ Each insight is returned with a `resourceVisualization` and `resourceReference` 
 Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
+  "baseType":"microsoft.graph.entity",
   "optionalProperties": [
     "trending",
     "used",
@@ -43,6 +45,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
+  "id": "string",
   "trending": [ { "@odata.type": "microsoft.graph.trending" } ],
   "used": [ { "@odata.type": "microsoft.graph.used" } ],
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]

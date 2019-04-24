@@ -44,7 +44,7 @@ If successful, this method returns a `200, OK` response code and an array of [us
   "name": "get_accessReview_reviewers"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')/reviewers
+GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/reviewers
 ```
 
 ##### Response

@@ -61,7 +61,6 @@ Here is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.managedAppRegistration",
   "createdDateTime": "String (timestamp)",
   "lastSyncDateTime": "String (timestamp)",
   "applicationVersion": "String",

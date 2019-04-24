@@ -50,6 +50,8 @@ Here is a JSON representation of the resource.
     "parentNotebook",
     "parentSection"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 

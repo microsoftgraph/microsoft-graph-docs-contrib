@@ -46,6 +46,8 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookNamedItem"
 }-->
 

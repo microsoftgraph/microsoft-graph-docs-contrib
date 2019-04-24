@@ -794,3 +794,12 @@ Possible values for user account types (group membership), per Windows definitio
 |objectAddOnly|
 |multiValueAddOnly|
 |restId|
+
+### objectFlowTypes values
+
+|Member| Value|
+|:---|:-------|
+|None| 0      |
+|Add| 1       |
+|Update|2     |
+|Delete|4     |

@@ -80,11 +80,14 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookRange"
 }-->
 
 ```json
 {
+  "id": "string",
   "address": "string",
   "addressLocal": "string",
   "cellCount": 1024,

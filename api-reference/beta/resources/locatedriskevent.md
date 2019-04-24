@@ -53,6 +53,8 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+   "abstract": true,
+   "keyProperty": "id",
    "baseType":"microsoft.graph.identityRiskEvent",
   "@odata.type": "microsoft.graph.locatedRiskEvent"
 }-->
