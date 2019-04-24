@@ -24,6 +24,6 @@ A handful of Azure AD Graph methods have also changed.  If a methis is not shown
 
 ## Next Steps
 
-- Learn [app registration, permission, and consent](migrate-azure-ad-graph-app-registration.md) differences between Azure AD Graph and Microsoft Graph.
+- Learn [app registration, permission, and consent](migrate-azure-ad-graph-app-registration.md) differences between Azure AD Graph and Microsoft Graph. 
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

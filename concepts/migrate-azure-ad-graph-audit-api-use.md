@@ -26,6 +26,6 @@ To learn more, see [Permissions](/concepts/permissions-reference.md).
 
 ## Next Steps
 
-- Learn how [requests differ](migrate-azure-ad-graph-request-differences.md) between Azure AD Graph and Microsoft Graph.
+- Learn how [requests differ](migrate-azure-ad-graph-request-differences.md) between Azure AD Graph and Microsoft Graph. 
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

@@ -45,6 +45,6 @@ If a resource is not shown in this list, it is already available in the [v1.0 ve
 
 ## Next Steps
 
-- Learn about [entity property differences](migrate-azure-ad-graph-property-differences.md) between Azure AD Graph and Microsoft Graph.
+- Learn about [entity property differences](migrate-azure-ad-graph-property-differences.md) between Azure AD Graph and Microsoft Graph. 
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

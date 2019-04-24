@@ -295,7 +295,7 @@
           - name: Differences
             expanded: true
             items: 
-            - name: API Requests
+            - name: Requests
               href: migrate-azure-ad-graph-request-differences.md
             - name: Service features
               href: migrate-azure-ad-graph-feature-differences.md
