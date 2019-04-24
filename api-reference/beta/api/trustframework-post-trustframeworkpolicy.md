@@ -52,12 +52,14 @@ The following example creates a **trustFrameworkPolicy**.
 ##### Request
 
 <!-- {
-  "blockType": "request",
-  "name": "create__trustframeworkpolicy_from__trustframeworkpolicy"
+  "blockType": "ignored",
+  "truncated": true,
+  "name": "create_trustframeworkpolicy_from_trustframeworkpolicy"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/trustFramework/policies
-Content-Type:application/xml
+Content-Type: application/xml
+
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base">
     <!---PolicyContent-->
 </TrustFrameworkPolicy>
@@ -66,14 +68,15 @@ Content-Type:application/xml
 ##### Response
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trustFramework.policy"
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy"
 } -->
 ```http
 HTTP/1.1 201 Created
-Content-Type application/xml
-Location /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
+Content-Type: application/xml
+Location: /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
+
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_SocialAndLocalAccounts_Base" PublicPolicyUri="http://tenantName.onmicrosoft.com/B2C_1A_Test">
     <!---PolicyContent-->
 </TrustFrameworkPolicy>

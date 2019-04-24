@@ -57,23 +57,24 @@ The following example retrieves a specific **trustFrameworkPolicy**.
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_trustFramework"
 }-->
 ```http
-https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test/$value
+GET https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_Test/$value
 ```
 
 ##### Response
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trustFramework.policy"
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-Type application/xml
+Content-Type: application/xml
+
 <TrustFrameworkPolicy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/online/cpim/schemas/2013/06" PolicySchemaVersion="0.3.0.0" TenantId="tenantName.onmicrosoft.com" PolicyId="B2C_1A_Test" PublicPolicyUri="http://tenantName.onmicrosoft.com/B2C_1A_Test">
 	.....
 	....

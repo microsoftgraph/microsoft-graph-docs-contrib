@@ -187,7 +187,7 @@ Content-type: application/json
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
+    "contentBytes": "base64,UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
 
