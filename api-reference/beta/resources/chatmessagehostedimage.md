@@ -14,7 +14,6 @@ Hosted images are the images that appear in the message's body.content in an <im
 
 Not all images in a message are hosted images.
 Microsoft Teams also supports public images (where the img src is a public website). 
-Microsoft Teams does not currently support [Data URLs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) but may add this in the future.
 
 ## Methods
 

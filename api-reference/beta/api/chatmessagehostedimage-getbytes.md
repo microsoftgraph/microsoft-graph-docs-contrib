@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Get channel message
+# Get bytes of a hosted image
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -73,7 +73,6 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: image/jpeg
 Content-length: 201
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

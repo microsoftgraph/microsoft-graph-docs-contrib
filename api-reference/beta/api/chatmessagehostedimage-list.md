@@ -12,12 +12,6 @@ ms.prod: "microsoft-teams"
 
 List all [hosted images](../resources/chatmessagehostedimage.md) in a [message](../resources/chatmessage.md).
 
-Hosted images are the images that appear in the message's body.content in an <img> tag with a src attribute that starts with `https://graph.microsoft.com`.
-
-Not all images in a message are hosted images.
-Microsoft Teams also supports public images (where the img src is a public website). 
-Microsoft Teams does not currently support [Data URLs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URIs) but may add this in the future.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,7 +59,7 @@ Here is an example of the request.
   "name": "get_channel_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/hostedImages
 ```
 
 ##### Response
