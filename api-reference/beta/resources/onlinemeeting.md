@@ -26,14 +26,14 @@ Captures information about the meeting, including the join URL, the attendees li
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | Represents phone access information for an onlineMeeting. |
 | canceledDateTime          | DateTime                                               | The time when the meeting was canceled. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | The chat associated with this meeting. |
-| creationDateTime          | DateTime                                               | The time when the meeting was created. Readonly.
+| creationDateTime          | DateTime                                               | The time when the meeting was created. Read-only.
 | endDateTime               | DateTime                                               | End time of the meeting. |
-| entryExitAnnouncement     | Boolean                                                | The attendance announcements status for the online meeting. When attendance announcements are enabled, the online meeting will announce the names of the participantswho join the meeting through audio. |
+| entryExitAnnouncement     | Boolean                                                | The attendance announcements status for the online meeting. When attendance announcements are enabled, the online meeting will announce the names of the participants who join the meeting through audio. |
 | expirationDateTime        | DateTime                                               | The absolute Coordinated Universal Time (UTC) date and time after which the online meeting can be deleted. The day and time must be between one year before, and ten years after, the current date and time on the server. |
 | id                        | String                                                 | The ID associated with the online meeting. Used in a GET HTTP request as the ID. Read-only. Server generated. |
 | isCancelled               | Boolean                                                | Whether the meeting has been canceled. |
 | joinUrl                   | String                                                 | The URL that is used when the online meeting is joined from the web. |
-| meetingType               | String                                                 | Possible values are: `meetNow`, `scheduled`, `recurring`, `broadcast` (Note: [create online Meeting](application-post-onlinemeetings.md) only supports 'meetNow') |
+| meetingType               | String                                                 | Possible values are: `meetNow`, `scheduled`, `recurring`, `broadcast` (Note: [create onlineMeeting](application-post-onlinemeetings.md) only supports `meetNow`). |
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | startDateTime             | DateTime                                               | Start time of the meeting. |
 | subject                   | String                                                 | The subject of the online meeting. |
