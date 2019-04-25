@@ -82,7 +82,7 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /resources/onlinemeeting.md:\r\n      FileNotFound: '[application-post-onlinemeetings.md](create onlineMeeting)'. Did you mean: applicationsigninsummary.md (score: 16)"
+    "Error: /resources/onlinemeeting.md:\r\n      FileNotFound: '[../api/application-post-onlinemeetings.md](create onlineMeeting)'. Did you mean: applicationsigninsummary.md (score: 16)"
    ]
 }
 -->
