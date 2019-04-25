@@ -8,10 +8,6 @@ ms.prod: "microsoft-identity-platform"
 
 # Step 3: Deploy, test, and extend
 
-// TODO: Rewrite to include the step 3 content
-
-
-
 1.  **Test throughly**
 
     Once you've updated your app, test it thoroughly to verify that it works as it did and that you haven't introduced any regressions.  
@@ -28,35 +24,25 @@ ms.prod: "microsoft-identity-platform"
 
     Now you've made the switch to Microsoft Graph, it's never been easier for you to unlock many more datasets and features that are now at your fingertips. New datasets and capabilities are introduced regularly.  
 
-    - The What's New (thingie) provides a high-level introduction to major changes
-
-    - The (foo) blog provides more detailed introductions.
-
-    - The Changelog summarizes specific document updates.
-
-    Following these updates to help you identify new ways to add value to your apps and to improve the experiences of your users.  
+    - Take a look at [what you can do with Microsoft Graph](/graph/examples)
+    - Explore the [Microsoft Graph blog](/graph/blogs) for the latest news about Microsoft Graph and some great learning series.
+    - The [Changelog](/greaph/changelog) summarizes service and document updates. Following these updates will help you track new APIs introduced to /beta (preview) and those promoted to v1.0 (GA).  These new APIs can provide new ways for you to add more value and new experiences to your apps.  
 
 ## Help and additional resources
 
 If you run into problems or need help during the migration process, you can:
 
-- Post questions to StackOverflow...
-
-- Review ...
-
-(Additional things we might include...)
-
-- Learn about [Link to next article in the series](#).
-- Follow Microsoft Graph [blogs](https://developer.microsoft.com/graph/blogs) for updates and review the [documentation](https://developer.microsoft.com/graph).
-- Manage Azure AD resources, such as [users](https://docs.microsoft.com/graph/azuread-users-concept-overview), [groups](https://docs.microsoft.com/graph/office365-groups-concept-overview), and [identity access](https://docs.microsoft.com/graph/azuread-identity-access-management-concept-overview).
-- Use [quick starts and samples](https://developer.microsoft.com/graph/get-started) to come up to speed quickly.
-- Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications supporting multiple operating systems and languages.
-- Experiment using the [Graph Explorer](https://aka.ms/ge).
+- Review the [checklist](migrate-azure-ad-graph-overview.md) again
+- Post questions to [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
+- Review Microsoft Graph samples to contrast and compare with your application code:
+    | App type | Sample links |
+    |:---------|:-------------|
+    | Uses Azure AD Graph REST API | [Quick starts and samples](/graph/get-started) and choose your platform of choice and run through the quick start or search for an appropriate sample. |
+    | Uses Azure AD Graph .NET client library | [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) <br> [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)|
 
 ## Next Steps
 
-- Learn [how to migrate](migrate-azure-ad-graph-overview.md) Azure AD Graph apps to Microsoft Graph.
+- Use [quick starts and samples](/graph/get-started) to come up to speed quickly.
+- Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications 
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
-
-

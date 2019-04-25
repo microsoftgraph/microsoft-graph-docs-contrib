@@ -50,7 +50,7 @@ Here:
 
 While not all requests will be as easy to convert, many will.  To learn more, see [resource type differences](migrate-azure-ad-graph-resource-differences.md). 
 
-> **Note**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries.md) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
+> **NOTE**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries.md) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
 
 ## Next Steps
 
