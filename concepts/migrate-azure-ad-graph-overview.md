@@ -25,7 +25,7 @@ In addition, many new Azure AD datasets and features have been introduced into M
   - [Risky users](/graph/api/resources/riskyuser?view=graph-rest-beta)
 - [Client libraries and samples](/graph/) available on many more platforms and languages
 
-Microsoft Graph offers access to many more services than just Azure Active Directory too. It's the [API gateway to Microsoft 365 services too](/graph/).
+Microsoft Graph offers access to many more services than just Azure Active Directory. It's the [API gateway to Microsoft 365 services too](/graph/).
 
 These articles help you to move your app from Azure AD Graph to Microsoft Graph.  
 
