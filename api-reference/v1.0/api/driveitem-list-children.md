@@ -62,7 +62,7 @@ GET /me/drive/root/children
 
 To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
 
-<!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "list-children-files", "scopes": "files.read" } -->
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/children
