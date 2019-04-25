@@ -28,7 +28,7 @@ SDKs are currently available for numerous languages and enable building solution
 
 ## Useful Links
 
-The SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design) provides more details on the features and capabilities of the SDK. Request or vote on additional features at the [Microsoft Graph UserVoice](https://microsoftgraph.uservoice.com) site.
+The SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design) provides more details on the features and capabilities of the SDK. Request or vote on additional features at the [Microsoft Graph UserVoice](https://microsoftgraph.uservoice.com) site. The [Microsoft Graph ](https://github.com/microsoftgraph) GitHub organization contains all of the SDKs and samples.
 
 ## Developer Tenant
 
