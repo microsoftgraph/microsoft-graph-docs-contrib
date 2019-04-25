@@ -53,7 +53,7 @@ The following is an example of the request.
   "name": "get_applicationsigninsummary"
 }-->
 ```http
-https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
+GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(period='D7')
 ```
 ### Response
 The following is an example of the response. 
