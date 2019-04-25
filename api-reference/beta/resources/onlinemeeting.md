@@ -33,7 +33,7 @@ Captures information about the meeting, including the join URL, the attendees li
 | id                        | String                                                 | The ID associated with the online meeting. Used in a GET HTTP request as the ID. Read-only. Server generated. |
 | isCancelled               | Boolean                                                | Whether the meeting has been canceled. |
 | joinUrl                   | String                                                 | The URL that is used when the online meeting is joined from the web. |
-| meetingType               | String                                                 | Possible values are: `meetNow`, `scheduled`, `recurring`, `broadcast` (Note: [create onlineMeeting](application-post-onlinemeetings.md) only supports `meetNow`). |
+| meetingType               | String                                                 | Possible values are: `meetNow`, `scheduled`, `recurring`, `broadcast` (Note: [create onlineMeeting](../api/application-post-onlinemeetings.md) only supports `meetNow`). |
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | startDateTime             | DateTime                                               | Start time of the meeting. |
 | subject                   | String                                                 | The subject of the online meeting. |
@@ -71,15 +71,3 @@ The following is a JSON representation of the resource.
   "subject": "String"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "onlineMeeting resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}
--->
