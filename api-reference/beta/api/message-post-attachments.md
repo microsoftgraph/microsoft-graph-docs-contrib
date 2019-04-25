@@ -82,7 +82,7 @@ Content-length: 142
 {
   "@odata.type": "#microsoft.graph.fileAttachment",
   "name": "smile",
-  "contentBytes": "base64R0lGODdhEAYEAA7"
+  "contentBytes": "R0lGODdhEAYEAA7"
 }
 ```
 
@@ -108,7 +108,7 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "base64R0lGODdhEAYEAA7"
+    "contentBytes": "R0lGODdhEAYEAA7"
 }
 ```
 
