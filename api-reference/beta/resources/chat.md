@@ -1,6 +1,6 @@
 ---
 title: "chat resource type"
-description: "A chat is a collection of chatMessages between 1 or more participants."
+description: "A chat is a collection of chatMessages between one or more participants."
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A chat is a collection of [chatMessages](chatmessage.md) between 1 or more participants. 
+A chat is a collection of [chatMessages](chatmessage.md) between one or more participants. 
 Participants can be users or apps.
 
 ## Methods
@@ -38,7 +38,7 @@ Participants can be users or apps.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -56,7 +56,7 @@ Here is a JSON representation of the resource
 
 ```
 
-## See Also
+## See also
 
 - [channel](channel.md)
 - [chatMessage](chatmessage.md)
