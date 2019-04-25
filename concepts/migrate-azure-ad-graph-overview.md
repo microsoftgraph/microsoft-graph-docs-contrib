@@ -8,24 +8,24 @@ ms.prod: "microsoft-identity-platform"
 
 # Migrate Azure AD Graph apps to Microsoft Graph
 
-Over time, Microsoft Graph will fully replace Azure Active Directory (Azure AD) Graph. For many production apps, Microsoft Graph can already fully support their Azure AD scenarios. We strongly encourage developers to start moving their Azure AD Graph apps to Microsoft Graph now.
+Microsoft Graph will fully replace Azure Active Directory (Azure AD) Graph, in the coming months. For many production apps, Microsoft Graph can already fully support their Azure AD scenarios. We strongly encourage developers to start moving their Azure AD Graph apps to Microsoft Graph now.
 
-In addition, many new Azure AD datasets and features have been introduced into Microsoft Graph that are not available in Azure AD Graph, including:
+In addition, many new Azure AD datasets and features have been introduced into Microsoft Graph that are not available in Azure AD Graph, as we continue to innovate in Microsoft Graph. By switching to Microsoft Graph, your applications can take advantage of these new APIs, all through one single endpoint, including:
 
-- Office 365 group management
-- External user invitations
-- Webhook notifications on users and groups
-- The ability to restore users and Office 365 groups after they've been deleted
-- Governance features such as:
-  - Privileged identity management (PIM) to elevate users in to privileged roles only when needed for limited time period
-  - Access reviews for one-time or recurring access reviews for attestation of user's access rights
-  - Terms-of-use to provide a simple method that organizations can use to present information like disclaimers for legal or compliance requirements
+- [Office 365 group management](/graph/office365-groups-concept-overview)
+- [External user invitations](/graph/api/resources/invitation?view=graph-rest-1.0)
+- The ability to [restore users and Office 365 groups](/graph/api/resources/directory?view=graph-rest-1.0) after they've been deleted
+- [Webhook notifications on users and groups](/graph/webhooks?toc=./ref/toc.json&view=graph-rest-1.0)
+- Identity governance features such as:
+  - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) to elevate users in to privileged roles only when needed for limited time period
+  - [Access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta) for one-time or recurring access reviews for attestation of user's access rights
+  - [Terms-of-use](/graph/api/resources/accessreviews-root?view=graph-rest-beta) to provide a simple method that organizations can use to present information like disclaimers for legal or compliance requirements
 - Security features such as:
-  - Identity risk events
-  - Risky users
-- Client libraries available on many more platforms and languages
+  - [Identity risk events](/graph/api/resources/identityriskevent?view=graph-rest-beta)
+  - [Risky users](/graph/api/resources/riskyuser?view=graph-rest-beta)
+- [Client libraries and samples](/graph/) available on many more platforms and languages
 
-Microsoft Graph offers access to many more services than just Azure Active Directory. It's the gateway to Microsoft 365 services too.
+Microsoft Graph offers access to many more services than just Azure Active Directory too. It's the [API gateway to Microsoft 365 services too](/graph/).
 
 These articles help you to move your app from Azure AD Graph to Microsoft Graph.  
 
