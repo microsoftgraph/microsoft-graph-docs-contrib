@@ -31,15 +31,6 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessRevi
 |[Reset accessReview decisions](../api/accessreview-reset.md) |		None.	|	Reset the decisions in an in-progress accessReview.|
 |[Apply accessReview decisions](../api/accessreview-apply.md) |		None.	|	Apply the decisions from a completed accessReview.|
 
-## Permissions
-
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
-
-
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -52,7 +43,7 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the `accessRevi
 | `businessFlowTemplateId`  |`String`                                                        | The business flow template identifier. Required on create. |
 | `reviewerType`            |`String`                                                        | The relationship type of reviewer to the target object, one of `self`, `delegated` or `entityOwners`. Required on create. | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | The user who created this review. |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
+| `reviewedEntity`          |[identity](identity.md)                                      | The object for which the access reviews is reviewing the access rights assignments. This can be the group for the review of memberships of users in a group, or the app for a review of assignments of users to an application. Required on create. | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | The settings of an accessReview, see type definition below. |
 
 

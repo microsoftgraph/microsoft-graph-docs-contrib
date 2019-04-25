@@ -8864,6 +8864,17 @@
           href: api/channel-post-chatmessage.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
+      - name: Chat
+        href: resources/chat.md
+        items:
+        - name: List chats
+          href: api/chat-list.md
+        - name: Get chat
+          href: api/chat-get.md
+        - name: List messages in a chat
+          href: api/chat-list-messages.md
+        - name: Get message in chat
+          href: api/chat-get-message.md
       - name: Apps
         href: resources/teamsapp.md
         items:
