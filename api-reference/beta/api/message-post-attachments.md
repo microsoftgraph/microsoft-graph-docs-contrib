@@ -108,7 +108,7 @@ Content-length: 202
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "R0lGODdhEAYEAA7"
+    "contentBytes": "a0b1c76de9f7="
 }
 ```
 
