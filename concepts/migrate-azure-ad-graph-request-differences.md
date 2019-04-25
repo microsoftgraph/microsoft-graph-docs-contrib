@@ -50,16 +50,10 @@ Here:
 
 While not all requests will be as easy to convert, many will.  To learn more, see [resource type differences](migrate-azure-ad-graph-resource-differences.md). 
 
-<<<<<<< HEAD
-> **Note**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
+> **Note**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries.md) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
 
 ## Next Steps
 
 - Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) between Azure AD Graph and Microsoft Graph. 
-=======
-## Next Steps
-
-- Learn about [resource type differences](migrate-azure-ad-graph-resource-differences.md) between Azure AD Graph and Microsoft Graph.
->>>>>>> cfc7dba6ed9e00a8932068c1198e1edba62c13af
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
