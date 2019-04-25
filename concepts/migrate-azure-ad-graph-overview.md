@@ -47,7 +47,7 @@ Use the following checklist to plan your migration:
 
     You can, in many cases, simply change the endpoint service name and version in your code, and everything should continue to work.
 
-    Make an inventory of the endpoints called by your app, the permissions they require, and any changes.  
+    [Audit the APIs](migrate-azure-ad-graph-audit-api-use.md) used by your app, the permissions they require, and compare to the list of known differences.  
 
     Specifically, look for differences between:
 

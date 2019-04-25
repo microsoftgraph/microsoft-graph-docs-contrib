@@ -27,7 +27,7 @@ In Azure AD Graph, all entity resource types have a unique identifier (or key) c
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br>property|Comments|
 |---|---|---|
 | appRoleAssignments | beta/ - appRoleAssignments <br> v1.0 - _Not yet available_ | |
-| creationType | beta/ - identities <br> v1.0 - identities | Planned only for creationType values of `LocalAccount`. |
+| creationType | beta/ - identities - _Not yet available_ <br> v1.0 - identities - _Not yet available_| Planned only for creationType values of `LocalAccount`, and not currently available for beta or v1.0. |
 | deletedTimestamp| beta/ - deletedDateTime <br> v1.0/ - deletedDateTime | |
 | dirSyncEnabled | beta/&nbsp;-&nbsp;onPremisesSyncEnabled <br> v1.0/ - onPremisesSyncEnabled | |
 | facsimileTelephoneNumber | beta/ - faxNumber <br> v1.0/ - faxNumber | |
@@ -38,10 +38,10 @@ In Azure AD Graph, all entity resource types have a unique identifier (or key) c
 | oAuth2PermissionGrants | beta/ - oAuth2PermissionGrants <br> v1.0/ - _Not yet available_ ||
 | provisioningErrors | beta/&nbsp;-&nbsp;onPremisesProvisioningErrors <br> v1.0/ - onPremisesProvisioningErrors | |
 | refreshTokensValidFromDateTime | beta/&nbsp;-&nbsp;signinSessionsValidFromDateTime<br>v1.0/&nbsp;-&nbsp;signinSessionsValidFromDateTime | The beta/ API currently supports refreshTokensFromDateTime; however, this will be updated shortly and then added to v1.0. |
-| signinNames | beta/ - identities <br> v1.0/ - identities | |
+| signinNames | beta/ - identities - _Not yet available_ <br> v1.0/ - identities - _Not yet available_ | Planned, but not currently available for beta or v1.0. |
 | telephoneNumber | beta/ - businessPhones <br> v1.0/ - businessPhones | |
 | thumbnailPhoto | beta/ - photo, photos <br> v1.0/ - photo, photos | The Azure AD thumbnail photo is no longer available through Microsoft Graph.  Apps should use the photo or photos API.  (The latter allows apps to specify size.) |
-| userIdentities | beta/ - identities <br> v1.0/ - identities | Planned, but not current available.|
+| userIdentities | beta/ - identities - _Not yet available_ <br> v1.0/ - identities - _Not yet available_ | Planned, but not currently available for beta or v1.0.|
 | userState | beta/ - externalUserState <br> v1.0/ - externalUserState | |
 | userStateChangedOn | beta/&nbsp;-&nbsp;externalUserStateChangeDateTime<br>v1.0/&nbsp;-&nbsp;externalUserStateChangeDateTime | |
 
