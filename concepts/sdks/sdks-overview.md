@@ -5,7 +5,7 @@ description: "Descriptions of the SDKs that are available, the platforms they su
 
 # Microsoft Graph SDKs Overview
 
-The Microsoft Graph SDKs are designed to simplify building high quality, efficient and resilient applications that access Microsoft Graph. There are two components to the SDKs, a service library and a core library.  
+The Microsoft Graph SDKs are designed to simplify building high quality, efficient and resilient applications that access Microsoft Graph. There are two components to the SDKs, a service library and a core library.
 
 The service library contains models and request builders that are generated from Microsoft Graph metadata to provide a rich, strongly typed and discoverable experience when working with the many datasets available on Microsoft Graph.
 
@@ -25,11 +25,11 @@ SDKs are currently available for numerous languages and enable building solution
 - [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
 - [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
- 
+
 ## Useful Links
 
 The SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design) provides more details on the features and capabilities of the SDK. Request or vote on additional features at the [Microsoft Graph UserVoice](https://microsoftgraph.uservoice.com) site.
 
 ## Developer Tenant
 
-When building applications with Microsoft Graph we recommend you create a developer tenant by signing up for the [Office Developer Program](https://developer.microsoft.com/en-us/office/dev-program).
+When building applications with Microsoft Graph we recommend you create a developer tenant by signing up for the [Office Developer Program](http://aka.ms/OfficeDevProgram).
