@@ -129,7 +129,7 @@ Azure AD Graph used a system called multi-part MIME messages to manage batching.
 
 ## Next Steps
 
-- Learn [app registration, permission, and consent](migrate-azure-ad-graph-app-registration.md) differences between Azure AD Graph and Microsoft Graph.
+- Learn about [resource differences](migrate-azure-ad-graph-resource-differences.md) between Azure AD Graph and Microsoft Graph.
 - Explore [add custom data](/graph/extensibility-overview) for information about open and schema extensions.
 - Explore [delta queries](/graph/delta-query-overview) to learn about Microsoft Graph's version of differential query.
 - Explore [JSON batching](json-batching.md) to understand how batching works in Microsoft Graph.
