@@ -1,6 +1,6 @@
 ---
 title: "Working with audit logs in Microsoft Graph"
-description: "Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and leverage Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs."
+description: "Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs."
 localization_priority: Priority
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Azure AD audit log API overview
 
-Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and leverage Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs.
+Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs.
 
 ## What are Azure AD activity logs?
 
@@ -27,7 +27,7 @@ The audit logs activity report provides you with access to the history of every 
 
 - How many passwords resets were made within the directory?
 
-### Sign in logs
+### Sign-in logs
 
 The sign-ins activity report helps you determine who performed the tasks reported by audit log reports. The sign-ins activity report helps you answer questions like:
 

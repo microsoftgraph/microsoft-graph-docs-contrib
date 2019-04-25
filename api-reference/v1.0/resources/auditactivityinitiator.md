@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # auditActivityInitiator resource type
 
-Identity the resource object that initiates the activity. The initiator can be a user, an app or a system (which is considered as an app)
+Identity the resource object that initiates the activity. The initiator can be a user, an app, or a system (which is considered an app).
 
 ## Properties
 
