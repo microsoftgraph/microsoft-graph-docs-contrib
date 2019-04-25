@@ -169,6 +169,7 @@ Currently the policy resource in Microsoft Graph (only available in preview) loo
 
 ## ServicePrincipal property differences
 
+<<<<<<< HEAD
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
 | applicationTemplateId | beta/ - _Not yet available_ <br> v1.0/  - _Not yet available_ | |
@@ -181,6 +182,9 @@ Currently the policy resource in Microsoft Graph (only available in preview) loo
 | signInAudience | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
 | tokenEncryptionKeyId | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
 | serviceEndpoints | beta/&nbsp;-&nbsp;_Not yet available_ <br> v1.0/ - _Not yet available_ | |
+=======
+TBD
+>>>>>>> cfc7dba6ed9e00a8932068c1198e1edba62c13af
 
 ## TenantDetails property differences
 
@@ -197,6 +201,10 @@ The Azure AD Graph tenantDetails resource has been renamed to organization in Mi
 
 The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to certificateBasedAuthConfiguration in Microsoft Graph.  There are no property differences.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cfc7dba6ed9e00a8932068c1198e1edba62c13af
 ## Next Steps
 
 - Learn about [method differences](migrate-azure-ad-graph-method-differences.md) between Azure AD Graph and Microsoft Graph.

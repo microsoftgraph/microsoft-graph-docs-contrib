@@ -20,7 +20,11 @@ Here, we'll look at some general steps to migrate over to the Microsoft Graph .N
 - use query builders,
 - handle collections and paging.  
 
+<<<<<<< HEAD
 ## Overview of the migration steps
+=======
+## Overview of the migration steps (using ADAL)
+>>>>>>> cfc7dba6ed9e00a8932068c1198e1edba62c13af
 
 The following steps assume your app is already using ADAL to acquire access tokens to call Azure AD Graph, and that for now you will continue to use ADAL. Switching to MSAL can be done as a separate step described in [migrating to MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).
 
@@ -159,4 +163,3 @@ More specifically, you should look at the [C# console snippets app](https://gith
 - Learn how to [deploy, test, and extend](/graph/migrate-azure-ad-graph-deploy-test-extend) apps you've migrated to Microsoft Graph.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
-
