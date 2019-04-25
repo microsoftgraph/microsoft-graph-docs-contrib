@@ -80,6 +80,9 @@ The following is a JSON representation of the resource.
   "description": "onlineMeeting resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""  
+  "tocPath": "",
+  "suppressions": [
+    "Error: /resources/onlinemeeting.md:\r\n      FileNotFound: '[application-post-onlinemeetings.md](create onlineMeeting)'. Did you mean: applicationsigninsummary.md (score: 16)"
+   ]
 }
 -->
