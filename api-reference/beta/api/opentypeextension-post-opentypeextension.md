@@ -126,7 +126,7 @@ The first example creates a message and an extension in the same call. The reque
 - The **subject**, **body**, and **toRecipients** properties typical of a new message.
 - And for the extension:
 
-  - The type `Microsoft.Graph.OpenTypeExtension`.
+  - The type `microsoft.graph.openTypeExtension`.
   - The extension name "Com.Contoso.Referral".
   - Additional data to be stored as three custom properties in the JSON payload: `companyName`, `expirationDate`, and `dealValue`.
 
@@ -231,7 +231,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+      "@odata.type": "#microsoft.graph.openTypeExtension",
       "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
 ('AAMkAGEbs88AAB84uLuAAA=')/extensions('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
       "id": "microsoft.graph.openTypeExtension.Com.Contoso.Referral",
@@ -251,7 +251,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 The second example creates an extension in the specified message. The request body includes the following for the
 extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.Referral".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
 
@@ -291,7 +291,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('microsoft.graph.openTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -309,7 +309,7 @@ Content-type: application/json
 The third example creates an extension in the specified group event. The request body includes the following for the
 extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.Deal".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `dealValue`, and `expirationDate`.
 
@@ -362,7 +362,7 @@ The fourth example creates an extension in a new group post, using the same **re
 creates a new post, and a new extension embedded in the post. The request body includes a **post** property, which in turn contains
 the **body** of the new post, and the following data for the new extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.HR".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.
 
@@ -421,7 +421,7 @@ creates a new conversation, thread and post, and a new extension embedded in the
 **Topic** and **Threads** properties, and a child **post** object for the new conversation. The **post** object
 in turn contains the **body** of the new post, and the following data for the extension:
 
-- The type `Microsoft.Graph.OpenTypeExtension`.
+- The type `microsoft.graph.openTypeExtension`.
 - The extension name "Com.Contoso.HR".
 - Additional data to be stored as 3 custom properties in the JSON payload: `companyName`, `expirationDate`, and the array of strings `topPicks`.
 
