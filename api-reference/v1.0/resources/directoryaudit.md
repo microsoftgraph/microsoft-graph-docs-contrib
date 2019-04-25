@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # directoryAudit resource type
 
-This resource represents the directory Audit items and its collection
+This resource represents the directory audit items and its collection.
 
 ## Methods
 

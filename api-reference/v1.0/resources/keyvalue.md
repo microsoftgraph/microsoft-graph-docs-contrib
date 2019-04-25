@@ -1,10 +1,12 @@
 ---
 title: "keyValue resource type"
-description: "Here is a JSON representation of the resource."
+description: "Standard key-value pair resource type."
 localization_priority: Normal
 ---
 
 # keyValue resource type
+
+Represents a key-value pair.
 
 ## Properties
 

@@ -8,7 +8,7 @@ ms.prod: "azure-ad"
 
 # modifiedProperty resource type
 
-Indicates all the modified properties with old value and new value for any resource in Azure AD that's changed
+Indicates all the properties on an Azure AD resource that have been modified, including the old and new values.
 
 
 

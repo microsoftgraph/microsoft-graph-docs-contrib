@@ -1,5 +1,5 @@
 ---
-title: "conditionalAccessPolicy resource type"
+title: "appliedConditionalAccessPolicy resource type"
 description: "Indicates the attributes related a conditional access policy or policies that's triggered by the corresponding sign-in activity"
 localization_priority: Normal
 author: "dhanyahk"

@@ -11,12 +11,13 @@ ms.prod: "microsoft-identity-platform"
 In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
 
 ## Properties
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| `displayName` | `String` | The identity's display name. Note that this may not always be available or up-to-date.    |
-| `id`          | `String` | Unique identifier for the identity.  |
-| `ipAddress`| `String`| Indicates the client IP address used by user performing the activity (audit log only).|
-| `userPrincipalName`|`String` | The userPrincipalName attribute of the user. |
+| displayName | String | The identity's display name. Note that this may not always be available or up-to-date.    |
+| id          | String | Unique identifier for the identity.  |
+| ipAddress   | String| Indicates the client IP address used by user performing the activity (audit log only).|
+| userPrincipalName | String  | The userPrincipalName attribute of the user. |
 
 ## Remarks
 
