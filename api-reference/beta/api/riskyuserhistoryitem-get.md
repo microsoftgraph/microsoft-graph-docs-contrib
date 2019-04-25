@@ -1,15 +1,15 @@
 ---
-title: "List history of riskyUser"
-description: "Retrieve the risk history"
+title: "Get history item of riskyUser"
+description: "Retrieve the history of a **riskyUser** object."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 ---
-# List riskyUser History
+# Get riskyUser History
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the risk history of a **riskyUser** object.
+Retrieve the history of a **riskyUser** object.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-LIST /riskyUsers/{userid}/history
+GET /riskyUsers/{userid}/history
 ```
 
 
@@ -40,18 +40,17 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [riskyUsersHistoryItem](../resources/riskyuserhistoryitem.md) objects in the response body.
-
+If successful, this method returns a `200 OK` response code and a collection of  [riskyUserHistoryItem](../resources/riskyUserHistoryItem.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_userriskhitsory",
+  "name": "get_riskyuser",
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/f61fad1b-cf1b-4ce5-ba25-957ac919ddeb/history
+GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3/history
 ```
 ##### Response
 Here is an example of the response.
@@ -66,31 +65,24 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "f61fad1b-cf1b-4ce5-ba25-957ac919ddeb636699887174968737",
-  "isDeleted": false,
-  "isGuest": false,
+  "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
+  "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
+  "isGuest": true,
+  "isProcessing": true,
+  "isDeleted": true,
+  "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
   "riskState": "atRisk"
-  "riskDetail": "none",
-  "riskLastUpdatedDateTime": "2018-08-16T03:58:37.4968737Z",
   "userDisplayName": "Helen Poulsen",
-  "userPrincipalName": "helen@contoso.com",
-  "userId": "f61fad1b-cf1b-4ce5-ba25-957ac919ddeb",
-  "initiatedBy": null,
-  "activity": {
-        "eventTypes": [
-          "leakedCredentials"
-        ],
-        "detail": null
-    }
+  "userPrincipalName": "helen@contoso.com"
 }
-
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get user risk history",
+  "description": "Get riskyUsers",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,7 +1,7 @@
 ---
 title: "riskyUserHistoryItem resource type"
-description: ""
-author: ""
+description: "Represents the risk history of Azure AD users"
+author: "cloudhandler"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
@@ -9,6 +9,15 @@ ms.prod: "microsoft-identity-platform"
 # riskyUserHistoryItem resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Represents the risk history of Azure AD users as determined by Azure AD Identity Protection. 
+
+## Methods
+
+| Method   | Return Type|Description|
+|:---------------|:--------|:----------|
+|[Get riskyUser History](../api/riskyuserhistoryitem-get.md) | [riskyUser](riskyUser.md) collection|List the risk history of an Azure AD user.|
+|[List riskyUser History](../api/riskyuser-list-history.md) | [riskyUser](riskyUser.md)|Get the risk history of an Azure AD user.|
+
 
 ## Properties
 

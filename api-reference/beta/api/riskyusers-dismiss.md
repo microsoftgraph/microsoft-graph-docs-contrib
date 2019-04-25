@@ -7,7 +7,7 @@ ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 ---
 
-# Dismiss riskyUsers
+# Dismiss riskyUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

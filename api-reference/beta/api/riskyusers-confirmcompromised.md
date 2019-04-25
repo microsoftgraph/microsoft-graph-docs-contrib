@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 ---
-# Confirm riskyUsers compromised
+# Confirm riskyUser compromised
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
