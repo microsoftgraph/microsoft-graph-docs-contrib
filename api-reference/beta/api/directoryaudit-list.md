@@ -80,6 +80,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_directoryaudits-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_directoryaudits-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 ```json
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryAudits
@@ -133,5 +143,9 @@ Content-length: 271
   "description": "List directoryAudits",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryaudit-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

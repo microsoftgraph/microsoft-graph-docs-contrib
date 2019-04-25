@@ -60,7 +60,10 @@ POST /me/drive/items/{item-id}/follow
   "keywords": "follow item",
   "section": "documentation",
   "tocPath": "Items/Follow",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-follow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-follow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
 
