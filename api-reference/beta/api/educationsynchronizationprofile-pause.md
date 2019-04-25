@@ -57,6 +57,9 @@ There is no response body.
   "name": "post_synchronizationProfile_pause"
 }-->
 ```
+HTTP/1.1 200 OK
+```
+
 #### SDK sample code
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_synchronizationProfile_pause-Cs-snippets.md)]
@@ -67,8 +70,7 @@ There is no response body.
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-HTTP/1.1 200 OK
-```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
