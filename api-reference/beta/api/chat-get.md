@@ -34,7 +34,7 @@ GET /chats/{id}
 
 ## Optional query parameters
 
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+This operation does not currently support [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to customize the response.
 
 ## Request headers
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/users/{id}/chats/{id}
 ##### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here are shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here is shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
