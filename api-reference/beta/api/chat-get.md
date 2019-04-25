@@ -34,7 +34,7 @@ GET /chats/{id}
 
 ## Optional query parameters
 
-This operation does not currently support [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to customize the response.
+This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
