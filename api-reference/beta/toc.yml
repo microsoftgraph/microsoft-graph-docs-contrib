@@ -8895,11 +8895,11 @@
         href: resources/chatmessage.md
         items:
         - name: List hosted images
-          href: api/channel-list-messages.md
+          href: api/chatmessagehostedimage-list.md
         - name: Get hosted image
-          href: api/channel-get-message.md
+          href: api/chatmessagehostedimage-get.md
         - name: Get hosted image bytes
-          href: api/channel-get-message.md
+          href: api/chatmessagehostedimage-getbytes.md
       - name: Calendar
         href: resources/event.md
         items:

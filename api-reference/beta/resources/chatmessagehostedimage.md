@@ -19,9 +19,9 @@ Microsoft Teams also supports public images (where the img src is a public websi
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List hosted images](../api/channel-list-messages.md) | [chatmessage](chatmessage.md) collection | Get the list of all root messages in a channel.|
-|[Get hosted image](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Get a single root message from a channel.|
-|[Get hosted image bytes](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Get a single root message from a channel.|
+|[List hosted images](../api/chatmessagehostedimage-list.md) | [chatMessageHostedImage](chatmessagehostedimage.md) collection | Get the list of all hosted images in a chatMessage.|
+|[Get hosted image](../api/chatmessagehostedimage-get.md) | [chatMessageHostedImage](chatmessagehostedimage.md) | Get a single hosted image.|
+|[Get hosted image bytes](../api/chatmessagehostedimage-getbytes.md) | Content-type: image/jpeg | Get the raw bytes of the hosted image.|
 
 ## Properties
 
