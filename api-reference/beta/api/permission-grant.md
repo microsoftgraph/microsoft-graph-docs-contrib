@@ -173,7 +173,7 @@ Content-type: application/json
 
 ## Remarks
 
-- For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration).
+- For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration-values).
 
 ## Error Responses
 
