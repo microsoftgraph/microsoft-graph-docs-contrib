@@ -19,7 +19,6 @@ abstract:
 
   This overview focuses on the basics of OAuth2.0, getting tokens for the Microsoft Graph API, and using these tokens following a set of best practices for security and user experience. 
 sections:
-
   - items:
     - type: list
       style: cards
