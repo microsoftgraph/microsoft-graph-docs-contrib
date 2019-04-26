@@ -55,7 +55,7 @@ The following example retrieves all **trustFrameworkPolicies**.
 
 <!-- {
   "blockType": "request",
-  "name": "get__trustFrameworks"
+  "name": "get_trustFrameworks"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/trustFramework/policies
@@ -66,12 +66,13 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trustFramework.policy",
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "value": [
         {
