@@ -1,5 +1,5 @@
 ---
-title: "Get directoryAudit | Microsoft Graph"
+title: "Get directoryAudit"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API (beta version)."
 localization_priority: Normal
 author: "lleonard-msft"
@@ -33,7 +33,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## Optional query parameters
 
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
+This method supports OData Query Parameters to help customize the response. For details about how to use this parameters, see [OData query parameters](/graph/query_parameters).
 
 ## Request headers
 
