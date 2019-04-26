@@ -1,5 +1,5 @@
 ---
-title: "Review app authentication library changes | Microsoft Graph"
+title: "Review app authentication library changes"
 description: "Describes how to update authentication library use in order to migrate an app from Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
 author: "dkershaw10"
 localization_priority: Normal
@@ -8,20 +8,22 @@ ms.prod: "microsoft-identity-platform"
 
 # Review app authentication library changes
 
-Many apps use an authentication library to aquire and manage access tokens.
+Most apps use an authentication library to aquire and manage access tokens to call Microsoft Graph.  Microsoft offers two authentication libraries:
 
-- Briefly introduce ADAL with link
-- Briefly introduce MSAL with link
+- [Azure Active Directory authentication library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
+- [Microsoft authentication library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL)
 
-In the short term, you need only to make a few minor changes to continue using either approach.
+You need only to make a few minor changes to continue using either approach.
 
 ## Updating ADAL
 
-However, ADAL will be retired at some point.  Eventually, you'll want to migrate to MSAL.
+MSAL will fully replace ADAL.  So eventually, you will want to migrate to MSAL.
 
 If your app currently uses ADAL, we recommend a two stage migration:
 
-1.  Update the **resourceURL** to reflect Microsoft Graph:
+1. Update your app to acquire access tokens using ADAL to call Microsoft Graph.
+
+    Update the **resourceURL** to reflect Microsoft Graph:
 
     from: `https://graph.windows.net`  
     to:  `https://graph.microsoft.com`
@@ -30,13 +32,13 @@ If your app currently uses ADAL, we recommend a two stage migration:
 
     Once you've updated the **resourceURL** and verified functionality, release an interim update to get your users up and runnning.
 
-1.  That done, begin work migrating your app to use MSAL, which is the supported library to use moving forward.
+2.  Next, begin work migrating your app to use MSAL, which is the supported library to use moving forward.
 
 ## Migrating to MSAL
 
-MSAL provide multiple benefits over ASAL, including incremental consent, richer single sign-on experiences, support for personal Microsoft accounts, and so on.  
+MSAL provides multiple benefits over ADAL, including incremental consent, richer single sign-on experiences, support for personal Microsoft accounts, use of standards-based protocols and so on.  
 
-When you switch to MSAL, you'll need to make a few changes, including setting the **scopes** parameter in the token acquistion request:
+When you switch your app over to MSAL, you'll need to make a few changes, including setting the **scopes** parameter in the token acquistion request:
 
 ``` csharp
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
@@ -54,4 +56,3 @@ Once you've migrated to MSAL, you can request additional scopes dynamically, whi
 - Explore [Migrating ADAL to MSAL](https://aka.ms/adal-net-to-msal-net) for more in-depth help on migrating to MSAL.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
-

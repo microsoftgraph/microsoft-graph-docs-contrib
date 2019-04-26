@@ -1,5 +1,5 @@
 ---
-title: "Request differences between Azure AD Graph and Microsoft Graph | Microsoft Graph"
+title: "Request differences between Azure AD Graph and Microsoft Graph"
 description: "Describes how Microsoft Graph requests differ from Azure AD requests, which helps migrate apps to the newer service.."
 author: "dkershaw10"
 localization_priority: Normal
@@ -27,7 +27,7 @@ Suppose you want a list of all users with names beginning with "Dan".
 
 In Auzure AD Graph, you might use this request:
 
-`https://graph.windows.net/contoso.com/users?api-version=1.6&\$filter=startswith(givenName,'Dan')`
+`https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6`
 
 This request:
 
@@ -40,13 +40,13 @@ Results include users with names like Daniel, Danforth, Danielle, Danerys, and s
 
 A similar request for Microsoft Graph would be:
 
-`https://graph.microsoft.com/v1.0/users?\$filter=startswith(givenName,'Dan')`
+`https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`
 
 Here:
 
 - The version is `v1.0`.  
 - The tenant ID is inferred from the access token (not shown).  
-- The resource and query parameter are the same as the Azure AD query.  
+- The resource and $filter query parameter are the same as the Azure AD query.  
 
 While not all requests will be as easy to convert, many will.  To learn more, see [resource type differences](migrate-azure-ad-graph-resource-differences.md). 
 

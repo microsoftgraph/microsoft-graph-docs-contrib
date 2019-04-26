@@ -289,10 +289,9 @@
       items:
       - name: Azure AD Graph
         items:
-        - name: App migration checklist
+        - name: Overview
           href: migrate-azure-ad-graph-overview.md
-        - name: Audit API use
-          href: migrate-azure-ad-graph-audit-api-use.md
+        - name: App migration checklist
         - name: Differences
           expanded: true
           items: 
@@ -306,6 +305,8 @@
             href: migrate-azure-ad-graph-property-differences.md
           - name: Methods
             href: migrate-azure-ad-graph-method-differences.md
+        - name: Examine API use
+          href: migrate-azure-ad-graph-audit-api-use.md
         - name: Review app details
           expanded: true
           items:
