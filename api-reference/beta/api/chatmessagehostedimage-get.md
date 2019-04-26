@@ -33,7 +33,7 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedImages/{id}
 
 ## Optional query parameters
 
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
 
 Here is an example of the response. 
 
->**Note:** The response object shown here are shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here is shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
