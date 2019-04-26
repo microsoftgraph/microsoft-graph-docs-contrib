@@ -18,21 +18,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 |            Permission type             | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
+| Delegated (work or school account)     | Sites.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Sites.ReadWrite.All                         |
 | Application                            | Sites.ReadWrite.All                         |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
-To follow one site:
-
-```http
-POST https://graph.microsoft.com/beta/users/{user-id}/followedSites
-```
-
-To follow multiple sites:
 
 ```http
 POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/add
@@ -40,13 +32,7 @@ POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/add
 
 ## Request body
 
-To follow one site:
-
-* In the request body, supply a JSON object with the id parameter mentioned in the table below. 
-
-To follow multiple sites:
-
-* In the request body, supply an array JSON objects with the id parameter mentioned in the table below. 
+In the request body, supply an array of JSON objects with the id parameter mentioned in the table below. 
 
 
 | Name                 | Value  | Description                                                            |
@@ -56,59 +42,10 @@ To follow multiple sites:
 
 ## Response body 
 
-To follow one site:
-
-* If the request is successful, this method returns the site object the was followed.  
-* If an error occured while executing the request, this method returns the information of the [error](../../../concepts/errors.md).
-
-To follow multiple sites:  
-
 * If the request is successful, this method returns an array of sites that were followed.  
 * If an error occured while executing the request, this method returns a `207` status code and the response body will have the [error](../../../concepts/errors.md) object and siteId.
 
-## Examples
-
-### Example 1: Follow one site
-
-The following example shows how to follow a site.
-
-##### Request
-
-<!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
-
-```http
-POST /users/{user-id}/followedSites
-Content-Type: application/json
-
-{
-    "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"
-}
-```
-##### Response
-
-If successful, it returns the following JSON response. 
-
-<!-- { "blockType": "response" } -->
-
-```json
-HTTP/1.1 200 OK
-Content-type: application/json
-{
-    "@odata.context":"http://sp-my.devinstall/personal/contoso_sharepoint_com/_api/v2.1/$metadata#followedSites/$entity",
-    "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
-    "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed",
-    "title": "SiteFollowed",
-    "sharepointIds": {
-        "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
-        "siteUrl": "http://contoso.sharepoint.com/sites/SiteFollowed",
-        "webId": "712a596e-90a1-49e3-9b48-bfa80bee8740"
-    },
-    "siteCollection": {
-        "hostName": "contoso.sharepoint.com"
-    }
-}
-```
-### Example 2: Follow multiple sites:
+## Example
 
 The following example shows how to follow multiple sites. 
 

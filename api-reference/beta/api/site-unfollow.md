@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Unfollow a user's [site](../resources/site.md).
+Unfollow a user's [site](../resources/site.md) or multiple sites.
 
 ## Permissions
 
@@ -18,8 +18,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |            Permission type             | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | Not supported.                              |
-| Delegated (personal Microsoft account) | Not supported.                              |
+| Delegated (work or school account)     | Sites.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Sites.ReadWrite.All                         |
 | Application                            | Sites.ReadWrite.All                         |
 
 ## HTTP request
@@ -27,25 +27,95 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/users/{user-id}/followedSites/{id}
+POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/remove
 ```
 
->**Note:** The "id" is the [unique identifier](../resources/site.md#id-property) of the site.
- 
+## Request body
+
+In the request body, supply an array of JSON objects with the id parameter mentioned in the table below. 
+
+
+| Name                 | Value  | Description                                                            |
+|:---------------------|:-------|:-----------------------------------------------------------------------|
+|   id                 | string | The [unique identifier](../resources/site.md#id-property) of the item. |
+
 ## Response body
 
-  If the request is successful, this method returns a `204` status code with no content.  
-  If an error occured while executing the request, this method returns the information of the [error](../../../concepts/errors.md).
+* If the request is successful, this method returns a `204` status code with no content.  
+* If an error occured while executing the request, this method returns a `207` status code and the response body will have the [error](../../../concepts/errors.md) object and siteId.
 
 ## Example
 
-The following example shows how to unfollow a site.
+The following example shows how to unfollow multiple sites.
 
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-DELETE /users/{user-id}/followedSites/{id}
+POST /users/{user-id}/followedSites/remove
+Content-Type: application/json
+
+{
+    "value":
+    [
+        {
+            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740"
+        },
+        {
+            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851"
+        }
+    ] 
+}
 ```
+##### Response
+
+If successful, it returns the following JSON response. 
+
+<!-- { "blockType": "response" } -->
+
+```json
+HTTP/1.1 204 No Content
+```
+
+If an error occured, it returns the following JSON response 
+
+<!-- { "blockType": "response" } -->
+
+```json
+HTTP/1.1 207 Multi-Status
+Content-type: application/json
+{
+    "value": [
+        {
+            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,512a596e-90a1-49e3-9b48-bfa80bee8740",
+            "error": {
+                "@odata.type": "#oneDrive.error",
+                "code": "invalidRequest",
+                "message": "The site Id information that is provided in the request is incorrect",
+                "innerError": {
+                    "code": "invalidRequest",
+                    "errorType": "expected",
+                    "message": "The site Id information that is provided in the request is incorrect",
+                    "stackTrace": "",
+                    "throwSite": ""
+                }
+            }
+        },
+        {
+            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
+            "webUrl": "http://contoso.sharepoint.com/sites/SiteUnFollowed",
+            "title": "SiteUnFollowed",
+            "sharepointIds": {
+                "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
+                "siteUrl": "http://contoso.sharepoint.com/sites/SiteUnFollowed",
+                "webId": "0271110f-634f-4300-a841-3a8a2e851851"
+            },
+            "siteCollection": {
+                "hostName": "contoso.sharepoint.com"
+            }
+        }
+    ]
+}
+```  
 
 <!-- {
   "type": "#page.annotation",
