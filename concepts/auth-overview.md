@@ -31,17 +31,17 @@ sections:
         image:
           src: ./images/index/i_get-started.svg
         title: App Registration
-      - href: /graph/auth-concepts
+      - href: /graph/auth/auth-concepts
         html: <p>Explore the basics of OAuth2.0 and how it intersects with the Microsoft Graph API.</p>
         image:
           src: ./images/index/i_overview.svg
         title: Auth Concepts
-      - href: /graph/permissions-scopes
+      - href: /graph/permissions-reference
         html: <p>Learn more about Microsoft Graph scopes & app permissions.</p>
         image:
           src: ./images/index/i_code-edit.svg
         title: Permissions & Scopes
-      - href: /graph/cloud-solution-providers
+      - href: /graph/auth-cloudsolutionprovider
         html: <p>Enable apps access to partner-managed data.</p>
         image:
           src: ./images/index/i_api.svg
