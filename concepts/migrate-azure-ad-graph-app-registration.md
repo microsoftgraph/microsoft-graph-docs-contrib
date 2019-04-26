@@ -24,9 +24,9 @@ For any app update, there are three main areas of concern:
 
     If your update also incudes the use of features or capabilities that aren't available to Azure AD Graph, you'll likely need to request permissions for these new features. If that's the case, you can switch your app to use MSAL and the v2 endpoint, and request additional/incremental consent dynamically. Find more details about switching to MSAL in [review app authentication library changes](/graph/migrate-azure-ad-graph-authentication-library).
 
-- **Consent**: End-users won't be required to consent again.
+- **Consent**: End-users can continue using your app without being asked to grant consent again.
 
-    Users who have already consented to your app can continue to use your app (even after you make the update to Microsoft Graph), without being asked to consent again.
+    Users who have already granted consent to your app (to access theor data) can continue to use your app (even after you make the update to Microsoft Graph), without being asked to consent again.
 
 Simple migration projects should experience no issues in these areas.
 

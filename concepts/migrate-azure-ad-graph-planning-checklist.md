@@ -49,7 +49,7 @@ Use the following checklist to plan your migration:
 
 ## Next Steps
 
-- Learn about [request call syntax](migrate-azure-ad-graph-request-differences.md) to start reviewing API differences.
+- Learn about [API requests](migrate-azure-ad-graph-request-differences.md) to start reviewing API differences.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
 - To learn more about progress updates and timelines, see [Microsoft Graph or the Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) in the Office Dev Center.
