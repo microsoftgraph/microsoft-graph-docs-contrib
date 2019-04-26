@@ -118,7 +118,7 @@ Replace the values in the JSON file as follows:
 
 8. Exit the ARMClient tool. You have now completed the configuration of Azure Monitor to send security alerts from your tenant to event hub.
 
-**Tip:** To disable alert flow from your tenant to the event hub, delete Azure Monitor settings by running this `delete` command.
+>**Tip:** To disable alert flow from your tenant to the event hub, delete Azure Monitor settings by running the following `delete` command.
 
     ``` shell
     ARMClient.exe delete https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
