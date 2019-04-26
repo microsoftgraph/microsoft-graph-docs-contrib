@@ -33,7 +33,7 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedImages
 
 ## Optional query parameters
 
-This operation does not support the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to customize the response.
+This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [hostedImages](../resources/chatmessagehostedimage.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [hostedImage](../resources/chatmessagehostedimage.md) objects in the response body.
 
 ## Example
 
