@@ -5,7 +5,7 @@ description: "Learn how to choose scenario specific authentication providers for
 
 # Choose an authentication provider based on OAuth flow
 
-Authentication providers simplify getting an access token by abstracting the parameters required by the authentication client libraries. The Microsoft Graph authentication providers simplify the use of Microsoft Authentication Library (MSAL) by providing adapters for each platform. The Microsoft Graph authentication providers map to an OAuth grant flow. You'll need to know which OAuth grant flow to use for your application in order to select the appropriate authentication provider for your application. We describe the available authentication providers for each platform based on the OAuth grant flow.
+Authentication providers simplify getting an access token by abstracting the parameters required by the authentication client libraries. The Microsoft Graph authentication providers simplify the use of Microsoft Authentication Library (MSAL) by providing adapters for each platform. These adapters handle token acquisition for your application. The Microsoft Graph authentication providers map to an OAuth grant flow. You'll need to know which OAuth grant flow to use for your application in order to select the appropriate authentication provider for your application. We describe the available authentication providers for each platform based on the OAuth grant flow.
 
 ## Authorization code OAuth flow
 
