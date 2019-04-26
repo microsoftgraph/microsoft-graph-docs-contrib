@@ -93,11 +93,11 @@ You do not need to use an authentication library to get an access token.  To lea
 To learn more, pick the type of app you're writing and get started!
 
 - For quick steps on getting an access token for apps that call Microsoft Graph use the link below that matches your scenario:
-  - [Desktop app](docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
-  - [Mobile app](docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
-  - [Web app](docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
-  - [Single page app](docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
-  - [Daemon / background service](docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+  - [Desktop app](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+  - [Mobile app](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+  - [Web app](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+  - [Single page app](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+  - [Daemon / background service](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
 - To see the permissions that you can use with Microsoft Graph, see [Permissions](permissions-reference.md).
 - If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth-cloudsolutionprovider.md).
 
