@@ -1,14 +1,14 @@
 ---
 title: "mobileApp resource type"
 description: "An abstract class containing the base properties for Intune mobile apps."
-localization_priority: Normal
 author: "tfitzmac"
+localization_priority: Normal
 ms.prod: "Intune"
 ---
 
 # mobileApp resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -22,6 +22,8 @@ An abstract class containing the base properties for Intune mobile apps.
 |[assign action](../api/intune-apps-mobileapp-assign.md)|None|Not yet documented|
 |[getMobileAppCount function](../api/intune-apps-mobileapp-getmobileappcount.md)|Int64|Not yet documented|
 |[getTopMobileApps function](../api/intune-apps-mobileapp-gettopmobileapps.md)|[mobileApp](../resources/intune-apps-mobileapp.md) collection|Not yet documented|
+|[updateRelationships action](../api/intune-apps-mobileapp-updaterelationships.md)|None|Not yet documented|
+|[getRelatedAppStates function](../api/intune-apps-mobileapp-getrelatedappstates.md)|[mobileAppRelationshipState](../resources/intune-apps-mobileapprelationshipstate.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -43,6 +45,7 @@ An abstract class containing the base properties for Intune mobile apps.
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group.|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app.|
+|dependentAppCount|Int32|The total number of dependencies the child app has.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -52,6 +55,7 @@ An abstract class containing the base properties for Intune mobile apps.
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Mobile App Install Summary.|
 |deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) collection|The list of installation states for this mobile app.|
 |userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) collection|The list of installation states for this mobile app.|
+|relationships|[mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md) collection|List of relationships for this mobile app.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -86,9 +90,11 @@ Here is a JSON representation of the resource.
   "isAssigned": true,
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "dependentAppCount": 1024
 }
 ```
+
 
 
 

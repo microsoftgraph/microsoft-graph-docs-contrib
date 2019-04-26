@@ -35,15 +35,6 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ## Microsoft Teams
 
-### Create chat thread API
-
-The current API to [create a chat thread](/graph/api/channel-post-chatthreads?view=graph-rest-beta) 
-will be replaced with a richer API that is consistent with the schema for [listing channel messages](/graph/api/channel-list-messages?view=graph-rest-beta).
-
-### Graph Explorer and global admins
-
-Currently, Graph Explorer allows global admins to manipulate teams they are not an owner or member of, but other apps attempting to make the same API calls will fail if the current user is not a member or owner of the team.
-
 ### GET /teams and POST /teams are not supported
 
 See [list all teams](teams-list-all-teams.md) and 
@@ -249,7 +240,7 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 * Multiple namespaces are not supported.
 * GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
-* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the `Accepted` or `RejectedSenders` on a group.
+* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
   * No support for `nextLink`
@@ -312,7 +303,7 @@ Directory resources, such as **device**, **group** and **user**, currently limit
 
 ### Filtering on schema extension properties not supported on all entity types
 
-Filtering on schema extension properties (using the `$filter` expresssion) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
+Filtering on schema extension properties (using the `$filter` expression) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
 
 ## JSON Batching
 
