@@ -71,7 +71,7 @@ Content-type: application/json
   "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk"
+  "riskState": "atRisk",
   "userDisplayName": "Alex Wilbur",
   "userPrincipalName": "alexw@contoso.com"
 }
