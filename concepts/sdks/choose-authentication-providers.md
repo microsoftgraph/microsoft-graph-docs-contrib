@@ -15,7 +15,7 @@ The authorization code flow enables native and web apps to securely obtain token
 
 ```csharp
 IConfidentialClientApplication clientApplication = AuthorizationCodeProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
-AuthorizationCodeProvider authenticationProvider = new AuthorizationCodeProvider(clientApplication, scopes);
+AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(clientApplication, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -59,7 +59,7 @@ The client credential flow enables service applications to run without user inte
 
 ```csharp
 IConfidentialClientApplication clientApplication = ClientCredentialProvider.CreateClientApplication(clientId, clientCredential);
-ClientCredentialProvider authenticationProvider = new ClientCredentialProvider(clientApplication);
+ClientCredentialProvider authProvider = new ClientCredentialProvider(clientApplication);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -103,7 +103,7 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 
 ```csharp
 IConfidentialClientApplication clientApplication = OnBehalfOfProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
-OnBehalfOfProvider authenticationProvider = new OnBehalfOfProvider(clientApplication, scopes);
+OnBehalfOfProvider authProvider = new OnBehalfOfProvider(clientApplication, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -192,7 +192,7 @@ The device code flow enables sign in to devices by way of another device. Learn 
 
 ```csharp
 IPublicClientApplication clientApplication = DeviceCodeProvider.CreateClientApplication(clientId);
-DeviceCodeProvider authenticationProvider = new DeviceCodeProvider(clientApplication, scopes);
+DeviceCodeProvider authProvider = new DeviceCodeProvider(clientApplication, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -229,7 +229,7 @@ The integrated windows flow provides a way for Windows machines to silently acqu
 
 ```csharp
 IPublicClientApplication clientApplication = IntegratedWindowsAuthenticationProvider.CreateClientApplication(clientId);
-IntegratedWindowsAuthenticationProvider authenticationProvider = new IntegratedWindowsAuthenticationProvider(clientApplication, scopes);
+IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(clientApplication, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -266,7 +266,7 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 
 ```csharp
 IPublicClientApplication clientApplication = InteractiveAuthenticationProvider.CreateClientApplication(clientId);
-InteractiveAuthenticationProvider authenticationProvider = new InteractiveAuthenticationProvider(clientApplication, scopes);
+InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(clientApplication, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -302,7 +302,7 @@ MSALPublicClientApplication *application =
 [[MSALPublicClientApplication alloc] initWithClientId:@"<your-client-id-here>"
 error:&error];
 
-MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:application
+MSALAuthenticationProvider *authProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:application
                                                                                                                andScopes:<array-of-scopes-for-which-you-need-access-token>];
 ```
 
@@ -326,7 +326,7 @@ The resource owner password credential flow allows an application to sign in a u
 
 ```csharp
 IPublicClientApplication clientApplication = UsernamePasswordProvider.CreateClientApplication(clientId);
-UsernamePasswordProvider authenticationProvider = new UsernamePasswordProvider(clientApplication, scopes);
+UsernamePasswordProvider authProvider = new UsernamePasswordProvider(clientApplication, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
