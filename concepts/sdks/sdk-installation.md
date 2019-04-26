@@ -20,7 +20,7 @@ You can use either the [Package Manager UI in Visual Studio or the Package Manag
 
 ```
 Install-Package Microsoft.Graph
-Install-Package Microsoft.Graph.Auth
+Install-Package Microsoft.Graph.Auth -IncludePrerelease
 ```
 
 ## Install the Microsoft Graph Java SDK
