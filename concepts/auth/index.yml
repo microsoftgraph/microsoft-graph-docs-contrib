@@ -15,9 +15,7 @@ metadata:
   ms.date: 04/26/2019
   ms.author: dadobali
 abstract:
-  description: The Microsoft Graph API is the gateway to data and intelligence in Microsoft 365.  The Microsoft Graph uses the industry-standard OAuth2.0 protocol to protect this data. This provides a secure mechanism to protect access while enabling app developers to directly integrate their applications.  
-
-  This overview focuses on the basics of OAuth2.0, getting tokens for the Microsoft Graph API, and using these tokens following a set of best practices for security and user experience. 
+  description: This overview focuses on the basics of OAuth2.0, getting tokens for the Microsoft Graph API, and using these tokens following a set of best practices for security and user experience.
 sections:
   - items:
     - type: list
