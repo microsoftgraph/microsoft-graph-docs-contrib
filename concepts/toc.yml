@@ -292,6 +292,7 @@
         - name: Overview
           href: migrate-azure-ad-graph-overview.md
         - name: App migration checklist
+          href: migrate-azure-ad-graph-planning-checklist.md
         - name: Differences
           expanded: true
           items: 
