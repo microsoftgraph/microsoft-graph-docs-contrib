@@ -8,7 +8,7 @@ localization_priority: Normal
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) object.
+Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) objects for a tenant.
 
 ## Permissions
 
@@ -40,7 +40,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a **secureScoreControlProfiles** object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of **secureScoreControlProfile** objects in the response body.
 
 ## Example
 
@@ -61,8 +61,9 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
@@ -77,11 +78,11 @@ Content-type: application/json
             "actionUrl": "actionUrl.value",
             "controlCategory": "controlCategory.value",
             "title": "title.value",
-            "deprecated": "deprecated.value",
+            "deprecated": true,
             "implementationCost": "implementationCost.value",
             "lastModifiedDateTime": "lastModifiedDateTime.value",
-            "maxScore": "maxScore.value",
-            "rank": "rank.value",
+            "maxScore": 1020.13,
+            "rank": 100,
             "remediation": "remediation.value",
             "remediationImpact": "remediationImpact.value",
             "service": "service.value",
@@ -120,8 +121,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
