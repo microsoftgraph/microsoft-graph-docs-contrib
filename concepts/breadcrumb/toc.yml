@@ -1,3 +1,7 @@
 - name: Microsoft Graph
   tocHref: /graph/
   topicHref: /graph/overview
+  items: 
+  - name: Auth
+    tocHref: /graph/auth/
+    topicHref: /graph/auth/
