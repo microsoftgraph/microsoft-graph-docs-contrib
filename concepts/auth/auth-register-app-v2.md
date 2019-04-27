@@ -17,7 +17,7 @@ Your app must be registered with Azure AD. Registering your app establishes a un
 
 
 The following screenshot shows an example web app registration that has been configured with a password and implicit flow. 
-![Web app registration with password and implicit grant.](./images/v2-web-registration.png)
+![Web app registration with password and implicit grant.](../images/v2-web-registration.png)
 
 To register your app, follow these steps; be sure to copy the indicated values to use when configuring authorization for your app:
 

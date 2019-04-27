@@ -147,7 +147,7 @@ The following table lists resources that you can use to create an authentication
 |[Web apps - .NET Web Server](https://docs.microsoft.com/en-us/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
 |[Web apps - NodeJS Web App](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
-For applications that don't use any of the existing libraries, see [Get access on behalf of a user](auth-v2-user.md).
+For applications that don't use any of the existing libraries, see [Get access on behalf of a user](auth/auth-v2-user.md).
 
 1. Get a code from Azure AD. The query to call contains parameter for Application ID, Redirect URl, and **required permissions**.
 2. Use the code to get an access token.
