@@ -7,7 +7,7 @@ localization_priority: Priority
 
 # Use the Microsoft Graph API
 
-Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth-register-app-v2.md) and [get authentication tokens for a user](auth/auth-v2-user.md) or [service](auth/auth-v2-service.md), you can make requests to the Microsoft Graph API.
+Microsoft Graph is a RESTful web API that enables you to access Microsoft Cloud service resources. After you [register your app](auth-register-app-v2.md) and [get authentication tokens for a user](./auth/auth-v2-user.md) or [service](./auth/auth-v2-service.md), you can make requests to the Microsoft Graph API.
 
 > **Important:**  How conditional access policies apply to Microsoft Graph is changing. Applications need to be updated to handle scenarios where conditional access policies are configured. For more information and guidance, see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
 
