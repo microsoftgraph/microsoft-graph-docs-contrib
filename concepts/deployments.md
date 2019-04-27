@@ -28,7 +28,7 @@ Before calling the Microsoft Graph APIs, you should first register your applicat
 |Azure AD China operated by 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 |Azure AD (global service)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
-To learn more about Azure AD access tokens and Microsoft Graph, see [get auth tokens](./auth-overview.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
+To learn more about Azure AD access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
 
 > **Note:** The [Azure AD v2.0 authorization and token endpoints](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) are available on the global service only; they are not yet supported for use with national cloud deployments.
 
