@@ -72,7 +72,7 @@ _Effective permissions_ are the permissions that your app will have when making 
   
 - For application permissions, the _effective permissions_ of your app will be the full level of privileges implied by the permission. For example, an app that has the _User.ReadWrite.All_ application permission can update the profile of every user in the organization.
 
-For a complete list of delegated and application permissions for Microsoft Graph, as well as which permissions require administrator consent, see the [Permissions reference](permissions-reference.md).
+For a complete list of delegated and application permissions for Microsoft Graph, as well as which permissions require administrator consent, see the [Permissions reference](../permissions-reference.md).
 
 ## Getting an access token
 
@@ -98,7 +98,7 @@ To learn more, pick the type of app you're writing and get started!
   - [Web app](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
   - [Single page app](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
   - [Daemon / background service](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
-- To see the permissions that you can use with Microsoft Graph, see [Permissions](permissions-reference.md).
+- To see the permissions that you can use with Microsoft Graph, see [Permissions](../permissions-reference.md).
 - If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth-cloudsolutionprovider.md).
 
 If you're ready to jump into code, you can use the following resources to help you implement authentication and authorization with the Microsoft identity platform in your app.
