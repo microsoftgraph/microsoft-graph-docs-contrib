@@ -67,7 +67,8 @@ Looking for the API reference for this service?
 
   - [Creating and sending messages](outlook-create-send-messages.md)
   - Ways to [organize messages](outlook-organize-messages.md)
-  - How to [get shared messages](outlook-share-messages-folders.md)
+  - [Getting the MIME content of a message](outlook-get-mime-message.md)
+  - [Getting shared messages](outlook-share-messages-folders.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
   - How to [send mail from another user](outlook-send-mail-from-other-user.md)
 
