@@ -23,7 +23,7 @@ sections:
       className: cardsM
       columns: 4
       items:
-      - href: /graph/auth/app-registration
+      - href: /graph/auth/auth-register-app-v2
         html: <p>Begin your Microsoft Graph journey by registering your application.</p>
         image:
           src: ../images/index/i_get-started.svg
@@ -33,12 +33,12 @@ sections:
         image:
           src: ../images/index/i_overview.svg
         title: Auth Basics
-      - href: /graph/auth/permissions-scopes
+      - href: /graph/permissions-reference
         html: <p>Learn more about Microsoft Graph scopes & app permissions.</p>
         image:
           src: ../images/index/i_code-edit.svg
         title: Permissions & Scopes
-      - href: /graph/auth/cloud-solution-providers
+      - href: /graph/auth/auth-cloudsolutionprovider
         html: <p>Enable apps access to partner-managed data.</p>
         image:
           src: ../images/index/i_api.svg
