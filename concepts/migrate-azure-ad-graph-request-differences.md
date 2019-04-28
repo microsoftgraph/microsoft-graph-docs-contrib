@@ -8,7 +8,9 @@ ms.prod: "microsoft-identity-platform"
 
 # Request differences between Azure AD Graph and Microsoft Graph
 
-The Microsoft Graph API and the Azure AD Graph API are both REST APIs and they each support ODATA conventions for query parameters. However, the syntax varies between each API.
+Microsoft Graph and the Azure AD Graph API are both REST APIs and they each support ODATA conventions for query parameters. However, the syntax varies between these two APIs.
+
+Use the [Graph Explorer](https://aka.ms/ge) to try these request patterns against your own data, as it's a great way to learn about the request and response differences.
 
 ## Basic requests
 
@@ -51,8 +53,6 @@ Here:
 - The resource and $filter query parameter are the same as the Azure AD query.  
 
 > **NOTE**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries.md) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
-
-You should use the [Graph Explorer](https://aka.ms/ge) to try these request patterns against your own data, as it's a great way to learn about the request and response differences.
 
 ### Key identifiers: objectId vs id
 

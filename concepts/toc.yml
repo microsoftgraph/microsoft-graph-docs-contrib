@@ -278,7 +278,7 @@
             href: delta-query-users.md
       - name: Add custom data
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-        items: extensibility-overview.md
+        items:
         - name: Overview
           href: extensibility-overview.md
         - name: Use open extensions (example)
