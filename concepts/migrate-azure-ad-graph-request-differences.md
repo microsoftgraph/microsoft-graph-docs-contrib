@@ -50,21 +50,21 @@ Here:
 
 - The version is `v1.0`.  
 - The tenant ID is inferred from the access token (not shown).  
-- The resource and $filter query parameter are the same as the Azure AD query.  
+- The resource and `$filter` query parameter are the same as the Azure AD query.  
 
 > **NOTE**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries.md) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
 
 ### Key identifiers: objectId vs id
 
-In Azure AD Graph, all entity resource types have a unique identifier (or key) called `objectId`.  For the most part (unless otherwise stated) this same identifier is called `id` in Microsoft Graph.
+In Azure AD Graph, all entity resource types have a unique identifier (or key) called **objectId**.  For the most part (unless otherwise stated) this same identifier is called **id** in Microsoft Graph.
 
 ## Default properties and $select
 
-Use the $select query parameter to customize the response to include all the properties that your app requires.
+Use the `$select` query parameter, in GET requests, to customize the response to include all the properties that your app requires.
 
-When a Microsoft Graph v1.0 request returns user or group resources, the properties are limited to a sub-set called _default properties_. The default properties represent the most commonly-used properties for a resource. On the other hand, Azure AD Graph (and Microsoft Graph beta version) returns the full set of all properties.
+Microsoft Graph **get** or **list** operations for user or group resources returns only a subset of all properties, known as the _default properties_. The default properties represent the most commonly-used properties for a resource. On the other hand, Azure AD Graph returns the full set of all properties for the respective resource.
 
-To get other properties in v1.0, your app needs to explicitly request them, using the $select query parameter. This includes any directory schema extensions your app might be using. It's a best practice to only request the properties your app really needs.
+To get other properties in v1.0, your app needs to explicitly request them, using the `$select` query parameter. This includes any directory schema extensions your app might be using. It's a best practice to only request the properties your app really needs.
 
 To illustrate the difference, use Graph Explorer to run the following requests and compare the different responses.
 
@@ -75,23 +75,23 @@ GET https://graph.microsoft.com/beta/me/
 
 Review the responses from each query. You'll notice that address information is returned by the /beta version, but not the /v1.0 version.  That's because the address properties aren't in the default property set.
 
-If your app relies on the address properties, you need to update your v1.0 requests to include the $select query parameter:
+If your app relies on the address properties, you need to update your v1.0 requests to include the `$select` query parameter:
 
 ```http
-https://graph.microsoft.com/beta/me/?$select=displayName,streetAddress,city,state,postalCode
+https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,state,postalCode
 ```
 
-The response for this request would include the address properties.  It also includes the displayName property, but only because it was specified by the query parameter.
+The response for this request would include the address properties.  It also includes the **displayName** property, but only because it was specified by the query parameter.
 
 To learn more about:
 
 - Default properties on user, see [users](/graph/api/resources/users?view=graph-rest-1.0)
-- The $select parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](/graph/query-parameters).
+- The `$select` parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](/graph/query-parameters).
 - This and other recommended optimizations, see [Best practices](/graph/best-practices-concept).
 
 ## Relationships and navigation properties
 
-Relationships (or navigation properties) are a key concept in Azure AD Graph and Microsoft Graph, creating a network of related resources. For example, the manager and directReports properties extend the user resource to provide organizational hierarchy.  
+Relationships (or navigation properties) are a key concept in Azure AD Graph and Microsoft Graph, creating a network of related resources. For example, the **manager** and **directReports** properties extend the user resource to provide organizational hierarchy.  
 
 Relationships also define memberships, such as the groups a user belongs to, the members belonging to a group or a directory role, and so on.
 
@@ -110,6 +110,6 @@ When migrating your apps to Microsoft Graph, look for requests that use `$link` 
 
 ## Next Steps
 
-- Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) between Azure AD Graph and Microsoft Graph. 
+- Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) between Azure AD Graph and Microsoft Graph.
 - Explore [Microsoft Graph](/graph/overview) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

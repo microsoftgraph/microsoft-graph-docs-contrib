@@ -20,10 +20,10 @@ Here, we look at how Microsoft Graph handles:
 
 If your app uses Azure AD Graph directory schema extensions, you can continue to use the same basic APIs (with Microsoft Graph request URLs) to:
 
-- read extension values using GET and $select
-- search on extension values using GET and $filter
+- read extension values using GET and `$select`
+- search on extension values using GET and `$filter`
 - update extension values using PATCH
-- remove extension values using PATCH (set to `null`)
+- remove extension values using PATCH (set to **null**)
 
 However, Microsoft Graph doesn't provide a way to manage Azure AD Graph directory schema extension definitions or to view all schema extension definitions available in a tenant.
 
@@ -31,22 +31,22 @@ Instead, Microsoft Graph provides an enhanced schema extensions developer experi
 
 ### Recommended migration approach
 
-You can take an incremenatal approach to migrating to Microsoft Graph.
+If your Azure AD Graph app uses directory schema extensions, take an incremental approach to migrate the app to Microsoft Graph.
 
-In the first step, make an initial update that leverages existing Azure AD Graph directory schema extensions, but switch your app to using Microsoft Graph API calls.
+First, switch your app to using Microsoft Graph API calls, but let the app continue to leverage Azure AD Graph directory schema extensions.
 
-Later, you can switch to using Microsoft Graph schema extensions. In some cases, switching will not be appropriate. Do not switch if:
+Then, you can switch to using Microsoft Graph schema extensions. In some cases, switching will not be appropriate. Do not switch if:
 
 - your app uses directory schema extensions created through AD Connect, or
 - your app relies on directory schema extension values in token claims.
 
->**NOTE**: Exposing Microsoft Graph schema extension properties as claims in a token using optional claims is also not yet supported.
+>**NOTE**: Using Microsoft Graph schema extension properties as claims in a token using optional claims is also not yet supported.
 
-If you do want to switch to the newer Microsoft Graph schema extension model, you'll need to:
+To switch to the newer Microsoft Graph schema extension model, you'll need to:
 
 - Define new schema extension definitions using Microsoft Graph.
 - Update the app to support the new schema extension definitions.
-- Migrate the data from the Azure AD schema extension properties in the new Microsoft Graph schema extension properties.  Automatic migration of data is not supported.
+- Migrate the data from the Azure AD schema extension properties to the new Microsoft Graph schema extension properties.  Automatic migration of data is not supported.
 
 ## Differential queries
 
