@@ -50,7 +50,7 @@ For best performance you shouldn't include existing values that haven't changed.
 
 | Property     | Type   | Description                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | String | An array of permission types. |
+| **roles**    | String collection | An array of permission types. |
 
 ## Response
 
@@ -102,8 +102,6 @@ Content-type: application/json
   "keywords": "permission, permissions, sharing, change permissions, update permission",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Update permission",
-  "suppressions": [
-    "Error: /api-reference/beta/api/permission-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
