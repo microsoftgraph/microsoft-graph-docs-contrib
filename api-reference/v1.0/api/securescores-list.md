@@ -1,7 +1,7 @@
 ---
 title: "List secureScores"
 description: "Retrieve a list of secureScore objects."
-author: "naynam"
+author: "preetikr"
 localization_priority: Normal
 ---
 
