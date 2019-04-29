@@ -66,6 +66,8 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "webDavUrl": "string",
 
   /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": [{"@odata.type": "microsoft.graph.itemAnalytics"}],
   "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
@@ -136,6 +138,8 @@ The eTag value is only modified when the folder's properties are changed, except
 
 | Relationship       | Type                        | Description
 |:-------------------|:----------------------------|:--------------------------
+| activities         | [itemActivity][] collection | The list of recent activities that took place on this item.
+| analytics          | [itemAnalytics][] resource  | Analytics about the view activities that took place on this item.
 | children           | driveItem collection        | Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
@@ -166,6 +170,8 @@ Removing file permissions for a user may not immediately invalidate the URL.
 | Method                                                   | REST Path
 |:---------------------------------------------------------|:------------------
 | [Get item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
+| [Get analytics][]                                        | `GET /drive/items/{item-id}/analytics`
+| [Get activities by interval][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
 | [List children](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
 | [List versions](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
 | [Create item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
@@ -187,6 +193,8 @@ Removing file permissions for a user may not immediately invalidate the URL.
 | [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivity-getbyinterval.md
 
 ## Remarks
 
@@ -205,6 +213,8 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md

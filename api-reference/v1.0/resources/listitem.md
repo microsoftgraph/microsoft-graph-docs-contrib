@@ -20,12 +20,16 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 |:-------------------------------|:------------------------
 | [Get][]                        | GET /items/{item-id}
 | [Get column values][Get]       | GET /items/{item-id}?expand=fields
+| [Get analytics][]              | GET /items/{item-id}/analytics
+| [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
 | [Update column values][Update] | PATCH /items/{item-id}/fields
 
 [Get]: ../api/listitem-get.md
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
@@ -48,6 +52,8 @@ Here is a JSON representation of a **listItem** resource.
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
 
   /* relationships */
+  "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
   "driveItem": { "@odata.type": "microsoft.graph.driveItem" },
   "versions": [{"@odata.type": "microsoft.graph.listItemVersion"}],
 
@@ -95,6 +101,8 @@ The following properties are inherited from **[baseItem][]**.
 
 | Relationship name | Type                           | Description
 |:------------------|:-------------------------------|:-------------------------------
+| activities        | [itemActivity][] collection    | The list of recent activities that took place on this item.
+| analytics         | [itemAnalytics][] resource     | Analytics about the view activities that took place on this item.
 | driveItem         | [driveItem][]                  | For document libraries, the **driveItem** relationship exposes the listItem as a **[driveItem][]**
 | fields            | [fieldValueSet][]              | The values of the columns set on this list item.
 | versions          | [listItemVersion][] collection | The list of previous versions of the list item.
@@ -104,6 +112,8 @@ The following properties are inherited from **[baseItem][]**.
 [driveItem]: driveitem.md
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
+[itemActivity]: itemactivity.md
+[itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [list]: list.md
 [listItemVersion]: listitemversion.md

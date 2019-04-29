@@ -20,12 +20,16 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 | [Get site][]             | GET /sites/{site-id}
 | [Get site by path][]     | GET /sites/{hostname}:/{site-path}
 | [Get site for a group][] | GET /groups/{group-id}/sites/root
+| [Get analytics][]              | GET /sites/{site-id}/analytics
+| [Get activities by interval][] | GET /sites/{site-id}/getActivitiesByInterval
 | [Search for sites][]     | GET /sites?search={query}
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
 [Get site by path]: ../api/site-getbypath.md
 [Get site for a group]: ../api/site-get.md
+[Get analytics]: ../api/itemanalytics-get.md
+[Get activities by interval]: ../api/itemactivity-getbyinterval.md
 [Search for sites]: ../api/site-search.md
 
 ## JSON representation
@@ -58,6 +62,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "displayName": "string",
 
   /* relationships */
+  "analytics": { "@odata.type": "microsoft.graph.itemAnalytics" },
   "contentTypes": [ { "@odata.type": "microsoft.graph.contentType" }],
   "drive": { "@odata.type": "microsoft.graph.drive" },
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
@@ -97,6 +102,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 
 | Relationship name | Type                             | Description
 |:------------------|:---------------------------------|:----------------------
+| **analytics**     | [itemAnalytics][] resource       | Analytics about the view activities that took place in this site.
 | **columns**       | Collection([columnDefinition][]) | The collection of column definitions reusable across lists under this site.
 | **contentTypes**  | Collection([contentType][])      | The collection of content types defined for this site.
 | **drive**         | [drive][]                        | The default drive (document library) for this site.
@@ -111,6 +117,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 [contentType]: contenttype.md
 [drive]: drive.md
 [identitySet]: identityset.md
+[itemAnalytics]: itemanalytics.md
 [list]: list.md
 [site]: site.md
 [onenote]: onenote.md
