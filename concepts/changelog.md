@@ -11,6 +11,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## May 2019
+
+### Directory APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added assignedlabels property to the [Group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) entity. Property represents the list of sensitivity label pairs (label id, label name) associated with a group.
+
 ## April 2019
 
 ### Access reviews API
