@@ -8,6 +8,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Review app registration, permissions, and consent
 
+This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+
 When migrating an app from Azure AD Graph to Microsoft Graph, you can continue to use your existing app registration and app permissions without any changes. Additionally your end-users can continue to use your app (after migration to Microsoft Graph) without being required to consent again.  
 
 For any app update, there are three main areas of concern:

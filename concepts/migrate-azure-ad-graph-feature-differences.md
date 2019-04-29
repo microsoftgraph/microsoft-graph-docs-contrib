@@ -8,6 +8,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Feature differences between Azure AD Graph and Microsoft Graph
 
+This article is part of *step 1: review differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+
 Many features in Microsoft Graph work similarly to their Azure AD Graph counterparts. However, a few have been changed and/or improved. Here, you'll learn how to adapt your apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
 
 Here, we look at how Microsoft Graph handles:
@@ -50,7 +52,7 @@ To switch to the newer Microsoft Graph schema extension model, you'll need to:
 
 ## Differential queries
 
-Azure AD Graph and Microsoft Graph let you track changes using queries.  The high-level approach is similar between the two APIs, but the syntax is different for Microsoft Graph.  
+Azure AD Graph and Microsoft Graph let you track changes using queries.  The high-level approach is similar between the two APIs, but the syntax is different.  
 
 Azure AD Graph calls these differential queries.  In Microsoft Graph, they're [delta queries](/graph/delta-query-overview).
 
@@ -60,8 +62,8 @@ The following table highlights key similarities and differences:
 |----|----|----|
 | _Initial data request_ | Uses a query parameter:<br>`GET /groups?deltaLink=` | Uses a function: <br> `GET /groups/delta` |
 | _Get new changes_ | `GET /groups?deltaLink={deltaToken}` | `GET /groups/delta?$deltaToken={deltaToken}` |
-| _Sync from now_ |Uses a custom HTTP header <br> `ocp-aad-dq-include-only-delta-token: true` | Uses a query parameter. <br> `GET /groups/delta?$deltaToken=latest` |
-| _Track changes for directoryObjects_ | Gets changes for multiple resource (user and group) at the same time. (Example is shortened.)&nbsp;&nbsp;<br> `GET /directoryObject?$filter=isof('User') or isof('Group')&deltaLink=` | Not directly supported. Use separate queries with Microsoft Graph, one for each resource. |
+| _Sync from now_ |Uses a custom HTTP header:<br> `ocp-aad-dq-include-only-delta-token: true` | Uses a query parameter: <br> `GET /groups/delta?$deltaToken=latest` |
+| _Track changes for directoryObjects_ | Gets changes for multiple resource (user and group) in the same operation:&nbsp;&nbsp;<br> `GET /directoryObject?$filter=isof('User') or isof('Group')&deltaLink=` | Use separate queries with Microsoft Graph, one for each resource. |
 | _Get resource and relationship changes_ | All requests will return resource and relationship changes, if the resource has relationships. | `GET /groups/delta?$expand=members` |
 | _Response indicating new and changed items_ | <ul><li><p>Newly created instances are represented using their standard representation.</p></li><li><p>Updated instances are represented by their id with *at least* the properties that have been updated. Other properties may be included.</p></li><li><p>Relationships are represented as the `directoryLinkChange` type.</p></li></ul>|<ul><li><p>Newly created instances are represented using their standard representation.</p></li><li><p>Updated instances are represented by their id with *at least* the properties that have been updated. Other properties may be included.</p></li><li><p>Relationships are represented as annotations on the standard resource representation. These annotations use the format `propertyName@delta`, for example `members@delta` for a group's membership changes.</p></li></ul> |
 | _Response indicating  deleted items_| A deleted item is indicated with an additional property of *aad.isDeleted* set to true. | A deleted item is indicated with the \@removed annotation. It may also contain a reason code, indicating if the item was deleted, but can be restored, or is permanently deleted. |

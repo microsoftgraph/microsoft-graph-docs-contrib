@@ -6,7 +6,9 @@ localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Step 3: Deploy, test, and extend
+# Deploy, test, and extend
+
+This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
 1.  **Test throughly**
 

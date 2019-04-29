@@ -8,6 +8,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Property differences between Azure AD Graph and Microsoft Graph
 
+This article is part of *step 1: review differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+
 In general, the best way to compare the Azure AD Graph API to Microsoft Graph is to compare the underlying metadata for each service, especially the resource descriptions:
 
 - [Azure AD Graph metadata](https://graph.windows.net/microsoft.com/$metadata?api-version=1.6)
