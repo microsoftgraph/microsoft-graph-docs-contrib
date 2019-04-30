@@ -29,7 +29,7 @@ sections:
           src: ../images/index/i_get-started.svg
         title: App Registration
       - href: /graph/auth/auth-concepts
-        html: <p>Explore the basics of OAuth2.0 and how it's used in the Microsoft Graph.</p>
+        html: <p>Explore the basics of OAuth2.0 and how it's used in Microsoft Graph.</p>
         image:
           src: ../images/index/i_overview.svg
         title: Auth Basics
