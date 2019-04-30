@@ -1,12 +1,12 @@
 ---
-title: "userIdentity type"
-description: "For the Azure AD access reviews, this type represents an Azure AD user identity for a reviewer of an access review."
+title: "userIdentity resource type"
+description: "In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity."
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# userIdentity type
+# userIdentity resource type
 
 In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
 
@@ -19,10 +19,7 @@ In the context of an Azure AD audit log, this represents the user information th
 | ipAddress   | String| Indicates the client IP address used by user performing the activity (audit log only).|
 | userPrincipalName | String  | The userPrincipalName attribute of the user. |
 
-## Remarks
-
-In some circumstances, the unique identifier for the actor may not be available.
-In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+>**Note:** In some cases, the unique identifier might not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
 
 ## JSON representation
 
