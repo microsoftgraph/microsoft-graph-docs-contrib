@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # appIdentity resource type
 
-Indicates the identity of the application that performed the action or was changed. Includes Application Id, Name, Service Principal ID and Name. This resource is used by the [directoryAudit](../api/directoryaudit-get.md) API
+Indicates the identity of the application that performed the action or was changed. Includes application ID, name, and service principal ID and name. This resource is used by the [Get directoryAudit](../api/directoryaudit-get.md) operation.
 
 ## Properties
 
