@@ -3205,7 +3205,7 @@
           href: api/identityprovider-post-identityproviders.md
         - name: Get identity provider
           href: api/identityprovider-get.md
-        - name: Upate identity provider
+        - name: Update identity provider
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
