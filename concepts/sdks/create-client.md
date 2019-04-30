@@ -1,13 +1,15 @@
 ---
-title: "Create Graph Client"
-description: "Explanation of how to create a Graph client to use to make calls to the Microsoft Graph.  Includes how to setup authentication and select a sovereign cloud."
+title: "Create a Microsoft Graph client"
+description: "Describes how to create a client to use to make calls to Microsoft Graph. Includes how to set up authentication and select a sovereign cloud."
+localization_priority: Normal
+author: MichaelMainer
 ---
 
-# Create Graph Client
+# Create a Microsoft Graph client
 
-The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph. A single client instance can be used for the lifetime of the application. The instructions on how to add and install the Microsoft Graph client package into your project are found in the [SDK Installation](sdk-installation.md) topic.
+The Microsoft Graph client is designed to make it simple to make calls to Microsoft Graph. You can use a single client instance for the lifetime of the application. For information about how to add and install the Microsoft Graph client package into your project, see  [Install the SDK](sdk-installation.md).
 
-The following code snippets demonstrate how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages. The authentication provider will handle acquiring access tokens for the application. There are many different authentication providers for each language and platform. The different application providers support different client scenarios so read [Choose an Authentication Provider](choose-authentication-providers.md) for more details about which provider and options are appropriate for your scenario.
+The following code examples show how to create an instance of a Microsoft Graph client with an authentication provider in the supported languages. The authentication provider will handle acquiring access tokens for the application. Many different authentication providers are available for each language and platform. The different application providers support different client scenarios. For details about which provider and options are appropriate for your scenario, see [Choose an Authentication Provider](choose-authentication-providers.md).
 
 #### Create a client
 # [C#](#tab/CS)
