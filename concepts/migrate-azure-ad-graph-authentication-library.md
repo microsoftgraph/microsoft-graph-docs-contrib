@@ -21,7 +21,7 @@ You need only to make a few minor changes to continue using either approach.
 
 MSAL will fully replace ADAL.  So eventually, you will want to migrate to MSAL.
 
-If your app currently uses ADAL, we recommend a two stage migration:
+If your app currently uses ADAL, use a two stage migration approach:
 
 1. Update your app to acquire access tokens using ADAL to call Microsoft Graph.
 

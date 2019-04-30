@@ -12,7 +12,7 @@ This article is part of *step 1: review API differences* of the [process to migr
 
 Many features in Microsoft Graph work similarly to their Azure AD Graph counterparts. However, a few have been changed and/or improved. Here, you'll learn how to adapt your apps to take advantage of these differences.  Frequently, the changes are minor, but well worth the effort.
 
-Here, we look at how Microsoft Graph handles:
+This article explores how Microsoft Graph handles:
 
 - Directory schema extensions
 - Differential queries
