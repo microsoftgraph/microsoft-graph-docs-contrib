@@ -1,6 +1,6 @@
 ---
-title: "signIn resource type | Microsoft Graph"
-description: "Describes the signIn resource of Microsoft Graph API (REST), which helps audit user and application sign-in activity (v1.0 version)."
+title: "signIn resource type"
+description: "Details user and application sign-in activity for a tenant (directory)."
 author: "dhanyahk"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
