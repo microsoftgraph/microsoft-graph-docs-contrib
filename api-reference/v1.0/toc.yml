@@ -3740,14 +3740,14 @@
         - name: Get secure score
           href: api/securescore-get.md
         - name: List secure scores
-          href: api/securescores-list.md
+          href: api/security-list-securescores.md
       - name: Secure score control profiles
         href: resources/securescorecontrolprofile.md
         items:
         - name: Get secure score control profile
           href: api/securescorecontrolprofile-get.md
         - name: List secure score control profiles
-          href: api/securescorecontrolprofiles-list.md
+          href: api/security-list-securescorecontrolprofiles.md
         - name: Update secure score control profiles
           href: api/securescorecontrolprofile-update.md
       - name: Errors
