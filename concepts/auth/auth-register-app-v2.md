@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Register your app with the Azure AD v2.0 endpoint
 
-Your app must be registered with Azure AD. Registering your app establishes a unique application ID and other values that your app uses to authenticate with Azure AD and get tokens. For the Azure AD v2.0 endpoint, you register your app with the [Microsoft App Registration Portal](https://apps.dev.microsoft.com). You can use either a Microsoft account or a work or school account to register your app. Depending on the type of app you are developing, you will need to copy one or more properties during registration to use when you configure authentication and authorization for your app. 
+Your app must be registered with Azure AD. Registering your app establishes a unique application ID and other values that your app uses to authenticate with Azure AD and get tokens. For the Azure AD v2.0 endpoint, you register your app with the [Microsoft App Registration Portal](https://apps.dev.microsoft.com). You can use either a Microsoft account or a work or school account to register your app. Depending on the type of app you're developing, you'll need to copy one or more properties during registration to use when you configure authentication and authorization for your app. 
 
 
 > **Note:** This article primarily covers registering apps with the Azure AD v2.0 endpoint. For information about registering your app with the Azure AD endpoint, see [Azure AD endpoint considerations](#azure-ad-endpoint-considerations) below.
@@ -16,7 +16,7 @@ Your app must be registered with Azure AD. Registering your app establishes a un
 > Also, be aware that if you've previously registered apps in the Microsoft Azure portal, those apps will not be listed in the App Registration Portal. Manage those apps in the Azure portal. 
 
 
-The following screenshot shows an example web app registration that has been configured with a password and implicit flow. 
+The following screenshot shows an example of a web app registration that has been configured with a password and implicit flow. 
 ![Web app registration with password and implicit grant.](../images/v2-web-registration.png)
 
 To register your app, follow these steps; be sure to copy the indicated values to use when configuring authorization for your app:
@@ -26,7 +26,7 @@ To register your app, follow these steps; be sure to copy the indicated values t
     You can sign in with either a Microsoft account or a work or school account. 
 
 2. Choose **Add an app**.
-    > Note: If you signed in with a work or school account, select the **Add an app** button for **Converged applications**. 
+    > **Note:** If you signed in with a work or school account, select the **Add an app** button for **Converged applications**. 
 
 3. Enter a name for the app and choose **Create application**.
 
@@ -74,13 +74,13 @@ The following table shows the properties that you need to configure and copy for
 | Single Page App (SPA) | Web | Assigned | Yes | Yes | Yes <br/> SPAs use Open ID Connect implicit Flow |
 | Service/Daemon | Web | Assigned | Yes | Yes | No |
 
-Apps that provide an administrator consent experience may need an additional Redirect URL for Azure AD to return the response to.
+Apps that provide an administrator consent experience might need an additional Redirect URL for Azure AD to return the response to.
 
 For more detail about the App Registration Portal and the properties you can configure for your App, see [App registration reference](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-registration-portal).  
 
 ## Azure AD endpoint considerations
 
-You use the [Azure portal](https://aka.ms/aadapplist) to register your app for the Azure AD endpoint. You configure the same basic properties like Application ID, Application Secret, and Redirect URI/URL, as you would for the v2.0 endpoint; however, there are some important differences to be aware of: 
+You use the [Azure portal](https://aka.ms/aadapplist) to register your app for the Azure AD endpoint. You configure the same basic properties like Application ID, Application Secret, and Redirect URI/URL, as you would for the v2.0 endpoint; however, be aware of the following important differences: 
 
 - You can only use a work or school account to register an app.
 - Your app will require a different Application ID for each platform.
