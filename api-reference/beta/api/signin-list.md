@@ -1,5 +1,5 @@
 ---
-title: "List signIns | Microsoft Graph"
+title: "List signIns"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API (REST), which helps audit directory (tenant) activity (beta version)."
 localization_priority: Normal
 author: "lleonard-msft"
@@ -30,7 +30,7 @@ In addition, apps must be [properly registered](https://docs.microsoft.com/azure
 GET auditLogs/signIns
 ```
 ## Optional query parameters
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
+This method supports the following OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -86,7 +86,9 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
