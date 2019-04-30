@@ -365,7 +365,5 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 ## Next steps
 
-<!-- Need link to instructions on how to register an app. -->
-
 * Authentication providers require an client ID. You'll want to [register your application](https://portal.azure.com/) after you set up your authentication provider.
 * Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).

@@ -287,11 +287,11 @@
       items:
         - name: Overview
           href: sdks/sdks-overview.md
-        - name: Add the library to your project
-          href: sdks/sdk-installation.md          
+        - name: Install the SDK
+          href: sdks/sdk-installation.md
         - name: Create a client
           href: sdks/create-client.md
-        - name: Choose an Authentication Provider
+        - name: Choose an authentication provider
           href: sdks/choose-authentication-providers.md
     - name: Resources
       items:
