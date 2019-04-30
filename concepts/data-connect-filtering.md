@@ -31,7 +31,7 @@ The following datasets require a filter to be provided on one of the correspondi
 | Dataset Name                                                   | Properties that support filtering                                           | 
 |----------------------------------------------------------------|-----------------------------------------------------------------------------| 
 | BasicDataSet_v0.Event_v0<br>BasicDataSet_v0.Event_v1           | CreatedDateTime<br>LastModifiedDateTime                                     | 
-| BasicDataSet_v0.Message_v0<br>BasicDataSet_v0.Message_v0       | CreatedDateTime<br>LastModifiedDateTime<br>ReceivedDateTime<br>SentDateTime | 
+| BasicDataSet_v0.Message_v0<br>BasicDataSet_v0.Message_v1       | CreatedDateTime<br>LastModifiedDateTime<br>ReceivedDateTime<br>SentDateTime | 
 | BasicDataSet_v0.SentItem_v0<br>BasicDataSet_v0.SentItem_v1     | CreatedDateTime<br>LastModifiedDateTime<br>ReceivedDateTime<br>SentDateTime |
 
 **Note** Pipelines requesting BasicDataSet_v0.CalendarView_v0 also require a DateTime filter, but no `dateFilterColumn` is specified in the SourceDataSet. However, a `startTime` and `endTime` are required and only events that begin after the `startTime` and finish before the `endTime` are provided.

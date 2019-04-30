@@ -14,19 +14,25 @@ If you would like to see additional datasets, regions or sinks supported, let us
 
 ## Datasets
 
-Data connect supports the following data sets today. To view the schemas for each data set, create a new data set in ADF and use the Schema tab to view it. More detailed steps are found in the UX walk through at the bottom of Run Azure Data Factory pipelines to copy Office 365 Data.
+Data connect supports the following data sets today. To view the schemas for each data set, create a new data set in ADF and use the Schema tab to view it. 
+
 |Data set name|Description|
 |-------------|-----------|
-|BasicDataSet_v0.Contact_v0|This table contains contact information from each user's address book. The schema for these entities corresponds to the [Microsoft Graph personal contacts schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact)| 
-|BasicDataSet_v0.Event_v0|This table contains the events in each user's calendar. The schema for these entities corresponds to the [Microsoft Graph calendar events schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event)| 
-|BasicDataSet_v0.Message_v0|This table contains the message in each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message)| 
-|BasicDataSet_v0.SentItem_v0|This table contains the messages sent from each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message)| 
+|BasicDataSet_v0.Contact_v0|This table contains contact information from each user's address book. The schema for these entities resembles the [Microsoft Graph personal contacts schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact)| 
+|BasicDataSet_v0.Event_v0|This table contains the events in each user's calendar. The schema for these entities resembles the [Microsoft Graph calendar events schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event)| 
+|BasicDataSet_v0.Message_v0|This table contains the message in each user's mailbox. The schema for these entities resembles the [Microsoft Graph messages schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message)| 
+|BasicDataSet_v0.SentItem_v0|This table contains the messages sent from each user's mailbox. The schema for these entities resembles the [Microsoft Graph messages schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message)| 
 |BasicDataSet_v0.User_v0|This table contains user information (DisplayName, UserPrincipalName, etc).| 
 |BasicDataSet_v0.MailboxSettings_v0|This table contains the mailbox settings of each user. The schema for these entities corresponds to the [Microsoft Graph mailbox settings schema](https://docs.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0)| 
 |BasicDataSet_v0.MailFolder_v0|This table contains the mail folders from each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph mail folders schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/mailfolder)|
 |BasicDataSet_v0.Manager_v0|This table contains user information for the manager of each user. The schema for these entities corresponds to [Microsoft Graph user schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)|
 |BasicDataSet_v0.DirectReport_v0|This table contains user information about the employees that directly report to each user. The schema for these entities corresponds to the [Microsoft Graph user schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)|
+|BasicDataSet_v0.CalendarView_v0|This table contains the events  The schema for these entities corresponds to the [Microsoft Graph user schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/events)|
 |BasicDataSet_v0.User_v1|This table contains user information. The schema for these entities corresponds to the [Microsoft Graph user schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/user)|
+|BasicDataSet_v0.Contact_v1|This table contains contact information from each user's address book. The schema for these entities corresponds to the [Microsoft Graph personal contacts schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/contact)|
+|BasicDataSet_v0.Event_v1|This table contains the events in each user's calendar. The schema for these entities corresponds to the [Microsoft Graph calendar events schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event)|
+|BasicDataSet_v0.Message_v1|This table contains the message in each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message)|
+|BasicDataSet_v0.SentItem_v1|This table contains the message sent from each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message)|
 
 ## Regions
 
@@ -34,8 +40,8 @@ Data connect supports extracting data from a variety of different Office 365 reg
 
 | Office Region                    | Azure Region                                |
 |----------------------------------|---------------------------------------------|
-| **North America**                | EAST US                                     |
-|                                  | EAST US 2                                   |
+| **North America**                | East US                                     |
+|                                  | East US 2                                   |
 |                                  | Central US                                  |
 |                                  | North Central US                            |
 |                                  | South Central US                            |

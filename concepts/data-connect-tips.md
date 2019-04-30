@@ -8,19 +8,20 @@ ms.prod: "data-connect"
 
 # Tips for using Microsoft Graph data connect
 
-Customers can use Microsoft Graph data connect to grant developers managed access to their at-scale Microsoft Graph datasets. This doc provides supplementary tips as you begin exploring data connect. It isn't intended to be an introduction to data connect, so if you're completely new to it, see the [data connect overview](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview) and documentation first to get started.
+Microsoft Graph data connect allows developers to create applications that customers can provide managed access to their at-scale Microsoft Graph datasets. This article provides tips that will help you take advantage of the data connect feature. For an introduction to Microsoft Graph data connect, see the [Overview](data-connect-concept-overview.md) article.
 
 ## Is Microsoft Graph data connect right for you?
 
-Data connect and the Microsoft Graph APIs provide access to the same underlying data but in very different ways. data connect is designed to extract large amounts of data in bulk. The Microsoft Graph APIs are much more suitable for accessing relatively small pieces of data in real-time. In some cases, it might even make sense to combine them. For example, you may want use data connect to do an initial "backfill" of the last year of email data, and then use the Microsoft Graph APIs to analyze emails in real-time moving forward. Data connect and the Microsoft Graph APIs are different tools for different jobs, so it is important to think about which access method best fits your scenario.
+Data connect and the Microsoft Graph APIs provide access to the same underlying data but in very different ways. Data connect is designed to extract large amounts of data in bulk while the Microsoft Graph APIs are much more suitable for accessing discrete sets of data in real-time. In some cases, it might even make sense to combine them. For example, you may want use data connect to do an initial "backfill" of the last year of email data, and then use the Microsoft Graph APIs to analyze emails in real-time moving forward. Data connect and the Microsoft Graph APIs are different tools for different jobs, so it is important to think about which access method best fits your scenario.
 
 ## Expect an initial overhead
 
-Since data connect is designed to extract large amounts of data in bulk, there's some overhead before the data can be copied. The initial spin up time is around 45 minutes, meaning all pipelines will take at least that long regardless of the data size. This may be a negligible penalty for large amounts of data, but if the spin up time is unacceptable for your scenario, then the Microsoft Graph APIs may provide a better approach.
+Since data connect is designed to extract large amounts of data in bulk, there's some overhead before the data can be copied. This overhead is around 45 minutes, meaning all pipelines will take at least that long regardless of the data size. This may be a negligible penalty for large amounts of data, but if this time is unacceptable for your scenario, then the Microsoft Graph APIs may provide a better approach.
 
-## Data must stay within the same subscription
+## Data must stay within the organization's subscription
 
-Data connect pipelines are orchestrated by Azure Data Factory, a data integration service that runs in an Azure subscription. The Azure subscription is [associated with exactly one Office 365 tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). This is the only tenant that data connect can extract data from! You can't specify an arbitrary tenant from which to fetch data. This way the data stays within the boundaries of the Office 365 tenant and associated Azure subscription.
+Data connect pipelines are orchestrated by Azure Data Factory, a data integration service that runs in an Azure subscription. The Azure subscription is [associated with exactly one Office 365 tenant](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). This way, the data must initially flow to an associated Azure subscription and, after further minimalization and aggregation, the data may be used elsewhere.
+
 If you want to build an app for others to use to extract their Office 365 data, you can package the app as an [Azure managed application](https://docs.microsoft.com/en-us/azure/managed-applications/overview) and publish it to the Azure Marketplace. Then someone can deploy your app into their own Azure subscription, and the app can access data in their tenant. 
 
 ## Use of service principals
@@ -42,7 +43,7 @@ The data connect documenatoin shows you how to use PowerShell and the PAM UX to 
 
 ## Use a second user to approve PAM requests
 
-When you execute a pipeline and trigger a PAM request, the request is attached to your user account which owns the service principal used by the pipeline. But even if this account is part of the approver group you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal `Requestor and approver are the same. Self-approval is not allowed.` For development, you'll want to have a 2nd account in addition to the admin who approves requests.
+When you execute a pipeline and trigger a PAM request, the request is attached to your user account which owns the service principal used by the pipeline. But even if this account is part of the approver group you set up, you can't use it to approve the PAM request because self-approvals are not allowed. If you try, you'll get an error message in the PAM portal `Requestor and approver are the same. Self-approval is not allowed.` For development, you'll want to have a 2nd account in addition to the admin who approves requests. Both the submitter and the approver must have active Exchange online accounts as well.
 
 ## Deduplicate emails when needed
 
