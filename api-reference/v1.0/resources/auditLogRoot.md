@@ -1,6 +1,6 @@
 ---
 title: "auditLogRoot resource type"
-description: "The `/auditLogs` resource is a container for different types of audit logs."
+description: "Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties."
 author: "dhanyahk"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # auditLogRoot resource type
 
-The auditLogs resource is a container for different types of audit logs. It returns a singleton auditLog resource. It doesn't contain any usable properties.
+Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties.
 
 ## Methods
 
