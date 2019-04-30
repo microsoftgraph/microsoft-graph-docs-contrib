@@ -1,6 +1,6 @@
 ---
-title: "Working with audit logs in Microsoft Graph"
-description: "Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs."
+title: "Azure AD audit log API overview"
+description: "Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and use Azure AD services."
 localization_priority: Priority
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
@@ -22,9 +22,7 @@ Azure AD provides two types of activity logs:
 The audit logs activity report provides you with access to the history of every task performed in your tenant. The audit logs report provides you with records of system activities for compliance. Amongst others, the provided data enables you to address common scenarios such as:
 
 - Who granted admin group access to a directory user?
-
 - Which users are signing in to a recently acquired app?
-
 - How many passwords resets were made within the directory?
 
 ### Sign-in logs
@@ -37,7 +35,7 @@ The sign-ins activity report helps you determine who performed the tasks reporte
 
 ## What can I do with audit log APIs in Microsoft Graph?
 
-Here are popular requests for working with audit log data:
+The following are popular requests for working with audit log data:
 
 Operation | URL
 :----------|:----
