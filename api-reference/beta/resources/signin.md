@@ -1,5 +1,5 @@
 ---
-title: "signIn resource type | Microsoft Graph"
+title: "signIn resource type"
 description: "Describes the signIn resource of Microsoft Graph API (REST), which helps audit user and application sign-in activity (beta version)."
 author: "lleonard-msft"
 localization_priority: Normal
@@ -11,14 +11,14 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource details user or application sign-in activity in your directory. 
+Provides details about user or application sign-in activity in your directory. 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
-|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of signIn object.|
+|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of a signIn object.|
 
 ## Properties
 | Property	   | Type	|Description|
