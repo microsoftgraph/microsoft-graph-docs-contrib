@@ -120,7 +120,7 @@ Content-type: application/json
           "comment": null,
           "state": "Default",
           "updatedBy": null,
-          "updatedDateTime": UNKNOWN
+          "updatedDateTime": "2019-03-19T22:37:14.628799Z"
         }
       ],
       "vendorInformation": {

@@ -102,7 +102,7 @@ Content-type: application/json
                 {
                     "basis": "TotalSeats",
                     "averageScore": 46.0
-                }
+                },
                 {
                     "basis": "IndustryTypes",
                     "averageScore": 109.0
