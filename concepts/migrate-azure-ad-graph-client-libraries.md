@@ -8,6 +8,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Migrate .NET client library use to Microsoft Graph
 
+This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+
 If your app currently uses the Azure AD Graph client library, we recommend switching to the [Microsoft Graph .Net client SDK](https://github.com/microsoftgraph/msgraph-sdk-dotnet).
 
 >NOTE: Currently the Microsoft Graph .Net client library is only supported for .NET Framework 4.5 and .NET Standard 1.1.  However please consult Microsoft Graph .Net client library for the latest support information.

@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Request differences between Azure AD Graph and Microsoft Graph
 
-This article is part of *step 1: review differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+This article is part of *step 1: review API differences* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
 Microsoft Graph and the Azure AD Graph API are both REST APIs and they each support ODATA conventions for query parameters. However, the syntax varies between these two APIs.
 
@@ -20,8 +20,13 @@ The following table highlights the main request differences between the two APIs
 
 || Azure AD Graph | Microsoft Graph |
 |---|---|---|
-|Request<br>syntax| `https://graph.windows.net/{tenant_id}/` <br> `{resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`{version}/{resource}?query-parameters`|
-|Service&nbsp;endpoints:<br>Global<br>US Gov L4<br>US Gov L5 (DOD)<br> Germany<br>China (21Vianet)|<br>`https://graph.windows.net`<br>`https://graph.microsoftazure.us`<br>`?`<br>`https://graph.cloudapi.de`<br>`https://graph.chinacloudapi.cn`|<br>`https://graph.microsoft.com`<br>`https://graph.microsoft.us`<br>`https://dod-graph.microsoft.us`<br>`https://graph.microsoft.de`<br>`https://microsoftgraph.chinacloudapi.cn`
+|_Request syntax_| `https://graph.windows.net/{tenant_id}/` <br> `{resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`{version}/{resource}?query-parameters`|
+|_Service_&nbsp;_endpoints:_||
+|-&nbsp;Global|`https://graph.windows.net`|`https://graph.microsoft.com`|
+|-&nbsp;US&nbsp;Gov&nbsp;L4|`https://graph.microsoftazure.us`|`https://graph.microsoft.us`|
+|-&nbsp;US&nbsp;Gov&nbsp;L5&nbsp;(DOD)||`https://dod-graph.microsoft.us`|
+|-&nbsp;Germany|`https://graph.cloudapi.de`|`https://graph.microsoft.de`|
+|-&nbsp;China&nbsp;(21Vianet)| `https://graph.chinacloudapi.cn`|`https://microsoftgraph.chinacloudapi.cn`|
 |_{tenant_id}_|Specify the ID of the tenant in the request.|Specifying a tenant ID in the request is optional as it is inferred from the access token.<br><br>If you specify the tenant ID, it goes between the `{version}` and the `{resource}` in the request URL.|
 |_{version}_|Specify the release version of Azure AD Graph in the request using a required query parameter.|Specify the release version of Microsoft Graph in the request as part of the URL path just after the service endpoint.|
 
