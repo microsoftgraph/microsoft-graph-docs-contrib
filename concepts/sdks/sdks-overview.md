@@ -1,19 +1,19 @@
 ---
-title: "Microsoft Graph SDK Overview"
-description: "Descriptions of the SDKs that are available, the platforms they support, and the value they provide to developers."
+title: "Microsoft Graph SDsK overview"
+description: "Describes the SDKs that are available, the platforms they support, and the value they provide to developers."
 ---
 
-# Microsoft Graph SDKs Overview
+# Microsoft Graph SDKs overview
 
-The Microsoft Graph SDKs are designed to simplify building high quality, efficient and resilient applications that access Microsoft Graph. There are two components to the SDKs, a service library and a core library.
+The Microsoft Graph SDKs are designed to simplify building high-quality, efficient, and resilient applications that access Microsoft Graph. The SDKs include two components: a service library and a core library.
 
-The service library contains models and request builders that are generated from Microsoft Graph metadata to provide a rich, strongly typed and discoverable experience when working with the many datasets available on Microsoft Graph.
+The service library contains models and request builders that are generated from Microsoft Graph metadata to provide a rich, strongly typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
 
-The core library provide a set of features that enhance working with all the services of the Graph.  Embedded support for retry handling, secure redirects, transparent authentication and payload compression, improve the quality of your application's interactions with Microsoft Graph with no added complexity to your application code but while still leaving you completely in control.  The core library also provides support for common tasks such as paging through collections and creating batch requests.
+The core library provide a set of features that enhance working with all the Microsoft Graph services. Embedded support for retry handling, secure redirects, transparent authentication, and payload compression, improve the quality of your application's interactions with Microsoft Graph, with no added complexity, while leaving you completely in control. The core library also provides support for common tasks such as paging through collections and creating batch requests.
 
-## Supported Platforms
+## Supported platforms
 
-SDKs are currently available for numerous languages and enable building solutions on many platforms including:
+SDKs are currently available for a number of languages and enable building solutions on many platforms, including:
 
 - [Android](https://developer.microsoft.com/en-us/graph/get-started/android)
 - [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
@@ -26,10 +26,10 @@ SDKs are currently available for numerous languages and enable building solution
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
 - [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
-## Useful Links
+## Office 365 developer subscription
 
-The SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design) provides more details on the features and capabilities of the SDK. Request or vote on additional features at the [Microsoft Graph UserVoice](https://microsoftgraph.uservoice.com) site. The [Microsoft Graph ](https://github.com/microsoftgraph) GitHub organization contains all of the SDKs and samples.
+When building applications using Microsoft Graph, we recommend that you get a free Office 365 developer subscription by signing up for the [Office 365 Developer Program](http://aka.ms/OfficeDevProgram).
 
-## Developer Tenant
+## See also
 
-When building applications with Microsoft Graph we recommend you create a developer tenant by signing up for the [Office Developer Program](http://aka.ms/OfficeDevProgram).
+The SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design) provides more details about the features and capabilities of the SDK. Request or vote on additional features at the [Microsoft Graph UserVoice](https://microsoftgraph.uservoice.com) site. For a list of SDKs and samples for Microsoft Graph, see the [Microsoft Graph resources page](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs).
