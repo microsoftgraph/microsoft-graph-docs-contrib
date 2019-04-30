@@ -1,14 +1,14 @@
 ---
-title: "Policies and monetization"
+title: "Policies and licensing"
 description: "Describes what policies are supported and how to assign ISV access SKUs to organizations"
 author: "tlenig"
 localization_priority: Priority
 ms.prod: "data-connect"
 ---
 
-# Policies and monetization
+# Policies and licensing
 
-Microsoft Graph data connect leverages [Azure managed applications](https://docs.microsoft.com/en-us/azure/managed-applications/overview) to allow developers to create and deploy their solutions in their customer's Azure environment. Managed applications allow data connect developers to support certain Azure policies, giving customers greater confidence and comfortability when using their applications. Additionally, developers can purchase and apply licenses to the organizations installing their applications, enabling the application to access data through data connect.
+Microsoft Graph data connect leverages [Azure managed applications](https://docs.microsoft.com/en-us/azure/managed-applications/overview) to allow developers to create and deploy their solutions in their customer's Azure environment. Managed applications allow data connect developers to support certain Azure policies, giving customers greater confidence and comfortability when using their applications. Additionally, developers must purchase and apply licenses from Microsoft to their own organization or organizations installing their applications, enabling the application to access data through data connect.
 
 ## Policies
 
@@ -19,7 +19,7 @@ When you select any of the policies during Azure marketplace publishing, the pol
 
 If you would like to see additional policies supported, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581).
 
-## Monetization
+## Licensing
 
 Organizations must purchase a particular SKU to develop applications or acces their data through data connect. If an organization wishes to access their own data, they must purchase Workplace Analytics for the users they wish to access. Once a customer has purchased Workplace Analytics for their users, they can utilize data connect to access their data directly or they can deploy any application developed by an independent software vendors (ISV) that uses data connect as well. Visit the [Workplace Analytics product page](https://products.office.com/en-us/business/workplace-analytics) to learn more about the offering and how to purchase. 
 
