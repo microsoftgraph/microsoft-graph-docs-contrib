@@ -14,7 +14,7 @@ Represents a tenant's secure score per day of scoring data, at the tenant and co
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
 |[Get secureScore](../api/securescore-get.md) | [secureScore](securescore.md) |Read properties and metadata of a secureScore object. | 
-|[List secureScores](../api/securescores-list.md) | [secureScores](securescore.md) collection |Get secureScore object collection.|
+|[List secureScores](../api/security-list-securescores.md) | [secureScores](securescore.md) collection |Get secureScore object collection.|
 
 
 ## Properties
