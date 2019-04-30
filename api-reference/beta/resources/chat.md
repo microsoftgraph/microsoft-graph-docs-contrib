@@ -4,6 +4,7 @@ description: "A chat is a collection of chatMessages between one or more partici
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # chat resource type

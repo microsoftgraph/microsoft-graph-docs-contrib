@@ -3,6 +3,8 @@ title: "Get anonymousIpRiskEvent"
 description: "Retrieve the properties and relationships of an anonymousipriskevent object."
 localization_priority: Normal
 doc_type: apiPageType
+ms.prod: <ms.prod>
+author: <author>
 ---
 
 # Get anonymousIpRiskEvent

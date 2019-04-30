@@ -4,6 +4,7 @@ description: "Retrieve a single message in a chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get chat message
