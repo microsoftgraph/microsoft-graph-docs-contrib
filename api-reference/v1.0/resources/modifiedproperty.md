@@ -1,6 +1,6 @@
 ---
 title: "modifiedProperty resource type"
-description: "Indicates all the modified properties with old value and new value for any resource in Azure AD that's changed"
+description: "Indicates all the properties on an Azure AD resource that have been modified, including the old and new values."
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "azure-ad"
@@ -9,8 +9,6 @@ ms.prod: "azure-ad"
 # modifiedProperty resource type
 
 Indicates all the properties on an Azure AD resource that have been modified, including the old and new values.
-
-
 
 ## Properties
 
