@@ -14,7 +14,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
 |[Get secureScoreControlProfile](../api/securescorecontrolprofile-get.md) | [securescorecontrolprofile](secureScoreControlProfile.md) |Read properties and metadata of a secureScoreControlProfiles object.|
-|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Read properties and metadata of a secureScoreControlProfiles object.|
+|[List secureScoreControlProfiles](../api/security-list-securescorecontrolprofiles.md) | [secureScoreControlProfile](securescorecontrolprofile.md) |Read properties and metadata of a secureScoreControlProfiles object.|
 |[Update securescorecontrolprofile](../api/securescorecontrolprofile-update.md) | [securescorecontrolprofile](securescorecontrolprofile.md) |Update an securescorecontrolprofile object. |
 
 
