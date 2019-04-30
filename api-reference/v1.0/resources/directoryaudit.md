@@ -1,6 +1,6 @@
 ---
-title: "directoryAudit resource type | Microsoft Graph"
-description: "Describes the directoryAudit resource (entity) of Microsoft Graph API (REST), which helps audit directory (tenant) activities (v1.0 version)."
+title: "directoryAudit resource type"
+description: "Represents the directory audit items and its collection."
 author: "dhanyahk"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # directoryAudit resource type
 
-This resource represents the directory audit items and its collection.
+Represents the directory audit items and its collection.
 
 ## Methods
 
