@@ -1,6 +1,8 @@
 ---
-title: "Microsoft Graph SDsK overview"
+title: "Microsoft Graph SDKs overview"
 description: "Describes the SDKs that are available, the platforms they support, and the value they provide to developers."
+localization_priority: Normal
+author: MichaelMainer
 ---
 
 # Microsoft Graph SDKs overview
@@ -13,7 +15,7 @@ The core library provide a set of features that enhance working with all the Mic
 
 ## Supported platforms
 
-SDKs are currently available for a number of languages and enable building solutions on many platforms, including:
+SDKs are currently available for the following languages and platforms:
 
 - [Android](https://developer.microsoft.com/en-us/graph/get-started/android)
 - [Angular](https://developer.microsoft.com/en-us/graph/get-started/angular)
