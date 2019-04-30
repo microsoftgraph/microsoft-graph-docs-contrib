@@ -1,22 +1,24 @@
 ---
 title: "Install the Microsoft Graph SDK"
 description: "Instructions for installing the C#, Java, Javascript, Objective-C, PHP, and Ruby Microsoft Graph SDKs."
+localization_priority: Normal
+author: MichaelMainer
 ---
 
-# Installing Microsoft Graph SDKs
+# Install the Microsoft Graph SDKs
 
-The Microsoft Graph SDKs are made available for inclusion in your projects via GitHub and popular platform package managers. This topic describes how you can install the Microsoft Graph SDK in to your project.
+The Microsoft Graph SDKs are available to be included in your projects via GitHub and popular platform package managers. This topic describes how you can install the Microsoft Graph SDK into your project.
 
-## Install the Microsoft Graph .Net SDK
+## Install the Microsoft Graph .NET SDK
 
-The Microsoft Graph .Net SDK is included in the following NuGet packages:
+The Microsoft Graph .NET SDK is included in the following NuGet packages:
 
 * [Microsoft.Graph](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - Contains the models and request builders for accessing the `v1.0` endpoint with the fluent API. Microsoft.Graph has a dependency on Microsoft.Graph.Core.
 * [Microsoft.Graph.Beta](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) - Contains the models and request builders for accessing the `beta` endpoint with the fluent API. Microsoft.Graph.Beta has a dependency on Microsoft.Graph.Core.
 * [Microsoft.Graph.Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) - The core library for making calls to Microsoft Graph.
-* [Microsoft.Graph.Auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) - Provides an authentication scenario-based wrapper of Microsoft Authentication Library (MSAL) for use with the Microsoft Graph SDK. Microsoft.Graph.Auth has a dependency on Microsoft.Graph.Core.
+* [Microsoft.Graph.Auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) - Provides an authentication scenario-based wrapper of the Microsoft Authentication Library (MSAL) for use with the Microsoft Graph SDK. Microsoft.Graph.Auth has a dependency on Microsoft.Graph.Core.
 
-You can use either the [Package Manager UI in Visual Studio or the Package Manager Console](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio) to install the Microsoft.Graph packages into your project. The following example Package Manager Console commands will install the Microsoft.Graph, Microsoft.Graph.Core, and Microsoft.Graph.Auth libraries. Microsoft.Graph.Core is installed as a dependency of Microsoft.Graph.
+You can use either the [Package Manager UI in Visual Studio or the Package Manager Console](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio) to install the Microsoft.Graph packages into your project. The following Package Manager Console commands will install the Microsoft.Graph, Microsoft.Graph.Core, and Microsoft.Graph.Auth libraries. Microsoft.Graph.Core is installed as a dependency of Microsoft.Graph.
 
 ```
 Install-Package Microsoft.Graph
@@ -74,7 +76,7 @@ npm install @microsoft/microsoft-graph-types --save-dev
 
 ## Install the Microsoft Graph Objective-C SDK
 
-The Microsoft Graph Objective-C SDK supports both iOS and MacOS platforms and can be installed into your project using either CocoaPods or Carthage.
+The Microsoft Graph Objective-C SDK supports both iOS and macOS platforms and can be installed into your project using either CocoaPods or Carthage.
 
 ### Install the Microsoft Graph Objective-C SDK using Cocoapods
 
@@ -100,13 +102,13 @@ github "microsoftgraph/msgraph-sdk-objc-auth" "tags/<latest_release_tag>"
 
 3. Using Xcode, in your application target's **General** settings tab, in the **Linked Frameworks and Libraries** section, drag and drop the **MSGraphClientSDK.framework** and **MSGraphMSALAuthProvider.framework** from the Carthage/Build folder on disk.
 
-4. On your application target's **Build Phases** settings tab, click the **+** icon and choose **New Run Script Phase**. Create a Run Script in which you specify your shell (ex: /bin/sh), add the following contents to the script:
+4. On your application target's **Build Phases** settings tab, click the **+** icon and choose **New Run Script Phase**. Create a run script in which you specify your shell (ex: /bin/sh), and add the following contents to the script:
 
 ```
 /usr/local/bin/carthage copy-frameworks
 ```
 
-5. Add the paths to the frameworks you want to use under "Input Files"
+5. Add the paths to the frameworks you want to use under **Input Files**.
 
 ```
 $(SRCROOT)/Carthage/Build/iOS/MSGraphClientSDK.framework
