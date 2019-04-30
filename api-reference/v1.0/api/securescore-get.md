@@ -81,7 +81,7 @@ Content-type: application/json
     "HasInTune"
   ],
   "licensedUserCount": 100,
-  "maxScore": 697,
+  "maxScore": 697.0,
   "averageComparativeScores": [
     {
       "basis": "AllTenants",

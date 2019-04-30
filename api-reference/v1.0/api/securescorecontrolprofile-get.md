@@ -107,7 +107,7 @@ Content-type: application/json
       "comment": null,
       "state": "Default",
       "updatedBy": null,
-      "updatedDateTime": null
+      "updatedDateTime": UNKNOWN
     }
   ],
   "vendorInformation": {
