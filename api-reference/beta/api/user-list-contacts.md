@@ -2,7 +2,7 @@
 title: "List contacts"
 description: "Get contacts in the user's mailbox."
 localization_priority: Normal
-author: "dkershaw10"
+author: "angelgolfer-ms"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -147,8 +147,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-list-contacts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

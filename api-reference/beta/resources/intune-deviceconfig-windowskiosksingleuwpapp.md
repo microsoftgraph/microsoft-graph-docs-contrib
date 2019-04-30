@@ -41,12 +41,14 @@ Here is a JSON representation of the resource.
     "startLayoutTileSize": "String",
     "name": "String",
     "appType": "String",
+    "autoLaunch": true,
     "appUserModelId": "String",
     "appId": "String",
     "containedAppId": "String"
   }
 }
 ```
+
 
 
 

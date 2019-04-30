@@ -16,7 +16,7 @@ doc_type: apiPageType
 Read properties and relationships of the [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2083
+Content-Length: 2186
 
 {
   "value": {
@@ -110,10 +110,13 @@ Content-Length: 2083
     "autoRestartNotificationDismissal": "automatic",
     "scheduleRestartWarningInHours": 13,
     "scheduleImminentRestartWarningInMinutes": 7,
-    "userPauseAccess": "enabled"
+    "userPauseAccess": "enabled",
+    "userWindowsUpdateScanAccess": "enabled",
+    "updateNotificationLevel": "defaultNotifications"
   }
 }
 ```
+
 
 
 

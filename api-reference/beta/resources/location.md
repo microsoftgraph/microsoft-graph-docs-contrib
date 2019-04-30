@@ -3,6 +3,8 @@ title: "Location resource type"
 description: "Represents location information of an event."
 localization_priority: Normal
 doc_type: resourcePageType
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Location resource type
@@ -35,7 +37,7 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
 | displayName  | String | The name associated with the location.                       |
 | locationEmailAddress | String | Optional email address of the location. |
 | locationUri | String | Optional URI representing the location. |
-| locationType | String | The type of location. Possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Read-only.|
+| locationType | locationType | The type of location. Possible values are: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Read-only.|
 | uniqueId | String | For internal use only.|
 | uniqueIdType | String | For internal use only. |
 
@@ -55,8 +57,8 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
   "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
   "locationEmailAddress": "string",
-  "locationUri": "string",
   "locationType": "string",
+  "locationUri": "string",
   "uniqueId": "string",
   "uniqueIdType": "string"
 }
@@ -74,8 +76,6 @@ Depending on how an event is created, expect Outlook to set the read-only **loca
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/location.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

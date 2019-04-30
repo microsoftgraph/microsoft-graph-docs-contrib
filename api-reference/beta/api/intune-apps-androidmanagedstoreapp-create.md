@@ -16,7 +16,7 @@ doc_type: apiPageType
 Create a new [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -63,11 +63,13 @@ The following table shows the properties that are required when you create the a
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |packageId|String|The package identifier.|
 |appIdentifier|String|The Identity Name.|
 |usedLicenseCount|Int32|The number of VPP licenses in use.|
 |totalLicenseCount|Int32|The total number of VPP licenses.|
 |appStoreUrl|String|The Play for Work Store app URL.|
+|supportsOemConfig|Boolean|Whether this app supports OEMConfig policy.|
 
 
 
@@ -81,7 +83,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 881
+Content-length: 938
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -105,11 +107,13 @@ Content-length: 881
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
-  "appStoreUrl": "https://example.com/appStoreUrl/"
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "supportsOemConfig": true
 }
 ```
 
@@ -118,7 +122,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1053
+Content-Length: 1110
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -145,13 +149,16 @@ Content-Length: 1053
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
-  "appStoreUrl": "https://example.com/appStoreUrl/"
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "supportsOemConfig": true
 }
 ```
+
 
 
 

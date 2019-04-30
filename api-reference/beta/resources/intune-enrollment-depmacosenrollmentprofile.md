@@ -55,9 +55,12 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |privacyPaneDisabled|Boolean|Indicates if privacy screen is disabled Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|deviceNameTemplate|String|Sets a literal or name pattern. Inherited from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |registrationDisabled|Boolean|Indicates if registration is disabled|
 |fileVaultDisabled|Boolean|Indicates if file vault is disabled|
 |iCloudDiagnosticsDisabled|Boolean|Indicates if iCloud Analytics screen is disabled|
+|iCloudStorageDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
+|chooseYourLockScreenDisabled|Boolean|Indicates if iCloud Documents and Desktop screen is disabled|
 
 ## Relationships
 None
@@ -98,11 +101,15 @@ Here is a JSON representation of the resource.
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "deviceNameTemplate": "String",
   "registrationDisabled": true,
   "fileVaultDisabled": true,
-  "iCloudDiagnosticsDisabled": true
+  "iCloudDiagnosticsDisabled": true,
+  "iCloudStorageDisabled": true,
+  "chooseYourLockScreenDisabled": true
 }
 ```
+
 
 
 

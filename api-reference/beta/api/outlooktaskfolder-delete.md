@@ -24,9 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+DELETE /me/outlook/taskFolders/{id}
+DELETE /me/outlook/taskGroups/{id}/taskFolders/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 DELETE /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
-
 ```
 ## Request headers
 | Name       | Description|
@@ -48,7 +49,7 @@ Here is an example of the request.
   "name": "delete_outlooktaskfolder"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/outlook/taskFolders('AAMkADIyAAAhrbPXAAA=')
+DELETE https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAhrbPXAAA=
 ```
 ##### Response
 Here is an example of the response. 
@@ -69,8 +70,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlooktaskfolder-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
