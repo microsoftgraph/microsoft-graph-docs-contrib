@@ -86,7 +86,7 @@ Content-type: application/json
             "azureTenantId": "00000001-0001-0001-0001-000000000001c",
             "activeUserCount": 0,
             "createdDateTime": "2019-03-19T15:21:00Z",
-            "currentScore": 387,
+            "currentScore": 387.0,
             "enabledServices": [
                 "HasExchange",
                 "HasSharePoint",
@@ -97,15 +97,15 @@ Content-type: application/json
             "averageComparativeScores": [
                 {
                     "basis": "AllTenants",
-                    "averageScore": 37
+                    "averageScore": 37.0
                 },
                 {
                     "basis": "TotalSeats",
-                    "averageScore": 46
+                    "averageScore": 46.0
                 }
                 {
                     "basis": "IndustryTypes",
-                    "averageScore": 109
+                    "averageScore": 109.0
                 }
             ],
             "controlScores": [
@@ -113,13 +113,13 @@ Content-type: application/json
                     "controlCategory": "Identity",
                     "controlName": "AdminMFA",
                     "description": "Requiring multi-factor authentication (MFA) for all Azure Active Directory accounts with privileged roles",
-                    "score": 35
+                    "score": 35.0
                 },
                 {
                     "controlCategory": "Data",
                     "controlName": "DLPEnabled",
                     "description": "Data Loss Prevention (DLP) policies can be used to comply with business standards and industry regulations.",
-                    "score": 20
+                    "score": 20.0
                 }
             ],
             "vendorInformation": {
