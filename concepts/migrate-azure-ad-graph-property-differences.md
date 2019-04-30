@@ -188,7 +188,7 @@ The Azure AD Graph TenantDetails resource is renamed to organization in Microsof
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|
-| **companyLastDirSyncTime** | beta&nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0 - **onPremisesLastSyncDateTime** |  |
+| **companyLastDirSyncTime** | beta&nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br>v1.0 - **onPremisesLastSyncDateTime** |  |
 | **dirSyncEnabled** | beta&nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 - **onPremisesSyncEnabled** |  |
 | **provisoningErrors** | beta&nbsp;-&nbsp;_Not&nbsp;yet&nbsp;available_<br> v1.0 - _Not yet available_ | |
 | **telephoneNumber** | beta&nbsp;-&nbsp;**businessPhones** <br> v1.0 - **businessPhones** |  |
