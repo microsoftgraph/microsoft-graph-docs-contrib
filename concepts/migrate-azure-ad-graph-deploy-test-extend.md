@@ -36,11 +36,9 @@ If you run into problems or need help during the migration process, you can:
 
 - Review the [checklist](migrate-azure-ad-graph-overview.md) again
 - Post questions to [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph)
-- Review Microsoft Graph samples to contrast and compare with your application code:
-    | App type | Sample links |
-    |:---------|:-------------|
-    | Uses Azure AD Graph REST API | [Quick starts and samples](/graph/get-started) and choose your platform of choice and run through the quick start or search for an appropriate sample. |
-    | Uses Azure AD Graph .NET client library | [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) <br> [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)|
+- Review Microsoft Graph samples to contrast and compare with your existing application code:
+  - **App uses REST API**: explore [quick starts and samples](/graph/get-started), choosing your platform of choice and run through the quick start or search for an appropriate sample
+  - **App uses .NET client library**: review [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
 ## Next Steps
 

@@ -295,7 +295,7 @@
           href: migrate-azure-ad-graph-overview.md
         - name: Checklist to migrate apps
           href: migrate-azure-ad-graph-planning-checklist.md
-        - name: Review differences
+        - name: "1: Review differences"
           expanded: true
           items: 
           - name: Requests
@@ -308,9 +308,9 @@
             href: migrate-azure-ad-graph-property-differences.md
           - name: Methods
             href: migrate-azure-ad-graph-method-differences.md
-        - name: Examine API use
+        - name: "2: Examine API use"
           href: migrate-azure-ad-graph-audit-api-use.md
-        - name: Review app details
+        - name: "3: Review app details"
           expanded: true
           items:
           - name: App registration
@@ -319,7 +319,7 @@
             href: migrate-azure-ad-graph-authentication-library.md
           - name: .NET client libraries 
             href: migrate-azure-ad-graph-client-libraries.md
-        - name: Deploy, test, and extend
+        - name: "4: Deploy, test, and extend"
           href: migrate-azure-ad-graph-deploy-test-extend.md
     - name: Resources
       expanded: true

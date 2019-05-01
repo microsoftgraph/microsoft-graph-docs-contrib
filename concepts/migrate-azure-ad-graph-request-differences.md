@@ -20,15 +20,15 @@ The following table highlights the main request differences between the two APIs
 
 || Azure AD Graph | Microsoft Graph |
 |---|---|---|
-|_Request syntax_| `https://graph.windows.net/{tenant_id}/` <br> `{resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`{version}/{resource}?query-parameters`|
-|_Service_&nbsp;_endpoints:_||
+|Request syntax| `https://graph.windows.net/{tenant_id}/` <br> `{resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`{version}/{resource}?query-parameters`|
+|Service&nbsp;endpoints:||
 |-&nbsp;Global|`https://graph.windows.net`|`https://graph.microsoft.com`|
 |-&nbsp;US&nbsp;Gov&nbsp;L4|`https://graph.microsoftazure.us`|`https://graph.microsoft.us`|
 |-&nbsp;US&nbsp;Gov&nbsp;L5&nbsp;(DOD)|`https://graph.microsoftazure.us`|`https://dod-graph.microsoft.us`|
 |-&nbsp;Germany|`https://graph.cloudapi.de`|`https://graph.microsoft.de`|
 |-&nbsp;China&nbsp;(21Vianet)| `https://graph.chinacloudapi.cn`|`https://microsoftgraph.chinacloudapi.cn`|
-|_{tenant_id}_|Specify the ID of the tenant in the request.|It's optional to specify a tenant ID in the request as it is inferred from the access token.<br><br>If you specify the tenant ID, it goes between the `{version}` and the `{resource}` in the request URL.|
-|_{version}_|Specify the release version of Azure AD Graph in the request using a required query parameter.|Specify the release version of Microsoft Graph in the request as part of the URL path just after the service endpoint.|
+|{tenant_id}|Specify the ID of the tenant in the request.|It's optional to specify a tenant ID in the request as it is inferred from the access token.<br><br>If you specify the tenant ID, it goes between the `{version}` and the `{resource}` in the request URL.|
+|{version}|Specify the release version of Azure AD Graph in the request using a required query parameter.|Specify the release version of Microsoft Graph in the request as part of the URL path just after the service endpoint.|
 
 You can continue to use the same query parameters in Microsoft Graph as Azure AD Graph.
 
