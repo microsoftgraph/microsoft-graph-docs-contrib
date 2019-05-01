@@ -321,6 +321,16 @@
             href: migrate-azure-ad-graph-client-libraries.md
         - name: "4: Deploy, test, and extend"
           href: migrate-azure-ad-graph-deploy-test-extend.md
+    - name: Use SDKs
+      items:
+        - name: Overview
+          href: sdks/sdks-overview.md
+        - name: Install the SDK
+          href: sdks/sdk-installation.md
+        - name: Create a client
+          href: sdks/create-client.md
+        - name: Choose an authentication provider
+          href: sdks/choose-authentication-providers.md
     - name: Resources
       expanded: true
       items:
