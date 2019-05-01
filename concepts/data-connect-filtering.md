@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.prod: "data-connect"
 ---
 
-# User selection and filtering Microsoft Graph data connect support
+# User selection and filtering Microsoft Graph data connect supports
 
 You can use Microsoft Graph data connect to select the users that you want to extract data for, and to include filters to limit the data returned. This article describes the user selection options that data connect provides and the filtering that it supports. 
 
