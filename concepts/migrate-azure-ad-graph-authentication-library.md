@@ -15,22 +15,18 @@ Most apps use an authentication library to aquire and manage access tokens to ca
 - [Azure Active Directory authentication library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
 - [Microsoft authentication library](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL)
 
-You need only to make a few minor changes to continue using either approach.
-
 ## Updating ADAL
-
-MSAL will fully replace ADAL.  So eventually, you will want to migrate to MSAL.
 
 If your app currently uses ADAL, use a two stage migration approach:
 
 1. Update your app to acquire access tokens using ADAL to call Microsoft Graph.
 
-    Update the **resourceURL** to reflect Microsoft Graph:
+    Update the **resourceURL** to request tokens for the Microsoft Graph endpoint:
 
     from: `https://graph.windows.net`  
     to:  `https://graph.microsoft.com`
 
-    Newly acquired tokens will have the same scopes in the new service, however, queries will target Microsoft Graph.  
+    Newly acquired tokens have the same scopes after this change, but the audience of the access tokens is now Microsoft Graph.  
 
     Once you've updated the **resourceURL** and verified functionality, release an interim update to get your users up and runnning.
 
@@ -46,11 +42,11 @@ When you switch your app over to MSAL, you'll need to make a few changes, includ
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
 ```
 
-This scopes permissions requests to those requested through the Azure Portal experience.  Because your users have previously accepted these permissions, that consent passes through to the updated app.  They do not need to provide additional consent.
+The expression above limits the permission scopes request to those configured in the Azure Portal application registration blade experience, and means your existing users will not be required to consent to your app again.
 
 See [Migrating ADAL to MSAL](https://aka.ms/adal-net-to-msal-net) for direct and extensive help with the process, including troubleshooting and help with common errors.
 
-Once you've migrated to MSAL, you can request additional scopes dynamically, which requests incremental consent from the user.  
+Once you've migrated to MSAL, you can request additional scopes dynamically, which results in users being asked for incremental consent the next time they use your app.  
 
 ## Next Steps
 
