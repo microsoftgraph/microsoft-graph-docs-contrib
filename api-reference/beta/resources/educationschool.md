@@ -61,7 +61,7 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 
 The following is a JSON representation of the resource.
 
-<<!-- {
+<!-- {
 "blockType": "resource",
 "optionalProperties": [
 
