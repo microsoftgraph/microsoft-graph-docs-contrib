@@ -71,21 +71,24 @@ The `@removed` object can be returned in the initial delta query response and in
 
 Delta query is currently supported for the following resources.
 
-| **Resource collection** | **API** |
-|:------ | :------ |
-| Applications (preview) | [delta](/graph/api/application-delta?view=graph-rest-beta) function of the [application](/graph/api/resources/application?view=graph-rest-beta) resource (preview) |
-| Directory objects | [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) function of the [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) resource (preview) |
-| Directory roles | [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) function of the [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) resource |
-| Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/event-delta?view=graph-rest-1.0) function of the [event](/graph/api/resources/event?view=graph-rest-1.0) resource |
-| Groups | [delta](/graph/api/group-delta?view=graph-rest-1.0) function of the [group](/graph/api/resources/group?view=graph-rest-1.0) resource |
-| Mail folders | [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) function of the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resource |
-| Messages in a folder | [delta](/graph/api/message-delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource |
-| Personal contact folders | [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource |
-| Personal contacts in a folder | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource |
-| Service principals (preview) | [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource (preview) |
-| Users | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource |
-| Drive items\* | [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) function of the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource |
-| Planner items\*\* | [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) function of the all segment of [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) resource (preview) |
+| **Resource collection**                                        | **API**                                                                                                                                                                                |
+| :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Applications (preview)                                         | [delta](/graph/api/application-delta?view=graph-rest-beta) function of the [application](/graph/api/resources/application?view=graph-rest-beta) resource (preview)                     |
+| Classes (preview)                                              | [delta](/graph/api/educationclass-delta?view=graph-rest-beta) function of the [Class](/graph/api/resources/educationclass?view=graph-rest-beta) resource (preview) |
+| Directory objects (preview)                                    | [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) function of the [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) resource (preview)        |
+| Directory roles                                                | [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) function of the [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-1.0) resource                           |
+| Drive items\*                                                  | [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) function of the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource                                       |
+| Education Users (preview) | delta function of the Education User resource (preview) |
+| Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/event-delta?view=graph-rest-1.0) function of the [event](/graph/api/resources/event?view=graph-rest-1.0) resource                                                   |
+| Groups                                                         | [delta](/graph/api/group-delta?view=graph-rest-1.0) function of the [group](/graph/api/resources/group?view=graph-rest-1.0) resource                                                   |
+| Mail folders                                                   | [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) function of the [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resource                                    |
+| Messages in a folder                                           | [delta](/graph/api/message-delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource                                             |
+| Personal contact folders                                       | [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource                           |
+| Personal contacts in a folder                                  | [delta](/graph/api/contact-delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource                                             |
+| Schools (preview) | delta function of the School resource (preview) |
+| Service principals (preview)                                   | [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource (preview)      |
+| Users                                                          | [delta](/graph/api/user-delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource                                                      |
+| Planner items\*\* (preview)                                    | [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) function of the all segment of [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) resource (preview) |
 
 > \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
 [Track changes for a drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
