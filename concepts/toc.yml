@@ -283,6 +283,16 @@
           href: extensibility-open-users.md
         - name: Use schema extensions (example)
           href: extensibility-schema-groups.md
+    - name: Use SDKs
+      items:
+        - name: Overview
+          href: sdks/sdks-overview.md
+        - name: Install the SDK
+          href: sdks/sdk-installation.md
+        - name: Create a client
+          href: sdks/create-client.md
+        - name: Choose an authentication provider
+          href: sdks/choose-authentication-providers.md
     - name: Resources
       items:
       - name: Best practices

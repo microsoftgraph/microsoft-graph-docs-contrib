@@ -1,0 +1,19 @@
+
+```Javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const onenoteOperation = {
+  id: "id-value",
+  groupId: "groupId-value",
+  renameAs: "renameAs-value"
+};
+
+let res = await client.api('/me/onenote/sections/{id}/copyToNotebook')
+	.post(onenoteOperation);
+
+```

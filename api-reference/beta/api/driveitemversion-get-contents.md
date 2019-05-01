@@ -68,6 +68,16 @@ This returns a redirect to where the contents of the version can be downloaded.
 HTTP/1.1 302 Redirect
 Location: https://onedrive.com/34FF49D6...
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-version-contents-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-version-contents-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ## Remarks
@@ -83,6 +93,9 @@ When your app retrieves the list of available versions for a file, a [driveItemV
   "keywords": "version, version history, versions",
   "section": "documentation",
   "tocPath": "Items/Version history",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
