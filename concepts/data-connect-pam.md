@@ -10,7 +10,7 @@ ms.prod: "data-connect"
 
 Microsoft Graph data connect relies on Privileged Access Management (PAM) to allow Office 365 administrators to approve data movement requests. Data connect pipelines must be approved by a member of the data access request approver specified by the Office 365 administrator during enablement. Refer to the getting started page to set up the approver group. 
 
-Approval request emails will be sent to each member of the approver group to notify them when copy activities request access to extract Office 365 data. Approvers can approve or deny these requests, specify a user group that should be scrubbed out of extracted data or revoke a previously approved request. Approvals persist for 6 months, and one approval is needed per copy activity in the Azure Data Factory pipeline. 
+Approval request emails will be sent to each member of the approver group to notify them when copy activities request access to extract Office 365 data. Approvers can approve or deny these requests, specify a user group that should be scrubbed out of extracted data, or revoke a previously approved request. Approvals persist for 6 months, and one approval is needed per copy activity in the Azure Data Factory pipeline. 
 
 Every request will always include the following details about the dataset and the users from whom data is being extracted:
 
