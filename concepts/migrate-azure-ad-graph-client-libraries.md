@@ -10,9 +10,9 @@ ms.prod: "microsoft-identity-platform"
 
 This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
 
-If your app currently uses the Azure AD Graph client library, you shoudl switch to the [Microsoft Graph .Net client SDK](https://github.com/microsoftgraph/msgraph-sdk-dotnet).
+If your app currently uses the Azure AD Graph client library, switch to the [Microsoft Graph .Net client library](https://github.com/microsoftgraph/msgraph-sdk-dotnet).
 
->NOTE: Currently the Microsoft Graph .Net client library is only supported for .NET Framework 4.5 and .NET Standard 1.1.  However please consult Microsoft Graph .Net client library for the latest support information.
+>NOTE: The Microsoft Graph .Net client library is only supported for .NET Framework 4.5 and .NET Standard 1.1.  However please consult Microsoft Graph .Net client library for the latest support information.
 
 Here, we'll look at some general steps to migrate over to the Microsoft Graph .NET client library:
 
@@ -31,7 +31,7 @@ The following steps assume your app is already using ADAL to acquire access toke
 
     change:
 
-    ``` csharp 
+    ``` csharp
     using Microsoft.Azure.ActiveDirectory.GraphClient;
     ```
 
@@ -63,11 +63,9 @@ The following steps assume your app is already using ADAL to acquire access toke
        }));
     ```
 
-    For Microsoft Graph client library, the `serviceRoot` value also includes the
-version number, `https://graph.microsoft.com/v1.0` in this case.
+    For Microsoft Graph client library, the `serviceRoot` value also includes the version number, `https://graph.microsoft.com/v1.0` in this case.
 
-1. Update requests to use the Microsoft Graph client request builder
-    syntax.
+1. Update requests to use the Microsoft Graph client request builder syntax.
 
     change:
 
@@ -98,8 +96,7 @@ version number, `https://graph.microsoft.com/v1.0` in this case.
     client.Groups.Request().Filter("startswith(displayName,'a')").GetAsync();
     ```
 
-2. Build and fix any resource, property, navigation, and service action errors, generally related to name changes.
-3. For any collections and paging, your app code will need to make some minor modification too.  The following example compares and contrasts fetching a group and paging through its members, 5 at a time. While the Azure AD Graph based code requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement. Other than that, the code is relatively similar.  NOTE: To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single threaded console app.
+5. For any collections and paging, your app code will need to make some minor modifications.  The following example compares and contrasts fetching a group and paging through its members, 5 at a time. While the Azure AD Graph based code requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement. Other than that, the code is relatively similar.  NOTE: To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single threaded console app.
 
     from Azure AD Graph client library based code:
 
@@ -149,11 +146,13 @@ version number, `https://graph.microsoft.com/v1.0` in this case.
 
     ```
 
+6. Build and fix any resource, property, navigation, and service action errors, generally related to name changes.
+
 ## Additional resources
 
-The Azure AD Graph library supported only the .NET platform.  The Microsoft.Graph library supports additional [platforms and languages](https://developer.microsoft.com/graph/gallery/?filterBy=Samples,SDKs) that you may find more useful for your solutions.
+The [C# console snippets app](https://github.com/microsoftgraph/console-csharp-snippets-sample) highlights more of the differences between Microsoft Graph client library and Azure AD Graph client library.
 
-More specifically, you should look at the [C# console snippets app](https://github.com/microsoftgraph/console-csharp-snippets-sample) to see more of the differences between Microsoft Graph and Azure AD Graph client libraries.
+The Azure AD Graph client library supports only the .NET platform.  However, Microsoft Graph client library supports additional [platforms and languages](/graph) that you may find more useful for your solutions.
 
 ## Next Steps
 
