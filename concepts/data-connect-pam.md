@@ -38,12 +38,12 @@ The following fields in the request will be available only in some cases:
 
 Data connect pipelines must be approved by a member of a data access request approver group. This can be done using one of two experiences; the Exchange Online PowerShell module or the PAM user experience. 
 
-### Approving, denying, and revoking requests through PowerShell
+### Approving, denying, and revoking requests by using PowerShell
 
 1. Install the Exchange Online Powershell module. For installation instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
 
-2. Connect to Exchange Online Powershell using multi-factor authentication. For instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
-    >**Note**: You do not need to enable multi-factor authentication for your Organization to use these steps while connecting to Exchange Online PowerShell. Connecting with MFA creates an OAuth token that is used by PAM for signing your requests.
+2. Connect to Exchange Online Powershell using multi-factor authentication (MFA). For instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+    >**Note**: You do not need to enable multi-factor authentication for your organization to use these steps while connecting to Exchange Online PowerShell. Connecting with MFA creates an OAuth token that is used by PAM for signing your requests.
 
 3. Sign in with your account. Note that you must be part of the configured data access approver group in order to be able to approve, deny, or revoke requests. Guest users cannot approve requests, even if they are in the approver group. 
 
@@ -51,7 +51,7 @@ Data connect pipelines must be approved by a member of a data access request app
    Connect-EXOPSSession
    ```
 
-4. Find all pending requests
+4. Find all pending requests.
    >**Note:** The value in the **Identity** property will be used to identify and approve or deny the request. Note this value and use it in the -RequestId parameter. 
 
    ```powershell
