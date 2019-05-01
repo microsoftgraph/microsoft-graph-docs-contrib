@@ -91,7 +91,7 @@ sections:
             src: ../images/index/logo_reactnative.svg
           title: React Native 
       rows:
-        - title: Microsoft Built
+        - title: Microsoft
           values:
           - href: https://github.com/AzureAD/microsoft-authentication-library-for-android
           - href: https://github.com/AzureAD/microsoft-authentication-library-for-js
@@ -106,7 +106,7 @@ sections:
           - href: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
           - href: https://github.com/AzureAD/microsoft-authentication-library-for-dotnet
           - href: 
-        - title: Microsoft Compatible (Open Source)
+        - title: Open Source
           values:
           - href: https://github.com/openid/AppAuth-Android
           - href: 
