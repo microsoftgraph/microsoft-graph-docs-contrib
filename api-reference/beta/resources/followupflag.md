@@ -4,7 +4,7 @@ description: "Allows setting a flag for the user to follow up on an item later. 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # followupFlag resource type

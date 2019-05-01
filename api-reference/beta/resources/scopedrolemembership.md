@@ -4,7 +4,7 @@ description: "A scoped-role membership describes a user's membership of a direct
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # scopedRoleMembership resource type

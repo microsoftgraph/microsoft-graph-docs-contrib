@@ -4,7 +4,7 @@ description: "A url that opens a OneNote page or notebook."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # externalLink resource type

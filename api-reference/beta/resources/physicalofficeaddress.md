@@ -4,7 +4,7 @@ description: "Represents the business address of a resource such as a contact or
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # physicalOfficeAddress resource type

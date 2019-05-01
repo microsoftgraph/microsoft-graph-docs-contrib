@@ -4,7 +4,7 @@ description: "An abstract type to support the OData v4 open type openTypeExtensi
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # extension resource type

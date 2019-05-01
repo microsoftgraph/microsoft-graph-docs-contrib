@@ -4,7 +4,7 @@ description: "Indicates the attributes related a conditional access policy or po
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # conditionalAccessPolicy resource type

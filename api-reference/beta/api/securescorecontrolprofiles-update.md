@@ -4,7 +4,7 @@ description: "Update an editable secureScoreControlProfiles property within any 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Update secureScoreControlProfiles

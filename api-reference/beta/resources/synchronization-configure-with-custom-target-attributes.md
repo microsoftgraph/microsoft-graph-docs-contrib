@@ -4,7 +4,7 @@ description: "You can customize your synchronization schema to include custom at
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Configure synchronization with custom target attributes

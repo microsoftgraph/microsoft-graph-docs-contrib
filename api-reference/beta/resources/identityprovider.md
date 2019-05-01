@@ -4,7 +4,7 @@ description: "Represents an Azure Active Directory (Azure AD) identity provider.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # identityProvider resource type

@@ -4,7 +4,7 @@ description: "Defines the scope of the [synchronizationJob: restart](../api/sync
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationJobRestartCriteria resource type

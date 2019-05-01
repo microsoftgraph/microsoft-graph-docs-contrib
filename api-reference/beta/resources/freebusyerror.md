@@ -4,7 +4,7 @@ description: "Represents error information from attempting to get the availabili
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # freeBusyError resource type

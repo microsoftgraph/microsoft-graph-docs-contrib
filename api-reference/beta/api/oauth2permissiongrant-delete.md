@@ -4,7 +4,7 @@ description: "Delete an oAuth2PermissionGrant."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Delete oAuth2PermissionGrant

@@ -4,7 +4,7 @@ description: "Deletes the customized schema and resets the schema to the default
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Delete synchronizationSchema

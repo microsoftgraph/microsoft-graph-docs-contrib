@@ -4,7 +4,7 @@ description: "Retrieve a list of oAuth2Permissiongrant objects."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # servicePrincipal: List oAuth2Permissiongrants

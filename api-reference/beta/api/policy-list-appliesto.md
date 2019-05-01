@@ -4,7 +4,7 @@ description: "Retrieve the application and service principal objects with the sp
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # List applications and service principals with specific policy assigned

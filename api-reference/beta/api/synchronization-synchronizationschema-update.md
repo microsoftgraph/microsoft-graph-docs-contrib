@@ -4,7 +4,7 @@ description: "Update the synchronization schema for a given job or template. Thi
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Update synchronizationSchema

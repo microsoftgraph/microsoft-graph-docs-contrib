@@ -4,7 +4,7 @@ description: "The reference content in this section documents the Microsoft Grap
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: <ms.prod>
-author: <author>
+author: "jthake-msft"
 ---
 
 # Microsoft Graph beta endpoint reference

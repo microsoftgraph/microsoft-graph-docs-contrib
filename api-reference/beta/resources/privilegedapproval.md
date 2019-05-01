@@ -4,7 +4,7 @@ description: "Represents an approval that is requested in Privileged Identity Ma
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # privilegedApproval resource type

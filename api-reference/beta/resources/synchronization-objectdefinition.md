@@ -4,7 +4,7 @@ description: "Describes an object and its attributes. Object definitions are par
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # objectDefinition resource type

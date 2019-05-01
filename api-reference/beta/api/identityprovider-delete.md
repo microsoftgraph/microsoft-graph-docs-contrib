@@ -3,7 +3,7 @@ title: "Delete identityProvider"
 description: "Delete an existing identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
-author: <author>
+author: ""
 ms.prod: <ms.prod>
 ---
 

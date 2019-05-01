@@ -4,7 +4,7 @@ description: "Retrieve a list of connector objects associated with a connectorGr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # List members

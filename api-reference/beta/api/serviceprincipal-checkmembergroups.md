@@ -4,7 +4,7 @@ description: "One of the following permissions is required to call this API. To 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # servicePrincipal: checkMemberGroups

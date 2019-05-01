@@ -4,7 +4,7 @@ description: "Make the role assignment as permanent."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # privilegedRoleAssignment: makePermanent

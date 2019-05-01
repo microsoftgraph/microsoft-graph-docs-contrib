@@ -4,7 +4,7 @@ description: "Provides the city, state and country/region from where the sign-in
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # signInLocation resource type

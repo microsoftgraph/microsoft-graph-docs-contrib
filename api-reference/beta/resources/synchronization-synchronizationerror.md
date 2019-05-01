@@ -4,7 +4,7 @@ description: "Represents an error that occurred during the synchronization proce
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationError resource type

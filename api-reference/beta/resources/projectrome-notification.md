@@ -4,7 +4,7 @@ description: "Represents a notification that is published by an app server that 
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: resourcePageType
-author: <author>
+author: ""
 ---
 
 # notification resource type

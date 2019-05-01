@@ -4,7 +4,7 @@ description: " anyone can retrieve the template to see the default settings, inc
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationTemplate resource type

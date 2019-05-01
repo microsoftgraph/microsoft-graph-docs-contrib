@@ -4,7 +4,7 @@ description: "Indicates details associated with the network location. ."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # networkLocationDetail resource type

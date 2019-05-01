@@ -4,7 +4,7 @@ description: "This resource contains a tenant score and description for an indiv
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 #  controlScore resource type

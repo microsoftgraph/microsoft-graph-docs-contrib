@@ -4,7 +4,7 @@ description: "Represents an object to be used as input test data when the [synch
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # expressionInputObject resource type

@@ -4,7 +4,7 @@ description: "Represents a time zone. The supported format is Windows, and Inter
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # timeZoneInformation resource type

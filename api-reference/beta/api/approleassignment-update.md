@@ -4,7 +4,7 @@ description: "Update the properties of approleassignment object."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Update approleassignment

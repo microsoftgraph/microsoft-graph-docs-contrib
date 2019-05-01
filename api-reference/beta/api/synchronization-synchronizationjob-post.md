@@ -4,7 +4,7 @@ description: "Create new synchronization job with a default synchronization sche
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Create synchronizationJob

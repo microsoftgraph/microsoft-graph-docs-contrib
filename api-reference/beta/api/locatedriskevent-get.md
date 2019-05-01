@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a locatedriskevent ob
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Get locatedRiskEvent

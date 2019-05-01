@@ -4,7 +4,7 @@ description: "Represents an Azure AD policy. Policies are custom rules that can 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # policy resource type

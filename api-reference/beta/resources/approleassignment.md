@@ -4,7 +4,7 @@ description: "Used to record when a user or group is assigned to an application.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # appRoleAssignment resource type

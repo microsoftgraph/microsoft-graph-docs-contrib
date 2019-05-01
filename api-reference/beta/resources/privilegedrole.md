@@ -4,7 +4,7 @@ description: "Represents an Azure AD administrator role, such as: **Global Admin
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # privilegedRole resource type

@@ -4,7 +4,7 @@ description: "Represents the days of the week and hours in a specific time zone 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # workingHours resource type

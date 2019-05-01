@@ -4,7 +4,7 @@ description: "Get newly created, updated, or deleted service principals without 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # servicePrincipal: delta

@@ -4,7 +4,7 @@ description: "Retrieve a list of directoryobject objects."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # servicePrincipal: List createdObjects

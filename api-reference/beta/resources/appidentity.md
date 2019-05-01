@@ -4,7 +4,7 @@ description: "Indicates the identity of the application that performed the actio
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # appIdentity resource type

@@ -4,7 +4,7 @@ description: "Retrieve a list of anonymousipriskevent objects."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # List anonymousIpRiskEvents

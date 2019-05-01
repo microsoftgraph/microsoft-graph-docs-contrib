@@ -4,7 +4,7 @@ description: "A profile photo of a user, group or an Outlook contact accessed fr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # profilePhoto resource type

@@ -4,7 +4,7 @@ description: "Create a new policy object by specifying display name, policy type
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Create Policy

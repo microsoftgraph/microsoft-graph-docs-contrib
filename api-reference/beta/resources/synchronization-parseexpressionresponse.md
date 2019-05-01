@@ -4,7 +4,7 @@ description: "Represents the response from the [synchronizationSchema: parseExpr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # parseExpressionResponse resource type

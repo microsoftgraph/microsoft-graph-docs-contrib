@@ -4,7 +4,7 @@ description: "Performs synchronization by periodically running in the background
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationJob resource type

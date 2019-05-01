@@ -4,7 +4,7 @@ description: "Represents the name, email addresses, and their corresponding emai
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # typedEmailAddress resource type

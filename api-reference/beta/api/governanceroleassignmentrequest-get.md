@@ -3,7 +3,7 @@ title: "Get governanceRoleAssignmentRequest"
 description: "Get a governanceRoleAssignmentRequest. "
 localization_priority: Normal
 doc_type: apiPageType
-author: <author>
+author: ""
 ms.prod: <ms.prod>
 ---
 

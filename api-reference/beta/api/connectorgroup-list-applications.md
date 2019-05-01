@@ -4,7 +4,7 @@ description: "Retrieve a list of application objects associated with the connect
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # List applications

@@ -5,6 +5,6 @@ localization_priority: Normal
 title: <title>
 description: <description>
 ms.prod: <ms.prod>
-author: <author>
+author: "jthake-msft"
 doc_type: <doc_type>
 ---

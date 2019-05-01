@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, update an existing program
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Update program

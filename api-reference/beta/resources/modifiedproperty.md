@@ -4,7 +4,7 @@ description: "Indicates all the modified properties with old value and new value
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # modifiedProperty resource type

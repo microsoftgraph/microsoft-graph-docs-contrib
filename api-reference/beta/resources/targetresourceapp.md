@@ -4,7 +4,7 @@ description: "Indicates the app object that was added, updated or deleted by adm
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # targetResourceApp resource type

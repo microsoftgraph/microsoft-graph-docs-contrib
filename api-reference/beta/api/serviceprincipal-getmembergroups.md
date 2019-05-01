@@ -4,7 +4,7 @@ description: "Get the list of groups that this service principal is a member of.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # servicePrincipal: getMemberGroups

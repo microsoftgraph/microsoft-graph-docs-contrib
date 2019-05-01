@@ -4,7 +4,7 @@ description: "This resource contains compliance data associated with secure scor
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 #  complianceInformation resource type

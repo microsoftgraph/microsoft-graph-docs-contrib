@@ -4,7 +4,7 @@ description: "Represents a defined name for a range of cells or value. Names can
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "excel"
-author: <author>
+author: ""
 ---
 
 # workbookNamedItem resource type

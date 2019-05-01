@@ -1,7 +1,7 @@
 ---
 title: "riskUserActivity resource type"
 description: author
-author: <author>
+author: ""
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType

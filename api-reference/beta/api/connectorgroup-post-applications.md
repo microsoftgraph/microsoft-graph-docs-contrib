@@ -4,7 +4,7 @@ description: "Use this API to create a new application."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Create application

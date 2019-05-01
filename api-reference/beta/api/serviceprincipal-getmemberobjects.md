@@ -4,7 +4,7 @@ description: "Get the list of groups and directory roles that this service princ
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # servicePrincipal: getMemberObjects

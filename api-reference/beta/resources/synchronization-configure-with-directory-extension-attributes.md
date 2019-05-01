@@ -4,7 +4,7 @@ description: "You can customize your synchronization schema to include Azure Act
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Configure synchronization with directory extension attributes

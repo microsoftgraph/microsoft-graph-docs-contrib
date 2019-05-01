@@ -4,7 +4,7 @@ description: "Represents resources that could be managed by Privileged Identity 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # governanceResource resource type

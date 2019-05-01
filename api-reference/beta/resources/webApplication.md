@@ -4,7 +4,7 @@ description: "Specifies settings for a web application."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # webApplication resource type

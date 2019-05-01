@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of approleassignment obj
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Get appRoleAssignment

@@ -4,7 +4,7 @@ description: "An event attendee. This can be a person or resource such as a meet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # attendee resource type

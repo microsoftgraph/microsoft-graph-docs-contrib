@@ -4,7 +4,7 @@ description: "Defines how values for the given target attribute should flow duri
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # attributeMapping resource type

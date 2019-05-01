@@ -4,7 +4,7 @@ description: "Provides the synchronization engine information about a directory 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # directoryDefinition resource type

@@ -4,7 +4,7 @@ description: ") allows you to automate the creation, maintenance, and removal of
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Azure AD synchronization API overview

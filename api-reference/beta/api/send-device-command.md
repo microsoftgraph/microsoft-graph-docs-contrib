@@ -4,7 +4,7 @@ description: "This API enables Project Rome capabilities to command a device ass
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Send device command

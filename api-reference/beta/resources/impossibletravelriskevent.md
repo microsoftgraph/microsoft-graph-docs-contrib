@@ -4,7 +4,7 @@ description: "A risk event detected by Azure Active Directory Identity Protectio
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # impossibleTravelRiskEvent resource type

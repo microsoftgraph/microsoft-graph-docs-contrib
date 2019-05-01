@@ -4,7 +4,7 @@ description: "Specifies a domain for a tenant. The **verifiedDomains** property 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # verifiedDomain resource type

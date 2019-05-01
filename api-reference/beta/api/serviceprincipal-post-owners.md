@@ -4,7 +4,7 @@ description: "Use this API to add an owner for the service principal."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # servicePrincipal: Add owner

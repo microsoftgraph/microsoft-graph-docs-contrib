@@ -4,7 +4,7 @@ description: "Azure Active Directory (Azure AD) tracks user activity and sign-in
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Azure AD audit log API overview

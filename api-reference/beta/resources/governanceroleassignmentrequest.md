@@ -4,7 +4,7 @@ description: "Represents the request for role assignment operations in Privilegd
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # governanceRoleAssignmentRequest resource type

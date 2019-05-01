@@ -4,7 +4,7 @@ description: "The **provisionedPlans** property of the user entity and the organ
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # provisionedPlan resource type

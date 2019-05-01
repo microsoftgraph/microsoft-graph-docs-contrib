@@ -4,7 +4,7 @@ description: <description>
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsofit-identity-platform"
-author: <author>
+author: ""
 ---
 
 # accessReviewRecurrenceSettings resource type

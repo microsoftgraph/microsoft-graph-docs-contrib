@@ -4,7 +4,7 @@ description: "Adds a new name to the collection of the given scope using the use
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Add Named Item FormulaLocal

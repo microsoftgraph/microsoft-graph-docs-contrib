@@ -4,7 +4,7 @@ description: "This resource contains various different scores based by different
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 #  averageComparativeScore resource type

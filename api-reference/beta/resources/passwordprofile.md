@@ -4,7 +4,7 @@ description: "Contains the password profile associated with a user. The **passwo
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # passwordProfile resource type

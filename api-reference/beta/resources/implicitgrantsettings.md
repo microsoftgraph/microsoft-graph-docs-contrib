@@ -4,7 +4,7 @@ description: "Specifies whether this web application can request tokens using th
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # implicitGrantSettings resource type

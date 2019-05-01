@@ -4,7 +4,7 @@ description: "Represents the blob of an Azure Active Directory (Azure AD) terms 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # agreementFileData resource type

@@ -4,7 +4,7 @@ description: "Microsoft Graph for Azure Active Directory (Azure AD) provides RES
 localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Working with Azure Active Directory resources in Microsoft Graph

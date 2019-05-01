@@ -4,7 +4,7 @@ description: "Represents an individual template setting definition, including th
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # settingTemplateValue resource type

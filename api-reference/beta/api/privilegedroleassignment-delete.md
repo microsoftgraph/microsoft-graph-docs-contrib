@@ -4,7 +4,7 @@ description: "Delete privilegedRoleAssignment."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Delete privilegedRoleAssignment

@@ -4,7 +4,7 @@ description: "Get the requestor's approval requests."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # privilegedApproval: myRequests

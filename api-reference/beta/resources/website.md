@@ -4,7 +4,7 @@ description: "Represents a web site."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # website resource type

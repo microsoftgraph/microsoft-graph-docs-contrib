@@ -4,7 +4,7 @@ description: "Use the **extensionSchemaProperty** resource to define a property'
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # extensionSchemaProperty resource type

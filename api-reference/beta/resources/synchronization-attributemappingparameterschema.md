@@ -4,7 +4,7 @@ description: "Describes a single parameter used in an attributeMappingFunctionSc
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # attributeMappingParameterSchema resource type

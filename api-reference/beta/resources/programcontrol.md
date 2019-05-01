@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, the program control object
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # programControl resource type

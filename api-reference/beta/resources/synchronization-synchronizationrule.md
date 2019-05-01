@@ -4,7 +4,7 @@ description: "Defines how the synchronization should be performed for the synchr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationRule resource type

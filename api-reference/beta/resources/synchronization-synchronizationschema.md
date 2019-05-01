@@ -4,7 +4,7 @@ description: "Defines what objects will be synchronized and how they will be syn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationSchema resource type

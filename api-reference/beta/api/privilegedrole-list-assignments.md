@@ -4,7 +4,7 @@ description: "Retrieve a list of privilegedRoleAssignment objects that are assoc
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # List assignments

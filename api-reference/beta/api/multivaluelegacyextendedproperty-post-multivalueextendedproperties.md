@@ -4,7 +4,7 @@ description: "Create one or more multi-value extended properties in a new or exi
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Create multi-value extended property

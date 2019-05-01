@@ -4,7 +4,7 @@ description: "Represents users, groups, and service principals being managed in 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # governanceSubject resource type

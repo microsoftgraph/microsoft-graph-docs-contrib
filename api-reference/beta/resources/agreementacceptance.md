@@ -4,7 +4,7 @@ description: "Represents the current status of a user within scope of a company'
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # agreementAcceptance resource type

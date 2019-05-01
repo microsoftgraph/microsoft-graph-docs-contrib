@@ -4,7 +4,7 @@ description: "A recently accessed OneNote notebook. A **recentNotebook** is simi
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # recentNotebook resource type

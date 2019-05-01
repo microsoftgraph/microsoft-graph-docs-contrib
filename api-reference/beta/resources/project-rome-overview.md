@@ -4,7 +4,7 @@ description: "Project Rome is a Microsoft initiative to build a platform that en
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Use the Microsoft Graph API to work with Project Rome 

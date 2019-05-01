@@ -4,7 +4,7 @@ description: "Represents a tenant's secure score per control data. By default, i
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # secureScoreControlProfile resource type

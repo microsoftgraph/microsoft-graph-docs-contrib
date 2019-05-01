@@ -4,7 +4,7 @@ description: "Contains a password credential associated with an application or a
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # passwordCredential resource type

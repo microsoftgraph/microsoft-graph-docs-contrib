@@ -4,7 +4,7 @@ description: "List the synchronization templates associated with a given applica
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # List existing synchronization templates

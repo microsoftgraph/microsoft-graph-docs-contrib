@@ -4,7 +4,7 @@ description: "Represents a privileged role assignment for a particular user. "
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # privilegedRoleAssignment resource type

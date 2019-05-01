@@ -4,7 +4,7 @@ description: "Retrieve a list of objects owned by the servicePrincipal.  This co
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # servicePrincipals: List ownedObjects

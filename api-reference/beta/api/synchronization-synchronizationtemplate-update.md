@@ -4,7 +4,7 @@ description: "Update (override) the synchronization template associated with a g
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Update synchronizationTemplate

@@ -4,7 +4,7 @@ description: "An item that describes the availability of a user corresponding to
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-teams"
-author: <author>
+author: ""
 ---
 
 # scheduleItem resource type

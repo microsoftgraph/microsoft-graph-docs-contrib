@@ -4,7 +4,7 @@ description: "Identity the resource object that initiates the activity. The init
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # auditActivityInitiator resource type

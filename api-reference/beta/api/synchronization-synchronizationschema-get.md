@@ -4,7 +4,7 @@ description: "Retrieve the schema for a given synchronization job or template."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Get synchronizationSchema

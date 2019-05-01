@@ -4,7 +4,7 @@ description: "Represents the availability of a user, distribution list, or resou
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "microsoft-teams"
-author: <author>
+author: ""
 ---
 
 # scheduleInformation resource type

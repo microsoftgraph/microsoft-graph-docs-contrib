@@ -4,7 +4,7 @@ description: "Represents a single assertion that a candidate object must satisfy
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # filterClause resource type

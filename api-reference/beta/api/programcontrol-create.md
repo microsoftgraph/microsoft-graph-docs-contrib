@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, create a new programContro
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Create programControl

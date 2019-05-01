@@ -4,7 +4,7 @@ description: "top=n, where n = the number of days of data that you want to retri
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # secureScore resource type

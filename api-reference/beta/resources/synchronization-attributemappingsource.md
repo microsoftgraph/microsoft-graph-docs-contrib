@@ -4,7 +4,7 @@ description: "Defines how a value should be extracted (or transformed) from the 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # attributeMappingSource resource type

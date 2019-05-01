@@ -4,7 +4,7 @@ description: "Defines a set of clauses that an object must satisfy to be conside
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # filterGroup resource type

@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, delete a program object."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Delete program

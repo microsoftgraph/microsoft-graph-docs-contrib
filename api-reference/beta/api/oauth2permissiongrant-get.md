@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of oAuth2Permissiongrant
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Get oAuth2Permissiongrant

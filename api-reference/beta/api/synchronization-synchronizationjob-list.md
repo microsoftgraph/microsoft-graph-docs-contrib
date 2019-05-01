@@ -4,7 +4,7 @@ description: "List existing jobs for a given application instance (service princ
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # List synchronization jobs

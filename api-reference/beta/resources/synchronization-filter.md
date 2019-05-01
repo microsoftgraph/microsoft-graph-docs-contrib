@@ -4,7 +4,7 @@ description: "Determines which objects should be provisioned to the application.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # filter resource type

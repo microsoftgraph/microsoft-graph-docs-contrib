@@ -4,7 +4,7 @@ description: "Provides information about the quarantine state of a synchronizati
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationQuarantine resource type

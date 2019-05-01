@@ -4,7 +4,7 @@ description: "Specifies the set of OAuth 2.0 permission scopes and app roles und
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # requiredResourceAccess resource type

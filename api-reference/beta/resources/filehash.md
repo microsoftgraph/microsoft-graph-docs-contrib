@@ -4,7 +4,7 @@ description: "Contains stateful information about file hashes (cryptographic and
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # fileHash resource type

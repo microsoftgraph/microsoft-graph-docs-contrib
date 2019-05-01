@@ -4,7 +4,7 @@ description: "Represents data returned in JSON format"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Json resource type

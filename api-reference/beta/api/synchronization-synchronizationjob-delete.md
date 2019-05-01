@@ -4,7 +4,7 @@ description: "Stop the synchronization job, and permanently delete all the state
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Delete synchronizationJob

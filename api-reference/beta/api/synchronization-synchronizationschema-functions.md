@@ -4,7 +4,7 @@ description: "List all the functions currently supported in the attributeMapping
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationSchema: functions

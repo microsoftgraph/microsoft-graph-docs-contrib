@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, a program is a container, 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # program resource type

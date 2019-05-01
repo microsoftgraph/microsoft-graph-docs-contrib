@@ -4,7 +4,7 @@ description: "Indicates MFA details for a specific sign-in. It includes the auth
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # mfaDetail resource type

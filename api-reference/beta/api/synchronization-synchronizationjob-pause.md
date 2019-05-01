@@ -4,7 +4,7 @@ description: "Temporarily stop synchronization. All the progress, including job 
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationJob: pause

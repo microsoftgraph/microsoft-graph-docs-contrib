@@ -4,7 +4,7 @@ description: "Describes a reference to another object defined in the same direct
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # referencedObject resource type

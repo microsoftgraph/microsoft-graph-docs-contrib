@@ -4,7 +4,7 @@ description: "Describes a function that can be used in an attribute mapping to t
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # attributeMappingFunctionSchema resource type

@@ -4,7 +4,7 @@ description: "Validate that the credentials are valid in the tenant."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # synchronizationJob: validateCredentials

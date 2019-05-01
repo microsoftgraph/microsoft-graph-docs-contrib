@@ -4,7 +4,7 @@ description: "This resource contains compliance certification data associated wi
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 #  certificationControl resource type

@@ -4,7 +4,7 @@ description: "Assigns a policy to an application or service principal."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Assign Policy

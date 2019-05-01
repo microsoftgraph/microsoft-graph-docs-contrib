@@ -4,7 +4,7 @@ description: "Specifies parental control settings for an application. These sett
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # parentalControlSettings resource type

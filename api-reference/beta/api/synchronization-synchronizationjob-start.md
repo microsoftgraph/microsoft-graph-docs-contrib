@@ -4,7 +4,7 @@ description: "Start an existing synchronization job. If the job is in a paused s
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: <ms.prod>
-author: <author>
+author: ""
 ---
 
 # Start synchronizationJob
