@@ -147,9 +147,9 @@ Data conenct approval requests have particular characteristics that are importan
 ## Privacy scrubbing 
 The member of the approver group who approves the request can specify the name of one user group whose data would be scrubbed out of extracted data. The rows containing email addresses corresponding to the members of the denied group will be scrubbed out of extracted data. Groups nested within the denied group will be expanded and only users will be scrubbed out. Refer to the approving requests section of this topic for details on how to apply the deny list during approval, through either PowerShell or the PAM UX. 
 
-The following table shows the names of the datasets and the columns the contents of which are checked for privacy scrubbing.
+The following table shows the names of the datasets and the columns for which the contents are checked for privacy scrubbing.
 
-| Dataset name                     | Columns used for deny-list based scrubbing                                                  |
+| Dataset name                     | Columns used for deny list-based scrubbing                                                  |
 |---------------------------------------------------------------------|----------------------------------------------------------|
 | **BasicDataSet_v0.Message_v0**<br>**BasicDataSet_v0.Message_v1**   | Sender, From, ToRecipients, CcRecipients, BccRecipients    |                                                                               
 | **BasicDataSet_v0.SentItem_v0**<br>**BasicDataSet_v0.SentItem_v1**  | Sender, From, ToRecipients, CcRecipients, BccRecipients  |
