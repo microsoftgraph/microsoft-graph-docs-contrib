@@ -1,7 +1,8 @@
 ---
-title: " averageComparativeScore resource type"
-description: "Contains various different scores based by different scopes (for example, average by industry vertical, average by company seat size, and so on) and control category (Identity, Data, Device, Apps, Infrastructure)."
+title: "averageComparativeScore resource type"
+description: "Contains various different scores based on different scopes."
 localization_priority: Normal
+author: preetikr
 ---
 
 #  averageComparativeScore resource type
