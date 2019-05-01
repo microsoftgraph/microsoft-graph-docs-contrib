@@ -27,11 +27,11 @@ Organizations must purchase a particular SKU to develop applications or acces th
 We also provide an option for ISVs to give their applications to customers who have not purchased Workplace Analytics. To do so, the ISV must purchase and assoicate enough Microsoft Graph data connect licenses for all users being accessed through data connect for each customer of their application. This option can be used in conjunction with Workplace Analytics licenses to use data connect. Certain steps must be taken by the ISV to assoicate instances of the Microsoft Graph data connect license with each of their customer installations. 
 
 ### ISVs using the Microsoft Graph data connect license
-Data connect uses [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to store and process the license assignment made by the ISV. ISVs will need to [create a Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal). During creation, note the Key Vault URI value. It will be used in the application definition to reference the Key Vault. After you create the Key Vault, ensure that the SPN used in the Source Linked Service of the application's ARM template has access to it. To do so, go to the Access Policies pane of the Key Vault instance, create an access policy for the application referenced by the SPN, and assign `Get` and `List` permissions to the application. 
+Data connect uses [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to store and process the license assignment made by the ISV. ISVs will need to [create a Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal). During creation, note the Key Vault URI value. It will be used in the application definition to reference the Key Vault. After you create the Key Vault, ensure that the SPN used in the Source Linked Service of the application's ARM template has access to it. To do so, go to the **Access Policies** pane of the Key Vault instance, create an access policy for the application referenced by the SPN, and assign **Get** and **List** permissions to the application. 
 
 ![Creating access policy to Key Vault](/concepts/images/data-connect-keyvault-access.png)
 
-The assignment of Microsoft Graph data connect licenses to organizations is provided as a secret in the Key Vault. Go to the Key Vault and under **Generate/Import**, create a manual secret. The name of the secret must be `MGdcSKUMapping` and the value of the secret must contain the `Id` of the tenant and the number of licenses allocated to that tenant, in the following format.
+The assignment of Microsoft Graph data connect licenses to organizations is provided as a secret in the Key Vault. Go to the Key Vault and under **Generate/Import**, create a manual secret. The name of the secret must be **MGdcSKUMapping** and the value of the secret must contain the ID of the tenant and the number of licenses allocated to that tenant, in the following format.
 
 `{"tenantId1" : 20, "tenantId2" : 35, "tenantId3" : 12}`
 
@@ -60,7 +60,7 @@ You also need to update the application's ARM template to reference the Key Vaul
 	}
 ```
 
-Data connect will reference the secret in the provided Key Vault before each pipeline run. It will fail the pipeline if there aren't enough licenses assigned to the organization to provide data for each user or if the Key Vault is inaccessible. 
+Data connect will reference the secret in the Key Vault before each pipeline run. It will fail the pipeline if there aren't enough licenses assigned to the organization to provide data for each user, or if the Key Vault is inaccessible. 
 
 ## Next Steps
 If you would like to request support for additional policies, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). To learn more about Workplace Analytics, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/en-us/business/workplace-analytics).
