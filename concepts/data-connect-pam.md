@@ -106,7 +106,8 @@ You can also revoke requests that were previously approved. Similar to approving
    ```powershell 
    Revoke-ElevatedAccessAuthorization -Comment "Revoking this request!" -RequestId $requestId
    ```
-   You'll see a response like :
+   You'll see a response similar to the following.
+   
    ```powershell
    AuthorizedBy          : user@tenant.onmicrosoft.com
    Type                  : Task
@@ -122,7 +123,7 @@ You can also revoke requests that were previously approved. Similar to approving
    DateUpdatedUtc        : 7/24/2018 9:12:55 PM
    ```
 
-### Approving requests through the PAM UX
+### Approving requests through the PAM user experience
 
 1. Sign in to the Office 365 admin portal using admin credentials and go to the [Privileged Access Managment approval user experience](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess) page. This will show you all the access requests (pending/approved/expired/denied).
 
