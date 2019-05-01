@@ -22,6 +22,9 @@ Directory definitions are updated as part of the [synchronization schema](synchr
 |metadata       |metadataEntry collection    |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 |name           |String     |Name of the directory. Must be unique within the [synchronization schema](synchronization-synchronizationschema.md). Not nullable.|
 |objects        |[objectDefinition](synchronization-objectdefinition.md) collection    |Collection of objects supported by the directory.|
+|version|String|Read only value that indicates version discovered. Will be null if discovery has not yet occurred.|
+|discoveryDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|discoverabilities|string| Read only value indicating what type of discovery the app supports. Possible values are: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.**(Make alphabetical. check with docs team if we need to account for potential future values in a differnt way here.)|** 
 
 ## JSON representation
 
@@ -57,6 +60,8 @@ The following is a JSON representation of the resource.
 ```json
 {
     "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
+    "discoverabilities": "AttributeNames", "AttributeDataTypes"
+    "discoveryDateTime": "2019-03-20T15:47:50.4707552Z",
     "name": "salesforce.com",
     "objects": [
         {
@@ -249,6 +254,7 @@ The following is a JSON representation of the resource.
             "name": "User"
         }
     ],
+    "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1",
     "metadata": []
 }
 ```
