@@ -14,7 +14,7 @@ Approval request emails will be sent to each member of the approver group to not
 
 Every request will always include the following details about the dataset and the users from whom data is being extracted:
 
-* `Requestor`: The user which requested the pipeline
+* `Requestor`: The user who requested the pipeline.
 * `Duration`: If approved, how long the approval will persist. Always 4320 hours (6 months).
 * `Reason`: Reason for the request, typically "An app installed for your organization requires approval for access to Office 365 Data."
 * `Request at`: The DateTime of the request.
