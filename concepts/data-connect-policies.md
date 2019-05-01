@@ -1,6 +1,6 @@
 ---
 title: "Policies and licensing"
-description: "Describes what policies are supported and how to assign ISV access SKUs to organizations"
+description: "Describes what policies are supported and how to assign ISV access SKUs to organizations."
 author: "tlenig"
 localization_priority: Priority
 ms.prod: "data-connect"
@@ -8,11 +8,11 @@ ms.prod: "data-connect"
 
 # Policies and licensing
 
-Microsoft Graph data connect leverages [Azure managed applications](https://docs.microsoft.com/en-us/azure/managed-applications/overview) to allow developers to create and deploy their solutions in their customer's Azure environment. Managed applications allow data connect developers to support certain Azure policies, giving customers greater confidence and comfortability when using their applications. Additionally, developers must purchase and apply licenses from Microsoft to their own organization or organizations installing their applications, enabling the application to access data through data connect.
+Microsoft Graph data connect uses [Azure managed applications](https://docs.microsoft.com/en-us/azure/managed-applications/overview) to allow you to create and deploy your solutions in your customer's Azure environment. Managed applications allow you to support certain Azure policies, giving customers greater confidence and comfortability when using their applications. Additionally, you must purchase and apply licenses from Microsoft your organization or the organizations that install your applications, in order to allow the application to access data through data connect.
 
 ## Policies
 
-The following Azure policies are supported for an Azure Managed Application built using Office 365 data:
+The following Azure policies are supported for an Azure managed application built using Office 365 data:
 - [ADLS Gen1 Encryption Required Policy](https://docs.microsoft.com/en-us/azure/azure-policy/scripts/enforce-datalakestore-encryption)
 
 When you select any of the policies during Azure marketplace publishing, the policy compliance status will be checked and enforced for all installations of your application. All selected policies that are compliant will be shown to the data approvers as part of the data request. Any policy compliance violation would cause the pipeline run to fail and stop the data movement.
