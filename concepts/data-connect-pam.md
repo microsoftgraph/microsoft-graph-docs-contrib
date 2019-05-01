@@ -163,4 +163,4 @@ The following table shows the names of the datasets and the columns for which th
 
 ## Next Steps
 
-For details about how to apply the deny list during approval, see [Approving requests through PowerShell](#Approving,-denying,-and-revoking-requests-by-using-PowerShell) or [Approving requests by using the PAM UX](#Approving,-denying,-and-revoking-requests-by-using-the-PAM-UX) depending upon which method you wish to use.
+For details about how to apply the deny list during approval, see [Approving requests through PowerShell](#Approving-denying-and-revoking-requests-by-using-PowerShell) or [Approving requests by using the PAM UX](#Approving-denying-and-revoking-requests-by-using-the-PAM-UX) depending upon which method you wish to use.
