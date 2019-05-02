@@ -300,12 +300,13 @@ IGraphServiceClient graphClient =
 
 ```objc
 NSError *error = nil;
-MSALPublicClientApplication *application =
-[[MSALPublicClientApplication alloc] initWithClientId:@"<your-client-id-here>"
+MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID" 
 error:&error];
 
-MSALAuthenticationProvider *authProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:application
-                                                                                                               andScopes:<array-of-scopes-for-which-you-need-access-token>];
+MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProviderOptions alloc] initWithScopes:<array-of-scopes-for-which-you-need-access-token>];
+
+ MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:publicClientApplication 
+ andOptions:authProviderOptions];
 ```
 
 # [PHP](#tab/PHP)
