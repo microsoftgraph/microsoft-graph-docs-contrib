@@ -6,7 +6,7 @@ localization_priority: Normal
 
 #  controlScore resource type
 
-This resource contains a tenant score and description for an individual control.
+Contains a tenant score and description for an individual control.
 
 ## Properties
 
