@@ -7,7 +7,7 @@ ms.prod: "data-connect"
 ---
 
 # Overview of Microsoft Graph data connect
-Microsoft Graph contains rich data about workers and their workplace, including information about how people work and how they communicate, collaborate, and manage their time. Microsoft Graph data connect brings this data to Microsoft Azure, which gives you access to the best development and hosting tools to work with this data. This enables customers to benefit from innovative or industry-specific applications that enhance their productivity, while they keep full control over their Microsoft Graph data. Microsoft is bringing along the more secured control that customers expect.
+Microsoft Graph contains rich data about workers and their workplace, including information about how people work and how they communicate, collaborate, and manage their time. Microsoft Graph data connect provides a set of tools to streamline the delivery of this data to Microsoft Azure, which gives you access to the best development and hosting tools to work with this data. This enables customers to benefit from innovative or industry-specific applications that enhance their productivity, while they keep full control over their Microsoft Graph data. Microsoft is bringing along the more secured control that customers expect.
 
 ## Why use Microsoft Graph data connect?
 Office 365 administrators must carefully consider the challenges inherent in moving and managing significant amounts of their organizational data. Microsoft Graph data connect is designed to give administrators new controls over their data; you can use that data to build apps that create data-driven insights. 
