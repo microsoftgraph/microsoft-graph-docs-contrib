@@ -93,7 +93,7 @@ Content-type: application/json
       "deprecated": false,
       "implementationCost": "Moderate",
       "lastModifiedDateTime": null,
-      "maxScore": 20,
+      "maxScore": 20.0,
       "rank": 55,
       "remediation": "You can create and manage data loss prevention policies in the Policies page of the compliance portal.",
       "remediationImpact": "This change will have a moderate impact on your users.",
