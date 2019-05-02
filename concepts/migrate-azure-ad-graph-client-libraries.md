@@ -53,7 +53,7 @@ The following steps assume your app is already using ADAL to acquire access toke
     To:
 
     ``` csharp
-    graphClient = new client(serviceRoot,
+    GraphServiceClient graphClient = new GraphServiceClient(serviceRoot,
        new DelegateAuthenticationProvider(async (requestMessage) => {
           var token = await AcquireTokenAsyncForUser();
           requestMessage.Headers.Authorization = new
