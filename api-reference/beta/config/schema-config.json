@@ -19,8 +19,8 @@
       "doc_type"
     ],
     "treatErrorsAsWarningsWorkloads": [
-      "intune",
-      "includes"
+      "includes",
+      "intune"
     ]
   },
   "schemaDiffConfig": {
