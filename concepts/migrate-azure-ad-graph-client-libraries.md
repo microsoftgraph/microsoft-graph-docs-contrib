@@ -41,7 +41,7 @@ The following steps assume your app is already using ADAL to acquire access toke
 
 3. Use your package manager to download and update the [Microsoft Graph NuGet package](https://www.nuget.org/packages/Microsoft.Graph/) and update dependencies.
 
-4. Update your client constructor to create a `GraphServiceClient`, rather than `ActiveDirectoryClient`.  The following code snippets assume your app is using the `AcquireTokenAsyncForUser()` method to acquire new tokens.
+4. Update your client constructor to create a `GraphServiceClient`, rather than `ActiveDirectoryClient`.  The following code snippets assume your app is using the `AcquireTokenAsyncForUser()` method to acquire new tokens. You can find a definition for this method as part of the [active-directory-dotnet-graphapi-console sample](https://github.com/Azure-Samples/active-directory-dotnet-graphapi-console/blob/archive/GraphConsoleAppV3/AuthenticationHelper.cs).
 
     Change:
 
