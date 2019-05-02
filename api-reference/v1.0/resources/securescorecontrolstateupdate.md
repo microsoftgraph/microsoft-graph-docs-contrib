@@ -2,6 +2,7 @@
 title: "secureScoreControlStateUpdate resource type"
 description: "This resource contains the history of the control states updated by user (control states include Default, Ignored, ThirdParty, Reviewed)."
 localization_priority: Normal
+author: preetikr
 ---
 #  secureScoreControlStateUpdate resource type
 
@@ -32,7 +33,7 @@ Contains the history of the control states updated by the user (control states i
   "comment": "String",
   "state": "String",
   "updatedBy": "String",
-  "updatedDateTime": "DateTimeOffset"
+  "updatedDateTime": "String (timestamp)"
 }
  ```
  <!-- {

@@ -2,6 +2,7 @@
 title: "secureScoreControlProfile resource type"
 description: "Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls."
 localization_priority: Normal
+author: preetikr
 ---
 
 # secureScoreControlProfile resource type
@@ -57,7 +58,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 }-->
 
 ```json

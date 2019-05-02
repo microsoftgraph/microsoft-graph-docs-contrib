@@ -71,8 +71,9 @@ GET https://graph.microsoft.com/v1.0/security/secureScores?$top=1
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScores"
+  "truncated": true,
+  "@odata.type": "microsoft.graph.secureScore",
+  "isCollection": true
 } -->
 
 ```http

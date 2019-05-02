@@ -71,8 +71,9 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "truncated": true,
+  "@odata.type": "microsoft.graph.secureScoreControlProfile",
+  "isCollection": true
 } -->
 
 ```http

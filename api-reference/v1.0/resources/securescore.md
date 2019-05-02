@@ -2,6 +2,7 @@
 title: "secureScore resource type"
 description: "Represents a tenant's secure score per day of scoring data, at the tenant and control level."
 localization_priority: Normal
+author: preetikr
 ---
 
 # secureScore resource type
@@ -48,7 +49,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScore"
 }-->
 
 ```json
@@ -56,7 +57,7 @@ The following is a JSON representation of the resource.
 "id": "String (identifier)",
 "azureTenantId": "String",
 "activeUserCount": "Int32",
-"createdDateTime": "DateTimeOffset",
+"createdDateTime": "String (timestamp)",
 "currentScore": "Double",
 "enabledServices": ["String"],
 "licensedUserCount": "Int32",

@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and a **secureScore*
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_securescores"
+  "name": "get_securescore"
 }-->
 
 ```http
@@ -62,7 +62,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScore"
 } -->
 
 ```http

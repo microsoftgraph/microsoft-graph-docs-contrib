@@ -49,11 +49,11 @@ If successful, this method returns a `200 OK` response code and a **secureScoreC
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_securescorecontrolprofiles"
+  "name": "get_securescorecontrolprofile"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/security/securescorecontrolprofiles/{id}
+GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}
 ```
 
 ### Response
@@ -62,7 +62,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
