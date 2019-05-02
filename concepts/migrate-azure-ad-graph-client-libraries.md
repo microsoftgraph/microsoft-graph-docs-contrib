@@ -16,10 +16,10 @@ If your app currently uses the Azure AD Graph client library, switch to the [Mic
 
 Here, we'll look at some general steps to migrate over to the Microsoft Graph .NET client library:
 
-- How to create a Microsoft Graph client, given an access token (that you can acquire using ADAL or MSAL),
-- How to formulate requests,
-- How to use query builders, and
-- How to handle collections and paging.  
+- How to create a Microsoft Graph client, given an access token (that you can acquire using ADAL or MSAL)
+- How to formulate requests
+- How to use query builders and
+- How to handle collections and paging  
 
 ## Overview of the migration steps
 

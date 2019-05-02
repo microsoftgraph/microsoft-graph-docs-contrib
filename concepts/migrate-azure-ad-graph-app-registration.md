@@ -14,9 +14,7 @@ For any app update, there are three areas to consider:
 
 - **App registration**: You can continue to use your existing app registration (`appId`) in your application code.  
 
-    You do **not** have to re-register your app to migrate to Microsoft Graph.  
-
-    Simply update the code, test heavily, and then deploy your update.  
+    You do **not** have to re-register your app to migrate to Microsoft Graph. Simply update the code, test heavily, and then deploy your update.  
 
 - **Permissions**: You can continue to use the existing configured permissions for your app. You do not have to request new permissions because Azure AD Graph permissions are shared with Microsoft Graph.
 
