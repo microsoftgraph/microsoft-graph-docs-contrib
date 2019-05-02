@@ -17,11 +17,9 @@ Most apps use an authentication library to aquire and manage access tokens to ca
 
 ## Updating ADAL
 
-If your app currently uses ADAL, use a two stage migration approach:
+If your app currently uses ADAL, use a two-stage migration approach:
 
-1. Update your app to acquire access tokens using ADAL to call Microsoft Graph.
-
-    Update the **resourceURL** to request tokens for the Microsoft Graph endpoint:
+1. Update your app to acquire access tokens for Microsoft Graph. Continue to use ADAL for this step. Update the **resourceURL** as follows:
 
     from: `https://graph.windows.net`  
     to:  `https://graph.microsoft.com`
@@ -42,11 +40,11 @@ When you switch your app over to MSAL, you'll need to make a few changes, includ
 var scopes = new string[] { "https://graph.microsoft.com/.default" };
 ```
 
-The expression above limits the permission scopes request to those configured in the Azure Portal application registration blade experience, and means your existing users will not be required to consent to your app again.
+The expression above limits the permission scopes request to those configured during application registration in the Azure Portal, and saves your existing users from having to consent to your app again.
 
 See [Migrating ADAL to MSAL](https://aka.ms/adal-net-to-msal-net) for direct and extensive help with the process, including troubleshooting and help with common errors.
 
-Once you've migrated to MSAL, you can request additional scopes dynamically, which results in users being asked for incremental consent the next time they use your app.  
+Once you've migrated to MSAL, you can request additional scopes dynamically, and users are prompted to provide incremental consent the next time they use your app.
 
 ## Next Steps
 
