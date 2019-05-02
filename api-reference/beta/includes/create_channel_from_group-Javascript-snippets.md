@@ -1,0 +1,19 @@
+
+```Javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const channel = {
+  displayName: "Architecture Discussion",
+  description: "This channel is where we debate all future architecture plans"
+};
+
+let res = await client.api('/teams/{id}/channels')
+	.version('beta')
+	.post({channel : channel});
+
+```
