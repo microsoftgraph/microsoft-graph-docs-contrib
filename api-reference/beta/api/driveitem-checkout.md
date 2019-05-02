@@ -58,6 +58,16 @@ If successful, the API call returns a `204 No content`.
 ```http
 HTTP/1.1 204 No content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/checkout-item-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/checkout-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Remarks
 
@@ -71,6 +81,9 @@ HTTP/1.1 204 No content
   "keywords": "copy existing item",
   "section": "documentation",
   "tocPath": "Items/Copy",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-checkout.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-checkout.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->

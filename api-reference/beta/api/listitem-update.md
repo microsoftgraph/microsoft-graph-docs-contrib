@@ -75,6 +75,14 @@ Content-type: application/json
   "Quantity": 934
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 [fieldValueSet]: ../resources/fieldvalueset.md
 [listItem]: ../resources/listitem.md
@@ -86,6 +94,8 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "ListItem/Update",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
