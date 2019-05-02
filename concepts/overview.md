@@ -69,7 +69,7 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 ## Access Microsoft Graph at scale
 
 
-Microsoft Graph data connect enables bulk - rather than the traditional transactional - access to Office 365 data. With the bulk Office 365 data, you can use Azure tools to build intelligent apps that:
+Microsoft Graph data connect provides a set of tools to build products with Microsoft Graph data at scale, while providing granularity and security featres as well. With data connect, you can use Azure tools to build intelligent apps that:
 
 - Find you the closest expert on a topic to you in your organization 
 - Automate knowledge base creation
@@ -78,7 +78,7 @@ Microsoft Graph data connect enables bulk - rather than the traditional transact
 
 ## When should I use Microsoft Graph data connect?
 
-Microsoft Graph data connect provides a new way for you to interact with the data that's available through Microsoft Graph APIs. In addition to providing scalable access to Office 365 data, Microsoft Graph Data Connect also provides a unique set of tools that streamline the building of intelligent applications, all within the Microsoft cloud.
+Microsoft Graph data connect provides a new way for you to interact with the data that's available through Microsoft Graph APIs. Data connect provides a unique set of tools that streamline the building of intelligent applications, all within the Microsoft cloud.
 
 |**Feature**| **Microsoft Graph API** | **Microsoft Graph Data Connect** |
 |:----------|:------------------------|:--------------------------------------|
