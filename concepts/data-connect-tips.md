@@ -12,11 +12,11 @@ Microsoft Graph data connect allows developers to create applications that custo
 
 ## Is Microsoft Graph data connect right for you?
 
-Data connect and the Microsoft Graph APIs provide access to the same underlying data but in very different ways. Data connect is designed to extract large amounts of data in bulk while the Microsoft Graph APIs are more suitable for accessing discrete sets of data in real time. In some cases, it might even make sense to combine them. For example, you might want use data connect to do an initial backfill of the last year of email data, and then use the Microsoft Graph APIs to analyze emails in real time moving forward. Data connect and the Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario.
+Data connect and the Microsoft Graph APIs provide access to the same underlying data but in very different ways. Data connect is designed to extract large amounts of data in bulk while the Microsoft Graph APIs are more suitable for accessing discrete sets of data in real time. In some cases, it might even make sense to combine them. For example, you might want use data connect to do an initial extraction of the last year of email data, and then use the Microsoft Graph APIs to analyze emails in real time moving forward. Data connect and the Microsoft Graph APIs are different tools for different jobs. It's important to think about which access method best fits your scenario.
 
 ## Expect an initial overhead
 
-Because data connect is designed to extract large amounts of data in bulk, there's some overhead before the data can be copied. This overhead is around 45 minutes, meaning all pipelines will take at least that long regardless of the data size. This might be a negligible cost for large amounts of data, but if this time is unacceptable for your scenario, the Microsoft Graph APIs might provide a better approach.
+Because data connect is designed to extract large amounts of data in bulk, some overhead is incurred before the data can be extracted. This overhead is around 45 minutes, meaning all pipelines will take at least that long regardless of the data size. This might be a negligible cost for large amounts of data, but if this time is unacceptable for your scenario, the Microsoft Graph APIs might provide a better approach.
 
 ## Data must stay within the organization's subscription
 
@@ -47,8 +47,8 @@ When you run a pipeline and trigger a PAM request, the request is attached to yo
 
 ## Deduplicate emails when needed
 
-When extracting emails from the `Message` datasets, there will often be multiple JSON objects for the same email. These duplicates exist because when an email is sent to multiple people, there is a copy of the email in every recipient's mailbox. The dataset is extracted from every mailbox, so it will contain all copies. In some scenarios, it might be necessary to keep every copy. But in some scenarios, you only want to count the email once, so you should deduplicate the emails after extraction.
-You can deduplicate the exported JSON objects based on the `internetMessageId` of the messages: Two messages with the same `internetMessageId` are duplicate copies of the same instance. The duplicates can exist in different blobs, so you must deduplicate across all blobs rather than deduplicating in each blob separately.
+When you extract emails from the `Message` dataset, there will often be multiple JSON objects for the same email. These duplicates exist because when an email is sent to multiple people, there is a copy of the email in every recipient's mailbox. Because the dataset is extracted from every mailbox, it will contain all copies across users. In some scenarios, it might be necessary to keep every copy but in others, you may want to remove the duplicates.
+You can deduplicate the exported JSON objects based on the `internetMessageId` of the messages: Two messages with the same `internetMessageId` are duplicate copies of the same instance. Because the duplicates can exist in different blobs, you must deduplicate across all blobs rather than deduplicating in each blob separately.
 
 ## Use puser field to determine the relevant user
 
