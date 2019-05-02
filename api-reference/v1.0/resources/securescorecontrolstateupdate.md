@@ -16,7 +16,7 @@ Contains the history of the control states updated by the user (control states i
 |comment|String|Provides optional comment about the control. |
 |state|String|State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty). |
 |updatedBy|String|ID of the user who updated tenant state. |
-|updatedDateTime|DateTimeOffset?|Time at which the control state was updated. |
+|updatedDateTime|DateTimeOffset|Time at which the control state was updated. |
 
 ## JSON representation
  The following is a JSON representation of the resource.

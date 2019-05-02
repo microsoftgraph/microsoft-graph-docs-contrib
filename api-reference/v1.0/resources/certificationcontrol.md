@@ -1,5 +1,5 @@
 ---
-title: " certificationControl resource type"
+title: "certificationControl resource type"
 description: "This resource contains compliance certification data associated with secure score control."
 localization_priority: Normal
 author: preetikr
