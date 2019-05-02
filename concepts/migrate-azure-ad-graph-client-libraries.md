@@ -18,7 +18,7 @@ Here, we'll look at some general steps to migrate over to the Microsoft Graph .N
 
 - How to create a Microsoft Graph client, given an access token (that you can acquire using ADAL or MSAL)
 - How to formulate requests
-- How to use query builders and
+- How to use query builders
 - How to handle collections and paging  
 
 ## Overview of the migration steps
@@ -93,7 +93,7 @@ The following steps assume your app is already using ADAL to acquire access toke
     client.Groups.Request().Filter("startswith(displayName,'a')").GetAsync();
     ```
 
-6. For any collections and paging, your app code will need to make some minor modifications.  The following example compares and contrasts fetching a group and paging through its members, 5 at a time. While the code for Azure AD Graph requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement. Other than that, the code is relatively similar.  To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single-threaded console app.
+6. If your code pages through collections, make the following minor adjustments. The following example compares and contrasts fetching a group and paging through its members, 5 at a time. While the code for Azure AD Graph requires a fetcher construct in order to fetch a group's members, Microsoft Graph has no such requirement. Other than that, the code is relatively similar.  To be concise, only user members are displayed, try/catch and error conditions are not shown, and the code snippets are for a single-threaded console app.
 
     As an example, change the following code using the Azure AD Graph .NET client library:
 

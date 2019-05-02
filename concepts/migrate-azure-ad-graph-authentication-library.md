@@ -19,16 +19,19 @@ Most apps use an authentication library to aquire and manage access tokens to ca
 
 If your app currently uses ADAL, use a two-stage migration approach:
 
-1. Update your app to acquire access tokens for Microsoft Graph. Continue to use ADAL for this step. Update the **resourceURL** as follows:
+1. Update your app to acquire access tokens for Microsoft Graph. Continue to use ADAL for this step. Update the **resourceURL**, which holds the URI representing the resource web API, from:
 
-    from: `https://graph.windows.net`  
-    to:  `https://graph.microsoft.com`
+    `https://graph.windows.net`  
+
+    To:  
+
+    `https://graph.microsoft.com`
 
     Newly acquired tokens have the same scopes after this change, but the audience of the access tokens is now Microsoft Graph.  
 
-    Once you've updated the **resourceURL** and verified functionality, release an interim update to get your users up and runnning.
+    Once you've updated **resourceURL** and verified functionality, release an interim update to get your users up and runnning.
 
-2.  Next, begin work migrating your app to use MSAL, which is the supported library to use moving forward.
+1.  Next, begin work migrating your app to use MSAL, which is the supported library to use moving forward.
 
 ## Migrating to MSAL
 
