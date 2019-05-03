@@ -303,7 +303,7 @@
           href: sdks/create-client.md
         - name: Choose an authentication provider
           href: sdks/choose-authentication-providers.md
-    - name: Use the Toolkit (preview)
+    - name: Use the Microsoft Graph Toolkit (preview)
       href: toolkit/index.md
         - name: Components
             - name: Login
