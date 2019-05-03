@@ -1,7 +1,6 @@
 - name: Microsoft Graph
   tocHref: /graph/
   topicHref: /graph/overview
-  items: 
 
 - name: Microsoft identity platform
   tocHref: /azure/

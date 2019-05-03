@@ -97,7 +97,7 @@ You do not need to use an authentication library to get an access token. To lear
   - [Single page app](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
   - [Daemon / background service](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
 - To see the permissions that you can use with Microsoft Graph, see [Permissions](../permissions-reference.md).
-- If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](auth-cloudsolutionprovider.md).
+- If you're a Microsoft Cloud Solution provider interested in accessing partner-managed customer data through Microsoft Graph, see [Manage app access (CSPs)](../auth-cloudsolutionprovider.md).
 
 If you're ready to jump into code, you can use the following resources to help you implement authentication and authorization with the Microsoft identity platform in your app.
 
