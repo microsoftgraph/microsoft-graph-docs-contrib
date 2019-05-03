@@ -20,7 +20,6 @@ Represents a tenant's secure score per day of scoring data, at the tenant and co
 
 
 ## Properties
-Entity type containing properties of the tenant security score (daily snapshot data).
 
 |Property |Type |Description |
 |:--|:--|:--|
