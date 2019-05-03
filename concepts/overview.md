@@ -11,6 +11,9 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Micros
 
 You can use the Microsoft Graph API to build apps for organizations and consumers that interact with the data of millions of users. With Microsoft Graph, you can connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
+
+
 ## What's in the graph?
 Microsoft Graph exposes REST APIs and client libraries to access data on the following:
 
