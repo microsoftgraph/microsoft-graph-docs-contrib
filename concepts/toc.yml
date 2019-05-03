@@ -305,7 +305,9 @@
           href: sdks/choose-authentication-providers.md
     - name: Use the Microsoft Graph Toolkit (preview)
       href: toolkit/index.md
+      items:
         - name: Components
+          items:
             - name: Login
               href: toolkit/components/login.md
             - name: Person
@@ -318,6 +320,7 @@
               href: toolkit/components/tasks.md
         - name: Providers
           href: toolkit/providers.md
+          items:
             - name: Msal Provider
               href: toolkit/providers/msal.md
             - name: SharePoint Provider
