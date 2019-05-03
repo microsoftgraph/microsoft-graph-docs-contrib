@@ -68,8 +68,11 @@ IGraphServiceClient graphClient = GraphServiceClient
 ```objc
 // Create the authenticationProvider.
 NSError *error = nil;
-MSALPublicClientApplication *application = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID" error:&error];
-MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:application andScopes:<array-of-scopes-for-which-you-need-access-token>];
+MSALPublicClientApplication *publicClientApplication = [[MSALPublicClientApplication alloc] initWithClientId:@"INSERT-CLIENT-APP-ID" 
+error:&error];
+MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProviderOptions alloc] initWithScopes:<array-of-scopes-for-which-you-need-access-token>];
+ MSALAuthenticationProvider *authenticationProvider = [[MSALAuthenticationProvider alloc] initWithPublicClientApplication:publicClientApplication 
+ andOptions:authProviderOptions];
 
 // Create the client with the authenticationProvider and create a request to the /me resource.
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
