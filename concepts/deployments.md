@@ -17,6 +17,8 @@ Each national cloud environment is unique and different than the Microsoft globa
 
 This article provides information about the different Microsoft Graph national cloud deployments and the capabilities that are available to developers within each.
 
+>**Note:** [Microsoft Graph data connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) does not support any of the national cloud deployments. 
+
 ## App registration and token service root endpoints
 
 Before calling the Microsoft Graph APIs, you should first register your application and acquire a token. The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints to register your application and acquire tokens for each national cloud.
