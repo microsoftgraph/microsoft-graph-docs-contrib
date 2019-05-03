@@ -13,7 +13,8 @@ Built on the strength and scale of [Office 365](https://products.office.com/) wi
 Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
 
 
-<iframe src="https://www.youtube-nocookie.com/embed/KCvAhQEJmyY" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
+
 
 ## Why integrate with Microsoft Teams?
 
