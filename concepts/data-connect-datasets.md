@@ -40,23 +40,10 @@ Data connect supports extracting data from a variety of different Office 365 reg
 
 | Office region                    | Azure region                                |
 |----------------------------------|---------------------------------------------|
-| **North America**                | East US                                     |
-|                                  | East US 2                                   |
-|                                  | Central US                                  |
-|                                  | North Central US                            |
-|                                  | South Central US                            |
-|                                  | West Central US                             | 
-|                                  | West US                                     |
-|                                  | West US 2                                   |  
-|                                                                                |
-| **Europe**                       | North Europe                                |
-|                                  | West Europe                                 |
-|                                                                                |
-| **Asia-Pacific**                 | East Asia                                   |
-|                                  | Southeast Asia                              |
-|                                                                                |
-| **Australia**                    | Australia East                              |
-|                                  | Australia Southeast                         |
+| **North America**                | East US<br/>East US 2<br/>Central US<br/>North Central US<br/>South Central US<br/>West Central US<br/>West US<br/>West US 2|
+| **Europe**                       | North Europe<br/>West Europe|
+| **Asia-Pacific**                 | East Asia<br/>Southeast Asia|
+| **Australia**                    | Australia East<br/>Australia Southeast|
 
 ## Sinks
 
