@@ -16,6 +16,16 @@ metadata:
   ms.author: dadobali
 abstract:
   description: This overview focuses on the basics of OAuth2.0, getting tokens for the Microsoft Graph API, and using these tokens following a set of best practices for security and user experience.
+  aside:
+    image:
+      alt:
+      height: 110
+      src: ../images/index/whatsnew-video.png
+      width: 250
+    title: Getting started with Microsoft Graph and app registration (7:29)
+    href: https://www.youtube.com/watch?v=93j0MmRruFo
+    width: 250
+
 sections:
   - items:
     - type: list
