@@ -38,7 +38,7 @@ Represents the risk history of Azure AD users as determined by Azure AD Identity
 ```json
 {
     "userId": "string",
-    "initiatedBy": "bool",
+    "initiatedBy": "string",
     "activity": {"@odata.type": "microsoft.graph.riskUserActivity"}
 }
 ```
