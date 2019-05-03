@@ -93,7 +93,7 @@
     - name: Data access
       displayName: Microsoft Graph data connect
       items:
-      - name: Data connect
+      - name: Data connect overview
         href: data-connect-concept-overview.md
       - name: Get started
         href: data-connect-get-started.md
@@ -241,7 +241,9 @@
     - name: Get auth tokens
       items:
       - name: Overview
-        href: auth-overview.md
+        href: auth/index.yml
+      - name: Basics
+        href: auth/auth-concepts.md
       - name: Register your app
         href: auth-register-app-v2.md
       - name: Get access on behalf of a user
