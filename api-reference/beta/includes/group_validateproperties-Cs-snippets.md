@@ -1,0 +1,17 @@
+
+```Cs
+
+GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+var displayName = "Myprefix_test_mysuffix";
+
+var mailNickname = "Myprefix_test_mysuffix";
+
+var onBehalfOfUserId = "onBehalfOfUserId-value";
+
+await graphClient.Groups["{id}"]
+	.ValidateProperties(displayName,mailNickname,onBehalfOfUserId)
+	.Request()
+	.PostAsync()
+
+```

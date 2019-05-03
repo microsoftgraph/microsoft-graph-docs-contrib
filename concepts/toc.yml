@@ -20,7 +20,7 @@
         href: deployments.md
       - name: Hybrid deployments (preview)
         href: hybrid-rest-support.md
-    - name: Microsoft Graph data connect (preview)
+    - name: Microsoft Graph data connect
       href: data-connect-overview.md
     - name: Tutorials
       items:
@@ -90,13 +90,23 @@
     - name: Customer booking (preview)
       href: booking-concept-overview.md
       displayName: Bookings, Microsoft Bookings
-    - name: Data access (preview)
+    - name: Data access
       displayName: Microsoft Graph data connect
       items:
-      - name: Overview
+      - name: Data connect overview
         href: data-connect-concept-overview.md
       - name: Get started
         href: data-connect-get-started.md
+      - name: Datasets, regions, and sinks
+        href: data-connect-datasets
+      - name: Policies and licensing
+        href: data-connect-policies
+      - name: User selection and filtering
+        href: data-connect-filtering
+      - name: Integrate with PAM
+        href: data-connect-pam
+      - name: Tips
+        href: data-connect-tips
     - name: Devices and apps
       href: intune-concept-overview.md
       displayName: Intune
@@ -257,9 +267,10 @@
       - name: Throttling
         href: throttling.md
       - name: Change notifications
-        href: webhooks.md
         displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
         items:
+        - name: Overview
+          href: webhooks.md
         - name: Missing Outlook notifications (preview)
           href: webhooks-outlook-authz.md
       - name: Track changes
@@ -284,6 +295,16 @@
           href: extensibility-open-users.md
         - name: Use schema extensions (example)
           href: extensibility-schema-groups.md
+    - name: Use SDKs
+      items:
+        - name: Overview
+          href: sdks/sdks-overview.md
+        - name: Install the SDK
+          href: sdks/sdk-installation.md
+        - name: Create a client
+          href: sdks/create-client.md
+        - name: Choose an authentication provider
+          href: sdks/choose-authentication-providers.md
     - name: Resources
       items:
       - name: Best practices

@@ -10,6 +10,8 @@ ms.prod: "microsoft-identity-platform"
 
 This page shows you how to add and register an application using the **App registrations** experience in the Azure portal so that your app can be integrated with the Microsoft identity platform and call Microsoft Graph. 
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
+
 ## Register a new application using the Azure portal
 
 1. Sign in to the [Azure portal](https://portal.azure.com) using either a work or school account or a personal Microsoft account.

@@ -62,7 +62,7 @@ This is an example of a successful validation request.
   "name": "directoryobject_validateproperties"
 }-->
 ``` http
-POST https://graph.microsoft.com/directoryObjects/validateProperties
+POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
 Content-length: 164
 
@@ -82,12 +82,22 @@ Content-length: 164
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 This is an example of a request with validation errors.
 
 ### Request
 ```http
-POST https://graph.microsoft.com/directoryObjects/validateProperties
+POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
 Content-length: 164
 
@@ -139,5 +149,9 @@ Content-Type: application/json
   "description": "directoryObject: validateProperties",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

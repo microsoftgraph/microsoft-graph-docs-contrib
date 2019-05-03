@@ -7,7 +7,10 @@ localization_priority: Normal
 ---
 # identitySet resource type
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 The **identitySet** resource is a keyed collection of [identity](identity.md) resources.
+
 It is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 
 ## JSON representation
