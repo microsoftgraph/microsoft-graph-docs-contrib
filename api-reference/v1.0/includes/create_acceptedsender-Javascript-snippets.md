@@ -1,0 +1,17 @@
+
+```Javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const directoryObject = {
+  @odata.id:"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
+};
+
+let res = await client.api('/groups/{id}/acceptedSenders/$ref')
+	.post({directoryObject : directoryObject});
+
+```
