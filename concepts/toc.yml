@@ -235,7 +235,7 @@
       - name: Basics
         href: auth/auth-concepts.md
       - name: Register your app
-        href: https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app?toc=/graph/toc.json&bc=/graph/breadcrumb/toc.json
+        href: auth-register-app-v2.md
       - name: Get access on behalf of a user
         href: auth-v2-user.md
       - name: Get access without a user
