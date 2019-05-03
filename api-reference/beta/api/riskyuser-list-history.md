@@ -5,11 +5,11 @@ localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 ---
-# List riskyUser History
+# List history of riskyUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the risk history of a **riskyUser** object.
+Get the risk history of a [riskyUser](../resources/riskyuser.md) object.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-LIST /riskyUsers/{userid}/history
+LIST /riskyUsers/{id}/history
 ```
 
 
@@ -33,7 +33,6 @@ LIST /riskyUsers/{userid}/history
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -48,10 +47,10 @@ Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_userriskhitsory",
-  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
+  "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/f61fad1b-cf1b-4ce5-ba25-957ac919ddeb/history
+GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history
 ```
 ##### Response
 Here is an example of the response.
@@ -59,31 +58,75 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true,
   "isCollection": true,
-  "@odata.type": "microsoft.graph.riskyUser"
+  "@odata.type": "microsoft.graph.riskyUserHistoryItem"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "f61fad1b-cf1b-4ce5-ba25-957ac919ddeb636699887174968737",
-  "isDeleted": false,
-  "isGuest": false,
-  "riskLevel": "high",
-  "riskState": "atRisk"
-  "riskDetail": "none",
-  "riskLastUpdatedDateTime": "2018-08-16T03:58:37.4968737Z",
-  "userDisplayName": "Helen Poulsen",
-  "userPrincipalName": "helen@contoso.com",
-  "userId": "f61fad1b-cf1b-4ce5-ba25-957ac919ddeb",
-  "initiatedBy": null,
-  "activity": {
-        "eventTypes": [
-          "leakedCredentials"
-        ],
-        "detail": null
-    }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#riskyUsers('41a31b00-3b3b-42d9-8f1c-6d4f14e74c69')/history",
+    "value": [
+        {
+            "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "isDeleted": false,
+            "isGuest": false,
+            "isProcessing": false,
+            "riskLevel": "none",
+            "riskState": "remediated",
+            "riskDetail": "userPerformedSecuredPasswordReset",
+            "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
+            "userDisplayName": "Allan Deyoung",
+            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
+            "activity": {
+                "eventTypes": [],
+                "detail": "userPerformedSecuredPasswordReset"
+            }
+        },
+        {
+            "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901009342322587",
+            "isDeleted": false,
+            "isGuest": false,
+            "isProcessing": false,
+            "riskLevel": "high",
+            "riskState": "atRisk",
+            "riskDetail": "none",
+            "riskLastUpdatedDateTime": "2019-04-05T22:31:27Z",
+            "userDisplayName": "Allan Deyoung",
+            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "initiatedBy": null,
+            "activity": {
+                "eventTypes": [
+                    "anonymizedIPAddress"
+                ],
+                "detail": null
+            }
+        },
+        {
+            "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69636901020140973557",
+            "isDeleted": false,
+            "isGuest": false,
+            "isProcessing": false,
+            "riskLevel": "none",
+            "riskState": "remediated",
+            "riskDetail": "userPerformedSecuredPasswordReset",
+            "riskLastUpdatedDateTime": "2019-04-05T23:00:14.0973557Z",
+            "userDisplayName": "Allan Deyoung",
+            "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+            "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+            "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
+            "activity": {
+                "eventTypes": [],
+                "detail": "userPerformedSecuredPasswordReset"
+            }
+        }
+    ]
 }
+
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,19 +1,19 @@
 ---
-title: Dismiss riskyUsers
-description: Dismiss the risk of a riskyUsers object.
+title: Dismiss riskyUser
+description: Dismiss the risk of a riskyUser object.
 author: cloudhandler
 localization_priority: Normal 
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 ---
 
-# Dismiss riskyUser
+# riskyUser: dismiss
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
-Dismiss the risk of a **riskyUser** object. This action will set the targeted user's risk level to none.
+Dismiss the risk of one or more [riskyUser](../resources/riskyuser.md) objects. This action sets the targeted user's risk level to none.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,7 +34,6 @@ POST /riskyUsers/dismiss
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 Specify the userIds to dismiss in the request body.
