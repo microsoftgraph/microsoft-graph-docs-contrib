@@ -12,7 +12,8 @@ Outlook is a messaging communication hub in Office 365. It also lets you manage 
 initiate online conversations, share files, and collaborate in groups.
 
 
-<iframe src="https://www.youtube-nocookie.com/embed/gm25wusIQ" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://www.youtube-nocookie.com/embed/gm25wusIQ]
+
 
 ## Why integrate with Outlook mail?
 
