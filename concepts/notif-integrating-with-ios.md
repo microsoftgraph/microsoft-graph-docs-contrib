@@ -3,7 +3,7 @@
 
 ## Summary
 
-Now that you've completed [app registrations](notif-integration-app-registration.md) in the Azure Portal and [Cross-Device Experiences onboarding](notif-integration-cross-device-experiences-onboarding) in Microsoft Partner Dev Center, let's move on to code integration. 
+Now that you've completed [app registrations](notif-integration-app-registration.md) in the Azure Portal and [Cross-Device Experiences onboarding](notif-integration-cross-device-experiences-onboarding.md) in Microsoft Partner Dev Center, let's move on to code integration. 
 
 This page captures the steps for integrating your client app with the client-side SDK for iOS apps.  
 
