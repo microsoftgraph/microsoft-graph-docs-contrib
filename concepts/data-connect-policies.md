@@ -29,7 +29,7 @@ If you’re an ISV, we also provide an option for you to build applications for 
 ### ISVs using the Microsoft Graph data connect license
 If you're an ISV using the data connect license, you must utilized [Azure Key Vault](https://azure.microsoft.com/en-us/services/key-vault/) to store and process the license assignment. You will need to [create a Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/quick-create-portal). During creation, note the Key Vault URI value. It will be used in the application definition to reference the Key Vault. After you create the Key Vault, ensure that the SPN used in the Source Linked Service of the application's ARM template has access to it. To do so, go to the **Access Policies** pane of the Key Vault instance, create an access policy for the application referenced by the SPN, and assign **Get** and **List** permissions to the application. 
 
-![Creating access policy to Key Vault](/concepts/images/data-connect-keyvault-access.png)
+![Creating access policy to Key Vault](images/data-connect-keyvault-access.png)
 
 The assignment of Microsoft Graph data connect licenses to organizations is provided as a secret in the Key Vault. To do so:
 1. Go to the Key Vault and under **Generate/Import**, create a manual secret. The name of the secret must be **MGdcSKUMapping** and the value of the secret must contain the ID of the tenant and the number of licenses allocated to that tenant, in the following format.
@@ -38,7 +38,7 @@ The assignment of Microsoft Graph data connect licenses to organizations is prov
 
 2. After setting the value, make sure that it is enabled and select **Create** to begin the deployment. 
 
-![Creating the secret in Key Vault](/concepts/images/data-connect-keyvault-create.png)
+![Creating the secret in Key Vault](images/data-connect-keyvault-create.png)
 
 3. You also need to update the application's ARM template to reference the Key Vault that you created. To do so, populated the **LicenseKeyVaultUri** property, which must be populated with the **KeyVaultUri** value you noted during creation. This property is provided in the Source Linked Service of the application's ARM template, as shown. 
 
