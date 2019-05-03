@@ -1,8 +1,7 @@
 - name: Microsoft Graph
   tocHref: /graph/
   topicHref: /graph/overview
-
-- name: Microsoft Graph
+- name: MS Graph
   tocHref: /azure/
   topicHref: /graph/overview
   items:
