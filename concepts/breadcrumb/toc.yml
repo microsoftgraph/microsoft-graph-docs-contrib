@@ -6,14 +6,14 @@
   tocHref: /azure/
   topicHref: /graph/overview
   items:
-    - name: Azure Active Directory
-      topHref: /azure/active-directory/
-      topicHref: /graph/auth/index.yml
+  - name: Azure Active Directory
+    topHref: /azure/active-directory/
+    topicHref: /graph/auth/index.yml
     items:
-      - name: Microsoft identity platform
-        topHref: /azure/active-directory/develop/
-        topicHref: /graph/auth/index.yml
-        items:
-        - name: Register an app
-          topHref: /azure/active-directory/develop/quickstart-register-app/
-          topicHref: /graph/auth-register-app-v2.md
+    - name: Microsoft identity platform
+      topHref: /azure/active-directory/develop/
+      topicHref: /graph/auth/index.yml
+      items:
+      - name: Register an app
+        topHref: /azure/active-directory/develop/quickstart-register-app/
+        topicHref: /graph/auth-register-app-v2.md
