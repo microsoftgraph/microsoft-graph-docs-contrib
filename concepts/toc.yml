@@ -93,7 +93,7 @@
     - name: Data access
       displayName: Microsoft Graph data connect
       items:
-      - name: Data connect
+      - name: Data connect overview
         href: data-connect-concept-overview.md
       - name: Get started
         href: data-connect-get-started.md
