@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
+|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All |
+|Application | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of  [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.

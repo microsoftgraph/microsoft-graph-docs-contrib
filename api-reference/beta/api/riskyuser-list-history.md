@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the risk history of a [riskyUser](../resources/riskyuser.md) object.
+Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
+|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All |
+|Application | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
