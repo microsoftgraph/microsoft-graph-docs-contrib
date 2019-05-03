@@ -57,4 +57,4 @@ The `puser` field is also useful for datasets such as the `Manager` dataset. The
 
 ## Next Steps
 
-Reach out on [Uservoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) for feature requests. 
+Reach out on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581) for feature requests. 
