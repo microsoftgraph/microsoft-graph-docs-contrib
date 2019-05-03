@@ -175,11 +175,11 @@
         - name: App Server Integration
           href: notif-integrating-app-server.md
         - name: Windows App Integration
-          href: notif-integration-with-windows.md
+          href: notif-integrating-with-windows.md
         - name: Android App Integration
-          href: notif-integration-with-android.md
+          href: notif-integrating-with-android.md
         - name: IOS App Integration
-          href: notif-integration-with-ios.md
+          href: notif-integrating-with-ios.md
     - name: Personal contacts
       displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
