@@ -101,7 +101,7 @@ For more information about Microsoft Graph data connect, see [Microsoft Graph da
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
-- Find out how to [get an auth token](auth-overview.md) in your app.
+- Find out how to [get an auth token](./auth/) in your app.
 - Start [using the API](use-the-api.md).
 
 
