@@ -92,6 +92,12 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 |:-----------|:--------------------|:-----------|:----------------|
 | Cross-device experiences | Activity feed, device relay | Enables app experiences that transcend a single device, and instead move with the user from device to device regardless of its type and platform. | [Overview for cross-device experiences](cross-device-concept-overview.md) |
 
+## User notifications
+
+|Feature     |Supporting services  |Description |More information |
+|:-----------|:--------------------|:-----------|:----------------|
+| User notifications | User notifications | Enables app experiences to build user-centric and cross-platform notification experiences including user-based fan-out, universal dismiss, and accessing notification history. | [Overview for cross-device experiences](notifications-concept-overview.md) |
+
 
 ## Usage reports
 
