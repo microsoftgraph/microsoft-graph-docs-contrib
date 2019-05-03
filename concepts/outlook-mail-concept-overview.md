@@ -11,6 +11,9 @@ ms.prod: "outlook"
 Outlook is a messaging communication hub in Office 365. It also lets you manage contacts, schedule meetings, find information about users in an organization,
 initiate online conversations, share files, and collaborate in groups.
 
+
+<iframe src="https://www.youtube-nocookie.com/embed/gm25wusIQ" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+
 ## Why integrate with Outlook mail?
 
 ### Integrate with rich features and reach hundreds of millions of customers

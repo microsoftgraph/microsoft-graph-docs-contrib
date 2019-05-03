@@ -11,6 +11,8 @@ ms.prod: "outlook"
 Outlook calendar is part of the Outlook messaging hub in Office 365 that also lets you manage emails and contacts, find information about users in an organization,
 initiate online conversations, share files, and collaborate in groups.
 
+<iframe src="https://www.youtube-nocookie.com/embed/_ST4nyz4g9E" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+
 ## Why integrate with Outlook calendar?
 
 ### Reach hundreds of millions of customers and build rich scenarios

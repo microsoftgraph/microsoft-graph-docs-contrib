@@ -9,7 +9,8 @@ localization_priority: Priority
 
 Users are the representation of an Azure Active Directory (Azure AD) work or school user account or a Microsoft account in Microsoft Graph. The **user** resource in Microsoft Graph is a hub from which you can access the relationships and resources that are relevant to your users.
 
-![Diagram showing a user connected to calendar, email, contacts, meetings, tasks, sites, and documents](images/users.png)
+
+<iframe src="https://www.youtube-nocookie.com/embed/TUMPipN3UFI" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
 
 ## Develop user-centric applications
 
