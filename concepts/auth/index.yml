@@ -15,14 +15,14 @@ metadata:
   ms.date: 04/26/2019
   ms.author: dadobali
 abstract:
-  description: This overview focuses on the basics of OAuth2.0, getting tokens for the Microsoft Graph API, and using these tokens following a set of best practices for security and user experience.
+  description: Learn how to authenticate and work with permissions to securely access data through Microsoft Graph. Explore the documentation below to learn about app registration, authentication libraries, authorization, and other parts of the Microsoft identity platform that support Microsoft Graph development. 
   aside:
     image:
       alt:
       height: 110
-      src: /graph/images/index/whatsnew-video.png
+      src: /graph/images/appreg-video.png
       width: 250
-    title: Getting started with Microsoft Graph and app registration (7:29)
+    title: Microsoft Graph and app registration (7:29)
     href: https://www.youtube.com/watch?v=93j0MmRruFo
     width: 250
 
@@ -57,7 +57,7 @@ sections:
   - title: Auth SDKs
     items:
     - type: paragraph
-      text: 'Using an Auth SDK when integrating with the Microsoft Graph drastically simplifies to code that needs to be written and allows apps to focus on building great experiences.'
+      text: 'Using an auth SDK when integrating with Microsoft Graph simplifies the code that needs to be written and allows developers to focus on building great experiences. Use the Microsoft Authentication Library (MSAL) for the best experience, or choose one of our recommended open-source alternatives.'
     - type: table
       style: dataMatrix
       columns:
