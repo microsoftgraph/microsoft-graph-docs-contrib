@@ -20,7 +20,7 @@ abstract:
     image:
       alt:
       height: 110
-      src: ../images/index/whatsnew-video.png
+      src: /graph/images/index/whatsnew-video.png
       width: 250
     title: Getting started with Microsoft Graph and app registration (7:29)
     href: https://www.youtube.com/watch?v=93j0MmRruFo
