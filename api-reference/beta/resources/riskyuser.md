@@ -44,7 +44,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|history|[riskyUserHistoryItem](riskyuserhistoryitem.md) collection| |
+|history|[riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection. |
 
 ## JSON representation
 

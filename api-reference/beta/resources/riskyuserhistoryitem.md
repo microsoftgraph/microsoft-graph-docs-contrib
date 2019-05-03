@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 # riskyUserHistoryItem resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Represents the risk history of Azure AD users as determined by Azure AD Identity Protection. 
+Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection. 
 
 ## Methods
 
