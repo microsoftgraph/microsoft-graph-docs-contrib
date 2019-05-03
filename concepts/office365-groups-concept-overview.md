@@ -11,8 +11,7 @@ ms.prod: "reports"
 Office 365 groups provide the foundational membership service for users to share conversations, files, notes, calendars, plans, and many other assets. 
 
 
-
-<iframe src="https://www.youtube-nocookie.com/embed/WB9w6QM9xIU" width="640" height="320" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://www.youtube-nocookie.com/embed/WB9w6QM9xIU]
 
 ## Why integrate with Office 365 groups?   
 
