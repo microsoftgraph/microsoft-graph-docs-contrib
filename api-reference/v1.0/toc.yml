@@ -3059,6 +3059,23 @@
       href: resources/azure-ad-overview.md
       displayName: Azure AD, Microsoft identity platform
       items:
+      - name: Audit logs
+        href: resources/azure-ad-auditlog-overview.md
+        items:
+        - name: Directory audit
+          href: resources/directoryaudit.md
+          items:
+          - name: List directory audits
+            href: api/directoryaudit-list.md
+          - name: Get directory audit
+            href: api/directoryaudit-get.md
+        - name: Sign-in
+          href: resources/signin.md
+          items:
+          - name: List sign-ins
+            href: api/signin-list.md
+          - name: Get sign-in
+            href: api/signin-get.md
       - name: Contracts
         href: resources/contract.md
         items:
@@ -3734,6 +3751,22 @@
           href: api/alert-get.md
         - name: Update alert
           href: api/alert-update.md
+      - name: Secure scores
+        href: resources/securescore.md
+        items:
+        - name: List secure scores
+          href: api/security-list-securescores.md
+        - name: Get secure score
+          href: api/securescore-get.md
+      - name: Secure score control profiles
+        href: resources/securescorecontrolprofile.md
+        items:
+        - name: Get secure score control profile
+          href: api/securescorecontrolprofile-get.md
+        - name: List secure score control profiles
+          href: api/security-list-securescorecontrolprofiles.md
+        - name: Update secure score control profiles
+          href: api/securescorecontrolprofile-update.md
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
