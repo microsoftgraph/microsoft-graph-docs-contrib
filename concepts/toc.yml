@@ -320,15 +320,16 @@
             - name: Tasks
               href: toolkit/components/tasks.md
         - name: Providers
-          href: toolkit/providers.md
           items:
+            - name: Using the Providers
+              href: toolkit/providers.md
             - name: Msal Provider
               href: toolkit/providers/msal.md
             - name: SharePoint Provider
               href: toolkit/providers/SharePoint.md
             - name: Microsoft Teams Provider
               href: toolkit/providers/Teams.md
-            - name: Providers Provider
+            - name: Custom Provider
               href: toolkit/providers/custom.md
         - name: Style and Template
           href: toolkit/style.md
