@@ -7,14 +7,22 @@ localization_priority: Priority
 
 # Overview of Microsoft Graph
 
-Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Office 365, Enterprise Mobility + Security, and Windows 10. 
+Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Office 365, Windows 10, and Enterprise Mobility + Security. 
 
 You can use the Microsoft Graph API to build apps for organizations and consumers that interact with the data of millions of users. With Microsoft Graph, you can connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
 
+## Powering the Microsoft 365 platform
 
-## What's in the graph?
+Together with [Microsoft Graph data connect](#access-microsoft-graph-at-scale) and Microsoft Graph connectors (private preview), Microsoft Graph powers the Microsoft 365 platform. The ability to access Microsoft Graph data and other datasets to derive insights and analytics lets you extend Microsoft 365 experiences, or build unique intelligent applications.
+
+> [!NOTE]
+> Microsoft Graph connectors is in private preview. Participation in the preview is by invitation only. See more information in [Build 2019: Microsoft Graph powers the Microsoft 365 platform](https://aka.ms/microsoftgraphbuild2019).
+
+![Microsoft Graph, Microsoft Graph data connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-800.png)
+
+## What's in Microsoft Graph?
 Microsoft Graph exposes REST APIs and client libraries to access data on the following:
 
 - Azure Active Directory
@@ -71,8 +79,8 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 
 ## Access Microsoft Graph at scale
 
-
-Microsoft Graph data connect provides a set of tools to build products with Microsoft Graph data at scale, while providing granularity and security featres as well. With data connect, you can use Azure tools to build intelligent apps that:
+Microsoft Graph data connect provides a set of tools to access data on Microsoft Graph at scale, while allowing administrators granular consent and full control over their Microsoft Graph data. Data connect streamlines the delivery of this data to Microsoft Azure. 
+Using Azure tools, you can build intelligent apps that:
 
 - Find you the closest expert on a topic to you in your organization 
 - Automate knowledge base creation
