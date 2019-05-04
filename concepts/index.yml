@@ -65,26 +65,34 @@ sections:
   - title: What's new in the docs?
     items:
     - type: paragraph
-      text: v1 or generally applicable
+      text: <b>Concepts</b>
+    - type: list
+      style: unordered
+      items:
+      - html: <a href="/graph/data-connect-concept-overview">Microsoft Graph data connect</a>
+      - html: Calendar - <a href="/graph/outlook-get-free-busy-schedule">Get free-busy schedule</a>
+      - html: <a href="/graph/auth">Improved auth guides</a>
+      - html: <a href="/graph/migrate-azure-ad-graph-overview">Migrate apps from Azure AD Graph to Microsoft Graph</a>
+      - html: Financials - <a href="/graph/dynamics-business-central-concept-overview">Dynamics 365 Business Central</a>
+      - html: Mail, calendar, contacts - <a href="/graph/outlook-get-mime-message">Get MIME content of messages</a>, <a href="/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment">get raw/MIME content of attachments</a>, <a href="/graph/webhooks-outlook-authz">reduce missing change notifications</a>
+
+    - type: paragraph
+      text: <b>v1 or generally applicable</b>
     - type: list
       style: unordered
       items: 
-      - html: <a href="/graph/data-connect-concept-overview">Microsoft Graph data connect</a>
-      - html: Calendar - <a href="/graph/outlook-get-free-busy-schedule">Get free-busy schedule</a>
-      - html: Identity and access - <a href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Audit and sign-in logs</a>, <a href="/graph/api/resources/identityprovider?view=graph-rest-1.0">identity providers</a>, <a href="/graph/auth">improved auth guides</a>, <a href="/graph/migrate-azure-ad-graph-overview">migrate apps from Azure AD Graph to Microsoft Graph</a>
+      - html: Identity and access - <a href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Audit and sign-in logs</a>, <a href="/graph/api/resources/identityprovider?view=graph-rest-1.0">identity providers</a>
       - html: Lists - <a href="/graph/api/itemanalytics-get?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Get item analytics</a>
       - html: Security - <a href="/graph/api/resources/securescore?view=graph-rest-1.0">Secure score</a>
       - html: SDKs - <a href="/graph/sdks/sdks-overview?view=graph-rest-1.0">guides</a>, API snippets (<a href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">example</a>)
 
     - type: paragraph
-      text: Beta
+      text: <b>Beta</b>
     - type: list
       style: unordered
       items:
       - html: Files - <a href="/graph/api/driveitem-follow?view=graph-rest-beta">Follow</a> and <a href="/graph/api/driveitem-unfollow?view=graph-rest-beta">unfollow</a> documents, <a href="/graph/api/driveitem-invite?view=graph-rest-beta#request-body">sharing invitation</a> includes expiration and password
-      - html: Financials - <a href="/graph/dynamics-business-central-concept-overview">Dynamics 365 Business Central</a>
       - html: Identity and access - <a href="/graph/api/resources/accessreviews-root?view=graph-rest-beta">Access reviews</a> support application permissions, <a href="/graph/api/resources/applicationsigninsummary?view=graph-rest-beta">application sign-in reports</a>, <a href="/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta">custom sign-in and sign-up in Azure AD B2C</a>, <a href="/graph/api/resources/riskyuser?view=graph-rest-beta">risky user</a> and <a href="/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta">history</a>
-      - html: Mail, calendar, contacts - <a href="/graph/outlook-get-mime-message">Get MIME content of messages</a>, <a href="/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment">get raw/MIME content of attachments</a>, <a href="/graph/webhooks-outlook-authz">reduce missing change notifications</a>
       - html: Security - <a href="graph/api/resources/tiindicator?view=graph-rest-beta">Threat indicators</a>, <a href="/graph/api/resources/securityaction?view=graph-rest-beta">security actions</a>
       - html: Teamwork - <a href="/graph/api/resources/shift?view=graph-rest-beta">Shifts management</a>, <a href="/graph/api/resources/chat?view=graph-rest-beta">1:1 chats</a>
     
