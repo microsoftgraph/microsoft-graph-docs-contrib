@@ -9,11 +9,15 @@ localization_priority: Priority
 
 Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Microsoft Graph provides a unified programmability model that you can use to take advantage of the tremendous amount of data in Office 365, Windows 10, and Enterprise Mobility + Security. 
 
-You can use the Microsoft Graph API to build apps for organizations and consumers that interact with the data of millions of users. With Microsoft Graph, you can connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
+You can use Microsoft Graph **API** to build apps for organizations and consumers that interact with the data of millions of users. With Microsoft Graph, you can connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
 
 ## Powering the Microsoft 365 platform
+
+Microsoft data connect provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores, serving as a rich data source for Azure development tools to build intelligent applications.
+
+Microsoft Graph connectors on the other hand delivers outside data into Microsoft Graph services and applications.
 
 Together with [Microsoft Graph data connect](#access-microsoft-graph-at-scale) and Microsoft Graph connectors (private preview), Microsoft Graph powers the Microsoft 365 platform. The ability to access Microsoft Graph data and other datasets to derive insights and analytics lets you extend Microsoft 365 experiences, or build unique intelligent applications.
 
@@ -32,26 +36,35 @@ Microsoft Graph exposes REST APIs and client libraries to access data on the fol
 - Reports: Identity and access, Office 365 usage
 - Windows 10 services: activities, devices, notifications
 
-To find out more, see 
-[Major services and features in Microsoft Graph](overview-major-services.md).
+To find out more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
 ![An image showing the primary resources and relationships that are part of the graph](images/microsoft-graph.png)
 
 ## What can you do with Microsoft Graph? 
 
-You can use Microsoft Graph to build experiences around the user's unique context to help them be more productive. Imagine an app that...
+Use Microsoft Graph to build experiences around the user's unique context to help them be more productive. Imagine an app that...
 
-- Looks at your next meeting and helps you prepare for it by providing profile information for attendees, including their job titles and who they work with, as well as information about the latest documents and projects they're working on.
+- Looks at your next meeting and helps you prepare for it by providing profile information for attendees, including their job titles and managers, as well as information about the latest documents they're working on, and people they're collaborating with.
 - Scans your calendar, and suggests the best times for the next team meeting.
 - Fetches the latest sales projection chart from an Excel file in your OneDrive and lets you update the forecast in real time, all from your phone.
 - Subscribes to changes in your calendar, sends you an alert when you’re spending too much time in meetings, and provides recommendations for the ones you can miss or delegate based on how relevant the attendees are to you.
 - Helps you sort out personal and work information on your phone; for example, by categorizing pictures that should go to your personal OneDrive and business receipts that should go to your OneDrive for Business.
 
-Using Microsoft Graph API, you can connect to resources across Microsoft 365 services using relationships. For example, a user can be connected to a group through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship, and to another user through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0). Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
+Pick the preceding first meeting scenario as an example. With Microsoft Graph API, you can:
 
-You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-beta) a particular user, or [get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around a user.
+1. Get the email addresses of the [meeting event](/graph/api/resources/event?view=graph-rest-1.0) attendees 
+2. Look them up individually as a [user](/graph/api/resources/user?view=graph-rest-1.0) in Azure Active Directory to [get their profile information](/graph/api/user-get?view=graph-rest-1.0)
 
-Discover the possibilities in the relationships within Microsoft Graph.
+You can then navigate to other resources using relationships: 
+
+- Connect to their manager through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0)
+- Get valuable insights and intelligence including the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-beta) the user
+- [Get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around the user
+- Extend the scenario to get to the user's groups through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship
+- [Reach other members in each group](/graph/api/group-list-members?view=graph-rest-1.0) 
+- Tap into other scenarios enabled by [groups](office365-groups-concept-overview), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md) 
+
+Microsoft Graph continues to open up the Microsoft 365 platform for developers, and always only with the appropriate permissions.
 
 >**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](https://developer.microsoft.com/graph/docs/misc/terms-of-use) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
@@ -79,7 +92,8 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 ## Access Microsoft Graph at scale
 
 Microsoft Graph data connect provides a set of tools to access data on Microsoft Graph at scale, while allowing administrators granular consent and full control over their Microsoft Graph data. Data connect streamlines the delivery of this data to Microsoft Azure. 
-Using Azure tools, you can build intelligent apps that:
+
+Using Azure tools, you can then build intelligent apps that:
 
 - Find you the closest expert on a topic to you in your organization 
 - Automate knowledge base creation
@@ -90,7 +104,7 @@ Using Azure tools, you can build intelligent apps that:
 
 Microsoft Graph data connect provides a new way for you to interact with the data that's available through Microsoft Graph APIs. Data connect provides a unique set of tools that streamline the building of intelligent applications, all within the Microsoft cloud.
 
-|**Feature**| **Microsoft Graph API** | **Microsoft Graph Data Connect** |
+|**Feature**| **Microsoft Graph API** | **Microsoft Graph data connect** |
 |:----------|:------------------------|:--------------------------------------|
 | **Access scope** | Single user or entire tenant | Many users or groups |
 | **Access pattern** | Real time | Recurrent schedule |
@@ -100,7 +114,7 @@ Microsoft Graph data connect provides a new way for you to interact with the dat
 | **Admin consent** | Entire organization<br>Resource types | Select groups of users<br>Resource types and properties<br>Excludes users |
 | **Access tools** | RESTful web queries | Azure Data Factory |
 
-For more information about Microsoft Graph data connect, see [Microsoft Graph data connect](data-connect-overview.md). To get started, see [Overview of Microsoft Graph data connect](data-connect-concept-overview.md). 
+ See [Microsoft Graph data connect](data-connect-overview.md) for more information, and [get started using Microsoft Graph data connect](data-connect-concept-overview.md). 
 
 ## Next steps
 
