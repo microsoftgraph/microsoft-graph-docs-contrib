@@ -26,10 +26,11 @@ Together with [Microsoft Graph data connect](#access-microsoft-graph-at-scale) a
 Microsoft Graph exposes REST APIs and client libraries to access data on the following:
 
 - Azure Active Directory
-- Office 365 services: SharePoint, OneDrive, Outlook/Exchange, Microsoft Teams, OneNote, Planner, and Excel
-- Enterprise Mobility and Security services: Identity Manager, Intune, Advanced Threat Analytics, and Advanced Threat Protection.
-- Windows 10 services: activities and devices
 - Education
+- Enterprise Mobility and Security services: Advanced Threat Analytics, Advanced Threat Protection, Identity Manager, and Intune 
+- Office 365 services: Delve, Dynamics 365 Business Central, Excel, Microsoft Bookings, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, and SharePoint
+- Reports: Identity and access, Office 365 usage
+- Windows 10 services: activities, devices, notifications
 
 To find out more, see 
 [Major services and features in Microsoft Graph](overview-major-services.md).
