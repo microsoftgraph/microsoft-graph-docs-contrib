@@ -23,7 +23,7 @@ Together with [Microsoft Graph data connect](#access-microsoft-graph-at-scale) a
 ![Microsoft Graph, Microsoft Graph data connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-800.png)
 
 ## What's in Microsoft Graph?
-Microsoft Graph exposes REST APIs and client libraries to access data on the following:
+Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft 365 services:
 
 - Azure Active Directory
 - Education
@@ -34,12 +34,6 @@ Microsoft Graph exposes REST APIs and client libraries to access data on the fol
 
 To find out more, see 
 [Major services and features in Microsoft Graph](overview-major-services.md).
-
-Microsoft Graph connects all the resources across these services using relationships. For example, a user can be connected to a group through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship, and to another user through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0). Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
-
-You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-beta) a particular user, or [get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around a user.
-
-Discover the possibilities in the relationships within Microsoft Graph.
 
 ![An image showing the primary resources and relationships that are part of the graph](images/microsoft-graph.png)
 
@@ -53,7 +47,11 @@ You can use Microsoft Graph to build experiences around the user's unique contex
 - Subscribes to changes in your calendar, sends you an alert when you’re spending too much time in meetings, and provides recommendations for the ones you can miss or delegate based on how relevant the attendees are to you.
 - Helps you sort out personal and work information on your phone; for example, by categorizing pictures that should go to your personal OneDrive and business receipts that should go to your OneDrive for Business.
 
-You can do all this and more with the Microsoft Graph API.
+Using Microsoft Graph API, you can connect to resources across Microsoft 365 services using relationships. For example, a user can be connected to a group through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship, and to another user through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0). Your app can traverse these relationships to access these connected resources and perform actions on them through the API.
+
+You can also get valuable insights and intelligence about the data from Microsoft Graph. For example, you can get the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-beta) a particular user, or [get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around a user.
+
+Discover the possibilities in the relationships within Microsoft Graph.
 
 >**Note:** When you use the Microsoft Graph API, you agree to the [Microsoft Graph Terms of Use](https://developer.microsoft.com/graph/docs/misc/terms-of-use) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
