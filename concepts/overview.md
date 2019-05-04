@@ -11,6 +11,9 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Micros
 
 You can use the Microsoft Graph API to build apps for organizations and consumers that interact with the data of millions of users. With Microsoft Graph, you can connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
+
+
 ## What's in the graph?
 Microsoft Graph exposes REST APIs and client libraries to access data on the following:
 
@@ -69,16 +72,16 @@ Check out some of these common scenarios for working with the Microsoft Graph AP
 ## Access Microsoft Graph at scale
 
 
-Microsoft Graph Data Connect enables bulk - rather than the traditional transactional - access to Office 365 data. With the bulk Office 365 data, you can use Azure tools to build intelligent apps that:
+Microsoft Graph data connect provides a set of tools to build products with Microsoft Graph data at scale, while providing granularity and security featres as well. With data connect, you can use Azure tools to build intelligent apps that:
 
 - Find you the closest expert on a topic to you in your organization 
 - Automate knowledge base creation
 - Analyze meeting requests to provide insights into conference room utilization
 - Detect fraud with productivity and communication data
 
-## When should I use Microsoft Graph Data Connect?
+## When should I use Microsoft Graph data connect?
 
-Microsoft Graph Data Connect provides a new way for you to interact with the data that's available through Microsoft Graph APIs. In addition to providing scalable access to Office 365 data, Microsoft Graph Data Connect also provides a unique set of capabilities that streamline the building of intelligent applications, all within the Microsoft cloud.
+Microsoft Graph data connect provides a new way for you to interact with the data that's available through Microsoft Graph APIs. Data connect provides a unique set of tools that streamline the building of intelligent applications, all within the Microsoft cloud.
 
 |**Feature**| **Microsoft Graph API** | **Microsoft Graph Data Connect** |
 |:----------|:------------------------|:--------------------------------------|
@@ -90,7 +93,7 @@ Microsoft Graph Data Connect provides a new way for you to interact with the dat
 | **Admin consent** | Entire organization<br>Resource types | Select groups of users<br>Resource types and properties<br>Excludes users |
 | **Access tools** | RESTful web queries | Azure Data Factory |
 
-For more information about Microsoft Graph Data Connect, see [Microsoft Graph Data Connect](data-connect-overview.md). To get started, see [Overview of Microsoft Graph Data Connect](data-connect-concept-overview.md). 
+For more information about Microsoft Graph data connect, see [Microsoft Graph data connect](data-connect-overview.md). To get started, see [Overview of Microsoft Graph data connect](data-connect-concept-overview.md). 
 
 ## Next steps
 
@@ -98,7 +101,7 @@ For more information about Microsoft Graph Data Connect, see [Microsoft Graph Da
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
-- Find out how to [get an auth token](auth-overview.md) in your app.
+- Find out how to [get an auth token](./auth/) in your app.
 - Start [using the API](use-the-api.md).
 
 
