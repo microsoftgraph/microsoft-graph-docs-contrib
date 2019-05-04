@@ -11,6 +11,9 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. Micros
 
 You can use the Microsoft Graph API to build apps for organizations and consumers that interact with the data of millions of users. With Microsoft Graph, you can connect to a wealth of resources, relationships, and intelligence, all through a single endpoint: `https://graph.microsoft.com`.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
+
+
 ## What's in the graph?
 Microsoft Graph exposes REST APIs and client libraries to access data on the following:
 
@@ -98,7 +101,7 @@ For more information about Microsoft Graph data connect, see [Microsoft Graph da
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
-- Find out how to [get an auth token](auth-overview.md) in your app.
+- Find out how to [get an auth token](./auth/) in your app.
 - Start [using the API](use-the-api.md).
 
 

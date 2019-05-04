@@ -7686,13 +7686,15 @@
             href: api/unfamiliarlocationriskevent-list.md
           - name: Get unfamiliarLocationRiskEvent
             href: api/unfamiliarlocationriskevent-get.md
-        - name: Risky users
+        - name: Risky user
           href: resources/riskyuser.md
           items:
-          - name: List
+          - name: List risky users
             href: api/riskyusers-list.md
-          - name: Get
+          - name: Get risky user
             href: api/riskyusers-get.md
+          - name: List history
+            href: api/riskyuser-list-history.md
           - name: Confirm compromised
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
