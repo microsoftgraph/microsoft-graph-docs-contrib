@@ -3754,10 +3754,10 @@
       - name: Secure scores
         href: resources/securescore.md
         items:
-        - name: Get secure score
-          href: api/securescore-get.md
         - name: List secure scores
           href: api/security-list-securescores.md
+        - name: Get secure score
+          href: api/securescore-get.md
       - name: Secure score control profiles
         href: resources/securescorecontrolprofile.md
         items:
