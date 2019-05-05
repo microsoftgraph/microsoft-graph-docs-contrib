@@ -1,3 +1,9 @@
+---
+title: "Integrating your iOS app with the client-side SDK for user notifications"
+description: "Quick start guide on how to integrate your iOS app with user notifications client SDK"
+localization_priority: Priority
+ms.prod: "Microsoft Graph notifications"
+---
 
 # Integrating your iOS app with the client-side SDK for user notifications
 
