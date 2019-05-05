@@ -7,7 +7,7 @@ ms.prod: "Microsoft Graph notifications"
 
 # Service Side Integration
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../api-reference/includes/beta-disclaimer.md)]
 
 ## Create and send a notification from your app service
 
@@ -50,7 +50,7 @@ POST /me/notifications/
 |:----|:-----|:-----------|
 |Authorization | string |The authorization header is used to pass the credentials of the calling party. Bearer {token}. Required. |
 ## Request body
-In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.
+In the request body, supply a JSON representation of a [notification](https://docs.microsoft.com/en-us/graph/api/resources/projectrome-notification?view=graph-rest-beta) object.
 
 ## Response
 If successful, this method returns the `201 Created` response code that indicates that the notification was successfully created and stored. 

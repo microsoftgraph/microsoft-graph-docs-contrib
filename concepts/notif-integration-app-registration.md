@@ -57,4 +57,4 @@ If you haven’t already done so, you’ll now need to register your application
 
   ![List of allowed delegated permissions](images/notif-api-permissions-list.png)
 
-Now that you’ve completed registration on the Azure portal, you will need to visit [Partner Center/Windows Dev Center](https://partner.microsoft.com/) to setup your application for cross-device experiences and to target your corresponding app platforms for notifications sent through Microsoft Graph.  For next steps, proceed to [Onboarding to cross-device experiences](notif-integration-cross-device-experiences-onboarding). 
+Now that you’ve completed registration on the Azure portal, you will need to visit [Partner Center/Windows Dev Center](https://partner.microsoft.com/) to setup your application for cross-device experiences and to target your corresponding app platforms for notifications sent through Microsoft Graph.  For next steps, proceed to [Onboarding to cross-device experiences](notif-integration-cross-device-experiences-onboarding.md). 
