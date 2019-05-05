@@ -2,14 +2,25 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: MoveAction
+title: moveAction resource type
+description: The MoveAction object provides information about an activity that moved an item.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
-# MoveAction resource type
+# moveAction resource type
 
-The presence of the **MoveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.
+The presence of the **moveAction** resource on an [**itemActivity**][activity] indicates that the activity moved an item.
+
+>**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property name | Type   | Description
+|:--------------|:-------|:----------------------------------------------------
+| from          | string | The name of the location the item was moved from.
+| to            | string | The name of the location the item was moved to.
 
 ## JSON representation
 
@@ -25,17 +36,6 @@ The presence of the **MoveAction** resource on an [**itemActivity**][activity] i
   "to": "string"
 }
 ```
-
-## Properties
-
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| from          | string | The name of the location the item was moved from.
-| to            | string | The name of the location the item was moved to.
-
-## Remarks
-
-Item activity records are currently only available on SharePoint and OneDrive for Business.
 
 <!--
 {

@@ -2,36 +2,21 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemActivity
+title: itemActivity resource type
+description: The itemActivity object provides information about an activity that took place on an item.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
-# ItemActivity resource type
+# itemActivity resource type
 
-The **ItemActivity** resource provides information about activities that took place on an item or within a container.
+The **itemActivity** resource provides information about activities that took place on an item or within a container.
 Currently only available on SharePoint and OneDrive for Business.
 
-## JSON representation
+The actions that took place within an itemActivity are detailed in the [itemActionSet][] property.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "keyProperty": "id",
-  "@type": "microsoft.graph.itemActivity",
-  "@type.aka": "oneDrive.activityEntity"
-}-->
+>**Note:** **itemActivity** is currently only available on SharePoint and OneDrive for Business.
 
-```json
-{
-  "id": "string (identifier)",
-  "access": "microsoft.graph.accessAction",
-  "action": {"@odata.type": "microsoft.graph.itemActionSet"},
-  "actor": {"@odata.type": "microsoft.graph.identitySet"},
-  "driveItem": {"@odata.type": "microsoft.graph.driveItem"},
-  "listItem": {"@odata.type": "microsoft.graph.listItem"},
-  "location": {"@odata.type": "microsoft.graph.location"},
-  "times": {"@odata.type": "microsoft.graph.itemActivityTimeSet"}
-}
-```
+[itemActionSet]: itemactionset.md#properties
 
 ## Properties
 
@@ -58,49 +43,36 @@ Currently only available on SharePoint and OneDrive for Business.
 [driveItem]: driveitem.md
 [listItem]: listitem.md
 
-## Actions
+## JSON representation
 
-The actions that took place within an activity are detailed in the **action** property.
-Below are the actions that are available today.
-New actions may get logged in the future, so make sure your app is tolerant of handling an **itemActivity** without any actions that your app understands.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "keyProperty": "id",
+  "@type": "microsoft.graph.itemActivity",
+  "@type.aka": "oneDrive.activityEntity"
+}-->
 
-| Action name | Type              | Description
-|:------------|:------------------|:-------------------------------------------
-| comment     | [commentAction][] | A comment was added to the item.
-| create      | [createAction][]  | An item was created.
-| delete      | [deleteAction][]  | An item was deleted.
-| edit        | [editAction][]    | An item was edited.
-| mention     | [mentionAction][] | A user was mentioned in the item.
-| move        | [moveAction][]    | An item was moved.
-| rename      | [renameAction][]  | An item was renamed.
-| restore     | [restoreAction][] | An item was restored.
-| share       | [shareAction][]   | An item was shared.
-| version     | [versionAction][] | An item was versioned.
-
-[accessAction]: accessaction.md
-[commentAction]: commentaction.md
-[createAction]: createaction.md
-[deleteAction]: deleteaction.md
-[editAction]: editaction.md
-[location]: location.md
-[mentionAction]: mentionaction.md
-[moveAction]: moveaction.md
-[renameAction]: renameaction.md
-[restoreAction]: restoreaction.md
-[shareAction]: shareaction.md
-[versionAction]: versionaction.md
-
-## Remarks
-
-**ItemActivity** is currently only available on SharePoint and OneDrive for Business.
+```json
+{
+  "id": "string (identifier)",
+  "access": "microsoft.graph.accessAction",
+  "action": {"@odata.type": "microsoft.graph.itemActionSet"},
+  "actor": {"@odata.type": "microsoft.graph.identitySet"},
+  "driveItem": {"@odata.type": "microsoft.graph.driveItem"},
+  "listItem": {"@odata.type": "microsoft.graph.listItem"},
+  "location": {"@odata.type": "microsoft.graph.location"},
+  "times": {"@odata.type": "microsoft.graph.itemActivityTimeSet"}
+}
+```
 
 <!--
 {
   "type": "#page.annotation",
-  "description": "The ItemActivity object provides information about an activity that took place on an item.",
+  "description": "The itemActivity object provides information about an activity that took place on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivity",
+  "tocPath": "Resources/itemActivity",
   "suppressions": []
 }
 -->

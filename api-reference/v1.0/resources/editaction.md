@@ -2,16 +2,24 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: EditAction
+title: editAction resource type
+description: The EditAction object provides information about an activity that edited an item.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
-# EditAction resource type
+# editAction resource type
 
-The presence of the **EditAction** resource on an [**itemActivity**][activity] indicates that the activity edited an item.
+The presence of the **editAction** resource on an [**itemActivity**][activity] indicates that the activity edited an item.
 
-**Note**: While this resource is empty today, in future API revisions it may be populated with additional properties.
+**Note**: This resource is currently empty. In the future, it might be populated with additional properties.
+
+>**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.
 
 [activity]: itemactivity.md
+
+## Properties
+
+None. This facet is a null or not-null value and contains no properties.
 
 ## JSON representation
 
@@ -26,21 +34,13 @@ The presence of the **EditAction** resource on an [**itemActivity**][activity] i
 }
 ```
 
-## Properties
-
-None. This facet is a null or not-null value and contains no properties.
-
-## Remarks
-
-Item activity records are currently only available on SharePoint and OneDrive for Business.
-
 <!--
 {
   "type": "#page.annotation",
-  "description": "The EditAction object provides information about an activity that edited an item.",
+  "description": "The editAction object provides information about an activity that edited an item.",
   "keywords": "activities,activity,action,edit,modify",
   "section": "documentation",
-  "tocPath": "Resources/EditAction",
+  "tocPath": "Resources/editAction",
   "suppressions": []
 }
 -->

@@ -3,11 +3,13 @@ author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
 title: Get item activity stats by interval
+description: Get itemAnalyticyStats for the activities that took place on this resource with the specified time interval.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get item activity stats by interval
 
-Get [itemActivityStats][] for the activities that took place under this resource within the specified time interval.
+Get [itemActivityStats][] for the activities that took place on this resource within the specified time interval.
 
 >**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
@@ -45,7 +47,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 ## Example
 
-#### Request
+## Request
 
 <!-- { "blockType": "request", "name": "get-activities-by-interval" } -->
 
@@ -53,7 +55,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-3',interval='day')
 ```
 
-#### Response
+## Response
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 

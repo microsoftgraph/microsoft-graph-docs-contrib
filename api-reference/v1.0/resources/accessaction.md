@@ -2,8 +2,10 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2018
-title: AccessAction
+title: accessAction resource type
+description: The accessAction object provides information about accesses of an item.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # accessAction resource type
 
@@ -34,10 +36,10 @@ This resource type has no properties.
 <!--
 {
   "type": "#page.annotation",
-  "description": "The AccessAction object provides information about accesses of an item.",
+  "description": "The accessAction object provides information about accesses of an item.",
   "keywords": "activities,activity,action,access",
   "section": "documentation",
-  "tocPath": "Resources/AccessAction",
+  "tocPath": "Resources/accessAction",
   "suppressions": []
 }
 -->

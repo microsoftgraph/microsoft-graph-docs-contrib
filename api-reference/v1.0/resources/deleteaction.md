@@ -2,14 +2,26 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: DeleteAction
+title: deleteAction resource type
+description: The deleteAction object provides information about the deletion of an item.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
-# DeleteAction resource type
+# deleteAction resource type
 
-The presence of the **DeleteAction** resource on an [**itemActivity**][activity] indicates that the activity deleted an item.
+The presence of the **deleteAction** resource on an [**itemActivity**][activity] indicates that the activity deleted an item.
+
+>**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.
 
 [activity]: itemactivity.md
+
+## Properties
+
+| Property name | Type   | Description
+|:--------------|:-------|:----------------------------------------------------
+| name          | string | The name of the item that was deleted.
+| objectType    | string | `File` or `Folder`, depending on the type of the deleted item.
+
 
 ## JSON representation
 
@@ -26,21 +38,10 @@ The presence of the **DeleteAction** resource on an [**itemActivity**][activity]
 }
 ```
 
-## Properties
-
-| Property name | Type   | Description
-|:--------------|:-------|:----------------------------------------------------
-| name          | string | The name of the item that was deleted.
-| objectType    | string | `File` or `Folder`, depending on the type of the deleted item.
-
-## Remarks
-
-Item activity records are currently only available on SharePoint and OneDrive for Business.
-
 <!--
 {
   "type": "#page.annotation",
-  "description": "The DeleteAction object provides information about the deletion of an item.",
+  "description": "The deleteAction object provides information about the deletion of an item.",
   "keywords": "activities,activity,action,delete,deletion",
   "section": "documentation",
   "tocPath": "Resources/DeleteAction",

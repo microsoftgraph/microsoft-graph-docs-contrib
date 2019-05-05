@@ -2,12 +2,21 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemActionStat
+title: itemActionStat resource type
+description: The itemActionStat object provides aggregate details about an action over a period of time.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # itemActionStat resource type
 
 The **itemActionStat** resource provides aggregate details about an action over a period of time.
+
+## Properties
+
+| Property    | Type  | Description
+|:------------|:------|:-------------------------------------------------------
+| actionCount | Int32 | The number of times the action took place. Read-only.
+| actorCount  | Int32 | The number of distinct actors that performed the action. Read-only.
 
 ## JSON representation
 
@@ -24,20 +33,13 @@ The **itemActionStat** resource provides aggregate details about an action over 
 }
 ```
 
-## Properties
-
-| Property    | Type  | Description
-|:------------|:------|:-------------------------------------------------------
-| actionCount | Int32 | The number of times the action took place. Read-only.
-| actorCount  | Int32 | The number of distinct actors that performed the action. Read-only.
-
 <!--
 {
   "type": "#page.annotation",
-  "description": "The ItemActionStat object provides aggregate details about an action over a period of time.",
+  "description": "The itemActionStat object provides aggregate details about an action over a period of time.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActionStat",
+  "tocPath": "Resources/itemActionStat",
   "suppressions": []
 }
 -->

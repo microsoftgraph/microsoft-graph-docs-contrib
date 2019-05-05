@@ -2,10 +2,12 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: Get analytics
+title: Get itemAnalytics
+description: Get itemAnalytics about the views that took place under this resource.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
-# Get analytics
+# Get itemAnalytics
 
 Get [itemAnalytics][] about the views that took place under this resource.
 The **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.
@@ -38,7 +40,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 
 ## Example
 
-#### Request
+## Request
 
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
@@ -46,7 +48,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 
-#### Response
+## Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 

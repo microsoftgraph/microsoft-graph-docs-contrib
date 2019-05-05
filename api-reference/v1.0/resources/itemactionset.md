@@ -2,14 +2,46 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemActionSet
+title: ItemActionSet resource type
+description: The itemActionSet object provides information about the actions that took place as part of an activity on an item.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
-# ItemActionSet resource type
+# itemActionSet resource type
 
-The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.
+The **itemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.
+
+>**Note:** Item activity records are currently only available on SharePoint and OneDrive for Business.
 
 [itemActivity]: itemactivity.md
+
+## Properties
+
+The following actions are currently available. Because new actions might be added in the future, make sure that your app can handle an **itemActionSet** that includes unknown actions.
+
+| Property name | Type              | Description
+|:--------------|:------------------|:-----------------------------------------
+| comment       | [commentAction][] | A comment was added to the item.
+| create        | [createAction][]  | An item was created.
+| delete        | [deleteAction][]  | An item was deleted.
+| edit          | [editAction][]    | An item was edited.
+| mention       | [mentionAction][] | A user was mentioned in the item.
+| move          | [moveAction][]    | An item was moved.
+| rename        | [renameAction][]  | An item was renamed.
+| restore       | [restoreAction][] | An item was restored.
+| share         | [shareAction][]   | An item was shared.
+| version       | [versionAction][] | An item was versioned.
+
+[commentAction]: commentaction.md
+[createAction]: createaction.md
+[deleteAction]: deleteaction.md
+[editAction]: editaction.md
+[mentionAction]: mentionaction.md
+[moveAction]: moveaction.md
+[renameAction]: renameaction.md
+[restoreAction]: restoreaction.md
+[shareAction]: shareaction.md
+[versionAction]: versionaction.md
 
 ## JSON representation
 
@@ -37,46 +69,13 @@ The **ItemActionSet** resource provides information about the actions that made 
 }
 ```
 
-## Properties
-
-Below are the actions that are available today.
-New actions may get logged in the future, so make sure your app is tolerant of handling an **itemActionSet** without any actions that your app understands.
-
-| Property name | Type              | Description
-|:--------------|:------------------|:-----------------------------------------
-| comment       | [commentAction][] | A comment was added to the item.
-| create        | [createAction][]  | An item was created.
-| delete        | [deleteAction][]  | An item was deleted.
-| edit          | [editAction][]    | An item was edited.
-| mention       | [mentionAction][] | A user was mentioned in the item.
-| move          | [moveAction][]    | An item was moved.
-| rename        | [renameAction][]  | An item was renamed.
-| restore       | [restoreAction][] | An item was restored.
-| share         | [shareAction][]   | An item was shared.
-| version       | [versionAction][] | An item was versioned.
-
-[commentAction]: commentaction.md
-[createAction]: createaction.md
-[deleteAction]: deleteaction.md
-[editAction]: editaction.md
-[mentionAction]: mentionaction.md
-[moveAction]: moveaction.md
-[renameAction]: renameaction.md
-[restoreAction]: restoreaction.md
-[shareAction]: shareaction.md
-[versionAction]: versionaction.md
-
-## Remarks
-
-Item activity records are currently only available on SharePoint and OneDrive for Business.
-
 <!--
 {
   "type": "#page.annotation",
-  "description": "The ItemActionSet object provides information about the actions that took place as part of an activity on an item.",
+  "description": "The itemActionSet object provides information about the actions that took place as part of an activity on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActionSet",
+  "tocPath": "Resources/itemActionSet",
   "suppressions": []
 }
 -->

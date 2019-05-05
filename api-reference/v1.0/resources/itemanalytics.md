@@ -2,8 +2,10 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemAnalytics
+title: itemAnalytics resource type
+description: The ItemAnalytics object provides analytics about activities that took place on an item.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # itemAnalytics resource type
 
@@ -12,6 +14,16 @@ The **itemAnalytics** resource provides analytics about activities that took pla
 You can also use the [getActivitiesByInterval][] API to retrieve analytics over a custom time range or interval.
 
 >**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
+
+## Properties
+
+| Property      | Type                 | Description
+|:--------------|:---------------------|:--------------------------------------
+| allTime       | [itemActivityStat][] | Analytics over the the item's lifespan.
+| lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
+
+[itemActivityStat]: itemactivitystat.md
+[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
 ## JSON representation
 
@@ -28,19 +40,6 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
   "lastSevenDays": {"@odata.type": "microsoft.graph.itemActivityStat"}
 }
 ```
-
-## Properties
-
-| Property      | Type                 | Description
-|:--------------|:---------------------|:--------------------------------------
-| allTime       | [itemActivityStat][] | Analytics over the the item's lifespan.
-| lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
-
-[itemActivityStat]: itemactivitystat.md
-
-
-[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
-
 <!--
 {
   "type": "#page.annotation",

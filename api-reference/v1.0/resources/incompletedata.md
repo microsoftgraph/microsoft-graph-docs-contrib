@@ -2,13 +2,22 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: IncompleteData
+title: incompleteData resource type
+description: The incompleteData facet indicates that a resource was generated with incomplete data.
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # incompleteData resource type
 
 The **incompleteData** facet indicates that a resource was generated with incomplete data.
-The properties within may provide information about why there is incomplete data.
+The properties within might provide information about why the data is incomplete.
+
+## Properties
+
+| Property                  | Type           | Description
+|:--------------------------|:---------------|:--------------------------------
+| missingDataBeforeDateTime | DateTimeOffset | The service does not have source data before the specified time.
+| wasThrottled              | Boolean        | Some data was not recorded due to excessive activity.
 
 ## JSON representation
 
@@ -21,18 +30,11 @@ The properties within may provide information about why there is incomplete data
 }
 ```
 
-## Properties
-
-| Property                  | Type           | Description
-|:--------------------------|:---------------|:--------------------------------
-| missingDataBeforeDateTime | DateTimeOffset | The service does not have source data before the specified time.
-| wasThrottled              | Boolean        | Some data was not recorded due to excessive activity.
-
 <!--
 {
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/IncompleteData",
+  "tocPath": "Facets/incompleteData",
   "suppressions": []
 }
 -->
