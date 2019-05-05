@@ -371,8 +371,10 @@
               href: toolkit/providers/Teams.md
             - name: Custom Provider
               href: toolkit/providers/custom.md
-        - name: Style and Template
+        - name: Styling Components
           href: toolkit/style.md
+        - name: Templating Components
+          href: toolkit/templates.md
     - name: Resources
       expanded: true
       items:
