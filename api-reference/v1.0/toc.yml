@@ -281,7 +281,7 @@
           href: api/user-update-settings.md
     - name: Groups
       items:
-      - name: overview
+      - name: Overview
         href: resources/groups-overview.md
       - name: Group
         href: resources/group.md
