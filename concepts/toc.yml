@@ -278,16 +278,14 @@
         items:
         - name: Overview
           href: delta-query-overview.md
-          displayName: Delta query, Outlook calendar, Groups, Outlook mail, Users
-          items:
-          - name: Get changes to events (example)
-            href: delta-query-events.md
-          - name: Get changes to groups (example)
-            href: delta-query-groups.md
-          - name: Get changes to messages (example)
-            href: delta-query-messages.md
-          - name: Get changes to users (example)
-            href: delta-query-users.md
+        - name: Get changes to events (example)
+          href: delta-query-events.md
+        - name: Get changes to groups (example)
+          href: delta-query-groups.md
+        - name: Get changes to messages (example)
+          href: delta-query-messages.md
+        - name: Get changes to users (example)
+          href: delta-query-users.md
       - name: Add custom data
         displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
