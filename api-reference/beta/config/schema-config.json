@@ -12,6 +12,10 @@
     ],
     "treatErrorsAsWarningsWorkloads": [
       "intune"
+    ],
+    "foldersExludedFromValidation": [
+      "templates",
+      "includes"
     ]
   },
   "schemaDiffConfig": {
