@@ -11,6 +11,8 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 
 ## Powering the Microsoft 365 platform
 
+![Microsoft Graph, Microsoft Graph data connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-800.png)
+
 In the Microsoft 365 platform, three main components facilitate the access and flow of data:
 
 - The Microsoft Graph API offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights exposed as resources of Microsoft 365 services. You can use REST APIs or SDKs to access the endpoint and build apps that support scenarios spanning across productivity, collaboration, education, security, identity, access, device management, and much more.
@@ -21,7 +23,6 @@ Together, the Microsoft Graph API, data connect, and connectors (private preview
 
 >**Note**: Microsoft Graph connectors is in private preview. Participation in the preview program is by invitation only. For more information about the connectors, see [Build 2019: Microsoft Graph powers the Microsoft 365 platform](https://aka.ms/microsoftgraphbuild2019).
 
-![Microsoft Graph, Microsoft Graph data connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-800.png)
 
 ## What's in Microsoft Graph?
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft 365 services:
