@@ -14,7 +14,7 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 In the Microsoft 365 platform, three main components facilitate the access and flow of data:
 
 - The Microsoft Graph API offers a single endpoint, `https://graph.microsoft.com`, to provide access to rich, people-centric data and insights exposed as resources of Microsoft 365 services. You can use REST APIs or corresponding SDKs to access the endpoint to build apps that cover scenarios across productivity, collaboration, education, security, identity, access, and device management, and much more.
-- [Microsoft Graph data connect](#access-microsoft-graph-at-scale) provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores. This cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
+- [Microsoft Graph data connect](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores. This cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
 - Microsoft Graph connectors (private preview) works in the incoming direction, and delivers external data into Microsoft Graph services and applications.
 
 Together, the Microsoft Graph API, data connect, and connectors (private preview) power the Microsoft 365 platform. The ability to access Microsoft Graph data and other datasets to derive insights and analytics lets you extend Microsoft 365 experiences, or build unique intelligent applications.
@@ -63,7 +63,7 @@ You can then navigate to other resources using relationships:
 - [Get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around the user
 - Extend the scenario to get to the user's groups through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship
 - [Reach other members in each group](/graph/api/group-list-members?view=graph-rest-1.0) 
-- Tap into other scenarios enabled by [groups](office365-groups-concept-overview), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md) 
+- Tap into other scenarios enabled by [groups](office365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md) 
 
 Microsoft Graph continues to open up the Microsoft 365 platform for developers, and always only with the appropriate permissions.
 
@@ -123,7 +123,7 @@ Microsoft Graph data connect provides a new way for you to interact with the dat
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
-- Find out how to [get an auth token](./auth/) in your app.
+- Find out how to [get an auth token](auth-concepts.md) in your app.
 - Start [using the API](use-the-api.md).
 
 
