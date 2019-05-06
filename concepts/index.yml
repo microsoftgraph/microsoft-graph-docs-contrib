@@ -68,13 +68,13 @@ sections:
       style: unordered
       items:
       - html: <a href="/graph/data-connect-concept-overview">Microsoft Graph data connect</a>
-      - html: <a href="/graph/outlook-get-free-busy-schedule">Get free-busy schedule (calendar)</a>
-      - html: <a href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Audit and sign-in logs (identity and access)</a>
+      - html: <a href="/graph/outlook-get-free-busy-schedule">Get free-busy schedule</a> (calendar)
+      - html: <a href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Audit and sign-in logs</a> (identity and access)
       - html: <a href="/graph/api/resources/identityprovider?view=graph-rest-1.0">Identity providers</a>
       - html: <a href="/graph/auth">Improved auth guides</a>
       - html: <a href="/graph/migrate-azure-ad-graph-overview">Migrating apps from Azure AD Graph to Microsoft Graph</a>
-      - html: <a href="/graph/api/resources/securescore?view=graph-rest-1.0">Tenant secure score (security)</a>
-      - html: <a href="/graph/api/itemanalytics-get?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Get list item analytics (sites and lists)</a>
+      - html: <a href="/graph/api/resources/securescore?view=graph-rest-1.0">Tenant secure score</a> (security)
+      - html: <a href="/graph/api/itemanalytics-get?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Get list item analytics</a> (sites and lists)
       - html: <a href="/graph/sdks/sdks-overview?view=graph-rest-1.0">SDK guides</a>
       - html: API snippets (<a href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">example</a>)
 
