@@ -79,7 +79,7 @@ sections:
       - html: API snippets (<a href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">example</a>)
 
     - type: paragraph
-      text: <b>Beta</b>
+      text: <b>Beta only</b>
     - type: list
       style: unordered
       items:
