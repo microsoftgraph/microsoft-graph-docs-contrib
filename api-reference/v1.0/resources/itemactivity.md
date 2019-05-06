@@ -24,14 +24,11 @@ The actions that took place within an itemActivity are detailed in the [itemActi
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | The unique identifier of the activity. Read-only.
 | access   | [accessAction][]        | An item was accessed.
-| action   | [itemActionSet][]       | Details about the action that took place. Read-only.
 | actor    | [identitySet][]         | Identity of who performed the action. Read-only.
-| location | [location][]            | Physical location where the action was performed. Read-only.
-| times    | [itemActivityTimeSet][] | Details about when the activity took place. Read-only.
+| activityDateTime    | DateTimeOffset | Details about when the activity took place. Read-only.
 
+[accessAction]: accessAction.md
 [identitySet]: identityset.md
-[itemActionSet]: itemactionset.md
-[itemActivityTimeSet]: itemactivitytimeset.md
 
 ## Relationships
 
@@ -57,12 +54,10 @@ The actions that took place within an itemActivity are detailed in the [itemActi
 {
   "id": "string (identifier)",
   "access": "microsoft.graph.accessAction",
-  "action": {"@odata.type": "microsoft.graph.itemActionSet"},
   "actor": {"@odata.type": "microsoft.graph.identitySet"},
   "driveItem": {"@odata.type": "microsoft.graph.driveItem"},
   "listItem": {"@odata.type": "microsoft.graph.listItem"},
-  "location": {"@odata.type": "microsoft.graph.location"},
-  "times": {"@odata.type": "microsoft.graph.itemActivityTimeSet"}
+  "activityDateTime": {"@odata.type": "String (timestamp)"}
 }
 ```
 
