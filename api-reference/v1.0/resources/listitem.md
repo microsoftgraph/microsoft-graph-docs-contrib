@@ -30,7 +30,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
-[Get activities by interval]: ../api/itemactivity-getbyinterval.md
+[Get activities by interval]: ../api/itemactivitystat-getactivitybyinterval.md
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md

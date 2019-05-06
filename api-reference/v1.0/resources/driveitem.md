@@ -197,7 +197,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
 [item-preview]: ../api/driveitem-preview.md
 [Get analytics]: ../api/itemanalytics-get.md
-[Get activities by interval]: ../api/itemactivity-getbyinterval.md
+[Get activities by interval]: ../api/itemactivitystat-getactivitybyinterval.md
 
 [audio]: audio.md
 [baseItem]: baseitem.md

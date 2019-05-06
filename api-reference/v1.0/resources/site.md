@@ -30,7 +30,7 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 [Get site by path]: ../api/site-getbypath.md
 [Get site for a group]: ../api/site-get.md
 [Get analytics]: ../api/itemanalytics-get.md
-[Get activities by interval]: ../api/itemactivity-getbyinterval.md
+[Get activities by interval]: ../api/itemactivitystat-getactivitybyinterval.md
 [Search for sites]: ../api/site-search.md
 
 ## Properties

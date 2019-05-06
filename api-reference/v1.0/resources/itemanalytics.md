@@ -23,7 +23,7 @@ You can also use the [getActivitiesByInterval][] API to retrieve analytics over 
 | lastSevenDays | [itemActivityStat][] | Analytics for the last seven days.
 
 [itemActivityStat]: itemactivitystat.md
-[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
+[getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
 
 ## JSON representation
 

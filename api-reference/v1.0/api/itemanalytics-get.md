@@ -16,7 +16,7 @@ For a custom time range or interval, use the [getActivitiesByInterval][] API.
 >**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
 [itemAnalytics]: ../resources/itemanalytics.md
-[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
+[getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md
 
 ## Permissions
 
