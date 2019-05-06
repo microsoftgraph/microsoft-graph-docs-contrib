@@ -9,15 +9,15 @@
     - name: Basics
       href: /graph/auth/auth-concepts?toc=./ref/toc.json
     - name: Register your app
-      href: /graph/auth/auth-register-app-v2?toc=./ref/toc.json
+      href: /graph/auth-register-app-v2?toc=./ref/toc.json
     - name: Get access on behalf of a user
-      href: /graph/auth/auth-v2-user?toc=./ref/toc.json
+      href: /graph/auth-v2-user?toc=./ref/toc.json
     - name: Get access without a user
-      href: /graph/auth/auth-v2-service?toc=./ref/toc.json
+      href: /graph/auth-v2-service?toc=./ref/toc.json
     - name: Permissions
-      href: /graph/auth/permissions-reference?toc=./ref/toc.json
+      href: /graph/permissions-reference?toc=./ref/toc.json
     - name: Manage app access (CSPs)
-      href: /graph/auth/auth-cloudsolutionprovider?toc=./ref/toc.json
+      href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
   - name: Use the API
     items:
     - name: Overview
