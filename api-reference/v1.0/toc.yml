@@ -3,18 +3,21 @@
   - name: Overview of Microsoft Graph
     href: /graph/overview?toc=./toc.json
   - name: Get auth tokens
-    href: /graph/auth-overview?toc=./ref/toc.json
     items:
+    - name: Overview
+      href: auth/index.yml
+    - name: Basics
+      href: auth/auth-concepts.md
     - name: Register your app
-      href: /graph/auth-register-app-v2?toc=./ref/toc.json
+      href: auth-register-app-v2.md
     - name: Get access on behalf of a user
-      href: /graph/auth-v2-user?toc=./ref/toc.json
+      href: auth-v2-user.md
     - name: Get access without a user
-      href: /graph/auth-v2-service?toc=./ref/toc.json
+      href: auth-v2-service.md
     - name: Permissions
-      href: /graph/permissions-reference?toc=./ref/toc.json
+      href: permissions-reference.md
     - name: Manage app access (CSPs)
-      href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+      href: auth-cloudsolutionprovider.md
   - name: Use the API
     items:
     - name: Overview
