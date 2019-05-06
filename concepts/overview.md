@@ -7,7 +7,7 @@ localization_priority: Priority
 
 # Overview of Microsoft Graph
 
-Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model to let you access the tremendous amount of data in Office 365, Windows 10, and Enterprise Mobility + Security. You can use Microsoft Graph to leverage the wealth of data and build apps for organizations and consumers that interact with millions of users. 
+Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It provides a unified programmability model that you can use to access the tremendous amount of data in Office 365, Windows 10, and Enterprise Mobility + Security. Use the wealth of data in Microsoft Graph to build apps for organizations and consumers that interact with millions of users. 
 
 ## Powering the Microsoft 365 platform
 
@@ -19,7 +19,7 @@ In the Microsoft 365 platform, three main components facilitate the access and f
 - [Microsoft Graph data connect](#access-microsoft-graph-data-at-scale-using-microsoft-graph-data-connect) provides a set of tools to streamline secure and scalable delivery of Microsoft Graph data to popular Azure data stores. This cached data serves as data sources for Azure development tools that you can use to build intelligent applications.
 - Microsoft Graph connectors (private preview) works in the incoming direction, delivering external data into Microsoft Graph services and applications and enhancing custom experiences.
 
-Together, the Microsoft Graph API, data connect, and connectors (private preview) power the Microsoft 365 platform. The ability to access Microsoft Graph data and other datasets to derive insights and analytics lets you extend Microsoft 365 experiences, or build unique intelligent applications.
+Together, the Microsoft Graph API, data connect, and connectors (private preview) power the Microsoft 365 platform. With the ability to access Microsoft Graph data and other datasets to derive insights and analytics, you can extend Microsoft 365 experiences, or build unique, intelligent applications.
 
 >**Note**: Microsoft Graph connectors is in private preview. Participation in the preview program is by invitation only. For more information about the connectors, see [Build 2019: Microsoft Graph powers the Microsoft 365 platform](https://aka.ms/microsoftgraphbuild2019).
 
@@ -44,27 +44,27 @@ To find out more, see [Major services and features in Microsoft Graph](overview-
 
 Use Microsoft Graph to build experiences around the user's unique context to help them be more productive. Imagine an app that...
 
-- Looks at your next meeting and helps you prepare for it by providing profile information for attendees, including their job titles and managers, as well as information about the latest documents they're working on, and people they're collaborating with
-- Scans your calendar, and suggests the best times for the next team meeting
-- Fetches the latest sales projection chart from an Excel file in your OneDrive and lets you update the forecast in real time, all from your phone
-- Subscribes to changes in your calendar, sends you an alert when you’re spending too much time in meetings, and provides recommendations for the ones you can miss or delegate based on how relevant the attendees are to you
-- Helps you sort out personal and work information on your phone; for example, by categorizing pictures that should go to your personal OneDrive and business receipts that should go to your OneDrive for Business
-- Leverages at-scale Office 365 data and analytics so that decision makers can unlock valuable insights into time allocation and collaboration patterns that impact business productivity
-- Brings custom business data into Microsoft Graph, indexing it to make it searchable along with data from Microsoft 365 services
+- Looks at your next meeting and helps you prepare for it by providing profile information for attendees, including their job titles and managers, as well as information about the latest documents they're working on, and people they're collaborating with.
+- Scans your calendar, and suggests the best times for the next team meeting.
+- Fetches the latest sales projection chart from an Excel file in your OneDrive and lets you update the forecast in real time, all from your phone.
+- Subscribes to changes in your calendar, sends you an alert when you’re spending too much time in meetings, and provides recommendations for the ones you can miss or delegate based on how relevant the attendees are to you.
+- Helps you sort out personal and work information on your phone; for example, by categorizing pictures that should go to your personal OneDrive and business receipts that should go to your OneDrive for Business.
+- Analyzes at-scale Office 365 data so that decision makers can unlock valuable insights into time allocation and collaboration patterns that improve business productivity.
+- Brings custom business data into Microsoft Graph, indexing it to make it searchable along with data from Microsoft 365 services.
 
-Pick the first scenario about researching meeting attendees as an example. With Microsoft Graph API, you can:
+Pick the first scenario about researching meeting attendees as an example. With the Microsoft Graph API, you can:
 
-1. Get the email addresses of the [meeting event](/graph/api/resources/event?view=graph-rest-1.0) attendees 
-2. Look them up individually as a [user](/graph/api/resources/user?view=graph-rest-1.0) in Azure Active Directory to [get their profile information](/graph/api/user-get?view=graph-rest-1.0)
+1. Get the email addresses of the [meeting event](/graph/api/resources/event?view=graph-rest-1.0) attendees. 
+2. Look them up individually as a [user](/graph/api/resources/user?view=graph-rest-1.0) in Azure Active Directory to [get their profile information](/graph/api/user-get?view=graph-rest-1.0).
 
 You can then navigate to other resources using relationships: 
 
-- Connect to their manager through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0)
-- Get valuable insights and intelligence including the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-beta) the user
-- [Get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around the user
+- Connect to their manager through a [manager relationship](/graph/api/user-list-manager?view=graph-rest-1.0).
+- Get valuable insights and intelligence including the popular files [trending around](/graph/api/resources/insights-trending?view=graph-rest-beta) the user.
+- [Get the most relevant people](/graph/api/user-list-people?view=graph-rest-beta) around the user.
 - Extend the scenario to get to the user's groups through a [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0) relationship
-- [Reach other members in each group](/graph/api/group-list-members?view=graph-rest-1.0) 
-- Tap into other scenarios enabled by [groups](office365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md) 
+- [Reach other members in each group](/graph/api/group-list-members?view=graph-rest-1.0). 
+- Tap into other scenarios enabled by [groups](office365-groups-concept-overview.md), such as [education](education-concept-overview.md) and [teamwork](teams-concept-overview.md). 
 
 Microsoft Graph continues to open up the Microsoft 365 platform for developers, and always only with the appropriate permissions.
 
