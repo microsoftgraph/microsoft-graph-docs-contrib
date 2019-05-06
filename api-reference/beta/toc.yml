@@ -5,19 +5,19 @@
   - name: Get auth tokens
     items:
     - name: Overview
-      href: auth/index.yml
+      href: /graph/auth/index?toc=./ref/toc.json
     - name: Basics
-      href: auth/auth-concepts.md
+      href: /graph/auth/auth-concepts?toc=./ref/toc.json
     - name: Register your app
-      href: auth-register-app-v2.md
+      href: /graph/auth-register-app-v2?toc=./ref/toc.json
     - name: Get access on behalf of a user
-      href: auth-v2-user.md
+      href: /graph/auth-v2-user?toc=./ref/toc.json
     - name: Get access without a user
-      href: auth-v2-service.md
+      href: /graph/auth-v2-service?toc=./ref/toc.json
     - name: Permissions
-      href: permissions-reference.md
+      href: /graph/permissions-reference?toc=./ref/toc.json
     - name: Manage app access (CSPs)
-      href: auth-cloudsolutionprovider.md
+      href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
   - name: Use the API
     items:
     - name: Overview
