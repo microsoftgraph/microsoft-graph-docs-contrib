@@ -74,7 +74,6 @@ sections:
       - html: <a href="/graph/auth">Improved auth guides</a>
       - html: <a href="/graph/migrate-azure-ad-graph-overview">Migrating apps from Azure AD Graph to Microsoft Graph</a>
       - html: <a href="/graph/api/resources/securescore?view=graph-rest-1.0">Tenant secure score</a>
-      - html: <a href="/graph/api/itemanalytics-get?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Get list item analytics</a>
       - html: <a href="/graph/sdks/sdks-overview?view=graph-rest-1.0">SDK guides</a>
       - html: API snippets (<a href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">example</a>)
 
