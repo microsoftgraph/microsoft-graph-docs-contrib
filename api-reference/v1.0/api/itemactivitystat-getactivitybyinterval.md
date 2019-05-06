@@ -1,15 +1,14 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 10/06/2017
 title: Get item activity stats by interval
-description: Get itemAnalyticyStats for the activities that took place on this resource with the specified time interval.
+description: Get itemAnalyticyStats for the activities that took place on this resource within the specified time interval.
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 # Get item activity stats by interval
 
-Get a collection of [itemActivityStats][] resources for the activities that took place on this resource within the specified time interval.
+Get a collection of [itemActivityStat][] resources for the activities that took place on this resource within the specified time interval.
 
 >**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
