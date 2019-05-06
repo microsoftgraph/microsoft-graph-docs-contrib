@@ -22,6 +22,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |:---------------|:--------|:----------|
 |[List riskyUsers](../api/riskyusers-list.md) | [riskyUser](riskyUser.md) collection|List risky users and their properties.|
 |[Get riskyUser](../api/riskyusers-get.md) | [riskyUser](riskyUser.md)|Get a specific risky user and its properties.|
+|[List history](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Get the risk history of an Azure AD user.|
 |[Confirm riskyUsers compromised](../api/riskyusers-confirmcompromised.md)|None |Confirm a risky user as compromised.|
 |[Dismiss riskyUsers](../api/riskyusers-dismiss.md)|None | Dismiss the risk of a risky user.|
 
@@ -43,7 +44,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|history|[riskyUserHistoryItem](riskyuserhistoryitem.md) collection| |
+|history|[riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection. |
 
 ## JSON representation
 

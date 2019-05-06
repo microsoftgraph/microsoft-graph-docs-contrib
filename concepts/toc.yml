@@ -98,15 +98,15 @@
       - name: Get started
         href: data-connect-get-started.md
       - name: Datasets, regions, and sinks
-        href: data-connect-datasets
+        href: data-connect-datasets.md
       - name: Policies and licensing
-        href: data-connect-policies
+        href: data-connect-policies.md
       - name: User selection and filtering
-        href: data-connect-filtering
+        href: data-connect-filtering.md
       - name: Integrate with PAM
-        href: data-connect-pam
+        href: data-connect-pam.md
       - name: Tips
-        href: data-connect-tips
+        href: data-connect-tips.md
     - name: Devices and apps
       href: intune-concept-overview.md
       displayName: Intune
@@ -295,6 +295,42 @@
           href: extensibility-open-users.md
         - name: Use schema extensions (example)
           href: extensibility-schema-groups.md
+    - name: Migrate
+      expanded: false
+      items:
+      - name: Azure AD Graph
+        displayname: Migration, Azure AD Graph
+        items:
+        - name: Overview
+          href: migrate-azure-ad-graph-overview.md
+        - name: Checklist to migrate apps
+          href: migrate-azure-ad-graph-planning-checklist.md
+        - name: "1: Review differences"
+          expanded: true
+          items: 
+          - name: Requests
+            href: migrate-azure-ad-graph-request-differences.md
+          - name: Service features
+            href: migrate-azure-ad-graph-feature-differences.md
+          - name: Resource types
+            href: migrate-azure-ad-graph-resource-differences.md
+          - name: Entity properties
+            href: migrate-azure-ad-graph-property-differences.md
+          - name: Methods
+            href: migrate-azure-ad-graph-method-differences.md
+        - name: "2: Examine API use"
+          href: migrate-azure-ad-graph-audit-api-use.md
+        - name: "3: Review app details"
+          expanded: true
+          items:
+          - name: App registration
+            href: migrate-azure-ad-graph-app-registration.md
+          - name: Auth libraries 
+            href: migrate-azure-ad-graph-authentication-library.md
+          - name: .NET client libraries 
+            href: migrate-azure-ad-graph-client-libraries.md
+        - name: "4: Deploy, test, and extend"
+          href: migrate-azure-ad-graph-deploy-test-extend.md
     - name: Use SDKs
       items:
         - name: Overview
@@ -306,6 +342,7 @@
         - name: Choose an authentication provider
           href: sdks/choose-authentication-providers.md
     - name: Resources
+      expanded: true
       items:
       - name: Best practices
         href: best-practices-concept.md
@@ -315,7 +352,7 @@
         href: changelog.md
       - name: Errors
         href: errors.md
-  - name: v1.0 reference
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-  - name: Beta reference
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+    - name: v1.0 reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+    - name: Beta reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
