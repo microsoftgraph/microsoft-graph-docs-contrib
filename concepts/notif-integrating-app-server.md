@@ -15,17 +15,17 @@ You can now create and send a notification that is targeted to a user using Micr
 
 ## Authentication
 
-Currently, Microsoft Graph notifications requires that your application service use an On-Behalf-Of (OBO) authentication flow to post a notification to a user. This flow will work as follows:
+Microsoft Graph notifications requires that your application service uses the On-Behalf-Of (OBO) flow to post a notification to a user. The following is the authentication flow:
 
-1.  First, your user signs-into your application with their MSA or Azure AD account. When signing-in, the identity service will give you an access token.
+1.  The user signs in to your application with their Microsoft or their work or school account. When they sign in, the identity service gives you an access token.
 
-2.  Next, you will send this access token to your app service.
+2.  You send the access token to your app service.
 
-3.  You app service will authenticate itself against the Identity service (MSA/Azure AD) and request an OBO token for Microsoft Graph notifications.
+3.  You app service authenticates against the identity service and requests an OBO token for Microsoft Graph notifications.
 
-4.  Identity service will return an OBO based access token and refresh token. Subsequently, your app service can use this access token to post notifications to this user.
+4.  The identity service returns an OBO-based token and a refresh token. Your app service can use this access token to post notifications to this user.
 
-To learn more about OAuth 2.0 OBO flow, visit [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). For details on how this flow works with Microsoft Graph notifications, please refer to our sample code available [here](https://aka.ms/gnsample-appservice).
+To learn more about OAuth 2.0 OBO flow, see [Service-to-service calls that use delegated user identity in the On-Behalf-Of flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). For details about how this flow works with Microsoft Graph notifications, see the [App Service sample](https://aka.ms/gnsample-appservice).
 
 > [!NOTE]
 > Microsoft Graph notifications currently uses OBO authentication flow with future plans to simplify this authentication further and eliminate the need to maintain access tokens and refresh tokens.
