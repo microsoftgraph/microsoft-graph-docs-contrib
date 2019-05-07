@@ -1,18 +1,18 @@
 # publishedResource resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get publishedResource](../api/onpremisespublishedresource_get.md) | [publishedResource](onpremisespublishedresource.md) | Read properties and relationships of publishedResource object. |
-| [Create publishedResource](../api/onpremisespublishedresource_create.md) |  [publishedResource](onpremisespublishedresource.md)  | Create a new publishedResource. |
-| [Update publishedResource](../api/onpremisespublishedresource_update.md) | [publishedResource](onpremisespublishedresource.md) | Update publishedResource object. |
-| [Delete  publishedResource](../api/onpremisespublishedresource_delete.md) | None | Delete publishedResource object. |
-| [List publishedResources](../api/onpremisespublishedresource_list.md) | [publishedResource](onpremisespublishedresource.md) objects collection | Get publishedResources object collection. |
-| [Assign publishedResource to onPremisesAgentGroup](../api/onpremisespublishedresource_post_agentgroups.md) | None |  |
-| [Remove publishedResource from onPremisesAgentGroup](../api/onpremisespublishedresource_delete_agentgroups.md) | None |  |
+| [Get publishedResource](../api/onpremisespublishedresource-get.md) | [publishedResource](onpremisespublishedresource.md) | Read properties and relationships of publishedResource object. |
+| [Create publishedResource](../api/onpremisespublishedresource-create.md) |  [publishedResource](onpremisespublishedresource.md)  | Create a new publishedResource. |
+| [Update publishedResource](../api/onpremisespublishedresource-update.md) | [publishedResource](onpremisespublishedresource.md) | Update publishedResource object. |
+| [Delete  publishedResource](../api/onpremisespublishedresource-delete.md) | None | Delete publishedResource object. |
+| [List publishedResources](../api/onpremisespublishedresource-list.md) | [publishedResource](onpremisespublishedresource.md) objects collection | Get publishedResources object collection. |
+| [Assign publishedResource to onPremisesAgentGroup](../api/onpremisespublishedresource-post-agentgroups.md) | None |  |
+| [Remove publishedResource from onPremisesAgentGroup](../api/onpremisespublishedresource-delete-agentgroups.md) | None |  |
 
 ## Properties
 

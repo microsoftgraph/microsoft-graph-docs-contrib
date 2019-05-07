@@ -1,12 +1,12 @@
-# Delete onPremisesAgentGroup
+# Delete publishedResource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete onPremisesAgentGroup.
+Delete a [publishedResource](../resources/onpremisespublishedresource.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -15,10 +15,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Not supported. |
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /onPremisesPublishingProfiles(publishingType)/agentGroups(id1)
+DELETE /onPremisesPublishingProfiles(publishingType)/publishedResources(id1)/agentGroups(id2)/$ref
 ```
 
 ## Request headers
@@ -42,16 +41,15 @@ If successful, this method returns `204, No Content` response code. It does not 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "delete_onpremisesagentgroup"
+  "name": "delete_publishedresource"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups(id1)
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources(id1)/agentGroups(id2)/$ref
 ```
 
 ### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -65,7 +63,7 @@ HTTP/1.1 204 No Content
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete onPremisesAgentGroup",
+  "description": "Delete publishedResource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

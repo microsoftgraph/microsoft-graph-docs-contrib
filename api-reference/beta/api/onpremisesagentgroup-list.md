@@ -1,12 +1,12 @@
-# List publishedResources
+# List onPremisesAgentGroups
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [publishedResource](../resources/onpremisespublishedresource.md) objects.
+Retrieve a list of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) objects.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -15,9 +15,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /onPremisesPublishingProfiles(publishingType)/publishedResources
+GET /onPremisesPublishingProfiles(publishingType)/agentGroups?$expand=agents,publishedResources
 ```
 
 ## Optional query parameters
@@ -36,7 +37,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [publishedResource](../resources/onpremisespublishedresource.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) objects in the response body.
 
 ## Example
 
@@ -45,11 +46,11 @@ If successful, this method returns a `200 OK` response code and collection of [p
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_publishedresources"
+  "name": "get_agentgroups"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles(publishingType)/publishedResources?$expand=agentGroups
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups?$expand=agents,publishedResources
 ```
 
 ### Response
@@ -58,7 +59,7 @@ The following is an example of the response. Note: The response object shown her
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.publishedResource",
+  "@odata.type": "microsoft.graph.onPremisesAgentGroup",
   "isCollection": true
 } -->
 
@@ -69,17 +70,24 @@ Content-type: application/json
 {
   "value": [
     {
-      "publishingType": "provisioning"
-      "displayName": "Demo provisioning"
-      "id": "aed0b780-965f-4149-85c5-a8c73e58b67d",
-      "resourceName": "domain1.contoso.com",
-      "agentGroups": [
-          {
-              "id": "2d55ed41-1619-4848-92bb-0576d3038682"
-              "displayName": "Group 1"
-          }
-      ]
-    }
+            "id": "2d55ed41-1619-4848-92bb-0576d3038682"
+            "displayName": "Group 1"
+            "publishingType": "provisioning"
+            "isDefault": "false"
+            "agents": [
+                 {
+                    "id": "1234b780-965f-4149-85c5-a8c73e58b67d"
+                    "status": "Active"
+                 }
+            ],
+            "publishedResources": [
+                {
+                    "displayName": "Demo Provisioning"
+                    "id": "aed0b780-965f-4149-85c5-a8c73e58b67d",
+                    "resourceName": "domain1.contoso.com"
+                }
+            ]
+        }
   ]
 }
 ```
@@ -88,7 +96,7 @@ Content-type: application/json
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List publishedResources",
+  "description": "List agentGroups",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

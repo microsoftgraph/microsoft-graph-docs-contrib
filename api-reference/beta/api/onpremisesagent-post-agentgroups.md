@@ -1,12 +1,12 @@
-# Create onPremisesAgentGroup
+# Assign onPremisesAgent to onPremisesAgentGroup
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new onPremisesAgentGroup.
+Use this API to assign [onPremisesAgent](../resources/onpremisesagent.md) to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -15,9 +15,10 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /onPremisesPublishingProfiles(publishingType)/agentGroups
+POST /onPremisesPublishingProfiles(publishingType)/agents(id1)/agentGroups/$ref
 ```
 
 ## Request headers
@@ -28,13 +29,7 @@ POST /onPremisesPublishingProfiles(publishingType)/agentGroups
 
 ## Request body
 
-In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
-
-```json
-{
-    "displayName": "New Group"
-}
-```
+In the request body, supply a JSON representation of OData reference to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Response
 
@@ -47,18 +42,18 @@ If successful, this method returns `201, Created` response code and [onPremisesA
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_onpremisesagentgroup_from_publishedresource"
+  "name": "create_onpremisesagentgroup_from_onpremisesagent"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agents(id1)/agentGroups/$ref
 ```
 
-In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+In the request body, supply a JSON representation of OData reference to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
-```json
+```http
 {
-    "displayName": "New Group"
+  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups(id2)/"
 }
 ```
 
@@ -72,13 +67,7 @@ The following is an example of the response. Note: The response object shown her
 } -->
 
 ```http
-HTTP/1.1 201 Created
-{
-    "id": "4655ed41-1619-4848-92bb-0576d3038682"
-    "displayName": "New Group"
-    "publishingType": "provisioning"
-    "isDefault": "false"
-}
+HTTP/1.1 204
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

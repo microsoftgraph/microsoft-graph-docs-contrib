@@ -1,12 +1,12 @@
-# Update onPremisesAgentGroup
+# Update publishedResource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Update the properties of publishedresource  [publishedResource](../resources/onpremisespublishedresource.md) object.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /onPremisesPublishingProfiles(publishingType)/agentGroups
+PATCH /onPremisesPublishingProfiles(publishingType)/publishedResources(id1)
 ```
 
 ## Optional request headers
@@ -29,7 +29,7 @@ PATCH /onPremisesPublishingProfiles(publishingType)/agentGroups
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
-Below is the list of properties that could be updated:
+Below is the list of supported properties that could be updated:
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -46,14 +46,14 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_onpremisesagentgroup"
+  "name": "update_publishedresource"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles(publishingType)/publishedResources(id1)
 
 {
-    "displayName": "Group New Name"
+    "displayName": "Demo provisioning (updated)"
 }
 ```
 
@@ -63,7 +63,7 @@ The following is an example of the response. Note: The response object shown her
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesAgentGroup"
+  "@odata.type": "microsoft.graph.publishedResource"
 } -->
 
 ```http
@@ -74,7 +74,7 @@ HTTP/1.1 204
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update onpremisesagentgroup",
+  "description": "Update publishedresource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
