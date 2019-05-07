@@ -167,7 +167,7 @@ private void onAccessTokenInvalidated(ConnectedDevicesAccountManager sender, Con
 
 Microsoft Graph notifications uses FCM, the native push platform on Android, to signal the client application on user notifications data changes. This happens when new incoming notifications are published from your app server, or when any notification's state is updated on a different device with the same signed in user in a cross-device scenario. 
 
-Therefore, a valid FCM token that allows data notification messages to come through successfully is required, below event callback handles FCM push token expirations. 
+Therefore, a valid FCM token that allows data notification messages to come through successfully is required. The following event callback handles FCM push token expirations. 
 
 #### notificationRegistrationStateChanged
 
