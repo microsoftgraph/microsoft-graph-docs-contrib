@@ -1,6 +1,6 @@
 ---
 title: "Integrating your Windows UWP app with the client-side SDK for user notifications"
-description: "Quick start guide on how to integrate your Windows UWP app with user notifications client SDK"
+description: "Integrate your Windows UWP app with user notifications client SDK."
 localization_priority: Priority
 ms.prod: "Microsoft Graph notifications"
 ---
