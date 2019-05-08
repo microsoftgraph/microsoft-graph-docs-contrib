@@ -18,6 +18,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta |Added new properties to resource type [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta)|
+| Addition | Beta |Added the [discoverDirectoryDefinition](/graph/api/resources/synchronization-synchronizationschema-DiscoverDirectoryDefinition?view=graph-rest-beta) operation|
 
 ## April 2019
 =======
