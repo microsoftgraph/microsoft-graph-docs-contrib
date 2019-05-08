@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
 ```json
 {
     "id": "8ffa6169-f354-4751-9b77-9c00765be92d",
-    "discoverabilities": "AttributeNames, AttributeDataTypes"
+    "discoverabilities": "AttributeNames, AttributeDataTypes",
     "discoveryDateTime": "2019-03-20T15:47:50.4707552Z",
     "name": "salesforce.com",
     "objects": [
