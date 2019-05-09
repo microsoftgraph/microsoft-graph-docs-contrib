@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Update the properties of a [windowsPhone81VpnConfiguration](../resources/intune-deviceconfig-windowsphone81vpnconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -65,7 +65,7 @@ The following table shows the properties that are required when you create the [
 |proxyServer|[windows81VpnProxyServer](../resources/intune-deviceconfig-windows81vpnproxyserver.md)|Proxy Server. Inherited from [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |bypassVpnOnCompanyWifi|Boolean|Bypass VPN on company Wi-Fi.|
 |bypassVpnOnHomeWifi|Boolean|Bypass VPN on home Wi-Fi.|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |rememberUserCredentials|Boolean|Remember user credentials.|
 |dnsSuffixSearchList|String collection|DNS suffix search list.|
 
@@ -174,7 +174,6 @@ Content-Length: 1415
   ]
 }
 ```
-
 
 
 

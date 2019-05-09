@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Create a new [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -197,7 +197,6 @@ Content-Length: 1641
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

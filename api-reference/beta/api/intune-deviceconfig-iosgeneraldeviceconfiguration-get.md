@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9800
+Content-Length: 10095
 
 {
   "value": {
@@ -175,11 +175,16 @@ Content-Length: 9800
     "kioskModeAllowAssistiveSpeak": true,
     "kioskModeAllowAssistiveTouchSettings": true,
     "kioskModeAllowAutoLock": true,
+    "kioskModeBlockAutoLock": true,
     "kioskModeAllowColorInversionSettings": true,
     "kioskModeAllowRingerSwitch": true,
+    "kioskModeBlockRingerSwitch": true,
     "kioskModeAllowScreenRotation": true,
+    "kioskModeBlockScreenRotation": true,
     "kioskModeAllowSleepButton": true,
+    "kioskModeBlockSleepButton": true,
     "kioskModeAllowTouchscreen": true,
+    "kioskModeBlockTouchscreen": true,
     "kioskModeAllowVoiceOverSettings": true,
     "kioskModeAllowVolumeButtons": true,
     "kioskModeBlockVolumeButtons": true,
@@ -317,11 +322,12 @@ Content-Length: 9800
     "passwordBlockAirDropSharing": true,
     "dateAndTimeForceSetAutomatically": true,
     "contactsAllowManagedToUnmanagedWrite": true,
-    "contactsAllowUnmanagedToManagedRead": true
+    "contactsAllowUnmanagedToManagedRead": true,
+    "cellularBlockPersonalHotspotModification": true,
+    "siriDisableServerLogging": true
   }
 }
 ```
-
 
 
 

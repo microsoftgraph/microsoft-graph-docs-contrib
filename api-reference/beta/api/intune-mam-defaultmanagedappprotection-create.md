@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Create a new [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -102,7 +102,6 @@ The following table shows the properties that are required when you create the d
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. (iOS Only). Possible values are: `block`, `wipe`, `warn`.|
 |allowedAndroidDeviceManufacturers|String|Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work. (Android only)|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device manufacturer is not allowed. (Android only). Possible values are: `block`, `wipe`, `warn`.|
-|thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app. (iOS Only)|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected. This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False. (iOS Only)|
 |disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps. (iOS Only)|
 |protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source. This setting is only allowed to be True when AllowedInboundDataTransferSources is set to AllApps. (iOS Only)|
@@ -110,6 +109,9 @@ The following table shows the properties that are required when you create the d
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android SafetyNet Attestation requirment fails. Possible values are: `block`, `wipe`, `warn`.|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Defines the Android SafetyNet Apps Verification requirement for a managed app to work. Possible values are: `none`, `enabled`.|
 |appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android App Verification requirment fails. Possible values are: `block`, `wipe`, `warn`.|
+|customBrowserProtocol|String|A custom browser protocol to open weblink on iOS. (iOS only)|
+|customBrowserPackageId|String|Unique identifier of a custom browser to open weblink on Android. (Android only)|
+|customBrowserDisplayName|String|Friendly name of the preferred custom browser to open weblink on Android. (Android only)|
 
 
 
@@ -123,7 +125,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 3535
+Content-length: 3689
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -203,14 +205,16 @@ Content-length: 3535
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
   "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
   "protectInboundDataFromUnknownSources": true,
   "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
   "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
   "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+  "customBrowserProtocol": "Custom Browser Protocol value",
+  "customBrowserPackageId": "Custom Browser Package Id value",
+  "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
 
@@ -219,7 +223,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3707
+Content-Length: 3861
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -302,17 +306,18 @@ Content-Length: 3707
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
   "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
   "protectInboundDataFromUnknownSources": true,
   "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
   "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
   "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+  "customBrowserProtocol": "Custom Browser Protocol value",
+  "customBrowserPackageId": "Custom Browser Package Id value",
+  "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
-
 
 
 

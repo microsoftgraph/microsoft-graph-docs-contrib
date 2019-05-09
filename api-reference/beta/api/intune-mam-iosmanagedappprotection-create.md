@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Create a new [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -94,10 +94,10 @@ The following table shows the properties that are required when you create the i
 |minimumWipeSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |allowedIosDeviceModels|String|Semicolon seperated list of device models allowed, as a string, for the managed app to work.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. Possible values are: `block`, `wipe`, `warn`.|
-|thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected. This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False.|
 |disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.|
 |protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source. This setting is only allowed to be True when AllowedInboundDataTransferSources is set to AllApps.|
+|customBrowserProtocol|String|A custom browser protocol to open weblink on iOS.|
 
 
 
@@ -111,7 +111,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections
 Content-type: application/json
-Content-length: 2544
+Content-length: 2566
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -171,10 +171,10 @@ Content-length: 2544
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
-  "protectInboundDataFromUnknownSources": true
+  "protectInboundDataFromUnknownSources": true,
+  "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
 
@@ -183,7 +183,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2716
+Content-Length: 2738
 
 {
   "@odata.type": "#microsoft.graph.iosManagedAppProtection",
@@ -246,13 +246,12 @@ Content-Length: 2716
   "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
   "allowedIosDeviceModels": "Allowed Ios Device Models value",
   "appActionIfIosDeviceModelNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
-  "protectInboundDataFromUnknownSources": true
+  "protectInboundDataFromUnknownSources": true,
+  "customBrowserProtocol": "Custom Browser Protocol value"
 }
 ```
-
 
 
 

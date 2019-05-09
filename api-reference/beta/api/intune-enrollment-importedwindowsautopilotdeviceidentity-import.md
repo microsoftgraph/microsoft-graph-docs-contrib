@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Not yet documented
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -61,7 +61,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
 Content-type: application/json
-Content-length: 748
+Content-length: 822
 
 {
   "importedWindowsAutopilotDeviceIdentities": [
@@ -79,7 +79,8 @@ Content-length: 748
         "deviceRegistrationId": "Device Registration Id value",
         "deviceErrorCode": 15,
         "deviceErrorName": "Device Error Name value"
-      }
+      },
+      "assignedUserPrincipalName": "Assigned User Principal Name value"
     }
   ]
 }
@@ -90,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 713
+Content-Length: 787
 
 {
   "value": [
@@ -108,12 +109,12 @@ Content-Length: 713
         "deviceRegistrationId": "Device Registration Id value",
         "deviceErrorCode": 15,
         "deviceErrorName": "Device Error Name value"
-      }
+      },
+      "assignedUserPrincipalName": "Assigned User Principal Name value"
     }
   ]
 }
 ```
-
 
 
 

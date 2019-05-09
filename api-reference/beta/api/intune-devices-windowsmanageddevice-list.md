@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7973
+Content-Length: 8039
 
 {
   "value": [
@@ -204,6 +204,7 @@ Content-Length: 7973
       "freeStorageSpaceInBytes": 7,
       "managedDeviceName": "Managed Device Name value",
       "partnerReportedThreatState": "activated",
+      "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
       "usersLoggedOn": [
         {
           "@odata.type": "microsoft.graph.loggedOnUser",
@@ -233,7 +234,6 @@ Content-Length: 7973
   ]
 }
 ```
-
 
 
 

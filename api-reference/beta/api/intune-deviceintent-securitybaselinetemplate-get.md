@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [securityBaselineTemplate](../resources/intune-deviceintent-securitybaselinetemplate.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/templates/{deviceManagementTemplateId}
+GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
 ```
 
 ## Optional query parameters
@@ -60,18 +61,20 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 221
+Content-Length: 314
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.securityBaselineTemplate",
     "id": "3f61d4c2-d4c2-3f61-c2d4-613fc2d4613f",
     "displayName": "Display Name value",
-    "description": "Description value"
+    "description": "Description value",
+    "versionInfo": "Version Info value",
+    "isDeprecated": true,
+    "intentCount": 11
   }
 }
 ```
-
 
 
 

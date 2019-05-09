@@ -58,8 +58,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.iosManagedAppRegistration",
-  "baseType": "microsoft.graph.managedAppRegistration"
+  "@odata.type": "microsoft.graph.iosManagedAppRegistration"
 }
 -->
 ``` json
@@ -89,7 +88,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
 
 
 

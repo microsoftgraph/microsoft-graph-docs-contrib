@@ -84,6 +84,7 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|retireAfterDateTime|DateTimeOffset|Indicates the time after when a device will be auto retired because of scheduled action. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) collection|Indicates the last logged on users of a device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |autopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -101,9 +102,9 @@ Inherits from [managedDevice](../resources/intune-devices-manageddevice.md)
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|All applications currently installed on the device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|Device category Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
-|users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|users|[user](../resources/intune-devices-user.md) collection|The primary users associated with the managed device. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -255,6 +256,7 @@ Here is a JSON representation of the resource.
   "freeStorageSpaceInBytes": 1024,
   "managedDeviceName": "String",
   "partnerReportedThreatState": "String",
+  "retireAfterDateTime": "String (timestamp)",
   "usersLoggedOn": [
     {
       "@odata.type": "microsoft.graph.loggedOnUser",
@@ -282,7 +284,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

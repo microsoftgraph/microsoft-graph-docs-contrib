@@ -19,7 +19,7 @@ VPN Authentication Method.
 |:---|:---|:---|
 |certificate|0|Authenticate with a certificate.|
 |usernameAndPassword|1|Use username and password for authentication.|
-
+|derivedCredential|3|Use Derived Credential for Authentication.  Only valid for iOS.|
 
 
 

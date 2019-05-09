@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Not yet documented
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/templates/{deviceManagementTemplateId}/createInstance
+POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}/createInstance
 ```
 
 ## Request headers
@@ -97,7 +98,6 @@ Content-Length: 350
   }
 }
 ```
-
 
 
 

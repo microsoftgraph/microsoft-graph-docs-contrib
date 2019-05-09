@@ -60,8 +60,7 @@ Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.androidManagedAppRegistration",
-  "baseType": "microsoft.graph.managedAppRegistration"
+  "@odata.type": "microsoft.graph.androidManagedAppRegistration"
 }
 -->
 ``` json
@@ -92,7 +91,6 @@ Here is a JSON representation of the resource.
   "patchVersion": "String"
 }
 ```
-
 
 
 

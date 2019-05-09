@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Create a new [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/templates
+POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ```
 
 ## Request headers
@@ -48,6 +49,9 @@ The following table shows the properties that are required when you create the d
 |id|String|The template ID|
 |displayName|String|The template's display name|
 |description|String|The template's description|
+|versionInfo|String|The template's version information|
+|isDeprecated|Boolean|The template is deprecated or not. Intents cannot be created from a deprecated template.|
+|intentCount|Int32|Number of Intents created from this template.|
 
 
 
@@ -61,12 +65,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/templates
 Content-type: application/json
-Content-length: 145
+Content-length: 232
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
 
@@ -75,16 +82,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 194
+Content-Length: 281
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
   "id": "edd764ca-64ca-edd7-ca64-d7edca64d7ed",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
-
 
 
 

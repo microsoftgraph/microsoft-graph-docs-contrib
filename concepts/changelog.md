@@ -13,6 +13,48 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2019
 
+### Microsoft Intune APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new entities:<br/>[deviceManagementDerivedCredentialSettings](../resources/intune-deviceconfig-devicemanagementderivedcredentialsettings)<br/>[iosDerivedCredentialAuthenticationConfiguration](../resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration)<br/>[securityBaselineCategoryStateSummary](../resources/intune-deviceintent-securitybaselinecategorystatesummary)<br/>|
+|Addition|beta|Added new enum types:<br/>[deviceManagementDerivedCredentialIssuer](../resources/intune-deviceconfig-devicemanagementderivedcredentialissuer)<br/>[deviceManagementDerivedCredentialNotificationType](../resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype)<br/>[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype)<br/>[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype)<br/>|
+|Addition|beta|Added the [executeAction](o:executeAction:Collection(microsoft.graph.managedDevice)) action on [managedDevice](../resources/intune-devices-manageddevice) collection |
+|Addition|beta|Added the [rotateFileVaultKey](../api/intune-devices-manageddevice-rotatefilevaultkey.md) action on [managedDevice](../resources/intune-devices-manageddevice) |
+|Addition|beta|Added the [migrateToTemplate](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md) action on [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent) |
+|Addition|beta|Added the [getFileVaultKey](../api/intune-devices-manageddevice-getfilevaultkey.md) function on [managedDevice](../resources/intune-devices-manageddevice) |
+|Deletion|beta|Removed the following enum types:<br/>**mobileAppDependecyType**<br/>|
+|Deletion|beta|Removed the [executeAction](o:executeAction:Collection(microsoft.graph.managedDevice)) action on [managedDevice](../resources/intune-devices-manageddevice) collection |
+|Addition|beta|Added the **usernameFormatString**, **passwordFormatString** and **preSharedKey** properties to the [androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration) entity|
+|Addition|beta|Added the **customBrowserPackageId** and **customBrowserDisplayName** properties to the [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection) entity|
+|Addition|beta|Added the **customBrowserProtocol**, **customBrowserPackageId** and **customBrowserDisplayName** properties to the [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection) entity|
+|Deletion|beta|Removed the **thirdPartyKeyboardsBlocked** property from the [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection) entity|
+|Change|beta|Changed the following properties on the [deviceManagementAbstractComplexSettingInstance](../resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance) entity:<br/>**implementationId** from required to optional<br/>|
+|Addition|beta|Added the **versionInfo**, **isDeprecated** and **intentCount** properties to the [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate) entity|
+|Addition|beta|Added the **assignedUserPrincipalName** property to the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity) entity|
+|Addition|beta|Added the **signingCertificateType** and **encryptionCertificateType** properties to the [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration) entity|
+|Addition|beta|Added the **usernameFormatString** and **passwordFormatString** properties to the [iosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration) entity|
+|Addition|beta|Added the **kioskModeBlockAutoLock**, **kioskModeBlockRingerSwitch**, **kioskModeBlockScreenRotation**, **kioskModeBlockSleepButton**, **kioskModeBlockTouchscreen**, **cellularBlockPersonalHotspotModification** and **siriDisableServerLogging** properties to the [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration) entity|
+|Addition|beta|Added the **customBrowserProtocol** property to the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection) entity|
+|Deletion|beta|Removed the **thirdPartyKeyboardsBlocked** property from the [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection) entity|
+|Addition|beta|Added the **iCloudBlockPhotoLibrary**, **screenCaptureBlocked**, **classroomAppBlockRemoteScreenObservation**, **classroomAppForceUnpromptedScreenObservation**, **classroomForceAutomaticallyJoinClasses**, **classroomForceRequestPermissionToLeaveClasses** and **classroomForceUnpromptedAppAndDeviceLock** properties to the [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration) entity|
+|Addition|beta|Added the **retireAfterDateTime** property to the [managedDevice](../resources/intune-devices-manageddevice) entity|
+|Change|beta|Changed the type of the following properties on the [mobileAppDependency](../resources/intune-apps-mobileappdependency) entity:<br/>**dependencyType** from [mobileAppDependecyType](../resources/intune-apps-mobileappdependecytype.md) to [mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype)<br/>|
+|Addition|beta|Added the **tpmRequired** property to the [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy) entity|
+|Addition|beta|Added the **roleScopeTagIds** property to the [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile) entity|
+|Addition|beta|Added the **configDeviceHealthMonitoringCustomScope** property to the [windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration) entity|
+|Addition|beta|Added the **migratableTo** navigation property to the [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate) entity|
+|Addition|beta|Added the **derivedCredentialSettings** navigation property to the [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration) entity|
+|Addition|beta|Added the **derivedCredentialSettings** navigation property to the [iosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration) entity|
+|Addition|beta|Added the **derivedCredentialSettings** navigation property to the [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration) entity|
+|Addition|beta|Added the **categoryDeviceStateSummaries** navigation property to the [securityBaselineTemplate](../resources/intune-deviceintent-securitybaselinetemplate) entity|
+|Addition|beta|Added the **wpaEnterprise** member to the [androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype) enum type|
+|Addition|beta|Added the **unknown** member to the [devicePlatformType](../resources/intune-shared-deviceplatformtype) enum type|
+|Addition|beta|Added the **derivedCredential** member to the [easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod) enum type|
+|Addition|beta|Added the **wipe** member to the [managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction) enum type|
+|Change|beta|Changed the type of the following properties on the [managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction) enum type:<br/>**fullScan** from 2 to 3<br/>**quickScan** from 3 to 4<br/>**signatureUpdate** from 4 to 5<br/>|
+|Addition|beta|Added the **derivedCredential** member to the [vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod) enum type|
+|Addition|beta|Added the **derivedCredential** member to the [wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod) enum type|
+
 ### Risky users API
 
 | **Change type** | **Version**   | **Description**                          |

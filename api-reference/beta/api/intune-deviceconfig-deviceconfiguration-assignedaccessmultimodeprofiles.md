@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Not yet documented
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -47,7 +47,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedAccessMultiModeProfiles|windowsAssignedAccessProfile collection|Not yet documented|
+|assignedAccessMultiModeProfiles|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) collection|Not yet documented|
 
 
 
@@ -91,7 +91,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Update the properties of a [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -207,7 +207,7 @@ The following table shows the properties that are required when you create the [
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Turn on Credential Guard when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Possible values are: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
 |deviceGuardEnableVirtualizationBasedSecurity|Boolean|Turns On Virtualization Based Security(VBS).|
 |deviceGuardEnableSecureBootWithDMA|Boolean|Specifies whether Platform Security Level is enabled at next reboot.|
-|deviceGuardLaunchSystemGuard|[enablement](../resources/intune-shared-enablement.md)|Allows the IT admin to configure the launch of System Guard. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|deviceGuardLaunchSystemGuard|[enablement](../resources/intune-deviceconfig-enablement.md)|Allows the IT admin to configure the launch of System Guard. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
 |applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
@@ -1566,7 +1566,6 @@ Content-Length: 27813
   }
 }
 ```
-
 
 
 

@@ -43,10 +43,13 @@ Inherits from [androidWiFiConfiguration](../resources/intune-deviceconfig-androi
 |connectWhenNetworkNameIsHidden|Boolean|When set to true, this profile forces the device to connect to a network that doesn't broadcast its SSID to all devices. Inherited from [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|
 |wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Inherited from [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md). Possible values are: `open`, `wpaEnterprise`.|
 |eapType|[androidEapType](../resources/intune-deviceconfig-androideaptype.md)|Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router). Possible values are: `eapTls`, `eapTtls`, `peap`.|
-|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Indicates the Authentication Method the client (device) needs to use when the EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`.|
+|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Indicates the Authentication Method the client (device) needs to use when the EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |innerAuthenticationProtocolForPeap|[nonEapAuthenticationMethodForPeap](../resources/intune-deviceconfig-noneapauthenticationmethodforpeap.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password. Possible values are: `none`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS or PEAP. The String provided here is used to mask the username of individual users when they attempt to connect to Wi-Fi network.|
+|usernameFormatString|String|Username format string used to build the username to connect to wifi|
+|passwordFormatString|String|Password format string used to build the password to connect to wifi|
+|preSharedKey|String|PreSharedKey used to build the password to connect to wifi|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -91,10 +94,12 @@ Here is a JSON representation of the resource.
   "authenticationMethod": "String",
   "innerAuthenticationProtocolForEapTtls": "String",
   "innerAuthenticationProtocolForPeap": "String",
-  "outerIdentityPrivacyTemporaryValue": "String"
+  "outerIdentityPrivacyTemporaryValue": "String",
+  "usernameFormatString": "String",
+  "passwordFormatString": "String",
+  "preSharedKey": "String"
 }
 ```
-
 
 
 

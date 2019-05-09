@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Not yet documented
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -48,6 +48,8 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|Not yet documented|
+|keepEnrollmentData|Boolean|Not yet documented|
+|keepUserData|Boolean|Not yet documented|
 |deviceIds|String collection|Not yet documented|
 
 
@@ -63,10 +65,12 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 78
+Content-length: 134
 
 {
   "actionName": "delete",
+  "keepEnrollmentData": true,
+  "keepUserData": true,
   "deviceIds": [
     "Device Ids value"
   ]
@@ -98,7 +102,6 @@ Content-Length: 385
   }
 }
 ```
-
 
 
 

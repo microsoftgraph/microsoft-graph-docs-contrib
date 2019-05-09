@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3247
+Content-Length: 3387
 
 {
   "value": [
@@ -127,12 +127,13 @@ Content-Length: 3247
       "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
       "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
       "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+      "customBrowserPackageId": "Custom Browser Package Id value",
+      "customBrowserDisplayName": "Custom Browser Display Name value"
     }
   ]
 }
 ```
-
 
 
 

@@ -44,7 +44,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. This collection can contain a maximum of 25 elements.|
 |customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Custom data when connection type is set to Custom VPN. Use this field to enable functionality not supported by Intune, but available in your VPN solution. Contact your VPN vendor to learn how to add these key/value pairs. This collection can contain a maximum of 25 elements.|
 |enableSplitTunneling|Boolean|Send all network traffic through VPN.|
-|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method for this VPN connection. Possible values are: `certificate`, `usernameAndPassword`.|
+|authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method for this VPN connection. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |enablePerApp|Boolean|Setting this to true creates Per-App VPN payload which can later be associated with Apps that can trigger this VPN conneciton on the end user's iOS device.|
 |safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection.|
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md) collection|On-Demand Rules. This collection can contain a maximum of 500 elements.|
@@ -142,7 +142,6 @@ Here is a JSON representation of the resource.
   "optInToDeviceIdSharing": true
 }
 ```
-
 
 
 

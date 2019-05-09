@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1430
+Content-Length: 1504
 
 {
   "value": [
@@ -91,12 +91,14 @@ Content-Length: 1430
       "extractHardwareHash": true,
       "deviceNameTemplate": "Device Name Template value",
       "deviceType": "surfaceHub2",
-      "enableWhiteGlove": true
+      "enableWhiteGlove": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }
 ```
-
 
 
 
