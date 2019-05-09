@@ -40,6 +40,20 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
+## Request headers
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {code}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response body 
+
+If successful, this method returns a `200 OK` response code and [item][] in the response body.
+
 ## Example
 
 ### Request

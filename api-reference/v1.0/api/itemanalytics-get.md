@@ -39,6 +39,20 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
 
+## Request headers
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization  | Bearer {code}. Required.|
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response body 
+
+If successful, this method returns a `200 OK` response code and collection of [itemAnalytics][] object in the response body. 
+
 ## Example
 
 ### Request
