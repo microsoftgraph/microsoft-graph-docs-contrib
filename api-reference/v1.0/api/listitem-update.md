@@ -40,13 +40,10 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
 
-
-## Request body
-
-In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
-
 ## Example
 
+### Request
+In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.  
 Here is an example that updates the Color and Quantity fields of the list item with new values.
 All other values on the listItem are left alone. 
 
@@ -62,7 +59,7 @@ Content-Type: application/json
 }
 ```
 
-## Response
+### Response
 
 If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.
 

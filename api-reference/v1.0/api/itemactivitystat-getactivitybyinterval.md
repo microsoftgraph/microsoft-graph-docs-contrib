@@ -26,9 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.
 |Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
 
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -47,9 +44,12 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 | endDateTime    | string (timestamp) | The end time over which to aggregate activities.
 | interval       | string             | The aggregation interval.
 
+## Optional query parameters
+This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
+
 ## Example
 
-## Request
+### Request
 
 <!-- { "blockType": "request", "name": "get-activities-by-interval" } -->
 
@@ -57,7 +57,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-3',interval='day')
 ```
 
-## Response
+### Response
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 
