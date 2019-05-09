@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: itemAnalytics resource type
 description: The ItemAnalytics object provides analytics about activities that took place on an item.
 localization_priority: Normal

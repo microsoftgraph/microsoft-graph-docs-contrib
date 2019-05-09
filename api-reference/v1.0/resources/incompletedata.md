@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 10/06/2017
 title: incompleteData resource type
 description: The incompleteData facet indicates that a resource was generated with incomplete data.
 localization_priority: Normal

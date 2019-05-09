@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 10/06/2017
 title: Get item activity stats by interval
 description: Get itemAnalyticyStats for the activities that took place on this resource with the specified time interval.
 localization_priority: Normal
@@ -26,6 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
 |Delegated (personal Microsoft account) | Not supported.
 |Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All
+
+## Optional query parameters
+This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## HTTP request
 

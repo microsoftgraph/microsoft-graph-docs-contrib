@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: commentAction resource type
 description: The commentAction object provides information about a comment that was made on an item.
 localization_priority: Normal

@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: itemActionStat resource type
 description: The itemActionStat object provides aggregate details about an action over a period of time.
 localization_priority: Normal

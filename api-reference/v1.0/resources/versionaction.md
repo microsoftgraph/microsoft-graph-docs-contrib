@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: versionAction resource type
 description: The VersionAction object provides information about an activity that resulted in a new item version.
 localization_priority: Normal

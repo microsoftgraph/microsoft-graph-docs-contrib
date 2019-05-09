@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/12/2018
 title: accessAction resource type
 description: The accessAction object provides information about accesses of an item.
 localization_priority: Normal

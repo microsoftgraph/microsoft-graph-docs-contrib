@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: createAction resource type
 description: The createAction object provides information about the creation of an item.
 localization_priority: Normal

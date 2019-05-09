@@ -17,16 +17,16 @@ Column values in the list are available through the `fieldValueSet` dictionary.
 The following methods are available for **listItem** resources.
 All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}`.
 
-| Method                    | HTTP method
-|:-------------------------------|:------------------------
-| [Get][]                        | GET /items/{item-id}
-| [Get column values][Get]       | GET /items/{item-id}?expand=fields
-| [Get analytics][]              | GET /items/{item-id}/analytics
-| [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval
-| [Create][]                     | POST /items
-| [Delete][]                     | DELETE /items/{item-id}
-| [Update][]                     | PATCH /items/{item-id}
-| [Update column values][Update] | PATCH /items/{item-id}/fields
+| Method                    | Return Type | Description
+|:-------------------------------|:-------------------|:------
+| [Get][]                   | lisItem| Get an item in a list.
+| [Get column values][Get]       | listItem | Get column values from listItem.
+| [Get analytics][]              | [itemAnalytics][]| Get analytics for this resource. 
+| [Get activities by interval][] | [itemActivityStat][]| Get a collection of itemActivityStats within the specified time interval.
+| [Create][]                     | listItem | Create a new listItem in a list.
+| [Delete][]                     | No Content | Removes an item from a list.
+| [Update][]                     | [fieldValueSet][]| Update the properties on a listItem.
+| [Update column values][Update] | [fieldValueSet][]| Update column values on a listItem.
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -34,6 +34,9 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
+
+[itemActivityStat]: itemactivitystat.md
+[fieldValueSet]: fieldvalueset.md
 
 ## Properties
 

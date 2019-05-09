@@ -1,7 +1,6 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
 title: driveItem resource type
 description: Item is the main data model in the OneDrive API. Everything is an item.
 localization_priority: Priority
@@ -170,30 +169,30 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 
 ## Methods
 
-| Method                                                   | REST Path
-|:---------------------------------------------------------|:------------------
-| [Get item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [Get analytics][]                                        | `GET /drive/items/{item-id}/analytics`
-| [Get activities by interval][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
-| [List children](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
-| [List versions](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
-| [Create item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
-| [Update item](../api/driveitem-update.md)                | `PATCH /drive/items/{item-id}`
-| [Upload content](../api/driveitem-put-content.md)        | `PUT /drive/items/{item-id}/content`
-| [Download content](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
-| [Download specific file format][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
-| [Delete item](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
-| [Move item](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
-| [Copy item](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
-| [Search items](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [List changes in a drive](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [List thumbnails](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Create sharing link](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
-| [Add permissions](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
-| [List permissions](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
-| [Delete permission](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [Get WebSocket channel][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Preview item][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| Method                                                   | Return Type | Description
+|:---------------------------------------------------------|:------------|:------------
+| [Get item](../api/driveitem-get.md)                      | driveItem |Retrieve the metadata for a DriveItem in a Drive.
+| [Get analytics][]                                        | [itemAnalytics][] | Get analytics for this resource. 
+| [Get activities by interval][]                           | [itemActivityStat][] | Get a collection of itemActivityStats within the specified time interval.
+| [List children](../api/driveitem-list-children.md)       | collection of driveItem | Return a collection of DriveItems in the children relationship of a DriveItem.
+| [List versions](../api/driveitem-list-versions.md)       | collection of [DriveItemVersion][] | Retrieves the versions of a file in the current user's drive.
+| [Create item](../api/driveitem-post-children.md)         | driveItem | Creates a driveItem in the specified drive.
+| [Update item](../api/driveitem-update.md)                | driveItem | Updates a driveItem in the drive.
+| [Upload content](../api/driveitem-put-content.md)        | driveItem | Uploads content to the driveItem.
+| [Download content](../api/driveitem-get-content.md)      | download Url | Downloads content of a driveItem.
+| [Download specific file format][download-format]         | download Url | Downloads content of a driveItem with a specific format.
+| [Delete item](../api/driveitem-delete.md)                | No Content | Deletes a driveItem.
+| [Move item](../api/driveitem-move.md)                    | driveItem | Move a DriveItem to a new parent item.
+| [Copy item](../api/driveitem-copy.md)                    | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Creates a copy of an driveItem (including any children).
+| [Search items](../api/driveitem-search.md)               | collection of driveItem | Search the hierarchy of items for items matching a query.
+| [List changes in a drive](../api/driveitem-delta.md)     | delta link | List any changes in the drive.
+| [List thumbnails](../api/driveitem-list-thumbnails.md)   | colletion of driveItem | List driveItems with their thumbnails. 
+| [Create sharing link](../api/driveitem-createlink.md)    | sharing link | Create a link to share the driveItem.
+| [Add permissions](../api/driveitem-invite.md)            | collection of [permission][] | Sends a sharing ivite to a user.
+| [List permissions](../api/driveitem-list-permissions.md) | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
+| [Delete permission](../api/permission-delete.md)         | No Content | Removes the permission from the driveItem.
+| [Get WebSocket channel][getWebSocket]                    | [subscription][] | Receives near-real-time change notifications for a drive using socket.io.
+| [Preview item][item-preview]                             | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.
 
 [item-preview]: ../api/driveitem-preview.md
 [Get analytics]: ../api/itemanalytics-get.md
@@ -232,6 +231,11 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [workbook]: workbook.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
+
+[DriveItemVersion]: driveitemversion.md
+[permission]: permission.md
+[subscription]: subscription.md
+[itemActivityStat]: itemactivitystat.md
 
 <!-- {
   "type": "#page.annotation",

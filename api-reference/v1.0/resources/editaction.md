@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: editAction resource type
 description: The EditAction object provides information about an activity that edited an item.
 localization_priority: Normal

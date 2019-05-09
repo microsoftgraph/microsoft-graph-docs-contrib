@@ -15,15 +15,15 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 All examples below are relative to `https://graph.microsoft.com/v1.0`.
 
-| Method                | Example Request
-|:-------------------------|:--------------------------------------------------
-| [Get root site][]        | GET /sites/root
-| [Get site][]             | GET /sites/{site-id}
-| [Get site by path][]     | GET /sites/{hostname}:/{site-path}
-| [Get site for a group][] | GET /groups/{group-id}/sites/root
-| [Get analytics][]              | GET /sites/{site-id}/analytics
-| [Get activities by interval][] | GET /sites/{site-id}/getActivitiesByInterval
-| [Search for sites][]     | GET /sites?search={query}
+| Method                | Return Type | Description
+|:-------------------------|:-------------|:----------
+| [Get root site][]        | site | To access the root SharePoint site within a tenant.
+| [Get site][]             | site | To access a sharePoint site using the siteId.
+| [Get site by path][]     | site | To access the root SharePoint site with a relative path.
+| [Get site for a group][] | site | To access the team site for a group.
+| [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource. 
+| [Get activities by interval][] | [itemActivityStat][] | Get a collection of itemActivityStats within the specified time interval.
+| [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -32,6 +32,7 @@ All examples below are relative to `https://graph.microsoft.com/v1.0`.
 [Get analytics]: ../api/itemanalytics-get.md
 [Get activities by interval]: ../api/itemactivitystat-getactivitybyinterval.md
 [Search for sites]: ../api/site-search.md
+[itemActivityStat]: itemactivitystat.md
 
 ## Properties
 

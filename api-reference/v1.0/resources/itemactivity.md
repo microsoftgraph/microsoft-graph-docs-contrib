@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: itemActivity resource type
 description: The itemActivity object provides information about an activity that took place on an item.
 localization_priority: Normal

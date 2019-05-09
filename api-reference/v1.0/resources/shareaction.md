@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: shareAction resource type
 description: The shareAction object provides information about who an item was shared to in a share action.
 localization_priority: Normal

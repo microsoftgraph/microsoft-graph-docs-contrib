@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: itemActivityStat resource type
 description: The ItemActivityStat object provides information about activities that took place on an item.
 localization_priority: Normal

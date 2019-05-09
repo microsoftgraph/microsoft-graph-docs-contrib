@@ -1,7 +1,6 @@
 ---
 author: daspek
 ms.author: dspektor
-ms.date: 09/14/2017
 title: ItemActionSet resource type
 description: The itemActionSet object provides information about the actions that took place as part of an activity on an item.
 localization_priority: Normal
