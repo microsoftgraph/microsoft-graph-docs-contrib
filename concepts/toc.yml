@@ -98,15 +98,15 @@
       - name: Get started
         href: data-connect-get-started.md
       - name: Datasets, regions, and sinks
-        href: data-connect-datasets
+        href: data-connect-datasets.md
       - name: Policies and licensing
-        href: data-connect-policies
+        href: data-connect-policies.md
       - name: User selection and filtering
-        href: data-connect-filtering
+        href: data-connect-filtering.md
       - name: Integrate with PAM
-        href: data-connect-pam
+        href: data-connect-pam.md
       - name: Tips
-        href: data-connect-tips
+        href: data-connect-tips.md
     - name: Devices and apps
       href: intune-concept-overview.md
       displayName: Intune

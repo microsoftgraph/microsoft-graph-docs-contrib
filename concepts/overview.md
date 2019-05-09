@@ -27,12 +27,10 @@ Together, the Microsoft Graph API, data connect, and connectors (private preview
 ## What's in Microsoft Graph?
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft 365 services:
 
-- Azure Active Directory
-- Education
-- Enterprise Mobility and Security services: Advanced Threat Analytics, Advanced Threat Protection, Identity Manager, and Intune 
-- Office 365 services: Delve, Dynamics 365 Business Central, Excel, Microsoft Bookings, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, and SharePoint
-- Reports: Identity and access, Office 365 usage
+- Office 365 services: Delve, Excel, Microsoft Bookings, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, and SharePoint
+- Enterprise Mobility and Security services: Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, and Intune 
 - Windows 10 services: activities, devices, notifications
+- Dynamics 365 Business Central
 
 To find out more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
@@ -124,7 +122,7 @@ Microsoft Graph data connect provides a new way for you to interact with the dat
 - Try a sample request in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Use the [quick start](https://developer.microsoft.com/graph/quick-start) to set up a ready-to-run sample app.
 - Look under **Learn** in the table of contents to read about services and features that you can use in your scenarios. 
-- Find out how to [get an auth token](./auth) in your app.
+- Find out how to [get an auth token](auth/auth-concepts.md) in your app.
 - Start [using the API](use-the-api.md).
 
 
