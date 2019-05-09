@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var conversationThread = await graphClient.Groups["{id}"].Threads
+var threads = await graphClient.Groups["{id}"].Threads
 	.Request()
 	.GetAsync();
 

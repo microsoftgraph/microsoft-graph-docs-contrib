@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.Contacts["{id}"].MemberOf
+var memberOf = await graphClient.Contacts["{id}"].MemberOf
 	.Request()
 	.GetAsync();
 

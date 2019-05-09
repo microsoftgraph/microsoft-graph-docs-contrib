@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var site = await graphClient.Sites["{site-id}"].Sites
+var sites = await graphClient.Sites["{site-id}"].Sites
 	.Request()
 	.GetAsync();
 

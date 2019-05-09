@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var emailAddress = await graphClient.Me.FindRoomLists()
+var findRoomLists = await graphClient.Me.FindRoomLists()
 	.Request()
 	.GetAsync();
 

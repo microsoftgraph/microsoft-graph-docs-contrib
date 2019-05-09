@@ -77,6 +77,8 @@ Content-length: 31
 HTTP/1.1 204 No Content
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_device-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_device-Cs-snippets.md)]

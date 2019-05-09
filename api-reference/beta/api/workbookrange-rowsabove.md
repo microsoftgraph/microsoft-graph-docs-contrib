@@ -81,6 +81,8 @@ Content-length: 157
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookrange_rowsAbove-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookrange_rowsAbove-Cs-snippets.md)]
