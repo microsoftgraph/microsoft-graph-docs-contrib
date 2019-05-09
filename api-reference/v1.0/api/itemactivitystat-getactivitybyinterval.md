@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # Get item activity stats by interval
 
-Get a collection of [itemActivityStat][] resources for the activities that took place on this resource within the specified time interval.
+Get a collection of [itemActivityStats][] resources for the activities that took place on this resource within the specified time interval.
 
 >**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
