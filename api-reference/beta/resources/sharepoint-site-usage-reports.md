@@ -1,11 +1,14 @@
 ---
 title: "SharePoint site usage reports"
 description: "You can get a high level view of the value you are getting from SharePoint in terms of the total number of files that users store in SharePoint sites, how many files are actively being used, and the storage consumed across all these sites. Then, you can drill into the SharePoint site usage report to understand the trends and per site level details for all sites."
+localization_priority: Normal
+ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # SharePoint site usage reports
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can get a high level view of the value you are getting from SharePoint in terms of the total number of files that users store in SharePoint sites, how many files are actively being used, and the storage consumed across all these sites. Then, you can drill into the SharePoint site usage report to understand the trends and per site level details for all sites.
 

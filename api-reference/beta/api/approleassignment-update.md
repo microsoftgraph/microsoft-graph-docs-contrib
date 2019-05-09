@@ -1,11 +1,12 @@
 ---
 title: "Update approleassignment"
 description: "Update the properties of approleassignment object."
+localization_priority: Normal
 ---
 
 # Update approleassignment
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of approleassignment object.
 ## Permissions
@@ -70,7 +71,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment"
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -86,13 +87,29 @@ Content-length: 253
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_approleassignment-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_approleassignment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update approleassignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

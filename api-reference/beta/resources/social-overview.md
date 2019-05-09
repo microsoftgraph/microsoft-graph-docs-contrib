@@ -1,11 +1,14 @@
 ---
 title: "Use the Microsoft Graph API to integrate social intelligence in an app"
 description: "Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data."
+localization_priority: Priority
+author: "simonhult"
+ms.prod: "insights"
 ---
 
 # Use the Microsoft Graph API to integrate social intelligence in an app
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data.
 

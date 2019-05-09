@@ -2,11 +2,13 @@
 title: "eventMessageRequest resource type"
 description: "A message that represents a meeting request."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # eventMessageRequest resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message that represents a meeting request.
 
@@ -16,6 +18,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
     "attachments",
     "event",
@@ -93,7 +96,7 @@ Here is a JSON representation of the resource
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |location|[Location](location.md)|The location of the requested meeting.|
-|meetingMessageType|String| The type of event message: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
+|meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|The previous end time of the requested meeting.|
 |previousLocation|[Location](location.md)|The previous location of the requested meeting.|
@@ -138,10 +141,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "eventMessageRequest resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,11 +1,14 @@
 ---
 title: "List my accessReview decisions"
 description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object for the calling user as reviewer."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List my accessReview decisions
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object for the calling user as reviewer.
 ## Permissions
@@ -13,9 +16,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  The signed in user must also be permitted to read this particular access review. |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
+
+The signed in user must also be permitted to read this particular access review.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +46,7 @@ If successful, this method returns a `200, OK` response code and an array of [ac
   "name": "get_accessReview_decisions"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')/myDecisions
+GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/myDecisions
 ```
 
 ##### Response
@@ -68,6 +73,16 @@ Content-type: application/json
     ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_accessReview_decisions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## See also
 
@@ -77,10 +92,16 @@ Content-type: application/json
 |[List accessReview decisions](accessreview-listdecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	Retrieve all the decisions of an accessReview.|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview decisions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listmydecisions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-listmydecisions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

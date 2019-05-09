@@ -3,10 +3,12 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: SitePage
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # sitePage resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This resource represents a page in the SitePages [list][].
 It contains the title, layout, and a collection of [webPart][]s.
@@ -38,7 +40,8 @@ Here is a JSON representation of a **sitePage** resource.
   "blockType": "resource",
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
-  "@odata.type": "microsoft.graph.sitePage"
+  "@odata.type": "microsoft.graph.sitePage",
+  "openType": true
 }-->
 
 ```json
@@ -47,19 +50,21 @@ Here is a JSON representation of a **sitePage** resource.
 
   /* page content */
   "title": "string",
-  "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
+  "pageLayoutType": "String",
+  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
 
-  /* inherited from baseItem */
-  "id": "string",
-  "name": "string",
+   /* inherited from baseItem */
+  "id": "string (identifier)",
   "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "createdDateTime": "String (timestamp)",
+  "description": "string",
   "eTag": "string",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
-  "lastModifiedDateTime": "datetime",
+  "lastModifiedDateTime": "String (timestamp)",
+  "name": "string",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference" },
   "webUrl": "url"
 }
@@ -120,7 +125,8 @@ The **sitePage** resource does not have relationships to other resources.
 [site]: site.md
 [webPart]: webpart.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -128,8 +134,10 @@ The **sitePage** resource does not have relationships to other resources.
   "tocPath": "Resources/Page",
   "tocBookmarks": {
     "Page": "#"
-  }
-} -->
+  },
+  "suppressions": []
+}
+-->
 
 <!--
 TODO:

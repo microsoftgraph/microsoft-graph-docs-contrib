@@ -1,13 +1,20 @@
 ---
 title: "Get signIn"
-description: "Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs."
+description: "Retrieve a specific Azure AD user sign-in event for your tenant."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get signIn
-Retrieves the Azure AD user sign-ins for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieve a specific Azure AD user sign-in event for your tenant. Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.
 
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -19,35 +26,48 @@ One of the following permissions is required to call this API. To learn more, in
 In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
+
 ## Optional query parameters
-This method supports the following OData Query Parameters to help customize the response. Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.
+
+This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query_parameters).
 
 ## Request headers
+
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
 ## Request body
+
 Do not supply a request body for this method.
+
 ## Response
+
 If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.
+
 ## Example
-##### Request
+
+### Request
+
 Here is an example of the request.
+
 <!-- {
-  "blockType": "reque|location/city| eq, startswith|
-st",
+  "blockType": "request",
   "name": "get_signin"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-##### Response
+
+### Response
+
 Here is an example of the response. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -58,6 +78,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 211
 ```
+
 ```json
 {
 	"@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
@@ -73,14 +94,14 @@ Content-length: 211
 		"status": {
 			"errorCode": 0,
 			"failureReason": null,
-			"additionalDetails": "SignIn Success & CA Sucess"
+			"additionalDetails": "SignIn Success & CA Success"
 		},
 		"clientAppUsed": null,
 		"deviceDetail": {
 			"deviceId": "34390ed6-52b3-4102-aeff-aad2292abac3",
 			"displayName": "DeviceName",
 			"operatingSystem": "Windows 10",
-			"browser": "Rich Client v1.0.2016.0",
+			"browser": "Rich Client v3.14.1592.7",
 			"isCompliant": true,
 			"isManaged": true,
 			"trustType": ""
@@ -114,6 +135,17 @@ Content-length: 211
 }
 
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_signin-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_signin-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -121,5 +153,9 @@ Content-length: 211
   "description": "Get signIn",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/signin-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

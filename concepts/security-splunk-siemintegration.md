@@ -1,7 +1,9 @@
 ---
 title: "Integrate Microsoft Graph Security API alerts with your SIEM using Azure Monitor"
 description: "The Microsoft Graph Security providers can be managed through a single REST endpoint. This endpoint can be configured to Azure Monitor which supports connectors to several SIEM products. The instructions in Steps 1 and 2 of this article refer to all Azure Monitor connectors that support consumption via event hubs. This article describes the end-to-end integration of the Splunk SIEM connector."
-author: "Preetikr"
+author: "preetikr"
+localization_priority: Priority
+ms.prod: "security"
 ---
 
 # Integrate Microsoft Graph Security API alerts with your SIEM using Azure Monitor
@@ -83,14 +85,14 @@ Security alerts are highly privileged data typically viewable only by security r
     }
     ```
 
-  Replace the values in the JSON file as follows:
+Replace the values in the JSON file as follows:
 
   * **SUBSCRIPTION_ID** is the Subscription ID of the Azure subscription hosting the resource group and event hub namespace where you will be sending security alerts from your organization.
   * **RESOURCE_GROUP** is the resource group containing the event hub namespace where you will be sending security alerts from your organization.
   * **EVENT_HUB_NAMESPACE** is the event hub namespace where you will be sending security alerts from your organization.
   * **“days”:** is the number of days you want to retain messages in your event hub.
   
-&nbsp;
+
 4. Save the file as JSON to the directory where you will invoke ARMClient.exe. For example, name the file **AzMonConfig.json.**
 
 5. Run the following command to sigh in to the ARMClient tool. You will need to be using Global Administrator account credentials.
@@ -105,6 +107,9 @@ Security alerts are highly privileged data typically viewable only by security r
     ARMClient.exe put https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview  @".\AzMonConfig.json"
     ```
 
+    > **Note:** The API version `2017-04-01-preview` is safe to use for production.
+
+
 7. To verify the settings were applied correctly, run this command and verify that the output matches your JSON file settings.
 
     ``` shell
@@ -112,6 +117,12 @@ Security alerts are highly privileged data typically viewable only by security r
     ```
 
 8. Exit the ARMClient tool. You have now completed the configuration of Azure Monitor to send security alerts from your tenant to event hub.
+
+>**Tip:** To disable alert flow from your tenant to the event hub, delete Azure Monitor settings by running the following `delete` command.
+
+    ``` shell
+    ARMClient.exe delete https://management.azure.com/providers/Microsoft.SecurityGraph/diagnosticSettings/securityApiAlerts?api-version=2017-04-01-preview
+    ```
 
 ## Step 3: Download and install the Azure Monitor Add-on for Splunk which will allow Splunk to consume security alerts
 

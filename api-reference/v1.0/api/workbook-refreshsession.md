@@ -2,6 +2,8 @@
 title: "Refresh Session"
 description: "Use this API to refresh an existing workbook session. "
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Refresh Session
@@ -67,10 +69,22 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/refresh_excel_session-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/refresh_excel_session-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/workbook-refreshsession.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/workbook-refreshsession.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: refresh_excel_session//api-reference/v1.0/api/workbook-refreshsession.md:
       Request includes a non-standard header: workbook-session-id"
   ]

@@ -1,11 +1,12 @@
 ---
 title: "licenseDetails resource type"
 description: "Contains information about a license assigned to a user."
+localization_priority: Normal
 ---
 
 # licenseDetails resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains information about a license assigned to a user.
 
@@ -51,10 +52,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "licenseDetails resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

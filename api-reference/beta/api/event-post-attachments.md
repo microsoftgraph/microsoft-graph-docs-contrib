@@ -2,16 +2,18 @@
 title: "Add attachment"
 description: "Use this API to add an attachment to an event. Since there"
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Add attachment
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add an [attachment](../resources/attachment.md) to an event. Since there
-is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment
-you can add to under 4MB.
+Use this API to add an [attachment](../resources/attachment.md) to an event. Since there is currently a limit of 4MB on the total size of each REST request, this limits the size of the attachment you can add to under 4MB.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -21,47 +23,27 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Calendars.ReadWrite |
 
 ## HTTP request
-Attachments for an [event](../resources/event.md) in the user's default [calendar](../resources/calendar.md).
 
-<!--
-Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).
--->
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /me/events/{id}/attachments
 POST /users/{id | userPrincipalName}/events/{id}/attachments
-
-POST /me/calendar/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendar/events/{id}/attachments
 ```
 
 <!--
 POST /groups/{id}/events/{id}/attachments
-POST /groups/{id}/calendar/events/{id}/attachments
 -->
 
-Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to the user's default [calendarGroup](../resources/calendargroup.md).
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/attachments
-
-POST /me/calendargroup/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/attachments
-```
-Attachments for an [event](../resources/event.md) in a [calendar](../resources/calendar.md) belonging to a user's [calendarGroup](../resources/calendargroup.md).
-<!-- { "blockType": "ignored" } -->
-```http
-POST /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
-```
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 | Content-Type | string  | Nature of the data in the body of an entity. Required. |
 
 ## Request body
+
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
 ## Response
@@ -70,33 +52,37 @@ If successful, this method returns `201 Created` response code and [attachment](
 
 ## Example (file attachment)
 
-##### Request
+### Request
+
 Here is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_from_event"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments 
+POST https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments
 Content-type: application/json
 Content-length: 151
 
 {
     "@odata.type": "#microsoft.graph.fileAttachment",
     "name": "menu.txt",
-    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="   
+    "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
-##### Response
+### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-Length: 735
@@ -115,10 +101,18 @@ Content-Length: 735
     "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_file_attachment_from_event-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Example (item attachment)
 
-##### Request
+### Request
 
 Here is an example which attaches an event with another event as an item attachment.
 
@@ -126,6 +120,7 @@ Here is an example which attaches an event with another event as an item attachm
   "blockType": "request",
   "name": "create_item_attachment_from_event"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
 Content-type: application/json
@@ -133,7 +128,7 @@ Content-length: 600
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "Holiday event", 
+  "name": "Holiday event",
   "item": {
         "@odata.type": "microsoft.graph.event",
         "subject": "Discuss gifts for children",
@@ -153,13 +148,15 @@ Content-length: 600
 }
 ```
 
-##### Response
+### Response
+
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
+
 ```http
 HTTP 201 Created
 Content-type: application/json
@@ -177,10 +174,19 @@ Content-length: 162
     "isInline":false
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_item_attachment_from_event-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Example (reference attachment)
 
-##### Request
+### Request
+
 Here is an example of a request that adds a reference attachment to an existing event.
 The attachment points to a folder on OneDrive.
 <!-- {
@@ -189,28 +195,30 @@ The attachment points to a folder on OneDrive.
   "@odata.type": "microsoft.graph.referenceAttachment"
 }-->
 
-```
+```http
 POST https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments
 Content-type: application/json
 Content-length: 319
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+    "@odata.type": "#microsoft.graph.referenceAttachment",
+    "name": "Personal pictures",
+    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
+    "providerType": "oneDriveConsumer",
+    "permission": "Edit",
+    "isFolder": "True"
+}
 ```
 
-##### Response
+### Response
+
 Here is an example of a full response.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
+
 ```http
 HTTP 201 Created
 
@@ -231,13 +239,29 @@ HTTP 201 Created
   "isFolder": true
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_reference_attachment_from_event-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Attachment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/event-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: create_file_attachment_from_event/contentBytes:\r\n      Expected type Binary but actual was String. Property: contentBytes, actual value: 'bWFjIGFuZCBjaGVlc2UgdG9kYXk='"
+  ]
+}
+-->

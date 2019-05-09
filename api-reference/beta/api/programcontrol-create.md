@@ -1,11 +1,12 @@
 ---
 title: "Create programControl"
 description: "In the Azure AD access reviews feature, create a new programControl object.  This links an access review to a program."
+localization_priority: Normal
 ---
 
 # Create programControl
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [programControl](../resources/programcontrol.md) object.  This links an access review to a program.
 
@@ -21,9 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `ProgramControl.ReadWrite.All`.  The signed in user must also be in a directory role which permits them to create a programControl. |
+|Delegated (work or school account)     | ProgramControl.ReadWrite.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            |  ProgramControl.ReadWrite.All  |
+
+The signed in user must also be in a directory role that permits them to create a **programControl**. 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -90,6 +93,16 @@ Content-type: application/json
   "createdDateTime": "2018-05-18T20:26:05.2976279Z"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_programControl_from_programControls-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_programControl_from_programControls-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## See also
 
@@ -98,10 +111,16 @@ Content-type: application/json
 |[List programControlTypes](../api/programcontroltype-list.md) | [programControlType](../resources/programcontroltype.md) collection| List program control types. |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create programControl",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

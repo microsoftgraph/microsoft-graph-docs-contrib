@@ -2,11 +2,13 @@
 title: "call resource type"
 description: "The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`."
 author: "VinodRavichandran"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # call resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **call** resource is created when there is an incoming call for the application or the application creates a new outgoing call via a `POST` on `app/calls`.
 
@@ -105,32 +107,33 @@ The following is a JSON representation of the resource.
     "terminationReason",
     "toneInfo"
   ],
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```json
 {
   "activeModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
+  "answeredBy": {"@odata.type": "microsoft.graph.participantInfo"},
+  "callRoutes": [{"@odata.type": "microsoft.graph.callRoute"}],
   "callbackUri": "String",
-  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
-  "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
-  "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
-  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "mediaConfig": {"@odata.type": "microsoft.graph.mediaConfig"},
+  "meetingCapability": {"@odata.type": "microsoft.graph.meetingCapability"},
+  "meetingInfo": {"@odata.type": "microsoft.graph.meetingInfo"},
   "myParticipantId": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 1024,
   "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding"],
-  "source": {"@odata.type": "#microsoft.graph.participantInfo"},
+  "source": {"@odata.type": "microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
-  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "microsoft.graph.participantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
-  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
+  "toneInfo": {"@odata.type": "microsoft.graph.toneInfo"}
 }
 ```
 
@@ -168,10 +171,13 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

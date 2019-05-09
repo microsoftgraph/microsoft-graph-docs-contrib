@@ -2,11 +2,13 @@
 title: "Create outlookTask"
 description: "Create an Outlook task in the specified task folder."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Create outlookTask
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an Outlook task in the specified task folder.
 
@@ -25,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskFolders/{id}/tasks
+POST /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -115,10 +119,13 @@ Content-length: 376
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create outlookTask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

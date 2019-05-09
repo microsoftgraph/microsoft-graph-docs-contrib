@@ -1,6 +1,9 @@
 ---
 title: "Create Channel"
 description: "Create a new channel in a Microsoft Team, as specified in the request body."
+localization_priority: Priority
+author: "nkramer"
+ms.prod: "microsoft-teams"
 ---
 
 # Create Channel
@@ -49,7 +52,7 @@ Here is an example of the request.
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
 
 {
@@ -75,6 +78,16 @@ Content-length: 201
   "description": "This channel is where we debate all future architecture plans"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_channel_from_group-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_channel_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -83,5 +96,9 @@ Content-length: 201
   "description": "Create Channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/channel-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/channel-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

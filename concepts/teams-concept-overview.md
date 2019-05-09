@@ -2,6 +2,8 @@
 title: "Microsoft Teams API overview"
 description: "Microsoft Teams is the ultimate hub for teamwork and intelligent communications. "
 author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Microsoft Teams API overview
@@ -9,6 +11,10 @@ author: "nkramer"
 [Microsoft Teams](https://products.office.com/microsoft-teams) is the ultimate hub for teamwork and intelligent communications. 
 Built on the strength and scale of [Office 365](https://products.office.com/) with over 120 million users, 
 Microsoft Teams delivers chat-based collaboration, meetings, calling, and enterprise voice features.
+
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/KCvAhQEJmyY]
+
 
 ## Why integrate with Microsoft Teams?
 
@@ -47,7 +53,7 @@ Let customers to create new [teams](/graph/api/resources/team?view=graph-rest-1.
 [Install](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) your 
 [Teams app](https://docs.microsoft.com/en-us/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
 [Pin your app to a tab](/graph/api/teamstab-add?view=graph-rest-1.0) in the new channel. 
-[Send messages](/graph/api/channel-post-chatthreads?view=graph-rest-beta) to the channel linking back to your website.
+[Send messages](/graph/api/channel-post-chatmessage?view=graph-rest-beta) to the channel linking back to your website.
 
 ### Create and manage multiple teams and channels
 
@@ -100,7 +106,7 @@ See the [Teams API in Microsoft Graph](/graph/api/resources/teams-api-overview?v
 
 ## Next steps
 
-- Watch the [overview video](http://aka.ms/teamsgraph/v1/video).
+- Watch the [overview video](https://aka.ms/teamsgraph/v1/video).
 - Learn how to [use the Microsoft Teams API](/graph/api/resources/teams-api-overview?view=graph-rest-1.0).
 - Drill down on the methods, properties, and relationships of the [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0), and [group](/graph/api/resources/group?view=graph-rest-1.0) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

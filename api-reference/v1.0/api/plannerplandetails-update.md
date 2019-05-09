@@ -1,6 +1,9 @@
 ---
 title: "Update plannerplandetails"
 description: "Update the properties of **plannerplandetails** object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Update plannerplandetails
@@ -92,6 +95,16 @@ Content-length: 373
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_plannerplandetails-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_plannerplandetails-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -100,5 +113,9 @@ Content-length: 373
   "description": "Update plannerplandetails",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannerplandetails-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannerplandetails-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

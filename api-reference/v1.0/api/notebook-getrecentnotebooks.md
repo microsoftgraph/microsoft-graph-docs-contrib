@@ -1,7 +1,9 @@
 ---
 title: "notebook: getRecentNotebooks"
 description: "Get a list of recentNotebook instances that have been accessed by the signed-in user."
-author: "Jewan-microsoft"
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # notebook: getRecentNotebooks
@@ -25,7 +27,7 @@ GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePer
 GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
 ```
 
-The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.
+The `{id | userPrincipalName}` for the user must match the user encoded in the authorization token used to make the request.
 
 ## Function parameters
 
@@ -90,3 +92,24 @@ Content-Length: 1110
   ]
 }
 ```
+#### SDK sample code
+
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/recent_notebooks-Cs-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/notebook-getrecentnotebooks.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/notebook-getrecentnotebooks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

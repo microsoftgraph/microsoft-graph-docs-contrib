@@ -1,6 +1,9 @@
 ---
 title: "Remove owner"
 description: "Use this API to remove an owner from an Office 365 group, a security group, or a mail-enabled security group through the owners navigation property."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # Remove owner
@@ -55,6 +58,16 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_owner_from_group-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_owner_from_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -63,5 +76,9 @@ HTTP/1.1 204 No Content
   "description": "Delete owner",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-delete-owners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

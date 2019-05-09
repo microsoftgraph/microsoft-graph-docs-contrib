@@ -2,6 +2,7 @@
 title: "Use query parameters to customize responses"
 description: "Microsoft Graph provides optional query parameters that you can use to specify and control the amount of data returned in a response. The following query parameters are supported."
 author: "piotrci"
+localization_priority: Priority
 ---
 
 # Use query parameters to customize responses
@@ -50,6 +51,14 @@ A properly encoded URL looks like this:
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
+```
+
+### Escaping single quotes
+
+For requests that use single quotes, if any parameter values also contain single quotes, those must be double escaped; otherwise, the request will fail due to invalid syntax. In the example, the string value `let''s meet for lunch?` has the single quote escaped.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet for lunch?'
 ```
 
 ## count parameter

@@ -1,12 +1,14 @@
 ---
 title: "Create sectionGroup"
 description: "Create a new section group in the specified notebook."
-author: "Jewan-microsoft"
+author: "jewan-microsoft"
+localization_priority: Normal
+ms.prod: "onenote"
 ---
 
 # Create sectionGroup
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [section group](../resources/sectiongroup.md) in the specified notebook.
 ## Permissions
@@ -63,7 +65,7 @@ Here is an example of the response. Note: The response object shown here is trun
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -89,13 +91,29 @@ Content-length: 305
   }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_sectiongroup_from_notebook-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_sectiongroup_from_notebook-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create SectionGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/notebook-post-sectiongroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/notebook-post-sectiongroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

@@ -1,6 +1,8 @@
 ---
 title: "Listing versions of a DriveItem"
 description: "OneDrive and SharePoint can be configured to retain the history for files."
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # Listing versions of a DriveItem
@@ -99,6 +101,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-previous-versions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Remarks
 
@@ -112,5 +124,9 @@ When your app retrieves the list of available versions for a file, a [DriveItemV
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-versions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

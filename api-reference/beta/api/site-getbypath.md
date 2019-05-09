@@ -1,12 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get SharePoint site by path
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get a site resource by path
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
@@ -68,10 +70,13 @@ HTTP/1.1 200 OK
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Get by path"
-} -->
+  "tocPath": "Sites/Get by path",
+  "suppressions": []
+}
+-->

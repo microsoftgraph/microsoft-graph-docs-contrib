@@ -1,6 +1,7 @@
 ---
 title: "Add Named Item FormulaLocal"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
+localization_priority: Normal
 ---
 
 # Add Named Item FormulaLocal
@@ -39,7 +40,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [NamedItem](../resources/nameditem.md) object in the response body.
+If successful, this method returns `200 OK` response code and [NamedItem](../resources/workbooknameditem.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -68,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -87,6 +88,16 @@ Content-length: 109
     "visible": true
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/NamedItemcollection_add-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/NamedItemcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -96,5 +107,9 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/nameditem-addformulalocal.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/nameditem-addformulalocal.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

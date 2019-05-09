@@ -3,10 +3,11 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActionSet
+localization_priority: Normal
 ---
 # ItemActionSet resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.
 
@@ -71,10 +72,13 @@ New actions may get logged in the future, so make sure your app is tolerant of h
 
 Item activity records are currently only available on SharePoint and OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActionSet object provides information about the actions that took place as part of an activity on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActionSet"
-} -->
+  "tocPath": "Resources/ItemActionSet",
+  "suppressions": []
+}
+-->

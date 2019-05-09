@@ -1,12 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get a file or folder
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get a DriveItem resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.
 
@@ -100,6 +102,16 @@ Content-type: application/json
   "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-item-metadata-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-item-metadata-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Remarks
 
@@ -111,10 +123,16 @@ how errors are returned.
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item"
-} -->
+  "tocPath": "Items/Get item",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

@@ -1,6 +1,9 @@
 ---
 title: "reportRoot: getYammerDeviceUsageDistributionUserCounts"
 description: "Get the number of users by device type."
+localization_priority: Normal
+ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # reportRoot: getYammerDeviceUsageDistributionUserCounts
@@ -90,6 +93,16 @@ HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusagedistributionusercounts-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/reportroot_getyammerdeviceusagedistributionusercounts-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 Follow the 302 redirection and the CSV file that downloads will have the following schema.
 
@@ -101,3 +114,16 @@ Content-Type: application/octet-stream
 
 Report Refresh Date,Web,Windows Phone,Android Phone,iPhone,iPad,Other,Report Period
 ```
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/reportroot-getyammerdeviceusagedistributionusercounts.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/reportroot-getyammerdeviceusagedistributionusercounts.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

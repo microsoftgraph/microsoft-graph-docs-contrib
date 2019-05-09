@@ -1,12 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Create a SharePoint List
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Create a new list
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [list][] in a [site][].
 
@@ -93,6 +95,16 @@ Content-type: application/json
   }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **Note:** The response object is truncated for clarity.
 Default properties will be returned from the actual call.
@@ -100,10 +112,16 @@ Default properties will be returned from the actual call.
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
-} -->
+  "tocPath": "List/Create",
+  "suppressions": [
+    "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

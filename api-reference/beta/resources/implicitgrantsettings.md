@@ -1,11 +1,12 @@
 ---
 title: "implicitGrantSettings resource type"
 description: "Specifies whether this web application can request tokens using the OAuth 2.0 implicit flow. Separate properties are available to request ID and access tokens as part of the implicit flow. To enable implicit flow, at least one of the following properties must be set to true."
+localization_priority: Normal
 ---
 
 # implicitGrantSettings resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Specifies whether this web application can request tokens using the OAuth 2.0 implicit flow. Separate properties are available to request ID and access tokens as part of the implicit flow. To enable implicit flow, at least one of the following properties must be set to true.
 
@@ -18,7 +19,11 @@ Specifies whether this web application can request tokens using the OAuth 2.0 im
 
 ## JSON representation
 Here is a JSON representation of the resource.
-
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.implicitGrantSettings"
+}-->
 ```json
 {
   "enableIdTokenIssuance": "Boolean",

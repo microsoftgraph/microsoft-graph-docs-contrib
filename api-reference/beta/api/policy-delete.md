@@ -1,11 +1,12 @@
 ---
 title: "Delete Policy"
 description: "Delete a policy."
+localization_priority: Normal
 ---
 
 # Delete Policy
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [policy](../resources/policy.md).
 

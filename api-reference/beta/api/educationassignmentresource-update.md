@@ -2,11 +2,13 @@
 title: "Update educationAssignmentResource"
 description: "Update the properties of resource associated with an assignment. Only teachers in a class can change assignment resource objects.  "
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # Update educationAssignmentResource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of resource associated with an assignment. Only teachers in a class can change assignment resource objects.  
 
@@ -103,10 +105,13 @@ Content-length: 832
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignmentresource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

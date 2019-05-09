@@ -1,6 +1,8 @@
 ---
 title: "SharePoint sites and content API overview"
 description: "SharePoint is your mobile, intelligent intranet. With SharePoint, users can share and manage content, knowledge, and applications to empower teamwork, find information, and collaborate across an organization. You can use the SharePoint REST API in Microsoft Graph to integrate your solutions with SharePoint sites and content."
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 
 # SharePoint sites and content API overview
@@ -51,7 +53,7 @@ Looking for the API reference for this service?
 
 ## Next steps
 
-Get started with SharePoint in Microsoft Graph by learning more about [working with sites][SharePoint].
+Get started with SharePoint in Microsoft Graph by learning more about [working with sites](/graph/api/resources/sharepoint?view=graph-rest-1.0).
 
 [list]: /graph/api/resources/list?view=graph-rest-1.0
 [columns]: /graph/api/resources/columndefinition?view=graph-rest-1.0

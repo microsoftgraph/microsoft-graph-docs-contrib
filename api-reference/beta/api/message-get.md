@@ -2,15 +2,19 @@
 title: "Get message"
 description: "Retrieve the properties and relationships of the message object."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # Get message
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of the [message](../resources/message.md) object.
 
 For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.
+
+You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).
 
 There are two scenarios where an app can get a message in another user's mail folder:
 
@@ -25,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.Read    |
-|Delegated (personal Microsoft account) | Mail.Read    |
+|Delegated (work or school account) | Mail.ReadBasic, Mail.Read    |
+|Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read    |
 |Application | Mail.Read |
 
 ## HTTP request
@@ -40,6 +44,15 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
+To get the MIME content of the specified message: 
+<!-- { "blockType": "ignored" } --> 
+```http 
+GET /me/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/messages/{id}/$value 
+GET /me/mailFolders/{id}/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
+```
+
 To get a message and expand all mentions in the message:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -50,9 +63,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
-You can use the `$expand` query parameter on the **mentions** navigation property to get a message with the details 
+Use the `$value` parameter to get the MIME content of a message.
+
+Use the `$expand` query parameter on the **mentions** navigation property to get a message with the details 
 of each [mention](../resources/mention.md) in the message expanded.
 
 
@@ -78,7 +93,7 @@ The first example gets the specified message. It does not specify any header to 
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
 ##### Response 1
 Here is an example of the response. The **body** and **uniqueBody** properties are returned in the default HTML format.
@@ -109,6 +124,16 @@ Content-length: 523
     }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_message-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_message-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### Request 2
 In the next example, the signed-in user is Dana Swope. The example shows getting the details of all the mentions in the specified message in Dana's mailbox.
@@ -118,7 +143,7 @@ In the next example, the signed-in user is Dana Swope. The example shows getting
   "name": "get_mentions_in_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/('AQMkADJmMTUAAAgVZAAAA')?$expand=mentions
+GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=mentions
 ```
 ##### Response 2
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -217,6 +242,16 @@ Content-length: 2248
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_mentions_in_message-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_mentions_in_message-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### Request 3
@@ -230,7 +265,7 @@ The third example shows how to use a `Prefer: outlook.body-content-type="text"` 
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')?$select=subject,body,bodyPreview,uniqueBody
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
 
@@ -265,6 +300,16 @@ Content-length: 1550
     }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_message_in_text-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_message_in_text-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### Request 4
 
@@ -277,7 +322,7 @@ The fourth example shows how to get the Internet message headers of a specific m
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=internetMessageHeaders
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetMessageHeaders
 ```
 
 ##### Response 4
@@ -322,6 +367,16 @@ Content-type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_message_internet_headers-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_message_internet_headers-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## See also
 
@@ -331,10 +386,23 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get message",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/message-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: get_message_internet_headers/internetMessageHeaders/member/value:\r\n       Expected type String but actual was Binary. Property: value, actual value: 'binary'"
+  ]
+}
+-->

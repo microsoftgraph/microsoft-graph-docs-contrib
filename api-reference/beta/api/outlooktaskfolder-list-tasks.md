@@ -2,21 +2,23 @@
 title: "List tasks"
 description: "Get all the Outlook tasks in the specified folder."
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # List tasks
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the Outlook tasks in the specified folder.
 
-By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns 
-date-related properties in UTC.  You can use a `Prefer: outlook.timezone` request header to have all the date-related properties in the response represented in a time zone 
-different than UTC. See an [example](outlooktask-get.md#example-2) for getting a single task. You can apply the header similarly to get multiple tasks.
+By default, this operation (and the POST, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns
+date-related properties in UTC.  You can use a `Prefer: outlook.timezone` request header to have all the date-related properties in the response represented in a time zone
+different than UTC. See an [example](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) for getting a single task. You can apply the header similarly to get multiple tasks.
 
-If there is more than one task group, and you want to get all the tasks in a specific task group, first 
-[get all the task folders in that task group](outlooktaskgroup-list-taskfolders.md), 
-and then get the tasks in each of these task folders. 
+If there is more than one task group, and you want to get all the tasks in a specific task group, first
+[get all the task folders in that task group](outlooktaskgroup-list-taskfolders.md),
+and then get the tasks in each of these task folders.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,6 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders/{id}/tasks
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -138,13 +142,29 @@ Content-length: 465
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_tasks-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_tasks-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List tasks",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlooktaskfolder-list-tasks.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/outlooktaskfolder-list-tasks.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

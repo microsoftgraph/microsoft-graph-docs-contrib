@@ -1,12 +1,13 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get permissions
+localization_priority: Normal
 ---
 # Get sharing permission for a file or folder
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return the effective sharing permission for a particular permission resource.
 
@@ -79,6 +80,16 @@ Content-type: application/json
   "roles": [ "write" ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-item-permission-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-item-permission-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Remarks
 
@@ -91,10 +102,16 @@ Permissions with a [**invitation**](../resources/sharinginvitation.md) facet rep
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get a DriveItem's sharing permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Get permission"
-}-->
+  "tocPath": "OneDrive/Item/Get permission",
+  "suppressions": [
+    "Error: /api-reference/beta/api/permission-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/permission-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

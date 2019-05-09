@@ -1,13 +1,16 @@
 ---
 title: "Create bookingBusiness"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Create a new Microsoft Bookings business in a tenant."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "bookings"
 ---
 
 # Create bookingBusiness
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
- 
-Create a new Microsoft Bookings business in a tenant. 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a new Microsoft Bookings business in a tenant.
 
 This is the first step in setting up a Bookings business where you must specify the business display name. You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.
 ## Permissions
@@ -17,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Manage.All  |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported. | 
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -165,13 +168,29 @@ Content-type: application/json
     }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_bookingbusiness_from_bookingbusinesses-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_bookingbusiness_from_bookingbusinesses-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create bookingBusiness",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingbusiness-post-bookingbusinesses.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingbusiness-post-bookingbusinesses.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

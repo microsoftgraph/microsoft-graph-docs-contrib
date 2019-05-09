@@ -2,11 +2,13 @@
 title: "List rangeView rows"
 description: "Retrieve a list of range view objects."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # List rangeView rows
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of range view objects.
 

@@ -2,11 +2,13 @@
 title: "Add application password"
 description: "Adds a strong password to an application."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Add application password
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adds a strong password to an application.
 

@@ -2,6 +2,8 @@
 title: "Create thread"
 description: "Create a new thread in the specified conversation. "
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # Create thread
@@ -20,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -79,6 +81,16 @@ Content-length: 346
   "id": "thread-id-value"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_conversationthread_from_conversation-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -87,5 +99,9 @@ Content-length: 346
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversation-post-threads.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

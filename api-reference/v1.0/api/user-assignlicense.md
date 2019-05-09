@@ -2,6 +2,8 @@
 title: "assignLicense"
 description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # assignLicense
@@ -98,6 +100,16 @@ Content-length: 491
   "companyName": "companyName-value"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_assignlicense-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_assignlicense-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -106,5 +118,9 @@ Content-length: 491
   "description": "user: assignLicense",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-assignlicense.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-assignlicense.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

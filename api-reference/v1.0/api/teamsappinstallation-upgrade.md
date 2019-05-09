@@ -2,6 +2,8 @@
 title: "Upgrade an app in a team"
 description: "Upgrades an app installation in a team"
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # Upgrade an app in a team
@@ -19,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.ReadWrite.All    |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

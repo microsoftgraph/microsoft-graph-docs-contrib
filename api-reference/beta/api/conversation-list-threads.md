@@ -2,11 +2,13 @@
 title: "List threads"
 description: "Get all the threads in a group conversation."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # List threads
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get all the threads in a group conversation.
 Note: You can also [get all the threads of a group](group-list-threads.md). 
@@ -18,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All, Group.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All, Group.Read.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -90,13 +92,29 @@ Content-length: 536
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_threads-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_threads-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List threads",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/conversation-list-threads.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/conversation-list-threads.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

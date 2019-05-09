@@ -1,11 +1,13 @@
 ---
 title: "driveItem: preview"
 description: "This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview."
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # driveItem: preview
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.
 

@@ -3,10 +3,12 @@ author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
 title: Delete a page from a SharePoint site
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Delete page from the site pages list of a site
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Removes a [sitePage][] from the site pages [list][] in a [site][].
 
@@ -66,10 +68,13 @@ DELETE /sites/{site-id}/pages/{page-id}
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete a page in the SitePages list in a site.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Delete"
-} -->
+  "tocPath": "Pages/Delete",
+  "suppressions": []
+}
+-->

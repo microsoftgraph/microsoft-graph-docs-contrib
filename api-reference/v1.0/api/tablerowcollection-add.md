@@ -1,6 +1,9 @@
 ---
 title: "TableRowCollection: add"
 description: "Adds rows to the end of the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. "
+localization_priority: Normal
+author: "lumine2008"
+ms.prod: "excel"
 ---
 
 # TableRowCollection: add
@@ -85,6 +88,14 @@ Content-length: 45
   "values": "values-value"
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tablerowcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -94,6 +105,7 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/tablerowcollection-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Warning: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:
       Inconsistent types between parameter (Collection) and table (None)",
     "Error: /api-reference/v1.0/api/tablerowcollection-add.md/tablerowcollection_add/values:

@@ -2,11 +2,13 @@
 title: "educationSynchronizationCustomization resource type"
 description: "Provides settings for customizing the school data profile synchronization of the resource entities. The customization can be applied to all the entities being synchronized. "
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationSynchronizationCustomization resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides settings for customizing the school data profile synchronization of the resource entities. The customization can be applied to all the entities being synchronized. 
 
@@ -28,7 +30,7 @@ Provides settings for customizing the school data profile synchronization of the
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationCustomization"
+  "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
 }-->
 
 ```json

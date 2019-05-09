@@ -1,11 +1,12 @@
 ---
 title: "Get NamedItem"
 description: "Retrieve the properties and relationships of nameditem object."
+localization_priority: Normal
 ---
 
 # Get NamedItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of nameditem object.
 ## Permissions
@@ -20,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)
+GET /workbook/names/{name}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -36,7 +37,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [NamedItem](../resources/nameditem.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [workbookNamedItem](../resources/workbooknameditem.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -45,14 +46,14 @@ Here is an example of the request.
   "name": "get_nameditem"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -67,13 +68,29 @@ Content-length: 87
   "visible": true
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_nameditem-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_nameditem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get NamedItem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/nameditem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/nameditem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

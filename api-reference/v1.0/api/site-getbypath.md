@@ -1,8 +1,10 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get SharePoint site by path
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get a site resource by path
 

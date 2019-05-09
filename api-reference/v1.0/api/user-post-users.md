@@ -2,6 +2,8 @@
 title: "Create User"
 description: "Use this API to create a new User."
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create User
@@ -77,7 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
   "@odata.type": "microsoft.graph.user"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -95,6 +97,16 @@ Content-type: application/json
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -103,5 +115,9 @@ Content-type: application/json
   "description": "Create User",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-post-users.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-post-users.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

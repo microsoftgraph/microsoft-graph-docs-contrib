@@ -2,15 +2,18 @@
 title: "Update androidForWorkScepCertificateProfile"
 description: "Update the properties of a androidForWorkScepCertificateProfile object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Update androidForWorkScepCertificateProfile
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [androidForWorkScepCertificateProfile](../resources/intune-deviceconfig-androidforworkscepcertificateprofile.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -57,6 +60,7 @@ The following table shows the properties that are required when you create the [
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Inherited from [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md). Possible values are: `days`, `months`, `years`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements. Inherited from [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Inherited from [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md). Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |scepServerUrls|String collection|SCEP Server Url(s)|
 |subjectNameFormatString|String|Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
 |keyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
@@ -64,8 +68,7 @@ The following table shows the properties that are required when you create the [
 |hashAlgorithm|[hashAlgorithms](../resources/intune-deviceconfig-hashalgorithms.md)|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 |certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
-|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alterantive Name Settings. This collection can contain a maximum of 500 elements.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
 
 
 
@@ -73,15 +76,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [androidForWorkScepCertificateProfile](../resources/intune-deviceconfig-androidforworkscepcertificateprofile.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1194
+Content-length: 1205
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.androidForWorkScepCertificateProfile",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -100,6 +104,7 @@ Content-length: 1194
       "objectIdentifier": "Object Identifier value"
     }
   ],
+  "subjectAlternativeNameType": "emailAddress",
   "scepServerUrls": [
     "Scep Server Urls value"
   ],
@@ -115,8 +120,7 @@ Content-length: 1194
       "sanType": "emailAddress",
       "name": "Name value"
     }
-  ],
-  "subjectAlternativeNameType": "emailAddress"
+  ]
 }
 ```
 
@@ -150,6 +154,7 @@ Content-Length: 1377
       "objectIdentifier": "Object Identifier value"
     }
   ],
+  "subjectAlternativeNameType": "emailAddress",
   "scepServerUrls": [
     "Scep Server Urls value"
   ],
@@ -165,8 +170,7 @@ Content-Length: 1377
       "sanType": "emailAddress",
       "name": "Name value"
     }
-  ],
-  "subjectAlternativeNameType": "emailAddress"
+  ]
 }
 ```
 

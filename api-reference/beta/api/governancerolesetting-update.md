@@ -1,11 +1,12 @@
 ---
 title: "Update governanceRoleSetting"
 description: "Update the properties of governanceRoleSetting."
+localization_priority: Normal
 ---
 
 # Update governanceRoleSetting
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).
 
@@ -37,10 +38,10 @@ In the request body, supply the values for [governanceRuleSettings](../resources
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|The rule settings that are evaluated when an administrator tries to add an eligible role assignment.|
-|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|The rule settings that are evaluated when an administrator tries to add a direct member role assignment.|
-|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|The rule settings that are evaluated when a user tries to add an eligible role assignment. This is not supported for `pimforazurerbac` scenario for now, and may be available in the future scenarios.|
-|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|The rule settings that are evaluated when a user tries to activate his role assignment.|
+|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when an administrator tries to add an eligible role assignment.|
+|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when an administrator tries to add a direct member role assignment.|
+|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when a user tries to add an eligible role assignment. This is not supported for `pimforazurerbac` scenario for now, and may be available in the future scenarios.|
+|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when a user tries to activate his role assignment.|
 
 ## Response
 If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body. 
@@ -66,7 +67,12 @@ Content-type: application/json
 Content-length: 350
 
 {
-  "adminEligibleSettings":[{"ruleIdentifier":"ExpirationRule","setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"}]
+   "adminEligibleSettings":[
+      {
+         "ruleIdentifier":"ExpirationRule",
+         "setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"
+      }
+   ]
 }
 ```
 ##### Response
@@ -77,13 +83,29 @@ Content-length: 350
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_governancerolesetting-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_governancerolesetting-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update governanceRoleSetting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

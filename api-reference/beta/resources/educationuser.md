@@ -2,11 +2,13 @@
 title: "educationUser resource type"
 description: "A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationUser resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A user in the system. This is an education-specific variant of the user with the same `id` that Microsoft Graph will return from the non-education-specific `/users` endpoint.
 This object provides a targeted subset of properties from the core [user](user.md) object and adds a set of education-specific properties such as `primaryRole`, student, and teacher data.
@@ -42,11 +44,12 @@ This object provides a targeted subset of properties from the core [user](user.m
 |middleName| String | The middle name of user.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two can be specified together; for example: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[PasswordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
+|passwordProfile|[passwordProfile](passwordprofile.md)|Specifies the password profile for the user. The profile contains the user’s password. This property is required when a user is created. The password in the profile must satisfy minimum requirements as specified by the **passwordPolicies** property. By default, a strong password is required.|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example, "en-US".|
 |primaryRole|string| Default role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. Supports $filter.|
-|provisionedPlans|[ProvisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
+|provisionedPlans|[provisionedPlan](provisionedplan.md) collection|The plans that are provisioned for the user. Read-only. Not nullable. |
 |residenceAddress|[physicalAddress](physicaladdress.md)| Address where user lives.|
+|relatedContacts|[relatedContact](relatedcontact.md) collection|Set of contacts related to the user.  This optional property must be specified in a $select clause and can only be retrieved for an individual user.|
 |student|[educationStudent](educationstudent.md)| If the primary role is student, this block will contain student specific data.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
 |teacher|[educationTeacher](educationteacher.md)| If the primary role is teacher, this block will conatin teacher specific data.|
@@ -59,7 +62,7 @@ This object provides a targeted subset of properties from the core [user](user.m
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Classes to which the user belongs. Nullable.|
 |schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
-|assignments| [educationAssignment](educationassignment.md)| List of assignments for hte user. Nullable.|
+|assignments| [educationAssignment](educationassignment.md)| List of assignments for the user. Nullable.|
 
 ## JSON representation
 
@@ -67,6 +70,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -88,17 +92,34 @@ The following is a JSON representation of the resource.
   "primaryRole": "string",
   "residenceAddress": {"@odata.type": "microsoft.graph.physicalAddress"},
   "student": {"@odata.type": "microsoft.graph.educationStudent"},
-  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"}
+  "teacher": {"@odata.type": "microsoft.graph.educationTeacher"},
+  "accountEnabled": true,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
+  "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
+  "businessPhones": ["string"],
+  "department": "string",
+  "mailNickname": "string",
+  "passwordPolicies": "string",
+  "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
+  "preferredLanguage": "string",
+  "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
+  "relatedContacts": [{"@odata.type": "microsoft.graph.relatedContact"}],
+  "usageLocation": "string",
+  "userPrincipalName": "string",
+  "userType": "string"
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationUser resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

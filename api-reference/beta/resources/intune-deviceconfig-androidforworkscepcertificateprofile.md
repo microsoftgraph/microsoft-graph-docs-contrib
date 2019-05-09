@@ -2,15 +2,18 @@
 title: "androidForWorkScepCertificateProfile resource type"
 description: "Android For Work SCEP certificate profile"
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # androidForWorkScepCertificateProfile resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Android For Work SCEP certificate profile
+
 
 Inherits from [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)
 
@@ -39,6 +42,7 @@ Inherits from [androidForWorkCertificateProfileBase](../resources/intune-devicec
 |certificateValidityPeriodValue|Int32|Value for the Certificate Validity Period. Inherited from [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Scale for the Certificate Validity Period. Inherited from [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md). Possible values are: `days`, `months`, `years`.|
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements. Inherited from [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md)|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Inherited from [androidForWorkCertificateProfileBase](../resources/intune-deviceconfig-androidforworkcertificateprofilebase.md). Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |scepServerUrls|String collection|SCEP Server Url(s)|
 |subjectNameFormatString|String|Custom format to use with SubjectNameFormat = Custom. Example: CN={{EmailAddress}},E={{EmailAddress}},OU=Enterprise Users,O=Contoso Corporation,L=Redmond,ST=WA,C=US|
 |keyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|SCEP Key Usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
@@ -46,8 +50,7 @@ Inherits from [androidForWorkCertificateProfileBase](../resources/intune-devicec
 |hashAlgorithm|[hashAlgorithms](../resources/intune-deviceconfig-hashalgorithms.md)|SCEP Hash Algorithm. Possible values are: `sha1`, `sha2`.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 |certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
-|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alterantive Name Settings. This collection can contain a maximum of 500 elements.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Certificate Subject Alternative Name Type. Possible values are: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -94,6 +97,7 @@ Here is a JSON representation of the resource.
       "objectIdentifier": "String"
     }
   ],
+  "subjectAlternativeNameType": "String",
   "scepServerUrls": [
     "String"
   ],
@@ -109,8 +113,7 @@ Here is a JSON representation of the resource.
       "sanType": "String",
       "name": "String"
     }
-  ],
-  "subjectAlternativeNameType": "String"
+  ]
 }
 ```
 

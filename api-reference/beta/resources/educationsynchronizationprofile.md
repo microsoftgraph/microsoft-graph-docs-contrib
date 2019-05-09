@@ -2,11 +2,13 @@
 title: "educationSynchronizationProfile resource type"
 description: "Represents a set of configurations used to synchronize education entities and roster information from a source directory to Azure Active Directory (Azure AD). This resource provides a programmatic representation used in School Data Sync."
 author: "mmast-msft"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationSynchronizationProfile resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a set of configurations used to synchronize education entities and roster information from a source directory to Azure Active Directory (Azure AD). This resource provides a programmatic representation used in [School Data Sync](https://sds.microsoft.com).
 
@@ -32,9 +34,9 @@ Represents a set of configurations used to synchronize education entities and ro
 |:-|:-|:-|
 | **displayName** | string |  Name of the configuration profile for syncing identities.         |
 | **dataProvider** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  The data provider used for the profile.         |
-| **identitysynchronizationconfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Identity [creation](educationidentitycreationconfiguration.md) or [matching](educationidentitymatchingconfiguration.md) configuration .        |
+| **identitySynchronizationConfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Identity [creation](educationidentitycreationconfiguration.md) or [matching](educationidentitymatchingconfiguration.md) configuration .        |
 | **licensesToAssign** | [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md) collection|  License setup configuration.        |
-| **state** | string |  The state of the profile. Possible values are: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
+| **state** | educationSynchronizationProfileState |  The state of the profile. Possible values are: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
 
 ## Relationships
 
@@ -48,20 +50,23 @@ The following is a JSON representation of the **educationSynchronizationProfile*
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile"
 }-->
 
 ```json
 {
+    "id": "String",
     "displayName": "String",
     "state": { "@odata.type": "microsoft.graph.educationSynchronizationProfileState" },
     "profileStatus": {"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"},
     "errors": [{"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus" }],
-    "dataProvider": { "@odata.type": "#microsoft.graph.educationcsvdataprovider" },
-    "identitySynchronizationConfiguration": { "@odata.type": "#microsoft.graph.educationIdentitySynchronizationConfiguration" },
+    "dataProvider": { "@odata.type": "microsoft.graph.educationCsvDataProvider" },
+    "identitySynchronizationConfiguration": { "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration" },
     "licensesToAssign": [{"@odata.type":"microsoft.graph.educationSynchronizationLicenseAssignment"}],
     "handleSpecialCharacterConstraint": "Boolean"
 }

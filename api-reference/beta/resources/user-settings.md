@@ -2,11 +2,13 @@
 title: "settings resource type"
 description: "The current user settings. "
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # settings resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The current user settings. 
 To learn how to get or update user settings, see [Get settings](../api/user-get-settings.md) and [Update settings](../api/user-update-settings.md).
@@ -32,7 +34,11 @@ This resource supports:
 ## JSON representation
 
 Here is a JSON representation of the resource.
-
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.userSettings"
+}-->
 ```json
 {
   "contributionToContentDiscoveryDisabled": false,

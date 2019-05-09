@@ -1,11 +1,14 @@
 ---
 title: "Unarchive team"
 description: "Restore an archived team. This restores users' ability to send messages and edit the team, abiding by tenant and team settings. Teams are archived using the archive API."
+localization_priority: Normal
+author: "nkramer"
+ms.prod: "microsoft-teams"
 ---
 
 # Unarchive team
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restore an archived [team](../resources/team.md). This restores users' ability to send messages and edit the team, abiding by tenant and team settings. Teams are archived using the [archive](team-archive.md) API.
 
@@ -55,17 +58,20 @@ POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 The following is an example of a response.
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams{id}/operations({opId})
+Location: /teams({id})/operations({opId})
 Content-Type: text/plain
 Content-Length: 0
 ```
 
 <!-- uuid: 9a9bb83f-6f35-4426-bb04-73ca43ad6cc8
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Unarchive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

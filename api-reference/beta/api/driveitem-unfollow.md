@@ -2,10 +2,12 @@
 author: chackman
 ms.author: chackman
 title: Unfollow drive item
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Unfollow drive item
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Unfollow a [driveItem](../resources/driveitem.md).
 
@@ -36,16 +38,11 @@ No request body is required.
 
 ## Response
 
-If successful, the API call returns a `204 No Content`.
-
-<!-- { "blockType": "response" } -->
-
-```http
-HTTP/1.1 204 No Content
-```
+If successful, the API call returns a `204 No Content`. It does not return anything in the response body.
 
 ## Example
-
+### Request
+Here is an example of the request.
 This example unfollows an item identified by `{item-id}`.
 
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
@@ -53,12 +50,34 @@ This example unfollows an item identified by `{item-id}`.
 ```http
 DELETE /me/drive/following/{item-id}
 ```
+### Response
+<!-- { 
+    "blockType": "response", 
+    "truncated": true 
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/unfollow-item-Cs-snippets.md)]
 
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/unfollow-item-Javascript-snippets.md)]
 
-<!-- {
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+<!--
+{
   "type": "#page.annotation",
   "description": "Unfollow an item that the user is following.",
   "keywords": "unfollow item",
   "section": "documentation",
-  "tocPath": "Items/Unfollow"
-} -->
+  "tocPath": "Items/Unfollow",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-unfollow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-unfollow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

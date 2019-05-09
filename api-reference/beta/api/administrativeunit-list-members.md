@@ -2,11 +2,13 @@
 title: "List members"
 description: "Use this API to get the members list (user and group) in an administrative unit."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List members
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to get the members list (user and group) in an administrative unit.
 

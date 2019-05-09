@@ -2,11 +2,13 @@
 title: "Range: LastColumn"
 description: "."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Range: LastColumn
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets the last column within the range. For example, the last column of "B2:D5" is "D2:D5".
 ## Permissions
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/LastColumn
+GET /workbook/names/{name}/range/LastColumn
 GET /workbook/worksheets/{id|name}/range(address='<address>')/LastColumn
 GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 
@@ -36,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/LastColumn
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -47,7 +49,7 @@ Here is an example of the request.
   "name": "range_lastcolumn"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/LastColumn
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/LastColumn
 ```
 
 ##### Response
@@ -55,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -71,13 +73,29 @@ Content-length: 169
   "valueTypes": "valueTypes-value"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/range_lastcolumn-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/range_lastcolumn-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Range: LastColumn",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/range-lastcolumn.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/range-lastcolumn.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

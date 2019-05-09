@@ -2,11 +2,13 @@
 title: "Update settings"
 description: "Update the properties of the settings object. "
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update settings
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of the [settings](../resources/user-settings.md) object. 
 Users in the same organization can have different settings based on their preference or on the organization policies. 
@@ -25,13 +27,13 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/settings
+PATCH /me/settings
 ```
 
 Request with a 'user id' or 'userPrincipalName' is only accessible by the user or by a user with the User.ReadWrite.All permissions. To learn more, see [Permissions](/graph/permissions-reference). 
 
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id | userPrincipalName}/settings/
+PATCH /users/{id | userPrincipalName}/settings/
 ```
 
 ## Request headers

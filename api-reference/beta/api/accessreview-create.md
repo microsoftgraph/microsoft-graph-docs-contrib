@@ -1,15 +1,18 @@
 ---
 title: "Create accessReview"
 description: "In the Azure AD access reviews feature, create a new accessReview object."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create accessReview
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.
 
-Prior to making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.
+Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.
 
 After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.  
 
@@ -18,9 +21,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All, and should also have ProgramControl.ReadWrite.All to complete scenario with the subsequent call to create a programControl |
+|Delegated (work or school account)     | AccessReview.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
+
+The caller should also have ProgramControl.ReadWrite.All permission, so that after creating an access review, the caller can create a [programControl](../resources/programcontrol.md).
+In addition, the signed in user must also be in a directory role that permits them to create an access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,11 +50,13 @@ The following table shows the properties that are required when you create an ac
 | `endDateTime`             |`DateTimeOffset`                                                | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.   |
 | `description`             |`String`                                                        | The description, to show to the reviewers. |
 | `businessFlowTemplateId`  |`String`                                                        | The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).  |
-| `reviewerType`            |`String`                                                        | The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegate` or `entityOwners`. | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | The object for which an access review is created, such as a memberships of an group or the assignments of users to an application. | 
+| `reviewerType`            |`String`                                                        | The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`. | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | The object for which an access review is created, such as the membership of a group or the assignments of users to an application. | 
 
 
-If the reviewerType being supplied has the value `delegate`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.
+If the reviewerType being supplied has the value `delegated`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.
+
+If your app is calling this API without a signed-in user, then the caller must also include the **createdBy** property, the value for which is a [userIdentity](../resources/useridentity.md) of the user who will be identified as the creator of the review.
 
 In addition, the caller can include settings, to create a recurring review series or to change from the default review behavior. In particular, to create a recurring review, the caller must include the `accessReviewRecurrenceSettings` within the access review settings,
 
@@ -78,7 +86,7 @@ Content-type: application/json
     "reviewedEntity": {
         "id": "99025615-a0b1-47ec-9117-35377b10998b",
     },
-    "reviewerType" : "delegate",
+    "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "description":"Sample description",
     "reviewers":
@@ -92,10 +100,22 @@ Content-type: application/json
     ],
     "settings":
     {
-        "justificationRequiredOnApproval": true,
-        "activityHistoryInDays":30,
-        "mailNotificationsEnabled":true,
-        "remindersEnabled":true
+        "mailNotificationsEnabled": true,
+        "remindersEnabled": true,
+        "justificationRequiredOnApproval":true,
+        "autoReviewEnabled":false,
+        "activityDurationInDays":30,
+        "autoApplyReviewResultsEnabled":false,
+        "accessRecommendationsEnabled":false,
+        "recurrenceSettings":{
+            "recurrenceType":"onetime",
+            "recurrenceEndType":"endBy",
+            "durationInDays":0,
+            "recurrenceCount":0
+        },
+        "autoReviewSettings":{
+            "notReviewedResult":"Deny"
+        }
     }
 }
 ```
@@ -118,15 +138,31 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_accessReview_from_accessReviews-Cs-snippets.md)]
 
-<!-- {
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_accessReview_from_accessReviews-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!--
+{
   "type": "#page.annotation",
   "description": "Create accessReview",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

@@ -2,11 +2,13 @@
 title: "TableColumnCollection: ItemAt"
 description: "Gets a column based on its position in the collection."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # TableColumnCollection: ItemAt
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Gets a column based on its position in the collection.
 ## Permissions
@@ -40,7 +42,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -66,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -80,13 +82,26 @@ Content-length: 81
   "values": "values-value"
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tablecolumncollection_itemat-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "TableColumnCollection: ItemAt",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tablecolumncollection-itemat.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

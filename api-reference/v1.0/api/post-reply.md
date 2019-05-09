@@ -2,6 +2,8 @@
 title: "post: reply"
 description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "groups"
 ---
 
 # post: reply
@@ -116,6 +118,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/post_reply-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_reply-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -124,5 +136,9 @@ HTTP/1.1 200 OK
   "description": "post: reply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/post-reply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/post-reply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

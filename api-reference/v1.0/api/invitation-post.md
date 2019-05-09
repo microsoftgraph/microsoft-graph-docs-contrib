@@ -1,6 +1,9 @@
 ---
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
+localization_priority: Priority
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create invitation
@@ -97,13 +100,25 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
+  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/invitation-post.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/invitation-post.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: create_user_from_users/invitedUser:
       Property 'invitedUser' is of type Custom but has no custom members."
   ]

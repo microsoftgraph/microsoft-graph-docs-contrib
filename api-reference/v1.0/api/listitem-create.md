@@ -1,8 +1,10 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Create a new entry in a SharePoint list
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Create a new item in a list
 
@@ -77,6 +79,14 @@ Content-type: application/json
   }
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 
@@ -88,5 +98,8 @@ Content-type: application/json
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Create"
+  "tocPath": "ListItem/Create",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

@@ -1,13 +1,16 @@
 ---
 title: "List pages"
 description: "Retrieve a list of page objects from the specified section."
+localization_priority: Normal
+author: "jewan-microsoft"
+ms.prod: "onenote"
 ---
 
 # List pages
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [page](../resources/page.md) objects from the specified section.
+Retrieve a list of [page](../resources/onenotepage.md) objects from the specified section.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [page](../resources/page.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [onenotePage](../resources/onenotepage.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -82,10 +85,13 @@ Content-length: 393
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List pages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

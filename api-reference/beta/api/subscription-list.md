@@ -1,11 +1,13 @@
 ---
 title: "List subscriptions"
 description: " see the scenarios below for details."
+localization_priority: Normal
+author: "piotrci"
 ---
 
 # List subscriptions
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of webhook subscriptions. The content of the response depends on the context in which the app is calling; see the scenarios below for details.
 
@@ -85,7 +87,7 @@ Here is an example of the response. Note: The response shown here may be truncat
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription",
   "isCollection": true
 } -->
@@ -111,15 +113,31 @@ Content-length: 586
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_subscriptions-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List subscriptions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->
 
 When a request returns multiple pages of data, the response includes an `@odata.nextLink` property to help you manage the results.  To learn more, see [Paging Microsoft Graph data in your app](/graph/paging).

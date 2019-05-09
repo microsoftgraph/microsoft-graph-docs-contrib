@@ -2,11 +2,13 @@
 title: "Remove a member"
 description: "Use this API to remove a member (user or group) from an administrative unit."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Remove a member
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to remove a member (user or group) from an administrative unit.
 

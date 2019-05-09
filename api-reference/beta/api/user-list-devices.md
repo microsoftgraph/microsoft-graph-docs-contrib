@@ -1,11 +1,14 @@
 ---
 title: "List user devices"
 description: "Get a list of user devices that support Project Rome capabilities. This includes the ability to launch an app, or message or send data to an application. After you do a GET call on me/devices, pass in the ID of the device to send a command to your device."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List user devices
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of user devices that support Project Rome capabilities. This includes the ability to launch an app, or message or send data to an application. After you do a GET call on me/devices, pass in the ID of the device to [send a command](send-device-command.md) to your device.
 

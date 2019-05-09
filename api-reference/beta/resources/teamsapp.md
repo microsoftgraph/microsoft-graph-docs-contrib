@@ -2,11 +2,13 @@
 title: "teamsApp resource type"
 description: "An app in the Microsoft Teams app catalog."
 author: "nkramer"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # teamsApp resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An app in the [Microsoft Teams](teams-api-overview.md) app catalog.
 
@@ -69,11 +71,14 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
 

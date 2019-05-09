@@ -1,6 +1,7 @@
 ---
 title: "Traverse Microsoft Graph"
 description: "In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph."
+localization_priority: Priority
 ---
 
 # Traverse Microsoft Graph
@@ -344,4 +345,4 @@ Like the power and ease of SDKs? While you can always use REST APIs to call Micr
 ## See also
 
 - [Use the Microsoft Graph API](use-the-api.md)
-- [Get auth tokens](auth-overview.md)
+- [Get auth tokens](./auth/)

@@ -1,11 +1,14 @@
 ---
 title: "Get educationClass"
 description: "  group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
 ---
 
 # Get educationClass
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a class from the system. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students;  group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members.
 
@@ -77,13 +80,29 @@ Content-length: 224
   "mailNickname": "fineartschool.net "
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_educationclass-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationclass-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationclass-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

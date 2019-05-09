@@ -2,17 +2,25 @@
 title: "sharingDetail resource type"
 description: "Complex type containing properties of Shared items. "
 author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
 ---
 
 # sharingDetail resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Complex type containing properties of [Shared](insights-shared.md) items. 
 
 ## JSON representation
 Here is a JSON representation of the resource
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.sharingDetail"
+}-->
 ```json
 {
   "sharedDateTime": "dateTimeOffset",

@@ -2,15 +2,18 @@
 title: "mobileAppProvisioningConfigGroupAssignment resource type"
 description: "Contains the properties used to assign an App provisioning configuration to a group."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # mobileAppProvisioningConfigGroupAssignment resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains the properties used to assign an App provisioning configuration to a group.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -28,6 +31,7 @@ Contains the properties used to assign an App provisioning configuration to a gr
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

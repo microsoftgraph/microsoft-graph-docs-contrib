@@ -1,11 +1,14 @@
 ---
 title: "Email activity reports"
 description: "You can get a high level view of email traffic within your organization from the Reports page. You can also drill into the Email Activity widget to understand the trends and details per user of the email activity in your organization."
+localization_priority: Normal
+author: "pranoychaudhuri"
+ms.prod: "reports"
 ---
 
 # Email activity reports
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can get a high level view of email traffic within your organization from the Reports page. You can also drill into the Email Activity widget to understand the trends and details per user of the email activity in your organization.
 

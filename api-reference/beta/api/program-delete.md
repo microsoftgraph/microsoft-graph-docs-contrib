@@ -1,11 +1,12 @@
 ---
 title: "Delete program"
 description: "In the Azure AD access reviews feature, delete a program object."
+localization_priority: Normal
 ---
 
 # Delete program
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, delete a [program](../resources/program.md) object.
 
@@ -17,9 +18,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `ProgramControl.ReadWrite.All`.  The signed in user must also be in a directory role which permits them to create a program. |
+|Delegated (work or school account)     | ProgramControl.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
+
+The signed in user must also be in a directory role that permits them to create a program.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +48,7 @@ If successful, this method returns a `204, No Content` response code. It does no
   "name": "delete_program"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/programs('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213')
+DELETE https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f9129213
 ```
 ##### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -56,13 +59,29 @@ DELETE https://graph.microsoft.com/beta/programs('7e59d237-2fb0-4e5d-b7bb-d4f9f9
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_program-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_program-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-25 00:00:01 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete program",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/program-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

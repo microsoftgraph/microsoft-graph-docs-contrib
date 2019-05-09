@@ -1,6 +1,8 @@
 ---
 title: "Restore a previous version of a DriveItem"
 description: "Restore a previous version of a DriveItem to be the current version. This will create a new version with the contents of the previous version, but preserves all existing versions of the file."
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 
 # Restore a previous version of a DriveItem
@@ -52,6 +54,16 @@ If successful, the API call returns a `204 No Content`.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/restore-item-version-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/restore-item-version-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 [item-resource]: ../resources/driveitem.md
 
@@ -60,5 +72,9 @@ HTTP/1.1 204 No Content
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
+  "tocPath": "Items/Copy",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitemversion-restore.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

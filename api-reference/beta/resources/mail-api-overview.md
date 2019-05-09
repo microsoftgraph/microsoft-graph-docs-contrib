@@ -1,11 +1,14 @@
 ---
 title: "Use the Outlook mail REST API"
 description: "Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account."
+localization_priority: Priority
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Use the Outlook mail REST API
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
 With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of
@@ -46,6 +49,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Draft, read, reply, forward, send, update, or delete messages | [message](../resources/message.md) | [Methods of message](../resources/message.md#methods) |
 | Delegate another user to send messages on behalf of the mailbox owner | [message](../resources/message.md) | Set the **from** and **sender** properties in a [message](../resources/message.md) |
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Focused Inbox](../resources/manage-focused-inbox.md) |
+| Get the MIME content of a message or message attachment (preview) | [message](../resources/message.md) | [Get MIME content](/graph/outlook-get-mime-message) |
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
 | Get language and time zone choices for a user | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Get or update a user's automatic reply, locale, time zone, or working hours | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Get user's mailbox settings](../api/user-get-mailboxsettings.md), <br> [Update user's mailbox settings](../api/user-update-mailboxsettings.md) |

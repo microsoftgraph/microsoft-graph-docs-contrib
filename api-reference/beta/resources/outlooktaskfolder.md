@@ -2,11 +2,13 @@
 title: "outlookTaskFolder resource type"
 description: "A folder that contains Outlook tasks (collection of outlookTask objects). "
 author: "angelgolfer-ms"
+localization_priority: Normal
+ms.prod: "outlook"
 ---
 
 # outlookTaskFolder resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A folder that contains Outlook tasks (collection of [outlookTask](outlooktask.md) objects). 
 
@@ -55,6 +57,8 @@ Here is a JSON representation of the resource.
     "singleValueExtendedProperties",
     "tasks"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookTaskFolder"
 }-->
 
@@ -71,10 +75,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "outlookTaskFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,11 +1,12 @@
 ---
 title: "Create multi-value extended property"
 description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "
+localization_priority: Normal
 ---
 
 # Create multi-value extended property
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create one or more multi-value extended properties in a new or existing instance of a resource. 
 
@@ -287,13 +288,16 @@ To see the newly created extended property, [get the message expanded with the e
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a single-value extended property",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
 
 
 

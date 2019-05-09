@@ -1,12 +1,15 @@
 ---
 title: "Get bookingAppointment"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Get the properties and relationships of a bookingAppointment object in the specified bookingbusiness."
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "bookings"
 ---
 
 # Get bookingAppointment
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).
 
 The **start** and **end** properties are always returned in UTC.
@@ -17,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | Not supported.  | 
+|Application | Not supported.  |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -159,13 +162,29 @@ Content-type: application/json
     }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_bookingappointment-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_bookingappointment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get bookingAppointment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/bookingappointment-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

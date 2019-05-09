@@ -2,11 +2,13 @@
 title: "TableColumnCollection: add"
 description: "Adds a new column to the table."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # TableColumnCollection: add
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adds a new column to the table.
 ## Permissions
@@ -37,11 +39,11 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |index|number|Specifies the relative position of the new column. The previous column at this position is shifted to the right. The index value should be equal to or less than the last column's index value, so it cannot be used to append a column at the end of the table. Zero-indexed.|
-|values|(boolean or string or number)|Optional. A 2-dimensional array of unformatted values of the table column.|
+|values|(boolean or string or number) collection|Optional. A 2-dimensional array of unformatted values of the table column.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [TableColumn](../resources/tablecolumn.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookTableColumn](../resources/workbooktablecolumn.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -71,7 +73,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -85,13 +87,29 @@ Content-length: 81
   "values": "values-value"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/tablecolumncollection_add-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/tablecolumncollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "TableColumnCollection: add",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/tablecolumncollection-add.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/tablecolumncollection-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

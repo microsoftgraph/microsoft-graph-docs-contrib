@@ -1,11 +1,12 @@
 ---
 title: "suspiciousIpRiskEvent resource type"
 description: "A risk event detected by Azure Active Directory Identity Protection where an account sign-in is attempted from a suspicious IP address. Complete information about risk events can be found in the Azure AD Identity Protection documentation."
+localization_priority: Normal
 ---
 
 # suspiciousIpRiskEvent resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A risk event detected by [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) where an account sign-in is attempted from a suspicious IP address. Complete information about risk events can be found in the [Azure AD Identity Protection documentation](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
@@ -46,6 +47,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.suspiciousIpRiskEvent"
 }-->
 
@@ -62,17 +64,21 @@ Here is a JSON representation of the resource.
   "riskType": "string",
   "userDisplayName": "string",
   "userId": "string",
-  "userPrincipalName": "string"
+  "userPrincipalName": "string",
+  "riskEventType": "string"
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "suspiciousIpRiskEvent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

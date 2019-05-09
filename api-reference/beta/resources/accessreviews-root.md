@@ -1,11 +1,14 @@
 ---
 title: "Azure AD access reviews"
 description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights."
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Azure AD access reviews
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can use [Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
 
@@ -19,15 +22,17 @@ Typical customer scenarios for access reviews of group memberships and applicati
 
 There is also a related capability for customers to review and certify the role assignments of administrative users who are assigned to Azure AD roles such as Global Administrator or Azure subscription roles.  This capability is included in [Azure AD Privileged Identity Management](privilegedidentitymanagement-root.md).
 
-Note that the access reviews feature, including the API, is included in Azure AD Premium P2. 
+Note that the access reviews feature, including the API, is included in Azure AD Premium P2.  The tenant where an access review is being created must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription. 
+Prior to creating an access review, program or program control, an administrator must have previously onboarded in order to prepare the [programControlType](programcontroltype.md) and [businessFlowTemplate](businessflowtemplate.md) resources. The organization can onboard to Azure AD access reviews or, in the case of access reviews of Azure AD roles or Azure subscription roles, Azure AD PIM.
 
-## Methods
 
-Here is the list of methods that are provided by Azure AD access reviews.  
+## Methods 
 
-| Method		   | Return Type	|Description|
+The following table lists the methods that you can use to interact with access review-related resources.
+
+| Method		   | Return type	|Description|
 |:---------------|:--------|:----------|
-|[Get accessReview](../api/accessreview-get.md) |	[accessReview](accessreview.md) |	Get an access review with a specific id. |
+|[Get accessReview](../api/accessreview-get.md) |	[accessReview](accessreview.md) |	Get an access review with a specific ID. |
 |[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
 |[Delete accessReview](../api/accessreview-delete.md) |	None.	| Delete an accessReview. |
 |[Update accessReview](../api/accessreview-update.md) |	[accessReview](accessreview.md)	| Update an accessReview. |
@@ -51,6 +56,20 @@ Here is the list of methods that are provided by Azure AD access reviews.
 |[List programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) collection| List controls across all programs in the tenant.|
 |[List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
+## Role and application permission authorization checks
+
+The following directory roles are required for a calling user to manage access reviews, programs, and controls.
+
+| Target resource | Operation | Application permissions | Required directory role of the calling user |
+|:----------------|:------------------|:------------|:--------------------------------------------|
+|[accessReview](accessreview.md) of an Azure AD role | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or Privileged Role Administrator |
+|[accessReview](accessreview.md) of an Azure AD role | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or Privileged Role Administrator |
+|[accessReview](accessreview.md) of a group or app | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or User Administrator |
+|[accessReview](accessreview.md) of a group or app | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or User Administrator |
+| [program](program.md) and [programControl](programcontrol.md)| Read | ProgramControl.Read.All or ProgramControl.ReadWrite.All |  Global Administrator, Security Administrator, Security Reader or User Administrator |
+| [program](program.md) and [programControl](programcontrol.md) | Create, Update or Delete | ProgramControl.ReadWrite.All | Global Administrator or User Administrator |
+
+In addition, a user who is an assigned reviewer of an access review can manage their decisions, without needing to be in a directory role.
 
 ## See also
 
@@ -59,10 +78,13 @@ Here is the list of methods that are provided by Azure AD access reviews.
 - [How an administrator can manage programs and controls for Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Service root",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

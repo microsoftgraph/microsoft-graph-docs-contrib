@@ -3,10 +3,12 @@ author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
 title: Get a page in a site
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Get a page in the site pages list of a site
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
 
@@ -49,7 +51,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": 2,
+    "id": "2",
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",
@@ -124,11 +126,27 @@ Content-type: application/json
     ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-page-Cs-snippets.md)]
 
-<!-- {
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-page-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!--
+{
   "type": "#page.annotation",
   "description": "Get a page in a site",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Enumerate"
-} -->
+  "tocPath": "Pages/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/beta/api/sitepage-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/sitepage-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

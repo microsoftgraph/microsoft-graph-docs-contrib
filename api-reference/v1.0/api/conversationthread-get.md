@@ -1,6 +1,9 @@
 ---
 title: "Get conversationThread"
 description: "Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, "
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "groups"
 ---
 
 # Get conversationThread
@@ -83,6 +86,16 @@ Content-length: 419
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_conversationthread-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_conversationthread-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -91,5 +104,9 @@ Content-length: 419
   "description": "Get conversationThread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/conversationthread-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/conversationthread-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

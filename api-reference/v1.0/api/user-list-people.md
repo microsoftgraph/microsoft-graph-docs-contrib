@@ -1,7 +1,9 @@
 ---
 title: "List people"
 description: "Retrieve a collection of person objects ordered by their relevance to the user, which is determined by the user's communication and collaboration patterns, and business relationships."
-author: "simonhult"
+author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "insights"
 ---
 
 # List people
@@ -159,6 +161,16 @@ Content-length: 1370
     ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_person_collection-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_person_collection-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 For more examples, see the article [Get relevant information about people](/graph/people-example).
 
@@ -169,5 +181,9 @@ For more examples, see the article [Get relevant information about people](/grap
   "description": "List people",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list-people.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

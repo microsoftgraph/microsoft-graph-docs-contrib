@@ -1,11 +1,14 @@
 ---
 title: "Update alert"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions."
+localization_priority: Normal
+author: "preetikr"
+ms.prod: "security"
 ---
 
 # Update alert
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions. This method updates any solution that has a record of the referenced alert ID.
 
@@ -45,7 +48,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 |closedDateTime|DateTimeOffset|Time at which the alert was closed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |comments|String collection|Analyst comments on the alert (for customer alert management).|
 |feedback|alertFeedback enum|Analyst feedback on the alert. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
-|status|alertStatus enum|Alert lifecycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
+|status|alertStatus enum|Alert life cycle status (stage). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`.|
 |tags|String collection|User-definable labels that can be applied to an alert and can serve as filter conditions (for example, "HVA", "SAW).|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker). **Provider and vendor fields are required.**|
 
@@ -55,11 +58,13 @@ If successful, this method returns a `204 No Content` response code.
 
 If the optional request header is used, the method returns a `200 OK` response code and the updated [alert](../resources/alert.md) object in the response body.
 
-## Example 1
+## Examples
 
-### Request
+### Example 1: Request without Prefer header
 
-The following is an example of the request.
+#### Request
+
+The following is an example of the request without the `Prefer` header.
 <!-- {
   "blockType": "request",
   "name": "update_alert"
@@ -84,7 +89,9 @@ Content-type: application/json
 }
 ```
 
-### Response
+<!-- markdownlint-disable MD024 -->
+
+#### Response
 
 The following is an example of a successful response.
 <!-- {
@@ -96,10 +103,20 @@ The following is an example of a successful response.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_alert-Cs-snippets.md)]
 
-## Example 2
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_alert-Javascript-snippets.md)]
 
-### Request
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### Example 2: Request with Prefer header
+
+#### Request
 
 The following example shows a request that includes the `Prefer` request header.
 
@@ -128,7 +145,7 @@ Prefer: return=representation
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response when the optional `Prefer: return=representation` request header is used.
 
@@ -155,10 +172,18 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update alert",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/alert-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

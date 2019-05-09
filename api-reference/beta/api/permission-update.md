@@ -1,12 +1,13 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Change sharing permissions
+localization_priority: Normal
 ---
 # Update sharing permission
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a sharing permission by patching the permission resource.
 
@@ -49,7 +50,7 @@ For best performance you shouldn't include existing values that haven't changed.
 
 | Property     | Type   | Description                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | String | An array of permission types. |
+| **roles**    | String collection | An array of permission types. |
 
 ## Response
 
@@ -91,13 +92,29 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update-permission-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update-permission-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update an item's sharing permissions",
   "keywords": "permission, permissions, sharing, change permissions, update permission",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Update permission"
-}-->
+  "tocPath": "OneDrive/Item/Update permission",
+  "suppressions": [
+    "Error: /api-reference/beta/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/permission-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

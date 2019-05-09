@@ -1,8 +1,10 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get a file or folder
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Get a DriveItem resource
 
@@ -98,6 +100,16 @@ Content-type: application/json
   "webUrl": "https://contoso-my.sharepoint.com/personal/rgregg_contoso_com/Documents"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-drive-root-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-drive-root-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Remarks
 
@@ -114,5 +126,9 @@ how errors are returned.
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item"
+  "tocPath": "Items/Get item",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

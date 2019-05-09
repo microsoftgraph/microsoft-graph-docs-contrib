@@ -1,11 +1,14 @@
 ---
 title: "Yammer groups activity reports"
 description: "You can gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used."
+localization_priority: Normal
+ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # Yammer groups activity reports
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported. These APIs are not supported in Microsoft Graph China operated by 21Vianet.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can gain insights into the activity of Yammer groups in your organization and see how many Yammer groups are being created and used.
 

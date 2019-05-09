@@ -2,15 +2,18 @@
 title: "Update windowsKioskConfiguration"
 description: "Update the properties of a windowsKioskConfiguration object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Update windowsKioskConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -52,7 +55,7 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) collection|This policy setting allows to define a list of Kiosk profiles for a Kiosk configuration. This collection can contain a maximum of 500 elements.|
+|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) collection|This policy setting allows to define a list of Kiosk profiles for a Kiosk configuration. This collection can contain a maximum of 3 elements.|
 |kioskBrowserDefaultUrl|String|Specify the default URL the browser should navigate to on launch.|
 |kioskBrowserEnableHomeButton|Boolean|Enable the kiosk browser's home button. By default, the home button is disabled.|
 |kioskBrowserEnableNavigationButtons|Boolean|Enable the kiosk browser's navigation buttons(forward/back). By default, the navigation buttons are disabled.|
@@ -60,6 +63,7 @@ The following table shows the properties that are required when you create the [
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Specify the number of minutes the session is idle until the kiosk browser restarts in a fresh state.  Valid values are 1-1440. Valid values 1 to 1440|
 |kioskBrowserBlockedURLs|String collection|Specify URLs that the kiosk browsers should not navigate to|
 |kioskBrowserBlockedUrlExceptions|String collection|Specify URLs that the kiosk browser is allowed to navigate to|
+|edgeKioskEnablePublicBrowsing|Boolean|Enable public browsing kiosk mode for the Microsoft Edge browser. The Default is false.|
 
 
 
@@ -67,15 +71,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1598
+Content-length: 1753
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -95,12 +100,15 @@ Content-length: 1598
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
             "startLayoutTileSize": "small",
             "name": "Name value",
+            "appType": "store",
+            "autoLaunch": true,
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "allowAccessToDownloadsFolder": true,
         "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
@@ -121,7 +129,8 @@ Content-length: 1598
   ],
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
-  ]
+  ],
+  "edgeKioskEnablePublicBrowsing": true
 }
 ```
 
@@ -130,7 +139,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1770
+Content-Length: 1925
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -156,12 +165,15 @@ Content-Length: 1770
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
             "startLayoutTileSize": "small",
             "name": "Name value",
+            "appType": "store",
+            "autoLaunch": true,
             "appUserModelId": "App User Model Id value",
             "appId": "App Id value",
             "containedAppId": "Contained App Id value"
           }
         ],
         "showTaskBar": true,
+        "allowAccessToDownloadsFolder": true,
         "disallowDesktopApps": true,
         "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
       },
@@ -182,7 +194,8 @@ Content-Length: 1770
   ],
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
-  ]
+  ],
+  "edgeKioskEnablePublicBrowsing": true
 }
 ```
 

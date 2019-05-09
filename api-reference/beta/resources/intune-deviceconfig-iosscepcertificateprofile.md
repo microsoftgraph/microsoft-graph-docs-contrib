@@ -2,15 +2,18 @@
 title: "iosScepCertificateProfile resource type"
 description: "iOS SCEP certificate profile."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # iosScepCertificateProfile resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 iOS SCEP certificate profile.
+
 
 Inherits from [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)
 
@@ -46,7 +49,7 @@ Inherits from [iosCertificateProfileBase](../resources/intune-deviceconfig-iosce
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md) collection|Extended Key Usage (EKU) settings. This collection can contain a maximum of 500 elements.|
 |subjectAlternativeNameFormatString|String|Custom String that defines the AAD Attribute.|
 |certificateStore|[certificateStore](../resources/intune-deviceconfig-certificatestore.md)|Target store certificate. Possible values are: `user`, `machine`.|
-|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alterantive Name Settings. This collection can contain a maximum of 500 elements.|
+|customSubjectAlternativeNames|[customSubjectAlternativeName](../resources/intune-deviceconfig-customsubjectalternativename.md) collection|Custom Subject Alternative Name Settings. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 |Relationship|Type|Description|

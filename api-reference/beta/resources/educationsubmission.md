@@ -2,11 +2,13 @@
 title: "educationSubmission resource type"
 description: "Submissions are owned by an assignment. A submission represents the resources that an individual (or group) turn in for an assignment and the grade/feedback that is returned."
 author: "dipakboyed"
+localization_priority: Normal
+ms.prod: "education"
 ---
 
 # educationSubmission resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Submissions are owned by an assignment. A submission represents the resources that an individual (or group) turn in for an assignment and the grade/feedback that is returned.
 Submissions are automatically created when an assignment is published. The submission owns two lists of resources. Resources represent the user/groups working area while the submitted resources represent the resources that have actively been turned in by students.  
@@ -55,6 +57,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -63,27 +66,32 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
-  "grade": {"@odata.type": "microsoft.graph.educationAssignmentGrade"},
-  "id": "String (identifier)",
-  "recipient": {"@odata.type": "microsoft.graph.educationSubmissionRecipient"},
-  "returnedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "returnedDateTime": "String (timestamp)",
-  "resourcesFolderUrl": "String",
-  "status": "string",
-  "submittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "submittedDateTime": "String (timestamp)",
-  "unsubmittedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "unsubmittedDateTime": "String (timestamp)"
+    "feedback":{"@odata.type":"microsoft.graph.educationFeedback"},
+    "grade":{"@odata.type":"microsoft.graph.educationAssignmentGrade"},
+    "id":"String (identifier)",
+    "recipient":{"@odata.type":"microsoft.graph.educationSubmissionRecipient"},
+    "returnedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "returnedDateTime":"String (timestamp)",
+    "resourcesFolderUrl":"String",
+    "status":"string",
+    "submittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "submittedDateTime":"String (timestamp)",
+    "unsubmittedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "unsubmittedDateTime":"String (timestamp)",
+    "releasedBy":{"@odata.type":"microsoft.graph.identitySet"},
+    "releasedDateTime":"String (timestamp)"
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmission resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

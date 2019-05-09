@@ -1,11 +1,14 @@
 ---
 title: "Office 365 Groups activity reports"
 description: "You can gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 groups are being created and used."
+localization_priority: Normal
+ms.prod: "reports"
+author: "pranoychaudhuri"
 ---
 
 # Office 365 Groups activity reports
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can gain insights into the activity of Office 365 Groups in your organization and see how many Office 365 groups are being created and used.
 

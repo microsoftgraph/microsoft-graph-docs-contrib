@@ -2,15 +2,18 @@
 title: "mobileAppInstallStatus resource type"
 description: "Contains properties for the installation state of a mobile app for a device."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # mobileAppInstallStatus resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties for the installation state of a mobile app for a device.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -29,7 +32,7 @@ Contains properties for the installation state of a mobile app for a device.
 |lastSyncDateTime|DateTimeOffset|Last sync date time|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|The install state of the app. Possible values are: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|The install state detail of the app. Possible values are: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
+|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|The install state detail of the app. Possible values are: `noAdditionalDetails`, `dependencyFailedToInstall`, `dependencyWithRequirementsNotMet`, `dependencyPendingReboot`, `dependencyWithAutoInstallDisabled`, `seeInstallErrorCode`, `autoInstallDisabled`, `seeUninstallErrorCode`, `pendingReboot`, `installingDependencies`, `powerShellScriptRequirementNotMet`, `registryRequirementNotMet`, `fileSystemRequirementNotMet`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|The error code for install or uninstall failures.|
 |osVersion|String|OS Version|
 |osDescription|String|OS Description|

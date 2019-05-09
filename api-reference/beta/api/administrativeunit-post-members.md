@@ -2,11 +2,13 @@
 title: "Add a member"
 description: "Use this API to add a member (user or group) to an administrative unit."
 author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Add a member
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use this API to add a member (user or group) to an administrative unit.
 

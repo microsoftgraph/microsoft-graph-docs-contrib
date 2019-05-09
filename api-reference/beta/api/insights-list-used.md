@@ -2,11 +2,13 @@
 title: "List used"
 description: "Calculated insight that returns the list of files used with a user."
 author: "simonhult"
+localization_priority: Normal
+ms.prod: "insights"
 ---
 
 # List used
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Calculated insight that returns the list of files used with a user.
 
@@ -25,7 +27,7 @@ GET /me/insights/used
 ```
 Requesting other user's used documents returns results sorted by 'lastModifiedDateTime' and 'lastAccessedDateTime' is set to 'lastModifiedDateTime'.
 ```http
-GET /users/<id | userPrincipalName>/insights/used
+GET /users/{id | userPrincipalName}/insights/used
 ```
 
 ## Optional query parameters

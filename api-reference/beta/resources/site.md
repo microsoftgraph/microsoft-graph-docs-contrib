@@ -1,12 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Site
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # site resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **site** resource provides metadata and relationships for a SharePoint site.
 
@@ -127,11 +129,16 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites",
-  "tocBookmarks": { "Resources/Site": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Site": "#"
+  },
+  "suppressions": []
+}
+-->

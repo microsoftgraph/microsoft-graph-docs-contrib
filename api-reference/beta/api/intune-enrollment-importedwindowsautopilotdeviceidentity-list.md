@@ -2,15 +2,18 @@
 title: "List importedWindowsAutopilotDeviceIdentities"
 description: "List properties and relationships of the importedWindowsAutopilotDeviceIdentity objects."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # List importedWindowsAutopilotDeviceIdentities
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) objects.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,6 +46,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) objects in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -54,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 713
 
 {
   "value": [
@@ -64,6 +68,7 @@ Content-Length: 675
       "orderIdentifier": "Order Identifier value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
+      "importId": "Import Id value",
       "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
       "state": {
         "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",

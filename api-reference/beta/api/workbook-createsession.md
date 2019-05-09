@@ -2,6 +2,8 @@
 title: "Create Session"
 description: "Use this API to create a new workbook session. "
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Create Session
@@ -61,7 +63,7 @@ Content-type: application/json
 Content-length: 52
 
 {
-  "persistSession": true
+  "persistChanges": true
 }
 ```
 In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.
@@ -80,7 +82,30 @@ Content-length: 52
 
 {
   "id": "id-value",
-  "persistSession": true
+  "persistChanges": true
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_excel_session-Cs-snippets.md)]
 
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_excel_session-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "Example",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/workbook-createsession.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/workbook-createsession.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}-->

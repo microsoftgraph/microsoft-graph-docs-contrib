@@ -3,10 +3,11 @@ author: kevinlam
 ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo - OneDrive API
+localization_priority: Normal
 ---
 # ItemPreviewInfo resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **ItemPreviewInfo** resource contains information on how to embed a preview of a [DriveItem](driveitem.md).
 

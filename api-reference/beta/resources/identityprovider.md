@@ -1,11 +1,12 @@
 ---
 title: "identityProvider resource type"
 description: "Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon, or LinkedIn."
+localization_priority: Normal
 ---
 
 # identityProvider resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon, or LinkedIn.
 

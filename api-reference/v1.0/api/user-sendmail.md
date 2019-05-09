@@ -2,6 +2,8 @@
 title: "Send mail"
 description: "Send the message specified in the request body. The message is saved in the Sent Items folder by default."
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Send mail
@@ -23,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## Request headers
@@ -90,6 +93,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_sendmail-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_sendmail-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ##### Request 2
 The next example creates a message with custom Internet message headers and sends the message.
@@ -138,6 +151,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 202 Accepted
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_sendmail_with_headers-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_sendmail_with_headers-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -146,5 +169,11 @@ HTTP/1.1 202 Accepted
   "description": "user: sendMail",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-sendmail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-sendmail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/user-sendmail.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-sendmail.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

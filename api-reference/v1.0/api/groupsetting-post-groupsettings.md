@@ -1,6 +1,9 @@
 ---
 title: "Create a group setting"
 description: "Use this API to create a new setting, based on the templates available in groupSettingTemplates. These settings can be at the tenant-level or at the group level. The creation request must provide settingValues for all the settings defined in the template. For group-specific settings, only the setting governing whether members of a group can invite guest users can be set. This will govern this behavior once the ability to add guest users to a group is generally available."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create a group setting
@@ -91,6 +94,16 @@ Content-length: 238
   "id": "id-value"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_groupsetting_from_groupsettings-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_groupsetting_from_groupsettings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -99,5 +112,9 @@ Content-length: 238
   "description": "Create groupsetting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/groupsetting-post-groupsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/groupsetting-post-groupsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

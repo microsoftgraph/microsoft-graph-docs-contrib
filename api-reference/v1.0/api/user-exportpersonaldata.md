@@ -1,6 +1,9 @@
 ---
 title: "user: exportPersonalData"
 description: "Submits a data policy operation request, made by a Company Administrator to export an organizational user's data."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # user: exportPersonalData
@@ -62,6 +65,16 @@ Content-length: 48
 ##### Response
 
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_exportpersonaldata-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 {
   Location: https://graph.microsoft.com/v1.0/dataPolicyOperations/d007e3da-cd9b-4b02-8d66-422403c53e3f
   Retry-After: 60
@@ -84,5 +97,9 @@ HTTP/1.1 202 Accepted
   "description": "user: exportPersonalData",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-exportpersonaldata.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

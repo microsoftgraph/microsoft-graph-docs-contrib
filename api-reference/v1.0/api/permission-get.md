@@ -1,8 +1,9 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get permissions
+localization_priority: Normal
 ---
 # Get sharing permission for a file or folder
 
@@ -78,6 +79,16 @@ Content-type: application/json
   "roles": [ "write" ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-item-permission-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-item-permission-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Remarks
 
@@ -100,5 +111,9 @@ how errors are returned.
   "description": "Get a DriveItem's sharing permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "Sharing/Permissions"
+  "tocPath": "Sharing/Permissions",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/permission-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/permission-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

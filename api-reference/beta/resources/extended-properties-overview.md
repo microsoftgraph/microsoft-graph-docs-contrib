@@ -1,11 +1,14 @@
 ---
 title: "Outlook extended properties overview"
 description: "Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access "
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Outlook extended properties overview
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access 
 custom data for Outlook MAPI properties when these properties are _not already exposed in the Microsoft Graph API metadata_. 

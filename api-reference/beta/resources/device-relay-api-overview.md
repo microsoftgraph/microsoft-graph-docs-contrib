@@ -1,12 +1,14 @@
 ---
 title: "See also"
 description: "{This is the API-level overview for the device relay module.}"
-author: "tfitzmac"
+author: "lleonard-msft"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Use the device relay API to transfer a user's experience across devices (preview)
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 {This is the API-level overview for the device relay module.}
 

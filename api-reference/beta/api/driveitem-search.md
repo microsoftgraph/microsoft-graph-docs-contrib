@@ -1,12 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Search for files
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Search for a DriveItems within a drive
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Search the hierarchy of items for items matching a query.
 You can search within a folder hierarchy, a whole drive, or files shared with the current user.
@@ -87,6 +89,16 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/item_search-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/item_search-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Searching for items a user can access
 
@@ -131,6 +143,16 @@ Content-type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/drive/root/search(query='contoso project')&skipToken=1asdlnjnkj1nalkm!asd"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/item_search_all-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/item_search_all-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Error responses
 
@@ -141,10 +163,18 @@ how errors are returned.
 [item-resource]: ../resources/driveitem.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Search for a file across a OneDrive.",
   "keywords": "search,query,bing,filename,content",
   "section": "documentation",
-  "tocPath": "Items/Search"
-} -->
+  "tocPath": "Items/Search",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

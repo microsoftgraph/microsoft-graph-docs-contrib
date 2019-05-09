@@ -1,11 +1,12 @@
 ---
 title: "synchronizationSchema: parseExpression"
 description: "(../resources/synchronization_attributemappingsource.md) object. "
+localization_priority: Normal
 ---
 
 # synchronizationSchema: parseExpression
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object. 
 
@@ -164,13 +165,26 @@ Content-type: application/json
     "parsingSucceeded": true
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/synchronizationschema_parseexpression-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationSchema: parseExpression",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

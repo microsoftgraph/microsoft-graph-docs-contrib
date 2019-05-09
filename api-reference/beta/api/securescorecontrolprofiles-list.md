@@ -1,13 +1,14 @@
 ---
 title: "List secureScoreControlProfiles"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Retrieve the properties and relationships of a secureScoreControlProfiles object."
+localization_priority: Normal
 ---
 
 # List secureScoreControlProfiles
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) object.
+Retrieves a list of [secureScoreControlProfile](../resources/securescorecontrolprofiles.md) objects for a tenant.
 
 ## Permissions
 
@@ -39,7 +40,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a **secureScoreControlProfiles** object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of **secureScoreControlProfile** objects in the response body.
 
 ## Example
 
@@ -60,8 +61,9 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "truncated": true,
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
@@ -76,11 +78,11 @@ Content-type: application/json
             "actionUrl": "actionUrl.value",
             "controlCategory": "controlCategory.value",
             "title": "title.value",
-            "deprecated": "deprecated.value",
+            "deprecated": true,
             "implementationCost": "implementationCost.value",
             "lastModifiedDateTime": "lastModifiedDateTime.value",
-            "maxScore": "maxScore.value",
-            "rank": "rank.value",
+            "maxScore": 1020.13,
+            "rank": 100,
             "remediation": "remediation.value",
             "remediationImpact": "remediationImpact.value",
             "service": "service.value",
@@ -110,12 +112,28 @@ Content-type: application/json
      ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_list-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/securescorecontrolprofiles_list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

@@ -1,12 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Delete a file or folder
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Delete a DriveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [DriveItem](../resources/driveitem.md) by using its ID or path.
 Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
@@ -58,6 +60,16 @@ If successful, this call returns a `204 No Content` response to indicate that re
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete-item-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Error responses
 
@@ -66,10 +78,16 @@ how errors are returned.
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete a DriveItem from a drive",
   "keywords": "delete,existing item,onedrive",
   "section": "documentation",
-  "tocPath": "Items/Delete"
-} -->
+  "tocPath": "Items/Delete",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

@@ -2,10 +2,12 @@
 author: chackman
 ms.author: chackman
 title: List followed items
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # List followed items
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the [items](../resources/driveitem.md) that have been followed by the signed in user.
 This collection includes items that are in the user's drive as well as items they have access to from other drives.
@@ -56,11 +58,27 @@ Content-type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-followed-items-Cs-snippets.md)]
 
-<!-- {
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-followed-items-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!--
+{
   "type": "#page.annotation",
   "description": "List the items a user is following.",
   "keywords": "drive,onedrive.drive,list followed items",
   "section": "documentation",
-  "tocPath": "Drives/List followed items"
-} -->
+  "tocPath": "Drives/List followed items",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-list-following.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/drive-list-following.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

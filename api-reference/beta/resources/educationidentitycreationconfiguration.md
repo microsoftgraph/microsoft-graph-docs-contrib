@@ -1,11 +1,14 @@
 ---
 title: "educationIdentityCreationConfiguration resource type"
 description: "Defines the settings on creation of school data profile identities. These identities include students and teachers. Based on these settings, the users will be created in the directory."
+localization_priority: Normal
+author: "mmast-msft"
+ms.prod: "education"
 ---
 
 ## educationIdentityCreationConfiguration resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Defines the settings on creation of school data profile identities. These identities include students and teachers. Based on these settings, the users will be created in the directory.
 
@@ -31,10 +34,10 @@ Derived from [educationIdentitySynchronizationConfiguration](educationidentitysy
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+    "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
     "userDomains": [
         {
-            "@odata.type": "#microsoft.graph.educationIdentityDomain",
+            "@odata.type": "microsoft.graph.educationIdentityDomain",
         }
     ]
 }

@@ -2,6 +2,8 @@
 title: "List joinedTeams"
 description: "Get the teams in Microsoft Teams that the user is a direct member of."
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List joinedTeams
@@ -54,7 +56,7 @@ Here is an example of the request.
   "name": "get_joinedteams"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/joinedTeams
+GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -77,6 +79,16 @@ Content-length: 55
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_joinedteams-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_joinedteams-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## See also
 [List all teams](/graph/teams-list-all-teams)
@@ -88,5 +100,9 @@ Content-length: 55
   "description": "List joinedTeams",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list-joinedteams.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list-joinedteams.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

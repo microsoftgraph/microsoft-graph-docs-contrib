@@ -1,8 +1,10 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Download a file
+localization_priority: Priority
+ms.prod: "sharepoint"
 ---
 # Download the contents of a DriveItem
 
@@ -64,6 +66,16 @@ Pre-authenticated download URLs are only valid for a short period of time (a few
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/download-item-content-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/download-item-content-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Partial range downloads
 
@@ -102,5 +114,9 @@ how errors are returned.
   "description": "Download the contents of a DriveItem.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Items/Download"
+  "tocPath": "Items/Download",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-get-content.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-get-content.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

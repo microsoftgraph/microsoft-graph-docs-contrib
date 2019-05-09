@@ -1,11 +1,12 @@
 ---
 title: "Update Policy"
 description: "Update properties in a preexisting policy."
+localization_priority: Normal
 ---
 
 # Update Policy
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update properties in a preexisting [policy](../resources/policy.md).
 

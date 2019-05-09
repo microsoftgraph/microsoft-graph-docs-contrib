@@ -1,11 +1,12 @@
 ---
 title: "workingHours resource type"
 description: "Represents the days of the week and hours in a specific time zone that the user works."
+localization_priority: Normal
 ---
 
 # workingHours resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the days of the week and hours in a specific time zone that the user works.
 
@@ -23,11 +24,10 @@ appropriate time zone.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| daysOfWeek | String collection | The days of the week on which the user works. |
+| daysOfWeek | dayOfWeek collection | The days of the week on which the user works. |
 | startTime | Edm.TimeOfDay | The time of the day that the user starts working. |
 | endTime | Edm.TimeOfDay | The time of the day that the user stops working. |
 | timeZone | [timeZoneBase](timezonebase.md) | The time zone to which the working hours apply. |
-
 
 ## JSON representation
 
@@ -44,8 +44,8 @@ Here is a JSON representation of the resource.
 ```json
 {
   "daysOfWeek": ["string"],
-  "startTime": "TimeOfDay",
-  "endTime": "TimeOfDay",
+  "startTime": "string (TimeOfDay)",
+  "endTime": "string (TimeOfDay)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 
@@ -53,10 +53,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "workingHours resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

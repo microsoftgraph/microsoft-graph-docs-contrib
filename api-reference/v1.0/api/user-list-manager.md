@@ -1,6 +1,9 @@
 ---
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
+localization_priority: Priority
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List manager
@@ -18,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## Optional query parameters
@@ -75,6 +79,16 @@ Content-type: application/json
   "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_manager-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_manager-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -83,5 +97,9 @@ Content-type: application/json
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-list-manager.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-list-manager.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

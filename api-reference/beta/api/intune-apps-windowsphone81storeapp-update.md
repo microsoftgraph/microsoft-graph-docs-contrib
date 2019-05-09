@@ -2,15 +2,18 @@
 title: "Update windowsPhone81StoreApp"
 description: "Update the properties of a windowsPhone81StoreApp object."
 author: "tfitzmac"
+localization_priority: Normal
+ms.prod: "Intune"
 ---
 
 # Update windowsPhone81StoreApp
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -59,6 +62,9 @@ The following table shows the properties that are required when you create the [
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appStoreUrl|String|The Windows Phone 8.1 app store URL.|
 
 
@@ -67,14 +73,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 666
+Content-length: 775
 
 {
+  "@odata.type": "#microsoft.graph.windowsPhone81StoreApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -83,7 +91,6 @@ Content-length: 666
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -92,6 +99,11 @@ Content-length: 666
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
@@ -101,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 835
+Content-Length: 947
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81StoreApp",
@@ -124,6 +136,11 @@ Content-Length: 835
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```

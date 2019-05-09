@@ -1,11 +1,14 @@
 ---
 title: "eventMessage resource type"
 description: "A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline). "
+localization_priority: Normal
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # eventMessage resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message that represents a meeting request, cancellation, or response (which can be one of the following: acceptance, tentative acceptance, or decline). 
 
@@ -25,6 +28,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
     "attachments",
     "event",
@@ -66,7 +70,7 @@ Here is a JSON representation of the resource
   "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
   "parentFolderId": "string",
   "receivedDateTime": "DateTimeOffset",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
+  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "DateTimeOffset",
@@ -111,7 +115,7 @@ Here is a JSON representation of the resource
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |location|[location](location.md)|The location of the requested meeting.|
-|meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |receivedDateTime|DateTimeOffset|The date and time the message was received.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern of the requested meeting.|
@@ -167,10 +171,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "eventMessage resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

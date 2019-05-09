@@ -2,6 +2,8 @@
 title: "Update user"
 description: "Update the properties of a user object."
 author: "dkershaw10"
+localization_priority: Priority
+ms.prod: "microsoft-identity-platform"
 ---
 
 
@@ -56,7 +58,6 @@ In the request body, supply the values for relevant fields that should be update
 |pastProjects|String collection|A list for the user to enumerate their past projects.|
 |postalCode|String|The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code.|
 |preferredLanguage|String|The preferred language for the user. Should follow ISO 639-1 Code; for example "en-US".|
-|preferredName|String|The preferred name for the user.|
 |responsibilities|String collection|A list for the user to enumerate their responsibilities.|
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
 |skills|String collection|A list for the user to enumerate their skills.|
@@ -100,6 +101,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_user-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -108,5 +119,9 @@ HTTP/1.1 204 No Content
   "description": "Update user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

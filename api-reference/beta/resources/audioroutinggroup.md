@@ -2,11 +2,13 @@
 title: "audioRoutingGroup resource type"
 description: "The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation."
 author: "VinodRavichandran"
+localization_priority: Normal
+ms.prod: "microsoft-teams"
 ---
 
 # audioRoutingGroup resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The audio routing group stores a private audio route between participants in a multiparty conversation. Source is the participant itself and the receivers are a subset of other participants in the multiparty conversation.
 
@@ -24,10 +26,10 @@ The audio routing group stores a private audio route between participants in a m
 
 | Property      | Type              | Description                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Read-only. Server generated.                                         |
-| receivers     | String Collection | List of receiving participant ids.                                   |
-| routingMode   | String            | Routing group mode.  Possible values are: `oneToOne`, `multicast`.   |
-| sources       | String Collection | List of source participant ids.                                      |
+| id            | string            | Read-only. Server generated.                                         |
+| receivers     | collection(string) | List of receiving participant ids.                                   |
+| routingMode   | string            | Routing group mode.  Possible values are: `oneToOne`, `multicast`.   |
+| sources       | collection(string) | List of source participant ids.                                      |
 
 > **Note:** Routing mode determines the restrictions on the sources and receivers. Only the following routing groups are supported.
 > - `oneToOne` - sources and receivers have only one participant each.
@@ -51,18 +53,21 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "id": "String (identifier)",
-  "receivers": [ "String" ],
+  "id": "string (identifier)",
+  "receivers": [ "string" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "String" ]
+  "sources": [ "string" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "audioRoutingGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

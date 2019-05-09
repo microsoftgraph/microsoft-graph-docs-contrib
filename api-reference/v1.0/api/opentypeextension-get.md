@@ -1,6 +1,8 @@
 ---
 title: "Get open extension"
 description: "Get an open extension (openTypeExtension object) identified by name or fully qualified name."
+localization_priority: Priority
+author: "dkershaw10"
 ---
 
 # Get open extension
@@ -153,6 +155,16 @@ Second, by its ID (fully qualified name):
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_opentypeextension_1-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_opentypeextension_1-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### Response 1
 Here is the response for the first example.
@@ -217,6 +229,16 @@ Content-type: application/json
     "expirationDate": "2015-07-03T13:04:00Z"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_opentypeextension_2-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_opentypeextension_2-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ****
 
@@ -316,6 +338,16 @@ Content-type: application/json
      ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_opentypeextension_3-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_opentypeextension_3-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ****
 
@@ -376,7 +408,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 ```
 
 
-####Response 5
+#### Response 5
 
 In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to
 `Com.Contoso.Referral`.
@@ -477,5 +509,13 @@ Content-Type: application/json
   "description": "Get openTypeExtension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/opentypeextension-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

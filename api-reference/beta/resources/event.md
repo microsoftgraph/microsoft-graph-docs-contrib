@@ -2,11 +2,13 @@
 title: "event resource type"
 description: "An event in a calendar."
 author: "angelgolfer-ms"
+localization_priority: Priority
+ms.prod: "outlook"
 ---
 
 # event resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).
 
@@ -28,13 +30,14 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+   "keyProperty": "id",
   "optionalProperties": [
     "attachments",
     "calendar",
     "extensions",
     "instances",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -49,7 +52,7 @@ Here is a JSON representation of the resource
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "iud": "string",
+  "uid": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -80,8 +83,8 @@ Here is a JSON representation of the resource
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]  
 }
 
 ```
@@ -175,10 +178,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

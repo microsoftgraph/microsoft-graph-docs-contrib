@@ -3,10 +3,11 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/12/2018
 title: AccessAction
+localization_priority: Normal
 ---
 # accessAction resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.
 
@@ -32,12 +33,13 @@ This resource type has no properties.
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The AccessAction object provides information about accesses of an item.",
   "keywords": "activities,activity,action,access",
   "section": "documentation",
-  "suppressions": [
-  ],
-  "tocPath": "Resources/AccessAction"
-} -->
+  "tocPath": "Resources/AccessAction",
+  "suppressions": []
+}
+-->

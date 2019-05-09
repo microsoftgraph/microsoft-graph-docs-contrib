@@ -1,6 +1,9 @@
 ---
 title: "Update plannerProgressTaskBoardTaskFormat"
 description: "Update the properties of **plannerProgressTaskBoardTaskFormat** object."
+localization_priority: Normal
+author: "TarkanSevilmis"
+ms.prod: "planner"
 ---
 
 # Update plannerProgressTaskBoardTaskFormat
@@ -73,6 +76,16 @@ Content-length: 68
   "orderHint": "C3665D"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_plannerprogresstaskboardtaskformat-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_plannerprogresstaskboardtaskformat-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -81,5 +94,9 @@ Content-length: 68
   "description": "Update plannerprogresstaskboardtaskformat",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/plannerprogresstaskboardtaskformat-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/plannerprogresstaskboardtaskformat-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

@@ -1,11 +1,14 @@
 ---
 title: "Check member groups"
 description: "Check for membership in a specified list of groups, and returns from that list those groups"
+localization_priority: Normal
+author: "lleonard-msft"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Check member groups
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Check for membership in a specified list of groups, and returns from that list those groups
 of which the specified user, group, service principal or directory object is a member. This function is transitive.
@@ -40,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupIds|String|A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.|
+|groupIds|String collection |A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.|
 
 ## Response
 
@@ -55,7 +58,7 @@ If successful, this method returns `200 OK` response code and String collection 
   "name": "directoryobject_checkmembergroups"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/checkMemberGroups
+POST https://graph.microsoft.com/beta/me/checkMemberGroups
 Content-type: application/json
 
 {
@@ -84,13 +87,29 @@ Content-type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/directoryobject_checkmembergroups-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/directoryobject_checkmembergroups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryObject: checkMemberGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryobject-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

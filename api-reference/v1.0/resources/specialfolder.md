@@ -1,8 +1,9 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SpecialFolder
+localization_priority: Normal
 ---
 # SpecialFolder resource type
 

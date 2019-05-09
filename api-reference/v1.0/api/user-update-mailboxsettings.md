@@ -1,6 +1,9 @@
 ---
 title: "Update user mailbox settings"
 description: "Update one or more settings for the user's mailbox. This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), time zone, and working hours."
+localization_priority: Normal
+author: "dkershaw10"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update user mailbox settings
@@ -121,6 +124,16 @@ Content-type: application/json
     }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_mailboxsettings-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_mailboxsettings-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ##### Request 2
@@ -226,5 +239,9 @@ Content-type: application/json
   "description": "Update mailbox settings",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-update-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #errors (score: 5)",
+    "Error: /api-reference/v1.0/api/user-update-mailboxsettings.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

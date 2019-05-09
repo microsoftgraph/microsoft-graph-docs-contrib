@@ -3,10 +3,12 @@ author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
 title: Create a new page in a SharePoint site
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # Create a page in the site pages list of a site
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
@@ -102,7 +104,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": 2,
+    "id": "2",
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",
@@ -181,10 +183,13 @@ Content-type: application/json
 [site]: ../resources/site.md
 [sitePage]: ../resources/sitepage.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a sitePage in the SitePages list in a site.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Pages/Create"
-} -->
+  "tocPath": "Pages/Create",
+  "suppressions": []
+}
+-->

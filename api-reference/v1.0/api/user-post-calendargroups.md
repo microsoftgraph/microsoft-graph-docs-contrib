@@ -2,6 +2,8 @@
 title: "Create CalendarGroup"
 description: "Use this API to create a new CalendarGroup."
 author: "dkershaw10"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create CalendarGroup
@@ -19,6 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/calendarGroups
 POST /users/{id | userPrincipalName}/calendarGroups
 ```
 ## Request headers
@@ -72,6 +75,16 @@ Content-length: 110
   "id": "id-value"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_calendargroup_from_user-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_calendargroup_from_user-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -80,5 +93,9 @@ Content-length: 110
   "description": "Create CalendarGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-post-calendargroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-post-calendargroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

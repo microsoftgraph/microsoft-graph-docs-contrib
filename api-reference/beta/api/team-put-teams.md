@@ -2,11 +2,13 @@
 title: "Create team from group"
 description: "Create a new team from a group."
 author: "nkramer"
+localization_priority: Priority
+ms.prod: "microsoft-teams"
 ---
 
 # Create team from group
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [team](../resources/team.md) from a [group](../resources/group.md).
 
@@ -124,13 +126,16 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
 
 ## See also
 

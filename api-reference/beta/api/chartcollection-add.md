@@ -1,12 +1,14 @@
 ---
-title: "ChartCollection: add"
-description: "Creates a new chart."
+title: "workbookChartCollection: add"
+description: "Creates a new workbookChart."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
-# ChartCollection: add
+# workbookChartCollection: add
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Creates a new chart.
 ## Permissions
@@ -35,13 +37,13 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|string|Represents the type of a chart.  Possible values are: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
-|sourceData|string|The Range object corresponding to the source data.|
-|seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart.  Possible values are: `Auto`, `Columns`, `Rows`.|
+|type|string|Represents the type of a chart.  The possible values are: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
+|sourceData|Json|The Range object corresponding to the source data.|
+|seriesBy|string|Optional. Specifies the way columns or rows are used as data series on the chart.  The possible values are: `Auto`, `Columns`, `Rows`.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Chart](../resources/chart.md) object in the response body.
+If successful, this method returns `200 OK` response code and [workbookChart](../resources/workbookchart.md) object in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -68,7 +70,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -81,13 +83,29 @@ Content-length: 52
   "left": 99
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/chartcollection_add-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/chartcollection_add-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartCollection: add",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartcollection-add.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/chartcollection-add.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

@@ -1,12 +1,14 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: List the contents of a folder
+localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # List children of a driveItem
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.
 
@@ -56,6 +58,16 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 ```http
 GET /me/drive/root/children
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-root-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-root-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ### List children of a DriveItem with a known ID
@@ -67,6 +79,16 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 ```http
 GET /drives/{drive-id}/items/{item-id}/children
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### List children of a DriveItem with a known path
 
@@ -113,10 +135,18 @@ how errors are returned.
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List the children of an item.",
   "keywords": "list,children,collection",
   "section": "documentation",
-  "tocPath": "Items/List children"
-} -->
+  "tocPath": "Items/List children",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

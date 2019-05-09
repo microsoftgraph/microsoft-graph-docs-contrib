@@ -2,11 +2,13 @@
 title: "Update worksheet"
 description: "Update the properties of worksheet object."
 author: "lumine2008"
+localization_priority: Normal
+ms.prod: "excel"
 ---
 
 # Update worksheet
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of worksheet object.
 ## Permissions
@@ -40,7 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [Worksheet](../resources/worksheet.md) object in the response body.
+If successful, this method returns a `200 OK` response code and updated [workbookWorksheet](../resources/workbookworksheet.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -64,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -78,13 +80,29 @@ Content-length: 100
   "visibility": "visibility-value"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/update_worksheet-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update_worksheet-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update worksheet",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/worksheet-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/worksheet-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->
