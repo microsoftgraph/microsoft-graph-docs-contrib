@@ -23,9 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Sites.Read.All, Sites.ReadWrite.All |
 
-## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
-
 ## HTTP request
 
 Get a listItem
@@ -40,6 +37,8 @@ Get specific column values of a listItem
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
+## Optional query parameters
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Example
 
