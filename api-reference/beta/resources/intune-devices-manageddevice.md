@@ -121,9 +121,9 @@ Devices that are managed or pre-enrolled through Intune
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|All applications currently installed on the device|
-|deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|Device category|
+|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status.|
-|users|[user](../resources/intune-devices-user.md) collection|The primary users associated with the managed device.|
+|users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
