@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceCompliancePolicySettingStateSummary"
 description: "Deletes a deviceCompliancePolicySettingStateSummary."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

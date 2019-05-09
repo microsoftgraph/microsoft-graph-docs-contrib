@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementIntentDeviceState"
 description: "Create a new deviceManagementIntentDeviceState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

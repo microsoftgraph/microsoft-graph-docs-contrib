@@ -1,7 +1,7 @@
 ---
 title: "Delete managementConditionStatement"
 description: "Deletes a managementConditionStatement."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

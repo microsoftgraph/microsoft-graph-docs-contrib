@@ -1,7 +1,7 @@
 ---
 title: "keyUsages enum type"
 description: "Key Usage Options."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

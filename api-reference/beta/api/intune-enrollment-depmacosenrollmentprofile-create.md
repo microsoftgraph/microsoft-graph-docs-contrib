@@ -1,7 +1,7 @@
 ---
 title: "Create depMacOSEnrollmentProfile"
 description: "Create a new depMacOSEnrollmentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

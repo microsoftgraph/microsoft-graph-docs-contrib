@@ -1,7 +1,7 @@
 ---
 title: "List androidDeviceOwnerGeneralDeviceConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerGeneralDeviceConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

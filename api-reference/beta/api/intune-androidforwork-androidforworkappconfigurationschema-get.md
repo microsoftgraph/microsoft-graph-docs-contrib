@@ -1,7 +1,7 @@
 ---
 title: "Get androidForWorkAppConfigurationSchema"
 description: "Read properties and relationships of the androidForWorkAppConfigurationSchema object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

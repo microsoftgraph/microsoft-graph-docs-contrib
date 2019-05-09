@@ -1,7 +1,7 @@
 ---
 title: "Create mobileAppAssignment"
 description: "Create a new mobileAppAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

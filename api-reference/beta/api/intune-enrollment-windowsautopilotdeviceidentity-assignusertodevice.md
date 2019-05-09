@@ -1,7 +1,7 @@
 ---
 title: "assignUserToDevice action"
 description: "Assigns user to Autopilot devices."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

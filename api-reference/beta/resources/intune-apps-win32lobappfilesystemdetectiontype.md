@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppFileSystemDetectionType enum type"
 description: "Contains all supported file system detection type."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

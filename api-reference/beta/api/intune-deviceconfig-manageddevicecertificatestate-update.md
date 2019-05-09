@@ -1,7 +1,7 @@
 ---
 title: "Update managedDeviceCertificateState"
 description: "Update the properties of a managedDeviceCertificateState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

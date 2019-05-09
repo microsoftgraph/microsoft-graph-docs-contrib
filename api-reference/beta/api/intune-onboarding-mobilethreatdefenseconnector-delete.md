@@ -1,7 +1,7 @@
 ---
 title: "Delete mobileThreatDefenseConnector"
 description: "Deletes a mobileThreatDefenseConnector."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

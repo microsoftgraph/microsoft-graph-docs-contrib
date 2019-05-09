@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementScriptGroupAssignments"
 description: "List properties and relationships of the deviceManagementScriptGroupAssignment objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

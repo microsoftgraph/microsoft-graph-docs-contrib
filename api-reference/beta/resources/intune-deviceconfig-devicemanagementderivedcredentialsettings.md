@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementDerivedCredentialSettings resource type"
 description: "Entity that describes tenant level settings for derived credentials"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete appleVppTokenTroubleshootingEvent"
 description: "Deletes a appleVppTokenTroubleshootingEvent."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

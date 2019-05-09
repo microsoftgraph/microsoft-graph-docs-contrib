@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhone81VpnConfiguration"
 description: "Create a new windowsPhone81VpnConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

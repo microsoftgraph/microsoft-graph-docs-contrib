@@ -1,7 +1,7 @@
 ---
 title: "Update macOSLobApp"
 description: "Update the properties of a macOSLobApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

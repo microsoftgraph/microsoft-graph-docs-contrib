@@ -1,7 +1,7 @@
 ---
 title: "List macOSExtensionsConfigurations"
 description: "List properties and relationships of the macOSExtensionsConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

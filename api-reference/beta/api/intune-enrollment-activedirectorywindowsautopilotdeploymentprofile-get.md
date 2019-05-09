@@ -1,7 +1,7 @@
 ---
 title: "Get activeDirectoryWindowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the activeDirectoryWindowsAutopilotDeploymentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

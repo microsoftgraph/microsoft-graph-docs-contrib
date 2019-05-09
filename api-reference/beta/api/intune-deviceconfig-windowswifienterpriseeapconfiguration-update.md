@@ -1,7 +1,7 @@
 ---
 title: "Update windowsWifiEnterpriseEAPConfiguration"
 description: "Update the properties of a windowsWifiEnterpriseEAPConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

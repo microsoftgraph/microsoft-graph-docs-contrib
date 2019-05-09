@@ -1,7 +1,7 @@
 ---
 title: "Update windows10EnrollmentCompletionPageConfiguration"
 description: "Update the properties of a windows10EnrollmentCompletionPageConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

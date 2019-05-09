@@ -1,7 +1,7 @@
 ---
 title: "List windowsHealthMonitoringConfigurations"
 description: "List properties and relationships of the windowsHealthMonitoringConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

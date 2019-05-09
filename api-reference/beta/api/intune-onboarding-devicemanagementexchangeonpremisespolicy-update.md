@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementExchangeOnPremisesPolicy"
 description: "Update the properties of a deviceManagementExchangeOnPremisesPolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

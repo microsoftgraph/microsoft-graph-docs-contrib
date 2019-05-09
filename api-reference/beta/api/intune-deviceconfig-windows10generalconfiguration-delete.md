@@ -1,7 +1,7 @@
 ---
 title: "Delete windows10GeneralConfiguration"
 description: "Deletes a windows10GeneralConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

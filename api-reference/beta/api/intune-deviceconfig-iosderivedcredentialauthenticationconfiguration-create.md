@@ -1,7 +1,7 @@
 ---
 title: "Create iosDerivedCredentialAuthenticationConfiguration"
 description: "Create a new iosDerivedCredentialAuthenticationConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

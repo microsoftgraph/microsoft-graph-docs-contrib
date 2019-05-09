@@ -1,7 +1,7 @@
 ---
 title: "Delete iosCompliancePolicy"
 description: "Deletes a iosCompliancePolicy."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

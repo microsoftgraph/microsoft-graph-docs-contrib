@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementTemplate"
 description: "Create a new deviceManagementTemplate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

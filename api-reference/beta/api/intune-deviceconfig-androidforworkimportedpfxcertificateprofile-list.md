@@ -1,7 +1,7 @@
 ---
 title: "List androidForWorkImportedPFXCertificateProfiles"
 description: "List properties and relationships of the androidForWorkImportedPFXCertificateProfile objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

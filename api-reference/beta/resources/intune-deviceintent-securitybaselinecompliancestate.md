@@ -1,7 +1,7 @@
 ---
 title: "securityBaselineComplianceState enum type"
 description: "Security Baseline Compliance State"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

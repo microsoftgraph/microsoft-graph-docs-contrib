@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionDataRecoveryCertificate resource type"
 description: "Windows Information Protection DataRecoveryCertificate"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

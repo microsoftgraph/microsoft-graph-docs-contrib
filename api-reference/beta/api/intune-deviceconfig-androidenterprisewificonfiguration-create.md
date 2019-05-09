@@ -1,7 +1,7 @@
 ---
 title: "Create androidEnterpriseWiFiConfiguration"
 description: "Create a new androidEnterpriseWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

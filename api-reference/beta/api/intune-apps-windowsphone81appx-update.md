@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81AppX"
 description: "Update the properties of a windowsPhone81AppX object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

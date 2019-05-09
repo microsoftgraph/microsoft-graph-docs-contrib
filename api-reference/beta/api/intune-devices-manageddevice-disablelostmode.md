@@ -1,7 +1,7 @@
 ---
 title: "disableLostMode action"
 description: "Disable lost mode"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

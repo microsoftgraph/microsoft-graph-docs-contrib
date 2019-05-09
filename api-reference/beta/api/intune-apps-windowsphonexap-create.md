@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhoneXAP"
 description: "Create a new windowsPhoneXAP object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

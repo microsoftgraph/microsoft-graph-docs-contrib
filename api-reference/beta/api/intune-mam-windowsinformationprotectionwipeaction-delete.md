@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsInformationProtectionWipeAction"
 description: "Deletes a windowsInformationProtectionWipeAction."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

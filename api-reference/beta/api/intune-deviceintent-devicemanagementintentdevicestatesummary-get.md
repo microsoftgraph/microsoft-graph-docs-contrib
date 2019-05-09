@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementIntentDeviceStateSummary"
 description: "Read properties and relationships of the deviceManagementIntentDeviceStateSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

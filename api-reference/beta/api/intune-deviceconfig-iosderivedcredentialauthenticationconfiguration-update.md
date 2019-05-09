@@ -1,7 +1,7 @@
 ---
 title: "Update iosDerivedCredentialAuthenticationConfiguration"
 description: "Update the properties of a iosDerivedCredentialAuthenticationConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

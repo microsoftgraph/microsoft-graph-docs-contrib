@@ -1,7 +1,7 @@
 ---
 title: "resetPasscode action"
 description: "Reset passcode"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

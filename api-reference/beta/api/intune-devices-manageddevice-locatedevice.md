@@ -1,7 +1,7 @@
 ---
 title: "locateDevice action"
 description: "Locate a device"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get appLogCollectionRequest"
 description: "Read properties and relationships of the appLogCollectionRequest object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

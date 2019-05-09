@@ -1,7 +1,7 @@
 ---
 title: "List securityBaselineTemplates"
 description: "List properties and relationships of the securityBaselineTemplate objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

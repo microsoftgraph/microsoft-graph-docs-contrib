@@ -1,7 +1,7 @@
 ---
 title: "mobileAppDependency resource type"
 description: "Describes a dependency type between two mobile apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

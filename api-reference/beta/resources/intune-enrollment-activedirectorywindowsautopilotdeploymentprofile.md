@@ -1,7 +1,7 @@
 ---
 title: "activeDirectoryWindowsAutopilotDeploymentProfile resource type"
 description: "Windows Autopilot Deployment Profile"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

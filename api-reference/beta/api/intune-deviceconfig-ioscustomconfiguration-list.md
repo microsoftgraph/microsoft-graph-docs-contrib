@@ -1,7 +1,7 @@
 ---
 title: "List iosCustomConfigurations"
 description: "List properties and relationships of the iosCustomConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

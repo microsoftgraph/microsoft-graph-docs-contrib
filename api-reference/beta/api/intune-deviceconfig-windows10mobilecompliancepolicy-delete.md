@@ -1,7 +1,7 @@
 ---
 title: "Delete windows10MobileCompliancePolicy"
 description: "Deletes a windows10MobileCompliancePolicy."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

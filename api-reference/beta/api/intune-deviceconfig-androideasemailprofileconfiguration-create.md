@@ -1,7 +1,7 @@
 ---
 title: "Create androidEasEmailProfileConfiguration"
 description: "Create a new androidEasEmailProfileConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

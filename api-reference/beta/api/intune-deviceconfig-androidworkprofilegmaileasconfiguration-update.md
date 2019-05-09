@@ -1,7 +1,7 @@
 ---
 title: "Update androidWorkProfileGmailEasConfiguration"
 description: "Update the properties of a androidWorkProfileGmailEasConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

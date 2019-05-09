@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationTexts"
 description: "List properties and relationships of the groupPolicyPresentationText objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

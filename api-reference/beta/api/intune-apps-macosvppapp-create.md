@@ -1,7 +1,7 @@
 ---
 title: "Create macOsVppApp"
 description: "Create a new macOsVppApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

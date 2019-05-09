@@ -1,7 +1,7 @@
 ---
 title: "Delete securityBaselineCategoryStateSummary"
 description: "Deletes a securityBaselineCategoryStateSummary."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

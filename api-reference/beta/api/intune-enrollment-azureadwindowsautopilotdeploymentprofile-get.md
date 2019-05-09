@@ -1,7 +1,7 @@
 ---
 title: "Get azureADWindowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the azureADWindowsAutopilotDeploymentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create macOSEnterpriseWiFiConfiguration"
 description: "Create a new macOSEnterpriseWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

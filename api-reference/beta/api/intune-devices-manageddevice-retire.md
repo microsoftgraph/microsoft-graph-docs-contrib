@@ -1,7 +1,7 @@
 ---
 title: "retire action"
 description: "Retire a device"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

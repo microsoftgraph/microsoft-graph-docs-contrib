@@ -1,7 +1,7 @@
 ---
 title: "Get targetedManagedAppProtection"
 description: "Read properties and relationships of the targetedManagedAppProtection object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

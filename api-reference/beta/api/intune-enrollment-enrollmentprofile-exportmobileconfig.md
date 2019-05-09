@@ -1,7 +1,7 @@
 ---
 title: "exportMobileConfig function"
 description: "Exports the mobile configuration"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create intuneBrandingProfileAssignment"
 description: "Create a new intuneBrandingProfileAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

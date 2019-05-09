@@ -1,7 +1,7 @@
 ---
 title: "Get applePushNotificationCertificate"
 description: "Read properties and relationships of the applePushNotificationCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

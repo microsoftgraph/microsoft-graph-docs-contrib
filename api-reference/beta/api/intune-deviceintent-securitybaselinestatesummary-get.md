@@ -1,7 +1,7 @@
 ---
 title: "Get securityBaselineStateSummary"
 description: "Read properties and relationships of the securityBaselineStateSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

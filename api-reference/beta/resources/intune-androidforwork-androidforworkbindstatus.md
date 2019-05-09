@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkBindStatus enum type"
 description: "Bind status of the tenant with the Google EMM API"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

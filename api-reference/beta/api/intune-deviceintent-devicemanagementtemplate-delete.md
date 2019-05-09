@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementTemplate"
 description: "Deletes a deviceManagementTemplate."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

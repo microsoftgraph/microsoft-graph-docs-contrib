@@ -1,7 +1,7 @@
 ---
 title: "Update windowsManagementAppHealthState"
 description: "Update the properties of a windowsManagementAppHealthState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "allLicensedUsersAssignmentTarget resource type"
 description: "Represents an assignment to all licensed users in the tenant."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

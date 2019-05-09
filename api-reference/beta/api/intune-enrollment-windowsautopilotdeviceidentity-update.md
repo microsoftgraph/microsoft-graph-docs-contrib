@@ -1,7 +1,7 @@
 ---
 title: "Update windowsAutopilotDeviceIdentity"
 description: "Update the properties of a windowsAutopilotDeviceIdentity object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

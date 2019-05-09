@@ -1,7 +1,7 @@
 ---
 title: "Update importedAppleDeviceIdentity"
 description: "Update the properties of a importedAppleDeviceIdentity object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

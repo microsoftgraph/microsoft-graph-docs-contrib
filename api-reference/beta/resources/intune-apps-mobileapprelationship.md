@@ -1,7 +1,7 @@
 ---
 title: "mobileAppRelationship resource type"
 description: "Describes the relationship for a child mobile app to its parent mobile app."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

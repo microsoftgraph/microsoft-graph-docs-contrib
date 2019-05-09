@@ -1,7 +1,7 @@
 ---
 title: "ratingGermanyMoviesType enum type"
 description: "Movies rating labels in Germany"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

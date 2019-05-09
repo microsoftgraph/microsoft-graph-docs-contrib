@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkGeneralDeviceConfiguration"
 description: "Update the properties of a androidForWorkGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

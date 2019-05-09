@@ -1,7 +1,7 @@
 ---
 title: "List appLogCollectionRequests"
 description: "List properties and relationships of the appLogCollectionRequest objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

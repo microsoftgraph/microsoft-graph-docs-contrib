@@ -1,7 +1,7 @@
 ---
 title: "Update windowsAutopilotDeploymentProfileAssignment"
 description: "Update the properties of a windowsAutopilotDeploymentProfileAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

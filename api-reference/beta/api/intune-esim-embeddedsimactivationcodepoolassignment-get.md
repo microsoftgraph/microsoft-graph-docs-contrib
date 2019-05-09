@@ -1,7 +1,7 @@
 ---
 title: "Get embeddedSIMActivationCodePoolAssignment"
 description: "Read properties and relationships of the embeddedSIMActivationCodePoolAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

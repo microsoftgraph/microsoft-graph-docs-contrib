@@ -1,7 +1,7 @@
 ---
 title: "List androidEasEmailProfileConfigurations"
 description: "List properties and relationships of the androidEasEmailProfileConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

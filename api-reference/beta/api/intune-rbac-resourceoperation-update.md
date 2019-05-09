@@ -1,7 +1,7 @@
 ---
 title: "Update resourceOperation"
 description: "Update the properties of a resourceOperation object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

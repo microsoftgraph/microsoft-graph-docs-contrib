@@ -1,7 +1,7 @@
 ---
 title: "Delete depOnboardingSetting"
 description: "Deletes a depOnboardingSetting."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

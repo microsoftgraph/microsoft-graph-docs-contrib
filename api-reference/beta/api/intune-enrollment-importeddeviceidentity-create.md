@@ -1,7 +1,7 @@
 ---
 title: "Create importedDeviceIdentity"
 description: "Create a new importedDeviceIdentity object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

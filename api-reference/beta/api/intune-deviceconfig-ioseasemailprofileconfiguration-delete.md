@@ -1,7 +1,7 @@
 ---
 title: "Delete iosEasEmailProfileConfiguration"
 description: "Deletes a iosEasEmailProfileConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationLongDecimalTextBox"
 description: "Create a new groupPolicyPresentationLongDecimalTextBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

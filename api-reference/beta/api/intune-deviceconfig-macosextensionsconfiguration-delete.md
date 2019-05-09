@@ -1,7 +1,7 @@
 ---
 title: "Delete macOSExtensionsConfiguration"
 description: "Deletes a macOSExtensionsConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

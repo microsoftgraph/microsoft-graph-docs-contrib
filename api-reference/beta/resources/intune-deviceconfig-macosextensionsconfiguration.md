@@ -1,7 +1,7 @@
 ---
 title: "macOSExtensionsConfiguration resource type"
 description: "MacOS extensions configuration profile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

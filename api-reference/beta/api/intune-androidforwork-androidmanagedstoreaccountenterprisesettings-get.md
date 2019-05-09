@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedStoreAccountEnterpriseSettings"
 description: "Read properties and relationships of the androidManagedStoreAccountEnterpriseSettings object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

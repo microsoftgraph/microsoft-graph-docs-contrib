@@ -1,7 +1,7 @@
 ---
 title: "Update windowsStoreApp"
 description: "Update the properties of a windowsStoreApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create networkIPv4ConfigurationManagementCondition"
 description: "Create a new networkIPv4ConfigurationManagementCondition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

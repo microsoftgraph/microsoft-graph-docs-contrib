@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfileScepCertificateProfile resource type"
 description: "Android Work Profile SCEP certificate profile"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

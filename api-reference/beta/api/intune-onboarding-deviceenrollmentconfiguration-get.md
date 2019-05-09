@@ -1,7 +1,7 @@
 ---
 title: "Get deviceEnrollmentConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

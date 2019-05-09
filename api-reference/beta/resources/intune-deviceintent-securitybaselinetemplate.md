@@ -1,7 +1,7 @@
 ---
 title: "securityBaselineTemplate resource type"
 description: "The security baseline template of the account"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

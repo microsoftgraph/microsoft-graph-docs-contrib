@@ -1,7 +1,7 @@
 ---
 title: "Delete securityBaselineTemplate"
 description: "Deletes a securityBaselineTemplate."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

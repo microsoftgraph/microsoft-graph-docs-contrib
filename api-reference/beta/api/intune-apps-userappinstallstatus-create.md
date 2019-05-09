@@ -1,7 +1,7 @@
 ---
 title: "Create userAppInstallStatus"
 description: "Create a new userAppInstallStatus object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

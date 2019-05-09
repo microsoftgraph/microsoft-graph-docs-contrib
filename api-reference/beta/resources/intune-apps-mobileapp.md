@@ -1,7 +1,7 @@
 ---
 title: "mobileApp resource type"
 description: "An abstract class containing the base properties for Intune mobile apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

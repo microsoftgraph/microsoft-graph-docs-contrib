@@ -1,7 +1,7 @@
 ---
 title: "Update managedAndroidLobApp"
 description: "Update the properties of a managedAndroidLobApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

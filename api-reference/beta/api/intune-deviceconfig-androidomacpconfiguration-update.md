@@ -1,7 +1,7 @@
 ---
 title: "Update androidOmaCpConfiguration"
 description: "Update the properties of a androidOmaCpConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get windowsHealthMonitoringConfiguration"
 description: "Read properties and relationships of the windowsHealthMonitoringConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create macOSLobApp"
 description: "Create a new macOSLobApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

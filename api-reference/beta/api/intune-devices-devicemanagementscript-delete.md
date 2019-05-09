@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementScript"
 description: "Deletes a deviceManagementScript."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

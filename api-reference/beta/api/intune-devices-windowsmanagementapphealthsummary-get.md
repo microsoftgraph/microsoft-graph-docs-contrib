@@ -1,7 +1,7 @@
 ---
 title: "Get windowsManagementAppHealthSummary"
 description: "Read properties and relationships of the windowsManagementAppHealthSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

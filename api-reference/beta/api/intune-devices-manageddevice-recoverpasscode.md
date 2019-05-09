@@ -1,7 +1,7 @@
 ---
 title: "recoverPasscode action"
 description: "Recover passcode"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

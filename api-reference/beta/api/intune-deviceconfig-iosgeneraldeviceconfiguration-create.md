@@ -1,7 +1,7 @@
 ---
 title: "Create iosGeneralDeviceConfiguration"
 description: "Create a new iosGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

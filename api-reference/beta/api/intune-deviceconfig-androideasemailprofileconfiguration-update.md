@@ -1,7 +1,7 @@
 ---
 title: "Update androidEasEmailProfileConfiguration"
 description: "Update the properties of a androidEasEmailProfileConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

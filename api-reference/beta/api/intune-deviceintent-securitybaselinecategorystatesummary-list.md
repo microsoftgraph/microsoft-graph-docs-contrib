@@ -1,7 +1,7 @@
 ---
 title: "List securityBaselineCategoryStateSummaries"
 description: "List properties and relationships of the securityBaselineCategoryStateSummary objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkWiFiConfiguration"
 description: "Update the properties of a androidForWorkWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

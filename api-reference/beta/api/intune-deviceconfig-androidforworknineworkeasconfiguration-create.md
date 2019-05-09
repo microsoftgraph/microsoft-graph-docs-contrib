@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkNineWorkEasConfiguration"
 description: "Create a new androidForWorkNineWorkEasConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

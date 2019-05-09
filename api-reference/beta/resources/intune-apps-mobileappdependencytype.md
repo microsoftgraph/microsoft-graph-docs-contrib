@@ -1,7 +1,7 @@
 ---
 title: "mobileAppDependencyType enum type"
 description: "Indicates the dependency type associated with a relationship between two mobile apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

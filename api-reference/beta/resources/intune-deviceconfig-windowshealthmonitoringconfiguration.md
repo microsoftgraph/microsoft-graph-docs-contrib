@@ -1,7 +1,7 @@
 ---
 title: "windowsHealthMonitoringConfiguration resource type"
 description: "Windows device health monitoring configuration"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

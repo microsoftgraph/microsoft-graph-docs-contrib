@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementIntentDeviceSettingStateSummary"
 description: "Deletes a deviceManagementIntentDeviceSettingStateSummary."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

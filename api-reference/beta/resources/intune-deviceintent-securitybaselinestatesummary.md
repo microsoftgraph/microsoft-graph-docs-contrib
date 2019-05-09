@@ -1,7 +1,7 @@
 ---
 title: "securityBaselineStateSummary resource type"
 description: "The security baseline compliance state summary for the security baseline of the account."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

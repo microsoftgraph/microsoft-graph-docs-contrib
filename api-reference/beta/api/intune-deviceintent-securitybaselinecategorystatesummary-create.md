@@ -1,7 +1,7 @@
 ---
 title: "Create securityBaselineCategoryStateSummary"
 description: "Create a new securityBaselineCategoryStateSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

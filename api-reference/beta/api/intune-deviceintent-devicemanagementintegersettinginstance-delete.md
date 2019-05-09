@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementIntegerSettingInstance"
 description: "Deletes a deviceManagementIntegerSettingInstance."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

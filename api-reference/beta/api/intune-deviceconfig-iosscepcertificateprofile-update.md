@@ -1,7 +1,7 @@
 ---
 title: "Update iosScepCertificateProfile"
 description: "Update the properties of a iosScepCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

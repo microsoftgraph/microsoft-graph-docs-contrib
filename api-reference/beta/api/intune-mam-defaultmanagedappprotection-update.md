@@ -1,7 +1,7 @@
 ---
 title: "Update defaultManagedAppProtection"
 description: "Update the properties of a defaultManagedAppProtection object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

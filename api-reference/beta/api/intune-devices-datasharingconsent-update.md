@@ -1,7 +1,7 @@
 ---
 title: "Update dataSharingConsent"
 description: "Update the properties of a dataSharingConsent object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

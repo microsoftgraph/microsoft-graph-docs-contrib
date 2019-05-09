@@ -1,7 +1,7 @@
 ---
 title: "Delete androidWorkProfileCustomConfiguration"
 description: "Deletes a androidWorkProfileCustomConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

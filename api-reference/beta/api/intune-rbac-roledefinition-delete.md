@@ -1,7 +1,7 @@
 ---
 title: "Delete roleDefinition"
 description: "Deletes a roleDefinition."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

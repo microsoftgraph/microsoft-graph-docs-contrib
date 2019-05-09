@@ -1,7 +1,7 @@
 ---
 title: "Update deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Update the properties of a deviceEnrollmentWindowsHelloForBusinessConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

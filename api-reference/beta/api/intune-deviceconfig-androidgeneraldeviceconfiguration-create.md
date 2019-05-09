@@ -1,7 +1,7 @@
 ---
 title: "Create androidGeneralDeviceConfiguration"
 description: "Create a new androidGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

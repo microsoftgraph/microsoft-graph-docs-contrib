@@ -1,7 +1,7 @@
 ---
 title: "requestRemoteAssistance action"
 description: "Request remote assistance"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

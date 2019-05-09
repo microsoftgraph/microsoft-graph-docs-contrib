@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementStringSettingInstances"
 description: "List properties and relationships of the deviceManagementStringSettingInstance objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

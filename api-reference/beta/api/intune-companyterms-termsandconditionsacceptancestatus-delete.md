@@ -1,7 +1,7 @@
 ---
 title: "Delete termsAndConditionsAcceptanceStatus"
 description: "Deletes a termsAndConditionsAcceptanceStatus."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create enrollmentTroubleshootingEvent"
 description: "Create a new enrollmentTroubleshootingEvent object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

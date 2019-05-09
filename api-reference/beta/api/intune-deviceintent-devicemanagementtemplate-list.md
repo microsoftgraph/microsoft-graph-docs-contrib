@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementTemplates"
 description: "List properties and relationships of the deviceManagementTemplate objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create androidWorkProfileVpnConfiguration"
 description: "Create a new androidWorkProfileVpnConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

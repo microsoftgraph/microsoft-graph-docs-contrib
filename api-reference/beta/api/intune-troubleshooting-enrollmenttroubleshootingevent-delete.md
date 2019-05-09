@@ -1,7 +1,7 @@
 ---
 title: "Delete enrollmentTroubleshootingEvent"
 description: "Deletes a enrollmentTroubleshootingEvent."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

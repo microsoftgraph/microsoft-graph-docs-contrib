@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementDerivedCredentialSettings"
 description: "Update the properties of a deviceManagementDerivedCredentialSettings object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

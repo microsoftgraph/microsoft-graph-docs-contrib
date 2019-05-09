@@ -1,7 +1,7 @@
 ---
 title: "Delete userAppInstallStatus"
 description: "Deletes a userAppInstallStatus."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementDerivedCredentialSettings"
 description: "Read properties and relationships of the deviceManagementDerivedCredentialSettings object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

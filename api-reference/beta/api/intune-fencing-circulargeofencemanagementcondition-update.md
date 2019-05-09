@@ -1,7 +1,7 @@
 ---
 title: "Update circularGeofenceManagementCondition"
 description: "Update the properties of a circularGeofenceManagementCondition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

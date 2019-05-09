@@ -1,7 +1,7 @@
 ---
 title: "Create microsoftStoreForBusinessApp"
 description: "Create a new microsoftStoreForBusinessApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

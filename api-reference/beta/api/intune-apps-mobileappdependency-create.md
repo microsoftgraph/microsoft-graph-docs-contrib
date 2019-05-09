@@ -1,7 +1,7 @@
 ---
 title: "Create mobileAppDependency"
 description: "Create a new mobileAppDependency object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

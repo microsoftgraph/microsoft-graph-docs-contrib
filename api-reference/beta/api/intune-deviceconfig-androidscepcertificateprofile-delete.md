@@ -1,7 +1,7 @@
 ---
 title: "Delete androidScepCertificateProfile"
 description: "Deletes a androidScepCertificateProfile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

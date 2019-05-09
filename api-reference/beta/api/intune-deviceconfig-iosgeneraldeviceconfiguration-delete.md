@@ -1,7 +1,7 @@
 ---
 title: "Delete iosGeneralDeviceConfiguration"
 description: "Deletes a iosGeneralDeviceConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

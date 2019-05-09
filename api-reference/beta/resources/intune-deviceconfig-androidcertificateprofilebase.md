@@ -1,7 +1,7 @@
 ---
 title: "androidCertificateProfileBase resource type"
 description: "Android certificate profile base."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

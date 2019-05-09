@@ -1,7 +1,7 @@
 ---
 title: "List windowsDefenderAdvancedThreatProtectionConfigurations"
 description: "List properties and relationships of the windowsDefenderAdvancedThreatProtectionConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

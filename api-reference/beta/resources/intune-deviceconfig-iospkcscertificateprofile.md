@@ -1,7 +1,7 @@
 ---
 title: "iosPkcsCertificateProfile resource type"
 description: "iOS PKCS certificate profile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

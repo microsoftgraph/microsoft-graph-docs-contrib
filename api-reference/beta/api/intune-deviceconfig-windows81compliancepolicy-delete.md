@@ -1,7 +1,7 @@
 ---
 title: "Delete windows81CompliancePolicy"
 description: "Deletes a windows81CompliancePolicy."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

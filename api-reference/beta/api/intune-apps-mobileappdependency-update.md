@@ -1,7 +1,7 @@
 ---
 title: "Update mobileAppDependency"
 description: "Update the properties of a mobileAppDependency object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

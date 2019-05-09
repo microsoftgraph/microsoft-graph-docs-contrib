@@ -1,7 +1,7 @@
 ---
 title: "enrollmentConfigurationAssignment resource type"
 description: "Enrollment Configuration Assignment"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update win32LobApp"
 description: "Update the properties of a win32LobApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

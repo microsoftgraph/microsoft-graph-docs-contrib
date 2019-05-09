@@ -1,7 +1,7 @@
 ---
 title: "Delete mobileAppAssignment"
 description: "Deletes a mobileAppAssignment."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

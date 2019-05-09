@@ -1,7 +1,7 @@
 ---
 title: "Delete dataSharingConsent"
 description: "Deletes a dataSharingConsent."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update androidWorkProfileVpnConfiguration"
 description: "Update the properties of a androidWorkProfileVpnConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

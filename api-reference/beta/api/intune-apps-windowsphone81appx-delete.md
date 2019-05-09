@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsPhone81AppX"
 description: "Deletes a windowsPhone81AppX."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

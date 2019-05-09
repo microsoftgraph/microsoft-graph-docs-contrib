@@ -1,7 +1,7 @@
 ---
 title: "macOSCertificateProfileBase resource type"
 description: "Mac OS certificate profile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

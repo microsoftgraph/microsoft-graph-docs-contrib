@@ -1,7 +1,7 @@
 ---
 title: "Get iosEasEmailProfileConfiguration"
 description: "Read properties and relationships of the iosEasEmailProfileConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

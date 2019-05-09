@@ -1,7 +1,7 @@
 ---
 title: "Delete localizedNotificationMessage"
 description: "Deletes a localizedNotificationMessage."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

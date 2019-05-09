@@ -1,7 +1,7 @@
 ---
 title: "securityBaselineDeviceState resource type"
 description: "The security baseline compliance state summary of the security baseline for a device."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

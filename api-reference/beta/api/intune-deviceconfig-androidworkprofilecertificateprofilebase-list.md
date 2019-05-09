@@ -1,7 +1,7 @@
 ---
 title: "List androidWorkProfileCertificateProfileBases"
 description: "List properties and relationships of the androidWorkProfileCertificateProfileBase objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

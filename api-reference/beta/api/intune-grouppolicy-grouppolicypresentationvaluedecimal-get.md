@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyPresentationValueDecimal"
 description: "Read properties and relationships of the groupPolicyPresentationValueDecimal object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

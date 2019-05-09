@@ -1,7 +1,7 @@
 ---
 title: "Update mobileAppInstallStatus"
 description: "Update the properties of a mobileAppInstallStatus object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "bitLockerEncryptionMethod enum type"
 description: "BitLockerEncryptionMethod types"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

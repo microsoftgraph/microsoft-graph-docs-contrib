@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsManagementAppHealthState"
 description: "Deletes a windowsManagementAppHealthState."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "cleanWindowsDevice action"
 description: "Clean Windows device"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceCompliancePolicyAssignment"
 description: "Deletes a deviceCompliancePolicyAssignment."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

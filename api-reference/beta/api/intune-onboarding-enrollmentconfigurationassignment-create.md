@@ -1,7 +1,7 @@
 ---
 title: "Create enrollmentConfigurationAssignment"
 description: "Create a new enrollmentConfigurationAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

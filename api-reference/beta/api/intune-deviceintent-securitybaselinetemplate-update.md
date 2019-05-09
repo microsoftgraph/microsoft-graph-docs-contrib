@@ -1,7 +1,7 @@
 ---
 title: "Update securityBaselineTemplate"
 description: "Update the properties of a securityBaselineTemplate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

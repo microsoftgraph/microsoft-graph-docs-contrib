@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationBandwidth resource type"
 description: "Bandwidth restriction types"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

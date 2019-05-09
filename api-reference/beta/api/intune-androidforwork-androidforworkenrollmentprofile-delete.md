@@ -1,7 +1,7 @@
 ---
 title: "Delete androidForWorkEnrollmentProfile"
 description: "Deletes a androidForWorkEnrollmentProfile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

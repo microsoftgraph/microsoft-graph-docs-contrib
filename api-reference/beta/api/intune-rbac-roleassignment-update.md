@@ -1,7 +1,7 @@
 ---
 title: "Update roleAssignment"
 description: "Update the properties of a roleAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create windowsHealthMonitoringConfiguration"
 description: "Create a new windowsHealthMonitoringConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

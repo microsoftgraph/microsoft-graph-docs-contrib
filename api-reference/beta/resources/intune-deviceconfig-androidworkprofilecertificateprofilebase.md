@@ -1,7 +1,7 @@
 ---
 title: "androidWorkProfileCertificateProfileBase resource type"
 description: "Android Work Profile certificate profile base."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

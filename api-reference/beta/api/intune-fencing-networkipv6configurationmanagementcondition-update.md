@@ -1,7 +1,7 @@
 ---
 title: "Update networkIPv6ConfigurationManagementCondition"
 description: "Update the properties of a networkIPv6ConfigurationManagementCondition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

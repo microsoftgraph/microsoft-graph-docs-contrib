@@ -1,7 +1,7 @@
 ---
 title: "Create securityBaselineTemplate"
 description: "Create a new securityBaselineTemplate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

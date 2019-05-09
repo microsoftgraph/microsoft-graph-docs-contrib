@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementPartner"
 description: "Create a new deviceManagementPartner object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

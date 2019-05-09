@@ -1,7 +1,7 @@
 ---
 title: "Update macOsVppApp"
 description: "Update the properties of a macOsVppApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

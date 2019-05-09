@@ -1,7 +1,7 @@
 ---
 title: "Update windows81GeneralConfiguration"
 description: "Update the properties of a windows81GeneralConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

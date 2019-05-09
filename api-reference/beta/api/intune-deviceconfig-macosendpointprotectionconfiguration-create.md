@@ -1,7 +1,7 @@
 ---
 title: "Create macOSEndpointProtectionConfiguration"
 description: "Create a new macOSEndpointProtectionConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

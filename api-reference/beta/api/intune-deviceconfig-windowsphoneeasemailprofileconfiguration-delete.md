@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsPhoneEASEmailProfileConfiguration"
 description: "Deletes a windowsPhoneEASEmailProfileConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

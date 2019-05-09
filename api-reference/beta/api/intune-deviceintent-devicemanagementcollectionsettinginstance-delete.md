@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementCollectionSettingInstance"
 description: "Deletes a deviceManagementCollectionSettingInstance."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

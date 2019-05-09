@@ -1,7 +1,7 @@
 ---
 title: "Get iosCertificateProfile"
 description: "Read properties and relationships of the iosCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

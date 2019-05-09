@@ -1,7 +1,7 @@
 ---
 title: "Create userPFXCertificate"
 description: "Create a new userPFXCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementCollectionSettingInstance"
 description: "Update the properties of a deviceManagementCollectionSettingInstance object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

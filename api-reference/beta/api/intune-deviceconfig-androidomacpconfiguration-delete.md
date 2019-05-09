@@ -1,7 +1,7 @@
 ---
 title: "Delete androidOmaCpConfiguration"
 description: "Deletes a androidOmaCpConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

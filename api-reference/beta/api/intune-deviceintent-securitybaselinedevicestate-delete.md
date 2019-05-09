@@ -1,7 +1,7 @@
 ---
 title: "Delete securityBaselineDeviceState"
 description: "Deletes a securityBaselineDeviceState."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

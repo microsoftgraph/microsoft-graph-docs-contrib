@@ -1,7 +1,7 @@
 ---
 title: "Delete groupPolicyPresentationTextBox"
 description: "Deletes a groupPolicyPresentationTextBox."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

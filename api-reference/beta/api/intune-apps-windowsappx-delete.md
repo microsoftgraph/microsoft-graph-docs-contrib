@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsAppX"
 description: "Deletes a windowsAppX."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

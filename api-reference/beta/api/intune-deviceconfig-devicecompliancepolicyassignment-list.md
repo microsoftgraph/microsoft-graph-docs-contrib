@@ -1,7 +1,7 @@
 ---
 title: "List deviceCompliancePolicyAssignments"
 description: "List properties and relationships of the deviceCompliancePolicyAssignment objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsHealthMonitoringConfiguration"
 description: "Update the properties of a windowsHealthMonitoringConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

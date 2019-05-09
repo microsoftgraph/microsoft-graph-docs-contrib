@@ -1,7 +1,7 @@
 ---
 title: "windows10EnrollmentCompletionPageConfiguration resource type"
 description: "Windows 10 Enrollment Status Page Configuration"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

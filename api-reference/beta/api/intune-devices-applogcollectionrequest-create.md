@@ -1,7 +1,7 @@
 ---
 title: "Create appLogCollectionRequest"
 description: "Create a new appLogCollectionRequest object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

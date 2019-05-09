@@ -1,7 +1,7 @@
 ---
 title: "Get androidPkcsCertificateProfile"
 description: "Read properties and relationships of the androidPkcsCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

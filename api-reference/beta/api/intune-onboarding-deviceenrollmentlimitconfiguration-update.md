@@ -1,7 +1,7 @@
 ---
 title: "Update deviceEnrollmentLimitConfiguration"
 description: "Update the properties of a deviceEnrollmentLimitConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

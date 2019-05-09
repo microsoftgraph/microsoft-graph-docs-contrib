@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementScript"
 description: "Update the properties of a deviceManagementScript object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

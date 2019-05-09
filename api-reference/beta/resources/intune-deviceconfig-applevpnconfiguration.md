@@ -1,7 +1,7 @@
 ---
 title: "appleVpnConfiguration resource type"
 description: "Apple VPN configuration profile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update iosUpdateConfiguration"
 description: "Update the properties of a iosUpdateConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

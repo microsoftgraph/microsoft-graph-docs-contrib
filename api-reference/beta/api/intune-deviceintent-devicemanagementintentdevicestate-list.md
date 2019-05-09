@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementIntentDeviceStates"
 description: "List properties and relationships of the deviceManagementIntentDeviceState objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete iosDerivedCredentialAuthenticationConfiguration"
 description: "Deletes a iosDerivedCredentialAuthenticationConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

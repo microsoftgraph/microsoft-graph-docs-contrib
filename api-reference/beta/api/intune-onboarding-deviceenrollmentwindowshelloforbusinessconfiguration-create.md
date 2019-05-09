@@ -1,7 +1,7 @@
 ---
 title: "Create deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Create a new deviceEnrollmentWindowsHelloForBusinessConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

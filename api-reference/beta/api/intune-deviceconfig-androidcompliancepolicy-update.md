@@ -1,7 +1,7 @@
 ---
 title: "Update androidCompliancePolicy"
 description: "Update the properties of a androidCompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

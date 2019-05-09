@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementTemplate"
 description: "Update the properties of a deviceManagementTemplate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

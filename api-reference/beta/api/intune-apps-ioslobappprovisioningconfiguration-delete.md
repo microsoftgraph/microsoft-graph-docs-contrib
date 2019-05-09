@@ -1,7 +1,7 @@
 ---
 title: "Delete iosLobAppProvisioningConfiguration"
 description: "Deletes a iosLobAppProvisioningConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

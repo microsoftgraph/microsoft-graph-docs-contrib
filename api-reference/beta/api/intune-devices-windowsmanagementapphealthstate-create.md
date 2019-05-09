@@ -1,7 +1,7 @@
 ---
 title: "Create windowsManagementAppHealthState"
 description: "Create a new windowsManagementAppHealthState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

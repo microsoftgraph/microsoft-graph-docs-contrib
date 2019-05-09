@@ -1,7 +1,7 @@
 ---
 title: "Create enterpriseCodeSigningCertificate"
 description: "Create a new enterpriseCodeSigningCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "assignResourceAccountToDevice action"
 description: "Assigns resource account to Autopilot devices."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

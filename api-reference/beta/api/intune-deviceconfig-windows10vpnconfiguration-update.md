@@ -1,7 +1,7 @@
 ---
 title: "Update windows10VpnConfiguration"
 description: "Update the properties of a windows10VpnConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

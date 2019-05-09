@@ -1,7 +1,7 @@
 ---
 title: "Delete macOSEnterpriseWiFiConfiguration"
 description: "Deletes a macOSEnterpriseWiFiConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get iosVppEBookAssignment"
 description: "Read properties and relationships of the iosVppEBookAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

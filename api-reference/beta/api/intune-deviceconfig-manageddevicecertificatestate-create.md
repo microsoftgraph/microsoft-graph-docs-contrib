@@ -1,7 +1,7 @@
 ---
 title: "Create managedDeviceCertificateState"
 description: "Create a new managedDeviceCertificateState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

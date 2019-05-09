@@ -1,7 +1,7 @@
 ---
 title: "Update windowsInformationProtectionWipeAction"
 description: "Update the properties of a windowsInformationProtectionWipeAction object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

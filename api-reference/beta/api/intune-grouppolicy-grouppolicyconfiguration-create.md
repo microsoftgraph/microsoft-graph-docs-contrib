@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyConfiguration"
 description: "Create a new groupPolicyConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

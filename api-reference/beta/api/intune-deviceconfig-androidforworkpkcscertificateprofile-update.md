@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkPkcsCertificateProfile"
 description: "Update the properties of a androidForWorkPkcsCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

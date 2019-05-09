@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81StoreApp"
 description: "Update the properties of a windowsPhone81StoreApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
