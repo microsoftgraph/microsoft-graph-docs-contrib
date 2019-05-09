@@ -38,7 +38,7 @@ Get specific column values of a listItem
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields(select=Column1,Column2)
 ```
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Example
 
