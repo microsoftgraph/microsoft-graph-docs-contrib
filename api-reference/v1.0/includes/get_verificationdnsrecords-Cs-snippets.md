@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var domainDnsRecord = await graphClient.Domains["{domain-name}"].VerificationDnsRecords
+var verificationDnsRecords = await graphClient.Domains["{domain-name}"].VerificationDnsRecords
 	.Request()
 	.GetAsync();
 

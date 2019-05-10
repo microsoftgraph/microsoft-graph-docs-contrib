@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var program = await graphClient.Programs
+var programs = await graphClient.Programs
 	.Request()
 	.GetAsync();
 

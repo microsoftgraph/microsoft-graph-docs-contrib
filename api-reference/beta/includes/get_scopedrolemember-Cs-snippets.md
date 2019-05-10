@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var scopedRoleMembership = await graphClient.AdministrativeUnits["{id}"].ScopedRoleMembers
+var scopedRoleMembers = await graphClient.AdministrativeUnits["{id}"].ScopedRoleMembers
 	.Request()
 	.GetAsync();
 

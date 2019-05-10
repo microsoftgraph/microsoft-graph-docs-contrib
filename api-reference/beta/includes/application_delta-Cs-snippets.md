@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var application = await graphClient.Applications.Delta()
+var delta = await graphClient.Applications.Delta()
 	.Request()
 	.GetAsync();
 

@@ -66,6 +66,8 @@ Content-length: 46
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_workbookpivottable-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_workbookpivottable-Cs-snippets.md)]

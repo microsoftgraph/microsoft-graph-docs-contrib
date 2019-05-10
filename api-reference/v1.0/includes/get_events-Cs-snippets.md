@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var _event = await graphClient.Me.Events
+var events = await graphClient.Me.Events
 	.Request()
 	.Header("Prefer","outlook.timezone="Pacific Standard Time"")
 	.Select( e => new {

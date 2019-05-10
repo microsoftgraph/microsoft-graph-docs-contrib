@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var riskyUser = await graphClient.RiskyUsers
+var riskyUsers = await graphClient.RiskyUsers
 	.Request()
 	.Filter("riskLevel eq microsoft.graph.riskLevel'medium'")
 	.GetAsync();

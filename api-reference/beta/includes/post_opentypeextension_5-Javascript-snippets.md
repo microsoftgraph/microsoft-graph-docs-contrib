@@ -19,7 +19,7 @@ const conversation = {
           },
           Extensions: [
             {
-              @odata.type: "microsoft.outlookServices.openTypeExtension",
+              @odata.type: "microsoft.graph.openTypeExtension",
               extensionName: "Com.Contoso.Benefits",
               companyName: "Contoso",
               expirationDate: "2016-08-03T11:00:00.000Z",

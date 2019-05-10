@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var subscribedSku = await graphClient.SubscribedSkus
+var subscribedSkus = await graphClient.SubscribedSkus
 	.Request()
 	.GetAsync();
 

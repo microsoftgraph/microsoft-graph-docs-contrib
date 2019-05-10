@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var emailAppUsageUserDetail = await graphClient.Reports.GetEmailAppUsageUserDetail('D7')
+var getEmailAppUsageUserDetail = await graphClient.Reports.GetEmailAppUsageUserDetail('D7')
 	.Request()
 	.GetAsync();
 
