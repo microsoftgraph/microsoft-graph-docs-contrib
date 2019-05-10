@@ -2,12 +2,10 @@
 title: "Onboarding to cross-device experiences for Microsoft Graph notifications "
 description: "Register your application on the Windows Dev Center to enable your app clients to receive cross-device notifications sent through Microsoft Graph.  "
 localization_priority: Priority
-ms.prod: "Microsoft Graph notifications"
+ms.prod: notifications"
 ---
 
-# Onboarding to Cross-device Experiences 
-
-## Register your application in Microsoft Windows Dev Center for cross-device experiences 
+# Onboarding to cross-device experiences for Microsoft Graph notifications
 
 In addition to [app registration on Azure Portal](notifications-integration-app-registration.md), your application needs to register cross-device information such as cross-platform application id and cross-platform push credentials in order to authorizes Microsoft Graph to send notifications via native push notification services that correspond to each operating system: Windows, iOS, and Android. This is done through [Partner Center dashboard (formerly Windows Dev Center dashboard)](https://partner.microsoft.com/dashboard/). 
 
