@@ -26592,7 +26592,7 @@
         },
         {
             "source_path": "concepts\\auth_overview.md",
-            "redirect_url": "/graph/auth",
+            "redirect_url": "/graph/auth/",
             "redirect_document_id": true
         },
         {
