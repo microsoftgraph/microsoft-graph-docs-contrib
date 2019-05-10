@@ -1,0 +1,2 @@
+<!-- markdownlint-disable MD041 -->
+By default, this value changes when the item is moved. To change this behavior, use the `Prefer: IdType="ImmutableId"`. See [Get immutable identifiers for Outlook resources](../../concepts/outlook-immutable-id.md) for more information.
