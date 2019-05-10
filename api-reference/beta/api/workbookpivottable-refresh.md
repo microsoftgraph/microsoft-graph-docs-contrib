@@ -63,6 +63,8 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookpivottable_refresh-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookpivottable_refresh-Cs-snippets.md)]

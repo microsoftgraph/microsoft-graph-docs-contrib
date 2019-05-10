@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var mailFolder = await graphClient.Me.MailFolders.Delta()
+var delta = await graphClient.Me.MailFolders.Delta()
 	.Request()
 	.GetAsync();
 

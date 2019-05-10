@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var driveItem = await graphClient.Me.Drive.Following
+var following = await graphClient.Me.Drive.Following
 	.Request()
 	.GetAsync();
 

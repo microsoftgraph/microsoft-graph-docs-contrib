@@ -75,6 +75,8 @@ Content-length: 247
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_rows-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_rows-Cs-snippets.md)]

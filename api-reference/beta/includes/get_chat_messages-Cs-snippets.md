@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var chatMessage = await graphClient.Chats["{id}"].Messages
+var messages = await graphClient.Chats["{id}"].Messages
 	.Request()
 	.GetAsync();
 

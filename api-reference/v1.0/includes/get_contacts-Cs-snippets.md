@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var contact = await graphClient.Me.Contacts
+var contacts = await graphClient.Me.Contacts
 	.Request()
 	.GetAsync();
 

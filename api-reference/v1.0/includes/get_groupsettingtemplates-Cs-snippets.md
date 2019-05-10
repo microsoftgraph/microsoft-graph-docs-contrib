@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var groupSettingTemplate = await graphClient.GroupSettingTemplates
+var groupSettingTemplates = await graphClient.GroupSettingTemplates
 	.Request()
 	.GetAsync();
 

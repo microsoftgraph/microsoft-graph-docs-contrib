@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var synchronizationJob = await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs
+var jobs = await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs
 	.Request()
 	.GetAsync();
 

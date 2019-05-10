@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.Groups["{id}"].AcceptedSenders
+var acceptedSenders = await graphClient.Groups["{id}"].AcceptedSenders
 	.Request()
 	.GetAsync();
 

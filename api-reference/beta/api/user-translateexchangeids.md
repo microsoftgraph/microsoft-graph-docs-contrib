@@ -120,6 +120,8 @@ Content-type: application/json
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_translateexchangeids-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/user_translateexchangeids-Cs-snippets.md)]

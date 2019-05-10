@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var mailFolder = await graphClient.Me.MailFolders["AAMkAGVmMDEzM"].ChildFolders
+var childFolders = await graphClient.Me.MailFolders["AAMkAGVmMDEzM"].ChildFolders
 	.Request()
 	.GetAsync();
 

@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var user = await graphClient.Users
+var users = await graphClient.Users
 	.Request()
 	.Select( e => new {
 			 e.DisplayName,
