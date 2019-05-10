@@ -26592,6 +26592,11 @@
         },
         {
             "source_path": "concepts\\auth_overview.md",
+            "redirect_url": "/graph/auth-overview",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts\\auth-overview.md",
             "redirect_url": "/graph/auth/",
             "redirect_document_id": true
         },
