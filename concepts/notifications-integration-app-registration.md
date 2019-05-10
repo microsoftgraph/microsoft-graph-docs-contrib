@@ -19,25 +19,25 @@ If you haven’t already done so, you’ll now need to register your application
 
 1.  Navigate to “All services” and search for “App registrations” (you can optionally also click the favorite icon to add it to your left navigation menu for quick access)
     
-    ![App registrations service](images/notif-search-app-registrations.png)
+    ![App registrations service](images/notifications-search-app-registrations.png)
 
 2.  Create a “New registration” and select a name and supported account type appropriate to your business, as shown below. You may also optionally provide a redirect URI.
     
-    ![Register an application](images/notif-register-app.png)
+    ![Register an application](images/notifications-register-app.png)
 
 3.  Once your application has been created, it’ll be given an Application ID/Client ID, as shown below. You’ll need this ID later when registering your cross-device applications in the [Partner Center](https://partner.microsoft.com/).
-    ![Application overview](images/notif-app-overview.png)
+    ![Application overview](images/notifications-app-overview.png)
 
 4.  Next, in order to enable your application to identify and authenticate itself when obtaining auth. tokens, you can either upload your own certificate or create a new client secret by navigating to “Certificates & secrets” as shown below.
     
-    ![App certificates and secrets](images/notif-app-secrets.png)
+    ![App certificates and secrets](images/notifications-app-secrets.png)
     
     > [!NOTE]
 	> If you opt to generate a new client secret, be sure to copy and keep it in a safe place as you won’t be able to access it again once you leave the portal.
 
 5.  Next, you will need to add additional permissions required in order to leverage Graph Notifications. Click on “Add a permission” and under Microsoft APIs, select “Microsoft Graph”, followed by “Delegated permissions” as shown below.
     
-    ![Add permissions](images/notif-api-permissions.png)
+    ![Add permissions](images/notifications-api-permissions.png)
     
     You will need to add the list of permissions as shown below:
 
@@ -55,6 +55,6 @@ If you haven’t already done so, you’ll now need to register your application
 
   - wns.connect - allows connecting to windows notification service
 
-  ![List of allowed delegated permissions](images/notif-api-permissions-list.png)
+  ![List of allowed delegated permissions](images/notifications-api-permissions-list.png)
 
-Now that you’ve completed registration on the Azure portal, you will need to visit [Partner Center/Windows Dev Center](https://partner.microsoft.com/) to setup your application for cross-device experiences and to target your corresponding app platforms for notifications sent through Microsoft Graph.  For next steps, proceed to [Onboarding to cross-device experiences](notif-integration-cross-device-experiences-onboarding.md). 
+Now that you’ve completed registration on the Azure portal, you will need to visit [Partner Center/Windows Dev Center](https://partner.microsoft.com/) to setup your application for cross-device experiences and to target your corresponding app platforms for notifications sent through Microsoft Graph.  For next steps, proceed to [Onboarding to cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md). 

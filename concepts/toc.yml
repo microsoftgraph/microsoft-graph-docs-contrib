@@ -157,29 +157,27 @@
       - name: Error codes
         href: onenote-error-codes.md
     - name: Notifications (preview)
-      displayName: User Notifications
+      displayName: Notifications
       items:
       - name: Overview
         href: notifications-concept-overview.md
-      - name: Get Started
-        displayName: Notifications Quick Start
+      - name: Get started
+        displayName: Notifications
         items: 
-        - name: Integration Overview
-          href: notif-integration-e2e-overview.md
-        - name: App Registraion
-          displayname: Azure Portal Onboarding
-          href: notif-integration-app-registration.md
-        - name: Cross-Device Onboarding
-          displayname: Partner Center Onboarding for Cross-Device Experiences
-          href: notif-integration-cross-device-experiences-onboarding.md
-        - name: App Server Integration
-          href: notif-integrating-app-server.md
-        - name: Windows App Integration
-          href: notif-integrating-with-windows.md
-        - name: Android App Integration
-          href: notif-integrating-with-android.md
-        - name: IOS App Integration
-          href: notif-integrating-with-ios.md
+        - name: Integration overview
+          href: notifications-integration-e2e-overview.md
+        - name: App registraion
+          href: notifications-integration-app-registration.md
+        - name: Cross-device onboarding
+          href: notifications-integration-cross-device-experiences-onboarding.md
+        - name: App server integration
+          href: notifications-integrating-app-server.md
+        - name: Windows app integration
+          href: notifications-integrating-with-windows.md
+        - name: Android app integration
+          href: notifications-integrating-with-android.md
+        - name: IOS app integration
+          href: notifications-integrating-with-ios.md
     - name: Personal contacts
       displayName: Outlook, Outlook contacts, Outlook contact, People
       items:

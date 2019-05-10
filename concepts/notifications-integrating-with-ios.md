@@ -7,7 +7,7 @@ ms.prod: "Microsoft Graph notifications"
 
 # Integrate your iOS app with the client-side SDK for user notifications
 
-After you [register your app](notif-integration-app-registration.md) in the Azure Portal and onboard your [cross-device experiences](notif-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK foriOS apps.  
+After you [register your app](notifications-integration-app-registration.md) in the Azure Portal and onboard your [cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK foriOS apps.  
 
 With the client-side SDK, your app can perform the necessary registration steps to start receiving notifications published from your app server targeted at the user who is currently signed in. The SDK then manages the notifications on the client side, including receiving new incoming notifications, managing the state of notifications to achieve scenarios like universal dismiss, and retrieving full notification history. 
 
@@ -15,7 +15,7 @@ With the client-side SDK, your app can perform the necessary registration steps 
 
 For receiving new incoming notifications, the data flow is shown in the following diagram.
 
-![New notification flow for iOS app](images/notif-new-notification-ios.png)
+![New notification flow for iOS app](images/notifications-new-notification-ios.png)
 
 The process involves a few components:
 
@@ -27,7 +27,7 @@ The process involves a few components:
 The diagram shows the following steps: 
 
 1. Application logic. This step captures what triggers the notification to be published to the user. This is app-specific logic, and can be an event or data update about something else in Microsoft Graph, such as a new calendar event or task assignment, or else your app service wants to notify the user about.
-2. The app server publishes a notification to the targeted user via the Microsoft Graph notifications API. For more details, see [server side integration](notif-integrating-app-server.md).
+2. The app server publishes a notification to the targeted user via the Microsoft Graph notifications API. For more details, see [server side integration](notifications-integrating-app-server.md).
 3. On receiving the web request containing the new notification, Microsoft Graph notifications persists the content of the notification securely in the cloud for this app and this user.
 4. For each app client instance subscribing to receive notifications for this user, Microsoft Graph notifications sends a signal to notify the app client, via the native push service provided by the operating system. In this case, the application is an iOS app, and it uses [APNs background update notification] to send the signal. 
 5. After the application is signaled by the incoming push notification, it asks the SDK to fetch for the changes in the user notification store. 
@@ -40,15 +40,16 @@ The diagram shows the following steps:
 
 One of the main benefits for using Microsoft Graph notifications is that it persists notifications in the cloud securely and turns them into a stateful resource type. Therefore, it can help your application to manage and sync the correct state of the notifications across different devices for the same signed in user in a cross-device scenario. When a notification is marked as dismissed, or marked as read on one device, the other devices can be notified in real-time. "Handled once, dismissed everywhere" can become a true promise as part of the notification experience for your users. 
 
-The following diagram shows the data flow ror changing the state of a notification or deleting the notification on one device, and receiving/handling the state change or the deletion on another device.
+The following diagram shows the data flow for changing the state of a notification or deleting the notification on one device, and receiving/handling the state change or the deletion on another device.
 
-![Update notification flow for iOS app](images/notif-notification-update-ios.png)
+![Update notification flow for iOS app](images/notifications-notification-update-ios.png)
 
 Notice that the second part of the flow is similar to the flow for handling new incoming notifications. This is by design - the  programming pattern of the SDK is designed so that the application client can handle all types of user notification data changes (new incoming notifications, notification state changes, notification deleted) in a similar way.  
 
 The diagram shows the following steps:
 
-1. Step 1 and 2. Application logic. Something triggers the notification to be changed or deleted. In general, any event can trigger a notification to change. Currently, we expose two properties regarding state changes - **userActionState** and **readState** - but your application can define these states and when they need to be updated. For example, when a user dismisses the notification popup, you can update the **userActionState** to be Dismissed. When a user clicks the notification popup and launches the app to consume corresponding app content, you can update the **userActionState** to be Activated and update the **readState** to be Read. 
+1. Application logic. Something triggers the notification to be changed or deleted. In general, any event can trigger a notification to change. 
+2. App calling into the client SDK to update or delete a notification. Currently, we expose two properties regarding state changes - **userActionState** and **readState** - but your application can define these states and when they need to be updated. For example, when a user dismisses the notification popup, you can update the **userActionState** to be Dismissed. When a user clicks the notification popup and launches the app to consume corresponding app content, you can update the **userActionState** to be Activated and update the **readState** to be Read. 
 3. After the corresponding API is called to update or delete a notification, the SDK will call into the user notification store in the cloud in order to fan-out this change to the other app client instances with the same signed in user. 
 4. On receiving the update/delete request from a client, Microsoft Graph notifications will update the notification store, and identify the other app client instances that subscribed to this change.
 5. For each app client subscription, Microsoft Graph notifications sends a signal to notify the app client, via the native push service provided by the operating system. In this case, this is an iOS, and it uses [APNs background update notification](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CreatingtheNotificationPayload.html#//apple_ref/doc/uid/TP40008194-CH10-SW8) to send the signal. 
@@ -58,7 +59,7 @@ The diagram shows the following steps:
 9. The SDK fires event callbacks to notify the app after the changes are successfully retrieved. 
 10. Application logic. This step captures what your app chooses to do inside the event callback. Usually, this results in local app data changes and local UI updates. In this case, because there are notification updates, the app should update the UI locally to reflect the state change. For example, if a notification is marked as activated, you can remove the corresponding alert UI inside the iOS notification center to achieve "handled once, dismissed everywhere". 
 
-For more information about Microsoft Graph notifications, see [Microsoft Graph Notifications overview](notifications-concept-overview.md). For more information about the steps required to integrate with Microsoft Graph notifications from end to end, see Microsoft Graph notifications [integration overview](notif-integration-e2e-overview.md).
+For more information about Microsoft Graph notifications, see [Microsoft Graph Notifications overview](notifications-concept-overview.md). For more information about the steps required to integrate with Microsoft Graph notifications from end to end, see Microsoft Graph notifications [integration overview](notifications-integration-e2e-overview.md).
 
 ## Adding the SDK to your project
 
@@ -156,7 +157,7 @@ MCDConnectedDevicesAccount* mcdAccount = [MCDConnectedDevicesAccount new];
 
 ## Subscribing to receive user's notifications 
 
-You need to instantiate a **UserDataFeed** object for your application for this signed in user. Your application is identified by the cross-platform app ID you provided during the [Cross-Device Experiences onboarding](notif-integration-cross-device-experiences-onboarding.md) process.
+You need to instantiate a **UserDataFeed** object for your application for this signed in user. Your application is identified by the cross-platform app ID you provided during the [Cross-Device Experiences onboarding](notifications-integration-cross-device-experiences-onboarding.md) process.
 
 ```ObjectiveC
 // Initialize the feed and subscribe for notifications
@@ -247,4 +248,4 @@ A notification is removed from the user notification store only if it is expired
 
 - [API reference](https://docs.microsoft.com/en-us/windows/project-rome/notifications/api-reference-for-ios/) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) for Android apps.
-- [App server sample](notif-integrating-app-server.md) for publishing notifications. 
+- [App server sample](notifications-integrating-app-server.md) for publishing notifications. 
