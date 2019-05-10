@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var _event = await graphClient.Me.CalendarView.Delta()
+var delta = await graphClient.Me.CalendarView.Delta()
 	.Request()
 	.GetAsync();
 

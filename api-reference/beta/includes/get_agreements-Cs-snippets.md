@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var agreement = await graphClient.Agreements
+var agreements = await graphClient.Agreements
 	.Request()
 	.GetAsync();
 

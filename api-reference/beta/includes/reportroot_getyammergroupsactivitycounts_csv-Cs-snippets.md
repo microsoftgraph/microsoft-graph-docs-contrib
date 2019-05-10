@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var yammerGroupsActivityCounts = await graphClient.Reports.GetYammerGroupsActivityCounts('D7')
+var getYammerGroupsActivityCounts = await graphClient.Reports.GetYammerGroupsActivityCounts('D7')
 	.Request()
 	.GetAsync();
 

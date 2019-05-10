@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var groupLifecyclePolicy = await graphClient.GroupLifecyclePolicies
+var groupLifecyclePolicies = await graphClient.GroupLifecyclePolicies
 	.Request()
 	.GetAsync();
 

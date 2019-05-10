@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryRole = await graphClient.DirectoryRoles
+var directoryRoles = await graphClient.DirectoryRoles
 	.Request()
 	.GetAsync();
 

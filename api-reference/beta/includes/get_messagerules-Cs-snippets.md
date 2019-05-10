@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var messageRule = await graphClient.Me.MailFolders["inbox"].MessageRules
+var messageRules = await graphClient.Me.MailFolders["inbox"].MessageRules
 	.Request()
 	.GetAsync();
 

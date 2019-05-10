@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var mailboxUsageDetail = await graphClient.Reports.GetMailboxUsageDetail('D7')
+var getMailboxUsageDetail = await graphClient.Reports.GetMailboxUsageDetail('D7')
 	.Request()
 	.GetAsync();
 

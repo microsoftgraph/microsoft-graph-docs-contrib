@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var identityProvider = await graphClient.IdentityProviders
+var identityProviders = await graphClient.IdentityProviders
 	.Request()
 	.GetAsync();
 

@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directorySettingTemplate = await graphClient.DirectorySettingTemplates
+var directorySettingTemplates = await graphClient.DirectorySettingTemplates
 	.Request()
 	.GetAsync();
 
