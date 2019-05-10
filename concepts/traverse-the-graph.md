@@ -345,4 +345,4 @@ Like the power and ease of SDKs? While you can always use REST APIs to call Micr
 ## See also
 
 - [Use the Microsoft Graph API](use-the-api.md)
-- [Get auth tokens](./auth/index.yml)
+- [Get auth tokens](./auth/)
