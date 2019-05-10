@@ -1,13 +1,13 @@
 ---
 title: "The Microsoft Graph Toolkit Providers"
-description: "Use the providers to enable authentication and graph access for the Microsoft Graph Toolkit components"
+description: "Use the providers to enable authentication and graph access for Microsoft Graph Toolkit components"
 localization_priority: Normal
 author: nmetulev
 ---
 
 # Providers
 
-The Microsoft Graph Toolkit defines Providers that enable all components to be aware of the current authentication state and initiate calls to the Microsoft Graph without the developer having to write the code themselves. Each provider provides implementation for acquiring the necessary access token for calling the Microsoft Graph APIs.
+The Microsoft Graph Toolkit defines Providers that enable all components to be aware of the current authentication state and initiate calls to Microsoft Graph without the developer having to write the code themselves. Each provider provides implementation for acquiring the necessary access token for calling the Microsoft Graph APIs.
 
 In order for the components to use a provider, the `Providers.globalProvider` property must be set to a Provider you'd like to use.
 
@@ -51,9 +51,9 @@ The toolkit provides two ways to create new providers:
 
 Read more about each one in the [custom providers](./providers/custom.md) documentation;
 
-## Making your own calls to the Microsoft Graph
+## Making your own calls to Microsoft Graph
 
-All components can access the Microsoft Graph out of the box as long as the developer has initialized a provider (as described in the above section). To get a reference to the same Microsoft Graph SDK used by the components, first get a reference to the global IProvider and then use the `Graph` object:
+All components can access Microsoft Graph out of the box as long as the developer has initialized a provider (as described in the above section). To get a reference to the same Microsoft Graph SDK used by the components, first get a reference to the global IProvider and then use the `Graph` object:
 
 ```js
 import { Providers } from '@microsoft/mgt';
@@ -76,4 +76,4 @@ graphClient
   .get();
 ```
 
-The graph object is an instance of the [Microsoft Graph Javascript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) and you can use it to make any calls to the Microsoft Graph.
+The graph object is an instance of the [Microsoft Graph Javascript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) and you can use it to make any calls to Microsoft Graph.

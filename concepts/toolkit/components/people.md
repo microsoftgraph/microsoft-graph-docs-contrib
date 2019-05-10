@@ -1,11 +1,11 @@
 ---
-title: "People Component"
+title: "People component in the Microsoft Graph Toolkit"
 description: "The mgt-people web component can be used to display a group of people or contacts by using their photos or initials."
 localization_priority: Normal
 author: nmetulev
 ---
 
-# People Component
+# People component in the Microsoft Graph Toolkit
 
 ## Description
 
@@ -25,14 +25,14 @@ It utilizes multiple [mgt-person](./person.md) controls, but is able to be bound
 
 ## Properties
 
-By default, the `mgt-people` component fetches events from the `/me/people` endpoint with the `personType/class eq 'Person'` filter to display frequently contacted users. Use the following attributes to change this behavior:
+By default, the `mgt-people` component fetches events from the `/me/people` endpoint with the `personType/class eq 'Person'` filter to display frequently contacted users. There are several properties you can use to change this behavior.
 
-| property | attribute | Description |
+| Property | Attribute | Description |
 | --- | --- | --- |
-| `showMax` | `show-max` | an integer value to indicate the maximum number of people to show - default is 3. |
-| `people` | `people` | an array of people to get or set the list of people rendered by the component - use this property to access the people loaded by the component. Set this value to load your own people |
+| `showMax` | `show-max` | A number to indicate the maximum number of people to show - default is 3. |
+| `people` | `people` | An array of people to get or set the list of people rendered by the component - use this property to access the people loaded by the component. Set this value to load your own people. |
 
-Ex:
+The following example sets the maximum number of people to show.
 
 ```html
 <mgt-people
@@ -53,26 +53,16 @@ mgt-people {
 
 ## Templates
 
-The `mgt-people` supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, simply include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The `mgt-people` supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
 
+| Data type | Data context | Description |
+| --- | --- | --- |
+| `default` | `people`: list of person objects | The default template replaces the entire component with your own. |
+| `person` | `person`: person object | The template used to render each person. |
+| `overflow` | `people`: list of person objects <br> `max`: number of shown people <br> `extra`: number of extra people | The template used to render the number beyond the max to the right of the list of people. |
+| `no-data` | No data context is passed | The template used when no people are available. |
 
-### `default` (or when no value is provided)
-
-The default template replaces the entire component with your own. The `people` array is passed to the template as data context
-
-### `no-data`
-
-The template used when no people are available. No data context is passed
-
-### `person`
-
-The template used to render each person. The `person` object is passed to the template as data context
-
-### `overflow`
-
-The template used to render the number beyond the max to the right of the list of people. The `people` array, the `max` number of people currently shown, and the `extra` people beyond are passed to the template as data context
-
-Ex:
+The following examples illustrates how to use the `person` template:
 
 ```html
 <mgt-people>

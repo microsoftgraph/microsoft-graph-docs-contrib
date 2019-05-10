@@ -1,13 +1,13 @@
 ---
 title: "The Microsoft Graph Toolkit"
-description: "The Microsoft Graph Toolkit is a collection of framework agnostic web components and helpers for accessing and working with the Microsoft Graph."
+description: "The Microsoft Graph Toolkit is a collection of framework agnostic web components and helpers for accessing and working with Microsoft Graph."
 localization_priority: Normal
 author: nmetulev
 ---
 
 # The Microsoft Graph Toolkit (Preview)
 
-The Microsoft Graph Toolkit is a collection of framework agnostic web components and helpers for accessing and working with the Microsoft Graph. ALl components know how to access the Microsoft Graph out of the box.
+The Microsoft Graph Toolkit is a collection of framework agnostic web components and helpers for accessing and working with Microsoft Graph. ALl components know how to access Microsoft Graph out of the box.
 
 ## This library is in Preview
 
@@ -15,9 +15,13 @@ This library is in preview and is in early development. Based on feedback from t
 
 ## Getting Started
 
+[Watch the Getting Started Video](https://www.youtube.com/watch?v=oZCGb2MMxa0)
+
 You can use the components by referencing the loader directly (via unpkg), or installing the npm package
 
 ### Use via mgt-loader:
+
+[Here is a quick jsfiddle](https://jsfiddle.net/metulev/9phqxLd5/)
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -38,9 +42,9 @@ You can then start using the components in your html page. Here is a full workin
 
 > NOTE: MSAL requires the page to be hosted in a web server for the authentication redirects. If you are just getting started and want to play around, the quickest way is to use something like [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in vscode.
 
-### Use via NPM:
+### Use via NPM (es6 modules):
 
-The benefits of using MGT through NPM is that you have full control of the bundling process and you can bundle only the code you need for your site. First, add the npm package:
+By using the es6 modules, you have full control of the bundling process and you can bundle only the code you need for your site. First, add the npm package:
 
 ```bash
 npm install @microsoft/mgt
@@ -78,15 +82,22 @@ or, add it in your code:
 
 ## Providers
 
-The components work best when used with a [provider](./providers.md). The provider exposes authentication and Microsoft Graph apis used by the components to call into the Microsoft Graph.
+The components work best when used with a [provider](./providers.md). The provider exposes authentication and Microsoft Graph apis used by the components to call into Microsoft Graph.
 
 The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md), and Office Add-ins (coming soon). You can also create your own providers by extending the [IProvider] abstract class.
+
+## Polyfills
+
+If you are using the es6 modules from the npm package, make sure to include polyfills in your project as they are not included out of the box. To learn more, see [polyfills](https://www.webcomponents.org/polyfills).
+
+If you are using the mgt-loader.js script from the bundle on unpkg, the polyfills are already included.
+
 
 ## Using the components with React, Angular, and other frameworks
 
 Web Components are based on several web standards and can be used with any framework you are already using. However, not all frameworks handle web components the same, and there might be some consideration you should know depending on your framework. The [Custom Elements Everywhere](https://custom-elements-everywhere.com/) project is a great resource for this.
 
-Below is a quick overview of using the microsoft-graph-toolkit components with React and Angular
+Below is a quick overview of using the Microsoft Graph Toolkit components with React and Angular
 
 ### React
 

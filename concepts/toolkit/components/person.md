@@ -1,11 +1,11 @@
 ---
-title: "Person Component"
+title: "Person component in the Microsoft Graph Toolkit"
 description: "The mgt-person web component is used to display a user or contact using their photos or initials."
 localization_priority: Normal
 author: nmetulev
 ---
 
-# Person Component
+# Person component in the Microsoft Graph Toolkit
 
 ## Description
 The person component is used to display a person or contact by using their photo, name, and/or email address. 
@@ -23,9 +23,9 @@ The person component is used to display a person or contact by using their photo
 
 There are three properties that a developer can use to set the person details, use only one of them per instance:
 
-* Set the `user-id` attribute or `userId` property to fetch the user from the Microsoft Graph by using their id.  
+* Set the `user-id` attribute or `userId` property to fetch the user from Microsoft Graph by using their id.  
 
-* Set the `person-query` attribute or `personQuery` property to search the Microsoft Graph for a given person. It will chose the first person available and fetch the person details. An email works best to ensure the right person is queried, but a name works as well.
+* Set the `person-query` attribute or `personQuery` property to search Microsoft Graph for a given person. It will chose the first person available and fetch the person details. An email works best to ensure the right person is queried, but a name works as well.
 
 * Set the `person-details` attribute or `personDetails` property to manually set the person details.
 
@@ -42,14 +42,14 @@ There are three properties that a developer can use to set the person details, u
 
   If no image is provided, one will be fetched (if available).
 
-## Changing how the control looks
+## Changing how the component looks
 
-The following attributes are available to customize the behavior
+There are several properties you can use to customize the component.
 
-| property  | attribute  | description |
+| Property | Attribute | Description |
 | --- | --- | --- |
-| `showName` | `show-name` | set flag to display person display name - default is `false` |
-| `showEmail` | `show-email` | set flag to display person email - default is `false` |
+| `showName` | `show-name` | Set flag to display person display name - default is `false`. |
+| `showEmail` | `show-email` | Set flag to display person email - default is `false`. |
 
 ## CSS Custom properties
 
@@ -72,11 +72,11 @@ mgt-person {
 }
 ```
 
-[Learn more about styling components](../style.md) 
+To learn more, see [styling components](../style.md).
 
 ## Templates
 
-The `mgt-person` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, simply include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The `mgt-person` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
 
 
 ### `default` (or when no value is provided)

@@ -44,7 +44,7 @@ let provider = new SimpleProvider(getAccessToken, login, logout);
 
 ### Manage state
 
-In order for the components to be aware of the state of the provider, you will need to call the `provider.setState(state: ProviderState)` method whenever the state changes. For example, when the user has logged in, call `provider.setState(ProviderState.SignedIn)`. The `ProviderState` enum defines three states:
+In order for the components to be aware of the state of the provider, you will need to call the `provider.setState(state: ProviderState)` method whenever the state changes. For example, when the user has signed in, call `provider.setState(ProviderState.SignedIn)`. The `ProviderState` enum defines three states:
 
 ```ts
 export enum ProviderState {

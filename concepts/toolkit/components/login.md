@@ -1,16 +1,16 @@
 ---
-title: "Login Component"
+title: "Login component in the Microsoft Graph Toolkit"
 description: "mgt-login displays current signed in user. "
 localization_priority: Normal
 author: nmetulev
 ---
 
-# Login Component
+# Login component in the Microsoft Graph Toolkit
 
 ## Description
 A Login Component is a button and flyout control to facilitate Microsoft Identity authentication. It provides two states:
-* When user is not logged in, the control is a simple button to initiate the login process
-* When user is logged in, the control displays the current logged in user name, profile image, and email. When clicked, a flyout is opened with a command to logout.
+* When user is not signed in, the control is a simple button to initiate the login process
+* When user is signed in, the control displays the current signed in user name, profile image, and email. When clicked, a flyout is opened with a command to logout.
 
 ## Example
 
@@ -22,13 +22,13 @@ A Login Component is a button and flyout control to facilitate Microsoft Identit
 
 ## Using the control without an authentication provider
 
-The component works with a provider and the Microsoft Graph out of the box. However, if you want to provide your own logic and authentication, you can use the following properties to set the logged in user's details. 
+The component works with a provider and Microsoft Graph out of the box. However, if you want to provide your own logic and authentication, you can use the `userDetails` property to set the signed in user's details. 
 
-| property | attribute | Description |
+| Property | Attribute | Description |
 | --- | --- | -- |
-| `userDetails` | `user-details` | set the user object that will be displayed on the control |
+| `userDetails` | `user-details` | Set the user object that will be displayed on the control. |
 
-Ex: 
+The following example sets the person details:
 
 ```js
 let loginControl = document.getElementById('myLoginControl');
@@ -39,7 +39,7 @@ loginControl.userDetails = {
 }
 ```
 
-Setting `userDetails` to `null` will go to the logged out state.
+Setting `userDetails` to `null` will go to the signed out state.
 
 Use the `loginInitiated` and `logoutInitiated` events to handle logging in and out. 
 
@@ -62,7 +62,7 @@ mgt-login {
 }
 ```
 
-[Learn more about styling components](../style.md) 
+To learn more, see [styling components](../style.md).
 
 ## Events
 
@@ -74,7 +74,7 @@ The following events are fired from the control:
 | `loginCompleted` | the login process was successful and the user is now signed in |
 | `loginFailed` | The user canceled the login process or was unable to log in |
 | `logoutInitiated` | The user started to logout - cancelable |
-| `logoutCompleted` | the user logged out |
+| `logoutCompleted` | the user signed out |
 
 ## Graph scopes
 

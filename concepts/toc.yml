@@ -343,7 +343,7 @@
           href: sdks/create-client.md
         - name: Choose an authentication provider
           href: sdks/choose-authentication-providers.md
-    - name: Use the Toolkit (preview)
+    - name: Use the toolkit (preview)
       items:
         - name: The Microsoft Graph Toolkit
           href: toolkit/index.md
@@ -361,19 +361,19 @@
               href: toolkit/components/tasks.md
         - name: Providers
           items:
-            - name: Using the Providers
+            - name: Using the providers
               href: toolkit/providers.md
-            - name: Msal Provider
+            - name: Msal provider
               href: toolkit/providers/msal.md
-            - name: SharePoint Provider
+            - name: SharePoint provider
               href: toolkit/providers/SharePoint.md
-            - name: Microsoft Teams Provider
+            - name: Microsoft Teams provider
               href: toolkit/providers/Teams.md
-            - name: Custom Provider
+            - name: Custom provider
               href: toolkit/providers/custom.md
-        - name: Styling Components
+        - name: Styling components
           href: toolkit/style.md
-        - name: Templating Components
+        - name: Templating components
           href: toolkit/templates.md
     - name: Resources
       expanded: true

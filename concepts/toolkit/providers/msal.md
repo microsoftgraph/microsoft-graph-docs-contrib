@@ -9,7 +9,7 @@ author: nmetulev
 
 The MSAL Provider uses [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) to sign in users and acquire tokens to use with the Microsoft Graph.
 
-Visit [the authentication docs](../providers.md) to learn more about the role of providers in the Microsoft Graph Toolkit
+To learn more, see [providers](../providers.md).
 
 ## Getting started
 
@@ -52,10 +52,10 @@ interface MsalConfig {
 
 You must provide a `clientId` (to create a new `UserAgentApplication`)
 
-To learn more about configuring Msal, visit the [Msal documentation](https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics)
+To learn more, see the [Msal documentation](https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics).
 
 ## Creating an app / Client Id
 
-Visit the [Microsoft identity platform documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) to learn more about creating a new application and retrieving a clientId.
+To learn more, see the [quickstart](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
 
 > Note: Msal only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under `Authentication`, find the `Implicit grant` section and check both checkboxes for `Access tokens` and `ID tokens`

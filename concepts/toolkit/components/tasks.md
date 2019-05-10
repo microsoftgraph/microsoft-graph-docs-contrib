@@ -1,11 +1,11 @@
 ---
-title: "Person Component"
+title: "Tasks component in the Microsoft Graph Toolkit"
 description: "The Tasks Component enables the user to view, add, remove, complete, or edit tasks. It works with any tasks in Microsoft Planner or Microsoft To-Do."
 localization_priority: Normal
-author: nmetulev
+author: benotter
 ---
 
-# Tasks Component
+# Tasks component in the Microsoft Graph Toolkit
 
 ## Description
 
@@ -23,12 +23,12 @@ The Tasks Component enables the user to view, add, remove, complete, or edit tas
 
 | Property | Attribute | Description |
 | -- | -- | -- |
-| `dataSource` | `data-source="todo|planner"` | Sets the Data source for tasks, either Microsoft To-Do, or Microsoft Planner. Default is `planner` |
-| `readOnly` | `read-only` | Sets the task interface to be read only (no adding or removing tasks). Default is `false` |
-| `initialId` | `initial-id="planner_id/folder_id"` | Sets the initially displayed planner or folder to the provided ID |
-| `initialBucketId` | `initial-bucket-id="bucket_id"` | Sets the initially displayed bucket (Planner Data-Source Only) to the provided ID |
-| `targetId` | `target-id="planner_id/folder_id"` | Locks the tasks interface to the provided planner or folder ID |
-| `targetBucketId` | `target-bucket-id="bucket_id"` | Locks the tasks interface to the provided bucket id (Planner Data-Source Only) |
+| `dataSource` | `data-source="todo/planner"` | Sets the Data source for tasks, either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
+| `readOnly` | `read-only` | Sets the task interface to be read only (no adding or removing tasks). Default is `false`. |
+| `initialId` | `initial-id="planner_id/folder_id"` | Sets the initially displayed planner or folder to the provided ID. |
+| `initialBucketId` | `initial-bucket-id="bucket_id"` | Sets the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
+| `targetId` | `target-id="planner_id/folder_id"` | Locks the tasks interface to the provided planner or folder ID. |
+| `targetBucketId` | `target-bucket-id="bucket_id"` | Locks the tasks interface to the provided bucket id (Planner Data-Source Only). |
 
 ex: 
 ````html

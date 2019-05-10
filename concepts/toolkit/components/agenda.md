@@ -1,15 +1,13 @@
 ---
-title: "Agenda Component"
+title: "Agenda component in the Microsoft Graph Toolkit"
 description: "The mgt-agenda web component is used to represent events in a user or group calendar."
 localization_priority: Normal
 author: nmetulev
 ---
 
-# Agenda Component
+# Agenda component in the Microsoft Graph Toolkit
 
-## Description
-
-The `mgt-agenda` web component is used to represent events in a user or group calendar. By default, the calendar displays the current logged in user events for the current day. The component can also use any endpoint that returns events from the Microsoft Graph. 
+The `mgt-agenda` web component represents events in a user or group calendar. By default, the calendar displays the current signed in user events for the current day. The component can also use any endpoint that returns events from Microsoft Graph. 
 
 ## Example
 
@@ -23,23 +21,30 @@ The `mgt-agenda` web component is used to represent events in a user or group ca
 
 ## Properties
 
-By default, the `mgt-agenda` component fetches events from the `/me/calendarview` endpoint and displays events for the current day. Use the following attributes to change this behavior:
+By default, the `mgt-agenda` component fetches events from the `/me/calendarview` endpoint and displays events for the current day. There are several properties you can use to change this behavior.
 
-| property | attribute | Description |
+| Property | Attribute | Description |
 | --- | --- | --- |
-| `groupByDay` | `group-by-day` | a boolean value to group events by day - by default events are not grouped |
-| `date` | `date` | a string representing the start date of the events to fetch from the Microsoft Graph. Value should be in a format that can be parsed by the [Date constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - value has no effect if `event-query` attribute is set |
-| `days` | `days` | a number of days to fetch from the Microsoft Graph - default is 3 - value has no effect if `event-query` attribute is set. |
-| `eventQuery` | `event-query` | a string representing an alternative query to be used when fetching events from the Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (ex: `"/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all"`) |
-| `events` | `events` | an array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect |
+| `groupByDay` | `group-by-day` | A Boolean value to group events by day - by default events are not grouped. |
+| `date` | `date` | A string that represents the start date of the events to fetch from Microsoft Graph. Value should be in a format that can be parsed by the [Date constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) - value has no effect if `event-query` attribute is set. |
+| `days` | `days` | A number of days to fetch from Microsoft Graph - default is 3 - value has no effect if `event-query` attribute is set. |
+| `eventQuery` | `event-query` | A string that represents an alternative query to be used when fetching events from Microsoft Graph. Optionally, add the delegated scope at the end of the string by delimiting it with `|` (`"/groups/GROUP-ID-GUID/calendar/calendarView | group.read.all"`). |
+| `events` | `events` | An array of events to get or set the list of events rendered by the component - use this property to access the events loaded by the component. Set this value to load your own events - if value is set by developer, the `date`, `days`, or `event-query` attributes have no effect. |
 
-Ex:
+The following example changes the behavior of the component to fetch data for a specific date and up to 3 days.
 
 ```html
 <mgt-agenda
   group-by-day
   date="May 7, 2019"
   days="3"
+  ></mgt-agenda>
+```
+
+The following example changes the behavior of the component to fetch data from a specific query.
+
+```html
+<mgt-agenda
   event-query="/me/events?orderby=start/dateTime"
   ></mgt-agenda>
 ```
@@ -71,38 +76,22 @@ mgt-agenda {
 }
 ```
 
-[Learn more about styling components](../style.md) 
+To learn more, see [styling components](../style.md).
 
 ## Templates
 
-The `mgt-agenda` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, simply include a `<template>` element inside of a component and set the `data-type` value to one of the following:
+The `mgt-agenda` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside of a component and set the `data-type` value to one of the following:
 
+| Data type | Data context | Description |
+| --- | --- | --- |
+| `default` | `events`: list of event objects | The default template replaces the entire component with your own. |
+| `event` | `event`: event object | The template used to render each event. |
+| `header` | `header`: string | The template used to render the header for each day. |
+| `other` | `event`: event object | The template used to render additional content for each event. |
+| `no-data` | No data context is passed | The template used when no events are available. |
+| `loading` | No data context is passed | The template used when data is loading. |
 
-### `default` (or when no value is provided)
-
-The default template replaces the entire component with your own. The `events` are passed to the templates as data context
-
-### `no-data`
-
-The template used when no events are available. No data context is passed
-
-### `loading`
-
-The template used when data is loading. No data context is passed
-
-### `event`
-
-The template used to render each event. The `event` is passed to the template as data context
-
-### `header`
-
-The template used to render the header for each day. The `header` is passed to the template as data context
-
-### `other`
-
-The template used to render additional content for each event. The `event` is passed to the template as data context
-
-Ex:
+The following examples illustrates how to use the `event` template:
 
 ```html
 <mgt-agenda>
@@ -124,7 +113,7 @@ Ex:
 </mgt-agenda>
 ```
 
-[Learn more about templates](../templates.md) 
+To learn more, see [templates](../templates.md).
 
 ## Graph scopes
 

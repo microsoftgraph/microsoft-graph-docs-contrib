@@ -7,7 +7,7 @@ author: nmetulev
 
 # Templates
 
-All web components support templates based on the `<template>` element. For example, to override the template of a component, simply add a `<template>` element inside of a component.
+All web components support templates based on the `<template>` element. For example, to override the template of a component, add a `<template>` element inside of a component.
 
 ```html
 <mgt-agenda>
