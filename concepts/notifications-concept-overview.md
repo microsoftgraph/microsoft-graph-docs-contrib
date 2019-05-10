@@ -13,7 +13,7 @@ Today, users can access your applications and services via a wide variety of pla
 
 Most other notification systems eliminate the need to understand and target platform-specific push notification systems, but are still  designed to target each device. Microsoft Graph notifications provide a human-centric approach that gives you the ability to target your  users across any and all device endpoints.
 
-![An image that shows an app service communicating with Microsoft Graph to send notifications to multiple endpoints](images/notif-flow-overview.png)
+![An image that shows an app service communicating with Microsoft Graph to send notifications to multiple endpoints](images/notifications-flow-overview.png)
 
 ## Why integrate with Microsoft Graph notifications?
 
@@ -37,4 +37,4 @@ Microsoft Graph notifications meet most enterprise compliance requirements, incl
 
 ## How do I get started?
 
-To get started, see the [integration overview](notif-integration-e2e-overview.md) section to learn how you can integrate user-centric notifications within your application.
+To get started, see the [integration overview](notifications-integration-e2e-overview.md) section to learn how you can integrate user-centric notifications within your application.
