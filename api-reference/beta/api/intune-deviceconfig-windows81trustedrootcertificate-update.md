@@ -1,7 +1,7 @@
 ---
 title: "Update windows81TrustedRootCertificate"
 description: "Update the properties of a windows81TrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -111,7 +111,6 @@ Content-Length: 597
   "destinationStore": "computerCertStoreIntermediate"
 }
 ```
-
 
 
 

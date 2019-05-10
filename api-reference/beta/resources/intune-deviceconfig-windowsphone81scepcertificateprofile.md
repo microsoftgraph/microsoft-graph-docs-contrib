@@ -1,7 +1,7 @@
 ---
 title: "windowsPhone81SCEPCertificateProfile resource type"
 description: "Windows Phone 8.1+ SCEP certificate profile"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -108,7 +108,6 @@ Here is a JSON representation of the resource.
   "subjectAlternativeNameFormatString": "String"
 }
 ```
-
 
 
 

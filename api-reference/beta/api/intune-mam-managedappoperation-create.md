@@ -1,7 +1,7 @@
 ---
 title: "Create managedAppOperation"
 description: "Create a new managedAppOperation object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -89,7 +89,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
 
 
 

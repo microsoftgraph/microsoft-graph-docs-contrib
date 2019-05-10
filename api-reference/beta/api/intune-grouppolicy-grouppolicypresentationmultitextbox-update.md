@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyPresentationMultiTextBox"
 description: "Update the properties of a groupPolicyPresentationMultiTextBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -93,7 +93,6 @@ Content-Length: 278
   "maxStrings": 10
 }
 ```
-
 
 
 

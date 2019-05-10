@@ -1,7 +1,7 @@
 ---
 title: "Get macOSCertificateProfileBase"
 description: "Read properties and relationships of the macOSCertificateProfileBase object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -84,7 +84,6 @@ Content-Length: 699
   }
 }
 ```
-
 
 
 

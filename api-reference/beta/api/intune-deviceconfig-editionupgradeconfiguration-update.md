@@ -1,7 +1,7 @@
 ---
 title: "Update editionUpgradeConfiguration"
 description: "Update the properties of a editionUpgradeConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -118,7 +118,6 @@ Content-Length: 603
   "windowsSMode": "block"
 }
 ```
-
 
 
 

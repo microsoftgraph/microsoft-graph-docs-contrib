@@ -1,7 +1,7 @@
 ---
 title: "List windowsCertificateProfileBases"
 description: "List properties and relationships of the windowsCertificateProfileBase objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -84,7 +84,6 @@ Content-Length: 809
   ]
 }
 ```
-
 
 
 

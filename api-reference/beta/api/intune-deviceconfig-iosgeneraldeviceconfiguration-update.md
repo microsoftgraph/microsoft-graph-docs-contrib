@@ -1,7 +1,7 @@
 ---
 title: "Update iosGeneralDeviceConfiguration"
 description: "Update the properties of a iosGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -126,14 +126,19 @@ The following table shows the properties that are required when you create the [
 |keyboardBlockSpellCheck|Boolean|Indicates whether or not to block keyboard spell-checking when the device is in supervised mode (iOS 8.1.3 and later).|
 |kioskModeAllowAssistiveSpeak|Boolean|Indicates whether or not to allow assistive speak while in kiosk mode.|
 |kioskModeAllowAssistiveTouchSettings|Boolean|Indicates whether or not to allow access to the Assistive Touch Settings while in kiosk mode.|
-|kioskModeAllowAutoLock|Boolean|Indicates whether or not to allow device auto lock while in kiosk mode.|
+|kioskModeAllowAutoLock|Boolean|Indicates whether or not to allow device auto lock while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockAutoLock instead.|
+|kioskModeBlockAutoLock|Boolean|Indicates whether or not to block device auto lock while in kiosk mode.|
 |kioskModeAllowColorInversionSettings|Boolean|Indicates whether or not to allow access to the Color Inversion Settings while in kiosk mode.|
-|kioskModeAllowRingerSwitch|Boolean|Indicates whether or not to allow use of the ringer switch while in kiosk mode.|
-|kioskModeAllowScreenRotation|Boolean|Indicates whether or not to allow screen rotation while in kiosk mode.|
-|kioskModeAllowSleepButton|Boolean|Indicates whether or not to allow use of the sleep button while in kiosk mode.|
-|kioskModeAllowTouchscreen|Boolean|Indicates whether or not to allow use of the touchscreen while in kiosk mode.|
+|kioskModeAllowRingerSwitch|Boolean|Indicates whether or not to allow use of the ringer switch while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockRingerSwitch instead.|
+|kioskModeBlockRingerSwitch|Boolean|Indicates whether or not to block use of the ringer switch while in kiosk mode.|
+|kioskModeAllowScreenRotation|Boolean|Indicates whether or not to allow screen rotation while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockScreenRotation instead.|
+|kioskModeBlockScreenRotation|Boolean|Indicates whether or not to block screen rotation while in kiosk mode.|
+|kioskModeAllowSleepButton|Boolean|Indicates whether or not to allow use of the sleep button while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockSleepButton instead.|
+|kioskModeBlockSleepButton|Boolean|Indicates whether or not to block use of the sleep button while in kiosk mode.|
+|kioskModeAllowTouchscreen|Boolean|Indicates whether or not to allow use of the touchscreen while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockTouchscreen instead.|
+|kioskModeBlockTouchscreen|Boolean|Indicates whether or not to block use of the touchscreen while in kiosk mode.|
 |kioskModeAllowVoiceOverSettings|Boolean|Indicates whether or not to allow access to the voice over settings while in kiosk mode.|
-|kioskModeAllowVolumeButtons|Boolean|Indicates whether or not to allow use of the volume buttons while in kiosk mode.|
+|kioskModeAllowVolumeButtons|Boolean|Indicates whether or not to allow use of the volume buttons while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockVolumeButtons instead.|
 |kioskModeBlockVolumeButtons|Boolean|Indicates whether or not to block the volume buttons while in Kiosk Mode.|
 |kioskModeAllowZoomSettings|Boolean|Indicates whether or not to allow access to the zoom settings while in kiosk mode.|
 |kioskModeAppStoreUrl|String|URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.|
@@ -215,6 +220,8 @@ The following table shows the properties that are required when you create the [
 |dateAndTimeForceSetAutomatically|Boolean|Indicates whether or not the Date and Time "Set Automatically" feature is enabled and cannot be turned off by the user (iOS 12.0 and later).|
 |contactsAllowManagedToUnmanagedWrite|Boolean|Indicates whether or not managed apps can write contacts to unmanaged contacts accounts (iOS 12.0 and later).|
 |contactsAllowUnmanagedToManagedRead|Boolean|Indicates whether or not unmanaged apps can read from managed contacts accounts (iOS 12.0 or later).|
+|cellularBlockPersonalHotspotModification|Boolean|Indicates whether or not to block the user from modifying the personal hotspot setting (iOS 12.2 or later).|
+|siriDisableServerLogging|Boolean|Indicates whether or not server-side Siri logging is disabled (iOS 12.2 or later).|
 
 
 
@@ -228,7 +235,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 9105
+Content-length: 9386
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -337,11 +344,16 @@ Content-length: 9105
   "kioskModeAllowAssistiveSpeak": true,
   "kioskModeAllowAssistiveTouchSettings": true,
   "kioskModeAllowAutoLock": true,
+  "kioskModeBlockAutoLock": true,
   "kioskModeAllowColorInversionSettings": true,
   "kioskModeAllowRingerSwitch": true,
+  "kioskModeBlockRingerSwitch": true,
   "kioskModeAllowScreenRotation": true,
+  "kioskModeBlockScreenRotation": true,
   "kioskModeAllowSleepButton": true,
+  "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
+  "kioskModeBlockTouchscreen": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -479,7 +491,9 @@ Content-length: 9105
   "passwordBlockAirDropSharing": true,
   "dateAndTimeForceSetAutomatically": true,
   "contactsAllowManagedToUnmanagedWrite": true,
-  "contactsAllowUnmanagedToManagedRead": true
+  "contactsAllowUnmanagedToManagedRead": true,
+  "cellularBlockPersonalHotspotModification": true,
+  "siriDisableServerLogging": true
 }
 ```
 
@@ -488,7 +502,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9277
+Content-Length: 9558
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -600,11 +614,16 @@ Content-Length: 9277
   "kioskModeAllowAssistiveSpeak": true,
   "kioskModeAllowAssistiveTouchSettings": true,
   "kioskModeAllowAutoLock": true,
+  "kioskModeBlockAutoLock": true,
   "kioskModeAllowColorInversionSettings": true,
   "kioskModeAllowRingerSwitch": true,
+  "kioskModeBlockRingerSwitch": true,
   "kioskModeAllowScreenRotation": true,
+  "kioskModeBlockScreenRotation": true,
   "kioskModeAllowSleepButton": true,
+  "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
+  "kioskModeBlockTouchscreen": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -742,10 +761,11 @@ Content-Length: 9277
   "passwordBlockAirDropSharing": true,
   "dateAndTimeForceSetAutomatically": true,
   "contactsAllowManagedToUnmanagedWrite": true,
-  "contactsAllowUnmanagedToManagedRead": true
+  "contactsAllowUnmanagedToManagedRead": true,
+  "cellularBlockPersonalHotspotModification": true,
+  "siriDisableServerLogging": true
 }
 ```
-
 
 
 

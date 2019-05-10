@@ -1,7 +1,7 @@
 ---
 title: "androidManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -84,6 +84,8 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android SafetyNet Attestation requirment fails. Possible values are: `block`, `wipe`, `warn`.|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Defines the Android SafetyNet Apps Verification requirement for a managed app to work. Possible values are: `none`, `enabled`.|
 |appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android App Verification requirment fails. Possible values are: `block`, `wipe`, `warn`.|
+|customBrowserPackageId|String|Unique identifier of a custom browser to open weblink on Android.|
+|customBrowserDisplayName|String|Friendly name of the preferred custom browser to open weblink on Android.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -167,10 +169,11 @@ Here is a JSON representation of the resource.
   "requiredAndroidSafetyNetDeviceAttestationType": "String",
   "appActionIfAndroidSafetyNetDeviceAttestationFailed": "String",
   "requiredAndroidSafetyNetAppsVerificationType": "String",
-  "appActionIfAndroidSafetyNetAppsVerificationFailed": "String"
+  "appActionIfAndroidSafetyNetAppsVerificationFailed": "String",
+  "customBrowserPackageId": "String",
+  "customBrowserDisplayName": "String"
 }
 ```
-
 
 
 

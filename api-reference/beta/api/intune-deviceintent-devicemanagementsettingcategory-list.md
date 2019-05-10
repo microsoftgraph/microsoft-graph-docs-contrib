@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementSettingCategories"
 description: "List properties and relationships of the deviceManagementSettingCategory objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -69,7 +69,6 @@ Content-Length: 207
   ]
 }
 ```
-
 
 
 

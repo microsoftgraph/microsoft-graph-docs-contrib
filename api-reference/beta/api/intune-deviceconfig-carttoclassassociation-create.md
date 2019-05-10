@@ -1,7 +1,7 @@
 ---
 title: "Create cartToClassAssociation"
 description: "Create a new cartToClassAssociation object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -105,7 +105,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

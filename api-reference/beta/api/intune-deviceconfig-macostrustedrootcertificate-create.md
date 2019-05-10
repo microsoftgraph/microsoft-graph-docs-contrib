@@ -1,7 +1,7 @@
 ---
 title: "Create macOSTrustedRootCertificate"
 description: "Create a new macOSTrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -108,7 +108,6 @@ Content-Length: 537
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 
