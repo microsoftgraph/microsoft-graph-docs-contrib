@@ -1,14 +1,12 @@
 ---
 author: learafa
 ms.date: 02/08/2019
-title: Unfollow Site
+title: Unfollow site
 description: Unfollow a user's site
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 # Unfollow site 
-
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Unfollow a user's [site](../resources/site.md) or multiple sites.
 
@@ -19,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 |            Permission type             | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Sites.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Sites.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Sites.ReadWrite.All                         |
 
 ## HTTP request
@@ -27,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/remove
+POST https://graph.microsoft.com/v1.0/users/{user-id}/followedSites/remove
 ```
 
 ## Request body
@@ -42,11 +40,13 @@ In the request body, supply an array of JSON objects with the id parameter menti
 ## Response body
 
 * If the request is successful, this method returns a `204` status code with no content.  
-* If an error occured while executing the request, this method returns a `207` status code and the response body will have the [error](../../../concepts/errors.md) object and siteId.
+* If an error occured while unfollowing any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.
 
 ## Example
 
 The following example shows how to unfollow multiple sites.
+
+### Request
 
 <!-- { "blockType": "request", "name": "unfollow-site", "scopes": "sites.readwrite.all" } -->
 
@@ -66,7 +66,7 @@ Content-Type: application/json
     ] 
 }
 ```
-##### Response
+### Response
 
 If successful, it returns the following JSON response. 
 
@@ -98,19 +98,6 @@ Content-type: application/json
                     "stackTrace": "",
                     "throwSite": ""
                 }
-            }
-        },
-        {
-            "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
-            "webUrl": "http://contoso.sharepoint.com/sites/SiteUnFollowed",
-            "title": "SiteUnFollowed",
-            "sharepointIds": {
-                "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
-                "siteUrl": "http://contoso.sharepoint.com/sites/SiteUnFollowed",
-                "webId": "0271110f-634f-4300-a841-3a8a2e851851"
-            },
-            "siteCollection": {
-                "hostName": "contoso.sharepoint.com"
             }
         }
     ]

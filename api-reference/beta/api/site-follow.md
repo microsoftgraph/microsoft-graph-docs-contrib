@@ -1,14 +1,12 @@
 ---
 author: learafa
 ms.date: 02/08/2019
-title: Follow Site
+title: Follow site
 description: Follow a user's site/sites.
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 # Follow site 
-
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
 Follow a user's [site](../resources/site.md) or multiple sites.
 
@@ -19,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 |            Permission type             | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
 | Delegated (work or school account)     | Sites.ReadWrite.All                         |
-| Delegated (personal Microsoft account) | Sites.ReadWrite.All                         |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Sites.ReadWrite.All                         |
 
 ## HTTP request
@@ -27,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/add
+POST https://graph.microsoft.com/v1.0/users/{user-id}/followedSites/add
 ```
 
 ## Request body
@@ -43,13 +41,15 @@ In the request body, supply an array of JSON objects with the id parameter menti
 ## Response body 
 
 * If the request is successful, this method returns an array of sites that were followed.  
-* If an error occured while executing the request, this method returns a `207` status code and the response body will have the [error](../../../concepts/errors.md) object and siteId.
+* If an error occured while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.
 
 ## Example
 
 The following example shows how to follow multiple sites. 
 
-##### Request
+### Request
+
+<!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
 POST /users/{user-id}/followedSites/add
@@ -67,7 +67,7 @@ Content-Type: application/json
     ] 
 }
 ```
-##### Response
+### Response
 
 If successful, it returns the following JSON response. 
 
