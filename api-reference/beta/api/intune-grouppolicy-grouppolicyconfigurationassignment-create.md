@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyConfigurationAssignment"
 description: "Create a new groupPolicyConfigurationAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -87,7 +87,6 @@ Content-Length: 287
   }
 }
 ```
-
 
 
 

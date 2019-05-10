@@ -1,7 +1,7 @@
 ---
 title: "List androidCertificateProfileBases"
 description: "List properties and relationships of the androidCertificateProfileBase objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -90,7 +90,6 @@ Content-Length: 968
   ]
 }
 ```
-
 
 
 

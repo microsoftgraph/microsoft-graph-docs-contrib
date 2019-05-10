@@ -1671,6 +1671,8 @@
             href: api/intune-apps-mobileappdependency-delete.md
           - name: Update
             href: api/intune-apps-mobileappdependency-update.md
+        - name: Mobile app dependency type
+          href: resources/intune-apps-mobileappdependencytype.md
         - name: Mobile app install status
           href: resources/intune-apps-mobileappinstallstatus.md
           items:
@@ -3370,6 +3372,17 @@
             href: api/intune-deviceconfig-deviceconfigurationuserstatus-update.md
         - name: Device guard local system authority credential guard type
           href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
+        - name: Device management derived credential issuer
+          href: resources/intune-deviceconfig-devicemanagementderivedcredentialissuer.md
+        - name: Device management derived credential notification type
+          href: resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md
+        - name: Device management derived credential settings
+          href: resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md
+          items:
+          - name: Get
+            href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-get.md
+          - name: Update
+            href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-update.md
         - name: Device management settings
           href: resources/intune-deviceconfig-devicemanagementsettings.md
         - name: Device management user rights local user or group
@@ -3440,6 +3453,8 @@
             href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
         - name: Edition upgrade license type
           href: resources/intune-deviceconfig-editionupgradelicensetype.md
+        - name: Email certificate type
+          href: resources/intune-deviceconfig-emailcertificatetype.md
         - name: Email sync duration
           href: resources/intune-deviceconfig-emailsyncduration.md
         - name: Email sync schedule
@@ -3790,6 +3805,19 @@
             href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-ioscustomconfiguration-update.md
+        - name: iOS derived credential authentication configuration
+          href: resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-update.md
         - name: iOS device features configuration
           href: resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md
           items:
@@ -5377,6 +5405,8 @@
             href: api/intune-deviceintent-devicemanagementintent-update.md
           - name: updateSettings action
             href: api/intune-deviceintent-devicemanagementintent-updatesettings.md
+          - name: migrateToTemplate action
+            href: api/intune-deviceintent-devicemanagementintent-migratetotemplate.md
           - name: assign action
             href: api/intune-deviceintent-devicemanagementintent-assign.md
         - name: Device management intent assignment
@@ -5752,6 +5782,8 @@
             href: api/intune-devices-manageddevice-playlostmodesound.md
           - name: setDeviceName action
             href: api/intune-devices-manageddevice-setdevicename.md
+          - name: rotateFileVaultKey action
+            href: api/intune-devices-manageddevice-rotatefilevaultkey.md
           - name: retire action
             href: api/intune-devices-manageddevice-retire.md
           - name: wipe action
@@ -5970,6 +6002,19 @@
           href: resources/intune-devices-revokeapplevpplicensesactionresult.md
         - name: Run schedule
           href: resources/intune-devices-runschedule.md
+        - name: Security baseline category state summary
+          href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-list.md
+          - name: Get
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-get.md
+          - name: Create
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-create.md
+          - name: Delete
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-delete.md
+          - name: Update
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
         - name: Security baseline compliance state
           href: resources/intune-deviceintent-securitybaselinecompliancestate.md
         - name: Security baseline device state
@@ -5985,32 +6030,6 @@
             href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
           - name: Update
             href: api/intune-deviceintent-securitybaselinedevicestate-update.md
-        - name: Security baseline setting state
-          href: resources/intune-deviceintent-securitybaselinesettingstate.md
-          items:
-          - name: List
-            href: api/intune-deviceintent-securitybaselinesettingstate-list.md
-          - name: Get
-            href: api/intune-deviceintent-securitybaselinesettingstate-get.md
-          - name: Create
-            href: api/intune-deviceintent-securitybaselinesettingstate-create.md
-          - name: Delete
-            href: api/intune-deviceintent-securitybaselinesettingstate-delete.md
-          - name: Update
-            href: api/intune-deviceintent-securitybaselinesettingstate-update.md
-        - name: Security baseline state
-          href: resources/intune-deviceintent-securitybaselinestate.md
-          items:
-          - name: List
-            href: api/intune-deviceintent-securitybaselinestate-list.md
-          - name: Get
-            href: api/intune-deviceintent-securitybaselinestate-get.md
-          - name: Create
-            href: api/intune-deviceintent-securitybaselinestate-create.md
-          - name: Delete
-            href: api/intune-deviceintent-securitybaselinestate-delete.md
-          - name: Update
-            href: api/intune-deviceintent-securitybaselinestate-update.md
         - name: Security baseline state summary
           href: resources/intune-deviceintent-securitybaselinestatesummary.md
           items:
@@ -9302,47 +9321,49 @@
         - name: List range
           href: api/nameditem-range.md
     - name: Tools
-    - name: Open extensions
-      href: resources/opentypeextension.md
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      expanded: true
       items:
-      - name: Create open extension
-        href: api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: api/opentypeextension-get.md
-      - name: Update open extension
-        href: api/opentypeextension-update.md
-      - name: Delete open extension
-        href: api/opentypeextension-delete.md
-    - name: Schema extensions
-      href: resources/schemaextension.md
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-      items:
-      - name: List schema extensions
-        href: api/schemaextension-list.md
-      - name: Create schema extension
-        href: api/schemaextension-post-schemaextensions.md
-      - name: Get schema extension
-        href: api/schemaextension-get.md
-      - name: Update schema extension
-        href: api/schemaextension-update.md
-      - name: Delete schema extension
-        href: api/schemaextension-delete.md
-    - name: Change notifications
-      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-      items:
-      - name: Overview
-        href: resources/webhooks.md
-      - name: Subscription
-        href: resources/subscription.md
+      - name: Open extensions
+        href: resources/opentypeextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: List subscription
-          href: api/subscription-list.md
-        - name: Get subscription
-          href: api/subscription-get.md
-        - name: Create subscription
-          href: api/subscription-post-subscriptions.md
-        - name: Update subscription
-          href: api/subscription-update.md
-        - name: Delete subscription
-          href: api/subscription-delete.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: Update open extension
+          href: api/opentypeextension-update.md
+        - name: Delete open extension
+          href: api/opentypeextension-delete.md
+      - name: Schema extensions
+        href: resources/schemaextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: List schema extensions
+          href: api/schemaextension-list.md
+        - name: Create schema extension
+          href: api/schemaextension-post-schemaextensions.md
+        - name: Get schema extension
+          href: api/schemaextension-get.md
+        - name: Update schema extension
+          href: api/schemaextension-update.md
+        - name: Delete schema extension
+          href: api/schemaextension-delete.md
+      - name: Change notifications
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+        items:
+        - name: Overview
+          href: resources/webhooks.md
+        - name: Subscription
+          href: resources/subscription.md
+          items:
+          - name: List subscription
+            href: api/subscription-list.md
+          - name: Get subscription
+            href: api/subscription-get.md
+          - name: Create subscription
+            href: api/subscription-post-subscriptions.md
+          - name: Update subscription
+            href: api/subscription-update.md
+          - name: Delete subscription
+            href: api/subscription-delete.md

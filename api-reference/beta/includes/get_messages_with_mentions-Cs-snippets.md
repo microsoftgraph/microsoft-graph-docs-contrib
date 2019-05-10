@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var message = await graphClient.Me.Messages
+var messages = await graphClient.Me.Messages
 	.Request()
 	.Filter("MentionsPreview/IsMentioned eq true,")
 	.Select( e => new {

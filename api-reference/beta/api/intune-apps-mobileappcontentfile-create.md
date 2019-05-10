@@ -1,7 +1,7 @@
 ---
 title: "Create mobileAppContentFile"
 description: "Create a new mobileAppContentFile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -110,7 +110,6 @@ Content-Length: 503
   "isDependency": true
 }
 ```
-
 
 
 

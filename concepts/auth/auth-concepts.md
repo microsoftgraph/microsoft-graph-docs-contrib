@@ -6,7 +6,7 @@ localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Authentication and Authorization basics for Microsoft Graph
+# Authentication and authorization basics for Microsoft Graph
 
 To call Microsoft Graph, your app must acquire an access token from the Microsoft identity platform. The access token contains information about your app and the permissions it has for the resources and APIs available through Microsoft Graph. To get an access token, your app must be registered with the Microsoft identity platform and be authorized by either a user or an administrator for access to the Microsoft Graph resources it needs. 
 

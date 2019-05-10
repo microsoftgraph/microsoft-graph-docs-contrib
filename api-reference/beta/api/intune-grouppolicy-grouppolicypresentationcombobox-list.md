@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationComboBoxes"
 description: "List properties and relationships of the groupPolicyPresentationComboBox objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -76,7 +76,6 @@ Content-Length: 419
   ]
 }
 ```
-
 
 
 

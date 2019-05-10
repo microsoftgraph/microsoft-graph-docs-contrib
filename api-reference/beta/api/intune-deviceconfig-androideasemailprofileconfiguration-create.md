@@ -1,7 +1,7 @@
 ---
 title: "Create androidEasEmailProfileConfiguration"
 description: "Create a new androidEasEmailProfileConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the a
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountName|String|Exchange ActiveSync account name, displayed to users as name of EAS (this) profile.|
-|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for Exchange ActiveSync. Possible values are: `usernameAndPassword`, `certificate`.|
+|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for Exchange ActiveSync. Possible values are: `usernameAndPassword`, `certificate`, `derivedCredential`.|
 |syncCalendar|Boolean|Toggles syncing the calendar. If set to false calendar is turned off on the device.|
 |syncContacts|Boolean|Toggles syncing contacts. If set to false contacts are turned off on the device.|
 |syncTasks|Boolean|Toggles syncing tasks. If set to false tasks are turned off on the device.|
@@ -147,7 +147,6 @@ Content-Length: 965
   "customDomainName": "Custom Domain Name value"
 }
 ```
-
 
 
 

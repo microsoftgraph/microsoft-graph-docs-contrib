@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var tiIndicator = await graphClient.Security.TiIndicators
+var tiIndicators = await graphClient.Security.TiIndicators
 	.Request()
 	.GetAsync();
 

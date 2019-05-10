@@ -1,7 +1,7 @@
 ---
 title: "Create androidManagedAppRegistration"
 description: "Create a new androidManagedAppRegistration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -138,7 +138,6 @@ Content-Length: 987
   "patchVersion": "Patch Version value"
 }
 ```
-
 
 
 

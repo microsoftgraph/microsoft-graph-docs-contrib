@@ -1,7 +1,7 @@
 ---
 title: "List iosCompliancePolicies"
 description: "List properties and relationships of the iosCompliancePolicy objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -102,7 +102,6 @@ Content-Length: 1590
   ]
 }
 ```
-
 
 
 

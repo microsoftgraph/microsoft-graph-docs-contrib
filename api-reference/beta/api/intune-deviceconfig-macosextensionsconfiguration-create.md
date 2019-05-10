@@ -1,7 +1,7 @@
 ---
 title: "Create macOSExtensionsConfiguration"
 description: "Create a new macOSExtensionsConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -127,7 +127,6 @@ Content-Length: 782
   ]
 }
 ```
-
 
 
 

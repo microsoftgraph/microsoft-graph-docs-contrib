@@ -90,6 +90,8 @@ Content-Length: 544
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/notebook_fromweburl-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/notebook_fromweburl-Cs-snippets.md)]

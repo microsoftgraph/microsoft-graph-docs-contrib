@@ -1,7 +1,7 @@
 ---
 title: "Update deviceConfigurationUserStateSummary"
 description: "Update the properties of a deviceConfigurationUserStateSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -99,7 +99,6 @@ Content-Length: 324
   "conflictUserCount": 1
 }
 ```
-
 
 
 

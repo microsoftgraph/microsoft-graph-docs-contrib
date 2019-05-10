@@ -1,7 +1,7 @@
 ---
 title: "auditResource resource type"
 description: "A class containing the properties for Audit Resource."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -48,7 +48,6 @@ Here is a JSON representation of the resource.
   "resourceId": "String"
 }
 ```
-
 
 
 

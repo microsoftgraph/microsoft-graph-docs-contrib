@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementPartner"
 description: "Create a new deviceManagementPartner object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -108,7 +108,6 @@ Content-Length: 713
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
-
 
 
 

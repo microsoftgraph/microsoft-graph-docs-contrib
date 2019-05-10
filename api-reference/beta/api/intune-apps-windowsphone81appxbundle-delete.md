@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsPhone81AppXBundle"
 description: "Deletes a windowsPhone81AppXBundle."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -59,7 +59,6 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

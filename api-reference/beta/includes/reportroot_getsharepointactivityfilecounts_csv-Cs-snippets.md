@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var siteActivitySummary = await graphClient.Reports.GetSharePointActivityFileCounts('D7')
+var getSharePointActivityFileCounts = await graphClient.Reports.GetSharePointActivityFileCounts('D7')
 	.Request()
 	.GetAsync();
 

@@ -1,7 +1,7 @@
 ---
 title: "mobileAppActionType enum type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -22,6 +22,7 @@ Not yet documented
 |installed|3|Application installed.|
 |uninstalled|4|Application uninstalled.|
 |userRequestedInstall|5|User requested installation|
+
 
 
 

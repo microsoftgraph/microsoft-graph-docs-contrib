@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementIntegerSettingInstance"
 description: "Update the properties of a deviceManagementIntegerSettingInstance object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -90,7 +90,6 @@ Content-Length: 222
   "value": 5
 }
 ```
-
 
 
 

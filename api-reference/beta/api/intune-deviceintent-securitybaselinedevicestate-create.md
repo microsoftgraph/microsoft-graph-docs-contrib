@@ -1,7 +1,7 @@
 ---
 title: "Create securityBaselineDeviceState"
 description: "Create a new securityBaselineDeviceState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -93,7 +93,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

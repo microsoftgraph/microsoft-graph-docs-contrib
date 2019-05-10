@@ -1,7 +1,7 @@
 ---
 title: "Create mobileAppInstallStatus"
 description: "Create a new mobileAppInstallStatus object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -115,7 +115,6 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 
