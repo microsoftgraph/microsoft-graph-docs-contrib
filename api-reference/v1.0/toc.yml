@@ -3102,6 +3102,8 @@
           href: api/driveitem-list-versions.md
         - name: Preview item
           href: api/driveitem-preview.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
       - name: Permissions
         href: resources/permission.md
         items:
@@ -3852,6 +3854,8 @@
           href: api/list-list.md
         - name: List subsites
           href: api/site-list-subsites.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
       - name: Lists
         href: resources/list.md
         items:
@@ -3874,6 +3878,8 @@
           href: api/listitem-delete.md
         - name: List versions
           href: api/listitem-list-versions.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
     - name: 'Social intelligence: People'
       items:
       - name: Overview
