@@ -12,7 +12,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Methods
 
-| Method                | Return Type | Description
+| Method                | Return type | Description
 |:-------------------------|:-------------|:----------
 | [Get root site][]        | site | Access the root SharePoint site within a tenant.
 | [Get site][]             | site | Access a sharePoint site using the siteId.
@@ -33,7 +33,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Properties
 
-| Property name            | Type                                | Description                                                                                    |
+| Property            | Type                                | Description                                                                                    |
 | :----------------------- | :---------------------------------- | :--------------------------------------------------------------------------------------------- |
 | **id**                   | string                              | The unique identifier of the item. Read-only.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | The date and time the item was created. Read-only.                                             |
