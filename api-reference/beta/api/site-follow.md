@@ -71,7 +71,7 @@ Content-Type: application/json
 
 If successful, it returns the following JSON response. 
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "response" "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
 ```json
 HTTP/1.1 200 OK
@@ -82,27 +82,27 @@ Content-type: application/json
         {
             "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,712a596e-90a1-49e3-9b48-bfa80bee8740",
             "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed1",
-            "title": "SiteFollowed1",
+            "name": "SiteFollowed1",
             "sharepointIds": {
                 "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
                 "siteUrl": "http://contoso.sharepoint.com/sites/SiteFollowed1",
                 "webId": "712a596e-90a1-49e3-9b48-bfa80bee8740"
             },
             "siteCollection": {
-                "hostName": "contoso.sharepoint.com"
+                "hostname": "contoso.sharepoint.com"
             }
         },
         {
             "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
             "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed2",
-            "title": "SiteFollowed2",
+            "name": "SiteFollowed2",
             "sharepointIds": {
                 "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
                 "siteUrl": "http://contoso.sharepoint.com/sites/SiteFollowed2",
                 "webId": "0271110f-634f-4300-a841-3a8a2e851851"
             },
             "siteCollection": {
-                "hostName": "contoso.sharepoint.com"
+                "hostname": "contoso.sharepoint.com"
             }
         }
     ]
@@ -111,7 +111,7 @@ Content-type: application/json
 
 If an error occured, it returns the following JSON response 
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "response" "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
 ```json
 HTTP/1.1 207 Multi-Status
@@ -136,14 +136,14 @@ Content-type: application/json
         {
             "id": "contoso.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e851851",
             "webUrl": "http://contoso.sharepoint.com/sites/SiteFollowed2",
-            "title": "SiteFollowed2",
+            "name": "SiteFollowed2",
             "sharepointIds": {
                 "siteId": "da60e844-ba1d-49bc-b4d4-d5e36bae9019",
                 "siteUrl": "http://contoso.sharepoint.com/sites/SiteFollowed2",
                 "webId": "0271110f-634f-4300-a841-3a8a2e851851"
             },
             "siteCollection": {
-                "hostName": "contoso.sharepoint.com"
+                "hostname": "contoso.sharepoint.com"
             }
         }
     ]
