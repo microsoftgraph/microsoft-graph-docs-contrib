@@ -1,7 +1,6 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
 title: site resource
 description: The site resource provides metadata and relationships for a Sharepoint site. 
 localization_priority: Priority
