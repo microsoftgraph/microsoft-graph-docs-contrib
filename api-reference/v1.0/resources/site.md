@@ -12,16 +12,14 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Methods
 
-All examples below are relative to `https://graph.microsoft.com/v1.0`.
-
 | Method                | Return Type | Description
 |:-------------------------|:-------------|:----------
-| [Get root site][]        | site | To access the root SharePoint site within a tenant.
-| [Get site][]             | site | To access a sharePoint site using the siteId.
-| [Get site by path][]     | site | To access the root SharePoint site with a relative path.
-| [Get site for a group][] | site | To access the team site for a group.
+| [Get root site][]        | site | Access the root SharePoint site within a tenant.
+| [Get site][]             | site | Access a sharePoint site using the siteId.
+| [Get site by path][]     | site | Access the root SharePoint site with a relative path.
+| [Get site for a group][] | site | Access the team site for a group.
 | [Get analytics][]              | [itemAnalytics][] | Get analytics for this resource. 
-| [Get activities by interval][] | [itemActivityStat][] | Get a collection of itemActivityStats within the specified time interval.
+| [Get activities by interval][] | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.
 | [Search for sites][]     | collection of site | Search across a SharePoint tenant for sites that match keywords provided.
 
 [Get site]: ../api/site-get.md
