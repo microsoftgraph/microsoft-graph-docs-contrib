@@ -1,3 +1,9 @@
+---
+title: "updateWindow resource type"
+description: "updateWindow resource type."
+localization_priority: Normal
+---
+
 # updateWindow resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

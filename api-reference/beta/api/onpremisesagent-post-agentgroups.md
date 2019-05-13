@@ -1,3 +1,9 @@
+---
+title: "Assign onPremisesAgent to onPremisesAgentGroup"
+description: "Assign onPremisesAgent to onPremisesAgentGroup."
+localization_priority: Normal
+---
+
 # Assign onPremisesAgent to onPremisesAgentGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

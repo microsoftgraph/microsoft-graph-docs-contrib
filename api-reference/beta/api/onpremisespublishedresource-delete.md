@@ -1,3 +1,9 @@
+---
+title: "Delete publishedResource"
+description: "Delete publishedResource."
+localization_priority: Normal
+---
+
 # Delete publishedResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

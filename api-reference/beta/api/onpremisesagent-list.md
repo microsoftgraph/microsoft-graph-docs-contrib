@@ -1,3 +1,9 @@
+---
+title: "List onPremisesAgents"
+description: "Retrieve a list of onPremisesAgents."
+localization_priority: Normal
+---
+
 # List onPremisesAgents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

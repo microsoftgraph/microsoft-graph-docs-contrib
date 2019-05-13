@@ -1,3 +1,9 @@
+---
+title: "onPremisesPublishingProfile resource type"
+description: "onPremisesPublishingProfile resource type."
+localization_priority: Normal
+---
+
 # onPremisesPublishingProfile resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

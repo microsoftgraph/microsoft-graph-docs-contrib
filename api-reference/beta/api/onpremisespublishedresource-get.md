@@ -1,3 +1,9 @@
+---
+title: "Get publishedResource"
+description: "Get publishedResource."
+localization_priority: Normal
+---
+
 # Get publishedResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

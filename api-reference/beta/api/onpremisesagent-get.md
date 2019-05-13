@@ -1,3 +1,9 @@
+---
+title: "Get onPremisesAgent"
+description: "Retrieve the properties and relationships of onPremisesAgent."
+localization_priority: Normal
+---
+
 # Get onPremisesAgent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

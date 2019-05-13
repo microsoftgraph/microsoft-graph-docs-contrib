@@ -1,3 +1,9 @@
+---
+title: "onPremisesAgent resource type"
+description: "onPremisesAgent resource type."
+localization_priority: Normal
+---
+
 # onPremisesAgent resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

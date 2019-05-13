@@ -1,3 +1,9 @@
+---
+title: "publishedResource resource type"
+description: "publishedResource resource type."
+localization_priority: Normal
+---
+
 # publishedResource resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

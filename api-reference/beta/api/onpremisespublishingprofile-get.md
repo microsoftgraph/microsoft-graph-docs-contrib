@@ -1,3 +1,9 @@
+---
+title: "Get onPremisesPublishingProfile"
+description: "Get onPremisesPublishingProfile."
+localization_priority: Normal
+---
+
 # Get onPremisesPublishingProfile
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

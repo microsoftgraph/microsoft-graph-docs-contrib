@@ -1,4 +1,10 @@
-# Remove publishedResource to onPremisesAgentGroup
+---
+title: "Assign publishedResource to onPremisesAgentGroup"
+description: "Assign publishedResource to onPremisesAgentGroup."
+localization_priority: Normal
+---
+
+# Assign publishedResource to onPremisesAgentGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,3 +1,9 @@
+---
+title: "Delete onPremisesAgentGroup"
+description: "Delete onPremisesAgentGroup."
+localization_priority: Normal
+---
+
 # Delete onPremisesAgentGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

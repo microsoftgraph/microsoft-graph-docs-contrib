@@ -1,3 +1,9 @@
+---
+title: "Create publishedResource"
+description: "Create a new publishedResource."
+localization_priority: Normal
+---
+
 # Create publishedResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

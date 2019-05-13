@@ -1,3 +1,9 @@
+---
+title: "Remove publishedResource from an onPremisesAgentGroup"
+description: "Remove publishedResource from an onPremisesAgentGroup."
+localization_priority: Normal
+---
+
 # Remove publishedResource from an onPremisesAgentGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

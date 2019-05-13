@@ -1,3 +1,9 @@
+---
+title: "Update onPremisesPublishingProfile"
+description: "Update the properties of onPremisesPublishingProfile."
+localization_priority: Normal
+---
+
 # Update onPremisesPublishingProfile
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

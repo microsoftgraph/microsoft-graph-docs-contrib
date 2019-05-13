@@ -1,3 +1,9 @@
+---
+title: "List publishedResources"
+description: "Retrieve a list of publishedResources."
+localization_priority: Normal
+---
+
 # List publishedResources
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

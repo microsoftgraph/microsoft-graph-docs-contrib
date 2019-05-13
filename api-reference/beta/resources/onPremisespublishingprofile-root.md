@@ -1,3 +1,9 @@
+---
+title: "On-premises Publishing Profiles"
+description: "On-premises Publishing Profiles."
+localization_priority: Normal
+---
+
 # On-premises Publishing Profiles
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

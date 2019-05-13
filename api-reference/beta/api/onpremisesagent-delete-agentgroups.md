@@ -1,3 +1,9 @@
+---
+title: "Remove onpremisesAgent from an onPremisesAgentGroup"
+description: "Remove onpremisesAgent from an onPremisesAgentGroup."
+localization_priority: Normal
+---
+
 # Remove onpremisesAgent from an onPremisesAgentGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

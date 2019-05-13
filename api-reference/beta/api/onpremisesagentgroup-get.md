@@ -1,3 +1,9 @@
+---
+title: "Get onPremisesAgentGroup"
+description: "Get onPremisesAgentGroup."
+localization_priority: Normal
+---
+
 # Get onPremisesAgentGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

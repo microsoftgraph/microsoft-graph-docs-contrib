@@ -1,3 +1,9 @@
+---
+title: "hybridAgentUpdaterConfiguration resource type"
+description: "hybridAgentUpdaterConfiguration resource type."
+localization_priority: Normal
+---
+
 # hybridAgentUpdaterConfiguration resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,3 +1,9 @@
+---
+title: "Update publishedResource"
+description: "Update publishedResource."
+localization_priority: Normal
+---
+
 # Update publishedResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
