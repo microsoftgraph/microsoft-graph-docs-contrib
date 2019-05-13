@@ -83,6 +83,7 @@ If an error occured, it returns the following JSON response
 ```json
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
+
 {
     "value": [
         {
