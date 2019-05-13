@@ -2,11 +2,11 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: Get an entry from a SharePoint list
+title: Get listItem
 localization_priority: Priority
 ms.prod: "sharepoint"
 ---
-# Get an item in a list
+# Get listItem
 
 Returns the metadata for an [item][] in a [list][].
 
@@ -50,9 +50,9 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 Do not supply a request body for this method.
 
-## Response body 
+## Response 
 
-If successful, this method returns a `200 OK` response code and [item][] in the response body.
+If successful, this method returns a `200 OK` response code and an [item][] in the response body.
 
 ## Example
 
