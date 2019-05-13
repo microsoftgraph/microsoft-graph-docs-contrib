@@ -55,7 +55,7 @@ This method supports the [OData query parameters](/graph/query_parameters) to he
 
 Do not supply a request body for this method.
 
-## Response body 
+## Response 
 
 If successful, this method returns a `200 OK` response code and collection of [itemActivityStats][] object in the response body. 
 
