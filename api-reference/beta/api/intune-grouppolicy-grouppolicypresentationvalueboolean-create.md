@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationValueBoolean"
 description: "Create a new groupPolicyPresentationValueBoolean object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -85,7 +85,6 @@ Content-Length: 267
   "value": true
 }
 ```
-
 
 
 

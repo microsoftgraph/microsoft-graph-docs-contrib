@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationTextBox"
 description: "Create a new groupPolicyPresentationTextBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -92,7 +92,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

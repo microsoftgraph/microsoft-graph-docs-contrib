@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkCustomConfiguration"
 description: "Create a new androidForWorkCustomConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -121,7 +121,6 @@ Content-Length: 673
   ]
 }
 ```
-
 
 
 

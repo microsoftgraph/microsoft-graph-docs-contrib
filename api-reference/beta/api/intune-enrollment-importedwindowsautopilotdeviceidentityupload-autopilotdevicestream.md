@@ -1,7 +1,7 @@
 ---
 title: "autopilotDeviceStream function"
 description: "Create a upload request with autopilot device stream in it."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -63,7 +63,6 @@ Content-Length: 48
   "value": "Autopilot Device Stream value"
 }
 ```
-
 
 
 

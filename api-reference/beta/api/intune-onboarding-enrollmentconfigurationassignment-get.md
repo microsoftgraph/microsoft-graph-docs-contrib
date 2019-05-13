@@ -1,7 +1,7 @@
 ---
 title: "Get enrollmentConfigurationAssignment"
 description: "Read properties and relationships of the enrollmentConfigurationAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -72,7 +72,6 @@ Content-Length: 251
   }
 }
 ```
-
 
 
 

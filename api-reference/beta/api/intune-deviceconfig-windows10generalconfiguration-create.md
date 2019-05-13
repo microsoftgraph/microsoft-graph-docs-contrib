@@ -1,7 +1,7 @@
 ---
 title: "Create windows10GeneralConfiguration"
 description: "Create a new windows10GeneralConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -984,7 +984,6 @@ Content-Length: 13690
   ]
 }
 ```
-
 
 
 

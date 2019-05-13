@@ -1,7 +1,7 @@
 ---
 title: "List mobileApps"
 description: "List properties and relationships of the mobileApp objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -91,7 +91,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

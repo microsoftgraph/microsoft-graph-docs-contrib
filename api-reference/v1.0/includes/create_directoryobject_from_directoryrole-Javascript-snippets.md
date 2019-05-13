@@ -1,0 +1,17 @@
+
+```Javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const directoryObject = {
+  @odata.id: "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+};
+
+let res = await client.api('/directoryRoles/{id}/members/$ref')
+	.post({directoryObject : directoryObject});
+
+```

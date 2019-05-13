@@ -1,7 +1,7 @@
 ---
 title: "Update softwareUpdateStatusSummary"
 description: "Update the properties of a softwareUpdateStatusSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -123,7 +123,6 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
-
 
 
 

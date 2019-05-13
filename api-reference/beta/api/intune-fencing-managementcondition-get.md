@@ -1,7 +1,7 @@
 ---
 title: "Get managementCondition"
 description: "Read properties and relationships of the managementCondition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -79,7 +79,6 @@ Content-Length: 468
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update iosCustomConfiguration"
 description: "Update the properties of a iosCustomConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -112,7 +112,6 @@ Content-Length: 543
   "payload": "cGF5bG9hZA=="
 }
 ```
-
 
 
 

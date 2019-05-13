@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementCollectionSettingInstances"
 description: "List properties and relationships of the deviceManagementCollectionSettingInstance objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -73,7 +73,6 @@ Content-Length: 259
   ]
 }
 ```
-
 
 
 

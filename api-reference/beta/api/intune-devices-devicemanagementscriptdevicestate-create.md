@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementScriptDeviceState"
 description: "Create a new deviceManagementScriptDeviceState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -94,7 +94,6 @@ Content-Length: 330
   "errorDescription": "Error Description value"
 }
 ```
-
 
 
 

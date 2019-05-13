@@ -1,7 +1,7 @@
 ---
 title: "Update deviceConfigurationGroupAssignment"
 description: "Update the properties of a deviceConfigurationGroupAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -92,7 +92,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 

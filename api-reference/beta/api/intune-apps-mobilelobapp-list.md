@@ -1,7 +1,7 @@
 ---
 title: "List mobileLobApps"
 description: "List properties and relationships of the mobileLobApp objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -94,7 +94,6 @@ Content-Length: 1141
   ]
 }
 ```
-
 
 
 
