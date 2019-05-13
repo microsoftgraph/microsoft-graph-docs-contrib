@@ -49,7 +49,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 ## Relationships
 
-| Relationship name | Type                             | Description
+| Relationship      | Type                             | Description
 |:------------------|:---------------------------------|:----------------------
 | **analytics**     | [itemAnalytics][] resource       | Analytics about the view activities that took place in this site.
 | **columns**       | Collection([columnDefinition][]) | The collection of column definitions reusable across lists under this site.
