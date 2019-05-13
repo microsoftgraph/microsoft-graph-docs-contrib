@@ -70,13 +70,15 @@ Content-Type: application/json
 
 If successful, it returns the following JSON response. 
 
+<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+
 ```json
 HTTP/1.1 204 No Content
 ```
 
 If an error occured, it returns the following JSON response 
 
-<!-- { "blockType": "response" "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
 ```json
 HTTP/1.1 207 Multi-Status
