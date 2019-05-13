@@ -1,7 +1,7 @@
 ---
 title: "Update managedIOSLobApp"
 description: "Update the properties of a managedIOSLobApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -199,7 +199,6 @@ Content-Length: 1641
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

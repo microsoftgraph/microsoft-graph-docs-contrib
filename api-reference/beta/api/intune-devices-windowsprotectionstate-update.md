@@ -1,7 +1,7 @@
 ---
 title: "Update windowsProtectionState"
 description: "Update the properties of a windowsProtectionState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -130,7 +130,6 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

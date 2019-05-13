@@ -71,6 +71,8 @@ Content-length: 83
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_pivottables-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_pivottables-Cs-snippets.md)]

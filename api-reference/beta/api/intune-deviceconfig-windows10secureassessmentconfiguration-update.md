@@ -1,7 +1,7 @@
 ---
 title: "Update windows10SecureAssessmentConfiguration"
 description: "Update the properties of a windows10SecureAssessmentConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -121,7 +121,6 @@ Content-Length: 671
   "allowTextSuggestion": true
 }
 ```
-
 
 
 

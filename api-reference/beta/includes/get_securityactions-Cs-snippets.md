@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var securityAction = await graphClient.Security.SecurityActions
+var securityActions = await graphClient.Security.SecurityActions
 	.Request()
 	.GetAsync();
 

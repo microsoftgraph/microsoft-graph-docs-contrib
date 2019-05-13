@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhone81StoreApp"
 description: "Create a new windowsPhone81StoreApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -142,7 +142,6 @@ Content-Length: 947
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

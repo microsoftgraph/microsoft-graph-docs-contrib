@@ -1,7 +1,7 @@
 ---
 title: "importedWindowsAutopilotDeviceIdentity resource type"
 description: "Imported windows autopilot devices."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -34,6 +34,7 @@ Imported windows autopilot devices.
 |importId|String|The Import Id of the Windows autopilot device.|
 |hardwareIdentifier|Binary|Hardware Blob of the Windows autopilot device.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Current state of the imported device.|
+|assignedUserPrincipalName|String|UPN of the user the device will be assigned|
 
 ## Relationships
 None
@@ -61,10 +62,10 @@ Here is a JSON representation of the resource.
     "deviceRegistrationId": "String",
     "deviceErrorCode": 1024,
     "deviceErrorName": "String"
-  }
+  },
+  "assignedUserPrincipalName": "String"
 }
 ```
-
 
 
 

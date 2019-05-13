@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.Devices["{id}"].TransitiveMemberOf
+var transitiveMemberOf = await graphClient.Devices["{id}"].TransitiveMemberOf
 	.Request()
 	.GetAsync();
 

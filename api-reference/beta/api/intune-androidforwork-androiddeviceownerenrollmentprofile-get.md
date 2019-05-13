@@ -1,7 +1,7 @@
 ---
 title: "Get androidDeviceOwnerEnrollmentProfile"
 description: "Read properties and relationships of the androidDeviceOwnerEnrollmentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -84,7 +84,6 @@ Content-Length: 790
   }
 }
 ```
-
 
 
 

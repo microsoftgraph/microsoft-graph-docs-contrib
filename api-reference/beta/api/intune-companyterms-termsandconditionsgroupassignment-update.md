@@ -1,7 +1,7 @@
 ---
 title: "Update termsAndConditionsGroupAssignment"
 description: "Update the properties of a termsAndConditionsGroupAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -81,7 +81,6 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

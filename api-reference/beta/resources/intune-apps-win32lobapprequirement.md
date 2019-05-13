@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppRequirement resource type"
 description: "Base class to detect a Win32 App"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -37,7 +37,6 @@ Here is a JSON representation of the resource.
   "detectionValue": "String"
 }
 ```
-
 
 
 

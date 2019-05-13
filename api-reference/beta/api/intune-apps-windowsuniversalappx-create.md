@@ -1,7 +1,7 @@
 ---
 title: "Create windowsUniversalAppX"
 description: "Create a new windowsUniversalAppX object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -190,7 +190,6 @@ Content-Length: 1587
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

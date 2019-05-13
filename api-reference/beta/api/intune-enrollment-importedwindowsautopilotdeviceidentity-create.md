@@ -1,7 +1,7 @@
 ---
 title: "Create importedWindowsAutopilotDeviceIdentity"
 description: "Create a new importedWindowsAutopilotDeviceIdentity object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the i
 |importId|String|The Import Id of the Windows autopilot device.|
 |hardwareIdentifier|Binary|Hardware Blob of the Windows autopilot device.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Current state of the imported device.|
+|assignedUserPrincipalName|String|UPN of the user the device will be assigned|
 
 
 
@@ -66,7 +67,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 575
+Content-length: 645
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -81,7 +82,8 @@ Content-length: 575
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
 
@@ -90,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 624
+Content-Length: 694
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -106,10 +108,10 @@ Content-Length: 624
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

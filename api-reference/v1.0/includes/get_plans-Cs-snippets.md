@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var plannerPlan = await graphClient.Me.Planner.Plans
+var plans = await graphClient.Me.Planner.Plans
 	.Request()
 	.GetAsync();
 

@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var device = await graphClient.Devices
+var devices = await graphClient.Devices
 	.Request()
 	.GetAsync();
 
