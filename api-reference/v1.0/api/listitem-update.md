@@ -1,12 +1,12 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: Update a record in a SharePoint list
+title: Update listItem
+description: Update the properties on a **[listItem][]**.
 localization_priority: Priority
 ms.prod: "sharepoint"
 ---
-# Update an item in a list
+# Update listItem
 
 Update the properties on a **[listItem][]**.
 
@@ -43,15 +43,15 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 ## Request body 
 In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
 
-## Response body 
+## Response 
 
-If successful, this method returns a `201 Created` response code and [fieldValueSet][] in the response body for the updated list item.
+If successful, this method returns a `201 Created` response code and a [fieldValueSet][] in the response body for the updated list item.
 
 ## Example
 
+The following example updates the **Color** and **Quantity** fields of the list item with new values. All other values on the **listItem** are left alone. 
+
 ### Request 
-Here is an example that updates the Color and Quantity fields of the list item with new values.
-All other values on the listItem are left alone. 
 
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
