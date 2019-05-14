@@ -1,17 +1,17 @@
 ---
-title: "Manage app registration and API permission for Microsoft Graph notifications "
-description: "In order to receive notifications sent via Microsoft Graph, you first need to register your application on the Microsoft Azure portal.  "
+title: "Manage app registration and API permission for Microsoft Graph notifications"
+description: "In order to receive notifications sent via Microsoft Graph, you first need to register your application on the Microsoft Azure portal."
 localization_priority: Priority
 ms.prod: "notifications"
 ---
 
 # Manage app registration and API permission for Microsoft Graph notifications
 
-In order for your application service to integrate with Microsoft Graph notifications, you need to register your app with the Microsoft identity platform to support Microsoft accounts or Azure AD, and declare the API permissions that are required.
+In order for your application service to integrate with Microsoft Graph notifications, you need to register your app with the Microsoft identity platform to support Microsoft accounts or work or school accounts, and declare the API permissions that are required.
 
-## Register your app to support Microsoft accounts or Azure AD 
+## Register your app to support Microsoft accounts or work or school accounts
 
-Register your application on the [Microsoft Azure portal](https://portal.azure.com/#home) to support Microsoft accounts or Azure AD. If you’ve previously registered your application on the [Microsoft Application Portal](https://apps.dev.microsoft.com/), your existing apps will show up in the new and improved Azure portal experience.
+Register your application on the [Microsoft Azure portal](https://portal.azure.com/#home) to support Microsoft accounts or work or school accounts. If you’ve previously registered your application on the [Microsoft Application Portal](https://apps.dev.microsoft.com/), your existing apps will show up in the new and improved Azure portal experience.
 
 For information about how to register your apps, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md). 
 
