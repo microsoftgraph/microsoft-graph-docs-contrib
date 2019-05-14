@@ -1,6 +1,6 @@
 ---
-title: "group resource type - Microsoft Graph API"
-description: "Describes the group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group or a security group."
+title: "group resource type"
+description: "Represents an Azure Active Directory (Azure AD) group, which can be an Office 365 group, or a security group. "
 localization_priority: Priority
 author: "dkershaw10" 
 ms.prod: "groups"
