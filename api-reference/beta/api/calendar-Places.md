@@ -169,10 +169,11 @@ Content-type: application/json
           "bookingType": "standard",
           "tags": ["bean bags", "nice view"],
           "audioDevice": "Teams Enabled",
-          "videoDevice": Null,
+          "videoDevice": null,
           "displayDevice": "Surface Hub"
-          }
-      ]
+      }
+    }
+  ]
 }
 
 ```
