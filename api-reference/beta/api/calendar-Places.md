@@ -61,39 +61,43 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/places/microsoft.graph.room ",
-    "value": [
-          {
-          "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
-          "displayName": "32/Conf Room 35"
-          "address": [
-          "street": "One Microsoft Way"
-          "city": "Redmond",
-          "state": "WA",
-          "postalCode": "98052",
-          "countryOrRegion": "USA",
-          ],
-          "geocoordinates": {
-          47.640568390488625,
-          -122.1293731033802
-          },
-          "phone": "425-705-1974",
-          "room": {
-          "emailAddress": cf3235@microsoft.com,
-          "nickname": "Conf Room",
-          "label": "35",
-          "capacity": 15,
-          "building": 32,
-          "floor": 3,
-          "isManaged": true,
-          "isWheelchairAccessible": false,
-          "bookingType": "standard",
-          "tags": ["bean bags", "nice view"],
-          "audioDevice": "Teams Enabled",
-          "videoDevice": Null,
-          "displayDevice": "Surface Hub"
-          }
-      ]
+  "@odata.context": "https://graph.microsoft.com/beta/places/microsoft.graph.room ",
+  "value": [
+    {
+      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
+      "displayName": "32/Conf Room 35",
+      "address": {
+        "street": "One Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "postalCode": "98052",
+        "countryOrRegion": "USA"
+      },
+      "geocoordinates": [
+        47.640568390488625,
+        -122.1293731033802
+      ],
+      "phone": "425-705-1974",
+      "room": {
+        "emailAddress": "cf3235@microsoft.com",
+        "nickname": "Conf Room",
+        "label": "35",
+        "capacity": 15,
+        "building": 32,
+        "floor": 3,
+        "isManaged": true,
+        "isWheelchairAccessible": false,
+        "bookingType": "standard",
+        "tags": [
+          "bean bags",
+          "nice view"
+        ],
+        "audioDevice": "Teams Enabled",
+        "videoDevice": null,
+        "displayDevice": "Surface Hub"
+      }
+    }
+  ]
 }
 
 ```
