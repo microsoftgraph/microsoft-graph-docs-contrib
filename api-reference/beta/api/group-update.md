@@ -1,6 +1,6 @@
 ---
-title: "Update group - Microsoft Graph API"
-description: "Describes how to update a group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group or a security group."
+title: "Update group"
+description: "Update the properties of a [group](../resources/group.md) object."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 |securityEnabled|Boolean|Specifies whether the group is a security group, including Office 365 groups. |
 |visibility|String|Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
 
-Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **group** instance.
+Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **group** instance.
 
 
 > **Note:**
