@@ -27,4 +27,4 @@ To learn more about OAuth 2.0 OBO flow, see [Service-to-service calls that use d
 > [!NOTE]
 > Microsoft Graph notifications currently uses OBO authentication flow with future plans to simplify this authentication further and eliminate the need to maintain access tokens and refresh tokens.
 
-For more details on the API permissions and on the request and response headers, please see [Create and send a notification](../api-reference/beta/api/notifications-post.md) in API reference section. 
+For more details on the API permissions and on the request and response headers, please see [Create and send a notification](/graph/api/notifications-post) in API reference section. 
