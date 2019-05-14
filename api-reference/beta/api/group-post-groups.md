@@ -1,6 +1,6 @@
 ---
 title: "Create group"
-description: "Create a new Office 365 group or security group.
+description: "Create a new Office 365 group or security group."
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
