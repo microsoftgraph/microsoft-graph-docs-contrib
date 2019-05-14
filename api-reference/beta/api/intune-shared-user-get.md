@@ -1,7 +1,7 @@
 ---
 title: "Get user"
 description: "Read properties and relationships of the user object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---

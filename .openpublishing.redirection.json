@@ -26596,6 +26596,11 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "concepts\\auth-overview.md",
+            "redirect_url": "/graph/auth/",
+            "redirect_document_id": true
+        },
+        {
             "source_path": "concepts\\auth_register_app_v2.md",
             "redirect_url": "/graph/auth-register-app-v2",
             "redirect_document_id": true

@@ -1,7 +1,7 @@
 ---
 title: "Update userAppInstallStatus"
 description: "Update the properties of a userAppInstallStatus object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -93,7 +93,6 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

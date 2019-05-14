@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var servicePrincipal = await graphClient.ServicePrincipals
+var servicePrincipals = await graphClient.ServicePrincipals
 	.Request()
 	.GetAsync();
 

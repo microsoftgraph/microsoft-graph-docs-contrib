@@ -1,7 +1,7 @@
 ---
 title: "Get androidWorkProfileGeneralDeviceConfiguration"
 description: "Read properties and relationships of the androidWorkProfileGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -116,7 +116,6 @@ Content-Length: 2327
   }
 }
 ```
-
 
 
 

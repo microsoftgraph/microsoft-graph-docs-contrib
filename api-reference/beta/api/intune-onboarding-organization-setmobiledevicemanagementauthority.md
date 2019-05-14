@@ -1,7 +1,7 @@
 ---
 title: "setMobileDeviceManagementAuthority action"
 description: "Set mobile device management authority"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -63,7 +63,6 @@ Content-Length: 18
   "value": 2
 }
 ```
-
 
 
 

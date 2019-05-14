@@ -1,7 +1,7 @@
 ---
 title: "List detectedApps"
 description: "List properties and relationships of the detectedApp objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -73,7 +73,6 @@ Content-Length: 273
   ]
 }
 ```
-
 
 
 

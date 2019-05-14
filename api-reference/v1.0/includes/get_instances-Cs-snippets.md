@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var _event = await graphClient.Me.Events["AAMkAGUzYRgWAAA="].Instances
+var instances = await graphClient.Me.Events["AAMkAGUzYRgWAAA="].Instances
 	.Request()
 	.Select( e => new {
 			 e.Subject,

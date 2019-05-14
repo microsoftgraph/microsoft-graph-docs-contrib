@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var driveItem = await graphClient.Drives["{drive-id}"].Items["{item-id}"].Children
+var children = await graphClient.Drives["{drive-id}"].Items["{item-id}"].Children
 	.Request()
 	.GetAsync();
 

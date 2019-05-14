@@ -1,7 +1,7 @@
 ---
 title: "Get mobileAppContent"
 description: "Read properties and relationships of the mobileAppContent object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -71,7 +71,6 @@ Content-Length: 130
   }
 }
 ```
-
 
 
 

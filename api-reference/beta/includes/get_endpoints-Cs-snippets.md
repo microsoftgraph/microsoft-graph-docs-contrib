@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var endpoint = await graphClient.Groups["{id}"].Endpoints
+var endpoints = await graphClient.Groups["{id}"].Endpoints
 	.Request()
 	.GetAsync();
 

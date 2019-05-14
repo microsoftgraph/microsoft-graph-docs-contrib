@@ -1,7 +1,7 @@
 ---
 title: "Update auditEvent"
 description: "Update the properties of a auditEvent object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -165,7 +165,6 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
 
 
 

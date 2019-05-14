@@ -80,6 +80,8 @@ Content-length: 157
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookrange_columnsbefore-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookrange_columnsbefore-Cs-snippets.md)]

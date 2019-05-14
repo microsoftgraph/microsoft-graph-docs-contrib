@@ -1,7 +1,7 @@
 ---
 title: "Update iosTrustedRootCertificate"
 description: "Update the properties of a iosTrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -108,7 +108,6 @@ Content-Length: 535
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

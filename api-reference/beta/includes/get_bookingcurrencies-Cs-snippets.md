@@ -3,7 +3,7 @@
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var bookingCurrency = await graphClient.BookingCurrencies
+var bookingCurrencies = await graphClient.BookingCurrencies
 	.Request()
 	.GetAsync();
 

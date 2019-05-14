@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhone81SCEPCertificateProfile"
 description: "Create a new windowsPhone81SCEPCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -157,7 +157,6 @@ Content-Length: 1204
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
 
 
 

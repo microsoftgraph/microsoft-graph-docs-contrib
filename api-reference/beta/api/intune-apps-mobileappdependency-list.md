@@ -1,7 +1,7 @@
 ---
 title: "List mobileAppDependencies"
 description: "List properties and relationships of the mobileAppDependency objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -72,7 +72,6 @@ Content-Length: 317
   ]
 }
 ```
-
 
 
 
