@@ -271,6 +271,8 @@
         items:
         - name: Overview
           href: webhooks.md
+        - name: Tutorial
+          href: /graph/tutorials/change-notifications
         - name: Missing Outlook notifications (preview)
           href: webhooks-outlook-authz.md
       - name: Track changes
@@ -307,7 +309,7 @@
           href: migrate-azure-ad-graph-planning-checklist.md
         - name: "1: Review differences"
           expanded: true
-          items: 
+          items:
           - name: Requests
             href: migrate-azure-ad-graph-request-differences.md
           - name: Service features
@@ -325,9 +327,9 @@
           items:
           - name: App registration
             href: migrate-azure-ad-graph-app-registration.md
-          - name: Auth libraries 
+          - name: Auth libraries
             href: migrate-azure-ad-graph-authentication-library.md
-          - name: .NET client libraries 
+          - name: .NET client libraries
             href: migrate-azure-ad-graph-client-libraries.md
         - name: "4: Deploy, test, and extend"
           href: migrate-azure-ad-graph-deploy-test-extend.md

@@ -11,6 +11,9 @@ The Microsoft Graph API uses a webhook mechanism to deliver notifications to cli
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.
 
+> [!div class="nextstepaction"]
+> [Build a webhook app](/graph/tutorials/change-notifications)
+
 ## Supported resources
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
