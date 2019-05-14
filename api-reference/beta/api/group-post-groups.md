@@ -77,11 +77,13 @@ Use the **groupTypes** property to control the type of group and its membership,
 
 If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
-## Example: Create an Office 365 group
+## Examples
 
-### Request
+### Example 1: Create an Office 365 group
 
-The first example request creates an Office 365 Group.
+The following example creates an Office 365 Group.
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -104,7 +106,7 @@ Content-length: 244
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -154,11 +156,11 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Create an Office 365 group with an owner and members
+### Example 2: Create an Office 365 group with an owner and members
 
-### Request
+The following example creates an Office 365 group with an owner and members specified.
 
-The second example request creates an Office 365 group with an owner and members specified.
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -187,7 +189,7 @@ Content-Type: application/json
 }
 ```
 
-### Response 
+#### Response 
 
 The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
 
