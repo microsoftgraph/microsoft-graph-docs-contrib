@@ -1,13 +1,13 @@
 ---
-title: "Create group - Microsoft Graph API"
-description: "Describes how to create a group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group or a security group."
+title: "Create group"
+description: "Create a new group as specified in the request body. "
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
 ---
 
 # Create group
-Use this API to create a new group as specified in the request body. You can create the following types of groups:
+Create a new group as specified in the request body. You can create the following types of groups:
 
 * Office 365 Group (unified group)
 * Security group
@@ -69,11 +69,13 @@ Use the **groupTypes** property to control the type of group and its membership,
 ## Response
 If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
-## Example 1: Create an Office 365 group
+## Examples
 
-### Request
+### Example 1: Create an Office 365 group
 
-The first example request creates an Office 365 Group.
+The following example creates an Office 365 group.
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -96,7 +98,7 @@ Content-length: 244
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -141,11 +143,12 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Create a group with owners and members
+### Example 2: Create a group with owners and members
 
-### Request
+The following example creates an Office 365 group with an owner and members specified.
 
-The second example request creates an Office 365 group with an owner and members specified.
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
@@ -173,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
 
