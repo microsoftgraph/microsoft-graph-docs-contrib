@@ -2,7 +2,7 @@
 title: "calendar: Places"
 description: "Get details about rooms."
 localization_priority: Priority
-author: "vrod-ms"
+author: "vrod9429"
 ms.prod: "outlook"
 ---
 
