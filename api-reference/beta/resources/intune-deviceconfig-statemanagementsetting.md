@@ -1,7 +1,7 @@
 ---
 title: "stateManagementSetting enum type"
 description: "State Management Setting."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

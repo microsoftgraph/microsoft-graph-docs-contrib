@@ -1,7 +1,7 @@
 ---
 title: "certificateDestinationStore enum type"
 description: "Possible values for the Certificate Destination Store."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

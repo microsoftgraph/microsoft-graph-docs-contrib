@@ -1,7 +1,7 @@
 ---
 title: "Device configuration in Microsoft Intune - Microsoft Gaaph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define configure devices for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -26,8 +26,10 @@ The following Graph resources are available to manage settings and features on d
 - [Android custom configuration](intune-deviceconfig-androidcustomconfiguration.md)
 - [Android device owner app auto update policy type](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Android device owner battery plugged mode](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [Android device owner compliance policy](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Android device owner default app permission policy type](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Android device owner general device configuration](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
+- [Android device owner play store mode](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android device owner required password type](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android device owner system update install type](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Android device owner Wi-Fi configuration](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
@@ -120,7 +122,6 @@ The following Graph resources are available to manage settings and features on d
 - [Defender prompt for sample submission](intune-deviceconfig-defenderpromptforsamplesubmission.md)
 - [Defender protection type](intune-deviceconfig-defenderprotectiontype.md)
 - [Defender scan type](intune-deviceconfig-defenderscantype.md)
-- [Defender schedule scan day](intune-deviceconfig-defenderschedulescanday.md)
 - [Defender security center IT contact display type](intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)
 - [Defender security center notifications from app type](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
 - [Defender submit samples consent type](intune-deviceconfig-defendersubmitsamplesconsenttype.md)
@@ -165,6 +166,9 @@ The following Graph resources are available to manage settings and features on d
 - [Device configuration user state summary](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [Device configuration user status](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device guard local system authority credential guard type](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [Device management derived credential issuer](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
+- [Device management derived credential notification type](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
+- [Device management derived credential settings](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [Device management settings](intune-deviceconfig-devicemanagementsettings.md)
 - [Device management user rights local user or group](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Device management user rights setting](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -192,6 +196,7 @@ The following Graph resources are available to manage settings and features on d
 - [Edge telemetry mode](intune-deviceconfig-edgetelemetrymode.md)
 - [Edition upgrade configuration](intune-deviceconfig-editionupgradeconfiguration.md)
 - [Edition upgrade license type](intune-deviceconfig-editionupgradelicensetype.md)
+- [Email certificate type](intune-deviceconfig-emailcertificatetype.md)
 - [Email sync duration](intune-deviceconfig-emailsyncduration.md)
 - [Email sync schedule](intune-deviceconfig-emailsyncschedule.md)
 - [Encryption readiness state](intune-deviceconfig-encryptionreadinessstate.md)
@@ -238,6 +243,7 @@ The following Graph resources are available to manage settings and features on d
 - [iOS certificate profile base](intune-deviceconfig-ioscertificateprofilebase.md)
 - [iOS compliance policy](intune-deviceconfig-ioscompliancepolicy.md)
 - [iOS custom configuration](intune-deviceconfig-ioscustomconfiguration.md)
+- [iOS derived credential authentication configuration](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [iOS device features configuration](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
 - [iOS EAS email profile configuration](intune-deviceconfig-ioseasemailprofileconfiguration.md)
 - [iOS EDU certificate settings](intune-deviceconfig-ioseducertificatesettings.md)
@@ -285,10 +291,13 @@ The following Graph resources are available to manage settings and features on d
 - [macOS device features configuration](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
 - [macOS endpoint protection configuration](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [macOS enterprise Wi-Fi configuration](intune-deviceconfig-macosenterprisewificonfiguration.md)
+- [macOS extensions configuration](intune-deviceconfig-macosextensionsconfiguration.md)
 - [macOS firewall application](intune-deviceconfig-macosfirewallapplication.md)
 - [macOS gatekeeper app sources](intune-deviceconfig-macosgatekeeperappsources.md)
 - [macOS general device configuration](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
 - [macOS imported PFX certificate profile](intune-deviceconfig-macosimportedpfxcertificateprofile.md)
+- [macOS kernel extension](intune-deviceconfig-macoskernelextension.md)
+- [macOS launch item](intune-deviceconfig-macoslaunchitem.md)
 - [macOS SCEP certificate profile](intune-deviceconfig-macosscepcertificateprofile.md)
 - [macOS trusted root certificate](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN configuration](intune-deviceconfig-macosvpnconfiguration.md)
@@ -427,6 +436,12 @@ The following Graph resources are available to manage settings and features on d
 - [Windows delivery optimization configuration](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Windows delivery optimization mode](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Windows firewall network profile](intune-deviceconfig-windowsfirewallnetworkprofile.md)
+- [Windows firewall rule](intune-deviceconfig-windowsfirewallrule.md)
+- [Windows firewall rule interface types](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
+- [Windows firewall rule network profile types](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
+- [Windows firewall rule traffic direction type](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
+- [Windows health monitoring configuration](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
+- [Windows health monitoring scope](intune-deviceconfig-windowshealthmonitoringscope.md)
 - [Windows identity protection configuration](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
 - [Windows kiosk active directory group](intune-deviceconfig-windowskioskactivedirectorygroup.md)
 - [Windows kiosk app base](intune-deviceconfig-windowskioskappbase.md)
@@ -466,6 +481,7 @@ The following Graph resources are available to manage settings and features on d
 - [Windows update for business configuration](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
 - [Windows update for business update weeks](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [Windows update install schedule type](intune-deviceconfig-windowsupdateinstallscheduletype.md)
+- [Windows update notification display option](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Windows update scheduled install](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Windows update status](intune-deviceconfig-windowsupdatestatus.md)
 - [Windows update type](intune-deviceconfig-windowsupdatetype.md)

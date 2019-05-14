@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionPinCharacterRequirements enum type"
 description: "Pin Character Requirements"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

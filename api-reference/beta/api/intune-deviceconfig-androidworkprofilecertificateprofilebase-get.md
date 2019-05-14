@@ -1,7 +1,7 @@
 ---
 title: "Get androidWorkProfileCertificateProfileBase"
 description: "Read properties and relationships of the androidWorkProfileCertificateProfileBase object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [androidWorkProfileCertificateProfileBase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 868
+Content-Length: 919
 
 {
   "value": {
@@ -88,7 +88,8 @@ Content-Length: 868
         "name": "Name value",
         "objectIdentifier": "Object Identifier value"
       }
-    ]
+    ],
+    "subjectAlternativeNameType": "emailAddress"
   }
 }
 ```

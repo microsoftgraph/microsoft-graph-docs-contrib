@@ -1,7 +1,7 @@
 ---
 title: "appLogUploadState enum type"
 description: "AppLogUploadStatus"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

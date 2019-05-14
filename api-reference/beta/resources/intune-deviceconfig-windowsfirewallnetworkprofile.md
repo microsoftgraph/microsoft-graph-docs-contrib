@@ -1,7 +1,7 @@
 ---
 title: "windowsFirewallNetworkProfile resource type"
 description: "Windows Firewall Profile Policies."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

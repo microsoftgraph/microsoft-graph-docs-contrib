@@ -1,7 +1,7 @@
 ---
 title: "domainNameSource enum type"
 description: "Domainname source."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationMaxCacheSize resource type"
 description: "Delivery Optimization max cache size types."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

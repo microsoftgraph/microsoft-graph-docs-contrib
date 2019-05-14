@@ -1,7 +1,7 @@
 ---
 title: "firewallPacketQueueingMethodType enum type"
 description: "Possible values for firewallPacketQueueingMethod"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationBandwidthHoursWithPercentage resource type"
 description: "Bandwidth limit as a percentage with business hours."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

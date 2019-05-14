@@ -1,7 +1,7 @@
 ---
 title: "meteredConnectionLimitType enum type"
 description: "Metered Connection Limit Settings."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

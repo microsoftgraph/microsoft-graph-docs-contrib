@@ -1,7 +1,7 @@
 ---
 title: "Get iosEnterpriseWiFiConfiguration"
 description: "Read properties and relationships of the iosEnterpriseWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [iosEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-iosenterprisewificonfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1332
+Content-Length: 1454
 
 {
   "value": {
@@ -94,7 +94,9 @@ Content-Length: 1332
     ],
     "authenticationMethod": "usernameAndPassword",
     "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+    "usernameFormatString": "Username Format String value",
+    "passwordFormatString": "Password Format String value"
   }
 }
 ```

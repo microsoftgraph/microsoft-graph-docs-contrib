@@ -1,7 +1,7 @@
 ---
 title: "List iosLobAppProvisioningConfigurations"
 description: "List properties and relationships of the iosLobAppProvisioningConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 558
+Content-Length: 632
 
 {
   "value": [
@@ -67,6 +67,9 @@ Content-Length: 558
       "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
       "payloadFileName": "Payload File Name value",
       "payload": "cGF5bG9hZA==",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",

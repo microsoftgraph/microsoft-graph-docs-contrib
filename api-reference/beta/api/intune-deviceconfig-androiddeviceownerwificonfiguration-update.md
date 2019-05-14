@@ -1,7 +1,7 @@
 ---
 title: "Update androidDeviceOwnerWiFiConfiguration"
 description: "Update the properties of a androidDeviceOwnerWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Update the properties of a [androidDeviceOwnerWiFiConfiguration](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the [
 |ssid|String|This is the name of the Wi-Fi network that is broadcast to all devices.|
 |connectAutomatically|Boolean|Connect automatically when this network is in range. Setting this to true will skip the user prompt and automatically connect the device to Wi-Fi network.|
 |connectWhenNetworkNameIsHidden|Boolean|When set to true, this profile forces the device to connect to a network that doesn't broadcast its SSID to all devices.|
-|wiFiSecurityType|[androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Possible values are: `open`, `wep`, `wpaPersonal`.|
+|wiFiSecurityType|[androidDeviceOwnerWiFiSecurityType](../resources/intune-deviceconfig-androiddeviceownerwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Possible values are: `open`, `wep`, `wpaPersonal`, `wpaEnterprise`.|
 |preSharedKey|String|This is the pre-shared key for WPA Personal Wi-Fi network.|
 |preSharedKeyIsSet|Boolean|This is the pre-shared key for WPA Personal Wi-Fi network.|
 

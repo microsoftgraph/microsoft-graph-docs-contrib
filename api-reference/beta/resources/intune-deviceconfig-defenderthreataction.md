@@ -1,7 +1,7 @@
 ---
 title: "defenderThreatAction enum type"
 description: "Defender’s default action to take on detected Malware threats."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

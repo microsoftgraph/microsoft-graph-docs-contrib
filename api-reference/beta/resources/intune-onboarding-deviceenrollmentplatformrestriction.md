@@ -1,7 +1,7 @@
 ---
 title: "deviceEnrollmentPlatformRestriction resource type"
 description: "Platform specific enrollment restrictions"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

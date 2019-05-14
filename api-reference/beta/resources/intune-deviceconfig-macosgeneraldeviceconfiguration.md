@@ -1,7 +1,7 @@
 ---
 title: "macOSGeneralDeviceConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the macOSGeneralDeviceConfiguration resource."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -77,6 +77,13 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
 |softwareUpdatesForceDelayed|Boolean|Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.|
 |contentCachingBlocked|Boolean|Indicates whether or not to allow content caching.|
+|iCloudBlockPhotoLibrary|Boolean|Indicates whether or not to block iCloud Photo Library.|
+|screenCaptureBlocked|Boolean|Indicates whether or not to block the user from taking Screenshots.|
+|classroomAppBlockRemoteScreenObservation|Boolean|Indicates whether or not to allow remote screen observation by Classroom app. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
+|classroomAppForceUnpromptedScreenObservation|Boolean|Indicates whether or not to automatically give permission to the teacher of a managed course on the Classroom app to view a student's screen without prompting. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
+|classroomForceAutomaticallyJoinClasses|Boolean|Indicates whether or not to automatically give permission to the teacher's requests, without prompting the student. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|Indicates whether a student enrolled in an unmanaged course via Classroom will be required to request permission from the teacher when attempting to leave the course. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
+|classroomForceUnpromptedAppAndDeviceLock|Boolean|Indicates whether or not to allow the teacher to lock apps or the device without prompting the student. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -159,7 +166,14 @@ Here is a JSON representation of the resource.
   "passwordBlockAirDropSharing": true,
   "softwareUpdatesEnforcedDelayInDays": 1024,
   "softwareUpdatesForceDelayed": true,
-  "contentCachingBlocked": true
+  "contentCachingBlocked": true,
+  "iCloudBlockPhotoLibrary": true,
+  "screenCaptureBlocked": true,
+  "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true
 }
 ```
 
