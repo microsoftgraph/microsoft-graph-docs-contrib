@@ -7,6 +7,10 @@ ms.prod: "Microsoft Graph notifications"
 
 # Managing app registration and API permission for Microsoft Graph notifications
 
+Registering your app with Microsoft identity platform to support MSA or Azure AD, and declaring API permissions are required for using Microsoft Graph notifications
+
+## Register your app to support MSA or Azure AD 
+
 Let’s start with registering your application with the Microsoft identity platform to support MSA or Azure AD on the [Microsoft Azure portal](https://portal.azure.com/#home), which is required for enabling you application service to integrate with Microsoft Graph notifications for a user-centric notification experience. If you’ve previously registered your application on the [Microsoft Application Portal](https://apps.dev.microsoft.com/), don’t worry; your existing apps will show up in the new and improved Azure portal experience.
 
 For detailed guidance on app registration, please see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/graph/auth-register-app-v2). 
@@ -21,18 +25,18 @@ Once you've completed the app registration, keep the provided application ID / c
 
 Next, in order to enable your application to identify and authenticate itself when obtaining auth. tokens, you can either upload your own certificate or create a new client secret by navigating to “Certificates & secrets” as shown below.
     
-    ![App certificates and secrets](images/notifications-app-secrets.png)
+![App certificates and secrets](images/notifications-app-secrets.png)
     
-    > [!NOTE]
-	> If you opt to generate a new client secret, be sure to copy and keep it in a safe place as you won’t be able to access it again once you leave the portal.
+> [!NOTE]
+> If you opt to generate a new client secret, be sure to copy and keep it in a safe place as you won’t be able to access it again once you leave the portal.
 
 ## API permissions
 
 Next, you will need to add additional permissions required in order to leverage Graph Notifications. Click on “Add a permission” and under Microsoft APIs, select “Microsoft Graph”, followed by “Delegated permissions” as shown below.
     
-    ![Add permissions](images/notifications-api-permissions.png)
+![Add permissions](images/notifications-api-permissions.png)
     
-    You will need to add the list of permissions as shown below:
+You will need to add the list of permissions as shown below:
 
   - User.Read - allows your application to sign-in your user
 
