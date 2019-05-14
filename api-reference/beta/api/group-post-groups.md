@@ -1,6 +1,6 @@
 ---
-title: "Create group - Microsoft Graph API"
-description: "Describes the how to create a group resource (entity) of the Microsoft Graph API (REST), which represents an Azure Active Directory (Azure AD) group. A group resource may refer to an Office 365 group or a security group."
+title: "Create group"
+description: "Create a new Office 365 group or security group.
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
@@ -10,7 +10,7 @@ ms.prod: "groups"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
+Ceate a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
 * Office 365 Group (unified group)
 * Security group
