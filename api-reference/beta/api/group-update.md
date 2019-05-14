@@ -1,6 +1,6 @@
 ---
 title: "Update group"
-description: "Update the properties of a group object."
+description: "Update the properties of a [group](../resources/group.md) object."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
@@ -45,19 +45,23 @@ In the request body, supply the values for relevant fields that should be update
 |allowExternalSenders|Boolean|Default is **false**. Indicates if people external to the organization can send messages to the group.|
 |autoSubscribeNewMembers|Boolean|Default is **false**. Indicates if new members added to the group will be auto-subscribed to receive email notifications.|
 |description|String|An optional description for the group. |
-|displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|groupTypes|String collection|Specifies the type of group to create. Possible values are **Unified** to create an Office 365 group, or **DynamicMembership** for dynamic groups.  For all other group types, like security-enabled groups and email-enabled security groups, do not set this property.|
-|mailEnabled|Boolean|Specifies whether the group is mail-enabled. If the **securityEnabled** property is also **true**, the group is a mail-enabled security group; otherwise, the group is a Microsoft Exchange distribution group.|
-|mailNickname|String|The mail alias for the group. This property must be specified when a group is created. Supports $filter.|
-|securityEnabled|Boolean|Specifies whether the group is a security group. If the **mailEnabled** property is also true, the group is a mail-enabled security group; otherwise it is a security group. Must be **false** for Office 365 groups. Supports $filter..|
+|displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. |
+|groupTypes|String collection|Specifies the group type and its membership.  <br><br>If the collection contains **Unified** then the group is an Office 365 group; otherwise it's a security group.  <br><br>If the collection includes **DynamicMembership**, the group has dynamic membership; otherwise, membership is static. |
+|mailEnabled|Boolean|Specifies whether the group is mail-enabled. |
+|mailNickname|String|The mail alias for the group. This property must be specified when a group is created. |
+|securityEnabled|Boolean|Specifies whether the group is a security group, including Office 365 groups. |
 |visibility|String|Specifies the visibility of an Office 365 group. Possible values are: **Private**, **Public**, or empty (which is interpreted as **Public**).|
 
-Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **group** instance.
+Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to add, update, or delete your own app-specific data in custom properties of an extension in an existing **group** instance.
+
 
 > **Note:**
 >
 > - You can update **autoSubscribeNewMembers** by specifying it in its own PATCH request, without including the other properties in the table above.
 > - Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](https://developer.microsoft.com/graph/docs/overview/release_notes#group-permission-scopes) for examples.
+> - The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](https://docs.microsoft.com/en-us/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
+ 
+
 
 ## Response
 
