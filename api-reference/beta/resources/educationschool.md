@@ -32,23 +32,23 @@ This resource is a subtype of [educationOrganization](educationorganization.md).
 
 ## Properties
 
-| Property            | Type                                  | Description                                                            |
-| :------------------ | :------------------------------------ | :--------------------------------------------------------------------- |
-| id                  | String                                | GUID of this school.                                                   |
-| address             | [physicalAddress](physicaladdress.md) | Address of the school.                                                 |
-| createdBy           | [identitySet](identityset.md)         | Entity who created the school.                                         |
-| description         | String                                | Description of the school.                                             |
-| displayName         | String                                | Display name of the school.                                            |
-| externalId          | String                                | ID of school in syncing system.                                        |
-| externalPrincipalId | String                                | ID of principal in syncing system.                                     |
-| externalSource      | string                                | Read-Only. Possible values are: `sis`, `manual`, `unknownFutureValue`. |
-| fax                 | String                                | Fax number of school.                                                  |
-| highestGrade        | String                                | Highest grade taught.                                                  |
-| lowestGrade         | String                                | Lowest grade taught.                                                   |
-| phone               | String                                | Phone number of school.                                                |
-| principalEmail      | String                                | Email address of the principal.                                        |
-| principalName       | String                                | Name of the principal.                                                 |
-| schoolNumber        | String                                | School Number.                                                         |
+| Property            | Type                                  | Description                                        |
+| :------------------ | :------------------------------------ | :------------------------------------------------- |
+| id                  | String                                | GUID of this school.                               |
+| address             | [physicalAddress](physicaladdress.md) | Address of the school.                             |
+| createdBy           | [identitySet](identityset.md)         | Entity who created the school.                     |
+| description         | String                                | Description of the school.                         |
+| displayName         | String                                | Display name of the school.                        |
+| externalId          | String                                | ID of school in syncing system.                    |
+| externalPrincipalId | String                                | ID of principal in syncing system.                 |
+| externalSource      | string                                | Read-Only. Possible values are: `sis` or `manual`. |
+| fax                 | String                                | Fax number of school.                              |
+| highestGrade        | String                                | Highest grade taught.                              |
+| lowestGrade         | String                                | Lowest grade taught.                               |
+| phone               | String                                | Phone number of school.                            |
+| principalEmail      | String                                | Email address of the principal.                    |
+| principalName       | String                                | Name of the principal.                             |
+| schoolNumber        | String                                | School Number.                                     |
 
 ## Relationships
 
