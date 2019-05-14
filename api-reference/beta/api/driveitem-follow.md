@@ -60,7 +60,10 @@ POST /me/drive/items/{item-id}/follow
   "keywords": "follow item",
   "section": "documentation",
   "tocPath": "Items/Follow",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-follow.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-follow.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }
 -->
 
@@ -77,3 +80,13 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-12-12T10:40:59Z"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/follow-item-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/follow-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]

@@ -1,0 +1,18 @@
+
+```Javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const synchronizationJob = {
+    templateId: "BoxOutDelta"
+};
+
+let res = await client.api('/servicePrincipals/{id}/synchronization/jobs')
+	.version('beta')
+	.post({synchronizationJob : synchronizationJob});
+
+```

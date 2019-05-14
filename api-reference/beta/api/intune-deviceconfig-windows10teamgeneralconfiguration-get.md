@@ -1,7 +1,7 @@
 ---
 title: "Get windows10TeamGeneralConfiguration"
 description: "Read properties and relationships of the windows10TeamGeneralConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -100,7 +100,6 @@ Content-Length: 1495
   }
 }
 ```
-
 
 
 

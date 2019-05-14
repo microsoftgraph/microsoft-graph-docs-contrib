@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationValueBooleans"
 description: "List properties and relationships of the groupPolicyPresentationValueBoolean objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -71,7 +71,6 @@ Content-Length: 320
   ]
 }
 ```
-
 
 
 

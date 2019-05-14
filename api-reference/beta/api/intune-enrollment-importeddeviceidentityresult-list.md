@@ -1,7 +1,7 @@
 ---
 title: "List importedDeviceIdentityResults"
 description: "List properties and relationships of the importedDeviceIdentityResult objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -77,7 +77,6 @@ Content-Length: 606
   ]
 }
 ```
-
 
 
 

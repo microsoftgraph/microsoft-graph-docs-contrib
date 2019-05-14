@@ -1,7 +1,7 @@
 ---
 title: "Create iosVppEBookAssignment"
 description: "Create a new iosVppEBookAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -88,7 +88,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
 
 
 

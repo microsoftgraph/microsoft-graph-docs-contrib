@@ -1,7 +1,7 @@
 ---
 title: "Update iosWiFiConfiguration"
 description: "Update the properties of a iosWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -133,7 +133,6 @@ Content-Length: 847
   "preSharedKey": "Pre Shared Key value"
 }
 ```
-
 
 
 

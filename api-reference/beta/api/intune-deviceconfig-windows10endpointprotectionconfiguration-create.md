@@ -1,7 +1,7 @@
 ---
 title: "Create windows10EndpointProtectionConfiguration"
 description: "Create a new windows10EndpointProtectionConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -1565,7 +1565,6 @@ Content-Length: 27813
   }
 }
 ```
-
 
 
 

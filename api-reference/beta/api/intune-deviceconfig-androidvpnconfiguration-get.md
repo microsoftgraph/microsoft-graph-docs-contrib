@@ -1,7 +1,7 @@
 ---
 title: "Get androidVpnConfiguration"
 description: "Read properties and relationships of the androidVpnConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -108,7 +108,6 @@ Content-Length: 1247
   }
 }
 ```
-
 
 
 

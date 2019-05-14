@@ -1,7 +1,7 @@
 ---
 title: "List macOSVpnConfigurations"
 description: "List properties and relationships of the macOSVpnConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -135,7 +135,6 @@ Content-Length: 2334
   ]
 }
 ```
-
 
 
 

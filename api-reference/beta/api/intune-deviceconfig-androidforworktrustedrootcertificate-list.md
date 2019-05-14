@@ -1,7 +1,7 @@
 ---
 title: "List androidForWorkTrustedRootCertificates"
 description: "List properties and relationships of the androidForWorkTrustedRootCertificate objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -80,7 +80,6 @@ Content-Length: 631
   ]
 }
 ```
-
 
 
 

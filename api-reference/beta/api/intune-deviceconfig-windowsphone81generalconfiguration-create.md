@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhone81GeneralConfiguration"
 description: "Create a new windowsPhone81GeneralConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -205,7 +205,6 @@ Content-Length: 1725
   "windowsStoreBlocked": true
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Get deviceConfigurationDeviceOverview"
 description: "Read properties and relationships of the deviceConfigurationDeviceOverview object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -86,7 +86,6 @@ Content-Length: 435
   }
 }
 ```
-
 
 
 

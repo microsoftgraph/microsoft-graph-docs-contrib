@@ -1,7 +1,7 @@
 ---
 title: "Update defaultDeviceCompliancePolicy"
 description: "Update the properties of a defaultDeviceCompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -98,7 +98,6 @@ Content-Length: 401
   "version": 7
 }
 ```
-
 
 
 

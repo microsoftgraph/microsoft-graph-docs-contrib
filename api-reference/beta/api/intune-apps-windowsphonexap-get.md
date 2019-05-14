@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhoneXAP"
 description: "Read properties and relationships of the windowsPhoneXAP object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -109,7 +109,6 @@ Content-Length: 1462
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create depEnrollmentProfile"
 description: "Create a new depEnrollmentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -180,7 +180,6 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
-
 
 
 

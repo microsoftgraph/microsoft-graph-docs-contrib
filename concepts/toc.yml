@@ -20,7 +20,7 @@
         href: deployments.md
       - name: Hybrid deployments (preview)
         href: hybrid-rest-support.md
-    - name: Microsoft Graph data connect (preview)
+    - name: Microsoft Graph data connect
       href: data-connect-overview.md
     - name: Tutorials
       items:
@@ -83,20 +83,28 @@
         href: activity-feed-concept-overview.md
       - name: Device relay (preview)
         href: device-relay-concept-overview.md
-      - name: Notifications (preview)
-        href: notifications-concept-overview.md
       - name: Build cross-device apps
         href: cross-device-app-configuration.md
     - name: Customer booking (preview)
       href: booking-concept-overview.md
       displayName: Bookings, Microsoft Bookings
-    - name: Data access (preview)
+    - name: Data access
       displayName: Microsoft Graph data connect
       items:
-      - name: Overview
+      - name: Data connect overview
         href: data-connect-concept-overview.md
       - name: Get started
         href: data-connect-get-started.md
+      - name: Datasets, regions, and sinks
+        href: data-connect-datasets.md
+      - name: Policies and licensing
+        href: data-connect-policies.md
+      - name: User selection and filtering
+        href: data-connect-filtering.md
+      - name: Integrate with PAM
+        href: data-connect-pam.md
+      - name: Tips
+        href: data-connect-tips.md
     - name: Devices and apps
       href: intune-concept-overview.md
       displayName: Intune
@@ -158,6 +166,28 @@
         href: onenote-branding.md
       - name: Error codes
         href: onenote-error-codes.md
+    - name: Notifications (preview)
+      displayName: Notifications
+      items:
+      - name: Overview
+        href: notifications-concept-overview.md
+      - name: Get started
+        displayName: Notifications
+        items: 
+        - name: Overview
+          href: notifications-integration-e2e-overview.md
+        - name: App registraion
+          href: notifications-integration-app-registration.md
+        - name: Cross-device onboarding
+          href: notifications-integration-cross-device-experiences-onboarding.md
+        - name: App server integration
+          href: notifications-integrating-app-server.md
+        - name: Windows app integration
+          href: notifications-integrating-with-windows.md
+        - name: Android app integration
+          href: notifications-integrating-with-android.md
+        - name: IOS app integration
+          href: notifications-integrating-with-ios.md
     - name: Personal contacts
       displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
@@ -231,7 +261,9 @@
     - name: Get auth tokens
       items:
       - name: Overview
-        href: auth-overview.md
+        href: auth/index.yml
+      - name: Basics
+        href: auth/auth-concepts.md
       - name: Register your app
         href: auth-register-app-v2.md
       - name: Get access on behalf of a user
@@ -283,7 +315,54 @@
           href: extensibility-open-users.md
         - name: Use schema extensions (example)
           href: extensibility-schema-groups.md
+    - name: Migrate
+      expanded: false
+      items:
+      - name: Azure AD Graph
+        displayname: Migration, Azure AD Graph
+        items:
+        - name: Overview
+          href: migrate-azure-ad-graph-overview.md
+        - name: Checklist to migrate apps
+          href: migrate-azure-ad-graph-planning-checklist.md
+        - name: "1: Review differences"
+          expanded: true
+          items: 
+          - name: Requests
+            href: migrate-azure-ad-graph-request-differences.md
+          - name: Service features
+            href: migrate-azure-ad-graph-feature-differences.md
+          - name: Resource types
+            href: migrate-azure-ad-graph-resource-differences.md
+          - name: Entity properties
+            href: migrate-azure-ad-graph-property-differences.md
+          - name: Methods
+            href: migrate-azure-ad-graph-method-differences.md
+        - name: "2: Examine API use"
+          href: migrate-azure-ad-graph-audit-api-use.md
+        - name: "3: Review app details"
+          expanded: true
+          items:
+          - name: App registration
+            href: migrate-azure-ad-graph-app-registration.md
+          - name: Auth libraries 
+            href: migrate-azure-ad-graph-authentication-library.md
+          - name: .NET client libraries 
+            href: migrate-azure-ad-graph-client-libraries.md
+        - name: "4: Deploy, test, and extend"
+          href: migrate-azure-ad-graph-deploy-test-extend.md
+    - name: Use SDKs
+      items:
+        - name: Overview
+          href: sdks/sdks-overview.md
+        - name: Install the SDK
+          href: sdks/sdk-installation.md
+        - name: Create a client
+          href: sdks/create-client.md
+        - name: Choose an authentication provider
+          href: sdks/choose-authentication-providers.md
     - name: Resources
+      expanded: true
       items:
       - name: Best practices
         href: best-practices-concept.md
@@ -293,7 +372,7 @@
         href: changelog.md
       - name: Errors
         href: errors.md
-  - name: v1.0 reference
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-  - name: Beta reference
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+    - name: v1.0 reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+    - name: Beta reference
+      href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta

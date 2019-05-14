@@ -1,7 +1,7 @@
 ---
 title: "Create windowsStoreApp"
 description: "Create a new windowsStoreApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -142,7 +142,6 @@ Content-Length: 940
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create windowsIdentityProtectionConfiguration"
 description: "Create a new windowsIdentityProtectionConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -144,7 +144,6 @@ Content-Length: 982
   "windowsHelloForBusinessBlocked": true
 }
 ```
-
 
 
 
