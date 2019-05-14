@@ -164,7 +164,7 @@
       - name: Get started
         displayName: Notifications
         items: 
-        - name: Integration overview
+        - name: Overview
           href: notifications-integration-e2e-overview.md
         - name: App registraion
           href: notifications-integration-app-registration.md
