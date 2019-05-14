@@ -15,4 +15,4 @@ This type of user-centric notification is represented by the [notification](../r
 ## Next steps
 - See the [notification resource](../resources/projectrome-notification.md) and create notifications to engage with your users. 
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Get started with client integration, following the steps outlined in the [integration overview](../../../concepts/notifications-integration-e2e-overview.md).
+- Get started with client integration, following the steps outlined in the [integration overview](/graph/notification-integration-e2e-overview).

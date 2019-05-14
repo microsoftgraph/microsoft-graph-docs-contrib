@@ -8239,7 +8239,7 @@
         href: resources/projectrome-notification.md
         items:
         - name: Create and send a notification
-          href: api/projectrome-notification-post.md
+          href: api/notification-post.md
     - name: Personal contacts
       href: resources/contact.md
       displayName: Outlook, Outlook contacts, Outlook contact, People
