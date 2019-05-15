@@ -7181,6 +7181,10 @@
           href: api/driveitem-get.md
         - name: Get thumbnails
           href: api/driveitem-list-thumbnails.md
+        - name: Check in files
+          href: api/driveitem-checkin.md
+        - name: Check out files
+          href: api/driveitem-checkin.md 
         - name: Create folder
           href: api/driveitem-post-children.md
         - name: Update item
@@ -7217,10 +7221,6 @@
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
-        - name: Check in files
-          href: api/driveitem-checkin.md
-        - name: Check out files
-          href: api/driveitem-checkin.md  
       - name: Permissions
         href: resources/permission.md
         items:
