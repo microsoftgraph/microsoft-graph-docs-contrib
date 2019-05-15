@@ -8,8 +8,6 @@ ms.prod: "outlook"
 
 # mailSearchFolder resource type
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 A **mailSearchFolder** is a virtual folder in the user's mailbox that contains all the email items matching specified search criteria. **mailSearchFolder** inherits from [mailFolder](mailfolder.md).
 
 ## Methods

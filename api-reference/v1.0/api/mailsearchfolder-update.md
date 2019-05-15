@@ -8,8 +8,6 @@ ms.prod: "outlook"
 
 # Update mailSearchFolder
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Update the writable properties of [mailSearchFolder](../resources/mailsearchfolder.md) object.
 
 ## Permissions
@@ -56,7 +54,7 @@ The following is an example request that updates the **filterQuery** property of
   "name": "update_mailsearchfolder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
+PATCH https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 Content-type: application/json
 
 {
@@ -113,7 +111,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    "Error: /api-reference/v1.0/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
