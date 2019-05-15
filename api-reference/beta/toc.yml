@@ -7217,9 +7217,9 @@
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
-        - name: Check In Files
+        - name: Check in files
           href: api/driveitem-checkin.md
-        - name: Check Out Files
+        - name: Check out files
           href: api/driveitem-checkin.md  
       - name: Permissions
         href: resources/permission.md
