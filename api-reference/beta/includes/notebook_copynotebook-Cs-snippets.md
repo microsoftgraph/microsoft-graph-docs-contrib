@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,6 +13,6 @@ var renameAs = "renameAs-value";
 await graphClient.Me.Onenote.Notebooks["{id}"]
 	.CopyNotebook(groupId,renameAs,notebookFolder,siteCollectionId,siteId)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

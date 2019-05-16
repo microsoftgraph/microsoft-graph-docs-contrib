@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -11,6 +14,7 @@ var criteria = new SynchronizationJobRestartCriteria
 await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{jobId}"]
 	.Restart(criteria)
 	.Request()
-	.PostAsync()
+	.Header("Authorization","Bearer <token>")
+	.PostAsync();
 
 ```

@@ -1,15 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var recipients = new DriveRecipient
+var recipients = new List<DriveRecipient>()
 {
-	Email = "ryan@contoso.com",
+	new DriveRecipient
+	{
+		Email = "ryan@contoso.com",
+	},
 };
-
-var recipientsList = new List<DriveRecipient>();
-recipientsList.Add( recipients );
 
 var message = "Here's the file that we're collaborating on.";
 
@@ -17,12 +20,14 @@ var requireSignIn = true;
 
 var sendInvitation = true;
 
-var rolesList = new List<String>();
-rolesList.Add( "write" );
+var roles = new List<String>()
+{
+	"write",
+};
 
 await graphClient.Me.Drive.Items["{item-id}"]
-	.Invite(requireSignIn,rolesList,sendInvitation,message,recipientsList)
+	.Invite(requireSignIn,roles,sendInvitation,message,recipients)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

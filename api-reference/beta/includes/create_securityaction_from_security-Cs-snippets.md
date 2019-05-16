@@ -1,29 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var vendorInformation = new SecurityVendorInformation
-{
-	Provider = "Windows Defender ATP",
-	Vendor = "Microsoft",
-};
-
-var parameters = new KeyValuePair
-{
-	Name = "IP",
-	Value = "1.2.3.4",
-};
-
-var parametersList = new List<KeyValuePair>();
-parametersList.Add( parameters );
 
 var securityAction = new SecurityAction
 {
 	Name = "BlockIp",
 	ActionReason = "Test",
-	Parameters = parametersList,
-	VendorInformation = vendorInformation,
+	Parameters = new List<KeyValuePair>()
+	{
+		new KeyValuePair
+		{
+			Name = "IP",
+			Value = "1.2.3.4",
+		},
+	},
+	VendorInformation = new SecurityVendorInformation
+	{
+		Provider = "Windows Defender ATP",
+		Vendor = "Microsoft",
+	},
 };
 
 await graphClient.Security.SecurityActions

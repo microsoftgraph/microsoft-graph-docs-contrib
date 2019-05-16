@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var _event = await graphClient.Me.Events["AAMkAGIAAAoZDOFAAA="]
+var @event = await graphClient.Me.Events["AAMkAGIAAAoZDOFAAA="]
 	.Request()
-	.Header("Prefer","outlook.timezone="Pacific Standard Time"")
+	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
 	.Select( e => new {
 			 e.Subject,
 			 e.Body,

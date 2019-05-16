@@ -1,27 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var credentials = new SynchronizationSecretKeyStringValuePair
+var credentials = new List<SynchronizationSecretKeyStringValuePair>()
 {
-	Key = SynchronizationSecret.Password,
-	Value = "password-value",
+	new SynchronizationSecretKeyStringValuePair
+	{
+		Key = SynchronizationSecret.UserName,
+		Value = "user@domain.com",
+	},
+	new SynchronizationSecretKeyStringValuePair
+	{
+		Key = SynchronizationSecret.Password,
+		Value = "password-value",
+	},
 };
-
-var _credentials = new SynchronizationSecretKeyStringValuePair
-{
-	Key = SynchronizationSecret.UserName,
-	Value = "user@domain.com",
-};
-
-var credentialsList = new List<SynchronizationSecretKeyStringValuePair>();
-credentialsList.Add( _credentials );
-credentialsList.Add( credentials );
 
 await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{id}"]
-	.ValidateCredentials(applicationIdentifier,templateId,useSavedCredentials,credentialsList)
+	.ValidateCredentials(applicationIdentifier,templateId,useSavedCredentials,credentials)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

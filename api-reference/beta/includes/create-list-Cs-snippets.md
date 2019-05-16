@@ -1,42 +1,35 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var list = new ListInfo
-{
-	Template = "genericList",
-};
-
-var number = new NumberColumn
-{
-};
-
-var columns = new ColumnDefinition
-{
-	Name = "PageCount",
-	Number = number,
-};
-
-var text = new TextColumn
-{
-};
-
-var _columns = new ColumnDefinition
-{
-	Name = "Author",
-	Text = text,
-};
-
-var columnsList = new List<ColumnDefinition>();
-columnsList.Add( _columns );
-columnsList.Add( columns );
-
-var _list = new List
+var list = new List
 {
 	Name = "Books",
-	Columns = columnsList,
-	List = list,
+	Columns = new List<ColumnDefinition>()
+	{
+		new ColumnDefinition
+		{
+			Name = "Author",
+			Text = new TextColumn
+			{
+			},
+		},
+		new ColumnDefinition
+		{
+			Name = "PageCount",
+			Number = new NumberColumn
+			{
+			},
+		},
+	},
+	List = new ListInfo
+	{
+		Template = "genericList",
+	},
 };
 
 await graphClient.Sites["{site-id}"].Lists

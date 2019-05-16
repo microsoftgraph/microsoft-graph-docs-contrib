@@ -1,21 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var dueDateTime = new DateTimeTimeZone
-{
-	DateTime = "2016-05-06T16:00:00",
-	TimeZone = "Eastern Standard Time",
-};
-
 var outlookTask = new OutlookTask
 {
-	DueDateTime = dueDateTime,
+	DueDateTime = new DateTimeTimeZone
+	{
+		DateTime = "2016-05-06T16:00:00",
+		TimeZone = "Eastern Standard Time",
+	},
 };
 
 await graphClient.Me.Outlook.Tasks["AAMkADA1MTHgwAAA="]
 	.Request()
+	.Header("Prefer","outlook.timezone=\"Eastern Standard Time\"")
 	.UpdateAsync(outlookTask);
 
 ```

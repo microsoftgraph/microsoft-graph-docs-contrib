@@ -1,13 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var body = new ItemBody
-{
-	ContentType = BodyType.Text,
-	Content = "content-value",
-};
 
 var message = new Message
 {
@@ -15,7 +12,11 @@ var message = new Message
 	SentDateTime = "2016-10-19T10:37:00Z",
 	HasAttachments = true,
 	Subject = "subject-value",
-	Body = body,
+	Body = new ItemBody
+	{
+		ContentType = BodyType.Text,
+		Content = "content-value",
+	},
 	BodyPreview = "bodyPreview-value",
 };
 

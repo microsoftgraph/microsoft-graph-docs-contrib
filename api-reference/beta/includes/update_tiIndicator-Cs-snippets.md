@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -12,6 +15,7 @@ var tiIndicator = new TiIndicator
 
 await graphClient.Security.TiIndicators["{id}"]
 	.Request()
+	.Header("Prefer","return=representation")
 	.UpdateAsync(tiIndicator);
 
 ```

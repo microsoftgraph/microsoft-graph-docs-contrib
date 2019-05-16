@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -12,6 +15,6 @@ var newReminderTime = new DateTimeTimeZone
 await graphClient.Me.Events["{id}"]
 	.SnoozeReminder(newReminderTime)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

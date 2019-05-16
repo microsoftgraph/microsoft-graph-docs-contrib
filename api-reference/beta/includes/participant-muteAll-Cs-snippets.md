@@ -1,16 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var participantsList = new List<String>();
-participantsList.Add( "" );
+var participants = new List<String>()
+{
+	"",
+};
 
 var clientContext = "clientContext-value";
 
 await graphClient.App.Calls["{id}"].Participants
-	.MuteAll(participantsList,clientContext)
+	.MuteAll(participants,clientContext)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

@@ -1,14 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var groupIdsList = new List<String>();
-groupIdsList.Add( "groupIds-value" );
+var groupIds = new List<String>()
+{
+	"groupIds-value",
+};
 
 await graphClient.Groups["{id}"]
-	.CheckMemberGroups(groupIdsList)
+	.CheckMemberGroups(groupIds)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

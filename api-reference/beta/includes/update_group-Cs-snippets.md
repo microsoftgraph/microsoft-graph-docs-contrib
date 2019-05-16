@@ -1,16 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var groupTypesList = new List<String>();
-groupTypesList.Add( "groupTypes-value" );
 
 var group = new Group
 {
 	Description = "description-value",
 	DisplayName = "displayName-value",
-	GroupTypes = groupTypesList,
+	GroupTypes = new List<String>()
+	{
+		"groupTypes-value",
+	},
 	Mail = "mail-value",
 	MailEnabled = true,
 	MailNickname = "mailNickname-value",

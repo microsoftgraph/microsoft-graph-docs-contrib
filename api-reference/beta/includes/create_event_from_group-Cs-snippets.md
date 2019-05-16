@@ -1,19 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var responseStatus = new ResponseStatus
-{
-	Response = ResponseType.None,
-	Time = "2016-10-19T10:37:00Z",
-};
-
-var _event = new Event
+var @event = new Event
 {
 	OriginalStartTimeZone = "originalStartTimeZone-value",
 	OriginalEndTimeZone = "originalEndTimeZone-value",
-	ResponseStatus = responseStatus,
+	ResponseStatus = new ResponseStatus
+	{
+		Response = ResponseType.None,
+		Time = "2016-10-19T10:37:00Z",
+	},
 	Uid = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
 	IsReminderOn = true,
@@ -21,6 +22,6 @@ var _event = new Event
 
 await graphClient.Groups["{id}"].Events
 	.Request()
-	.AddAsync(_event);
+	.AddAsync(@event);
 
 ```

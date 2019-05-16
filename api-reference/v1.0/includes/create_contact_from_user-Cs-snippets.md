@@ -1,26 +1,27 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var businessPhonesList = new List<String>();
-businessPhonesList.Add( "+1 732 555 0102" );
-
-var emailAddresses = new EmailAddress
-{
-	Address = "pavelb@fabrikam.onmicrosoft.com",
-	Name = "Pavel Bansky",
-};
-
-var emailAddressesList = new List<EmailAddress>();
-emailAddressesList.Add( emailAddresses );
 
 var contact = new Contact
 {
 	GivenName = "Pavel",
 	Surname = "Bansky",
-	EmailAddresses = emailAddressesList,
-	BusinessPhones = businessPhonesList,
+	EmailAddresses = new List<EmailAddress>()
+	{
+		new EmailAddress
+		{
+			Address = "pavelb@fabrikam.onmicrosoft.com",
+			Name = "Pavel Bansky",
+		},
+	},
+	BusinessPhones = new List<String>()
+	{
+		"+1 732 555 0102",
+	},
 };
 
 await graphClient.Me.Contacts

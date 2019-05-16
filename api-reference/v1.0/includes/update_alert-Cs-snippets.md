@@ -1,33 +1,35 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var vendorInformation = new SecurityVendorInformation
-{
-	Provider = "String",
-	Vendor = "String",
-};
-
-var tagsList = new List<String>();
-tagsList.Add( "String" );
-
-var commentsList = new List<String>();
-commentsList.Add( "String" );
 
 var alert = new Alert
 {
 	AssignedTo = "String",
 	ClosedDateTime = "String (timestamp)",
-	Comments = commentsList,
+	Comments = new List<String>()
+	{
+		"String",
+	},
 	Feedback = AlertFeedback.Unknown,
 	Status = AlertStatus.Unknown,
-	Tags = tagsList,
-	VendorInformation = vendorInformation,
+	Tags = new List<String>()
+	{
+		"String",
+	},
+	VendorInformation = new SecurityVendorInformation
+	{
+		Provider = "String",
+		Vendor = "String",
+	},
 };
 
 await graphClient.Security.Alerts["{alert_id}"]
 	.Request()
+	.Header("Prefer","return=representation")
 	.UpdateAsync(alert);
 
 ```

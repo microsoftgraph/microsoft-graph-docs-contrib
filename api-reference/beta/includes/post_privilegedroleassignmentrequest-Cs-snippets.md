@@ -1,12 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var schedule = new GovernanceSchedule
-{
-	StartDateTime = "2018-02-08T02:35:17.903Z",
-};
 
 var privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequest
 {
@@ -14,7 +12,10 @@ var privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequest
 	Reason = "Activate the role for business purpose",
 	TicketNumber = "234",
 	TicketSystem = "system",
-	Schedule = schedule,
+	Schedule = new GovernanceSchedule
+	{
+		StartDateTime = "2018-02-08T02:35:17.903Z",
+	},
 	EvaluateOnly = false,
 	Type = "UserAdd",
 	AssignmentState = "Active",

@@ -1,21 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var values = new SettingValue
-{
-	Name = "name-value",
-	Value = "value-value",
-};
-
-var valuesList = new List<SettingValue>();
-valuesList.Add( values );
 
 var directorySetting = new DirectorySetting
 {
 	TemplateId = "templateId-value",
-	Values = valuesList,
+	Values = new List<SettingValue>()
+	{
+		new SettingValue
+		{
+			Name = "name-value",
+			Value = "value-value",
+		},
+	},
 };
 
 await graphClient.Settings

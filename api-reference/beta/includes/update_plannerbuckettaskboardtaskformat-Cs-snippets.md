@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,6 +13,7 @@ var plannerBucketTaskBoardTaskFormat = new PlannerBucketTaskBoardTaskFormat
 
 await graphClient.Planner.Tasks["hsOf2dhOJkqyYYZEtdzDe2QAIUCR"].BucketTaskBoardFormat
 	.Request()
+	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerBucketTaskBoardTaskFormat);
 
 ```

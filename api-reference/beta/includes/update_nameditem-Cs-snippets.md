@@ -1,18 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var value = new Json
-{
-};
 
 var workbookNamedItem = new WorkbookNamedItem
 {
 	Type = "type-value",
 	Scope = "scope-value",
 	Comment = "comment-value",
-	Value = value,
+	Value = new Json
+	{
+	},
 	Visible = true,
 };
 

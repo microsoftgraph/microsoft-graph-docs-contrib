@@ -1,17 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var roleMemberInfo = new Identity
-{
-	Id = "id-value",
-};
 
 var scopedRoleMembership = new ScopedRoleMembership
 {
 	RoleId = "roleId-value",
-	RoleMemberInfo = roleMemberInfo,
+	RoleMemberInfo = new Identity
+	{
+		Id = "id-value",
+	},
 };
 
 await graphClient.AdministrativeUnits["{id}"].ScopedRoleMembers

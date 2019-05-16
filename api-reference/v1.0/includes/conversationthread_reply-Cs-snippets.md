@@ -1,22 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var body = new ItemBody
-{
-	ContentType = BodyType.Text,
-	Content = "content-value",
-};
-
 var post = new Post
 {
-	Body = body,
+	Body = new ItemBody
+	{
+		ContentType = BodyType.Text,
+		Content = "content-value",
+	},
 };
 
 await graphClient.Groups["{id}"].Threads["{id}"]
 	.Reply(post)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

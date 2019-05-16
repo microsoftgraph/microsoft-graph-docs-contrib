@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -12,6 +15,7 @@ var synchronizationTemplate = new SynchronizationTemplate
 
 await graphClient.Applications["{id}"].Synchronization.Templates["{templateId}"]
 	.Request()
+	.Header("Authorization","Bearer <token>")
 	.PutAsync(synchronizationTemplate);
 
 ```

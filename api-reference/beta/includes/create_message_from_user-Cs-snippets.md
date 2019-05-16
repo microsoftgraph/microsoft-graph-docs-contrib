@@ -1,33 +1,30 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var emailAddress = new EmailAddress
-{
-	Address = "AdeleV@contoso.onmicrosoft.com",
-};
-
-var toRecipients = new Recipient
-{
-	EmailAddress = emailAddress,
-};
-
-var toRecipientsList = new List<Recipient>();
-toRecipientsList.Add( toRecipients );
-
-var body = new ItemBody
-{
-	ContentType = BodyType.Html,
-	Content = "They were <b>awesome</b>!",
-};
 
 var message = new Message
 {
 	Subject = "Did you see last night's game?",
 	Importance = Importance.Low,
-	Body = body,
-	ToRecipients = toRecipientsList,
+	Body = new ItemBody
+	{
+		ContentType = BodyType.Html,
+		Content = "They were <b>awesome</b>!",
+	},
+	ToRecipients = new List<Recipient>()
+	{
+		new Recipient
+		{
+			EmailAddress = new EmailAddress
+			{
+				Address = "AdeleV@contoso.onmicrosoft.com",
+			},
+		},
+	},
 };
 
 await graphClient.Me.Messages

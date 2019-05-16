@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -14,6 +17,6 @@ var name = "contoso plan (copy).txt";
 await graphClient.Me.Drive.Items["{item-id}"]
 	.Copy(name,parentReference)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

@@ -1,16 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var groupTypesList = new List<String>();
-groupTypesList.Add( "Unified" );
 
 var group = new Group
 {
 	Description = "Group with designated owner and members",
 	DisplayName = "Operations group",
-	GroupTypes = groupTypesList,
+	GroupTypes = new List<String>()
+	{
+		"Unified",
+	},
 	MailEnabled = true,
 	MailNickname = "operations2019",
 	SecurityEnabled = false,

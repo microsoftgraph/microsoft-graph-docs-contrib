@@ -1,31 +1,30 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var properties = new KeyValue
-{
-	Key = "key-value",
-	Value = "value-value",
-};
-
-var propertiesList = new List<KeyValue>();
-propertiesList.Add( properties );
-
-var addIns = new AddIn
-{
-	Id = "id-value",
-	Type = "type-value",
-	Properties = propertiesList,
-};
-
-var addInsList = new List<AddIn>();
-addInsList.Add( addIns );
 
 var servicePrincipal = new ServicePrincipal
 {
 	AccountEnabled = true,
-	AddIns = addInsList,
+	AddIns = new List<AddIn>()
+	{
+		new AddIn
+		{
+			Id = "id-value",
+			Type = "type-value",
+			Properties = new List<KeyValue>()
+			{
+				new KeyValue
+				{
+					Key = "key-value",
+					Value = "value-value",
+				},
+			},
+		},
+	},
 	AppDisplayName = "appDisplayName-value",
 	AppId = "appId-value",
 	AppOwnerOrganizationId = "appOwnerOrganizationId-value",

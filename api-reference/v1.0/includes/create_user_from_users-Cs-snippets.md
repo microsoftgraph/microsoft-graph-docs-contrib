@@ -1,13 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var passwordProfile = new PasswordProfile
-{
-	ForceChangePasswordNextSignIn = true,
-	Password = "password-value",
-};
 
 var user = new User
 {
@@ -15,7 +12,11 @@ var user = new User
 	DisplayName = "displayName-value",
 	MailNickname = "mailNickname-value",
 	UserPrincipalName = "upn-value@tenant-value.onmicrosoft.com",
-	PasswordProfile = passwordProfile,
+	PasswordProfile = new PasswordProfile
+	{
+		ForceChangePasswordNextSignIn = true,
+		Password = "password-value",
+	},
 };
 
 await graphClient.Users

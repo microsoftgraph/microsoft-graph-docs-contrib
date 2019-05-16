@@ -1,16 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var parentReference = new ItemReference
-{
-	Id = "{new-parent-folder-id}",
-};
-
 var driveItem = new DriveItem
 {
-	ParentReference = parentReference,
+	ParentReference = new ItemReference
+	{
+		Id = "{new-parent-folder-id}",
+	},
 	Name = "new-item-name.txt",
 };
 

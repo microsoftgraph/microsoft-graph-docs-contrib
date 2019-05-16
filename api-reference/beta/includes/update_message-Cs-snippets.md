@@ -1,18 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var body = new ItemBody
-{
-	ContentType = BodyType.Text,
-	Content = "content-value",
-};
 
 var message = new Message
 {
 	Subject = "subject-value",
-	Body = body,
+	Body = new ItemBody
+	{
+		ContentType = BodyType.Text,
+		Content = "content-value",
+	},
 	InferenceClassification = InferenceClassificationType.Other,
 };
 
