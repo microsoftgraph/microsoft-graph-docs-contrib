@@ -1,7 +1,7 @@
 ---
 title: "Get iosManagedAppProtection"
 description: "Read properties and relationships of the iosManagedAppProtection object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2863
+Content-Length: 2885
 
 {
   "value": {
@@ -124,14 +124,13 @@ Content-Length: 2863
     "minimumWipeSdkVersion": "Minimum Wipe Sdk Version value",
     "allowedIosDeviceModels": "Allowed Ios Device Models value",
     "appActionIfIosDeviceModelNotAllowed": "wipe",
-    "thirdPartyKeyboardsBlocked": true,
     "filterOpenInToOnlyManagedApps": true,
     "disableProtectionOfManagedOutboundOpenInData": true,
-    "protectInboundDataFromUnknownSources": true
+    "protectInboundDataFromUnknownSources": true,
+    "customBrowserProtocol": "Custom Browser Protocol value"
   }
 }
 ```
-
 
 
 

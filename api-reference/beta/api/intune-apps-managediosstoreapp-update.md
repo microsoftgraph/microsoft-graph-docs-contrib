@@ -1,7 +1,7 @@
 ---
 title: "Update managedIOSStoreApp"
 description: "Update the properties of a managedIOSStoreApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -181,7 +181,6 @@ Content-Length: 1390
   }
 }
 ```
-
 
 
 

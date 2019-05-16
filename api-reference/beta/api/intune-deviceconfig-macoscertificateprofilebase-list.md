@@ -1,7 +1,7 @@
 ---
 title: "List macOSCertificateProfileBases"
 description: "List properties and relationships of the macOSCertificateProfileBase objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -83,7 +83,6 @@ Content-Length: 745
   ]
 }
 ```
-
 
 
 

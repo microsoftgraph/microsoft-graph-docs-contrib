@@ -1,7 +1,7 @@
 ---
 title: "Create managedIOSStoreApp"
 description: "Create a new managedIOSStoreApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -179,7 +179,6 @@ Content-Length: 1390
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update deviceComplianceUserOverview"
 description: "Update the properties of a deviceComplianceUserOverview object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -102,7 +102,6 @@ Content-Length: 352
   "configurationVersion": 4
 }
 ```
-
 
 
 

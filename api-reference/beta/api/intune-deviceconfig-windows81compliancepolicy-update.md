@@ -1,7 +1,7 @@
 ---
 title: "Update windows81CompliancePolicy"
 description: "Update the properties of a windows81CompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -131,7 +131,6 @@ Content-Length: 836
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

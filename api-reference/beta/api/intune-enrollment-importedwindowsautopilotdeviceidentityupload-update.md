@@ -1,7 +1,7 @@
 ---
 title: "Update importedWindowsAutopilotDeviceIdentityUpload"
 description: "Update the properties of a importedWindowsAutopilotDeviceIdentityUpload object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -84,7 +84,6 @@ Content-Length: 221
   "status": "pending"
 }
 ```
-
 
 
 

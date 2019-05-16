@@ -1,7 +1,7 @@
 ---
 title: "Update managedDeviceMobileAppConfigurationDeviceSummary"
 description: "Update the properties of a managedDeviceMobileAppConfigurationDeviceSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -105,7 +105,6 @@ Content-Length: 409
   "configurationVersion": 4
 }
 ```
-
 
 
 

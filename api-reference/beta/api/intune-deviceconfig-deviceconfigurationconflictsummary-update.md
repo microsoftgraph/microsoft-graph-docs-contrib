@@ -1,7 +1,7 @@
 ---
 title: "Update deviceConfigurationConflictSummary"
 description: "Update the properties of a deviceConfigurationConflictSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -103,7 +103,6 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
-
 
 
 

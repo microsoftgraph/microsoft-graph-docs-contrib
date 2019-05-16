@@ -1,7 +1,7 @@
 ---
 title: "Update microsoftStoreForBusinessApp"
 description: "Update the properties of a microsoftStoreForBusinessApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -171,7 +171,6 @@ Content-Length: 1304
   }
 }
 ```
-
 
 
 

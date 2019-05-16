@@ -1,7 +1,7 @@
 ---
 title: "Update iosVppEBookAssignment"
 description: "Update the properties of a iosVppEBookAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -88,7 +88,6 @@ Content-Length: 242
   "installIntent": "required"
 }
 ```
-
 
 
 

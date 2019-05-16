@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyPresentationText"
 description: "Update the properties of a groupPolicyPresentationText object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -84,7 +84,6 @@ Content-Length: 209
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

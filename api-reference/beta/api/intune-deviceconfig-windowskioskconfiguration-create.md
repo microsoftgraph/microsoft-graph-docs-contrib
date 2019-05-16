@@ -1,7 +1,7 @@
 ---
 title: "Create windowsKioskConfiguration"
 description: "Create a new windowsKioskConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -197,7 +197,6 @@ Content-Length: 1925
   "edgeKioskEnablePublicBrowsing": true
 }
 ```
-
 
 
 

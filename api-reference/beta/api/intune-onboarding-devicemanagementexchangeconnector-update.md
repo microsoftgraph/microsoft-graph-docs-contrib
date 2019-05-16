@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementExchangeConnector"
 description: "Update the properties of a deviceManagementExchangeConnector object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -105,7 +105,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
 
 
 

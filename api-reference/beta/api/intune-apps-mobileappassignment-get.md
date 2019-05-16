@@ -1,7 +1,7 @@
 ---
 title: "Get mobileAppAssignment"
 description: "Read properties and relationships of the mobileAppAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -76,7 +76,6 @@ Content-Length: 359
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationValues"
 description: "List properties and relationships of the groupPolicyPresentationValue objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -70,7 +70,6 @@ Content-Length: 291
   ]
 }
 ```
-
 
 
 

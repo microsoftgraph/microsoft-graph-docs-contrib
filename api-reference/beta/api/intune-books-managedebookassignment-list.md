@@ -1,7 +1,7 @@
 ---
 title: "List managedEBookAssignments"
 description: "List properties and relationships of the managedEBookAssignment objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -72,7 +72,6 @@ Content-Length: 300
   ]
 }
 ```
-
 
 
 

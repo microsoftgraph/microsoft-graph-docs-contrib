@@ -1,7 +1,7 @@
 ---
 title: "Create androidWorkProfilePkcsCertificateProfile"
 description: "Create a new androidWorkProfilePkcsCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -144,7 +144,6 @@ Content-Length: 1141
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
 
 
 
