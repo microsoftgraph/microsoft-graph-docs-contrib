@@ -66,7 +66,7 @@ sections:
     items:
     - type: list
       style: cards
-      className: cardsG
+      className: cardsH
       items:
       - title: Generally available
         html: <p><a href="/graph/data-connect-concept-overview">Microsoft Graph data connect</a></p><p><a href="/graph/outlook-get-free-busy-schedule">Get free-busy schedule</a></p><p><a href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Audit and sign-in logs</a></p><p><a href="/graph/api/resources/identityprovider?view=graph-rest-1.0">Identity providers</a></p><p><a href="/graph/auth">Improved auth guides</a></p><p><a href="/graph/migrate-azure-ad-graph-overview">Migrating apps from Azure AD Graph to Microsoft Graph</a></p><p><a href="/graph/api/resources/securescore?view=graph-rest-1.0">Tenant secure score</a></p><p><a href="/graph/sdks/sdks-overview?view=graph-rest-1.0">SDK guides</a></p><p>API snippets (<a href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">example</a>)</p>
