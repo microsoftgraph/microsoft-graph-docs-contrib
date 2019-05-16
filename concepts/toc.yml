@@ -157,15 +157,17 @@
         href: onenote-extract-data.md
       - name: Use note tags
         href: onenote-note-tags.md
-      - name: RESOURCES
-      - name: Input and output HTML
-        href: onenote-input-output-html.md
-      - name: Best practices
-        href: onenote-best-practices.md
-      - name: Branding guidelines
-        href: onenote-branding.md
-      - name: Error codes
-        href: onenote-error-codes.md
+      - name: Resources
+        expanded: true
+        items:
+        - name: Input and output HTML
+          href: onenote-input-output-html.md
+        - name: Best practices
+          href: onenote-best-practices.md
+        - name: Branding guidelines
+          href: onenote-branding.md
+        - name: Error codes
+          href: onenote-error-codes.md
     - name: Notifications (preview)
       displayName: Notifications
       items:
