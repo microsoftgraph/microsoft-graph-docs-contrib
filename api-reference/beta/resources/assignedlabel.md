@@ -1,14 +1,16 @@
 ---
 title: "assignedLabel resource type"
-description: "Represents a sensitivity label assigned to an Office 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security & Compliance Center as part of Microsoft Information Protection capabilities. The **assignedLabels** property of the [group](group.md) entity is a collection of **assignedLabel**."
+description: "Represents a sensitivity label assigned to an Office 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General)."
 localization_priority: Normal
+author: "krbain"
+ms.prod: "groups"
 ---
 
 # assignedLabel resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a sensitivity label assigned to an Office 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security & Compliance Center as part of Microsoft Information Protection capabilities. The **assignedLabels** property of the [group](group.md) entity is a collection of **assignedLabel**.
+Represents a sensitivity label assigned to an Office 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security & Compliance Center as part of Microsoft Information Protection capabilities. For more info on Sensitivity labels check out [Sensitivity labels Overview](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/sensitivity-labels).
 
 ## Properties
 | Property	   | Type	|Description|
