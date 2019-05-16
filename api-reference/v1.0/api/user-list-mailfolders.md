@@ -1,14 +1,15 @@
 ---
 title: "List mailFolders"
 description: "Get the mail folder collection under the root folder of the signed-in user. "
-author: "dkershaw10"
+author: "angelgolfer-ms"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "outlook"
 ---
 
 # List mailFolders
 
-Get the mail folder collection under the root folder of the signed-in user. 
+Get the mail folder collection directly under the root folder of the signed-in user. The returned collection includes any [mail search folders](../resources/mailsearchfolder.md)directly under the root.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -37,7 +38,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [MailFolder](../resources/mailfolder.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [mailFolder](../resources/mailfolder.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -62,16 +63,81 @@ Content-type: application/json
 Content-length: 232
 
 {
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "parentFolderId": "parentFolderId-value",
-      "childFolderCount": 99,
-      "unreadItemCount": 99,
-      "totalItemCount": 99,
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AQMkADYAAAIBXQAAAA==",
+            "displayName": "Archive",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "archive"
+        },
+        {
+            "id": "AQMkADYAAAIBFQAAAA==",
+            "displayName": "Conversation History",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "conversationhistory"
+        },
+        {
+            "id": "AQMkADYAAAIBCgAAAA==",
+            "displayName": "Deleted Items",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "deleteditems"
+        },
+        {
+            "id": "AQMkADYAAAIBDwAAAA==",
+            "displayName": "Drafts",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "drafts"
+        },
+        {
+            "id": "AQMkADYAAAIBDAAAAA==",
+            "displayName": "Inbox",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 1,
+            "unreadItemCount": 70,
+            "totalItemCount": 71,
+            "wellKnownName": "inbox"
+        },
+        {
+            "id": "AQMkADYAAAIBGQAAAA==",
+            "displayName": "Junk Email",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "junkemail"
+        },
+        {
+            "id": "AQMkADYAAAIBCwAAAA==",
+            "displayName": "Outbox",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "outbox"
+        },
+        {
+            "id": "AQMkADYAAAIBCQAAAA==",
+            "displayName": "Sent Items",
+            "parentFolderId": "AQMkADYAAAIBCAAAAA==",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "sentitems"
+        }
+    ]
 }
 ```
 #### SDK sample code

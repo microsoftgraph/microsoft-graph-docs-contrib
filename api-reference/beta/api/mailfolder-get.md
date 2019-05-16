@@ -64,6 +64,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailfolder"
 }-->
 
@@ -118,6 +119,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailSearchfolder"
 }-->
 

@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # List childFolders
 
-Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level 
+Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level 
 folder collection and navigate to another folder.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,7 +37,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [MailFolder](../resources/mailfolder.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [mailFolder](../resources/mailfolder.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
