@@ -13,6 +13,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2019
 
+### Directory APIs
+| **Change type** | **Version** | **Description** |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added **assignedlabels** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) entity. This property represents the list of sensitivity label pairs (label ID, label name) associated with a group.
+
 ### Microsoft Intune APIs
 |Change type|Version|Description|
 |:---|:---|:---|
