@@ -40,10 +40,10 @@
         href: /graph/tutorials/php
       - name: Python
         href: /graph/tutorials/python
-      - name: Ruby
-        href: /graph/tutorials/ruby
       - name: React
         href: /graph/tutorials/react
+      - name: Ruby
+        href: /graph/tutorials/ruby
       - name: UWP
         href: /graph/tutorials/uwp
       - name: Xamarin
