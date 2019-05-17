@@ -2,7 +2,7 @@
 title: "user: findRooms"
 description: "Get all the meeting rooms in the user's tenant or in a specific room list. "
 localization_priority: Priority
-author: "dkershaw10"
+author: "angelgolfer-ms"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -10,9 +10,9 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the meeting rooms in the user's tenant or in a specific room list. 
+Get the [emailAddress](../resources/emailaddress.md) objects that represent all the meeting rooms in the user's tenant or in a specific room list. 
 
-Tenants can organize meeting rooms into room lists. Each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance. 
+Tenants can organize meeting rooms into room lists. In this API, each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance. 
 You can [get all the room lists](user-findroomlists.md) in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list. You can get 
 up to the first 100 rooms in the tenant.
 
@@ -40,8 +40,8 @@ To get all the rooms in a specific room list of the tenant's:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/findRooms(RoomList='{room_list}')
-GET /users/<id>/findRooms(RoomList='{room_list}')
+GET /me/findRooms(RoomList='{room_list_emailAddress}')
+GET /users/<id>/findRooms(RoomList='{room_list_emailAddress}')
 ```
 
 ## Query parameters
@@ -62,14 +62,14 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [emailAddress](../resources/emailaddress.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [emailAddress](../resources/emailaddress.md) objects in the response body.
 
 
 ## Example
 
 ##### Request 1
 
-The first example gets all the rooms defined in the signed-in user's tenant.
+The first example gets the [emailAddress](../resources/emailaddress.md) objects that represent all the rooms defined in the signed-in user's tenant.
 
 <!-- {
   "blockType": "request",
@@ -137,7 +137,7 @@ Content-type: application/json
 
 ##### Request 2
 
-The second example gets the rooms in the specified room list identified by the email address Building2Rooms@contoso.onmicrosoft.com.
+The second example gets the [emailAddress](../resources/emailaddress.md) objects that represent the rooms in the specified room list identified by the email address Building2Rooms@contoso.onmicrosoft.com.
 
 <!-- {
   "blockType": "request",

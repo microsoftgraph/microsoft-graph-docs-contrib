@@ -83,8 +83,6 @@
         href: activity-feed-concept-overview.md
       - name: Device relay (preview)
         href: device-relay-concept-overview.md
-      - name: Notifications (preview)
-        href: notifications-concept-overview.md
       - name: Build cross-device apps
         href: cross-device-app-configuration.md
     - name: Customer booking (preview)
@@ -159,15 +157,39 @@
         href: onenote-extract-data.md
       - name: Use note tags
         href: onenote-note-tags.md
-      - name: RESOURCES
-      - name: Input and output HTML
-        href: onenote-input-output-html.md
-      - name: Best practices
-        href: onenote-best-practices.md
-      - name: Branding guidelines
-        href: onenote-branding.md
-      - name: Error codes
-        href: onenote-error-codes.md
+      - name: Resources
+        expanded: true
+        items:
+        - name: Input and output HTML
+          href: onenote-input-output-html.md
+        - name: Best practices
+          href: onenote-best-practices.md
+        - name: Branding guidelines
+          href: onenote-branding.md
+        - name: Error codes
+          href: onenote-error-codes.md
+    - name: Notifications (preview)
+      displayName: Notifications
+      items:
+      - name: Overview
+        href: notifications-concept-overview.md
+      - name: Get started
+        displayName: Notifications
+        items: 
+        - name: Overview
+          href: notifications-integration-e2e-overview.md
+        - name: App registraion
+          href: notifications-integration-app-registration.md
+        - name: Cross-device onboarding
+          href: notifications-integration-cross-device-experiences-onboarding.md
+        - name: App server integration
+          href: notifications-integrating-app-server.md
+        - name: Windows app integration
+          href: notifications-integrating-with-windows.md
+        - name: Android app integration
+          href: notifications-integrating-with-android.md
+        - name: IOS app integration
+          href: notifications-integrating-with-ios.md
     - name: Personal contacts
       displayName: Outlook, Outlook contacts, Outlook contact, People
       items:
