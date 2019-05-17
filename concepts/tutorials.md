@@ -25,7 +25,7 @@ The following tutorials build an app that authenticates a user and accesses date
 - [UWP](/graph/tutorials/uwp)
 - [Xamarin](/graph/tutorials/xamarin)
 
-Don't see your preferred language or platform? Request a tutorial for it on [UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis).
+Don't see your preferred language or platform? Request a tutorial for it on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
 
 ## Scenario-based tutorials
 
