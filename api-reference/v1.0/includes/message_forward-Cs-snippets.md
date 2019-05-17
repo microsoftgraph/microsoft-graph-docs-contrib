@@ -15,9 +15,9 @@ var toRecipients = new List<Recipient>()
 		EmailAddress = new EmailAddress
 		{
 			Name = "name-value",
-			Address = "address-value",
-		},
-	},
+			Address = "address-value"
+		}
+	}
 };
 
 await graphClient.Me.Messages["{id}"]

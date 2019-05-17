@@ -21,8 +21,8 @@ var shift = new Shift
 		User = new Identity
 		{
 			Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-			DisplayName = "John Doe",
-		},
+			DisplayName = "John Doe"
+		}
 	},
 	SharedShift = new ShiftItem
 	{
@@ -39,9 +39,9 @@ var shift = new Shift
 				StartDateTime = "2019-03-11T15:00:00Z",
 				EndDateTime = "2019-03-11T15:15:00Z",
 				Code = "",
-				DisplayName = "Lunch",
-			},
-		},
+				DisplayName = "Lunch"
+			}
+		}
 	},
 	DraftShift = new ShiftItem
 	{
@@ -58,10 +58,10 @@ var shift = new Shift
 				StartDateTime = "2019-03-11T15:00:00Z",
 				EndDateTime = "2019-03-11T15:30:00Z",
 				Code = "",
-				DisplayName = "Lunch",
-			},
-		},
-	},
+				DisplayName = "Lunch"
+			}
+		}
+	}
 };
 
 await graphClient.Teams["{teamId}"].Schedule.Shifts["{shiftId}"]

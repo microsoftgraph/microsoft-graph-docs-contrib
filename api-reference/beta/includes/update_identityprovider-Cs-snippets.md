@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var identityProvider = new IdentityProvider
 {
-	ClientSecret = "1111111111111",
+	ClientSecret = "1111111111111"
 };
 
 await graphClient.IdentityProviders["Amazon-OAuth"]

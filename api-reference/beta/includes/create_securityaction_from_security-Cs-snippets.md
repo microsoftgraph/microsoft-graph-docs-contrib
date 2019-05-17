@@ -15,14 +15,14 @@ var securityAction = new SecurityAction
 		new KeyValuePair
 		{
 			Name = "IP",
-			Value = "1.2.3.4",
-		},
+			Value = "1.2.3.4"
+		}
 	},
 	VendorInformation = new SecurityVendorInformation
 	{
 		Provider = "Windows Defender ATP",
-		Vendor = "Microsoft",
-	},
+		Vendor = "Microsoft"
+	}
 };
 
 await graphClient.Security.SecurityActions

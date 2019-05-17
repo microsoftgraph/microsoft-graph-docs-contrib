@@ -12,11 +12,11 @@ var group = new Group
 	DisplayName = "Golf Assist",
 	GroupTypes = new List<String>()
 	{
-		"Unified",
+		"Unified"
 	},
 	MailEnabled = true,
 	MailNickname = "golfassist",
-	SecurityEnabled = false,
+	SecurityEnabled = false
 };
 
 await graphClient.Groups

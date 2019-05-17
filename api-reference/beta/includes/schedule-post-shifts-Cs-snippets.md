@@ -26,9 +26,9 @@ var shift = new Shift
 				StartDateTime = "2019-03-11T15:00:00Z",
 				EndDateTime = "2019-03-11T15:15:00Z",
 				Code = "",
-				DisplayName = "Lunch",
-			},
-		},
+				DisplayName = "Lunch"
+			}
+		}
 	},
 	DraftShift = new ShiftItem
 	{
@@ -45,10 +45,10 @@ var shift = new Shift
 				StartDateTime = "2019-03-11T15:00:00Z",
 				EndDateTime = "2019-03-11T15:30:00Z",
 				Code = "",
-				DisplayName = "Lunch",
-			},
-		},
-	},
+				DisplayName = "Lunch"
+			}
+		}
+	}
 };
 
 await graphClient.Teams["{teamId}"].Schedule.Shifts

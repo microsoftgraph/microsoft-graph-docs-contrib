@@ -13,7 +13,7 @@ var contact = new Contact
 	FileAs = "fileAs-value",
 	DisplayName = "displayName-value",
 	GivenName = "givenName-value",
-	Initials = "initials-value",
+	Initials = "initials-value"
 };
 
 await graphClient.Me.ContactFolders["{id}"].Contacts

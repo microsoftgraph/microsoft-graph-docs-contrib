@@ -10,7 +10,7 @@ var groupLifecyclePolicy = new GroupLifecyclePolicy
 {
 	GroupLifetimeInDays = 100,
 	ManagedGroupTypes = "Selected",
-	AlternateNotificationEmails = "admin@contoso.com",
+	AlternateNotificationEmails = "admin@contoso.com"
 };
 
 await graphClient.GroupLifecyclePolicies

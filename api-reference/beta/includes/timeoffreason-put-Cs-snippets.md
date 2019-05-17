@@ -10,7 +10,7 @@ var timeOffReason = new TimeOffReason
 {
 	DisplayName = "Vacation",
 	IconType = TimeOffReasonIconType.Plane,
-	IsActive = true,
+	IsActive = true
 };
 
 await graphClient.Teams["{teamId}"].Schedule.TimeOffReasons["{timeOffReasonId}"]

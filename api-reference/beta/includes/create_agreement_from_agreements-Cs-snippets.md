@@ -19,10 +19,10 @@ var agreement = new Agreement
 			IsDefault = true,
 			FileData = new AgreementFileData
 			{
-				Data = "SGVsbG8gd29ybGQ=",
-			},
-		},
-	},
+				Data = "SGVsbG8gd29ybGQ="
+			}
+		}
+	}
 };
 
 await graphClient.Agreements

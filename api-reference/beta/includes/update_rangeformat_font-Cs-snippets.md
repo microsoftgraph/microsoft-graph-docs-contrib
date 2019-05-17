@@ -10,7 +10,7 @@ var workbookRangeFont = new WorkbookRangeFont
 {
 	Bold = true,
 	Color = "#4B180E",
-	Size = 26,
+	Size = 26
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["Sheet1"].Range('$A$1').Format.Font

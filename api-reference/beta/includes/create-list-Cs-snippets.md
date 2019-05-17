@@ -16,20 +16,20 @@ var list = new List
 			Name = "Author",
 			Text = new TextColumn
 			{
-			},
+			}
 		},
 		new ColumnDefinition
 		{
 			Name = "PageCount",
 			Number = new NumberColumn
 			{
-			},
-		},
+			}
+		}
 	},
 	List = new ListInfo
 	{
-		Template = "genericList",
-	},
+		Template = "genericList"
+	}
 };
 
 await graphClient.Sites["{site-id}"].Lists

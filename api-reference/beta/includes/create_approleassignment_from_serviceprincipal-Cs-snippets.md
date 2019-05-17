@@ -12,7 +12,7 @@ var appRoleAssignment = new AppRoleAssignment
 	PrincipalDisplayName = "principalDisplayName-value",
 	PrincipalId = "principalId-value",
 	PrincipalType = "principalType-value",
-	ResourceDisplayName = "resourceDisplayName-value",
+	ResourceDisplayName = "resourceDisplayName-value"
 };
 
 await graphClient.ServicePrincipals["{id}"].AppRoleAssignments

@@ -31,7 +31,7 @@ var value = new List<TiIndicator>()
 		},
 		TargetProduct = "Azure Sentinel",
 		ThreatType = "WatchList",
-		TlpLevel = TlpLevel.Green,
+		TlpLevel = TlpLevel.Green
 	},
 	new TiIndicator
 	{
@@ -56,8 +56,8 @@ var value = new List<TiIndicator>()
 		},
 		TargetProduct = "Azure Sentinel",
 		ThreatType = "WatchList",
-		TlpLevel = TlpLevel.Green,
-	},
+		TlpLevel = TlpLevel.Green
+	}
 };
 
 await graphClient.Security.TiIndicators

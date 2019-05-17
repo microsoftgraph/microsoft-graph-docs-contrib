@@ -12,7 +12,7 @@ var workbookRangeFormat = new WorkbookRangeFormat
 	HorizontalAlignment = "Right",
 	VerticalAlignment = "Top",
 	RowHeight = 49,
-	WrapText = false,
+	WrapText = false
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{sheet-id}"].Range('$C$1').Format

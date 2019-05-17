@@ -10,8 +10,8 @@ var recipients = new List<DriveRecipient>()
 {
 	new DriveRecipient
 	{
-		Email = "ryan@contoso.com",
-	},
+		Email = "ryan@contoso.com"
+	}
 };
 
 var message = "Here's the file that we're collaborating on.";
@@ -22,7 +22,7 @@ var sendInvitation = true;
 
 var roles = new List<String>()
 {
-	"write",
+	"write"
 };
 
 await graphClient.Me.Drive.Items["{item-id}"]

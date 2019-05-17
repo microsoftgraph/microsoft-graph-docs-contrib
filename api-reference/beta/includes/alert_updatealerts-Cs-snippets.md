@@ -14,7 +14,7 @@ var value = new List<Alert>()
 		ClosedDateTime = "String (timestamp)",
 		Comments = new List<String>()
 		{
-			"String",
+			"String"
 		},
 		Feedback = new AlertFeedback
 		{
@@ -25,14 +25,14 @@ var value = new List<Alert>()
 		},
 		Tags = new List<String>()
 		{
-			"String",
+			"String"
 		},
 		VendorInformation = new SecurityVendorInformation
 		{
 			Provider = "String",
-			Vendor = "String",
-		},
-	},
+			Vendor = "String"
+		}
+	}
 };
 
 await graphClient.Security.Alerts

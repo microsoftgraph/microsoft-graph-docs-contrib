@@ -15,8 +15,8 @@ var messageRule = new MessageRule
 	{
 		SenderContains = new List<String>()
 		{
-			"adele",
-		},
+			"adele"
+		}
 	},
 	Actions = new MessageRuleActions
 	{
@@ -27,12 +27,12 @@ var messageRule = new MessageRule
 				EmailAddress = new EmailAddress
 				{
 					Name = "Alex Wilbur",
-					Address = "AlexW@contoso.onmicrosoft.com",
-				},
-			},
+					Address = "AlexW@contoso.onmicrosoft.com"
+				}
+			}
 		},
-		StopProcessingRules = true,
-	},
+		StopProcessingRules = true
+	}
 };
 
 await graphClient.Me.MailFolders["inbox"].MessageRules

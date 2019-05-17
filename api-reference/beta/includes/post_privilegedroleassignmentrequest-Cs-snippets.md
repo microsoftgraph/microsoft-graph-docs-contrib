@@ -14,12 +14,12 @@ var privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequest
 	TicketSystem = "system",
 	Schedule = new GovernanceSchedule
 	{
-		StartDateTime = "2018-02-08T02:35:17.903Z",
+		StartDateTime = "2018-02-08T02:35:17.903Z"
 	},
 	EvaluateOnly = false,
 	Type = "UserAdd",
 	AssignmentState = "Active",
-	RoleId = "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
+	RoleId = "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 };
 
 await graphClient.PrivilegedRoleAssignmentRequests

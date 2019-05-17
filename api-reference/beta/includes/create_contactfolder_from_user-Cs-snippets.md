@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var contactFolder = new ContactFolder
 {
 	ParentFolderId = "parentFolderId-value",
-	DisplayName = "displayName-value",
+	DisplayName = "displayName-value"
 };
 
 await graphClient.Me.ContactFolders

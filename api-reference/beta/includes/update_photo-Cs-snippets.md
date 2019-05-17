@@ -10,7 +10,7 @@ var profilePhoto = new ProfilePhoto
 {
 	Height = 99,
 	Width = 99,
-	Id = "id-value",
+	Id = "id-value"
 };
 
 await graphClient.Users["{id|userPrincipalName}"].Photo

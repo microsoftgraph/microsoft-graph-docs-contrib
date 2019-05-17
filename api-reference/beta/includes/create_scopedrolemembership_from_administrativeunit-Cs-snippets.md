@@ -11,8 +11,8 @@ var scopedRoleMembership = new ScopedRoleMembership
 	RoleId = "roleId-value",
 	RoleMemberInfo = new Identity
 	{
-		Id = "id-value",
-	},
+		Id = "id-value"
+	}
 };
 
 await graphClient.AdministrativeUnits["{id}"].ScopedRoleMembers

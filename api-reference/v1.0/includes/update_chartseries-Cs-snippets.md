@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var workbookChartSeries = new WorkbookChartSeries
 {
-	Name = "name-value",
+	Name = "name-value"
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Series["{series-id}"]

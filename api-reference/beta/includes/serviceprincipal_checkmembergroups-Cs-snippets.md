@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var groupIds = new List<String>()
 {
-	"groupIds-value",
+	"groupIds-value"
 };
 
 await graphClient.ServicePrincipals["{id}"]

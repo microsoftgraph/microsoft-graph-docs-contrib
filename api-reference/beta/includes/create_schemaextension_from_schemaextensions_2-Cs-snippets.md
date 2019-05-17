@@ -12,26 +12,26 @@ var schemaExtension = new SchemaExtension
 	Description = "Graph Learn training courses extensions",
 	TargetTypes = new List<String>()
 	{
-		"Group",
+		"Group"
 	},
 	Properties = new List<ExtensionSchemaProperty>()
 	{
 		new ExtensionSchemaProperty
 		{
 			Name = "courseId",
-			Type = "Integer",
+			Type = "Integer"
 		},
 		new ExtensionSchemaProperty
 		{
 			Name = "courseName",
-			Type = "String",
+			Type = "String"
 		},
 		new ExtensionSchemaProperty
 		{
 			Name = "courseType",
-			Type = "String",
-		},
-	},
+			Type = "String"
+		}
+	}
 };
 
 await graphClient.SchemaExtensions

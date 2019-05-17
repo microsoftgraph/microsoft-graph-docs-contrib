@@ -10,7 +10,7 @@ var synchronizationTemplate = new SynchronizationTemplate
 {
 	Id = "SCIM-Test1",
 	ApplicationId = "{id}",
-	FactoryTag = "CustomSCIM",
+	FactoryTag = "CustomSCIM"
 };
 
 await graphClient.Applications["{id}"].Synchronization.Templates

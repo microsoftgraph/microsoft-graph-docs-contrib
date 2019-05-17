@@ -15,8 +15,8 @@ var bookingBusiness = new BookingBusiness
 		MinimumLeadTime = "P1D",
 		MaximumAdvance = "P30D",
 		SendConfirmationsToOwner = true,
-		AllowStaffSelection = true,
-	},
+		AllowStaffSelection = true
+	}
 };
 
 await graphClient.BookingBusinesses["fabrikam@M365B489948.onmicrosoft.com"]

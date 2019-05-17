@@ -12,8 +12,8 @@ var domain = new Domain
 	SupportedServices = new List<String>()
 	{
 		"Email",
-		"OfficeCommunicationsOnline",
-	},
+		"OfficeCommunicationsOnline"
+	}
 };
 
 await graphClient.Domains["contoso.com"]

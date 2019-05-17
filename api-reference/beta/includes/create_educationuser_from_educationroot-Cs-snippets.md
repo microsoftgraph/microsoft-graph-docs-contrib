@@ -19,8 +19,8 @@ var educationUser = new EducationUser
 		User = new Identity
 		{
 			DisplayName = "Susana Rocha",
-			Id = "14012",
-		},
+			Id = "14012"
+		}
 	},
 	ExternalSource = EducationExternalSource.Sis,
 	MailingAddress = new PhysicalAddress
@@ -29,7 +29,7 @@ var educationUser = new EducationUser
 		CountryOrRegion = "United States",
 		PostalCode = "98055",
 		State = "CA",
-		Street = "12345 Main St.",
+		Street = "12345 Main St."
 	},
 	PrimaryRole = EducationUserRole.Student,
 	ResidenceAddress = new PhysicalAddress
@@ -38,8 +38,8 @@ var educationUser = new EducationUser
 		CountryOrRegion = "United States",
 		PostalCode = "98055",
 		State = "CA",
-		Street = "12345 Main St.",
-	},
+		Street = "12345 Main St."
+	}
 };
 
 await graphClient.Education.Users

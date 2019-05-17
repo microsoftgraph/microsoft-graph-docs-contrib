@@ -13,9 +13,9 @@ var governanceRoleSetting = new GovernanceRoleSetting
 		new GovernanceRuleSetting
 		{
 			RuleIdentifier = "ExpirationRule",
-			Setting = "{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}",
-		},
-	},
+			Setting = "{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"
+		}
+	}
 };
 
 await graphClient.PrivilegedAccess["pimforazurerbac"].RoleSettings["5fb5aef8-1081-4b8e-bb16-9d5d0385bab5"]

@@ -12,11 +12,11 @@ var group = new Group
 	DisplayName = "displayName-value",
 	GroupTypes = new List<String>()
 	{
-		"groupTypes-value",
+		"groupTypes-value"
 	},
 	Mail = "mail-value",
 	MailEnabled = true,
-	MailNickname = "mailNickname-value",
+	MailNickname = "mailNickname-value"
 };
 
 await graphClient.Groups["{id}"]

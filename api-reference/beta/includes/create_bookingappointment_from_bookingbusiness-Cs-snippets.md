@@ -19,7 +19,7 @@ var bookingAppointment = new BookingAppointment
 			PostOfficeBox = null,
 			State = "NY",
 			Street = "123 First Avenue",
-			Type = null,
+			Type = null
 		},
 		Coordinates = null,
 		DisplayName = "Customer",
@@ -27,7 +27,7 @@ var bookingAppointment = new BookingAppointment
 		LocationType = null,
 		LocationUri = null,
 		UniqueId = null,
-		UniqueIdType = null,
+		UniqueIdType = null
 	},
 	CustomerName = "Jordan Miller",
 	CustomerNotes = "Please be on time.",
@@ -35,13 +35,13 @@ var bookingAppointment = new BookingAppointment
 	End = new DateTimeTimeZone
 	{
 		DateTime = "2018-05-01T15:30:00+03:00",
-		TimeZone = "UTC",
+		TimeZone = "UTC"
 	},
 	InvoiceAmount = 10.0,
 	InvoiceDate = new DateTimeTimeZone
 	{
 		DateTime = "2018-05-01T15:30:00+03:00",
-		TimeZone = "UTC",
+		TimeZone = "UTC"
 	},
 	InvoiceId = "1001",
 	InvoiceStatus = BookingInvoiceStatus.Open,
@@ -57,20 +57,20 @@ var bookingAppointment = new BookingAppointment
 		{
 			Message = "This service is tomorrow",
 			Offset = "P1D",
-			Recipients = BookingReminderRecipients.AllAttendees,
+			Recipients = BookingReminderRecipients.AllAttendees
 		},
 		new BookingReminder
 		{
 			Message = "Please be available to enjoy your lunch service.",
 			Offset = "PT1H",
-			Recipients = BookingReminderRecipients.Customer,
+			Recipients = BookingReminderRecipients.Customer
 		},
 		new BookingReminder
 		{
 			Message = "Please check traffic for next cater.",
 			Offset = "PT2H",
-			Recipients = BookingReminderRecipients.Staff,
-		},
+			Recipients = BookingReminderRecipients.Staff
+		}
 	},
 	ServiceId = "57da6774-a087-4d69-b0e6-6fb82c339976",
 	ServiceLocation = new Location
@@ -83,7 +83,7 @@ var bookingAppointment = new BookingAppointment
 			PostOfficeBox = null,
 			State = "NY",
 			Street = "123 First Avenue",
-			Type = null,
+			Type = null
 		},
 		Coordinates = null,
 		DisplayName = "Customer location",
@@ -91,15 +91,15 @@ var bookingAppointment = new BookingAppointment
 		LocationType = null,
 		LocationUri = null,
 		UniqueId = null,
-		UniqueIdType = null,
+		UniqueIdType = null
 	},
 	ServiceName = "Catered bento",
 	ServiceNotes = "Customer requires punctual service.",
 	Start = new DateTimeTimeZone
 	{
 		DateTime = "2018-05-01T15:00:00+03:00",
-		TimeZone = "UTC",
-	},
+		TimeZone = "UTC"
+	}
 };
 
 await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Appointments

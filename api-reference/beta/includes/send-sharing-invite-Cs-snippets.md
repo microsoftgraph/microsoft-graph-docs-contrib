@@ -10,8 +10,8 @@ var recipients = new List<DriveRecipient>()
 {
 	new DriveRecipient
 	{
-		Email = "ryan@contoso.org",
-	},
+		Email = "ryan@contoso.org"
+	}
 };
 
 var message = "Here's the file that we're collaborating on.";
@@ -22,7 +22,7 @@ var sendInvitation = true;
 
 var roles = new List<String>()
 {
-	"write",
+	"write"
 };
 
 var password = "password123";

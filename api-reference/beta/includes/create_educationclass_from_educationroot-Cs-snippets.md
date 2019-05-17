@@ -14,7 +14,7 @@ var educationClass = new EducationClass
 	ExternalId = "11019",
 	ExternalName = "Health Level 1",
 	ExternalSource = EducationExternalSource.Sis,
-	MailNickname = "fineartschool.net",
+	MailNickname = "fineartschool.net"
 };
 
 await graphClient.Education.Classes

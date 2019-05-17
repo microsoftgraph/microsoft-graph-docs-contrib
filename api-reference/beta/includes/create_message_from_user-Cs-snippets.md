@@ -13,7 +13,7 @@ var message = new Message
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "They were <b>awesome</b>!",
+		Content = "They were <b>awesome</b>!"
 	},
 	ToRecipients = new List<Recipient>()
 	{
@@ -21,10 +21,10 @@ var message = new Message
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "AdeleV@contoso.onmicrosoft.com",
-			},
-		},
-	},
+				Address = "AdeleV@contoso.onmicrosoft.com"
+			}
+		}
+	}
 };
 
 await graphClient.Me.Messages

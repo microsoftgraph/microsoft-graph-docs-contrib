@@ -17,13 +17,13 @@ var criteria = new WorkbookFilterCriteria
 	Icon = new WorkbookIcon
 	{
 		Set = "set-value",
-		Index = 99,
+		Index = 99
 	},
 	DynamicCriteria = "dynamicCriteria-value",
 	Values = new Json
 	{
 	},
-	FilterOn = "filterOn-value",
+	FilterOn = "filterOn-value"
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns["{id|name}"].Filter

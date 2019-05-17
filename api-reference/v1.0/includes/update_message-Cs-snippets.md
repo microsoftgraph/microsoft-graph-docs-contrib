@@ -12,9 +12,9 @@ var message = new Message
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "content-value",
+		Content = "content-value"
 	},
-	InferenceClassification = InferenceClassificationType.Other,
+	InferenceClassification = InferenceClassificationType.Other
 };
 
 await graphClient.Me.Messages["{id}"]

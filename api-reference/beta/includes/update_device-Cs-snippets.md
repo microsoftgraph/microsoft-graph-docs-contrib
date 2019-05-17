@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var device = new Device
 {
-	AccountEnabled = false,
+	AccountEnabled = false
 };
 
 await graphClient.Devices["{id}"]

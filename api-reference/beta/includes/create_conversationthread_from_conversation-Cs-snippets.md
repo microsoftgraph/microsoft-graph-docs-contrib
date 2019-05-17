@@ -16,10 +16,10 @@ var conversationThread = new ConversationThread
 			Body = new ItemBody
 			{
 				ContentType = BodyType.Html,
-				Content = "this is body content",
-			},
-		},
-	},
+				Content = "this is body content"
+			}
+		}
+	}
 };
 
 await graphClient.Groups["{id}"].Conversations["{id}"].Threads

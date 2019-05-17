@@ -12,11 +12,11 @@ var group = new Group
 	DisplayName = "Operations group",
 	GroupTypes = new List<String>()
 	{
-		"Unified",
+		"Unified"
 	},
 	MailEnabled = true,
 	MailNickname = "operations2019",
-	SecurityEnabled = false,
+	SecurityEnabled = false
 };
 
 await graphClient.Groups

@@ -11,8 +11,8 @@ var post = new Post
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "content-value",
-	},
+		Content = "content-value"
+	}
 };
 
 await graphClient.Groups["{id}"].Threads["{id}"]

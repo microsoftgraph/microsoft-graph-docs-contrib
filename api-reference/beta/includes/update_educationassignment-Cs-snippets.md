@@ -12,9 +12,9 @@ var educationAssignment = new EducationAssignment
 	Instructions = new EducationItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "Read chapters 1 through 3",
+		Content = "Read chapters 1 through 3"
 	},
-	DueDateTime = "2014-02-01T00:00:00Z",
+	DueDateTime = "2014-02-01T00:00:00Z"
 };
 
 await graphClient.Education.Classes["11021"].Assignments["19002"]

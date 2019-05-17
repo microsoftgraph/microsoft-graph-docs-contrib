@@ -10,7 +10,7 @@ var directoryRole = new DirectoryRole
 {
 	Description = "description-value",
 	DisplayName = "displayName-value",
-	RoleTemplateId = "roleTemplateId-value",
+	RoleTemplateId = "roleTemplateId-value"
 };
 
 await graphClient.DirectoryRoles

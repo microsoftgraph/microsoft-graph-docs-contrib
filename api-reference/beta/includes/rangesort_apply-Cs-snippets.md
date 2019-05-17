@@ -18,9 +18,9 @@ var fields = new List<WorkbookSortField>()
 		Icon = new WorkbookIcon
 		{
 			Set = "set-value",
-			Index = 99,
-		},
-	},
+			Index = 99
+		}
+	}
 };
 
 var matchCase = true;

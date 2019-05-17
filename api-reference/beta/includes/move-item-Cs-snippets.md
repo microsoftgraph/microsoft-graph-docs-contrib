@@ -10,9 +10,9 @@ var driveItem = new DriveItem
 {
 	ParentReference = new ItemReference
 	{
-		Id = "new-parent-folder-id",
+		Id = "new-parent-folder-id"
 	},
-	Name = "new-item-name.txt",
+	Name = "new-item-name.txt"
 };
 
 await graphClient.Me.Drive.Items["{item-id}"]

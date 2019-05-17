@@ -16,9 +16,9 @@ var message = new Message
 			EmailAddress = new EmailAddress
 			{
 				Name = "Samantha Booth",
-				Address = "samanthab@contoso.onmicrosoft.com",
-			},
-		},
+				Address = "samanthab@contoso.onmicrosoft.com"
+			}
+		}
 	},
 	Mentions = new List<Mention>()
 	{
@@ -27,10 +27,10 @@ var message = new Message
 			Mentioned = new EmailAddress
 			{
 				Name = "Dana Swope",
-				Address = "danas@contoso.onmicrosoft.com",
-			},
-		},
-	},
+				Address = "danas@contoso.onmicrosoft.com"
+			}
+		}
+	}
 };
 
 await graphClient.Me.Messages

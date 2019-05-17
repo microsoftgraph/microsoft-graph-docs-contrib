@@ -15,69 +15,69 @@ var groupSetting = new GroupSetting
 		new SettingValue
 		{
 			Name = "CustomBlockedWordsList",
-			Value = "",
+			Value = ""
 		},
 		new SettingValue
 		{
 			Name = "EnableMSStandardBlockedWords",
-			Value = "False",
+			Value = "False"
 		},
 		new SettingValue
 		{
 			Name = "ClassificationDescriptions",
-			Value = "",
+			Value = ""
 		},
 		new SettingValue
 		{
 			Name = "DefaultClassification",
-			Value = "",
+			Value = ""
 		},
 		new SettingValue
 		{
 			Name = "PrefixSuffixNamingRequirement",
-			Value = "",
+			Value = ""
 		},
 		new SettingValue
 		{
 			Name = "AllowGuestsToBeGroupOwner",
-			Value = "False",
+			Value = "False"
 		},
 		new SettingValue
 		{
 			Name = "AllowGuestsToAccessGroups",
-			Value = "True",
+			Value = "True"
 		},
 		new SettingValue
 		{
 			Name = "GuestUsageGuidelinesUrl",
-			Value = "",
+			Value = ""
 		},
 		new SettingValue
 		{
 			Name = "GroupCreationAllowedGroupId",
-			Value = "62e90394-69f5-4237-9190-012177145e10",
+			Value = "62e90394-69f5-4237-9190-012177145e10"
 		},
 		new SettingValue
 		{
 			Name = "AllowToAddGuests",
-			Value = "True",
+			Value = "True"
 		},
 		new SettingValue
 		{
 			Name = "UsageGuidelinesUrl",
-			Value = "",
+			Value = ""
 		},
 		new SettingValue
 		{
 			Name = "ClassificationList",
-			Value = "",
+			Value = ""
 		},
 		new SettingValue
 		{
 			Name = "EnableGroupCreation",
-			Value = "True",
-		},
-	},
+			Value = "True"
+		}
+	}
 };
 
 await graphClient.GroupSettings["{id}"]

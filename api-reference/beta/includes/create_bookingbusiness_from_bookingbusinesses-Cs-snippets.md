@@ -17,12 +17,12 @@ var bookingBusiness = new BookingBusiness
 		City = "Buffalo",
 		State = "NY",
 		CountryOrRegion = "USA",
-		PostalCode = "98052",
+		PostalCode = "98052"
 	},
 	Phone = "206-555-0100",
 	Email = "manager@fourthcoffee.com",
 	WebSiteUrl = "https://www.fourthcoffee.com",
-	DefaultCurrencyIso = "USD",
+	DefaultCurrencyIso = "USD"
 };
 
 await graphClient.BookingBusinesses

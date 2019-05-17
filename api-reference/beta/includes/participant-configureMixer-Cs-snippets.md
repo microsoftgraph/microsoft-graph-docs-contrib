@@ -19,7 +19,7 @@ var participantMixerLevels = new List<ParticipantMixerLevel>()
 			RampActive = 50,
 			RampInactive = 50,
 			LowerLevel = 10,
-			UpperLevel = 50,
+			UpperLevel = 50
 		},
 		SourceLevels = new List<AudioSourceLevel>()
 		{
@@ -27,10 +27,10 @@ var participantMixerLevels = new List<ParticipantMixerLevel>()
 			{
 				Participant = "632899f8-2ea1-4604-8413-27bd2892079f",
 				Level = 50,
-				DuckOthers = false,
-			},
-		},
-	},
+				DuckOthers = false
+			}
+		}
+	}
 };
 
 await graphClient.App.Calls["{id}"].Participants

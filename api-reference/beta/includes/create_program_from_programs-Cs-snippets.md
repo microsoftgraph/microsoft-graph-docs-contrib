@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var program = new Program
 {
 	DisplayName = "testprogram3",
-	Description = "test description",
+	Description = "test description"
 };
 
 await graphClient.Programs

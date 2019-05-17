@@ -16,7 +16,7 @@ var conversationThread = new ConversationThread
 			Body = new ItemBody
 			{
 				ContentType = BodyType.Html,
-				Content = "this is body content",
+				Content = "this is body content"
 			},
 			NewParticipants = new List<Recipient>()
 			{
@@ -25,12 +25,12 @@ var conversationThread = new ConversationThread
 					EmailAddress = new EmailAddress
 					{
 						Name = "Alex Darrow",
-						Address = "alexd@contoso.com",
-					},
-				},
-			},
-		},
-	},
+						Address = "alexd@contoso.com"
+					}
+				}
+			}
+		}
+	}
 };
 
 await graphClient.Groups["{id}"].Threads

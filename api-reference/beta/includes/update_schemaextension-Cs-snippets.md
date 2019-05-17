@@ -13,14 +13,14 @@ var schemaExtension = new SchemaExtension
 		new ExtensionSchemaProperty
 		{
 			Name = "new-name-value",
-			Type = "new-type-value",
+			Type = "new-type-value"
 		},
 		new ExtensionSchemaProperty
 		{
 			Name = "additional-name-value",
-			Type = "additional-type-value",
-		},
-	},
+			Type = "additional-type-value"
+		}
+	}
 };
 
 await graphClient.SchemaExtensions["{id}"]

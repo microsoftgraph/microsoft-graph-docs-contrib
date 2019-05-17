@@ -21,8 +21,8 @@ var privilegedRoleSettings = new PrivilegedRoleSettings
 	ApproverIds = new List<String>()
 	{
 		"e2b2a2fb-13d7-495c-adc9-941fe966793f",
-		"22770e3f-b9b4-418e-9dea-d0e3d2f275dd",
-	},
+		"22770e3f-b9b4-418e-9dea-d0e3d2f275dd"
+	}
 };
 
 await graphClient.PrivilegedRoles["{id}"].Settings

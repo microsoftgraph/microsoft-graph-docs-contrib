@@ -10,13 +10,13 @@ var orgContact = new OrgContact
 {
 	BusinessPhones = new List<String>()
 	{
-		"businessPhones-value",
+		"businessPhones-value"
 	},
 	City = "city-value",
 	CompanyName = "companyName-value",
 	Country = "country-value",
 	Department = "department-value",
-	DisplayName = "displayName-value",
+	DisplayName = "displayName-value"
 };
 
 await graphClient.Contacts["{id}"]

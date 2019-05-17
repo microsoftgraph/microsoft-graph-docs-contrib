@@ -11,13 +11,13 @@ var credentials = new List<SynchronizationSecretKeyStringValuePair>()
 	new SynchronizationSecretKeyStringValuePair
 	{
 		Key = SynchronizationSecret.UserName,
-		Value = "user@domain.com",
+		Value = "user@domain.com"
 	},
 	new SynchronizationSecretKeyStringValuePair
 	{
 		Key = SynchronizationSecret.Password,
-		Value = "password-value",
-	},
+		Value = "password-value"
+	}
 };
 
 await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{id}"]

@@ -20,7 +20,7 @@ var conversation = new Conversation
 					Body = new ItemBody
 					{
 						ContentType = BodyType.Html,
-						Content = "What do we know so far?",
+						Content = "What do we know so far?"
 					},
 					NewParticipants = new List<Recipient>()
 					{
@@ -29,14 +29,14 @@ var conversation = new Conversation
 							EmailAddress = new EmailAddress
 							{
 								Name = "Adele Vance",
-								Address = "AdeleV@contoso.onmicrosoft.com",
-							},
-						},
-					},
-				},
-			},
-		},
-	},
+								Address = "AdeleV@contoso.onmicrosoft.com"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 };
 
 await graphClient.Groups["29981b6a-0e57-42dc-94c9-cd24f5306196"].Conversations

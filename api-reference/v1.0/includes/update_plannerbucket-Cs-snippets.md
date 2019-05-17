@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var plannerBucket = new PlannerBucket
 {
-	Name = "Development",
+	Name = "Development"
 };
 
 await graphClient.Planner.Buckets["{bucket-id}"]

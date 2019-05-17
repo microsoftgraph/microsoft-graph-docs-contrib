@@ -10,7 +10,7 @@ var administrativeUnit = new AdministrativeUnit
 {
 	DisplayName = "displayName-value",
 	Description = "description-value",
-	Visibility = "visibility-value",
+	Visibility = "visibility-value"
 };
 
 await graphClient.AdministrativeUnits["{id}"]

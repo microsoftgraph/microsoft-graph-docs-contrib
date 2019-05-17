@@ -10,25 +10,25 @@ var organization = new Organization
 {
 	MarketingNotificationEmails = new List<String>()
 	{
-		"marketing@contoso.com",
+		"marketing@contoso.com"
 	},
 	PrivacyProfile = new PrivacyProfile
 	{
 		ContactEmail = "alice@contoso.com",
-		StatementUrl = "https://contoso.com/privacyStatement",
+		StatementUrl = "https://contoso.com/privacyStatement"
 	},
 	SecurityComplianceNotificationMails = new List<String>()
 	{
-		"security@contoso.com",
+		"security@contoso.com"
 	},
 	SecurityComplianceNotificationPhones = new List<String>()
 	{
-		"(123) 456-7890",
+		"(123) 456-7890"
 	},
 	TechnicalNotificationMails = new List<String>()
 	{
-		"tech@contoso.com",
-	},
+		"tech@contoso.com"
+	}
 };
 
 await graphClient.Organization["{id}"]

@@ -10,7 +10,7 @@ var synchronizationTemplate = new SynchronizationTemplate
 {
 	Id = "Slack",
 	ApplicationId = "{id}",
-	FactoryTag = "CustomSCIM",
+	FactoryTag = "CustomSCIM"
 };
 
 await graphClient.Applications["{id}"].Synchronization.Templates["{templateId}"]

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var outlookTaskGroup = new OutlookTaskGroup
 {
-	Name = "Leisure tasks",
+	Name = "Leisure tasks"
 };
 
 await graphClient.Me.Outlook.TaskGroups

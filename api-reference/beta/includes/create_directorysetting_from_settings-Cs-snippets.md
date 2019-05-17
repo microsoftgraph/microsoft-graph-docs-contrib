@@ -14,9 +14,9 @@ var directorySetting = new DirectorySetting
 		new SettingValue
 		{
 			Name = "name-value",
-			Value = "value-value",
-		},
-	},
+			Value = "value-value"
+		}
+	}
 };
 
 await graphClient.Settings

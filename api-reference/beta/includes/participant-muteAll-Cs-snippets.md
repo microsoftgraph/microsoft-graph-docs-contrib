@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var participants = new List<String>()
 {
-	"",
+	""
 };
 
 var clientContext = "clientContext-value";

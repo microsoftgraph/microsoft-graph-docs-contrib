@@ -12,7 +12,7 @@ var values = new List<Json>()
 {
 	new Json
 	{
-	},
+	}
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns

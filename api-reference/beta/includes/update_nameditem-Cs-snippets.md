@@ -14,7 +14,7 @@ var workbookNamedItem = new WorkbookNamedItem
 	Value = new Json
 	{
 	},
-	Visible = true,
+	Visible = true
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]

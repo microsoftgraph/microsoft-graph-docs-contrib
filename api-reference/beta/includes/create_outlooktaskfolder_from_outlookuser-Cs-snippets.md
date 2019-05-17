@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var outlookTaskFolder = new OutlookTaskFolder
 {
-	Name = "Volunteer",
+	Name = "Volunteer"
 };
 
 await graphClient.Me.Outlook.TaskFolders

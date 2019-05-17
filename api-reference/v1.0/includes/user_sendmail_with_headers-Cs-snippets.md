@@ -12,7 +12,7 @@ var message = new Message
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "The group represents Nevada.",
+		Content = "The group represents Nevada."
 	},
 	ToRecipients = new List<Recipient>()
 	{
@@ -20,23 +20,23 @@ var message = new Message
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "AlexW@contoso.OnMicrosoft.com",
-			},
-		},
+				Address = "AlexW@contoso.OnMicrosoft.com"
+			}
+		}
 	},
 	InternetMessageHeaders = new List<InternetMessageHeader>()
 	{
 		new InternetMessageHeader
 		{
 			Name = "x-custom-header-group-name",
-			Value = "Nevada",
+			Value = "Nevada"
 		},
 		new InternetMessageHeader
 		{
 			Name = "x-custom-header-group-id",
-			Value = "NV001",
-		},
-	},
+			Value = "NV001"
+		}
+	}
 };
 
 await graphClient.Me

@@ -14,14 +14,14 @@ var mailboxSettings = new MailboxSettings
 		ScheduledStartDateTime = new DateTimeTimeZone
 		{
 			DateTime = "2016-03-20T18:00:00",
-			TimeZone = "UTC",
+			TimeZone = "UTC"
 		},
 		ScheduledEndDateTime = new DateTimeTimeZone
 		{
 			DateTime = "2016-03-28T18:00:00",
-			TimeZone = "UTC",
-		},
-	},
+			TimeZone = "UTC"
+		}
+	}
 };
 
 var me = new User();

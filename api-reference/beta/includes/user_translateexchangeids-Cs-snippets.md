@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var inputIds = new List<String>()
 {
 	"{rest-formatted-id-1}",
-	"{rest-formatted-id-2}",
+	"{rest-formatted-id-2}"
 };
 
 var sourceIdType = "restId";

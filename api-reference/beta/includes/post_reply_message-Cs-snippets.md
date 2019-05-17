@@ -11,8 +11,8 @@ var chatMessage = new ChatMessage
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Hello World",
-	},
+		Content = "Hello World"
+	}
 };
 
 await graphClient.Teams["{id}"].Channels["{id}"].Messages["{id}"].Replies

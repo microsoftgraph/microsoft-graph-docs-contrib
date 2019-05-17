@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var calendar = new Calendar
 {
-	Name = "Volunteer",
+	Name = "Volunteer"
 };
 
 await graphClient.Me.Calendars

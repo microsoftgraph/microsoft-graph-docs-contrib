@@ -11,7 +11,7 @@ var educationUser = new EducationUser
 	DisplayName = "Rogelio Cazares",
 	GivenName = "Rogelio",
 	MiddleName = "Fernando",
-	Surname = "Cazares",
+	Surname = "Cazares"
 };
 
 await graphClient.Education.Users["13020"]

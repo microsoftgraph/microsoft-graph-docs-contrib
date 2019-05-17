@@ -10,8 +10,8 @@ var permission = new Permission
 {
 	Roles = new List<String>()
 	{
-		"read",
-	},
+		"read"
+	}
 };
 
 await graphClient.Me.Drive.Items["{item-id}"].Permissions["{perm-id}"]

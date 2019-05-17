@@ -15,18 +15,18 @@ var message = new Message
 			EmailAddress = new EmailAddress
 			{
 				Address = "samanthab@contoso.onmicrosoft.com",
-				Name = "Samantha Booth",
-			},
+				Name = "Samantha Booth"
+			}
 		},
 		new Recipient
 		{
 			EmailAddress = new EmailAddress
 			{
 				Address = "randiw@contoso.onmicrosoft.com",
-				Name = "Randi Welch",
-			},
-		},
-	},
+				Name = "Randi Welch"
+			}
+		}
+	}
 };
 
 var comment = "Samantha, Randi, would you name the group please?";

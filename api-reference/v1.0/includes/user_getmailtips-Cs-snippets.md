@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var EmailAddresses = new List<String>()
 {
 	"danas@contoso.onmicrosoft.com",
-	"fannyd@contoso.onmicrosoft.com",
+	"fannyd@contoso.onmicrosoft.com"
 };
 
 var MailTipsOptions = "automaticReplies, mailboxFullStatus";

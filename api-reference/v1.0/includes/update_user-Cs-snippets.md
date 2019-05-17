@@ -11,9 +11,9 @@ var user = new User
 	AccountEnabled = true,
 	BusinessPhones = new List<String>()
 	{
-		"businessPhones-value",
+		"businessPhones-value"
 	},
-	City = "city-value",
+	City = "city-value"
 };
 
 await graphClient.Me

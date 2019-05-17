@@ -20,15 +20,15 @@ var servicePrincipal = new ServicePrincipal
 				new KeyValue
 				{
 					Key = "key-value",
-					Value = "value-value",
-				},
-			},
-		},
+					Value = "value-value"
+				}
+			}
+		}
 	},
 	AppDisplayName = "appDisplayName-value",
 	AppId = "appId-value",
 	AppOwnerOrganizationId = "appOwnerOrganizationId-value",
-	AppRoleAssignmentRequired = true,
+	AppRoleAssignmentRequired = true
 };
 
 await graphClient.ServicePrincipals["{id}"]

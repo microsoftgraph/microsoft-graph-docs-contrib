@@ -23,9 +23,9 @@ var bookingStaffMember = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
-				},
-			},
+					Start = "08:00:00.0000000"
+				}
+			}
 		},
 		new BookingWorkHours
 		{
@@ -35,9 +35,9 @@ var bookingStaffMember = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
-				},
-			},
+					Start = "08:00:00.0000000"
+				}
+			}
 		},
 		new BookingWorkHours
 		{
@@ -47,9 +47,9 @@ var bookingStaffMember = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
-				},
-			},
+					Start = "08:00:00.0000000"
+				}
+			}
 		},
 		new BookingWorkHours
 		{
@@ -59,9 +59,9 @@ var bookingStaffMember = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
-				},
-			},
+					Start = "08:00:00.0000000"
+				}
+			}
 		},
 		new BookingWorkHours
 		{
@@ -71,11 +71,11 @@ var bookingStaffMember = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
-				},
-			},
-		},
-	},
+					Start = "08:00:00.0000000"
+				}
+			}
+		}
+	}
 };
 
 await graphClient.BookingBusinesses["{id}"].StaffMembers

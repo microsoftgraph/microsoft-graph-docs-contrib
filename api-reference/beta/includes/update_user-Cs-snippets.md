@@ -15,10 +15,10 @@ var user = new User
 		{
 			DisabledPlans = new List<Guid>()
 			{
-				"bea13e0c-3828-4daa-a392-28af7ff61a0f",
+				"bea13e0c-3828-4daa-a392-28af7ff61a0f"
 			},
-			SkuId = "skuId-value",
-		},
+			SkuId = "skuId-value"
+		}
 	},
 	AssignedPlans = new List<AssignedPlan>()
 	{
@@ -27,14 +27,14 @@ var user = new User
 			AssignedDateTime = "2016-10-19T10:37:00Z",
 			CapabilityStatus = "capabilityStatus-value",
 			Service = "service-value",
-			ServicePlanId = "bea13e0c-3828-4daa-a392-28af7ff61a0f",
-		},
+			ServicePlanId = "bea13e0c-3828-4daa-a392-28af7ff61a0f"
+		}
 	},
 	BusinessPhones = new List<String>()
 	{
-		"businessPhones-value",
+		"businessPhones-value"
 	},
-	City = "city-value",
+	City = "city-value"
 };
 
 await graphClient.Me

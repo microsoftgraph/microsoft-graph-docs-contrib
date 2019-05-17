@@ -13,11 +13,11 @@ var @event = new Event
 	ResponseStatus = new ResponseStatus
 	{
 		Response = ResponseType.None,
-		Time = "2016-10-19T10:37:00Z",
+		Time = "2016-10-19T10:37:00Z"
 	},
 	Uid = "iCalUId-value",
 	ReminderMinutesBeforeStart = 99,
-	IsReminderOn = true,
+	IsReminderOn = true
 };
 
 await graphClient.Groups["{id}"].Events

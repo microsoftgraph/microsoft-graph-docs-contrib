@@ -15,9 +15,9 @@ var message = new Message
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "content-value",
+		Content = "content-value"
 	},
-	BodyPreview = "bodyPreview-value",
+	BodyPreview = "bodyPreview-value"
 };
 
 await graphClient.Me.MailFolders["{id}"].Messages

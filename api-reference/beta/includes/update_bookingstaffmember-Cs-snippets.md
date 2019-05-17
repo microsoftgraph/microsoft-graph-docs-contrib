@@ -15,7 +15,7 @@ var bookingStaffMember = new BookingStaffMember
 			Day = DayOfWeek.Monday,
 			TimeSlots = new List<BookingWorkTimeSlot>()
 			{
-			},
+			}
 		},
 		new BookingWorkHours
 		{
@@ -25,9 +25,9 @@ var bookingStaffMember = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
-				},
-			},
+					Start = "08:00:00.0000000"
+				}
+			}
 		},
 		new BookingWorkHours
 		{
@@ -37,9 +37,9 @@ var bookingStaffMember = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
-				},
-			},
+					Start = "08:00:00.0000000"
+				}
+			}
 		},
 		new BookingWorkHours
 		{
@@ -49,9 +49,9 @@ var bookingStaffMember = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
-				},
-			},
+					Start = "08:00:00.0000000"
+				}
+			}
 		},
 		new BookingWorkHours
 		{
@@ -61,11 +61,11 @@ var bookingStaffMember = new BookingStaffMember
 				new BookingWorkTimeSlot
 				{
 					End = "17:00:00.0000000",
-					Start = "08:00:00.0000000",
-				},
-			},
-		},
-	},
+					Start = "08:00:00.0000000"
+				}
+			}
+		}
+	}
 };
 
 await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].StaffMembers["8ee1c803-a1fa-406d-8259-7ab53233f148"]

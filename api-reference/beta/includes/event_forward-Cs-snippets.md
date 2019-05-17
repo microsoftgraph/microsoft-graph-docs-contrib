@@ -13,9 +13,9 @@ var ToRecipients = new List<Recipient>()
 		EmailAddress = new EmailAddress
 		{
 			Address = "danas@contoso.onmicrosoft.com",
-			Name = "Dana Swope",
-		},
-	},
+			Name = "Dana Swope"
+		}
+	}
 };
 
 var Comment = "Dana, hope you can make this meeting.";

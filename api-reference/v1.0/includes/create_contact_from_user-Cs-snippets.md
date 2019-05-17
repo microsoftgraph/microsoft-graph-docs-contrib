@@ -15,13 +15,13 @@ var contact = new Contact
 		new EmailAddress
 		{
 			Address = "pavelb@fabrikam.onmicrosoft.com",
-			Name = "Pavel Bansky",
-		},
+			Name = "Pavel Bansky"
+		}
 	},
 	BusinessPhones = new List<String>()
 	{
-		"+1 732 555 0102",
-	},
+		"+1 732 555 0102"
+	}
 };
 
 await graphClient.Me.Contacts

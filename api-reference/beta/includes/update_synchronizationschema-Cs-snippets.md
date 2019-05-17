@@ -23,16 +23,16 @@ var synchronizationSchema = new SynchronizationSchema
 						new AttributeDefinition
 						{
 							Name = "userPrincipalName",
-							Type = AttributeType.String,
-						},
-					},
-				},
-			},
+							Type = AttributeType.String
+						}
+					}
+				}
+			}
 		},
 		new DirectoryDefinition
 		{
-			Name = "Salesforce",
-		},
+			Name = "Salesforce"
+		}
 	},
 	SynchronizationRules = new List<SynchronizationRule>()
 	{
@@ -54,13 +54,13 @@ var synchronizationSchema = new SynchronizationSchema
 							Source = new AttributeMappingSource
 							{
 							},
-							TargetAttributeName = "userName",
-						},
-					},
-				},
-			},
-		},
-	},
+							TargetAttributeName = "userName"
+						}
+					}
+				}
+			}
+		}
+	}
 };
 
 await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{jobId}"].Schema

@@ -16,10 +16,10 @@ var message = new Message
 			EmailAddress = new EmailAddress
 			{
 				Address = "danas@contoso.onmicrosoft.com",
-				Name = "Dana Swope",
-			},
-		},
-	},
+				Name = "Dana Swope"
+			}
+		}
+	}
 };
 
 var comment = "Dana, just want to make sure you get this.";

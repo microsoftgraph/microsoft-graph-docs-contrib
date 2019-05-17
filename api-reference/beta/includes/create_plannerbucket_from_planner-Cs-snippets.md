@@ -10,7 +10,7 @@ var plannerBucket = new PlannerBucket
 {
 	Name = "Advertising",
 	PlanId = "xqQg5FS2LkCp935s-FIFm2QAFkHM",
-	OrderHint = " !",
+	OrderHint = " !"
 };
 
 await graphClient.Planner.Buckets

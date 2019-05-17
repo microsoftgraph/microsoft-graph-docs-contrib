@@ -10,7 +10,7 @@ var workbookWorksheet = new WorkbookWorksheet
 {
 	Position = 99,
 	Name = "name-value",
-	Visibility = "visibility-value",
+	Visibility = "visibility-value"
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"]

@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var application = new Application
 {
 	AllowPublicClient = true,
-	DisplayName = "Display name",
+	DisplayName = "Display name"
 };
 
 await graphClient.Applications

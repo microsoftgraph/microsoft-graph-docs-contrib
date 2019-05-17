@@ -12,8 +12,8 @@ var inferenceClassificationOverride = new InferenceClassificationOverride
 	SenderEmailAddress = new EmailAddress
 	{
 		Name = "Samantha Booth",
-		Address = "samanthab@adatum.onmicrosoft.com",
-	},
+		Address = "samanthab@adatum.onmicrosoft.com"
+	}
 };
 
 await graphClient.Me.InferenceClassification.Overrides

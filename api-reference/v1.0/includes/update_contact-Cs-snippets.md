@@ -13,9 +13,9 @@ var contact = new Contact
 		Street = "123 Some street",
 		City = "Seattle",
 		State = "WA",
-		PostalCode = "98121",
+		PostalCode = "98121"
 	},
-	Birthday = "1974-07-22",
+	Birthday = "1974-07-22"
 };
 
 await graphClient.Me.Contacts["{id}"]

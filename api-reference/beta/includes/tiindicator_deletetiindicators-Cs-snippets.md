@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var value = new List<String>()
 {
 	"id-value1",
-	"id-value2",
+	"id-value2"
 };
 
 await graphClient.Security.TiIndicators

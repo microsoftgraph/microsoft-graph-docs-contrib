@@ -19,7 +19,7 @@ var bookingService = new BookingService
 			PostOfficeBox = null,
 			State = "NY",
 			Street = "4567 First Street",
-			Type = null,
+			Type = null
 		},
 		Coordinates = null,
 		DisplayName = "Contoso Lunch Delivery",
@@ -27,7 +27,7 @@ var bookingService = new BookingService
 		LocationType = null,
 		LocationUri = null,
 		UniqueId = null,
-		UniqueIdType = null,
+		UniqueIdType = null
 	},
 	DefaultPrice = 10.0,
 	DefaultPriceType = BookingPriceType.FixedPrice,
@@ -37,8 +37,8 @@ var bookingService = new BookingService
 		{
 			Message = "Please be reminded that this service is tomorrow.",
 			Offset = "P1D",
-			Recipients = BookingReminderRecipients.AllAttendees,
-		},
+			Recipients = BookingReminderRecipients.AllAttendees
+		}
 	},
 	Description = "Individual bento box lunch delivery",
 	DisplayName = "Bento",
@@ -52,13 +52,13 @@ var bookingService = new BookingService
 		MaximumAdvance = "P10D",
 		MinimumLeadTime = "PT10H",
 		SendConfirmationsToOwner = true,
-		TimeSlotInterval = "PT1H",
+		TimeSlotInterval = "PT1H"
 	},
 	StaffMemberIds = new List<String>()
 	{
 		"d90d1e8c-5cfe-48cf-a2d5-966267375b6a",
-		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880",
-	},
+		"2f5f8794-0b29-45b5-b56a-2eb5ff7aa880"
+	}
 };
 
 await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Services

@@ -11,7 +11,7 @@ var post = new Post
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "content-value",
+		Content = "content-value"
 	},
 	ReceivedDateTime = "2016-10-19T10:37:00Z",
 	HasAttachments = true,
@@ -20,16 +20,16 @@ var post = new Post
 		EmailAddress = new EmailAddress
 		{
 			Name = "name-value",
-			Address = "address-value",
-		},
+			Address = "address-value"
+		}
 	},
 	Sender = new Recipient
 	{
 		EmailAddress = new EmailAddress
 		{
 			Name = "name-value",
-			Address = "address-value",
-		},
+			Address = "address-value"
+		}
 	},
 	ConversationThreadId = "conversationThreadId-value",
 	NewParticipants = new List<Recipient>()
@@ -39,9 +39,9 @@ var post = new Post
 			EmailAddress = new EmailAddress
 			{
 				Name = "name-value",
-				Address = "address-value",
-			},
-		},
+				Address = "address-value"
+			}
+		}
 	},
 	ConversationId = "conversationId-value",
 	CreatedDateTime = "2016-10-19T10:37:00Z",
@@ -49,7 +49,7 @@ var post = new Post
 	ChangeKey = "changeKey-value",
 	Categories = new List<String>()
 	{
-		"categories-value",
+		"categories-value"
 	},
 	Id = "id-value",
 	InReplyTo = new Post
@@ -64,9 +64,9 @@ var post = new Post
 			ContentType = "contentType-value",
 			Size = 99,
 			IsInline = true,
-			Id = "id-value",
-		},
-	},
+			Id = "id-value"
+		}
+	}
 };
 
 await graphClient.Groups["{id}"].Threads["{id}"].Posts["{id}"]

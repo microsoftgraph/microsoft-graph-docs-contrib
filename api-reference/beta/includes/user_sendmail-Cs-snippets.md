@@ -12,7 +12,7 @@ var message = new Message
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Text,
-		Content = "The new cafeteria is open.",
+		Content = "The new cafeteria is open."
 	},
 	ToRecipients = new List<Recipient>()
 	{
@@ -20,9 +20,9 @@ var message = new Message
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "samanthab@contoso.onmicrosoft.com",
-			},
-		},
+				Address = "samanthab@contoso.onmicrosoft.com"
+			}
+		}
 	},
 	CcRecipients = new List<Recipient>()
 	{
@@ -30,10 +30,10 @@ var message = new Message
 		{
 			EmailAddress = new EmailAddress
 			{
-				Address = "danas@contoso.onmicrosoft.com",
-			},
-		},
-	},
+				Address = "danas@contoso.onmicrosoft.com"
+			}
+		}
+	}
 };
 
 var saveToSentItems = false;

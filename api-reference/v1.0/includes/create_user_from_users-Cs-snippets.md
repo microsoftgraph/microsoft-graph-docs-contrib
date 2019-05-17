@@ -15,8 +15,8 @@ var user = new User
 	PasswordProfile = new PasswordProfile
 	{
 		ForceChangePasswordNextSignIn = true,
-		Password = "password-value",
-	},
+		Password = "password-value"
+	}
 };
 
 await graphClient.Users

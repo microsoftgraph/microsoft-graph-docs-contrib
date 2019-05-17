@@ -12,21 +12,21 @@ var @event = new Event
 	Body = new ItemBody
 	{
 		ContentType = BodyType.Html,
-		Content = "Does late morning work for you?",
+		Content = "Does late morning work for you?"
 	},
 	Start = new DateTimeTimeZone
 	{
 		DateTime = "2017-04-15T12:00:00",
-		TimeZone = "Pacific Standard Time",
+		TimeZone = "Pacific Standard Time"
 	},
 	End = new DateTimeTimeZone
 	{
 		DateTime = "2017-04-15T14:00:00",
-		TimeZone = "Pacific Standard Time",
+		TimeZone = "Pacific Standard Time"
 	},
 	Location = new Location
 	{
-		DisplayName = "Harry's Bar",
+		DisplayName = "Harry's Bar"
 	},
 	Attendees = new List<Attendee>()
 	{
@@ -35,11 +35,11 @@ var @event = new Event
 			EmailAddress = new EmailAddress
 			{
 				Address = "samanthab@contoso.onmicrosoft.com",
-				Name = "Samantha Booth",
+				Name = "Samantha Booth"
 			},
-			Type = AttendeeType.Required,
-		},
-	},
+			Type = AttendeeType.Required
+		}
+	}
 };
 
 await graphClient.Me.Events

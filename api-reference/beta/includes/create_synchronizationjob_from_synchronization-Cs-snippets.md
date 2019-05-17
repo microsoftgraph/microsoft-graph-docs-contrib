@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var synchronizationJob = new SynchronizationJob
 {
-	TemplateId = "BoxOutDelta",
+	TemplateId = "BoxOutDelta"
 };
 
 await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs
