@@ -62,7 +62,7 @@ sections:
           src: ./images/index/i_api.svg
         title: Microsoft Graph REST API Beta
 
-  - title: What's new in May
+  - title: What's new in the docs?
     items:
     - type: list
       style: cards
