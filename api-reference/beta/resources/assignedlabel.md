@@ -10,7 +10,7 @@ ms.prod: "groups"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a sensitivity label assigned to an Office 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security & Compliance Center as part of Microsoft Information Protection capabilities. For more info on Sensitivity labels check out [Sensitivity labels Overview](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/sensitivity-labels).
+Represents a sensitivity label assigned to an Office 365 group. Sensitivity labels allow administrators to enforce specific group settings on a group by assigning a classification to the group (such as Confidential, Highly Confidential or General). Sensitivity labels are published by administrators in Microsoft 365 Security & Compliance Center as part of Microsoft Information Protection capabilities. For more information about sensitivity labels, see [Sensitivity labels overview](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/sensitivity-labels).
 
 ## Properties
 | Property	   | Type	|Description|
@@ -20,7 +20,7 @@ Represents a sensitivity label assigned to an Office 365 group. Sensitivity labe
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
