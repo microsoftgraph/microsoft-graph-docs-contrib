@@ -70,9 +70,7 @@ Content-type: application/json
 Content-length: 78
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "name-value"
 }
 ```
 
