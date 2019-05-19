@@ -63,7 +63,7 @@ Here is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys" = ["AAMkADYAAAR9NR5AAA="],
+  "sampleKeys": ["AAMkADYAAAR9NR5AAA="],
   "name": "create_calendar_from_calendargroup"
 }-->
 
