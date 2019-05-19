@@ -1,7 +1,7 @@
 ---
 title: "Get mobileAppIntentAndState"
 description: "Read properties and relationships of the mobileAppIntentAndState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

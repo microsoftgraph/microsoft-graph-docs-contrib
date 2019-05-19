@@ -1,7 +1,7 @@
 ---
 title: "Delete windows81GeneralConfiguration"
 description: "Deletes a windows81GeneralConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

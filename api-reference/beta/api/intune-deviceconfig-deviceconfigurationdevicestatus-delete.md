@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceConfigurationDeviceStatus"
 description: "Deletes a deviceConfigurationDeviceStatus."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

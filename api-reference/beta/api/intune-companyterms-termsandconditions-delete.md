@@ -1,7 +1,7 @@
 ---
 title: "Delete termsAndConditions"
 description: "Deletes a termsAndConditions."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

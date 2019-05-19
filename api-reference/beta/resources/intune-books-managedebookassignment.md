@@ -1,7 +1,7 @@
 ---
 title: "managedEBookAssignment resource type"
 description: "Contains properties used to assign a eBook to a group."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

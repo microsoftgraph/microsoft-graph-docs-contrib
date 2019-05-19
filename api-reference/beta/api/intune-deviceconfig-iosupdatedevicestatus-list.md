@@ -1,7 +1,7 @@
 ---
 title: "List iosUpdateDeviceStatuses"
 description: "List properties and relationships of the iosUpdateDeviceStatus objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

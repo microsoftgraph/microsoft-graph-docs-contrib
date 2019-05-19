@@ -1,7 +1,7 @@
 ---
 title: "Create depOnboardingSetting"
 description: "Create a new depOnboardingSetting object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

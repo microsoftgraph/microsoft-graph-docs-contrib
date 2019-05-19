@@ -1,7 +1,7 @@
 ---
 title: "Delete managedDeviceMobileAppConfigurationAssignment"
 description: "Deletes a managedDeviceMobileAppConfigurationAssignment."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

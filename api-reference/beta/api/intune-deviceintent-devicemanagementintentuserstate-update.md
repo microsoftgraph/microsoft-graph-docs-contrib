@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementIntentUserState"
 description: "Update the properties of a deviceManagementIntentUserState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -93,9 +93,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
-
-
 
 
 

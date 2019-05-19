@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkMobileAppConfiguration"
 description: "Create a new androidForWorkMobileAppConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

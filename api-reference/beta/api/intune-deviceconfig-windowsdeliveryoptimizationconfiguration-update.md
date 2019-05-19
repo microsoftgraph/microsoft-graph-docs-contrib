@@ -1,7 +1,7 @@
 ---
 title: "Update windowsDeliveryOptimizationConfiguration"
 description: "Update the properties of a windowsDeliveryOptimizationConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

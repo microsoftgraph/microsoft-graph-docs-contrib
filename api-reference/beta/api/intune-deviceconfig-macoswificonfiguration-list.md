@@ -1,7 +1,7 @@
 ---
 title: "List macOSWiFiConfigurations"
 description: "List properties and relationships of the macOSWiFiConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

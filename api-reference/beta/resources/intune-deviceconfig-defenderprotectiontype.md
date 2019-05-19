@@ -1,7 +1,7 @@
 ---
 title: "defenderProtectionType enum type"
 description: "Possible values of Defender Protection"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

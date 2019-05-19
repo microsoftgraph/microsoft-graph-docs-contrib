@@ -1,7 +1,7 @@
 ---
 title: "Update remoteActionAudit"
 description: "Update the properties of a remoteActionAudit object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

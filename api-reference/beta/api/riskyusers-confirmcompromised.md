@@ -1,18 +1,18 @@
 ---
-title: Confirm riskyUsers compromised
-description: Confirm a riskyUsers object as compromised.
+title: Confirm riskyUser compromised
+description: Confirm a riskyUser object as compromised.
 author: cloudhandler
 localization_priority: Normal 
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 ---
-# Confirm riskyUsers compromised
+# riskyUser: confirmCompromised
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**Note:** The riskyUsers API requires an Azure AD Premium P2 license.
 
-Confirm a [riskyUser](../resources/riskyuser.md) object as compromised. This will set the targeted user's risk level to high.
+Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised. This action sets the targeted user's risk level to high.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,10 +34,9 @@ POST /riskyUsers/confirmCompromised
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-Specify the userIds to dismiss in the request body.
+Specify the risky user IDs to dismiss in the request body.
 
 ## Response
 
@@ -69,6 +68,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/confirm_riskyuser-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/confirm_riskyuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -78,5 +87,8 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

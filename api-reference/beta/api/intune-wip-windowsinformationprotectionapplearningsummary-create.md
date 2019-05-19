@@ -1,7 +1,7 @@
 ---
 title: "Create windowsInformationProtectionAppLearningSummary"
 description: "Create a new windowsInformationProtectionAppLearningSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

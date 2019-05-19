@@ -1,7 +1,7 @@
 ---
 title: "androidTrustedRootCertificate resource type"
 description: "Android Trusted Root Certificate configuration profile"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

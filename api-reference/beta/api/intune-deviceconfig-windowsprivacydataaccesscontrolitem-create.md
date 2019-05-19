@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPrivacyDataAccessControlItem"
 description: "Create a new windowsPrivacyDataAccessControlItem object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

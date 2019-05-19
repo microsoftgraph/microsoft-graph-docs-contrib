@@ -1,7 +1,7 @@
 ---
 title: "Get termsAndConditionsAcceptanceStatus"
 description: "Read properties and relationships of the termsAndConditionsAcceptanceStatus object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

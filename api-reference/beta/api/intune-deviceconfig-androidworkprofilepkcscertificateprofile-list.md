@@ -1,7 +1,7 @@
 ---
 title: "List androidWorkProfilePkcsCertificateProfiles"
 description: "List properties and relationships of the androidWorkProfilePkcsCertificateProfile objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -85,11 +85,11 @@ Content-Length: 1282
           "objectIdentifier": "Object Identifier value"
         }
       ],
+      "subjectAlternativeNameType": "emailAddress",
       "certificationAuthority": "Certification Authority value",
       "certificationAuthorityName": "Certification Authority Name value",
       "certificateTemplateName": "Certificate Template Name value",
-      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-      "subjectAlternativeNameType": "emailAddress"
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
     }
   ]
 }

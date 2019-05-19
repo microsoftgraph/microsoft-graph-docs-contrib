@@ -1,7 +1,7 @@
 ---
 title: "Update windows10CustomConfiguration"
 description: "Update the properties of a windows10CustomConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get enterpriseCodeSigningCertificate"
 description: "Read properties and relationships of the enterpriseCodeSigningCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

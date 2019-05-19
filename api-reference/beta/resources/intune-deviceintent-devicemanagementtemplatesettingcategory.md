@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementTemplateSettingCategory resource type"
 description: "Entity representing a template setting category"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -53,9 +53,6 @@ Here is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
-
-
 
 
 

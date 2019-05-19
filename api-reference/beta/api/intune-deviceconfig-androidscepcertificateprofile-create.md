@@ -1,7 +1,7 @@
 ---
 title: "Create androidScepCertificateProfile"
 description: "Create a new androidScepCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

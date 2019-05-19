@@ -1,7 +1,7 @@
 ---
 title: "windows10PkcsCertificateProfile resource type"
 description: "Windows 10 Desktop and Mobile PKCS certificate profile"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

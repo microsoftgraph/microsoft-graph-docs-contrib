@@ -1,7 +1,7 @@
 ---
 title: "Get importedWindowsAutopilotDeviceIdentity"
 description: "Read properties and relationships of the importedWindowsAutopilotDeviceIdentity object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 635
+Content-Length: 743
 
 {
   "value": {
@@ -70,6 +70,7 @@ Content-Length: 635
     "orderIdentifier": "Order Identifier value",
     "serialNumber": "Serial Number value",
     "productKey": "Product Key value",
+    "importId": "Import Id value",
     "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
     "state": {
       "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -77,7 +78,8 @@ Content-Length: 635
       "deviceRegistrationId": "Device Registration Id value",
       "deviceErrorCode": 15,
       "deviceErrorName": "Device Error Name value"
-    }
+    },
+    "assignedUserPrincipalName": "Assigned User Principal Name value"
   }
 }
 ```

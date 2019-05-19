@@ -1,7 +1,7 @@
 ---
 title: "List windowsHealthMonitoringConfigurations"
 description: "List properties and relationships of the windowsHealthMonitoringConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 628
+Content-Length: 732
 
 {
   "value": [
@@ -75,7 +75,8 @@ Content-Length: 628
       "displayName": "Display Name value",
       "version": 7,
       "allowDeviceHealthMonitoring": "enabled",
-      "configDeviceHealthMonitoringScope": "healthMonitoring"
+      "configDeviceHealthMonitoringScope": "healthMonitoring",
+      "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
     }
   ]
 }

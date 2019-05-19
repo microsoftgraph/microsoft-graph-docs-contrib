@@ -1,7 +1,7 @@
 ---
 title: "Get depMacOSEnrollmentProfile"
 description: "Read properties and relationships of the depMacOSEnrollmentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1266
+Content-Length: 1323
 
 {
   "value": {
@@ -90,6 +90,7 @@ Content-Length: 1266
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
     "privacyPaneDisabled": true,
+    "deviceNameTemplate": "Device Name Template value",
     "registrationDisabled": true,
     "fileVaultDisabled": true,
     "iCloudDiagnosticsDisabled": true,

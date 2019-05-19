@@ -1,7 +1,7 @@
 ---
 title: "Create windows81TrustedRootCertificate"
 description: "Create a new windows81TrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create androidWorkProfileGeneralDeviceConfiguration"
 description: "Create a new androidWorkProfileGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

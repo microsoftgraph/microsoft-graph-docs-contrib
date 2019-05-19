@@ -1,7 +1,7 @@
 ---
 title: "Update iosEducationDeviceConfiguration"
 description: "Update the properties of a iosEducationDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete androidForWorkNineWorkEasConfiguration"
 description: "Deletes a androidForWorkNineWorkEasConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

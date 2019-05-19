@@ -1,7 +1,7 @@
 ---
 title: "Update iosImportedPFXCertificateProfile"
 description: "Update the properties of a iosImportedPFXCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

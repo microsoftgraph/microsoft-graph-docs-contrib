@@ -1,7 +1,7 @@
 ---
 title: "Get iosWiFiConfiguration"
 description: "Read properties and relationships of the iosWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

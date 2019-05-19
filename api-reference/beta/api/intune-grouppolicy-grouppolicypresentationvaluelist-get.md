@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyPresentationValueList"
 description: "Read properties and relationships of the groupPolicyPresentationValueList object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

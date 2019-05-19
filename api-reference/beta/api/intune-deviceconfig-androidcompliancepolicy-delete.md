@@ -1,7 +1,7 @@
 ---
 title: "Delete androidCompliancePolicy"
 description: "Deletes a androidCompliancePolicy."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

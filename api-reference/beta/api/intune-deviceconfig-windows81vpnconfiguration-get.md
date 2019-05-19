@@ -1,7 +1,7 @@
 ---
 title: "Get windows81VpnConfiguration"
 description: "Read properties and relationships of the windows81VpnConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

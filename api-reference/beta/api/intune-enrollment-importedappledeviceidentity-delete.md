@@ -1,7 +1,7 @@
 ---
 title: "Delete importedAppleDeviceIdentity"
 description: "Deletes a importedAppleDeviceIdentity."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

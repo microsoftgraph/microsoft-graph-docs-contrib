@@ -1,7 +1,7 @@
 ---
 title: "deliveryOptimizationGroupIdSource resource type"
 description: "GroupId Support Types"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

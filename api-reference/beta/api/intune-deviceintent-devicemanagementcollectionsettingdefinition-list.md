@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementCollectionSettingDefinitions"
 description: "List properties and relationships of the deviceManagementCollectionSettingDefinition objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -96,9 +96,6 @@ Content-Length: 985
   ]
 }
 ```
-
-
-
 
 
 

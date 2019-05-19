@@ -1,7 +1,7 @@
 ---
 title: "Create remoteActionAudit"
 description: "Create a new remoteActionAudit object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

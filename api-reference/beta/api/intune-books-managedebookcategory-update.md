@@ -1,7 +1,7 @@
 ---
 title: "Update managedEBookCategory"
 description: "Update the properties of a managedEBookCategory object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

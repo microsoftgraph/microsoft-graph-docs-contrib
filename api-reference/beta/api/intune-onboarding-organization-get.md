@@ -1,7 +1,7 @@
 ---
 title: "Get organization"
 description: "Read properties and relationships of the organization object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

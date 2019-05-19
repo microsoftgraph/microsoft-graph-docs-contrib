@@ -1,7 +1,7 @@
 ---
 title: "requiredPasswordType enum type"
 description: "Possible values of required passwords."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

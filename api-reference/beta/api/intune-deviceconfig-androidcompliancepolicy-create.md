@@ -1,7 +1,7 @@
 ---
 title: "Create androidCompliancePolicy"
 description: "Create a new androidCompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

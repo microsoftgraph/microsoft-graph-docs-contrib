@@ -1,7 +1,7 @@
 ---
 title: "List iosLobAppProvisioningConfigurationAssignments"
 description: "List properties and relationships of the iosLobAppProvisioningConfigurationAssignment objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

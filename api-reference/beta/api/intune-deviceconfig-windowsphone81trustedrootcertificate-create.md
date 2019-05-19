@@ -1,7 +1,7 @@
 ---
 title: "Create windowsPhone81TrustedRootCertificate"
 description: "Create a new windowsPhone81TrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

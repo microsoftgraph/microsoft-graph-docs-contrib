@@ -1,7 +1,7 @@
 ---
 title: "List networkIPv4ConfigurationManagementConditions"
 description: "List properties and relationships of the networkIPv4ConfigurationManagementCondition objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

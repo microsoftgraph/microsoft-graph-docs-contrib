@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementAbstractComplexSettingInstances"
 description: "List properties and relationships of the deviceManagementAbstractComplexSettingInstance objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -74,9 +74,6 @@ Content-Length: 318
   ]
 }
 ```
-
-
-
 
 
 

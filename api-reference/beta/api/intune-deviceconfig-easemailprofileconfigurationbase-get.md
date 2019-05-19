@@ -1,7 +1,7 @@
 ---
 title: "Get easEmailProfileConfigurationBase"
 description: "Read properties and relationships of the easEmailProfileConfigurationBase object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

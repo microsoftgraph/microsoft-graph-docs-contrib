@@ -1,7 +1,7 @@
 ---
 title: "windowsWifiConfiguration resource type"
 description: "Device Configuration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

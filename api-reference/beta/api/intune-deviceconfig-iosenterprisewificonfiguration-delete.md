@@ -1,7 +1,7 @@
 ---
 title: "Delete iosEnterpriseWiFiConfiguration"
 description: "Deletes a iosEnterpriseWiFiConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

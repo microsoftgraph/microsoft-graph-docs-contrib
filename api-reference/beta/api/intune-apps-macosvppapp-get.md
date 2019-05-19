@@ -1,7 +1,7 @@
 ---
 title: "Get macOsVppApp"
 description: "Read properties and relationships of the macOsVppApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2141
+Content-Length: 2170
 
 {
   "value": {
@@ -90,6 +90,7 @@ Content-Length: 2141
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "usedLicenseCount": 0,
     "totalLicenseCount": 1,
     "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",

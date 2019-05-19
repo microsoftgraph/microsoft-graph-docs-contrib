@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementIntent resource type"
 description: "Entity that represents an intent to apply settings to a device"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -23,6 +23,7 @@ Entity that represents an intent to apply settings to a device
 |[Delete deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-delete.md)|None|Deletes a [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md).|
 |[Update deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Update the properties of a [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object.|
 |[updateSettings action](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|None|Not yet documented|
+|[migrateToTemplate action](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|None|Not yet documented|
 |[assign action](../api/intune-deviceintent-devicemanagementintent-assign.md)|None|Not yet documented|
 
 ## Properties
@@ -66,9 +67,6 @@ Here is a JSON representation of the resource.
   "templateId": "String"
 }
 ```
-
-
-
 
 
 

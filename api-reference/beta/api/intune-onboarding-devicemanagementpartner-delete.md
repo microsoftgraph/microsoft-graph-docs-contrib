@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementPartner"
 description: "Deletes a deviceManagementPartner."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

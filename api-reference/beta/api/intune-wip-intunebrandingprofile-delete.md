@@ -1,7 +1,7 @@
 ---
 title: "Delete intuneBrandingProfile"
 description: "Deletes a intuneBrandingProfile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

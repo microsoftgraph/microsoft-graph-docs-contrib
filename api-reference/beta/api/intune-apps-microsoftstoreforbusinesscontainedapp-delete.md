@@ -1,7 +1,7 @@
 ---
 title: "Delete microsoftStoreForBusinessContainedApp"
 description: "Deletes a microsoftStoreForBusinessContainedApp."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

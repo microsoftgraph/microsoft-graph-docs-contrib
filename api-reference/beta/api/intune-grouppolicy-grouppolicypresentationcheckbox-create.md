@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationCheckBox"
 description: "Create a new groupPolicyPresentationCheckBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

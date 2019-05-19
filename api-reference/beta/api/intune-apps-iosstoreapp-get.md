@@ -1,7 +1,7 @@
 ---
 title: "Get iosStoreApp"
 description: "Read properties and relationships of the iosStoreApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1382
+Content-Length: 1411
 
 {
   "value": {
@@ -90,6 +90,7 @@ Content-Length: 1382
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "bundleId": "Bundle Id value",
     "appStoreUrl": "https://example.com/appStoreUrl/",
     "applicableDeviceType": {

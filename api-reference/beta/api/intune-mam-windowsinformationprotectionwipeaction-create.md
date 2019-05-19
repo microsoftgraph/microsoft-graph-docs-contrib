@@ -1,7 +1,7 @@
 ---
 title: "Create windowsInformationProtectionWipeAction"
 description: "Create a new windowsInformationProtectionWipeAction object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81GeneralConfiguration"
 description: "Update the properties of a windowsPhone81GeneralConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

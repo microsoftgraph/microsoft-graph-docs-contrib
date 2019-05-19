@@ -1,7 +1,7 @@
 ---
 title: "Delete androidForWorkAppConfigurationSchema"
 description: "Deletes a androidForWorkAppConfigurationSchema."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

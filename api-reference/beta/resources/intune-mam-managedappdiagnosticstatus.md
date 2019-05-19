@@ -1,7 +1,7 @@
 ---
 title: "managedAppDiagnosticStatus resource type"
 description: "Represents diagnostics status."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Get androidForWorkScepCertificateProfile"
 description: "Read properties and relationships of the androidForWorkScepCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -88,6 +88,7 @@ Content-Length: 1474
         "objectIdentifier": "Object Identifier value"
       }
     ],
+    "subjectAlternativeNameType": "emailAddress",
     "scepServerUrls": [
       "Scep Server Urls value"
     ],
@@ -103,8 +104,7 @@ Content-Length: 1474
         "sanType": "emailAddress",
         "name": "Name value"
       }
-    ],
-    "subjectAlternativeNameType": "emailAddress"
+    ]
   }
 }
 ```

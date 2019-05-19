@@ -1,7 +1,7 @@
 ---
 title: "Delete managedDeviceEncryptionState"
 description: "Deletes a managedDeviceEncryptionState."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

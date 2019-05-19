@@ -1,7 +1,7 @@
 ---
 title: "Delete macOsVppApp"
 description: "Deletes a macOsVppApp."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

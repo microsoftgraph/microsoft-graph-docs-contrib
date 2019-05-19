@@ -1,7 +1,7 @@
 ---
 title: "Get androidWorkProfileCustomConfiguration"
 description: "Read properties and relationships of the androidWorkProfileCustomConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

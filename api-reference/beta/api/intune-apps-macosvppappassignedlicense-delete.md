@@ -1,7 +1,7 @@
 ---
 title: "Delete macOsVppAppAssignedLicense"
 description: "Deletes a macOsVppAppAssignedLicense."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

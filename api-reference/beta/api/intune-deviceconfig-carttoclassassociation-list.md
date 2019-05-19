@@ -1,7 +1,7 @@
 ---
 title: "List cartToClassAssociations"
 description: "List properties and relationships of the cartToClassAssociation objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

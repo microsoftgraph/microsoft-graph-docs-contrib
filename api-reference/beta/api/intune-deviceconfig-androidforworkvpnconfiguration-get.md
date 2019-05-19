@@ -1,7 +1,7 @@
 ---
 title: "Get androidForWorkVpnConfiguration"
 description: "Read properties and relationships of the androidForWorkVpnConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

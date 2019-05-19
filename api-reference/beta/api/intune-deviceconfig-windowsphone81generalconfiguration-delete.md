@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsPhone81GeneralConfiguration"
 description: "Deletes a windowsPhone81GeneralConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

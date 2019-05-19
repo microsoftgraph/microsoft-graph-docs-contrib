@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementIntentAssignment"
 description: "Read properties and relationships of the deviceManagementIntentAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -72,9 +72,6 @@ Content-Length: 250
   }
 }
 ```
-
-
-
 
 
 

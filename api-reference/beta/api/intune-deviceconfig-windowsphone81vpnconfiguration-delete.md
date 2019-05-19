@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsPhone81VpnConfiguration"
 description: "Deletes a windowsPhone81VpnConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

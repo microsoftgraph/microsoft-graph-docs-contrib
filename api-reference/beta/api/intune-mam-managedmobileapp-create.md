@@ -1,7 +1,7 @@
 ---
 title: "Create managedMobileApp"
 description: "Create a new managedMobileApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

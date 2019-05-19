@@ -1,7 +1,7 @@
 ---
 title: "Get deviceConfigurationGroupAssignment"
 description: "Read properties and relationships of the deviceConfigurationGroupAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "windowsDefenderScanActionResult resource type"
 description: "Windows Defender last scan result"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

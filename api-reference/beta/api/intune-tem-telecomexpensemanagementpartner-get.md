@@ -1,7 +1,7 @@
 ---
 title: "Get telecomExpenseManagementPartner"
 description: "Read properties and relationships of the telecomExpenseManagementPartner object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

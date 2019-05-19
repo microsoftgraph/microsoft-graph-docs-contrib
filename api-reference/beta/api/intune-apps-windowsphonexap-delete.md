@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsPhoneXAP"
 description: "Deletes a windowsPhoneXAP."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

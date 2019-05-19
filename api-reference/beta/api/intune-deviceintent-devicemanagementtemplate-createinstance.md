@@ -1,7 +1,7 @@
 ---
 title: "createInstance action"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/templates/{deviceManagementTemplateId}/createInstance
+POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}/createInstance
 ```
 
 ## Request headers
@@ -97,9 +98,6 @@ Content-Length: 350
   }
 }
 ```
-
-
-
 
 
 

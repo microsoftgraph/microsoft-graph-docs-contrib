@@ -1,7 +1,7 @@
 ---
 title: "Get iosVpnConfiguration"
 description: "Read properties and relationships of the iosVpnConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

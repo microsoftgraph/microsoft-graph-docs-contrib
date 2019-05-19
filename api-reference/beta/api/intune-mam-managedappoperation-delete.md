@@ -1,7 +1,7 @@
 ---
 title: "Delete managedAppOperation"
 description: "Deletes a managedAppOperation."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

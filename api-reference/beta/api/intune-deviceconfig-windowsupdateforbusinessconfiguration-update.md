@@ -1,7 +1,7 @@
 ---
 title: "Update windowsUpdateForBusinessConfiguration"
 description: "Update the properties of a windowsUpdateForBusinessConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingStringLengthConstraint resource type"
 description: "Constraint enforcing a given string length range"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -40,9 +40,6 @@ Here is a JSON representation of the resource.
   "maximumLength": 1024
 }
 ```
-
-
-
 
 
 

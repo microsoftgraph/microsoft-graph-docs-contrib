@@ -1,7 +1,7 @@
 ---
 title: "windows10PFXImportCertificateProfile resource type"
 description: "Deprecated"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

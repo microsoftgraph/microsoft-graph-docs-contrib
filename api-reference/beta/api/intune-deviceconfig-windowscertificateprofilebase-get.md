@@ -1,7 +1,7 @@
 ---
 title: "Get windowsCertificateProfileBase"
 description: "Read properties and relationships of the windowsCertificateProfileBase object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

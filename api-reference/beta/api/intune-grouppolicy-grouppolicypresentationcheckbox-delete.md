@@ -1,7 +1,7 @@
 ---
 title: "Delete groupPolicyPresentationCheckBox"
 description: "Deletes a groupPolicyPresentationCheckBox."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

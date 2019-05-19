@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsStoreApp"
 description: "Deletes a windowsStoreApp."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

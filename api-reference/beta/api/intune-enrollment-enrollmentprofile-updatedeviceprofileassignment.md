@@ -1,7 +1,7 @@
 ---
 title: "updateDeviceProfileAssignment action"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

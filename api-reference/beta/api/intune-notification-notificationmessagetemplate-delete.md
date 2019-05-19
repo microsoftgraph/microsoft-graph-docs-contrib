@@ -1,7 +1,7 @@
 ---
 title: "Delete notificationMessageTemplate"
 description: "Deletes a notificationMessageTemplate."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

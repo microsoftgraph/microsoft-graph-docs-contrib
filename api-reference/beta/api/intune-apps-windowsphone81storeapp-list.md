@@ -1,7 +1,7 @@
 ---
 title: "List windowsPhone81StoreApps"
 description: "List properties and relationships of the windowsPhone81StoreApp objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1053
+Content-Length: 1084
 
 {
   "value": [
@@ -86,6 +86,7 @@ Content-Length: 1053
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "appStoreUrl": "https://example.com/appStoreUrl/"
     }
   ]

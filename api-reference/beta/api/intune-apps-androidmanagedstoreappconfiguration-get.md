@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedStoreAppConfiguration"
 description: "Read properties and relationships of the androidManagedStoreAppConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

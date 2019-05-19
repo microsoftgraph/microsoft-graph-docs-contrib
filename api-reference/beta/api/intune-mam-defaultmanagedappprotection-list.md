@@ -1,7 +1,7 @@
 ---
 title: "List defaultManagedAppProtections"
 description: "List properties and relationships of the defaultManagedAppProtection objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4092
+Content-Length: 4254
 
 {
   "value": [
@@ -142,14 +142,16 @@ Content-Length: 4092
       "appActionIfIosDeviceModelNotAllowed": "wipe",
       "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
       "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
-      "thirdPartyKeyboardsBlocked": true,
       "filterOpenInToOnlyManagedApps": true,
       "disableProtectionOfManagedOutboundOpenInData": true,
       "protectInboundDataFromUnknownSources": true,
       "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
       "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
       "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+      "customBrowserProtocol": "Custom Browser Protocol value",
+      "customBrowserPackageId": "Custom Browser Package Id value",
+      "customBrowserDisplayName": "Custom Browser Display Name value"
     }
   ]
 }

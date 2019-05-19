@@ -1,7 +1,7 @@
 ---
 title: "List windows10EasEmailProfileConfigurations"
 description: "List properties and relationships of the windows10EasEmailProfileConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

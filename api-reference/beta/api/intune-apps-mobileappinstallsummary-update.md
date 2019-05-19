@@ -1,7 +1,7 @@
 ---
 title: "Update mobileAppInstallSummary"
 description: "Update the properties of a mobileAppInstallSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

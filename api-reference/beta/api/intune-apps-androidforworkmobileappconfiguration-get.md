@@ -1,7 +1,7 @@
 ---
 title: "Get androidForWorkMobileAppConfiguration"
 description: "Read properties and relationships of the androidForWorkMobileAppConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

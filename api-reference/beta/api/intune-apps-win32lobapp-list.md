@@ -1,7 +1,7 @@
 ---
 title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2877
+Content-Length: 3293
 
 {
   "value": [
@@ -86,6 +86,7 @@ Content-Length: 2877
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -115,6 +116,17 @@ Content-Length: 2877
           "detectionType": "exists",
           "operator": "equal",
           "detectionValue": "Detection Value value"
+        }
+      ],
+      "requirementRules": [
+        {
+          "@odata.type": "microsoft.graph.win32LobAppRegistryRequirement",
+          "operator": "equal",
+          "detectionValue": "Detection Value value",
+          "check32BitOn64System": true,
+          "keyPath": "Key Path value",
+          "valueName": "Value Name value",
+          "detectionType": "exists"
         }
       ],
       "installExperience": {

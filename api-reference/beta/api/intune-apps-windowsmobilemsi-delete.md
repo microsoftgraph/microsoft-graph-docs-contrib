@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsMobileMSI"
 description: "Deletes a windowsMobileMSI."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

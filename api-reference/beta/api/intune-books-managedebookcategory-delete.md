@@ -1,7 +1,7 @@
 ---
 title: "Delete managedEBookCategory"
 description: "Deletes a managedEBookCategory."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update deviceComplianceScheduledActionForRule"
 description: "Update the properties of a deviceComplianceScheduledActionForRule object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

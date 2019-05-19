@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementIntent"
 description: "Read properties and relationships of the deviceManagementIntent object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -74,9 +74,6 @@ Content-Length: 350
   }
 }
 ```
-
-
-
 
 
 

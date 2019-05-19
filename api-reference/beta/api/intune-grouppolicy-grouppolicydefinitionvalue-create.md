@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyDefinitionValue"
 description: "Create a new groupPolicyDefinitionValue object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
