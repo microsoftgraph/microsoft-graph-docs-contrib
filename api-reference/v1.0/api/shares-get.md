@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Access shared items
 localization_priority: Normal
@@ -29,11 +29,11 @@ One of the following permissions is required to call this API. To learn more, in
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### Path Parameters
+### Path parameters
 
-| Parameter Name        | Value    | Description                                                                         |
-|:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | Required. A sharing token as returned by the API or a properly encoded sharing URL. |
+| Parameter Name                 | Value    | Description                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **shareIdOrEncodedSharingUrl** | `string` | Required. A sharing token as returned by the API or a properly encoded sharing URL. |
 
 ### Encoding sharing URLs
 
@@ -51,6 +51,22 @@ string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&auth
 string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
+
+## Optional request headers
+
+| Name       | Type   | Description                                                    |
+|:-----------|:-------|:---------------------------------------------------------------|
+| **Prefer** | string | Optional. Set to one of the `prefer` values documented below.  |
+
+### Prefer header values
+
+| Name                          | Description                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+| redeemSharingLink             | If the **shareIdOrEncodedSharingUrl** is a sharing link, grant the caller durable access to the item    |
+| redeemSharingLinkIfNecessary  | Same as redeemSharingLink, but access is only guaranteed to be granted for the duration of this request |
+
+redeemSharingLink should be considered equivalent to the caller navigating to the sharing link the browser (accepting the sharing gesture),
+whereas redeemSharingLinkIfNecessary is intended for scenarios where the intention is simply to peek at the link's metadata.
 
 ## Response
 
@@ -89,6 +105,16 @@ Content-type: application/json
   }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-shared-root-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-shared-root-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Access the shared item directly
 
@@ -123,6 +149,16 @@ Content-Type: application/json
   "size": 109112
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Example (shared folder)
 
@@ -166,6 +202,16 @@ Content-Type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-expand-children-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-shared-driveitem-expand-children-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Error Responses
 
@@ -183,5 +229,13 @@ how errors are returned.
   "description": "Access the contents of a sharing link with the OneDrive API.",
   "keywords": "shares,shared,sharing,share link, sharing link, share id, share token",
   "section": "documentation",
-  "tocPath": "Sharing/Use a link"
+  "tocPath": "Sharing/Use a link",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/shares-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

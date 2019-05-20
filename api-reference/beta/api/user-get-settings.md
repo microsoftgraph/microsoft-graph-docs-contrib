@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Get settings
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the user and organization [settings](../resources/user-settings.md) object.
 To learn how to update the properties of the [settings](../resources/user-settings.md) object, see [update user settings](user-update-settings.md).

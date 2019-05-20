@@ -1,7 +1,7 @@
 ---
-title: "How to protect your company app data with Microsoft Intune"
-description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
-author: "tfitzmac"
+title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
+description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -20,11 +20,14 @@ The following Graph resources are available to manage app protection polices in 
 
 - [Android managed app protection](intune-mam-androidmanagedappprotection.md)
 - [Android managed app registration](intune-mam-androidmanagedappregistration.md)
+- [Android managed app safety net apps verification type](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Android managed app safety net device attestation type](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Android mobile app identifier](intune-mam-androidmobileappidentifier.md)
 - [App management level](intune-mam-appmanagementlevel.md)
 - [Application type](intune-wip-applicationtype.md)
 - [Default managed app protection](intune-mam-defaultmanagedappprotection.md)
 - [Intune branding profile](intune-wip-intunebrandingprofile.md)
+- [Intune branding profile assignment](intune-wip-intunebrandingprofileassignment.md)
 - [iOS managed app protection](intune-mam-iosmanagedappprotection.md)
 - [iOS managed app registration](intune-mam-iosmanagedappregistration.md)
 - [iOS mobile app identifier](intune-mam-iosmobileappidentifier.md)
@@ -58,6 +61,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection app locker file](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Windows information protection data recovery certificate](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Windows information protection desktop app](intune-mam-windowsinformationprotectiondesktopapp.md)
+- [Windows information protection device registration](intune-mam-windowsinformationprotectiondeviceregistration.md)
 - [Windows information protection enforcement level](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Windows information protection IP range collection](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Windows information protection network learning summary](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
@@ -66,3 +70,4 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection proxied domain collection](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Windows information protection resource collection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows information protection store app](intune-mam-windowsinformationprotectionstoreapp.md)
+- [Windows information protection wipe action](intune-mam-windowsinformationprotectionwipeaction.md)

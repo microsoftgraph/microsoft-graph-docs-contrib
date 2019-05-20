@@ -2,13 +2,13 @@
 title: "Mailbox usage reports"
 description: "You can get information about users with a mailbox and their level of activity which is primarily based on emails sent and received. You can also see how much storage each mailbox consumes and how many mailboxes are approaching storage quotas."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "pranoychaudhuri"
 ms.prod: "reports"
 ---
 
 # Mailbox usage reports
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can get information about users with a mailbox and their level of activity which is primarily based on emails sent and received. You can also see how much storage each mailbox consumes and how many mailboxes are approaching storage quotas.
 

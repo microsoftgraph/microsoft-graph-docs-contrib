@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Find SharePoint sites by keyword
 localization_priority: Normal
@@ -8,9 +8,9 @@ ms.prod: "sharepoint"
 ---
 # Search for sites
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Search across a SharePoint tenant for [sites][] that match provided keywords.
+Search across a SharePoint tenant for [sites][] that match keywords provided.
 
 [sites]: ../resources/site.md
 
@@ -61,11 +61,28 @@ Content-type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/search-sites-Cs-snippets.md)]
 
-<!-- {
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/search-sites-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+>**Note:** The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
+
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Search"
-} -->
+  "tocPath": "Sites/Search",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-search.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-search.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

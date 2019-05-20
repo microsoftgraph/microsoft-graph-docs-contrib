@@ -1,18 +1,19 @@
 ---
 title: "Create androidManagedAppRegistration"
 description: "Create a new androidManagedAppRegistration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # Create androidManagedAppRegistration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -56,11 +57,12 @@ The following table shows the properties that are required when you create the a
 |azureADDeviceId|String|The Azure Active Directory Device identifier of the host device. Value could be empty even when the host device is Azure Active Directory registered. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceModel|String|The device model for the current app registration  Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceManufacturer|String|The device manufacturer for the current app registration  Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md). Possible values are: `none`, `rootedDevice`.|
+|flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) collection|Zero or more reasons an app registration is flagged. E.g. app running on rooted device Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md). Possible values are: `none`, `rootedDevice`, `androidBootloaderUnlocked`, `androidFactoryRomModified`.|
 |userId|String|The user Id to who this app registration belongs. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|The app package Identifier Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |id|String|Key of the entity. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|Version of the entity. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|patchVersion|String|The patch version for the current android app registration|
 
 
 
@@ -68,12 +70,13 @@ The following table shows the properties that are required when you create the a
 If successful, this method returns a `201 Created` response code and a [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations
 Content-type: application/json
-Content-length: 837
+Content-length: 879
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -96,7 +99,8 @@ Content-length: 837
     "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
     "packageId": "Package Id value"
   },
-  "version": "Version value"
+  "version": "Version value",
+  "patchVersion": "Patch Version value"
 }
 ```
 
@@ -105,7 +109,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 945
+Content-Length: 987
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -130,10 +134,10 @@ Content-Length: 945
     "packageId": "Package Id value"
   },
   "id": "0e064997-4997-0e06-9749-060e9749060e",
-  "version": "Version value"
+  "version": "Version value",
+  "patchVersion": "Patch Version value"
 }
 ```
-
 
 
 

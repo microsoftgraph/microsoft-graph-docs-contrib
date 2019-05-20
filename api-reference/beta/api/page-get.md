@@ -8,9 +8,9 @@ ms.prod: "onenote"
 
 # Get page
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [page](../resources/page.md) object.
+Retrieve the properties and relationships of a [page](../resources/onenotepage.md) object.
 
 **Getting page information**
 
@@ -64,7 +64,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [page](../resources/page.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the [onenotePage](../resources/onenotepage.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
@@ -100,10 +100,13 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,7 +1,7 @@
 ---
-title: "How to protect your company app data with Microsoft Intune"
-description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
-author: "tfitzmac"
+title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
+description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -19,6 +19,7 @@ You can use Intune app protection policies to help protect your company’s data
 The following Graph resources are available to manage app protection polices in Intune:
 
 - [Android device owner enrollment profile](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Android enrollment company code](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android for Work app](intune-apps-androidforworkapp.md)
 - [Android for Work app configuration schema](intune-androidforwork-androidforworkappconfigurationschema.md)
 - [Android for Work app configuration schema item](intune-androidforwork-androidforworkappconfigurationschemaitem.md)
@@ -72,6 +73,10 @@ The following Graph resources are available to manage app protection polices in 
 - [macOS LOB child app](intune-apps-macoslobchildapp.md)
 - [macOS minimum operating system](intune-apps-macosminimumoperatingsystem.md)
 - [macOS office suite app](intune-apps-macosofficesuiteapp.md)
+- [macOS VPP app](intune-apps-macosvppapp.md)
+- [macOS VPP app assigned license](intune-apps-macosvppappassignedlicense.md)
+- [macOS VPP app assignment settings](intune-apps-macosvppappassignmentsettings.md)
+- [macOS VPP app revoke licenses action result](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [Managed android LOB app](intune-apps-managedandroidlobapp.md)
 - [Managed android store app](intune-apps-managedandroidstoreapp.md)
 - [Managed app](intune-apps-managedapp.md)
@@ -100,16 +105,28 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app content](intune-apps-mobileappcontent.md)
 - [Mobile app content file](intune-apps-mobileappcontentfile.md)
 - [Mobile app content file upload state](intune-apps-mobileappcontentfileuploadstate.md)
+- [Mobile app dependecy type](intune-apps-mobileappdependecytype.md)
+- [Mobile app dependency](intune-apps-mobileappdependency.md)
+- [Mobile app dependency type](intune-apps-mobileappdependencytype.md)
 - [Mobile app install status](intune-apps-mobileappinstallstatus.md)
 - [Mobile app install summary](intune-apps-mobileappinstallsummary.md)
 - [Mobile app provisioning config group assignment](intune-apps-mobileappprovisioningconfiggroupassignment.md)
 - [Mobile app publishing state](intune-apps-mobileapppublishingstate.md)
+- [Mobile app relationship](intune-apps-mobileapprelationship.md)
+- [Mobile app relationship state](intune-apps-mobileapprelationshipstate.md)
 - [Mobile contained app](intune-apps-mobilecontainedapp.md)
 - [Mobile LOB app](intune-apps-mobilelobapp.md)
+- [Office client checkin status](intune-cirrus-officeclientcheckinstatus.md)
+- [Office client configuration](intune-cirrus-officeclientconfiguration.md)
+- [Office client configuration assignment](intune-cirrus-officeclientconfigurationassignment.md)
+- [Office configuration](intune-cirrus-officeconfiguration.md)
+- [Office configuration assignment target](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Office configuration group assignment target](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Office product id](intune-apps-officeproductid.md)
 - [Office suite app](intune-apps-officesuiteapp.md)
 - [Office suite install progress display level](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Office update channel](intune-apps-officeupdatechannel.md)
+- [Office user checkin summary](intune-cirrus-officeusercheckinsummary.md)
 - [Resultant app state detail](intune-apps-resultantappstatedetail.md)
 - [Symantec code signing certificate](intune-apps-symanteccodesigningcertificate.md)
 - [User app install status](intune-apps-userappinstallstatus.md)
@@ -117,17 +134,24 @@ The following Graph resources are available to manage app protection polices in 
 - [VPP licensing type](intune-apps-vpplicensingtype.md)
 - [Web app](intune-apps-webapp.md)
 - [Win32 LOB app](intune-apps-win32lobapp.md)
+- [Win32 LOB app assignment settings](intune-apps-win32lobappassignmentsettings.md)
 - [Win32 LOB app detection](intune-apps-win32lobappdetection.md)
 - [Win32 LOB app detection operator](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB app file system detection](intune-apps-win32lobappfilesystemdetection.md)
 - [Win32 LOB app file system detection type](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Win32 LOB app file system requirement](intune-apps-win32lobappfilesystemrequirement.md)
 - [Win32 LOB app install experience](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB app msi information](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB app msi package type](intune-apps-win32lobappmsipackagetype.md)
+- [Win32 LOB app notification](intune-apps-win32lobappnotification.md)
 - [Win32 LOB app power shell script detection](intune-apps-win32lobapppowershellscriptdetection.md)
+- [Win32 LOB app power shell script detection type](intune-apps-win32lobapppowershellscriptdetectiontype.md)
+- [Win32 LOB app power shell script requirement](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Win32 LOB app product code detection](intune-apps-win32lobappproductcodedetection.md)
 - [Win32 LOB app registry detection](intune-apps-win32lobappregistrydetection.md)
 - [Win32 LOB app registry detection type](intune-apps-win32lobappregistrydetectiontype.md)
+- [Win32 LOB app registry requirement](intune-apps-win32lobappregistryrequirement.md)
+- [Win32 LOB app requirement](intune-apps-win32lobapprequirement.md)
 - [Win32 LOB app return code](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB app return code type](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
@@ -136,6 +160,8 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows device type](intune-apps-windowsdevicetype.md)
 - [Windows minimum operating system](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows mobile MSI](intune-apps-windowsmobilemsi.md)
+- [Windows office client configuration](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Windows office client security configuration](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Windows package information](intune-apps-windowspackageinformation.md)
 - [Windows Phone 8.1 AppX](intune-apps-windowsphone81appx.md)
 - [Windows Phone 8.1 AppX bundle](intune-apps-windowsphone81appxbundle.md)

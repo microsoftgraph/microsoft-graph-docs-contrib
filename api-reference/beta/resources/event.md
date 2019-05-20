@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # event resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An event in a [user](user.md) calendar, or the default calendar of an Office 365 [group](group.md).
 
@@ -30,13 +30,14 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+   "keyProperty": "id",
   "optionalProperties": [
     "attachments",
     "calendar",
     "extensions",
     "instances",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -51,7 +52,7 @@ Here is a JSON representation of the resource
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "iud": "string",
+  "uid": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -77,13 +78,13 @@ Here is a JSON representation of the resource
   "subject": "string",
   "type": "String",
   "webLink": "string",
-  
+
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -98,7 +99,7 @@ Here is a JSON representation of the resource
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|The date and time that the event ends.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
-|id|String| Read-only.|
+|id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|
@@ -177,10 +178,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

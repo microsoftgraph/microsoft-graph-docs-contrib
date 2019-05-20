@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # directoryObject: delta
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get newly created, updated, or deleted directory objects of the following types: [user](../resources/user.md), [group](../resources/group.md) and [organizational contact](../resources/orgcontact.md), in a single delta query. See [Track changes](/graph/delta-query-overview) for details.
 
@@ -145,8 +145,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -155,8 +154,7 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
+      "displayName": "testgp"
     },
     {
       "@odata.type": "#microsoft.graph.orgContact",
@@ -167,15 +165,22 @@ Content-type: application/json
       "country": "string",
       "department": "string",
       "displayName": "string",
-      "givenName": "string",
-      "id": "string (identifier)",
-      "jobTitle": "string",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "givenName": "string",      
+      "jobTitle": "string"
+    }
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Request 2
 
@@ -224,11 +229,20 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.orgContact",
       "id": "8f301319-4b4e-493f-8067-bce1dec76e7a",
       "businessPhones": "12345"
-    },
-    <...response trimmed for brevity...>
+    }
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/directoryObject_delta-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/directoryObject_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Request 3
 
@@ -275,8 +289,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -285,23 +298,41 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "displayName": "testgp"
+    }
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/directoryobject_delta-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/directoryobject_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for users](/graph/delta-query-users).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryobject-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/directoryobject-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryobject-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/directoryobject-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/directoryobject-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

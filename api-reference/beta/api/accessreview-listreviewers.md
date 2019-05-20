@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # List accessReview reviewers
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the reviewers of an [accessReview](../resources/accessreview.md) object.
 ## Permissions
@@ -16,9 +16,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  The signed in user must also be in a directory role which permits them to read an access review. |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | AccessReview.Read.All  |
+
+
+ The signed in user must also be in a directory role that permits them to read an access review.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +47,7 @@ If successful, this method returns a `200, OK` response code and an array of [us
   "name": "get_accessReview_reviewers"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/accessReviews('2b83cc42-09db-46f6-8c6e-16fec466a82d')/reviewers
+GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec466a82d/reviewers
 ```
 
 ##### Response
@@ -60,13 +63,24 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "value":[
-    {
-       "id":"006111db-0810-4494-a6df-904d368bd81b"
-    }
+    "value":
+    [
+        {
+            "id":"006111db-0810-4494-a6df-904d368bd81b"
+        }
     ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_accessReview_reviewers-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_accessReview_reviewers-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## See also
 
@@ -77,10 +91,16 @@ Content-type: application/json
 |[Remove accessReview reviewer](accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview reviewers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listreviewers.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/accessreview-listreviewers.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

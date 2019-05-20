@@ -1,18 +1,19 @@
 ---
 title: "Get depIOSEnrollmentProfile"
 description: "Read properties and relationships of the depIOSEnrollmentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # Get depIOSEnrollmentProfile
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Read properties and relationships of the [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,7 +33,8 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosE
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -46,6 +48,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -57,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1471
+Content-Length: 1955
 
 {
   "value": {
@@ -68,6 +71,7 @@ Content-Length: 1471
     "requiresUserAuthentication": true,
     "configurationEndpointUrl": "https://example.com/configurationEndpointUrl/",
     "enableAuthenticationViaCompanyPortal": true,
+    "requireCompanyPortalOnSetupAssistantEnrolledDevices": true,
     "isDefault": true,
     "supervisedModeEnabled": true,
     "supportDepartment": "Support Department value",
@@ -84,6 +88,9 @@ Content-Length: 1471
     "zoomDisabled": true,
     "siriDisabled": true,
     "diagnosticsDisabled": true,
+    "displayToneSetupDisabled": true,
+    "privacyPaneDisabled": true,
+    "deviceNameTemplate": "Device Name Template value",
     "iTunesPairingMode": "allow",
     "managementCertificates": [
       {
@@ -97,11 +104,17 @@ Content-Length: 1471
     "sharedIPadMaximumUserCount": 10,
     "enableSharedIPad": true,
     "companyPortalVppTokenId": "Company Portal Vpp Token Id value",
-    "enableSingleAppEnrollmentMode": true
+    "enableSingleAppEnrollmentMode": true,
+    "homeButtonScreenDisabled": true,
+    "iMessageAndFaceTimeScreenDisabled": true,
+    "onBoardingScreenDisabled": true,
+    "screenTimeScreenDisabled": true,
+    "simSetupScreenDisabled": true,
+    "softwareUpdateScreenDisabled": true,
+    "watchMigrationScreenDisabled": true
   }
 }
 ```
-
 
 
 

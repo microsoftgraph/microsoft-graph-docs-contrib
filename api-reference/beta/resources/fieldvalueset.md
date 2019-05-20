@@ -1,13 +1,13 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
 ---
 # FieldValueSet resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the column values in a [listItem](listitem.md) resource.
 
@@ -46,10 +46,13 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 You may request up to 12 lookup fields in a single query, plus any number of regular fields.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/FieldValueSet"
-} -->
+  "tocPath": "Resources/FieldValueSet",
+  "suppressions": []
+}
+-->

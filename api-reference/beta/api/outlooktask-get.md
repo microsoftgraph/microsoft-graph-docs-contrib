@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Get outlookTask
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of an Outlook task in the user's mailbox.
 
@@ -18,11 +18,11 @@ By default, this operation (and the POST, PATCH, and [complete](../api/outlookta
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.Read    |
-|Delegated (personal Microsoft account) | Tasks.Read    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:------------------------------------|
+| Delegated (work or school account)     | Tasks.Read                          |
+| Delegated (personal Microsoft account) | Tasks.Read                          |
+| Application                            | Not supported.                      |
 
 ## HTTP request
 
@@ -39,10 +39,10 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
+| Name                     | Description                                       |
+|:-------------------------|:--------------------------------------------------|
+| Authorization            | Bearer {token}. Required.                         |
+| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional. |
 
 ## Request body
 
@@ -52,9 +52,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
 
-## Example 1
+## Examples
 
-### Request
+### Example 1: Get an Outlook task
+
+#### Request
 
 Here is an example of the request.
 <!-- {
@@ -63,14 +65,17 @@ Here is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
+GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 ```
 
-### Response
+<!-- markdownlint-disable MD024 -->
+
+#### Response
 
 Here is an example of the response. By default, the date-time properties in the response are in UTC.
 
 > **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,14 +85,13 @@ Here is an example of the response. By default, the date-time properties in the 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 376
 
 {
   "id": "AAMkADA1MTrgAAA=",
   "createdDateTime": "2016-04-22T06:03:35.9279794Z",
   "lastModifiedDateTime": "2016-04-22T06:03:35.9436052Z",
   "changeKey": "1/KC9Vmu40G3DwB6Lgs7MAAAIOJMyQ==",
-  "categories": [ ],
+  "categories": [],
   "assignedTo": null,
   "body": {
     "contentType": "text",
@@ -98,7 +102,7 @@ Content-length: 376
     "dateTime": "2016-04-27T04:00:00.0000000",
     "timeZone": "UTC"
   },
-  "hasAttachments":false,
+  "hasAttachments": false,
   "importance": "normal",
   "isReminderOn": false,
   "owner": "Administrator",
@@ -114,27 +118,39 @@ Content-length: 376
   "subject": "Shop for dinner"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_outlooktask-Cs-snippets.md)]
 
-## Example 2
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_outlooktask-Javascript-snippets.md)]
 
-### Request
+---
 
-This example uses the `Prefer: outlook.timezone` header to specify displaying date-time properties in the response in Pacific Standard Time.
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### Example 2: Get Outlook task with date-time properties in Pacific Standard Time
+
+#### Request
+
+This example uses the `Prefer: outlook.timezone` header to specify that the API should return date-time properties in the response in Pacific Standard Time.
+
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
+GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
 ### Response
 
-Here is an example of the response. The date-time properties in the response are displayed in the specified Pacific Standard Time.
+Here is an example of the response. The date-time properties in the response are returned in the specified Pacific Standard Time.
 
 > **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,14 +160,13 @@ Here is an example of the response. The date-time properties in the response are
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 576
 
 {
   "id": "AAMkADA1MHgwAAA=",
   "createdDateTime": "2016-04-22T15:19:18.9526004-07:00",
   "lastModifiedDateTime": "2016-04-22T15:19:19.015101-07:00",
   "changeKey": "1/KC9Vmu40G3DwB6Lgs7MAAAIW9XXA==",
-  "categories": [ ],
+  "categories": [],
   "assignedTo": "Dana Swope",
   "body": {
     "contentType": "text",
@@ -162,7 +177,7 @@ Content-length: 576
     "dateTime": "2016-05-04T021:00:00.0000000",
     "timeZone": "Pacific Standard Time"
   },
-  "hasAttachments":false,
+  "hasAttachments": false,
   "importance": "normal",
   "isReminderOn": false,
   "owner": "Administrator",
@@ -178,13 +193,31 @@ Content-length: 576
   "subject": "Shop for children's weekend"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_outlooktask-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_outlooktask-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get outlookTask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlooktask-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/outlooktask-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/outlooktask-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/outlooktask-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

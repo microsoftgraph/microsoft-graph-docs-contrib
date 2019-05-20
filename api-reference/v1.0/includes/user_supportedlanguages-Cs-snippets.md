@@ -1,0 +1,10 @@
+
+```Cs
+
+GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+var supportedLanguages = await graphClient.Me.Outlook.SupportedLanguages()
+	.Request()
+	.GetAsync();
+
+```

@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # ColumnLink resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A **columnLink** on a [contentType][] attaches a site **columnDefinition** to that content type.
 
@@ -32,10 +32,13 @@ Here is a JSON representation of a **columnLink** resource.
 | **id**        | string | The unique identifier for the column.
 | **name**      | string | The name of the column  in this content type.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnLink"
-} -->
+  "tocPath": "Resources/ColumnLink",
+  "suppressions": []
+}
+-->

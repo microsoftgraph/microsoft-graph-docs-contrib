@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # List businessFlowTemplates
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [businessFlowTemplate](../resources/businessflowtemplate.md) objects.
 ## Permissions
@@ -14,9 +14,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  The signed in user must also be in a directory role which permits them to read an access review. |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | AccessReview.Read.All |
+
+The signed in user must also be in a directory role that permits them to read an access review.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -89,10 +91,13 @@ Content-type: application/json
 
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List business flow template",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

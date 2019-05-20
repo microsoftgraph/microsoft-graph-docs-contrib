@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: List
 localization_priority: Normal
@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # List resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **list** resource represents a list in a [site][].
 This resource contains the top level properties of the list, including template and field definitions.
@@ -121,7 +121,8 @@ The **list** resource has the following relationships to other resources.
 [site]: site.md
 [systemFacet]: systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -129,5 +130,7 @@ The **list** resource has the following relationships to other resources.
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
     "Lists": "#"
-  }
-} -->
+  },
+  "suppressions": []
+}
+-->

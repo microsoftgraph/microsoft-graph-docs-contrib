@@ -8,7 +8,7 @@ ms.prod: "education"
 
 # educationPowerSchoolDataProvider resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Used to set up the school data synchronization profile when [PowerSchool](https://www.powerschool.com/solutions/student-information-system-sis/) is used as the input source.
 
@@ -32,18 +32,18 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider"
+  "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider",
-    "connectionUrl": "String",
-    "clientId": "String",
-    "clientSecret": "String",
-    "schoolsids": ["String"],
-    "schoolYear": "String",
-    "allowTeachersInMultipleSchools": "Boolean",
-    "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
+  "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
+  "connectionUrl": "String",
+  "clientId": "String",
+  "clientSecret": "String",
+  "schoolsIds": ["String"],
+  "schoolYear": "String",
+  "allowTeachersInMultipleSchools": "Boolean",
+  "customizations": {"@odata.type": "microsoft.graph.educationSynchronizationCustomizations"}
 }
 ```

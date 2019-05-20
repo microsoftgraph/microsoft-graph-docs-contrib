@@ -1,13 +1,13 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CurrencyColumn
 localization_priority: Normal
 ---
 # CurrencyColumn resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **currencyColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent currency.
 
@@ -28,10 +28,13 @@ Here is a JSON representation of a **currencyColumn** resource.
 |:--------------|:-------|:----------------------------------------------------
 | **locale**    | string | Specifies the locale from which to infer the currency symbol.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/CurrencyColumn"
-} -->
+  "tocPath": "Resources/CurrencyColumn",
+  "suppressions": []
+}
+-->

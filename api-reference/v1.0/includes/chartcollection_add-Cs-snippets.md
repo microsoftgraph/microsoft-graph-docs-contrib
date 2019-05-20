@@ -1,0 +1,17 @@
+
+```Cs
+
+GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+
+var type = "ColumnStacked";
+
+var sourceData = "A1:B1";
+
+var seriesBy = "Auto";
+
+await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts
+	.Add(type,sourceData,seriesBy)
+	.Request()
+	.PostAsync()
+
+```

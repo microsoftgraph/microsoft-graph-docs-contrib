@@ -1,18 +1,19 @@
 ---
 title: "Update androidEnterpriseWiFiConfiguration"
 description: "Update the properties of a androidEnterpriseWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # Update androidEnterpriseWiFiConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -60,10 +61,13 @@ The following table shows the properties that are required when you create the [
 |connectWhenNetworkNameIsHidden|Boolean|When set to true, this profile forces the device to connect to a network that doesn't broadcast its SSID to all devices. Inherited from [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md)|
 |wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Inherited from [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md). Possible values are: `open`, `wpaEnterprise`.|
 |eapType|[androidEapType](../resources/intune-deviceconfig-androideaptype.md)|Indicates the type of EAP protocol set on the the Wi-Fi endpoint (router). Possible values are: `eapTls`, `eapTtls`, `peap`.|
-|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Indicates the Authentication Method the client (device) needs to use when the EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`.|
+|authenticationMethod|[wiFiAuthenticationMethod](../resources/intune-deviceconfig-wifiauthenticationmethod.md)|Indicates the Authentication Method the client (device) needs to use when the EAP Type is configured to PEAP or EAP-TTLS. Possible values are: `certificate`, `usernameAndPassword`, `derivedCredential`.|
 |innerAuthenticationProtocolForEapTtls|[nonEapAuthenticationMethodForEapTtlsType](../resources/intune-deviceconfig-noneapauthenticationmethodforeapttlstype.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is EAP-TTLS and Authenticationmethod is Username and Password. Possible values are: `unencryptedPassword`, `challengeHandshakeAuthenticationProtocol`, `microsoftChap`, `microsoftChapVersionTwo`.|
 |innerAuthenticationProtocolForPeap|[nonEapAuthenticationMethodForPeap](../resources/intune-deviceconfig-noneapauthenticationmethodforpeap.md)|Non-EAP Method for Authentication (Inner Identity) when EAP Type is PEAP and Authenticationmethod is Username and Password. Possible values are: `none`, `microsoftChapVersionTwo`.|
 |outerIdentityPrivacyTemporaryValue|String|Enable identity privacy (Outer Identity) when EAP Type is configured to EAP-TTLS or PEAP. The String provided here is used to mask the username of individual users when they attempt to connect to Wi-Fi network.|
+|usernameFormatString|String|Username format string used to build the username to connect to wifi|
+|passwordFormatString|String|Password format string used to build the password to connect to wifi|
+|preSharedKey|String|PreSharedKey used to build the password to connect to wifi|
 
 
 
@@ -71,15 +75,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 756
+Content-length: 926
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.androidEnterpriseWiFiConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -96,7 +101,10 @@ Content-length: 756
   "authenticationMethod": "usernameAndPassword",
   "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
   "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+  "usernameFormatString": "Username Format String value",
+  "passwordFormatString": "Password Format String value",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
 
@@ -105,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 937
+Content-Length: 1098
 
 {
   "@odata.type": "#microsoft.graph.androidEnterpriseWiFiConfiguration",
@@ -128,10 +136,12 @@ Content-Length: 937
   "authenticationMethod": "usernameAndPassword",
   "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
   "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+  "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+  "usernameFormatString": "Username Format String value",
+  "passwordFormatString": "Password Format String value",
+  "preSharedKey": "Pre Shared Key value"
 }
 ```
-
 
 
 

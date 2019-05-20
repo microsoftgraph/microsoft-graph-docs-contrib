@@ -6,7 +6,7 @@ ms.prod: "project-rome"
 ---
 
 # notification resource type
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a notification that is published by an app server that targets a specified user. The notification is stored in Microsoft Graph and is distributed to different device endpoints owned by the user. 
 
@@ -17,7 +17,7 @@ When a user acts on a visual notification, the app client can then use client-si
 ## Methods
 |Method | Return Type | Description|
 |:------|:------------|:-----------|
-|[Create notification](../api/projectrome-notification-post.md) | [notification](projectrome-notification.md) |Create and send a notification. |
+|[Create notification](../api/notifications-post.md) | [notification](projectrome-notification.md) |Create and send a notification. |
 
 ## Properties
 |Name | Type | Description|

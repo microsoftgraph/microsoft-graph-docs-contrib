@@ -1,18 +1,19 @@
 ---
 title: "deviceEnrollmentConfiguration resource type"
-description: "Not yet documented"
-author: "tfitzmac"
+description: "The Base Class of Device Enrollment Configuration"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # deviceEnrollmentConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+The Base Class of Device Enrollment Configuration
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -24,18 +25,18 @@ Not yet documented
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
-|displayName|String|Not yet documented|
-|description|String|Not yet documented|
-|priority|Int32|Not yet documented|
-|createdDateTime|DateTimeOffset|Not yet documented|
-|lastModifiedDateTime|DateTimeOffset|Not yet documented|
-|version|Int32|Not yet documented|
+|id|String|Unique Identifier for the account|
+|displayName|String|The display name of the device enrollment configuration|
+|description|String|The description of the device enrollment configuration|
+|priority|Int32|Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value.|
+|createdDateTime|DateTimeOffset|Created date time in UTC of the device enrollment configuration|
+|lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration|
+|version|Int32|The version of the device enrollment configuration|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) collection|The list of group assignments for the device configuration profile.|
+|assignments|[enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md) collection|The list of group assignments for the device configuration profile|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -57,7 +58,6 @@ Here is a JSON representation of the resource.
   "version": 1024
 }
 ```
-
 
 
 

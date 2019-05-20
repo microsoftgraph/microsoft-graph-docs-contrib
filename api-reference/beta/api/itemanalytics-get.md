@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # Get analytics
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get [itemAnalytics][] about the views that took place under this resource.
 The **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.
@@ -71,11 +71,27 @@ Content-type: application/json
     }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-analytics-Cs-snippets.md)]
 
-<!-- {
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-analytics-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "BaseItem/Get analytics"
-} -->
+  "tocPath": "BaseItem/Get analytics",
+  "suppressions": [
+    "Error: /api-reference/beta/api/itemanalytics-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/itemanalytics-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

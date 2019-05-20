@@ -8,9 +8,9 @@ ms.prod: "microsoft-identity-platform"
 
 # userIdentity type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a reviewer of an access review.  
+For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a creator or reviewer of an access review.  
 In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
 
 This type inherits from [identity](identity.md) and has one additional property, the user principal name of the user.
@@ -60,15 +60,19 @@ Here is a JSON representation of the type.
 {
   "displayName": "string",
   "id": "string",
- "userPrincipalName": "String"
+  "userPrincipalName": "String",
+  "ipAddress": "string"
 }
 
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "userIdentity type",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

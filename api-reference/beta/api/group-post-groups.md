@@ -1,6 +1,6 @@
 ---
 title: "Create group"
-description: "Use this API to create a new group as specified in the request body. You can create one of three types of groups:"
+description: "Create a new Office 365 group or security group."
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
@@ -8,12 +8,11 @@ ms.prod: "groups"
 
 # Create group
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [group](../resources/group.md) as specified in the request body. You can create one of three types of groups:
+Ceate a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
 * Office 365 Group (unified group)
-* Dynamic group
 * Security group
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section.
@@ -32,35 +31,32 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Group.ReadWrite.All |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups
 ```
 
 ## Request headers
+
 | Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
+
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group. 
 
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 Group. Set this to **false** if creating dynamic or security group. Required. |
+| mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups. Set this to **true** if creating a dynamic or security group. Set this to **false** if creating an Office 365 Group. Required. |
-| owners | string collection | This property represents the owners for the group at creation time. Optional. |
-| members | string collection | This property represents the members for the group at creation time. Optional. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
+| owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
+| members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 
-Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.
-
-| Type of group | **groupTypes** property |
-|:--------------|:------------------------|
-| Office 365 (aka unified group)| "Unified" |
-| Dynamic | "DynamicMembership" |
-| Security | Do not set. |
+> Note: Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
 Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
 
@@ -68,17 +64,32 @@ Since the **group** resource supports [extensions](/graph/extensibility-overview
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
+### groupTypes options
+
+Use the **groupTypes** property to control the type of group and its membership, as shown below:
+
+| Type of group | Assigned membership | Dynamic membership |
+|:--------------|:------------------------|:---------------|
+| Office 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
+
 ## Response
+
 If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
-## Example
-#### Request 1
-The first example request creates an Office 365 Group.
+## Examples
+
+### Example 1: Create an Office 365 group
+
+The following example creates an Office 365 Group.
+
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/beta/groups
 Content-type: application/json
 Content-length: 244
@@ -96,15 +107,18 @@ Content-length: 244
 ```
 
 #### Response
+
 The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -141,19 +155,33 @@ Content-type: application/json
 	 "onPremisesProvisioningErrors": []
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_group-Cs-snippets.md)]
 
-#### Request 2
-The second example request creates an Office 365 group with an owner specified.
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+### Example 2: Create an Office 365 group with an owner and members
+
+The following example creates an Office 365 group with an owner and members specified.
+
+#### Request
+
 <!-- {
   "blockType": "request",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
 
 {
-  "description": "Group with designated owner",
+  "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
     "Unified"
@@ -163,57 +191,70 @@ Content-Type: application/json
   "securityEnabled": false,
   "owners@odata.bind": [
     "https://graph.microsoft.com/beta/users/26be1845-4119-4801-a799-aea79d09f1a2"
+  ],
+  "members@odata.bind": [
+    "https://graph.microsoft.com/beta/users/ff7cb387-6688-423c-8188-3da9532a73cc",
+    "https://graph.microsoft.com/beta/users/69456242-0067-49d3-ba96-9de6f2728e14"
   ]
 }
 ```
 
- #### Response 2
-The following is an example of a successful response. It includes only default properties. You can subsequenty get the **owners** navigation property of the group to verify the details of the owner. 
->**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+#### Response 
+
+The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
+
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "name": "create_group_with_owner"
+  "name": "create_prepopulated_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-	 "id": "502df398-d59c-469d-944f-34a50e60db3f",
-	 "deletedDateTime": null,
-	 "classification": null,
-	 "createdDateTime": "2018-12-27T22:17:07Z",
-	 "description": "Group with designated owner",
-	 "displayName": "Operations group",
-	 "expirationDateTime": null,
-	 "groupTypes": [
-	     "Unified"
-	 ],
-	 "mail": "operations2019@contoso.com",
-	 "mailEnabled": true,
-	 "mailNickname": "operations2019",
-	 "membershipRule": null,
-	 "membershipRuleProcessingState": null,
-	 "onPremisesLastSyncDateTime": null,
-	 "onPremisesSecurityIdentifier": null,
-	 "onPremisesSyncEnabled": null,
-	 "preferredDataLocation": "CAN",
-	 "preferredLanguage": null,
-	 "proxyAddresses": [
-	     "SMTP:operations2019@contoso.com"
-	 ],
-	 "renewedDateTime": "2018-12-27T22:17:07Z",
-	 "resourceBehaviorOptions": [],
-	 "resourceProvisioningOptions": [],
-	 "securityEnabled": false,
-	 "theme": null,
-	 "visibility": "Public",
-	 "onPremisesProvisioningErrors": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "id": "502df398-d59c-469d-944f-34a50e60db3f",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-27T22:17:07Z",
+    "creationOptions": [],
+    "description": "Group with designated owner and members",
+    "displayName": "Operations group",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "operations2019@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "operations2019",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "SMTP:operations2019@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-27T22:17:07Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_prepopulated_group-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_prepopulated_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## See also
 
@@ -224,10 +265,18 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create group",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

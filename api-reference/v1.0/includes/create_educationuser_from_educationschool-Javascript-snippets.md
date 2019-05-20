@@ -1,0 +1,17 @@
+
+```Javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const educationUser = {
+  @odata.id:"https://graph.microsoft.com/v1.0/education/users/14008"
+};
+
+let res = await client.api('/education/schools/{id}/users/$ref')
+	.post({educationUser : educationUser});
+
+```

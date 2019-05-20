@@ -8,7 +8,7 @@ ms.prod: "planner"
 
 # Update plannerUser
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [plannerUser](../resources/planneruser.md) object. You can use this operation to add or remove plans from a user's favorite plans list, and to indicate which plans the user has recently viewed.
 
@@ -122,10 +122,13 @@ Content-length: 979
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update planneruser",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -8,7 +8,7 @@ ms.prod: "education"
 
 # educationClass resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  
 
@@ -28,6 +28,8 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |[Create educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
 |[List assignments](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md) collection| Get an **educationAssignment** object collection.|
 |[Get group](../api/educationclass-get-group.md) |[group](group.md)| Get the Office 365 **group** that corresponds to this **educationClass**.|
+|[Create educationCategory](../api/educationclass-post-category.md) | [educationCategory](educationCategory.md) | Create a new **educationCategory** for this class.|
+|[List categories](../api/educationclass-list-categories.md) | [educationCategory](educationCategory.md) collection | Get a list of **educationCategory** objects belonging to this class.|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
 |[Delete](../api/educationclass-delete.md) | None |Delete **educationClass** object. |
 
@@ -53,6 +55,7 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |schools|[educationSchool](../resources/educationschool.md) collection| All schools that this class is associated with. Nullable.|
 |teachers|[educationUser](../resources/educationuser.md) collection|  All teachers in the class. Nullable.|
 |assignments|[educationAssignment](../resources/educationassignment.md) collection| All assignments associated with this class. Nullable.|
+|categories|[educationCategory](../resources/educationassignment.md) collection| All categories associated with this class. Nullable.|
 
 ## JSON representation
 
@@ -60,6 +63,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -77,17 +81,20 @@ The following is a JSON representation of the resource.
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationClass resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

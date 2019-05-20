@@ -1,18 +1,19 @@
 ---
 title: "windowsKioskConfiguration resource type"
 description: "This entity provides descriptions of the declared methods, properties and relationships exposed by the kiosk resource."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # windowsKioskConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 This entity provides descriptions of the declared methods, properties and relationships exposed by the kiosk resource.
+
 
 Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -36,7 +37,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) collection|This policy setting allows to define a list of Kiosk profiles for a Kiosk configuration. This collection can contain a maximum of 500 elements.|
+|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) collection|This policy setting allows to define a list of Kiosk profiles for a Kiosk configuration. This collection can contain a maximum of 3 elements.|
 |kioskBrowserDefaultUrl|String|Specify the default URL the browser should navigate to on launch.|
 |kioskBrowserEnableHomeButton|Boolean|Enable the kiosk browser's home button. By default, the home button is disabled.|
 |kioskBrowserEnableNavigationButtons|Boolean|Enable the kiosk browser's navigation buttons(forward/back). By default, the navigation buttons are disabled.|
@@ -44,6 +45,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Specify the number of minutes the session is idle until the kiosk browser restarts in a fresh state.  Valid values are 1-1440. Valid values 1 to 1440|
 |kioskBrowserBlockedURLs|String collection|Specify URLs that the kiosk browsers should not navigate to|
 |kioskBrowserBlockedUrlExceptions|String collection|Specify URLs that the kiosk browser is allowed to navigate to|
+|edgeKioskEnablePublicBrowsing|Boolean|Enable public browsing kiosk mode for the Microsoft Edge browser. The Default is false.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -89,12 +91,15 @@ Here is a JSON representation of the resource.
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
             "startLayoutTileSize": "String",
             "name": "String",
+            "appType": "String",
+            "autoLaunch": true,
             "appUserModelId": "String",
             "appId": "String",
             "containedAppId": "String"
           }
         ],
         "showTaskBar": true,
+        "allowAccessToDownloadsFolder": true,
         "disallowDesktopApps": true,
         "startMenuLayoutXml": "binary"
       },
@@ -115,10 +120,10 @@ Here is a JSON representation of the resource.
   ],
   "kioskBrowserBlockedUrlExceptions": [
     "String"
-  ]
+  ],
+  "edgeKioskEnablePublicBrowsing": true
 }
 ```
-
 
 
 

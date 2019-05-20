@@ -1,18 +1,19 @@
 ---
 title: "Update win32LobApp"
 description: "Update the properties of a win32LobApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # Update win32LobApp
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [win32LobApp](../resources/intune-apps-win32lobapp.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -61,18 +62,22 @@ The following table shows the properties that are required when you create the [
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|The upload state. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
+|dependentAppCount|Int32|The total number of dependencies the child app has. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |installCommandLine|String|The command line to install this app|
 |uninstallCommandLine|String|The command line to uninstall this app|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |minimumFreeDiskSpaceInMB|Int32|The value for the minimum free disk space which is required to install this app.|
 |minimumMemoryInMB|Int32|The value for the minimum physical memory which is required to install this app.|
 |minimumNumberOfProcessors|Int32|The value for the minimum number of processors which is required to install this app.|
 |minimumCpuSpeedInMHz|Int32|The value for the minimum CPU speed which is required to install this app.|
 |detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) collection|The detection rules to detect Win32 Line of Business (LoB) app.|
+|requirementRules|[win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md) collection|The requirement rules to detect Win32 Line of Business (LoB) app.|
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|The install experience for this app.|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) collection|The return codes for post installation behavior.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|The MSI details if this Win32 app is an MSI app.|
@@ -84,14 +89,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [win32LobApp](../resources/intune-apps-win32lobapp.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 2214
+Content-length: 2732
 
 {
+  "@odata.type": "#microsoft.graph.win32LobApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -100,7 +107,6 @@ Content-length: 2214
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -109,6 +115,11 @@ Content-length: 2214
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -140,6 +151,17 @@ Content-length: 2214
       "detectionValue": "Detection Value value"
     }
   ],
+  "requirementRules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRequirement",
+      "operator": "equal",
+      "detectionValue": "Detection Value value",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "detectionType": "exists"
+    }
+  ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user"
@@ -157,7 +179,9 @@ Content-length: 2214
     "productVersion": "Product Version value",
     "upgradeCode": "Upgrade Code value",
     "requiresReboot": true,
-    "packageType": "perUser"
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value"
 }
@@ -168,7 +192,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2372
+Content-Length: 2904
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -191,6 +215,11 @@ Content-Length: 2372
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -222,6 +251,17 @@ Content-Length: 2372
       "detectionValue": "Detection Value value"
     }
   ],
+  "requirementRules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRequirement",
+      "operator": "equal",
+      "detectionValue": "Detection Value value",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "detectionType": "exists"
+    }
+  ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user"
@@ -239,12 +279,13 @@ Content-Length: 2372
     "productVersion": "Product Version value",
     "upgradeCode": "Upgrade Code value",
     "requiresReboot": true,
-    "packageType": "perUser"
+    "packageType": "perUser",
+    "productName": "Product Name value",
+    "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value"
 }
 ```
-
 
 
 

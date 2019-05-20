@@ -1,18 +1,19 @@
 ---
 title: "excludedApps resource type"
 description: "Contains properties for Excluded Office365 Apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # excludedApps resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties for Excluded Office365 Apps.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -27,11 +28,13 @@ Contains properties for Excluded Office365 Apps.
 |powerPoint|Boolean|The value for if MS Office PowerPoint should be excluded or not.|
 |publisher|Boolean|The value for if MS Office Publisher should be excluded or not.|
 |sharePointDesigner|Boolean|The value for if MS Office SharePointDesigner should be excluded or not.|
+|teams|Boolean|The value for if MS Office Teams should be excluded or not.|
 |visio|Boolean|The value for if MS Office Visio should be excluded or not.|
 |word|Boolean|The value for if MS Office Word should be excluded or not.|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -53,11 +56,11 @@ Here is a JSON representation of the resource.
   "powerPoint": true,
   "publisher": true,
   "sharePointDesigner": true,
+  "teams": true,
   "visio": true,
   "word": true
 }
 ```
-
 
 
 

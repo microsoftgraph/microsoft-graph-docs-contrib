@@ -1,18 +1,19 @@
 ---
 title: "List windowsIdentityProtectionConfigurations"
 description: "List properties and relationships of the windowsIdentityProtectionConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # List windowsIdentityProtectionConfigurations
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) objects.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,6 +46,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) objects in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -56,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1075
+Content-Length: 1115
 
 {
   "value": [
@@ -72,6 +74,7 @@ Content-Length: 1075
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
+      "useSecurityKeyForSignin": true,
       "enhancedAntiSpoofingForFacialFeaturesEnabled": true,
       "pinMinimumLength": 0,
       "pinMaximumLength": 0,
@@ -89,7 +92,6 @@ Content-Length: 1075
   ]
 }
 ```
-
 
 
 

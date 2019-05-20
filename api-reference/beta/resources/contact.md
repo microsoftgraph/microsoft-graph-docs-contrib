@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # contact resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A contact is an item in Outlook where you can organize and save information about the people and organizations you communicate with. Contacts are contained in contact folders.
 
@@ -16,7 +16,7 @@ This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Subscribing to [change notifications](/graph/webhooks).
-- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, 
+- Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/contact-delta.md) function.
 
 ## JSON representation
@@ -31,6 +31,7 @@ Here is a JSON representation of the resource
     "photo",
     "singleValueExtendedProperties"
   ],
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.contact"
 }-->
 
@@ -94,7 +95,7 @@ Here is a JSON representation of the resource
 |gender |String |The contact's gender. |
 |generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
-|id|String|The contact's unique identifier. Read-only.|
+|id|String| Unique identifier for the contact. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
 |jobTitle|String|The contact’s job title.|
@@ -155,10 +156,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "contact resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

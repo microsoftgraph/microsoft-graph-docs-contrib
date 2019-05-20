@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # licenseAssignmentState resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **licenseAssignmentStates** property of the [user](user.md) entity is a collection of **licenseAssignmentState**. It provides details about license assignments to a user. The details includes information like:  
 
@@ -29,10 +29,15 @@ The **licenseAssignmentStates** property of the [user](user.md) entity is a coll
 
 Here is a JSON representation of the resource
 
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.licenseAssignmentState"
+}-->
 ```json
 {
   "assignedByGroup": "String",
-  "disabledPlans": "Collection(String)",
+  "disabledPlans": ["string"],
   "error": " String ",  
   "skuId": "String ",
   "state": "String"

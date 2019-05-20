@@ -1,18 +1,19 @@
 ---
 title: "Update iosEasEmailProfileConfiguration"
 description: "Update the properties of a iosEasEmailProfileConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # Update iosEasEmailProfileConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -59,7 +60,7 @@ The following table shows the properties that are required when you create the [
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Possible values are: `fullDomainName`, `netBiosDomainName`.|
 |customDomainName|String|Custom domain name value used while generating an email profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|String|Account name.|
-|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for this Email profile. Possible values are: `usernameAndPassword`, `certificate`.|
+|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for this Email profile. Possible values are: `usernameAndPassword`, `certificate`, `derivedCredential`.|
 |blockMovingMessagesToOtherEmailAccounts|Boolean|Indicates whether or not to block moving messages to other email accounts.|
 |blockSendingEmailFromThirdPartyApps|Boolean|Indicates whether or not to block sending email from third party apps.|
 |blockSyncingRecentlyUsedEmailAddresses|Boolean|Indicates whether or not to block syncing recently used email addresses, for instance - when composing new email.|
@@ -68,8 +69,16 @@ The following table shows the properties that are required when you create the [
 |hostName|String|Exchange location that (URL) that the native mail app connects to.|
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
 |smimeEnablePerMessageSwitch|Boolean|Indicates whether or not to allow unencrypted emails.|
+|smimeEncryptByDefaultEnabled|Boolean|If set to true S/MIME encryption is enabled by default.|
+|smimeSigningEnabled|Boolean|If set to true S/MIME signing is enabled for this account|
+|smimeSigningUserOverrideEnabled|Boolean|If set to true, the user can toggle S/MIME signing on or off.|
+|smimeEncryptByDefaultUserOverrideEnabled|Boolean|If set to true, the user can toggle the encryption by default setting.|
+|smimeSigningCertificateUserOverrideEnabled|Boolean|If set to true, the user can select the signing identity.|
+|smimeEncryptionCertificateUserOverrideEnabled|Boolean|If set to true the user can select the S/MIME encryption identity. |
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |useOAuth|Boolean|Specifies whether the connection should use OAuth for authentication.|
+|signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Signing Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
+|encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Encryption Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
 
 
 
@@ -77,15 +86,16 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 904
+Content-length: 1284
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -107,8 +117,16 @@ Content-length: 904
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
+  "smimeEncryptByDefaultEnabled": true,
+  "smimeSigningEnabled": true,
+  "smimeSigningUserOverrideEnabled": true,
+  "smimeEncryptByDefaultUserOverrideEnabled": true,
+  "smimeSigningCertificateUserOverrideEnabled": true,
+  "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
-  "useOAuth": true
+  "useOAuth": true,
+  "signingCertificateType": "certificate",
+  "encryptionCertificateType": "certificate"
 }
 ```
 
@@ -117,7 +135,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1082
+Content-Length: 1456
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -145,11 +163,18 @@ Content-Length: 1082
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
+  "smimeEncryptByDefaultEnabled": true,
+  "smimeSigningEnabled": true,
+  "smimeSigningUserOverrideEnabled": true,
+  "smimeEncryptByDefaultUserOverrideEnabled": true,
+  "smimeSigningCertificateUserOverrideEnabled": true,
+  "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
-  "useOAuth": true
+  "useOAuth": true,
+  "signingCertificateType": "certificate",
+  "encryptionCertificateType": "certificate"
 }
 ```
-
 
 
 

@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # governanceResource resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents resources that could be managed by Privileged Identity Management (PIM). For Azure resources, it can be a subscription, a resource group, and a resource such as a virtual machine, a SQL database, etc.
 
@@ -50,6 +50,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -63,16 +64,24 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "status": "String",
   "registeredDateTime": "String (timestamp)",
-  "registeredRoot": "String"
+  "registeredRoot": "String",
+  "roleAssignmentCount": 12356,
+  "roleDefinitionCount": 12356,
+  "permissions": {
+    "@odata.type": "microsoft.graph.governancePermission"
+  }
 }
 
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceResource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

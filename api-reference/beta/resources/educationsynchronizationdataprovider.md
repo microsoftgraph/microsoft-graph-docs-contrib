@@ -8,14 +8,14 @@ ms.prod: "education"
 
 # educationSynchronizationDataProvider resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the source SIS schema. This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema. 
+Represents the source SIS schema. This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema.
 
 > **Note:** This complex type is abstract. Refer to the specific types of data providers listed.
 
 ## Derived types
-| Type | Description | 
+| Type | Description |
 |:-|:-|:-|
 | [educationcsvdataprovider](educationcsvdataprovider.md) | Used with CSV files as the input source. |
 | [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | Used with PowerSchool as the input source. |

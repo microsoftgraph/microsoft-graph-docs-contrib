@@ -1,26 +1,28 @@
 ---
 title: "rolePermission resource type"
-description: "Not yet documented"
-author: "tfitzmac"
+description: "Contains the set of ResourceActions determining the allowed and not allowed permissions for each role."
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # rolePermission resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Contains the set of ResourceActions determining the allowed and not allowed permissions for each role.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actions|String collection|Allowed Actions|
-|resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) collection|Actions|
+|actions|String collection|Allowed Actions - Deprecated|
+|resourceActions|[resourceAction](../resources/intune-rbac-resourceaction.md) collection|Resource Actions each containing a set of allowed and not allowed permissions.|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {
@@ -47,7 +49,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

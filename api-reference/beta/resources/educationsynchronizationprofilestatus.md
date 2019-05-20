@@ -8,7 +8,7 @@ ms.prod: "education"
 
 # educationSynchronizationProfileStatus resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the synchronization status of a school data [synchronization profile](educationsynchronizationprofile.md). 
 
@@ -24,7 +24,7 @@ Represents the synchronization status of a school data [synchronization profile]
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **status** | string | The status of a sync. Possible values are: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
+| **status** | educationSynchronizationStatus | The status of a sync. Possible values are: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
 | **lastSynchronizationDateTime** | DateTimeOffset | Represents the time when most recent changes have been observed in the directory.  |
 
 ## JSON representation
@@ -33,7 +33,7 @@ Represents the synchronization status of a school data [synchronization profile]
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"
 }-->
 
 ```json

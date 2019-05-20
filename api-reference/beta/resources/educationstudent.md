@@ -8,7 +8,7 @@ ms.prod: "education"
 
 # educationStudent resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `student`.
 
@@ -17,7 +17,7 @@ Additional information added to an [educationUser](educationuser.md) that is pre
 |:---------------|:--------|:----------|
 |birthDate|Date| Birth date of the student.|
 |externalId|String| ID of the student in the source system.|
-|gender|`educationGender enumeration`| Possible values are: `female`, `male`, `other`, `unkownFutureValue`.|
+|gender|educationGender| Possible values are: `female`, `male`, `other`, `unkownFutureValue`.|
 |grade|String|Current grade level of the student.|
 |graduationYear|String| Year the student is graduating from the school.|
 |studentNumber|String| Student Number.|
@@ -47,10 +47,13 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationStudent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

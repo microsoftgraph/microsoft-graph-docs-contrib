@@ -1,18 +1,19 @@
 ---
 title: "Create importedWindowsAutopilotDeviceIdentity"
 description: "Create a new importedWindowsAutopilotDeviceIdentity object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # Create importedWindowsAutopilotDeviceIdentity
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -49,8 +50,10 @@ The following table shows the properties that are required when you create the i
 |orderIdentifier|String|Order Id of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
 |productKey|String|Product Key of the Windows autopilot device.|
+|importId|String|The Import Id of the Windows autopilot device.|
 |hardwareIdentifier|Binary|Hardware Blob of the Windows autopilot device.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Current state of the imported device.|
+|assignedUserPrincipalName|String|UPN of the user the device will be assigned|
 
 
 
@@ -58,18 +61,20 @@ The following table shows the properties that are required when you create the i
 If successful, this method returns a `201 Created` response code and a [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 541
+Content-length: 645
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "orderIdentifier": "Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
+  "importId": "Import Id value",
   "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
   "state": {
     "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -77,7 +82,8 @@ Content-length: 541
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
 
@@ -86,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 590
+Content-Length: 694
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -94,6 +100,7 @@ Content-Length: 590
   "orderIdentifier": "Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
+  "importId": "Import Id value",
   "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
   "state": {
     "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -101,10 +108,10 @@ Content-Length: 590
     "deviceRegistrationId": "Device Registration Id value",
     "deviceErrorCode": 15,
     "deviceErrorName": "Device Error Name value"
-  }
+  },
+  "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 

@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # governanceRoleAssignmentRequestStatus resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the status of the [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
@@ -32,17 +32,20 @@ Here is a JSON representation of the resource.
 {
   "status": "String",
   "subStatus": "String",
-  "statusDetails": [{"@odata.type": "microsoft.graph.keyvalue"}],
+  "statusDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
 }
 
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleAssignmentRequestStatus",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

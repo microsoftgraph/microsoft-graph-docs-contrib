@@ -1,18 +1,19 @@
 ---
 title: "iosEasEmailProfileConfiguration resource type"
 description: "By providing configurations in this profile you can instruct the native email client on iOS devices to communicate with an Exchange server and get email, contacts, calendar, reminders, and notes. Furthermore, you can also specify how much email to sync and how often the device should sync."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # iosEasEmailProfileConfiguration resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 By providing configurations in this profile you can instruct the native email client on iOS devices to communicate with an Exchange server and get email, contacts, calendar, reminders, and notes. Furthermore, you can also specify how much email to sync and how often the device should sync.
+
 
 Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)
 
@@ -41,7 +42,7 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfi
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Possible values are: `fullDomainName`, `netBiosDomainName`.|
 |customDomainName|String|Custom domain name value used while generating an email profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|String|Account name.|
-|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for this Email profile. Possible values are: `usernameAndPassword`, `certificate`.|
+|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for this Email profile. Possible values are: `usernameAndPassword`, `certificate`, `derivedCredential`.|
 |blockMovingMessagesToOtherEmailAccounts|Boolean|Indicates whether or not to block moving messages to other email accounts.|
 |blockSendingEmailFromThirdPartyApps|Boolean|Indicates whether or not to block sending email from third party apps.|
 |blockSyncingRecentlyUsedEmailAddresses|Boolean|Indicates whether or not to block syncing recently used email addresses, for instance - when composing new email.|
@@ -50,8 +51,16 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfi
 |hostName|String|Exchange location that (URL) that the native mail app connects to.|
 |requireSmime|Boolean|Indicates whether or not to use S/MIME certificate.|
 |smimeEnablePerMessageSwitch|Boolean|Indicates whether or not to allow unencrypted emails.|
+|smimeEncryptByDefaultEnabled|Boolean|If set to true S/MIME encryption is enabled by default.|
+|smimeSigningEnabled|Boolean|If set to true S/MIME signing is enabled for this account|
+|smimeSigningUserOverrideEnabled|Boolean|If set to true, the user can toggle S/MIME signing on or off.|
+|smimeEncryptByDefaultUserOverrideEnabled|Boolean|If set to true, the user can toggle the encryption by default setting.|
+|smimeSigningCertificateUserOverrideEnabled|Boolean|If set to true, the user can select the signing identity.|
+|smimeEncryptionCertificateUserOverrideEnabled|Boolean|If set to true the user can select the S/MIME encryption identity. |
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |useOAuth|Boolean|Specifies whether the connection should use OAuth for authentication.|
+|signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Signing Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
+|encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Encryption Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -66,6 +75,7 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfi
 |identityCertificate|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|Identity certificate.|
 |smimeSigningCertificate|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|S/MIME signing certificate.|
 |smimeEncryptionCertificate|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|S/MIME encryption certificate.|
+|derivedCredentialSettings|[deviceManagementDerivedCredentialSettings](../resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md)|Tenant level settings for the Derived Credentials to be used for authentication.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -102,11 +112,18 @@ Here is a JSON representation of the resource.
   "hostName": "String",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
+  "smimeEncryptByDefaultEnabled": true,
+  "smimeSigningEnabled": true,
+  "smimeSigningUserOverrideEnabled": true,
+  "smimeEncryptByDefaultUserOverrideEnabled": true,
+  "smimeSigningCertificateUserOverrideEnabled": true,
+  "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
-  "useOAuth": true
+  "useOAuth": true,
+  "signingCertificateType": "String",
+  "encryptionCertificateType": "String"
 }
 ```
-
 
 
 

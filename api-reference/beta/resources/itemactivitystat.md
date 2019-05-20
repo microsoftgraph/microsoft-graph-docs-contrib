@@ -7,7 +7,7 @@ localization_priority: Normal
 ---
 # itemActivityStat resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **itemActivityStat** resource provides information about activities that took place within an interval of time.
 
@@ -62,10 +62,13 @@ The **itemActivityStat** resource provides information about activities that too
 
 ## Remarks
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivityStat object provides information about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivityStat"
-} -->
+  "tocPath": "Resources/ItemActivityStat",
+  "suppressions": []
+}
+-->

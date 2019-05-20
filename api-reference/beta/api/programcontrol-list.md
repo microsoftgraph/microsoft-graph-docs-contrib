@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # List programControls
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControl](../resources/programcontrol.md) objects, across all programs in the tenant.
 ## Permissions
@@ -14,9 +14,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  The signed in user must also be in a directory role which permits them to read a program. |
+|Delegated (work or school account)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+
+The signed in user must also be in a directory role that permits them to read a program.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -73,6 +75,16 @@ Content-type: application/json
 }
 
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_programControl-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_programControl-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## See also
 
@@ -81,10 +93,16 @@ Content-type: application/json
 |[List programControls of a program](program-listcontrols.md) |		[programControl](../resources/programcontrol.md) collection|	Get a collection of the controls of a program.|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List programControls",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/programcontrol-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->

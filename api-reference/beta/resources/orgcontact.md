@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # orgContact resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Methods
 
@@ -27,13 +27,12 @@ ms.prod: "microsoft-identity-platform"
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| addresses                    | [physicalOfficeAddress](physicalofficeaddress.md)            | Postal addresses for this organizational contact. For now a contact can only have one physical address. |
+| addresses                    | [physicalOfficeAddress](physicalofficeaddress.md) collection           | Postal addresses for this organizational contact. For now a contact can only have one physical address. |
 | companyName                  | String                                                    | Name of the company that this organizational contact belong to.                                                                                                                                                                                                                                                                                                                 |
 | department                   | String                                                     | The name for the department in which the contact works.                                                                                                                                                                                                                                                                                                                                |
 | displayName                  | String                                                     | Display name for this organizational contact.                                                                                                                                                                                                                                                                                                                                   |
 | givenName                    | String                                                     | First name for this organizational contact.                                                                                                                                                                                                                                                                                                                                     |
 | id                           | String                                                     | Unique identifier for this organizational contact.                                                                                                                                                                                                                                                                                                                             |
-| imAddresses                  | String collection                          | List of IM addresses for this organizational contact. For now a contact can only have one SIP address.                                                                                                                                                                                                                        |
 | jobTitle                     | String                                                     | Job title for this organizational contact.                                                                                                                                                                                                                                                                                                                                      |
 |mail|String| The SMTP address for the contact, for example, "jeff@contoso.onmicrosoft.com". |
 | mailNickname                 | String                                                     | Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.                                                                                                                                                                                                                                                                                |
@@ -41,7 +40,7 @@ ms.prod: "microsoft-identity-platform"
 | onPremisesProvisioningErrors |[onPremisesProvisioningError](onpremisesprovisioningerror.md) collection       | List of any synchronization provisioning errors for this organizational contact.                                                                                                                                                                                                                                                                                                |
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; **null** if this object has never been synced from an on-premises directory (default).|
 | phones                       | [phone](phone.md) collection                            | List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection.                                                                                                                       |
-| proxyAddresses               | String collection                                         | For example: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]. The **any** operator is required for filter expressions on multi-valued properties. Supports \$filter.                                                                                                                                                                               |
+| proxyAddresses               | String collection                                         | For example: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". The **any** operator is required for filter expressions on multi-valued properties. Supports \$filter.                                                                                                                                                                               |
 | surname                      | String                                                     | Last name for this organizational contact.                          |
 
 ## Relationships
@@ -63,6 +62,8 @@ Here is a JSON representation of the resource
     "manager",
     "memberOf"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
   "@odata.type": "microsoft.graph.orgcontact"
 }-->
 
@@ -88,10 +89,13 @@ Here is a JSON representation of the resource
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "orgContact resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

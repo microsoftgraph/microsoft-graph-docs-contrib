@@ -1,18 +1,19 @@
 ---
 title: "Create iosGeneralDeviceConfiguration"
 description: "Create a new iosGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # Create iosGeneralDeviceConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) object.
+
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -69,16 +70,20 @@ The following table shows the properties that are required when you create the i
 |appStoreBlockInAppPurchases|Boolean|Indicates whether or not to block the user from making in app purchases.|
 |appStoreBlockUIAppInstallation|Boolean|Indicates whether or not to block the App Store app, not restricting installation through Host apps. Applies to supervised mode only (iOS 9.0 and later).|
 |appStoreRequirePassword|Boolean|Indicates whether or not to require a password when using the app store.|
+|autoFillForceAuthentication|Boolean|Indicates whether or not to force user authentication before autofilling passwords and credit card information in Safari and other apps on supervised devices.|
 |bluetoothBlockModification|Boolean|Indicates whether or not to allow modification of Bluetooth settings when the device is in supervised mode (iOS 10.0 and later).|
 |cameraBlocked|Boolean|Indicates whether or not to block the user from accessing the camera of the device.|
 |cellularBlockDataRoaming|Boolean|Indicates whether or not to block data roaming.|
 |cellularBlockGlobalBackgroundFetchWhileRoaming|Boolean|Indicates whether or not to block global background fetch while roaming.|
 |cellularBlockPerAppDataModification|Boolean|Indicates whether or not to allow changes to cellular app data usage settings when the device is in supervised mode.|
 |cellularBlockPersonalHotspot|Boolean|Indicates whether or not to block Personal Hotspot.|
+|cellularBlockPlanModification|Boolean|Indicates whether or not to allow users to change the settings of the cellular plan on a supervised device.|
 |cellularBlockVoiceRoaming|Boolean|Indicates whether or not to block voice roaming.|
 |certificatesBlockUntrustedTlsCertificates|Boolean|Indicates whether or not to block untrusted TLS certificates.|
 |classroomAppBlockRemoteScreenObservation|Boolean|Indicates whether or not to allow remote screen observation by Classroom app when the device is in supervised mode (iOS 9.3 and later).|
 |classroomAppForceUnpromptedScreenObservation|Boolean|Indicates whether or not to automatically give permission to the teacher of a managed course on the Classroom app to view a student's screen without prompting when the device is in supervised mode.|
+|classroomForceAutomaticallyJoinClasses|Boolean|Indicates whether or not to automatically give permission to the teacher's requests, without prompting the student, when the device is in supervised mode.|
+|classroomForceUnpromptedAppAndDeviceLock|Boolean|Indicates whether or not to allow the teacher to lock apps or the device without prompting the student. Supervised only.|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|List that is in the AppComplianceList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Boolean|Indicates whether or not to block the user from installing configuration profiles and certificates interactively when the device is in supervised mode.|
@@ -93,6 +98,7 @@ The following table shows the properties that are required when you create the i
 |emailInDomainSuffixes|String collection|An email address lacking a suffix that matches any of these strings will be considered out-of-domain.|
 |enterpriseAppBlockTrust|Boolean|Indicates whether or not to block the user from trusting an enterprise app.|
 |enterpriseAppBlockTrustModification|Boolean|Indicates whether or not to block the user from modifying the enterprise app trust settings.|
+|esimBlockModification|Boolean|Indicates whether or not to allow the addition or removal of cellular plans on the eSIM of a supervised device.|
 |faceTimeBlocked|Boolean|Indicates whether or not to block the user from using FaceTime.|
 |findMyFriendsBlocked|Boolean|Indicates whether or not to block Find My Friends when the device is in supervised mode.|
 |gamingBlockGameCenterFriends|Boolean|Indicates whether or not to block the user from having friends in Game Center.|
@@ -119,14 +125,19 @@ The following table shows the properties that are required when you create the i
 |keyboardBlockSpellCheck|Boolean|Indicates whether or not to block keyboard spell-checking when the device is in supervised mode (iOS 8.1.3 and later).|
 |kioskModeAllowAssistiveSpeak|Boolean|Indicates whether or not to allow assistive speak while in kiosk mode.|
 |kioskModeAllowAssistiveTouchSettings|Boolean|Indicates whether or not to allow access to the Assistive Touch Settings while in kiosk mode.|
-|kioskModeAllowAutoLock|Boolean|Indicates whether or not to allow device auto lock while in kiosk mode.|
+|kioskModeAllowAutoLock|Boolean|Indicates whether or not to allow device auto lock while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockAutoLock instead.|
+|kioskModeBlockAutoLock|Boolean|Indicates whether or not to block device auto lock while in kiosk mode.|
 |kioskModeAllowColorInversionSettings|Boolean|Indicates whether or not to allow access to the Color Inversion Settings while in kiosk mode.|
-|kioskModeAllowRingerSwitch|Boolean|Indicates whether or not to allow use of the ringer switch while in kiosk mode.|
-|kioskModeAllowScreenRotation|Boolean|Indicates whether or not to allow screen rotation while in kiosk mode.|
-|kioskModeAllowSleepButton|Boolean|Indicates whether or not to allow use of the sleep button while in kiosk mode.|
-|kioskModeAllowTouchscreen|Boolean|Indicates whether or not to allow use of the touchscreen while in kiosk mode.|
+|kioskModeAllowRingerSwitch|Boolean|Indicates whether or not to allow use of the ringer switch while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockRingerSwitch instead.|
+|kioskModeBlockRingerSwitch|Boolean|Indicates whether or not to block use of the ringer switch while in kiosk mode.|
+|kioskModeAllowScreenRotation|Boolean|Indicates whether or not to allow screen rotation while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockScreenRotation instead.|
+|kioskModeBlockScreenRotation|Boolean|Indicates whether or not to block screen rotation while in kiosk mode.|
+|kioskModeAllowSleepButton|Boolean|Indicates whether or not to allow use of the sleep button while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockSleepButton instead.|
+|kioskModeBlockSleepButton|Boolean|Indicates whether or not to block use of the sleep button while in kiosk mode.|
+|kioskModeAllowTouchscreen|Boolean|Indicates whether or not to allow use of the touchscreen while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockTouchscreen instead.|
+|kioskModeBlockTouchscreen|Boolean|Indicates whether or not to block use of the touchscreen while in kiosk mode.|
 |kioskModeAllowVoiceOverSettings|Boolean|Indicates whether or not to allow access to the voice over settings while in kiosk mode.|
-|kioskModeAllowVolumeButtons|Boolean|Indicates whether or not to allow use of the volume buttons while in kiosk mode.|
+|kioskModeAllowVolumeButtons|Boolean|Indicates whether or not to allow use of the volume buttons while in kiosk mode. This property's funcitonality is redundant with the OS default and is deprecated. Use KioskModeBlockVolumeButtons instead.|
 |kioskModeBlockVolumeButtons|Boolean|Indicates whether or not to block the volume buttons while in Kiosk Mode.|
 |kioskModeAllowZoomSettings|Boolean|Indicates whether or not to allow access to the zoom settings while in kiosk mode.|
 |kioskModeAppStoreUrl|String|URL in the app store to the app to use for kiosk mode. Use if KioskModeManagedAppId is not known.|
@@ -168,6 +179,7 @@ The following table shows the properties that are required when you create the i
 |passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Type of passcode that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Indicates whether or not to require a passcode.|
 |podcastsBlocked|Boolean|Indicates whether or not to block the user from using podcasts on the supervised device (iOS 8.0 and later).|
+|proximityBlockSetupToNewDevice|Boolean|Indicates whether or not to enable the prompt to setup nearby devices with a supervised device.|
 |safariBlockAutofill|Boolean|Indicates whether or not to block the user from using Auto fill in Safari.|
 |safariBlockJavaScript|Boolean|Indicates whether or not to block JavaScript in Safari.|
 |safariBlockPopups|Boolean|Indicates whether or not to block popups in Safari.|
@@ -181,6 +193,8 @@ The following table shows the properties that are required when you create the i
 |siriBlockedWhenLocked|Boolean|Indicates whether or not to block the user from using Siri when locked.|
 |siriBlockUserGeneratedContent|Boolean|Indicates whether or not to block Siri from querying user-generated content when used on a supervised device.|
 |siriRequireProfanityFilter|Boolean|Indicates whether or not to prevent Siri from dictating, or speaking profane language on supervised device.|
+|softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
+|softwareUpdatesForceDelayed|Boolean|Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.|
 |spotlightBlockInternetResults|Boolean|Indicates whether or not to block Spotlight search from returning internet results on supervised device.|
 |voiceDialingBlocked|Boolean|Indicates whether or not to block voice dialing.|
 |wallpaperBlockModification|Boolean|Indicates whether or not to allow wallpaper modification on supervised device (iOS 9.0 and later) .|
@@ -197,6 +211,16 @@ The following table shows the properties that are required when you create the i
 |airPrintBlockiBeaconDiscovery|Boolean|Indicates whether or not iBeacon discovery of AirPrint printers is blocked. This prevents spurious AirPrint Bluetooth beacons from phishing for network traffic (iOS 11.0 and later).|
 |blockSystemAppRemoval|Boolean|Indicates whether or not the removal of system apps from the device is blocked on a supervised device (iOS 11.0 and later).|
 |vpnBlockCreation|Boolean|Indicates whether or not the creation of VPN configurations is blocked (iOS 11.0 and later).|
+|appRemovalBlocked|Boolean|Indicates if the removal of apps is allowed.|
+|usbRestrictedModeBlocked|Boolean|Indicates if connecting to USB accessories while the device is locked is allowed (iOS 11.4.1 and later).|
+|passwordBlockAutoFill|Boolean|Indicates if the AutoFill passwords feature is allowed (iOS 12.0 and later).|
+|passwordBlockProximityRequests|Boolean|Indicates whether or not to block requesting passwords from nearby devices (iOS 12.0 and later).|
+|passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature iOS 12.0 and later).|
+|dateAndTimeForceSetAutomatically|Boolean|Indicates whether or not the Date and Time "Set Automatically" feature is enabled and cannot be turned off by the user (iOS 12.0 and later).|
+|contactsAllowManagedToUnmanagedWrite|Boolean|Indicates whether or not managed apps can write contacts to unmanaged contacts accounts (iOS 12.0 and later).|
+|contactsAllowUnmanagedToManagedRead|Boolean|Indicates whether or not unmanaged apps can read from managed contacts accounts (iOS 12.0 or later).|
+|cellularBlockPersonalHotspotModification|Boolean|Indicates whether or not to block the user from modifying the personal hotspot setting (iOS 12.2 or later).|
+|siriDisableServerLogging|Boolean|Indicates whether or not server-side Siri logging is disabled (iOS 12.2 or later).|
 
 
 
@@ -204,16 +228,16 @@ The following table shows the properties that are required when you create the i
 If successful, this method returns a `201 Created` response code and a [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 8496
+Content-length: 9386
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -253,16 +277,20 @@ Content-length: 8496
   "appStoreBlockInAppPurchases": true,
   "appStoreBlockUIAppInstallation": true,
   "appStoreRequirePassword": true,
+  "autoFillForceAuthentication": true,
   "bluetoothBlockModification": true,
   "cameraBlocked": true,
   "cellularBlockDataRoaming": true,
   "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
   "cellularBlockPerAppDataModification": true,
   "cellularBlockPersonalHotspot": true,
+  "cellularBlockPlanModification": true,
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
   "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true,
   "compliantAppsList": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -287,6 +315,7 @@ Content-length: 8496
   ],
   "enterpriseAppBlockTrust": true,
   "enterpriseAppBlockTrustModification": true,
+  "esimBlockModification": true,
   "faceTimeBlocked": true,
   "findMyFriendsBlocked": true,
   "gamingBlockGameCenterFriends": true,
@@ -314,11 +343,16 @@ Content-length: 8496
   "kioskModeAllowAssistiveSpeak": true,
   "kioskModeAllowAssistiveTouchSettings": true,
   "kioskModeAllowAutoLock": true,
+  "kioskModeBlockAutoLock": true,
   "kioskModeAllowColorInversionSettings": true,
   "kioskModeAllowRingerSwitch": true,
+  "kioskModeBlockRingerSwitch": true,
   "kioskModeAllowScreenRotation": true,
+  "kioskModeBlockScreenRotation": true,
   "kioskModeAllowSleepButton": true,
+  "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
+  "kioskModeBlockTouchscreen": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -413,6 +447,7 @@ Content-length: 8496
   "passcodeRequiredType": "alphanumeric",
   "passcodeRequired": true,
   "podcastsBlocked": true,
+  "proximityBlockSetupToNewDevice": true,
   "safariBlockAutofill": true,
   "safariBlockJavaScript": true,
   "safariBlockPopups": true,
@@ -430,6 +465,8 @@ Content-length: 8496
   "siriBlockedWhenLocked": true,
   "siriBlockUserGeneratedContent": true,
   "siriRequireProfanityFilter": true,
+  "softwareUpdatesEnforcedDelayInDays": 2,
+  "softwareUpdatesForceDelayed": true,
   "spotlightBlockInternetResults": true,
   "voiceDialingBlocked": true,
   "wallpaperBlockModification": true,
@@ -445,7 +482,17 @@ Content-length: 8496
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true,
+  "cellularBlockPersonalHotspotModification": true,
+  "siriDisableServerLogging": true
 }
 ```
 
@@ -454,7 +501,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8604
+Content-Length: 9558
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -500,16 +547,20 @@ Content-Length: 8604
   "appStoreBlockInAppPurchases": true,
   "appStoreBlockUIAppInstallation": true,
   "appStoreRequirePassword": true,
+  "autoFillForceAuthentication": true,
   "bluetoothBlockModification": true,
   "cameraBlocked": true,
   "cellularBlockDataRoaming": true,
   "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
   "cellularBlockPerAppDataModification": true,
   "cellularBlockPersonalHotspot": true,
+  "cellularBlockPlanModification": true,
   "cellularBlockVoiceRoaming": true,
   "certificatesBlockUntrustedTlsCertificates": true,
   "classroomAppBlockRemoteScreenObservation": true,
   "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true,
   "compliantAppsList": [
     {
       "@odata.type": "microsoft.graph.appListItem",
@@ -534,6 +585,7 @@ Content-Length: 8604
   ],
   "enterpriseAppBlockTrust": true,
   "enterpriseAppBlockTrustModification": true,
+  "esimBlockModification": true,
   "faceTimeBlocked": true,
   "findMyFriendsBlocked": true,
   "gamingBlockGameCenterFriends": true,
@@ -561,11 +613,16 @@ Content-Length: 8604
   "kioskModeAllowAssistiveSpeak": true,
   "kioskModeAllowAssistiveTouchSettings": true,
   "kioskModeAllowAutoLock": true,
+  "kioskModeBlockAutoLock": true,
   "kioskModeAllowColorInversionSettings": true,
   "kioskModeAllowRingerSwitch": true,
+  "kioskModeBlockRingerSwitch": true,
   "kioskModeAllowScreenRotation": true,
+  "kioskModeBlockScreenRotation": true,
   "kioskModeAllowSleepButton": true,
+  "kioskModeBlockSleepButton": true,
   "kioskModeAllowTouchscreen": true,
+  "kioskModeBlockTouchscreen": true,
   "kioskModeAllowVoiceOverSettings": true,
   "kioskModeAllowVolumeButtons": true,
   "kioskModeBlockVolumeButtons": true,
@@ -660,6 +717,7 @@ Content-Length: 8604
   "passcodeRequiredType": "alphanumeric",
   "passcodeRequired": true,
   "podcastsBlocked": true,
+  "proximityBlockSetupToNewDevice": true,
   "safariBlockAutofill": true,
   "safariBlockJavaScript": true,
   "safariBlockPopups": true,
@@ -677,6 +735,8 @@ Content-Length: 8604
   "siriBlockedWhenLocked": true,
   "siriBlockUserGeneratedContent": true,
   "siriRequireProfanityFilter": true,
+  "softwareUpdatesEnforcedDelayInDays": 2,
+  "softwareUpdatesForceDelayed": true,
   "spotlightBlockInternetResults": true,
   "voiceDialingBlocked": true,
   "wallpaperBlockModification": true,
@@ -692,10 +752,19 @@ Content-Length: 8604
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true,
+  "cellularBlockPersonalHotspotModification": true,
+  "siriDisableServerLogging": true
 }
 ```
-
 
 
 

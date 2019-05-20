@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # List programControls of a program
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControl](../resources/programcontrol.md) objects, linked to a particular program.
 ## Permissions
@@ -14,9 +14,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  The signed in user must also be in a directory role which permits them to read a program. |
+|Delegated (work or school account)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | ProgramControl.Read.All, ProgramControl.ReadWrite.All  |
+
+ The signed in user must also be in a directory role that permits them to read a program.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +44,7 @@ If successful, this method returns a `200, OK` response code and an array of [pr
   "name": "get_programControl_from_program"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/programs('673a7379-9c38-4f01-bd9d-4fda7260b807')/controls
+GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b807/controls
 ```
 
 ##### Response
@@ -73,12 +75,28 @@ Content-type: application/json
 }
 
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_programControl_from_program-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_programControl_from_program-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List programControls of a program",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-listcontrols.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/program-listcontrols.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
+}
+-->
