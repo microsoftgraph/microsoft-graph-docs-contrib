@@ -1,7 +1,7 @@
 ---
-title: "Enroll corporate-owned devices by using Intune"
-description: " (BYOD) scenario."
-author: "tfitzmac"
+title: "Enroll corporate devices by using Intune - Microsoft Graph API"
+description: "Lists the Microsoft Graph API for Intune endpoints (REST) that enroll devices for a tenant organization."
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -44,6 +44,7 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Windows autopilot deployment profile](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Windows autopilot deployment profile assignment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Windows autopilot device identity](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Windows autopilot device type](intune-enrollment-windowsautopilotdevicetype.md)
 - [Windows autopilot profile assignment detailed status](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Windows autopilot profile assignment status](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Windows autopilot settings](intune-enrollment-windowsautopilotsettings.md)

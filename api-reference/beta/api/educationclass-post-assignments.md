@@ -56,7 +56,7 @@ Content-length: 279
   "dueDateTime": "2014-02-01T00:00:00Z",
   "displayName": "Midterm 1",
     "instructions":  {
-      "contentType": "Text",
+      "contentType": "text",
       "content": "Read chapters 1 through 3"
     },
       "grading": {
@@ -110,7 +110,7 @@ Content-length: 279
     "maxPoints": 100
   },
   "instructions": {
-    "contentType": "Text",
+    "contentType": "text",
     "content": "Read chapters 1 through 3"
   },
   "lastModifiedBy": {
@@ -135,8 +135,6 @@ Content-length: 279
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationclass-post-assignments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

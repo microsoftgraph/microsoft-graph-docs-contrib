@@ -1,8 +1,8 @@
 ---
 title: "Role-based access control in Microsoft Intune"
-description: "Intune's role-based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.   "
+description: "Lists the Microsoft Graph API for Intune endpoints (REST) that define and manage role-based access control (RBAC) for a tenant organization."
 localization_priority: Normal
-author: "tfitzmac"
+author: "rolyon"
 ms.prod: "intune"
 ---
 

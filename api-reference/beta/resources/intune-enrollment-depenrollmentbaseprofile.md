@@ -1,14 +1,14 @@
 ---
 title: "depEnrollmentBaseProfile resource type"
 description: "The DepEnrollmentBaseProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # depEnrollmentBaseProfile resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -51,6 +51,7 @@ Inherits from [enrollmentProfile](../resources/intune-enrollment-enrollmentprofi
 |diagnosticsDisabled|Boolean|Indicates if diagnostics setup pane is disabled|
 |displayToneSetupDisabled|Boolean|Indicates if displaytone setup screen is disabled|
 |privacyPaneDisabled|Boolean|Indicates if privacy screen is disabled|
+|deviceNameTemplate|String|Sets a literal or name pattern.|
 
 ## Relationships
 None
@@ -90,7 +91,8 @@ Here is a JSON representation of the resource.
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
-  "privacyPaneDisabled": true
+  "privacyPaneDisabled": true,
+  "deviceNameTemplate": "String"
 }
 ```
 

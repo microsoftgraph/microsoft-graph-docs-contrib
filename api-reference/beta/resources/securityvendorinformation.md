@@ -17,9 +17,9 @@ Contains details about the security product/service vendor, provider, and subpro
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |provider |String|Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.|
-|providerVersion|String|Version of the provider or subprovider, if it exists, that generated the alert. *Required*|
+|providerVersion|String|Version of the provider or subprovider, if it exists, that generated the alert. **Required**|
 |subProvider|String|Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.|
-|vendor |String|Name of the alert vendor (for example, Microsoft, Dell, FireEye). *Required*|
+|vendor |String|Name of the alert vendor (for example, Microsoft, Dell, FireEye). **Required**|
 
 ## JSON representation
 
@@ -51,8 +51,6 @@ The folllowing is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/securityvendorinformation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

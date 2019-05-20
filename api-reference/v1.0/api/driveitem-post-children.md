@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Create a new folder
 localization_priority: Priority
@@ -99,11 +99,20 @@ Content-Type: application/json
   }
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-folder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Error response
 
-Read the [Error Responses][error-response] topic for more info about
+See [Error Responses][error-response] for more info about
 how errors are returned.
+
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md
@@ -113,5 +122,8 @@ how errors are returned.
   "description": "Create a folder item in a drive.",
   "keywords": "create,folder,new item",
   "section": "documentation",
-  "tocPath": "Items/Create folder"
+  "tocPath": "Items/Create folder",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-post-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

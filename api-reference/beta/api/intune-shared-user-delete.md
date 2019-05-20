@@ -1,7 +1,7 @@
 ---
 title: "Delete user"
 description: "Deletes a user."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
