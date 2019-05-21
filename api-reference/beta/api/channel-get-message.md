@@ -80,7 +80,6 @@ Content-type: application/json
     "importance": "normal",
     "locale": "en-us",
     "policyViolation": null,
-    "webUrl": "https://teams.microsoft.com/l/message/19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype/1555375673184?groupId=303d2c1c-f1c5-40ce-b68e-544343d7f42b&tenantId=123d12b3-1234-12ab-b1a2-123ba45c6789&createdTime=1555375673184&parentMessageId=1555375673188",       
     "from": {
         "application": null,
         "device": null,
