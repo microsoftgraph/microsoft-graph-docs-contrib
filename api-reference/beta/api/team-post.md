@@ -204,12 +204,13 @@ Content-Location: /teams/{teamId}
 
 ### Example 4: Create a team from group
 
-The following example outlines how you can create a new [team](../resources/team.md) from a [group](../resources/group.md), given a groupId.
+The following example shows how you can create a new [team](../resources/team.md) from a [group](../resources/group.md), given a **groupId**.
 
 A few thing to note about this call:
-* In order to create a team, the group must have a least one owner. 
-* The team being created will always inherit from the group's displayName, visibility, specialization, and owners. Hence when making this call with the 'group@odata.bind" property, the inclusion of team "displayName", "visibility", "specialization", or "owners@odata.bind" properties will return an error.
-* If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
+
+* In order to create a team, the group you're creating it from must have a least one owner. 
+* The team that's created will always inherit from the group's display name, visibility, specialization, and owners. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **owners@odata.bind** properties will return an error.
+* If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
 
 
 #### Request
