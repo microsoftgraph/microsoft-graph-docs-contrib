@@ -215,8 +215,7 @@ description: "Microsoft Graph enumeration values"
 |:---------------------
 | student
 | teacher
-| none
-| unknownFutureValue
+| faculty
 
 
 ### meetingMessageType values

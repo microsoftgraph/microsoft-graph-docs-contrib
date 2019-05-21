@@ -134,10 +134,6 @@ localization_priority: Normal
 |:---------------------
 | student
 | teacher
-| none
-| unknownFutureValue
-| faculty
-
 
 ### meetingMessageType values
 
