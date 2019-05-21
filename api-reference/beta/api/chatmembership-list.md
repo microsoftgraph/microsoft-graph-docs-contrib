@@ -18,14 +18,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Chat.Read.All, Chat.ReadWrite.All|
+|Delegated (work or school account)|Chat.Read, Chat.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported|
 |Application| Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /chats/{id}/messages/{id}/members
+GET /chats/{id}/members
+GET /users/{id}/chats/{id}/members
 ```
 
 ## Optional query parameters

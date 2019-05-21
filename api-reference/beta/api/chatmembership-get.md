@@ -1,7 +1,7 @@
 ---
 title: "Get Chat Conversation Membership"
 description: "Retrieve a member of a chat."
-author: "nibeauli"
+author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a [hosted image](../resources/chatmessagehostedimage.md) in a [chatMessage](../resources/chatmessage.md).
+Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -18,14 +18,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Chat.Read.All, Chat.ReadWrite.All|
+|Delegated (work or school account)|Chat.Read, Chat.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported|
 |Application| Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /chats/{id}/messages/{id}/members/{id}
+GET /chats/{id}/members/{id}
+GET /users/{id}/chats/{id}/members/{id}
 ```
 
 ## Optional query parameters
