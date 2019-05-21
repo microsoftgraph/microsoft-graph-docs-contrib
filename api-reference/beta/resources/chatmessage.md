@@ -46,7 +46,7 @@ The message can be a root message or part of a thread that is defined by the **r
 |importance| string | The importance of the message: Normal, High.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this message (for example, Like).|
 |locale|string|Locale of the message set by the client.|
-|webUrl|string|A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
+
 
 ## JSON representation
 
