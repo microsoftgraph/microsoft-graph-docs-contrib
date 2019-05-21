@@ -7,11 +7,11 @@ localization_priority: Priority
 
 # Microsoft Graph permissions reference 
 
-To access data with Microsoft Graph, the user or administrator must grant your app the correct permissions through a consent process. This document lists the permissions associated with each major set of Microsoft Graph APIs. 
+For your app to access data in Microsoft Graph, the user or administrator must grant it the correct permissions via a consent process. This topic lists the permissions associated with each major set of Microsoft Graph APIs. It also provides guidance about how to use the permissions. 
 
-The next section describes how to interpret these permission lists. To read more about how permissions work, see [Authentication and authorization basics](https://docs.microsoft.com/en-us/graph/auth/auth-concepts?view=graph-rest-1.0#microsoft-graph-permissions).
+To read more about how permissions work, see [Authentication and authorization basics](https://docs.microsoft.com/en-us/graph/auth/auth-concepts?view=graph-rest-1.0#microsoft-graph-permissions).
 
-### Microsoft Graph permission names
+## Microsoft Graph permission names
 
 Microsoft Graph permission names follow a simple pattern: _resource.operation.constraint_. For example, _User.Read_ grants permission to read the profile of the signed-in user, _User.ReadWrite_ grants permission to read and modify the profile of the signed-in user, and _Mail.Send_ grants permission to send mail on behalf of the signed-in user. 
 
@@ -24,11 +24,11 @@ The _constraint_ element of the name determines the potential extent of access y
 
 > **Note**: In delegated scenarios, the effective permissions granted to your app may be constrained by the privileges of the signed-in user in the organization.
 
-### Microsoft accounts and work or school accounts
+## Microsoft accounts and work or school accounts
 
 Not all permissions are valid for both Microsoft accounts and work or school accounts. You can check the **Microsoft Account Supported** column for each permission group to determine whether a specific permission is valid for Microsoft accounts, work or school accounts, or both.
 
-### User and group search limitations for guest users in organizations
+## User and group search limitations for guest users in organizations
 
 User and group search capabilities allow the app to search for any user or group in an organization's directory by performing queries against the `/users` or `/groups` resource set (for example, `https://graph.microsoft.com/v1.0/users`). Both administrators and users have this capability; however, guest users do not.
 
