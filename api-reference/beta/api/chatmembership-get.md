@@ -1,12 +1,12 @@
 ---
-title: "Get Chat Conversation Membership"
+title: "Get conversationMember"
 description: "Retrieve a member of a chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Get Chat Member
+# Get conversationMember
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [conversation member](../resources/conversationmember.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
 
 ## Example
 
