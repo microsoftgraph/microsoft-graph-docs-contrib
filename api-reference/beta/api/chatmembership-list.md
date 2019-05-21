@@ -57,7 +57,7 @@ Here is an example of the request.
   "name": "get_conversation_member"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/chats/{id}/members
+GET https://graph.microsoft.com/beta/me/chats/{id}/members
 ```
 
 ##### Response
@@ -74,14 +74,17 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
-[
-  {
-    "id": "id-value",
-    "displayName": "display-name-value"
-  },
-  {
-    "id": "id-value2",
-    "displayName": "display-name-value2"
-  },
-]
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+            "roles": [],
+            "displayName": "John Doe",
+            "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+            "email": null
+        }
+    ]
+}
 ```
