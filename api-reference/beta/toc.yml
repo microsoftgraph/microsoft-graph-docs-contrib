@@ -8973,6 +8973,10 @@
           href: api/chat-list-messages.md
         - name: Get message in chat
           href: api/chat-get-message.md
+        - name: Get members in chat
+          href: api/chatmembership-list.md
+        - name: Get one member in chat
+          href: api/chatmembership-get.md
       - name: Apps
         href: resources/teamsapp.md
         items:
