@@ -10,6 +10,9 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!IMPORTANT]
+> This API is in the process of being depracated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019. For more details on how to create a team from a group, check out examples 4 and 5.
+
 Create a new [team](../resources/team.md) from a [group](../resources/group.md).
 
 In order to create a team, the group must have a least one owner.
