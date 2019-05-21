@@ -1,7 +1,7 @@
 ---
 title: "Get Chat Conversation Membership"
 description: "Retrieve a member of a chat."
-author: "nibeauli"
+author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
