@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)|Chat.Read, Chat.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported|
-|Application| Not supported. |
+|Application| Chat.Read.All, Chat.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -74,6 +74,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 201
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
     "value": [
