@@ -16,8 +16,8 @@ Represents a user in a [chat](chat.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List Chat members](../api/chatmembership-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat.|
-|[Get Chat member](../api/chatmembership-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat.|
+|[List Chat members](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat.|
+|[Get Chat member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat.|
 
 ## Properties
 | Property	   | Type	|Description|
