@@ -2,7 +2,7 @@
 title: "chatMessageImportance resource type"
 description: "Represents the importance of an individual chat message within a channel or chat entity."
 localization_priority: Normal
-author: "ramjsing"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 ---
 
