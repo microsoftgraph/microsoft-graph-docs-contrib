@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an individual chat message within a [channel](channel.md) or [chat](chat.md). 
+Represents an individual chat message within a [channel](channel.md) or [chat](chat.md).
 The message can be a root message or part of a thread that is defined by the **replyToId** property in the message.
 
 ## Methods
@@ -26,15 +26,15 @@ The message can be a root message or part of a thread that is defined by the **r
 |[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a 1:1 or group chat. |
 |[Get message in chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
 
-
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| Read-only. Unique ID of the message.|
-|replyToId| string | Id of the parent message/root message of the thread. (Only applies to messages in channels not chats) |
+|id|String| Read-only. Unique Id of the message.|
+|replyToId| string | Read-only. Id of the parent message/root message of the thread. (Only applies to messages in channels not chats) |
 |from|[identitySet](identityset.md)| Read only. Details of the sender of the message.|
-|etag| string | Version number of the message. |
-|messageType|String|The type of message, current supported values are: message, chatEvent, Typing.|
+|etag| string | Read-only. Version number of the message. |
+|messageType|[chatMessageType](chatMessageType.md)|The type of message, current supported values are: message.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted, or null if not deleted. |
@@ -43,7 +43,7 @@ The message can be a root message or part of a thread that is defined by the **r
 |summary|string| Summary text of the message that could be used for push notifications and summary views or fall back views. Only applies to channel messages, not chat messages. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
-|importance| string | The importance of the message: Normal, High.|
+|importance| [chatMessageImportance](chatMessageImportance.md) | The importance of the message: normal, high, urgent.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this message (for example, Like).|
 |locale|string|Locale of the message set by the client.|
 
@@ -74,7 +74,7 @@ The following is a JSON representation of the resource.
   "replyToId": "string (identifier)",
   "from": {"@odata.type": "microsoft.graph.identitySet"},
   "etag": "string",
-  "messageType": "string",
+  "messageType": "[{"@odata.type": "microsoft.graph.chatMessageType"}]",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
   "deletedDateTime": "string (timestamp)",
@@ -83,7 +83,7 @@ The following is a JSON representation of the resource.
   "summary": "string",
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
-  "importance": "string",
+  "importance": "[{"@odata.type": "microsoft.graph.chatMessageImportance"}]",
   "policyViolation": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string",
