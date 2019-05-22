@@ -1,7 +1,7 @@
 ---
 title: "Get androidWorkProfileEnterpriseWiFiConfiguration"
 description: "Read properties and relationships of the androidWorkProfileEnterpriseWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -90,7 +90,6 @@ Content-Length: 1009
   }
 }
 ```
-
 
 
 

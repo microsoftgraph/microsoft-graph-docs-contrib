@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyConfigurationAssignments"
 description: "List properties and relationships of the groupPolicyConfigurationAssignment objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -72,7 +72,6 @@ Content-Length: 344
   ]
 }
 ```
-
 
 
 

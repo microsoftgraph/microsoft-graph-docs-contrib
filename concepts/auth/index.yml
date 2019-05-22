@@ -33,7 +33,7 @@ sections:
       className: cardsM
       columns: 2
       items:
-      - href: /graph/auth/auth-register-app-v2
+      - href: /graph/auth-register-app-v2
         html: <p>Begin your Microsoft Graph journey by registering your application.</p>
         image:
           src: ../images/index/i_get-started.svg

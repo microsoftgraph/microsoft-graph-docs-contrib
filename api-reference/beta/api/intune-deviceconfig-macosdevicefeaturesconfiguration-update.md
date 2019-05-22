@@ -1,7 +1,7 @@
 ---
 title: "Update macOSDeviceFeaturesConfiguration"
 description: "Update the properties of a macOSDeviceFeaturesConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -188,7 +188,6 @@ Content-Length: 1506
   "screenLockDisableImmediate": true
 }
 ```
-
 
 
 

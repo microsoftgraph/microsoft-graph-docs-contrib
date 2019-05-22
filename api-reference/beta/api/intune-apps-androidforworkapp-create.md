@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkApp"
 description: "Create a new androidForWorkApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -154,7 +154,6 @@ Content-Length: 1075
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

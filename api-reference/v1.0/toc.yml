@@ -35,6 +35,8 @@
       items:
       - name: Overview
         href: /graph/webhooks?toc=./ref/toc.json
+      - name: Tutorial
+        href: /graph/tutorials/change-notifications
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
     - name: Track changes
@@ -71,7 +73,7 @@
         href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
       - name: "1: Review differences"
         expanded: true
-        items: 
+        items:
         - name: Requests
           href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
         - name: Service features
@@ -89,9 +91,9 @@
         items:
         - name: App registration
           href: /graph/migrate-azure-ad-graph-app-registration?toc=./ref/toc.json
-        - name: Auth libraries 
+        - name: Auth libraries
           href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
-        - name: .NET client libraries 
+        - name: .NET client libraries
           href: /graph/migrate-azure-ad-graph-client-libraries?toc=./ref/toc.json
       - name: "4: Deploy, test, and extend"
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?toc=./ref/toc.json
@@ -3102,6 +3104,8 @@
           href: api/driveitem-list-versions.md
         - name: Preview item
           href: api/driveitem-preview.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
       - name: Permissions
         href: resources/permission.md
         items:
@@ -3152,7 +3156,7 @@
         href: resources/datapolicyoperation.md
         items:
         - name: Get data policy operation
-          href: api/datapolicyoperation-get.md  
+          href: api/datapolicyoperation-get.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -3852,6 +3856,8 @@
           href: api/list-list.md
         - name: List subsites
           href: api/site-list-subsites.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
       - name: Lists
         href: resources/list.md
         items:
@@ -3874,6 +3880,8 @@
           href: api/listitem-delete.md
         - name: List versions
           href: api/listitem-list-versions.md
+        - name: Get item analytics
+          href: api/itemanalytics-get.md
     - name: 'Social intelligence: People'
       items:
       - name: Overview
@@ -4227,47 +4235,49 @@
         - name: List range
           href: api/nameditem-range.md
     - name: Tools
-    - name: Open extensions
-      href: resources/opentypeextension.md
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      expanded: true
       items:
-      - name: Create open extension
-        href: api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: api/opentypeextension-get.md
-      - name: Update open extension
-        href: api/opentypeextension-update.md
-      - name: Delete open extension
-        href: api/opentypeextension-delete.md
-    - name: Schema extensions
-      href: resources/schemaextension.md
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-      items:
-      - name: List schema extensions
-        href: api/schemaextension-list.md
-      - name: Create schema extension
-        href: api/schemaextension-post-schemaextensions.md
-      - name: Get schema extension
-        href: api/schemaextension-get.md
-      - name: Update schema extension
-        href: api/schemaextension-update.md
-      - name: Delete schema extension
-        href: api/schemaextension-delete.md
-    - name: Change notifications
-      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-      items:
-      - name: Overview
-        href: resources/webhooks.md
-      - name: Subscription
-        href: resources/subscription.md
+      - name: Open extensions
+        href: resources/opentypeextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: List subscription
-          href: api/subscription-list.md
-        - name: Get subscription
-          href: api/subscription-get.md
-        - name: Create subscription
-          href: api/subscription-post-subscriptions.md
-        - name: Update subscription
-          href: api/subscription-update.md
-        - name: Delete subscription
-          href: api/subscription-delete.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: Update open extension
+          href: api/opentypeextension-update.md
+        - name: Delete open extension
+          href: api/opentypeextension-delete.md
+      - name: Schema extensions
+        href: resources/schemaextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: List schema extensions
+          href: api/schemaextension-list.md
+        - name: Create schema extension
+          href: api/schemaextension-post-schemaextensions.md
+        - name: Get schema extension
+          href: api/schemaextension-get.md
+        - name: Update schema extension
+          href: api/schemaextension-update.md
+        - name: Delete schema extension
+          href: api/schemaextension-delete.md
+      - name: Change notifications
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+        items:
+        - name: Overview
+          href: resources/webhooks.md
+        - name: Subscription
+          href: resources/subscription.md
+          items:
+          - name: List subscription
+            href: api/subscription-list.md
+          - name: Get subscription
+            href: api/subscription-get.md
+          - name: Create subscription
+            href: api/subscription-post-subscriptions.md
+          - name: Update subscription
+            href: api/subscription-update.md
+          - name: Delete subscription
+            href: api/subscription-delete.md

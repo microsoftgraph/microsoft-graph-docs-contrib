@@ -1,7 +1,7 @@
 ---
 title: "List appleDeviceFeaturesConfigurationBases"
 description: "List properties and relationships of the appleDeviceFeaturesConfigurationBase objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -87,7 +87,6 @@ Content-Length: 789
   ]
 }
 ```
-
 
 
 

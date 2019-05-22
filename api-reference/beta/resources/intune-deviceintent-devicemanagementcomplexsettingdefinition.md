@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementComplexSettingDefinition resource type"
 description: "Entity representing the defintion for a complex setting"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -84,7 +84,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

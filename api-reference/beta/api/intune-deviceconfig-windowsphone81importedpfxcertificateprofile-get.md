@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhone81ImportedPFXCertificateProfile"
 description: "Read properties and relationships of the windowsPhone81ImportedPFXCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -87,7 +87,6 @@ Content-Length: 818
   }
 }
 ```
-
 
 
 

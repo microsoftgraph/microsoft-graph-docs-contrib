@@ -1,7 +1,7 @@
 ---
 title: "Create windows10ImportedPFXCertificateProfile"
 description: "Create a new windows10ImportedPFXCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -123,7 +123,6 @@ Content-Length: 758
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

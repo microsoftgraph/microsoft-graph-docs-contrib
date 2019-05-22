@@ -1,7 +1,7 @@
 ---
 title: "Create windowsWifiConfiguration"
 description: "Create a new windowsWifiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -141,7 +141,6 @@ Content-Length: 958
   "forceFIPSCompliance": true
 }
 ```
-
 
 
 

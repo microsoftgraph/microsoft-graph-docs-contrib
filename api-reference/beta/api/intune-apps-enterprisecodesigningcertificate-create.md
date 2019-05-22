@@ -1,7 +1,7 @@
 ---
 title: "Create enterpriseCodeSigningCertificate"
 description: "Create a new enterpriseCodeSigningCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -102,7 +102,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
 
 
 

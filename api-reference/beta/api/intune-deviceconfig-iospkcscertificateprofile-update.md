@@ -1,7 +1,7 @@
 ---
 title: "Update iosPkcsCertificateProfile"
 description: "Update the properties of a iosPkcsCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -130,7 +130,6 @@ Content-Length: 933
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update macOsVppAppAssignedLicense"
 description: "Update the properties of a macOsVppAppAssignedLicense object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -90,7 +90,6 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

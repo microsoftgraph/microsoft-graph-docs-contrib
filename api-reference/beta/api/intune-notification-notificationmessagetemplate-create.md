@@ -1,7 +1,7 @@
 ---
 title: "Create notificationMessageTemplate"
 description: "Create a new notificationMessageTemplate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -96,7 +96,6 @@ Content-Length: 372
   ]
 }
 ```
-
 
 
 

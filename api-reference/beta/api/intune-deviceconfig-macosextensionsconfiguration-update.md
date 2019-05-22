@@ -1,7 +1,7 @@
 ---
 title: "Update macOSExtensionsConfiguration"
 description: "Update the properties of a macOSExtensionsConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -128,7 +128,6 @@ Content-Length: 782
   ]
 }
 ```
-
 
 
 

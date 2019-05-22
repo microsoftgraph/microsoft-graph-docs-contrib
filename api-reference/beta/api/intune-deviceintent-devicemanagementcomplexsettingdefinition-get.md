@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementComplexSettingDefinition"
 description: "Read properties and relationships of the deviceManagementComplexSettingDefinition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -99,7 +99,6 @@ Content-Length: 934
   }
 }
 ```
-
 
 
 

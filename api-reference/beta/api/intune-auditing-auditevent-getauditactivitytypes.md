@@ -1,7 +1,7 @@
 ---
 title: "getAuditActivityTypes function"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -72,7 +72,6 @@ Content-Length: 61
   ]
 }
 ```
-
 
 
 
