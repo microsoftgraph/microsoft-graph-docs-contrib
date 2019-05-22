@@ -7880,10 +7880,12 @@
           href: api/policy-list-appliesto.md
       - name: Privileged Identity Management
         items:
+        - name: Overview
+          href: resources/privilegedidentitymanagement-root.md
         - name: Azure AD
           items:
-          - name: Overview
-            href: resources/privilegedidentitymanagement-root.md
+          - name: Azure AD
+            href: resources/privilegedidentitymanagement-directory.md
           - name: Privileged role
             href: resources/privilegedrole.md
             items:
@@ -7947,7 +7949,7 @@
               href: api/privilegedoperationevent-list.md
         - name: Azure resources
           items:
-          - name: Overview
+          - name: Azure resources
             href: resources/privilegedidentitymanagement-resources.md
           - name: Managed resources
             href: resources/governanceresource.md

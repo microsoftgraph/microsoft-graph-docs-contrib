@@ -1,6 +1,6 @@
 ---
 title: "Privileged Identity Management - Azure resources"
-description: "API for Azure AD Privileged Identity Management to manage Azure resources."
+description: "APIs for Azure AD Privileged Identity Management to manage Azure resources."
 localization_priority: Priority
 ---
 
@@ -8,9 +8,11 @@ localization_priority: Priority
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use [Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) for Azure resources to set up just-in-time access workflow for your Azure infrastructure roles at a management group, subscription, resource group, and resource level. These include built-in roles like Owner and Contributor as well as custom RBAC roles. PIM for Azure resource API includes the following REST resources.
+You can use [Azure Active Directory (Azure AD) Privileged Identity Management (PIM)](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) for Azure resources to set up just-in-time access workflow for your Azure infrastructure roles at a management group, subscription, resource group, and resource level. These include built-in roles like Owner and Contributor as well as custom RBAC roles.
 
-| Use case | REST resource | See also |
+## Common use cases for PIM and Azure resources using a REST API
+
+| Use case | Resource | See also |
 | --- | --- | --- |
 | Onboard a resource (subscriptions, resource group, resource etc.) for PIM management, list all the managed resources requester have access to, and retrieve relationships of a managed resource. | [governanceResource](governanceresource.md) | [Role discovery and management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-discover-resources) |
 | List all the roles for a resource or get details of a particular role in a specified resource. | [governanceRoleDefinition](governanceroledefinition.md) |  |
