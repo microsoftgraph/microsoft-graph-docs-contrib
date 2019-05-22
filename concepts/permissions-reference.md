@@ -9,7 +9,7 @@ localization_priority: Priority
 
 To access data with Microsoft Graph, the user or administrator must grant your app the correct permissions through a consent process. This document lists the permissions associated with each major set of Microsoft Graph APIs. 
 
-The next section describes how to interpret these permission lists. To read more about how permissions work, see [Authentication and authorization basics](https://docs.microsoft.com/en-us/graph/auth/auth-concepts?view=graph-rest-1.0#microsoft-graph-permissions).
+The next section describes how to interpret these permission lists. To read more about how permissions work, see [Authentication and authorization basics](https://docs.microsoft.com/graph/auth/auth-concepts?view=graph-rest-1.0#microsoft-graph-permissions).
 
 ### Microsoft Graph permission names
 
@@ -1212,7 +1212,7 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 
 ## Permission scenarios
 
-This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](#delegated-permissions-application-permissions-and-effective-permissions).
+This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](./auth/auth-concepts#microsoft-graph-permissions).
 
 ### Access scenarios on the User resource
 

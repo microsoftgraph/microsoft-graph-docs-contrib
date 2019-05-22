@@ -28,7 +28,7 @@ The contacts API lets you keep your customers organized, in close parity as the 
 
 ### Share contact information
 
-The contacts API lets you get contact items of the signed-in user, or of the users who have shared or delegated their contacts to the signed-in user. For example, if Garth has shared a contact folder with John, or if Garth has delegated access to John, then [delegated permissions](permissions-reference.md#delegated-permissions-application-permissions-and-effective-permissions) from John would give you read access to Garth's shared calendar and contents as well.
+The contacts API lets you get contact items of the signed-in user, or of the users who have shared or delegated their contacts to the signed-in user. For example, if Garth has shared a contact folder with John, or if Garth has delegated access to John, then [delegated permissions](./auth/auth-concepts#microsoft-graph-permissions) from John would give you read access to Garth's shared calendar and contents as well.
 
 
 ### Leverage people API in Microsoft Graph to make better use of all people data
