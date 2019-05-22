@@ -13,6 +13,9 @@ localization_priority: Priority
 - [APIs for Azure AD roles](privilegedidentitymanagement-directory.md)
 - [APIs for Azure resource roles](privilegedidentitymanagement-resources.md)
 
+> [!IMPORTANT]
+> The API to manage Azure AD roles will change between June and November of 2019 to follow the namespace and convention of the [Azure resource API](privilegedidentitymanagement-resources.md). Azure AD PIM will become a resource under the Azure resource convention. If this change will directly affect your tenant, please complete the [Graph API change for Azure AD PIM form](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzfBSoy7dT5DqNLWwotW3OFUNFFMRlRLSUtRNEdDWEZHN05LT09IWjkyTS4u) to get additional information, support, and the ability to schedule a time for this API change.
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
