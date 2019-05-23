@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-JSON2MD ERROR: COULD NOT DETERMINE API PATH
+GET /places/microsoft.graph.roomlist('id')?$expand=Rooms
 ```
 
 ## Optional query parameters
