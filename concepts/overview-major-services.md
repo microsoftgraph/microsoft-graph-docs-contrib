@@ -96,7 +96,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| User notifications | User notifications | Enables app experiences to build user-centric and cross-platform notification experiences including user-based fan-out, universal dismiss, and accessing notification history. | [Overview for cross-device experiences](notifications-concept-overview.md) |
+| User notifications | User notifications | Enables app experiences to build user-centric and cross-platform notification experiences including user-based fan-out, universal dismiss, and accessing notification history. | [Enabling human-centric notification experiences using Microsoft Graph notifications](notifications-concept-overview.md) |
 
 
 ## Usage reports
