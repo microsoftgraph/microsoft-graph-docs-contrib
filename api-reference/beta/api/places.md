@@ -1,9 +1,9 @@
 ---
 title: "places resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Provides more details about rooms annd roomlist in a company."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "vrod9429"
+ms.prod: "Outlook"
 doc_type: "resourcePageType"
 ---
 
