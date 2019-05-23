@@ -87,6 +87,52 @@ Content-type: application/json
 }
 ```
 
+### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_featurerolloutpolicy"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/{id}?$expand=appliesTo
+```
+
+### Response
+
+The following is an example of the response.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.featureRolloutPolicy"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "id": "id-value",
+  "displayName": "displayName-value",
+  "description": "description-value",
+  "feature": "feature-value",
+  "isEnabled": true,
+  "isAppliedToOrganization": false,
+  "appliesTo@odata.context": "https://graph.microsoft.com/beta/directory/featureRolloutPolicies('id')/appliesTo",
+    "appliesTo": [
+        {
+            "id": "id-value",
+            "objectType": "Group"
+        }
+    ]
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

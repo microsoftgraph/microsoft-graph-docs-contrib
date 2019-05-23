@@ -8,16 +8,15 @@ localization_priority: Normal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creating a Feature rollout policy helps tenant administrators to rollout features of Azure AD to a specific group or users instead enabling features for entire organization. This minimizes the impact and helps admins to test and rollout authentication related features gradually.
+Creating a Feature rollout policy helps tenant administrators to rollout features of Azure AD to a specific group instead enabling features for entire organization. This minimizes the impact and helps admins to test and rollout authentication related features gradually.
 
 The list of supported features and their corresponding pre-requisites are specified below.
 
 ## Limitations of feature rollout
 
-1. Each feature could be rolled out to a maximum of 10 Groups.
-2. Only users and Groups are supported currently.
-3. Only groups will be listed will be listed with appliesTo field users won't be.
-4. Dynamic groups and nested groups aren't supported currently.
+1. Each feature supports a maximum of 10 groups.
+2. The appliesTo field only supports groups.
+3. Dynamic groups and nested groups aren't supported currently.
 
 ## Pre-requisites
 
