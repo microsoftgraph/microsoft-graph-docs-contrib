@@ -14,7 +14,10 @@ Invalidates all the refresh tokens issued to applications for a user (as well as
 
 If the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error. If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
+[!NOTE After calling **revokeSignInSessions** there may be a small delay of a few minutes before tokens are revoked.]
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type                        | Permissions (from least to most privileged)              |
