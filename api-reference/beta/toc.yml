@@ -7879,116 +7879,125 @@
         - name: List applied to applications
           href: api/policy-list-appliesto.md
       - name: Privileged Identity Management
-        href: resources/privilegedidentitymanagement-root.md
         items:
-        - name: Privileged role
-          href: resources/privilegedrole.md
+        - name: Privileged Identity Management
+          href: resources/privilegedidentitymanagement-root.md
+        - name: Azure AD
           items:
-          - name: List privileged roles
-            href: api/privilegedrole-list.md
-          - name: Get privileged role
-            href: api/privilegedrole-get.md
-          - name: List role assignments
-            href: api/privilegedrole-list-assignments.md
-          - name: Self role activate
-            href: api/privilegedrole-selfactivate.md
-          - name: Self role deactivate
-            href: api/privilegedrole-selfdeactivate.md
-          - name: Get role settings
-            href: api/privilegedrolesettings-get.md
-          - name: Update role settings
-            href: api/privilegedrolesettings-update.md
-          - name: Get role summary
-            href: api/privilegedrolesummary-get.md
-        - name: Privileged role assignment
-          href: resources/privilegedroleassignment.md
+          - name: Azure AD
+            href: resources/privilegedidentitymanagement-directory.md
+          - name: Privileged role
+            href: resources/privilegedrole.md
+            items:
+            - name: List privileged roles
+              href: api/privilegedrole-list.md
+            - name: Get privileged role
+              href: api/privilegedrole-get.md
+            - name: List role assignments
+              href: api/privilegedrole-list-assignments.md
+            - name: Self role activate
+              href: api/privilegedrole-selfactivate.md
+            - name: Self role deactivate
+              href: api/privilegedrole-selfdeactivate.md
+            - name: Get role settings
+              href: api/privilegedrolesettings-get.md
+            - name: Update role settings
+              href: api/privilegedrolesettings-update.md
+            - name: Get role summary
+              href: api/privilegedrolesummary-get.md
+          - name: Privileged role assignment
+            href: resources/privilegedroleassignment.md
+            items:
+            - name: List role assignments
+              href: api/privilegedroleassignment-list.md
+            - name: Get role assignment
+              href: api/privilegedroleassignment-get.md
+            - name: Create role assignments
+              href: api/privilegedroleassignment-post-privilegedroleassignments.md
+            - name: Delete role assignment
+              href: api/privilegedroleassignment-delete.md
+            - name: Get my role assignments
+              href: api/privilegedroleassignment-my.md
+            - name: Make eligible role assignment
+              href: api/privilegedroleassignment-makeeligible.md
+            - name: Make permanent role assignment
+              href: api/privilegedroleassignment_makepermanent.md
+          - name: Privileged role assignment request
+            href: resources/privilegedroleassignmentrequest.md
+            items:
+            - name: List role assignments
+              href: api/privilegedroleassignmentrequest-list.md
+            - name: Create role assignments
+              href: api/privilegedroleassignmentrequest-post.md
+            - name: Cancel role assignment
+              href: api/privilegedroleassignmentrequest-cancel.md
+            - name: Get my role assignments
+              href: api/privilegedroleassignmentrequest-my.md
+          - name: Privileged approval
+            href: resources/privilegedapproval.md
+            items:
+            - name: List privileged approvals
+              href: api/privilegedapproval-list.md
+            - name: Get privileged approval
+              href: api/privilegedapproval-get.md
+            - name: Update role assignment
+              href: api/privilegedapproval-update.md
+          - name: Audit event
+            href: resources/privilegedoperationevent.md
+            items:
+            - name: List audit events
+              href: api/privilegedoperationevent-list.md
+        - name: Azure resources
           items:
-          - name: List role assignments
-            href: api/privilegedroleassignment-list.md
-          - name: Get role assignment
-            href: api/privilegedroleassignment-get.md
-          - name: Create role assignments
-            href: api/privilegedroleassignment-post-privilegedroleassignments.md
-          - name: Delete role assignment
-            href: api/privilegedroleassignment-delete.md
-          - name: Get my role assignments
-            href: api/privilegedroleassignment-my.md
-          - name: Make eligible role assignment
-            href: api/privilegedroleassignment-makeeligible.md
-          - name: Make permanent role assignment
-            href: api/privilegedroleassignment_makepermanent.md
-        - name: Privileged role assignment request
-          href: resources/privilegedroleassignmentrequest.md
-          items:
-          - name: List role assignments
-            href: api/privilegedroleassignmentrequest-list.md
-          - name: Create role assignments
-            href: api/privilegedroleassignmentrequest-post.md
-          - name: Cancel role assignment
-            href: api/privilegedroleassignmentrequest-cancel.md
-          - name: Get my role assignments
-            href: api/privilegedroleassignmentrequest-my.md
-        - name: Privileged approval
-          href: resources/privilegedapproval.md
-          items:
-          - name: List privileged approvals
-            href: api/privilegedapproval-list.md
-          - name: Get privileged approval
-            href: api/privilegedapproval-get.md
-          - name: Update role assignment
-            href: api/privilegedapproval-update.md
-        - name: Audit event
-          href: resources/privilegedoperationevent.md
-          items:
-          - name: List audit events
-            href: api/privilegedoperationevent-list.md
-        - name: Managed resources
-          href: resources/governanceresource.md
-          items:
-          - name: List
-            href: api/governanceresource-list.md
-          - name: Get
-            href: api/governanceresource-get.md
-          - name: Register
-            href: api/governanceresource-register.md
-        - name: Role definitions
-          href: resources/governanceroledefinition.md
-          items:
-          - name: List
-            href: api/governanceroledefinition-list.md
-          - name: Get
-            href: api/governanceroledefinition-get.md
-        - name: Role settings
-          href: resources/governancerolesetting.md
-          items:
-          - name: List
-            href: api/governancerolesetting-list.md
-          - name: Get
-            href: api/governancerolesetting-get.md
-          - name: Update
-            href: api/governancerolesetting-update.md
-        - name: Role assignments
-          href: resources/governanceroleassignment.md
-          items:
-          - name: List
-            href: api/governanceroleassignment-list.md
-          - name: Get
-            href: api/governanceroleassignment-get.md
-          - name: Export
-            href: api/governanceroleassignment-export.md
-        - name: Role assignment requests
-          href: resources/governanceroleassignmentrequest.md
-          items:
-          - name: List
-            href: api/governanceroleassignmentrequest-list.md
-          - name: Create
-            href: api/governanceroleassignmentrequest-post.md
-          - name: Get
-            href: api/governanceroleassignmentrequest-get.md
-          - name: Update
-            href: api/governanceroleassignmentrequest-update.md
-          - name: Cancel
-            href: api/governanceroleassignmentrequest-cancel.md
+          - name: Azure resources
+            href: resources/privilegedidentitymanagement-resources.md
+          - name: Managed resources
+            href: resources/governanceresource.md
+            items:
+            - name: List
+              href: api/governanceresource-list.md
+            - name: Get
+              href: api/governanceresource-get.md
+            - name: Register
+              href: api/governanceresource-register.md
+          - name: Role definitions
+            href: resources/governanceroledefinition.md
+            items:
+            - name: List
+              href: api/governanceroledefinition-list.md
+            - name: Get
+              href: api/governanceroledefinition-get.md
+          - name: Role settings
+            href: resources/governancerolesetting.md
+            items:
+            - name: List
+              href: api/governancerolesetting-list.md
+            - name: Get
+              href: api/governancerolesetting-get.md
+            - name: Update
+              href: api/governancerolesetting-update.md
+          - name: Role assignments
+            href: resources/governanceroleassignment.md
+            items:
+            - name: List
+              href: api/governanceroleassignment-list.md
+            - name: Get
+              href: api/governanceroleassignment-get.md
+            - name: Export
+              href: api/governanceroleassignment-export.md
+          - name: Role assignment requests
+            href: resources/governanceroleassignmentrequest.md
+            items:
+            - name: List
+              href: api/governanceroleassignmentrequest-list.md
+            - name: Create
+              href: api/governanceroleassignmentrequest-post.md
+            - name: Get
+              href: api/governanceroleassignmentrequest-get.md
+            - name: Update
+              href: api/governanceroleassignmentrequest-update.md
+            - name: Cancel
+              href: api/governanceroleassignmentrequest-cancel.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
