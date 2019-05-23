@@ -21,7 +21,7 @@
   - name: Use the API
     items:
     - name: Overview
-      href: /graph/use-the-api?toc=./ref/toc.json
+      href: /graph/use-the-api?context=graph/api/context
     - name: Paging
       href: /graph/paging?toc=./ref/toc.json
     - name: Use query parameters
