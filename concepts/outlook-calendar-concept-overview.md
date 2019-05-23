@@ -13,7 +13,6 @@ initiate online conversations, share files, and collaborate in groups.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/_ST4nyz4g9E]
 
-
 ## Why integrate with Outlook calendar?
 
 ### Reach hundreds of millions of customers and build rich scenarios
@@ -26,10 +25,9 @@ Customers like how Outlook lets them organize their time for work, family, and p
 
 - In Outlook, customers can create individual calendars for work, family, and other purposes, and organize them in calendar groups. They can turn on the free **Birthdays** and **Holiday** calendar to remind them of contacts' birthdays and local holidays. They can add calendars that match their interests, such as calendars for sport teams and TV programs. Customers can select and overlay calendars, and see their events in the same view. Through the calendar API, your app can similarly organize [calendars](/graph/api/resources/calendar?view=graph-rest-1.0) in [calendar groups](/graph/api/resources/calendargroup?view=graph-rest-1.0), and interact with  interesting calendars just like any other **calendar** in the user's mailbox.
 
-- Outlook customers can apply categories to events, messages, contacts, tasks, and group posts in a consistent way to enhance organization and disovery. The calendar API lets you access and [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0), which opens up additional creative scenarios. For example, an athletic club can organize a sports tournament and offer an app that differentiates emails and events for each sport with their own color category. For last-minute news such as unforeseen timetable changes, the app can also set the **importance** property of those events and emails to alert customers.
+- Outlook customers can apply categories to events, messages, contacts, tasks, and group posts in a consistent way to enhance organization and discovery. The calendar API lets you access and [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0), which opens up additional creative scenarios. For example, an athletic club can organize a sports tournament and offer an app that differentiates emails and events for each sport with their own color category. For last-minute news such as unforeseen timetable changes, the app can also set the **importance** property of those events and emails to alert customers.
 
 - In a calendar folder, you can [create](/graph/api/user-post-events?view=graph-rest-1.0) and [update](/graph/api/event-update?view=graph-rest-1.0) single instance [events](/graph/api/resources/event?view=graph-rest-1.0), or [schedule and maintain recurring events](outlook-schedule-recurring-events.md). You can let your customers respond to [meeting requests](/graph/api/resources/eventmessage?view=graph-rest-1.0), and [snooze](/graph/api/event-snoozereminder?view=graph-rest-1.0) or [dismiss](/graph/api/event-dismissreminder?view=graph-rest-1.0) [reminders](/graph/api/resources/reminder?view=graph-rest-1.0) using the associated **event** navigation property.
-
 
 ### Help customers stay synchronized and navigate their day
 
@@ -46,11 +44,10 @@ The calendar API helps customers navigate their day and enhance productivity:
 ### Enhance collaboration
 
 - In Outlook, customers can share calendars with one another and give permissions to read, write, or delete calendar contents. Or, they can delegate a calendar to let another customer respond to meeting requests on their behalf. Programmatically, while you cannot initiate a share or delegate action on behalf of a user, you can use a set of properties to verify the sharing status and enable scenarios around shared or delegated calendars: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, and **isSharedWithMe**.
-- The calendar API lets you get calendar items of the signed-in user, or users who have shared or delegated their calendars to the signed-in user. For example, if Garth has shared a calendar with John, or if Garth has delegated access to John, then [delegated permissions](./auth/auth-concepts#microsoft-graph-permissions) from John would give you read access to Garth's shared calendar and contents as well.
+- The calendar API lets you get calendar items of the signed-in user, or users who have shared or delegated their calendars to the signed-in user. For example, if Garth has shared a calendar with John, or if Garth has delegated access to John, then [delegated permissions](auth/auth-concepts.md#microsoft-graph-permissions) from John would give you read access to Garth's shared calendar and contents as well.
 - ** Office 365 groups make it convenient for group members to collaborate and access group conversations and calendars right in Outlook. Aside from a few minor differences between group calendars and user calendars, the calendar API lets you interact with group calendars just like user calendars. See the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) resource for more information.
 
 ** Denotes features specifically applicable to Outlook calendars in work or school accounts.
-
 
 ### Schedule smart
 
@@ -62,7 +59,6 @@ Outlook and the calendar API offer many smart conveniences to schedule events:
 - ** You can [look up the free/busy information for users and resources](outlook-get-free-busy-schedule.md) for a specific time period. You can then use this data to apply to different scenarios including resource planning and event scheduling.
 - ** If your scenario involves scheduling meetings at an optimal time, you can consider [using findMeetingTimes to identify possible times or locations to meet](findmeetingtimes-example.md). The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) function considers the free/busy status of the attendees, and any preferred rooms, time, and other constraints you provide. If the first try doesn't return a common meeting time, check the reason, adjust your criteria and call **findMeetingTimes** again.
 
-
 ### Teleconference across multiple locations and time zones
 
 With globalization, today's business meetings often involve attendees participating from different locations and time zones. Here's how you can use the calendar API to manage such meetings:
@@ -71,7 +67,6 @@ With globalization, today's business meetings often involve attendees participat
 - Outlook gives customers the flexibility to organize events and specify a time zone for each of the start and end times of an event. To support this flexibility, by default, the calendar API returns the **start** and **end** times of an **event** in UTC, and provides the **originalStartTimeZone** and **originalEndTimeZone** properties to note the time zones used when the event was created.
 - Alternatively, you can specify the `Prefer: outlook.timezone="{time zone name}"` header so that a GET event operation returns **start** and **end** in the time zone you specify. The time zone name can be any of those supported by Windows, as well as those on this [list](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). See an [example](/graph/api/event-get?view=graph-rest-1.0#request-1) of the `Prefer` header in use.
 
-
 ### Take advantage of social intelligence and other developer conveniences in Microsoft Graph
 
 Use the [people API](people-example.md) in Microsoft Graph to connect to [people data](/graph/api/resources/person?view=graph-rest-1.0) which is based on a user's communication and collaboration patterns, and business relationships. You can implement controls such as a people picker, and suggest persons relevant to the user when organizing meetings on the user's behalf.
@@ -79,11 +74,11 @@ Use the [people API](people-example.md) in Microsoft Graph to connect to [people
 Save overhead in storing and managing app data in external data stores. With Microsoft Graph, you can store custom app data as [open extensions](extensibility-overview.md#open-extensions) in individual resource instances. If you require the data to be typed, or would like to be able to share the typed schema, you can store custom app data in [schema extensions](extensibility-overview.md#schema-extensions).
 
 ## API reference
+
 Looking for the API reference for this service?
 
 - [Outlook calendar API in Microsoft Graph v1.0](/graph/api/resources/calendar?view=graph-rest-1.0)
 - [Outlook calendar API in Microsoft Graph beta](/graph/api/resources/calendar?view=graph-rest-beta)
-
 
 ## Next steps
 
