@@ -10,9 +10,11 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new user.
+Create a new user.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
+
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -33,6 +35,7 @@ POST /users
 | Content-Type  | application/json  |
 
 ## Request body
+
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
 The following table shows the properties that are required when you create a user.
@@ -46,7 +49,9 @@ The following table shows the properties that are required when you create a use
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
 |userPrincipalName |string |The user principal name (someuser@contoso.com).|
 
-Since the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
+Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
+
+[!NOTE Federated users created using this API will be forced to sign-in every 12 hours by default.  For more information on how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions)].
 
 ## Response
 
