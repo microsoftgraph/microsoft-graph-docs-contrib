@@ -7779,19 +7779,6 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
-      - name: Trust Framework policy
-        href: resources/trustframeworkpolicy.md
-        items:
-        - name: List
-          href: api/trustframework-list-trustframeworkpolicies.md
-        - name: Create
-          href: api/trustframework-post-trustframeworkpolicy.md
-        - name: Get
-          href: api/trustframeworkpolicy-get.md
-        - name: Update
-          href: api/trustframework-put-trustframeworkpolicy.md
-        - name: Delete
-          href: api/trustframeworkpolicy-delete.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
@@ -8075,6 +8062,19 @@
           href: api/agreement-delete.md
         - name: List acceptance status
           href: api/user-list-agreementacceptances.md
+      - name: Trust Framework policy
+        href: resources/trustframeworkpolicy.md
+        items:
+        - name: List
+          href: api/trustframework-list-trustframeworkpolicies.md
+        - name: Create
+          href: api/trustframework-post-trustframeworkpolicy.md
+        - name: Get
+          href: api/trustframeworkpolicy-get.md
+        - name: Update
+          href: api/trustframework-put-trustframeworkpolicy.md
+        - name: Delete
+          href: api/trustframeworkpolicy-delete.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
