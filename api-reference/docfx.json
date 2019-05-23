@@ -170,7 +170,7 @@
          "src": "v1.0/",
          "dest": "api/",
          "group": "v1.0"
-      }
+      },
       {
         "files": [
            "context.yml"
