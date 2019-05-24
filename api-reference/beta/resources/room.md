@@ -1,6 +1,6 @@
 ---
 title: "room resource type"
-description: "List of rooms in tenant and room details"
+description: "Specifies the properties of a room in a tenant."
 localization_priority: Normal
 author: "vrod9429"
 ms.prod: "Outlook"
@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # room resource type
 
-Get a list of rooms in your tenant. Details about each room is also provided.
+Specifies the properties of a room in a tenant.
 
 ## Methods
 
