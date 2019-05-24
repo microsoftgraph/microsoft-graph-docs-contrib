@@ -1,7 +1,7 @@
 ---
 title: "Device configuration in Microsoft Intune - Microsoft Gaaph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define configure devices for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -26,8 +26,10 @@ The following Graph resources are available to manage settings and features on d
 - [Android custom configuration](intune-deviceconfig-androidcustomconfiguration.md)
 - [Android device owner app auto update policy type](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Android device owner battery plugged mode](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [Android device owner compliance policy](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Android device owner default app permission policy type](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Android device owner general device configuration](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
+- [Android device owner play store mode](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android device owner required password type](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android device owner system update install type](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Android device owner Wi-Fi configuration](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
@@ -164,6 +166,9 @@ The following Graph resources are available to manage settings and features on d
 - [Device configuration user state summary](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [Device configuration user status](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device guard local system authority credential guard type](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [Device management derived credential issuer](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
+- [Device management derived credential notification type](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
+- [Device management derived credential settings](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [Device management settings](intune-deviceconfig-devicemanagementsettings.md)
 - [Device management user rights local user or group](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Device management user rights setting](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -191,6 +196,7 @@ The following Graph resources are available to manage settings and features on d
 - [Edge telemetry mode](intune-deviceconfig-edgetelemetrymode.md)
 - [Edition upgrade configuration](intune-deviceconfig-editionupgradeconfiguration.md)
 - [Edition upgrade license type](intune-deviceconfig-editionupgradelicensetype.md)
+- [Email certificate type](intune-deviceconfig-emailcertificatetype.md)
 - [Email sync duration](intune-deviceconfig-emailsyncduration.md)
 - [Email sync schedule](intune-deviceconfig-emailsyncschedule.md)
 - [Encryption readiness state](intune-deviceconfig-encryptionreadinessstate.md)
@@ -237,6 +243,7 @@ The following Graph resources are available to manage settings and features on d
 - [iOS certificate profile base](intune-deviceconfig-ioscertificateprofilebase.md)
 - [iOS compliance policy](intune-deviceconfig-ioscompliancepolicy.md)
 - [iOS custom configuration](intune-deviceconfig-ioscustomconfiguration.md)
+- [iOS derived credential authentication configuration](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [iOS device features configuration](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
 - [iOS EAS email profile configuration](intune-deviceconfig-ioseasemailprofileconfiguration.md)
 - [iOS EDU certificate settings](intune-deviceconfig-ioseducertificatesettings.md)
@@ -284,10 +291,13 @@ The following Graph resources are available to manage settings and features on d
 - [macOS device features configuration](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
 - [macOS endpoint protection configuration](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [macOS enterprise Wi-Fi configuration](intune-deviceconfig-macosenterprisewificonfiguration.md)
+- [macOS extensions configuration](intune-deviceconfig-macosextensionsconfiguration.md)
 - [macOS firewall application](intune-deviceconfig-macosfirewallapplication.md)
 - [macOS gatekeeper app sources](intune-deviceconfig-macosgatekeeperappsources.md)
 - [macOS general device configuration](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
 - [macOS imported PFX certificate profile](intune-deviceconfig-macosimportedpfxcertificateprofile.md)
+- [macOS kernel extension](intune-deviceconfig-macoskernelextension.md)
+- [macOS launch item](intune-deviceconfig-macoslaunchitem.md)
 - [macOS SCEP certificate profile](intune-deviceconfig-macosscepcertificateprofile.md)
 - [macOS trusted root certificate](intune-deviceconfig-macostrustedrootcertificate.md)
 - [macOS VPN configuration](intune-deviceconfig-macosvpnconfiguration.md)

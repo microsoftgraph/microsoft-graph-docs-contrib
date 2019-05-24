@@ -1,7 +1,7 @@
 ---
 title: "windowsDeliveryOptimizationConfiguration resource type"
 description: "Windows Delivery Optimization configuration"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

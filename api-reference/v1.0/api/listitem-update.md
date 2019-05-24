@@ -1,12 +1,12 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: Update a record in a SharePoint list
+title: Update listItem
+description: Update the properties on a **[listItem][]**.
 localization_priority: Priority
 ms.prod: "sharepoint"
 ---
-# Update an item in a list
+# Update listItem
 
 Update the properties on a **[listItem][]**.
 
@@ -24,6 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
+Update the properties on a listItem.
+```http
+PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}
+```
+
+Update column values on a listItem.
 ```http
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
@@ -34,15 +40,18 @@ PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{it
 |:-----------|:------|:--------------------------------------------------------
 | _if-match_ | etag  | If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.
 
-
-## Request body
-
+## Request body 
 In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.
+
+## Response 
+
+If successful, this method returns a `201 Created` response code and a [fieldValueSet][] in the response body for the updated list item.
 
 ## Example
 
-Here is an example that updates the Color and Quantity fields of the list item with new values.
-All other values on the listItem are left alone. 
+The following example updates the **Color** and **Quantity** fields of the list item with new values. All other values on the **listItem** are left alone. 
+
+### Request 
 
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
@@ -56,9 +65,7 @@ Content-Type: application/json
 }
 ```
 
-## Response
-
-If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.
+### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
@@ -72,6 +79,14 @@ Content-type: application/json
   "Quantity": 934
 }
 ```
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/update-listitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 [fieldValueSet]: ../resources/fieldvalueset.md
 [listItem]: ../resources/listitem.md
@@ -81,5 +96,8 @@ Content-type: application/json
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Update"
+  "tocPath": "ListItem/Update",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/listitem-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

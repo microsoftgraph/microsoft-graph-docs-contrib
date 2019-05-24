@@ -1,7 +1,7 @@
 ---
 title: "platform enum type"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "androidWiFiSecurityType enum type"
 description: "Wi-Fi Security Types for Android."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

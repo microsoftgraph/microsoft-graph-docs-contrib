@@ -3,7 +3,7 @@ documentType: LandingData
 title: Microsoft Graph documentation
 metadata:
   title: Microsoft Graph documentation
-  description: Learn how you can use Microsoft Graph to build apps for organizations and consumers that interact with the data of millions of users. 
+  description: Learn how you can use Microsoft Graph to build apps for organizations and consumers that interact with the data of millions of users.
   services: active-directory
   author: CelesteDG
   manager: mtillman
@@ -16,12 +16,12 @@ abstract:
   description: Microsoft Graph provides a unified programmability model that you can use to build apps for organizations and consumers that interact with the data of millions of users. You can use the Microsoft Graph REST APIs to access data in Azure Active Directory, Office 365 services, Enterprise Mobility and Security services, Windows 10 services, Dynamics 365, and more. Explore our documentation to learn more about how to use Microsoft Graph APIs.
   aside:
     image:
-      alt: 
+      alt:
       height: 110
       src: ./images/index/whatsnew-video.png
-      width: 250  
-    title: What's new in Microsoft Graph (12:39)
-    href: https://www.youtube.com/watch?v=3X10r2VVLCg
+      width: 250
+    title: Microsoft Graph Overview (4:46)
+    href: https://youtu.be/PI9NO5rayiY
     width: 250
 sections:
 
@@ -53,15 +53,29 @@ sections:
         title: Use the API
       - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
         html: <p>Use the Microsoft Graph REST API v1.0 to meet your practical production needs.</p>
-        image: 
+        image:
           src: ./images/index/i_api-reference.svg
         title: Microsoft Graph REST API v1.0
       - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
         html: <p>Try out the Microsoft Graph beta endpoint.</p>
-        image: 
+        image:
           src: ./images/index/i_api.svg
         title: Microsoft Graph REST API Beta
-   
+
+  - title: What's new in the docs?
+    items:
+    - type: list
+      style: cards
+      className: cardsH
+      items:
+      - title: Generally available
+        html: <p><a style="color:rgb(0, 120, 212);" href="/graph/data-connect-concept-overview">Microsoft Graph data connect</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/outlook-get-free-busy-schedule">Get free-busy schedule</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0">Audit and sign-in logs</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/identityprovider?view=graph-rest-1.0">Identity providers</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/auth">Improved auth guides</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/migrate-azure-ad-graph-overview">Migrating apps from Azure AD Graph to Microsoft Graph</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/securescore?view=graph-rest-1.0">Tenant secure score</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/sdks/sdks-overview?view=graph-rest-1.0">SDK guides</a></p><p>API snippets (<a style="color:rgb(0, 120, 212);" href="/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code">example</a>)</p>
+      - title: Preview
+        html: <p><a style="color:rgb(0, 120, 212);" href="/graph/dynamics-business-central-concept-overview">Dynamics 365 Business Central</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/driveitem-follow?view=graph-rest-beta">Follow</a> and <a style="color:rgb(0, 120, 212);" href="/graph/api/driveitem-unfollow?view=graph-rest-beta">unfollow</a> documents</p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/driveitem-invite?view=graph-rest-beta#request-body">Sharing invitation</a> includes expiration and password</p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/accessreviews-root?view=graph-rest-beta">Access reviews</a> support application permissions</p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/applicationsigninsummary?view=graph-rest-beta">Application sign-in reports</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta">Custom sign-in and sign-up in Azure AD B2C</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/riskyuser?view=graph-rest-beta">Risky user</a> and <a style="color:rgb(0, 120, 212);" href="/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta">history</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/outlook-get-mime-message">Get MIME content of messages</a>, <a style="color:rgb(0, 120, 212);" href="/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment">Get raw/MIME content of attachments</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/webhooks-outlook-authz">Reduce missing change notifications</a></p><p><a style="color:rgb(0, 120, 212);" href="graph/api/resources/tiindicator?view=graph-rest-beta">Threat indicators</a>, <a style="color:rgb(0, 120, 212);" href="/graph/api/resources/securityaction?view=graph-rest-beta">Security actions</a></p><p><a style="color:rgb(0, 120, 212);" href="/graph/api/resources/shift?view=graph-rest-beta">Shifts management</a>, <a style="color:rgb(0, 120, 212);" href="/graph/api/resources/chat?view=graph-rest-beta">1:1 chats</a></p>
+    
+    - type: paragraph
+      text: See more in the <a href="/graph/changelog">changelog</a>!
+
   - title: Supported platforms
     items:
     - type: paragraph
@@ -101,7 +115,7 @@ sections:
           title: Ruby
         - image:
             src: ./images/index/logo_windows.svg
-          title: UWP     
+          title: UWP
         - image:
             src: ./images/index/logo_xamarin.svg
           title: Xamarin
@@ -112,8 +126,8 @@ sections:
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-angular
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
-          - href: 
-          - href: 
+          - href:
+          - href:
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-node
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-php
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-Python
@@ -122,18 +136,18 @@ sections:
           - href: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
         - title: Tutorial
           values:
-          - href: 
+          - href: /graph/tutorials/android
           - href: /graph/tutorials/angular
           - href: /graph/tutorials/aspnet
-          - href: 
-          - href: 
-          - href: 
+          - href:
+          - href:
+          - href:
           - href: /graph/tutorials/node
           - href: /graph/tutorials/php
           - href: /graph/tutorials/python
           - href: /graph/tutorials/ruby
           - href: /graph/tutorials/uwp
-          - href: 
+          - href: /graph/tutorials/xamarin
         - title: SDK
           values:
           - href: https://github.com/microsoftgraph/msgraph-sdk-android
@@ -144,7 +158,7 @@ sections:
           - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
           - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
           - href: https://github.com/microsoftgraph/msgraph-sdk-php
-          - href: 
+          - href:
           - href: https://github.com/microsoftgraph/msgraph-sdk-ruby
           - href: https://www.nuget.org/packages/Microsoft.Graph
           - href: https://www.nuget.org/packages/Microsoft.Graph
@@ -168,6 +182,6 @@ sections:
         title: Microsoft Graph blog
       - href: /graph/known-issues
         html: <p>Learn about known issues with Microsoft Graph.</p>
-        image: 
+        image:
           src: ./images/index/i_investigate.svg
         title: Known issues

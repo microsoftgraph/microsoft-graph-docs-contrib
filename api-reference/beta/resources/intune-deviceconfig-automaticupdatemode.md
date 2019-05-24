@@ -1,7 +1,7 @@
 ---
 title: "automaticUpdateMode enum type"
 description: "Possible values for automatic update mode."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

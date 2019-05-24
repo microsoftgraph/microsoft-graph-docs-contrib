@@ -1,7 +1,7 @@
 ---
 title: "Get androidForWorkScepCertificateProfile"
 description: "Read properties and relationships of the androidForWorkScepCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [androidForWorkScepCertificateProfile](../resources/intune-deviceconfig-androidforworkscepcertificateprofile.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -88,6 +88,7 @@ Content-Length: 1474
         "objectIdentifier": "Object Identifier value"
       }
     ],
+    "subjectAlternativeNameType": "emailAddress",
     "scepServerUrls": [
       "Scep Server Urls value"
     ],
@@ -103,8 +104,7 @@ Content-Length: 1474
         "sanType": "emailAddress",
         "name": "Name value"
       }
-    ],
-    "subjectAlternativeNameType": "emailAddress"
+    ]
   }
 }
 ```
