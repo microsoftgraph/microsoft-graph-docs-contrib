@@ -141,7 +141,7 @@ Content-type: application/json
   "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
-  "sourceFolderIDs": [
+  "sourceFolderIds": [
     "AAMkAGVmMDEzM"
   ],
   "filterQuery": "contains(subject, 'MyAnalytics')"

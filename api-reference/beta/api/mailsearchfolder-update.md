@@ -41,7 +41,7 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 | displayName | String | The display name of the [mailFolder](../resources/mailfolder.md).|
 | includeNestedFolders | Boolean | How the mailbox folder hierarchy should be traversed. `true` means that a deep search should be done while `false` means a shallow search should be done instead. |
-| sourceFolderIDs | String collection | The mailbox folders that should be mined. |
+| sourceFolderIds | String collection | The mailbox folders that should be mined. |
 | filterQuery | String | The OData query to filter the messages. |
 
 ## Response
@@ -88,7 +88,7 @@ Content-type: application/json
   "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
-  "sourceFolderIDs": [
+  "sourceFolderIds": [
       "AAMkAGVmMDEzMi"
   ],
   "filterQuery": "contains(subject, 'Analytics')"
