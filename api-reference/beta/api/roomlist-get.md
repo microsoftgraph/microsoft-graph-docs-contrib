@@ -2,8 +2,8 @@
 title: "Get roomList"
 description: "Retrieve the properties and relationships of roomlist object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "vrod9429"
+ms.prod: "Outlook"
 doc_type: "apiPageType"
 ---
 
