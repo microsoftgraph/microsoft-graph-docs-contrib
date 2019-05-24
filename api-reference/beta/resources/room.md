@@ -15,7 +15,7 @@ Specifies the properties of a room in a tenant.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get room](../api/room-get.md) | [room](room.md) | Read properties and relationships of room object. |
+| [Get room](../api/room-get.md) | [room](room.md) | Read the properties and relationships of a room object. |
 
 
 ## Properties
