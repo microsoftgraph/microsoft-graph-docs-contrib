@@ -23,8 +23,8 @@ Currently, deleted items functionality is only supported for Office 365 [groups]
 |[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
 |[Permanently delete an item](../api/directory-deleteditems-delete.md) | None | Permanently deletes an item. |
 |[List deleted items owned by a user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
-|[Create featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy by posting to the featureRolloutPolicies collection. |
-|[List featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) collection | Get a featureRolloutPolicy object collection. |
+|[Create featureRolloutPolicy](../api/featurerolloutpolicy-post.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy by posting to the featureRolloutPolicies collection. |
+|[List featureRolloutPolicies](../api/featurerolloutpolicies-list.md) | [featureRolloutPolicy](featurerolloutpolicy.md) collection | Get a featureRolloutPolicy object collection. |
 
 ## Properties
 | Property   | Type |Description|

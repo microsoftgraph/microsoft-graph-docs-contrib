@@ -2,13 +2,16 @@
 title: "List featureRolloutPolicies"
 description: "Retrieve a list of featurerolloutpolicy objects."
 localization_priority: Normal
+author: ""
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # List featureRolloutPolicies
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of featurerolloutpolicy objects.
+Retrieve a list of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) objects.
 
 ## Permissions
 
@@ -30,7 +33,7 @@ GET /directory/featureRolloutPolicies
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters)
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -81,10 +84,18 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value",
-      "displayName": "displayName-value",
-      "description": "description-value",
-      "feature": "feature-value",
+      "id": "e3c2f23a-edd2-43a8-849f-154e70794ac5",
+      "displayName": "PassthroughAuthentication rollout policy",
+      "description": "PassthroughAuthentication rollout policy",
+      "feature": "passthroughAuthentication",
+      "isEnabled": true,
+      "isAppliedToOrganization": false
+    },
+    {
+      "id": "df85e4d9-e8c4-4033-a41c-73419a95c29c",
+      "displayName": "SeamlessSso rollout policy",
+      "description": "SeamlessSso rollout policy",
+      "feature": "seamlessSso",
       "isEnabled": true,
       "isAppliedToOrganization": false
     }

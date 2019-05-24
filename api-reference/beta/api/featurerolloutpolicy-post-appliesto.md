@@ -1,14 +1,17 @@
 ---
 title: "Create appliesTo"
-description: "Use this API to create a new appliesTo."
+description: "Create an appliesTo on a featureRolloutPolicy object ."
 localization_priority: Normal
+author: ""
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Create appliesTo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new appliesTo.
+Create an appliesTo on a [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object to specify the [directoryObject](../resources/directoryobject.md) to which the [featureRolloutPolicy](../resources/featurerolloutpolicy.md) should be applied to.
 
 ## Permissions
 
@@ -40,7 +43,7 @@ In the request body, supply a JSON representation of [directoryObject](../resour
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [directoryObject](../resources/directoryobject.md) object in the response body.
 
 ## Examples
 
@@ -57,7 +60,7 @@ POST https://graph.microsoft.com/beta/directory/featureRolloutPolicies/{id}/appl
 Content-type: application/json
 
 {
-  "@odata.id": " https://graph.microsoft.com/beta/directoryObjects/{id-value}"
+  "@odata.id": " https://graph.microsoft.com/beta/directoryObjects/2441b489-4f12-4882-b039-8f6006bd66da"
 }
 ```
 
@@ -80,8 +83,8 @@ Content-type: application/json
 
 {
   "directoryObject": {
-    "id": "id-value",
-    "deletedDateTime": "datetime-value"
+    "id": "2441b489-4f12-4882-b039-8f6006bd66da",
+    "objectType": "group"
   }
 }
 ```

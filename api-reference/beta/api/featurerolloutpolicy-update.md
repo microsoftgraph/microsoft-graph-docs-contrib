@@ -2,13 +2,16 @@
 title: "Update featurerolloutpolicy"
 description: "Update the properties of featurerolloutpolicy object."
 localization_priority: Normal
+author: ""
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Update featurerolloutpolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of featurerolloutpolicy object.
+Update the properties of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.
 
 ## Permissions
 
@@ -60,12 +63,13 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/{id}
+PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
+
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
+  "displayName": "PasswordHashSync Rollout Policy",
+  "description": "PasswordHashSync Rollout Policy",
   "isEnabled": true,
   "isAppliedToOrganization": false
 }

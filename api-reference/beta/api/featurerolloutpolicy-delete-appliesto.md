@@ -1,14 +1,17 @@
 ---
-title: "Create appliesTo"
-description: "Use this API to create a new appliesTo."
+title: "Delete appliesTo"
+description: "Delete an appliesTo object on a featuredRolloutPolicy."
 localization_priority: Normal
+author: ""
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Delete appliesTo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a delete appliesTo.
+Delete an appliesTo object on a [featureRolloutPolicy](../resources/featurerolloutpolicy.md)
 
 ## Permissions
 
@@ -36,11 +39,11 @@ DELETE /directory/featureRolloutPolicies/{id}/appliesTo/{id}/$ref
 
 ## Request body
 
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
@@ -53,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/directory/featureRolloutPolicies/{id}/appliesTo/{id}/$ref
+DELETE https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c/appliesTo/2441b489-4f12-4882-b039-8f6006bd66da/$ref
 ```
 
 ### Response

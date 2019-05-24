@@ -2,13 +2,16 @@
 title: "Get featureRolloutPolicy"
 description: "Retrieve the properties and relationships of featurerolloutpolicy object."
 localization_priority: Normal
+author: ""
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Get featureRolloutPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of featurerolloutpolicy object.
+Retrieve the properties and relationships of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.
 
 ## Permissions
 
@@ -30,7 +33,7 @@ GET /directory/featureRolloutPolicies/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters)
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters)
 
 ## Request headers
 
@@ -57,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/{id}
+GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c
 ```
 
 ### Response
@@ -78,10 +81,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "feature": "feature-value",
+  "id": "df85e4d9-e8c4-4033-a41c-73419a95c29c",
+  "displayName": "SeamlessSso rollout policy",
+  "description": "SeamlessSso rollout policy",
+  "feature": "seamlessSso",
   "isEnabled": true,
   "isAppliedToOrganization": false
 }
@@ -96,7 +99,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/{id}?$expand=appliesTo
+GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e8c4-4033-a41c-73419a95c29c?$expand=appliesTo
 ```
 
 ### Response
@@ -117,17 +120,17 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "feature": "feature-value",
+  "id": "df85e4d9-e8c4-4033-a41c-73419a95c29c",
+  "displayName": "SeamlessSso rollout policy",
+  "description": "SeamlessSso rollout policy",
+  "feature": "seamlessSso",
   "isEnabled": true,
-  "isAppliedToOrganization": false,
+  "isAppliedToOrganization": false
   "appliesTo@odata.context": "https://graph.microsoft.com/beta/directory/featureRolloutPolicies('id')/appliesTo",
     "appliesTo": [
         {
-            "id": "id-value",
-            "objectType": "Group"
+            "id": "2441b489-4f12-4882-b039-8f6006bd66da",
+            "objectType": "group"
         }
     ]
 }

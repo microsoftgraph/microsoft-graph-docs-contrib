@@ -2,13 +2,16 @@
 title: "Create featureRolloutPolicy"
 description: "Use this API to create a new featureRolloutPolicy."
 localization_priority: Normal
+author: ""
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Create featureRolloutPolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new featureRolloutPolicy.
+Create a new [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.
 
 ## Permissions
 
@@ -40,7 +43,7 @@ In the request body, supply a JSON representation of [featureRolloutPolicy](../r
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object in the response body.
 
 ## Examples
 

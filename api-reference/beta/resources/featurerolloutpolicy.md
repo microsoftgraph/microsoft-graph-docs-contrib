@@ -2,9 +2,12 @@
 title: "featureRolloutPolicy resource type"
 description: "Feature rollout policy ."
 localization_priority: Normal
+author: ""
+ms.prod: "microsoft-identity-platform"
+doc_type: "resourcePageType"
 ---
 
-# featureRolloutPolicy resource type
+# Overview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,6 +39,8 @@ The following are pre-requisites for each of the features that are currently sup
 ### [PasswordHashSync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs)
 
 * Enable Password Hash Sync from the “Optional features” page in Azure AD Connect.
+
+# featureRolloutPolicy resource type
 
 ## Methods
 
