@@ -58,7 +58,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/places/microsoft.graph.rooms
+GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 ```
 
 ### Response
@@ -83,13 +83,13 @@ Content-type: application/json
    "emailAddress": "cf3235@contoso.com",
    "displayName": "Conf Room 32/35 (25)",
    "address": {
-   "street": "One Microsoft Way",
-   "city": "Redmond",
-   "state": "WA",
-   "postalCode": "98052",
-   "countryOrRegion": "USA",
-    },
-  "geocoordinates": {
+       "street": "One Microsoft Way",
+       "city": "Redmond",
+       "state": "WA",
+       "postalCode": "98052",
+       "countryOrRegion": "USA",
+       },
+  "geoCoordinates": {
      "47.640568390488625"
     "-122.1293731033802"
     },
@@ -99,13 +99,12 @@ Content-type: application/json
   "capacity": 50,
   "building": 32,
   "floorNumber": 3,
-  "isManaged": true,
   "isWheelchairAccessible": false,
   "bookingType": "standard",
   "Tags": ["bean bags", "nice view"],
   "audioDeviceName": null,
   "videoDeviceName": null,
-  "displayDevice": "surface hub"
+  "displayDeviceName": "surface hub"
 }
 ```
 
