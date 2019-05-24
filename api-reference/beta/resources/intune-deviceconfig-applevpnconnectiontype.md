@@ -1,7 +1,7 @@
 ---
 title: "appleVpnConnectionType enum type"
 description: "Apple VPN connection type."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

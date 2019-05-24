@@ -51,12 +51,6 @@ Certain old teams don't have a **resourceProvisioningOptions** property that con
 which is set on newly created teams and teams that are visited in Microsoft Teams.
 In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
 
-### Installing and uninstalling applications using application permissions
-
-When uninstalling an app from a team using application permissions, the API will return a 500 error code even though the app was successfully uninstalled.
-
-When installing, updating, and uninstalling apps in a team using application permissions, audit log events are not written.
-
 ## Groups
 
 ### Permissions for groups and Microsoft Teams
@@ -246,7 +240,7 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 
 * Multiple namespaces are not supported.
 * GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
-* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the `Accepted` or `RejectedSenders` on a group.
+* `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
   * No support for `nextLink`
@@ -309,7 +303,7 @@ Directory resources, such as **device**, **group** and **user**, currently limit
 
 ### Filtering on schema extension properties not supported on all entity types
 
-Filtering on schema extension properties (using the `$filter` expresssion) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
+Filtering on schema extension properties (using the `$filter` expression) is not supported for Outlook entity types - **contact**, **event**, **message**, or **post**.
 
 ## JSON Batching
 

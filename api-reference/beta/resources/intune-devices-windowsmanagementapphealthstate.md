@@ -1,7 +1,7 @@
 ---
 title: "windowsManagementAppHealthState resource type"
 description: "Windows management app health state entity."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

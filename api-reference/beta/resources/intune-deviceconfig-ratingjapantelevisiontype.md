@@ -1,7 +1,7 @@
 ---
 title: "ratingJapanTelevisionType enum type"
 description: "TV content rating labels in Japan"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

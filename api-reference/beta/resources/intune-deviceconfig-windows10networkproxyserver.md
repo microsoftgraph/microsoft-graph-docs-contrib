@@ -1,7 +1,7 @@
 ---
 title: "windows10NetworkProxyServer resource type"
 description: "Network Proxy Server Policy."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

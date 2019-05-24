@@ -1,7 +1,7 @@
 ---
 title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
 description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -20,6 +20,8 @@ The following Graph resources are available to manage app protection polices in 
 
 - [Android managed app protection](intune-mam-androidmanagedappprotection.md)
 - [Android managed app registration](intune-mam-androidmanagedappregistration.md)
+- [Android managed app safety net apps verification type](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Android managed app safety net device attestation type](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Android mobile app identifier](intune-mam-androidmobileappidentifier.md)
 - [App management level](intune-mam-appmanagementlevel.md)
 - [Application type](intune-wip-applicationtype.md)

@@ -1,7 +1,7 @@
 ---
 title: "advancedBitLockerState enum type"
 description: "Advanced BitLocker State"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

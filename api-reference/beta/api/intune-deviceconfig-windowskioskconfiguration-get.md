@@ -1,7 +1,7 @@
 ---
 title: "Get windowsKioskConfiguration"
 description: "Read properties and relationships of the windowsKioskConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2016
+Content-Length: 2052
 
 {
   "value": {
@@ -90,12 +90,14 @@ Content-Length: 2016
               "startLayoutTileSize": "small",
               "name": "Name value",
               "appType": "store",
+              "autoLaunch": true,
               "appUserModelId": "App User Model Id value",
               "appId": "App Id value",
               "containedAppId": "Contained App Id value"
             }
           ],
           "showTaskBar": true,
+          "allowAccessToDownloadsFolder": true,
           "disallowDesktopApps": true,
           "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
         },
@@ -117,8 +119,7 @@ Content-Length: 2016
     "kioskBrowserBlockedUrlExceptions": [
       "Kiosk Browser Blocked Url Exceptions value"
     ],
-    "edgeKioskEnablePublicBrowsing": true,
-    "edgeKioskResetAfterIdleTimeInMinutes": 4
+    "edgeKioskEnablePublicBrowsing": true
   }
 }
 ```
