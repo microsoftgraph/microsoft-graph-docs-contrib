@@ -1,6 +1,6 @@
 ---
 title: "places resource type"
-description: "Provides more details about rooms annd roomlist in a company."
+description: "Represents the properties of a room or roomList in Outlook."
 localization_priority: Normal
 author: "vrod9429"
 ms.prod: "Outlook"
@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # places resource type
 
-Places API provides more details about rooms annd roomlist in a company. 
+Places represents the properties of a room or roomList in Outlook.. 
 
 ## Methods
 
