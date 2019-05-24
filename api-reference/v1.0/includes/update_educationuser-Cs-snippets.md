@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -8,7 +11,7 @@ var educationUser = new EducationUser
 	DisplayName = "Rogelio Cazares",
 	GivenName = "Rogelio",
 	MiddleName = "Fernando",
-	Surname = "Cazares",
+	Surname = "Cazares"
 };
 
 await graphClient.Education.Users["{user-id}"]

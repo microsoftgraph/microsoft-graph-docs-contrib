@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -12,6 +15,6 @@ var comment = "Comment for the named item";
 await graphClient.Me.Drive.Items["{id}"].Workbook.Names
 	.AddFormulaLocal(name,formula,comment)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

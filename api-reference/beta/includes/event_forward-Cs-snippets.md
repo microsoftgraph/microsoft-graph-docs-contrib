@@ -1,27 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var emailAddress = new EmailAddress
+var ToRecipients = new List<Recipient>()
 {
-	Address = "danas@contoso.onmicrosoft.com",
-	Name = "Dana Swope",
+	new Recipient
+	{
+		EmailAddress = new EmailAddress
+		{
+			Address = "danas@contoso.onmicrosoft.com",
+			Name = "Dana Swope"
+		}
+	}
 };
-
-var ToRecipients = new Recipient
-{
-	EmailAddress = emailAddress,
-};
-
-var ToRecipientsList = new List<Recipient>();
-ToRecipientsList.Add( ToRecipients );
 
 var Comment = "Dana, hope you can make this meeting.";
 
 await graphClient.Me.Events["{id}"]
-	.Forward(comment,toRecipientsList)
+	.Forward(comment,toRecipients)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

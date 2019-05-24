@@ -1,20 +1,23 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var index = 3;
 
-var values = new Json
+var values = new List<Json>()
 {
+	new Json
+	{
+	}
 };
-
-var valuesList = new List<Json>();
-valuesList.Add( values );
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
 	.Add(index,values,name)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```
