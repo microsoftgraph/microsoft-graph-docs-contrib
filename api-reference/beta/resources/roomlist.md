@@ -16,7 +16,7 @@ Roomlist is a group of rooms created by the company.
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get roomList](../api/roomlist-get.md) | [roomList](roomlist.md) | Read properties and relationships of roomList object. |
-| [List rooms](../api/roomlist-list-rooms.md) | [places](places.md) collection | Get a places object collection. |
+| [List rooms](../api/roomlist-list-rooms.md) | [place](place.md) collection | Get a place object collection. |
 
 
 ## Properties
@@ -29,7 +29,7 @@ Roomlist is a group of rooms created by the company.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|rooms|[places](places.md) collection| Read-only. Nullable.|
+|rooms|[place](place.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 
