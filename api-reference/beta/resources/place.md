@@ -1,5 +1,5 @@
 ---
-title: "places resource type"
+title: "place resource type"
 description: "Represents the properties of a room or roomList in Outlook."
 localization_priority: Normal
 author: "vrod9429"
@@ -7,7 +7,7 @@ ms.prod: "Outlook"
 doc_type: "resourcePageType"
 ---
 
-# places resource type
+# place resource type
 
 Places represents the properties of a room or roomList in Outlook.. 
 
@@ -15,7 +15,7 @@ Places represents the properties of a room or roomList in Outlook..
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get places](../api/places-get.md) | [places](places.md) | Read properties and relationships of places object. |
+| [Get place](../api/place-get.md) | [place](place.md) | Read properties and relationships of place object. |
 
 ## Properties
 
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.places",
+  "@odata.type": "microsoft.graph.place",
   "baseType": ""
 }-->
 
@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
 {
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "displayName": "String",
-  "geocoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "phone": "String"
 }
 ```
@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "places resource",
+  "description": "place resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
