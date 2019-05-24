@@ -11,12 +11,6 @@ doc_type: "resourcePageType"
 
 Places represents the properties of a room or roomList in Outlook.. 
 
-## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get place](../api/place-get.md) | [place](place.md) | Read properties and relationships of place object. |
-
 ## Properties
 
 | Property     | Type        | Description |
