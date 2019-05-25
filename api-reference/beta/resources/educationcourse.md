@@ -1,6 +1,6 @@
 ---
 title: "educationCourse resource type"
-description: "Represents the Course information for a Class. It is used within educationClass."
+description: "Represents the course information for a class."
 author: "mlafleur"
 localization_priority: Normal
 ms.prod: "education"
@@ -10,7 +10,7 @@ ms.prod: "education"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Course information for a Class. It is used within educationClass. It is used within [educationClass](educationclass.md).
+Represents the course information for a class. It is used within [educationClass](educationclass.md).
 
 ## Properties
 
