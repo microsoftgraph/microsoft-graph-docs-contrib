@@ -13,7 +13,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2019
 
-### Microsoft Education APIs
+### Education APIs
 | Change type | Version | Description                                                                                                                                                      |
 | :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Addition    | beta    | Added taughtClasses to [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).                                                                  |
