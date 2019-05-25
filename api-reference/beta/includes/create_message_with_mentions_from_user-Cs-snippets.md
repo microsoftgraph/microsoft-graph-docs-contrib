@@ -1,41 +1,36 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var mentioned = new EmailAddress
-{
-	Name = "Dana Swope",
-	Address = "danas@contoso.onmicrosoft.com",
-};
-
-var mentions = new Mention
-{
-	Mentioned = mentioned,
-};
-
-var mentionsList = new List<Mention>();
-mentionsList.Add( mentions );
-
-var emailAddress = new EmailAddress
-{
-	Name = "Samantha Booth",
-	Address = "samanthab@contoso.onmicrosoft.com",
-};
-
-var toRecipients = new Recipient
-{
-	EmailAddress = emailAddress,
-};
-
-var toRecipientsList = new List<Recipient>();
-toRecipientsList.Add( toRecipients );
 
 var message = new Message
 {
 	Subject = "Party planning",
-	ToRecipients = toRecipientsList,
-	Mentions = mentionsList,
+	ToRecipients = new List<Recipient>()
+	{
+		new Recipient
+		{
+			EmailAddress = new EmailAddress
+			{
+				Name = "Samantha Booth",
+				Address = "samanthab@contoso.onmicrosoft.com"
+			}
+		}
+	},
+	Mentions = new List<Mention>()
+	{
+		new Mention
+		{
+			Mentioned = new EmailAddress
+			{
+				Name = "Dana Swope",
+				Address = "danas@contoso.onmicrosoft.com"
+			}
+		}
+	}
 };
 
 await graphClient.Me.Messages

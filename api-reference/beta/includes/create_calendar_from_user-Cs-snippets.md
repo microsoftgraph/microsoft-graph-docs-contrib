@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var calendar = new Calendar
 {
-	Name = "Volunteer",
+	Name = "Volunteer"
 };
 
 await graphClient.Me.Calendars

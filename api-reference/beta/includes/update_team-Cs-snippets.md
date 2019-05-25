@@ -1,30 +1,27 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var funSettings = new TeamFunSettings
-{
-	AllowGiphy = true,
-	GiphyContentRating = GiphyRatingType.Strict,
-};
-
-var messagingSettings = new TeamMessagingSettings
-{
-	AllowUserEditMessages = true,
-	AllowUserDeleteMessages = true,
-};
-
-var memberSettings = new TeamMemberSettings
-{
-	AllowCreateUpdateChannels = true,
-};
-
 var team = new Team
 {
-	MemberSettings = memberSettings,
-	MessagingSettings = messagingSettings,
-	FunSettings = funSettings,
+	MemberSettings = new TeamMemberSettings
+	{
+		AllowCreateUpdateChannels = true
+	},
+	MessagingSettings = new TeamMessagingSettings
+	{
+		AllowUserEditMessages = true,
+		AllowUserDeleteMessages = true
+	},
+	FunSettings = new TeamFunSettings
+	{
+		AllowGiphy = true,
+		GiphyContentRating = GiphyRatingType.Strict
+	}
 };
 
 await graphClient.Teams["{id}"]

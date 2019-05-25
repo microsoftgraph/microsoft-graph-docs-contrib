@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -9,7 +12,7 @@ var attachment = new Attachment
 	Name = "name-value",
 	ContentType = "contentType-value",
 	Size = 99,
-	IsInline = true,
+	IsInline = true
 };
 
 await graphClient.Users["{id}"].Outlook.Tasks["{id}"].Attachments
