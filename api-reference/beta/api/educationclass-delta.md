@@ -1,16 +1,17 @@
 ---
 title: "educationClass: delta"
-description: "Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection. See Using Delta Query for details."
+description: "Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection."
 localization_priority: Normal
 author: "mlafleur"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationClass: delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection. See [Use delta query](/graph/delta-query-overview) for details.
 
 ## Permissions
 
