@@ -1,6 +1,6 @@
 ---
 title: "educationClass resource type"
-description: "Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.  "
+description: "Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID."
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
@@ -10,7 +10,7 @@ ms.prod: "education"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office experiences to work correctly, teachers must be members of both the teachers and members collections.
+Represents a class within a school. The **educationClass** resource corresponds to the Office 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Office 365 experiences to work correctly, teachers must be members of both the teachers and members collections.
 
 ## Methods
 
