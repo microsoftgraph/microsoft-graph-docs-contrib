@@ -41,11 +41,11 @@ POST /education/me/classes/<id>/delta
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [educationClass](../resources/educationclass.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) collection object in the response body.
 
 ## Example
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 
@@ -62,7 +62,9 @@ POST https://graph.microsoft.com/v1.0/education/classes/<id>/delta
 
 ##### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
