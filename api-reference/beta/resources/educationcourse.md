@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "education"
 ---
 
-# educationTerm resource type
+# educationCourse resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
