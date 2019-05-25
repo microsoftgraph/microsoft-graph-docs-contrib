@@ -14,8 +14,6 @@ Represents type of an individual [chat message](chatMessage.md) within a [channe
 
 ## Members
 
-| Member    | Value | Description                               | Supported     |
-| :-------- | :---- | :---------------------------------------- | :------------ |
-| message   | 0     | Message type as a text or an HTML message | Supported     |
-| chatEvent | 1     | Conversation event                        | Not supported |
-| typing    | 2     | Typing indicator                          | Not supported |
+| Member    | Value | Description                               |
+| :-------- | :---- | :---------------------------------------- |
+| message   | 0     | Message type as a text or an HTML message |
