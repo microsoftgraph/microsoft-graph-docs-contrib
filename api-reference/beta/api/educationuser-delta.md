@@ -1,16 +1,17 @@
 ---
 title: "educationUser: delta"
-description: "Get newly created or updated users without having to perform a full read of the entire user collection. See Using Delta Query for details."
+description: "Get newly created or updated users without having to perform a full read of the entire user collection."
 localization_priority: Normal
 author: "mlafleur"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationUser: delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created or updated users without having to perform a full read of the entire user collection. See [Using Delta Query](/graph/delta-query-overview) for details.
+Get newly created or updated users without having to perform a full read of the entire user collection. See [Use delta query](/graph/delta-query-overview) for details.
 
 ## Permissions
 
@@ -43,11 +44,11 @@ POST /education/schools/<id>/users/<id>/delta
 
 ## Response
 
-If successful, this method returns `200, OK` response code and [educationUser](../resources/educationuser.md) collection object in the response body.
+If successful, this method returns a `200 OK` response code and an [educationUser](../resources/educationuser.md) collection object in the response body.
 
 ## Example
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ##### Request
 
@@ -64,7 +65,9 @@ POST https://graph.microsoft.com/v1.0/education/me/delta
 
 ##### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
