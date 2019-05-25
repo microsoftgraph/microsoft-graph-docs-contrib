@@ -102,8 +102,7 @@ Content-type: application/json
 
 {
     "@odata.context": "/$metadata#Collection(Microsoft.Teams.GraphSvc.chatMessage)",
-	"@odata.nextLink": "/teams('id')/channels('id')/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d",
-    "@odata.count": 2,
+    "@odata.nextLink": "/teams('id')/channels('id')/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d",
     "value": [
 		{
 			"id": "id-value",
@@ -182,8 +181,7 @@ Content-type: application/json
 
 {
     "@odata.context": "/$metadata#Collection(Microsoft.Teams.GraphSvc.chatMessage)",
-	"@odata.nextLink": "/teams('id')/channels('id')/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA%3d",
-    "@odata.count": 2,
+    "@odata.nextLink": "/teams('id')/channels('id')/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA%3d",
     "value": [
 		{
 			"id": "id-value",
@@ -262,8 +260,7 @@ Content-type: application/json
 
 {
     "@odata.context": "/$metadata#Collection(Microsoft.Teams.GraphSvc.chatMessage)",
-	"@odata.deltaLink": "/teams('id')/channels('id')/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc1ODA0OTAmcGFnZVNpemU9MjA%3d",
-    "@odata.count": 1,
+    "@odata.deltaLink": "/teams('id')/channels('id')/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc1ODA0OTAmcGFnZVNpemU9MjA%3d",
     "value": [
 		{
 			"id": "id-value",
@@ -318,8 +315,7 @@ Content-type: application/json
 
 {
     "@odata.context": "/$metadata#Collection(Microsoft.Teams.GraphSvc.chatMessage)",
-	"@odata.deltaLink": "/teams('id')/channels('id')/messages/delta?$deltatoken=c3RhcnRUaW1l5Ti1NTEyODc1ODB0OTAyXGFdZVNpemU9MjA%3d",
-    "@odata.count": 1,
+    "@odata.deltaLink": "/teams('id')/channels('id')/messages/delta?$deltatoken=c3RhcnRUaW1l5Ti1NTEyODc1ODB0OTAyXGFdZVNpemU9MjA%3d",
     "value": [
 		{
 			"id": "id-value",
