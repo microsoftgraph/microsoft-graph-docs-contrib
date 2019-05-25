@@ -4,17 +4,18 @@ description: "Additional information used to associate an on-premises Active Dir
 author: "mlafleur"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # educationOnPremisesInfo resource type
 
-Additional information used to associate an on-premises Active Directory user account to their Azure AD user object
+Additional information used to associate an on-premises Active Directory user account to their Azure AD user object.
 
 ## Properties
 
 | Property    | Type   | Description                                               |
 | :---------- | :----- | :-------------------------------------------------------- |
-| immutableId | String | Unique identifier for the user object in Active Directory |
+| immutableId | String | Unique identifier for the user object in Active Directory. |
 
 ## JSON representation
 
