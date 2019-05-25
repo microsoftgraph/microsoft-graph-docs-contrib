@@ -291,7 +291,6 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 ```csharp
 IPublicClientApplication clientApplication = PublicClientApplicationBuilder
             .Create(clientId)
-            .WithRedirectUri(redirectUri)
             .Build();
 
 InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(clientApplication, scopes);
