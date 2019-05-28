@@ -7,7 +7,7 @@ author: MichaelMainer
 
 # Choose a Microsoft Graph authentication provider based on scenario
 
-Authentication providers contain the code required to acquire a token using the Microsoft Authentication Library (MSAL), handle a number of potential errors for cases like incremental consent, expired passwords, conditional access and then set the HTTP request authorization header. There are a set of providers that match the scenarios described by the [Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
+Authentication providers implement the code required to acquire a token using the Microsoft Authentication Library (MSAL), handle a number of potential errors for cases like incremental consent, expired passwords, conditional access and then set the HTTP request authorization header. There are a set of providers that match the scenarios described by the [Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
 
 |Scenario | Flow/Grant | Permission Type | Account Type | Provider|
 |--|--|--|--|--|
