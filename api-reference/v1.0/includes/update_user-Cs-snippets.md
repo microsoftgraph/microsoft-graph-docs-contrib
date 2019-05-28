@@ -1,16 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var businessPhonesList = new List<String>();
-businessPhonesList.Add( "businessPhones-value" );
 
 var user = new User
 {
 	AccountEnabled = true,
-	BusinessPhones = businessPhonesList,
-	City = "city-value",
+	BusinessPhones = new List<String>()
+	{
+		"businessPhones-value"
+	},
+	City = "city-value"
 };
 
 await graphClient.Me

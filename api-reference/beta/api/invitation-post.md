@@ -57,7 +57,7 @@ If successful, this method returns `201 Created` response code and [invitation](
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_user_from_users"
+  "name": "create_invitation_post"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/invitations
@@ -106,15 +106,16 @@ Content-length: 551
 }
 ```
 #### SDK sample code
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
-
 # [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/create_invitation_post-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create_invitation_post-Javascript-snippets.md)]
 
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {

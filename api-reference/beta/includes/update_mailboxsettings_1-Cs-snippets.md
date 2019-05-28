@@ -1,30 +1,27 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var scheduledEndDateTime = new DateTimeTimeZone
-{
-	DateTime = "2016-03-28T18:00:00",
-	TimeZone = "UTC",
-};
-
-var scheduledStartDateTime = new DateTimeTimeZone
-{
-	DateTime = "2016-03-20T18:00:00",
-	TimeZone = "UTC",
-};
-
-var automaticRepliesSetting = new AutomaticRepliesSetting
-{
-	Status = AutomaticRepliesStatus.Scheduled,
-	ScheduledStartDateTime = scheduledStartDateTime,
-	ScheduledEndDateTime = scheduledEndDateTime,
-};
-
 var mailboxSettings = new MailboxSettings
 {
-	AutomaticRepliesSetting = automaticRepliesSetting,
+	AutomaticRepliesSetting = new AutomaticRepliesSetting
+	{
+		Status = AutomaticRepliesStatus.Scheduled,
+		ScheduledStartDateTime = new DateTimeTimeZone
+		{
+			DateTime = "2016-03-20T18:00:00",
+			TimeZone = "UTC"
+		},
+		ScheduledEndDateTime = new DateTimeTimeZone
+		{
+			DateTime = "2016-03-28T18:00:00",
+			TimeZone = "UTC"
+		}
+	}
 };
 
 var me = new User();

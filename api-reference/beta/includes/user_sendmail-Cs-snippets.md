@@ -1,53 +1,46 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var emailAddress = new EmailAddress
-{
-	Address = "danas@contoso.onmicrosoft.com",
-};
-
-var ccRecipients = new Recipient
-{
-	EmailAddress = emailAddress,
-};
-
-var ccRecipientsList = new List<Recipient>();
-ccRecipientsList.Add( ccRecipients );
-
-var emailAddress = new EmailAddress
-{
-	Address = "samanthab@contoso.onmicrosoft.com",
-};
-
-var toRecipients = new Recipient
-{
-	EmailAddress = emailAddress,
-};
-
-var toRecipientsList = new List<Recipient>();
-toRecipientsList.Add( toRecipients );
-
-var body = new ItemBody
-{
-	ContentType = BodyType.Text,
-	Content = "The new cafeteria is open.",
-};
 
 var message = new Message
 {
 	Subject = "Meet for lunch?",
-	Body = body,
-	ToRecipients = toRecipientsList,
-	CcRecipients = ccRecipientsList,
+	Body = new ItemBody
+	{
+		ContentType = BodyType.Text,
+		Content = "The new cafeteria is open."
+	},
+	ToRecipients = new List<Recipient>()
+	{
+		new Recipient
+		{
+			EmailAddress = new EmailAddress
+			{
+				Address = "samanthab@contoso.onmicrosoft.com"
+			}
+		}
+	},
+	CcRecipients = new List<Recipient>()
+	{
+		new Recipient
+		{
+			EmailAddress = new EmailAddress
+			{
+				Address = "danas@contoso.onmicrosoft.com"
+			}
+		}
+	}
 };
 
-var saveToSentItems = "false";
+var saveToSentItems = false;
 
 await graphClient.Me
 	.SendMail(message,saveToSentItems)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

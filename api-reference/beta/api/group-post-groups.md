@@ -10,7 +10,7 @@ ms.prod: "groups"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ceate a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
+Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
 * Office 365 Group (unified group)
 * Security group
@@ -56,7 +56,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 
-> Note: Groups created using the Microsoft Azure portal always have **securityEnabled** and **mailEnabled** initially set to `true`.
+> Note: Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
 Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
 

@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,6 +13,6 @@ var clientContext = "clientContext-value";
 await graphClient.App.Calls["{id}"]
 	.CancelMediaProcessing(all,clientContext)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

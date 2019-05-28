@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 await graphClient.Education.SynchronizationProfiles["{id}"]
 	.Reset()
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

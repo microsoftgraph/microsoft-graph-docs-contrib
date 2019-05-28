@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,6 +13,6 @@ var clientContext = "clientContext-value";
 await graphClient.App.Calls["{id}"]
 	.UpdateMetadata(metadata,clientContext)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

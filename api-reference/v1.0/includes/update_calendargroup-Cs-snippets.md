@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var calendarGroup = new CalendarGroup
 {
-	Name = "name-value",
+	Name = "name-value"
 };
 
 await graphClient.Me.CalendarGroups["{id}"]
