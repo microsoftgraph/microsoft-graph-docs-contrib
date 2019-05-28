@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateStatus enum type"
 description: "Windows update for business configuration device states"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

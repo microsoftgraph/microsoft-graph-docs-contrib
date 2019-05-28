@@ -1,7 +1,7 @@
 ---
 title: "windows10EnterpriseModernAppManagementConfiguration resource type"
 description: "Windows10 Enterprise Modern App Management Configuration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

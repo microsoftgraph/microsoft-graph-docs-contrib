@@ -1,7 +1,7 @@
 ---
 title: "groupAssignmentTarget resource type"
 description: "Represents an assignment to a group."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

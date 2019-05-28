@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyPresentationText resource type"
 description: "Represents an ADMX text element."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

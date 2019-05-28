@@ -1,7 +1,7 @@
 ---
 title: "List defaultManagedAppProtections"
 description: "List properties and relationships of the defaultManagedAppProtection objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -57,7 +57,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3754
+Content-Length: 4254
 
 {
   "value": [
@@ -105,6 +105,7 @@ Content-Length: 3754
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+      "allowedOutboundClipboardSharingExceptionLength": 14,
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -141,10 +142,16 @@ Content-Length: 3754
       "appActionIfIosDeviceModelNotAllowed": "wipe",
       "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
       "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
-      "thirdPartyKeyboardsBlocked": true,
       "filterOpenInToOnlyManagedApps": true,
       "disableProtectionOfManagedOutboundOpenInData": true,
-      "protectInboundDataFromUnknownSources": true
+      "protectInboundDataFromUnknownSources": true,
+      "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
+      "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
+      "requiredAndroidSafetyNetAppsVerificationType": "enabled",
+      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+      "customBrowserProtocol": "Custom Browser Protocol value",
+      "customBrowserPackageId": "Custom Browser Package Id value",
+      "customBrowserDisplayName": "Custom Browser Display Name value"
     }
   ]
 }

@@ -1,7 +1,7 @@
 ---
 title: "Get macOSGeneralDeviceConfiguration"
 description: "Read properties and relationships of the macOSGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Read properties and relationships of the [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2301
+Content-Length: 2656
 
 {
   "value": {
@@ -126,7 +126,14 @@ Content-Length: 2301
     "passwordBlockAirDropSharing": true,
     "softwareUpdatesEnforcedDelayInDays": 2,
     "softwareUpdatesForceDelayed": true,
-    "contentCachingBlocked": true
+    "contentCachingBlocked": true,
+    "iCloudBlockPhotoLibrary": true,
+    "screenCaptureBlocked": true,
+    "classroomAppBlockRemoteScreenObservation": true,
+    "classroomAppForceUnpromptedScreenObservation": true,
+    "classroomForceAutomaticallyJoinClasses": true,
+    "classroomForceRequestPermissionToLeaveClasses": true,
+    "classroomForceUnpromptedAppAndDeviceLock": true
   }
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerAppAutoUpdatePolicyType enum type"
 description: "Android Device Owner possible values for states of the device's app auto update policy."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

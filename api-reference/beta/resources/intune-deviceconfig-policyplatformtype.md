@@ -1,7 +1,7 @@
 ---
 title: "policyPlatformType enum type"
 description: "Suppoorted platform types for policies."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

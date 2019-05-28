@@ -1,7 +1,7 @@
 ---
 title: "importedDeviceIdentity resource type"
 description: "The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -23,6 +23,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 |[Delete importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-delete.md)|None|Deletes a [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).|
 |[Update importedDeviceIdentity](../api/intune-enrollment-importeddeviceidentity-update.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md)|Update the properties of a [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) object.|
 |[importDeviceIdentityList action](../api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md)|[importedDeviceIdentityResult](../resources/intune-enrollment-importeddeviceidentityresult.md) collection|Not yet documented|
+|[searchExistingIdentities action](../api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md)|[importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
