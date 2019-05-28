@@ -7,7 +7,7 @@ author: MichaelMainer
 
 # Choose a Microsoft Graph authentication provider based on scenario
 
-Authentication providers encapsulate the process of acquiring a token using the Microsoft Authentication Library (MSAL). There are a set of providers that match the scenarios described by the [Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
+Authentication providers contain the code required to acquire a token using the Microsoft Authentication Library (MSAL), handle a number of potential errors for cases like incremental consent, expired passwords, conditional access and then set the HTTP request authorization header. There are a set of providers that match the scenarios described by the [Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
 
 |Scenario | Flow/Grant | Permission Type | Account Type | Provider|
 |--|--|--|--|--|
@@ -148,7 +148,7 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 ---
 
-## <a name="ImplicitProvider"/>Implicit grant OAuth flow
+## <a name="ImplicitProvider"/>Implicit provider
 
 The implicit grant flow is used in browser-based applications. For more information, see [Microsoft identity platform and Implicit grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
 
@@ -335,7 +335,7 @@ Not applicable.
 
 ##  <a name="UsernamePasswordProvider"/>Username/password provider
 
-The resource owner password credential flow allows an application to sign in a user by using their username and password. Use this flow only when you cannot use any of the other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)
+The username/password provider allows an application to sign in a user by using their username and password. Use this flow only when you cannot use any of the other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc)
 
 
 
