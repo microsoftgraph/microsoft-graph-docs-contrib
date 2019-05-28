@@ -9,19 +9,19 @@ author: MichaelMainer
 
 Authentication providers implement the code required to acquire a token using the Microsoft Authentication Library (MSAL), handle a number of potential errors for cases like incremental consent, expired passwords, conditional access and then set the HTTP request authorization header. There are a set of providers that match the scenarios described by the [Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
 
-|Scenario | Flow/Grant | Permission Type | Account Type | Provider|
+|Scenario | Flow/Grant | Audience | Provider|
 |--|--|--|--|--|
-|[Single Page App](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-acquire-token)| Implicit | Delegated | Consumer/Org |[Implicit Provider](#ImplicitProvider) |
-| [Web App that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | Authorization Code | Delegated | Consumer/Org | [Authorization Code Provider](#AuthCodeProvider) |
-|  | Client Credentials  | App Only | | [Client Credentials Provider](#ClientCredentialsProvider) |
-| [Web API that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) | On Behalf Of | Delegated | Consumer/Org | [On Behalf Of Provider](#OnBehalfOfProvider) |
-|  | Client Credentials  | App Only | | [Client Credentials Provider](#ClientCredentialsProvider) |
-| [Desktop app that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-acquire-token) | Interactive | Delegated | Consumer/Org | [Interactive Provider](#InteractiveProvider) |
-|  | Integrated Windows | Delegated | Org | [Integrated Windows Provider](#IntegratedWindowsProvider) |
-|  | Resource Owner  | Delegated | Org | [Username / Password Provider](#UsernamePasswordProvider) |
-|  | Device Code  | Delegated | Org | [Device Code Provider](#DeviceCodeProvider) |
-| [Daemon app](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-acquire-token) | Client Credentials  | App Only | | [Client Credentials Provider](#ClientCredentialsProvider) |
-| [Mobile app that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-mobile-acquire-token) | Interactive | Delegated | Consumer/Org | [Interactive Provider](#InteractiveProvider) |
+|[Single Page App](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-acquire-token)| Implicit | Delegated Consumer/Org |[Implicit Provider](#ImplicitProvider) |
+| [Web App that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | Authorization Code | Delegated Consumer/Org | [Authorization Code Provider](#AuthCodeProvider) |
+|  | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
+| [Web API that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-api-call-api-acquire-token) | On Behalf Of | Delegated Consumer/Org | [On Behalf Of Provider](#OnBehalfOfProvider) |
+|  | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
+| [Desktop app that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-acquire-token) | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
+|  | Integrated Windows | Delegated Org | [Integrated Windows Provider](#IntegratedWindowsProvider) |
+|  | Resource Owner  | Delegated Org | [Username / Password Provider](#UsernamePasswordProvider) |
+|  | Device Code  | Delegated Org | [Device Code Provider](#DeviceCodeProvider) |
+| [Daemon app](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-acquire-token) | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
+| [Mobile app that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-mobile-acquire-token) | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
 
 ## <a name="AuthCodeProvider"/>Authorization code provider
 
