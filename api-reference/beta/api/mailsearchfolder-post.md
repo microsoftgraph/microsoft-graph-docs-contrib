@@ -10,7 +10,7 @@ ms.prod: "outlook"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.
+Create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.
 
 ## Permissions
 
@@ -54,7 +54,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a [mailSearchFolder](../resources/mailsearchfolder.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [mailSearchFolder](../resources/mailsearchfolder.md) object in the response body.
 
 ## Example
 
