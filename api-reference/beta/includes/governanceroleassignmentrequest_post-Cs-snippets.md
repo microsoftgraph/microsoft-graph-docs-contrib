@@ -1,14 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var schedule = new GovernanceSchedule
-{
-	Type = "Once",
-	StartDateTime = "2018-05-12T23:53:55.327Z",
-	EndDateTime = "2018-08-10T23:53:55.327Z",
-};
 
 var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest
 {
@@ -18,7 +14,12 @@ var governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest
 	AssignmentState = "Eligible",
 	Type = "AdminExtend",
 	Reason = "extend role assignment",
-	Schedule = schedule,
+	Schedule = new GovernanceSchedule
+	{
+		Type = "Once",
+		StartDateTime = "2018-05-12T23:53:55.327Z",
+		EndDateTime = "2018-08-10T23:53:55.327Z"
+	}
 };
 
 await graphClient.PrivilegedAccess["azureResources"].RoleAssignmentRequests

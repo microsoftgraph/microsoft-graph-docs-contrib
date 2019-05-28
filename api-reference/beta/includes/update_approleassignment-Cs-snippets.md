@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -9,7 +12,7 @@ var appRoleAssignment = new AppRoleAssignment
 	PrincipalDisplayName = "principalDisplayName-value",
 	PrincipalId = "principalId-value",
 	PrincipalType = "principalType-value",
-	ResourceDisplayName = "resourceDisplayName-value",
+	ResourceDisplayName = "resourceDisplayName-value"
 };
 
 await graphClient.AppRoleAssignments["{id}"]

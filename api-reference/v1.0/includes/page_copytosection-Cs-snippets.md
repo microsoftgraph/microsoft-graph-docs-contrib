@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,6 +13,6 @@ var groupId = "groupId-value";
 await graphClient.Me.Onenote.Pages["{id}"]
 	.CopyToSection(id,groupId,siteCollectionId,siteId)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```
