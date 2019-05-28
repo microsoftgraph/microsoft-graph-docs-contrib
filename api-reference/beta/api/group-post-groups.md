@@ -10,7 +10,7 @@ ms.prod: "groups"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ceate a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
+Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
 * Office 365 Group (unified group)
 * Security group
