@@ -4,6 +4,7 @@ description: "Create a draft to reply to the sender and all the recipients of th
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: createReplyAll

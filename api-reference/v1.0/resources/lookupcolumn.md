@@ -4,6 +4,8 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
+description: <description>
+ms.prod: <ms.prod>
 ---
 # LookupColumn resource type
 

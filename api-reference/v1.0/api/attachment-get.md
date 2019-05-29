@@ -4,6 +4,7 @@ description: "Read the properties and relationships of an attachment, attached t
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get attachment

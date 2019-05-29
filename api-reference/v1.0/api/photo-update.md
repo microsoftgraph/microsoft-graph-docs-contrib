@@ -2,6 +2,9 @@
 title: "Update photo"
 description: "Update the properties of photo object."
 localization_priority: Normal
+author: ""
+ms.prod: <ms.prod>
+doc_type: apiPageType
 ---
 
 # Update photo

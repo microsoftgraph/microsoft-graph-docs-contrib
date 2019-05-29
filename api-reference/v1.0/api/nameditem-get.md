@@ -2,6 +2,9 @@
 title: "Get NamedItem"
 description: "Retrieve the properties and relationships of nameditem object."
 localization_priority: Normal
+author: ""
+ms.prod: <ms.prod>
+doc_type: apiPageType
 ---
 
 # Get NamedItem

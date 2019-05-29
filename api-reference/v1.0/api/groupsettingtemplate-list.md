@@ -4,6 +4,7 @@ description: "Group setting templates represents a set of templates  from which 
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List groupSettingTemplates

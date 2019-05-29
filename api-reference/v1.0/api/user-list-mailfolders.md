@@ -4,6 +4,7 @@ description: "Get the mail folder collection under the root folder of the signed
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List mailFolders

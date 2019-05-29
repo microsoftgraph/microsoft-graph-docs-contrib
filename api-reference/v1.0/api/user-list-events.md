@@ -4,6 +4,7 @@ description: "Get a list of event objects in the user's mailbox. The list contai
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List events

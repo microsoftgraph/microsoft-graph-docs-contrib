@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Get a SharePoint Site
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: <description>
+doc_type: apiPageType
 ---
 # Get a site resource
 

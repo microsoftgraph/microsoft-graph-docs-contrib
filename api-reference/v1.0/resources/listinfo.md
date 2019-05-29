@@ -5,6 +5,7 @@ ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: <description>
 ---
 # ListInfo resource
 

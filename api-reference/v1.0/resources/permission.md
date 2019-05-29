@@ -4,6 +4,8 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Priority
+description: <description>
+ms.prod: <ms.prod>
 ---
 # Permission resource type
 

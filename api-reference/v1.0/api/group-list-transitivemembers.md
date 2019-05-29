@@ -4,6 +4,7 @@ description: "Get a list of the group's members. A group can have users, devices
 author: "anchanda"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List group transitive members

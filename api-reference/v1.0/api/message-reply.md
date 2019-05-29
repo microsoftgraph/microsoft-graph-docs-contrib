@@ -4,6 +4,7 @@ description: "Reply to the sender of a message. The message is then saved in the
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: reply

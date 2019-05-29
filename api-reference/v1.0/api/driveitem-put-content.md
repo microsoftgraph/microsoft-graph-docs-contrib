@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Upload small files
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: <description>
+doc_type: apiPageType
 ---
 # Upload or replace the contents of a DriveItem
 

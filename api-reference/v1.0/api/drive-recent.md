@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: List Recent Files
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: <description>
+doc_type: apiPageType
 ---
 # List recent files
 

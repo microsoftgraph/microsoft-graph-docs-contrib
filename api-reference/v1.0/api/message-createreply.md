@@ -4,6 +4,7 @@ description: "Create a draft of the reply to the specified message. You can then
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: createReply

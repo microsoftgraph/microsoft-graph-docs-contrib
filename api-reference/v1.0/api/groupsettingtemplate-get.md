@@ -4,6 +4,7 @@ description: "A group setting template represents a template of settings from wh
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get a group setting template

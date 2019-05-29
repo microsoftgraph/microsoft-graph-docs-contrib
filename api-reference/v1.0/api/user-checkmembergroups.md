@@ -4,6 +4,7 @@ description: "Check for membership in the specified list of groups. Returns from
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # checkMemberGroups

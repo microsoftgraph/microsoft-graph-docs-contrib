@@ -4,6 +4,8 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
+description: <description>
+ms.prod: <ms.prod>
 ---
 # ItemReference resource type
 

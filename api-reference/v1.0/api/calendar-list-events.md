@@ -4,6 +4,7 @@ description: "Retrieve a list of events in a calendar.  The list contains single
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List events

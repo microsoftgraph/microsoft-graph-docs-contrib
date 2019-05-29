@@ -4,6 +4,7 @@ description: "Describes the list method of the signIn resource (entity) from the
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List signIns

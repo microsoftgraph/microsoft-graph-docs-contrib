@@ -6,6 +6,7 @@ title: Search for sites
 description: Search across a SharePoint tenant for sites that match keywords provided.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Search for sites
 

@@ -2,6 +2,9 @@
 title: "Update formatprotection"
 description: "Update the properties of formatprotection object."
 localization_priority: Normal
+author: ""
+ms.prod: <ms.prod>
+doc_type: apiPageType
 ---
 
 # Update formatprotection

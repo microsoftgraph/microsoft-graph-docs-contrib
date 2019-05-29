@@ -4,6 +4,7 @@ description: "Describes the delete method of the user resource (entity) of the M
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Delete a user

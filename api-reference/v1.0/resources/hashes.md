@@ -3,6 +3,9 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 localization_priority: Normal
+title: <title>
+description: <description>
+ms.prod: <ms.prod>
 ---
 # Hashes resource type
 

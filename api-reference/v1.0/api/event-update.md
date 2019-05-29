@@ -4,6 +4,7 @@ description: "Update the properties of the event object."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update event

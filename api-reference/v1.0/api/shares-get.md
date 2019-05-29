@@ -4,6 +4,9 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Access shared items
 localization_priority: Normal
+description: <description>
+ms.prod: <ms.prod>
+doc_type: apiPageType
 ---
 # Accessing shared DriveItems
 

@@ -4,6 +4,7 @@ description: " create and delete are not supported. Inherits from directoryObjec
 localization_priority: Priority
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # organization resource type

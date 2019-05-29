@@ -4,6 +4,7 @@ description: "Retrieve a list of alert objects."
 author: "preetikr"
 localization_priority: Priority
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # List alerts

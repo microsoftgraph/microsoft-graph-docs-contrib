@@ -2,6 +2,8 @@
 title: "Define the /me as singleton"
 description: "These are things I had to add in the docs to make sure the Markdown-Scanner"
 localization_priority: Normal
+author: ""
+ms.prod: <ms.prod>
 ---
 
 # Helpers (examples that aren't included in the docs)

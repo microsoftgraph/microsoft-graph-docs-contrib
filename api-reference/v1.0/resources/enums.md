@@ -2,6 +2,8 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 localization_priority: Normal
+author: ""
+ms.prod: <ms.prod>
 ---
 
 ### contactRelationship values

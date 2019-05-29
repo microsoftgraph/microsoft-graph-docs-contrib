@@ -4,6 +4,7 @@ description: "Update the properties of a registered device."
 author: "lleonard-msft"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Update device

@@ -4,6 +4,7 @@ description: "Create a draft to forward the specified message. You can then upda
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: createForward

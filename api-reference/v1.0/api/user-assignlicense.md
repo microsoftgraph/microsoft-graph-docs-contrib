@@ -4,6 +4,7 @@ description: "Add or remove subscriptions for the user. You can also enable and 
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # assignLicense

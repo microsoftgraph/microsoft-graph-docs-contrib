@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: List Drives
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: <description>
+doc_type: apiPageType
 ---
 # List available drives
 

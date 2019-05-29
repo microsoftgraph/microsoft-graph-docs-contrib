@@ -4,6 +4,8 @@ ms.author: dspektor
 title: "Get websocket endpoint"
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: <description>
+doc_type: apiPageType
 ---
 
 # Get websocket endpoint

@@ -4,6 +4,7 @@ description: "Get the messages in the signed-in user's mailbox (including the De
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List messages

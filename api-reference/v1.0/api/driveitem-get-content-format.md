@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Convert to other formats
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: <description>
+doc_type: apiPageType
 ---
 # Download a file in another format
 

@@ -2,6 +2,9 @@
 title: "Get photo"
 description: "Retrieve the properties and relationships of photo object."
 localization_priority: Normal
+author: ""
+ms.prod: <ms.prod>
+doc_type: apiPageType
 ---
 
 # Get photo

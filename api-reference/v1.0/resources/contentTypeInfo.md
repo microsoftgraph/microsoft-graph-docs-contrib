@@ -4,6 +4,8 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
+description: <description>
+ms.prod: <ms.prod>
 ---
 # ContentTypeInfo resource type
 

@@ -4,6 +4,7 @@ description: "Get a contact collection from the default contacts folder of the s
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List contacts

@@ -4,6 +4,9 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get permissions
 localization_priority: Normal
+description: <description>
+ms.prod: <ms.prod>
+doc_type: apiPageType
 ---
 # Get sharing permission for a file or folder
 
