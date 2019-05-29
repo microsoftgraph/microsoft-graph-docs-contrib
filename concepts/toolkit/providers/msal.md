@@ -1,6 +1,6 @@
 ---
 title: "MSAL Provider"
-description: "Use msal.js to enable authentication and graph access for the Microsoft Graph Toolkit components"
+description: "The MSAL Provider uses MSAL.js to sign in users and acquire tokens to use with the Microsoft Graph"
 localization_priority: Normal
 author: nmetulev
 ---
@@ -22,7 +22,7 @@ Initializing the Msal provider in HTML is the simplest method to create a new pr
 ```html
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
                    login-type="redirect/popup"
-                   authority=""></mgt-teams-provider>
+                   authority=""></mgt-msal-provider>
 ```
 
 > NOTE: `login-type` and `authority` are optional.

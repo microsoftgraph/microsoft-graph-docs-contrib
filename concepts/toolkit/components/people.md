@@ -64,7 +64,7 @@ The following examples shows how to use the `person` template.
 
 ```html
 <mgt-people>
-  <template data-type="person">
+  <template>
     <ul><li data-for="person in people">
       <mgt-person person-query="{{ person.userPrincipalName }}"></mgt-person>
       <h3>{{ person.displayName }}</h3>

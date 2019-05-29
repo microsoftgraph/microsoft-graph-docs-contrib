@@ -1,13 +1,13 @@
 ---
 title: "Custom Provider"
-description: "Create custom provider to enable authentication and graph access for the Microsoft Graph Toolkit components"
+description: "Create custom provider to enable authentication and graph access for the Microsoft Graph Toolkit components, if you have existing authentication code in your application"
 localization_priority: Normal
 author: nmetulev
 ---
 
 # Custom provider
 
-If you already have authentication code in your application, there are two ways to integrate it with the Providers in the toolkit.
+Create custom provider to enable authentication and graph access for the Microsoft Graph Toolkit components, if you have existing authentication code in your application. There are two ways to integrate it with the Providers in the toolkit.
 
 - Create a new `SimpleProvider` by passing in a function for getting an access token, or
 - Extend the `IProvider` abstract class

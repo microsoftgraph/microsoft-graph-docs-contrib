@@ -1,6 +1,6 @@
 ---
 title: "Tasks component in the Microsoft Graph Toolkit"
-description: "The Tasks omponent enables the user to view, add, remove, complete, or edit tasks. It works with any tasks in Microsoft Planner or Microsoft To-Do."
+description: "The Tasks component enables the user to view, add, remove, complete, or edit tasks. It works with any tasks in Microsoft Planner or Microsoft To-Do."
 localization_priority: Normal
 author: benotter
 ---
@@ -106,4 +106,4 @@ For the Microsoft Todo data source, the Tasks.Read permission is required for fe
 
 ## Authentication
 
-The login control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+The tasks component uses the global authentication provider described in the [authentication documentation](./../providers.md).

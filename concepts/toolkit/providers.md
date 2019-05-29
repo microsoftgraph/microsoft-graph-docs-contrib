@@ -1,13 +1,13 @@
 ---
 title: "Microsoft Graph Toolkit providers"
-description: "Use the providers to enable authentication and Microsoft Graph Toolkit component access to Microsoft Graph."
+description: "The Microsoft Graph Toolkit providers enable authentication and Microsoft Graph access for all components."
 localization_priority: Normal
 author: nmetulev
 ---
 
 # Microsoft Graph Toolkit providers
 
-The Microsoft Graph Toolkit defines providers that enable all components to be aware of the current authentication state and initiate calls to Microsoft Graph without your writing the code yourself. Each provider provides implementation for acquiring the necessary access token for calling the Microsoft Graph APIs.
+The Microsoft Graph Toolkit providers enable authentication and Microsoft Graph access for all components. Each provider provides implementation for acquiring the necessary access token for calling the Microsoft Graph APIs.
 
 For the components to use a provider, you must set the `Providers.globalProvider` property to the value for a provider you'd like to use.
 

@@ -7,6 +7,8 @@ author: nmetulev
 
 # Styling components
 
+Use CSS custom properties to modify the component styles
+
 Each component documents a set of [CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) that can be used to change the look and feel of certain elements.
 
 ex:
@@ -20,3 +22,18 @@ mgt-person {
 It is not possible to style internal elements of a component unless a CSS custom property is provided. The component children elements are hosted in a [shadow dom](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM).
 
 For more flexibility, consider using [custom templates](./templates.md).
+
+## Disable the shadow dom (Experimental):
+
+It is possible to disable the shadow dom, and directly style internal elements using normal browser stylesheets, by setting the static property 'useShadowDom' of the MgtBaseComponent class to false before using any MGT Tags:
+
+Example:
+
+```html
+<script type="module">
+  import { MgtBaseComponent } from './dist/es6/components/baseComponent.js';
+   MgtBaseComponent.useShadowRoot = false;
+</script>
+
+<script type="module" src="./dist/es6/components/mgt-tasks/mgt-tasks.js"></script>
+````

@@ -7,6 +7,8 @@ author: nmetulev
 
 # Templates
 
+Use custom templates to modify the content of a component.
+
 All web components support templates based on the `<template>` element. For example, to override the template of a component, add a `<template>` element inside of a component.
 
 ```html

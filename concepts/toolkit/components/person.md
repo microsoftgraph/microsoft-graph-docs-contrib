@@ -1,6 +1,6 @@
 ---
 title: "Person component in the Microsoft Graph Toolkit"
-description: "The mgt-person web component is used to display a user or contact using their photos or initials."
+description: "The person component is used to display a person or contact by using their photo, name, and/or email address."
 localization_priority: Normal
 author: nmetulev
 ---
@@ -76,11 +76,11 @@ To learn more, see [styling components](../style.md).
 
 The `mgt-person` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
+| Data type | Data context | Description |
+| --- | --- | --- |
+| `default` | `person`: a person object | The default template replaces the entire component with your own. |
 
-### default (or when no value is provided)
-
-The default template replaces the entire component with your own. The `person` object is passed to the template as data context
-
+The following example defines a template for the person component:
 
 ```html
 <mgt-person>

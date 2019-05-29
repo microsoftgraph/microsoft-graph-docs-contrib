@@ -364,9 +364,9 @@
             - name: Msal provider
               href: toolkit/providers/msal.md
             - name: SharePoint provider
-              href: toolkit/providers/SharePoint.md
+              href: toolkit/providers/sharepoint.md
             - name: Microsoft Teams provider
-              href: toolkit/providers/Teams.md
+              href: toolkit/providers/teams.md
             - name: Custom provider
               href: toolkit/providers/custom.md
         - name: Styling components

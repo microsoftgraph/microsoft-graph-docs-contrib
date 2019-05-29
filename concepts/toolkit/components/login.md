@@ -1,6 +1,6 @@
 ---
 title: "Login component in the Microsoft Graph Toolkit"
-description: "mgt-login displays current signed in user. "
+description: "A Login component is a button and flyout control to facilitate Microsoft identity platform authentication."
 localization_priority: Normal
 author: nmetulev
 ---
