@@ -6,7 +6,9 @@ title: IdentitySet
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # IdentitySet resource type
 
 The **IdentitySet** resource is a keyed collection of [identity](identity.md) resources.

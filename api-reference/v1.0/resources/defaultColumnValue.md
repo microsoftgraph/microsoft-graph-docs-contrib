@@ -6,7 +6,9 @@ title: DefaultColumnValue
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # DefaultColumnValue resource type
 
 The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.

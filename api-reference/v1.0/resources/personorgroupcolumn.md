@@ -5,7 +5,9 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: "insights"
 description: <description>
+doc_type: resourcePageType
 ---
+
 # PersonOrGroupColumn resource type
 
 The **personOrGroupColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values represent a person or group chosen from the directory.

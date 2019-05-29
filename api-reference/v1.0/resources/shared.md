@@ -6,7 +6,9 @@ title: Shared
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Shared resource type
 
 The **Shared** resource indicates a DriveItem has been shared with others.

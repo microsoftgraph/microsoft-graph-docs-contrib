@@ -6,7 +6,9 @@ title: Quota
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Quota resource type
 
 The **quota** resource provides details about space constrains on a [Drive](drive.md) resource.

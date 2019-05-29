@@ -6,7 +6,9 @@ title: Root
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Root resource type
 
 The **Root** facet indicates that an object is the top-most one in its hierarchy.

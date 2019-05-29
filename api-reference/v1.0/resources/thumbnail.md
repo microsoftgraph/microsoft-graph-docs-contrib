@@ -6,7 +6,9 @@ title: Thumbnail
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Thumbnail resource type
 
 The **thumbnail** resource type represents a thumbnail for an image, video, document, or any item that has a bitmap representation.

@@ -6,7 +6,9 @@ title: Deleted
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Deleted facet
 
 The **Deleted** resource indicates that the item has been deleted.

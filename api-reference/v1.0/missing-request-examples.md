@@ -4,6 +4,7 @@ description: "These are things I had to add in the docs to make sure the Markdow
 localization_priority: Normal
 author: ""
 ms.prod: <ms.prod>
+doc_type: conceptualPageType
 ---
 
 # Helpers (examples that aren't included in the docs)

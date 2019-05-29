@@ -6,7 +6,9 @@ title: SiteCollection
 localization_priority: Normal
 ms.prod: "sharepoint"
 description: <description>
+doc_type: resourcePageType
 ---
+
 # SiteCollection resource
 
 The **siteCollection** resource provides more information about a site collection.

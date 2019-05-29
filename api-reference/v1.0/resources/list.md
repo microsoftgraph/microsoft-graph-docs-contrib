@@ -6,7 +6,9 @@ title: List
 localization_priority: Priority
 ms.prod: "sharepoint"
 description: <description>
+doc_type: resourcePageType
 ---
+
 # List resource
 
 The **list** resource represents a list in a [site][].

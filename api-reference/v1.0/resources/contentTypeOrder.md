@@ -6,7 +6,9 @@ title: ContentTypeOrder
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # ContentTypeOrder resource type
 
 The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.

@@ -6,6 +6,7 @@ title: ContentType
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
 # ContentType resource type
 

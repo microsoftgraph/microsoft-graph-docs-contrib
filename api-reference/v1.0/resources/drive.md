@@ -6,7 +6,9 @@ title: Drive
 localization_priority: Priority
 ms.prod: "sharepoint"
 description: <description>
+doc_type: resourcePageType
 ---
+
 # Drive resource type
 
 The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.

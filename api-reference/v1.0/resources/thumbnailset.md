@@ -6,7 +6,9 @@ title: ThumbnailSet
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # ThumbnailSet resource type
 
 The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources.

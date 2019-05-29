@@ -6,7 +6,9 @@ localization_priority: Normal
 title: <title>
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Hashes resource type
 
 The **Hashes** resource groups available hashes into a single structure for an item.

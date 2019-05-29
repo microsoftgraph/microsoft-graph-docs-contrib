@@ -6,7 +6,9 @@ title: SystemFacet
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # System facet
 
 The **System** facet indicates that the object is managed by the system for its own operation.

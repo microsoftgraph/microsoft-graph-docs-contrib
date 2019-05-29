@@ -6,7 +6,9 @@ title: SharingLink
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # SharingLink resource type
 
 The **SharingLink** resource groups link-related data items into a single structure.

@@ -6,7 +6,9 @@ title: DriveRecipient
 localization_priority: Normal
 ms.prod: "sharepoint"
 description: <description>
+doc_type: resourcePageType
 ---
+
 # DriveRecipient resource
 
 The **DriveRecipient** resource represents a person, group, or other recipient to share with using the [invite](../api/driveitem-invite.md) action.

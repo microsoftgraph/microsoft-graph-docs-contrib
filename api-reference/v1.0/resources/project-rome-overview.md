@@ -4,6 +4,7 @@ description: "Project Rome is a Microsoft initiative to build a cross-device exp
 localization_priority: Normal
 author: ""
 ms.prod: <ms.prod>
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph API to work with Project Rome

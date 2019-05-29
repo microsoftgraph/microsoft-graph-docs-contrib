@@ -6,7 +6,9 @@ title: SharePointIds
 localization_priority: Normal
 ms.prod: "sharepoint"
 description: <description>
+doc_type: resourcePageType
 ---
+
 # SharePointIds resource type
 
 The **SharePointIds** resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure.

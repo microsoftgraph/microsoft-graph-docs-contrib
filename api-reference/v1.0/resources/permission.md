@@ -6,7 +6,9 @@ title: Permission
 localization_priority: Priority
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Permission resource type
 
 The **Permission** resource provides information about a sharing permission granted for a [DriveItem](driveitem.md) resource.

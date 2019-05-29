@@ -6,7 +6,9 @@ title: Folder
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Folder resource type
 
 The **Folder** resource groups folder-related data on an item into a single structure. 

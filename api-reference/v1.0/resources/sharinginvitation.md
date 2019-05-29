@@ -6,7 +6,9 @@ title: SharingInvitation
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # SharingInvitation resource type
 
 The **SharingInvitation** resource groups invitation-related data items into a single structure.

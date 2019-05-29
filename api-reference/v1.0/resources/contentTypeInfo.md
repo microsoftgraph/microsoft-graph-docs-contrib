@@ -6,7 +6,9 @@ title: ContentTypeInfo
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # ContentTypeInfo resource type
 
 The **contentTypeInfo** resource indicates the SharePoint content type of an item.

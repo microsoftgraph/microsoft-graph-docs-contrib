@@ -6,7 +6,9 @@ title: Video
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Video resource type
 
 The **Video** resource groups video-related data items into a single structure.

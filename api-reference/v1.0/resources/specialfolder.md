@@ -6,7 +6,9 @@ title: SpecialFolder
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # SpecialFolder resource type
 
 The **SpecialFolder** resource groups special folder-related data items into a single structure.

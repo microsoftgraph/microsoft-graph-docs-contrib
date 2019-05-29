@@ -6,6 +6,7 @@ title: ColumnLink
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
 # ColumnLink resource type
 

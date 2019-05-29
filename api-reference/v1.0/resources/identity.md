@@ -6,7 +6,9 @@ title: Identity
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Identity resource type
 
 The **Identity** resource represents an identity of an _actor_.

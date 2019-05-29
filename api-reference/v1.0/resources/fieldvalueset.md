@@ -6,7 +6,9 @@ title: FieldValueSet
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # FieldValueSet resource
 
 Represents the column values in a [listItem](listitem.md) resource.

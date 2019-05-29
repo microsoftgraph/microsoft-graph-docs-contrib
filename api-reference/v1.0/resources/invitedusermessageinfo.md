@@ -4,6 +4,7 @@ description: "The invitedUserMessageInfo object allows you to configure the invi
 localization_priority: Normal
 author: ""
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
 
 # Configuring the invitation message

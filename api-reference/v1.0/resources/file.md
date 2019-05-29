@@ -6,7 +6,9 @@ title: File
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # File resource type
 
 The **File** resource groups file-related data items into a single structure.

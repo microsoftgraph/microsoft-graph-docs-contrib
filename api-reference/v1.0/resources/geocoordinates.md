@@ -6,7 +6,9 @@ title: GeoCoordinates
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # GeoCoordinates resource type
 
 The **GeoCoordinates** resource provides geographic coordinates and elevation of a location based on metadata contained within the file.

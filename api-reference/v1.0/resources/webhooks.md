@@ -4,6 +4,7 @@ description: "The Microsoft Graph REST API uses a webhook mechanism to deliver c
 localization_priority: Priority
 author: "piotrci"
 ms.prod: <ms.prod>
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph API to get change notifications

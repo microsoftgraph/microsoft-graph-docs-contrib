@@ -6,7 +6,9 @@ title: FolderView
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # FolderView resource type
 
 The **FolderView** resource provides or sets recommendations on the user-experience of a folder.

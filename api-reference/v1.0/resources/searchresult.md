@@ -6,7 +6,9 @@ title: SearchResult
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # SearchResult resource type
 
 The **SearchResult** resource indicates than an item is the response to a search query.

@@ -6,7 +6,9 @@ title: Image
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
+
 # Image resource type
 
 The **Image** resource groups image-related properties into a single structure.
