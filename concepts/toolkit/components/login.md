@@ -27,7 +27,7 @@ The component works with a provider and Microsoft Graph out of the box. However,
 | --- | --- | -- |
 | `userDetails` | `user-details` | Set the user object that will be displayed on the control. |
 
-The following example sets the person details:
+The following example sets the person details.
 
 ```js
 let loginControl = document.getElementById('myLoginControl');
@@ -40,11 +40,11 @@ loginControl.userDetails = {
 
 Setting `userDetails` to `null` will go to the signed out state.
 
-Use the `loginInitiated` and `logoutInitiated` events to handle logging in and out. 
+Use the `loginInitiated` and `logoutInitiated` events to handle signing in and out. 
 
-## CSS Custom properties
+## CSS custom properties
 
-The `mgt-login` component defines these CSS custom properties
+The `mgt-login` component defines the following CSS custom properties.
 
 ```css
 mgt-login {
@@ -65,20 +65,20 @@ To learn more, see [styling components](../style.md).
 
 ## Events
 
-The following events are fired from the control:
+The following events are fired from the control.
 
 | Event | Description |
 | --- | --- |
-| `loginInitiated` | The user clicked the sign in button to start the login process - cancelable|
-| `loginCompleted` | the login process was successful and the user is now signed in |
-| `loginFailed` | The user canceled the login process or was unable to log in |
-| `logoutInitiated` | The user started to logout - cancelable |
-| `logoutCompleted` | the user signed out |
+| `loginInitiated` | The user clicked the sign in button to start the login process - cancelable.|
+| `loginCompleted` | the login process was successful and the user is now signed in. |
+| `loginFailed` | The user canceled the login process or was unable to sign in.|
+| `logoutInitiated` | The user started to logout - cancelable. |
+| `logoutCompleted` | The user signed out. |
 
-## Graph scopes
+## Microsoft Graph permissions
 
-This component leverages the [Person component](./person.md) for displaying the user and inherits all scopes. 
+This component uses the [Person component](./person.md) to display the user and inherits all permissions. 
 
 ## Authentication
 
-The login control leverages the global authentication provider described in the [authentication documentation](./../providers.md). 
+The login control uses the global authentication provider described in the [authentication documentation](./../providers.md). 
