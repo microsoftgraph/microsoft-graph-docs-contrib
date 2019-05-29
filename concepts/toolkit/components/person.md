@@ -77,7 +77,7 @@ To learn more, see [styling components](../style.md).
 The `mgt-person` component supports several [templates](../templates.md) that allow you to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following:
 
 
-### `default` (or when no value is provided)
+### default (or when no value is provided)
 
 The default template replaces the entire component with your own. The `person` object is passed to the template as data context
 
