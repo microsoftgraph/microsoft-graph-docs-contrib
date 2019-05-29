@@ -5,7 +5,7 @@ localization_priority: Normal
 author: nmetulev
 ---
 
-# Microsoft Graph Toolkit (Preview)
+# Microsoft Graph Toolkit (preview)
 
 The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph. ALl components can access Microsoft Graph without any customization required.
 
