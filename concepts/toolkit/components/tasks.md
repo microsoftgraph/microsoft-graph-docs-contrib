@@ -7,8 +7,6 @@ author: benotter
 
 # Tasks component in the Microsoft Graph Toolkit
 
-## Description
-
 The Tasks Component enables the user to view, add, remove, complete, or edit tasks. It works with tasks in Microsoft Planner or Microsoft To-Do.
 
 ## Example
@@ -23,19 +21,20 @@ The Tasks Component enables the user to view, add, remove, complete, or edit tas
 
 | Property | Attribute | Description |
 | -- | -- | -- |
-| `dataSource` | `data-source="todo/planner"` | Sets the Data source for tasks, either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
+| `dataSource` | `data-source="todo/planner"` | Sets the data source for tasks - either Microsoft To-Do, or Microsoft Planner. Default is `planner`. |
 | `readOnly` | `read-only` | Sets the task interface to be read only (no adding or removing tasks). Default is `false`. |
 | `initialId` | `initial-id="planner_id/folder_id"` | Sets the initially displayed planner or folder to the provided ID. |
 | `initialBucketId` | `initial-bucket-id="bucket_id"` | Sets the initially displayed bucket (Planner Data-Source Only) to the provided ID. |
 | `targetId` | `target-id="planner_id/folder_id"` | Locks the tasks interface to the provided planner or folder ID. |
-| `targetBucketId` | `target-bucket-id="bucket_id"` | Locks the tasks interface to the provided bucket id (Planner Data-Source Only). |
+| `targetBucketId` | `target-bucket-id="bucket_id"` | Locks the tasks interface to the provided bucket ID (Planner Data-Source Only). |
 
-ex: 
+The following is an example.
+
 ````html
 <mgt-tasks read-only initial-id="12345"></mgt-tasks>
 ````
 
-## Custom CSS Variables
+## Custom CSS variables
 
 ````css
 mgt-tasks {
@@ -88,11 +87,11 @@ mgt-tasks {
 }
 ````
 
-## Graph Scopes
+## Microsoft Graph permissions
 
-This control uses the following Microsoft Graph APIs and permissions:
+This control uses the following Microsoft Graph APIs and permissions.
 
-| resource | permission/scope |
+| Resource | Permission/scope |
 | - | - |
 | /me/planner/plans | `Group.Read.All` |
 | /planner/plans/${id} | `Group.Read.All`, `Group.ReadWrite.All` |
@@ -101,10 +100,10 @@ This control uses the following Microsoft Graph APIs and permissions:
 | /me/outlook/taskFolders | `Tasks.Read`, `Tasks.ReadWrite` |
 | /me/outlook/tasks | `Tasks.ReadWrite` |
 
-For Microsoft Planner data-source, fetching and reading tasks requires the `'Groups.Read.All'` permission, and for adding / updating / removing tasks, the `'Groups.ReadWrite.All'` permission is required.
+For the Microsoft Planner data source, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
 
-For the Microsoft Todo data-source, the `'Tasks.Read'` permission is required for fetching and reading tasks, while for adding / updating / removing tasks, the `'Tasks.ReadWrite'` permission is required.
+For the Microsoft Todo data source, the Tasks.Read permission is required for fetching and reading tasks. Adding, updating, or removing tasks requires the Tasks.ReadWrite permission.
 
 ## Authentication
 
-The login control leverages the global authentication provider described in the [authentication documentation](./../providers.md).
+The login control uses the global authentication provider described in the [authentication documentation](./../providers.md).
