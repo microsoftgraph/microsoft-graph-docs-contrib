@@ -1,7 +1,7 @@
 ---
 title: "Update mobileThreatDefenseConnector"
 description: "Update the properties of a mobileThreatDefenseConnector object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -118,7 +118,6 @@ Content-Length: 671
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
 
 
 

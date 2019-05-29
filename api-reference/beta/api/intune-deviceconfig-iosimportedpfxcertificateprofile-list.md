@@ -1,7 +1,7 @@
 ---
 title: "List iosImportedPFXCertificateProfiles"
 description: "List properties and relationships of the iosImportedPFXCertificateProfile objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -80,7 +80,6 @@ Content-Length: 556
   ]
 }
 ```
-
 
 
 

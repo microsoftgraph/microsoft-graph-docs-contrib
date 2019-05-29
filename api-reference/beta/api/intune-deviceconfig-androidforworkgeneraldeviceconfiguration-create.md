@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkGeneralDeviceConfiguration"
 description: "Create a new androidForWorkGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -211,7 +211,6 @@ Content-Length: 2210
   "vpnEnableAlwaysOnLockdownMode": true
 }
 ```
-
 
 
 

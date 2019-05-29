@@ -1,7 +1,7 @@
 ---
 title: "Update roleScopeTag"
 description: "Update the properties of a roleScopeTag object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -86,7 +86,6 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
-
 
 
 

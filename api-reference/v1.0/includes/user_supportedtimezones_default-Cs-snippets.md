@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var timeZoneInformation = await graphClient.Me.Outlook.SupportedTimeZones()
+var supportedTimeZones = await graphClient.Me.Outlook.SupportedTimeZones()
 	.Request()
 	.GetAsync();
 

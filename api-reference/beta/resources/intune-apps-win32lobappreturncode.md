@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppReturnCode resource type"
 description: "Contains return code properties for a Win32 App"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -38,7 +38,6 @@ Here is a JSON representation of the resource.
   "type": "String"
 }
 ```
-
 
 
 

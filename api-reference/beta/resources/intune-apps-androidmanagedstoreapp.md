@@ -1,7 +1,7 @@
 ---
 title: "androidManagedStoreApp resource type"
 description: "Contains properties and inherited properties for Android Managed Store Apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -108,7 +108,6 @@ Here is a JSON representation of the resource.
   "supportsOemConfig": true
 }
 ```
-
 
 
 

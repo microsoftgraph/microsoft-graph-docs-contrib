@@ -1,7 +1,7 @@
 ---
 title: "windowsDefenderAdvancedThreatProtectionConfiguration resource type"
 description: "Windows Defender AdvancedThreatProtection Configuration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -87,7 +87,6 @@ Here is a JSON representation of the resource.
   "advancedThreatProtectionOffboardingFilename": "String"
 }
 ```
-
 
 
 

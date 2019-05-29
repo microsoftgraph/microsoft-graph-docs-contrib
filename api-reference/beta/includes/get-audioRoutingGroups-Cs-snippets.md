@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var AudioRoutingGroup = await graphClient.App.Calls["{id}"].AudioRoutingGroups
+var audioRoutingGroups = await graphClient.App.Calls["{id}"].AudioRoutingGroups
 	.Request()
 	.GetAsync();
 

@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.ReadWrite.AzureResources |
+|Application | Not supported. |
 
 ## Optional query parameters
 This method does **not** support [OData Query Parameters](/graph/query-parameters).

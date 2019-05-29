@@ -1,7 +1,7 @@
 ---
 title: "Get remoteActionAudit"
 description: "Read properties and relationships of the remoteActionAudit object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -78,7 +78,6 @@ Content-Length: 543
   }
 }
 ```
-
 
 
 

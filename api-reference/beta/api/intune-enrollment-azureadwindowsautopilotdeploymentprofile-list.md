@@ -1,7 +1,7 @@
 ---
 title: "List azureADWindowsAutopilotDeploymentProfiles"
 description: "List properties and relationships of the azureADWindowsAutopilotDeploymentProfile objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1422
+Content-Length: 1496
 
 {
   "value": [
@@ -92,12 +92,14 @@ Content-Length: 1422
       "extractHardwareHash": true,
       "deviceNameTemplate": "Device Name Template value",
       "deviceType": "surfaceHub2",
-      "enableWhiteGlove": true
+      "enableWhiteGlove": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
     }
   ]
 }
 ```
-
 
 
 

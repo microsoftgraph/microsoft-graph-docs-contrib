@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var message = await graphClient.Me.MailFolders["{id}"].Messages.Delta()
+var delta = await graphClient.Me.MailFolders["{id}"].Messages.Delta()
 	.Request()
 	.Header("Prefer","odata.maxpagesize=2")
 	.GetAsync();

@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var educationSchool = await graphClient.Education.Me.Schools
+var schools = await graphClient.Education.Me.Schools
 	.Request()
 	.GetAsync();
 

@@ -1,7 +1,7 @@
 ---
 title: "Get macOSExtensionsConfiguration"
 description: "Read properties and relationships of the macOSExtensionsConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -91,7 +91,6 @@ Content-Length: 845
   }
 }
 ```
-
 
 
 

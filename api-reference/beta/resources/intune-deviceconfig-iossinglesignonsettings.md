@@ -1,7 +1,7 @@
 ---
 title: "iosSingleSignOnSettings resource type"
 description: "iOS Kerberos authentication settings for single sign-on"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -54,7 +54,6 @@ Here is a JSON representation of the resource.
   "kerberosRealm": "String"
 }
 ```
-
 
 
 

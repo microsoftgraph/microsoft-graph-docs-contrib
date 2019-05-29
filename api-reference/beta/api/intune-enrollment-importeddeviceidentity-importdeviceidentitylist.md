@@ -1,7 +1,7 @@
 ---
 title: "importDeviceIdentityList action"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -108,7 +108,6 @@ Content-Length: 606
   ]
 }
 ```
-
 
 
 

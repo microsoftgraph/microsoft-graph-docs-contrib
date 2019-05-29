@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkVpnConnectionType enum type"
 description: "Android For Work VPN connection type."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -24,7 +24,6 @@ Android For Work VPN connection type.
 |dellSonicWallMobileConnect|3|Dell SonicWALL Mobile Connection.|
 |checkPointCapsuleVpn|4|Check Point Capsule VPN.|
 |citrix|5|Citrix|
-
 
 
 

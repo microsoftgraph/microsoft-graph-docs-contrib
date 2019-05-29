@@ -1,7 +1,7 @@
 ---
 title: "windows10PFXImportCertificateProfile resource type"
 description: "Deprecated"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -75,7 +75,6 @@ Here is a JSON representation of the resource.
   "keyStorageProvider": "String"
 }
 ```
-
 
 
 

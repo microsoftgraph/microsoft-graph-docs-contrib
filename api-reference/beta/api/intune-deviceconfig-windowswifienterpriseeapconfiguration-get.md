@@ -1,7 +1,7 @@
 ---
 title: "Get windowsWifiEnterpriseEAPConfiguration"
 description: "Read properties and relationships of the windowsWifiEnterpriseEAPConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -109,7 +109,6 @@ Content-Length: 1773
   }
 }
 ```
-
 
 
 

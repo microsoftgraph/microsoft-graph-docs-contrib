@@ -1,7 +1,7 @@
 ---
 title: "List userPFXCertificates"
 description: "List properties and relationships of the userPFXCertificate objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -81,6 +81,7 @@ Content-Length: 784
   ]
 }
 ```
+
 
 
 

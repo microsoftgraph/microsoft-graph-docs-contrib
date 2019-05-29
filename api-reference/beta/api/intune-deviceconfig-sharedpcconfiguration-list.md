@@ -1,7 +1,7 @@
 ---
 title: "List sharedPCConfigurations"
 description: "List properties and relationships of the sharedPCConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -103,7 +103,6 @@ Content-Length: 1492
   ]
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Get remoteAssistancePartner"
 description: "Read properties and relationships of the remoteAssistancePartner object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -74,7 +74,6 @@ Content-Length: 346
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "List circularGeofenceManagementConditions"
 description: "List properties and relationships of the circularGeofenceManagementCondition objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -82,7 +82,6 @@ Content-Length: 701
   ]
 }
 ```
-
 
 
 

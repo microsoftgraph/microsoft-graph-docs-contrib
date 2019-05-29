@@ -1,7 +1,7 @@
 ---
 title: "windowsAutopilotDeviceIdentity resource type"
 description: "The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -91,7 +91,6 @@ Here is a JSON representation of the resource.
   "managedDeviceId": "String"
 }
 ```
-
 
 
 

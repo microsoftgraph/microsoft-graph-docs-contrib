@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var messageRule = await graphClient.Me.MailFolders["inbox"].MessageRules
+var messageRules = await graphClient.Me.MailFolders["inbox"].MessageRules
 	.Request()
 	.GetAsync();
 

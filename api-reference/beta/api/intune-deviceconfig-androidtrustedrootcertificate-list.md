@@ -1,7 +1,7 @@
 ---
 title: "List androidTrustedRootCertificates"
 description: "List properties and relationships of the androidTrustedRootCertificate objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -81,7 +81,6 @@ Content-Length: 624
   ]
 }
 ```
-
 
 
 

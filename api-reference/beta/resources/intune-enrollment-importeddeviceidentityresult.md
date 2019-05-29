@@ -1,7 +1,7 @@
 ---
 title: "importedDeviceIdentityResult resource type"
 description: "The importedDeviceIdentityResult resource represents the result of attempting to import a device identity."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -67,7 +67,6 @@ Here is a JSON representation of the resource.
   "status": true
 }
 ```
-
 
 
 

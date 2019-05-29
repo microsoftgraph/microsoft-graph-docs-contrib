@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationLongDecimalTextBoxes"
 description: "List properties and relationships of the groupPolicyPresentationLongDecimalTextBox objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -77,7 +77,6 @@ Content-Length: 411
   ]
 }
 ```
-
 
 
 

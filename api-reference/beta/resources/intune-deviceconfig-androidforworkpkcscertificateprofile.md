@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkPkcsCertificateProfile resource type"
 description: "Android For Work PKCS certificate profile"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -101,7 +101,6 @@ Here is a JSON representation of the resource.
   "subjectAlternativeNameFormatString": "String"
 }
 ```
-
 
 
 

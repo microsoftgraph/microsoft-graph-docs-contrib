@@ -1,7 +1,7 @@
 ---
 title: "Get sharedPCConfiguration"
 description: "Read properties and relationships of the sharedPCConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -105,7 +105,6 @@ Content-Length: 1408
   }
 }
 ```
-
 
 
 

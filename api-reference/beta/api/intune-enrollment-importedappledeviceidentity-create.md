@@ -1,7 +1,7 @@
 ---
 title: "Create importedAppleDeviceIdentity"
 description: "Create a new importedAppleDeviceIdentity object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -108,7 +108,6 @@ Content-Length: 605
   "platform": "ios"
 }
 ```
-
 
 
 

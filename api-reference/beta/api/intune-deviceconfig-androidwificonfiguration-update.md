@@ -1,7 +1,7 @@
 ---
 title: "Update androidWiFiConfiguration"
 description: "Update the properties of a androidWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -119,7 +119,6 @@ Content-Length: 607
   "wiFiSecurityType": "wpaEnterprise"
 }
 ```
-
 
 
 

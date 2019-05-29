@@ -1,7 +1,7 @@
 ---
 title: "windows81VpnConfiguration resource type"
 description: "By providing the configurations in this profile you can instruct the Windows 8.1 (and later) devices to connect to desired VPN endpoint. By specifying the authentication method and security types expected by VPN endpoint you can make the VPN connection seamless for end user."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -103,7 +103,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

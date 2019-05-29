@@ -1,7 +1,7 @@
 ---
 title: "Update windows81SCEPCertificateProfile"
 description: "Update the properties of a windows81SCEPCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -177,7 +177,6 @@ Content-Length: 1423
   "certificateStore": "machine"
 }
 ```
-
 
 
 

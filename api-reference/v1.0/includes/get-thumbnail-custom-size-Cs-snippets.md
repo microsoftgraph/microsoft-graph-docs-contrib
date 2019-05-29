@@ -1,10 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var thumbnailSet = await graphClient.Me.Drive.Items["{item-id}"].Thumbnails
-	.Request()
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("select", "c300x400_Crop")
+};
+
+var thumbnails = await graphClient.Me.Drive.Items["{item-id}"].Thumbnails
+	.Request( queryOptions )
 	.GetAsync();
 
 ```

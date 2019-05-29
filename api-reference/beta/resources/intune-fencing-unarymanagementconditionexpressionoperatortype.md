@@ -1,7 +1,7 @@
 ---
 title: "unaryManagementConditionExpressionOperatorType enum type"
 description: "Supported operators for unary management condition expressions"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -19,7 +19,6 @@ Supported operators for unary management condition expressions
 |Member|Value|Description|
 |:---|:---|:---|
 |not|0|Negates the evaluation of the operand.|
-
 
 
 

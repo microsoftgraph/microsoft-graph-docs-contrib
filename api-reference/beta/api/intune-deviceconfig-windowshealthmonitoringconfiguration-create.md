@@ -1,7 +1,7 @@
 ---
 title: "Create windowsHealthMonitoringConfiguration"
 description: "Create a new windowsHealthMonitoringConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -56,7 +56,8 @@ The following table shows the properties that are required when you create the w
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |allowDeviceHealthMonitoring|[enablement](../resources/intune-shared-enablement.md)|Enables device health monitoring on the device. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Sepcifies set of events collected from the device where health monitoring is enabled. Possible values are: `undefined`, `healthMonitoring`, `bootPerformance`.|
+|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Specifies set of events collected from the device where health monitoring is enabled. Possible values are: `undefined`, `healthMonitoring`, `bootPerformance`.|
+|configDeviceHealthMonitoringCustomScope|String|Specifies custom set of events collected from the device where health monitoring is enabled|
 
 
 
@@ -70,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 371
+Content-length: 471
 
 {
   "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
@@ -82,7 +83,8 @@ Content-length: 371
   "displayName": "Display Name value",
   "version": 7,
   "allowDeviceHealthMonitoring": "enabled",
-  "configDeviceHealthMonitoringScope": "healthMonitoring"
+  "configDeviceHealthMonitoringScope": "healthMonitoring",
+  "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
 
@@ -91,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 643
 
 {
   "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
@@ -106,10 +108,10 @@ Content-Length: 543
   "displayName": "Display Name value",
   "version": 7,
   "allowDeviceHealthMonitoring": "enabled",
-  "configDeviceHealthMonitoringScope": "healthMonitoring"
+  "configDeviceHealthMonitoringScope": "healthMonitoring",
+  "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update sideLoadingKey"
 description: "Update the properties of a sideLoadingKey object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -94,7 +94,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

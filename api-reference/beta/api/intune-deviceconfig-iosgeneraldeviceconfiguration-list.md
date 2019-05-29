@@ -1,7 +1,7 @@
 ---
 title: "List iosGeneralDeviceConfigurations"
 description: "List properties and relationships of the iosGeneralDeviceConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10318
+Content-Length: 10627
 
 {
   "value": [
@@ -173,11 +173,16 @@ Content-Length: 10318
       "kioskModeAllowAssistiveSpeak": true,
       "kioskModeAllowAssistiveTouchSettings": true,
       "kioskModeAllowAutoLock": true,
+      "kioskModeBlockAutoLock": true,
       "kioskModeAllowColorInversionSettings": true,
       "kioskModeAllowRingerSwitch": true,
+      "kioskModeBlockRingerSwitch": true,
       "kioskModeAllowScreenRotation": true,
+      "kioskModeBlockScreenRotation": true,
       "kioskModeAllowSleepButton": true,
+      "kioskModeBlockSleepButton": true,
       "kioskModeAllowTouchscreen": true,
+      "kioskModeBlockTouchscreen": true,
       "kioskModeAllowVoiceOverSettings": true,
       "kioskModeAllowVolumeButtons": true,
       "kioskModeBlockVolumeButtons": true,
@@ -315,12 +320,13 @@ Content-Length: 10318
       "passwordBlockAirDropSharing": true,
       "dateAndTimeForceSetAutomatically": true,
       "contactsAllowManagedToUnmanagedWrite": true,
-      "contactsAllowUnmanagedToManagedRead": true
+      "contactsAllowUnmanagedToManagedRead": true,
+      "cellularBlockPersonalHotspotModification": true,
+      "siriDisableServerLogging": true
     }
   ]
 }
 ```
-
 
 
 

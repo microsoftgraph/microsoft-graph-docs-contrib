@@ -1,7 +1,7 @@
 ---
 title: "Create windows10PFXImportCertificateProfile"
 description: "Create a new windows10PFXImportCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -106,7 +106,6 @@ Content-Length: 489
   "keyStorageProvider": "useTpmKspOtherwiseFail"
 }
 ```
-
 
 
 

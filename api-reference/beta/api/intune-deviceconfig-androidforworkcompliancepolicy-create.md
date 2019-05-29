@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkCompliancePolicy"
 description: "Create a new androidForWorkCompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -165,7 +165,6 @@ Content-Length: 1455
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
-
 
 
 

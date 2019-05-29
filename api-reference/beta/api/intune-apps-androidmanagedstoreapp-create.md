@@ -1,7 +1,7 @@
 ---
 title: "Create androidManagedStoreApp"
 description: "Create a new androidManagedStoreApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -158,7 +158,6 @@ Content-Length: 1110
   "supportsOemConfig": true
 }
 ```
-
 
 
 

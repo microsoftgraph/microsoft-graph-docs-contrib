@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var plannerPlan = await graphClient.Me.Planner.Plans
+var plans = await graphClient.Me.Planner.Plans
 	.Request()
 	.GetAsync();
 

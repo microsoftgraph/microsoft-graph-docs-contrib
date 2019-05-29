@@ -1,7 +1,7 @@
 ---
 title: "Create androidForWorkImportedPFXCertificateProfile"
 description: "Create a new androidForWorkImportedPFXCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -136,7 +136,6 @@ Content-Length: 898
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

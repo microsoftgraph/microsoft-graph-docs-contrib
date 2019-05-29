@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var office365ActivationsUserDetail = await graphClient.Reports.GetOffice365ActivationsUserDetail()
+var getOffice365ActivationsUserDetail = await graphClient.Reports.GetOffice365ActivationsUserDetail()
 	.Request()
 	.GetAsync();
 

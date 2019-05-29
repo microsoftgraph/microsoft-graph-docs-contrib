@@ -71,6 +71,8 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/refresh_excel_session-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/refresh_excel_session-Cs-snippets.md)]

@@ -1,7 +1,7 @@
 ---
 title: "Update androidWorkProfileGeneralDeviceConfiguration"
 description: "Update the properties of a androidWorkProfileGeneralDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -212,7 +212,6 @@ Content-Length: 2214
   "vpnEnableAlwaysOnLockdownMode": true
 }
 ```
-
 
 
 

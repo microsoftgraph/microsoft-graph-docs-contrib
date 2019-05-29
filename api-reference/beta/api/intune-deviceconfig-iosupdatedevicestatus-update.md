@@ -1,7 +1,7 @@
 ---
 title: "Update iosUpdateDeviceStatus"
 description: "Update the properties of a iosUpdateDeviceStatus object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -115,7 +115,6 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

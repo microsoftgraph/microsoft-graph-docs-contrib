@@ -1,7 +1,7 @@
 ---
 title: "remoteAction enum type"
 description: "Remote actions Intune supports."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: enumPageType
@@ -37,7 +37,6 @@ Remote actions Intune supports.
 |updateDeviceAccount|16|User initiates an action to update account on device.|
 |automaticRedeployment|17|User initiates an action to automatice redeploy the device|
 |shutDown|18|User initiates an action to shut down the device.|
-
 
 
 

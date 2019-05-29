@@ -1,7 +1,7 @@
 ---
 title: "dataSharingConsent resource type"
 description: "Data sharing consent information."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -59,7 +59,6 @@ Here is a JSON representation of the resource.
   "grantedByUserId": "String"
 }
 ```
-
 
 
 

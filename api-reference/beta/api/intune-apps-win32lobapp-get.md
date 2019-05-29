@@ -1,7 +1,7 @@
 ---
 title: "Get win32LobApp"
 description: "Read properties and relationships of the win32LobApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -159,7 +159,6 @@ Content-Length: 3101
   }
 }
 ```
-
 
 
 

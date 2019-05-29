@@ -59,7 +59,7 @@ There is no response body.
   "blockType": "response",
   "name": "post_educationSynchronizationProfile_reset"
 }-->
-```
+```http
 HTTP/1.1 200 OK
 ```
 #### SDK sample code

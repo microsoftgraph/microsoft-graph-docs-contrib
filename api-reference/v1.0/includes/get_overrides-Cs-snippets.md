@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var inferenceClassificationOverride = await graphClient.Me.InferenceClassification.Overrides
+var overrides = await graphClient.Me.InferenceClassification.Overrides
 	.Request()
 	.GetAsync();
 

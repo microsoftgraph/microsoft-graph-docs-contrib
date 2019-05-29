@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var group = await graphClient.Groups.Delta()
+var delta = await graphClient.Groups.Delta()
 	.Request()
 	.Header("Prefer","return=minimal")
 	.Select( e => new {

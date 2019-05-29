@@ -46,7 +46,7 @@ POST /sites/{site-id}/lists
 Content-Type: application/json
 
 {
-  "name": "Books",
+  "displayName": "Books",
   "columns": [
     {
       "name": "Author",

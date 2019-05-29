@@ -1,7 +1,7 @@
 ---
 title: "Create importedWindowsAutopilotDeviceIdentityUpload"
 description: "Create a new importedWindowsAutopilotDeviceIdentityUpload object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -85,7 +85,6 @@ Content-Length: 221
   "status": "pending"
 }
 ```
-
 
 
 

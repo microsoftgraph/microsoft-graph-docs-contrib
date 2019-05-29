@@ -1,7 +1,7 @@
 ---
 title: "List iosVpnConfigurations"
 description: "List properties and relationships of the iosVpnConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -143,7 +143,6 @@ Content-Length: 2547
   ]
 }
 ```
-
 
 
 

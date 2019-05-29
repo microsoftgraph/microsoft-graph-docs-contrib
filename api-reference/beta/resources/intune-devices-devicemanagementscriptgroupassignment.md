@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementScriptGroupAssignment resource type"
 description: "Contains properties used to assign a device management script to a group."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -48,7 +48,6 @@ Here is a JSON representation of the resource.
   "targetGroupId": "String"
 }
 ```
-
 
 
 

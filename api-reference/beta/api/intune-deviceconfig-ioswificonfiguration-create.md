@@ -1,7 +1,7 @@
 ---
 title: "Create iosWiFiConfiguration"
 description: "Create a new iosWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -133,7 +133,6 @@ Content-Length: 847
   "preSharedKey": "Pre Shared Key value"
 }
 ```
-
 
 
 

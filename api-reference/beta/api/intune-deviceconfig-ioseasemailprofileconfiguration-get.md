@@ -1,7 +1,7 @@
 ---
 title: "Get iosEasEmailProfileConfiguration"
 description: "Read properties and relationships of the iosEasEmailProfileConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1450
+Content-Length: 1545
 
 {
   "value": {
@@ -99,11 +99,12 @@ Content-Length: 1450
     "smimeSigningCertificateUserOverrideEnabled": true,
     "smimeEncryptionCertificateUserOverrideEnabled": true,
     "requireSsl": true,
-    "useOAuth": true
+    "useOAuth": true,
+    "signingCertificateType": "certificate",
+    "encryptionCertificateType": "certificate"
   }
 }
 ```
-
 
 
 

@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.Groups["{id}"].RejectedSenders
+var rejectedSenders = await graphClient.Groups["{id}"].RejectedSenders
 	.Request()
 	.GetAsync();
 

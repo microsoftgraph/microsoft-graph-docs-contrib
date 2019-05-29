@@ -1,7 +1,7 @@
 ---
 title: "executeAction action"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -49,6 +49,8 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|Not yet documented|
+|keepEnrollmentData|Boolean|Not yet documented|
+|keepUserData|Boolean|Not yet documented|
 |deviceIds|String collection|Not yet documented|
 
 
@@ -64,10 +66,12 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 78
+Content-length: 134
 
 {
   "actionName": "delete",
+  "keepEnrollmentData": true,
+  "keepUserData": true,
   "deviceIds": [
     "Device Ids value"
   ]
@@ -99,7 +103,6 @@ Content-Length: 385
   }
 }
 ```
-
 
 
 

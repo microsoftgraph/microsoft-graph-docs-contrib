@@ -1,7 +1,7 @@
 ---
 title: "Create win32LobApp"
 description: "Create a new win32LobApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -285,7 +285,6 @@ Content-Length: 2904
   "setupFilePath": "Setup File Path value"
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "customSubjectAlternativeName resource type"
 description: "Custom Subject Alternative Name definition"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -38,7 +38,6 @@ Here is a JSON representation of the resource.
   "name": "String"
 }
 ```
-
 
 
 

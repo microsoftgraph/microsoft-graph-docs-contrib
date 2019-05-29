@@ -1,7 +1,7 @@
 ---
 title: "windowsManagementAppHealthState resource type"
 description: "Windows management app health state entity."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -56,7 +56,6 @@ Here is a JSON representation of the resource.
   "deviceOSVersion": "String"
 }
 ```
-
 
 
 

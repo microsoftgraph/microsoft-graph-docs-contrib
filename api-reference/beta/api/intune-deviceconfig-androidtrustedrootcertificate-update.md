@@ -1,7 +1,7 @@
 ---
 title: "Update androidTrustedRootCertificate"
 description: "Update the properties of a androidTrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -110,7 +110,6 @@ Content-Length: 539
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

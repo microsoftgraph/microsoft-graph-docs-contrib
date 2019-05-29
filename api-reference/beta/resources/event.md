@@ -79,13 +79,13 @@ Here is a JSON representation of the resource
   "subject": "string",
   "type": "String",
   "webLink": "string",
-  
+
   "attachments": [ { "@odata.type": "microsoft.graph.attachment" } ],
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]  
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -100,7 +100,7 @@ Here is a JSON representation of the resource
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|The date and time that the event ends.|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
-|id|String| Read-only.|
+|id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isCancelled|Boolean|Set to true if the event has been canceled.|

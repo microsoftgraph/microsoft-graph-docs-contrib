@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var outlookTaskFolder = await graphClient.Me.Outlook.TaskFolders
+var taskFolders = await graphClient.Me.Outlook.TaskFolders
 	.Request()
 	.GetAsync();
 

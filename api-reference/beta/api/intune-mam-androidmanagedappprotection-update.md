@@ -1,7 +1,7 @@
 ---
 title: "Update androidManagedAppProtection"
 description: "Update the properties of a androidManagedAppProtection object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -101,6 +101,8 @@ The following table shows the properties that are required when you create the [
 |appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android SafetyNet Attestation requirment fails. Possible values are: `block`, `wipe`, `warn`.|
 |requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Defines the Android SafetyNet Apps Verification requirement for a managed app to work. Possible values are: `none`, `enabled`.|
 |appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android App Verification requirment fails. Possible values are: `block`, `wipe`, `warn`.|
+|customBrowserPackageId|String|Unique identifier of a custom browser to open weblink on Android.|
+|customBrowserDisplayName|String|Friendly name of the preferred custom browser to open weblink on Android.|
 
 
 
@@ -114,7 +116,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections/{androidManagedAppProtectionId}
 Content-type: application/json
-Content-length: 2778
+Content-length: 2910
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -179,7 +181,9 @@ Content-length: 2778
   "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
   "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
   "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+  "customBrowserPackageId": "Custom Browser Package Id value",
+  "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
 
@@ -188,7 +192,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2950
+Content-Length: 3082
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppProtection",
@@ -256,10 +260,11 @@ Content-Length: 2950
   "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
   "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
   "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+  "customBrowserPackageId": "Custom Browser Package Id value",
+  "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
-
 
 
 

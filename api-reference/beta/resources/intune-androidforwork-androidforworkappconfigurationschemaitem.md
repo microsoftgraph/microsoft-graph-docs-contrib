@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkAppConfigurationSchemaItem resource type"
 description: "Single configuration item inside an Android for Work application's custom configuration schema."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -60,7 +60,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

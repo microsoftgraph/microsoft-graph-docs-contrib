@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var administrativeUnit = await graphClient.AdministrativeUnits
+var administrativeUnits = await graphClient.AdministrativeUnits
 	.Request()
 	.GetAsync();
 

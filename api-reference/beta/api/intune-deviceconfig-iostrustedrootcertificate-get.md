@@ -1,7 +1,7 @@
 ---
 title: "Get iosTrustedRootCertificate"
 description: "Read properties and relationships of the iosTrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -82,7 +82,6 @@ Content-Length: 580
   }
 }
 ```
-
 
 
 

@@ -59,6 +59,8 @@ Here is an example of the response.
 HTTP/1.1 202 Accepted
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_synchronizationProfile-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_synchronizationProfile-Cs-snippets.md)]

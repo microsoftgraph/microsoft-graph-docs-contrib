@@ -1,7 +1,7 @@
 ---
 title: "Update securityBaselineTemplate"
 description: "Update the properties of a securityBaselineTemplate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/templates/{deviceManagementTemplateId}
+PATCH /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}
 ```
 
 ## Request headers
@@ -48,6 +49,9 @@ The following table shows the properties that are required when you create the [
 |id|String|The template ID Inherited from [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |displayName|String|The template's display name Inherited from [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |description|String|The template's description Inherited from [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|versionInfo|String|The template's version information Inherited from [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|isDeprecated|Boolean|The template is deprecated or not. Intents cannot be created from a deprecated template. Inherited from [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|intentCount|Int32|Number of Intents created from this template. Inherited from [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 
 
 
@@ -61,12 +65,15 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
 Content-type: application/json
-Content-length: 145
+Content-length: 232
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
 
@@ -75,16 +82,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 194
+Content-Length: 281
 
 {
   "@odata.type": "#microsoft.graph.securityBaselineTemplate",
   "id": "3f61d4c2-d4c2-3f61-c2d4-613fc2d4613f",
   "displayName": "Display Name value",
-  "description": "Description value"
+  "description": "Description value",
+  "versionInfo": "Version Info value",
+  "isDeprecated": true,
+  "intentCount": 11
 }
 ```
-
 
 
 

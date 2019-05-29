@@ -124,6 +124,8 @@ Content-length: 2105
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_start-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/post_educationSynchronizationProfile_start-Cs-snippets.md)]

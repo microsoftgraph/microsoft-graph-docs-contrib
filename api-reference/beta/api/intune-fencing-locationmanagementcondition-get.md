@@ -1,7 +1,7 @@
 ---
 title: "Get locationManagementCondition"
 description: "Read properties and relationships of the locationManagementCondition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -80,7 +80,6 @@ Content-Length: 476
   }
 }
 ```
-
 
 
 

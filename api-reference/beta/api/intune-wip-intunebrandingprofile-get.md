@@ -1,7 +1,7 @@
 ---
 title: "Get intuneBrandingProfile"
 description: "Read properties and relationships of the intuneBrandingProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -106,7 +106,6 @@ Content-Length: 1472
   }
 }
 ```
-
 
 
 

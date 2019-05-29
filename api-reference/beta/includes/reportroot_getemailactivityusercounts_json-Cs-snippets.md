@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var emailActivitySummary = await graphClient.Reports.GetEmailActivityUserCounts('D7')
+var getEmailActivityUserCounts = await graphClient.Reports.GetEmailActivityUserCounts('D7')
 	.Request()
 	.GetAsync();
 

@@ -1,7 +1,7 @@
 ---
 title: "Update enrollmentConfigurationAssignment"
 description: "Update the properties of a enrollmentConfigurationAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -46,8 +46,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Not yet documented|
+|id|String|Key of the enrollment configuration assignment|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Represents an assignment to managed devices in the tenant|
 
 
 
@@ -86,7 +86,6 @@ Content-Length: 222
   }
 }
 ```
-
 
 
 

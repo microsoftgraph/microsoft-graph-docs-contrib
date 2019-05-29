@@ -1,7 +1,7 @@
 ---
 title: "Update androidWorkProfileScepCertificateProfile"
 description: "Update the properties of a androidWorkProfileScepCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -174,7 +174,6 @@ Content-Length: 1381
   ]
 }
 ```
-
 
 
 

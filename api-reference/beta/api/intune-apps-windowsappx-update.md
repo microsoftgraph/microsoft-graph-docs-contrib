@@ -1,7 +1,7 @@
 ---
 title: "Update windowsAppX"
 description: "Update the properties of a windowsAppX object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -190,7 +190,6 @@ Content-Length: 1539
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

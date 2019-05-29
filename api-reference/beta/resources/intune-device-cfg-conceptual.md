@@ -1,7 +1,7 @@
 ---
 title: "Device configuration in Microsoft Intune - Microsoft Gaaph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define configure devices for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: conceptualPageType
@@ -167,6 +167,9 @@ The following Graph resources are available to manage settings and features on d
 - [Device configuration user state summary](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [Device configuration user status](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device guard local system authority credential guard type](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [Device management derived credential issuer](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
+- [Device management derived credential notification type](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
+- [Device management derived credential settings](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [Device management settings](intune-deviceconfig-devicemanagementsettings.md)
 - [Device management user rights local user or group](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Device management user rights setting](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -194,6 +197,7 @@ The following Graph resources are available to manage settings and features on d
 - [Edge telemetry mode](intune-deviceconfig-edgetelemetrymode.md)
 - [Edition upgrade configuration](intune-deviceconfig-editionupgradeconfiguration.md)
 - [Edition upgrade license type](intune-deviceconfig-editionupgradelicensetype.md)
+- [Email certificate type](intune-deviceconfig-emailcertificatetype.md)
 - [Email sync duration](intune-deviceconfig-emailsyncduration.md)
 - [Email sync schedule](intune-deviceconfig-emailsyncschedule.md)
 - [Encryption readiness state](intune-deviceconfig-encryptionreadinessstate.md)
@@ -240,6 +244,7 @@ The following Graph resources are available to manage settings and features on d
 - [iOS certificate profile base](intune-deviceconfig-ioscertificateprofilebase.md)
 - [iOS compliance policy](intune-deviceconfig-ioscompliancepolicy.md)
 - [iOS custom configuration](intune-deviceconfig-ioscustomconfiguration.md)
+- [iOS derived credential authentication configuration](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [iOS device features configuration](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
 - [iOS EAS email profile configuration](intune-deviceconfig-ioseasemailprofileconfiguration.md)
 - [iOS EDU certificate settings](intune-deviceconfig-ioseducertificatesettings.md)

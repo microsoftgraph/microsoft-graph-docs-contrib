@@ -1,7 +1,7 @@
 ---
 title: "runSchedule resource type"
 description: "Run schedule of a recurring device management script."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -34,7 +34,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.runSchedule"
 }
 ```
-
 
 
 

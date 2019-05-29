@@ -1,7 +1,7 @@
 ---
 title: "Update macOSWiFiConfiguration"
 description: "Update the properties of a macOSWiFiConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -134,7 +134,6 @@ Content-Length: 849
   "preSharedKey": "Pre Shared Key value"
 }
 ```
-
 
 
 

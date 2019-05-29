@@ -1,7 +1,7 @@
 ---
 title: "List androidEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the androidEnterpriseWiFiConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1054
+Content-Length: 1227
 
 {
   "value": [
@@ -84,12 +84,14 @@ Content-Length: 1054
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
       "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+      "usernameFormatString": "Username Format String value",
+      "passwordFormatString": "Password Format String value",
+      "preSharedKey": "Pre Shared Key value"
     }
   ]
 }
 ```
-
 
 
 

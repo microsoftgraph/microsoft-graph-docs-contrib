@@ -1,7 +1,7 @@
 ---
 title: "List iosEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the iosEnterpriseWiFiConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1404
+Content-Length: 1530
 
 {
   "value": [
@@ -92,12 +92,13 @@ Content-Length: 1404
       ],
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+      "usernameFormatString": "Username Format String value",
+      "passwordFormatString": "Password Format String value"
     }
   ]
 }
 ```
-
 
 
 

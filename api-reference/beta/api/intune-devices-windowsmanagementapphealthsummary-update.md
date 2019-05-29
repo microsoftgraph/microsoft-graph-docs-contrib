@@ -1,7 +1,7 @@
 ---
 title: "Update windowsManagementAppHealthSummary"
 description: "Update the properties of a windowsManagementAppHealthSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,7 +88,6 @@ Content-Length: 210
   "unknownDeviceCount": 2
 }
 ```
-
 
 
 

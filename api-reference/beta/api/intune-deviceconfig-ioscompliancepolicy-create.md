@@ -1,7 +1,7 @@
 ---
 title: "Create iosCompliancePolicy"
 description: "Create a new iosCompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -169,7 +169,6 @@ Content-Length: 1413
   ]
 }
 ```
-
 
 
 

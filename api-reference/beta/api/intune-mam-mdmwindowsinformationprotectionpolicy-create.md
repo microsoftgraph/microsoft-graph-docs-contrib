@@ -1,7 +1,7 @@
 ---
 title: "Create mdmWindowsInformationProtectionPolicy"
 description: "Create a new mdmWindowsInformationProtectionPolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -357,7 +357,6 @@ Content-Length: 4139
   "isAssigned": true
 }
 ```
-
 
 
 

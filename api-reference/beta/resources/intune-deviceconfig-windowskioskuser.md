@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskUser resource type"
 description: "The user base class used to identify the account info for the kiosk configuration"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -34,7 +34,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsKioskUser"
 }
 ```
-
 
 
 

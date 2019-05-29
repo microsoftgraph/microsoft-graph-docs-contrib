@@ -1,7 +1,7 @@
 ---
 title: "deviceAppManagement resource type"
 description: "Singleton entity that acts as a container for all device app management functionality."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -68,14 +68,12 @@ Here is a JSON representation of the resource.  Note that this is only an exampl
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "optionalProperties":[
-    "managedAppRegistrations"
-    ],
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.deviceAppManagement"
-}-->
+}
+-->
 ``` json
 {
+  "@odata.type": "#microsoft.graph.deviceAppManagement",
   "id": "String (identifier)",
   "microsoftStoreForBusinessLastSuccessfulSyncDateTime": "String (timestamp)",
   "isEnabledForMicrosoftStoreForBusiness": true,

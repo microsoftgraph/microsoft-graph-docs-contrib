@@ -1,7 +1,7 @@
 ---
 title: "windows10GeneralConfiguration resource type"
 description: "This topic provides descriptions of the declared methods, properties and relationships exposed by the windows10GeneralConfiguration resource."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -648,7 +648,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

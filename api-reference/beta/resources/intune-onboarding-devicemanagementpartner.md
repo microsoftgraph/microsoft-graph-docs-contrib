@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementPartner resource type"
 description: "Entity which represents a connection to device management partner."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -66,7 +66,6 @@ Here is a JSON representation of the resource.
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

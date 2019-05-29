@@ -1,7 +1,7 @@
 ---
 title: "Update windows10ImportedPFXCertificateProfile"
 description: "Update the properties of a windows10ImportedPFXCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -125,7 +125,6 @@ Content-Length: 758
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

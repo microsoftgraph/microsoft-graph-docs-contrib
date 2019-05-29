@@ -1,7 +1,7 @@
 ---
 title: "Create auditEvent"
 description: "Create a new auditEvent object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -166,7 +166,6 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
-
 
 
 

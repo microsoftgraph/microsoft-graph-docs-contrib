@@ -1,7 +1,7 @@
 ---
 title: "Create deviceConfigurationConflictSummary"
 description: "Create a new deviceConfigurationConflictSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -104,7 +104,6 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
-
 
 
 

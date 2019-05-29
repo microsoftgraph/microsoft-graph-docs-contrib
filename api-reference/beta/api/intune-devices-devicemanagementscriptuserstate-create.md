@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementScriptUserState"
 description: "Create a new deviceManagementScriptUserState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -88,7 +88,6 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

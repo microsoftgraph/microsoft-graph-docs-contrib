@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An Outlook item that can track a work item. 
+An Outlook item that can track a work item.
 
 You can use a task to track the start, due and actual completion dates and times, its progress or status, whether it's recurring, and requires reminding.
 
@@ -24,8 +24,8 @@ Date-related properties in the **outlookTask** resource include the following:
 - reminderDateTime
 - startDateTime
 
-By default, the POST, GET, PATCH, and [complete](../api/outlooktask-complete.md) operations return date-related properties in their REST responses in UTC. 
-You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone 
+By default, the POST, GET, PATCH, and [complete](../api/outlooktask-complete.md) operations return date-related properties in their REST responses in UTC.
+You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone
 different than UTC. The following example returns date-related properties in EST in the corresponding response:
 
 ```
@@ -60,7 +60,7 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |createdDateTime|DateTimeOffset|The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
 |hasAttachments|Boolean|Set to true if the task has attachments.|
-|id|String|The unique identifier of the task. Read-only.|
+|id|String| Unique identifier for the task. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |importance|string|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
@@ -91,7 +91,7 @@ Here is a JSON representation of the resource.
     "multiValueExtendedProperties"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.outlookTask"
 }-->
 

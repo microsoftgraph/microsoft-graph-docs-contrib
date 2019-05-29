@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkImportedPFXCertificateProfile resource type"
 description: "Android For Work PFX Import certificate profile"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: resourcePageType
@@ -95,7 +95,6 @@ Here is a JSON representation of the resource.
   "intendedPurpose": "String"
 }
 ```
-
 
 
 

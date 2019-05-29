@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedAppProtection"
 description: "Read properties and relationships of the androidManagedAppProtection object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3101
+Content-Length: 3237
 
 {
   "value": {
@@ -130,11 +130,12 @@ Content-Length: 3101
     "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
     "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
     "requiredAndroidSafetyNetAppsVerificationType": "enabled",
-    "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
+    "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+    "customBrowserPackageId": "Custom Browser Package Id value",
+    "customBrowserDisplayName": "Custom Browser Display Name value"
   }
 }
 ```
-
 
 
 

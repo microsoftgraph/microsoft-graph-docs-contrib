@@ -1,7 +1,7 @@
 ---
 title: "Update windowsPhone81TrustedRootCertificate"
 description: "Update the properties of a windowsPhone81TrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 doc_type: apiPageType
@@ -108,7 +108,6 @@ Content-Length: 546
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 
