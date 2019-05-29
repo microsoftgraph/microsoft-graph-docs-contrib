@@ -1,25 +1,24 @@
 ---
-title: "The Microsoft Graph Toolkit"
-description: "The Microsoft Graph Toolkit is a collection of framework agnostic web components and helpers for accessing and working with Microsoft Graph."
+title: "Microsoft Graph Toolkit (preview)"
+description: "The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph."
 localization_priority: Normal
 author: nmetulev
 ---
 
-# The Microsoft Graph Toolkit (Preview)
+# Microsoft Graph Toolkit (Preview)
 
-The Microsoft Graph Toolkit is a collection of framework agnostic web components and helpers for accessing and working with Microsoft Graph. ALl components know how to access Microsoft Graph out of the box.
+The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph. ALl components know how to access Microsoft Graph out of the box.
 
-## This library is in Preview
+>[!NOTE]
+>This library is in preview and is in early development. We expect to make changes and improvements to all components and APIs based on feedback from the community.
 
-This library is in preview and is in early development. Based on feedback from the community, all components and APIs are expected to change and improve.
-
-## Getting Started
+## Getting started
 
 [Watch the Getting Started Video](https://www.youtube.com/watch?v=oZCGb2MMxa0)
 
-You can use the components by referencing the loader directly (via unpkg), or installing the npm package
+You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.
 
-### Use via mgt-loader:
+### Use via mgt-loader
 
 [Here is a quick jsfiddle](https://jsfiddle.net/metulev/9phqxLd5/)
 
