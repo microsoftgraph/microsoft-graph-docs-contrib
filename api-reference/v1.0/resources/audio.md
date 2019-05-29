@@ -5,6 +5,7 @@ title: Audio
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 description: <description>
+doc_type: resourcePageType
 ---
 # Audio facet
 

@@ -6,6 +6,7 @@ title: BaseItem
 localization_priority: Normal
 description: <description>
 ms.prod: <ms.prod>
+doc_type: resourcePageType
 ---
 # BaseItem resource type
 

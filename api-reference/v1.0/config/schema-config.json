@@ -19,7 +19,8 @@
       "contributing.md",
       "issue_template.md",
       "readme.md",
-      "license.md"
+      "license.md",
+      "index.md"
     ],
     "treatErrorsAsWarningsWorkloads": [
       "intune"

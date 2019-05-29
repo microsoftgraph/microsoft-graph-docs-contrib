@@ -4,6 +4,7 @@ description: "With Microsoft Graph, you can access Azure Active Directory (Azure
 localization_priority: Priority
 author: ""
 ms.prod: <ms.prod>
+doc_type: conceptualPageType
 ---
 
 # Working with Azure Active Directory resources in Microsoft Graph

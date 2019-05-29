@@ -4,6 +4,7 @@ description: "Welcome to Microsoft Graph REST API reference for the v1.0 endpoin
 localization_priority: Priority
 author: ""
 ms.prod: <ms.prod>
+doc_type: conceptualPageType
 ---
 
 # Microsoft Graph REST API v1.0 reference
