@@ -7742,7 +7742,7 @@
         - name: Get
           href: api/featurerolloutpolicy-get.md
         - name: Create appliesTo
-          href: api/featurerolloutpolicy-post-appliesto.md.md
+          href: api/featurerolloutpolicy-post-appliesto.md
         - name: Delete appliesTo
           href: api/featurerolloutpolicy-delete-appliesto.md
         - name: Update
