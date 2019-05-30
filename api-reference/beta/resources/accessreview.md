@@ -2,7 +2,7 @@
 title: "accessReview resource type"
 description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

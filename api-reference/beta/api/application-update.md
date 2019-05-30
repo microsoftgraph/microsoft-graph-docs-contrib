@@ -1,7 +1,7 @@
 ---
 title: "Update application"
 description: "Update the properties of application object."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---

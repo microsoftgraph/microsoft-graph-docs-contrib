@@ -2,7 +2,7 @@
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 
