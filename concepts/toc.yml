@@ -343,7 +343,7 @@
           href: sdks/choose-authentication-providers.md
     - name: Use the toolkit (preview)
       items:
-        - name: The Microsoft Graph Toolkit
+        - name: Toolkit overview
           href: toolkit/index.md
         - name: Components
           items:
