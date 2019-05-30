@@ -1,22 +1,22 @@
 ---
-title: "Custom Provider"
-description: "Create custom provider to enable authentication and graph access for the Microsoft Graph Toolkit components, if you have existing authentication code in your application"
+title: "Custom provider"
+description: "Create a custom provider to enable authentication and graph access for the Microsoft Graph Toolkit components, if you have existing authentication code in your application."
 localization_priority: Normal
 author: nmetulev
 ---
 
 # Custom provider
 
-Create custom provider to enable authentication and graph access for the Microsoft Graph Toolkit components, if you have existing authentication code in your application. There are two ways to integrate it with the Providers in the toolkit.
+If you have existing authentication code in your application, you can create a custom provider to enable authentication and access to Microsoft Graph for Microsoft Graph Toolkit components. You can integrate it with the providers in the toolkit in two ways:
 
-- Create a new `SimpleProvider` by passing in a function for getting an access token, or
+- Create a new `SimpleProvider` by passing in a function for getting an access token
 - Extend the `IProvider` abstract class
 
-Let's take a look at each one in more details
+This article describes each approach in more detail.
 
 ## SimpleProvider
 
-The SimpleProvider class can be instantiated by passing in a function that will return an accesstoken for passed in scopes.
+Instantiate the `SimpleProvider` class by passing in a function that will return an access token for passed-in scopes.
 
 ```ts
 let provider = new SimpleProvider((scopes: string[]) => {
@@ -24,7 +24,7 @@ let provider = new SimpleProvider((scopes: string[]) => {
 });
 ```
 
-In addition, you can also provide an optional `login` and `logout` functions that can handle the login and logout calls from the [Login](../components/login.md) component
+In addition, you can also provide an optional `login` and `logout` functions that can handle the login and logout calls from the [Login](../components/login.md) component.
 
 ```ts
 function getAccessToken(scopes: string[]) {
@@ -44,7 +44,7 @@ let provider = new SimpleProvider(getAccessToken, login, logout);
 
 ### Manage state
 
-In order for the components to be aware of the state of the provider, you will need to call the `provider.setState(state: ProviderState)` method whenever the state changes. For example, when the user has signed in, call `provider.setState(ProviderState.SignedIn)`. The `ProviderState` enum defines three states:
+For the components to be aware of the state of the provider, you will need to call the `provider.setState(state: ProviderState)` method whenever the state changes. For example, when the user has signed in, call `provider.setState(ProviderState.SignedIn)`. The `ProviderState` enum defines three states, as shown.
 
 ```ts
 export enum ProviderState {
@@ -60,7 +60,7 @@ You can extend the `IProvider` abstract class to create your own provider.
 
 ### State
 
-A provider must keep track of the authentication state and update the components when the state changes. The `IProvider` class already implements the `onStateChanged(eventHandler)` handler and the `state: ProviderState` property. You as a developer just need to use the `setState(state:ProviderState)` method in your implementation to update the state when it changes. Updating the state will fire the stateChanged event and update all the components automatically.
+A provider must keep track of the authentication state and update the components when the state changes. The `IProvider` class already implements the `onStateChanged(eventHandler)` handler and the `state: ProviderState` property. You just need to use the `setState(state:ProviderState)` method in your implementation to update the state when it changes. Updating the state will fire the `stateChanged` event and update all the components automatically.
 
 ### Login/Logout
 
@@ -68,25 +68,25 @@ If your provider provides login or logout functionality, implement the `login():
 
 ### Access Token
 
-You must implement the `getAccessToken({'scopes': scopes[]}) : Promise<string>` method. This method is used to get a valid token before every call to the Microsoft Graph.
+You must implement the `getAccessToken({'scopes': scopes[]}) : Promise<string>` method. This method is used to get a valid token before every call to Microsoft Graph.
 
 ### Graph
 
-The components use the Microsoft Graph Javascript SDK for all calls to the Microsoft Graph. Your provider must make the sdk available through the `graph` property. In you constructor, create a new Graph instance through
+The components use the Microsoft Graph Javascript SDK for all calls to Microsoft Graph. Your provider must make the SDK available through the `graph` property. In your constructor, create a new `Graph` instance, as shown.
 
 ```js
 this.graph = new Graph(this);
 ```
 
-The `Graph` class is a light wrapper on top of the Microsoft Graph sdk.
+The `Graph` class is a light wrapper on top of the Microsoft Graph SDK.
 
 ### Example
 
-All the providers extend the `IProvider` abstract class. Take a look at any of the [existing providers'](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/src/providers) source code for an example
+All the providers extend the `IProvider` abstract class. For examples, take a look at the source code for any of the [existing providers](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/src/providers).
 
 ## Set the global provider
 
-Components use the `Providers.globalProvider` property to access a Provider. Once you have created your own provider, make sure to set this property to your provider:
+Components use the `Providers.globalProvider` property to access a provider. After you create your own provider, set this property to your provider.
 
 ```ts
 import { Providers } from '@microsoft/mgt';
