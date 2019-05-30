@@ -1,7 +1,7 @@
 ---
 title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---

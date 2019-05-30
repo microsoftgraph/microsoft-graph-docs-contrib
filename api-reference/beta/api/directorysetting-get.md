@@ -1,7 +1,7 @@
 ---
 title: "Get a directory setting"
 description: "Retrieve the properties of a specific directory setting object."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
