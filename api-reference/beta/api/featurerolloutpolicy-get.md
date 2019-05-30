@@ -125,7 +125,7 @@ Content-type: application/json
   "description": "SeamlessSso rollout policy",
   "feature": "seamlessSso",
   "isEnabled": true,
-  "isAppliedToOrganization": false
+  "isAppliedToOrganization": false,
   "appliesTo": [
     {
       "id": "2441b489-4f12-4882-b039-8f6006bd66da",
