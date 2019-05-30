@@ -1,8 +1,8 @@
 ---
 title: "featureRolloutPolicy resource type"
-description: "Feature rollout policy ."
+description: "Feature rollout policy."
 localization_priority: Normal
-author: ""
+author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
@@ -25,20 +25,20 @@ The list of supported features and their corresponding pre-requisites are specif
 
 The following are pre-requisites for each of the features that are currently suported for rollout using this rollout policy.
 
-### [Passthrough Authentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta)
+### Passthrough Authentication
 
-* Identify a server running Windows Server 2012 R2 or later where you want the Authentication Agent to run (DO NOT choose the Azure AD Connect server). Ensure that the server is domain-joined, can authenticate selected users with Active Directory, and can communicate with Azure AD on outbound ports / URLs.
+* Identify a server running Windows Server 2012 R2 or later where you want the [PassthroughAuthentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta) Agent to run (DO NOT choose the Azure AD Connect server). Ensure that the server is domain-joined, can authenticate selected users with Active Directory, and can communicate with Azure AD on outbound ports / URLs.
 * [Download](https://aka.ms/getauthagent) & install the Microsoft Azure AD Connect Authentication Agent on the server.
 * To enable high availability, install additional Authentication Agents on other servers as described [here](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
 * Ensure that you have configured your [Smart Lockout](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-smart-lockout) settings appropriately. This is to ensure that your users’ on-premises Active Directory accounts don’t get locked out by bad actors.
 
-### [SeamlessSso](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso)
+### SeamlessSso
 
-* Enable SeamlessSso for the AD forests based on [these](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature) instructions.
+* Enable [SeamlessSso](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso) for the AD forests based on [these](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-sso#manual-reset-of-the-feature) instructions.
 
-### [PasswordHashSync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs)
+### PasswordHashSync
 
-* Enable Password Hash Sync from the “Optional features” page in Azure AD Connect.
+* Enable [PasswordHashSync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs) from the “Optional features” page in Azure AD Connect.
 
 # featureRolloutPolicy resource type
 
@@ -46,11 +46,13 @@ The following are pre-requisites for each of the features that are currently sup
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Read properties and relationships of featureRolloutPolicy object. |
-| [Assign directoryObject To featureRolloutPolicy](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | Assign a directoryObject to feature rollout. |
-| [Remove directoryObject from featureRolloutPolicy](../api/featurerolloutpolicy-delete-appliesto.md) | None | Remove a directoryObject from feature rollout. |
-| [Update](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Update featureRolloutPolicy object. |
-| [Delete](../api/featurerolloutpolicy-delete.md) | None | Delete featureRolloutPolicy object. |
+| [List featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve a list of featureRolloutPolicy objects. |
+| [Create featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.
+| [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve the properties and relationships of featurerolloutpolicy object. ||
+| [Create appliesTo](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | Assign a directoryObject to feature rollout. |
+| [Delete appliesTo](../api/featurerolloutpolicy-delete-appliesto.md) | None | Remove a directoryObject from feature rollout. |
+| [Update featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Update the properties of featurerolloutpolicy object. |
+| [Delete featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | None | Delete a featureRolloutPolicy object. |
 
 ## Properties
 
@@ -60,22 +62,22 @@ The following are pre-requisites for each of the features that are currently sup
 |displayName|String|The display name for this  feature rollout policy.|
 |feature|stagedFeatureName| Possible values are: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
 |id|String| Read-only.|
-|isAppliedToOrganization|Boolean|Determines if this feature rollout policy should be applied to the entire organization.|
-|isEnabled|Boolean|Describes the current status of the feature rollout.|
+|isAppliedToOrganization|Boolean|Indicates whether this feature rollout policy should be applied to the entire organization.|
+|isEnabled|Boolean|Indicates whether the feature rollout is enabled.|
 
 ### stagedFeatureName values
 
 | Values | Description |
 |:-------------|:------------|
-|passthroughAuthentication| PTA|
-|seamlessSso| SSSO|
-|passwordHashSync| PHS|
+|passthroughAuthentication| Passthrough Authentication|
+|seamlessSso| Seamless Single Sign-on|
+|passwordHashSync| Password Hash Synchronization|
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| Read-only. Nullable.Specifies a list of directoryObjects that feature is enabled for.|
+|appliesTo|[directoryObject](directoryobject.md) collection| Read-only. Nullable. Specifies a list of directoryObjects that feature is enabled for.|
 
 ## JSON representation
 

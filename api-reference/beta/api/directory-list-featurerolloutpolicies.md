@@ -1,8 +1,8 @@
 ---
 title: "List featureRolloutPolicies"
-description: "Retrieve a list of featurerolloutpolicy objects."
+description: "Retrieve a list of featureRolloutPolicy objects."
 localization_priority: Normal
-author: ""
+author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

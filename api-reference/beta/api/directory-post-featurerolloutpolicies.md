@@ -1,8 +1,8 @@
 ---
 title: "Create featureRolloutPolicy"
-description: "Use this API to create a new featureRolloutPolicy."
+description: "Create a new featureRolloutPolicy object."
 localization_priority: Normal
-author: ""
+author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

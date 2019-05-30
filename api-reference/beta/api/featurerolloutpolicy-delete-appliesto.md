@@ -2,7 +2,7 @@
 title: "Delete appliesTo"
 description: "Delete an appliesTo object on a featuredRolloutPolicy."
 localization_priority: Normal
-author: ""
+author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

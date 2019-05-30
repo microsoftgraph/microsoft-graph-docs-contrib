@@ -2,7 +2,7 @@
 title: "Create appliesTo"
 description: "Create an appliesTo on a featureRolloutPolicy object ."
 localization_priority: Normal
-author: ""
+author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -39,7 +39,7 @@ POST /directory/featureRolloutPolicies/{id}/appliesTo/$ref
 
 ## Request body
 
-In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.
+In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md) object.
 
 ## Response
 

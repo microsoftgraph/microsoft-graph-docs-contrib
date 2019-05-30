@@ -1,8 +1,8 @@
 ---
-title: "Update featurerolloutpolicy"
+title: "Update featureRolloutPolicy"
 description: "Update the properties of featurerolloutpolicy object."
 localization_priority: Normal
-author: ""
+author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -45,8 +45,8 @@ In the request body, supply the values for relevant fields that should be update
 |:-------------|:------------|:------------|
 |description|String|A description for this policy.|
 |displayName|String|The display name for this policy.|
-|isAppliedToOrganization|Boolean|Determines if this feature rollout policy should be applied to the entire organization.|
-|isEnabled|Boolean|Describes the current status of the feature rollout.|
+|isAppliedToOrganization|Boolean|Indicates whether this feature rollout policy should be applied to the entire organization.|
+|isEnabled|Boolean|Indicates whether the feature rollout is enabled.|
 
 ## Response
 

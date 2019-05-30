@@ -2,7 +2,7 @@
 title: "Get featureRolloutPolicy"
 description: "Retrieve the properties and relationships of featurerolloutpolicy object."
 localization_priority: Normal
-author: ""
+author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -33,7 +33,7 @@ GET /directory/featureRolloutPolicies/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters)
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
