@@ -66,7 +66,7 @@ A provider must keep track of the authentication state and update the components
 
 If your provider provides login or logout functionality, implement the `login(): Promise<void>` and `logout(): Promise<void>` methods. These methods are optional.
 
-### Access Token
+### Access token
 
 You must implement the `getAccessToken({'scopes': scopes[]}) : Promise<string>` method. This method is used to get a valid token before every call to Microsoft Graph.
 
