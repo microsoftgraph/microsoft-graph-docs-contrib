@@ -1,6 +1,6 @@
 ---
 title: "Delete appliesTo"
-description: "Delete an appliesTo object on a featuredRolloutPolicy."
+description: "Remove a directoryObject from feature rollout."
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an appliesTo object on a [featureRolloutPolicy](../resources/featurerolloutpolicy.md)
+Delete an appliesTo object on a [featureRolloutPolicy](../resources/featurerolloutpolicy.md).
 
 ## Permissions
 

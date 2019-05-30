@@ -60,9 +60,9 @@ POST https://graph.microsoft.com/beta/directory/featureRolloutPolicies
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "feature": "feature-value",
+  "displayName": "PassthroughAuthentication rollout policy",
+  "description": "PassthroughAuthentication rollout policy",
+  "feature": "passthroughAuthentication",
   "isEnabled": true,
   "isAppliedToOrganization": false
 }
@@ -86,10 +86,10 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "displayName": "displayName-value",
-  "description": "description-value",
-  "feature": "feature-value",
+  "id": "e3c2f23a-edd2-43a8-849f-154e70794ac5",
+  "displayName": "PassthroughAuthentication rollout policy",
+  "description": "PassthroughAuthentication rollout policy",
+  "feature": "passthroughAuthentication",
   "isEnabled": true,
   "isAppliedToOrganization": false
 }

@@ -1,6 +1,6 @@
 ---
 title: "featureRolloutPolicy resource type"
-description: "Feature rollout policy."
+description: "Represents a feature rollout policy associated with a directory object."
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"
@@ -42,6 +42,8 @@ The following are pre-requisites for each of the features that are currently sup
 
 # featureRolloutPolicy resource type
 
+Represents a feature rollout policy associated with a directory object.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -64,14 +66,6 @@ The following are pre-requisites for each of the features that are currently sup
 |id|String| Read-only.|
 |isAppliedToOrganization|Boolean|Indicates whether this feature rollout policy should be applied to the entire organization.|
 |isEnabled|Boolean|Indicates whether the feature rollout is enabled.|
-
-### stagedFeatureName values
-
-| Values | Description |
-|:-------------|:------------|
-|passthroughAuthentication| Passthrough Authentication|
-|seamlessSso| Seamless Single Sign-on|
-|passwordHashSync| Password Hash Synchronization|
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 ---
 title: "Create appliesTo"
-description: "Create an appliesTo on a featureRolloutPolicy object ."
+description: "Assign a directoryObject to feature rollout."
 localization_priority: Normal
 author: "lleonard-msft"
 ms.prod: "microsoft-identity-platform"

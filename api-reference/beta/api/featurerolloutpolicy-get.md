@@ -126,13 +126,12 @@ Content-type: application/json
   "feature": "seamlessSso",
   "isEnabled": true,
   "isAppliedToOrganization": false
-  "appliesTo@odata.context": "https://graph.microsoft.com/beta/directory/featureRolloutPolicies('id')/appliesTo",
-    "appliesTo": [
-        {
-            "id": "2441b489-4f12-4882-b039-8f6006bd66da",
-            "objectType": "group"
-        }
-    ]
+  "appliesTo": [
+    {
+      "id": "2441b489-4f12-4882-b039-8f6006bd66da",
+      "objectType": "group"
+    }
+  ]
 }
 ```
 

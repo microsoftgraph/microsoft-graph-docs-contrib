@@ -803,3 +803,11 @@ Possible values for user account types (group membership), per Windows definitio
 |Add| 1       |
 |Update|2     |
 |Delete|4     |
+
+### stagedFeatureName values
+
+|Member|
+|:---|
+|passthroughAuthentication|
+|seamlessSso|
+|passwordHashSync|
