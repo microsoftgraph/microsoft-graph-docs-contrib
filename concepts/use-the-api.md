@@ -5,7 +5,6 @@ author: "jackson-woods"
 localization_priority: Priority
 monikers:
 - graph-rest-beta
-- graph-rest-1.0
 ---
 
 # Use the Microsoft Graph API
