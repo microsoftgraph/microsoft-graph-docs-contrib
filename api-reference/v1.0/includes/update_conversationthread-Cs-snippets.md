@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var conversationThread = new ConversationThread
 {
-	IsLocked = true,
+	IsLocked = true
 };
 
 await graphClient.Groups["{id}"].Threads["{id}"]
