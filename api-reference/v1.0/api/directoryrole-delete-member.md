@@ -1,7 +1,7 @@
 ---
 title: "Remove directory role member"
 description: "Remove a member from a directoryRole."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---

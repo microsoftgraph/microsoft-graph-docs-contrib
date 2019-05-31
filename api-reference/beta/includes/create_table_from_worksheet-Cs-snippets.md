@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,6 +13,6 @@ var hasHeaders = false;
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Tables
 	.Add(address,hasHeaders)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

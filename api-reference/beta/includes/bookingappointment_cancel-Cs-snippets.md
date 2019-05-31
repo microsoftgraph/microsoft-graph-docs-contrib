@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -8,6 +11,6 @@ var cancellationMessage = "Your appointment has been successfully cancelled. Ple
 await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Appointments["AAMkADKoAAA="]
 	.Cancel(bookingAppointment,cancellationMessage)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

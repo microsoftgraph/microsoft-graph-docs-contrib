@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var _event = await graphClient.Me.Events["AAMkADAGAADDdm4NAAA="]
+var @event = await graphClient.Me.Events["AAMkADAGAADDdm4NAAA="]
 	.Request()
 	.Select( e => new {
 			 e.Subject,

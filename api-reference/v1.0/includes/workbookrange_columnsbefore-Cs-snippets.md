@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -7,6 +10,6 @@ await graphClient.Me.Drive.Root.Workbook.Worksheets["{id}"]
 	.Range()
 	.ColumnsBefore(count)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```
