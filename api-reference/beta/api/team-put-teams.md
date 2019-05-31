@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!IMPORTANT]
-> This API is in the process of being depracated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019. For details about how to create a team from a group, see examples 4 and 5 in this topic.
+> This API is in the process of being depracated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019. For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).
 
 Create a new [team](../resources/team.md) from a [group](../resources/group.md).
 
