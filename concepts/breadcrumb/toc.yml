@@ -9,14 +9,3 @@
     - name: Terms of use
       tocHref: /graph/explore/terms-of-use
       topicHref: /legal/microsoft-apis/terms-of-use
-  - name: Develop
-    topHref: /azure/active-directory/
-    topicHref: /graph/auth/index
-    items:
-    - name: Get auth tokens
-      topHref: /azure/active-directory/develop/
-      topicHref: /graph/auth/index
-      items:
-      - name: Register an app
-        topHref: /azure/active-directory/develop/quickstart-register-app/
-        topicHref: /graph/
