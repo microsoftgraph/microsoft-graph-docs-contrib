@@ -141,7 +141,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of retrieving a list of [roomList](../resources/roomlist.md) objects.
+The following example shows how to retrieve a list of [roomList](../resources/roomlist.md) objects.
 <!-- {
   "blockType": "request",
   "name": "get_places"
@@ -194,7 +194,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of retrieving a list of [room](../resources/room.md) objects contained in a roomList.
+The following example shows how to retrieve a list of [room](../resources/room.md) objects contained in a **roomList**.
 <!-- {
   "blockType": "request",
   "name": "get_rooms"
