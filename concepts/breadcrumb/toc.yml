@@ -1,10 +1,14 @@
 - name: Microsoft Graph
-  tocHref: /graph/
-  topicHref: /graph/overview
-- name: MS Graph
-  tocHref: /azure/
-  topicHref: /graph/overview
+  tocHref: /graph
+  topicHref: /graph
   items:
+  - name: Explore
+    tocHref: /graph/explore/overview
+    topiccHref: /graph/overview
+    items:
+    - name: Terms of use
+      tocHref: /graph/explore/terms-of-use
+      topicHref: /legal/microsoft-apis/terms-of-use
   - name: Develop
     topHref: /azure/active-directory/
     topicHref: /graph/auth/index
