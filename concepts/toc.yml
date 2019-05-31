@@ -175,7 +175,7 @@
         href: notifications-concept-overview.md
       - name: Get started
         displayName: Notifications
-        items: 
+        items:
         - name: Overview
           href: notifications-integration-e2e-overview.md
         - name: App registraion
@@ -199,6 +199,8 @@
         href: outlook-get-shared-contacts-folders.md
       - name: Immutable ID (preview)
         href: outlook-immutable-id.md
+    - name: Places
+      href: places-concept-overview.md
     - name: Reports
       href: reportroot-concept-overview.md
     - name: Security

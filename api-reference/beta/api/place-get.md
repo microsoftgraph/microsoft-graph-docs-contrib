@@ -1,15 +1,17 @@
 ---
-title: "Get places"
-description: "Retrieve the properties and relationships of places object."
+title: "Get place"
+description: "Retrieve the properties and relationships of a place object."
 localization_priority: Normal
-author: "vrod-ms"
-ms.prod: "Outlook"
+author: "vrod9429"
+ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
 
-# Get places
+# Get place
 
-Retrieve the properties and relationships of places object.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieve the properties and relationships of a [place](../resources/place.md) object.
 
 ## Permissions
 
@@ -26,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /places
+GET /place/{id}
 ```
 
 ## Optional query parameters
@@ -35,9 +37,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {code} |
+| Name          | Description               |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -45,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [places](../resources/places.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [place](../resources/place.md) object in the response body.
 
 ## Examples
 
@@ -58,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/places/{id}
+GET https://graph.microsoft.com/beta/places/{id}
 ```
 
 ### Response
@@ -78,47 +80,46 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
-"value": [
 {
-   "@odata.type": "microsoft.graph.room",
-   "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
-   "emailAddress": "cf3235@contoso.com",
-   "displayName": "Conf Room 32/35 (25)",
-   "address": {
-   "street": "One Microsoft Way",
-   "city": "Redmond",
-   "state": "WA",
-   "postalCode": "98052",
-   "countryOrRegion": "USA",
-    },
-  "geocoordinates": {
-     "47.640568390488625"
-    "-122.1293731033802"
-    },
+  "@odata.type": "microsoft.graph.room",
+  "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
+  "emailAddress": "cf3235@contoso.com",
+  "displayName": "Conf Room 32/35 (25)",
+  "address": {
+    "street": "One Microsoft Way",
+    "city": "Redmond",
+    "state": "WA",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "latitude": "47.640568390488625",
+    "longitude": "-122.1293731033802"
+  },
   "phone": "000-000-0000",
   "nickname": "Conf Room",
   "label": "35",
-  "capacity": 50,
-  "building": 32,
+  "capacity": "50",
+  "building": "32",
   "floorNumber": 3,
   "isManaged": true,
   "isWheelchairAccessible": false,
   "bookingType": "standard",
-  "Tags": ["bean bags", "nice view"],
+  "tags": [
+    "bean bags",
+    "nice view"
+  ],
   "audioDeviceName": null,
   "videoDeviceName": null,
-  "displayDevice": "surface hub",
-  },
-]
-
+  "displayDevice": "surface hub"
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get places",
+  "description": "Get place",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

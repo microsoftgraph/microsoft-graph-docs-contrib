@@ -8419,6 +8419,18 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+    - name: Places
+      items:
+        - name: Place
+          href: resources/place.md
+        - name: List places
+          href: api/place-list.md
+        - name: Get place
+          href: api/place-get.md
+        - name: Room
+          href: resources/room.md
+        - name: Room list
+          href: resources/roomlist.md
     - name: Reports
       items:
       - name: Identity and access reports
