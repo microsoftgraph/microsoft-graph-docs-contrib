@@ -201,7 +201,7 @@ The following is an example of retrieving a list of [room](../resources/room.md)
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist('{id-of-roomlist}')/rooms
+GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist('id-of-roomlist')/rooms
 ```
 
 #### Response
