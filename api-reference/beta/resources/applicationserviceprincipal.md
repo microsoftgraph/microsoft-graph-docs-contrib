@@ -15,7 +15,11 @@ When adding an instance of an application from the Azure AD Gallery, it creates 
 
 ## Properties
 
-| Property     | Type        | Description |
+None
+
+## Relationships
+
+| Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |application|[application](../resources/application.md)|The list of categories for the application.|
 |servicePrincipal|[servicePrincipal](../resources/serviceprincipal.md)|A description of the application.|

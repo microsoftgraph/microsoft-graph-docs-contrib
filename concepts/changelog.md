@@ -11,6 +11,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## June 2019
+
+### Azure AD APIs
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta  | Introduced the new resource type [applicationTemplate](../resources/applicationtemplate.md). This resource type supports [instantiate](../api/applicationtemplate-instantiate.md), [list](../api/applicationtemplate-instantiate.md) and [get](../api/applicationtemplate-get.md) applications from the Azure AD Gallery .|
+
 ## May 2019
 
 ### Reports APIs

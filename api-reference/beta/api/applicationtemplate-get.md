@@ -33,7 +33,7 @@ GET /applicationTemplates/{id}
 
 ## Optional query parameters
 
-You can use a `$select` query parameter, as in any GET request, to specify only the properties your need for best performance. The id property is always returned. 
+You can use a `$select` query parameter, as in any GET request, to specify only the properties you need for best performance. The id property is always returned. 
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
