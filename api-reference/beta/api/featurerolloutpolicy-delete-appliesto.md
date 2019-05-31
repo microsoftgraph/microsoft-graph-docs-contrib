@@ -1,17 +1,17 @@
 ---
-title: "Delete appliesTo"
+title: "Remove appliesTo"
 description: "Remove a directoryObject from feature rollout."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "srvara"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Delete appliesTo
+# Remove appliesTo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an appliesTo object on a [featureRolloutPolicy](../resources/featurerolloutpolicy.md).
+Remove an appliesTo on a [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object to remove the [directoryObject](../resources/directoryobject.md) from feature rollout.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout. |
+| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -76,7 +76,7 @@ HTTP/1.1 204 No Content
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete appliesTo",
+  "description": "Remove appliesTo",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

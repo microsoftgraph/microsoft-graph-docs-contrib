@@ -1222,6 +1222,9 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 | _Policy.Read.All_ | Read all featureRollout Policies | Allows the app to read all FeatureRollout Policies on behalf of the signed-in user. | Yes | No |
 | _Policy.ReadWrite.FeatureRollout_ | Read and write all featureRollout policies | Allows the app to read and write FeatureRollout Policies on behalf of the signed-in user. | Yes | No |
 
+#### Application permissions
+None.
+
 ### Remarks
 The work or school account must be a global administrator of the tenant.
 

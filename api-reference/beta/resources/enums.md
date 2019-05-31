@@ -806,8 +806,8 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### stagedFeatureName values
 
-|Member|
-|:---|
-|passthroughAuthentication|
-|seamlessSso|
-|passwordHashSync|
+|Member|Description|
+|:---|:---|
+|passthroughAuthentication|Passthrough Authentication|
+|seamlessSso|Seamless Single Sign-on|
+|passwordHashSync|Password Hash Synchronization|

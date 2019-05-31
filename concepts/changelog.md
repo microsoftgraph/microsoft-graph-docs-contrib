@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description** |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added new resource type [**featureRolloutPolicy**](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) to the [directory](/graph/api/resources/directory?view=graph-rest-beta) resource.
+| Addition | beta | Added new resource type [**featureRolloutPolicy**](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) to the [directory](/graph/api/resources/directory?view=graph-rest-beta) resource. Feature rollout policy helps tenant administrators to pilot features to specific groups before enabling them for entire organization.
 
 ## May 2019
 

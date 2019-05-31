@@ -2,7 +2,7 @@
 title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "srvara"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
@@ -11,15 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creating a Feature rollout policy helps tenant administrators to rollout features of Azure AD to a specific group instead enabling features for entire organization. This minimizes the impact and helps admins to test and rollout authentication related features gradually.
-
-The list of supported features and their corresponding pre-requisites are specified below.
+Creating a feature rollout policy helps tenant administrators to pilot features of Azure AD with a specific group before  enabling features for entire organization. This minimizes the impact and helps administrators to test and rollout authentication related features gradually.
 
 ## Limitations of feature rollout
 
 1. Each feature supports a maximum of 10 groups.
 2. The appliesTo field only supports groups.
-3. Dynamic groups and nested groups aren't supported currently.
+3. Dynamic groups and nested groups are not supported.
 
 ## Pre-requisites
 
@@ -27,8 +25,8 @@ The following are pre-requisites for each of the features that are currently sup
 
 ### Passthrough Authentication
 
-* Identify a server running Windows Server 2012 R2 or later where you want the [PassthroughAuthentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta) Agent to run (DO NOT choose the Azure AD Connect server). Ensure that the server is domain-joined, can authenticate selected users with Active Directory, and can communicate with Azure AD on outbound ports / URLs.
-* [Download](https://aka.ms/getauthagent) & install the Microsoft Azure AD Connect Authentication Agent on the server.
+* Identify a server running Windows Server 2012 R2 or later where you want the [PassthroughAuthentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta) Agent to run. Ensure that the server is domain-joined, can authenticate selected users with Active Directory, and can communicate with Azure AD on outbound ports / URLs.
+* [Download](https://aka.ms/getauthagent) & install the Microsoft Azure AD Connect Authentication Agent on the server.
 * To enable high availability, install additional Authentication Agents on other servers as described [here](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
 * Ensure that you have configured your [Smart Lockout](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-smart-lockout) settings appropriately. This is to ensure that your users’ on-premises Active Directory accounts don’t get locked out by bad actors.
 
@@ -51,8 +49,8 @@ Represents a feature rollout policy associated with a directory object.
 | [List featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve a list of featureRolloutPolicy objects. |
 | [Create featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.
 | [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve the properties and relationships of featurerolloutpolicy object. ||
-| [Create appliesTo](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | Assign a directoryObject to feature rollout. |
-| [Delete appliesTo](../api/featurerolloutpolicy-delete-appliesto.md) | None | Remove a directoryObject from feature rollout. |
+| [Assign appliesTo](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | Assign a directoryObject to feature rollout. |
+| [Remove appliesTo](../api/featurerolloutpolicy-delete-appliesto.md) | None | Remove a directoryObject from feature rollout. |
 | [Update featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Update the properties of featurerolloutpolicy object. |
 | [Delete featureRolloutPolicy](../api/featurerolloutpolicy-delete.md) | None | Delete a featureRolloutPolicy object. |
 
@@ -71,7 +69,7 @@ Represents a feature rollout policy associated with a directory object.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|appliesTo|[directoryObject](directoryobject.md) collection| Read-only. Nullable. Specifies a list of directoryObjects that feature is enabled for.|
+|appliesTo|[directoryObject](directoryobject.md) collection| Nullable. Specifies a list of directoryObjects that feature is enabled for.|
 
 ## JSON representation
 

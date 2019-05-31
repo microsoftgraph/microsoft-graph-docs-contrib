@@ -2,7 +2,7 @@
 title: "Create featureRolloutPolicy"
 description: "Create a new featureRolloutPolicy object."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "srvara"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout. |
+| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -40,6 +40,14 @@ POST /directory/featureRolloutPolicies
 ## Request body
 
 In the request body, supply a JSON representation of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.
+
+The following table shows the properties that are required when you create a [featureRolloutPolicy](../resources/featurerolloutpolicy.md).
+
+| Parameter | Type | Description|
+|:---------------|:--------|:----------|
+|displayName |string |The display name for this feature rollout policy.|
+|feature |stagedFeatureName |The feature that would be rolled out using this policy.|
+|isEnabled |string |Indicates whether the feature rollout is enabled.|
 
 ## Response
 

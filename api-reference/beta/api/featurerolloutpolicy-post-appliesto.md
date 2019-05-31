@@ -1,17 +1,17 @@
 ---
-title: "Create appliesTo"
+title: "Assign appliesTo"
 description: "Assign a directoryObject to feature rollout."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "srvara"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Create appliesTo
+# Assign appliesTo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an appliesTo on a [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object to specify the [directoryObject](../resources/directoryobject.md) to which the [featureRolloutPolicy](../resources/featurerolloutpolicy.md) should be applied to.
+Add an appliesTo on a [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object to specify the [directoryObject](../resources/directoryobject.md) to which the [featureRolloutPolicy](../resources/featurerolloutpolicy.md) should be applied to.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout. |
+| Delegated (work or school account)     | Policy.ReadWrite.FeatureRollout |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -93,7 +93,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create appliesTo",
+  "description": "Assign appliesTo",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

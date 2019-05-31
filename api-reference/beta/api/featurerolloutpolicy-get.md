@@ -2,7 +2,7 @@
 title: "Get featureRolloutPolicy"
 description: "Retrieve the properties and relationships of featurerolloutpolicy object."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "srvara"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All. |
+| Delegated (work or school account)     | Policy.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
