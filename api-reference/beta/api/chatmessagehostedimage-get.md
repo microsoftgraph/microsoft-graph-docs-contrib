@@ -1,12 +1,12 @@
 ---
-title: "Get chat message image"
+title: "Get chatMessageHostedImage"
 description: "Retrieve an image inside a chatMessage."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# Get channel message
+# Get chatMessageHostedImage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
