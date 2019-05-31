@@ -1,6 +1,6 @@
 ---
 title: "Places API overview"
-description: "You can use Microsoft Graph to build compelling app experiences based on different places, today we offer company places with more details about each place."
+description: "You can use Microsoft Graph to build compelling app experiences based on different places. Today, you can access company places and details about each place."
 author: "vrod9429"
 localization_priority: Priority
 ms.prod: "outlook"
@@ -8,13 +8,13 @@ ms.prod: "outlook"
 
 # Places API overview
 
-You can use Microsoft Graph to build compelling app experiences based on different places, today we offer company places with more details about each place.
+You can use Microsoft Graph to build compelling app experiences based on different placesToday, you can access company places and details about each place.
 
 <!-- markdownlint-disable MD026 -->
-## Why integrate with Places?
+## Why integrate with places?
 <!-- markdownlint-enable MD026 -->
 
-Modern applications today are typically enhanced with location awareness to help provide intelligent context. This helps the user navigate to a place or allows the application to consider a user's location as part of their solution. The Places API provides rich detail on locations such as rooms or room lists to enable these sort of scenarios.
+Modern applications today are typically enhanced with location awareness to help provide intelligent context. This helps the user navigate to a place or allows the application to consider a user's location as part of their solution. The places API provides rich detail on locations such as rooms or room lists to enable these scenarios.
 
 ### Help customers stay synchronized and navigate their day
 
