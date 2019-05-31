@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | None. |
 
+You don't require permissions to retrieve an applications from the gallery as long as you have a valid MS Graph token to call the API.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

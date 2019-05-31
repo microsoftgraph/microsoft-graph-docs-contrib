@@ -17,15 +17,16 @@ Represents an application in the [Azure AD Gallery](https://docs.microsoft.com/e
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+|[List applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)|Retrieve a list of applicationTemplate objects.|
 | [Get applicationTemplate](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
 |[Instantiate applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Azure AD Gallery into your directory.|
-|[List applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)|Retrieve a list of applicationTemplate objects.|
+
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|categories|String collection|The list of categories for the application.|
+|categories|[application]|The list of categories for the application.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
