@@ -5,6 +5,7 @@ title: Follow site
 description: Follow a user's site/sites.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Follow site 
 
