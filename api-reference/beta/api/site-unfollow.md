@@ -5,6 +5,7 @@ title: Unfollow site
 description: Unfollow a user's site
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Unfollow site 
 
