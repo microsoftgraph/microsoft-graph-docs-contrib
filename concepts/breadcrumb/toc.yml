@@ -3,9 +3,9 @@
   topicHref: /graph
   items:
   - name: Explore
-    tocHref: /graph/explore/overview
+    tocHref: /graph/overview
     topiccHref: /graph/overview
     items:
     - name: Terms of use
-      tocHref: /graph/explore/terms-of-use
-      topicHref: /legal/microsoft-apis/terms-of-use
+      tocHref: /legal/microsoft-apis/terms-of-use
+      topicHref: /graph/terms-of-use
