@@ -8,4 +8,4 @@
     items:
     - name: Terms of use
       tocHref: /legal/microsoft-apis/terms-of-use
-      topicHref: /graph/terms-of-use
+      topicHref: /legal/microsoft-apis/terms-of-use
