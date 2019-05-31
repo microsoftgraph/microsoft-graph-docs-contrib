@@ -268,5 +268,8 @@ Content-type: application/json
   "description": "List places",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: Malformed function params 'id-of-roomlist'"
+  ]
 }-->
