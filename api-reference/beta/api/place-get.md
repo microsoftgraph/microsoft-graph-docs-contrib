@@ -93,8 +93,8 @@ Content-type: application/json
     "countryOrRegion": "USA"
   },
   "geoCoordinates": {
-    "latitude": "47.640568390488625",
-    "longitude": "-122.1293731033802"
+    "latitude": 47.640568390488625,
+    "longitude": -122.1293731033802
   },
   "phone": "000-000-0000",
   "nickname": "Conf Room",
