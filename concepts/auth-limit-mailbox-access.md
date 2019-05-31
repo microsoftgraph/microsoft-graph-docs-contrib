@@ -10,7 +10,7 @@ ms.prod: "microsoft-identity-platform"
 
 Some apps call Microsoft Graph using their own identity and not on behalf of a user. These are usually background services or daemon apps that run on a server without the presence of a signed-in user. These apps make use of [OAuth 2.0 client credentials grant flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) to authenticate and are configured with application permissions, which enable such apps to access all mailboxes in a organization on Exchange Online. For example, the Mail.Read application permission allows apps to read mail in all mailboxes without a signed-in user. 
 
-Administrators who want to limit the app access to a specific set of mailboxes can use the **New-ApplicationAccessPolicy** PowerShell cmdlet to configure access control. This post covers the basic steps to configure an application access policy.
+Administrators who want to limit the app access to a specific set of mailboxes can use the **New-ApplicationAccessPolicy** PowerShell cmdlet to configure access control. This article covers the basic steps to configure an application access policy.
 
 These steps are specific to Exchange Online resources and do not apply to other Microsoft Graph workloads. 
 
@@ -68,7 +68,7 @@ You might encounter the following error when an API call is denied access due to
     }
 }
 ```
-If your app’s Microsoft Graph API calls return this error, work with the Exchange Online administrator for the organization to ensure that your app has permission to access the mailbox resource.
+If Microsoft Graph API calls from your app return this error, work with the Exchange Online administrator for the organization to ensure that your app has permission to access the mailbox resource.
 
 
 
