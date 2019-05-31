@@ -4,7 +4,7 @@ description: "Represents an application in the Azure AD Gallery"
 localization_priority: Normal
 author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
-doc_type: ""
+doc_type: "resourcePageType"
 ---
 
 # applicationTemplate resource type
@@ -32,12 +32,12 @@ Represents an application in the [Azure AD Gallery](https://docs.microsoft.com/e
 |id|String| Unique identifier for the application. Read-only.|
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
-|supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is "sync".|
-|supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are "password", "saml", "external", and "oidc"|
+|supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is `sync`.|
+|supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are `password`, `saml`, `external`, and `oidc`.|
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
