@@ -35,7 +35,7 @@ GET /applicationTemplates
 
 This method supports some of the OData query parameters to help customize the response. 
 
-- There is a limited support for `$filter`. You can only filter by displayName or category. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=Categories/any(c:contains(c, 'myCategory'))`.
+- There is a limited support for `$filter`. You can only filter by displayName or Category. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=Categories/any(c:contains(c, 'myCategory'))`.
 - You can use `$orderby`, `$top` and `$skip` query parameters in any Get request.
 
 For general information, see [OData query parameters](/graph/query-parameters).
@@ -89,15 +89,16 @@ Content-type: application/json
 {
   "value": [
     {
-	"id" : "id-value",
-	"displayName" : "displayName-value",
-	"homePageUrl" : "homePageUrl-value",
-	"supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
-	"logoUrl" : "logoUrl-value",
-	"categories" : ["categories-value"],
-	"publisher" : "publisher-value",
-	"description" : "description-value"
-  }, ...]
+      "id" : "id-value",
+      "displayName" : "displayName-value",
+      "homePageUrl" : "homePageUrl-value",
+      "supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
+      "logoUrl" : "logoUrl-value",
+      "categories" : ["categories-value"],
+      "publisher" : "publisher-value",
+      "description" : "description-value"
+    }
+  ]
 }
 ```
 

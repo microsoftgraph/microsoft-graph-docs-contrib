@@ -18,8 +18,8 @@ Represents an application in the [Azure AD Gallery](https://docs.microsoft.com/e
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get applicationTemplate](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
-|[Instantiate applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)|Use this API to create a new applicationTemplate|
-|[List applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)|Use this API to create a new applicationTemplate|
+|[Instantiate applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Azure AD Gallery into your directory.|
+|[List applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)|Retrieve a list of applicationTemplate objects.|
 
 ## Properties
 
@@ -29,11 +29,11 @@ Represents an application in the [Azure AD Gallery](https://docs.microsoft.com/e
 |description|String|A description of the application.|
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
-|id|Guid| Unique identifier for the application. Read-only.|
-|logoUrl|String|The URL to get the logo for this application|
-|publisher|String|The name of the publisher for this application|
-|supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application|
-|supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application|
+|id|String| Unique identifier for the application. Read-only.|
+|logoUrl|String|The URL to get the logo for this application.|
+|publisher|String|The name of the publisher for this application.|
+|supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is "sync".|
+|supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are "password", "saml", "external", and "oidc"|
 
 ## Relationships
 

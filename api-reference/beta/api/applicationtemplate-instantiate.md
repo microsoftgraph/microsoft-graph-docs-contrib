@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to instantiate an [applicationTemplate](../resources/applicationtemplate.md).
+Use this API to add an instance of an application from the Azure AD Gallery into your directory.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns `200, OK` response code and a new [applicationServicePrincipal](../resources/applicationserviceprincipal.md) object in the response body.
+If successful, this method returns `201, OK` response code and a new [applicationServicePrincipal](../resources/applicationserviceprincipal.md) object in the response body.
 
 ## Examples
 

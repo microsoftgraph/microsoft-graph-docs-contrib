@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [applicationTemplate](../resources/applicationtemplate.md) object.
+Retrieve the properties of an [applicationTemplate](../resources/applicationtemplate.md) object.
 
 ## Permissions
 
@@ -33,10 +33,7 @@ GET /applicationTemplates/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. 
-
-- There is a limited support for `$filter`. You can only filter by displayName or category. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=Categories/any(c:contains(c, 'myCategory'))`.
-- You can use `$orderby`, `$top` and `$skip` query parameters in any Get request.
+You can use a `$select` query parameter, as in any GET request, to specify only the properties your need for best performance. The id property is always returned. 
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
