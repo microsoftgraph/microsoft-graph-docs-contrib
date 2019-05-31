@@ -73,7 +73,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.places"
+  "@odata.type": "microsoft.graph.place"
 } -->
 
 ```http

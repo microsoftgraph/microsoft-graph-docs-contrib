@@ -48,8 +48,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.roomList",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.roomList"
 }-->
 
 ```json
