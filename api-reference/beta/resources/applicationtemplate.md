@@ -18,9 +18,8 @@ Represents an application in the [Azure AD Gallery](https://docs.microsoft.com/e
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get applicationTemplate](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
-| [Update](../api/applicationtemplate-update.md) | [applicationTemplate](applicationtemplate.md) | Update applicationTemplate object. |
-| [Delete](../api/applicationtemplate-delete.md) | None | Delete applicationTemplate object. |
-|[Instantiate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)|Use this API to create a new applicationTemplate|
+|[Instantiate applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)|Use this API to create a new applicationTemplate|
+|[List applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)|Use this API to create a new applicationTemplate|
 
 ## Properties
 
@@ -56,14 +55,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-	"id" : "id",
-	"displayName" : "LinkedIn Lookup",
-	"homePageUrl" : "www.linkedin.com",
-	"supportedSingleSignOnModes" : ["SAML", "Password"],
-	"logoUrl" : "https://images.microsoft.com",
-	"categories" : ["collaboration", "social"],
-	"publisher" : "LinkedIn",
-	"description" : "LinkedIn Lookup is the easiest way to find coworkers and teams at your company. Lookup is a new people search tool that combines employees\u00e2\u20ac\u2122 LinkedIn profile information and Active Directory information, allowing you to quickly find and contact your coworkers, on desktop or mobile. Requires an existing Lookup company subscription."
+	"id" : "id-value",
+	"displayName" : "displayName-value",
+	"homePageUrl" : "homePageUrl-value",
+	"supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
+	"logoUrl" : "logoUrl-value",
+	"categories" : ["categories-value"],
+	"publisher" : "publisher-value",
+	"description" : "description-value"
 }
 ```
 

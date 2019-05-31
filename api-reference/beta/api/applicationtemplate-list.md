@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of applicationtemplate objects.
+Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects.
 
 ## Permissions
 
@@ -33,7 +33,12 @@ GET /applicationTemplates
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters)
+This method supports some of the OData query parameters to help customize the response. 
+
+- There is a limited support for `$filter`. You can only filter by displayName or category. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=Categories/any(c:contains(c, 'myCategory'))`.
+- You can use `$orderby`, `$top` and `$skip` query parameters in any Get request.
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -84,15 +89,15 @@ Content-type: application/json
 {
   "value": [
     {
-      "id" : "006a06ef-9160-42cd-88bf-17a7588fc844",
-      "displayName" : "LinkedIn Lookup",
-      "homePageUrl" : "www.linkedin.com",
-      "supportedSingleSignOnModes" : ["SAML", "Password"],
-      "logoUrl" : "https://images.microsoft.com",
-      "categories" : ["collaboration", "social"],
-      "publisher" : "LinkedIn",
-      "description" : "LinkedIn Lookup is the easiest way to find coworkers and teams at your company. Lookup is a new people search tool that combines employees\u00e2\u20ac\u2122 LinkedIn profile information and Active Directory information, allowing you to quickly find and contact your coworkers, on desktop or mobile. Requires an existing Lookup company subscription."
-    }, ...]
+	"id" : "id-value",
+	"displayName" : "displayName-value",
+	"homePageUrl" : "homePageUrl-value",
+	"supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
+	"logoUrl" : "logoUrl-value",
+	"categories" : ["categories-value"],
+	"publisher" : "publisher-value",
+	"description" : "description-value"
+  }, ...]
 }
 ```
 
