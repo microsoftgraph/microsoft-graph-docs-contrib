@@ -276,6 +276,8 @@
         href: permissions-reference.md
       - name: Manage app access (CSPs)
         href: auth-cloudsolutionprovider.md
+      - name: Limit mailbox access
+        href: auth-limit-mailbox-access.md
     - name: Use the API
       items:
       - name: Overview
