@@ -1,76 +1,86 @@
 ---
-title: "Send a message in a channel"
-description: "Send a new message in the specified channel."
-author: "nkramer"
+title: "Create chatMessage"
+description: "Use this API to create a new chatMessage."
 localization_priority: Normal
+author: "Ramjot.Singh"
 ms.prod: "microsoft-teams"
+doc_type: "apiPageType"
 ---
 
-# Send a message to a channel
+# Create chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [message](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
+Use this API to create a new chatMessage.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | Group.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /teams/{id}/channels/{id}/messages
 ```
 
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+
+| Name          | Description   |
+|:--------------|:--------------|
+| Authorization | Bearer {code} |
 
 ## Request body
+
 In the request body, supply a JSON representation of a [message](../resources/chatmessage.md) object. Only the body property is mandatory, other properties are optional.
 
 > Note: Sending messages with attachments and images is not supported.
 
 ## Response
 
-If successful, this method returns `201 Created` response code with the [message](../resources/chatmessage.md) that was created.
+If successful, this method returns `201, Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.
 
-## Examples 
+## Examples
 
-### Example 1: Hello World
+### Request
 
-##### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 Content-type: application/json
 
 {
   "body": {
-    "contentType": "html",
     "content": "Hello World"
   }
 }
 ```
 
-##### Response
+### Response
 
-Here is an example of the response.
+The following is an example of the response.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
+
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json
@@ -122,7 +132,7 @@ Content-length: 160
 
 ### Example 2: @mentions
 
-##### Request
+#### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -153,7 +163,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 Here is an example of the response.
 <!-- {
@@ -217,7 +227,7 @@ Content-length: 160
 
 ### Example 3: Cards
 
-##### Request
+#### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
@@ -246,7 +256,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+#### Response
 
 Here is an example of the response.
 <!-- {
