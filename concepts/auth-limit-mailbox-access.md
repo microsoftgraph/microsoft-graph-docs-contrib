@@ -52,7 +52,7 @@ Adminstrators can use ApplicationAccessPolicy cmdlets to control mailbox access 
 - Contacts.Read
 - Contacts.ReadWrite
 
-For more information about configuring application access policy, see the PowerShell cmdlet reference for New-ApplicationAccessPolicy (TBD: Add Link). 
+For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/new-applicationaccesspolicy). 
 
 ## Handling API errors
 You might encounter the following error when an API call is denied access due to a configured application access policy. 
@@ -75,8 +75,8 @@ If Microsoft Graph API calls from your app return this error, work with the Exch
 ## See also
 
 - [Permissions reference](permissions-reference.md)
-- [New-ApplicationAccessPolicy]()
-- [Get-ApplicationAccessPolicy]()
-- [Remove-ApplicationAccessPolicy]()
-- [Set-ApplicationAccessPolicy]()
-- [Test-ApplicationAccessPolicy]()
+- [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/new-applicationaccesspolicy)
+- [Get-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/get-applicationaccesspolicy)
+- [Remove-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/remove-applicationaccesspolicy)
+- [Set-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/set-applicationaccesspolicy)
+- [Test-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/test-applicationaccesspolicy)
