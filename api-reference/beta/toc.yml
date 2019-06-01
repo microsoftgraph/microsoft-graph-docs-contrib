@@ -7597,7 +7597,7 @@
           href: resources/applicationtemplate.md
           items:
           - name: List application templates
-            href: api/applicationtemaplate-list.md
+            href: api/applicationtemplate-list.md
           - name: Get application template
             href: api/applicationtemplate-get.md
           - name: Instantiate application template

@@ -17,7 +17,7 @@ Represents an application in the [Azure AD Gallery](https://docs.microsoft.com/e
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[List applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)|Retrieve a list of applicationTemplate objects.|
+|[List applicationTemplate](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Retrieve a list of applicationTemplate objects.|
 | [Get applicationTemplate](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
 |[Instantiate applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Azure AD Gallery into your directory.|
 
@@ -26,7 +26,7 @@ Represents an application in the [Azure AD Gallery](https://docs.microsoft.com/e
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|categories|[application]|The list of categories for the application.|
+|categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`,`Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools, Travel`, and `Web design & hosting`.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
