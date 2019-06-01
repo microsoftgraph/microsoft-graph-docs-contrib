@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,6 +13,6 @@ var scope = "anonymous";
 await graphClient.Me.Drive.Items["{item-id}"]
 	.CreateLink(type,scope)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

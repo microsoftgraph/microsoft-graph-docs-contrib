@@ -2,7 +2,7 @@
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
 localization_priority: Priority
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -55,7 +55,7 @@ If successful, this method returns `201 Created` response code and [invitation](
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_user_from_users"
+  "name": "create_invitation_post"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/invitations
@@ -105,10 +105,10 @@ Content-length: 551
 ```
 #### SDK sample code
 # [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/create_invitation_post-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_user_from_users-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/create_invitation_post-Javascript-snippets.md)]
 
 ---
 

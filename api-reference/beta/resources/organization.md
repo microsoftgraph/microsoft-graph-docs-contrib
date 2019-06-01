@@ -2,7 +2,7 @@
 title: "organization resource type"
 description: "Represents an Azure Active Directory tenant. "
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

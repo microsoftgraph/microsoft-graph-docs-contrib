@@ -1,17 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var body = new ItemBody
-{
-	ContentType = BodyType.Html,
-	Content = "Hello World",
-};
-
 var chatMessage = new ChatMessage
 {
-	Body = body,
+	Body = new ItemBody
+	{
+		ContentType = BodyType.Html,
+		Content = "Hello World"
+	}
 };
 
 await graphClient.Teams["{id}"].Channels["{id}"].Messages["{id}"].Replies

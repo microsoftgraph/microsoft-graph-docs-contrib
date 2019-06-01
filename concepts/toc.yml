@@ -51,7 +51,7 @@
     - name: Versioning and support
       href: versioning-and-support.md
     - name: Terms of use
-      href: https://developer.microsoft.com/graph/terms-of-use
+      href: /legal/microsoft-apis/terms-of-use?context=graph/context
   - name: Learn
     expanded: true
     items:
@@ -175,7 +175,7 @@
         href: notifications-concept-overview.md
       - name: Get started
         displayName: Notifications
-        items: 
+        items:
         - name: Overview
           href: notifications-integration-e2e-overview.md
         - name: App registraion
