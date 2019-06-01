@@ -2,7 +2,7 @@
 title: "Create chatMessage"
 description: "Use this API to create a new chatMessage."
 localization_priority: Normal
-author: "Ramjot.Singh"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---

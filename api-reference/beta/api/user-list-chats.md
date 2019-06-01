@@ -2,7 +2,7 @@
 title: "List chats"
 description: "Retrieve a list of chat objects."
 localization_priority: Normal
-author: "Ramjot.Singh"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---

@@ -2,7 +2,7 @@
 title: "Get chatMessageHostedContent"
 description: "Retrieve the properties and relationships of chatmessagehostedcontent object."
 localization_priority: Normal
-author: "Ramjot.Singh"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
