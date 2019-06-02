@@ -8,7 +8,7 @@ ms.prod: "notifications"
 
 # Create and send a notification from your app service
 
-You can create and send a notification to a user by using Microsoft Graph APIs. The notification is stored in the activity feed store and is sent to all app clients on all devices that the target user is signed in on.See below to learn how to authenticate, required permission scopes, request header/body and expected response.
+You can create and send a notification to a user by using Microsoft Graph APIs. The notification is stored in the activity feed store and is sent to all app clients on all devices that the target user is signed in on. See below to learn how to authenticate, required permission scopes, request header/body and expected response.
 
 ## Authentication
 
