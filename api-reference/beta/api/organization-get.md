@@ -2,7 +2,7 @@
 title: "Get organization"
 description: "Retrieve the properties and relationships of currently authenticated organization."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

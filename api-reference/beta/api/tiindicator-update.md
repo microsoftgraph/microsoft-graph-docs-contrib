@@ -99,7 +99,7 @@ Every indicator must have a Traffic Light Protocol (tlp) value when it is submit
 
 If successful, this method returns a `204 No Content` response code.
 
-If the optional request header is used, the method returns a `200 OK` response code and the updated [tiIndicator](../resources/tiIndicator.md) object in the response body.
+If the optional request header is used, the method returns a `200 OK` response code and the updated [tiIndicator](../resources/tiindicator.md) object in the response body.
 
 ## Examples
 

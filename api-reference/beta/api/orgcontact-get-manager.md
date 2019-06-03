@@ -2,7 +2,7 @@
 title: "orgContact: Get manager"
 description: "Get the contact's manager"
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

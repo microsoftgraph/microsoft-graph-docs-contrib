@@ -2,7 +2,7 @@
 title: "Get applicationSignInDetailedSummary"
 description: "Retrieve the properties and relationships of an applicationSignInDetailSummary object."
 localization_priority: Normal
-author: lleonard-msft
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 
