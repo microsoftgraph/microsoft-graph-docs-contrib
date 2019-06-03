@@ -1,6 +1,6 @@
 ---
 title: "applicationTemplate resource type"
-description: "Represents an application in the Azure AD Gallery"
+description: "Represents an application in the Azure AD application gallery"
 localization_priority: Normal
 author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an application in the [Azure AD Gallery](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/tutorial-list).
+Represents an application in the [Azure AD application gallery](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/tutorial-list).
 
 ## Methods
 
@@ -19,7 +19,7 @@ Represents an application in the [Azure AD Gallery](https://docs.microsoft.com/e
 |:-------------|:------------|:------------|
 |[List applicationTemplate](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Retrieve a list of applicationTemplate objects.|
 | [Get applicationTemplate](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
-|[Instantiate applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Azure AD Gallery into your directory.|
+|[Instantiate applicationTemplate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Azure AD application gallery into your directory.|
 
 
 ## Properties

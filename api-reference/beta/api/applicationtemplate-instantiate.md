@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add an instance of an application from the Azure AD Gallery into your directory.
+Use this API to add an instance of an application from the Azure AD application gallery into your directory.
 
 ## Permissions
 

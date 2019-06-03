@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects.
+Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Azure AD application gallery.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /applicationTemplates
 
 This method supports some of the OData query parameters to help customize the response. 
 
-- There is a limited support for `$filter`. You can only filter by displayName or categories. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=Categories/any(c:contains(c, 'myCategory'))`.
+- There is a limited support for `$filter`. You can only filter by displayName or categories. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=categories/any(c:contains(c, 'myCategory'))`.
 - You can use `$orderby`, `$top` and `$skip` query parameters in any Get request.
 
 For general information, see [OData query parameters](/graph/query-parameters).

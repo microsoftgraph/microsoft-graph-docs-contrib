@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-When adding an instance of an application from the Azure AD Gallery, it creates an application and servicePrincipal object in the directory. The applicationServicePrincipal represents the concatenation of the application and servicePrincipal object.
+When adding an instance of an application from the Azure AD application gallery, it creates an application nd servicePrincipal object in the directory. The applicationServicePrincipal represents the concatenation of the application and servicePrincipal object.
 
 ## Properties
 
