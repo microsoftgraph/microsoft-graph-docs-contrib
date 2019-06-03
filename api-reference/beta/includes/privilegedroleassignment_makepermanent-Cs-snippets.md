@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -12,6 +15,6 @@ var ticketSystem = "ticketSystem-value";
 await graphClient.PrivilegedRoleAssignments["{id}"]
 	.MakePermanent(reason,ticketNumber,ticketSystem)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

@@ -64,7 +64,8 @@ This resource supports:
 |[getMailTips](../api/user-getmailtips.md)|[mailTips](mailtips.md) collection|Return the MailTips of one or more recipients as available to the signed-in user. |
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| Return all the groups, directory roles, and administrative units that the user is a member of. The check is transitive. |
-|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| None |Invalidates all the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again.|
+|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| None |Invalidates all the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again. This method is replaced by **revokeSignInSessions**.|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| None |Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again. This method replaces **invalidateAllRefreshTokens**.|
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 |[delta](../api/user-delta.md)|user collection| Get incremental changes for users. |
 |[Translate Outlook identifiers](../api/user-translateexchangeids.md) |[convertIdResult resource type](convertidresult.md) collection| Translate identifiers of Outlook-related resources between formats.|
@@ -272,11 +273,14 @@ Here is a JSON representation of the resource
   "companyName": "string",
   "consentProvidedForMinor": "string",
   "country": "string",
+  "createdDateTime": "2019-02-07T21:53:13.067Z",
   "deletedDateTime": "String (timestamp)",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
   "externalUserState": "PendingAcceptance",
   "externalUserStateChangeDateTime": "2018-11-12T01:13:13Z",
+  "faxNumber": "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -291,12 +295,17 @@ Here is a JSON representation of the resource
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
+  "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
+  "onPremisesSamAccountName": "string",
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
+  "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -306,8 +315,11 @@ Here is a JSON representation of the resource
   "preferredName": "string",
   "provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
   "proxyAddresses": ["string"],
+  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
@@ -338,17 +350,7 @@ Here is a JSON representation of the resource
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
-  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
-  "createdDateTime": "2019-02-07T21:53:13.067Z",
-  "employeeId": "string",
-  "faxNumber": "string",
-  "onPremisesDistinguishedName": "string",
-  "onPremisesDomainName": "string",
-  "onPremisesSamAccountName": "string",
-  "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
-  "refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  "showInAddressList": true
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}]
 }
 ```
 

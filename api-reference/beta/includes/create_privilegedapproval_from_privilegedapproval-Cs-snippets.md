@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -9,7 +12,7 @@ var privilegedApproval = new PrivilegedApproval
 	RoleId = "roleId-value",
 	ApprovalType = "approvalType-value",
 	ApprovalState = ApprovalState.Pending,
-	ApprovalDuration = "datetime-value",
+	ApprovalDuration = "datetime-value"
 };
 
 await graphClient.PrivilegedApproval

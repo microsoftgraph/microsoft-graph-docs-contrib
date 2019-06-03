@@ -21,7 +21,7 @@ The playPrompt operation to obtain the result of the playPrompt action.
 | createdDateTime     | DateTimeOffset              | The start time of the operation.                                                   |
 | id                  | String                      | Read-only.                                                                         |
 | lastActionDateTime  | DateTimeOffset              | The time of the last action of the operation.                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | The result information. Read-only. Server generated.                               |
+| resultInfo          | [resultInfo](resultinfo.md) | The result information. Read-only. Server generated.                               |
 | status              | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## Relationships

@@ -1,14 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var rolesList = new List<String>();
-rolesList.Add( "read" );
-
 var permission = new Permission
 {
-	Roles = rolesList,
+	Roles = new List<String>()
+	{
+		"read"
+	}
 };
 
 await graphClient.Me.Drive.Items["{item-id}"].Permissions["{perm-id}"]

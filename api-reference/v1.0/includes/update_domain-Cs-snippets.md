@@ -1,16 +1,19 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var supportedServicesList = new List<String>();
-supportedServicesList.Add( "Email" );
-supportedServicesList.Add( "OfficeCommunicationsOnline" );
 
 var domain = new Domain
 {
 	IsDefault = true,
-	SupportedServices = supportedServicesList,
+	SupportedServices = new List<String>()
+	{
+		"Email",
+		"OfficeCommunicationsOnline"
+	}
 };
 
 await graphClient.Domains["contoso.com"]

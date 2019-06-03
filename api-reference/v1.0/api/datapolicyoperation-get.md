@@ -2,7 +2,7 @@
 title: "Get dataPolicyOperation"
 description: "Retrieve the properties of the dataPolicyOperation object."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

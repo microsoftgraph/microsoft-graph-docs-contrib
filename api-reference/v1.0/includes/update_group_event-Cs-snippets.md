@@ -1,26 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var responseStatus = new ResponseStatus
+var @event = new Event
 {
-	Response = ResponseType.None,
-	Time = "datetime-value",
+	Location = new Location
+	{
+		DisplayName = "Conf Room 2"
+	}
 };
 
-var _event = new Event
-{
-	OriginalStartTimeZone = "originalStartTimeZone-value",
-	OriginalEndTimeZone = "originalEndTimeZone-value",
-	ResponseStatus = responseStatus,
-	ICalUId = "iCalUId-value",
-	ReminderMinutesBeforeStart = 99,
-	IsReminderOn = true,
-};
-
-await graphClient.Groups["{id}"].Events["{id}"]
+await graphClient.Groups["01d4ee64-15ce-491e-bad1-b91aa3223df4"].Calendar.Events["AAMkADZlAAAAABERAAA="]
 	.Request()
-	.UpdateAsync(_event);
+	.UpdateAsync(@event);
 
 ```
