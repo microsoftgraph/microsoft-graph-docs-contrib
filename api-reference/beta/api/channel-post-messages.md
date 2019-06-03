@@ -51,6 +51,7 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 ### Example 1: Hello World
 
+#### Request
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -68,7 +69,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -133,7 +134,7 @@ Content-length: 160
 ### Example 2: @mentions
 
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -165,7 +166,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -228,7 +229,7 @@ Content-length: 160
 ### Example 3: Cards
 
 #### Request
-Here is an example of the request.
+The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -258,7 +259,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
