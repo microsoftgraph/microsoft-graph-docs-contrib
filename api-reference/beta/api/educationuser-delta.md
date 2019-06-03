@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /education/me/delta
-POST /education/users/<id>/delta
-POST /education/schools/<id>/users/<id>/delta
+POST /education/users/{id}/delta
+POST /education/schools/{id}/users/{id}/delta
 
 ```
 
