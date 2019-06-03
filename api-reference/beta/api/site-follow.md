@@ -1,6 +1,5 @@
 ---
 author: learafa
-ms.date: 02/08/2019
 title: Follow site
 description: Follow a user's site/sites.
 localization_priority: Normal
@@ -25,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/users/{user-id}/followedSites/add
+POST /users/{user-id}/followedSites/add
 ```
 
 ## Request body
@@ -38,7 +37,7 @@ In the request body, supply an array of JSON objects with the id parameter menti
 |   id                 | string | The [unique identifier](../resources/site.md#id-property) of the item. |
 
 
-## Response body 
+## Response 
 
 * If the request is successful, this method returns an array of sites that were followed.  
 * If an error occured while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.
