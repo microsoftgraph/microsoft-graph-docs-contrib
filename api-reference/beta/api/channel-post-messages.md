@@ -1,6 +1,6 @@
 ---
 title: "Create chatMessage"
-description: "Use this API to create a new chatMessage."
+description: "Create a new chatMessage in the specified channel."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
@@ -9,9 +9,9 @@ doc_type: "apiPageType"
 
 # Send a message to a channel 
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)] 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [message](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
+Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
 ## Permissions
 

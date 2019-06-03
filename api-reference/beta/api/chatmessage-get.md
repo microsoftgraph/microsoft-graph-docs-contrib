@@ -1,6 +1,6 @@
 ---
 title: "Get chatMessage"
-description: "Retrieve the properties and relationships of chatmessage object."
+description: "Retrieve the properties and relationships of a chatMessage object."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of chatmessage object.
+Retrieve the properties and relationships of a [chatMessage](../resources/chatmessage.md) object.
 
 ## Permissions
 

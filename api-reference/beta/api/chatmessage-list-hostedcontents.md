@@ -1,6 +1,6 @@
 ---
 title: "List hostedContents"
-description: "Retrieve a list of chatmessagehostedcontent objects."
+description: "Retrieve a list of chatMessageHostedContent objects."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of chatmessagehostedcontent objects.
+Retrieve a list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects.
 
 ## Permissions
 

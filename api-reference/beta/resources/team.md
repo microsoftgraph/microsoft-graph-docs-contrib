@@ -36,7 +36,7 @@ For more information about working with groups and members in teams, see [Use th
 |[Add tab to channel](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adds (installs) a tab to a team's channel.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Get messages in a channel](../api/channel-list-messages.md) |
 |[Send channel message](../api/channel-post-messages.md)  | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
-|[Send reply to a message in a channel](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel. |
+|[Reply to a message in a channel](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel. |
 
 ## Properties
 

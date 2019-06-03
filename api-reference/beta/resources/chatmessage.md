@@ -34,7 +34,7 @@ The message can be a root message or part of a thread that is defined by the **r
 |replyToId| string | Read-only. Id of the parent message/root message of the thread. (Only applies to messages in channels not chats) |
 |from|[identitySet](identityset.md)| Read only. Details of the sender of the message.|
 |etag| string | Read-only. Version number of the message. |
-|messageType|[chatMessageType](chatMessageType.md)|The type of message, current supported values are: message.|
+|messageType|chatMessageType|The type of message. The possible values are: `message`.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message was edited/updated.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted, or null if not deleted. |
@@ -43,7 +43,7 @@ The message can be a root message or part of a thread that is defined by the **r
 |summary|string| Summary text of the message that could be used for push notifications and summary views or fall back views. Only applies to channel messages, not chat messages. |
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel.|
-|importance| [chatMessageImportance](chatMessageImportance.md) | The importance of the message: normal, high, urgent.|
+|importance| chatMessageImportance | The importance of the message. The possible values are: `normal`, `high`, `urgent`.|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this message (for example, Like).|
 |locale|string|Locale of the message set by the client.|
 

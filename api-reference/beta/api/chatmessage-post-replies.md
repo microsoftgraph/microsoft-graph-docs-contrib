@@ -1,6 +1,6 @@
 ---
 title: "Create chatMessage"
-description: "Use this API to create a new chatMessage."
+description: "Creates a new chatMessage object in reply to an existing chatMessage object."
 localization_priority: Normal
 author: "RamjotSingh"
 ms.prod: "microsoft-teams"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new chatMessage.
+Creates a new [chatMessage](../resources/chatmessage.md) object in reply to an existing [chatMessage](../resources/chatmessage.md) object.
 
 ## Permissions
 
@@ -40,11 +40,11 @@ POST /users/{id}/chats/{id}/messages/{id}/replies
 
 ## Request body
 
-In the request body, supply a JSON representation of [chatMessage](../resources/chatmessage.md) object.
+In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.
 
 ## Examples
 
