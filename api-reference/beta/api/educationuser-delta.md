@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created or updated users without having to perform a full read of the entire user collection. See [Use delta query](/graph/delta-query-overview) for details.
+Get newly created or updated [educationUser](../resources/educationuser.md) without having to perform a full read of the entire collection. See [Use delta query](/graph/delta-query-overview) for details.
 
 ## Permissions
 
@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /education/me/delta
 POST /education/users/{id}/delta
 POST /education/schools/{id}/users/{id}/delta
-
 ```
 
 ## Request headers
@@ -67,7 +66,7 @@ POST https://graph.microsoft.com/v1.0/education/me/delta
 
 ##### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
