@@ -37,8 +37,8 @@ GET /applicationTemplates
 
 This method supports some of the OData query parameters to help customize the response. 
 
-- There is a limited support for `$filter`. You can only filter by displayName or categories. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=categories/any(c:contains(c, 'myCategory'))`.
-- You can use `$orderby`, `$top` and `$skip` query parameters in any Get request.
+- You can use the `$filter` parameter in a limited way. You can only filter by **displayName** or **categories**. For example,  `$filter=contains(displayName, 'salesf')` or `$filter=categories/any(c:contains(c, 'myCategory'))`.
+- You can use `$orderby`, `$top,` and `$skip` query parameters in any GET request.
 
 For general information, see [OData query parameters](/graph/query-parameters).
 
