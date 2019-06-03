@@ -3,7 +3,7 @@ title: "itemAttachment resource type"
 description: "A contact, event, or message that's attached to another event, message, or post.  "
 localization_priority: Priority
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

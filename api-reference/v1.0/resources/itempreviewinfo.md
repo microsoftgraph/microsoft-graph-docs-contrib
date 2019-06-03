@@ -4,8 +4,8 @@ ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo
 localization_priority: Normal
-description: <description>
-ms.prod: <ms.prod>
+description: ""
+ms.prod: ""
 doc_type: resourcePageType
 ---
 # itemPreviewInfo resource type

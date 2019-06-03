@@ -3,7 +3,7 @@ title: "Get singleValueLegacyExtendedProperty"
 description: "You can get a single resource instance expanded with a specific extended property, or a collection of resource instances"
 localization_priority: Normal
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: apiPageType
 ---
 

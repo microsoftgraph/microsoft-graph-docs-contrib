@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: List the subsites for a SharePoint site
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: <description>
+description: ""
 doc_type: apiPageType
 ---
 # Enumerate subsites

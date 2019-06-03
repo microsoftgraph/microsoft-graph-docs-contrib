@@ -3,7 +3,7 @@ title: "attachment resource type"
 description: "You can add related content to an event,"
 localization_priority: Priority
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

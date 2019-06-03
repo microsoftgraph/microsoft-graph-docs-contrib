@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Sync the contents of a drive
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: <description>
+description: ""
 doc_type: apiPageType
 ---
 # Track changes for a Drive

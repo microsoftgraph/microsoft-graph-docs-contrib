@@ -3,7 +3,7 @@ title: "keyValue resource type"
 description: "Standard key-value pair resource type."
 localization_priority: Normal
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

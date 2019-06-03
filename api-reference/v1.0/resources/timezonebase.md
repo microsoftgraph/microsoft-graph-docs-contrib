@@ -3,7 +3,7 @@ title: "timeZoneBase resource type"
 description: "The basic representation of a time zone."
 localization_priority: Normal
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Get Special Folders
 localization_priority: Normal
 ms.prod: "sharepoint"
-description: <description>
+description: ""
 doc_type: apiPageType
 ---
 # Get a special folder by name

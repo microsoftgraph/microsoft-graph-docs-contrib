@@ -4,8 +4,8 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
-description: <description>
-ms.prod: <ms.prod>
+description: ""
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

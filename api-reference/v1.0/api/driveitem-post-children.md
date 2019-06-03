@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Create a new folder
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: <description>
+description: ""
 doc_type: apiPageType
 ---
 # Create a new folder in a drive

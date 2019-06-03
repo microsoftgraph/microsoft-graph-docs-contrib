@@ -3,7 +3,7 @@ title: "Get subscription"
 description: "Retrieve the properties and relationships of a subscription."
 localization_priority: Priority
 author: "piotrci"
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: apiPageType
 ---
 

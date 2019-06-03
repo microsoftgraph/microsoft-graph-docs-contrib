@@ -3,7 +3,7 @@ title: "settingValue resource type"
 description: "A setting represented by a name/value pair."
 localization_priority: Normal
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

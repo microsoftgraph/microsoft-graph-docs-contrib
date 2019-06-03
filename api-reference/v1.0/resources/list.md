@@ -5,7 +5,7 @@ ms.date: 09/11/2017
 title: List
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: <description>
+description: ""
 doc_type: resourcePageType
 ---
 

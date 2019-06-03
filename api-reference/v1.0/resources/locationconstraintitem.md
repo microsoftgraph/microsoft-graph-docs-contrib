@@ -3,7 +3,7 @@ title: "locationConstraintItem resource type"
 description: "The conditions stated by a client for the location of a meeting."
 localization_priority: Normal
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

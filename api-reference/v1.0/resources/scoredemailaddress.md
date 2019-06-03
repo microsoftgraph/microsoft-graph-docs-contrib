@@ -3,7 +3,7 @@ title: "scoredEmailAddress resource type"
 description: "Represents a scored email address."
 localization_priority: Normal
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

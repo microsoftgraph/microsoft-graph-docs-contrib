@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: List Files Shared With Me
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: <description>
+description: ""
 doc_type: apiPageType
 ---
 # List items shared with the signed-in user

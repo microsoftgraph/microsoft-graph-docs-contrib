@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Resumable file upload
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: <description>
+description: ""
 doc_type: apiPageType
 ---
 # Upload large files with an upload session

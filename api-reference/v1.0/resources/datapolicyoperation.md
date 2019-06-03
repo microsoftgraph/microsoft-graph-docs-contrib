@@ -1,6 +1,6 @@
 ---
-title: <title>
-description: <description>
+title: ""
+description: ""
 author: ""
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"

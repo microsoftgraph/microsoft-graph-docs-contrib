@@ -3,7 +3,7 @@ title: "itemBody resource type"
 description: "Represents properties of the body of an item, such as a message, event or group post."
 localization_priority: Normal
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

@@ -4,8 +4,8 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
-description: <description>
-ms.prod: <ms.prod>
+description: ""
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

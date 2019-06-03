@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Get Drive
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: <description>
+description: ""
 doc_type: apiPageType
 ---
 # Get Drive

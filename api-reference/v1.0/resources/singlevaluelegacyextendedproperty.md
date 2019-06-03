@@ -3,7 +3,7 @@ title: "singleValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a single value. "
 localization_priority: Normal
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 doc_type: resourcePageType
 ---
 

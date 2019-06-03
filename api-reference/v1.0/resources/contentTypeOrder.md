@@ -4,8 +4,8 @@ ms.author: dspektor
 ms.date: 09/13/2017
 title: ContentTypeOrder
 localization_priority: Normal
-description: <description>
-ms.prod: <ms.prod>
+description: ""
+ms.prod: ""
 doc_type: resourcePageType
 ---
 
