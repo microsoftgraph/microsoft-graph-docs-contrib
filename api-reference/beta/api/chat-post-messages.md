@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new chatMessage.
+Create a new [message](../resources/chatmessage.md) in the specified [chat](../resources/chat.md).
 
 ## Permissions
 
@@ -44,7 +44,7 @@ In the request body, supply a JSON representation of [chatMessage](../resources/
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.
 
 ## Examples
 

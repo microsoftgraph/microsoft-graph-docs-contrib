@@ -7,11 +7,11 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Create chatMessage
+# Send a message to a channel 
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)] 
 
-Use this API to create a new chatMessage.
+Create a new [message](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
 ## Permissions
 
@@ -49,7 +49,7 @@ If successful, this method returns `201, Created` response code and a new [chatM
 
 ## Examples
 
-### Request
+### Example 1: Hello World
 
 The following is an example of the request.
 <!-- {
