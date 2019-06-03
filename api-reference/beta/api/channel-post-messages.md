@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Send a message to a channel 
+# Create chatMessage in a channel
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
