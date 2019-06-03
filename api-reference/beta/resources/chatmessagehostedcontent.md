@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents content hosted in a chat message e.g. images, code snippets.
+Represents content hosted in a chat message, such as images or code snippets.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read properties and relationships of chatMessageHostedContent object. |
+| [Get chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read the properties and relationships of a **chatMessageHostedContent** object. |
 
 ## Properties
 
@@ -27,7 +27,7 @@ Represents content hosted in a chat message e.g. images, code snippets.
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
