@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [message](../resources/ch
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.
 
 ## Examples
 
