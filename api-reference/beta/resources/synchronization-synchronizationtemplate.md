@@ -3,7 +3,7 @@ title: "synchronizationTemplate resource type"
 description: " anyone can retrieve the template to see the default settings, including the synchronization schema."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

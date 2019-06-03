@@ -4,7 +4,9 @@ description: "Get a history item of a riskyUser object."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
+
 # Get riskyUserHistoryItem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: <description>
+description: ""
 ms.date: 09/12/2018
 title: AccessAction
 localization_priority: Normal

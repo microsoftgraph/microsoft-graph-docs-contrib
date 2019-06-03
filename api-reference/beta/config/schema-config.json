@@ -19,7 +19,6 @@
       "doc_type"
     ],
     "treatErrorsAsWarningsWorkloads": [
-      "includes",
       "intune"
     ],
     "foldersToSkip": [
@@ -31,7 +30,8 @@
       "contributing.md",
       "issue_template.md",
       "readme.md",
-      "license.md"
+      "license.md",
+      "index.md"
     ]
   },
   "schemaDiffConfig": {

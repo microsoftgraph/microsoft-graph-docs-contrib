@@ -3,7 +3,7 @@ title: "privilegedRoleAssignment: makePermanent"
 description: "Make the role assignment as permanent."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

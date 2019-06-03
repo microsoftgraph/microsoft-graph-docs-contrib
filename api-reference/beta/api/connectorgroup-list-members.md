@@ -3,7 +3,7 @@ title: "List members"
 description: "Retrieve a list of connector objects associated with a connectorGroup."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

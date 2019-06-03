@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: <description>
+description: ""
 ms.date: 09/10/2017
 title: List Files Shared With Me
 localization_priority: Normal

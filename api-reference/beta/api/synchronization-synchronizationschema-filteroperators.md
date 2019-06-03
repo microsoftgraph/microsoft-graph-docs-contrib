@@ -3,7 +3,7 @@ title: "synchronizationSchema: filterOperators"
 description: "List all operators supported in the scoping filters."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

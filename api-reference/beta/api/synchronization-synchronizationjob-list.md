@@ -3,7 +3,7 @@ title: "List synchronization jobs"
 description: "List existing jobs for a given application instance (service principal)."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

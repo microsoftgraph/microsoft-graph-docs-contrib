@@ -1,11 +1,11 @@
 ---
 author: daspek
-description: <description>
+description: ""
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 # CommentAction resource type
 

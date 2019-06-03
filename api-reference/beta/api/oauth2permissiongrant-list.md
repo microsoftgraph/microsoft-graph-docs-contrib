@@ -3,7 +3,7 @@ title: "List oauth2PermissionGrants"
 description: "Retrieve a list of oauth2PermissionGrant objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

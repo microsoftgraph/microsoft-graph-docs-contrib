@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an impossibletravelri
 localization_priority: Normal
 doc_type: apiPageType
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 
 # Get impossibleTravelRiskEvent

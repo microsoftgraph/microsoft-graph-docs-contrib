@@ -1,11 +1,11 @@
 ---
 author: JeremyKelley
-description: <description>
+description: ""
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 # FolderView resource type
 

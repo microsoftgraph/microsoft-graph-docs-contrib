@@ -4,6 +4,7 @@ description: "Retrieve a member of a chat."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # List conversationMembers

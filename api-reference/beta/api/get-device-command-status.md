@@ -4,7 +4,7 @@ description: "Get the status of a command on a device. For the  full list of sta
 localization_priority: Normal
 doc_type: apiPageType
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 
 # Get device command status

@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values"
 doc_type: enumPageType
 localization_priority: Normal
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

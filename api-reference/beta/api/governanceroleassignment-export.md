@@ -4,7 +4,7 @@ description: "Retrieve a collection of governanceRoleAssignmentRequests in the f
 localization_priority: Normal
 doc_type: apiPageType
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 
 # Export governanceRoleAssignmentRequests

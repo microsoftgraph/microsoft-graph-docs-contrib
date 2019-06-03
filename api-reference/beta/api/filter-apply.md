@@ -4,7 +4,7 @@ description: "Apply the given filter criteria on the given column."
 localization_priority: Normal
 doc_type: apiPageType
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 
 # Filter: apply

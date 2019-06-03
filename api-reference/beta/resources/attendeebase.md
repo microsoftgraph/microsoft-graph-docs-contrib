@@ -3,7 +3,7 @@ title: "attendeeBase resource type"
 description: "The type of attendee."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

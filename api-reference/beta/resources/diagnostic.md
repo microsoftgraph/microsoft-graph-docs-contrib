@@ -3,7 +3,7 @@ title: "diagnostic resource type"
 description: "Information about an error or warning for a OneNote operation."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

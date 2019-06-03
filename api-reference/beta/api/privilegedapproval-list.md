@@ -3,7 +3,7 @@ title: "List privilegedApproval"
 description: "Retrieve a list of privilegedapproval objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

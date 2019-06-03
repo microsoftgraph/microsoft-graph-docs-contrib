@@ -3,7 +3,7 @@ title: "Create appRoleAssignment"
 description: "Use this API to create a new appRoleAssignment."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

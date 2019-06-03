@@ -3,7 +3,7 @@ title: "List servicePrincipals"
 description: "Retrieve a list of servicePrincipal objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

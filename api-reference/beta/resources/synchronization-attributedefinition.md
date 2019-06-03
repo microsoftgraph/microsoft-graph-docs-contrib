@@ -3,7 +3,7 @@ title: "attributeDefinition resource type"
 description: "Describes an attribute of an object."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

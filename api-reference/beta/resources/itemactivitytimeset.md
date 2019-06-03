@@ -1,11 +1,11 @@
 ---
 author: daspek
-description: <description>
+description: ""
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 # ItemActivityTimeSet resource type
 

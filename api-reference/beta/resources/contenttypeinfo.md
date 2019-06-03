@@ -1,11 +1,11 @@
 ---
 author: daspek
-description: <description>
+description: ""
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 # ContentTypeInfo resource type
 

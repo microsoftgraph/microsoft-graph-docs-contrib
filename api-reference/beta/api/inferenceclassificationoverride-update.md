@@ -4,7 +4,7 @@ description: "Change the **classifyAs** field of a Focused Inbox override as spe
 localization_priority: Normal
 doc_type: apiPageType
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 
 # Update inferenceClassificationOverride

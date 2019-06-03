@@ -4,7 +4,7 @@ description: "Create a new identityProvider by specifying display name, identity
 localization_priority: Normal
 doc_type: apiPageType
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 
 # Create identityProvider

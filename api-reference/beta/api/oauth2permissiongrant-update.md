@@ -3,7 +3,7 @@ title: "Update oAuth2PermissionGrant"
 description: "Update the properties of oAuth2PermissionGrant object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

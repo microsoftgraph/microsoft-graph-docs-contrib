@@ -4,7 +4,7 @@ description: "Create a role assignment request to represent the operation you wa
 localization_priority: Normal
 doc_type: apiPageType
 author: ""
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 
 # Create governanceRoleAssignmentRequest

@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: <description>
+description: ""
 ms.date: 09/14/2017
 title: MentionAction
 localization_priority: Normal

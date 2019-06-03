@@ -1,6 +1,6 @@
 ---
 author: rahmit
-description: <description>
+description: ""
 ms.date: 09/01/2018
 title: WebPart
 localization_priority: Normal

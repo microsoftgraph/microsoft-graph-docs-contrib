@@ -3,7 +3,7 @@ title: "servicePrincipal: getMemberObjects"
 description: "Get the list of groups and directory roles that this service principal is a member of.  This check is transitive."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

@@ -3,7 +3,7 @@ title: "api resource type"
 description: "Specifies settings for a Web API application."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 

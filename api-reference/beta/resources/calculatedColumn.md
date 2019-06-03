@@ -1,11 +1,11 @@
 ---
 author: JeremyKelley
-description: <description>
+description: ""
 ms.date: 09/11/2017
 title: CalculatedColumn
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: <ms.prod>
+ms.prod: ""
 ---
 # CalculatedColumn resource type
 

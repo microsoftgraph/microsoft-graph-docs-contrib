@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "Retrieve the connectorgroup the connector is a member of."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: <ms.prod>
+ms.prod: ""
 author: ""
 ---
 
