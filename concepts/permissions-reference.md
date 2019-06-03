@@ -891,13 +891,13 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Places.Read.All_ |Read all company places |Allows the app to read company places (Conf Rooms and Room Lists) for calendar events and other applications. |No | Yes |
+| _Places.Read.All_ |Read all company places |Allows the app to read company places (conference rooms and room lists) for calendar events and other applications. |No | Yes |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Places.Read.All_ |   Read all company places | Allows the app to read company places (Conf Rooms and Room Lists) for calendar events and other applications.| Yes |
+| _Places.Read.All_ |   Read all company places | Allows the app to read company places (conference rooms and room lists) for calendar events and other applications.| Yes |
 
 ---
 
