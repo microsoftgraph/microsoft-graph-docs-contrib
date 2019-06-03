@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition        | Beta  | Introduced the new resource type [applicationTemplate](../resources/applicationtemplate.md). This resource type supports [instantiate](../api/applicationtemplate-instantiate.md), [list](../api/applicationtemplate-instantiate.md) and [get](../api/applicationtemplate-get.md) applications from the Azure AD application gallery.|
+| Addition        | Beta  | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.|
 
 ## May 2019
 
