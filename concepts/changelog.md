@@ -312,7 +312,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### OneDrive and SharePoint APIs
 
 | **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :-------------------------------------- |
+| :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the **expirationDateTime** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) DateTimeOffset type. |
 | Addition        | Beta        | Added the **password** property to the [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta) string type. |
 
