@@ -1,5 +1,5 @@
 ---
-title: "Create chatMessage"
+title: "Create chatMessage reply in a channel"
 description: "Creates a new chatMessage object in reply to an existing chatMessage object."
 localization_priority: Normal
 author: "RamjotSingh"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# Create chatMessage
+# Create chatMessage reply in a channel
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,7 +57,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
 
 {
