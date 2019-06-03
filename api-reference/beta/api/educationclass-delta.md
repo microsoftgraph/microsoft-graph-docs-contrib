@@ -38,8 +38,6 @@ POST /education/me/classes/<id>/delta
 | :------------ | :------------ |
 | Authorization | Bearer {code} |
 
-## Request body
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) collection object in the response body.
