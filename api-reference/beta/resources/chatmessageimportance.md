@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents importance of an individual [chat message](chatMessage.md) within a [channel](channel.md) or [chat](chat.md) entity.
+Represents the importance of an individual [chat message](chatMessage.md) within a [channel](channel.md) or [chat](chat.md) entity.
 
 ## Members
 
