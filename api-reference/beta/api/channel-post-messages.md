@@ -1,5 +1,5 @@
 ---
-title: "Create chatMessage"
+title: "Create chatMessage in a channel"
 description: "Create a new chatMessage in the specified channel."
 localization_priority: Normal
 author: "RamjotSingh"
