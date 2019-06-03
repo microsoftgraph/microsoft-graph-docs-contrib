@@ -40,6 +40,10 @@ POST /education/users/{id}/schools/{id}/delta
 | :------------ | :------------ |
 | Authorization | Bearer {code} |
 
+## Request body
+
+Do not supply a request body for this method.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [educationSchool](../resources/educationschool.md) collection object in the response body.
