@@ -2,7 +2,7 @@
 title: "Get signIn"
 description: "Retrieve a specific Azure AD user sign-in event for your tenant."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

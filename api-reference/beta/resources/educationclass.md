@@ -28,8 +28,8 @@ Represents a class within a school. The **educationClass** resource corresponds 
 |[Create educationAssignment](../api/educationclass-post-assignments.md) |[educationAssignment](../resources/educationassignment.md)| Create a new **educationAssignment** by posting to the assignments collection.|
 |[List assignments](../api/educationclass-list-assignments.md) |[educationAssignment](../resources/educationassignment.md) collection| Get an **educationAssignment** object collection.|
 |[Get group](../api/educationclass-get-group.md) |[group](group.md)| Get the Office 365 **group** that corresponds to this **educationClass**.|
-|[Create educationCategory](../api/educationclass-post-category.md) | [educationCategory](educationCategory.md) | Create a new **educationCategory** for this class.|
-|[List categories](../api/educationclass-list-categories.md) | [educationCategory](educationCategory.md) collection | Get a list of **educationCategory** objects belonging to this class.|
+|[Create educationCategory](../api/educationclass-post-category.md) | [educationCategory](educationcategory.md) | Create a new **educationCategory** for this class.|
+|[List categories](../api/educationclass-list-categories.md) | [educationCategory](educationcategory.md) collection | Get a list of **educationCategory** objects belonging to this class.|
 |[Update](../api/educationclass-update.md) | [educationClass](educationclass.md)	|Update **educationClass** object. |
 |[Delete](../api/educationclass-delete.md) | None |Delete **educationClass** object. |
 

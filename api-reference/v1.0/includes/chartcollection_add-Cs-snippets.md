@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -12,6 +15,6 @@ var seriesBy = "Auto";
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts
 	.Add(type,sourceData,seriesBy)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

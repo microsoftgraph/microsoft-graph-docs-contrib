@@ -27,8 +27,8 @@ None.
 
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|directoryAudits|[directoryAudit](directoryAudit.md) collection| Read-only. Nullable.|
-|signIns|[signIn](signIn.md) collection| Read-only. Nullable.|
+|directoryAudits|[directoryAudit](directoryaudit.md) collection| Read-only. Nullable.|
+|signIns|[signIn](signin.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 

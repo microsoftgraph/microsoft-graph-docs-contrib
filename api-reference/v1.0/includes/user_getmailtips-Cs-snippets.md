@@ -1,17 +1,22 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var EmailAddressesList = new List<String>();
-EmailAddressesList.Add( "danas@contoso.onmicrosoft.com" );
-EmailAddressesList.Add( "fannyd@contoso.onmicrosoft.com" );
+var emailAddresses = new List<String>()
+{
+	"danas@contoso.onmicrosoft.com",
+	"fannyd@contoso.onmicrosoft.com"
+};
 
-var MailTipsOptions = "automaticReplies, mailboxFullStatus";
+var mailTipsOptions = MailTipsType.AutomaticReplies | MailTipsType.MailboxFullStatus;
 
 await graphClient.Me
-	.GetMailTips(emailAddressesList,mailTipsOptions)
+	.GetMailTips(emailAddresses,mailTipsOptions)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

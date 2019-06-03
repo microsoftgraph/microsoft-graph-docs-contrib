@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -12,6 +15,6 @@ var onBehalfOfUserId = "onBehalfOfUserId-value";
 await graphClient.Groups["{id}"]
 	.ValidateProperties(displayName,mailNickname,onBehalfOfUserId)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

@@ -2,7 +2,7 @@
 title: "orgContact resource type"
 description: "Here is a JSON representation of the resource"
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

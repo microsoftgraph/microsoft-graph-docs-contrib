@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,6 +13,6 @@ var sendResponse = true;
 await graphClient.Me.Events["{id}"]
 	.Decline(comment,sendResponse)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```
