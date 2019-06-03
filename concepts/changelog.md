@@ -11,6 +11,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## June 2019
+
+### Places API
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta  | Added the [getPlaces](/graph/api/getplaces?view=graph-rest-beta) action|
+
 ## May 2019
 
 ### Reports APIs
