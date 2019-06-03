@@ -19,8 +19,8 @@ Derived from [place](place.md).
 
 | Method                              | Return Type                  | Description |
 |:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | [place](place.md) collection | Get a place object collection. |
-| [Get place](../api/place-get.md)    | [place](place.md)            | Read properties and relationships of roomList object. |
+| [List places](../api/place-list.md) | [place](place.md) collection | Retrieve a list of place objects. |
+| [Get place](../api/place-get.md)    | [place](place.md)            | Retrieve the properties and relationships of a place object. |
 
 ## Properties
 
