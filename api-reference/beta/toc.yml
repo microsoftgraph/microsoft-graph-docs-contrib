@@ -8974,7 +8974,7 @@
         - name: Get message reply
           href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-chatmessage.md
+          href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
       - name: Chat
