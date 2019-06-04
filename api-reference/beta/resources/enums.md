@@ -803,3 +803,17 @@ Possible values for user account types (group membership), per Windows definitio
 |Add| 1       |
 |Update|2     |
 |Delete|4     |
+
+### chatMessageType values
+
+|Values|
+|:---|
+|message|
+
+### chatMessageImportance values
+
+|Values|
+|:---|
+|normal|
+|high|
+|urgent|
