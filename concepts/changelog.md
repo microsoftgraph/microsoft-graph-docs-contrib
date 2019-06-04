@@ -11,6 +11,15 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## June 2019
+
+### OneDrive and SharePoint APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the [followSite](/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
+| Addition        | Beta        | Added the [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
+
 ## May 2019
 
 ### Reports APIs
