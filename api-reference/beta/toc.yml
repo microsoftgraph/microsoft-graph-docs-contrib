@@ -18,6 +18,8 @@
       href: /graph/permissions-reference?toc=./ref/toc.json
     - name: Manage app access (CSPs)
       href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+    - name: Limit mailbox access
+      href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: Use the API
     items:
     - name: Overview
@@ -8713,6 +8715,10 @@
           href: api/itemanalytics-get.md
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
+        - name: Follow site
+          href: api/site-follow.md
+        - name: Unfollow site
+          href: api/site-unfollow.md
       - name: Lists
         href: resources/list.md
         items:
@@ -8968,7 +8974,7 @@
         - name: Get message reply
           href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-chatmessage.md
+          href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
       - name: Chat

@@ -1,7 +1,7 @@
 ---
 title: "Delete device"
 description: "Delete a registered device."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

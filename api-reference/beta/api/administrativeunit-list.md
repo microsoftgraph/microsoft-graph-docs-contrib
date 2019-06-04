@@ -1,7 +1,7 @@
 ---
 title: "List administrativeUnits"
 description: "Retrieve a list of administrativeUnit objects."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---

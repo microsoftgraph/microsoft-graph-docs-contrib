@@ -2,7 +2,7 @@
 title: "Update organization"
 description: "Update the properties of the currently authenticated organization."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

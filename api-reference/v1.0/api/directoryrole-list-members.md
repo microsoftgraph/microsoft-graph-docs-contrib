@@ -1,7 +1,7 @@
 ---
 title: "List members"
 description: "Retrieve a list of the users that are assigned to the directory role.  Only users can be assigned to a directory role."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

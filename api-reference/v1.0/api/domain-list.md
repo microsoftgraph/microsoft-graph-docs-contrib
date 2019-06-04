@@ -1,7 +1,7 @@
 ---
 title: "List domains"
 description: "Retrieve a list of domain objects."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType

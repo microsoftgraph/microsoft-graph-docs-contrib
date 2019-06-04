@@ -1,7 +1,7 @@
 ---
 title: "Get deleted item"
 description: "Retrieve the properties of a recently deleted item in deleted items."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
