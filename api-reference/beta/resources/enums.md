@@ -806,13 +806,13 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### chatMessageType values
 
-|Values|
+|Member|
 |:---|
 |message|
 
 ### chatMessageImportance values
 
-|Values|
+|Member|
 |:---|
 |normal|
 |high|
