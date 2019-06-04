@@ -125,7 +125,11 @@ The following is a JSON representation of the resource.
   "description": "educationUser resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [ 
+    "Error: Resource educationUser has documented navigation properties, but we thought it was a complex type!" 
+  ]
+
 }-->
 
 [educationuser]: educationuser.md
