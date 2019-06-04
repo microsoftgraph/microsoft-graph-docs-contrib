@@ -7,7 +7,7 @@ author: nmetulev
 
 # Custom provider
 
-If you have existing authentication code in your application, you can create a custom provider to enable authentication and access to Microsoft Graph for Microsoft Graph Toolkit components. You can integrate it with the providers in the toolkit in two ways:
+If you have existing authentication code in your application, you can create a custom provider to enable authentication and access to Microsoft Graph for Microsoft Graph Toolkit components. There are two ways to create custom providers:
 
 - Create a new `SimpleProvider` by passing in a function for getting an access token
 - Extend the `IProvider` abstract class
@@ -24,7 +24,7 @@ let provider = new SimpleProvider((scopes: string[]) => {
 });
 ```
 
-In addition, you can also provide an optional `login` and `logout` functions that can handle the login and logout calls from the [Login](../components/login.md) component.
+In addition, you can also provide an optional `login` and `logout` functions that can handle the sign in and sign out calls from the [Login](../components/login.md) component.
 
 ```ts
 function getAccessToken(scopes: string[]) {

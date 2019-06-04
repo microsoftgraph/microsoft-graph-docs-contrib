@@ -344,7 +344,7 @@
     - name: Use the toolkit (preview)
       items:
         - name: Toolkit overview
-          href: toolkit/index.md
+          href: toolkit/overview.md
         - name: Components
           items:
             - name: Login
