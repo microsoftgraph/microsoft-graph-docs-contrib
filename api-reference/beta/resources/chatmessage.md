@@ -74,7 +74,7 @@ The following is a JSON representation of the resource.
   "replyToId": "string (identifier)",
   "from": {"@odata.type": "microsoft.graph.identitySet"},
   "etag": "string",
-  "messageType": "[{"@odata.type": "microsoft.graph.chatMessageType"}]",
+  "messageType": {"@odata.type": "microsoft.graph.chatMessageType"},
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
   "deletedDateTime": "string (timestamp)",
