@@ -102,7 +102,7 @@ The following is a JSON representation of the resource.
   "description": "educationClass resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
   "suppressions": [ 
     "Error: Resource educationClass has documented navigation properties, but we thought it was a complex type!"
 }-->
