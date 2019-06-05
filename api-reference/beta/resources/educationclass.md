@@ -85,6 +85,22 @@ The following is a JSON representation of the resource.
   "term": { "@odata.type": "microsoft.graph.educationTerm" }
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.educationClass",
+  "description": "educationUser resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [ 
+    "Error: Resource educationClass has documented navigation properties, but we thought it was a complex type!",
+    "Resource educationClass has documented navigation properties, but we thought it was a complex type!"
+  ]
+
+}-->
+
 [educationclass]: educationclass.md
 [educationuser]: educationuser.md
 [educationassignment]: educationassignment.md
@@ -94,15 +110,3 @@ The following is a JSON representation of the resource.
 [educationterm]: educationterm.md
 [identityset]: identityset.md
 [group]: group.md
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "educationClass resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [ 
-    "Error: Resource educationClass has documented navigation properties, but we thought it was a complex type!"
-}-->
