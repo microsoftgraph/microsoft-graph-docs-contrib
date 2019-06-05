@@ -10,7 +10,7 @@ author: MichaelMainer
 Authentication providers implement the code required to acquire a token using the Microsoft Authentication Library (MSAL), handle a number of potential errors for cases like incremental consent, expired passwords, conditional access and then set the HTTP request authorization header. There are a set of providers that match the scenarios described by the [Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
 
 |Scenario | Flow/Grant | Audience | Provider|
-|--|--|--|--|--|
+|--|--|--|--|
 |[Single Page App](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-acquire-token)| Implicit | Delegated Consumer/Org |[Implicit Provider](#ImplicitProvider) |
 | [Web App that calls web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-acquire-token) | Authorization Code | Delegated Consumer/Org | [Authorization Code Provider](#AuthCodeProvider) |
 |  | Client Credentials  | App Only | [Client Credentials Provider](#ClientCredentialsProvider) |
@@ -200,7 +200,7 @@ Not applicable.
 
 ---
 
-##  <a name="DeviceCodeProvider"/>Device code Provider
+##  <a name="DeviceCodeProvider"/>Device code provider
 
 The device code flow enables sign in to devices by way of another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-device-code).
 
@@ -237,7 +237,7 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 ---
 
-##  <a name="IntegratedWindowsProvider"/>Integrated Windows Provider
+##  <a name="IntegratedWindowsProvider"/>Integrated Windows provider
 
 The integrated Windows flow provides a way for Windows computers to silently acquire an access token when they are domain joined. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
@@ -274,7 +274,7 @@ Not applicable.
 
 ---
 
-##  <a name="InteractiveProvider"/>Interactive Provider
+##  <a name="InteractiveProvider"/>Interactive provider
 
 The interactive flow is used by mobile applications (Xamarin and UWP) and desktops applications to call Microsoft Graph in the name of a user. For details, see [Acquiring tokens interactively](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
