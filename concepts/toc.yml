@@ -51,7 +51,7 @@
     - name: Versioning and support
       href: versioning-and-support.md
     - name: Terms of use
-      href: https://developer.microsoft.com/graph/terms-of-use
+      href: /legal/microsoft-apis/terms-of-use?context=graph/context
   - name: Learn
     expanded: true
     items:
@@ -278,6 +278,8 @@
         href: permissions-reference.md
       - name: Manage app access (CSPs)
         href: auth-cloudsolutionprovider.md
+      - name: Limit mailbox access
+        href: auth-limit-mailbox-access.md
     - name: Use the API
       items:
       - name: Overview

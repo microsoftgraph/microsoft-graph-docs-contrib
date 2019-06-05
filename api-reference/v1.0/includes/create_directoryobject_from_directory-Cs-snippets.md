@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 await graphClient.Directory.DeletedItems["{object-id}"]
 	.Restore()
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

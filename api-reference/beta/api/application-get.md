@@ -1,7 +1,7 @@
 ---
 title: "Get application"
 description: "Retrieve the properties and relationships of application object."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 ---

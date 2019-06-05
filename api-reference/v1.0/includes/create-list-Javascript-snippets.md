@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Javascript
+```javascript
 
 const options = {
 	authProvider,
@@ -8,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const list = {
-  name: "Books",
+  displayName: "Books",
   columns: [
     {
       name: "Author",

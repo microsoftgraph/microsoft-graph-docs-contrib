@@ -35,7 +35,7 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 Do not supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 Ok` response code. It returns [privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) in the response body.
+If successful, this method returns a `200 Ok` response code. It returns [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) in the response body.
 
 ### Error codes
 This API returns the standard HTTP error codes. In addition, it returns the custom error codes listed in the following table.

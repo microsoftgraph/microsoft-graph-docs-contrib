@@ -1,7 +1,7 @@
 ---
 title: "Force domain deletion"
 description: "Deletes a domain using an asynchronous long-running operation."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
