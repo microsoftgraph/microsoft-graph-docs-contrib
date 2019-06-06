@@ -58,6 +58,7 @@ This resource supports:
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) collection| Get a licenseDetails object collection.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
+|[delta](../api/user-delta.md)|user collection| Get incremental changes for users. |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Find time and locations to meet based on attendee availability, location, or time constraints.|
 |[findRoomLists](../api/user-findroomlists.md)|[emailaddress.md](emailaddress.md) collection | Get the room lists defined in a tenant.|
 |[findRooms](../api/user-findrooms.md)|[emailaddress.md](emailaddress.md) collection | Get all the meeting rooms in the user's tenant or in a specific room list. |
@@ -65,10 +66,9 @@ This resource supports:
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| Return all the groups, directory roles, and administrative units that the user is a member of. The check is transitive. |
 |[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| None |Invalidates all the user's refresh and session tokens issued to applications, by resetting the **refreshTokensValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again. This method is replaced by **revokeSignInSessions**.|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| None |Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again. This method replaces **invalidateAllRefreshTokens**.|
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
-|[delta](../api/user-delta.md)|user collection| Get incremental changes for users. |
-|[Translate Outlook identifiers](../api/user-translateexchangeids.md) |[convertIdResult resource type](convertidresult.md) collection| Translate identifiers of Outlook-related resources between formats.|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| None |Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again. This method replaces **invalidateAllRefreshTokens**.|
+|[translateExchangeIds](../api/user-translateexchangeids.md) |[convertIdResult](convertidresult.md) collection| Translate identifiers of Outlook-related resources between formats.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
