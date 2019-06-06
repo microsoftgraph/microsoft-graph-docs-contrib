@@ -13,13 +13,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2019
 
-### Directory APIs
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Addition | v1.0 | Added the **signInSessionsValidFromDateTime** property on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
-| Addition | v1.0 | Added the [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) action on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
-
 ### OneDrive and SharePoint APIs
 
 | **Change type** | **Version** | **Description**                          |
