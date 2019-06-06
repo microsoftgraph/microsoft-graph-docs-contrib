@@ -33,7 +33,13 @@ GET /place/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following query parameters to help customize the response:
+* $expand
+* $filter
+* $select
+* $top
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
