@@ -13,6 +13,11 @@ doc_type: "resourcePageType"
 
 Represents a place. This is the base type for a [room](room.md) or [roomList](roomlist.md).
 
+## Using the Places API
+Tenants can organize meeting rooms into room lists. You can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list. 
+
+We have also added more details about each to allow for queries like get a list of all rooms by city,floor, or building.
+
 ## Methods
 
 | Method                              | Return Type                  | Description |
