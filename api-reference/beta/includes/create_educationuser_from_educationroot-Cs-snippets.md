@@ -1,36 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var residenceAddress = new PhysicalAddress
-{
-	City = "Los Angeles",
-	CountryOrRegion = "United States",
-	PostalCode = "98055",
-	State = "CA",
-	Street = "12345 Main St.",
-};
-
-var mailingAddress = new PhysicalAddress
-{
-	City = "Los Angeles",
-	CountryOrRegion = "United States",
-	PostalCode = "98055",
-	State = "CA",
-	Street = "12345 Main St.",
-};
-
-var user = new Identity
-{
-	DisplayName = "Susana Rocha",
-	Id = "14012",
-};
-
-var createdBy = new IdentitySet
-{
-	User = user,
-};
 
 var educationUser = new EducationUser
 {
@@ -40,11 +14,32 @@ var educationUser = new EducationUser
 	Surname = "Matheson",
 	Mail = "DionM@contoso.com",
 	MobilePhone = "+1 (253) 555-0101",
-	CreatedBy = createdBy,
+	CreatedBy = new IdentitySet
+	{
+		User = new Identity
+		{
+			DisplayName = "Susana Rocha",
+			Id = "14012"
+		}
+	},
 	ExternalSource = EducationExternalSource.Sis,
-	MailingAddress = mailingAddress,
+	MailingAddress = new PhysicalAddress
+	{
+		City = "Los Angeles",
+		CountryOrRegion = "United States",
+		PostalCode = "98055",
+		State = "CA",
+		Street = "12345 Main St."
+	},
 	PrimaryRole = EducationUserRole.Student,
-	ResidenceAddress = residenceAddress,
+	ResidenceAddress = new PhysicalAddress
+	{
+		City = "Los Angeles",
+		CountryOrRegion = "United States",
+		PostalCode = "98055",
+		State = "CA",
+		Street = "12345 Main St."
+	}
 };
 
 await graphClient.Education.Users

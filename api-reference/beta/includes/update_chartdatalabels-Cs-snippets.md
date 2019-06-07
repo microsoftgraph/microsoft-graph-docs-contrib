@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -9,7 +12,7 @@ var workbookChartDataLabels = new WorkbookChartDataLabels
 	ShowValue = true,
 	ShowSeriesName = true,
 	ShowCategoryName = true,
-	ShowLegendKey = true,
+	ShowLegendKey = true
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].DataLabels

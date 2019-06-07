@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var contactFolder = new ContactFolder
 {
-	DisplayName = "displayName-value",
+	DisplayName = "displayName-value"
 };
 
 await graphClient.Me.ContactFolders["{id}"].ChildFolders

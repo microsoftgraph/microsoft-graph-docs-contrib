@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -9,7 +12,7 @@ var workbookRangeFormat = new WorkbookRangeFormat
 	HorizontalAlignment = "Center",
 	VerticalAlignment = "Center",
 	RowHeight = 49,
-	WrapText = false,
+	WrapText = false
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["Sheet1"].Range('$B$1').Format

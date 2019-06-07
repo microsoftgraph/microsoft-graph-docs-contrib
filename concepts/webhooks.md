@@ -11,6 +11,9 @@ The Microsoft Graph API uses a webhook mechanism to deliver notifications to cli
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.
 
+> [!div class="nextstepaction"]
+> [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
+
 ## Supported resources
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
@@ -236,6 +239,7 @@ Repeat for other notifications in the request.
 
 The following code samples are available on GitHub.
 
+- [Microsoft Graph Training Module - Using Change Notifications and Track Changes with Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-changenotifications)
 - [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 - [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 - [Microsoft Graph User Webhooks Sample using WebJobs SDK](https://github.com/microsoftgraph/webjobs-webhooks-sample)
@@ -245,6 +249,7 @@ The following code samples are available on GitHub.
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [Change notifications tutorial](/graph/tutorials/change-notifications)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0

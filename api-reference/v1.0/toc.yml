@@ -18,6 +18,8 @@
       href: /graph/permissions-reference?toc=./ref/toc.json
     - name: Manage app access (CSPs)
       href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+    - name: Limit mailbox access
+      href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: Use the API
     items:
     - name: Overview
@@ -35,6 +37,8 @@
       items:
       - name: Overview
         href: /graph/webhooks?toc=./ref/toc.json
+      - name: Tutorial
+        href: /graph/tutorials/change-notifications
       - name: Missing Outlook notifications (preview)
         href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
     - name: Track changes
@@ -71,7 +75,7 @@
         href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
       - name: "1: Review differences"
         expanded: true
-        items: 
+        items:
         - name: Requests
           href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
         - name: Service features
@@ -89,9 +93,9 @@
         items:
         - name: App registration
           href: /graph/migrate-azure-ad-graph-app-registration?toc=./ref/toc.json
-        - name: Auth libraries 
+        - name: Auth libraries
           href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
-        - name: .NET client libraries 
+        - name: .NET client libraries
           href: /graph/migrate-azure-ad-graph-client-libraries?toc=./ref/toc.json
       - name: "4: Deploy, test, and extend"
         href: /graph/migrate-azure-ad-graph-deploy-test-extend?toc=./ref/toc.json
@@ -3154,7 +3158,7 @@
         href: resources/datapolicyoperation.md
         items:
         - name: Get data policy operation
-          href: api/datapolicyoperation-get.md  
+          href: api/datapolicyoperation-get.md
       - name: Deleted items
         href: resources/directory.md
         items:

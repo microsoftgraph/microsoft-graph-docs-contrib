@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -12,6 +15,6 @@ var endDateTime = 10/15/2018 12:00:00 AM;
 await graphClient.Teams["{teamId}"].Schedule
 	.Share(notifyTeam,startDateTime,endDateTime)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -11,7 +14,7 @@ var educationClass = new EducationClass
 	ExternalId = "11019",
 	ExternalName = "Health Level 1",
 	ExternalSource = EducationExternalSource.Sis,
-	MailNickname = "fineartschool.net",
+	MailNickname = "fineartschool.net"
 };
 
 await graphClient.Education.Classes

@@ -40,10 +40,10 @@
         href: /graph/tutorials/php
       - name: Python
         href: /graph/tutorials/python
-      - name: Ruby
-        href: /graph/tutorials/ruby
       - name: React
         href: /graph/tutorials/react
+      - name: Ruby
+        href: /graph/tutorials/ruby
       - name: UWP
         href: /graph/tutorials/uwp
       - name: Xamarin
@@ -51,7 +51,7 @@
     - name: Versioning and support
       href: versioning-and-support.md
     - name: Terms of use
-      href: https://developer.microsoft.com/graph/terms-of-use
+      href: /legal/microsoft-apis/terms-of-use?context=graph/context
   - name: Learn
     expanded: true
     items:
@@ -157,15 +157,17 @@
         href: onenote-extract-data.md
       - name: Use note tags
         href: onenote-note-tags.md
-      - name: RESOURCES
-      - name: Input and output HTML
-        href: onenote-input-output-html.md
-      - name: Best practices
-        href: onenote-best-practices.md
-      - name: Branding guidelines
-        href: onenote-branding.md
-      - name: Error codes
-        href: onenote-error-codes.md
+      - name: Resources
+        expanded: true
+        items:
+        - name: Input and output HTML
+          href: onenote-input-output-html.md
+        - name: Best practices
+          href: onenote-best-practices.md
+        - name: Branding guidelines
+          href: onenote-branding.md
+        - name: Error codes
+          href: onenote-error-codes.md
     - name: Notifications (preview)
       displayName: Notifications
       items:
@@ -173,7 +175,7 @@
         href: notifications-concept-overview.md
       - name: Get started
         displayName: Notifications
-        items: 
+        items:
         - name: Overview
           href: notifications-integration-e2e-overview.md
         - name: App registraion
@@ -274,6 +276,8 @@
         href: permissions-reference.md
       - name: Manage app access (CSPs)
         href: auth-cloudsolutionprovider.md
+      - name: Limit mailbox access
+        href: auth-limit-mailbox-access.md
     - name: Use the API
       items:
       - name: Overview
@@ -291,6 +295,8 @@
         items:
         - name: Overview
           href: webhooks.md
+        - name: Tutorial
+          href: /graph/tutorials/change-notifications
         - name: Missing Outlook notifications (preview)
           href: webhooks-outlook-authz.md
       - name: Track changes
@@ -327,7 +333,7 @@
           href: migrate-azure-ad-graph-planning-checklist.md
         - name: "1: Review differences"
           expanded: true
-          items: 
+          items:
           - name: Requests
             href: migrate-azure-ad-graph-request-differences.md
           - name: Service features
@@ -345,9 +351,9 @@
           items:
           - name: App registration
             href: migrate-azure-ad-graph-app-registration.md
-          - name: Auth libraries 
+          - name: Auth libraries
             href: migrate-azure-ad-graph-authentication-library.md
-          - name: .NET client libraries 
+          - name: .NET client libraries
             href: migrate-azure-ad-graph-client-libraries.md
         - name: "4: Deploy, test, and extend"
           href: migrate-azure-ad-graph-deploy-test-extend.md
