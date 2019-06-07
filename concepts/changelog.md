@@ -22,6 +22,15 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## May 2019
 
+### Education APIs
+| Change type | Version | Description                                                                                                                                                      |
+| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Addition    | beta    | Added taughtClasses to [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).                                                                  |
+| Addition    | beta    | Added [educationCourse](/graph/api/resources/educationCourse?view=graph-rest-beta) to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
+| Addition    | beta    | Added [delta](/graph/delta-query-overview) support to [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).                                   |
+| Addition    | beta    | Added [delta](/graph/delta-query-overview) to [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta).                                       |
+| Addition    | beta    | Added [delta](/graph/delta-query-overview) to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta).                                         |
+| Addition    | beta    | Added `faculty` option to [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values) enumeration.                              |
 ### Microsoft Teams APIs
 
 | **Change type** | **Version** | **Description**                  |
