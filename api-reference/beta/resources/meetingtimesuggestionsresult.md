@@ -1,16 +1,16 @@
 ---
 title: "meetingTimeSuggestionsResult resource type"
-description: "A collection of meeting suggestions if there is any, or the reason if there isn't."
+description: "A collection of meeting suggestions if there is any, and the reason if there isn't."
 localization_priority: Normal
-author: "VinodRavichandran"
-ms.prod: "microsoft-teams"
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # meetingTimeSuggestionsResult resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of meeting suggestions if there is any, or the reason if there isn't.
+A collection of meeting suggestions if there is any, and the reason if there isn't.
 
 The following are the possible reasons that [findMeetingTimes](../api/user-findmeetingtimes.md) does not return any meeting suggestions.
 
@@ -18,7 +18,7 @@ The following are the possible reasons that [findMeetingTimes](../api/user-findm
 |:-----|:-----|
 | attendeesUnavailable | All of the attendees' availability is known, but not enough attendees are available to reach the [meeting confidence](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) threshold, which is 50% by default, for any time period.|
 | attendeesUnavailableOrUnknown | Some or all of the attendees have unknown availability, causing the meeting confidence to fall below the set threshold, which is 50% by default. Attendee availability can become unknown if the attendee is outside of the organization, or there is an error obtaining free/busy information.|
-| locationsUnavailable | The **isRequired** property of the [locationConstraint](locationconstraint.md) parameter is specified as mandatory, and yet there are no locations available at the calculated time slots. |
+| locationsUnavailable | The **isRequired** property of the **locationConstraint** parameter is specified as true, and yet there are no locations available at the calculated time slots. |
 | organizerUnavailable | The **isOrganizerOptional** parameter is false and yet the organizer is not available during the requested time window. |
 | unknown | The reason for not returning any meeting suggestions is not known.|
 
@@ -56,8 +56,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/meetingtimesuggestionsresult.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

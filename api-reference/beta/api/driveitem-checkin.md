@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Check In Files
 localization_priority: Normal
@@ -68,6 +68,16 @@ If successful, the API call returns a `204 No content`.
 ```http
 HTTP/1.1 204 No content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/checkin-item-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/checkin-item-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Remarks
 
@@ -82,7 +92,8 @@ HTTP/1.1 204 No content
   "section": "documentation",
   "tocPath": "Items/Copy",
   "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-checkin.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/driveitem-checkin.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/driveitem-checkin.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

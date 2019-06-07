@@ -1,14 +1,14 @@
 ---
 title: "groupPolicyDefinition resource type"
 description: "The entity describes all of the information about a single group policy."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # groupPolicyDefinition resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -23,7 +23,7 @@ The entity describes all of the information about a single group policy.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifies the type of groups the policy can be applied to. Possible values are: `user`, `machine`, `both`.|
+|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifies the type of groups the policy can be applied to. Possible values are: `user`, `machine`.|
 |displayName|String|The localized policy name.|
 |explainText|String|The localized explanation or help text associated with the policy. The default value is empty.|
 |categoryPath|String|The localized full category path for the policy.|

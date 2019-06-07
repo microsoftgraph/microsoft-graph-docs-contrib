@@ -23,6 +23,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders/{id}
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
@@ -48,7 +50,7 @@ Here is an example of the request.
   "name": "get_outlooktaskfolder"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/taskFolders('AAMkADIyAAAAABrJAAA=')
+GET https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAAABrJAAA=
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -71,6 +73,16 @@ Content-length: 151
 
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_outlooktaskfolder-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_outlooktaskfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -82,7 +94,8 @@ Content-length: 151
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/outlooktaskfolder-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/outlooktaskfolder-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/outlooktaskfolder-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

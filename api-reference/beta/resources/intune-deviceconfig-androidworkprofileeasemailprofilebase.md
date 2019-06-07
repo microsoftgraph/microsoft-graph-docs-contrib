@@ -1,14 +1,14 @@
 ---
 title: "androidWorkProfileEasEmailProfileBase resource type"
 description: "Base for Android Work Profile EAS Email profiles"
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # androidWorkProfileEasEmailProfileBase resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -34,7 +34,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for Exchange ActiveSync. Possible values are: `usernameAndPassword`, `certificate`.|
+|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for Exchange ActiveSync. Possible values are: `usernameAndPassword`, `certificate`, `derivedCredential`.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Duration of time email should be synced to. Possible values are: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Email attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 |hostName|String|Exchange location (URL) that the mail app connects to.|

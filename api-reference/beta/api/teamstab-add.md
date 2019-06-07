@@ -41,7 +41,7 @@ A [teamsTab](../resources/teamstab.md).
 
 ## Response
 
-If successful, this method returns a `201 OK` response code.
+If successful, this method returns a `201 Created` response code.
 
 ## Example
 
@@ -55,7 +55,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 {
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -81,7 +81,7 @@ Content-type: application/json
 
 {
   "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
@@ -106,8 +106,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamstab-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

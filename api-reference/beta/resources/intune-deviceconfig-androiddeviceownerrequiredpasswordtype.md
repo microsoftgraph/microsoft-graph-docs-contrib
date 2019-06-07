@@ -1,14 +1,14 @@
 ---
 title: "androidDeviceOwnerRequiredPasswordType enum type"
 description: "Android Device Owner policy required password type."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # androidDeviceOwnerRequiredPasswordType enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -24,6 +24,7 @@ Android Device Owner policy required password type.
 |alphabetic|4|At least alphabetic password.|
 |alphanumeric|5|At least alphanumeric password|
 |alphanumericWithSymbols|6|At least alphanumeric with symbols.|
+|lowSecurityBiometric|7|Low security biometrics based password required.|
 
 
 

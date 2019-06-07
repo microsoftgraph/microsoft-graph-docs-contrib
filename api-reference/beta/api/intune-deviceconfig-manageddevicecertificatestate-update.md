@@ -1,21 +1,21 @@
 ---
 title: "Update managedDeviceCertificateState"
 description: "Update the properties of a managedDeviceCertificateState object."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # Update managedDeviceCertificateState
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Update the properties of a [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -62,7 +62,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Device platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
+|devicePlatform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Device platform. Possible values are: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |certificateKeyUsage|[keyUsages](../resources/intune-deviceconfig-keyusages.md)|Key usage. Possible values are: `keyEncipherment`, `digitalSignature`.|
 |certificateValidityPeriodUnits|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Validity period units. Possible values are: `days`, `months`, `years`.|
 |certificateIssuanceState|[certificateIssuanceStates](../resources/intune-deviceconfig-certificateissuancestates.md)|Issuance State. Possible values are: `unknown`, `challengeIssued`, `challengeIssueFailed`, `requestCreationFailed`, `requestSubmitFailed`, `challengeValidationSucceeded`, `challengeValidationFailed`, `issueFailed`, `issuePending`, `issued`, `responseProcessingFailed`, `responsePending`, `enrollmentSucceeded`, `enrollmentNotNeeded`, `revoked`, `removedFromCollection`, `renewVerified`, `installFailed`, `installed`, `deleteFailed`, `deleted`, `renewalRequested`, `requested`.|

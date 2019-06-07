@@ -1,21 +1,21 @@
 ---
 title: "Create macOSGeneralDeviceConfiguration"
 description: "Create a new macOSGeneralDeviceConfiguration object."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # Create macOSGeneralDeviceConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Create a new [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -91,6 +91,16 @@ The following table shows the properties that are required when you create the m
 |passwordBlockAutoFill|Boolean|Indicates whether or not to block the AutoFill Passwords feature.|
 |passwordBlockProximityRequests|Boolean|Indicates whether or not to block requesting passwords from nearby devices.|
 |passwordBlockAirDropSharing|Boolean|Indicates whether or not to block sharing passwords with the AirDrop passwords feature.|
+|softwareUpdatesEnforcedDelayInDays|Int32|Sets how many days a software update will be delyed for a supervised device. Valid values 0 to 90|
+|softwareUpdatesForceDelayed|Boolean|Indicates whether or not to delay user visibility of software updates when the device is in supervised mode.|
+|contentCachingBlocked|Boolean|Indicates whether or not to allow content caching.|
+|iCloudBlockPhotoLibrary|Boolean|Indicates whether or not to block iCloud Photo Library.|
+|screenCaptureBlocked|Boolean|Indicates whether or not to block the user from taking Screenshots.|
+|classroomAppBlockRemoteScreenObservation|Boolean|Indicates whether or not to allow remote screen observation by Classroom app. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
+|classroomAppForceUnpromptedScreenObservation|Boolean|Indicates whether or not to automatically give permission to the teacher of a managed course on the Classroom app to view a student's screen without prompting. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
+|classroomForceAutomaticallyJoinClasses|Boolean|Indicates whether or not to automatically give permission to the teacher's requests, without prompting the student. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
+|classroomForceRequestPermissionToLeaveClasses|Boolean|Indicates whether a student enrolled in an unmanaged course via Classroom will be required to request permission from the teacher when attempting to leave the course. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
+|classroomForceUnpromptedAppAndDeviceLock|Boolean|Indicates whether or not to allow the teacher to lock apps or the device without prompting the student. Requires MDM enrollment via Apple School Manager or Apple Business Manager.|
 
 
 
@@ -104,7 +114,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1870
+Content-length: 2329
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -161,7 +171,17 @@ Content-length: 1870
   "passwordBlockFingerprintUnlock": true,
   "passwordBlockAutoFill": true,
   "passwordBlockProximityRequests": true,
-  "passwordBlockAirDropSharing": true
+  "passwordBlockAirDropSharing": true,
+  "softwareUpdatesEnforcedDelayInDays": 2,
+  "softwareUpdatesForceDelayed": true,
+  "contentCachingBlocked": true,
+  "iCloudBlockPhotoLibrary": true,
+  "screenCaptureBlocked": true,
+  "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true
 }
 ```
 
@@ -170,7 +190,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2042
+Content-Length: 2501
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -230,7 +250,17 @@ Content-Length: 2042
   "passwordBlockFingerprintUnlock": true,
   "passwordBlockAutoFill": true,
   "passwordBlockProximityRequests": true,
-  "passwordBlockAirDropSharing": true
+  "passwordBlockAirDropSharing": true,
+  "softwareUpdatesEnforcedDelayInDays": 2,
+  "softwareUpdatesForceDelayed": true,
+  "contentCachingBlocked": true,
+  "iCloudBlockPhotoLibrary": true,
+  "screenCaptureBlocked": true,
+  "classroomAppBlockRemoteScreenObservation": true,
+  "classroomAppForceUnpromptedScreenObservation": true,
+  "classroomForceAutomaticallyJoinClasses": true,
+  "classroomForceRequestPermissionToLeaveClasses": true,
+  "classroomForceUnpromptedAppAndDeviceLock": true
 }
 ```
 

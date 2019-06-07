@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get a SharePoint Site
 localization_priority: Normal
@@ -14,17 +14,6 @@ Retrieve properties and relationships for a [site][] resource.
 A **site** resource represents a team site in SharePoint.
 
 [site]: ../resources/site.md
-
-A **site** is addressed be a unique identifier which is a composite ID of the following values:
-
-* Site collection hostname (contoso.sharepoint.com)
-* Site collection unique ID (GUID)
-* Site unique ID (GUID)
-
-There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:
-
-* `/sites/root`: The tenant root site.
-* `/groups/{group-id}/sites/root`: The group's team site.
 
 ## Permissions
 
@@ -96,6 +85,16 @@ Content-type: application/json
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam"
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-site-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-site-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!--
 {
@@ -105,7 +104,8 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sites/Get by ID",
   "suppressions": [
-    "Error: /api-reference/beta/api/site-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/site-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

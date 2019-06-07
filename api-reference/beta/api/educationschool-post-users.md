@@ -13,41 +13,50 @@ ms.prod: "education"
 Add a user to a school.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Not supported.  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.ReadWrite.All | 
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | EduRoster.ReadWrite.All                     |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/schools/{id}/users/$ref
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
+| Content-Type  | application/json          |
 
 ## Request body
+
 In the request body, supply a JSON representation of an [educationUser](../resources/educationuser.md) object.
 
-
 ## Response
+
 If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.
 
 ## Example
+
 ##### Request
+
 The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "create_educationuser_from_educationschool"
 }-->
+
 ```http
-POST https://graph.microsoft.com/beta/education/schools/<id>/users/$ref
+POST https://graph.microsoft.com/beta/education/schools/{id}/users/$ref
 Content-type: application/json
 Content-length: 56
 
@@ -57,6 +66,7 @@ Content-length: 56
 ```
 
 ##### Response
+
 The following is an example of the response. 
 
 <!-- Add the educationClass resource to the response. -->
@@ -66,9 +76,20 @@ The following is an example of the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
+
+#### SDK sample code
+
+# [Javascript](#tab/javascript)
+
+[!INCLUDE [sample-code](../includes/create_educationuser_from_educationschool-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -80,7 +101,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/educationschool-post-users.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/educationschool-post-users.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

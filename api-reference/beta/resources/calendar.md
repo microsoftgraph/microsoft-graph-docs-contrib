@@ -30,8 +30,8 @@ A calendar which is a container for events. It can be a calendar for a [user](us
 |[List calendarView](../api/calendar-list-calendarview.md) |[event](event.md) collection| Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's primary calendar `(../me/calendarview)` or from a specified calendar.|
 |[List events](../api/calendar-list-events.md) |[event](event.md) collection| Retrieve a list of events in a calendar.  The list contains single instance meetings and series masters.|
 |[Create event](../api/calendar-post-events.md) |[event](event.md)| Create a new event in the default or specified calendar.|
+|[getSchedule](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md) collection|Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period. |
 |[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints. |
-|[getSchedule (preview)](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md) collection|Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period. |
 |[Create single-value extended property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[calendar](calendar.md)  |Create one or more single-value extended properties in a new or existing calendar.   |
 |[Get calendar with single-value extended property](../api/singlevaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | Get calendars that contain a single-value extended property by using `$expand` or `$filter`. |
 |[Create multi-value extended property](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [calendar](calendar.md) | Create one or more multi-value extended properties in a new or existing calendar.  |
@@ -103,8 +103,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/calendar.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

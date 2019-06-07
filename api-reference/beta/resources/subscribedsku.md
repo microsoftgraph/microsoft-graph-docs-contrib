@@ -2,7 +2,7 @@
 title: "subscribedSku resource type"
 description: " create, update, and delete are not supported. Query filter expressions are not supported. Inherits from directoryObject."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -69,8 +69,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/subscribedsku.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

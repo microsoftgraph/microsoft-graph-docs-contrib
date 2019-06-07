@@ -41,7 +41,7 @@ In the request body, supply a JSON representation of [tab](../resources/teamstab
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code.
 
 ## Example
 #### Request
@@ -52,17 +52,17 @@ Content-type: application/json
 Content-length: 211
 
 {
-  "name": "My Contoso Tab - updated"
+  "displayName": "My Contoso Tab - updated"
 }
 ```
 #### Response
 ```http
-HTTP/1.1 200 Success
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
   "id": "tabId",
-  "name": "My Contoso Tab - updated",
+  "displayName": "My Contoso Tab - updated",
   "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -88,8 +88,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamstab-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,7 +1,7 @@
 ---
 title: "List serviceConfigurationRecords"
 description: "Retrieves a list of domainDnsRecord objects needed to enable services for the domain."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
@@ -95,6 +95,16 @@ Content-length: 220
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_serviceconfigurationrecords-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_serviceconfigurationrecords-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -103,5 +113,9 @@ Content-length: 220
   "description": "List serviceConfigurationRecords",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/domain-list-serviceconfigurationrecords.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/domain-list-serviceconfigurationrecords.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

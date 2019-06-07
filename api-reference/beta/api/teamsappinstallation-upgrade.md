@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Not supported. |
+|Application | Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -75,8 +75,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsappinstallation-upgrade.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

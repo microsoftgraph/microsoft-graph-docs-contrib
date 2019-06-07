@@ -1,14 +1,14 @@
 ---
 title: "iosEasEmailProfileConfiguration resource type"
 description: "By providing configurations in this profile you can instruct the native email client on iOS devices to communicate with an Exchange server and get email, contacts, calendar, reminders, and notes. Furthermore, you can also specify how much email to sync and how often the device should sync."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # iosEasEmailProfileConfiguration resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -42,7 +42,7 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfi
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|UserDomainname attribute that is picked from AAD and injected into this profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Possible values are: `fullDomainName`, `netBiosDomainName`.|
 |customDomainName|String|Custom domain name value used while generating an email profile before installing on the device. Inherited from [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |accountName|String|Account name.|
-|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for this Email profile. Possible values are: `usernameAndPassword`, `certificate`.|
+|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for this Email profile. Possible values are: `usernameAndPassword`, `certificate`, `derivedCredential`.|
 |blockMovingMessagesToOtherEmailAccounts|Boolean|Indicates whether or not to block moving messages to other email accounts.|
 |blockSendingEmailFromThirdPartyApps|Boolean|Indicates whether or not to block sending email from third party apps.|
 |blockSyncingRecentlyUsedEmailAddresses|Boolean|Indicates whether or not to block syncing recently used email addresses, for instance - when composing new email.|
@@ -59,6 +59,8 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfi
 |smimeEncryptionCertificateUserOverrideEnabled|Boolean|If set to true the user can select the S/MIME encryption identity. |
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
 |useOAuth|Boolean|Specifies whether the connection should use OAuth for authentication.|
+|signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Signing Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
+|encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Encryption Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -73,6 +75,7 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfi
 |identityCertificate|[iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|Identity certificate.|
 |smimeSigningCertificate|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|S/MIME signing certificate.|
 |smimeEncryptionCertificate|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|S/MIME encryption certificate.|
+|derivedCredentialSettings|[deviceManagementDerivedCredentialSettings](../resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md)|Tenant level settings for the Derived Credentials to be used for authentication.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -116,7 +119,9 @@ Here is a JSON representation of the resource.
   "smimeSigningCertificateUserOverrideEnabled": true,
   "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
-  "useOAuth": true
+  "useOAuth": true,
+  "signingCertificateType": "String",
+  "encryptionCertificateType": "String"
 }
 ```
 

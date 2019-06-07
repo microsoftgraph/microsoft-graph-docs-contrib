@@ -16,9 +16,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All |
+|Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -98,6 +98,16 @@ Content-type: application/json
     "onPremisesProvisioningErrors": []
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### Request 2
 The next example uses a `$select` query option to get a few properties that are not returned by default. 
@@ -132,6 +142,16 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_group_non_default-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_group_non_default-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -140,5 +160,11 @@ Content-type: application/json
   "description": "Get group",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/group-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

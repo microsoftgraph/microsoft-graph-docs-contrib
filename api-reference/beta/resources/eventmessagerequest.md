@@ -18,6 +18,7 @@ Here is a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
     "attachments",
     "event",
@@ -95,7 +96,7 @@ Here is a JSON representation of the resource
 |isReadReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the message was last changed.|
 |location|[Location](location.md)|The location of the requested meeting.|
-|meetingMessageType|String| The type of event message: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
+|meetingMessageType|String| The type of event message: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|The unique identifier for the message's parent mailFolder.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|The previous end time of the requested meeting.|
 |previousLocation|[Location](location.md)|The previous location of the requested meeting.|
@@ -147,8 +148,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/eventmessagerequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

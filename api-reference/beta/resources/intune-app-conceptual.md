@@ -1,7 +1,7 @@
 ---
-title: "How to protect your company app data with Microsoft Intune"
-description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
-author: "tfitzmac"
+title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
+description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -69,14 +69,14 @@ The following Graph resources are available to manage app protection polices in 
 - [iOS VPP app revoke licenses action result](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [iOS VPP e-book](intune-books-iosvppebook.md)
 - [iOS VPP e-book assignment](intune-books-iosvppebookassignment.md)
-- [Mac os VPP app](intune-apps-macosvppapp.md)
-- [Mac os VPP app assigned license](intune-apps-macosvppappassignedlicense.md)
-- [Mac os VPP app assignment settings](intune-apps-macosvppappassignmentsettings.md)
-- [Mac os VPP app revoke licenses action result](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [macOS LOB app](intune-apps-macoslobapp.md)
 - [macOS LOB child app](intune-apps-macoslobchildapp.md)
 - [macOS minimum operating system](intune-apps-macosminimumoperatingsystem.md)
 - [macOS office suite app](intune-apps-macosofficesuiteapp.md)
+- [macOS VPP app](intune-apps-macosvppapp.md)
+- [macOS VPP app assigned license](intune-apps-macosvppappassignedlicense.md)
+- [macOS VPP app assignment settings](intune-apps-macosvppappassignmentsettings.md)
+- [macOS VPP app revoke licenses action result](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [Managed android LOB app](intune-apps-managedandroidlobapp.md)
 - [Managed android store app](intune-apps-managedandroidstoreapp.md)
 - [Managed app](intune-apps-managedapp.md)
@@ -105,10 +105,15 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app content](intune-apps-mobileappcontent.md)
 - [Mobile app content file](intune-apps-mobileappcontentfile.md)
 - [Mobile app content file upload state](intune-apps-mobileappcontentfileuploadstate.md)
+- [Mobile app dependecy type](intune-apps-mobileappdependecytype.md)
+- [Mobile app dependency](intune-apps-mobileappdependency.md)
+- [Mobile app dependency type](intune-apps-mobileappdependencytype.md)
 - [Mobile app install status](intune-apps-mobileappinstallstatus.md)
 - [Mobile app install summary](intune-apps-mobileappinstallsummary.md)
 - [Mobile app provisioning config group assignment](intune-apps-mobileappprovisioningconfiggroupassignment.md)
 - [Mobile app publishing state](intune-apps-mobileapppublishingstate.md)
+- [Mobile app relationship](intune-apps-mobileapprelationship.md)
+- [Mobile app relationship state](intune-apps-mobileapprelationshipstate.md)
 - [Mobile contained app](intune-apps-mobilecontainedapp.md)
 - [Mobile LOB app](intune-apps-mobilelobapp.md)
 - [Office client checkin status](intune-cirrus-officeclientcheckinstatus.md)
@@ -134,14 +139,19 @@ The following Graph resources are available to manage app protection polices in 
 - [Win32 LOB app detection operator](intune-apps-win32lobappdetectionoperator.md)
 - [Win32 LOB app file system detection](intune-apps-win32lobappfilesystemdetection.md)
 - [Win32 LOB app file system detection type](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Win32 LOB app file system requirement](intune-apps-win32lobappfilesystemrequirement.md)
 - [Win32 LOB app install experience](intune-apps-win32lobappinstallexperience.md)
 - [Win32 LOB app msi information](intune-apps-win32lobappmsiinformation.md)
 - [Win32 LOB app msi package type](intune-apps-win32lobappmsipackagetype.md)
 - [Win32 LOB app notification](intune-apps-win32lobappnotification.md)
 - [Win32 LOB app power shell script detection](intune-apps-win32lobapppowershellscriptdetection.md)
+- [Win32 LOB app power shell script detection type](intune-apps-win32lobapppowershellscriptdetectiontype.md)
+- [Win32 LOB app power shell script requirement](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Win32 LOB app product code detection](intune-apps-win32lobappproductcodedetection.md)
 - [Win32 LOB app registry detection](intune-apps-win32lobappregistrydetection.md)
 - [Win32 LOB app registry detection type](intune-apps-win32lobappregistrydetectiontype.md)
+- [Win32 LOB app registry requirement](intune-apps-win32lobappregistryrequirement.md)
+- [Win32 LOB app requirement](intune-apps-win32lobapprequirement.md)
 - [Win32 LOB app return code](intune-apps-win32lobappreturncode.md)
 - [Win32 LOB app return code type](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)

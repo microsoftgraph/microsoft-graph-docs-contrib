@@ -146,13 +146,22 @@ Content-type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
 
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 #### Request 2
 
 The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_select"
 }-->
 
 ```http
@@ -186,13 +195,23 @@ Content-type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta_select-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta_select-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 #### Request 3
 
 The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_minimal"
 }-->
 
 ```http
@@ -226,6 +245,16 @@ Content-type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for users](/graph/delta-query-users).
@@ -237,5 +266,13 @@ Content-type: application/json
   "description": "user: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
