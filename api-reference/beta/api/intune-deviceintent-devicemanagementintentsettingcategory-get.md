@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementIntentSettingCategory"
 description: "Read properties and relationships of the deviceManagementIntentSettingCategory object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -70,7 +70,6 @@ Content-Length: 193
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Create sideLoadingKey"
 description: "Create a new sideLoadingKey object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -93,7 +93,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

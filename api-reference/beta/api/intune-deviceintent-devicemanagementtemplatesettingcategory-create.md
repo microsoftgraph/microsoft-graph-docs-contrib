@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementTemplateSettingCategory"
 description: "Create a new deviceManagementTemplateSettingCategory object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -81,7 +81,6 @@ Content-Length: 170
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

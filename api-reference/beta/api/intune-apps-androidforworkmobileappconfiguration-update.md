@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkMobileAppConfiguration"
 description: "Update the properties of a androidForWorkMobileAppConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -126,7 +126,6 @@ Content-Length: 732
   ]
 }
 ```
-
 
 
 

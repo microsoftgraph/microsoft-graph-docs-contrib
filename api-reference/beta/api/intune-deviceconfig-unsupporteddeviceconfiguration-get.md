@@ -1,7 +1,7 @@
 ---
 title: "Get unsupportedDeviceConfiguration"
 description: "Read properties and relationships of the unsupportedDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -88,7 +88,6 @@ Content-Length: 747
   }
 }
 ```
-
 
 
 

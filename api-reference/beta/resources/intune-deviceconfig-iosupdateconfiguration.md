@@ -1,7 +1,7 @@
 ---
 title: "iosUpdateConfiguration resource type"
 description: "IOS Update Configuration, allows you to configure time window within week to install iOS updates"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -86,7 +86,6 @@ Here is a JSON representation of the resource.
   "enforcedSoftwareUpdateDelayInDays": 1024
 }
 ```
-
 
 
 

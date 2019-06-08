@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyDefinitionFile"
 description: "Read properties and relationships of the groupPolicyDefinitionFile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -79,7 +79,6 @@ Content-Length: 479
   }
 }
 ```
-
 
 
 

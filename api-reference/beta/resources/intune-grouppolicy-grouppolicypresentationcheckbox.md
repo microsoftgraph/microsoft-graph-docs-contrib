@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyPresentationCheckBox resource type"
 description: "Represents an ADMX checkBox element and an ADMX boolean element."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -56,7 +56,6 @@ Here is a JSON representation of the resource.
   "defaultChecked": true
 }
 ```
-
 
 
 

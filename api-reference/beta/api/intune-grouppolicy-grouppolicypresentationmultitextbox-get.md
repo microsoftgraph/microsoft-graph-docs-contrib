@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyPresentationMultiTextBox"
 description: "Read properties and relationships of the groupPolicyPresentationMultiTextBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -75,7 +75,6 @@ Content-Length: 311
   }
 }
 ```
-
 
 
 

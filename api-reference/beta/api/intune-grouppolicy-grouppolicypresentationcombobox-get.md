@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyPresentationComboBox"
 description: "Read properties and relationships of the groupPolicyPresentationComboBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -78,7 +78,6 @@ Content-Length: 385
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "targetedManagedAppPolicyAssignment resource type"
 description: "The type for deployment of groups or apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -48,7 +48,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

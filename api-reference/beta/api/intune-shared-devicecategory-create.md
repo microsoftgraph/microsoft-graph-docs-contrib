@@ -1,7 +1,7 @@
 ---
 title: "Create deviceCategory"
 description: "Create a new deviceCategory object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---

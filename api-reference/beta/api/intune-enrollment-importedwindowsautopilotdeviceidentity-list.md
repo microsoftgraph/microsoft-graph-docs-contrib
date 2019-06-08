@@ -1,7 +1,7 @@
 ---
 title: "List importedWindowsAutopilotDeviceIdentities"
 description: "List properties and relationships of the importedWindowsAutopilotDeviceIdentity objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 713
+Content-Length: 787
 
 {
   "value": [
@@ -76,12 +76,12 @@ Content-Length: 713
         "deviceRegistrationId": "Device Registration Id value",
         "deviceErrorCode": 15,
         "deviceErrorName": "Device Error Name value"
-      }
+      },
+      "assignedUserPrincipalName": "Assigned User Principal Name value"
     }
   ]
 }
 ```
-
 
 
 

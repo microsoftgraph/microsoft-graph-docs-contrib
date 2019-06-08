@@ -1,7 +1,7 @@
 ---
 title: "List androidWorkProfileEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the androidWorkProfileEnterpriseWiFiConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -88,7 +88,6 @@ Content-Length: 1065
   ]
 }
 ```
-
 
 
 

@@ -1,19 +1,19 @@
 ---
-title: Dismiss riskyUsers
-description: Dismiss the risk of a riskyUsers object.
+title: Dismiss riskyUser
+description: Dismiss the risk of a riskyUser object.
 author: cloudhandler
 localization_priority: Normal 
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 ---
 
-# Dismiss riskyUsers
+# riskyUser: dismiss
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
-Dismiss the risk of a **riskyUser** object. This action will set the targeted user's risk level to none.
+Dismiss the risk of one or more [riskyUser](../resources/riskyuser.md) objects. This action sets the targeted user's risk level to none.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,7 +34,6 @@ POST /riskyUsers/dismiss
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 Specify the userIds to dismiss in the request body.
@@ -69,6 +68,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/dismiss_riskyuser-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/dismiss_riskyuser-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -77,5 +86,9 @@ HTTP/1.1 204 No Content
   "description": "Dismiss riskyUsers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyusers-dismiss.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/riskyusers-dismiss.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

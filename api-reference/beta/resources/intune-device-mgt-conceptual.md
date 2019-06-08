@@ -1,7 +1,7 @@
 ---
 title: "Device management in Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define manage devices for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -147,10 +147,9 @@ ms.prod: "intune"
 - [Reset passcode action result](intune-devices-resetpasscodeactionresult.md)
 - [Revoke apple VPP licenses action result](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Run schedule](intune-devices-runschedule.md)
+- [Security baseline category state summary](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Security baseline compliance state](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Security baseline device state](intune-deviceintent-securitybaselinedevicestate.md)
-- [Security baseline setting state](intune-deviceintent-securitybaselinesettingstate.md)
-- [Security baseline state](intune-deviceintent-securitybaselinestate.md)
 - [Security baseline state summary](intune-deviceintent-securitybaselinestatesummary.md)
 - [Security baseline template](intune-deviceintent-securitybaselinetemplate.md)
 - [Shared Apple device user](intune-devices-sharedappledeviceuser.md)

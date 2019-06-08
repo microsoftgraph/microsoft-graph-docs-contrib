@@ -1,7 +1,7 @@
 ---
 title: "Create managedDeviceMobileAppConfigurationAssignment"
 description: "Create a new managedDeviceMobileAppConfigurationAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -85,7 +85,6 @@ Content-Length: 234
   }
 }
 ```
-
 
 
 

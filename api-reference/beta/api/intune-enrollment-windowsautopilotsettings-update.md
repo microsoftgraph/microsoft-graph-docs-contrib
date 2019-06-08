@@ -1,7 +1,7 @@
 ---
 title: "Update windowsAutopilotSettings"
 description: "Update the properties of a windowsAutopilotSettings object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -87,7 +87,6 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
-
 
 
 

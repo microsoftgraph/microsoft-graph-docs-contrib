@@ -1,7 +1,7 @@
 ---
 title: "mobileLobApp resource type"
 description: "An abstract base class containing properties for all mobile line of business apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -99,7 +99,6 @@ Here is a JSON representation of the resource.
   "size": 1024
 }
 ```
-
 
 
 
