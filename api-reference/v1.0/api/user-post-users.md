@@ -11,6 +11,9 @@ ms.prod: "microsoft-identity-platform"
 Create a new user.
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 
+>[!NOTE]
+>To create external users use the [invitation API](invitation-post.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
