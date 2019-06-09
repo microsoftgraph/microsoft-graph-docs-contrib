@@ -13,35 +13,41 @@ ms.prod: "education"
 Delete an existing assignment. Only teachers within a class can delete assignments.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)| EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
-|Delegated (personal Microsoft account) |   Not Supported. |
-|Application | Not Supported.  | 
+| Permission type                        | Permissions (from least to most privileged)             |
+| :------------------------------------- | :------------------------------------------------------ |
+| Delegated (work or school account)     | EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite |
+| Delegated (personal Microsoft account) | Not Supported.                                          |
+| Application                            | Not Supported.                                          |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/classes/<id>/assignments/<id>
+DELETE /education/classes/{id}/assignments/{id}
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Header        | Value                     |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
-
 ## Response
+
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
+
 ### Request
+
 The following is an example of the request.
 
 <!-- {
@@ -65,6 +71,20 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
+#### SDK sample code
+
+# [C#](#tab/cs)
+
+[!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+
+[!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -75,7 +95,8 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/educationassignment-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/educationassignment-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/educationassignment-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->

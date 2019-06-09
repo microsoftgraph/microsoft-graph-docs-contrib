@@ -1,7 +1,7 @@
 ---
 title: "applePushNotificationCertificate resource type"
 description: "Apple push notification certificate."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

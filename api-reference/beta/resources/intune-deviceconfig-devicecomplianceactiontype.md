@@ -1,7 +1,7 @@
 ---
 title: "deviceComplianceActionType enum type"
 description: "Scheduled Action Type Enum"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "rgbColor resource type"
 description: "Color in RGB."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

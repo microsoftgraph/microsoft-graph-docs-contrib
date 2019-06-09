@@ -1,7 +1,7 @@
 ---
 title: "List androidEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the androidEnterpriseWiFiConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [androidEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidenterprisewificonfiguration.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1054
+Content-Length: 1227
 
 {
   "value": [
@@ -83,7 +83,10 @@ Content-Length: 1054
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
       "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+      "usernameFormatString": "Username Format String value",
+      "passwordFormatString": "Password Format String value",
+      "preSharedKey": "Pre Shared Key value"
     }
   ]
 }

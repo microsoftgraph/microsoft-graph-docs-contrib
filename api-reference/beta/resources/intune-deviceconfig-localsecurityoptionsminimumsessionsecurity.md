@@ -1,7 +1,7 @@
 ---
 title: "localSecurityOptionsMinimumSessionSecurity enum type"
 description: "Possible values for LocalSecurityOptionsMinimumSessionSecurity"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

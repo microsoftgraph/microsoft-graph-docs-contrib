@@ -1,7 +1,7 @@
 ---
 title: "defenderSecurityCenterNotificationsFromAppType enum type"
 description: "Possible values for defenderSecurityCenterNotificationsFromApp"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

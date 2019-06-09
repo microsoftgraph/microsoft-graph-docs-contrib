@@ -1,7 +1,7 @@
 ---
 title: "importedWindowsAutopilotDeviceIdentityUpload resource type"
 description: "Import windows autopilot devices using upload."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

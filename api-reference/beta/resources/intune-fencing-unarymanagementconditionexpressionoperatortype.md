@@ -1,7 +1,7 @@
 ---
 title: "unaryManagementConditionExpressionOperatorType enum type"
 description: "Supported operators for unary management condition expressions"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
