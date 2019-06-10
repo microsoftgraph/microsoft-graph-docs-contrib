@@ -18,6 +18,8 @@
       href: /graph/permissions-reference?toc=./ref/toc.json
     - name: Manage app access (CSPs)
       href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+    - name: Limit mailbox access
+      href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: Use the API
     items:
     - name: Overview

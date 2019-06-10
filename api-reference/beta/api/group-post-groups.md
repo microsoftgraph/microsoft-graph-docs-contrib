@@ -19,16 +19,16 @@ This operation returns by default only a subset of the properties for each group
 
 To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
 
-> **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
+>**Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -56,9 +56,9 @@ The following table shows the properties of the [group](../resources/group.md) r
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
 
-> Note: Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
+> **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
-Since the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
+Because the **group** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the group while creating it.
 
 >**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
 

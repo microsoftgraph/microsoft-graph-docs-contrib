@@ -1,7 +1,7 @@
 ---
 title: "List deleted items"
 description: "Retrieve a list of recently deleted items from deleted items."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
