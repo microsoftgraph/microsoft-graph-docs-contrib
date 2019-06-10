@@ -8458,7 +8458,7 @@
           - name: List usage details
             href: api/reportroot-list-usercredentialusagedetails.md
           - name: Tenant registration count
-          - href: resources/userregistrationcount.md
+            href: resources/userregistrationcount.md
           - name: Usage summary
             href: resources/credentialusagesummary.md
           - name: Get usage summary
