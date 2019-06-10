@@ -8450,7 +8450,7 @@
           - name: Get registration count
             href: api/reportroot-getcredentialuserregistrationcount.md
           - name: Registration details
-            href: resources/credentialuserregistrationdetails
+            href: resources/credentialuserregistrationdetails.md
           - name: List registration details
             href: api/reportroot-list-credentialuserregistrationdetails.md
           - name: Usage details

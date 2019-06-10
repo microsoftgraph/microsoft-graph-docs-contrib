@@ -17,7 +17,7 @@ Provides the details of self-service password reset and multi-factor authenticat
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get credentialUserRegistrationDetails](../api/reportroot--list-credentialuserregistrationdetails.md) | credentialUserRegistrationDetails | Read properties and relationships of a credentialUserRegistrationDetails object. |
+| [Get credentialUserRegistrationDetails](../api/reportroot-list-credentialuserregistrationdetails.md) | credentialUserRegistrationDetails | Read properties and relationships of a credentialUserRegistrationDetails object. |
 
 ## Properties
 

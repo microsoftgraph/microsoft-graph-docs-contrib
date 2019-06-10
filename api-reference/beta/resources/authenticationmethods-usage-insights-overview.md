@@ -20,7 +20,7 @@ These reports provide information such as:
 
 ## What does this report cover
 
-- Authentication Method Registration Summary and Details ([Self-service password reset registration at](aka.ms/ssprsetup),[Combined security info registration](https://aka.ms/mysecurityinfo))
+- Authentication Method Registration Summary and Details ([Self-service password reset registration at](https://aka.ms/ssprsetup),[Combined security info registration](https://aka.ms/mysecurityinfo))
 - Authentication Method Usage Summary and Details ([Self-service password reset usage](https://aka.ms/sspr)
 
 ## What's not there
