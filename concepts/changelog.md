@@ -13,6 +13,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2019
 
+### Reports
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Addition|beta|Added new entities:<br/>[credentialUsagesSummary](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta)<br/>[credentialUserRegistrationCount](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta)<br/>[credentialUserRegistrationDetails](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta)<br/>[userCredentialUsageDetails](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta)<br/>[userRegistrationCount](/graph/api/resources/userRegistrationCount?view=graph-rest-beta)|
+
 ### OneDrive and SharePoint APIs
 
 | **Change type** | **Version** | **Description**                          |
