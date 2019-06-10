@@ -1,7 +1,7 @@
 ---
 title: "Create deviceComplianceUserStatus"
 description: "Create a new deviceComplianceUserStatus object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -93,7 +93,6 @@ Content-Length: 336
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

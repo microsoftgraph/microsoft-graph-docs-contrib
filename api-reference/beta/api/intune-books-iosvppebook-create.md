@@ -1,7 +1,7 @@
 ---
 title: "Create iosVppEBook"
 description: "Create a new iosVppEBook object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -146,7 +146,6 @@ Content-Length: 1026
   ]
 }
 ```
-
 
 
 

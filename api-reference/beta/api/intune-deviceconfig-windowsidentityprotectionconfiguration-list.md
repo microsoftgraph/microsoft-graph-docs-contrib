@@ -1,7 +1,7 @@
 ---
 title: "List windowsIdentityProtectionConfigurations"
 description: "List properties and relationships of the windowsIdentityProtectionConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -92,7 +92,6 @@ Content-Length: 1115
   ]
 }
 ```
-
 
 
 

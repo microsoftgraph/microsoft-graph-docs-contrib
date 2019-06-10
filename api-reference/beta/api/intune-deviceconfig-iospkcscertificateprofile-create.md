@@ -1,7 +1,7 @@
 ---
 title: "Create iosPkcsCertificateProfile"
 description: "Create a new iosPkcsCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -129,7 +129,6 @@ Content-Length: 933
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
 
 
 

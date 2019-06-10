@@ -56,17 +56,37 @@ To retrieve files in the root of the drive, use the `root` relationship on the d
 ```http
 GET /me/drive/root/children
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-root-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-root-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 
 ### List children of a DriveItem with a known ID
 
 To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.
 
-<!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "list-children-files", "scopes": "files.read" } -->
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/children
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/list-children-files-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/list-children-files-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### List children of a DriveItem with a known path
 
@@ -84,7 +104,7 @@ The children collection will be composed of [driveItem][item-resource] resources
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
        "truncated": true,
-       "name": [ "list-children-root", "list-children", "list-children-from-path" ] } -->
+       "name": [ "list-children-root", "list-children-files", "list-children-from-path" ] } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -118,5 +138,11 @@ how errors are returned.
   "description": "List the children of an item.",
   "keywords": "list,children,collection",
   "section": "documentation",
-  "tocPath": "Items/List children"
+  "tocPath": "Items/List children",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/driveitem-list-children.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

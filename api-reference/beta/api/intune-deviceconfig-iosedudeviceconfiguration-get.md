@@ -1,7 +1,7 @@
 ---
 title: "Get iosEduDeviceConfiguration"
 description: "Read properties and relationships of the iosEduDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -113,7 +113,6 @@ Content-Length: 2189
   }
 }
 ```
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementSettingDefinition"
 description: "Update the properties of a deviceManagementSettingDefinition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -137,7 +137,6 @@ Content-Length: 777
   ]
 }
 ```
-
 
 
 

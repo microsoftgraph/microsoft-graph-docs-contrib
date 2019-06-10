@@ -1,7 +1,7 @@
 ---
 title: "Get windows10ImportedPFXCertificateProfile"
 description: "Read properties and relationships of the windows10ImportedPFXCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -87,7 +87,6 @@ Content-Length: 813
   }
 }
 ```
-
 
 
 

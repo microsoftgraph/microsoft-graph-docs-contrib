@@ -1,7 +1,7 @@
 ---
 title: "Get windowsPhone81TrustedRootCertificate"
 description: "Read properties and relationships of the windowsPhone81TrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -80,7 +80,6 @@ Content-Length: 591
   }
 }
 ```
-
 
 
 

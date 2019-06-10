@@ -1,7 +1,7 @@
 ---
 title: "Create windows81SCEPCertificateProfile"
 description: "Create a new windows81SCEPCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -175,7 +175,6 @@ Content-Length: 1423
   "certificateStore": "machine"
 }
 ```
-
 
 
 

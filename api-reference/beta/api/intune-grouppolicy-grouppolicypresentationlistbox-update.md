@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyPresentationListBox"
 description: "Update the properties of a groupPolicyPresentationListBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -87,7 +87,6 @@ Content-Length: 238
   "explicitValue": true
 }
 ```
-
 
 
 

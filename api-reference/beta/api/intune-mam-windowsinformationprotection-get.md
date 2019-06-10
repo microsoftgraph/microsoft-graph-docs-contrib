@@ -1,7 +1,7 @@
 ---
 title: "Get windowsInformationProtection"
 description: "Read properties and relationships of the windowsInformationProtection object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -197,7 +197,6 @@ Content-Length: 4405
   }
 }
 ```
-
 
 
 

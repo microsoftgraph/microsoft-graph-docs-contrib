@@ -1,7 +1,7 @@
 ---
 title: "Update iosVppApp"
 description: "Update the properties of a iosVppApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -223,7 +223,6 @@ Content-Length: 2171
   ]
 }
 ```
-
 
 
 

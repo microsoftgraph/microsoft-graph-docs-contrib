@@ -1,7 +1,7 @@
 ---
 title: "Create advancedThreatProtectionOnboardingDeviceSettingState"
 description: "Create a new advancedThreatProtectionOnboardingDeviceSettingState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -114,7 +114,6 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

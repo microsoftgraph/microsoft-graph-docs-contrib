@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Delete mailFolder
 
-Delete the specified [mailFolder](../resources/mailfolder.md).
+Delete the specified [mailFolder](../resources/mailfolder.md). The folder can be a [mailSearchFolder](../resources/mailsearchfolder.md).
 
 You can specify a mail folder by its folder ID, or by its [well-known folder name](../resources/mailfolder.md), if one exists. 
 
@@ -60,6 +60,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/delete_mailfolder-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_mailfolder-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -68,5 +78,9 @@ HTTP/1.1 204 No Content
   "description": "Delete mailFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/mailfolder-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/mailfolder-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
