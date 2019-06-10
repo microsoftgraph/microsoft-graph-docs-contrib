@@ -8443,6 +8443,8 @@
             href: api/applicationsignindetailedsummary-get.md
         - name: Registration and usage
           items:
+          - name: Overview
+            href: resources/authenticationmethods-usage-insights-overview.md
           - name: Registration count
             href: resources/credentialuserregistrationcount.md
           - name: Get registration count
