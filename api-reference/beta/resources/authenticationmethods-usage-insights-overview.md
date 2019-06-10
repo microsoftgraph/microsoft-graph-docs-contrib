@@ -18,17 +18,17 @@ These reports provide information such as:
 - What kind of errors end users are running into.
 - What kind of campaign you need to run to help your end users adopt these capabilities.
 
-## What does this report cover
+## Documentated APIs
 
 - Authentication Method Registration Summary and Details ([Self-service password reset registration at](https://aka.ms/ssprsetup),[Combined security info registration](https://aka.ms/mysecurityinfo))
 - Authentication Method Usage Summary and Details ([Self-service password reset usage](https://aka.ms/sspr)
 
-## What's not there
+## APIs not documented
 
 - [Authentication Method Registration Details for MFA](https://aka.ms/mfasetup)
 - MFA Usage (both Per-user and Conditional Access-based MFA)
 
-## What can I do with APIs in Microsoft Graph
+## API actions
 
 Here are popular requests for working with this API:
 
@@ -39,7 +39,7 @@ Here are popular requests for working with this API:
 | GET Credentials registration details | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialuserregistrationdetails&version=beta) | Get the user details for self-service password reset and MFA registration activities. |
 | GET Credentials usage details | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/usercredentialusagedetails&version=beta) | Get user details for all self-service password reset activities. |
 
-## What licenses do I need
+## Licenses
 
 Usage reports are available for licensed features that leverage self-service password reset and MFA in your tenant.
 

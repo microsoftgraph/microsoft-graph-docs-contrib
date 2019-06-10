@@ -17,7 +17,7 @@ Provides the summary of self-service password reset and multi-factor authenticat
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get credentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount] | Read properties and relationships of a credentialUserRegistrationCount object. |
+| [Get credentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount | Read properties and relationships of a credentialUserRegistrationCount object. |
 
 ## Properties
 
@@ -25,7 +25,7 @@ Provides the summary of self-service password reset and multi-factor authenticat
 |:-------------|:------------|:------------|
 | id | String | Read-only. |
 | totalUserCount | Int64 | Provides the total user count in the tenant. |
-| userRegistrationCounts | Provides a [userRegistrationCount](userregistrationcount.md) collection. |
+| userRegistrationCounts | Collection | Provides a [userRegistrationCount](userregistrationcount.md) collection. |
 
 ## Relationships
 

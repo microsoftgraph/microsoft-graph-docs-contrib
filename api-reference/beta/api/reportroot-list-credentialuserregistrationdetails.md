@@ -43,7 +43,7 @@ This method supports some of the OData query parameters to help customize the re
 | isRegistered | Filter for users who have registered for SSPR. For example: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Supported operators: `eq`, `orderby`. |
 | isEnabled | Filter for users who have been enabled for SPPR. For example: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Supported operators: `eq`, `orderby`. |
 | isCapable | Filter for users who are ready to perform password reset or MFA. For example: `/reports/userCredentialUsageDetails?$filter=isCapable eq true`. Supported operators: `eq`, `orderby` |
-| isMfaRegistered | Filter for users who are registered for MFA. | For example: `/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`. Supported operators: `eq`, `orderby`. |
+| isMfaRegistered | Filter for users who are registered for MFA. For example: `/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`. Supported operators: `eq`, `orderby`. |
 
 ## Request headers
 
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 The following is an example of the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",

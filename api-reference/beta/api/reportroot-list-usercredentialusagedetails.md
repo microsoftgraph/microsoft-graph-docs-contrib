@@ -37,7 +37,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name | Description |
 |:---- |:----------- |
-| period | Filter using the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')` | Supported periods: `D1`, `D7`, `D30`. Period is case insensitive. |
+| period | Filter using the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, `D30`. Period is case insensitive. |
 | feature | Filter by the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30') ?$filter=feature eq 'registration'`. Supported operators: `eq`. |
 
 ## Request headers
