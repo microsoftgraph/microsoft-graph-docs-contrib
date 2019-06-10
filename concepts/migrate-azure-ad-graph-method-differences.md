@@ -16,7 +16,7 @@ A handful of Azure AD Graph methods have also changed.  If a method is not shown
 |---|---|---|
 | getObjectsByObjectId | beta&nbsp;-&nbsp;directory/getByIds <br> v1.0 - directory/getByIds | |
 | restore | beta&nbsp;-&nbsp;restore&nbsp;(applications,&nbsp;users,&nbsp;and&nbsp;groups)<br> v1.0&nbsp;-&nbsp;restore&nbsp;(users&nbsp;and&nbsp;groups) | You can also view deleted applications, users, and groups and permanently delete them. |
-| invalidateAllRefreshTokens | beta - invalidateSigninSessions <br> v1.0 - _Not yet available_ | |
+| invalidateAllRefreshTokens | beta - revokeSignInSessions <br> v1.0 - revokeSignInSessions | |
 | getAvailableExtensionProperties | beta - _Not planned_ <br> v1.0 - _Not planned_ | Not currently planned; may be revisited based on demand. |
 | isMemberOf | beta - _Not planned_ <br> v1.0 - _Not planned_ | Use checkMemberGroups instead. |
 | addKey | beta - _Not yet available_ <br> v1.0 - _Not yet available_ | Planned, but not yet available. | 
