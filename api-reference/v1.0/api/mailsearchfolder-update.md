@@ -1,14 +1,12 @@
 ---
 title: "Update mailSearchFolder"
-description: "Update the writable properties of mailSearchFolder object."
+description: "Update the writable properties of a mailSearchFolder object."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
 ---
 
 # Update mailSearchFolder
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the writable properties of a [mailSearchFolder](../resources/mailsearchfolder.md) object.
 
@@ -56,7 +54,7 @@ The following is an example request that updates the **filterQuery** property of
   "name": "update_mailsearchfolder"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
+PATCH https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 Content-type: application/json
 
 {
@@ -94,16 +92,6 @@ Content-type: application/json
   "filterQuery": "contains(subject, 'Analytics')"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/update_mailsearchfolder-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -115,8 +103,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/mailsearchfolder-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+    
   ]
 }
 -->
