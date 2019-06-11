@@ -3360,6 +3360,19 @@
           href: api/attachment-get.md
         - name: Delete attachment
           href: api/attachment-delete.md
+      - name: Categories
+        href: resources/outlookcategory.md
+        items:
+        - name: List categories
+          href: api/outlookuser-list-mastercategories.md
+        - name: Create category
+          href: api/outlookuser-post-mastercategories.md
+        - name: Get category
+          href: api/outlookcategory-get.md
+        - name: Update category
+          href: api/outlookcategory-update.md
+        - name: Delete category
+          href: api/outlookcategory-delete.md
       - name: Focused Inbox
         href: resources/manage-focused-inbox.md
         items:
@@ -3400,19 +3413,23 @@
           href: api/mailfolder-list-childfolders.md
         - name: Create mail child folder
           href: api/mailfolder-post-childfolders.md
-      - name: Categories
-        href: resources/outlookcategory.md
+      - name: Mail search folder
+        href: resources/mailsearchfolder.md
         items:
-        - name: List categories
-          href: api/outlookuser-list-mastercategories.md
-        - name: Create category
-          href: api/outlookuser-post-mastercategories.md
-        - name: Get category
-          href: api/outlookcategory-get.md
-        - name: Update category
-          href: api/outlookcategory-update.md
-        - name: Delete category
-          href: api/outlookcategory-delete.md
+        - name: List mail search folders
+          href: api/user-list-mailfolders.md
+        - name: Create mail search folder
+          href: api/mailsearchfolder-post.md
+        - name: Get mail search folder
+          href: api/mailfolder-get.md
+        - name: Update mail search folder
+          href: api/mailsearchfolder-update.md
+        - name: Delete mail search folder
+          href: api/mailfolder-delete.md
+        - name: List messages in folder
+          href: api/mailfolder-list-messages.md
+        - name: List child folders
+          href: api/mailfolder-list-childfolders.md
       - name: Rules
         href: resources/messagerule.md
         items:

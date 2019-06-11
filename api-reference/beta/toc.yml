@@ -7012,6 +7012,8 @@
           href: api/educationschool-post-users.md
         - name: Remove user
           href: api/educationschool-delete-users.md
+        - name: Get delta
+          href: api/educationschool-delta.md          
       - name: Classes
         href: resources/educationclass.md
         items:
@@ -7047,6 +7049,8 @@
           href: api/educationclass-list-categories.md
         - name: Create category
           href: api/educationclass-post-category.md
+        - name: Get delta
+          href: api/educationclass-delta.md          
       - name: Users
         href: resources/educationuser.md
         items:
@@ -7058,6 +7062,8 @@
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+        - name: Get delta
+          href: api/educationuser-delta.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
