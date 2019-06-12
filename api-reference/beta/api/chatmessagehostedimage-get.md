@@ -1,7 +1,7 @@
 ---
 title: "Get chatMessageHostedImage"
 description: "Retrieve an image inside a chatMessage."
-author: "nkramer"
+author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---

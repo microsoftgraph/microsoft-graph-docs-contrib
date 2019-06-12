@@ -65,7 +65,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/hostedImages/{id}/$value
 
 ##### Response
 
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here is shortened for readability. All the properties will be returned from an actual call.
 <!-- {

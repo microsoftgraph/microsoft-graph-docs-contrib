@@ -2,7 +2,7 @@
 title: "List chatMessageHostedImages in a chatmessage"
 description: "Retrieve the list of hosted images in a chatMessage."
 localization_priority: Priority
-author: "nkramer"
+author: "clearab"
 ms.prod: "microsoft-teams"
 ---
 
@@ -58,6 +58,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_channel_messages"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/hostedImages
 ```
