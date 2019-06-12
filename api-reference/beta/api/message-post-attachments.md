@@ -116,6 +116,10 @@ Content-length: 202
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_file_attachment_from_message-Javascript-snippets.md)]
 
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_file_attachment_from_message-Cs-snippets.md)]
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_file_attachment_from_message-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -245,6 +249,10 @@ HTTP 201 Created
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_reference_attachment_from_message-Javascript-snippets.md)]
 
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_reference_attachment_from_message-Cs-snippets.md)]
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_reference_attachment_from_message-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -260,6 +268,8 @@ HTTP 201 Created
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/message-post-attachments.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
