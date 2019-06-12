@@ -10,7 +10,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a user object.
+Update the properties of a [user](../resources/user.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
 >[!NOTE]
-> - When updating the passwordProfile property, the following permission is required: Directory.AccessAsUser.All.
-> - Updating other user's **businessPhones**, **mobilePhone** or **otherMails** is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Helpdesk Administrator, Message Center Reader and Reports Reader. More details are available in [Azure AD available roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) under *Helpdesk (Password) Administrator*.  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions.
+> - When updating the **passwordProfile** property, the following permission is required: Directory.AccessAsUser.All.
+> - Updating other users' **businessPhones**, **mobilePhone**, or **otherMails** property is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Helpdesk Administrator, Message Center Reader, and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD available roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  This is the case for apps granted either the User.ReadWrite.All or Directory.ReadWrite.All delegated or application permissions.
 
 
 ## HTTP request
@@ -78,7 +78,7 @@ In the request body, supply the values for relevant fields that should be update
 |userPrincipalName|String|The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant’s collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). Supports $filter and $orderby.
 |userType|String|A string value that can be used to classify user types in your directory, such as “Member” and “Guest”.          |
 
-Since the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
+Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **user** instance.
 
 ## Response
