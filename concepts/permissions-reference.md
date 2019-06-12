@@ -1157,7 +1157,7 @@ For work or school accounts, the full profile includes all of the declared prope
 
 With the _User.ReadWrite.All_ application permission, the app can update all of the declared properties of work or school accounts except for password.
 
-With the _User.ReadWrite.All_ delegated or application permission, updating another user's **businessPhones**, **mobilePhone** or **otherMails** is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Helpdesk Administrator, Message Center Reader and Reports Reader. More details are available in [Azure AD available roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) under *Helpdesk (Password) Administrator*.
+With the _User.ReadWrite.All_ delegated or application permission, updating another user's **businessPhones**, **mobilePhone** or **otherMails** is only allowed on users who are non-administrators or assigned one of the following roles: Directory Readers, Guest Inviter, Helpdesk Administrator, Message Center Reader and Reports Reader. For more details, see Helpdesk (Password) Administrator in [Azure AD available roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 To read or write direct reports (`directReports`) or the manager (`manager`) of a work or school account, the app must have either _User.Read.All_ (read only) or _User.ReadWrite.All_.
 
