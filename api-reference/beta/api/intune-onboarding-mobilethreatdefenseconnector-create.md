@@ -1,7 +1,7 @@
 ---
 title: "Create mobileThreatDefenseConnector"
 description: "Create a new mobileThreatDefenseConnector object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -117,7 +117,6 @@ Content-Length: 671
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
 
 
 

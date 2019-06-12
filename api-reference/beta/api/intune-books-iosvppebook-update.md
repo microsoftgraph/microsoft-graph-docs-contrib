@@ -1,7 +1,7 @@
 ---
 title: "Update iosVppEBook"
 description: "Update the properties of a iosVppEBook object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -146,7 +146,6 @@ Content-Length: 1026
   ]
 }
 ```
-
 
 
 

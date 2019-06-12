@@ -1,7 +1,7 @@
 ---
 title: "Create windows10NetworkBoundaryConfiguration"
 description: "Create a new windows10NetworkBoundaryConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -165,7 +165,6 @@ Content-Length: 1416
   }
 }
 ```
-
 
 
 

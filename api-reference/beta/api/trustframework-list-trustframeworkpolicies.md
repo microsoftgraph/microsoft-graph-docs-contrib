@@ -13,7 +13,7 @@ Retrieve a list of [trustFrameworkPolicies](../resources/trustframeworkpolicy.md
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,7 +55,7 @@ The following example retrieves all **trustFrameworkPolicies**.
 
 <!-- {
   "blockType": "request",
-  "name": "get__trustFrameworks"
+  "name": "get_trustFrameworks"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/trustFramework/policies
@@ -66,12 +66,13 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.trustFramework.policy",
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy",
   "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "value": [
         {
@@ -86,6 +87,16 @@ Content-type: application/json
     ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_trustFrameworks-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_trustFrameworks-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -94,5 +105,9 @@ Content-type: application/json
   "description": "List trustFrameworkPolicy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/trustframework-list-trustframeworkpolicies.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/trustframework-list-trustframeworkpolicies.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->

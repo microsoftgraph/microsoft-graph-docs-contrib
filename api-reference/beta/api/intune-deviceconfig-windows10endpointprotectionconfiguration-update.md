@@ -1,7 +1,7 @@
 ---
 title: "Update windows10EndpointProtectionConfiguration"
 description: "Update the properties of a windows10EndpointProtectionConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -1566,7 +1566,6 @@ Content-Length: 27813
   }
 }
 ```
-
 
 
 

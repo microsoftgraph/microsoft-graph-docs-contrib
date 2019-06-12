@@ -3,8 +3,11 @@
   - name: Overview of Microsoft Graph
     href: /graph/overview?toc=./toc.json
   - name: Get auth tokens
-    href: /graph/auth-overview?toc=./ref/toc.json
     items:
+    - name: Overview
+      href: /graph/auth/index?toc=./ref/toc.json
+    - name: Basics
+      href: /graph/auth/auth-concepts?toc=./ref/toc.json
     - name: Register your app
       href: /graph/auth-register-app-v2?toc=./ref/toc.json
     - name: Get access on behalf of a user
@@ -15,9 +18,12 @@
       href: /graph/permissions-reference?toc=./ref/toc.json
     - name: Manage app access (CSPs)
       href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+    - name: Limit mailbox access
+      href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: Use the API
-    href: /graph/use-the-api?toc=./ref/toc.json
     items:
+    - name: Overview
+      href: /graph/use-the-api?toc=./ref/toc.json
     - name: Paging
       href: /graph/paging?toc=./ref/toc.json
     - name: Use query parameters
@@ -27,12 +33,19 @@
     - name: Throttling
       href: /graph/throttling?toc=./ref/toc.json
     - name: Change notifications
-      href: /graph/webhooks?toc=./ref/toc.json
       displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+      items:
+      - name: Overview
+        href: /graph/webhooks?toc=./ref/toc.json
+      - name: Tutorial
+        href: /graph/tutorials/change-notifications
+      - name: Missing Outlook notifications (preview)
+        href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
     - name: Track changes
-      href: /graph/delta-query-overview?toc=./ref/toc.json
       displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
+      - name: Overview
+        href: /graph/delta-query-overview?toc=./ref/toc.json
       - name: Get changes to events (example)
         href: /graph/delta-query-events?toc=./ref/toc.json
       - name: Get changes to groups (example)
@@ -42,13 +55,60 @@
       - name: Get changes to users (example)
         href: /graph/delta-query-users?toc=./ref/toc.json
     - name: Add custom data
-      href: /graph/extensibility-overview?toc=./ref/toc.json
       displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
       items:
+      - name: Overview
+        href: /graph/extensibility-overview?toc=./ref/toc.json
       - name: Use open extensions (example)
         href: /graph/extensibility-open-users?toc=./ref/toc.json
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?toc=./ref/toc.json
+  - name: Migrate
+    expanded: false
+    items:
+    - name: Azure AD Graph
+      displayname: Migration, Azure AD Graph
+      items:
+      - name: Overview
+        href: /graph/migrate-azure-ad-graph-overview?toc=./ref/toc.json
+      - name: Checklist to migrate apps
+        href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
+      - name: "1: Review differences"
+        expanded: true
+        items:
+        - name: Requests
+          href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
+        - name: Service features
+          href: /graph/migrate-azure-ad-graph-feature-differences?toc=./ref/toc.json
+        - name: Resource types
+          href: /graph/migrate-azure-ad-graph-resource-differences?toc=./ref/toc.json
+        - name: Entity properties
+          href: /graph/migrate-azure-ad-graph-property-differences?toc=./ref/toc.json
+        - name: Methods
+          href: /graph/migrate-azure-ad-graph-method-differences?toc=./ref/toc.json
+      - name: "2: Examine API use"
+        href: /graph/migrate-azure-ad-graph-audit-api-use?toc=./ref/toc.json
+      - name: "3: Review app details"
+        expanded: true
+        items:
+        - name: App registration
+          href: /graph/migrate-azure-ad-graph-app-registration?toc=./ref/toc.json
+        - name: Auth libraries
+          href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
+        - name: .NET client libraries
+          href: /graph/migrate-azure-ad-graph-client-libraries?toc=./ref/toc.json
+      - name: "4: Deploy, test, and extend"
+        href: /graph/migrate-azure-ad-graph-deploy-test-extend?toc=./ref/toc.json
+  - name: Use SDKs
+    items:
+      - name: Overview
+        href: /graph/sdks/sdks-overview?toc=./ref/toc.json
+      - name: Install the SDK
+        href: /graph/sdks/sdk-installation?toc=./ref/toc.json
+      - name: Create a client
+        href: /graph/sdks/create-client?toc=./ref/toc.json
+      - name: Choose an authentication provider
+        href: /graph/sdks/choose-authentication-providers?toc=./ref/toc.json
   - name: Resources
     items:
     - name: Best practices
@@ -60,12 +120,14 @@
     - name: Errors
       href: /graph/errors?toc=./ref/toc.json
   - name: Reference
-    href: overview.md
     expanded: true
     items:
+    - name: Overview
+      href: overview.md
     - name: Users
-      href: resources/users.md
       items:
+      - name: Overview
+        href: resources/users.md
       - name: User
         href: resources/user.md
         items:
@@ -158,7 +220,7 @@
         - name: List member of
           href: api/user-list-memberof.md
       - name: Insights
-        href: resources/insights.md
+        href: resources/officegraphinsights.md
         items:
         - name: List trending
           href: api/insights-list-trending.md
@@ -260,8 +322,9 @@
         - name: Update settings
           href: api/user-update-settings.md
     - name: Groups
-      href: resources/groups-overview.md
       items:
+      - name: Overview
+        href: resources/groups-overview.md
       - name: Group
         href: resources/group.md
         items:
@@ -655,9 +718,10 @@
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Calls and online meetings
-      href: resources/calls-api-overview.md
       displayName: Microsoft Teams
       items:
+      - name: Overview
+        href: resources/calls-api-overview.md
       - name: Call
         href: resources/call.md
         items:
@@ -726,9 +790,10 @@
         - name: Get online meeting
           href: api/onlinemeeting-get.md
     - name: Cross-device experiences
-      href: resources/project-rome-overview.md
       displayName: Project Rome
       items:
+      - name: Overview
+        href: resources/project-rome-overview.md
       - name: List user devices
         href: api/user-list-devices.md
       - name: Send device command
@@ -758,18 +823,11 @@
             href: api/projectrome-put-historyitem.md
           - name: Delete a history item
             href: api/projectrome-delete-historyitem.md
-      - name: Notifications
-        href: resources/notifications-api-overview.md
-        items:
-        - name: Notification
-          href: resources/projectrome-notification.md
-          items:
-          - name: Create and send a notification
-            href: api/projectrome-notification-post.md
     - name: Customer booking
-      href: resources/booking-api-overview.md
       displayName: Bookings, Microsoft Bookings
       items:
+      - name: Overview
+        href: resources/booking-api-overview.md
       - name: Booking business
         href: resources/bookingbusiness.md
         items:
@@ -851,9 +909,10 @@
         - name: Delete
           href: api/bookingstaffmember-delete.md
     - name: Devices and apps
-      href: resources/intune-graph-overview.md
       displayName: Intune
       items:
+      - name: Overview
+        href: resources/intune-graph-overview.md
       - name: App management
         href: resources/intune-app-conceptual.md
         items:
@@ -1608,6 +1667,8 @@
             href: api/intune-apps-mobileappdependency-delete.md
           - name: Update
             href: api/intune-apps-mobileappdependency-update.md
+        - name: Mobile app dependency type
+          href: resources/intune-apps-mobileappdependencytype.md
         - name: Mobile app install status
           href: resources/intune-apps-mobileappinstallstatus.md
           items:
@@ -3307,6 +3368,17 @@
             href: api/intune-deviceconfig-deviceconfigurationuserstatus-update.md
         - name: Device guard local system authority credential guard type
           href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
+        - name: Device management derived credential issuer
+          href: resources/intune-deviceconfig-devicemanagementderivedcredentialissuer.md
+        - name: Device management derived credential notification type
+          href: resources/intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md
+        - name: Device management derived credential settings
+          href: resources/intune-deviceconfig-devicemanagementderivedcredentialsettings.md
+          items:
+          - name: Get
+            href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-get.md
+          - name: Update
+            href: api/intune-deviceconfig-devicemanagementderivedcredentialsettings-update.md
         - name: Device management settings
           href: resources/intune-deviceconfig-devicemanagementsettings.md
         - name: Device management user rights local user or group
@@ -3377,6 +3449,8 @@
             href: api/intune-deviceconfig-editionupgradeconfiguration-update.md
         - name: Edition upgrade license type
           href: resources/intune-deviceconfig-editionupgradelicensetype.md
+        - name: Email certificate type
+          href: resources/intune-deviceconfig-emailcertificatetype.md
         - name: Email sync duration
           href: resources/intune-deviceconfig-emailsyncduration.md
         - name: Email sync schedule
@@ -3727,6 +3801,19 @@
             href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-ioscustomconfiguration-update.md
+        - name: iOS derived credential authentication configuration
+          href: resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-update.md
         - name: iOS device features configuration
           href: resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md
           items:
@@ -5314,6 +5401,8 @@
             href: api/intune-deviceintent-devicemanagementintent-update.md
           - name: updateSettings action
             href: api/intune-deviceintent-devicemanagementintent-updatesettings.md
+          - name: migrateToTemplate action
+            href: api/intune-deviceintent-devicemanagementintent-migratetotemplate.md
           - name: assign action
             href: api/intune-deviceintent-devicemanagementintent-assign.md
         - name: Device management intent assignment
@@ -5689,6 +5778,8 @@
             href: api/intune-devices-manageddevice-playlostmodesound.md
           - name: setDeviceName action
             href: api/intune-devices-manageddevice-setdevicename.md
+          - name: rotateFileVaultKey action
+            href: api/intune-devices-manageddevice-rotatefilevaultkey.md
           - name: retire action
             href: api/intune-devices-manageddevice-retire.md
           - name: wipe action
@@ -5907,6 +5998,19 @@
           href: resources/intune-devices-revokeapplevpplicensesactionresult.md
         - name: Run schedule
           href: resources/intune-devices-runschedule.md
+        - name: Security baseline category state summary
+          href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
+          items:
+          - name: List
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-list.md
+          - name: Get
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-get.md
+          - name: Create
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-create.md
+          - name: Delete
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-delete.md
+          - name: Update
+            href: api/intune-deviceintent-securitybaselinecategorystatesummary-update.md
         - name: Security baseline compliance state
           href: resources/intune-deviceintent-securitybaselinecompliancestate.md
         - name: Security baseline device state
@@ -5922,32 +6026,6 @@
             href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
           - name: Update
             href: api/intune-deviceintent-securitybaselinedevicestate-update.md
-        - name: Security baseline setting state
-          href: resources/intune-deviceintent-securitybaselinesettingstate.md
-          items:
-          - name: List
-            href: api/intune-deviceintent-securitybaselinesettingstate-list.md
-          - name: Get
-            href: api/intune-deviceintent-securitybaselinesettingstate-get.md
-          - name: Create
-            href: api/intune-deviceintent-securitybaselinesettingstate-create.md
-          - name: Delete
-            href: api/intune-deviceintent-securitybaselinesettingstate-delete.md
-          - name: Update
-            href: api/intune-deviceintent-securitybaselinesettingstate-update.md
-        - name: Security baseline state
-          href: resources/intune-deviceintent-securitybaselinestate.md
-          items:
-          - name: List
-            href: api/intune-deviceintent-securitybaselinestate-list.md
-          - name: Get
-            href: api/intune-deviceintent-securitybaselinestate-get.md
-          - name: Create
-            href: api/intune-deviceintent-securitybaselinestate-create.md
-          - name: Delete
-            href: api/intune-deviceintent-securitybaselinestate-delete.md
-          - name: Update
-            href: api/intune-deviceintent-securitybaselinestate-update.md
         - name: Security baseline state summary
           href: resources/intune-deviceintent-securitybaselinestatesummary.md
           items:
@@ -6906,8 +6984,9 @@
           - name: Update
             href: api/intune-tem-telecomexpensemanagementpartner-update.md
     - name: Education
-      href: resources/education-overview.md
       items:
+      - name: Overview
+        href: resources/education-overview.md
       - name: Schools
         href: resources/educationschool.md
         items:
@@ -6933,6 +7012,8 @@
           href: api/educationschool-post-users.md
         - name: Remove user
           href: api/educationschool-delete-users.md
+        - name: Get delta
+          href: api/educationschool-delta.md          
       - name: Classes
         href: resources/educationclass.md
         items:
@@ -6968,6 +7049,8 @@
           href: api/educationclass-list-categories.md
         - name: Create category
           href: api/educationclass-post-category.md
+        - name: Get delta
+          href: api/educationclass-delta.md          
       - name: Users
         href: resources/educationuser.md
         items:
@@ -6979,6 +7062,8 @@
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+        - name: Get delta
+          href: api/educationuser-delta.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -7076,9 +7161,10 @@
         - name: Get sync errors
           href: api/educationsynchronizationerrors-get.md
     - name: Files
-      href: resources/onedrive.md
       displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
       items:
+      - name: Overview
+        href: resources/onedrive.md
       - name: Drives
         href: resources/drive.md
         items:
@@ -7158,10 +7244,11 @@
           href: api/permission-update.md
         - name: Delete permission
           href: api/permission-delete.md
-    - name: Financials
-      href: resources/dynamics-graph-reference.md
+    - name: Financials (preview)
       displayname: Dynamics, Dynamics 365 Business Central
       items:
+      - name: Overview
+        href: resources/dynamics-graph-reference.md
       - name: Account
         href: resources/dynamics-account.md
         items:
@@ -7393,9 +7480,10 @@
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
     - name: Identity and access
-      href: resources/azure-ad-overview.md
       displayName: Azure AD, Microsoft identity platform
       items:
+      - name: Overview
+        href: resources/azure-ad-overview.md
       - name: Access reviews
         href: resources/accessreviews-root.md
         items:
@@ -7541,7 +7629,7 @@
         href: resources/datapolicyoperation.md
         items:
         - name: Get data policy operation
-          href: api/datapolicyoperation-get.md  
+          href: api/datapolicyoperation-get.md
       - name: Deleted items
         href: resources/directory.md
         items:
@@ -7686,30 +7774,19 @@
             href: api/unfamiliarlocationriskevent-list.md
           - name: Get unfamiliarLocationRiskEvent
             href: api/unfamiliarlocationriskevent-get.md
-        - name: Risky users
+        - name: Risky user
           href: resources/riskyuser.md
           items:
-          - name: List
+          - name: List risky users
             href: api/riskyusers-list.md
-          - name: Get
+          - name: Get risky user
             href: api/riskyusers-get.md
+          - name: List history
+            href: api/riskyuser-list-history.md
           - name: Confirm compromised
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
-      - name: Trust Framework policy
-        href: resources/trustframeworkpolicy.md
-        items:
-        - name: List
-          href: api/trustframework-list-trustframeworkpolicies.md
-        - name: Create
-          href: api/trustframework-post-trustframeworkpolicy.md
-        - name: Get 
-          href: api/trustframeworkpolicy-get.md
-        - name: Upate
-          href: api/trustframework-put-trustframeworkpolicy.md
-        - name: Delete
-          href: api/trustframeworkpolicy-delete.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
@@ -7719,7 +7796,7 @@
           href: api/identityprovider-post-identityproviders.md
         - name: Get identity provider
           href: api/identityprovider-get.md
-        - name: Upate identity provider
+        - name: Update identity provider
           href: api/identityprovider-update.md
         - name: Delete identity provider
           href: api/identityprovider-delete.md
@@ -7786,7 +7863,7 @@
           href: api/policy-post.md
         - name: Get policy
           href: api/policy-get.md
-        - name: Upate policy
+        - name: Update policy
           href: api/policy-update.md
         - name: Delete policy
           href: api/policy-delete.md
@@ -7797,116 +7874,125 @@
         - name: List applied to applications
           href: api/policy-list-appliesto.md
       - name: Privileged Identity Management
-        href: resources/privilegedidentitymanagement-root.md
         items:
-        - name: Privileged role
-          href: resources/privilegedrole.md
+        - name: Privileged Identity Management
+          href: resources/privilegedidentitymanagement-root.md
+        - name: Azure AD
           items:
-          - name: List privileged roles
-            href: api/privilegedrole-list.md
-          - name: Get privileged role
-            href: api/privilegedrole-get.md
-          - name: List role assignments
-            href: api/privilegedrole-list-assignments.md
-          - name: Self role activate
-            href: api/privilegedrole-selfactivate.md
-          - name: Self role deactivate
-            href: api/privilegedrole-selfdeactivate.md
-          - name: Get role settings
-            href: api/privilegedrolesettings-get.md
-          - name: Update role settings
-            href: api/privilegedrolesettings-update.md
-          - name: Get role summary
-            href: api/privilegedrolesummary-get.md
-        - name: Privileged role assignment
-          href: resources/privilegedroleassignment.md
+          - name: Azure AD
+            href: resources/privilegedidentitymanagement-directory.md
+          - name: Privileged role
+            href: resources/privilegedrole.md
+            items:
+            - name: List privileged roles
+              href: api/privilegedrole-list.md
+            - name: Get privileged role
+              href: api/privilegedrole-get.md
+            - name: List role assignments
+              href: api/privilegedrole-list-assignments.md
+            - name: Self role activate
+              href: api/privilegedrole-selfactivate.md
+            - name: Self role deactivate
+              href: api/privilegedrole-selfdeactivate.md
+            - name: Get role settings
+              href: api/privilegedrolesettings-get.md
+            - name: Update role settings
+              href: api/privilegedrolesettings-update.md
+            - name: Get role summary
+              href: api/privilegedrolesummary-get.md
+          - name: Privileged role assignment
+            href: resources/privilegedroleassignment.md
+            items:
+            - name: List role assignments
+              href: api/privilegedroleassignment-list.md
+            - name: Get role assignment
+              href: api/privilegedroleassignment-get.md
+            - name: Create role assignments
+              href: api/privilegedroleassignment-post-privilegedroleassignments.md
+            - name: Delete role assignment
+              href: api/privilegedroleassignment-delete.md
+            - name: Get my role assignments
+              href: api/privilegedroleassignment-my.md
+            - name: Make eligible role assignment
+              href: api/privilegedroleassignment-makeeligible.md
+            - name: Make permanent role assignment
+              href: api/privilegedroleassignment_makepermanent.md
+          - name: Privileged role assignment request
+            href: resources/privilegedroleassignmentrequest.md
+            items:
+            - name: List role assignments
+              href: api/privilegedroleassignmentrequest-list.md
+            - name: Create role assignments
+              href: api/privilegedroleassignmentrequest-post.md
+            - name: Cancel role assignment
+              href: api/privilegedroleassignmentrequest-cancel.md
+            - name: Get my role assignments
+              href: api/privilegedroleassignmentrequest-my.md
+          - name: Privileged approval
+            href: resources/privilegedapproval.md
+            items:
+            - name: List privileged approvals
+              href: api/privilegedapproval-list.md
+            - name: Get privileged approval
+              href: api/privilegedapproval-get.md
+            - name: Update role assignment
+              href: api/privilegedapproval-update.md
+          - name: Audit event
+            href: resources/privilegedoperationevent.md
+            items:
+            - name: List audit events
+              href: api/privilegedoperationevent-list.md
+        - name: Azure resources
           items:
-          - name: List role assignments
-            href: api/privilegedroleassignment-list.md
-          - name: Get role assignment
-            href: api/privilegedroleassignment-get.md
-          - name: Create role assignments
-            href: api/privilegedroleassignment-post-privilegedroleassignments.md
-          - name: Delete role assignment
-            href: api/privilegedroleassignment-delete.md
-          - name: Get my role assignments
-            href: api/privilegedroleassignment-my.md
-          - name: Make eligible role assignment
-            href: api/privilegedroleassignment-makeeligible.md
-          - name: Make permanent role assignment
-            href: api/privilegedroleassignment_makepermanent.md
-        - name: Privileged role assignment request
-          href: resources/privilegedroleassignmentrequest.md
-          items:
-          - name: List role assignments
-            href: api/privilegedroleassignmentrequest-list.md
-          - name: Create role assignments
-            href: api/privilegedroleassignmentrequest-post.md
-          - name: Cancel role assignment
-            href: api/privilegedroleassignmentrequest-cancel.md
-          - name: Get my role assignments
-            href: api/privilegedroleassignmentrequest-my.md
-        - name: Privileged approval
-          href: resources/privilegedapproval.md
-          items:
-          - name: List privileged approvals
-            href: api/privilegedapproval-list.md
-          - name: Get privileged approval
-            href: api/privilegedapproval-get.md
-          - name: Update role assignment
-            href: api/privilegedapproval-update.md
-        - name: Audit event
-          href: resources/privilegedoperationevent.md
-          items:
-          - name: List audit events
-            href: api/privilegedoperationevent-list.md
-        - name: Managed resources
-          href: resources/governanceresource.md
-          items:
-          - name: List
-            href: api/governanceresource-list.md
-          - name: Get
-            href: api/governanceresource-get.md
-          - name: Register
-            href: api/governanceresource-register.md
-        - name: Role definitions
-          href: resources/governanceroledefinition.md
-          items:
-          - name: List
-            href: api/governanceroledefinition-list.md
-          - name: Get
-            href: api/governanceroledefinition-get.md
-        - name: Role settings
-          href: resources/governancerolesetting.md
-          items:
-          - name: List
-            href: api/governancerolesetting-list.md
-          - name: Get
-            href: api/governancerolesetting-get.md
-          - name: Update
-            href: api/governancerolesetting-update.md
-        - name: Role assignments
-          href: resources/governanceroleassignment.md
-          items:
-          - name: List
-            href: api/governanceroleassignment-list.md
-          - name: Get
-            href: api/governanceroleassignment-get.md
-          - name: Export
-            href: api/governanceroleassignment-export.md
-        - name: Role assignment requests
-          href: resources/governanceroleassignmentrequest.md
-          items:
-          - name: List
-            href: api/governanceroleassignmentrequest-list.md
-          - name: Create
-            href: api/governanceroleassignmentrequest-post.md
-          - name: Get
-            href: api/governanceroleassignmentrequest-get.md
-          - name: Update
-            href: api/governanceroleassignmentrequest-update.md
-          - name: Cancel
-            href: api/governanceroleassignmentrequest-cancel.md
+          - name: Azure resources
+            href: resources/privilegedidentitymanagement-resources.md
+          - name: Managed resources
+            href: resources/governanceresource.md
+            items:
+            - name: List
+              href: api/governanceresource-list.md
+            - name: Get
+              href: api/governanceresource-get.md
+            - name: Register
+              href: api/governanceresource-register.md
+          - name: Role definitions
+            href: resources/governanceroledefinition.md
+            items:
+            - name: List
+              href: api/governanceroledefinition-list.md
+            - name: Get
+              href: api/governanceroledefinition-get.md
+          - name: Role settings
+            href: resources/governancerolesetting.md
+            items:
+            - name: List
+              href: api/governancerolesetting-list.md
+            - name: Get
+              href: api/governancerolesetting-get.md
+            - name: Update
+              href: api/governancerolesetting-update.md
+          - name: Role assignments
+            href: resources/governanceroleassignment.md
+            items:
+            - name: List
+              href: api/governanceroleassignment-list.md
+            - name: Get
+              href: api/governanceroleassignment-get.md
+            - name: Export
+              href: api/governanceroleassignment-export.md
+          - name: Role assignment requests
+            href: resources/governanceroleassignmentrequest.md
+            items:
+            - name: List
+              href: api/governanceroleassignmentrequest-list.md
+            - name: Create
+              href: api/governanceroleassignmentrequest-post.md
+            - name: Get
+              href: api/governanceroleassignmentrequest-get.md
+            - name: Update
+              href: api/governanceroleassignmentrequest-update.md
+            - name: Cancel
+              href: api/governanceroleassignmentrequest-cancel.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
@@ -7984,10 +8070,24 @@
           href: api/agreement-delete.md
         - name: List acceptance status
           href: api/user-list-agreementacceptances.md
+      - name: Trust Framework policy
+        href: resources/trustframeworkpolicy.md
+        items:
+        - name: List
+          href: api/trustframework-list-trustframeworkpolicies.md
+        - name: Create
+          href: api/trustframework-post-trustframeworkpolicy.md
+        - name: Get
+          href: api/trustframeworkpolicy-get.md
+        - name: Update
+          href: api/trustframework-put-trustframeworkpolicy.md
+        - name: Delete
+          href: api/trustframeworkpolicy-delete.md
     - name: Mail
-      href: resources/mail-api-overview.md
       displayName: Outlook, Outlook mail
       items:
+      - name: Overview
+        href: resources/mail-api-overview.md
       - name: Message
         href: resources/message.md
         items:
@@ -8149,9 +8249,10 @@
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Notes
-      href: resources/onenote-api-overview.md
       displayName: OneNote
       items:
+      - name: Overview
+        href: resources/onenote-api-overview.md
       - name: Notes
         href: resources/onenote.md
         items:
@@ -8191,7 +8292,7 @@
         - name: Create section group
           href: api/notebook-post-sectiongroups.md
       - name: Sections
-        href: resources/section.md
+        href: resources/onenotesection.md
         items:
         - name: List sections
           href: api/onenote-list-sections.md
@@ -8221,7 +8322,7 @@
         - name: Create section
           href: api/sectiongroup-post-sections.md
       - name: Pages
-        href: resources/page.md
+        href: resources/onenotepage.md
         items:
         - name: List pages
           href: api/onenote-list-pages.md
@@ -8236,10 +8337,18 @@
         - name: Copy to section
           href: api/page-copytosection.md
       - name: Resources
-        href: resources/resource.md
+        href: resources/onenoteresource.md
         items:
         - name: Get resource
           href: api/resource-get.md
+    - name: Notifications
+      href: resources/notifications-api-overview.md
+      items:
+      - name: Notification
+        href: resources/projectrome-notification.md
+        items:
+        - name: Create and send a notification
+          href: api/notifications-post.md
     - name: Personal contacts
       href: resources/contact.md
       displayName: Outlook, Outlook contacts, Outlook contact, People
@@ -8333,8 +8442,9 @@
           - name: Get
             href: api/applicationsignindetailedsummary-get.md
       - name: Office 365 usage reports
-        href: resources/report.md
         items:
+        - name: Overview
+          href: resources/report.md
         - name: Microsoft Teams device usage
           href: resources/microsoft-teams-device-usage-reports.md
           items:
@@ -8532,9 +8642,10 @@
           - name: Get activity counts
             href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
-      href: resources/security-api-overview.md
       displayname: Security API, Microsoft Graph Security API
       items:
+      - name: Overview
+        href: resources/security-api-overview.md
       - name: Actions
         href: resources/securityaction.md
         items:
@@ -8593,9 +8704,10 @@
       - name: Errors
         href: resources/security-error-codes.md
     - name: Sites and lists
-      href: resources/sharepoint.md
       displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
       items:
+      - name: Overview
+        href: resources/sharepoint.md
       - name: Sites
         href: resources/site.md
         items:
@@ -8609,6 +8721,10 @@
           href: api/itemanalytics-get.md
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
+        - name: Follow site
+          href: api/site-follow.md
+        - name: Unfollow site
+          href: api/site-unfollow.md
       - name: Lists
         href: resources/list.md
         items:
@@ -8649,10 +8765,11 @@
         - name: Publish page
           href: api/sitepage-publish.md
     - name: Social intelligence
-      href: resources/social-overview.md
       items:
+      - name: Overview
+        href: resources/social-overview.md
       - name: Insights
-        href: resources/insights.md
+        href: resources/officegraphinsights.md
         items:
         - name: Trending
           href: resources/insights-trending.md
@@ -8677,9 +8794,10 @@
       - name: Mention
         href: resources/mention.md
     - name: Tasks and plans
-      href: resources/planner-overview.md
       displayName: Planner
       items:
+      - name: Overview
+        href: resources/planner-overview.md
       - name: Plan
         href: resources/plannerplan.md
         items:
@@ -8776,9 +8894,10 @@
         - name: Update progress task board format
           href: api/plannerprogresstaskboardtaskformat-update.md
     - name: Teamwork
-      href: resources/teams-api-overview.md
       displayName: Microsoft Teams
       items:
+      - name: Overview
+        href: resources/teams-api-overview.md
       - name: Team
         href: resources/team.md
         items:
@@ -8861,7 +8980,7 @@
         - name: Get message reply
           href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-chatmessage.md
+          href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
       - name: Chat
@@ -8875,6 +8994,10 @@
           href: api/chat-list-messages.md
         - name: Get message in chat
           href: api/chat-get-message.md
+        - name: Get members in chat
+          href: api/conversationmember-list.md
+        - name: Get one member in chat
+          href: api/conversationmember-get.md
       - name: Apps
         href: resources/teamsapp.md
         items:
@@ -8942,59 +9065,59 @@
         - name: Get
           href: api/schedule-get.md
         - name: Share
-          href: api/schedule-share.md  
+          href: api/schedule-share.md
       - name: Scheduling group
         href: resources/schedulinggroup.md
         items:
         - name: Create
           href: api/schedule-post-schedulinggroups.md
         - name: List
-          href: api/schedule-list-schedulinggroups.md 
+          href: api/schedule-list-schedulinggroups.md
         - name: Get
           href: api/schedulinggroup-get.md
         - name: Replace
           href: api/schedulinggroup-put.md
         - name: Delete
-          href: api/schedulinggroup-delete.md    
+          href: api/schedulinggroup-delete.md
       - name: Shift
         href: resources/shift.md
         items:
           - name: Create
             href: api/schedule-post-shifts.md
           - name: List
-            href: api/schedule-list-shifts.md 
+            href: api/schedule-list-shifts.md
           - name: Get
             href: api/shift-get.md
           - name: Replace
             href: api/shift-put.md
           - name: Delete
-            href: api/shift-delete.md    
+            href: api/shift-delete.md
       - name: Time off
         href: resources/timeoff.md
         items:
           - name: Create
             href: api/schedule-post-timesoff.md
           - name: List
-            href: api/schedule-list-timesoff.md 
+            href: api/schedule-list-timesoff.md
           - name: Get
             href: api/timeoff-get.md
           - name: Replace
             href: api/timeoff-put.md
           - name: Delete
-            href: api/timeoff-delete.md   
+            href: api/timeoff-delete.md
       - name: Time off reason
         href: resources/timeoffreason.md
         items:
           - name: Create
             href: api/schedule-post-timeoffreasons.md
           - name: List
-            href: api/schedule-list-timeoffreasons.md 
+            href: api/schedule-list-timeoffreasons.md
           - name: Get
             href: api/timeoffreason-get.md
           - name: Replace
             href: api/timeoffreason-put.md
           - name: Delete
-            href: api/timeoffreason-delete.md   
+            href: api/timeoffreason-delete.md
       - name: Drive
         href: resources/drive.md
         items:
@@ -9014,7 +9137,7 @@
           href: api/onenote-list-notebooks.md
         - name: Create notebook
           href: api/onenote-post-notebooks.md
-    - name: To-do tasks
+    - name: To-do tasks (preview)
       href: resources/outlooktask.md
       displayName: Outlook
       items:
@@ -9115,9 +9238,10 @@
           - name: Get multivalue property
             href: api/multivaluelegacyextendedproperty-get.md
     - name: Workbooks and charts
-      href: resources/excel.md
       displayName: Excel
       items:
+      - name: Overview
+        href: resources/excel.md
       - name: Workbook
         href: resources/workbook.md
         items:
@@ -9134,7 +9258,7 @@
         - name: List names
           href: api/workbook-list-names.md
       - name: Worksheet
-        href: resources/worksheet.md
+        href: resources/workbookworksheet.md
         items:
         - name: Add worksheet
           href: api/worksheetcollection-add.md
@@ -9157,7 +9281,7 @@
         - name: Add chart
           href: api/worksheet-post-charts.md
       - name: Range
-        href: resources/range.md
+        href: resources/workbookrange.md
         items:
         - name: Get range
           href: api/range-get.md
@@ -9178,7 +9302,7 @@
         - name: Delete
           href: api/range-delete.md
       - name: Table
-        href: resources/table.md
+        href: resources/workbooktable.md
         items:
         - name: Add table
           href: api/tablecollection-add.md
@@ -9199,7 +9323,7 @@
         - name: Get range
           href: api/table-range.md
       - name: Chart
-        href: resources/chart.md
+        href: resources/workbookchart.md
         items:
         - name: List charts
           href: api/chart-list.md
@@ -9218,7 +9342,7 @@
         - name: Set position data
           href: api/chart-setposition.md
       - name: Named item
-        href: resources/nameditem.md
+        href: resources/workbooknameditem.md
         items:
         - name: List named item
           href: api/nameditem-get.md
@@ -9231,46 +9355,49 @@
         - name: List range
           href: api/nameditem-range.md
     - name: Tools
-    - name: Open extensions
-      href: resources/opentypeextension.md
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+      expanded: true
       items:
-      - name: Create open extension
-        href: api/opentypeextension-post-opentypeextension.md
-      - name: Get open extension
-        href: api/opentypeextension-get.md
-      - name: Update open extension
-        href: api/opentypeextension-update.md
-      - name: Delete open extension
-        href: api/opentypeextension-delete.md
-    - name: Schema extensions
-      href: resources/schemaextension.md
-      displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
-      items:
-      - name: List schema extensions
-        href: api/schemaextension-list.md
-      - name: Create schema extension
-        href: api/schemaextension-post-schemaextensions.md
-      - name: Get schema extension
-        href: api/schemaextension-get.md
-      - name: Update schema extension
-        href: api/schemaextension-update.md
-      - name: Delete schema extension
-        href: api/schemaextension-delete.md
-    - name: Change notifications
-      href: resources/webhooks.md
-      displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
-      items:
-      - name: Subscription
-        href: resources/subscription.md
+      - name: Open extensions
+        href: resources/opentypeextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
         items:
-        - name: List subscription
-          href: api/subscription-list.md
-        - name: Get subscription
-          href: api/subscription-get.md
-        - name: Create subscription
-          href: api/subscription-post-subscriptions.md
-        - name: Update subscription
-          href: api/subscription-update.md
-        - name: Delete subscription
-          href: api/subscription-delete.md
+        - name: Create open extension
+          href: api/opentypeextension-post-opentypeextension.md
+        - name: Get open extension
+          href: api/opentypeextension-get.md
+        - name: Update open extension
+          href: api/opentypeextension-update.md
+        - name: Delete open extension
+          href: api/opentypeextension-delete.md
+      - name: Schema extensions
+        href: resources/schemaextension.md
+        displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users
+        items:
+        - name: List schema extensions
+          href: api/schemaextension-list.md
+        - name: Create schema extension
+          href: api/schemaextension-post-schemaextensions.md
+        - name: Get schema extension
+          href: api/schemaextension-get.md
+        - name: Update schema extension
+          href: api/schemaextension-update.md
+        - name: Delete schema extension
+          href: api/schemaextension-delete.md
+      - name: Change notifications
+        displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+        items:
+        - name: Overview
+          href: resources/webhooks.md
+        - name: Subscription
+          href: resources/subscription.md
+          items:
+          - name: List subscription
+            href: api/subscription-list.md
+          - name: Get subscription
+            href: api/subscription-get.md
+          - name: Create subscription
+            href: api/subscription-post-subscriptions.md
+          - name: Update subscription
+            href: api/subscription-update.md
+          - name: Delete subscription
+            href: api/subscription-delete.md

@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementScript"
 description: "Create a new deviceManagementScript object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -117,7 +117,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 

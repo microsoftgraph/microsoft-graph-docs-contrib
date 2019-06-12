@@ -1,7 +1,7 @@
 ---
 title: "Get macOSLobApp"
 description: "Read properties and relationships of the macOSLobApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -124,7 +124,6 @@ Content-Length: 1875
   }
 }
 ```
-
 
 
 

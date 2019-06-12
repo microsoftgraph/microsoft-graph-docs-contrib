@@ -37,7 +37,16 @@ For more information, see [Custom policies in Azure Active Directory B2C](https:
 ## JSON representation
 
 The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "baseType":"microsoft.graph.entity",
+  "keyProperty":"id",
+  "isMediaEntity":true,
+  "@odata.type": "microsoft.graph.trustFrameworkPolicy"
+}-->
 ```json
 {
    "id": "B2C_1A_Test"

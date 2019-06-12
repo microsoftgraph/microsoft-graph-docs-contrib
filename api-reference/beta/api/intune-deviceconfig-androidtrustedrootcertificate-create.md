@@ -1,7 +1,7 @@
 ---
 title: "Create androidTrustedRootCertificate"
 description: "Create a new androidTrustedRootCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -108,7 +108,6 @@ Content-Length: 539
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

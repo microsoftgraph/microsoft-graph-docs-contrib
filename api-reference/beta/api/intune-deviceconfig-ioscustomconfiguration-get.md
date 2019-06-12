@@ -1,7 +1,7 @@
 ---
 title: "Get iosCustomConfiguration"
 description: "Read properties and relationships of the iosCustomConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -83,7 +83,6 @@ Content-Length: 590
   }
 }
 ```
-
 
 
 

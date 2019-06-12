@@ -43,7 +43,7 @@ POST /sites/{site-id}/lists
 Content-Type: application/json
 
 {
-  "name": "Books",
+  "displayName": "Books",
   "columns": [
     {
       "name": "Author",
@@ -93,6 +93,16 @@ Content-type: application/json
   }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create-list-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/create-list-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 **Note:** The response object is truncated for clarity.
 Default properties will be returned from the actual call.
@@ -105,5 +115,9 @@ Default properties will be returned from the actual call.
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
+  "tocPath": "List/Create",
+  "suppressions": [
+    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/v1.0/api/list-create.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 } -->

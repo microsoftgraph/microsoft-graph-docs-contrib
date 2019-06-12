@@ -62,6 +62,7 @@ Here is a JSON representation of the resource.
 
 | Resource            | Maximum Expiration Time  |
 |:--------------------|:-------------------------|
+| User, group, other directory resources   | 4230 minutes (under 3 days)    |
 | Mail                | 4230 minutes (under 3 days)    |
 | Calendar            | 4230 minutes (under 3 days)    |
 | Contacts            | 4230 minutes (under 3 days)    |
@@ -103,8 +104,6 @@ None
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/subscription.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

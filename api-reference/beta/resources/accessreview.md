@@ -2,7 +2,7 @@
 title: "accessReview resource type"
 description: "In the Azure AD access reviews feature, the `accessReview` represents an access review.  "
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -74,6 +74,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -114,8 +115,6 @@ The `accessReviewSettings` provides additional settings when creating an access 
 | `autoApplyReviewResultsEnabled`|`Boolean` | Flag to indicate whether auto-apply capability, to automatically change the target object access resource, is enabled.  If not enabled, a user must, after the review completes, apply the access review. |
 | `accessRecommendationsEnabled`|`Boolean` | Flag to indicate whether showing recommendations to reviewers is enabled. |
 
-
-
 ## The autoReviewSettings type
 
 The `autoReviewSettings` is embedded within the access review settings, and specifies the behavior for the feature when an access review completes.  The type has one property, `notReviewedResult`.
@@ -137,7 +136,6 @@ The `accessReviewRecurrenceSettings` is embedded within the access review settin
 | `recurrenceCount`|`Int32`    | The count of recurrences, if the value of `recurrenceEndType` is `occurrences`, or 0 otherwise.                                                        |
 
 
-
 <!--
 {
   "type": "#page.annotation",
@@ -145,8 +143,6 @@ The `accessReviewRecurrenceSettings` is embedded within the access review settin
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/accessreview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

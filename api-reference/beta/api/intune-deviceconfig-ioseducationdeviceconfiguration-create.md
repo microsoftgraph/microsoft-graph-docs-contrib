@@ -1,7 +1,7 @@
 ---
 title: "Create iosEducationDeviceConfiguration"
 description: "Create a new iosEducationDeviceConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -102,7 +102,6 @@ Content-Length: 433
   "version": 7
 }
 ```
-
 
 
 

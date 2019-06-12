@@ -1,7 +1,7 @@
 ---
 title: "Create ndesConnector"
 description: "Create a new ndesConnector object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -87,7 +87,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

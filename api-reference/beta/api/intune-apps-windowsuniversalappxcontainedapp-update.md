@@ -1,7 +1,7 @@
 ---
 title: "Update windowsUniversalAppXContainedApp"
 description: "Update the properties of a windowsUniversalAppXContainedApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -83,7 +83,6 @@ Content-Length: 171
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

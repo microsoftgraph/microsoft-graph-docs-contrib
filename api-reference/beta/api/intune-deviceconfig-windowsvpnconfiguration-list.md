@@ -1,7 +1,7 @@
 ---
 title: "List windowsVpnConfigurations"
 description: "List properties and relationships of the windowsVpnConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -88,7 +88,6 @@ Content-Length: 816
   ]
 }
 ```
-
 
 
 

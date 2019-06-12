@@ -1,7 +1,7 @@
 ---
 title: "Create deviceAndAppManagementRoleAssignment"
 description: "Create a new deviceAndAppManagementRoleAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -108,7 +108,6 @@ Content-Length: 391
   ]
 }
 ```
-
 
 
 

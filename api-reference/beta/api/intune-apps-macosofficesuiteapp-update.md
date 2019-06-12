@@ -1,7 +1,7 @@
 ---
 title: "Update macOSOfficeSuiteApp"
 description: "Update the properties of a macOSOfficeSuiteApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -141,7 +141,6 @@ Content-Length: 890
   "dependentAppCount": 1
 }
 ```
-
 
 
 

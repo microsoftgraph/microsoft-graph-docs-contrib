@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationValueText"
 description: "Create a new groupPolicyPresentationValueText object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -85,7 +85,6 @@ Content-Length: 273
   "value": "Value value"
 }
 ```
-
 
 
 

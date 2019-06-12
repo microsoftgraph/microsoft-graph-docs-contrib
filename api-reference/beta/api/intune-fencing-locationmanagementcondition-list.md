@@ -1,7 +1,7 @@
 ---
 title: "List locationManagementConditions"
 description: "List properties and relationships of the locationManagementCondition objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -78,7 +78,6 @@ Content-Length: 512
   ]
 }
 ```
-
 
 
 

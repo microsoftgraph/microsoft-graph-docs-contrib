@@ -1,7 +1,7 @@
 ---
 title: "Update microsoftStoreForBusinessContainedApp"
 description: "Update the properties of a microsoftStoreForBusinessContainedApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -83,7 +83,6 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
-
 
 
 

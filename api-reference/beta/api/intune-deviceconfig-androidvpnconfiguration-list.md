@@ -1,7 +1,7 @@
 ---
 title: "List androidVpnConfigurations"
 description: "List properties and relationships of the androidVpnConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -106,7 +106,6 @@ Content-Length: 1339
   ]
 }
 ```
-
 
 
 

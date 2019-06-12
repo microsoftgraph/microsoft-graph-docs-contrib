@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkImportedPFXCertificateProfile"
 description: "Update the properties of a androidForWorkImportedPFXCertificateProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -136,7 +136,6 @@ Content-Length: 898
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

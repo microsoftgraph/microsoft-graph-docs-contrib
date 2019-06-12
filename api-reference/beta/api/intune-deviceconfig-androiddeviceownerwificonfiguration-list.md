@@ -1,7 +1,7 @@
 ---
 title: "List androidDeviceOwnerWiFiConfigurations"
 description: "List properties and relationships of the androidDeviceOwnerWiFiConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -85,7 +85,6 @@ Content-Length: 786
   ]
 }
 ```
-
 
 
 
