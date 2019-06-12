@@ -1,6 +1,6 @@
 ---
 title: "credentialUsageSummary resource type"
-description: "Provides the summary of self-service password reset usage for a given tenant."
+description: "Provide the summary of self-service password reset usage for a given tenant."
 localization_priority: Normal
 author: "dkershaw"
 ms.prod: "identity and access reports"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the summary of self-service password reset usage for a given tenant. This API provides the current state of how many users in your organization are using self-service password reset capabilities.
+Provide the summary of self-service password reset usage for a given tenant. This API provides the current state of how many users in your organization are using self-service password reset capabilities.
 
 ## Methods
 

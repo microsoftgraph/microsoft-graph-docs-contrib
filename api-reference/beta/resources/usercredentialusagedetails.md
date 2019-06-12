@@ -1,6 +1,6 @@
 ---
 title: "userCredentialUsageDetails resource type"
-description: "Provides the details of self-service password reset usage for a given tenant."
+description: "Provide the details of self-service password reset usage for a given tenant."
 localization_priority: Normal
 author: "dkershaw"
 ms.prod: "identity and access reports"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the details of self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
+Provide the details of self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
 
 ## Methods
 

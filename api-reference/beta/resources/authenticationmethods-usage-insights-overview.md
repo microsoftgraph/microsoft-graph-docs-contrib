@@ -23,11 +23,6 @@ These reports provide information such as:
 - Authentication Method Registration Summary and Details ([Self-service password reset registration at](https://aka.ms/ssprsetup),[Combined security info registration](https://aka.ms/mysecurityinfo))
 - Authentication Method Usage Summary and Details ([Self-service password reset usage](https://aka.ms/sspr)
 
-## APIs not documented
-
-- [Authentication Method Registration Details for MFA](https://aka.ms/mfasetup)
-- MFA Usage (both Per-user and Conditional Access-based MFA)
-
 ## API actions
 
 Here are popular requests for working with this API:

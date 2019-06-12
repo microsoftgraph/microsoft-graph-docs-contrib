@@ -1,6 +1,6 @@
 ---
 title: "credentialUserRegistrationCount resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Provide the summary of self-service password reset and multi-factor authentication registration for a given tenant."
 localization_priority: Normal
 author: "dkershaw"
 ms.prod: "identity and access reports"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the summary of self-service password reset and multi-factor authentication registration for a given tenant. This API provides the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.
+Provide the summary of self-service password reset and multi-factor authentication registration for a given tenant. This API provides the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.
 
 ## Methods
 

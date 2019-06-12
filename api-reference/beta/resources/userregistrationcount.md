@@ -1,6 +1,6 @@
 ---
 title: "userRegistrationCount resource type"
-description: "Provides the registration count and status for users in your tenant."
+description: "Provide the registration count and status for users in your tenant."
 localization_priority: Normal
 author: "dkershaw"
 ms.prod: "identity and access reports"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the registration count and status for users in your tenant.
+Provide the registration count and status for users in your tenant.
 
 ## Properties
 

@@ -1,6 +1,6 @@
 ---
 title: "credentialUserRegistrationDetails resource type"
-description: "Provides the details of self-service password reset and multi-factor authentication (MFA) registration for a given tenant."
+description: "Provide the details of self-service password reset and multi-factor authentication (MFA) registration for a given tenant."
 localization_priority: Normal
 author: "dkershaw"
 ms.prod: "identity and access reports"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the details of self-service password reset and multi-factor authentication (MFA) registration for a given tenant. This API provides the registration usage for all registered users for self-service password reset and MFA capabilities. Details include user information, status of registration, and the authentication method used.
+Provide the details of self-service password reset and multi-factor authentication (MFA) registration for a given tenant. This API provides the registration usage for all registered users for self-service password reset and MFA capabilities. Details include user information, status of registration, and the authentication method used.
 
 ## Methods
 
