@@ -52,10 +52,10 @@ This resource supports:
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) collection| Get a licenseDetails object collection.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
+|[delta](../api/user-delta.md)|user collection| Get incremental changes for users. |
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user is a member of. The check is transitive. |
-|[reminderView](../api/user-reminderview.md)|[reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
-|[delta](../api/user-delta.md)|user collection| Get incremental changes for users. |
+|[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -168,7 +168,7 @@ The age group and minor consent properties are optional properties used by Azure
 |granted|1|Consent has been obtained for the user to have an account.|
 |denied|2|Consent has not been obtained for the user to have an account.|
 |notRequired|3|The user is from a location that does not require consent.|
- 
+
 ## Relationships
 
 | Relationship | Type	|Description|

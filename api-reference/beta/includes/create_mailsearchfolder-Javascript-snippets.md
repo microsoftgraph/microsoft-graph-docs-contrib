@@ -14,7 +14,7 @@ const mailFolder = {
   @odata.type: "microsoft.graph.mailSearchFolder",
   displayName: "Get MyAnalytics",
   includeNestedFolders: true,
-  sourceFolderIDs: ["AAMkAGVmMDEzM"],
+  sourceFolderIds: ["AAMkAGVmMDEzM"],
   filterQuery: "contains(subject, 'MyAnalytics')"
 };
 
