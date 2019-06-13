@@ -5,7 +5,7 @@ author: "jthake-msft"
 localization_priority: Priority
 ---
 
-# Use the Microsoft Graph API
+# Use Postman with Microsoft Graph API
 
 The Microsoft Graph Postman collection allows you to get started calling the Microsoft Graph APIs in minutes.
 
