@@ -54,6 +54,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
 
+This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
+
 ## Examples
 
 ### Example 1: Standard users request
