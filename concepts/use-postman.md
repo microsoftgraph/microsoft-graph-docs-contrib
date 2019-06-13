@@ -1,13 +1,13 @@
 ---
 title: "Use Postman with Microsoft Graph API"
-description: "The Microsoft Graph Postman collection allows you to get started calling the Microsoft Graph APIs immediately!"
+description: "The Microsoft Graph Postman collection allows you to get started calling the Microsoft Graph APIs in minutes."
 author: "jthake-msft"
 localization_priority: Priority
 ---
 
 # Use the Microsoft Graph API
 
-The Microsoft Graph Postman collection allows you to get started calling the Microsoft Graph APIs immediately!
+The Microsoft Graph Postman collection allows you to get started calling the Microsoft Graph APIs in minutes.
 
 ![Image of Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/postman.png?raw=true)
 
@@ -27,11 +27,11 @@ Once you have the collection, you'll need to set up teh environment variables.
 
 **2.** Select **Import From Link**.
 
-**3.** Paste the following two URLs and click Import after each.
+**3.** Copy and paste the following URL and click Import
 
 `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
 
-You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to follow the instructions below to set up your environment.
+You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to follow the [instructions below](using-the-collection) to set up your environment.
 
 ### To contribute back
 If you wish to contribute back your own requests, you will need to fork the [Microsoft Graph Postman collections](https://github.com/microsoftgraph/microsoftgraph-postman-collections) github repo. 
@@ -56,7 +56,7 @@ To import the Postman collections follow these steps:
 You should now see the **Microsoft Graph v1.0** collection on the left had side Collections pane.
 
 ## Using the collection
-Once you have **Microsoft Graph v1.0** collection in Postman.
+Once you have **Microsoft Graph v1.0** collection and **Microsoftr Graph environment** in Postman Follow these steps.
 
 ### Set up application API calls
 **1.** Click on the **No environment** drop down in top right hand corner.
@@ -77,7 +77,7 @@ You are now up and running with Microsoft Graph v1.0 collections.
 
 **NOTE:** that if you wish to run other APIs in the collection, you will need to consent the required permissions for your application.
 
-### Set up on behalf of API calls
+### Set up on-behalf-of API calls
 The simplest way of doing this is providing a **UserName** and **UserPassword** in the environment settings and use **On Behalf of a User | Get User Access Token** instead. 
 
 **IMPORTANT:** It is not recommended to use production user accounts as this information is stored directly in Postman. This is also not a recommended approach for obtaining access tokens in production and should only be used for testing purposes.
