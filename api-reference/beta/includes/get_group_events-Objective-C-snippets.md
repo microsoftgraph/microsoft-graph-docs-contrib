@@ -2,7 +2,7 @@
 description: "Automatically generated file. DO NOT MODIFY"
 ---
 
-```objective-c
+```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 

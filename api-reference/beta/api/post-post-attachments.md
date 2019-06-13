@@ -95,14 +95,15 @@ Content-length: 162
 }
 ```
 #### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_file_attachment_from_post-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_file_attachment_from_post-Javascript-snippets.md)]
 
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_file_attachment_from_post-Cs-snippets.md)]
 # [Objective-C](#tab/objective-c)
 [!INCLUDE [sample-code](../includes/create_file_attachment_from_post-Objective-C-snippets.md)]
+
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -147,15 +148,6 @@ Content-length: 162
   "id": "id-value"
 }
 ```
-#### SDK sample code
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_item_attachment_from_post-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
 
 ## Example (reference attachment)
 
@@ -211,14 +203,15 @@ HTTP 201 Created
 }
 ```
 #### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/create_reference_attachment_from_post-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_reference_attachment_from_post-Javascript-snippets.md)]
 
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_reference_attachment_from_post-Cs-snippets.md)]
 # [Objective-C](#tab/objective-c)
 [!INCLUDE [sample-code](../includes/create_reference_attachment_from_post-Objective-C-snippets.md)]
+
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]

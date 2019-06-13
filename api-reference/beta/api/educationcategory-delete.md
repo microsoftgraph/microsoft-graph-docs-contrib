@@ -72,27 +72,14 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 #### SDK sample code
-
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
 
 # [Objective-C](#tab/objective-c)
 [!INCLUDE [sample-code](../includes/delete_educationassignment-Objective-C-snippets.md)]
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-#### SDK sample code
-
-# [C#](#tab/cs)
-
-[!INCLUDE [sample-code](../includes/delete_educationassignment-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-
-[!INCLUDE [sample-code](../includes/delete_educationassignment-Javascript-snippets.md)]
 
 ---
 
