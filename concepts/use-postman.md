@@ -31,7 +31,7 @@ Once you have the collection, you'll need to set up teh environment variables.
 
 `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
 
-You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to follow the [instructions below](using-the-collection) to set up your environment.
+You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to follow the [instructions below](#using-the-collection) to set up your environment.
 
 ### To contribute back
 If you wish to contribute back your own requests, you will need to fork the [Microsoft Graph Postman collections](https://github.com/microsoftgraph/microsoftgraph-postman-collections) github repo. 
