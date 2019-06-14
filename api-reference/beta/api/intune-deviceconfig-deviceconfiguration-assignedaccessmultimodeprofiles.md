@@ -47,7 +47,7 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedAccessMultiModeProfiles|windowsAssignedAccessProfile collection|Not yet documented|
+|assignedAccessMultiModeProfiles|[windowsAssignedAccessProfile](../resources/intune-deviceconfig-windowsassignedaccessprofile.md) collection|Not yet documented|
 
 
 
@@ -91,6 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
