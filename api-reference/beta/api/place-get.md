@@ -11,7 +11,11 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [place](../resources/place.md) object.
+The place object can be one of the following types:
+
+* A room which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. (Please add link to room.md.)
+* A roomList which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. (Please add links to roomlist.md and room.md.)
+Both room and roomList are derived from the [place](../resources/place.md) object.
 
 ## Permissions
 
@@ -59,7 +63,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ### Request
 
-The following is an example of the request.
+The following example specifies the id of a room to get its properties.
 <!-- {
   "blockType": "request",
   "name": "get_places"
