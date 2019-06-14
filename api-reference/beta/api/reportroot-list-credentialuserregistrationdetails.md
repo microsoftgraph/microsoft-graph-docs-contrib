@@ -98,7 +98,7 @@ Content-Type: application/json
       "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "userPrincipalName":"abc@cd.com",
       "userDisplayName": "abc",
-      "authMethods": {"email", "mobileSMS"},
+      "authMethods": ["email", "mobileSMS"],
       "isRegistered" : false,
       "isEnabled" : true,
       "isCapable" : false,

@@ -89,10 +89,8 @@ Content-Type: application/json
       "totalUserCount" : 23123,
       "userRegistrationCounts" :
       [
-        { "userRegistrationStatus":"registered", "userRegistationCount": 23423 },
-        { "userRegistrationStatus":"enabled", "userRegistationCount": 4234 },
-        { "userRegistrationStatus":"capable", "userRegistationCount": 323 },
-        { "userRegistrationStatus":"mfaRegistered", "userRegistationCount": 33 }
+        { "userRegistrationStatus":"registered", 
+          "userRegistationCount": 23423 }
       ]
     }
   ]

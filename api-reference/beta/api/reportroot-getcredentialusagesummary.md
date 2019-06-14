@@ -96,7 +96,7 @@ Content-Type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.getCredentialUsageSummary)",
   "value":[
     {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234"
+      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "feature":"registration",
       "successfulActivityCount":"12345",
       "failureActivityCount": "123",
