@@ -8,8 +8,11 @@ ms.prod: "microsoft-identity-platform"
 
 # Create User
 
-Create a new user.
+Create a new [user](../resources/user.md).
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
+
+>[!NOTE]
+>To create external users, use the [invitation API](invitation-post.md).
 
 ## Permissions
 
