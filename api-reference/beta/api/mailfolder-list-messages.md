@@ -10,7 +10,7 @@ ms.prod: "outlook"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.
+List all the messages in the specified user's mailbox, or those messages in a specified folder in the mailbox.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
