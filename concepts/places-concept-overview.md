@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Places API overview (preview)
 
-You can use Microsoft Graph to build compelling app experiences based on different placesToday, you can access company places and details about each place.
+You can use the places API to build compelling app experiences based on different places. Today, you can access company places and details about each place.
 
 <!-- markdownlint-disable MD026 -->
 ## Why integrate with places?
