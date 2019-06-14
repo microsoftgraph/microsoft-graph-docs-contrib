@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide the summary of self-service password reset and multi-factor authentication (MFA) registration for a given tenant. This API provides the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
+This API reports the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
 
 Retrieve the properties and relationships of the [credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) object.
 
@@ -80,6 +80,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.credentialUserRegistrationCount)",
   "value": [

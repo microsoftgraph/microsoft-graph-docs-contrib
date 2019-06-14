@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide the summary of self-service password reset and multi-factor authentication registration for a given tenant. This API provides the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.
+The **credentialUserRegistrationCount** resource represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.
 
 ## Methods
 
@@ -25,7 +25,7 @@ Provide the summary of self-service password reset and multi-factor authenticati
 |:-------------|:------------|:------------|
 | id | String | Read-only. |
 | totalUserCount | Int64 | Provides the total user count in the tenant. |
-| userRegistrationCounts | Collection | Provides a [userRegistrationCount](userregistrationcount.md) collection. |
+| userRegistrationCounts | [userRegistrationCount](userregistrationcount.md) collection | A collection of registration count and status information for users in your tenant. |
 
 ## Relationships
 

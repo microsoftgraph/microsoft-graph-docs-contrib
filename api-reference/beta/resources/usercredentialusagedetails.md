@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide the details of self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
+The **userCredentialUsageDetails** resource represents the self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
 
 ## Methods
 
@@ -23,7 +23,7 @@ Provide the details of self-service password reset usage for a given tenant. Det
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (Can only be used for self-service password reset.), `appNotification`, `appCode`, `alternateMobileCall`, `fido` (Can only be registered through combined security info registration.), `appPassword` (Can only be used for MFA.), `unknownFutureValue`. |
+| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, `alternateMobileCall`, `fido` (only registered through combined security info registration), `appPassword` (only used for MFA), `unknownFutureValue`. |
 | eventDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
 | failureReason | String | Provides the failure reason for the corresponding reset. |
 | feature | string | Possible values are: `registration`, `reset`, `unknownFutureValue`. |

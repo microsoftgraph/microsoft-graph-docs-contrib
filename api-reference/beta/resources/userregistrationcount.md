@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide the registration count and status for users in your tenant.
+The **userRegistrationCount** resource represents the registration count and status for users in your tenant.
 
 ## Properties
 
@@ -39,10 +39,8 @@ The following is a JSON representation of the resource.
   "totalUserCount" : 23123,
   "userRegistrationCounts" :
   [
-    { "userRegistrationStatus":"registered", "userRegistrationCount": 23423 },
-    { "userRegistrationStatus":"enabled", "userRegistrationCount": 4234 },
-    { "userRegistrationStatus":"capable", "userRegistrationCount": 323 },
-    { "userRegistrationStatus":"mfaRegistered", "userRegistrationCount": 33 }
+    { "userRegistrationStatus":"registered", 
+      "userRegistrationCount": 23423 }
   ]
 }
 ```

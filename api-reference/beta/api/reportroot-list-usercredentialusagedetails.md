@@ -87,7 +87,6 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 258
 
-Content-Type: application/json
 {
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.getUserCredentialUsageDetails)",
   "value":[
@@ -100,7 +99,7 @@ Content-Type: application/json
       "authMethod": "email",
       "failureReason": "User contacted an admin after trying the email verification option",
       "eventDateTime" : "2019-04-01T00:00:00Z"
-    },
+    }
   ]
 }
 ```

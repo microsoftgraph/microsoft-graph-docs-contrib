@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide the summary of self-service password reset usage for a given tenant. This API provides the current state of how many users in your organization are using self-service password reset capabilities.
+The **credentialUsageSummary** resource represents the current state of how many users in your organization are using self-service password reset capabilities.
 
 ## Methods
 
@@ -23,7 +23,7 @@ Provide the summary of self-service password reset usage for a given tenant. Thi
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (Can only be used for self-service password reset.), `appNotification`, `appCode`, `alternateMobileCall`, `fido` (Can only be registered through combined security info registration.), `appPassword` (Can only be used for MFA.), `unknownFutureValue`. |
+| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, `alternateMobileCall`, `fido` (only registered through combined security info registration), `appPassword` (only used for MFA), `unknownFutureValue`. |
 | failureActivityCount | Int64 | Provides the count of failed resets or registration data. |
 | feature | string | Possible values are: `registration`, `reset`, `unknownFutureValue`. |
 | id | String | Read-only. |

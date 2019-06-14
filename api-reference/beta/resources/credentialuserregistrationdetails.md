@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide the details of self-service password reset and multi-factor authentication (MFA) registration for a given tenant. This API provides the registration usage for all registered users for self-service password reset and MFA capabilities. Details include user information, status of registration, and the authentication method used.
+The **credentialUserRegistrationDetails** resource represents the registration usage for all registered users for self-service password reset and multi-factor authentication (MFA) capabilities. Details include user information, status of registration, and the authentication method used.
 
 ## Methods
 
@@ -23,8 +23,8 @@ Provide the details of self-service password reset and multi-factor authenticati
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethods | string collection | Possible values are: `email`, `mobilePhone`, `officePhone`, `securityQuestion` (Can only be used for self-service password reset.), `appNotification`, `appCode`, `alternateMobilePhone`, `fido` (Can only be registered through combined security info registration.), `appPassword` (Can only be used for MFA.), `unknownFutureValue`. |
-| id | String | Read-only |
+| authMethods | string collection | Possible values are: `email`, `mobilePhone`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, `alternateMobilePhone`, `fido` (only registered through combined security info registration), `appPassword` (only used for MFA), `unknownFutureValue`. |
+| ID | String | Read-only |
 | isCapable | Boolean | Unique Id for the activity. |
 | isEnabled | Boolean | Indicates whether the user is ready to perform self-service password reset or MFA. |
 | isMfaRegistered | Boolean | Indiciates whether the user enabled to perform self-service password reset. |
@@ -55,7 +55,7 @@ The following is a JSON representation of the resource.
   "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
   "userPrincipalName":"abc@cd.com",
   "userDisplayName": "abc",
-  "authMethods": {"email", "mobilePhone"},
+  "authMethods": ["email", "mobilePhone"],
   "isRegistered" : false,
   "isEnabled" : true,
   "isCapable" : false,
