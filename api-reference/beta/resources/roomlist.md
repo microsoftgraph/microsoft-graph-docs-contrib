@@ -26,12 +26,12 @@ Derived from [place](place.md).
 
 | Property       | Type                                              | Description |
 |:---------------|:--------------------------------------------------|:--------|
-| address        | [physicalAddress](physicaladdress.md)             | The street address of the roomlist. |
-| displayName    | String                                            | The name associated with the roomlist. |
-| emailAddress   | String                                            | The email address of the roomlist. |
+| address        | [physicalAddress](physicaladdress.md)             | The street address of the room list. |
+| displayName    | String                                            | The name associated with the room list. |
+| emailAddress   | String                                            | The email address of the room list. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude and (optionally) altitude coordinates. |
-| id             | String                                            | Unique identifier for the roomlist. Read-only. |
-| phone          | String                                            | The phone number of the roomlist. |
+| id             | String                                            | Unique identifier for the room list. Read-only. |
+| phone          | String                                            | The phone number of the room list. |
 
 ## Relationships
 
