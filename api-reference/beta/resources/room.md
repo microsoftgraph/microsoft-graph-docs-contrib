@@ -26,7 +26,7 @@ Derived from [place](place.md).
 
 | Property               | Type                                              | Description |
 |:-----------------------|:--------------------------------------------------|:--|
-| address                | [physicalAddress](physicaladdress.md)             | The address of the room. |
+| address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
 | bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, `managed`, and `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
