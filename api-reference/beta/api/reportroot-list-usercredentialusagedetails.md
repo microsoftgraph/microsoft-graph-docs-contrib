@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide the details of self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
+This API reports the details of self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
 
 ## Permissions
 

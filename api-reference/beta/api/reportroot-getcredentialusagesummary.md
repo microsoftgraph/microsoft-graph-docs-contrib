@@ -1,6 +1,6 @@
 ---
 title: "reportRoot: getCredentialUsageSummary"
-description: "Provide the summary of self-service password reset usage for a given tenant."
+description: "This API reports the current state of how many users in your organization are using self-service password reset capabilities."
 localization_priority: Normal
 author: "dkershaw"
 ms.prod: "identity and access reports"

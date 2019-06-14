@@ -1,6 +1,6 @@
 ---
 title: "List credentialUserRegistrationDetails"
-description: "Retrieve a list of credentialuserregistrationdetails objects."
+description: "This API reports the details of user registration for a given tenant"
 localization_priority: Normal
 author: "dkershaw"
 ms.prod: "identity and access reports"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of credentialuserregistrationdetails objects.
+This API reports the details of user registration for a given tenant.
 
 ## Permissions
 
