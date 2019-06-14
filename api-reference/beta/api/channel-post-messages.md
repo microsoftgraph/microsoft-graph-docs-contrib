@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Create a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
-> **Note**: This API is not intended for data migration, as it does not have the throughput necessary for typical migrations.
+> **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
 
 ## Permissions
 
