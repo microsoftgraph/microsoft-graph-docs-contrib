@@ -26,7 +26,7 @@ Derived from [place](place.md).
 
 | Property       | Type                                              | Description |
 |:---------------|:--------------------------------------------------|:--------|
-| address        | [physicalAddress](physicaladdress.md)             | The address of the roomlist. |
+| address        | [physicalAddress](physicaladdress.md)             | The street address of the roomlist. |
 | displayName    | String                                            | The name associated with the roomlist. |
 | emailAddress   | String                                            | The email address of the roomlist. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the roomlist location in latitude, longitude and (optionally) altitude coordinates. |
