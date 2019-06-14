@@ -11,7 +11,14 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [place](../resources/place.md) objects.
+Get a collection of all the [place](../resources/place.md) objects, or the specified type of place object, defined in the tenant.
+
+A **place** object can be one of the following types:
+
+* A room which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. (Please add link to room.md.)
+* A roomList which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. (Please add links to roomlist.md and room.md.)
+
+Both **room** and **roomList** are derived from the place object.
 
 ## Permissions
 
@@ -51,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List all places
+### Example 1: List all places defined in the tenant
 
 #### Request
 
@@ -194,7 +201,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows how to retrieve a list of [room](../resources/room.md) objects contained in a **roomList**.
+The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**.
 <!-- {
   "blockType": "request",
   "name": "get_rooms"
