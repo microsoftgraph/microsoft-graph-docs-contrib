@@ -20,6 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+> [!NOTE]
+>Permissions are limited depending on the group features that you are trying to access. For more information, see [Known issues with Microsoft Graph](/graph/known-issues#groups).
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,7 +60,9 @@ GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 #### Response 1
 The following is an example of the response. It includes only the default properties.
 
->**Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
