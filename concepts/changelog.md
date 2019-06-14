@@ -17,20 +17,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-|Addition|beta| Added new reports for retrieving user registration and usage information:<br/>
+|Addition|beta| Added new reports for retrieving user registration and usage information:<br/>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.<br/>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.<br/>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.<br/>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.<br/> |
 
-[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.<br/>
-[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.<br/>
-[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.<br/>
-[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.<br/>
-
-Added new resources to support the new reports:<br/>
-
-[credentialUsagesSummary](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) - Represents usage of self-service password reset.<br/>
-[credentialUserRegistrationCount](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) - Represents registrations for self-service password reset and multi-factor authentication.<br/>
-[credentialUserRegistrationDetails](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) - Represents usage of self-service password reset and multi-factor authentication.<br/>
-[userCredentialUsageDetails](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) – Represents usage of self-service password reset for a user.<br/>
-[userRegistrationCount](/graph/api/resources/userRegistrationCount?view=graph-rest-beta) - Represents registration for users. |
+|Addition|beta| Added new resources to support the new reports:<br/>[credentialUsagesSummary](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) - Represents usage of self-service password reset.<br/>[credentialUserRegistrationCount](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) - Represents registrations for self-service password reset and multi-factor authentication.<br/>[credentialUserRegistrationDetails](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) - Represents usage of self-service password reset and multi-factor authentication.<br/>[userCredentialUsageDetails](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) – Represents usage of self-service password reset for a user.<br/>[userRegistrationCount](/graph/api/resources/userRegistrationCount?view=graph-rest-beta) - Represents registration for users. |
 
 
 ### OneDrive and SharePoint APIs
