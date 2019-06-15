@@ -72,7 +72,7 @@ _Effective permissions_ are the permissions that your app will have when making 
   
 - For application permissions, the effective permissions of your app will be the full level of privileges implied by the permission. For example, an app that has the User.ReadWrite.All application permission can update the profile of every user in the organization.
 
-- By default, apps granted application permissions for [calendars](../../permissions-reference.md#calendars-permissions), [contacts](../../permissions-reference.md#contacts-permissions), [mail](../../permissions-reference.md#mail-permissions), or [mailbox](../../permissions-reference.md#mail-permissions) can access all the mailboxes in the organization. Administrators can configure [application access policy](../auth-limit-mailbox-access.md) to limit app access to specific mailboxes. 
+- By default, apps granted application permissions for [calendars](../permissions-reference.md), [contacts](../permissions-reference.md#contacts-permissions), [mail](../permissions-reference.md#mail-permissions), or [mailbox](../permissions-reference.md#mail-permissions) can access all the mailboxes in the organization. Administrators can configure [application access policy](../auth-limit-mailbox-access.md) to limit app access to specific mailboxes. 
 
 For a complete list of delegated and application permissions for Microsoft Graph, as well as which permissions require administrator consent, see the [Permissions reference](../permissions-reference.md).
 
