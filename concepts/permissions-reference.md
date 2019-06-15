@@ -175,6 +175,8 @@ None.
 |_Calendars.Read_ |Read calendars in all mailboxes |Allows the app to read events of all calendars without a signed-in user. |Yes |
 |_Calendars.ReadWrite_ |Read and write calendars in all mailboxes |Allows the app to create, read, update, and delete events of all calendars without a signed-in user. |Yes |
 
+> **Important**
+Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not to all the mailboxes in the organization, even if the app has been granted the application permissions of Calendars.Read or Calendars.ReadWrite.
 <br/>
 
 ### Example usage
@@ -265,6 +267,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_Contacts.Read_ |Read contacts in all mailboxes |Allows the app to read all contacts in all mailboxes without a signed-in user. |Yes |
 |_Contacts.ReadWrite_ |Read and write contacts in all mailboxes |Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user. |Yes |
+
+> **Important**
+Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not all the mailboxes in the organization, even if the app has been granted the application permissions of Contacts.Read or Contacts.ReadWrite.
 
 ### Example usage
 #### Delegated
@@ -679,6 +684,10 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Mail.Send_ |    Send mail as any user | Allows the app to send mail as any user without a signed-in user. | Yes |
 | _MailboxSettings.Read_ |  Read all user mailbox settings | Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail. | No |
 | _MailboxSettings.ReadWrite_ | Read and write all user mailbox settings  | Allows the app to create, read, update, and delete user's mailbox settings without a signed-in user. Does not include permission to send mail. | Yes |
+
+> **Important**
+Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not to all the mailboxes in the organization, even if the app has been granted the application permissions of Mail.Read, Mail.ReadWrite, Mail.Send, MailboxSettings.Read, or MailboxSettings.ReadWrite.
+
 
 ### Remarks
 
