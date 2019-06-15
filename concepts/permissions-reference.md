@@ -176,7 +176,7 @@ None.
 |_Calendars.ReadWrite_ |Read and write calendars in all mailboxes |Allows the app to create, read, update, and delete events of all calendars without a signed-in user. |Yes |
 
 > **Important**
-If an organization has an application access policy configured, apps that request application permissions of Calendars.Read or Calendars.ReadWrite may be able to access only a subset of the mailboxes as specified by the policy, and not all the mailboxes in the organization. Learn more about [Scoping application permissions to specific Exchange Online mailboxes](auth-limit-mailbox-access.md).
+Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not to all the mailboxes in the organization, even if the app has been granted the application permissions of Calendars.Read or Calendars.ReadWrite.
 <br/>
 
 ### Example usage
@@ -269,7 +269,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_Contacts.ReadWrite_ |Read and write contacts in all mailboxes |Allows the app to create, read, update, and delete all contacts in all mailboxes without a signed-in user. |Yes |
 
 > **Important**
-If an organization has an application access policy configured, apps that request application permissions of Contacts.Read or Contacts.ReadWrite may be able to access only a subset of the mailboxes as specified by the policy, and not all the mailboxes in the organization. Learn more about [Scoping application permissions to specific Exchange Online mailboxes](auth-limit-mailbox-access.md).
+Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not all the mailboxes in the organization, even if the app has been granted the application permissions of Contacts.Read or Contacts.ReadWrite.
 
 ### Example usage
 #### Delegated
@@ -686,7 +686,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _MailboxSettings.ReadWrite_ | Read and write all user mailbox settings  | Allows the app to create, read, update, and delete user's mailbox settings without a signed-in user. Does not include permission to send mail. | Yes |
 
 > **Important**
-If an organization has an application access policy configured, apps that request application permissions of Mail.Read, Mail.ReadWrite, Mail.Send, MailboxSettings.Read, or MailboxSettings.ReadWrite may be able to access only a subset of the mailboxes as specified by the policy, and not all the mailboxes in the organization. Learn more about [Scoping application permissions to specific Exchange Online mailboxes](auth-limit-mailbox-access.md).
+Administrators can configure [application access policy](auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes and not to all the mailboxes in the organization, even if the app has been granted the application permissions of Mail.Read, Mail.ReadWrite, Mail.Send, MailboxSettings.Read, or MailboxSettings.ReadWrite.
+
 
 ### Remarks
 

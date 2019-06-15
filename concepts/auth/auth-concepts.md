@@ -79,7 +79,7 @@ _Effective permissions_ are the permissions that your app will have when making 
 - [Mail](../permissions-reference.md#mail-permissions)
 - [Mailbox settings](../permissions-reference.md#mail-permissions)
 
-Administrators can configure [application access policy](../auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes. 
+>Administrators can configure [application access policy](../auth-limit-mailbox-access.md) to limit app access to _specific_ mailboxes. 
 
 For a complete list of delegated and application permissions for Microsoft Graph, as well as which permissions require administrator consent, see the [Permissions reference](../permissions-reference.md).
 
