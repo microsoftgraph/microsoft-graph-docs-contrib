@@ -72,7 +72,7 @@ _Effective permissions_ are the permissions that your app will have when making 
   
 - For application permissions, the effective permissions of your app will be the full level of privileges implied by the permission. For example, an app that has the User.ReadWrite.All application permission can update the profile of every user in the organization.
 
->**Note** By default, apps that have been granted the following application permissions can access all the mailboxes in the organization:
+>**Note** By default, apps that have been granted application permissions to the following data sets can access all the mailboxes in the organization:
 
 - [Calendars](../permissions-reference.md#calendars-permissions)
 - [Contacts](../permissions-reference.md#contacts-permissions)
