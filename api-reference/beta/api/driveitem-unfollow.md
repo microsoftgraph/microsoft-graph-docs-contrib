@@ -2,6 +2,7 @@
 author: chackman
 ms.author: chackman
 title: Unfollow drive item
+description: "Unfollow an item that the user is following."
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
@@ -28,8 +29,10 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/drive/following/{item-id} 
+DELETE /me/drive/following/{item-id}
 DELETE /users/{user-id}/drive/following/{item-id}
+POST /me/drive/items/{item-id}/unfollow
+POST /users/{user-id}/drive/items/{item-id}/unfollow
 ```
 
 ## Request body
@@ -48,7 +51,7 @@ This example unfollows an item identified by `{item-id}`.
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-DELETE /me/drive/following/{item-id}
+DELETE /me/drive/items/{item-id}/unfollow
 ```
 ### Response
 <!-- { 
