@@ -1,8 +1,8 @@
 ---
 author: chackman
 ms.author: chackman
+description: Unfollow an item that the user is following.
 title: Unfollow drive item
-description: "Unfollow an item that the user is following."
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
