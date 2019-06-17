@@ -41,24 +41,6 @@ PATCH /auditLogs/directoryProvisioning/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|action|String||
-|activityDateTime|DateTimeOffset||
-|changeId|String||
-|cycleId|String||
-|durationInMilliseconds|Int32||
-|initiatedBy|initiator||
-|jobId|String||
-|modifiedProperties|modifiedProperty collection||
-|provisioningSteps|provisioningStep collection||
-|sourceIdentity|provisionedIdentity||
-|sourceSystem|provisioningSystemDetails||
-|statusInfo|statusBase||
-|targetIdentity|provisionedIdentity||
-|targetSystem|provisioningSystemDetails||
-|tenantId|String||
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [provisioningObjectSummary](../resources/provisioningobjectsummary.md) object in the response body.
