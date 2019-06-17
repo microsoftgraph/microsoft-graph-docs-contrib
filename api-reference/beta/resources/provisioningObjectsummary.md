@@ -18,8 +18,8 @@ Represents an action performed by the Azure AD Provisioning service and it's ass
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get provisioningObjectSummary](../api/provisioningobjectsummary-get.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Read properties and relationships of provisioningObjectSummary object. |
-| [Update](../api/provisioningobjectsummary-update.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Update provisioningObjectSummary object. |
-| [Delete](../api/provisioningobjectsummary-delete.md) | None | Delete provisioningObjectSummary object. |
+| [List](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | List provisioningObjectSummary object. |
+
 
 ## Properties
 
