@@ -1,25 +1,26 @@
 ---
-title: "modifiedProperty resource type"
-description: "modifiedProperty resource"
+title: "provisionedIdentity resource type"
+description: "provisionedIdentity resource"
 localization_priority: Normal
 author: "arvinh@microsoft.com"
 ms.prod: "ms.prod"
 doc_type: "resourcePageType"
 ---
 
-# modifiedProperty resource type
+# provisionedIdentity resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-the modifiedProperty resource describes the changes perfomed. 
+The provisionedIdentity resource describes the identity associated witht the provisioning object summary event. 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|Name of property that was modified.|
-|newValue|String|New property value.|
-|oldValue|String|Old property value.|
+|details|[detailsInfo](detailsinfo.md)|Details of the identity.|
+|displayName|String|Display name of the identity. |
+|id|String|Uniquely identifies the identity.|
+|identityType|String|Type of identity that has been provisioned, such as 'user' or 'group'.|
 
 ## JSON representation
 
@@ -30,15 +31,16 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.modifiedProperty",
+  "@odata.type": "microsoft.graph.provisionedIdentity",
   "baseType": null
 }-->
 
 ```json
 {
+  "details": {"@odata.type": "microsoft.graph.detailsInfo"},
   "displayName": "String",
-  "newValue": "String",
-  "oldValue": "String"
+  "id": "String",
+  "identityType": "String"
 }
 ```
 
@@ -46,7 +48,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "modifiedProperty resource",
+  "description": "provisionedIdentity resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

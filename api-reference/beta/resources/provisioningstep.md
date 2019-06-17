@@ -1,0 +1,57 @@
+---
+title: "provisioningStep resource type"
+description: "provisioningStep resource"
+localization_priority: Normal
+author: "arvinh@microsoft.com"
+ms.prod: "ms.prod"
+doc_type: "resourcePageType"
+---
+
+# provisioningStep resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+The Azure AD Provisioning service runs through a set of steps to provision a user. The step resource describes the steps taken to per form an action. 
+
+## Properties
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|description|String|Summary of what occurred during the step.|
+|details|[detailsInfo](detailsinfo.md)|Detials of what occurred during the step.|
+|name|String|Name of the step.|
+|provisioningStepType|String| Type of step. Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
+|status|String| Status of the step. Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.|
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.provisioningStep",
+  "baseType": null
+}-->
+
+```json
+{
+  "description": "String",
+  "details": {"@odata.type": "microsoft.graph.detailsInfo"},
+  "name": "String",
+  "provisioningStepType": "String",
+  "status": "String"
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "provisioningStep resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
