@@ -1,0 +1,66 @@
+---
+title: "educationOutcome resource type"
+description: "The result of grading an assignment"
+localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: "resourcePageType"
+---
+
+# educationOutcome resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+The result of grading an assignment. This is a base class; the derived types are [educationFeedbackOutcome](educationfeedbackoutcome.md), [educationPointsOutcome](educationpointsoutcome.md), and [educationRubricOutcome](educationrubricoutcome.md).
+
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [Get educationOutcome](../api/educationoutcome-get.md) | [educationOutcome](educationoutcome.md) | Read properties and relationships of educationOutcome object. |
+| [Update](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Delete](../api/educationoutcome-delete.md) | None | Delete educationOutcome object. |
+
+## Properties
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|id|String| Read-only.|
+|lastModifiedBy|[identitySet](identityset.md)||
+|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+
+## Relationships
+
+None
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationOutcome",
+  "baseType": "",
+  "keyProperty": "id"
+}-->
+
+```json
+{
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)"
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "educationOutcome resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
