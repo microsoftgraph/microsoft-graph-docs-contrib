@@ -1,16 +1,16 @@
 ---
 title: "Get bytes of a chatMessageHostedImages"
-description: "Get the binary representation of a hosted image inside a channel or chat message.."
-author: "nkramer"
-localization_priority: Priority
+description: "Get the binary representation of a hosted image inside a channel or chat message."
+author: "clearab"
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Get bytes of a hosted image
+# chatMessageHostedImage: getBytes
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the binary representation of a [hosted image](../resources/chatmessagehostedimage.md) in a [message](../resources/chatmessage.md).
+Get the binary representation of a [hosted image](../resources/chatmessagehostedimage.md) in a [message](../resources/chatmessage.md).
 
 ## Permissions
 
@@ -18,8 +18,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Group.Read.All,Group.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
+|Delegated (work or school account)|Group.Read.All, Group.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application| Not supported. |
 
 ## HTTP request
@@ -33,7 +33,7 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedImages/{id}/$value
 
 ## Optional query parameters
 
-This operation does not support the [OData Query Parameters](/graph/query-parameters) to customize the response.
+This method does not support the [OData Query Parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 

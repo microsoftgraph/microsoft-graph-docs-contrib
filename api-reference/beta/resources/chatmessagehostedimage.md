@@ -1,7 +1,8 @@
 ---
-title: "Hosted Image resource type"
-description: "Represents an image inside a chatMessage."
-localization_priority: Priority
+title: "chatMessageHostedImage resource type"
+description: "Represents a hosted image inside a chatMessage."
+localization_priority: Normal
+author: "clearab"
 ---
 
 # chatMessageHostedImage resource type
@@ -10,25 +11,24 @@ localization_priority: Priority
 
 Represents a hosted image inside a [chatMessage](../resources/chatmessage.md).
 
-Hosted images are the images that appear in the message's body.content in an <img> tag with a src attribute that starts with `https://graph.microsoft.com`.
+Hosted images are the images that appear in the message's **body.content** in an \<img> tag with a src attribute that starts with `https://graph.microsoft.com`.
 
-Not all images in a message are hosted images.
-Microsoft Teams also supports public images (where the img src is a public website). 
+Not all images in a message are hosted images, Microsoft Teams also supports public images (where the img src attribute points to a public website).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List hosted images](../api/chatmessagehostedimage-list-hostedimages.md) | [chatMessageHostedImage](chatmessagehostedimage.md) collection | Get the list of all hosted images in a chatMessage.|
-|[Get hosted image](../api/chatmessagehostedimage-get.md) | [chatMessageHostedImage](chatmessagehostedimage.md) | Get a single hosted image.|
-|[Get hosted image bytes](../api/chatmessagehostedimage-getbytes.md) | Content-type: image/jpeg | Get the raw bytes of the hosted image.|
+|[List chatMessageHostedImages in a chatMessage](../api/chatmessagehostedimage-list-hostedimages.md) | [chatMessageHostedImage](chatmessagehostedimage.md) collection | List of all hosted images in a **chatMessage**.|
+|[Get chatMessageHostedImage](../api/chatmessagehostedimage-get.md) | [chatMessageHostedImage](chatmessagehostedimage.md) | Get a single hosted image.|
+|[chatMessageHostedImage: getBytes](../api/chatmessagehostedimage-getbytes.md) | Content-type: image/jpeg | Get the raw bytes of the hosted image.|
 
 ## Properties
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the message.|
-|url| string | The url to retrieve the image contents from.|
+|URL| string | The url to retrieve the image contents from.|
 
 ## JSON representation
 

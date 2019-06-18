@@ -1,8 +1,8 @@
 ---
 title: "Get chatMessageHostedImage"
-description: "Retrieve an image inside a chatMessage."
+description: "Retrieve a hosted image inside a chatMessage."
 author: "clearab"
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
@@ -18,8 +18,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Group.Read.All,Group.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
+|Delegated (work or school account)|Group.Read.All, Group.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application| Not supported. |
 
 ## HTTP request

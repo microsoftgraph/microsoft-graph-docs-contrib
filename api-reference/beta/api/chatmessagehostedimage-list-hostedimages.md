@@ -1,12 +1,12 @@
 ---
 title: "List chatMessageHostedImages in a chatmessage"
-description: "Retrieve the list of hosted images in a chatMessage."
+description: "List all the hosted images in a chatMessage."
 localization_priority: Priority
 author: "clearab"
 ms.prod: "microsoft-teams"
 ---
 
-# List chatMessageHostedImages in a chatmessage
+# List chatMessageHostedImages in a chatMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,7 +18,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Group.Read.All,Group.ReadWrite.All|
+|Delegated (work or school account)|Group.Read.All, Group.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application| Not supported. |
 
