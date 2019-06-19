@@ -1,6 +1,6 @@
 ---
 title: "detailsInfo resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "detailsInfo resource"
 localization_priority: Normal
 author: "arvinh@microsoft.com"
 ms.prod: "ms.prod"
