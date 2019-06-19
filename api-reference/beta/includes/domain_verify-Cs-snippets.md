@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 await graphClient.Domains["contoso.com"]
 	.Verify()
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

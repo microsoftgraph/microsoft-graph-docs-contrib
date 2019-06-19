@@ -1,16 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var color = new CalendarColor
-{
-};
 
 var calendar = new Calendar
 {
 	Name = "name-value",
-	Color = color,
+	Color = new CalendarColor
+	{
+	}
 };
 
 await graphClient.Me.CalendarGroups["{id}"].Calendars

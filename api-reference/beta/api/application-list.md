@@ -1,7 +1,7 @@
 ---
 title: "List applications"
 description: "Retrieve the list of applications in this organization."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
 ---

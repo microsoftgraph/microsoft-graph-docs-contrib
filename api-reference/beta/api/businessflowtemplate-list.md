@@ -41,10 +41,10 @@ If successful, this method returns a `200, OK` response code and an array of [bu
 
 <!-- {
   "blockType": "request",
-  "name": "get_businesFlowTemplate"
+  "name": "get_businessFlowTemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/businesFlowTemplates
+GET https://graph.microsoft.com/beta/businessFlowTemplates
 ```
 
 ##### Response

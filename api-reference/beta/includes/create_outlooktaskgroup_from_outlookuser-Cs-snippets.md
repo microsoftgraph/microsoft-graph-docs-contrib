@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var outlookTaskGroup = new OutlookTaskGroup
 {
-	Name = "Leisure tasks",
+	Name = "Leisure tasks"
 };
 
 await graphClient.Me.Outlook.TaskGroups

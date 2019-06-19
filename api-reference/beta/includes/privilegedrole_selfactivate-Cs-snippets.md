@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -14,6 +17,6 @@ var ticketSystem = "ticketSystem-value";
 await graphClient.PrivilegedRoles["{id}"]
 	.SelfActivate(reason,duration,ticketNumber,ticketSystem)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```
