@@ -1,5 +1,5 @@
 ---
-title: "Get bytes of a chatMessageHostedImages"
+title: "chatMessageHostedImage: getBytes"
 description: "Get the binary representation of a hosted image inside a channel or chat message."
 author: "clearab"
 localization_priority: Normal
