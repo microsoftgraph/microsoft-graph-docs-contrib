@@ -2,7 +2,7 @@
 title: "detailsInfo resource type"
 description: "detailsInfo resource"
 localization_priority: Normal
-author: "arvinh@microsoft.com"
+author: "ArvindHarinder1"
 ms.prod: "ms.prod"
 doc_type: "resourcePageType"
 ---
