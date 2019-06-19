@@ -13,6 +13,10 @@ doc_type: "resourcePageType"
 
 When an instance of an application from the Azure AD application gallery is added, [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) objects are created in the directory. The applicationServicePrincipal represents the concatenation of the application and servicePrincipal object.
 
+## Methods
+
+None
+
 ## Properties
 
 None
@@ -23,6 +27,72 @@ None
 |:-------------|:------------|:------------|
 |application|[application](../resources/application.md)|Represents an application registered in Azure Active Directory.|
 |servicePrincipal|[servicePrincipal](../resources/serviceprincipal.md)|Represents an instance of an application in a directory.|
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.applicationServicePrincipal",
+  "baseType": "",
+  "keyProperty": "id"
+}-->
+
+```json
+
+{
+   "servicePrincipal": {
+	  "accountEnabled": true,
+	  "addIns": [
+	    {
+	      "id": "id-value",
+	      "type": "type-value",
+	      "properties": [
+		{
+		  "key": "key-value",
+		  "value": "value-value"
+		}
+	      ]
+	    }
+	  ],
+	  "appDisplayName": "appDisplayName-value",
+	  "appId": "appId-value",
+	  "appOwnerOrganizationId": "appOwnerOrganizationId-value",
+	  "appRoleAssignmentRequired": true
+   },
+   "application": {
+	  "api": {
+	    "acceptedAccessTokenVersion": 1,
+	    "publishedPermissionScopes": [
+	      {
+		"adminConsentDescription": "adminConsentDescription-value",
+		"adminConsentDisplayName": "adminConsentDisplayName-value",
+		"id": "id-value",
+		"isEnabled": true,
+		"type": "type-value",
+		"userConsentDescription": "userConsentDescription-value",
+		"userConsentDisplayName": "userConsentDisplayName-value",
+		"value": "value-value"
+	      }
+	    ]
+	  },
+	  "allowPublicClient": true,
+	  "applicationAliases": [
+	    "applicationAliases-value"
+	  ],
+	  "createdDateTime": "datetime-value",
+	  "installedClients": {
+	    "redirectUrls": [
+	      "redirectUrls-value"
+	    ]
+	  }
+   }
+}
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
