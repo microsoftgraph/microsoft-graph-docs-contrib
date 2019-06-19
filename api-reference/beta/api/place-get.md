@@ -105,8 +105,8 @@ Content-type: application/json
     "latitude": 47.640568390488625,
     "longitude": -122.1293731033802
   },
-  "emailAddress": "cf3235@contoso.com",
   "phone": "000-000-0000",
+  "emailAddress": "cf3235@contoso.com",
   "nickname": "Conf Room",
   "label": "35",
   "capacity": "50",
