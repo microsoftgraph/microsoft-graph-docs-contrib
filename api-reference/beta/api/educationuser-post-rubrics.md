@@ -93,6 +93,7 @@ Content-type: application/json
         "content": "content-value"
       },
       "grading": {
+        "@odata.type":"#microsoft.graph.educationAssignmentGradeType"
       }
     }
   ],
@@ -104,6 +105,7 @@ Content-type: application/json
         "content": "content-value"
       },
       "grading": {
+        "@odata.type":"#microsoft.graph.educationAssignmentGradeType"
       }
     }
   ]
@@ -162,6 +164,7 @@ Content-type: application/json
         "content": "content-value"
       },
       "grading": {
+        "@odata.type":"#microsoft.graph.educationAssignmentGradeType"
       }
     }
   ],
@@ -174,6 +177,7 @@ Content-type: application/json
         "content": "content-value"
       },
       "grading": {
+        "@odata.type":"#microsoft.graph.educationAssignmentGradeType"
       }
     }
   ]
