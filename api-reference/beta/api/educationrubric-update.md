@@ -48,9 +48,9 @@ In the request body, supply the values for relevant fields that should be update
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |columnHeaders|rubricLevel collection||
-|description|educationItemBody||
+|description|itemBody||
 |displayName|String||
-|grading|educationAssignmentsGradeType||
+|grading|educationAssignmentGradeType||
 |levels|rubricLevel collection||
 |qualities|rubricQuality collection||
 
@@ -86,7 +86,7 @@ Content-type: application/json
         "contentType": "contentType-value",
         "content": "content-value"
       },
-      "weight": "weight-value",
+      "weight": 100,
       "criteria": [
         {
           "id": "id-value",
@@ -156,7 +156,7 @@ Content-type: application/json
         "contentType": "contentType-value",
         "content": "content-value"
       },
-      "weight": "weight-value",
+      "weight": 100,
       "criteria": [
         {
           "id": "id-value",

@@ -99,7 +99,7 @@ Content-type: application/json
             "contentType": "contentType-value",
             "content": "content-value"
           },
-          "weight": "weight-value",
+          "weight": 100,
           "criteria": [
             {
               "id": "id-value",
