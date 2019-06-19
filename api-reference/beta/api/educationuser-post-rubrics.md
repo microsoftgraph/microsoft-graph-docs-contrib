@@ -74,7 +74,7 @@ Content-type: application/json
         "contentType": "contentType-value",
         "content": "content-value"
       },
-      "weight": 100,
+      "weight": "Single",
       "criteria": [
         {
           "description": {
@@ -143,7 +143,7 @@ Content-type: application/json
         "contentType": "contentType-value",
         "content": "content-value"
       },
-      "weight": 100,
+      "weight": "Single",
       "criteria": [
         {
           "id": "id-value",
