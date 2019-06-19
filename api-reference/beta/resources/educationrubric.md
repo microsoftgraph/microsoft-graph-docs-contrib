@@ -85,7 +85,7 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
-  "grading": {"@odata.type": "microsoft.graph.educationRubricGradeType"},
+  "grading": {"@odata.type": "microsoft.graph.educationAssignmentGradeType"},
   "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
