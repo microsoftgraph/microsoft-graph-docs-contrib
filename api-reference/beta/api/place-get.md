@@ -93,7 +93,6 @@ Content-type: application/json
 {
   "@odata.type": "microsoft.graph.room",
   "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
-  "emailAddress": "cf3235@contoso.com",
   "displayName": "Conf Room 32/35 (25)",
   "address": {
     "street": "One Microsoft Way",
@@ -106,6 +105,7 @@ Content-type: application/json
     "latitude": 47.640568390488625,
     "longitude": -122.1293731033802
   },
+  "emailAddress": "cf3235@contoso.com",
   "phone": "000-000-0000",
   "nickname": "Conf Room",
   "label": "35",
