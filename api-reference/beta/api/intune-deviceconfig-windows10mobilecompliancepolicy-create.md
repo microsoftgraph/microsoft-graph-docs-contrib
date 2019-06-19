@@ -1,7 +1,7 @@
 ---
 title: "Create windows10MobileCompliancePolicy"
 description: "Create a new windows10MobileCompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

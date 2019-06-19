@@ -1,7 +1,7 @@
 ---
 title: "Delete appLogCollectionRequest"
 description: "Deletes a appLogCollectionRequest."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

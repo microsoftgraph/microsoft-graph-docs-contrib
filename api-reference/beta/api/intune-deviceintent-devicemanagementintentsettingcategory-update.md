@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementIntentSettingCategory"
 description: "Update the properties of a deviceManagementIntentSettingCategory object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

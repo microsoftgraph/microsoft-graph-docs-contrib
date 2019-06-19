@@ -1,7 +1,7 @@
 ---
 title: "Json resource type"
 description: "Represents data returned in JSON format"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

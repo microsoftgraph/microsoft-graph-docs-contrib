@@ -1,7 +1,7 @@
 ---
 title: "Update symantecCodeSigningCertificate"
 description: "Update the properties of a symantecCodeSigningCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

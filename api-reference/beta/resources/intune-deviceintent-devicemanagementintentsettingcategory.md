@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementIntentSettingCategory resource type"
 description: "Entity representing an intent setting category"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

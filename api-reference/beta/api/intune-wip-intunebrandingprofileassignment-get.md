@@ -1,7 +1,7 @@
 ---
 title: "Get intuneBrandingProfileAssignment"
 description: "Read properties and relationships of the intuneBrandingProfileAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "administratorConfiguredDeviceComplianceState enum type"
 description: "Administrator configured device compliance state Enum"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

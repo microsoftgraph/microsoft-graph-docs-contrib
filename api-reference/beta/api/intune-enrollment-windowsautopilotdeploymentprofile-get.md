@@ -1,7 +1,7 @@
 ---
 title: "Get windowsAutopilotDeploymentProfile"
 description: "Read properties and relationships of the windowsAutopilotDeploymentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1341
+Content-Length: 1409
 
 {
   "value": {
@@ -95,7 +95,10 @@ Content-Length: 1341
     "extractHardwareHash": true,
     "deviceNameTemplate": "Device Name Template value",
     "deviceType": "surfaceHub2",
-    "enableWhiteGlove": true
+    "enableWhiteGlove": true,
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

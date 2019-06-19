@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppRegistryDetectionType enum type"
 description: "Contains all supported registry data detection type."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

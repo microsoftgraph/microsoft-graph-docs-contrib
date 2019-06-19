@@ -1,7 +1,7 @@
 ---
 title: "Get advancedThreatProtectionOnboardingStateSummary"
 description: "Read properties and relationships of the advancedThreatProtectionOnboardingStateSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

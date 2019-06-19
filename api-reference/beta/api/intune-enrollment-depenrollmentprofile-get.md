@@ -1,7 +1,7 @@
 ---
 title: "Get depEnrollmentProfile"
 description: "Read properties and relationships of the depEnrollmentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List windowsPhone81StoreApps"
 description: "List properties and relationships of the windowsPhone81StoreApp objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

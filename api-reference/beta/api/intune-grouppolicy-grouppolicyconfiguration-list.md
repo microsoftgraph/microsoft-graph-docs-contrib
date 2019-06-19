@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyConfigurations"
 description: "List properties and relationships of the groupPolicyConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

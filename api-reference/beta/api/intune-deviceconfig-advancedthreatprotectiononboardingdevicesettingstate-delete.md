@@ -1,7 +1,7 @@
 ---
 title: "Delete advancedThreatProtectionOnboardingDeviceSettingState"
 description: "Deletes a advancedThreatProtectionOnboardingDeviceSettingState."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

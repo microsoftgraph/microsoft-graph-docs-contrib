@@ -1,7 +1,7 @@
 ---
 title: "Device configuration in Microsoft Intune - Microsoft Gaaph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define configure devices for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -10,7 +10,7 @@ ms.prod: "intune"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Use the Microsoft Intune Device Configuration workload to manage settings and features on all of the devices you manage.
 
@@ -85,6 +85,7 @@ The following Graph resources are available to manage settings and features on d
 - [Android work profile VPN configuration](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Android work profile VPN connection type](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Android work profile Wi-Fi configuration](intune-deviceconfig-androidworkprofilewificonfiguration.md)
+- [App install control type](intune-deviceconfig-appinstallcontroltype.md)
 - [App list item](intune-deviceconfig-applistitem.md)
 - [App list type](intune-deviceconfig-applisttype.md)
 - [App locker application control type](intune-deviceconfig-applockerapplicationcontroltype.md)
@@ -110,6 +111,7 @@ The following Graph resources are available to manage settings and features on d
 - [Certificate revocation status](intune-deviceconfig-certificaterevocationstatus.md)
 - [Certificate store](intune-deviceconfig-certificatestore.md)
 - [Certificate validity period scale](intune-deviceconfig-certificatevalidityperiodscale.md)
+- [Change uefi settings permission](intune-deviceconfig-changeuefisettingspermission.md)
 - [Configuration usage](intune-deviceconfig-configurationusage.md)
 - [Custom subject alternative name](intune-deviceconfig-customsubjectalternativename.md)
 - [Day of week](intune-deviceconfig-dayofweek.md)
@@ -166,6 +168,13 @@ The following Graph resources are available to manage settings and features on d
 - [Device configuration user state summary](intune-deviceconfig-deviceconfigurationuserstatesummary.md)
 - [Device configuration user status](intune-deviceconfig-deviceconfigurationuserstatus.md)
 - [Device guard local system authority credential guard type](intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)
+- [Device management applicability rule device mode](intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)
+- [Device management applicability rule os edition](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
+- [Device management applicability rule os version](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
+- [Device management applicability rule type](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
+- [Device management derived credential issuer](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
+- [Device management derived credential notification type](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
+- [Device management derived credential settings](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [Device management settings](intune-deviceconfig-devicemanagementsettings.md)
 - [Device management user rights local user or group](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Device management user rights setting](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -193,6 +202,7 @@ The following Graph resources are available to manage settings and features on d
 - [Edge telemetry mode](intune-deviceconfig-edgetelemetrymode.md)
 - [Edition upgrade configuration](intune-deviceconfig-editionupgradeconfiguration.md)
 - [Edition upgrade license type](intune-deviceconfig-editionupgradelicensetype.md)
+- [Email certificate type](intune-deviceconfig-emailcertificatetype.md)
 - [Email sync duration](intune-deviceconfig-emailsyncduration.md)
 - [Email sync schedule](intune-deviceconfig-emailsyncschedule.md)
 - [Encryption readiness state](intune-deviceconfig-encryptionreadinessstate.md)
@@ -239,6 +249,7 @@ The following Graph resources are available to manage settings and features on d
 - [iOS certificate profile base](intune-deviceconfig-ioscertificateprofilebase.md)
 - [iOS compliance policy](intune-deviceconfig-ioscompliancepolicy.md)
 - [iOS custom configuration](intune-deviceconfig-ioscustomconfiguration.md)
+- [iOS derived credential authentication configuration](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [iOS device features configuration](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
 - [iOS EAS email profile configuration](intune-deviceconfig-ioseasemailprofileconfiguration.md)
 - [iOS EDU certificate settings](intune-deviceconfig-ioseducertificatesettings.md)
@@ -263,11 +274,13 @@ The following Graph resources are available to manage settings and features on d
 - [iOS update device status](intune-deviceconfig-iosupdatedevicestatus.md)
 - [iOS updates install status](intune-deviceconfig-iosupdatesinstallstatus.md)
 - [iOS VPN configuration](intune-deviceconfig-iosvpnconfiguration.md)
+- [iOS VPN security association parameters](intune-deviceconfig-iosvpnsecurityassociationparameters.md)
 - [iOS wallpaper display location](intune-deviceconfig-ioswallpaperdisplaylocation.md)
 - [iOS web content filter auto-filter](intune-deviceconfig-ioswebcontentfilterautofilter.md)
 - [iOS web content filter base](intune-deviceconfig-ioswebcontentfilterbase.md)
 - [iOS web content filter specific websites access](intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess.md)
 - [iOS Wi-Fi configuration](intune-deviceconfig-ioswificonfiguration.md)
+- [iOSik ev2 VPN configuration](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [Key size](intune-deviceconfig-keysize.md)
 - [Key storage provider option](intune-deviceconfig-keystorageprovideroption.md)
 - [Key usages](intune-deviceconfig-keyusages.md)
@@ -287,6 +300,7 @@ The following Graph resources are available to manage settings and features on d
 - [macOS endpoint protection configuration](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [macOS enterprise Wi-Fi configuration](intune-deviceconfig-macosenterprisewificonfiguration.md)
 - [macOS extensions configuration](intune-deviceconfig-macosextensionsconfiguration.md)
+- [macOS file vault recovery key types](intune-deviceconfig-macosfilevaultrecoverykeytypes.md)
 - [macOS firewall application](intune-deviceconfig-macosfirewallapplication.md)
 - [macOS gatekeeper app sources](intune-deviceconfig-macosgatekeeperappsources.md)
 - [macOS general device configuration](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
@@ -352,6 +366,7 @@ The following Graph resources are available to manage settings and features on d
 - [Restricted apps violation](intune-deviceconfig-restrictedappsviolation.md)
 - [Safe search filter type](intune-deviceconfig-safesearchfiltertype.md)
 - [Secure assessment account type](intune-deviceconfig-secureassessmentaccounttype.md)
+- [Secure boot with d m a type](intune-deviceconfig-securebootwithdmatype.md)
 - [Service start type](intune-deviceconfig-servicestarttype.md)
 - [Setting source](intune-deviceconfig-settingsource.md)
 - [Setting state device summary](intune-deviceconfig-settingstatedevicesummary.md)
@@ -375,7 +390,12 @@ The following Graph resources are available to manage settings and features on d
 - [Username source](intune-deviceconfig-usernamesource.md)
 - [Visibility setting](intune-deviceconfig-visibilitysetting.md)
 - [VPN authentication method](intune-deviceconfig-vpnauthenticationmethod.md)
+- [VPN client authentication type](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [VPN dead peer detection rate](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [VPN DNS rule](intune-deviceconfig-vpndnsrule.md)
+- [VPN encryption algorithm type](intune-deviceconfig-vpnencryptionalgorithmtype.md)
+- [VPN integrity algorithm type](intune-deviceconfig-vpnintegrityalgorithmtype.md)
+- [VPN local identifier](intune-deviceconfig-vpnlocalidentifier.md)
 - [VPN on demand rule](intune-deviceconfig-vpnondemandrule.md)
 - [VPN on demand rule connection action](intune-deviceconfig-vpnondemandruleconnectionaction.md)
 - [VPN on demand rule connection domain action](intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)
@@ -383,6 +403,7 @@ The following Graph resources are available to manage settings and features on d
 - [VPN proxy server](intune-deviceconfig-vpnproxyserver.md)
 - [VPN route](intune-deviceconfig-vpnroute.md)
 - [VPN server](intune-deviceconfig-vpnserver.md)
+- [VPN server certificate type](intune-deviceconfig-vpnservercertificatetype.md)
 - [VPN traffic rule](intune-deviceconfig-vpntrafficrule.md)
 - [VPN traffic rule app type](intune-deviceconfig-vpntrafficruleapptype.md)
 - [VPN traffic rule routing policy type](intune-deviceconfig-vpntrafficruleroutingpolicytype.md)
@@ -399,6 +420,8 @@ The following Graph resources are available to manage settings and features on d
 - [Windows 10 certificate profile base](intune-deviceconfig-windows10certificateprofilebase.md)
 - [Windows 10 compliance policy](intune-deviceconfig-windows10compliancepolicy.md)
 - [Windows 10 custom configuration](intune-deviceconfig-windows10customconfiguration.md)
+- [Windows 10 device firmware configuration interface](intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md)
+- [Windows 10 device mode type](intune-deviceconfig-windows10devicemodetype.md)
 - [Windows 10 EAS email profile configuration](intune-deviceconfig-windows10easemailprofileconfiguration.md)
 - [Windows 10 edition type](intune-deviceconfig-windows10editiontype.md)
 - [Windows 10 endpoint protection configuration](intune-deviceconfig-windows10endpointprotectionconfiguration.md)
@@ -484,4 +507,4 @@ The following Graph resources are available to manage settings and features on d
 - [Windows VPN configuration](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Windows VPN connection type](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi configuration](intune-deviceconfig-windowswificonfiguration.md)
-- [Windows Wi-Fi enterprise e a p configuration](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+- [Windows Wi-Fi enterprise eap configuration](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)

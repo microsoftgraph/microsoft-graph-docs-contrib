@@ -9,23 +9,22 @@ ms.prod: "microsoft-identity-platform"
 # riskyUserHistoryItem resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Represents the risk history of Azure AD users as determined by Azure AD Identity Protection. 
+Represents the risk history of an Azure AD user as determined by Azure AD Identity Protection. 
 
 ## Methods
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[Get riskyUser History](../api/riskyuserhistoryitem-get.md) | [riskyUser](riskyUser.md) collection|List the risk history of an Azure AD user.|
-|[List riskyUser History](../api/riskyuser-list-history.md) | [riskyUser](riskyUser.md)|Get the risk history of an Azure AD user.|
+|[List history](../api/riskyuser-list-history.md) | [riskyUserHistoryItem](riskyuserhistoryitem.md) collection|Get the risk history of an Azure AD user.|
 
 
 ## Properties
 
 | Property       | Type    | Description |
 |:---------------|:--------|:------------|
-| userId         | string  | The id of the user |
-| initiatedBy    | bool    | The id of actor that does the operation |
-| activity       | [riskUserActivity](riskuseractivity.md)| The activity related to user risk level change | 
+| userId         | string  | The id of the user. |
+| initiatedBy    | bool    | The id of actor that does the operation. |
+| activity       | [riskUserActivity](riskuseractivity.md)| The activity related to user risk level change. | 
 
 ## JSON representation
 
@@ -39,7 +38,7 @@ Represents the risk history of Azure AD users as determined by Azure AD Identity
 ```json
 {
     "userId": "string",
-    "initiatedBy": "bool",
+    "initiatedBy": "string",
     "activity": {"@odata.type": "microsoft.graph.riskUserActivity"}
 }
 ```
@@ -48,7 +47,7 @@ Represents the risk history of Azure AD users as determined by Azure AD Identity
 <!--
 {
   "type": "#page.annotation",
-  "description": "",
+  "description": "riskyUserHistoryItem resource type",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

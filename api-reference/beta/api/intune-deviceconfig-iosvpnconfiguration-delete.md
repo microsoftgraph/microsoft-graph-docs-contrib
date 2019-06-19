@@ -1,7 +1,7 @@
 ---
 title: "Delete iosVpnConfiguration"
 description: "Deletes a iosVpnConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

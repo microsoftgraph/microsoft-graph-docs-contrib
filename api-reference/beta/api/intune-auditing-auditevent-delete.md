@@ -1,7 +1,7 @@
 ---
 title: "Delete auditEvent"
 description: "Deletes a auditEvent."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

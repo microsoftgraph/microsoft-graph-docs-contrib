@@ -1,7 +1,7 @@
 ---
 title: "Delete groupPolicyConfiguration"
 description: "Deletes a groupPolicyConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

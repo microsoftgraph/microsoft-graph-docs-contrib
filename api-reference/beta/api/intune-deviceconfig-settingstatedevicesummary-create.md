@@ -1,7 +1,7 @@
 ---
 title: "Create settingStateDeviceSummary"
 description: "Create a new settingStateDeviceSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update reportRoot"
 description: "Update the properties of a reportRoot object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---

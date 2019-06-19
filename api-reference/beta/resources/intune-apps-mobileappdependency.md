@@ -1,7 +1,7 @@
 ---
 title: "mobileAppDependency resource type"
 description: "Describes a dependency type between two mobile apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -32,7 +32,7 @@ Inherits from [mobileAppRelationship](../resources/intune-apps-mobileapprelation
 |id|String|The relationship entity id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|The target child mobile app's app id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetDisplayName|String|The target child mobile app's display name. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|dependencyType|[mobileAppDependecyType](../resources/intune-apps-mobileappdependecytype.md)|The type of dependency relationship between the parent and child apps. Possible values are: `detect`, `autoInstall`.|
+|dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|The type of dependency relationship between the parent and child apps. Possible values are: `detect`, `autoInstall`.|
 |dependentAppCount|Int32|The total number of dependencies the child app has.|
 
 ## Relationships

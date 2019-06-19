@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementTemplate resource type"
 description: "Entity that represents a defined collection of device settings"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -23,6 +23,7 @@ Entity that represents a defined collection of device settings
 |[Delete deviceManagementTemplate](../api/intune-deviceintent-devicemanagementtemplate-delete.md)|None|Deletes a [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md).|
 |[Update deviceManagementTemplate](../api/intune-deviceintent-devicemanagementtemplate-update.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Update the properties of a [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) object.|
 |[createInstance action](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Not yet documented|
+|[compare function](../api/intune-deviceintent-devicemanagementtemplate-compare.md)|[deviceManagementSettingComparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -30,12 +31,18 @@ Entity that represents a defined collection of device settings
 |id|String|The template ID|
 |displayName|String|The template's display name|
 |description|String|The template's description|
+|versionInfo|String|The template's version information|
+|isDeprecated|Boolean|The template is deprecated or not. Intents cannot be created from a deprecated template.|
+|intentCount|Int32|Number of Intents created from this template.|
+|templateType|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|The template's type. Possible values are: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`.|
+|publishedDateTime|DateTimeOffset|When the template was published|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |settings|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) collection|Collection of all settings this template has|
 |categories|[deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md) collection|Collection of setting categories within the template|
+|migratableTo|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) collection|Collection of templates this template can migrate to|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -50,7 +57,12 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementTemplate",
   "id": "String (identifier)",
   "displayName": "String",
-  "description": "String"
+  "description": "String",
+  "versionInfo": "String",
+  "isDeprecated": true,
+  "intentCount": 1024,
+  "templateType": "String",
+  "publishedDateTime": "String (timestamp)"
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 title: "Delete detectedApp"
 description: "Deletes a detectedApp."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

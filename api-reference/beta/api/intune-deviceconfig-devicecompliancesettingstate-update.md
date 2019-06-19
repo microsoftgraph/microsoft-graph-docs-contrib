@@ -1,7 +1,7 @@
 ---
 title: "Update deviceComplianceSettingState"
 description: "Update the properties of a deviceComplianceSettingState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

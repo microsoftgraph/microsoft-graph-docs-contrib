@@ -1,7 +1,7 @@
 ---
 title: "Delete iosLobApp"
 description: "Deletes a iosLobApp."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

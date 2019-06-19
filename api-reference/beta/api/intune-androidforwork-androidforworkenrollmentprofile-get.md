@@ -1,7 +1,7 @@
 ---
 title: "Get androidForWorkEnrollmentProfile"
 description: "Read properties and relationships of the androidForWorkEnrollmentProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

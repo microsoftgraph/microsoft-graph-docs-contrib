@@ -1,7 +1,7 @@
 ---
 title: "import action"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -61,7 +61,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
 Content-type: application/json
-Content-length: 748
+Content-length: 822
 
 {
   "importedWindowsAutopilotDeviceIdentities": [
@@ -79,7 +79,8 @@ Content-length: 748
         "deviceRegistrationId": "Device Registration Id value",
         "deviceErrorCode": 15,
         "deviceErrorName": "Device Error Name value"
-      }
+      },
+      "assignedUserPrincipalName": "Assigned User Principal Name value"
     }
   ]
 }
@@ -90,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 713
+Content-Length: 787
 
 {
   "value": [
@@ -108,7 +109,8 @@ Content-Length: 713
         "deviceRegistrationId": "Device Registration Id value",
         "deviceErrorCode": 15,
         "deviceErrorName": "Device Error Name value"
-      }
+      },
+      "assignedUserPrincipalName": "Assigned User Principal Name value"
     }
   ]
 }

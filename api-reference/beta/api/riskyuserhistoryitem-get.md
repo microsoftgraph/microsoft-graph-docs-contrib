@@ -1,15 +1,15 @@
 ---
 title: "Get history item of riskyUser"
-description: "Retrieve the history of a **riskyUser** object."
+description: "Get a history item of a riskyUser object."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 ---
-# Get riskyUser History
+# Get riskyUserHistoryItem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the history of a **riskyUser** object.
+Get a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object of a [riskyUser](../resources/riskyuser.md).
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -18,14 +18,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | IdentityRiskyUser.Read.All    |
+|Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | IdentityRiskyUser.Read.All |
+|Application | IdentityRiskyUser.Read.All, IdentityRiskUser.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{userid}/history
+GET /riskyUsers/{userid}/history/{id}
 ```
 
 
@@ -33,58 +33,76 @@ GET /riskyUsers/{userid}/history
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
 Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of  [riskyUserHistoryItem](../resources/riskyUserHistoryItem.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser",
-  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
+  "name": "get_riskyuser_historyitem",
+  "sampleKeys": ["41a31b00-3b3b-42d9-8f1c-6d4f14e74c69"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3/history
+GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69/history/41a31b00-3b3b-42d9-8f1c-6d4f14e74c69
 ```
 ##### Response
 Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.riskyUser"
+  "@odata.type": "microsoft.graph.riskyUserHistoryItem"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
-  "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": true,
-  "isProcessing": true,
-  "isDeleted": true,
-  "riskDetail": "adminConfirmedSigninCompromised",
-  "riskLevel": "high",
-  "riskState": "atRisk"
-  "userDisplayName": "Helen Poulsen",
-  "userPrincipalName": "helen@contoso.com"
+    "id": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+    "isDeleted": false,
+    "isGuest": false,
+    "isProcessing": false,
+    "riskLevel": "none",
+    "riskState": "remediated",
+    "riskDetail": "userPerformedSecuredPasswordReset",
+    "riskLastUpdatedDateTime": "2019-05-03T03:50:34.9565578Z",
+    "userDisplayName": "Allan Deyoung",
+    "userPrincipalName": "AllanD@contoso.OnMicrosoft.com",
+    "userId": "41a31b00-3b3b-42d9-8f1c-6d4f14e74c69",
+    "initiatedBy": "68ca8ec0-11f8-456b-a785-70d9936650d5",
+    "activity": {
+        "eventTypes": [],
+        "detail": "userPerformedSecuredPasswordReset"
+    }
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_riskyuser_historyitem-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_riskyuser_historyitem-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get riskyUsers",
+  "description": "Get riskyUserHistoryItem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/riskyuserhistoryitem-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
+    "Error: /api-reference/beta/api/riskyuserhistoryitem-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
+  ]
 }-->
 

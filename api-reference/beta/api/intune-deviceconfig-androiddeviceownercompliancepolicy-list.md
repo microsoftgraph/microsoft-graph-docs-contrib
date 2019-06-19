@@ -1,7 +1,7 @@
 ---
 title: "List androidDeviceOwnerCompliancePolicies"
 description: "List properties and relationships of the androidDeviceOwnerCompliancePolicy objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete macOSTrustedRootCertificate"
 description: "Deletes a macOSTrustedRootCertificate."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

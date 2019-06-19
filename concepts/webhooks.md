@@ -11,6 +11,9 @@ The Microsoft Graph API uses a webhook mechanism to deliver notifications to cli
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.
 
+> [!div class="nextstepaction"]
+> [Build a webhook app with .NET Core](/graph/tutorials/change-notifications)
+
 ## Supported resources
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
@@ -47,13 +50,17 @@ Or to a new [Security API](security-concept-overview.md) alert:
 
 ### Azure AD resource limitations
 
-Certain limits apply to Azure AD based resources (users, groups) and may generate errors when exceeded:
+Certain limits apply to Azure AD based resources (users, groups) and will generate errors when exceeded:
+
+> **Note**: These limits do not apply to resources from services other than Azure AD. For example, an app can create many more subscriptions to `message` or `event` resources, which are supported by the Exchange Online service as part of Microsoft Graph.
 
 - Maximum subscription quotas:
 
   - Per app: 50,000 total subscriptions
   - Per tenant: 1000 total subscriptions across all apps
   - Per app and tenant combination: 100 total subscriptions
+
+When the limits are exceeded, attempts to create a subscription will result in an [error response](errors.md) - `403 Forbidden`. The `message` property will explain which limit has been exceeded.
 
 - Azure AD B2C tenants are not supported.
 
@@ -232,6 +239,7 @@ Repeat for other notifications in the request.
 
 The following code samples are available on GitHub.
 
+- [Microsoft Graph Training Module - Using Change Notifications and Track Changes with Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-changenotifications)
 - [Microsoft Graph Webhooks Sample for Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
 - [Microsoft Graph Webhooks Sample for ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
 - [Microsoft Graph User Webhooks Sample using WebJobs SDK](https://github.com/microsoftgraph/webjobs-webhooks-sample)
@@ -241,6 +249,7 @@ The following code samples are available on GitHub.
 - [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
 - [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
+- [Change notifications tutorial](/graph/tutorials/change-notifications)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0

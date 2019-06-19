@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementScriptUserStates"
 description: "List properties and relationships of the deviceManagementScriptUserState objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

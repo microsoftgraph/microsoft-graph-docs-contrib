@@ -1,7 +1,7 @@
 ---
 title: "Delete termsAndConditionsGroupAssignment"
 description: "Deletes a termsAndConditionsGroupAssignment."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

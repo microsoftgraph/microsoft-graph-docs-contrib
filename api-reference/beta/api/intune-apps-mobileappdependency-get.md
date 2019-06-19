@@ -1,7 +1,7 @@
 ---
 title: "Get mobileAppDependency"
 description: "Read properties and relationships of the mobileAppDependency object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

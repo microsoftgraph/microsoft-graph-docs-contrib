@@ -1,7 +1,7 @@
 ---
 title: "Device management in Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that define manage devices for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -10,7 +10,7 @@ ms.prod: "intune"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 - [Admin consent](intune-devices-adminconsent.md)
 - [Admin consent state](intune-devices-adminconsentstate.md)
@@ -50,6 +50,7 @@ ms.prod: "intune"
 - [Device management boolean setting instance](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [Device management collection setting definition](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [Device management collection setting instance](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
+- [Device management comparison result](intune-deviceintent-devicemanagementcomparisonresult.md)
 - [Device management complex setting definition](intune-deviceintent-devicemanagementcomplexsettingdefinition.md)
 - [Device management complex setting instance](intune-deviceintent-devicemanagementcomplexsettinginstance.md)
 - [Device management constraint](intune-deviceintent-devicemanagementconstraint.md)
@@ -74,6 +75,7 @@ ms.prod: "intune"
 - [Device management script user state](intune-devices-devicemanagementscriptuserstate.md)
 - [Device management setting boolean constraint](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [Device management setting category](intune-deviceintent-devicemanagementsettingcategory.md)
+- [Device management setting comparison](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [Device management setting definition](intune-deviceintent-devicemanagementsettingdefinition.md)
 - [Device management setting dependency](intune-deviceintent-devicemanagementsettingdependency.md)
 - [Device management setting instance](intune-deviceintent-devicemanagementsettinginstance.md)
@@ -86,6 +88,7 @@ ms.prod: "intune"
 - [Device management subscriptions](intune-devices-devicemanagementsubscriptions.md)
 - [Device management template](intune-deviceintent-devicemanagementtemplate.md)
 - [Device management template setting category](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [Device management template type](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Device management troubleshooting error details](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [Device management troubleshooting error resource](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [Device management troubleshooting event](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
@@ -147,10 +150,9 @@ ms.prod: "intune"
 - [Reset passcode action result](intune-devices-resetpasscodeactionresult.md)
 - [Revoke apple VPP licenses action result](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Run schedule](intune-devices-runschedule.md)
+- [Security baseline category state summary](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Security baseline compliance state](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Security baseline device state](intune-deviceintent-securitybaselinedevicestate.md)
-- [Security baseline setting state](intune-deviceintent-securitybaselinesettingstate.md)
-- [Security baseline state](intune-deviceintent-securitybaselinestate.md)
 - [Security baseline state summary](intune-deviceintent-securitybaselinestatesummary.md)
 - [Security baseline template](intune-deviceintent-securitybaselinetemplate.md)
 - [Shared Apple device user](intune-devices-sharedappledeviceuser.md)
