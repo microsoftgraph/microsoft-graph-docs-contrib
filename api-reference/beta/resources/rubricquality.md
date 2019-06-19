@@ -18,7 +18,7 @@ A quality of a rubric. See [educationRubric](educationrubric.md) for a descripti
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |criteria|[rubricCriterion](rubriccriterion.md) collection|The collection of criteria for this rubric quality.|
-|description|[educationItemBody](educationitembody.md)|The description of this rubric quality.|
+|description|[itemBody](itembody.md)|The description of this rubric quality.|
 |displayName|String|The name of this rubric quality.|
 |qualityId|String||
 |weight|Single|If present, a numerical weight for this quality.  Weights must add up to 100.|
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "criteria": [{"@odata.type": "microsoft.graph.rubricCriterion"}],
-  "description": {"@odata.type": "microsoft.graph.educationItemBody"},
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
   "id": "String",
   "qualityId": "String",

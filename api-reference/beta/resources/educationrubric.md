@@ -51,7 +51,7 @@ A rubric *may* have points associated with each level, and a weight associated w
 |columnHeaders|[rubricLevel](rubriclevel.md) collection|The collection of descriptive column headers corresponding to each level.|
 |createdBy|[identitySet](identityset.md)||
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|description|[educationItemBody](educationitembody.md)|The description of this rubric.|
+|description|[itemBody](itembody.md)|The description of this rubric.|
 |displayName|String|The name of this rubric.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Whether this rubric has points or not.|
 |id|String| Read-only.|
@@ -83,7 +83,7 @@ The following is a JSON representation of the resource.
   "columnHeaders": [{"@odata.type": "microsoft.graph.rubricLevel"}],
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "description": {"@odata.type": "microsoft.graph.educationItemBody"},
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
   "grading": {"@odata.type": "microsoft.graph.educationRubricGradeType"},
   "id": "String (identifier)",

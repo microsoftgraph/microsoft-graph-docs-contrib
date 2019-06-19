@@ -17,7 +17,7 @@ A level of a rubric. See [educationRubric](educationrubric.md) for a description
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|description|[educationItemBody](educationitembody.md)|The description of this rubric level.|
+|description|[itemBody](itembody.md)|The description of this rubric level.|
 |displayName|String|The name of this rubric level.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)||
 |levelId|String||
@@ -37,7 +37,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "description": {"@odata.type": "microsoft.graph.educationItemBody"},
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
   "grading": {"@odata.type": "microsoft.graph.educationRubricGradeType"},
   "id": "String",

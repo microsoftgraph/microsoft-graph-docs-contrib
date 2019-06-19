@@ -17,7 +17,7 @@ A criterion of a rubric. See [educationRubric](educationrubric.md) for a descrip
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|description|[educationItemBody](educationitembody.md)|The description of this criterion.|
+|description|[itemBody](itembody.md)|The description of this criterion.|
 |id|String||
 
 ## JSON representation
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "description": {"@odata.type": "microsoft.graph.educationItemBody"},
+  "description": {"@odata.type": "microsoft.graph.itemBody"},
   "id": "String"
 }
 ```

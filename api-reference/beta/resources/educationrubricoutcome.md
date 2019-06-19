@@ -19,7 +19,6 @@ An educationOutcome that provides a graded rubric.
 |:-------------|:------------|:------------|
 | [Get educationOutcome](../api/educationoutcome-get.md) | [educationOutcome](educationoutcome.md) | Read properties and relationships of educationOutcome object. |
 | [Update](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
-| [Delete](../api/educationoutcome-delete.md) | None | Delete educationOutcome object. |
 
 ## Properties
 

@@ -17,7 +17,7 @@ Feedback related to a specific [quality](rubricquality.md) of an [educationRubri
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|feedback|[educationItemBody](educationitembody.md)|Specific feedback for each quality of this rubric.|
+|feedback|[itemBody](itembody.md)|Specific feedback for each quality of this rubric.|
 |qualityId|String||
 
 ## JSON representation
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "feedback": {"@odata.type": "microsoft.graph.educationItemBody"},
+  "feedback": {"@odata.type": "microsoft.graph.itemBody"},
   "qualityId": "String"
 }
 ```
