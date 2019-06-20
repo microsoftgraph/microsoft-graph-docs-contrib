@@ -17,8 +17,8 @@ The initiator resource type describes who or what initiated the provisioning eve
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|Name of the initiator.|
-|id|String|Uniquely identifies the initiator.|
+|displayName|String|Name of the person or service that initiated the provisioning event.|
+|id|String|Uniquely identifies the person or service that initiated the provisioning event.|
 |initiatorType|String| Type of initiator. Possible values are: `user`, `app`, `system`, `unknownFutureValue`.|
 
 ## JSON representation
