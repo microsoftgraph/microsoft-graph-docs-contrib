@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Each action (e.g. create user, update user, delete user) performed by the Azure AD provisioning service can be retrieved by this API.  for auditing pruposes. Given the id of an event, you can retrieve information such as the status of the event, who / what was being provisioned and where the object was being provisioned to. 
+Each action (e.g. create user, update user, delete user) performed by the Azure AD provisioning service can be retrieved by this API. Given the id of an event, you can retrieve information such as the status of the event, who / what was being provisioned and where the object was being provisioned to. 
 
 ## Permissions
 
