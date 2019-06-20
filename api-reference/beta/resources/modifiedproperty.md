@@ -2,7 +2,7 @@
 title: "modifiedProperty resource type"
 description: "modifiedProperty resource"
 localization_priority: Normal
-author: "arvinh@microsoft.com"
+author: "ArvindHarinder1"
 ms.prod: "ms.prod"
 doc_type: "resourcePageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-the modifiedProperty resource describes the changes perfomed. 
+the modifiedProperty resource describes the changes performed. 
 
 ## Properties
 
