@@ -1,8 +1,8 @@
 ---
 title: "initiator resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "initiator resource"
 localization_priority: Normal
-author: "arvinh@microsoft.com"
+author: "ArvindHarinder1"
 ms.prod: "ms.prod"
 doc_type: "resourcePageType"
 ---
