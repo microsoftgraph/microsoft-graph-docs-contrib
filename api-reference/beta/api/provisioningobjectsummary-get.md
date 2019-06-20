@@ -2,7 +2,7 @@
 title: "Get provisioningObjectSummary"
 description: "Retrieve the properties and relationships of provisioningobjectsummary object."
 localization_priority: Normal
-author: "arvinh@microsoft.com"
+author: "ArvindHarinder1"
 ms.prod: "ms.prod"
 doc_type: "apiPageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of provisioningobjectsummary object.
+Each action (e.g. create user, update user, delete user) performed by the Azure AD provisioning service can be retrieved by this API.  for auditing pruposes. Given the id of an event, you can retrieve information such as the status of the event, who / what was being provisioned and where the object was being provisioned to. 
 
 ## Permissions
 
