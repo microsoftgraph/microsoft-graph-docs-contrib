@@ -2,7 +2,7 @@
 title: "List provisioningObjectSummary"
 description: "Retrieve the properties and relationships of provisioningobjectsummary object."
 localization_priority: Normal
-author: "arvinh@microsoft.com"
+author: "ArvindHarinder1"
 ms.prod: "ms.prod"
 doc_type: "apiPageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of provisioningobjectsummary object.
+Get all provisioning events that occurred in your tenant such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system. 
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-List /auditLogs/directoryProvisioning/
+Get /auditLogs/directoryProvisioning/
 ```
 
 ## Optional query parameters
