@@ -2,7 +2,7 @@
 title: "provisionedIdentity resource type"
 description: "provisionedIdentity resource"
 localization_priority: Normal
-author: "arvinh@microsoft.com"
+author: "ArvindHarinder1"
 ms.prod: "ms.prod"
 doc_type: "resourcePageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The provisionedIdentity resource describes the identity associated witht the provisioning object summary event. 
+The provisionedIdentity resource describes the identity associated with the provisioning object summary event. 
 
 ## Properties
 
