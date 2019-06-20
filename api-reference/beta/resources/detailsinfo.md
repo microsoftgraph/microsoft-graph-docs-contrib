@@ -14,8 +14,7 @@ doc_type: "resourcePageType"
 the detailsInfo resource is a property bag that contains any additional information. This could include additional details on the identity that is being provisioned or the source / target system. 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+The detailsInfo resource is a property bag that contains additional properties such as the ApplicationId, ObjectId, UPN, etc. The set of properties varies by resource type. 
 
 ## Relationships
 None
@@ -27,6 +26,7 @@ Here is a JSON representation of the resource.
 }-->
 ``` json
 {
-  "@odata.type": "microsoft.graph.Json"
+  "Directory": "AppName",
+  "ApplicationId": "18d14464-9snc-428c-aba4-3b673gbd5600"
 }
 ```
