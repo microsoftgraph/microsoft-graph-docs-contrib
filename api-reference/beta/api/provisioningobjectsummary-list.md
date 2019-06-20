@@ -37,9 +37,9 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {code} |
+| Header        | Value                      |
+|:--------------|:---------------------------|
+| Authorization | Bearer {token} (required)  |
 
 ## Request body
 
