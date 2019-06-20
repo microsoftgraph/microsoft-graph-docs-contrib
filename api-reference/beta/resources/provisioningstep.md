@@ -18,7 +18,7 @@ The Azure AD provisioning service runs through a set of steps to provision a use
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |description|String|Summary of what occurred during the step.|
-|details|[detailsInfo](detailsinfo.md)|Detials of what occurred during the step.|
+|details|[detailsInfo](detailsinfo.md)|Details of what occurred during the step.|
 |name|String|Name of the step.|
 |provisioningStepType|String| Type of step. Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
 |status|String| Status of the step. Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.|
