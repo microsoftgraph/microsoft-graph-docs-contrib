@@ -19,14 +19,14 @@ None
 
 ## Properties
 
-None
-
-## Relationships
-
-| Relationship | Type        | Description |
+| Property | Type        | Description |
 |:-------------|:------------|:------------|
 |application|[application](../resources/application.md)|Represents an application registered in Azure Active Directory.|
 |servicePrincipal|[servicePrincipal](../resources/serviceprincipal.md)|Represents an instance of an application in a directory.|
+
+## Relationships
+
+None
 
 ## JSON representation
 
