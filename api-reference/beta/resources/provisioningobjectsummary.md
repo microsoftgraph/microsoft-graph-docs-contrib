@@ -2,7 +2,7 @@
 title: "provisioningObjectSummary resource type"
 description: "provisioningObjectsummary resource"
 localization_priority: Normal
-author: "arvinh@microsoft.com"
+author: "ArvindHarinder1"
 ms.prod: "ms.prod"
 doc_type: "resourcePageType"
 ---
@@ -18,7 +18,7 @@ Represents an action performed by the Azure AD Provisioning service and it's ass
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get provisioningObjectSummary](../api/provisioningobjectsummary-get.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Read properties and relationships of provisioningObjectSummary object. |
-| [List](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | List provisioningObjectSummary object. |
+| [List provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | List provisioningObjectSummary object. |
 
 
 ## Properties
