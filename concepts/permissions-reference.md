@@ -9,6 +9,8 @@ localization_priority: Priority
 
 For your app to access data in Microsoft Graph, the user or administrator must grant it the correct permissions via a consent process. This topic lists the permissions associated with each major set of Microsoft Graph APIs. It also provides guidance about how to use the permissions.
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/yXYzgWWVdSM]
+
 To read more about how permissions work, see [Authentication and authorization basics](auth/auth-concepts.md#microsoft-graph-permissions).
 
 ## Microsoft Graph permission names

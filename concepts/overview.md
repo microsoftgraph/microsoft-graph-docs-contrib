@@ -11,7 +11,7 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 
 ## Powering the Microsoft 365 platform
 
-![Microsoft Graph, Microsoft Graph data connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-800.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
 
 In the Microsoft 365 platform, three main components facilitate the access and flow of data:
 
@@ -39,7 +39,7 @@ To find out more, see [Major services and features in Microsoft Graph](overview-
 
 ## What can you do with Microsoft Graph?
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
+![Microsoft Graph, Microsoft Graph data connect, and Microsoft Graph connectors enable extending Microsoft 365 experiences and building intelligent apps.](images/microsoft-graph-dataconnect-connectors-800.png)
 
 Use Microsoft Graph to build experiences around the user's unique context to help them be more productive. Imagine an app that...
 

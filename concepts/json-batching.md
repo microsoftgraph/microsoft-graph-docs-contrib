@@ -7,6 +7,8 @@ localization_priority: Priority
 
 # Combine multiple requests in one HTTP call using JSON batching
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/tzWGOp8zYh8]
+
 JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
 
 1. An image stored in OneDrive

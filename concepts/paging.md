@@ -9,6 +9,8 @@ localization_priority: Priority
 
 Some queries against Microsoft Graph return multiple pages of data either due to server-side paging or due to the use of the `$top` query parameter to specifically limit the page size in a request. When a result set spans multiple pages, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results. 
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/DB_NoC9a1JI]
+
 For example, the following URL requests all the users in an organization with a page size of 5, specified with the `$top` query parameter:
 
 ```html

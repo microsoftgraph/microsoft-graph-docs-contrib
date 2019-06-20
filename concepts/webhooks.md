@@ -7,6 +7,8 @@ localization_priority: Priority
 
 # Set up notifications for changes in user data
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
+
 The Microsoft Graph API uses a webhook mechanism to deliver notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
 
 After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.

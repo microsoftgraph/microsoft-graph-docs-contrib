@@ -39,6 +39,8 @@ You can use extensions on all these resources when signed in with a work or scho
 
 ## Open extensions
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/ibdlADb8IZc]
+
 [Open extensions](/graph/api/resources/opentypeextension?view=graph-rest-1.0) (formerly known as Office 365 data extensions) are
 [open types](https://www.odata.org/getting-started/advanced-tutorial/#openType) that offer a flexible way to
 add untyped app data directly to a resource instance.
@@ -58,6 +60,8 @@ the extension and its data.
 Open extension example: [Add custom data to users using open extensions](extensibility-open-users.md)
 
 ## Schema extensions
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/3MOAlUFNus0]
 
 [Schema extensions](/graph/api/resources/schemaextension?view=graph-rest-1.0) allow you to define a schema that you can use to extend a resource type. First, you create your schema extension definition. Then, use it to extend resource instances with strongly-typed custom data. In addition, you can control the [status](#schema-extensions-lifecycle) of your schema extension and let it
 be discoverable by other apps. These apps can in turn use the extension for their data and build further experiences on top of it.
