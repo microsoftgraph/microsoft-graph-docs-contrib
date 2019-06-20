@@ -9108,6 +9108,13 @@
           href: api/teamstab-delete.md
       - name: Chat message
         href: resources/chatmessage.md
+        items:
+        - name: List hosted images
+          href: api/chatmessagehostedimage-list-hostedimages.md
+        - name: Get hosted image
+          href: api/chatmessagehostedimage-get.md
+        - name: Get hosted image bytes
+          href: api/chatmessagehostedimage-getbytes.md
       - name: Calendar
         href: resources/event.md
         items:

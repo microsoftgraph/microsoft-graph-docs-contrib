@@ -32,7 +32,6 @@ The following example shows how you can determine whether an application is inst
 
     https://graph.microsoft.com/deviceAppManagement/mobileApps/{id}/deviceStatuses/
 
-
 ## Using permissions
 
 The Microsoft Graph API controls access to resources via permissions. As a developer, you must specify the permissions you need to access Intune resources. Typically, you specify the permissions in the Azure Active Directory portal. For more information, see [Microsoft Graph permissions reference](https://docs.microsoft.com/en-us/graph/permissions-reference).
