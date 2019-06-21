@@ -1,6 +1,6 @@
 ---
 title: "modifiedProperty resource type"
-description: "modifiedProperty resource"
+description: "Describes the changes performed in the target system."
 localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "ms.prod"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-the modifiedProperty resource describes the changes performed. 
+Describes the changes performed in the target system. 
 
 ## Properties
 
