@@ -1,6 +1,6 @@
 ---
 title: "initiator resource type"
-description: "initiator resource"
+description: "Describes who or what initiated the provisioning event."
 localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "ms.prod"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The initiator resource type describes who or what initiated the provisioning event. 
+Describes who or what initiated the provisioning event. 
 
 ## Properties
 
