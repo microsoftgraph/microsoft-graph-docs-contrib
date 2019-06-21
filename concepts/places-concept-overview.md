@@ -14,7 +14,7 @@ You can use the places API to build compelling app experiences based on differen
 ## Why integrate with places?
 <!-- markdownlint-enable MD026 -->
 
-Modern applications today are typically enhanced with location awareness to help provide intelligent context. This helps the user navigate to a place or allows the application to consider a user's location as part of their solution. The places API provides rich detail on locations such as rooms or room lists to enable these scenarios.
+Modern applications today are typically enhanced with location awareness to help provide intelligent context. This helps the user navigate to a place or allows the application to consider a user's location as part of their solution. The [places API](../resources/places.md) provides rich detail on locations such as rooms or room lists to enable these scenarios.
 
 ### Help customers stay synchronized and navigate their day
 
