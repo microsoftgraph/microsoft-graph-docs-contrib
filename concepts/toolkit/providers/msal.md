@@ -13,7 +13,7 @@ To learn more, see [providers](../providers.md).
 
 ## Get started
 
-You can initialize the provider in HTML or JavaScript.
+You can initialize the MSAL provider in HTML or JavaScript.
 
 ### Initialize in your HTML page
 
