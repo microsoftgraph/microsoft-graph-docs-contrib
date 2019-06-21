@@ -1,6 +1,6 @@
 ---
 title: "provisionedIdentity resource type"
-description: "provisionedIdentity resource"
+description: "Describes the identity associated with the provisioning object summary event."
 localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "ms.prod"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The provisionedIdentity resource describes the identity associated with the provisioning object summary event. 
+Describes the identity associated with the provisioning object summary event. 
 
 ## Properties
 
