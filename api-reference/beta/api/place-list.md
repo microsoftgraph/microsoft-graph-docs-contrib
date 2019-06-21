@@ -15,10 +15,12 @@ Get a collection of all the [place](../resources/place.md) objects, or the speci
 
 A **place** object can be one of the following types:
 
-* A room which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. (Please add link to room.md.)
-* A roomList which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. (Please add links to roomlist.md and room.md.)
+* A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
+* A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. 
 
 Both **room** and **roomList** are derived from the place object.
+
+The list places operation returns a richer payload for rooms and room lists than the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions. See [details](../resources/place.md#use-the-places-api) for how they compare.
 
 ## Permissions
 
