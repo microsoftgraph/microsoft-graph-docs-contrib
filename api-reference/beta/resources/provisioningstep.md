@@ -1,6 +1,6 @@
 ---
 title: "provisioningStep resource type"
-description: "provisioningStep resource"
+description: "Describes the steps taken to per form an action. "
 localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "ms.prod"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Azure AD provisioning service runs through a set of steps to provision a user. The step resource describes the steps taken to per form an action. 
+Describes the steps taken to perform an action.
 
 ## Properties
 
