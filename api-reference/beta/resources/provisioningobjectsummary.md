@@ -1,6 +1,6 @@
 ---
 title: "provisioningObjectSummary resource type"
-description: "provisioningObjectsummary resource"
+description: "Represents an action performed by the Azure AD Provisioning service and its associated properties."
 localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "ms.prod"
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an action performed by the Azure AD Provisioning service and it's associated properties. 
+Represents an action performed by the Azure AD Provisioning service and its associated properties. 
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | List provisioningObjectSummary object. |
+| [List provisioningObjectSummary](../api/provisioningobjectsummary-list.md) | [provisioningObjectSummary](provisioningobjectsummary.md) | Get a list of all provisioning events that occurred in your tenant. |
 
 
 ## Properties
@@ -39,7 +39,7 @@ Represents an action performed by the Azure AD Provisioning service and it's ass
 |statusInfo|[statusBase](statusbase.md)|Details of provisioning status.|
 |targetIdentity|[provisionedIdentity](provisionedidentity.md)|Details of target object being provisioned.|
 |targetSystem|[provisioningSystemDetails](provisioningsystemdetails.md)|Details of target system of the object being provisioned.|
-|tenantId|String|The Azure AD tenant unique id.|
+|tenantId|String|Unique Azure AD tenant ID.|
 
 ## Relationships
 
