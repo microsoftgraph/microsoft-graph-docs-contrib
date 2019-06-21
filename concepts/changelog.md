@@ -17,7 +17,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition        | Beta  | Added the [getPlaces](/graph/api/getplaces?view=graph-rest-beta) action|
+| Addition        | Beta  | Added the [room list](../resources/roomlist.md) resoruce|
+| Addition        | Beta  | Added the [room](../resources/room.md) resource|
+| Addition        | Beta  | Added the [place](../resources/place.md) resource|
 
 ### OneDrive and SharePoint APIs
 
