@@ -12,10 +12,6 @@ The education API in Microsoft Graph enhances Office 365 resources with informat
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/EnDM7KMTEqQ]
 
-The education API in Microsoft Graph provides access to classes, schools, users, assignments, submissions and more.
-
-![EDU Graph Overview](images/edugraph.png)
-
 ## Why integrate with education scenarios?
 
 ### Build applications that are aware of class roster
