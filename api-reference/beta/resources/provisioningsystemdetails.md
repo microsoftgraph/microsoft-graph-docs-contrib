@@ -1,6 +1,6 @@
 ---
 title: "provisioningSystemDetails resource type"
-description: "provisioningSystemDetails resource"
+description: "Represents the system that a user was provisioned to or from."
 localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "ms.prod"
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The provisioningSystemDetails represents the system that a user was provisioned to or from. For example, when provisioning a user from Azure Active Directory to ServiceNow, the source system would be 'Azure Active Directory' while the target system is 'ServiceNow'.
+Represents the system that a user was provisioned to or from. For example, when provisioning a user from Azure Active Directory (Azure AD) to ServiceNow, the source system is Azure AD, and the target system is ServiceNow.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |details|[detailsInfo](detailsinfo.md)|Details of the system.|
-|displayName|String|Name of the system that a user was provisioned to or from (e.g. Azure Active Directory, ServiceNow,etc.)|
+|displayName|String|Name of the system that a user was provisioned to or from.|
 |id|String|Identifier of the system that a user was provisioned to or from.|
 
 ## JSON representation
