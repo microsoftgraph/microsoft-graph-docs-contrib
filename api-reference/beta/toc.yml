@@ -7682,6 +7682,15 @@
           href: api/application-list-owners.md
         - name: Assign owner
           href: api/application-post-owners.md
+        - name: Application template
+          href: resources/applicationtemplate.md
+          items:
+          - name: List application templates
+            href: api/applicationtemplate-list.md
+          - name: Get application template
+            href: api/applicationtemplate-get.md
+          - name: Instantiate application template
+            href: api/applicationtemplate-instantiate.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
