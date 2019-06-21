@@ -50,7 +50,7 @@ Derived from [place](place.md).
 |:---------|:----------------------------------------------------------|
 | standard | The room can be reserved based on the other settings in this cmdlet. This is the default value. |
 | managed  | The room is managed by a delegate                         |
-| reserved | The room can't be reserved.                               |
+| reserved | The room is available only on a first come, first served basis. It cannot be reserved.|
 
 ## Relationships
 
