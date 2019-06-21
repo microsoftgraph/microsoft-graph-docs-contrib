@@ -18,7 +18,7 @@ Modern applications today are typically enhanced with location awareness to help
 
 ### Help customers stay synchronized and navigate their day
 
-Add locations to your calendar and help customers navigate their day and enhance productivity.
+Add locations to your calendar and help customers navigate their day and enhance productivity. Enable automated assistants to provide information about rooms in a building. Send more details to your guest on how to get to a room with a map via email. Create your own event catering applications and leverage the **places** API to provide room set up.
 
 ## API reference
 
