@@ -19,6 +19,8 @@ This article provides information about the different Microsoft Graph national c
 
 >**Note:** [Microsoft Graph data connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) does not support any of the national cloud deployments. 
 
+> [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
+
 ## App registration and token service root endpoints
 
 Before calling the Microsoft Graph APIs, you should first register your application and acquire a token. The following table lists the base URLs for the Azure Active Directory (Azure AD) endpoints to register your application and acquire tokens for each national cloud.
@@ -29,8 +31,6 @@ Before calling the Microsoft Graph APIs, you should first register your applicat
 |Azure AD Germany |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |Azure AD China operated by 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 |Azure AD (global service)|https://portal.azure.com |`https://login.microsoftonline.com`|
-
-> [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
 To learn more about Azure AD access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Azure AD authentication scenarios, see [Azure AD authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
 
