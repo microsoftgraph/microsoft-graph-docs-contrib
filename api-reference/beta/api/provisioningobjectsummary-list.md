@@ -1,6 +1,6 @@
 ---
 title: "List provisioningObjectSummary"
-description: "Retrieve the properties and relationships of provisioningobjectsummary object."
+description: "Get all provisioning events that occurred in your tenant."
 localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "ms.prod"
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [provisioningObjectSummary](../resources/provisioningobjectsummary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [provisioningObjectSummary](../resources/provisioningobjectsummary.md) objects in the response body.
 
 ## Examples
 
