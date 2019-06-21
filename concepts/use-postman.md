@@ -1,20 +1,20 @@
 ---
-title: "Use Postman with Microsoft Graph API"
-description: "The Microsoft Graph Postman collection allows you to get started calling the Microsoft Graph APIs in minutes."
+title: "Use Postman with the Microsoft Graph API"
+description: "Use the Microsoft Graph Postman collection to get started with Microsoft Graph APIs in minutes."
 author: "jthake-msft"
 localization_priority: Priority
 ---
 
-# Use Postman with Microsoft Graph API
+# Use Postman with the Microsoft Graph API
 
-The Microsoft Graph Postman collection allows you to get started calling the Microsoft Graph APIs in minutes.
+You can use the Microsoft Graph Postman collection to get started with Microsoft Graph APIs in minutes.
 
 ![Image of Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/postman.png?raw=true)
 
-The most up-to-date experience to explore the APIs will always be [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) in a web browser. This project has been created based on requests from the community. Remember the best place to understand the workings of these APIs is to read our [Microsoft Graph API documentation](https://docs.microsoft.com/en-us/graph/).
+The best way to explore the Microsoft Graph API is to use [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer) in a web browser. We created this project based on requests from the community. To learn more about how the APIs work, explore the [Microsoft Graph documentation](https://docs.microsoft.com/en-us/graph/).
 
-## Getting the collection in Postman
-There are two ways to access the collection. You will need to have [Postman](https://www.getpostman.com/) running on your machine to use these.
+## Get the collection
+You can access the collection in Postman in two ways. You will need to have [Postman](https://www.getpostman.com/) running on your computer first.
 
 ### To consume the collection
 This is the easiest way to get started and consume the Microsoft Graph APIs. The [Postman sharing link](https://www.getpostman.com/collections/d89a737b5f0c0825898a) will launch postman.
