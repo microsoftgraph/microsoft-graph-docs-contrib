@@ -10,8 +10,11 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new user.
+Create a new [user](../resources/user.md).
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
+
+>[!NOTE]
+>To create external users, use the [invitation API](invitation-post.md).
 
 ## Permissions
 
@@ -51,8 +54,8 @@ The following table shows the properties that are required when you create a use
 
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
-[!NOTE]
-Federated users created using this API will be forced to sign in every 12 hours by default. For more information about how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+>[!NOTE]
+>Federated users created using this API will be forced to sign in every 12 hours by default. For more information about how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 ## Response
 
