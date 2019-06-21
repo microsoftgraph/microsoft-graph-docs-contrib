@@ -8074,6 +8074,11 @@
               href: api/governanceroleassignmentrequest-update.md
             - name: Cancel
               href: api/governanceroleassignmentrequest-cancel.md
+      - name: Provisioning Logs
+        href: resources/provisioningobjectsummary.md
+        items:
+        - name: List Directory Provisioning
+          href: api/provisioningobjectsummary-list.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
