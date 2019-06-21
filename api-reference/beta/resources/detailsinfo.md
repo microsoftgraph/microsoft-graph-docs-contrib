@@ -2,7 +2,7 @@
 title: "detailsInfo resource type"
 description: "Property bag that contains any additional information about the associated identity or system."
 localization_priority: Normal
-author: "ArvindHarinder1"
+author: "davidmu1"
 ms.prod: "ms.prod"
 doc_type: "resourcePageType"
 ---
@@ -22,7 +22,7 @@ None
 Here is a JSON representation of the resource.
 <!--{
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.Json"
+  "@odata.type": "microsoft.graph.detailsInfo"
 }-->
 ``` json
 {
