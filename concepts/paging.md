@@ -9,8 +9,6 @@ localization_priority: Priority
 
 Some queries against Microsoft Graph return multiple pages of data either due to server-side paging or due to the use of the `$top` query parameter to specifically limit the page size in a request. When a result set spans multiple pages, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results. 
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/DB_NoC9a1JI]
-
 For example, the following URL requests all the users in an organization with a page size of 5, specified with the `$top` query parameter:
 
 ```html
@@ -38,3 +36,8 @@ Paging behavior varies across different Microsoft Graph APIs. Consider the follo
 - Different APIs might have different default and maximum page sizes.
 - Different APIs might behave differently if you specify a page size (via the `$top` query parameter) that exceeds the maximum page size for that API. Depending on the API, the requested page size might be ignored, it might default to the maximum page size for that API, or Microsoft Graph might return an error. 
 - Not all resources or relationships support paging. For example, queries against [directoryRoles](/graph/api/resources/directoryrole?view=graph-rest-1.0) do not support paging. This includes reading role objects themselves as well as role members.
+
+## Learn more about paging
+The following video introduces you to paging in Microsoft Graph.
+
+> [!VIDEO https://www.youtube-nocookie.com/embed/DB_NoC9a1JI]

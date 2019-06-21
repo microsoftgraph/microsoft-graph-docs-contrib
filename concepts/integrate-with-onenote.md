@@ -11,8 +11,6 @@ OneNote is a digital notebook that lets customers track ideas and notes for home
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/VXd4OeQU1ek]
 
-![A OneNote notebook with its sections and pages](images/onenote-page.png)
-
 ## Why integrate with OneNote?
 
 By integrating your apps with OneNote, you can create empowering experiences across multiple platforms that reach millions of users worldwide. You can use Microsoft Graph to access notebooks, sections, and pages in OneNote to create solutions that help your users plan and organize ideas and information.

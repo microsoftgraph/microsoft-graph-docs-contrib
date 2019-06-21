@@ -11,7 +11,7 @@ Microsoft Graph is the gateway to data and intelligence in Microsoft 365. It pro
 
 ## Powering the Microsoft 365 platform
 
-> [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
+![An image showing the primary resources and relationships that are part of the graph](images/microsoft-graph.png)
 
 In the Microsoft 365 platform, three main components facilitate the access and flow of data:
 
@@ -35,7 +35,7 @@ Microsoft Graph exposes REST APIs and client libraries to access data on the fol
 
 To find out more, see [Major services and features in Microsoft Graph](overview-major-services.md).
 
-![An image showing the primary resources and relationships that are part of the graph](images/microsoft-graph.png)
+> [!VIDEO https://www.youtube-nocookie.com/embed/PI9NO5rayiY]
 
 ## What can you do with Microsoft Graph?
 
