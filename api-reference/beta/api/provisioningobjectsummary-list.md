@@ -33,7 +33,7 @@ Get /auditLogs/directoryProvisioning
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query_parameters)
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query_parameters).
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
