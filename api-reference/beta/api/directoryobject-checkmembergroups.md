@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /me/checkMemberGroups
 POST /users/{id | userPrincipalName}/checkMemberGroups
 POST /groups/{id}/checkMemberGroups
-POST /servciePrincipals/{id}/checkMemberGroups
+POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## Request headers
