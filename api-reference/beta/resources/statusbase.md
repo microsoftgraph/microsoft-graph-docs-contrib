@@ -1,6 +1,6 @@
 ---
 title: "statusBase resource type"
-description: "statusBase resource"
+description: "Describes the status of the provisioning summary event."
 localization_priority: Normal
 author: "ArvindHarinder1"
 ms.prod: "ms.prod"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The statusBase resource type describes the status of the provisioning summary event. 
+Describes the status of the provisioning summary event. 
 
 ## Properties
 
