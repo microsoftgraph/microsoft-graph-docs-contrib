@@ -14,83 +14,84 @@ You can use the Microsoft Graph Postman collection to get started with Microsoft
 This article explains how to get up and running with Postman and Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
 ## Get the collection
-You can access the collection in Postman in two ways: either just to consume it or to contribute back. You will need to have [Postman](https://www.getpostman.com/) running on your computer first.
+You can access the collection in Postman in two ways: either by consuming it or by contributing back. You will need to have [Postman](https://www.getpostman.com/) running on your computer first.
 
-### To consume the collection
-This is the easiest way to get started and consume the Microsoft Graph APIs. The [Postman sharing link](https://www.getpostman.com/collections/d89a737b5f0c0825898a) will launch postman.
+### Consume the collection
+This is the easiest way to get started and consume the Microsoft Graph APIs. The [Postman sharing link](https://www.getpostman.com/collections/d89a737b5f0c0825898a) will launch Postman.
 
-The benefit fo using the Shared Collection is as we add new requests they'll automatically show for you without any additional steps.
+The advantage to using the shared collection is that new requests will automatically show for you without any additional steps.
 
-Once you have the collection, you'll need to set up teh environment variables.
+After you have the collection, you'll need to set up the environment variables:
 
-**1.** Click **File | Import ...**.
+1. Choose **File | Import ...**.
 
-**2.** Select **Import From Link**.
+2. Select **Import From Link**.
 
-**3.** Copy and paste the following URL and click Import
+3. Copy and paste the following URL and choose **Import**.
 
 `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
 
-You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to follow the [instructions below](#using-the-collection) to set up your environment.
+You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to  [set up your environment](#using-the-collection).
 
 ### To contribute back
-If you wish to contribute back your own requests, you will need to fork the [Microsoft Graph Postman collections](https://github.com/microsoftgraph/microsoftgraph-postman-collections) github repo. 
+If you want to contribute back your own requests, you will need to fork the [Microsoft Graph Postman collections](https://github.com/microsoftgraph/microsoftgraph-postman-collections) github repo. 
 
-Check out this video to see how to do this
+For details about how to do this, watch the following video.
+
 > [!VIDEO https://www.youtube-nocookie.com/embed/4tg-OBdv_8o]
 
-To import the Postman collections follow these steps:
+To import the Postman collections:
 
-**1.** Download and register for [Postman](https://www.getpostman.com/).
+1. Download and register for [Postman](https://www.getpostman.com/).
 
-**2.** Click **File | Import ...**.
+2. Choose **File | Import ...**.
 
-**3.** Select **Import From Link**.
+3. Select **Import From Link**.
 
-**4.** Paste the following two URLs and click Import after each.
+4. Paste the following two URLs and choose **Import** after each.
 
 `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_collection.json`
 
 `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
 
-You should now see the **Microsoft Graph v1.0** collection on the left had side Collections pane.
+You should now see the **Microsoft Graph v1.0** collection on **Collections** pane.
 
 ## Using the collection
-Once you have **Microsoft Graph v1.0** collection and **Microsoftr Graph environment** in Postman Follow these steps.
+After you have the **Microsoft Graph v1.0** collection and the **Microsoftr Graph environment** in Postman, follow these steps.
 
 ### Set up application API calls
-**1.** Click on the **No environment** drop down in top right hand corner.
+1. Choose the **No environment** drop down in top right corner.
 
-**2.** Select **Microsoft Graph environment**.
+2. Select **Microsoft Graph environment**.
 
-**3.** Click the **eye** icon to the the right and then click **Edit**.
+3. Choose the **eye** icon to the right and then choose **Edit**.
 
-**4.** Enter in to the **current** (not **initial**) variables your Microsoft Identity Application: **ClientID**, **ClientSecret** ad **TenantID**. 
+4. Enter into the **current** (not **initial**) variables your Microsoft Identity Application: **ClientID**, **ClientSecret** and **TenantID**. 
 
-For more information on how to create a Application and to admin consent the app-only flow please read the [30 days of graph blog post series](https://developer.microsoft.com/en-us/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
+For more information about how to create an application and to admin consent the app-only flow, see the [Postman to make Microsoft Graph calls](https://developer.microsoft.com/en-us/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/) blog post.
 
-**5.** Select **Update**. Close the **Manage Environments** dialog. In the **MicrosoftGraph v1.0 | Application** collection on left hand side. Click on the **Get App-only Access Token**. Then click **Send** button on right hand side.
+5. Select **Update**. Close the **Manage Environments** dialog box. In the **MicrosoftGraph v1.0 | Application** collection on left side, choose **Get App-only Access Token**. Then choose **Send** on the right.
 
-**6.** Expand the **Application | Users** folder and click on **Get Users**. Then Click the **Send** button.
+6. Expand the **Application | Users** folder and choose **Get Users**. Then choose **Send**.
 
-You are now up and running with Microsoft Graph v1.0 collections.
+You are now up and running with the Microsoft Graph v1.0 collections.
 
-**NOTE:** that if you wish to run other APIs in the collection, you will need to consent the required permissions for your application.
+>**Note:** If you want to run other APIs in the collection, you will need to consent the required permissions for your application.
 
 ### Set up on-behalf-of API calls
-The simplest way of doing this is providing a **UserName** and **UserPassword** in the environment settings and use **On Behalf of a User | Get User Access Token** instead. 
+The simplest way to set up on-behalf-of API calls is to provide a **UserName** and **UserPassword** in the environment settings and use the **On Behalf of a User | Get User Access Token** instead. 
 
-**IMPORTANT:** It is not recommended to use production user accounts as this information is stored directly in Postman. This is also not a recommended approach for obtaining access tokens in production and should only be used for testing purposes.
+>**Important:** We don't recommend using production user accounts because this information is stored directly in Postman. This is also not a recommended approach for obtaining access tokens in production. Use it only for testing purposes.
 
-For those those that do not want to store user names and passwords in environment variables in postman that get synced to your postman cloud account. You can use the native Postman **Get New Access Token** capability to obtain a token without leaving postman.
+If you don't want to store user names and passwords in environment variables in Postman that sync to your Postman cloud account, you can use the native Postman **Get New Access Token** capability to get a token without leaving Postman.
 
-**1.** Select **On behalf of a User | Get Access Token using Postman**.
+1. Select **On behalf of a User | Get Access Token using Postman**.
 
-**2.** Click on the Authorization tab (besides Params).
+2. Choose the **Authorization** tab.
 
-**3.** Click get access token button.
+3. Choose the **get access token** button.
 
-**4.** Fill out the following boxes with your real tenant and application values. Note that you cannot use the environment variables here, it has to be the actual values. These can be found by clicking **EndPoints** in the application blade in portal.azure.com.
+4. Fill out the following boxes with your real tenant and application values. Note that you cannot use the environment variables here; you have to use the actual values. You can find them by selecting **EndPoints** in the application blade in portal.azure.com.
 
 - Callback URL: https://app.getpostman.com/oauth2/callback
 
@@ -107,8 +108,8 @@ For those those that do not want to store user names and passwords in environmen
 - State: **RANDOMSTRING**
 
  
-**5.** Click Request Token and you should see a UI prompt to sign in and consent permissions.
+5. Choose **Request Token** and you should see a UI prompt to sign in and consent permissions.
 
-**6.** Then take the entire Access Token and open up your environment variables and paste it into the UserAccessToken.
+6. Take the entire Access Token, open your environment variables, and paste it into the **UserAccessToken**.
 
 Now all your requests will work.
