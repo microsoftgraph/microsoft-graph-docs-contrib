@@ -1,5 +1,5 @@
 ---
-title: "MSAL Provider"
+title: "MSAL provider"
 description: "The MSAL Provider uses MSAL.js to sign in users and acquire tokens to use with the Microsoft Graph"
 localization_priority: Normal
 author: nmetulev
