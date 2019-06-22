@@ -12,15 +12,15 @@ The Microsoft Graph Toolkit is a collection of framework-agnostic web components
 >[!NOTE]
 >This library is in preview and is in early development. We expect to make changes and improvements to all components and APIs based on feedback from the community.
 
-## Getting started
-
-[Watch the Getting Started Video](https://www.youtube.com/watch?v=oZCGb2MMxa0)
+## Get started
 
 You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.
 
+For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).
+
 ### Use via mgt-loader
 
-[Here is a quick jsfiddle](https://jsfiddle.net/metulev/9phqxLd5/)
+See the folowing [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
