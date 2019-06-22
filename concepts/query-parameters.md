@@ -9,7 +9,7 @@ localization_priority: Priority
 
 Microsoft Graph supports optional query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one API operation to another, and depending on the API, can differ between the v1.0 and beta endpoints. 
 
->**Note:** OData queries are only supported on GET HTTP requests.
+>**Note:** OData query parameters are only supported on GET HTTP requests.
 
 > [!TIP] 
 > On the beta endpoint, the `$` prefix is optional. For example, instead of `$filter`, you can use `filter`. 
