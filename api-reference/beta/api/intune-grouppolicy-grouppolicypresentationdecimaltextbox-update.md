@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyPresentationDecimalTextBox"
 description: "Update the properties of a groupPolicyPresentationDecimalTextBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

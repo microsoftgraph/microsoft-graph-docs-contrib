@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsPhone81TrustedRootCertificate"
 description: "Deletes a windowsPhone81TrustedRootCertificate."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

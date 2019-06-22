@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var synchronizationTemplate = await graphClient.ServicePrincipals["{id}"].Synchronization.Templates
+var templates = await graphClient.ServicePrincipals["{id}"].Synchronization.Templates
 	.Request()
 	.GetAsync();
 

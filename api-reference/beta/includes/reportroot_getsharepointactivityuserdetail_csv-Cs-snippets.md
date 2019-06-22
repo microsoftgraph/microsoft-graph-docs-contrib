@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var sharePointActivityUserDetail = await graphClient.Reports.GetSharePointActivityUserDetail('D7')
+var getSharePointActivityUserDetail = await graphClient.Reports.GetSharePointActivityUserDetail('D7')
 	.Request()
 	.GetAsync();
 

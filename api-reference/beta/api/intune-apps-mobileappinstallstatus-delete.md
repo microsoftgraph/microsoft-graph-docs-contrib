@@ -1,7 +1,7 @@
 ---
 title: "Delete mobileAppInstallStatus"
 description: "Deletes a mobileAppInstallStatus."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

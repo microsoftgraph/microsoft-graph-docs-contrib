@@ -1,7 +1,7 @@
 ---
 title: "Delete iosPkcsCertificateProfile"
 description: "Deletes a iosPkcsCertificateProfile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

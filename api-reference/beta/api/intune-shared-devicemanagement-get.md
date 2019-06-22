@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagement"
 description: "Read properties and relationships of the deviceManagement object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Fencing** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp; &nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp; &nbsp; **RBAC** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All |
 | &nbsp; &nbsp; **Remote access** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |

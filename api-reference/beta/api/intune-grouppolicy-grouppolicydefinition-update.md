@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyDefinition"
 description: "Update the properties of a groupPolicyDefinition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var groupLifecyclePolicy = await graphClient.GroupLifecyclePolicies
+var groupLifecyclePolicies = await graphClient.GroupLifecyclePolicies
 	.Request()
 	.GetAsync();
 

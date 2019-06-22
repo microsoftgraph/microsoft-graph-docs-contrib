@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.Me.RegisteredDevices
+var registeredDevices = await graphClient.Me.RegisteredDevices
 	.Request()
 	.GetAsync();
 

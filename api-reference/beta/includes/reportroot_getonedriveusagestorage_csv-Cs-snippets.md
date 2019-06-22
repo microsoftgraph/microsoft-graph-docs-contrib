@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var siteUsageStorage = await graphClient.Reports.GetOneDriveUsageStorage('D7')
+var getOneDriveUsageStorage = await graphClient.Reports.GetOneDriveUsageStorage('D7')
 	.Request()
 	.GetAsync();
 

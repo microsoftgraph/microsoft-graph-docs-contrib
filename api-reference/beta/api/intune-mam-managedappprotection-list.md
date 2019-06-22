@@ -1,7 +1,7 @@
 ---
 title: "List managedAppProtections"
 description: "List properties and relationships of the managedAppProtection objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2155
+Content-Length: 2216
 
 {
   "value": [
@@ -107,7 +107,8 @@ Content-Length: 2155
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
-      "allowedOutboundClipboardSharingExceptionLength": 14
+      "allowedOutboundClipboardSharingExceptionLength": 14,
+      "notificationRestriction": "blockOrganizationalData"
     }
   ]
 }

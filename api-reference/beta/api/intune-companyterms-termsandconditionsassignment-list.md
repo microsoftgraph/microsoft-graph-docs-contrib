@@ -1,7 +1,7 @@
 ---
 title: "List termsAndConditionsAssignments"
 description: "List properties and relationships of the termsAndConditionsAssignment objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

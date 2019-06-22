@@ -1,7 +1,7 @@
 ---
 title: "auditActor resource type"
 description: "A class containing the properties for Audit Actor."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

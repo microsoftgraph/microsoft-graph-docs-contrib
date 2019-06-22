@@ -1,7 +1,7 @@
 ---
 title: "Get deviceComplianceDeviceOverview"
 description: "Read properties and relationships of the deviceComplianceDeviceOverview object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

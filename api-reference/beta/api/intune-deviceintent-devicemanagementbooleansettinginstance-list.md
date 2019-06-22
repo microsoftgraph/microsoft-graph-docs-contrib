@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementBooleanSettingInstances"
 description: "List properties and relationships of the deviceManagementBooleanSettingInstance objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

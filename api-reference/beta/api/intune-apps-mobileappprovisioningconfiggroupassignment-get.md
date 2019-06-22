@@ -1,7 +1,7 @@
 ---
 title: "Get mobileAppProvisioningConfigGroupAssignment"
 description: "Read properties and relationships of the mobileAppProvisioningConfigGroupAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

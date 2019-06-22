@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementScriptAssignment"
 description: "Create a new deviceManagementScriptAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

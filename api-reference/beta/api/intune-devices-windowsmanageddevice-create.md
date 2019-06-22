@@ -1,7 +1,7 @@
 ---
 title: "Create windowsManagedDevice"
 description: "Create a new windowsManagedDevice object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -102,6 +102,7 @@ The following table shows the properties that are required when you create the w
 |freeStorageSpaceInBytes|Int64|Free Storage in Bytes Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managedDeviceName|String|Automatically generated name to identify a device. Can be overwritten to a user friendly name. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |partnerReportedThreatState|[managedDevicePartnerReportedHealthState](../resources/intune-devices-manageddevicepartnerreportedhealthstate.md)|Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read Only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
+|retireAfterDateTime|DateTimeOffset|Indicates the time after when a device will be auto retired because of scheduled action. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) collection|Indicates the last logged on users of a device Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Reports the DateTime the preferMdmOverGroupPolicy setting was set.  When set, the Intune MDM settings will override Group Policy settings if there is a conflict. Read Only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |autopilotEnrolled|Boolean|Reports if the managed device is enrolled via auto-pilot. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -127,7 +128,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
-Content-length: 7231
+Content-length: 7293
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -269,6 +270,7 @@ Content-length: 7231
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
   "partnerReportedThreatState": "activated",
+  "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
   "usersLoggedOn": [
     {
       "@odata.type": "microsoft.graph.loggedOnUser",
@@ -302,7 +304,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7280
+Content-Length: 7342
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -445,6 +447,7 @@ Content-Length: 7280
   "freeStorageSpaceInBytes": 7,
   "managedDeviceName": "Managed Device Name value",
   "partnerReportedThreatState": "activated",
+  "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
   "usersLoggedOn": [
     {
       "@odata.type": "microsoft.graph.loggedOnUser",

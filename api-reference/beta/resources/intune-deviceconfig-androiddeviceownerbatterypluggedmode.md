@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerBatteryPluggedMode enum type"
 description: "Android Device Owner possible values for states of the device's plugged-in power modes."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var groupSetting = await graphClient.GroupSettings
+var groupSettings = await graphClient.GroupSettings
 	.Request()
 	.GetAsync();
 

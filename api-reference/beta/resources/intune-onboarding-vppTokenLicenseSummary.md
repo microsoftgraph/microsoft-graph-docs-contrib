@@ -1,7 +1,7 @@
 ---
 title: "vppTokenLicenseSummary resource type"
 description: "License summary of a given app in a token."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

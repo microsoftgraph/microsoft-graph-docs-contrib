@@ -1,7 +1,7 @@
 ---
 title: "Delete sharedPCConfiguration"
 description: "Deletes a sharedPCConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

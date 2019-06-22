@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Javascript
+```javascript
 
 const options = {
 	authProvider,
@@ -7,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{item-id}/thumbnails')
+let res = await client.api('/me/drive/items/{item-id}/thumbnails?select=c300x400_Crop')
 	.get();
 
 ```

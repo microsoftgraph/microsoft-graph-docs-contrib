@@ -2,7 +2,7 @@
 title: "orgContact: checkMemberGroups"
 description: "One of the following permissions is required to call this API. To learn more, including how to choose permissions, see Permissions."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

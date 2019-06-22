@@ -69,6 +69,8 @@ Content-length: 232
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_status-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_educationSynchronizationProfile_status-Cs-snippets.md)]

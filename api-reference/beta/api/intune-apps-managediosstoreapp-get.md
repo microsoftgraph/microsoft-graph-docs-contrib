@@ -1,7 +1,7 @@
 ---
 title: "Get managedIOSStoreApp"
 description: "Read properties and relationships of the managedIOSStoreApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

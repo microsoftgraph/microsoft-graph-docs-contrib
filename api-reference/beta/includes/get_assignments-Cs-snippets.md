@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var privilegedRoleAssignment = await graphClient.PrivilegedRoles["{id}"].Assignments
+var assignments = await graphClient.PrivilegedRoles["{id}"].Assignments
 	.Request()
 	.GetAsync();
 

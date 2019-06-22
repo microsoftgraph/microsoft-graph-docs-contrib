@@ -1,7 +1,7 @@
 ---
 title: "windowsPhoneXAP resource type"
 description: "Contains properties and inherited properties for Windows Phone XAP Line Of Business apps."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -111,7 +111,9 @@ Here is a JSON representation of the resource.
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "productIdentifier": "String",
   "identityVersion": "String"

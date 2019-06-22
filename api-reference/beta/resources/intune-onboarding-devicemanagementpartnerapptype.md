@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementPartnerAppType enum type"
 description: "Partner App Type."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

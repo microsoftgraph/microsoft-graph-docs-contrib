@@ -1,7 +1,7 @@
 ---
 title: "Get groupPolicyPresentationTextBox"
 description: "Read properties and relationships of the groupPolicyPresentationTextBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var userActivity = await graphClient.Me.Activities.Recent()
+var recent = await graphClient.Me.Activities.Recent()
 	.Request()
 	.GetAsync();
 

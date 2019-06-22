@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryRoleTemplate = await graphClient.DirectoryRoleTemplates
+var directoryRoleTemplates = await graphClient.DirectoryRoleTemplates
 	.Request()
 	.GetAsync();
 

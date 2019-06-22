@@ -1,7 +1,7 @@
 ---
 title: "Get appleVppTokenTroubleshootingEvent"
 description: "Read properties and relationships of the appleVppTokenTroubleshootingEvent object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -94,6 +94,8 @@ Content-Length: 1003
   }
 }
 ```
+
+
 
 
 

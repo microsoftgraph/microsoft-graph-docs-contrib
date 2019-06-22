@@ -1,7 +1,7 @@
 ---
 title: "Update embeddedSIMActivationCodePool"
 description: "Update the properties of a embeddedSIMActivationCodePool object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

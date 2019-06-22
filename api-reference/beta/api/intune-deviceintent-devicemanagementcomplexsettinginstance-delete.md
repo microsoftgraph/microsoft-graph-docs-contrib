@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementComplexSettingInstance"
 description: "Deletes a deviceManagementComplexSettingInstance."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

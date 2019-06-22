@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyDefinitionClassType enum type"
 description: "Group Policy Definition Class Type."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

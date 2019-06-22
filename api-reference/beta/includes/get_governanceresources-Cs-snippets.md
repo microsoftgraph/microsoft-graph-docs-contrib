@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var governanceResource = await graphClient.PrivilegedAccess["azureResources"].Resources
+var resources = await graphClient.PrivilegedAccess["azureResources"].Resources
 	.Request()
 	.GetAsync();
 

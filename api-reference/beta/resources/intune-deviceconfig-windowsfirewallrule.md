@@ -1,7 +1,7 @@
 ---
 title: "windowsFirewallRule resource type"
 description: "A rule controlling traffic through the Windows Firewall."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

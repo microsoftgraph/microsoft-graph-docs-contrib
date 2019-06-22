@@ -1,7 +1,7 @@
 ---
 title: "Update intuneBrandingProfileAssignment"
 description: "Update the properties of a intuneBrandingProfileAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

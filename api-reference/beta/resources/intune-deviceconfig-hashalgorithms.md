@@ -1,7 +1,7 @@
 ---
 title: "hashAlgorithms enum type"
 description: "Hash Algorithm Options."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

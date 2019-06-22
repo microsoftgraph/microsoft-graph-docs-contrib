@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var inferenceClassificationOverride = new InferenceClassificationOverride
 {
-	ClassifyAs = InferenceClassificationType.Focused,
+	ClassifyAs = InferenceClassificationType.Focused
 };
 
 await graphClient.Me.InferenceClassification.Overrides["{id}"]

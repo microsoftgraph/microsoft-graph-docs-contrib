@@ -1,7 +1,7 @@
 ---
 title: "Update androidManagedStoreAppConfigurationSchema"
 description: "Update the properties of a androidManagedStoreAppConfigurationSchema object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

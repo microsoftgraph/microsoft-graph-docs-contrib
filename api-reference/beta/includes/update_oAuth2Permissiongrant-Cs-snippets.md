@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var oAuth2PermissionGrant = new OAuth2PermissionGrant
 {
-	Scope = "scope-value",
+	Scope = "scope-value"
 };
 
 await graphClient.OAuth2Permissiongrants["{id}"]

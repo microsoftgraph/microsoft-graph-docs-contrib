@@ -1,7 +1,7 @@
 ---
 title: "androidUsernameSource enum type"
 description: "Android username source."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

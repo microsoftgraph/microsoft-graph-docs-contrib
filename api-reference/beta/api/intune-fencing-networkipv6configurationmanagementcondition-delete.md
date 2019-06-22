@@ -1,7 +1,7 @@
 ---
 title: "Delete networkIPv6ConfigurationManagementCondition"
 description: "Deletes a networkIPv6ConfigurationManagementCondition."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

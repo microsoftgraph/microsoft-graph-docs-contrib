@@ -1,7 +1,7 @@
 ---
 title: "Delete macOSDeviceFeaturesConfiguration"
 description: "Deletes a macOSDeviceFeaturesConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

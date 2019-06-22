@@ -1,7 +1,7 @@
 ---
 title: "Delete androidCustomConfiguration"
 description: "Deletes a androidCustomConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

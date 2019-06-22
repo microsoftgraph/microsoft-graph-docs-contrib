@@ -1,7 +1,7 @@
 ---
 title: "Delete groupPolicyDefinitionValue"
 description: "Deletes a groupPolicyDefinitionValue."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

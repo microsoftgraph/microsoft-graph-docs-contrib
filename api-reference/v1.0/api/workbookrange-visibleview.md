@@ -68,6 +68,8 @@ Content-length: 194
 }
 ```
 #### SDK sample code
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/workbookrange_visibleview-Javascript-snippets.md)]
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/workbookrange_visibleview-Cs-snippets.md)]

@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.Groups["{id}"].TransitiveMemberOf
+var transitiveMemberOf = await graphClient.Groups["{id}"].TransitiveMemberOf
 	.Request()
 	.GetAsync();
 

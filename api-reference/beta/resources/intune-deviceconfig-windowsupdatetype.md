@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateType enum type"
 description: "Which branch devices will receive their updates from"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

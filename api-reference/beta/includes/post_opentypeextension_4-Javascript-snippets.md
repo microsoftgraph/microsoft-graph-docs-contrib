@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Javascript
+```javascript
 
 const options = {
 	authProvider,
@@ -15,7 +18,7 @@ const reply = {
     },
   extensions: [
     {
-      @odata.type: "microsoft.outlookServices.openTypeExtension",
+      @odata.type: "microsoft.graph.openTypeExtension",
       extensionName: "Com.Contoso.HR",
       companyName: "Contoso",
       expirationDate: "2015-07-03T13:04:00.000Z",

@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var emailAddress = await graphClient.Me.FindRoomLists()
+var findRoomLists = await graphClient.Me.FindRoomLists()
 	.Request()
 	.GetAsync();
 

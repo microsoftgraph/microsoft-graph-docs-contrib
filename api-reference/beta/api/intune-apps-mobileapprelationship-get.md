@@ -1,7 +1,7 @@
 ---
 title: "Get mobileAppRelationship"
 description: "Read properties and relationships of the mobileAppRelationship object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
