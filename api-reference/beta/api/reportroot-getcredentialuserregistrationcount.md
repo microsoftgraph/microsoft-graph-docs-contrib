@@ -2,7 +2,7 @@
 title: "reportRoot: getCredentialUserRegistrationCount"
 description: "Provide the summary of self-service password reset and multi-factor authentication (MFA) registration for a given tenant."
 localization_priority: Normal
-author: "dkershaw"
+author: "davidmu1"
 ms.prod: "identity and access reports"
 doc_type: "apiPageType"
 ---
@@ -37,7 +37,8 @@ GET /reports/getCredentialsUserRegistrationCount
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
+| Content-Type | application/json |
 
 ## Request body
 

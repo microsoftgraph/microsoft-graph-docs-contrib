@@ -2,7 +2,7 @@
 title: "reportRoot: getCredentialUsageSummary"
 description: "This API reports the current state of how many users in your organization are using self-service password reset capabilities."
 localization_priority: Normal
-author: "dkershaw"
+author: "davidmu1"
 ms.prod: "identity and access reports"
 doc_type: "apiPageType"
 ---
@@ -40,7 +40,7 @@ In the request URL, provide the following **$filter** or **$orderby** query para
 | feature | Filter by type of usage data you want (registration vs.reset). For example: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Supported filter operators: `eq` |
 | userDisplayName | Filter by user display name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
 | userPrincipalName  | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`.	Supported filter  operators: `eq` and `startswith()`. Supports case insensitive. |
-| isSuccess | Filter by status of the activity. For example: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Supported filter operators: `eq` and `orderby`. |
+| isSuccess | Filter by status of the activity. For example: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Supported filter operators: `eq`. |
 | authMethod  | Filter by the authentication methods using during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethod eq 'email'`. Supported filter operators: `eq`. |
 | failureReason | Filter by failure reason (if the activity has failed). For example: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
 
@@ -48,7 +48,8 @@ In the request URL, provide the following **$filter** or **$orderby** query para
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
+| Content-Type | application/json |
 
 ## Request body
 

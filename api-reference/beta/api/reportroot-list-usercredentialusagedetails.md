@@ -2,7 +2,7 @@
 title: "List userCredentialUsageDetails"
 description: "Provide the details of self-service password reset usage for a given tenant."
 localization_priority: Normal
-author: "dkershaw"
+author: "davidmu1"
 ms.prod: "identity and access reports"
 doc_type: "apiPageType"
 ---
@@ -44,7 +44,8 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
+| Content-Type | application/json |
 
 ## Request body
 

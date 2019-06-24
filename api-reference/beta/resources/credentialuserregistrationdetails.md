@@ -2,7 +2,7 @@
 title: "credentialUserRegistrationDetails resource type"
 description: "Provide the details of self-service password reset and multi-factor authentication (MFA) registration for a given tenant."
 localization_priority: Normal
-author: "dkershaw"
+author: "davidmu1"
 ms.prod: "identity and access reports"
 doc_type: "resourcePageType"
 ---

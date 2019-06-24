@@ -2,7 +2,7 @@
 title: "List credentialUserRegistrationDetails"
 description: "This API reports the details of user registration for a given tenant"
 localization_priority: Normal
-author: "dkershaw"
+author: "davidmu1"
 ms.prod: "identity and access reports"
 doc_type: "apiPageType"
 ---
@@ -33,23 +33,24 @@ GET /reports/credentialUserRegistrationDetails
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters). In the request URL, provide the following **$filter** or **$orderby** query parameters with values.
 
-| Name | Description |
+| Name | Description and example |
 | ---- | ---- | ------------|
-| userDisplayName | Filter by UserName. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported operators: `eq`, `startswith()`, `orderby`. Supports case insensitive. |
-| userPrincipalName | Filter by User Principal Name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`. Supported operators: `eq`, `startswith()`, `orderby`. Supports case insensitive. |
-| authMethods | Filter by the authentication methods using during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq 'email')`. Supported operators: `eq`. |
-| isRegistered | Filter for users who have registered for SSPR. For example: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Supported operators: `eq`, `orderby`. |
-| isEnabled | Filter for users who have been enabled for SPPR. For example: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Supported operators: `eq`, `orderby`. |
-| isCapable | Filter for users who are ready to perform password reset or MFA. For example: `/reports/userCredentialUsageDetails?$filter=isCapable eq true`. Supported operators: `eq`, `orderby` |
-| isMfaRegistered | Filter for users who are registered for MFA. For example: `/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`. Supported operators: `eq`, `orderby`. |
+| userDisplayName | Filter by UserName. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
+| userPrincipalName | Filter by User Principal Name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
+| authMethods | Filter by the authentication methods using during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq 'email')`. Supported filter operators: `eq`. |
+| isRegistered | Filter for users who have registered for SSPR. For example: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Supported filter operators: `eq`. |
+| isEnabled | Filter for users who have been enabled for SPPR. For example: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Supported filtter operators: `eq`. |
+| isCapable | Filter for users who are ready to perform password reset or MFA. For example: `/reports/userCredentialUsageDetails?$filter=isCapable eq true`. Supported filter operators: `eq` |
+| isMfaRegistered | Filter for users who are registered for MFA. For example: `/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`. Supported filter operators: `eq`. |
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
+| Content-Type | application/json |
 
 ## Request body
 
