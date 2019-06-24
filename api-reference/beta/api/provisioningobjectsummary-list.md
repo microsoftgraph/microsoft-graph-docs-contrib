@@ -2,7 +2,7 @@
 title: "List provisioningObjectSummary"
 description: "Get all provisioning events that occurred in your tenant."
 localization_priority: Normal
-author: "ArvindHarinder1"
+author: "davidmu1"
 ms.prod: "ms.prod"
 doc_type: "apiPageType"
 ---
