@@ -7,7 +7,7 @@ ms.prod: "groups"
 ---
 
 # Remove member
-Use this API to remove a member from an Office 365 group through the **members** navigation property.
+Use this API to remove a member from an Office 365 group via the **members** navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
