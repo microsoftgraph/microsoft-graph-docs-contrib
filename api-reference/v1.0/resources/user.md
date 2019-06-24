@@ -56,6 +56,7 @@ This resource supports:
 |[getMemberGroups](../api/user-getmembergroups.md)|String collection|Return all the groups that the user is a member of. The check is transitive.|
 |[getMemberObjects](../api/user-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user is a member of. The check is transitive. |
 |[reminderView](../api/user-reminderview.md)|[Reminder](reminder.md) collection|Return a list of calendar reminders within the start and end times specified.|
+|[revokeSignInSessions](../api/user-revokesigninsessions.md)| None |Revokes all the user's refresh and session tokens issued to applications, by resetting the **signInSessionsValidFromDateTime** user property to the current date-time. This forces the user to sign in to those applications again.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -121,6 +122,7 @@ This resource supports:
 |schools|String collection|A list for the user to enumerate the schools they have attended.|
 |showInAddressList|Boolean|**true** if the Outlook global address list should contain this user, otherwise **false**. If not set, this will be treated as **true**. For users invited through the invitation manager, this property will be set to **false**.|
 |skills|String collection|A list for the user to enumerate their skills.|
+|signInSessionsValidFromDateTime|DateTimeOffset| Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 |state|String|The state or province in the user's address. Supports $filter.|
 |streetAddress|String|The street address of the user's place of business.|
 |surname|String|The user's surname (family name or last name). Supports $filter.|
@@ -417,6 +419,7 @@ Here is a JSON representation of the resource
   "responsibilities": ["string"],
   "schools": ["string"],
   "showInAddressList": true,
+  "signInSessionsValidFromDateTime": "String (timestamp)",
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
