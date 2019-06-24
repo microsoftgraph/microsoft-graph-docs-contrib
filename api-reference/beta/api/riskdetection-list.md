@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "list_riskDetections"
+  "name": "list_riskDetection"
 }-->
 
 ```http
@@ -71,7 +71,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true,
   "isCollection": true,
-  "@odata.type": "microsoft.graph.riskDetections"
+  "@odata.type": "microsoft.graph.riskDetection"
 } -->
 
 ```http
@@ -133,7 +133,7 @@ Here is an example of the response.
   "blockType": "response",
   "truncated": true,
   "isCollection": true,
-  "@odata.type": "microsoft.graph.riskDetections"
+  "@odata.type": "microsoft.graph.riskDetection"
 } -->
 
 ```http
