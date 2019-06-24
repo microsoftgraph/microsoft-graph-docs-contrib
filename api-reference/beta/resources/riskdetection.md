@@ -13,7 +13,7 @@ Represents risk detections in Azure AD tenants. Azure AD continually evaluates u
 
 For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
 
->**Note:** Using the riskDetection API requires an Azure AD Premium P2 license.
+[!NOTE] You must have an Azure AD Premium P2 license to use the risk detection API.
 
 ## Methods
 
