@@ -33,7 +33,7 @@ GET /reports/getCredentialUsageSummary
 
 ## Function parameters
 
-In the request URL, provide the following **$filter** or **orderby** query parameters with values.
+In the request URL, provide the following **$filter** or **$orderby** query parameters with values.
 
 | Parameter value | Description and example |
 |:--------- |:----------- |
