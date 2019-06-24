@@ -13,7 +13,7 @@ You can use the Microsoft Graph Postman collection to get started with Microsoft
 
 This article explains how to get up and running with Postman and Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
 
-## Access the collection
+## Accessing the collection
 You can access the collection in Postman in two ways: by consuming it or by contributing to it. You will need to have [Postman](https://www.getpostman.com/) running on your computer first.
 
 ### Consume the collection
