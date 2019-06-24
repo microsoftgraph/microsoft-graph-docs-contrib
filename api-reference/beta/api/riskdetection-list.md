@@ -1,6 +1,6 @@
 ---
 title: "List riskDetections"
-description: "Retrieve the properties and relationships of a collection of **riskDetections** objects."
+description: "Retrieve the properties and relationships of a collection of **riskDetection** object."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a collection of **riskDetections** objects.
+Retrieve the properties and relationships of a collection of **riskDetection** object.
 
 >**Note:** Using the riskDetections API requires an Azure AD Premium P2 license.
 
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [riskDetections](../resources/riskDetections.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [riskDetection](../resources/riskDetection.md) objects in the response body.
 
 ## Examples
 
