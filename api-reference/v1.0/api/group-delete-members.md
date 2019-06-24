@@ -1,6 +1,6 @@
 ---
 title: "Remove member"
-description: "Use this API to remove a member from an Office 365 group through the **members** navigation property."
+description: "Use this API to remove a member from an Office 365 group via the **members** navigation property."
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
