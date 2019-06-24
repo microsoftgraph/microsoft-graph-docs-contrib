@@ -1,5 +1,5 @@
 ---
-title: "riskDetections resource type"
+title: "riskDetection resource type"
 description: "Represents all risk detections in AzureAD tenants."
 author: "cloudhandler"
 localization_priority: Normal
@@ -13,14 +13,14 @@ Represents risk detections in Azure AD tenants. Azure AD continually evaluates u
 
 For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
 
->**Note:** Using the riskDetections API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskDetection API requires an Azure AD Premium P2 license.
 
 ## Methods
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List riskDetections](../api/riskdetections-list.md) | [riskDetections](riskDetections.md) collection|List risk detections and their properties.|
-|[Get riskDetections](../api/riskdeetections-get.md) | [riskDetections](riskdetections.md)|Get a specific risky detection and its properties.|
+|[List riskDetections](../api/riskdetections-list.md) | [riskDetection](riskDetection.md) collection|List risk detections and their properties.|
+|[Get riskDetections](../api/riskdeetections-get.md) | [riskDetection](riskdetection.md)|Get a specific risky detection and its properties.|
 
 ## Properties
 
