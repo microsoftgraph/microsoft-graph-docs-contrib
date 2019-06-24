@@ -20,8 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> [!NOTE]
->Permissions are limited depending on the group features that you are trying to access. For more information, see [Known issues with Microsoft Graph](/graph/known-issues#groups).
+>**Note:** Depending on the group features you're trying to access, permissions might be limited. For more information, see the Groups section in [Known issues with Microsoft Graph](/graph/known-issues#groups).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +45,11 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties.
 
 ## Example
-#### Request 1
+
+### Example 1
+
+#### Request 
+
 The following is an example of a GET request. 
 <!-- {
   "blockType": "request",
@@ -57,11 +60,10 @@ The following is an example of a GET request.
 GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
 
-#### Response 1
+#### Response
 The following is an example of the response. It includes only the default properties.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 
 <!-- {
   "blockType": "response",
@@ -103,18 +105,11 @@ Content-type: application/json
     "onPremisesProvisioningErrors": []
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_group-Javascript-snippets.md)]
+### Example 2
 
----
+#### Request
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-#### Request 2
 The next example uses a `$select` query option to get a few properties that are not returned by default. 
 <!-- {
   "blockType": "request",
@@ -125,7 +120,8 @@ The next example uses a `$select` query option to get a few properties that are 
 GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 ```
 
-#### Response 2
+#### Response
+
 The following is an example of the response which includes the requested non-default properties.
 
 <!-- {
@@ -147,7 +143,21 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
-#### SDK sample code
+
+### SDK sample code 1
+
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_group-Javascript-snippets.md)]
+
+---
+
+### SDK sample code 2
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group_non_default-Cs-snippets.md)]
 
