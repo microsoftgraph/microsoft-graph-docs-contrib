@@ -63,7 +63,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added support for [delta](/graph/api/message-delta?view=graph-rest-beta) and [mailfolder](/graph/api/user-list-mailfolders?view=graph-rest-beta) methods for Mail.ReadBasic. |
+| Addition | beta | Added support for the Mail.ReadBasic permission, in [list](/graph/api/user-list-mailfolders?view=graph-rest-beta) and [get](/graph/api/mailfolder-get?view=graph-rest-beta) APIs for mailFolder, [delta query for message](/graph/api/message-delta?view=graph-rest-beta), and [delta query for mailFolder](/graph/api/message-delta?view=graph-rest-beta). |
 
 ### Microsoft Teams APIs
 
