@@ -1,6 +1,6 @@
 ---
 title: "Get riskDetections"
-description: "Retrieve the properties and relationships of a **riskdetections** object."
+description: "Retrieve the properties and relationships of a **riskdetection** object."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a **riskDetections** objects.
+Retrieve the properties and relationships of a **riskDetection** object.
 
 >**Note:** Using the riskDetections API requires an Azure AD Premium P2 license.
 
@@ -39,13 +39,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [riskDetections](../resources/riskDetections.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [riskDetection](../resources/riskDetection.md) object in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_riskDetections",
+  "name": "get_riskDetection",
   "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```http
