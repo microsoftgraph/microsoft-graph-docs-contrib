@@ -13,12 +13,24 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2019
 
-### Reports
+### Reports APIs
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 |Addition|beta| Added new reports for retrieving user registration and usage information:<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.</li></ul> |
-|Addition|beta| Added new resources to support the new reports:<br/><ul><li>[credentialUsagesSummary](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) - Represents usage of self-service password reset.</li><li>[credentialUserRegistrationCount](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) - Represents registrations for self-service password reset and multi-factor authentication.</li><li>[credentialUserRegistrationDetails](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) - Represents usage of self-service password reset and multi-factor authentication.</li><li>[userCredentialUsageDetails](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) – Represents usage of self-service password reset for a user.</li><li>[userRegistrationCount](/graph/api/resources/userRegistrationCount?view=graph-rest-beta) - Represents registration for users.</li></ul> |
+
+### Azure AD APIs
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta  | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.|
+
+### Directory APIs
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | v1.0 | Added the **signInSessionsValidFromDateTime** property on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
+| Addition | v1.0 | Added the [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) action on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
 
 ### Microsoft Intune APIs
 |Change type|Version|Description|
