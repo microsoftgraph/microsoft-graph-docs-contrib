@@ -40,7 +40,7 @@ GET /relyingPartyDetailedSummary
 
 This method supports some of the OData query parameters to help customize the response. 
 
-- You can use the `$filter` parameter to filter by relyingPartyId, migrationStatus and other attributes. For example, $filter=contains(relyingPartyId, 'identifier').
+- You can use the `$filter` parameter to filter by relyingPartyId, migrationStatus and other attributes. For example, $filter= relyingPartyId eq 'identifier'.
 - You can use $orderby, $top, and $skip query parameters in any GET request.
 
 For general information, see [OData query parameters](/graph/query-parameters).
