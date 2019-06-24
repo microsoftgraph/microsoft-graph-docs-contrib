@@ -10,7 +10,7 @@ ms.prod: identity and access reports
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The authentication methods usage reports help you understand how the Azure Active Directory capabilities are being used, such as self-service password reset and multi-factor authentication (MFA). You can use the reports to gain insights using the various authentication methods provided by Azure Active Directory. For example, you can use these reports to gather feedback when you are rolling out these capabilities within your organization.
+The authentication methods usage reports help you understand how the Azure Active Directory capabilities are used, such as self-service password reset and multi-factor authentication (MFA). You can use the reports to gain insights using the various authentication methods provided by Azure Active Directory. For example, you can use these reports to gather feedback when you are rolling out these capabilities within your organization.
 
 These reports provide information such as:
 

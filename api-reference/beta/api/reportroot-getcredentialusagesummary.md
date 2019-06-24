@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API reports the current state of how many users in your organization are using self-service password reset capabilities.
+This API reports the current state of how many users in your organization used the self-service password reset capabilities.
 
 ## Permissions
 
