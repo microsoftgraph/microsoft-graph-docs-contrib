@@ -11,7 +11,7 @@ ms.prod: "microsoft-identity-platform"
 
 Retrieve the properties and relationships of a collection of **riskDetection** object.
 
->**Note:** Using the riskDetections API requires an Azure AD Premium P2 license.
+[!NOTE] You must have an Azure AD Premium P2 license to use the risk detection API.
 
 ## Permissions
 
