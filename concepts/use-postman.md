@@ -27,7 +27,9 @@ After you have the collection, you'll need to set up the environment variables:
 2. Select **Import From Link**.
 3. Copy and paste the following URL and choose **Import**.
  
-  `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
+    ```
+    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json
+    ```
 
 You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to  [set up your environment](#using-the-collection).
 
@@ -45,9 +47,12 @@ To import the Postman collections:
 3. Select **Import From Link**.
 4. Paste the following two URLs and choose **Import** after each.
 
-  `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_collection.json`
+    ```
+      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_collection.json
 
-  `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
+      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json
+
+    ```
 
 You should now see the **Microsoft Graph v1.0** collection on the **Collections** pane.
 
