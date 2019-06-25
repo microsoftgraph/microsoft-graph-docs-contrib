@@ -7,9 +7,9 @@ localization_priority: Priority
 
 # What's new in Microsoft Graph
 
-New features and capabilities in Microsoft Graph often originate as popular requests from the developer community. They usually debut as APIs in [preview status](versioning-and-support.md#beta-version) in the beta endpoint (`https://graph.microsoft.com/beta`). Some of them may receive sufficient feedback, evolve, and be promoted to  the general availability (GA) version of v1.0 (`https://graph.microsoft.com/v1.0`). GA APIs enable production apps to access data and intelligence in Microsoft 365 in more compelling ways.
+New features and capabilities in Microsoft Graph often originate as popular requests from the developer community. Their APIs usually debut in [preview status](versioning-and-support.md#beta-version) in the beta version (`https://graph.microsoft.com/beta`). Some of them may receive sufficient feedback, evolve, and be promoted to  the general availability (GA) version, v1.0 (`https://graph.microsoft.com/v1.0`). GA APIs enable production apps to access data and intelligence in Microsoft 365 in more compelling ways.
 
-The following are highlights of some of the features and capabilities released during May and June of 2019. The [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog contain a more complete enumeration of updates at the API level.
+The [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog enumerate the latest API updates. The following sections highlight the more significant ones. 
 
 ## What's new in v1.0 (GA)
 
@@ -52,5 +52,5 @@ Host [images](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta) 
 - Find [highlights of earlier releases](whats-new-earlier.md).
 
 ## Next steps
-- Are there scenarios you would like Microsoft Graph to support? Suggest and vote for feature requests at [Microsoft Graph User Voice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+- Are there scenarios you'd like Microsoft Graph to support? Suggest and vote for feature requests at [Microsoft Graph User Voice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
 - Be an active member in the Microsoft Graph community! [Join](https://aka.ms/microsoftgraphcall) the monthly Microsoft Graph community call.
