@@ -26,7 +26,8 @@ After you have the collection, you'll need to set up the environment variables:
 1. Choose **File | Import ...**.
 2. Select **Import From Link**.
 3. Copy and paste the following URL and choose **Import**.
- `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
+ 
+  `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
 
 You should now see the **Microsoft Graph environment** in the top right environment drop down by the eye icon. Now you need to  [set up your environment](#using-the-collection).
 
@@ -44,9 +45,9 @@ To import the Postman collections:
 3. Select **Import From Link**.
 4. Paste the following two URLs and choose **Import** after each.
 
- `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_collection.json`
+  `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_collection.json`
 
- `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
+  `https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json`
 
 You should now see the **Microsoft Graph v1.0** collection on the **Collections** pane.
 
@@ -80,13 +81,13 @@ If you don't want to store user names and passwords in environment variables tha
 3. Choose the **get access token** button.
 4. Fill out the following boxes with your real tenant and application values. Note that you cannot use the environment variables here; you have to use the actual values. You can find them by selecting **EndPoints** in the application blade in portal.azure.com.
 
-  - Callback URL: https://app.getpostman.com/oauth2/callback
-  - Auth URL: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/authorize
-  - Access Token URL: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/token
-  - Client ID: **CLIENTID**
-  - Client Secret: **CLIENTSECRET**
-  - Scope: https://graph.microsoft.com/.default
-  - State: **RANDOMSTRING**
+    - Callback URL: https://app.getpostman.com/oauth2/callback
+    - Auth URL: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/authorize
+    - Access Token URL: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/token
+    - Client ID: **CLIENTID**
+    - Client Secret: **CLIENTSECRET**
+    - Scope: https://graph.microsoft.com/.default
+    - State: **RANDOMSTRING**
  
 5. Choose **Request Token**. You should see a UI prompt to sign in and consent permissions.
 6. Copy the access token, open your environment variables, and paste it into the **UserAccessToken** field.
