@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.statusDetails",
-  "baseType": "self.statusBase"
+  "baseType": "microsoft.graph.statusBase"
 }-->
 
 ```json
