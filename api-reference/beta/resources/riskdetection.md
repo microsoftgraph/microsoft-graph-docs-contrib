@@ -36,7 +36,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`source`|`string`|Source of the risk detection |
 |`detectionTimingType`|`riskDetectionTimingType`|Timing of risk detection (real-time/offline). The possible values are notDefined, realtime, nearrealtime, offline, unknownfuturevalue. |
 |`activity`|`activityType`|Indicates the activity type the risk detection is linked to. The possible values are signin, user, unknownfuturevalue. |
-|`tokenIssuerType`|`tokenIssuerType`|Indicates the type of token issuer of the risk detection. The possible values are ADFS and AzureAD) |
+|`tokenIssuerType`|`tokenIssuerType`|Indicates the type of token issuer of the risk detection. The possible values are AzureAD, ADFederationServices, and unknownFutureValue. |
 |`ipAddress`|`string`|IP Address of the risk detection |
 |`location`|`signInLocation`|Location of the sign in |
 |`activityDateTime`|`datetime`|Date and time of the activity that the detection was generated from |
