@@ -7877,6 +7877,13 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
+      - name: Risk detection
+        href: resources/riskdetection.md
+        items:
+          - name: List risk detection
+            href: api/riskdetection-list.md
+          - name: Get risky detection 
+            href: api/riskdetection-get.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
