@@ -33,7 +33,7 @@ Get /auditLogs/directoryProvisioning
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query_parameters).
+This method supports some of the OData query parameters to help customize the response. Note that the filters are all case sensetive except for status. For general information, see [OData query parameters](/graph/query_parameters).
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
@@ -44,17 +44,26 @@ This method supports some of the OData query parameters to help customize the re
 
 |Attribute Name |Supported operators|
 |:----------------|:------|
-|id| eq|
-|activityDateTime| eq|
-|tenantid|eq|
-|jobid|eq|
-|changeid|eq|
-|cycleid|eq|
-|action|eq|
-|modifiedproperty/DisplayName| eq|
-|modifiedproperty/oldValue| eq|
-|modifiedproperty/newValue| eq|
-
+|id| eq, contains|
+|activityDateTime| eq, contains|
+|tenantid|eq, contains|
+|jobid|eq, contains|
+|changeid|eq, contains|
+|cycleid|eq, contains|
+|action|eq, contains|
+|modifiedproperty/DisplayName| eq, contains|
+|modifiedproperty/oldValue| eq, contains|
+|modifiedproperty/newValue| eq, contains|
+|statusInfo/status|eq, contains|
+|sourceSystem/displayName|eq, contains|
+|targetSystem/displayName|eq, contains|
+|sourceIdentity/identityType|eq, contains|
+|targetIdentity/identityType|eq, contains|
+|sourceIdentity/id|eq, contains|
+|targetIdentity/id|eq, contains|
+|sourceIdentity/displayName|eq, contains|
+|targetIdentity/displayName|eq, contains|
+|initiatedBy/displayName|eq, contains|
 
 ## Request headers
 
@@ -84,9 +93,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
 ```
 
-### Response
+### Response 1
 
-The following is an example of the response.
+The following is an example of the response for a successful event.
 
 > [!NOTE]
 > The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -198,7 +207,134 @@ Content-type: application/json
 }
 
 ```
+### Response 2
 
+The following is an example of the response for a failed provisioning event.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.provisioningObjectSummary"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+        {
+            "id": "gc532ff9-r265-ec76-861e-42e2970a8218",
+            "activityDateTime": "2019-06-24T20:53:08Z",
+            "tenantId": "7928d5b5-7442-4a97-ne2d-66f9j9972ecn",
+            "jobId": "BoxOutDelta.7928d5b574424a97ne2d66f9j9972ecn",
+            "cycleId": "44576n58-v14b-70fj-8404-3d22tt46ed93",
+            "changeId": "eaad2f8b-e6e3-409b-83bd-e4e2e57177d5",
+            "action": "Create",
+            "durationInMilliseconds": 2785,
+            "sourceSystem": {
+                "id": "0404601d-a9c0-4ec7-bbcd-02660120d8c9",
+                "displayName": "Azure Active Directory",
+                "details": {}
+            },
+            "targetSystem": {
+                "id": "cd22f60b-5f2d-1adg-adb4-76ef31db996b",
+                "displayName": "Box",
+                "details": {
+                    "ApplicationId": "f2764360-e0ec-5676-711e-cd6fc0d4dd61",
+                    "ServicePrincipalId": "chc46a42-966b-47d7-9774-576b1c8bd0b8",
+                    "ServicePrincipalDisplayName": "Box"
+                }
+            },
+            "initiatedBy": {
+                "id": "",
+                "displayName": "Azure AD Provisioning Service",
+                "initiatorType": "system"
+            },
+            "sourceIdentity": {
+                "id": "5e6c9rae-ab4d-5239-8ad0-174391d110eb",
+                "displayName": "Self-service Pilot",
+                "identityType": "Group",
+                "details": {}
+            },
+            "targetIdentity": {
+                "id": "",
+                "displayName": "",
+                "identityType": "Group",
+                "details": {}
+            },
+            "statusInfo": {
+                "@odata.type": "#microsoft.graph.statusDetails",
+                "status": "failure",
+                "errorCode": "BoxEntryConflict",
+                "reason": "Message: Box returned an error response with the HTTP status code 409.  This response indicates that a user or a group already exisits with the same name. This can be avoided by identifying and removing the conflicting user from Box via the Box administrative user interface, or removing the current user from the scope of provisioning either by removing their assignment to the Box application in Azure Active Directory or adding a scoping filter to exclude the user.",
+                "additionalDetails": null,
+                "errorCategory": "NonServiceFailure",
+                "recommendedAction": null
+            },
+            "provisioningSteps": [
+                {
+                    "name": "EntryImportAdd",
+                    "provisioningStepType": "import",
+                    "status": "success",
+                    "description": "Received Group 'Self-service Pilot' change of type (Add) from Azure Active Directory",
+                    "details": {}
+                },
+                {
+                    "name": "EntrySynchronizationAdd",
+                    "provisioningStepType": "matching",
+                    "status": "success",
+                    "description": "Group 'Self-service Pilot' will be created in Box (Group is active and assigned in Azure Active Directory, but no matching Group was found in Box)",
+                    "details": {}
+                },
+                {
+                    "name": "EntryExportAdd",
+                    "provisioningStepType": "export",
+                    "status": "failure",
+                    "description": "Failed to create Group 'Self-service Pilot' in Box",
+                    "details": {
+                        "ReportableIdentifier": "Self-service Pilot"
+                    }
+                }
+            ],
+            "modifiedProperties": [
+                {
+                    "displayName": "objectId",
+                    "oldValue": null,
+                    "newValue": "5e0c9eae-ad3d-4139-5ad0-174391d110eb"
+                },
+                {
+                    "displayName": "displayName",
+                    "oldValue": null,
+                    "newValue": "Self-service Pilot"
+                },
+                {
+                    "displayName": "mailEnabled",
+                    "oldValue": null,
+                    "newValue": "False"
+                },
+                {
+                    "displayName": "mailNickname",
+                    "oldValue": null,
+                    "newValue": "5ce25n9a-4c5f-45c9-8362-ef3da29c66c5"
+                },
+                {
+                    "displayName": "securityEnabled",
+                    "oldValue": null,
+                    "newValue": "True"
+                },
+                {
+                    "displayName": "Name",
+                    "oldValue": null,
+                    "newValue": "Self-service Pilot"
+                }
+            ]
+        }
+    ]
+}
+
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
