@@ -26,7 +26,6 @@ Here is a JSON representation of the resource.
 }-->
 ``` json
 {
-  "Directory": "AppName",
-  "ApplicationId": "18d14464-9snc-428c-aba4-3b673gbd5600"
+  "@odata.type": "microsoft.graph.detailsInfo"
 }
 ```
