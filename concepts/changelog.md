@@ -16,7 +16,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Identity Protection APIs
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta | Added the [riskDetections API](/graph/api/resources/riskdetections?view=graph-rest-beta), which represents risk detections in Azure AD Identity Protection. |
+| Addition | beta | Added the [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), which represents risk detections in Azure AD Identity Protection. |
 
 ### Directory APIs
 
