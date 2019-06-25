@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a collection of **riskDetection** objects.
+Retrieve the properties of a collection of **riskDetection** object.
 
 [!NOTE] You must have an Azure AD Premium P2 license to use the risk detection API.
 
