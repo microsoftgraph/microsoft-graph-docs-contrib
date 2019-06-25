@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "certificateAuthorities": {"@odata.type": "microsoft.graph.certificateAuthority"},
+  "certificateAuthorities": {"@odata.type": "collection(microsoft.graph.certificateAuthority)"},
   "id": "String (identifier)"
 }
 ```
