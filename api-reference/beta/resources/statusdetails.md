@@ -3,7 +3,7 @@ title: "statusDetails resource type"
 description: "Describes the status of the provisioning event and the associated errors."
 localization_priority: Normal
 author: "davidmu1"
-ms.prod: "ms.prod"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
