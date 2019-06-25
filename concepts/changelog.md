@@ -12,13 +12,13 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
 ## June 2019
-
 ### Azure AD APIs
 
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta |Added new resources: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
-Addition|beta|Added the [provisioningObjectSummary-list](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) operation</br>|
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta  | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.|
+| Addition | beta|Added new resources: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
+| Addition |beta |Added the [provisioningObjectSummary-list](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) operation</br>|
 
 ### Directory APIs
 
@@ -65,6 +65,7 @@ Addition|beta|Added the [provisioningObjectSummary-list](/graph/api/resources/pr
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods. |
 
+
 ### OneDrive and SharePoint APIs
 
 | **Change type** | **Version** | **Description**                          |
@@ -72,7 +73,14 @@ Addition|beta|Added the [provisioningObjectSummary-list](/graph/api/resources/pr
 | Addition        | Beta        | Added the [followSite](/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
 | Addition        | Beta        | Added the [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
 
+
+
+## May 2019
+
+### Microsoft Teams APIs
+=======
 ### Outlook mail, calendar, contacts
+
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -232,8 +240,9 @@ Addition|beta|Added the [provisioningObjectSummary-list](/graph/api/resources/pr
 | :-------------- | :------------ | :--------------------------------------- |
 |Addition |v1.0 | Added support for application permissions to the [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) resource.|
 |Addition |v1.0| Added the **email** and **webUrl** properties to [channel](/graph/api/resources/channel?view=graph-rest-1.0).|
-| Addition | beta | Added the [chat](/api-reference/beta/resources/chat.md) resources and associated methods. |
-| Addition | beta | Added the [conversation member](/api-reference/beta/resources/conversationmember.md) resources and associated methods. |
+|Addition | beta | Added the [chat](/api-reference/beta/resources/chat.md) resources and associated methods. |
+|Addition |beta| Added APIs to read [images](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta) in messages.|
+|Addition | beta | Added the [conversation member](/api-reference/beta/resources/conversationmember.md) resources and associated methods. |
 
 ### OneDrive and SharePoint APIs
 
