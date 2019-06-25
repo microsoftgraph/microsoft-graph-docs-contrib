@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all provisioning events that occurred in your tenant such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system. 
+Get all provisioning events that occurred in your tenant, such as the deletion of a group in a target application or the creation of a user when provisioning user accounts from your HR system. 
 
 ## Permissions
 
@@ -33,16 +33,17 @@ GET /auditLogs/directoryProvisioning
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. Note that the filters are all case sensetive except for status. For general information, see [OData query parameters](/graph/query_parameters).
+This method supports the following OData query parameter to help customize the response. Note that the filters are all case sensitive except for status. 
 
 |Name     |Description                            |Example|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Filters results (rows). |/`auditLogs/directoryProvisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
 
+For general information, see [OData query parameters](/graph/query_parameters).
 
-### Attributes supported by $filter parameter
+### Attributes supported by the $filter parameter
 
-|Attribute Name |Supported operators|
+|Attribute name |Supported operators|
 |:----------------|:------|
 |id| eq, contains|
 |activityDateTime| eq, contains|
@@ -93,12 +94,11 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
 ```
 
-### Response 1
+### Response 1- Success
 
 The following is an example of the response for a successful event.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -211,8 +211,7 @@ Content-type: application/json
 
 The following is an example of the response for a failed provisioning event.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
