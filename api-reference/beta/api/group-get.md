@@ -111,6 +111,18 @@ Content-type: application/json
 }
 ```
 
+#### SDK sample code
+
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_group-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 ### Example 2
 
 #### Request
@@ -149,19 +161,7 @@ Content-type: application/json
 }
 ```
 
-### SDK sample code 1
-
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_group-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-### SDK sample code 2
+#### SDK sample code
 
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group_non_default-Cs-snippets.md)]
