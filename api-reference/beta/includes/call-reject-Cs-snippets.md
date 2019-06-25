@@ -1,13 +1,16 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var reason = "none";
+var reason = RejectReason.None;
 
 await graphClient.App.Calls["{id}"]
 	.Reject(reason)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

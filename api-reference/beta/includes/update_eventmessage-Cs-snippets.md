@@ -1,11 +1,14 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var message = new Message
 {
-	IsRead = "true",
+	IsRead = "true"
 };
 
 await graphClient.Me.Messages["{id}"]

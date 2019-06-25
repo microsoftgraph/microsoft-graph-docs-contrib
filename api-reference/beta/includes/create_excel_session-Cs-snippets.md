@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -8,6 +11,6 @@ var persistChanges = true;
 await graphClient.Me.Drive.Items["{id}"].Workbook
 	.CreateSession(this,persistChanges)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

@@ -2,7 +2,7 @@
 title: "List directoryAudits"
 description: "Describes the list method of the directoryAudit resource (entity) from the Microsoft Graph API (beta version)."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 

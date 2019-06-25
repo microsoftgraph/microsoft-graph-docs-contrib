@@ -1,7 +1,7 @@
 ---
 title: "Get device"
 description: "Get the properties and relationships of a device object."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---

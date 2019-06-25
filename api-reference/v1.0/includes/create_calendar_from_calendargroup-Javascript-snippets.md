@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Javascript
+```javascript
 
 const options = {
 	authProvider,
@@ -7,13 +10,13 @@ const options = {
 
 const client = Client.init(options);
 
-const calendar = {
-  name: "name-value",
-  color: {
-  }
+const calendar = Content-type: application/json
+
+{
+  name: "Marketing calendar"
 };
 
-let res = await client.api('/me/calendarGroups/{id}/calendars')
+let res = await client.api('/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars')
 	.post({calendar : calendar});
 
 ```

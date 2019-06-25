@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Delete mailFolder
 
-Delete the specified [mailFolder](../resources/mailfolder.md).
+Delete the specified [mailFolder](../resources/mailfolder.md). The folder can be a [mailSearchFolder](../resources/mailsearchfolder.md).
 
 You can specify a mail folder by its folder ID, or by its [well-known folder name](../resources/mailfolder.md), if one exists. 
 

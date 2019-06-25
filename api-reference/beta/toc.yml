@@ -18,6 +18,8 @@
       href: /graph/permissions-reference?toc=./ref/toc.json
     - name: Manage app access (CSPs)
       href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+    - name: Limit mailbox access
+      href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
   - name: Use the API
     items:
     - name: Overview
@@ -2981,6 +2983,8 @@
             href: api/intune-deviceconfig-androidworkprofilewificonfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-androidworkprofilewificonfiguration-update.md
+        - name: App install control type
+          href: resources/intune-deviceconfig-appinstallcontroltype.md
         - name: App list item
           href: resources/intune-deviceconfig-applistitem.md
         - name: App list type
@@ -3052,6 +3056,8 @@
           href: resources/intune-deviceconfig-certificatestore.md
         - name: Certificate validity period scale
           href: resources/intune-deviceconfig-certificatevalidityperiodscale.md
+        - name: Change uefi settings permission
+          href: resources/intune-deviceconfig-changeuefisettingspermission.md
         - name: Configuration usage
           href: resources/intune-deviceconfig-configurationusage.md
         - name: Custom subject alternative name
@@ -3366,6 +3372,14 @@
             href: api/intune-deviceconfig-deviceconfigurationuserstatus-update.md
         - name: Device guard local system authority credential guard type
           href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
+        - name: Device management applicability rule device mode
+          href: resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md
+        - name: Device management applicability rule os edition
+          href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md
+        - name: Device management applicability rule os version
+          href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
+        - name: Device management applicability rule type
+          href: resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md
         - name: Device management derived credential issuer
           href: resources/intune-deviceconfig-devicemanagementderivedcredentialissuer.md
         - name: Device management derived credential notification type
@@ -4003,6 +4017,8 @@
             href: api/intune-deviceconfig-iosvpnconfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-iosvpnconfiguration-update.md
+        - name: iOS VPN security association parameters
+          href: resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md
         - name: iOS wallpaper display location
           href: resources/intune-deviceconfig-ioswallpaperdisplaylocation.md
         - name: iOS web content filter auto-filter
@@ -4024,6 +4040,19 @@
             href: api/intune-deviceconfig-ioswificonfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-ioswificonfiguration-update.md
+        - name: iOSik ev2 VPN configuration
+          href: resources/intune-deviceconfig-iosikev2vpnconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-iosikev2vpnconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-iosikev2vpnconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-iosikev2vpnconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-iosikev2vpnconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-iosikev2vpnconfiguration-update.md
         - name: Key size
           href: resources/intune-deviceconfig-keysize.md
         - name: Key storage provider option
@@ -4133,6 +4162,8 @@
             href: api/intune-deviceconfig-macosextensionsconfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-macosextensionsconfiguration-update.md
+        - name: macOS file vault recovery key types
+          href: resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md
         - name: macOS firewall application
           href: resources/intune-deviceconfig-macosfirewallapplication.md
         - name: macOS gatekeeper app sources
@@ -4373,6 +4404,8 @@
           href: resources/intune-deviceconfig-safesearchfiltertype.md
         - name: Secure assessment account type
           href: resources/intune-deviceconfig-secureassessmentaccounttype.md
+        - name: Secure boot with dma type
+          href: resources/intune-deviceconfig-securebootwithdmatype.md
         - name: Service start type
           href: resources/intune-deviceconfig-servicestarttype.md
         - name: Setting source
@@ -4468,8 +4501,18 @@
           href: resources/intune-deviceconfig-visibilitysetting.md
         - name: VPN authentication method
           href: resources/intune-deviceconfig-vpnauthenticationmethod.md
+        - name: VPN client authentication type
+          href: resources/intune-deviceconfig-vpnclientauthenticationtype.md
+        - name: VPN dead peer detection rate
+          href: resources/intune-deviceconfig-vpndeadpeerdetectionrate.md
         - name: VPN DNS rule
           href: resources/intune-deviceconfig-vpndnsrule.md
+        - name: VPN encryption algorithm type
+          href: resources/intune-deviceconfig-vpnencryptionalgorithmtype.md
+        - name: VPN integrity algorithm type
+          href: resources/intune-deviceconfig-vpnintegrityalgorithmtype.md
+        - name: VPN local identifier
+          href: resources/intune-deviceconfig-vpnlocalidentifier.md
         - name: VPN on demand rule
           href: resources/intune-deviceconfig-vpnondemandrule.md
         - name: VPN on demand rule connection action
@@ -4484,6 +4527,8 @@
           href: resources/intune-deviceconfig-vpnroute.md
         - name: VPN server
           href: resources/intune-deviceconfig-vpnserver.md
+        - name: VPN server certificate type
+          href: resources/intune-deviceconfig-vpnservercertificatetype.md
         - name: VPN traffic rule
           href: resources/intune-deviceconfig-vpntrafficrule.md
         - name: VPN traffic rule app type
@@ -4543,6 +4588,21 @@
             href: api/intune-deviceconfig-windows10customconfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-windows10customconfiguration-update.md
+        - name: Windows 10 device firmware configuration interface
+          href: resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-list.md
+          - name: Get
+            href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-get.md
+          - name: Create
+            href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-update.md
+        - name: Windows 10 device mode type
+          href: resources/intune-deviceconfig-windows10devicemodetype.md
         - name: Windows 10 EAS email profile configuration
           href: resources/intune-deviceconfig-windows10easemailprofileconfiguration.md
           items:
@@ -5335,6 +5395,8 @@
             href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-delete.md
           - name: Update
             href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-update.md
+        - name: Device management comparison result
+          href: resources/intune-deviceintent-devicemanagementcomparisonresult.md
         - name: Device management complex setting definition
           href: resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md
           items:
@@ -5571,6 +5633,8 @@
             href: api/intune-deviceintent-devicemanagementsettingcategory-delete.md
           - name: Update
             href: api/intune-deviceintent-devicemanagementsettingcategory-update.md
+        - name: Device management setting comparison
+          href: resources/intune-deviceintent-devicemanagementsettingcomparison.md
         - name: Device management setting definition
           href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
           items:
@@ -5646,6 +5710,8 @@
             href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-delete.md
           - name: Update
             href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-update.md
+        - name: Device management template type
+          href: resources/intune-deviceintent-devicemanagementtemplatetype.md
         - name: Device management troubleshooting error details
           href: resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md
         - name: Device management troubleshooting error resource
@@ -6276,6 +6342,8 @@
           href: resources/intune-mam-managedappdiagnosticstatus.md
         - name: Managed app flagged reason
           href: resources/intune-mam-managedappflaggedreason.md
+        - name: Managed app notification restriction
+          href: resources/intune-mam-managedappnotificationrestriction.md
         - name: Managed app operation
           href: resources/intune-mam-managedappoperation.md
           items:
@@ -6823,6 +6891,21 @@
             href: api/intune-rbac-rolescopetag-delete.md
           - name: Update
             href: api/intune-rbac-rolescopetag-update.md
+          - name: assign action
+            href: api/intune-rbac-rolescopetag-assign.md
+        - name: Role scope tag auto assignment
+          href: resources/intune-rbac-rolescopetagautoassignment.md
+          items:
+          - name: List
+            href: api/intune-rbac-rolescopetagautoassignment-list.md
+          - name: Get
+            href: api/intune-rbac-rolescopetagautoassignment-get.md
+          - name: Create
+            href: api/intune-rbac-rolescopetagautoassignment-create.md
+          - name: Delete
+            href: api/intune-rbac-rolescopetagautoassignment-delete.md
+          - name: Update
+            href: api/intune-rbac-rolescopetagautoassignment-update.md
       - name: Shared resources
         href: resources/intune-shared-conceptual.md
         items:
@@ -7010,6 +7093,8 @@
           href: api/educationschool-post-users.md
         - name: Remove user
           href: api/educationschool-delete-users.md
+        - name: Get delta
+          href: api/educationschool-delta.md          
       - name: Classes
         href: resources/educationclass.md
         items:
@@ -7045,6 +7130,8 @@
           href: api/educationclass-list-categories.md
         - name: Create category
           href: api/educationclass-post-category.md
+        - name: Get delta
+          href: api/educationclass-delta.md          
       - name: Users
         href: resources/educationuser.md
         items:
@@ -7056,6 +7143,8 @@
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+        - name: Get delta
+          href: api/educationuser-delta.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -7593,6 +7682,15 @@
           href: api/application-list-owners.md
         - name: Assign owner
           href: api/application-post-owners.md
+        - name: Application template
+          href: resources/applicationtemplate.md
+          items:
+          - name: List application templates
+            href: api/applicationtemplate-list.md
+          - name: Get application template
+            href: api/applicationtemplate-get.md
+          - name: Instantiate application template
+            href: api/applicationtemplate-instantiate.md
       - name: Audit logs
         href: resources/azure-ad-auditlog-overview.md
         items:
@@ -7796,19 +7894,6 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
-      - name: Trust Framework policy
-        href: resources/trustframeworkpolicy.md
-        items:
-        - name: List
-          href: api/trustframework-list-trustframeworkpolicies.md
-        - name: Create
-          href: api/trustframework-post-trustframeworkpolicy.md
-        - name: Get
-          href: api/trustframeworkpolicy-get.md
-        - name: Update
-          href: api/trustframework-put-trustframeworkpolicy.md
-        - name: Delete
-          href: api/trustframeworkpolicy-delete.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
@@ -8092,6 +8177,19 @@
           href: api/agreement-delete.md
         - name: List acceptance status
           href: api/user-list-agreementacceptances.md
+      - name: Trust Framework policy
+        href: resources/trustframeworkpolicy.md
+        items:
+        - name: List
+          href: api/trustframework-list-trustframeworkpolicies.md
+        - name: Create
+          href: api/trustframework-post-trustframeworkpolicy.md
+        - name: Get
+          href: api/trustframeworkpolicy-get.md
+        - name: Update
+          href: api/trustframework-put-trustframeworkpolicy.md
+        - name: Delete
+          href: api/trustframeworkpolicy-delete.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -8730,6 +8828,10 @@
           href: api/itemanalytics-get.md
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
+        - name: Follow site
+          href: api/site-follow.md
+        - name: Unfollow site
+          href: api/site-unfollow.md
       - name: Lists
         href: resources/list.md
         items:
@@ -8985,7 +9087,7 @@
         - name: Get message reply
           href: api/channel-get-messagereply.md
         - name: Send message
-          href: api/channel-post-chatmessage.md
+          href: api/channel-post-messages.md
         - name: Reply to message
           href: api/channel-post-messagereply.md
       - name: Chat
@@ -9032,6 +9134,13 @@
           href: api/teamstab-delete.md
       - name: Chat message
         href: resources/chatmessage.md
+        items:
+        - name: List hosted images
+          href: api/chatmessagehostedimage-list-hostedimages.md
+        - name: Get hosted image
+          href: api/chatmessagehostedimage-get.md
+        - name: Get hosted image bytes
+          href: api/chatmessagehostedimage-getbytes.md
       - name: Calendar
         href: resources/event.md
         items:

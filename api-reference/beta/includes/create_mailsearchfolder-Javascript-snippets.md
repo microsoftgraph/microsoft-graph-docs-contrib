@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Javascript
+```javascript
 
 const options = {
 	authProvider,
@@ -11,7 +14,7 @@ const mailFolder = {
   @odata.type: "microsoft.graph.mailSearchFolder",
   displayName: "Get MyAnalytics",
   includeNestedFolders: true,
-  sourceFolderIDs: ["AAMkAGVmMDEzM"],
+  sourceFolderIds: ["AAMkAGVmMDEzM"],
   filterQuery: "contains(subject, 'MyAnalytics')"
 };
 

@@ -51,7 +51,7 @@
     - name: Versioning and support
       href: versioning-and-support.md
     - name: Terms of use
-      href: https://developer.microsoft.com/graph/terms-of-use
+      href: /legal/microsoft-apis/terms-of-use?context=graph/context
   - name: Learn
     expanded: true
     items:
@@ -175,7 +175,7 @@
         href: notifications-concept-overview.md
       - name: Get started
         displayName: Notifications
-        items: 
+        items:
         - name: Overview
           href: notifications-integration-e2e-overview.md
         - name: App registraion
@@ -276,6 +276,8 @@
         href: permissions-reference.md
       - name: Manage app access (CSPs)
         href: auth-cloudsolutionprovider.md
+      - name: Limit mailbox access
+        href: auth-limit-mailbox-access.md
     - name: Use the API
       items:
       - name: Overview
@@ -365,6 +367,38 @@
           href: sdks/create-client.md
         - name: Choose an authentication provider
           href: sdks/choose-authentication-providers.md
+    - name: Use the toolkit (preview)
+      items:
+        - name: Toolkit overview
+          href: toolkit/overview.md
+        - name: Components
+          items:
+            - name: Login
+              href: toolkit/components/login.md
+            - name: Person
+              href: toolkit/components/person.md
+            - name: People
+              href: toolkit/components/people.md
+            - name: Agenda
+              href: toolkit/components/agenda.md
+            - name: Tasks
+              href: toolkit/components/tasks.md
+        - name: Providers
+          items:
+            - name: Using the providers
+              href: toolkit/providers.md
+            - name: Msal provider
+              href: toolkit/providers/msal.md
+            - name: SharePoint provider
+              href: toolkit/providers/sharepoint.md
+            - name: Microsoft Teams provider
+              href: toolkit/providers/teams.md
+            - name: Custom provider
+              href: toolkit/providers/custom.md
+        - name: Styling components
+          href: toolkit/style.md
+        - name: Templating components
+          href: toolkit/templates.md
     - name: Resources
       expanded: true
       items:

@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -7,7 +10,7 @@ var workbookChartLegend = new WorkbookChartLegend
 {
 	Visible = true,
 	Position = "position-value",
-	Overlay = true,
+	Overlay = true
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Legend

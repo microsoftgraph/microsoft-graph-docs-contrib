@@ -1,7 +1,7 @@
 ---
 title: "Restore deleted item"
 description: "Restores a recently deleted item from deleted items. "
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---

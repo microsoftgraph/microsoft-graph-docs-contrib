@@ -1,10 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("format", "{format}")
+};
+
 var items = await graphClient.Drive.Items["{item-id}"]
-	.Request()
+	.Request( queryOptions )
 	.Select( e => new {
 			 e.Content 
 			 })

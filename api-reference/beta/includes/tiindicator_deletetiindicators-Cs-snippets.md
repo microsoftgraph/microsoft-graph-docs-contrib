@@ -1,15 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var valueList = new List<String>();
-valueList.Add( "id-value1" );
-valueList.Add( "id-value2" );
+var value = new List<String>()
+{
+	"id-value1",
+	"id-value2"
+};
 
 await graphClient.Security.TiIndicators
-	.DeleteTiIndicators(valueList)
+	.DeleteTiIndicators(value)
 	.Request()
-	.PostAsync()
+	.PostAsync();
 
 ```

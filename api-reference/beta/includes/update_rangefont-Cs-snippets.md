@@ -1,5 +1,8 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
@@ -10,7 +13,7 @@ var workbookRangeFont = new WorkbookRangeFont
 	Italic = true,
 	Name = "name-value",
 	Size = 99,
-	Underline = "underline-value",
+	Underline = "underline-value"
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"].Range().Format.Font
