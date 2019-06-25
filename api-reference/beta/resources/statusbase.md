@@ -2,8 +2,8 @@
 title: "statusBase resource type"
 description: "Describes the status of the provisioning summary event."
 localization_priority: Normal
-author: "ArvindHarinder1"
-ms.prod: "ms.prod"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
