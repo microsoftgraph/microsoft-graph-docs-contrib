@@ -2,8 +2,8 @@
 title: "initiator resource type"
 description: "Describes who or what initiated the provisioning event."
 localization_priority: Normal
-author: "ArvindHarinder1"
-ms.prod: "ms.prod"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
