@@ -105,7 +105,8 @@ The following is an example of the response for a successful event.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.provisioningObjectSummary"
+  "@odata.type": "microsoft.graph.provisioningObjectSummary",
+  "name": "list_provisioningobjectsummary"
 } -->
 
 ```http
@@ -216,7 +217,7 @@ Content-type: application/json
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "list_provisioningobjectsummary"
+  "name": "list_provisioningobjectsummary_error"
 }-->
 
 ```http
@@ -232,7 +233,8 @@ The following is an example of the response for a failed provisioning event.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.provisioningObjectSummary"
+  "@odata.type": "microsoft.graph.provisioningObjectSummary",
+  "name": "list_provisioningobjectsummary_error"
 } -->
 
 ```http
