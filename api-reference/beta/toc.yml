@@ -7708,6 +7708,11 @@
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+        - name: Provisioning logs
+          href: resources/provisioningobjectsummary.md
+          items:
+          - name: List directory provisioning
+            href: api/provisioningobjectsummary-list.md
       - name: Contracts
         href: resources/contract.md
         items:
@@ -8083,11 +8088,6 @@
               href: api/governanceroleassignmentrequest-update.md
             - name: Cancel
               href: api/governanceroleassignmentrequest-cancel.md
-      - name: Provisioning logs
-        href: resources/provisioningobjectsummary.md
-        items:
-        - name: List directory provisioning
-          href: api/provisioningobjectsummary-list.md
       - name: Service principal
         href: resources/serviceprincipal.md
         items:
