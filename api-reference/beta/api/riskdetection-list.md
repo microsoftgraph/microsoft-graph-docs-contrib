@@ -105,7 +105,7 @@ Content-type: application/json
     "userId": "abcdefab-af90-4edf-ac4c-742ff06735d0",
     "userDisplayName": "User ",
     "userPrincipalName": "user@abcde.com",
-    "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]",
+    "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
     }
     ]
 }
@@ -167,7 +167,7 @@ Content-type: application/json
     "userId": "abcdefab-af90-4edf-ac4c-742ff06735d0",
     "userDisplayName": "User ",
     "userPrincipalName": "user@abcde.com",
-    "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]",
+    "additionalInfo": "[{\"Key\":\"userAgent\",\"Value\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36\"}]"
     }
     ]
 }
