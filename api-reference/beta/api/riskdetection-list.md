@@ -38,7 +38,7 @@ This method supports `$filter` to customize the query response. See the example 
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
+| Content-Type | application/json |
 
 ## Request body
 
