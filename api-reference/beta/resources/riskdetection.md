@@ -19,8 +19,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List riskDetections](../api/riskdetections-list.md) | [riskDetection](riskDetection.md) collection|List risk detections and their properties.|
-|[Get riskDetections](../api/riskdeetections-get.md) | [riskDetection](riskdetection.md)|Get a specific risky detection and its properties.|
+|[List riskDetection](../api/riskdetection-list.md) | [riskDetection](riskDetection.md) collection|List risk detections and their properties.|
+|[Get riskDetection](../api/riskdetection-get.md) | [riskDetection](riskdetection.md)|Get a specific risky detection and its properties.|
 
 ## Properties
 
@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.riskDetections"
+  "@odata.type": "microsoft.graph.riskDetection"
 }-->
 
 ```json
