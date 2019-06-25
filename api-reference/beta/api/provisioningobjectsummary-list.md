@@ -202,8 +202,8 @@ Content-type: application/json
                 "displayName": "",
                 "details": {}
             }
-          }],
-    }
+          }
+    ]
 }
 
 ```
@@ -330,7 +330,7 @@ Content-type: application/json
                     "newValue": "Self-service Pilot"
                 }
             ]
-        }
+       }        
     ]
 }
 
