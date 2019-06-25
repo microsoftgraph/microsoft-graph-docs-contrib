@@ -1,4 +1,4 @@
----
+`$filter`---
 title: "List riskDetection"
 description: "Retrieve the properties of a collection of **riskDetection** object."
 localization_priority: Normal
@@ -31,7 +31,7 @@ GET /riskDetections
 
 ## Optional query parameters
 
-This method supports `$filter` to customize the query response. See the example later in this topic. 
+This method supports `$filter` and `$select` to customize the query response. See the example later in this topic. 
 
 ## Request headers
 
