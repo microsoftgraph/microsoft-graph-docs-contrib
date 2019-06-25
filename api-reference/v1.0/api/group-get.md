@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
->**Note:** Depending on the group features you're trying to access, permissions might be limited. For more information, see the Groups section in [Known issues with Microsoft Graph](/graph/known-issues#groups).
+>**Note:** Depending on the group features you're trying to access, permissions might be limited. For more information, see the [Groups](/graph/known-issues#groups) section in [Known issues with Microsoft Graph](/graph/known-issues).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -48,6 +48,8 @@ If successful, this method returns a `200 OK` response code and [group](../resou
 ## Example
 
 ### Example 1
+
+Return all default properties.
 
 #### Request 
 
@@ -121,9 +123,12 @@ Content-type: application/json
 
 ### Example 2
 
+Return additional properties by using `$select`.
+
 #### Request
 
-The next example uses a `$select` query option to get a few properties that are not returned by default. 
+The following is an example of a GET request.
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
