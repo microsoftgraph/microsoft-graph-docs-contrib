@@ -10,13 +10,7 @@ ms.prod: "groups"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all the groups available in an organization, including but not limited to Office 365 Groups.
-
-This operation returns by default only a subset of the more commonly used properties for each group. These _default_ properties are noted in the [Properties](../resources/group.md#properties) section. 
-
-To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
-
-An exception is the **hasMembersWithLicenseErrors** property. See an [example](#request-2) of how to use this property.
+List all the groups available in an organization, including but not limited to Office 365 Groups. This operation returns by default only a subset of the more commonly used properties for each group. These _default_ properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](group-get.md) for the group and specify the properties in a `$select` OData query option. An exception is the **hasMembersWithLicenseErrors** property. See an [example](#request-2) of how to use this property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,8 +55,10 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body. The response includes only the default properties of each group.
 
-## Example
-#### Request 1
+## Example 1
+
+### Request
+
 The following is an example of the request.
 <!-- {
   "blockType": "request",
@@ -72,7 +68,8 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/groups
 ```
 
-#### Response 1
+### Response
+
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the default properties are returned for each group in an actual call.
 
@@ -158,18 +155,11 @@ Content-type: application/json
 }
 
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_groups-Cs-snippets.md)]
 
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_groups-Javascript-snippets.md)]
+### Example 2
 
----
+#### Request
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-#### Request 2
 This example uses a `$filter` query option to get those groups that have members with license errors from their group-based license assignments. It also uses a `$select` query option to get only the **id** and **displayName** properties of each group in the response, and not other default or non-default properties.
 <!-- {
   "blockType": "request",
@@ -179,7 +169,8 @@ This example uses a `$filter` query option to get those groups that have members
 GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true&$select=id,displayName
 ```
 
-#### Response 2
+#### Response
+
 The following is an example of the response which includes only the requested properties.
 
 <!-- {
@@ -207,7 +198,21 @@ Content-type: application/json
     ]
 }
 ```
-#### SDK sample code
+
+#### SDK sample code 1
+
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_groups-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_groups-Javascript-snippets.md)]
+
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+#### SDK sample code 2
+
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_groups_withlicenseerrors-Cs-snippets.md)]
 
