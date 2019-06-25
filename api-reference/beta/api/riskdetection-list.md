@@ -1,11 +1,11 @@
 ---
-title: "List riskDetections"
+title: "List riskDetection"
 description: "Retrieve the properties and relationships of a collection of **riskDetection** object."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 ---
-# List riskDetections
+# List riskDetection
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: List risk detections
 
-#### Request #1
+#### Request
 
 Here is an example of the request.
 <!-- {
@@ -64,7 +64,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/beta/riskDetections
 ```
 
-#### Response #1
+#### Response
 
 Here is an example of the response.
 <!-- {
@@ -113,7 +113,7 @@ Content-type: application/json
 
 ### Example 2: List risk detections and filter the results
 
-#### Request #2
+#### Request
 
 The following example shows how to use `$filter` to get the collection of risk detections where the risk level is medium or it is an unfamiliar sign-in properties event.
 
@@ -126,7 +126,7 @@ The following example shows how to use `$filter` to get the collection of risk d
 GET https://graph.microsoft.com/beta/riskDetections?$filter=riskType eq 'unfamiliarFeatures' or riskLevel eq 'medium'
 ```
 
-#### Response #2
+#### Response
 
 Here is an example of the response.
 <!-- {
