@@ -14,7 +14,7 @@ doc_type: "resourcePageType"
 Property bag that contains any additional information about the associated identity or system. This can include additional details about the property that is being provisioned or the source/target system.
 
 ## Properties
-The detailsInfo resource is a property bag that contains additional properties such as the ApplicationId, ObjectId, UPN, etc. The set of properties varies by the resource type. 
+The detailsInfo resource is a JSON string that contains additional properties such as ApplicationId, ObjectId, and UPN. The set of properties varies based on the type of resource that is being provisioned. [List provisioningObjectSummary](../api/provisioningobjectsummary-list.md) shows an example of this.
 
 ## Relationships
 None
