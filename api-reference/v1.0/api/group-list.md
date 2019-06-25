@@ -7,9 +7,9 @@ ms.prod: "groups"
 ---
 
 # List groups
-List all the groups available in an organization, including but not limited to Office 365 Groups. 
+List all the groups in an organization, including but not limited to Office 365 Groups. 
 
-This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. An exception is the **hasMembersWithLicenseErrors** property.
+This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
 
 ## Example
 
-### Example 1
+### Example 1: Return a list of group objects
 
 #### Request
 
@@ -161,7 +161,7 @@ Content-type: application/json
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-### Example 2
+### Example 2: Return a filtered list of group objects
 
 #### Request
 

@@ -10,7 +10,7 @@ ms.prod: "groups"
 
 Get the properties and relationships of a group object.
 
-This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. An exception is the **hasMembersWithLicenseErrors** property.
+This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and [group](../resou
 
 ## Example
 
-### Example 1
+### Example 1: Return all default properties
 
 Return all default properties.
 
@@ -121,7 +121,7 @@ Content-type: application/json
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-### Example 2
+### Example 2: Return additional properties by using $select
 
 Return additional properties by using `$select`.
 
