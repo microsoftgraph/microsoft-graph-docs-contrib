@@ -111,16 +111,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    {
+    
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryProvisioning",
     "value": [
          {
-            "id": "75c5b0ae-9fc5-8d0e-e0a9-7e6a4328de56",
+            "id": "75b5b0ae-9fc5-8d0e-e0a9-7y6a4728de56",
             "activityDateTime": "2019-05-04T03:00:54Z",
-            "tenantId": "74beb175-3b70-4b63-b8d5-6f0b76082b16",
+            "tenantId": "74beb175-3b80-7b63-b9d5-6f0b76082b16",
             "jobId": "aws.74beb1753b704b63b8d56f0b76082b16.10a7a801-7101-4c69-ae00-ce9f75f8460a",
-            "cycleId": "b6502552-018d-49bd-8869-b49194dc65c1",
-            "changeId": "b6502552-018d-49bd-8869-b49194dc65c1",
+            "cycleId": "b6502552-018d-79bd-8869-j47194dc65c1",
+            "changeId": "b6502552-018d-89bd-9969-b49194dc65c1",
             "action": "EntryExportUpdate",
             "durationInMilliseconds": 3236,
             "statusInfo": {
@@ -138,9 +138,9 @@ Content-type: application/json
                     "name": "EntryExportUpdate",
                     "provisioningStepType": "Export",
                     "status": "success",
-                    "description": "RolesCompound '10a7a801-7101-4c69-ae00-ce9f75f8460a' was updated in Azure Active Directory",
+                    "description": "RolesCompound '60a7a801-7101-4c69-ae00-ce9f75f8460a' was updated in Azure Active Directory",
                     "details": {
-                        "ReportableIdentifier": "10a7a801-7101-4c69-ae00-ce9f75f8460a"
+                        "ReportableIdentifier": "60a7a801-7101-4c69-ae00-ce9f75f8460a"
                     }
                 }
             ],
@@ -148,7 +148,7 @@ Content-type: application/json
                 {
                     "displayName": "appId",
                     "oldValue": null,
-                    "newValue": "10a7a801-7101-4c69-ae00-ce9f75f8460a"
+                    "newValue": "60a7a801-7101-4c69-ae00-ce9f75f8460a"
                 },
                 {
                     "displayName": "Roles",
@@ -158,7 +158,7 @@ Content-type: application/json
                 {
                     "displayName": "objectId",
                     "oldValue": null,
-                    "newValue": "6bb35b93-185a-4485-a519-50c09549f3ad"
+                    "newValue": "6nn37b93-185a-4485-a519-50c09549f3ad"
                 },
                 {
                     "displayName": "displayName",
@@ -172,16 +172,16 @@ Content-type: application/json
                 },
             ],
             "sourceSystem": {
-                "id": "e1e090e1-f2f4-4678-be44-6442ffff0621",
+                "id": "d1e090e1-f2f4-4678-be44-6442ffff0621",
                 "displayName": "Amazon Web Services",
                 "details": {}
             },
             "targetSystem": {
-                "id": "d69d4bd2-2da2-483e-bc49-aad4080b91b3",
+                "id": "e69d4bd2-2da2-483e-bc49-aad4080b91b3",
                 "displayName": "Azure Active Directory",
                 "details": {
                     "ApplicationId": "bcf4d658-ac9f-408d-bf04-e86dc10328fb",
-                    "ServicePrincipalId": "6bb35b93-185a-4485-a519-50c09549f3ad",
+                    "ServicePrincipalId": "6nn35b93-185a-4485-a519-50c09549f3ad",
                     "ServicePrincipalDisplayName": "Amazon Web Services (AWS)"
                 }
             },
@@ -192,13 +192,13 @@ Content-type: application/json
             },
             "sourceIdentity": {
                 "identityType": "RolesCompound",
-                "id": "10a7a801-7101-4c69-ae00-ce9f75f8460a",
+                "id": "60a7a801-7101-4c69-ae00-ce9f75f8460a",
                 "displayName": "",
                 "details": {}
             },
             "targetIdentity": {
                 "identityType": "ServicePrincipal",
-                "id": "6bb35b93-185a-4485-a519-50c09549f3ad",
+                "id": "6nn35b93-185a-4485-a519-50c09549f3ad",
                 "displayName": "",
                 "details": {}
             }
