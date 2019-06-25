@@ -2,8 +2,8 @@
 title: "provisioningObjectSummary resource type"
 description: "Represents an action performed by the Azure AD Provisioning service and its associated properties."
 localization_priority: Normal
-author: "ArvindHarinder1"
-ms.prod: "ms.prod"
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
@@ -24,7 +24,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|action|String|Indicates the activity name or the operation name (E.g. "Create User", "Add member to group"). For a list of activities logged, refer to Azure AD activity list.|
+|action|String|Indicates the activity name or the operation name (for example, Create user, Add member to group). For a list of activities logged, refer to Azure AD activity list.|
 |activityDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |changeId|String|Unique ID of this change in this cycle.|
 |cycleId|String|Unique ID per job iteration.|
@@ -43,7 +43,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
