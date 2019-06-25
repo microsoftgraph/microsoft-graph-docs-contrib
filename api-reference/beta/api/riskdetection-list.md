@@ -1,6 +1,6 @@
 ---
 title: "List riskDetection"
-description: "Retrieve the properties and relationships of a collection of **riskDetection** object."
+description: "Retrieve the properties of a collection of **riskDetection** object."
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
@@ -9,7 +9,7 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a collection of **riskDetection** object.
+Retrieve the properties of a collection of **riskDetection** objects.
 
 [!NOTE] You must have an Azure AD Premium P2 license to use the risk detection API.
 
