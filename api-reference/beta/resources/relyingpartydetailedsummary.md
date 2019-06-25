@@ -17,7 +17,7 @@ Represents a relying party configured in Active Directory Federation Services (A
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List relyingPartyDetailedSummary](../api/relyingpartydetailedsummary-get.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Read properties and relationships of relyingPartyDetailedSummary object. |
+| [List relyingPartyDetailedSummary](../api/relyingpartydetailedsummary-list.md) | [relyingPartyDetailedSummary](relyingpartydetailedsummary.md) | Read properties and relationships of relyingPartyDetailedSummary object. |
 
 
 ## Properties
