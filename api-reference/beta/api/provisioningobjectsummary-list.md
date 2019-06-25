@@ -82,6 +82,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+### Example 1: Successful request
+
 ### Request
 
 The following is an example of the request.
@@ -94,7 +96,7 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
 ```
 
-### Response 1- Success
+### Response
 
 The following is an example of the response for a successful event.
 
@@ -207,7 +209,21 @@ Content-type: application/json
 }
 
 ```
-### Response 2
+### Example 2: Error reponse
+
+### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "list_provisioningobjectsummary"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
+```
+
+### Response
 
 The following is an example of the response for a failed provisioning event.
 
