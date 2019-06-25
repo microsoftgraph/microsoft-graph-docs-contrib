@@ -5,7 +5,7 @@ localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
 ---
-# Get riskDetections
+# Get riskDetection
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +32,7 @@ GET /riskDetections/{id}
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
+| Content-Type | application/json |
 
 ## Request body
 Do not supply a request body for this method.
