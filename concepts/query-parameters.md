@@ -22,7 +22,7 @@ A Microsoft Graph API operation might support one or more of the following OData
 
 >**Note:** OData 4.0 supports system query options in only GET operations.
 
->**Note:** Click the examples to try them in [Graph Explorer][graph-explorer].
+Click the examples to try them in [Graph Explorer][graph-explorer].
 
 | Name                     | Description | Example
 |:-------------------------|:------------|:---------|
