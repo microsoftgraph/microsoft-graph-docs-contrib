@@ -240,7 +240,9 @@ The following is an example of the response for a failed provisioning event.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryProvisioning",
+    "value": [
         {
             "id": "gc532ff9-r265-ec76-861e-42e2970a8218",
             "activityDateTime": "2019-06-24T20:53:08Z",
@@ -347,7 +349,7 @@ Content-type: application/json
                     "newValue": "Self-service Pilot"
                 }
             ]
-       }        
+       }
     ]
 }
 
