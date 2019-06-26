@@ -49,7 +49,9 @@ To import the Postman collections:
 
     ```
       https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_collection.json
-
+      
+    ```
+    ```
       https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json
 
     ```
