@@ -1,6 +1,6 @@
 ---
 title: "Azure AD audit log API overview"
-description: "Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and leverage Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs."
+description: "Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs."
 localization_priority: Priority
 ---
 
@@ -8,15 +8,15 @@ localization_priority: Priority
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and leverage Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs.
+Azure Active Directory (Azure AD) tracks user activity and sign-in metrics and creates audit log reports that help you understand how your users access and use Azure AD services. Use the Microsoft Graph API for Azure AD to analyze the data underlying these reports and to create custom solutions tailored to your organization's specific needs.
 
 ## What are Azure AD activity logs?
 
-Azure AD provides two types of activity logs:
+Azure AD provides three types of activity logs:
 
-- audit logs 
-- sign-in logs
-- provisioning logs
+- Audit logs 
+- Sign-in logs
+- Provisioning logs
 
 ### Audit logs
 
@@ -28,7 +28,7 @@ The audit logs activity report provides you with access to the history of every 
 
 - How many passwords resets were made within the directory?
 
-### Sign in logs
+### Sign-in logs
 
 The sign-ins activity report helps you determine who performed the tasks reported by audit log reports. The sign-ins activity report helps you answer questions like:
 
@@ -39,7 +39,7 @@ The sign-ins activity report helps you determine who performed the tasks reporte
 ### Provisioning logs
 The provisioning logs help you see all the actions performed by the Azure AD provisioning service. The provisioning logs help you answer questions like:
 
-- What groups were successfully created in ServiceNow
+- What groups were successfully created in ServiceNow?
 - What roles were imported from Amazon Web Services?
 - What users were unsuccessfully created from Workday?
 
@@ -63,9 +63,10 @@ Sign-in reports require an Azure AD Premium license.
 
 To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
-## Next Steps
+## Next steps
 
 - [Register your app](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy audit log prerequisites. 
 - Learn from [audit log](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
-- Review [directoryAudit](directoryaudit.md) resource and actions.
-- Review [signIn](signin.md) resource and actions. 
+- Review the [directoryAudit](directoryaudit.md) resource and actions.
+- Review the [signIn](signin.md) resource and actions. 
+- Review the [provisioningObjectSummary](provisioningobjectsummary.md) resource.
