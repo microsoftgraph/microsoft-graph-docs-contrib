@@ -7,7 +7,7 @@ localization_priority: Priority
 
 # What's new in Microsoft Graph
 
-Did you know that many new features in Microsoft Graph originate as popular requests from the developer coommunity? 
+Did you know that some new features in Microsoft Graph originate as popular requests from the developer coommunity? 
 
 New APIs usually debut in [preview status](versioning-and-support.md#beta-version) in the beta version (`https://graph.microsoft.com/beta`). Some of them may receive sufficient feedback, evolve, and be promoted to the general availability (GA) version, v1.0 (`https://graph.microsoft.com/v1.0`). GA APIs enable production apps to access data and intelligence in Microsoft 365 in more compelling ways.
 
