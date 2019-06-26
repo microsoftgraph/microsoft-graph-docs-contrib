@@ -24,7 +24,7 @@ The components of a request include:
 * [`{resource}`](#resource) - The resource in Microsoft Graph that you're referencing.
 * [query-parameters](#query-parameters-optional) - An optional set of parameters to modify the request or response.
 
-After you make a request, a response is returned that includes:
+After you make a request, a response is returned that includes: 
 
 * Status code - An HTTP status code that indicates success or failure. For details about HTTP error codes, see [Errors](errors.md).
 * Response message - The data that you requested or the result of the operation. The response message can be empty for some operations.
@@ -33,6 +33,7 @@ After you make a request, a response is returned that includes:
 ## HTTP methods
 
 Microsoft Graph uses the HTTP method on your request to determine what your request is doing. The API supports the following methods.
+
 
 |**Method** |**Description**                             |
 | :----- | :------------------------------------------- |
@@ -60,9 +61,9 @@ For more information about API versions, see [Versioning and support](versioning
 
 Your URL will include the resource or resources you are interacting with in the request, such as `me`, `users`, `groups`, `drives`, and `sites`. Each of the top-level resources also include **relationships**, which you can use to access additional resources, like `me/messages` or `me/drive`. You can also interact with resources using **methods**; for example, to send an email, use `me/sendMail`.
 
-For more information about how to navigate resource relationships and methods, see [Traverse the graph](traverse-the-graph.md).
+For more information about how to navigate resource relationships and methods, see [Traverse the graph](traverse-the-graph.md). 
 
-Each resource might require different permissions to access it. You will often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic.
+Each resource might require different permissions to access it. You will often need a higher level of permissions to create or update a resource than to read it. For details about required permissions, see the method reference topic. 
 
 For details about permissions, see [Permissions reference](permissions-reference.md).
 
