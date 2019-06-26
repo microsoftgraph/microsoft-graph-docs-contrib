@@ -240,6 +240,7 @@ The following is an example of the response for a failed provisioning event.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/directoryProvisioning",
     "value": [
