@@ -119,7 +119,7 @@
       href: /graph/changelog?context=graph/api/context
     - name: Errors
       href: /graph/errors?context=graph/api/context
-  - name: Reference
+  - name: v1.0 Reference
     expanded: true
     items:
     - name: Overview
