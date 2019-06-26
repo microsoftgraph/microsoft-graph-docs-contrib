@@ -26,26 +26,26 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|`id`|`string`|Unique id of the risk detection |
-|`requestId`|`string`|Request id of the sign in associated with the risk detection |
-|`correlationId`|`string`|Correlation id of the sign in associated with the risk detection |
+|`id`|`string`|Unique id of the risk detection. |
+|`requestId`|`string`|Request id of the sign in associated with the risk detection. |
+|`correlationId`|`string`|Correlation id of the sign in associated with the risk detection. |
 |`riskType`|`riskEventType`|The type of risk event detected. The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, genericadminConfirmedUserCompromised, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP, and unknownFutureValue. |
 |`riskState`|`riskState`|The state of a detected risky user or sign-in. The possible values are none, confirmedSafe, remediated, dismissed, atRisk, confirmedCompromised, and unknownFutureValue. |
 |`riskLevel`|`riskLevel`|Level of the risk detection. The possible values are low, medium, high, hidden, none, unknownFutureValue. |
 |`riskDetail`|`riskDetail`|Detail of the risk detection. The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue. |
-|`source`|`string`|Source of the risk detection |
+|`source`|`string`|Source of the risk detection. |
 |`detectionTimingType`|`riskDetectionTimingType`|Timing of risk detection (real-time/offline). The possible values are notDefined, realtime, nearrealtime, offline, unknownfuturevalue. |
 |`activity`|`activityType`|Indicates the activity type the risk detection is linked to. The possible values are signin, user, unknownfuturevalue. |
 |`tokenIssuerType`|`tokenIssuerType`|Indicates the type of token issuer of the risk detection. The possible values are AzureAD, ADFederationServices, and unknownFutureValue. |
-|`ipAddress`|`string`|IP Address of the risk detection |
-|`location`|`signInLocation`|Location of the sign in |
-|`activityDateTime`|`datetime`|Date and time of the activity that the detection was generated from |
-|`detectedDateTime`|`datetime`|Date and time of the risk event creation |
-|`lastUpdatedDateTime`|`datetime`|Date and time of the last updated risk event |
-|`userId`|`string`|Object ID of the user |
-|`userDisplayName`|`string`|Name of the user |
-|`userPrincipalName`|`string`|UPN of the user |
-|`additionalInfo`|`string`|Additional information associated with the risk detection in json format |
+|`ipAddress`|`string`|IP Address of the risk detection. |
+|`location`|`signInLocation`|Location of the sign in. |
+|`activityDateTime`|`datetime`|Date and time of the activity that the detection was generated from. |
+|`detectedDateTime`|`datetime`|Date and time of the risk event creation. |
+|`lastUpdatedDateTime`|`datetime`|Date and time of the last updated risk event. |
+|`userId`|`string`|Object ID of the user. |
+|`userDisplayName`|`string`|Name of the user. |
+|`userPrincipalName`|`string`|UPN of the user. |
+|`additionalInfo`|`string`|Additional information associated with the risk detection in json format. |
 
 ## JSON representation
 
