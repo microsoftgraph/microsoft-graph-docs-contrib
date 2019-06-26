@@ -10,13 +10,9 @@ ms.prod: "groups"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of a [group](../resources/group.md) object.
+Get the properties and relationships of a [group](../resources/group.md) object. 
 
-This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. 
-
-To get properties that are _not_ returned by default, specify them in a `$select` OData query option. See an [example](#request-2) of  `$select`. An exception is the **hasMembersWithLicenseErrors** property. See an [example](group-list.md#request-2) of how to use this property.
-
-Since the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
+This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** property is an exception and is not returned in the `$select` query. Because the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,13 +23,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+>**Note:** Depending on the group features you're trying to access, permissions might be limited. For more information, see the [Groups](/graph/known-issues#groups) section in [Known issues with Microsoft Graph](/graph/known-issues).
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}
 ```
 ## Optional query parameters
-You can use `$select` to get specific group properties, including those that are not returned by default. See an [example](#request-2) below.
+You can use `$select` to get specific group properties, including those that are not returned by default.
 
 For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
@@ -49,7 +47,11 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties.
 
 ## Example
-#### Request 1
+
+### Example 1: Return all default properties
+
+#### Request
+
 The following is an example of a GET request. 
 <!-- {
   "blockType": "request",
@@ -60,7 +62,7 @@ The following is an example of a GET request.
 GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 
-#### Response 1
+#### Response
 The following is an example of the response. It includes only the default properties.
 
 >**Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
@@ -108,7 +110,9 @@ Content-type: application/json
   "onPremisesProvisioningErrors": []
 }
 ```
+
 #### SDK sample code
+
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group-Cs-snippets.md)]
 
@@ -121,8 +125,12 @@ Content-type: application/json
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### Request 2
-The next example uses a `$select` query option to get a few properties that are not returned by default. 
+### Example 2: Return additional properties by using $select
+
+#### Request
+
+The following is an example of a GET request. 
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
@@ -132,7 +140,8 @@ The next example uses a `$select` query option to get a few properties that are 
 GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
 ```
 
-#### Response 2
+#### Response
+
 The following is an example of the response which includes the requested non-default properties.
 
 <!-- {
@@ -154,7 +163,9 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
+
 #### SDK sample code
+
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/get_group_non_default-Cs-snippets.md)]
 
