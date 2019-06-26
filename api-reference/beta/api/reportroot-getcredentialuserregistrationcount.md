@@ -1,9 +1,9 @@
 ---
 title: "reportRoot: getCredentialUserRegistrationCount"
-description: "Provide the summary of self-service password reset and multi-factor authentication (MFA) registration for a given tenant."
+description: "Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities."
 localization_priority: Normal
 author: "davidmu1"
-ms.prod: "identity and access reports"
+ms.prod: "reports"
 doc_type: "apiPageType"
 ---
 
@@ -11,9 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API reports the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
-
-Retrieve the properties and relationships of the [credentialUserRegistrationCount](../resources/credentialuserregistrationcount.md) object.
+Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
 
 ## Permissions
 
@@ -50,7 +48,7 @@ If successful, this method returns a `200 OK` response code and a new [credentia
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
@@ -68,8 +66,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",

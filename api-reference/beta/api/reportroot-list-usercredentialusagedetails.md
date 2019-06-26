@@ -1,9 +1,9 @@
 ---
 title: "List userCredentialUsageDetails"
-description: "Provide the details of self-service password reset usage for a given tenant."
+description: "Get a list of userCredentialUsageDetails objects for a given tenant."
 localization_priority: Normal
 author: "davidmu1"
-ms.prod: "identity and access reports"
+ms.prod: "reports"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API reports the details of self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
+Get a list of [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) objects for a given tenant.
 
 ## Permissions
 
@@ -57,6 +57,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+The following example shows how to call this API.
+
 ### Request
 
 The following is an example of the request.
@@ -73,8 +75,7 @@ GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",

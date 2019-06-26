@@ -1,9 +1,9 @@
 ---
 title: "List credentialUserRegistrationDetails"
-description: "This API reports the details of user registration for a given tenant"
+description: "Get a list of credentialUserRegistrationDetails objects for a given tenant."
 localization_priority: Normal
 author: "davidmu1"
-ms.prod: "identity and access reports"
+ms.prod: "reports"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API reports the details of user registration for a given tenant.
+Get a list of [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) objects for a given tenant.
 
 ## Permissions
 
@@ -37,12 +37,12 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name | Description and example |
 | ---- | ---- | ------------|
-| userDisplayName | Filter by UserName. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
+| userDisplayName | Filter by user name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
 | userPrincipalName | Filter by User Principal Name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
 | authMethods | Filter by the authentication methods using during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq 'email')`. Supported filter operators: `eq`. |
-| isRegistered | Filter for users who have registered for SSPR. For example: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Supported filter operators: `eq`. |
-| isEnabled | Filter for users who have been enabled for SPPR. For example: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Supported filtter operators: `eq`. |
-| isCapable | Filter for users who are ready to perform password reset or MFA. For example: `/reports/userCredentialUsageDetails?$filter=isCapable eq true`. Supported filter operators: `eq` |
+| isRegistered | Filter for users who have registered for self-service password reset (SSPR). For example: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Supported filter operators: `eq`. |
+| isEnabled | Filter for users who have been enabled for SSPR. For example: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Supported filtter operators: `eq`. |
+| isCapable | Filter for users who are ready to perform password reset or multi-factor authentication (MFA). For example: `/reports/userCredentialUsageDetails?$filter=isCapable eq true`. Supported filter operators: `eq` |
 | isMfaRegistered | Filter for users who are registered for MFA. For example: `/reports/userCredentialUsageDetails?$filter=isMfaRegistered eq true`. Supported filter operators: `eq`. |
 
 ## Request headers
@@ -62,6 +62,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
+The following example shows how to call this API.
+
 ### Request
 
 The following is an example of the request.
@@ -78,8 +80,7 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties are returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties are returned from an actual call.
 
 <!-- {
   "blockType": "response",

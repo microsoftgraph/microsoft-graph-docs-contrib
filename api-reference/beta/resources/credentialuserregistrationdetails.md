@@ -1,6 +1,6 @@
 ---
 title: "credentialUserRegistrationDetails resource type"
-description: "Provide the details of self-service password reset and multi-factor authentication (MFA) registration for a given tenant."
+description: "Represents the details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "identity and access reports"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **credentialUserRegistrationDetails** resource represents the registration usage for all registered users for self-service password reset and multi-factor authentication (MFA) capabilities. Details include user information, status of registration, and the authentication method used.
+The **credentialUserRegistrationDetails** resource represents the details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users. Details include user information, status of registration, and the authentication method used.
 
 ## Methods
 

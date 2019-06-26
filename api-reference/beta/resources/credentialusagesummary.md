@@ -1,6 +1,6 @@
 ---
 title: "credentialUsageSummary resource type"
-description: "Provide the summary of self-service password reset usage for a given tenant."
+description: "Represents the current state of how many users in your organization are using self-service password reset capabilities."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "identity and access reports"
