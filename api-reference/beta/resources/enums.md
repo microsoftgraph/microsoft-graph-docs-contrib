@@ -824,3 +824,13 @@ Possible values for user account types (group membership), per Windows definitio
 |AzureAD|
 |ADFederationServices|
 |unknownFutureValue|
+
+### riskDetectionTimingType values
+
+|Member|
+|:---|
+|notDefined|
+|realtime|
+|nearRealtime|
+|offline|
+|unknownFutureValue|
