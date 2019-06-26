@@ -106,7 +106,7 @@ The following is an example of the response for a successful event.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.provisioningObjectSummary",
-  "name": "list_provisioningobjectsummary"
+  "name": "list_provisioningobjectsummary_error"
 } -->
 
 ```http
