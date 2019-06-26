@@ -16,6 +16,7 @@ Azure AD provides two types of activity logs:
 
 - audit logs 
 - sign-in logs
+- provisioning logs
 
 ### Audit logs
 
@@ -35,6 +36,13 @@ The sign-ins activity report helps you determine who performed the tasks reporte
 - How many users have signed in during the last week?
 - What's the status of these sign-ins?
 
+### Provisioning logs
+The provisioning logs help you see all the actions performed by the Azure AD provisioning service. The provisioning logs help you answer questions like:
+
+- What groups were successfully created in ServiceNow
+- What roles were imported from Amazon Web Services?
+- What users were unsuccessfully created from Workday?
+
 ## What can I do with audit log APIs in Microsoft Graph?
 
 Here are popular requests for working with audit log data:
@@ -43,6 +51,7 @@ Operation | URL
 :----------|:----
 GET tenant user activities | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
 GET tenant user sign-ins | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
+GET provisioning logs | [https://graph.microsoft.com/beta/auditLogs/directoryProvisioning](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryProvisioning&version=beta)
 
 ## What licenses do I need?
 
