@@ -321,6 +321,8 @@
           href: extensibility-open-users.md
         - name: Use schema extensions (example)
           href: extensibility-schema-groups.md
+      - name: Use Postman
+        href: use-postman.md
     - name: Migrate
       expanded: false
       items:
