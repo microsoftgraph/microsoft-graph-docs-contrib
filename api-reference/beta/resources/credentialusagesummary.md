@@ -3,7 +3,7 @@ title: "credentialUsageSummary resource type"
 description: "Represents the current state of how many users in your organization are using self-service password reset capabilities."
 localization_priority: Normal
 author: "davidmu1"
-ms.prod: "identity and access reports"
+ms.prod: "reports"
 doc_type: "resourcePageType"
 ---
 
