@@ -30,7 +30,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`requestId`|`string`|Request id of the sign in associated with the risk detection |
 |`correlationId`|`string`|Correlation id of the sign in associated with the risk detection |
 |`riskType`|`riskEventType`|The type of risk event detected. The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, genericadminConfirmedUserCompromised, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP, and unknownFutureValue. |
-|`riskState`|`riskState`|State of the risk detection. The possible values are none, confirmedSafe, remediated, atRisk, unknownFutureValue. |
+|`riskState`|`riskState`|The state of a detected risky user or sign-in. The possible values are none, confirmedSafe, remediated, dismissed, atRisk, confirmedCompromised, and unknownFutureValue. |
 |`riskLevel`|`riskLevel`|Level of the risk detection. The possible values are low, medium, high, hidden, none, unknownFutureValue. |
 |`riskDetail`|`riskDetail`|Detail of the risk detection. The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue. |
 |`source`|`string`|Source of the risk detection |
