@@ -234,7 +234,7 @@ The following is an example of the response for a failed provisioning event.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.provisioningObjectSummary",
-  "name": "list_provisioningobjectsummary_error"
+  "name": "list_provisioningobjectsummary"
 } -->
 
 ```http
