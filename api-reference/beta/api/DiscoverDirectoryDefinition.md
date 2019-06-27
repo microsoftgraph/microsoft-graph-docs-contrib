@@ -23,7 +23,7 @@ Discover the latest schema definition for provisioning to an application.
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/start
+POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{directoryId}/discover
 ```
 
 ## Request headers
