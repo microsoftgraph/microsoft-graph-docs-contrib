@@ -116,7 +116,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows how to use `$filter` to get the collection of risk detections where the risk level is medium or it is an unfamiliar sign-in properties event.
+The following example shows how to use `$filter` to get the collection of risk detections where the risk level is medium or the risk event type is an unfamiliar sign-in properties event.
 
 <!-- {
   "blockType": "request",
