@@ -9,7 +9,10 @@ localization_priority: Priority
 
 Did you know that some new features in Microsoft Graph originate as popular requests from the developer coommunity? 
 
-Service owners evaluate feature ideas, select the new scenarios to support, define feature requirements, and design and implement APIs for the feature. New and updated APIs usually debut in [preview status](versioning-and-support.md#beta-version) in the beta version (`https://graph.microsoft.com/beta`). Some of them may receive sufficient feedback, evolve, and be promoted to the general availability (GA) version, v1.0 (`https://graph.microsoft.com/v1.0`).
+Service owners evaluate feature ideas, select new scenarios to support, define feature requirements, and design and implement APIs for the feature. When new and updated APIs are ready for release in Microsoft Graph:
+
+1. APIs usually debut in [preview status](versioning-and-support.md#beta-version) in the beta version (`https://graph.microsoft.com/beta`). 
+2. Some of them may receive sufficient feedback, evolve, and be promoted to the general availability (GA) version, v1.0 (`https://graph.microsoft.com/v1.0`).
 
 Once APIs are in the GA version, you can use them in production apps to realize the targeted scenarios.
 
