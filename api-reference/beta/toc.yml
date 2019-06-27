@@ -7880,9 +7880,9 @@
       - name: Risk detection
         href: resources/riskdetection.md
         items:
-          - name: List risk detection
+          - name: List risk detections
             href: api/riskdetection-list.md
-          - name: Get risky detection 
+          - name: Get risk detection 
             href: api/riskdetection-get.md
       - name: Identity provider
         href: resources/identityprovider.md
