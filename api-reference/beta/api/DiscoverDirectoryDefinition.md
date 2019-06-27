@@ -1,5 +1,5 @@
 ---
-title: "discover directory definition"
+title: "discover directory definition resource type"
 description: "Discover the latest schema definition for provisioning to an application. "
 localization_priority: Normal
 author: "davidmu1"
