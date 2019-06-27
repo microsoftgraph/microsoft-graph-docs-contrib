@@ -22,6 +22,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All and Group.Read.All, Directory.Read.All |
 
+Use the follow scenario guidance to help determine which permission types to use:
+- Use User.Read and Group.Read.All permissions to get group memberships for the signed-in user.
+- Use User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to get group memberships for any user.
+- Use Group.Read.All permission to get group memberships for a group.
+- Use Application.ReadWrite.All and Group.Read.All permission to get group memberships for a service principal.
+- Use Directory.Read.All permission to get group memberships for a directory object.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
