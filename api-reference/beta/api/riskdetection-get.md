@@ -1,5 +1,5 @@
 ---
-title: "Get riskDetections"
+title: "Get riskDetection"
 description: "Retrieve the properties of a **riskdetection** object."
 localization_priority: Normal
 author: "cloudhandler"
