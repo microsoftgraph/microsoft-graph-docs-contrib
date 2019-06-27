@@ -835,3 +835,12 @@ Possible values for user account types (group membership), per Windows definitio
 |nearRealtime|
 |offline|
 |unknownFutureValue|
+
+
+### activityType values
+
+|Member|
+|:---|
+|signin|
+|user|
+|unknownFutureValue|
