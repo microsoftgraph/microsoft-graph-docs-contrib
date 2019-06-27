@@ -7,7 +7,7 @@ localization_priority: Priority
 
 # What's new in Microsoft Graph
 
-Did you know that some new features in Microsoft Graph originate as popular requests from the developer coommunity? 
+Did you know that some new features in Microsoft Graph originate as popular requests from the developer community? 
 
 Let's walk through how new features get released, what's currently new in Microsoft Graph, and how you can give us your ideas.
 
