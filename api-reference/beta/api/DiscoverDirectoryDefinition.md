@@ -48,7 +48,7 @@ The following is an example of a request.
   "name": "synchronizationjob_start"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/start
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{directoryId}/discover
 ```
 
 ##### Response
@@ -73,7 +73,7 @@ The following is a JSON representation of the resource.
   "discoverabilities": "AttributeNames", "AttributeDataTypes"
   "discoveryDateTime": "2019-03-20T15:47:50.4707552Z",
   "id": "directoryDefinitionId",
-  "objects": : [{
+  "objects": [{
         "name": "User",
         "attributes": [{
                 "name": "Id",
@@ -82,12 +82,10 @@ The following is a JSON representation of the resource.
                 "name": "FirstName",
                 "type": "String"
             },
-            // Remaining base attributes
             {
                 "name": "CustomExendedAttribute",
                 "type": "String"
-            },
-            // Remaining discovered attributes
+            }  
         ]
     }],
   "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1"
