@@ -1,6 +1,6 @@
 ---
 title: "certificateAuthority resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Represents a certificate authority."
 localization_priority: Normal
 author: "eketo-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Represents a certificate authority.
 
 ## Properties
 

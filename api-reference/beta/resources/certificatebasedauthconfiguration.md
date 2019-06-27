@@ -1,6 +1,6 @@
 ---
 title: "certificateBasedAuthConfiguration resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Represents a collection of certificate authorities."
 localization_priority: Normal
 author: "eketo-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Represents a collection of certificate authorities. The certificate authorities are used to establish a trusted certificate chain which enables clients to be authenticated by Azure Active Directory with a client certificate.
 
 ## Methods
 
