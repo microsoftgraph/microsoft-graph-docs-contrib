@@ -3,6 +3,16 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values"
 ---
 
+### activityType
+
+| Value
+|:--------------
+|Email
+|Meeting
+|Focus
+|Chat
+|Call
+
 ### contactRelationship values
 
 |Member|Value|Description|
@@ -15,7 +25,6 @@ description: "Microsoft Graph enumeration values"
 |child|5| The user's child.|
 |other|6| An unspecified relationship to the user.|
 |unknownFutureValue|7| Marker value for future compatibility.|
-
 
 ### scheduleEntityTheme values
 
