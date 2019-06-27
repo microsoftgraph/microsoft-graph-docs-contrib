@@ -27,25 +27,25 @@ The metadata allows you to see and understand the Microsoft Graph data model, in
 
 You can use the metadata to learn the realtionships between entities in Microsoft Graph and establish URLs that navigate between those entities.
 
-Path URL resource names, query parameters, and action parameters and values are not case-sensitive. 
+Path URL resource names, query parameters, and action parameters and values are not case-sensitive.
 However, values you assign, entity IDs, and other base-64-encoded values are case-sensitive.
 
 ## View a collection of resources
 
-Microsoft Graph lets you view resources in a tenant using HTTP GET queries. The query response includes properties of each resource, with each resource identified by its ID. 
-The format of a resource ID can be a GUID, and generally varies according to the resource type. 
+Microsoft Graph lets you view resources in a tenant using HTTP GET queries. The query response includes properties of each resource, with each resource identified by its ID.
+The format of a resource ID can be a GUID, and generally varies according to the resource type.
 
 For example, you can get the collection of users defined in a tenant:
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-If successful, you'll get a 200 OK response that contains the collection of [user](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each user is 
+If successful, you'll get a 200 OK response that contains the collection of [user](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each user is
 identified by the **id** property and accompanied by its default properties. The payload shown below is truncated for brevity.
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -86,18 +86,18 @@ Content-type: application/json
 }
 ```
 
-Microsoft Graph also lets you view collections by navigating the relationships of one resource with another. For example, through a user's **mailFolders** navigation property, 
+Microsoft Graph also lets you view collections by navigating the relationships of one resource with another. For example, through a user's **mailFolders** navigation property,
 you can query for the collection of [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resources in the user's mailbox:
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-If successful, you'll get a 200 OK response that contains the collection of [mailFolder](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each **mailFolder** is 
+If successful, you'll get a 200 OK response that contains the collection of [mailFolder](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each **mailFolder** is
 identified by the **id** property and accompanied by its properties. The payload shown below is truncated for brevity.
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -138,16 +138,16 @@ Content-type: application/json
 ## View a specific resource from a collection by ID
 
 Continuing with using **user** as an example - to view the information about a user, use an HTTPS GET request to get a specific user by the user's ID. For a **user** entity, you can use either the **id** or **userPrincipalName** property as the identifier.
-The following request example uses the **userPrincipalName** value as the user's ID. 
+The following request example uses the **userPrincipalName** value as the user's ID.
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 If successful, you'll get a 200 OK response that contains the user resource representation in the payload, as shown.
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 982
@@ -162,21 +162,21 @@ content-length: 982
     "givenName": "John",
     "userPrincipalName": "john.doe@contoso.onmicrosoft.com",
 
-    ... 
+    ...
 }
 ```
 
 ## Read specific properties of a resource
-To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query-parameters.md) query parameter to the previous request, as shown in the following example. 
+To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query-parameters.md) query parameter to the previous request, as shown in the following example.
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 The successful response returns the 200 OK status and a payload, as shown.
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 169
@@ -198,14 +198,14 @@ Here, instead of the entire property sets on the **user** entity, only the **abo
 In addition to reading specific properties of a single resource, you can also apply the similar [$select](query-parameters.md) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each.
 For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request.
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 The successful response returns a 200 OK status code and a payload that contains only the names of the shared files, as shown in the following example.
 
-```no-highlight 
+```no-highlight
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/drive/root/children(name,type)",
   "value": [
@@ -227,20 +227,20 @@ The successful response returns a 200 OK status code and a payload that contains
 
 ## Traverse from one resource to another via relationship
 A manager holds a **directReports** relationship with the other users reporting to him or her.
-To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal. 
+To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal.
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
 The successful response returns the 200 OK status and a payload, as shown.
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 content-length: 152
-    
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects/$entity",
     "@odata.type": "#microsoft.graph.user",
@@ -257,21 +257,21 @@ For example, the user-messages relationship enables traversal from an Azure Acti
 The following example shows how to do this in a REST API call.
 
 
-```no-highlight 
+```no-highlight
 GET https://graph.microsoft.com/v1.0/me/messages HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-    
+
 The successful response returns the 200 OK status and a payload, as shown.
 
 
-```no-highlight 
+```no-highlight
 HTTP/1.1 200 OK
 content-type: application/json;odata.metadata=minimal
 odata-version: 4.0
 content-length: 147
-    
+
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('john.doe%40contoso.onmicrosoft.com')/Messages",
   "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$top=1&$skip=1",
@@ -293,7 +293,7 @@ content-length: 147
       },
       "BodyPreview": "it was great!",
       "Importance": "Normal",
-            
+
        ...
     }
   ]
@@ -304,7 +304,7 @@ You can see all the relationships on a given resource by going to the metadata, 
 ## Call functions
 Microsoft Graph also supports _functions_ to manipulate resources in ways that are not simply create, read, update, and delete (CRUD) operations. They are often in the shape of HTTPS POST requests in order to intake arguments for the function. For example, the following function lets the signed-in user (`me`) send an email message.
 
-```no-highlight 
+```no-highlight
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
 authorization: bearer {access_token}
 content-type: application/json
@@ -345,4 +345,4 @@ Like the power and ease of SDKs? While you can always use REST APIs to call Micr
 ## See also
 
 - [Use the Microsoft Graph API](use-the-api.md)
-- [Get auth tokens](./auth/)
+- [Get auth tokens](/graph/auth)

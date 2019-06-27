@@ -1,7 +1,7 @@
 ---
 title: "windowsPrivacyDataAccessControlItem resource type"
 description: "Specify access control level per privacy data category"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

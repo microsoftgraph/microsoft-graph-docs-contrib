@@ -1,7 +1,7 @@
 ---
 title: "encryptionReadinessState enum type"
 description: "Encryption readiness state"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

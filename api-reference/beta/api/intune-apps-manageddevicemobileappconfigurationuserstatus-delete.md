@@ -1,7 +1,7 @@
 ---
 title: "Delete managedDeviceMobileAppConfigurationUserStatus"
 description: "Deletes a managedDeviceMobileAppConfigurationUserStatus."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

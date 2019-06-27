@@ -2,7 +2,7 @@
 title: "directoryObject: validateProperties"
 description: "Validate if an Office 365 group's display name or mail nickname complies with naming policies.  Clients can use the API to determine if a display name or mail nickname is valid before trying to **create** an Office 365 group. For validating properties of an existing group, use the validateProperties function for groups."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -89,6 +89,8 @@ HTTP/1.1 204 No Content
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/directoryobject_validateproperties-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -151,6 +153,7 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/directoryobject-validateproperties.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

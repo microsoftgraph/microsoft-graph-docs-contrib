@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementIntentDeviceSettingStateSummary"
 description: "Update the properties of a deviceManagementIntentDeviceSettingStateSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

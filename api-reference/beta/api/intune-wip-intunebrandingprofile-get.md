@@ -1,7 +1,7 @@
 ---
 title: "Get intuneBrandingProfile"
 description: "Read properties and relationships of the intuneBrandingProfile object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1472
+Content-Length: 1533
 
 {
   "value": {
@@ -101,7 +101,8 @@ Content-Length: 1472
       "@odata.type": "microsoft.graph.mimeContent",
       "type": "Type value",
       "value": "dmFsdWU="
-    }
+    },
+    "customPrivacyMessage": "Custom Privacy Message value"
   }
 }
 ```

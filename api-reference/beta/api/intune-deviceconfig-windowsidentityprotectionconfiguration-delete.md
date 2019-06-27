@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsIdentityProtectionConfiguration"
 description: "Deletes a windowsIdentityProtectionConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

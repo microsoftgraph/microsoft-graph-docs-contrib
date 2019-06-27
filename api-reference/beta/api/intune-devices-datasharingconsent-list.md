@@ -1,7 +1,7 @@
 ---
 title: "List dataSharingConsents"
 description: "List properties and relationships of the dataSharingConsent objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

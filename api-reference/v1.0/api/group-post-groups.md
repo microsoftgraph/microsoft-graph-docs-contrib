@@ -1,21 +1,20 @@
 ---
 title: "Create group"
-description: "Use this API to create a new group as specified in the request body. You can create one of three types of groups:"
+description: "Create a new group as specified in the request body. "
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
 ---
 
 # Create group
-Use this API to create a new group as specified in the request body. You can create one of three types of groups:
+Create a new group as specified in the request body. You can create the following types of groups:
 
 * Office 365 Group (unified group)
-* Dynamic group
 * Security group
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section.
 
-To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
+To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
 > **Note**: Although Microsoft Teams is built on Office 365 Groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
@@ -24,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -46,39 +45,43 @@ The following table shows the properties of the [group](../resources/group.md) r
 | Property | Type | Description|
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
-| mailEnabled | boolean | Set to **true** for mail-enabled groups. Set this to **true** if creating an Office 365 Group. Set this to **false** if creating dynamic or security group. Required. |
+| mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups. Set this to **true** if creating a dynamic or security group. Set this to **false** if creating an Office 365 group. Required. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
 | owners | string collection | This property represents the owners for the group at creation time. Optional. |
 | members | string collection | This property represents the members for the group at creation time. Optional. |
 
+> **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
-Specify the **groupTypes** property if you're creating an Office 365 or dynamic group, as stated below.
+Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
+
+>**Note:** Creating an Office 365 Group programmatically without a user context and without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
 
 ### groupTypes options
 
-| Type of group | **groupTypes** property |
-|:--------------|:------------------------|
-| Office 365 (aka unified group)| "Unified" |
-| Dynamic | "DynamicMembership" |
-| Security | Do not set. |
+Use the **groupTypes** property to control the type of group and its membership, as shown below:
 
-
->**Note:** Creating an Office 365 Group programmatically without a user context and  without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
-
-Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
+| Type of group | Assigned membership | Dynamic membership |
+|:--------------|:------------------------|:---------------|
+| Office 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## Response
 If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
-## Example
-#### Request 1
-The first example request creates an Office 365 Group.
+## Examples
+
+### Example 1: Create an Office 365 group
+
+The following example creates an Office 365 group.
+
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-type: application/json
 Content-length: 244
@@ -95,8 +98,10 @@ Content-length: 244
 }
 ```
 
-#### Response 1
+#### Response
+
 The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -104,7 +109,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.group",
   "name": "create_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -144,17 +149,23 @@ Content-type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_group-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
-#### Request 2
-The second example request creates an Office 365 group with an owner and members specified.
+### Example 2: Create a group with owners and members
+
+The following example creates an Office 365 group with an owner and members specified.
+
+#### Request
+
 <!-- {
   "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
-```http
+``` http
 POST https://graph.microsoft.com/v1.0/groups
 Content-Type: application/json
 
@@ -177,16 +188,19 @@ Content-Type: application/json
 }
 ```
 
-#### Response 2
+#### Response
+
 The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
+
 >**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
   "name": "create_prepopulated_group"
 } -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -227,6 +241,8 @@ Content-type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_prepopulated_group-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_prepopulated_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -240,6 +256,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

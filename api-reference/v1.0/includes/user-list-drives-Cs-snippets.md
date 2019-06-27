@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var drive = await graphClient.Users["{userId}"].Drives
+var drives = await graphClient.Users["{userId}"].Drives
 	.Request()
 	.GetAsync();
 

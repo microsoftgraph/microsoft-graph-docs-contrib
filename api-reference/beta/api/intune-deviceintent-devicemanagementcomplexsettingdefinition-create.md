@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementComplexSettingDefinition"
 description: "Create a new deviceManagementComplexSettingDefinition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

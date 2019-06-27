@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var yammerActivitySummary = await graphClient.Reports.GetYammerActivityUserCounts('D7')
+var getYammerActivityUserCounts = await graphClient.Reports.GetYammerActivityUserCounts('D7')
 	.Request()
 	.GetAsync();
 

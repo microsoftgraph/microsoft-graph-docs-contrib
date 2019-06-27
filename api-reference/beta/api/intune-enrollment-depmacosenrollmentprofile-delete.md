@@ -1,7 +1,7 @@
 ---
 title: "Delete depMacOSEnrollmentProfile"
 description: "Deletes a depMacOSEnrollmentProfile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create iosVppAppAssignedDeviceLicense"
 description: "Create a new iosVppAppAssignedDeviceLicense object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

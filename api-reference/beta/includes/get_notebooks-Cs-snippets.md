@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var notebook = await graphClient.Me.Onenote.Notebooks
+var notebooks = await graphClient.Me.Onenote.Notebooks
 	.Request()
 	.GetAsync();
 

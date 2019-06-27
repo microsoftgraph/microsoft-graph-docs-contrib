@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementIntentAssignment"
 description: "Update the properties of a deviceManagementIntentAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,10 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var bookingBusiness = await graphClient.BookingBusinesses
-	.Request()
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("query", "Adventure")
+};
+
+var bookingBusinesses = await graphClient.BookingBusinesses
+	.Request( queryOptions )
 	.GetAsync();
 
 ```

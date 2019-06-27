@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var mailFolder = await graphClient.Me.MailFolders["searchfolders"].ChildFolders
+var childFolders = await graphClient.Me.MailFolders["searchfolders"].ChildFolders
 	.Request()
 	.GetAsync();
 

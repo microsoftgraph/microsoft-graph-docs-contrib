@@ -1,7 +1,7 @@
 ---
 title: "Delete iosDeviceFeaturesConfiguration"
 description: "Deletes a iosDeviceFeaturesConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

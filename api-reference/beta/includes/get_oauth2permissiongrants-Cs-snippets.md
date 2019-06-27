@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var oAuth2PermissionGrant = await graphClient.ServicePrincipals["{id}"].Oauth2PermissionGrants
+var oauth2PermissionGrants = await graphClient.ServicePrincipals["{id}"].Oauth2PermissionGrants
 	.Request()
 	.GetAsync();
 

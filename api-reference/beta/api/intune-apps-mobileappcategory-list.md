@@ -1,7 +1,7 @@
 ---
 title: "List mobileAppCategories"
 description: "List properties and relationships of the mobileAppCategory objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

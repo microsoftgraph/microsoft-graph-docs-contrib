@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var list = await graphClient.Sites["{site-id}"].Lists
+var lists = await graphClient.Sites["{site-id}"].Lists
 	.Request()
 	.GetAsync();
 

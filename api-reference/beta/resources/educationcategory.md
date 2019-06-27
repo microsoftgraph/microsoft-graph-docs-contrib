@@ -17,7 +17,7 @@ A category that can be applied to assignments.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationCategory.md) | Get an existing **educationCategory**.|
+|[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Get an existing **educationCategory**.|
 |[Delete category](../api/educationcategory-delete.md) | None | Remove an **educationCategory**.|
 
 

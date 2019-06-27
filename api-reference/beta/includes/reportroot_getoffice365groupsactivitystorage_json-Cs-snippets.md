@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var office365GroupsActivityStorage = await graphClient.Reports.GetOffice365GroupsActivityStorage('D7')
+var getOffice365GroupsActivityStorage = await graphClient.Reports.GetOffice365GroupsActivityStorage('D7')
 	.Request()
 	.GetAsync();
 

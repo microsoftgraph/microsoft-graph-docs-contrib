@@ -155,6 +155,8 @@ Content-type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_delta-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -164,7 +166,7 @@ Content-type: application/json
 The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_select"
 }-->
 
 ```http
@@ -200,11 +202,13 @@ Content-type: application/json
 ```
 #### SDK sample code
 # [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/user_delta-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/user_delta_select-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/user_delta-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/user_delta_select-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_delta_select-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -214,7 +218,7 @@ Content-type: application/json
 The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta_minimal"
 }-->
 
 ```http
@@ -248,6 +252,18 @@ Content-type: application/json
   ]
 }
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Javascript-snippets.md)]
+
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_delta_minimal-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for users](/graph/delta-query-users).
@@ -262,6 +278,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/user-delta.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

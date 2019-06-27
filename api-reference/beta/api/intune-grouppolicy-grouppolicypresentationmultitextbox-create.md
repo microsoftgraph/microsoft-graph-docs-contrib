@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationMultiTextBox"
 description: "Create a new groupPolicyPresentationMultiTextBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "mdmAppConfigKeyType enum type"
 description: "App configuration key types."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

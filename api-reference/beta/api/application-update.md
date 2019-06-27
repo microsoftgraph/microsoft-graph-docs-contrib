@@ -1,7 +1,7 @@
 ---
 title: "Update application"
 description: "Update the properties of application object."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 |preAuthorizedApplications|[preAuthorizedApplication](../resources/preauthorizedapplication.md) collection| Lists applications and requested permissions for implicit consent. Requires an admin to have provided consent to the application. preAuthorizedApplications do not require the user to consent to the requested permissions. Permissions listed in preAuthorizedApplications do not require user consent. However, any additional requested permissions not listed in preAuthorizedApplications require user consent. |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) collection|Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience. Not nullable.|
 |tags|String collection| Custom strings that can be used to categorize and identify the application. |
-|web|[webApplication](../resources/webApplication.md)| Specifies settings for a web application. |
+|web|[webApplication](../resources/webapplication.md)| Specifies settings for a web application. |
 
 ## Response
 
@@ -91,6 +91,8 @@ HTTP/1.1 204 No Content
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/update_application-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_application-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -105,6 +107,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/application-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/application-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/application-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

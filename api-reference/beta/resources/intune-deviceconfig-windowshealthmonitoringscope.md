@@ -1,7 +1,7 @@
 ---
 title: "windowsHealthMonitoringScope enum type"
 description: "Device health monitoring scope"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

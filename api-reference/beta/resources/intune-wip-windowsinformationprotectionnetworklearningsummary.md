@@ -1,7 +1,7 @@
 ---
 title: "windowsInformationProtectionNetworkLearningSummary resource type"
 description: "Windows Information Protection Network learning Summary entity."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

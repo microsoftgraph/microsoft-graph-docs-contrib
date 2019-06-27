@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceComplianceDeviceStatus"
 description: "Deletes a deviceComplianceDeviceStatus."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

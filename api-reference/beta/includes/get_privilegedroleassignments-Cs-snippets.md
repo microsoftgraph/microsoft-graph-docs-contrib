@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var privilegedRoleAssignment = await graphClient.PrivilegedRoleAssignments
+var privilegedRoleAssignments = await graphClient.PrivilegedRoleAssignments
 	.Request()
 	.Filter("isElevated eq true and expirationDateTime ne null or isElevated eq false")
 	.GetAsync();

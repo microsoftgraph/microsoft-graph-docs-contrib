@@ -1,7 +1,7 @@
 ---
 title: "autoRestartNotificationDismissalMethod enum type"
 description: "Auto restart required notification dismissal method"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

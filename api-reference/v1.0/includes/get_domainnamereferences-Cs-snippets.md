@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.Domains["{domain-name}"].DomainNameReferences
+var domainNameReferences = await graphClient.Domains["{domain-name}"].DomainNameReferences
 	.Request()
 	.GetAsync();
 

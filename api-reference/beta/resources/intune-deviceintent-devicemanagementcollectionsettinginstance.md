@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementCollectionSettingInstance resource type"
 description: "A setting instance representing a collection of values"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

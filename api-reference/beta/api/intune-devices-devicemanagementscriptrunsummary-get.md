@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementScriptRunSummary"
 description: "Read properties and relationships of the deviceManagementScriptRunSummary object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

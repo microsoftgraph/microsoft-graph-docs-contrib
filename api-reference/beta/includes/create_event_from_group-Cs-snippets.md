@@ -1,26 +1,49 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var responseStatus = new ResponseStatus
+var @event = new Event
 {
-	Response = ResponseType.None,
-	Time = "2016-10-19T10:37:00Z",
+	Subject = "Let's go for lunch",
+	Body = new ItemBody
+	{
+		ContentType = BodyType.Html,
+		Content = "Does late morning work for you?"
+	},
+	Start = new DateTimeTimeZone
+	{
+		DateTime = "2019-06-15T12:00:00",
+		TimeZone = "Pacific Standard Time"
+	},
+	End = new DateTimeTimeZone
+	{
+		DateTime = "2019-06-15T14:00:00",
+		TimeZone = "Pacific Standard Time"
+	},
+	Location = new Location
+	{
+		DisplayName = "Harry's Bar"
+	},
+	Attendees = new List<Attendee>()
+	{
+		new Attendee
+		{
+			EmailAddress = new EmailAddress
+			{
+				Address = "adelev@contoso.onmicrosoft.com",
+				Name = "Adele Vance"
+			},
+			Type = AttendeeType.Required
+		}
+	}
 };
 
-var _event = new Event
-{
-	OriginalStartTimeZone = "originalStartTimeZone-value",
-	OriginalEndTimeZone = "originalEndTimeZone-value",
-	ResponseStatus = responseStatus,
-	Uid = "iCalUId-value",
-	ReminderMinutesBeforeStart = 99,
-	IsReminderOn = true,
-};
-
-await graphClient.Groups["{id}"].Events
+await graphClient.Groups["01d4ee64-15ce-491e-bad1-b91aa3223df4"].Events
 	.Request()
-	.AddAsync(_event);
+	.AddAsync(@event);
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsWifiEnterpriseEAPConfiguration"
 description: "Deletes a windowsWifiEnterpriseEAPConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

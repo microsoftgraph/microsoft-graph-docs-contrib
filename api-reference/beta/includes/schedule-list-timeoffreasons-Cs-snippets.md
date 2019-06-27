@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var timeOffReason = await graphClient.Teams["{teamId}"].Schedule.TimeOffReasons
+var timeOffReasons = await graphClient.Teams["{teamId}"].Schedule.TimeOffReasons
 	.Request()
 	.GetAsync();
 

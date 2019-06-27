@@ -1,7 +1,7 @@
 ---
 title: "localSecurityOptionsSmartCardRemovalBehaviorType enum type"
 description: "Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

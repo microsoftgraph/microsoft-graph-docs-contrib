@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskAppType enum type"
 description: "The type of Windows kiosk app."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

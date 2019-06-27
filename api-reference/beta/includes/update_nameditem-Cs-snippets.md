@@ -1,19 +1,20 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
-
-var value = new Json
-{
-};
 
 var workbookNamedItem = new WorkbookNamedItem
 {
 	Type = "type-value",
 	Scope = "scope-value",
 	Comment = "comment-value",
-	Value = value,
-	Visible = true,
+	Value = new Json
+	{
+	},
+	Visible = true
 };
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]

@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachment = await graphClient.Groups["{id}"].Threads["{id}"].Posts["{id}"].Attachments
+var attachments = await graphClient.Groups["{id}"].Threads["{id}"].Posts["{id}"].Attachments
 	.Request()
 	.GetAsync();
 

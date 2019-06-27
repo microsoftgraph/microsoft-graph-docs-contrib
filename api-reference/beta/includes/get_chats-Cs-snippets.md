@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var chat = await graphClient.Users["{id}"].Chats
+var chats = await graphClient.Users["{id}"].Chats
 	.Request()
 	.GetAsync();
 

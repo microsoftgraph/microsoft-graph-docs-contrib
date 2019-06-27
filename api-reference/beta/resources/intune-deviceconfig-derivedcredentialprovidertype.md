@@ -1,7 +1,7 @@
 ---
 title: "derivedCredentialProviderType enum type"
 description: "Provider type for Derived Credentials."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

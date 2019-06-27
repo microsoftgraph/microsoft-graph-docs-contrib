@@ -1,9 +1,12 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
 
-```Cs
+```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var outlookCategory = await graphClient.Me.Outlook.MasterCategories
+var masterCategories = await graphClient.Me.Outlook.MasterCategories
 	.Request()
 	.GetAsync();
 

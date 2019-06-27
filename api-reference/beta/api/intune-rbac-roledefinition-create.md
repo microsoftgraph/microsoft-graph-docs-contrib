@@ -1,7 +1,7 @@
 ---
 title: "Create roleDefinition"
 description: "Create a new roleDefinition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -42,6 +42,8 @@ GET /me/drive
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-drive-default-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-default-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -66,6 +68,8 @@ GET /users/{idOrUserPrincipalName}/drive
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-drive-by-user-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-by-user-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -87,6 +91,18 @@ To access a Group's default document library, your app requests the **drive** re
 ```http
 GET /groups/{groupId}/drive
 ```
+#### SDK sample code
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get-drive-by-group-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get-drive-by-group-Javascript-snippets.md)]
+
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-by-group-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ### Path parameters
 
@@ -100,16 +116,20 @@ To access a [Site's](../resources/site.md) default document library, your app re
 
 ### HTTP request
 
+<!-- { "blockType": "request", "name": "get-drive-by-site-id", "scopes": "group.read.all" } -->
+
 ```http
 GET /sites/{siteId}/drive
 ```
 #### SDK sample code
 # [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get-drive-by-group-Cs-snippets.md)]
+[!INCLUDE [sample-code](../includes/get-drive-by-site-id-Cs-snippets.md)]
 
 # [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get-drive-by-group-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/get-drive-by-site-id-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-by-site-id-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -146,7 +166,7 @@ These method support the [$select query parameter][odata-query-parameters] to sh
 
 Each of these methods returns a [Drive resource][drive-resource] for the matching drive in the response body.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default"] } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default" , "get-drive-by-site-id"] } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -176,6 +196,8 @@ Content-type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-drive-by-id-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-by-id-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -193,6 +215,7 @@ If the drive does not exist and cannot be provisioned automatically (when using 
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/drive-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/drive-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/drive-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/drive-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

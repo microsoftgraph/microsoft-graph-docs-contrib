@@ -1,7 +1,7 @@
 ---
 title: "List remoteActionAudits"
 description: "List properties and relationships of the remoteActionAudit objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
