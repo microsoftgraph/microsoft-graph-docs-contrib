@@ -17,7 +17,7 @@ Represents a certificate authority.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|certificate|Binary|The trusted certificate.|
+|certificate|Binary|The base64 encoded string representing the certificate.|
 |certificateRevocationListUrl|String|The URL of the certificate revocation list.|
 |deltaCertificateRevocationListUrl|String|The URL of the delta certificate revocation list.|
 |isRootAuthority|Boolean|**True** if the trusted certificate is a root authority, **false** if the trusted certificate is an intermediate authority.|

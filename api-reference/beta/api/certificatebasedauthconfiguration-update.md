@@ -68,7 +68,7 @@ Content-type: application/json
       "isRootAuthority": true,
       "certificateRevocationListUrl": "certificateRevocationListUrl-value",
       "deltaCertificateRevocationListUrl": "deltaCertificateRevocationListUrl-value",
-      "certificate": "certificate-value",
+      "certificate": "Binary",
       "issuer": "issuer-value",
       "issuerSki": "issuerSki-value"
     }
@@ -99,7 +99,7 @@ Content-type: application/json
       "isRootAuthority": true,
       "certificateRevocationListUrl": "certificateRevocationListUrl-value",
       "deltaCertificateRevocationListUrl": "deltaCertificateRevocationListUrl-value",
-      "certificate": "certificate-value",
+      "certificate": "Binary",
       "issuer": "issuer-value",
       "issuerSki": "issuerSki-value"
     }
