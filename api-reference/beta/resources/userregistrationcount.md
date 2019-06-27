@@ -18,7 +18,7 @@ The **userRegistrationCount** resource represents the registration count and sta
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | registrationCount | Int64 | Provides the registration count for your tenant. |
-| registrationStatus | String | Possible values are: `registered`, `enabled`, `capable`, `mfaRegistered`, `unknownFutureValue`. |
+| registrationStatus | String | Possible values are: `registered`, `enabled`, `capable`, and `mfaRegistered`. |
 
 ## JSON representation
 

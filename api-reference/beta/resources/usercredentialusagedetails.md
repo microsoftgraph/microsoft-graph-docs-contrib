@@ -23,14 +23,14 @@ The **userCredentialUsageDetails** resource represents the self-service password
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, `alternateMobileCall`, `fido` (only registered through combined security info registration), `appPassword` (only used for MFA), `unknownFutureValue`. |
+| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and `alternateMobileCall` (supported only in registration). |
 | eventDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
-| failureReason | String | Provides the failure reason for the corresponding reset. |
-| feature | string | Possible values are: `registration`, `reset`, `unknownFutureValue`. |
+| failureReason | String | Provides the failure reason for the corresponding reset or registration workflow. |
+| feature | string | Possible values are: `registration` and `reset`. |
 | id | String | Read-only. Unique Id of the activity. |
-| isSuccess | Boolean | Indicates success or failure. |
-| userDisplayName | String | User name of the user performing the reset. |
-| userPrincipalName | String | User Principal Name of the user performing the reset. |
+| isSuccess | Boolean | Indicates success or failure of the workflow. |
+| userDisplayName | String | User name of the user performing the reset or registration workflow. |
+| userPrincipalName | String | User principal name of the user performing the reset or registration workflow. |
 
 ## Relationships
 

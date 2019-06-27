@@ -3,7 +3,7 @@ title: "Working with the authentication methods usage report API"
 description: "The authentication methods usage report helps an organization understand how their end users are using Azure Active Directory capabilities such as self-service password reset and multi-factor authentication (MFA)."
 author: davidmu1
 localization_priority: Normal
-ms.prod: identity and access reports
+ms.prod: reports
 ---
 
 # Working with the authentication methods usage report API
@@ -29,8 +29,8 @@ Here are popular requests for working with this API:
 
 | Operation | Try in Graph Explorer | Description |
 | --------- | --- | ----------- |
-| [GET Credentials registration count](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialuserregistrationcount&version=beta) | Get the number of users registered for self-service password reset and MFA. |
-| [GET Credentials usage count](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialusagesummary&version=beta) | Get the number of users using self-service password reset. |
+| [GET Credentials registration count](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Get the number of users registered for self-service password reset and MFA. |
+| [GET Credentials usage count](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialusagesummary&version=beta) | Get the number of users using self-service password reset. |
 | [GET Credentials registration details](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialuserregistrationdetails&version=beta) | Get the user details for self-service password reset and MFA registration activities. |
 | [GET Credentials usage details](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/usercredentialusagedetails&version=beta) | Get user details for all self-service password reset activities. |
 

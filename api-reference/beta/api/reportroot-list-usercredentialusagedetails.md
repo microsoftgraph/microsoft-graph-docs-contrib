@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) objects for a given tenant.
+Get a list of [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) objects for a given tenant. Details include user information, status of the reset, and the reason for failure.
 
 ## Permissions
 
@@ -31,14 +31,17 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/userCredentialUsageDetails
 ```
 
-## Optional query parameters
+In the request URL, provide the following **$filter** or **$orderby** query parameters with values.
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters)
+| Parameter value | Description and example |
+|:--------- |:----------- |
+| feature | Filter by type of usage data you want (registration vs reset). For example: `/reports/userCredentialUsageDetails?$filter=feature eq microsoft.graph.feature'registration'`. Supported filter operators: `eq` |
+| userDisplayName | Filter by user display name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
+| userPrincipalName  | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`.	Supported filter  operators: `eq` and `startswith()`. Supports case insensitive. |
+| isSuccess | Filter by status of the activity. For example: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Supported filter operators: `eq` and `orderby`. |
+| authMethod  | Filter by the authentication methods using during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethod eq microsoft.graph.usageAuthMethod'email'`. Supported filter operators: `eq`. |
+| failureReason | Filter by failure reason (if the activity has failed). For example: `/reports/userCredentialUsageDetails?$filter=failureReason eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
 
-| Name | Description |
-|:---- |:----------- |
-| period | Filter using the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, `D30`. Period is case insensitive. |
-| feature | Filter by the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30') ?$filter=feature eq 'registration'`. Supported operators: `eq`. |
 
 ## Request headers
 

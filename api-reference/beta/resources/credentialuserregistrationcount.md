@@ -1,6 +1,6 @@
 ---
 title: "credentialUserRegistrationCount resource type"
-description: "Provide the summary of self-service password reset and multi-factor authentication registration for a given tenant."
+description: "Represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "reports"
@@ -51,10 +51,10 @@ The following is a JSON representation of the resource.
   "totalUserCount" : 23123,
   "userRegistrationCounts" :
   [
-    { "userRegistrationStatus":"registered", "userRegistrationCount": 23423 },
-    { "userRegistrationStatus":"enabled", "userRegistrationCount": 4234 },
-    { "userRegistrationStatus":"capable", "userRegistrationCount": 323 },
-    { "userRegistrationStatus":"mfaRegistered", "userRegistrationCount": 33 }
+    { "registrationStatus":"registered", "registrationCount": 23423 },
+    { "registrationStatus":"enabled", "registrationCount": 4234 },
+    { "registrationStatus":"capable", "registrationCount": 323 },
+    { "registrationStatus":"mfaRegistered", "registrationCount": 33 }
   ]
 }
 ```

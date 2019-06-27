@@ -23,9 +23,9 @@ The **credentialUsageSummary** resource represents the current state of how many
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, `alternateMobileCall`, `fido` (only registered through combined security info registration), `appPassword` (only used for MFA), `unknownFutureValue`. |
+| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and  `alternateMobileCall` (only supported for registration). |
 | failureActivityCount | Int64 | Provides the count of failed resets or registration data. |
-| feature | string | Possible values are: `registration`, `reset`, `unknownFutureValue`. |
+| feature | string | Possible values are: `registration` and `reset`. |
 | id | String | Read-only. |
 | successfulActivityCount | Int64 | Provides the count of successful registrations or resets. |
 

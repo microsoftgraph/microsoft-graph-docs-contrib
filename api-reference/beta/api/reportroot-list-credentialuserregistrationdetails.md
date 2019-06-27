@@ -38,8 +38,8 @@ This method supports some of the OData query parameters to help customize the re
 | Name | Description and example |
 | ---- | ---- | ------------|
 | userDisplayName | Filter by user name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
-| userPrincipalName | Filter by User Principal Name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
-| authMethods | Filter by the authentication methods using during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq 'email')`. Supported filter operators: `eq`. |
+| userPrincipalName | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
+| authMethods | Filter by the authentication methods used during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Supported filter operators: `eq`. |
 | isRegistered | Filter for users who have registered for self-service password reset (SSPR). For example: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Supported filter operators: `eq`. |
 | isEnabled | Filter for users who have been enabled for SSPR. For example: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Supported filtter operators: `eq`. |
 | isCapable | Filter for users who are ready to perform password reset or multi-factor authentication (MFA). For example: `/reports/userCredentialUsageDetails?$filter=isCapable eq true`. Supported filter operators: `eq` |
