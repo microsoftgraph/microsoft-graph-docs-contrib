@@ -40,9 +40,13 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "discoverabilities": "String",
+  "discoveryDateTime": "DateTimeOffset",
   "id": "String",
+  "metadata": [{"@odata.type": "microsoft.graph.stringKeyStringValuePair"}],
   "name": "String",
-  "objects": [{"@odata.type": "microsoft.graph.objectDefinition"}]
+  "objects": [{"@odata.type": "microsoft.graph.objectDefinition"}],
+  "version": "String"
 }
 
 ```
