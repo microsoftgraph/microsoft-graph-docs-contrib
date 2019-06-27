@@ -37,8 +37,8 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |`riskLevel`|`riskLevel`|Level of the risk detection. The possible values are low, medium, high, hidden, none, unknownFutureValue. |
 |`riskDetail`|`riskDetail`|Details of the risk detection. The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue. |
 |`source`|`string`|Source of the risk detection. |
-|`detectionTimingType`|`riskDetectionTimingType`|Timing of risk detection (real-time/offline). The possible values are notDefined, realtime, nearRealtime, offline, unknownfuturevalue. |
-|`activity`|`activityType`|Indicates the activity type the risk detection is linked to. The possible values are signin, user, unknownfuturevalue. |
+|`detectionTimingType`|`riskDetectionTimingType`|Timing of risk detection (real-time/offline). The possible values are notDefined, realtime, nearRealtime, offline, unknownFutureValue. |
+|`activity`|`activityType`|Indicates the activity type the risk detection is linked to. The possible values are signin, user, unknownFutureValue. |
 |`tokenIssuerType`|`tokenIssuerType`|Indicates the type of token issuer of the risk detection. The possible values are AzureAD, ADFederationServices, and unknownFutureValue. |
 |`ipAddress`|`string`|Provides the IP address of the client from where the risk detection occurred. |
 |`location`|[`signInLocation`](signinlocation.md)|Location of the sign-in. |
