@@ -1,9 +1,10 @@
 ---
-title: "Discover directoryDefinition"
-description: "Describes the Discover directoryDefinition MS Grph API"
+title: "discover directory definition"
+description: "Discover the latest schema definition for provisioning to an application. "
 localization_priority: Normal
-author: arvinh-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 # Discover directoryDefinition
 
