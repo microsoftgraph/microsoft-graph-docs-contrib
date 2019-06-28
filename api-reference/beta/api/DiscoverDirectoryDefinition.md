@@ -1,11 +1,12 @@
 ---
-title: "discover directory definition"
+title: "Discover directoryDefinition"
 description: "Discover the latest schema definition for provisioning to an application. "
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
+
 # Discover directoryDefinition
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -14,23 +15,32 @@ Discover the latest schema definition for provisioning to an application.
 
 ## Permissions
 
-|Permission Type |Permissions (from least to most privileged)|
-|-|-|
-|Delegated (work or school account)|`Directory.ReadWrite.All`|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application-only|Not supported.|
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | `Directory.ReadWrite.All` |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application-only                            | None. |
 
 ## HTTP Request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{directoryId}/discover
 ```
 
+## Optional query parameters
+
+This method supports the following OData query parameter to help customize the response. Note that the filters are all case sensitive except for status. For general information, see [OData query parameters](/graph/query_parameters).
+
+
 ## Request headers
 
-| Name           | Type    | Description|
-|:---------------|:--------|:-----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Header        | Value                      |
+|:--------------|:---------------------------|
+| Authorization | Bearer {token} (required)  |
 
 ## Request body
 
@@ -38,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, returns a `200 OK` response, with discovered directory.
+If successful, returns a `200 OK` response, with [directoryDefinition](api-reference/beta/resources/synchronization-directorydefinition.md).
 
 ## Example
 
@@ -46,35 +56,33 @@ If successful, returns a `200 OK` response, with discovered directory.
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "synchronizationjob_start"
+  "name": "discover_directorydefinition"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{directoryId}/discover
 ```
 
 ##### Response
+
 The following is an example of a response.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.None"
 } -->
+
 ```http
 HTTP/1.1 200 OK
-## Relationships
-None
+Content-type: application/json
 
-
-## JSON representation
-
-The following is a JSON representation of the resource.
-
-```json
 {
-  "discoverabilities": "AttributeNames", "AttributeDataTypes"
-  "discoveryDateTime": "2019-03-20T15:47:50.4707552Z",
-  "id": "directoryDefinitionId",
-  "objects": [{
+    "discoverabilities": "AttributeNames, AttributeDataTypes",
+    "id": "directoryDefinitionId",
+    "discoveryTime": "2019-03-20T15:47:50.4707552Z",
+    "objects": [{
         "name": "User",
         "attributes": [{
                 "name": "Id",
@@ -83,12 +91,14 @@ The following is a JSON representation of the resource.
                 "name": "FirstName",
                 "type": "String"
             },
+            // Remaining base attributes
             {
                 "name": "CustomExendedAttribute",
                 "type": "String"
-            }  
+            },
+            // Remaining discovered attributes
         ]
     }],
-  "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1"
+    "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1",
+    // Additional properties
 }
-```
