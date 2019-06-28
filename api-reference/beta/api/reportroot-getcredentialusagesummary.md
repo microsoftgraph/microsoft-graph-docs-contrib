@@ -33,7 +33,7 @@ GET /reports/getCredentialUsageSummary
 
 ## Query parameters
 
-The following table lists optional query parameter value that you can use to filter the request.
+You can use the following query parameter to filter the response.
 
 | Name | Description |
 |:---- |:----------- |
@@ -41,7 +41,7 @@ The following table lists optional query parameter value that you can use to fil
 
 ### OData query parameters
 
-The following table lists optional Odata query parameter value that you can use to filter the request.
+This API supports the **$filter** OData query parameter to customize the response. You can use the following value to filter the response.
 
 | Name | Description |
 |:---- |:----------- |
