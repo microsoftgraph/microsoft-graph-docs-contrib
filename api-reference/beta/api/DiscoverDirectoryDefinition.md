@@ -79,10 +79,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "discoverabilities": "AttributeNames, AttributeDataTypes",
-    "id": "directoryDefinitionId",
-    "discoveryTime": "2019-03-20T15:47:50.4707552Z",
-    "objects": [{
+  "discoverabilities": "AttributeNames", "AttributeDataTypes"
+  "discoveryDateTime": "2019-03-20T15:47:50.4707552Z",
+  "id": "directoryDefinitionId",
+  "objects": [{
         "name": "User",
         "attributes": [{
                 "name": "Id",
@@ -91,14 +91,11 @@ Content-type: application/json
                 "name": "FirstName",
                 "type": "String"
             },
-            // Remaining base attributes
             {
                 "name": "CustomExendedAttribute",
                 "type": "String"
-            },
-            // Remaining discovered attributes
+            }  
         ]
     }],
-    "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1",
-    // Additional properties
+  "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1"
 }
