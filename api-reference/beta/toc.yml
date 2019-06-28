@@ -8888,6 +8888,21 @@
           items:
           - name: List shared
             href: api/insights-list-shared.md
+      - name: Analytics
+        href: resources/activitystatistics.md
+        items:
+        - name: Call activities
+          href: resources/callactivitystatistics.md
+        - name: Chat activities
+          href: resources/chatactivitystatistics.md
+        - name: Email activities
+          href: resources/emailactivitystatistics.md
+        - name: Focus activities
+          href: resources/focusactivitystatistics.md          
+        - name: Meeting activities
+          href: resources/meetingactivitystatistics.md
+        - name: Settings
+          href: resources/settings.md
       - name: Person
         href: resources/person.md
         items:
