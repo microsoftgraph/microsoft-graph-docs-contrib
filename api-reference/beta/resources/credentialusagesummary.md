@@ -17,7 +17,7 @@ Represents the current state of how many users in your organization are using se
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get credentialUsageSummary](../api/reportroot-getcredentialusagesummary.md) | credentialUsageSummary | Read properties and relationships of a credentialUsageSummary object. |
+| [getCredentialUsageSummary](../api/reportroot-getcredentialusagesummary.md) | credentialUsageSummary | Read properties and relationships of a credentialUsageSummary object. |
 
 ## Properties
 
