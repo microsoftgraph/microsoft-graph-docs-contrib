@@ -9,22 +9,22 @@ localization_priority: Priority
 
 Did you know that some new features in Microsoft Graph originate as popular requests from the developer community? 
 
-Let's walk through how new features get released, what's currently new in Microsoft Graph, and how you can give us your ideas.
+Let's walk through how new features get released, what's currently new in Microsoft Graph, and how you can share your ideas.
 
 ## Life cycle of APIs
 
-Microsoft Graph service owners periodically evaluate feature ideas and select new scenarios to support. For the selected scenarios, they define feature requirements, and design and implement APIs for the feature, following . 
+Microsoft Graph service owners periodically evaluate feature ideas and select new scenarios to support. To build a new feature, they define technical and business requirements, and design and implement REST APIs that meet the requirements and fulfill the target scenarios. 
 
-When new and updated APIs are ready for release in Microsoft Graph:
+After internal testing, service owners usually release APIs in the following order:
 
-1. APIs usually debut in [preview status](versioning-and-support.md#beta-version) in the beta version (`https://graph.microsoft.com/beta`). 
-2. Some of them may receive sufficient feedback, evolve, and be promoted to the general availability (GA) version, v1.0 (`https://graph.microsoft.com/v1.0`).
+1. Debuting the API in [preview status](versioning-and-support.md#beta-version) in the beta endpoint (`https://graph.microsoft.com/beta`). APIs in this stage may evolve and change without notice.
+2. Promoting the API to general availability (GA) status, in the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). The promotion occurs only if the service owner receives sufficient feedback and considers the API viable.
 
-Once APIs are in the GA version, you can use them in production apps to realize the targeted scenarios.
+You can try APIs in _preview status_ in Graph Explorer, and use them for prototyping new functionality in an app. Use only APIs in _GA status_ in production apps.
 
 The [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog enumerate the latest API updates. The following are some highlights. 
 
-## What's new in v1.0 (GA)
+## What's new in v1.0 (GA) for May and June, 2019
 
 ### Calendar, mail, and personal contacts
 Exchange administrators can grant application permissions to an app and [limit the app to access only a subset of mailboxes in an ](auth-limit-mailbox-access.md), instead of the default which is access to all mailboxes in the organization. Such restricted access would apply to any application permissions granted to the app for [calendars](permissions-reference.md#calendars-permissions), [contacts](permissions-reference.md#contacts-permissions), and [mail and mailbox settings](permissions-reference.md#mail-permissions). See related [blog announcement](https://developer.microsoft.com/en-us/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/).
@@ -36,7 +36,7 @@ Use [mail search folders](/graph/api/resources/mailsearchfolder?view=graph-rest-
 Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) all issued refresh tokens for a user. This is usually used to prevent apps on a lost or stolen device from accessing an organization's data.
 
 
-## What's new in beta (preview)
+## What's new in beta (preview) for May and June, 2019
 
 > [!IMPORTANT]
 > APIs in _preview_ status may change without notice, and some may never be promoted to the GA version. Do not use them in production apps.
@@ -52,11 +52,29 @@ Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=g
 ### Group
 Get [sensitivity labels](/graph/api/resources/assignedlabel?view=graph-rest-beta) to help protect sensitive data of an Office 365 group and meet compliance policies. These labels are [assignedLabel](/graph/api/resources/assignedlabel?view=graph-rest-beta) objects, published by administrators in Microsoft 365 Security & Compliance Center, as part of Microsoft Information Protection capabilities. 
 
+### Identity and access
+- Get an instance of an [application](/graph/api/resources/applicationtemplate?view=graph-rest-beta), or add an instance from the Azure AD application gallery into your directory as a template.
+- Get a list of all [provisioning events](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) in a tenant.
+- Get information about [detected user or sign-in risks](/graph/api/resources/riskdetection?view=graph-rest-beta) in an Azure AD environment. This risk detection functionality is part of Azure AD Identity Protection.
+
 ### Sites
 Let users [follow](/graph/api/site-follow?view=graph-rest-beta) or [unfollow](/graph/api/site-unfollow?view=graph-rest-beta) SharePoint sites.
 
 ### Teamwork
 Host [images](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta) in Microsoft Teams [chat messages](/graph/api/resources/chatmessage?view=graph-rest-beta).
+Support [configuring](/graph/api/resources/teamdiscoverysettings?view=graph-rest-beta) how a private team can be discovered.
+
+
+## What else is new in Microsoft Graph?
+
+### Example code snippets
+In addition to C# and JavaScript, there are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](https://docs.microsoft.com/en-us/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
+
+### Microsoft Graph toolkit (preview)
+The [Microsoft Graph toolkit](../toolkit/overview.md) is a set of framework-agnostic web components and helpers that provides convenience to authenticate and access data in Microsoft Graph. Because the Microsoft Graph toolkit is in preview status, use toolkit providers and components in only non-production apps.
+
+### Postman
+As an alternative to Graph Explorer, try the Microsoft Graph API on the [Microsoft Graph Postman collection](use-postman.md) to learn the API behavior and speed up app development.
 
 
 ## Want to stay in the loop?
