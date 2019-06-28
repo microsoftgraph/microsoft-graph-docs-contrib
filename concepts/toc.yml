@@ -34,6 +34,8 @@
         href: /graph/tutorials/aspnet
       - name: Microsoft Flow
         href: /graph/tutorials/flow
+      - name: Java
+        href: /graph/tutorials/java
       - name: Node.js
         href: /graph/tutorials/node
       - name: PHP
@@ -321,6 +323,8 @@
           href: extensibility-open-users.md
         - name: Use schema extensions (example)
           href: extensibility-schema-groups.md
+      - name: Use Postman
+        href: use-postman.md
     - name: Migrate
       expanded: false
       items:
