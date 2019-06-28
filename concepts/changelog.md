@@ -12,6 +12,13 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
 ## June 2019
+
+### Identity Protection APIs
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | beta | Added the [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), which represents risk detections in Azure AD Identity Protection. |
+
+
 ### Identity and access
 
 | **Change type** | **Version** | **Description**                  |
