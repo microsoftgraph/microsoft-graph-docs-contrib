@@ -31,15 +31,20 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getCredentialUsageSummary
 ```
 
-## Function parameters
+## Query parameters
 
-### Optional query parameters
-
-The following table lists optional parameter values that you can use to filter the request.
+The following table lists optional query parameter value that you can use to filter the request.
 
 | Name | Description |
 |:---- |:----------- |
 | period | Filter using the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, and `D30`. Period is case insensitive. |
+
+### OData query parameters
+
+The following table lists optional Odata query parameter value that you can use to filter the request.
+
+| Name | Description |
+|:---- |:----------- |
 | feature | Filter by the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Supported filter operators: `eq`. |
 
 ## Request headers
