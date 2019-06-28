@@ -1,25 +1,23 @@
 ---
-title: "modifiedProperty resource type"
-description: "Describes the changes performed in the target system."
+title: "statusBase resource type"
+description: "Describes the status of the provisioning summary event."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# modifiedProperty resource type
+# statusBase resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the changes performed in the target system. 
+Describes the status of the provisioning summary event. 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|Name of property that was modified.|
-|newValue|String|New property value.|
-|oldValue|String|Old property value.|
+|status|String| Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation
 
@@ -30,15 +28,13 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.modifiedProperty",
+  "@odata.type": "microsoft.graph.statusBase",
   "baseType": null
 }-->
 
 ```json
 {
-  "displayName": "String",
-  "newValue": "String",
-  "oldValue": "String"
+  "status": "String"
 }
 ```
 
@@ -46,7 +42,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "modifiedProperty resource",
+  "description": "statusBase resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
