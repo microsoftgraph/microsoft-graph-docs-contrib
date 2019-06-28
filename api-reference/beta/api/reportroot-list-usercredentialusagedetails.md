@@ -35,7 +35,7 @@ GET /reports/userCredentialUsageDetails
 
 The following table lists the optional parameter values that can be used to filter the request.
 
-| Parameter value | Description and example |
+| Parameter | Description and example |
 |:--------- |:----------- |
 | feature | Filter by type of usage data you want (registration vs reset). For example: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Supported filter operators: `eq` |
 | userDisplayName | Filter by user display name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |

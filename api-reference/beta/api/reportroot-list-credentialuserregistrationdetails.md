@@ -35,7 +35,7 @@ GET /reports/credentialUserRegistrationDetails
 
 The following table lists the optional parameter values that can be used to filter the request.
 
-| Parameter value | Description and example |
+| Parameter | Description and example |
 | ---- | ---- | ------------|
 | userDisplayName | Filter by user name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
 | userPrincipalName | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
