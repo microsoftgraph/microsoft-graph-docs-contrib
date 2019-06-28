@@ -35,12 +35,12 @@ GET /reports/getCredentialUsageSummary
 
 ### Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters).
+The following table lists optional parameter values that you can use to filter the request.
 
 | Name | Description |
 |:---- |:----------- |
 | period | Filter using the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, and `D30`. Period is case insensitive. |
-| feature | Filter by the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30') ?$filter=feature eq microsoft.graph.feature'registration'`. Supported filter operators: `eq`. |
+| feature | Filter by the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Supported filter operators: `eq`. |
 
 ## Request headers
 
@@ -94,7 +94,7 @@ Content-Type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.getCredentialUsageSummary)",
   "value":[
     {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
+      "id" : "id-value",
       "feature":"registration",
       "successfulActivityCount":"12345",
       "failureActivityCount": "123",

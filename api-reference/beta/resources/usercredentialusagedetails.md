@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **userCredentialUsageDetails** resource represents the self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
+Represents the self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
 
 ## Methods
 
@@ -23,11 +23,11 @@ The **userCredentialUsageDetails** resource represents the self-service password
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and `alternateMobileCall` (supported only in registration). |
+| authMethod | string | Represents the authentication method that the user used. Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and `alternateMobileCall` (supported only in registration). |
 | eventDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
 | failureReason | String | Provides the failure reason for the corresponding reset or registration workflow. |
 | feature | string | Possible values are: `registration` and `reset`. |
-| id | String | Read-only. Unique Id of the activity. |
+| id | String | Read-only. The unique identifier for the activity. Read-only.|
 | isSuccess | Boolean | Indicates success or failure of the workflow. |
 | userDisplayName | String | User name of the user performing the reset or registration workflow. |
 | userPrincipalName | String | User principal name of the user performing the reset or registration workflow. |
@@ -52,10 +52,10 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
+  "id" : "id-value",
   "feature":"registration",
-  "userPrincipalName":"abc@cd.com",
-  "userDisplayName": "abc",
+  "userPrincipalName":"userPrincipalName-value",
+  "userDisplayName": "userDisplayName-value",
   "isSuccess" : true,
   "authMethod": "email",
   "failureReason": "User contacted an admin after trying the email verification option",

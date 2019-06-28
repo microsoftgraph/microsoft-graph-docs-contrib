@@ -33,9 +33,9 @@ GET /reports/credentialUserRegistrationDetails
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters). In the request URL, provide the following **$filter** or **$orderby** query parameters with values.
+The following table lists the optional parameter values that can be used to filter the request.
 
-| Name | Description and example |
+| Parameter value | Description and example |
 | ---- | ---- | ------------|
 | userDisplayName | Filter by user name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
 | userPrincipalName | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
@@ -97,9 +97,9 @@ Content-Type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.credentialUserRegistrationDetails)",
   "value":[
     {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
-      "userPrincipalName":"abc@cd.com",
-      "userDisplayName": "abc",
+      "id" : "id-value",
+      "userPrincipalName":"userPrincipalName",
+      "userDisplayName": "userDisplayName-value",
       "authMethods": ["email", "mobileSMS"],
       "isRegistered" : false,
       "isEnabled" : true,

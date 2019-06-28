@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **credentialUsageSummary** resource represents the current state of how many users in your organization are using self-service password reset capabilities.
+Represents the current state of how many users in your organization are using self-service password reset capabilities.
 
 ## Methods
 
@@ -23,10 +23,10 @@ The **credentialUsageSummary** resource represents the current state of how many
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | string | Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and  `alternateMobileCall` (only supported for registration). |
+| authMethod | string | Represents the authentication method that the user used. Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and  `alternateMobileCall` (only supported for registration). |
 | failureActivityCount | Int64 | Provides the count of failed resets or registration data. |
-| feature | string | Possible values are: `registration` and `reset`. |
-| id | String | Read-only. |
+| feature | string | Defines the feature to report. Possible values are: `registration` and `reset`. |
+| id | String | The unique identifier for the activity. Read-only. |
 | successfulActivityCount | Int64 | Provides the count of successful registrations or resets. |
 
 ## Relationships
@@ -49,7 +49,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
+  "id" : "id-value",
   "feature":"registration",
   "successfulActivityCount":"12345",
   "failureActivityCount": "123",

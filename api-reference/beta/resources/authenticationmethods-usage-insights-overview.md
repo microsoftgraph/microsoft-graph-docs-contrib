@@ -10,35 +10,37 @@ ms.prod: reports
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The authentication methods usage reports help you understand how the Azure Active Directory capabilities are used, such as self-service password reset and multi-factor authentication (MFA). You can use the reports to gain insights using the various authentication methods provided by Azure Active Directory. For example, you can use these reports to gather feedback when you are rolling out these capabilities within your organization.
+The authentication methods usage reports help you understand how users in your organization use Azure Active Directory (Azure AD) capabilities, such as self-service password rest and multi-factor authentication (MFA).
 
 These reports provide information such as:
 
 - Which authentication methods are more successful for your organization. 
-- What kind of errors end users are running into.
-- What kind of campaign you need to run to help your end users adopt these capabilities.
+- What types of errors end users are running into.
+- What campaign you need to run to help your end users adopt the use of self-service password rest and MFA.
 
 The following APIs are used to get the reports:
 
-- Authentication Method Registration Summary and Details - [Self-service password reset registration](https://aka.ms/ssprsetup) and [Combined security info registration](https://aka.ms/mysecurityinfo)
-- Authentication Method Usage Summary and Details - [Self-service password reset usage](https://aka.ms/sspr)
+- [List credentialUserRegistrationDetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta)
+- [List userCredentialUsageDetails](/graph/api/reportroot-list-usercredentialusagedetails?view=graph-rest-beta)
+- [reportRoot: getCredentialUsageSummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta)
+- [reportRoot: getCredentialUserRegistrationCount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta)
 
-## API actions
+## Common requests
 
-Here are popular requests for working with this API:
+The following table lists some common requests that you can use with this API.
 
 | Operation | Try in Graph Explorer | Description |
 | --------- | --- | ----------- |
-| [GET Credentials registration count](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Get the number of users registered for self-service password reset and MFA. |
-| [GET Credentials usage count](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialusagesummary&version=beta) | Get the number of users using self-service password reset. |
-| [GET Credentials registration details](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialuserregistrationdetails&version=beta) | Get the user details for self-service password reset and MFA registration activities. |
-| [GET Credentials usage details](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/usercredentialusagedetails&version=beta) | Get user details for all self-service password reset activities. |
+| [getCredentialUserRegistrationcount](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Get the number of users registered for self-service password reset and MFA. |
+| [getCredentialUsageSummary](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Get the number of users using self-service password reset. |
+| [credentialUserRegistrationDetails](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | Get the user details for self-service password reset and MFA registration activities. |
+| [userCredentialUsageDetails](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Get user details for all self-service password reset activities. |
 
 ## Licenses
 
-Usage reports are available for licensed features that leverage self-service password reset and MFA in your tenant.
+Usage reports are available for licensed features that take advantage of self-service password reset and MFA in your tenant.
 
-## Next Steps
+## Next steps
 
 - To learn how to [deploy Azure Active Directory self-service password reset](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
 - To learn how to deploy [Azure Active Directory MFA](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).

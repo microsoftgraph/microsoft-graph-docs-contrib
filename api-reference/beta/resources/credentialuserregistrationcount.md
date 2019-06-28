@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **credentialUserRegistrationCount** resource represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.
+Represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities.
 
 ## Methods
 
@@ -23,7 +23,7 @@ The **credentialUserRegistrationCount** resource represents the current state of
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| id | String | Read-only. |
+| id | String | The unique identifier for the activity. Read-only. |
 | totalUserCount | Int64 | Provides the total user count in the tenant. |
 | userRegistrationCounts | [userRegistrationCount](userregistrationcount.md) collection | A collection of registration count and status information for users in your tenant. |
 
@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
+  "id" : "id-value",
   "totalUserCount" : 23123,
   "userRegistrationCounts" :
   [

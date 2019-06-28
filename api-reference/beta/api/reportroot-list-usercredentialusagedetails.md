@@ -31,11 +31,13 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/userCredentialUsageDetails
 ```
 
-In the request URL, provide the following **$filter** or **$orderby** query parameters with values.
+## Optional query parameters
+
+The following table lists the optional parameter values that can be used to filter the request.
 
 | Parameter value | Description and example |
 |:--------- |:----------- |
-| feature | Filter by type of usage data you want (registration vs reset). For example: `/reports/userCredentialUsageDetails?$filter=feature eq microsoft.graph.feature'registration'`. Supported filter operators: `eq` |
+| feature | Filter by type of usage data you want (registration vs reset). For example: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Supported filter operators: `eq` |
 | userDisplayName | Filter by user display name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
 | userPrincipalName  | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`.	Supported filter  operators: `eq` and `startswith()`. Supports case insensitive. |
 | isSuccess | Filter by status of the activity. For example: `/reports/userCredentialUsageDetails?$filter=isSuccess eq true`. Supported filter operators: `eq` and `orderby`. |
@@ -96,10 +98,10 @@ Content-length: 258
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.getUserCredentialUsageDetails)",
   "value":[
     {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
+      "id" : "id-value",
       "feature":"registration",
-      "userPrincipalName":"abc@cd.com",
-      "userDisplayName": "abc",
+      "userPrincipalName":"userPrincipalName-value",
+      "userDisplayName": "userDisplayName-value",
       "isSuccess" : true,
       "authMethod": "email",
       "failureReason": "User contacted an admin after trying the email verification option",

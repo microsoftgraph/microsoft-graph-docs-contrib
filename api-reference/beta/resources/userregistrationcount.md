@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **userRegistrationCount** resource represents the registration count and status for users in your tenant.
+Represents the registration count and status for users in your tenant.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 | registrationCount | Int64 | Provides the registration count for your tenant. |
-| registrationStatus | String | Possible values are: `registered`, `enabled`, `capable`, and `mfaRegistered`. |
+| registrationStatus | String | Represents the status of user registration. Possible values are: `registered`, `enabled`, `capable`, and `mfaRegistered`. |
 
 ## JSON representation
 

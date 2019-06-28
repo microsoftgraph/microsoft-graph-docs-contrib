@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **credentialUserRegistrationDetails** resource represents the details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users. Details include user information, status of registration, and the authentication method used.
+Represents the details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users. Details include user information, status of registration, and the authentication method used.
 
 ## Methods
 
@@ -23,8 +23,8 @@ The **credentialUserRegistrationDetails** resource represents the details of the
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethods | string collection | Possible values are: `email`, `mobilePhone`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and `alternateMobilePhone` (supported only in registration). |
-| id | String | Unique ID for the activity. |
+| authMethods | string collection | Represents the authentication method that the user used. Possible values are: `email`, `mobilePhone`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and `alternateMobilePhone` (supported only in registration). |
+| id | String | The unique identifier for the activity. Read-only.|
 | isCapable | Boolean | Indicates whether the user is ready to perform self-service password reset or MFA. |
 | isEnabled | Boolean | Indiciates whether the user enabled to perform self-service password reset. |
 | isMfaRegistered | Boolean | Indiciates whether the user is registered for MFA. |
@@ -52,9 +52,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
-  "userPrincipalName":"abc@cd.com",
-  "userDisplayName": "abc",
+  "id" : "id-value",
+  "userPrincipalName":"userPrincipalName-value",
+  "userDisplayName": "userDisplayName-value",
   "authMethods": ["email", "mobilePhone"],
   "isRegistered" : false,
   "isEnabled" : true,
