@@ -20,7 +20,7 @@ localization_priority: Priority
 [Migrating apps from Azure AD Graph to Microsoft Graph](migrate-azure-ad-graph-overview.md)
 
 ### SDKs
-[SDK guides](../sdks/sdks-overview.md)
+[SDK guides](/sdks/sdks-overview.md)
 API snippets ([example](/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code))
 
 ### Security

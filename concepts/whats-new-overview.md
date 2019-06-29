@@ -13,7 +13,7 @@ Let's walk through how new features get released, what's currently new in Micros
 
 ## Life cycle of a feature
 
-Microsoft Graph service owners periodically evaluate feature ideas and select new scenarios to support. To build a new feature, they define technical and business requirements. Depending on the feature, they can add or update REST APIs. Or, they can extend existing API behavior to offer a new capability, or build upon existing API and offer a new experience. 
+Microsoft Graph service owners periodically evaluate feature ideas and customer needs, and select new scenarios to support. To build a new feature, they define technical and business requirements. Depending on the feature, they can add or update REST APIs. They can extend existing feature behavior to make it more robust. Or, they can offer better development tools or learnng experience. 
 
 Service owners usually release APIs in the following order:
 
@@ -22,7 +22,7 @@ Service owners usually release APIs in the following order:
 
 You can try APIs in _preview status_ in Graph Explorer, and use them for prototyping new functionality in an app. Use only APIs in _GA status_ in production apps.
 
-Similarly, new capabilities may debut in preview status. Use those capabilities in production apps _only after_ the capabilities have been promoted to GA status.
+Similarly, new feature behaviors and tools may debut in preview status. Use them in production apps _only after_ they have been promoted to GA status.
 
 The following sections highlight what's new in May and June, 2019. For details of API updates, see the [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog. 
 
@@ -50,7 +50,7 @@ Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=g
 ## New in preview (released May - June, 2019)
 
 > [!IMPORTANT]
-> Features and APIs in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
+> APIs, features, and tools in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
 
 ### Devices and apps
 - Intune [May](changelog.md#may-2019) updates 
@@ -69,7 +69,7 @@ Get [sensitivity labels](/graph/api/resources/assignedlabel?view=graph-rest-beta
 - Get information about [detected user or sign-in risks](/graph/api/resources/riskdetection?view=graph-rest-beta) in an Azure AD environment. This risk detection functionality is part of Azure AD Identity Protection.
 
 ### Microsoft Graph toolkit
-The [Microsoft Graph toolkit](../toolkit/overview.md) is a set of framework-agnostic web components and helpers that provides convenience to authenticate and access data in Microsoft Graph. Because the Microsoft Graph toolkit is in preview status, use toolkit providers and components in only non-production apps.
+The [Microsoft Graph toolkit](/toolkit/overview.md) is a set of framework-agnostic web components and helpers that provides convenience to authenticate and access data in Microsoft Graph. Because the Microsoft Graph toolkit is in preview status, use toolkit providers and components in only non-production apps.
 
 ### Sites
 Let users [follow](/graph/api/site-follow?view=graph-rest-beta) or [unfollow](/graph/api/site-unfollow?view=graph-rest-beta) SharePoint sites.
