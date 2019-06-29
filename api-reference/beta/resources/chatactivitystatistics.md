@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the following additional details about Teams or Skype for Business chat or instant message activities for MyAnalytics users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md#Properties).
+Gets the following additional details about Teams or Skype for Business chat or instant message activities for MyAnalytics users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md).
 
 ## Methods
 
