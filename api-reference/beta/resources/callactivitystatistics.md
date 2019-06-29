@@ -18,8 +18,6 @@ Gets the following additional details about Teams or Skype for Business call act
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get callActivityStatistics](../api/callactivitystatistics-get.md) | [callActivityStatistics](callactivitystatistics.md) | Read properties and relationships of callActivityStatistics object. |
-| [Update](../api/callactivitystatistics-update.md) | [callActivityStatistics](callactivitystatistics.md) | Update callActivityStatistics object. |
-| [Delete](../api/callactivitystatistics-delete.md) | None | Delete callActivityStatistics object. |
 
 ## Properties
 

@@ -18,8 +18,6 @@ Gets the following additional details about meeting activities for MyAnalytics u
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get meetingActivityStatistics](../api/meetingactivitystatistics-get.md) | [meetingActivityStatistics](meetingactivitystatistics.md) | Read properties and relationships of meetingActivityStatistics object; name of the activity for which statistics are returned as “meeting.” |
-| [Update](../api/meetingactivitystatistics-update.md) | [meetingActivityStatistics](meetingactivitystatistics.md) | Update meetingActivityStatistics object. |
-| [Delete](../api/meetingactivitystatistics-delete.md) | None | Delete meetingActivityStatistics object. |
 
 ## Properties
 

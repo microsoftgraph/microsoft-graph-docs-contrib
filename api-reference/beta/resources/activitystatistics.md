@@ -20,8 +20,6 @@ Activities currently included are meetings, emails, chats (instant messages), an
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Gets the read properties and relationships for the activity statistics for the specified time range.|
-| [Update](../api/activitystatistics-update.md) | [activityStatistics](activitystatistics.md) | Update activityStatistics object. |
-| [Delete](../api/activitystatistics-delete.md) | None | Delete activityStatistics object. |
 
 ## Properties
 

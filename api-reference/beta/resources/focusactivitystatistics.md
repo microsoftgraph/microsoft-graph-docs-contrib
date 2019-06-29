@@ -18,7 +18,6 @@ Gets the following additional details about individual focus work for MyAnalytic
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get focusActivityStatistics](../api/focusactivitystatistics-get.md) | [focusActivityStatistics](focusactivitystatistics.md) | Read properties and relationships of the focusActivityStatistics object; the name of the activity for which statistics are returned as “focus” |
-| [Delete](../api/focusactivitystatistics-delete.md) | None | Deletes the focusActivityStatistics object |
 
 ## Properties
 

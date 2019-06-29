@@ -18,8 +18,6 @@ Gets the following additional information about email activities for MyAnalytics
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get emailActivityStatistics](../api/emailactivitystatistics-get.md) | [emailActivityStatistics](emailactivitystatistics.md) | Read properties and relationships of the emailActivityStatistics object; the name of the activity for which statistics are returned as “email” |
-| [Update](../api/emailactivitystatistics-update.md) | [emailActivityStatistics](emailactivitystatistics.md) | Update emailActivityStatistics object |
-| [Delete](../api/emailactivitystatistics-delete.md) | None | Delete emailActivityStatistics object |
 
 ## Properties
 

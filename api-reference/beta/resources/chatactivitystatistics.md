@@ -18,8 +18,6 @@ Gets the following additional details about Teams or Skype for Business chat or 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get chatActivityStatistics](../api/chatactivitystatistics-get.md) | [chatActivityStatistics](chatactivitystatistics.md) | Read properties and relationships of chatActivityStatistics object. |
-| [Update](../api/chatactivitystatistics-update.md) | [chatActivityStatistics](chatactivitystatistics.md) | Update chatActivityStatistics object. |
-| [Delete](../api/chatactivitystatistics-delete.md) | None | Delete chatActivityStatistics object. |
 
 ## Properties
 
