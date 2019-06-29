@@ -12,14 +12,6 @@ ms.prod: "insights"
 
 Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data.
 
-## Help users get the most relevant documents for their work
-
-Use the insights API to identify the most relevant documents for a user: 
-
-- List documents [trending around](../api/insights-list-trending.md) a user
-- List documents [used by](../api/insights-list-used.md) a user
-- List documents [shared with or shared by](../api/insights-list-shared.md) a user
-
 ## Aggregate and extract specific information about people
 
 Use the [person](../resources/person.md) resource and the People API to aggregate information
@@ -28,6 +20,14 @@ relevance based on multiple communication, collaboration, and business relations
 lets you browse, sort, select, filter, or search for persons based on your criteria.
 
 - [List people](../api/user-list-people.md)
+
+## Help users get the most relevant documents for their work
+
+Use the insights API to identify the most relevant documents for a user: 
+
+- List documents [trending around](../api/insights-list-trending.md) a user
+- List documents [used by](../api/insights-list-used.md) a user
+- List documents [shared with or shared by](../api/insights-list-shared.md) a user
 
 ## Manage @-Mentions
 
