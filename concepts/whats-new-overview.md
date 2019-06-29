@@ -9,37 +9,48 @@ localization_priority: Priority
 
 Did you know that some new features in Microsoft Graph originate as popular requests from the developer community? 
 
-Let's walk through how new features get released, what's currently new in Microsoft Graph, and how you can share your ideas.
+Let's walk through how new features get released, what's currently new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop).
 
-## Life cycle of APIs
+## Life cycle of a feature
 
-Microsoft Graph service owners periodically evaluate feature ideas and select new scenarios to support. To build a new feature, they define technical and business requirements, and design and implement REST APIs that meet the requirements and fulfill the target scenarios. 
+Microsoft Graph service owners periodically evaluate feature ideas and select new scenarios to support. To build a new feature, they define technical and business requirements. Depending on the feature, they can add or update REST APIs. Or, they can extend existing API behavior to offer a new capability, or build upon existing API and offer a new experience. 
 
-After internal testing, service owners usually release APIs in the following order:
+Service owners usually release APIs in the following order:
 
 1. Debuting the API in [preview status](versioning-and-support.md#beta-version) in the beta endpoint (`https://graph.microsoft.com/beta`). APIs in this stage may evolve and change without notice.
 2. Promoting the API to general availability (GA) status, in the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). The promotion occurs only if the service owner receives sufficient feedback and considers the API viable.
 
 You can try APIs in _preview status_ in Graph Explorer, and use them for prototyping new functionality in an app. Use only APIs in _GA status_ in production apps.
 
-The [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog enumerate the latest API updates. The following are some highlights. 
+Similarly, new capabilities may debut in preview status. Use those capabilities in production apps _only after_ the capabilities have been promoted to GA status.
 
-## What's new in v1.0 (GA) for May and June, 2019
+The following sections highlight what's new in May and June, 2019. For details of API updates, see the [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog. 
+
+## New and generally available (released May - June, 2019)
 
 ### Calendar, mail, and personal contacts
 Exchange administrators can grant application permissions to an app and [limit the app to access only a subset of mailboxes in an ](auth-limit-mailbox-access.md), instead of the default which is access to all mailboxes in the organization. Such restricted access would apply to any application permissions granted to the app for [calendars](permissions-reference.md#calendars-permissions), [contacts](permissions-reference.md#contacts-permissions), and [mail and mailbox settings](permissions-reference.md#mail-permissions). See related [blog announcement](https://developer.microsoft.com/en-us/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/).
 
+### Example code snippets
+In addition to C# and JavaScript, there are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
+
 ### Mail
 Use [mail search folders](/graph/api/resources/mailsearchfolder?view=graph-rest-1.0) API to search messages and access Outlook email search results. See related [blog announcement](https://developer.microsoft.com/en-us/graph/blogs/mail-search-folder-support-for-microsoft-graph-apis/).
+
+### Postman
+As an alternative to Graph Explorer, try the Microsoft Graph API on the [Microsoft Graph Postman collection](use-postman.md) to learn the API behavior and speed up app development.
+
+### Tutorials
+Try the new [tutorial to build a Java console app](/graph/tutorials/java) to get information about a user calendar.
 
 ### User
 Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) all issued refresh tokens for a user. This is usually used to prevent apps on a lost or stolen device from accessing an organization's data.
 
 
-## What's new in beta (preview) for May and June, 2019
+## New in preview (released May - June, 2019)
 
 > [!IMPORTANT]
-> APIs in _preview_ status may change without notice, and some may never be promoted to the GA version. Do not use them in production apps.
+> Features and APIs in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
 
 ### Devices and apps
 - Intune [May](changelog.md#may-2019) updates 
@@ -57,24 +68,15 @@ Get [sensitivity labels](/graph/api/resources/assignedlabel?view=graph-rest-beta
 - Get a list of all [provisioning events](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) in a tenant.
 - Get information about [detected user or sign-in risks](/graph/api/resources/riskdetection?view=graph-rest-beta) in an Azure AD environment. This risk detection functionality is part of Azure AD Identity Protection.
 
+### Microsoft Graph toolkit
+The [Microsoft Graph toolkit](../toolkit/overview.md) is a set of framework-agnostic web components and helpers that provides convenience to authenticate and access data in Microsoft Graph. Because the Microsoft Graph toolkit is in preview status, use toolkit providers and components in only non-production apps.
+
 ### Sites
 Let users [follow](/graph/api/site-follow?view=graph-rest-beta) or [unfollow](/graph/api/site-unfollow?view=graph-rest-beta) SharePoint sites.
 
 ### Teamwork
 Host [images](/graph/api/resources/chatmessagehostedimage?view=graph-rest-beta) in Microsoft Teams [chat messages](/graph/api/resources/chatmessage?view=graph-rest-beta).
 Support [configuring](/graph/api/resources/teamdiscoverysettings?view=graph-rest-beta) how a private team can be discovered.
-
-
-## What else is new in Microsoft Graph?
-
-### Example code snippets
-In addition to C# and JavaScript, there are now Objective-C code snippets in all API topics in the v1.0 and beta references. See the Objective-C example for [getting an event](https://docs.microsoft.com/en-us/graph/api/event-get?view=graph-rest-1.0&tabs=objective-c#example).
-
-### Microsoft Graph toolkit (preview)
-The [Microsoft Graph toolkit](../toolkit/overview.md) is a set of framework-agnostic web components and helpers that provides convenience to authenticate and access data in Microsoft Graph. Because the Microsoft Graph toolkit is in preview status, use toolkit providers and components in only non-production apps.
-
-### Postman
-As an alternative to Graph Explorer, try the Microsoft Graph API on the [Microsoft Graph Postman collection](use-postman.md) to learn the API behavior and speed up app development.
 
 
 ## Want to stay in the loop?
