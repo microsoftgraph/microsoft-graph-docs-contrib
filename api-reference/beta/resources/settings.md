@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource type gets the current settings for a MyAnalytics user as applicable for the Analytics API. For the Analytics API to return results for users, they must have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+The Analytics API includes the settings resource type. This resource gets the current settings for a MyAnalytics user as applicable for the Analytics API. For the Analytics API to return results for users, they must have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
 
 ## Methods
 

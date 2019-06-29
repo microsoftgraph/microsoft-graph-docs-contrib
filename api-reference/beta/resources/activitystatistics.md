@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The activityStatistics resource shows the time spent by MyAnalytics users in various activities during and outside of working hours for the specified time range in the request, which uses an aggregation period of one day.
+The Analytics API includes the activityStatistics resource type. This resource gets information about how MyAnalytics users spent their time on various activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day.
 
-Activities currently included are meetings, emails, chats (instant messages), and calls. You can specify the startDate and endDate with filters. If you don’t use a filter, activity statistics are returned for the last seven days by default.
+Activities currently include meetings, emails, chats (instant messages), calls, and focus work. You can specify the startDate and endDate with filters. If you don’t use a filter, activity statistics are returned for the last seven days by default.
 
 ## Methods
 
