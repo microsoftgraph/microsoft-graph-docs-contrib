@@ -2,7 +2,7 @@
 title: "Create memberOf"
 description: "Use this API to create a new memberOf."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---

@@ -93,6 +93,9 @@ Content-length: 401
     "giphyContentRating": "strict",
     "allowStickersAndMemes": true,
     "allowCustomMemes": true
+  },
+  "discoverySettings": {
+    "showInTeamsSearchAndSuggestions": true
   }
 }
 ```

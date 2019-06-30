@@ -122,7 +122,9 @@ Here is a JSON representation of the resource.
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "phoneProductIdentifier": "String",
   "phonePublisherId": "String",
@@ -144,12 +146,15 @@ Here is a JSON representation of the resource.
         "v10_1607": true,
         "v10_1703": true,
         "v10_1709": true,
-        "v10_1803": true
+        "v10_1803": true,
+        "v10_1809": true,
+        "v10_1903": true
       }
     }
   ]
 }
 ```
+
 
 
 

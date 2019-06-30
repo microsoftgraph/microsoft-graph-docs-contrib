@@ -45,6 +45,8 @@ GET /me/drive
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-drive-default-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-default-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -69,6 +71,8 @@ GET /users/{idOrUserPrincipalName}/drive
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-drive-by-user-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-by-user-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -97,6 +101,8 @@ GET /groups/{groupId}/drive
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-drive-by-group-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-by-group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -125,6 +131,8 @@ GET /sites/{siteId}/drive
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-drive-by-site-id-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-by-site-id-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -191,6 +199,8 @@ Content-type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get-drive-by-id-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get-drive-by-id-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -210,6 +220,7 @@ If the drive does not exist and cannot be provisioned automatically (when using 
   "section": "documentation",
   "tocPath": "Drives/Get drive",
   "suppressions": [
+    "Error: /api-reference/beta/api/drive-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/drive-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/drive-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/beta/api/drive-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

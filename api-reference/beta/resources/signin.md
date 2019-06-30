@@ -2,7 +2,7 @@
 title: "signIn resource type"
 doc_type: resourcePageType
 description: "Describes the signIn resource of Microsoft Graph API (REST), which helps audit user and application sign-in activity (beta version)."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---

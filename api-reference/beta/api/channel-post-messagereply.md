@@ -13,6 +13,8 @@ doc_type: apiPageType
 
 Create a new reply to a [message](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
 
+> **Note**: We don't recommend that you use this API for data migration. It does not have the throughput necessary for a typical migration.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -111,6 +113,8 @@ Content-length: 160
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/post_reply_message-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/post_reply_message-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -125,6 +129,7 @@ Content-length: 160
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/channel-post-messagereply.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/channel-post-messagereply.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/channel-post-messagereply.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2680
+Content-Length: 2796
 
 {
   "value": [
@@ -103,7 +103,9 @@ Content-Length: 2680
         "v10_1607": true,
         "v10_1703": true,
         "v10_1709": true,
-        "v10_1803": true
+        "v10_1803": true,
+        "v10_1809": true,
+        "v10_1903": true
       },
       "phoneProductIdentifier": "Phone Product Identifier value",
       "phonePublisherId": "Phone Publisher Id value",
@@ -125,7 +127,9 @@ Content-Length: 2680
             "v10_1607": true,
             "v10_1703": true,
             "v10_1709": true,
-            "v10_1803": true
+            "v10_1803": true,
+            "v10_1809": true,
+            "v10_1903": true
           }
         }
       ]
@@ -133,6 +137,7 @@ Content-Length: 2680
   ]
 }
 ```
+
 
 
 

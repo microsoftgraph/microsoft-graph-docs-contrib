@@ -54,6 +54,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
 
+This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
+
 ## Examples
 
 ### Example 1: Standard users request
@@ -139,6 +141,8 @@ Content-length: 491
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_user-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_user-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -175,6 +179,7 @@ Content-length: 491
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/user-get.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/user-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/user-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

@@ -7,7 +7,7 @@ ms.prod: ""
 author: ""
 ---
 
-# Privileged Identity Management - Azure AD
+# Privileged Identity Management
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
