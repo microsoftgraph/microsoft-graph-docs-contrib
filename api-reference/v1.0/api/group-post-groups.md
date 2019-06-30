@@ -15,7 +15,7 @@ Create a new group as specified in the request body. You can create the followin
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section.
 
-To get properties that are _not_ returned by default, do a GET operation and specify the properties in a `$select` OData query option. See an [example](group-get.md#request-2).
+To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
 > **Note**: Although Microsoft Teams is built on Office 365 Groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
@@ -24,9 +24,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -150,6 +150,8 @@ Content-type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_group-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -240,6 +242,8 @@ Content-type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/create_prepopulated_group-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/create_prepopulated_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -253,6 +257,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
     "Error: /api-reference/v1.0/api/group-post-groups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",

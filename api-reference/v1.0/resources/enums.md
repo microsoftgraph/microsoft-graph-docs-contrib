@@ -137,9 +137,6 @@ doc_type: enumPageType
 |:---------------------
 | student
 | teacher
-| none
-| unknownFutureValue
-
 
 ### meetingMessageType values
 

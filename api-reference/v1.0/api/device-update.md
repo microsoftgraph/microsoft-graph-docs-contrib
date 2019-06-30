@@ -1,7 +1,7 @@
 ---
 title: "Update device"
 description: "Update the properties of a registered device."
-author: "lleonard-msft"
+author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
@@ -84,6 +84,8 @@ HTTP/1.1 204 No Content
 # [C#](#tab/cs)
 [!INCLUDE [sample-code](../includes/update_device-Cs-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/update_device-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -96,6 +98,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/device-update.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/device-update.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/device-update.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

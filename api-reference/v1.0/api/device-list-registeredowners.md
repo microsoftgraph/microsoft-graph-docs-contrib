@@ -2,7 +2,7 @@
 title: "List registeredOwners"
 description: "Retrieve a list of users that are registered owners of the device. A registered owner is the user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner."
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -77,6 +77,8 @@ Content-length: 55
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/get_registeredowners-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_registeredowners-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -90,6 +92,7 @@ Content-length: 55
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/device-list-registeredowners.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/device-list-registeredowners.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/device-list-registeredowners.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

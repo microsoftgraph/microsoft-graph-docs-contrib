@@ -2,7 +2,7 @@
 title: "Check member groups"
 description: "Check for membership in a specified list of groups, and returns from that list those groups"
 localization_priority: Normal
-author: "lleonard-msft"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
 
@@ -19,9 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (work or school account) | User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All |
+|Application | User.Read.All and Group.Read.All, Directory.Read.All |
+
+Use the follow scenario guidance to help determine which permission types to use:
+- Use User.Read and Group.Read.All permissions to check group memberships for the signed-in user.
+- Use User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to check group memberships for any user.
+- Use Group.Read.All permission to check group memberships for a group.
+- Use Application.ReadWrite.All and Group.Read.All permissions to check group memberships for a service principal.
+- Use Directory.Read.All permission to check group memberships for a directory object.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -29,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 POST /me/checkMemberGroups
 POST /users/{id | userPrincipalName}/checkMemberGroups
 POST /groups/{id}/checkMemberGroups
-POST /servciePrincipals/{id}/checkMemberGroups
+POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
 ## Request headers
@@ -94,6 +101,8 @@ Content-type: application/json
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/directoryobject_checkmembergroups-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/directoryobject_checkmembergroups-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -108,6 +117,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/directoryobject-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/directoryobject-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/directoryobject-checkmembergroups.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

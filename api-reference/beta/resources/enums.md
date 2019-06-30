@@ -215,8 +215,7 @@ description: "Microsoft Graph enumeration values"
 |:---------------------
 | student
 | teacher
-| none
-| unknownFutureValue
+| faculty
 
 
 ### meetingMessageType values
@@ -715,6 +714,7 @@ Possible values for user account types (group membership), per Windows definitio
 |userPassedMFADrivenByRiskBasedPolicy|
 |adminDismissedAllRiskForUser|
 |adminConfirmedSigninCompromised|
+|adminConfirmedUserCompromised|
 |hidden|
 |unknownFutureValue|
 
@@ -803,3 +803,44 @@ Possible values for user account types (group membership), per Windows definitio
 |Add| 1       |
 |Update|2     |
 |Delete|4     |
+
+### chatMessageType values
+
+|Member|
+|:---|
+|message|
+
+### chatMessageImportance values
+
+|Member|
+|:---|
+|normal|
+|high|
+|urgent|
+
+### tokenIssuerType values
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|unknownFutureValue|
+
+### riskDetectionTimingType values
+
+|Member|
+|:---|
+|notDefined|
+|realtime|
+|nearRealtime|
+|offline|
+|unknownFutureValue|
+
+
+### activityType values
+
+|Member|
+|:---|
+|signin|
+|user|
+|unknownFutureValue|

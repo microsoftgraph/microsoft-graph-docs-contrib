@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.AccessAsUser.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.ReadWrite.All |
 
@@ -74,6 +74,8 @@ HTTP/1.1 204 No Content
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/delete_group-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/delete_group-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -87,6 +89,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/v1.0/api/group-delete.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/v1.0/api/group-delete.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/v1.0/api/group-delete.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]

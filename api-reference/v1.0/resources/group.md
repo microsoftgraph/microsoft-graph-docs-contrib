@@ -13,7 +13,7 @@ Represents an Azure Active Directory (Azure AD) group, which can be an Office 36
 
 Inherits from [directoryObject](directoryobject.md).
 
-For performance reasons, the [create](../api/group-post-groups.md), [get](../api/group-get.md), and [list](../api/group-list.md) operations return only a subset of more commonly used properties by default. These _default_ properties are noted in the [Properties](#properties) section. To get any of the properties that are not returned by default, specify them in a `$select` OData query option. See an [example](../api/group-get.md#request-2).
+For performance reasons, the [create](../api/group-post-groups.md), [get](../api/group-get.md), and [list](../api/group-list.md) operations return only a subset of more commonly used properties by default. These _default_ properties are noted in the [Properties](#properties) section. To get any of the properties that are not returned by default, specify them in a `$select` OData query option.
 
 This resource supports:
 

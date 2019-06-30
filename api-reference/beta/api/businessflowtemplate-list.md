@@ -41,10 +41,10 @@ If successful, this method returns a `200, OK` response code and an array of [bu
 
 <!-- {
   "blockType": "request",
-  "name": "get_businesFlowTemplate"
+  "name": "get_businessFlowTemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/businesFlowTemplates
+GET https://graph.microsoft.com/beta/businessFlowTemplates
 ```
 
 ##### Response
@@ -81,6 +81,18 @@ Content-type: application/json
 }
 
 ```
+#### SDK sample code
+
+# [C#](#tab/cs)
+[!INCLUDE [sample-code](../includes/get_businessFlowTemplate-Cs-snippets.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/get_businessFlowTemplate-Javascript-snippets.md)]
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/get_businessFlowTemplate-Objective-C-snippets.md)]
+---
+
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## See also
 
@@ -98,6 +110,10 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+    "Error: /api-reference/beta/api/businessflowtemplate-list.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
+    "Error: /api-reference/beta/api/businessflowtemplate-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
+    "Error: /api-reference/beta/api/businessflowtemplate-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)"
+  ]
 }
 -->

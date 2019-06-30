@@ -14,8 +14,8 @@ Invalidates all the refresh tokens issued to applications for a user (as well as
 
 If the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error. If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
-[!NOTE]
-After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
+>[!NOTE]
+>After calling **revokeSignInSessions**, there might be a small delay of a few minutes before tokens are revoked.
 
 ## Permissions
 
@@ -33,10 +33,12 @@ One of the following permissions is required to call this API. To learn more, in
 POST /me/revokeSignInSessions
 POST /users/{id | userPrincipalName}/revokeSignInSessions
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
 
 ## Request body
 This operation has no request content.
@@ -72,6 +74,8 @@ HTTP/1.1 204 No Content
 # [Javascript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/user_revokesigninsessionss-Javascript-snippets.md)]
 
+# [Objective-C](#tab/objective-c)
+[!INCLUDE [sample-code](../includes/user_revokesigninsessionss-Objective-C-snippets.md)]
 ---
 
 [!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
@@ -86,6 +90,7 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
+    "Error: /api-reference/beta/api/user-revokesigninsessions.md:\r\n      BookmarkMissing: '[#tab/objective-c](Objective-C)'. Did you mean: #objective-c (score: 4)",
     "Error: /api-reference/beta/api/user-revokesigninsessions.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
     "Error: /api-reference/beta/api/user-revokesigninsessions.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
