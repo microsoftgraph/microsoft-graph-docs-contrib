@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Graph API to integrate social and workplace intelligence in an app"
-description: "Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data."
+description: "Microsoft Graph enables access to useful social and workplace data for people, and supports social gestures in a user's social context."
 localization_priority: Priority
 author: "simonhult"
 ms.prod: "insights"
@@ -10,7 +10,7 @@ ms.prod: "insights"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph supports social gestures in a user's social context, and provides access to useful people and social data.
+Microsoft Graph enables access to social and workplace data for people, and supports gestures in a user's social context.
 
 ## Aggregate and extract specific information about people
 
@@ -28,6 +28,17 @@ Use the insights API to identify the most relevant documents for a user:
 - List documents [trending around](../api/insights-list-trending.md) a user
 - List documents [used by](../api/insights-list-used.md) a user
 - List documents [shared with or shared by](../api/insights-list-shared.md) a user
+
+## Help users keep track of all their activities in one place
+
+The MyAnalytics app provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
+
+The Analytics API enables you to synchronize or integrate people's data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
+
+The Analytics API includes the following two resources.
+
+- [settings](../resources/settings.md): For the Analytics API to return results for users, their current settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+- [activityStatistics](../resources/activitystatistics.md): Gets all data (including metadata) for the past seven days (or the specified time range) for the Office 365 activities that users spent time on, including the number of hours spent on email, meetings, calls, and chats (instant messages) during and outside of working hours and the number of hours available for focused work.
 
 ## Manage @-Mentions
 
