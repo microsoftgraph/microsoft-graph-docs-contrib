@@ -9,7 +9,7 @@ localization_priority: Priority
 
 Did you know that some new features in Microsoft Graph originate as popular requests from the developer community? 
 
-Let's walk through a new feature release, what's currently new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop).
+Let's walk through the typical life cycle of a new feature, what's currently new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop).
 
 ## Life cycle of a feature
 
