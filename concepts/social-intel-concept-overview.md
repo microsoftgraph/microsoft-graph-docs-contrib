@@ -84,7 +84,19 @@ The insights API provides a similar functionality with the [used](/graph/api/res
 
 ![Screenshot of a people card for a user in Outlook on the web, showing recent files](images/peoplecard-concept.png)
 
+## Why integrate with MyAnalytics? 
+
+The MyAnalytics app provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
+
+The Analytics API enables you to synchronize or integrate users' data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
+
+The Analytics API includes the following two resources.
+
+- [settings](../resources/settings.md): For the Analytics API to return results for users, their current settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+- [activityStatistics](../resources/activitystatistics.md): Gets all data (including metadata) for the past seven days (or the specified time range) for the Office 365 activities that users spent time on, including the number of hours spent on email, meetings, calls, and chats (instant messages) during and outside of working hours, and the number of hours available for focused work.
+
 ## API reference
+
 Looking for the API reference for these services?
 
 - [People API in Microsoft Graph v1.0](/graph/api/resources/social-overview?view=graph-rest-1.0)
@@ -92,6 +104,7 @@ Looking for the API reference for these services?
 
 ## Next steps
 
-* Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people and insight APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People** and **Insights (beta)**.
+* Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People**, **Insights (beta)**, and **Analytics**.
 * Find more about the [people API](people-example.md) and the [person](/graph/api/resources/person?view=graph-rest-1.0) entity.
 * To get started with insights API, see [Use the insights API](/graph/api/resources/insights?view=graph-rest-beta).
+* Find more about the [activityStatistics](../resources/activitystatistics.md) resource for the analytics API.
