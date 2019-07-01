@@ -9,17 +9,17 @@ localization_priority: Priority
 
 Did you know that some new features in Microsoft Graph originate as popular requests from the developer community? 
 
-Let's walk through how new features get released, what's currently new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop).
+Let's walk through a new feature release, what's currently new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop).
 
 ## Life cycle of a feature
 
-Microsoft Graph service owners periodically evaluate feature ideas and customer needs, and select new scenarios to support. To build a new feature, they define technical and business requirements. Depending on the feature, they may add or update REST APIs. Or, they may keep the same API syntax and extend feature behavior in other ways to make it more robust (such as adding a new permission, and adding [special lifecycle notifications for Outlook resources](webhooks-outlook-authz.md)). Or, they can offer a better learnng or development experience (such as the [Java tutorial](/graph/tutorials/java) and [Microsoft Graph toolkit](/graph/toolkit/overview)).
+Microsoft Graph service owners periodically evaluate feature ideas and customer needs, and select new scenarios to support. To build a new feature, they may add or update REST APIs, keep the same API syntax and extend feature behavior, or offer a better learnng or development experience.
 
 In most cases, service owners release new features in the following order:
 
-1. Debut in **_preview_** status, which means the feature behavior may change without notice, and therefore you should not use the feature in production apps. If the feature involves REST API additions or updates, such _preview_ APIs are exposed in the beta endpoint (`https://graph.microsoft.com/beta`). You can try preview APIs in Graph Explorer or use them for prototyping, but not in production apps.
+1. Debut in **_preview_** status, which means the feature behavior may change without notice. The owner exposes any related REST API additions or updates in the beta endpoint (`https://graph.microsoft.com/beta`). Do not use preview features, including their APIs, in production apps.
 
-2. If a service owner receives sufficient feedback and considers the feature viable, then the owner promotes the feature to **_general availability_ (GA)** status. If the feature involves REST API additions or updates, the owner exposes the API to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`), in addition to the beta endpoint. You can use the feature (including its APIs) in GA status in production apps.
+2. If a service owner receives sufficient feedback and considers the feature viable, the owner promotes the feature to **_general availability_ (GA)** status. The owner adds any related API additions or updates to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`) as well. You can use the feature (including its APIs) in GA status in production apps.
 
 The following sections highlight what's new in May and June, 2019. For details of API updates, see the [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog. 
 
