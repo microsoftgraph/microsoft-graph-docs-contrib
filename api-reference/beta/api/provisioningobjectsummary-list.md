@@ -46,15 +46,12 @@ For general information, see [OData query parameters](/graph/query_parameters).
 |Attribute name |Supported operators|
 |:----------------|:------|
 |id| eq, contains|
-|activityDateTime| eq, contains|
+|activityDateTime| eq|
 |tenantid|eq, contains|
 |jobid|eq, contains|
 |changeid|eq, contains|
 |cycleid|eq, contains|
 |action|eq, contains|
-|modifiedproperty/DisplayName| eq, contains|
-|modifiedproperty/oldValue| eq, contains|
-|modifiedproperty/newValue| eq, contains|
 |statusInfo/status|eq, contains|
 |sourceSystem/displayName|eq, contains|
 |targetSystem/displayName|eq, contains|
