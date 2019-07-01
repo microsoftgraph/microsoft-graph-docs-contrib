@@ -19,7 +19,7 @@ Service owners usually release new features in the following order:
 
 1. Debut in **_preview_** status, which means the feature behavior may change without notice, and therefore you should not use the feature in production apps. If the feature involves REST API additions or updates, such _preview_ APIs are exposed in the beta endpoint (`https://graph.microsoft.com/beta`). You can try preview APIs in Graph Explorer or use them for prototyping, but not in production apps.
 
-2. If a service owner receives sufficient feedback and considers the feature viable, then the owner promotes the feature to **_general availability_ (GA)** status. If the feature involves REST API additions or updates, the owner adds the API to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). 
+2. If a service owner receives sufficient feedback and considers the feature viable, then the owner promotes the feature to **_general availability_ (GA)** status. If the feature involves REST API additions or updates, the owner adds the API to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). You can use the feature (including its APIs) in GA status in production apps.
 
 The following sections highlight what's new in May and June, 2019. For details of API updates, see the [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog. 
 
