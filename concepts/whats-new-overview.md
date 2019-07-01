@@ -15,11 +15,11 @@ Let's walk through how new features get released, what's currently new in Micros
 
 Microsoft Graph service owners periodically evaluate feature ideas and customer needs, and select new scenarios to support. To build a new feature, they define technical and business requirements. Depending on the feature, they may add or update REST APIs. Or, they may keep the same API syntax and extend feature behavior in other ways to make it more robust (such as adding a new permission, and adding [special lifecycle notifications for Outlook resources](webhooks-outlook-authz.md)). Or, they can offer a better learnng or development experience (such as the [Java tutorial](/graph/tutorials/java) and [Microsoft Graph toolkit](/graph/toolkit/overview)).
 
-Service owners usually release new features in the following order:
+In most cases, service owners release new features in the following order:
 
 1. Debut in **_preview_** status, which means the feature behavior may change without notice, and therefore you should not use the feature in production apps. If the feature involves REST API additions or updates, such _preview_ APIs are exposed in the beta endpoint (`https://graph.microsoft.com/beta`). You can try preview APIs in Graph Explorer or use them for prototyping, but not in production apps.
 
-2. If a service owner receives sufficient feedback and considers the feature viable, then the owner promotes the feature to **_general availability_ (GA)** status. If the feature involves REST API additions or updates, the owner adds the API to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). You can use the feature (including its APIs) in GA status in production apps.
+2. If a service owner receives sufficient feedback and considers the feature viable, then the owner promotes the feature to **_general availability_ (GA)** status. If the feature involves REST API additions or updates, the owner exposes the API to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`), in addition to the beta endpoint. You can use the feature (including its APIs) in GA status in production apps.
 
 The following sections highlight what's new in May and June, 2019. For details of API updates, see the [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog. 
 
@@ -64,6 +64,9 @@ Get [sensitivity labels](/graph/api/resources/assignedlabel?view=graph-rest-beta
 - Get an instance of an [application](/graph/api/resources/applicationtemplate?view=graph-rest-beta), or add an instance from the Azure AD application gallery into your directory as a template.
 - Get a list of all [provisioning events](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) in a tenant.
 - Get information about [detected user or sign-in risks](/graph/api/resources/riskdetection?view=graph-rest-beta) in an Azure AD environment. This risk detection functionality is part of Azure AD Identity Protection.
+
+### Mail
+Use [Mail.ReadBasic permission](permissions-reference.md#mail-permissions) in [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta) API, and in [change notifications](webhooks.md) for [message](/graph/api/resources/message?view=graph-rest-beta) and **mailFolder**.
 
 ### Microsoft Graph toolkit
 The [Microsoft Graph toolkit](/graph/toolkit/overview) is a set of framework-agnostic web components and helpers that provides convenience to authenticate and access data in Microsoft Graph. Because the Microsoft Graph toolkit is in preview status, use toolkit providers and components in only non-production apps.
