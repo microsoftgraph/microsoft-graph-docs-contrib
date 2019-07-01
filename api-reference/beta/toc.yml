@@ -7708,6 +7708,11 @@
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+        - name: Provisioning logs
+          href: resources/provisioningobjectsummary.md
+          items:
+          - name: List directory provisioning
+            href: api/provisioningobjectsummary-list.md
       - name: Contracts
         href: resources/contract.md
         items:
@@ -7877,6 +7882,13 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
+      - name: Risk detection
+        href: resources/riskdetection.md
+        items:
+          - name: List risk detections
+            href: api/riskdetection-list.md
+          - name: Get risk detection 
+            href: api/riskdetection-get.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
@@ -8854,10 +8866,15 @@
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
-    - name: Social intelligence
+    - name: Social and workplace intelligence
       items:
       - name: Overview
         href: resources/social-overview.md
+      - name: Person
+        href: resources/person.md
+        items:
+        - name: List people
+          href: api/user-list-people.md
       - name: Insights
         href: resources/officegraphinsights.md
         items:
@@ -8876,11 +8893,6 @@
           items:
           - name: List shared
             href: api/insights-list-shared.md
-      - name: Person
-        href: resources/person.md
-        items:
-        - name: List people
-          href: api/user-list-people.md
       - name: Mention
         href: resources/mention.md
     - name: Tasks and plans
