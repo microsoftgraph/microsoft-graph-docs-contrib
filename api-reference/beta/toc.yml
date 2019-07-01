@@ -8547,14 +8547,26 @@
           items:
           - name: Overview
             href: resources/authenticationmethods-usage-insights-overview.md
-          - name: Get registration count
-            href: api/reportroot-getcredentialuserregistrationcount.md
-          - name: List registration details
-            href: api/reportroot-list-credentialuserregistrationdetails.md
-          - name: List usage details
-            href: api/reportroot-list-usercredentialusagedetails.md
-          - name: Get usage summary
-            href: api/reportroot-getcredentialusagesummary.md
+          - name: Credential User Registration Count
+            href: resources/credentialuserregistrationcount.md
+            items:
+            - name: Get registration count
+              href: api/reportroot-getcredentialuserregistrationcount.md
+          - name: Credential User Registration Details
+            href: resources/credentialuserregistrationdetails.md
+            items:
+            - name: List registration details
+              href: api/reportroot-list-credentialuserregistrationdetails.md
+          - name: User Credential Usage Details
+            href: resources/usercredentialusagedetails.md
+            items: 
+            - name: List usage details
+              href: api/reportroot-list-usercredentialusagedetails.md
+          - name: Credential Usage Summary
+            href: resources/credentialusagesummary.md
+            items:
+            - name: Get usage summary
+              href: api/reportroot-getcredentialusagesummary.md
       - name: Office 365 usage reports
         items:
         - name: Overview

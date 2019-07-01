@@ -18,13 +18,6 @@ These reports provide information such as:
 - What types of errors end users are running into.
 - What campaign you need to run to help your end users adopt the use of self-service password rest and MFA.
 
-The following APIs are used to get the reports:
-
-- [List credentialUserRegistrationDetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta)
-- [List userCredentialUsageDetails](/graph/api/reportroot-list-usercredentialusagedetails?view=graph-rest-beta)
-- [reportRoot: getCredentialUsageSummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta)
-- [reportRoot: getCredentialUserRegistrationCount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta)
-
 ## Common requests
 
 The following table lists some common requests that you can use with this API.
