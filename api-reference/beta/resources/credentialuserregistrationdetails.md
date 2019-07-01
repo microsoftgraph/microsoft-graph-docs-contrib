@@ -55,11 +55,11 @@ The following is a JSON representation of the resource.
   "id" : "String",
   "userPrincipalName":"String",
   "userDisplayName": "String",
-  "authMethods": string collection,
-  "isRegistered" : Boolean,
-  "isEnabled" : Boolean,
-  "isCapable" : Boolean,
-  "isMfaRegistered" : Boolean
+  "authMethods": ["email", "mobileSMS"],
+  "isRegistered" : false,
+  "isEnabled" : true,
+  "isCapable" : false,
+  "isMfaRegistered" : true
 }
 ```
 

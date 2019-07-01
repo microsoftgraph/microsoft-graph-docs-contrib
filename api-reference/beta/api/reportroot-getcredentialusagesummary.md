@@ -101,8 +101,8 @@ Content-Type: application/json
     {
       "id" : "id-value",
       "feature":"registration",
-      "successfulActivityCount":"12345",
-      "failureActivityCount": "123",
+      "successfulActivityCount":12345,
+      "failureActivityCount": 123,
       "authMethod": "email"
     }
   ]

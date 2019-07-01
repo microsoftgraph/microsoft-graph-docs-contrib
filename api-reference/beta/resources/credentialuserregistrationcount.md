@@ -48,13 +48,13 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id" : "String",
-  "totalUserCount" : Int64,
+  "totalUserCount" : 23123,
   "userRegistrationCounts" :
   [
-    { "registrationStatus":"registered", "registrationCount": Int64 },
-    { "registrationStatus":"enabled", "registrationCount": Int64 },
-    { "registrationStatus":"capable", "registrationCount": Int64 },
-    { "registrationStatus":"mfaRegistered", "registrationCount": Int64 }
+    { "registrationStatus":"registered", "registrationCount": 23423 },
+    { "registrationStatus":"enabled", "registrationCount": 4234 },
+    { "registrationStatus":"capable", "registrationCount": 323 },
+    { "registrationStatus":"mfaRegistered", "registrationCount": 33 }
   ]
 }
 ```

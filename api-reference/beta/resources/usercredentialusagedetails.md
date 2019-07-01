@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
   "feature":"string",
   "userPrincipalName":"String",
   "userDisplayName": "String",
-  "isSuccess" : Boolean,
+  "isSuccess" : true,
   "authMethod": "string",
   "failureReason": "String",
   "eventDateTime" : "DateTimeOffset"
