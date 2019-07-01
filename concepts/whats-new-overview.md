@@ -13,7 +13,7 @@ Let's walk through a new feature release, what's currently new in Microsoft Grap
 
 ## Life cycle of a feature
 
-Microsoft Graph service owners periodically evaluate feature ideas and customer needs, and select new scenarios to support. To build a new feature, they may add or update REST APIs, keep the same API syntax and extend feature behavior, or offer a better learnng or development experience.
+Microsoft Graph service owners periodically evaluate feature ideas and customer needs, and select new scenarios to support. To build a new feature, they may add or update REST APIs. They may keep the same API syntax and extend feature behavior. Or, they may offer a better learnng or development experience.
 
 In most cases, service owners release new features in the following order:
 
