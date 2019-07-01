@@ -119,7 +119,7 @@
       href: /graph/changelog?context=graph/api/beta
     - name: Errors
       href: /graph/errors?context=graph/api/beta
-  - name: Reference
+  - name: Beta reference
     expanded: true
     items:
     - name: Overview
