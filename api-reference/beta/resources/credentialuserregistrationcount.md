@@ -17,7 +17,7 @@ Represents the current state of how many users in your organization are register
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get credentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount | Read properties and relationships of a credentialUserRegistrationCount object. |
+| [getCredentialUserRegistrationCount](../api/reportroot-getcredentialuserregistrationcount.md) | credentialUserRegistrationCount | Read properties and relationships of a credentialUserRegistrationCount object. |
 
 ## Properties
 
@@ -47,14 +47,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id" : "id-value",
-  "totalUserCount" : 23123,
+  "id" : "String",
+  "totalUserCount" : Int64,
   "userRegistrationCounts" :
   [
-    { "registrationStatus":"registered", "registrationCount": 23423 },
-    { "registrationStatus":"enabled", "registrationCount": 4234 },
-    { "registrationStatus":"capable", "registrationCount": 323 },
-    { "registrationStatus":"mfaRegistered", "registrationCount": 33 }
+    { "registrationStatus":"registered", "registrationCount": Int64 },
+    { "registrationStatus":"enabled", "registrationCount": Int64 },
+    { "registrationStatus":"capable", "registrationCount": Int64 },
+    { "registrationStatus":"mfaRegistered", "registrationCount": Int64 }
   ]
 }
 ```

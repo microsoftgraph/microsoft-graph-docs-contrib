@@ -49,11 +49,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id" : "id-value",
-  "feature":"registration",
-  "successfulActivityCount":"12345",
-  "failureActivityCount": "123",
-  "authMethod": "email"
+  "id" : "String",
+  "feature":"string",
+  "successfulActivityCount":"Int64",
+  "failureActivityCount": "Int64",
+  "authMethod": "string"
 }
 ```
 

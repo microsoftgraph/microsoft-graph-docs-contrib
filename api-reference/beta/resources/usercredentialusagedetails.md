@@ -52,14 +52,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id" : "id-value",
-  "feature":"registration",
-  "userPrincipalName":"userPrincipalName-value",
-  "userDisplayName": "userDisplayName-value",
-  "isSuccess" : true,
-  "authMethod": "email",
-  "failureReason": "User contacted an admin after trying the email verification option",
-  "eventDateTime" : "2019-04-01T00:00:00Z"
+  "id" : "String",
+  "feature":"string",
+  "userPrincipalName":"String",
+  "userDisplayName": "String",
+  "isSuccess" : Boolean,
+  "authMethod": "string",
+  "failureReason": "String",
+  "eventDateTime" : "DateTimeOffset"
 }
 ```
 

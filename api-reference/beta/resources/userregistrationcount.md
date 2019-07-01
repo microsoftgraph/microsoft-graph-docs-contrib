@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 { 
-  "registrationStatus":"registered", 
-  "registrationCount": 23423
+  "registrationStatus":"String", 
+  "registrationCount": Int64
 }
 ```
 

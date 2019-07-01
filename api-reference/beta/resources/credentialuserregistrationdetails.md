@@ -52,14 +52,14 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id" : "id-value",
-  "userPrincipalName":"userPrincipalName-value",
-  "userDisplayName": "userDisplayName-value",
-  "authMethods": ["email", "mobilePhone"],
-  "isRegistered" : false,
-  "isEnabled" : true,
-  "isCapable" : false,
-  "isMfaRegistered" : true
+  "id" : "String",
+  "userPrincipalName":"String",
+  "userDisplayName": "String",
+  "authMethods": string collection,
+  "isRegistered" : Boolean,
+  "isEnabled" : Boolean,
+  "isCapable" : Boolean,
+  "isMfaRegistered" : Boolean
 }
 ```
 
