@@ -8866,10 +8866,15 @@
           href: api/sitepage-delete.md
         - name: Publish page
           href: api/sitepage-publish.md
-    - name: Social intelligence
+    - name: Social and workplace intelligence
       items:
       - name: Overview
         href: resources/social-overview.md
+      - name: Person
+        href: resources/person.md
+        items:
+        - name: List people
+          href: api/user-list-people.md
       - name: Insights
         href: resources/officegraphinsights.md
         items:
@@ -8903,11 +8908,6 @@
           href: resources/meetingactivitystatistics.md
         - name: Settings
           href: resources/settings.md
-      - name: Person
-        href: resources/person.md
-        items:
-        - name: List people
-          href: api/user-list-people.md
       - name: Mention
         href: resources/mention.md
     - name: Tasks and plans
