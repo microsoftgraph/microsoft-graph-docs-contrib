@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read |
-| Delegated (personal Microsoft account) | User.Read |
-| Application                            | Analytics.Read Preview |
+| Delegated (work or school account)     | User.Read, Analytics.Read |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | User.Read, Analytics.Read |
 
 ## HTTP request
 

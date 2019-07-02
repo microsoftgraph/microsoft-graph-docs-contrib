@@ -13,6 +13,16 @@ doc_type: "resourcePageType"
 
 The Analytics API includes the settings resource type. This resource gets the current settings for a MyAnalytics user as applicable for the Analytics API. For the Analytics API to return results for users, they must have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
 
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | User.Read |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | User.Read |
+
 ## Methods
 
 | Method       | Return Type | Description |
