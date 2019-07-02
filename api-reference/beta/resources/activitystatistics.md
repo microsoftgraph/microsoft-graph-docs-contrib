@@ -1,6 +1,6 @@
 ---
 title: "activityStatistics resource type"
-description: "Time spent by MyAnalytics users in various activities, including email, meetings, focus time, chats, and calls."
+description: "Time spent by MyAnalytics users in various activities, including email, meetings, focus work, chats, and calls."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -14,6 +14,12 @@ doc_type: "resourcePageType"
 The Analytics API includes the activityStatistics resource type. This resource gets information about how MyAnalytics users spent their time on various activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day.
 
 Activities currently include meetings, emails, chats (instant messages), calls, and focus work. You can specify the startDate and endDate with filters. If you don’t use a filter, activity statistics are returned for the last seven days by default.
+
+## Turn on the Analytics API
+
+1. Sign in to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+2. In **Sample Queries** in the left navigation pane, select **show more samples**. 
+3. In **Sample Categories**, turn on **Analytics**.
 
 ## Methods
 
