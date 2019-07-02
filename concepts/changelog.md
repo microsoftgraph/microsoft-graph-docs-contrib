@@ -17,6 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | beta | Added the [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), which represents risk detections in Azure AD Identity Protection. |
+| Addition | beta | Introduces the new [Analytics API](/graph/api/resources/activitystatistics?view=graph-rest-beta), which enables you to get information about how MyAnalytics users spend their time on various activities during and outside of working hours, including meetings, emails, chats (instant messages), calls, and focus work. |
 
 
 ### Identity and access
