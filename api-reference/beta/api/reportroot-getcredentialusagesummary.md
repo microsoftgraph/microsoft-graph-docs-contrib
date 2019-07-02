@@ -41,9 +41,9 @@ You can use the following function parameter to adjust the response.
 
 ## Optional query parameters
 
-This API supports the **$filter** OData query parameter to customize the response. You can use the following value to filter the response.
+This function supports the optional OData query parameter **$filter**. You can apply **$filter** on one or more of the following properties of the [credentialUsageSummary](../resources/credentialusagesummary.md) resource.
 
-| Name | Description |
+| Properties | Description and example |
 |:---- |:----------- |
 | feature | Specifies the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Supported filter operators: `eq`. |
 
