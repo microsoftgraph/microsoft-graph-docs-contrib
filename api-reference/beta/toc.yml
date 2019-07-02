@@ -8896,7 +8896,7 @@
       - name: Analytics
         href: resources/activitystatistics.md
         items:
-        - name: Get activitystatistics
+        - name: Get activityStatistics
           href: api/activitystatistics-get.md       
         - name: Call activities
           href: resources/callactivitystatistics.md
