@@ -35,7 +35,7 @@ GET /reports/userCredentialUsageDetails
 
 This function supports the optional OData query parameter **$filter**. You can apply **$filter** on one or more of the following properties of the [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) resource.
 
-| Parameter | Description and example |
+| Properties | Description and example |
 |:--------- |:----------- |
 | feature | Filter by type of usage data you want (registration vs reset). For example: `/reports/userCredentialUsageDetails?$filter=feature eq 'registration'`. Supported filter operators: `eq` |
 | userDisplayName | Filter by user display name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
