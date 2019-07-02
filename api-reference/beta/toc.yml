@@ -8537,12 +8537,14 @@
           items:
           - name: Sign-in summary
             href: resources/applicationsigninsummary.md
-          - name: Get sign-in summary
-            href: api/applicationsigninsummary-get.md
+            items:
+            - name: Get sign-in summary
+              href: api/applicationsigninsummary-get.md
           - name: Sign-in details
             href: resources/applicationsignindetailedsummary.md
-          - name: Get sign-in details
-            href: api/applicationsignindetailedsummary-get.md
+            items:
+            - name: Get sign-in details
+              href: api/applicationsignindetailedsummary-get.md
         - name: Registration and usage
           items:
           - name: Overview

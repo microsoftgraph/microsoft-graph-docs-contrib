@@ -31,21 +31,21 @@ One of the following permissions is required to call this API. To learn more, in
 GET /reports/getCredentialUsageSummary
 ```
 
-## Query parameters
+## Function parameters
 
-You can use the following query parameter to filter the response.
+You can use the following function parameter to adjust the response.
 
-| Name | Description |
-|:---- |:----------- |
-| period | Filter using the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, and `D30`. Period is case insensitive. |
+| Parameter | Type | Description |
+|:--------- |:---- |:----------- |
+| period | String | Specifies the time period for which you need the usage data. For example: `/reports/getCredentialUsageSummary(period='D30')`. Supported periods: `D1`, `D7`, and `D30`. Period is case insensitive. |
 
-### OData query parameters
+## Optional query parameters
 
 This API supports the **$filter** OData query parameter to customize the response. You can use the following value to filter the response.
 
 | Name | Description |
 |:---- |:----------- |
-| feature | Filter by the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Supported filter operators: `eq`. |
+| feature | Specifies the type of usage data you want (registration vs. reset). For example: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`. Supported filter operators: `eq`. |
 
 ## Request headers
 

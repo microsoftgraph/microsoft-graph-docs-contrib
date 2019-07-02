@@ -33,12 +33,12 @@ GET /reports/credentialUserRegistrationDetails
 
 ## Optional query parameters
 
-The following table lists the optional parameter values that can be used to filter the request.
+This function supports the optional OData query parameter **$filter**. You can apply **$filter** on one or more of the following properties of the [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) resource.
 
-| Parameter | Description and example |
-| ---- | ---- | ------------|
-| userDisplayName | Filter by user name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
-| userPrincipalName | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'ABCD'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
+| Properties | Description and example |
+| --------- | ----------------------- |
+| userDisplayName | Filter by user name. For example: `/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'Contoso'`. Supported filter operators: `eq`, and `startswith()`. Supports case insensitive. |
+| userPrincipalName | Filter by user principal name. For example: `/reports/userCredentialUsageDetails?$filter=userPrincipalName eq 'Contoso'`. Supported filter operators: `eq` and `startswith()`. Supports case insensitive. |
 | authMethods | Filter by the authentication methods used during registration. For example: `/reports/userCredentialUsageDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Supported filter operators: `eq`. |
 | isRegistered | Filter for users who have registered for self-service password reset (SSPR). For example: `/reports/userCredentialUsageDetails?$filter=isRegistered eq true`. Supported filter operators: `eq`. |
 | isEnabled | Filter for users who have been enabled for SSPR. For example: `/reports/userCredentialUsageDetails?$filter=isEnabled eq true`. Supported filtter operators: `eq`. |
