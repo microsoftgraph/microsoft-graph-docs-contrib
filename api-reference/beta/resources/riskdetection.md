@@ -23,7 +23,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List riskDetection](../api/riskdetection-list.md) | [riskDetection](riskDetection.md) collection|List risk detections and their properties.|
+|[List riskDetection](../api/riskdetection-list.md) | [riskDetection](riskdetection.md) collection|List risk detections and their properties.|
 |[Get riskDetection](../api/riskdetection-get.md) | [riskDetection](riskdetection.md)|Get a specific risky detection and its properties.|
 
 ## Properties
