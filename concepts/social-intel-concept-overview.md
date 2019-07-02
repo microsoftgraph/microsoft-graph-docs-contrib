@@ -92,8 +92,8 @@ The Analytics API enables you to synchronize or integrate users' data with a cus
 
 The Analytics API includes the following two resources.
 
-- [settings](../api-reference/beta/resources/settings.md): For the Analytics API to return results for users, their current settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
-- [activityStatistics](../api-reference/beta/resources/activitystatistics.md): Gets all data (including metadata) for the past seven days (or the specified time range) for the Office 365 activities that users spent time on, including the number of hours spent on email, meetings, calls, and chats (instant messages) during and outside of working hours, and the number of hours available for focused work.
+- [settings](/graph/api/beta/resources/settings.md): For the Analytics API to return results for users, their current settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+- [activityStatistics](/graph/api/resources/activitystatistics.md): Gets all data (including metadata) for the past seven days (or the specified time range) for the Office 365 activities that users spent time on, including the number of hours spent on email, meetings, calls, and chats (instant messages) during and outside of working hours, and the number of hours available for focused work.
 
 ## API reference
 
@@ -107,4 +107,4 @@ Looking for the API reference for these services?
 * Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People**, **Insights (beta)**, and **Analytics**.
 * Find more about the [people API](people-example.md) and the [person](/graph/api/resources/person?view=graph-rest-1.0) entity.
 * To get started with insights API, see [Use the insights API](/graph/api/resources/insights?view=graph-rest-beta).
-* Find more about the [activityStatistics](../api-reference/beta/resources/activitystatistics.md) resource for the analytics API.
+* Find more about the [activityStatistics](/graph/api/resources/activitystatistics.md) resource for the analytics API.
