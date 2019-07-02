@@ -11,14 +11,20 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## July 2019
+
+### Work intelligence API
+| **Change type** | **Version** | **Description**                          |
+| Addition | beta | Introduces the new work intelligence [Analytics API](/graph/api/resources/activitystatistics?view=graph-rest-beta), which enables you to get information about how MyAnalytics users spend their time on various activities during and outside of working hours, including meetings, emails, chats (instant messages), calls, and focus work. |
+
+| :-------------- | :---------- | :--------------------------------------- |
+
 ## June 2019
 
 ### Identity Protection APIs
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition | beta | Added the [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), which represents risk detections in Azure AD Identity Protection. |
-| Addition | beta | Introduces the new [Analytics API](/graph/api/resources/activitystatistics?view=graph-rest-beta), which enables you to get information about how MyAnalytics users spend their time on various activities during and outside of working hours, including meetings, emails, chats (instant messages), calls, and focus work. |
-
 
 ### Identity and access
 
