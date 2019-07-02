@@ -48,7 +48,6 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-|assignedTo|String|The name of the person who has been assigned the task.|
 |body|[itemBody](../resources/itembody.md)|The task body that typically contains information about the task. Note that only HTML type is supported.|
 |categories|String collection|The categories associated with the task.|
 |changeKey|String|The version of the task.|
