@@ -8896,6 +8896,8 @@
       - name: Analytics
         href: resources/activitystatistics.md
         items:
+        - name: Get activitystatistics
+          href: api/activitystatistics-get.md       
         - name: Call activities
           href: resources/callactivitystatistics.md
         - name: Chat activities
