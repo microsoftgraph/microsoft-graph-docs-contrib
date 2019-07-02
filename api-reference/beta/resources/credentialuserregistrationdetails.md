@@ -17,7 +17,8 @@ Represents the details of the usage of self-service password reset and multi-fac
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List credentialUserRegistrationDetails](../api/reportroot-list-credentialuserregistrationdetails.md) | credentialUserRegistrationDetails | Read properties and relationships of a credentialUserRegistrationDetails object. |
+| [List credentialUserRegistrationDetails](../api/reportroot-list-credentialuserregistrationdetails.md) | credentialUserRegistrationDetails collection | Get a list of [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) objects for a given tenant.
+ |
 
 ## Properties
 
