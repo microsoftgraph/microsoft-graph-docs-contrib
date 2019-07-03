@@ -18,7 +18,7 @@ The type of activities include meetings, emails, chats (instant messages), calls
 ## Turn on the Analytics API
 
 1. Sign in to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
-2. In **Sample Queries** in the left navigation pane, select **show more samples**. 
+2. In **Sample Queries** in the left navigation pane, select **show more samples**.
 3. In **Sample Categories**, turn on **Analytics**.
 
 ## Methods
@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.activityStatistics",
+  "@odata.type": "microsoft.graph.analytics.activityStatistics",
   "baseType": "",
   "keyProperty": "id"
 }-->
