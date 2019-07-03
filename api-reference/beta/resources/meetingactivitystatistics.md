@@ -1,6 +1,6 @@
 ---
 title: "meetingActivityStatistics resource type"
-description: "Represents information about meeting activities for MyAnalytics users."
+description: "Represents information about meeting activities for users."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the following additional details about meeting activities for MyAnalytics users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md).
+Represents the following additional details about meeting activities for users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in the Properties section for  [activityStatistics](../resources/activitystatistics.md).
 <!--
 ## Methods
 

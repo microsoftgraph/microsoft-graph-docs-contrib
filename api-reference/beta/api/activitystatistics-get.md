@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.Read, Analytics.Read |
+| Delegated (work or school account)     | Analytics.Read |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | User.Read, Analytics.Read |
+| Application                            | Not supported. |
 
 ## HTTP request
 
@@ -64,7 +64,7 @@ The following are two examples of a request that gets activity statistics of a u
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
-GET https://graph.microsoft.com/beta/users/{id | userPrincipalName}/analytics/activitystatistics
+GET https://graph.microsoft.com/beta/users{id | userPrincipalName}/analytics/activitystatistics
 
 ```
 

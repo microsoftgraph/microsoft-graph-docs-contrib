@@ -1,6 +1,6 @@
 ---
 title: "focusActivityStatistics resource type"
-description: "Represents information about individual focus work for MyAnalytics users"
+description: "Represents information about individual focus work for users"
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,20 +11,20 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the following additional details about individual focus work for MyAnalytics users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md).
+Represents the following additional details about individual focus work for users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in the Properties section for [activityStatistics](../resources/activitystatistics.md).
 
 <!--
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get focusActivityStatistics](../api/focusactivitystatistics-get.md) | [focusActivityStatistics](focusactivitystatistics.md) | Read properties and relationships of the focusActivityStatistics object; the name of the activity for which statistics are returned as “focus” |
+| [Get focusActivityStatistics](../api/focusactivitystatistics-get.md) | [focusActivityStatistics](focusactivitystatistics.md) | Read properties and relationships of the focusActivityStatistics object; the name of the activity for which statistics are returned as “focus.” |
 -->
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|Duration|Duration|Total hours available for individual focus work, which is equal to working hours minus collaboration hours (time spent on calls, chats, email, and meetings). |
+|duration|Duration|Total hours available for individual focus work, which is equal to working hours minus collaboration hours (time spent on calls, chats, email, and meetings). |
 <!--
 ## Relationships
 

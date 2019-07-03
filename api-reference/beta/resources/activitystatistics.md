@@ -1,6 +1,6 @@
 ---
 title: "activityStatistics resource type"
-description: "Time spent by MyAnalytics users in various activities, including email, meetings, focus work, chats, and calls."
+description: "Time spent by users on work activities, including email, meetings, focus work, chats, and calls."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Analytics API includes the activityStatistics resource type. This resource gets information about how MyAnalytics users spent their time on various activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day.
+The Analytics API includes the activityStatistics resource type. This resource gets information about how users spent their time on various work activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day.
 
-Activities currently include meetings, emails, chats (instant messages), calls, and focus work. You can specify the startDate and endDate. If you don’t specify a time range, activity statistics are returned for the last seven days by default.
+The type of activities include meetings, emails, chats (instant messages), calls, and focus work. You can specify the startDate and endDate. If you don’t specify a time range, activity statistics are returned for the last seven days by default.
 
 ## Turn on the Analytics API
 
@@ -31,7 +31,7 @@ Activities currently include meetings, emails, chats (instant messages), calls, 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|activity|analyticsActivityType| Name of the activity for which statistics are returned. The supported values are: `Email`, `Meeting`, `Focus`, `Chat`, `Call`.|
+|activity|analyticsActivityType| Name of the activity for which statistics are returned. The supported values are: [Call](callactivitystatistics.md), [Chat](chatactivitystatistics.md), [Email](emailactivitystatistics.md), [Focus](focusactivitystatistics.md), and [Meeting](meetingactivitystatistics.md).|
 |duration|Duration|Total hours spent on the activity.|
 |endDate|Date|Date when the activity ended.|
 |id|String| Read-only ID for the activity.|

@@ -14,9 +14,10 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ## July 2019
 
 ### Social and workplace intelligence API
+
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta | Introduced the new workplace intelligence [Analytics API](/graph/api/resources/activitystatistics?view=graph-rest-beta), which enables you to get information about how MyAnalytics users spend their time on various activities during and outside of working hours, including meetings, emails, chats (instant messages), calls, and focus work. |
+| Addition | beta | Introduced the new workplace intelligence [Analytics API](/graph/api/resources/activitystatistics?view=graph-rest-beta), which enables you to get information about how users spend their time on various activities during and outside of working hours, including meetings, emails, chats (instant messages), calls, and focus work. |
 
 
 ## June 2019

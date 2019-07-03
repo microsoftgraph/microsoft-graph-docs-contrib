@@ -1,6 +1,6 @@
 ---
 title: "callActivityStatistics resource type"
-description: "Represents information about call activities for MyAnalytics users."
+description: "Represents information about call activities for users."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,13 +11,13 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the following additional details about Teams or Skype for Business call activities for MyAnalytics users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md).
+Represents the following additional details about Teams or Skype for Business call activities for users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in the Properties section for [activityStatistics](../resources/activitystatistics.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|afterHours|Duration|Time spent on chats outside of working hours.|
+|afterHours|Duration|Time spent on calls outside of working hours.|
 
 ## JSON representation
 

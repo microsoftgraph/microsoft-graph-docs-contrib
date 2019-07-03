@@ -29,11 +29,11 @@ Use the insights API to identify the most relevant documents for a user:
 - List documents [used by](../api/insights-list-used.md) a user
 - List documents [shared with or shared by](../api/insights-list-shared.md) a user
 
-## Help users keep track of all their activities in one place
+## Help users balance work and life
 
 The MyAnalytics app provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
 
-The Analytics API enables you to synchronize or integrate people's data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
+The Analytics API enables you to synchronize or integrate people's data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users plan their day by seeing all their work and social activities in one place, within one app.
 
 The Analytics API includes the following two resources.
 
