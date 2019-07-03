@@ -1,6 +1,6 @@
 ---
 title: "meetingActivityStatistics resource type"
-description: "Gets information about meeting activities for MyAnalytics users."
+description: "Represents information about meeting activities for MyAnalytics users."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the following additional details about meeting activities for MyAnalytics users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md).
-
+Represents the following additional details about meeting activities for MyAnalytics users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md).
+<!--
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get meetingActivityStatistics](../api/meetingactivitystatistics-get.md) | [meetingActivityStatistics](meetingactivitystatistics.md) | Read properties and relationships of meetingActivityStatistics object; name of the activity for which statistics are returned as “meeting.” |
-
+-->
 ## Properties
 
 | Property     | Type        | Description |
@@ -29,11 +29,11 @@ Gets the following additional details about meeting activities for MyAnalytics u
 |multitasking|Duration|Time spent in meetings where the person was multitasking (read/sent more than a minimum number of emails and/or sent more than a minimum number of messages in Teams or in Skype for Business).|
 |organized|Duration|Time spent in meetings organized by the user.|
 |recurring|Duration|Time spent on recurring meetings.|
-
+<!--
 ## Relationships
 
 None
-
+-->
 ## JSON representation
 
 The following is a JSON representation of the resource.

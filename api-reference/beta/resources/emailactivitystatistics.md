@@ -1,6 +1,6 @@
 ---
 title: "emailActivityStatistics resource type"
-description: "Gets additional information about email activities for MyAnalytics users"
+description: "Represents additional information about email activities for MyAnalytics users"
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,13 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets the following additional information about email activities for MyAnalytics users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md).
-
-## Methods
-
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get emailActivityStatistics](../api/emailactivitystatistics-get.md) | [emailActivityStatistics](emailactivitystatistics.md) | Read properties and relationships of the emailActivityStatistics object; the name of the activity for which statistics are returned as “email” |
+Represents the following additional information about email activities for MyAnalytics users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md).
 
 ## Properties
 
@@ -26,10 +20,6 @@ Gets the following additional information about email activities for MyAnalytics
 |afterHours|Duration|Total hours spent outside of working hours (as defined in Outlook) on an activity|
 |readEmail|Duration|Total hours spent reading email|
 |sentEmail|Duration|Total hours spent writing and sending email|
-
-## Relationships
-
-None
 
 ## JSON representation
 

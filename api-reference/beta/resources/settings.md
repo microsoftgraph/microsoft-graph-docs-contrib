@@ -54,7 +54,7 @@ The following is a JSON representation of the resource.
 {
   "hasGraphMailbox": true,
   "hasLicense": true,
-  "hasOptedOut": true
+  "hasOptedOut": false
 }
 ```
 

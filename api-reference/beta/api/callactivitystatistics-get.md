@@ -1,5 +1,5 @@
 ---
-title: "Get callActivityStatistics"
+title: callActivityStatistics resource type
 description: "Retrieves the properties and relationships of callActivityStatistics object."
 localization_priority: Normal
 author: "madehmer"
@@ -7,7 +7,7 @@ ms.prod: "insights"
 doc_type: "apiPageType"
 ---
 
-# Get callActivityStatistics
+# callActivityStatistics resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /callactivitystatistics/{id}
+GET /me/analytics/callactivitystatistics
+GET /users/{id | userPrincipalName}/analytics/callactivitystatistics
 ```
 
 ## Optional query parameters

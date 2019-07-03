@@ -511,6 +511,7 @@ The following is an example of the response that gets activity statistics of a u
   "@odata.type": "microsoft.graph.activityStatistics"
 } -->
 
+```
 HTTP/1.1 200 OK
 {
     "@odata.context": "https://canary.graph.microsoft.com/testmya2/$metadata#activitystatistics/$entity",
@@ -525,7 +526,7 @@ HTTP/1.1 200 OK
     "readEmail": "PT0S",
     "sentEmail": "PT0S"
 }
-
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
