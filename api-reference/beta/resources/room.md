@@ -11,7 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a room.
+Represents a room in a tenant. 
+
+In Exchange Online, each room is associated with a room mailbox.
 
 Derived from [place](place.md).
 

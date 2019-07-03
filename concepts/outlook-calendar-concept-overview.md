@@ -69,15 +69,16 @@ With globalization, today's business meetings often involve attendees participat
 - Outlook gives customers the flexibility to organize events and specify a time zone for each of the start and end times of an event. To support this flexibility, by default, the calendar API returns the **start** and **end** times of an **event** in UTC, and provides the **originalStartTimeZone** and **originalEndTimeZone** properties to note the time zones used when the event was created.
 - Alternatively, you can specify the `Prefer: outlook.timezone="{time zone name}"` header so that a GET event operation returns **start** and **end** in the time zone you specify. The time zone name can be any of those supported by Windows, as well as those on this [list](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). See an [example](/graph/api/event-get?view=graph-rest-1.0#request-1) of the `Prefer` header in use.
 
-### Build apps with location awareness to provide intelligent context (preview)
+### Build apps with location awareness and provide intelligent context (preview)
 
 Use the [places API](/graph/api/resources/place?view=graph-rest-beta) to help a user navigate to a place, or provide an intelligent solution based on the user's location. The following are some examples of such applications:
 
-- ** Incorporate place details to calendar events to help users navigate their day and enhance productivity. 
-- ** Catering applications can use the places API to assist location navigation and set up.
-- ** Automate emailing pre-meeting details to your guest and include a map on how to get to a room. 
+- ** Incorporate place details in calendar events to help users navigate their day and enhance productivity. 
+- ** Catering applications can use the places API to assist venue navigation and set up.
+- ** Automate emailing pre-meeting details to attendees and include a map on how to get to a room. 
 - ** Set up reception bot assistants to provide information about specific rooms in a building. 
 
+Depending on your app scenario, you can use the places API within the context of Outlook, or independent of Outlook.
 
 ### Take advantage of social intelligence and other developer conveniences in Microsoft Graph
 

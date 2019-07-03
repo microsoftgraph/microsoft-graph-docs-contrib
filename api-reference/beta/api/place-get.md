@@ -10,11 +10,13 @@ doc_type: "apiPageType"
 # Get place
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the properties and relationships of a [place](../resources/place.md) object. The place object can be one of the following types:
+Get the properties and relationships of a [place](../resources/place.md) object. 
+
+The place object can be one of the following types:
 
 * A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. (Please add link to room.md.)
-* A roomList which includes an email address for the room list, and a navigation property to get the collection of [room](../resources/room.md) instances in the [room list](../resources/roomlist.md).
-Both room and roomList are derived from the [place](../resources/place.md) object.
+* A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
+Both **room** and **roomList** are derived from the [place](../resources/place.md) object.
 
 ## Permissions
 

@@ -14,7 +14,7 @@ doc_type: "resourcePageType"
 Represents basic location attributes such as name, physical address, and geographic coordinates. This is the base type for richer location types such as [room](room.md) and [roomList](roomlist.md).
 
 ### Using the places API
-Tenant administrators can organize meeting rooms into room lists. You can use the places API to get all the room lists or rooms in the tenant, or get all the rooms in a specific room list.
+Exchange Online administrators can organize meeting rooms in a tenant into room lists. Using the places API, you can get all the room lists or rooms in the tenant, or get all the rooms in a specific room list.
 
 Places like [room](room.md) and [roomList](roomlist.md) not only contain an **id**, display name and email address, but also navigational information like its physical address or geographical coordinates, and other relevant information such as AV capabilities, floor number, or capacity in the case of rooms.
 
@@ -31,8 +31,8 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 
 | Method                              | Return Type                  | Description |
 |:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | [place](place.md) collection | Retrieve a list of place objects. |
-| [Get place](../api/place-get.md)    | [place](place.md)            | Retrieve the properties and relationships of a place object. |
+| [List places](../api/place-list.md) | [place](place.md) collection | Get a collection of all the **place** objects or the specified type of **place** object defined in the tenant. |
+| [Get place](../api/place-get.md)    | [place](place.md)            | Get the properties and relationships of a **place** object. |
 
 ## Properties
 
@@ -66,6 +66,10 @@ The following is a JSON representation of the resource.
   "phone": "String"
 }
 ```
+
+## See also
+- For administrators to create a room list, use the Exchange PowerShell cmdlet [New-DistributionGroup](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps).
+- For administrators to add a room to a room list, use the Exchange Powershell cmdlet [Add-DistributionGroupMember](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps).
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

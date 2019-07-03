@@ -11,16 +11,18 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of all the [place](../resources/place.md) objects, or the specified type of place object, defined in the tenant.
+Get a collection of all the [place](../resources/place.md) objects or the specified type of **place** object defined in the tenant.
 
 A **place** object can be one of the following types:
 
 * A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
 * A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. 
 
-Both **room** and **roomList** are derived from the place object.
+Both **room** and **roomList** are derived from the **place** object.
 
-The list places operation returns a richer payload for rooms and room lists than the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions. See [details](../resources/place.md#using-the-places-api) for how they compare.
+You can get only rooms, only room lists, or only rooms in a specific room list in the tenant.
+
+Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
 ## Permissions
 
@@ -60,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List all places defined in the tenant
+### Example 1: List all the places defined in the tenant
 
 #### Request
 
-The following is an example of the request.
+The following example shows how to get all the [place](../resources/place.md) objects in the tenant, including rooms and room lists.
 <!-- {
   "blockType": "request",
   "name": "get_places"
@@ -150,7 +152,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows how to retrieve a list of [roomList](../resources/roomlist.md) objects.
+The following example shows how to get all the [roomList](../resources/roomlist.md) objects in the tenant.
 <!-- {
   "blockType": "request",
   "name": "get_places"
