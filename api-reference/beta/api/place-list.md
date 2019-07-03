@@ -20,7 +20,7 @@ A **place** object can be one of the following types:
 
 Both **room** and **roomList** are derived from the place object.
 
-The list places operation returns a richer payload for rooms and room lists than the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions. See [details](../resources/place.md#use-the-places-api) for how they compare.
+The list places operation returns a richer payload for rooms and room lists than the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
 ## Permissions
 
