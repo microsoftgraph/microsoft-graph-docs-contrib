@@ -19,7 +19,7 @@ Debut of places API to provide rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Addition        | Beta  | Added the [room list](/graph/api/resources/roomlist?view=graph-rest-beta) resoruce|
+| Addition        | Beta  | Added the [room list](/graph/api/resources/roomlist?view=graph-rest-beta) resource|
 | Addition        | Beta  | Added the [room](/graph/api/resources/room?view=graph-rest-beta) resource|
 | Addition        | Beta  | Added the [place](/graph/api/resources/place?view=graph-rest-beta) resource|
 
