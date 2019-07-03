@@ -3,6 +3,16 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values"
 ---
 
+### analyticsActivityType values
+
+| Value
+|:--------------
+| call
+| chat
+| email
+| focus
+| meeting
+
 ### registrationAuthMethod values
 
 |Member|

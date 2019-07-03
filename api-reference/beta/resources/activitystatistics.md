@@ -31,7 +31,7 @@ Activities currently include meetings, emails, chats (instant messages), calls, 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|activity|activityType| Name of the activity for which statistics are returned. The supported values are: `Email`, `Meeting`, `Focus`, `Chat`, `Call`.|
+|activity|analyticsActivityType| Name of the activity for which statistics are returned. The supported values are: `Email`, `Meeting`, `Focus`, `Chat`, `Call`.|
 |duration|Duration|Total hours spent on the activity.|
 |endDate|Date|Date when the activity ended.|
 |id|String| Read-only ID for the activity.|
