@@ -28,7 +28,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chatActivityStatistics",
+  "@odata.type": "microsoft.graph.analytics.chatActivityStatistics",
   "baseType": ""
 }-->
 

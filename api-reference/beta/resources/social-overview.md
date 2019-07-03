@@ -23,7 +23,7 @@ lets you browse, sort, select, filter, or search for persons based on your crite
 
 ## Help users get the most relevant documents for their work
 
-Use the insights API to identify the most relevant documents for a user: 
+Use the insights API to identify the most relevant documents for a user:
 
 - List documents [trending around](../api/insights-list-trending.md) a user
 - List documents [used by](../api/insights-list-used.md) a user
@@ -31,14 +31,14 @@ Use the insights API to identify the most relevant documents for a user:
 
 ## Help users balance work and life
 
-The MyAnalytics app provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
+[MyAnalytics](https://docs.microsoft.com/en-us/workplace-analytics/myanalytics/index) provides insights into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
 
-The Analytics API enables you to synchronize or integrate people's data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users plan their day by seeing all their work and social activities in one place, within one app.
+The Analytics API enables you to synchronize or integrate this data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users plan their day by seeing all their work and social activities in one place, within one app.
 
 The Analytics API includes the following two resources.
 
 - [settings](../resources/settings.md): For the Analytics API to return results for users, their current settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
-- [activityStatistics](../resources/activitystatistics.md): Gets all data (including metadata) for the past seven days (or the specified time range) for the Office 365 activities that users spent time on, including the number of hours spent on email, meetings, calls, and chats (instant messages) during and outside of working hours and the number of hours available for focused work.
+- [activityStatistics](../resources/activitystatistics.md): Gets data for the past seven days (or the specified time range) for the Office 365 activities that users spent time on, including the number of hours spent on email, meetings, calls, and chats (instant messages) during and outside of working hours and the number of hours available for focused work.
 
 ## Manage @-Mentions
 
@@ -65,4 +65,3 @@ Include the next sentence when supporting events.
   - [Get details of each mention in a message](../api/message-get.md#request-2)
 
 - [Delete a mention](../api/message-delete.md#request-2) in a message
-

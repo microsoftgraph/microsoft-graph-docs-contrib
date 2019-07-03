@@ -30,7 +30,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.emailActivityStatistics",
+  "@odata.type": "microsoft.graph.analytics.emailActivityStatistics",
   "baseType": ""
 }-->
 

@@ -43,18 +43,18 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.meetingActivityStatistics",
+  "@odata.type": "microsoft.graph.analytics.meetingActivityStatistics",
   "baseType": ""
 }-->
 
 ```json
 {
-  "afterHours": "String (timestamp)",
-  "conflicting": "String (timestamp)",
-  "long": "String (timestamp)",
-  "multitasking": "String (timestamp)",
-  "organized": "String (timestamp)",
-  "recurring": "String (timestamp)"
+  "afterHours": "String (ISO 8601 duration)",
+  "conflicting": "String (ISO 8601 duration)",
+  "long": "String (ISO 8601 duration)",
+  "multitasking": "String (ISO 8601 duration)",
+  "organized": "String (ISO 8601 duration)",
+  "recurring": "String (ISO 8601 duration)"
 }
 ```
 

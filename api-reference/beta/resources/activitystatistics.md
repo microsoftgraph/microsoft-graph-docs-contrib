@@ -15,17 +15,11 @@ The Analytics API includes the activityStatistics resource type. This resource g
 
 The type of activities include meetings, emails, chats (instant messages), calls, and focus work. You can specify the startDate and endDate. If you don’t specify a time range, activity statistics are returned for the last seven days by default.
 
-## Turn on the Analytics API
-
-1. Sign in to [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
-2. In **Sample Queries** in the left navigation pane, select **show more samples**.
-3. In **Sample Categories**, turn on **Analytics**.
-
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Gets the read properties and relationships for the activity statistics for the specified time range. Or if no time range is specified, it gets the last seven days by default.|
+| [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Gets the properties for the activity statistics for the specified time range. Or if no time range is specified, it gets the last seven days by default.|
 
 ## Properties
 

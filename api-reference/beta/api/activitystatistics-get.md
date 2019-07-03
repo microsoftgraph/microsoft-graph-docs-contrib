@@ -64,7 +64,7 @@ The following are two examples of a request that gets activity statistics of a u
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
-GET https://graph.microsoft.com/beta/users{id | userPrincipalName}/analytics/activitystatistics
+GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/activitystatistics
 
 ```
 
@@ -495,7 +495,7 @@ The following are two examples of a request of a user for a specific day and act
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics('email_2019-06-16_2019-06-17')
 
-GET https://graph.microsoft.com/beta/users{id | userPrincipalName}/analytics/activitystatistics('email_2019-06-16_2019-06-17')
+GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/activitystatistics('email_2019-06-16_2019-06-17')
 
 ```
 
@@ -508,7 +508,7 @@ The following is an example of the response that gets activity statistics of a u
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.activityStatistics"
+  "@odata.type": "microsoft.graph.analytics.activityStatistics"
 } -->
 
 ```http
