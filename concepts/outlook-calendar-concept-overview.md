@@ -19,6 +19,10 @@ initiate online conversations, share files, and collaborate in groups.
 
 Many millions of customers use Outlook calendar as part of an integrated hub that lets them effectively communicate and get things done. They can set up meetings, manage emails, find information about contacts and other users, and initiate conversations or online meetings all in one place, be it on the web, mobile, or desktop. Microsoft Graph not only connects apps to the calendar, mail, and contacts data of these customers, it enables apps to [integrate with the best of Microsoft 365](overview-major-services.md) and support a wide range of scenarios that enhance productivity and collaboration.
 
+Most features in the Outlook calendar API apply to calendars in personal Microsoft accounts and work or school accounts.
+
+** Denotes features specifically applicable to Outlook calendars in only work or school accounts.
+
 ### Automate appointment organization and calendaring
 
 Customers like how Outlook lets them organize their time for work, family, and personal activities. Microsoft Graph REST API keeps close parity with the customer experience, letting apps create, manage, and respond to events just as naturally:
@@ -47,8 +51,6 @@ The calendar API helps customers navigate their day and enhance productivity:
 - The calendar API lets you get calendar items of the signed-in user, or users who have shared or delegated their calendars to the signed-in user. For example, if Garth has shared a calendar with John, or if Garth has delegated access to John, then [delegated permissions](auth/auth-concepts.md#microsoft-graph-permissions) from John would give you read access to Garth's shared calendar and contents as well.
 - ** Office 365 groups make it convenient for group members to collaborate and access group conversations and calendars right in Outlook. Aside from a few minor differences between group calendars and user calendars, the calendar API lets you interact with group calendars just like user calendars. See the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) resource for more information.
 
-** Denotes features specifically applicable to Outlook calendars in work or school accounts.
-
 ### Schedule smart
 
 Outlook and the calendar API offer many smart conveniences to schedule events:
@@ -66,6 +68,16 @@ With globalization, today's business meetings often involve attendees participat
 - As an example in Outlook, customers can organize a meeting and include attendees joining from a conference room in Seattle, a coffee shop in Paris, and a home office in China. Programmatically, the event **locations** property, which is a collection of [location](/graph/api/resources/location?view=graph-rest-1.0) objects, can reflect this level of details in **displayName** and **locationType** for each **location**. See an [example](/graph/api/event-get?view=graph-rest-1.0#request-2).
 - Outlook gives customers the flexibility to organize events and specify a time zone for each of the start and end times of an event. To support this flexibility, by default, the calendar API returns the **start** and **end** times of an **event** in UTC, and provides the **originalStartTimeZone** and **originalEndTimeZone** properties to note the time zones used when the event was created.
 - Alternatively, you can specify the `Prefer: outlook.timezone="{time zone name}"` header so that a GET event operation returns **start** and **end** in the time zone you specify. The time zone name can be any of those supported by Windows, as well as those on this [list](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). See an [example](/graph/api/event-get?view=graph-rest-1.0#request-1) of the `Prefer` header in use.
+
+### Build apps with location awareness to provide intelligent context (preview)
+
+Use the [places API](/graph/api/resources/place?view=graph-rest-beta) to help a user navigate to a place, or provide an intelligent solution based on the user's location. The following are some examples of such applications:
+
+- ** Incorporate place details to calendar events to help users navigate their day and enhance productivity. 
+- ** Catering applications can use the places API to assist location navigation and set up.
+- ** Automate emailing pre-meeting details to your guest and include a map on how to get to a room. 
+- ** Set up reception bot assistants to provide information about specific rooms in a building. 
+
 
 ### Take advantage of social intelligence and other developer conveniences in Microsoft Graph
 
