@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| Get | settings | Gets the following property settings for a MyAnalytics user.|
+| Get | settings | Gets the following property settings for a user.|
 
 ## Properties
 
