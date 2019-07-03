@@ -3,15 +3,17 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values"
 ---
 
-### activityType
+### registrationAuthMethod values
 
-| Value
-|:--------------
-|Email
-|Meeting
-|Focus
-|Chat
-|Call
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
 
 ### contactRelationship values
 
