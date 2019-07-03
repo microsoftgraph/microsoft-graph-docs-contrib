@@ -546,7 +546,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Identity Risk Event permissions
+## Identity risk event permissions
 
 #### Delegated permissions
 
@@ -580,7 +580,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ---
 
 
-## Identity Risky User permissions
+## Identity risky user permissions
 
 #### Delegated permissions
 
@@ -904,7 +904,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Places.Read.All_ |Read all company places |Allows the app to read company places (conference rooms and room lists) for calendar events and other applications. |No | Yes |
+| _Places.Read.All_ |Read all company places |Allows the app to read company places (conference rooms and room lists) for calendar events and other applications. |No | No |
 
 #### Application permissions
 

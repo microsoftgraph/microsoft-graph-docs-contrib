@@ -21,7 +21,7 @@ Many millions of customers use Outlook calendar as part of an integrated hub tha
 
 Most features in the Outlook calendar API apply to calendars in personal Microsoft accounts and work or school accounts.
 
-** Denotes features specifically applicable to Outlook calendars in only work or school accounts.
+<sup>**</sup> Denotes features below that are specifically applicable to Outlook calendars in only work or school accounts.
 
 ### Automate appointment organization and calendaring
 
@@ -49,17 +49,16 @@ The calendar API helps customers navigate their day and enhance productivity:
 
 - In Outlook, customers can share calendars with one another and give permissions to read, write, or delete calendar contents. Or, they can delegate a calendar to let another customer respond to meeting requests on their behalf. Programmatically, while you cannot initiate a share or delegate action on behalf of a user, you can use a set of properties to verify the sharing status and enable scenarios around shared or delegated calendars: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, and **isSharedWithMe**.
 - The calendar API lets you get calendar items of the signed-in user, or users who have shared or delegated their calendars to the signed-in user. For example, if Garth has shared a calendar with John, or if Garth has delegated access to John, then [delegated permissions](auth/auth-concepts.md#microsoft-graph-permissions) from John would give you read access to Garth's shared calendar and contents as well.
-- ** Office 365 groups make it convenient for group members to collaborate and access group conversations and calendars right in Outlook. Aside from a few minor differences between group calendars and user calendars, the calendar API lets you interact with group calendars just like user calendars. See the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) resource for more information.
+- Office 365 groups make it convenient for group members to collaborate and access group conversations and calendars right in Outlook. Aside from a few minor differences between group calendars and user calendars, the calendar API lets you interact with group calendars just like user calendars. See the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) resource for more information<sup>**</sup>.
 
 ### Schedule smart
 
 Outlook and the calendar API offer many smart conveniences to schedule events:
 
 - Through Outlook calendar app settings, customers can enable automatic adding of events from emails, such as flight, hotel, or dining reservations, and billing invoices. Once added, you can interact with these events just like any other [event](/graph/api/resources/event?view=graph-rest-1.0) objects in the user's mailbox, and build creative scenarios upon this Outlook capability.
-- ** In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) object. You can [get rooms (preview)](/graph/api/user-findrooms?view=graph-rest-beta) and
-[get room lists (preview)](/graph/api/user-findroomlists?view=graph-rest-beta) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.
-- ** You can [look up the free/busy information for users and resources](outlook-get-free-busy-schedule.md) for a specific time period. You can then use this data to apply to different scenarios including resource planning and event scheduling.
-- ** If your scenario involves scheduling meetings at an optimal time, you can consider [using findMeetingTimes to identify possible times or locations to meet](findmeetingtimes-example.md). The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) function considers the free/busy status of the attendees, and any preferred rooms, time, and other constraints you provide. If the first try doesn't return a common meeting time, check the reason, adjust your criteria and call **findMeetingTimes** again.
+- In Outlook, booking a meeting room is as straight-forward as adding an attendee to the **event**. The calendar API represents a meeting room as an [emailAddress](/graph/api/resources/emailaddress?view=graph-rest-1.0) object. You can [get rooms (preview)](/graph/api/user-findrooms?view=graph-rest-beta) and [get room lists (preview)](/graph/api/user-findroomlists?view=graph-rest-beta) that are available in a tenant. To organize a meeting in a specific room, assign it to the **location** property of the **event**.<sup>**</sup>
+- You can [look up the free/busy information for users and resources](outlook-get-free-busy-schedule.md) for a specific time period. You can then use this data to apply to different scenarios including resource planning and event scheduling.<sup>**</sup>
+- If your scenario involves scheduling meetings at an optimal time, you can consider [using findMeetingTimes to identify possible times or locations to meet](findmeetingtimes-example.md). The [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) function considers the free/busy status of the attendees, and any preferred rooms, time, and other constraints you provide. If the first try doesn't return a common meeting time, check the reason, adjust your criteria and call **findMeetingTimes** again.<sup>**</sup>
 
 ### Teleconference across multiple locations and time zones
 
@@ -71,12 +70,12 @@ With globalization, today's business meetings often involve attendees participat
 
 ### Build apps with location awareness and provide intelligent context (preview)
 
-Use the [places API](/graph/api/resources/place?view=graph-rest-beta) to help a user navigate to a place, or provide an intelligent solution based on the user's location. The following are some examples of such applications:
+Use the [places API](/graph/api/resources/place?view=graph-rest-beta) to help users navigate to a place, or provide an intelligent solution based on the user's location. The following are some example scenarios:
 
-- ** Incorporate place details in calendar events to help users navigate their day and enhance productivity. 
-- ** Catering applications can use the places API to assist venue navigation and set up.
-- ** Automate emailing pre-meeting details to attendees and include a map on how to get to a room. 
-- ** Set up reception bot assistants to provide information about specific rooms in a building. 
+- Incorporate place details in calendar events to help users navigate their day and enhance productivity.<sup>**</sup>
+- Catering applications can use the places API to assist venue navigation and set up.<sup>**</sup>
+- Automate emailing pre-meeting details to attendees and include a map on how to get to a room.<sup>**</sup>
+- Set up reception bot assistants to provide information about specific rooms in a building.<sup>**</sup> 
 
 Depending on your app scenario, you can use the places API within the context of Outlook, or independent of Outlook.
 
