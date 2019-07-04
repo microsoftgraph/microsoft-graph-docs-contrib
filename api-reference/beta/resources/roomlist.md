@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a group of rooms created by the company.
+Represents a group of [room](room.md) objects defined in the tenant.
 
 Derived from [place](place.md).
 
@@ -19,8 +19,8 @@ Derived from [place](place.md).
 
 | Method                              | Return Type                  | Description |
 |:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | [place](place.md) collection | Retrieve a list of place objects. |
-| [Get place](../api/place-get.md)    | [place](place.md)            | Retrieve the properties and relationships of a place object. |
+| [List places](../api/place-list.md) | [place](place.md) collection | Get a collection of all the **place** objects or the specified type of **place** object defined in the tenant. For example, you can get all the rooms and room lists, only rooms, only room lists, or only rooms in a specific room list in the tenant. |
+| [Get place](../api/place-get.md)    | [place](place.md)            | Get the properties and relationships of a **place** object, such as a room list. |
 
 ## Properties
 

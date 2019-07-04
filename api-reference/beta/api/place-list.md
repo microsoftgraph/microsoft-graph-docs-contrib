@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of all the [place](../resources/place.md) objects or the specified type of **place** object defined in the tenant.
+Get a collection of all the [place](../resources/place.md) objects or the specified type of **place** object defined in the tenant. For example, you can get all the rooms and room lists, only rooms, only room lists, or only rooms in a specific room list in the tenant.
 
 A **place** object can be one of the following types:
 
@@ -19,8 +19,6 @@ A **place** object can be one of the following types:
 * A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of room instances in the room list. 
 
 Both **room** and **roomList** are derived from the **place** object.
-
-You can get only rooms, only room lists, or only rooms in a specific room list in the tenant.
 
 Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
 
@@ -80,8 +78,7 @@ GET https://graph.microsoft.com/beta/places
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -130,7 +127,7 @@ Content-type: application/json
       "displayDevice": "surface hub"
     },
     {
-      "@odata.type": "microsoft.graph.roomlist",
+      "@odata.type": "microsoft.graph.roomList",
       "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
       "displayName": "Building 32",
       "address": {
@@ -166,8 +163,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -183,7 +179,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.roomlist",
+      "@odata.type": "microsoft.graph.roomList",
       "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
       "displayName": "Building 32",
       "address": {
@@ -219,8 +215,7 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist('id-of-room
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

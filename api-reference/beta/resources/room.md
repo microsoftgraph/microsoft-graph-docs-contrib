@@ -13,16 +13,14 @@ doc_type: "resourcePageType"
 
 Represents a room in a tenant. 
 
-In Exchange Online, each room is associated with a room mailbox.
-
-Derived from [place](place.md).
+In Exchange Online, each room is associated with a room mailbox. Derived from [place](place.md).
 
 ## Methods
 
 | Method                              | Return Type                  | Description |
 |:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | [place](place.md) collection | Retrieve a list of place objects. |
-| [Get place](../api/place-get.md)    | [place](place.md)            | Retrieve the properties and relationships of a place object. |
+| [List places](../api/place-list.md) | [place](place.md) collection | Get a collection of all the **place** objects or the specified type of **place** object defined in the tenant. For example, you can get all the rooms and room lists, only rooms, only room lists, or only rooms in a specific room list in the tenant. |
+| [Get place](../api/place-get.md)    | [place](place.md)            | Get the properties and relationships of a **place** object, such as a room. |
 
 ## Properties
 
@@ -37,13 +35,13 @@ Derived from [place](place.md).
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
 | emailAddress           | String                                            | Email address of the room. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
-| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and (optionally) altitude coordinates. |
+| geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
 | id                     | String                                            | Unique identifier for the room. Read-only. |
 | isWheelchairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
-| label                  | String                                            | Specifies a descriptive label for the room (for example, a number or name). |
-| nickname               | String                                            | Specifies a nickname for the room (for example, conf room). |
+| label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
+| nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
 | phone                  | String                                            | The phone number of the room. |
-| tags                   | String collection                                 | Specifies additional features of the room (for example, details like the type of view or furniture type). |
+| tags                   | String collection                                 | Specifies additional features of the room, for example, details like the type of view or furniture type. |
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
 
 ### bookingType values
@@ -56,7 +54,7 @@ Derived from [place](place.md).
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
