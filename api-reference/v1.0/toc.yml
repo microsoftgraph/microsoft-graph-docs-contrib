@@ -114,35 +114,35 @@
   - name: Use the toolkit (preview)
     items:
       - name: Toolkit overview
-        href: toolkit/overview.md
+        href: /graph/toolkit/overview?context=graph/api/1.0
       - name: Components
         items:
           - name: Login
-            href: toolkit/components/login.md
+            href: /graph/toolkit/components/login?context=graph/api/1.0
           - name: Person
-            href: toolkit/components/person.md
+            href: /graph/toolkit/components/person?context=graph/api/1.0
           - name: People
-            href: toolkit/components/people.md
+            href: /graph/toolkit/components/people?context=graph/api/1.0
           - name: Agenda
-            href: toolkit/components/agenda.md
+            href: /graph/toolkit/components/agenda?context=graph/api/1.0
           - name: Tasks
-            href: toolkit/components/tasks.md
+            href: /graph/toolkit/components/tasks?context=graph/api/1.0
       - name: Providers
         items:
           - name: Using the providers
-            href: toolkit/providers.md
+            href: /graph/toolkit/providers?context=graph/api/1.0
           - name: Msal provider
-            href: toolkit/providers/msal.md
+            href: /graph/toolkit/providers/msal?context=graph/api/1.0
           - name: SharePoint provider
-            href: toolkit/providers/sharepoint.md
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
           - name: Microsoft Teams provider
-            href: toolkit/providers/teams.md
+            href: /graph/toolkit/providers/teams?context=graph/api/1.0
           - name: Custom provider
-            href: toolkit/providers/custom.md
+            href: /graph/toolkit/providers/custom?context=graph/api/1.0
       - name: Styling components
-        href: toolkit/style.md
+        href: /graph/toolkit/style?context=graph/api/1.0
       - name: Templating components
-        href: toolkit/templates.md
+        href: /graph/toolkit/templates?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
