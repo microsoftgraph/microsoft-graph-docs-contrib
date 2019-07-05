@@ -7869,6 +7869,13 @@
             href: api/unfamiliarlocationriskevent-list.md
           - name: Get unfamiliarLocationRiskEvent
             href: api/unfamiliarlocationriskevent-get.md
+        - name: Risk detection
+          href: resources/riskdetection.md
+          items:
+            - name: List risk detections
+              href: api/riskdetection-list.md
+            - name: Get risk detection
+              href: api/riskdetection-get.md
         - name: Risky user
           href: resources/riskyuser.md
           items:
@@ -7882,13 +7889,6 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
-      - name: Risk detection
-        href: resources/riskdetection.md
-        items:
-          - name: List risk detections
-            href: api/riskdetection-list.md
-          - name: Get risk detection
-            href: api/riskdetection-get.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
