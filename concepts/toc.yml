@@ -12,6 +12,12 @@
       href: overview.md
     - name: Services in Microsoft Graph
       href: overview-major-services.md
+    - name: What's new
+      items:
+      - name: What's new highlights
+        href: whats-new-overview.md
+      - name: API changelog
+        href: changelog.md
     - name: Users you can reach
       items:
       - name: Overview
@@ -224,7 +230,7 @@
     - name: Sites and lists
       href: sharepoint-concept-overview.md
       displayName: SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal
-    - name: Social intelligence
+    - name: Social and workplace intelligence
       items:
       - name: Overview
         href: social-intel-concept-overview.md
@@ -410,7 +416,7 @@
         href: best-practices-concept.md
       - name: Known issues
         href: known-issues.md
-      - name: Changelog
+      - name: API changelog
         href: changelog.md
       - name: Errors
         href: errors.md
