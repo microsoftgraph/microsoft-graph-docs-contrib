@@ -1,6 +1,6 @@
 ---
 title: "activityStatistics resource type"
-description: "Time spent by users on work activities, including email, meetings, focus work, chats, and calls."
+description: "Represents time spent by users on work activities, including email, meetings, focus work, chats, and calls."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,15 +11,15 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Analytics API includes the activityStatistics resource type. This resource gets information about how users spent their time on various work activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day.
+Represents time spent by users on various work activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day.
 
-The type of activities include meetings, emails, chats (instant messages), calls, and focus work. You can specify the startDate and endDate. If you don’t specify a time range, activity statistics are returned for the last seven days by default.
+The type of activities include meetings, emails, chats (instant messages), calls, and focus work. You can specify the **startDate** and **endDate**. If you don’t specify a time range, activity statistics are returned for the last seven days by default.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Gets the properties for the activity statistics for the specified time range. Or if no time range is specified, it gets the last seven days by default.|
+| [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Get the properties for the activity statistics for the specified time range. If no time range is specified, it gets the last seven days by default.|
 
 ## Properties
 
@@ -49,10 +49,10 @@ The following is a JSON representation of the resource.
 ```json
 {
   "activity": "string",
-  "duration": "String (timestamp)",
-  "endDate": "String (timestamp)",
+  "duration": "String (ISO 8601 duration)",
+  "endDate": "String (ISO 8601 duration)",
   "id": "String (identifier)",
-  "startDate": "String (timestamp)",
+  "startDate": "String (ISO 8601 duration)",
   "timeZoneUsed": "String"
 }
 ```

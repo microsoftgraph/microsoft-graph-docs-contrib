@@ -51,11 +51,11 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 ## Examples
 
-### GET activity statistics of a user
+### Example 1: Get activity statistics of a user
 
 #### Request
 
-The following are two examples of a request that gets activity statistics of a user.
+The following two examples show a request to get user activity statistics for a specific day and activity.
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"
@@ -77,7 +77,7 @@ The following is an example of the response that gets activity statistics of a u
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.activityStatistics"
+  "@odata.type": "microsoft.graph.analytics.activityStatistics"
 } -->
 
 ```http
@@ -482,7 +482,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### GET activity statistics of a user for a specific day and activity
+### Example 2: Get activity statistics of a user for a specific day and activity
 
 #### Request
 
