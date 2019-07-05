@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "Duration": "String (timestamp)"
+  "Duration": "String (ISO 8601 duration)"
   }
 ```
 

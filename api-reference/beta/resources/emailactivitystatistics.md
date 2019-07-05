@@ -36,9 +36,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "afterHours": "String (timestamp)",
-  "readEmail": "String (timestamp)",
-  "sentEmail": "String (timestamp)"
+  "afterHours": "String (ISO 8601 duration)",
+  "readEmail": "String (ISO 8601 duration)",
+  "sentEmail": "String (ISO 8601 duration)"
 }
 ```
 
