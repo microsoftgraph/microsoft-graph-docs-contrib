@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/act
 
 #### Response
 
-The following is an example of the response that gets activity statistics of a user for all activities for the last seven days. This example only shows the first and last of the seven days to shorten it for readability.
+The following is an example of the response that gets activity statistics of a user for all activities for the last seven days. However, the following response only shows the first and last of the seven days to shorten it for readability.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
