@@ -31,10 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 ```
 
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
-
 ## Request headers
 
 | Name      |Description|
@@ -77,7 +73,7 @@ The following is an example of the response that gets activity statistics of a u
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.analytics.activityStatistics"
+  "@odata.type": "microsoft.graph.activityStatistics"
 } -->
 
 ```http
@@ -495,7 +491,7 @@ The following are two examples of a request of a user for a specific day and act
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics('email_2019-06-16_2019-06-17')
 
-GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/activitystatistics('email_2019-06-16_2019-06-17')
+GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/activitystatistics/email_2019-06-16_2019-06-17
 
 ```
 
@@ -508,7 +504,7 @@ The following is an example of the response that gets activity statistics of a u
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.analytics.activityStatistics"
+  "@odata.type": "microsoft.graph.activityStatistics"
 } -->
 
 ```http

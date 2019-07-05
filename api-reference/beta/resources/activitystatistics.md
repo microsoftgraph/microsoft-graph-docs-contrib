@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.analytics.activityStatistics",
+  "@odata.type": "microsoft.graph.activityStatistics",
   "baseType": "",
   "keyProperty": "id"
 }-->
