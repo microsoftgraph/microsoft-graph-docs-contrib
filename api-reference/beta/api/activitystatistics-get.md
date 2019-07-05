@@ -489,7 +489,7 @@ The following are two examples of a request of a user for a specific day and act
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/activitystatistics('email_2019-06-16_2019-06-17')
+GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-06-16_2019-06-17
 
 GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/activitystatistics/email_2019-06-16_2019-06-17
 
