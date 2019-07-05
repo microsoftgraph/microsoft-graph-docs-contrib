@@ -10,8 +10,8 @@ author: nmetulev
 The Microsoft Graph Toolkit is a collection of framework-agnostic web components and helpers for accessing and working with Microsoft Graph. All components can access Microsoft Graph without any customization required.
 
 > [!VIDEO https://www.youtube.com/watch?v=oZCGb2MMxa0]
-     
->**Note:** This library is in preview and is in early development. We expect to make changes and improvements to all components and APIs based on feedback from the community.
+
+**Note:** This library is in preview and is in early development. We expect to make changes and improvements to all components and APIs based on feedback from the community.
 
 ## Get started
 
