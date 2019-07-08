@@ -63,6 +63,8 @@
         href: /graph/extensibility-open-users?context=graph/api/1.0
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/1.0
+    - name: Use Postman
+      href: /graph/use-postman?context=graph/api/1.0
   - name: Migrate
     expanded: false
     items:
@@ -109,6 +111,38 @@
         href: /graph/sdks/create-client?context=graph/api/1.0
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
+  - name: Use the toolkit (preview)
+    items:
+      - name: Toolkit overview
+        href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Components
+        items:
+          - name: Login
+            href: /graph/toolkit/components/login?context=graph/api/1.0
+          - name: Person
+            href: /graph/toolkit/components/person?context=graph/api/1.0
+          - name: People
+            href: /graph/toolkit/components/people?context=graph/api/1.0
+          - name: Agenda
+            href: /graph/toolkit/components/agenda?context=graph/api/1.0
+          - name: Tasks
+            href: /graph/toolkit/components/tasks?context=graph/api/1.0
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph/toolkit/providers?context=graph/api/1.0
+          - name: Msal provider
+            href: /graph/toolkit/providers/msal?context=graph/api/1.0
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+          - name: Microsoft Teams provider
+            href: /graph/toolkit/providers/teams?context=graph/api/1.0
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/1.0
+      - name: Styling components
+        href: /graph/toolkit/style?context=graph/api/1.0
+      - name: Templating components
+        href: /graph/toolkit/templates?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
