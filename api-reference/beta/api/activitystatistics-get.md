@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/act
 
 #### Response
 
-The following is an example of the response that gets activity statistics of a user for all activities for the last seven days. However, the following response only shows the first and last day of the last complete week to shorten it for readability.
+The following is an example of the response that gets activity statistics of a user for all activities for the last complete week. However, the following response only shows the first day's activities to shorten it for readability.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -134,74 +134,6 @@ HTTP/1.1 200 OK
             "startDate": "2019-06-16",
             "endDate": "2019-06-17",
             "id": "call_2019-06-16_2019-06-17",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S",
-            "afterHours": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.emailActivityStatistics",
-            "activity": "Email",
-            "startDate": "2019-06-17",
-            "endDate": "2019-06-18",
-            "id": "email_2019-06-17_2019-06-18",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S",
-            "afterHours": "PT0S",
-            "readEmail": "PT0S",
-            "sentEmail": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.emailActivityStatistics",
-            "activity": "Email",
-            "startDate": "2019-06-22",
-            "endDate": "2019-06-23",
-            "id": "email_2019-06-22_2019-06-23",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S",
-            "afterHours": "PT0S",
-            "readEmail": "PT0S",
-            "sentEmail": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.focusActivityStatistics",
-            "activity": "Focus",
-            "startDate": "2019-06-22",
-            "endDate": "2019-06-23",
-            "id": "focus_2019-06-22_2019-06-23",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.meetingActivityStatistics",
-            "activity": "Meeting",
-            "startDate": "2019-06-22",
-            "endDate": "2019-06-23",
-            "id": "meeting_2019-06-22_2019-06-23",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S",
-            "afterHours": "PT0S",
-            "organized": "PT0S",
-            "recurring": "PT0S",
-            "long": "PT0S",
-            "conflicting": "PT0S",
-            "multitasking": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.chatActivityStatistics",
-            "activity": "Chat",
-            "startDate": "2019-06-22",
-            "endDate": "2019-06-23",
-            "id": "chat_2019-06-22_2019-06-23",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S",
-            "afterHours": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.callActivityStatistics",
-            "activity": "Call",
-            "startDate": "2019-06-22",
-            "endDate": "2019-06-23",
-            "id": "call_2019-06-22_2019-06-23",
             "timeZoneUsed": "Pacific Standard Time",
             "duration": "PT0S",
             "afterHours": "PT0S"
