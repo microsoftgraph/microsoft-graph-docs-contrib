@@ -1,6 +1,6 @@
 ---
 title: "settings resource type"
-description: "Gets the current settings for a user as applicable for the Analytics API."
+description: "Get the current settings for a user as applicable for the Analytics API."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The Analytics API includes the settings resource type. This resource gets the current settings for a user as applicable for the Analytics API. For the Analytics API to return results for users, they must have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+Get the current settings for a user as applicable for the Analytics API. For the Analytics API to return results for users, they must have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
 
 ## Permissions
 

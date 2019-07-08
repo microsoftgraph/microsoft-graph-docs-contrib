@@ -13,13 +13,13 @@ doc_type: "resourcePageType"
 
 Represents time spent by users on various work activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day.
 
-The type of activities include meetings, emails, chats (instant messages), calls, and focus work. You can specify the **startDate** and **endDate**. If you don’t specify a time range, activity statistics are returned for the last seven days by default.
+The type of activities include meetings, emails, chats (instant messages), calls, and focus work. You can specify the **startDate** and **endDate**. If you don’t specify a time range, activity statistics are returned for the last complete week by default.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Get the properties for the activity statistics for the specified time range. If no time range is specified, it gets the last seven days by default.|
+| [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Get the properties for the activity statistics for the specified time range. If no time range is specified, it gets the last complete week by default.|
 
 ## Properties
 

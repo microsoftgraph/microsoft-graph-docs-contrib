@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 #### Request
 
-The following two examples show a request to get user activity statistics for all activities for a week and then for a specific day and activity.
+The following two examples show a request to get user activity statistics for all activities for the last complete week and then for a specific day and activity.
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/act
 
 #### Response
 
-The following is an example of the response that gets activity statistics of a user for all activities for the last seven days. However, the following response only shows the first and last of the seven days to shorten it for readability.
+The following is an example of the response that gets activity statistics of a user for all activities for the last seven days. However, the following response only shows the first and last day of the last complete week to shorten it for readability.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -243,7 +243,7 @@ The following is an example of the response that gets activity statistics of a u
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testmya2/$metadata#activitystatistics/$entity",
+    "@odata.context": "https://graph.microsoft.com/testmya2/$metadata#activitystatistics/$entity",
     "@odata.type": "#microsoft.graph.emailActivityStatistics",
     "activity": "Email",
     "startDate": "2019-06-16",
