@@ -844,3 +844,51 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+
+### contentFormat
+
+| Member | Value | Description          |
+| :----- | :---- | :------------------- |
+| file   | 0     | Content is a file.   |
+| email  | 1     | Content is an email. |
+
+### contentState
+
+| Member | Value | Description                                                                      |
+| :----- | :---- | :------------------------------------------------------------------------------- |
+| rest   | 0     | Data is at rest; A file in a share, for example.                                 |
+| motion | 1     | Data is in motion. A file intercepted by a network appliance in transit.         |
+| use    | 2     | Data is in use. A file is open in a client application such as Microsoft Office. |
+
+### assignmentMethod
+
+| Member     | Value | Description                                                                                                                      |
+| :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
+| standard   | 0     | The label was set by a service or policy condition.                                                                              |
+| privileged | 1     | The label was set explicitly by a user.                                                                                          |
+| auto       | 2     | Allows override of any existing label. Justification required on downgrade. Results in `standard` assignment method in metadata. |
+
+### actionSource
+
+| Member        | Value | Description                                                  |
+| :------------ | :---- | :----------------------------------------------------------- |
+| manual        | 0     | A user manually selected the label.                          |
+| automatic     | 1     | The label was chosen as a result of policy conditions.       |
+| recommended   | 2     | The elected to apply a recommended label.                    |
+| policyDefault | 3     | The user no action and the policy-default label was applied. |
+| mandatory     | 4     | The user chose a label after being forced to choose.         |
+
+### contentAlignment
+
+| Member | Value | Description                         |
+| :----- | :---- | :---------------------------------- |
+| left   | 0     | Align content marking to the left.  |
+| right  | 1     | Align content marking to the right. |
+| center | 2     | Center content marking.             |
+
+### watermarkLayout
+
+| Member     | Value | Description                 |
+| :--------- | :---- | :-------------------------- |
+| horizontal | 0     | Use a horizontal watermark. |
+| diagonal   | 1     | Use a diagonal watermark.   |
