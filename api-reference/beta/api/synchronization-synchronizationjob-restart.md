@@ -60,7 +60,7 @@ Content-type: application/json
 
 {
    "criteria": {
-       "resetScope": "ConnectorDataStore, Escrows, QuarantineState"
+       "resetScope": "Watermark, Escrows, QuarantineState"
    }
 }
 ```
