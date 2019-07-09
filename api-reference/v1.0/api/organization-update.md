@@ -27,15 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 PATCH /organization/{id}
-
 ```
 
 ## Request headers
 
-| Name       | Type | Description|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type   | application/json | |
+| Name       | Description|
+|:-----------|:----------|
+| Authorization  | Bearer {token}. Required. |
+| Content-Type   | application/json |
 
 ## Request body
 
