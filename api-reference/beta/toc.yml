@@ -8965,15 +8965,15 @@
           items:
           - name: Activity statistics
             href: resources/activitystatistics.md
-          - name: Call statistics resource
+          - name: Call statistics
             href: resources/callactivitystatistics.md
-          - name: Chat statistics resource
+          - name: Chat statistics
             href: resources/chatactivitystatistics.md
-          - name: Email statistics resource
+          - name: Email statistics
             href: resources/emailactivitystatistics.md
-          - name: Focus statistics resource
+          - name: Focus statistics
             href: resources/focusactivitystatistics.md          
-          - name: Meeting statistics resource
+          - name: Meeting statistics
             href: resources/meetingactivitystatistics.md
           - name: Get activity statistics
             href: api/activitystatistics-get.md
