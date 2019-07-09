@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [userAnalytics](../resources/useranalytics.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [settings](../resources/settings.md) object in the response body.
 
 ## Examples
 
