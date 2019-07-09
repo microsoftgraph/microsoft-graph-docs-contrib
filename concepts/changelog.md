@@ -13,10 +13,10 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2019
 
-### Directory APIs
+### Identity and access
 |Change type|Version|Description|
 |:---|:---|:---|
-| Addition | v1.0 | Added the [validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) on [groups](/graph/api/group-delta?view=graph-rest-1.0), which validates if an Office 365 group's display name or mail nickname complies with naming policies. |
+| Addition | v1.0 | Added the [group:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) and [directoryobject:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) on [groups](/graph/api/group-delta?view=graph-rest-1.0), which validates that an Office 365 group's display name or mail nickname complies with naming policies. |
 
 ### Microsoft Intune APIs
 |Change type|Version|Description|

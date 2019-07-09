@@ -8,18 +8,23 @@ ms.prod: "microsoft-identity-platform"
 
 # directoryObject: validateProperties
 
-Validate if an Office 365 group's display name or mail nickname complies with naming policies.  Clients can use the API to determine if a display name or mail nickname is valid before trying to **create** an Office 365 group. For validating properties of an existing group, use the [validateProperties function](group-validateproperties.md) for groups.
+Validate that an Office 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to [create](group-post-groups.md) an Office 365 group. To validate the properties of an existing group, use the [group: validateProperties](group-validateproperties.md) function.
 
-The following validations are performed for the display name and mail nickname properties: 
+The following policy validations are performed for the display name and mail nickname properties: 
 1. Validate the prefix and suffix naming policy
 2. Validate the custom banned words policy
-3. Validate the mail nickname is unique
+3. Validate that the mail nickname is unique
 
-This API returns with the first failure encountered. If one or more properties fail multiple validations, only the property with the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
-## Prerequisites
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-The following **permission** is required to execute this API: *Group.Read.All*
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -39,10 +44,10 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type   |Description|
 |:---------------|:--------|:----------|
-|entityType|String| `Group` is the only supported entity type. |
-|displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
-|mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
-|onBehalfOfUserId|Guid| The object ID of the user to impersonate when calling the API. The validation results are for the onBehalfOfUserId's attributes and roles. |
+|entityType|String| Group is the only supported entity type. |
+|displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
+|mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
+|onBehalfOfUserId|Guid| The object ID of the user to impersonate when calling the API. The validation results are for the **onBehalfOfUserId's** attributes and roles. |
 
 ## Response
 
@@ -54,9 +59,10 @@ If there is a validation error, the method returns `422 Unprocessable Entity` re
 
 ## Examples
 
+### Example 1: Successful validation request
 This is an example of a successful validation request.
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -90,7 +96,7 @@ Content-length: 164
 ---
 
 
-### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -99,9 +105,11 @@ Content-length: 164
 HTTP/1.1 204 No Content
 ```
 
+
+### Example 2: Request with validation errors
 This is an example of a request with validation errors.
 
-### Request
+#### Request
 ```http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
@@ -115,7 +123,7 @@ Content-length: 164
 }
 ```
 
-### Response
+#### Response
 ```http
 HTTP/1.1 422 
 Content-Type: application/json

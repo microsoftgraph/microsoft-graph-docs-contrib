@@ -8,13 +8,13 @@ ms.prod: "groups"
 
 # group: validateProperties
 
-Validate if an Office 365 group's display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group. For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.
+Validate that an Office 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to [update](group-update.md) an Office 365 group. To validate the properties before creating a group, use the [directoryobject:validateProperties](directoryobject-validateproperties.md) function.
 
-The following validations are performed for the display name and mail nickname properties: 
+The following policy validations are performed for the display name and mail nickname properties: 
 1. Validate the prefix and suffix naming policy
 2. Validate the custom banned words policy
 
-This API returns with the first failure encountered. If one or more properties fail multiple validations, only the property with the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ## Permissions
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ``` http
-POST /groups/<id>/validateProperties
+POST /groups/{id}/validateProperties
 ```
 
 ## Request headers
@@ -45,9 +45,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type   |Description|
 |:---------------|:--------|:----------|
-|displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
-|mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (displayName or mailNickname) is required. |
-|onBehalfOfUserId|Guid| The object ID of the user to impersonate when calling the API. The validation results are for the onBehalfOfUserId's attributes and roles. |
+|displayName|String| The display name of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
+|mailNickname|String| The mail nickname of the group to validate. The property is not individually required. However, at least one property (**displayName** or **mailNickname**) is required. |
+|onBehalfOfUserId|Guid| The object ID of the user to impersonate when calling the API. The validation results are for the **onBehalfOfUserId's** attributes and roles. |
 
 ## Response
 If successful and there are no validation errors, the method returns `204 No Content` response code. It does not return anything in the response body.
@@ -58,9 +58,10 @@ If there is a validation error. The method returns `422 Unprocessable Entity` re
 
 ## Examples
 
+### Example 1: Successful validation request
 This is an example of a successful validation request.
 
-### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +94,7 @@ Content-length: 132
 ---
 
 
-### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,9 +103,10 @@ Content-length: 132
 HTTP/1.1 204 No Content
 ```
 
+### Example 2: Request with validation errors
 This is an example of a request with validation errors.
 
-### Request
+#### Request
 ``` http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
@@ -116,7 +118,7 @@ Content-length: 128
 }
 ```
 
-### Response
+#### Response
 ```http
 HTTP/1.1 422
 Content-type: application/json
