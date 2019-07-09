@@ -175,7 +175,7 @@ The following is an example of the response that gets activity statistics of a u
 HTTP/1.1 200 OK
 
 {
-    "@odata.context": "https://graph.microsoft.com/testmya2/$metadata#activitystatistics/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#activitystatistics/$entity",
     "@odata.type": "#microsoft.graph.emailActivityStatistics",
     "activity": "Email",
     "startDate": "2019-06-16",
