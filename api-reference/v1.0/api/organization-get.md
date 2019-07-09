@@ -4,11 +4,12 @@ description: "Retrieve the properties and relationships of currently authenticat
 localization_priority: Priority
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # Get organization
 
-Retrieve the properties and relationships of currently authenticated organization.
+Get the properties and relationships of currently authenticated organization.
 
 ## Permissions
 
@@ -16,11 +17,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
+|Delegated (work or school account) | User.Read, Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+|Application | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
-> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Directory.Read.All.
+> Note: Applications granted the User.Read permission are able to read only the *id*, *displayName*, and *verifiedDomains* properties of the organization.  All other properties will return with `null` values. To read all properties, use Organization.Read.All.
 
 ## HTTP request
 
@@ -39,6 +40,8 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {token}. Required. |
+| Content-Type   | application/json | |
+
 
 ## Request body
 
