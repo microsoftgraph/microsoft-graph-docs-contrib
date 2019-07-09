@@ -1,6 +1,6 @@
 ---
 title: "settings resource type"
-description: "Get the current settings for a user as applicable for the Analytics API."
+description: "Retrieve the current settings for a user as applicable for the Analytics API."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the current settings for a user as applicable for the Analytics API. For the Analytics API to return results for users, they must have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+Retrieve the current settings for a user as applicable for the Analytics API. For the Analytics API to return results for users, they must have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
 
 ## Permissions
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| Get | settings | Gets the following property settings for a user.|
+[Get settings](../api/settings-get.md) | [settings](settings.md) | Get the following property settings for a user.|
 
 ## Properties
 

@@ -11,12 +11,18 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the following additional details about Teams or Skype for Business call activities for users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in the Properties section for [activityStatistics](../resources/activitystatistics.md).
+Represents data about the user's time spent in call activities on Microsoft Teams or Skype for Business. This is based on [activityStatistics](../resources/activitystatistics.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|activity|analyticsActivityType| Call activity for which statistics are returned.|
+|duration|Duration|Total hours spent on calls.|
+|endDate|Date|Date when the call activity ended.|
+|id|String| Read-only ID for the call activity.|
+|startDate|Date|Date when the call activity started.|
+|timeZoneUsed|String|The time zone used for the computation.|
 |afterHours|Duration|Time spent on calls outside of working hours.|
 
 ## JSON representation
@@ -28,12 +34,18 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.analytics.callActivityStatistics",
+  "@odata.type": "microsoft.graph.callActivityStatistics",
   "baseType": ""
 }--> 
 
 ```json
 {
+  "activity": "string",
+  "duration": "String (ISO 8601 duration)",
+  "endDate": "String (ISO 8601 duration)",
+  "id": "String (identifier)",
+  "startDate": "String (ISO 8601 duration)",
+  "timeZoneUsed": "String",
   "afterHours": "String (ISO 8601 duration)"
 }
 ```

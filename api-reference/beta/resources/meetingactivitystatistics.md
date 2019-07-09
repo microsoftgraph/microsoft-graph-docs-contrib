@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the following additional details about meeting activities for users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in the Properties section for  [activityStatistics](../resources/activitystatistics.md).
+Represents data about the user's time spent in meetings in Microsoft Outlook, Microsoft Teams, or Skype for Business. This is based on [activityStatistics](../resources/activitystatistics.md).
 <!--
 ## Methods
 
@@ -23,6 +23,12 @@ Represents the following additional details about meeting activities for users. 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|activity|analyticsActivityType| Meeting activity for which statistics are returned.|
+|duration|Duration|Total hours spent on meetings.|
+|endDate|Date|Date when the meeting activity ended.|
+|id|String| Read-only ID for the meeting activity.|
+|startDate|Date|Date when the meeting activity started.|
+|timeZoneUsed|String|The time zone used for the computation.|
 |afterHours|Duration|Time spent on meetings outside of working hours.|
 |conflicting|Duration|Time spent in conflicting meetings (meetings that overlap with other meetings that the person accepted and where the person’s status is set to Busy).|
 |long|Duration|Time spent in long meetings (more than an hour in duration).|
@@ -43,12 +49,18 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.analytics.meetingActivityStatistics",
+  "@odata.type": "microsoft.graph.meetingActivityStatistics",
   "baseType": ""
 }--> 
 
 ```json
 {
+  "activity": "string",
+  "duration": "String (ISO 8601 duration)",
+  "endDate": "String (ISO 8601 duration)",
+  "id": "String (identifier)",
+  "startDate": "String (ISO 8601 duration)",
+  "timeZoneUsed": "String",
   "afterHours": "String (ISO 8601 duration)",
   "conflicting": "String (ISO 8601 duration)",
   "long": "String (ISO 8601 duration)",

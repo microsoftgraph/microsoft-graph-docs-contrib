@@ -11,11 +11,18 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the information about individual focus work for users. Focus work activities include the standard activity properties pulled for all activities, such as startDate and endDate, which are described in the Properties section for [activityStatistics](../resources/activitystatistics.md).
+Represents data about the user's time available for focus work. This is based on [activityStatistics](../resources/activitystatistics.md).
 
 ## Properties
 
-There are no additional properties for focus work activities. However, the duration for focus is the total hours available for individual focus work, which is equal to working hours minus collaboration hours (time spent on calls, chats, email, and meetings).
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|activity|analyticsActivityType| Focus activity for which statistics are returned.|
+|duration|Duration|Total hours available for individual focus work, which is equal to working hours minus collaboration hours (time spent on calls, chats, email, and meetings).|
+|endDate|Date|Date when the focus activity ended.|
+|id|String| Read-only ID for the focus activity.|
+|startDate|Date|Date when the focus activity started.|
+|timeZoneUsed|String|The time zone used for the computation.|
 
 ## JSON representation
 
@@ -26,13 +33,18 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.analytics.focusActivityStatistics",
+  "@odata.type": "microsoft.graph.focusActivityStatistics",
   "baseType": ""
 }--> 
 
 ```json
 {
-  "Duration": "String (ISO 8601 duration)"
+  "activity": "string",
+  "duration": "String (ISO 8601 duration)",
+  "endDate": "String (ISO 8601 duration)",
+  "id": "String (identifier)",
+  "startDate": "String (ISO 8601 duration)",
+  "timeZoneUsed": "String"
   }
 ```
 

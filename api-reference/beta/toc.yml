@@ -8954,22 +8954,27 @@
           - name: List shared
             href: api/insights-list-shared.md
       - name: Analytics
-        href: resources/activitystatistics.md
         items:
-        - name: Get activityStatistics
-          href: api/activitystatistics-get.md       
-        - name: Call activities
-          href: resources/callactivitystatistics.md
-        - name: Chat activities
-          href: resources/chatactivitystatistics.md
-        - name: Email activities
-          href: resources/emailactivitystatistics.md
-        - name: Focus activities
-          href: resources/focusactivitystatistics.md          
-        - name: Meeting activities
-          href: resources/meetingactivitystatistics.md
-        - name: Settings
+        - name: User analytics settings
           href: resources/settings.md
+        - name: Activity statistics
+          items:
+          - name: Activity statistics
+            href: resources/activitystatistics.md
+          - name: Call statistics resource
+            href: resources/callactivitystatistics.md
+          - name: Chat statistics resource
+            href: resources/chatactivitystatistics.md
+          - name: Email statistics resource
+            href: resources/emailactivitystatistics.md
+          - name: Focus statistics resource
+            href: resources/focusactivitystatistics.md          
+          - name: Meeting statistics resource
+            href: resources/meetingactivitystatistics.md
+          - name: Get activity statistics
+            href: api/activitystatistics-get.md
+          - name: Get settings
+            href: api/settings-get.md
       - name: Mention
         href: resources/mention.md
     - name: Tasks and plans
