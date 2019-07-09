@@ -33,9 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hasGraphMailbox|Boolean|Is the user's primary mailbox hosted in the cloud and is it graph-enabled?|
-|hasLicense|Boolean|Does the user have a MyAnalytics license assigned?|
-|hasOptedOut|Boolean|Has the user opted out of MyAnalytics?|
+|hasGraphMailbox|Boolean|Specifies if the user's primary mailbox is hosted in the cloud and is graph-enabled.|
+|hasLicense|Boolean|Specifies if the user has a MyAnalytics license assigned.|
+|hasOptedOut|Boolean|Specifies if the user opted out of MyAnalytics.|
 
 ## JSON representation
 

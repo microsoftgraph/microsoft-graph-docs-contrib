@@ -11,7 +11,8 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the following additional information about email activities for users. These are in addition to the standard activity properties pulled for all activities, such as startDate and endDate, which are described in [activityStatistics Properties](../resources/activitystatistics.md).
+Represents data about the user's time spent in call activities on Microsoft Teams or Skype for Business.
+This is based on [activityStatistics](../resources/activitystatistics.md).
 
 ## Properties
 
@@ -32,7 +33,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.analytics.emailActivityStatistics",
   "baseType": ""
-}-->
+}--> 
 
 ```json
 {

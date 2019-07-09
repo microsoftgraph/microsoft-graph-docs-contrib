@@ -13,7 +13,7 @@ doc_type: "resourcePageType"
 
 Represents time spent by users on various work activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day.
 
-The type of activities include meetings, emails, chats (instant messages), calls, and focus work. You can specify the **startDate** and **endDate**. If you don’t specify a time range, activity statistics are returned for the last complete week by default.
+The type of activities include meetings, emails, chats (instant messages), calls, and focus work. You can specify the **startDate**, **endDate**, and **activity** to get data about a specific activity, for a specific day. If you don’t specify a time range or activity, activity statistics are returned for all activities, for the last complete week by default.
 
 ## Methods
 
