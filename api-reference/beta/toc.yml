@@ -8956,7 +8956,11 @@
       - name: Analytics
         items:
         - name: User analytics settings
-          href: resources/settings.md
+          items:
+          - name: Settings
+            href: resources/settings.md
+          - name: Get settings
+            href: api/settings-get.md
         - name: Activity statistics
           items:
           - name: Activity statistics
@@ -8973,8 +8977,6 @@
             href: resources/meetingactivitystatistics.md
           - name: Get activity statistics
             href: api/activitystatistics-get.md
-          - name: Get settings
-            href: api/settings-get.md
       - name: Mention
         href: resources/mention.md
     - name: Tasks and plans
