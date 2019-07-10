@@ -2,6 +2,7 @@
 title: "stringKeyStringValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is a string."
 localization_priority: Normal
+author: davidmu1
 ---
 
 # stringKeyStringValuePair resource type

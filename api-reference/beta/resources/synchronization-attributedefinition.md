@@ -2,6 +2,7 @@
 title: "attributeDefinition resource type"
 description: "Describes an attribute of an object."
 localization_priority: Normal
+author: davidmu1
 ---
 
 # attributeDefinition resource type

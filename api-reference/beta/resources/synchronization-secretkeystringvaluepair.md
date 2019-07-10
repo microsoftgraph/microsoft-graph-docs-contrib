@@ -2,6 +2,7 @@
 title: "synchronizationSecretKeyStringValuePair resource type"
 description: "Represents a single secret value. "
 localization_priority: Normal
+author: davidmu1
 ---
 
 # synchronizationSecretKeyStringValuePair resource type
