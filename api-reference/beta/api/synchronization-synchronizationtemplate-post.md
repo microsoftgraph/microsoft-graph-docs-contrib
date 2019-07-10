@@ -2,6 +2,8 @@
 title: "Create synchronizationTemplate"
 description: "Create a new synchronization template for a given application."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Create synchronizationTemplate
