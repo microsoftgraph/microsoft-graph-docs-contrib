@@ -46,15 +46,12 @@ For general information, see [OData query parameters](/graph/query_parameters).
 |Attribute name |Supported operators|
 |:----------------|:------|
 |id| eq, contains|
-|activityDateTime| eq, contains|
+|activityDateTime| eq|
 |tenantid|eq, contains|
 |jobid|eq, contains|
 |changeid|eq, contains|
 |cycleid|eq, contains|
 |action|eq, contains|
-|modifiedproperty/DisplayName| eq, contains|
-|modifiedproperty/oldValue| eq, contains|
-|modifiedproperty/newValue| eq, contains|
 |statusInfo/status|eq, contains|
 |sourceSystem/displayName|eq, contains|
 |targetSystem/displayName|eq, contains|
@@ -87,6 +84,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary"
@@ -95,6 +94,20 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -215,6 +228,8 @@ Content-type: application/json
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_provisioningobjectsummary_error"
@@ -223,6 +238,20 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/directoryProvisioning
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-provisioningobjectsummary-error-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-provisioningobjectsummary-error-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-error-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
