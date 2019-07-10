@@ -9,7 +9,7 @@ localization_priority: Priority
 
 Did you know some new features in Microsoft Graph originate as popular requests from the developer community? 
 
-The Microsoft Graph team regularly evaluates customer needs, enhances APIs and development experiences, and releases most new features in the following order:
+The Microsoft Graph team regularly evaluates customer needs, enhances APIs and development experiences, and releases them as new features in the following order:
 
 1. Debut in **_preview_** status. Any related REST API updates are in the beta endpoint (`https://graph.microsoft.com/beta`). Features in preview may change without notice. Do not use them in production apps. 
 
