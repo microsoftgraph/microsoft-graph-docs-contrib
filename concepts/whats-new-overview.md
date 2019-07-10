@@ -7,23 +7,17 @@ localization_priority: Priority
 
 # What's new in Microsoft Graph
 
-Did you know that some new features in Microsoft Graph originate as popular requests from the developer community? 
+Did you know some new features in Microsoft Graph originate as popular requests from the developer community? 
 
-Let's walk through the typical life cycle of a new feature, what's currently new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop).
+The Microsoft Graph team regularly evaluates customer needs, offers better APIs and development experience, and releases them in the following order:
 
-## Life cycle of a feature
+1. Debut in **_preview_** status. Any REST API updates are in the beta endpoint (`https://graph.microsoft.com/beta`). Features in preview may change without notice and must not be used in production apps. 
 
-Microsoft Graph service owners periodically evaluate feature ideas and customer needs, and select new scenarios to support. To build a new feature, they may add or update REST APIs. They may keep the same API syntax and extend feature behavior. Or, they may offer a better learnng or development experience.
+2. Promoted to **_general availability_ (GA)** status, if sufficient feedback indicates viability. Any REST API updates are added to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). You can use features in GA status in production apps.
 
-In most cases, service owners release new features in the following order:
+Let's walk through highlights of what's currently new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For details of API updates, see the [May](changelog.md#may-2019), [June](changelog.md#june-2019), and [July](changelog.md#july-2019) sections of the changelog. 
 
-1. Debut in **_preview_** status, which means the feature behavior may change without notice. The owner exposes any related REST API additions or updates in the beta endpoint (`https://graph.microsoft.com/beta`). Do not use preview features, including their APIs, in production apps.
-
-2. If a service owner receives sufficient feedback and considers the feature viable, the owner promotes the feature to **_general availability_ (GA)** status. The owner adds any related API additions or updates to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`) as well. You can use the feature (including its APIs) in GA status in production apps.
-
-The following sections highlight what's new in May and June, 2019. For details of API updates, see the [May](changelog.md#may-2019) and [June](changelog.md#june-2019) sections of the changelog. 
-
-## New and generally available (released May - June, 2019)
+## New and generally available (released May - July, 2019)
 
 ### Calendar, mail, and personal contacts
 Exchange administrators can grant application permissions to an app and [limit the app to access only a subset of mailboxes in an ](auth-limit-mailbox-access.md), instead of the default which is access to all mailboxes in the organization. Such restricted access would apply to any application permissions granted to the app for [calendars](permissions-reference.md#calendars-permissions), [contacts](permissions-reference.md#contacts-permissions), and [mail and mailbox settings](permissions-reference.md#mail-permissions). See related [blog announcement](https://developer.microsoft.com/en-us/graph/blogs/scoping-microsoft-graph-application-permissions-to-specific-exchange-online-mailboxes/).
@@ -44,7 +38,7 @@ Try the new [tutorial to build a Java console app](/graph/tutorials/java) to get
 Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) all issued refresh tokens for a user. This is usually used to prevent apps on a lost or stolen device from accessing an organization's data.
 
 
-## New in preview (released May - June, 2019)
+## New in preview (released May - July, 2019)
 
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to GA status. Do not use them in production apps.
@@ -52,6 +46,7 @@ Administrators or users can [revoke](/graph/api/user-revokesigninsessions?view=g
 ### Devices and apps
 - Intune [May](changelog.md#may-2019) updates 
 - Intune [June](changelog.md#june-2019) updates
+- Intune [July](changelog.md#july-2019) updates
 
 ### Education
 - Delta query for [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta).
@@ -70,6 +65,9 @@ Use [Mail.ReadBasic permission](permissions-reference.md#mail-permissions) in [m
 
 ### Microsoft Graph toolkit
 The [Microsoft Graph toolkit](/graph/toolkit/overview) is a set of framework-agnostic web components and helpers that provides convenience to authenticate and access data in Microsoft Graph. Because the Microsoft Graph toolkit is in preview status, use toolkit providers and components in only non-production apps.
+
+### Reports
+Get [reports on the authenication methods](/graph/api/resources/authenticationmethods-usage-insights-overview?view=graph-rest-beta) adopted by users in an organization, such as self-service password rest and multi-factor authentication (MFA).
 
 ### Sites
 Let users [follow](/graph/api/site-follow?view=graph-rest-beta) or [unfollow](/graph/api/site-unfollow?view=graph-rest-beta) SharePoint sites.
