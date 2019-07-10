@@ -1,68 +1,70 @@
-  name: Reference
+- name: Reference
   items:
   - name: Overview of Microsoft Graph
-    href: /graph/overview?toc=./toc.json
+    href: /graph/overview
   - name: Get auth tokens
     items:
     - name: Overview
-      href: /graph/auth/index?toc=./ref/toc.json
+      href: /graph/auth/index?context=graph/api/beta
     - name: Basics
-      href: /graph/auth/auth-concepts?toc=./ref/toc.json
+      href: /graph/auth/auth-concepts?context=graph/api/beta
     - name: Register your app
-      href: /graph/auth-register-app-v2?toc=./ref/toc.json
+      href: /graph/auth-register-app-v2?context=graph/api/beta
     - name: Get access on behalf of a user
-      href: /graph/auth-v2-user?toc=./ref/toc.json
+      href: /graph/auth-v2-user?context=graph/api/beta
     - name: Get access without a user
-      href: /graph/auth-v2-service?toc=./ref/toc.json
+      href: /graph/auth-v2-service?context=graph/api/beta
     - name: Permissions
-      href: /graph/permissions-reference?toc=./ref/toc.json
+      href: /graph/permissions-reference?context=graph/api/beta
     - name: Manage app access (CSPs)
-      href: /graph/auth-cloudsolutionprovider?toc=./ref/toc.json
+      href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
     - name: Limit mailbox access
-      href: /graph/auth-limit-mailbox-access?toc=./ref/toc.json
+      href: /graph/auth-limit-mailbox-access?context=graph/api/beta
   - name: Use the API
     items:
     - name: Overview
-      href: /graph/use-the-api?toc=./ref/toc.json
+      href: /graph/use-the-api?context=graph/api/beta
     - name: Paging
-      href: /graph/paging?toc=./ref/toc.json
+      href: /graph/paging?context=graph/api/beta
     - name: Use query parameters
-      href: /graph/query-parameters?toc=./ref/toc.json
+      href: /graph/query-parameters?context=graph/api/beta
     - name: Batch requests
-      href: /graph/json-batching?toc=./ref/toc.json
+      href: /graph/json-batching?context=graph/api/beta
     - name: Throttling
-      href: /graph/throttling?toc=./ref/toc.json
+      href: /graph/throttling?context=graph/api/beta
     - name: Change notifications
       displayname: Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
       items:
       - name: Overview
-        href: /graph/webhooks?toc=./ref/toc.json
+        href: /graph/webhooks?context=graph/api/beta
       - name: Tutorial
         href: /graph/tutorials/change-notifications
       - name: Missing Outlook notifications (preview)
-        href: /graph/webhooks-outlook-authz?toc=./ref/toc.json
+        href: /graph/webhooks-outlook-authz?context=graph/api/beta
     - name: Track changes
       displayname: Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD
       items:
       - name: Overview
-        href: /graph/delta-query-overview?toc=./ref/toc.json
+        href: /graph/delta-query-overview?context=graph/api/beta
       - name: Get changes to events (example)
-        href: /graph/delta-query-events?toc=./ref/toc.json
+        href: /graph/delta-query-events?context=graph/api/beta
       - name: Get changes to groups (example)
-        href: /graph/delta-query-groups?toc=./ref/toc.json
+        href: /graph/delta-query-groups?context=graph/api/beta
       - name: Get changes to messages (example)
-        href: /graph/delta-query-messages?toc=./ref/toc.json
+        href: /graph/delta-query-messages?context=graph/api/beta
       - name: Get changes to users (example)
-        href: /graph/delta-query-users?toc=./ref/toc.json
+        href: /graph/delta-query-users?context=graph/api/beta
     - name: Add custom data
       displayname: Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD
       items:
       - name: Overview
-        href: /graph/extensibility-overview?toc=./ref/toc.json
+        href: /graph/extensibility-overview?context=graph/api/beta
       - name: Use open extensions (example)
-        href: /graph/extensibility-open-users?toc=./ref/toc.json
+        href: /graph/extensibility-open-users?context=graph/api/beta
       - name: Use schema extensions (example)
-        href: /graph/extensibility-schema-groups?toc=./ref/toc.json
+        href: /graph/extensibility-schema-groups?context=graph/api/beta
+    - name: Use Postman
+      href: /graph/use-postman?context=graph/api/beta
   - name: Migrate
     expanded: false
     items:
@@ -70,56 +72,88 @@
       displayname: Migration, Azure AD Graph
       items:
       - name: Overview
-        href: /graph/migrate-azure-ad-graph-overview?toc=./ref/toc.json
+        href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
       - name: Checklist to migrate apps
-        href: /graph/migrate-azure-ad-graph-planning-checklist?toc=./ref/toc.json
+        href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
       - name: "1: Review differences"
         expanded: true
         items:
         - name: Requests
-          href: /graph/migrate-azure-ad-graph-request-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-request-differences?context=graph/api/beta
         - name: Service features
-          href: /graph/migrate-azure-ad-graph-feature-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-feature-differences?context=graph/api/beta
         - name: Resource types
-          href: /graph/migrate-azure-ad-graph-resource-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-resource-differences?context=graph/api/beta
         - name: Entity properties
-          href: /graph/migrate-azure-ad-graph-property-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-property-differences?context=graph/api/beta
         - name: Methods
-          href: /graph/migrate-azure-ad-graph-method-differences?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-method-differences?context=graph/api/beta
       - name: "2: Examine API use"
-        href: /graph/migrate-azure-ad-graph-audit-api-use?toc=./ref/toc.json
+        href: /graph/migrate-azure-ad-graph-audit-api-use?context=graph/api/beta
       - name: "3: Review app details"
         expanded: true
         items:
         - name: App registration
-          href: /graph/migrate-azure-ad-graph-app-registration?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-app-registration?context=graph/api/beta
         - name: Auth libraries
-          href: /graph/migrate-azure-ad-graph-authentication-library?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-authentication-library?context=graph/api/beta
         - name: .NET client libraries
-          href: /graph/migrate-azure-ad-graph-client-libraries?toc=./ref/toc.json
+          href: /graph/migrate-azure-ad-graph-client-libraries?context=graph/api/beta
       - name: "4: Deploy, test, and extend"
-        href: /graph/migrate-azure-ad-graph-deploy-test-extend?toc=./ref/toc.json
+        href: /graph/migrate-azure-ad-graph-deploy-test-extend?context=graph/api/beta
   - name: Use SDKs
     items:
       - name: Overview
-        href: /graph/sdks/sdks-overview?toc=./ref/toc.json
+        href: /graph/sdks/sdks-overview?context=graph/api/beta
       - name: Install the SDK
-        href: /graph/sdks/sdk-installation?toc=./ref/toc.json
+        href: /graph/sdks/sdk-installation?context=graph/api/beta
       - name: Create a client
-        href: /graph/sdks/create-client?toc=./ref/toc.json
+        href: /graph/sdks/create-client?context=graph/api/beta
       - name: Choose an authentication provider
-        href: /graph/sdks/choose-authentication-providers?toc=./ref/toc.json
+        href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
+  - name: Use the toolkit (preview)
+    items:
+      - name: Toolkit overview
+        href: /graph/toolkit/overview?context=graph/api/beta
+      - name: Components
+        items:
+          - name: Login
+            href: /graph/toolkit/components/login?context=graph/api/beta
+          - name: Person
+            href: /graph/toolkit/components/person?context=graph/api/beta
+          - name: People
+            href: /graph/toolkit/components/people?context=graph/api/beta
+          - name: Agenda
+            href: /graph/toolkit/components/agenda?context=graph/api/beta
+          - name: Tasks
+            href: /graph/toolkit/components/tasks?context=graph/api/beta
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph//graph/toolkit/providers?context=graph/api/beta
+          - name: Msal provider
+            href: /graph/toolkit/providers/msal?context=graph/api/beta
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
+          - name: Microsoft Teams provider
+            href: /graph/toolkit/providers/teams?context=graph/api/beta
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/beta
+      - name: Styling components
+        href: /graph/toolkit/style?context=graph/api/beta
+      - name: Templating components
+        href: /graph/toolkit/templates?context=graph/api/beta
   - name: Resources
     items:
     - name: Best practices
-      href: /graph/best-practices-concept?toc=./ref/toc.json
+      href: /graph/best-practices-concept?context=graph/api/beta
     - name: Known issues
-      href: /graph/known-issues?toc=./ref/toc.json
+      href: /graph/known-issues?context=graph/api/beta
     - name: Changelog
-      href: /graph/changelog?toc=./ref/toc.json
+      href: /graph/changelog?context=graph/api/beta
     - name: Errors
-      href: /graph/errors?toc=./ref/toc.json
-  - name: Reference
+      href: /graph/errors?context=graph/api/beta
+  - name: Beta reference
     expanded: true
     items:
     - name: Overview
@@ -7094,7 +7128,7 @@
         - name: Remove user
           href: api/educationschool-delete-users.md
         - name: Get delta
-          href: api/educationschool-delta.md          
+          href: api/educationschool-delta.md
       - name: Classes
         href: resources/educationclass.md
         items:
@@ -7131,7 +7165,7 @@
         - name: Create category
           href: api/educationclass-post-category.md
         - name: Get delta
-          href: api/educationclass-delta.md          
+          href: api/educationclass-delta.md
       - name: Users
         href: resources/educationuser.md
         items:
@@ -7869,6 +7903,13 @@
             href: api/unfamiliarlocationriskevent-list.md
           - name: Get unfamiliarLocationRiskEvent
             href: api/unfamiliarlocationriskevent-get.md
+        - name: Risk detection
+          href: resources/riskdetection.md
+          items:
+            - name: List risk detections
+              href: api/riskdetection-list.md
+            - name: Get risk detection
+              href: api/riskdetection-get.md
         - name: Risky user
           href: resources/riskyuser.md
           items:
@@ -7882,13 +7923,6 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
-      - name: Risk detection
-        href: resources/riskdetection.md
-        items:
-          - name: List risk detections
-            href: api/riskdetection-list.md
-          - name: Get risk detection 
-            href: api/riskdetection-get.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
@@ -8533,16 +8567,42 @@
       items:
       - name: Identity and access reports
         items:
-        - name: Application sign-in summary
-          href: resources/applicationsigninsummary.md
+        - name: Application sign-in
           items:
-          - name: Get
-            href: api/applicationsigninsummary-get.md
-        - name: Application sign-in summary details
-          href: resources/applicationsignindetailedsummary.md
+          - name: Sign-in summary
+            href: resources/applicationsigninsummary.md
+            items:
+            - name: Get sign-in summary
+              href: api/applicationsigninsummary-get.md
+          - name: Sign-in details
+            href: resources/applicationsignindetailedsummary.md
+            items:
+            - name: Get sign-in details
+              href: api/applicationsignindetailedsummary-get.md
+        - name: Registration and usage
           items:
-          - name: Get
-            href: api/applicationsignindetailedsummary-get.md
+          - name: Overview
+            href: resources/authenticationmethods-usage-insights-overview.md
+          - name: Credential User Registration Count
+            href: resources/credentialuserregistrationcount.md
+            items:
+            - name: Get registration count
+              href: api/reportroot-getcredentialuserregistrationcount.md
+          - name: Credential User Registration Details
+            href: resources/credentialuserregistrationdetails.md
+            items:
+            - name: List registration details
+              href: api/reportroot-list-credentialuserregistrationdetails.md
+          - name: User Credential Usage Details
+            href: resources/usercredentialusagedetails.md
+            items: 
+            - name: List usage details
+              href: api/reportroot-list-usercredentialusagedetails.md
+          - name: Credential Usage Summary
+            href: resources/credentialusagesummary.md
+            items:
+            - name: Get usage summary
+              href: api/reportroot-getcredentialusagesummary.md
       - name: Office 365 usage reports
         items:
         - name: Overview
@@ -9020,7 +9080,7 @@
         - name: List your teams
           href: api/user-list-joinedteams.md
         - name: List all teams
-          href: /graph/teams-list-all-teams?toc=./ref/toc.json
+          href: /graph/teams-list-all-teams?context=graph/api/beta
       - name: Group (team)
         href: resources/group.md
         items:
