@@ -9,11 +9,11 @@ localization_priority: Priority
 
 Did you know some new features in Microsoft Graph originate as popular requests from the developer community? 
 
-The Microsoft Graph team regularly evaluates customer needs, offers better APIs and development experience, and releases them in the following order:
+The Microsoft Graph team regularly evaluates customer needs, enhances APIs and development experiences, and releases most new features in the following order:
 
-1. Debut in **_preview_** status. Any REST API updates are in the beta endpoint (`https://graph.microsoft.com/beta`). Features in preview may change without notice and must not be used in production apps. 
+1. Debut in **_preview_** status. Any related REST API updates are in the beta endpoint (`https://graph.microsoft.com/beta`). Features in preview may change without notice. Do not use them in production apps. 
 
-2. Promoted to **_general availability_ (GA)** status, if sufficient feedback indicates viability. Any REST API updates are added to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). You can use features in GA status in production apps.
+2. Promoted to **_general availability_ (GA)** status, if sufficient feedback indicates viability. Any related REST API updates are added to the v1.0 endpoint (`https://graph.microsoft.com/v1.0`). Use only features in GA status in production apps.
 
 Let's walk through highlights of what's currently new in Microsoft Graph, and how you can [share your ideas](#want-to-stay-in-the-loop). For details of API updates, see the [May](changelog.md#may-2019), [June](changelog.md#june-2019), and [July](changelog.md#july-2019) sections of the changelog. 
 
