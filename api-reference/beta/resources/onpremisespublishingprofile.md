@@ -19,7 +19,7 @@ localization_priority: Normal
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)||
+|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](onpremiseshybridagentupdaterconfiguration.md)||
 |id|String| Read-only.|
 
 ## Relationships
