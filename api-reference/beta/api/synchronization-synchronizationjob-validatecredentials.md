@@ -2,6 +2,8 @@
 title: "synchronizationJob: validateCredentials"
 description: "Validate that the credentials are valid in the tenant."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationJob: validateCredentials
