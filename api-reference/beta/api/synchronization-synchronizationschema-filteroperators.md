@@ -2,6 +2,8 @@
 title: "synchronizationSchema: filterOperators"
 description: "List all operators supported in the scoping filters."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationSchema: filterOperators

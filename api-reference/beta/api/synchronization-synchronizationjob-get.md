@@ -2,6 +2,8 @@
 title: "Get synchronizationJob"
 description: "Retrieve the existing synchronization job and its properties."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get synchronizationJob
