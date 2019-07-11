@@ -73,6 +73,7 @@ The following example shows the activity statistics of a user for all activities
 <!-- {
   "blockType": "response",
   "truncated": true,
+  "isCollection": true,
   "@odata.type": "microsoft.graph.activityStatistics"
 } -->
 
