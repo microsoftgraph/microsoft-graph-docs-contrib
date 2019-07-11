@@ -1,6 +1,6 @@
 ---
 title: "Get activityStatistics"
-description: "Retrieve the properties and relationships of the activityStatistics object."
+description: "Retrieve the properties and relationships of a collection of activityStatistics objects."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of the collection of [activityStatistics](../resources/activitystatistics.md) objects.
+Retrieve the properties and relationships of a collection of [activityStatistics](../resources/activitystatistics.md) objects.
 
 ## Permissions
 
