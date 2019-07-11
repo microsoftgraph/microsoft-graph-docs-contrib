@@ -25,6 +25,10 @@ Represents data about the user's time spent in call activities on Microsoft Team
 |timeZoneUsed|String|The time zone used for the computation.|
 |afterHours|Duration|Time spent on calls outside of working hours.|
 
+## Relationships
+
+None
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

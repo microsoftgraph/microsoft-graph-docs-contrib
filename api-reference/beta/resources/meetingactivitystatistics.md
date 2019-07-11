@@ -35,11 +35,11 @@ Represents data about the user's time spent in meetings in Microsoft Outlook, Mi
 |multitasking|Duration|Time spent in meetings where the person was multitasking (read/sent more than a minimum number of emails and/or sent more than a minimum number of messages in Teams or in Skype for Business).|
 |organized|Duration|Time spent in meetings organized by the user.|
 |recurring|Duration|Time spent on recurring meetings.|
-<!--
+
 ## Relationships
 
 None
--->
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

@@ -32,11 +32,15 @@ The type of activities include meetings, emails, chats (instant messages), calls
 |startDate|Date|Date when the activity started.|
 |timeZoneUsed|String|The time zone used for the computation.|
 
+## Relationships
+
+None
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
 
-<!-- {
+<!-- { 
   "blockType": "resource",
   "optionalProperties": [
 

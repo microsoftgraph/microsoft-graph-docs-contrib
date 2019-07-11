@@ -27,6 +27,10 @@ Represents data about the user's time spent in email activities in Microsoft Out
 |readEmail|Duration|Total hours spent reading email.|
 |sentEmail|Duration|Total hours spent writing and sending email.|
 
+## Relationships
+
+None
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

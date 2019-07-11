@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of the [settings](../resources/settings.md) object as applicable for the Analytics API.
+Retrieve the properties and relationships of a [settings](../resources/settings.md) object as applicable for the Analytics API.
 
 ## Permissions
 
@@ -25,10 +25,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "ignored" }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/settings/
+GET https://graph.microsoft.com/beta/me/analytics/settings
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/settings/
+GET https://graph.microsoft.com/beta/me/analytics/settings
 ```
 
 ### Response

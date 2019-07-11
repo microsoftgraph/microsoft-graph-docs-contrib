@@ -25,6 +25,10 @@ Represents data about the user's time spent in chat activities on Microsoft Team
 |timeZoneUsed|String|The time zone used for the computation.|
 |afterHours|Duration|Time spent on chats outside of working hours.|
 
+## Relationships
+
+None
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
@@ -36,7 +40,7 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.chatActivityStatistics",
   "baseType": ""
-}--> 
+}-->
 
 ```json
 {

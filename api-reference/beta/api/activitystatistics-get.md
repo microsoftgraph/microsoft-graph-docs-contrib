@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of the [activityStatistics](../resources/activitystatistics.md) object.
+Retrieve the properties and relationships of an [activityStatistics](../resources/activitystatistics.md) object.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested collection of [activityStatistics](../resources/activitystatistics.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested collection of [activityStatistics](../resources/activitystatistics.md) objects in the response body.
 
 ## Examples
 
@@ -142,11 +142,11 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 2: Get activity statistics of a user for a specific day and activity
+### Example 2: Get activity statistics for a specific day and activity
 
 #### Request
 
-The following are two examples of a request of a user for a specific day and activity.
+This is an example of a request for a specific day and activity.
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"

@@ -24,6 +24,10 @@ Represents data about the user's time available for focus work. This is based on
 |startDate|Date|Date when the focus activity started.|
 |timeZoneUsed|String|The time zone used for the computation.|
 
+## Relationships
+
+None
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
