@@ -7,13 +7,13 @@ localization_priority: Priority
 
 # Changelog for Microsoft Graph
 
-This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs.
+This changelog covers what's changed in the Microsoft Graph API, including the v1.0 and beta endpoint Microsoft Graph APIs.
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
 ## July 2019
 
-### Microsoft Intune APIs
+### Devices and apps (Microsoft Intune)
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added the **revision** property to the [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) entity|
@@ -21,24 +21,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2019
 
-### Reports APIs
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-|Addition|beta| Added new reports for retrieving user registration and usage information:<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.</li></ul> |
-
-### Identity and access
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | beta | Added the [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), which represents risk detections in Azure AD Identity Protection. |
-| Addition        | Beta  | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.|
-| Addition | beta|Added new resources: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
-| Addition |beta |Added the [List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) operation</br>|                     |
-| Addition | v1.0 | Added the **signInSessionsValidFromDateTime** property on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
-| Addition | v1.0 | Added the [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) action on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
-
-### Microsoft Intune APIs
+### Devices and apps (Microsoft Intune)
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added new entities:<br/>[appVulnerabilityManagedDevice](/graph/api/resources/intune-partnerintegration-appvulnerabilitymanageddevice?view=graph-rest-beta)<br/>[appVulnerabilityMobileApp](/graph/api/resources/intune-partnerintegration-appvulnerabilitymobileapp?view=graph-rest-beta)<br/>[appVulnerabilityTask](/graph/api/resources/intune-partnerintegration-appvulnerabilitytask?view=graph-rest-beta)<br/>[deviceAppManagementTask](/graph/api/resources/intune-partnerintegration-deviceappmanagementtask?view=graph-rest-beta)<br/>[deviceManagementDomainJoinConnector](/graph/api/resources/intune-odj-devicemanagementdomainjoinconnector?view=graph-rest-beta)<br/>[iosikEv2VpnConfiguration](/graph/api/resources/intune-deviceconfig-iosikev2vpnconfiguration?view=graph-rest-beta)<br/>[roleScopeTagAutoAssignment](/graph/api/resources/intune-rbac-rolescopetagautoassignment?view=graph-rest-beta)<br/>[windows10DeviceFirmwareConfigurationInterface](/graph/api/resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface?view=graph-rest-beta)<br/>|
@@ -70,45 +53,51 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **sharedSecret** member to the [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **windows10Home**, **windows10HomeChina**, **windows10HomeN**, **windows10HomeSingleLanguage**, **windows10Mobile**, **windows10IoTCore** and **windows10IoTCoreCommercial** members to the [windows10EditionType](/graph/api/resources/intune-deviceconfig-windows10editiontype?view=graph-rest-beta) enum type|
 
-### Outlook mail
+### Identity and access
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | beta | Added the [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), which represents risk detections in Azure AD Identity Protection. |
+| Addition        | Beta  | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.|
+| Addition | beta|Added new resources: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
+| Addition |beta |Added the [List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) operation</br>|                     |
+| Addition | v1.0 | Added the **signInSessionsValidFromDateTime** property on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
+| Addition | v1.0 | Added the [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) action on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
+
+### Mail (Outlook)
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added support for the Mail.ReadBasic permission in mailFolder API: [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic support in [delta query for message](/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).|
 
-### Microsoft Teams APIs
+### Reports | Identity and access reports
 
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods. |
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Addition|beta| Added new reports for retrieving user registration and usage information:<br/><ul><li>[reportroot-getcredentialusagesummary](/graph/api/reportroot-getcredentialusagesummary?view=graph-rest-beta) - Reports usage of self-service password reset.</li><li>[reportroot-getcredentialuserregistrationcount](/graph/api/reportroot-getcredentialuserregistrationcount?view=graph-rest-beta) - Reports the number of registrations for self-service password reset and multi-factor authentication.</li><li>[reportroot-list-credentialuserregistrationdetails](/graph/api/reportroot-list-credentialuserregistrationdetails?view=graph-rest-beta) - Reports usage of self-service password reset and multi-factor authentication.</li><li>[reportroot-list-usercredentialusagedetails](/graph/api/resources/reportroot-list-usercredentialusagedetails?view=graph-rest-beta) - Reports usage of self-service password reset for a user.</li></ul> |
 
-
-### OneDrive and SharePoint APIs
+### Sites and lists (SharePoint)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | Beta        | Added the [followSite](/graph/api/follow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
 | Addition        | Beta        | Added the [unfollowSite](/graph/api/unfollow-site?view=graph-rest-beta) navigation property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity set |
 
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods. |
 
 ## May 2019
 
-### Directory APIs
-| **Change type** | **Version** | **Description** |
+### Calendar, mail, and personal contacts (Outlook)
+
+| **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added **assignedlabels** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) entity. This property represents the list of sensitivity label pairs (label ID, label name) associated with a group.
+| Addition | v1.0 and beta | Added the capability for administrators to limit app access to only specific mailboxes, even when an app has been granted application permissions to mail, mailbox settings, calendars, or contacts. For more details, see [Scoping application permissions to specific Exchange Online mailboxes](auth-limit-mailbox-access.md). |
 
-### Education APIs
-| Change type | Version | Description                                                                                                                                                      |
-| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Addition    | beta    | Added taughtClasses to [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).                                                                  |
-| Addition    | beta    | Added [educationCourse](/graph/api/resources/educationCourse?view=graph-rest-beta) to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
-| Addition    | beta    | Added [delta](/graph/delta-query-overview) support to [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).                                   |
-| Addition    | beta    | Added [delta](/graph/delta-query-overview) to [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta).                                       |
-| Addition    | beta    | Added [delta](/graph/delta-query-overview) to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta).                                         |
-| Addition    | beta    | Added `faculty` option to [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values) enumeration.                              |
-
-### Microsoft Intune APIs
+### Devices and apps (Microsoft Intune)
 |Change type|Version|Description|
 |:---|:---|:---|
 |Addition|beta|Added new entities:<br/>[deviceManagementDerivedCredentialSettings](/graph/api/resources/intune-deviceconfig-devicemanagementderivedcredentialsettings?view=graph-rest-beta)<br/>[iosDerivedCredentialAuthenticationConfiguration](/graph/api/resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration?view=graph-rest-beta)<br/>[securityBaselineCategoryStateSummary](/graph/api/resources/intune-deviceintent-securitybaselinecategorystatesummary?view=graph-rest-beta)<br/>|
@@ -150,40 +139,54 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **derivedCredential** member to the [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **derivedCredential** member to the [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) enum type|
 
-### Microsoft Teams APIs
+### Education
+| Change type | Version | Description                                                                                                                                                      |
+| :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Addition    | beta    | Added taughtClasses to [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).                                                                  |
+| Addition    | beta    | Added [educationCourse](/graph/api/resources/educationCourse?view=graph-rest-beta) to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
+| Addition    | beta    | Added [delta](/graph/delta-query-overview) support to [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).                                   |
+| Addition    | beta    | Added [delta](/graph/delta-query-overview) to [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta).                                       |
+| Addition    | beta    | Added [delta](/graph/delta-query-overview) to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta).                                         |
+| Addition    | beta    | Added `faculty` option to [educationUserRole](/graph/api/resources/enums?view=graph-rest-beta#educationuserrole-values) enumeration.                              |
 
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition        | Beta        | Added **urgent** property to the [chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta) enum.|
-| Addition        | Beta        | Added **hostedContents** navigation property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) entity.|
-| Addition        | Beta        | Added **chatMessageHostedContent** entity to represent content hosted by Microsoft Teams associated with a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). |
-
-### Outlook mail, calendar, contacts
-
-| **Change type** | **Version**   | **Description**                          |
+### Group
+| **Change type** | **Version** | **Description** |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | v1.0 | Added the [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) entity, which is derived from and supports the methods of the [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) entity. |
-| Addition | v1.0 and beta | Added the capability for administrators to limit app access to only specific mailboxes, even when an app has been granted application permissions to mail, mailbox settings, calendars, or contacts. For more details, see [Scoping application permissions to specific Exchange Online mailboxes](auth-limit-mailbox-access.md). |
+| Addition | beta | Added **assignedlabels** property to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) entity. This property represents the list of sensitivity label pairs (label ID, label name) associated with a group.
 
-### Reports APIs
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition        | Beta  | Added **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) entity.|
-| Addition        | Beta  | Added **ownerPrincipalName** property to the [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) entity.|
-
-### Risky users API
+### Identity and access | Identity protection
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | Beta | Added the [riskyUserHistoryItem](/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta) entity. |
 | Addition | Beta | Added the [list history](/graph/api/riskyuser-list-history?view=graph-rest-beta) operation. |
 
-### Security APIs
+### Mail (Outlook)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | v1.0 | Added the [mailSearchFolder](/graph/api/resources/mailsearchfolder?graph-rest-1.0) entity, which is derived from and supports the methods of the [mailFolder](/graph/api/resources/mailfolder?graph-rest-1.0) entity. |
+
+### Reports | Office 365 usage reports
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta  | Added **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) entity.|
+| Addition        | Beta  | Added **ownerPrincipalName** property to the [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) entity.|
+
+### Security
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition        | v1.0       | Added the Secure Score APIs to the [security API](/graph/api/resources/securescore-api-overview?view=graph-rest-1.0), including the following resources and operations:<br/>[secureScore](/graph/api/resources/securescore?view=graph-rest-1.0) (and related entities)<br/>[List secureScores](/graph/api/securescores-list?view=graph-rest-1.0)<br/>[secureScoreControlProfile](/graph/api/resources/securescorecontrolprofile?view=graph-rest-1.0)<br/>[List secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-1.0)<br/>[Update secureScoreControlProfile](/graph/api/securescorecontrolprofiles-update?view=graph-rest-1.0) |
+
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta        | Added **urgent** property to the [chatMessageImportance](/graph/api/resources/chatMessageImportance?view=graph-rest-beta) enum.|
+| Addition        | Beta        | Added **hostedContents** navigation property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) entity.|
+| Addition        | Beta        | Added **chatMessageHostedContent** entity to represent content hosted by Microsoft Teams associated with a [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). |
 
 
 ## April 2019
@@ -774,7 +777,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Change          | Beta        | The [application](/graph/api/resources/application?view=graph-rest-beta) resource was updated to add a calls collection. |
 | Change          | Beta        | The [operation](/graph/api/resources/operation?view=graph-rest-beta) resource was updated to support long-running calls and meetings APIs. |
-| Addition        | Beta        | Added the [call](/graph/api/resources/call?view=graph-rest-beta) resource for managing audio/video calls (initially, in Microsoft Teams), including APIs for [creating calls](/graph/api/application-post-calls?view=graph-rest-beta), [retrieving a a call](/graph/api/call-get?view=graph-rest-beta), [deleting (hanging up) a call](/graph/api/call-delete?view=graph-rest-beta), [answering a call](/graph/api/call-answer?view=graph-rest-beta), [rejecting a call](/graph/api/call-reject?view=graph-rest-beta), [redirecting a call](/graph/api/call-redirect?view=graph-rest-beta), and [transferring a call](/graph/api/call-transfer?view=graph-rest-beta). We've also added APIs to support [IVR scenarios](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta): [playing a prompt](/graph/api/call-playprompt?view=graph-rest-beta), [recording a call](/graph/api/call-record?view=graph-rest-beta), [cancel media processing](/graph/api/call-cancelmediaprocessing?view=graph-rest-beta), and [subscribing to touch tone notifications](/graph/api/call-subscribetotone?view=graph-rest-beta). |
+| Addition        | Beta        | Added the [call](/graph/api/resources/call?view=graph-rest-beta) resource for managing audio/video calls (initially, in Microsoft Teams), including APIs for [creating calls](/graph/api/application-post-calls?view=graph-rest-beta), [retrieving a call](/graph/api/call-get?view=graph-rest-beta), [deleting (hanging up) a call](/graph/api/call-delete?view=graph-rest-beta), [answering a call](/graph/api/call-answer?view=graph-rest-beta), [rejecting a call](/graph/api/call-reject?view=graph-rest-beta), [redirecting a call](/graph/api/call-redirect?view=graph-rest-beta), and [transferring a call](/graph/api/call-transfer?view=graph-rest-beta). We've also added APIs to support [IVR scenarios](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta): [playing a prompt](/graph/api/call-playprompt?view=graph-rest-beta), [recording a call](/graph/api/call-record?view=graph-rest-beta), [cancel media processing](/graph/api/call-cancelmediaprocessing?view=graph-rest-beta), and [subscribing to touch tone notifications](/graph/api/call-subscribetotone?view=graph-rest-beta). |
 | Addition        | Beta        | Added the [participant](/graph/api/resources/call?view=graph-rest-beta) resource and APIs for managing the participants in audio/video calls and meetings, including [retrieving a participant object](/graph/api/participant-get?view=graph-rest-beta), [configuring the audio mixer for a participant](/graph/api/participant-configuremixer?view=graph-rest-beta), muting [one](/graph/api/participant-mute?view=graph-rest-beta) or [all](/graph/api/participant-muteall?view=graph-rest-beta) of the participants, [retrieving a list of the participants](/graph/api/call-list-participants?view=graph-rest-beta) in a call/meeting, and [inviting participants](/graph/api/participant-invite?view=graph-rest-beta) to a call/meeting. |
 | Addition        | Beta        | Added APIs for applications to manage and participate in calls and meetings, including the ability to [share content](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [mute and unmute itself](/graph/api/call-unmute?view=graph-rest-beta), and [update the metadata associated with a call](/graph/api/call-updatemetadata?view=graph-rest-beta). |
 | Addition        | Beta        | Added the [audio routing group](/graph/api/resources/audioroutinggroup?view=graph-rest-beta) resource and APIs for managing private audio routes between participants in a multiparty conversation, including [creating audio routing groups](/graph/api/call-post-audioroutinggroups?view=graph-rest-beta), [retrieving a list of them](/graph/api/audioroutinggroup-get?view=graph-rest-beta), and [updating](/graph/api/audioroutinggroup-update?view=graph-rest-beta) and [deleting](/graph/api/audioroutinggroup-delete?view=graph-rest-beta) them. |
