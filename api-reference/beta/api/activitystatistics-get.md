@@ -1,6 +1,6 @@
 ---
 title: "Get activityStatistics"
-description: "Retrieve the properties and relationships of a collection of activityStatistics objects."
+description: "Retrieve the properties of a collection of activityStatistics objects."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a collection of [activityStatistics](../resources/activitystatistics.md) objects.
+Retrieve the properties of a collection of [activityStatistics](../resources/activitystatistics.md) objects.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "ignored" }  -->
 
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
