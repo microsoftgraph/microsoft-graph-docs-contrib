@@ -2,6 +2,9 @@
 title: "onPremisesPublishingProfile resource type"
 description: "onPremisesPublishingProfile resource type."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: "resourcePageType"
 ---
 
 # onPremisesPublishingProfile resource type
@@ -51,7 +54,7 @@ The following is a JSON representation of the resource.
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "onPremisesPublishingProfile resource",

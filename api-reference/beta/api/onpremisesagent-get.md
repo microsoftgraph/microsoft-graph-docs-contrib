@@ -2,6 +2,9 @@
 title: "Get onPremisesAgent"
 description: "Retrieve the properties and relationships of onPremisesAgent."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: "apiPageType"
 ---
 
 # Get onPremisesAgent
@@ -86,7 +89,7 @@ Content-type: application/json
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Get onPremisesAgent",

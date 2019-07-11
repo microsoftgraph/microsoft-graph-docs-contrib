@@ -2,6 +2,9 @@
 title: "Remove onpremisesAgent from an onPremisesAgentGroup"
 description: "Remove onpremisesAgent from an onPremisesAgentGroup."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: "apiPageType"
 ---
 
 # Remove onpremisesAgent from an onPremisesAgentGroup
@@ -52,7 +55,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/onPremisesPublishingProfiles('provisioning')/agents(id1)/agentGroups(id2)/$ref
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agents(id1)/agentGroups(id2)/$ref
 ```
 
 ### Response
@@ -68,7 +71,7 @@ HTTP/1.1 204 No Conten
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
+2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Create onPremisesAgentGroup",
