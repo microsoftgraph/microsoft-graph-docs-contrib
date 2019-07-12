@@ -44,10 +44,12 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 The body of the request defines properties of the sharing link your application is requesting.
 The request should be a JSON object with the following properties.
 
-|   Name    |  Type  |                                 Description                                  |
-| :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
-| **scope** | string | Optional. The scope of link to create. Either `anonymous` or `organization`. |
+|   Name                 |  Type  |                                 Description                                                               |
+| :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
+| **type**               | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.                                    |
+| **password**           | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.         |
+| **expirationDateTime** | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
+| **scope**              | string | Optional. The scope of link to create. Either `anonymous` or `organization`.                              |
 
 
 ### Link types
@@ -65,10 +67,11 @@ The following values are allowed for the **type** parameter.
 The following values are allowed for the **scope** parameter.
 If the **scope** parameter is not specified, the default link type for the organization is created.
 
-| Type value     | Description                                                                                                                   |
-|:---------------|:------------------------------------------------------------------------------------------------------------------------------|
-| `anonymous`    | Creates a link to the DriveItem accessible to anyone with the link. Anonymous links may be disabled by an administrator.                 |
-| `organization` | Creates a link to the DriveItem accessible to anyone within the user's organization. Organization link scope is not available for OneDrive personal. |
+| Value          | Description
+|:---------------|:------------------------------------------------------------
+| `anonymous`    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator.
+| `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
+
 
 ## Response
 
@@ -96,6 +99,7 @@ Content-type: application/json
 
 {
   "type": "view",
+  "password": "ThisIsMyPrivatePassword",
   "scope": "anonymous"
 }
 ```
@@ -133,7 +137,8 @@ Content-Type: application/json
       "id": "1234",
       "displayName": "Sample Application"
     },
-  }
+  },
+  "hasPassword": true
 }
 ```
 
