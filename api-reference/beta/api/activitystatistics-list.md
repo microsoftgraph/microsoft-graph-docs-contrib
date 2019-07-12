@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of the collection of activityStatistics objects.
+Retrieve a list of the collection of [activityStatistics](../resources/activitystatistics.md) objects.
 
 ## Permissions
 
@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [myActivityStatistics](../resources/myactivitystatistics.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [activityStatistics](../resources/activitystatistics.md) objects in the response body.
 
 ## Example
 
