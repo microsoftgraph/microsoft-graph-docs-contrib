@@ -29,6 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET  https://graph.microsoft.com/beta/me/analytics/activitystatistics
+
 ```
 ## Request headers
 
@@ -66,7 +67,7 @@ The following is an example of a response with all related activity statistics f
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.ActivityStatistics",
+  "@odata.type": "microsoft.graph.activityStatistics",
   "isCollection": true
 } -->
 
