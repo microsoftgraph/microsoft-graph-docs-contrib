@@ -102,4 +102,4 @@ Looking for the API reference for these services?
 * Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People**, **Insights (beta)**, and **Analytics**.
 * Find more about the [people API](people-example.md) and the [person](/graph/api/resources/person?view=graph-rest-1.0) entity.
 * To get started with insights API, see [Use the insights API](/graph/api/resources/insights?view=graph-rest-beta).
-* Find more about the [activityStatistics](/graph/api/resources/activitystatistics.md) resource for the analytics API.
+* Find more about the [analytics API](../api-reference/beta/resources/social-overview.md#help-users-balance-work-and-life).
