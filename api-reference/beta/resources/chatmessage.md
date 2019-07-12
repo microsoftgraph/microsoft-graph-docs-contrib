@@ -39,7 +39,7 @@ The message can be a root message or part of a thread that is defined by the **r
 |etag| string | Read-only. Version number of the message. |
 |messageType|chatMessageType|The type of message. The possible values are: `message`.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp of when the message was created.|
-|lastModifiedDateTime|dateTimeOffset|Read only. Timestamp is updated when the message is posted, edited, replies added (if a root message in a channel), and  reactions added/removed. |
+|lastModifiedDateTime|dateTimeOffset|Read only. Timestamp of when the message is created or edited, including when a reply is made (if it's a root message in a channel) or a reaction is added or removed. |
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the message was deleted, or null if not deleted. |
 |subject|string| The subject of the message, in plaintext.|
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Representation is specified by the contentType inside the body. The content is always in HTML if the message contains a [chatMessageMention](chatmessagemention.md). |
