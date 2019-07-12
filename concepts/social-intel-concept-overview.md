@@ -88,12 +88,12 @@ The insights API provides a similar functionality with the [used](/graph/api/res
 
 The MyAnalytics app provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
 
-The Analytics API enables you to synchronize or integrate users' data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
+The analytics API enables you to synchronize or integrate user analytics data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
 
-The Analytics API includes the following two resources.
+The analytics API includes the following two resources.
 
-- [settings](/graph/api/beta/resources/settings.md): For the Analytics API to return results for users, their current settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
-- [activityStatistics](/graph/api/resources/activitystatistics.md): Gets all data (including metadata) for the past seven days (or the specified time range) for the Office 365 activities that users spent time on, including the number of hours spent on email, meetings, calls, and chats (instant messages) during and outside of working hours, and the number of hours available for focused work.
+- [settings](/graph/api/beta/resources/settings.md): For the analytics API to return user analytics data, their current settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+- [activityStatistics](/graph/api/resources/activitystatistics.md): Gets all data (including metadata) for the past complete week (or the specified time range) for the Office 365 activities a user spent time on, including the number of hours spent on email, meetings, calls, and chats (instant messages) during and outside of working hours, and the number of hours available for focused work.
 
 ## API reference
 

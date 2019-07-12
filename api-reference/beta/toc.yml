@@ -8955,7 +8955,7 @@
             href: api/insights-list-shared.md
       - name: Analytics
         items:
-        - name: User analytics settings
+        - name: User analytics
           items:
           - name: Settings
             href: resources/useranalytics-get-settings.md

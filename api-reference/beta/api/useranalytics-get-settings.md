@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [settings](../resources/settings.md) object as applicable for the Analytics API.
+Retrieve the properties of a [settings](../resources/settings.md) object as applicable for the analytics API.
 
 ## Permissions
 
