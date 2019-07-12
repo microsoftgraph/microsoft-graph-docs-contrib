@@ -38,7 +38,7 @@ The analytics API enables you to synchronize or integrate user analytics data wi
 The analytics API includes the following two resources.
 
 - [settings](../resources/settings.md): For the analytics API to return results for users, their current user analytics settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
-- [activityStatistics](../resources/activitystatistics.md): Gets data for the past seven days (or the specified time range) for the Office 365 activities that users spent time on, including the number of hours spent on email, meetings, calls, and chats (instant messages) during and outside of working hours and the number of hours available for focused work.
+- [activityStatistics](../resources/activitystatistics.md): Gets data for the last complete week (or the specified time range) for the Office 365 activities that a user spent time on, including the number of hours spent on [email](emailactivitystatistics.md), [meetings](meetingactivitystatistics.md), [calls](callactivitystatistics.md), and [chats (instant messages)](chatactivitystatistics.md) during and outside of working hours and the number of hours available for [focused work](focusactivitystatistics.md).
 
 ## Manage @-Mentions
 
