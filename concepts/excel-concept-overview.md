@@ -35,7 +35,7 @@ You can use Microsoft Graph to allow web and mobile applications to read and mod
 
 `https://graph.microsoft.com/{version}/me/drive/items/{id}/workbook/`
 
-`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/ `
+`https://graph.microsoft.com/{version}/me/drive/root:/{item-path}:/workbook/`
 
 You can access a set of Excel objects (such as Table, Range, or Chart) by using standard REST APIs to perform create, read, update, and delete (CRUD) operations on the workbook.
 
