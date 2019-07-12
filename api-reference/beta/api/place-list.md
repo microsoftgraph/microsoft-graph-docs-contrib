@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a collection of all the [place](../resources/place.md) objects or the specified type of **place** object defined in the tenant. For example, you can get all the rooms and room lists, only rooms, only room lists, or only rooms in a specific room list in the tenant.
+Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
 
 A **place** object can be one of the following types:
 
