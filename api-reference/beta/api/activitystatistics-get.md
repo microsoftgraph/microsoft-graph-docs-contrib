@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a collection of [activityStatistics](../resources/activitystatistics.md) objects.
+Retrieve the properties of an [activityStatistics](../resources/activitystatistics.md) object for a user.
 
 ## Permissions
 
@@ -28,7 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" }  -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
+GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/{Call|Chat|Email|Focus|Meeting}_[id}
+
 ```
 
 ## Request headers
@@ -45,105 +46,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested collection of [activityStatistics](../resources/activitystatistics.md) objects in the response body.
 
-## Examples
-
-### Example 1: Get activity statistics of a user
-
-#### Request
-
-The following example shows a request to get user activity statistics for all activities for the last complete week.
-<!-- {
-  "blockType": "request",
-  "name": "get_activitystatistics"
-}-->
-
-```http
-GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
-
-GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/activitystatistics
-
-```
-
-#### Response
-
-The following example shows the activity statistics of a user for all activities for the last complete week. However, this response only shows the first day's activities to shorten for readability.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "isCollection": true,
-  "@odata.type": "microsoft.graph.activityStatistics"
-} -->
-
-```http
-HTTP/1.1 200 OK
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#activitystatistics",
-    "value": [
-        {
-            "@odata.type": "#microsoft.graph.emailActivityStatistics",
-            "activity": "Email",
-            "startDate": "2019-06-16",
-            "endDate": "2019-06-17",
-            "id": "email_2019-06-16_2019-06-17",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S",
-            "afterHours": "PT0S",
-            "readEmail": "PT0S",
-            "sentEmail": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.meetingActivityStatistics",
-            "activity": "Meeting",
-            "startDate": "2019-06-16",
-            "endDate": "2019-06-17",
-            "id": "meeting_2019-06-16_2019-06-17",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S",
-            "afterHours": "PT0S",
-            "organized": "PT0S",
-            "recurring": "PT0S",
-            "long": "PT0S",
-            "conflicting": "PT0S",
-            "multitasking": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.focusActivityStatistics",
-            "activity": "Focus",
-            "startDate": "2019-06-16",
-            "endDate": "2019-06-17",
-            "id": "focus_2019-06-16_2019-06-17",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.chatActivityStatistics",
-            "activity": "Chat",
-            "startDate": "2019-06-16",
-            "endDate": "2019-06-17",
-            "id": "chat_2019-06-16_2019-06-17",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S",
-            "afterHours": "PT0S"
-        },
-        {
-            "@odata.type": "#microsoft.graph.callActivityStatistics",
-            "activity": "Call",
-            "startDate": "2019-06-16",
-            "endDate": "2019-06-17",
-            "id": "call_2019-06-16_2019-06-17",
-            "timeZoneUsed": "Pacific Standard Time",
-            "duration": "PT0S",
-            "afterHours": "PT0S"
-        }
-    ]
-}
-```
-
-### Example 2: Get activity statistics for a specific day and activity
+## Example
 
 #### Request
 
@@ -156,7 +59,7 @@ This is an example of a request for a specific day and activity.
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-06-16_2019-06-17
 
-GET https://graph.microsoft.com/beta/users(id | userPrincipalName)/analytics/activitystatistics/email_2019-06-16_2019-06-17
+GET https://graph.microsoft.com/beta/users(id|userPrincipalName)/analytics/activitystatistics/email_2019-06-16_2019-06-17
 
 ```
 

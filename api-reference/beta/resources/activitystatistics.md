@@ -1,6 +1,6 @@
 ---
 title: "activityStatistics resource type"
-description: "Represents time spent by users on work activities, including email, meetings, focus work, chats, and calls."
+description: "Represents time spent on work activities, including email, meetings, focus work, chats, and calls."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -19,7 +19,8 @@ The type of activities include meetings, emails, chats (instant messages), calls
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Get the properties for the activity statistics for the specified time range. If no time range is specified, it gets the last complete week by default.|
+| [Get activityStatistics](../api/activitystatistics-get.md) | [activityStatistics](activitystatistics.md) | Get the properties for a specified activity's statistics for a user, for the specified time range. If no time range is specified, it gets the last complete week by default.|
+| [List activityStatistics](../api/activitystatistics-list.md) | [activityStatistics](activitystatistics.md) | Retrieve the properties for the collection of activity statistics for a user, for the specified time range. If no time range is specified, it gets the last complete week by default.|
 
 ## Properties
 
