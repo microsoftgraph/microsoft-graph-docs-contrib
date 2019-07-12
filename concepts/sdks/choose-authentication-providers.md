@@ -382,6 +382,12 @@ IPublicClientApplication publicClientApplication = PublicClientApplicationBuilde
             .Build();
 
 UsernamePasswordProvider authProvider = new UsernamePasswordProvider(publicClientApplication, scopes);
+
+GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+
+User me = await graphClient.Me.Request()
+                .WithUsernamePassword(email, password)
+                .GetAsync();
 ```
 
 # [Javascript](#tab/Javascript)
