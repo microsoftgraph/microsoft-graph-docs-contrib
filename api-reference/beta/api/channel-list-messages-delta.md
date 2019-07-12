@@ -41,6 +41,13 @@ See the example below to learn how to use these `nextLink` and `deltaLink` URLs.
 GET /teams/{id}/channels/{id}/messages/delta
 ```
 
+## Optional query parameters
+
+The following [OData query parameters](/graph/query-parameters) are supported by this API:
+- `$top`, represents maximum number of messages to fetch in a call. The upper limit is **50**.
+- `$skip`, represents how many messages to skip at the beginning of the list.
+- `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** and **ge** operators are supported. For example, ```../messages/delta?$filter=lastModifiedDateTime ge 2019-02-27T07:13:28.000z``` will fetch any messages created or changed after the specified date time.
+
 ### Request headers
 | Header        | Value                     |
 |---------------|---------------------------|
@@ -52,14 +59,6 @@ Do not supply a request body for this method.
 
 ### Request Response
 If successful, this method returns a `200 OK` response code and a collection of [chatmessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) objects in the response body.
-
-### Supported Parameters
-The following parameters are supported by this API:
-
-- **Query Parameter**: `top`, represents number of maximum messages to fetch in the current call. The upper limit is **50**.
-	- **Example**: ```../messages/delta?$top=15```, will fetch top **15** messages.
-- **Filter Parameter**: `lastModifiedDateTime`, with limited support for operators. Only **gt** and **ge** parameters supported currently.
-	- **Example**: ```../messages/delta?$filter=lastModifiedDateTime ge 2019-02-27T07:13:28.000z```, will fetch any messages created or changed after the specified date time.
 
 ## Example
 The following example shows a series of 3 requests to synchronize the messages in the given channel. There are 5 messages in the channel.
