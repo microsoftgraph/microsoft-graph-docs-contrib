@@ -1,17 +1,17 @@
 ---
-title: "Get settings"
-description: "Retrieve the properties and relationships of the settings object."
+title: "Get settings for user analytics"
+description: "Retrieve the properties of the settings object for user analytics."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
 doc_type: "apiPageType"
 ---
 
-# Get settings
+# Get settings for user analytics
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [settings](../resources/settings.md) object as applicable for the Analytics API.
+Retrieve the properties of a [settings](../resources/settings.md) object as applicable for the Analytics API.
 
 ## Permissions
 
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx')/analytics/settings",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12ab2b12-4b1a-43a1-adac-1a123456cd78')/analytics/settings",
     "hasLicense": true,
     "hasOptedOut": false,
     "hasGraphMailbox": true

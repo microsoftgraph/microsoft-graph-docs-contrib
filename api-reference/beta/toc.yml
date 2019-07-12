@@ -8958,7 +8958,7 @@
         - name: User analytics settings
           items:
           - name: Settings
-            href: resources/settings.md
+            href: resources/useranalytics-get-settings.md
           - name: Get settings
             href: api/settings-get.md
         - name: Activity statistics

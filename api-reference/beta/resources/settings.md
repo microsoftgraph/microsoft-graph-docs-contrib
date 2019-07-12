@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-[Get settings](../api/settings-get.md) | [settings](settings.md) | Get the following property settings for a user.|
+[Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the following property settings for a user.|
 
 ## Properties
 
