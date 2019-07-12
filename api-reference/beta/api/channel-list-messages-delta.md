@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [messages](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) (without the replies) in a [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) of a [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta). By using delta query, you can get new or updated messages in a channel.
+Retrieve the list of [messages](../resources/chatmessage) (without the replies) in a [channel](https://docs.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) of a [team](https://docs.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-beta). By using delta query, you can get new or updated messages in a channel.
 
 Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization. Typically, you would do an initial full synchronization, and subsequently, get incremental changes to that calendar view periodically.
 
