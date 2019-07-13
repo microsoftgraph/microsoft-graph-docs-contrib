@@ -2332,17 +2332,6 @@
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
         - name: Imported windows autopilot device identity upload
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md
-          items:
-          - name: List
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-list.md
-          - name: Get
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-get.md
-          - name: Create
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md
-          - name: Delete
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md
-          - name: Update
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md
         - name: Imported windows autopilot device identity upload status
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
         - name: iTunes pairing mode
