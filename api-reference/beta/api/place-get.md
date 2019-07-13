@@ -10,14 +10,14 @@ doc_type: "apiPageType"
 # Get place
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the properties and relationships of a [place](../resources/place.md) object. 
+Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address. 
 
 The **place** object can be one of the following types:
 
 * A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.
 * A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
 
-Both **room** and **roomList** are derived from the [place](../resources/place.md) object.
+Both **room** and **roomList** are derived from the [place](../resources/place.md) object. 
 
 ## Permissions
 
@@ -34,13 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /place/{id}
+GET /places/{id}
 ```
 
 ## Optional query parameters
 
 This method supports the following query parameters to help customize the response:
-* $expand
 * $filter
 * $select
 * $top
@@ -63,19 +62,20 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ## Examples
 
-### Request
+### Example 1: Get a room
+#### Request
 
 The following example specifies the **id** of a **room** to get its properties.
 <!-- {
   "blockType": "request",
-  "name": "get_places"
+  "name": "get_room"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/places/{id}
+GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -83,8 +83,9 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "get_room",
   "truncated": true,
-  "@odata.type": "microsoft.graph.place"
+  "@odata.type": "microsoft.graph.room"
 } -->
 
 ```http
@@ -92,37 +93,85 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.type": "microsoft.graph.room",
-  "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
-  "displayName": "Conf Room 32/35 (25)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+    "@odata.type": "#microsoft.graph.room",
+    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+    "emailAddress": "cf100@contoso.com",
+    "displayName": "Conf Room 100",
+    "address": {
+      "street": "4567 Main Street",
+      "city": "Buffalo",
+      "state": "NY",
+      "postalCode": "98052",
+      "countryOrRegion": "USA"
+    },
+    "geoCoordinates": {
+      "latitude": 47.640568390488626,
+      "longitude": -122.1293731033803
+    },
+    "phone": "000-000-0000",
+    "nickname": "Conf Room",
+    "label": "100",
+    "capacity": "50",
+    "building": "1",
+    "floorNumber": 1,
+    "isManaged": true,
+    "isWheelchairAccessible": false,
+    "bookingType": "standard",
+    "tags": [
+      "bean bags"
+    ],
+    "audioDeviceName": null,
+    "videoDeviceName": null,
+    "displayDevice": "surface hub"
+}
+```
+
+### Example 2: Get a room list
+#### Request
+
+The following example specifies the **emailAddress** of a **roomList** to get its properties.
+<!-- {
+  "blockType": "request",
+  "name": "get_roomlist"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "name": "get_roomlist",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.roomList"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
+  "@odata.type": "#microsoft.graph.roomList",
+  "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
+  "displayName": "Building 1",
   "address": {
-    "street": "One Microsoft Way",
-    "city": "Redmond",
-    "state": "WA",
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
     "postalCode": "98052",
     "countryOrRegion": "USA"
   },
-  "geoCoordinates": {
-    "latitude": 47.640568390488625,
-    "longitude": -122.1293731033802
-  },
-  "phone": "000-000-0000",
-  "emailAddress": "cf3235@contoso.com",
-  "nickname": "Conf Room",
-  "label": "35",
-  "capacity": "50",
-  "building": "32",
-  "floorNumber": 3,
-  "isManaged": true,
-  "isWheelchairAccessible": false,
-  "bookingType": "standard",
-  "tags": [
-    "bean bags",
-    "nice view"
-  ],
-  "audioDeviceName": null,
-  "videoDeviceName": null,
-  "displayDevice": "surface hub"
+  "geocoordinates": null,
+  "phone": null,
+  "emailAddress": "bldg1@contoso.com"
 }
 ```
 

@@ -19,8 +19,8 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 
 | Method                              | Return Type                  | Description |
 |:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | [place](place.md) collection | Get a collection of all the **place** objects or the specified type of **place** object defined in the tenant. For example, you can get all the rooms and room lists, only rooms, only room lists, or only rooms in a specific room list in the tenant. |
-| [Get place](../api/place-get.md)    | [place](place.md)            | Get the properties and relationships of a **place** object, such as a room. |
+| [List places](../api/place-list.md) | [place](place.md) collection | Get a collection of the specified type of **place** object defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant. |
+| [Get place](../api/place-get.md)    | [place](place.md)            | Get the properties and relationships of the specified **place** object, such as a room. |
 
 ## Properties
 

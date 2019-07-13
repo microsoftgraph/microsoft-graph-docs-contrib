@@ -36,9 +36,25 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 
+To get all the rooms in a tenant:
+
 ```http
-GET /places
+GET /places/microsoft.graph.room
 ```
+
+To get all the room lists in a tenant:
+
+```http
+GET /places/microsoft.graph.roomlist
+```
+
+To get all the rooms in the specified room list:
+
+```http
+GET /places/microsoft.graph.roomlist/{room-list-emailaddress}/rooms
+```
+
+>**Note**: To get rooms in a room list, you must specify the room list by its email address. 
 
 ## Optional query parameters
 
@@ -60,18 +76,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List all the places defined in the tenant
+### Example 1: List all the rooms defined in the tenant
 
 #### Request
 
-The following example shows how to get all the [place](../resources/place.md) objects in the tenant, including rooms and room lists.
+The following example shows how to get all the [room](../resources/room.md) objects in the tenant.
 <!-- {
   "blockType": "request",
-  "name": "get_places"
+  "name": "get_all_rooms"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/places
+GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 ```
 
 #### Response
@@ -82,8 +98,9 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "get_all_rooms",
   "truncated": true,
-  "@odata.type": "microsoft.graph.place",
+  "@odata.type": "microsoft.graph.room",
   "isCollection": true
 } -->
 
@@ -92,16 +109,47 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/microsoft.graph.room",
   "value": [
     {
-      "@odata.type": "microsoft.graph.room",
-      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
-      "emailAddress": "cf3235@contoso.com",
-      "displayName": "Conf Room 32/35 (25)",
+      "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
+      "emailAddress": "cf100@contoso.com",
+      "displayName": "Conf Room 100",
       "address": {
-        "street": "One Microsoft Way",
-        "city": "Redmond",
-        "state": "WA",
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
+        "postalCode": "98052",
+        "countryOrRegion": "USA"
+      },
+      "geoCoordinates": {
+        "latitude": 47.640568390488626,
+        "longitude": -122.1293731033803
+      },
+      "phone": "000-000-0000",
+      "nickname": "Conf Room",
+      "label": "100",
+      "capacity": "50",
+      "building": "1",
+      "floorNumber": 1,
+      "isManaged": true,
+      "isWheelchairAccessible": false,
+      "bookingType": "standard",
+      "tags": [
+        "bean bags"
+      ],
+      "audioDeviceName": null,
+      "videoDeviceName": null,
+      "displayDevice": "surface hub"
+    },
+    {
+      "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
+      "emailAddress": "cf200@contoso.com",
+      "displayName": "Conf Room 200",
+      "address": {
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
         "postalCode": "98052",
         "countryOrRegion": "USA"
       },
@@ -111,48 +159,33 @@ Content-type: application/json
       },
       "phone": "000-000-0000",
       "nickname": "Conf Room",
-      "label": "35",
-      "capacity": "50",
-      "building": "32",
-      "floorNumber": 3,
+      "label": "200",
+      "capacity": "40",
+      "building": "2",
+      "floorNumber": 2,
       "isManaged": true,
       "isWheelchairAccessible": false,
       "bookingType": "standard",
       "tags": [
-        "bean bags",
+        "benches",
         "nice view"
       ],
       "audioDeviceName": null,
       "videoDeviceName": null,
       "displayDevice": "surface hub"
-    },
-    {
-      "@odata.type": "microsoft.graph.roomList",
-      "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
-      "displayName": "Building 32",
-      "address": {
-        "street": "123 Contoso Way",
-        "city": "Redmond",
-        "state": "WA",
-        "postalCode": "98052",
-        "countryOrRegion": "USA"
-      },
-      "geocoordinates": null,
-      "phone": null,
-      "emailAddress": "bldg32@contoso.com"
     }
   ]
 }
 ```
 
-### Example 2: List places of a specific type
+### Example 2: List all the room lists defined in the tenant
 
 #### Request
 
 The following example shows how to get all the [roomList](../resources/roomlist.md) objects in the tenant.
 <!-- {
   "blockType": "request",
-  "name": "get_places"
+  "name": "get_all_roomlists"
 }-->
 
 ```http
@@ -167,8 +200,9 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "get_all_roomlists",
   "truncated": true,
-  "@odata.type": "microsoft.graph.place",
+  "@odata.type": "microsoft.graph.roomList",
   "isCollection": true
 } -->
 
@@ -177,21 +211,35 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/microsoft.graph.roomList",
   "value": [
     {
-      "@odata.type": "microsoft.graph.roomList",
       "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
-      "displayName": "Building 32",
+      "displayName": "Building 1",
       "address": {
-        "street": "123 Contoso Way",
-        "city": "Redmond",
-        "state": "WA",
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
         "postalCode": "98052",
         "countryOrRegion": "USA"
       },
       "geocoordinates": null,
       "phone": null,
-      "emailAddress": "bldg32@contoso.com"
+      "emailAddress": "bldg1@contoso.com"
+    },
+    {
+      "id": "DC404124-302A-92AA-F98D-7B4DEB0C1706",
+      "displayName": "Building 2",
+      "address": {
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
+        "postalCode": "98052",
+        "countryOrRegion": "USA"
+      },
+      "geocoordinates": null,
+      "phone": null,
+      "emailAddress": "bldg2@contoso.com"
     }
   ]
 }
@@ -201,14 +249,14 @@ Content-type: application/json
 
 #### Request
 
-The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**.
+The following example shows how to get a list of [room](../resources/room.md) objects contained in a **roomList**. 
 <!-- {
   "blockType": "request",
-  "name": "get_rooms"
+  "name": "get_rooms_in_roomlist"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist('id-of-roomlist')/rooms
+GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist/bldg2@contoso.com/rooms
 ```
 
 #### Response
@@ -219,8 +267,9 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
+  "name": "get_rooms_in_roomlist",
   "truncated": true,
-  "@odata.type": "microsoft.graph.place",
+  "@odata.type": "microsoft.graph.room",
   "isCollection": true
 } -->
 
@@ -229,16 +278,16 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/microsoft.graph.roomList('bldg2%40contoso.com')/rooms",
   "value": [
     {
-      "@odata.type": "microsoft.graph.room",
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
-      "emailAddress": "cf3235@contoso.com",
-      "displayName": "Conf Room 32/35 (25)",
+      "emailAddress": "cf200@contoso.com",
+      "displayName": "Conf Room 200",
       "address": {
-        "street": "One Microsoft Way",
-        "city": "Redmond",
-        "state": "WA",
+        "street": "4567 Main Street",
+        "city": "Buffalo",
+        "state": "NY",
         "postalCode": "98052",
         "countryOrRegion": "USA"
       },
@@ -248,15 +297,15 @@ Content-type: application/json
       },
       "phone": "000-000-0000",
       "nickname": "Conf Room",
-      "label": "35",
-      "capacity": "50",
-      "building": "32",
-      "floorNumber": 3,
+      "label": "200",
+      "capacity": "40",
+      "building": "2",
+      "floorNumber": 2,
       "isManaged": true,
       "isWheelchairAccessible": false,
       "bookingType": "standard",
       "tags": [
-        "bean bags",
+        "benches",
         "nice view"
       ],
       "audioDeviceName": null,
