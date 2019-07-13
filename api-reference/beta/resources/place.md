@@ -31,8 +31,8 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 
 | Method                              | Return Type                  | Description |
 |:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | [place](place.md) collection | Get a collection of the specified type of **place** objects defined in the tenant. |
-| [Get place](../api/place-get.md)    | [place](place.md)            | Get the properties and relationships of a specified **place** object. |
+| [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** objects defined in the tenant. |
+| [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of a specified **place** object. |
 
 ## Properties
 
