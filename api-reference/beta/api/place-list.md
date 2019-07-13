@@ -51,10 +51,10 @@ GET /places/microsoft.graph.roomlist
 To get all the rooms in the specified room list:
 
 ```http
-GET /places/microsoft.graph.roomlist/{room-list-emailaddress}/rooms
+GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**Note**: To get rooms in a room list, you must specify the room list by its email address. 
+>**Note**: To get rooms in a room list, you must specify the room list by its **emailAddress** property, not by its **id**. 
 
 ## Optional query parameters
 
@@ -256,7 +256,7 @@ The following example shows how to get a list of [room](../resources/room.md) ob
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist/bldg2@contoso.com/rooms
+GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms
 ```
 
 #### Response
@@ -278,7 +278,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/microsoft.graph.roomList('bldg2%40contoso.com')/rooms",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places('bldg2%40contoso.com')/microsoft.graph.roomList/rooms",
   "value": [
     {
       "id": "3162F1E1-C4C0-604B-51D8-91DA78970B97",
