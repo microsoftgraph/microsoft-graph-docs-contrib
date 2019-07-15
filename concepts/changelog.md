@@ -912,7 +912,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition          | Beta        | Added the [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource type. |
-| Addition          | Beta        | Added the [Create and publish notification] (/graph/api/projectrome_notification_post?view=graph-rest-beta) API.|
+| Addition          | Beta        | Added the [Create and publish notification](/graph/api/projectrome_notification_post?view=graph-rest-beta) API.|
 
 ### Security APIs
 
