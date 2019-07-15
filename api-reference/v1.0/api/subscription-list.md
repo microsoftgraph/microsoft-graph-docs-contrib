@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/subscriptions
 
 ##### Response
 
-Here's an an example of the response.  Note that it may be truncated for brevity.  All supported properties appropriate for the request and the calling context will be returned from an actual call.
+Here's an example of the response.  Note that it may be truncated for brevity.  All supported properties appropriate for the request and the calling context will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

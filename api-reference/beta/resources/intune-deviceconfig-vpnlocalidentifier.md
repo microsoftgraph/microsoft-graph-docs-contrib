@@ -18,6 +18,8 @@ The type of VPN local identifier
 |Member|Value|Description|
 |:---|:---|:---|
 |deviceFQDN|0|Device Fully Qualified Domain Name|
+|empty|1|Empty|
+|clientCertificateSubjectName|2|Client Certificate Subject Name|
 
 
 
