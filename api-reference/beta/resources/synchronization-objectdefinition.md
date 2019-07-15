@@ -3,8 +3,8 @@ title: "objectDefinition resource type"
 description: "Describes an object and its attributes. Object definitions are part of directoryDefinition, which is updated as part of synchronizationSchema."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # objectDefinition resource type

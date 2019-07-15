@@ -3,8 +3,8 @@ title: "referencedObject resource type"
 description: "Describes a reference to another object defined in the same directory definition."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # referencedObject resource type

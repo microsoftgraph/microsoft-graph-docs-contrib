@@ -3,8 +3,8 @@ title: "stringKeyAttributeMappingSourceValuePair resource type"
 description: "Represents a key-value pair where the key is a string and the value is attributeMappingSource."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # stringKeyAttributeMappingSourceValuePair resource type

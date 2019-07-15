@@ -3,8 +3,8 @@ title: "attributeMappingFunctionSchema resource type"
 description: "Describes a function that can be used in an attribute mapping to transform values during synchronization."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # attributeMappingFunctionSchema resource type

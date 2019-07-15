@@ -3,8 +3,8 @@ title: "synchronizationQuarantine resource type"
 description: "Provides information about the quarantine state of a synchronizationJob."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationQuarantine resource type

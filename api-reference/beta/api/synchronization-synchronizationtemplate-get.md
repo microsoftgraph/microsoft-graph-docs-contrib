@@ -3,8 +3,8 @@ title: "Get synchronizationTemplate"
 description: "Retrieve a synchronization template by its identifier."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Get synchronizationTemplate

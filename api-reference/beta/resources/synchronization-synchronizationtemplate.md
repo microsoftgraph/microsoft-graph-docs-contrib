@@ -3,8 +3,8 @@ title: "synchronizationTemplate resource type"
 description: " anyone can retrieve the template to see the default settings, including the synchronization schema."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationTemplate resource type

@@ -3,8 +3,8 @@ title: "synchronizationTaskExecution resource type"
 description: "Summarizes the results of the synchronization job run."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationTaskExecution resource type

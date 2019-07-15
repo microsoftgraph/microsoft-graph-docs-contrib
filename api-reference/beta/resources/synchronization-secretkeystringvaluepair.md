@@ -3,8 +3,8 @@ title: "synchronizationSecretKeyStringValuePair resource type"
 description: "Represents a single secret value. "
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationSecretKeyStringValuePair resource type

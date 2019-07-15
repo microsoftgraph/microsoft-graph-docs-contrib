@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1539
+Content-Length: 1674
 
 {
   "value": {
@@ -104,7 +104,9 @@ Content-Length: 1539
     "configurationAccountType": "domainAccount",
     "allowPrinting": true,
     "allowScreenCapture": true,
-    "allowTextSuggestion": true
+    "allowTextSuggestion": true,
+    "localGuestAccountName": "Local Guest Account Name value",
+    "assessmentAppUserModelId": "Assessment App User Model Id value"
   }
 }
 ```

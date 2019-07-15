@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Represents a customer of a [bookingBsiness](bookingbusiness.md).
+Represents a customer of a [bookingBusiness](bookingbusiness.md).
 
 
 ## Methods
