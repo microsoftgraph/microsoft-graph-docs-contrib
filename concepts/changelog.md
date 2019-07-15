@@ -42,13 +42,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **localGuestAccount** member to the [secureAssessmentAccountType](/graph/api/resources/intune-deviceconfig-secureassessmentaccounttype?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **empty** and **clientCertificateSubjectName** members to the [vpnLocalIdentifier](/graph/api/resources/intune-deviceconfig-vpnlocalidentifier?view=graph-rest-beta) enum type|
 
-### Identity and access
-
-| **Change type** | **Version** | **Description**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Addition | v1.0 | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-1.0) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) resource. |
-| Addition | beta | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) resource. |
-
 ### Devices and apps (Microsoft Intune)
 
 |Change type|Version|Description|
@@ -56,11 +49,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **revision** property to the [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) entity|
 |Addition|beta|Added the **valuePrefix** property to the [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) entity|
 
-### OneDrive and Sharepoint APIs
+### Files (OneDrive)
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|beta|Added the **expirationDatetime** property to the [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) action. |
-|Addition|beta|Added the **password** property to the [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) action. |
+|Addition|beta|Added the **expirationDatetime** and **password** properties to the [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) action. |
+
+### Identity and access
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition | v1.0 | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-1.0) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) resource. |
+| Addition | beta | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) resource. |
 
 ## June 2019
 
