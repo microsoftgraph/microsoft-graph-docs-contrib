@@ -1,25 +1,25 @@
 ---
-title: "List importedWindowsAutopilotDeviceIdentityUploads"
-description: "List properties and relationships of the importedWindowsAutopilotDeviceIdentityUpload objects."
+title: "getEffectivePermissions function"
+description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
 
-# List importedWindowsAutopilotDeviceIdentityUploads
+# getEffectivePermissions function
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-List properties and relationships of the [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) objects.
+Not yet documented
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
+GET /deviceManagement/getEffectivePermissions
 ```
 
 ## Request headers
@@ -39,17 +39,24 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that can be used with this function.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|scope|String|Not yet documented|
+
+
 
 ## Response
-If successful, this method returns a `200 OK` response code and a collection of [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) objects in the response body.
+If successful, this function returns a `200 OK` response code and a [rolePermission](../resources/intune-rbac-rolepermission.md) collection in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
+GET https://graph.microsoft.com/beta/deviceManagement/getEffectivePermissions(scope='parameterValue')
 ```
 
 ### Response
@@ -57,15 +64,26 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 270
+Content-Length: 471
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityUpload",
-      "id": "8d639524-9524-8d63-2495-638d2495638d",
-      "createdDateTimeUtc": "2016-12-31T23:59:45.8788427-08:00",
-      "status": "pending"
+      "@odata.type": "microsoft.graph.rolePermission",
+      "actions": [
+        "Actions value"
+      ],
+      "resourceActions": [
+        {
+          "@odata.type": "microsoft.graph.resourceAction",
+          "allowedResourceActions": [
+            "Allowed Resource Actions value"
+          ],
+          "notAllowedResourceActions": [
+            "Not Allowed Resource Actions value"
+          ]
+        }
+      ]
     }
   ]
 }
