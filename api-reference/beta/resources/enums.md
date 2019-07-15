@@ -3,6 +3,18 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values"
 ---
 
+### registrationAuthMethod values
+
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
+
 ### contactRelationship values
 
 |Member|Value|Description|
