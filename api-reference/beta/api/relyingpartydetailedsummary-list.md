@@ -2,7 +2,7 @@
 title: "List relyingPartyDetailedSummary"
 description: "Retrieve the properties and relationships of relyingpartydetailedsummary object."
 localization_priority: Normal
-author: "luleonpla"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /relyingPartyDetailedSummary
+GET /reports/relyingPartyDetailedSummary
 ```
 ## Function parameters
 
@@ -71,7 +71,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET /reports/getRelyingPartySummary(period={period_value})
+GET https://graph.microsoft.com/beta/reports/getRelyingPartySummary(period={period_value})
 ```
 
 ### Response

@@ -2,7 +2,7 @@
 title: "relyingPartyDetailedSummary resource type"
 description: "Represents a relying party in AD FS"
 localization_priority: Normal
-author: "luleonpla"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
