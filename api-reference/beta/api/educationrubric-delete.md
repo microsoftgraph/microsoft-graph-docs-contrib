@@ -1,9 +1,9 @@
 ---
 title: "Delete educationRubric"
-description: "Delete educationRubric."
+description: "Delete an educationRubric object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete educationRubric.
+Delete an [educationRubric](../resources/educationrubric.md) object.
 
 ## Permissions
 
@@ -29,14 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /education/me/rubrics/{id}
-DELETE /education/users/{id}/rubrics/{id}
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -44,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 

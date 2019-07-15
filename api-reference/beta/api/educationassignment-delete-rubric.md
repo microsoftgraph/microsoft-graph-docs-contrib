@@ -1,9 +1,9 @@
 ---
-title: "Detach educationRubric from assignment"
-description: "Use this API to detach an educationRubric from an assignment."
+title: "Remove educationRubric from assignment"
+description: "Remove an educationRubric from an educationAssignment"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to detach an educationRubric from an assignment.
+Remove an [educationRubric](../resources/educationrubric.md) from an [educationAssignment](../resources/educationassignment.md).  This does not delete the rubric itself.
 
 ## Permissions
 
@@ -28,8 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /education/me/assignments/{id}/rubric/$ref
-DELETE /education/users/{id}/assignments/{id}/rubric/$ref
 DELETE /education/classes/{id}/assignments/{id}/rubric/$ref
 ```
 
@@ -37,7 +35,7 @@ DELETE /education/classes/{id}/assignments/{id}/rubric/$ref
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -45,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 

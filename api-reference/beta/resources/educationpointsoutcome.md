@@ -2,8 +2,8 @@
 title: "educationPointsOutcome resource type"
 description: "An educationOutcome that gives a numerical grade"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -11,22 +11,19 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An educationOutcome that gives a numerical grade.
+An [educationOutcome](educationoutcome.md) that gives a numerical grade.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get educationOutcome](../api/educationoutcome-get.md) | [educationOutcome](educationoutcome.md) | Read properties and relationships of educationOutcome object. |
-| [Update](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| Read-only.|
-|lastModifiedBy|[identitySet](identityset.md)||
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |points|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|The numeric grade the teacher has given the student for this assignment.|
 |publishedPoints|[educationAssignmentPointsGrade](educationassignmentpointsgrade.md)|A copy of the points property that is made when the grade is released to the student.|
 
@@ -50,11 +47,26 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String (identifier)",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "points": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"},
-  "publishedPoints": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"}
+    "@odata.type": "#microsoft.education.assignments.api.educationPointsOutcome",
+    "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
+    "points": {
+        "gradedDateTime": "2019-07-15T22:36:02.2592364Z",
+        "points": 75,
+        "gradedBy": {
+            "user": {
+                "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
+            }
+        }
+    },
+    "publishedPoints": {
+        "gradedDateTime": "2019-07-15T22:36:02.2592364Z",
+        "points": 75,
+        "gradedBy": {
+            "user": {
+                "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
+            }
+        }
+    }
 }
 ```
 

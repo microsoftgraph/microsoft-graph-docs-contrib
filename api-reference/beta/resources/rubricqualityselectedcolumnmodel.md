@@ -2,8 +2,8 @@
 title: "rubricQualitySelectedColumnModel resource type"
 description: "Indicates the rubricLevel selected by the teacher when grading an educationRubric"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -17,8 +17,8 @@ Indicates the [rubricLevel](rubriclevel.md) selected by the teacher when grading
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|columnId|String|Id of the selected column.|
-|qualityId|String|Id of the associated quality.|
+|columnId|String|ID of the selected level for this quality.|
+|qualityId|String|ID of the associated quality.|
 
 ## JSON representation
 

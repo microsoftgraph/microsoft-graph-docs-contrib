@@ -2,8 +2,8 @@
 title: "Get educationOutcome"
 description: "Retrieve the properties and relationships of educationoutcome object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of educationoutcome object.
+Retrieve the properties and relationships of an [educationOutcome](../resources/educationoutcome.md) object.
 
 ## Permissions
 
@@ -28,8 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /education/me/assignments/{id}/submissions/{id}/outcomes/{id}
-GET /education/users/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 ```
 
@@ -37,7 +35,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 

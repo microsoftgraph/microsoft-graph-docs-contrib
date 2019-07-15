@@ -2,8 +2,8 @@
 title: "rubricCriterion resource type"
 description: "A criterion of a rubric"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -18,7 +18,6 @@ A criterion of a rubric. See [educationRubric](educationrubric.md) for a descrip
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |description|[itemBody](itembody.md)|The description of this criterion.|
-|id|String||
 
 ## JSON representation
 
@@ -35,8 +34,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "description": {"@odata.type": "microsoft.graph.itemBody"},
-  "id": "String"
+  "description": {"@odata.type": "microsoft.graph.itemBody"}
 }
 ```
 

@@ -2,8 +2,8 @@
 title: "rubricQuality resource type"
 description: "A quality of a rubric"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -20,7 +20,7 @@ A quality of a rubric. See [educationRubric](educationrubric.md) for a descripti
 |criteria|[rubricCriterion](rubriccriterion.md) collection|The collection of criteria for this rubric quality.|
 |description|[itemBody](itembody.md)|The description of this rubric quality.|
 |displayName|String|The name of this rubric quality.|
-|qualityId|String||
+|qualityId|String|The id of this resource.|
 |weight|Single|If present, a numerical weight for this quality.  Weights must add up to 100.|
 
 ## JSON representation
@@ -41,7 +41,6 @@ The following is a JSON representation of the resource.
   "criteria": [{"@odata.type": "microsoft.graph.rubricCriterion"}],
   "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
-  "id": "String",
   "qualityId": "String",
   "weight": "Single"
 }

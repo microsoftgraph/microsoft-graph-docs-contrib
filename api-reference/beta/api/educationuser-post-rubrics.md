@@ -1,9 +1,9 @@
 ---
 title: "Create educationRubric"
-description: "Use this API to create a new educationRubric."
+description: "Create a new educationRubric object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new educationRubric.
+Create a new [educationRubric](../resources/educationrubric.md) object.
 
 ## Permissions
 
@@ -29,29 +29,27 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /education/me/rubrics
-POST /education/users/{id}/rubrics
-POST /education/schools/{id}/users/{id}/rubrics
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
-In the request body, supply a JSON representation of [educationRubric](../resources/educationrubric.md) object.
+In the request body, supply a JSON representation of an [educationRubric](../resources/educationrubric.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [educationRubric](../resources/educationrubric.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [educationRubric](../resources/educationrubric.md) object in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the request to post a credit rubric (a rubric with no points).
 <!-- {
   "blockType": "request",
   "name": "create_educationrubric_from_educationuser"
@@ -62,53 +60,159 @@ POST https://graph.microsoft.com/beta/education/me/rubrics
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": {
-    "contentType": "contentType-value",
-    "content": "content-value"
-  },
-  "qualities": [
-    {
-      "displayName": "displayName-value",
-      "description": {
-        "contentType": "contentType-value",
-        "content": "content-value"
-      },
-      "weight": "Single",
-      "criteria": [
+    "displayName":"Example Credit Rubric",
+    "description":{
+        "content":"This is an example of a credit rubric (no points)",
+        "contentType":"text"
+    },
+    "levels":[
         {
-          "description": {
-            "contentType": "contentType-value",
-            "content": "content-value"
-          }
+            "displayName":"Good",
+            "description":{
+                "content":"",
+                "contentType":"text"
+            }
+        },
+        {
+            "displayName":"Poor",
+            "description":{
+                "content":"",
+                "contentType":"text"
+            }
         }
-      ]
+    ],
+    "qualities":[
+        {
+            "description":{
+                "content":"Argument",
+                "contentType":"text"
+            },
+            "criteria":[
+                {
+                    "description":{
+                        "content":"The essay's argument is persuasive.",
+                        "contentType":"text"
+                    }
+                },
+                {
+                    "description":{
+                        "content":"The essay's argument does not make sense.",
+                        "contentType":"text"
+                    }
+                }
+            ]
+        },
+        {
+            "description":{
+                "content":"Spelling and Grammar",
+                "contentType":"text"
+            },
+            "criteria":[
+                {
+                    "description":{
+                        "content":"The essay uses proper spelling and grammar with few or no errors.",
+                        "contentType":"text"
+                    }
+                },
+                {
+                    "description":{
+                        "content":"The essay has numerous errors in spelling and/or grammar.",
+                        "contentType":"text"
+                    }
+                }
+            ]
+        }
+    ]
+}
+```
+
+The following is an example of the request to post a rubric with points.
+<!-- {
+  "blockType": "request",
+  "name": "create_educationrubric_from_educationuser"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/education/me/rubrics
+Content-type: application/json
+
+{
+    "displayName":"Example Points Rubric",
+    "description":{
+        "content":"This is an example of a rubric with points",
+        "contentType":"text"
+    },
+    "levels":[
+        {
+            "displayName":"Good",
+            "description":{
+                "content":"",
+                "contentType":"text"
+            },
+            "grading":{
+                "@odata.type":"#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+                "maxPoints":2
+            }
+        },
+        {
+            "displayName":"Poor",
+            "description":{
+                "content":"",
+                "contentType":"text"
+            },
+            "grading":{
+                "@odata.type":"#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+                "maxPoints":1
+            }
+        }
+    ],
+    "qualities":[
+        {
+            "description":{
+                "content":"Argument",
+                "contentType":"text"
+            },
+            "criteria":[
+                {
+                    "description":{
+                        "content":"The essay's argument is persuasive.",
+                        "contentType":"text"
+                    }
+                },
+                {
+                    "description":{
+                        "content":"The essay's argument does not make sense.",
+                        "contentType":"text"
+                    }
+                }
+            ],
+            "weight":50
+        },
+        {
+            "description":{
+                "content":"Spelling and Grammar",
+                "contentType":"text"
+            },
+            "criteria":[
+                {
+                    "description":{
+                        "content":"The essay uses proper spelling and grammar with few or no errors.",
+                        "contentType":"text"
+                    }
+                },
+                {
+                    "description":{
+                        "content":"The essay has numerous errors in spelling and/or grammar.",
+                        "contentType":"text"
+                    }
+                }
+            ],
+            "weight":50
+        }
+    ],
+    "grading":{
+        "@odata.type":"#microsoft.education.assignments.api.educationAssignmentPointsGradeType"
     }
-  ],
-  "levels": [
-    {
-      "displayName": "displayName-value",
-      "description": {
-        "contentType": "contentType-value",
-        "content": "content-value"
-      },
-      "grading": {
-        "@odata.type":"#microsoft.graph.educationAssignmentGradeType"
-      }
-    }
-  ],
-  "columnHeaders": [
-    {
-      "displayName": "displayName-value",
-      "description": {
-        "contentType": "contentType-value",
-        "content": "content-value"
-      },
-      "grading": {
-        "@odata.type":"#microsoft.graph.educationAssignmentGradeType"
-      }
-    }
-  ]
 }
 ```
 
@@ -130,57 +234,92 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "displayName": "displayName-value",
-  "description": {
-    "contentType": "contentType-value",
-    "content": "content-value"
-  },
-  "qualities": [
-    {
-      "qualityId": "qualityId-value",
-      "displayName": "displayName-value",
-      "description": {
-        "contentType": "contentType-value",
-        "content": "content-value"
-      },
-      "weight": "Single",
-      "criteria": [
+    "displayName": "Example Points Rubric",
+    "id": "bf040af7-a5ff-4abe-a8c8-1bdc532344c2",
+    "description": {
+        "content": "This is an example of a rubric with points",
+        "contentType": "text"
+    },
+    "levels": [
         {
-          "id": "id-value",
-          "description": {
-            "contentType": "contentType-value",
-            "content": "content-value"
-          }
+            "levelId": "519cd134-c513-40b9-aa71-fdb0d063c084",
+            "displayName": "Good",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+                "maxPoints": 2
+            }
+        },
+        {
+            "levelId": "db2a0c91-abef-44cb-b8b1-ef1f85ef4a77",
+            "displayName": "Poor",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            },
+            "grading": {
+                "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+                "maxPoints": 1
+            }
         }
-      ]
+    ],
+    "qualities": [
+        {
+            "qualityId": "bbf3fb4a-a794-4b51-a1ad-c22fb891c5d8",
+            "weight": 50,
+            "description": {
+                "content": "Argument",
+                "contentType": "text"
+            },
+            "criteria": [
+                {
+                    "id": "5e637d79-f26b-4ea6-acd7-73824f0c0967",
+                    "description": {
+                        "content": "The essay's argument is persuasive.",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "id": "ebdcc27f-d1ec-4aa3-9da7-bd8d7842e3d3",
+                    "description": {
+                        "content": "The essay's argument does not make sense.",
+                        "contentType": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "qualityId": "ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
+            "weight": 50,
+            "description": {
+                "content": "Spelling and Grammar",
+                "contentType": "text"
+            },
+            "criteria": [
+                {
+                    "id": "5417252a-f810-41eb-9a83-09276a258a08",
+                    "description": {
+                        "content": "The essay uses proper spelling and grammar with few or no errors.",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "id": "5de220bd-74b9-41a7-85d5-9be7c6cb7933",
+                    "description": {
+                        "content": "The essay has numerous errors in spelling and/or grammar.",
+                        "contentType": "text"
+                    }
+                }
+            ]
+        }
+    ],
+    "grading": {
+        "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+        "maxPoints": 100
     }
-  ],
-  "levels": [
-    {
-      "levelId": "levelId-value",
-      "displayName": "displayName-value",
-      "description": {
-        "contentType": "contentType-value",
-        "content": "content-value"
-      },
-      "grading": {
-        "@odata.type":"#microsoft.graph.educationAssignmentGradeType"
-      }
-    }
-  ],
-  "columnHeaders": [
-    {
-      "levelId": "levelId-value",
-      "displayName": "displayName-value",
-      "description": {
-        "contentType": "contentType-value",
-        "content": "content-value"
-      },
-      "grading": {
-        "@odata.type":"#microsoft.graph.educationAssignmentGradeType"
-      }
-    }
-  ]
 }
 ```
 

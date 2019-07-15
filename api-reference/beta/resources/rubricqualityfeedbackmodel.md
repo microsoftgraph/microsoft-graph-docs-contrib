@@ -2,8 +2,8 @@
 title: "rubricQualityFeedbackModel resource type"
 description: "Feedback related to a specific quality of an educationRubric"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -17,8 +17,8 @@ Feedback related to a specific [quality](rubricquality.md) of an [educationRubri
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|feedback|[itemBody](itembody.md)|Specific feedback for each quality of this rubric.|
-|qualityId|String||
+|feedback|[itemBody](itembody.md)|Specific feedback for one quality of this rubric.|
+|qualityId|String|The id of the [rubricQuality](rubricquality.md) that this feedback is related to.|
 
 ## JSON representation
 

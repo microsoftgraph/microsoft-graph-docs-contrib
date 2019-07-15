@@ -1,9 +1,9 @@
 ---
-title: "Update educationoutcome"
-description: "Update the properties of educationoutcome object."
+title: "Update educationOutcome"
+description: "Update the properties of educationOutcome object."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of an educationoutcome object.
+Update the properties of an [educationOutcome](../resources/educationoutcome.md) object.
 
 ## Permissions
 
@@ -28,8 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /education/me/assignments/{id}/submissions/{id}/outcomes/{id}
-PATCH /education/users/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 ```
 
@@ -37,20 +35,15 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-The educationOutcome object will be one of the derived types, [educationPointsOutcome](../resources/educationpointsoutcome.md), [educationFeedbackOutcome](../resources/educationfeedbackoutcome.md), or [educationRubricOutcome](../resources/educationrubricoutcome.md). Supply the specific properties relevant to the type of outcome being patched.
+The educationOutcome object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**. Supply the specific properties relevant to the type of outcome being patched.
 
-All derived outcome types have a regular and a "published" property appropriate to that type of outcome; e.g., "points" and "publishedPoints," "feedback" and "publishedFeedback," etc. Do not update the "published" property; it is for internal use. E.g., to assign points to an educationPointsOutcome, patch the "points" property, but do not patch "publishedPoints."
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|lastModifiedBy|identitySet||
-|lastModifiedDateTime|DateTimeOffset||
+All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. Do not update the "published" property; it is for internal use. For example, to assign points to an **educationPointsOutcome**, patch the **points** property, but do not patch **publishedPoints**.
 
 ## Response
 
@@ -60,7 +53,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ### Request
 
-The following is an example of the request.
+The following is an example of the request for updating a feedback outcome.
 <!-- {
   "blockType": "request",
   "name": "update_educationoutcome"
@@ -71,21 +64,73 @@ PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions
 Content-type: application/json
 
 {
-  "lastModifiedBy": {
-    "application": {
-      "id": "id-value",
-      "displayName": "displayName-value"
-    },
-    "device": {
-      "id": "id-value",
-      "displayName": "displayName-value"
-    },
-    "user": {
-      "id": "id-value",
-      "displayName": "displayName-value"
+    "@odata.type":"#microsoft.education.assignments.api.educationFeedbackOutcome",
+    "feedback":{
+        "text":{
+            "content":"This is feedback for the assignment as a whole.",
+            "contentType":"text"
+        }
     }
-  },
-  "lastModifiedDateTime": "datetime-value"
+}
+```
+
+The following is an example of the request for updating a points outcome.
+<!-- {
+  "blockType": "request",
+  "name": "update_educationoutcome"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+Content-type: application/json
+
+{
+    "@odata.type":"#microsoft.education.assignments.api.educationPointsOutcome",
+    "points":{
+        "@odata.type":"#microsoft.education.assignments.api.educationAssignmentPointsGrade",
+        "points":85
+    }
+}
+```
+
+The following is an example of the request for updating a rubric outcome.
+<!-- {
+  "blockType": "request",
+  "name": "update_educationoutcome"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+Content-type: application/json
+
+{
+    "@odata.type":"#microsoft.education.assignments.api.educationRubricOutcome",
+    "rubricQualityFeedback":[
+        {
+            "qualityId":"ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
+            "feedback":{
+                "content":"This is feedback specific to this quality of the rubric.",
+                "contentType":"text"
+            }
+        },
+        {
+            "qualityId":"bbf3fb4a-a794-4b51-a1ad-c22fb891c5d8",
+            "feedback":{
+                "content":"This is feedback specific to this quality of the rubric.",
+                "contentType":"text"
+            }
+        }
+    ],
+    "rubricQualitySelectedLevels":[
+        {
+            "qualityId":"ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
+            "columnId":"db2a0c91-abef-44cb-b8b1-ef1f85ef4a77"
+        },
+        {
+            "qualityId":"bbf3fb4a-a794-4b51-a1ad-c22fb891c5d8",
+            "columnId":"519cd134-c513-40b9-aa71-fdb0d063c084"
+        }
+    ]
 }
 ```
 
@@ -107,22 +152,22 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "lastModifiedBy": {
-    "application": {
-      "id": "id-value",
-      "displayName": "displayName-value"
+    "@odata.type":"#microsoft.education.assignments.api.educationPointsOutcome",
+    "id":"ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
+    "lastModifiedBy":{
+        "user":{
+            "id":"9391878d-903c-406c-bb1c-0f17d00fd878"
+        }
     },
-    "device": {
-      "id": "id-value",
-      "displayName": "displayName-value"
-    },
-    "user": {
-      "id": "id-value",
-      "displayName": "displayName-value"
+    "points":{
+        "gradedDateTime":"2019-07-15T22:35:48.2429387Z",
+        "points":85,
+        "gradedBy":{
+            "user":{
+                "id":"9391878d-903c-406c-bb1c-0f17d00fd878"
+            }
+        }
     }
-  },
-  "lastModifiedDateTime": "datetime-value",
-  "id": "id-value"
 }
 ```
 

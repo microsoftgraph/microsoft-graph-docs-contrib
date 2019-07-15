@@ -1,9 +1,9 @@
 ---
 title: "Get rubric attached to assignment"
-description: "Get the rubric attached to an assignment."
+description: "Get the educaitonRubric attached to an educationAssignment, if one exists."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the rubric attached to an assignment, if one exists.
+Get the [educationRubric](../resources/educationrubric.md) object attached to an [educationAssignment](../resources/educationassignment.md), if one exists.
 
 ## Permissions
 
@@ -28,8 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /education/me/assignments/{id}/rubric
-GET /education/users/{id}/assignments/{id}/rubric
 GET /education/classes/{id}/assignments/{id}/rubric
 ```
 
@@ -37,7 +35,7 @@ GET /education/classes/{id}/assignments/{id}/rubric
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -45,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [educationRubric](../resources/educationrubric.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an [educationRubric](../resources/educationrubric.md) object in the response body.
 
 ## Examples
 
@@ -98,7 +96,6 @@ Content-type: application/json
           "weight": "Single",
           "criteria": [
             {
-              "id": "id-value",
               "description": {
                 "contentType": "contentType-value",
                 "content": "content-value"
@@ -108,18 +105,6 @@ Content-type: application/json
         }
       ],
       "levels": [
-        {
-          "levelId": "levelId-value",
-          "displayName": "displayName-value",
-          "description": {
-            "contentType": "contentType-value",
-            "content": "content-value"
-          },
-          "grading": {
-          }
-        }
-      ],
-      "columnHeaders": [
         {
           "levelId": "levelId-value",
           "displayName": "displayName-value",

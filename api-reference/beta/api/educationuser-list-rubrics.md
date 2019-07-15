@@ -2,8 +2,8 @@
 title: "List rubrics"
 description: "Retrieve a list of educationrubric objects."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of educationrubric objects.
+Retrieve a list of [educationRubric](../resources/educationrubric.md) objects.
 
 ## Permissions
 
@@ -29,19 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /education/me/rubrics
-GET /education/users/{id}/rubrics
-GET /education/schools/{id}/users/{id}/rubrics
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData Query Parameters](/graph/query-parameters)
 
 ## Request headers
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -84,59 +78,82 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "displayName": "displayName-value",
-      "description": {
-        "contentType": "contentType-value",
-        "content": "content-value"
-      },
-      "qualities": [
+    "value":[
         {
-          "qualityId": "qualityId-value",
-          "displayName": "displayName-value",
-          "description": {
-            "contentType": "contentType-value",
-            "content": "content-value"
-          },
-          "weight": "Single",
-          "criteria": [
-            {
-              "id": "id-value",
-              "description": {
-                "contentType": "contentType-value",
-                "content": "content-value"
-              }
-            }
-          ]
+            "displayName":"Example Credit Rubric",
+            "id":"c4459fcb-a761-4f70-ac5b-e9466cb77c2a",
+            "description":{
+                "content":"This is an example of a credit rubric (no points)",
+                "contentType":"text"
+            },
+            "levels":[
+                {
+                    "levelId":"dec665d4-cf1b-4481-ac61-1d5b6188f4f5",
+                    "displayName":"Good",
+                    "description":{
+                        "content":"",
+                        "contentType":"text"
+                    }
+                },
+                {
+                    "levelId":"3f2e4b0f-508e-4005-984b-17e061bc5377",
+                    "displayName":"Poor",
+                    "description":{
+                        "content":"",
+                        "contentType":"text"
+                    }
+                }
+            ],
+            "qualities":[
+                {
+                    "qualityId":"dc79dcbf-b536-4797-9c5b-902f28129fd0",
+                    "description":{
+                        "content":"Argument",
+                        "contentType":"text"
+                    },
+                    "criteria":[
+                        {
+                            "id":"8937fa15-4a7c-4f27-bd01-ca3471d2d1d5",
+                            "description":{
+                                "content":"The essay's argument is persuasive.",
+                                "contentType":"text"
+                            }
+                        },
+                        {
+                            "id":"4dfb5263-1d3f-4f0a-93ef-d24d800d0f69",
+                            "description":{
+                                "content":"The essay's argument does not make sense.",
+                                "contentType":"text"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "qualityId":"7e087062-ac25-4629-8386-a946350936db",
+                    "description":{
+                        "content":"Spelling and Grammar",
+                        "contentType":"text"
+                    },
+                    "criteria":[
+                        {
+                            "id":"12276eb2-122c-4ad2-ba92-335ea798c88e",
+                            "description":{
+                                "content":"The essay uses proper spelling and grammar with few or no errors.",
+                                "contentType":"text"
+                            }
+                        },
+                        {
+                            "id":"3db7e6b2-2b1b-4f8e-9fca-bea701159145",
+                            "description":{
+                                "content":"The essay has numerous errors in spelling and/or grammar.",
+                                "contentType":"text"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
-      ],
-      "levels": [
-        {
-          "levelId": "levelId-value",
-          "displayName": "displayName-value",
-          "description": {
-            "contentType": "contentType-value",
-            "content": "content-value"
-          },
-          "grading": {
-          }
-        }
-      ],
-      "columnHeaders": [
-        {
-          "levelId": "levelId-value",
-          "displayName": "displayName-value",
-          "description": {
-            "contentType": "contentType-value",
-            "content": "content-value"
-          },
-          "grading": {
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
 ```
 

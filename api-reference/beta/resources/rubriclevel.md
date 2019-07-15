@@ -2,8 +2,8 @@
 title: "rubricLevel resource type"
 description: "A level of a rubric"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -19,8 +19,8 @@ A level of a rubric. See [educationRubric](educationrubric.md) for a description
 |:-------------|:------------|:------------|
 |description|[itemBody](itembody.md)|The description of this rubric level.|
 |displayName|String|The name of this rubric level.|
-|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)||
-|levelId|String||
+|grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Null if this is a no-points rubric; [educationAssignmentsPointsGradeType](educationassignmentspointsgradetyp.md) if it is a points rubric.|
+|levelId|String|The id of this resource.|
 
 ## JSON representation
 
@@ -40,7 +40,6 @@ The following is a JSON representation of the resource.
   "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
   "grading": {"@odata.type": "microsoft.graph.educationAssignmentGradeType"},
-  "id": "String",
   "levelId": "String"
 }
 ```

@@ -2,8 +2,8 @@
 title: "educationOutcome resource type"
 description: "The result of grading an assignment"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -18,15 +18,7 @@ The result of grading an assignment. This is a base class; the derived types are
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get educationOutcome](../api/educationoutcome-get.md) | [educationOutcome](educationoutcome.md) | Read properties and relationships of educationOutcome object. |
-| [Update](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
-
-## Properties
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id|String| Read-only.|
-|lastModifiedBy|[identitySet](identityset.md)||
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Relationships
 

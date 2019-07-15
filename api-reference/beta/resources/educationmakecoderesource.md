@@ -2,8 +2,8 @@
 title: "educationMakeCodeResource resource type"
 description: "A MakeCode resource"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A MakeCode resource.
+A resource representing a [MakeCode](https://www.microsoft.com/en-us/makecode) project.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|mkcd|String||
-|url|String||
+|mkcd|String|Id of the MakeCode project|
+|url|String|Host for the type of MakeCode resource (for example, arcade, microbit)|
 
 ## JSON representation
 
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "mkcd": "String",
-  "url": "String"
+  "mkcd": "e3781330-8f62-4d9d-a3de-aada09bd603c",
+  "url": "https://arcade.makecode.com"
 }
 ```
 

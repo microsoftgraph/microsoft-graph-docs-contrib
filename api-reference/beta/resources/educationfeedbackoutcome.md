@@ -2,8 +2,8 @@
 title: "educationFeedbackOutcome resource type"
 description: "An educationOutcome that gives feedback in the form of text"
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "resourcePageType"
 ---
 
@@ -11,14 +11,14 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An educationOutcome that gives feedback in the form of text.
+Represents feedback on an [educationOutcome](educationoutcome.md) object in the form of text. 
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get educationOutcome](../api/educationoutcome-get.md) | [educationOutcome](educationoutcome.md) | Read properties and relationships of educationOutcome object. |
-| [Update](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
+| [Update educationOutcome](../api/educationoutcome-update.md) | [educationOutcome](educationoutcome.md) | Update educationOutcome object. |
 
 ## Properties
 
@@ -50,11 +50,32 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
-  "id": "String (identifier)",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
+    "@odata.type": "#microsoft.education.assignments.api.educationFeedbackOutcome",
+    "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
+    "feedback": {
+        "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
+        "text": {
+            "content": "This is feedback for the assignment as a whole.",
+            "contentType": "text"
+        },
+        "feedbackBy": {
+            "user": {
+                "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
+            }
+        }
+    },
+    "publishedFeedback": {
+        "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
+        "text": {
+            "content": "This is feedback for the assignment as a whole.",
+            "contentType": "text"
+        },
+        "feedbackBy": {
+            "user": {
+                "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
+            }
+        }
+    }
 }
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "Attach educationRubric to assignment"
-description: "Use this API to attach an existing educationRubric to an assignment."
+description: "Attach an existing educationRubric object to an educationAssignment."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dipakboyed"
+ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to attach an existing educationRubric to an assignment.
+Attach an existing [educationRubric](../resources/educationrubric.md) object to an [educationAssignment](../resources/educationassignment.md).
 
 ## Permissions
 
@@ -28,24 +28,22 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/me/assignments/{id}/rubric/$ref
-POST /education/users/{id}/assignments/{id}/rubric/$ref
-POST /education/classes/{id}/assignments/{id}/rubric/$ref
+PUT /education/classes/{id}/assignments/{id}/rubric/$ref
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
-In the request body, supply the odata id of an existing [educationRubric](../resources/educationrubric.md) object.
+In the request body, supply the OData ID of an existing [educationRubric](../resources/educationrubric.md) object.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
