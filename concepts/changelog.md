@@ -56,6 +56,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition|beta|Added the **revision** property to the [groupPolicyDefinitionFile](/graph/api/resources/intune-grouppolicy-grouppolicydefinitionfile?view=graph-rest-beta) entity|
 |Addition|beta|Added the **valuePrefix** property to the [groupPolicyPresentationListBox](/graph/api/resources/intune-grouppolicy-grouppolicypresentationlistbox?view=graph-rest-beta) entity|
 
+### OneDrive and Sharepoint APIs
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added the **expirationDatetime** property to the [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) action. |
+|Addition|beta|Added the **password** property to the [createLink](/graph/api/driveitem-createlink?view=graph-rest-beta) action. |
+
 ## June 2019
 
 ### Devices and apps (Microsoft Intune)
@@ -935,7 +941,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Addition          | Beta        | Added the [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta) resource type. |
-| Addition          | Beta        | Added the [Create and publish notification] (/graph/api/projectrome_notification_post?view=graph-rest-beta) API.|
+| Addition          | Beta        | Added the [Create and publish notification](/graph/api/projectrome_notification_post?view=graph-rest-beta) API.|
 
 ### Security APIs
 
