@@ -1,6 +1,6 @@
 ---
 title: "List activityStatistics"
-description: "Retrieve a list of activityStatistics objects."
+description: "Retrieve a list of the collection of activityStatistics objects."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -29,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET  https://graph.microsoft.com/beta/me/analytics/activitystatistics
+
+GET  https://graph.microsoft.com/beta/users(id|userPrincipalName)/analytics/activitystatistics
 
 ```
 ## Request headers
@@ -62,7 +64,9 @@ GET https://graph.microsoft.com/beta/users(id|userPrincipalName)/analytics/activ
 
 ### Response
 
-The following is an example of a response with all related activity statistics for a user.
+The following is an example of a response with all related activity statistics for a user. This response only shows the first day of a week's activities to shorten it for readability.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

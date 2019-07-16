@@ -1,6 +1,6 @@
 ---
 title: "Get activityStatistics"
-description: "Retrieve the properties of a collection of activityStatistics objects."
+description: "Retrieve the properties of an activityStatistics object for a user."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -25,11 +25,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+For the HTTP request, **id** represents {**activity_startdate_enddate**}, where **activity** can be {**email**|**meeting**|**chat**|**call**|**focus**}.
+
 <!-- { "blockType": "ignored" }  -->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/{Call|Chat|Email|Focus|Meeting}_[id}
-
+GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/{id}
 ```
 
 ## Request headers
@@ -44,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested collection of [activityStatistics](../resources/activitystatistics.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and the requested [activityStatistics](../resources/activitystatistics.md) object in the response body.
 
 ## Example
 
@@ -66,8 +67,6 @@ GET https://graph.microsoft.com/beta/users(id|userPrincipalName)/analytics/activ
 #### Response
 
 The following is an example of the response that gets activity statistics of a user for a specific day and activity.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
