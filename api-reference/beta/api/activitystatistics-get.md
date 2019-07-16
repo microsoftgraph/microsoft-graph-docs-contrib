@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-For the HTTP request, **id** represents {**activity_startdate_enddate**}, where **activity** can be {**email**|**meeting**|**chat**|**call**|**focus**}.
+> **Note:** For the HTTP request, **id** represents {**activity_startdate_enddate**}, where **activity** can be {**email**|**meeting**|**chat**|**call**|**focus**}.
 
 <!-- { "blockType": "ignored" }  -->
 
