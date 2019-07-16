@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application| Group.Read.All,Group.ReadWrite.All|
 
 > [!NOTE]
-> This is a [protected API](/graph/docs/concepts/teams-protected-apis) when called with application permissions.
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/docs/concepts/teams-protected-apis).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
