@@ -17,14 +17,16 @@ Use this API to assign [publishedResource](../resources/onpremisespublishedresou
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
+| Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+| Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /onPremisesPublishingProfiles(publishingType)/publishedResources(id1)/agentGroups/$ref
 ```
@@ -33,17 +35,17 @@ POST /onPremisesPublishingProfiles(publishingType)/publishedResources(id1)/agent
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
-In the request body, supply a JSON representation of OData reference to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Response
 
 If successful, this method returns `201, Created` response code and [publishedResource](../resources/onpremisespublishedresource.md) object  in the response body.
 
-## Example
+## Examples
 
 ### Request
 
@@ -54,20 +56,21 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources(id1)/agentGroups/$ref
-```
-
-In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('1234b780-965f-4149-85c5-a8c73e58b67d')/agentGroups/$ref)/agentGroups/$ref
+Content-type: application/json
 
 ```http
 {
- "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups(id2)/"
+ "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups('2B032383-897C-42BA-917E-700B6890BDC3')/"
 }
 ```
 
 ### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -78,7 +81,7 @@ The following is an example of the response. Note: The response object shown her
 HTTP/1.1 204
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

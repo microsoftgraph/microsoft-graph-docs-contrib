@@ -39,7 +39,7 @@ A tenant admin can configure for each onPremisesPublishingProfile the [time wind
 | [Assign publishedResource to onPremisesAgentGroup](../api/onpremisespublishedresource-post-agentgroups.md) | None |  |
 | [Remove publishedResource from onPremisesAgentGroup](../api/onpremisespublishedresource-delete-agentgroups.md) | None |  |
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

@@ -17,23 +17,25 @@ Use this API to create a new [publishedResource](../resources/onpremisespublishe
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
+| Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /onPremisesPublishingProfiles(publishingType)/publishedResources
 ```
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Name      |Description|
+|:----------|:----------|
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -50,7 +52,7 @@ In the request body, supply the values for the properties below:
 
 If successful, this method returns `201, Created` response code and [publishedResource](../resources/onpremisespublishedresource.md) object in the response body.
 
-## Example
+## Examples
 
 ### Request
 
@@ -68,11 +70,12 @@ POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning
 }
 ```
 
-In the request body, supply a JSON representation of [publishedResource](../resources/onpremisespublishedresource.md) object.
-
 ### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,11 +92,11 @@ HTTP/1.1 201 Created
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create publishedResource",
+  "description": "Get publishedResource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

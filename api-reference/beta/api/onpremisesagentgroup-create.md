@@ -17,23 +17,25 @@ Use this API to create a new onPremisesAgentGroup.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
+| Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
-POST /onPremisesPublishingProfiles(publishingType)/agentGroups
+POST /onPremisesPublishingProfiles/{id}/agentGroups/{id}/agents
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -49,14 +51,14 @@ In the request body, supply a JSON representation of [onPremisesAgentGroup](../r
 
 If successful, this method returns `201, Created` response code and [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.
 
-## Example
+## Examples
 
 ### Request
 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_onpremisesagentgroup_from_publishedresource"
+  "name": "create_onpremisesagent_from_onpremisesagentgroup"
 }-->
 
 ```http
@@ -73,7 +75,10 @@ In the request body, supply a JSON representation of [onPremisesAgentGroup](../r
 
 ### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,6 +87,8 @@ The following is an example of the response. Note: The response object shown her
 
 ```http
 HTTP/1.1 201 Created
+Content-type: application/json
+
 {
     "id": "4655ed41-1619-4848-92bb-0576d3038682"
     "displayName": "New Group"
@@ -90,11 +97,11 @@ HTTP/1.1 201 Created
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create onPremisesAgentGroup",
+  "description": "Create onPremisesAgent",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

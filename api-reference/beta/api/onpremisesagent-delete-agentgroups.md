@@ -17,15 +17,16 @@ Use this API to remove [onPremisesAgent](../resources/onpremisesagent.md) from [
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
+| Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 DELETE /onPremisesPublishingProfiles(publishingType)/agents(id1)/agentGroups(id2)/$ref
 ```
@@ -34,7 +35,7 @@ DELETE /onPremisesPublishingProfiles(publishingType)/agents(id1)/agentGroups(id2
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -42,39 +43,40 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code.
+If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 
 ### Request
 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_onpremisesagentgroup_from_onpremisesagent"
+  "name": "Remove onpremisesAgent from an onPremisesAgentGroup"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agents(id1)/agentGroups(id2)/$ref
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agents('1234b780-965f-4149-85c5-a8c73e58b67d')/agentGroups('8832388F-3814-4952-B288-FFB62081FE25')/$ref
 ```
 
 ### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesAgentGroup"
+  "truncated": true
 } -->
 
 ```http
-HTTP/1.1 204 No Conten
+HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create onPremisesAgentGroup",
+  "description": "Delete onPremisesAgent",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

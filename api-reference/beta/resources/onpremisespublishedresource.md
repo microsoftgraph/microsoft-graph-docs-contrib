@@ -47,7 +47,9 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.publishedResource"
+  "@odata.type": "microsoft.graph.publishedResource",
+  "baseType": "",
+  "keyProperty": "id"
 }-->
 
 ```json
@@ -59,7 +61,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

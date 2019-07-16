@@ -17,23 +17,25 @@ Update the properties of [onPremisesPublishingProfile](../resources/onpremisespu
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)              |
+| Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+| Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 PATCH /onPremisesPublishingProfiles(publishingType)/hybridAgentUpdaterConfiguration
 ```
 
-## Optional request headers
+## Request headers
 
 | Name       | Description|
 |:-----------|:-----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token} |
 
 ## Request body
 
@@ -63,10 +65,10 @@ The following is an example of the request.
 PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/hybridAgentUpdaterConfiguration
 {
    "updateWindow" :
-    {
+{
       "updateWindowStartTime" : "0:00:00"
       "updateWindowEndTime" : "23:59:00"
-    }
+  }
 }
 ```
 
@@ -145,7 +147,7 @@ HTTP/1.1 204
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2019-02-04 14:57:30 UTC -->
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "Update onpremisespublishingprofile",
