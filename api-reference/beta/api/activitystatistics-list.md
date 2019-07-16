@@ -1,6 +1,6 @@
 ---
 title: "List activityStatistics"
-description: "Retrieve a list of the collection of activityStatistics objects."
+description: "Retrieve a collection of activityStatistics objects."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of the collection of [activityStatistics](../resources/activitystatistics.md) objects.
+Retrieve a collection of [activityStatistics](../resources/activitystatistics.md) objects.
 
 ## Permissions
 
