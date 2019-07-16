@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4954
+Content-Length: 4949
 
 {
   "value": [
@@ -174,7 +174,7 @@ Content-Length: 4954
       "enableEAP": true,
       "enablePerfectForwardSecrecy": true,
       "enableUseInternalSubnetAttributes": true,
-      "localIdentifier": "deviceFQDN",
+      "localIdentifier": "empty",
       "remoteIdentifier": "Remote Identifier value",
       "securityAssociationParameters": {
         "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",

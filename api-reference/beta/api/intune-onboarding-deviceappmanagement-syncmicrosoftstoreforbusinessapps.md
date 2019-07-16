@@ -1,25 +1,25 @@
 ---
-title: "autopilotDeviceStream function"
-description: "Create a upload request with autopilot device stream in it."
+title: "syncMicrosoftStoreForBusinessApps action"
+description: "Syncs Intune account with Microsoft Store For Business"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
 
-# autopilotDeviceStream function
+# syncMicrosoftStoreForBusinessApps action
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Create a upload request with autopilot device stream in it.
+Syncs Intune account with Microsoft Store For Business
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/autopilotDeviceStream
+POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ```
 
 ## Request headers
@@ -42,26 +42,20 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a String in the response body.
+If successful, this action returns a `204 No Content` response code.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/autopilotDeviceStream
+POST https://graph.microsoft.com/beta/deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 48
-
-{
-  "value": "Autopilot Device Stream value"
-}
+HTTP/1.1 204 No Content
 ```
 
 
