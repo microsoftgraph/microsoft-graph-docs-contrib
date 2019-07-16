@@ -615,7 +615,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta| Introduced new resource [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
 |Addition | v1.0 | Added admin permissions support to [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0), and [tab](/graph/api/resources/teamstab?view=graph-rest-1.0) operations. |
 
-### Privileged Identity Management APIs
+### Identity and access | Privileged Identity Management
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -712,7 +712,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |beta| Introduced [riskyUsers API](/graph/api/resources/riskyuser?view=graph-rest-beta), which represents Azure AD users who are at risk, as detected by Azure AD Identity Protection. |
 
 
-### SignIn APIs
+### Identity and access | Audit logs
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -723,7 +723,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## October 2018
 
-### Delta query
+### Track changes
 
 | **Change type** | **Version** | **Description**                  |
 |:------------|:--------|:-----------------------------------------|
@@ -792,7 +792,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Removal         | v1.0        | This is a correction to the documentation: removed the **flag** property from the [contact](/graph/api/resources/contact?view=graph-rest-1.0) entity topic. The property was never made available in the **contact** entity.|
 
-### Privileged Identity Management APIs
+### Identity and access | Privileged Identity Management
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -808,7 +808,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## September 2018
 
-### Calls and online meetings API
+### Calls and online meetings
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -827,7 +827,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | Beta          | Added financials APIs for Dynamics 365 Business Central. For details, see the [Financials API reference](/graph/api/resources/dynamics-graph-reference?view=graph-rest-beta)
 
-### Microsoft Graph data connect
+### Data access (Microsoft Graph data connect)
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -930,7 +930,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | v1.0 and beta | The **internetMessageHeaders** property of the [message](/graph/api/resources/message?view=graph-rest-1.0) entity is now writeable on message creation. |
 
 
-### Project Rome notifications API
+### Notifications (Project Rome)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -947,7 +947,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2018
 
-### Delta query
+### Track changes
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1088,7 +1088,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2018
 
-### Application and servicePrincipal API changes
+### Identity and access
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1136,7 +1136,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition |Beta | Added the complex type [typedEmailAddress](/graph/api/resources/typedemailaddress?view=graph-rest-beta). |
 |Change | Beta | Changed the type of the **emailAddresses** property of [contact](/graph/api/resources/contact?view=graph-rest-beta) to be a collection of **typedEmailAddress** instances.|
 
-### Synchronization APIs
+### Identity and access | Synchronization
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1218,7 +1218,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Change|Beta|Updated the path to the [channel](/graph/api/resources/channel?view=graph-rest-beta) entity.|
 
 
-### Privileged Identity Management APIs
+### Identity and access | Privileged Identity Management
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1462,7 +1462,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |Addition | v1.0 | Added the following new complex types: <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-1.0) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-1.0) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-1.0) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-1.0)|
 
 
-### Project Rome APIs
+### Cross-device experiences (Project Rome)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1494,7 +1494,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## March 2018
 
-### ActivityFeedService APIs
+### Cross-device experiences (Project Rome)
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1848,11 +1848,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## December 2017
 
-### Delta query
+### Track changes
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Change      | v1.0    | Add optional query filtering capability to [users](/graph/api/user-delta?view=graph-rest-1.0) and [groups](/graph/api/group-delta?view=graph-rest-1.0). |
+| Change      | v1.0    | Add optional delta query filtering capability to [users](/graph/api/user-delta?view=graph-rest-1.0) and [groups](/graph/api/group-delta?view=graph-rest-1.0). |
 
 ### Devices and apps (Microsoft Intune)
 
@@ -1898,7 +1898,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## November 2017
 
-### Azure AD synchronization APIs
+### Identity and access | Synchronization
 
 | Change type | Version | Description                              |
 | :---------- | :------ | :--------------------------------------- |
@@ -2396,7 +2396,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## June 2017
 
-### Project Rome
+### Cross-device experiences (Project Rome)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2475,7 +2475,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Deletion        | Beta        | Removed the following entities:<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard** |
 
-### Project Rome
+### Cross-device experiences (Project Rome)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2497,7 +2497,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 |:--------------|:-----------|:--------------|
 | Change        | Beta       | Added support to [webhooks](/graph/api/resources/webhooks?view=graph-rest-beta) for users and groups.
 
-### Add delta query to v1.0
+### Track changes
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2708,7 +2708,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Change          | Beta        | Adminstrative unit APIs will be updated in preview (beta). The first set of changes will be applied on May 3, 2017. The changes include the following property renaming:<br />- **roleMemberInfo** complex type to **identity** complex type for the scopedRoleMembership entity<br />- **scopedAdministratorOf** navigation property to **scopedRoleMemberOf** for the user entity<br />- **scopedAdministrators** navigation property to **scopedRoleMembers** for the administrativeUnit entity<br />- **scopedAdministrators** navigation property to **scopedMembers** for the directoryRole entity |
 
-### Application and servicePrincipal API changes
+### Identity and access
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2998,7 +2998,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## December 2016
 
-### Delta query
+### Track changes
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -3173,7 +3173,7 @@ Added support for dynamic group membership through the public preview API, inclu
 | :-------------- | :---------- | :--------------------------------------- |
 | Change          | Beta        | Property _WebSite_ is renamed to _Websites_. For details, see [Upcoming changes to Contacts and People APIs](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/). |
 
-### Privileged Identity Management
+### Identity and access | Privileged Identity Management
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
