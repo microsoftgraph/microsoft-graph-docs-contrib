@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationMultiTextBoxes"
 description: "List properties and relationships of the groupPolicyPresentationMultiTextBox objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

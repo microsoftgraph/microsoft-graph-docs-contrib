@@ -1,7 +1,7 @@
 ---
 title: "Get userPFXCertificate"
 description: "Read properties and relationships of the userPFXCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -81,6 +81,8 @@ Content-Length: 742
   }
 }
 ```
+
+
 
 
 

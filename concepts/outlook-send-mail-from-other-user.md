@@ -102,7 +102,7 @@ After the message is sent, it can be saved to the sending user's Sent Items fold
 The default behavior can be changed by other outside factors:
 
 - Administrators can update the from user's mailbox to [always save a copy of messages sent from a delegate](/exchange/recipients-in-exchange-online/manage-user-mailboxes/automatically-save-sent-items-in-delegator-s-mailbox) to their Sent Items.
-- By setting the `saveToSentItems` property to `true` in a [send mail](/graph/api/user-sendmail?view=graph-rest-1.0) request, you can prevent the item from being saved to the Sent Items folder. However, if an administrator has configured the "always save a copy" setting, the message will still be saved to the from user's Sent Items.
+- By setting the `saveToSentItems` property to `false` in a [send mail](/graph/api/user-sendmail?view=graph-rest-1.0) request, you can prevent the item from being saved to the Sent Items folder. However, if an administrator has configured the "always save a copy" setting, the message will still be saved to the from user's Sent Items.
 
 ## Examples
 
@@ -189,7 +189,7 @@ Content-Type: application/json
 {
   "error": {
     "code": "ErrorSendAsDenied",
-    "message": "The user account which was used to submit this request does not have the right to send mail on behalf of the specified sending account., Cannot submit message.",
+    "message": "The user account which was used to submit this request does not have the right to send mail on behalf of the specified sending account. Cannot submit message.",
     "innerError": {
       "request-id": "24e7991e-01ae-4cc2-8e06-532a96fd8948",
       "date": "2019-01-16T18:53:25"

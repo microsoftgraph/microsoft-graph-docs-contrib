@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementPartners"
 description: "List properties and relationships of the deviceManagementPartner objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -9,21 +9,30 @@ localization_priority: Priority
 
 Microsoft Graph tutorials are step-by-step training exercises that guide you through basic Microsoft Graph concepts, including how to create a basic application that uses Azure Active Directory authentication and accesses data via the Microsoft Graph.
 
-The following tutorials are currently available:
+## Build your first app
+
+The following tutorials build an app that authenticates a user and accesses date via the Microsoft Graph.
 
 - [Android](/graph/tutorials/android)
 - [Angular](/graph/tutorials/angular)
 - [ASP.NET](/graph/tutorials/aspnet)
 - [Microsoft Flow](/graph/tutorials/flow)
+- [Java](/graph/tutorials/java)
 - [Node.js](/graph/tutorials/node)
 - [PHP](/graph/tutorials/php)
 - [Python](/graph/tutorials/python)
-- [Ruby](/graph/tutorials/ruby)
 - [React](/graph/tutorials/react)
+- [Ruby](/graph/tutorials/ruby)
 - [UWP](/graph/tutorials/uwp)
 - [Xamarin](/graph/tutorials/xamarin)
 
-Don't see your preferred language or platform? Request a tutorial for it on [UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis).
+Don't see your preferred language or platform? Request a tutorial for it on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+
+## Scenario-based tutorials
+
+The following tutorials focus on specific scenarios for using the Microsoft Graph.
+
+- [Change notifications and delta query](/graph/tutorials/change-notifications)
 
 ## See also
 

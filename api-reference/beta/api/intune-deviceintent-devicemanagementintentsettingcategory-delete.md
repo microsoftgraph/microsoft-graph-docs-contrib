@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementIntentSettingCategory"
 description: "Deletes a deviceManagementIntentSettingCategory."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

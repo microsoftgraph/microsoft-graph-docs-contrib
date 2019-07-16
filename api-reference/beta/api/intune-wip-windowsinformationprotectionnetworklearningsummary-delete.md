@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsInformationProtectionNetworkLearningSummary"
 description: "Deletes a windowsInformationProtectionNetworkLearningSummary."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

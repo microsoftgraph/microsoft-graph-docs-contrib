@@ -1,7 +1,7 @@
 ---
 title: "complianceState enum type"
 description: "Compliance state."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

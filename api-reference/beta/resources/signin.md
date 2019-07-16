@@ -1,18 +1,24 @@
 ---
 title: "signIn resource type"
-description: "This resource details user or application sign-in activity in your directory. "
-localization_priority: Priority
+description: "Describes the signIn resource of Microsoft Graph API (REST), which helps audit user and application sign-in activity (beta version)."
+author: "davidmu1"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
 ---
 
+
 # signIn resource type
-This resource details user or application sign-in activity in your directory. 
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Provides details about user or application sign-in activity in your directory. 
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
-|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of signIn object.|
+|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of a signIn object.|
 
 ## Properties
 | Property	   | Type	|Description|

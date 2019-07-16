@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceConfigurationGroupAssignment"
 description: "Deletes a deviceConfigurationGroupAssignment."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

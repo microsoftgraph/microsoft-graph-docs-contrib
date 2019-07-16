@@ -1,7 +1,7 @@
 ---
 title: "diagnosticDataSubmissionMode enum type"
 description: "Allow the device to send diagnostic and usage telemetry data, such as Watson."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

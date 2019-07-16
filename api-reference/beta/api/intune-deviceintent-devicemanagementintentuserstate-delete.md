@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementIntentUserState"
 description: "Deletes a deviceManagementIntentUserState."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

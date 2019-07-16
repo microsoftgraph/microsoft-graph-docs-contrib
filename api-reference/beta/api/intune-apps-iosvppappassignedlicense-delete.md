@@ -1,7 +1,7 @@
 ---
 title: "Delete iosVppAppAssignedLicense"
 description: "Deletes a iosVppAppAssignedLicense."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

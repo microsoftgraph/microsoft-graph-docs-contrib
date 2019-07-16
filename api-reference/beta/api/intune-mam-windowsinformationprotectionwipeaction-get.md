@@ -1,7 +1,7 @@
 ---
 title: "Get windowsInformationProtectionWipeAction"
 description: "Read properties and relationships of the windowsInformationProtectionWipeAction object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

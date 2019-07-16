@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementBooleanSettingInstance"
 description: "Create a new deviceManagementBooleanSettingInstance object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

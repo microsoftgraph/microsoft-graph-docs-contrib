@@ -1,7 +1,7 @@
 ---
 title: "Delete macOSVpnConfiguration"
 description: "Deletes a macOSVpnConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

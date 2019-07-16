@@ -45,11 +45,27 @@ If successful, the API call returns a `204 No Content`. It does not return anyth
 Here is an example of the request.
 This example unfollows an item identified by `{item-id}`.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
 DELETE /me/drive/following/{item-id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-item-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unfollow-item-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/unfollow-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 <!-- { 
     "blockType": "response", 
@@ -65,6 +81,7 @@ HTTP/1.1 204 No Content
   "keywords": "unfollow item",
   "section": "documentation",
   "tocPath": "Items/Unfollow",
-  "suppressions": []
+  "suppressions": [
+  ]
 }
 -->

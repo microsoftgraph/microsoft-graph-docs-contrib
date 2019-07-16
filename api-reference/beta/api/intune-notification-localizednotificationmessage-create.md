@@ -1,7 +1,7 @@
 ---
 title: "Create localizedNotificationMessage"
 description: "Create a new localizedNotificationMessage object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

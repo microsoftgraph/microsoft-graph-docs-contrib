@@ -1,7 +1,7 @@
 ---
 title: "Delete ndesConnector"
 description: "Deletes a ndesConnector."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

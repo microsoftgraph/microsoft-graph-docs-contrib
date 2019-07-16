@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementAbstractComplexSettingDefinition"
 description: "Update the properties of a deviceManagementAbstractComplexSettingDefinition object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

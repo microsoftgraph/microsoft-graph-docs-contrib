@@ -1,7 +1,7 @@
 ---
 title: "Create mobileAppIntentAndState"
 description: "Create a new mobileAppIntentAndState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -121,6 +121,8 @@ Content-Length: 880
   ]
 }
 ```
+
+
 
 
 

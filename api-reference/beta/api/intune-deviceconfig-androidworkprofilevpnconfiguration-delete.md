@@ -1,7 +1,7 @@
 ---
 title: "Delete androidWorkProfileVpnConfiguration"
 description: "Deletes a androidWorkProfileVpnConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

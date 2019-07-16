@@ -1,7 +1,7 @@
 ---
 title: "getEncryptionPublicKey function"
 description: "Get a public key to use to encrypt the Apple device enrollment program token"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update windows10MobileCompliancePolicy"
 description: "Update the properties of a windows10MobileCompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

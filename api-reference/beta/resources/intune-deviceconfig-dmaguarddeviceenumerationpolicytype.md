@@ -1,7 +1,7 @@
 ---
 title: "dmaGuardDeviceEnumerationPolicyType enum type"
 description: "Possible values of the DmaGuardDeviceEnumerationPolicy."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

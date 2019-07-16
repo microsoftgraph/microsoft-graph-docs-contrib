@@ -2,6 +2,8 @@
 title: "Update synchronizationTemplate"
 description: "Update (override) the synchronization template associated with a given application."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update synchronizationTemplate
@@ -45,6 +47,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of a request. 
 
 >**Note:** The request object shown here is shortened for readability. Include all the properties in an actual call.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationtemplate"
@@ -60,6 +64,20 @@ Content-type: application/json
     "factoryTag": "CustomSCIM"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-synchronizationtemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-synchronizationtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 The following is an example of a response.
@@ -81,6 +99,7 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+  ]
 }
 -->

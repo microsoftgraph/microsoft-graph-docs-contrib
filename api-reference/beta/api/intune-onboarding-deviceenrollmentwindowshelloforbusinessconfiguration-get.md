@@ -1,7 +1,7 @@
 ---
 title: "Get deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentWindowsHelloForBusinessConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 860
+Content-Length: 900
 
 {
   "value": {
@@ -83,7 +83,8 @@ Content-Length: 860
     "remotePassportEnabled": true,
     "pinPreviousBlockCount": 5,
     "pinExpirationInDays": 3,
-    "enhancedBiometricsState": "enabled"
+    "enhancedBiometricsState": "enabled",
+    "securityKeyForSignIn": "enabled"
   }
 }
 ```
