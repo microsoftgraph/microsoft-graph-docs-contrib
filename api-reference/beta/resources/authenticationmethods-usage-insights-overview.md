@@ -24,10 +24,10 @@ The following table lists some common requests that you can use with this API.
 
 | Operation | Try in Graph Explorer | Description |
 | --------- | --- | ----------- |
-| [getCredentialUserRegistrationcount](/graph/api/resources/credentialUserRegistrationCount?view=graph-rest-beta) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Get the number of users registered for self-service password reset and MFA. |
-| [getCredentialUsageSummary](/graph/api/resources/credentialUsagesSummary?view=graph-rest-beta) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Get the number of users using self-service password reset. |
-| [credentialUserRegistrationDetails](/graph/api/resources/credentialUserRegistrationDetails?view=graph-rest-beta) | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | Get the user details for self-service password reset and MFA registration activities. |
-| [userCredentialUsageDetails](/graph/api/resources/userCredentialUsageDetails?view=graph-rest-beta) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Get user details for all self-service password reset activities. |
+| [getCredentialUserRegistrationcount](/graph/api/resources/credentialuserregistrationcount?view=graph-rest-beta) | [GET /credentialuserregistrationcount](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUserRegistrationcount()&version=beta) | Get the number of users registered for self-service password reset and MFA. |
+| [getCredentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta) | [GET /credentialusagesummary](https://developer.microsoft.com/graph/graph-explorer?request=reports/getCredentialUsageSummary&version=beta) | Get the number of users using self-service password reset. |
+| [credentialUserRegistrationDetails](/graph/api/resources/credentialuserregistrationdetails?view=graph-rest-beta) | [GET /credentialuserregistrationdetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/credentialUserRegistrationDetails&version=beta) | Get the user details for self-service password reset and MFA registration activities. |
+| [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta) | [GET /usercredentialusagedetails](https://developer.microsoft.com/graph/graph-explorer?request=reports/userCredentialUsageDetails&version=beta) | Get user details for all self-service password reset activities. |
 
 ## Licenses
 
