@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "@odata.type": "#microsoft.education.assignments.api.educationRubricOutcome",
+    "@odata.type": "#microsoft.graph.educationRubricOutcome",
     "id": "65a46d78-1a2b-4a7e-bcf8-78a22ac2611b",
     "rubricQualityFeedback": [
         {

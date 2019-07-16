@@ -90,7 +90,7 @@ Content-type: application/json
 {
     "value": [
         {
-            "@odata.type": "#microsoft.education.assignments.api.educationFeedbackOutcome",
+            "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
             "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
             "feedback": {
                 "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
@@ -118,7 +118,7 @@ Content-type: application/json
             }
         },
         {
-            "@odata.type": "#microsoft.education.assignments.api.educationPointsOutcome",
+            "@odata.type": "#microsoft.graph.educationPointsOutcome",
             "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
             "points": {
                 "gradedDateTime": "2019-07-15T22:36:02.2592364Z",
@@ -140,7 +140,7 @@ Content-type: application/json
             }
         },
         {
-            "@odata.type": "#microsoft.education.assignments.api.educationRubricOutcome",
+            "@odata.type": "#microsoft.graph.educationRubricOutcome",
             "id": "65a46d78-1a2b-4a7e-bcf8-78a22ac2611b",
             "rubricQualityFeedback": [
                 {

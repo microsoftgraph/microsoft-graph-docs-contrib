@@ -93,7 +93,7 @@ The following is a JSON representation of the resource.
                 "contentType": "text"
             },
             "grading": {
-                "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
                 "maxPoints": 2
             }
         },
@@ -105,7 +105,7 @@ The following is a JSON representation of the resource.
                 "contentType": "text"
             },
             "grading": {
-                "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
                 "maxPoints": 1
             }
         }
@@ -161,7 +161,7 @@ The following is a JSON representation of the resource.
         }
     ],
     "grading": {
-        "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
         "maxPoints": 100
     }
 }

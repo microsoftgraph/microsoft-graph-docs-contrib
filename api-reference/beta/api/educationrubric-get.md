@@ -94,7 +94,7 @@ Content-type: application/json
                 "contentType": "text"
             },
             "grading": {
-                "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
                 "maxPoints": 2
             }
         },
@@ -106,7 +106,7 @@ Content-type: application/json
                 "contentType": "text"
             },
             "grading": {
-                "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
                 "maxPoints": 1
             }
         }
@@ -162,7 +162,7 @@ Content-type: application/json
         }
     ],
     "grading": {
-        "@odata.type": "#microsoft.education.assignments.api.educationAssignmentPointsGradeType",
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
         "maxPoints": 100
     }
 }

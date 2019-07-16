@@ -47,7 +47,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "@odata.type": "#microsoft.education.assignments.api.educationPointsOutcome",
+    "@odata.type": "#microsoft.graph.educationPointsOutcome",
     "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
     "points": {
         "gradedDateTime": "2019-07-15T22:36:02.2592364Z",

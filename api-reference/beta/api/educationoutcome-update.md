@@ -64,7 +64,7 @@ PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions
 Content-type: application/json
 
 {
-    "@odata.type":"#microsoft.education.assignments.api.educationFeedbackOutcome",
+    "@odata.type":"#microsoft.graph.educationFeedbackOutcome",
     "feedback":{
         "text":{
             "content":"This is feedback for the assignment as a whole.",
@@ -85,9 +85,9 @@ PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions
 Content-type: application/json
 
 {
-    "@odata.type":"#microsoft.education.assignments.api.educationPointsOutcome",
+    "@odata.type":"#microsoft.graph.educationPointsOutcome",
     "points":{
-        "@odata.type":"#microsoft.education.assignments.api.educationAssignmentPointsGrade",
+        "@odata.type":"#microsoft.graph.educationAssignmentPointsGrade",
         "points":85
     }
 }
@@ -104,7 +104,7 @@ PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions
 Content-type: application/json
 
 {
-    "@odata.type":"#microsoft.education.assignments.api.educationRubricOutcome",
+    "@odata.type":"#microsoft.graph.educationRubricOutcome",
     "rubricQualityFeedback":[
         {
             "qualityId":"ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
@@ -152,7 +152,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.type":"#microsoft.education.assignments.api.educationPointsOutcome",
+    "@odata.type":"#microsoft.graph.educationPointsOutcome",
     "id":"ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
     "lastModifiedBy":{
         "user":{

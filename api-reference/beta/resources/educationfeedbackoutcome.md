@@ -50,7 +50,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "@odata.type": "#microsoft.education.assignments.api.educationFeedbackOutcome",
+    "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
     "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
     "feedback": {
         "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
