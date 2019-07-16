@@ -8,9 +8,10 @@ ms.prod: "microsoft-teams"
 
 # Protected APIs in Microsoft Teams
 
-Protected APIs deal with very sensitive data, and apps accessing that data need additional validation (above and beyond permission scopes & consent). 
-These APIs include [reading channel and chat messages](/graph/api/channel-list-messages?view=graph-rest-beta) 
-using [application permissions](/graph/auth/auth-concepts#microsoft-graph-permissions). 
+Microsoft Teams APIs in Microsoft Graph that access sensitive data are considered protected APIs. 
+These APIs require that you have additional validation, beyond permissions and consent, before you can use them.
+An example of a protected API is [reading channel and chat messages](/graph/api/channel-list-messages?view=graph-rest-beta) 
+using [application permissions](auth/auth-concepts#microsoft-graph-permissions). 
 
 To apply for access to protected APIs, please apply at [aka.ms/teamsgraph/requestaccess](http://aka.ms/teamsgraph/requestaccess). 
 Access requests are looked at weekly. 
