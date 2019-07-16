@@ -12,7 +12,8 @@ doc_type: "resourcePageType"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property|Type|Description|
 |:---------------|:--------|:----------|
 |customDomainCertificate|String|Details of the certificate associated with the applicaiton when a custom domain is in use. Null when using the default domain.|
 |externalAuthenticationType|String|Details the pre-authentication setting for the application Possible values are: `passthru`, `aadPreAuthentication`.|

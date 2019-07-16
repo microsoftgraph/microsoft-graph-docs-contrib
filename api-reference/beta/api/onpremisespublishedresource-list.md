@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /onPremisesPublishingProfiles(publishingType)/publishedResources
+GET ~/onPremisesPublishingProfiles(publishingType)/publishedResources
 ```
 
 ## Optional query parameters
@@ -83,13 +83,13 @@ Content-type: application/json
 {
   "value": [
     {
-      "publishingType": "provisioning"
-      "displayName": "Demo provisioning"
+      "publishingType": "provisioning",
+      "displayName": "Demo provisioning",
       "id": "aed0b780-965f-4149-85c5-a8c73e58b67d",
       "resourceName": "domain1.contoso.com",
       "agentGroups": [
           {
-              "id": "2d55ed41-1619-4848-92bb-0576d3038682"
+              "id": "2d55ed41-1619-4848-92bb-0576d3038682",
               "displayName": "Group 1"
           }
       ]

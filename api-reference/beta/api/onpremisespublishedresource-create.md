@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /onPremisesPublishingProfiles(publishingType)/publishedResources
+POST ~/onPremisesPublishingProfiles(publishingType)/publishedResources
 ```
 
 ## Request headers
@@ -65,7 +65,7 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources
 {
-    "displayName": "New provisioning"
+    "displayName": "New provisioning",
     "resourceName": "domain1.contoso.com"
 }
 ```
@@ -85,9 +85,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 201 Created
 {
-    "id": "4655ed41-1619-4848-92bb-0576d3038682"
-    "publishingType": "provisioning"
-    "displayName": "New provisionin"
+    "id": "4655ed41-1619-4848-92bb-0576d3038682",
+    "publishingType": "provisioning",
+    "displayName": "New provisionin",
     "resourceName": "domain1.contoso.com"
 }
 ```

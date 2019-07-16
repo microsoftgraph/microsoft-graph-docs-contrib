@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /onPremisesPublishingProfiles(publishingType)
+GET ~/onPremisesPublishingProfiles(publishingType)/
 ```
 
 ## Optional query parameters
@@ -80,13 +80,13 @@ HTTP/1.1 200 OK
 {
     "publishedResources": [
         {
-            "publishingType": "provisioning"
-            "displayName": "Demo Provisioning"
+            "publishingType": "provisioning",
+            "displayName": "Demo Provisioning",
             "id": "aed0b780-965f-4149-85c5-a8c73e58b67d",
             "resourceName": "domain1.contoso.com",
             "agentGroups": [
                 {
-                    "id": "2d55ed41-1619-4848-92bb-0576d3038682"
+                    "id": "2d55ed41-1619-4848-92bb-0576d3038682",
                     "displayName": "Group 1"
                 }
             ]
@@ -95,12 +95,12 @@ HTTP/1.1 200 OK
     "agents": [
         {
             "id": "1234b780-965f-4149-85c5-a8c73e58b67d",
-            "status": "Active"
-            "machineName": "server 1"
-            "externalIp": "1.0.0.127"
+            "status": "Active",
+            "machineName": "server 1",
+            "externalIp": "1.0.0.127",
             "agentGroups": [
                  {
-                    "id": "2d55ed41-1619-4848-92bb-0576d3038682"
+                    "id": "2d55ed41-1619-4848-92bb-0576d3038682",
                     "displayName": "Group 1"
                  }
             ]
@@ -108,19 +108,19 @@ HTTP/1.1 200 OK
     ],
     "agentGroups": [
         {
-            "id": "2d55ed41-1619-4848-92bb-0576d3038682"
-            "displayName": "Group 1"
-            "publishingType": "provisioning"
-            "isDefault": "false"
+            "id": "2d55ed41-1619-4848-92bb-0576d3038682",
+            "displayName": "Group 1",
+            "publishingType": "provisioning",
+            "isDefault": "false",
             "agents": [
                  {
-                    "id": "1234b780-965f-4149-85c5-a8c73e58b67d"
+                    "id": "1234b780-965f-4149-85c5-a8c73e58b67d",
                     "status": "Active"
                  }
             ],
             "publishedResources": [
                 {
-                    "displayName": "Demo Provisioning"
+                    "displayName": "Demo Provisioning",
                     "id": "aed0b780-965f-4149-85c5-a8c73e58b67d",
                     "resourceName": "domain1.contoso.com"
                 }
@@ -128,10 +128,10 @@ HTTP/1.1 200 OK
         }
     ],
   "hybridAgentUpdaterConfiguration": {
-       "deferUpdate" : "2018-08-12T12:00"
+       "deferUpdate" : "2018-08-12T12:00",
        "updateWindow" :
           {
-            "updateWindowStartTime" : "0:00:00"
+            "updateWindowStartTime" : "0:00:00",
             "updateWindowEndTime" : "23:59:00"
     },
         "allowUpdateConfigurationOverride" : "false"

@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /onPremisesPublishingProfiles/{id}/agentGroups/{id}/agents
+POST ~/onPremisesPublishingProfiles(publishingType)/agentGroups/{id}/agents
 ```
 
 ## Request headers
@@ -90,9 +90,9 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "4655ed41-1619-4848-92bb-0576d3038682"
-    "displayName": "New Group"
-    "publishingType": "provisioning"
+    "id": "4655ed41-1619-4848-92bb-0576d3038682",
+    "displayName": "New Group",
+    "publishingType": "provisioning",
     "isDefault": "false"
 }
 ```

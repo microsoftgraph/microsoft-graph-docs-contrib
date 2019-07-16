@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET/onPremisesPublishingProfiles(publishingType)/agents(id1)?$expand=agentGroups
+GET ~/onPremisesPublishingProfiles(publishingType)/agents(id1)?$expand=agentGroups
 ```
 
 ## Optional query parameters
@@ -81,12 +81,12 @@ Content-type: application/json
 
 {
     "id": "1234b780-965f-4149-85c5-a8c73e58b67d",
-    "status": "Active"
-    "machineName": "server1.local1.contoso.com"
-    "externalIp": "153.69.23.122"
+    "status": "Active",
+    "machineName": "server1.local1.contoso.com",
+    "externalIp": "153.69.23.122",
     "agentGroups": [
          {
-            "id": "2d55ed41-1619-4848-92bb-0576d3038682"
+            "id": "2d55ed41-1619-4848-92bb-0576d3038682",
             "displayName": "Group 1"
          }
   ]

@@ -7,7 +7,7 @@ ms.prod: ""
 doc_type: "apiPageType"
 ---
 
-# Remove onpremisesAgent from an onPremisesAgentGroup
+# Remove onPremisesAgent from an onPremisesAgentGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /onPremisesPublishingProfiles(publishingType)/agents(id1)/agentGroups(id2)/$ref
+DELETE ~/onPremisesPublishingProfiles(publishingType)/agents(id1)/agentGroups(id2)/$ref
 ```
 
 ## Request headers
