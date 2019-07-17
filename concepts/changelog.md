@@ -13,6 +13,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2019
 
+### Reports APIs
+
+| **Change type** | **Version** | **Description**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Addition        | Beta  | Added **deletedItemCount** property to the [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) entity.|
+| Addition        | Beta  | Added **deletedItemSizeInBytes** property to the [mailboxUsageDetail](/graph/api/resources/mailboxUsageDetail?view=graph-rest-beta) entity.|
+| Addition        | Beta  | Added **groupId** property to the [office365GroupsActivityDetail](/graph/api/resources/office365GroupsActivityDetail?view=graph-rest-beta) entity.|
+
 ### Devices and apps (Microsoft Intune)
 
 |Change type|Version|Description|
