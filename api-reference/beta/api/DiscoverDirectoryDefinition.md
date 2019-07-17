@@ -31,11 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{directoryId}/discover
 ```
 
-## Optional query parameters
-
-This method supports the following OData query parameter to help customize the response. Note that the filters are all case sensitive except for status. For general information, see [OData query parameters](/graph/query_parameters).
-
-
 ## Request headers
 
 | Header        | Value                      |
@@ -99,3 +94,4 @@ Content-type: application/json
     }],
   "version": "bf8c03ac-d45e-47fe-b3a1-711a9418b2b1"
 }
+ ```
