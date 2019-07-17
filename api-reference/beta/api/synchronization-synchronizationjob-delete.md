@@ -2,6 +2,8 @@
 title: "Delete synchronizationJob"
 description: "Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Delete synchronizationJob
