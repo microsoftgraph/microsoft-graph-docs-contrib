@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "discoverabilities": ["AttributeNames", "AttributeDataTypes"],
+  "discoverabilities": "AttributeNames, AttributeDataTypes",
   "discoveryDateTime": "2019-03-20T15:47:50.4707552Z",
   "id": "directoryDefinitionId",
   "objects": [{
