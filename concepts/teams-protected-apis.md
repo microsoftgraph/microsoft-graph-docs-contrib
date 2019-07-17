@@ -18,7 +18,6 @@ The following APIs are currently protected:
 * [Get a reply to a message](/graph/api/channel-get-messagereply?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [List messages in a chat](/graph/api/chatmessage-list?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Get message in chat](/graph/api/chatmessage-get?view=graph-rest-beta) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
-* [Get chat](../api/chat-get.md) using [application permissions](auth/auth-concepts.md#microsoft-graph-permissions)
 
 To request access to these protected APIs, complete the following [request form](http://aka.ms/teamsgraph/requestaccess). 
 We review access requests weekly. 
