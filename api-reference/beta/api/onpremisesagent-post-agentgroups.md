@@ -59,7 +59,7 @@ The following is an example of the request.
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agents('1234b780-965f-4149-85c5-a8c73e58b67d')/agentGroups/$ref
 ```
 
-In the request body, supply a JSON representation of OData reference to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+In the request body, supply a JSON representation of OData reference to an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ```http
 {
