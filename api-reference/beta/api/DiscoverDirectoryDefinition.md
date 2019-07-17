@@ -66,7 +66,7 @@ The following is an example of a response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "@odata.type": "microsoft.graph.directoryDefinition"
 } -->
 
 ```http
