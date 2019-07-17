@@ -33,7 +33,7 @@ GET ~/onPremisesPublishingProfiles(publishingType)/agents/{id1}/?$expand=agentGr
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the [OData query parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
 ## Request headers
 
