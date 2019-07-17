@@ -1,6 +1,6 @@
 ---
 title: "Protected APIs in Microsoft Teams"
-description: "Protected APIs deal with very sensitive data, and apps accessing that data need additional validation (above and beyond permission scopes & consent)."
+description: "Microsoft Teams APIs in Microsoft Graph that access sensitive data are considered protected APIs."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -10,9 +10,15 @@ ms.prod: "microsoft-teams"
 
 Microsoft Teams APIs in Microsoft Graph that access sensitive data are considered protected APIs. 
 These APIs require that you have additional validation, beyond permissions and consent, before you can use them.
-An example of a protected API is [reading channel and chat messages](/graph/api/channel-list-messages?view=graph-rest-beta) 
-using [application permissions](auth/auth-concepts#microsoft-graph-permissions). 
 
-To apply for access to protected APIs, please apply at [aka.ms/teamsgraph/requestaccess](http://aka.ms/teamsgraph/requestaccess). 
-Access requests are looked at weekly. 
-For information that doesn't fit in the form, please contact [teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com).
+The following APIs are currently protected:
+* [List Channel messages](/graph/api/channel-list-messages?view=graph-rest-beta)  using [application permissions](auth/auth-concepts#microsoft-graph-permissions)
+* [Get Channel message](/graph/api/channel-get-message?view=graph-rest-beta)  using [application permissions](auth/auth-concepts#microsoft-graph-permissions)
+* [List replies to a message](/graph/api/channel-list-messagereplies?view=graph-rest-beta)  using [application permissions](auth/auth-concepts#microsoft-graph-permissions)
+* [Get a reply to a message](/graph/api/channel-get-messagereply?view=graph-rest-beta)  using [application permissions](auth/auth-concepts#microsoft-graph-permissions)
+* [List messages in a chat](/graph/api/chatmessage-list?view=graph-rest-beta)  using [application permissions](auth/auth-concepts#microsoft-graph-permissions)
+* [Get message in chat](/graph/api/chatmessage-get?view=graph-rest-beta)  using [application permissions](auth/auth-concepts#microsoft-graph-permissions)
+
+To request access to these protected APIs, complete the following [request form](http://aka.ms/teamsgraph/requestaccess). 
+We review access requests weekly. 
+If you would like to provide information in addition to the form, you can contact [teamsAppPerms@microsoft.com](mailto:teamsAppPerms@microsoft.com).
