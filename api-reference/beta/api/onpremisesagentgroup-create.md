@@ -1,6 +1,6 @@
 ---
 title: "Create onPremisesAgentGroup"
-description: "Create onPremisesAgentGroup."
+description: "Create a new **onPremisesAgentGroup** object."
 localization_priority: Normal
 author: ""
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new onPremisesAgentGroup.
+Create a new [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ POST ~/onPremisesPublishingProfiles(publishingType)/agentGroups/{id}/agents
 
 ## Request body
 
-In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+In the request body, supply a JSON representation of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ```json
 {
@@ -49,7 +49,7 @@ In the request body, supply a JSON representation of [onPremisesAgentGroup](../r
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.
 
 ## Examples
 
