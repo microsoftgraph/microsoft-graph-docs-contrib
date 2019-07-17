@@ -1,6 +1,6 @@
 ---
 title: "Update onPremisesAgentGroup"
-description: "Update onPremisesAgentGroup."
+description: "Update the properties of an **onPremisesAgentGroup** object."
 localization_priority: Normal
 author: ""
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Update the properties of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
@@ -39,8 +39,9 @@ PATCH ~/onPremisesPublishingProfiles(publishingType)/agentGroups
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
-Below is the list of properties that could be updated:
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+
+The following is the list of properties that you can update.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
