@@ -45,7 +45,7 @@ The following is the list of properties that you can update.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String||
+|displayName|String| Represents on-premises agents group name|
 
 ## Response
 

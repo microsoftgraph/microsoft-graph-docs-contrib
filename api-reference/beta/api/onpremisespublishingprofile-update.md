@@ -43,7 +43,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration||
+|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration|Represents [hybridAgentUpdaterConfiguration](onpremiseshybridagentupdaterconfiguration.md)|
 
 ## Response
 

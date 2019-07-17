@@ -11,6 +11,8 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents on-premises agent.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -24,9 +26,9 @@ doc_type: "resourcePageType"
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|externalIp|String||
-|id|String| Read-only.|
-|machineName|String||
+|externalIp|String|The external IP address as detected by the service for the agent machine. Read-only|
+|id|String| The object id of the onPremisesAgent. Read-only.|
+|machineName|String|The name of the machine that the aggent is running on. Read-only|
 |status|string| Possible values are: `active`, `inactive`.|
 |publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 

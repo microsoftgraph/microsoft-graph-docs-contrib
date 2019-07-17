@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH ~/onPremisesPublishingProfiles(publishingType)/publishedResources(id1)
+PATCH ~/onPremisesPublishingProfiles(publishingType)/publishedResources/{id1}
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ Below is the list of supported properties that could be updated:
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String||
+|displayName|String|Represents on-premises published resource name|
 
 ## Response
 

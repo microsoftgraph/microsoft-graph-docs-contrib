@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to assign [onPremisesAgent](../resources/onpremisesagent.md) to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Assign an [onPremisesAgent](../resources/onpremisesagent.md) to an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST ~/onPremisesPublishingProfiles(publishingType)/agents(id1)/agentGroups/$ref
+POST ~/onPremisesPublishingProfiles(publishingType)/agents/{id1}/agentGroups/$ref
 ```
 
 ## Request headers

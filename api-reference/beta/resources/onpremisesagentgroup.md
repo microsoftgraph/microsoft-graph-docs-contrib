@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-PROVIDE DESCRIPTION HERE
+Represents on-premises agents group.
 
 ## Methods
 
@@ -28,7 +28,7 @@ PROVIDE DESCRIPTION HERE
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |displayName|String||
-|id|String| Read-only.|
+|id|String| The object id of the onPremisesAgentGroup. Read-only.|
 |isDefault|Boolean||
 |publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 

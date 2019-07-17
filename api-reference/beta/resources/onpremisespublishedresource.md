@@ -11,6 +11,8 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents on-premises published resource.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -27,10 +29,10 @@ doc_type: "resourcePageType"
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String||
-|id|String| Read-only.|
+|displayName|String| Display Name of the publishedResource.|
+|id|String| The object id of the publishedResource. Read-only.|
 |publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
-|resourceName|String||
+|resourceName|String|Name of the publishedResource.|
 
 ## Relationships
 
