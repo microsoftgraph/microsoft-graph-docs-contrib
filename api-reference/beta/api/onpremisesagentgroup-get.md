@@ -1,6 +1,6 @@
 ---
 title: "Get onPremisesAgentGroup"
-description: "Get onPremisesAgentGroup."
+description: "Retrieve the properties and relationships of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object."
 localization_priority: Normal
 author: ""
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Retrieve the properties and relationships of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
