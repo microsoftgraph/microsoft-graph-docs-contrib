@@ -39,11 +39,11 @@ POST ~/onPremisesPublishingProfiles(publishingType)/agents(id1)/agentGroups/$ref
 
 ## Request body
 
-In the request body, supply a JSON representation of OData reference to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+In the request body, supply a JSON representation of an OData reference to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object in the response body.
 
 ## Examples
 
