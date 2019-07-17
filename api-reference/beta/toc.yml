@@ -2332,17 +2332,6 @@
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
         - name: Imported windows autopilot device identity upload
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md
-          items:
-          - name: List
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-list.md
-          - name: Get
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-get.md
-          - name: Create
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md
-          - name: Delete
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md
-          - name: Update
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md
         - name: Imported windows autopilot device identity upload status
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
         - name: iTunes pairing mode
@@ -3509,6 +3498,8 @@
           href: resources/intune-deviceconfig-encryptionstate.md
         - name: Extended key usage
           href: resources/intune-deviceconfig-extendedkeyusage.md
+        - name: File vault state
+          href: resources/intune-deviceconfig-filevaultstate.md
         - name: Firewall certificate revocation list check method type
           href: resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md
         - name: Firewall packet queueing method type
@@ -4284,6 +4275,19 @@
             href: api/intune-deviceconfig-macoswificonfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-macoswificonfiguration-update.md
+        - name: Managed all device certificate state
+          href: resources/intune-deviceconfig-managedalldevicecertificatestate.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-list.md
+          - name: Get
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-get.md
+          - name: Create
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-update.md
         - name: Managed device certificate state
           href: resources/intune-deviceconfig-manageddevicecertificatestate.md
           items:
@@ -4373,8 +4377,47 @@
           href: resources/intune-deviceconfig-omasettingstring.md
         - name: OMA setting string xml
           href: resources/intune-deviceconfig-omasettingstringxml.md
+        - name: On prem encrypted payload
+          href: resources/intune-raimportcerts-onpremencryptedpayload.md
+          items:
+          - name: List
+            href: api/intune-raimportcerts-onpremencryptedpayload-list.md
+          - name: Get
+            href: api/intune-raimportcerts-onpremencryptedpayload-get.md
+          - name: Create
+            href: api/intune-raimportcerts-onpremencryptedpayload-create.md
+          - name: Delete
+            href: api/intune-raimportcerts-onpremencryptedpayload-delete.md
+          - name: Update
+            href: api/intune-raimportcerts-onpremencryptedpayload-update.md
         - name: Operating system version range
           href: resources/intune-deviceconfig-operatingsystemversionrange.md
+        - name: Pfx recryption request
+          href: resources/intune-raimportcerts-pfxrecryptionrequest.md
+          items:
+          - name: List
+            href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
+          - name: Get
+            href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
+          - name: Create
+            href: api/intune-raimportcerts-pfxrecryptionrequest-create.md
+          - name: Delete
+            href: api/intune-raimportcerts-pfxrecryptionrequest-delete.md
+          - name: Update
+            href: api/intune-raimportcerts-pfxrecryptionrequest-update.md
+        - name: Pfx user certificate
+          href: resources/intune-raimportcerts-pfxusercertificate.md
+          items:
+          - name: List
+            href: api/intune-raimportcerts-pfxusercertificate-list.md
+          - name: Get
+            href: api/intune-raimportcerts-pfxusercertificate-get.md
+          - name: Create
+            href: api/intune-raimportcerts-pfxusercertificate-create.md
+          - name: Delete
+            href: api/intune-raimportcerts-pfxusercertificate-delete.md
+          - name: Update
+            href: api/intune-raimportcerts-pfxusercertificate-update.md
         - name: Policy platform type
           href: resources/intune-deviceconfig-policyplatformtype.md
         - name: Prerelease features
@@ -4914,6 +4957,8 @@
             href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
+        - name: Windows defender tamper protection options
+          href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
         - name: Windows delivery optimization configuration
           href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
           items:
@@ -4996,6 +5041,8 @@
             href: api/intune-deviceconfig-windowskioskconfiguration-update.md
         - name: Windows kiosk desktop app
           href: resources/intune-deviceconfig-windowskioskdesktopapp.md
+        - name: Windows kiosk force update schedule
+          href: resources/intune-deviceconfig-windowskioskforceupdateschedule.md
         - name: Windows kiosk local group
           href: resources/intune-deviceconfig-windowskiosklocalgroup.md
         - name: Windows kiosk local user
@@ -5177,6 +5224,19 @@
           href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
         - name: Windows update scheduled install
           href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
+        - name: Windows update state
+          href: resources/intune-deviceconfig-windowsupdatestate.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-windowsupdatestate-list.md
+          - name: Get
+            href: api/intune-deviceconfig-windowsupdatestate-get.md
+          - name: Create
+            href: api/intune-deviceconfig-windowsupdatestate-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-windowsupdatestate-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-windowsupdatestate-update.md
         - name: Windows update status
           href: resources/intune-deviceconfig-windowsupdatestatus.md
         - name: Windows update type
@@ -6927,6 +6987,10 @@
             href: api/intune-rbac-rolescopetag-update.md
           - name: assign action
             href: api/intune-rbac-rolescopetag-assign.md
+          - name: getRoleScopeTagsById action
+            href: api/intune-rbac-rolescopetag-getrolescopetagsbyid.md
+          - name: getRoleScopeTagsById action
+            href: api/intune-rbac-rolescopetag-getrolescopetagsbyid.md
         - name: Role scope tag auto assignment
           href: resources/intune-rbac-rolescopetagautoassignment.md
           items:
@@ -9153,9 +9217,9 @@
         - name: Get chat
           href: api/chat-get.md
         - name: List messages in a chat
-          href: api/chat-list-messages.md
+          href: api/chatmessage-list.md
         - name: Get message in chat
-          href: api/chat-get-message.md
+          href: api/chatmessage-get.md
         - name: Get members in chat
           href: api/conversationmember-list.md
         - name: Get one member in chat

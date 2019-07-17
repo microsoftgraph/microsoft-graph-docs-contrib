@@ -37,8 +37,13 @@ The authorization code flow enables native and web apps to securely obtain token
 # [C#](#tab/CS)
 
 ```csharp
-IConfidentialClientApplication clientApplication = AuthorizationCodeProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
-AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(clientApplication, scopes);
+IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
+    .Create(clientId)
+    .WithRedirectUri(redirectUri)
+    .WithClientSecret(clientSecret) // or .WithCertificate(certificate)
+    .Build();
+
+AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(confidentialClientApplication, scopes);  
 ```
 
 # [Javascript](#tab/Javascript)
@@ -81,8 +86,13 @@ The client credential flow enables service applications to run without user inte
 # [C#](#tab/CS)
 
 ```csharp
-IConfidentialClientApplication clientApplication = ClientCredentialProvider.CreateClientApplication(clientId, clientCredential);
-ClientCredentialProvider authProvider = new ClientCredentialProvider(clientApplication);
+IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
+    .Create(clientId)
+    .WithTenantId(tenantID)
+    .WithClientSecret(clientSecret)
+    .Build();
+
+ClientCredentialProvider authProvider = new ClientCredentialProvider(confidentialClientApplication);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -125,8 +135,13 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 # [C#](#tab/CS)
 
 ```csharp
-IConfidentialClientApplication clientApplication = OnBehalfOfProvider.CreateClientApplication(clientId, redirectUri, clientCredential);
-OnBehalfOfProvider authProvider = new OnBehalfOfProvider(clientApplication, scopes);
+IConfidentialClientApplication confidentialClientApplication = ConfidentialClientApplicationBuilder
+    .Create(clientId)
+    .WithRedirectUri(redirectUri)
+    .WithClientSecret(clientSecret)
+    .Build();
+
+OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientApplication, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -214,8 +229,13 @@ The device code flow enables sign in to devices by way of another device. For de
 # [C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication clientApplication = DeviceCodeProvider.CreateClientApplication(clientId);
-DeviceCodeProvider authProvider = new DeviceCodeProvider(clientApplication, scopes);
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create(clientId)
+            .Build();
+
+Func<DeviceCodeResult, Task> deviceCodeReadyCallback = async dcr => await Console.Out.WriteLineAsync(dcr.Message);
+
+DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication, scopes, deviceCodeReadyCallback);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -251,8 +271,12 @@ The integrated Windows flow provides a way for Windows computers to silently acq
 # [C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication clientApplication = IntegratedWindowsAuthenticationProvider.CreateClientApplication(clientId);
-IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(clientApplication, scopes);
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create(clientId)
+            .WithTenantId(tenantID)
+            .Build();
+
+IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuthenticationProvider(publicClientApplication, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -288,8 +312,11 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 # [C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication clientApplication = InteractiveAuthenticationProvider.CreateClientApplication(clientId);
-InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(clientApplication, scopes);
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create(clientId)
+            .Build();
+
+InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationProvider(publicClientApplication, scopes);
 ```
 
 # [Javascript](#tab/Javascript)
@@ -349,8 +376,18 @@ The username/password provider allows an application to sign in a user by using 
 # [C#](#tab/CS)
 
 ```csharp
-IPublicClientApplication clientApplication = UsernamePasswordProvider.CreateClientApplication(clientId);
-UsernamePasswordProvider authProvider = new UsernamePasswordProvider(clientApplication, scopes);
+IPublicClientApplication publicClientApplication = PublicClientApplicationBuilder
+            .Create(clientId)
+            .WithTenantId(tenantID)
+            .Build();
+
+UsernamePasswordProvider authProvider = new UsernamePasswordProvider(publicClientApplication, scopes);
+
+GraphServiceClient graphClient = new GraphServiceClient(authProvider);
+
+User me = await graphClient.Me.Request()
+                .WithUsernamePassword(email, password)
+                .GetAsync();
 ```
 
 # [Javascript](#tab/Javascript)
