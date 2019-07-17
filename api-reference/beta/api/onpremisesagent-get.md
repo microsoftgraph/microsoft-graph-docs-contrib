@@ -1,6 +1,6 @@
 ---
 title: "Get onPremisesAgent"
-description: "Retrieve the properties and relationships of onPremisesAgent object."
+description: "Retrieve the properties and relationships of an onPremisesAgent object."
 localization_priority: Normal
 author: ""
 ms.prod: ""
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [onPremisesAgent](../resources/onpremisesagent.md) object.
+Retrieve the properties and relationships of an [onPremisesAgent](../resources/onpremisesagent.md) object.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [onPremisesAgent](../resources/onpremisesagent.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [onPremisesAgent](../resources/onpremisesagent.md) object in the response body.
 
 ## Examples
 
