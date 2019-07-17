@@ -42,10 +42,12 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |launchUri|String|Url link to an assessment that's automatically loaded when the secure assessment browser is launched. It has to be a valid Url (http\[s\]://msdn.microsoft.com/).|
 |configurationAccount|String|The account used to configure the Windows device for taking the test. The user can be a domain account (domain\user), an AAD account (username@tenant.com) or a local account (username).|
-|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|The account type used to by ConfigurationAccount. Possible values are: `azureADAccount`, `domainAccount`, `localAccount`.|
+|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|The account type used to by ConfigurationAccount. Possible values are: `azureADAccount`, `domainAccount`, `localAccount`, `localGuestAccount`.|
 |allowPrinting|Boolean|Indicates whether or not to allow the app from printing during the test.|
 |allowScreenCapture|Boolean|Indicates whether or not to allow screen capture capability during a test.|
 |allowTextSuggestion|Boolean|Indicates whether or not to allow text suggestions during the test.|
+|localGuestAccountName|String|Specifies the display text for the local guest account shown on the sign-in screen. Typically is the name of an assessment. When the user clicks the local guest account on the sign-in screen, an assessment app is launched with a specified assessment URL. Secure assessments can only be configured with local guest account sign-in on devices running Windows 10, version 1903 or later. Important notice: this property must be set with assessmentAppUserModelID in order to make the local guest account sign-in experience work properly for secure assessments.|
+|assessmentAppUserModelId|String|Specifies the application user model ID of the assessment app launched when a user signs in to a secure assessment with a local guest account. Important notice: this property must be set with localGuestAccountName in order to make the local guest account sign-in experience work properly for secure assessments.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -105,7 +107,9 @@ Here is a JSON representation of the resource.
   "configurationAccountType": "String",
   "allowPrinting": true,
   "allowScreenCapture": true,
-  "allowTextSuggestion": true
+  "allowTextSuggestion": true,
+  "localGuestAccountName": "String",
+  "assessmentAppUserModelId": "String"
 }
 ```
 
