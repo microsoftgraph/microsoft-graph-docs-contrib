@@ -29,6 +29,12 @@ Directory definitions are updated as part of the [synchronization schema](synchr
 |discoveryDateTime|DateTimeOffset| Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |discoverabilities|string| Read only value indicating what type of discovery the app supports. Possible values are: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
 
+## Methods
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[Discover](../api/directorydefinition-discover.md) | [directoryDefinition](directoryDefinition.md) |Read properties and relationships of servicePrincipal object.|
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
