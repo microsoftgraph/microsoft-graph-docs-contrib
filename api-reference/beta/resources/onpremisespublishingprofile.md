@@ -2,8 +2,8 @@
 title: "onPremisesPublishingProfile resource type"
 description: "onPremisesPublishingProfile resource type."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 

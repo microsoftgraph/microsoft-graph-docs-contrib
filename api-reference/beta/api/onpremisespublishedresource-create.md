@@ -2,8 +2,8 @@
 title: "Create publishedResource"
 description: "Create a new publishedResource."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

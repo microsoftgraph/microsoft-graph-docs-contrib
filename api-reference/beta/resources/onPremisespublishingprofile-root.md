@@ -2,8 +2,8 @@
 title: "On-premises Publishing Profiles"
 description: "On-premises Publishing Profiles."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 

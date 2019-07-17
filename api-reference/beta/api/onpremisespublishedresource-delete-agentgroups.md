@@ -2,8 +2,8 @@
 title: "Remove publishedResource from an onPremisesAgentGroup"
 description: "Remove publishedResource from an onPremisesAgentGroup."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

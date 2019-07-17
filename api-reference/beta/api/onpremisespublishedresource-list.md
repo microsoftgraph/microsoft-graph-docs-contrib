@@ -2,8 +2,8 @@
 title: "List publishedResources"
 description: "Retrieve a list of publishedResources."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

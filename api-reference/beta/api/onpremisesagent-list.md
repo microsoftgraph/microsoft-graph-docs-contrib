@@ -2,8 +2,8 @@
 title: "List onPremisesAgents"
 description: "Retrieve a list of onPremisesAgents."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 

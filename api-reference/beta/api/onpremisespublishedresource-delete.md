@@ -2,8 +2,8 @@
 title: "Delete publishedResource"
 description: "Delete publishedResource."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
