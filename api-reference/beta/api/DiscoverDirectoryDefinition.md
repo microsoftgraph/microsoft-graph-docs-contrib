@@ -47,7 +47,7 @@ If successful, returns a `200 OK` response, with [directoryDefinition](../resour
 
 ## Example
 
-##### Request
+### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -57,7 +57,7 @@ The following is an example of a request.
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{directoryId}/discover
 ```
 
-##### Response
+### Response
 
 The following is an example of a response.
 
