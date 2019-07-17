@@ -1,6 +1,6 @@
 ---
 title: "List onPremisesAgentGroups"
-description: "Retrieve a list of onPremisesAgentGroup."
+description: "Retrieve a list of onPremisesAgentGroup objects."
 localization_priority: Normal
 author: ""
 ms.prod: ""
