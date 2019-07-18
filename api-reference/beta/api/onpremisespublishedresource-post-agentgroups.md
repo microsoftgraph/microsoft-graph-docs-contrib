@@ -1,6 +1,6 @@
 ---
 title: "Assign publishedResource to onPremisesAgentGroup"
-description: "Assign publishedResource to onPremisesAgentGroup."
+description: "Assign a **publishedResource** object to an **onPremisesAgentGroup** object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to assign [publishedResource](../resources/onpremisespublishedresource.md) object to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Assign a [publishedResource](../resources/onpremisespublishedresource.md) object to an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
@@ -39,11 +39,11 @@ POST ~/onPremisesPublishingProfiles(publishingType)/publishedResources/{id1}/age
 
 ## Request body
 
-In the request body, supply a JSON representation of [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+In the request body, supply a JSON representation of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [publishedResource](../resources/onpremisespublishedresource.md) object  in the response body.
+If successful, this method returns a `201 Created` response code and a [publishedResource](../resources/onpremisespublishedresource.md) object  in the response body.
 
 ## Examples
 
