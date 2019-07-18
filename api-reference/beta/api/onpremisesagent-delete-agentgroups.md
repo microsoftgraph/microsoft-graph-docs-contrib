@@ -1,6 +1,6 @@
 ---
 title: "Remove onpremisesAgent from an onPremisesAgentGroup"
-description: "Remove onpremisesAgent from an onPremisesAgentGroup."
+description: "Remove an onpremisesAgent from an onPremisesAgentGroup."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to remove [onPremisesAgent](../resources/onpremisesagent.md) from [onPremisesAgentGroup](../resources/onpremisesagentgroup.md).
+Remove an [onPremisesAgent](../resources/onpremisesagent.md) from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md).
 
 ## Permissions
 
