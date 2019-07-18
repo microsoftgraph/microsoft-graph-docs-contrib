@@ -49,11 +49,13 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example 1
+## Examples
 
-Update updateWindow in the hybridAgentUpdaterConfiguration
+### Example 1: Update updateWindow in the hybridAgentUpdaterConfiguration
 
-### Request
+The following example updates the **updateWindow** in the **hybridAgentUpdaterConfiguration**.
+
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -72,7 +74,7 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisionin
 }
 ```
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -84,11 +86,11 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisionin
 HTTP/1.1 204
 ```
 
-## Example 2
+## Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration 
 
-Update deferUpdate in the hybridAgentUpdaterConfiguration 
+The following example updates **deferUpdate** in the **hybridAgentUpdaterConfiguration**.
 
-### Request
+#### equest
 
 The following is an example of the request.
 <!-- {
@@ -103,7 +105,7 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisionin
 }
 ```
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -115,11 +117,11 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisionin
 HTTP/1.1 204
 ```
 
-## Example 3
+## Example 3: Update allowUpdateConfigurationOverride in the hybridAgentUpdaterConfiguration
 
-Update allowUpdateConfigurationOverride in the hybridAgentUpdaterConfiguration
+The following example updates **allowUpdateConfigurationOverride** in the **hybridAgentUpdaterConfiguration**.
 
-### Request
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -134,7 +136,7 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisionin
 }
 ```
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
