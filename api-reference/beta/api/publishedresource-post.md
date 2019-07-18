@@ -1,17 +1,17 @@
 ---
-title: "Get publishedResource"
-description: "Retrieve the properties and relationships of a [publishedResource](../resources/onpremisespublishedresource.md) object."
+title: "Create publishedResource"
+description: "Create a new publishedResource object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Get publishedResource
+# Create publishedResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [publishedResource](../resources/onpremisespublishedresource.md) object.
+Use this API to create a new [publishedResource](../resources/publishedresource.md) object.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:---------------------------------------------------------|
-| Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
+|Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -28,12 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET ~/onPremisesPublishingProfiles(publishingType)/publishedResources/{id1}
+POST ~/onPremisesPublishingProfiles(publishingType)/publishedResources
 ```
-
-## Optional query parameters
-
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -43,11 +39,18 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+In the request body, supply a JSON representation of [publishedResource](../resources/publishedresource.md) object.
+
+Supply the values for the following properties.
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|displayName|String|Display Name of the publishedResource.|
+|resourceName|String|Name of the publishedResource.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [publishedResource](../resources/onpremisespublishedresource.md) object in the response body.
+If successful, this method returns `201, Created` response code and [publishedResource](../resources/publishedresource.md) object in the response body.
 
 ## Examples
 
@@ -56,11 +59,15 @@ If successful, this method returns a `200 OK` response code and the requested [p
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_publishedresource"
+  "name": "create_publishedresource_from_onpremisespublishingprofile"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('aed0b780-965f-4149-85c5-a8c73e58b67d')?$expand=agentGroups
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources
+{
+    "displayName": "New provisioning",
+    "resourceName": "domain1.contoso.com"
+}
 ```
 
 ### Response
@@ -76,19 +83,12 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
+HTTP/1.1 201 Created
 {
+    "id": "4655ed41-1619-4848-92bb-0576d3038682",
     "publishingType": "provisioning",
-    "displayName": "Demo provisioning",
-    "id": "aed0b780-965f-4149-85c5-a8c73e58b67d",
-    "resourceName": "domain1.contoso.com",
-    "agentGroups": [
-        {
-            "id": "2d55ed41-1619-4848-92bb-0576d3038682",
-            "displayName": "Group 1"
-        }
-    ]
+    "displayName": "New provisionin",
+    "resourceName": "domain1.contoso.com"
 }
 ```
 

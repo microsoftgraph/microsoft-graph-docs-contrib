@@ -1,17 +1,17 @@
 ---
-title: "Assign publishedResource to onPremisesAgentGroup"
-description: "Assign a **publishedResource** object to an **onPremisesAgentGroup** object."
+title: "Get publishedResource"
+description: "Retrieve the properties and relationships of a [publishedResource](../resources/onpremisespublishedresource.md) object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Assign publishedResource to onPremisesAgentGroup
+# Get publishedResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign a [publishedResource](../resources/onpremisespublishedresource.md) object to an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Retrieve the properties and relationships of [publishedResource](../resources/publishedresource.md) object.
 
 ## Permissions
 
@@ -28,22 +28,26 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST ~/onPremisesPublishingProfiles(publishingType)/publishedResources/{id1}/agentGroups/$ref
+GET ~/onPremisesPublishingProfiles(publishingType)/publishedResources/{id1}
 ```
+
+## Optional query parameters
+
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
-| Name          | Description   |
-|:--------------|:--------------|
+| Name      |Description|
+|:----------|:----------|
 | Authorization | Bearer {token} |
 
 ## Request body
 
-In the request body, supply a JSON representation of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [publishedResource](../resources/onpremisespublishedresource.md) object  in the response body.
+If successful, this method returns a `200 OK` response code and the requested [publishedResource](../resources/publishedresource.md) object in the response body.
 
 ## Examples
 
@@ -52,17 +56,11 @@ If successful, this method returns a `201 Created` response code and a [publishe
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_onpremisesagentgroup_from_onpremisespublishingprofile"
+  "name": "get_publishedresource"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('1234b780-965f-4149-85c5-a8c73e58b67d')/agentGroups/$ref)/agentGroups/$ref
-Content-type: application/json
-
-```http
-{
- "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups('2B032383-897C-42BA-917E-700B6890BDC3')/"
-}
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('aed0b780-965f-4149-85c5-a8c73e58b67d')?$expand=agentGroups
 ```
 
 ### Response
@@ -74,18 +72,31 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.onPremisesAgentGroup"
+  "@odata.type": "microsoft.graph.publishedResource"
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "publishingType": "provisioning",
+    "displayName": "Demo provisioning",
+    "id": "aed0b780-965f-4149-85c5-a8c73e58b67d",
+    "resourceName": "domain1.contoso.com",
+    "agentGroups": [
+        {
+            "id": "2d55ed41-1619-4848-92bb-0576d3038682",
+            "displayName": "Group 1"
+        }
+    ]
+}
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create onPremisesAgentGroup",
+  "description": "Get publishedResource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

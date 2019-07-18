@@ -17,13 +17,13 @@ Represents on-premises published resource.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get publishedResource](../api/onpremisespublishedresource-get.md) | [publishedResource](onpremisespublishedresource.md) | Read properties and relationships of publishedResource object. |
-| [Create publishedResource](../api/onpremisespublishedresource-create.md) |  [publishedResource](onpremisespublishedresource.md)  | Create a new publishedResource. |
-| [Update publishedResource](../api/onpremisespublishedresource-update.md) | [publishedResource](onpremisespublishedresource.md) | Update publishedResource object. |
-| [Delete  publishedResource](../api/onpremisespublishedresource-delete.md) | None | Delete publishedResource object. |
-| [List publishedResources](../api/onpremisespublishedresource-list.md) | [publishedResource](onpremisespublishedresource.md) objects collection | Get publishedResources object collection. |
-| [Assign publishedResource to onPremisesAgentGroup](../api/onpremisespublishedresource-post-agentgroups.md) | None |  |
-| [Remove publishedResource from onPremisesAgentGroup](../api/onpremisespublishedresource-delete-agentgroups.md) | None |  |
+| [Get publishedResource](../api/publishedresource-get.md) | [publishedResource](publishedresource.md) | Read properties and relationships of publishedResource object. |
+| [Create publishedResource](../api/publishedresource-create.md) |  [publishedResource](publishedresource.md)  | Create a new publishedResource. |
+| [Update publishedResource](../api/publishedresource-update.md) | [publishedResource](publishedresource.md) | Update publishedResource object. |
+| [Delete  publishedResource](../api/publishedresource-delete.md) | None | Delete publishedResource object. |
+| [List publishedResources](../api/publishedresource-list.md) | [publishedResource](publishedresource.md) objects collection | Get publishedResources object collection. |
+| [Assign publishedResource to onPremisesAgentGroup](../api/publishedresource-post-agentgroups.md) | None |  |
+| [Remove publishedResource from onPremisesAgentGroup](../api/publishedresource-delete-agentgroups.md) | None |  |
 
 ## Properties
 

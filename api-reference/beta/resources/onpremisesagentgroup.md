@@ -27,7 +27,7 @@ Represents on-premises agents group.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String||
+|displayName|String|Display Name of the onPremisesAgentGroup.|
 |id|String| The object id of the onPremisesAgentGroup. Read-only.|
 |isDefault|Boolean||
 |publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|

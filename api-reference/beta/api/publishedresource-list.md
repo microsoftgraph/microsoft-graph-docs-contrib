@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [publishedResource](../resources/onpremisespublishedresource.md) objects.
+Retrieve a list of [publishedResource](../resources/publishedresource.md) objects.
 
 ## Permissions
 
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [publishedResource](../resources/onpremisespublishedresource.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [publishedResource](../resources/publishedresource.md) objects in the response body.
 
 ## Examples
 

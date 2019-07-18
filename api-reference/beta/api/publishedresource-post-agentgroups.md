@@ -1,17 +1,17 @@
 ---
-title: "Update publishedResource"
-description: "Update the properties of a [publishedResource](../resources/onpremisespublishedresource.md) object."
+title: "Assign publishedResource to onPremisesAgentGroup"
+description: "Assign a **publishedResource** object to an **onPremisesAgentGroup** object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Update publishedResource
+# Assign publishedResource to onPremisesAgentGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [publishedResource](../resources/onpremisespublishedresource.md) object.
+Use this API to assign [publishedResource](../resources/publishedresource.md) object to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
@@ -28,28 +28,22 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH ~/onPremisesPublishingProfiles(publishingType)/publishedResources/{id1}
+POST ~/onPremisesPublishingProfiles(publishingType)/publishedResources/{id1}/agentGroups/$ref
 ```
 
 ## Request headers
 
-| Name       | Description|
-|:-----------|:-----------|
+| Name          | Description   |
+|:--------------|:--------------|
 | Authorization | Bearer {token} |
 
 ## Request body
 
-In the request body, supply the values for relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
-
-The following table lists the properties that can be updated.
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|displayName|String|Represents an on-premises published resource name.|
+In the request body, supply a JSON representation of an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns `201, Created` response code and [publishedResource](../resources/publishedresource.md) object  in the response body.
 
 ## Examples
 
@@ -58,14 +52,16 @@ If successful, this method returns a `204 No Content` response code.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "update_publishedresource"
+  "name": "create_onpremisesagentgroup_from_onpremisespublishingprofile"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles(publishingType)/publishedResources('1234b780-965f-4149-85c5-a8c73e58b67d')
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('1234b780-965f-4149-85c5-a8c73e58b67d')/agentGroups/$ref)/agentGroups/$ref
+Content-type: application/json
 
+```http
 {
-    "displayName": "Demo provisioning (updated)"
+ "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups('2B032383-897C-42BA-917E-700B6890BDC3')/"
 }
 ```
 
@@ -78,7 +74,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.publishedResource"
+  "@odata.type": "microsoft.graph.onPremisesAgentGroup"
 } -->
 
 ```http
@@ -89,7 +85,7 @@ HTTP/1.1 204
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Update publishedresource",
+  "description": "Create onPremisesAgentGroup",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,17 +1,17 @@
 ---
-title: "Create publishedResource"
-description: "Create a new publishedResource object."
+title: "Update publishedResource"
+description: "Update the properties of a [publishedResource](../resources/onpremisespublishedresource.md) object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Create publishedResource
+# Update publishedResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [publishedResource](../resources/onpremisespublishedresource.md) object.
+Update the properties of publishedresource  [publishedResource](../resources/publishedresource.md) object.
 
 ## Permissions
 
@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
+| Delegated (work or school account)     | OnPremisesPublishingProfiles.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -28,29 +28,28 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST ~/onPremisesPublishingProfiles(publishingType)/publishedResources
+PATCH ~/onPremisesPublishingProfiles(publishingType)/publishedResources/{id1}
 ```
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
+| Name       | Description|
+|:-----------|:-----------|
 | Authorization | Bearer {token} |
 
 ## Request body
 
-In the request body, supply a JSON representation of a [publishedResource](../resources/onpremisespublishedresource.md) object.
+In the request body, supply the values for relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-Supply the values for the following properties.
+The following table lists the properties that can be updated.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String||
-|resourceName|String||
+|displayName|String|Represents an on-premises published resource name.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [publishedResource](../resources/onpremisespublishedresource.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -59,14 +58,14 @@ If successful, this method returns a `201 Created` response code and a [publishe
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "create_publishedresource_from_onpremisespublishingprofile"
+  "name": "update_publishedresource"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles(publishingType)/publishedResources('1234b780-965f-4149-85c5-a8c73e58b67d')
+
 {
-    "displayName": "New provisioning",
-    "resourceName": "domain1.contoso.com"
+    "displayName": "Demo provisioning (updated)"
 }
 ```
 
@@ -83,20 +82,14 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 201 Created
-{
-    "id": "4655ed41-1619-4848-92bb-0576d3038682",
-    "publishingType": "provisioning",
-    "displayName": "New provisionin",
-    "resourceName": "domain1.contoso.com"
-}
+HTTP/1.1 204
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get publishedResource",
+  "description": "Update publishedresource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

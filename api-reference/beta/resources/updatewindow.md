@@ -15,8 +15,8 @@ doc_type: "resourcePageType"
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|updateWindowEndTime|TimeOfDay||
-|updateWindowStartTime|TimeOfDay||
+|updateWindowEndTime|TimeOfDay|End of a time window during which agents can receive updates|
+|updateWindowStartTime|TimeOfDay|Start of a time window during which agents can receive updates|
 
 ## JSON representation
 

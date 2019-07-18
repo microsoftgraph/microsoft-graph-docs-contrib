@@ -16,13 +16,13 @@ doc_type: "resourcePageType"
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get onPremisesPublishingProfile](../api/onpremisespublishingprofile-get.md) | [onPremisesPublishingProfile](onpremisespublishingprofile.md) | Read properties and relationships of onPremisesPublishingProfile object. |
-| [Update onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | None | Update [hybridAgentUpdaterConfiguration](onpremiseshybridagentupdaterconfiguration.md) object properties.
+| [Update onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | None | Update [hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md) object properties.
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](onpremiseshybridagentupdaterconfiguration.md)||
+|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)||
 |id|String| Read-only.|
 
 ## Relationships
@@ -31,8 +31,8 @@ doc_type: "resourcePageType"
 |:-------------|:------------|:------------|
 |agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) collection| Read-only. Nullable.|
 |agents|[onPremisesAgent](onpremisesagent.md) collection| Read-only. Nullable.|
-|publishedResources|[publishedResource](onpremisespublishedresource.md) collection| Read-only. Nullable.|
-|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](onpremiseshybridagentupdaterconfiguration.md) | |
+|publishedResources|[publishedResource](publishedresource.md) collection| Read-only. Nullable.|
+|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md) | |
 
 ## JSON representation
 
