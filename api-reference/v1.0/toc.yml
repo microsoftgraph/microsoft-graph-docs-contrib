@@ -245,8 +245,10 @@
       - name: Groups
         href: resources/group.md
         items:
-        - name: List memberOf
+        - name: List member of
           href: api/user-list-memberof.md
+        - name: List transitive member of
+          href: api/user-list-transitivememberof.md
       - name: Mail
         href: resources/message.md
         items:
@@ -353,10 +355,16 @@
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
           href: api/group-list-memberof.md
+        - name: List transitive member of
+          href: api/group-list-transitivememberof.md
         - name: List members
           href: api/group-list-members.md
+        - name: List transitive members
+          href: api/group-list-transitivemembers.md
         - name: List owners
           href: api/group-list-owners.md
+        - name: List photos
+          href: api/group-list-photos.md
         - name: Update group
           href: api/group-update.md
         - name: Remove favorite
@@ -3229,6 +3237,8 @@
           href: api/device-post-registeredusers.md
         - name: List device groups
           href: api/device-list-memberof.md
+        - name: List device transitive groups
+          href: api/device-list-transitivememberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
