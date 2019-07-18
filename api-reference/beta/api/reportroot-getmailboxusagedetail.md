@@ -70,6 +70,8 @@ The CSV file has the following headers for columns.
 - Issue Warning Quota (Byte)
 - Prohibit Send Quota (Byte)
 - Prohibit Send/Receive Quota (Byte)
+- Deleted Item Count
+- Deleted Item Size (Byte)
 - Report Period
 
 ### JSON
@@ -141,7 +143,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Report Period
+Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Created Date,Last Activity Date,Item Count,Storage Used (Byte),Issue Warning Quota (Byte),Prohibit Send Quota (Byte),Prohibit Send/Receive Quota (Byte),Deleted Item Count,Deleted Item Size (Byte),Report Period
 ```
 
 ### JSON
@@ -211,6 +213,8 @@ Content-Length: 526
       "lastActivityDate": "2017-09-01", 
       "itemCount": 138481, 
       "storageUsedInBytes": 10414748704, 
+      "deletedItemCount": 138481,
+      "deletedItemSizeInBytes": 10414748704, 
       "issueWarningQuotaInBytes": 10522698752, 
       "prohibitSendQuotaInBytes": 10630040576, 
       "prohibitSendReceiveQuotaInBytes": 10737418240, 

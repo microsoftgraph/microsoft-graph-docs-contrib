@@ -1,18 +1,18 @@
 ---
-title: "Get importedWindowsAutopilotDeviceIdentityUpload"
-description: "Read properties and relationships of the importedWindowsAutopilotDeviceIdentityUpload object."
+title: "exportDeviceAndAppManagementData function"
+description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
 
-# Get importedWindowsAutopilotDeviceIdentityUpload
+# exportDeviceAndAppManagementData function
 
 > **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Read properties and relationships of the [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) object.
+Not yet documented
 
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,11 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}
+GET /users/{usersId}/exportDeviceAndAppManagementData
 ```
-
-## Optional query parameters
-This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Header|Value|
@@ -42,17 +39,25 @@ This method supports the [OData Query Parameters](https://docs.microsoft.com/en-
 |Accept|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+In the request URL, provide the following query parameters with values.
+The following table shows the parameters that can be used with this function.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|skip|Int32|Not yet documented|
+|top|Int32|Not yet documented|
+
+
 
 ## Response
-If successful, this method returns a `200 OK` response code and [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) object in the response body.
+If successful, this function returns a `200 OK` response code and a [deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md) in the response body.
 
 ## Example
 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}
+GET https://graph.microsoft.com/beta/users/{usersId}/exportDeviceAndAppManagementData(skip=4,top=3)
 ```
 
 ### Response
@@ -60,14 +65,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 248
+Content-Length: 143
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentityUpload",
-    "id": "8d639524-9524-8d63-2495-638d2495638d",
-    "createdDateTimeUtc": "2016-12-31T23:59:45.8788427-08:00",
-    "status": "pending"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementData",
+    "content": "<Unknown Primitive Type Edm.Stream>"
   }
 }
 ```

@@ -29,7 +29,7 @@ GET /security/alerts
 GET /security/alerts?$top=1
 GET /security/alerts?$filter={property} eq '{property-value}'
 GET /security/alerts?$filter={property} eq '{property-value}'&$top=5
-GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{property-value}'
+GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq '{property-value}'
 ```
 
 ## Optional query parameters
