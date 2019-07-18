@@ -1,6 +1,6 @@
 ---
 title: "Delete publishedResource"
-description: "Delete publishedResource."
+description: "Delete a [publishedResource](../resources/onpremisespublishedresource.md) object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
