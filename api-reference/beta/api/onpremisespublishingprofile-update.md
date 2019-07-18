@@ -1,6 +1,6 @@
 ---
 title: "Update onPremisesPublishingProfile"
-description: "Update the properties of onPremisesPublishingProfile."
+description: "Update the properties of an onPremisesPublishingProfile object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) object.
+Update the properties of an [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) object.
 
 ## Permissions
 
@@ -39,11 +39,11 @@ PATCH ~/onPremisesPublishingProfiles(publishingType)/hybridAgentUpdaterConfigura
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration|Represents [hybridAgentUpdaterConfiguration](onpremiseshybridagentupdaterconfiguration.md)|
+|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration|Represents [hybridAgentUpdaterConfiguration](onpremiseshybridagentupdaterconfiguration.md).|
 
 ## Response
 
