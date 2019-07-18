@@ -61,6 +61,13 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-1.0) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) resource. |
 | Addition | beta | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) resource. |
 
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added support for application permissions to [List channel messages](/api-reference/beta/api/channel-list-messages.md), [Get channel message](/api-reference/beta/api/channel-get-message.md), [List replies to a message](/api-reference/beta/api/channel-list-messagereplies.md), and [Get a reply to a message](/api-reference/beta/api/channel-get-messagereply.md). |
+| Addition | beta | Added support for application permissions to [List messages in a chat](/api-reference/beta/api/chatmessage-list.md) and [Get message in chat](/api-reference/beta/api/chatmessage-get.md). |
+
 ## June 2019
 
 ### Devices and apps (Microsoft Intune)
