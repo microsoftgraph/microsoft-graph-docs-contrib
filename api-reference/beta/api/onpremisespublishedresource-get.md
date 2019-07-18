@@ -1,6 +1,6 @@
 ---
 title: "Get publishedResource"
-description: "Get publishedResource."
+description: "Retrieve the properties and relationships of a [publishedResource](../resources/onpremisespublishedresource.md) object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [publishedResource](../resources/onpremisespublishedresource.md) object.
+Retrieve the properties and relationships of a [publishedResource](../resources/onpremisespublishedresource.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ GET ~/onPremisesPublishingProfiles(publishingType)/publishedResources/{id1}
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
