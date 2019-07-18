@@ -1,6 +1,6 @@
 ---
 title: "List publishedResources"
-description: "Retrieve a list of publishedResources."
+description: "Retrieve a list of publishedResource objects."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -33,7 +33,7 @@ GET ~/onPremisesPublishingProfiles(publishingType)/publishedResources
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
