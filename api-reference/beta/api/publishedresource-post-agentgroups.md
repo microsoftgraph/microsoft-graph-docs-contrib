@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to assign [publishedResource](../resources/publishedresource.md) object to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Assign a [publishedResource](../resources/publishedresource.md) object to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of an [onPremisesAgentGroup](.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [publishedResource](../resources/publishedresource.md) object  in the response body.
+If successful, this method returns a `201 Created` response code and a [publishedResource](../resources/publishedresource.md) object  in the response body.
 
 ## Examples
 
