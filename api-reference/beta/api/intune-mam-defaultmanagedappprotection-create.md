@@ -1,7 +1,7 @@
 ---
 title: "Create defaultManagedAppProtection"
 description: "Create a new defaultManagedAppProtection object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Create a new [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -83,6 +83,8 @@ The following table shows the properties that are required when you create the d
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|allowedOutboundClipboardSharingExceptionLength|Int32|Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Specify app notification restriction Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allow`, `blockOrganizationalData`, `block`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Type of encryption which should be used for data in a managed app. (iOS Only). Possible values are: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
 |screenCaptureBlocked|Boolean|Indicates whether screen capture is blocked. (Android only)|
 |encryptAppData|Boolean|Indicates whether managed-app data should be encrypted. (Android only)|
@@ -101,10 +103,16 @@ The following table shows the properties that are required when you create the d
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. (iOS Only). Possible values are: `block`, `wipe`, `warn`.|
 |allowedAndroidDeviceManufacturers|String|Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work. (Android only)|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device manufacturer is not allowed. (Android only). Possible values are: `block`, `wipe`, `warn`.|
-|thirdPartyKeyboardsBlocked|Boolean|Defines if third party keyboards are allowed while accessing a managed app. (iOS Only)|
 |filterOpenInToOnlyManagedApps|Boolean|Defines if open-in operation is supported from the managed app to the filesharing locations selected. This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False. (iOS Only)|
 |disableProtectionOfManagedOutboundOpenInData|Boolean|Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps. (iOS Only)|
 |protectInboundDataFromUnknownSources|Boolean|Protect incoming data from unknown source. This setting is only allowed to be True when AllowedInboundDataTransferSources is set to AllApps. (iOS Only)|
+|requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Defines the Android SafetyNet Device Attestation requirement for a managed app to work. Possible values are: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
+|appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android SafetyNet Attestation requirment fails. Possible values are: `block`, `wipe`, `warn`.|
+|requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Defines the Android SafetyNet Apps Verification requirement for a managed app to work. Possible values are: `none`, `enabled`.|
+|appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android App Verification requirment fails. Possible values are: `block`, `wipe`, `warn`.|
+|customBrowserProtocol|String|A custom browser protocol to open weblink on iOS. (iOS only)|
+|customBrowserPackageId|String|Unique identifier of a custom browser to open weblink on Android. (Android only)|
+|customBrowserDisplayName|String|Friendly name of the preferred custom browser to open weblink on Android. (Android only)|
 
 
 
@@ -118,7 +126,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections
 Content-type: application/json
-Content-length: 3217
+Content-length: 3746
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -161,6 +169,8 @@ Content-length: 3217
   "appActionIfDeviceComplianceRequired": "wipe",
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+  "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -197,10 +207,16 @@ Content-length: 3217
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
   "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
-  "protectInboundDataFromUnknownSources": true
+  "protectInboundDataFromUnknownSources": true,
+  "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
+  "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
+  "requiredAndroidSafetyNetAppsVerificationType": "enabled",
+  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+  "customBrowserProtocol": "Custom Browser Protocol value",
+  "customBrowserPackageId": "Custom Browser Package Id value",
+  "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
 
@@ -209,7 +225,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3389
+Content-Length: 3918
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -255,6 +271,8 @@ Content-Length: 3389
   "appActionIfDeviceComplianceRequired": "wipe",
   "appActionIfMaximumPinRetriesExceeded": "wipe",
   "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+  "allowedOutboundClipboardSharingExceptionLength": 14,
+  "notificationRestriction": "blockOrganizationalData",
   "appDataEncryptionType": "afterDeviceRestart",
   "screenCaptureBlocked": true,
   "encryptAppData": true,
@@ -291,12 +309,19 @@ Content-Length: 3389
   "appActionIfIosDeviceModelNotAllowed": "wipe",
   "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
   "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
-  "thirdPartyKeyboardsBlocked": true,
   "filterOpenInToOnlyManagedApps": true,
   "disableProtectionOfManagedOutboundOpenInData": true,
-  "protectInboundDataFromUnknownSources": true
+  "protectInboundDataFromUnknownSources": true,
+  "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
+  "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
+  "requiredAndroidSafetyNetAppsVerificationType": "enabled",
+  "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe",
+  "customBrowserProtocol": "Custom Browser Protocol value",
+  "customBrowserPackageId": "Custom Browser Package Id value",
+  "customBrowserDisplayName": "Custom Browser Display Name value"
 }
 ```
+
 
 
 

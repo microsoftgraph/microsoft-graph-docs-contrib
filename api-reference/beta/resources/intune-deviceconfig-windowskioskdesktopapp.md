@@ -1,7 +1,7 @@
 ---
 title: "windowsKioskDesktopApp resource type"
 description: "The base class for a type of apps"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -23,6 +23,7 @@ Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskios
 |startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|The app type Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Possible values are: `unknown`, `store`, `desktop`, `aumId`.|
+|autoLaunch|Boolean|Allow the app to be auto-launched in multi-app kiosk mode Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |path|String|Define the path of a desktop app|
 |desktopApplicationId|String|Define the DesktopApplicationID of the app|
 |desktopApplicationLinkPath|String|Define the DesktopApplicationLinkPath of the app|
@@ -43,11 +44,13 @@ Here is a JSON representation of the resource.
   "startLayoutTileSize": "String",
   "name": "String",
   "appType": "String",
+  "autoLaunch": true,
   "path": "String",
   "desktopApplicationId": "String",
   "desktopApplicationLinkPath": "String"
 }
 ```
+
 
 
 

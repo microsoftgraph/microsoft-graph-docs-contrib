@@ -1,7 +1,7 @@
 ---
 title: "List managedAppProtections"
 description: "List properties and relationships of the managedAppProtection objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 List properties and relationships of the [managedAppProtection](../resources/intune-mam-managedappprotection.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -59,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2094
+Content-Length: 2216
 
 {
   "value": [
@@ -106,11 +106,14 @@ Content-Length: 2094
       "minimumWipeAppVersion": "Minimum Wipe App Version value",
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
-      "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S"
+      "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+      "allowedOutboundClipboardSharingExceptionLength": 14,
+      "notificationRestriction": "blockOrganizationalData"
     }
   ]
 }
 ```
+
 
 
 

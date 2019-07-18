@@ -1,26 +1,35 @@
 ---
 title: "chatMessage resource type"
 description: "Represents an individual chat message within a channel or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message."
-localization_priority: Priority
+localization_priority: Normal
+author: "clearab"
+ms.prod: "microsoft-teams"
 ---
 
 # chatMessage resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an individual chat message within a [channel](channel.md) or chat entity. The message can be an root message or part of a thread that is defined by the **replyToId** property in the message.
+Represents an individual chat message within a [channel](channel.md) or [chat](chat.md).
+The message can be a root message or part of a thread that is defined by the **replyToId** property in the message.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List Channel messages](../api/channel-list-messages.md) | [chatmessage](chatmessage.md) collection | Get the list of all root messages in a channel.|
-|[Get Channel message](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Get a single root message from a channel.|
-|[List replies to a message](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) collection| Get the list of all replies to a message in channel.|
-|[Get a reply to a message](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Get a single reply to a message in a channel.|
+|[List Channel messages](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | List of all root messages in a channel.|
+|[Get Channel message](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Get a single root message from a channel.|
+|[List replies to a message](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a message in channel.|
+|[Get a reply to a message](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Get a single reply to a message in a channel.|
 |[Update DLP violation](../api/update-chatmessage.md) | none| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
 |[Send a message in a channel](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Create a new top-level message in a channel.|
-|[Reply to a message in a channel](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Reply to an existing message in a channel.|
+|[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Create a new top-level message in a channel.|
+|[Reply to a message in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing message in a channel.|
+|[List messages in a chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | List messages in a 1:1 or group chat. |
+|[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
+|[List all hosted images](../api/chatmessagehostedimage-list-hostedimages.md) | [hostedImage](../resources/chatmessagehostedimage.md) collection| Get all hosted images in a message.|
+|[Get hosted image](../api/chatmessagehostedimage-get.md) | [hostedImage](../resources/chatmessagehostedimage.md) | Get a hosted image from a message.|
+|[Get hosted image bytes](../api/chatmessagehostedimage-getbytes.md) | binary image data | Get binary image data of a hosted image from a message.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -37,12 +46,13 @@ Represents an individual chat message within a [channel](channel.md) or chat ent
 |subject|string|Message subject line. Optional|
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
 |summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
+|attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
 |importance| string | The importance of the message: Normal, High|
 |reactions| [chatMessageReaction](chatreaction.md) collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
 |policyViolation|[chatMessagePolicyViolation](chatmessagepolicyviolation.md)|Properties for the Data Loss Prevention (DLP) violation|
-|attachments|[chatMessageAttachment](chatattachment.md) collection |Attached files|
+|locale|string|Locale of the message set by the client.|
 
 ## JSON representation
 
@@ -73,7 +83,6 @@ The following is a JSON representation of the resource.
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
-  "isDeleted": "boolean",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},
@@ -81,9 +90,11 @@ The following is a JSON representation of the resource.
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
+  "policyViolation": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string",
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"}
+  "deleted": true
 }
 
 ```
@@ -97,8 +108,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/chatmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,7 +1,7 @@
 ---
 title: "Update windows10GeneralConfiguration"
 description: "Update the properties of a windows10GeneralConfiguration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -15,7 +15,7 @@ ms.prod: "Intune"
 Update the properties of a [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) object.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -51,6 +51,9 @@ The following table shows the properties that are required when you create the [
 |lastModifiedDateTime|DateTimeOffset|DateTime the object was last modified. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indicates whether or not the underlying Device Configuration supports the assignment of scope tags. Assigning to the ScopeTags property is not allowed when this value is false and entities will not be visible to scoped users. This occurs for Legacy policies created in Silverlight and can be resolved by deleting and recreating the policy in the Azure Portal. This property is read-only. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|The OS edition applicability for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|The OS version applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|The device mode applicability rule for this Policy. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime the object was created. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -60,6 +63,7 @@ The following table shows the properties that are required when you create the [
 |enableAutomaticRedeployment|Boolean|Allow users with administrative rights to delete all user data and settings using CTRL + Win + R at the device lock screen so that the device can be automatically re-configured and re-enrolled into management.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controls the Microsoft Account Sign-In Assistant (wlidsvc) NT service. Possible values are: `notConfigured`, `disabled`.|
 |authenticationAllowSecondaryDevice|Boolean|Allows secondary authentication devices to work with Windows.|
+|authenticationWebSignIn|[enablement](../resources/intune-shared-enablement.md)|Indicates whether or not Web Credential Provider will be enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |authenticationPreferredAzureADTenantDomainName|String|Specifies the preferred domain among available domains in the Azure AD tenant.|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|Specify whether to allow or disallow the Federal Information Processing Standard (FIPS) policy.|
 |displayAppListWithGdiDPIScalingTurnedOn|String collection|List of legacy applications that have GDI DPI Scaling turned on.|
@@ -72,8 +76,8 @@ The following table shows the properties that are required when you create the [
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|OAuth resource URI for printer discovery service as configured in Azure portal.|
 |experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Allow or prevent the syncing of Microsoft Edge Browser settings. Option for IT admins to prevent syncing across devices, but allow user override. Possible values are: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
 |messagingBlockSync|Boolean|Indicates whether or not to block text message back up and restore and Messaging Everywhere.|
-|messagingBlockMMS|Boolean|Indicates whether or not to block the the MMS send/receive functionality on the device.|
-|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the the RCS send/receive functionality on the device.|
+|messagingBlockMMS|Boolean|Indicates whether or not to block the MMS send/receive functionality on the device.|
+|messagingBlockRichCommunicationServices|Boolean|Indicates whether or not to block the RCS send/receive functionality on the device.|
 |printerNames|String collection|Automatically provision printers based on their names (network host names).|
 |printerDefaultName|String|Name (network host name) of an installed printer.|
 |printerBlockAddition|Boolean|Prevent user installation of additional printers from printers settings.|
@@ -95,7 +99,8 @@ The following table shows the properties that are required when you create the [
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controls the user access to the ink workspace, from the desktop and from above the lock screen. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |inkWorkspaceBlockSuggestedApps|Boolean|Specify whether to show recommended app suggestions in the ink workspace.|
-|smartScreenEnableAppInstallControl|Boolean|Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
+|smartScreenEnableAppInstallControl|Boolean|This property will be deprecated in July 2019 and will be replaced by property SmartScreenAppInstallControl. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.|
+|smartScreenAppInstallControl|[appInstallControlType](../resources/intune-deviceconfig-appinstallcontroltype.md)|Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store. Possible values are: `notConfigured`, `anywhere`, `storeOnly`, `recommendations`, `preferStore`.|
 |personalizationDesktopImageUrl|String|A http or https Url to a jpg, jpeg or png image that needs to be downloaded and used as the Desktop Image or a file Url to a local image on the file system that needs to used as the Desktop Image.|
 |personalizationLockScreenImageUrl|String|A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and used as the Lock Screen Image or a file Url to a local image on the file system that needs to be used as the Lock Screen Image.|
 |bluetoothAllowedServices|String collection|Specify a list of allowed Bluetooth services and profiles in hex formatted strings.|
@@ -176,13 +181,13 @@ The following table shows the properties that are required when you create the [
 |defenderCloudExtendedTimeout|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |defenderCloudExtendedTimeoutInSeconds|Int32|Timeout extension for file scanning by the cloud. Valid values 0 to 50|
 |defenderBlockOnAccessProtection|Boolean|Allows or disallows Windows Defender On Access Protection functionality.|
-|defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune-deviceconfig-defenderschedulescanday.md)|Selects the day that the Windows Defender scan should run. Possible values are: `everyday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`, `noScheduledScan`.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Checks for the user consent level in Windows Defender to send data. Possible values are: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen of Windows 10 Mobile devices. If this policy is set to Allow, the value set by lockScreenTimeoutInSeconds is ignored.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indicates whether or not to block action center notifications over lock screen.|
 |lockScreenBlockCortana|Boolean|Indicates whether or not the user can interact with Cortana using speech while the system is locked.|
 |lockScreenBlockToastNotifications|Boolean|Indicates whether to allow toast notifications above the device lock screen.|
 |lockScreenTimeoutInSeconds|Int32|Set the duration (in seconds) from the screen locking to the screen turning off for Windows 10 Mobile devices. Supported values are 11-1800. Valid values 11 to 1800|
+|lockScreenActivateAppsWithVoice|[enablement](../resources/intune-shared-enablement.md)|This policy setting specifies whether Windows apps can be activated by voice while the system is locked. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |passwordBlockSimple|Boolean|Specify whether PINs or passwords such as "1111" or "1234" are allowed. For Windows 10 desktops, it also controls the use of picture passwords.|
 |passwordExpirationDays|Int32|The password expiration in days. Valid values 0 to 730|
 |passwordMinimumLength|Int32|The minimum password length. Valid values 4 to 16|
@@ -196,6 +201,7 @@ The following table shows the properties that are required when you create the [
 |passwordMinimumAgeInDays|Int32|This security setting determines the period of time (in days) that a password must be used before the user can change it. Valid values 0 to 998|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Enables or disables the use of advertising ID. Added in Windows 10, version 1607. Possible values are: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indicates whether or not to allow the automatic acceptance of the pairing and privacy user consent dialog when launching apps.|
+|privacyDisableLaunchExperience|Boolean|This policy prevents the privacy experience from launching during user logon for new and upgraded users.​|
 |privacyBlockInputPersonalization|Boolean|Indicates whether or not to block the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
 |privacyBlockPublishUserActivities|Boolean|Blocks the shared experiences/discovery of recently used resources in task switcher etc.|
 |privacyBlockActivityFeed|Boolean|Blocks the usage of cloud based speech services for Cortana, Dictation, or Store applications.|
@@ -319,6 +325,7 @@ The following table shows the properties that are required when you create the [
 |appManagementMSIAllowUserControlOverInstall|Boolean|This policy setting permits users to change installation options that typically are available only to system administrators.|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.|
 |dataProtectionBlockDirectMemoryAccess|Boolean|This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows.|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|String collection|List of semi-colon delimited Package Family Names of Windows apps. Listed Windows apps are to be launched after logon.​|
 
 
 
@@ -332,7 +339,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 13338
+Content-length: 14387
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -340,6 +347,27 @@ Content-length: 13338
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
@@ -353,6 +381,7 @@ Content-length: 13338
   "enableAutomaticRedeployment": true,
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
+  "authenticationWebSignIn": "enabled",
   "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
@@ -395,6 +424,7 @@ Content-length: 13338
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
+  "smartScreenAppInstallControl": "anywhere",
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
@@ -493,13 +523,13 @@ Content-length: 13338
   "defenderCloudExtendedTimeout": 12,
   "defenderCloudExtendedTimeoutInSeconds": 5,
   "defenderBlockOnAccessProtection": true,
-  "defenderScheduleScanDay": "monday",
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
   "lockScreenBlockToastNotifications": true,
   "lockScreenTimeoutInSeconds": 10,
+  "lockScreenActivateAppsWithVoice": "enabled",
   "passwordBlockSimple": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -513,6 +543,7 @@ Content-length: 13338
   "passwordMinimumAgeInDays": 8,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
+  "privacyDisableLaunchExperience": true,
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
@@ -646,7 +677,10 @@ Content-length: 13338
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
   "appManagementMSIAllowUserControlOverInstall": true,
   "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-  "dataProtectionBlockDirectMemoryAccess": true
+  "dataProtectionBlockDirectMemoryAccess": true,
+  "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+    "App Management Package Family Names To Launch After Log On value"
+  ]
 }
 ```
 
@@ -655,7 +689,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 13510
+Content-Length: 14559
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -665,6 +699,27 @@ Content-Length: 13510
     "Role Scope Tag Ids value"
   ],
   "supportsScopeTags": true,
+  "deviceManagementApplicabilityRuleOsEdition": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+    "osEditionTypes": [
+      "windows10EnterpriseN"
+    ],
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleOsVersion": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+    "minOSVersion": "Min OSVersion value",
+    "maxOSVersion": "Max OSVersion value",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
+  "deviceManagementApplicabilityRuleDeviceMode": {
+    "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+    "deviceMode": "sModeConfiguration",
+    "name": "Name value",
+    "ruleType": "exclude"
+  },
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "description": "Description value",
   "displayName": "Display Name value",
@@ -679,6 +734,7 @@ Content-Length: 13510
   "enableAutomaticRedeployment": true,
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
+  "authenticationWebSignIn": "enabled",
   "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
@@ -721,6 +777,7 @@ Content-Length: 13510
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
   "smartScreenEnableAppInstallControl": true,
+  "smartScreenAppInstallControl": "anywhere",
   "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
   "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
   "bluetoothAllowedServices": [
@@ -819,13 +876,13 @@ Content-Length: 13510
   "defenderCloudExtendedTimeout": 12,
   "defenderCloudExtendedTimeoutInSeconds": 5,
   "defenderBlockOnAccessProtection": true,
-  "defenderScheduleScanDay": "monday",
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "lockScreenAllowTimeoutConfiguration": true,
   "lockScreenBlockActionCenterNotifications": true,
   "lockScreenBlockCortana": true,
   "lockScreenBlockToastNotifications": true,
   "lockScreenTimeoutInSeconds": 10,
+  "lockScreenActivateAppsWithVoice": "enabled",
   "passwordBlockSimple": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -839,6 +896,7 @@ Content-Length: 13510
   "passwordMinimumAgeInDays": 8,
   "privacyAdvertisingId": "blocked",
   "privacyAutoAcceptPairingAndConsentPrompts": true,
+  "privacyDisableLaunchExperience": true,
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
@@ -972,9 +1030,13 @@ Content-Length: 13510
   "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
   "appManagementMSIAllowUserControlOverInstall": true,
   "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-  "dataProtectionBlockDirectMemoryAccess": true
+  "dataProtectionBlockDirectMemoryAccess": true,
+  "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+    "App Management Package Family Names To Launch After Log On value"
+  ]
 }
 ```
+
 
 
 

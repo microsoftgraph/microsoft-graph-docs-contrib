@@ -1,7 +1,7 @@
 ---
 title: "androidManagedAppProtection resource type"
 description: "Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -67,6 +67,8 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, when the device is either rooted or jailbroken, if DeviceComplianceRequired is set to true. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|allowedOutboundClipboardSharingExceptionLength|Int32|Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed. Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Specify app notification restriction Inherited from [managedAppProtection](../resources/intune-mam-managedappprotection.md). Possible values are: `allow`, `blockOrganizationalData`, `block`.|
 |isAssigned|Boolean|Indicates if the policy is deployed to any inclusion groups or not. Inherited from [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md)|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|The intended app management levels for this policy Inherited from [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Possible values are: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |screenCaptureBlocked|Boolean|Indicates whether a managed user can take screen captures of managed apps|
@@ -79,6 +81,12 @@ Inherits from [targetedManagedAppProtection](../resources/intune-mam-targetedman
 |minimumWipePatchVersion|String|Android security patch level  less than or equal to the specified value will wipe the managed app and the associated company data.|
 |allowedAndroidDeviceManufacturers|String|Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device manufacturer is not allowed. Possible values are: `block`, `wipe`, `warn`.|
+|requiredAndroidSafetyNetDeviceAttestationType|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Defines the Android SafetyNet Device Attestation requirement for a managed app to work. Possible values are: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
+|appActionIfAndroidSafetyNetDeviceAttestationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android SafetyNet Attestation requirment fails. Possible values are: `block`, `wipe`, `warn`.|
+|requiredAndroidSafetyNetAppsVerificationType|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Defines the Android SafetyNet Apps Verification requirement for a managed app to work. Possible values are: `none`, `enabled`.|
+|appActionIfAndroidSafetyNetAppsVerificationFailed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn or block, if the specified Android App Verification requirment fails. Possible values are: `block`, `wipe`, `warn`.|
+|customBrowserPackageId|String|Unique identifier of a custom browser to open weblink on Android.|
+|customBrowserDisplayName|String|Friendly name of the preferred custom browser to open weblink on Android.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -140,6 +148,8 @@ Here is a JSON representation of the resource.
   "appActionIfDeviceComplianceRequired": "String",
   "appActionIfMaximumPinRetriesExceeded": "String",
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)",
+  "allowedOutboundClipboardSharingExceptionLength": 1024,
+  "notificationRestriction": "String",
   "isAssigned": true,
   "targetedAppManagementLevels": "String",
   "screenCaptureBlocked": true,
@@ -157,9 +167,16 @@ Here is a JSON representation of the resource.
   ],
   "minimumWipePatchVersion": "String",
   "allowedAndroidDeviceManufacturers": "String",
-  "appActionIfAndroidDeviceManufacturerNotAllowed": "String"
+  "appActionIfAndroidDeviceManufacturerNotAllowed": "String",
+  "requiredAndroidSafetyNetDeviceAttestationType": "String",
+  "appActionIfAndroidSafetyNetDeviceAttestationFailed": "String",
+  "requiredAndroidSafetyNetAppsVerificationType": "String",
+  "appActionIfAndroidSafetyNetAppsVerificationFailed": "String",
+  "customBrowserPackageId": "String",
+  "customBrowserDisplayName": "String"
 }
 ```
+
 
 
 
