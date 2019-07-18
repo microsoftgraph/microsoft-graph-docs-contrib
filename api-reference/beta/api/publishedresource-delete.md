@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [publishedResource](../resources/onpremisespublishedresource.md) object.
+Delete a [publishedResource](../resources/publishedresource.md) object.
 
 ## Permissions
 
