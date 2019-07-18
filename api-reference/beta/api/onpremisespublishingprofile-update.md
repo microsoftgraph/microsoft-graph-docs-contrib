@@ -86,11 +86,11 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisionin
 HTTP/1.1 204
 ```
 
-## Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration 
+### Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration 
 
 The following example updates **deferUpdate** in the **hybridAgentUpdaterConfiguration**.
 
-#### equest
+#### Request
 
 The following is an example of the request.
 <!-- {
@@ -117,7 +117,7 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisionin
 HTTP/1.1 204
 ```
 
-## Example 3: Update allowUpdateConfigurationOverride in the hybridAgentUpdaterConfiguration
+### Example 3: Update allowUpdateConfigurationOverride in the hybridAgentUpdaterConfiguration
 
 The following example updates **allowUpdateConfigurationOverride** in the **hybridAgentUpdaterConfiguration**.
 
