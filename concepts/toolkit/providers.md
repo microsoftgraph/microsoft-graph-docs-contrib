@@ -32,13 +32,13 @@ You can create a provider at any time. We recommend that you create the provider
 
 The `Providers` global variable exposes the following properties and functions
 
-   - `globalProvider : IProvider`
+- `globalProvider : IProvider`
 
 Set this property to a provider that you want to use globally. All components use this property to get a reference to the provider. Setting this property will fire the `onProvidersChanged` event.
 
-   - `function onProviderUpdated(callbackFunction)`
+- `function onProviderUpdated(callbackFunction)`
 
- The `callbackFunction` function will be called when a provider is changed or when the state of a provider changes. A `ProvidersChangedState` enum value will be passed to the function to indicate what updated.
+The `callbackFunction` function will be called when a provider is changed or when the state of a provider changes. A `ProvidersChangedState` enum value will be passed to the function to indicate what updated.
 
 ## Implement your own provider
 
