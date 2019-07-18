@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unassign a [publishedResource](../resources/onpremisespublishedresource.md) object from a [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Remove a [publishedResource](../resources/onpremisespublishedresource.md) object from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -70,7 +70,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 No Conten
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
