@@ -39,7 +39,7 @@ POST ~/onPremisesPublishingProfiles(publishingType)/agents/{id1}/agentGroups/$re
 
 ## Request body
 
-In the request body, supply a JSON representation of an OData reference to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+In the request body, supply a JSON representation of an OData reference to an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Response
 
