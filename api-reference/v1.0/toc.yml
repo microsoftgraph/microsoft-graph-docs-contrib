@@ -390,6 +390,8 @@
             href: api/grouplifecyclepolicy-addgroup.md
           - name: Remove group
             href: api/grouplifecyclepolicy-removegroup.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
