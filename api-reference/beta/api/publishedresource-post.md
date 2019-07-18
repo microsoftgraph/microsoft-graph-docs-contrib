@@ -1,6 +1,6 @@
 ---
 title: "Create publishedResource"
-description: "Create a new publishedResource object."
+description: "Create a new **publishedResource** object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [publishedResource](../resources/publishedresource.md) object.
+Create a new [publishedResource](../resources/publishedresource.md) object.
 
 ## Permissions
 
@@ -39,7 +39,7 @@ POST ~/onPremisesPublishingProfiles(publishingType)/publishedResources
 
 ## Request body
 
-In the request body, supply a JSON representation of [publishedResource](../resources/publishedresource.md) object.
+In the request body, supply a JSON representation of a [publishedResource](../resources/publishedresource.md) object.
 
 Supply the values for the following properties.
 
@@ -50,7 +50,7 @@ Supply the values for the following properties.
 
 ## Response
 
-If successful, this method returns `201, Created` response code and [publishedResource](../resources/publishedresource.md) object in the response body.
+If successful, this method returns a `201 Created` response code and [publishedResource](../resources/publishedresource.md) object in the response body.
 
 ## Examples
 
