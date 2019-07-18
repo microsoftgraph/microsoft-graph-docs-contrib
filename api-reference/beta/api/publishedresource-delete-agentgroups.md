@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a [publishedResource](../resources/onpremisespublishedresource.md) object from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+Remove a [publishedResource](../resources/publishedresource.md) object from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
 
 ## Permissions
 
