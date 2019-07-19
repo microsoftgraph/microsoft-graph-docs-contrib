@@ -1,6 +1,6 @@
 ---
 title: "Remove publishedResource from an onPremisesAgentGroup"
-description: "Remove a [publishedResource](../resources/onpremisespublishedresource.md) object from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object."
+description: "Remove a [publishedResource](../resources/publishedresource.md) object from an [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"

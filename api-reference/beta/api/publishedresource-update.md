@@ -1,6 +1,6 @@
 ---
 title: "Update publishedResource"
-description: "Update the properties of a [publishedResource](../resources/onpremisespublishedresource.md) object."
+description: "Update the properties of a [publishedResource](../resources/publishedresource.md) object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"

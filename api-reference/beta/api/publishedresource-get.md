@@ -1,6 +1,6 @@
 ---
 title: "Get publishedResource"
-description: "Retrieve the properties and relationships of a [publishedResource](../resources/onpremisespublishedresource.md) object."
+description: "Retrieve the properties and relationships of a [publishedResource](../resources/publishedresource.md) object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
