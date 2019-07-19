@@ -20,6 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
+> Note: User.Read and User.ReadBasic.All is the minimum needed for direct reports of the signed-in user. User.Read.All is the minimum needed for direct reports of any other user, which requires admin consent.
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
