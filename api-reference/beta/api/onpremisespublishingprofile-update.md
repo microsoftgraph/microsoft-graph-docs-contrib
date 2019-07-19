@@ -65,6 +65,8 @@ The following is an example of the request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/hybridAgentUpdaterConfiguration
+Content-Type: application/json
+
 {
    "updateWindow" :
 {
@@ -100,6 +102,8 @@ The following is an example of the request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/hybridAgentUpdaterConfiguration
+Content-Type: application/json
+
 {
     "deferUpdate" : "2018-08-20T12:00"
 }
@@ -131,6 +135,8 @@ The following is an example of the request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/hybridAgentUpdaterConfiguration
+Content-Type: application/json
+
 {
     "allowUpdateConfigurationOverride" : "false"
 }
