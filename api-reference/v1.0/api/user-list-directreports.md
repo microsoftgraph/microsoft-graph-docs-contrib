@@ -1,22 +1,26 @@
 ---
 title: "List directReports"
-description: "Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager."
+description: "Get user's direct reports."
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
 # List directReports
 
-Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.
+Get a user's direct reports.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.ReadBasic.All, User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+> Note: User.Read and User.ReadBasic.All is the minimum needed for direct reports of the signed-in user. User.Read.All is the minimum needed for direct reports of any other user, which requires admin consent.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -26,6 +30,7 @@ GET /users/{id | userPrincipalName}/directReports
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
 ## Request headers
 | Header       | Value|
 |:-----------|:------|
@@ -39,7 +44,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -64,7 +69,7 @@ GET https://graph.microsoft.com/v1.0/me/directReports
 
 ---
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
