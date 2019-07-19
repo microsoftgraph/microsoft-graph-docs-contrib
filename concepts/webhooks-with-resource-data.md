@@ -19,26 +19,23 @@ This article walks through the details, using the Team messages resource as an e
 
 ## Supported resources
 
-In Microsoft Graph API, the following resources support change notifications which include resource data:
+The following resources support change notifications which include resource data:
 
 - Teams messages (preview)
-
-For instance, you can create a subscription to receive notifications about new or changed Teams messages in the entire organization (tenant):
-@@@need correct resource path``
-
-Or to all Teams messages in a specific tenant:
-@@@need correct resource path``
+  - new or changed Teams messages in the entire organization (tenant): @@@need correct resource path``@@@
+  - new or changed messages in a specific channel: @@@TBD@@@
 
 ## Creating a subscription
 
-Creating a subscription for change notifications that include resource data requires additional information in the request:
+To have resource data included in change notifications, you need to provide additional properties when creating a subscription:
 
-- @@@Name may change@@@`includeProperties` set to `true` to explicitly request resource properties.
+- @@@Name may change@@@**includeProperties** set to `true` to explicitly request resource data.
 - A `$select` operator in the resource path to select the properties to be included.
-- An additional endpoint - `lifecycleNotificationUrl` - where a new type of notifications related to subscription state will be delivered (more on this later in the article).
-- `publicEncryptionKey` with a @@@TBD - more details about what the key should be@@@ specific public encryption key that will be used by Graph to encrypt resource data.
+- **lifecycleNotificationUrl** - an endpoint to which where lifecycle notifications will be delivered. This can be the same or different as **notificationUrl**. @@@ad inner-link to section@@@
+- **publicEncryptionKey** containing the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to decrypt the content. More details about the specification of the key and the decryption process are described here.@@@add inner link@@@
+- **publicEncryptionKeyId** your own identifier for the key. It will be included in notifications so you can identify which private key to use for decryption. This is useful when you periodically rotate your key pair.
 
-> **Important:** You must upload and configure a public key for your app to enable encryption of resource data. Without the key, any attempts to create a subcription will fail. More information on encryption is available later in this article.
+> **Important:** The above properties are required to successfully create a subscription.
 
 #### Subscription request example
 
@@ -49,10 +46,11 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
-  "resource": "/teams/allMessages?$select=subject,body",
+  "resource": "/teams/allMessages?$select=subject,body", @@@confirm@@@
   @@@subject to change@@@"includeProperties": true,
   @@@"publicEncryptionKey": <base64encodedKey>,
-  "expirationDateTime": "2019-03-20T11:00:00.0000000Z",
+  @@@"publicEncryptionKeyId": <string>,
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
 }
 ```
@@ -65,20 +63,20 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
-  "resource": "/teams/allMessages?$select=subject,body",
+  "resource": "/teams/allMessages?$select=subject,body", @@@confirm@@@
   @@@subject to change@@@"includeProperties": true,
-  @@@"publicEncryptionKeyId": <the id of the key>,   @@@<- TBD should this be a thumbprint or what kind of identifier?@@@
-  "expirationDateTime": "2019-03-20T11:00:00.0000000Z",
+  @@@"publicEncryptionKeyId": <string>,   
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
 }
 ```
-
-@@@TBD provide the actual content@@@
  
-> **Important:** Both notifications URLs must share the same hostname. 
+> **Important:** Use the same hostname for both notifications URLs.
 
-> **Note:** Both notification endpoints will need to be validated by the client app, as described in [the generic notification article](webhooks.md#managing-subscriptions).
-You may choose to use the same URL for both endpoints, in which case you will receive two validation requests, to which you will need to respond.
+> **Note:** You need to validate both notification endpoints as described in [the generic notification article](webhooks.md#managing-subscriptions).
+If you choose to use the same URL for both endpoints you will receive and respond to two validation requests.
+
+> **Note:** You cannot update (`PATCH`) the existing subscriptions to add the **lifecycleNotificationUrl** property. You should remove such existing subscriptions, and create new subscriptions and specify the **lifecycleNotificationUrl** property. Existing subscriptions without **lifecycleNotificationUrl** property will receive the `subscriptionRemoved` and `missed` notifications via the **notificationUrl**. 
 
 ## Subscription lifecycle notifications
 
