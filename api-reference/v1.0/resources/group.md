@@ -62,6 +62,7 @@ This resource supports:
 |[Get conversation](../api/group-get-conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.|
 |[List conversations](../api/group-list-conversations.md) |[conversation](conversation.md) collection| Get a conversation object collection.|
 |[Delete conversation](../api/group-delete-conversation.md) |None|Delete conversation object.|
+|[Create thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Create a new conversation thread.|
 |[Get thread](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.|
 |[List threads](../api/group-list-threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads of a group.|
 |[Update thread](../api/group-update-thread.md) |None| Update properties of a thread object.|
@@ -77,6 +78,8 @@ This resource supports:
 |[List settings](../api/groupsetting-list.md) | [groupSetting](groupsetting.md) collection | List properties of all setting objects. |
 |[Update setting](../api/groupsetting-update.md) | None | Update a setting object. |
 |[Delete setting](../api/groupsetting-delete.md) | None | Delete a setting object. |
+|[Get setting template](../api/groupsettingtemplate-get.md) | None | Read properties of a setting template. |
+|[List setting template](../api/groupsettingtemplate-list.md) | None | List properties of all setting templates. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|

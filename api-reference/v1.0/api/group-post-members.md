@@ -1,15 +1,18 @@
 ---
 title: "Add member"
-description: "Use this API to add a member to an Office 365 Group, a security group, or a mail-enabled security group through the **members** navigation property."
+description: "Add a member to an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property."
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
 ---
 
 # Add member
-Use this API to add a member to an Office 365 Group, a security group, or a mail-enabled security group through the **members** navigation property.
+Add a member to an Office 365 group or a security group through the **members** navigation property.
 
-You can add users or other groups. Important: You can add only users to Office 365 Groups.
+You can add users or other groups. 
+
+> [!IMPORTANT]
+> You can add only users to Office 365 groups.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +38,7 @@ POST /groups/{id}/members/$ref
 In the request body, supply a JSON representation of a [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) or [group](../resources/group.md) object to be added.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 #### Request
