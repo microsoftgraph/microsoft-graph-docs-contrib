@@ -19,7 +19,7 @@ Represents on-premises published resource. A tenant administrator could publish 
 |:-------------|:------------|:------------|
 | [List publishedResources](../api/publishedresource-list.md) | [publishedResource](publishedresource.md) objects collection | Get a **publishedResources** object collection. |
 | [Get publishedResource](../api/publishedresource-get.md) | [publishedResource](publishedresource.md) | Read the properties and relationships of a **publishedResource** object. |
-| [Create publishedResource](../api/publishedresource-create.md) |  [publishedResource](publishedresource.md)  | Create a new **publishedResource**. |
+| [Create publishedResource](../api/publishedresource-post.md) |  [publishedResource](publishedresource.md)  | Create a new **publishedResource**. |
 | [Update publishedResource](../api/publishedresource-update.md) | [publishedResource](publishedresource.md) | Update a **publishedResource** object. |
 | [Delete  publishedResource](../api/publishedresource-delete.md) | None | Delete a **publishedResource** object. |
 | [Assign publishedResource to onPremisesAgentGroup](../api/publishedresource-post-agentgroups.md) | None | Assign a **publishedResource** object to an **onPremisesAgentGroup**. |
