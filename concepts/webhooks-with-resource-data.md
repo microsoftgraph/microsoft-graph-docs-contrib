@@ -1,23 +1,21 @@
 ---
 title: "Set up change notifications for Teams messages, including message properties"
-description: "The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. Notifications can include resource properties. Apps need to implement additional code to handle the requirements related to resource data being included."
+description: "Microsoft Graph uses a webhook mechanism to deliver change notifications to clients. Notifications can include resource properties. Apps need to implement additional code to handle the requirements related to resource data being included."
 author: "piotrci"
 localization_priority: Priority
 ---
 
 # Set up change notifications for Teams messages, including message properties
 
-The Microsoft Graph API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes.
+Microsoft Graph allows apps to subscribe to change notifications for resources via [webhooks](webhooks.md). You can now set up subscriptions to resource data (such as content of a Teams message) to be included in notifications. Your app can then execute its business logic without the need to make additional API calls to fetch the changing resource; as a result, the app makes fewer API calls and improves its performance, which is especially beneficial in large scale scenarios.
 
-After Microsoft Graph accepts the subscription request, it pushes notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, etc.
+Requesting resource data in notifications requires you to implement additional logic to satisfy data access and security requirements: 
 
-Subscriptions can be set up to include resource data in notifications. This allows the app to execute its business logic without the need to make additional Graph API calls to fetch the changing resource; as a result, the app makes fewer API calls and improving performance, which is especially beneficial in large scale scenarios.
+- Handle special subscription lifecycle notifications - `reauthorizationRequired` - to maintain an uninterrupted flow of data.
+- Validate the authenticity of notifications, as having originated from Microsoft Graph.
+- Provide a public encryption key and use a private key to decrypt resource data received through notifications.
 
-However, since notfications can include sensitive customer data, the app must implement additional logic to satisfy data access and security requirements. In this article, we walk through the details, using the Team messages as an example. We focus specifically on the net new requirements specific to including resource data in notifications:
-
-- Receiving special subscription lifecycle notifications, and responding to them to maintain an uninterrupted flow of data.
-- Validating the authenticity of notifications, as having originated from Microsoft Graph.
-- Decrypting resource data payload received through notifications.
+This article walks through the details, using the Team messages resource as an example.
 
 ## Supported resources
 
