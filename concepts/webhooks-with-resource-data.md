@@ -167,13 +167,17 @@ Keep the following things in mind:
 
 ### Future-proof the code handling lifecycle notifications
 
-In the future Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: `lifecycleNotificationUrl`, but they may have a different a slightly different schema and properties, specific to the scenario for which they will be issued.
+In the future Microsoft Graph will add more types of subscription lifecycle notifications. They will be posted to the same endpoint: **lifecycleNotificationUrl**, but they will have a different value under **lifecycleEvent** and may contain a slightly different schema and properties, specific to the scenario for which they will be issued.
 
-You should implement your code in a future-proof way so it does not break when Graph introduces new types of notifications. We recommend the following approach:
+You should implement your code in a future-proof way so it does not break when Microsoft Graph introduces new types of lifecycle notifications. We recommend the following approach:
 
-1. Explicitly identify each notification as an event that you support, using the `lifecycleEvent` property. For example, look for the `"lifecycleEvent": "reauthorizationRequired"` propety to identify an authorization challenge, and handle it.
+1. Explicitly identify each notification as an event that you support, using the **lifecycleEvent** property. For example, look for the `"lifecycleEvent": "reauthorizationRequired"` property to identify a specific event, and handle it.
 
-2. For any lifecycle events you do not recognize, ignore them; we may add more values for the `lifecycleEvent` property in the future. We advise you log them so you can become aware of the new types of signals, in case you missed a Graph announcement for the new scenario. That way you can look up the updated documentation and implement your support for it at your discretion.
+2. Watch for announcements of notifications for new scenarions, as there may be more types of lifecycle notifications in the future.
+
+3. In your app, ignore any lifecycle events that the app does not recognize, and log them to gain awareness.
+
+4. At your discretion, look up the related documentation for new lifecycle notifications and implement support for them as appropriate.
 
 ## Validating the authenticity of notifications@@@this entire section is made up, we don't have this finalized yet@@@
 
