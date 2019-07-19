@@ -8058,7 +8058,7 @@
                 href: api/onpremisespublishingprofile-get.md
               - name: Update
                 href: api/onpremisespublishingprofile-update.md
-          - name: On-premises published resource
+          - name: Published resource
             href: resources/publishedresource.md
             items:
               - name: List
