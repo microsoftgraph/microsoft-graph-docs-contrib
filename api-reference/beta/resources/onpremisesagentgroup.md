@@ -19,7 +19,7 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 |:-------------|:------------|:------------|
 | [List onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups collection | Get an **onPremisesAgentGroup** objects collection. |
 | [Get onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read the properties and relationships of an **onPremisesAgentGroup** object. |
-| [Create onPremisesAgentGroup](../api/onpremisesagentgroup-create.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new **onPremisesAgentGroup**. |
+| [Create onPremisesAgentGroup](../api/onpremisesagentgroup-post.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new **onPremisesAgentGroup**. |
 | [Update onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Update an **onPremisesAgentGroup** object. |
 | [Delete  onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | None | Delete an **onPremisesAgentGroup** object. |
 
@@ -37,7 +37,7 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |agents|[onPremisesAgent](onpremisesagent.md) collection| List of **onPremisesAgent** that are assigned to an **onPremisesAgentGroup**. Read-only. Nullable.|
-|publishedResources|[publishedResource](onpremisespublishedresource.md) collection| List of **publishedResource** that are assigned to an **onPremisesAgentGroup**. Read-only. Nullable.|
+|publishedResources|[publishedResource](publishedresource.md) collection| List of **publishedResource** that are assigned to an **onPremisesAgentGroup**. Read-only. Nullable.|
 
 ## JSON representation
 
