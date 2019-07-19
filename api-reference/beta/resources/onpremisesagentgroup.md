@@ -17,18 +17,18 @@ Represents on-premises agents group.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read properties and relationships of onPremisesAgentGroup object. |
-| [Create onPremisesAgentGroup](../api/onpremisesagentgroup-create.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new onPremisesAgentGroup. |
-| [List onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups collection | Get a onPremisesAgentGroup objects collection. |
-| [Update onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Update onPremisesAgentGroup object. |
-| [Delete  onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | None | Delete onPremisesAgentGroup object. |
+| [List onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups collection | Get an **onPremisesAgentGroup** objects collection. |
+| [Get onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read the properties and relationships of an **onPremisesAgentGroup** object. |
+| [Create onPremisesAgentGroup](../api/onpremisesagentgroup-create.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new **onPremisesAgentGroup**. |
+| [Update onPremisesAgentGroup](../api/onpremisesagentgroup-update.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Update an **onPremisesAgentGroup** object. |
+| [Delete  onPremisesAgentGroup](../api/onpremisesagentgroup-delete.md) | None | Delete an **onPremisesAgentGroup** object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|Display Name of the onPremisesAgentGroup.|
-|id|String| The object id of the onPremisesAgentGroup. Read-only.|
+|displayName|String|Display name of the onPremisesAgentGroup.|
+|id|String| The object id ID the onPremisesAgentGroup. Read-only.|
 |isDefault|Boolean||
 |publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
