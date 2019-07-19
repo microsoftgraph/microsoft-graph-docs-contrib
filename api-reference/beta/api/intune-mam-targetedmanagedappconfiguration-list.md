@@ -1,7 +1,7 @@
 ---
 title: "List targetedManagedAppConfigurations"
 description: "List properties and relationships of the targetedManagedAppConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

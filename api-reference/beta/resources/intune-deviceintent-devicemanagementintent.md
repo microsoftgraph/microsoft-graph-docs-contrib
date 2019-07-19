@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementIntent resource type"
 description: "Entity that represents an intent to apply settings to a device"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -23,7 +23,9 @@ Entity that represents an intent to apply settings to a device
 |[Delete deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-delete.md)|None|Deletes a [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md).|
 |[Update deviceManagementIntent](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Update the properties of a [deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md) object.|
 |[updateSettings action](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|None|Not yet documented|
+|[migrateToTemplate action](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|None|Not yet documented|
 |[assign action](../api/intune-deviceintent-devicemanagementintent-assign.md)|None|Not yet documented|
+|[compare function](../api/intune-deviceintent-devicemanagementintent-compare.md)|[deviceManagementSettingComparison](../resources/intune-deviceintent-devicemanagementsettingcomparison.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -34,6 +36,7 @@ Entity that represents an intent to apply settings to a device
 |isAssigned|Boolean|Signifies whether or not the intent is assigned to users|
 |lastModifiedDateTime|DateTimeOffset|When the intent was last modified|
 |templateId|String|The ID of the template this intent was created from (if any)|
+|roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -63,7 +66,10 @@ Here is a JSON representation of the resource.
   "description": "String",
   "isAssigned": true,
   "lastModifiedDateTime": "String (timestamp)",
-  "templateId": "String"
+  "templateId": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

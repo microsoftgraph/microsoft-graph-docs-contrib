@@ -1,7 +1,7 @@
 ---
 title: "Update enterpriseCodeSigningCertificate"
 description: "Update the properties of a enterpriseCodeSigningCertificate object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

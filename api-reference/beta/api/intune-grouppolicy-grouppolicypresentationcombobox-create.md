@@ -1,7 +1,7 @@
 ---
 title: "Create groupPolicyPresentationComboBox"
 description: "Create a new groupPolicyPresentationComboBox object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

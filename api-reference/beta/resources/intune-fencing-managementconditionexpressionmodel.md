@@ -1,7 +1,7 @@
 ---
 title: "managementConditionExpressionModel resource type"
 description: "A management condition expression model is an model representation of a management condition expression."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "shutDown action"
 description: "Shut down device"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

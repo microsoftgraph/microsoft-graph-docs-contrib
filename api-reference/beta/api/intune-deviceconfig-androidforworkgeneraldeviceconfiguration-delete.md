@@ -1,7 +1,7 @@
 ---
 title: "Delete androidForWorkGeneralDeviceConfiguration"
 description: "Deletes a androidForWorkGeneralDeviceConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

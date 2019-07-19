@@ -1,7 +1,7 @@
 ---
 title: "List windowsInformationProtectionDeviceRegistrations"
 description: "List properties and relationships of the windowsInformationProtectionDeviceRegistration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

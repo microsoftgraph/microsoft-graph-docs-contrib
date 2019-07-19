@@ -1,7 +1,7 @@
 ---
 title: "Get managedDevice"
 description: "Read properties and relationships of the managedDevice object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7622
+Content-Length: 7686
 
 {
   "value": {
@@ -207,6 +207,7 @@ Content-Length: 7622
     "freeStorageSpaceInBytes": 7,
     "managedDeviceName": "Managed Device Name value",
     "partnerReportedThreatState": "activated",
+    "retireAfterDateTime": "2016-12-31T23:57:37.576134-08:00",
     "usersLoggedOn": [
       {
         "@odata.type": "microsoft.graph.loggedOnUser",

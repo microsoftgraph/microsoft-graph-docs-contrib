@@ -1,7 +1,7 @@
 ---
 title: "Delete roleScopeTag"
 description: "Deletes a roleScopeTag."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

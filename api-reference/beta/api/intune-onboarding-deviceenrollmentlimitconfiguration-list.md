@@ -1,7 +1,7 @@
 ---
 title: "List deviceEnrollmentLimitConfigurations"
 description: "List properties and relationships of the deviceEnrollmentLimitConfiguration objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

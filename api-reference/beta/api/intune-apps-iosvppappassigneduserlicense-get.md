@@ -1,7 +1,7 @@
 ---
 title: "Get iosVppAppAssignedUserLicense"
 description: "Read properties and relationships of the iosVppAppAssignedUserLicense object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

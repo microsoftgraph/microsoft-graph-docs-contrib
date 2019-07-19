@@ -1,7 +1,7 @@
 ---
 title: "Update androidForWorkApp"
 description: "Update the properties of a androidForWorkApp object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

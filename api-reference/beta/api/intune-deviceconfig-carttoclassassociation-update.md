@@ -1,7 +1,7 @@
 ---
 title: "Update cartToClassAssociation"
 description: "Update the properties of a cartToClassAssociation object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

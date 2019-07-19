@@ -1,7 +1,7 @@
 ---
 title: "locateDeviceActionResult resource type"
 description: "Locate device action result"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

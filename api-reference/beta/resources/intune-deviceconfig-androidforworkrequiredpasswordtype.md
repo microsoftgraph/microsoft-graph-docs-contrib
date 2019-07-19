@@ -1,7 +1,7 @@
 ---
 title: "androidForWorkRequiredPasswordType enum type"
 description: "Android For Work required password type."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

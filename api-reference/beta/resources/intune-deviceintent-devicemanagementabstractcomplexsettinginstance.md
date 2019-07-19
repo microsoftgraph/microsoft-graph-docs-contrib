@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementAbstractComplexSettingInstance resource type"
 description: "A setting instance representing a complex value for an abstract setting"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

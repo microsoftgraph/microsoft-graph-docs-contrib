@@ -1,7 +1,7 @@
 ---
 title: "Delete depEnrollmentProfile"
 description: "Deletes a depEnrollmentProfile."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

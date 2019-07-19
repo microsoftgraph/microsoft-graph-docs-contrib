@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementStringSettingInstance"
 description: "Deletes a deviceManagementStringSettingInstance."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

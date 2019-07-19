@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyConfigurationType enum type"
 description: "Group Policy Configuration Type"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

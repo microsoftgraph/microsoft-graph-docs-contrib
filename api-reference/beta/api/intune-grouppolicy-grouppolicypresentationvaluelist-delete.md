@@ -1,7 +1,7 @@
 ---
 title: "Delete groupPolicyPresentationValueList"
 description: "Deletes a groupPolicyPresentationValueList."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

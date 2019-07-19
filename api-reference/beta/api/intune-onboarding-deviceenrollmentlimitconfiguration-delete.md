@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceEnrollmentLimitConfiguration"
 description: "Deletes a deviceEnrollmentLimitConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

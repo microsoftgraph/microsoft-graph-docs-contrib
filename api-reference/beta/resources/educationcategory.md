@@ -17,7 +17,7 @@ A category that can be applied to assignments.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationCategory.md) | Get an existing **educationCategory**.|
+|[Get educationCategory](../api/educationcategory-get.md) | [educationCategory](educationcategory.md) | Get an existing **educationCategory**.|
 |[Delete category](../api/educationcategory-delete.md) | None | Remove an **educationCategory**.|
 
 
@@ -56,8 +56,6 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationcategory.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

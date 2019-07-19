@@ -1,7 +1,7 @@
 ---
 title: "emailSyncSchedule enum type"
 description: "Possible values for email sync schedule."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsInformationProtectionDeviceRegistration"
 description: "Deletes a windowsInformationProtectionDeviceRegistration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

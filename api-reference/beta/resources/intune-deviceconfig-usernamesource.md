@@ -1,7 +1,7 @@
 ---
 title: "usernameSource enum type"
 description: "Username source."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

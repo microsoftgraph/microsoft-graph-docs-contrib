@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementTemplateSettingCategory"
 description: "Deletes a deviceManagementTemplateSettingCategory."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Update androidDeviceOwnerCompliancePolicy"
 description: "Update the properties of a androidDeviceOwnerCompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

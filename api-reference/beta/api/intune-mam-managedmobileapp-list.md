@@ -1,7 +1,7 @@
 ---
 title: "List managedMobileApps"
 description: "List properties and relationships of the managedMobileApp objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

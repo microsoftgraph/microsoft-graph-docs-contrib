@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationValueMultiTexts"
 description: "List properties and relationships of the groupPolicyPresentationValueMultiText objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
