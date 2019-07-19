@@ -8046,7 +8046,7 @@
               - name: Get
                 href: api/onpremisesagentgroup-get.md
               - name: Create
-                href: api/onpremisesagentgroup-create.md
+                href: api/onpremisesagentgroup-post.md
               - name: Update
                 href: api/onpremisesagentgroup-update.md
               - name: Delete
@@ -8066,7 +8066,7 @@
               - name: Get
                 href: api/publishedresource-get.md
               - name: Create
-                href: api/publishedresource-create.md
+                href: api/publishedresource-post.md
               - name: Update
                 href: api/publishedresource-update.md
               - name: Delete
