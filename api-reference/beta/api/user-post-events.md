@@ -2,8 +2,8 @@
 title: "Create Event"
 description: "Create an event in the user's default calendar or specified calendar."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Create Event
@@ -12,8 +12,8 @@ ms.prod: "microsoft-identity-platform"
 
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
 
-You can specify the time zone for each of the start and end times of the event as part of these values, as the
-**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type.
+You can specify the time zone for each of the start and end times of the event as part of their values, because the 
+**start** and **end** properties are of [dateTimeTimeZone](../resources/datetimetimezone.md) type. First [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
 
 When an event is sent, the server sends invitations to all the attendees.
 
