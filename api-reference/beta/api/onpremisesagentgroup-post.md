@@ -93,7 +93,7 @@ Content-type: application/json
     "id": "4655ed41-1619-4848-92bb-0576d3038682",
     "displayName": "New Group",
     "publishingType": "provisioning",
-    "isDefault": "false"
+    "isDefault": false
 }
 ```
 
