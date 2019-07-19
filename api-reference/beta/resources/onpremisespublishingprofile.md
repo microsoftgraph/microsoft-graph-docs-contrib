@@ -15,7 +15,7 @@ doc_type: "resourcePageType"
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get onPremisesPublishingProfile](../api/onpremisespublishingprofile-get.md) | [onPremisesPublishingProfile](onpremisespublishingprofile.md) | Read properties and relationships of onPremisesPublishingProfile object. |
+| [Get onPremisesPublishingProfile](../api/onpremisespublishingprofile-get.md) | [onPremisesPublishingProfile](onpremisespublishingprofile.md) | Read the properties and relationships of an **onPremisesPublishingProfile** object. |
 | [Update onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | None | Update [hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md) object properties.
 
 ## Properties
