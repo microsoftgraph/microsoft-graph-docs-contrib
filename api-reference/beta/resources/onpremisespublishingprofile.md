@@ -19,7 +19,7 @@ Various Azure services (for example, Azue Active Directory Connect Passthrough A
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get onPremisesPublishingProfile](../api/onpremisespublishingprofile-get.md) | [onPremisesPublishingProfile](onpremisespublishingprofile.md) | Read the properties and relationships of an **onPremisesPublishingProfile** object. |
-| [Update onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | None | Update [hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md) object properties.
+| [Update onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | None | Update an [onPremisesPublishingProfile](onpremisespublishingprofile.md) object.
 
 ## Properties
 
