@@ -77,6 +77,7 @@ The following is an example of the response.
 
 ```json
 HTTP/1.1 200 OK
+
 {
     "publishedResources": [
         {
@@ -111,7 +112,7 @@ HTTP/1.1 200 OK
             "id": "2d55ed41-1619-4848-92bb-0576d3038682",
             "displayName": "Group 1",
             "publishingType": "provisioning",
-            "isDefault": "false",
+            "isDefault": false,
             "agents": [
                  {
                     "id": "1234b780-965f-4149-85c5-a8c73e58b67d",
@@ -134,7 +135,7 @@ HTTP/1.1 200 OK
             "updateWindowStartTime" : "0:00:00",
             "updateWindowEndTime" : "23:59:00"
     },
-        "allowUpdateConfigurationOverride" : "false"
+        "allowUpdateConfigurationOverride" : false
   }
 }
 ```

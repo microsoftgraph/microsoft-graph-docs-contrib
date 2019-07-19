@@ -85,7 +85,7 @@ Content-Type: application/json
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 204 No Content
 ```
 
 ### Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration 
@@ -118,7 +118,7 @@ Content-Type: application/json
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 204 No Content
 ```
 
 ### Example 3: Update allowUpdateConfigurationOverride in the hybridAgentUpdaterConfiguration
@@ -138,7 +138,7 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisionin
 Content-Type: application/json
 
 {
-    "allowUpdateConfigurationOverride" : "false"
+    "allowUpdateConfigurationOverride" : false
 }
 ```
 
@@ -151,7 +151,7 @@ Content-Type: application/json
 } -->
 
 ```http
-HTTP/1.1 204
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

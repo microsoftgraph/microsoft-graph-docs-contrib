@@ -86,6 +86,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 201 Created
+
 {
     "id": "4655ed41-1619-4848-92bb-0576d3038682",
     "publishingType": "provisioning",
