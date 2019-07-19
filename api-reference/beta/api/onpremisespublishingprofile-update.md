@@ -43,7 +43,7 @@ In the request body, supply the values for relevant fields to update. Existing p
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration|Represents [hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md).|
+|hybridAgentUpdaterConfiguration|hybridAgentUpdaterConfiguration|Represents [hybridAgentUpdaterConfiguration](../resources/hybridagentupdaterconfiguration.md).|
 
 ## Response
 
