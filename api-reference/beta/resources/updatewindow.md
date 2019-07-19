@@ -11,6 +11,8 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents time window during which [agents](onpremisesagent.md) can receive updates.
+
 ## Properties
 
 | Property     | Type        | Description |

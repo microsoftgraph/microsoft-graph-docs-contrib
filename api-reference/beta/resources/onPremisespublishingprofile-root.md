@@ -24,8 +24,8 @@ A tenant admin can configure for each **onPremisesPublishingProfile** the [time 
 | [Update onPremisesPublishingProfile](../api/onpremisespublishingprofile-update.md) | None | Update [hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md) object properties.
 | [Get onPremisesAgent](../api/onpremisesagent-get.md) | [onPremisesAgent](onpremisesagent.md) | Read properties and relationships of onPremisesAgent object. |
 | [List onPremisesAgents](../api/onpremisesagent-list.md) | [onPremisesAgent](onpremisesagent.md) collection | Get an onPremisesAgents object collection. |
-| [Assign onPremisesAgent to onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | None |  |
-| [Remove onpremisesAgent from an onPremisesAgentGroup](../api/onpremisesagent-delete-agentgroups.md) | None |  |
+| [Assign onPremisesAgent to onPremisesAgentGroup](../api/onpremisesagent-post-agentgroups.md) | None | Assign an onPremisesAgent to an onPremisesAgentGroup |
+| [Remove onpremisesAgent from an onPremisesAgentGroup](../api/onpremisesagent-delete-agentgroups.md) | None | Remove an onPremisesAgent from an onPremisesAgentGroup |
 | [Get onPremisesAgentGroup](../api/onpremisesagentgroup-get.md) | [onPremisesAgentGroup](onpremisesagentgroup.md) | Read properties and relationships of onPremisesAgentGroup object. |
 | [Create onPremisesAgentGroup](../api/onpremisesagentgroup-create.md)  | [onPremisesAgentGroup](onpremisesagentgroup.md) | Create a new onPremisesAgentGroup. |
 | [List onPremisesAgentGroups](../api/onpremisesagentgroup-list.md) | onPremisesAgentGroups collection | Get a onPremisesAgentGroup objects collection. |
@@ -36,8 +36,8 @@ A tenant admin can configure for each **onPremisesPublishingProfile** the [time 
 | [Update publishedResource](../api/publishedresource-update.md) | [publishedResource](publishedresource.md) | Update publishedResource object. |
 | [Delete  publishedResource](../api/publishedresource-delete.md) | None | Delete publishedResource object. |
 | [List publishedResources](../api/publishedresource-list.md) | [publishedResource](publishedresource.md) objects collection | Get publishedResources object collection. |
-| [Assign publishedResource to onPremisesAgentGroup](../api/publishedresource-post-agentgroups.md) | None |  |
-| [Remove publishedResource from onPremisesAgentGroup](../api/publishedresource-delete-agentgroups.md) | None |  |
+| [Assign publishedResource to onPremisesAgentGroup](../api/publishedresource-post-agentgroups.md) | None | Assign a publishedResource to an onPremisesAgentGroup. |
+| [Remove publishedResource from onPremisesAgentGroup](../api/publishedresource-delete-agentgroups.md) | None | Remove a publishedResource from an onPremisesAgentGroup. |
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

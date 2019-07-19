@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents on-premises agents group.
+Represents on-premises agents group. Agent groups enable a tenant admin to assign specific [agents](onpremisesagent.md) to serve specific [published on-premises resources](publishedresource.md).
 
 ## Methods
 
@@ -29,15 +29,15 @@ Represents on-premises agents group.
 |:-------------|:------------|:------------|
 |displayName|String|Display name of the **onPremisesAgentGroup**.|
 |id|String| The object ID of the **onPremisesAgentGroup**. Read-only.|
-|isDefault|Boolean||
+|isDefault|Boolean|Indicates if the **onPremisesAgentGroup** is the default agent group. Only a single agent group can be the default **onPremisesAgentGroup** and is set by the system.|
 |publishingType|string| Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|agents|[onPremisesAgent](onpremisesagent.md) collection| Read-only. Nullable.|
-|publishedResources|[publishedResource](onpremisespublishedresource.md) collection| Read-only. Nullable.|
+|agents|[onPremisesAgent](onpremisesagent.md) collection| List of **onPremisesAgent** that are assigned to an **onPremisesAgentGroup**. Read-only. Nullable.|
+|publishedResources|[publishedResource](onpremisespublishedresource.md) collection| List of **publishedResource** that are assigned to an **onPremisesAgentGroup**. Read-only. Nullable.|
 
 ## JSON representation
 

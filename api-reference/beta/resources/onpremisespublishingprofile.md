@@ -11,6 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Various Azure services (for example, Azue Active Directory Connect Passthrough Authentication, Workday to Azure AD users provisioning) allow a conditional access to various on-premises resources from outside the corporate network. [On-premises agents](onpremisesagent.md) installed by a tenant administrator can be configured to access/handle requests to a particular [published resource](publishedresource.md).
+[Agent groups](onpremisesagentgroup.md) enable a tenant admin to assign specific agents to serve specific published on-premises resources. Tenant admins can group a number of agents together, and then assign each published resource to a group. The entire set of entities of the same on-premises publishing type is represented by **onPremisesPublishingProfile**.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -22,17 +25,16 @@ doc_type: "resourcePageType"
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)||
-|id|String| Read-only.|
+|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Represents a **hybridAgentUpdaterConfiguration** object.|
+|id|String| Represents a publishing type. Possible values are: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) collection| Read-only. Nullable.|
-|agents|[onPremisesAgent](onpremisesagent.md) collection| Read-only. Nullable.|
-|publishedResources|[publishedResource](publishedresource.md) collection| Read-only. Nullable.|
-|hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md) | |
+|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) collection| List of existing **onPremisesAgentGroup** objects. Read-only. Nullable.|
+|agents|[onPremisesAgent](onpremisesagent.md) collection| List of existed **onPremisesAgent** objects. Read-only. Nullable.|
+|publishedResources|[publishedResource](publishedresource.md) collection| List of existing **publishedResource** objects. Read-only. Nullable.|
 
 ## JSON representation
 

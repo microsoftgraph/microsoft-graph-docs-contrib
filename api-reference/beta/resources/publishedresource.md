@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents on-premises published resource.
+Represents on-premises published resource. A tenant administrator could publish various types of on-premises resources - enterprise applications, domain controllers, servers, etc. [On-premises agents](onpremisesagent.md) installed by a tenant administrator can be configured to access/handle requests to a particular published resource.
 
 ## Methods
 
@@ -22,8 +22,8 @@ Represents on-premises published resource.
 | [Create publishedResource](../api/publishedresource-create.md) |  [publishedResource](publishedresource.md)  | Create a new **publishedResource**. |
 | [Update publishedResource](../api/publishedresource-update.md) | [publishedResource](publishedresource.md) | Update a **publishedResource** object. |
 | [Delete  publishedResource](../api/publishedresource-delete.md) | None | Delete a **publishedResource** object. |
-| [Assign publishedResource to onPremisesAgentGroup](../api/publishedresource-post-agentgroups.md) | None |  |
-| [Remove publishedResource from onPremisesAgentGroup](../api/publishedresource-delete-agentgroups.md) | None |  |
+| [Assign publishedResource to onPremisesAgentGroup](../api/publishedresource-post-agentgroups.md) | None | Assign a **publishedResource** object to an **onPremisesAgentGroup**. |
+| [Remove publishedResource from onPremisesAgentGroup](../api/publishedresource-delete-agentgroups.md) | None |  Remove a **publishedResource** object from an **onPremisesAgentGroup**.|
 
 ## Properties
 
@@ -38,7 +38,7 @@ Represents on-premises published resource.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) collection| Read-only. Nullable.|
+|agentGroups|[onPremisesAgentGroup](onpremisesagentgroup.md) collection| List of **onPremisesAgentGroups** that a **publishedResource** is assigned to. Read-only. Nullable.|
 
 ## JSON representation
 
