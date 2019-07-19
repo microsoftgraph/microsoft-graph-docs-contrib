@@ -64,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/hybridAgentUpdaterConfiguration
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/hybridAgentUpdaterConfiguration
 Content-Type: application/json
 
 {
@@ -101,7 +101,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/hybridAgentUpdaterConfiguration
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/hybridAgentUpdaterConfiguration
 Content-Type: application/json
 
 {
@@ -134,7 +134,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/hybridAgentUpdaterConfiguration
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/hybridAgentUpdaterConfiguration
 Content-Type: application/json
 
 {

@@ -63,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/publishedResources
 Content-Type: application/json
 
 {

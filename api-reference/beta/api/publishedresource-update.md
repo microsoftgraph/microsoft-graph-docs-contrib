@@ -62,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles(publishingType)/publishedResources('1234b780-965f-4149-85c5-a8c73e58b67d')
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/publishedResources/1234b780-965f-4149-85c5-a8c73e58b67d
 
 {
     "displayName": "Demo provisioning (updated)"

@@ -56,12 +56,12 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/publishedResources('1234b780-965f-4149-85c5-a8c73e58b67d')/agentGroups/$ref)/agentGroups/$ref
+POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/publishedResources/1234b780-965f-4149-85c5-a8c73e58b67d/agentGroups/$ref
 Content-type: application/json
 
 ```http
 {
- "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups('2B032383-897C-42BA-917E-700B6890BDC3')/"
+ "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups/2B032383-897C-42BA-917E-700B6890BDC3/"
 }
 ```
 
@@ -78,7 +78,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 204
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agents?$expand=agentGroups
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agents?$expand=agentGroups
 ```
 
 ### Response

@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups('8832388F-3814-4952-B288-FFB62081FE25')
+DELETE https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups/8832388F-3814-4952-B288-FFB62081FE25/
 ```
 
 ### Response

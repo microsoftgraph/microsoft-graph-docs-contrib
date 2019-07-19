@@ -62,7 +62,7 @@ The following is an example of the request.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles('provisioning')/agentGroups/('8832388F-3814-4952-B288-FFB62081FE25')
+PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/agentGroups/8832388F-3814-4952-B288-FFB62081FE25/
 Content-type: application/json
 
 {
