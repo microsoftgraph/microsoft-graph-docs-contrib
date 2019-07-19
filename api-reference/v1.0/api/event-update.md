@@ -51,7 +51,7 @@ In the request body, supply the values for relevant fields that should be update
 |attendees|[Attendee](../resources/attendee.md)|The collection of attendees for the event.|
 |body|[ItemBody](../resources/itembody.md)|The body of the message associated with the event.|
 |categories|String|The categories associated with the event.|
-|end|[DateTimeTimeZone](../resources/datetimetimezone.md)|The date and time that the event ends.<br/><br/>By default, the end time is in UTC. You can specify an optional time zone in EndTimeZone, express the end time in that time zone, and include a time offset from UTC. Note that if you use EndTimeZone, you must specify a value for StartTimeZone as well.<br/><br/>This example specifies February 25, 2015, 9:34pm in Pacific Standard Time: "2015-02-25T21:34:00-08:00". |
+| end|DateTimeTimeZone|The date, time, and time zone that the event ends.|
 |importance|String|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
@@ -62,7 +62,7 @@ In the request body, supply the values for relevant fields that should be update
 |responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
 |sensitivity|String| The possible values are: `normal`, `personal`, `private`, `confidential`.|
 |showAs|String|The status to show. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|start|[DateTimeTimeZone](../resources/datetimetimezone.md)|The start time of the event. <br/><br/>By default, the start time is in UTC. You can specify an optional time zone in StartTimeZone, express the start time in that time zone, and include a time offset from UTC. Note that if you use StartTimeZone, you must specify a value for EndTimeZone as well.<br/><br/>This example specifies February 25, 2015, 7:34pm in Pacific Standard Time: "2015-02-25T19:34:00-08:00".  |
+| start|DateTimeTimeZone|The start date, time, and time zone of the event. |
 |subject|String|The text of the event's subject line.|
 
 Because the **event** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to 

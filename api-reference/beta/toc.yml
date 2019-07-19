@@ -178,7 +178,7 @@
         - name: Get delta
           href: api/user-delta.md
       - name: Calendar
-        href: resources/event.md
+        href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
         - name: List events
