@@ -424,6 +424,8 @@
           href: api/group-unsubscribebymail.md
         - name: Update group
           href: api/group-update.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -7884,6 +7886,8 @@
           href: api/directoryobject-checkmembergroups.md
         - name: Get directoryObjects by ids
           href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
       - name: Directory role
         href: resources/directoryrole.md
         items:
