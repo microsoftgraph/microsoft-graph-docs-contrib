@@ -10,8 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an individual chat message within a [channel](channel.md) or [chat](chat.md).
-The message can be a root message or part of a thread that is defined by the **replyToId** property in the message.
+Represents an individual chat message within a [channel](channel.md) or [chat](chat.md). The message can be a root message or part of a thread that is defined by the **replyToId** property in the message.
 
 ## Methods
 
@@ -21,7 +20,7 @@ The message can be a root message or part of a thread that is defined by the **r
 |[Get Channel message](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Get a single root message from a channel.|
 |[List replies to a message](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a message in channel.|
 |[Get a reply to a message](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Get a single reply to a message in a channel.|
-|[Update DLP violation](../api/update-chatmessage.md) | none| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
+|[Update chatMessage with DLP violation](../api/chatmessage-update-policyviolation.md) | none| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
 |[Send a message in a channel](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Create a new top-level message in a channel.|
 |[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Create a new top-level message in a channel.|
 |[Reply to a message in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing message in a channel.|
@@ -32,7 +31,8 @@ The message can be a root message or part of a thread that is defined by the **r
 |[Get hosted image bytes](../api/chatmessagehostedimage-getbytes.md) | binary image data | Get binary image data of a hosted image from a message.|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property    | Type |Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the message.|
 |replyToId| string | Id of the parent message/root message of the thread |

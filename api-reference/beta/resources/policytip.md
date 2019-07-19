@@ -1,15 +1,17 @@
 ---
 title: "policytip Resource"
-description: "Details for policytip Resource Type”
-author: "degoh"
+description: "Details for policytip Resource Type"
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 # policytip Resource
+
 Details for the policytip Resource type.
 
-### policyTip JSON 
-| Property	   | Type	|Description|
+## Properties
+
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 | generalText | string | The explanatory text shown to the sender of the message that was flagged. |
 | complianceUrl | string | The URL that represents the DLP policies of the organization or a page the admin chooses to configure to provide more information about DLP policies in the organization. |
