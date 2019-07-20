@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET ~/onPremisesPublishingProfiles(publishingType)/publishedResources
+GET ~/onPremisesPublishingProfiles/{publishingType}/publishedResources
 ```
 
 ## Optional query parameters
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles(publishingType)/publishedResources?$expand=agentGroups
+GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/{publishingType}/publishedResources?$expand=agentGroups
 ```
 
 ### Response
