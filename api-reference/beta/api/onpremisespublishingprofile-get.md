@@ -129,13 +129,13 @@ HTTP/1.1 200 OK
         }
     ],
   "hybridAgentUpdaterConfiguration": {
-       "deferUpdate" : "2018-08-12T12:00",
+       "deferUpdateDateTime" : "2018-08-12T12:00",
        "updateWindow" :
           {
             "updateWindowStartTime" : "0:00:00",
             "updateWindowEndTime" : "23:59:00"
-    },
-        "allowUpdateConfigurationOverride" : false
+          },
+       "allowUpdateConfigurationOverride" : false
   }
 }
 ```
