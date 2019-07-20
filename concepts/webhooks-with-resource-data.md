@@ -211,26 +211,28 @@ The data included in the `resourceData` property of the notification is encrypte
 
 ### Managing app public keys for encryption
 
-> **Important:** You must upload and configure a public key for you app before it will be able to create subscriptions for notifications with resource data. If a key is not configured, any requests to create subscriptions will fail.
+> **Important:** You must provide a valid public key when creating a subscription for notifications with resource data. Otherwise, the request to create the subscriptions will fail.
+
+@@@TBD - error code when an invalid key is provided, or no key@@@
 
 1. You need to obtain a pair of assymetric keys.
-2. You need to upload the **public** key, in the form of a X509 certificate, to the app object you already registered with Azure AD for calling Microsoft Graph. You will give it a unique GUID identifier.
-    1. @@@more intructions on how to do this, but will be similar to [what is described here](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/howto-saml-token-encryption)
-3. The private key will be held by your app; we recommend using as secure key store.
-4. You can upload one or more keys, but your app's property@@@TBD@@@ must be set to a single key for all notification encryption.
-    1. @@@more info on how to set that@@@
+2. You need to provide the **public** key using the **publicEncryptionKey** property in the subscription creation request. You can use the same, or different keys, for each subscription you create.
+3. The private key will be held and managed by you; we recommend using as secure key store.
+
+#### Key format
+@@@TBD@@@
 
 #### Rotating keys
 
-It is a good practice to periodically change assymetric keys, to minimize the risk of a private key becoming compromised. If you want to introduce a new pair of keys, follow these steps:
+It is a recommmended practice to periodically change assymetric keys, to minimize the risk of a private key becoming compromised. If you want to introduce a new pair of keys, follow these steps:
 
 @@@TBD - change this section to reflect that keys are now part of the subscription. describe how to rotate them with a PATCH operation@@@
 @@@The content below is outdated, needs to be replaced@@@
-1. Upload a new **public** key to your app registration.
-2. Configure the property@@@ to point to the new key. This is now the new key for encryption.
+1. Obtain a new pair of assymetric keys. Use it for all new subscriptions being created.
+2. Update existing subscriptions with the new **public** key. You can do this as part of regular subscription renewal or enumerate all subscriptions and provide the key. The key can be updated by providing the **publicEncryptionKey** and **publicEncryptionKeyId** properties in the `PATCH` operation on the subscription. @@@TBD - confirm@@@
 3. Some things to keep in mind:
-    - There will be some time (@@@give SLA@@@) when the old key will still be used for encryption. Your app must have access to both old and new private keys to be able to decrypt content. Old and new keys may be used in parallel for a period of time.
-    - Use the `publicEncryptionKeyId` property in each notification to  identify the correct key to use.
+    - For a period of time (up to 1 week@@@) the old key may still be used for encryption. Your app must have access to both old and new private keys to be able to decrypt content.
+    - Use the **publicEncryptionKeyId** property in each notification to  identify the correct key to use.
     - Discard of the old key pair only when you have seen no recent notifications referencing the old key.
 
 ### How to decrypt
