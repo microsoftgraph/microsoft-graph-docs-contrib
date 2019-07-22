@@ -8232,6 +8232,11 @@
           href: resources/synchronization-configure-with-custom-target-attributes.md
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Directory definition
+          href: resources/synchronization-directorydefinition.md
+          items:
+          - name: Discover
+            href: api/directorydefinition-discover.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -8262,11 +8267,6 @@
             href: api/synchronization-synchronizationschema-update.md
           - name: Reset schema
             href: api/synchronization-synchronizationschema-delete.md
-        - name: Directory definition
-          href: resources/synchronization-directorydefinition.md
-          items:
-          - name: Discover
-            href: api/directorydefinition-discover.md
         - name: Template
           href: resources/synchronization-synchronizationtemplate.md
           items:
