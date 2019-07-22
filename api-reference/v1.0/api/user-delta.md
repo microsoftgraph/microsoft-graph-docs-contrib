@@ -1,6 +1,6 @@
 ---
 title: "user: delta"
-description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See Track changes for details."
+description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
