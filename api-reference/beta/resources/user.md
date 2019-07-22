@@ -349,7 +349,7 @@ Here is a JSON representation of the resource
   "manager": {"@odata.type": "microsoft.graph.directoryObject"},
   "memberOf": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "joinedTeams": [{"@odata.type": "microsoft.graph.group"}],
-  "teamwork": [{"@odata.type": "microsoft.graph.teamwork"}],
+  "teamwork": {"@odata.type": "microsoft.graph.teamwork"},
   "messages": [{ "@odata.type": "microsoft.graph.message"}],
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
