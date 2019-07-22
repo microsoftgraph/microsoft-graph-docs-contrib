@@ -1,17 +1,15 @@
 ---
 title: "teamsAppInstallation resource type"
 description: "A teamsApp installed in a team. "
-author: "nkramer"
+author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
 # teamsAppInstallation resource type
 
-
-
-A [teamsApp](teamsapp.md) installed in a [team](team.md). 
-Any bots that are part of the app will become part of any team the app is added to.
+A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part of the app will become part of any team the app is added to.
 
 ## Methods
 
@@ -55,7 +53,6 @@ Any bots that are part of the app will become part of any team the app is added 
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
 
-
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -65,4 +62,3 @@ Any bots that are part of the app will become part of any team the app is added 
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -1,17 +1,17 @@
 ---
-title: "userTeamwork resource type"
-description: "A container for Microsoft Teams features available per user. "
+title: "teamwork resource type"
+description: "A container for Microsoft Teams features available for organization."
 author: "clearab"
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
 
-# userTeamwork resource type
+# teamwork resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the range of Microsoft Teams functionalities that are available per user in the tenant.
+Teamwork is a container for the range of Microsoft Teams functionalities that are available for the organization.
 
 ## Properties
 
@@ -31,7 +31,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.userTeamwork",
+  "@odata.type": "microsoft.graph.teamwork",
   "baseType": "microsoft.graph.entity"
 }-->
 
@@ -47,10 +47,14 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "userteamwork resource",
+  "description": "teamwork resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": []
 }
 -->
+
+## See Also
+
+- [userTeamwork resource](userteamwork.md)

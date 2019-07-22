@@ -1,14 +1,13 @@
 ---
 title: "List apps in team"
 description: "Retrieve the list of apps installed in the specified team."
-author: "nkramer"
+author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
 # List apps in team
-
-
 
 Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
 
@@ -55,6 +54,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_owners"
@@ -76,7 +76,6 @@ GET /teams/{id}/installedApps
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -131,7 +130,6 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDe
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
