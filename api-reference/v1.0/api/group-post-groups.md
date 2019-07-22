@@ -67,7 +67,7 @@ Use the **groupTypes** property to control the type of group and its membership,
 | Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## Response
-If successful, this method returns `201 Created` response code and [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
+If successful, this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body. The response includes only the default properties of the group.
 
 ## Examples
 
