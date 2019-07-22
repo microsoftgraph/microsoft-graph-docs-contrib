@@ -17,6 +17,12 @@ In general, the default [synchronization schema](synchronization-synchronization
 
 Directory definitions are updated as part of the [synchronization schema](synchronization-synchronizationschema.md).
 
+## Methods
+
+| Method       | Return Type  |Description|
+|:---------------|:--------|:----------|
+|[Discover](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Read properties and relationships of servicePrincipal object.|
+
 ## Properties
 
 | Property      | Type      | Description    |
@@ -28,12 +34,6 @@ Directory definitions are updated as part of the [synchronization schema](synchr
 |version|String|Read only value that indicates version discovered. Null if discovery has not yet occurred.|
 |discoveryDateTime|DateTimeOffset| Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |discoverabilities|string| Read only value indicating what type of discovery the app supports. Possible values are: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
-
-## Methods
-
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-|[Discover](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Read properties and relationships of servicePrincipal object.|
 
 ## JSON representation
 
