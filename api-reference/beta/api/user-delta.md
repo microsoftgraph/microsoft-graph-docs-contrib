@@ -75,7 +75,7 @@ If successful, this method returns `200 OK` response code and [user](../resource
   - This indicates there is no more data about the existing state of the resource to be returned. Save and use the `deltaLink` URL to learn about changes to the resource in the next round.
   - You have a choice to specify the `Prefer:return=minimal` header, to include in the response values for only the properties that have changed since the time the `deltaLink` was issued.
 
-#### Default: return the same properties as initial delta request
+### Default: return the same properties as initial delta request
 
 By default, requests using a `deltaLink` or `nextLink` return the same properties as selected in the initial delta query in the following ways:
 
@@ -86,7 +86,7 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 
 > **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values  - as shown in the [second example](#request-2) below.
 
-#### Alternative: return only the changed properties
+### Alternative: return only the changed properties
 
 Adding an optional request header - `prefer:return=minimal` - results in the following behavior:
 
