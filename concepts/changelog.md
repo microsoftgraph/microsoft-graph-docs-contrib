@@ -57,6 +57,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-1.0) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) resource. |
 | Addition | beta | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) resource. |
 | Addition | v1.0 | Added the [group:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) and [directoryobject:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) on [groups](/graph/api/group-delta?view=graph-rest-1.0), which validates that an Office 365 group's display name or mail nickname complies with naming policies. |
+| Addition | Beta |Added new properties to resource type [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta).|
+| Addition | Beta |Added the [directoryDefinition: discover](/graph/api/resources/synchronization-synchronizationschema-DiscoverDirectoryDefinition?view=graph-rest-beta) method.|
 
 ### Reports
 
@@ -72,12 +74,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added support for application permissions to [List channel messages](/api-reference/beta/api/channel-list-messages.md), [Get channel message](/api-reference/beta/api/channel-get-message.md), [List replies to a message](/api-reference/beta/api/channel-list-messagereplies.md), and [Get a reply to a message](/api-reference/beta/api/channel-get-messagereply.md). |
 | Addition | beta | Added support for application permissions to [List messages in a chat](/api-reference/beta/api/chatmessage-list.md) and [Get message in chat](/api-reference/beta/api/chatmessage-get.md). |
-
-### Identity and access (Azure AD)
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | Beta |Added new properties to resource type [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta)|
-| Addition | Beta |Added the [discoverDirectoryDefinition](/graph/api/resources/synchronization-synchronizationschema-DiscoverDirectoryDefinition?view=graph-rest-beta) operation|
 
 ## June 2019
 
