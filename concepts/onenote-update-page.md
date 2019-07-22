@@ -135,8 +135,8 @@ You can specify target elements by using the **data-id** or **id** value, as fol
 
 - For **append** and **insert** actions, you can use either ID as the target value.
 - For **replace** actions, you must use the generated ID for all elements except for the page title and images and objects that are within a div. 
-    - To replace a title, use the **title** keyword. 
-    - To replace images and objects that are within a div, use either **data-id** or **id**.
+  - To replace a title, use the **title** keyword. 
+  - To replace images and objects that are within a div, use either **data-id** or **id**.
 
 The following example uses the **id** value for the target. Don't use the # prefix with a generated ID.
 
