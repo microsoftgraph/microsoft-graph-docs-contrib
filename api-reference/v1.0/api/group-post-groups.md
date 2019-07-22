@@ -9,14 +9,14 @@ ms.prod: "groups"
 # Create group
 Create a new group as specified in the request body. You can create the following types of groups:
 
-* Office 365 Group (unified group)
+* Office 365 group (unified group)
 * Security group
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section.
 
 To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
-> **Note**: Although Microsoft Teams is built on Office 365 Groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
+> **Note**: Although Microsoft Teams is built on Office 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,11 +55,11 @@ The following table shows the properties of the [group](../resources/group.md) r
 
 Specify other writable properties as necessary for your group. For more information, see the properties of the [group](../resources/group.md) resource.
 
->**Note:** Creating an Office 365 Group programmatically without a user context and without specifying owners will create the group anonymously.  Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
+>**Note:** Creating an Office 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
 
 ### groupTypes options
 
-Use the **groupTypes** property to control the type of group and its membership, as shown below:
+Use the **groupTypes** property to control the type of group and its membership, as shown.
 
 | Type of group | Assigned membership | Dynamic membership |
 |:--------------|:------------------------|:---------------|
