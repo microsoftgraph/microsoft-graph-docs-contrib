@@ -1,6 +1,6 @@
 ---
 title: "List tasks"
-description: "Retrieve a list of **plannertask** objects associated to a plannerPlan object."
+description: "Retrieve a list of **plannerTask** objects associated with a plannerPlan object."
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
