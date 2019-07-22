@@ -1,6 +1,6 @@
 ---
 title: "Update plannerPlan"
-description: "Update the properties of **plannerPlan** object."
+description: "Update the properties of a **plannerPlan** object."
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -10,7 +10,7 @@ ms.prod: "planner"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of **plannerPlan** object.
+Update the properties of a **plannerPlan** object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +44,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and updated [plannerPlan](../resources/plannerplan.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [plannerPlan](../resources/plannerplan.md) object in the response body.
 
 This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).
 
