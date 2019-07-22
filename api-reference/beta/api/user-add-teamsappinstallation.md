@@ -1,17 +1,17 @@
 ---
-title: "Add app to team"
-description: "Installs an app to the specified team."
+title: "Install app for user"
+description: "Installs an app in the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Add app to team
+# Install app for user
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
+Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).
 
 ## Permissions
 
@@ -19,14 +19,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) |  User.ReadWrite.All, Directory.ReadWrite.All     |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
 ```http
-POST /teams/{id}/installedApps
+POST /users/{id}/teamwork/installedApps
 ```
 
 ## Request headers
@@ -37,25 +37,24 @@ POST /teams/{id}/installedApps
 
 ## Request body
 
+The request body should contain the ID of the existing catalog app to be added.
+
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|teamsApp|String|The id of the app to add.|
+|teamsApp|String|The ID of the app to add.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `201 OK` response code.
 
 ## Example
 
 ### Request
 
 The following is an example of the request.
-<!-- {
-  "blockType": "ignored",
-  "name": "get_team"
-}-->
+
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/installedApps
+POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 {
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
@@ -66,29 +65,16 @@ POST https://graph.microsoft.com/beta/teams/{id}/installedApps
 The following is an example of the response.
 
 > **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
 } -->
+
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 OK
 Content-type: application/json
-Content-length: 401
-
-{
-}
+Content-length: 0
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "Get team",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
