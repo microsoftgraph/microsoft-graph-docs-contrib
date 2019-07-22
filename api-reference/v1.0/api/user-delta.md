@@ -61,7 +61,7 @@ This method supports optional OData Query Parameters to help customize the respo
 ## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
@@ -73,7 +73,7 @@ If successful, this method returns `200 OK` response code and [user](../resource
   - This indicates there is no more data about the existing state of the resource to be returned. Save and use the `deltaLink` URL to learn about changes to the resource in the next round.
   - You have a choice to specify the `Prefer:return=minimal` header, to include in the response values for only the properties that have changed since the time the `deltaLink` was issued.
 
-#### Default: return the same properties as initial delta request
+### Default: return the same properties as initial delta request
 
 By default, requests using a `deltaLink` or `nextLink` return the same properties as selected in the initial delta query in the following ways:
 
@@ -84,7 +84,7 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 
 > **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values  - as shown in the [second example](#request-2) below.
 
-#### Alternative: return only the changed properties
+### Alternative: return only the changed properties
 
 Adding an optional request header - `prefer:return=minimal` - results in the following behavior:
 
@@ -93,9 +93,11 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 > **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
 
-### Example
+## Examples
 
-#### Request 1
+### Example 1: Default properties
+
+#### Request
 
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 
@@ -123,7 +125,7 @@ GET https://graph.microsoft.com/v1.0/users/delta
 ---
 
 
-#### Response 1
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization.
 
@@ -162,9 +164,11 @@ Content-type: application/json
   ]
 }
 ```
-#### Request 2
+### Example 2: Selecting three properties
 
-The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
+#### Request
+
+The next example shows the initial request selecting three properties for change tracking, with default response behavior.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -190,9 +194,9 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mo
 ---
 
 
-#### Response 2
+#### Response
 
-The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that all 3 properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.
+The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that all three properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.
 
 <!-- {
   "blockType": "response",
@@ -218,9 +222,11 @@ Content-type: application/json
 }
 ```
 
-#### Request 3
+### Example 3: Alternative minimal response behavior
 
-The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:
+#### Request
+
+The next example shows the initial request selecting three properties for change tracking, with alternative minimal response behavior.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -247,7 +253,7 @@ Prefer: return=minimal
 ---
 
 
-#### Response 3
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that the `mobilePhone` property is not included, which means it has not changed since the last delta query; `displayName` and `jobTitle` are included which means their values have changed.
 
