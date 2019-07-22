@@ -199,7 +199,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 
 #### Response
 
-The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that all 3 properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.
+The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that all three properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.
 
 <!-- {
   "blockType": "response",
