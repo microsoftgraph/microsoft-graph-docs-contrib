@@ -58,7 +58,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) resource. |
 | Addition | v1.0 | Added the [group:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) and [directoryobject:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) on [groups](/graph/api/group-delta?view=graph-rest-1.0), which validates that an Office 365 group's display name or mail nickname complies with naming policies. |
 | Addition | Beta |Added new properties to resource type [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta).|
-| Addition | Beta |Added the [directoryDefinition: discover](/graph/api/resources/synchronization-synchronizationschema-DiscoverDirectoryDefinition?view=graph-rest-beta) method.|
+| Addition | Beta |Added the [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) method.|
 
 ### Reports
 
