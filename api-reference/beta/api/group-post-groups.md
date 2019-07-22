@@ -64,7 +64,7 @@ Specify other writable properties as necessary for your group. For more informat
 
 ### groupTypes options
 
-Use the **groupTypes** property to control the type of group and its membership, as shown below:
+Use the **groupTypes** property to control the type of group and its membership, as shown.
 
 | Type of group | Assigned membership | Dynamic membership |
 |:--------------|:------------------------|:---------------|
