@@ -43,7 +43,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, returns a `200 OK` response, with [directoryDefinition](../resources/synchronization-directorydefinition.md).
+If successful, this method returns a `200 OK` response with a [directoryDefinition](../resources/synchronization-directorydefinition.md) object.
 
 ## Example
 
