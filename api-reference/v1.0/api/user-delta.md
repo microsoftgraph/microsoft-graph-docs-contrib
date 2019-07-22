@@ -279,6 +279,7 @@ Content-type: application/json
   ]
 }
 ```
+## See also
 
 - [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 - [Get incremental changes for users](/graph/delta-query-users).
