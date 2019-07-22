@@ -1,6 +1,6 @@
 ---
 title: "user: delta"
-description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See Track changes for details."
+description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
@@ -63,7 +63,7 @@ This method supports optional OData Query Parameters to help customize the respo
 ## Request body
 Do not supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns `200 OK` response code and [user](../resources/user.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
@@ -95,9 +95,11 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 
 > **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
 
-### Example
+## Examples
 
-#### Request 1
+### Example 1: Default properties
+
+#### Request
 
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 
@@ -125,7 +127,7 @@ GET https://graph.microsoft.com/beta/users/delta
 ---
 
 
-#### Response 1
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization.
 
@@ -165,9 +167,11 @@ Content-type: application/json
 }
 ```
 
-#### Request 2
+### Example 2: Selecting three properties
 
-The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
+#### Request
+
+The next example shows the initial request selecting three properties for change tracking, with default response behavior.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -193,7 +197,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 ---
 
 
-#### Response 2
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that all 3 properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.
 
@@ -221,9 +225,11 @@ Content-type: application/json
 }
 ```
 
-#### Request 3
+### Example 3: Alternative minimal response behavior
 
-The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:
+#### Request
+
+The next example shows the initial request selecting three properties for change tracking, with alternative minimal response behavior.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -250,7 +256,7 @@ Prefer: return=minimal
 ---
 
 
-#### Response 3
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that the `mobilePhone` property is not included, which means it has not changed since the last delta query; `displayName` and `jobTitle` are included which means their values have changed.
 
