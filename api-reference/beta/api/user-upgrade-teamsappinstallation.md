@@ -1,5 +1,5 @@
 ---
-title: "Upgrade an app installed for user"
+title: "teamsAppInstallation: upgrade"
 description: "Upgrade an app installation in the personal scope of a user"
 author: "clearab"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Upgrade an app already installed for user
+# teamsAppInstallation: upgrade
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
