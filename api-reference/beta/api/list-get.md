@@ -1,8 +1,7 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/11/2017
-title: Get a SharePoint list
+title: Get metadata for a list
+description: Return the metadata for a [list][].
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
@@ -10,7 +9,7 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns the metadata for a [list][].
+Return the metadata for a [list][].
 
 [list]: ../resources/list.md
 
@@ -221,7 +220,6 @@ Content-type: application/json
   ]
 }
 ```
-For more details on the ManagedMetadata resource, refer [this](ManagedMetadata.md).
 
 <!--
 {
