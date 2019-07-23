@@ -1,6 +1,6 @@
 ---
 title: "Uninstall app for user"
-description: "Uninstalls an app from the personal scope of the specified user."
+description: "Uninstall an app from the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uninstall an [app](../resources/teamsappinstallation.md) from the personal scope of specified [user](../resources/user.md).
+Uninstall an [app](../resources/teamsappinstallation.md) from the personal scope of the specified [user](../resources/user.md).
 
 ## Permissions
 
