@@ -1,10 +1,10 @@
 ---
-title: "Traverse Microsoft Graph"
+title: "Access data and methods by navigating Microsoft Graph"
 description: "In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph."
 localization_priority: Priority
 ---
 
-# Traverse Microsoft Graph
+# Access data and methods by navigating Microsoft Graph
 
 In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph.
 
@@ -25,14 +25,16 @@ The metadata document ($metadata) is published at the service root. You can view
 
 The metadata allows you to see and understand the Microsoft Graph data model, including the entity types, complex types, and enumerations that make up the resources represented in the request and response packets.
 
-You can use the metadata to learn the realtionships between entities in Microsoft Graph and establish URLs that navigate between those entities.
+You can use the metadata to learn the relationships between entities in Microsoft Graph and establish URLs that navigate between those entities.
 
-Path URL resource names, query parameters, and action parameters and values are not case-sensitive.
-However, values you assign, entity IDs, and other base-64-encoded values are case-sensitive.
+> [!NOTE]
+> Use resource IDs in the same case as they are returned from Microsoft Graph APIs.
+> Assume resource IDs, values you assign, and other base-64-encoded values are case-sensitive.
+> Assume path URL resource names, query parameters, and action parameters and values are not case-sensitive.
 
 ## View a collection of resources
 
-Microsoft Graph lets you view resources in a tenant using HTTP GET queries. The query response includes properties of each resource, with each resource identified by its ID.
+Microsoft Graph lets you view resources in a tenant using HTTP `GET` queries. The query response includes properties of each resource. Resources that are entities are each identified by its ID.
 The format of a resource ID can be a GUID, and generally varies according to the resource type.
 
 For example, you can get the collection of users defined in a tenant:
@@ -299,10 +301,10 @@ content-length: 147
   ]
 }
 ```
-You can see all the relationships on a given resource by going to the metadata, finding the EntityType, and looking at all NavigationProperties for that EntityType.
+You can see all the relationships on a given resource by going to the metadata, finding the `EntityType`, and looking at each `NavigationProperty` for that `EntityType`.
 
-## Call functions
-Microsoft Graph also supports _functions_ to manipulate resources in ways that are not simply create, read, update, and delete (CRUD) operations. They are often in the shape of HTTPS POST requests in order to intake arguments for the function. For example, the following function lets the signed-in user (`me`) send an email message.
+## Call actions and functions
+Microsoft Graph also supports _actions_ and _functions_ to manipulate resources in ways that are not simply create, read, update, and delete (CRUD) operations. They are often in the shape of HTTPS POST requests in order to intake arguments for the action or function. For example, the following action lets the signed-in user (`me`) send an email message.
 
 ```no-highlight
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
@@ -320,7 +322,7 @@ content-length: 96
     "toRecipients": [
       {
         "emailAddress": {
-          "address": "garthf@a830edad9050849NDA1.onmicrosoft.com"
+          "address": "garthf@contoso.onmicrosoft.com"
         }
       }
     ],
