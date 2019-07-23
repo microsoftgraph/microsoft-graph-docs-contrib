@@ -2,8 +2,8 @@
 title: "List calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the user's default calendar,"
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # List calendarView
@@ -55,7 +55,11 @@ In the request URL, provide the following required query parameters with values.
 |startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".|
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".|
 
-This method also supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method also supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+> [!NOTE] 
+> The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
+
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:--------|:--------|
@@ -68,7 +72,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request
 Here is an example of the request.
