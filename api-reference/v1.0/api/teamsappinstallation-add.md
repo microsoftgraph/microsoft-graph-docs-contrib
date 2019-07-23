@@ -1,6 +1,6 @@
 ---
 title: "Add app to team"
-description: "Installs an app to the specified team."
+description: "Install an app to the specified team."
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -9,7 +9,7 @@ ms.prod: "microsoft-teams"
 
 # Add app to team
 
-Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
+Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions
 
@@ -65,7 +65,7 @@ POST /teams/{id}/installedApps
 
 The following is an example of the response.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
