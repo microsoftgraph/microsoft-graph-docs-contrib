@@ -1,5 +1,5 @@
 ---
-title: "Remove educationRubric from assignment"
+title: "Remove educationRubric from educationAssignment"
 description: "Remove an educationRubric from an educationAssignment"
 localization_priority: Normal
 author: "dipakboyed"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Remove educationRubric from assignment
+# Remove educationRubric from educationAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
