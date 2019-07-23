@@ -58,8 +58,8 @@ This method supports the following OData query parameters to help customize the 
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetails/browser| eq, startswith|
-|deviceDetails/operatingSystem| eq, startswith|
+|deviceDetail/browser| eq, startswith|
+|deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
 |isRisky| eq|
 
