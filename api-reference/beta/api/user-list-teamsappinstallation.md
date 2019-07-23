@@ -84,9 +84,9 @@ Content-length: 55
   ]
 }
 ```
-### Example 2: Get the names of installed apps.
+### Example 2: Get the names of installed apps
 
-The following example gets the names of the installed apps
+The following example gets the names of the installed apps.
 
 #### Request
 
