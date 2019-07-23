@@ -1,6 +1,6 @@
 ---
 title: "Add member"
-description: "Use this API to add a member to an Office 365 Group, a security group, or a mail-enabled security group through the **members** navigation property."
+description: "Add a member to an Office 365 group or security group through the **members** navigation property."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
@@ -10,9 +10,12 @@ ms.prod: "groups"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add a member to an Office 365 Group or security group through the **members** navigation property.
+Add a member to an Office 365 group or security group through the **members** navigation property.
 
-You can add users or other groups. Important: You can add only users to Office 365 Groups.
+You can add users or other groups. 
+
+> [!Important]
+> You can add only users to Office 365 groups.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
