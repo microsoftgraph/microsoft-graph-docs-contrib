@@ -73,8 +73,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added support for application permissions to [List messages in a chat](/api-reference/beta/api/chatmessage-list.md) and [Get message in chat](/api-reference/beta/api/chatmessage-get.md). |
 | Addition | beta | Added the **installedApps** property to the [chat](/api-reference/beta/resources/chat.md) resource.|
 | Addition | beta | Added navigation binding for **chats** property of the [user](/api-reference/beta/resources/user.md) resource.|
-| Addition | beta | Added the [teamwork](/api-reference/beta/resources/teamwork.md) resource and associated methods. |
-| Addition | beta | Added the [userTeamwork](/api-reference/beta/resources/userteamwork.md) resource and associated methods. |
+| Addition | beta | Added the [teamwork](/api-reference/beta/resources/teamwork.md) resource. |
+| Addition | beta | Added the [userTeamwork](/api-reference/beta/resources/userteamwork.md) resource. |
+| Addition | beta | Added new methods to the [teamsAppInstallation](/api-reference/beta/resources/teamsappinstallation.md) resource enabling CRUD operations with personal apps for users.|
 
 ## June 2019
 

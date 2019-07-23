@@ -350,6 +350,17 @@
           href: api/planneruser-list-recentplans.md
         - name: List user's assigned tasks
           href: api/planneruser-list-tasks.md
+      - name: Teamwork
+        href: resources/teamsappinstallation.md
+        items:
+        - name: List apps for a user
+          href: api/user-list-teamsappinstallation.md
+        - name: Add app for a user
+          href: api/user-add-teamsappinstallation.md
+        - name: Remove app for a user
+          href: api/user-delete-teamsappinstallation.md
+        - name: Upgrade an installed app for a user
+          href: api/user-upgrade-teamsappinstallation.md
       - name: User settings
         href: resources/user-settings.md
         items:
