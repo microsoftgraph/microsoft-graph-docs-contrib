@@ -17,7 +17,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | Change type | Version | Description                                                                                               |
 | :---------- | :------ | :-------------------------------------------------------------------------------------------------------- |
-| Addition    | beta    | Added new property `Grade` to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
+| Addition    | beta    | Added new property **grade** to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta). |
 
 ### Devices and apps (Microsoft Intune)
 
