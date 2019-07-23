@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 | clientContext  | String  | The client context. |
 
 ## Response
-Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
+Returns `200 OK` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
@@ -61,7 +61,7 @@ Content-Type: application/json
 Content-Length: 46
 
 {
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 }
 ```
 # [C#](#tab/csharp)
@@ -89,11 +89,20 @@ Content-Length: 46
   "@odata.type": "microsoft.graph.commsOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/app/calls/421f1100-411f-4a29-8514-dbbb9caff45a/operations/ea91863c-d0a6-4de0-b73a-4c8d63da5d87
+
+{
+  "id": "ea91863c-d0a6-4de0-b73a-4c8d63da5d87",
+  "status": "completed",
+  "createdDateTime": "2019-07-18T19:52:30Z",
+  "lastActionDateTime": "2019-07-18T19:52:31Z",
+  "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54",
+}
 ```
 
-##### Notification - operation completed
+
+##### Notification - Tone notification
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -109,14 +118,16 @@ Content-Type: application/json
 {
   "value": [
     {
-      "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "changeType": "updated",
+      "resource": "/app/calls/421f1100-411f-4a29-8514-dbbb9caff45",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "toneInfo": {
+          "@odata.type": "#microsoft.graph.toneInfo",
+          "sequenceId": 1,
+          "tone": "tone1"
+        }
       }
     }
   ]
