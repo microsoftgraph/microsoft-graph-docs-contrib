@@ -1,7 +1,7 @@
 ---
 title: "appListItem resource type"
 description: "Represents an app in the list of managed applications"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

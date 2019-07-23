@@ -1,7 +1,7 @@
 ---
 title: "import action"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -30,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/importedWindowsAutopilotDeviceIdentities/import
-POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities/import
 ```
 
 ## Request headers
@@ -61,7 +60,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
 Content-type: application/json
-Content-length: 748
+Content-length: 860
 
 {
   "importedWindowsAutopilotDeviceIdentities": [
@@ -69,6 +68,7 @@ Content-length: 748
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
       "orderIdentifier": "Order Identifier value",
+      "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
       "importId": "Import Id value",
@@ -79,7 +79,8 @@ Content-length: 748
         "deviceRegistrationId": "Device Registration Id value",
         "deviceErrorCode": 15,
         "deviceErrorName": "Device Error Name value"
-      }
+      },
+      "assignedUserPrincipalName": "Assigned User Principal Name value"
     }
   ]
 }
@@ -90,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 713
+Content-Length: 825
 
 {
   "value": [
@@ -98,6 +99,7 @@ Content-Length: 713
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
       "orderIdentifier": "Order Identifier value",
+      "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
       "importId": "Import Id value",
@@ -108,7 +110,8 @@ Content-Length: 713
         "deviceRegistrationId": "Device Registration Id value",
         "deviceErrorCode": 15,
         "deviceErrorName": "Device Error Name value"
-      }
+      },
+      "assignedUserPrincipalName": "Assigned User Principal Name value"
     }
   ]
 }

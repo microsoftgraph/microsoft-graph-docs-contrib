@@ -1,7 +1,7 @@
 ---
 title: "Create windowsAutopilotDeploymentProfileAssignment"
 description: "Create a new windowsAutopilotDeploymentProfileAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

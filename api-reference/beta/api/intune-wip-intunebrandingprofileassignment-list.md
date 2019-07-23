@@ -1,7 +1,7 @@
 ---
 title: "List intuneBrandingProfileAssignments"
 description: "List properties and relationships of the intuneBrandingProfileAssignment objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

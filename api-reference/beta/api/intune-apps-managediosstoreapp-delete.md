@@ -1,7 +1,7 @@
 ---
 title: "Delete managedIOSStoreApp"
 description: "Deletes a managedIOSStoreApp."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

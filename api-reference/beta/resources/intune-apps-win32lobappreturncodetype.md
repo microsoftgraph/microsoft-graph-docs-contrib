@@ -1,7 +1,7 @@
 ---
 title: "win32LobAppReturnCodeType enum type"
 description: "Indicates the type of return code."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

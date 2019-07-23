@@ -1,18 +1,18 @@
 ---
-title: Confirm riskyUsers compromised
-description: Confirm a riskyUsers object as compromised.
+title: Confirm riskyUser compromised
+description: Confirm a riskyUser object as compromised.
 author: cloudhandler
 localization_priority: Normal 
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 ---
-# Confirm riskyUsers compromised
+# riskyUser: confirmCompromised
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >**Note:** The riskyUsers API requires an Azure AD Premium P2 license.
 
-Confirm a [riskyUser](../resources/riskyuser.md) object as compromised. This will set the targeted user's risk level to high.
+Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised. This action sets the targeted user's risk level to high.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,10 +34,9 @@ POST /riskyUsers/confirmCompromised
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-Specify the userIds to dismiss in the request body.
+Specify the risky user IDs to dismiss in the request body.
 
 ## Response
 
@@ -45,6 +44,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "confirm_riskyuser"
@@ -60,6 +61,20 @@ Content-type: application/json
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response.
 <!-- {
@@ -78,5 +93,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": []
+  "suppressions": [
+  ]
 }-->

@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceEnrollmentWindowsHelloForBusinessConfiguration"
 description: "Deletes a deviceEnrollmentWindowsHelloForBusinessConfiguration."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

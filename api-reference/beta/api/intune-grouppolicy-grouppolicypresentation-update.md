@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyPresentation"
 description: "Update the properties of a groupPolicyPresentation object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

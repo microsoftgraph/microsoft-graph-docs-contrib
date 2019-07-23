@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyPresentationDropdownLists"
 description: "List properties and relationships of the groupPolicyPresentationDropdownList objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -121,6 +121,8 @@ Notice that the request specifies time in the PST time zone. By default, the res
 
 ##### Request
 Here is the example request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_findmeetingtimes"
@@ -171,6 +173,20 @@ Content-Type: application/json
   "minimumAttendeePercentage": "100"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-findmeetingtimes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-findmeetingtimes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-findmeetingtimes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 Here is an example response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -358,6 +374,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "suppressions": [
       "Warning: /api-reference/v1.0/api/user-findmeetingtimes.md:
       Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
+      "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
+      Expected type Double but actual was Int64. Property: confidence, actual value: '100'",
       "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
       Expected type Float but actual was Int64. Property: confidence, actual value: '100'"
   ],

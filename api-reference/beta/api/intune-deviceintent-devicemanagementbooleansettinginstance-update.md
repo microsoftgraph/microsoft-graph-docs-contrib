@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementBooleanSettingInstance"
 description: "Update the properties of a deviceManagementBooleanSettingInstance object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

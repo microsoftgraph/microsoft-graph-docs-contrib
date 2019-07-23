@@ -1,7 +1,7 @@
 ---
 title: "Create embeddedSIMActivationCodePool"
 description: "Create a new embeddedSIMActivationCodePool object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

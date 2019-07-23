@@ -1,7 +1,7 @@
 ---
 title: "commit action"
 description: "Commits a file of a given app."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

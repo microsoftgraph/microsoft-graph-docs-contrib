@@ -1,7 +1,7 @@
 ---
 title: "Update windowsInformationProtectionDeviceRegistration"
 description: "Update the properties of a windowsInformationProtectionDeviceRegistration object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "macOSLaunchItem resource type"
 description: "Represents an app in the list of macOS launch items"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

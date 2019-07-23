@@ -1,7 +1,7 @@
 ---
 title: "List appleVppTokenTroubleshootingEvents"
 description: "List properties and relationships of the appleVppTokenTroubleshootingEvent objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -93,6 +93,8 @@ Content-Length: 1071
   ]
 }
 ```
+
+
 
 
 

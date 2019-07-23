@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementSettingInstance resource type"
 description: "Base type for a setting instance"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

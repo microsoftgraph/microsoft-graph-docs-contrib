@@ -1,7 +1,7 @@
 ---
 title: "List deviceManagementIntentDeviceSettingStateSummaries"
 description: "List properties and relationships of the deviceManagementIntentDeviceSettingStateSummary objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

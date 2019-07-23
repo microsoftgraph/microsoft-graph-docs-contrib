@@ -1,7 +1,7 @@
 ---
 title: "Delete iosTrustedRootCertificate"
 description: "Deletes a iosTrustedRootCertificate."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

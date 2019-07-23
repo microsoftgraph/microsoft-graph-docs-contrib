@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicyPresentationValueMultiText"
 description: "Update the properties of a groupPolicyPresentationValueMultiText object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

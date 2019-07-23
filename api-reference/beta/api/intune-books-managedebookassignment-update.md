@@ -1,7 +1,7 @@
 ---
 title: "Update managedEBookAssignment"
 description: "Update the properties of a managedEBookAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

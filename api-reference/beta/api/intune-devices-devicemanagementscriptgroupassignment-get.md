@@ -1,7 +1,7 @@
 ---
 title: "Get deviceManagementScriptGroupAssignment"
 description: "Read properties and relationships of the deviceManagementScriptGroupAssignment object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "List telecomExpenseManagementPartners"
 description: "List properties and relationships of the telecomExpenseManagementPartner objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create telecomExpenseManagementPartner"
 description: "Create a new telecomExpenseManagementPartner object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

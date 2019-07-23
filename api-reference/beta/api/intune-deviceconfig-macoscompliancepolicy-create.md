@@ -1,7 +1,7 @@
 ---
 title: "Create macOSCompliancePolicy"
 description: "Create a new macOSCompliancePolicy object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

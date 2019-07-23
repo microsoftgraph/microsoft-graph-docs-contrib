@@ -1,7 +1,7 @@
 ---
 title: "Update embeddedSIMDeviceState"
 description: "Update the properties of a embeddedSIMDeviceState object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

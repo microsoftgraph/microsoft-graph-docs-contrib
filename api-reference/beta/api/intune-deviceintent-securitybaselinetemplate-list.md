@@ -1,7 +1,7 @@
 ---
 title: "List securityBaselineTemplates"
 description: "List properties and relationships of the securityBaselineTemplate objects."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/templates
+GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ```
 
 ## Request headers
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 243
+Content-Length: 452
 
 {
   "value": [
@@ -65,7 +66,12 @@ Content-Length: 243
       "@odata.type": "#microsoft.graph.securityBaselineTemplate",
       "id": "3f61d4c2-d4c2-3f61-c2d4-613fc2d4613f",
       "displayName": "Display Name value",
-      "description": "Description value"
+      "description": "Description value",
+      "versionInfo": "Version Info value",
+      "isDeprecated": true,
+      "intentCount": 11,
+      "templateType": "specializedDevices",
+      "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
     }
   ]
 }

@@ -1,7 +1,7 @@
 ---
 title: "Delete vppToken"
 description: "Deletes a vppToken."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

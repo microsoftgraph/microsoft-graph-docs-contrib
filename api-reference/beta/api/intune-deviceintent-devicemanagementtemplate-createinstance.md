@@ -1,7 +1,7 @@
 ---
 title: "createInstance action"
 description: "Not yet documented"
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/templates/{deviceManagementTemplateId}/createInstance
+POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{deviceManagementTemplateId}/createInstance
 ```
 
 ## Request headers
@@ -48,6 +49,7 @@ The following table shows the parameters that can be used with this action.
 |displayName|String|Not yet documented|
 |description|String|Not yet documented|
 |settingsDelta|[deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md) collection|Not yet documented|
+|roleScopeTagIds|String collection|Not yet documented|
 
 
 
@@ -62,7 +64,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}/createInstance
 
 Content-type: application/json
-Content-length: 336
+Content-length: 398
 
 {
   "displayName": "Display Name value",
@@ -74,6 +76,9 @@ Content-length: 336
       "definitionId": "Definition Id value",
       "valueJson": "Value Json value"
     }
+  ],
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
   ]
 }
 ```
@@ -83,7 +88,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 350
+Content-Length: 418
 
 {
   "value": {
@@ -93,7 +98,10 @@ Content-Length: 350
     "description": "Description value",
     "isAssigned": true,
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "templateId": "Template Id value"
+    "templateId": "Template Id value",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

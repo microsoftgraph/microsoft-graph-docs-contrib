@@ -1,7 +1,7 @@
 ---
 title: "Create windowsMobileMSI"
 description: "Create a new windowsMobileMSI object."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
 ---

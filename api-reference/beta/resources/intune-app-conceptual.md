@@ -1,7 +1,7 @@
 ---
 title: "How to protect your company app data with Microsoft Intune - Microsoft Graph API"
 description: "Lists Microsoft Graph API for Intune endpoints (REST) that manage apps and their policies for a tenant organization."
-author: "tfitzmac"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -10,7 +10,7 @@ ms.prod: "intune"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
 
@@ -107,6 +107,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app content file upload state](intune-apps-mobileappcontentfileuploadstate.md)
 - [Mobile app dependecy type](intune-apps-mobileappdependecytype.md)
 - [Mobile app dependency](intune-apps-mobileappdependency.md)
+- [Mobile app dependency type](intune-apps-mobileappdependencytype.md)
 - [Mobile app install status](intune-apps-mobileappinstallstatus.md)
 - [Mobile app install summary](intune-apps-mobileappinstallsummary.md)
 - [Mobile app provisioning config group assignment](intune-apps-mobileappprovisioningconfiggroupassignment.md)
