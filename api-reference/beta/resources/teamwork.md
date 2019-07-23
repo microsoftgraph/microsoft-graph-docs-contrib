@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Teamwork is a container for the range of Microsoft Teams functionalities that are available for the organization.
+A container for the range of Microsoft Teams functionalities that are available for the organization.
 
 ## Properties
 
