@@ -28,9 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Places.Read.All |
+| Delegated (work or school account)     | Place.Read.All |
 | Delegated (personal Microsoft account) | Not supported |
-| Application                            | Places.Read.All |
+| Application                            | Place.Read.All |
 
 ## HTTP request
 
