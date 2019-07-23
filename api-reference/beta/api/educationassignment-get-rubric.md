@@ -1,5 +1,5 @@
 ---
-title: "Get rubric attached to assignment"
+title: "Get educationRubric attached to educationAssignment"
 description: "Get the educaitonRubric attached to an educationAssignment, if one exists."
 localization_priority: Normal
 author: "dipakboyed"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# List rubric
+# Get educationRubric attached to educationAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,8 +63,7 @@ GET https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
