@@ -74,7 +74,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added the **installedApps** property to the [chat](/api-reference/beta/resources/chat.md) resource.|
 | Addition | beta | Added navigation binding for **chats** property of the [user](/api-reference/beta/resources/user.md) resource.|
 | Addition | beta | Added the [teamwork](/api-reference/beta/resources/teamwork.md) resource and associated methods. |
-| Addition | beta | Added the [userTeamwork](/api-reference/beta/resources/userteamwork.md) resources and associated methods. |
+| Addition | beta | Added the [userTeamwork](/api-reference/beta/resources/userteamwork.md) resource and associated methods. |
 
 ## June 2019
 
