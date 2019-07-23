@@ -1,7 +1,7 @@
 ---
-title: "How to protect your company app data with Microsoft Intune"
-description: "Microsoft Intune app protection policies help protect your company data and prevent data loss."
-author: "tfitzmac"
+title: "Manage mobile apps with Microsoft Intune - Microsoft Graph API"
+description: "Lists the Microsoft Graph API for Intune endpoints (REST) related to mobile app management (MAM) for a tenant organization."
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 ---
@@ -10,7 +10,7 @@ ms.prod: "intune"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
 
@@ -20,6 +20,8 @@ The following Graph resources are available to manage app protection polices in 
 
 - [Android managed app protection](intune-mam-androidmanagedappprotection.md)
 - [Android managed app registration](intune-mam-androidmanagedappregistration.md)
+- [Android managed app safety net apps verification type](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Android managed app safety net device attestation type](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Android mobile app identifier](intune-mam-androidmobileappidentifier.md)
 - [App management level](intune-mam-appmanagementlevel.md)
 - [Application type](intune-wip-applicationtype.md)
@@ -37,6 +39,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app data transfer level](intune-mam-managedappdatatransferlevel.md)
 - [Managed app diagnostic status](intune-mam-managedappdiagnosticstatus.md)
 - [Managed app flagged reason](intune-mam-managedappflaggedreason.md)
+- [Managed app notification restriction](intune-mam-managedappnotificationrestriction.md)
 - [Managed app operation](intune-mam-managedappoperation.md)
 - [Managed app PIN character set](intune-mam-managedapppincharacterset.md)
 - [Managed app policy](intune-mam-managedapppolicy.md)

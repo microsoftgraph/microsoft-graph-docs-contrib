@@ -1,14 +1,14 @@
 ---
 title: "windowsMinimumOperatingSystem resource type"
 description: "The minimum operating system required for a Windows mobile app."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # windowsMinimumOperatingSystem resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -24,6 +24,8 @@ The minimum operating system required for a Windows mobile app.
 |v10_1703|Boolean|Windows 10 1703 or later.|
 |v10_1709|Boolean|Windows 10 1709 or later.|
 |v10_1803|Boolean|Windows 10 1803 or later.|
+|v10_1809|Boolean|Windows 10 1809 or later.|
+|v10_1903|Boolean|Windows 10 1903 or later.|
 
 ## Relationships
 None
@@ -44,9 +46,12 @@ Here is a JSON representation of the resource.
   "v10_1607": true,
   "v10_1703": true,
   "v10_1709": true,
-  "v10_1803": true
+  "v10_1803": true,
+  "v10_1809": true,
+  "v10_1903": true
 }
 ```
+
 
 
 

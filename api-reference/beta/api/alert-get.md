@@ -1,6 +1,6 @@
 ---
 title: "Get alert"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Retrieve the properties and relationships of an alert object"
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
@@ -8,7 +8,7 @@ ms.prod: "security"
 
 # Get alert
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of an [alert](../resources/alert.md) object.
 
@@ -49,6 +49,8 @@ If successful, this method returns a `200 OK` response code and an **alert** obj
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_alert"
@@ -57,6 +59,20 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-alert-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-alert-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-alert-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
@@ -103,6 +119,19 @@ Content-type: application/json
       "riskScore": "String"
     }
   ],
+  "historyStates": [
+    {
+      "appId": "appId-value",
+      "assignedTo": "assignedTo-value",
+      "comments": [
+        "comments-value"
+      ],
+      "feedback": "feedback-value",
+      "status": "status-value",
+      "updatedDateTime": "datetime-value",
+      "user": "user-value"
+    }
+  ],
   "hostStates": [
     {
       "fqdn": "String",
@@ -141,7 +170,7 @@ Content-type: application/json
       "natDestinationPort": "String",
       "natSourceAddress": "String",
       "natSourcePort": "String",
-      "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+      "protocol": "String",
       "riskScore": "String",
       "sourceAddress": "String",
       "sourcePort": "String",
@@ -231,10 +260,14 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get glert",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

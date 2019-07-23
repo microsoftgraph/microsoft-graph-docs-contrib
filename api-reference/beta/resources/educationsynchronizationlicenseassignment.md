@@ -8,7 +8,7 @@ ms.prod: "education"
 
 # educationSynchronizationLicenseAssignment resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the license information to assign to user accounts. The resource will be used to set up license assignments when creating new user accounts.
 
@@ -16,7 +16,7 @@ Represents the license information to assign to user accounts. The resource will
 
 | Property | Type | Description |
 |:-|:-|:-|
-| **appliesTo** | string | The user role type to assign to license. Possible values are: `student`, `teacher`.         |
+| **appliesTo** | string | The user role type to assign to license. Possible values are: `student`, `teacher`, `faculty`.         |
 | **skuIds** | collection of strings |  Represents the SKU identifiers of the licenses to assign.        |
 
 ## JSON representation

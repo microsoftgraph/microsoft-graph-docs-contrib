@@ -1,14 +1,14 @@
 ---
 title: "remoteAction enum type"
 description: "Remote actions Intune supports."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # remoteAction enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -36,6 +36,9 @@ Remote actions Intune supports.
 |updateDeviceAccount|16|User initiates an action to update account on device.|
 |automaticRedeployment|17|User initiates an action to automatice redeploy the device|
 |shutDown|18|User initiates an action to shut down the device.|
+|rotateFileVaultKey|20|User initiates an action to Rotate FileVaultKey on mac.|
+|getFileVaultKey|21|User initiates an action to Get FileVaultKey on mac.|
+
 
 
 

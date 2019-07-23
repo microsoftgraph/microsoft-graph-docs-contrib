@@ -1,14 +1,14 @@
 ---
 title: "androidWiFiSecurityType enum type"
 description: "Wi-Fi Security Types for Android."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # androidWiFiSecurityType enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -18,7 +18,9 @@ Wi-Fi Security Types for Android.
 |Member|Value|Description|
 |:---|:---|:---|
 |open|0|Open (No Authentication).|
-|wpaEnterprise|1|WPA-Enterprise/WPA2-Enterprise. Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.|
+|wpaEnterprise|1|WPA-Enterprise. Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.|
+|wpa2Enterprise|2|WPA2-Enterprise. Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.|
+
 
 
 

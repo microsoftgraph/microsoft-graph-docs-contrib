@@ -1,14 +1,14 @@
 ---
 title: "omaSettingInteger resource type"
 description: "OMA Settings Integer definition."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # omaSettingInteger resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -24,6 +24,7 @@ Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Int32|Value.|
+|isReadOnly|Boolean|By setting to true, the CSP (configuration service provider) specified in the OMA-URI will perform a get, instead of set|
 
 ## Relationships
 None
@@ -41,9 +42,11 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
-  "value": 1024
+  "value": 1024,
+  "isReadOnly": true
 }
 ```
+
 
 
 

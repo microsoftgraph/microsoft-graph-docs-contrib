@@ -1,14 +1,14 @@
 ---
 title: "androidForWorkAppConfigurationSchemaItemDataType enum type"
 description: "Data type for a configuration item inside an Android for Work application's custom configuration schema"
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # androidForWorkAppConfigurationSchemaItemDataType enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -25,6 +25,7 @@ Data type for a configuration item inside an Android for Work application's cust
 |bundle|5|Not yet documented|
 |bundleArray|6|Not yet documented|
 |hidden|7|Not yet documented|
+
 
 
 

@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # Use the Microsoft Graph API to work with Project Rome 
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) is a Microsoft initiative to build a platform that enables app developers to build great cross-device experiences. Project Rome enables different capabilities that connect different services and client endpoints when the user signs in with the same Microsoft account or work or school account. This allows you to implement cross-device and cross-platform experiences that are centered around user tasks rather than devices. 
 
@@ -48,12 +48,4 @@ You can use the following Microsoft Graph APIs to communicate with other Windows
 - [List the user's devices](../api/user-list-devices.md)
 - [Send a command to a device](../api/send-device-command.md)
 - [Get command status](../api/get-device-command-status.md)
-
-## Notifications
-
-You can use the notifications APIs in Microsoft Graph to deliver notifications across multiple endpoints that the same user is signed in on. You can target a user directly when posting notifications instead of worrying about device addresses/channels. This way, you can focus on designing the right notification scenarios in a human-centric, rather than a device-centric way. 
-
-You can publish a raw data notification or a direct visual notification. When a raw data notification is delivered to a device endpoint, you can then use the [client SDK](https://github.com/Microsoft/project-rome) (Microsoft Graph notifications SDK for Windows, Project Rome SDK for iOS and Android) to receive and manage notifications. When a direct visual notification is delivered to a device endpoint, it shows the platform-specific native notification to the user. 
-
-For details, see [Create and send a notification](../api/projectrome-notification-post.md).
 

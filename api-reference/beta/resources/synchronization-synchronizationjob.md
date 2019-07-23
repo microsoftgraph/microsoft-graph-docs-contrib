@@ -2,11 +2,13 @@
 title: "synchronizationJob resource type"
 description: "Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory. The synchronization job is always specific to a particular instance of an application in your tenant. As part of the synchronization job setup, you need to give authorization to read and write objects in your target directory, and customize the job's synchronization schema."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # synchronizationJob resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory. The synchronization job is always specific to a particular instance of an application in your tenant. As part of the synchronization job setup, you need to give authorization to read and write objects in your target directory, and customize the job's synchronization schema.
 
@@ -21,8 +23,8 @@ Performs synchronization by periodically running in the background, polling for 
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |None   |Force the job to start over and re-process all the objects in the directory.|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |None   |Temporarily stop synchronization. All the progress, including job state, is persisted, and the job will continue from where it left off when a [Start](../api/synchronization-synchronizationjob-start.md) call is made.|
 |[Delete](../api/synchronization-synchronizationjob-delete.md)        |None   |Stop synchronization, and permanently delete all the state associated with the job.|
-|[Get synchrnoizationSchema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Retrieve the job's effective synchronization schema.|
-|[Update synchroizationSchema](../api/synchronization-synchronizationschema-update.md)    |None   |Update the job's synchronization schema. |
+|[Get synchronizationSchema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Retrieve the job's effective synchronization schema.|
+|[Update synchronizationSchema](../api/synchronization-synchronizationschema-update.md)    |None   |Update the job's synchronization schema. |
 |[Validate credentials](../api/synchronization-synchronizationjob-validatecredentials.md)|None|Test provided credentials against target directory.|
 
 ## Properties
@@ -48,6 +50,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.synchronizationJob"
 }-->
 
@@ -63,10 +66,13 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationJob resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

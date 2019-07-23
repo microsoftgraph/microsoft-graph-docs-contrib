@@ -1,14 +1,14 @@
 ---
 title: "appleVpnConnectionType enum type"
 description: "Apple VPN connection type."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # appleVpnConnectionType enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -31,6 +31,8 @@ Apple VPN connection type.
 |f5Access2018|11|F5 Access 2018.|
 |citrixSso|12|Citrix Sso.|
 |paloAltoGlobalProtectV2|13|Palo Alto Networks GlobalProtect V2.|
+|ikEv2|14|IKEv2.|
+
 
 
 

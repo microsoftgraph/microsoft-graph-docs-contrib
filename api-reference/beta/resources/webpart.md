@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # webPart resource
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).
 
@@ -22,10 +22,8 @@ The **webPart** resource represents type and rendering information for a web par
 
 ```json
 {
-  "type": "string (guid)",
-  "data": {
-    "instanceId": "string (guid) (optional)"
-  }
+  "type": "string (identifier)",
+  "data": {"@odata.type":"microsoft.graph.sitePageData"}
 }
 ```
 
@@ -43,10 +41,13 @@ The **webPart** resource represents type and rendering information for a web par
 Web parts can define their own required properties under **data**.
 
 For more information about pages, see [sitePage](sitepage.md).
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Defines a control resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Control"
-} -->
+  "tocPath": "Control",
+  "suppressions": []
+}
+-->

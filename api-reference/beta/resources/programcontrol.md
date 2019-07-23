@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # programControl resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 In the Azure AD [access reviews](accessreviews-root.md) feature, the program control object represents a control, linking an access review to a program.
 
@@ -18,14 +18,6 @@ In the Azure AD [access reviews](accessreviews-root.md) feature, the program con
 |[Create programControl](../api/programcontrol-create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
 |[Delete programControl](../api/programcontrol-delete.md) |		None.	|	Remove a programControl from a program.|
 |[List programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) collection| List controls across all programs in the tenant.|
-
-## Permissions
-
-|Permission type                        | Permissions (from least to most privileged)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -73,8 +65,8 @@ Here is a JSON representation of the resource.
  "displayName": "string",
  "status": "string",
  "createdDateTime": "string (timestamp)",
- "owner": "microsoft.graph.userIdentity",
- "resource":"microsoft.graph.programResource"
+ "owner": {"@odata.type":"microsoft.graph.userIdentity"},
+ "resource":{"@odata.type":"microsoft.graph.programResource"}
 }
 
 ```
@@ -89,11 +81,31 @@ This type inherits from `microsoft.graph.identity` and has one additional proper
 |:---------------|:--------|:----------|
 | `type`               |`String`  | Type of the resource, indicating whether it is a group or an app. |     
 
+## JSON representation
+
+Here is a JSON representation of the resource.
 
 <!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.programResource"
+}-->
+
+```json
+{
+ "type": "string"
+}
+
+```
+<!--
+{
   "type": "#page.annotation",
   "description": "programControl resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

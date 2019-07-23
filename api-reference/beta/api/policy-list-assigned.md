@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # List Policies assigned to Application or Service Principal
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the [policy](../resources/policy.md) objects assigned to an application or service principal.
 

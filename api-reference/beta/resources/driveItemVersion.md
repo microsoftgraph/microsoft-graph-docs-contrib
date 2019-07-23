@@ -1,6 +1,6 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/17/2017
 title: DriveItemVersion
 localization_priority: Normal
@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 ---
 # DriveItemVersion resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).
 
@@ -22,7 +22,7 @@ The following tasks are available for driveItemVersion resources.
 | [List versions][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md
@@ -33,15 +33,16 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemVersion", "@type.aka": "oneDrive.driveItemVersion" } -->
+<!-- { "blockType": "resource","keyProperty":"id", "@odata.type": "microsoft.graph.driveItemVersion", "@type.aka": "oneDrive.driveItemVersion" } -->
 
 ```json
 {
-  "content": { "@odata.type": "Edm.Stream" },
+  "content": {"@odata.type": "Edm.Stream"},
   "id": "string",
-  "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "2016-01-01T15:20:01.125Z",
-  "publication": { "@odata.type": "microsoft.graph.publicationFacet" }
+  "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
+  "size": 12356
 }
 ```
 
@@ -63,10 +64,13 @@ The following table defines the relationships that the **driveItemVersion** reso
 | :---------------- | :----- | :--------------------------------- |
 | **content**       | Stream | The content stream of the version. |
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The version facet provides information about the properties of a file version.",
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
-  "tocPath": "Facets/Version"
-} -->
+  "tocPath": "Facets/Version",
+  "suppressions": []
+}
+-->

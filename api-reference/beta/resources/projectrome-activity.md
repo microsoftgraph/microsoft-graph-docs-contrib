@@ -7,7 +7,7 @@ ms.prod: "project-rome"
 
 # activity resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a single activity within an app - for example, a TV show, a document, or a current campaign in a video game. When a user engages with that activity, the engagement is captured as a [history item](projectrome-historyitem.md) that indicates the start and end time for that activity. As the user re-engages with that activity over time, multiple history items are recorded for a single user activity.
 
@@ -43,7 +43,7 @@ Your user activities will be showcased in Cortana and Windows Timeline user expe
 |visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Required. The object containing information to render the activity in the UX.|
 |contentInfo | Untyped JSON object | Optional. A custom piece of data - JSON-LD extensible description of content according to [schema.org](https://schema.org) syntax.|
 |expirationDateTime | DateTimeOffset | Set by the server. DateTime in UTC when the object expired on the server.|
-|status | EnumType | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
+|status | string | Set by the server. A status code used to identify valid objects. Values: active, updated, deleted, ignored.|
 
 ## Relationships
 
@@ -66,6 +66,7 @@ Here is a JSON representation of the resource.
     "visualElements",
     "historyItems"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.activity"
 }-->
 
@@ -82,7 +83,7 @@ Here is a JSON representation of the resource.
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "EnumType",
+    "status": "string",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]
@@ -91,10 +92,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "activity resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

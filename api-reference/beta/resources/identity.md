@@ -1,13 +1,13 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/14/2017
 title: Identity
 localization_priority: Normal
 ---
 # identity resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Identity** resource represents an identity of an _actor_.
 For example, an actor can be a user, device, or application.
@@ -40,10 +40,13 @@ In this case, the **displayName** property for the identity will be returned, bu
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Identity contains information about an app, user, or group.",
   "keywords": "identity,owner,modifier,app,user,group",
   "section": "documentation",
-  "tocPath": "Resources/Identity"
-} -->
+  "tocPath": "Resources/Identity",
+  "suppressions": []
+}
+-->

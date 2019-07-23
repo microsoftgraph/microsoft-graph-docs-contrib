@@ -1,14 +1,14 @@
 ---
 title: "deviceManagementSubscriptionState enum type"
 description: "Tenant mobile device management subscription state."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # deviceManagementSubscriptionState enum type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -24,6 +24,7 @@ Tenant mobile device management subscription state.
 |deleted|4|Deleted|
 |blocked|5|Blocked|
 |lockedOut|8|LockedOut|
+
 
 
 

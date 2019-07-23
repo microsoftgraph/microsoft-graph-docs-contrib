@@ -1,21 +1,21 @@
 ---
 title: "List windowsKioskConfigurations"
 description: "List properties and relationships of the windowsKioskConfiguration objects."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # List windowsKioskConfigurations
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 List properties and relationships of the [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) objects.
 
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2136
+Content-Length: 3366
 
 {
   "value": [
@@ -70,6 +70,27 @@ Content-Length: 2136
         "Role Scope Tag Ids value"
       ],
       "supportsScopeTags": true,
+      "deviceManagementApplicabilityRuleOsEdition": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsEdition",
+        "osEditionTypes": [
+          "windows10EnterpriseN"
+        ],
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleOsVersion": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleOsVersion",
+        "minOSVersion": "Min OSVersion value",
+        "maxOSVersion": "Max OSVersion value",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
+      "deviceManagementApplicabilityRuleDeviceMode": {
+        "@odata.type": "microsoft.graph.deviceManagementApplicabilityRuleDeviceMode",
+        "deviceMode": "sModeConfiguration",
+        "name": "Name value",
+        "ruleType": "exclude"
+      },
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "description": "Description value",
       "displayName": "Display Name value",
@@ -87,12 +108,14 @@ Content-Length: 2136
                 "startLayoutTileSize": "small",
                 "name": "Name value",
                 "appType": "store",
+                "autoLaunch": true,
                 "appUserModelId": "App User Model Id value",
                 "appId": "App Id value",
                 "containedAppId": "Contained App Id value"
               }
             ],
             "showTaskBar": true,
+            "allowAccessToDownloadsFolder": true,
             "disallowDesktopApps": true,
             "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
           },
@@ -115,11 +138,19 @@ Content-Length: 2136
         "Kiosk Browser Blocked Url Exceptions value"
       ],
       "edgeKioskEnablePublicBrowsing": true,
-      "edgeKioskResetAfterIdleTimeInMinutes": 4
+      "windowsKioskForceUpdateSchedule": {
+        "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+        "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+        "recurrence": "daily",
+        "dayofWeek": "monday",
+        "dayofMonth": 10,
+        "runImmediatelyIfAfterStartDateTime": true
+      }
     }
   ]
 }
 ```
+
 
 
 

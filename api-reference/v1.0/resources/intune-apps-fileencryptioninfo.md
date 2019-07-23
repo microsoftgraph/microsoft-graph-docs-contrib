@@ -3,14 +3,15 @@ title: "fileEncryptionInfo resource type"
 description: "Contains properties for file encryption information for the content version of a line of business app."
 author: "tfitzmac"
 localization_priority: Normal
-ms.prod: "intune"
+ms.prod: "Intune"
 ---
 
 # fileEncryptionInfo resource type
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Contains properties for file encryption information for the content version of a line of business app.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -18,12 +19,13 @@ Contains properties for file encryption information for the content version of a
 |initializationVector|Binary|The initialization vector used for the encryption algorithm.|
 |mac|Binary|The hash of the encrypted file content + IV (content hash).|
 |macKey|Binary|The key used to get mac.|
-|profileIdentifier|String|The the profile identifier.|
+|profileIdentifier|String|The profile identifier.|
 |fileDigest|Binary|The file digest prior to encryption.|
 |fileDigestAlgorithm|String|The file digest algorithm.|
 
 ## Relationships
 None
+
 ## JSON Representation
 Here is a JSON representation of the resource.
 <!-- {

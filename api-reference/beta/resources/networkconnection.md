@@ -6,7 +6,7 @@ localization_priority: Normal
 
 # networkConnection resource type
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contains stateful information about the network connection related to the alert.
 
@@ -26,12 +26,40 @@ Contains stateful information about the network connection related to the alert.
 |natDestinationPort|String|Network Address Translation destination port.|
 |natSourceAddress|String|Network Address Translation source IP address.|
 |natSourcePort|String|Network Address Translation source port.|
-|protocol|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|Network protocol. Possible values are: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
+|protocol|securityNetworkProtocol|Network protocol. Possible values are: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|Provider generated/calculated risk score of the network connection. Recommended value range of 0-1, which equates to a percentage.|
 |sourceAddress|String|Source (i.e. origin) IP address (of the network connection).|
 |sourcePort|String|Source (i.e. origin) IP port (of the network connection).|
 |status|connectionStatus|Network connection status. Possible values are: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
 |urlParameters|String|Parameters (suffix) of the destination URL.|
+
+### securityNetworkProtocol values
+
+|Member|Value|Description|
+|:---|:---|:---|
+|unknown|-1|Unknown protocol.|
+|ip|0|Internet Protocol.|
+|icmp|1| Internet Control Message Protocol.|
+|igmp|2| Internet Group Management Protocol.|
+|ggp|3| Gateway To Gateway Protocol.|
+|ipv4|4| Internet Protocol version 4.|
+|tcp|6| Transmission Control Protocol.|
+|pup|12| PARC Universal Packet Protocol.|
+|udp|17| User Datagram Protocol.|
+|idp|22| Internet Datagram Protocol.|
+|ipv6|41| Internet Protocol version 6 (ipv6).|
+|ipv6RoutingHeader|43| ipv6 Routing header.|
+|ipv6FragmentHeader|44| ipv6 Fragment header.|
+|ipSecEncapsulatingSecurityPayload|50| ipv6 Encapsulating Security Payload header.|
+|ipSecAuthenticationHeader|51| ipv6 Authentication header.|
+|icmpV6|58| Internet Control Message Protocol for ipv6.|
+|ipv6NoNextHeader|59| ipv6 No next header.|
+|ipv6DestinationOptions|60| ipv6 Destination Options header.|
+|nd|77| Net Disk Protocol (unofficial).|
+|raw|255| Raw IP packet protocol.|
+|ipx|1000| Internet Packet Exchange Protocol.|
+|spx|1256| Sequenced Packet Exchange protocol.|
+|spxII|1257| Sequenced Packet Exchange version 2 protocol.|
 
 ## JSON representation
 
@@ -52,18 +80,18 @@ The following is a JSON representation of the resource.
   "destinationDomain": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
-  "direction": "@odata.type: microsoft.graph.connectionDirection",
+  "direction": "String",
   "domainRegisteredDateTime": "String (timestamp)",
   "localDnsName": "String",
   "natDestinationAddress": "String",
   "natDestinationPort": "String",
   "natSourceAddress": "String",
   "natSourcePort": "String",
-  "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+  "protocol": "string",
   "riskScore": "String",
   "sourceAddress": "String",
   "sourcePort": "String",
-  "status": "@odata.type: microsoft.graph.connectionStatus",
+  "status": "String",
   "urlParameters": "String"
 }
 
@@ -71,10 +99,13 @@ The following is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "networkConnection resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

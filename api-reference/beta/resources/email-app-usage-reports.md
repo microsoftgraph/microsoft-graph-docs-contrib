@@ -2,13 +2,13 @@
 title: "Email app usage reports"
 description: "You can see how many email apps are used to connect to Exchange Online. You can also see which versions of Outlook apps are used which will enable you to follow up with users who should upgrade to supported Outlook versions."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "pranoychaudhuri"
 ms.prod: "reports"
 ---
 
 # Email app usage reports
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 You can see how many email apps are used to connect to Exchange Online. You can also see which versions of Outlook apps are used which will enable you to follow up with users who should upgrade to supported Outlook versions.
 

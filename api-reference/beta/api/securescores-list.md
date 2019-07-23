@@ -1,12 +1,12 @@
 ---
 title: "List secureScores"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Retrieve the properties and relationships of a secureScores object."
 localization_priority: Normal
 ---
 
 # List secureScores
 
- > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.
 
@@ -47,6 +47,8 @@ If successful, this method returns a `200 OK` response code and a **secureScores
 ### Request
 
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securescores_list"
@@ -55,30 +57,44 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/securescores-list-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/securescores-list-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/securescores-list-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.secureScores"
+  "truncated": true,
+  "isCollection":true,
+  "@odata.type": "microsoft.graph.secureScore"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
-
 {
     "value": [
         {
-            "activeUserCount": "activeUserCount.value",
+            "activeUserCount": 1,
             "createdDateTime": "createdDateTime.value",
-            "currentScore": "currentScore.value",
+            "currentScore": 1,
             "enabledServices": "enabledServices.value",
-            "licensedUserCount": "licensedUserCount.value",
-            "maxScore": "maxScore.value",
+            "licensedUserCount": 1,
+            "maxScore": 1,
             "id": "id.value",
             "azureTenantId": "azureTenantId.value",
             "averageComparativeScores": [
@@ -119,16 +135,20 @@ Content-type: application/json
                 }
             ]
         }
-    ]            
+    ]
 }
 
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List secureScores",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

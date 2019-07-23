@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # event: delta
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events)
 of the user's primary calendar.
@@ -80,6 +80,8 @@ in the response body to 2.
 To track changes in a calendar view, you would make one or more **delta** function calls, with
 appropriate [state tokens](/graph/delta-query-overview), to get the set of incremental changes since the last delta query.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_delta"
@@ -89,6 +91,16 @@ GET https://graph.microsoft.com/beta/me/calendarview/delta?startdatetime={start_
 
 Prefer: odata.maxpagesize=2
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/event-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/event-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_
@@ -135,10 +147,14 @@ Content-length: 359
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

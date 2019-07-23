@@ -1,13 +1,13 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Shared
 localization_priority: Normal
 ---
 # Shared resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The **Shared** resource indicates a DriveItem has been shared with others.
 The resource includes information about how the item is shared.
@@ -52,10 +52,13 @@ If a [**Driveitem**](driveitem.md) has a non-null **shared** facet, the item has
 
 For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The shared facet provides info about shared items.",
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Shared"
-} -->
+  "tocPath": "Facets/Shared",
+  "suppressions": []
+}
+-->

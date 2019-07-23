@@ -8,7 +8,7 @@ ms.prod: "education"
 
 # Working with education APIs in Microsoft Graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The education APIs in Microsoft Graph enhance Office 365 resources and data with information that is relevant for education scenarios, including schools, students, teachers, classes, enrollments, and assignments. This makes it easy for you to build solutions that integrate with educational resources.
 
@@ -59,7 +59,7 @@ The rostering APIs support the following scenarios:
 - [List all schools](../api/educationroot-list-schools.md) 
 - [List schools in which a class is taught](../api/educationclass-list-schools.md)
 - [List schools for a user](../api/educationuser-list-schools.md)
-- [Get all classes](../api/educationroot_list_classes.md )
+- [Get all classes](../api/educationroot-list-classes.md )
 - [Get classes in a school](../api/educationschool-list-classes.md)
 - [List classes for a user](../api/educationuser-list-classes.md)
 - [Add classes to a school](../api/educationschool-post-classes.md)

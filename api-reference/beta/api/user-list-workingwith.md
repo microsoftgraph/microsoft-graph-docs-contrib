@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # List workingWith
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Calculated insight for the list of users that a user has been working with.
 

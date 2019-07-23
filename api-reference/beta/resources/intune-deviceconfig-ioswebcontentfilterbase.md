@@ -1,14 +1,14 @@
 ---
 title: "iosWebContentFilterBase resource type"
 description: "Represents an iOS Web Content Filter setting base type. An empty and abstract base. Caller should use one of derived types for configurations."
+author: "rolyon"
 localization_priority: Normal
-author: "tfitzmac"
 ms.prod: "Intune"
 ---
 
 # iosWebContentFilterBase resource type
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -33,6 +33,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.iosWebContentFilterBase"
 }
 ```
+
 
 
 
