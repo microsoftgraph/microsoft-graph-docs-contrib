@@ -546,7 +546,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Identity Risk Event permissions
+## Identity risk event permissions
 
 #### Delegated permissions
 
@@ -580,7 +580,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ---
 
 
-## Identity Risky User permissions
+## Identity risky user permissions
 
 #### Delegated permissions
 
@@ -942,6 +942,22 @@ The People.Read.All permission is only valid for work and school accounts.
 * _People.Read.All_: Read a list of relevant people to another user in the same organization (`GET /users('{id})/people`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Places permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Place.Read.All_ |Read all company places |Allows the app to read company places (conference rooms and room lists) for calendar events and other applications. |No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Place.Read.All_ |   Read all company places | Allows the app to read company places (conference rooms and room lists) for calendar events and other applications.| Yes |
 
 ---
 
