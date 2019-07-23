@@ -133,7 +133,7 @@ HTTP/1.1 200 OK
        "updateWindow" :
           {
             "updateWindowStartTime" : "0:00:00",
-            "updateWindowEndTime" : "23:59:00"
+            "updateWindowEndTime" : "23:59:00.0000000"
           },
        "allowUpdateConfigurationOverride" : false
   }
