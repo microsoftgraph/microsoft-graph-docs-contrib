@@ -811,9 +811,9 @@
             href: api/participant-invite.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
-        - name: Unmute itself
+        - name: Unmute application
           href: api/call-unmute.md
-        - name: Mute itself
+        - name: Mute application
           href: api/call-mute.md
         - name: Update metadata
           href: api/call-updatemetadata.md
