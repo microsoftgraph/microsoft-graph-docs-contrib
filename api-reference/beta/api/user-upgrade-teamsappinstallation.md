@@ -52,7 +52,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "close_excel_session"
+  "name": "User_upgrade_teamsApp"
 }-->
 ```http
 POST /users/{id}/teamwork/installedApps/{id}/upgrade

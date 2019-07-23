@@ -56,6 +56,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 #### Request
 
 The following is an example of the request.
+<!-- {
+  "blockType": "ignored",
+  "name": "user_list_teamsApps"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
@@ -91,7 +95,10 @@ The following example gets the names of the installed apps.
 #### Request
 
 The following is an example of the request.
-
+<!-- {
+  "blockType": "ignored",
+  "name": "user_list_teamsApps"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition
 ```
@@ -145,3 +152,13 @@ Content-length: 55
   ]
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "User list teamsAppInstallations",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

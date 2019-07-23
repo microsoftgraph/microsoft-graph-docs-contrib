@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id}/teamwork/installedApps
 ```
@@ -52,7 +52,10 @@ If successful, this method returns a `201 OK` response code.
 ### Request
 
 The following is an example of the request.
-
+<!-- {
+  "blockType": "ignored",
+  "name": "user_add_teamsApp"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 {
@@ -78,3 +81,13 @@ HTTP/1.1 201 OK
 Content-type: application/json
 Content-length: 0
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "User add teamsAppInstallations",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
