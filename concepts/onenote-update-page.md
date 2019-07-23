@@ -53,6 +53,9 @@ Your changes are sent in the message body as an array of JSON change objects. Ea
 
 The following array defines two changes. The first inserts an image above a paragraph as a sibling, and the second appends an item to a list as a last child.
 
+> [!NOTE]
+> When updating an image on a OneNote page, you can't use www links. The service won't try to download random resources. Instead, the image must be part of the request, either by an image-data-url or a part-name of a multipart request.
+
 ```json
 [
    {
