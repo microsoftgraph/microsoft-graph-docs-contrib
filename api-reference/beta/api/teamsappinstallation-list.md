@@ -57,13 +57,13 @@ The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "get_owners"
 }-->
-
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-owners-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

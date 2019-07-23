@@ -55,7 +55,7 @@ The following is an example of the request.
   "name": "get_teamsApp"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/installedApps
+POST https://graph.microsoft.com/beta/teams/12345678-9abc-def0-123456789a/installedApps
 {
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }

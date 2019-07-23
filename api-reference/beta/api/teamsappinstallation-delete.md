@@ -49,7 +49,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "upgrade_teamsApp"
 }-->
 ```http
