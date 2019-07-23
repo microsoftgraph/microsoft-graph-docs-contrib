@@ -49,8 +49,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "upgrade_teamsApp"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
@@ -62,9 +62,8 @@ The following is an example of the response.
 
 > **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.team"
 } -->
 ```http
 HTTP/1.1 204 No Content
