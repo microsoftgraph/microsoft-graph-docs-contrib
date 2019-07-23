@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 | clientContext  | String  | The client context. |
 
 ## Response
-Returns `200 OK` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
+Returns `200 OK` response code.
 
 ## Example
 The following example shows how to call this API.
@@ -90,7 +90,6 @@ Content-Length: 46
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/app/calls/421f1100-411f-4a29-8514-dbbb9caff45a/operations/ea91863c-d0a6-4de0-b73a-4c8d63da5d87
 
 {
   "id": "ea91863c-d0a6-4de0-b73a-4c8d63da5d87",
