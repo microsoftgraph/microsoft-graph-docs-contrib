@@ -1,6 +1,6 @@
 ---
 title: "Install app for user"
-description: "Installs an app in the personal scope of the specified user."
+description: "Install an app in the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -64,7 +64,7 @@ POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 
 The following is an example of the response.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
