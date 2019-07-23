@@ -51,8 +51,8 @@ If successful, this method returns a `200 OK` response code.
 
 The following is an example of the request.
 <!-- {
-  "blockType": "request",
-  "name": "get_teamsApp"
+  "blockType": "ignored",
+  "name": "add_teamsApp"
 }-->
 ```http
 POST /teams/87654321-0abc-zqf0-321456789q/installedApps
