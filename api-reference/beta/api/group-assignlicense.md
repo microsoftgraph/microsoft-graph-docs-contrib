@@ -1,0 +1,129 @@
+---
+title: "assignLicense"
+description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group. To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory."
+localization_priority: Normal
+author: "SumitParikh"
+ms.prod: "microsoft-identity-platform"
+---
+
+# assignLicense
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+
+To get the subscriptions available in the directory, perform a [GET subscribedSkus request](subscribedsku-list.md).
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Group.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Group.ReadWrite.All, Directory.ReadWrite.All |
+
+## HTTP request
+<!-- { "blockType": "ignored" } -->
+```http
+POST /groups/{group_id}/assignLicense
+```
+## Request headers
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
+
+## Request body
+In the request body, provide a JSON object with the following parameters.
+
+| Parameter	   | Type	|Description|
+|:---------------|:--------|:----------|
+|addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.|
+|removeLicenses|Guid collection|A collection of skuIds that identify the licenses to remove.|
+
+## Response
+
+If successful, this method returns `202 Accepted` response code and target [group](../resources/group.md) object in the response body.
+
+## Example
+Add licenses to the group.
+##### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "group_assignlicense"
+}-->
+```http
+POST https://graph.microsoft.com/beta/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
+Content-type: application/json
+
+
+{
+  "addLicenses": [
+    {
+      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
+      "skuId": "skuId-value-1"
+    },
+    {
+      "disabledPlans": [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
+      "skuId": "skuId-value-2"
+    }
+  ],
+  "removeLicenses": []
+}
+```
+
+
+## Example
+Remove licenses from the group.
+
+##### Request
+```http
+POST https://graph.microsoft.com/beta/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
+Content-type: application/json
+
+
+{
+  "addLicenses": [],
+  "removeLicenses": ["skuId-value-1", "skuId-value-2"]
+}
+```
+
+##### Response
+In both examples, the response is the updated group object. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 202 Accepted
+Content-type: application/json
+
+
+{
+  "id": "1ad75eeb-7e5a-4367-a493-9214d90d54d0",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-04-18T22:05:03Z",
+  "creationOptions": [],
+  "securityEnabled": true,
+
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "group: assignLicense",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
