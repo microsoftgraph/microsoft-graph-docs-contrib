@@ -6,7 +6,7 @@ author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
 ---
 
-# assignLicense
+# user: assignLicense
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

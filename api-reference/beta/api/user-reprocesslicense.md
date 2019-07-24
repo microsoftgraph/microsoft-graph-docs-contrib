@@ -1,16 +1,17 @@
 ---
 title: "reprocessLicenseAssignment"
-description: "After you resolve any license assignment errors on a user caused by group-based licensing you can reprocess all group based license assignments for the user using reprocessLicenseAssignment. To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory. Also see Identify and resolve license assignment problems for a group in Azure Active Directory for more details."
+description: "After you resolve any license assignment errors on a user caused by group-based licensing you can reprocess all group based license assignments for the user using reprocessLicenseAssignment."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
-# reprocessLicenseAssignment
+# user: reprocessLicenseAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-After you resolve any license assignment errors on a user caused by group-based licensing you can reprocess all group based license assignments for the user using reprocessLicenseAssignment. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Also see [Identify and resolve license assignment problems for a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) for more details.
+Reprocess all group-based license assignments for the user. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Also see [Identify and resolve license assignment problems for a group in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) for more details.
 
 
 ## Permissions
@@ -34,8 +35,8 @@ POST /users/{user_id}/reprocessLicenseAssignment
 If successful, this method returns `200 OK` response code and an updated [user](../resources/user.md) object in the response body.
 
 ## Example
-Reprocess license assignments for the user.
-##### Request
+The following example shows how to reprocess license assignments for the user.
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -47,8 +48,10 @@ POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 
 ```
 
-##### Response
-The response is the updated user object. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The response is the updated user object.
+
+**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

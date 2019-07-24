@@ -11,6 +11,14 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## September 2019
+
+### Identity and access
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | beta | Added the [group: assignLicense API](../api-reference/beta/api/group-assignlicense.md), which can be used to assign license to a [group](../api-reference/beta/resources/group.md). |
+| Addition | beta | Added the [user: reprocessLicenseAssignment API](../api-reference/beta/api/user-reprocesslicense.md), which can be used to reprocess all group-based license assignments for the [user](../api-reference/beta/resources/user.md). |
+
 ## June 2019
 
 ### Identity Protection APIs

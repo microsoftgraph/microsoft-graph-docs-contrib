@@ -2,11 +2,12 @@
 title: "assignLicense"
 description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group. To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory."
 localization_priority: Normal
-author: "SumitParikh"
+author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
 ---
 
-# assignLicense
+# group: assignLicense
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,15 +41,17 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addLicenses|[assignedLicense](../resources/assignedlicense.md) collection|A collection of [assignedLicense](../resources/assignedlicense.md) objects that specify the licenses to add. You can disable servicePlans associated with a license by setting the **disabledPlans** property on an [assignedLicense](../resources/assignedlicense.md) object.|
-|removeLicenses|Guid collection|A collection of skuIds that identify the licenses to remove.|
+|removeLicenses|GUID collection|A collection of skuIds that identify the licenses to remove.|
 
 ## Response
 
 If successful, this method returns `202 Accepted` response code and target [group](../resources/group.md) object in the response body.
 
-## Example
+## Examples
+
+### Example 1
 Add licenses to the group.
-##### Request
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,10 +79,10 @@ Content-type: application/json
 ```
 
 
-## Example
+### Example 2
 Remove licenses from the group.
 
-##### Request
+#### Request
 ```http
 POST https://graph.microsoft.com/beta/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
 Content-type: application/json
@@ -91,8 +94,10 @@ Content-type: application/json
 }
 ```
 
-##### Response
-In both examples, the response is the updated group object. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+In both examples, the response is the updated group object.
+
+**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call..
 <!-- {
   "blockType": "response",
   "truncated": true,
