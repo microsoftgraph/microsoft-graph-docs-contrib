@@ -68,6 +68,36 @@ For more information about administrator roles, see [Assigning administrator rol
 
 ---
 
+## Administrative Units permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _AdministrativeUnit.Read.All_ |   Read administrative units  | Allows the app to read administrative units and administrative unit membership on behalf of the signed-in user. | Yes | No |
+| _AdministrativeUnit.ReadWrite.All_ |   Read and write administrative units  | Allows the app to create, read, update, and delete administrative units and manage administrative unit membership on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AdministrativeUnit.Read.All_ |   Read all administrative units | Allows the app to read administrative units and administrative unit membership without a signed-in user. | Yes |
+| _AdministrativeUnit.ReadWrite.All_ |   Read and write all administrative units | Allows the app to create, read, update, and delete administrative units and manage administrative unit membership without a signed-in user. | Yes |
+
+### Remarks
+
+_AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ are valid only for work or school accounts.
+
+### Example usage
+
+- _AdministrativeUnit.Read.All_: Read administrative units and administrative unit membership (`GET /beta/administrativeUnits`)
+- _AdministrativeUnit.ReadWrite.All_: Create, read, update, and delete administrative units and manage administrative unit membership  (`PATCH /beta/administrativeUnits`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
 ## AppCatalog resource permissions
 
 #### Delegated permissions
@@ -1035,8 +1065,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 Role management permissions are only valid for work or school accounts.
 
 ### Example usage
-
-#### Application
 
 - _RoleManagement.Read.Directory_: Read the role-based access control (RBAC) settings for your company's directory (`GET /v1.0/directoryRoles`)
 - _RoleManagement.ReadWrite.Directory_: Read and manage the role-based access control (RBAC) settings for your company's directory  (`PATCH /v1.0/directoryRoles`)
