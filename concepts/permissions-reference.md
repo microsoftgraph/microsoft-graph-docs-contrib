@@ -682,6 +682,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_       |    Read mail in all mailboxes | Allows the app to read mail in all mailboxes without a signed-in user.| Yes |
+| _Mail.ReadBasic.All_ |    Read all users basic mail (preview) | (Preview) Allows the app to read all users mailboxes except body, previewBody, attachments and any extended properties. Does not include permissions to search messages. | Yes | No
 | _Mail.ReadWrite_ |    Read and write mail in all mailboxes | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. | Yes |
 | _Mail.Send_ |    Send mail as any user | Allows the app to send mail as any user without a signed-in user. | Yes |
 | _MailboxSettings.Read_ |  Read all user mailbox settings | Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail. | No |
