@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/me/chats/{id}/messages/{id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-chatmessage-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-chat-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
