@@ -13,12 +13,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2019
 
-### Mail (Outlook)
-
-| **Change type** | **Version**   | **Description**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added support for the Mail.ReadBasic.All application permission in mailFolder API: [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic.All support in [delta query for message](/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).|
-
 ### Calendar | Places
 
 Debut of places API to provide rich details for locations in apps.
@@ -76,6 +70,13 @@ Debut of places API to provide rich details for locations in apps.
 | Addition | v1.0 | Added the [group:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) and [directoryobject:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) on [groups](/graph/api/group-delta?view=graph-rest-1.0), which validates that an Office 365 group's display name or mail nickname complies with naming policies. |
 | Addition | Beta |Added 'version', 'discoveryDateTime', 'discoverabilities' properties to resource type [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta).|
 | Addition | Beta |Added the [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) method.|
+
+### Mail (Outlook)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added support for the Mail.ReadBasic.All application permission in mailFolder API: [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic.All support in [delta query for message](/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).|
+
 
 ### Reports
 
