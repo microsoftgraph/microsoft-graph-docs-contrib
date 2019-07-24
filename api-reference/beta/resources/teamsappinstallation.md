@@ -17,7 +17,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps installed in team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
+|[List apps installed in team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Lists apps installed in a team.|
 |[Install app to team](../api/teamsappinstallation-add.md) | | Adds (installs) an app to a team.|
 |[Uninstall app from team](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
 |[Upgrade app installed in team](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app.|
