@@ -61,22 +61,29 @@ If successful, this method returns `201 Created` response code and [calendar](..
 
 Here is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkADYAAAR9NR5AAA="],
   "name": "create_calendar_from_calendargroup"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
+POST https://graph.microsoft.com/beta/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars
+
 Content-type: application/json
-Content-length: 78
 
 {
-  "name": "name-value",
-  "color": {
-  }
+  "name": "Marketing calendar"
 }
 ```
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-calendar-from-calendargroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 In the request body, supply a JSON representation of [calendar](../resources/calendar.md) object.
 
@@ -91,28 +98,24 @@ Here is an example of the response. Note: The response object shown here may be 
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 98
 
 {
-  "name": "name-value",
-  "color": {
-  },
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/calendarGroups('AAMkADYAAAR9NR5AAA%3D')/calendars/$entity",
+    "id": "AAMkADYCQM0GfRAAAcrRD-AAA=",
+    "name": "Marketing calendar",
+    "color": "auto",
+    "changeKey": "4xTfgHLeDkOqYVAkDNBn0QAAHKl46A==",
+    "canShare": true,
+    "canViewPrivateItems": true,
+    "canEdit": true,
+    "owner": {
+        "name": "Adele Vance",
+        "address": "adelev@contoso.OnMicrosoft.com"
+    }
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/create_calendar_from_calendargroup-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/create_calendar_from_calendargroup-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -125,8 +128,6 @@ Content-length: 98
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/calendargroup-post-calendars.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/calendargroup-post-calendars.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }
 -->
