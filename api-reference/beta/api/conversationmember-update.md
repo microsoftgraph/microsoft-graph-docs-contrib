@@ -9,7 +9,7 @@ ms.prod: "microsoft-teams"
 
 # Update conversationMember
 
-[!INCLUDE [private-preview-disclaimer](../../includes/private-preview-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md).
 
