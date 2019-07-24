@@ -24,7 +24,7 @@ where files are shared, and where tabs are added.
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
-|[List channel members](../api/conversationmembers-list.md)| [conversationMember](conversationmember.md) collection| List the members of a channel. |
+|[List channel members](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) collection| List the members of a channel. |
 |[Get channel member](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Get a member of a channel. |
 |[Add channel member](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel. Only supported for `channelType` of `private`.|
 |[Update channel member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member of a channel. Only supported for `channelType` of `private`.|
