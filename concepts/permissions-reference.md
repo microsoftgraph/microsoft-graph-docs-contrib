@@ -1015,6 +1015,36 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Role Management permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _RoleManagement.Read.Directory_ | Read directory RBAC settings | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes | No |
+| _RoleManagement.ReadWrite.Directory_ | Read and write directory RBAC settings | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _RoleManagement.Read.Directory_ | Read all directory RBAC settings | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
+| _RoleManagement.ReadWrite.Directory_ | Read and write all directory RBAC settings | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
+
+### Remarks
+Role management permissions are only valid for work or school accounts.
+
+### Example usage
+
+#### Application
+
+- _RoleManagement.Read.Directory_: Read the role-based access control (RBAC) settings for your company's directory (`GET /v1.0/directoryRoles`)
+- _RoleManagement.ReadWrite.Directory_: Read and manage the role-based access control (RBAC) settings for your company's directory  (`PATCH /v1.0/directoryRoles`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
 ## Security permissions
 
 #### Delegated permissions
