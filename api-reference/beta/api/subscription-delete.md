@@ -23,7 +23,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Not supported | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
-|[list](../resource/list.md) | Sites.ReadWrite.All | Sites.ReadWrite.All | Sites.ReadWrite.All |
+|[list](../resources/list.md) | Sites.ReadWrite.All | Sites.ReadWrite.All | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
