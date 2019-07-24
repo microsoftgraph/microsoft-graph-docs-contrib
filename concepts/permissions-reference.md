@@ -1066,7 +1066,7 @@ Role management permissions are only valid for work or school accounts.
 
 ### Example usage
 
-- _RoleManagement.Read.Directory_: Read the role-based access control (RBAC) settings for your company's directory (`GET /v1.0/directoryRoles`)
+- _RoleManagement.Read.Directory_: Read the role-based access control (RBAC) settings for your company's directory (`GET /v1.0/directoryRoles`, `GET /v1.0/directoryRoleTemplates`)
 - _RoleManagement.ReadWrite.Directory_: Read and manage the role-based access control (RBAC) settings for your company's directory  (`PATCH /v1.0/directoryRoles`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
