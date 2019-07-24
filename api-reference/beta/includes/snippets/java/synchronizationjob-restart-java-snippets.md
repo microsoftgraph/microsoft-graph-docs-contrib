@@ -10,7 +10,7 @@ LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Authorization", "Bearer <token>"));
 
 SynchronizationJobRestartCriteria criteria = new SynchronizationJobRestartCriteria();
-criteria.resetScope = SynchronizationJobRestartScope.CONNECTOR_DATA_STORE;
+criteria.resetScope = SynchronizationJobRestartScope.WATERMARK;
 
 graphClient.servicePrincipals("{id}").synchronization().jobs("{jobId}")
 	.restart(criteria)
