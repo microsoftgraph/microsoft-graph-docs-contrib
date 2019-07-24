@@ -50,12 +50,14 @@ If successful, this method returns a `200 OK` response code.
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_team"
 }-->
 
 ```http
 POST /teams/{id}/installedApps
+Content-type: application/json
+
 {
    "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
@@ -65,20 +67,12 @@ POST /teams/{id}/installedApps
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "truncated": true
 } -->
-
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: xxx
-
-{
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
