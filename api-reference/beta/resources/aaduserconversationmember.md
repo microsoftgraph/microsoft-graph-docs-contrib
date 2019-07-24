@@ -1,8 +1,9 @@
 ---
 title: "aadUserConversationMember resource type"
-description: "Represents a user in a conversation."
+description: "Represents an Azure Active Directory user in a chat or channel."
 localization_priority: Priority
-author: "nkramer"
+author: "clearab"
+doc_type: "resourcePageType"
 ms.prod: "microsoft-teams"
 ---
 
@@ -10,18 +11,21 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory user in a [chat](chat.md). 
-This type inherits from [conversationMember](conversationmember.md).
+Represents an Azure Active Directory user in a [chat](chat.md) or [channel](channel.md). This type inherits from [conversationMember](conversationmember.md).
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List Chat members](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat.|
-|[Get Chat member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat.|
+|[List members](../api/conversationmembers-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat or channel.|
+|[Get member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat or channel.|
+|[Add member](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel.|
+|[Update member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member in the channel.|
+|[Delete member](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member from the channel.|
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique ID of the user.|
 |displayName| string | The display name of the user. |

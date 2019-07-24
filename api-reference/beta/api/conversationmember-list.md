@@ -1,7 +1,8 @@
 ---
 title: "List conversationMembers"
-description: "Retrieve a member of a chat."
-author: "nkramer"
+description: "Retrieve a member of a chat or channel."
+author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
@@ -10,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md)
+List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md) or [channel](../resources/channel.md).
 
 ## Permissions
 

@@ -1,7 +1,8 @@
 ---
 title: "List channels"
 description: "Retrieve the list of channels in this team."
-author: "nkramer"
+author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
@@ -13,8 +14,8 @@ ms.prod: "microsoft-teams"
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -34,11 +35,13 @@ GET /teams/{id}/channels
 This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -46,7 +49,9 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.
 
 ## Example
-##### Request
+
+### Request
+
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -75,8 +80,12 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+
+Here is an example of the response.
+
+> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,6 +103,7 @@ Content-length: 262
       "description": "description-value",
       "displayName": "display-name-value",
       "id": "id-value"
+      "membershipType": "membership-type-value"
     }
   ]
 }

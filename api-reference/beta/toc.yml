@@ -9307,7 +9307,13 @@
         - name: Get members in chat
           href: api/conversationmember-list.md
         - name: Get one member in chat
-          href: api/conversationmember-get.md
+          href: api/conversationmember-get.md    
+        - name: Add a member to a chat
+          href: api/conversationmember-add.md
+        - name: Remove a member from a chat
+          href: api/conversationmember-delete.md
+        - name: Update the role of a member in chat
+          href: api/conversationmember-update.md        
       - name: Apps
         href: resources/teamsapp.md
         items:
