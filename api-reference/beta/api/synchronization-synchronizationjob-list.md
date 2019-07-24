@@ -2,6 +2,8 @@
 title: "List synchronization jobs"
 description: "List existing jobs for a given application instance (service principal)."
 localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # List synchronization jobs

@@ -127,7 +127,7 @@ None.
 * _Application.ReadWrite.All_: List all applications (`GET /beta/applications`)
 * _Application.ReadWrite.All_: Delete a service principal (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_: Create an application (`POST /beta/applications`)
-* _Application.ReadWrite.OwnedBy_: List all applications owned by the the calling application (`GET /beta/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_: List all applications owned by the calling application (`GET /beta/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /applications/{id}/owners/$ref`).
 > NOTE: This may require additional permissions.
 
@@ -546,7 +546,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Identity Risk Event permissions
+## Identity risk event permissions
 
 #### Delegated permissions
 
@@ -580,7 +580,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ---
 
 
-## Identity Risky User permissions
+## Identity risky user permissions
 
 #### Delegated permissions
 
@@ -843,6 +843,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## On-premises Publishing Profiles permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    Access  On-Premises Publishing Profiles| Allows the app to manage hybrid identity service configuration by creating, viewing, updating and deleting on-premises published resources, on-premises agents and agent groups, on behalf of the signed-in user. | No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    Access  On-Premises Publishing Profiles| Allows the app to manage hybrid identity service configuration by creating, viewing, updating and deleting on-premises published resources, on-premises agents and agent groups, on behalf of the signed-in user. | No | No |
+
+---
+
 ## OpenID permissions
 
 #### Delegated permissions
@@ -866,6 +882,37 @@ With the Azure AD (v1.0) endpoint, only the _openid_ permission is used. You spe
 With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in the _scope_ parameter to explicitly request a refresh token when using the OAuth 2.0 or OpenID Connect protocols. With OpenID Connect, you specify the _openid_ permission to request an ID token. You can also specify the _email_ permission, _profile_ permission, or both to return additional claims in the ID token. You do not need to specify _User.Read_ to return an ID token with the v2.0 endpoint. For more information, see [OpenID Connect scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 
 > **Important** The Microsoft Authentication Library (MSAL) currently specifies _offline\_access_, _openid_, _profile_, and _email_ by default in authorization and token requests. This means that, for the default case, if you specify these permissions explicitly, Azure AD may return an error.
+
+---
+
+## Organization permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Organization.Read.All_ |Read organization information | Allows the app to read the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information.|Yes | No |
+| _Organization.ReadWrite.All_ |Read and write organization information | Allows the app to read and write the organization and related resources, on behalf of the signed-in user. Related resources include things like subscribed SKUs and tenant branding information. |Yes | No |
+
+<br/>
+
+#### Application permissions
+
+|Permission    |Display String   |Description |Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Organization.Read.All_ |Read organization information | Allows the app to read the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. | Yes |
+| _Organization.ReadWrite.All_ |Read and write organization information | Allows the app to read and write the organization and related resources, without a signed-in user. Related resources include things like subscribed SKUs and tenant branding information. |Yes |
+
+### Example usage
+
+#### Delegated
+
+* _Organization.Read.All_: Get organization information (`GET /organization`).
+* _Organization.Read.All_: Get the SKUs that the organization has subscribed to (`GET /subscribedSkus`).
+
+#### Application
+
+* _Organization.ReadWrite.All_: Update organization information (such as **technicalNotificationMails**) (`PATCH /organization/{id}`).
 
 ---
 
@@ -895,6 +942,22 @@ The People.Read.All permission is only valid for work and school accounts.
 * _People.Read.All_: Read a list of relevant people to another user in the same organization (`GET /users('{id})/people`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Places permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Place.Read.All_ |Read all company places |Allows the app to read company places (conference rooms and room lists) for calendar events and other applications. |No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Place.Read.All_ |   Read all company places | Allows the app to read company places (conference rooms and room lists) for calendar events and other applications.| Yes |
 
 ---
 
