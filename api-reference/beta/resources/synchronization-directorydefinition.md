@@ -21,7 +21,7 @@ Directory definitions are updated as part of the [synchronization schema](synchr
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Discover](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Read properties and relationships of servicePrincipal object.|
+|[Discover directoryDefinition](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
 
 ## Properties
 
