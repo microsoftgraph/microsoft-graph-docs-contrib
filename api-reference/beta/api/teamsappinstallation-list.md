@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [teamsApp](../resources/teamsapp.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.
 
 ## Examples
 
@@ -59,8 +59,8 @@ The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "get_owners"
+  "blockType": "request",
+  "name": "list_teamsapps"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/installedApps
@@ -86,15 +86,15 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "list_teamsapps",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
@@ -105,7 +105,7 @@ Content-length: 55
 }
 ```
 
-### Example 2: Get the names of the installed apps
+### Example 2: Get the names and other details of installed apps
 
 #### Request
 
@@ -114,7 +114,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_owners"
+  "name": "list_teamsapps_details"
 }-->
 
 ```http
@@ -142,15 +142,15 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "list_teamsapps_details",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
     "value": [

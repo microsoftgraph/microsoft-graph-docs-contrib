@@ -15,8 +15,8 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in a team.|
-|[Add app](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Adds (installs) an app to a team.|
+|[List apps](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | Lists apps installed in a team.|
+|[Add app](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adds (installs) an app to a team.|
 |[Remove app](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
 |[Upgrade app](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app.|
 
@@ -31,7 +31,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| The app that is installed. |
-|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| The details of this version of the app. |
+|teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| The details of this version of the app. |
 
 ## JSON representation
 
@@ -43,7 +43,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md). Any bots that are part
 
 ```json
 {
-  "id": "string",
+  "id": "string"
 }
 ```
 
