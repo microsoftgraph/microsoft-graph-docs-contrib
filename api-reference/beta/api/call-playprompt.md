@@ -75,8 +75,8 @@ Content-Length: 166
         "uri": "https://cdn.contoso.com/beep.wav",
         "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
       },
-    }
-  ]
+    },
+  ],
   "loop": false
 }
 ```
@@ -127,8 +127,10 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
       "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
