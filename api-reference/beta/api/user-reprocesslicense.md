@@ -4,7 +4,7 @@ description: "After you resolve any license assignment errors on a user caused b
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+doc_type: "apiPageType" 
 ---
 
 # user: reprocessLicenseAssignment
