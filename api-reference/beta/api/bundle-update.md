@@ -37,11 +37,12 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /drive/items/{bundle-id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name     | Value | Description
-|:---------|:------|:--------------------------------------------------------
-| if-match | etag  | If this request header is included and the eTag provided does not match the current eTag on the buncle, a `412 Precondition Failed` response is returned.
+| Name          | Description  |
+|:------------- |:------------ |
+| Authorization | Bearer \{token\}. Required. |
+| if-match      | eTag. Optional. If this request header is included and the eTag provided does not match the current eTag on the buncle, a `412 Precondition Failed` response is returned.
 
 ## Request body
 

@@ -34,11 +34,12 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /drive/items/{bundle-id}
 ```
 
-## Optional request headers
+## Request headers
 
-| Name     | Value | Description
-|:---------|:------|:----------------------------------------------------------
-| if-match | etag  | If this request header is included and the eTag (or cTag) provided does not match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle will not be deleted.
+| Name          | Description  |
+|:------------- |:------------ |
+| Authorization | Bearer \{token\}. Required. |
+| if-match      | eTag. Optional. If this request header is included and the eTag (or cTag) provided does not match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle will not be deleted.
 
 ## Request body
 

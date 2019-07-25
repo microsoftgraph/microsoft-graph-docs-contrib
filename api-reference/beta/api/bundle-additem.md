@@ -32,6 +32,12 @@ One of the following permissions is required to call this API. To learn more, in
 POST /drive/bundles/{bundle-id}/children
 ```
 
+## Request headers
+
+| Name          | Description  |
+|:------------- |:------------ |
+| Authorization | Bearer \{token\}. Required. |
+
 ## Request body
 
 The request body includes the identifier for an item that should be added to the bundle's children collection.

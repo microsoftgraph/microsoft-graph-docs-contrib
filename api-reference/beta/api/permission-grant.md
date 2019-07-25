@@ -30,6 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 POST /shares/{encoded-sharing-url}/permission/grant
 ```
 
+## Request headers
+
+| Name          | Description  |
+|:------------- |:------------ |
+| Authorization | Bearer \{token\}. Required. |
+
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.

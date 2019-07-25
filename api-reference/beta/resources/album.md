@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.author: jeremyke
 title: album resource type
-description: Facet describing a bundle of driveItems
+description: Facet describing a bundle which is a photo album.
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---

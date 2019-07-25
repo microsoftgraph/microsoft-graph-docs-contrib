@@ -37,6 +37,12 @@ This method supports the [OData Query Parameters][] to filter and shape the resp
 
 You can't use the `expand=children` query parameter when enumerating bundles.
 
+## Request headers
+
+| Name          | Description  |
+|:------------- |:------------ |
+| Authorization | Bearer \{token\}. Required. |
+
 ## Request body
 
 Do not supply a request body with this method.

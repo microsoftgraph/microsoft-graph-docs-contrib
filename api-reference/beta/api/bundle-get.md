@@ -37,11 +37,11 @@ You can also use the **bundles** collection as a convenience to ensure you're ge
 
 You can use the [OData query parameters][odata-parameters] to restrict the shape of the objects returned from this call.
 
-## Optional request headers
-
-| Name          | Value | Description
-|:--------------|:------|:---------------------------------------------------
-| if-none-match | etag  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.
+## Request headers
+| Name          | Description  |
+|:------------- |:------------ |
+| Authorization | Bearer \{token\}. Required. |
+| if-none-match | eTag. Optional. If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.
 
 ## Request body
 
