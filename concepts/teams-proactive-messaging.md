@@ -76,6 +76,11 @@ The id property of the result is the chatThread id.
 
 See https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive
 
+## C# sample
+
+See https://github.com/microsoftgraph/contoso-airlines-teams-sample/tree/nkramer-promsg (note the branch).
+Interesting code is in InstallAppToAllUsers() in [GraphService.cs](https://github.com/microsoftgraph/contoso-airlines-teams-sample/blob/nkramer-promsg/project/Models/GraphService.cs).
+
 ## Installing bots to teams
 
 Chatbots can also send to users that are in a team that have that bot installed. 
