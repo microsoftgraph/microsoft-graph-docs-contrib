@@ -1,9 +1,9 @@
 ---
 title: "Create owner"
 description: "Use this API to create a new owner."
-author: "VinodRavichandran"
+author: "davidmu1"
 localization_priority: Normal
-ms.prod: "microsoft-teams"
+ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
 
