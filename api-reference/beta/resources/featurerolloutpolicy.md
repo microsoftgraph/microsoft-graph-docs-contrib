@@ -7,19 +7,17 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
 
-# Overview
+# featureRolloutPolicy resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creating a feature rollout policy helps tenant administrators to pilot features of Azure AD with a specific group before  enabling features for entire organization. This minimizes the impact and helps administrators to test and rollout authentication related features gradually.
+Represents a feature rollout policy associated with a directory object. Creating a feature rollout policy helps tenant administrators to pilot features of Azure AD with a specific group before enabling features for entire organization. This minimizes the impact and helps administrators to test and rollout authentication related features gradually.
 
-## Limitations of feature rollout
+The following are limitations of feature rollout:
 
-1. Each feature supports a maximum of 10 groups.
-2. The appliesTo field only supports groups.
-3. Dynamic groups and nested groups are not supported.
-
-## Pre-requisites
+- Each feature supports a maximum of 10 groups.
+- The **appliesTo** field only supports groups.
+- Dynamic groups and nested groups are not supported.
 
 The following are pre-requisites for each of the features that are currently suported for rollout using this rollout policy.
 
@@ -38,17 +36,13 @@ The following are pre-requisites for each of the features that are currently sup
 
 * Enable [PasswordHashSync](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs) from the “Optional features” page in Azure AD Connect.
 
-# featureRolloutPolicy resource type
-
-Represents a feature rollout policy associated with a directory object.
-
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List featureRolloutPolicies](../api/directory-list-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve a list of featureRolloutPolicy objects. |
-| [Create featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.
 | [Get featureRolloutPolicy](../api/featurerolloutpolicy-get.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Retrieve the properties and relationships of featurerolloutpolicy object. ||
+| [Create featureRolloutPolicy](../api/directory-post-featurerolloutpolicies.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Create a new featureRolloutPolicy object.
 | [Assign appliesTo](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | Assign a directoryObject to feature rollout. |
 | [Remove appliesTo](../api/featurerolloutpolicy-delete-appliesto.md) | None | Remove a directoryObject from feature rollout. |
 | [Update featureRolloutPolicy](../api/featurerolloutpolicy-update.md) | [featureRolloutPolicy](featurerolloutpolicy.md) | Update the properties of featurerolloutpolicy object. |
