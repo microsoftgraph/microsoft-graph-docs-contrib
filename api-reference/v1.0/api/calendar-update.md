@@ -1,6 +1,6 @@
 ---
 title: "Update calendar"
-description: "Update the properties of of a calendar object. The calendar can be one for a user, "
+description: "Update the properties of a calendar object. The calendar can be one for a user, "
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
@@ -8,7 +8,7 @@ ms.prod: "outlook"
 
 # Update calendar
 
-Update the properties of of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
+Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
 or the default calendar of an Office 365 [group](../resources/group.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -84,6 +84,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendar-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-calendar-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

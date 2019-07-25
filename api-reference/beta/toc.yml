@@ -63,6 +63,8 @@
         href: /graph/extensibility-open-users?context=graph/api/beta
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/beta
+    - name: Use Postman
+      href: /graph/use-postman?context=graph/api/beta
   - name: Migrate
     expanded: false
     items:
@@ -109,6 +111,38 @@
         href: /graph/sdks/create-client?context=graph/api/beta
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
+  - name: Use the toolkit (preview)
+    items:
+      - name: Toolkit overview
+        href: /graph/toolkit/overview?context=graph/api/beta
+      - name: Components
+        items:
+          - name: Login
+            href: /graph/toolkit/components/login?context=graph/api/beta
+          - name: Person
+            href: /graph/toolkit/components/person?context=graph/api/beta
+          - name: People
+            href: /graph/toolkit/components/people?context=graph/api/beta
+          - name: Agenda
+            href: /graph/toolkit/components/agenda?context=graph/api/beta
+          - name: Tasks
+            href: /graph/toolkit/components/tasks?context=graph/api/beta
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph//graph/toolkit/providers?context=graph/api/beta
+          - name: Msal provider
+            href: /graph/toolkit/providers/msal?context=graph/api/beta
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
+          - name: Microsoft Teams provider
+            href: /graph/toolkit/providers/teams?context=graph/api/beta
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/beta
+      - name: Styling components
+        href: /graph/toolkit/style?context=graph/api/beta
+      - name: Templating components
+        href: /graph/toolkit/templates?context=graph/api/beta
   - name: Resources
     items:
     - name: Best practices
@@ -144,7 +178,7 @@
         - name: Get delta
           href: api/user-delta.md
       - name: Calendar
-        href: resources/event.md
+        href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
         - name: List events
@@ -221,6 +255,8 @@
           href: api/user-list-joinedteams.md
         - name: List member of
           href: api/user-list-memberof.md
+        - name: List transitive member of
+          href: api/user-list-transitivememberof.md
       - name: Insights
         href: resources/officegraphinsights.md
         items:
@@ -364,10 +400,16 @@
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
           href: api/group-list-memberof.md
+        - name: List transitive member of
+          href: api/group-list-transitivememberof.md
         - name: List members
           href: api/group-list-members.md
+        - name: List transitive members
+          href: api/group-list-transitivemembers.md
         - name: List owners
           href: api/group-list-owners.md
+        - name: List photos
+          href: api/group-list-photos.md
         - name: Permanently delete group
           href: api/directory-deleteditems-delete.md
         - name: Remove favorite
@@ -386,6 +428,8 @@
           href: api/group-unsubscribebymail.md
         - name: Update group
           href: api/group-update.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -691,7 +735,7 @@
           href: api/event-delta.md
         - name: Reminder view
           href: api/user-reminderview.md
-      - name: Categories
+      - name: Category
         href: resources/outlookcategory.md
         items:
         - name: List categories
@@ -721,6 +765,18 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+      - name: Place
+        items:
+          - name: Place
+            href: resources/place.md
+          - name: Room resource
+            href: resources/room.md
+          - name: Room list resource
+            href: resources/roomlist.md
+          - name: List places
+            href: api/place-list.md
+          - name: Get place
+            href: api/place-get.md
     - name: Calls and online meetings
       displayName: Microsoft Teams
       items:
@@ -771,8 +827,10 @@
             href: api/participant-invite.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
-        - name: Unmute self
+        - name: Unmute application
           href: api/call-unmute.md
+        - name: Mute application
+          href: api/call-mute.md
         - name: Update metadata
           href: api/call-updatemetadata.md
         - name: Audio routing group
@@ -2302,17 +2360,6 @@
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
         - name: Imported windows autopilot device identity upload
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md
-          items:
-          - name: List
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-list.md
-          - name: Get
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-get.md
-          - name: Create
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md
-          - name: Delete
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md
-          - name: Update
-            href: api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md
         - name: Imported windows autopilot device identity upload status
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
         - name: iTunes pairing mode
@@ -3479,6 +3526,8 @@
           href: resources/intune-deviceconfig-encryptionstate.md
         - name: Extended key usage
           href: resources/intune-deviceconfig-extendedkeyusage.md
+        - name: File vault state
+          href: resources/intune-deviceconfig-filevaultstate.md
         - name: Firewall certificate revocation list check method type
           href: resources/intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md
         - name: Firewall packet queueing method type
@@ -4254,6 +4303,19 @@
             href: api/intune-deviceconfig-macoswificonfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-macoswificonfiguration-update.md
+        - name: Managed all device certificate state
+          href: resources/intune-deviceconfig-managedalldevicecertificatestate.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-list.md
+          - name: Get
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-get.md
+          - name: Create
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-managedalldevicecertificatestate-update.md
         - name: Managed device certificate state
           href: resources/intune-deviceconfig-manageddevicecertificatestate.md
           items:
@@ -4343,8 +4405,47 @@
           href: resources/intune-deviceconfig-omasettingstring.md
         - name: OMA setting string xml
           href: resources/intune-deviceconfig-omasettingstringxml.md
+        - name: On prem encrypted payload
+          href: resources/intune-raimportcerts-onpremencryptedpayload.md
+          items:
+          - name: List
+            href: api/intune-raimportcerts-onpremencryptedpayload-list.md
+          - name: Get
+            href: api/intune-raimportcerts-onpremencryptedpayload-get.md
+          - name: Create
+            href: api/intune-raimportcerts-onpremencryptedpayload-create.md
+          - name: Delete
+            href: api/intune-raimportcerts-onpremencryptedpayload-delete.md
+          - name: Update
+            href: api/intune-raimportcerts-onpremencryptedpayload-update.md
         - name: Operating system version range
           href: resources/intune-deviceconfig-operatingsystemversionrange.md
+        - name: Pfx recryption request
+          href: resources/intune-raimportcerts-pfxrecryptionrequest.md
+          items:
+          - name: List
+            href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
+          - name: Get
+            href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
+          - name: Create
+            href: api/intune-raimportcerts-pfxrecryptionrequest-create.md
+          - name: Delete
+            href: api/intune-raimportcerts-pfxrecryptionrequest-delete.md
+          - name: Update
+            href: api/intune-raimportcerts-pfxrecryptionrequest-update.md
+        - name: Pfx user certificate
+          href: resources/intune-raimportcerts-pfxusercertificate.md
+          items:
+          - name: List
+            href: api/intune-raimportcerts-pfxusercertificate-list.md
+          - name: Get
+            href: api/intune-raimportcerts-pfxusercertificate-get.md
+          - name: Create
+            href: api/intune-raimportcerts-pfxusercertificate-create.md
+          - name: Delete
+            href: api/intune-raimportcerts-pfxusercertificate-delete.md
+          - name: Update
+            href: api/intune-raimportcerts-pfxusercertificate-update.md
         - name: Policy platform type
           href: resources/intune-deviceconfig-policyplatformtype.md
         - name: Prerelease features
@@ -4884,6 +4985,8 @@
             href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-delete.md
           - name: Update
             href: api/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update.md
+        - name: Windows defender tamper protection options
+          href: resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md
         - name: Windows delivery optimization configuration
           href: resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md
           items:
@@ -4966,6 +5069,8 @@
             href: api/intune-deviceconfig-windowskioskconfiguration-update.md
         - name: Windows kiosk desktop app
           href: resources/intune-deviceconfig-windowskioskdesktopapp.md
+        - name: Windows kiosk force update schedule
+          href: resources/intune-deviceconfig-windowskioskforceupdateschedule.md
         - name: Windows kiosk local group
           href: resources/intune-deviceconfig-windowskiosklocalgroup.md
         - name: Windows kiosk local user
@@ -5147,6 +5252,19 @@
           href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
         - name: Windows update scheduled install
           href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
+        - name: Windows update state
+          href: resources/intune-deviceconfig-windowsupdatestate.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-windowsupdatestate-list.md
+          - name: Get
+            href: api/intune-deviceconfig-windowsupdatestate-get.md
+          - name: Create
+            href: api/intune-deviceconfig-windowsupdatestate-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-windowsupdatestate-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-windowsupdatestate-update.md
         - name: Windows update status
           href: resources/intune-deviceconfig-windowsupdatestatus.md
         - name: Windows update type
@@ -6897,6 +7015,10 @@
             href: api/intune-rbac-rolescopetag-update.md
           - name: assign action
             href: api/intune-rbac-rolescopetag-assign.md
+          - name: getRoleScopeTagsById action
+            href: api/intune-rbac-rolescopetag-getrolescopetagsbyid.md
+          - name: getRoleScopeTagsById action
+            href: api/intune-rbac-rolescopetag-getrolescopetagsbyid.md
         - name: Role scope tag auto assignment
           href: resources/intune-rbac-rolescopetagautoassignment.md
           items:
@@ -7765,6 +7887,8 @@
           href: api/device-post-registeredusers.md
         - name: List device groups
           href: api/device-list-memberof.md
+        - name: List device transitive groups
+          href: api/device-list-transitivememberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -7780,6 +7904,8 @@
           href: api/directoryobject-checkmembergroups.md
         - name: Get directoryObjects by ids
           href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
       - name: Directory role
         href: resources/directoryrole.md
         items:
@@ -7873,6 +7999,13 @@
             href: api/unfamiliarlocationriskevent-list.md
           - name: Get unfamiliarLocationRiskEvent
             href: api/unfamiliarlocationriskevent-get.md
+        - name: Risk detection
+          href: resources/riskdetection.md
+          items:
+            - name: List risk detections
+              href: api/riskdetection-list.md
+            - name: Get risk detection
+              href: api/riskdetection-get.md
         - name: Risky user
           href: resources/riskyuser.md
           items:
@@ -7886,13 +8019,6 @@
             href: api/riskyusers-confirmcompromised.md
           - name: Dismiss
             href: api/riskyusers-dismiss.md
-      - name: Risk detection
-        href: resources/riskdetection.md
-        items:
-          - name: List risk detections
-            href: api/riskdetection-list.md
-          - name: Get risk detection
-            href: api/riskdetection-get.md
       - name: Identity provider
         href: resources/identityprovider.md
         items:
@@ -7920,6 +8046,57 @@
           href: api/oauth2permissiongrant-update.md
         - name: Delete oauth2 permission grant
           href: api/oauth2permissiongrant-delete.md
+      - name: On-premises publishing
+        href: resources/onpremisespublishingprofile-root.md
+        items:
+          - name: On-premises agent
+            href: resources/onpremisesagent.md
+            items:
+              - name: List
+                href: api/onpremisesagent-list.md
+              - name: Get
+                href: api/onpremisesagent-get.md
+              - name: Assign to agent group
+                href: api/onpremisesagent-post-agentgroups.md
+              - name: Remove from agent group
+                href: api/onpremisesagent-delete-agentgroups.md
+          - name: On-premises agent group
+            href: resources/onpremisesagentgroup.md
+            items:
+              - name: List
+                href: api/onpremisesagentgroup-list.md
+              - name: Get
+                href: api/onpremisesagentgroup-get.md
+              - name: Create
+                href: api/onpremisesagentgroup-post.md
+              - name: Update
+                href: api/onpremisesagentgroup-update.md
+              - name: Delete
+                href: api/onpremisesagentgroup-delete.md
+          - name: On-premises publishing profile
+            href: resources/onpremisespublishingprofile.md
+            items:
+              - name: Get
+                href: api/onpremisespublishingprofile-get.md
+              - name: Update
+                href: api/onpremisespublishingprofile-update.md
+          - name: Published resource
+            href: resources/publishedresource.md
+            items:
+              - name: List
+                href: api/publishedresource-list.md
+              - name: Get
+                href: api/publishedresource-get.md
+              - name: Create
+                href: api/publishedresource-post.md
+              - name: Update
+                href: api/publishedresource-update.md
+              - name: Delete
+                href: api/publishedresource-delete.md
+              - name: Assign to agent group
+                href: api/publishedresource-post-agentgroups.md
+              - name: Remove from agent group
+                href: api/publishedresource-delete-agentgroups.md    
       - name: Organization
         href: resources/organization.md
         items:
@@ -8124,6 +8301,11 @@
           href: resources/synchronization-configure-with-custom-target-attributes.md
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Directory definition
+          href: resources/synchronization-directorydefinition.md
+          items:
+          - name: Discover
+            href: api/directorydefinition-discover.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -8537,16 +8719,42 @@
       items:
       - name: Identity and access reports
         items:
-        - name: Application sign-in summary
-          href: resources/applicationsigninsummary.md
+        - name: Application sign-in
           items:
-          - name: Get
-            href: api/applicationsigninsummary-get.md
-        - name: Application sign-in summary details
-          href: resources/applicationsignindetailedsummary.md
+          - name: Sign-in summary
+            href: resources/applicationsigninsummary.md
+            items:
+            - name: Get sign-in summary
+              href: api/applicationsigninsummary-get.md
+          - name: Sign-in details
+            href: resources/applicationsignindetailedsummary.md
+            items:
+            - name: Get sign-in details
+              href: api/applicationsignindetailedsummary-get.md
+        - name: Registration and usage
           items:
-          - name: Get
-            href: api/applicationsignindetailedsummary-get.md
+          - name: Overview
+            href: resources/authenticationmethods-usage-insights-overview.md
+          - name: Credential User Registration Count
+            href: resources/credentialuserregistrationcount.md
+            items:
+            - name: Get registration count
+              href: api/reportroot-getcredentialuserregistrationcount.md
+          - name: Credential User Registration Details
+            href: resources/credentialuserregistrationdetails.md
+            items:
+            - name: List registration details
+              href: api/reportroot-list-credentialuserregistrationdetails.md
+          - name: User Credential Usage Details
+            href: resources/usercredentialusagedetails.md
+            items: 
+            - name: List usage details
+              href: api/reportroot-list-usercredentialusagedetails.md
+          - name: Credential Usage Summary
+            href: resources/credentialusagesummary.md
+            items:
+            - name: Get usage summary
+              href: api/reportroot-getcredentialusagesummary.md
       - name: Office 365 usage reports
         items:
         - name: Overview
@@ -9097,9 +9305,9 @@
         - name: Get chat
           href: api/chat-get.md
         - name: List messages in a chat
-          href: api/chat-list-messages.md
+          href: api/chatmessage-list.md
         - name: Get message in chat
-          href: api/chat-get-message.md
+          href: api/chatmessage-get.md
         - name: Get members in chat
           href: api/conversationmember-list.md
         - name: Get one member in chat

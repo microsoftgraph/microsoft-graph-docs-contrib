@@ -53,7 +53,6 @@ This resource supports:
 |[Delete setting](../api/directorysetting-delete.md) | None |Delete a setting object. |
 |[List endpoints](../api/group-list-endpoints.md) |[endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
-|[delta](../api/group-delta.md)|group collection| Get incremental changes for groups. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. | 
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
@@ -67,6 +66,7 @@ This resource supports:
 |[Get conversation](../api/group-get-conversation.md) |[conversation](conversation.md)| Read properties of a conversation object.|
 |[List conversations](../api/group-list-conversations.md) |[conversation](conversation.md) collection| Get a conversation object collection.|
 |[Delete conversation](../api/group-delete-conversation.md) |None|Delete conversation object.|
+|[Create thread](../api/group-post-threads.md)|[conversationThread](conversationthread.md)| Create a new conversation thread.|
 |[Get thread](../api/group-get-thread.md) |[conversationThread](conversationthread.md)| Read properties of a thread object.|
 |[List threads](../api/group-list-threads.md) |[conversationThread](conversationthread.md) collection| Get all the threads of a group.|
 |[Update thread](../api/group-update-thread.md) |None| Update properties of a thread object.|
@@ -76,7 +76,7 @@ This resource supports:
 |[Remove acceptedSender](../api/group-delete-acceptedsenders.md) |[directoryObject](directoryobject.md)| Remove a User or Group from the acceptedSenders collection.|
 |[List rejectedSenders](../api/group-list-rejectedsenders.md) |[directoryObject](directoryobject.md) collection| Get a list of users or groups that are in the rejected-senders list for this group.|
 |[Add rejectedSender](../api/group-post-rejectedsenders.md) |[directoryObject](directoryobject.md)| Add a new User or Group to the rejectedSenders collection.|
-|[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new new User or Group from the rejectedSenders collection.|
+|[Remove rejectedSender](../api/group-delete-rejectedsenders.md) |[directoryObject](directoryobject.md)| Remove new User or Group from the rejectedSenders collection.|
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|

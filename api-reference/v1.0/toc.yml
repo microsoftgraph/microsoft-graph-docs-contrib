@@ -63,6 +63,8 @@
         href: /graph/extensibility-open-users?context=graph/api/1.0
       - name: Use schema extensions (example)
         href: /graph/extensibility-schema-groups?context=graph/api/1.0
+    - name: Use Postman
+      href: /graph/use-postman?context=graph/api/1.0
   - name: Migrate
     expanded: false
     items:
@@ -109,6 +111,38 @@
         href: /graph/sdks/create-client?context=graph/api/1.0
       - name: Choose an authentication provider
         href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
+  - name: Use the toolkit (preview)
+    items:
+      - name: Toolkit overview
+        href: /graph/toolkit/overview?context=graph/api/1.0
+      - name: Components
+        items:
+          - name: Login
+            href: /graph/toolkit/components/login?context=graph/api/1.0
+          - name: Person
+            href: /graph/toolkit/components/person?context=graph/api/1.0
+          - name: People
+            href: /graph/toolkit/components/people?context=graph/api/1.0
+          - name: Agenda
+            href: /graph/toolkit/components/agenda?context=graph/api/1.0
+          - name: Tasks
+            href: /graph/toolkit/components/tasks?context=graph/api/1.0
+      - name: Providers
+        items:
+          - name: Using the providers
+            href: /graph/toolkit/providers?context=graph/api/1.0
+          - name: Msal provider
+            href: /graph/toolkit/providers/msal?context=graph/api/1.0
+          - name: SharePoint provider
+            href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
+          - name: Microsoft Teams provider
+            href: /graph/toolkit/providers/teams?context=graph/api/1.0
+          - name: Custom provider
+            href: /graph/toolkit/providers/custom?context=graph/api/1.0
+      - name: Styling components
+        href: /graph/toolkit/style?context=graph/api/1.0
+      - name: Templating components
+        href: /graph/toolkit/templates?context=graph/api/1.0
   - name: Resources
     items:
     - name: Best practices
@@ -144,7 +178,7 @@
         - name: Get delta
           href: api/user-delta.md
       - name: Calendar
-        href: resources/event.md
+        href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
         - name: List events
@@ -211,8 +245,10 @@
       - name: Groups
         href: resources/group.md
         items:
-        - name: List memberOf
+        - name: List member of
           href: api/user-list-memberof.md
+        - name: List transitive member of
+          href: api/user-list-transitivememberof.md
       - name: Mail
         href: resources/message.md
         items:
@@ -319,10 +355,16 @@
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
           href: api/group-list-memberof.md
+        - name: List transitive member of
+          href: api/group-list-transitivememberof.md
         - name: List members
           href: api/group-list-members.md
+        - name: List transitive members
+          href: api/group-list-transitivemembers.md
         - name: List owners
           href: api/group-list-owners.md
+        - name: List photos
+          href: api/group-list-photos.md
         - name: Update group
           href: api/group-update.md
         - name: Remove favorite
@@ -356,6 +398,8 @@
             href: api/grouplifecyclepolicy-addgroup.md
           - name: Remove group
             href: api/grouplifecyclepolicy-removegroup.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -3195,6 +3239,8 @@
           href: api/device-post-registeredusers.md
         - name: List device groups
           href: api/device-list-memberof.md
+        - name: List device transitive groups
+          href: api/device-list-transitivememberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -3210,6 +3256,8 @@
           href: api/directoryobject-checkmembergroups.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
       - name: Directory role
         href: resources/directoryrole.md
         items:
