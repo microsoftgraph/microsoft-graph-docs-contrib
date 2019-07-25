@@ -1,5 +1,5 @@
 ---
-title: "Delete app from team"
+title: "Remove app from team"
 description: "Uninstalls an app from the specified team."
 author: "clearab"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete app from team
+# Remove app from team
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
