@@ -1,12 +1,12 @@
 ---
 author: kevklam
 ms.author: kevinlam
-title: permission: grant
+title: Grant permission
 description: Grants a list of users access to use the specified link
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
-# permission: grant
+# Grant permission
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

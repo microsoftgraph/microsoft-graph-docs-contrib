@@ -2,7 +2,7 @@
 author: JeremyKelley
 ms.author: jeremyke
 title: bundle resource type
-description: 'bundle' facet describing a driveItem that is a logical grouping of other driveItems
+description: Facet describing a driveItem that is a logical grouping of other driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A 'bundle' is a logical grouping of files used to share multiple files at once. It is represented by a [driveItem][] entity containing a `bundle` facet and can be shared in the same way as any other driveItem.
+A bundle is a logical grouping of files used to share multiple files at once. It is represented by a [driveItem][] entity containing a `bundle` facet and can be shared in the same way as any other driveItem.
 
 The `bundle` facet on a [driveItem][] identifies an item as a bundle and groups bundle-specific information into a single structure. It is only included on [driveItem][] resources returned from the **bundles** endpoint.
 
