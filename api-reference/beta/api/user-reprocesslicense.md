@@ -1,5 +1,5 @@
 ---
-title: "reprocessLicenseAssignment"
+title: "user: reprocessLicenseAssignment"
 description: "After you resolve any license assignment errors on a user caused by group-based licensing you can reprocess all group based license assignments for the user using reprocessLicenseAssignment."
 localization_priority: Normal
 author: "dkershaw10"
@@ -51,7 +51,7 @@ POST https://graph.microsoft.com/beta/users/047dd774-f1c4-40f2-82f0-278de79f9b83
 ### Response
 The response is the updated user object.
 
-**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
