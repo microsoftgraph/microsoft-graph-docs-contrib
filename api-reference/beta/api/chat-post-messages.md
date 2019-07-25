@@ -12,6 +12,7 @@ doc_type: "apiPageType"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [message](../resources/chatmessage.md) in the specified [chat](../resources/chat.md).
+Note there is no API to create a new chat, nor an efficient way to find an existing chat short of enumerating all of the user's chats.
 
 ## Permissions
 
