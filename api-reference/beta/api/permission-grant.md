@@ -2,7 +2,7 @@
 author: kevklam
 ms.author: kevinlam
 title: Grant permission
-description: Grants a list of users access to use the specified link
+description: Grant a list of users access to use the specified link
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
@@ -10,7 +10,7 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Grants users access to a link represented by a [permission][].
+Grant users access to a link represented by a [permission][].
 
 ## Permissions
 
@@ -54,7 +54,7 @@ For a list of available roles, see [Roles enumeration](../resources/permission.m
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a [permission][] collection in the response body.
+If successful, this method returns a `200 OK` response code and a [permission][] collection in the response body.
 
 A [permission][] representing the updated link will always be returned in the result set on success. The updated link can be identified by the presence of a 'link' facet containing the 'scope' property. In some cases it may be possible that the updated link has a different URL than the original link, in which case the new URL should be used.
 
