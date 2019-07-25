@@ -21,6 +21,8 @@ Settings for the primary mailbox of the signed-in user.
 |language|[localeInfo](localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeZone|string|The default time zone for the user's mailbox.|
 |workingHours|[workingHours](workinghours.md)|The days of the week and hours in a specific time zone that the user works.|
+|dateFormat|string|The date format for the user's mailbox.|
+|timeFormat|string|The time format for the user's mailbox.|
 
 ## JSON representation
 
@@ -40,7 +42,9 @@ Here is a JSON representation of the resource.
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
   "timeZone": "string",
-  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"},
+  "dateFormat": "string",
+  "timeFormat": "string"
 }
 
 ```

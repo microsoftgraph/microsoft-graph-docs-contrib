@@ -11,13 +11,15 @@ ms.prod: "microsoft-identity-platform"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the user's [mailboxSettings](../resources/mailboxsettings.md). This includes settings for automatic replies (notify people automatically upon 
-receipt of their email), locale (language and country/region), time zone, and working hours.
+receipt of their email), locale (language and country/region), time zone, working hours, time format and date format.
 
 You can view all mailbox settings, or, get specific settings.
 
 Time zone is one of the preferred settings a user can set up for the user's mailbox. The user chooses it from the [supported time zones](outlookuser-supportedtimezones.md) that an administrator has set up for the user's mailbox server. The administrator sets up time zones in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default. 
 
 When you get a user's preferred time zone, the time zone is returned in the format that it was set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app.
+
+Date and time formats are preferred settings a user can set up using the Outlook Web App. We support [Short date format](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) and [Short time formats](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime). 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,6 +52,13 @@ GET /users/{id|userPrincipalName}/mailboxSettings/timeZone
 
 GET /me/mailboxSettings/workingHours
 GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
+
+GET /me/mailboxSettings/dateFormat
+GET /users/{id|userPrincipalName}/mailboxSettings/dateFormat
+
+GET /me/mailboxSettings/timeFormat
+GET /users/{id|userPrincipalName}/mailboxSettings/timeFormat
+
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -70,6 +79,8 @@ If successful, this method returns a `200 OK` response code and one of the follo
 - [localeInfo](../resources/localeinfo.md) object
 - string (for **timeZone**)
 - [workingHours](../resources/workinghours.md)
+- string (for **dateFormat**)
+- string (for **timeFormat**)
 
 ## Example
 ##### Request 1
@@ -145,7 +156,9 @@ Content-type: application/json
         "timeZone":{
             "name":"Pacific Standard Time"
         }
-    }
+    },
+    "dateFormat": "MM/dd/yyyy",
+    "timeFormat": "hh:mm tt"
 }
 ```
 

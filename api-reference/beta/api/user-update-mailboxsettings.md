@@ -10,13 +10,16 @@ ms.prod: "microsoft-identity-platform"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update one or more settings for the user's mailbox. This includes settings for [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email), [locale](../resources/localeinfo.md) (language and country/region), time zone, and [working hours](../resources/workinghours.md).
+Update one or more settings for the user's mailbox. This includes settings for [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email), [locale](../resources/localeinfo.md) (language and country/region), time zone, [working hours](../resources/workinghours.md), dateFormat and timeFormat.
 
 You can enable, configure, or disable one or more of these settings as part of [mailboxSettings](../resources/mailboxsettings.md).
 
 **Note** You cannot create or delete any mailbox settings.
 
 When you update the preferred time zone for a user, you can specify it in the Windows or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. You can also further customize the time zone as shown in [example 2](#request-2) below.
+
+
+[Short date format](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) and [Short time formats](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) should be used to update dateFormat, timeFormat settings. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,6 +54,8 @@ shouldn't include existing values that haven't changed. The following are the wr
 |language|[localeInfo](../resources/localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeZone|string|The default time zone for the user's mailbox.|
 |workingHours|[workingHours](../resources/workinghours.md)|The hours, days of a week, and time zone that the user works.|
+|dateFormat|string|The date format for the user's mailbox.|
+|timeFormat|string|The time format for the user's mailbox.|
 
 ## Response
 
