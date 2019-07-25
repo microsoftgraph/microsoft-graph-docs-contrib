@@ -1,6 +1,6 @@
 ---
 title: "assignLicense"
-description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group. To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory."
+description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
