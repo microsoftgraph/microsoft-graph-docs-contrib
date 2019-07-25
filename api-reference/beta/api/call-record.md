@@ -155,6 +155,10 @@ Content-Type: application/json
 ##### Get recording file - Request
 The following example shows the request to get the content of the recording.
 
+<!-- {
+  "blockType": "ignored",
+  "name": "download_recorded_file",
+}-->
 ```http
 GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Authorization: Bearer <recordingAccessToken>
@@ -163,6 +167,11 @@ Authorization: Bearer <recordingAccessToken>
 ##### Get recording file - Response
 Here is an example of the response. 
 
+<!-- {
+  "blockType": "ignored",
+  "name": "download_recorded_file",
+  "truncated": true
+}-->
 ```http
 GET https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Transfer-Encoding: chunked
