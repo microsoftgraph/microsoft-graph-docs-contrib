@@ -1,6 +1,6 @@
 ---
 title: "user: reprocessLicenseAssignment"
-description: "After you resolve any license assignment errors on a user caused by group-based licensing you can reprocess all group based license assignments for the user using reprocessLicenseAssignment."
+description: "Reprocess all group-based license assignments for the user."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
