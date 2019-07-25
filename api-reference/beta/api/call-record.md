@@ -10,12 +10,10 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Record a short audio clip from the call. This is useful if the bot wishes to capture a voice response from the caller following a prompt.
+Record a short audio clip from the call. This is useful if the bot wants to capture a voice response from the caller following a prompt.
 
-#### Note
-Record action is supported only for [calls](../resources/call.md) which are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
-
-Record action is not intended to record the entire call. The maximum length of recording is 5 minutes. The recording is not saved permamently by the bot platform and is discarded shortly after the call ends. The bot must download the recording promptly (using the recordingLocation value given in the completed notification) after the recording operation completes.
+> [!Note]
+> This record action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md). This action does not record the entire call. The maximum length of the recording is 5 minutes. The recording is not saved permamently by the bot platform and is discarded shortly after the call ends. The bot must download the recording promptly (using the **recordingLocation** value given in the completed notification) after the recording operation finishes.
 
 
 ## Permissions
@@ -54,7 +52,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-Returns `200 OK` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.
+This method returns a `200 OK` response code and a Location header with a URI to the [commsOperation](../resources/commsoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
