@@ -1,5 +1,5 @@
 ---
-title: "assignLicense"
+title: "group: assignLicense"
 description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group."
 localization_priority: Normal
 author: "dkershaw10"
@@ -49,8 +49,8 @@ If successful, this method returns `202 Accepted` response code and target [grou
 
 ## Examples
 
-### Example 1
-Add licenses to the group.
+### Example 1: Add licenses to the group
+The following example adds licenses to the group.
 #### Request
 
 # [HTTP](#tab/http)
@@ -79,8 +79,8 @@ Content-type: application/json
 ```
 
 
-### Example 2
-Remove licenses from the group.
+### Example 2: Remove licenses from the group
+The following example removes licenses from the group.
 
 #### Request
 ```http
@@ -97,7 +97,7 @@ Content-type: application/json
 #### Response
 In both examples, the response is the updated group object.
 
-**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call..
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call..
 <!-- {
   "blockType": "response",
   "truncated": true,
