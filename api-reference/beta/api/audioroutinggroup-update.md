@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
-PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## Request headers

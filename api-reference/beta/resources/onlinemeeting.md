@@ -37,6 +37,8 @@ Captures information about the meeting, including the join URL, the attendees li
 | participants              | [meetingParticipants](meetingparticipants.md)          | The participants associated with the online meeting.  This includes the organizer and the attendees. |
 | startDateTime             | DateTime                                               | Start time of the meeting. |
 | subject                   | String                                                 | The subject of the online meeting. |
+| capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
+| videoTeleconferenceId     | String                                                 | The videio teleconferencing id. |
 
 ## Relationships
 None
@@ -68,6 +70,8 @@ The following is a JSON representation of the resource.
   "meetingType": "meetNow | scheduled | recurring | broadcast",
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
-  "subject": "String"
+  "subject": "String",
+  "capabilities": [ "questionAndAnswer" ],
+  "videoTeleconferenceId": "String"
 }
 ```
