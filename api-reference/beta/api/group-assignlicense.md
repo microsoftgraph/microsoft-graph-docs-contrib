@@ -78,11 +78,42 @@ Content-type: application/json
 }
 ```
 
+#### Response
+The response is the updated group object.
+
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call..
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 202 Accepted
+Content-type: application/json
+
+
+{
+  "id": "1ad75eeb-7e5a-4367-a493-9214d90d54d0",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-04-18T22:05:03Z",
+  "creationOptions": [],
+  "securityEnabled": true,
+
+}
+```
 
 ### Example 2: Remove licenses from the group
 The following example removes licenses from the group.
 
 #### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "group_removelicense"
+}-->
+
 ```http
 POST https://graph.microsoft.com/beta/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
 Content-type: application/json
@@ -95,7 +126,7 @@ Content-type: application/json
 ```
 
 #### Response
-In both examples, the response is the updated group object.
+The response is the updated group object.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call..
 <!-- {
