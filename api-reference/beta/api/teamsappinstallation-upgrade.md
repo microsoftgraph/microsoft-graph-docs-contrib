@@ -49,8 +49,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "upgrade_teamsapp"
 }-->
 
 ```http
@@ -61,9 +61,9 @@ POST /teams/{id}/installedApps/{id}/upgrade
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "upgrade_teamsapp",
   "truncated": true
 } -->
 ```http

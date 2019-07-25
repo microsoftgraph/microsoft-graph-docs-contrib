@@ -351,15 +351,16 @@
         - name: List user's assigned tasks
           href: api/planneruser-list-tasks.md
       - name: Teamwork
-        href: resources/teamsappinstallation.md
         items:
-        - name: List apps for a user
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps for user
           href: api/user-list-teamsappinstallation.md
-        - name: Add app for a user
+        - name: Add app for user
           href: api/user-add-teamsappinstallation.md
-        - name: Remove app for a user
+        - name: Remove app for user
           href: api/user-delete-teamsappinstallation.md
-        - name: Upgrade an installed app for a user
+        - name: Upgrade installed app for user
           href: api/user-upgrade-teamsappinstallation.md
       - name: User settings
         href: resources/user-settings.md
@@ -9339,22 +9340,25 @@
           href: api/teamsapp-update.md
         - name: Remove app from catalog
           href: api/teamsapp-delete.md
-      - name: Apps
-        href: resources/teamsappinstallation.md
+      - name: App
         items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
         - name: List apps in team
           href: api/teamsappinstallation-list.md
         - name: Add app to team
           href: api/teamsappinstallation-add.md
         - name: Remove app from team
           href: api/teamsappinstallation-delete.md
-        - name: List apps for a user
+        - name: Upgrade installed app for team
+          href: api/teamsappinstallation-upgrade.md
+        - name: List apps for user
           href: api/user-list-teamsappinstallation.md
-        - name: Add app for a user
+        - name: Add app for user
           href: api/user-add-teamsappinstallation.md
-        - name: Remove app for a user
+        - name: Remove app for user
           href: api/user-delete-teamsappinstallation.md
-        - name: Upgrade an installed app for a user
+        - name: Upgrade installed app for user
           href: api/user-upgrade-teamsappinstallation.md
       - name: Tab
         href: resources/teamstab.md

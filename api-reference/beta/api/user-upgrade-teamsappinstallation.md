@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrade an [app](../resources/teamsappinstallation.md) installation in the personal scope of the specified [user](../resources/user.md)
+Upgrade an [app installation](../resources/teamsappinstallation.md) in the personal scope of the specified [user](../resources/user.md)
 to the latest version of the app.
 
 ## Permissions
@@ -52,7 +52,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "User_upgrade_teamsApp"
+  "name": "user_upgrade_teamsApp"
 }-->
 ```http
 POST /users/{id}/teamwork/installedApps/{id}/upgrade
@@ -62,10 +62,9 @@ POST /users/{id}/teamwork/installedApps/{id}/upgrade
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
 <!-- {
   "blockType": "response",
+  "name": "user_upgrade_teamsApp",
   "truncated": true
 } -->
 ```http

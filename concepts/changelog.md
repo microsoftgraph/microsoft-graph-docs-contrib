@@ -90,13 +90,13 @@ Debut of places API to provide rich details for locations in apps.
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition | beta | Added support for application permissions to [List channel messages](/api-reference/beta/api/channel-list-messages.md), [Get channel message](/api-reference/beta/api/channel-get-message.md), [List replies to a message](/api-reference/beta/api/channel-list-messagereplies.md), and [Get a reply to a message](/api-reference/beta/api/channel-get-messagereply.md). |
-| Addition | beta | Added support for application permissions to [List messages in a chat](/api-reference/beta/api/chatmessage-list.md) and [Get message in chat](/api-reference/beta/api/chatmessage-get.md). |
-| Addition | beta | Added the **installedApps** property to the [chat](/api-reference/beta/resources/chat.md) resource.|
-| Addition | beta | Added navigation binding for **chats** property of the [user](/api-reference/beta/resources/user.md) resource.|
-| Addition | beta | Added the [teamwork](/api-reference/beta/resources/teamwork.md) resource. |
-| Addition | beta | Added the [userTeamwork](/api-reference/beta/resources/userteamwork.md) resource. |
-| Addition | beta | Added new methods to the [user](/api-reference/beta/user.md) resource enabling CRUD operations with personal apps for users.|
+| Addition | beta | Added support for application permissions to [List channel messages](/graph/api/channel-list-messages?view=graph-rest-beta), [Get channel message](/graph/api/channel-get-message?view=graph-rest-beta), [List replies to a message](/graph/api/channel-list-messagereplies?view=graph-rest-beta), and [Get a reply to a message](/graph/api/channel-get-messagereply?view=graph-rest-beta). |
+| Addition | beta | Added support for application permissions to [List messages in a chat](/graph/api/chatmessage-list?view=graph-rest-beta) and [Get message in chat](/graph/api/chatmessage-get?view=graph-rest-beta). |
+| Addition | beta | Added the **installedApps** property to the [chat](/graph/api/resources/chat?view=graph-rest-beta) resource.|
+| Addition | beta | Added navigation binding for **chats** property of the [user](/graph/api/resources/user?view=graph-rest-beta) resource.|
+| Addition | beta | Added the [teamwork](/graph/api/resources/teamwork?view=graph-rest-beta) resource. |
+| Addition | beta | Added the [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta) resource. |
+| Addition | beta | Added new methods to the [user](/graph/api/resources/user?view=graph-rest-beta) resource enabling the following methods with personal apps for users: <br>[List apps installed for user](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[Install app for user](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[Uninstall app for user](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[Upgrade app installed for user](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
 
 ## June 2019

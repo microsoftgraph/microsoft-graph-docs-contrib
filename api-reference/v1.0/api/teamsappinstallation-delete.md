@@ -1,5 +1,5 @@
 ---
-title: "Delete app from team"
+title: "Remove app from team"
 description: "Uninstalls an app from the specified team."
 author: "clearab"
 doc_type: "apiPageType"
@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete app from team
+# Remove app from team
 
 Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).
 
@@ -47,8 +47,8 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "uninstall_teamsapp"
 }-->
 
 ```http
@@ -57,11 +57,11 @@ DELETE /teams/{id}/installedApps/{id}
 
 ### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. 
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "name": "uninstall_teamsapp",
+  "truncated": true
 } -->
 
 ```http
