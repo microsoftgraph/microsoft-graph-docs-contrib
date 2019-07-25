@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 
-# Add item to a bundle in OneDrive
+# Add item to a bundle
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

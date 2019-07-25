@@ -1,17 +1,17 @@
 ---
-title: "Upgrade an app in a team"
-description: "Upgrades an app installation in a team"
+title: "Install app for user"
+description: "Install an app in the personal scope of the specified user."
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Upgrade an app in a team
+# Install app for user
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.
+Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).
 
 ## Permissions
 
@@ -19,14 +19,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.ReadWrite.All    |
+|Delegated (work or school account) |  User.ReadWrite.All, Directory.ReadWrite.All     |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{id}/installedApps/{id}/upgrade
+POST /users/{id}/teamwork/installedApps
 ```
 
 ## Request headers
@@ -37,11 +37,15 @@ POST /teams/{id}/installedApps/{id}/upgrade
 
 ## Request body
 
-Do not supply a request body for this method.
+The request body should contain the ID of the existing catalog app to be added.
+
+| Property   | Type |Description|
+|:---------------|:--------|:----------|
+|teamsApp|String|The ID of the app to add.|
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `201 Created` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -50,35 +54,36 @@ If successful, this method returns `204 No Content` response code. It does not r
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "upgrade_teamsapp"
+  "name": "user_add_teamsApp"
 }-->
-
 ```http
-POST /teams/{id}/installedApps/{id}/upgrade
+POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
+Content-type: application/json
+
+{
+   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+}
 ```
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "name": "upgrade_teamsapp",
   "truncated": true
 } -->
+
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Get team",
+  "description": "User add teamsAppInstallations",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->
