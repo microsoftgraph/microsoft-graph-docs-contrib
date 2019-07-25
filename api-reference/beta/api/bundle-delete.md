@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
 ms.author: jeremyke
-title: Delete a bundle
+title: Delete bundle
+description: Delete a bundle of driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 
-# Delete a bundle in OneDrive
+# Delete bundle
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Deletes a OneDrive bundle by using its **id**.
+Delete a [bundle][] of driveItems by using its **id**.
 Note that deleting a bundle using this method permanently deletes the bundle and does not move it to the Recycle Bin.
 It does not, however, remove the items that were referenced by the bundle.
 They will remain in their parent folders.
@@ -33,18 +34,25 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /drive/items/{bundle-id}
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name     | Value | Description
 |:---------|:------|:----------------------------------------------------------
 | if-match | etag  | If this request header is included and the eTag (or cTag) provided does not match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle will not be deleted.
 
-### Request body
+## Request body
 
 Do not supply a request body with this method.
 
+## Response
 
-### Example
+If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
+
+Read the [Error Responses][error-response] topic for more info about how errors are returned.
+
+## Example
+
+### Request
 
 <!-- { "blockType": "request", "name": "delete-bundle" } -->
 
@@ -52,9 +60,7 @@ Do not supply a request body with this method.
 DELETE /drive/items/{bundle-id}
 ```
 
-## Response
-
-If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
+### Response
 
 <!-- { "blockType": "response" } -->
 
@@ -62,10 +68,8 @@ If successful, this call returns a `204 No Content` response to indicate that re
 HTTP/1.1 204 No Content
 ```
 
-### Error responses
 
-See [Error Responses][error-response] for more info about how errors are returned.
-
+[bundle]: ../resources/bundle.md
 [error-response]: /graph/errors
 
 <!-- {

@@ -1,9 +1,10 @@
 ---
 author: JeremyKelley
 ms.author: JeremyKelley
-ms.date: 09/10/2017
-title: Permission
+title: permission resource type
+description: permission resource representing a sharing permission granted for a driveItem
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
 # permission resource type
 
@@ -189,7 +190,7 @@ This link provides read and write access to the specific people in the `grantedT
 
 ## Sharing invitations
 
-Permissions sent by the [invite][] or [grant][] API may have additional information in the [invitation][SharingInvitation] facet for email addresses that don't match a known account. In such cases, the **grantedTo** property may not be set until the invitation link is redeemed, which occurs the first time the user clicks the link and signs in.
+Permissions sent by the [invite][] or [grant][] API can have additional information in the [invitation][SharingInvitation] facet for email addresses that don't match a known account. In such cases, the **grantedTo** property might not be set until the invitation link is redeemed, which occurs the first time the user clicks the link and signs in.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 

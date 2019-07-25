@@ -2,6 +2,7 @@
 author: JeremyKelley
 ms.author: jeremyke
 title: Add item to a bundle
+description: Add item to a bundle of driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
@@ -10,9 +11,10 @@ ms.prod: "sharepoint"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an additional item from a drive to a [bundle][].
+Add an additional [driveItem][] from a drive to a [bundle][].
 
 [bundle]: ../resources/bundle.md
+[driveItem]: ../resources/driveItem.md
 
 ## Permissions
 
@@ -30,11 +32,19 @@ One of the following permissions is required to call this API. To learn more, in
 POST /drive/bundles/{bundle-id}/children
 ```
 
-### Request body
+## Request body
 
 The request body includes the identifier for an item that should be added to the bundle's children collection.
 
-### Example
+## Response
+
+If successful, the response is `204 No Content`.
+
+Read the [Error Responses][error-response] topic for more information about how errors are returned.
+
+## Example
+
+### Request
 
 This request will add an existing item to the specified bundle.
 
@@ -51,17 +61,11 @@ Content-Type: application/json
 
 ### Response
 
-If successful, the response is `204 No Content`.
-
 <!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
-
-### Error responses
-
-Read the [Error Responses][error-response] topic for more information about how errors are returned.
 
 [error-response]: /graph/errors
 

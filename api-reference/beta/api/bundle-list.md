@@ -2,11 +2,12 @@
 author: JeremyKelley
 ms.author: jeremyke
 title: List bundles
+description: List the bundles in a user's drive
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 
-# List bundles in a drive
+# List bundles
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,14 +31,29 @@ One of the following permissions is required to call this API. To learn more, in
 GET /drive/bundles
 ```
 
-### Optional query parameters
+## Optional query parameters
 
 This method supports the [OData Query Parameters][] to filter and shape the response.
-One exception: when enumerating bundles, `expand=children` cannot be used.
 
-## Example - List all bundles in a drive
+You can't use the `expand=children` query parameter when enumerating bundles.
+
+## Request body
+
+Do not supply a request body with this method.
+
+## Response
+
+If successful, this request returns the list of bundle items defined for the drive.
+
+Read the [Error Responses][error-response] topic for more info about how errors are returned.
+
+## Examples
+
+### Example 1: List all bundles in a drive
 
 To request an enumeration of all bundles defined in the drive, you can make a request to the **bundles** collection without any parameters.
+
+#### Request
 
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
 
@@ -45,9 +61,7 @@ To request an enumeration of all bundles defined in the drive, you can make a re
 GET /drive/bundles
 ```
 
-### Response
-
-If successful, this request returns the list of bundle items defined for the drive.
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
@@ -77,12 +91,14 @@ Content-type: application/json
 }
 ```
 
-**Note:** Response objects are truncated for clarity.
-All default properties will be returned from the actual call.
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-## Example - List all photo albums in a drive
 
-To filter the list of bundles returned from a request to the bundles collection you can use the `filter` query string parameter to specify the type of bundle to return by checking for the existence of a facet on the bundle:
+### Example 2: List all photo albums in a drive
+
+To filter the list of bundles returned from a request to the bundles collection, you can use the `filter` query string parameter to specify the type of bundle to return by checking for the existence of a facet on the bundle:
+
+#### Request
 
 <!-- {"blockType": "request", "name": "list-album-bundles", "tags": "service.onedrive" } -->
 
@@ -90,10 +106,10 @@ To filter the list of bundles returned from a request to the bundles collection 
 GET /drive/bundles?filter=bundle/album%20ne%20null
 ```
 
-### Response
+#### Response
 
-The response to a GET to the bundles endpoint is an array of **DriveItem** resources with the [Bundle][].
-Since all bundles are items, you can use use all the standard item operations on them.
+The response to a GET to the bundles endpoint is an array of [driveItem][] resources with the [bundle][].
+Because all bundles are items, you can use use all the standard item operations on them.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
@@ -129,13 +145,8 @@ Content-type: application/json
 }
 ```
 
-**Note:** Response objects are truncated for clarity.
-All default properties will be returned from the actual call.
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-
-### Error responses
-
-See [Error Responses][error-response] for more info about how errors are returned.
 
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md

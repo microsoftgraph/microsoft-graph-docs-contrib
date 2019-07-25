@@ -1,16 +1,17 @@
 ---
 author: JeremyKelley
 ms.author: jeremyke
-title: Remove item from a bundle
+title: Remove item from bundle
+description: Remove item from a bundle of driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 
-# Remove items from a bundle in OneDrive
+# Remove item from bundle
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove an item from a bundle's children collection.
+Remove an item from a [bundle][].
 
 ## Permissions
 
@@ -28,7 +29,19 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /drive/bundles/{bundle-id}/children/{item-id}
 ```
 
-### Example
+## Request body
+
+Do not supply a request body with this method.
+
+## Response
+
+If successful, the response is `204 No Content`.
+
+Read the [Error Responses][error-response] topic for more info about how errors are returned.
+
+## Example
+
+### Request
 
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
 
@@ -38,18 +51,14 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 ### Response
 
-If successful, the response is `204 No Content`.
-
 <!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-### Error responses
 
-Read the [Error Responses][error-response] topic for more information about how errors are returned.
-
+[bundle]: ../resources/bundle.md
 [error-response]: /graph/errors
 
 <!-- {

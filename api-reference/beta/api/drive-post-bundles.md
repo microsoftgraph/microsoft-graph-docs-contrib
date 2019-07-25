@@ -1,12 +1,13 @@
 ---
 author: JeremyKelley
 ms.author: jeremyke
-title: Create a bundle
+title: Create bundle
+description: Create a bundle of driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 
-# Create a bundle in OneDrive
+# Create bundle
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,14 +33,25 @@ One of the following permissions is required to call this API. To learn more, in
 POST /drive/bundles
 ```
 
-### Request body
+## Request body
 
-In the request body, supply a JSON presentation of the bundle to be created.
+In the request body, supply a JSON representation of the bundle to be created.
 
-### Example
+## Response
 
-Here is an example of how to create a basic new bundle.
+If the request is successful, the [driveItem][] representing the newly created bundle will be returned.
+
+Read the [Error Responses][error-response] topic for more info about how errors are returned.
+
+## Examples
+
+### Example 1: Create a bundle
+
+The following example shows how to create a basic new bundle.
+This request will create a new bundle named `Just some files` and add two existing items to the bundle.
 This bundle can be used to share a collection of files with other users without sharing the folder those items are stored in.
+
+#### Request
 
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
@@ -58,11 +70,7 @@ Content-Type: application/json
 }
 ```
 
-This request will create a new bundle named `Just some files` and add two existing items to the bundle.
-
-### Response
-
-If the request is successful, the newly created bundle will be returned.
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -79,12 +87,13 @@ Content-Type: application/json
 }
 ```
 
-**Note:** Response objects are truncated for clarity.
-All default properties will be returned from the actual call.
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-### Album example
+### Example 2: Create an album
 
 The request to create a new photo album is similar, although inside the bundle facet, the album property is set to a non-null value.
+
+#### Request
 
 <!-- { "blockType": "request", "name": "create-album" } -->
 
@@ -102,9 +111,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
-
-If the request is successful, the newly created album bundle will be returned.
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -122,8 +129,7 @@ Content-Type: application/json
 }
 ```
 
-**Note:** Response objects are truncated for clarity.
-All default properties will be returned from the actual call.
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 If _@microsoft.graph.conflictBehavior_ is set to **rename** and a bundle with the same name already exists, the new bundle name will be updated to be unique.
 OneDrive will append a number to the end of the bundle name.
@@ -131,9 +137,6 @@ OneDrive will append a number to the end of the bundle name.
 For example, `My Day at the Beach` would be renamed `My Day at the Beach 1`.
 If `My Day at the Beach 1` is taken, then the number would be incremented again until a unique bundle name is discovered.
 
-### Error response
-
-Read the [Error Responses][error-response] topic for more info about how errors are returned.
 
 [error-response]: /graph/errors
 

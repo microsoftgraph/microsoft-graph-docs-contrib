@@ -1,12 +1,13 @@
 ---
 author: JeremyKelley
 ms.author: jeremyke
-title: Get a bundle
+title: Get bundle
+description: Get a bundle of driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 
-# Get metadata for a bundle in OneDrive
+# Get bundle
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,21 +33,30 @@ GET /drive/items/{bundle-id}
 Because bundles are items, you can use the **items** collection to return metadata about a bundle.
 You can also use the **bundles** collection as a convenience to ensure you're getting a bundle in response.
 
-### Optional query parameters
+## Optional query parameters
 
 You can use the [OData query parameters][odata-parameters] to restrict the shape of the objects returned from this call.
 
-### Optional request headers
+## Optional request headers
 
 | Name          | Value | Description
 |:--------------|:------|:---------------------------------------------------
 | if-none-match | etag  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.
 
-### Request body
+## Request body
 
 Do not supply a request body with this method.
 
-### Example
+## Response
+
+If successful, this method returns a [driveItem][driveItem] resource with the [bundle][bundle] in the response body.
+
+Read the [Error Responses][error-response] topic for more info about how errors are returned.
+
+## Examples
+
+### Example 1: Get a bundle
+#### Request
 
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
@@ -54,9 +64,7 @@ Do not supply a request body with this method.
 GET /drive/bundles/{bundle-id}
 ```
 
-## Response
-
-If successful, this method returns a [driveItem][driveItem] resource with the [bundle][bundle] in the response body.
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -82,14 +90,13 @@ Content-type: application/json
 }
 ```
 
-**Note:** The response object is truncated for clarity.
-All default properties will be returned from the actual call.
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-## Get a bundle and its children in a single call
+### Example 2: Get a bundle and its children in a single call
 
 You can use the [`expand`](/graph/query-parameters) query string parameter to include the children of a bundle in the same call as retrieving the metadata of a bundle.
 
-### HTTP request for bundle and children
+#### Request
 
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
@@ -97,12 +104,12 @@ You can use the [`expand`](/graph/query-parameters) query string parameter to in
 GET /drive/items/{bundle-id}?expand=children
 ```
 
-### Response with bundle and children
+#### Response
 
 This call will return the bundle metadata and a list of children of the bundle.
 If the bundle has no children, it will return an empty collection.
 
-If the number of children in the bundle is greater than the default page size, the `children@odata.nextLink` property will be returned with a URL that can be
+If the number of children in the bundle is greater than the default page size, the **children@odata.nextLink** property will be returned with a URL that can be
 used to request the next page of children in the bundle.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
@@ -122,17 +129,13 @@ Content-Type: application/json
 }
 ```
 
-**Note:** Response objects are truncated for clarity.
-All default properties will be returned from the actual call.
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-## Error responses
 
-See [Error Responses][error-response] for more info about how errors are returned.
-
+[bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
-[bundle]: ../resources/bundle.md
 
 
 <!-- {

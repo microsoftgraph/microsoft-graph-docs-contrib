@@ -1,7 +1,8 @@
 ---
 author: JeremyKelley
 ms.author: jeremyke
-title: Bundle
+title: bundle resource type
+description: 'bundle' facet describing a driveItem that is a logical grouping of other driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
@@ -13,7 +14,27 @@ A 'bundle' is a logical grouping of files used to share multiple files at once. 
 
 The `bundle` facet on a [driveItem][] identifies an item as a bundle and groups bundle-specific information into a single structure. It is only included on [driveItem][] resources returned from the **bundles** endpoint.
 
-Note that the `bundle` resource type itself is not entity of its own, and is only a facet on a [driveItem][]. The `bundles` collection on a [drive][] is of type [driveItem][], NOT `bundle`.
+Note that the `bundle` resource type itself is not an entity of its own, and is only a facet on a [driveItem][]. The `bundles` collection on a [drive][] is of type [driveItem][], not `bundle`.
+
+## Methods
+
+|                        Method             |         Return type      | Description        |
+| :---------------------------------------- | :----------------------- | :------------------|
+| [List bundles][bundle-list]               | [driveItem][] collection | List all bundles in a drive |
+| [Get bundle][bundle-get]                  | [driveItem][]            | Get bundle metadata |
+| [Create bundle][bundle-create]            | [driveItem][]            | Create a new bundle |
+| [Add item][bundle-add-item]               | None                     | Add a [driveItem][] to an existing bundle |
+| [Remove item][bundle-remove-item]         | None                     | Remove a [driveItem][] from an existing bundle |
+| [Update bundle][bundle-update]            | [driveItem][]            | Update bundle metadata |
+| [Delete bundle][bundle-delete]            | None                     | Delete bundle |
+
+
+## Properties
+
+| Property name | Type      | Description
+|:--------------|:----------|:------------------------------------------------
+| childCount    | Int32     | Number of children contained immediately within this container.
+| album         | [album][] | If the bundle is an [album][], then the `album` property is included
 
 ## JSON representation
 
@@ -25,32 +46,13 @@ Note that the `bundle` resource type itself is not entity of its own, and is onl
 }
 ```
 
-## Properties
-
-| Property name | Type      | Description
-|:--------------|:----------|:------------------------------------------------
-| childCount    | Int32     | Number of children contained immediately within this container.
-| album         | [album][] | If the bundle is an [album][], then the `album` property is included
-
-## Methods
-
-|                        Common task                         |         HTTP method                                 |
-| :--------------------------------------------------------- | :-------------------------------------------------- |
-| [List bundles][bundle-list]                                | `GET /drive/bundles`                                |
-| [Get bundle][bundle-get]                                   | `GET /drive/bundles/{bundle-id}`                    |
-| [Create bundle][bundle-create]                             | `POST /drive/bundles`                               |
-| [Add item to bundle][bundle-add-item]                      | `POST /drive/bundles/{bundle-id}/children`          |
-| [Remove item from bundle][bundle-remove-item]              | `DELETE /drive/bundles/{bundle-id}/items/{item-id}` |
-| [Update bundle][bundle-update]                             | `PATCH /drive/bundles/{bundle-id}`                  |
-| [Delete bundle][bundle-delete]                             | `DELETE /drive/bundles/{bundle-id}`                 |
-
 [album]: album.md
 [drive]: drive.md
 [driveItem]: driveItem.md
 
 [bundle-list]: ../api/bundle-list.md
 [bundle-get]: ../api/bundle-get.md
-[bundle-create]: ../api/bundle-create.md
+[bundle-create]: ../api/drive-post-bundles.md
 [bundle-add-item]: ../api/bundle-addItem.md
 [bundle-remove-item]: ../api/bundle-removeItem.md
 [bundle-update]: ../api/bundle-update.md

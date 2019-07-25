@@ -1,10 +1,12 @@
 ---
 author: kevklam
 ms.author: kevinlam
-title: Grant access to a link - OneDrive API
+title: permission: grant
+description: Grants a list of users access to use the specified link
 localization_priority: Normal
+ms.prod: "sharepoint"
 ---
-# Grant users access to a link
+# permission: grant
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,6 +50,17 @@ In the request body, provide a JSON object with the following parameters.
 | recipients         | Collection([driveRecipient][]) | A collection of recipients who will receive access.
 | roles              | Collection(String)             | If the link is an "existing access" link, specifies roles to be granted to the users. Otherwise must match the role of the link.
 
+For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration-values).
+
+## Response
+
+If successful, this method returns `200 OK` response code and a [permission][] collection in the response body.
+
+A [permission][] representing the updated link will always be returned in the result set on success. The updated link can be identified by the presence of a 'link' facet containing the 'scope' property. In some cases it may be possible that the updated link has a different URL than the original link, in which case the new URL should be used.
+
+Read the [Error Responses][error-response] topic for more info about how errors are returned.
+
+
 ## Example
 
 This example grants the users john@contoso.com and ryan@external.com access to a sharing link without modifying other existing permissions on the link.
@@ -75,12 +88,6 @@ Content-type: application/json
 
 ### Response
 
-If successful, this method returns `200 OK` response code and a [permission][] collection in the response body.
-
-A [permission][] representing the updated link will always be returned in the result set on success. The updated link can be identified by the presence of a 'link' facet containing the 'scope' property. In some cases it may be possible that the updated link has a different URL than the original link, in which case the new URL should be used.
-
-#### General Response
-
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
 ```json
@@ -106,7 +113,10 @@ Content-type: application/json
 }
 ```
 
-#### Response for 'existing access' link
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+
+### Response for 'existing access' link
 
 If the link is an [existing access](../resources/permission.md#existing-access-link) link, then additional permissions will be returned representing the following:
 
@@ -171,14 +181,9 @@ Content-type: application/json
 
 ```
 
-## Remarks
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-- For a list of available roles, see [Roles enumeration](../resources/permission.md#roles-enumeration-values).
 
-## Error Responses
-
-Read the [Error Responses][error-response] topic for more information about
-how errors are returned.
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors

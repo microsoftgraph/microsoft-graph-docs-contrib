@@ -2,21 +2,22 @@
 author: JeremyKelley
 ms.author: jeremyke
 title: Update a bundle
+description: Update a bundle of driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
 ---
 
-# Update a bundle in OneDrive
+# Update bundle
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the metadata for a bundle in OneDrive by ID.
-Only some Bundle metadata may be updated:
+Update the metadata for a [bundle][] of [driveItems][driveItem] by ID.
+You can only update the following metadata:
 
-* Bundle's name
-* Album's `coverSourceId` (if applicable)
+* Bundle name
+* Album `coverImageItemId` (if applicable)
 
-If any other changes are attempted, they will be ignored.
+Any other change requests will be ignored.
 
 ## Permissions
 
@@ -36,23 +37,30 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /drive/items/{bundle-id}
 ```
 
-### Optional request headers
+## Optional request headers
 
 | Name     | Value | Description
 |:---------|:------|:--------------------------------------------------------
 | if-match | etag  | If this request header is included and the eTag provided does not match the current eTag on the buncle, a `412 Precondition Failed` response is returned.
 
-### Request body
+## Request body
 
 In the request body, supply the values for relevant fields that should be
 updated. Existing properties that are not included in the request body
 will maintain their previous values or be recalculated based on changes to other
-property values. For best performance you shouldn't include existing values
-that haven't changed.
+property values. For best performance, don't include existing values that haven't changed.
 
-### Example
+## Response
+
+If successful, this method returns a [driveItem][] resource that represents the updated bundle in the response body.
+
+Read the [Error Responses][error-response] topic for more info about how errors are returned.
+
+## Example
 
 This example renames a bundle.
+
+### Request
 
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
@@ -66,8 +74,6 @@ Content-Type: application/json
 ```
 
 ### Response
-
-If successful, this method returns a [DriveItem][] resource that represents the updated Bundle in the response body.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -84,15 +90,12 @@ Content-Type: application/json
 }
 ```
 
-**Note:** The response object is truncated for clarity.
-All default properties will be returned from the actual call.
+The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
-### Error responses
 
-See [Error Responses][error-response] for details about how errors are returned.
-
-[error-response]: /graph/errors
+[bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",
