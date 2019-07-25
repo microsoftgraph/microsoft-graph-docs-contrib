@@ -44,47 +44,140 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [mailFolder](../resources/mailfolder.md) object in the response body.
-## Example
-##### Request
-Here is an example of the request.
+## Examples
+### Example 1: Get a mail folder
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
   "name": "get_mailfolder"
 }-->
+
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM
 ```
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-mailfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
-  "childFolderCount": 99,
-  "unreadItemCount": 99,
-  "totalItemCount": 99,
-  "id": "id-value"
+  "id": "AAMkAGVmMDEzM",
+  "displayName": "Inbox",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 2,
+  "unreadItemCount": 59,
+  "totalItemCount": 60,
+  "wellKnownName": "inbox"
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_mailfolder-Cs-snippets.md)]
+
+### Example 2: Get a mail search folder
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkAGVmMDEzM"],
+  "name": "get_mailSearchfolder"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzN
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-mailsearchfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_mailfolder-Javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-mailsearchfolder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-mailsearchfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailSearchFolder"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.mailSearchFolder",
+  "id": "AAMkAGVmMDEzN",
+  "displayName": "Get MyAnalytics",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 0,
+  "unreadItemCount": 6,
+  "totalItemCount": 6,
+  "wellKnownName": null,
+  "isSupported": true,
+  "includeNestedFolders": true,
+  "sourceFolderIds": [
+    "AAMkAGVmMDEzM"
+  ],
+  "filterQuery": "contains(subject, 'MyAnalytics')"
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -95,7 +188,5 @@ Content-length: 179
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/v1.0/api/mailfolder-get.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
   ]
 }-->
