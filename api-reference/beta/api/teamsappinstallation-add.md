@@ -43,7 +43,7 @@ POST /teams/{id}/installedApps
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 

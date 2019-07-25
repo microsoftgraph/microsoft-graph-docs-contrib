@@ -51,13 +51,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: List installed apps
+### Example 1: List apps installed for the specified user
 
 #### Request
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "user_list_teamsApps"
 }-->
 ```http
@@ -70,6 +70,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "user_list_teamsApps",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -78,7 +79,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
@@ -88,16 +88,14 @@ Content-length: 55
   ]
 }
 ```
-### Example 2: Get the names of installed apps
-
-The following example gets the names of the installed apps.
+### Example 2: Get the names and other details of apps installed for the user
 
 #### Request
 
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
-  "name": "user_list_teamsApps"
+  "name": "user_list_teamsApps_details"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition
@@ -110,6 +108,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "user_list_teamsApps_details",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -118,7 +117,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
     "value": [

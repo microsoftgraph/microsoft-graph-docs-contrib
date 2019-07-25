@@ -45,7 +45,7 @@ The request body should contain the ID of the existing catalog app to be added.
 
 ## Response
 
-If successful, this method returns a `201 OK` response code.
+If successful, this method returns a `201 Created` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -53,11 +53,13 @@ If successful, this method returns a `201 OK` response code.
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "user_add_teamsApp"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
+Content-type: application/json
+
 {
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
@@ -67,19 +69,13 @@ POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.teamsAppInstallation",
-  "isCollection": true
+  "truncated": true
 } -->
 
 ```http
-HTTP/1.1 201 OK
-Content-type: application/json
-Content-length: 0
+HTTP/1.1 201 Created
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
