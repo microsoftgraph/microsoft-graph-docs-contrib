@@ -1,6 +1,6 @@
 ---
 title: "Get featureRolloutPolicy"
-description: "Retrieve the properties and relationships of featurerolloutpolicy object."
+description: "Retrieve the properties and relationships of a featurerolloutpolicy object."
 localization_priority: Normal
 author: "srvara"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.
+Retrieve the properties and relationships of a [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.
 
 ## Permissions
 
@@ -67,8 +67,7 @@ GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies/df85e4d9-e
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
