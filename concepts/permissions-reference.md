@@ -91,8 +91,11 @@ _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ are valid o
 
 ### Example usage
 
-- _AdministrativeUnit.Read.All_: Read administrative units and administrative unit membership (`GET /beta/administrativeUnits`)
-- _AdministrativeUnit.ReadWrite.All_: Create, read, update, and delete administrative units and manage administrative unit membership  (`PATCH /beta/administrativeUnits`)
+- _AdministrativeUnit.Read.All_: Read administrative units (`GET /beta/administrativeUnits`)
+- _AdministrativeUnit.Read.All_: Read members list of an administrative unit (`GET /beta/administrativeUnits/<id>/members`)
+- _AdministrativeUnit.ReadWrite.All_: Create an administrative unit (`POST /beta/administrativeUnits`)
+- _AdministrativeUnit.ReadWrite.All_: Update an administrative unit (`PATCH /beta/administrativeUnits/<id>`)
+- _AdministrativeUnit.ReadWrite.All_: Add members to an administrative unit  (`POST /beta/administrativeUnits/<id>/members`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -1066,8 +1069,13 @@ Role management permissions are only valid for work or school accounts.
 
 ### Example usage
 
-- _RoleManagement.Read.Directory_: Read the role-based access control (RBAC) settings for your company's directory (`GET /v1.0/directoryRoles`, `GET /v1.0/directoryRoleTemplates`)
-- _RoleManagement.ReadWrite.Directory_: Read and manage the role-based access control (RBAC) settings for your company's directory  (`PATCH /v1.0/directoryRoles`)
+- _RoleManagement.Read.Directory_: Read the list of available role templates (`GET /directoryRoleTemplates`)
+- _RoleManagement.Read.Directory_: Read the list of activated roles in your directory (`GET /directoryRoles`)
+- _RoleManagement.Read.Directory_: Read the list of members for a role (`GET /directoryRoles/<id>/members`)
+- _RoleManagement.Read.Directory_: Read the list of administrative unit-scoped members for a role (`GET /directoryRoles/<id>/scopedMembers`)
+- _RoleManagement.ReadWrite.Directory_: Activate a directory role from a role template  (`POST /directoryRoles`)
+- _RoleManagement.ReadWrite.Directory_: Add a member to a directory role (`POST /directoryRoles/<id>/members`)
+- _RoleManagement.ReadWrite.Directory_: Add an administrative unit-scoped member to a directory role (`POST /directoryRoles/<id>/scopedMembers`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
