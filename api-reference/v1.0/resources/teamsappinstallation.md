@@ -2,7 +2,6 @@
 title: "teamsAppInstallation resource type"
 description: "A teamsApp installed in a team. "
 author: "clearab"
-doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType

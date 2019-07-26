@@ -2,7 +2,6 @@
 title: "Add app to team"
 description: "Install an app to the specified team."
 author: "clearab"
-doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
