@@ -4,7 +4,7 @@ description: "Retrieve a list of agreement objects."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: "jthake-msft"
+author: ""
 ---
 
 # List agreements

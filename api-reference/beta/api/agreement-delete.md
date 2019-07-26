@@ -4,7 +4,7 @@ description: "Delete an agreement object."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ""
-author: "jthake-msft"
+author: ""
 ---
 
 # Delete agreement
