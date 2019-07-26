@@ -12,7 +12,7 @@ ms.prod: "microsoft-teams"
 
 Play a prompt in the call.
 
-For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
+For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 |clientContext|String|The client context.|
 
 ## Response
-If successful, this method returns `200 OK` response code and [playPromptOperation](../resources/playpromptoperation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [playPromptOperation](../resources/playpromptoperation.md) object in the response body.
 
 ## Example
 The following example shows how to call this API.
