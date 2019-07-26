@@ -40,7 +40,10 @@ Here is a JSON representation of the resource.
   "expirationDateTime": "string (timestamp)",
   "id": "string (identifier)",
   "clientState": "string",
-  "creatorId": "string"
+  "creatorId": "string",
+  @@@subject to change@@@"includeProperties": "bool",
+  @@@"publicEncryptionKey": "string",
+  @@@"publicEncryptionKeyId": "string",
 }
 ```
 
