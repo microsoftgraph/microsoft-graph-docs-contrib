@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint."
 ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority

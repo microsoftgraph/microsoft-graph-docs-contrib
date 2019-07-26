@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The Deleted resource indicates that the item has been deleted."
 ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal

@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "Search the hierarchy of items for items matching a query."
 ms.date: 09/10/2017
 title: Search for files
 localization_priority: Normal

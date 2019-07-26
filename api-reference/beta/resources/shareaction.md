@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: ""
+description: "The ShareAction resource provides information about an [activity][activity] that shared an item."
 ms.date: 09/14/2017
 title: ShareAction
 localization_priority: Normal

@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "You can use createLink action to share a DriveItem via a sharing link."
 ms.date: 09/10/2017
 title: Share a file with a link
 localization_priority: Normal

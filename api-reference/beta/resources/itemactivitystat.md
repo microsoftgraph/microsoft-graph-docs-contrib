@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: ""
+description: "The itemActivityStat resource provides information about activities that took place within an interval of time."
 ms.date: 09/14/2017
 title: ItemActivityStat
 localization_priority: Normal

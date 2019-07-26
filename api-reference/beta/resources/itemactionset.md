@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: ""
+description: "The ItemActionSet resource provides information about the actions that made up an [activity][itemActivity] on an item."
 ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal

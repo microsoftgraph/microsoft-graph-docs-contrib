@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The Identity resource represents an identity of an _actor_."
 ms.date: 09/14/2017
 title: Identity
 localization_priority: Normal

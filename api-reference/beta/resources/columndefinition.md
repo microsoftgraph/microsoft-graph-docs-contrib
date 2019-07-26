@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "Here is a JSON representation of a columnDefinition resource."
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal

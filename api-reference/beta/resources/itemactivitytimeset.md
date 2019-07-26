@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: ""
+description: "The ItemActivityTimeSet resource provides information about when an [activity][activity] on an item took place."
 ms.date: 09/14/2017
 title: ItemActivityTimeSet
 localization_priority: Normal

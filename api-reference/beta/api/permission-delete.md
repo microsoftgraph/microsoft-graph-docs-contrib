@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "Remove access to a DriveItem."
 ms.date: 09/10/2017
 title: Remove access to an item
 localization_priority: Normal

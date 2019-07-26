@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "Download the contents of the primary stream (file) of a DriveItem. Only driveItems with the file property can be downloaded."
 ms.date: 09/10/2017
 title: Download a file
 localization_priority: Normal

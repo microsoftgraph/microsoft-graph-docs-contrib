@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: ""
+description: "The defaultColumnValue on a columnDefinition resource specifies the default value for this column."
 ms.date: 09/12/2017
 title: DefaultColumnValue
 localization_priority: Normal

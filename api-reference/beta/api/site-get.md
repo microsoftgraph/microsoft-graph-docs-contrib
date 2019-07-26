@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "Retrieve properties and relationships for a [site] resource."
 ms.date: 09/10/2017
 title: Get a SharePoint Site
 localization_priority: Normal

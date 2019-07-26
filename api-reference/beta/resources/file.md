@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The File resource groups file-related data items into a single structure."
 ms.date: 09/10/2017
 title: File
 localization_priority: Normal

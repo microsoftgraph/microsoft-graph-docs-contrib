@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The DriveRecipient resource represents a person, group, or other recipient to share with using the invite action."
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal

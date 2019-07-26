@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "To move a DriveItem to a new parent item, your app requests to update the parentReference of the DriveItem to move."
 ms.date: 09/10/2017
 title: Move a file or folder
 localization_priority: Normal

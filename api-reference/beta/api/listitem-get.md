@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "Returns the metadata for an [item] in a [list]."
 ms.date: 09/11/2017
 title: Get an entry from a SharePoint list
 localization_priority: Normal

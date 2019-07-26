@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The publicationFacet resource provides details on the published status of a driveItemVersion or driveItem resource."
 ms.date: 09/10/2017
 title: PublicationFacet
 localization_priority: Normal

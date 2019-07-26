@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The listInfo complex type provides additional information about a [list]."
 ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal

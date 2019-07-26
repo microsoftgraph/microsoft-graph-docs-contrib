@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: ""
+description: "The presence of the EditAction resource on an [itemActivity][activity] indicates that the activity edited an item."
 ms.date: 09/14/2017
 title: EditAction
 localization_priority: Normal

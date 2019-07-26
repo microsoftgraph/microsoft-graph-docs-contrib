@@ -1,6 +1,6 @@
 ---
 author: kevklam
-description: ""
+description: "The geolocationColumn on a columnDefinition resource indicates that the column holds a geolocation."
 ms.date: 09/10/2018
 title: GeolocationColumn
 localization_priority: Normal

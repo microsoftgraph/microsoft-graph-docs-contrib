@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "Retrieve the list of Drive resources available for a target User, Group, or Site."
 ms.date: 09/10/2017
 title: List Drives
 localization_priority: Normal

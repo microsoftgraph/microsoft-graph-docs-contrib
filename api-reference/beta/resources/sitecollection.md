@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The siteCollection resource provides more information about a site collection."
 ms.date: 09/10/2017
 title: SiteCollection
 localization_priority: Normal

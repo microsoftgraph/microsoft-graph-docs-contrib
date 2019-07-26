@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The numberColumn on a columnDefinition resource indicates that the column's values are numbers."
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal

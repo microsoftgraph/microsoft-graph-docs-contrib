@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The Hashes resource groups available hashes into a single structure for an item."
 ms.date: 09/10/2017
 title: Hashes
 localization_priority: Normal

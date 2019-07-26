@@ -1,6 +1,6 @@
 ---
 author: chackman
-description: ""
+description: "List the items that have been followed by the signed in user."
 title: List followed items
 localization_priority: Normal
 ms.prod: "sharepoint"

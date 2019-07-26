@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The Image resource groups image-related properties into a single structure."
 ms.date: 09/10/2017
 title: Image
 localization_priority: Normal

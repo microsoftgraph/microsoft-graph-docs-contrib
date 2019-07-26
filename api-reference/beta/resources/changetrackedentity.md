@@ -1,6 +1,6 @@
 ---
 title: "changeTrackedEntity resource type"
-description: ""
+description: "None"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""

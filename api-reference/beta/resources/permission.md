@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "The permission resource provides information about a sharing permission granted for a driveItem resource."
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Normal

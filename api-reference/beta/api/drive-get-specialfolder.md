@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "Use the special collection to access a special folder by name."
 ms.date: 09/10/2017
 title: Get Special Folders
 localization_priority: Normal

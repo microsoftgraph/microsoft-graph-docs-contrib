@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: ""
+description: "Return a collection of DriveItems in the children relationship of a DriveItem."
 ms.date: 09/10/2017
 title: List the contents of a folder
 localization_priority: Normal

@@ -1,6 +1,6 @@
 ---
 author: chackman
-description: ""
+description: "Follow a driveItem."
 title: Follow drive item
 localization_priority: Normal
 ms.prod: "sharepoint"

@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: ""
+description: "The presence of the CreateAction resource on an [itemActivity][activity] indicates that the activity created an item."
 ms.date: 09/14/2017
 title: CreateAction
 localization_priority: Normal
