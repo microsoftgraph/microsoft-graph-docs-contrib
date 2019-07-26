@@ -13,7 +13,7 @@ A **site** resource represents a team site in SharePoint.
 
 [site]: ../resources/site.md
 
-A **site** is addressed be a unique identifier which is a composite ID of the following values:
+A **site** is addressed by a unique identifier which is a composite ID of the following values:
 
 * Site collection hostname (contoso.sharepoint.com)
 * Site collection unique ID (GUID)
