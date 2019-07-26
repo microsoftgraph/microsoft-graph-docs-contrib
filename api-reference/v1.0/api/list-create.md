@@ -5,7 +5,7 @@ ms.date: 09/11/2017
 title: Create a SharePoint List
 localization_priority: Normal
 ms.prod: "sharepoint"
-description: "Create a new [list][] in a [site][]."
+description: "Create a new list in a site."
 doc_type: apiPageType
 ---
 # Create a new list

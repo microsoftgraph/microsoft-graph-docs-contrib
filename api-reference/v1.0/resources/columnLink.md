@@ -4,7 +4,7 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
 localization_priority: Normal
-description: "A columnLink on a [contentType][] attaches a site columnDefinition to that content type."
+description: "A columnLink on a contentType attaches a site columnDefinition to that content type."
 ms.prod: ""
 doc_type: resourcePageType
 ---
