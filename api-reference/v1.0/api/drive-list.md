@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: List Drives
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: ""
+description: "Retrieve the list of Drive resources available for a target User, Group, or Site."
 doc_type: apiPageType
 ---
 # List available drives

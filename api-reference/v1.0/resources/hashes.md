@@ -4,7 +4,7 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 localization_priority: Normal
 title: "Hashes resource type"
-description: ""
+description: "The Hashes resource groups available hashes into a single structure for an item."
 ms.prod: ""
 doc_type: resourcePageType
 ---

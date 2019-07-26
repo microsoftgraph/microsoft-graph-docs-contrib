@@ -4,7 +4,7 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-description: ""
+description: "The sharedDriveItem resource is returned when using the Shares API to access a shared driveItem."
 ms.prod: ""
 doc_type: resourcePageType
 ---

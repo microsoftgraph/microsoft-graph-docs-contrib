@@ -5,7 +5,7 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: "sharepoint"
-description: ""
+description: "The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint."
 doc_type: resourcePageType
 ---
 

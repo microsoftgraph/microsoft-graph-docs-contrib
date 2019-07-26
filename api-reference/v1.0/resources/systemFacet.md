@@ -4,7 +4,7 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
-description: ""
+description: "The System facet indicates that the object is managed by the system for its own operation."
 ms.prod: ""
 doc_type: resourcePageType
 ---

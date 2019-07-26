@@ -4,7 +4,7 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-description: ""
+description: "The SharingLink resource groups link-related data items into a single structure."
 ms.prod: ""
 doc_type: resourcePageType
 ---

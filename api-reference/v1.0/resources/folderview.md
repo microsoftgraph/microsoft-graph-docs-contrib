@@ -4,7 +4,7 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
-description: ""
+description: "The FolderView resource provides or sets recommendations on the user-experience of a folder."
 ms.prod: ""
 doc_type: resourcePageType
 ---

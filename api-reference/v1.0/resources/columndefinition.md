@@ -4,7 +4,7 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-description: ""
+description: "Here is a JSON representation of a ColumnDefinition resource."
 ms.prod: ""
 doc_type: resourcePageType
 ---

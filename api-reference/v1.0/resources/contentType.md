@@ -4,7 +4,7 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
-description: ""
+description: "The contentType resource represents a _content type_ in SharePoint."
 ms.prod: ""
 doc_type: resourcePageType
 ---
