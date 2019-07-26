@@ -3,7 +3,7 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 localization_priority: Normal
-title: ""
+title: "Hashes resource type"
 description: ""
 ms.prod: ""
 doc_type: resourcePageType

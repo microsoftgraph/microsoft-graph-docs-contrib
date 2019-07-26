@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "dataPolicyOperation resource type"
 description: ""
 author: ""
 localization_priority: Normal
