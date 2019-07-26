@@ -66,7 +66,7 @@ This example renames a bundle.
 <!-- { "blockType": "request", "name": "rename-bundle" } -->
 
 ```json
-PATCH https://graph.microsoft.com/{apiVersion}/drive/items/{bundle-id}
+PATCH https://graph.microsoft.com/beta/drive/items/{bundle-id}
 Content-Type: application/json
 
 {

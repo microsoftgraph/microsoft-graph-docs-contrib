@@ -62,7 +62,7 @@ Read the [Error Responses][error-response] topic for more info about how errors 
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
 ```http
-GET https://graph.microsoft.com/{apiVersion}/drive/bundles/{bundle-id}
+GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 ```
 
 #### Response
@@ -102,7 +102,7 @@ You can use the [`expand`](/graph/query-parameters) query string parameter to in
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
 ```http
-GET https://graph.microsoft.com/{apiVersion}/drive/items/{bundle-id}?expand=children
+GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 ```
 
 #### Response

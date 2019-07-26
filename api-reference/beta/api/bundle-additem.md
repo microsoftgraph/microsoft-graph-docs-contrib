@@ -57,7 +57,7 @@ This request will add an existing item to the specified bundle.
 <!-- {"blockType": "request", "name": "add-to-bundle", "isCollection": true, "@odata.type": "microsoft.graph.driveItem", "tags": "onedrive.only" } -->
 
 ```http
-POST https://graph.microsoft.com/{apiVersion}/drive/bundles/{bundle-id}/children
+POST https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children
 Content-Type: application/json
 
 {

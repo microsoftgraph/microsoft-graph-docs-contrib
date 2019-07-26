@@ -52,7 +52,7 @@ Read the [Error Responses][error-response] topic for more info about how errors 
 <!-- {"blockType": "request", "name": "remove-from-bundle" } -->
 
 ```http
-DELETE https://graph.microsoft.com/{apiVersion}/drive/bundles/{bundle-id}/children/{item-id}
+DELETE https://graph.microsoft.com/beta/drive/bundles/{bundle-id}/children/{item-id}
 ```
 
 ### Response

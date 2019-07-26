@@ -76,7 +76,7 @@ This example grants the users john@contoso.com and ryan@external.com access to a
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
-POST https://graph.microsoft.com/{apiVersion}/shares/{encoded-sharing-url}/permission/grant
+POST https://graph.microsoft.com/beta/shares/{encoded-sharing-url}/permission/grant
 Content-type: application/json
 
 {
