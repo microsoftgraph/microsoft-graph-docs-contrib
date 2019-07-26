@@ -113,7 +113,7 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 
 ##### Notification - operation completed
 
- **Note:** In case of infinite looping this notification is not sent.
+ >**Note:** If infinite looping occurs, this notification is not sent.
  
 ```http
 POST https://bot.contoso.com/api/calls
