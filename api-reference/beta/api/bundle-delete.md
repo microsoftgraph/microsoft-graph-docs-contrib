@@ -58,7 +58,7 @@ Read the [Error Responses][error-response] topic for more info about how errors 
 <!-- { "blockType": "request", "name": "delete-bundle" } -->
 
 ```http
-DELETE /drive/items/{bundle-id}
+DELETE https://graph.microsoft.com/{apiVersion}/drive/items/{bundle-id}
 ```
 
 ### Response
