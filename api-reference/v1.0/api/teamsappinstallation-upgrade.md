@@ -1,15 +1,14 @@
 ---
 title: "Upgrade an app in a team"
 description: "Upgrades an app installation in a team"
-author: "nkramer"
+author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
 # Upgrade an app in a team
-
-
 
 Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md)
 to the latest version of the app.
@@ -31,11 +30,13 @@ POST /teams/{id}/installedApps/{id}/upgrade
 ```
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -44,25 +45,28 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-#### Request
+### Request
+
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
-  "name": "get_team"
+  "blockType": "request",
+  "name": "upgrade_teamsapp"
 }-->
 
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
-#### Response
+
+### Response
+
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response",
+  "name": "upgrade_teamsapp",
+  "truncated": true
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```
