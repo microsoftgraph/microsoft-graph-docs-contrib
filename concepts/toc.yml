@@ -250,6 +250,8 @@
         href: teams-list-all-teams.md
       - name: Configuring built-in tabs
         href: teams-configuring-builtin-tabs.md
+      - name: Protected APIs
+        href: teams-protected-apis.md
     - name: Workbooks and charts
       displayName: Excel
       items:
@@ -290,6 +292,8 @@
       items:
       - name: Overview
         href: use-the-api.md
+      - name: Access data and methods
+        href: traverse-the-graph.md
       - name: Paging
         href: paging.md
       - name: Use query parameters
