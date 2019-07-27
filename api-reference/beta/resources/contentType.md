@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: "The contentType resource represents a _content type_ in SharePoint."
+description: "The contentType resource represents a content type in SharePoint."
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal

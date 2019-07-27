@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: "Update the properties on a [listItem]."
+description: "Update the properties on a listItem."
 ms.date: 09/11/2017
 title: Update a record in a SharePoint list
 localization_priority: Normal

@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: "The CommentAction resource provides information about a comment [activity] made on an item."
+description: "The CommentAction resource provides information about a comment activity made on an item."
 ms.date: 09/14/2017
 title: CommentAction
 localization_priority: Normal

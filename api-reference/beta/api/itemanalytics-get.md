@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: "Get [itemAnalytics] about the views that took place under this resource."
+description: "Get itemAnalytics about the views that took place under this resource."
 ms.date: 10/06/2017
 title: Get analytics
 localization_priority: Normal

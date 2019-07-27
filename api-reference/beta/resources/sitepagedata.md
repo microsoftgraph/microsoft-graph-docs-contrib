@@ -1,6 +1,6 @@
 ---
 author: rahmit
-description: "The sitePageData resource represents the properties of a [webPart]. As these properties vary by web part, this is an OpenType with no fixed properties."
+description: "The sitePageData resource represents the properties of a webPart. As these properties vary by web part, this is an OpenType with no fixed properties."
 ms.date: 09/01/2018
 title: SitePageData
 localization_priority: Normal

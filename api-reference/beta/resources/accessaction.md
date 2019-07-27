@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: "The presence of the accessAction resource on an [itemActivity][activity] indicates that the activity accessed an item."
+description: "The presence of the accessAction resource on an itemActivity indicates that the activity accessed an item."
 ms.date: 09/12/2018
 title: AccessAction
 localization_priority: Normal

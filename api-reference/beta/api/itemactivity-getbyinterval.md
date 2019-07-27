@@ -1,6 +1,6 @@
 ---
 author: daspek
-description: "Get [itemActivityStats] for the activities that took place under this resource within the specified time interval."
+description: "Get itemActivityStats for the activities that took place under this resource within the specified time interval."
 ms.date: 10/06/2017
 title: Get item activity stats by interval
 localization_priority: Normal

@@ -1,6 +1,6 @@
 ---
 author: JeremyKelley
-description: "Create a new [listItem] in a [list]."
+description: "Create a new listItem in a list."
 ms.date: 09/11/2017
 title: Create a new entry in a SharePoint list
 localization_priority: Normal

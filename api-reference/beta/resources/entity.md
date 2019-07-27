@@ -1,6 +1,6 @@
 ---
 title: "entity resource type"
-description: "None"
+description: ""
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
