@@ -2,7 +2,6 @@
 title: "teamsAppInstallation resource type"
 description: "A teamsApp installed in a team, a chat, or a user's personal scope. "
 author: "clearab"
-doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType

@@ -5,7 +5,6 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
-doc_type: "resourcePageType"
 ---
 
 # directoryDefinition resource type
