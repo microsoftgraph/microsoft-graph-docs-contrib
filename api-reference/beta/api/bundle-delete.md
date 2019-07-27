@@ -5,6 +5,7 @@ title: Delete bundle
 description: Delete a bundle of driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 
 # Delete bundle

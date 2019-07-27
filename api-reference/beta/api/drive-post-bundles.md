@@ -5,6 +5,7 @@ title: Create bundle
 description: Create a bundle of driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 
 # Create bundle

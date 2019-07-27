@@ -5,6 +5,7 @@ title: Grant permission
 description: Grant a list of users access to use the specified link
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Grant permission
 
