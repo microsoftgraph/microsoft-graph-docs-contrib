@@ -22,7 +22,7 @@ transferTarget.replacesCallId = "replacesCallId-value";
 String clientContext = "clientContext-value";
 
 graphClient.app().calls("{id}")
-	.transfer(transferTarget,target,replacesCallId)
+	.transfer(transferTarget)
 	.buildRequest()
 	.post();
 
