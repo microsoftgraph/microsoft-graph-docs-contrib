@@ -29,7 +29,7 @@ GET /security/alerts
 GET /security/alerts?$top=1
 GET /security/alerts?$filter={property} eq '{property-value}'
 GET /security/alerts?$filter={property} eq '{property-value}'&$top=5
-GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{property-value}'
+GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq '{property-value}'
 ```
 
 ## Optional query parameters
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/security/alerts
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alerts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
