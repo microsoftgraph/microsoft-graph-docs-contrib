@@ -1,9 +1,10 @@
 ---
 title: "List directReports"
-description: "Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager."
+description: "Get a user's direct reports."
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List directReports
@@ -11,16 +12,15 @@ ms.prod: "microsoft-identity-platform"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get user's direct reports. Returns the users and contacts for whom this user is assigned as manager.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.Read, User.ReadWrite, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
+|Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Delegated (personal Microsoft account) | Not supported |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-
-> Note: User.Read and User.ReadBasic.All is the minimum needed for direct reports of the signed-in user. User.Read.All is the minimum needed for direct reports of any other user, which requires admin consent.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
