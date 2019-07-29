@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example gets the availability information for two users for the specified date, time, and time zone.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "calendar_getSchedule"
 }-->
 ```http
@@ -76,7 +76,7 @@ Content-Type: application/json
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.scheduleInformation",
   "isCollection": true

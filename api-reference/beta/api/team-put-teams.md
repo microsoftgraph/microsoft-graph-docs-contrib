@@ -61,7 +61,7 @@ If successful, this method should return a `201 Created` response code and a [te
 
 The following is an example of the request.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_team"
 }-->
 ```http
@@ -92,7 +92,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.team"
 } -->
