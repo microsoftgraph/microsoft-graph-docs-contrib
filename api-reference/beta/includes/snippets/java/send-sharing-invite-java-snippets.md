@@ -8,25 +8,19 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 LinkedList<DriveRecipient> recipientsList = new LinkedList<DriveRecipient>();
 DriveRecipient recipients = new DriveRecipient();
-recipients.email = "ryan@contoso.org";
+recipients.email = "john@contoso.com";
 
 recipientsList.add(recipients);
+DriveRecipient recipients1 = new DriveRecipient();
+recipients1.email = "ryan@external.com";
 
-String message = "Here's the file that we're collaborating on.";
-
-boolean requireSignIn = True;
-
-boolean sendInvitation = True;
+recipientsList.add(recipients1);
 
 LinkedList<String> rolesList = new LinkedList<String>();
-rolesList.add("write");
+rolesList.add("read");
 
-String password = "password123";
-
-int expirationDateTime = 7/15/2018 2:00:00 PM;
-
-graphClient.me().drive().items("{item-id}")
-	.invite(requireSignIn,rolesList,sendInvitation,message,recipientsList,expirationDateTime,password)
+graphClient.shares("{encoded-sharing-url}").permission()
+	.grant(rolesList,recipientsList)
 	.buildRequest()
 	.post();
 
