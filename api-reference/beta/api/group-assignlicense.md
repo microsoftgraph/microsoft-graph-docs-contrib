@@ -2,7 +2,7 @@
 title: "group: assignLicense"
 description: "Add or remove licenses on the group. Licenses assigned to the group will be assigned to all users in the group."
 localization_priority: Normal
-author: "dkershaw10"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /groups/{group_id}/assignLicense
+POST /groups/{id}/assignLicense
 ```
 ## Request headers
 | Header       | Value |
@@ -97,7 +97,6 @@ Content-type: application/json
   "deletedDateTime": null,
   "classification": null,
   "createdDateTime": "2018-04-18T22:05:03Z",
-  "creationOptions": [],
   "securityEnabled": true,
 
 }
@@ -144,7 +143,6 @@ Content-type: application/json
   "deletedDateTime": null,
   "classification": null,
   "createdDateTime": "2018-04-18T22:05:03Z",
-  "creationOptions": [],
   "securityEnabled": true,
 
 }

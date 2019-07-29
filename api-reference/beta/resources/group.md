@@ -53,7 +53,8 @@ This resource supports:
 |[Delete setting](../api/directorysetting-delete.md) | None |Delete a setting object. |
 |[List endpoints](../api/group-list-endpoints.md) |[endpoint](endpoint.md) collection| Get an endpoint object collection. |
 |[Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
-|[validateProperties](../api/group-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. | 
+|[validateProperties](../api/group-validateproperties.md)|JSON| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
+|[assignlicense](../api/group-assignlicense.md) | [group](group.md) |Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription.|
 |**Calendar**| | |
 |[Create event](../api/group-post-events.md) |[event](event.md)| Create a new event by posting to the events collection.|
 |[Get event](../api/group-get-event.md) |[event](event.md)|Read properties of an event object.|

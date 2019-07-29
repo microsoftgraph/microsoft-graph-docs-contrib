@@ -56,6 +56,7 @@ This resource supports:
 |[List createdObjects](../api/user-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Get the directory objects created by the user from the createdObjects navigation property.|
 |[List agreementAcceptances](../api/user-list-agreementacceptances.md) | [agreementAcceptance](agreementacceptance.md) collection | Get a list of terms of use acceptance statuses of the user.|
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.|
+|reprocesslicense |[user](user.md)| Reprocess subscription assignments for the user.|
 |[List licenseDetails](../api/user-list-licensedetails.md) |[licenseDetails](licensedetails.md) collection| Get a licenseDetails object collection.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|String collection|Check for membership in a list of groups. The check is transitive.|
 |[delta](../api/user-delta.md)|user collection| Get incremental changes for users. |
