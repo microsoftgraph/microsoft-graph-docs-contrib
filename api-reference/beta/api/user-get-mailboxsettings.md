@@ -19,7 +19,7 @@ Time zone is one of the preferred settings a user can set up for the user's mail
 
 When you get a user's preferred time zone, the time zone is returned in the format that it was set up. If you want that time zone to be in a specific format (Windows or IANA), you can first [update the preferred time zone in that format as a mailbox setting](user-update-mailboxsettings.md). Subsequently you will be able to get the time zone in that format. Alternatively, you can manage the format conversion separately in your app.
 
-Date and time formats are preferred settings a user can set up using the Outlook Web App. We support [Short date format](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) and [Short time formats](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime). 
+Date and time formats are preferred settings a user can set up using Outlook on the web. [Short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) and [Short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats are supported. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
