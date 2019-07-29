@@ -30,7 +30,7 @@ boolean maskCallee = False;
 boolean maskCaller = False;
 
 graphClient.app().calls("{id}")
-	.redirect(targetsList,targetDisposition,timeout,maskCallee,maskCaller)
+	.redirect(targetsList,targetDisposition,timeout,maskCallee,maskCaller,callbackUri)
 	.buildRequest()
 	.post();
 

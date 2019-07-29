@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AudioRoutingGroup AudioRoutingGroup = graphClient.app().calls("{id}").audioRoutingGroups("{id}")
+AudioRoutingGroup audioRoutingGroup = graphClient.app().calls("{id}").audioRoutingGroups("{id}")
 	.buildRequest()
 	.get();
 
