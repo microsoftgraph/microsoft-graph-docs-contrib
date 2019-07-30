@@ -2,24 +2,29 @@
 title: "Update user mailbox settings"
 description: "Update one or more settings for the user's mailbox. This includes settings for automatic replies (notify people automatically upon receipt of their email), locale (language and country/region), time zone, and working hours."
 localization_priority: Normal
-author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+author: "angelgolfer-ms"
+ms.prod: "outlook"
 ---
 
 # Update user mailbox settings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update one or more settings for the user's mailbox. This includes settings for [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email), [locale](../resources/localeinfo.md) (language and country/region), time zone, [working hours](../resources/workinghours.md), dateFormat and timeFormat.
+Enable, configure, or disable one or more of the following settings as part of a user's [mailboxSettings](../resources/mailboxsettings.md):
 
-You can enable, configure, or disable one or more of these settings as part of [mailboxSettings](../resources/mailboxsettings.md).
+- [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)
+- dateFormat
+- [locale](../resources/localeinfo.md) (language and country/region)
+- timeFormat
+- time zone
+- [working hours](../resources/workinghours.md)
 
-**Note** You cannot create or delete any mailbox settings.
+When updating the preferred date or time format for a user, specify it in respectively, the [short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) or [short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) format. 
 
-When you update the preferred time zone for a user, you can specify it in the Windows or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. You can also further customize the time zone as shown in [example 2](#request-2) below.
+When updating the preferred time zone for a user, specify it in the Windows or [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. You can also further customize the time zone as shown in [example 2](#example-2) below.
 
-
-[Short date](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) and [Short time](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) formats should be used to update dateFormat, timeFormat settings respectively. 
+> [!TIP] 
+> You cannot create or delete any mailbox settings.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,15 +56,15 @@ shouldn't include existing values that haven't changed. The following are the wr
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user. You can set such notifications for only a future date range.|
+|dateFormat|string|The date format for the user's mailbox.|
 |language|[localeInfo](../resources/localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
+|timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
 |workingHours|[workingHours](../resources/workinghours.md)|The hours, days of a week, and time zone that the user works.|
-|dateFormat|string|The date format for the user's mailbox.|
-|timeFormat|string|The time format for the user's mailbox.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [mailboxSettings](../resources/mailboxsettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the updated properties of a [mailboxSettings](../resources/mailboxsettings.md) object in the response body.
 
 ## Errors
 
@@ -73,8 +78,9 @@ Setting working hours with inappropriate values may return the following errors.
 | Invalid **timeZone** | 400 | InvalidTimeZone | Time Zone settings provided are invalid.|
 
 
-## Example
-##### Request 1
+## Examples
+### Example 1
+#### Request 
 The first example enables automatic replies for a date range, by setting the following properties of the **automaticRepliesSetting** property:
 **status**, **scheduledStartDateTime** and **scheduledEndDateTime**.
 
@@ -121,7 +127,7 @@ Content-Type: application/json
 
 ---
 
-##### Response 1
+#### Response
 The response includes the updated settings for automatic replies. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -152,8 +158,8 @@ Content-type: application/json
 }
 ```
 
-
-##### Request 2
+### Example 2
+#### Request
 The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property 
 to a [custom time zone](../resources/customtimezone.md).
 
@@ -199,7 +205,7 @@ Content-Type: application/json
   }
 } 
 ```
-##### Response 2
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "ignored",

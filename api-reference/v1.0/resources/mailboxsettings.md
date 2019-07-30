@@ -8,7 +8,9 @@ ms.prod: "outlook"
 
 # mailboxSettings resource type
 
-Settings for the primary mailbox of the signed-in user.
+Settings for the primary mailbox of a [user](user.md).
+
+You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) a user's mailbox settings by querying the user's **mailboxSettings** property.
 
 
 ## Properties
