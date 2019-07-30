@@ -60,7 +60,7 @@ PUT https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rub
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/v1.0/education/classes/{id}/assignments/{id}/rubrics/{id}"
+  "@odata.id": "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"
 }
 ```
 
