@@ -1,3 +1,11 @@
+---
+title: "domainDnsTxtRecord resource type"
+description: "Represents a TXT record added to the DNS zone file of a particular domain in the tenant. Inherited from DomainDnsRecord entity."
+author: "davidmu1"
+localization_priority: Normal
+ms.prod: "microsoft-identity-platform"
+---
+
 # domainDnsTxtRecord resource type
 
 Represents a TXT record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.

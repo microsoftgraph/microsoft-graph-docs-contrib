@@ -1,8 +1,16 @@
-# invitation manager
+---
+title: "invitation resource type"
+description: "Represents an invitation that is used to add external users to an organization."
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+---
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+# invitation resource type
 
-Use the invitation manager to create an invite, in order to add an external user to the organization. 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents an invitation that is used to add external users to an organization. 
 
 The invitation process uses the following flow:
 
@@ -17,7 +25,7 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 ## Methods
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create invitation](../api/invitation_post.md) | invitation | Write properties and relationships of invitation object.|
+|[Create invitation](../api/invitation-post.md) | invitation | Write properties and relationships of invitation object.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -34,14 +42,25 @@ Creating an invitation will return a redemption URL in the response (*inviteRede
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|invitedUser|[User](user.md)|The user created as part of the invitation creation. Read-Only|
+|invitedUser|[user](user.md)|The user created as part of the invitation creation. Read-Only|
 
 ## JSON representation
 Here is a JSON representation of the resource
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.invitations" } -->
+<!-- 
+{ 
+    "blockType": "resource",
+    "keyProperty":"id",
+    "@odata.type": "microsoft.graph.invitation", 
+    "optionalProperties": [
+        "invitedUser"
+     ],
+    "baseType": "microsoft.graph.entity"
+} 
+-->
 ```json
 {
+  "id": "string",
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
   "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
@@ -49,18 +68,21 @@ Here is a JSON representation of the resource
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
-
-  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
+  "invitedUser": {"@odata.type": "microsoft.graph.user"},
+  "invitedUserType": "string"
 }
 ```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2016-22-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "invitation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

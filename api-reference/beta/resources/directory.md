@@ -1,6 +1,14 @@
+---
+title: "directory resource type (deleted items)"
+description: ". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+---
+
 # directory resource type (deleted items)
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a deleted item in the directory. When an item is deleted, it is added to the deleted items "container". Deleted items will remain available to restore for up to 30 days. After 30 days, the items are permanently deleted.
 
@@ -10,11 +18,11 @@ Currently, deleted items functionality is only supported for Office 365 [groups]
 
 | Method         | Return Type | Description |
 |:---------------|:------------|:------------|
-|[Get deleted item](../api/directory_deleteditems_get.md) | [directoryObject](directoryobject.md) | Gets the properties of a deleted item. |
-|[Restore deleted item](../api/directory_deleteditems_restore.md) |[directoryObject](directoryobject.md)| Restores a recently deleted item. |
-|[List deleted items](../api/directory_deleteditems_list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
-|[Permanently delete an item](../api/directory_deleteditems_delete.md) | None | Permanently deletes an item. |
-|[List deleted items owned by a user](../api/directory_deleteditems_user_owned.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
+|[Get deleted item](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Gets the properties of a deleted item. |
+|[Restore deleted item](../api/directory-deleteditems-restore.md) |[directoryObject](directoryobject.md)| Restores a recently deleted item. |
+|[List deleted items](../api/directory-deleteditems-list.md) |[directoryObject](directoryobject.md) collection| Gets a list of recently deleted items. |
+|[Permanently delete an item](../api/directory-deleteditems-delete.md) | None | Permanently deletes an item. |
+|[List deleted items owned by a user](../api/directory-deleteditems-user-owned.md) | [directoryObject](directoryobject.md) collection | Lists directory items owned by a user. |
 
 ## Properties
 | Property   | Type |Description|
@@ -31,6 +39,7 @@ Here is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -45,10 +54,13 @@ Here is a JSON representation of the resource.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directory resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

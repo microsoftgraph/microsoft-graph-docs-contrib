@@ -1,6 +1,12 @@
-# secureScores resource type
+---
+title: "secureScore resource type"
+description: "top=n, where n = the number of days of data that you want to retrieve. "
+localization_priority: Normal
+---
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+# secureScore resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a tenant's secure score per day of scoring data, at the tenant and control level. By default, 90 days of data is held. This data is sorted by **createdDateTime**, from latest to earliest. This will allow you to page responses by using $top=n, where n = the number of days of data that you want to retrieve. 
 
@@ -9,7 +15,7 @@ Represents a tenant's secure score per day of scoring data, at the tenant and co
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScores](../api/securescores_list.md) | [secureScores](securescores.md) |Read properties and metadata of a secureScores object.|
+|[List secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Read properties and metadata of a secureScores object.|
 
 
 ## Properties
@@ -42,31 +48,35 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScore"
 }-->
 
 ```json
 {
-"id": "String",
-"azureTenantId": "Guid",
-"createdDate": "DateTimeOffset",
-"licensedUserCount": "Int32",
-"activeUserCount": "Int32",
-"currentScore": "Int32",
-"maxScore": "Int32",
-"averageScore": "Double",
-"enabledServices": "Collection(string)",
-"averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
-"controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
+  "id": "String",
+  "azureTenantId": "Guid",
+  "createdDate": "DateTimeOffset",
+  "licensedUserCount": "Int32",
+  "activeUserCount": "Int32",
+  "currentScore": "Int32",
+  "maxScore": "Int32",
+  "averageScore": "Double",
+  "enabledServices": "Collection(string)",
+  "averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
+  "controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
+  "createdDateTime": "2019-02-07T20:33:53.156Z"
 }
 
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "secureScores resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

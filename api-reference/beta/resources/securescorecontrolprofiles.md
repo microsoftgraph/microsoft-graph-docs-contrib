@@ -1,6 +1,12 @@
-# secureScoreControlProfiles resource type
+---
+title: "secureScoreControlProfile resource type"
+description: "Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls."
+localization_priority: Normal
+---
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+# secureScoreControlProfile resource type
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a tenant's secure score per control data. By default, it returns all controls for a tenant and can explicitly pull individual controls.
 
@@ -9,7 +15,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 
 | Method   | Return Type|Description|
 |:---------------|:--------|:----------|
-|[List secureScoreControlProfiles](../api/securescorecontrolprofiles_list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Read properties and metadata of a secureScoreControlProfiles object.|
+|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md) collection |Get a collection of secureScoreControlProfile objects.|
 
 
 ## Properties
@@ -19,6 +25,7 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	azureTenantId	|	String	|	GUID string for tenant ID.	|
 |	controlName	|	String	|	Name of the control. |
 |	title	|	String	|	Title of the control.	|
+| complianceInformation | [complianceInformation](complianceinformation.md) collection | The collection of compliance information associated with secure score control |
 |	controlCategory	|	String	|	Control action category (Account, Data, Device, Apps, Infrastructure).	|
 |	actionType	|	String	|	Control action type (Config, Review, Behavior).	|
 |	service	|	String	|	Service that owns the control (Exchange, Sharepoint, Azure AD).	|
@@ -32,10 +39,8 @@ Represents a tenant's secure score per control data. By default, it returns all 
 |	remediation |	String	|	Description of what the control will help remediate. |
 |	remediationImpact |	String	|	Description of the impact on users of the remediation. |
 |	actionUrl |	String	|	URL to where the control can be actioned. |
-|	controlStateUpdates |	String	|	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles_update.md)). |
-|	tenantNote |	String	|	Tenant can set per control comments (supports [update](../api/securescorecontrolprofiles_update.md)). |
-|	assignedTo |	String	|	Tenant can assign the control to a individual (supports [update](../api/securescorecontrolprofiles_update.md)). |
-|	updatedBy |	String	|	User principal name of who made changes to a control's state. |
+|	controlStateUpdates | [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) collection |	Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports [update](../api/securescorecontrolprofiles-update.md)). |
+|	vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
 ## Relationships
 
@@ -50,42 +55,43 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 }-->
 
 ```json
 {
-"title": "String", 
-"azureTenantId": "Guid", 
-"referenceId": "String", 
-"controlName": "String", 
-"maxScore": "Int32",
-"actionCategory": "Collection(microsoft.graph.SecureScore.actionCategory)",
-"actionType": "Collection(microsoft.graph.SecureScore.actionType)",
-"service": "String",
-"tier": "Collection(microsoft.graph.SecureScore.tier)",
-"userImpact": "Collection(microsoft.graph.SecureScore.ranking)",
-"implementationCost ": "Collection(microsoft.graph.SecureScore.ranking)",
-"rank ": "Int32",
-"threats": "Collection(microsoft.graph.SecureScore.threat)",
-"deprecated ": "Boolean",
-"remediation": "String",
-"remediationImpact ": "String",
-"actionUrl": "String",
-"controlStateUpdates": "Collection(microsoft.graph.SecureScore.controlStateUpdates)",
-"tenantNotes": "String",
-"upn": "String",
-"comments": "String",
+  "title": "String",
+  "azureTenantId": "String (identifier)",
+  "maxScore": 1024.13,
+  "actionType": "String",
+  "service": "String",
+  "tier": "String",
+  "userImpact": "string",
+  "implementationCost ": "String",
+  "rank ": 100,
+  "threats": ["string"],
+  "deprecated ": false,
+  "remediation": "String",
+  "remediationImpact ": "String",
+  "actionUrl": "String",
+  "controlStateUpdates": [{"@odata.type": "microsoft.graph.secureScoreControlStateUpdate"}],
+  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"},
+  "complianceInformation": [{"@odata.type": "microsoft.graph.complianceInformation"}],
+  "controlCategory": "string",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "secureScoreControlProfiles resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
