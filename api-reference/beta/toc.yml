@@ -7442,6 +7442,8 @@
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
+        - name: Bundles
+          href: resources/bundle.md
       - name: Permissions
         href: resources/permission.md
         items:
@@ -7449,6 +7451,8 @@
           href: api/driveitem-createlink.md
         - name: Use sharing links
           href: api/shares-get.md
+        - name: Add users to sharing link
+          href: api/permission-grant.md
         - name: List permissions
           href: api/driveitem-list-permissions.md
         - name: Add permissions

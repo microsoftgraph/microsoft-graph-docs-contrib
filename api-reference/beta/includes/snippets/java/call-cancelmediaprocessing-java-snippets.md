@@ -11,7 +11,7 @@ boolean all = True;
 String clientContext = "clientContext-value";
 
 graphClient.app().calls("{id}")
-	.cancelMediaProcessing(all,clientContext)
+	.cancelMediaProcessing(clientContext)
 	.buildRequest()
 	.post();
 

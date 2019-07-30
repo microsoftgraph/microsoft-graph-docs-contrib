@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const Call = {
+const call = {
   callbackUri: "https://bot.contoso.com/api/calls",
   mediaConfig: {
     @odata.type: "#microsoft.graph.serviceHostedMediaConfig",
@@ -51,6 +51,6 @@ const Call = {
 
 let res = await client.api('/app/calls')
 	.version('beta')
-	.post({Call : Call});
+	.post({call : call});
 
 ```
