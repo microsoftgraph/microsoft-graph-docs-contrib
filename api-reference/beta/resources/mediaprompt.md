@@ -17,7 +17,6 @@ The mediaPrompt type.
 
 | Property    | Type                      | Description                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| loop        | Int32                     | The loop count. 0 value indicates to loop infinitely. The default value is `1`. |
 | mediaInfo   | [mediaInfo](mediainfo.md) | The media information                                                           |
 
 ## JSON representation
@@ -34,7 +33,6 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "loop": 1024,
   "mediaInfo": { "@odata.type": "#microsoft.graph.mediaInfo" }
 }
 ```
@@ -47,11 +45,12 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.mediaPrompt",
   "mediaInfo": {
+    "@odata.type": "#microsoft.graph.mediaInfo",
     "uri": "https://cdn.contoso.com/beep.wav",
     "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-  },
-  "loop": 5
+  }
 }
 ```
 
