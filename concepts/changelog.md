@@ -13,9 +13,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2019
 
-### Calendar | Places
+### Calendar | Place
 
-Debut of places API to provide rich details for locations in apps.
+Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
