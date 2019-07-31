@@ -131,7 +131,6 @@ HTTP/1.1 204 No Content
 ### Request 2
 The following example shows a request to update properties of the specified user.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_other_user"
