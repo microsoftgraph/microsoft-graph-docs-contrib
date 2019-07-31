@@ -1,6 +1,6 @@
 ---
 title: "call: subscribeToTone"
-description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a 'touchtone' phone."
+description: "Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a 'Dialpad'."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a "touchtone" phone.
+Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a "Dialpad".
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,10 +38,10 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    | Description |
 |:---------------|:--------|:------------|
-| clientContext  | String  | The client context. |
+| clientContext  | String  | Unique Client Context string. Max limit is 256 chars. |
 
 ## Response
-Returns `200 OK` response code.
+If successful, this method returns `200 OK` response code.
 
 ## Example
 The following example shows how to call this API.
@@ -102,6 +102,8 @@ HTTP/1.1 200 OK
 
 
 ##### Notification - Tone notification
+
+The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.
 
 ```http
 POST https://bot.contoso.com/api/calls
