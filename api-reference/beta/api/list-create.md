@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Create a new list in a site."
 ms.date: 09/11/2017
 title: Create a SharePoint List
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Create a new list
 

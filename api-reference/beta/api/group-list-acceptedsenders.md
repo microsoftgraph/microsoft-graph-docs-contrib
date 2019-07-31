@@ -4,6 +4,7 @@ description: "Get a list of users or groups that are in the accepted-senders lis
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List acceptedSenders

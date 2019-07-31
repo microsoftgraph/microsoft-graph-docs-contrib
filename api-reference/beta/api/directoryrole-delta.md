@@ -4,6 +4,7 @@ description: "Get newly created, updated, or deleted directory roles without hav
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # directoryRole: delta

@@ -4,6 +4,7 @@ description: "Retrieve a list of scopedRoleMembership resources."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List scopedRoleMembers

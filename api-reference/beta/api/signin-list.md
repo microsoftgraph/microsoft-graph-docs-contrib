@@ -1,5 +1,6 @@
 ---
 title: "List signIns"
+doc_type: apiPageType
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API (REST), which helps audit directory (tenant) activity (beta version)."
 localization_priority: Normal
 author: "davidmu1"

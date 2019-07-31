@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Get a file or folder
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
+doc_type: apiPageType
 ---
 # Get a DriveItem resource
 

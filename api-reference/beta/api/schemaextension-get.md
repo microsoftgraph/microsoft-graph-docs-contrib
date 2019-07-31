@@ -3,6 +3,8 @@ title: "Get schemaExtension"
 description: "Get the properties of the specified schemaExtension definition."
 localization_priority: Normal
 author: "dkershaw10"
+doc_type: apiPageType
+ms.prod: ""
 ---
 
 # Get schemaExtension

@@ -4,6 +4,7 @@ description: "Use this API to remove a member from a group via the **members** n
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Remove member

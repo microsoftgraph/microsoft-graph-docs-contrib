@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is checked-in."
 ms.date: 09/10/2017
 title: Check Out Files
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Check-out a DriveItem resource
 

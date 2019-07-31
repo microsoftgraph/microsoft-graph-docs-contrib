@@ -4,6 +4,7 @@ description: "Use this API to add a member (user or group) to an administrative 
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Add a member

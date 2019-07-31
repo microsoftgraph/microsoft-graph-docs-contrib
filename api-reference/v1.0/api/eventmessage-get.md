@@ -4,6 +4,7 @@ description: "expand parameter on the **event** navigation property to get the a
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get eventMessage
