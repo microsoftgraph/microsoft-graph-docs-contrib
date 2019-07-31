@@ -4,6 +4,7 @@ description: "Delete a directory setting."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Delete a directory setting

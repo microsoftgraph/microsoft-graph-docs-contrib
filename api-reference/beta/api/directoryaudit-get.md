@@ -4,6 +4,7 @@ description: "Describes the get method of the directoryAudit resource (entity) f
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get directoryAudit

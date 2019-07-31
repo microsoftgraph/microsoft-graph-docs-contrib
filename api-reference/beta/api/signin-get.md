@@ -1,5 +1,6 @@
 ---
 title: "Get signIn"
+doc_type: apiPageType
 description: "Retrieve a specific Azure AD user sign-in event for your tenant."
 localization_priority: Normal
 author: "davidmu1"

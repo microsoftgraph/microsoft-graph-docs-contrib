@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, send a reminder to the rev
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # SendReminder accessReview

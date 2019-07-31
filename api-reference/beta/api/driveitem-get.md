@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Retrieve the metadata for a DriveItem in a Drive by file system path or ID."
 ms.date: 09/10/2017
 title: Get a file or folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get a DriveItem resource
 
