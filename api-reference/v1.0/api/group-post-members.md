@@ -4,6 +4,7 @@ description: "Add a member to an Office 365 group, a security group, or a mail-e
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Add member

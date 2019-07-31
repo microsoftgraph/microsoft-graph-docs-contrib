@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a message object."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get message

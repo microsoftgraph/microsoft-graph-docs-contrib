@@ -5,6 +5,7 @@ title: Update listItem
 description: Update the properties on a **[listItem][]**.
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Update listItem
 
