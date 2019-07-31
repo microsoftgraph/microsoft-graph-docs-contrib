@@ -21,8 +21,8 @@ The recordOperation type
 | createdDateTime                | DateTimeOffset              | The time when the recording was created.                                                                                                          |
 | id                             | String                      | The server operation id. Read-only. Server generated.                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | The time of the last action of the operation.                                                                                                     |
-| recordResourceAccessToken      | String                      | The access token required to retrieve the recording.                                                                                              |
-| recordResourceLocation         | String                      | The location where the recording is located.                                                                                                      |
+| recordingAccessToken           | String                      | The access token required to retrieve the recording.                                                                                              |
+| recordingLocation              | String                      | The location where the recording is located.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only. Server generated.                                                                                             |
 | status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. Server generated.                                                 |
 
@@ -47,8 +47,8 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "recordResourceAccessToken": "String",
-  "recordResourceLocation": "String",
+  "recordingAccessToken": "String",
+  "recordingLocation": "String",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }
@@ -65,8 +65,8 @@ The following is a JSON representation of the resource.
 {
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "recordResourceAccessToken": "<access-token>",
-  "recordResourceLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
+  "recordingAccessToken": "<access-token>",
+  "recordingLocation": "https://resource.location/ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "status": "completed"
 }
 ```

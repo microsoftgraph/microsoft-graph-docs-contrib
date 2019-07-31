@@ -143,8 +143,8 @@ Content-Type: application/json
         "@odata.etag": "W/\"54451\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed",
-        "recordResourceLocation": "https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-        "recordResourceAccessToken": "<access-token>",
+        "recordingLocation": "https://file.location/17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+        "recordingAccessToken": "<access-token>",
         "completionReason": "stopToneDetected"
       }
     }

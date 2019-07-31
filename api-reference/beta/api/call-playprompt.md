@@ -40,7 +40,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|prompts|[mediaprompt](../resources/mediaprompt.md) collection.| Currently only a single prompt and of type [MediaPrompt](../resources/mediaprompt.md) is supported.|
+|prompts|[prompt](../resources/prompt.md) collection| Currently only a single prompt and of type [MediaPrompt](../resources/mediaprompt.md) is supported.|
 |loop|bool| The loop value. true indicates to loop infinitely. The default value is false. |
 |clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
