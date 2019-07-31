@@ -528,15 +528,14 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Group.Read.All_ |    Read all groups | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. | Yes | No |
-| _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
+| _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Also allows the app to read and write calendar, conversations, files, and other group content for all groups the signed-in user can access. Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
-| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
-
+| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Also allows the app to read calendar, conversations, files, and other group content for all groups. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
+| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. Also allows the app to read and write calendar, conversations, files, and other group content for all groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
 
 ### Remarks
 
