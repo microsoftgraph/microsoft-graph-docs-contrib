@@ -40,9 +40,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|prompts|[prompt](../resources/prompt.md) collection| Currently only a single prompt and of type [MediaPrompt](../resources/mediaprompt.md) is supported.|
+|prompts|[mediaprompt](../resources/mediaprompt.md) collection.| Currently only a single prompt and of type [MediaPrompt](../resources/mediaprompt.md) is supported.|
 |loop|bool| The loop value. true indicates to loop infinitely. The default value is false. |
-|clientContext|String|The client context.|
+|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [playPromptOperation](../resources/playpromptoperation.md) object in the response body.
