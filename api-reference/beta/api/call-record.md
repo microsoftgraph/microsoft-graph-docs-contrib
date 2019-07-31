@@ -13,7 +13,7 @@ ms.prod: "microsoft-teams"
 Record a short audio clip from the call. This is useful if the bot wants to capture a voice response from the caller following a prompt.
 
 > [!Note]
-> This record action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md). This action does not record the entire call. The maximum length of the recording is 5 minutes. The recording is not saved permamently by the bot platform and is discarded shortly after the call ends. The bot must download the recording promptly (using the **recordingLocation** value given in the completed notification) after the recording operation finishes.
+> This record action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md). This action does not record the entire call. The maximum length of the recording is 5 minutes. The recording is not saved permamently by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly (using the **recordingLocation** value given in the completed notification) after the recording operation finishes.
 
 
 ## Permissions
@@ -49,10 +49,10 @@ In the request body, provide a JSON object with the following parameters.
 |maxRecordDurationInSeconds|Int32| Max duration for a record operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
 |playBeep|Boolean| If true, plays a beep to indicate to the user that they can start recording their message. Default = true.|
 |stopTones|String collection|Stop tones specified to end recording.|
-|clientContext|String|The client context.|
+|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
 
 ## Response
-This method returns a `200 OK` response code and a Location header with a URI to the [commsOperation](../resources/commsoperation.md) created for this request.
+This method returns a `200 OK` response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.
 
 ## Example
 The following example shows how to call this API.
@@ -111,9 +111,13 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
+  "@odata.type": "#microsoft.graph.recordOperation",
   "status": "running",
   "createdDateTime": "2018-09-06T15:58:41Z",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "completionReason": null,
+  "resultInfo": null,
+  "recordingLocation": null,
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 
