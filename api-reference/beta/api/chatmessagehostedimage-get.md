@@ -4,6 +4,7 @@ description: "Retrieve a hosted image inside a chatMessage."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get chatMessageHostedImage

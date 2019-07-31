@@ -1,7 +1,7 @@
 ---
 title: "Changelog for Microsoft Graph"
 description: "This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs."
-author: "jthake-msft"
+author: ""
 localization_priority: Priority
 ---
 
@@ -13,9 +13,9 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## July 2019
 
-### Calendar | Places
+### Calendar | Place
 
-Debut of places API to provide rich details for locations in apps.
+Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -173,6 +173,12 @@ Debut of places API to provide rich details for locations in apps.
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods. |
+
+### Users
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the **lastPasswordChangeDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity. |
 
 ## May 2019
 

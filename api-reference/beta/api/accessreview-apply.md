@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, apply the decisions of a c
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Apply accessReview

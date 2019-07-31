@@ -2,6 +2,9 @@
 title: "List servicePrincipal transitive memberOf"
 description: "Get the groups and directory roles that this service principal is a member of. This operation is transitive and will include all groups that this service principal is a nested member of."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List servicePrincipal transitive memberOf

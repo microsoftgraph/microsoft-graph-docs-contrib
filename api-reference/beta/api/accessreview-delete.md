@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, delete an accessReview obj
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Delete accessReview
