@@ -2,6 +2,9 @@
 title: "Delete photo"
 description: "Delete a photo."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Delete photo

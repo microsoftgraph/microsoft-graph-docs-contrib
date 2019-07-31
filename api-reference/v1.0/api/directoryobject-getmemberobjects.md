@@ -4,6 +4,7 @@ description: " Returns all the groups and directory roles that a user, group, or
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get member objects

@@ -4,6 +4,7 @@ description: "Calling this method will prevent the current user from receiving e
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # group: unsubscribeByMail

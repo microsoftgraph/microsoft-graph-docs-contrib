@@ -4,6 +4,7 @@ description: "Create a new group as specified in the request body. "
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Create group

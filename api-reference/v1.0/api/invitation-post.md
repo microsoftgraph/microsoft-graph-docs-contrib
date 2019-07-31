@@ -4,6 +4,7 @@ description: "Use this API to create a new invitation. Invitation adds an extern
 localization_priority: Priority
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create invitation

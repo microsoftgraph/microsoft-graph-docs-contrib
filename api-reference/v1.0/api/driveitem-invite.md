@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Send an invite to access an item
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Sends a sharing invitation for a DriveItem."
+doc_type: apiPageType
 ---
 # Send a sharing invitation
 

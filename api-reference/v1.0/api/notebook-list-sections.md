@@ -4,6 +4,7 @@ description: "Retrieve a list of onenoteSection objects from the specified noteb
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List sections

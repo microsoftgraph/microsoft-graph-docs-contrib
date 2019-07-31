@@ -4,6 +4,7 @@ description: "Add a new scopedRoleMembership. NOTE: Only the *User account admin
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Add a scopedRoleMember

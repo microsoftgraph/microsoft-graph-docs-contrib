@@ -4,6 +4,7 @@ description: "Get the properties and relationships of a device object."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get device
