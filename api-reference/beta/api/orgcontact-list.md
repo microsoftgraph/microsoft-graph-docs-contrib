@@ -4,6 +4,7 @@ description: "Retrieve the list of organizational contacts for this organization
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List orgContacts

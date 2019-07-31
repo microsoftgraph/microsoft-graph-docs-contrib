@@ -4,6 +4,7 @@ description: "Retrieve a list of recently deleted items from deleted items."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List deleted items

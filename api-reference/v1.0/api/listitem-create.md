@@ -5,6 +5,8 @@ ms.date: 09/11/2017
 title: Create a new entry in a SharePoint list
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Create a new listItem in a list."
+doc_type: apiPageType
 ---
 # Create a new item in a list
 

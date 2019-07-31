@@ -4,6 +4,7 @@ description: "Update the properties of a group object."
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Update group

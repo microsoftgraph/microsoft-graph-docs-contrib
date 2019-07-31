@@ -4,6 +4,7 @@ description: "Use this API to create a new event in the default or the specified
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Create event

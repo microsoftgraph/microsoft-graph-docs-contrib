@@ -3,6 +3,7 @@ title: "Create Application"
 description: "Use this API to create a new application."
 author: "davidmu1"
 localization_priority: Priority
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 ---
 

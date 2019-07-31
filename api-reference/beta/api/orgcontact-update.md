@@ -4,6 +4,7 @@ description: "Update the properties of orgcontact object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Update orgcontact

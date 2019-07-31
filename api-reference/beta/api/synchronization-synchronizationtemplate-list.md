@@ -2,6 +2,7 @@
 title: "List existing synchronization templates"
 description: "List the synchronization templates associated with a given application or service principal."
 localization_priority: Normal
+doc_type: apiPageType
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---

@@ -4,6 +4,7 @@ description: "Invalidates all the user's refresh tokens issued to applications (
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: revokeSignInSessions

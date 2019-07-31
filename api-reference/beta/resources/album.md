@@ -5,6 +5,7 @@ title: album resource type
 description: Facet describing a bundle which is a photo album.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # album resource type
 
