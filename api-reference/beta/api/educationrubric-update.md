@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Update the properties of an [educationRubric](../resources/educationrubric.md) object.
 
-Patching a rubric attached to an assignment (```PATCH /education/me/assignments/{id}/rubric```) is only possible before the assignment is published, and what is patched is actually the original rubric that exists under ```/education/users/{id}/rubrics```. After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment. That rubric can be retrieved using [```GET /education/me/assignments/{id}/rubric```](educationrubric-get.md), but it cannot be patched.
+Updating a rubric attached to an assignment (`PATCH /education/me/assignments/{id}/rubric`) is only possible before the assignment is published, and what is updated is actually the original rubric that exists under `/education/users/{id}/rubrics`. After the assignment is published, an immutable copy of the rubric is made that is attached to that specific assignment. That rubric can be retrieved using [GET /education/me/assignments/{id}/rubric](educationrubric-get.md), but it cannot be updated.
 
 ## Permissions
 
@@ -79,8 +79,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
