@@ -1,6 +1,6 @@
 ---
 title: "Get educationRubric"
-description: "Retrieve the properties and relationships of educationrubric object."
+description: "Retrieve the properties and relationships of an educationrubric object."
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object.
 
-Note that when getting the rubric of an assignment (```GET /education/me/assignments/{id}/rubric```), what is returned is an immutable copy of the original rubric that exists under ```/education/users/{id}/rubrics```; the copy is associated with that specific assignment.
+Note that when getting the rubric of an assignment (`GET /education/me/assignments/{id}/rubric`), what is returned is an immutable copy of the original rubric that exists under `/education/users/{id}/rubrics`. The copy is associated with that specific assignment.
 
 ## Permissions
 
