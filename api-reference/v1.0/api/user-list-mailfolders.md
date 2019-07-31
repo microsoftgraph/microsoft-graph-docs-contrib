@@ -3,6 +3,7 @@ title: "List mailFolders"
 description: "Get the mail folder collection under the root folder of the signed-in user. "
 author: "angelgolfer-ms"
 localization_priority: Priority
+doc_type: apiPageType
 ms.prod: "outlook"
 ---
 

@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Get Drive
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Retrieve the properties and relationships of a Drive resource."
+doc_type: apiPageType
 ---
 # Get Drive
 

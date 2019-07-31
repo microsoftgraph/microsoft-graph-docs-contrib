@@ -4,6 +4,7 @@ description: "Return all the groups that the specified user, group, or directory
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get member groups

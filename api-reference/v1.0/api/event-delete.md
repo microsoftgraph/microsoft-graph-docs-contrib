@@ -4,6 +4,7 @@ description: "Delete event."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Delete event

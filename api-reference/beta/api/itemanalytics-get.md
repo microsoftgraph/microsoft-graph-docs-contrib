@@ -1,9 +1,11 @@
 ---
 author: daspek
-ms.author: dspektor
+description: "Get itemAnalytics about the views that took place under this resource."
 ms.date: 10/06/2017
 title: Get analytics
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
 ---
 # Get analytics
 

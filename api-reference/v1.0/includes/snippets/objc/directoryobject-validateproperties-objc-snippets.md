@@ -11,15 +11,22 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphDirectoryObject *directoryObject = [[MSGraphDirectoryObject alloc] init];
-[directoryObject setEntityType:@"Group"];
-[directoryObject setDisplayName:@"Myprefix_test_mysuffix"];
-[directoryObject setMailNickname:@"Myprefix_test_mysuffix"];
-[directoryObject setOnBehalfOfUserId:@"onBehalfOfUserId-value"];
+NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSError *error;
-NSData *directoryObjectData = [directoryObject getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:directoryObjectData];
+NSString *entityType = @"Group";
+payloadDictionary[@"entityType"] = entityType;
+
+NSString *displayName = @"Myprefix_test_mysuffix";
+payloadDictionary[@"displayName"] = displayName;
+
+NSString *mailNickname = @"Myprefix_test_mysuffix";
+payloadDictionary[@"mailNickname"] = mailNickname;
+
+NSString *onBehalfOfUserId = @"onBehalfOfUserId-value";
+payloadDictionary[@"onBehalfOfUserId"] = onBehalfOfUserId;
+
+NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
+[urlRequest setHTTPBody:data];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
