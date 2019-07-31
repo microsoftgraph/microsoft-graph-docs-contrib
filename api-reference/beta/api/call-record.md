@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |prompts|[mediaPrompt](../resources/mediaprompt.md) collection | Collection of prompts to play (if any) before recording starts. Customers can choose to specify "playPrompt" action separately or specify as part of "record" - mostly all records are preceeded by a prompt. Current support is only for a single prompt as part of the collection. |
 |bargeInAllowed|Boolean| If true, this record request will barge into other existing queued-up/currently-processing record/playprompt requests. Default = false. |
-|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence allowed from the time we start the record operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 300 seconds |
+|initialSilenceTimeoutInSeconds | Int32| Maximum initial silence (user silence) allowed from the time we start the record operation before we timeout and fail the operation. If we are playing a prompt, then this timer starts after prompt finishes. Default = 5 seconds, Min = 1 second, Max = 300 seconds |
 |maxSilenceTimeoutInSeconds|Int32| Maximum silence (pause) time allowed after a user has started speaking. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
 |maxRecordDurationInSeconds|Int32| Max duration for a record operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
 |playBeep|Boolean| If true, plays a beep to indicate to the user that they can start recording their message. Default = true.|
