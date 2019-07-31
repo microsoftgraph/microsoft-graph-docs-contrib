@@ -171,6 +171,12 @@ Debut of the places API which provides rich details for locations in apps.
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods. |
 
+### Users
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the **lastPasswordChangeDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity. |
+
 ## May 2019
 
 | **Change type** | **Version**   | **Description**                          |
