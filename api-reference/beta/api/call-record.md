@@ -111,9 +111,13 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
+  "@odata.type": "#microsoft.graph.recordOperation",
   "status": "running",
   "createdDateTime": "2018-09-06T15:58:41Z",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
+  "completionReason": null,
+  "resultInfo": null,
+  "recordingLocation": null,
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 
