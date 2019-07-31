@@ -49,7 +49,7 @@ In the request body, provide a JSON object with the following parameters.
 |maxRecordDurationInSeconds|Int32| Max duration for a record operation before stopping recording. Default = 5 seconds, Min = 1 second, Max = 300 seconds.|
 |playBeep|Boolean| If true, plays a beep to indicate to the user that they can start recording their message. Default = true.|
 |stopTones|String collection|Stop tones specified to end recording.|
-|clientContext|String|Unique Client Context string. Max limit is 256 chars.|
+|clientContext|String|Unique Client Context string. Can have a maximum of 256 characters.|
 
 ## Response
 This method returns a `200 OK` response code and a Location header with a URI to the [recordOperation](../resources/recordoperation.md) created for this request.
