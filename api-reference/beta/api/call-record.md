@@ -87,7 +87,7 @@ Content-Length: 394
   "initialSilenceTimeoutInSeconds": 5,
   "maxSilenceTimeoutInSeconds": 2,
   "playBeep": true,
-  "stopTones": [ "#", "11", "*" ]
+  "stopTones": [ "#", "1", "*" ]
 }
 ```
 # [Javascript](#tab/javascript)
