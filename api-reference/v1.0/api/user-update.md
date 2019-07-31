@@ -4,6 +4,7 @@ description: "Update the properties of a user object."
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Update user
@@ -76,9 +77,11 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
-## Example
-##### Request
-Here is an example of the request.
+
+## Examples
+
+### Request 1
+The following example shows a request to update properties of the signed-in user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,14 +91,12 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/me
 Content-type: application/json
-Content-length: 491
 
 {
-  "accountEnabled": true,
   "businessPhones": [
     "businessPhones-value"
   ],
-  "city": "city-value"
+  "officeLocation": "city-value"
 }
 ```
 # [C#](#tab/csharp)
@@ -116,8 +117,39 @@ Content-length: 491
 
 ---
 
-##### Response
-Here is an example of the response.
+### Response 1
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Request 2
+The following example shows a request to update properties of the specified user.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_other_user"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/users/{id}
+Content-type: application/json
+
+{
+  "businessPhones": [
+    "businessPhones-value"
+  ],
+  "officeLocation": "city-value"
+}
+```
+
+### Response 2
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
