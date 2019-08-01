@@ -5,6 +5,7 @@ title: List bundles
 description: List the bundles in a user's drive
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 
 # List bundles

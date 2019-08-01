@@ -1,9 +1,10 @@
 ---
 author: chackman
-ms.author: chackman
+description: "Follow a driveItem."
 title: Follow drive item
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Follow drive item
 

@@ -4,6 +4,7 @@ description: "This operation deletes an existing trustFrameworkPolicy object fro
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 # Delete trustFrameworkPolicy
 

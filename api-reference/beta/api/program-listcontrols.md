@@ -2,6 +2,9 @@
 title: "List programControls of a program"
 description: "In the Azure AD access reviews feature, list all the programControl objects, linked to a particular program."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List programControls of a program

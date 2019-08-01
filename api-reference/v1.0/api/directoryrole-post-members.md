@@ -4,6 +4,7 @@ description: "Use this API to create a new directory role member."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Add directory role member

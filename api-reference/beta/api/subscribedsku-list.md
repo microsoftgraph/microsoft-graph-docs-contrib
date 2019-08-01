@@ -4,7 +4,7 @@ description: "Retrieve the list of commercial subscriptions that an organization
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # List subscribedSkus

@@ -5,6 +5,7 @@ title: Add item to a bundle
 description: Add item to a bundle of driveItems
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 
 # Add item to a bundle
