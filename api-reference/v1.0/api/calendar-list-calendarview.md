@@ -4,6 +4,7 @@ description: "Get the occurrences, exceptions, and single instances of events in
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List calendarView

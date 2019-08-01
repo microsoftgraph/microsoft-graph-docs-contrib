@@ -4,6 +4,7 @@ description: "Use this API to create a new setting, based on the templates avail
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Create a group setting

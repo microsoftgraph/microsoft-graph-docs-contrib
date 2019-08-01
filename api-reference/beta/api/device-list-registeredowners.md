@@ -4,6 +4,7 @@ description: "Retrieve a list of users that are registered owners of the device.
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List registeredOwners

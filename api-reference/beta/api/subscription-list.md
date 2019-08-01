@@ -3,6 +3,8 @@ title: "List subscriptions"
 description: " see the scenarios below for details."
 localization_priority: Normal
 author: "piotrci"
+doc_type: apiPageType
+ms.prod: ""
 ---
 
 # List subscriptions

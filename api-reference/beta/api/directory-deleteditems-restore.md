@@ -4,6 +4,7 @@ description: "Restores a recently deleted item from deleted items. "
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Restore deleted item

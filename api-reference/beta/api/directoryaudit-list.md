@@ -4,6 +4,7 @@ description: "Describes the list method of the directoryAudit resource (entity) 
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List directoryAudits

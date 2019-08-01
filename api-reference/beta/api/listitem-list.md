@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Get the collection of items in a list."
 ms.date: 09/11/2017
 title: Retrieve items from a SharePoint list
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Enumerate items in a list
 
