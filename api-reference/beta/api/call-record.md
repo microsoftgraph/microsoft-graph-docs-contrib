@@ -13,7 +13,7 @@ ms.prod: "microsoft-teams"
 Record a short audio clip from the call. This is useful if the bot wants to capture a voice response from the caller following a prompt.
 
 > [!Note]
-> This record action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md). This action does not record the entire call. The maximum length of the recording is 5 minutes. The recording is not saved permamently by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly (using the **recordingLocation** value given in the completed notification) after the recording operation finishes.
+> The record action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md). This action does not record the entire call. The maximum length of the recording is 5 minutes. The recording is not saved permamently by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly (using the **recordingLocation** value given in the completed notification) after the recording operation finishes.
 
 
 ## Permissions
@@ -98,6 +98,7 @@ Content-Length: 394
 
 
 ##### Response
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
