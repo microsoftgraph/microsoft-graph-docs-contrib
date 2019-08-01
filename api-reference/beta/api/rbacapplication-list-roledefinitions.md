@@ -1,0 +1,173 @@
+---
+title: "List roleDefinitions"
+description: "Retrieve a list of unified role definition objects."
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: "apiPageType"
+---
+
+# List roleDefinitions
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Retrieve a list of unified role definition objects for the provider.
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+
+## HTTP request
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+GET /roleManagement/directory/roleDefinitions
+```
+
+## Optional query parameters
+
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+
+| Name      |Description|
+|:----------|:----------|
+| Authorization | Bearer {token} |
+
+## Request body
+
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects in the response body.
+
+## Examples
+
+### Request
+
+The following is an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
+```
+
+### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions",
+    "value": [
+        {
+            "id": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+            "description": "Can reset passwords for non-administrators and Helpdesk Administrators.",
+            "displayName": "Helpdesk Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.directory/users/invalidateAllRefreshTokens",
+                        "microsoft.directory/users/bitLockerRecoveryKeys/read",
+                        "microsoft.directory/users/password/update",
+                        "microsoft.azure.serviceHealth/allEntities/allTasks",
+                        "microsoft.azure.supportTickets/allEntities/allTasks",
+                        "microsoft.office365.webPortal/allEntities/standard/read",
+                        "microsoft.office365.serviceHealth/allEntities/allTasks",
+                        "microsoft.office365.supportTickets/allEntities/allTasks"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "f023fd81-a637-4b56-95fd-791ac0226033",
+            "description": "Can read service health information and manage support tickets.",
+            "displayName": "Service Support Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "f023fd81-a637-4b56-95fd-791ac0226033",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.azure.serviceHealth/allEntities/allTasks",
+                        "microsoft.azure.supportTickets/allEntities/allTasks",
+                        "microsoft.office365.webPortal/allEntities/standard/read",
+                        "microsoft.office365.serviceHealth/allEntities/allTasks",
+                        "microsoft.office365.supportTickets/allEntities/allTasks"
+                    ],
+                    "condition": null
+                }
+            ]
+        },
+        {
+            "id": "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+            "description": "Can perform common billing related tasks like updating payment information.",
+            "displayName": "Billing Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.directory/organization/basic/update",
+                        "microsoft.azure.serviceHealth/allEntities/allTasks",
+                        "microsoft.azure.supportTickets/allEntities/allTasks",
+                        "microsoft.commerce.billing/allEntities/allTasks",
+                        "microsoft.office365.webPortal/allEntities/standard/read",
+                        "microsoft.office365.serviceHealth/allEntities/allTasks",
+                        "microsoft.office365.supportTickets/allEntities/allTasks"
+                    ],
+                    "condition": null
+                }
+            ]
+        }
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "List roleDefinitions",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
