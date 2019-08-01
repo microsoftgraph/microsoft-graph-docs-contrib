@@ -38,7 +38,6 @@ Although the same identity cannot be invited multiple times, it is possible for 
 | [List audioRoutingGroups](../api/call-list-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md) collection|Get a audioRoutingGroup object collection.  |
 | **Interactive-Voice-Response**                                    |                                                   |                                              |
 | [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Play prompt in the call.                     |
-| [Recognize](../api/call-recognize.md)                             | [recognizeOperation](recognizeoperation.md)       | Play prompt and recognize DTMF tones.        |
 | [Record](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Record a short audio clip from the call.     |
 | [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Cancel media processing.                     |
 | [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Subscribe to DTMF tones.                     |
@@ -102,6 +101,7 @@ The following is a JSON representation of the resource.
     "meetingCapability",
     "meetingInfo",
     "myParticipantId",
+    "replacesContext",
     "resultInfo",
     "ringingTimeoutInSeconds",
     "routingPolicies",
@@ -113,6 +113,7 @@ The following is a JSON representation of the resource.
     "terminationReason",
     "toneInfo"
   ],
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```json
@@ -129,6 +130,7 @@ The following is a JSON representation of the resource.
   "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
   "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
   "myParticipantId": "String",
+  "replacesContext": "String",
   "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 99,

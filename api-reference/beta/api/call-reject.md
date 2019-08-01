@@ -1,24 +1,20 @@
 ---
 title: "call: reject"
-description: "Enable a bot to reject an incoming [call](../resources/call.md)."
+description: "Reject an incoming call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
-doc_type: apiPageType
 ---
 
 # call: reject
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable a bot to reject an incoming [call](../resources/call.md). The incoming call request can be an invite to a meeting or a peer to peer call. For a meeting invite, the notification contains the `chatInfo` and `meetingInfo` parameters.
+Enables the bot to reject an incoming [call](../resources/call.md). The incoming call request can be an invite to a meeting or a peer to peer call. The incoming call request times out after 15 seconds. If no response is sent during this time, the call is automatically rejected.
 
-When the bot is registered with a valid callback URL in the Azure portal, the incoming call is delivered as a [commsNotification](../resources/commsnotification.md) with `changeType` set to `created`. The bot is expected to `Answer` or `Reject` the call before it times out.
+Once the bot is registered with a valid callback URL in the Azure portal, the incoming call is delivered as a [commsNotification](../resources/commsnotification.md) with `changeType` set to `created`. The bot is expected to `Answer` or `Reject` the call before it times out.
 
-> [!NOTE]
-> Bots can only be reached by VOIP. PSTN calling to bots is not yet supported.
-
-This API is only used to reject incoming calls. To end existing calls, use [Delete call](../api/call-delete.md).
+> **Note:** This API is only used to reject incoming calls. To terminate existing calls, [Delete Call](../api/call-delete.md) should be used instead.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,13 +41,14 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|reason|String|The rejection reason. Possible values are `None`, `Busy` and `Forbidden`. |
+|reason|String|The rejection reason. Possible values are `None`, `Busy` and `Forbidden` |
+|callbackUri|String|Allows bots to provide a specific callback URI where the result of the Reject action will be posted. This allows sending the result to the same specific bot instance that triggered the Reject action. If none is provided, the bot's global callback URI will be used.|
 
 ## Response
-If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
 
 ## Examples
-The following examples show how to call this API.
+The following examples shows how to call this API.
 
 #### Request
 The following example shows the request.
@@ -81,6 +78,10 @@ Content-Length: 24
 # [Objective-C](#tab/objc)	
 [!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]	
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]	
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-reject-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---	
 
@@ -169,23 +170,6 @@ Content-Length: 24
   "reason": "none"
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-reject-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ##### Response
 

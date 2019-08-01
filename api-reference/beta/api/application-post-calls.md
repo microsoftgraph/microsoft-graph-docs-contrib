@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting. You will need to [register the calling bot](../../../concepts/register-calling-bot.md) and go through the list of permissions needed as mentioned below.
+Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting. You will need to [register the calling bot](https://developer.microsoft.com/graph/docs/concepts/register-calling-bot) and go through the list of permissions needed as mentioned below.
 
 
 ## Permissions
@@ -295,9 +295,9 @@ Sample audio media session blob is shown below
 
 ### Join scheduled meeting with service hosted media
 To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.
-This information can be obtained from [Get Online Meetings API](../api/application-list-onlinemeetings.md).
+This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).
 
-The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/application-list-onlinemeetings.md) with actual values to make the example work.
+The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
 ##### Request
@@ -681,9 +681,9 @@ Authorization: Bearer <Token>
 
 
 ### Join channel meeting with service hosted media
-Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/application-list-onlinemeetings.md).
+Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).
 
-The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/application-list-onlinemeetings.md) with actual values to make the example work.
+The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.
 
 > **Note:** This example needs the `Calls.JoinGroupCalls.All` permission.
 
