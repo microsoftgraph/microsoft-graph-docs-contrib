@@ -20,7 +20,7 @@ A level of a rubric. See [educationRubric](educationrubric.md) for a description
 |description|[itemBody](itembody.md)|The description of this rubric level.|
 |displayName|String|The name of this rubric level.|
 |grading|[educationAssignmentGradeType](educationassignmentgradetype.md)|Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it is a points rubric.|
-|levelId|String|The id of this resource.|
+|levelId|String|The ID of this resource.|
 
 ## JSON representation
 

@@ -51,12 +51,14 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ## Examples
 
-### Request
+### Example 1: Update a Feedback Outcome
+
+#### Request
 
 The following is an example of the request for updating a feedback outcome.
 <!-- {
   "blockType": "request",
-  "name": "update_educationoutcome"
+  "name": "update_educationfeedbackoutcome"
 }-->
 
 ```http
@@ -74,10 +76,53 @@ Content-type: application/json
 }
 ```
 
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationFeedbackOutcome"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
+    "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
+    "lastModifiedBy": {
+        "user": {
+            "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
+        }
+    },
+    "feedback": {
+        "feedbackDateTime": "2019-07-31T21:10:30.3231461Z",
+        "text": {
+            "content": "This is feedback for the assignment as a whole.",
+            "contentType": "text"
+        },
+        "feedbackBy": {
+            "user": {
+                "id": "9391878d-903c-406c-bb1c-0f17d00fd878",
+            }
+        }
+    }
+}
+```
+
+### Example 2: Update a Points Outcome
+
+#### Request
+
 The following is an example of the request for updating a points outcome.
 <!-- {
   "blockType": "request",
-  "name": "update_educationoutcome"
+  "name": "update_educationpointsoutcome"
 }-->
 
 ```http
@@ -93,48 +138,7 @@ Content-type: application/json
 }
 ```
 
-The following is an example of the request for updating a rubric outcome.
-<!-- {
-  "blockType": "request",
-  "name": "update_educationoutcome"
-}-->
-
-```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
-Content-type: application/json
-
-{
-    "@odata.type":"#microsoft.graph.educationRubricOutcome",
-    "rubricQualityFeedback":[
-        {
-            "qualityId":"ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
-            "feedback":{
-                "content":"This is feedback specific to this quality of the rubric.",
-                "contentType":"text"
-            }
-        },
-        {
-            "qualityId":"bbf3fb4a-a794-4b51-a1ad-c22fb891c5d8",
-            "feedback":{
-                "content":"This is feedback specific to this quality of the rubric.",
-                "contentType":"text"
-            }
-        }
-    ],
-    "rubricQualitySelectedLevels":[
-        {
-            "qualityId":"ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
-            "columnId":"db2a0c91-abef-44cb-b8b1-ef1f85ef4a77"
-        },
-        {
-            "qualityId":"bbf3fb4a-a794-4b51-a1ad-c22fb891c5d8",
-            "columnId":"519cd134-c513-40b9-aa71-fdb0d063c084"
-        }
-    ]
-}
-```
-
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -143,7 +147,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationOutcome"
+  "@odata.type": "microsoft.graph.educationPointsOutcome"
 } -->
 
 ```http
@@ -169,6 +173,102 @@ Content-type: application/json
     }
 }
 ```
+
+### Example 3: Update a Rubric Outcome
+
+#### Request
+
+The following is an example of the request for updating a rubric outcome.
+<!-- {
+  "blockType": "request",
+  "name": "update_educationoutcome"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+Content-type: application/json
+
+{
+    "@odata.type":"#microsoft.graph.educationRubricOutcome",
+    "rubricQualityFeedback":[
+        {
+            "qualityId":"9a145aa8-f3d9-43a1-8f77-5387ff0693f2",
+            "feedback":{
+                "content":"This is feedback specific to the first quality of the rubric.",
+                "contentType":"text"
+            }
+        },
+        {
+            "qualityId":"d2331fb2-2761-402e-8de6-93e0afaa076e",
+            "feedback":{
+                "content":"This is feedback specific to the second quality of the rubric.",
+                "contentType":"text"
+            }
+        }
+    ],
+    "rubricQualitySelectedLevels":[
+        {
+            "qualityId":"9a145aa8-f3d9-43a1-8f77-5387ff0693f2",
+            "columnId":"4fb17a1d-5681-46c2-a295-4e305c3eae23"
+        },
+        {
+            "qualityId":"d2331fb2-2761-402e-8de6-93e0afaa076e",
+            "columnId":"aac076bf-51ba-48c5-a2e0-ee235b0b9740"
+        }
+    ]
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationPointsOutcome"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+
+{
+    "@odata.type": "#microsoft.graph.educationRubricOutcome",
+    "id": "65a46d78-1a2b-4a7e-bcf8-78a22ac2611b",
+    "rubricQualityFeedback": [
+        {
+            "qualityId": "9a145aa8-f3d9-43a1-8f77-5387ff0693f2",
+            "feedback": {
+                "content": "This is feedback specific to the first quality of the rubric.",
+                "contentType": "text"
+            }
+        },
+        {
+            "qualityId": "d2331fb2-2761-402e-8de6-93e0afaa076e",
+            "feedback": {
+                "content": "This is feedback specific to the second quality of the rubric.",
+                "contentType": "text"
+            }
+        }
+    ],
+    "rubricQualitySelectedLevels": [
+        {
+            "qualityId": "9a145aa8-f3d9-43a1-8f77-5387ff0693f2",
+            "columnId": "4fb17a1d-5681-46c2-a295-4e305c3eae23"
+        },
+        {
+            "qualityId": "d2331fb2-2761-402e-8de6-93e0afaa076e",
+            "columnId": "aac076bf-51ba-48c5-a2e0-ee235b0b9740"
+        }
+    ]
+}
+```
+
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

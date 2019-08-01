@@ -46,26 +46,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationPointsOutcome",
-    "id": "ea1351f6-ba33-4940-b2cb-6a7254af2dc8",
-    "points": {
-        "gradedDateTime": "2019-07-15T22:36:02.2592364Z",
-        "points": 75,
-        "gradedBy": {
-            "user": {
-                "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
-            }
-        }
-    },
-    "publishedPoints": {
-        "gradedDateTime": "2019-07-15T22:36:02.2592364Z",
-        "points": 75,
-        "gradedBy": {
-            "user": {
-                "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
-            }
-        }
-    }
+  "points": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"},
+  "publishedPoints": {"@odata.type": "microsoft.graph.educationAssignmentPointsGrade"}
 }
 ```
 

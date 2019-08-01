@@ -47,7 +47,9 @@ If successful, this method returns `201 Created` response code and a new [educat
 
 ## Examples
 
-### Request
+### Example 1: Posting a Credit Rubric
+
+#### Request
 
 The following is an example of the request to post a credit rubric (a rubric with no points).
 <!-- {
@@ -125,6 +127,97 @@ Content-type: application/json
     ]
 }
 ```
+
+#### Response
+
+The following is an example of the response.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationRubric"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "displayName": "Example Credit Rubric",
+    "id": "63618139-2e8d-4f56-a762-dd734736816f",
+    "description": {
+        "content": "This is an example of a credit rubric (no points)",
+        "contentType": "text"
+    },
+    "qualities": [
+        {
+            "qualityId": "461e866a-4844-4a3f-9a3c-e5464a32acf1",
+            "description": {
+                "content": "Argument",
+                "contentType": "text"
+            },
+            "criteria": [
+                {
+                    "description": {
+                        "content": "The essay's argument is persuasive.",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "The essay's argument does not make sense.",
+                        "contentType": "text"
+                    }
+                }
+            ]
+        },
+        {
+            "qualityId": "ccb47c1c-1a01-4027-93d7-f14b9fe86fdd",
+            "description": {
+                "content": "Spelling and Grammar",
+                "contentType": "text"
+            },
+            "criteria": [
+                {
+                    "description": {
+                        "content": "The essay uses proper spelling and grammar with few or no errors.",
+                        "contentType": "text"
+                    }
+                },
+                {
+                    "description": {
+                        "content": "The essay has numerous errors in spelling and/or grammar.",
+                        "contentType": "text"
+                    }
+                }
+            ]
+        }
+    ],
+    "levels": [
+        {
+            "levelId": "564e68f6-984b-4574-bea7-ffae3c92633f",
+            "displayName": "Good",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            }
+        },
+        {
+            "levelId": "3f082e35-46e3-4944-baea-ea6c7e36ef37",
+            "displayName": "Poor",
+            "description": {
+                "content": "",
+                "contentType": "text"
+            }
+        }
+    ]
+}
+```
+
+### Example 2: Posting a Points Rubric
 
 The following is an example of the request to post a rubric with points.
 <!-- {
@@ -216,7 +309,7 @@ Content-type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following is an example of the response.
 

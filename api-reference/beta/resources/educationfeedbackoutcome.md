@@ -1,6 +1,6 @@
 ---
 title: "educationFeedbackOutcome resource type"
-description: "An educationOutcome that gives feedback in the form of text"
+description: "An educationOutcome that gives feedback in the form of text."
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
@@ -24,9 +24,6 @@ Represents feedback on an [educationOutcome](educationoutcome.md) object in the 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |feedback|[educationFeedback](educationfeedback.md)|Teacher's written feedback to the student.|
-|id|String| Read-only.|
-|lastModifiedBy|[identitySet](identityset.md)||
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |publishedFeedback|[educationFeedback](educationfeedback.md)|A copy of the feedback property that is made when the grade is released to the student.|
 
 ## Relationships
@@ -49,32 +46,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
-    "id": "ca05367a-b292-42d5-aff7-5d279feeace8",
-    "feedback": {
-        "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
-        "text": {
-            "content": "This is feedback for the assignment as a whole.",
-            "contentType": "text"
-        },
-        "feedbackBy": {
-            "user": {
-                "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
-            }
-        }
-    },
-    "publishedFeedback": {
-        "feedbackDateTime": "2019-07-15T22:35:46.4847754Z",
-        "text": {
-            "content": "This is feedback for the assignment as a whole.",
-            "contentType": "text"
-        },
-        "feedbackBy": {
-            "user": {
-                "id": "9391878d-903c-406c-bb1c-0f17d00fd878"
-            }
-        }
-    }
+  "feedback": {"@odata.type": "microsoft.graph.educationFeedback"},
+  "publishedFeedback": {"@odata.type": "microsoft.graph.educationFeedback"}
 }
 ```
 

@@ -18,7 +18,7 @@ Feedback related to a specific [quality](rubricquality.md) of an [educationRubri
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |feedback|[itemBody](itembody.md)|Specific feedback for one quality of this rubric.|
-|qualityId|String|The id of the [rubricQuality](rubricquality.md) that this feedback is related to.|
+|qualityId|String|The ID of the [rubricQuality](rubricquality.md) that this feedback is related to.|
 
 ## JSON representation
 

@@ -1,5 +1,5 @@
 ---
-title: "Attach educationRubric to assignment"
+title: "Attach educationRubric to educationAssignment"
 description: "Attach an existing educationRubric object to an educationAssignment."
 localization_priority: Normal
 author: "dipakboyed"
