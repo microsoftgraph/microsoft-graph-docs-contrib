@@ -13,7 +13,7 @@ doc_type: "resourcePageType"
 
 A grading rubric that can be attached to an assignment. A rubric is associated with an **educationUser** (teacher), and attached to one or more **educationAssignment** resources. 
 
-See [Education rubric overview](../../../concepts/education-rubric-overview.md) for more information.
+See [Education rubric overview](https://developer.microsoft.com/graph/docs/concepts/education-rubric-overview) for more information.
 
 ## Methods
 
