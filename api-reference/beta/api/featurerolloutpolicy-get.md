@@ -2,7 +2,7 @@
 title: "Get featureRolloutPolicy"
 description: "Retrieve the properties and relationships of a featurerolloutpolicy object."
 localization_priority: Normal
-author: "srvara"
+author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
