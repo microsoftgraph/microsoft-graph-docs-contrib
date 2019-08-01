@@ -4,6 +4,7 @@ description: "Delete orgContact."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Delete orgContact

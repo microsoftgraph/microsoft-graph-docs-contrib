@@ -2,6 +2,9 @@
 title: "Filter: clear"
 description: "Clear the filter on the given column."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Filter: clear

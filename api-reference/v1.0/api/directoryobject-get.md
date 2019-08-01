@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of directoryObject objec
 author: "davidmu1"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get directoryObject

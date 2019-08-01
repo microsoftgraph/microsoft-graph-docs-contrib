@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 RejectReason reason = RejectReason.NONE;
 
 graphClient.app().calls("{id}")
-	.reject(reason)
+	.reject(reason,callbackUri)
 	.buildRequest()
 	.post();
 

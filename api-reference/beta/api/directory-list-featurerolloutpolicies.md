@@ -33,7 +33,7 @@ GET /directory/featureRolloutPolicies
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. Query options supported are $count, $expand, $filter, $orderby, $select, $skip, $top. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the following OData query parameters to help customize the response: `$count`, `$expand`, `$filter`, `$orderby`, `$select`, `$skip`, `$top`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

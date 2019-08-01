@@ -4,6 +4,7 @@ description: "Get a contact collection from the default Contacts folder of the s
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List contacts

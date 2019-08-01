@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-OnlineMeeting OnlineMeeting = graphClient.app().onlineMeetings("{id}")
+OnlineMeeting onlineMeeting = graphClient.app().onlineMeetings("{id}")
 	.buildRequest()
 	.get();
 
