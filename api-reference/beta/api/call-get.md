@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a call object."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get call
@@ -126,9 +127,6 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
-
-##### Request
-The following call example shows the request for getting the multiparty call.
 
 <!-- {
   "blockType": "example",
