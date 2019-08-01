@@ -7961,7 +7961,7 @@
           href: api/domain-update.md
         - name: Verify domain
           href: api/domain-verify.md
-      - name: Feature Rollout policy
+      - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
         - name: List
