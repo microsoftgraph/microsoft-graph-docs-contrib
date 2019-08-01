@@ -39,7 +39,7 @@ Captures information about the meeting, including the join URL, the attendees li
 | startDateTime             | DateTime                                               | Start time of the meeting. |
 | subject                   | String                                                 | The subject of the online meeting. |
 | capabilities              | String collection                                      | The list of meeting capabilities. Possible values are: `questionAndAnswer`. |
-| videoTeleconferenceId     | String                                                 | The videio teleconferencing id. |
+| videoTeleconferenceId     | String                                                 | The video teleconferencing id. |
 
 ## Relationships
 None
