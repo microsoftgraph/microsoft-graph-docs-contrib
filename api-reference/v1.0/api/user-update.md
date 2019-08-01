@@ -80,8 +80,13 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request 1
-The following example shows a request to update properties of the signed-in user.
+### Example 1
+
+This example shows how to update properties of the signed-in user.
+
+#### Request 1
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +122,7 @@ Content-type: application/json
 
 ---
 
-### Response 1
+#### Response 1
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -128,8 +133,13 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Request 2
-The following example shows a request to update properties of the specified user.
+### Example 2
+
+This example shows how to update properties of the specified user.
+
+#### Request 2
+
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -147,7 +157,8 @@ Content-type: application/json
 }
 ```
 
-### Response 2
+###W Response 2
+
 The following example shows the response.
 <!-- {
   "blockType": "response",
