@@ -33,7 +33,7 @@ A unified role definition is a collection of permissions listing the operations 
 |isBuiltIn|Boolean| Flag indicating if the role definition is part of the default set included with the product or unique (i.e. custom). |
 |isEnabled|Boolean| Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Required. |
 |resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only "/" is supported. Required. |
-|rolePermissions|[directoryRolePermission](directoryrolepermission.md) collection| List of permissions included in the role. Required. |
+|rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) collection| List of permissions included in the role. Required. |
 |templateId|String| Custom template identifier that can be set. This identifier is typically used if one needs an identifier to be the same across different directories. This identifier is pre-populated and cannot be updated/changed for build in roles. |
 |version|String| Indicates version of the role definition. |
 
@@ -63,7 +63,7 @@ The following is a JSON representation of the resource.
   "isBuiltIn": true,
   "isEnabled": true,
   "resourceScopes": ["String"],
-  "rolePermissions": [{"@odata.type": "microsoft.graph.directoryRolePermission"}],
+  "rolePermissions": [{"@odata.type": "microsoft.graph.unifiedRolePermission"}],
   "templateId": "String",
   "version": "String"
 }

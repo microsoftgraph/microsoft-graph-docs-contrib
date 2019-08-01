@@ -70,7 +70,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignments",
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
   "isCollection": true
 } -->
 
@@ -130,7 +130,7 @@ The following is an example of the request using a filter on principal Id.
 }-->
 
 ```http
-https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq 'a98eb769-7bd4-4489-86f6-ad96e1d58b62'
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq 'a98eb769-7bd4-4489-86f6-ad96e1d58b62'
 ```
 
 ### Response 2
@@ -140,7 +140,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleAssignments",
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
   "isCollection": true
 } -->
 

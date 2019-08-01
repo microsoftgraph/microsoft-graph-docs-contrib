@@ -18,11 +18,9 @@ A unified role assignment is the link between a role definition and a principal 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get unifiedRoleAssignment](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read properties and relationships of unifiedRoleAssignment object. |
-| [Create principal](../api/unifiedroleassignment-post-principal.md) | [directoryObject](directoryobject.md) | Create a new principal by posting to the principal collection. |
 | [List principal](../api/unifiedroleassignment-list-principal.md) | [directoryObject](directoryobject.md) collection | Get a principal object collection. |
-| [Create unifiedRoleDefinition](../api/unifiedroleassignment-post-roledefinition.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a new unifiedRoleDefinition by posting to the roleDefinition collection. |
+| [Create unifiedRoleDefinition](../api/rbacapplication-post-roledefinitions.md) | [unifiedRoleDefinition](unifiedroledefinition.md) | Create a new unifiedRoleDefinition by posting to the roleDefinition collection. |
 | [List roleDefinition](../api/unifiedroleassignment-list-roledefinition.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a unifiedRoleDefinition object collection. |
-| [Update](../api/unifiedroleassignment-update.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Update unifiedRoleAssignment object. |
 | [Delete](../api/unifiedroleassignment-delete.md) | None | Delete unifiedRoleAssignment object. |
 
 ## Properties
