@@ -4,6 +4,7 @@ description: "This operation lists all trustFrameworkPolicy objects in an Azure 
 localization_priority: Normal
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 # List trustFrameworkPolicies
 

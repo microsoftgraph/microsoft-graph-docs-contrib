@@ -4,6 +4,7 @@ description: "Update the properties of a calendar object. The calendar can be on
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update calendar

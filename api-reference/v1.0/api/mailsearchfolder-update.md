@@ -4,6 +4,7 @@ description: "Update the writable properties of a mailSearchFolder object."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update mailSearchFolder

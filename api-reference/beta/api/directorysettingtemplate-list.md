@@ -4,6 +4,7 @@ description: "Directory setting templates represents a set of templates of direc
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List directorySettingTemplates

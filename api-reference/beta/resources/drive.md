@@ -5,6 +5,7 @@ title: drive resource type
 description: drive resource representing a user's onedrive or a document library in SharePoint
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: resourcePageType
 ---
 # drive resource type
 

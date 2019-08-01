@@ -2,6 +2,9 @@
 title: "Get privilegedApproval"
 description: "Retrieve the properties and relationships of privilegedapproval object."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # Get privilegedApproval

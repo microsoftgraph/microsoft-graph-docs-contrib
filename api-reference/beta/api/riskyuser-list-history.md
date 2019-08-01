@@ -4,6 +4,7 @@ description: "Retrieve the risk history"
 localization_priority: Normal
 author: "cloudhandler"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 # List history of riskyUser
 
