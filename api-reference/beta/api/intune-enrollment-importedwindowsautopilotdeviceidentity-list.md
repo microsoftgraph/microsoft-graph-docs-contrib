@@ -4,6 +4,7 @@ description: "List properties and relationships of the importedWindowsAutopilotD
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List importedWindowsAutopilotDeviceIdentities
@@ -30,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/importedWindowsAutopilotDeviceIdentities
-GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWindowsAutopilotDeviceIdentityUploadId}/deviceIdentities
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 787
+Content-Length: 825
 
 {
   "value": [
@@ -66,6 +66,7 @@ Content-Length: 787
       "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
       "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
       "orderIdentifier": "Order Identifier value",
+      "groupTag": "Group Tag value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
       "importId": "Import Id value",

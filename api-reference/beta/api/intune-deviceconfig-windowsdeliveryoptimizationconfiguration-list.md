@@ -4,6 +4,7 @@ description: "List properties and relationships of the windowsDeliveryOptimizati
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List windowsDeliveryOptimizationConfigurations
@@ -58,7 +59,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2246
+Content-Length: 2472
 
 {
   "value": [
@@ -114,7 +115,12 @@ Content-Length: 2246
       "maximumCacheSize": {
         "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
       },
-      "vpnPeerCaching": "enabled"
+      "vpnPeerCaching": "enabled",
+      "cacheServerHostNames": [
+        "Cache Server Host Names value"
+      ],
+      "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 9,
+      "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 9
     }
   ]
 }

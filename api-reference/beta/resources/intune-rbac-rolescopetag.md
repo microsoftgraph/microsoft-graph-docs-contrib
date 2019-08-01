@@ -4,6 +4,7 @@ description: "Role Scope Tag"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # roleScopeTag resource type
@@ -23,6 +24,8 @@ Role Scope Tag
 |[Delete roleScopeTag](../api/intune-rbac-rolescopetag-delete.md)|None|Deletes a [roleScopeTag](../resources/intune-rbac-rolescopetag.md).|
 |[Update roleScopeTag](../api/intune-rbac-rolescopetag-update.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md)|Update the properties of a [roleScopeTag](../resources/intune-rbac-rolescopetag.md) object.|
 |[assign action](../api/intune-rbac-rolescopetag-assign.md)|[roleScopeTagAutoAssignment](../resources/intune-rbac-rolescopetagautoassignment.md) collection|Not yet documented|
+|[getRoleScopeTagsById action](../api/intune-rbac-rolescopetag-getrolescopetagsbyid.md)|[roleScopeTag](../resources/intune-rbac-rolescopetag.md) collection|Not yet documented|
+|[hasCustomRoleScopeTag function](../api/intune-rbac-rolescopetag-hascustomrolescopetag.md)|Boolean|Not yet documented|
 
 ## Properties
 |Property|Type|Description|

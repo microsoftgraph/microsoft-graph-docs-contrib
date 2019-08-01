@@ -4,6 +4,7 @@ description: "List properties and relationships of the managedDeviceEncryptionSt
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List managedDeviceEncryptionStates
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 812
+Content-Length: 862
 
 {
   "value": [
@@ -73,6 +74,7 @@ Content-Length: 812
       "encryptionState": "encrypted",
       "encryptionPolicySettingState": "notApplicable",
       "advancedBitLockerStates": "noUserConsent",
+      "fileVaultStates": "driveEncryptedByUser",
       "policyDetails": [
         {
           "@odata.type": "microsoft.graph.encryptionReportPolicyDetails",

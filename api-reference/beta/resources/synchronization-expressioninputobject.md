@@ -2,6 +2,9 @@
 title: "expressionInputObject resource type"
 description: "Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action performs an expression evaluation."
 localization_priority: Normal
+doc_type: resourcePageType
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
 ---
 
 # expressionInputObject resource type

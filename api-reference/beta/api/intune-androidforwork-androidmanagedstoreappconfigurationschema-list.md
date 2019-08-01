@@ -4,6 +4,7 @@ description: "List properties and relationships of the androidManagedStoreAppCon
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List androidManagedStoreAppConfigurationSchemas
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 987
+Content-Length: 1871
 
 {
   "value": [
@@ -68,6 +69,32 @@ Content-Length: 987
       "schemaItems": [
         {
           "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+          "index": 5,
+          "parentIndex": 11,
+          "schemaItemKey": "Schema Item Key value",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "defaultBoolValue": true,
+          "defaultIntValue": 15,
+          "defaultStringValue": "Default String Value value",
+          "defaultStringArrayValue": [
+            "Default String Array Value value"
+          ],
+          "dataType": "integer",
+          "selections": [
+            {
+              "@odata.type": "microsoft.graph.keyValuePair",
+              "name": "Name value",
+              "value": "Value value"
+            }
+          ]
+        }
+      ],
+      "nestedSchemaItems": [
+        {
+          "@odata.type": "microsoft.graph.androidManagedStoreAppConfigurationSchemaItem",
+          "index": 5,
+          "parentIndex": 11,
           "schemaItemKey": "Schema Item Key value",
           "displayName": "Display Name value",
           "description": "Description value",

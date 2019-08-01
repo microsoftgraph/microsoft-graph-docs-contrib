@@ -4,6 +4,7 @@ description: "Read properties and relationships of the windowsKioskConfiguration
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsKioskConfiguration
@@ -62,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2867
+Content-Length: 3186
 
 {
   "value": {
@@ -140,7 +141,15 @@ Content-Length: 2867
     "kioskBrowserBlockedUrlExceptions": [
       "Kiosk Browser Blocked Url Exceptions value"
     ],
-    "edgeKioskEnablePublicBrowsing": true
+    "edgeKioskEnablePublicBrowsing": true,
+    "windowsKioskForceUpdateSchedule": {
+      "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+      "recurrence": "daily",
+      "dayofWeek": "monday",
+      "dayofMonth": 10,
+      "runImmediatelyIfAfterStartDateTime": true
+    }
   }
 }
 ```

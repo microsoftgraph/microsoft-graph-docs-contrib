@@ -4,6 +4,7 @@ description: "Read properties and relationships of the androidDeviceOwnerEnrollm
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get androidDeviceOwnerEnrollmentProfile
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 790
+Content-Length: 844
 
 {
   "value": {
@@ -80,7 +81,10 @@ Content-Length: 790
       "@odata.type": "microsoft.graph.mimeContent",
       "type": "Type value",
       "value": "dmFsdWU="
-    }
+    },
+    "scopeTags": [
+      "Scope Tags value"
+    ]
   }
 }
 ```

@@ -1,7 +1,23 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
+doc_type: enumPageType
+localization_priority: Normal
+ms.prod: ""
+author: ""
 ---
+
+### registrationAuthMethod values
+
+|Member|
+|:---|
+|email|
+|mobilePhone|
+|officePhone|
+|securityQuestion|
+|appNotification|
+|appCode|
+|alternateMobilePhone|
 
 ### contactRelationship values
 
@@ -714,6 +730,7 @@ Possible values for user account types (group membership), per Windows definitio
 |userPassedMFADrivenByRiskBasedPolicy|
 |adminDismissedAllRiskForUser|
 |adminConfirmedSigninCompromised|
+|adminConfirmedUserCompromised|
 |hidden|
 |unknownFutureValue|
 
@@ -816,3 +833,30 @@ Possible values for user account types (group membership), per Windows definitio
 |normal|
 |high|
 |urgent|
+
+### tokenIssuerType values
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|unknownFutureValue|
+
+### riskDetectionTimingType values
+
+|Member|
+|:---|
+|notDefined|
+|realtime|
+|nearRealtime|
+|offline|
+|unknownFutureValue|
+
+
+### activityType values
+
+|Member|
+|:---|
+|signin|
+|user|
+|unknownFutureValue|
