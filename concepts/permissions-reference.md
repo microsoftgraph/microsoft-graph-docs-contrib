@@ -1381,14 +1381,14 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 
 ---
 
-## Feature Rollout policy permissions
+## Feature rollout policy permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | Read all featureRollout Policies | Allows the app to read all FeatureRollout Policies on behalf of the signed-in user. | Yes | No |
-| _Policy.ReadWrite.FeatureRollout_ | Read and write all featureRollout policies | Allows the app to read and write FeatureRollout Policies on behalf of the signed-in user. | Yes | No |
+| _Policy.Read.All_ | Read all feature rollout policies | Allows the app to read all feature rollout policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.FeatureRollout_ | Read and write all feature rollout policies | Allows the app to read and write Feature rollout Policies on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 None.
@@ -1401,8 +1401,8 @@ The work or school account must be a global administrator of the tenant.
 #### Delegated
 The following usages are valid for both delegated permissions:
 
-* _Policy.Read.All_: Read all featureRollout policies (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.FeatureRollout_: Read and write all featureRollout policies (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.Read.All_: Read all feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: Read and write all feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
