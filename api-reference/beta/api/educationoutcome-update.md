@@ -133,7 +133,7 @@ Content-type: application/json
     "@odata.type":"#microsoft.graph.educationPointsOutcome",
     "points":{
         "@odata.type":"#microsoft.graph.educationAssignmentPointsGrade",
-        "points":85
+        "points":85.0
     }
 }
 ```
@@ -164,7 +164,7 @@ Content-type: application/json
     },
     "points":{
         "gradedDateTime":"2019-07-15T22:35:48.2429387Z",
-        "points":85,
+        "points":85.0,
         "gradedBy":{
             "user":{
                 "id":"9391878d-903c-406c-bb1c-0f17d00fd878"
