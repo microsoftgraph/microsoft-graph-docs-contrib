@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
   "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
   "qualityId": "String",
-  "weight": "Single"
+  "weight": "Double"
 }
 ```
 
