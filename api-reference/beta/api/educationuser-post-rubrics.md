@@ -279,7 +279,7 @@ Content-type: application/json
                     }
                 }
             ],
-            "weight":50
+            "weight":50.0
         },
         {
             "description":{
@@ -300,7 +300,7 @@ Content-type: application/json
                     }
                 }
             ],
-            "weight":50
+            "weight":50.0
         }
     ],
     "grading":{
