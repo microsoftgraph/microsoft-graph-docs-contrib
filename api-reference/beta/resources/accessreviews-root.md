@@ -37,6 +37,7 @@ The following table lists the methods that you can use to interact with access r
 |[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
 |[Delete accessReview](../api/accessreview-delete.md) |	None.	| Delete an accessReview. |
 |[Update accessReview](../api/accessreview-update.md) |	[accessReview](accessreview.md)	| Update an accessReview. |
+|[List accessReviews](../api/accessreview-list.md) |	[accessReview](accessreview.md) collection |	List accessReviews for a businessFlowTemplate. |
 |[List accessReview reviewers](../api/accessreview-listreviewers.md) |		[userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
 |[Add accessReview reviewer](../api/accessreview-addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
 |[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
