@@ -274,6 +274,21 @@ None.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+## ChannelMessage permissions
+
+#### Delegated permissions
+
+None.
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ChannelMessage.Read.All_ |Read all channel messages  |Allows the app to read all channel messages in Microsoft Teams, without a signed-in user. |Yes | No |
+|_ChannelMessage.UpdatePolicyViolation.All_ | Flag channel messages for violating policy |Allows the app to update Microsoft Teams channel messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
+
+> **Note:** See also [Group.Read.All](#group-permissions).
+
 ## Chats permissions
 
 #### Delegated permissions
@@ -288,8 +303,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
+|_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 
-> **Note:** For messages in a channel, see [Group.Read.All](#group-permissions).
+> **Note:** For messages in a channel, see [ChannelMessage permissions](#channelmessage-permissions).
 
 ## Contacts permissions
 
@@ -513,15 +529,14 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Group.Read.All_ |    Read all groups | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. | Yes | No |
-| _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
+| _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Also allows the app to read and write calendar, conversations, files, and other group content for all groups the signed-in user can access. Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
-| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
-
+| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Also allows the app to read calendar, conversations, files, and other group content for all groups. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
+| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. Also allows the app to read and write calendar, conversations, files, and other group content for all groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
 
 ### Remarks
 
@@ -1365,6 +1380,35 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 *	_UserActivity.ReadWrite.CreatedByApp_: Delete a user activity in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}).
 *	_UserActivity.ReadWrite.CreatedByApp_: Delete a history item in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}/historyItems/{id}).
 
+---
+
+## Feature rollout policy permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | Read all feature rollout policies | Allows the app to read all feature rollout policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.FeatureRollout_ | Read and write all feature rollout policies | Allows the app to read and write Feature rollout Policies on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+None.
+
+### Remarks
+The work or school account must be a global administrator of the tenant.
+
+### Example usage
+
+#### Delegated
+The following usages are valid for both delegated permissions:
+
+* _Policy.Read.All_: Read all feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: Read and write all feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
 ## Permission scenarios
 
 This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).
@@ -1393,3 +1437,4 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | App wants to read and write all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  | 	_Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Read and write all groups, Edit or delete items in all site collections |
 | App wants to discover (find) an Office 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.	 | _Group.ReadWrite.All_ | Read and write all groups|
 | App wants to create a group through AAD Graph | 	_Group.ReadWrite.All_ | Read and write all groups|
+

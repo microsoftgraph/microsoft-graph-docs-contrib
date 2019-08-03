@@ -15,6 +15,9 @@ Play a prompt in the call.
 
 For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)
 
+> [!Note]
+> The **playPrompt** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -29,7 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/playPrompt
-POST /applications/{id}/calls/{id}/playPrompt
 ```
 
 ## Request headers
@@ -42,9 +44,9 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    |Description|
 |:---------------|:--------|:----------|
-|prompts|[prompt](../resources/prompt.md) collection| Currently only a single prompt and of type [MediaPrompt](../resources/mediaprompt.md) is supported.|
-|loop|bool| The loop value. true indicates to loop infinitely. The default value is false. |
-|clientContext|String|The client context.|
+|prompts|MediaPrompt collection| Currently only a single prompt and of type [MediaPrompt](../resources/mediaprompt.md) is supported.|
+|loop|Boolean| The loop value. True indicates to loop infinitely. The default value is false. |
+|clientContext|String|Unique client context string. Can have a maximum of 256 characters.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [playPromptOperation](../resources/playpromptoperation.md) object in the response body.
@@ -89,6 +91,7 @@ Content-Length: 166
 
 
 ##### Response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
