@@ -7273,12 +7273,16 @@
           href: api/educationuser-list-schools.md
         - name: List classes
           href: api/educationuser-list-classes.md
+        - name: List rubrics
+          href: api/educationuser-list-rubrics.md
         - name: Get user
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
         - name: Get delta
           href: api/educationuser-delta.md
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -7306,12 +7310,18 @@
           href: api/educationassignment-list-submissions.md
         - name: Get resource folder URL
           href: api/educationassignment-getresourcesfolderurl.md
+        - name: Get rubric attached to assignment
+          href: api/educationassignment-get-rubric.md
         - name: List categories
           href: api/educationassignment-list-categories.md
         - name: Add category
           href: api/educationassignment-add-categories.md
         - name: Remove category
           href: api/educationassignment-remove-category.md
+        - name: Attach rubric to assignment
+          href: api/educationassignment-put-rubric.md
+        - name: Remove rubric from assignment
+          href: api/educationassignment-delete-rubric.md
       - name: Category
         href: resources/educationcategory.md
         items:
@@ -7319,6 +7329,15 @@
           href: api/educationcategory-get.md
         - name: Delete category
           href: api/educationcategory-delete.md
+      - name: Rubric
+        href: resources/educationrubric.md
+        items:
+        - name: Get rubric
+          href: api/educationrubric-get.md
+        - name: Update rubric
+          href: api/educationrubric-update.md
+        - name: Delete rubric
+          href: api/educationrubric-delete.md
       - name: Submission
         href: resources/educationsubmission.md
         items:
@@ -7338,12 +7357,19 @@
           href: api/educationsubmission-unsubmit.md
         - name: List submitted resources
           href: api/educationsubmission-list-submittedresources.md
+        - name: List outcomes
+          href: api/educationsubmission-list-outcomes.md
         - name: Get submitted resource
           href: api/educationsubmittedsubmissionresource-get.md
         - name: Grade submission
           href: api/educationsubmission-update.md
         - name: Return submission
           href: api/educationsubmission-return.md
+      - name: Outcome
+        href: resources/educationoutcome.md
+        items:
+        - name: Update outcome
+          href: api/educationoutcome-update.md
       - name: Synchronization profile
         href: resources/educationsynchronizationprofile.md
         items:

@@ -17,7 +17,7 @@ NSMutableArray *activityGroupNamesList = [[NSMutableArray alloc] init];
 [tiIndicator setActivityGroupNames:activityGroupNamesList];
 [tiIndicator setConfidence: 0];
 [tiIndicator setDescription:@"This is a canary indicator for demo purpose. Take no action on any observables set in this indicator."];
-[tiIndicator setExpirationDateTime: "2019-03-02T00:43:37.5031462+03:00"];
+[tiIndicator setExpirationDateTime: "2019-03-01T21:43:37.5031462+00:00"];
 [tiIndicator setExternalId:@"Test--8586509942679764298MS501"];
 [tiIndicator setFileHashType: [MSGraphFileHashType sha256]];
 [tiIndicator setFileHashValue:@"aa64428647b57bf51524d1756b2ed746e5a3f31b67cf7fe5b5d8a9daf07ca313"];
