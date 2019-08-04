@@ -63,7 +63,7 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |comment|String|Text included in the response. Optional.|
 |sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
-|proposedNewTime|[timeSlot](..\resources\timeslot.md)|An alternate date/time proposed by an invitee for a meeting request to start and end. Valid only for events that allow new time proposals. Optional.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|An alternate date/time proposed by an invitee for a meeting request to start and end. Valid only for events that allow new time proposals. Optional.|
 
 ## Response
 

@@ -11,7 +11,7 @@ ms.prod: "outlook"
 
 Example where Alex invites Adele to lunch, Adele proposes an alternative date and time, and Alex accepts the proposal.
 1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-beta) to `true`.
-2. Adele receives the invitation in her Inbox as an [eventMessageRequest](graph/api/resources/eventMessagRequest?view=graph-rest-beta). She notices the **allowNewTimeProposals** property is set. Using the **event** associated with this **eventMessageRequest**, she makes a tentative reply and proposes a different date/time in the **proposedNewTime** body parameter.
+2. Adele receives the invitation in her Inbox as an [eventMessageRequest](graph/api/resources/eventMessageRequest?view=graph-rest-beta). She notices the **allowNewTimeProposals** property is set. Using the **event** associated with this **eventMessageRequest**, she makes a tentative reply and proposes a different date/time in the **proposedNewTime** body parameter.
 3. Alex receives Adele's reply as a message of the [eventMessageResponse](/graph/api/resources/event?view=graph-rest-beta) type in the Inbox. He notices the sender is Adele, the **responseType** is `tentativelyAccepted`, and Adele's proposal in the **proposedNewTime** property of the **eventMessageResponse**.
 4. Alex decides to accept Adele's proposal, and lets Adele know by updating the **event** to the proposed **start** and **end** date/time.
 
