@@ -47,6 +47,7 @@ Here is a JSON representation of the resource
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "String (timestamp)",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -94,6 +95,7 @@ Here is a JSON representation of the resource
 |ccRecipients|[recipient](recipient.md) collection|The Cc: recipients for the message.|
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
+|conversationIndex|Edm.Binary|The index of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The date and time the message was created.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
 |from|[recipient](recipient.md)|The mailbox owner and sender of the message.|

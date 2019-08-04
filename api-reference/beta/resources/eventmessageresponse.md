@@ -60,7 +60,7 @@ For more information on how to propose a time, and how to receive and accept a n
 |ccRecipients|[recipient](recipient.md) collection|The Cc: recipients for the message.|
 |changeKey|String|The version of the message.|
 |conversationId|String|The ID of the conversation the email belongs to.|
-|conversationIndex|Binary|The Index of the conversation the email belongs to.|
+|conversationIndex|Edm.Binary|The Index of the conversation the email belongs to.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|The end time of the requested meeting.|
 |flag|[followUpFlag](followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
@@ -135,7 +135,7 @@ The following is a JSON representation of the resource.
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "String",
   "conversationId": "String",
-  "conversationIndex": "Binary",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "String (timestamp)",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
