@@ -620,11 +620,11 @@
           href: api/event-delta.md
         - name: Cancel event
           href: api/event-cancel.md
-        - name: Accept events
+        - name: Accept event
           href: api/event-accept.md
         - name: Tentatively accept
           href: api/event-tentativelyaccept.md
-        - name: Decline events
+        - name: Decline event
           href: api/event-decline.md
         - name: Dismiss reminder
           href: api/event-dismissreminder.md

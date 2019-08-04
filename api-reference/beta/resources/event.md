@@ -45,6 +45,7 @@ Here is a JSON representation of the resource
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
@@ -92,6 +93,7 @@ Here is a JSON representation of the resource
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|allowNewTimeProposals| Boolean | `True` if the meeting organizer allows invitees to propose a new time when responding, `false` otherwise. Optional. Default is `true`. |
 |attendees|[Attendee](attendee.md) collection|The collection of attendees for the event.|
 |body|[ItemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
 |bodyPreview|String|The preview of the message associated with the event. It is in text format.|
@@ -116,7 +118,7 @@ Here is a JSON representation of the resource
 |originalStartTimeZone|String|The start time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
-|responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
+|responseRequested|Boolean|Set to true if the organizer would like an invitee to send a response to the event.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
 |sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|The ID for the recurring series master item, if this event is part of a recurring series.|
