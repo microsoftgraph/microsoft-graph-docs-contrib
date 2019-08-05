@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read    |
+|Delegated (work or school account) | Calendars.Read, Group.Read.All (for calendars in groups), Group.ReadWrite.All (for calendars in groups)    |
 |Delegated (personal Microsoft account) | Calendars.Read    |
-|Application | Calendars.Read |
+|Application | Calendars.Read, Group.Read.All (for calendars in groups), Group.ReadWrite.All (for calendars in groups) |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
