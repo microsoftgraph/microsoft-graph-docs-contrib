@@ -1,6 +1,6 @@
 ---
 title: "List roleAssignments"
-description: "Retrieve a list of unified role assignment objects."
+description: "Get a list of unified role assignment objects."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of unified role assignment objects for the provider. Only specific instances can be queried, by filtering on unifiedRoleDefitionId or principalId.
+Get a list of [unified role assignment](./unifiedroleassignment.md) objects for the provider. $filter must be used with this query. $filter can be on roleDefitionId or principalId. roleDefitionId can be either a role object id or a role template object id.
 
 ## Permissions
 
@@ -33,7 +33,9 @@ GET /roleManagement/directory/roleAssignments
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+$filter must be used with this query. $filter can be on roleDefitionId or principalId. roleDefitionId can be either a role object id or a role template object id.
+
+For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -49,11 +51,12 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects in the response body.
 
-## Examples
+## Example 1: Request using a filter on role definition Id.
 
-### Request 1
+### Request
 
-The following is an example of the request using a filter on role definition Id.
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_roleAssignments"
@@ -63,7 +66,7 @@ The following is an example of the request using a filter on role definition Id.
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '62e90394-69f5-4237-9190-012177145e10'
 ```
 
-### Response 1
+### Response
 
 The following is an example of the response.
 
@@ -121,9 +124,12 @@ Content-type: application/json
 }
 ```
 
-### Request 2
+## Example 2: Request using a filter on principal Id.
 
-The following is an example of the request using a filter on principal Id.
+### Request
+
+The following is an example of the request.
+
 <!-- {
   "blockType": "request",
   "name": "get_roleAssignments"
@@ -133,7 +139,7 @@ The following is an example of the request using a filter on principal Id.
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq 'a98eb769-7bd4-4489-86f6-ad96e1d58b62'
 ```
 
-### Response 2
+### Response
 
 The following is an example of the response.
 
