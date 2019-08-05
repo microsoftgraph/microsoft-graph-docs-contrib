@@ -41,6 +41,14 @@ POST /roleManagement/directory/roleDefinitions
 
 In the request body, supply a JSON representation of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
 
+The following table shows the properties that are required when you create a roleDefinition.
+
+| Parameter | Type | Description|
+|:---------------|:--------|:----------|
+|displayName |string |The display name for the role definition.|
+|isEnabled |Boolean |Flag indicating if the role is enabled for assignment. If false the role is not available for assignment.|
+|rolePermissions |[unifiedRolePermission](unifiedrolepermission.md) collection |List of permissions included in the role.|
+
 ## Response
 
 If successful, this method returns `201, Created` response code and a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
@@ -49,7 +57,7 @@ If successful, this method returns `201, Created` response code and a new [unifi
 
 ### Request
 
-The following is an example of the request.
+The following is an example of creating a custom role.
 <!-- {
   "blockType": "request",
   "name": "create_unifiedroledefinition_from_rbacapplication"
