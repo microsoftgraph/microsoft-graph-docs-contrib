@@ -1,6 +1,6 @@
 ---
 title: "List roleDefinitions"
-description: "Retrieve a list of unified role definition objects."
+description: "Get a list of unified role definition objects."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of unified role definition objects for the provider.
+Get a list of unified role definition objects for the provider.
 
 ## Permissions
 
@@ -32,8 +32,7 @@ GET /roleManagement/directory/roleDefinitions
 ```
 
 ## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports $filter on id, displayName, and isBuiltIn. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
