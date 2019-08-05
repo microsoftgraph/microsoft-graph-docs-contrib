@@ -106,7 +106,7 @@ You can get the user information for the signed-in user by replacing `/users/{id
   "blockType": "request",
   "name": "get_user"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me
 ```
 # [C#](#tab/csharp)
