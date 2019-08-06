@@ -12,18 +12,13 @@ doc_type: apiPageType
 Update the properties of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
 or the default calendar of an Office 365 [group](../resources/group.md).
 ## Permissions
-One of the following permissions is required to call this API:
+Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-- Use Calendars.ReadWrite for users' calendars
-- Use Group.ReadWrite.All for group calendars
+| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| user calendar | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| group calendar | Group.ReadWrite.All | Group.ReadWrite.All | Group.ReadWrite.All |
 
-To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite, Group.ReadWrite.All   |
-|Delegated (personal Microsoft account) | Calendars.ReadWrite, Group.ReadWrite.All    |
-|Application | Calendars.ReadWrite, Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
