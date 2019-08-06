@@ -9,15 +9,15 @@ doc_type: apiPageType
 
 # Create event
 
-Use this API to create a new event in the default or specified calendar.
-## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Use this API to create a new event in a calendar. The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md). 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.ReadWrite    |
-|Application | Calendars.ReadWrite |
+## Permissions
+Depending on the type of calendar that the event is created in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| user calendar | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| group calendar | Group.ReadWrite.All | Not supported. | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
