@@ -29,13 +29,9 @@ Use the insights API to identify the most relevant documents for a user:
 - List documents [used by](../api/insights-list-used.md) a user
 - List documents [shared with or shared by](../api/insights-list-shared.md) a user
 
-## Help users balance work and life
+## Help users gain insights into their work patterns
 
-[MyAnalytics](https://docs.microsoft.com/en-us/workplace-analytics/myanalytics/index) provides insights into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
-
-The analytics API enables you to synchronize or integrate user analytics data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users plan their day by seeing all their work and social activities in one place, within one app.
-
-The analytics API includes the following two resources.
+Use the analytics API to get activity statistics and related settings for a user:
 
 - [settings](../resources/settings.md): For the analytics API to return results for users, their current user analytics settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
 - [activityStatistics](../resources/activitystatistics.md): Gets data for the last complete week (or the specified time range) for the Office 365 activities that a user spent time on, including the number of hours spent on [email](emailactivitystatistics.md), [meetings](meetingactivitystatistics.md), [calls](callactivitystatistics.md), and [chats (instant messages)](chatactivitystatistics.md) during and outside of working hours and the number of hours available for [focused work](focusactivitystatistics.md). 
