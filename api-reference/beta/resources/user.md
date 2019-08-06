@@ -191,6 +191,7 @@ The age group and minor consent properties are optional properties used by Azure
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
+|analytics|[userAnalytics](useranalytics.md) collection| The user's activity statistics and related settings. Read-only. Nullable.|
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
@@ -230,6 +231,7 @@ Here is a JSON representation of the resource
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "analytics",
     "appRoleAssignments",
     "calendar",
     "calendarGroups",
@@ -328,6 +330,7 @@ Here is a JSON representation of the resource
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
+  "analytics": {"@odata.type": "microsoft.graph.userAnalytics"},
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
