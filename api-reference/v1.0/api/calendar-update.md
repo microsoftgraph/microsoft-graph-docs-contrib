@@ -17,7 +17,7 @@ Depending on the type of calendar that the event is in and the permission type (
 | Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
 | user calendar | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
-| group calendar | Group.ReadWrite.All | Group.ReadWrite.All | Group.ReadWrite.All |
+| group calendar | Group.ReadWrite.All | Not supported. | Not supported. |
 
 
 ## HTTP request
