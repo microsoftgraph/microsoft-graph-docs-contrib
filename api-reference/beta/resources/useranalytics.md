@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "settings": {"@odata.type": "microsoft.graph.mySettings"}
+  "settings": {"@odata.type": "microsoft.graph.userAnalytics"}
 }
 ```
 
