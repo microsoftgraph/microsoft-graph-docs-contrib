@@ -17,7 +17,7 @@ The user's activity statistics and related settings.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|settings|[mySettings](mysettings.md)|Get activity statistics and related settings for a user.|
+|settings|[settings](settings.md)|Get activity statistics and related settings for a user.|
 
 ## Relationships
 
