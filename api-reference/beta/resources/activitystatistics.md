@@ -15,6 +15,10 @@ Represents time spent by a user on various work activities during and outside of
 
 The type of activities include meetings, emails, chats (instant messages), calls, and focus work. You can specify the **startDate**, **endDate**, and **activity** to get data about a specific activity, for a specific day. If you don’t specify a time range or activity, activity statistics are returned for all activities, for the last complete week by default.
 
+### Activity id property
+
+For the HTTP request, the id property represents {activity_startdate_enddate}, where activity can be {email|meeting|chat|call|focus}.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -29,7 +33,7 @@ The type of activities include meetings, emails, chats (instant messages), calls
 |activity|analyticsActivityType| Name of the activity for which statistics are returned. The supported values are: [Call](callactivitystatistics.md), [Chat](chatactivitystatistics.md), [Email](emailactivitystatistics.md), [Focus](focusactivitystatistics.md), and [Meeting](meetingactivitystatistics.md).|
 |duration|Duration|Total hours spent on the activity.|
 |endDate|Date|Date when the activity ended.|
-|id|String| Read-only ID for the activity.|
+|id|String| Read-only ID for the activity, which represents {activity_startdate_enddate}.|
 |startDate|Date|Date when the activity started.|
 |timeZoneUsed|String|The time zone used for the computation.|
 

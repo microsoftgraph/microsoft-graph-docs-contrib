@@ -9186,10 +9186,10 @@
             href: resources/focusactivitystatistics.md          
           - name: Meeting statistics
             href: resources/meetingactivitystatistics.md
+          - name: List activity statistics
+            href: api/activitystatistics-list.md 
           - name: Get activity statistics
             href: api/activitystatistics-get.md
-          - name: List activity statistics
-            href: api/activitystatistics-list.md            
       - name: Mention
         href: resources/mention.md
     - name: Tasks and plans

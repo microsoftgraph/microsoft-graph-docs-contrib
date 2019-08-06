@@ -77,15 +77,11 @@ For more information about administrator roles, see [Assigning administrator rol
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Analytics.Read_ |   Read all user activities statistics and related settings. | Allows the app to read user activities statistics and related settings without a signed-in user. | Yes |
+| _Analytics.Read_ |   Read all user activities statistics. | Allows the app to read user activities statistics without a signed-in user. | Yes |
 
 #### Application permissions
 
 None.
-
-### Remarks
-
-Currently the only catalog is the list of applications in [Microsoft Teams](teams-concept-overview.md).
 
 ### Example usage
 
@@ -93,7 +89,6 @@ Currently the only catalog is the list of applications in [Microsoft Teams](team
 
 * _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
 * _Analytics.Read_: [Get activity statistics for a user](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
-* _Analytics.Read_: [Retrieve a collection of activity statistics for a user](/graph/api/activitystatistics-list?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics)
 
 #### Application
 

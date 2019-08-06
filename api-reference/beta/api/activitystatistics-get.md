@@ -25,8 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-> **Note:** For the HTTP request, **id** represents {**activity_startdate_enddate**}, where **activity** can be {**email**|**meeting**|**chat**|**call**|**focus**}.
-
 <!-- { "blockType": "ignored" }  -->
 
 ```http
@@ -51,7 +49,8 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 #### Request
 
-This is an example of a request for a specific day and activity.
+This is an example of a request for a specific day and activity. For the HTTP request, **id** represents {**activity_startdate_enddate**}, where **activity** can be {**email**|**meeting**|**chat**|**call**|**focus**}.
+
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"
