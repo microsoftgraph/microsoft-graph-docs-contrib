@@ -178,7 +178,7 @@
         - name: Get delta
           href: api/user-delta.md
       - name: Calendar
-        href: resources/event.md
+        href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
         - name: List events
@@ -253,6 +253,8 @@
           href: api/user-list-joinedteams.md
         - name: List member of
           href: api/user-list-memberof.md
+        - name: List transitive member of
+          href: api/user-list-transitivememberof.md
       - name: Insights
         href: resources/officegraphinsights.md
         items:
@@ -348,6 +350,18 @@
           href: api/planneruser-list-recentplans.md
         - name: List user's assigned tasks
           href: api/planneruser-list-tasks.md
+      - name: Teamwork
+        items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps for user
+          href: api/user-list-teamsappinstallation.md
+        - name: Add app for user
+          href: api/user-add-teamsappinstallation.md
+        - name: Remove app for user
+          href: api/user-delete-teamsappinstallation.md
+        - name: Upgrade installed app for user
+          href: api/user-upgrade-teamsappinstallation.md
       - name: User settings
         href: resources/user-settings.md
         items:
@@ -394,10 +408,16 @@
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
           href: api/group-list-memberof.md
+        - name: List transitive member of
+          href: api/group-list-transitivememberof.md
         - name: List members
           href: api/group-list-members.md
+        - name: List transitive members
+          href: api/group-list-transitivemembers.md
         - name: List owners
           href: api/group-list-owners.md
+        - name: List photos
+          href: api/group-list-photos.md
         - name: Permanently delete group
           href: api/directory-deleteditems-delete.md
         - name: Remove favorite
@@ -416,6 +436,8 @@
           href: api/group-unsubscribebymail.md
         - name: Update group
           href: api/group-update.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
@@ -432,6 +454,10 @@
       - name: Calendar
         href: resources/calendar.md
         items:
+        - name: Get calendar
+          href: api/calendar-get.md
+        - name: Update calendar
+          href: api/calendar-update.md
         - name: List events
           href: api/group-list-events.md
         - name: Create event
@@ -721,7 +747,7 @@
           href: api/event-delta.md
         - name: Reminder view
           href: api/user-reminderview.md
-      - name: Categories
+      - name: Category
         href: resources/outlookcategory.md
         items:
         - name: List categories
@@ -751,6 +777,18 @@
             href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
           - name: Get multi-value property
             href: api/multivaluelegacyextendedproperty-get.md
+      - name: Place
+        items:
+          - name: Place
+            href: resources/place.md
+          - name: Room resource
+            href: resources/room.md
+          - name: Room list resource
+            href: resources/roomlist.md
+          - name: List places
+            href: api/place-list.md
+          - name: Get place
+            href: api/place-get.md
     - name: Calls and online meetings
       displayName: Microsoft Teams
       items:
@@ -801,8 +839,10 @@
             href: api/participant-invite.md
         - name: Change screen sharing role
           href: api/call-changescreensharingrole.md
-        - name: Unmute self
+        - name: Unmute application
           href: api/call-unmute.md
+        - name: Mute application
+          href: api/call-mute.md
         - name: Update metadata
           href: api/call-updatemetadata.md
         - name: Audio routing group
@@ -7237,12 +7277,16 @@
           href: api/educationuser-list-schools.md
         - name: List classes
           href: api/educationuser-list-classes.md
+        - name: List rubrics
+          href: api/educationuser-list-rubrics.md
         - name: Get user
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
         - name: Get delta
           href: api/educationuser-delta.md
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
       - name: Assignment
         href: resources/educationassignment.md
         items:
@@ -7270,12 +7314,18 @@
           href: api/educationassignment-list-submissions.md
         - name: Get resource folder URL
           href: api/educationassignment-getresourcesfolderurl.md
+        - name: Get rubric attached to assignment
+          href: api/educationassignment-get-rubric.md
         - name: List categories
           href: api/educationassignment-list-categories.md
         - name: Add category
           href: api/educationassignment-add-categories.md
         - name: Remove category
           href: api/educationassignment-remove-category.md
+        - name: Attach rubric to assignment
+          href: api/educationassignment-put-rubric.md
+        - name: Remove rubric from assignment
+          href: api/educationassignment-delete-rubric.md
       - name: Category
         href: resources/educationcategory.md
         items:
@@ -7283,6 +7333,15 @@
           href: api/educationcategory-get.md
         - name: Delete category
           href: api/educationcategory-delete.md
+      - name: Rubric
+        href: resources/educationrubric.md
+        items:
+        - name: Get rubric
+          href: api/educationrubric-get.md
+        - name: Update rubric
+          href: api/educationrubric-update.md
+        - name: Delete rubric
+          href: api/educationrubric-delete.md
       - name: Submission
         href: resources/educationsubmission.md
         items:
@@ -7302,12 +7361,19 @@
           href: api/educationsubmission-unsubmit.md
         - name: List submitted resources
           href: api/educationsubmission-list-submittedresources.md
+        - name: List outcomes
+          href: api/educationsubmission-list-outcomes.md
         - name: Get submitted resource
           href: api/educationsubmittedsubmissionresource-get.md
         - name: Grade submission
           href: api/educationsubmission-update.md
         - name: Return submission
           href: api/educationsubmission-return.md
+      - name: Outcome
+        href: resources/educationoutcome.md
+        items:
+        - name: Update outcome
+          href: api/educationoutcome-update.md
       - name: Synchronization profile
         href: resources/educationsynchronizationprofile.md
         items:
@@ -7406,6 +7472,8 @@
           href: api/itemactivity-getbyinterval.md
         - name: Preview item
           href: api/driveitem-preview.md
+        - name: Bundles
+          href: resources/bundle.md
       - name: Permissions
         href: resources/permission.md
         items:
@@ -7413,6 +7481,8 @@
           href: api/driveitem-createlink.md
         - name: Use sharing links
           href: api/shares-get.md
+        - name: Add users to sharing link
+          href: api/permission-grant.md
         - name: List permissions
           href: api/driveitem-list-permissions.md
         - name: Add permissions
@@ -7859,6 +7929,8 @@
           href: api/device-post-registeredusers.md
         - name: List device groups
           href: api/device-list-memberof.md
+        - name: List device transitive groups
+          href: api/device-list-transitivememberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -7874,6 +7946,8 @@
           href: api/directoryobject-checkmembergroups.md
         - name: Get directoryObjects by ids
           href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
       - name: Directory role
         href: resources/directoryrole.md
         items:
@@ -7933,6 +8007,23 @@
           href: api/domain-update.md
         - name: Verify domain
           href: api/domain-verify.md
+      - name: Feature rollout policy
+        href: resources/featurerolloutpolicy.md
+        items:
+        - name: List
+          href: api/directory-list-featurerolloutpolicies.md
+        - name: Get
+          href: api/featurerolloutpolicy-get.md
+        - name: Create
+          href: api/directory-post-featurerolloutpolicies.md
+        - name: Update
+          href: api/featurerolloutpolicy-update.md
+        - name: Delete
+          href: api/featurerolloutpolicy-delete.md
+        - name: Create appliesTo
+          href: api/featurerolloutpolicy-post-appliesto.md
+        - name: Delete appliesTo
+          href: api/featurerolloutpolicy-delete-appliesto.md  
       - name: Identity protection
         href: resources/identityprotection-root.md
         items:
@@ -8014,6 +8105,57 @@
           href: api/oauth2permissiongrant-update.md
         - name: Delete oauth2 permission grant
           href: api/oauth2permissiongrant-delete.md
+      - name: On-premises publishing
+        href: resources/onpremisespublishingprofile-root.md
+        items:
+          - name: On-premises agent
+            href: resources/onpremisesagent.md
+            items:
+              - name: List
+                href: api/onpremisesagent-list.md
+              - name: Get
+                href: api/onpremisesagent-get.md
+              - name: Assign to agent group
+                href: api/onpremisesagent-post-agentgroups.md
+              - name: Remove from agent group
+                href: api/onpremisesagent-delete-agentgroups.md
+          - name: On-premises agent group
+            href: resources/onpremisesagentgroup.md
+            items:
+              - name: List
+                href: api/onpremisesagentgroup-list.md
+              - name: Get
+                href: api/onpremisesagentgroup-get.md
+              - name: Create
+                href: api/onpremisesagentgroup-post.md
+              - name: Update
+                href: api/onpremisesagentgroup-update.md
+              - name: Delete
+                href: api/onpremisesagentgroup-delete.md
+          - name: On-premises publishing profile
+            href: resources/onpremisespublishingprofile.md
+            items:
+              - name: Get
+                href: api/onpremisespublishingprofile-get.md
+              - name: Update
+                href: api/onpremisespublishingprofile-update.md
+          - name: Published resource
+            href: resources/publishedresource.md
+            items:
+              - name: List
+                href: api/publishedresource-list.md
+              - name: Get
+                href: api/publishedresource-get.md
+              - name: Create
+                href: api/publishedresource-post.md
+              - name: Update
+                href: api/publishedresource-update.md
+              - name: Delete
+                href: api/publishedresource-delete.md
+              - name: Assign to agent group
+                href: api/publishedresource-post-agentgroups.md
+              - name: Remove from agent group
+                href: api/publishedresource-delete-agentgroups.md    
       - name: Organization
         href: resources/organization.md
         items:
@@ -8218,6 +8360,11 @@
           href: resources/synchronization-configure-with-custom-target-attributes.md
         - name: Synchronize directory extension attributes
           href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Directory definition
+          href: resources/synchronization-directorydefinition.md
+          items:
+          - name: Discover
+            href: api/directorydefinition-discover.md
         - name: Job
           href: resources/synchronization-synchronizationjob.md
           items:
@@ -9243,22 +9390,25 @@
         - name: Get chat
           href: api/chat-get.md
         - name: List messages in a chat
-          href: api/chat-list-messages.md
+          href: api/chatmessage-list.md
         - name: Get message in chat
-          href: api/chat-get-message.md
+          href: api/chatmessage-get.md
         - name: Get members in chat
           href: api/conversationmember-list.md
         - name: Get one member in chat
           href: api/conversationmember-get.md
-      - name: Apps
+      - name: Chat message
+        href: resources/chatmessage.md
+        items:
+        - name: List hosted images
+          href: api/chatmessagehostedimage-list-hostedimages.md
+        - name: Get hosted image
+          href: api/chatmessagehostedimage-get.md
+        - name: Get hosted image bytes
+          href: api/chatmessagehostedimage-getbytes.md
+      - name: App Catalog
         href: resources/teamsapp.md
         items:
-        - name: List apps in team
-          href: api/teamsappinstallation-list.md
-        - name: Add app to team
-          href: api/teamsappinstallation-add.md
-        - name: Remove app from team
-          href: api/teamsappinstallation-delete.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
@@ -9267,6 +9417,29 @@
           href: api/teamsapp-update.md
         - name: Remove app from catalog
           href: api/teamsapp-delete.md
+      - name: App
+        items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps in team
+          href: api/teamsappinstallation-list.md
+        - name: Add app to team
+          href: api/teamsappinstallation-add.md
+        - name: Remove app from team
+          href: api/teamsappinstallation-delete.md
+        - name: Upgrade installed app for team
+          href: api/teamsappinstallation-upgrade.md
+        - name: List apps for user
+          href: api/user-list-teamsappinstallation.md
+        - name: Add app for user
+          href: api/user-add-teamsappinstallation.md
+        - name: Remove app for user
+          href: api/user-delete-teamsappinstallation.md
+        - name: Upgrade installed app for user
+          href: api/user-upgrade-teamsappinstallation.md
+      - name: Tab
+        href: resources/teamstab.md
+        items:
         - name: List tabs
           href: api/teamstab-list.md
         - name: Get tab
@@ -9277,15 +9450,6 @@
           href: api/teamstab-update.md
         - name: Delete tab
           href: api/teamstab-delete.md
-      - name: Chat message
-        href: resources/chatmessage.md
-        items:
-        - name: List hosted images
-          href: api/chatmessagehostedimage-list-hostedimages.md
-        - name: Get hosted image
-          href: api/chatmessagehostedimage-get.md
-        - name: Get hosted image bytes
-          href: api/chatmessagehostedimage-getbytes.md
       - name: Calendar
         href: resources/event.md
         items:

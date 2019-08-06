@@ -48,6 +48,7 @@ With the appropriate permissions, the app can read the profiles of users or grou
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _AccessReview.Read.All_ |   Read all access reviews  | Allows the app to read access reviews on behalf of the signed-in user. | Yes | No |
 | _AccessReview.ReadWrite.All_ |   Manage all access reviews  | Allows the app to read and write access reviews on behalf of the signed-in user. | Yes | No |
+| _AccessReview.ReadWrite.Membership_ |   Manage access reviews for group and app memberships | Allows the app to read and write access reviews of groups and apps on behalf of the signed-in user. | Yes | No |
 
 
 #### Application permissions
@@ -55,10 +56,12 @@ With the appropriate permissions, the app can read the profiles of users or grou
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _AccessReview.Read.All_ |   Read all access reviews | Allows the app to read access reviews without a signed-in user. | Yes |
+| _AccessReview.ReadWrite.Membership_ | Manage access reviews for group and app memberships | Allows the app to manage access reviews of groups and apps without a signed-in user. | Yes |
+
 
 ### Remarks
 
-_AccessReview.Read.All_ and _AccessReview.ReadWrite.All_ are valid only for work or school accounts.
+_AccessReview.Read.All_, _AccessReview.ReadWrite.All_ and _AccessReview.ReadWrite.Membership_ are valid only for work or school accounts.
 
 For an app with delegated permissions to read access reviews of a group or app, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or User Administrator. For an app with delegated permissions to write access reviews of a group or app, the signed-in user must be a member of one of the following administrator roles: Global Administrator or User Administrator.
 
@@ -95,6 +98,42 @@ Currently the only catalog is the list of applications in [Microsoft Teams](team
 #### Application
 
 None.
+
+---
+
+## Administrative Units permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _AdministrativeUnit.Read.All_ |   Read administrative units  | Allows the app to read administrative units and administrative unit membership on behalf of the signed-in user. | Yes | No |
+| _AdministrativeUnit.ReadWrite.All_ |   Read and write administrative units  | Allows the app to create, read, update, and delete administrative units and manage administrative unit membership on behalf of the signed-in user. | Yes | No |
+
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _AdministrativeUnit.Read.All_ |   Read all administrative units | Allows the app to read administrative units and administrative unit membership without a signed-in user. | Yes |
+| _AdministrativeUnit.ReadWrite.All_ |   Read and write all administrative units | Allows the app to create, read, update, and delete administrative units and manage administrative unit membership without a signed-in user. | Yes |
+
+### Remarks
+With the _AdministrativeUnit.Read.All_ permission an application can read administrative unit information including members.
+
+With the _AdministrativeUnit.ReadWrite.All_ permission an application can create, read, update, and delete administrative unit information including members.
+
+_AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ are valid only for work or school accounts.
+
+### Example usage
+
+- _AdministrativeUnit.Read.All_: Read administrative units (`GET /beta/administrativeUnits`)
+- _AdministrativeUnit.Read.All_: Read members list of an administrative unit (`GET /beta/administrativeUnits/<id>/members`)
+- _AdministrativeUnit.ReadWrite.All_: Create an administrative unit (`POST /beta/administrativeUnits`)
+- _AdministrativeUnit.ReadWrite.All_: Update an administrative unit (`PATCH /beta/administrativeUnits/<id>`)
+- _AdministrativeUnit.ReadWrite.All_: Add members to an administrative unit  (`POST /beta/administrativeUnits/<id>/members`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
 ---
 
@@ -265,6 +304,21 @@ None.
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
+## ChannelMessage permissions
+
+#### Delegated permissions
+
+None.
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_ChannelMessage.Read.All_ |Read all channel messages  |Allows the app to read all channel messages in Microsoft Teams, without a signed-in user. |Yes | No |
+|_ChannelMessage.UpdatePolicyViolation.All_ | Flag channel messages for violating policy |Allows the app to update Microsoft Teams channel messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
+
+> **Note:** See also [Group.Read.All](#group-permissions).
+
 ## Chats permissions
 
 #### Delegated permissions
@@ -279,8 +333,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_Chat.Read.All_ |Read all chat messages  |Allows the app to read all 1:1 or group chat messages in Microsoft Teams, without a signed-in user. |Yes | No |
+|_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 
-> **Note:** For messages in a channel, see [Group.Read.All](#group-permissions).
+> **Note:** For messages in a channel, see [ChannelMessage permissions](#channelmessage-permissions).
 
 ## Contacts permissions
 
@@ -504,15 +559,14 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Group.Read.All_ |    Read all groups | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. | Yes | No |
-| _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
+| _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Also allows the app to read and write calendar, conversations, files, and other group content for all groups the signed-in user can access. Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
-| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
-
+| _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Also allows the app to read calendar, conversations, files, and other group content for all groups. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
+| _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. Also allows the app to read and write calendar, conversations, files, and other group content for all groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
 
 ### Remarks
 
@@ -576,7 +630,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Identity Risk Event permissions
+## Identity risk event permissions
 
 #### Delegated permissions
 
@@ -610,7 +664,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 ---
 
 
-## Identity Risky User permissions
+## Identity risky user permissions
 
 #### Delegated permissions
 
@@ -712,6 +766,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Mail.Read_       |    Read mail in all mailboxes | Allows the app to read mail in all mailboxes without a signed-in user.| Yes |
+| _Mail.ReadBasic.All_ |    Read all users basic mail (preview) | (Preview) Allows the app to read all users mailboxes except body, previewBody, attachments and any extended properties. Does not include permissions to search messages. | Yes | No
 | _Mail.ReadWrite_ |    Read and write mail in all mailboxes | Allows the app to create, read, update, and delete mail in all mailboxes without a signed-in user. Does not include permission to send mail. | Yes |
 | _Mail.Send_ |    Send mail as any user | Allows the app to send mail as any user without a signed-in user. | Yes |
 | _MailboxSettings.Read_ |  Read all user mailbox settings | Allows the app to read user's mailbox settings without a signed-in user. Does not include permission to send mail. | No |
@@ -873,6 +928,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## On-premises Publishing Profiles permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    Access  On-Premises Publishing Profiles| Allows the app to manage hybrid identity service configuration by creating, viewing, updating and deleting on-premises published resources, on-premises agents and agent groups, on behalf of the signed-in user. | No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| OnPremisesPublishingProfiles.ReadWrite.All |    Access  On-Premises Publishing Profiles| Allows the app to manage hybrid identity service configuration by creating, viewing, updating and deleting on-premises published resources, on-premises agents and agent groups, on behalf of the signed-in user. | No | No |
+
+---
+
 ## OpenID permissions
 
 #### Delegated permissions
@@ -959,6 +1030,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Places permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Place.Read.All_ |Read all company places |Allows the app to read company places (conference rooms and room lists) for calendar events and other applications. |No | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Place.Read.All_ |   Read all company places | Allows the app to read company places (conference rooms and room lists) for calendar events and other applications.| Yes |
+
+---
+
 ## Programs and program controls permissions
 
 #### Delegated permissions
@@ -1008,6 +1095,43 @@ Reports permissions are only valid for work or school accounts.
 * _Reports.Read.All_: Read usage detail report of email apps with period of 7 days (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
 * _Reports.Read.All_: Read activity detail report of email with date of '2017-01-01' (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
 * _Reports.Read.All_: Read Office 365 activations detail report (`GET /reports/Office365Activations(view='Detail')/content`).
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
+## Role Management permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _RoleManagement.Read.Directory_ | Read directory RBAC settings | Allows the app to read the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes | No |
+| _RoleManagement.ReadWrite.Directory_ | Read and write directory RBAC settings | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, on behalf of the signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _RoleManagement.Read.Directory_ | Read all directory RBAC settings | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
+| _RoleManagement.ReadWrite.Directory_ | Read and write all directory RBAC settings | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
+
+### Remarks
+With the _RoleManagement.Read.Directory_ permission an application can read directoryRoles and directoryRoleTemplates. This includes reading membership information for directory roles.
+
+With the _RoleManagement.ReadWrite.Directory_ permission an application can read and write directoryRoles (directoryRoleTemplates are readonly resources). This includes adding and removing members to and from directory roles.
+
+Role management permissions are only valid for work or school accounts.
+
+### Example usage
+
+- _RoleManagement.Read.Directory_: Read the list of available role templates (`GET /directoryRoleTemplates`)
+- _RoleManagement.Read.Directory_: Read the list of activated roles in your directory (`GET /directoryRoles`)
+- _RoleManagement.Read.Directory_: Read the list of members for a role (`GET /directoryRoles/<id>/members`)
+- _RoleManagement.Read.Directory_: Read the list of administrative unit-scoped members for a role (`GET /directoryRoles/<id>/scopedMembers`)
+- _RoleManagement.ReadWrite.Directory_: Activate a directory role from a role template  (`POST /directoryRoles`)
+- _RoleManagement.ReadWrite.Directory_: Add a member to a directory role (`POST /directoryRoles/<id>/members`)
+- _RoleManagement.ReadWrite.Directory_: Add an administrative unit-scoped member to a directory role (`POST /directoryRoles/<id>/scopedMembers`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -1286,6 +1410,35 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 *	_UserActivity.ReadWrite.CreatedByApp_: Delete a user activity in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}).
 *	_UserActivity.ReadWrite.CreatedByApp_: Delete a history item in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}/historyItems/{id}).
 
+---
+
+## Feature rollout policy permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | Read all feature rollout policies | Allows the app to read all feature rollout policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.FeatureRollout_ | Read and write all feature rollout policies | Allows the app to read and write Feature rollout Policies on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+None.
+
+### Remarks
+The work or school account must be a global administrator of the tenant.
+
+### Example usage
+
+#### Delegated
+The following usages are valid for both delegated permissions:
+
+* _Policy.Read.All_: Read all feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: Read and write all feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
 ## Permission scenarios
 
 This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).
@@ -1314,3 +1467,4 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | App wants to read and write all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  | 	_Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Read and write all groups, Edit or delete items in all site collections |
 | App wants to discover (find) an Office 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.	 | _Group.ReadWrite.All_ | Read and write all groups|
 | App wants to create a group through AAD Graph | 	_Group.ReadWrite.All_ | Read and write all groups|
+

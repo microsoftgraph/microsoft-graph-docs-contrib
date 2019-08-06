@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. "
 ms.date: 09/10/2017
 title: Upload small files
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Upload or replace the contents of a DriveItem
 
@@ -72,12 +73,12 @@ The contents of the file goes here.
 
 ### Response
 
-If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
+If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created or updated file.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
 ```http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {

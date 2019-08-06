@@ -4,6 +4,7 @@ description: "Microsoft Graph enables access to useful social and workplace data
 localization_priority: Priority
 author: "simonhult"
 ms.prod: "insights"
+doc_type: conceptualPageType
 ---
 
 # Use the Microsoft Graph API to integrate social and workplace intelligence in an app
