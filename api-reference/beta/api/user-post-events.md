@@ -93,13 +93,12 @@ times in the response.
 POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 600
 
 {
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon work for you?"
   },
   "start": {
       "dateTime": "2017-04-15T12:00:00",
@@ -174,7 +173,7 @@ Content-length: 2197
     "isReminderOn":true,
     "hasAttachments":false,
     "subject":"Let's go brunch",
-    "bodyPreview":"Does late morning work for you?",
+    "bodyPreview":"Does noon work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
