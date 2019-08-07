@@ -262,33 +262,33 @@ Here is an example of the properties included in the JWT token that are needed f
 
 ## Decrypting resource data from change notifications
 
-The data included in the `resourceData` property of the notification is encrypted by Microsoft Graph using the public key provided by the app developer. This is done to increase the security of customer data accessed via notifications.
+The data included in the **resourceData** property of the notification is encrypted by Microsoft Graph using the public key provided by you. This is done to increase the security of customer data accessed via notifications. It is your responsibility to secure the private key to ensure that customer data cannot be decrypted by a 3rd party, even if they managed to intercept the original notifications.
 
-### Managing app public keys for encryption
+### Managing encryption keys
 
-> **Important:** You must provide a valid public key when creating a subscription for notifications with resource data. Otherwise, the request to create the subscriptions will fail.
+1. You need to obtain a certificate with a pair of assymetric keys. The certificate can be self-signed - Microsoft Graph does not verify the certificate issuer, but only uses the public key for encryption. We recommend [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) as the solution to create, rotate and securily manage certificates.
+  - the key must be of type `RSA`
+  - the key size must be between 2048 and 4096 bits
 
-@@@TBD - error code when an invalid key is provided, or no key@@@
+1. Export the certificate **ensuring that only the public key** is included. The certificate must be exported as a Base64-encoded X.509 certificate.
 
-1. You need to obtain a pair of assymetric keys.
-2. You need to provide the **public** key using the **encryptionCertificate** property in the subscription creation request. You can use the same, or different keys, for each subscription you create.
-3. The private key will be held and managed by you; we recommend using as secure key store.
+1. When creating the subscription:
+  - Provide the certificate in the **encryptionCertificate** property
+  - Provide your own identifier in the **encryptionCertificateId**. It will allow you to match your certificates to notifications you receive and can also be used to retrieve certificates from your certificate store. The limit on the length of this id is @@@add limit@@@.
 
-#### Key format
-@@@TBD@@@
+1. The private key must be securily held and managed by you. Your notification processing code will need to have access to the private key to decrypt resource data.
 
 #### Rotating keys
 
-It is a recommmended practice to periodically change assymetric keys, to minimize the risk of a private key becoming compromised. If you want to introduce a new pair of keys, follow these steps:
+It is a recommmended practice to periodically change your assymetric keys to minimize the risk of a private key becoming compromised. If you want to introduce a new pair of keys, follow these steps:
 
 @@@TBD - change this section to reflect that keys are now part of the subscription. describe how to rotate them with a PATCH operation@@@
-@@@The content below is outdated, needs to be replaced@@@
-1. Obtain a new pair of assymetric keys. Use it for all new subscriptions being created.
-2. Update existing subscriptions with the new **public** key. You can do this as part of regular subscription renewal or enumerate all subscriptions and provide the key. The key can be updated by providing the **encryptionCertificate** and **encryptionCertificateId** properties in the `PATCH` operation on the subscription. @@@TBD - confirm@@@
+1. Obtain a new certificate with a new pair of assymetric keys. Use it for all new subscriptions being created.
+2. Update existing subscriptions with the new certificate key; you can do this as part of regular subscription renewal or enumerate all subscriptions and provide the key. The certificate can be updated by providing the **encryptionCertificate** and **encryptionCertificateId** properties in the `PATCH` operation on the subscription. @@@TBD - confirm@@@
 3. Some things to keep in mind:
-    - For a period of time (up to 1 week@@@) the old key may still be used for encryption. Your app must have access to both old and new private keys to be able to decrypt content.
+    - For a period of time the old certificate may still be used for encryption. Your app must have access to both old and new certificates to be able to decrypt content.
     - Use the **encryptionCertificateId** property in each notification to  identify the correct key to use.
-    - Discard of the old key pair only when you have seen no recent notifications referencing the old key.
+    - Discard of the old certificate only when you have seen no recent notifications referencing it.
 
 ### How to decrypt
 
