@@ -344,28 +344,55 @@ The decryption parameters for the AES algorithm are as follows:
 
 #### Code sample using C# .NET
 
-These are some useful code snippets for 
+These are some useful code snippets using C# and .NET for each stage of decryption
 
-For example, given this notification:
-```json
-{
-  "value": [
-    {
-      "subscriptionId":"<subscription_guid>",
-      "subscriptionExpirationDateTime":"2019-03-19T22:11:09.952Z",
-      "clientState":"<secretClientState>",
-      "changeType":"created",
-      "resource":"/teams/allMessages?$select=subject,body",
-      "resourceData": <encryptedResourceDataContent>
-    }
-  ],
-  "encryptionCertificateId": <key_guid>,
-  "symmetricEncryptionKey": <encryptedSymmetricKeyFromGraph>
-}
+#### Decryption of the symmetric key
+
+```csharp
+// initialize with the private key matching the encryptionCertificateId
+RSACryptoServiceProvider rsaProvider = ...;        
+byte[] encryptedSymmetricKey = Convert.FromBase64String(<value from encryptedResourceDataKey property);
+
+// decrypt using OAEP padding
+byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP: true);
+
+// decryptedSymmetricKey can now be used with the AES algorithm
 ```
 
-@@@TBD@@@
+#### Decryption of the resource data content
 
+```csharp
+AesCryptoServiceProvider aesProvider = new AesCryptoServiceProvider();
+aesProvider.Key = decryptedSymmetricKey;
+aesProvider.Padding = PaddingMode.PKCS7;
+aesProvider.Mode = CipherMode.CBC;
+
+// obtain the intialization vector from the symmetric key itself
+var vectorSize = @@@add thte value here@@@;
+byte[] iv = new byte[vectorSize];
+Array.Copy(decryptedSymmetricKey, iv, vectorSize);
+aesProvider.IV = iv;
+
+byte[] encryptedPayload = Convert.FromBase64String(<value from encryptedResourceData property);
+
+string decryptedResourceData;
+// decrypt the resource data content
+using (var decryptor = aesProvider.CreateDecryptor())
+{
+  using (MemoryStream msDecrypt = new MemoryStream(encryptedPayload))
+  {
+      using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
+      {
+          using (StreamReader srDecrypt = new StreamReader(csDecrypt))
+          {
+              decryptedResourceData = srDecrypt.ReadToEnd();
+          }
+      }
+  }
+}
+
+// decryptedResourceData contains a string json representing the resource
+```
 
 ## Code samples
 
