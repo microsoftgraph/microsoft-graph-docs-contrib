@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var driveItem = new DriveItem
 {
 	Name = "Just some files",
-	@name.conflictBehavior = "rename",
+	@microsoft.graph.conflictBehavior = "rename",
 	Bundle = new Bundle
 	{
 	},
