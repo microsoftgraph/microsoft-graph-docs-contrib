@@ -76,6 +76,8 @@
         href: findmeetingtimes-example.md
       - name: Get free/busy schedule
         href: outlook-get-free-busy-schedule.md
+      - name: Propose new meeting times (preview)
+        href: outlook-calendar-meeting-proposals.md
       - name: Schedule recurring events
         href: outlook-schedule-recurring-events.md
       - name: Get shared events

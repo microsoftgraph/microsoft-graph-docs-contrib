@@ -13,46 +13,46 @@ In Outlook, a meeting organizer can allow invitees to propose alternative meetin
 Let's walk through an example: Alex invites Adele to lunch, Adele proposes an alternative date and time, and Alex accepts the proposal.
 1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-beta) to `true` to let Adele suggest another time if necessary.
 
-<!-- {
-  "blockType": "request",
-  "name": "create_event"
-}-->
-```http
-POST https://graph.microsoft.com/testexchangebeta/me/events
-Prefer: outlook.timezone="Pacific Standard Time"
-Content-type: application/json
+    <!-- {
+      "blockType": "request",
+      "name": "create_event"
+    }-->
+    ```http
+    POST https://graph.microsoft.com/testexchangebeta/me/events
+    Prefer: outlook.timezone="Pacific Standard Time"
+    Content-type: application/json
 
-{
-  "subject": "Let's go for lunch",
-  "body": {
-    "contentType": "HTML",
-    "content": "Does noon work for you?"
-  },
-  "start": {
-      "dateTime": "2019-08-15T12:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "end": {
-      "dateTime": "2019-08-15T14:00:00",
-      "timeZone": "Pacific Standard Time"
-  },
-  "location":{
-      "displayName":"Harry's Bar"
-  },
-  "attendees": [
     {
-      "emailAddress": {
-        "address":"AdeleV@M365x454945.OnMicrosoft.com",
-        "name": "Adele Vance"
+      "subject": "Let's go for lunch",
+      "body": {
+        "contentType": "HTML",
+        "content": "Does noon work for you?"
       },
-      "type": "required"
+      "start": {
+          "dateTime": "2019-08-15T12:00:00",
+          "timeZone": "Pacific Standard Time"
+      },
+      "end": {
+          "dateTime": "2019-08-15T14:00:00",
+          "timeZone": "Pacific Standard Time"
+      },
+      "location":{
+          "displayName":"Harry's Bar"
+      },
+      "attendees": [
+        {
+          "emailAddress": {
+          "address":"AdeleV@M365x454945.OnMicrosoft.com",
+          "name": "Adele Vance"
+          },
+          "type": "required"
+        }
+      ],
+      "allowNewTimeProposals": true
     }
-  ],
-  "allowNewTimeProposals": true
-}
 ```
 
-Alex gets the following response:
+Alex gets the following response: 
 <!-- {
   "blockType": "response",
   "name": "create_event",
@@ -416,8 +416,9 @@ HTTP/1.1 200 Ok
         }
     }
 }
+```
 
-Note that in step 2, if Adele replies tentative, or declines, and does not propose a different date/time, then in step 3, Alex would receive an **eventMessageResponse** with the **responseType** is `tentativelyAccepted` (or `decline` if Adele declined), but without a **proposedNewTime** property. Alex would also notice that the associated **event** does not include the **proposedNewTime** property either.
+Note that in step 2, if Adele replies tentative, or declines, and does not propose a different date/time, then in step 3, Alex would receive an **eventMessageResponse** with the **responseType** being `tentativelyAccepted` (or `decline` if Adele declined), but without a **proposedNewTime** property. Alex would also notice that the associated **event** does not include the **proposedNewTime** property either.
 
 ## See also
 - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
