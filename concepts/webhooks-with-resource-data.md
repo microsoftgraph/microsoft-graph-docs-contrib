@@ -303,10 +303,10 @@ To decrypt resource data, your app should perform the reverse steps:
 
 1. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.
 
-1. Use it to decrypt the symmetric key delivered in the **resourceData**.**encryptedResourceDataKey** property of each item in the notification.
+1. Use it to decrypt the symmetric key delivered in the **resourceData/encryptedResourceDataKey** property of each item in the notification.
   - Note: the decryption should use the OAEP padding.
 
-1. Use the decrypted symmetric key with an AES cryptographic component (such as the .NET [AesCryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **resourceData**.**encryptedResourceData**.
+1. Use the decrypted symmetric key with an AES cryptographic component (such as the .NET [AesCryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **resourceData/encryptedResourceData**.
 The decryption parameters for the AES algorithm are as follows:
   - Padding: PKCS7
   - Cipher mode: CBC
