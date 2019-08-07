@@ -35,7 +35,7 @@ To have resource data included in change notifications, you need to provide addi
 - **encryptionCertificate** containing only the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to decrypt the content. More details about the specification of the key and the decryption process are described here.@@@add inner link@@@
 - **encryptionCertificateId** your own identifier for the certificate. It will be included in notifications so you can identify which certificate to use for decryption.
 
-> **Important:** The above properties are required to successfully create a subscription.
+> **Important:** The above properties are required to successfully create a subscription for notifications with resource properties.
 
 #### Subscription request example
 
