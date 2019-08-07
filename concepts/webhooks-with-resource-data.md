@@ -220,50 +220,45 @@ If you are new to token validation, this [blog article](http://www.cloudidentity
 
 > **Note:** Make sure to always send a `202 - Accepted` status code in in the response to the notification; do that before validating the notification (e.g. if you store notifications in queues for later processing) or after validation failed (if you process them on the fly). Accepting a notification prevents unnecessary delivery retries and it also prevents any potential rogue actors from finding out if they passed or failed validation. You can always choose to ignore an invalid notification after you have accepted it.
 
+1. Validate that the token has not expired.
+
+2. Validate the token has not been tampered with and was issued by the expected authority - Microsoft Azure Active Directory. You should not accept tokens issued by any other authority.
+  - Obtain the signing keys from the common configuration endpoint: `https://login.microsoftonline.com/common/.well-known/openid-configuration`. This configuration should be cached by your app for a period of time; however note that the configuration is updated frequently as signing keys are rotated daily.
+  - Verify the signature of the JWT token using those keys.
+
+3. Validate that the token was issued for your app that is subscribing to change notifications.
+  - Validate the "audience" in the token matches your app id.
+  - If you have more than one app receiving notifications, make sure to check for multiple ids
+
+> **Note:** The above steps are part of standard validation logic in JWT token libraries and can typically be executed as a singlee function call. 
+
+4. **Critical**: Validate that the app that generated the token represents the Microsoft Graph change notification publisher. This ensures that notifications are not sent by a different app that is not Microsoft Graph
+  - Check that the **appid** property in the token matches the expect value of `0bf30f3b-4a52-48df-9a82-234910c4a086`.
+
+This validation should be performed on every JWT token in the **validationTokens** array. If any tokens fail, you should consider the notification suspicious and investigate further.
+
+See here for sample code performing the validation. @@@LINK to sample app@@@ using the [System.IdentityModel.Tokens.Jwt](https://www.nuget.org/packages/System.IdentityModel.Tokens.Jwt/) library for .NET.
+
 #### Sample JWT token
 
-Here is an example of a token included in the notification:
+Here is an example of the properties included in the JWT token that are needed for validation:
 
 ```json
 {
-  "aud": "8e460676-ae3f-4b1e-8790-ee0fb5d6148f",
-  "iss": "https://sts.windows.net/2bcd9dfb-6a66-4236-98f9-e8fe4a675323/",
+  "aud": "8e460676-ae3f-4b1e-8790-ee0fb5d6148f",                            <-- this should be your app's id
+  "iss": "https://sts.windows.net/84bd8158-6d4d-4958-8b9f-9d6445542f95/",
   "iat": 1565046813,
   "nbf": 1565046813,
-  "exp": 1565075913,
+  "exp": 1565075913,                                                        <--  expiration date
   "aio": "42FgYKhZ+uOZrHa7p+7tfruauq1HAA==",
-  "appid": "0bf30f3b-4a52-48df-9a82-234910c4a086",
+  "appid": "0bf30f3b-4a52-48df-9a82-234910c4a086",                          <-- this represents the notification publisher and must always be the same value of 0bf30f3b-4a52-48df-9a82-234910c4a086
   "appidacr": "2",
-  "idp": "https://sts.windows.net/2bcd9dfb-6a66-4236-98f9-e8fe4a675323/",
-  "tid": "2bcd9dfb-6a66-4236-98f9-e8fe4a675323",
+  "idp": "https://sts.windows.net/84bd8158-6d4d-4958-8b9f-9d6445542f95/",
+  "tid": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
   "uti": "-KoJHevhgEGnN4kwuixpAA",
   "ver": "1.0"
 }
 ```
-
-
-
-@@@OLD:@@@
-
-1. Send a `202 - Accepted` status code in in the response to the notification. You should do that before validating the notification itself; it prevents any potential rogue actors from finding out if they passed or failed validation. It also acknoledges the receipt of the notification to Microsoft Graph.
-
-2. The `POST` request will contain an `Authorization` header, with a JWT token that you need to validate. Validation consists of the following steps: 
-
-    1. Verify the token was signed by the expected ceritificate - that it was issued by Microsoft.
-
-    2. Verify the issuer is as expected.
-
-    3. Verify that the audience of your token is your application.
-
-    4. Verify that the token has not expired.
-
-If you are new to token validation, this [blog article](http://www.cloudidentity.com/blog/2014/03/03/principles-of-token-validation/) contains a useful overview.
-
-The above steps can be easily executed using the Microsoft libraries available for .NET and Node.js@@@link to docs, samples here@@@. If you are building on a different platform, you can use a third party library for working with JWT tokens.
-
-3. Validate the value of `clientState` in the notification matches the value you originally provided when creating the subscription.
-
-4. At this point, the app can trust that the notification is legitimate.
 
 ## Decrypting resource data from change notifications
 
