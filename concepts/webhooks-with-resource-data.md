@@ -30,10 +30,10 @@ The following resources support change notifications which include resource data
 To have resource data included in change notifications, you need to provide additional properties when creating a subscription:
 
 - @@@Name may change@@@**includeProperties** set to `true` to explicitly request resource data.
-- A `$select` operator in the resource path to select the properties to be included.
+- An optional `$select` operator in the resource path to select the properties to be included.
 - **lifecycleNotificationUrl** - an endpoint to which where lifecycle notifications will be delivered. This can be the same or different as **notificationUrl**. @@@ad inner-link to section@@@
-- **publicEncryptionKey** containing the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to decrypt the content. More details about the specification of the key and the decryption process are described here.@@@add inner link@@@
-- **publicEncryptionKeyId** your own identifier for the key. It will be included in notifications so you can identify which private key to use for decryption. This is useful when you periodically rotate your key pair.
+- **encryptionCertificate** containing only the public key that Microsoft Graph will use to encrypt resource data. You will keep the corresponding private key which will be used to decrypt the content. More details about the specification of the key and the decryption process are described here.@@@add inner link@@@
+- **encryptionCertificateId** your own identifier for the certificate. It will be included in notifications so you can identify which certificate to use for decryption.
 
 > **Important:** The above properties are required to successfully create a subscription.
 
@@ -46,10 +46,10 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
-  "resource": "/teams/allMessages?$select=subject,body", @@@confirm@@@
+  "resource": "/teams/allMessages,
   @@@subject to change@@@"includeProperties": true,
-  @@@"publicEncryptionKey": <base64encodedKey>,
-  @@@"publicEncryptionKeyId": <string>,
+  @@@"encryptionCertificate": <base64encodedCertificate>,
+  @@@"encryptionCertificateId": <string>,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
 }
@@ -63,9 +63,10 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
-  "resource": "/teams/allMessages?$select=subject,body", @@@confirm@@@
+  "resource": "/teams/allMessages",
   @@@subject to change@@@"includeProperties": true,
-  @@@"publicEncryptionKeyId": <string>,   
+  @@@"encryptionCertificateId": <string>,   
+  "encryptionCertificateThumbprint": <thumbprintFromTheCertificate>,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "<secretClientState>"
 }
@@ -216,7 +217,7 @@ The data included in the `resourceData` property of the notification is encrypte
 @@@TBD - error code when an invalid key is provided, or no key@@@
 
 1. You need to obtain a pair of assymetric keys.
-2. You need to provide the **public** key using the **publicEncryptionKey** property in the subscription creation request. You can use the same, or different keys, for each subscription you create.
+2. You need to provide the **public** key using the **encryptionCertificate** property in the subscription creation request. You can use the same, or different keys, for each subscription you create.
 3. The private key will be held and managed by you; we recommend using as secure key store.
 
 #### Key format
@@ -229,10 +230,10 @@ It is a recommmended practice to periodically change assymetric keys, to minimiz
 @@@TBD - change this section to reflect that keys are now part of the subscription. describe how to rotate them with a PATCH operation@@@
 @@@The content below is outdated, needs to be replaced@@@
 1. Obtain a new pair of assymetric keys. Use it for all new subscriptions being created.
-2. Update existing subscriptions with the new **public** key. You can do this as part of regular subscription renewal or enumerate all subscriptions and provide the key. The key can be updated by providing the **publicEncryptionKey** and **publicEncryptionKeyId** properties in the `PATCH` operation on the subscription. @@@TBD - confirm@@@
+2. Update existing subscriptions with the new **public** key. You can do this as part of regular subscription renewal or enumerate all subscriptions and provide the key. The key can be updated by providing the **encryptionCertificate** and **encryptionCertificateId** properties in the `PATCH` operation on the subscription. @@@TBD - confirm@@@
 3. Some things to keep in mind:
     - For a period of time (up to 1 week@@@) the old key may still be used for encryption. Your app must have access to both old and new private keys to be able to decrypt content.
-    - Use the **publicEncryptionKeyId** property in each notification to  identify the correct key to use.
+    - Use the **encryptionCertificateId** property in each notification to  identify the correct key to use.
     - Discard of the old key pair only when you have seen no recent notifications referencing the old key.
 
 ### How to decrypt
@@ -241,7 +242,7 @@ To optimize performance, Microsoft Graph uses its own generated symmetric key to
 
 To decrypt resource data, your app should perform the following steps:
 
-1. Use the `publicEncryptionKeyId` property to identify the private key your app should use for decryption.
+1. Use the `encryptionCertificateId` property to identify the private key your app should use for decryption.
 2. Using the private key, decrypt the content of the `symmetricEncryptionKey` property.
 3. Use the symmetric key to decrypt the content of the `resourceData` for each notification item in the `value` array.
 
@@ -262,7 +263,7 @@ For example, given this notification:
       "resourceData": <encryptedResourceDataContent>
     }
   ],
-  "publicEncryptionKeyId": <key_guid>,
+  "encryptionCertificateId": <key_guid>,
   "symmetricEncryptionKey": <encryptedSymmetricKeyFromGraph>
 }
 ```
