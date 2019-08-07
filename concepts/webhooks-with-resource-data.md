@@ -282,27 +282,69 @@ The data included in the **resourceData** property of the notification is encryp
 
 It is a recommmended practice to periodically change your assymetric keys to minimize the risk of a private key becoming compromised. If you want to introduce a new pair of keys, follow these steps:
 
-@@@TBD - change this section to reflect that keys are now part of the subscription. describe how to rotate them with a PATCH operation@@@
 1. Obtain a new certificate with a new pair of assymetric keys. Use it for all new subscriptions being created.
-2. Update existing subscriptions with the new certificate key; you can do this as part of regular subscription renewal or enumerate all subscriptions and provide the key. The certificate can be updated by providing the **encryptionCertificate** and **encryptionCertificateId** properties in the `PATCH` operation on the subscription. @@@TBD - confirm@@@
-3. Some things to keep in mind:
+
+1. Update existing subscriptions with the new certificate key; you can do this as part of regular subscription renewal or enumerate all subscriptions and provide the key. The certificate can be updated by providing the **encryptionCertificate** and **encryptionCertificateId** properties in the `PATCH` operation on the subscription. @@@TBD - confirm@@@
+
+1. Some things to keep in mind:
     - For a period of time the old certificate may still be used for encryption. Your app must have access to both old and new certificates to be able to decrypt content.
     - Use the **encryptionCertificateId** property in each notification to  identify the correct key to use.
     - Discard of the old certificate only when you have seen no recent notifications referencing it.
 
 ### How to decrypt
 
-To optimize performance, Microsoft Graph uses its own generated symmetric key to encrypt resource data. That key itself is then encrypted by Microsoft Graph using the apps assymetric public key, and included in the `symmetricEncryptionKey` property.
+To optimize performance, Microsoft Graph uses a two step encryption process:
+  - It generates a symmetric key, and uses it to encrypt resource data.
+  - It uses the public assymetric key from the subscription to encrypt the symmetric key and includes it in the notification.
 
-To decrypt resource data, your app should perform the following steps:
+To decrypt resource data, your app should perform the reverse steps:
 
-1. Use the `encryptionCertificateId` property to identify the private key your app should use for decryption.
-2. Using the private key, decrypt the content of the `symmetricEncryptionKey` property.
-3. Use the symmetric key to decrypt the content of the `resourceData` for each notification item in the `value` array.
+1. Use the `encryptionCertificateId` property to the certificate that should be used to descryp the symmetric key.
 
-Note that the symmetric key will change frequently so you should not store or cache it, but always use the latest value in the notification payload.
+1. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.
 
-#### Code sample using .NET
+1. Use it to decrypt the symmetric key delivered in the **resourceData**.**encryptedResourceDataKey** property of each item in the notification.
+  - Note: the decryption should use the OAEP padding.
+
+1. Use the decrypted symmetric key with an AES cryptographic component (such as the .NET [AesCryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **resourceData**.**encryptedResourceData**.
+The decryption parameters for the AES algorithm are as follows:
+  - Padding: PKCS7
+  - Cipher mode: CBC
+  - The "initialization vector" must be set by copying the first @@@how many@@@ bytes of the symmetric key used for decryption
+
+1. The decrypted value is a string json representation of the resource included in the notification.
+
+> **Note:** always assume that the symmetric key is different for each item in the notification.
+
+#### Sample notification with encrypted resource data
+
+```json
+{
+	"value": [
+		{
+			"subscriptionId": "76222963-cc7b-42d2-882d-8aaa69cb2ba3",
+			"changeType": "created",
+			...
+			"resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
+			"resourceData": {
+				"id": "1565047490246",
+				"encryptedResourceData": <base64encoded>,
+				"encryptedResourceDataKey": <base64encoded>,
+				"encryptionCertificateId": "E96149FC-3B4F-4E0B-ACED-E715D29961FD",
+				"@odata.type": "#Microsoft.Graph.ChatMessage",
+				"@odata.id": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')"
+			}
+		}
+	],
+	"validationTokens": [
+		"eyJ0eXAiOiJKV1QiLCJhbGciOiJSU..."
+	]
+}
+```
+
+#### Code sample using C# .NET
+
+These are some useful code snippets for 
 
 For example, given this notification:
 ```json
