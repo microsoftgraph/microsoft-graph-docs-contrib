@@ -22,6 +22,10 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | beta | Added the new [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) resource.|
 | Addition | beta | Added APIs to manage [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) resources on [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta).|
 | Addition | beta | Added the new [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) resource.|
+| Addition | beta | Added the [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-beta) and [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-beta) resources, with pendingOperations applying to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource. |
+| Addition | beta | Added the [restore](/graph/api/driveitem-restore?view=graph-rest-beta) action to the [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta) resource. |
+| Addition | beta | Added the `orientation` property to the [photo](/graph/api/resources/photo?view=graph-rest-beta) resource. |
+| Addition | beta | Added the `sha256Hash` property to the [hashes](/graph/api/resources/hashes?view=graph-rest-beta) resource. |
 
 ## July 2019
 
