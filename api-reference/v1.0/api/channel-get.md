@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a channel."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get channel

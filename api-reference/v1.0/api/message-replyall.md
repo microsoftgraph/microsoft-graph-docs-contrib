@@ -4,6 +4,7 @@ description: "Reply to all recipients of a message. The message is then saved in
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: replyAll

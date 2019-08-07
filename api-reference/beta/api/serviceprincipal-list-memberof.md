@@ -2,6 +2,9 @@
 title: "List servicePrincipal memberOf"
 description: "Get the groups and directory roles that this service principal is a direct member of. This operation is not transitive."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List servicePrincipal memberOf

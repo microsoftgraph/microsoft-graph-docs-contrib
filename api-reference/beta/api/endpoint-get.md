@@ -2,6 +2,9 @@
 title: "Get endpoint"
 description: "Retrieve the properties and relationships of a specific endpoint object."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # Get endpoint

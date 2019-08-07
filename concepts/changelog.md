@@ -1,7 +1,7 @@
 ---
 title: "Changelog for Microsoft Graph"
 description: "This changelog covers what's changed in Microsoft Graph, including the v1.0 and beta endpoint Microsoft Graph APIs."
-author: "jthake-msft"
+author: "MSGraphDocsVteam"
 localization_priority: Priority
 ---
 
@@ -19,11 +19,21 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added support for subscribing to notifications that include resource data. Currenttly supported resources are Teams messages in channels and chats. Subscribing apps will have to implement additional authorization and decryption code to benefit from this feature. For more details, see [Set up change notifications for Teams messages, including message properties (preview)](webhooks-with-resource-data.md).|
 
+### Education
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the new [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) resource.|
+| Addition | beta | Added APIs to manage [educationRubric](/graph/api/resources/educationRubric?view=graph-rest-beta) resources on [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta) and [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
+| Addition | beta | Added the new [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) resource.|
+| Addition | beta | Added APIs to manage [educationOutcome](/graph/api/resources/educationOutcome?view=graph-rest-beta) resources on [educationSubmission](/graph/api/resources/educationSubmission?view=graph-rest-beta).|
+| Addition | beta | Added the new [educationMakeCodeResource](/graph/api/resources/educationMakeCodeResource?view=graph-rest-beta) resource.|
+
 ## July 2019
 
-### Calendar | Places
+### Calendar | Place
 
-Debut of places API to provide rich details for locations in apps.
+Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -74,17 +84,21 @@ Debut of places API to provide rich details for locations in apps.
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition | v1.0 | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-1.0) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-1.0) resource. |
-| Addition | beta | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) resource. |
+| Addition | Beta | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _Organization.Read.All_ and _Organization.ReadWrite.All_ to get and update the [organization API](/graph/api/resources/organization?view=graph-rest-beta) resource and get the [subcribedSku](/graph/api/resources/subscribedSku?view=graph-rest-beta) resource. |
 | Addition | v1.0 | Added the [group:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) and [directoryobject:validateProperties function](/graph/api/group-validateproperties?view=graph-rest-1.0) on [groups](/graph/api/group-delta?view=graph-rest-1.0), which validates that an Office 365 group's display name or mail nickname complies with naming policies. |
 | Addition | Beta |Added 'version', 'discoveryDateTime', 'discoverabilities' properties to resource type [directoryDefinition](/graph/api/resources/synchronization-directorydefinition?view=graph-rest-beta).|
 | Addition | Beta |Added the [directoryDefinition: discover](/graph/api/resources/directorydefinition-discover?view=graph-rest-beta) method.|
+| Addition | Beta | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _AdministrativeUnit.Read.All_ and _AdministrativeUnit.ReadWrite.All_ to get and update the [administrative unit API](/graph/api/resources/administrativeunit?view=graph-rest-beta) resource. |
+| Addition | v1.0 | Added [new delegated and application permissions](/graph/permissions-reference?#organization-permissions) _RoleManagement.Read.Directory_ and _RoleManagement.ReadWrite.Directory_ to get and update the [directory role API](/graph/api/resources/directoryRole?view=graph-rest-1.0) resource and get the [directory role template API](/graph/api/resources/directoryRoleTemplate?view=graph-rest-1.0) resource. |
+| Addition | Beta | Added [new application permission](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ to get, create, update and delete in the [access reviews API](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
+| Addition | Beta | Added new resource type [**featureRolloutPolicy**](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) to the [directory](/graph/api/resources/directory?view=graph-rest-beta) resource. Feature rollout policy helps tenant administrators to pilot features to specific groups before enabling them for entire organization.|
+
 
 ### Mail (Outlook)
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added support for the Mail.ReadBasic.All application permission in mailFolder API: [list mailfolders](/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic.All support in [delta query for message](/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](/graph/api/mailfolder-delta?view=graph-rest-beta).|
-
 
 ### Reports
 
@@ -178,6 +192,12 @@ Debut of places API to provide rich details for locations in apps.
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods. |
 
+### Users
+
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition        | Beta        | Added the **lastPasswordChangeDateTime** property to the [user](/graph/api/resources/user?view=graph-rest-beta) entity. |
+
 ## May 2019
 
 | **Change type** | **Version**   | **Description**                          |
@@ -225,6 +245,15 @@ Debut of places API to provide rich details for locations in apps.
 |Change|beta|Changed the type of the following properties on the [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta) enum type:<br/>**fullScan** from 2 to 3<br/>**quickScan** from 3 to 4<br/>**signatureUpdate** from 4 to 5<br/>|
 |Addition|beta|Added the **derivedCredential** member to the [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta) enum type|
 |Addition|beta|Added the **derivedCredential** member to the [wiFiAuthenticationMethod](/graph/api/resources/intune-deviceconfig-wifiauthenticationmethod?view=graph-rest-beta) enum type|
+
+### Files (OneDrive)
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the [bundle](/graph/api/resources/bundle?view=graph-rest-beta) complex type |
+| Addition | Beta | Added the [album](/graph/api/resources/album?view=graph-rest-beta) complex type |
+| Addition | Beta | Added the **bundles** navigation property to the [drive](/graph/api/resources/drive?view=graph-rest-beta) entity |
+| Addition | Beta | Added the **bundle** property to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) entity |
+| Addition | Beta | Added the **grant** action to the [permission](/graph/api/resources/permission?view=graph-rest-beta) entity |
 
 ### Education
 | Change type | Version | Description                                                                                                                                                      |

@@ -4,6 +4,7 @@ description: "Contains different types of audit logs. This resources returns a s
 author: "dhanyahk"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # auditLogRoot resource type

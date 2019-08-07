@@ -2,6 +2,9 @@
 title: "List privilegedRoleAssignmentRequests"
 description: "Retrieve a collection of privilegedRoleAssignmentRequest. "
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List privilegedRoleAssignmentRequests

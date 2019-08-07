@@ -4,6 +4,7 @@ description: "Activate a directory role. To read a directory role or update its 
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Activate directoryRole
@@ -17,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | RoleManagement.ReadWrite.Directory, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.ReadWrite.All |
+|Application | RoleManagement.ReadWrite.Directory |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

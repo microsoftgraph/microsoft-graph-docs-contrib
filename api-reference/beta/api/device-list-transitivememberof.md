@@ -4,6 +4,7 @@ description: "Get groups that the device is a member of. This API request is tra
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List device transitive groups
