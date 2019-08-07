@@ -22,8 +22,8 @@ This article walks through the details, using the Team messages resource as an e
 The following resources support change notifications which include resource data:
 
 - Teams messages (preview)
-  - new or changed Teams messages in the entire organization (tenant): @@@need correct resource path``@@@
-  - new or changed messages in a specific channel: @@@TBD@@@
+  - new or changed messages in Team channels in the entire organization (tenant): `/teams/allMessages`
+  - new or changed messages in all chats in the entire organization (tenant): `/chats/allMessages`
 
 ## Creating a subscription
 
