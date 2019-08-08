@@ -7279,23 +7279,6 @@
             href: api/intune-tem-telecomexpensemanagementpartner-delete.md
           - name: Update
             href: api/intune-tem-telecomexpensemanagementpartner-update.md
-
-      - name: Telecom expenses
-        href: resources/intune-tem-conceptual.md
-        items:
-        - name: Telecom expense management partner
-          href: resources/intune-tem-telecomexpensemanagementpartner.md
-          items:
-          - name: List
-            href: api/intune-tem-telecomexpensemanagementpartner-list.md
-          - name: Get
-            href: api/intune-tem-telecomexpensemanagementpartner-get.md
-          - name: Create
-            href: api/intune-tem-telecomexpensemanagementpartner-create.md
-          - name: Delete
-            href: api/intune-tem-telecomexpensemanagementpartner-delete.md
-          - name: Update
-            href: api/intune-tem-telecomexpensemanagementpartner-update.md
     - name: Education
       items:
       - name: Overview
