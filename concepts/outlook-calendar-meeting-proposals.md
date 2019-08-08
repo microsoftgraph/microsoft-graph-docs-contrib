@@ -145,7 +145,7 @@ The following is an example where Alex invites Adele to lunch, Adele proposes an
     }
     ```
 
-2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta). She notices the **allowNewTimeProposals** property is set. Using the **event** associated with this **eventMessageRequest**, she makes a tentative reply and proposes a different date/time in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
+2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get#example-2?view=graph-rest-beta) with this **eventMessageRequest**, she makes a tentative reply and proposes a different date/time in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
 
     <!-- {
       "blockType": "request",
@@ -193,7 +193,7 @@ The following is an example where Alex invites Adele to lunch, Adele proposes an
     Prefer: outlook.timezone="Pacific Standard Time"
     ```
 
-    For simplicity, Alex requests only that latest message and the response shows a collection of only that message.
+    For demonstration purpose, assume Adele's reply is the latest message in Alex' mailbox, and Alex can simply request that latest message.
 
     <!-- {
       "blockType": "response",

@@ -59,8 +59,10 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.
-## Example
-##### Request 1
+## Examples
+
+### Example 1
+#### Request
 The first example shows how to get the properties of an event message based on the event message ID.
 
 # [HTTP](#tab/http)
@@ -89,7 +91,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 
 ---
 
-##### Response 1
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -195,8 +197,8 @@ Content-type: application/json
 }
 ```
 
-
-##### Request 2
+### Example 2
+#### Request
 The second example shows how to get the event associated with an event message. It uses
 the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property,
 and apply an $expand parameter to get the properties of the event.
@@ -227,7 +229,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 
 ---
 
-##### Response 2
+#### Response
 Here is an example of the response. The properties of the associated event are returned in the response.
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
