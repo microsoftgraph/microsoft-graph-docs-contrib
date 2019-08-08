@@ -135,7 +135,7 @@ The following is a JSON representation of the resource.
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "String",
   "conversationId": "String",
-  "conversationIndex": "String (binary)",
+  "conversationIndex": "Edm.Binary",
   "createdDateTime": "String (timestamp)",
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
