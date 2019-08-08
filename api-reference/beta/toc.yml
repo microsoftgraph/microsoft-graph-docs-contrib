@@ -7263,6 +7263,7 @@
             href: api/intune-shared-windowsdomainjoinconfiguration-delete.md
           - name: Update
             href: api/intune-shared-windowsdomainjoinconfiguration-update.md
+
       - name: Telecom expenses
         href: resources/intune-tem-conceptual.md
         items:
