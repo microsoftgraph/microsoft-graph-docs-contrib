@@ -15,7 +15,7 @@ A message that represents a meeting request in an invitee's mailbox.
 
 The **eventMessageRequest** entity is derived from [eventMessage](eventmessage.md).
 
-To respond to the meeting request, you can use the **event** navigation property and [accept](../api/event-accept.md), [tentativelyAccept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md) that event associated with the **eventMessageRequest**.
+To respond to the meeting request, first, use the **event** navigation property to access the corresponding event, as shown in this [example](../api/eventmessage-get.md#example-2). Then [accept](../api/event-accept.md), [tentativelyAccept](../api/event-tentativelyaccept.md), or [decline](../api/event-decline.md) that event associated with the **eventMessageRequest**.
 
 ## JSON representation
 

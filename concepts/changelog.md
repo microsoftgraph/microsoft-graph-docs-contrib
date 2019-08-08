@@ -13,6 +13,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2019
 
+### Calendar
+
+Meeting organizers can allow meeting time proposals, and invitees can suggest alternative meeting times.
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the **allowNewTimeProposals** property to the [event](/graph/api/resources/event?view=graph-rest-beta) and [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta) entities. |
+| Addition | Beta | Added the **proposedNewTime** optional parameter to the [tentativelyAccept](/graph/api/event-tentativelyaccept?view=graph-rest-beta) and [decline](/graph/api/event-decline?view=graph-rest-beta) methods of **event**. |
+| Addition | Beta | Added the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) entity that is based on [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta), and in addition, includes the **proposedNewTime** and **responseType** properties. |
+| Addition | Beta | Added the **proposedNewTime** property to the [attendee](/graph/api/resources/attendee?view=graph-rest-beta) complex type. |
+
 ### Education
 
 | **Change type** | **Version**   | **Description**                          |

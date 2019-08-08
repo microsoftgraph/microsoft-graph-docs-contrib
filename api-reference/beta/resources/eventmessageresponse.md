@@ -15,7 +15,7 @@ A message that represents a response to a meeting request in the meeting organiz
 
 Derived from [eventMessage](eventmessage.md). 
 
-An organizer who receives an **eventMessageResponse**  that has the **responseType** set to `tentativelyAccepted` or `declined`, and that includes a **proposedNewTime** property can accept the proposal by [updating](../api/event-update.md) the associated event to the proposed time. 
+An organizer who receives an **eventMessageResponse** with the **responseType** set to `tentativelyAccepted` or `declined`, and that includes a **proposedNewTime** property, can choose to accept the proposal. To do so, first, use the **event** navigation property of the **eventMessageResponse** to access the corresponding event, as shown in this [example](../api/eventmessage-get.md#example-2). Then [update](../api/event-update.md) the associated event to the proposed time.
 
 For more information on how to propose a time, and how to receive and accept a new time proposal, see [Propose new meeting times](/graph/outlook-calendar-meeting-proposals).
 

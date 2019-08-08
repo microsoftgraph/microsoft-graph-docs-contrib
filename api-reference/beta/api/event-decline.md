@@ -13,7 +13,7 @@ doc_type: apiPageType
 
 Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).
 
-If the event allows proposals for new times, on declining the event, an invitee can optionally include the **proposedNewTime** parameter. For more information on how to propose a time, and how to receive and accept a new time proposal, see [Propose new meeting times](/graph/outlook-calendar-meeting-proposals).
+If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter. For more information on how to propose a time, and how to receive and accept a new time proposal, see [Propose new meeting times](/graph/outlook-calendar-meeting-proposals).
 
 
 ## Permissions
@@ -63,7 +63,7 @@ In the request body, provide a JSON object with the following parameters.
 |:---------------|:--------|:----------|
 |comment|String|Text included in the response. Optional.|
 |sendResponse|Boolean|`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.|
-|proposedNewTime|[timeSlot](../resources/timeslot.md)|An alternate date/time proposed by an invitee for a meeting request to start and end. Valid only for events that allow new time proposals. Optional.|
+|proposedNewTime|[timeSlot](../resources/timeslot.md)|An alternate date/time proposed by an invitee for a meeting request to start and end. Valid only for events that allow new time proposals. Setting this parameter requires setting **sendResponse** to `true`. Optional.|
 
 ## Response
 
