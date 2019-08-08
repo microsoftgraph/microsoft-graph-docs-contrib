@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the d
 |scriptContent|Binary|The script content. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAsAccount|[runAsAccountType](../resources/intune-devices-runasaccounttype.md)|Indicates the type of execution context. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md). Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md). Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
 |fileName|String|Script file name. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance. Inherited from [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|

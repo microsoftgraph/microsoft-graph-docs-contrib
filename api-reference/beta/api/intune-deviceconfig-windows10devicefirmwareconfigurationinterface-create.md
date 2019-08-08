@@ -59,12 +59,12 @@ The following table shows the properties that are required when you create the w
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |changeUefiSettingsPermission|[changeUefiSettingsPermission](../resources/intune-deviceconfig-changeuefisettingspermission.md)|Defines the permission level granted to users to change UEFI settings. Possible values are: `notConfiguredOnly`, `none`.|
-|virtualizationOfCpuAndIO|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether CPU and IO virtualization is enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|cameras|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether built-in cameras are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|microphonesAndSpeakers|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether built-in microphones or speakers are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|radios|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether built-in radios e.g. WIFI, NFC, Bluetooth, are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|bootFromExternalMedia|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to boot from external media. Possible values are: `notConfigured`, `enabled`, `disabled`.|
-|bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-deviceconfig-enablement.md)|Defines whether a user is allowed to boot from built-in network adapters. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|virtualizationOfCpuAndIO|[enablement](../resources/intune-shared-enablement.md)|Defines whether CPU and IO virtualization is enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|cameras|[enablement](../resources/intune-shared-enablement.md)|Defines whether built-in cameras are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|microphonesAndSpeakers|[enablement](../resources/intune-shared-enablement.md)|Defines whether built-in microphones or speakers are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|radios|[enablement](../resources/intune-shared-enablement.md)|Defines whether built-in radios e.g. WIFI, NFC, Bluetooth, are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|bootFromExternalMedia|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from external media. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from built-in network adapters. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 
 
