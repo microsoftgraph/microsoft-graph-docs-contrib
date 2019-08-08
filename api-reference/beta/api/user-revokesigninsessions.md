@@ -48,6 +48,9 @@ This operation has no request content.
 
 If successful, this method returns a `204 No Content` response code.
 
+>[!NOTE]
+>This API has a [known issue](/graph/concepts/known-issues.md#revoke-sign-in-sessions-returns-wrong-HTTP-code). It returns a different HTTP response code.
+
 ## Example
 The following example shows how to call this API.
 
