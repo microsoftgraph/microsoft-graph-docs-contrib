@@ -45,6 +45,7 @@ Devices that are managed or pre-enrolled through Intune
 |[windowsDefenderUpdateSignatures action](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|None|Not yet documented|
 |[updateWindowsDeviceAccount action](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|None|Not yet documented|
 |[revokeAppleVppLicenses action](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|None|Revoke all Apple Vpp licenses for a device|
+|[sendCustomNotificationToCompanyPortal action](../api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md)|None|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -117,14 +118,15 @@ Devices that are managed or pre-enrolled through Intune
 |windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device|
 |notes|String|Notes on the device created by IT Admin|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager client information, valid only for devices managed, duel-managed or tri-managed by ConfigMgr Agent|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|All applications currently installed on the device|
-|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category|
+|deviceCategory|[deviceCategory](../resources/intune-devices-devicecategory.md)|Device category|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status.|
-|users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
+|users|[user](../resources/intune-devices-user.md) collection|The primary users associated with the managed device.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -171,7 +173,8 @@ Here is a JSON representation of the resource.
     "deviceFullQualifiedDomainName": "String",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "String",
     "deviceGuardVirtualizationBasedSecurityState": "String",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
+    "osBuildNumber": "String"
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -301,11 +304,13 @@ Here is a JSON representation of the resource.
     "state": "String",
     "errorCode": 1024,
     "lastSyncDateTime": "String (timestamp)"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "String"
   }
 }
 ```
-
-
 
 
 

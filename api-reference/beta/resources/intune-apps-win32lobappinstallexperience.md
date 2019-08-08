@@ -18,7 +18,7 @@ Contains installation experience properties for a Win32 App
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context the app runs in. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-apps-runasaccounttype.md)|Indicates the type of execution context the app runs in. Possible values are: `system`, `user`.|
 
 ## Relationships
 None
@@ -36,8 +36,6 @@ Here is a JSON representation of the resource.
   "runAsAccount": "String"
 }
 ```
-
-
 
 
 
