@@ -297,16 +297,19 @@ To optimize performance, Microsoft Graph uses a two step encryption process:
   - It generates a symmetric key, and uses it to encrypt resource data.
   - It uses the public assymetric key from the subscription to encrypt the symmetric key and includes it in the notification.
 
-To decrypt resource data, your app should perform the reverse steps:
+To decrypt resource data, your app should perform the reverse steps, using the properties under **encryptedContent** in each notification item:
 
-1. Use the `encryptionCertificateId` property to the certificate that should be used to descryp the symmetric key.
+1. Use the **encryptionCertificateId** property to the certificate that should be used to descryp the symmetric key.
 
 1. Initialize an RSA cryptographic component (such as the .NET [RSACryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.rsacryptoserviceprovider.decrypt?view=netframework-4.8)) with the private key.
 
-1. Use it to decrypt the symmetric key delivered in the **resourceData/encryptedResourceDataKey** property of each item in the notification.
-  - Note: the decryption should use the OAEP padding.
+1. Use it to decrypt the symmetric key delivered in the **dataKey** property of each item in the notification.
+  - Note: the decryption algorithm should use the OAEP padding.
 
-1. Use the decrypted symmetric key with an AES cryptographic component (such as the .NET [AesCryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **resourceData/encryptedResourceData**.
+1. Use the symmetric key to calculate the HMAC-SHA256 signature of the value in **data**.
+  - Compare it to the value in **dataSignature**. If they do not match, assume the payload has been tampered with and do not decrypt it.
+
+1. Use the decrypted symmetric key with an AES cryptographic component (such as the .NET [AesCryptoServiceProvider](https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography.aescryptoserviceprovider?view=netframework-4.8)) to decrypt the content in **data**.
 The decryption parameters for the AES algorithm are as follows:
   - Padding: PKCS7
   - Cipher mode: CBC
@@ -318,6 +321,37 @@ The decryption parameters for the AES algorithm are as follows:
 
 #### Sample notification with encrypted resource data
 
+@@@Future payload, soon to go live@@@
+
+```json
+{
+	"value": [
+		{
+			"subscriptionId": "76222963-cc7b-42d2-882d-8aaa69cb2ba3",
+			"changeType": "created",
+			...
+			"resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
+			"resourceData": {
+				"id": "1565293727947",
+				"@odata.type": "#Microsoft.Graph.ChatMessage",
+				"@odata.id": "teams('88cbc8fc-164b-44f0-b6a6-b59b4a1559d3')/channels('19:8d9da062ec7647d4bb1976126e788b47@thread.tacv2')/messages('1565293727947')/replies('1565293727947')"
+			},
+			"encryptedContent": {
+				"data": "<encryptedDataThatProducesAFullResource>",
+        "dataSignature": "<HMAC-SHA256 hash>",
+				"dataKey": "<encryptedSymmetricKeyFromGraph>",
+				"encryptionCertificateId": "MySelfSignedCert/DDC9651A-D7BC-4D74-86BC-A8923584B0AB",
+				"encryptionCertificateThumbprint": "07293748CC064953A3052FB978C735FB89E61C3D",
+			}
+		}
+	],
+	"validationTokens": [
+		"eyJ0eXAiOiJKV1QiLCJhbGciOiJSU..."
+	]
+}
+```
+
+@@@Current payload, subject to change soon@@@
 ```json
 {
 	"value": [
@@ -341,7 +375,6 @@ The decryption parameters for the AES algorithm are as follows:
 	]
 }
 ```
-
 #### Code sample using C# .NET
 
 These are some useful code snippets using C# and .NET for each stage of decryption
