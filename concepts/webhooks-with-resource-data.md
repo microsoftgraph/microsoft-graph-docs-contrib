@@ -262,7 +262,7 @@ Here is an example of the properties included in the JWT token that are needed f
 
 ## Decrypting resource data from change notifications
 
-The data included in the **resourceData** property of the notification is encrypted by Microsoft Graph using the public key provided by you. This is done to increase the security of customer data accessed via notifications. It is your responsibility to secure the private key to ensure that customer data cannot be decrypted by a 3rd party, even if they managed to intercept the original notifications.
+The data included in the **resourceData** property of the notification is limited to only the basic id and type information about the resource. The **encryptedData** property contains the full resource data that was encrypted by Microsoft Graph using the public key provided by you; it also contains additional values required for verification and decryption. This is done to increase the security of customer data accessed via notifications. It is your responsibility to secure the private key to ensure that customer data cannot be decrypted by a 3rd party, even if they managed to intercept the original notifications.
 
 ### Managing encryption keys
 
@@ -362,8 +362,8 @@ The decryption parameters for the AES algorithm are as follows:
 			"resource": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')",
 			"resourceData": {
 				"id": "1565047490246",
-				"encryptedResourceData": <base64encoded>,
-				"encryptedResourceDataKey": <base64encoded>,
+				"encryptedResourceData": "<base64encoded>",
+				"encryptedResourceDataKey": "<base64encoded>",
 				"encryptionCertificateId": "E96149FC-3B4F-4E0B-ACED-E715D29961FD",
 				"@odata.type": "#Microsoft.Graph.ChatMessage",
 				"@odata.id": "teams('d29828b8-c04d-4e2a-b2f6-07da6982f0f0')/channels('19:f127a8c55ad949d1a238464d22f0f99e@thread.skype')/messages('1565045424600')/replies('1565047490246')"
