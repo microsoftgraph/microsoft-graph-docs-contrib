@@ -384,12 +384,30 @@ These are some useful code snippets using C# and .NET for each stage of decrypti
 ```csharp
 // initialize with the private key matching the encryptionCertificateId
 RSACryptoServiceProvider rsaProvider = ...;        
-byte[] encryptedSymmetricKey = Convert.FromBase64String(<value from encryptedResourceDataKey property);
+byte[] encryptedSymmetricKey = Convert.FromBase64String(<value from dataKey property);
 
 // decrypt using OAEP padding
 byte[] decryptedSymmetricKey = rsaProvider.Decrypt(encryptedSymmetricKey, fOAEP: true);
 
 // decryptedSymmetricKey can now be used with the AES algorithm
+```
+
+### Comparing data signature using HMAC-SHA256
+
+```csharp
+byte[] decryptedSymmetricKey = <the aes key decrpted in the previous step>;
+byte[] encryptedPayload = <the value from the data property, still encrypted>;
+byte[] expectedSignature = <the value from the dataSignature property>;
+byte[] actualSignature;
+
+using (HMACSHA256 hmac = new HMACSHA256(decryptedSymmetricKey))
+{
+    actualSignature = hmac.ComputeHash(encryptedPayload);
+}
+if (actualSignature.SequenceEqual(expectedSignature))
+{
+    // continue with decryption of the encryptedPayload
+}
 ```
 
 #### Decryption of the resource data content
@@ -406,7 +424,7 @@ byte[] iv = new byte[vectorSize];
 Array.Copy(decryptedSymmetricKey, iv, vectorSize);
 aesProvider.IV = iv;
 
-byte[] encryptedPayload = Convert.FromBase64String(<value from encryptedResourceData property);
+byte[] encryptedPayload = Convert.FromBase64String(<value from dataKey property>);
 
 string decryptedResourceData;
 // decrypt the resource data content
