@@ -11,8 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers. Currently "directory" is the only RBAC application 
-supported, and must be provided.
+Role management container for unified role definitions and role assignments for Microsoft 365 RBAC providers. Currently "directory" is the only RBAC application supported.
 
 ## Methods
 
@@ -31,7 +30,7 @@ None
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|roleAssignments|[unifiedRoleAssignment](unifiedroleassignment.md) collection| <b>Not implemented.</b> Read-only. Nullable.|
+|roleAssignments|[unifiedRoleAssignment](unifiedroleassignment.md) collection| Read-only. Nullable.|
 |roleDefinitions|[unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only. Nullable.|
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
