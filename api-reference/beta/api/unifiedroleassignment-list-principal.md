@@ -1,6 +1,6 @@
 ---
-title: "List principal"
-description: "Retrieve a list of directoryobject objects."
+title: "List roleAssignments by principal"
+description: "List roleAssignment objects by principal."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of directoryobject objects.
+List roleAssignment objects by principal (for example, a given user).
 
 ## Permissions
 
