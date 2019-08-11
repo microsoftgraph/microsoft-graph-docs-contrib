@@ -29,5 +29,3 @@ Android required password type.
 
 
 
-
-
