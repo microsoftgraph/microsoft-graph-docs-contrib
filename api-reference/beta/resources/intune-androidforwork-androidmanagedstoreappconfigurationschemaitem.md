@@ -4,6 +4,7 @@ description: "Single configuration item inside an Android application's custom c
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidManagedStoreAppConfigurationSchemaItem resource type
@@ -63,8 +64,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 

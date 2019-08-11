@@ -4,6 +4,7 @@ description: "Base class for Windows 10 certificate profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10CertificateProfileBase resource type
@@ -105,8 +106,6 @@ Here is a JSON representation of the resource.
   "certificateValidityPeriodScale": "String"
 }
 ```
-
-
 
 
 

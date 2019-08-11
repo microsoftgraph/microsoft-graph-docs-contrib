@@ -4,6 +4,7 @@ description: "Describes the resourceOperation resource (entity) of the Microsoft
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # resourceOperation resource type
@@ -56,8 +57,6 @@ Here is a JSON representation of the resource.
   "enabledForScopeValidation": true
 }
 ```
-
-
 
 
 

@@ -4,6 +4,7 @@ description: "Windows 10 force update schedule for Apps"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10AppsForceUpdateSchedule resource type
@@ -39,8 +40,6 @@ Here is a JSON representation of the resource.
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
-
 
 
 

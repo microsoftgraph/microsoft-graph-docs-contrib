@@ -4,6 +4,7 @@ description: "Get the contact folder collection in the default Contacts folder o
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List contactFolders

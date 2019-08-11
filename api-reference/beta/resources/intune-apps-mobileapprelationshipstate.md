@@ -4,6 +4,7 @@ description: "Describes the installation status details of the child app in the 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppRelationshipState resource type
@@ -51,8 +52,6 @@ Here is a JSON representation of the resource.
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

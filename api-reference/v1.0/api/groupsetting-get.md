@@ -4,6 +4,7 @@ description: "Retrieve the properties of a specific of group setting object."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get a group setting

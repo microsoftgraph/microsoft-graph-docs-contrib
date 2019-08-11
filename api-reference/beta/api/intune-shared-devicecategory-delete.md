@@ -4,6 +4,7 @@ description: "Deletes a deviceCategory."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Delete deviceCategory
@@ -61,6 +62,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

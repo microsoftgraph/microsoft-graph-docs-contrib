@@ -4,6 +4,7 @@ description: "A class that represents a contained app of a WindowsUniversalAppX 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsUniversalAppXContainedApp resource type
@@ -50,8 +51,6 @@ Here is a JSON representation of the resource.
   "appUserModelId": "String"
 }
 ```
-
-
 
 
 

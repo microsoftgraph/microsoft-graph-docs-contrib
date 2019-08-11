@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Windows AppX Line
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsAppX resource type
@@ -127,8 +128,6 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
-
-
 
 
 

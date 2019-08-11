@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, update an existing accessR
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Remove accessReview reviewer
@@ -18,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.ReadWrite.All |
+|Delegated (work or school account)     | AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | AccessReview.ReadWrite.Membership |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -4,6 +4,7 @@ description: "Get groups that the device is a member of. This API request is tra
 author: "anchanda"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List device transitive groups
