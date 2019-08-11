@@ -13,7 +13,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2019
 
-### Files, sites, and lists (OneDrive for Business and SharePoint)
+### Files (OneDrive for Business)
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
