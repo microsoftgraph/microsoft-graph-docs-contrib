@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ISkypeForBusinessPeerToPeerActivityUserCountsCollectionPage getSkypeForBusinessPeerToPeerActivityUserCounts = graphClient.reports()
-	.getSkypeForBusinessPeerToPeerActivityUserCounts('D7')
+	.getSkypeForBusinessPeerToPeerActivityUserCounts("D7")
 	.buildRequest()
 	.get();
 
