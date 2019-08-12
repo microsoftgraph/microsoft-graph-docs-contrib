@@ -41,7 +41,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter      | Type    | Description |
 |:---------------|:--------|:------------|
-| clientContext  | String  | Unique Client Context string. Max limit is 256 chars. |
+| clientContext  | String  | Unique client context string. Can have a maximum of 256 characters. |
 
 ## Response
 If successful, this method returns `200 OK` response code.
