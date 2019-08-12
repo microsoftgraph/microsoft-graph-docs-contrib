@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects in the response body.
 
-## Example 1: Request using a filter on role definition Id.
+## Example 1: Request using a filter on role definition ID.
 
 ### Request
 
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Request using a filter on principal Id.
+## Example 2: Request using a filter on principal ID.
 
 ### Request
 
