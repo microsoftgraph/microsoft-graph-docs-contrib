@@ -10,7 +10,7 @@ LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new QueryOption("$filter", "feature eq 'registration'"));
 
 ICredentialUsageSummaryCollectionPage getCredentialUsageSummary = graphClient.reports()
-	.getCredentialUsageSummary('D30')
+	.getCredentialUsageSummary("D30")
 	.buildRequest( requestOptions )
 	.get();
 
