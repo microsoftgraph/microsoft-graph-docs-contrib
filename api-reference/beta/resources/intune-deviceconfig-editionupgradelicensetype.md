@@ -4,6 +4,7 @@ description: "Edition Upgrade License type"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # editionUpgradeLicenseType enum type
@@ -20,8 +21,6 @@ Edition Upgrade License type
 |productKey|0|Product Key Type|
 |licenseFile|1|License File Type|
 |notConfigured|2|NotConfigured|
-
-
 
 
 

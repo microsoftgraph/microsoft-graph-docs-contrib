@@ -4,6 +4,7 @@ description: "Contains properties for the installation summary of a book for a d
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # eBookInstallSummary resource type
@@ -54,8 +55,6 @@ Here is a JSON representation of the resource.
   "notInstalledUserCount": 1024
 }
 ```
-
-
 
 
 

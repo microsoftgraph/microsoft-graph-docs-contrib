@@ -4,6 +4,7 @@ description: "Activate a directory role. To read a directory role or update its 
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Activate directoryRole

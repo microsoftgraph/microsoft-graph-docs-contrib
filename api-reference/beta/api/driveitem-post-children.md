@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Create a new folder or DriveItem in a Drive with a specified parent item or path."
 ms.date: 09/10/2017
 title: Create a new folder
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Create a new folder in a drive
 

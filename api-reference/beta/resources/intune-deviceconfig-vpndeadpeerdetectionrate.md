@@ -4,6 +4,7 @@ description: "Determines how often to check if a peer connection is still alive"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vpnDeadPeerDetectionRate enum type
@@ -21,8 +22,6 @@ Determines how often to check if a peer connection is still alive
 |none|1|None|
 |low|2|Low|
 |high|3|High|
-
-
 
 
 

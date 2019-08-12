@@ -4,6 +4,7 @@ description: "Update the properties of a specific directory setting object."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Update a directory setting

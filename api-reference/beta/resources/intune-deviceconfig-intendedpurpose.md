@@ -4,6 +4,7 @@ description: "PFX Import Options."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # intendedPurpose enum type
@@ -22,8 +23,6 @@ PFX Import Options.
 |smimeSigning|3|SmimeSigning|
 |vpn|4|VPN|
 |wifi|5|Wifi|
-
-
 
 
 

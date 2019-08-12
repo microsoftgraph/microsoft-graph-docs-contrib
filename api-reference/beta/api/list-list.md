@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Get the collection of lists for a site."
 ms.date: 09/11/2017
 title: List the SharePoint lists in a site
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Enumerate lists in a site
 

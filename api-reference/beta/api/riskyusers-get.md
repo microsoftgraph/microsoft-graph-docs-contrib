@@ -3,6 +3,7 @@ title: "Get riskyUser"
 description: "Retrieve the properties and relationships of a **riskyUser** object."
 localization_priority: Normal
 author: "cloudhandler"
+doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 ---
 # Get riskyUser

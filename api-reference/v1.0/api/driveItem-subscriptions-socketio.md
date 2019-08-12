@@ -4,6 +4,8 @@ ms.author: dspektor
 title: "Get websocket endpoint"
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Allows you to receive near-real-time change notifications for a drive using socket.io."
+doc_type: apiPageType
 ---
 
 # Get websocket endpoint

@@ -4,6 +4,7 @@ description: "Retrieve all identityProviders"
 localization_priority: Priority
 author: "valnav"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List identityProviders

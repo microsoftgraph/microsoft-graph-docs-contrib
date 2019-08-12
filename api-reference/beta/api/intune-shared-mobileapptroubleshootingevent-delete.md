@@ -4,6 +4,7 @@ description: "Describes the Delete mobileAppTroubleshootingEvent method of the M
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Delete mobileAppTroubleshootingEvent
@@ -60,6 +61,9 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
