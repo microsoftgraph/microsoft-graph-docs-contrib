@@ -86,13 +86,11 @@ add, update, or delete your own app-specific data in custom properties of an ext
 
 If successful, this method returns a `204 No Content` response code.
 
-## Examples
+## Example
 
-### Example 1
+### Example 1: Update properties of the signed-in user
 
-This example shows how to update properties of the signed-in user.
-
-#### Request 1
+#### Request
 
 The following example shows a request.
 
@@ -130,7 +128,7 @@ Content-type: application/json
 
 ---
 
-#### Response 1
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -142,11 +140,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2
+### Example 2: Update properties of the specified user
 
-This example shows how to update properties of the specified user.
-
-#### Request 2
+#### Request
 
 The following example shows a request.
 
@@ -166,7 +162,8 @@ Content-type: application/json
 }
 ```
 
-#### Response 2
+#### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",
