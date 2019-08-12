@@ -36,5 +36,3 @@ Apple VPN connection type.
 
 
 
-
-

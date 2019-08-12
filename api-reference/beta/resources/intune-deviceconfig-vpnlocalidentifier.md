@@ -4,6 +4,7 @@ description: "The type of VPN local identifier"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vpnLocalIdentifier enum type
@@ -20,8 +21,6 @@ The type of VPN local identifier
 |deviceFQDN|0|Device Fully Qualified Domain Name|
 |empty|1|Empty|
 |clientCertificateSubjectName|2|Client Certificate Subject Name|
-
-
 
 
 

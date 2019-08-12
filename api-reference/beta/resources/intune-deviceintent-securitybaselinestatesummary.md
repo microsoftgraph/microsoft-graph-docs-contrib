@@ -4,6 +4,7 @@ description: "The security baseline compliance state summary for the security ba
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # securityBaselineStateSummary resource type
@@ -54,8 +55,6 @@ Here is a JSON representation of the resource.
   "notApplicableCount": 1024
 }
 ```
-
-
 
 
 
