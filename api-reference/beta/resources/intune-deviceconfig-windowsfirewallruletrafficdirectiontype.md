@@ -24,5 +24,3 @@ Firewall rule traffic directions.
 
 
 
-
-

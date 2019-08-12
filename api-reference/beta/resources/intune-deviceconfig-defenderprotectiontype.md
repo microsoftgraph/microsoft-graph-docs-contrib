@@ -24,5 +24,3 @@ Possible values of Defender Protection
 
 
 
-
-
