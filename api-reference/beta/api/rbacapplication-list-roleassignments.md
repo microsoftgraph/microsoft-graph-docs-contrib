@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [unified role assignment](./unifiedroleassignment.md) objects for the provider. $filter must be used with this query. $filter can be on roleDefitionId or principalId. roleDefitionId can be either a role object id or a role template object id.
+Get a list of [unified role assignment](../resources/unifiedroleassignment.md) objects for the provider. $filter must be used with this query. $filter can be on roleDefitionId or principalId. roleDefitionId can be either a role object id or a role template object id.
 
 ## Permissions
 
