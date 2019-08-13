@@ -4,6 +4,7 @@ description: "Entity that represents device state for an intent"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementIntentDeviceState resource type
@@ -57,8 +58,6 @@ Here is a JSON representation of the resource.
   "deviceId": "String"
 }
 ```
-
-
 
 
 

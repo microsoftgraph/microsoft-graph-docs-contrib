@@ -27,5 +27,3 @@ Android VPN connection type.
 
 
 
-
-

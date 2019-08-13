@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T1
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-reminderview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-reminderview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -109,6 +109,7 @@ Content-Length: 713
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
 
 
 
