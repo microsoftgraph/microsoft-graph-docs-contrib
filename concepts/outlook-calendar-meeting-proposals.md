@@ -145,7 +145,7 @@ The following is an example where Alex invites Adele to lunch, Adele proposes an
     }
     ```
 
-2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get#example-2?view=graph-rest-beta) with this **eventMessageRequest**, she makes a tentative reply and proposes a different date/time in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
+2. Adele receives the invitation in her Inbox as an [eventMessageRequest](/graph/api/resources/eventmessagerequest?view=graph-rest-beta). She notices the **allowNewTimeProposals** property is set. [Using the **event** associated](/graph/api/eventmessage-get#example-2?view=graph-rest-beta) with this **eventMessageRequest**, she makes a tentative reply and proposes the next day at the same time, in the **proposedNewTime** body parameter. She also sets the **sendResponse** parameter to true.
 
     <!-- {
       "blockType": "request",
@@ -182,7 +182,12 @@ The following is an example where Alex invites Adele to lunch, Adele proposes an
     HTTP/1.1 202 Accepted
     ```
 
-3. Alex receives an email of the [eventMessageResponse](/graph/api/resources/event?view=graph-rest-beta) type. He notices the sender is Adele, the **responseType** is `tentativelyAccepted`, and Adele's proposal in the **proposedNewTime** property of the **eventMessageResponse**.
+3. Alex receives an email of the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) type. He notices the following:
+
+   - The subject includes a prefix and says "New Time Proposed: Let's go for lunch"
+   - The sender is Adele Vance
+   - The **responseType** is `tentativelyAccepted`
+   - Adele's proposal is in the **proposedNewTime** property of the **eventMessageResponse**
 
     <!-- {
       "blockType": "request",
@@ -303,8 +308,74 @@ The following is an example where Alex invites Adele to lunch, Adele proposes an
     }
     ```
 
+4. Alex also notices the **event** for the lunch now includes a **proposedNewTime** property that indicates Adele's proposal. This property is only present as part of an [attendee](/graph/api/resources/attendee?view=graph-rest-beta) instance if the corresponding attendee has suggested an alternative meeting time. 
 
-4. Alex decides to accept Adele's proposal by updating the **event** to the proposed **start** and **end** date/time.
+    <!-- {
+      "blockType": "request",
+      "name": "event_get"
+    }-->
+    ```http
+    GET https://graph.microsoft.com/beta/me/events/AAMkADAwJXJGu0AAACEhWOAAA=?$select=subject,allowNewTimeProposals,start,end,attendees,organizer
+    Prefer: outlook.timezone="Pacific Standard Time"
+    ```
+
+    <!-- {
+      "blockType": "response",
+      "name": "event_get",
+      "truncated": true,
+      "@odata.type": "microsoft.graph.event"
+    } -->
+    ```http
+    HTTP/1.1 200 Ok
+
+    {
+        "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#users('64339082-ed84-4b0b-b4ab-004ae54f3747')/events(subject,allowNewTimeProposals,start,end,attendees,organizer)/$entity",
+        "@odata.etag": "W/\"NEXywgsVrkeNsFsyVyRrtAAAAhEDMA==\"",
+        "id": "AAMkADAwJXJGu0AAACEhWOAAA=",
+        "subject": "Let's go for lunch",
+        "allowNewTimeProposals": true,
+        "start": {
+            "dateTime": "2019-08-15T12:00:00.0000000",
+            "timeZone": "Pacific Standard Time"
+        },
+        "end": {
+            "dateTime": "2019-08-15T14:00:00.0000000",
+            "timeZone": "Pacific Standard Time"
+        },
+        "attendees": [
+            {
+                "type": "required",
+                "status": {
+                    "response": "tentativelyAccepted",
+                    "time": "2019-08-01T07:06:24.5046431Z"
+                },
+                "proposedNewTime": {
+                    "start": {
+                        "dateTime": "2019-08-16T12:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-08-16T14:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "AdeleV@contoso.OnMicrosoft.com"
+                }
+            }
+        ],
+        "organizer": {
+            "emailAddress": {
+                "name": "Alex Wilber",
+                "address": "AlexW@contoso.OnMicrosoft.com"
+            }
+        }
+    }
+    ```
+
+
+5. Alex decides to accept Adele's proposal by updating the **event** to the proposed **start** and **end** date/time.
 
     <!-- {
       "blockType": "request",
@@ -419,7 +490,10 @@ The following is an example where Alex invites Adele to lunch, Adele proposes an
     }
     ```
 
-Note that in step 2, if Adele replies tentative, or declines, and does not propose a different date/time, then in step 3, Alex would receive an **eventMessageResponse** with the **responseType** being `tentativelyAccepted` (or `decline` if Adele declined), but without a **proposedNewTime** property. Alex would also notice that the associated **event** does not include the **proposedNewTime** property either.
+Note that in step 2, if Adele replies tentative, or declines, and does not propose a different date/time, then the following would happen instead:
+
+- In step 3, Alex would receive an **eventMessageResponse** with the **responseType** property set to `tentativelyAccepted` (or `decline` if Adele declined). Alex would not find a **proposedNewTime** property in this instance of **eventMessageResponse**.
+- In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.
 
 ## See also
 - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
