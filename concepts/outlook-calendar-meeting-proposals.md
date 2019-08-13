@@ -491,7 +491,7 @@ The following is an example where Alex invites Adele to lunch, Adele proposes an
     ```
 
 
-## What if there's no other time proposed
+## No alternative time is proposed
 
 In step 2, if Adele replied tentative, or declined, and did not propose a different date/time, then the following would happen:
 
