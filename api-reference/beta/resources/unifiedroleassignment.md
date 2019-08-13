@@ -34,10 +34,7 @@ A unified role assignment is the link between a role definition and a principal 
 
 ## Relationships
 
-| Relationship | Type        | Description |
-|:-------------|:------------|:------------|
-|principal|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
-|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only. Nullable.|
+None
 
 ## JSON representation
 
