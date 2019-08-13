@@ -153,7 +153,7 @@ Content-type: application/json
 }
 ```
 
-###W Response
+#### Response
 
 The following example shows the response.
 <!-- {
