@@ -490,7 +490,10 @@ The following is an example where Alex invites Adele to lunch, Adele proposes an
     }
     ```
 
-Note that in step 2, if Adele replies tentative, or declines, and does not propose a different date/time, then the following would happen instead:
+
+## What if there's no other time proposed
+
+In step 2, if Adele replied tentative, or declined, and did not propose a different date/time, then the following would happen:
 
 - In step 3, Alex would receive an **eventMessageResponse** with the **responseType** property set to `tentativelyAccepted` (or `decline` if Adele declined). Alex would not find a **proposedNewTime** property in this instance of **eventMessageResponse**.
 - In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.
