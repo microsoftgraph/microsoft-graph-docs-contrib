@@ -8,9 +8,10 @@ ms.prod: "outlook"
 
 # Propose new meeting times in Outlook (preview)
 
-In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time. The organizer can then adjust the meeting time as appropriate.
+In Outlook, a meeting organizer can allow invitees to propose alternative meeting times, if they cannot meet at the original set date/time and accept tentatively or decline. The organizer can accept a proposal by adjusting the meeting time as appropriate.
 
-The following is an example where Alex invites Adele to lunch, Adele proposes an alternative date and time, Alex accepts the proposal and adjusts the meeting accordingly:
+## Example: attendee responds tentative and suggests a different date/time
+The following is an example where Alex invites Adele to lunch, Adele tentatively accepts and proposes an alternative date and time, and Alex accepts the proposal by adjusting the meeting accordingly:
 
 1. As the organizer, Alex sends a meeting request to Adele. He sets the **allowNewTimeProposals** property of the [event](/graph/api/resources/event?view=graph-rest-beta) to `true` to let Adele suggest another time if she needs to.
 
@@ -491,9 +492,9 @@ The following is an example where Alex invites Adele to lunch, Adele proposes an
     ```
 
 
-## No alternative time is proposed
+## No attendee proposes alternative time
 
-In step 2, if Adele replied tentative, or declined, and did not propose a different date/time, then the following would happen:
+In step 2, if Adele replied tentative or declined, and did not propose a different date/time, then the following would happen:
 
 - In step 3, Alex would receive an **eventMessageResponse** with the **responseType** property set to `tentativelyAccepted` (or `decline` if Adele declined). Alex would not find a **proposedNewTime** property in this instance of **eventMessageResponse**.
 - In step 4, Alex would not find a **proposedNewTime** property in the associated **event** either.
