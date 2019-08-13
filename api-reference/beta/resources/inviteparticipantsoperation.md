@@ -1,12 +1,12 @@
 --- 
-title: "InviteParticipantsOperation resource type"
+title: "inviteParticipantsOperation resource type"
 description: "Represents the status of a long-running participant invitation operation, triggered by a call to the participant-invite API."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# InviteParticipantsOperation resource type
+# inviteParticipantsOperation resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
