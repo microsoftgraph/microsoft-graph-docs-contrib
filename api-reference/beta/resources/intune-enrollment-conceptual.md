@@ -4,7 +4,6 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) that enr
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
-doc_type: conceptualPageType
 ---
 
 # Enroll corporate-owned devices by using Intune
@@ -36,7 +35,6 @@ The following Graph resources are available to manage corporate-owned devices in
 - [Imported windows autopilot device identity](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
 - [Imported windows autopilot device identity import status](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
 - [Imported windows autopilot device identity state](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
-- [Imported windows autopilot device identity upload](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
 - [Imported windows autopilot device identity upload status](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
 - [iTunes pairing mode](intune-enrollment-itunespairingmode.md)
 - [Management certificate with thumbprint](intune-enrollment-managementcertificatewiththumbprint.md)

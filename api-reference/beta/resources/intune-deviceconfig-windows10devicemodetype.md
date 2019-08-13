@@ -4,6 +4,7 @@ description: "Windows 10 Device Mode type."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windows10DeviceModeType enum type
@@ -19,8 +20,6 @@ Windows 10 Device Mode type.
 |:---|:---|:---|
 |standardConfiguration|0|Standard Configuration|
 |sModeConfiguration|1|S Mode Configuration|
-
-
 
 
 

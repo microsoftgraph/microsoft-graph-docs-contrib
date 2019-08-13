@@ -983,10 +983,9 @@
         - name: Delete
           href: api/bookingstaffmember-delete.md
     - name: Devices and apps
+      href: resources/intune-graph-overview.md
       displayName: Intune
       items:
-      - name: Overview
-        href: resources/intune-graph-overview.md
       - name: App management
         href: resources/intune-app-conceptual.md
         items:
@@ -1726,8 +1725,6 @@
             href: api/intune-apps-mobileappcontentfile-renewupload.md
         - name: Mobile app content file upload state
           href: resources/intune-apps-mobileappcontentfileuploadstate.md
-        - name: Mobile app dependecy type
-          href: resources/intune-apps-mobileappdependecytype.md
         - name: Mobile app dependency
           href: resources/intune-apps-mobileappdependency.md
           items:
@@ -1834,7 +1831,7 @@
           href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
         - name: Office configuration group assignment target
           href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
-        - name: Office product ID
+        - name: Office product id
           href: resources/intune-apps-officeproductid.md
         - name: Office suite app
           href: resources/intune-apps-officesuiteapp.md
@@ -1992,7 +1989,7 @@
             href: api/intune-apps-windowsmobilemsi-delete.md
           - name: Update
             href: api/intune-apps-windowsmobilemsi-update.md
-        - name: Windows Office client configuration
+        - name: Windows office client configuration
           href: resources/intune-cirrus-windowsofficeclientconfiguration.md
           items:
           - name: List
@@ -2005,7 +2002,7 @@
             href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
           - name: Update
             href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
-        - name: Windows Office client security configuration
+        - name: Windows office client security configuration
           href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
           items:
           - name: List
@@ -2370,8 +2367,6 @@
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md
         - name: Imported windows autopilot device identity state
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
-        - name: Imported windows autopilot device identity upload
-          href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md
         - name: Imported windows autopilot device identity upload status
           href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
         - name: iTunes pairing mode
@@ -2512,6 +2507,13 @@
           href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
         - name: Android device owner battery plugged mode
           href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
+        - name: Android device owner certificate profile base
+          href: resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-list.md
+          - name: Get
+            href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-get.md
         - name: Android device owner compliance policy
           href: resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md
           items:
@@ -2527,6 +2529,19 @@
             href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
         - name: Android device owner default app permission policy type
           href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
+        - name: Android device owner enterprise Wi-Fi configuration
+          href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-update.md
         - name: Android device owner general device configuration
           href: resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md
           items:
@@ -2546,6 +2561,34 @@
           href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md
         - name: Android device owner system update install type
           href: resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md
+        - name: Android device owner trusted root certificate
+          href: resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-list.md
+          - name: Get
+            href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-get.md
+          - name: Create
+            href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-update.md
+        - name: Android device owner virtual home button type
+          href: resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md
+        - name: Android device owner VPN configuration
+          href: resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-get.md
+          - name: Create
+            href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-create.md
+          - name: Delete
+            href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-delete.md
+          - name: Update
+            href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-update.md
         - name: Android device owner Wi-Fi configuration
           href: resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md
           items:
@@ -3832,7 +3875,7 @@
           href: resources/intune-deviceconfig-inkaccesssetting.md
         - name: Intended purpose
           href: resources/intune-deviceconfig-intendedpurpose.md
-        - name: Internet Explorer message setting
+        - name: Internet explorer message setting
           href: resources/intune-deviceconfig-internetexplorermessagesetting.md
         - name: Internet site security level
           href: resources/intune-deviceconfig-internetsitesecuritylevel.md
@@ -4417,49 +4460,12 @@
           href: resources/intune-deviceconfig-omasettingstring.md
         - name: OMA setting string xml
           href: resources/intune-deviceconfig-omasettingstringxml.md
-        - name: On prem encrypted payload
-          href: resources/intune-raimportcerts-onpremencryptedpayload.md
-          items:
-          - name: List
-            href: api/intune-raimportcerts-onpremencryptedpayload-list.md
-          - name: Get
-            href: api/intune-raimportcerts-onpremencryptedpayload-get.md
-          - name: Create
-            href: api/intune-raimportcerts-onpremencryptedpayload-create.md
-          - name: Delete
-            href: api/intune-raimportcerts-onpremencryptedpayload-delete.md
-          - name: Update
-            href: api/intune-raimportcerts-onpremencryptedpayload-update.md
         - name: Operating system version range
           href: resources/intune-deviceconfig-operatingsystemversionrange.md
-        - name: Pfx recryption request
-          href: resources/intune-raimportcerts-pfxrecryptionrequest.md
-          items:
-          - name: List
-            href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
-          - name: Get
-            href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
-          - name: Create
-            href: api/intune-raimportcerts-pfxrecryptionrequest-create.md
-          - name: Delete
-            href: api/intune-raimportcerts-pfxrecryptionrequest-delete.md
-          - name: Update
-            href: api/intune-raimportcerts-pfxrecryptionrequest-update.md
-        - name: Pfx user certificate
-          href: resources/intune-raimportcerts-pfxusercertificate.md
-          items:
-          - name: List
-            href: api/intune-raimportcerts-pfxusercertificate-list.md
-          - name: Get
-            href: api/intune-raimportcerts-pfxusercertificate-get.md
-          - name: Create
-            href: api/intune-raimportcerts-pfxusercertificate-create.md
-          - name: Delete
-            href: api/intune-raimportcerts-pfxusercertificate-delete.md
-          - name: Update
-            href: api/intune-raimportcerts-pfxusercertificate-update.md
         - name: Policy platform type
           href: resources/intune-deviceconfig-policyplatformtype.md
+        - name: Power action type
+          href: resources/intune-deviceconfig-poweractiontype.md
         - name: Prerelease features
           href: resources/intune-deviceconfig-prereleasefeatures.md
         - name: Rating apps type
@@ -4521,7 +4527,7 @@
           href: resources/intune-deviceconfig-safesearchfiltertype.md
         - name: Secure assessment account type
           href: resources/intune-deviceconfig-secureassessmentaccounttype.md
-        - name: Secure boot with dma type
+        - name: Secure boot with d m a type
           href: resources/intune-deviceconfig-securebootwithdmatype.md
         - name: Service start type
           href: resources/intune-deviceconfig-servicestarttype.md
@@ -4620,6 +4626,13 @@
           href: resources/intune-deviceconfig-vpnauthenticationmethod.md
         - name: VPN client authentication type
           href: resources/intune-deviceconfig-vpnclientauthenticationtype.md
+        - name: VPN configuration
+          href: resources/intune-deviceconfig-vpnconfiguration.md
+          items:
+          - name: List
+            href: api/intune-deviceconfig-vpnconfiguration-list.md
+          - name: Get
+            href: api/intune-deviceconfig-vpnconfiguration-get.md
         - name: VPN dead peer detection rate
           href: resources/intune-deviceconfig-vpndeadpeerdetectionrate.md
         - name: VPN DNS rule
@@ -5412,6 +5425,8 @@
           href: resources/intune-devices-configurationmanagerclientenabledfeatures.md
         - name: Configuration manager client health state
           href: resources/intune-devices-configurationmanagerclienthealthstate.md
+        - name: Configuration manager client information
+          href: resources/intune-devices-configurationmanagerclientinformation.md
         - name: Configuration manager client state
           href: resources/intune-devices-configurationmanagerclientstate.md
         - name: Daily schedule
@@ -5464,6 +5479,25 @@
           href: resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md
         - name: Device health attestation state
           href: resources/intune-devices-devicehealthattestationstate.md
+        - name: Device health script
+          href: resources/intune-devices-devicehealthscript.md
+          items:
+          - name: List
+            href: api/intune-devices-devicehealthscript-list.md
+          - name: Get
+            href: api/intune-devices-devicehealthscript-get.md
+          - name: Create
+            href: api/intune-devices-devicehealthscript-create.md
+          - name: Delete
+            href: api/intune-devices-devicehealthscript-delete.md
+          - name: Update
+            href: api/intune-devices-devicehealthscript-update.md
+        - name: Device health script compliance rule
+          href: resources/intune-devices-devicehealthscriptcompliancerule.md
+        - name: Device health script compliance rule operator
+          href: resources/intune-devices-devicehealthscriptcomplianceruleoperator.md
+        - name: Device health script detection type
+          href: resources/intune-devices-devicehealthscriptdetectiontype.md
         - name: Device management abstract complex setting definition
           href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
           items:
@@ -5935,6 +5969,10 @@
           href: resources/intune-devices-healthstate.md
         - name: Hourly schedule
           href: resources/intune-devices-hourlyschedule.md
+        - name: Insight value double
+          href: resources/intune-devices-insightvaluedouble.md
+        - name: Insight value int
+          href: resources/intune-devices-insightvalueint.md
         - name: Localized notification message
           href: resources/intune-notification-localizednotificationmessage.md
           items:
@@ -6016,6 +6054,8 @@
             href: api/intune-devices-manageddevice-updatewindowsdeviceaccount.md
           - name: revokeAppleVppLicenses action
             href: api/intune-devices-manageddevice-revokeapplevpplicenses.md
+          - name: sendCustomNotificationToCompanyPortal action
+            href: api/intune-devices-manageddevice-sendcustomnotificationtocompanyportal.md
         - name: Managed device cleanup settings
           href: resources/intune-devices-manageddevicecleanupsettings.md
         - name: Managed device models and manufacturers
@@ -6252,6 +6292,50 @@
           href: resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md
         - name: Update windows device account action parameter
           href: resources/intune-devices-updatewindowsdeviceaccountactionparameter.md
+        - name: User experience analytics baseline
+          href: resources/intune-devices-userexperienceanalyticsbaseline.md
+          items:
+          - name: List
+            href: api/intune-devices-userexperienceanalyticsbaseline-list.md
+          - name: Get
+            href: api/intune-devices-userexperienceanalyticsbaseline-get.md
+          - name: Create
+            href: api/intune-devices-userexperienceanalyticsbaseline-create.md
+          - name: Delete
+            href: api/intune-devices-userexperienceanalyticsbaseline-delete.md
+          - name: Update
+            href: api/intune-devices-userexperienceanalyticsbaseline-update.md
+        - name: User experience analytics category
+          href: resources/intune-devices-userexperienceanalyticscategory.md
+          items:
+          - name: Get
+            href: api/intune-devices-userexperienceanalyticscategory-get.md
+          - name: Update
+            href: api/intune-devices-userexperienceanalyticscategory-update.md
+        - name: User experience analytics insight
+          href: resources/intune-devices-userexperienceanalyticsinsight.md
+        - name: User experience analytics insight value
+          href: resources/intune-devices-userexperienceanalyticsinsightvalue.md
+        - name: User experience analytics metric
+          href: resources/intune-devices-userexperienceanalyticsmetric.md
+          items:
+          - name: List
+            href: api/intune-devices-userexperienceanalyticsmetric-list.md
+          - name: Get
+            href: api/intune-devices-userexperienceanalyticsmetric-get.md
+          - name: Create
+            href: api/intune-devices-userexperienceanalyticsmetric-create.md
+          - name: Delete
+            href: api/intune-devices-userexperienceanalyticsmetric-delete.md
+          - name: Update
+            href: api/intune-devices-userexperienceanalyticsmetric-update.md
+        - name: User experience analytics overview
+          href: resources/intune-devices-userexperienceanalyticsoverview.md
+          items:
+          - name: Get
+            href: api/intune-devices-userexperienceanalyticsoverview-get.md
+          - name: Update
+            href: api/intune-devices-userexperienceanalyticsoverview-update.md
         - name: Variable management condition expression
           href: resources/intune-fencing-variablemanagementconditionexpression.md
         - name: Windows defender scan action result
@@ -6343,13 +6427,6 @@
             href: api/intune-devices-windowsmanagementapphealthstate-delete.md
           - name: Update
             href: api/intune-devices-windowsmanagementapphealthstate-update.md
-        - name: Windows management app health summary
-          href: resources/intune-devices-windowsmanagementapphealthsummary.md
-          items:
-          - name: Get
-            href: api/intune-devices-windowsmanagementapphealthsummary-get.md
-          - name: Update
-            href: api/intune-devices-windowsmanagementapphealthsummary-update.md
         - name: Windows protection state
           href: resources/intune-devices-windowsprotectionstate.md
           items:
@@ -7186,6 +7263,7 @@
             href: api/intune-shared-windowsdomainjoinconfiguration-delete.md
           - name: Update
             href: api/intune-shared-windowsdomainjoinconfiguration-update.md
+
       - name: Telecom expenses
         href: resources/intune-tem-conceptual.md
         items:

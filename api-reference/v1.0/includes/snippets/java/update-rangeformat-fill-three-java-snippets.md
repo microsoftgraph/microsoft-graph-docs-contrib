@@ -10,7 +10,7 @@ WorkbookRangeFill workbookRangeFill = new WorkbookRangeFill();
 workbookRangeFill.color = "#0000FF";
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
-	.range('$C$1').format().fill()
+	.range("$C$1").format().fill()
 	.buildRequest()
 	.patch(workbookRangeFill);
 
