@@ -4,6 +4,7 @@ description: "Contains registry properties to detect a Win32 App"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # win32LobAppRegistryRequirement resource type
@@ -48,8 +49,6 @@ Here is a JSON representation of the resource.
   "detectionType": "String"
 }
 ```
-
-
 
 
 

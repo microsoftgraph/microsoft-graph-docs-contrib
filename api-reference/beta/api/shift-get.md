@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 [!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

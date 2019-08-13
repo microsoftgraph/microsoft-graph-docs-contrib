@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IYammerGroupsActivityGroupCountsCollectionPage getYammerGroupsActivityGroupCounts = graphClient.reports()
-	.getYammerGroupsActivityGroupCounts('D7')
+	.getYammerGroupsActivityGroupCounts("D7")
 	.buildRequest()
 	.get();
 

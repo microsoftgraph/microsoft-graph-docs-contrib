@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-notebook-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-notebook-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

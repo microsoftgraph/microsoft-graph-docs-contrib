@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ITeamsUserActivityUserCountsCollectionPage getTeamsUserActivityUserCounts = graphClient.reports()
-	.getTeamsUserActivityUserCounts('D7')
+	.getTeamsUserActivityUserCounts("D7")
 	.buildRequest()
 	.get();
 

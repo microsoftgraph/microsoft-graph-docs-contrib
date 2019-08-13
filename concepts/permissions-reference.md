@@ -48,6 +48,7 @@ With the appropriate permissions, the app can read the profiles of users or grou
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _AccessReview.Read.All_ |   Read all access reviews  | Allows the app to read access reviews on behalf of the signed-in user. | Yes | No |
 | _AccessReview.ReadWrite.All_ |   Manage all access reviews  | Allows the app to read and write access reviews on behalf of the signed-in user. | Yes | No |
+| _AccessReview.ReadWrite.Membership_ |   Manage access reviews for group and app memberships | Allows the app to read and write access reviews of groups and apps on behalf of the signed-in user. | Yes | No |
 
 
 #### Application permissions
@@ -60,7 +61,7 @@ With the appropriate permissions, the app can read the profiles of users or grou
 
 ### Remarks
 
-_AccessReview.Read.All_ and _AccessReview.ReadWrite.All_ are valid only for work or school accounts.
+_AccessReview.Read.All_, _AccessReview.ReadWrite.All_ and _AccessReview.ReadWrite.Membership_ are valid only for work or school accounts.
 
 For an app with delegated permissions to read access reviews of a group or app, the signed-in user must be a member of one of the following administrator roles: Global Administrator, Security Administrator, Security Reader or User Administrator. For an app with delegated permissions to write access reviews of a group or app, the signed-in user must be a member of one of the following administrator roles: Global Administrator or User Administrator.
 
@@ -1379,6 +1380,35 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 *	_UserActivity.ReadWrite.CreatedByApp_: Delete a user activity in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}).
 *	_UserActivity.ReadWrite.CreatedByApp_: Delete a history item in response to user initiated request or to remove invalid data. (DELETE /me/activities/{id}/historyItems/{id}).
 
+---
+
+## Feature rollout policy permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | Read all feature rollout policies | Allows the app to read all feature rollout policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.FeatureRollout_ | Read and write all feature rollout policies | Allows the app to read and write Feature rollout Policies on behalf of the signed-in user. | Yes | No |
+
+#### Application permissions
+None.
+
+### Remarks
+The work or school account must be a global administrator of the tenant.
+
+### Example usage
+
+#### Delegated
+The following usages are valid for both delegated permissions:
+
+* _Policy.Read.All_: Read all feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: Read and write all feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
+
+For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
+
+---
+
 ## Permission scenarios
 
 This section shows some common scenarios that target [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0) resources in an organization. The tables show the permissions that an app needs to be able to perform specific operations required by the scenario. Note that in some cases the ability of the app to perform specific operations will depend on whether a permission is an application or delegated permission. In the case of delegated permissions, the app's effective permissions will also depend on the privileges of the signed-in user within the organization. For more information, see  [Delegated permissions, Application permissions, and effective permissions](auth/auth-concepts.md#microsoft-graph-permissions).
@@ -1407,3 +1437,4 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | App wants to read and write all content in all Office 365 groups, including files, conversations.  It also needs to show group memberships, be able to update group memberships, (if owner).  | 	_Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Read and write all groups, Edit or delete items in all site collections |
 | App wants to discover (find) an Office 365 group. It allows the user to search for a particular group and choose one from the enumerated list to allow the user to join the group.	 | _Group.ReadWrite.All_ | Read and write all groups|
 | App wants to create a group through AAD Graph | 	_Group.ReadWrite.All_ | Read and write all groups|
+
