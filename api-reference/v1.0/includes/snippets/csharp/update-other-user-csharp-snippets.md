@@ -15,7 +15,7 @@ var user = new User
 	OfficeLocation = "city-value"
 };
 
-await graphClient.Me
+await graphClient.Users["{id}"]
 	.Request()
 	.UpdateAsync(user);
 

@@ -24,10 +24,10 @@ var endTime = new DateTimeTimeZone
 	TimeZone = "Pacific Standard Time"
 };
 
-var availabilityViewInterval = "60";
+var availabilityViewInterval = 60;
 
 await graphClient.Me.Calendar
-	.Getschedule(schedules,endTime,startTime,availabilityViewInterval)
+	.GetSchedule(schedules,endTime,startTime,availabilityViewInterval)
 	.Request()
 	.Header("Prefer","outlook.timezone=\"Pacific Standard Time\"")
 	.PostAsync();
