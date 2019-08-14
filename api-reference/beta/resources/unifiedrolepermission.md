@@ -11,48 +11,50 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A role permission is a collection of allowed resource actions and the conditions that must be met for the action to be effective. 
+Represents a collection of allowed resource actions and the conditions that must be met for the action to be effective. 
 Resource actions are tasks that can be perfomed on a resource. For example, the application resource supports create, update, delete, and reset password resource actions.
 
-## Allowed resource actions
-The schema for resource actions loosely follows the REST format of [Microsoft Graph](https://docs.microsoft.com/graph/use-the-api):  
+For more information about permissions for built-in directory roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles). For more information about permissions that are available for custom directory roles, see [Application registration subtypes and permissions in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/roles-custom-available-permissions). 
 
-<Namespace>/<Entity>/<PropertySet>/<Action>.
+## Properties
 
-For example, if you wanted create a role that allowed the update of an application's credentials, the resource action would look like this:
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|allowedResourceActions|String collection| Set of tasks that can be perfomed on a resource. |
+|condition|String| Optional constraints that must be met for the permission to be effective. |
 
-'''microsoft.directory/applications/credentials/update'''
+### allowedResourceActions property
 
-### Namespaces
-Namespaces are the services that exposes the task. For example, all tasks in Azure Active Directory use the namespace '''microsoft.directory'''.  
+The following is the schema for resource actions.  
 
-### Entities
-Entities are the logical features or components exposed by the service in Microsoft Graph. For example, Applications, Service Principals, Groups, etc.
+```
+&lt;Namespace&gt;/&lt;Entity&gt;/&lt;PropertySet&gt;/&lt;Action&gt;  
+```
+For example: `microsoft.directory/applications/credentials/update`.  
 
-### Property sets
-Property sets are the specific properties or aspects of the entity for which access is being granted. For example, 
-"microsoft.directory/applications/authentication/read" grants the ability to read the reply URL, logout URL, and implicit flow property on the Application object in Azure AD.
+- Namespace - The services that exposes the task. For example, all tasks in Azure Active Directory use the namespace microsoft.directory.  
+- Entity - The logical features or components exposed by the service in Microsoft Graph. For example, applications, service principals, or groups.
+- PropertySet - The specific properties or aspects of the entity for which access is being granted. For example, 
+`microsoft.directory/applications/authentication/read` grants the ability to read the reply URL, logout URL, and implicit flow property on the **application** object in Azure AD. The following are reserved names for common property sets:  
 
-There is a set of reserved names for common Property Sets:  
-- **allProperties**: designates all properties of the entity, including privileged properties. Examples include "microsoft.directory/applications/allProperties/read" and "microsoft.directory/applications/allProperties/update".
-- **basic**: designates common read properties but excludes privileged ones. For example, "microsoft.directory/applications/basic/update" includes the ability to update standard properties like display name.
-- **standard**: designates common update properties but excludes privileged ones. For example, "microsoft.directory/applications/standard/read".
+        - allProperties - Designates all properties of the entity, including privileged properties. Examples include `microsoft.directory/applications/allProperties/read` and `microsoft.directory/applications/allProperties/update`.
+        - basic - Designates common read properties but excludes privileged ones. For example, `microsoft.directory/applications/basic/update` includes the ability to update standard properties like display name.
+        - standard - Designates common update properties but excludes privileged ones. For example, `microsoft.directory/applications/standard/read`.
 
-### Actions
-Actions are the operations being granted, most typically Create, Read, Update, or Delete (CRUD). In all but rare circumstances, 
-permissions should be expressed in terms of CRUD or allTasks. Actions include:
-- **create**: ability to create a new instance of the Entity.
-- **read**: ability to read a given Property Set (including allProperties).
-- **update**: ability to update a given Property Set (including all Properties).
-- **delete**: ability to delete a given Entity.
-- **allTasks**: shorthand meaning all of the above abilities (create, read, update, and delete). 
+- Actions - The operations being granted. In all but rare circumstances, permissions should be expressed in terms of CRUD or allTasks. Actions include:
+- Create - The ability to create a new instance of the entity.
+- Read - The ability to read a given property set (including allProperties).
+- Update - The ability to update a given property set (including allProperties).
+- Delete - The ability to delete a given entity.
+- AllTasks - Represents all CRUD operations (create, read, update, and delete). 
 
-## Conditions
-Conditions define constraints that must be met. Requiring that the principal be an "owner" of the target is an example of a condition. The supported conditions are:
-- **Self**: "@Subject.objectId == @Resource.objectId"
-- **Owner**: "@Subject.objectId Any_of @Resource.owners"
+### condition property
+Conditions define constraints that must be met. For example, a requirement that the principal be an "owner" of the target. The following are the supported conditions:
 
-The below example role permission allows updating basic properties and credential properties of applications, but only when the assigned principal is the owner of the target resource:
+- Self: "@Subject.objectId == @Resource.objectId"
+- Owner: "@Subject.objectId Any_of @Resource.owners"
+
+The following is an example of a role permission with a condition.
 
 ```json
 "rolePermissions": [
@@ -66,15 +68,6 @@ The below example role permission allows updating basic properties and credentia
     ]
 
 ```
-
-For more information on permissions of built-in directory roles see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles). For more information on permissions available for custom directory roles see [Application registration subtypes and permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-custom-available-permissions). 
-
-## Properties
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|allowedResourceActions|String collection| Set of tasks that can be perfomed on a resource. |
-|condition|String| Optional constraints that must be met for the permission to be effective. |
 
 ## JSON representation
 
