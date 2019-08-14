@@ -13,6 +13,16 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 ## August 2019
 
+### Workbooks and charts
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the new [workbookComment](/graph/api/resources/workbookcomment?view=graph-rest-beta) resource.|
+| Addition | beta | Added APIs to manage [workbookcommentreply](/graph/api/resources/workbookcommentreply?view=graph-rest-beta) resources|
+| Addition | beta | Added the new [workbookComment](/graph/api/resources/workbookcomment?view=graph-rest-1.0) resource.|
+| Addition | beta | Added APIs to manage [workbookcommentreply](/graph/api/resources/workbookcommentreply?view=graph-rest-1.0) resources|
+
+
 ### Education
 
 | **Change type** | **Version**   | **Description**                          |
