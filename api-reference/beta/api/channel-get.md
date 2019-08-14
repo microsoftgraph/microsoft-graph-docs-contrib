@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-channel-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
