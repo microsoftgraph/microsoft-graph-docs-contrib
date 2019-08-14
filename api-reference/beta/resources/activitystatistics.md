@@ -33,7 +33,7 @@ For the HTTP request, the id property represents {activity_startdate_enddate}, w
 |activity|analyticsActivityType| Name of the activity for which statistics are returned. The supported values are: [Call](callactivitystatistics.md), [Chat](chatactivitystatistics.md), [Email](emailactivitystatistics.md), [Focus](focusactivitystatistics.md), and [Meeting](meetingactivitystatistics.md).|
 |duration|Duration|Total hours spent on the activity.|
 |endDate|Date|Date when the activity ended.|
-|id|String| Read-only ID for the activity, which represents {activity_startdate_enddate}.|
+|id|String| Read-only ID for the activity, which represents `{activity}_{startdate}_{enddate}`.|
 |startDate|Date|Date when the activity started.|
 |timeZoneUsed|String|The time zone used for the computation.|
 
