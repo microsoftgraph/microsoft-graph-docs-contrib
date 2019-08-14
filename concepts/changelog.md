@@ -19,8 +19,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the new [workbookComment](/graph/api/resources/workbookcomment?view=graph-rest-beta) resource.|
 | Addition | beta | Added APIs to manage [workbookcommentreply](/graph/api/resources/workbookcommentreply?view=graph-rest-beta) resources|
-| Addition | beta | Added the new [workbookComment](/graph/api/resources/workbookcomment?view=graph-rest-1.0) resource.|
-| Addition | beta | Added APIs to manage [workbookcommentreply](/graph/api/resources/workbookcommentreply?view=graph-rest-1.0) resources|
+| Addition | v1.0 | Added the new [workbookComment](/graph/api/resources/workbookcomment?view=graph-rest-1.0) resource.|
+| Addition | v1.0 | Added APIs to manage [workbookcommentreply](/graph/api/resources/workbookcommentreply?view=graph-rest-1.0) resources|
 
 
 ### Education
