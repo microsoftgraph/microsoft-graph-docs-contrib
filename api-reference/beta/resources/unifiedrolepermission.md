@@ -26,7 +26,7 @@ Resource actions are tasks that can be perfomed on a resource. For example, the 
 The following is the schema for resource actions.  
 
 ```
-&lt;Namespace&gt;/&lt;Entity&gt;/&lt;PropertySet&gt;/&lt;Action&gt;  
+<Namespace>/<Entity>/<PropertySet>/<Action>  
 ```
 For example: `microsoft.directory/applications/credentials/update`.  
 
@@ -34,17 +34,15 @@ For example: `microsoft.directory/applications/credentials/update`.
 - Entity - The logical features or components exposed by the service in Microsoft Graph. For example, applications, service principals, or groups.
 - PropertySet - The specific properties or aspects of the entity for which access is being granted. For example, 
 `microsoft.directory/applications/authentication/read` grants the ability to read the reply URL, logout URL, and implicit flow property on the **application** object in Azure AD. The following are reserved names for common property sets:  
-
-        - allProperties - Designates all properties of the entity, including privileged properties. Examples include `microsoft.directory/applications/allProperties/read` and `microsoft.directory/applications/allProperties/update`.
-        - basic - Designates common read properties but excludes privileged ones. For example, `microsoft.directory/applications/basic/update` includes the ability to update standard properties like display name.
-        - standard - Designates common update properties but excludes privileged ones. For example, `microsoft.directory/applications/standard/read`.
-
+  - allProperties - Designates all properties of the entity, including privileged properties. Examples include `microsoft.directory/applications/allProperties/read` and `microsoft.directory/applications/allProperties/update`.
+  - basic - Designates common read properties but excludes privileged ones. For example, `microsoft.directory/applications/basic/update` includes the ability to update standard properties like display name.
+  - standard - Designates common update properties but excludes privileged ones. For example, `microsoft.directory/applications/standard/read`.
 - Actions - The operations being granted. In most circumstances, permissions should be expressed in terms of CRUD or allTasks. Actions include:
-        - Create - The ability to create a new instance of the entity.
-        - Read - The ability to read a given property set (including allProperties).
-        - Update - The ability to update a given property set (including allProperties).
-        - Delete - The ability to delete a given entity.
-        - AllTasks - Represents all CRUD operations (create, read, update, and delete). 
+  - Create - The ability to create a new instance of the entity.
+  - Read - The ability to read a given property set (including allProperties).
+  - Update - The ability to update a given property set (including allProperties).
+  - Delete - The ability to delete a given entity.
+  - AllTasks - Represents all CRUD operations (create, read, update, and delete). 
 
 ### condition property
 Conditions define constraints that must be met. For example, a requirement that the principal be an "owner" of the target. The following are the supported conditions:
