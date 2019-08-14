@@ -83,10 +83,6 @@ GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/objc/message-get-attachments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/message-get-attachments-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ##### Response
