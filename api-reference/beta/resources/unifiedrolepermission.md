@@ -14,8 +14,6 @@ doc_type: "resourcePageType"
 Represents a collection of allowed resource actions and the conditions that must be met for the action to be effective. 
 Resource actions are tasks that can be perfomed on a resource. For example, the application resource supports create, update, delete, and reset password resource actions.
 
-For more information about permissions for built-in directory roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles). For more information about permissions that are available for custom directory roles, see [Application registration subtypes and permissions in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/roles-custom-available-permissions). 
-
 ## Properties
 
 | Property     | Type        | Description |
@@ -41,12 +39,12 @@ For example: `microsoft.directory/applications/credentials/update`.
         - basic - Designates common read properties but excludes privileged ones. For example, `microsoft.directory/applications/basic/update` includes the ability to update standard properties like display name.
         - standard - Designates common update properties but excludes privileged ones. For example, `microsoft.directory/applications/standard/read`.
 
-- Actions - The operations being granted. In all but rare circumstances, permissions should be expressed in terms of CRUD or allTasks. Actions include:
-- Create - The ability to create a new instance of the entity.
-- Read - The ability to read a given property set (including allProperties).
-- Update - The ability to update a given property set (including allProperties).
-- Delete - The ability to delete a given entity.
-- AllTasks - Represents all CRUD operations (create, read, update, and delete). 
+- Actions - The operations being granted. In most circumstances, permissions should be expressed in terms of CRUD or allTasks. Actions include:
+        - Create - The ability to create a new instance of the entity.
+        - Read - The ability to read a given property set (including allProperties).
+        - Update - The ability to update a given property set (including allProperties).
+        - Delete - The ability to delete a given entity.
+        - AllTasks - Represents all CRUD operations (create, read, update, and delete). 
 
 ### condition property
 Conditions define constraints that must be met. For example, a requirement that the principal be an "owner" of the target. The following are the supported conditions:
@@ -88,6 +86,10 @@ The following is a JSON representation of the resource.
   "condition": "String"
 }
 ```
+## See also
+
+- [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - For information about permissions for built-in directory roles.
+- [Application registration subtypes and permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-custom-available-permissions) -  For information about permissions that are available for custom directory roles. 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
