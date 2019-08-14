@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var report = await graphClient.Reports
-	.GetYammerGroupsActivityDetail('D7')
+	.GetYammerGroupsActivityDetail("D7")
 	.Request()
 	.GetAsync();
 

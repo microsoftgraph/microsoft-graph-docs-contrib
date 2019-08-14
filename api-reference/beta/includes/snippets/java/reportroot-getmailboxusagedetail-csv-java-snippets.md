@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IMailboxUsageDetailCollectionPage getMailboxUsageDetail = graphClient.reports()
-	.getMailboxUsageDetail('D7')
+	.getMailboxUsageDetail("D7")
 	.buildRequest()
 	.get();
 

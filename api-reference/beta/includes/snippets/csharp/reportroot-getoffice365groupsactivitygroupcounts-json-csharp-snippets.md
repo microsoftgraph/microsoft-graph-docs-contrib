@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getOffice365GroupsActivityGroupCounts = await graphClient.Reports
-	.GetOffice365GroupsActivityGroupCounts('D7')
+	.GetOffice365GroupsActivityGroupCounts("D7")
 	.Request()
 	.GetAsync();
 

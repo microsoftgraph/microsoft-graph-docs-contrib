@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IOneDriveActivityUserDetailCollectionPage getOneDriveActivityUserDetail = graphClient.reports()
-	.getOneDriveActivityUserDetail('D7')
+	.getOneDriveActivityUserDetail("D7")
 	.buildRequest()
 	.get();
 

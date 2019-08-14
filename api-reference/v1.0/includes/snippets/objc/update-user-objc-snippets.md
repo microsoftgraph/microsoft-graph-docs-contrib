@@ -12,11 +12,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphUser *user = [[MSGraphUser alloc] init];
-[user setAccountEnabled: true];
 NSMutableArray *businessPhonesList = [[NSMutableArray alloc] init];
 [businessPhonesList addObject: @"businessPhones-value"];
 [user setBusinessPhones:businessPhonesList];
-[user setCity:@"city-value"];
+[user setOfficeLocation:@"city-value"];
 
 NSError *error;
 NSData *userData = [user getSerializedDataWithError:&error];

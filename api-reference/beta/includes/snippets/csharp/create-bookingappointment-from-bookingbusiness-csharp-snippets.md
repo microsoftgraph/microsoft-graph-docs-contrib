@@ -56,7 +56,7 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-01T15:30:00+03:00",
+		DateTime = "2018-05-01T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	InvoiceAmount = 10.0,
@@ -66,7 +66,7 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-01T15:30:00+03:00",
+		DateTime = "2018-05-01T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	InvoiceId = "1001",
@@ -153,7 +153,7 @@ var bookingAppointment = new BookingAppointment
 		{
 			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
 		},
-		DateTime = "2018-05-01T15:00:00+03:00",
+		DateTime = "2018-05-01T12:00:00+00:00",
 		TimeZone = "UTC"
 	}
 };
