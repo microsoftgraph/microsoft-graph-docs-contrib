@@ -29,7 +29,7 @@ The requestor can only call ```selfDeactivate``` for the role that is assigned t
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-Note that ``<id>`` is the target role id.
+Note that ``{id}`` is the target role id.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
