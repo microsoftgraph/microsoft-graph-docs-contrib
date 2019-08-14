@@ -15,7 +15,7 @@ const agreement = {
   isViewingBeforeAcceptanceRequired: true
 };
 
-let res = await client.api('/agreements/'id'')
+let res = await client.api('/agreements/{id}')
 	.version('beta')
 	.update({agreement : agreement});
 

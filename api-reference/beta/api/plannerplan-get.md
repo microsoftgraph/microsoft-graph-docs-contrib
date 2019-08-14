@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of **plannerplan** objec
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Get plannerPlan
@@ -49,13 +50,13 @@ Here is an example of the request.
   "name": "get_plannerplan"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/plans/<id>
+GET https://graph.microsoft.com/beta/planner/plans/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerplan-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-plannerplan-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

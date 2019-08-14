@@ -47,7 +47,7 @@ The following steps assume your app is already using ADAL to acquire access toke
 
     ``` csharp
     ActiveDirectoryClient client = new ActiveDirectoryClient(serviceRoot,
-    async () =\> await AcquireTokenAsyncForUser());
+    async () => await AcquireTokenAsyncForUser());
     ```
 
     To:
@@ -83,7 +83,7 @@ The following steps assume your app is already using ADAL to acquire access toke
 
     ``` csharp
     var groups = await
-    client.Groups.Where(g =\> g.DisplayName.StartsWith("a")).ExecuteAsync();
+    client.Groups.Where(g => g.DisplayName.StartsWith("a")).ExecuteAsync();
     ```
 
     To:

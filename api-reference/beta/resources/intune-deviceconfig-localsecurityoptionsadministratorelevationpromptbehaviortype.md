@@ -4,6 +4,7 @@ description: "Possible values for LocalSecurityOptionsAdministratorElevationProm
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # localSecurityOptionsAdministratorElevationPromptBehaviorType enum type
@@ -24,8 +25,6 @@ Possible values for LocalSecurityOptionsAdministratorElevationPromptBehavior
 |promptForCredentials|4|Prompt for credentials|
 |promptForConsent|5|Prompt for consent|
 |promptForConsentForNonWindowsBinaries|6|Prompt for consent for non-Windows binaries|
-
-
 
 
 

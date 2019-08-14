@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # getLoggedOnManagedDevices function
@@ -225,6 +226,9 @@ Content-Length: 7485
   ]
 }
 ```
+
+
+
 
 
 

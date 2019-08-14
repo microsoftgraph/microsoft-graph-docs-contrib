@@ -1,7 +1,7 @@
 ---
 title: "Known issues with Microsoft Graph"
 description: "This article describes known issues with Microsoft Graph. For information about the latest updates, see the Microsoft Graph changelog."
-author: "jthake-msft"
+author: ""
 localization_priority: Priority
 ---
 
@@ -32,6 +32,10 @@ Failure to read or update a photo, in this case, would result in the following e
 ### Using delta query
 
 For known issues using delta query, see the [delta query section](#delta-query) in this article.
+
+### Revoke sign-in sessions returns wrong HTTP code
+
+The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) should return a `204 No content` response for successful revocations, and an HTTP error code (4xx or 5xx) if anything goes wrong with the request.  However, due to a service issue, this API returns a `200 OK` and a Boolean parameter that is always true.  Until this is fixed, developers are simply advised to treat any 2xx return code as success for this API.
 
 ## Microsoft Teams
 

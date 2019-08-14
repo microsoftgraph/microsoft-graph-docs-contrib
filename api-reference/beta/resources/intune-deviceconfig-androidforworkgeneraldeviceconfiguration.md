@@ -4,6 +4,7 @@ description: "Android For Work general device configuration."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkGeneralDeviceConfiguration resource type
@@ -168,8 +169,6 @@ Here is a JSON representation of the resource.
   "vpnEnableAlwaysOnLockdownMode": true
 }
 ```
-
-
 
 
 
