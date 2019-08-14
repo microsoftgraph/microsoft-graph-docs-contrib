@@ -29,6 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/{id}
+
+GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/activitystatistics/{id}
+
 ```
 
 ## Request headers
@@ -43,13 +46,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [activityStatistics](../resources/activitystatistics.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested type of activity statistics, which is one of the following resources derived from [activityStatistics](../resources/activitystatistics.md):{[Call](callactivitystatistics.md), [Chat](chatactivitystatistics.md), [Email](emailactivitystatistics.md), [Focus](focusactivitystatistics.md), and [Meeting](meetingactivitystatistics.md)}.
 
 ## Example
 
 #### Request
 
-This is an example of a request for a specific day and activity. For the HTTP request, **id** represents {**activity_startdate_enddate**}, where **activity** can be {**email**|**meeting**|**chat**|**call**|**focus**}.
+The following example requests statistics of the type emailActivityStatistics of the signed-in user, for the date range between 2019-06-16 and 2019-06-17", For more information about the general id property format, see [activity id property](../resources/activitystatistics.md#activity-id-property).
 
 <!-- {
   "blockType": "request",
@@ -58,8 +61,6 @@ This is an example of a request for a specific day and activity. For the HTTP re
 
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-06-16_2019-06-17
-
-GET https://graph.microsoft.com/beta/users(id|userPrincipalName)/analytics/activitystatistics/email_2019-06-16_2019-06-17
 
 ```
 
