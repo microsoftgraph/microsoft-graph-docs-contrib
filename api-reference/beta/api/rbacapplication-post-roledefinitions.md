@@ -1,6 +1,6 @@
 ---
 title: "Create unifiedRoleDefinition"
-description: "Use this API to create a new unifiedRoleDefinition."
+description: "Create a new unifiedRoleDefinition object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new unifiedRoleDefinition.
+Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
 
 ## Permissions
 
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create a rol
 
 If successful, this method returns `201, Created` response code and a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 

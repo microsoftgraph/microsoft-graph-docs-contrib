@@ -1,17 +1,17 @@
 ---
-title: "List roleDefinitions"
-description: "Get a list of unified role definition objects."
+title: "List unifiedRoleDefinitions"
+description: "Get a list of unifiedRoleDefinition objects."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# List roleDefinitions
+# List unifiedRoleDefinitions
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of unified role definition objects for the provider.
+Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for the provider.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ GET /roleManagement/directory/roleDefinitions
 ```
 
 ## Optional query parameters
-This method supports $filter on id, displayName, and isBuiltIn. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` on `id`, `displayName`, and `isBuiltIn`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects in the response body.
 
-## Examples
+## Example
 
 ### Request
 

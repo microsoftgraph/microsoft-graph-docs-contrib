@@ -1,17 +1,17 @@
 ---
-title: "Update unifiedroledefinition"
-description: "Update the properties of a role definition object."
+title: "Update unifiedRoleDefinition"
+description: "Update the properties of a unifiedRoleDefinition object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# Update unifiedroledefinition
+# Update unifiedRoleDefinition
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a unified role definition object.
+Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object.
 
 ## Permissions
 
@@ -57,7 +57,7 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `200 OK` response code and an updated [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 

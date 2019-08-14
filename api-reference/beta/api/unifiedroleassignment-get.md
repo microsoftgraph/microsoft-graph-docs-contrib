@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleAssignment"
-description: "Retrieve the properties and relationships of a role assignment object."
+description: "Retrieve the properties and relationships of a unifiedRoleAssignment object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a unified role assignment object.
+Retrieve the properties and relationships of a [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
 
 ## Permissions
 
@@ -33,7 +33,7 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 

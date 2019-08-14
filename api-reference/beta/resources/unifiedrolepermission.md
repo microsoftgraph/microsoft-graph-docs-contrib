@@ -23,7 +23,7 @@ Resource actions are tasks that can be perfomed on a resource. For example, the 
 
 ### allowedResourceActions property
 
-The following is the schema for resource actions.  
+The following is the schema for resource actions: 
 
 ```
 <Namespace>/<Entity>/<PropertySet>/<Action>  

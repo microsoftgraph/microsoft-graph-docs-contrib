@@ -1,6 +1,6 @@
 ---
 title: "Create unifiedRoleAssignment"
-description: "Use this API to create a new unified role assignment."
+description: "Create a new unifiedRoleAssignment object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new unified role assignment.
+Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
 
 ## Permissions
 
@@ -43,9 +43,9 @@ In the request body, supply a JSON representation of [unifiedRoleAssignment](../
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 

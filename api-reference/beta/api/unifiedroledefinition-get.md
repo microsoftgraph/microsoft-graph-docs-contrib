@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleDefinition"
-description: "Retrieve the properties and relationships of a unified role definition object."
+description: "Retrieve the properties and relationships of a unifiedRoleDefinition object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a unified role definition object. Currently "directory" is the only RBAC application supported.
+Retrieve the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. Currently "directory" is the only RBAC application supported.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
 
-## Examples
+## Example
 
 ### Request
 

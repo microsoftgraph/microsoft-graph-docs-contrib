@@ -1,6 +1,6 @@
 ---
 title: "Delete unifiedRoleAssignment"
-description: "Delete unifiedRoleAssignment."
+description: "Delete a unifiedRoleAssignment object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a unified role assignment.
+Delete a [unifiedRoleAssignment](../resources/unifiedRoleAssignment.md) object.
 
 ## Permissions
 
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
-## Examples
+## Example
 
 ### Request
 
