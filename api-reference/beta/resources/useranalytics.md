@@ -1,6 +1,6 @@
 ---
 title: "userAnalytics resource type"
-description: "The user's activity statistics and related settings."
+description: "The user's settings and activity statistics."
 localization_priority: Normal
 author: "madehmer"
 ms.prod: "insights"
@@ -11,13 +11,19 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The user's activity statistics and related settings.
+The user's settings and activity statistics.
+
+## Methods
+
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+[Get settings](../api/useranalytics-get-settings.md) | [settings](settings.md) | Get the user's settings for using the analytics API.|
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|settings|[settings](settings.md)|Get activity statistics and related settings for a user.|
+|settings|[settings](settings.md)|The current settings for a user to use the analytics API.|
 
 ## Relationships
 
