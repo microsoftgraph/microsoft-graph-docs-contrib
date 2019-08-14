@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /planner/tasks/<id>
+DELETE /planner/tasks/{id}
 ```
 ## Request headers
 | Name       | Description|
@@ -51,7 +51,7 @@ Here is an example of the request.
   "name": "delete_plannertask"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/planner/tasks/<id>
+DELETE https://graph.microsoft.com/beta/planner/tasks/{id}
 If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 ```
 # [C#](#tab/csharp)

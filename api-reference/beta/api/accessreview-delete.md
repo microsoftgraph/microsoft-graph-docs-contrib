@@ -26,7 +26,7 @@ The caller should also have ProgramControl.ReadWrite.All permission, so that it 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /accessReviews('<id>')
+DELETE /accessReviews/{reviewId}
 ```
 ## Request headers
 | Name         | Type        | Description |

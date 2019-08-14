@@ -70,8 +70,8 @@ Attachments for an [Outlook task](../resources/outlooktask.md).
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/outlook/tasks/<id>/attachments/{id}
-DELETE /users/<id>/outlook/tasks/<id>/attachments/{id}
+DELETE /me/outlook/tasks/{id}/attachments/{id}
+DELETE /users/{id}/outlook/tasks/{id}/attachments/{id}
 ```
 
 Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.

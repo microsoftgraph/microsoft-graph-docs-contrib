@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "get_plannerplan"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/plans/<id>
+GET https://graph.microsoft.com/beta/planner/plans/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerplan-csharp-snippets.md)]

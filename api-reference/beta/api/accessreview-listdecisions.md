@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews('{reviewId}')/decisions
+GET /accessReviews/{reviewId}/decisions
 ```
 ## Request headers
 | Name         | Type        | Description |

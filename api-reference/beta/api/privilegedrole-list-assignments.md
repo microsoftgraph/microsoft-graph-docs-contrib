@@ -30,7 +30,7 @@ The requestor needs to have one of the following roles: _Privileged Role Adminis
 GET /privilegedRoles/{id}/assignments
 ```
 
-Note that ``<id>`` is the target role id.
+Note that ``{id}`` is the target role id.
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 
