@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Use this API to retrieve the contents of an item in a specific format."
 ms.date: 09/10/2017
 title: Convert to other formats
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Download a file in another format
 
@@ -63,7 +64,7 @@ GET /drive/items/{item-id}/content?format={format}
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "By providing the configurations in this profile you can instruct t
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosikEv2VpnConfiguration resource type
@@ -70,7 +71,7 @@ Inherits from [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfi
 |enableEAP|Boolean|Enables EAP only authentication|
 |enablePerfectForwardSecrecy|Boolean|Enable Perfect Forward Secrecy (PFS).|
 |enableUseInternalSubnetAttributes|Boolean|Enable Use Internal Subnet Attributes.|
-|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|Method of identifying the client that is trying to connect via VPN. . Possible values are: `deviceFQDN`.|
+|localIdentifier|[vpnLocalIdentifier](../resources/intune-deviceconfig-vpnlocalidentifier.md)|Method of identifying the client that is trying to connect via VPN. . Possible values are: `deviceFQDN`, `empty`, `clientCertificateSubjectName`.|
 |remoteIdentifier|String|Address of the IKEv2 server. Must be a FQDN, UserFQDN, network address, or ASN1DN|
 |securityAssociationParameters|[iosVpnSecurityAssociationParameters](../resources/intune-deviceconfig-iosvpnsecurityassociationparameters.md)|Security Association Parameters|
 |serverCertificateCommonName|String|Common name of the IKEv2 Server Certificate used in Server Authentication|
@@ -235,8 +236,6 @@ Here is a JSON representation of the resource.
   "allowDefaultChildSecurityAssociationParameters": true
 }
 ```
-
-
 
 
 

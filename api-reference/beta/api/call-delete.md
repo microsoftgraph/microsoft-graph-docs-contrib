@@ -4,6 +4,7 @@ description: "Delete or hang up an active call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Delete call
@@ -58,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

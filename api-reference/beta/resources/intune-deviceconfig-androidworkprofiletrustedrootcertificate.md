@@ -4,6 +4,7 @@ description: "Android Work Profile Trusted Root Certificate configuration profil
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidWorkProfileTrustedRootCertificate resource type
@@ -100,8 +101,6 @@ Here is a JSON representation of the resource.
   "certFileName": "String"
 }
 ```
-
-
 
 
 

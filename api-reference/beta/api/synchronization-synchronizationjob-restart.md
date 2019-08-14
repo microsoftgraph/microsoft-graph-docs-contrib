@@ -2,6 +2,7 @@
 title: "Restart synchronizationJob"
 description: "Restart the synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing synchronization state and previous errors."
 localization_priority: Normal
+doc_type: apiPageType
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
@@ -62,7 +63,7 @@ Content-type: application/json
 
 {
    "criteria": {
-       "resetScope": "ConnectorDataStore, Escrows, QuarantineState"
+       "resetScope": "Watermark, Escrows, QuarantineState"
    }
 }
 ```
@@ -70,7 +71,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-restart-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-restart-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

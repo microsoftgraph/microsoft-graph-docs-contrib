@@ -4,6 +4,7 @@ description: "Read properties and relationships of the officeClientConfiguration
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get officeClientConfigurationAssignment
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|**TODO: Determine scopes**|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|**TODO: Determine scopes **|
 
 ## HTTP Request
 <!-- {
@@ -72,6 +73,9 @@ Content-Length: 250
   }
 }
 ```
+
+
+
 
 
 

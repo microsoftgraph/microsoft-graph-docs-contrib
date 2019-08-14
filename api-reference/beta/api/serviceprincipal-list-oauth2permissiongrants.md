@@ -2,6 +2,9 @@
 title: "servicePrincipal: List oAuth2Permissiongrants"
 description: "Retrieve a list of oAuth2Permissiongrant objects."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # servicePrincipal: List oAuth2Permissiongrants
@@ -54,7 +57,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oAuth2Permissiongran
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-oauth2permissiongrants-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-oauth2permissiongrants-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

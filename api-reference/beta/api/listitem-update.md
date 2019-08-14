@@ -1,10 +1,11 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
+description: "Update the properties on a listItem."
 ms.date: 09/11/2017
 title: Update a record in a SharePoint list
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Update an item in a list
 
@@ -63,7 +64,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

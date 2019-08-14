@@ -4,6 +4,7 @@ description: "This topic provides descriptions of the declared methods, properti
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10EndpointProtectionConfiguration resource type
@@ -46,7 +47,8 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are allowed to connect to the computer over the network. State Allowed is supported.|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups are block from connecting to the computer over the network. State Block is supported.|
 |userRightsActAsPartOfTheOperatingSystem|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right allows a process to impersonate any user without authentication. The process can therefore gain access to the same local resources as that user. Only states NotConfigured and Allowed are supported|
-|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can log on to the computer. States NotConfigured, Allowed and Blocked are all supported |
+|userRightsLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can log on to the computer. States NotConfigured, Allowed are supported |
+|userRightsDenyLocalLogOn|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users cannot log on to the computer. States NotConfigured, Blocked are supported |
 |userRightsBackupData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when backing up files and directories. Only states NotConfigured and Allowed are supported|
 |userRightsChangeSystemTime|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users and groups can change the time and date on the internal clock of the computer. Only states NotConfigured and Allowed are supported|
 |userRightsCreateGlobalObjects|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This security setting determines whether users can create global objects that are available to all sessions. Users who can create global objects could affect processes that run under other users' sessions, which could lead to application failure or data corruption. Only states NotConfigured and Allowed are supported|
@@ -70,7 +72,6 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |userRightsRemoteShutdown|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users are allowed to shut down a computer from a remote location on the network. Misuse of this user right can result in a denial of service. Only states NotConfigured and Allowed are supported.|
 |userRightsRestoreData|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can bypass file, directory, registry, and other persistent objects permissions when restoring backed up files and directories, and determines which users can set any valid security principal as the owner of an object. Only states NotConfigured and Allowed are supported.|
 |userRightsTakeOwnership|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This user right determines which users can take ownership of any securable object in the system, including Active Directory objects, files and folders, printers, registry keys, processes, and threads. Only states NotConfigured and Allowed are supported.|
-|userRightsRegisterProcessAsService|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|This security setting determines which service accounts are prevented from registering a process as a service. Note: This security setting does not apply to the System, Local Service, or Network Service accounts. Only state Blocked is supported.|
 |xboxServicesEnableXboxGameSaveTask|Boolean|This setting determines whether xbox game save is enabled (1) or disabled (0).|
 |xboxServicesAccessoryManagementServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether the Accessory management service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
 |xboxServicesLiveAuthManagerServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|This setting determines whether Live Auth Manager service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual. Possible values are: `manual`, `automatic`, `disabled`.|
@@ -143,6 +144,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |defenderSecurityCenterHelpURL|String|The help portal URL this is displayed to users.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Notifications to show from the displayed areas of app. Possible values are: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Configure where to display IT contact information to end users. Possible values are: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
+|windowsDefenderTamperProtection|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|Configure windows defender TamperProtection settings. Possible values are: `notConfigured`, `enable`, `disable`.|
 |firewallBlockStatefulFTP|Boolean|Blocks stateful FTP connections to the device|
 |firewallIdleTimeoutForSecurityAssociationInSeconds|Int32|Configures the idle timeout for security associations, in seconds, from 300 to 3600 inclusive. This is the period after which security associations will expire and be deleted. Valid values 300 to 3600|
 |firewallPreSharedKeyEncodingMethod|[firewallPreSharedKeyEncodingMethodType](../resources/intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)|Select the preshared key encoding to be used. Possible values are: `deviceDefault`, `none`, `utF8`.|
@@ -195,7 +197,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |deviceGuardSecureBootWithDMA|[secureBootWithDMAType](../resources/intune-deviceconfig-securebootwithdmatype.md)|Specifies whether Platform Security Level is enabled at next reboot. Possible values are: `notConfigured`, `withoutDMA`, `withDMA`.|
 |deviceGuardLaunchSystemGuard|[enablement](../resources/intune-shared-enablement.md)|Allows the IT admin to configure the launch of System Guard. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Boolean|Allows IT Admins to configure SmartScreen for Windows.|
-|smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can ignore SmartScreen warnings and run malicious files.|
+|smartScreenBlockOverrideForFiles|Boolean|Allows IT Admins to control whether users can can ignore SmartScreen warnings and run malicious files.|
 |applicationGuardEnabled|Boolean|Enable Windows Defender Application Guard|
 |applicationGuardEnabledOptions|[applicationGuardEnabledOptions](../resources/intune-deviceconfig-applicationguardenabledoptions.md)|Enable Windows Defender Application Guard for newer Windows builds. Possible values are: `notConfigured`, `enabledForEdge`, `enabledForOffice`, `enabledForEdgeAndOffice`.|
 |applicationGuardBlockFileTransfer|[applicationGuardBlockFileTransferType](../resources/intune-deviceconfig-applicationguardblockfiletransfertype.md)|Block clipboard to transfer image file, text file or neither of them. Possible values are: `notConfigured`, `blockImageAndTextFile`, `blockImageFile`, `blockNone`, `blockTextFile`.|
@@ -296,6 +298,7 @@ Here is a JSON representation of the resource.
       "action": "String",
       "trafficDirection": "String",
       "interfaceTypes": "String",
+      "edgeTraversal": "String",
       "localUserAuthorizations": "String"
     }
   ],
@@ -348,6 +351,18 @@ Here is a JSON representation of the resource.
     ]
   },
   "userRightsLocalLogOn": {
+    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
+    "state": "String",
+    "localUsersOrGroups": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
+        "name": "String",
+        "description": "String",
+        "securityIdentifier": "String"
+      }
+    ]
+  },
+  "userRightsDenyLocalLogOn": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "String",
     "localUsersOrGroups": [
@@ -635,18 +650,6 @@ Here is a JSON representation of the resource.
       }
     ]
   },
-  "userRightsRegisterProcessAsService": {
-    "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
-    "state": "String",
-    "localUsersOrGroups": [
-      {
-        "@odata.type": "microsoft.graph.deviceManagementUserRightsLocalUserOrGroup",
-        "name": "String",
-        "description": "String",
-        "securityIdentifier": "String"
-      }
-    ]
-  },
   "xboxServicesEnableXboxGameSaveTask": true,
   "xboxServicesAccessoryManagementServiceStartupMode": "String",
   "xboxServicesLiveAuthManagerServiceStartupMode": "String",
@@ -719,6 +722,7 @@ Here is a JSON representation of the resource.
   "defenderSecurityCenterHelpURL": "String",
   "defenderSecurityCenterNotificationsFromApp": "String",
   "defenderSecurityCenterITContactDisplay": "String",
+  "windowsDefenderTamperProtection": "String",
   "firewallBlockStatefulFTP": true,
   "firewallIdleTimeoutForSecurityAssociationInSeconds": 1024,
   "firewallPreSharedKeyEncodingMethod": "String",
@@ -917,8 +921,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

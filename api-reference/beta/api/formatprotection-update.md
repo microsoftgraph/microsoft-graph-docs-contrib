@@ -2,6 +2,9 @@
 title: "Update formatprotection"
 description: "Update the properties of formatprotection object."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # Update formatprotection
@@ -64,7 +67,7 @@ Content-length: 45
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-formatprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-formatprotection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

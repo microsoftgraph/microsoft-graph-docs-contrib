@@ -4,6 +4,7 @@ description: "Retrieve a single message (without its replies) in a channel of a 
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get channel message
@@ -20,6 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Group.Read.All, Group.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
 |Application| Group.Read.All, Group.ReadWrite.All |
+
+> [!NOTE]
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +63,7 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

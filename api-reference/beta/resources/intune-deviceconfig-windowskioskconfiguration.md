@@ -4,6 +4,7 @@ description: "This entity provides descriptions of the declared methods, propert
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskConfiguration resource type
@@ -49,6 +50,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |kioskBrowserBlockedURLs|String collection|Specify URLs that the kiosk browsers should not navigate to|
 |kioskBrowserBlockedUrlExceptions|String collection|Specify URLs that the kiosk browser is allowed to navigate to|
 |edgeKioskEnablePublicBrowsing|Boolean|Enable public browsing kiosk mode for the Microsoft Edge browser. The Default is false.|
+|windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|force update schedule for Kiosk devices.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -145,11 +147,17 @@ Here is a JSON representation of the resource.
   "kioskBrowserBlockedUrlExceptions": [
     "String"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "String (timestamp)",
+    "recurrence": "String",
+    "dayofWeek": "String",
+    "dayofMonth": 1024,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
-
-
 
 
 

@@ -2,6 +2,7 @@
 title: "Delete synchronizationJob"
 description: "Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is."
 localization_priority: Normal
+doc_type: apiPageType
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 ---
@@ -58,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/j
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-synchronizationjob-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-synchronizationjob-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

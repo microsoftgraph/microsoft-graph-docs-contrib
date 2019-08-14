@@ -2,6 +2,9 @@
 title: "List overrides"
 description: "Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # List overrides
@@ -54,7 +57,7 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-overrides-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-overrides-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

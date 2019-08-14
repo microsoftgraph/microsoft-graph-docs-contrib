@@ -4,6 +4,7 @@ description: "Describes the list method of the signIn resource (entity) from the
 localization_priority: Normal
 author: "dhanyahk"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List signIns
@@ -18,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
-|Application | AuditLog.Read.All |
+|Application | AuditLog.Read.All and Directory.Read.All  |
 
 ## HTTP request
 
@@ -58,8 +59,8 @@ This method supports the following OData query parameters to help customize the 
 |initiatedBy/user/userPrincipalName| eq, startswith|
 |clientAppUsed| eq|
 |conditionalAccessStatus | eq|
-|deviceDetails/browser| eq, startswith|
-|deviceDetails/operatingSystem| eq, startswith|
+|deviceDetail/browser| eq, startswith|
+|deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
 |isRisky| eq|
 
@@ -86,12 +87,16 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-signins-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-signins-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-signins-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-signins-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

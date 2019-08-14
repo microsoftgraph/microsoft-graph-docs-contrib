@@ -4,6 +4,7 @@ description: "Android For Work default app permission policy type."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidForWorkDefaultAppPermissionPolicyType enum type
@@ -21,8 +22,6 @@ Android For Work default app permission policy type.
 |prompt|1|Prompt.|
 |autoGrant|2|Auto grant.|
 |autoDeny|3|Auto deny.|
-
-
 
 
 

@@ -1,5 +1,6 @@
 ---
 title: "Get signIn"
+doc_type: apiPageType
 description: "Retrieve a specific Azure AD user sign-in event for your tenant."
 localization_priority: Normal
 author: "davidmu1"
@@ -20,8 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All |
+|Delegated (work or school account) | Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | AuditLog.Read.All | 
+|Application | Directory.Read.All | 
+
 
 In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
 
@@ -69,7 +73,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

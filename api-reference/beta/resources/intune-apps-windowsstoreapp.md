@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Windows Store app
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsStoreApp resource type
@@ -97,8 +98,6 @@ Here is a JSON representation of the resource.
   "appStoreUrl": "String"
 }
 ```
-
-
 
 
 

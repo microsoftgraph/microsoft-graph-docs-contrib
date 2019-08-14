@@ -4,6 +4,7 @@ description: "Supported values for the padding scheme used by encryption provide
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # userPfxPaddingScheme enum type
@@ -23,8 +24,6 @@ Supported values for the padding scheme used by encryption provider.
 |oaepSha256|3|Not yet documented|
 |oaepSha384|4|Not yet documented|
 |oaepSha512|5|Not yet documented|
-
-
 
 
 

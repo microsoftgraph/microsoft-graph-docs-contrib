@@ -4,6 +4,7 @@ description: "Windows Update for business configuration."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsUpdateForBusinessConfiguration resource type
@@ -67,6 +68,10 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |engagedRestartDeadlineInDays|Int32|Deadline in days before automatically scheduling and executing a pending restart outside of active hours, with valid range from 2 to 30 days|
 |engagedRestartSnoozeScheduleInDays|Int32|Number of days a user can snooze Engaged Restart reminder notifications with valid range from 1 to 3 days|
 |engagedRestartTransitionScheduleInDays|Int32|Number of days before transitioning from Auto Restarts scheduled outside of active hours to Engaged Restart, which requires the user to schedule, with valid range from 0 to 30 days|
+|deadlineForFeatureUpdatesInDays|Int32|Number of days before feature updates are installed automatically with valid range from 2 to 30 days|
+|deadlineForQualityUpdatesInDays|Int32|Number of days before quality updates are installed automatically with valid range from 2 to 30 days|
+|deadlineGracePeriodInDays|Int32|Number of days after deadline  until restarts occur automatically with valid range from 0 to 7 days|
+|postponeRebootUntilAfterDeadline|Boolean|Specifies if the device should wait until deadline for rebooting outside of active hours|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Specify the method by which the auto-restart required notification is dismissed. Possible values are: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Specify the period for auto-restart warning reminder notifications. Supported values: 2, 4, 8, 12 or 24 (hours).|
 |scheduleImminentRestartWarningInMinutes|Int32|Specify the period for auto-restart imminent warning notifications. Supported values: 15, 30 or 60 (minutes).|
@@ -84,6 +89,7 @@ Inherits from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfi
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Device Configuration devices status overview Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Device Configuration users status overview Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) collection|Device Configuration Setting State Device Summary Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceUpdateStates|[windowsUpdateState](../resources/intune-deviceconfig-windowsupdatestate.md) collection|Windows update for business configuration device states.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -156,6 +162,10 @@ Here is a JSON representation of the resource.
   "engagedRestartDeadlineInDays": 1024,
   "engagedRestartSnoozeScheduleInDays": 1024,
   "engagedRestartTransitionScheduleInDays": 1024,
+  "deadlineForFeatureUpdatesInDays": 1024,
+  "deadlineForQualityUpdatesInDays": 1024,
+  "deadlineGracePeriodInDays": 1024,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "String",
   "scheduleRestartWarningInHours": 1024,
   "scheduleImminentRestartWarningInMinutes": 1024,
@@ -164,8 +174,6 @@ Here is a JSON representation of the resource.
   "updateNotificationLevel": "String"
 }
 ```
-
-
 
 
 

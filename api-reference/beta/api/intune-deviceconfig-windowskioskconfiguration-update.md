@@ -4,6 +4,7 @@ description: "Update the properties of a windowsKioskConfiguration object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update windowsKioskConfiguration
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -67,6 +68,7 @@ The following table shows the properties that are required when you create the [
 |kioskBrowserBlockedURLs|String collection|Specify URLs that the kiosk browsers should not navigate to|
 |kioskBrowserBlockedUrlExceptions|String collection|Specify URLs that the kiosk browser is allowed to navigate to|
 |edgeKioskEnablePublicBrowsing|Boolean|Enable public browsing kiosk mode for the Microsoft Edge browser. The Default is false.|
+|windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|force update schedule for Kiosk devices.|
 
 
 
@@ -80,7 +82,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2526
+Content-length: 2829
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -154,7 +156,15 @@ Content-length: 2526
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "dayofWeek": "monday",
+    "dayofMonth": 10,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
 
@@ -163,7 +173,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2698
+Content-Length: 3001
 
 {
   "@odata.type": "#microsoft.graph.windowsKioskConfiguration",
@@ -240,9 +250,18 @@ Content-Length: 2698
   "kioskBrowserBlockedUrlExceptions": [
     "Kiosk Browser Blocked Url Exceptions value"
   ],
-  "edgeKioskEnablePublicBrowsing": true
+  "edgeKioskEnablePublicBrowsing": true,
+  "windowsKioskForceUpdateSchedule": {
+    "@odata.type": "microsoft.graph.windowsKioskForceUpdateSchedule",
+    "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
+    "recurrence": "daily",
+    "dayofWeek": "monday",
+    "dayofMonth": 10,
+    "runImmediatelyIfAfterStartDateTime": true
+  }
 }
 ```
+
 
 
 

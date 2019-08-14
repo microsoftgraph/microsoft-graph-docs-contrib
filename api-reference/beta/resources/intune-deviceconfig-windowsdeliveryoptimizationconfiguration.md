@@ -4,6 +4,7 @@ description: "Windows Delivery Optimization configuration"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsDeliveryOptimizationConfiguration resource type
@@ -60,6 +61,9 @@ The default value is 0. The value 0 (zero) means "not limited" and the cloud ser
 |maximumCacheAgeInDays|Int32|Specifies the maximum time in days that each file is held in the Delivery Optimization cache after downloading successfully (0-3650). Valid values 0 to 3650|
 |maximumCacheSize|[deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|Specifies the maximum cache size that Delivery Optimization either as a percentage or in GB.|
 |vpnPeerCaching|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|cacheServerHostNames|String collection|Specifies cache servers host names.|
+|cacheServerForegroundDownloadFallbackToHttpDelayInSeconds|Int32|Specifies number of seconds to delay a fall back from cache servers to an HTTP source for a foreground download. Valid values 0 to 2592000.​|
+|cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds|Int32|Specifies number of seconds to delay a fall back from cache servers to an HTTP source for a background download. Valid values 0 to 2592000.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -133,11 +137,14 @@ Here is a JSON representation of the resource.
   "maximumCacheSize": {
     "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
   },
-  "vpnPeerCaching": "String"
+  "vpnPeerCaching": "String",
+  "cacheServerHostNames": [
+    "String"
+  ],
+  "cacheServerForegroundDownloadFallbackToHttpDelayInSeconds": 1024,
+  "cacheServerBackgroundDownloadFallbackToHttpDelayInSeconds": 1024
 }
 ```
-
-
 
 
 
