@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner
-GET /users/<id>/planner
+GET /users/{id}/planner
 ```
 
 ## Request headers

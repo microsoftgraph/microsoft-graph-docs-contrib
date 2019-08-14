@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 15262
+Content-Length: 15750
 
 {
   "value": {
@@ -100,6 +100,16 @@ Content-Length: 15262
     "displayName": "Display Name value",
     "version": 7,
     "taskManagerBlockEndTask": true,
+    "energySaverOnBatteryThresholdPercentage": 7,
+    "energySaverPluggedInThresholdPercentage": 7,
+    "powerLidCloseActionOnBattery": "noAction",
+    "powerLidCloseActionPluggedIn": "noAction",
+    "powerButtonActionOnBattery": "noAction",
+    "powerButtonActionPluggedIn": "noAction",
+    "powerSleepButtonActionOnBattery": "noAction",
+    "powerSleepButtonActionPluggedIn": "noAction",
+    "powerHybridSleepOnBattery": "enabled",
+    "powerHybridSleepPluggedIn": "enabled",
     "windows10AppsForceUpdateSchedule": {
       "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
       "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -412,6 +422,7 @@ Content-Length: 15262
   }
 }
 ```
+
 
 
 

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ISharePointActivityUserDetailCollectionPage getSharePointActivityUserDetail = graphClient.reports()
-	.getSharePointActivityUserDetail('D7')
+	.getSharePointActivityUserDetail("D7")
 	.buildRequest()
 	.get();
 

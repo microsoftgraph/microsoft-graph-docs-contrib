@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/recentPlans
-GET /users/<id>/planner/recentPlans
+GET /users/{id}/planner/recentPlans
 ```
 
 ## Request headers
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/beta/me/planner/recentPlans
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-recentplans-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-recentplans-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

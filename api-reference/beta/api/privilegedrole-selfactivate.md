@@ -34,7 +34,7 @@ The requestor can only call ```selfActivate``` for the role that is assigned to 
 POST /privilegedRoles/{id}/selfActivate
 ```
 
-Note that ``<id>`` is the target role ID.
+Note that ``{id}`` is the target role ID.
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -81,7 +81,7 @@ Content-length: 142
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedrole-selfactivate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedrole-selfactivate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

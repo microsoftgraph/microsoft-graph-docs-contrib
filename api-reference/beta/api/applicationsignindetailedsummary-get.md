@@ -55,13 +55,13 @@ The following is an example of the request.
   "name": "get_applicationsignindetailedsummary"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/<id>
+GET https://graph.microsoft.com/beta/reports/applicationSignInDetailedSummary/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationsignindetailedsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationsignindetailedsummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

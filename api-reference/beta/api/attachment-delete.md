@@ -70,8 +70,8 @@ Attachments for an [Outlook task](../resources/outlooktask.md).
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/outlook/tasks/<id>/attachments/{id}
-DELETE /users/<id>/outlook/tasks/<id>/attachments/{id}
+DELETE /me/outlook/tasks/{id}/attachments/{id}
+DELETE /users/{id}/outlook/tasks/{id}/attachments/{id}
 ```
 
 Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group.
@@ -115,7 +115,7 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
