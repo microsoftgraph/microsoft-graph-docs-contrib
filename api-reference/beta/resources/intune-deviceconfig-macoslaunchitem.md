@@ -4,6 +4,7 @@ description: "Represents an app in the list of macOS launch items"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSLaunchItem resource type
@@ -37,8 +38,6 @@ Here is a JSON representation of the resource.
   "hide": true
 }
 ```
-
-
 
 
 

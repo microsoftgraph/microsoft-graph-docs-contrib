@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IOffice365ServicesUserCountsCollectionPage getOffice365ServicesUserCounts = graphClient.reports()
-	.getOffice365ServicesUserCounts('D7')
+	.getOffice365ServicesUserCounts("D7")
 	.buildRequest()
 	.get();
 
