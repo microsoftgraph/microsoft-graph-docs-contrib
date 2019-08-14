@@ -11,9 +11,10 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the [accessReview](../resources/accessreview.md) objects for a particular [businessFlowTemplate](../resources/businessflowtemplate.md).
+In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the [accessReview](../resources/accessreview.md) objects for a particular [businessFlowTemplate](../resources/businessflowtemplate.md).  A list of zero or more *accessReview* objects are returned, for each one-time and recurring access review that was created with that business flow template.
 
-Note that if one of the access reviews matching the filter is an access review, only one `accessReview` object will be returned, representing the series.  To retrieve the instances of a recurring review, the caller must navigate the `instance` relationship of that object to find an `accessReview` object for a current or past instance of the access review.
+>[!NOTE]
+> If any of the access reviews matching the filter is a recurring access review, then one *accessReview* object will be returned to represent each recurring series as a whole.  Then, to retrieve the instances of a recurring access review, the caller can navigate the *instance* relationship of that *accessReview* object for the recurring access review. The *instance* relationship links to the *accessReview* objects for a current or the past instances of the recurring access review.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +45,7 @@ If successful, this method returns a `200, OK` response code and an array of [ac
 
 ## Example
 ##### Request
-
+Here is an example of a request to retrieve all the one-time and recurring access reviews for a business flow template '6E4F3D20-C5C3-407F-9695-8460952BCC68'.
 
 # [HTTP](#tab/http)
 <!-- {

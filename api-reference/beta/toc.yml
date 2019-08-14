@@ -7741,6 +7741,8 @@
             href: api/accessreview-delete.md
           - name: Get access review
             href: api/accessreview-get.md
+          - name: List access reviews
+            href: api/accessreview-list.md
           - name: Update access review
             href: api/accessreview-update.md
           - name: Add reviewer
