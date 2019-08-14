@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/planner/all/delta
-GET /users/<id>/planner/all/delta
+GET /users/{id}/planner/all/delta
 ```
 
 No additional query parameters (such as `$select`, `$expand`, or `$filter`) are currently supported on Planner's implementation of delta queries.

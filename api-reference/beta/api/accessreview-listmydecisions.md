@@ -26,7 +26,7 @@ The signed in user must also be permitted to read this particular access review.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews('{reviewId}')/myDecisions
+GET /accessReviews/{reviewId}/myDecisions
 ```
 ## Request headers
 | Name         | Type        | Description |
