@@ -4,6 +4,7 @@ description: "Contains the properties for auto-assigning a Role Scope Tag to a g
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # roleScopeTagAutoAssignment resource type
@@ -49,8 +50,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

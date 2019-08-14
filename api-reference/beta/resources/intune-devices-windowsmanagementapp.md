@@ -30,7 +30,6 @@ Windows management app entity.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|healthSummary|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Health summary for Windows management app.|
 |healthStates|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) collection|The list of health states for installed Windows management app.|
 
 ## JSON Representation
@@ -48,8 +47,6 @@ Here is a JSON representation of the resource.
   "availableVersion": "String"
 }
 ```
-
-
 
 
 
