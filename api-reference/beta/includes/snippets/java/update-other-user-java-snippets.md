@@ -12,7 +12,7 @@ businessPhonesList.add("businessPhones-value");
 user.businessPhones = businessPhonesList;
 user.officeLocation = "city-value";
 
-graphClient.me()
+graphClient.users("{id}")
 	.buildRequest()
 	.patch(user);
 

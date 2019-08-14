@@ -17,7 +17,8 @@ const user = {
   officeLocation: "city-value"
 };
 
-let res = await client.api('/me')
+let res = await client.api('/users/{id}')
+	.version('beta')
 	.update({user : user});
 
 ```

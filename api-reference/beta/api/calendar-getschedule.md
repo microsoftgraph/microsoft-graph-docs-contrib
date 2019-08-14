@@ -60,7 +60,7 @@ The following example gets the availability information for two users for the sp
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/beta/me/calendar/getSchedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -74,7 +74,7 @@ Content-Type: application/json
         "dateTime": "2019-03-15T18:00:00",
         "timeZone": "Pacific Standard Time"
     },
-    "availabilityViewInterval": "60"
+    "availabilityViewInterval": 60
 }
 ```
 # [C#](#tab/csharp)
