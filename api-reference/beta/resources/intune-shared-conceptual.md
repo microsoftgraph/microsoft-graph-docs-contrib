@@ -4,7 +4,6 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) that sup
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "intune"
-doc_type: conceptualPageType
 ---
 
 # Shared resources in Microsoft Intune
@@ -29,6 +28,7 @@ The following Graph resources are shared between Intune workflows:
 - [Device platform type](intune-shared-deviceplatformtype.md)
 - [Device type](intune-shared-devicetype.md)
 - [Enablement](intune-shared-enablement.md)
+- [Enablement](intune-shared-enablement.md)
 - [Exclusion group assignment target](intune-shared-exclusiongroupassignmenttarget.md)
 - [Group assignment target](intune-shared-groupassignmenttarget.md)
 - [Install intent](intune-shared-installintent.md)
@@ -43,7 +43,6 @@ The following Graph resources are shared between Intune workflows:
 - [Report root](intune-shared-reportroot.md)
 - [Resultant app state](intune-shared-resultantappstate.md)
 - [RGB color](intune-shared-rgbcolor.md)
-- [Run as account type](intune-shared-runasaccounttype.md)
 - [Run state](intune-shared-runstate.md)
 - [Saved UI state generation options](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)

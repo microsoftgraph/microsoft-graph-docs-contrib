@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IApplicationSignInSummaryCollectionPage getAzureADApplicationSignInSummary = graphClient.reports()
-	.getAzureADApplicationSignInSummary('D7')
+	.getAzureADApplicationSignInSummary("D7")
 	.buildRequest()
 	.get();
 

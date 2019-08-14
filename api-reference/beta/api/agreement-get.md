@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /agreements/<id>
+GET /agreements/{id}
 ```
 <!--
 ## Optional query parameters
@@ -49,13 +49,13 @@ If successful, this method returns a `200 OK` response code and [agreement](../r
   "name": "get_agreement"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/agreements/<id>?$expand=files
+GET https://graph.microsoft.com/beta/agreements/{id}?$expand=files
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreement-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-agreement-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

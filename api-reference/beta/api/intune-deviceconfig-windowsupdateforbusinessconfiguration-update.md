@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -84,6 +84,10 @@ The following table shows the properties that are required when you create the [
 |engagedRestartDeadlineInDays|Int32|Deadline in days before automatically scheduling and executing a pending restart outside of active hours, with valid range from 2 to 30 days|
 |engagedRestartSnoozeScheduleInDays|Int32|Number of days a user can snooze Engaged Restart reminder notifications with valid range from 1 to 3 days|
 |engagedRestartTransitionScheduleInDays|Int32|Number of days before transitioning from Auto Restarts scheduled outside of active hours to Engaged Restart, which requires the user to schedule, with valid range from 0 to 30 days|
+|deadlineForFeatureUpdatesInDays|Int32|Number of days before feature updates are installed automatically with valid range from 2 to 30 days|
+|deadlineForQualityUpdatesInDays|Int32|Number of days before quality updates are installed automatically with valid range from 2 to 30 days|
+|deadlineGracePeriodInDays|Int32|Number of days after deadline  until restarts occur automatically with valid range from 0 to 7 days|
+|postponeRebootUntilAfterDeadline|Boolean|Specifies if the device should wait until deadline for rebooting outside of active hours|
 |autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Specify the method by which the auto-restart required notification is dismissed. Possible values are: `notConfigured`, `automatic`, `user`.|
 |scheduleRestartWarningInHours|Int32|Specify the period for auto-restart warning reminder notifications. Supported values: 2, 4, 8, 12 or 24 (hours).|
 |scheduleImminentRestartWarningInMinutes|Int32|Specify the period for auto-restart imminent warning notifications. Supported values: 15, 30 or 60 (minutes).|
@@ -103,7 +107,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2676
+Content-length: 2840
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -164,6 +168,10 @@ Content-length: 2676
   "engagedRestartDeadlineInDays": 12,
   "engagedRestartSnoozeScheduleInDays": 2,
   "engagedRestartTransitionScheduleInDays": 6,
+  "deadlineForFeatureUpdatesInDays": 15,
+  "deadlineForQualityUpdatesInDays": 15,
+  "deadlineGracePeriodInDays": 9,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
   "scheduleImminentRestartWarningInMinutes": 7,
@@ -178,7 +186,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2848
+Content-Length: 3012
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdateForBusinessConfiguration",
@@ -242,6 +250,10 @@ Content-Length: 2848
   "engagedRestartDeadlineInDays": 12,
   "engagedRestartSnoozeScheduleInDays": 2,
   "engagedRestartTransitionScheduleInDays": 6,
+  "deadlineForFeatureUpdatesInDays": 15,
+  "deadlineForQualityUpdatesInDays": 15,
+  "deadlineGracePeriodInDays": 9,
+  "postponeRebootUntilAfterDeadline": true,
   "autoRestartNotificationDismissal": "automatic",
   "scheduleRestartWarningInHours": 13,
   "scheduleImminentRestartWarningInMinutes": 7,
@@ -250,6 +262,7 @@ Content-Length: 2848
   "updateNotificationLevel": "defaultNotifications"
 }
 ```
+
 
 
 
