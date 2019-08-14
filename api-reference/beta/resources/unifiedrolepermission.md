@@ -11,8 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of allowed resource actions and the conditions that must be met for the action to be effective. 
-Resource actions are tasks that can be perfomed on a resource. For example, the application resource supports create, update, delete, and reset password resource actions.
+Represents a collection of allowed resource actions and the conditions that must be met for the action to be effective. Resource actions are tasks that can be perfomed on a resource. For example, the application resource supports create, update, delete, and reset password resource actions.
 
 ## Properties
 

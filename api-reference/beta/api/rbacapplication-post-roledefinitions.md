@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create a rol
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
+If successful, this method returns `201 Created` response code and a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object in the response body.
 
 ## Example
 

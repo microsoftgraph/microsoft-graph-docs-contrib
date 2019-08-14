@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A unified role assignment is used to grant access to resources. It represents a role definition assigned to a principal (typically a user) at a particular scope.
+A unifiedRoleAssignment is used to grant access to resources. It represents a role definition assigned to a principal (typically a user) at a particular scope.
 
 ## Methods
 
@@ -25,10 +25,10 @@ A unified role assignment is used to grant access to resources. It represents a 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| The unique identifier for the role assignment. Key, not nullable, Read-only. |
+|id|String| The unique identifier for the unifiedRoleAssignment. Key, not nullable, Read-only. |
 |principalId|String| Objectid of the principal to which the assignment is granted. |
-|resourceScope|String| The scope at which the role assignment applies. This is "/" for service-wide. |
-|roleDefinitionId|String| The roleDefinition the assignment is for. Read only. |
+|resourceScope|String| The scope at which the unifiedRoleAssignment applies. This is "/" for service-wide. |
+|roleDefinitionId|String| The unifiedRoleDefinition the assignment is for. Read only. |
 
 ## Relationships
 
