@@ -18,7 +18,7 @@ Represents data about the user's time spent in call activities on Microsoft Team
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| Call activity for which statistics are returned.|
-|duration|Duration|Total hours spent on calls.|
+|duration|Duration|Total hours spent on calls. The value is represented in ISO 8601 format for durations.|
 |endDate|Date|Date when the call activity ended.|
 |id|String| Read-only ID for the call activity.|
 |startDate|Date|Date when the call activity started.|

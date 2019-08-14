@@ -18,7 +18,7 @@ Represents data about the user's time spent in email activities in Microsoft Out
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| Email activity for which statistics are returned.|
-|duration|Duration|Total hours spent on emails.|
+|duration|Duration|Total hours spent on emails. The value is represented in ISO 8601 format for durations.|
 |endDate|Date|Date when the email activity ended.|
 |id|String| Read-only ID for the email activity.|
 |startDate|Date|Date when the email activity started.|

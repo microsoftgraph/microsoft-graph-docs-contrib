@@ -13,6 +13,8 @@ doc_type: "apiPageType"
 
 Retrieve the properties of an [activityStatistics](../resources/activitystatistics.md) object for a user.
 
+You can get the properties of a type of [activityStatistics](../resources/activitystatistics.md) for the specified user and time range. You can specify the type of statistics and time range by using the supported format for `id` in the query.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

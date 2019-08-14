@@ -18,7 +18,7 @@ Represents data about the user's time spent in chat activities on Microsoft Team
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| Chat activity for which statistics are returned.|
-|duration|Duration|Total hours spent on chats.|
+|duration|Duration|Total hours spent on chats. The value is represented in ISO 8601 format for durations.|
 |endDate|Date|Date when the chat activity ended.|
 |id|String| Read-only ID for the chat activity.|
 |startDate|Date|Date when the chat activity started.|

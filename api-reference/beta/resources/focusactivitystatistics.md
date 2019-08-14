@@ -18,7 +18,7 @@ Represents data about the user's time available for focus work. This is based on
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| Focus activity for which statistics are returned.|
-|duration|Duration|Total sum of focus hours, which is equal to all time blocks of at least two consecutive hours, in a user's calendar without a meeting with other people within the user's set work hours.|
+|duration|Duration|Total sum of focus hours, which is equal to all time blocks of at least two consecutive hours, in a user's calendar without a meeting with other people within the user's set work hours. The value is represented in ISO 8601 format for durations.|
 |endDate|Date|Date when the focus activity ended.|
 |id|String| Read-only ID for the focus activity.|
 |startDate|Date|Date when the focus activity started.|

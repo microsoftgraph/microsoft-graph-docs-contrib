@@ -24,7 +24,7 @@ Represents data about the user's time spent in meetings in Microsoft Outlook, Mi
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| Meeting activity for which statistics are returned.|
-|duration|Duration|Total hours spent on meetings.|
+|duration|Duration|Total hours spent on meetings. The value is represented in ISO 8601 format for durations.|
 |endDate|Date|Date when the meeting activity ended.|
 |id|String| Read-only ID for the meeting activity.|
 |startDate|Date|Date when the meeting activity started.|
