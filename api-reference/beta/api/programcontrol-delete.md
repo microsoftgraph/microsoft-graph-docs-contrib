@@ -26,7 +26,7 @@ The signed in user must also be in a directory role that permits them to delete 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /programControls('<id>')
+DELETE /programControls('{id}')
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -61,10 +61,6 @@ DELETE https://graph.microsoft.com/beta/programControls/7e59d237-2fb0-4e5d-b7bb-
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-programcontrol-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-programcontrol-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

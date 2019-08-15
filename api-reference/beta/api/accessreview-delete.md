@@ -26,7 +26,7 @@ The caller should also have ProgramControl.ReadWrite.All permission, so that it 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /accessReviews('<id>')
+DELETE /accessReviews/{reviewId}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -61,10 +61,6 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-accessreview-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

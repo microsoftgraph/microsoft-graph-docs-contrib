@@ -26,7 +26,7 @@ The signed in user must also be permitted to read this particular access review.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews('{reviewId}')/myDecisions
+GET /accessReviews/{reviewId}/myDecisions
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -61,10 +61,6 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-decisions-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-decisions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

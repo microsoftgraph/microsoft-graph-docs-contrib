@@ -50,7 +50,7 @@ Here is an example of the request.
   "name": "get_plannerplan"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/planner/plans/<id>
+GET https://graph.microsoft.com/beta/planner/plans/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerplan-csharp-snippets.md)]
@@ -62,10 +62,6 @@ GET https://graph.microsoft.com/beta/planner/plans/<id>
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-plannerplan-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-plannerplan-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
