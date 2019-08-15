@@ -2,7 +2,7 @@
 title: "Update workbookcommentreply"
 description: "Update the properties of workbookcommentreply object."
 localization_priority: Normal
-author: ""
+author: "grangeryy"
 ms.prod: ""
 doc_type: "apiPageType"
 ---
