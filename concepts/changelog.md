@@ -81,7 +81,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | beta | Introduced the new workplace intelligence [analytics API](/graph/api/resources/activitystatistics?view=graph-rest-beta), which enables you to get analytics about how users spend their time on various activities during and outside of working hours, including meetings, emails, chats (instant messages), calls, and focus work. |
+| Addition | Beta | Introduced the new workplace intelligence [analytics API](/graph/api/resources/activitystatistics?view=graph-rest-beta), which enables you to get analytics about how users spend their time on various activities during and outside of working hours, including calls, chats (instant messages), emails, focus work, and meetings. |
 
 
 ## July 2019
