@@ -2,7 +2,7 @@
 title: "workbookComment resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
-author: ""
+author: "grangeryy"
 ms.prod: ""
 doc_type: "resourcePageType"
 ---
