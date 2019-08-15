@@ -441,11 +441,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -682,11 +682,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -781,9 +781,9 @@
         items:
           - name: Place
             href: resources/place.md
-          - name: Room resource
+          - name: Room type
             href: resources/room.md
-          - name: Room list resource
+          - name: Room list type
             href: resources/roomlist.md
           - name: List places
             href: api/place-list.md
@@ -8590,11 +8590,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -9692,11 +9692,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
