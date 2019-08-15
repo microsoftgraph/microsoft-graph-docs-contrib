@@ -84,11 +84,11 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | Beta | Introduced the new workplace intelligence [analytics API](/graph/api/resources/useranalytics?view=graph-rest-beta) that enables you to get analytics about how users spend their time on various activities during and outside of working hours, including calls, chats (instant messages), emails, focus work, and meetings. |
 | Addition | Beta | Introduced the new workplace intelligence [settings API](/graph/api/resources/settings?view=graph-rest-beta) that represents the current required settings for a user to use the analytics API. |
 | Addition | Beta | Introduced the new [activityStatistics resource type](/graph/api/resources/activitystatistics?view=graph-rest-beta) that represents time spent by a user on various work activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day. |
-| Addition | Beta | Introduced the new [callActivityStatistics resource type](/graph/api/resources/callactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in call activities on Microsoft Teams or Skype for Business. This is based on activityStatistics. |
-| Addition | Beta | Introduced the new [chatActivityStatistics resource type](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in chat activities on Microsoft Teams or Skype for Business. This is based on activityStatistics. |
-| Addition | Beta | Introduced the new [emailActivityStatistics resource type](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in email activities in Microsoft Outlook. This is based on activityStatistics. |
-| Addition | Beta | Introduced the new [focusActivityStatistics resource type](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta) that represents the data about the user's time available for focus work. This is based on activityStatistics. |
-| Addition | Beta | Introduced the new [meetingActivityStatistics resource type](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in meetings in Microsoft Outlook, Microsoft Teams, or Skype for Business. This is based on activityStatistics. |
+| Addition | Beta | Introduced the new [callActivityStatistics resource type](/graph/api/resources/callactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in call activities on Microsoft Teams or Skype for Business. This is based on [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta). |
+| Addition | Beta | Introduced the new [chatActivityStatistics resource type](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in chat activities on Microsoft Teams or Skype for Business. This is based on [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta). |
+| Addition | Beta | Introduced the new [emailActivityStatistics resource type](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in email activities in Microsoft Outlook. This is based on [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta). |
+| Addition | Beta | Introduced the new [focusActivityStatistics resource type](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta) that represents the data about the user's time available for focus work. This is based on [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta). |
+| Addition | Beta | Introduced the new [meetingActivityStatistics resource type](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in meetings in Microsoft Outlook, Microsoft Teams, or Skype for Business. This is based on [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta). |
 
 ## July 2019
 
@@ -105,8 +105,8 @@ Debut of the places API which provides rich details for locations in apps.
 
 ### Devices and apps (Microsoft Intune)
 
-### Devices and apps (Microsoft Intune)
 |Change type|Version|Description|
+|:----------------|:------------|:-----------------------------------------|
 |Addition|beta|Added new entities:<br/>[managedAllDeviceCertificateState](/graph/api/resources/intune-deviceconfig-managedalldevicecertificatestate?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new complex types:<br/>[windowsKioskForceUpdateSchedule](/graph/api/resources/intune-deviceconfig-windowskioskforceupdateschedule?view=graph-rest-beta)<br/>|
 |Addition|beta|Added new enum types:<br/>[fileVaultState](/graph/api/resources/intune-deviceconfig-filevaultstate?view=graph-rest-beta)<br/>[windowsDefenderTamperProtectionOptions](/graph/api/resources/intune-deviceconfig-windowsdefendertamperprotectionoptions?view=graph-rest-beta)<br/>|
