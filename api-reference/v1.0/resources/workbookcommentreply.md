@@ -1,8 +1,8 @@
 ---
 title: "workbookCommentReply resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Definition of workbookCommentReply resource type"
 localization_priority: Normal
-author: ""
+author: "grangeryy"
 ms.prod: ""
 doc_type: "resourcePageType"
 ---
