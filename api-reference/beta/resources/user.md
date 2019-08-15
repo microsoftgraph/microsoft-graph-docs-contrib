@@ -334,7 +334,7 @@ Here is a JSON representation of the resource
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-  "analytics": {"@odata.type": "microsoft.graph.userAnalytics"},
+  "analytics": [{"@odata.type": "microsoft.graph.userAnalytics"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
