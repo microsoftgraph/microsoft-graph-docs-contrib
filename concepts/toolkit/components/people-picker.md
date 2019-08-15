@@ -15,7 +15,7 @@ If there are more people to display than the `show-max` value, the search list w
 
 ## Example
 
-[jsfiddle example](https://jsfiddle.net/metulev/az6pqy2r/)
+[jsfiddle example](https://jsfiddle.net/metulev/jdv38fg0/)
 
 ```html
 <mgt-people-picker></mgt-people-picker>
@@ -36,9 +36,7 @@ By default, the `mgt-people-picker` component fetches events from the `/me/peopl
 Ex:
 
 ```html
-<mgt-people-picker
-  show-max="4">
-</mgt-people-picker>
+<mgt-people-picker show-max="4"> </mgt-people-picker>
 ```
 
 ## CSS Custom properties
@@ -51,15 +49,15 @@ mgt-people-picker {
   --accent-color: green; /* Color for separator of search input box and people */
 }
 ```
+
 ## Graph scopes
 
 This component uses the following Microsoft Graph APIs and permissions:
 
-| resource                                                                                                        | permission/scope |
-| --------------------------------------------------------------------------------------------------------------- | ---------------- |
-| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                   | `People.Read`    |
-| [/groups/${groupId}/members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | `People.Read`    |
-
+| resource                                                                                                         | permission/scope |
+| ---------------------------------------------------------------------------------------------------------------- | ---------------- |
+| [/me/people](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                    | `People.Read`    |
+| [/groups/\${groupId}/members](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | `People.Read`    |
 
 ## Authentication
 
