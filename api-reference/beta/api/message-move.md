@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message.
+Move a message to another folder within the specified user's mailbox. This creates a new copy of the message in the destination folder and removes the original message.
 
 ## Permissions
 
