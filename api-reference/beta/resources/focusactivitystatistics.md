@@ -19,9 +19,9 @@ Represents data about the user's time available for focus work. This is based on
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| Focus activity for which statistics are returned.|
 |duration|Duration|Total sum of focus hours, which is equal to all time blocks of at least two consecutive hours, in a user's calendar without a meeting with other people within the user's set work hours. The value is represented in ISO 8601 format for durations.|
-|endDate|Date|Date when the focus activity ended.|
+|endDate|Date|Date when the focus activity ended. The value is represented in ISO 8601 format for calendar dates.|
 |id|String| Read-only ID for the focus activity.|
-|startDate|Date|Date when the focus activity started.|
+|startDate|Date|Date when the focus activity started. The value is represented in ISO 8601 format for calendar dates.|
 |timeZoneUsed|String|The time zone used for the computation.|
 
 ## Relationships
@@ -45,9 +45,9 @@ The following is a JSON representation of the resource.
 {
   "activity": "string",
   "duration": "String (ISO 8601 duration)",
-  "endDate": "String (ISO 8601 duration)",
+  "endDate": "String (ISO 8601)",
   "id": "String (identifier)",
-  "startDate": "String (ISO 8601 duration)",
+  "startDate": "String (ISO 8601)",
   "timeZoneUsed": "String"
   }
 ```

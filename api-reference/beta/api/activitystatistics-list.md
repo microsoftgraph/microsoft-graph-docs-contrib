@@ -30,8 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET  https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
-GET  https://graph.microsoft.com/beta/users(id|userPrincipalName)/analytics/activitystatistics
-
 ```
 ## Request headers
 
@@ -59,7 +57,7 @@ The following is an example of a request of all related activity statistics for 
 
 ```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
-GET https://graph.microsoft.com/beta/users(id|userPrincipalName)/analytics/activitystatistics
+
 ```
 
 ### Response

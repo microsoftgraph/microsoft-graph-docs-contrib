@@ -13,7 +13,7 @@ doc_type: "apiPageType"
 
 Retrieve the properties of an [activityStatistics](../resources/activitystatistics.md) object for a user.
 
-You can get the properties of a type of [activityStatistics](../resources/activitystatistics.md) for the specified user and time range. You can specify the type of statistics and time range by using the supported format for `id` in the query.
+You can get the properties of a type of [activityStatistics](../resources/activitystatistics.md) for the specified user and date range. You can specify the type of statistics and date range by using the supported format for `id` in the query.
 
 ## Permissions
 
@@ -48,13 +48,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested type of activity statistics, which is one of the following resources derived from [activityStatistics](../resources/activitystatistics.md):{[Call](callactivitystatistics.md), [Chat](chatactivitystatistics.md), [Email](emailactivitystatistics.md), [Focus](focusactivitystatistics.md), and [Meeting](meetingactivitystatistics.md)}.
+If successful, this method returns a `200 OK` response code and the requested type of activity statistics, which is one of the following resources derived from [activityStatistics](../resources/activitystatistics.md):{[Call](../resources/callactivitystatistics.md), [Chat](../resources/chatactivitystatistics.md), [Email](../resources/emailactivitystatistics.md), [Focus](../resources/focusactivitystatistics.md), and [Meeting](../resources/meetingactivitystatistics.md)}.
 
 ## Example
 
 #### Request
 
-The following example requests statistics of the type emailActivityStatistics of the signed-in user, for the date range between 2019-06-16 and 2019-06-17", For more information about the general id property format, see [activity id property](../resources/activitystatistics.md#activity-id-property).
+The following example requests statistics of the type emailActivityStatistics of the signed-in user, for the date range between 2019-06-16 and 2019-06-17. For more information about the general id property format, see [activity id property](../resources/activitystatistics.md#activity-id-property).
 
 <!-- {
   "blockType": "request",
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-
 
 #### Response
 
-The following is an example of the response that gets activity statistics of a user for a specific day and activity.
+The following is an example of the response that gets activity statistics of a user for a specific activity and day.
 
 <!-- {
   "blockType": "response",

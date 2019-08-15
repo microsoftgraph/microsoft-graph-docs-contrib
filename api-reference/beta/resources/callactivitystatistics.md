@@ -19,9 +19,9 @@ Represents data about the user's time spent in call activities on Microsoft Team
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| Call activity for which statistics are returned.|
 |duration|Duration|Total hours spent on calls. The value is represented in ISO 8601 format for durations.|
-|endDate|Date|Date when the call activity ended.|
+|endDate|Date|Date when the call activity ended. The value is represented in ISO 8601 format for calendar dates.|
 |id|String| Read-only ID for the call activity.|
-|startDate|Date|Date when the call activity started.|
+|startDate|Date|Date when the call activity started. The value is represented in ISO 8601 format for calendar dates.|
 |timeZoneUsed|String|The time zone used for the computation.|
 |afterHours|Duration|Time spent on calls outside of working hours.|
 
@@ -46,9 +46,9 @@ The following is a JSON representation of the resource.
 {
   "activity": "string",
   "duration": "String (ISO 8601 duration)",
-  "endDate": "String (ISO 8601 duration)",
+  "endDate": "String (ISO 8601)",
   "id": "String (identifier)",
-  "startDate": "String (ISO 8601 duration)",
+  "startDate": "String (ISO 8601)",
   "timeZoneUsed": "String",
   "afterHours": "String (ISO 8601 duration)"
 }

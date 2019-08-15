@@ -11,9 +11,9 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The current required settings for a user to use the analytics API.
+Represents the current required settings for a user to use the analytics API.
 
-For the analytics API to return results for users, they must have a cloud-hosted mailbox that’s graph-enabled, have a valid MyAnalytics license, and be opted in to using MyAnalytics.
+For the analytics API to return results for users, they must have a cloud-hosted mailbox that’s enabled for Microsoft Graph, have a valid MyAnalytics license, and be opted in to using MyAnalytics.
 
 ## Methods
 
@@ -25,7 +25,7 @@ For the analytics API to return results for users, they must have a cloud-hosted
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hasGraphMailbox|Boolean|Specifies if the user's primary mailbox is hosted in the cloud and is graph-enabled.|
+|hasGraphMailbox|Boolean|Specifies if the user's primary mailbox is hosted in the cloud and is enabled for Microsoft Graph.|
 |hasLicense|Boolean|Specifies if the user has a MyAnalytics license assigned.|
 |hasOptedOut|Boolean|Specifies if the user opted out of MyAnalytics.|
 

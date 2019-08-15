@@ -19,9 +19,9 @@ Represents data about the user's time spent in email activities in Microsoft Out
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| Email activity for which statistics are returned.|
 |duration|Duration|Total hours spent on emails. The value is represented in ISO 8601 format for durations.|
-|endDate|Date|Date when the email activity ended.|
+|endDate|Date|Date when the email activity ended. The value is represented in ISO 8601 format for calendar dates.|
 |id|String| Read-only ID for the email activity.|
-|startDate|Date|Date when the email activity started.|
+|startDate|Date|Date when the email activity started. The value is represented in ISO 8601 format for calendar dates.|
 |timeZoneUsed|String|The time zone used for the computation.|
 |afterHours|Duration|Total hours spent outside of working hours (as defined in Outlook) on email.|
 |readEmail|Duration|Total hours spent reading email.|
@@ -48,9 +48,9 @@ The following is a JSON representation of the resource.
 {
   "activity": "string",
   "duration": "String (ISO 8601 duration)",
-  "endDate": "String (ISO 8601 duration)",
+  "endDate": "String (ISO 8601)",
   "id": "String (identifier)",
-  "startDate": "String (ISO 8601 duration)",
+  "startDate": "String (ISO 8601)",
   "timeZoneUsed": "String",
   "afterHours": "String (ISO 8601 duration)",
   "readEmail": "String (ISO 8601 duration)",

@@ -29,7 +29,7 @@ The user's settings and activity statistics.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|activityStatistics|[activityStatistics](activitystatistics.md) collection| Read-only. Nullable.|
+|activityStatistics|[activityStatistics](activitystatistics.md) collection| The collection of work activities that a user spent time on during and outside of working hours. Read-only. Nullable.|
 
 ## JSON representation
 
