@@ -1,6 +1,6 @@
 ---
 title: "workbookComment resource type"
-description: "PROVIDE DESCRIPTION HERE"
+description: "Definition of workbookComment resource type"
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: ""
