@@ -2,7 +2,7 @@
 title: "Delete workbookCommentReply"
 description: "Delete workbookCommentReply."
 localization_priority: Normal
-author: ""
+author: "grangeryy"
 ms.prod: ""
 doc_type: "apiPageType"
 ---
