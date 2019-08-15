@@ -81,8 +81,12 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition | Beta | Introduced the new workplace intelligence [analytics API](/graph/api/resources/activitystatistics?view=graph-rest-beta), which enables you to get analytics about how users spend their time on various activities during and outside of working hours, including calls, chats (instant messages), emails, focus work, and meetings. |
-
+| Addition | Beta | Introduced the new workplace intelligence [analytics APIs](graph/api/resources/useranalytics?view=graph-rest-beta), which enable you to get analytics about how users spend their time on various activities during and outside of working hours, including calls, chats (instant messages), emails, focus work, and meetings. |
+| Addition | Beta | Introduced the new [settings API](/graph/api/resources/settings?view=graph-rest-beta) that represents the current required settings for a user to use the analytics API. |
+| Addition | Beta | Introduced the new [activityStatistics resource type](/graph/api/resources/activitystatistics?view=graph-rest-beta) that represents time spent by a user on various work activities during and outside of working hours, for the specified time range in the request, which uses an aggregation period of one day. |
+| Addition | Beta | Introduced the new [callActivityStatistics resource type](/graph/api/resources/callactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in call activities on Microsoft Teams or Skype for Business. This is based on activityStatistics. |
+| Addition | Beta | Introduced the new [chatActivityStatistics resource type](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in chat activities on Microsoft Teams or Skype for Business. This is based on activityStatistics. |
+| Addition | Beta | Introduced the new [emailActivityStatistics resource type](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta) that represents the data about the user's time spent in email activities in Microsoft Outlook. This is based on activityStatistics. |
 
 ## July 2019
 

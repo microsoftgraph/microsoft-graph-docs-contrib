@@ -47,7 +47,7 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
 |endDate|Date|Date when the activity ended, expressed in ISO 8601 format for calendar dates. As an example, the property can have a value 2019-07-03 which follows the YYYY-MM-DD format..|
 |id|String| Read-only ID for the activity, which represents `{activity}_{startdate}_{enddate}`.|
 |startDate|Date|Date when the activity started.|
-|timeZoneUsed|String|The time zone that the user sets in Outlook is used for the computation.|
+|timeZoneUsed|String|The time zone that the user sets in Microsoft Outlook is used for the computation.|
 
 ## Relationships
 

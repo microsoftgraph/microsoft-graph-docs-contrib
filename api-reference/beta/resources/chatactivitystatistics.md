@@ -23,7 +23,7 @@ Represents data about the user's time spent in chat activities on Microsoft Team
 |id|String| Read-only ID for the chat activity.|
 |startDate|Date|Date when the chat activity started. The value is represented in ISO 8601 format for calendar dates.|
 |timeZoneUsed|String|The time zone that the user sets in Outlook calendar is used for the computation.|
-|afterHours|Duration|Time spent on chats outside of working hours, which is based on the user's Outlook calendar setting for work hours.|
+|afterHours|Duration|Time spent on chats outside of working hours, which is based on the user's Microsoft Outlook calendar setting for work hours.|
 
 ## Relationships
 
