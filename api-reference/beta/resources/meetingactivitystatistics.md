@@ -28,8 +28,8 @@ Represents data about the user's time spent in meetings in Microsoft Outlook, Mi
 |endDate|Date|Date when the meeting activity ended. The value is represented in ISO 8601 format for calendar dates.|
 |id|String| Read-only ID for the meeting activity.|
 |startDate|Date|Date when the meeting activity started. The value is represented in ISO 8601 format for calendar dates.|
-|timeZoneUsed|String|The time zone used for the computation.|
-|afterHours|Duration|Time spent on meetings outside of working hours.|
+|timeZoneUsed|String|The Outlook time zone that the user sets in Outlook calendar is used for the computation.|
+|afterHours|Duration|Time spent on meetings outside of working hours, which is based on the user's Outlook calendar setting for work hours.|
 |conflicting|Duration|Time spent in conflicting meetings (meetings that overlap with other meetings that the person accepted and where the person’s status is set to Busy).|
 |long|Duration|Time spent in long meetings (more than an hour in duration).|
 |multitasking|Duration|Time spent in meetings where the person was multitasking (read/sent more than a minimum number of emails and/or sent more than a minimum number of messages in Teams or in Skype for Business).|

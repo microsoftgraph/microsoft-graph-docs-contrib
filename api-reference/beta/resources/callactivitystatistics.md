@@ -22,8 +22,8 @@ Represents data about the user's time spent in call activities on Microsoft Team
 |endDate|Date|Date when the call activity ended. The value is represented in ISO 8601 format for calendar dates.|
 |id|String| Read-only ID for the call activity.|
 |startDate|Date|Date when the call activity started. The value is represented in ISO 8601 format for calendar dates.|
-|timeZoneUsed|String|The time zone used for the computation.|
-|afterHours|Duration|Time spent on calls outside of working hours.|
+|timeZoneUsed|String|The time zone that the user sets in Outlook calendar is used for the computation.|
+|afterHours|Duration|Time spent on calls outside of working hours, which is based on the user's Outlook calendar setting for work hours.|
 
 ## Relationships
 

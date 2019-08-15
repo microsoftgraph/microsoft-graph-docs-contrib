@@ -22,7 +22,7 @@ Represents data about the user's time available for focus work. This is based on
 |endDate|Date|Date when the focus activity ended. The value is represented in ISO 8601 format for calendar dates.|
 |id|String| Read-only ID for the focus activity.|
 |startDate|Date|Date when the focus activity started. The value is represented in ISO 8601 format for calendar dates.|
-|timeZoneUsed|String|The time zone used for the computation.|
+|timeZoneUsed|String|The time zone that the user sets in Outlook calendar is used for the computation.|
 
 ## Relationships
 

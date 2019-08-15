@@ -22,8 +22,8 @@ Represents data about the user's time spent in email activities in Microsoft Out
 |endDate|Date|Date when the email activity ended. The value is represented in ISO 8601 format for calendar dates.|
 |id|String| Read-only ID for the email activity.|
 |startDate|Date|Date when the email activity started. The value is represented in ISO 8601 format for calendar dates.|
-|timeZoneUsed|String|The time zone used for the computation.|
-|afterHours|Duration|Total hours spent outside of working hours (as defined in Outlook) on email.|
+|timeZoneUsed|String|The time zone that the user sets in Outlook calendar is used for the computation.|
+|afterHours|Duration|Total hours spent on email outside of working hours, which is based on the user's Outlook calendar setting for work hours.|
 |readEmail|Duration|Total hours spent reading email.|
 |sentEmail|Duration|Total hours spent writing and sending email.|
 
