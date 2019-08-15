@@ -2,7 +2,7 @@
 title: "Create workbookComment"
 description: "Use this API to create a new workbookComment."
 localization_priority: Normal
-author: ""
+author: "grangeryy"
 ms.prod: ""
 doc_type: "apiPageType"
 ---
