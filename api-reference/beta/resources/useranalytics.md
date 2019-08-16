@@ -37,6 +37,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
     "activityStatistics"
   ],
@@ -45,6 +46,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "id": "string",
   "settings": {"@odata.type": "microsoft.graph.settings"},
   "activityStatistics": [{"@odata.type": "microsoft.graph.activityStatistics"}]
 }
