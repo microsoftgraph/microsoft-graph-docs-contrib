@@ -31,6 +31,11 @@ One of the following permissions is required to call this API. To learn more, in
 GET  https://graph.microsoft.com/beta/me/analytics/activitystatistics 
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/activitystatistics/{id}
 ```
+
+## Optional query parameters
+
+This method does not support optional query parameters to customize the response.
+
 ## Request headers
 
 | Name      |Description|

@@ -36,6 +36,10 @@ GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/analytics/acti
 
 ```
 
+## Optional query parameters
+
+This method does not support optional query parameters to customize the response.
+
 ## Request headers
 
 | Name      |Description|
