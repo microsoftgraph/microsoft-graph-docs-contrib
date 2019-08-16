@@ -19,10 +19,10 @@ Represents data about the user's time spent in call activities on Microsoft Team
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| Call activity for which statistics are returned.|
 |duration|Duration|Total hours spent on calls. The value is represented in ISO 8601 format for durations.|
-|endDate|Date|Date when the call activity ended. The value is represented in ISO 8601 format for calendar dates.|
+|endDate|Date|Date when the call activity ended. The value is represented in ISO 8601 format for calendar dates. For example, the property value could be "2019-07-04" that follows the YYYY-MM-DD format.|
 |id|String| Read-only ID for the call activity.|
-|startDate|Date|Date when the call activity started. The value is represented in ISO 8601 format for calendar dates.|
-|timeZoneUsed|String|The time zone that the user sets in Microsoft Outlook calendar is used for the computation.|
+|startDate|Date|Date when the call activity started. The value is represented in ISO 8601 format for calendar dates. For example, the property value could be "2019-07-03" that follows the YYYY-MM-DD format.|
+|timeZoneUsed|String|The time zone that the user sets in Microsoft Outlook calendar is used for the computation. For example, the property value could be "Pacific Standard Time."|
 |afterHours|Duration|Time spent on calls outside of working hours, which is based on the user's Outlook calendar setting for work hours. The value is represented in ISO 8601 format for durations. |
 
 ## Relationships

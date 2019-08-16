@@ -11,9 +11,9 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of an [activityStatistics](../resources/activitystatistics.md) object for a user.
+Get the properties of an [activityStatistics](../resources/activitystatistics.md) object for a user.
 
-You can get the properties of a type of [activityStatistics](../resources/activitystatistics.md) for the specified user and date range. You can specify the type of statistics and date range by using the supported format for `id` in the query.
+You can get the properties of a type of [activityStatistics](../resources/activitystatistics.md) for the specified user and date range. You can specify the type of statistics and date range by using the supported format of the [activity id property](../resources/activitystatistics.md#activity-id-property) for `id` in the query.
 
 ## Permissions
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-
 
 #### Response
 
-The following is an example of the response that gets activity statistics of a user for a specific activity and day.
+The following is an example of the response that gets activity statistics of a signed-in user for a specific activity and day.
 
 <!-- {
   "blockType": "response",

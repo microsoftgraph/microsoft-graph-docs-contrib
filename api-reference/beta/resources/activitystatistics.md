@@ -42,10 +42,10 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
 |:-------------|:------------|:------------|
 |activity|analyticsActivityType| The type of activity for which statistics are returned. The possible values are: `call`, `chat`, `email`, `focus`, and `meeting`.|
 |duration|Duration|Total hours spent on the activity. The value is represented in ISO 8601 format for durations.|
-|endDate|Date|Date when the activity ended, expressed in ISO 8601 format for calendar dates. As an example, the property can have a value 2019-07-03 which follows the YYYY-MM-DD format..|
+|endDate|Date|Date when the activity ended, expressed in ISO 8601 format for calendar dates. For example, the property value could be "2019-07-03" that follows the YYYY-MM-DD format.|
 |id|String| Read-only ID for the activity, which represents `{activity}_{startdate}_{enddate}`.|
-|startDate|Date|Date when the activity started.|
-|timeZoneUsed|String|The time zone that the user sets in Microsoft Outlook is used for the computation.|
+|startDate|Date|Date when the activity started, expressed in ISO 8601 format for calendar dates. For example, the property value could be "2019-07-04" that follows the YYYY-MM-DD format.|
+|timeZoneUsed|String|The time zone that the user sets in Microsoft Outlook is used for the computation. For example, the property value could be "Pacific Standard Time."|
 
 ## Relationships
 
@@ -67,7 +67,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "activity": "string",
+  "activity": "String",
   "duration": "String (ISO 8601 duration)",
   "endDate": "String (ISO 8601 format)",
   "id": "String (identifier)",

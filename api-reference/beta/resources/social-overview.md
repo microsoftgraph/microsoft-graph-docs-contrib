@@ -34,8 +34,8 @@ Use the insights API to identify the most relevant documents for a user:
 
 Use the analytics API to get activity statistics and related settings for a user:
 
-- [settings](../resources/settings.md): For the analytics API to return results for users, their current user analytics settings must show they have a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
-- [activityStatistics](../resources/activitystatistics.md): Gets data for the last complete week (or the specified time range) for the Office 365 activities that a user spent time on, including the number of hours spent on [email](emailactivitystatistics.md), [meetings](meetingactivitystatistics.md), [calls](callactivitystatistics.md), and [chats (instant messages)](chatactivitystatistics.md) during and outside of working hours and the number of hours available for [focused work](focusactivitystatistics.md). 
+- [settings](../resources/settings.md): For the analytics API to return results for a user, the current user analytics settings must show a valid MyAnalytics license, be opted in to using MyAnalytics, and have a cloud-hosted mailbox that’s graph-enabled.
+- [activityStatistics](../resources/activitystatistics.md): Gets data for the last complete week (or the specified time range) for the Office 365 activities that a user spent time on, including the number of hours spent on [calls](callactivitystatistics.md), [chats (instant messages)](chatactivitystatistics.md), [email](emailactivitystatistics.md), and [meetings](meetingactivitystatistics.md) during and outside of working hours and the number of hours available for [focused work](focusactivitystatistics.md).
 
 ## Manage @-Mentions
 
