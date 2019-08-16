@@ -37,8 +37,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.focusActivityStatistics",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.focusActivityStatistics"
 }--> 
 
 ```json
