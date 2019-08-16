@@ -11,10 +11,10 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the [accessReview](../resources/accessreview.md) objects for a particular [businessFlowTemplate](../resources/businessflowtemplate.md).  A list of zero or more *accessReview* objects are returned, for each one-time and recurring access review that was created with that business flow template.
+Retrieve the [accessReview](../resources/accessreview.md) objects for a particular [businessFlowTemplate](../resources/businessflowtemplate.md). A list of zero or more **accessReview** objects are returned, for each one-time and recurring access review that was created with that business flow template.
 
 >[!NOTE]
-> If any of the access reviews matching the filter is a recurring access review, then one *accessReview* object will be returned to represent each recurring series as a whole. For example, if there is a monthly recurring access review of guest members of group A, a quarterly recurring access review of guest members of group B, and a one-time access review of guest members of group C, and the caller queries for access reviews with a business flow template of reviews of guest members of groups, then three objects will be returned. To retrieve the instances of a recurring access review, or the access review instance scheduled for a particular month or quarter, the caller can subsequently navigate the *instance* relationship of the recurring access review  *accessReview* object. The *instance* relationship links to the *accessReview* objects for a current or the past instances of the recurring access review.
+> If any of the access reviews that match the filter is a recurring access review, one **accessReview** object will be returned to represent each recurring series as a whole. For example, if there is a monthly recurring access review of guest members of group A, a quarterly recurring access review of guest members of group B, and a one-time access review of guest members of group C, and the caller queries for access reviews with a business flow template of reviews of guest members of groups, three objects will be returned. To retrieve the instances of a recurring access review, or the access review instance scheduled for a particular month or quarter, the caller can subsequently navigate the **instance** relationship of the recurring **accessReview** object. The **instance** relationship links to the **accessReview** objects for a current or the past instances of the recurring access review.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,14 +38,14 @@ GET /accessReviews?$filter=businessFlowTemplateId eq {businessFlowTemplate-id}
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-No request body should be supplied.
+Do not supply a request body.
 
 ## Response
 If successful, this method returns a `200, OK` response code and an array of [accessReview](../resources/accessreview.md) objects in the response body.
 
-## Example
+## Examples
 ##### Request
-Here is an example of a request to retrieve all the one-time and recurring access reviews for a business flow template '6E4F3D20-C5C3-407F-9695-8460952BCC68'.
+The following example shows a request to retrieve all the one-time and recurring access reviews for a business flow template '6E4F3D20-C5C3-407F-9695-8460952BCC68'.
 
 # [HTTP](#tab/http)
 <!-- {
