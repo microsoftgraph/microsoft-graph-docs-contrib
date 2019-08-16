@@ -23,9 +23,11 @@ The following types of statistics are derived from **activityStatistics**:
 
 ### Activity id property
 
-In an HTTP request, to get a specific type of activity statistics within a date range, you can express this information as an ID to the user's collection of activityStatistics in the following format, where `{startdate}` and `{enddate}` are expressed in ISO 8601 calendar date format and `{activity}` can be "call, chat, email, focus, or meeting":
+In an HTTP request, to get a specific type of activity statistics within a date range, you can express this information as an ID to the user's collection of activityStatistics in the following format, where `{startdate}` and `{enddate}` are expressed in ISO 8601 calendar date format and `{activity}` can be "call", "chat", "email", "focus", or "meeting":
 
-```{activity}_{startdate}_{enddate}```
+```
+{activity}_{startdate}_{enddate}
+```
 
 For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivityStatistics for the specified user between August 10, 2019 and August 12, 2019.
 
