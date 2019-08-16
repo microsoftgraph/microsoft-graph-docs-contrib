@@ -1,6 +1,6 @@
 ---
 title: "List accessReviews"
-description: "In the Azure AD access reviews feature, retrieve accessReview objects for a businessFlowTemplate."
+description: "Retrieve accessReview objects for a businessFlowTemplate."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
