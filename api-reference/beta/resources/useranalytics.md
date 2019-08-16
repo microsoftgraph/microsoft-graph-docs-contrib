@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "activityStatistics"
   ],
   "@odata.type": "microsoft.graph.userAnalytics"
 }-->
