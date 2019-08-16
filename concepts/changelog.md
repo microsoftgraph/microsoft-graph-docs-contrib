@@ -349,6 +349,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta  | Added **ownerPrincipalName** property to the [oneDriveUsageAccountDetail](/graph/api/resources/oneDriveUsageAccountDetail?view=graph-rest-beta) entity.|
 | Addition        | Beta  | Added **ownerPrincipalName** property to the [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) entity.|
 
+### Security
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
