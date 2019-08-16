@@ -45,7 +45,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "settings": {"@odata.type": "microsoft.graph.settings"}
+  "settings": {"@odata.type": "microsoft.graph.settings"},
+  "activityStatistics": [{"@odata.type": "microsoft.graph.activityStatistics"}]
 }
 ```
 
