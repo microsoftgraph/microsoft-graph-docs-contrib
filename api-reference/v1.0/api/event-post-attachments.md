@@ -78,7 +78,7 @@ Here is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
-  "name": "create_file_attachment_from_event"
+  "name": "create_file_attachment_from_event_v1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
@@ -116,6 +116,7 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_event_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
@@ -134,7 +135,7 @@ Content-type: application/json
     "isInline":false,
     "contentId":null,
     "contentLocation":null,
-    "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 

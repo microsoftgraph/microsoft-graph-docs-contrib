@@ -60,7 +60,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_file_attachment_from_event"
+  "name": "create_file_attachment_from_event_beta"
 }-->
 
 ```http
@@ -96,8 +96,9 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_event_beta"
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "@odata.type": "microsoft.graph.fileAttachment"
 } -->
 
 ```http
@@ -125,7 +126,10 @@ Content-Length: 735
 
 Here is an example which attaches an event with another event as an item attachment.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_event"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/me/events/{AAMkAGI1AAAt9AHjAAA=}/attachments
@@ -160,8 +164,9 @@ Content-length: 600
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_event",
   "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "@odata.type": "microsoft.graph.itemAttachment"
 } -->
 
 ```http
@@ -192,8 +197,7 @@ The attachment points to a folder on OneDrive.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_reference_attachment_from_event",
-  "@odata.type": "microsoft.graph.referenceAttachment"
+  "name": "create_reference_attachment_from_event"
 }-->
 
 ```http
@@ -230,6 +234,7 @@ Content-length: 319
 Here is an example of a full response.
 <!-- {
   "blockType": "response",
+  "name": "create_reference_attachment_from_event",
   "truncated": true,
   "@odata.type": "microsoft.graph.referenceAttachment"
 } -->
