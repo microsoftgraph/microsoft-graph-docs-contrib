@@ -9269,6 +9269,33 @@
           items:
           - name: List shared
             href: api/insights-list-shared.md
+      - name: Analytics
+        href: resources/useranalytics.md
+        items:
+        - name: Settings
+          items:
+          - name: Settings
+            href: resources/settings.md
+          - name: Get settings
+            href: api/useranalytics-get-settings.md
+        - name: Activity statistics
+          items:
+          - name: Activity statistics
+            href: resources/activitystatistics.md
+          - name: Call statistics type
+            href: resources/callactivitystatistics.md
+          - name: Chat statistics type
+            href: resources/chatactivitystatistics.md
+          - name: Email statistics type
+            href: resources/emailactivitystatistics.md
+          - name: Focus statistics type
+            href: resources/focusactivitystatistics.md          
+          - name: Meeting statistics type
+            href: resources/meetingactivitystatistics.md
+          - name: List activity statistics
+            href: api/activitystatistics-list.md 
+          - name: Get activity statistics
+            href: api/activitystatistics-get.md
       - name: Mention
         href: resources/mention.md
     - name: Tasks and plans
