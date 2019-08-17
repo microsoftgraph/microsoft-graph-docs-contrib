@@ -8973,6 +8973,8 @@
           href: api/channel-get.md
         - name: List channel messages
           href: api/channel-list-messages.md
+        - name: Get channel message delta
+          href: api/channel-messages-delta.md
         - name: Get channel message
           href: api/channel-get-message.md
         - name: List message replies
