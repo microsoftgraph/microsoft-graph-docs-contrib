@@ -145,7 +145,10 @@ Content-type: application/json
 
 Here is an example which attaches an event with another event as an item attachment.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_event"
+}-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
@@ -179,6 +182,7 @@ Content-length: 600
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_event",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
