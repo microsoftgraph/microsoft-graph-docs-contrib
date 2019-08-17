@@ -3,8 +3,8 @@ title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event,"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "outlook"
+author: "angelgolfer-ms"
 ---
 
 # fileAttachment resource type
