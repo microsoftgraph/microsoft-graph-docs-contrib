@@ -2,7 +2,7 @@
 title: "Channel messages: delta"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. By using delta query, you can get new or updated messages in a channel. To get the replies for a message, call the list message replies or the get message reply API."
 localization_priority: Priority
-author: "anclear"
+author: "clearab"
 ms.prod: "microsoft-teams"
 ---
 
