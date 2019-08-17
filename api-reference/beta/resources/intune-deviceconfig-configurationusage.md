@@ -4,6 +4,7 @@ description: "Possible values of the ConfigurationUsage list."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # configurationUsage enum type
@@ -20,7 +21,6 @@ Possible values of the ConfigurationUsage list.
 |blocked|0|Disallowed.|
 |required|1|Required.|
 |allowed|2|Optional.|
-
 
 
 

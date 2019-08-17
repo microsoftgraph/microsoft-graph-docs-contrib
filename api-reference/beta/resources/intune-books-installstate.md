@@ -4,6 +4,7 @@ description: "Possible values for install state."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # installState enum type
@@ -23,7 +24,6 @@ Possible values for install state.
 |notInstalled|3|Not Installed.|
 |uninstallFailed|4|Uninstall Failed.|
 |unknown|5|Unknown.|
-
 
 
 

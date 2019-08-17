@@ -4,6 +4,7 @@ description: "SideLoadingKey entity is required for Windows 8 and 8.1 devices to
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # sideLoadingKey resource type
@@ -55,7 +56,6 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String"
 }
 ```
-
 
 
 

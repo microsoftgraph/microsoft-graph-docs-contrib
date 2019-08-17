@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # platform enum type
@@ -23,7 +24,6 @@ Not yet documented
 |windows|3|Windows device platform|
 |windowsMobile|4|WindowsMobile device platform|
 |macOS|5|Mac device platform|
-
 
 
 

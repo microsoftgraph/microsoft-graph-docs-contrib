@@ -4,6 +4,7 @@ description: "The organization resource represents an instance of global setting
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # organization resource type
@@ -56,7 +57,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

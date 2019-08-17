@@ -4,6 +4,7 @@ description: "Event representing an enrollment failure."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # enrollmentTroubleshootingEvent resource type
@@ -93,7 +94,6 @@ Here is a JSON representation of the resource.
   "failureReason": "String"
 }
 ```
-
 
 
 

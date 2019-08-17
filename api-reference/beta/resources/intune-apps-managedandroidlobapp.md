@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Managed Android L
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAndroidLobApp resource type
@@ -134,7 +135,6 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
-
 
 
 

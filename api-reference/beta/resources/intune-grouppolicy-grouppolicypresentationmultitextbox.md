@@ -4,6 +4,7 @@ description: "Represents an ADMX multiTextBox element and an ADMX multiText elem
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyPresentationMultiTextBox resource type
@@ -60,7 +61,6 @@ Here is a JSON representation of the resource.
   "maxStrings": 1024
 }
 ```
-
 
 
 

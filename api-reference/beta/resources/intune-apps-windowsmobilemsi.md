@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Windows Mobile MS
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsMobileMSI resource type
@@ -114,7 +115,6 @@ Here is a JSON representation of the resource.
   "useDeviceContext": true
 }
 ```
-
 
 
 

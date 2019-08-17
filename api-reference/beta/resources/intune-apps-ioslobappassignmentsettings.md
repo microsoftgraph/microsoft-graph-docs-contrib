@@ -4,6 +4,7 @@ description: "Contains properties used to assign an iOS LOB mobile app to a grou
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosLobAppAssignmentSettings resource type
@@ -21,6 +22,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappas
 |Property|Type|Description|
 |:---|:---|:---|
 |vpnConfigurationId|String|The VPN Configuration Id to apply for this app.|
+|uninstallOnDeviceRemoval|Boolean|Whether or not to uninstall the app when device is removed from Intune.|
 
 ## Relationships
 None
@@ -35,10 +37,10 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.iosLobAppAssignmentSettings",
-  "vpnConfigurationId": "String"
+  "vpnConfigurationId": "String",
+  "uninstallOnDeviceRemoval": true
 }
 ```
-
 
 
 

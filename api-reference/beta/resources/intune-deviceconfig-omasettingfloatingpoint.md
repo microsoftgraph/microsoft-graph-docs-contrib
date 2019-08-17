@@ -4,6 +4,7 @@ description: "OMA Settings Floating Point definition."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # omaSettingFloatingPoint resource type
@@ -44,7 +45,6 @@ Here is a JSON representation of the resource.
   "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
-
 
 
 

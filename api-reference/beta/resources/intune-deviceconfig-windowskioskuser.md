@@ -4,6 +4,7 @@ description: "The user base class used to identify the account info for the kios
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskUser resource type
@@ -33,7 +34,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsKioskUser"
 }
 ```
-
 
 
 

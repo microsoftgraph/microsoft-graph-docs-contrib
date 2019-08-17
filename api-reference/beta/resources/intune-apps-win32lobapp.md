@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Win32 apps."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # win32LobApp resource type
@@ -125,7 +126,9 @@ Here is a JSON representation of the resource.
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "minimumFreeDiskSpaceInMB": 1024,
   "minimumMemoryInMB": 1024,
@@ -177,7 +180,6 @@ Here is a JSON representation of the resource.
   "setupFilePath": "String"
 }
 ```
-
 
 
 

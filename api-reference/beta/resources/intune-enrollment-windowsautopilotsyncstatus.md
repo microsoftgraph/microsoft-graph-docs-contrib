@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsAutopilotSyncStatus enum type
@@ -21,7 +22,6 @@ Not yet documented
 |inProgress|1|Sync is in progress|
 |completed|2|Sync completed.|
 |failed|3|Sync failed.|
-
 
 
 

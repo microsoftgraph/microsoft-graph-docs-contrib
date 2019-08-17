@@ -4,6 +4,7 @@ description: "Possible values for a weekday"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # dayOfWeek enum type
@@ -24,7 +25,6 @@ Possible values for a weekday
 |thursday|4|Thursday.|
 |friday|5|Friday.|
 |saturday|6|Saturday.|
-
 
 
 

@@ -4,6 +4,7 @@ description: "A class to hold specialty enrollment data used for enrolling via G
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidEnrollmentCompanyCode resource type
@@ -43,7 +44,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

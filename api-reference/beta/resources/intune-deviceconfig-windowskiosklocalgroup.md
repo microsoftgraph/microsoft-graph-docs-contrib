@@ -4,6 +4,7 @@ description: "The class used to identify a local group for the kiosk configurati
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsKioskLocalGroup resource type
@@ -38,7 +39,6 @@ Here is a JSON representation of the resource.
   "groupName": "String"
 }
 ```
-
 
 
 

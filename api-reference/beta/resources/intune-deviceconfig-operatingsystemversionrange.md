@@ -4,6 +4,7 @@ description: "Operating System version range."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # operatingSystemVersionRange resource type
@@ -39,7 +40,6 @@ Here is a JSON representation of the resource.
   "highestVersion": "String"
 }
 ```
-
 
 
 

@@ -4,6 +4,7 @@ description: "Update the properties of a deviceManagementScriptGroupAssignment o
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagementScriptGroupAssignment
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -81,6 +82,8 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
+
+
 
 
 

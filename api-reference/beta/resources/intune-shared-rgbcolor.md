@@ -4,6 +4,7 @@ description: "Color in RGB."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # rgbColor resource type
@@ -39,7 +40,6 @@ Here is a JSON representation of the resource.
   "b": 1024
 }
 ```
-
 
 
 

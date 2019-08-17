@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # importedDeviceIdentityType enum type
@@ -20,7 +21,6 @@ Not yet documented
 |unknown|0|Unknown value of importedDeviceIdentityType.|
 |imei|1|Device Identity is of type imei.|
 |serialNumber|2|Device Identity is of type serial number.|
-
 
 
 

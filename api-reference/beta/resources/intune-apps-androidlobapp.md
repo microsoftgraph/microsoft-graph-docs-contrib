@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for Android Line Of B
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidLobApp resource type
@@ -130,7 +131,6 @@ Here is a JSON representation of the resource.
   "identityVersion": "String"
 }
 ```
-
 
 
 

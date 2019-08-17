@@ -4,6 +4,7 @@ description: "Bandwidth limits in kilobytes per second."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deliveryOptimizationBandwidthAbsolute resource type
@@ -42,7 +43,6 @@ Here is a JSON representation of the resource.
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
-
 
 
 

@@ -4,6 +4,7 @@ description: "You purchase multiple licenses for iOS apps through the Apple Volu
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # vppToken resource type
@@ -92,7 +93,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
 
 
 

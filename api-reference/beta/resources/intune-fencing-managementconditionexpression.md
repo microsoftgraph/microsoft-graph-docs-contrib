@@ -4,6 +4,7 @@ description: "A management condition expression is an expression that produces a
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managementConditionExpression resource type
@@ -33,7 +34,6 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managementConditionExpression"
 }
 ```
-
 
 
 

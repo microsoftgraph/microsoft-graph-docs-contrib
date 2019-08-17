@@ -4,6 +4,7 @@ description: "Defines results for actions on MacOS Vpp Apps, contains inherited 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOsVppAppRevokeLicensesActionResult resource type
@@ -51,7 +52,6 @@ Here is a JSON representation of the resource.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

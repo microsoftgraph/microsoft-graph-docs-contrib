@@ -4,6 +4,7 @@ description: "Contains properties used to assign a device management script to a
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementScriptAssignment resource type
@@ -49,7 +50,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

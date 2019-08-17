@@ -4,6 +4,7 @@ description: "Supported values for the intended purpose of a user PFX certificat
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # userPfxIntendedPurpose enum type
@@ -22,7 +23,6 @@ Supported values for the intended purpose of a user PFX certificate.
 |smimeSigning|2|Not yet documented|
 |vpn|4|Not yet documented|
 |wifi|8|Not yet documented|
-
 
 
 

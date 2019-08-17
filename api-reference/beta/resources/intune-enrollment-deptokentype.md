@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # depTokenType enum type
@@ -20,7 +21,6 @@ Not yet documented
 |none|0|Token Type is None|
 |dep|1|Token Type is Dep.|
 |appleSchoolManager|2|Token Type is Apple School Manager|
-
 
 
 
