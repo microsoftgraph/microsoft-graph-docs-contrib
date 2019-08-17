@@ -58,7 +58,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_channels"
+  "name": "list_channels"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels

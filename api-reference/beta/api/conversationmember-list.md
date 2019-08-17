@@ -58,7 +58,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_conversation_member"
+  "name": "list_conversation_members"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/chats/{id}/members
