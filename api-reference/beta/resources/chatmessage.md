@@ -19,6 +19,7 @@ The message can be a root message or part of a thread that is defined by the **r
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[List Channel messages](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | List of all root messages in a channel.|
+|[Get channel messages delta](../api/channel-messages-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[Get Channel message](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Get a single root message from a channel.|
 |[List replies to a message](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a message in channel.|
 |[Get a reply to a message](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Get a single reply to a message in a channel.|

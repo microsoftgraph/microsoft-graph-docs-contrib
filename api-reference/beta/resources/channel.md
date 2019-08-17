@@ -1,7 +1,7 @@
 ---
 title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team. "
-author: "nkramer"
+author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
@@ -25,7 +25,8 @@ where files are shared, and where tabs are added.
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
-|[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
+|[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel. |
+|[Get channel messages delta](../api/channel-messages-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Send a message to a channel. |
 |[Create chatMessage reply in a channel](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Reply to a message in a channel.|
 |[List tabs](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lists tabs pinned to a channel.|
@@ -34,8 +35,8 @@ where files are shared, and where tabs are added.
 |[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
 |[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 
-
 ## Properties
+
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |description|String|Optional textual description for the channel.|
@@ -45,13 +46,12 @@ where files are shared, and where tabs are added.
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 
-
 ## Relationships
+
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable. Currently this API only supports reading but will eventually support writing messages too.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
-
 
 ## JSON representation
 
@@ -76,7 +76,6 @@ Here is a JSON representation of the resource
   "webUrl": "string"
 }
 ```
-
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
