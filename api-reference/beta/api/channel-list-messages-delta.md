@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [messages](../resources/chatmessage?view=graph-rest-beta) (without the replies) in a [channel](../resources/channel.md?view=graph-rest-beta) of a [team](../resources/team?view=graph-rest-beta). By using delta query, you can get new or updated messages in a channel.
+Retrieve the list of [messages](../resources/chatmessage.md?view=graph-rest-beta) (without the replies) in a [channel](../resources/channel.md?view=graph-rest-beta) of a [team](../resources/team.md?view=graph-rest-beta). By using delta query, you can get new or updated messages in a channel.
 
 Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that calendar view periodically.
 
@@ -23,9 +23,10 @@ A GET request with the delta function returns either:
 
 State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the next round.
 
-See the complete documentation for [delta queries](../../concepts/delta-query-overview.md) for additional information on their use.
+See the complete documentation for [delta queries](../../../concepts/delta-query-overview.md) for additional information on their use.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
 |Permission Type                        |Permissions (from least to most privileged)  |
@@ -67,23 +68,27 @@ The following [OData query parameters](/graph/query-parameters) are supported by
 | Content-Type  | application/json          |
 
 ## Request Body
+
 Do not supply a request body for this method.
 
 ## Response
+
 If successful, this method returns a `200 OK` response code and a collection of [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) objects in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
 ## Example 1: Initial synchronization
+
 The following example shows a series of 3 requests to synchronize the messages in the given channel. There are 5 messages in the channel.
 
-- Step 1: [sample initial request](#initial-request) and [response](#sample-initial-response).
-- Step 2: [sample second request](#second-request) and [response](#sample-second-response)
-- Step 3: [sample third request](#third-request) and [final response](#sample-third-and-final-response).
+- Step 1: [sample initial request](#initial-request) and [response](#initial-request-response).
+- Step 2: [sample second request](#second-request) and [response](#second-request-response)
+- Step 3: [sample third request](#third-request) and [final response](#third-request-response).
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
-See also what you'll do in the [next round](placeholder for link the the section below).
+See also what you'll do in the [next round](#example-2-retreiving-addtional-changes).
 
 ### Initial request
+
 In this example, the channel messages are being synchronized for the first time, so the initial sync request does not include any state token. This round will return all the events in that calendar view.
 
 The request specifies the optional request header, odata.top, returning 2 events at a time.
@@ -97,6 +102,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$top=2
 ```
 
 ### Initial request response
+
 The response includes two messages and a `@odata.nextLink` response header with a `skipToken`. The `nextLink` URL indicates there are more messages in the channel to get.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -165,6 +171,7 @@ Content-type: application/json
 ```
 
 ### Second request
+
 The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify the same top parameters as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes them.
 
 <!-- {
@@ -176,6 +183,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUz
 ```
 
 ### Second request response
+
 The second response returns the next 2 messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages in the channel to get.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -244,6 +252,7 @@ Content-type: application/json
 ```
 
 ### Third request
+
 The third request continues to use the latest `nextLink` returned from the last sync request.
 
 <!-- {
@@ -255,6 +264,7 @@ GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcy
 ```
 
 ### Third request response
+
 The third response returns the only remaining messages in the channel and a `@odata.deltaLink` response header with a `deltaToken` which indicates that all messages in the channel have been read. Save and use the `deltaLink` URL to query for any new messages starting from this point in the next round.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
