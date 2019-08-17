@@ -2,6 +2,7 @@
 title: "Channel messages: delta"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. By using delta query, you can get new or updated messages in a channel. To get the replies for a message, call the list message replies or the get message reply API."
 localization_priority: Priority
+doc_type: apiPageType
 author: "clearab"
 ms.prod: "microsoft-teams"
 ---
@@ -10,11 +11,11 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [messages](../resources/chatmessage.md?view=graph-rest-beta) (without the replies) in a [channel](../resources/channel.md?view=graph-rest-beta) of a [team](../resources/team.md?view=graph-rest-beta). By using delta query, you can get new or updated messages in a channel.
+Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md). By using delta query, you can get new or updated messages in a channel.
 
 Delta query supports both full synchronization that retrieves all the messages in the specified channel, and incremental synchronization that retrieves those messages that have been added or changed in the channel since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that calendar view periodically.
 
-To get the replies for a message, call the [list message replies](channel-get-messagereply.md?view=graph-rest-beta) or the [get message reply API](channel-list-messagereplies.md?view=graph-rest-beta).
+To get the replies for a message, call the [list message replies](channel-get-messagereply.md) or the [get message reply API](channel-list-messagereplies.md).
 
 A GET request with the delta function returns either:
 
