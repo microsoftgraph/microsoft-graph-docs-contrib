@@ -2,7 +2,6 @@
 title: "Get conversationMember"
 description: "Retrieve a member of a chat or channel."
 author: "clearab"
-doc_type: "apiPageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
