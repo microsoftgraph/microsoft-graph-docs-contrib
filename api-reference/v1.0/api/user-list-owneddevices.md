@@ -4,6 +4,7 @@ description: "Get the list of devices that are owned by the user."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List ownedDevices
@@ -53,7 +54,7 @@ GET https://graph.microsoft.com/v1.0/me/ownedDevices
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-owneddevices-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-owneddevices-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Get the properties and relationships of a messageRule object."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Get rule
@@ -57,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZ
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messagerule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-messagerule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

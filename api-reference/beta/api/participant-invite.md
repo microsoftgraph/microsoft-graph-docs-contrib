@@ -4,6 +4,7 @@ description: "Invite participants to the active call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # participant: invite
@@ -83,16 +84,12 @@ Content-Length: 464
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

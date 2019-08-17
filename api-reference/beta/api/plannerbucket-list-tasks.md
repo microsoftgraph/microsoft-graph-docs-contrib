@@ -4,6 +4,7 @@ description: "Retrieve a list of **plannerTask** objects associated to a planner
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List tasks
@@ -23,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/buckets/<id>/tasks
+GET /planner/buckets/{id}/tasks
 ```
 
 ## Request headers
@@ -56,16 +57,12 @@ GET https://graph.microsoft.com/beta/planner/buckets/gcrYAaAkgU2EQUvpkNNXLGQAGTt
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tasks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-tasks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tasks-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

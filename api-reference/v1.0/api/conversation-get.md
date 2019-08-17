@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of conversation object."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Get conversation
@@ -53,7 +54,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

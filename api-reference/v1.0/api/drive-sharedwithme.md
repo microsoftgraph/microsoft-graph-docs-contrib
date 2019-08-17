@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: List Files Shared With Me
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Retrieve a collection of DriveItem resources that have been shared with the owner of the Drive."
+doc_type: apiPageType
 ---
 # List items shared with the signed-in user
 
@@ -36,7 +38,7 @@ GET /me/drive/sharedWithMe
 [!INCLUDE [sample-code](../includes/snippets/csharp/shared-with-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shared-with-me-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Get details about Yammer groups activity by group."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getYammerGroupsActivityDetail
@@ -25,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -78,6 +78,8 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -91,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(perio
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getyammergroupsactivityuserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getyammergroupsactivityuserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

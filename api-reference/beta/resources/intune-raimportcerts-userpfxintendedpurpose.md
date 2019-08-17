@@ -4,6 +4,7 @@ description: "Supported values for the intended purpose of a user PFX certificat
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # userPfxIntendedPurpose enum type
@@ -17,13 +18,11 @@ Supported values for the intended purpose of a user PFX certificate.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|unassigned|0|No roles/usages assigned.|
-|smimeEncryption|1|Valid for S/MIME encryption.|
-|smimeSigning|2|Valid for S/MIME signing.|
-|vpn|4|Valid for use in VPN.|
-|wifi|8|Valid for use in WiFi.|
-
-
+|unassigned|0|Not yet documented|
+|smimeEncryption|1|Not yet documented|
+|smimeSigning|2|Not yet documented|
+|vpn|4|Not yet documented|
+|wifi|8|Not yet documented|
 
 
 

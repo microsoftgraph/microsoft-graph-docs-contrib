@@ -2,6 +2,9 @@
 title: "servicePrincipal: Add owner"
 description: "Use this API to add an owner for the service principal."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # servicePrincipal: Add owner
@@ -56,7 +59,7 @@ Content-length: 30
   }
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-serviceprincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

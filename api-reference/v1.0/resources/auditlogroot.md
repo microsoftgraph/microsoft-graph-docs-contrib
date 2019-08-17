@@ -4,6 +4,7 @@ description: "Contains different types of audit logs. This resources returns a s
 author: "dhanyahk"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
 ---
 
 # auditLogRoot resource type
@@ -61,7 +62,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-auditlogs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-auditlogs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

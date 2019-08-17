@@ -4,7 +4,7 @@ description: "Retrieve a specific commercial subscription that an organization h
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
-doc_type: "apiPageType"
+doc_type: apiPageType
 ---
 
 # Get subscribedSku
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/subscribedSkus/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-subscribedsku-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscribedsku-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

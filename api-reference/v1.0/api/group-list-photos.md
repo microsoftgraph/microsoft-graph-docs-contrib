@@ -4,6 +4,7 @@ description: "Retrieve a list of profilePhoto objects."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List photos
@@ -54,7 +55,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photos-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photos-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

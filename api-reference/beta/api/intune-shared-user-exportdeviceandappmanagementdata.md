@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # exportDeviceAndAppManagementData function
@@ -81,6 +82,9 @@ Content-Length: 143
   }
 }
 ```
+
+
+
 
 
 

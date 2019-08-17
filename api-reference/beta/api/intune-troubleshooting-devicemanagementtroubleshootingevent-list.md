@@ -4,6 +4,7 @@ description: "List properties and relationships of the deviceManagementTroublesh
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List deviceManagementTroubleshootingEvents
@@ -19,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|**TODO: Determine scopes **|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|**TODO: Determine AppOnly scopes **|
 
 ## HTTP Request
 <!-- {
@@ -92,6 +93,7 @@ Content-Length: 1038
   ]
 }
 ```
+
 
 
 

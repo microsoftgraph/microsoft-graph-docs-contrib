@@ -4,6 +4,7 @@ description: "Get all the user's calendars (`/calendars` navigation property), g
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List calendars
@@ -69,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/me/calendars
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-calendars-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Send a message in the draft folder. The draft message can be a new
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # message: send
@@ -64,7 +65,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-send-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-send-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

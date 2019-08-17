@@ -4,6 +4,7 @@ description: "Change writable properties on a messageRule object and save the ch
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Update rule
@@ -75,7 +76,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-messagerule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-messagerule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Get a specific thread that belongs to a group. You can specify bot
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Get conversationThread
@@ -55,7 +56,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationthread-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-conversationthread-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

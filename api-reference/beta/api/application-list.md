@@ -4,6 +4,7 @@ description: "Retrieve the list of applications in this organization."
 author: "davidmu1"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List applications
@@ -57,16 +58,12 @@ GET https://graph.microsoft.com/beta/applications
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-application-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

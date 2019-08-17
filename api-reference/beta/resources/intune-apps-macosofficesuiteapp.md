@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for the MacOS Office 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSOfficeSuiteApp resource type
@@ -95,8 +96,6 @@ Here is a JSON representation of the resource.
   "dependentAppCount": 1024
 }
 ```
-
-
 
 
 

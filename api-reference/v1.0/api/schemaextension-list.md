@@ -3,6 +3,8 @@ title: "List schemaExtensions"
 description: "Get a list of schemaExtension objects created by any apps you own in the current tenant (that can be "
 localization_priority: Normal
 author: "dkershaw10"
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # List schemaExtensions
@@ -56,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/schemaExtensions?$filter=id%20eq%20'graphle
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextensions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schemaextensions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,6 +5,7 @@ title: Get itemAnalytics
 description: Get itemAnalytics about the views that took place under this resource.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get itemAnalytics
 
@@ -68,7 +69,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-analytics-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

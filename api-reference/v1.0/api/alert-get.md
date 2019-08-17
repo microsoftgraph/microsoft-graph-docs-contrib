@@ -4,6 +4,7 @@ description: " Retrieve the properties and relationships of an alert object."
 author: "preetikr"
 localization_priority: Normal
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Get alert
@@ -61,7 +62,7 @@ GET https://graph.microsoft.com/v1.0/security/alerts/{alert_id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-alert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

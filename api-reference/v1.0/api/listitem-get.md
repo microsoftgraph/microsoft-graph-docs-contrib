@@ -5,6 +5,7 @@ title: Get listItem
 description: Returns the metadata for an item in a SharePoint list.
 localization_priority: Priority
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Get listItem
 
@@ -69,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

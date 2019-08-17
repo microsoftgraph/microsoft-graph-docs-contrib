@@ -4,6 +4,7 @@ description: "One of the following permissions is required to call this API. To 
 localization_priority: Normal
 author: "lumine2008"
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # workbookRange: visibleView
@@ -51,7 +52,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/rang
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookrange-visibleview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/workbookrange-visibleview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Retrieve a list of class objects. Note that if the delegated token
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List classes
@@ -55,7 +56,7 @@ GET https://graph.microsoft.com/v1.0/education/me/classes
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

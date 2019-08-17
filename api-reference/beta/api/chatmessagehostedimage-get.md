@@ -4,6 +4,7 @@ description: "Retrieve a hosted image inside a chatMessage."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get chatMessageHostedImage
@@ -67,16 +68,12 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channel-message-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-channel-message-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

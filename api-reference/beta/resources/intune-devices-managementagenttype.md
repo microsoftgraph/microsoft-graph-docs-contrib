@@ -4,6 +4,7 @@ description: "Management agent type."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # managementAgentType enum type
@@ -29,8 +30,6 @@ Management agent type.
 |jamf|32|The device attributes are fetched from Jamf.|
 |googleCloudDevicePolicyController|64|The device is managed by Google's CloudDPC.|
 |microsoft365ManagedMdm|258|This device is managed by Microsoft 365 through Intune.|
-
-
 
 
 

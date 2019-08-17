@@ -4,6 +4,7 @@ description: "Update the properties of **plannerAssignedToTaskBoardTaskFormat** 
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Update plannerAssignedToTaskBoardTaskFormat
@@ -68,7 +69,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-plannerassignedtotaskboardtaskformat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-plannerassignedtotaskboardtaskformat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

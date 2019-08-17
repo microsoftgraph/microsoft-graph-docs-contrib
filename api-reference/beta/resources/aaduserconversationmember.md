@@ -5,6 +5,7 @@ localization_priority: Priority
 author: "clearab"
 doc_type: "resourcePageType"
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # aadUserConversationMember resource type

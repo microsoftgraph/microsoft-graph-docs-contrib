@@ -4,6 +4,7 @@ description: "Use this API to remove an owner from an Office 365 group, a securi
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Remove owner
@@ -51,7 +52,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/owners/{id}/$ref
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-owner-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-owner-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

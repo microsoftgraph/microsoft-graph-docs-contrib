@@ -4,6 +4,7 @@ description: "Add a member to an Office 365 group, a security group, or a mail-e
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Add member
@@ -58,7 +59,7 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 }
 ```
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-member-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

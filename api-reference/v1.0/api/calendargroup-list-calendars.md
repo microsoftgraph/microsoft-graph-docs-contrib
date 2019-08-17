@@ -4,6 +4,7 @@ description: "Retrieve a list of calendars belonging to a calendar group."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List calendars
@@ -76,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendargroup-get-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/calendargroup-get-calendars-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

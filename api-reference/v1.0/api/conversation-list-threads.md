@@ -4,6 +4,7 @@ description: "Get all the threads in a group conversation."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List threads
@@ -55,7 +56,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-threads-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-threads-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

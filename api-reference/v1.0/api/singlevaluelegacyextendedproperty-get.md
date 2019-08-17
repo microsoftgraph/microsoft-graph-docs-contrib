@@ -2,6 +2,9 @@
 title: "Get singleValueLegacyExtendedProperty"
 description: "You can get a single resource instance expanded with a specific extended property, or a collection of resource instances"
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Get singleValueLegacyExtendedProperty
@@ -276,7 +279,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=?$ex
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-singlevaluelegacyextendedproperty-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-singlevaluelegacyextendedproperty-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

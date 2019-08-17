@@ -4,6 +4,7 @@ description: "Get the count of users that are enabled and those that have activa
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOffice365ActivationsUserCounts
@@ -25,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -59,6 +59,8 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -72,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserCounts
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365activationsusercounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365activationsusercounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

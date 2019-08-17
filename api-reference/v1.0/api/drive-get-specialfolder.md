@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: Get Special Folders
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Use the special collection to access a special folder by name."
+doc_type: apiPageType
 ---
 # Get a special folder by name
 
@@ -39,7 +41,7 @@ GET /me/drive/special/{name}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-special-folder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-folder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -111,7 +113,7 @@ GET /me/drive/special/{special-folder-name}/children
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-special-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-special-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "By providing configurations in this profile you can instruct the n
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosEasEmailProfileConfiguration resource type
@@ -148,8 +149,6 @@ Here is a JSON representation of the resource.
   "encryptionCertificateType": "String"
 }
 ```
-
-
 
 
 

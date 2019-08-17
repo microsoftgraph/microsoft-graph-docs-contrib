@@ -5,6 +5,7 @@ author: "clearab"
 doc_type: "resourcePageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: resourcePageType
 ---
 
 # channel resource type

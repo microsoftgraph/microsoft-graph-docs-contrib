@@ -4,6 +4,7 @@ description: "Retrieve a list of **plannertask** objects assigned to a User."
 localization_priority: Priority
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # List tasks
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/me/planner/tasks
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tasks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-tasks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

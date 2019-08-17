@@ -2,6 +2,9 @@
 title: "Get photo"
 description: "Retrieve the properties and relationships of photo object."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Get photo
@@ -53,7 +56,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -100,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photo-value-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photo-value-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

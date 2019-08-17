@@ -4,6 +4,7 @@ description: "Retrieve a list of attachment objects attached to an event."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List attachments
@@ -76,7 +77,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "event_get_attachments"
+  "name": "event_get_attachments_v1"
 }-->
 ```http
 GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
@@ -85,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-get-attachments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-get-attachments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -103,8 +104,9 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
+  "name": "event_get_attachments_v1",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.attachment)",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "isCollection": true
 } -->
 ```http
@@ -118,7 +120,7 @@ Content-length: 215
       "@odata.type": "microsoft.graph.fileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "base64-contentBytes-value",
+      "contentBytes": "contentBytes-value",
       "contentId": "null",
       "lastModifiedDateTime": "datetime-value",
       "id": "id-value",

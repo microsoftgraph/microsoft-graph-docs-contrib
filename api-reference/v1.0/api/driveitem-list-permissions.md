@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: List who has access to a file
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "List the effective sharing permissions of on a DriveItem."
+doc_type: apiPageType
 ---
 # List sharing permissions on a DriveItem
 
@@ -80,7 +82,7 @@ GET /me/drive/items/{item-id}/permissions
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
