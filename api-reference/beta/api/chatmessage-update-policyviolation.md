@@ -15,7 +15,7 @@ Update a chatMessage with a Data Loss Prevention (DLP) policy violation.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/en-us/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,7 +43,7 @@ In the request body, supply the relevant properties that you would like to updat
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| [policyViolation](policyviolation.md) | chatMessagePolicyViolation | Supply the properties for the Data Loss Prevention (DLP) violation.|
+| [policyViolation](../resources/policyviolation.md) | chatMessagePolicyViolation | Supply the properties for the Data Loss Prevention (DLP) violation.|
 
 ## Response
 
