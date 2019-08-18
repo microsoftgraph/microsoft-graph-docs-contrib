@@ -56,7 +56,7 @@ Here is an example of the request.
   "name": "patch_channel"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+PATCH https://graph.microsoft.com/v1/teams/{id}/channels/{id}
 ```
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
