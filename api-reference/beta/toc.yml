@@ -9476,6 +9476,8 @@
           href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
+        - name: Update channel
+          href: api/channel-patch.md
         - name: List channel messages
           href: api/channel-list-messages.md
         - name: Get channel message
