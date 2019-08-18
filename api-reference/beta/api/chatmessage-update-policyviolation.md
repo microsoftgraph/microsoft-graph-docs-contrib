@@ -2,6 +2,7 @@
 title: "Update chatMessage with DLP violations"
 description: "Update a chatMessage with a Data Loss Prevention (DLP) policy violation."
 author: "clearab"
+doc_type: apiPageType
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -20,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Not supported.    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChatMessage.PatchPolicyViolation.All for chat a message.</br>ChannelMessage.UpdatePolicyViolation.All to for a channel message. |
+|Application | ChatMessage.PatchPolicyViolation.All for chat a message.</br>ChannelMessage.UpdatePolicyViolation.All for a channel message. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
