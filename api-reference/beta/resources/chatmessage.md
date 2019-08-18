@@ -22,7 +22,6 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[List replies to a message](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a message in channel.|
 |[Get a reply to a message](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Get a single reply to a message in a channel.|
 |[Update chatMessage with DLP violation](../api/chatmessage-update-policyviolation.md) | none| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
-|[Send a message in a channel](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Create a new top-level message in a channel.|
 |[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Create a new top-level message in a channel.|
 |[Reply to a message in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing message in a channel.|
 |[List messages in a chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | List messages in a 1:1 or group chat. |
@@ -48,9 +47,9 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |body|[itemBody](itembody.md)|Plaintext/HTML representation of the content of the message. Returns plain text by default, application can choose HTML as part of a query param|
 |summary|string|Summary text of the message that could be used for push notifications and summary views or fall back views|
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
-|mentions|[chatMessageMention](chatmention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
+|mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the message. Currently supports user, bot, team, channel|
 |importance| string | The importance of the message: Normal, High|
-|reactions| [chatMessageReaction](chatreaction.md) collection | Reactions for this message (for example, Like)|
+|reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
 |policyViolation|[chatMessagePolicyViolation](chatmessagepolicyviolation.md)|Properties for the Data Loss Prevention (DLP) violation|
 |locale|string|Locale of the message set by the client.|
