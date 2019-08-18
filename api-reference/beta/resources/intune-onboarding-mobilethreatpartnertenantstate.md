@@ -4,6 +4,7 @@ description: "Partner state of this tenant."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mobileThreatPartnerTenantState enum type
@@ -21,8 +22,6 @@ Partner state of this tenant.
 |available|1|Partner is available.|
 |enabled|2|Partner is enabled.|
 |unresponsive|3|Partner is unresponsive.|
-
-
 
 
 

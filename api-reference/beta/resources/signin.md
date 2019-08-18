@@ -1,5 +1,6 @@
 ---
 title: "signIn resource type"
+doc_type: resourcePageType
 description: "Describes the signIn resource of Microsoft Graph API (REST), which helps audit user and application sign-in activity (beta version)."
 author: "davidmu1"
 localization_priority: Normal
@@ -26,7 +27,7 @@ Provides details about user or application sign-in activity in your directory.
 |appDisplayName|String|Refers to the application name displayed in the Azure Portal.|
 |appId|String|Refers to the Unique GUID representing Application Id in the Azure Active Directory.|
 |clientAppUsed|String|Provides the legacy client used for sign-in activty.E.g. includes Browser, Exchange Active Sync,Modern clients, IMAP, MAPI, SMTP, POP.|
-|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
+|appliedConditionalAccessPolicies|[conditionalAccessPolicy](conditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |conditionalAccessStatus|string| Provides the status of the conditional access policy triggered. Possible values are: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
 |originalRequestId|String|The request id of the first request in the authentication sequence.|
 |isInteractive|Boolean|Indicates if a signIn is interactive or not.|
@@ -84,7 +85,7 @@ Here is a JSON representation of the resource.
   "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
   "correlationId": "String",
   "conditionalAccessStatus": "string",
-  "appliedConditionalAccessPolicy": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
+  "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
   "originalRequestId": "String",
   "isInteractive": "String",
   "tokenIssuerName": "String",

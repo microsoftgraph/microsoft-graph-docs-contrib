@@ -4,6 +4,7 @@ description: "By providing configurations in this profile you can instruct the G
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidWorkProfileGmailEasConfiguration resource type
@@ -109,8 +110,6 @@ Here is a JSON representation of the resource.
   "usernameSource": "String"
 }
 ```
-
-
 
 
 

@@ -4,6 +4,7 @@ description: "Retrieves the assigned role definitions and role assignments of th
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # getAssignedRoleIdsForLoggedInUser function
@@ -70,6 +71,9 @@ Content-Length: 263
   }
 }
 ```
+
+
+
 
 
 

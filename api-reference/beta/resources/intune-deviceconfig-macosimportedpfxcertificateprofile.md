@@ -4,6 +4,7 @@ description: "MacOS PFX Import certificate profile"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSImportedPFXCertificateProfile resource type
@@ -109,8 +110,6 @@ Here is a JSON representation of the resource.
   "intendedPurpose": "String"
 }
 ```
-
-
 
 
 

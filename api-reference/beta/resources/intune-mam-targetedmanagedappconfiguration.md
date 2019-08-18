@@ -4,6 +4,7 @@ description: "Configuration used to deliver a set of custom settings as-is to al
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # targetedManagedAppConfiguration resource type
@@ -80,8 +81,6 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
-
-
 
 
 

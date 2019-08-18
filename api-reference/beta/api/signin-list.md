@@ -1,5 +1,6 @@
 ---
 title: "List signIns"
+doc_type: apiPageType
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API (REST), which helps audit directory (tenant) activity (beta version)."
 localization_priority: Normal
 author: "davidmu1"
@@ -94,7 +95,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signins-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-signins-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
