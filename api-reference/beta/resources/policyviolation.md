@@ -1,12 +1,12 @@
 ---
-title: "policyViolation Resource"
+title: "policyViolation resource type"
 description: "Details for PolicyViolation Resource Type"
 author: "clearab"
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
-# policyViolation Resource
+# policyViolation resource type
 
 Details for policyViolation Resource type.
 
