@@ -3,6 +3,8 @@ title: "Create subscription"
 description: "Subscribes a listener application to receive notifications when data on a Microsoft Graph resource changes."
 localization_priority: Normal
 author: "piotrci"
+doc_type: apiPageType
+ms.prod: ""
 ---
 
 # Create subscription
@@ -88,7 +90,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-from-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-subscription-from-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

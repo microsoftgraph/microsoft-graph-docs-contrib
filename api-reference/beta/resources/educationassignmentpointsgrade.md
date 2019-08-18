@@ -4,6 +4,7 @@ description: "When an assignment is set to a points grade type, each submission 
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
+doc_type: resourcePageType
 ---
 
 # educationAssignmentPointsGrade resource type
@@ -33,7 +34,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "points": "Single"
+  "points": "Double"
 }
 
 ```

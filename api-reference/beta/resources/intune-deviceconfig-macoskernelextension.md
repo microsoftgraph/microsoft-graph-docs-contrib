@@ -4,6 +4,7 @@ description: "Represents a specific macOS kernel extension. A macOS kernel exten
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSKernelExtension resource type
@@ -37,8 +38,6 @@ Here is a JSON representation of the resource.
   "bundleId": "String"
 }
 ```
-
-
 
 
 

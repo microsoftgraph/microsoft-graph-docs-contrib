@@ -4,6 +4,7 @@ description: "Data type for a configuration item inside an Android for Work appl
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # androidForWorkAppConfigurationSchemaItemDataType enum type
@@ -25,8 +26,6 @@ Data type for a configuration item inside an Android for Work application's cust
 |bundle|5|Not yet documented|
 |bundleArray|6|Not yet documented|
 |hidden|7|Not yet documented|
-
-
 
 
 

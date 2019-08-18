@@ -4,6 +4,7 @@ description: "A setting instance representing a complex value for an abstract se
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementAbstractComplexSettingInstance resource type
@@ -56,8 +57,6 @@ Here is a JSON representation of the resource.
   "implementationId": "String"
 }
 ```
-
-
 
 
 

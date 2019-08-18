@@ -4,6 +4,7 @@ description: "Contains properties of the minimum operating system required for a
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosMinimumOperatingSystem resource type
@@ -43,8 +44,6 @@ Here is a JSON representation of the resource.
   "v12_0": true
 }
 ```
-
-
 
 
 

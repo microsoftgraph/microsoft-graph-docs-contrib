@@ -4,6 +4,7 @@ description: "Get user's direct reports. Returns the users and contacts for whom
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List directReports
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/beta/me/directReports
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directreports-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directreports-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

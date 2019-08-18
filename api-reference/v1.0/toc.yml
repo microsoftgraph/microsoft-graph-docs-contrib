@@ -178,7 +178,7 @@
         - name: Get delta
           href: api/user-delta.md
       - name: Calendar
-        href: resources/event.md
+        href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
         - name: List events
@@ -245,8 +245,10 @@
       - name: Groups
         href: resources/group.md
         items:
-        - name: List memberOf
+        - name: List member of
           href: api/user-list-memberof.md
+        - name: List transitive member of
+          href: api/user-list-transitivememberof.md
       - name: Mail
         href: resources/message.md
         items:
@@ -353,10 +355,16 @@
           href: api/group-list-grouplifecyclepolicies.md
         - name: List member of
           href: api/group-list-memberof.md
+        - name: List transitive member of
+          href: api/group-list-transitivememberof.md
         - name: List members
           href: api/group-list-members.md
+        - name: List transitive members
+          href: api/group-list-transitivemembers.md
         - name: List owners
           href: api/group-list-owners.md
+        - name: List photos
+          href: api/group-list-photos.md
         - name: Update group
           href: api/group-update.md
         - name: Remove favorite
@@ -390,14 +398,16 @@
             href: api/grouplifecyclepolicy-addgroup.md
           - name: Remove group
             href: api/grouplifecyclepolicy-removegroup.md
+        - name: Validate properties
+          href: api/group-validateproperties.md
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -406,6 +416,10 @@
       - name: Calendar
         href: resources/calendar.md
         items:
+        - name: Get calendar
+          href: api/calendar-get.md
+        - name: Update calendar
+          href: api/calendar-update.md
         - name: List events
           href: api/group-list-events.md
         - name: Create event
@@ -606,11 +620,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -3229,6 +3243,8 @@
           href: api/device-post-registeredusers.md
         - name: List device groups
           href: api/device-list-memberof.md
+        - name: List device transitive groups
+          href: api/device-list-transitivememberof.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -3244,6 +3260,8 @@
           href: api/directoryobject-checkmembergroups.md
         - name: Get objects by IDs
           href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
       - name: Directory role
         href: resources/directoryrole.md
         items:
@@ -3384,11 +3402,11 @@
       - name: Attachment
         href: resources/attachment.md
         items:
-        - name: File attachment resource
+        - name: File attachment type
           href: resources/fileattachment.md
-        - name: Item attachment resource
+        - name: Item attachment type
           href: resources/itemattachment.md
-        - name: Reference attachment resource
+        - name: Reference attachment type
           href: resources/referenceattachment.md
         - name: Get attachment
           href: api/attachment-get.md
@@ -4101,15 +4119,9 @@
           href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
-      - name: Apps
+      - name: App Catalog
         href: resources/teamsapp.md
         items:
-        - name: List apps in team
-          href: api/teamsappinstallation-list.md
-        - name: Add app to team
-          href: api/teamsappinstallation-add.md
-        - name: Remove app from team
-          href: api/teamsappinstallation-delete.md
         - name: Publish apps to catalog
           href: api/teamsapp-publish.md
         - name: List apps in catalog
@@ -4118,6 +4130,21 @@
           href: api/teamsapp-update.md
         - name: Remove app from catalog
           href: api/teamsapp-delete.md
+      - name: App
+        items:
+        - name: Installed app
+          href: resources/teamsappinstallation.md
+        - name: List apps in team
+          href: api/teamsappinstallation-list.md
+        - name: Add app to team
+          href: api/teamsappinstallation-add.md
+        - name: Remove app from team
+          href: api/teamsappinstallation-delete.md
+        - name: Upgrade installed app for team
+          href: api/teamsappinstallation-upgrade.md
+      - name: Tab
+        href: resources/teamstab.md
+        items:
         - name: List tabs
           href: api/teamstab-list.md
         - name: Get tab

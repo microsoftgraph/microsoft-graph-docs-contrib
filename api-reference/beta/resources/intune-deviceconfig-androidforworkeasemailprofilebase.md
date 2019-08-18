@@ -4,6 +4,7 @@ description: "Base for Android For Work EAS Email profiles"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkEasEmailProfileBase resource type
@@ -106,8 +107,6 @@ Here is a JSON representation of the resource.
   "usernameSource": "String"
 }
 ```
-
-
 
 
 

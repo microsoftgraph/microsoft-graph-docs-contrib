@@ -1,9 +1,10 @@
 ---
 title: "mobileAppActionType enum type"
-description: "Defines the Action Types for an Intune Application."
+description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # mobileAppActionType enum type
@@ -12,7 +13,7 @@ ms.prod: "Intune"
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Defines the Action Types for an Intune Application.
+Not yet documented
 
 ## Members
 |Member|Value|Description|
@@ -22,7 +23,6 @@ Defines the Action Types for an Intune Application.
 |installed|3|Application installed.|
 |uninstalled|4|Application uninstalled.|
 |userRequestedInstall|5|User requested installation|
-
 
 
 
