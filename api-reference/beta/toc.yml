@@ -7817,14 +7817,16 @@
         - name: Access review
           href: resources/accessreview.md
           items:
-          - name: Create access review
-            href: api/accessreview-create.md
-          - name: Delete access review
-            href: api/accessreview-delete.md
+          - name: List access reviews
+            href: api/accessreview-list.md
           - name: Get access review
             href: api/accessreview-get.md
+          - name: Create access review
+            href: api/accessreview-create.md
           - name: Update access review
             href: api/accessreview-update.md
+          - name: Delete access review
+            href: api/accessreview-delete.md
           - name: Add reviewer
             href: api/accessreview-addreviewer.md
           - name: List decisions
