@@ -218,9 +218,7 @@
       - name: Authorization
         href: security-authorization.md
       - name: Integrated solutions
-        items:
-        - name: Overview
-          href: security-integration.md
+        href: security-integration.md
       - name: Partner opportunities
         href: security-partner-overview.md
     - name: Sites and lists
