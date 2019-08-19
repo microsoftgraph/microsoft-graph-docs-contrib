@@ -4,6 +4,7 @@ description: "Update the properties of a specific group setting object."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Update a group setting
@@ -123,7 +124,7 @@ Content-length: 173
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

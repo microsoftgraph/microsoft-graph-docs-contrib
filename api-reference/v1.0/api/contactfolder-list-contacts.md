@@ -4,6 +4,7 @@ description: "Get a contact collection from the default Contacts folder of the s
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # List contacts
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/contacts
 [!INCLUDE [sample-code](../includes/snippets/csharp/contactfolder-get-contacts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-get-contacts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

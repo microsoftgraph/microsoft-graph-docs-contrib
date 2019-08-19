@@ -4,6 +4,9 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get permissions
 localization_priority: Normal
+description: "Return the effective sharing permission for a particular permission resource."
+ms.prod: ""
+doc_type: apiPageType
 ---
 # Get sharing permission for a file or folder
 
@@ -63,7 +66,7 @@ GET /me/drive/items/{item-id}/permissions/{perm-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

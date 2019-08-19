@@ -4,6 +4,8 @@ ms.author: dspektor
 title: "Get websocket endpoint"
 localization_priority: Normal
 ms.prod: "sharepoint"
+description: "Allows you to receive near-real-time change notifications for a drive using socket.io."
+doc_type: apiPageType
 ---
 
 # Get websocket endpoint
@@ -50,7 +52,7 @@ GET /me/drive/root/subscriptions/socketIo
 [!INCLUDE [sample-code](../includes/snippets/csharp/drive-root-subscriptions-socketio-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/drive-root-subscriptions-socketio-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

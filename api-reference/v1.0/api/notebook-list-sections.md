@@ -4,6 +4,7 @@ description: "Retrieve a list of onenoteSection objects from the specified noteb
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List sections
@@ -62,7 +63,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sections
 [!INCLUDE [sample-code](../includes/snippets/csharp/notebook-get-sections-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/notebook-get-sections-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Decline invitation to the specified event in a user calendar."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # event: decline
@@ -92,7 +93,7 @@ Content-length: 56
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-decline-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-decline-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

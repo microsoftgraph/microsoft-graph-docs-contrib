@@ -4,6 +4,7 @@ description: "Get the trend in the number of active users. A user is considered 
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSharePointActivityUserCounts
@@ -25,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -70,6 +70,8 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -83,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityUserCounts(per
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getsharepointactivityusercounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getsharepointactivityusercounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

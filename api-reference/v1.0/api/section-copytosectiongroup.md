@@ -4,6 +4,7 @@ description: "Copies a section to a specific section group."
 localization_priority: Normal
 author: "jewan-microsoft"
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # section: copyToSectionGroup
@@ -75,7 +76,7 @@ Content-length: 84
 [!INCLUDE [sample-code](../includes/snippets/csharp/section-copytosectiongroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/section-copytosectiongroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

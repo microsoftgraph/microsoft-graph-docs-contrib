@@ -4,6 +4,7 @@ description: "Read properties and relationships of the deviceAppManagement objec
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Get deviceAppManagement
@@ -80,6 +81,9 @@ Content-Length: 133
   }
 }
 ```
+
+
+
 
 
 

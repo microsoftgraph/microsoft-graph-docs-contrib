@@ -4,6 +4,7 @@ description: "Transfer an active call."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # call: transfer
@@ -85,16 +86,12 @@ Content-Length: 430
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-transfer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-transfer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

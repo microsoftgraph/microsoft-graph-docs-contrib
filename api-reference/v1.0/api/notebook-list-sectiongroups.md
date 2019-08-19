@@ -4,6 +4,7 @@ description: "Retrieve a list of section groups from the specified notebook."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List sectionGroups
@@ -61,7 +62,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
 [!INCLUDE [sample-code](../includes/snippets/csharp/notebook-get-sectiongroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/notebook-get-sectiongroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

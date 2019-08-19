@@ -4,6 +4,7 @@ description: "Retrieve a list of user objects. These user objects will include e
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List users
@@ -52,7 +53,7 @@ GET https://graph.microsoft.com/v1.0/education/users
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationroot-get-users-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/educationroot-get-users-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

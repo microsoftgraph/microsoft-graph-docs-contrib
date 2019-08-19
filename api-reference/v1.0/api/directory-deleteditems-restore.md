@@ -4,6 +4,7 @@ description: "Restores a recently deleted item from deleted items. "
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Restore deleted item
@@ -68,7 +69,7 @@ POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-directoryobject-from-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-directoryobject-from-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

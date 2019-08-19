@@ -4,6 +4,7 @@ description: "Delete a bookingBusiness object."
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "bookings"
+doc_type: apiPageType
 ---
 
 # Delete bookingBusiness
@@ -23,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /bookingBusinesses/<id>
+DELETE /bookingBusinesses/{id}
 
 ```
 ## Request headers
@@ -54,16 +55,12 @@ DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.o
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-bookingbusiness-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-bookingbusiness-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-bookingbusiness-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-bookingbusiness-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

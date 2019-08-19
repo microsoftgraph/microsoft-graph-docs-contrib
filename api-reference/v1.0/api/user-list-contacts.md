@@ -4,6 +4,7 @@ description: "Get a contact collection from the default contacts folder of the s
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # List contacts
@@ -87,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/me/contacts
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-contacts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-contacts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

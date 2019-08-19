@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of **plannertask** objec
 localization_priority: Normal
 author: "TarkanSevilmis"
 ms.prod: "planner"
+doc_type: apiPageType
 ---
 
 # Get plannerTask
@@ -54,7 +55,7 @@ GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannertask-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-plannertask-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Get groups that the group is a direct member of. "
 author: "dkershaw10"
 localization_priority: Priority
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List memberOf
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/memberOf
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-memberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

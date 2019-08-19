@@ -4,6 +4,7 @@ description: "Get the number of unique, licensed users that performed file inter
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getOneDriveActivityFileCounts
@@ -25,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -69,6 +69,8 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -82,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/reports/getOneDriveActivityFileCounts(perio
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getonedriveactivityfilecounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getonedriveactivityfilecounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

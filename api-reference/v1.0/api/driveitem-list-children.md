@@ -5,6 +5,8 @@ ms.date: 09/10/2017
 title: List the contents of a folder
 localization_priority: Priority
 ms.prod: "sharepoint"
+description: "Return a collection of DriveItems in the children relationship of a DriveItem."
+doc_type: apiPageType
 ---
 # List children of a driveItem
 
@@ -62,7 +64,7 @@ GET /me/drive/root/children
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-root-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-children-root-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,7 +95,7 @@ GET /drives/{drive-id}/items/{item-id}/children
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-files-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-children-files-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

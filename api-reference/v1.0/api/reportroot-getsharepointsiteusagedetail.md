@@ -4,6 +4,7 @@ description: "Get details about SharePoint site usage."
 localization_priority: Normal
 ms.prod: "reports"
 author: "pranoychaudhuri"
+doc_type: apiPageType
 ---
 
 # reportRoot: getSharePointSiteUsageDetail
@@ -25,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "samples" } --> 
 
 ```http
@@ -72,6 +72,7 @@ The CSV file has the following headers for columns.
 - Storage Used (Byte)
 - Storage Allocated (Byte)
 - Root Web Template
+- Owner Principal Name
 - Report Period
 
 ## Example
@@ -80,6 +81,8 @@ The CSV file has the following headers for columns.
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -93,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageDetail(period
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getsharepointsiteusageuserdetail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getsharepointsiteusageuserdetail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -132,7 +135,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->

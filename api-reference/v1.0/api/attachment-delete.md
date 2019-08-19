@@ -2,6 +2,9 @@
 title: "Delete attachment"
 description: "Delete an attachment from a calendar event, mail message, or group post."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Delete attachment
@@ -102,7 +105,7 @@ DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

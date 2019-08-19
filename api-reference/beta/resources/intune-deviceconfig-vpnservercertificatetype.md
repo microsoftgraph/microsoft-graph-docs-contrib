@@ -4,6 +4,7 @@ description: "The type of certificate the VPN server will present to the VPN cli
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # vpnServerCertificateType enum type
@@ -21,8 +22,6 @@ The type of certificate the VPN server will present to the VPN client for authen
 |ecdsa256|1|ECDSA256|
 |ecdsa384|2|ECDSA384|
 |ecdsa521|3|ECDSA521|
-
-
 
 
 

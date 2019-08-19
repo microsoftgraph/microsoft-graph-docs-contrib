@@ -4,6 +4,7 @@ description: "Delete a message in the specified user's mailbox, or delete a rela
 localization_priority: Normal
 author: "angelgolfer-ms"
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Delete message
@@ -57,7 +58,7 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-message-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

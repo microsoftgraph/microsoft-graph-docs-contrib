@@ -4,6 +4,7 @@ description: "In the Azure AD access reviews feature, retrieve an accessReview o
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # Get accessReview
@@ -21,16 +22,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     | AccessReview.Read.All  |
+|Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.Membership, AccessReview.ReadWrite.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | AccessReview.Read.All  |
+|Application                            | AccessReview.Read.All, AccessReview.ReadWrite.Membership  |
 
 In order to call this API, the signed in user must also be in a directory role that permits them to read an access review, or the user can be assigned as a reviewer on the access review.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviews-root.md).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /accessReviews('{reviewId}')
+GET /accessReviews/{reviewId}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -59,16 +60,12 @@ GET https://graph.microsoft.com/beta/accessReviews/2b83cc42-09db-46f6-8c6e-16fec
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accessreview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accessreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accessreview-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-accessreview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -118,13 +115,12 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Create accessReview](accessreview-create.md) |	[accessReview](../resources/accessreview.md) |	Create a new accessReview. |
-|[List programControls](programcontrol-list.md) | [programControl](../resources/programcontrol.md) collection | List programControls in a tenant. |
-|[List accessReview reviewers](accessreview-listreviewers.md) |		[userIdentity](../resources/useridentity.md) collection|	Get the reviewers of an accessReview. |
-|[List accessReview decisions](accessreview-listdecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	Get the decisions of an accessReview.|
-|[List my accessReview decisions](accessreview-listmydecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
+- [Create accessReview](accessreview-create.md)
+- [List accessReviews](accessreview-list.md)
+- [List programControls](programcontrol-list.md)
+- [List accessReview reviewers](accessreview-listreviewers.md)
+- [List accessReview decisions](accessreview-listdecisions.md)
+- [List my accessReview decisions](accessreview-listmydecisions.md)
 
 
 <!--

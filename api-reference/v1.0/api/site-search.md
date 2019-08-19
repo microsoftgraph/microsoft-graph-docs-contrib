@@ -6,6 +6,7 @@ title: Search for sites
 description: Search across a SharePoint tenant for sites that match keywords provided.
 localization_priority: Normal
 ms.prod: "sharepoint"
+doc_type: apiPageType
 ---
 # Search for sites
 
@@ -36,7 +37,7 @@ GET /sites?search={query}
 [!INCLUDE [sample-code](../includes/snippets/csharp/search-sites-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/search-sites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

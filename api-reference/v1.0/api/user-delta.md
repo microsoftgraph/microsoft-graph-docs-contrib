@@ -4,6 +4,7 @@ description: "Get newly created, updated, or deleted users without having to per
 localization_priority: Priority
 author: "dkershaw10"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: delta
@@ -114,7 +115,7 @@ GET https://graph.microsoft.com/v1.0/users/delta
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -187,7 +188,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$select=displayName,jobTitle,mo
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -250,7 +251,7 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-delta-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

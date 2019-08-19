@@ -4,6 +4,7 @@ description: "A class containing the properties used for Group Assignment of an 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosLobAppProvisioningConfigurationAssignment resource type
@@ -49,8 +50,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
-
 
 
 

@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a channel."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get channel
@@ -61,7 +62,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

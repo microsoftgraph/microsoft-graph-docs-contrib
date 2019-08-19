@@ -4,6 +4,7 @@ description: "Delete eventMessage."
 author: "angelgolfer-ms"
 localization_priority: Normal
 ms.prod: "outlook"
+doc_type: apiPageType
 ---
 
 # Delete eventMessage
@@ -55,7 +56,7 @@ DELETE https://graph.microsoft.com/v1.0/me/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-eventmessage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

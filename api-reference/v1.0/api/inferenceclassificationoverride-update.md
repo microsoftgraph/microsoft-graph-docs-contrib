@@ -2,6 +2,9 @@
 title: "Update inferenceclassificationoverride"
 description: "Change the **classifyAs** field of an override as specified. "
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Update inferenceclassificationoverride
@@ -69,7 +72,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-inferenceclassificationoverride-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-inferenceclassificationoverride-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Get the posts of the specified thread. You can specify both the pa
 localization_priority: Normal
 author: "dkershaw10"
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List posts
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-posts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-posts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

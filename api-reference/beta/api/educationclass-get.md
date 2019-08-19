@@ -4,6 +4,7 @@ description: "  group admins represent the teachers in the class. If you're usin
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # Get educationClass
@@ -54,16 +55,12 @@ GET https://graph.microsoft.com/beta/education/classes/11023
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationclass-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationclass-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

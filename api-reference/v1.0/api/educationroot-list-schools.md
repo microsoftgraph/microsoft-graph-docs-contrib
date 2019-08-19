@@ -4,6 +4,7 @@ description: "Retrieve a list of all school objects."
 author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
+doc_type: apiPageType
 ---
 
 # List educationSchools
@@ -51,7 +52,7 @@ GET https://graph.microsoft.com/v1.0/education/schools
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

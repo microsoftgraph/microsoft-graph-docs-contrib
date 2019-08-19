@@ -4,6 +4,7 @@ description: "Update the properties of tablerow object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Update tablerow
@@ -63,7 +64,7 @@ Content-length: 45
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tablerow-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-tablerow-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

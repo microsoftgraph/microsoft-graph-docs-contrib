@@ -4,6 +4,7 @@ description: "Returns the used range of the given range object."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # Range: UsedRange
@@ -20,7 +21,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/usedRange
@@ -47,6 +47,8 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 Here is an example of how to call this API.
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -59,7 +61,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-usedrange-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-usedrange-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -77,7 +79,6 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,6 +103,8 @@ Here is an example specifying the optional `valuesOnly` parameter.
 
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -114,7 +117,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-usedrange-valuesonly-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-usedrange-valuesonly-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

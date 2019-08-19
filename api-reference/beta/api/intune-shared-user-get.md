@@ -4,6 +4,7 @@ description: "Read properties and relationships of the user object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Get user
@@ -83,6 +84,9 @@ Content-Length: 118
   }
 }
 ```
+
+
+
 
 
 

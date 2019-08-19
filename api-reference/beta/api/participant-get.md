@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a **participant** obj
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get participant
@@ -59,16 +60,12 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-participant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-participant-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-participant-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

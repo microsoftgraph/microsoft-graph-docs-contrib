@@ -4,6 +4,7 @@ description: "Remove a user or group from the accepted-senders list. "
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # Remove acceptedSender
@@ -54,7 +55,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=htt
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-acceptedsenders-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-acceptedsenders-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

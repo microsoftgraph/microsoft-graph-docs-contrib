@@ -4,6 +4,7 @@ description: "You can use Azure AD access reviews to configure one-time or recur
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
+doc_type: conceptualPageType
 ---
 
 # Azure AD access reviews
@@ -36,6 +37,7 @@ The following table lists the methods that you can use to interact with access r
 |[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
 |[Delete accessReview](../api/accessreview-delete.md) |	None.	| Delete an accessReview. |
 |[Update accessReview](../api/accessreview-update.md) |	[accessReview](accessreview.md)	| Update an accessReview. |
+|[List accessReviews](../api/accessreview-list.md) |	[accessReview](accessreview.md) collection |	List accessReviews for a businessFlowTemplate. |
 |[List accessReview reviewers](../api/accessreview-listreviewers.md) |		[userIdentity](useridentity.md) collection|	Get the reviewers of an accessReview. |
 |[Add accessReview reviewer](../api/accessreview-addreviewer.md) |		None.	|	Add a reviewer to an accessReview. |
 |[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.	|	Remove a reviewer from an accessReview. |
@@ -64,8 +66,8 @@ The following directory roles are required for a calling user to manage access r
 |:----------------|:------------------|:------------|:--------------------------------------------|
 |[accessReview](accessreview.md) of an Azure AD role | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or Privileged Role Administrator |
 |[accessReview](accessreview.md) of an Azure AD role | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or Privileged Role Administrator |
-|[accessReview](accessreview.md) of a group or app | Read | AccessReview.Read.All or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or User Administrator |
-|[accessReview](accessreview.md) of a group or app | Create, Update or Delete | AccessReview.ReadWrite.All | Global Administrator or User Administrator |
+|[accessReview](accessreview.md) of a group or app | Read | AccessReview.Read.All, AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator, Security Administrator, Security Reader or User Administrator |
+|[accessReview](accessreview.md) of a group or app | Create, Update or Delete | AccessReview.ReadWrite.Membership or AccessReview.ReadWrite.All | Global Administrator or User Administrator |
 | [program](program.md) and [programControl](programcontrol.md)| Read | ProgramControl.Read.All or ProgramControl.ReadWrite.All |  Global Administrator, Security Administrator, Security Reader or User Administrator |
 | [program](program.md) and [programControl](programcontrol.md) | Create, Update or Delete | ProgramControl.ReadWrite.All | Global Administrator or User Administrator |
 

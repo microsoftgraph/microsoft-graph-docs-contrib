@@ -4,6 +4,7 @@ description: "intuneBrand contains data which is used in customizing the appeara
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # intuneBrand resource type
@@ -32,6 +33,8 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |showNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Customized image displayed in Company Portal app landing page|
 |customPrivacyMessage|String|Custom privacy message.|
+|isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
+|isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 |showDisplayNameNextToLogo|Boolean|Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.|
 
 ## Relationships
@@ -79,11 +82,11 @@ Here is a JSON representation of the resource.
     "value": "binary"
   },
   "customPrivacyMessage": "String",
+  "isRemoveDeviceDisabled": true,
+  "isFactoryResetDisabled": true,
   "showDisplayNameNextToLogo": true
 }
 ```
-
-
 
 
 
