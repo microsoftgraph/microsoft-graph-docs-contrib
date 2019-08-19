@@ -54,7 +54,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1/teams/{id}/channels/{id}
+DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-channel-csharp-snippets.md)]
