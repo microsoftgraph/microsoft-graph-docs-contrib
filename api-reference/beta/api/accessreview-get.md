@@ -115,14 +115,12 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
-|:---------------|:--------|:----------|
-|[Create accessReview](accessreview-create.md) |	[accessReview](../resources/accessreview.md) |	Create a new accessReview. |
-|[List accessReviews](accessreview-list.md) | [accessReview](../resources/accessreview.md) collection | List accessReviews for a businessFlowTemplate. |
-|[List programControls](programcontrol-list.md) | [programControl](../resources/programcontrol.md) collection | List programControls in a tenant. |
-|[List accessReview reviewers](accessreview-listreviewers.md) |		[userIdentity](../resources/useridentity.md) collection|	Get the reviewers of an accessReview. |
-|[List accessReview decisions](accessreview-listdecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	Get the decisions of an accessReview.|
-|[List my accessReview decisions](accessreview-listmydecisions.md) |		[accessReviewDecision](../resources/accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
+- [Create accessReview](accessreview-create.md)
+- [List accessReviews](accessreview-list.md)
+- [List programControls](programcontrol-list.md)
+- [List accessReview reviewers](accessreview-listreviewers.md)
+- [List accessReview decisions](accessreview-listdecisions.md)
+- [List my accessReview decisions](accessreview-listmydecisions.md)
 
 
 <!--
