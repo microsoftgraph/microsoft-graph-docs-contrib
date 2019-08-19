@@ -40,7 +40,11 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 ## Request body
 
-In the request body, you must supply a JSON representation of [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object.
+The following properties are required to create the  [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object:
+
+| Property     | Type        | Description |
+|:-------------|:------------|:------------|
+|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) collection |Collection of certificate authorities which creates a trusted certificate chain.  Each member of the collection must contain **certificate** and **isRootAuthority** properties. |
 
 ## Response
 
@@ -64,11 +68,7 @@ Content-type: application/json
   "certificateAuthorities": [
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "CRLUrl-value",
-      "deltaCertificateRevocationListUrl": "deltaCRLUrl-value",
-      "certificate": "Binary",
-      "issuer": "issuer-value",
-      "issuerSki": "issuerSki-value"
+      "certificate": "Binary"
     }
   ]
 }
@@ -95,8 +95,6 @@ Content-type: application/json
   "certificateAuthorities": [
     {
       "isRootAuthority": true,
-      "certificateRevocationListUrl": "certificateRevocationListUrl-value",
-      "deltaCertificateRevocationListUrl": "deltaCertificateRevocationListUrl-value",
       "certificate": "Binary",
       "issuer": "issuer-value",
       "issuerSki": "issuerSki-value"

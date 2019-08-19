@@ -43,7 +43,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) collection |Collection of certificate authorities which creates a trusted certificate chain.|
+|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) collection |Collection of certificate authorities which creates a trusted certificate chain.  Each member of the collection must contain **certificate** and **isRootAuthority** properties. Each member may also contain **certificateRevocationListUrl** and **deltaCertificateRevocationListUrl** properties |
 
 >[!NOTE]
 >Updating **certificateAuthorities** will replace the existing collection.
@@ -72,9 +72,7 @@ Content-type: application/json
       "isRootAuthority": true,
       "certificateRevocationListUrl": "CRLUrl-value",
       "deltaCertificateRevocationListUrl": "deltaCRLUrl-value",
-      "certificate": "Binary",
-      "issuer": "issuer-value",
-      "issuerSki": "issuerSki-value"
+      "certificate": "Binary"
     }
   ]
 }

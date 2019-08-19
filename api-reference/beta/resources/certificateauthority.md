@@ -17,12 +17,12 @@ Represents a certificate authority.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|certificate|Binary|The base64 encoded string representing the certificate.|
+|certificate|Binary|Required. The base64 encoded string representing the public certificate.|
 |certificateRevocationListUrl|String|The URL of the certificate revocation list.|
-|deltaCertificateRevocationListUrl|String|The URL of the delta certificate revocation list.|
-|isRootAuthority|Boolean|**true** if the trusted certificate is a root authority, **false** if the trusted certificate is an intermediate authority.|
-|issuer|String|The issuer of the trusted certificate.|
-|issuerSki|String|The subject key identifier of the trusted certificate.|
+|deltaCertificateRevocationListUrl|String|The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was created.|
+|isRootAuthority|Boolean|Required. **true** if the trusted certificate is a root authority, **false** if the trusted certificate is an intermediate authority.|
+|issuer|String|The issuer of the certificate, calculated from the **certificate** value. Read-only. |
+|issuerSki|String|The subject key identifier of the certificate, calculated from the **certificate** value. Read-only.|
 
 ## JSON representation
 
