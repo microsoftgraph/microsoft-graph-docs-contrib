@@ -4,6 +4,7 @@ description: "Entity representing a setting category"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementSettingCategory resource type
@@ -49,8 +50,6 @@ Here is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
-
 
 
 

@@ -78,7 +78,7 @@ Here is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAt9AHjAAA="],
-  "name": "create_file_attachment_from_event"
+  "name": "create_file_attachment_from_event_v1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
@@ -95,7 +95,7 @@ Content-length: 151
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-from-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-from-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -116,6 +116,7 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "create_file_attachment_from_event_v1",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->
@@ -134,7 +135,7 @@ Content-type: application/json
     "isInline":false,
     "contentId":null,
     "contentLocation":null,
-    "contentBytes":"base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+    "contentBytes":"bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 ```
 
@@ -144,7 +145,10 @@ Content-type: application/json
 
 Here is an example which attaches an event with another event as an item attachment.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create_item_attachment_from_event"
+}-->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/events/AAMkAGI1AAAt9AHjAAA=/attachments
@@ -178,6 +182,7 @@ Content-length: 600
 Here is an example of the response.
 <!-- {
   "blockType": "response",
+  "name": "create_item_attachment_from_event",
   "truncated": true,
   "@odata.type": "microsoft.graph.attachment"
 } -->

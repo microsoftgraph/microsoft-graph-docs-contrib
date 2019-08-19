@@ -4,6 +4,7 @@ description: "Definition information for an enum value"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementEnumValue resource type
@@ -37,8 +38,6 @@ Here is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
-
 
 
 

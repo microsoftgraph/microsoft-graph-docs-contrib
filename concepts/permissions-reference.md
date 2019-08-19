@@ -71,6 +71,31 @@ For more information about administrator roles, see [Assigning administrator rol
 
 ---
 
+## Analytics resource permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Analytics.Read_ |   Read all user activities statistics. | Allows the app to read user activities statistics without a signed-in user. | Yes |
+
+#### Application permissions
+
+None.
+
+### Example usage
+
+#### Delegated
+
+* _Analytics.Read_: [List related settings for a user](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings)
+* _Analytics.Read_: [Get activity statistics for a user](/graph/api/activitystatistics-get?view=graph-rest-beta) (`GET /beta/me/analytics/activitystatistics/{id})
+
+#### Application
+
+None.
+
+---
+
 ## Administrative Units permissions
 
 #### Delegated permissions
@@ -1248,8 +1273,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | Read all trustFramework Policies | Allows the app to read all TrustFramework Policies on behalf of the signed-in user. | Yes | No |
-| _Policy.ReadWrite.TrustFramework_ | Read and write all trustFramework policies | Allows the app to read and write TrustFramework Policies on behalf of the signed-in user. | Yes | No |
+| _Policy.Read.All_ | Read your organization's policies | Allows the app to read your organization's policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.TrustFramework_ | Read and write your organization's trust framework policies | Allows the app to read and write your organization's trust framework policies on behalf of the signed-in user. | Yes | No |
 
 ### Remarks
 The work or school account must be a global administrator of the tenant.
@@ -1259,8 +1284,8 @@ The work or school account must be a global administrator of the tenant.
 #### Delegated
 The following usages are valid for both delegated permissions:
 
-* _Policy.Read.All_: Read all trustFramework policies (`GET /beta/trustFramework/policies`)
-* _Policy.ReadWrite.TrustFramework_: Read and write all trustFramework policies (`POST /beta/trustFramework/policies`)
+* _Policy.Read.All_: Read your organization's policies (`GET /beta/trustFramework/policies`)
+* _Policy.ReadWrite.TrustFramework_: Read and write your organization's trust framework policies (`POST /beta/trustFramework/policies`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
@@ -1388,8 +1413,8 @@ The *CreatedByApp* constraint associated with this permission indicates the serv
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Policy.Read.All_ | Read all feature rollout policies | Allows the app to read all feature rollout policies on behalf of the signed-in user. | Yes | No |
-| _Policy.ReadWrite.FeatureRollout_ | Read and write all feature rollout policies | Allows the app to read and write Feature rollout Policies on behalf of the signed-in user. | Yes | No |
+| _Policy.Read.All_ | Read your organization's policies | Allows the app to read your organization's policies on behalf of the signed-in user. | Yes | No |
+| _Policy.ReadWrite.FeatureRollout_ | Read and write your organization's feature rollout policies | Allows the app to read and write your organization's feature rollout policies on behalf of the signed-in user. Includes abilities to assign and remove users and groups to rollout of a specific feature. | Yes | No |
 
 #### Application permissions
 None.
@@ -1402,8 +1427,8 @@ The work or school account must be a global administrator of the tenant.
 #### Delegated
 The following usages are valid for both delegated permissions:
 
-* _Policy.Read.All_: Read all feature rollout policies (`GET /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.FeatureRollout_: Read and write all feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.Read.All_: Read your organization's policies (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.FeatureRollout_: Read and write your organization's feature rollout policies (`POST /beta/directory/featureRolloutPolicies`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 

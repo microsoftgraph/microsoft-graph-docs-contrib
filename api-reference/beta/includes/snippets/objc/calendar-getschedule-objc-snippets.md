@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/calendar/getschedule"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/calendar/getSchedule"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"outlook.timezone=\"Pacific Standard Time\"" forHTTPHeaderField:@"Prefer"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
@@ -29,7 +29,7 @@ MSGraphDateTimeTimeZone *endTime = [[MSGraphDateTimeTimeZone alloc] init];
 [endTime setTimeZone:@"Pacific Standard Time"];
 payloadDictionary[@"endTime"] = endTime;
 
-NSString *availabilityViewInterval = @"60";
+int32_t availabilityViewInterval = 60;
 payloadDictionary[@"availabilityViewInterval"] = availabilityViewInterval;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
