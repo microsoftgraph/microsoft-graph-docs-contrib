@@ -30,17 +30,21 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /teams/{id}/channels/{id}
 ```
+
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+
 ## Example
 
 ### Request
