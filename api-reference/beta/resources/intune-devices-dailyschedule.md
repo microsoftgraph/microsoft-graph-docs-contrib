@@ -4,6 +4,7 @@ description: "Daily run schedule of a recurring device management script."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # dailySchedule resource type
@@ -38,8 +39,6 @@ Here is a JSON representation of the resource.
   "interval": 1024
 }
 ```
-
-
 
 
 

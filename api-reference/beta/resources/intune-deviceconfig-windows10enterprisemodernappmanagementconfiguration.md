@@ -4,6 +4,7 @@ description: "Windows10 Enterprise Modern App Management Configuration."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windows10EnterpriseModernAppManagementConfiguration resource type
@@ -98,8 +99,6 @@ Here is a JSON representation of the resource.
   "uninstallBuiltInApps": true
 }
 ```
-
-
 
 
 

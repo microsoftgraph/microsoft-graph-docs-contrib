@@ -4,6 +4,7 @@ description: "A message in a mailbox folder."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
+doc_type: resourcePageType
 ---
 
 # message resource type
@@ -11,6 +12,8 @@ ms.prod: "outlook"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A message in a mailbox folder.
+
+The maximum total number of recipients included in the **toRecipients**, **ccRecipients**, and **bccRecipients** properties for a single email message sent from an Exchange Online mailbox is 500. For more information, see [sending limits](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 This resource supports:
 

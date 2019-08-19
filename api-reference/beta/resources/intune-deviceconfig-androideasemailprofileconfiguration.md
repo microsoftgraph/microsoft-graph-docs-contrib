@@ -4,6 +4,7 @@ description: "By providing configurations in this profile you can instruct the n
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidEasEmailProfileConfiguration resource type
@@ -128,8 +129,6 @@ Here is a JSON representation of the resource.
   "customDomainName": "String"
 }
 ```
-
-
 
 
 

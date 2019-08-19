@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of securityAction object
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # Get securityAction
@@ -67,7 +68,7 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securityaction-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-securityaction-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Setting comparison result type"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementComparisonResult enum type
@@ -22,8 +23,6 @@ Setting comparison result type
 |notEqual|2|The setting values are not equal|
 |added|3|The setting is added|
 |removed|4|The setting is removed|
-
-
 
 
 

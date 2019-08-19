@@ -1,7 +1,21 @@
 ---
 title: "Enum values"
 description: "Microsoft Graph enumeration values"
+doc_type: enumPageType
+localization_priority: Normal
+ms.prod: ""
+author: ""
 ---
+
+### analyticsActivityType values
+
+| Value
+|:--------------
+| call
+| chat
+| email
+| focus
+| meeting
 
 ### registrationAuthMethod values
 
@@ -27,7 +41,6 @@ description: "Microsoft Graph enumeration values"
 |child|5| The user's child.|
 |other|6| An unspecified relationship to the user.|
 |unknownFutureValue|7| Marker value for future compatibility.|
-
 
 ### scheduleEntityTheme values
 
@@ -830,6 +843,14 @@ Possible values for user account types (group membership), per Windows definitio
 |high|
 |urgent|
 
+### stagedFeatureName values
+
+|Member|Description|
+|:---|:---|
+|passthroughAuthentication|Passthrough Authentication|
+|seamlessSso|Seamless Single Sign-on|
+|passwordHashSync|Password Hash Synchronization|
+
 ### tokenIssuerType values
 
 |Member|
@@ -856,3 +877,4 @@ Possible values for user account types (group membership), per Windows definitio
 |signin|
 |user|
 |unknownFutureValue|
+

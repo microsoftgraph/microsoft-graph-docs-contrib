@@ -4,6 +4,7 @@ description: "Windows device health monitoring configuration"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsHealthMonitoringConfiguration resource type
@@ -102,8 +103,6 @@ Here is a JSON representation of the resource.
   "configDeviceHealthMonitoringCustomScope": "String"
 }
 ```
-
-
 
 
 

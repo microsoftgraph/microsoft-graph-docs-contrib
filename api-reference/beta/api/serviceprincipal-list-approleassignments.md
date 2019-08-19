@@ -2,6 +2,9 @@
 title: "servicePrincipal: List appRoleAssignments"
 description: "Retrieve a list of approleassignment objects."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # servicePrincipal: List appRoleAssignments
@@ -54,7 +57,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approleassignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-approleassignments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

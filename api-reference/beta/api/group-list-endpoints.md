@@ -4,6 +4,7 @@ description: "Retrieve a list of endpoint objects."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
+doc_type: apiPageType
 ---
 
 # List endpoints
@@ -57,7 +58,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

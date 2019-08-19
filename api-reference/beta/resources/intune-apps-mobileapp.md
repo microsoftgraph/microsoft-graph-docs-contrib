@@ -4,6 +4,7 @@ description: "An abstract class containing the base properties for Intune mobile
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileApp resource type
@@ -94,8 +95,6 @@ Here is a JSON representation of the resource.
   "dependentAppCount": 1024
 }
 ```
-
-
 
 
 
