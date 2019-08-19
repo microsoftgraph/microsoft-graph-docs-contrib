@@ -91,9 +91,7 @@ Content-type: application/json
 
 ## See also
 
-| Method   | Return Type |Description|
-|:---------------|:--------|:----------|
-|[Get accessReview](accessreview-get.md) | [accessReview](../resources/accessreview.md) | Retrieve an access review. |
+- [Get accessReview](accessreview-get.md)
 
 
 <!--
