@@ -26743,7 +26743,7 @@
         {
             "source_path": "concepts/security-splunk-siemintegration.md",
             "redirect_url": "/graph/security-integration",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "concepts\\query_parameters.md",
