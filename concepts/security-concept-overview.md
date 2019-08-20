@@ -28,7 +28,7 @@ The [Microsoft Graph Security API](/graph/api/resources/security-api-overview?vi
 
 ### Unify and standardize alert tracking
 
-Connect once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk and using Microsoft Graph Security API connectors. For more info about solution integrations with the security API entities, see [Security solution integrations using the Microsoft Graph Security API](security-integration.md).
+Connect once to integrate alerts from any Microsoft Graph-integrated security solution and keep alert status and assignments in sync across all solutions. You can also stream alerts to security information and event management (SIEM) solutions, such as Splunk using Microsoft Graph Security API connectors. For more info about solution integrations with the security API entities, see [Security solution integrations using the Microsoft Graph Security API](security-integration.md).
 
 ### Correlate security alerts to improve threat protection and response
 
