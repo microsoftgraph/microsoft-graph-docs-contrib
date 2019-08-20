@@ -45,6 +45,7 @@ Here is a JSON representation of the resource
     "item"
   ],
   "baseType": "microsoft.graph.attachment",
+  "keyProperty":"id",
   "@odata.type": "microsoft.graph.itemAttachment",
   "@odata.annotations": [
     {
