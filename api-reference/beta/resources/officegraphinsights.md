@@ -25,10 +25,9 @@ Each insight is returned with a `resourceVisualization` and `resourceReference` 
 
 | Relationship      | Type          | Description  |
 | ------------- |---------------| -------------|
-| trending    	| [trending](insights-trending.md) collection		| Calculated relationship identifying trending documents. Trending documents can be stored in OneDrive or in SharePoint sites.	 |
-| used    	| [usedInsight](insights-used.md) collection		| Calculated relationship identifying documents viewed and modified by a user. Includes documents the user used in OneDrive for Business, SharePoint, opened as email attachments, and as link attachments from sources like Box, DropBox and Google Drive.	 |
-| shared    	| [sharedInsight](insights-shared.md) collection		| Calculated relationship identifying documents shared with a user. Documents can be shared as email attachments or as OneDrive for Business links sent in emails.	 |
-
+| trending    	| [trending](insights-trending.md) collection		| Calculated relationship identifying trending documents. Trending documents are relevant documents from the closest network of a user, which help users discover potentially useful content, even if users have never viewed the content or it has never been sent to them before.|
+| used    	| [usedInsight](insights-used.md) collection		| Calculated relationship identifying the latest documents viewed and modified by a user, including email and link attachments, SharePoint and OneDrive documents,  ranked by relevancy to the user.|
+| shared    	| [sharedInsight](insights-shared.md) collection		| Calculated relationship identifying the most relevant documents shared with or shared by a user across multiple sharing gestures and across workloads.|
 ## JSON representation
 
 Here is a JSON representation of the resource
