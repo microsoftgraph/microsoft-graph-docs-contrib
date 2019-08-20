@@ -29,8 +29,10 @@ Learn more about [certificate-based authentication in Azure Active Directory](ht
 | [Create certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Create a new certificateBasedAuthConfiguration object. |
 | [Get certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-get.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | Read the properties of a certificateBasedAuthConfiguration object. |
 | [List certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-list.md) | [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) | List the properties of the certificateBasedAuthConfiguration collection. |
-| [Update certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-update.md) | None | Update a certificateBasedAuthConfiguration object. |
 | [Delete certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | None | Delete a certificateBasedAuthConfiguration object. |
+
+>[!NOTE]
+>Updating cerficateBasedAuthConfiguration is not supported. To change a cerficateBasedAuthConfiguration, first delete and then create a new cerficateBasedAuthConfiguration.
 
 ## Properties
 
