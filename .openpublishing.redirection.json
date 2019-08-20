@@ -26736,12 +26736,12 @@
             "redirect_document_id": true
         },
         {
-            "source_path": "concepts\\security-qradar-siemintegration.md",
+            "source_path": "concepts/security-qradar-siemintegration.md",
             "redirect_url": "/graph/security-integration",
             "redirect_document_id": true
         },
         {
-            "source_path": "concepts\\security-splunk-siemintegration.md",
+            "source_path": "concepts/security-splunk-siemintegration.md",
             "redirect_url": "/graph/security-integration",
             "redirect_document_id": true
         },
