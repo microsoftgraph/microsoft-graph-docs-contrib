@@ -1,6 +1,6 @@
 ---
 title: "Security solution integrations using the Microsoft Graph Security API"
-description: "You can connect with the Microsoft Graph Security API using any of the options described, which enables you to work with data in a unified format across supported Microsoft and partner security providers through a single integration."
+description: "You can connect with the Microsoft Graph Security API using any of the options described in this article. These options enable you to work with data in a unified format across supported Microsoft and partner security providers through a single integration."
 author: "preetikr"
 localization_priority: Priority
 ms.prod: "security"
@@ -8,7 +8,7 @@ ms.prod: "security"
 
 # Security solution integrations using the Microsoft Graph Security API
 
-You can connect with the Microsoft Graph Security API using any of the following options, which enables you to work with data in a unified format across [supported Microsoft and partner security providers](https://aka.ms/graphsecurityalerts) through a single integration.
+You can connect with the Microsoft Graph Security API using any of the following options. These options enable you to work with data in a unified format across [supported Microsoft and partner security providers](https://aka.ms/graphsecurityalerts) through a single integration.
 
 - **Directly using the supported integration options** – Refer to the [list of supported integration options](https://docs.microsoft.com/graph/security-concept-overview#why-use-the-microsoft-graph-security-api) like writing code to directly connect your application to derive rich insights. Leverage [samples](https://aka.ms/graphsecurityapicode) to get started.
 - **Use native integrations and connectors built by Microsoft partners** – Refer to the [Microsoft Graph Security API partner solutions](https://aka.ms/graphsecuritypartnerships) to use these integrations.  
