@@ -45,6 +45,7 @@ This resource supports:
 |[List memberOf](../api/group-list-memberof.md) |[directoryObject](directoryobject.md) collection| Get the groups and administrative units that this group is a direct member of from the memberOf navigation property.|
 |[List transitive memberOf](../api/group-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups and administrative units that this user is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|String collection|Check for membership in a list of groups. The function is transitive.|
+|[checkMemberObjects](../api/group-checkmemberobjects.md)|String collection|Check for membership in a list of group, directory role, or administrative unit objects. The function is transitive.|
 |[getMemberGroups](../api/group-getmembergroups.md)|String collection|Return all the groups that the group is a member of. The function is transitive.|
 |[getMemberObjects](../api/group-getmemberobjects.md)|String collection|Return all of the groups and administrative units that the group is a member of. The function is transitive. |
 |[Create setting](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Create a setting object based on a directorySettingTemplate. The POST request must provide settingValues for all the settings defined in the template. Only groups specific templates may be used for this operation.|
