@@ -36,6 +36,7 @@ POST /administrativeUnits/{id}/checkMemberObjects
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| Content-Type  | application/json |
 
 ## Request body
 
