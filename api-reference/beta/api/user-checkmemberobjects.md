@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check for membership in a list of group, directory role, or administrative unit objects for the specified user object. The check is transitive.
+Check for membership in a list of group, directory role, or administrative unit objects for the specified user object. This function is transitive.
 
 ## Permissions
 
@@ -45,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|ids|String collection|A collection that contains the object IDs of the groups, directory roles, or administrative units, in which to check membership. Up to 20 groups may be specified.|
+|ids|String collection|A collection that contains the object IDs of the groups, directory roles, or administrative units, in which to check membership. Up to 20 objects may be specified.|
 
 ## Response
 
@@ -91,6 +91,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     "String-value"
