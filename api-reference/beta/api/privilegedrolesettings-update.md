@@ -3,8 +3,8 @@ title: "Update privilegedRoleSettings"
 description: "Update the role settings for the given role setting. A privilegedRoleSettings object will be returned."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: ""
+ms.prod: "microsoft-identity-platform"
+author: "davidmu1"
 ---
 
 # Update privilegedRoleSettings
