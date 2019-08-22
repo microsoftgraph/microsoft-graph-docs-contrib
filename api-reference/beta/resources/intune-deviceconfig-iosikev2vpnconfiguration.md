@@ -4,6 +4,7 @@ description: "By providing the configurations in this profile you can instruct t
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # iosikEv2VpnConfiguration resource type
@@ -235,8 +236,6 @@ Here is a JSON representation of the resource.
   "allowDefaultChildSecurityAssociationParameters": true
 }
 ```
-
-
 
 
 

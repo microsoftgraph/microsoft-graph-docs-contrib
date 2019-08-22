@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "maxPoints": "Single"
+  "maxPoints": "Double"
 }
 
 ```

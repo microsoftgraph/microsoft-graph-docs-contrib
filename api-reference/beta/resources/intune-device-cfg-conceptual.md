@@ -4,7 +4,6 @@ description: "Lists Microsoft Graph API for Intune endpoints (REST) that define 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
-doc_type: conceptualPageType
 ---
 
 # Device configuration in Microsoft Intune
@@ -27,12 +26,17 @@ The following Graph resources are available to manage settings and features on d
 - [Android custom configuration](intune-deviceconfig-androidcustomconfiguration.md)
 - [Android device owner app auto update policy type](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Android device owner battery plugged mode](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [Android device owner certificate profile base](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Android device owner compliance policy](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Android device owner default app permission policy type](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
+- [Android device owner enterprise Wi-Fi configuration](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Android device owner general device configuration](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Android device owner play store mode](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Android device owner required password type](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Android device owner system update install type](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
+- [Android device owner trusted root certificate](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
+- [Android device owner virtual home button type](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)
+- [Android device owner VPN configuration](intune-deviceconfig-androiddeviceownervpnconfiguration.md)
 - [Android device owner Wi-Fi configuration](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
 - [Android device owner Wi-Fi security type](intune-deviceconfig-androiddeviceownerwifisecuritytype.md)
 - [Android EAP type](intune-deviceconfig-androideaptype.md)
@@ -342,11 +346,9 @@ The following Graph resources are available to manage settings and features on d
 - [OMA setting integer](intune-deviceconfig-omasettinginteger.md)
 - [OMA setting string](intune-deviceconfig-omasettingstring.md)
 - [OMA setting string xml](intune-deviceconfig-omasettingstringxml.md)
-- [On prem encrypted payload](intune-raimportcerts-onpremencryptedpayload.md)
 - [Operating system version range](intune-deviceconfig-operatingsystemversionrange.md)
-- [Pfx recryption request](intune-raimportcerts-pfxrecryptionrequest.md)
-- [Pfx user certificate](intune-raimportcerts-pfxusercertificate.md)
 - [Policy platform type](intune-deviceconfig-policyplatformtype.md)
+- [Power action type](intune-deviceconfig-poweractiontype.md)
 - [Prerelease features](intune-deviceconfig-prereleasefeatures.md)
 - [Rating apps type](intune-deviceconfig-ratingappstype.md)
 - [Rating Australia movies type](intune-deviceconfig-ratingaustraliamoviestype.md)
@@ -397,6 +399,7 @@ The following Graph resources are available to manage settings and features on d
 - [Visibility setting](intune-deviceconfig-visibilitysetting.md)
 - [VPN authentication method](intune-deviceconfig-vpnauthenticationmethod.md)
 - [VPN client authentication type](intune-deviceconfig-vpnclientauthenticationtype.md)
+- [VPN configuration](intune-deviceconfig-vpnconfiguration.md)
 - [VPN dead peer detection rate](intune-deviceconfig-vpndeadpeerdetectionrate.md)
 - [VPN DNS rule](intune-deviceconfig-vpndnsrule.md)
 - [VPN encryption algorithm type](intune-deviceconfig-vpnencryptionalgorithmtype.md)
@@ -517,3 +520,4 @@ The following Graph resources are available to manage settings and features on d
 - [Windows VPN connection type](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Windows Wi-Fi configuration](intune-deviceconfig-windowswificonfiguration.md)
 - [Windows Wi-Fi enterprise e a p configuration](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+

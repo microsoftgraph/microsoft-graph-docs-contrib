@@ -39,8 +39,7 @@ Remote actions Intune supports.
 |shutDown|18|User initiates an action to shut down the device.|
 |rotateFileVaultKey|20|User initiates an action to Rotate FileVaultKey on mac.|
 |getFileVaultKey|21|User initiates an action to Get FileVaultKey on mac.|
-
-
+|setDeviceName|22|User initiates an action to Set Device Name on the device.|
 
 
 
