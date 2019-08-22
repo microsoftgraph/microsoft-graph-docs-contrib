@@ -7,12 +7,35 @@ ms.prod: "microsoft-teams"
 ---
 # policytip Resource
 
-Details for the policytip Resource type.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the properties of a policy tip on a **policyViolation** object. Policy tips provide the sender with information about the policy violation.
 
 ## Properties
-
-| Property   | Type |Description|
+| Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| generalText | string | The explanatory text shown to the sender of the message that was flagged. |
-| complianceUrl | string | The URL that represents the DLP policies of the organization or a page the admin chooses to configure to provide more information about DLP policies in the organization. |
-| matchedConditionDescriptions | IEnumerable\<string\> | The set of sensitive types that were a match during classification of the given message. The values are defined by the DLP app. Example: Credit Card Information, Social Security Number.|
+|complianceUrl|string|General policy tip text for the end user. This needs to be localized to the sender's language.|
+|generalText|string|Optional URL that provides additionalhelp on the policy tip.|
+|matchedConditionDescriptions|string collection|An array that contains a description of each sensitive data condition that has been matached in the given message.|
+
+## JSON representation
+
+The following is a JSON representation of the resource.
+
+```json
+{
+  "complianceUrl": "string",
+  "generalText": "string",
+  "matchedConditionDescriptions": ["string 1", "string 2"]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "policy violation policy tip resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

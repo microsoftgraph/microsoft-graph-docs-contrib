@@ -598,15 +598,6 @@ Possible values for user account types (group membership), per Windows definitio
 |power|1| Member of Power Users group.|
 |administrator|2| Member of Administrators group.|
 
-### dlpAction values
-
-| Value
-|:-----------------
-| none
-| NotifySender
-| BlockAccess
-| BlockAccessExternal
-
 ### riskDetail values
 
 | Value

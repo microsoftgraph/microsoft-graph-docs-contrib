@@ -1,5 +1,5 @@
 ---
-title: "Update chatMessage with DLP violations"
+title: "Update chatMessage with DLP policy violation"
 description: "Update a chatMessage with a Data Loss Prevention (DLP) policy violation."
 author: "clearab"
 doc_type: apiPageType
@@ -79,9 +79,11 @@ Content-length: 248
 ### Response
 
 Here is an example of the response.
+
 <!-- {
   "blockType": "response",
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -89,8 +91,9 @@ Content-length: 0
 {
 }
 ```
-<!-- uuid: ??????????????
-2018-04-20 14:57:30 UTC -->
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "chatMessage.PatchPolicyViolation.All",
