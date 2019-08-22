@@ -44,7 +44,7 @@ Up till this point, you have been able to [follow](/graph/api/driveitem-follow?v
 
 ### Identity and access
 - Providers of role-based access control (RBAC) can [manage roles](/graph/api/resources/rolemanagement?view=graph-rest-beta) in Azure Active Directory, by [defining role actions](/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) that can be performed on specific resources, and [assigning roles](/graph/api/resources/unifiedroleassignment?view=graph-rest-beta) to users based on such role definitions, giving them the corresponding access to those resources.
-- [List access reviews](/graph/api/accessreview-list?view=graph-rest-beta) to efficiently facilitate reviewing group memberships, access to enterprise applications, and role assignments. Regular access reviews make sure only the appropriate people have continued access to resources in specific ways.
+- Administrators can [list access reviews](/graph/api/accessreview-list?view=graph-rest-beta) to efficiently facilitate reviewing group memberships, access to enterprise applications, and role assignments. Regular access reviews make sure only the appropriate people have continued access to resources in specific ways.
 
 ### Social and workplace intelligence
 Debut of the [analytics API](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) which lets you integrate data of how time is spent on work activities such as calls, chats, and email, to help improve user productivity and collaboration.
