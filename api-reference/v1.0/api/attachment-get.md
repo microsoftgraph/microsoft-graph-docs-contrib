@@ -44,7 +44,7 @@ Attachments for an [event](../resources/event.md) in the user's or group's defau
 GET /me/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}
 
-GET /me/calendar/{id}/events/{id}/attachments/{id}
+GET /me/calendars/{id}/events/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
