@@ -51,7 +51,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |importance| string | The importance of the message: Normal, High|
 |reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this message (for example, Like)|
 |locale|string|Locale of the message set by the client|
-|policyViolation|[policyViolation](policyviolation.md)|Properties for the Data Loss Prevention (DLP) violation|
+|policyViolation|[chatMessagePolicyViolation](chatmessagepolicyviolation.md)|Properties for the Data Loss Prevention (DLP) violation|
 |locale|string|Locale of the message set by the client.|
 
 ## JSON representation
@@ -92,7 +92,7 @@ The following is a JSON representation of the resource.
   "importance": "string",
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string",
-  "policyViolation": {"@odata.type": "microsoft.graph.policyViolation"}
+  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"}
   "deleted": true
 }
 
