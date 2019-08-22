@@ -1,6 +1,6 @@
 ---
-title: "policytip Resource"
-description: "Details for policytip Resource Type"
+title: "policyTip resource type"
+description: "Represents the properties of a policy tip on a policyViolation object. Policy tips provide the sender with information about the policy violation."
 author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -9,14 +9,15 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the properties of a policy tip on a **policyViolation** object. Policy tips provide the sender with information about the policy violation.
+Represents the properties of a policy tip on a [policyViolation](policyviolation.md) object. Policy tips provide the sender with information about the policy violation.
 
 ## Properties
-| Property	   | Type	|Description|
+
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |complianceUrl|string|General policy tip text for the end user. This needs to be localized to the sender's language.|
-|generalText|string|Optional URL that provides additionalhelp on the policy tip.|
-|matchedConditionDescriptions|string collection|An array that contains a description of each sensitive data condition that has been matached in the given message.|
+|generalText|string|Optional URL that provides additional help on the policy tip.|
+|matchedConditionDescriptions|string collection|An array that contains a description of each sensitive data condition that has been matched in the given message.|
 
 ## JSON representation
 
