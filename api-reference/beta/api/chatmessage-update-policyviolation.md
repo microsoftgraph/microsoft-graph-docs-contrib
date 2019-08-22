@@ -43,7 +43,7 @@ In the request body, supply the relevant properties that you would like to updat
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| policyViolation | [policyViolation](../resources/policyviolation.md) | Supply the properties for the Data Loss Prevention (DLP) violation.|
+| policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) | Supply the properties for the Data Loss Prevention (DLP) violation.|
 
 ## Response
 
