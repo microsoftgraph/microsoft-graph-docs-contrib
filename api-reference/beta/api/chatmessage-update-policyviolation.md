@@ -60,7 +60,7 @@ The following is an example of the request for updating DLP properties on a Micr
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{group-id}/channels/{channel-id}/messages/{message-id}
+PATCH https://graph.microsoft.com/beta/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19:a21b0b0c05194ebc9e30000000000f61@thread.skype
 Content-type: application/json
 Content-length: 248
 {
