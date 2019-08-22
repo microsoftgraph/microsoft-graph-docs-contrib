@@ -43,7 +43,7 @@ In the request body, supply the relevant properties that you would like to updat
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| [policyViolation](../resources/policyviolation.md) | chatMessagePolicyViolation | Supply the properties for the Data Loss Prevention (DLP) violation.|
+| policyViolation | [policyViolation](../resources/policyviolation.md) | Supply the properties for the Data Loss Prevention (DLP) violation.|
 
 ## Response
 
@@ -67,7 +67,7 @@ Content-length: 248
   "policyViolation": {
     "policyTip": {
       "generalText" : “This item has been blocked by administrator.”,
-      "complianceUrl" : " https: //contoso.com",
+      "complianceUrl" : "https://contoso.com/dlp-policy-page",
       "matchedConditionDescriptions" : ["Credit Card Number"]
     },
     "verdictDetails" : AllowOverrideWithoutJustification,AllowFalsePositiveOverride,
@@ -96,7 +96,7 @@ Content-length: 0
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "chatMessage.PatchPolicyViolation.All",
+  "description": "chatMessage.UpdatePolicyViolation.All",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

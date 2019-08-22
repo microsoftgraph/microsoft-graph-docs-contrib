@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
     "userAction",
     "justificationText"
   ],
-  "@odata.type": "microsoft.graph.chatMessagePolicyViolation"
+  "@odata.type": "microsoft.graph.policyViolation"
 }-->
 
 ```json
