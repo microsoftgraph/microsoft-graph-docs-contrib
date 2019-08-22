@@ -88,7 +88,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | v1.0  | Added the **ownerPrincipalName** property to the [sharePointSiteUsageDetail](/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) entity.|
 | Addition        | v1.0  | Added the **office365Active** and **office365Inactive** properties to the [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta) entity.|
 
-### Social and workplace intelligence (Analytics)
+### Social and workplace intelligence
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1601,7 +1601,7 @@ Debut of the places API which provides rich details for locations in apps.
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta       | Added the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:<br/>[alert](/graph/api/resources/alert?view=graph-rest-beta) (and related entities)<br/>[Get alert](/graph/api/alert-get?view=graph-rest-beta)<br/>[List alerts](/graph/api/alert-list?view=graph-rest-beta)<br/>[Update alert](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>Added the following supporting documentation:<br/>[Errors](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Integrate with a SIEM](security-siemintegration.md)
+| Addition        | Beta       | Added the [security API](/graph/api/resources/security-api-overview?view=graph-rest-beta), including the following resources and operations:<br/>[alert](/graph/api/resources/alert?view=graph-rest-beta) (and related entities)<br/>[Get alert](/graph/api/alert-get?view=graph-rest-beta)<br/>[List alerts](/graph/api/alert-list?view=graph-rest-beta)<br/>[Update alert](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>Added the following supporting documentation:<br/>[Errors](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Security solution integrations using the Microsoft Graph Security API](security-integration.md)
 
 ### Teamwork (Microsoft Teams)
 
