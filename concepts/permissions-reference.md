@@ -555,6 +555,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Group.Read.All_ |    Read all groups | Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. | Yes | No |
 | _Group.ReadWrite.All_ |    Read and write all groups| Allows the app to create groups and read all group properties and memberships on behalf of the signed-in user.  Also allows the app to read and write calendar, conversations, files, and other group content for all groups the signed-in user can access. Additionally allows group owners to manage their groups and allows group members to update group content. | Yes | No |
+| _GroupMember.Read.All_ |    Read membership of groups that this signed-in user is member of | Allows the app to list groups, read basic group properties and read membership of all groups the signed-in user has access to. | Yes | No |
+| _GroupMember.ReadWrite.All_ |    Read and write membership of groups on behalf of the signed-in user | AAllows the app to list groups, read basic properties, read and update the membership of the groups on behalf of the signed-in user. Owners cannot be updated. Group properties cannot be updated and group cannot be deleted. | Yes | No |
 
 #### Application permissions
 
@@ -562,6 +564,9 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Group.Read.All_ | Read all groups | Allows the app to read memberships for all groups without a signed-in user. Also allows the app to read calendar, conversations, files, and other group content for all groups. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples. | Yes |
 | _Group.ReadWrite.All_ | Read and write all groups | Allows the app to create groups, read and update group memberships, and delete groups. Also allows the app to read and write calendar, conversations, files, and other group content for all groups. All of these operations can be performed by the app without a signed-in user. > **NOTE:** that not all group API supports access using app-only permissions. See [known issues](known-issues.md) for examples.| Yes |
+| _GroupMember.Read.All_ |    Read membership of all groups | Allows the app to read memberships and basic group properties for all groups without a signed-in user. | Yes |
+| _GroupMember.ReadWrite.All_ |    Read and write membership of groups that this app can access | Allows the app to list groups, read basic properties, read and update the membership of the groups this app has access to without a signed-in user. Owners cannot be updated. Group properties cannot be updated and group cannot be deleted. | Yes |
+| _Group.Create_ |    Create groups | Allows the calling app to create groups without a signed-in user. It cannot update any groups that it is not an owner of. | Yes |
 
 ### Remarks
 
@@ -584,13 +589,14 @@ Group permissions are also used to control access to [Microsoft Planner](/graph/
 * _Group.Read.All_: Read all Office 365 groups that the signed-in user is a member of (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
 * _Group.Read.All_: Read all Office 365 group content like conversations (`GET /groups/{id}/conversations`).
 * _Group.ReadWrite.All_: Update group properties, like photo (`PUT /groups/{id}/photo/$value`).
-* _Group.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`).
+* _GroupMember.ReadWrite.All_: Update group members (`POST /groups/{id}/members/$ref`).
 > **Note:**: This also requires _User.ReadBasic.All_ to read the user to add as a member.
 
 #### Application
 
 * _Group.Read.All_: Find all groups with name that starts with 'Sales' (`GET /groups?$filter=startswith(displayName,'Sales')`).
 * _Group.ReadWrite.All_: Daemon service creates new events on an Office 365 group's calendar (`POST /groups/{id}/events`).
+* _Group.Create_: Creates a new group (`POST /groups`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
