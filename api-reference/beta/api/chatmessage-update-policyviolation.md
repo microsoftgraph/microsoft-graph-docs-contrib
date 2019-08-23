@@ -71,7 +71,7 @@ Content-length: 248
       "matchedConditionDescriptions" : ["Credit Card Number"]
     },
     "verdictDetails" : "AllowOverrideWithoutJustification,AllowFalsePositiveOverride",
-    "dlpAction" : BlockAccess
+    "dlpAction" : "BlockAccess"
   }
 }
 ```
