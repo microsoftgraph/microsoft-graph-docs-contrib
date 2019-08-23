@@ -70,7 +70,7 @@ Content-length: 248
       "complianceUrl" : "https://contoso.com/dlp-policy-page",
       "matchedConditionDescriptions" : ["Credit Card Number"]
     },
-    "verdictDetails" : AllowOverrideWithoutJustification,AllowFalsePositiveOverride,
+    "verdictDetails" : "AllowOverrideWithoutJustification,AllowFalsePositiveOverride",
     "dlpAction" : BlockAccess
   }
 }
