@@ -67,7 +67,7 @@ Content-Length: 248
 {
   "policyViolation": {
     "policyTip": {
-      "generalText" : “This item has been blocked by administrator.”,
+      "generalText" : "This item has been blocked by administrator.",
       "complianceUrl" : "https://contoso.com/dlp-policy-page",
       "matchedConditionDescriptions" : ["Credit Card Number"]
     },
