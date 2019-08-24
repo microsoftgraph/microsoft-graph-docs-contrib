@@ -37,6 +37,7 @@ PATCH /teams/{id}/channels/{id}
 | Content-Type  | application/json  |
 
 ## Request body
+
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
 
 ## Response
