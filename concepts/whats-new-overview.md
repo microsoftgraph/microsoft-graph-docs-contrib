@@ -26,6 +26,10 @@ Below, see highlights of what's new in Microsoft Graph, and how you can [share y
 - Track the owner principal name when getting [OneDrive usage account detail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-1.0) and [SharePoint site usaged detail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-1.0).
 - Get the number of active and inactive users on Office 365, when [getting a report on user counts per Office 365 service](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-1.0).
 
+### Security
+- Use the new [Microsoft Graph security API add-on for Splunk](https://aka.ms/graphsecuritysplunkaddon) to stream security alerts and insights from many partner products into Splunk, enabling easier real-time correlation of their security data. See the [announcement](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Introducing-the-new-Microsoft-Graph-Security-API-add-on-for/ba-p/815972) for more information. 
+- [See a list of other solutions and connectors](security-integration.md) built by Microsoft or by Microsoft partners that connect with the security API and let you work with data in a unified format.
+
 
 ## August 2019: New in preview
 
@@ -47,7 +51,7 @@ Up till this point, you have been able to [follow](/graph/api/driveitem-follow?v
 - Administrators can [list access reviews](/graph/api/accessreview-list?view=graph-rest-beta) to efficiently facilitate reviewing group memberships, access to enterprise applications, and role assignments. Regular access reviews make sure only the appropriate people have continued access to resources in specific ways.
 
 ### Social and workplace intelligence
-[MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) is an Office 365 app that provides end users insights on managing time, collaboration at work, and work-life balance. Now you can use the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) to integrate data on time spent on work activities such as calls, chats, and email, to help improve a user's productivity and wellbeing. 
+End users have been able to use the Office 365 [MyAnalytics](social-intel-concept-overview.md#why-integrate-with-document-based-insights-preview) app to get insights on managing time, collaboration at work, and work-life balance. Now, you can use the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-gain-insights-into-their-work-patterns) to integrate data on time spent on work activities such as calls, chats, and email, to help improve a user's productivity and wellbeing. 
 
 ## July 2019: New and generally available 
 
