@@ -8,7 +8,7 @@ ms.prod: "microsoft-identity-platform"
 
 # Get access on behalf of a user
 
-To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from the Microsoft identity platform and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 authorization code grant flow. In this topic, we will walk through an example using this flow.
+To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from the Microsoft identity platform and attach the token to requests that it sends to Microsoft Graph. The exact authentication flow that you will use to get access tokens will depend on the kind of app you are developing and whether you want to use OpenID Connect to sign the user in to your app. One common flow used by native and mobile apps and also by some Web apps is the OAuth 2.0 authorization code grant flow. This topic  walks through an example using this flow.
 
 ## Authentication and Authorization steps
 
@@ -70,17 +70,17 @@ client_id=6731de76-14a6-49ae-97bc-6eba6914391e
 
 At this point, the user will be asked to enter their credentials to authenticate with Microsoft. The Microsoft identity platform v2.0 endpoint will also ensure that the user has consented to the permissions indicated in the `scope` query parameter.  If the user has not consented to any of those permissions and if an administrator has not previously consented on behalf of all users in the organization, they will be asked to consent to the required permissions.  
 
-Here is an example of the consent dialog presented for a Microsoft account user:
+The following is an example of the consent dialog box presented for a Microsoft account user.
 
 ![Consent dialog for Microsoft account](./images/v2-consumer-consent.png)
 
-> **Try** If you have a Microsoft account or an Azure AD work or school account, you can try this for yourself by clicking on the link below. After signing in, your browser should be redirected to `https://localhost/myapp/` with a `code` in the address bar.
+> **Try** If you have a Microsoft account or an Azure AD work or school account, you can try this for yourself by clicking the following link. After signing in, your browser should be redirected to `https://localhost/myapp/` with a `code` in the address bar.
 >
 > <a href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=6731de76-14a6-49ae-97bc-6eba6914391e&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F&response_mode=query&scope=offline_access%20user.read%20mail.read&state=12345" target="_blank">https://login.microsoftonline.com/common/oauth2/v2.0/authorize...</a>
 
 ### Authorization response
 
-If the user consents to the permissions your app requested, the response will contain the authorization code in the `code` parameter. Here is an example of a successful response to the request above. Because the `response_mode` parameter in the request was set to `query`, the response is returned in the query string of the redirect URL.
+If the user consents to the permissions your app requested, the response will contain the authorization code in the `code` parameter. Here is an example of a successful response to the previous request. Because the `response_mode` parameter in the request was set to `query`, the response is returned in the query string of the redirect URL.
 
 ```
 GET https://localhost/myapp/?
@@ -140,7 +140,7 @@ Although the access token is opaque to your app, the response contains a list of
 
 | Parameter | Description |
 | --- | --- |
-| token_type |Indicates the token type value. The only type that Azure AD supports is Bearer |
+| token_type |Indicates the token type value. The only type that Azure AD supports is Bearer. |
 | scope |A space separated list of the Microsoft Graph permissions that the access_token is valid for. |
 | expires_in |How long the access token is valid (in seconds). |
 | access_token |The requested access token. Your app can use this token to call Microsoft Graph. |
@@ -148,7 +148,7 @@ Although the access token is opaque to your app, the response contains a list of
 
 ## 4. Use the access token to call Microsoft Graph
 
-Once you have an access token, you can use it to call Microsoft Graph by including it in the `Authorization` header of a request. The following request gets the profile of the signed-in user.
+After you have an access token, you can use it to call Microsoft Graph by including it in the `Authorization` header of a request. The following request gets the profile of the signed-in user.
 
 ```
 GET https://graph.microsoft.com/v1.0/me 
@@ -157,7 +157,7 @@ Host: graph.microsoft.com
 
 ```
 
-A successful response will look similar to this (some response headers have been removed):
+A successful response will look similar to the following (some response headers have been removed).
 
 ```
 HTTP/1.1 200 OK
