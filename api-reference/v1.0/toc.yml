@@ -4119,6 +4119,8 @@
           href: api/channel-post.md
         - name: Get channel
           href: api/channel-get.md
+        - name: Update channel
+          href: api/channel-patch.md
       - name: App Catalog
         href: resources/teamsapp.md
         items:
