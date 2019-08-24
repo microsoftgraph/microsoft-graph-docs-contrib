@@ -7448,8 +7448,15 @@
         - name: Return submission
           href: api/educationsubmission-return.md
       - name: Outcome
-        href: resources/educationoutcome.md
         items:
+        - name: Outcome
+          href: resources/educationoutcome.md
+        - name: Feedback outcome type
+          href: resources/educationfeedbackoutcome.md
+        - name: Points outcome type
+          href: resources/educationpointsoutcome.md
+        - name: Rubric outcome type
+          href: resources/educationrubricoutcome.md
         - name: Update outcome
           href: api/educationoutcome-update.md
       - name: Synchronization profile
@@ -7817,14 +7824,16 @@
         - name: Access review
           href: resources/accessreview.md
           items:
-          - name: Create access review
-            href: api/accessreview-create.md
-          - name: Delete access review
-            href: api/accessreview-delete.md
+          - name: List access reviews
+            href: api/accessreview-list.md
           - name: Get access review
             href: api/accessreview-get.md
+          - name: Create access review
+            href: api/accessreview-create.md
           - name: Update access review
             href: api/accessreview-update.md
+          - name: Delete access review
+            href: api/accessreview-delete.md
           - name: Add reviewer
             href: api/accessreview-addreviewer.md
           - name: List decisions
@@ -9504,7 +9513,13 @@
         - name: Get members in chat
           href: api/conversationmember-list.md
         - name: Get one member in chat
-          href: api/conversationmember-get.md
+          href: api/conversationmember-get.md    
+        - name: Add a member to a chat
+          href: api/conversationmember-add.md
+        - name: Remove a member from a chat
+          href: api/conversationmember-delete.md
+        - name: Update the role of a member in chat
+          href: api/conversationmember-update.md        
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -9525,7 +9540,7 @@
           href: api/teamsapp-update.md
         - name: Remove app from catalog
           href: api/teamsapp-delete.md
-      - name: App
+      - name: Apps
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
