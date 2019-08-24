@@ -7,6 +7,16 @@ ms.prod: ""
 author: ""
 ---
 
+### analyticsActivityType values
+
+| Value
+|:--------------
+| call
+| chat
+| email
+| focus
+| meeting
+
 ### registrationAuthMethod values
 
 |Member|
@@ -31,7 +41,6 @@ author: ""
 |child|5| The user's child.|
 |other|6| An unspecified relationship to the user.|
 |unknownFutureValue|7| Marker value for future compatibility.|
-
 
 ### scheduleEntityTheme values
 
@@ -833,6 +842,14 @@ Possible values for user account types (group membership), per Windows definitio
 |normal|
 |high|
 |urgent|
+
+### channelMembershipType values
+
+|Member  | Value|
+|:-------|:-----|
+|standard| 0    |
+|private | 1    |
+|unknownFutureValue| 2  |
 
 ### stagedFeatureName values
 

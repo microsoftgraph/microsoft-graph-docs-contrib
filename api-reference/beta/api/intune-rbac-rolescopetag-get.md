@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -62,17 +62,19 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 209
+Content-Length: 233
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.roleScopeTag",
     "id": "9ed1e179-e179-9ed1-79e1-d19e79e1d19e",
     "displayName": "Display Name value",
-    "description": "Description value"
+    "description": "Description value",
+    "isBuiltIn": true
   }
 }
 ```
+
 
 
 

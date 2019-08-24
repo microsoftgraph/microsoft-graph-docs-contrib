@@ -4,6 +4,7 @@ description: "Describes a dependency type between two mobile apps."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # mobileAppDependency resource type
@@ -56,8 +57,6 @@ Here is a JSON representation of the resource.
   "dependentAppCount": 1024
 }
 ```
-
-
 
 
 

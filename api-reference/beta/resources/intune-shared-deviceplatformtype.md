@@ -30,5 +30,3 @@ Supported platform types.
 
 
 
-
-

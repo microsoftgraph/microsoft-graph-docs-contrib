@@ -26736,6 +26736,21 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "concepts/security-siemintegration.md",
+            "redirect_url": "/graph/security-integration",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "concepts/security-splunk-siemintegration.md",
+            "redirect_url": "/graph/security-integration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "concepts/security-qradar-siemintegration.md",
+            "redirect_url": "/graph/security-integration",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "concepts\\query_parameters.md",
             "redirect_url": "/graph/query-parameters",
             "redirect_document_id": true
