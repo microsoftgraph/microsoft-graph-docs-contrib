@@ -242,24 +242,24 @@ A successful token response will look similar to the following.
 
 You can call Microsoft Graph on behalf of a user from the following kinds of apps:
 
-- [Native/Mobile apps](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-mobile-overview)
-- [Web apps](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-overview)
-- [Single page apps (SPA)](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-spa-overview)
-- [Back-end Web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-overview): For example, in scenarios where a client app, like a native app, implements functionality in a Web API back end. With the Microsoft identity platform endpoint, both the client app and the back-end Web API must have the same Application ID.
+- [Native/Mobile apps](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
+- [Web apps](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [Single page apps (SPA)](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [Back-end Web APIs](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview): For example, in scenarios where a client app, like a native app, implements functionality in a Web API back end. With the Microsoft identity platform endpoint, both the client app and the back-end Web API must have the same Application ID.
 
-For more information about supported app scenarios with the Microsoft identity platform endpoint, see [App scenarios and authentication flows](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios).
+For more information about supported app scenarios with the Microsoft identity platform endpoint, see [App scenarios and authentication flows](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios).
 
 > **Note**: Calling Microsoft Graph from a standalone web API is not currently supported by the Microsoft identity platform endpoint. For this scenario, you need to use the Azure AD endpoint.
 
 For more information about getting access to Microsoft Graph on behalf of a user from the Microsoft identity platform endpoint:
 
 - For links to protocol documentation and getting started articles for different kinds of apps, see the [Microsoft identity platform endpoint documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview).
-- For detailed explanations of supported application types and authentication flows, see [v2.0 app types](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-app-types).
+- For detailed explanations of supported application types and authentication flows, see [v2.0 app types](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types).
 - For more information about recommended Microsoft and third-party authentication libraries and server middleware for the Microsoft identity platform, see [Azure Active Directory v2.0 authentication libraries](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
 
 ## Endpoint considerations
 
-Microsoft continues to support the Azure AD endpoint. There are [several differences](https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison) between using the Microsoft identity platform endpoint and the Azure AD endpoint. When using the Azure AD endpoint:
+Microsoft continues to support the Azure AD endpoint. There are [several differences](https://docs.microsoft.com/azure/active-directory/develop/azure-ad-endpoint-comparison) between using the Microsoft identity platform endpoint and the Azure AD endpoint. When using the Azure AD endpoint:
 
 - Your app will require a different application ID (client ID) for each platform.
 - If your app is a multi-tenant app, you must explicitly configure it to be multi-tenant at the [Azure portal](https://portal.azure.com).
@@ -270,4 +270,4 @@ Microsoft continues to support the Azure AD endpoint. There are [several differe
 For more information about getting access to Microsoft Graph on behalf of a user from the Azure AD endpoint:
 
 - For information about using the Microsoft identity platform endpoint with different kinds of apps, see the **Get Started** links in the [Microsoft identity platform developer documentation](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide). The documentation contains links to overview topics, quickstarts, tutorials, code samples and protocol documentation for different kinds of apps supported by the Microsoft identity platform endpoint.
-- For information about the Microsoft Authentication Library (MSAL) and server middleware available for use with the Microsoft identity platform endpoint, see [Microsoft Authentication Libraries](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview).
+- For information about the Microsoft Authentication Library (MSAL) and server middleware available for use with the Microsoft identity platform endpoint, see [Microsoft Authentication Libraries](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
