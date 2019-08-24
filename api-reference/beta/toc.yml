@@ -9511,7 +9511,13 @@
         - name: Get members in chat
           href: api/conversationmember-list.md
         - name: Get one member in chat
-          href: api/conversationmember-get.md
+          href: api/conversationmember-get.md    
+        - name: Add a member to a chat
+          href: api/conversationmember-add.md
+        - name: Remove a member from a chat
+          href: api/conversationmember-delete.md
+        - name: Update the role of a member in chat
+          href: api/conversationmember-update.md        
       - name: Chat message
         href: resources/chatmessage.md
         items:
@@ -9532,7 +9538,7 @@
           href: api/teamsapp-update.md
         - name: Remove app from catalog
           href: api/teamsapp-delete.md
-      - name: App
+      - name: Apps
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
