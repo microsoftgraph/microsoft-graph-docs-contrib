@@ -9,7 +9,7 @@ doc_type: apiPageType
 
 # Get attachment
 
-Read the properties and relationships of an attachment, attached to an [event](../resources/event.md), 
+Read the properties and relationships of an attachment, attached to a user [event](../resources/event.md), 
 [message](../resources/message.md), or [post](../resources/post.md). 
 
 An attachment can be one of the following types:

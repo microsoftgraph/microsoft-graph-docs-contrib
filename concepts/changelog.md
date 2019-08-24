@@ -96,6 +96,14 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | Beta | Introduced the new workplace intelligence [settings API](/graph/api/resources/settings?view=graph-rest-beta) that represents the current required settings for a user to use the [analytics API](/graph/api/resources/useranalytics?view=graph-rest-beta). |
 | Addition | Beta | Introduced the new [activityStatistics](/graph/api/resources/activitystatistics?view=graph-rest-beta) resource type and the following new resource types that are derived from it: [callActivityStatistics](/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](/graph/api/resources/focusactivitystatistics?view=graph-rest-beta), and [meetingActivityStatistics](/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta). |
 
+### Teamwork (Microsoft Teams)
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added the ability to [add members to a private channel](/graph/api/conversationmember-add?view=graph-rest-beta). |
+| Addition | Beta | Added the ability to [remove members from a private channel](/graph/api/conversationmember-delete?view=graph-rest-beta). |
+| Addition | Beta | Added the ability to [update a member's role in a private channel](/graph/api/conversationmember-update?view=graph-rest-beta). |
+| Addition | Beta | Added the `membershipType` property to the [channel]](/graph/api/resources/channel?view=graph-rest-beta) resource to show if a particular channel is private or standard. |
 
 ## July 2019
 
