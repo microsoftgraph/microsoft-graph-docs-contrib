@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-resource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

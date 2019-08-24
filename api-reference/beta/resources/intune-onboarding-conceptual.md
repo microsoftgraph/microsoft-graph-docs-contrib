@@ -4,7 +4,6 @@ description: "Lists the Microsoft Graph API for Intune endpoints (REST) used to 
 localization_priority: Normal
 author: "rolyon"
 ms.prod: "intune"
-doc_type: resourcePageType
 ---
 
 # Enroll devices for management in Intune

@@ -25,5 +25,3 @@ Android Device Owner default app permission policy type.
 
 
 
-
-

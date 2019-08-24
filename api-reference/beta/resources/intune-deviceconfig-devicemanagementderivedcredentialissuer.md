@@ -4,6 +4,7 @@ description: "Supported values for the derived credential issuer."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementDerivedCredentialIssuer enum type
@@ -20,8 +21,6 @@ Supported values for the derived credential issuer.
 |intercede|0|Intercede|
 |entrustDatacard|1|Entrust Datacard|
 |purebred|2|Purebred|
-
-
 
 
 

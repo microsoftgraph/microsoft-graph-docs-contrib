@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var getSkypeForBusinessDeviceUsageUserDetail = await graphClient.Reports
-	.GetSkypeForBusinessDeviceUsageUserDetail('D7')
+	.GetSkypeForBusinessDeviceUsageUserDetail("D7")
 	.Request()
 	.GetAsync();
 
