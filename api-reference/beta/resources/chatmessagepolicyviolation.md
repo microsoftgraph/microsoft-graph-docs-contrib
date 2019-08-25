@@ -37,11 +37,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "dlpAction": "NotifySender,BlockAccess",
+  "dlpAction": {"@odata.type": "microsoft.graph.chatMessagePolicyViolationDlpActionType"},
   "justificationText": "string",
   "policyTip": {"@odata.type": "microsoft.graph.chatMessagePolicyViolationPolicyTip"},
-  "userAction": "Override",
-  "verdictDetails": "AllowFalsePositiveOverride,AllowOverrideWithoutJustification"
+  "userAction": {"@Odata.type": "microsoft.graph.chatMessagePolicyViolationUserActionType"},
+  "verdictDetails": {"@Odata.type": "microsoft.graph.chatMessagePolicyViolationVerdictDetailsType"},
 }
 ```
 
