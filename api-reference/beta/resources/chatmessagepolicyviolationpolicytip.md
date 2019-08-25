@@ -24,6 +24,12 @@ Represents the properties of a policy tip on a [chatMessagePolicyViolation](chat
 
 The following is a JSON representation of the resource.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],
+  "@odata.type": "microsoft.graph.chatMessagePolicyViolationPolicyTip"
+}-->
 ```json
 {
   "complianceUrl": "string",
