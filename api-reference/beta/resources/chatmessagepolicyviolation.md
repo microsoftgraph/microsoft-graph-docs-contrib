@@ -22,6 +22,7 @@ Represents a policy violation on a chat message. Policy violations are typically
 |userAction|[chatMessagePolicyViolationUserActionType](/graph/api/resources/enums?view=graph-rest-beta#chatmessagepolicyviolationuseractiontype-values)|Indicates the action taken by the user on a message blocked by the DLP provider. Possible values are: <li>None</li><li>Override</li><li>ReportFalsePositive</li>When the DLP provider is updating the message for blocking sensitive content, userAction is not required.|
 |verdictDetails|[chatMessagePolicyViolationVerdictDetailsType](/graph/api/resources/enums?view=graph-rest-beta#chatmessagepolicyviolationverdictdetailstype-values)|Indicates the details of the allowed sender actions based on the verdict of the DLP provider for the message processed. Possible values include: <li>None</li><li>AllowFalsePositiveOverride</li><li>AllowOverrideWithoutJustification</li><li>AllowOverrideWithJustification</li>AllowOverrideWithoutJustification and AllowOverrideWithJustification are mutually exclusive.|
 
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
