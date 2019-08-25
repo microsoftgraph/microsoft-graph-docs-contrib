@@ -696,7 +696,7 @@ Possible values for user account types (group membership), per Windows definitio
 |power|1| Member of Power Users group.|
 |administrator|2| Member of Administrators group.|
 
-### dlpAction values
+### chatMessagePolicyViolationDlpActionType values
 
 | Value |
 |:-----------------|
@@ -704,7 +704,7 @@ Possible values for user account types (group membership), per Windows definitio
 | NotifySender |
 | BlockAccess |
 | BlockAccessExternal |
-=======
+
 ### scopeOperatorMultiValuedComparisonType values
 
 |Member|
@@ -886,7 +886,7 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |unknownFutureValue|
 
-### verdictDetails values
+### chatMessagePolicyViolationVerdictDetailsType values
 
 | Member   | Int value |  Description |
 |:---------------|:--------|:----------|
@@ -895,7 +895,7 @@ Possible values for user account types (group membership), per Windows definitio
 | AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
 | AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
 
-### userAction values
+### chatMessagePolicyViolationUserActionType values
 
 | Property   | Int value |  Description |
 |:---------------|:--------|:----------|
