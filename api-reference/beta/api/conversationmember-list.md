@@ -1,7 +1,7 @@
 ---
 title: "List conversationMembers"
-description: "Retrieve a member of a chat."
-author: "nkramer"
+description: "Retrieve a member of a chat or channel."
+author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md)
+List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md) or [channel](../resources/channel.md).
 
 ## Permissions
 
@@ -57,7 +57,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_conversation_member"
+  "name": "list_conversation_members"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/me/chats/{id}/members

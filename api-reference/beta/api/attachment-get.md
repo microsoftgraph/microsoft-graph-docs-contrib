@@ -11,7 +11,7 @@ ms.prod: "outlook"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an attachment, attached to an [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
+Read the properties and relationships of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
 An attachment can be one of the following types:
 
@@ -157,7 +157,7 @@ Here is an example of the request to get the properties of a file attachment on 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_file_attachment",
+  "name": "get_file_attachment_beta",
   "sampleKeys": ["AAMkAGUzY5QKjAAA=","AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }-->
 
@@ -165,15 +165,15 @@ Here is an example of the request to get the properties of a file attachment on 
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-file-attachment-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-file-attachment-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -184,7 +184,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
-  "name": "get_file_attachment",
+  "name": "get_file_attachment_beta",
   "truncated": true,
   "@odata.type": "microsoft.graph.fileAttachment"
 } -->
@@ -204,7 +204,7 @@ Content-type: application/json
     "isInline": false,
     "contentId": null,
     "contentLocation": null,
-    "contentBytes": "base64,UEsDBBQABgAIAAAAIQ4AAAAA"
+    "contentBytes": "UEsDBBQABgAIAAAAIQ4AAAAA"
 }
 ```
 
