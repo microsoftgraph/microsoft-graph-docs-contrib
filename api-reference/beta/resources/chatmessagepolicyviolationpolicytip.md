@@ -27,6 +27,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "generalText"
   ],
   "@odata.type": "microsoft.graph.chatMessagePolicyViolationPolicyTip"
 }-->
