@@ -4,6 +4,7 @@ description: "Create a new team."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Create team
@@ -179,6 +180,9 @@ Content-Type: application/json
         "allowOwnerDeleteMessages": true,
         "allowTeamMentions": true,
         "allowChannelMentions": true
+    },
+    "discoverySettings": {
+        "showInTeamsSearchAndSuggestions": true
     },
     "installedApps": [
         {

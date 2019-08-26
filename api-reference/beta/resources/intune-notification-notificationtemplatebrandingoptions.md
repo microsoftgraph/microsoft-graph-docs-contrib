@@ -4,6 +4,7 @@ description: "Branding Options for the Message Template. Branding is defined in 
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # notificationTemplateBrandingOptions enum type
@@ -21,7 +22,6 @@ Branding Options for the Message Template. Branding is defined in the Intune Adm
 |includeCompanyLogo|1|Include Company Logo.|
 |includeCompanyName|2|Include Company Name.|
 |includeContactInformation|4|Include Contact Info.|
-
 
 
 

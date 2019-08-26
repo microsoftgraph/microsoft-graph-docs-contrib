@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsAutopilotProfileAssignmentDetailedStatus enum type
@@ -19,7 +20,6 @@ Not yet documented
 |:---|:---|:---|
 |none|0|No assignment detailed status|
 |hardwareRequirementsNotMet|1|Hardware requirements are not met. This can happen if a self-deploying AutoPilot Profile is assigned to a device without TPM 2.0.|
-
 
 
 

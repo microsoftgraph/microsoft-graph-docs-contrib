@@ -4,6 +4,7 @@ description: "The windowsAutopilotSettings resource represents a Windows Autopil
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsAutopilotSettings resource type
@@ -49,7 +50,6 @@ Here is a JSON representation of the resource.
   "syncStatus": "String"
 }
 ```
-
 
 
 

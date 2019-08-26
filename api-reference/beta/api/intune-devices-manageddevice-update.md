@@ -4,6 +4,7 @@ description: "Update the properties of a managedDevice object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Update managedDevice
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -116,6 +117,7 @@ The following table shows the properties that are required when you create the [
 |windowsRemediatedMalwareCount|Int32|Count of remediated malware for this windows device|
 |notes|String|Notes on the device created by IT Admin|
 |configurationManagerClientHealthState|[configurationManagerClientHealthState](../resources/intune-devices-configurationmanagerclienthealthstate.md)|Configuration manager client health state, valid only for devices managed by MDM/ConfigMgr Agent|
+|configurationManagerClientInformation|[configurationManagerClientInformation](../resources/intune-devices-configurationmanagerclientinformation.md)|Configuration manager client information, valid only for devices managed, duel-managed or tri-managed by ConfigMgr Agent|
 
 
 
@@ -129,7 +131,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7286
+Content-length: 7513
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -166,7 +168,8 @@ Content-length: 7286
     "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+    "osBuildNumber": "Os Build Number value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -296,6 +299,10 @@ Content-length: 7286
     "state": "installed",
     "errorCode": 9,
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "Client Identifier value"
   }
 }
 ```
@@ -305,7 +312,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7335
+Content-Length: 7562
 
 {
   "@odata.type": "#microsoft.graph.managedDevice",
@@ -343,7 +350,8 @@ Content-Length: 7335
     "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
     "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
     "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+    "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+    "osBuildNumber": "Os Build Number value"
   },
   "ownerType": "company",
   "managedDeviceOwnerType": "company",
@@ -473,9 +481,15 @@ Content-Length: 7335
     "state": "installed",
     "errorCode": 9,
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+  },
+  "configurationManagerClientInformation": {
+    "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+    "clientIdentifier": "Client Identifier value"
   }
 }
 ```
+
+
 
 
 

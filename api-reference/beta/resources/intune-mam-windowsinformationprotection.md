@@ -4,6 +4,7 @@ description: "Policy for Windows information protection to configure detailed ma
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsInformationProtection resource type
@@ -204,7 +205,6 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
-
 
 
 

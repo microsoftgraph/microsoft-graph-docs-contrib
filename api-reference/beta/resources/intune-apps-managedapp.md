@@ -4,6 +4,7 @@ description: "Abstract class that contains properties and inherited properties f
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedApp resource type
@@ -96,7 +97,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
 
 
 

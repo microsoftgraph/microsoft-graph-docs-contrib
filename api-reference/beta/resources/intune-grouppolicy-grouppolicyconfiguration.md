@@ -4,6 +4,7 @@ description: "The group policy configuration entity contains the configured valu
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # groupPolicyConfiguration resource type
@@ -57,7 +58,6 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

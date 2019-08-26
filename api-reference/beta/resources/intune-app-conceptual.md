@@ -10,7 +10,7 @@ ms.prod: "intune"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 Microsoft Intune app protection policies help protect your company data and prevent data loss.
 
@@ -105,7 +105,6 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app content](intune-apps-mobileappcontent.md)
 - [Mobile app content file](intune-apps-mobileappcontentfile.md)
 - [Mobile app content file upload state](intune-apps-mobileappcontentfileuploadstate.md)
-- [Mobile app dependecy type](intune-apps-mobileappdependecytype.md)
 - [Mobile app dependency](intune-apps-mobileappdependency.md)
 - [Mobile app dependency type](intune-apps-mobileappdependencytype.md)
 - [Mobile app install status](intune-apps-mobileappinstallstatus.md)
@@ -171,3 +170,4 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows universal AppX](intune-apps-windowsuniversalappx.md)
 - [Windows universal AppX app assignment settings](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Windows universal AppX contained app](intune-apps-windowsuniversalappxcontainedapp.md)
+

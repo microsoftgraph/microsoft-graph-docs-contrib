@@ -4,6 +4,7 @@ description: "Contains the properties used to assign an MDM app configuration to
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedDeviceMobileAppConfigurationAssignment resource type
@@ -49,7 +50,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 

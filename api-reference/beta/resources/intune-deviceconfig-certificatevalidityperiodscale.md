@@ -4,6 +4,7 @@ description: "Certificate Validity Period Options."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # certificateValidityPeriodScale enum type
@@ -20,7 +21,6 @@ Certificate Validity Period Options.
 |days|0|Days.|
 |months|1|Months.|
 |years|2|Years.|
-
 
 
 

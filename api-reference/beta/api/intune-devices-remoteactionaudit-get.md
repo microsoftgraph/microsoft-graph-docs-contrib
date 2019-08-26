@@ -4,6 +4,7 @@ description: "Read properties and relationships of the remoteActionAudit object.
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get remoteActionAudit
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 594
 
 {
   "value": {
@@ -73,10 +74,13 @@ Content-Length: 543
     "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
     "deviceOwnerUserPrincipalName": "Device Owner User Principal Name value",
     "deviceIMEI": "Device IMEI value",
-    "actionState": "pending"
+    "actionState": "pending",
+    "managedDeviceId": "Managed Device Id value"
   }
 }
 ```
+
+
 
 
 

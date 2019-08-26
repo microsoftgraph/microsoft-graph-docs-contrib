@@ -4,6 +4,7 @@ description: "Contains properties for the package information for a Windows line
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsPackageInformation resource type
@@ -52,11 +53,12 @@ Here is a JSON representation of the resource.
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   }
 }
 ```
-
 
 
 

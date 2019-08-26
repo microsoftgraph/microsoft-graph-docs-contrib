@@ -4,6 +4,7 @@ description: "Owner type of device."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # ownerType enum type
@@ -20,7 +21,6 @@ Owner type of device.
 |unknown|0|Unknown.|
 |company|1|Owned by company.|
 |personal|2|Owned by person.|
-
 
 
 

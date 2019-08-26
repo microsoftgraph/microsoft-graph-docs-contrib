@@ -4,6 +4,7 @@ description: "List properties and relationships of the androidManagedAppProtecti
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # List androidManagedAppProtections
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -57,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3387
+Content-Length: 3448
 
 {
   "value": [
@@ -106,6 +107,7 @@ Content-Length: 3387
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
       "allowedOutboundClipboardSharingExceptionLength": 14,
+      "notificationRestriction": "blockOrganizationalData",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged",
       "screenCaptureBlocked": true,
@@ -134,6 +136,8 @@ Content-Length: 3387
   ]
 }
 ```
+
+
 
 
 

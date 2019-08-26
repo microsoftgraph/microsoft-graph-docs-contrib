@@ -4,6 +4,7 @@ description: "Contains properties and inherited properties for the MacOS LOB App
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSLobApp resource type
@@ -138,7 +139,6 @@ Here is a JSON representation of the resource.
   "ignoreVersionDetection": true
 }
 ```
-
 
 
 

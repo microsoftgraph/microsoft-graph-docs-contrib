@@ -4,6 +4,7 @@ description: "Create a new windowsPhoneXAP object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Create windowsPhoneXAP
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -82,7 +83,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1191
+Content-length: 1237
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -118,7 +119,9 @@ Content-length: 1191
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"
@@ -130,7 +133,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1363
+Content-Length: 1409
 
 {
   "@odata.type": "#microsoft.graph.windowsPhoneXAP",
@@ -169,12 +172,16 @@ Content-Length: 1363
     "v10_1607": true,
     "v10_1703": true,
     "v10_1709": true,
-    "v10_1803": true
+    "v10_1803": true,
+    "v10_1809": true,
+    "v10_1903": true
   },
   "productIdentifier": "Product Identifier value",
   "identityVersion": "Identity Version value"
 }
 ```
+
+
 
 
 

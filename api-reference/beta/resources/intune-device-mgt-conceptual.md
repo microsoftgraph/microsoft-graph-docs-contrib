@@ -10,7 +10,7 @@ ms.prod: "intune"
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-> **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) by the customer.
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
 - [Admin consent](intune-devices-adminconsent.md)
 - [Admin consent state](intune-devices-adminconsentstate.md)
@@ -32,6 +32,7 @@ ms.prod: "intune"
 - [Compliance state](intune-devices-compliancestate.md)
 - [Configuration manager client enabled features](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Configuration manager client health state](intune-devices-configurationmanagerclienthealthstate.md)
+- [Configuration manager client information](intune-devices-configurationmanagerclientinformation.md)
 - [Configuration manager client state](intune-devices-configurationmanagerclientstate.md)
 - [Daily schedule](intune-devices-dailyschedule.md)
 - [Data sharing consent](intune-devices-datasharingconsent.md)
@@ -45,11 +46,16 @@ ms.prod: "intune"
 - [Device guard virtualization based security hardware requirement state](intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)
 - [Device guard virtualization based security state](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [Device health attestation state](intune-devices-devicehealthattestationstate.md)
+- [Device health script](intune-devices-devicehealthscript.md)
+- [Device health script compliance rule](intune-devices-devicehealthscriptcompliancerule.md)
+- [Device health script compliance rule operator](intune-devices-devicehealthscriptcomplianceruleoperator.md)
+- [Device health script detection type](intune-devices-devicehealthscriptdetectiontype.md)
 - [Device management abstract complex setting definition](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Device management abstract complex setting instance](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Device management boolean setting instance](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [Device management collection setting definition](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [Device management collection setting instance](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
+- [Device management comparison result](intune-deviceintent-devicemanagementcomparisonresult.md)
 - [Device management complex setting definition](intune-deviceintent-devicemanagementcomplexsettingdefinition.md)
 - [Device management complex setting instance](intune-deviceintent-devicemanagementcomplexsettinginstance.md)
 - [Device management constraint](intune-deviceintent-devicemanagementconstraint.md)
@@ -74,6 +80,7 @@ ms.prod: "intune"
 - [Device management script user state](intune-devices-devicemanagementscriptuserstate.md)
 - [Device management setting boolean constraint](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [Device management setting category](intune-deviceintent-devicemanagementsettingcategory.md)
+- [Device management setting comparison](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [Device management setting definition](intune-deviceintent-devicemanagementsettingdefinition.md)
 - [Device management setting dependency](intune-deviceintent-devicemanagementsettingdependency.md)
 - [Device management setting instance](intune-deviceintent-devicemanagementsettinginstance.md)
@@ -86,6 +93,7 @@ ms.prod: "intune"
 - [Device management subscriptions](intune-devices-devicemanagementsubscriptions.md)
 - [Device management template](intune-deviceintent-devicemanagementtemplate.md)
 - [Device management template setting category](intune-deviceintent-devicemanagementtemplatesettingcategory.md)
+- [Device management template type](intune-deviceintent-devicemanagementtemplatetype.md)
 - [Device management troubleshooting error details](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
 - [Device management troubleshooting error resource](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [Device management troubleshooting event](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
@@ -102,6 +110,8 @@ ms.prod: "intune"
 - [Hardware information](intune-devices-hardwareinformation.md)
 - [Health state](intune-devices-healthstate.md)
 - [Hourly schedule](intune-devices-hourlyschedule.md)
+- [Insight value double](intune-devices-insightvaluedouble.md)
+- [Insight value int](intune-devices-insightvalueint.md)
 - [Localized notification message](intune-notification-localizednotificationmessage.md)
 - [Locate device action result](intune-devices-locatedeviceactionresult.md)
 - [Location management condition](intune-fencing-locationmanagementcondition.md)
@@ -156,6 +166,12 @@ ms.prod: "intune"
 - [Unary management condition expression](intune-fencing-unarymanagementconditionexpression.md)
 - [Unary management condition expression operator type](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Update windows device account action parameter](intune-devices-updatewindowsdeviceaccountactionparameter.md)
+- [User experience analytics baseline](intune-devices-userexperienceanalyticsbaseline.md)
+- [User experience analytics category](intune-devices-userexperienceanalyticscategory.md)
+- [User experience analytics insight](intune-devices-userexperienceanalyticsinsight.md)
+- [User experience analytics insight value](intune-devices-userexperienceanalyticsinsightvalue.md)
+- [User experience analytics metric](intune-devices-userexperienceanalyticsmetric.md)
+- [User experience analytics overview](intune-devices-userexperienceanalyticsoverview.md)
 - [Variable management condition expression](intune-fencing-variablemanagementconditionexpression.md)
 - [Windows defender scan action result](intune-devices-windowsdefenderscanactionresult.md)
 - [Windows device account](intune-devices-windowsdeviceaccount.md)
@@ -177,5 +193,5 @@ ms.prod: "intune"
 - [Windows managed device](intune-devices-windowsmanageddevice.md)
 - [Windows management app](intune-devices-windowsmanagementapp.md)
 - [Windows management app health state](intune-devices-windowsmanagementapphealthstate.md)
-- [Windows management app health summary](intune-devices-windowsmanagementapphealthsummary.md)
 - [Windows protection state](intune-devices-windowsprotectionstate.md)
+

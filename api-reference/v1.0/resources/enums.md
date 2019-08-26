@@ -2,6 +2,9 @@
 title: "Enum values"
 description: "Microsoft Graph enumeration values."
 localization_priority: Normal
+author: ""
+ms.prod: ""
+doc_type: enumPageType
 ---
 
 ### contactRelationship values
@@ -134,9 +137,6 @@ localization_priority: Normal
 |:---------------------
 | student
 | teacher
-| none
-| unknownFutureValue
-
 
 ### meetingMessageType values
 

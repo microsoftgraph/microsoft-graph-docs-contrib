@@ -4,6 +4,7 @@ description: "An abstract base class containing properties for all managed mobil
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedMobileLobApp resource type
@@ -103,7 +104,6 @@ Here is a JSON representation of the resource.
   "size": 1024
 }
 ```
-
 
 
 

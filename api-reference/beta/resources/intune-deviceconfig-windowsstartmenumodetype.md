@@ -4,6 +4,7 @@ description: "Type of display modes for the start menu."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsStartMenuModeType enum type
@@ -20,7 +21,6 @@ Type of display modes for the start menu.
 |userDefined|0|User defined. Default value.|
 |fullScreen|1|Full screen.|
 |nonFullScreen|2|Non-full screen.|
-
 
 
 

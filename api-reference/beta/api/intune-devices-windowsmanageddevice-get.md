@@ -4,6 +4,7 @@ description: "Read properties and relationships of the windowsManagedDevice obje
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: apiPageType
 ---
 
 # Get windowsManagedDevice
@@ -21,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7693
+Content-Length: 7930
 
 {
   "value": {
@@ -102,7 +103,8 @@ Content-Length: 7693
       "deviceFullQualifiedDomainName": "Device Full Qualified Domain Name value",
       "deviceGuardVirtualizationBasedSecurityHardwareRequirementState": "secureBootRequired",
       "deviceGuardVirtualizationBasedSecurityState": "rebootRequired",
-      "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired"
+      "deviceGuardLocalSystemAuthorityCredentialGuardState": "rebootRequired",
+      "osBuildNumber": "Os Build Number value"
     },
     "ownerType": "company",
     "managedDeviceOwnerType": "company",
@@ -232,10 +234,16 @@ Content-Length: 7693
       "state": "installed",
       "errorCode": 9,
       "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
+    },
+    "configurationManagerClientInformation": {
+      "@odata.type": "microsoft.graph.configurationManagerClientInformation",
+      "clientIdentifier": "Client Identifier value"
     }
   }
 }
 ```
+
+
 
 
 

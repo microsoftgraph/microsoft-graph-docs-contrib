@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # importedWindowsAutopilotDeviceIdentityUploadStatus enum type
@@ -21,7 +22,6 @@ Not yet documented
 |pending|1|Pending status.|
 |complete|2|Complete status.|
 |error|3|Error status.|
-
 
 
 

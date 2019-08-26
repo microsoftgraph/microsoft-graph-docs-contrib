@@ -4,6 +4,7 @@ description: "Device Exchange Access State Reason."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # deviceManagementExchangeAccessStateReason enum type
@@ -33,7 +34,6 @@ Device Exchange Access State Reason.
 |azureADBlockDueToAccessPolicy|14|Access State revoked by AAD Access Policy|
 |compromisedPassword|15|Access State revoked by compromised password|
 |deviceNotKnownWithManagedApp|16|Access state revoked by managed application challenge|
-
 
 
 

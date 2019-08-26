@@ -4,6 +4,7 @@ description: "The minimum operating system required for a MacOS app."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # macOSMinimumOperatingSystem resource type
@@ -47,7 +48,6 @@ Here is a JSON representation of the resource.
   "v10_13": true
 }
 ```
-
 
 
 

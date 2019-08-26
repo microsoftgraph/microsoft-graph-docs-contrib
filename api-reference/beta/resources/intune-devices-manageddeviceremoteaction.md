@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # managedDeviceRemoteAction enum type
@@ -23,7 +24,7 @@ Not yet documented
 |quickScan|3|Not yet documented|
 |signatureUpdate|4|Not yet documented|
 |wipe|5|Not yet documented|
-
+|customTextNotification|6|Not yet documented|
 
 
 

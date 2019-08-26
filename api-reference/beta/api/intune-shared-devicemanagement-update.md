@@ -4,6 +4,7 @@ description: "Update the properties of a deviceManagement object."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
+doc_type: apiPageType
 ---
 
 # Update deviceManagement
@@ -33,6 +34,7 @@ Note that the permission vary according to workflow.
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Fencing** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Odj** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Role-based access control (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Remote access** | DeviceManagementConfiguration.Read.All |
@@ -160,6 +162,9 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
 
 
 

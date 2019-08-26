@@ -4,6 +4,7 @@ description: "Contains properties for user run state of the device management sc
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementScriptUserState resource type
@@ -53,7 +54,6 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

@@ -4,6 +4,7 @@ description: "Policy used to configure detailed management settings for a specif
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # managedAppProtection resource type
@@ -66,6 +67,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, based on maximum number of incorrect pin retry attempts. Possible values are: `block`, `wipe`, `warn`.|
 |pinRequiredInsteadOfBiometricTimeout|Duration|Timeout in minutes for an app pin instead of non biometrics passcode|
 |allowedOutboundClipboardSharingExceptionLength|Int32|Specify the number of characters that may be cut or copied from Org data and accounts to any application. This setting overrides the AllowedOutboundClipboardSharingLevel restriction. Default value of '0' means no exception is allowed.|
+|notificationRestriction|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Specify app notification restriction. Possible values are: `allow`, `blockOrganizationalData`, `block`.|
 
 ## Relationships
 None
@@ -123,10 +125,10 @@ Here is a JSON representation of the resource.
   "appActionIfDeviceComplianceRequired": "String",
   "appActionIfMaximumPinRetriesExceeded": "String",
   "pinRequiredInsteadOfBiometricTimeout": "String (duration)",
-  "allowedOutboundClipboardSharingExceptionLength": 1024
+  "allowedOutboundClipboardSharingExceptionLength": 1024,
+  "notificationRestriction": "String"
 }
 ```
-
 
 
 

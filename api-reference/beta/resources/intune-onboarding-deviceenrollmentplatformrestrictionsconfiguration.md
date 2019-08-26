@@ -4,6 +4,7 @@ description: "Device Enrollment Configuration that restricts the types of device
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceEnrollmentPlatformRestrictionsConfiguration resource type
@@ -118,7 +119,6 @@ Here is a JSON representation of the resource.
   }
 }
 ```
-
 
 
 
