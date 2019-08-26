@@ -2,6 +2,9 @@
 title: "Filter: apply"
 description: "Apply the given filter criteria on the given column."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # Filter: apply
@@ -78,7 +81,7 @@ Content-length: 321
 [!INCLUDE [sample-code](../includes/snippets/csharp/filter-apply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/filter-apply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

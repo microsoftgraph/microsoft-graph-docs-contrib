@@ -2,6 +2,9 @@
 title: "Update profilephoto"
 description: "Update the photo for the signed-in **user**, or the specified **group** or **contact**. Since there"
 localization_priority: Priority
+author: ""
+ms.prod: ""
+doc_type: apiPageType
 ---
 
 # Update profilephoto
@@ -76,7 +79,7 @@ Binary data for the image
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-profilephoto-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

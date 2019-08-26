@@ -4,6 +4,7 @@ description: "Get the room lists defined in a tenant."
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: findRoomLists
@@ -30,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRoomLists
-GET /users/<id>/findRoomLists
+GET /users/{id}/findRoomLists
 
 ```
 
@@ -68,7 +69,7 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-room-lists-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-room-lists-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

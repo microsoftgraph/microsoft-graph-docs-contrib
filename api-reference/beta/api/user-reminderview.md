@@ -4,6 +4,7 @@ description: "Return a list of calendar reminders within the specified start and
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: reminderView
@@ -66,7 +67,7 @@ GET https://graph.microsoft.com/beta/me/reminderView(startDateTime='2017-06-05T1
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-reminderview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-reminderview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

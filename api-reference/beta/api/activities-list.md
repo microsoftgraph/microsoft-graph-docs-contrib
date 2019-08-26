@@ -3,7 +3,10 @@ author: daspek
 ms.author: dspektor
 ms.date: 09/10/2017
 title: File Activities
+description: "List the recent activities that took place on an item or under a hierarchy."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
 ---
 # Enumerate activities (preview)
 
@@ -51,7 +54,7 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-activities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-activities-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

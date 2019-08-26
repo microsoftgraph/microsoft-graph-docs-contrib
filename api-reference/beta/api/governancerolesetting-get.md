@@ -2,6 +2,9 @@
 title: "Get governanceRoleSetting"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
 localization_priority: Normal
+doc_type: apiPageType
+author: ""
+ms.prod: ""
 ---
 
 # Get governanceRoleSetting
@@ -53,7 +56,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-governancerolesetting-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-governancerolesetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -4,6 +4,7 @@ description: "Android Work Profile general device configuration."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidWorkProfileGeneralDeviceConfiguration resource type
@@ -168,8 +169,6 @@ Here is a JSON representation of the resource.
   "vpnEnableAlwaysOnLockdownMode": true
 }
 ```
-
-
 
 
 

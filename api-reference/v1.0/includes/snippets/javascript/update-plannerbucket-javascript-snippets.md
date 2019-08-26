@@ -15,6 +15,6 @@ const plannerBucket = {
 };
 
 let res = await client.api('/planner/buckets/{bucket-id}')
-	.update({plannerBucket : plannerBucket});
+	.update(plannerBucket);
 
 ```

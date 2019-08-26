@@ -4,6 +4,7 @@ description: "The importedDeviceIdentity resource represents a unique hardware i
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # importedDeviceIdentity resource type
@@ -63,8 +64,6 @@ Here is a JSON representation of the resource.
   "platform": "String"
 }
 ```
-
-
 
 
 

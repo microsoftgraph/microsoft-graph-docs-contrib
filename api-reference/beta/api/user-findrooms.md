@@ -4,6 +4,7 @@ description: "Get all the meeting rooms in the user's tenant or in a specific ro
 localization_priority: Priority
 author: "angelgolfer-ms"
 ms.prod: "microsoft-identity-platform"
+doc_type: apiPageType
 ---
 
 # user: findRooms
@@ -33,7 +34,7 @@ To get all the rooms in the tenant:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRooms
-GET /users/<id>/findRooms
+GET /users/{id}/findRooms
 ```
 
 To get all the rooms in a specific room list of the tenant's:
@@ -41,7 +42,7 @@ To get all the rooms in a specific room list of the tenant's:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRooms(RoomList='{room_list_emailAddress}')
-GET /users/<id>/findRooms(RoomList='{room_list_emailAddress}')
+GET /users/{id}/findRooms(RoomList='{room_list_emailAddress}')
 ```
 
 ## Query parameters
@@ -84,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/findRooms
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-rooms-in-tenant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-rooms-in-tenant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -158,7 +159,7 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-rooms-from-specific-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-rooms-from-specific-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

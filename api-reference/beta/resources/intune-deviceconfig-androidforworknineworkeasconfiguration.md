@@ -4,6 +4,7 @@ description: "By providing configurations in this profile you can instruct the N
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # androidForWorkNineWorkEasConfiguration resource type
@@ -115,8 +116,6 @@ Here is a JSON representation of the resource.
   "syncTasks": true
 }
 ```
-
-
 
 
 

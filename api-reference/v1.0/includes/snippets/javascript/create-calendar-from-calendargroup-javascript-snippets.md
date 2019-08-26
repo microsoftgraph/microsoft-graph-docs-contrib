@@ -17,6 +17,6 @@ const calendar = Content-type: application/json
 };
 
 let res = await client.api('/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars')
-	.post({calendar : calendar});
+	.post(calendar);
 
 ```

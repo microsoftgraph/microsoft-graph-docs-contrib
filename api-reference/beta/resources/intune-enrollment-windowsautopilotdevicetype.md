@@ -4,6 +4,7 @@ description: "Not yet documented"
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: enumPageType
 ---
 
 # windowsAutopilotDeviceType enum type
@@ -19,8 +20,6 @@ Not yet documented
 |:---|:---|:---|
 |windowsPc|0|Windows PC|
 |surfaceHub2|1|Surface Hub 2|
-
-
 
 
 

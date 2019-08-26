@@ -2,6 +2,9 @@
 title: "List secureScoreControlProfiles"
 description: "Retrieve the properties and relationships of a secureScoreControlProfiles object."
 localization_priority: Normal
+doc_type: apiPageType
+ms.prod: ""
+author: ""
 ---
 
 # List secureScoreControlProfiles
@@ -61,7 +64,7 @@ GET https://graph.microsoft.com/beta/security/secureScoreControlProfiles
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-list-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

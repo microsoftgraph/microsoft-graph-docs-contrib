@@ -2,6 +2,7 @@
 title: "List mailFolders"
 description: "Get all the mail folders in the signed-in user's mailbox."
 localization_priority: Normal
+doc_type: apiPageType
 author: "angelgolfer-ms"
 ms.prod: "outlook"
 ---
@@ -19,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Delegated (personal Microsoft account) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Application | Mail.Read, Mail.ReadWrite |
+|Application | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -57,7 +58,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailfolders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

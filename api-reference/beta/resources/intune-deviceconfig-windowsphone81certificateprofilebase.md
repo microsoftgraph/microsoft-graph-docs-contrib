@@ -4,6 +4,7 @@ description: "Base Windows Phone 8.1+ certificate profile."
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # windowsPhone81CertificateProfileBase resource type
@@ -113,8 +114,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
 
 
 
