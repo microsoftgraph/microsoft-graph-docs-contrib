@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
   "justificationText": "string",
   "policyTip": {"@odata.type": "microsoft.graph.chatMessagePolicyViolationPolicyTip"},
   "userAction": "string",
-  "verdictDetails": "string",
+  "verdictDetails": "string"
 }
 ```
 
