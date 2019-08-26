@@ -27,6 +27,6 @@ const mailboxSettings = {
 
 let res = await client.api('/me/mailboxSettings')
 	.version('beta')
-	.update({mailboxSettings : mailboxSettings});
+	.update(mailboxSettings);
 
 ```

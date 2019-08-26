@@ -26,6 +26,6 @@ const Stream = [
 
 let res = await client.api('/me/onenote/pages/{id}/content')
 	.version('beta')
-	.update({Stream : Stream});
+	.update(Stream);
 
 ```

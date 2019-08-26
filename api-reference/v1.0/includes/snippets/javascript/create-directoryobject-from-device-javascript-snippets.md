@@ -16,6 +16,6 @@ const directoryObject = {
 };
 
 let res = await client.api('/devices/{id}/registeredUsers')
-	.post({directoryObject : directoryObject});
+	.post(directoryObject);
 
 ```

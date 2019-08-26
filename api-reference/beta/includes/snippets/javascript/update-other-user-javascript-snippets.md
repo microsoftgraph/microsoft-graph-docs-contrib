@@ -19,6 +19,6 @@ const user = {
 
 let res = await client.api('/users/{id}')
 	.version('beta')
-	.update({user : user});
+	.update(user);
 
 ```

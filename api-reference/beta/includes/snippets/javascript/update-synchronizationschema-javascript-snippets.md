@@ -53,6 +53,6 @@ const synchronizationSchema = {
 
 let res = await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema')
 	.version('beta')
-	.put({synchronizationSchema : synchronizationSchema});
+	.put(synchronizationSchema);
 
 ```

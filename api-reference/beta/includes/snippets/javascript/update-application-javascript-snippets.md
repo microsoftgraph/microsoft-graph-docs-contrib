@@ -17,6 +17,6 @@ const application = {
 
 let res = await client.api('/applications/{id}')
 	.version('beta')
-	.update({application : application});
+	.update(application);
 
 ```
