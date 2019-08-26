@@ -4,6 +4,7 @@ description: "Retrieve a list of securityAction objects."
 localization_priority: Normal
 author: "preetikr"
 ms.prod: "security"
+doc_type: apiPageType
 ---
 
 # List securityActions
@@ -67,7 +68,7 @@ GET https://graph.microsoft.com/beta/security/securityActions
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-securityactions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-securityactions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

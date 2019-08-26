@@ -4,6 +4,7 @@ description: "Retrieve the properties and relationships of a call object."
 author: "VinodRavichandran"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
+doc_type: apiPageType
 ---
 
 # Get call
@@ -60,7 +61,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

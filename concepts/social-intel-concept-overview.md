@@ -84,7 +84,14 @@ The insights API provides a similar functionality with the [used](/graph/api/res
 
 ![Screenshot of a people card for a user in Outlook on the web, showing recent files](images/peoplecard-concept.png)
 
+## Why integrate with MyAnalytics (preview)?
+
+[MyAnalytics](https://docs.microsoft.com/en-us/workplace-analytics/myanalytics/index) provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
+
+The analytics API enables you to synchronize or integrate user analytics data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
+
 ## API reference
+
 Looking for the API reference for these services?
 
 - [People API in Microsoft Graph v1.0](/graph/api/resources/social-overview?view=graph-rest-1.0)
@@ -92,6 +99,7 @@ Looking for the API reference for these services?
 
 ## Next steps
 
-* Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people and insight APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People** and **Insights (beta)**.
+* Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People**, **Insights (beta)**, and **Analytics**.
 * Find more about the [people API](people-example.md) and the [person](/graph/api/resources/person?view=graph-rest-1.0) entity.
 * To get started with insights API, see [Use the insights API](/graph/api/resources/insights?view=graph-rest-beta).
+* Find more about the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).

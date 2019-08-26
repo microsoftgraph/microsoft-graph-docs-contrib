@@ -4,6 +4,7 @@ description: "A Domain Join Connector is a connector that is responsible to allo
 author: "rolyon"
 localization_priority: Normal
 ms.prod: "Intune"
+doc_type: resourcePageType
 ---
 
 # deviceManagementDomainJoinConnector resource type
@@ -53,8 +54,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-
 
 
 

@@ -15,6 +15,6 @@ const workbookChartGridlines = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/minorGridlines')
-	.update({workbookChartGridlines : workbookChartGridlines});
+	.update(workbookChartGridlines);
 
 ```

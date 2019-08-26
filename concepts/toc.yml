@@ -117,7 +117,11 @@
       href: intune-concept-overview.md
       displayName: Intune
     - name: Education
-      href: education-concept-overview.md
+      items:
+      - name: Overview
+        href: education-concept-overview.md
+      - name: Rubrics
+        href: education-rubric-overview.md
     - name: Files
       href: onedrive-concept-overview.md
       displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
@@ -217,14 +221,8 @@
         href: security-dataflow.md
       - name: Authorization
         href: security-authorization.md
-      - name: Integrate with a SIEM
-        items:
-        - name: Overview
-          href: security-siemintegration.md
-        - name: Splunk
-          href: security-splunk-siemintegration.md
-        - name: QRadar
-          href: security-qradar-siemintegration.md
+      - name: Integrated solutions
+        href: security-integration.md
       - name: Partner opportunities
         href: security-partner-overview.md
     - name: Sites and lists
@@ -292,6 +290,8 @@
       items:
       - name: Overview
         href: use-the-api.md
+      - name: Access data and methods
+        href: traverse-the-graph.md
       - name: Paging
         href: paging.md
       - name: Use query parameters

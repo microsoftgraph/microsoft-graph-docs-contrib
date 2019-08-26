@@ -8,11 +8,29 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var bookingAppointment = new BookingAppointment
 {
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"reminders@odata.type","#Collection(microsoft.graph.bookingReminder)"},
+		{"priceType@odata.type","#microsoft.graph.bookingPriceType"},
+		{"invoiceStatus@odata.type","#microsoft.graph.bookingInvoiceStatus"},
+		{"@odata.type","#microsoft.graph.bookingAppointment"}
+	},
 	CustomerEmailAddress = "jordanm@contoso.com",
 	CustomerLocation = new Location
 	{
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"uniqueIdType@odata.type","#microsoft.graph.locationUniqueIdType"},
+			{"locationType@odata.type","#microsoft.graph.locationType"},
+			{"@odata.type","#microsoft.graph.location"}
+		},
 		Address = new PhysicalAddress
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"type@odata.type","#microsoft.graph.physicalAddressType"},
+				{"@odata.type","#microsoft.graph.physicalAddress"}
+			},
 			City = "Buffalo",
 			CountryOrRegion = "USA",
 			PostalCode = "98052",
@@ -34,13 +52,21 @@ var bookingAppointment = new BookingAppointment
 	CustomerPhone = "213-555-0199",
 	End = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-01T15:30:00+03:00",
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
+		},
+		DateTime = "2018-05-01T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	InvoiceAmount = 10.0,
 	InvoiceDate = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-01T15:30:00+03:00",
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
+		},
+		DateTime = "2018-05-01T12:30:00+00:00",
 		TimeZone = "UTC"
 	},
 	InvoiceId = "1001",
@@ -55,18 +81,33 @@ var bookingAppointment = new BookingAppointment
 	{
 		new BookingReminder
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"},
+				{"@odata.type","#microsoft.graph.bookingReminder"}
+			},
 			Message = "This service is tomorrow",
 			Offset = "P1D",
 			Recipients = BookingReminderRecipients.AllAttendees
 		},
 		new BookingReminder
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"},
+				{"@odata.type","#microsoft.graph.bookingReminder"}
+			},
 			Message = "Please be available to enjoy your lunch service.",
 			Offset = "PT1H",
 			Recipients = BookingReminderRecipients.Customer
 		},
 		new BookingReminder
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"recipients@odata.type","#microsoft.graph.bookingReminderRecipients"},
+				{"@odata.type","#microsoft.graph.bookingReminder"}
+			},
 			Message = "Please check traffic for next cater.",
 			Offset = "PT2H",
 			Recipients = BookingReminderRecipients.Staff
@@ -75,8 +116,19 @@ var bookingAppointment = new BookingAppointment
 	ServiceId = "57da6774-a087-4d69-b0e6-6fb82c339976",
 	ServiceLocation = new Location
 	{
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"uniqueIdType@odata.type","#microsoft.graph.locationUniqueIdType"},
+			{"locationType@odata.type","#microsoft.graph.locationType"},
+			{"@odata.type","#microsoft.graph.location"}
+		},
 		Address = new PhysicalAddress
 		{
+			AdditionalData = new Dictionary<string, object>()
+			{
+				{"type@odata.type","#microsoft.graph.physicalAddressType"},
+				{"@odata.type","#microsoft.graph.physicalAddress"}
+			},
 			City = "Buffalo",
 			CountryOrRegion = "USA",
 			PostalCode = "98052",
@@ -97,7 +149,11 @@ var bookingAppointment = new BookingAppointment
 	ServiceNotes = "Customer requires punctual service.",
 	Start = new DateTimeTimeZone
 	{
-		DateTime = "2018-05-01T15:00:00+03:00",
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"@odata.type","#microsoft.graph.dateTimeTimeZone"}
+		},
+		DateTime = "2018-05-01T12:00:00+00:00",
 		TimeZone = "UTC"
 	}
 };

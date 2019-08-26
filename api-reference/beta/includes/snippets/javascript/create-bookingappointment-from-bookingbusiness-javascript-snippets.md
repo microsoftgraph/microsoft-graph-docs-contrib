@@ -119,6 +119,6 @@ const bookingAppointment = {
 
 let res = await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments')
 	.version('beta')
-	.post({bookingAppointment : bookingAppointment});
+	.post(bookingAppointment);
 
 ```

@@ -4,6 +4,7 @@ description: "Retrieve a list of worksheet objects."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
+doc_type: apiPageType
 ---
 
 # List worksheets
@@ -56,7 +57,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-worksheets-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-worksheets-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

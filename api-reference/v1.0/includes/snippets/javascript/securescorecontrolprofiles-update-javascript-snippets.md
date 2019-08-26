@@ -23,6 +23,6 @@ const secureScoreControlProfile = {
 };
 
 let res = await client.api('/security/secureScoreControlProfiles/NonOwnerAccess')
-	.update({secureScoreControlProfile : secureScoreControlProfile});
+	.update(secureScoreControlProfile);
 
 ```

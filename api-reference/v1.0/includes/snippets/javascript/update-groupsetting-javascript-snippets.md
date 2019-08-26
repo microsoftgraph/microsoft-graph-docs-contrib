@@ -70,6 +70,6 @@ const groupSetting = {
 };
 
 let res = await client.api('/groupSettings/{id}')
-	.update({groupSetting : groupSetting});
+	.update(groupSetting);
 
 ```

@@ -4,6 +4,7 @@ description: "Retrieve a list of notebook objects."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
+doc_type: apiPageType
 ---
 
 # List notebooks
@@ -63,7 +64,7 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-notebooks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-notebooks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

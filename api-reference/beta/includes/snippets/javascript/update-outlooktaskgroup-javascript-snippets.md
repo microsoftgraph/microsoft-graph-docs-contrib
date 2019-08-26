@@ -16,6 +16,6 @@ const outlookTaskGroup = {
 
 let res = await client.api('/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=')
 	.version('beta')
-	.update({outlookTaskGroup : outlookTaskGroup});
+	.update(outlookTaskGroup);
 
 ```
