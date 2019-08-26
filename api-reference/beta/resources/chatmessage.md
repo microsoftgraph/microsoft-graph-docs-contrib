@@ -24,6 +24,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Update chatMessage with DLP violation](../api/chatmessage-update-policyviolation.md)|none| Update a chatMessage with a Data Loss Prevention (DLP) policy violation.|
 |[Create chatMessage in a channel](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Create a new top-level message in a channel.|
 |[Reply to a message in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing message in a channel.|
+|[Create chatMessage in a chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a message in an existing 1:1 or group chat conversation.|
 |[List messages in a chat](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | List messages in a 1:1 or group chat. |
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
 |[List all hosted images](../api/chatmessagehostedimage-list-hostedimages.md) | [hostedImage](../resources/chatmessagehostedimage.md) collection| Get all hosted images in a message.|
