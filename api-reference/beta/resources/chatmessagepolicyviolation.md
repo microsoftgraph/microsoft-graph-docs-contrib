@@ -41,7 +41,7 @@ The following is a JSON representation of the resource.
   "dlpAction": {"@odata.type": "microsoft.graph.chatMessagePolicyViolationDlpActionType"},
   "justificationText": "string",
   "policyTip": {"@odata.type": "microsoft.graph.chatMessagePolicyViolationPolicyTip"},
-  "userAction": {"@Odata.type": "microsoft.graph.chatMessagePolicyViolationUserActionType"},
+  "userAction": {"string"},
   "verdictDetails": {"@Odata.type": "microsoft.graph.chatMessagePolicyViolationVerdictDetailsType"}
 }
 ```
