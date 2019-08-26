@@ -18,6 +18,6 @@ const unifiedRoleAssignment = {
 
 let res = await client.api('/roleManagement/directory/roleAssignments')
 	.version('beta')
-	.post({unifiedRoleAssignment : unifiedRoleAssignment});
+	.post(unifiedRoleAssignment);
 
 ```

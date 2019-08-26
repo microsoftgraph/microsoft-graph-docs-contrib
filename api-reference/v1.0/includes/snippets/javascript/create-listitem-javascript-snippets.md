@@ -19,6 +19,6 @@ const listItem = {
 };
 
 let res = await client.api('/sites/{site-id}/lists/{list-id}/items')
-	.post({listItem : listItem});
+	.post(listItem);
 
 ```
