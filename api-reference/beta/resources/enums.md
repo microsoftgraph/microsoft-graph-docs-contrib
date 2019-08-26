@@ -896,7 +896,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### chatMessagePolicyViolationUserActionType values
 
-| Property   | Int value |  Description |
+| Member   | Int value |  Description |
 |:---------------|:--------|:----------|
 | None | 0 | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
 | Override | 1 | Sender has overridden the message verdict and sent the message anyway.|
