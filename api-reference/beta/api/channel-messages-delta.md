@@ -1,6 +1,6 @@
 ---
 title: "Channel messages: delta"
-description: "Retrieve the list of messages (without the replies) in a channel of a team. By using delta query, you can get new or updated messages in a channel. To get the replies for a message, call the list message replies or the get message reply API."
+description: "Retrieve the list of messages (without the replies) in a channel of a team. By using delta query, you can get new or updated messages in a channel."
 localization_priority: Priority
 doc_type: apiPageType
 author: "clearab"
@@ -24,7 +24,7 @@ A GET request with the delta function returns either:
 
 State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `nextLink` or `deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the next round.
 
-See the complete documentation for [delta queries](/graph/delta-query-overview.md) for additional information on their use.
+For more information, see the [delta query](/graph/delta-query-overview.md) documentation.
 
 ## Permissions
 
