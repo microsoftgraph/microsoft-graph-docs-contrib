@@ -6,7 +6,7 @@ doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
-# chatMessagePolicyTip Resource
+# chatMessagePolicyTip resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
