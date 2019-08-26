@@ -90,6 +90,6 @@ const bookingStaffMember = {
 
 let res = await client.api('/bookingBusinesses/{id}/staffMembers')
 	.version('beta')
-	.post({bookingStaffMember : bookingStaffMember});
+	.post(bookingStaffMember);
 
 ```

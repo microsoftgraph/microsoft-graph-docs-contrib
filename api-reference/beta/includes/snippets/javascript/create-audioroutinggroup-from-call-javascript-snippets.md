@@ -23,6 +23,6 @@ const audioRoutingGroup = {
 
 let res = await client.api('/app/calls/{id}/audioRoutingGroups')
 	.version('beta')
-	.post({audioRoutingGroup : audioRoutingGroup});
+	.post(audioRoutingGroup);
 
 ```

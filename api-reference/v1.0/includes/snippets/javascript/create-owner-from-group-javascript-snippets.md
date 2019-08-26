@@ -15,6 +15,6 @@ const directoryObject = {
 };
 
 let res = await client.api('/groups/{id}/owners/$ref')
-	.post({directoryObject : directoryObject});
+	.post(directoryObject);
 
 ```

@@ -18,6 +18,6 @@ const messageRule = {
 };
 
 let res = await client.api('/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=')
-	.update({messageRule : messageRule});
+	.update(messageRule);
 
 ```

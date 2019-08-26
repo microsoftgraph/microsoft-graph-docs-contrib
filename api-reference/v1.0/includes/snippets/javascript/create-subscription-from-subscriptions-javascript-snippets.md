@@ -19,6 +19,6 @@ const subscription = {
 };
 
 let res = await client.api('/subscriptions')
-	.post({subscription : subscription});
+	.post(subscription);
 
 ```
