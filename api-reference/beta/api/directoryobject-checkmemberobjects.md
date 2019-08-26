@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /me/manager/checkMemberObjects
-POST /me/memberOf/{id}/checkMemberObjects
+POST /me/{id}/checkMemberObjects
 POST /users/{id}/manager/checkMemberObjects
 ```
 
@@ -46,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-| ids | String collection | A collection that contains the object IDs of the groups, directory roles, or administrative units, in which to check membership. Up to 20 objects may be specified.|
+| ids | String collection | A collection that contains the object IDs of the groups, directory roles, administrative units, or roleTemplate IDs of directory roles, in which to check membership. Up to 20 objects may be specified.|
 
 ## Response
 

@@ -1,17 +1,17 @@
 ---
-title: "administrativeUnit: checkMemberObjects"
-description: "Check for membership in a list of groups, directory roles, or administrative units for the specified administrative unit object."
+title: "directoryRole: checkMemberObjects"
+description: "Check for membership in a list of groups, directory roles, or administrative units for the specified directory role object."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# administrativeUnit: checkMemberObjects
+# directoryRole: checkMemberObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check for membership in a list of groups, directory roles, or administrative units for the specified administrative unit object. This function is transitive.
+Check for membership in a list of groups, directory roles, or administrative units for the specified directory role object. This function is transitive.
 
 ## Permissions
 
@@ -19,16 +19,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All |
+| Delegated (work or school account)     | Directory.Read.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All |
+| Application                            | Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /administrativeUnits/{id}/checkMemberObjects
+POST /directoryRoles/{id}/checkMemberObjects
 ```
 
 ## Request headers
@@ -44,11 +44,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|ids|String collection| A collection that contains the object IDs of the groups, directory roles, or administrative units, in which to check membership. Up to 20 objects may be specified. |
+|ids|String collection|A collection that contains the object IDs of the groups, directory roles, administrative units, or roleTemplate IDs of directory roles, in which to check membership. Up to 20 objects may be specified.|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a new String collection object in the response body.
+If successful, this method returns a `200 OK` response code and a String collection object in the response body.
 
 ## Examples
 
@@ -59,11 +59,11 @@ The following is an example of how to call this API.
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "administrativeunit_checkmemberobjects"
+  "name": "directoryrole_checkmemberobjects"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/administrativeUnits/{id}/checkMemberObjects
+POST https://graph.microsoft.com/beta/directoryRoles/{id}/checkMemberObjects
 Content-type: application/json
 
 {
@@ -90,7 +90,6 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
   "value": [
     "String-value"
@@ -102,7 +101,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "administrativeUnit: checkMemberObjects",
+  "description": "directoryRole: checkMemberObjects",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
