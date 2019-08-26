@@ -16,6 +16,6 @@ const educationRubric = {
 
 let res = await client.api('/education/me/rubrics/{id}')
 	.version('beta')
-	.update({educationRubric : educationRubric});
+	.update(educationRubric);
 
 ```

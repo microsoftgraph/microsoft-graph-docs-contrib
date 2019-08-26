@@ -15,6 +15,6 @@ const directoryRole = {
 };
 
 let res = await client.api('/directoryRoles')
-	.post({directoryRole : directoryRole});
+	.post(directoryRole);
 
 ```

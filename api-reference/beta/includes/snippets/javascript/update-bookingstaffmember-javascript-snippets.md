@@ -78,6 +78,6 @@ const bookingStaffMember = {
 
 let res = await client.api('/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/staffmembers/8ee1c803-a1fa-406d-8259-7ab53233f148')
 	.version('beta')
-	.update({bookingStaffMember : bookingStaffMember});
+	.update(bookingStaffMember);
 
 ```

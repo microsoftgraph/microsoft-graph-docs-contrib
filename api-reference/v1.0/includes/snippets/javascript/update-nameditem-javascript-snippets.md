@@ -20,6 +20,6 @@ const workbookNamedItem = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}')
-	.update({workbookNamedItem : workbookNamedItem});
+	.update(workbookNamedItem);
 
 ```

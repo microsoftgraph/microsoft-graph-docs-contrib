@@ -29,6 +29,6 @@ const team = {
 
 let res = await client.api('/groups/{id}/team')
 	.version('beta')
-	.put({team : team});
+	.put(team);
 
 ```

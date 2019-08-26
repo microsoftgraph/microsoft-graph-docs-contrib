@@ -19,6 +19,6 @@ const workbookRangeBorder = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders')
-	.post({workbookRangeBorder : workbookRangeBorder});
+	.post(workbookRangeBorder);
 
 ```

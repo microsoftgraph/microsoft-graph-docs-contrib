@@ -17,6 +17,6 @@ const publishedResource = {
 
 let res = await client.api('/onPremisesPublishingProfiles/provisioning/publishedResources')
 	.version('beta')
-	.post({publishedResource : publishedResource});
+	.post(publishedResource);
 
 ```
