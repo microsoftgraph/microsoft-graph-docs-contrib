@@ -8094,6 +8094,9 @@
           href: api/domain-update.md
         - name: Verify domain
           href: api/domain-verify.md
+      - name: Entitlement management
+        href: resources/entitlementmanagement-root.md
+        items:
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
