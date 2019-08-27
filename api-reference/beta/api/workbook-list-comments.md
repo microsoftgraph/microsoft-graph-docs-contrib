@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [workbookComment](../resources/workbookcomment.md) objects in the response body.
+If successful, this method returns `200 OK` response code and a collection of [workbookComment](../resources/workbookcomment.md) objects in the response body.
 
 ## Examples
 
