@@ -1,7 +1,7 @@
 ---
 title: "Sending a 1:1 chat message using a bot"
 description: ""
-author: "nkramer"
+author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
