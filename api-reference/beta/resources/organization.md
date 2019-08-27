@@ -59,7 +59,7 @@ This resource lets you add your own data to custom properties using [extensions]
 
 | Relationship  | Type	|Description|
 |:---------------|:--------|:----------|
-|certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage  certificate-based authentication configuration.|
+|certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage  certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization resource. Nullable.|
 
 ## JSON representation

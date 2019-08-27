@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of a certificatebasedauthconfiguration object.
+Get the properties of a certificateBasedAuthConfiguration object.
 
 ## Permissions
 

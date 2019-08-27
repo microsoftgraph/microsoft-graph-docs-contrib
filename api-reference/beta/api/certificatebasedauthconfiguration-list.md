@@ -13,6 +13,9 @@ doc_type: "apiPageType"
 
 Get a list of certificatebasedauthconfiguration objects.
 
+> [!NOTE]
+> Only a single instance of certificateBasedAuthConfiguration can be created (the collection can only have one member). It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
