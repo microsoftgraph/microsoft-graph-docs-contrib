@@ -86,7 +86,7 @@ The following example shows a series of 3 requests to synchronize the messages i
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
-See also what you'll do in the [next round](#example-2-retreiving-addtional-changes).
+See also what you'll do in the [next round](#example-2-retrieving-additional-changes).
 
 ### Initial request
 
@@ -310,7 +310,7 @@ Content-type: application/json
 }
 ```
 
-## Example 2: Retreiving addtional changes
+## Example 2: Retrieving additional changes
 
 Using the `deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then. Your request will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
