@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # List comments
 
-Retrieve a list of workbookcomment objects.
+Retrieve a list of  [**workbookcomment**](../resources/workbookcomment.md) objects.
 
 ## Permissions
 
