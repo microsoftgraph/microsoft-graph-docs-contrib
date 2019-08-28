@@ -93,7 +93,7 @@ by providing a [delta](../api/event-delta.md) function.
 |webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL can be accessed from within an iFrame.|
 
 > [!NOTE]
-> The URL specified by the **webLink** property opens the corresponding event only in earlier versions of Outlook on the web. The following is its URL format, with `{event-id}` being the URL-encoded value of the **id** property:
+> The **webLink** property specifies a URL that opens the event in only earlier versions of Outlook on the web. The following is its URL format, with _{event-id}_ being the URL-encoded value of the **id** property:
 > `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
 > To open the URL in a current version of Outlook on the web, convert the URL to the following format:
