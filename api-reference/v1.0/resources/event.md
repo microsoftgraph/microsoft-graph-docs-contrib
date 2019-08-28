@@ -94,9 +94,11 @@ by providing a [delta](../api/event-delta.md) function.
 
 > [!NOTE]
 > The **webLink** property specifies a URL that opens the event in only earlier versions of Outlook on the web. The following is its URL format, with _{event-id}_ being the URL-encoded value of the **id** property:
+>
 > `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
 > To open the URL in a current version of Outlook on the web, convert the URL to the following format:
+>
 > `https://outlook.office365.com/calendar/item/{event-id}`
 
 
