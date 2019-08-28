@@ -23,7 +23,7 @@ where files are shared, and where tabs are added.
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
-|[Get chatMessages delta](../api/chatMessages-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental chat messages in a channel. |
+|[Get message delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
 |[List channel members](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) collection| List the members of a channel. |
 |[Get channel member](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Get a member of a channel. |
@@ -40,7 +40,7 @@ where files are shared, and where tabs are added.
 
 ## Properties
 
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |description|String|Optional textual description for the channel.|
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
@@ -52,7 +52,7 @@ where files are shared, and where tabs are added.
 
 ## Relationships
 
-| Relationship | Type	|Description|
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable. Currently this API only supports reading but will eventually support writing messages too.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
