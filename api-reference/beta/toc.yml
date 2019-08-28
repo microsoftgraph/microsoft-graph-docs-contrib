@@ -7968,16 +7968,16 @@
           items:
           - name: List directory provisioning
             href: api/provisioningobjectsummary-list.md
-      - name: Certificate-based auth
+      - name: Certificate-based auth configuration
         href: resources/certificatebasedauthconfiguration.md
         items:
-        - name: List certificate-based auth config
+        - name: List
           href: api/certificatebasedauthconfiguration-list.md
-        - name: Create certificate-based auth config
-          href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-        - name: Get certificate-based auth config
+        - name: Get
           href: api/certificatebasedauthconfiguration-get.md
-        - name: Delete certificate-based auth config
+        - name: Create
+          href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+        - name: Delete
           href: api/certificatebasedauthconfiguration-delete.md 
       - name: Contracts
         href: resources/contract.md

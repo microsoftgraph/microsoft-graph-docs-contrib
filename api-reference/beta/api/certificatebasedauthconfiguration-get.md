@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of a certificateBasedAuthConfiguration object.
+Get the properties of a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 
 ## Permissions
 
@@ -30,10 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

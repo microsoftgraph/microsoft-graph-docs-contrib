@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a certificateBasedAuthConfiguration.
+Delete a [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 
 ## Permissions
 
@@ -56,7 +56,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/certificateBasedAuthConfiguration/{id}
+DELETE https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfiguration/{id}
 ```
 
 ### Response

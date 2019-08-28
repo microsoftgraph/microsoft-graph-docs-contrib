@@ -1,5 +1,5 @@
 ---
-title: "List certificateBasedAuthConfiguration"
+title: "List certificateBasedAuthConfigurations"
 description: "Get a list of certificatebasedauthconfiguration objects."
 localization_priority: Normal
 author: "davidmu1"
@@ -7,14 +7,14 @@ ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---
 
-# List certificateBasedAuthConfiguration
+# List certificateBasedAuthConfigurations
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of certificatebasedauthconfiguration objects.
+Get a list of [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) objects.
 
 > [!NOTE]
-> Only a single instance of certificateBasedAuthConfiguration can be created (the collection can only have one member). It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.
+> Only a single instance of certificateBasedAuthConfiguration can exist in the collection. It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.
 
 ## Permissions
 
@@ -33,10 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /organization/{id}/certificateBasedAuthConfiguration
 ```
-
-## Optional query parameters
-
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 <!-- {
   "blockType": "request",
-  "name": "get_certificatebasedauthconfiguration"
+  "name": "get_certificatebasedauthconfigurations"
 }-->
 
 ```http
