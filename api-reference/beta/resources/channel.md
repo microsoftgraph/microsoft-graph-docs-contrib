@@ -23,7 +23,7 @@ where files are shared, and where tabs are added.
 |[Get channel](../api/channel-get.md) | [channel](channel.md) | Read properties and relationships of the channel.|
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Update properties of the channel.|
 |[Delete channel](../api/channel-delete.md) | None | Delete a channel.|
-|[Get channel messages delta](../api/channel-messages-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
+|[Get chatMessages delta](../api/chatMessages-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental chat messages in a channel. |
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a channel |
 |[List channel members](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) collection| List the members of a channel. |
 |[Get channel member](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Get a member of a channel. |

@@ -9489,8 +9489,8 @@
           href: api/channel-patch.md
         - name: List channel messages
           href: api/channel-list-messages.md
-        - name: Get channel message delta
-          href: api/channel-messages-delta.md
+        - name: Get chat messages delta
+          href: api/chatmessages-delta.md
         - name: Get channel message
           href: api/channel-get-message.md
         - name: List message replies
