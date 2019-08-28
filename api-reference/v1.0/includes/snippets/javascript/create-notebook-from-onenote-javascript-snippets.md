@@ -15,6 +15,6 @@ const notebook = {
 };
 
 let res = await client.api('/me/onenote/notebooks')
-	.post({notebook : notebook});
+	.post(notebook);
 
 ```

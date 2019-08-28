@@ -50,6 +50,6 @@ const shift = {
 
 let res = await client.api('/teams/{teamId}/schedule/shifts')
 	.version('beta')
-	.post({shift : shift});
+	.post(shift);
 
 ```

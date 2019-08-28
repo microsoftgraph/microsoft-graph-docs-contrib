@@ -17,6 +17,6 @@ const attachment = {
 };
 
 let res = await client.api('/me/events/AAMkAGI1AAAt9AHjAAA=/attachments')
-	.post({attachment : attachment});
+	.post(attachment);
 
 ```
