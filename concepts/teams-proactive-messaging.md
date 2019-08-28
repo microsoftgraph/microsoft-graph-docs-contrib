@@ -1,49 +1,55 @@
 ---
-title: "Sending a 1:1 chat message using a bot"
+title: "Proactive messaging using a bot in Microsoft Teams"
 description: ""
 author: "clearab"
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
+# Proactive messaging using a bot in Microsoft Teams
 
-# Sending a 1:1 chat message using a bot
+A proactive message is a message sent to a Microsoft Teams user without a user initiating the conversation. Custom apps in Microsoft Teams can send proactive messages to users using a bot. However, to do so the bot needs to be installed either as a personal app, or in a team that the user is a member of. This requirement can be prohibitive in scenarios where you need to proactively message a group of users that may or may not have the Teams app installed.
 
-Chatbots for Microsoft teams can send messages to
+This article outlines how you can combine the Microsoft Graph with a Microsoft Teams app to install the app for your users so that you can use your Teams app to send them a proactive message without them having to manually install the app.
 
-## Sending 1:1 messages
+At a high level, you'll need to:
 
-You can send 1:1 chat messages using a combination of Graph and [bots](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/bots/bots-overview).
-These messages will appear to the user as coming from the bot.
+* [Create your Teams app and bot](#create-your-teams-app-and-bot)
+* [Deploy your app to your tenant app catalog](#deploy-your-app-to-your-tenant-app-catalog)
+* [Install the app for your users](#install-the-app-for-your-users)
 
-There's three steps to sending the 1:1 message from the bot:
-* Ensure the bot has been installed for the user (or in a team the user belongs to)
-* Get the chat thread id
-* Send the message from the bot
+## Create your Teams app and bot
 
-Note: there is also a Graph API to [send a 1:1 chatMessage as the logged in user](https://docs.microsoft.com/en-us/graph/api/channel-post-messages?view=graph-rest-beta&tabs=http). 
-That API has a lot of restrictions, and the message is reported as sent by the user rather than the app so using a bot is generally the better option.
+If you do not already have a Microsoft Teams app with a bot that can send the message, you'll need to create one. See the [bot documentation](/microsoftteams/platform/concepts/bots/bots-overview) in the Teams platform documentation. For specifics on creating a bot for proactive messaging, see [this article](/platform/concepts/bots/bot-conversations/bots-conv-proactive).
 
-## Ensure the bot has been installed 
+You can also use the [Company Communicator app template](https://github.com/OfficeDev/microsoft-teams-company-communicator-app) as a good starting point for your app. This app template is a production-ready Microsoft Teams app capable of creating, scheduling and distributing company-wide messages.
 
-Bots in Microsoft teams can send 1:1 messages to users that have the bot installed.
+When creating your app make sure you take note of the `id` you use in your application manifest; you'll need it to install the app in a subsequent step.
 
-First, ensure your application has the right permission scopes – you'll need User.ReadWrite.All or Directory.ReadWrite.All to install apps for a user.
-You'll also need Chat.Read.All for a subsequent step.
-Both permissions will require admin consent.
-You'll want to use application permissions rather than user delegated because you will be installing apps to users other than yourself.
+If you are doing this for a large organization, the welcome messages from your bot may get throttled. If possible, perform the installations in batches, and implement back-off functionality in your bot. See: 
 
-Next, check to see if your bot (Teams app) is already installed for that user:
+## Deploy your app to your tenant app catalog
+
+Microsoft Graph can only install apps that have been added to your tenant app catalog, or are available in the public Microsoft Teams app store. If you're working with a new app, you'll need to make sure it is [added to your tenant app catalog](/MicrosoftTeams/tenant-apps-catalog-teams).
+
+## Install the app for your users
+
+To install the Teams app for your users, you'll first need to ensure your Graph application has the right permission scopes – you'll need `User.ReadWrite.All` or `Directory.ReadWrite.All` to install the Teams app. You'll also need `Chat.Read.All` for a subsequent step. Both permissions will require admin consent, and you'll need to use application permissions rather than user delegated because you will be installing apps to users other than yourself.
+
+### Check to see if the app is already installed
+
+First, you'll want to check to see if your Teams app is already installed for the users you want to install it from, as in the example below:
 
 ```http
 GET /users/{user-id}/teamwork/installedApps?$expand=teamsAppDefinition&$filter=teamsAppDefinition/teamsAppId eq '{teamsAppid}'
 ```
 
-Where {teamsAppId} is the id in the Teams app manifest. 
-(This may be different from your appid for Graph calls, and from your botId)
+Where `{teamsAppId}` is the `id` in the Teams app manifest that you made note of previously. This may be different from your `appid` for Graph calls, and from your `botId`.
 
-That will return either an empty array (meaning the app is not installed), or an array with one entry (meaning it is).
+The call will return an empty array if the app is not installed, or an array with a single [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) if it is already installed.
 
-If the app is not already installed for that user, you can then install it:
+### Install the app
+
+If the app is not already installed for that user, you can then install it as in the example below:
 
 ```http
 POST /users/{user-id}/teamwork/installedApps
@@ -52,9 +58,7 @@ POST /users/{user-id}/teamwork/installedApps
 }
 ```
 
-See https://github.com/microsoftgraph/microsoft-graph-docs/blob/ac-proactive-messaging/api-reference/beta/api/user-add-teamsappinstallation.md for details.
-
-(If the app was already installed this call will fail)
+See [Install app for user](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) for additional information.
 
 If the user has Microsoft Teams running, they may or may not see the app installation right away – they may need to restart the app to see the installation.
 
