@@ -125,7 +125,7 @@ This resource supports:
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/group-renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. <br><br>Returned by default. Read-only.|
 |securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports $filter.|
 |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group. <br><br>Returned only on $select. |
-|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `private`, `public`, or `hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
+|visibility|String| Specifies the visibility of an Office 365 group. Possible values are: `Private`, `Public`, or `Hiddenmembership`; blank values are treated as public.  See [group visibility options](#group-visibility-options) to learn more.<br>Visibility can be set only when a group is created; it is not editable.<br>Visibility is supported only for unified groups; it is not supported for security groups. <br><br>Returned by default.|
 
 
 ### Group visibility options
