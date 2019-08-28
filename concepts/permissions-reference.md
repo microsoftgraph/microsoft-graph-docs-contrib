@@ -496,6 +496,14 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Entitlement management permissions
+
+#### Delegated permissions
+
+|Permission|Display String|Description|Admin Consent Required|
+|:----------|:--------------|:-----------|:-------|
+|_EntitlementManagement.ReadWrite.All_|Read and write entitlement management resources|Allows the app to request access to and management of access packages and related entitlement management resources on behalf of the signed-in user.|Yes|
+
 ## Files permissions
 
 #### Delegated permissions
