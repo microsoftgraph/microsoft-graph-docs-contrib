@@ -70,6 +70,6 @@ const event = {
 };
 
 let res = await client.api('/me/events')
-	.post({event : event});
+	.post(event);
 
 ```

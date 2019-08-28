@@ -18,6 +18,6 @@ const driveItem = {
 };
 
 let res = await client.api('/me/drive/items/{item-id}')
-	.update({driveItem : driveItem});
+	.update(driveItem);
 
 ```

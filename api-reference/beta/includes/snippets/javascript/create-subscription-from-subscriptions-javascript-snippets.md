@@ -20,6 +20,6 @@ const subscription = {
 
 let res = await client.api('/subscriptions')
 	.version('beta')
-	.post({subscription : subscription});
+	.post(subscription);
 
 ```

@@ -40,6 +40,6 @@ const event = {
 
 let res = await client.api('/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events')
 	.version('beta')
-	.post({event : event});
+	.post(event);
 
 ```

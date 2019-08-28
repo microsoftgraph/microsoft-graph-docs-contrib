@@ -19,6 +19,6 @@ const mailFolder = {
 };
 
 let res = await client.api('/me/mailfolders/AQMkADYAAAIBDAAAAA==/childfolders')
-	.post({mailFolder : mailFolder});
+	.post(mailFolder);
 
 ```
