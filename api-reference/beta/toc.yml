@@ -9489,7 +9489,7 @@
           href: api/channel-patch.md
         - name: List channel messages
           href: api/channel-list-messages.md
-        - name: Get chat messages delta
+        - name: Get channel messages delta
           href: api/chatmessages-delta.md
         - name: Get channel message
           href: api/channel-get-message.md
