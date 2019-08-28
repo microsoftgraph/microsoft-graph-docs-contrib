@@ -17,12 +17,12 @@ By creating access packages with the roles users need to have across those resou
 
 The entitlement management resource types include:
 
-- Access package
-- Access package assignment policy
-- Access package assignment request
-- Access package assignment
-- Access package catalog
-
+- [accessPackage](accesspackage.md): an access package defines the collections of resource roles and the policies for how one or more users may obtain access to those resources.
+- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md): an access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment.
+- [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): an access package assignment request is created by a user who wishes to obtain an access package assignment.
+- [accessPackageAssignment](accesspackageassignment.md): an access package assignment is an assignment of an access package to a particular subject, for a period of time.
+- [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md): an access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment.
+- [accessPackageCatalog](accesspackagecatalog.md): an access package catalog is a container for access packages.
 
 Note that the entitlement management feature, including the API, is included in Azure AD Premium P2.  The tenant where entitlement management is being used must have a valid purchased or trial Azure AD Premium P2 or EMS E5 subscription.
 
