@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check for membership in a list of groups, directory roles, or administrative units for the specified group. This function is transitive.
+Check for membership in a list of groups or administrative units for the specified group. This method is transitive.
 
 ## Permissions
 
@@ -19,10 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All
-|
+| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All<br><br>And:<br>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All<br><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Group.Read.All, Group.ReadWrite.All |
+| Application                            | Group.Read.All, Group.ReadWrite.All<br><br>And:<br>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All<br><br>Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 

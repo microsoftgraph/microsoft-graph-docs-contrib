@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Check for membership in a list of group, directory role, or administrative unit objects for the specified user object. This function is transitive.
+Check for membership in a list of group, directory role, or administrative unit objects for the specified user object. This method is transitive.
 
 ## Permissions
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, User.ReadWrite.All and Group.Read.All, Directory.Read.All and Group.Read.All, User.ReadBasic.All and Group.ReadWrite.All, User.Read.All and Group.ReadWrite.All, User.ReadWrite.All and Group.ReadWrite.All, Directory.Read.All and Group.ReadWrite.All |
+| Delegated (work or school account)     | User.ReadBasic, User.Read.All, User.ReadWrite.All<br><br>And:<br><ul><li>If checking for membership in groups, one or more of these permissions are also needed: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles, one or more of these permissions are also needed: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul><br><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | User.Read.All and Group.Read.All, User.ReadWrite.All and Group.Read.All, Directory.Read.All and Group.Read.All, User.Read.All and Group.ReadWrite.All, User.ReadWrite.All and Group.ReadWrite.All, Directory.Read.All and Group.ReadWrite.All |
+| Application                            | Device.ReadWrite.All<br><br>And:<br><ul><li>If checking for membership in groups, one or more of these permissions are also needed: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles, one or more of these permissions are also needed: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul><br><br>Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 

@@ -30,7 +30,6 @@ This resource supports:
 |[Remove a member](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role.|
 |[List scoped-role members](../api/directoryrole-list-members.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership resource collection.|
 |[delta](../api/directoryrole-delta.md)|directoryRole collection| Get incremental changes for directory roles. |
-|[checkMemberObjects](../api/directoryrole-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. |
 
 ## Properties
 | Property   | Type |Description|

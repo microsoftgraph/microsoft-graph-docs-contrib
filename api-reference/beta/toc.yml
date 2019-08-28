@@ -8011,6 +8011,8 @@
           href: api/device-list-memberof.md
         - name: List device transitive groups
           href: api/device-list-transitivememberof.md
+        - name: Check member objects
+          href: api/device-checkmemberobjects.md
       - name: Directory object
         href: resources/directoryobject.md
         items:
@@ -8453,6 +8455,8 @@
           href: api/serviceprincipal-update.md
         - name: Delete service principal
           href: api/serviceprincipal-delete.md
+        - name: Check member objects
+          href: api/serviceprincipal-checkmemberobjects.md
       - name: Subscribed sku
         href: resources/subscribedsku.md
         items:
