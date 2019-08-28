@@ -1017,7 +1017,7 @@ With the Azure AD v2.0 endpoint, you specify the _offline\_access_ permission in
 
 #### Delegated
 
-* _OrgContact.Read.All_: Get all organizational contacts (`GET /orgContacts`).
+* _OrgContact.Read.All_: Get all organizational contacts (`GET /contacts`).
 
 ---
 
