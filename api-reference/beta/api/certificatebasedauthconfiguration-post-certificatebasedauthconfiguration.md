@@ -43,11 +43,11 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 ## Request body
 
-The following properties are required to create the  [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object:
+The following properties are required to create the [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) collection |Collection of certificate authorities which creates a trusted certificate chain.  Each member of the collection must contain **certificate** and **isRootAuthority** properties. |
+|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) collection |Collection of certificate authorities that creates a trusted certificate chain.  Each member of the collection must contain **certificate** and **isRootAuthority** properties. |
 
 ## Response
 
