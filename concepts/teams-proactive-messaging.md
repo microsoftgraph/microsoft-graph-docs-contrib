@@ -43,7 +43,7 @@ First, you'll want to check to see if your Teams app is already installed for th
 GET /users/{user-id}/teamwork/installedApps?$expand=teamsAppDefinition&$filter=teamsAppDefinition/teamsAppId eq '{teamsAppid}'
 ```
 
-Where `{teamsAppId}` is the `id` in the Teams app manifest that you made note of previously. This may be different from your `appid` for Graph calls, and from your `botId`.
+Where `{teamsAppId}` is the `id` in the Teams app manifest that you made note of previously. Not that this may be different from your `appid` for Graph calls, and from your `botId`. You may find it useful to install the app for a user and test the call against that user to ensure you've got the correct `id` value.
 
 The call will return an empty array if the app is not installed, or an array with a single [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta) if it is already installed.
 
