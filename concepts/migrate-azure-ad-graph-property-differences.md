@@ -195,11 +195,11 @@ The Azure AD Graph TenantDetails resource is renamed to organization in Microsof
 
 ## TrustedCasForPasswordlessAuth property differences
 
-The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta), and is only available in Microsoft Graph beta.  While there are no property differences, there are differences in the certificateAuthority resource type used by the **certificateAuthorities** property.
+The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta), and is only available in the Microsoft Graph beta endpoing. There are no property differences; however, there are differences in the **certificateAuthority** resource type used by the **certificateAuthorities** property.
 
 ### CertificateAuthorityInformation
 
-The Azure AD Graph CertificateAuthorityInformation is renamed to certificateAuthority in Microsoft Graph. Here are the property differences:
+The Azure AD Graph CertificateAuthorityInformation is renamed to **certificateAuthority** in Microsoft Graph. The following are the property differences.
 
 |Azure AD Graph <br>(v1.6) property |Microsoft Graph<br> property|Comments|
 |---|---|---|

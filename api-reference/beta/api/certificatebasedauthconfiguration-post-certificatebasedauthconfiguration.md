@@ -14,7 +14,7 @@ doc_type: "apiPageType"
 Create a new [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) object.
 
 > [!NOTE]
-> Only a single instance of certificateBasedAuthConfiguration can be created (the collection can only have one member). It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.
+> Only a single instance of a **certificateBasedAuthConfiguration** can be created (the collection can only have one member). It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.
 
 ## Permissions
 
@@ -43,11 +43,11 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 
 ## Request body
 
-The following properties are required to create the  [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object:
+The following properties are required to create the [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) object.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) collection |Collection of certificate authorities which creates a trusted certificate chain.  Each member of the collection must contain **certificate** and **isRootAuthority** properties. |
+|certificateAuthorities| [certificateAuthority](../resources/certificateauthority.md) collection |Collection of certificate authorities that creates a trusted certificate chain.  Each member of the collection must contain **certificate** and **isRootAuthority** properties. |
 
 ## Response
 
