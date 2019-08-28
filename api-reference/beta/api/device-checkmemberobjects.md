@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Device.Read<br><br>And:<br><ul><li>If checking for membership in groups, one or more of these permissions are also needed: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li></ul><br><br>Directory.Read.All, Directory.ReadWrite.All |
+| Delegated (work or school account)     | Device.Read<br>And:<ul><li>If checking for membership in groups, one or more of these permissions are also needed: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li></ul>Directory.Read.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Device.ReadWrite.All<br><br>And:<br><ul><li>If checking for membership in groups, one or more of these permissions are also needed: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li></ul><br><br>Directory.Read.All, Directory.ReadWrite.All |
+| Application                            | Device.ReadWrite.All<br>And:<ul><li>If checking for membership in groups, one or more of these permissions are also needed: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li></ul>Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
