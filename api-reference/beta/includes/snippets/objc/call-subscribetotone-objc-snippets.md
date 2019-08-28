@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSString *clientContext = @"d45324c1-fcb5-430a-902c-f20af696537c";
+NSString *clientContext = @"fd1c7836-4d84-4e24-b6aa-23188688cc54";
 payloadDictionary[@"clientContext"] = clientContext;
 
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];

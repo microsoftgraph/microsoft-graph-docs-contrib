@@ -21,6 +21,6 @@ const driveItem = {
 
 let res = await client.api('/drive/bundles')
 	.version('beta')
-	.post({driveItem : driveItem});
+	.post(driveItem);
 
 ```
