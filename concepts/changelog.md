@@ -77,6 +77,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
+| Change | Beta | Changed the [List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) namespace.|
 | Addition | Beta | Added the [roleManagement](/graph/api/resources/roleManagement?view=graph-rest-beta) resource that provides access to role definitions and role assignments surfaced from RBAC providers. |
 | Addition | Beta | Added the [unifiedRoleDefinition](/graph/api/resources/unifiedRoleDefinition?view=graph-rest-beta) resource that represents a collection of permissions listing the operations that can be performed. |
 | Addition | Beta | Added the [unifiedRoleAssignment](/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) resource that grants access to resources. |
