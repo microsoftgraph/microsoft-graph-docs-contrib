@@ -9490,7 +9490,7 @@
         - name: List channel messages
           href: api/channel-list-messages.md
         - name: Get channel messages delta
-          href: api/chatmessages-delta.md
+          href: api/chatmessage-delta.md
         - name: Get channel message
           href: api/channel-get-message.md
         - name: List message replies
