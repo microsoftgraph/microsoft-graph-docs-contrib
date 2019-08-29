@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{97A21473-8339-4BF0-BCB6-F55E4909FFB8}
 ```
 
 ### Response
