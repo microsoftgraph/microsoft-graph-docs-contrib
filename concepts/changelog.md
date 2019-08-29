@@ -101,7 +101,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|Beta|Added `priority` property to [plannerTask](/graph/api/resources/plannertask?view=graph-rest-beta) entity.|
+|Addition|Beta|Added the **priority** property to the [plannerTask](/graph/api/resources/plannertask?view=graph-rest-beta) entity.|
 
 ### Teamwork (Microsoft Teams)
 
