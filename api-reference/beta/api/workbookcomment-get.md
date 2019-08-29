@@ -1,6 +1,6 @@
 ---
 title: "Get workbookComment"
-description: "Retrieve the properties and relationships of workbookcomment object."
+description: "Get the properties and relationships of a workbookcomment object."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Get workbookComment
 
-Retrieve the properties and relationships of [**workbookComment**](../resources/workbookcomment.md) object.
+Get the properties and relationships of a [workbookComment](../resources/workbookcomment.md) object.
 
 ## Permissions
 
