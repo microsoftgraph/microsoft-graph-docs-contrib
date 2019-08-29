@@ -26,9 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drive/root/workbook/comments/{id}
-GET /me/drive/root/workbook/comments/{id}
-GET /workbooks/{id}/workbook/comments/{id}
+GET workbook/comments/{id}
 ```
 
 ## Optional query parameters
@@ -39,7 +37,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -60,7 +58,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{97A21473-8339-4BF0-BCB6-F55E4909FFB8}
+GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}
 ```
 
 ### Response
