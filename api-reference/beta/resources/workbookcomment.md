@@ -3,31 +3,28 @@ title: "workbookComment resource type"
 description: "Definition of workbookComment resource type"
 localization_priority: Normal
 author: "grangeryy"
-ms.prod: ""
+ms.prod: "excel"
 doc_type: "resourcePageType"
 ---
 
 # workbookComment resource type
 
-PROVIDE DESCRIPTION HERE
+Represent a comment in workbook.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read properties and relationships of workbookComment object. |
-| [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new workbookCommentReply by posting to the replies collection. |
-| [List replies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Get a workbookCommentReply object collection. |
-| [Update](../api/workbookcomment-update.md) | [workbookComment](workbookcomment.md) | Update workbookComment object. |
-| [Delete](../api/workbookcomment-delete.md) | None | Delete workbookComment object. |
+| [List comments](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a workbookComment object collection. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String||
-|contentType|String||
-|id|String| Read-only.|
+|content|String|The content of comment.|
+|contentType|String|Indicates the type for the comment.|
+|id|String| Represents the comment identifier. Read-only.|
 
 ## Relationships
 
