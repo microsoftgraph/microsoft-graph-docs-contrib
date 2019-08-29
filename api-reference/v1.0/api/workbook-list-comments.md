@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Files.ReadWrite. |
+| Delegated (work or school account)     | Files.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -26,9 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drive/root/workbook/comments
-GET /me/drive/root/workbook/comments
-GET /workbooks/{id}/workbook/comments
+GET workbook/comments
 ```
 
 ## Optional query parameters
@@ -39,7 +37,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -47,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and a collection of [workbookComment](../resources/workbookcomment.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [workbookComment](../resources/workbookcomment.md) objects in the response body.
 
 ## Examples
 
@@ -83,7 +81,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "content": "This is text of comment",
+      "content": "This is text of comment.",
       "contentType": "plain",
       "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}"
     }
