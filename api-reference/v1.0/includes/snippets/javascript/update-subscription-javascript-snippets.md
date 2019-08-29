@@ -15,6 +15,6 @@ const subscription = {
 };
 
 let res = await client.api('/subscriptions/{id}')
-	.update({subscription : subscription});
+	.update(subscription);
 
 ```

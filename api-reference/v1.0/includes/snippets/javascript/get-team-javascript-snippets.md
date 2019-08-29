@@ -15,6 +15,6 @@ const teamsAppInstallation = {
 };
 
 let res = await client.api('/teams/{id}/installedApps')
-	.post({teamsAppInstallation : teamsAppInstallation});
+	.post(teamsAppInstallation);
 
 ```
