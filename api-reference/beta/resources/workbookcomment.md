@@ -1,6 +1,6 @@
 ---
 title: "workbookComment resource type"
-description: "Definition of workbookComment resource type"
+description: "Represents a comment in workbook."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
@@ -9,20 +9,21 @@ doc_type: "resourcePageType"
 
 # workbookComment resource type
 
-Represent a comment in workbook.
+Represents a comment in workbook.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read properties and relationships of workbookComment object. |
-| [List comments](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a workbookComment object collection. |
+| [List workbookComments](../api/workbook-list-comments.md) | [workbookComment](workbookComment.md) collection | Get a **workbookComment** object collection. |
+| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read the properties and relationships of a **workbookComment** object. |
+
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of comment.|
+|content|String|The content of the comment.|
 |contentType|String|Indicates the type for the comment.|
 |id|String| Represents the comment identifier. Read-only.|
 
