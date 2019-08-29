@@ -3,13 +3,13 @@ title: "List replies"
 description: "Retrieve a list of workbookcommentreply objects."
 localization_priority: Normal
 author: "grangeryy"
-ms.prod: ""
+ms.prod: "excel"
 doc_type: "apiPageType"
 ---
 
 # List replies
 
-Retrieve a list of workbookcommentreply objects.
+Retrieve a list of [**workbookCommentReply**](../resources/workbookcommentreply.md) objects.
 
 ## Permissions
 
@@ -83,9 +83,9 @@ Content-type: application/json
 {
   "value": [
     {
-      "content": "content-value",
-      "contentType": "contentType-value",
-      "id": "id-value"
+      "content": "This is the first piece of reply",
+      "contentType": "plain",
+      "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}"
     }
   ]
 }
