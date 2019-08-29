@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Create workbookCommentReply
 
-Create a new [**workbookCommentReply**](../resources/workbookcommentreply.md) object.
+Create a new [workbookCommentReply](../resources/workbookcommentreply.md) object.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ POST /workbook/comments/{id}/replies
 
 ## Request body
 
-In the request body, supply a JSON representation of [workbookCommentReply](../resources/workbookcommentreply.md) object.
+In the request body, supply a JSON representation of a [workbookCommentReply](../resources/workbookcommentreply.md) object.
 
 ## Response
 
