@@ -9,23 +9,23 @@ doc_type: "resourcePageType"
 
 # workbookCommentReply resource type
 
-PROVIDE DESCRIPTION HERE
+Represents a reply to an excel comment.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Read properties and relationships of workbookCommentReply object. |
-| [Update](../api/workbookcommentreply-update.md) | [workbookCommentReply](workbookcommentreply.md) | Update workbookCommentReply object. |
-| [Delete](../api/workbookcommentreply-delete.md) | None | Delete workbookCommentReply object. |
-
+| [List replies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Retrieve a list of workbookcommentreply objects. |
+| [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new workbookCommentReply. |
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String||
-|contentType|String||
-|id|String| Read-only.|
+|content|String|The content of replied comment.|
+|contentType|String|Indicates the type for the replied comment.|
+|id|String|Represents the comment identifier. Read-only.|
+
 
 ## Relationships
 
