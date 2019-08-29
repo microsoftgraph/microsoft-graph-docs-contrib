@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Create workbookCommentReply
 
-Use this API to create a new workbookCommentReply.
+Create a new [**workbookCommentReply**](../resources/workbookcommentreply.md) object.
 
 ## Permissions
 
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | Files.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of [workbookCommentReply](../r
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [workbookCommentReply](../resources/workbookcommentreply.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a new [workbookCommentReply](../resources/workbookcommentreply.md) object in the response body.
 
 ## Examples
 
@@ -60,8 +60,8 @@ POST https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}/replies
 Content-type: application/json
 
 {
-  "content": "content-value",
-  "contentType": "contentType-value"
+  "content": "This is my reply to the comment.",
+  "contentType": "plain"
 }
 ```
 
@@ -82,9 +82,9 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "content": "content-value",
-  "contentType": "contentType-value",
-  "id": "id-value"
+  "content": "This is my reply to the comment.",
+  "contentType": "plain",
+  "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}"
 }
 ```
 
