@@ -3,13 +3,13 @@ title: "List replies"
 description: "Retrieve a list of workbookcommentreply objects."
 localization_priority: Normal
 author: "grangeryy"
-ms.prod: ""
+ms.prod: "excel"
 doc_type: "apiPageType"
 ---
 
 # List replies
 
-Retrieve a list of workbookcommentreply objects.
+Retrieve a list of [**workbookCommentReply**](../resources/workbookcommentreply.md) objects.
 
 ## Permissions
 
@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Not supported. |
+| Delegated (work or school account)     | Files.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}/replies
+GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}/replies
 ```
 
 ### Response
@@ -83,9 +83,9 @@ Content-type: application/json
 {
   "value": [
     {
-      "content": "content-value",
-      "contentType": "contentType-value",
-      "id": "id-value"
+      "content": "This is the first piece of reply",
+      "contentType": "plain",
+      "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}"
     }
   ]
 }
