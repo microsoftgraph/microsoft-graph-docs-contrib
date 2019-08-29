@@ -26,9 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /drive/root/workbook/comments/{id}/replies
-GET /me/drive/root/workbook/comments/{id}/replies
-GET /workbooks/{id}/workbook/comments/{id}/replies
+GET /workbook/comments/{id}/replies
 ```
 
 ## Optional query parameters
@@ -39,7 +37,7 @@ This method supports some of the OData query parameters to help customize the re
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
