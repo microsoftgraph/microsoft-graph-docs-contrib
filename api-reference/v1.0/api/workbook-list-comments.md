@@ -1,6 +1,6 @@
 ---
-title: "List comments"
-description: "Retrieve a list of workbookcomment objects."
+title: "List workbookComments"
+description: "Retrieve a list of workbookComment objects."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # List comments
 
-Retrieve a list of  [**workbookcomment**](../resources/workbookcomment.md) objects.
+Retrieve a list of  [workbookComment](../resources/workbookcomment.md) objects.
 
 ## Permissions
 
