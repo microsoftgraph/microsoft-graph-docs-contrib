@@ -25,6 +25,6 @@ const contact = {
 };
 
 let res = await client.api('/me/contacts')
-	.post({contact : contact});
+	.post(contact);
 
 ```

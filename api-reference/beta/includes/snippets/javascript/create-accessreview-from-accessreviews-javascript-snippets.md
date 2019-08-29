@@ -52,6 +52,6 @@ const accessReview = {
 
 let res = await client.api('/accessReviews')
 	.version('beta')
-	.post({accessReview : accessReview});
+	.post(accessReview);
 
 ```

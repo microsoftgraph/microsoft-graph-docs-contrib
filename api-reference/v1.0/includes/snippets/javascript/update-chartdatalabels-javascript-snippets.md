@@ -19,6 +19,6 @@ const workbookChartDataLabels = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels')
-	.update({workbookChartDataLabels : workbookChartDataLabels});
+	.update(workbookChartDataLabels);
 
 ```

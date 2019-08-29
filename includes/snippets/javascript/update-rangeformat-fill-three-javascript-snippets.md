@@ -15,6 +15,6 @@ const workbookRangeFill = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/Sheet1/range(address='$C$1')/format/fill')
-	.update({workbookRangeFill : workbookRangeFill});
+	.update(workbookRangeFill);
 
 ```

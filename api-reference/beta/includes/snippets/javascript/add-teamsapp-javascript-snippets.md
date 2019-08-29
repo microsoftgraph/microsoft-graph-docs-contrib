@@ -16,6 +16,6 @@ const teamsAppInstallation = {
 
 let res = await client.api('/teams/87654321-0abc-zqf0-321456789q/installedApps')
 	.version('beta')
-	.post({teamsAppInstallation : teamsAppInstallation});
+	.post(teamsAppInstallation);
 
 ```

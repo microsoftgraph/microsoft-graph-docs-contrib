@@ -51,6 +51,6 @@ const call = {
 
 let res = await client.api('/app/calls')
 	.version('beta')
-	.post({call : call});
+	.post(call);
 
 ```

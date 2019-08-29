@@ -16,6 +16,6 @@ const workbookChartAxisTitle = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/title')
-	.update({workbookChartAxisTitle : workbookChartAxisTitle});
+	.update(workbookChartAxisTitle);
 
 ```

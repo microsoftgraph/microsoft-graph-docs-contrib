@@ -20,6 +20,6 @@ const workbookChartDataLabels = {
 
 let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/datalabels')
 	.version('beta')
-	.update({workbookChartDataLabels : workbookChartDataLabels});
+	.update(workbookChartDataLabels);
 
 ```

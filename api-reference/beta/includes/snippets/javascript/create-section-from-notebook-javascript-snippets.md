@@ -16,6 +16,6 @@ const onenoteSection = {
 
 let res = await client.api('/me/onenote/notebooks/{id}/sections')
 	.version('beta')
-	.post({onenoteSection : onenoteSection});
+	.post(onenoteSection);
 
 ```
