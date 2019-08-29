@@ -17,7 +17,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Files.ReadWrite. |
+| Delegated (work or school account)     | Files.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -80,9 +80,9 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "content": "content-value",
-  "contentType": "contentType-value",
-  "id": "id-value"
+  "content": "This is text of comment.",
+  "contentType": "Plain",
+  "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}"
 }
 ```
 
