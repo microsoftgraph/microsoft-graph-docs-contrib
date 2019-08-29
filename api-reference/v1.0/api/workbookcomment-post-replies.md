@@ -26,16 +26,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /drive/root/workbook/comments/{id}/replies
-POST /me/drive/root/workbook/comments/{id}/replies
-POST /workbooks/{id}/workbook/comments/{id}/replies
+POST /workbook/comments/{id}/replies
 ```
 
 ## Request headers
 
 | Name          | Description   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
