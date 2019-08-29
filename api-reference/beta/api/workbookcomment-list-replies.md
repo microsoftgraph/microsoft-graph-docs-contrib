@@ -1,15 +1,15 @@
 ---
-title: "List replies"
-description: "Retrieve a list of workbookcommentreply objects."
+title: "List workbookCommentReplies"
+description: "Retrieve a list of workbookCommentReplies objects."
 localization_priority: Normal
 author: "grangeryy"
 ms.prod: "excel"
 doc_type: "apiPageType"
 ---
 
-# List replies
+# List workbookCommentReplies
 
-Retrieve a list of [**workbookCommentReply**](../resources/workbookcommentreply.md) objects.
+Retrieve a list of [workbookCommentReply](../resources/workbookcommentreply.md) objects.
 
 ## Permissions
 
