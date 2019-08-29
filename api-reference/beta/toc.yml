@@ -7966,7 +7966,7 @@
         - name: Provisioning logs
           href: resources/provisioningobjectsummary.md
           items:
-          - name: List directory provisioning
+          - name: List provisioning
             href: api/provisioningobjectsummary-list.md
       - name: Certificate-based auth configuration
         href: resources/certificatebasedauthconfiguration.md
