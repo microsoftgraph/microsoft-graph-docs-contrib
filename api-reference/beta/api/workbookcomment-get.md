@@ -58,7 +58,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}
+GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}
 ```
 
 ### Response
