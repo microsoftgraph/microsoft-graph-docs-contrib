@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a String collect
 
 ## Examples
 
-The following is an example of how to call this API.
+The following example shows how to call this API.
 
 ### Request
 
@@ -78,10 +78,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
-
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
