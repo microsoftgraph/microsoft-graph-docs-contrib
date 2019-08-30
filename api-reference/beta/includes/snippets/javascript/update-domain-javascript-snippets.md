@@ -20,6 +20,6 @@ const domain = {
 
 let res = await client.api('/domains/contoso.com')
 	.version('beta')
-	.update({domain : domain});
+	.update(domain);
 
 ```

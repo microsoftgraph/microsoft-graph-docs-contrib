@@ -26,6 +26,6 @@ const governanceRoleAssignmentRequest = {
 
 let res = await client.api('/privilegedAccess/azureResources/roleAssignmentRequests')
 	.version('beta')
-	.post({governanceRoleAssignmentRequest : governanceRoleAssignmentRequest});
+	.post(governanceRoleAssignmentRequest);
 
 ```
