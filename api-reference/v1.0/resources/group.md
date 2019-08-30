@@ -134,9 +134,9 @@ Here's what each **visibility** property value means:
  
 |Value|Description|
 |:----|-----------|
-| `Public` | Anyone can join the group without needing owner permission.<br>Anyone can view the contents of the group.|
-| `Private` | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
-| `Hiddenmembership` | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
+| Public | Anyone can join the group without needing owner permission.<br>Anyone can view the contents of the group.|
+| Private | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.|
+| Hiddenmembership | Owner permission is needed to join the group.<br>Non-members cannot view the contents of the group.<br>Non-members cannot see the members of the group.<br>Administrators (global, company, user, and helpdesk) can view the membership of the group.<br>The group appears in the global address book (GAL).|
 
 
 ## Relationships
