@@ -12,7 +12,7 @@ doc_type: apiPageType
 Returns the directory objects specified in a list of IDs.
 
 >[!NOTE]
->The directory objects returned are the full objects containing all their properties. The $select query option is not available for this operation.
+>The directory objects returned are the full objects containing all their properties. The `$select` query option is not available for this operation.
 
 >[!NOTE]
 >This API has a [known issue](/graph/known-issues#incomplete-objects-when-using-getbyids-request). Not all directory objects returned are the full objects containing all their properties.
