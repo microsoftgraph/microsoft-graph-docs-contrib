@@ -6,7 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var provisioning = await graphClient.AuditLogs.Provisioning
+var delta = await graphClient.Teams["{id}"].Channels["{id}"].Messages
+	.Delta()
 	.Request()
 	.GetAsync();
 
