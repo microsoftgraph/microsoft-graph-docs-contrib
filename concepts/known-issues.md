@@ -37,6 +37,10 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) should return a `204 No content` response for successful revocations, and an HTTP error code (4xx or 5xx) if anything goes wrong with the request.  However, due to a service issue, this API returns a `200 OK` and a Boolean parameter that is always true.  Until this is fixed, developers are simply advised to treat any 2xx return code as success for this API.
 
+### Incomplete objects when using getByIds request
+
+Requesting objects using [Get directory objects from a list of ids](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) should return full objects. However currently [user](/graph/api/resources/user?view=graph-rest-1.0) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when used in combination with the `$select` query option more complete [user](/graph/api/resources/user?view=graph-rest-1.0) objects will be returned. This behavior is not in accordance with the OData specifications and may be corrected in the future. Therefore this workaround should only be used when you provide `$select=` with all the properties you are interested in and only when future breaking changes to this workaround are acceptable.
+
 ## Microsoft Teams
 
 ### GET /teams and POST /teams are not supported
