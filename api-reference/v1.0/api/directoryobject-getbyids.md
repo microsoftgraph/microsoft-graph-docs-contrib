@@ -11,7 +11,11 @@ doc_type: apiPageType
 
 Returns the directory objects specified in a list of IDs.
 
->**Note:** Not all directory objects returned are the full objects containing **all** their properties. For example, [user](../resources/user.md) objects are returned with a limited set of properties. As a temporary workaround, when used in combination with the `$select` query option more complete [user](../resources/user.md) objects will be returned. This behavior is not in accordance with the OData specifications and may be corrected in the future. Therefore this workaround should only be used when you provide `$select=` with all the properties you are interested in and only when future breaking changes to this workaround are acceptable.
+>[!NOTE]
+>The directory objects returned are the full objects containing all their properties. The $select query option is not available for this operation.
+
+>[!NOTE]
+>This API has a [known issue](/graph/known-issues#incomplete-objects-when-using-getbyids-request). Not all directory objects returned are the full objects containing all their properties.
 
 Some common uses for this function are to:
 
