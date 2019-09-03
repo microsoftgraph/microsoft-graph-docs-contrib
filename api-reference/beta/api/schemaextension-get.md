@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_schemaextension"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 ```
 # [C#](#tab/csharp)

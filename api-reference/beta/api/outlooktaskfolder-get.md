@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_outlooktaskfolder"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAAABrJAAA=
 ```
 # [C#](#tab/csharp)

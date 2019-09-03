@@ -75,7 +75,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365groupsactivitystorage"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365GroupsActivityStorage(period='D7')
 ```
 # [C#](#tab/csharp)

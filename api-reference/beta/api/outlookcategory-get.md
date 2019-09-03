@@ -51,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_outlookcategory"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/masterCategories/de912e4d-c790-4da9-949c-ccd933aaa0f7
 ```
 # [C#](#tab/csharp)

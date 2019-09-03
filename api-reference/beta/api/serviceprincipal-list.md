@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
   "blockType": "request",
   "name": "get_serviceprincipals"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals
 ```
 # [C#](#tab/csharp)

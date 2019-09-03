@@ -89,7 +89,7 @@ See:</br>
   "blockType": "request",
   "name": "directoryRole_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/delta
 ```
 # [C#](#tab/csharp)
