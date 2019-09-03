@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All<br>And:<br><ul><li>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li></ul><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Delegated (work or school account)     | Group.Read.All, Group.ReadWrite.All<br>And:<br><ul><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li></ul><br>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Group.Read.All, Group.ReadWrite.All<br>And:<br><ul><li>If checking for membership in administrative units, one or more of these permissions are also needed: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</ul></li><br>Directory.Read.All, Directory.ReadWrite.All |
+| Application                            | Group.Read.All, Group.ReadWrite.All<br>And:<br><ul><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</ul></li><br>Directory.Read.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -78,7 +78,9 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response. Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response. 
+
+> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
