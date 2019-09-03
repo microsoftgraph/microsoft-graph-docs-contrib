@@ -10,8 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/auditLogs/provisioning')
+let res = await client.api('/teams/{id}/channels/{id}/messages/delta')
 	.version('beta')
+	.skiptoken('c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA=')
 	.get();
 
 ```
