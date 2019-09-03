@@ -72,7 +72,7 @@ Here is an example of the request.
   "name": "event_get_attachments_beta"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ```
 # [C#](#tab/csharp)

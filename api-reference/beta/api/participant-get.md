@@ -53,7 +53,7 @@ The following example shows the request.
   "blockType": "request",
   "name": "get-participant"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 ```
 # [C#](#tab/csharp)

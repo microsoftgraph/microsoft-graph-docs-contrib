@@ -62,7 +62,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_channel"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
 

@@ -63,7 +63,7 @@ The following example requests event bodies to be returned in text format.
   "blockType": "request",
   "name": "group_get_calendarviews"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-10-01T19:00:00.00
 Prefer: outlook.body-content-type="text"
 ```

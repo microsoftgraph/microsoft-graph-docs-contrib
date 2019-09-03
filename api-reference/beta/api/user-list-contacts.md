@@ -80,7 +80,7 @@ The following example gets the **displayName** and **emailAddresses** properties
   "blockType": "request",
   "name": "user_get_contacts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/contacts?$select=displayName,emailAddresses
 ```
 # [C#](#tab/csharp)

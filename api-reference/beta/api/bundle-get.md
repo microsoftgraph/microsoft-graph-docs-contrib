@@ -64,7 +64,7 @@ Read the [Error Responses][error-response] topic for more info about how errors 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 ```
 # [C#](#tab/csharp)
@@ -120,7 +120,7 @@ You can use the [`expand`](/graph/query-parameters) query string parameter to in
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 ```
 # [C#](#tab/csharp)
