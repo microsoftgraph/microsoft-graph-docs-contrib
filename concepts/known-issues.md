@@ -39,7 +39,7 @@ The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=g
 
 ### Incomplete objects when using getByIds request
 
-Requesting objects using [Get directory objects from a list of ids](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) should return full objects. However currently [user](/graph/api/resources/user?view=graph-rest-1.0) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when used in combination with the `$select` query option more complete [user](/graph/api/resources/user?view=graph-rest-1.0) objects will be returned. This behavior is not in accordance with the OData specifications and may be corrected in the future. Therefore this workaround should only be used when you provide `$select=` with all the properties you are interested in and only when future breaking changes to this workaround are acceptable.
+Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) should return full objects. However, currently [user](/graph/api/resources/user?view=graph-rest-1.0) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user?view=graph-rest-1.0) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
 
 ## Microsoft Teams
 
