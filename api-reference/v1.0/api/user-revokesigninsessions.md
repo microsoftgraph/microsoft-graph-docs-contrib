@@ -37,6 +37,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
 
 ## Request body
 This operation has no request content.

@@ -25,6 +25,6 @@ const team = {
 };
 
 let res = await client.api('/groups/{id}/team')
-	.put({team : team});
+	.put(team);
 
 ```

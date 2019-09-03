@@ -16,6 +16,6 @@ const workbookTableRow = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}')
-	.update({workbookTableRow : workbookTableRow});
+	.update(workbookTableRow);
 
 ```

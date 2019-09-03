@@ -85,7 +85,7 @@ appropriate [state tokens](/graph/delta-query-overview), to get the set of incre
   "blockType": "request",
   "name": "event_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendarView/delta?startdatetime={start_datetime}&enddatetime={end_datetime}
 
 Prefer: odata.maxpagesize=2

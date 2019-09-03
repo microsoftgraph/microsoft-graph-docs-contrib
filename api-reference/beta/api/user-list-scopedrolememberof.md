@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_scopedadministratorof"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
 ```
 # [C#](#tab/csharp)
@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/me/scopedAdministratorOf
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-scopedadministratorof-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-scopedadministratorof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

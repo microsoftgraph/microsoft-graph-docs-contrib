@@ -57,7 +57,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "schedule-list-timeoffreasons"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 ```
 # [C#](#tab/csharp)
@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-list-timeoffreasons-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/schedule-list-timeoffreasons-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

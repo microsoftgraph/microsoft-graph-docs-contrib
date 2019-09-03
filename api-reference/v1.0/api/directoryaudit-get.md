@@ -58,7 +58,7 @@ Here is an example of the request.
   "name": "get_directoryaudit"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 ```
 # [C#](#tab/csharp)

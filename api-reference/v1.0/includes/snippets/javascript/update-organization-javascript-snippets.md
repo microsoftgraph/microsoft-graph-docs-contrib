@@ -23,6 +23,6 @@ const organization = {
 };
 
 let res = await client.api('/organization/{id}')
-	.update({organization : organization});
+	.update(organization);
 
 ```

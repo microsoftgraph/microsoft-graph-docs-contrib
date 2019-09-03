@@ -26,6 +26,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 - Fencing
 - Notifications
 - Onboarding policies, settings, and details
+- Resource Access Policy
 - Remote access
 - Remote assistance partners
 - Role-based access control (RBAC) policies
@@ -141,6 +142,8 @@ The deviceManagement resource represents a container whose contents vary accordi
 |exchangeOnPremisesPolicies|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) collection|The list of Exchange On Premisis policies configured by the tenant.|
 |exchangeOnPremisesPolicy|[deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md)|The policy which controls mobile device access to Exchange On Premises|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) collection|The list of Mobile threat Defense connectors configured by the tenant.|
+|**Resource Access Polcy**|
+|derivedCredentials|[deviceManagementDerivedCredentialSettings](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) collection|Collection of Derived credential settings associated with account.|
 |**Remote access**|
 |userPfxCertificates|[userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) collection|Collection of PFX certificates associated with a user.|
 |**Remote assistance**|

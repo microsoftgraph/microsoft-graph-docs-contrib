@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and collection of [o
   "blockType": "request",
   "name": "get_oauth2permissiongrants"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 ```
 # [C#](#tab/csharp)
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-oauth2permissiongrants-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-oauth2permissiongrants-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

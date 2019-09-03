@@ -19,6 +19,6 @@ const scopedRoleMembership = {
 
 let res = await client.api('/administrativeUnits/{id}/scopedRoleMembers')
 	.version('beta')
-	.post({scopedRoleMembership : scopedRoleMembership});
+	.post(scopedRoleMembership);
 
 ```

@@ -48,7 +48,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 # [C#](#tab/csharp)
@@ -61,10 +61,6 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-analytics-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

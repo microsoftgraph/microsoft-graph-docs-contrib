@@ -88,7 +88,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_signins"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
 # [C#](#tab/csharp)
@@ -101,10 +101,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-signins-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signins-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

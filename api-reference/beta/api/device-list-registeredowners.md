@@ -53,7 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_registeredowners"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}/registeredOwners
 ```
 # [C#](#tab/csharp)
@@ -66,10 +66,6 @@ GET https://graph.microsoft.com/beta/devices/{id}/registeredOwners
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-registeredowners-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-registeredowners-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

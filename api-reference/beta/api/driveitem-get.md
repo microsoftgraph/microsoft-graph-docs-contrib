@@ -66,7 +66,7 @@ Here is an example of the request to the root folder of the user's OneDrive.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
-```http
+```msgraph-interactive
 GET /me/drive/root
 ```
 # [C#](#tab/csharp)
@@ -79,10 +79,6 @@ GET /me/drive/root
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-item-metadata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

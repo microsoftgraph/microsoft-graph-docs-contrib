@@ -57,7 +57,7 @@ The following values are valid for the **format** parameter:
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
-```http
+```msgraph-interactive
 GET /drive/items/{item-id}/content?format={format}
 ```
 # [C#](#tab/csharp)
@@ -70,10 +70,6 @@ GET /drive/items/{item-id}/content?format={format}
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-item-content-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/convert-item-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

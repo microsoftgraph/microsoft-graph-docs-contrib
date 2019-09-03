@@ -27,6 +27,6 @@ const securityAction = {
 
 let res = await client.api('/security/securityActions')
 	.version('beta')
-	.post({securityAction : securityAction});
+	.post(securityAction);
 
 ```
