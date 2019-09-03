@@ -58,7 +58,7 @@ The following example retrieves a specific **identityProvider**.
   "blockType": "request",
   "name": "get_identityprovider"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
 # [C#](#tab/csharp)

@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
        "tags": "service.graph",
        "target": "action" } -->
 
-```http
+```msgraph-interactive
 GET /me/drive/recent
 ```
 # [C#](#tab/csharp)

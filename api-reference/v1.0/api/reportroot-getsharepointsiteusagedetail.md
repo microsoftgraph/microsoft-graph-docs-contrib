@@ -89,7 +89,7 @@ The following is an example of the request.
   "name": "reportroot_getsharepointsiteusageuserdetail"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageDetail(period='D7')
 ```
 # [C#](#tab/csharp)

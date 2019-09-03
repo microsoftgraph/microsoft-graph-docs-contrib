@@ -91,7 +91,7 @@ The following is an example of the request.
   "name": "list_provisioningobjectsummary"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
 # [C#](#tab/csharp)
@@ -235,7 +235,7 @@ The following is an example of the request.
   "name": "list_provisioningobjectsummary_error"
 } -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/provisioning
 ```
 # [C#](#tab/csharp)
