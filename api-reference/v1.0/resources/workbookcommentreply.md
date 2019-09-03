@@ -3,33 +3,33 @@ title: "workbookCommentReply resource type"
 description: "Definition of workbookCommentReply resource type"
 localization_priority: Normal
 author: "grangeryy"
-ms.prod: ""
+ms.prod: "excel"
 doc_type: "resourcePageType"
 ---
 
 # workbookCommentReply resource type
 
-Represents a reply to an excel comment.
+Represents a reply to an Excel comment.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Read properties and relationships of workbookCommentReply object. |
-| [List replies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Retrieve a list of workbookcommentreply objects. |
-| [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new workbookCommentReply. |
+| [Get workbookCommentReply](../api/workbookcommentreply-get.md) | [workbookCommentReply](workbookcommentreply.md) | Read the properties and relationships of a **workbookCommentReply** object. |
+| [List replies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Retrieve a list of **workbookcommentreply** objects. |
+| [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new **workbookCommentReply** object. |
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|content|String|The content of replied comment.|
-|contentType|String|Indicates the type for the replied comment.|
+|content|String|The content of a comment reply.|
+|contentType|String|Indicates the type for the comment reply.|
 |id|String|Represents the comment identifier. Read-only.|
 
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
