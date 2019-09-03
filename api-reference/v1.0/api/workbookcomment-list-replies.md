@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # List replies
 
-Retrieve a list of [**workbookCommentReply**](../resources/workbookcommentreply.md) objects.
+Retrieve a list of [workbookCommentReply](../resources/workbookcommentreply.md) objects.
 
 ## Permissions
 
