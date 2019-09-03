@@ -7,7 +7,7 @@ ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# TableColumn resource type
+# workbookTableColumn resource type
 
 Represents a column in a table.
 
