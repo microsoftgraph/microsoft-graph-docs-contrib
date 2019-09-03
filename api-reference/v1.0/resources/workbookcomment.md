@@ -9,15 +9,15 @@ doc_type: "resourcePageType"
 
 # workbookComment resource type
 
-Represent a comment in workbook.
+Represents a comment in workbook.
 
 ## Methods
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read properties and relationships of workbookComment object. |
-| [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new workbookCommentReply by posting to the replies collection. |
-| [List replies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Get a workbookCommentReply object collection. |
+| [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read the properties and relationships of workbookComment object. |
+| [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new **workbookCommentReply** by posting to the replies collection. |
+| [List replies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Get a **workbookCommentReply** object collection. |
 
 ## Properties
 
