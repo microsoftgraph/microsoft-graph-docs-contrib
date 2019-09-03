@@ -62,7 +62,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "user_list_teamsApps"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
 # [C#](#tab/csharp)

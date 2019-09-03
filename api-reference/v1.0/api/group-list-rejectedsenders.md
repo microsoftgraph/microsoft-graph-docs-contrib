@@ -49,7 +49,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_rejectedsenders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
 # [C#](#tab/csharp)

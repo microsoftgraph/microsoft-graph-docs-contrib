@@ -87,7 +87,7 @@ of incremental changes since the last delta query. For an example that shows a r
   "blockType": "request",
   "name": "message_delta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/{id}/messages/delta
 
 Prefer: odata.maxpagesize=2

@@ -78,7 +78,7 @@ The first example gets the [emailAddress](../resources/emailaddress.md) objects 
   "blockType": "request",
   "name": "user_get_rooms_in_tenant"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/findRooms
 ```
 # [C#](#tab/csharp)
@@ -152,7 +152,7 @@ The second example gets the [emailAddress](../resources/emailaddress.md) objects
   "blockType": "request",
   "name": "user_get_rooms_from_specific_list"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com') 
 ```
 # [C#](#tab/csharp)
