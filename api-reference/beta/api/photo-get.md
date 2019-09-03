@@ -51,7 +51,7 @@ Here is an example of the request for photo metadata.
   "blockType": "request",
   "name": "get_photo"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
 # [C#](#tab/csharp)

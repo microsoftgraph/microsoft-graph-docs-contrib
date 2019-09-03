@@ -74,7 +74,7 @@ This example gets the default, top 10 messages in the signed-in user's mailbox. 
   "blockType": "request",
   "name": "get_messages"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ```
 # [C#](#tab/csharp)

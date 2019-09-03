@@ -60,7 +60,7 @@ The following example retrieves all **trustFrameworkPolicies**.
   "blockType": "request",
   "name": "get_trustFrameworks"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/policies
 ```
 # [C#](#tab/csharp)

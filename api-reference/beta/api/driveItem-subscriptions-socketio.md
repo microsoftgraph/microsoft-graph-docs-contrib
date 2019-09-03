@@ -47,7 +47,7 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
-```http
+```msgraph-interactive
 GET /me/drive/root/subscriptions/socketIo
 ```
 # [C#](#tab/csharp)

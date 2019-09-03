@@ -79,7 +79,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "event_get_attachments_v1"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 ```
 # [C#](#tab/csharp)
