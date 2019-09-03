@@ -8110,22 +8110,26 @@
         items:
         - name: Access package
           href: resources/accesspackage.md
+          items:
           - name: Get accessPackage
             href: api/accesspackage-get.md
         - name: Access package assignment
           href: resources/accesspackageassignment.md
         - name: Access package assignment policy
           href: resources/accesspackageassignmentpolicy.md
+          items:
           - name: Get accessPackageAssignmentPolicy
             href: api/accesspackageassignmentpolicy-get.md
         - name: Access package assignment request
           href: resources/accesspackageassignmentrequest.md
+          items:
           - name: Get accessPackageAssignmentRequest
             href: api/accesspackageassignmentrequest-get.md
         - name: Access package assignement resource role
           href: resources/accesspackageassignmentresourcerole.md
         - name: Access package catalog
           href: resources/accesspackagecatalog.md
+          items:
           - name: Get accessPackageCatalog
             href: api/accesspackagecatalog-get.md
       - name: Feature rollout policy
