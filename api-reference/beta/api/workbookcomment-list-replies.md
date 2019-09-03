@@ -79,7 +79,9 @@ Content-type: application/json
     {
       "content": "This is the first piece of reply.",
       "contentType": "plain",
-      "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
+      "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}" 
+    },
+    {
       "content": "This is the second piece of reply.",
       "contentType": "plain",
       "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFF9}"
