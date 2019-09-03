@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_buckets"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/plans/2txjA-BMZEq-bKi6Wfj5aGQAB1OJ/buckets
 ```
 # [C#](#tab/csharp)

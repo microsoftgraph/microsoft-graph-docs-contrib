@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_posts"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ```
 # [C#](#tab/csharp)

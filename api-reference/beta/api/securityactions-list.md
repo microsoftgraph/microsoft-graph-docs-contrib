@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_securityactions"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/securityActions
 ```
 # [C#](#tab/csharp)

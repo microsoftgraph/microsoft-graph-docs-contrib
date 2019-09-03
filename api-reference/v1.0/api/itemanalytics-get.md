@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-analytics" } -->
 
-```http
+```msgraph-interactive
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 # [C#](#tab/csharp)
