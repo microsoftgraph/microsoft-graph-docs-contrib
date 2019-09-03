@@ -67,7 +67,7 @@ The following is an example of the request.
   "name": "reportroot_getoffice365activationsusercounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserCounts
 ```
 # [C#](#tab/csharp)

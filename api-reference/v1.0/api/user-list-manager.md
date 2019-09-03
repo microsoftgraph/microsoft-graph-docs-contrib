@@ -48,7 +48,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_manager"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
 # [C#](#tab/csharp)

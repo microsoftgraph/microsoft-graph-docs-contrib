@@ -61,7 +61,7 @@ GET /groups/{group-id}/sites/root
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-site" } -->
 
-```http
+```msgraph-interactive
 GET /sites/{site-id}
 ```
 # [C#](#tab/csharp)

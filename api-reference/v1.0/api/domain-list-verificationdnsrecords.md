@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "blockType": "request",
   "name": "get_verificationdnsrecords"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 # [C#](#tab/csharp)

@@ -54,7 +54,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "range_usedrange"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange
 ```
 # [C#](#tab/csharp)
@@ -110,7 +110,7 @@ Here is an example of the request.
   "isComposable": true,
   "name": "range_usedrange_valuesonly"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange(valuesOnly=true)
 ```
 # [C#](#tab/csharp)

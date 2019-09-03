@@ -49,7 +49,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_appointments"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments
 ```
 # [C#](#tab/csharp)

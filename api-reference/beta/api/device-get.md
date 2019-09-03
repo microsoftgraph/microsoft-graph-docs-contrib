@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_device"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/devices/{id}
 ```
 # [C#](#tab/csharp)
