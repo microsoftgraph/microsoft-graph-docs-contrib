@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentResourceRole resource type"
-description: "An access package assignment resource role indicates the resource roles which a subject has been assigned through an access package assignment."
+description: "An access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment."
 localization_priority: Normal
 author: "markwahl-msft"
 ms.prod: "microsoft-identity-platform"
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD Entitlement Management, an access package assignment resource role indicates the resource roles which a subject has been assigned through an access package assignment.
+In Azure AD Entitlement Management, an access package assignment resource role indicates the resource-specific role which a subject has been assigned through an access package assignment.
 
 ## Methods
 

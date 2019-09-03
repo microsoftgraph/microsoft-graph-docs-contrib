@@ -18,7 +18,7 @@ In Azure AD Entitlement Management, an access package assignment policy specifie
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-
+| [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Read properties and relationships of an accessPackageAssignmentPolicy object. |
 
 ## Properties
 

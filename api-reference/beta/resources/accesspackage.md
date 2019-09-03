@@ -18,19 +18,31 @@ In Azure AD Entitlement Management, an access package defines the collections of
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
+| [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Read properties and relationships of an accessPackage object. |
 
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|catalogId|String|ID of the access package catalog. Read-only.|
+|createdBy|String|UPN of the user who created this resource. Read-only.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|description|String|The description of the access package.|
+|displayName|String|The display name of the access package.|
+|id|String| Read-only.|
+|isHidden|Boolean|Whether the access package is hidden from the requestor.|
+|isRoleScopesVisible|Boolean|Whether role scopes are visible.|
+|modifiedBy|String|The UPN of the user who last modified this resource. Read-only.|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-
+|accessPackageAssignmentPolicies|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) collection| Read-only. Nullable.|
+|accessPackageCatalog|[accessPackageCatalog](accesspackagecatalog.md)| Read-only. Nullable.|
 
 ## JSON representation
 
@@ -48,7 +60,16 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-
+    "id":"360fa7de-90be-48dc-a2ce-fc40094a93dd",
+    "description":"Sample access package",
+    "displayName":"Access package for testing",
+    "isHidden":false,
+    "catalogId":"662d99e7-6ceb-4c21-9cb4-9b0bbfdefccc",
+    "isRoleScopesVisible":false,
+    "createdDateTime":"2019-01-27T18:19:50.74Z",
+    "modifiedDateTime":"2019-01-27T18:19:50.74Z",
+    "createdBy":"TestGA@example.com",
+    "modifiedBy":"TestGA@example.com"
 }
 ```
 

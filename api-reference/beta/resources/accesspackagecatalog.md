@@ -18,19 +18,29 @@ In Azure AD Entitlement Management, an access package catalog is a container for
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-
+| [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Read properties and relationships of an accessPackageCatalog object. |
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|catalogStatus|String|One of "Published".|
+|catalogType|String|One of "UserManaged". |
+|createdBy|String|UPN of the user who created this resource. Read-only.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|description|String|The description of the access package catalog.|
+|displayName|String|The display name of the access package catalog.|
+|id|String| Read-only.|
+|isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.|
+|modifiedBy|String|The UPN of the user who last modified this resource. Read-only.|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only. |
 
 
 ## Relationships
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-
+|accessPackages|[accessPackage](accesspackage.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 
@@ -48,7 +58,16 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-
+    "id":"360fa7de-90be-48dc-a2ce-fc40094a93dd",
+    "description":"Sample access package catalog",
+    "displayName":"Access package catalog for testing",
+    "isExternallyVisible":false,
+    "catalogType":"UserManaged",
+    "catalogStatus":"Published",
+    "createdDateTime":"2019-01-27T18:19:50.74Z",
+    "modifiedDateTime":"2019-01-27T18:19:50.74Z",
+    "createdBy":"TestGA@example.com",
+    "modifiedBy":"TestGA@example.com"
 }
 ```
 

@@ -18,7 +18,7 @@ In Azure AD Entitlement Management, an access package assignment request is crea
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-
+| [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Read properties and relationships of an accessPackageAssignmentRequest object. |
 
 ## Properties
 

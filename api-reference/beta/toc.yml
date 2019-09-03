@@ -8108,6 +8108,26 @@
       - name: Entitlement management
         href: resources/entitlementmanagement-root.md
         items:
+        - name: Access package
+          href: resources/accesspackage.md
+          - name: Get accessPackage
+            href: api/accesspackage-get.md
+        - name: Access package assignment
+          href: resources/accesspackageassignment.md
+        - name: Access package assignment policy
+          href: resources/accesspackageassignmentpolicy.md
+          - name: Get accessPackageAssignmentPolicy
+            href: api/accesspackageassignmentpolicy-get.md
+        - name: Access package assignment request
+          href: resources/accesspackageassignmentrequest.md
+          - name: Get accessPackageAssignmentRequest
+            href: api/accesspackageassignmentrequest-get.md
+        - name: Access package assignement resource role
+          href: resources/accesspackageassignmentresourcerole.md
+        - name: Access package catalog
+          href: resources/accesspackagecatalog.md
+          - name: Get accessPackageCatalog
+            href: api/accesspackagecatalog-get.md
       - name: Feature rollout policy
         href: resources/featurerolloutpolicy.md
         items:
