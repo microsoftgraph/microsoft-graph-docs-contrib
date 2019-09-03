@@ -9,7 +9,7 @@ doc_type: "apiPageType"
 
 # Get workbookCommentReply
 
-Retrieve the properties and relationships of [**workbookCommentReply**](../resources/workbookcommentreply.md) object.
+Retrieve the properties and relationships of [workbookCommentReply](../resources/workbookcommentreply.md) object.
 
 ## Permissions
 
