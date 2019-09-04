@@ -49,7 +49,7 @@ This example lists all resources I can currently access.
   "blockType": "request",
   "name": "get_governanceresources"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources
 ```
 # [C#](#tab/csharp)

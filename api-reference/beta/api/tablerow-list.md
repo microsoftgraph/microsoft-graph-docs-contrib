@@ -51,7 +51,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_tablerowcollection"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows
 ```
 # [C#](#tab/csharp)

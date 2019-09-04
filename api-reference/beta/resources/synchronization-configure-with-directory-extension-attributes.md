@@ -91,7 +91,7 @@ The following example shows how to get the synchronization schema.
   "blockType": "request",
   "name": "get_synchronizationschema"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
 Authorization: Bearer {Token}
 ```

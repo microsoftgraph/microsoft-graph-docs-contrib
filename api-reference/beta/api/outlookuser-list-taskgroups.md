@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_taskgroups"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 ```
 # [C#](#tab/csharp)

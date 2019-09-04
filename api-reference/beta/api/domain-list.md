@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "blockType": "request",
   "name": "get_domains"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/domains
 ```
 # [C#](#tab/csharp)

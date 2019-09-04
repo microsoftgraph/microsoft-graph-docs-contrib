@@ -53,7 +53,7 @@ The following is an example of a request.
   "blockType": "request",
   "name": "get_synchronizationtemplate"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/templates
 ```
 # [C#](#tab/csharp)

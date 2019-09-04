@@ -73,7 +73,7 @@ Here is an example of the request.
   "name": "get_delta"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/planner/all/delta
 ```
 # [C#](#tab/csharp)

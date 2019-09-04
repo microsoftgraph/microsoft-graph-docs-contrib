@@ -57,7 +57,7 @@ The following is an example of the request.
   "name": "securescores_list"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 ```
 # [C#](#tab/csharp)

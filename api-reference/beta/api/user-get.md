@@ -55,7 +55,7 @@ This method returns `202 Accepted` when the request has been processed successfu
   "blockType": "request",
   "name": "get_user"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me
 ```
 # [C#](#tab/csharp)
