@@ -46,7 +46,7 @@ Note the following regarding optional query parameters:
 
 - `$orderby` is not a supported for delta queries.
      - Do not assume a specific sequence of the responses returned from a delta query. Assume that the same item can show up anywhere in the `nextLink` sequence and handle that in your merge logic.
-- `$top` is not a supported for delta queries, and the number of objects in each page may vary depending on the resource type and the type of changes made to the resource.
+- `$top` is not supported for delta queries, and the number of objects in each page can vary depending on the resource type and the type of changes made to the resource.
 
 For users and groups, the following restrictions apply to using using some query parameters:
 
