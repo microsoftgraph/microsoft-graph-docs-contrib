@@ -17,7 +17,7 @@ Represents a comment in workbook.
 |:-------------|:------------|:------------|
 | [Get workbookComment](../api/workbookcomment-get.md) | [workbookComment](workbookcomment.md) | Read the properties and relationships of workbookComment object. |
 | [Create workbookCommentReply](../api/workbookcomment-post-replies.md) | [workbookCommentReply](workbookcommentreply.md) | Create a new **workbookCommentReply** by posting to the replies collection. |
-| [List replies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Get a **workbookCommentReply** object collection. |
+| [List workbookCommentReplies](../api/workbookcomment-list-replies.md) | [workbookCommentReply](workbookcommentreply.md) collection | Get a **workbookCommentReply** object collection. |
 
 ## Properties
 
