@@ -100,7 +100,7 @@ The following is an example of the request.
   "name": "reportroot_getyammerdeviceusageuserdetail_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getYammerDeviceUsageUserDetail(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
@@ -160,7 +160,7 @@ The following is an example of the request.
   "name": "reportroot_getyammerdeviceusageuserdetail_json"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getYammerDeviceUsageUserDetail(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)

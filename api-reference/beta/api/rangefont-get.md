@@ -52,7 +52,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_rangefont"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/font
 ```
 # [C#](#tab/csharp)

@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_owneddevices"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/ownedDevices
 ```
 # [C#](#tab/csharp)

@@ -58,7 +58,7 @@ The following example retrieves all **identityProvider**.
   "blockType": "request",
   "name": "get_identityproviders"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/identityProviders
 ```
 # [C#](#tab/csharp)

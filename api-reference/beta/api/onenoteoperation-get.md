@@ -60,7 +60,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_onenoteoperation"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 ```
 # [C#](#tab/csharp)

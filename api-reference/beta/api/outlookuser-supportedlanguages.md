@@ -54,7 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "user_supportedlanguages"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/outlook/supportedLanguages
 ```
 # [C#](#tab/csharp)

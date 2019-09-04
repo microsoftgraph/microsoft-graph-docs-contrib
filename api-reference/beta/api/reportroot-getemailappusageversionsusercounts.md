@@ -88,7 +88,7 @@ The following is an example of the request.
   "name": "reportroot_getemailappusageversionsusercounts_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getEmailAppUsageVersionsUserCounts(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
@@ -148,7 +148,7 @@ The following is an example of the request.
   "name": "reportroot_getemailappusageversionsusercounts_json"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getEmailAppUsageVersionsUserCounts(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)
