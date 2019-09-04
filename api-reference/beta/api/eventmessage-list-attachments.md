@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "eventmessage_get_attachments_beta"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ```
 # [C#](#tab/csharp)

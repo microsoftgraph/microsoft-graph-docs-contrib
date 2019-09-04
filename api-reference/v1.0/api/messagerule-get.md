@@ -51,7 +51,7 @@ Here is an example of the request.
   "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "get_messagerule"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
 ```
 # [C#](#tab/csharp)

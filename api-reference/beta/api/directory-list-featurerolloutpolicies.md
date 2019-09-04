@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_featurerolloutpolicies"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/featureRolloutPolicies
 ```
 # [C#](#tab/csharp)

@@ -75,7 +75,7 @@ The following is an example of the request.
   "name": "reportroot_getskypeforbusinesspeertopeeractivityminutecounts"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessPeerToPeerActivityMinuteCounts(period='D7')
 ```
 # [C#](#tab/csharp)

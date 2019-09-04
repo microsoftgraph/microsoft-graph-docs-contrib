@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and [groupSettingTem
   "blockType": "request",
   "name": "get_groupsettingtemplate"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 ```
 # [C#](#tab/csharp)

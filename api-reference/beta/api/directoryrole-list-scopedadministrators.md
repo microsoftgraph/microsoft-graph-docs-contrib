@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_scopedmembers_directoryrole"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedMembers
 ```
 # [C#](#tab/csharp)

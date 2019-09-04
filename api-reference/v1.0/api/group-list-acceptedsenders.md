@@ -50,7 +50,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_acceptedsenders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 ```
 # [C#](#tab/csharp)

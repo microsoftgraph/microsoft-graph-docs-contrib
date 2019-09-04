@@ -54,7 +54,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "bookingbusiness_getcalendarview"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
 # [C#](#tab/csharp)
