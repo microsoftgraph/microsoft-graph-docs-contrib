@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_outlooktaskgroup"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=
 ```
 # [C#](#tab/csharp)

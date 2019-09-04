@@ -49,7 +49,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_workbookApplication"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
 ```
 # [C#](#tab/csharp)

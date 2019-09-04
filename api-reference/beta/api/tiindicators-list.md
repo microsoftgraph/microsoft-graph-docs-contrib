@@ -61,7 +61,7 @@ The following is an example of the request.
   "name": "get_tiindicators"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/security/tiIndicators
 ```
 # [C#](#tab/csharp)

@@ -86,7 +86,7 @@ The following is an example of the request.
   "name": "reportroot_getmailboxusagemailboxcounts_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageMailboxCounts(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
@@ -146,7 +146,7 @@ The following is an example of the request.
   "name": "reportroot_getmailboxusagemailboxcounts_json"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageMailboxCounts(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)

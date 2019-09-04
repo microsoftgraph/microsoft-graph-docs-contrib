@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "serviceprincipal_get_owners"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/owners
 ```
 # [C#](#tab/csharp)

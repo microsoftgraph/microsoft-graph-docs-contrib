@@ -88,7 +88,7 @@ The following is an example of the request.
   "name": "reportroot_getonedriveactivityfilecounts_csv"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getOneDriveActivityFileCounts(period='D7')?$format=text/csv
 ```
 # [C#](#tab/csharp)
@@ -148,7 +148,7 @@ The following is an example of the request.
   "name": "reportroot_getonedriveactivityfilecounts_json"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getOneDriveActivityFileCounts(period='D7')?$format=application/json
 ```
 # [C#](#tab/csharp)

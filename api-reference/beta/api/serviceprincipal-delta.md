@@ -88,7 +88,7 @@ See:</br>
   "blockType": "request",
   "name": "servicePrincipal_delta"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/delta
 ```
 # [C#](#tab/csharp)

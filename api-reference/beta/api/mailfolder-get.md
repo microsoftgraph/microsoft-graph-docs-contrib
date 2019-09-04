@@ -71,7 +71,7 @@ The following is an example of the request.
   "name": "get_mailfolder"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
 # [C#](#tab/csharp)
@@ -132,7 +132,7 @@ The following is an example of the request.
   "name": "get_mailSearchfolder"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 ```
 # [C#](#tab/csharp)

@@ -67,7 +67,7 @@ The following is an example of the request.
   "name": "get_outcomes"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes
 ```
 # [C#](#tab/csharp)

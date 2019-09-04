@@ -88,7 +88,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_signins"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns
 ```
 # [C#](#tab/csharp)

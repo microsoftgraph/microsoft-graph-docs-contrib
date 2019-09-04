@@ -68,7 +68,7 @@ The following is an example of the request.
   "name": "get_applicationtemplates"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
 # [C#](#tab/csharp)

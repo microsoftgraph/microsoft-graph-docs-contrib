@@ -52,7 +52,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "mailfolder_get_messages"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 ```
 # [C#](#tab/csharp)

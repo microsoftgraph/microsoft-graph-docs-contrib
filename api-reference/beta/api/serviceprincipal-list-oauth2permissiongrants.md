@@ -50,7 +50,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "get_oAuth2Permissiongrants"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/oAuth2Permissiongrants
 ```
 # [C#](#tab/csharp)

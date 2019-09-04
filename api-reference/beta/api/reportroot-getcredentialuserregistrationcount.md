@@ -60,7 +60,7 @@ The following is an example of the request.
   "name": "reportroot_getcredentialuserregistrationcount"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 ```
 # [C#](#tab/csharp)

@@ -73,7 +73,7 @@ The following example gets the signed-in user's default calendar.
   "blockType": "request",
   "name": "get_calendar"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/calendar
 ```
 # [C#](#tab/csharp)

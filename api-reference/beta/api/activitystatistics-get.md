@@ -67,7 +67,7 @@ The following example requests statistics of the type emailActivityStatistics of
   "name": "get_activitystatistics"
 }-->
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics/email_2019-06-16_2019-06-17
 
 ```

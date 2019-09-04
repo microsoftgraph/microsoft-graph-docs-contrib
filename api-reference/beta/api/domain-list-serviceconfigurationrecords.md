@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
   "blockType": "request",
   "name": "get_serviceconfigurationrecords"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/domains/contoso.com/serviceConfigurationRecords
 ```
 # [C#](#tab/csharp)
